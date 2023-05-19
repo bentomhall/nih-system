@@ -46,7 +46,7 @@ The Armor table shows the cost, weight, and other properties of the common types
 
 **_Armor Class (AC)._** Armor protects its wearer from attacks. The armor (and shield) you wear determines your base Armor Class.
 
-**_Heavy Armor._** Heavier armor interferes with the wearer’s ability to move quickly, stealthily, and freely. If the Armor table shows “Str 13” or “Str 15” in the Strength column for an armor type, the armor reduces the wearer’s speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score.
+**_Heavy Armor._** Heavier armor interferes with the wearer’s ability to move quickly, stealthily, and freely. If the Armor table shows “Str 13” or “Str 15” in the Strength column for an armor type, the armor imposes disadvantage on attack rolls and Dexterity saving throws unless the wearer has a Strength score equal to or higher than the listed score. Wearing heavy armor halves the cost of the Deflect action but doubles the cost of the Dodge action.
 
 **_Stealth._** If the Armor table shows “Disadvantage” in the Stealth column, the wearer has disadvantage on Dexterity (Stealth) checks.
 
@@ -54,7 +54,7 @@ The Armor table shows the cost, weight, and other properties of the common types
 
 #### Light Armor
 
-Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.
+Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class. In addition, wearing light armor halves the cost of the Dodge action but doubles the cost of the Deflect action.
 
 **_Padded._** Padded armor consists of quilted layers of cloth and batting.
 
@@ -64,7 +64,7 @@ Made from supple and thin materials, light armor favors agile adventurers since 
 
 #### Medium Armor
 
-Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.
+Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class. Medium armor does not change the cost of either the Deflect or Dodge action.
 
 **_Hide._** This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.
 
@@ -100,15 +100,15 @@ Heavy armor doesn’t let you add your Dexterity modifier to your Armor Class, b
 | Studded leather    | 45 gp    | 12 + Dex modifier         | —        | —            | 13 lb. |
 | **_Medium Armor_** |          |                           |          |              |        |
 | Hide               | 10 gp    | 12 + Dex modifier (max 2) | —        | —            | 12 lb. |
-| Chain shirt        | 50 gp    | 13 + Dex modifier (max 2) | —        | —            | 20 lb. |
-| Scale mail         | 50 gp    | 14 + Dex modifier (max 2) | —        | Disadvantage | 45 lb. |
+| Chain shirt        | 50 gp    | 13 + Dex modifier (max 2) | —        | —            | 15 lb. |
+| Scale mail         | 50 gp    | 14 + Dex modifier (max 2) | —        | Disadvantage | 20 lb. |
 | Breastplate        | 400 gp   | 14 + Dex modifier (max 2) | —        | —            | 20 lb. |
-| Half plate         | 750 gp   | 15 + Dex modifier (max 2) | —        | Disadvantage | 40 lb. |
+| Half plate         | 750 gp   | 15 + Dex modifier (max 2) | —        | Disadvantage | 30 lb. |
 | **_Heavy Armor_**  |          |                           |          |              |        |
-| Ring mail          | 30 gp    | 14                        | —        | Disadvantage | 40 lb. |
-| Chain mail         | 75 gp    | 16                        | Str 13   | Disadvantage | 55 lb. |
-| Splint             | 200 gp   | 17                        | Str 15   | Disadvantage | 60 lb. |
-| Plate              | 1,500 gp | 18                        | Str 15   | Disadvantage | 65 lb. |
+| Ring mail          | 30 gp    | 14                        | —        | Disadvantage | 30 lb. |
+| Chain mail         | 75 gp    | 16                        | Str 13   | Disadvantage | 35 lb. |
+| Splint             | 200 gp   | 17                        | Str 15   | Disadvantage | 40 lb. |
+| Plate              | 1,500 gp | 18                        | Str 15   | Disadvantage | 40 lb. |
 | **_Shield_**       |          |                           |          |              |        |
 | Shield             | 10 gp    | +2                        | —        | —            | 6 lb.  |
 
@@ -151,7 +151,9 @@ If you use a weapon that has the ammunition property to make a melee attack, you
 
 **_Finesse._** When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
 
-**_Heavy._** Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon’s size and bulk make it too large for a Small creature to use effectively. Light. A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
+**_Heavy._** Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon’s size and bulk make it too large for a Small creature to use effectively. 
+
+**_Light._** A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons. When you wield a light weapon in each hand and take the Attack action, you can make an extra attack as long as you make attacks with each weapon. This extra attack does not add your ability modifier to the damage dealt.
 
 **_Loading._** Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
 

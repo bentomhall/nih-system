@@ -74,15 +74,15 @@ In general, you don’t multiply your proficiency bonus for attack rolls or savi
 ### Stamina (STA) and Aether (AET)
 Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class–physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
 
-**Dodge**: When you are targeted by an attack, you can use your reaction and spend 1 STA to add your proficiency bonus to your AC against that attack. Wearing heavy armor doubles the cost of this action.
+**Dodge**: When you are targeted by an attack, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. Wearing heavy armor doubles the cost of this action while wearing light armor halves the cost.
 
-**Deflect**: When you are targeted by an attack while you are wielding a melee weapon or shield or are affected by mage armor, you can use your reaction and spend 1 STA to add your proficiency bonus to your AC against that attack. If this causes a melee attack to miss and you are wielding a melee weapon or shield, you can make a melee attack with your weapon against the attacker or use your shield to attempt to Shove them prone as part of the reaction.
+**Deflect**: When you are targeted by an attack while you are wielding a melee weapon or shield or are affected by mage armor, you can use your reaction and spend 2 STA to reduce the damage taken by half if it hits. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with the weapon or shield you are wielding or attempt to Shove them. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. Wearing heavy armor halves the cost of this action while wearing light armor doubles the cost.
 
 **Exert**: By spending 1 STA when you make an ability check or saving throw that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
 
 **Focus**: By spending 1 AET when you make an ability check or saving throw that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
 
-**Spell-shatter**: By spending 1 AET and your reaction when a creature casts a spell within your reach, you can make a special melee attack against the caster. If this hits, the creature must make a concentration saving throw as if they were concentrating on the spell. If the saving throw fails, the spell is lost, consuming any aether or daily use involved.
+**Spell-shatter**: By spending 2 AET and your reaction when a creature casts a spell within your reach, you can make a special melee attack against the caster. If this hits, the creature must make a concentration saving throw as if they were concentrating on the spell. If the saving throw fails, the spell is lost, consuming any aether or daily use involved.
 
 ### Ability Checks
 

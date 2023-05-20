@@ -902,6 +902,23 @@ The wall can be destroyed, also one layer at a time, in order from red to violet
 6.  **_Indigo._** On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the creature collects three of a kind. While this layer is in place, spells can’t be cast through the wall. The layer is destroyed by bright light shed by a _daylight_ spell or a similar spell of equal or higher level.
 7.  **_Violet._** On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the GM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a _dispel magic_ spell or a similar spell of equal or higher level that can end spells and magical effects.
 
+##### Regenerate
+
+**Cost:** (7)
+
+**Casting Time:** 1 minute
+
+**Range:** Touch
+
+**Components:** V, S, M (a prayer wheel and holy water)
+
+**Duration:** 1 hour
+
+You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
+
+The target’s severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.
+
+
 ##### Reverse Gravity
 
 _7th-level transmutation_

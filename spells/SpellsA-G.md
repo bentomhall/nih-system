@@ -10,13 +10,15 @@
 
 **Duration:** Instantaneous
 
+**Tags:** Attack, Acid
+
 A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.
 
 **_Overcast._** When you cast this spell using more than 3 AET, the damage (both intial and subsequent) increases by 1d4 for every 2 AET you spend above 3.
 
 ##### Acid Burst
 
-_Cantrip_
+**Cost:** Cantrip
 
 **Casting Time:** 1 action
 
@@ -25,6 +27,8 @@ _Cantrip_
 **Components:** V, S
 
 **Duration:** Instantaneous
+
+**Tags:** Acid
 
 Acidic liquid envelops a target you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d8 damage immediately and half as much at the beginning of their next turn.
 
@@ -41,6 +45,8 @@ This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th leve
 **Components:** V, S, M (a tiny strip of white cloth)
 
 **Duration:** 8 hours
+
+**Tags:** Bolstering
 
 Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration.
 
@@ -65,6 +71,8 @@ You assume a different form. When you cast the spell, choose one of the followin
 **_Change Appearance._** You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.
 
 **_Natural Weapons._** You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.
+
+**_Overcast._** For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.
 
 ##### Animate Dead
 
@@ -98,16 +106,14 @@ The creature is under your control for 24 hours, after which it stops obeying an
 
 **Duration:** Concentration, up to 1 minute
 
-Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.
+Objects come to life at your command. Choose up to 4 nonmagical objects of Medium size or larger within range that are not being worn or carried. Large targets count as two objects, and Huge targets count as four objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.
 
-As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
+As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can only command all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
 
 **Animated Object Statistics (table)**
 
 | Size   | HP | AC | Attack                     | Str | Dex |
 |--------|----|----|----------------------------|-----|-----|
-| Tiny   | 20 | 18 | +8 to hit, 1d4 + 4 damage  | 4   | 18  |
-| Small  | 25 | 16 | +6 to hit, 1d8 + 2 damage  | 6   | 14  |
 | Medium | 40 | 13 | +5 to hit, 2d6 + 1 damage  | 10  | 12  |
 | Large  | 50 | 10 | +6 to hit, 2d10 + 2 damage | 14  | 10  |
 | Huge   | 80 | 10 | +8 to hit, 2d12 + 4 damage | 18  | 6   |
@@ -130,7 +136,7 @@ If you command an object to attack, it can make a single melee attack against a 
 
 **Duration:** Concentration, up to 1 hour
 
-A shimmering barrier extends out from you in a 10* foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.
+A shimmering barrier extends out from you in a 10 foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.
 
 The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.
 
@@ -200,7 +206,7 @@ Make a check with the hand’s Strength contested by the Strength (Athletics) ch
 
 Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 4 AET, you can target one additional creature for every 2 extra AET you spend above the base cost.
 
 ##### Banishment
 
@@ -216,11 +222,11 @@ Up to three creatures of your choice that you can see within range must make Cha
 
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
 
-If the target is native to the plane of existence you’re on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.
+If the target is native to the plane of existence you’re on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Native targets can make the saving throw again at the end of each of their turns, ending the effect and returning back on a success.
 
-If the target is native to a different plane of existence than the one you’re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn’t return.
+If the target is native to a different plane of existence than the one you’re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn’t return. Non-native targets do not get additional saving throws past the initial one.
 
-**_Overcast._** When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.
+**_Overcast._** When you cast this spell using more than 8 AET, you can target one additional creature for every 3 additional AET you spend.
 
 ##### Barkskin
 
@@ -232,9 +238,13 @@ If the target is native to a different plane of existence than the one you’re 
 
 **Components:** V, S, M (a handful of oak bark)
 
-**Duration:** Concentration, up to 1 hour
+**Duration:** 1 hour
 
 You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing.
+
+In addition, the target gains temporary hit points equal to your spellcasting modifier at the beginning of each of their turns. These temporary hit points fade at the end of the duration.
+
+**_Overcast._** When you cast this spell using more than 3 AET, the target's minimum AC increases by 1 for ever 3 AET you spend, up to a maximum AC of 20.
 
 ##### Beacon of Hope
 
@@ -271,7 +281,7 @@ You touch a creature, and that creature must succeed on a Wisdom saving throw or
 
 A _remove curse_ spell ends this effect. At the GM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse’s effect.
 
-**_Overcast._** If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration.
+**_Overcast._** If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. If you use 20 AET the spell lasts until it is dispelled. Using 12 or more AET grants a duration that doesn’t require concentration.
 
 ##### Black Tentacles
 
@@ -291,6 +301,8 @@ When a creature enters the affected area for the first time on a turn or starts 
 
 A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.
 
+**_Overcast_.** When you use more than 8 AET to cast this spell, the damage dealt increases by 1d6 for every two AET you spend up to 12 (dealing 5d6).
+
 ##### Bless
 
 **Cost:** 2 AET
@@ -305,7 +317,7 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 
 You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, you can target one additional creature for every 2 AET you spend.
 
 ##### Blight
 
@@ -325,7 +337,7 @@ If you target a plant creature or a magical plant, it makes the saving throw wit
 
 If you target a nonmagical plant that isn’t a creature, such as a tree or shrub, it doesn’t make a saving throw; it simply withers and dies.
 
-**_Overcast._** When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.
+**_Overcast._** When you cast this spell using more than 8 AET, the damage increases by 1d8 for every AET you spend up to a maximum of 12 AET (12d8).
 
 ##### Blindness/Deafness
 

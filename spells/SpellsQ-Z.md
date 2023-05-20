@@ -14,7 +14,7 @@
 
 **Duration:** Concentration, up to 1 minute
 
-A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.
+A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d6 necrotic damage and deals only half damage with weapon attacks that use Strength until the spell ends.
 
 At the end of each of the target’s turns, it can make a Constitution saving throw against the spell. On a success, the spell ends.
 
@@ -33,22 +33,6 @@ At the end of each of the target’s turns, it can make a Constitution saving th
 A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
 
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-
-##### Regenerate
-
-**Cost:** (7)
-
-**Casting Time:** 1 minute
-
-**Range:** Touch
-
-**Components:** V, S, M (a prayer wheel and holy water)
-
-**Duration:** 1 hour
-
-You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
-
-The target’s severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.
 
 ##### Reincarnate
 
@@ -70,24 +54,11 @@ The magic fashions a new body for the creature to inhabit, which likely causes t
 
 //TODO: redo table
 
-| d100  | Race                |
+| d100  | Lineage             |
 |-------|---------------------|
-| 01–04 | Dragonborn          |
-| 05–13 | Dwarf, hill         |
-| 14–21 | Dwarf, mountain     |
-| 22–25 | Elf, dark           |
-| 26–34 | Elf, high           |
-| 35–42 | Elf, wood           |
-| 43–46 | Gnome, forest       |
-| 47–52 | Gnome, rock         |
-| 53–56 | Half-elf            |
-| 57–60 | Half-orc            |
-| 61–68 | Halfling, lightfoot |
-| 69–76 | Halfling, stout     |
-| 77–96 | Human               |
-| 97–00 | Tiefling            |
 
-The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.
+
+The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly.
 
 ##### Remove Curse
 
@@ -117,11 +88,9 @@ At your touch, all curses affecting one creature or object end. If the object is
 
 A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.
 
-Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can’t be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.
+Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage from outside the sphere, and a creature or object inside can’t be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. Unwilling targets inside can attack the sphere as an object with AC 17, damage threshold 10, and 16 HP. When it reaches 0 HP, the spell ends and the globe vanishes.
 
 The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere’s walls and thus roll the sphere at up to half the creature’s speed. Similarly, the globe can be picked up and moved by other creatures.
-
-A _disintegrate_ spell targeting the globe destroys it without harming anything inside it.
 
 ##### Resistance
 
@@ -183,7 +152,7 @@ The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 
 You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.
 
-If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.
+If the warded creature makes an attack, deals damage, or casts a spell that affects an enemy creature, this spell ends.
 
 ##### Scorching Ray
 
@@ -201,7 +170,7 @@ You create three rays of fire and hurl them at targets within range. You can hur
 
 Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.
 
-**_Overcast._** When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.
+**_Overcast._** When you cast this spell using more than 3 AET, you create one additional ray for every 2 additional AET you spend.
 
 ##### Secret Chest
 
@@ -271,21 +240,21 @@ A sudden loud ringing noise, painfully intense, erupts from a point of your choi
 
 A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell’s area.
 
-**_Overcast._** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
+**_Overcast._** When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
 ##### Shield
 
 **Cost:** 2 AET
 
-**Casting Time:** 1 reaction, which you take when you are hit by an attack or targeted by the _magic missile_ spell
+**Casting Time:** 1 action
 
 **Range:** Self
 
 **Components:** V, S
 
-**Duration:** 1 round
+**Duration:** 10 minutes
 
-An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from _magic missile_.
+An invisible barrier of magical force appears and protects you. For the duration, you take no damage from _magic missile_. Additionally, you can take the Deflect action as if you were wearing a shield, spending AET instead of STA to do so.
 
 ##### Shield of Faith
 
@@ -299,11 +268,11 @@ An invisible barrier of magical force appears and protects you. Until the start 
 
 **Duration:** Concentration, up to 10 minutes
 
-A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
+A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration. This does not stack with a shield.
 
 ##### Shillelagh
 
-*Transmutation cantrip_
+**Cost:** Cantrip
 
 **Casting Time:** 1 bonus action
 
@@ -317,7 +286,7 @@ The wood of a club or quarterstaff you are holding is imbued with nature’s pow
 
 ##### Shocking Grasp
 
-*Evocation cantrip_
+**Cost:** Cantrip
 
 **Casting Time:** 1 action
 
@@ -333,7 +302,7 @@ The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 
 ##### Silence
 
-_2nd-level illusion (ritual)_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -381,7 +350,7 @@ Starting with the creature that has the lowest current hit points, each creature
 
 Undead and creatures immune to being charmed aren’t affected by this spell.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, roll an additional 1d8 for every additional AET spent.
 
 ##### Sleet Storm
 
@@ -421,7 +390,7 @@ If the creature attempts to cast a spell with a casting time of 1 action, roll a
 
 A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.
 
-##### Spider Climb
+##### Spider Climb //kill
 
 **Cost:** 3 AET
 
@@ -467,7 +436,7 @@ You call forth spirits to protect you. They flit around you to a distance of 15 
 
 When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature’s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.
 
-**_Overcast._** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
+**_Overcast._** When you cast this spell using more than 5 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
 ##### Spiritual Weapon
 
@@ -485,9 +454,9 @@ You create a floating, spectral weapon within range that lasts for the duration 
 
 As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.
 
-The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell’s effect resemble that weapon.
+The weapon can take whatever form you choose.
 
-**_Overcast._** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.
+**_Overcast._** When you cast this spell using more than 3 AET, the damage increases by 1d8 for every three additional AET.
 
 ##### Stinking Cloud
 
@@ -531,9 +500,9 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 
 **Components:** V, S, M (diamond dust worth 100 gp, which the spell consumes)
 
-**Duration:** Concentration, up to 1 hour
+**Duration:** 1 hour
 
-This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.
+This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage.
 
 ##### Suggestion
 
@@ -547,17 +516,17 @@ This spell turns the flesh of a willing creature you touch as hard as stone. Unt
 
 **Duration:** Concentration, up to 8 hours
 
-You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.
+You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable, as judged by the DM. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.
 
 The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.
 
-You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed.
+You can also specify conditions that will trigger a special activity during the duration. For example, you could suggest that an orc stab his leader in the back the next time they're in camp together.
 
 If you or any of your companions damage the target, the spell ends.
 
 ##### Sunbeam
 
-**Cost:** 12 AET
+**Cost:** 9 AET
 
 **Casting Time:** 1 action
 
@@ -567,7 +536,7 @@ If you or any of your companions damage the target, the spell ends.
 
 **Duration:** Concentration, up to 1 minute
 
-A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.
+A beam of brilliant sunlight flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 5d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.
 
 You can create a new line of radiance as your action on any turn until the spell ends.
 
@@ -601,7 +570,7 @@ You can exert fine control on objects with your telekinetic grip, such as manipu
 
 ##### Thaumaturgy
 
-*Transmutation cantrip_
+**Cost:** Cantrip
 
 **Casting Time:** 1 action
 
@@ -636,7 +605,7 @@ A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube 
 
 In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, the damage increases by 1d8 for every additional AET, up to a maximum of 5d8 (5 AET).
 
 ##### Tree Stride
 
@@ -668,19 +637,19 @@ You can use this transportation ability once per round for the duration. You mus
 
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.
 
-##### True Strike //fixme
+##### True Strike
 
-*Divination cantrip_
+**Cost:** 1 AET
 
-**Casting Time:** 1 action
+**Casting Time:** 1 bonus action
 
-**Range:** 30 feet
+**Range:** 60 feet
 
 **Components:** S
 
-**Duration:** Concentration, up to 1 round
+**Duration:** 1 round
 
-You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended.
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. Your next attack against the creature has advantage and scores a critical hit on a 19 or 20. 
 
 ### Spells (U)
 
@@ -688,7 +657,7 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 
 ##### Vampiric Touch
 
-**Cost:** 5 AET
+**Cost:** 4 AET
 
 **Casting Time:** 1 action
 
@@ -700,7 +669,7 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 
 The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.
 
-**_Overcast._** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
+**_Overcast._** When you cast this spell using more than 4 AET, the damage increases by 1d6 for every two additional AET spent.
 
 ### Spells (W)
 
@@ -722,11 +691,11 @@ When the wall appears, each creature within its area must make a Dexterity savin
 
 One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.
 
-**_Overcast._** When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.
+**_Overcast._** When you cast this spell using more than 8 AET, the damage increases by 1d8 for every 3 additional AET.
 
 ##### Wall of Force
 
-**Cost:** 12 AET
+**Cost:** 15 AET
 
 **Casting Time:** 1 action
 
@@ -736,13 +705,15 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 fire d
 
 **Duration:** Concentration, up to 10 minutes
 
-An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side).
+An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side).
 
-Nothing can physically pass through the wall. It is immune to all damage and can’t be dispelled by _dispel magic_. A _disintegrate_ spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.
+Nothing can physically pass through the wall. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall. Each panel of the wall has an AC of 17, a damage threshold of 10, and 45 HP. When its HP is reduced to 0, that panel collapses.
+
+**_Overcast:_** When you cast this spell using more than 15 AET, its HP increases by 3 for every additional AET spent.
 
 ##### Wall of Ice
 
-**Cost:** (6)
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -758,7 +729,7 @@ If the wall cuts through a creature’s space when it appears, the creature with
 
 The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.
 
-**_Overcast._** When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th.
+**_Overcast._** When you cast this spell using a more than 12 AET, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for every 3 additional AET.
 
 ##### Wall of Stone
 
@@ -782,11 +753,11 @@ If you create a span greater than 20 feet in length, you must halve the size of 
 
 The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM’s discretion.
 
-If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends.
+The wall disappears when the spell ends.
 
 ##### Wall of Thorns
 
-**Cost:** (6)
+**Cost:** 9 AET
 
 **Casting Time:** 1 action
 
@@ -798,11 +769,11 @@ If you maintain your concentration on this spell for its whole duration, the wal
 
 You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.
 
-When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.
+When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 piercing damage, or half as much damage on a successful save.
 
-A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one.
+A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes 5d8 slashing damage on a failed save, or half as much damage on a successful one.
 
-**_Overcast._** When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.
+**_Overcast._** When you cast this spell using more than 9 AET, both types of damage increase by 1d8 for every 2 additional AET spent.
 
 ##### Warding Bond
 
@@ -832,7 +803,7 @@ The spell ends if you drop to 0 hit points or if you and the target become separ
 
 **Duration:** Concentration, up to 1 hour
 
-You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20* foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.
+You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20 foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.
 
 If the webs aren’t anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.
 

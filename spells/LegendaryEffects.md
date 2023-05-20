@@ -592,3 +592,542 @@ An immobile, faintly shimmering barrier springs into existence in a 10-foot radi
 Any spell of 5th level or lower cast from outside the barrier can’t affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.
 
 **_At Higher Levels._** When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.
+
+##### Harm
+
+_6th-level necromancy_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can’t reduce the target’s hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes.
+
+##### Heal
+
+_6th-level evocation_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.
+
+**_At Higher Levels._** When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.
+
+##### Holy Aura
+
+_8th-level abjuration_
+
+**Casting Time:** 1 action
+
+**Range:** Self
+
+**Components:** V, S, M (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint’s robe or a piece of parchment from a religious text)
+
+**Duration:** Concentration, up to 1 minute
+
+Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.
+
+##### Imprisonment
+
+_9th-level abjuration_
+
+**Casting Time:** 1 minute
+
+**Range:** 30 feet
+
+**Components:** V, S, M (a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target)
+
+**Duration:** Until dispelled
+
+You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn’t need to breathe, eat, or drink, and it doesn’t age. Divination spells can’t locate or perceive the target.
+
+When you cast the spell, you choose one of the following forms of imprisonment.
+
+**_Burial._** The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it.
+
+The special component for this version of the spell is a small mithral orb.
+
+**_Chaining._** Heavy chains, firmly rooted in the ground, hold the target in place. The target is restrained until the spell ends, and it can’t move or be moved by any means until then.
+
+The special component for this version of the spell is a fine chain of precious metal.
+
+**_Hedged Prison._** The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice.
+
+The special component for this version of the spell is a miniature representation of the prison made from jade.
+
+**_Minimus Containment._** The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can’t be cut or broken while the spell remains in effect.
+
+The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.
+
+**_Slumber._** The target falls asleep and can’t be awoken. The special component for this version of the spell consists of rare soporific herbs.
+
+**_Ending the Spell._** During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the GM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature’s name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.
+
+A _dispel magic_ spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.
+
+You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.
+
+##### Incendiary Cloud
+
+_8th-level conjuration_
+
+**Casting Time:** 1 action
+
+**Range:** 150 feet
+
+**Components:** V, S
+
+**Duration:** Concentration, up to 1 minute
+
+A swirling cloud of smoke shot through with white* hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
+
+When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there.
+
+The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns.
+
+##### Irresistible Dance
+
+_6th-level enchantment_
+
+**Casting Time:** 1 action
+
+**Range:** 30 feet
+
+**Components:** V
+
+**Duration:** Concentration, up to 1 minute
+
+Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can’t be charmed are immune to this spell.
+
+A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends.
+
+##### Magic Jar
+
+_6th-level necromancy_
+
+**Casting Time:** 1 minute
+
+**Range:** Self
+
+**Components:** V, S, M (a gem, crystal, reliquary, or some other ornamental container worth at least 500 gp)
+
+**Duration:** Until dispelled
+
+Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell’s material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container’s space. You can’t move or use reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a humanoids body.
+
+You can attempt to possess any humanoid within 100 feet of you that you can see (creatures warded by a _protection from evil and good_ or _magic circle_ spell can’t be possessed). The target must make a Charisma saving throw. On a failure, your soul moves into the target’s body, and the target’s soul becomes trapped in the container. On a success, the target resists your efforts to possess it, and you can’t attempt to possess it again for 24 hours.
+
+Once you possess a creature’s body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target has any class levels, you can’t use any of its class features.
+
+Meanwhile, the possessed creature’s soul can perceive from the container using its own senses, but it can’t move or take actions at all.
+
+While possessing a body, you can use your action to return from the host body to the container if it is within 100 feet of you, returning the host creature’s soul to its body. If the host body dies while you’re in it, the creature dies, and you must make a Charisma saving throw against your own spellcasting DC. On a success, you return to the container if it is within 100 feet of you. Otherwise, you die.
+
+If the container is destroyed or the spell ends, your soul immediately returns to your body. If your body is more than 100 feet away from you or if your body is dead when you attempt to return to it, you die. If another creature’s soul is in the container when it is destroyed, the creature’s soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies.
+
+When the spell ends, the container is destroyed.
+
+##### Mass Heal
+
+_9th-level evocation_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.
+
+##### Mass Suggestion
+
+_6th-level enchantment_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, M (a snake’s tongue and either a bit of honeycomb or a drop of sweet oil)
+
+**Duration:** 24 hours
+
+You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell.
+
+Each target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.
+
+You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the first beggar they meet. If the condition isn’t met before the spell ends, the activity isn’t performed.
+
+If you or any of your companions damage a creature affected by this spell, the spell ends for that creature.
+
+**_At Higher Levels._** When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day.
+
+##### Maze
+
+_8th-level conjuration_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
+**Duration:** Concentration, up to 10 minutes
+
+You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
+
+The target can use its action to attempt to escape. When it does so, it makes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a minotaur or goristro demon automatically succeeds).
+
+When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.
+
+##### Meteor Swarm
+
+_9th-level evocation_
+
+**Casting Time:** 1 action
+
+**Range:** 1 mile
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once.
+
+The spell damages objects in the area and ignites flammable objects that aren’t being worn or carried.
+
+##### Mind Blank
+
+_8th-level abjuration_
+
+**Casting Time:** 1 action
+
+**Range:** Touch
+
+**Components:** V, S
+
+**Duration:** 24 hours
+
+Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils _wish_ spells and spells or effects of similar power used to affect the target’s mind or to gain information about the target.
+
+##### Power Word Kill
+
+_9th-level enchantment_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.
+
+##### Power Word Stun
+
+_8th-level enchantment_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect.
+
+The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.
+
+##### Prismatic Spray
+
+_7th-level evocation_
+
+**Casting Time:** 1 action
+
+**Range:** Self (60-foot cone)
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
+
+1.  **_Red._** The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
+2.  **_Orange._** The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.
+3.  **_Yellow._** The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
+4.  **_Green._** The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.
+5.  **_Blue._** The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.
+6.  **_Indigo._** On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind.
+7.  **_Violet._** On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the GM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)
+8.  **_Special._** The target is struck by two rays. Roll twice more, rerolling any 8.
+
+##### Prismatic Wall
+
+_9th-level abjuration_
+
+**Casting Time:** 1 action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
+**Duration:** 10 minutes
+
+A shimmering, multicolored plane of light forms a vertical opaque wall—up to 90 feet long, 30 feet high, and 1 inch thick—centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.
+
+The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become blinded for 1 minute.
+
+The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall’s layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer’s properties as described below.
+
+The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. A _rod of cancellation_ destroys a _prismatic wall_, but an _antimagic field_ has no effect on it.
+
+1.  **_Red._** The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can’t pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it.
+2.  **_Orange._** The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can’t pass through the wall. The layer is destroyed by a strong wind.
+3.  **_Yellow._** The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it.
+4.  **_Green._** The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A _passwall_ spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.
+5.  **_Blue._** The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it.
+6.  **_Indigo._** On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don’t need to be consecutive; keep track of both until the creature collects three of a kind. While this layer is in place, spells can’t be cast through the wall. The layer is destroyed by bright light shed by a _daylight_ spell or a similar spell of equal or higher level.
+7.  **_Violet._** On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the GM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a _dispel magic_ spell or a similar spell of equal or higher level that can end spells and magical effects.
+
+##### Reverse Gravity
+
+_7th-level transmutation_
+
+**Casting Time:** 1 action
+
+**Range:** 100 feet
+
+**Components:** V, S, M (a lodestone and iron filings)
+
+**Duration:** Concentration, up to 1 minute
+
+This spell reverses gravity in a 50-foot-radius, 100* foot high cylinder centered on a point within range. All creatures and objects that aren’t somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall.
+
+If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration.
+
+At the end of the duration, affected objects and creatures fall back down.
+
+##### Sequester
+
+_7th-level transmutation_
+
+**Casting Time:** 1 action
+
+**Range:** Touch
+
+**Components:** V, S, M (a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes)
+
+**Duration:** Until dispelled
+
+By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can’t be targeted by divination spells or perceived through scrying sensors created by divination spells.
+
+If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn’t grow older.
+
+You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include “after 1,000 years” or “when the tarrasque awakens.” This spell also ends if the target takes any damage.
+
+##### Shapechange
+
+_9th-level transmutation_
+
+**Casting Time:** 1 action
+
+**Range:** Self
+
+**Components:** V, S, M (a jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell)
+
+**Duration:** Concentration, up to 1 hour
+
+You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature can’t be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait.
+
+Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the creature’s bonus in place of yours. You can’t use any legendary actions or lair actions of the new form.
+
+You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.
+
+You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can’t use any special senses you have (for example, darkvision) unless your new form also has that sense. You can only speak if the creature can normally speak.
+
+When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The GM determines whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change shape or size to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state.
+
+During this spell’s duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value.
+
+##### Storm of Vengeance
+
+_9th-level conjuration_
+
+**Casting Time:** 1 action
+
+**Range:** Sight
+
+**Components:** V, S
+
+**Duration:** Concentration, up to 1 minute
+
+A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes.
+
+Each round you maintain concentration on this spell, the storm produces additional effects on your turn.
+
+**_Round 2._** Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage.
+
+**_Round 3._** You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can’t be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
+
+**_Round 4._** Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage.
+
+**_Round 5–10._** Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.
+
+##### Sunburst
+
+_8th-level evocation_
+
+**Casting Time:** 1 action
+
+**Range:** 150 feet
+
+**Components:** V, S, M (fire and a piece of sunstone)
+
+**Duration:** Instantaneous
+
+Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.
+
+A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
+
+This spell dispels any darkness in its area that was created by a spell.
+
+##### Symbol
+
+_7th-level abjuration_
+
+**Casting Time:** 1 minute
+
+**Range:** Touch
+
+**Components:** V, S, M (mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes)
+
+**Duration:** Until dispelled or triggered
+
+When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.
+
+The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it.
+
+You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.
+
+You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature’s physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don’t trigger the glyph, such as those who say a certain password.
+
+When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.
+
+**_Death._** Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.
+
+**_Discord._** Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks.
+
+**_Fear._** Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able.
+
+**_Hopelessness._** Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can’t attack or target any creature with harmful abilities, spells, or other magical effects.
+
+**_Insanity._** Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can’t take actions, can’t understand what other creatures say, can’t read, and speaks only in gibberish. The GM controls its movement, which is erratic.
+
+**_Pain._** Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save.
+
+**_Sleep._** Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.
+
+**_Stunning._** Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.
+
+##### Time Stop
+
+_9th-level transmutation_
+
+**Casting Time:** 1 action
+
+**Range:** Self
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.
+
+This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.
+
+##### Weird
+
+_9th-level illusion_
+
+**Casting Time:** 1 action
+
+**Range:** 120 feet
+
+**Components:** V, S
+
+**Duration:** Concentration, up to one minute
+
+Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.
+
+##### Wind Walk
+
+_6th-level transmutation_
+
+**Casting Time:** 1 minute
+
+**Range:** 30 feet
+
+**Components:** V, S, M (fire and holy water)
+
+**Duration:** 8 hours
+
+You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can’t move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.
+
+If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can’t land after 1 minute, the creature falls the remaining distance.
+
+##### Wish //replace me
+
+_9th-level conjuration_
+
+**Casting Time:** 1 action
+
+**Range:** Self
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+*Wish* is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires.
+
+The basic use of this spell is to duplicate any other spell of 8th level or lower. You don’t need to meet any requirements in that spell, including costly components. The spell simply takes effect.
+
+Alternatively, you can create one of the following effects of your choice:
+
+* You create one object of up to 25,000 gp in value that isn’t a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.
+* You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the _greater restoration_ spell.
+* You grant up to ten creatures that you can see resistance to a damage type you choose.
+* You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich’s life drain attack.
+* You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a _wish_ spell could undo an opponent’s successful save, a foe’s critical hit, or a friend’s failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll.
+
+You might be able to achieve something beyond the scope of the above examples. State your wish to the GM as precisely as possible. The GM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might only be partly achieved, or you might suffer some unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a legendary magic item or artifact might instantly transport you to the presence of the item’s current owner.
+
+The stress of casting this spell to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a long rest, you take 1d10 necrotic damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength drops to 3, if it isn’t 3 or lower already, for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast _wish_ ever again if you suffer this stress.
+
+##### Word of Recall
+
+_6th-level conjuration_
+
+**Casting Time:** 1 action
+
+**Range:** 5 feet
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.
+
+You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn’t dedicated to your deity, the spell has no effect.

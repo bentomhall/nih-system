@@ -188,7 +188,7 @@ Make a check with the hand’s Strength contested by the Strength (Athletics) ch
 
 ##### Bane
 
-_1st-level enchantment_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -204,7 +204,7 @@ Up to three creatures of your choice that you can see within range must make Cha
 
 ##### Banishment
 
-_4th-level abjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -224,7 +224,7 @@ If the target is native to a different plane of existence than the one you’re 
 
 ##### Barkskin
 
-_2nd-level transmutation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -238,7 +238,7 @@ You touch a willing creature. Until the spell ends, the target’s skin has a ro
 
 ##### Beacon of Hope
 
-_3rd-level abjuration_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -252,7 +252,7 @@ This spell bestows hope and vitality. Choose any number of creatures within rang
 
 ##### Bestow Curse
 
-_3rd-level necromancy_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -275,7 +275,7 @@ A _remove curse_ spell ends this effect. At the GM’s option, you may choose an
 
 ##### Black Tentacles
 
-_4th-level conjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -293,7 +293,7 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 
 ##### Bless
 
-_1st-level enchantment_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -309,7 +309,7 @@ You bless up to three creatures of your choice within range. Whenever a target m
 
 ##### Blight
 
-_4th-level necromancy_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -329,7 +329,7 @@ If you target a nonmagical plant that isn’t a creature, such as a tree or shru
 
 ##### Blindness/Deafness
 
-_2nd-level necromancy_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -345,7 +345,7 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 ##### Blink
 
-_3rd-level transmutation_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -361,7 +361,7 @@ While on the Ethereal Plane, you can see and hear the plane you originated from,
 
 ##### Blur
 
-_2nd-level illusion_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -375,7 +375,7 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 
 ##### Burning Hands
 
-_1st-level evocation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -395,7 +395,7 @@ The fire ignites any flammable objects in the area that aren’t being worn or c
 
 ##### Call Lightning
 
-_3rd-level conjuration_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -415,7 +415,7 @@ If you are outdoors in stormy conditions when you cast this spell, the spell giv
 
 ##### Calm Emotions
 
-_2nd-level enchantment_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -433,7 +433,7 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 ##### Charm Person
 
-_1st-level enchantment_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -467,7 +467,7 @@ This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th leve
 
 ##### Clairvoyance
 
-_3rd-level divination_
+**Cost:** 5 AET
 
 **Casting Time:** 10 minutes
 
@@ -485,7 +485,7 @@ A creature that can see the sensor (such as a creature benefiting from _see invi
 
 ##### Cloudkill
 
-_5th-level conjuration_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -505,7 +505,7 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
 
 ##### Color Spray
 
-_1st-level illusion_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -523,7 +523,7 @@ Starting with the creature that has the lowest current hit points, each creature
 
 ##### Command
 
-_1st-level enchantment_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -553,7 +553,7 @@ A flying creature stays aloft, provided that it is able to do so. If it must mov
 
 ##### Cone of Cold
 
-_5th-level evocation_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -571,7 +571,7 @@ A creature killed by this spell becomes a frozen statue until it thaws.
 
 ##### Confusion
 
-_4th-level enchantment_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -598,7 +598,7 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 
 ##### Conjure Animals
 
-_3rd-level conjuration_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -623,7 +623,7 @@ The GM has the creatures’ statistics.
 
 ##### Conjure Elemental
 
-_5th-level conjuration_
+**Cost:** 12 AET
 
 **Casting Time:** 1 minute
 
@@ -645,7 +645,7 @@ The GM has the elemental’s statistics.
 
 ##### Conjure Minor Elementals
 
-_4th-level conjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 minute
 
@@ -670,7 +670,7 @@ The GM has the creatures’ statistics.
 
 ##### Conjure Woodland Beings
 
-_4th-level conjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -713,7 +713,7 @@ On a successful save, you can ask the entity up to five questions. You must ask 
 
 ##### Contagion
 
-_5th-level necromancy_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -743,7 +743,7 @@ Since this spell induces a natural disease in its target, any effect that remove
 
 ##### Control Water
 
-_4th-level transmutation_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -773,7 +773,7 @@ The first time each turn that an object enters the vortex, the object takes 2d8 
 
 ##### Create or Destroy Water
 
-_1st-level transmutation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -793,7 +793,7 @@ You either create or destroy water.
 
 ##### Creation
 
-_5th-level illusion_
+**Cost:** 12 AET
 
 **Casting Time:** 1 minute
 
@@ -821,7 +821,7 @@ Using any material created by this spell as another spell’s material component
 
 ##### Cure Wounds
 
-_1st-level evocation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -855,7 +855,7 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 
 ##### Darkness
 
-_2nd-level evocation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -873,7 +873,7 @@ If any of this spell’s area overlaps with an area of light created by a spell 
 
 ##### Darkvision
 
-_2nd-level transmutation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -887,7 +887,7 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 
 ##### Daylight
 
-_3rd-level evocation_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -905,7 +905,7 @@ If any of this spell’s area overlaps with an area of darkness created by a spe
 
 ##### Death Ward
 
-_4th-level abjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -923,7 +923,7 @@ If the spell is still in effect when the target is subjected to an effect that w
 
 ##### Detect Evil and Good
 
-_1st-level divination_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -971,7 +971,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 
 ##### Detect Thoughts
 
-_2nd-level divination_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -993,7 +993,7 @@ Once you detect the presence of a creature in this way, you can read its thought
 
 ##### Dimension Door
 
-_4th-level conjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1011,7 +1011,7 @@ If you would arrive in a place already occupied by an object or a creature, you 
 
 ##### Disguise Self
 
-_1st-level illusion_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1029,7 +1029,7 @@ To discern that you are disguised, a creature can use its action to inspect your
 
 ##### Dispel Evil and Good
 
-_5th-level abjuration_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -1049,7 +1049,7 @@ You can end the spell early by using either of the following special functions.
 
 ##### Dispel Magic
 
-_3rd-level abjuration_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -1083,7 +1083,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 
 ##### Divine Favor
 
-_1st-level evocation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 bonus action
 
@@ -1097,7 +1097,7 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 
 ##### Dominate Beast
 
-_4th-level enchantment_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1119,7 +1119,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 ##### Dominate Person
 
-_5th-level enchantment_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -1141,7 +1141,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 ##### Dream
 
-_5th-level illusion_
+**Cost:** 12 AET
 
 **Casting Time:** 1 minute
 
@@ -1163,7 +1163,7 @@ If you have a body part, lock of hair, clipping from a nail, or similar portion 
 
 ##### Enhance Ability
 
-_2nd-level transmutation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -1191,7 +1191,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 
 ##### Enlarge/Reduce
 
-_2nd-level transmutation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -1211,7 +1211,7 @@ If the target is a creature, everything it is wearing and carrying changes size 
 
 ##### Entangle
 
-_1st-level conjuration_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1229,7 +1229,7 @@ When the spell ends, the conjured plants wilt away.
 
 ##### Enthrall
 
-_2nd-level enchantment_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -1245,7 +1245,7 @@ You weave a distracting string of words, causing creatures of your choice that y
 
 ##### Expeditious Retreat
 
-_1st-level transmutation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 bonus action
 
@@ -1261,7 +1261,7 @@ This spell allows you to move at an incredible pace. When you cast this spell, a
 
 ##### Fabricate
 
-_4th-level transmutation_
+**Cost:** 8 AET
 
 **Casting Time:** 10 minutes
 
@@ -1279,7 +1279,7 @@ Creatures or magic items can’t be created or transmuted by this spell. You als
 
 ##### Faerie Fire
 
-_1st-level evocation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1295,7 +1295,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 ##### Faithful Hound
 
-_4th-level conjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1313,7 +1313,7 @@ At the start of each of your turns, the hound attempts to bite one creature with
 
 ##### False Life
 
-_1st-level necromancy_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1329,7 +1329,7 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 
 ##### Fear
 
-_3rd-level illusion_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -1345,7 +1345,7 @@ While frightened by this spell, a creature must take the Dash action and move aw
 
 ##### Feather Fall
 
-_1st-level transmutation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 reaction, which you take when you or a creature within 60 feet of you falls
 
@@ -1359,7 +1359,7 @@ Choose up to five falling creatures within range. A falling creature’s rate of
 
 ##### Find Steed
 
-_2nd-level conjuration_
+**Cost:** 3 AET
 
 **Casting Time:** 10 minutes
 
@@ -1381,7 +1381,7 @@ You can’t have more than one steed bonded by this spell at a time. As an actio
 
 ##### Find Traps
 
-_2nd-level divination_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -1399,7 +1399,7 @@ You don’t learn the location of each trap, but you do learn the general nature
 
 ##### Fireball
 
-_3rd-level evocation_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -1417,7 +1417,7 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 
 ##### Fire Shield
 
-_4th-level evocation_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1435,7 +1435,7 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 
 ##### Flame Blade
 
-_2nd-level evocation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 bonus action
 
@@ -1455,7 +1455,7 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 ##### Flame Strike
 
-_5th-level evocation_
+**Cost:** 12 AET
 
 **Casting Time:** 1 action
 
@@ -1471,7 +1471,7 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 ##### Flaming Sphere
 
-_2nd-level conjuration_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 
@@ -1491,7 +1491,7 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 ##### Fog Cloud
 
-_1st-level conjuration_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1507,7 +1507,7 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 
 ##### Freedom of Movement
 
-_4th-level abjuration_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1525,7 +1525,7 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 
 ##### Gaseous Form
 
-_3rd-level transmutation_
+**Cost:** 5 AET
 
 **Casting Time:** 1 action
 
@@ -1543,7 +1543,7 @@ While in the form of a misty cloud, the target can’t talk or manipulate object
 
 ##### Geas
 
-_5th-level enchantment_
+**Cost:** 12 AET
 
 **Casting Time:** 1 minute
 
@@ -1579,7 +1579,7 @@ The spell also effectively extends the time limit on raising the target from the
 
 ##### Giant Insect
 
-_4th-level transmutation_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1599,7 +1599,7 @@ The GM might allow you to choose different targets. For example, if you transfor
 
 ##### Grease
 
-_1st-level conjuration_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1615,7 +1615,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 
 ##### Greater Invisibility
 
-_4th-level illusion_
+**Cost:** 8 AET
 
 **Casting Time:** 1 action
 
@@ -1643,7 +1643,7 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 ##### Guiding Bolt
 
-_1st-level evocation_
+**Cost:** 2 AET
 
 **Casting Time:** 1 action
 
@@ -1659,7 +1659,7 @@ A flash of light streaks toward a creature of your choice within range. Make a r
 
 ##### Gust of Wind
 
-_2nd-level evocation_
+**Cost:** 3 AET
 
 **Casting Time:** 1 action
 

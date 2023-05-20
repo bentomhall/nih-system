@@ -201,34 +201,38 @@ For example, if two clerics cast _bless_ on the same target, that character gain
 Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether but count (for effects that care) as spells with an aether cost of (5 + character level).
 
 ## Conversion from 5e spells
+>These are starting points. Unlike fixed spell levels, spells can have any integer base aether cost. And some spells will end up moving up or down a category.
+
 | Spell level (5e) | Starting Aether Cost |
 | ---------------- | -------------------- |
 | 1                | 2                    |
 | 2                | 3                    |
 | 3                | 5                    |
 | 4                | 8                    |
-| 5                | 13                   |
+| 5                | 12                   |
 | 6+               | legendary            |
 
-| Level | Full Caster | Half Caster | Third Caster | Martial | Limit (F/H/T/M) |
-| ----- | ----------- | ----------- | ------------ | ------- | --------------- |
-| 1     | 6           | 3           | 1            | 1       | 2/1/1/1         |
-| 2     | 8           | 4           | 2            | 1       | 2/2/1/1         |
-| 3     | 14          | 7           | 4            | 2       | 3/2/2/1         |              
-| 4     | 17          | 8           | 6            | 2       | 3/2/2/1         |
-| 5     | 22          | 11          | 7            | 3       | 5/3/2/2         |
-| 6     | 27          | 13          | 9            | 3       | 5/3/2/2         |
-| 7     | 35          | 17          | 12           | 4       | 8/3/3/2         |
-| 8     | 40          | 20          | 13           | 4       | 8/3/3/2         |
-| 9     | 53          | 26          | 18           | 5       | 13/5/3/2        |
-| 10    | 61          | 30          | 20           | 5       | 13/5/3/3        |
-| 11    | 70          | 35          | 23           | 6       | 13/5/3/3        |
-| 12    | 70          | 35          | 23           | 6       | 13/5/3/3        |
-| 13    | 80          | 40          | 27           | 7       | 13/8/5/3        |
-| 14    | 80          | 40          | 27           | 7       | 13/8/5/3        |
-| 15    | 90          | 45          | 30           | 8       | 13/8/5/3        |
-| 16    | 90          | 45          | 30           | 8       | 13/8/5/3        |
-| 17    | 102         | 51          | 34           | 9       | 13/13/5/4       |
-| 18    | 102         | 51          | 34           | 9       | 13/13/5/4       |
-| 19    | 110         | 55          | 36           | 10      | 13/13/8/4       |
-| 20    | 110         | 55          | 36           | 10      | 13/13/8/4       |
+> Starting points. Note that everyone gets aether. "Martial" is those who don't explicitly have a Spellcasting trait. 
+
+| Level | Full | Half | Third | Martial | Limit (F/H/T/M) |
+| ----- | ---- | ---- | ----- | ------- | --------------- |
+| 1     | 6    | 3    | 1     | 1       | 2/1/1/1         |
+| 2     | 8    | 4    | 2     | 1       | 2/2/1/1         |
+| 3     | 14   | 7    | 4     | 2       | 3/2/2/1         |              
+| 4     | 18   | 9    | 6     | 2       | 3/2/2/1         |
+| 5     | 22   | 11   | 7     | 3       | 5/3/2/2         |
+| 6     | 27   | 13   | 9     | 3       | 5/3/2/2         |
+| 7     | 35   | 17   | 12    | 4       | 8/3/3/2         |
+| 8     | 40   | 20   | 13    | 4       | 8/3/3/2         |
+| 9     | 52   | 26   | 18    | 5       | 12/5/3/2        |
+| 10    | 60   | 30   | 20    | 5       | 12/5/3/3        |
+| 11    | 70   | 35   | 23    | 6       | 14/5/3/3        |
+| 12    | 70   | 35   | 23    | 6       | 14/5/3/3        |
+| 13    | 80   | 40   | 27    | 7       | 16/8/5/3        |
+| 14    | 80   | 40   | 27    | 7       | 16/8/5/3        |
+| 15    | 90   | 45   | 30    | 8       | 18/8/5/3        |
+| 16    | 90   | 45   | 30    | 8       | 18/8/5/3        |
+| 17    | 100  | 50   | 33    | 9       | 20/12/5/4       |
+| 18    | 100  | 50   | 33    | 9       | 20/12/5/4       |
+| 19    | 110  | 55   | 36    | 10      | 22/14/8/4       |
+| 20    | 110  | 55   | 36    | 10      | 22/14/8/4       |

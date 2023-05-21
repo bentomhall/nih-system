@@ -63,15 +63,15 @@ Planes. Many of them are the servants of deities, employed as messengers or agen
 
 A monster might have one or more tags appended to its type, in parentheses. For example, an orc has the _humanoid (orc)_ type. The parenthetical tags provide additional categorization for certain creatures. The tags have no rules of their own, but something in the game, such as a magic item, might refer to them. For instance, a spear that is especially effective at fighting demons would work against any monster that has the demon tag.
 
-#### Alignment
+#### Attitude
 
-A monster’s alignment provides a clue to its disposition and how it behaves in a roleplaying or combat situation. For example, a chaotic evil monster might be difficult to reason with and might attack characters on sight, whereas a neutral monster might be willing to negotiate. See the _Player’s Handbook_ for descriptions of the different alignments.
+Monsters have an attitude listed that describes how a generic member of that type of monster will act by default. Specific individuals may act differently, but this serves as a guide to roleplay for the DM. Example attitudes:
 
-The alignment specified in a monster’s stat block is the default. Feel free to depart from it and change a monster’s alignment to suit the needs of your campaign. If you want a good-aligned green dragon or an evil storm giant, there’s nothing stopping you.
+**_Craven_:** A craven creature is easy to intimidate into fleeing (if possible) or surrendering (if flight is too risky). They tend to attack in groups and run when casualties start to mount or if their leader is killed.
 
-Some creatures can have **any alignment**. In other words, you choose the monster’s alignment. Some monster’s alignment entry indicates a tendency or aversion toward law, chaos, good, or evil. For example, a berserker can be any chaotic alignment (chaotic good, chaotic neutral, or chaotic evil), as befits its wild nature.
+**_Honorable_:** These creatures will generally honor bargains, parole, and challenges to duels. Even evil creatures can be honorable. Most honorable creatures can be reasoned with.
 
-Many creatures of low intelligence have no comprehension of law or chaos, good or evil. They don’t make moral or ethical choices, but rather act on instinct. These creatures are **unaligned**, which means they don’t have an alignment.
+**_Single-minded_:** Oozes, zombies, and some other creatures are single-minded. This means that they generally cannot be reasoned with, distracted, confused, or intimidate. They will not flee or surrender. Generally they will pursue the closest target in combat; if given other orders they will do those to the exclusion of all else, including personal safety.
 
 #### Armor Class
 
@@ -188,7 +188,7 @@ The Senses entry notes a monster’s passive Wisdom (Perception) score, as well 
 
 ##### Blindsight
 
-A monster with blindsight can perceive its surroundings without relying on sight, within a specific radius.
+A monster with blindsight can perceive its surroundings without relying on sight, within a specific radius. For all purposes this counts as being able to see within that radius.
 
 Creatures without eyes, such as grimlocks and gray oozes, typically have this special sense, as do creatures with echolocation or heightened senses, such as bats and true dragons.
 
@@ -200,19 +200,19 @@ A monster with darkvision can see in the dark within a specific radius. The mons
 
 #### Tremorsense
 
-A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can’t be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs and umber hulks, have this special sense.
+A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can’t be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs and umber hulks, have this special sense. Tremorsense does not count as sight.
 
 #### Truesight
 
 A monster with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceive the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the monster can see into the Ethereal Plane within the same range.
 
->**Armor, Weapon, and Tool Proficiencies**
->
->Assume that a creature is proficient with its armor, weapons, and tools. If you swap them out, you decide whether the creature is proficient with its new equipment.
->
->For example, a hill giant typically wears hide armor and wields a greatclub. You could equip a hill giant with chain mail and a greataxe instead, and assume the giant is proficient with both, one or the other, or neither.
+**Armor, Weapon, and Tool Proficiencies**
 
->See the _Player’s Handbook_ for rules on using armor or weapons without proficiency.
+Assume that a creature is proficient with its armor, weapons, and tools. If you swap them out, you decide whether the creature is proficient with its new equipment.
+
+For example, a hill giant typically wears hide armor and wields a greatclub. You could equip a hill giant with chain mail and a greataxe instead, and assume the giant is proficient with both, one or the other, or neither.
+
+See the _Player’s Handbook_ for rules on using armor or weapons without proficiency.
 
 #### Languages
 
@@ -226,48 +226,13 @@ A telepathic monster doesn’t need to see a contacted creature and can end the 
 
 A creature within the area of an _antimagic field_ or in any other location where magic doesn’t function can’t send or receive telepathic messages.
 
-#### Challenge
+#### Challenge //rewrite this
 
 A monster’s **challenge rating** tells you how great a threat the monster is. An appropriately equipped and well-rested party of four adventurers should be able to defeat a monster that has a challenge rating equal to its level without suffering any deaths. For example, a party of four 3rd-level characters should find a monster with a challenge rating of 3 to be a worthy challenge, but not a deadly one.
 
 Monsters that are significantly weaker than 1st- level characters have a challenge rating lower than 1. Monsters with a challenge rating of 0 are insignificant except in large numbers; those with no effective attacks are worth no experience points, while those that have attacks are worth 10 XP each.
 
 Some monsters present a greater challenge than even a typical 20th-level party can handle. These monsters have a challenge rating of 21 or higher and are specifically designed to test player skill.
-
-##### Experience Points
-
-The number of experience points (XP) a monster is worth is based on its challenge rating. Typically, XP is awarded for defeating the monster, although the GM may also award XP for neutralizing the threat posed by the monster in some other manner.
-
-Unless something tells you otherwise, a monster summoned by a spell or other magical ability is worth the XP noted in its stat block.
-
-**Experience Points by Challenge Rating (table)**
-
-| Challenge | XP      |
-|-----------|---------|
-| 0         | 0 or 10 |
-| 1/8       | 25      |
-| 1/4       | 50      |
-| 1/2       | 100     |
-| 1         | 200     |
-| 2         | 450     |
-| 3         | 700     |
-| 4         | 1,100   |
-| 5         | 1,800   |
-| 6         | 2,300   |
-| 7         | 2,900   |
-| 8         | 3,900   |
-| 14        | 11,500  |
-| 15        | 13,000  |
-| 16        | 15,000  |
-| 17        | 18,000  |
-| 18        | 20,000  |
-| 19        | 22,000  |
-| 20        | 25,000  |
-| 21        | 33,000  |
-| 22        | 41,000  |
-| 23        | 50,000  |
-| 24        | 62,000  |
-| 25        | 75,000  |
 
 #### Special Traits
 
@@ -314,6 +279,8 @@ A monster carries enough ammunition to make its ranged attacks. You can assume t
 ### Reactions
 
 If a monster can do something special with its reaction, that information is contained here. If a creature has no special reaction, this section is absent.
+
+All creatures with a melee attack in their stat block can make opportunity attacks. Monsters cannot take the special actions Dodge, Exert, Focus, Deflect, or Spell-break. If they have similar capabilities, those will appear as explicit actions in their stat blocks. 
 
 ### Limited Usage
 

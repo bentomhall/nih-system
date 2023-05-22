@@ -193,13 +193,15 @@ Some monsters that have immunity or resistance to nonmagical weapons are suscept
 
 Weapons with special rules are described here.
 
+**_Blowgun._** These needles don't do much damage by themselves but make excellent vehicles for poison and are particularly hard to notice. When you make an attack with a blowgun and are Hidden, you do not reveal yourself if you miss. In addition, you can poison up to 20 blowgun darts with a single vial of poison and do so as part of the action required to make the attack.
+
 **_Lance._** You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted.
 
 **_Net._** A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.
 
 When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.
 
-**_Blowgun._** These needles don't do much damage by themselves but make excellent vehicles for poison and are particularly hard to notice. When you make an attack with a blowgun and are Hidden, you do not reveal yourself if you miss. In addition, you can poison up to 20 blowgun darts with a single vial of poison and do so as part of the action required to make the attack.
+**_Trident._** Critical hits made with this weapon restrain the enemy until the end of your next turn.
 
 **Weapons (table)**
 
@@ -230,15 +232,15 @@ When you use an action, bonus action, or reaction to attack with a net, you can 
 | Halberd                      | 20 gp | 1d10 slashing   | 6 lb.   | Heavy, parrying, reach, two-handed                     |
 | Lance                        | 10 gp | 1d12 piercing   | 6 lb.   | Reach, special                                         |
 | Longsword                    | 15 gp | 1d8 slashing    | 3 lb.   | Parrying, versatile (1d10)                             |
-| Maul                         | 10 gp | 2d6 bludgeoning | 10 lb.  | Heavy, two-handed, Batter                                      |
-| Morningstar                  | 15 gp | 1d8 piercing    | 4 lb.   | Batter                                                      |
+| Maul                         | 10 gp | 2d6 bludgeoning | 10 lb.  | Battering, heavy, two-handed                           |
+| Morningstar                  | 15 gp | 1d8 piercing    | 4 lb.   | Battering                                              |
 | Pike                         | 5 gp  | 1d10 piercing   | 18 lb.  | Heavy, reach, two-handed                               |
-| Rapier                       | 25 gp | 1d8 piercing    | 2 lb.   | Finesse, Precise                                                |
-| Scimitar                     | 25 gp | 1d6 slashing    | 3 lb.   | Finesse, light, Cleave                                         |
-| Shortsword                   | 10 gp | 1d6 piercing    | 2 lb.   | Finesse, light, Precise                                         |
-| Trident                      | 5 gp  | 1d6 piercing    | 4 lb.   | Thrown (range 20/60), versatile (1d8)                  |
-| War pick                     | 5 gp  | 1d8 piercing    | 2 lb.   | Precise                                                      |
-| Warhammer                    | 15 gp | 1d8 bludgeoning | 2 lb.   | Versatile (1d10), Batter                                       |
+| Rapier                       | 25 gp | 1d8 piercing    | 2 lb.   | Finesse, precise                                       |
+| Scimitar                     | 25 gp | 1d6 slashing    | 3 lb.   | Finesse, cleaving, light                               |
+| Shortsword                   | 10 gp | 1d6 piercing    | 2 lb.   | Finesse, light, precise                                |
+| Trident                      | 5 gp  | 1d6 piercing    | 4 lb.   | Thrown (range 20/60), versatile (1d8), special         |
+| War pick                     | 5 gp  | 1d8 piercing    | 2 lb.   | Precise                                                |
+| Warhammer                    | 15 gp | 1d8 bludgeoning | 2 lb.   | Battering, versatile (1d10)                            |
 | Whip                         | 2 gp  | 1d4 slashing    | 3 lb.   | Finesse, reach                                         |
 | **_Martial Ranged Weapons_** |       |                 |         |                                                        |
 | Blowgun                      | 10 gp | 1 piercing      | 1 lb.   | Ammunition (range 25/100), loading, Special            |
@@ -285,10 +287,10 @@ This section describes items that have special rules or require further explanat
 **_Fishing Tackle._** This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.
 Healer’s Kit. This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.
 
-**_Holy Symbol._** A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix PH-B "Fantasy-Historical Pantheons" lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.
+**_Holy Symbol._** A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. To use the symbol as a focus, the caster must hold it in hand, wear it visibly, or bear it on a shield.
 
 **_Holy Water._** As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.
-A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot.
+A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform and consumes 25 gp worth of powdered silver.
 
 **_Hunting Trap._** When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature.
 
@@ -310,8 +312,11 @@ Lantern, Hooded. A hooded lantern casts bright light in a 30-foot radius and dim
 
 **_Potion of Healing._** A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.
 
-**_Pouch._** A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section). Quiver. A quiver can hold up to 20 arrows.
-Ram, Portable. You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.
+**_Pouch._** A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section). 
+
+**_Quiver._** A quiver can hold up to 20 arrows.
+
+**_Ram, Portable._** You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.
 
 **_Rations._** Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.
 
@@ -626,7 +631,8 @@ Guilds, nobles, and royalty regulate trade. Chartered companies are granted righ
 | 15 gp  | 1 lb. of saffron or one ox                   |
 | 50 gp  | 1 lb. of gold                                |
 | 500 gp | 1 lb. of platinum                            |
-Expenses
+
+### Expenses
 When not descending into the depths of the earth, exploring ruins for lost treasures, or waging war against the encroaching darkness, adventurers face more mundane realities. Even in a fantastical world, people require basic necessities such as shelter, sustenance, and clothing. These things cost money, although some lifestyles cost more than others.
 
 #### Lifestyle Expenses
@@ -663,11 +669,11 @@ Your lifestyle choice can have consequences. Maintaining a wealthy lifestyle mig
 
 **_Aristocratic._** You live a life of plenty and comfort. You move in circles populated by the most powerful people in the community. You have excellent lodgings, perhaps a townhouse in the nicest part of town or rooms in the finest inn. You dine at the best restaurants, retain the most skilled and fashionable tailor, and have servants attending to your every need. You receive invitations to the social gatherings of the rich and powerful, and spend evenings in the company of politicians, guild leaders, high priests, and nobility. You must also contend with the highest levels of deceit and treachery. The wealthier you are, the greater the chance you will be drawn into political intrigue as a pawn or participant.
 
-> ##### Self-Sufficiency
->
-> The expenses and lifestyles described here assume that you are spending your time between adventures in town, availing yourself of whatever services you can afford—paying for food and shelter, paying townspeople to sharpen your sword and repair your armor, and so on. Some characters, though, might prefer to spend their time away from civilization, sustaining themselves in the wild by hunting, foraging, and repairing their own gear.
->
-> Maintaining this kind of lifestyle doesn’t require you to spend any coin, but it is time-consuming. If you spend your time between adventures practicing a profession, you can eke out the equivalent of a poor lifestyle. Proficiency in the Survival skill lets you live at the equivalent of a comfortable lifestyle.
+##### Self-Sufficiency
+
+The expenses and lifestyles described here assume that you are spending your time between adventures in town, availing yourself of whatever services you can afford—paying for food and shelter, paying townspeople to sharpen your sword and repair your armor, and so on. Some characters, though, might prefer to spend their time away from civilization, sustaining themselves in the wild by hunting, foraging, and repairing their own gear.
+
+Maintaining this kind of lifestyle doesn’t require you to spend any coin, but it is time-consuming. If you spend your time between adventures practicing a profession, you can eke out the equivalent of a poor lifestyle. Proficiency in the Survival skill lets you live at the equivalent of a comfortable lifestyle.
 
 #### Food, Drink, and Lodging
 

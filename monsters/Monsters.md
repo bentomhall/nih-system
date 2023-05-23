@@ -71,6 +71,8 @@ Monsters have an attitude listed that describes how a generic member of that typ
 
 **_Honorable_:** These creatures will generally honor bargains, parole, and challenges to duels. Even evil creatures can be honorable. Most honorable creatures can be reasoned with.
 
+**_Individualistic_:** Every monster for themselves. These tend to live alone or, if the are encountered in groups, not really care about the other members of their groups. Killing one doesn't affect a different one, but an individual might flee if wounded even if it shatters the group's chances.
+
 **_Single-minded_:** Oozes, zombies, and some other creatures are single-minded. This means that they generally cannot be reasoned with, distracted, confused, or intimidate. They will not flee or surrender. Generally they will pursue the closest target in combat; if given other orders they will do those to the exclusion of all else, including personal safety.
 
 #### Armor Class

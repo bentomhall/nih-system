@@ -16,27 +16,8 @@ Different breath weapon shapes (line, cone, *ball*)
 ##### Existing dragons:
 Format: Color CR HP AC ABS BW-damage BW Save
 
-##### Wyrmling
-- Copper 1 22 16 15/12/13/14/11/13 18(4d8) 11
-- Brass 1 16 16 15/10/13/10/11/13 14(4d6) 11
-- 
-- Black 2 33 17 15/14/13/10/11/13 22(5d8) 11
-- Green 2 38 17 15/12/13/14/11/13 21(6d6) 11
-- White 2 32 16 14/10/14/5/10/11 22(5d8) 12
-- Silver 2 45 17 19/10/17/12/11/15 18(4d8) 13
-- Bronze 2 32 17 17/10/15/12/11/15 16(3d10) 12
-- 
-- Blue 3 52 17 17/10/15/12/11/15 22(4d10) 12
-- Gold 3 60 17 19/14/17/14/11/16 22(4d10) 13
-- 
-- Red 4 75 17 19/10/17/12/11/15 24(7d6) 13
-
-
-
-Patterns:
-- CR 2: (33) 32-45 HP, 17 AC, 15/10/13/10/11/13 21(6d6) 12
-- CR 3: (56) 52-60 HP, 17 AC, 18/12/16/13/11/15 21(6d6) 12
-- CR 4: (75) 75 HP, 17 AC, 19/12/17/13/11/15 24(7d6) 13
+#### Young
+- Brass 6 110
 
 Process:
 1. Choose an age category.

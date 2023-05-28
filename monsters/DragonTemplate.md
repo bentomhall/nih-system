@@ -252,3 +252,82 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 **Scaling**. To increase the dragon's CR to 15, increase its hit points to 212, its ability scores to 25/12/23/17/15/17 (increasing its attack bonus to +12 and its weapon damage output by 1), its breath weapon to 63 (14d8), and increase each of its saving throw DCs by 1.
 
 To increase the dragon's CR to 16, increase its hit points to 225, its ability scores to 25/12/23/16/15/19, its breath weapon to 67 (15d8), its frightful presence DC to 18, its breath weapon DC to 19, and its wing attack DC to 20.
+
+### Dragon, Ancient
+_Gargantuan dragon, Arrogant and Controlling_
+
+**Armor Class** 22 (natural armor)
+
+**Hit Points** 350 (20d20 + 140)
+
+**Speed** 40 ft., fly 80 ft.
+
+| STR     | DEX     | CON     | INT     | WIS     | CHA     |
+|---------|---------|---------|---------|---------|---------|
+| 27 (+8) | 12 (+1) | 25 (+7) | 18 (+4) | 15 (+2) | 19 (+4) |
+
+**Saving Throws** Dex +8, Con +14, Wis +9, Cha +11
+
+**Skills** Perception +16, Stealth +9
+
+**Damage Immunities** Variable based on color
+
+**Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 26
+
+**Languages** Common, Draconic
+
+**Challenge** 21
+
+**_Special Traits_**. Pick one of the following based on color:
+- Amphibious: The dragon can breath both air and water.
+- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
+- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
+- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 19.
+    - Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. 
+    - Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each.
+    - Pick 1 spell that costs 13 AET. It can cast this once/day.
+
+**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
+- Black: Necrotic (CON)
+- Blue: Lightning (DEX)
+- Brass: Thunder (CON)
+- Bronze or Red: Fire (DEX)
+- Copper or Green: Acid (DEX)
+- Gold: Radiant (DEX)
+- Silver or White: Cold (CON)
+
+**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:
+- Ball: 40 ft radius sphere centered on a point within 120 ft
+- Cone: 90 ft cone
+- Line: 90 ft line that is 10 ft wide
+
+**_Legendary Resistance (3/Day)_**. If the dragon fails a saving throw, it can choose to succeed instead.
+
+**Actions**
+
+**_Multiattack_**. The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
+
+**_Bite_**. _Melee Weapon Attack:_ +15 to hit, reach 15 ft., one target. _Hit:_ 19 (2d10 + 8) piercing damage plus 9 (2d8) damage of the dragon's Damage Type.
+
+**_Claw_**. _Melee Weapon Attack:_ +15 to hit, reach 10 ft., one target. _Hit:_ 15 (2d6 + 8) slashing damage.
+
+**_Tail_**. _Melee Weapon Attack:_ +15 to hit, reach 20 ft., one target. _Hit:_ 17 (2d8 + 8) bludgeoning damage.
+
+**_Frightful Presence_**. Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.
+
+**_Breath Weapon (Recharge 5–6)_**. The dragon exhales energy in an area (see Blast Shape). Each creature in that area must make a DC 22 saving throw of the type indicated for the dragon's color, taking 71 (13d10) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.
+
+**Legendary Actions**
+
+The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn.
+
+**Detect_**. The dragon makes a Wisdom (Perception) check.
+
+**Tail Attack_**. The dragon makes a tail attack.
+
+**Wing Attack (Costs 2 Actions)_**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+
+**Scaling**
+To increase the dragon's CR to 22, increase its HP to 385 (22d20+154), its AC to 22, its breath weapon damage to 77 (14d10), and its saving throw DCs to 20 (Frightful Presence and spellcasting), 23 (Breath weapon), and 24 (Wing Attack).
+
+To increase the dragon's CR to 23, increase its HP to 487 (25d20+225), its AC to 23, its ability scores to 30/12/29/18/15/23 (increasing its attack bonus to +17 and the damage modifier of each physical attack to +10), its breath weapon damage to 88 (16d10), and its saving throw DCs to 21 (Frightful Presence and spellcasting), 24 (Breath weapon), and 25 (Wing Attack)/

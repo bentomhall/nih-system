@@ -16,7 +16,9 @@ This system is distributed among a bunch of markdown files.
 - Spells/incantations.md contains the rules for incantations, a new system replacing ritual casting
 - Spells/spellLists.md contains the spell lists, organized in a bunch of different fashions (by class, by cost, by "tag")
 - Spells/spells.md contains all the actual spell text.
-- Monsters/{type}.md contains the monsters organized by type (in separate files), ordered by CR within that type and alphabetically within each CR.
+- Monsters/{letter}.md contains the monsters organized alphabetically (in separate files).
+- Monsters/Monsters.md contains general rules for monsters
+- Monsters/Indexes.md contains indexes by CR, type, and environment.
   
 ## Formatting
 Same basic rules as the SRD, but not quite so pretty. I will use quote blocks for commentary and explanations; those are not part of the actual rule text.

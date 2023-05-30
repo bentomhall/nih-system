@@ -35,7 +35,8 @@ _Medium dragon, Arrogant and Inquisitive_
 - Blue: Lightning (DEX)
 - Brass: Thunder (CON)
 - Bronze or Red: Fire (DEX)
-- Copper or Green: Acid (DEX)
+- Copper Acid (CON)
+- Green: Acid (DEX)
 - Gold: Radiant (DEX)
 - Silver or White: Cold (CON)
 
@@ -95,7 +96,8 @@ _Large dragon, Arrogant and Rapacious_
 - Blue: Lightning (DEX)
 - Brass: Thunder (CON)
 - Bronze or Red: Fire (DEX)
-- Copper or Green: Acid (DEX)
+- Copper Acid (CON)
+- Green: Acid (DEX)
 - Gold: Radiant (DEX)
 - Silver or White: Cold (CON)
 
@@ -159,7 +161,8 @@ _Huge dragon, Arrogant and Superior_
 - Blue: Lightning (DEX)
 - Brass: Thunder (CON)
 - Bronze or Red: Fire (DEX)
-- Copper or Green: Acid (DEX)
+- Copper Acid (CON)
+- Green: Acid (DEX)
 - Gold: Radiant (DEX)
 - Silver or White: Cold (CON)
 
@@ -237,7 +240,8 @@ _Gargantuan dragon, Arrogant and Controlling_
 - Blue: Lightning (DEX)
 - Brass: Thunder (CON)
 - Bronze or Red: Fire (DEX)
-- Copper or Green: Acid (DEX)
+- Copper Acid (CON)
+- Green: Acid (DEX)
 - Gold: Radiant (DEX)
 - Silver or White: Cold (CON)
 

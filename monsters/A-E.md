@@ -863,8 +863,334 @@ _Small fiend (demon), chaotic evil_
 
 **_Fetid Cloud (1/Day)_**. A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can’t take reactions.
 
+#### Dragons
+[Dragon Template](DragonTemplate.md)
+
+#### Dragon Turtle
+
+_Gargantuan dragon, neutral_
+
+**Armor Class** 20 (natural armor)
+
+**Hit Points** 341 (22d20 + 110)
+
+**Speed** 20 ft., swim 40 ft.
+
+| STR     | DEX     | CON     | INT     | WIS     | CHA     |
+|---------|---------|---------|---------|---------|---------|
+| 25 (+7) | 10 (+0) | 20 (+5) | 10 (+0) | 12 (+1) | 12 (+1) |
+
+**Saving Throws** Dex +6, Con +11, Wis +7
+
+**Damage Resistances** fire
+
+**Senses** darkvision 120 ft., passive Perception 11
+
+**Languages** Aquan, Draconic
+
+**Challenge** 17 (18,000 XP)
+
+**_Amphibious_**. The dragon turtle can breathe air and water.
+
+**Actions**
+
+**_Multiattack_**. The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.
+
+**_Bite_**. _Melee Weapon Attack:_ +13 to hit, reach 15 ft., one target. _Hit:_ 26 (3d12 + 7) piercing damage.
+
+**_Claw_**. _Melee Weapon Attack:_ +13 to hit, reach 10 ft., one target. _Hit:_ 16 (2d8 + 7) slashing damage.
+
+**_Tail_**. _Melee Weapon Attack:_ +13 to hit, reach 15 ft., one target. _Hit:_ 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.
+
+**_Steam Breath (Recharge 5–6)_**. The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn’t grant resistance against this damage.
+
+#### Drider
+
+_Large monstrosity, Arrogant and Hungry_
+
+**Armor Class** 19 (natural armor)
+
+**Hit Points** 123 (13d10 + 52)
+
+**Speed** 30 ft., climb 30 ft.
+
+| STR     | DEX     | CON     | INT     | WIS     | CHA     |
+|---------|---------|---------|---------|---------|---------|
+| 16 (+3) | 16 (+3) | 18 (+4) | 13 (+1) | 14 (+2) | 12 (+1) |
+
+**Skills** Perception +5, Stealth +9
+
+**Senses** darkvision 120 ft., passive Perception 15
+
+**Languages** Elvish,
+
+**Challenge** 6
+
+**_Fey Ancestry_**. The drider has advantage on saving throws against being charmed, and magic can’t put the drider to sleep.
+
+**_Innate Spellcasting_**. The drider’s innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
+
+At will: _dancing lights_
+1/day each: _darkness_, _faerie fire_
+
+**_Spider Climb_**. The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+**_Sunlight Sensitivity_**. While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+**_Web Walker_**. The drider ignores movement restrictions caused by webbing.
+
+**Actions**
+
+**_Multiattack_**. The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.
+
+**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one creature. _Hit:_ 2 (1d4) piercing damage plus 9 (2d8) poison damage.
+
+**_Longsword_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.
+
+**_Longbow_**. _Ranged Weapon Attack:_ +6 to hit, range 150/600 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.
+
+#### Dryad
+
+_Medium fey, Tricky and Protective_
+
+**Armor Class** 11 (16 with _barkskin_)
+
+**Hit Points** 22 (5d8)
+
+**Speed** 30 ft.
+
+| STR     | DEX     | CON     | INT     | WIS     | CHA     |
+|---------|---------|---------|---------|---------|---------|
+| 10 (+0) | 12 (+1) | 11 (+0) | 14 (+2) | 15 (+2) | 18 (+4) |
+
+**Skills** Perception +4, Stealth +5
+
+**Senses** darkvision 60 ft., passive Perception 14
+
+**Languages** Primordial, one other (usually ihmisi or common)
+
+**Challenge** 1
+
+**_Innate Spellcasting_**. The dryad’s innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:
+
+At will: _druidcraft_
+3/day each: _entangle_, _goodberry_
+1/day each: _barkskin_, _pass without trace_, _shillelagh_
+
+**_Magic Resistance_**. The dryad has advantage on saving throws against spells and other magical effects.
+
+**_Speak with Beasts and Plants_**. The dryad can communicate with beasts and plants as if they shared a language.
+
+**_Tree Stride_**. Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.
+
+**Actions**
+
+**_Club_**. _Melee Weapon Attack:_ +2 to hit (+6 to hit with _shillelagh_), reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with _shillelagh_.
+
+**_Fey Charm_**. The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn’t under the dryad’s control, it takes the dryad’s requests or actions in the most favorable way it can.
+
+Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the dryad’s Fey Charm for the next 24 hours.
+
+The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+
+#### Dwarf, Twisted
+_Medium humanoid (dwarf), Stubborn and Spiteful_
+
+**Armor Class** 16 (scale mail, shield)
+
+**Hit Points** 26 (4d8 + 8)
+
+**Speed** 25 ft.
+
+| STR     | DEX     | CON     | INT     | WIS     | CHA    |
+|---------|---------|---------|---------|---------|--------|
+| 14 (+2) | 11 (+0) | 14 (+2) | 11 (+0) | 10 (+0) | 9 (−1) |
+
+**Damage Resistances** poison
+
+**Senses** darkvision 120 ft., passive Perception 10
+
+**Languages** Dwarvish
+
+**Challenge** 1
+
+**_Duergar Resilience_**. The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.
+
+**_Sunlight Sensitivity_**. While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+**Actions**
+
+**_Enlarge (Recharges after a Short or Long Rest)_**. For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.
+
+**_War Pick_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage, or 11 (2d8 + 2) piercing damage while enlarged.
+
+**_Javelin_**. _Melee or Ranged Weapon Attack:_ +4 to hit, reach 5 ft. or range 30/120 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged.
+
+**_Invisibility (Recharges after a Short or Long Rest)_**. The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.
+
 ### Monsters (E)
-##### Erinyes
+#### Elemental, Air
+_Large elemental, neutral_
+
+**Armor Class** 15
+
+**Hit Points** 90 (12d10 + 24)
+
+**Speed** 0 ft., fly 90 ft. (hover)
+
+| STR     | DEX     | CON     | INT    | WIS     | CHA    |
+|---------|---------|---------|--------|---------|--------|
+| 14 (+2) | 20 (+5) | 14 (+2) | 6 (−2) | 10 (+0) | 6 (−2) |
+
+**Damage Resistances** lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+
+**Damage Immunities** poison
+
+**Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+
+**Senses** darkvision 60 ft., passive Perception 10
+
+**Languages** Auran
+
+**Challenge** 5 (1,800 XP)
+
+**_Air Form_**. The elemental can enter a hostile creature’s space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+**Actions**
+
+**_Multiattack_**. The elemental makes two slam attacks.
+
+**_Slam_**. _Melee Weapon Attack:_ +8 to hit, reach 5 ft., one target. _Hit:_ 14 (2d8 + 5) bludgeoning damage.
+
+**_Whirlwind (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
+
+If the saving throw is successful, the target takes half the bludgeoning damage and isn’t flung away or knocked prone.
+
+##### Elemental, Earth
+
+_Large elemental, neutral_
+
+**Armor Class** 17 (natural armor)
+
+**Hit Points** 126 (12d10 + 60)
+
+**Speed** 30 ft., burrow 30 ft.
+
+| STR     | DEX    | CON     | INT    | WIS     | CHA    |
+|---------|--------|---------|--------|---------|--------|
+| 20 (+5) | 8 (−1) | 20 (+5) | 5 (−3) | 10 (+0) | 5 (−3) |
+
+**Damage Vulnerabilities** thunder
+
+**Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks
+
+**Damage Immunities** poison
+
+**Condition Immunities** exhaustion, paralyzed, petrified, poisoned, unconscious
+
+**Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 10
+
+**Languages** Terran
+
+**Challenge** 5 (1,800 XP)
+
+**_Earth Glide_**. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn’t disturb the material it moves through.
+
+**_Siege Monster_**. The elemental deals double damage to objects and structures.
+
+**Actions**
+
+**_Multiattack_**. The elemental makes two slam attacks.
+
+**_Slam_**. _Melee Weapon Attack:_ +8 to hit, reach 10 ft., one target. _Hit:_ 14 (2d8 + 5) bludgeoning damage.
+
+##### Elemental, Fire
+
+_Large elemental, neutral_
+
+**Armor Class** 13
+
+**Hit Points** 102 (12d10 + 36)
+
+**Speed** 50 ft.
+
+| STR     | DEX     | CON     | INT    | WIS     | CHA    |
+|---------|---------|---------|--------|---------|--------|
+| 10 (+0) | 17 (+3) | 16 (+3) | 6 (−2) | 10 (+0) | 7 (−2) |
+
+**Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks
+
+**Damage Immunities** fire, poison
+
+**Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+
+**Senses** darkvision 60 ft., passive Perception 10
+
+**Languages** Ignan
+
+**Challenge** 5 (1,800 XP)
+
+**_Fire Form_**. The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature’s space and stop there. The first time it enters a creature’s space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
+
+**_Illumination_**. The elemental sheds bright light in a 30- foot radius and dim light in an additional 30 feet.
+
+**_Water Susceptibility_**. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
+
+**Actions**
+
+**_Multiattack_**. The elemental makes two touch attacks.
+
+**_Touch_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
+
+##### Elemental, Ice
+//TODO
+
+##### Elemental, Lightning
+//TODO
+
+##### Elemental, Water
+
+_Large elemental, neutral_
+
+**Armor** Class 14 (natural armor)
+
+**Hit Points** 114 (12d10 + 48)
+
+**Speed** 30 ft., swim 90 ft.
+
+| STR     | DEX     | CON     | INT    | WIS     | CHA     |
+|---------|---------|---------|--------|---------|---------|
+| 18 (+4) | 14 (+2) | 18 (+4) | 5 (−3) | 10 (+0) | 8 (−1) |
+
+**Damage Resistances** acid; bludgeoning, piercing, and slashing from nonmagical attacks
+
+**Damage Immunities** poison
+
+**Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+
+**Senses** darkvision 60 ft., passive Perception 10
+
+**Languages** Aquan
+
+**Challenge** 5 (1,800 XP)
+
+**_Water Form_**. The elemental can enter a hostile creature’s space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+**_Freeze_**. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn.
+
+**Actions**
+
+**_Multiattack_**. The elemental makes two slam attacks.
+
+**_Slam_**. Melee _Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) bludgeoning damage.
+
+**_Whelm (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8
++ 4) bludgeoning damage. If it is Large or smaller, it is also grappled
+(escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental’s space.
+
+The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental’s turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.
+
+#### Erinyes
 
 _Medium fiend (devil), lawful evil_
 
@@ -907,3 +1233,75 @@ _Medium fiend (devil), lawful evil_
 **Reactions**
 
 **_Parry_**. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.
+
+#### Ettercap
+
+_Medium monstrosity, neutral evil_
+
+**Armor Class** 13 (natural armor)
+
+**Hit Points** 44 (8d8 + 8)
+
+**Speed** 30 ft., climb 30 ft.
+
+| STR     | DEX     | CON     | INT    | WIS     | CHA    |
+|---------|---------|---------|--------|---------|--------|
+| 14 (+2) | 15 (+2) | 13 (+1) | 7 (−2) | 12 (+1) | 8 (−1) |
+
+**Skills** Perception +3, Stealth +4, Survival +3
+
+**Senses** darkvision 60 ft., passive Perception 13
+
+**Languages** —
+
+**Challenge** 2 (450 XP)
+
+**_Spider Climb_**. The ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+**_Web Sense_**. While in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.
+
+**_Web Walker_**. The ettercap ignores movement restrictions caused by webbing.
+
+**Actions**
+
+**_Multiattack_**. The ettercap makes two attacks: one with its bite and one with its claws.
+
+**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 6 (1d8 + 2) piercing damage plus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+**_Claws_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) slashing damage.
+
+**_Web (Recharge 5–6)_**. _Ranged Weapon Attack:_ +4 to hit, range 30/60 ft., one Large or smaller creature. _Hit:_ The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.
+
+#### Ettin
+
+_Large giant, chaotic evil_
+
+**Armor Class** 12 (natural armor)
+
+**Hit Points** 85 (10d10 + 30)
+
+**Speed** 40 ft.
+
+| STR     | DEX    | CON     | INT    | WIS     | CHA    |
+|---------|--------|---------|--------|---------|--------|
+| 21 (+5) | 8 (−1) | 17 (+3) | 6 (−2) | 10 (+0) | 8 (−1) |
+
+**Skills** Perception +4
+
+**Senses** darkvision 60 ft., passive Perception 14
+
+**Languages** Giant, Orc
+
+**Challenge** 4 (1,100 XP)
+
+**_Two Heads_**. The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
+
+**_Wakeful_**. When one of the ettin’s heads is asleep, its other head is awake.
+
+**Actions**
+
+**_Multiattack_**. The ettin makes two attacks: one with its battleaxe and one with its morningstar.
+
+**_Battleaxe_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 14 (2d8 + 5) slashing damage.
+
+**_Morningstar_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 14 (2d8 + 5) piercing damage.

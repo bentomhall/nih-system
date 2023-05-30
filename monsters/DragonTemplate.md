@@ -1,53 +1,7 @@
-#### Dragon
+### Dragon
 I'm tired of having a crap-ton of dragon stat blocks, with some colors being stronger than others. So I'm attempting to slice and dice that.
 
-Templates:
-Hatchling (unified, CR 1)
-Wyrmling (colored, but no metallic yet, CR 2-4)
-Young (colored + metallic variants, CR 8-10)
-Adult (CR 14-16)
-Ancient (CR 20-24)
-
-Colors -> Damage type + resistance/immunity
-Metallic -> spell-casting + shapechange
-Instructions for varying within the range
-Different breath weapon shapes (line, cone, *ball*)
-
-##### Existing dragons:
-Format: Color CR HP AC ABS BW-damage BW Save
-
-#### Young
-
-
-Process:
-1. Choose an age category.
-2. Choose a color -> element + Save type
-3. Choose a blast shape (adjusted for age)
-4. Choose spells if metallic
-5. Adjust for weaker/stronger
-
-Color Mapping
-|Color|Damage Type|Save|Shapes|Movement|Special|
-|:--:|:------:|:---:|:---:|:---:|:---:|
-|Black|Necrotic|CON|Any|--|Spellcasting/Shapeshifting (Y+)|
-|Blue|Lightning|Dex|Line/Ball| burrow 40' | -- |
-|Brass|Thunder|CON|Cone| Climb 40' | Spellcasting/Shapeshifting (Y+) |
-|Bronze|Fire|DEX|Line| Swim 40' | Amphibious, Spellcasting/Shapeshifting (Y+) |
-|Copper|Acid|DEX|Cone| Burrow 40' | Spellcasting/Shapeshifting (Y+) |
-|Green|Acid|DEX|Cone/Line| Swim 40' | Amphibious |
-|Gold|Radiant|DEX|Line| -- | Spellcasting/Shapeshifting (Y+) |
-|Red|Fire|DEX|Any| -- | -- |
-|Silver|Cold|CON|Line/Ball| -- | Ice Walk, Spellcasting/Shapeshifting (Y+) |
-|White|Cold|CON|Cone/Line| Burrow 10'/20'/30' | Ice Walk |
-
-Blast Shapes
-|Shape|Wyrmling|Young|Adult|Ancient|
-|:--:|:----:|:----:|:----:|:----:|
-|Ball|10' radius, 60' range| 15' radius, 60' range| 20' radius, 90' range| 25' radius, 120' range|
-|Cone|15'|30'|60'|90'|
-|Line|20x5|40x5|60x10|90x10|
-
-#### Wyrmling Dragon
+##### Wyrmling Dragon
 _Medium dragon, Arrogant and Inquisitive_
 
 **Armor Class** 17 (natural armor)
@@ -165,15 +119,6 @@ To increase the dragon's CR to 9, increase its hit points by 15 (no extra hit di
 
 To increase the dragon's CR to 10, increase its hit points by 21 (adding 2 hit dice), increase its STR, CON, and CHA by +3 and its DEX by 1 (increasing its attack modifier by 2 and physical damage modifiers by +1). Its breath weapon increases by 9 (+2d8) and its save DC increases by 2 (to 17). Its proficiency goes up by 1 as well.
 
-### Dragon, Adult
-CR HP AC ABS BW Fear/BW/WA
-- Brass 13 172 18 23/10/21/14/13/17 45(13d6) 16/18/19
-- White 13 200 18 22/10/22/8/12/12 54(12d8) 14/19/19
-
-- Copper 14 184 18 23/12/21/18/15/17 54(12d8) 16/18/19
-- Black 14 195 19 23/14/21/14/13/17 54(12d8) 16/18/19
-
-
 ##### Dragon, Adult
 
 _Huge dragon, Arrogant and Superior_
@@ -253,7 +198,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 To increase the dragon's CR to 16, increase its hit points to 225, its ability scores to 25/12/23/16/15/19, its breath weapon to 67 (15d8), its frightful presence DC to 18, its breath weapon DC to 19, and its wing attack DC to 20.
 
-### Dragon, Ancient
+##### Dragon, Ancient
 _Gargantuan dragon, Arrogant and Controlling_
 
 **Armor Class** 22 (natural armor)

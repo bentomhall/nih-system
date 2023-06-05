@@ -50,6 +50,8 @@ Choose a culture that fits the origin of your character.  You gain the features 
 
 ***Ascendant Guidance***: You learn the *augury* incantation and can cast it without a Ritual Scroll.
 
+***Ritualist***: When you perform an incantation that has a performance time greater than 1 minute, you can reduce it by one step (to a minimum of one minute).
+
 ##### Rural
 ***Region***: Any
 
@@ -73,6 +75,8 @@ Choose a culture that fits the origin of your character.  You gain the features 
 ***Proficiencies***: Religion, Insight, a musical instrument
 
 ***Consensus Builder***: You have advantage on any Charisma (Persuasion) check made to improve someone's attitude toward you.
+
+***Children of the Congregation***: You learn a cantrip of your choice from the Priest list. Wisdom is the casting ability for this cantrip.
 
 ##### Wyrmhold Clan
 

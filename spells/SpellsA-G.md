@@ -74,56 +74,6 @@ You assume a different form. When you cast the spell, choose one of the followin
 
 **_Overcast._** For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.
 
-##### Animate Dead
-
-**Cost:** 6 AET
-
-**Casting Time:** 1 minute
-
-**Range:** 10 feet
-
-**Components:** V, S, M (a drop of blood, a piece of flesh, and a pinch of bone dust)
-
-**Duration:** Instantaneous
-
-This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the GM has the creature’s game statistics).
-
-On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
-
-The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.
-
-**_Overcast._** When you cast this spell using at least 8 AET, you animate or reassert control over two additional undead creatures for every 2 extra AET you spend. Each of the creatures must come from a different corpse or pile of bones.
-
-##### Animate Objects
-
-**Cost:** 13 AET
-
-**Casting Time:** 1 action
-
-**Range:** 120 feet
-
-**Components:** V, S
-
-**Duration:** Concentration, up to 1 minute
-
-Objects come to life at your command. Choose up to 4 nonmagical objects of Medium size or larger within range that are not being worn or carried. Large targets count as two objects, and Huge targets count as four objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.
-
-As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can only command all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
-
-**Animated Object Statistics (table)**
-
-| Size   | HP | AC | Attack                     | Str | Dex |
-|--------|----|----|----------------------------|-----|-----|
-| Medium | 40 | 13 | +5 to hit, 2d6 + 1 damage  | 10  | 12  |
-| Large  | 50 | 10 | +6 to hit, 2d10 + 2 damage | 14  | 10  |
-| Huge   | 80 | 10 | +8 to hit, 2d12 + 4 damage | 18  | 6   |
-
-An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is
-
-30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.
-
-If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The GM might rule that a specific object inflicts slashing or piercing damage based on its form.
-
 ##### Antilife Shell
 
 **Cost:** 10 AET
@@ -216,7 +166,7 @@ Up to three creatures of your choice that you can see within range must make Cha
 
 **Range:** 60 feet
 
-**Components:** V, S, M (an item distasteful to the target)
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 minute
 
@@ -353,7 +303,7 @@ If you target a nonmagical plant that isn’t a creature, such as a tree or shru
 
 You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.
 
-**_Overcast._** When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+**_Overcast._** When you cast this spell using more than 3 AET, you can target one additional creature for every two additional AET spent.
 
 ##### Blink
 
@@ -367,9 +317,9 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 **Duration:** 1 minute
 
-Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.
+Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Border Shadow (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Border Shadow, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.
 
-While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren’t there can’t perceive you or interact with you, unless they have the ability to do so.
+While on the Border Shadow, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Border Shadow. Creatures that aren’t there can’t perceive you or interact with you, unless they have the ability to do so.
 
 ##### Blur
 
@@ -397,11 +347,11 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 
 **Duration:** Instantaneous
 
-As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
+A thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 
 The fire ignites any flammable objects in the area that aren’t being worn or carried.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
 ### Spells (C)
 
@@ -423,7 +373,7 @@ When you cast the spell, choose a point you can see within range. A bolt of ligh
 
 If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10.
 
-**_Overcast._** When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.
+**_Overcast._** When you cast this spell using more than 4 AET, the damage increases by 1d10 for every 3 additional AET spent.
 
 ##### Calm Emotions
 
@@ -455,27 +405,9 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 **Duration:** 1 hour
 
-You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
+You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature's attitude toward you shifts to Friendly for the duration.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
-
-##### Chill Touch
-
-*Necromancy cantrip_
-
-**Casting Time:** 1 action
-
-**Range:** 120 feet
-
-**Components:** V, S
-
-**Duration:** 1 round
-
-You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target.
-
-If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
-
-This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+**_Overcast._** When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
 ##### Clairvoyance
 
@@ -493,7 +425,7 @@ You create an invisible sensor within range in a location familiar to you (a pla
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
 
-A creature that can see the sensor (such as a creature benefiting from _see invisibility_ or truesight) sees a luminous, intangible orb about the size of your fist.
+A creature that can see the sensor (such as a creature benefiting from _see invisibility_ or truesight) sees a luminous, intangible orb about the size of your fist. The sensor has an AC of 10 and is destroyed by any damage taken.
 
 ##### Cloudkill
 
@@ -513,7 +445,7 @@ When a creature enters the spell’s area for the first time on a turn or starts
 
 The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.
 
-**_Overcast._** When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
+**_Overcast._** When you cast this spell using more than 12 AET , the damage increases by 1d8 for every 2 additional AET spent.
 
 ##### Color Spray
 
@@ -531,7 +463,7 @@ A dazzling array of flashing, colored light springs from your hand. Roll 6d10; t
 
 Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, roll an additional 1d10 for every additional AET spent.
 
 ##### Command
 
@@ -561,7 +493,7 @@ Some typical commands and their effects follow. You might issue a command other 
 
 A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+**_Overcast._** When you cast this spell using more than 2 AET, you can affect one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
 ##### Cone of Cold
 
@@ -579,7 +511,7 @@ A blast of cold air erupts from your hands. Each creature in a 60-foot cone must
 
 A creature killed by this spell becomes a frozen statue until it thaws.
 
-**_Overcast._** When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
+**_Overcast._** When you cast this spell using more than 12 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
 ##### Confusion
 
@@ -606,7 +538,7 @@ An affected target can’t take reactions and must roll a d10 at the start of ea
 
 At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.
 
-**_Overcast._** When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.
+**_Overcast._** When you cast this spell using more than 8 AET, the radius of the sphere increases by 5 feet for every 3 additional AET spent.
 
 ##### Conjure Animals
 
@@ -622,16 +554,16 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 
 You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
-* One beast of challenge rating 2 or lower
-* Two beasts of challenge rating 1 or lower
-* Four beasts of challenge rating 1/2 or lower
-* Eight beasts of challenge rating 1/4 or lower Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.
+* CR 2: One cave bear, giant boar, giant constrictor snake, hunter shark, or saber-toothed tiger.
+* CR 1: Two dire wolves, brown bears, giant spiders, giant octopuses, or giant toads.
 
 The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
 
 The GM has the creatures’ statistics.
 
-**_Overcast._** When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.
+**_Overcast._** When you cast this spell using more than 5 AET, you can choose higher CR monsters:
+- 8 AET spent: 1 giant scorpion or killer whale or 2 of the CR 2 options.
+- 12 AET spent: 1 elephant or 2 of the CR 3 options.
 
 ##### Conjure Elemental
 
@@ -653,9 +585,9 @@ If your concentration is broken, the elemental doesn’t disappear. Instead, you
 
 The GM has the elemental’s statistics.
 
-**_Overcast._** When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.
+**_Overcast._** When you cast this spell using more than 12 AET, the hit points of the summoned elemental increase by 5 for each additional AET spent and it gains an additional attack for every 3 additional AET spent.
 
-##### Conjure Minor Elementals
+##### Conjure Mephits
 
 **Cost:** 8 AET
 
@@ -667,18 +599,13 @@ The GM has the elemental’s statistics.
 
 **Duration:** Concentration, up to 1 hour
 
-You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
-
-* One elemental of challenge rating 2 or lower
-* Two elementals of challenge rating 1 or lower
-* Four elementals of challenge rating 1/2 or lower
-* Eight elementals of challenge rating 1/4 or lower. An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.
+You summon mephits that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
+- 4 of any of the following: Dust, Ice, or Magma mephits
+- 5 of any of the following: mud, smoke, or steam mephits
 
 The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
 
 The GM has the creatures’ statistics.
-
-**_Overcast._** When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot.
 
 ##### Conjure Woodland Beings
 
@@ -694,34 +621,14 @@ The GM has the creatures’ statistics.
 
 You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
-* One fey creature of challenge rating 2 or lower
-* Two fey creatures of challenge rating 1 or lower
-* Four fey creatures of challenge rating 1/2 or lower
-* Eight fey creatures of challenge rating 1/4 or lower
+* One sea hag
+* Three satyrs or two dryads
 
 A summoned creature disappears when it drops to 0 hit points or when the spell ends.
 
 The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
 
 The GM has the creatures’ statistics.
-
-**_Overcast._** When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot.
-
-##### Contact Other Plane
-
-_5th-level divination (ritual)_
-
-**Casting Time:** 1 minute
-
-**Range:** Self
-
-**Components:** V
-
-**Duration:** 1 minute
-
-You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can’t take actions, can’t understand what other creatures say, can’t read, and speak only in gibberish. A _greater restoration_ spell cast on you ends this effect.
-
-On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn’t know the answer to the question). If a one-word answer would be misleading, the GM might instead offer a short phrase as an answer.
 
 ##### Contagion
 
@@ -801,35 +708,7 @@ You either create or destroy water.
 
 **_Destroy Water._** You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.
-
-##### Creation
-
-**Cost:** 12 AET
-
-**Casting Time:** 1 minute
-
-**Range:** 30 feet
-
-**Components:** V, S, M (a tiny piece of matter of the same type of the item you plan to create)
-
-**Duration:** Special
-
-You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5* foot cube, and the object must be of a form and material that you have seen before.
-
-The duration depends on the object’s material. If the object is composed of multiple materials, use the shortest duration.
-
-| Material              | Duration   |
-|-----------------------|------------|
-| Vegetable matter      | 1 day      |
-| Stone or crystal      | 12 hours   |
-| Precious metals       | 1 hour     |
-| Gems                  | 10 minutes |
-| Adamantine or mithral | 1 minute   |
-
-Using any material created by this spell as another spell’s material component causes that spell to fail.
-
-**_Overcast._** When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.
+**_Overcast._** When you cast this spell using more than 2 AET, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for every 2 additional AET spent.
 
 ##### Cure Wounds
 
@@ -845,7 +724,7 @@ Using any material created by this spell as another spell’s material component
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
-**_Overcast._** When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
+**_Overcast._** When you cast this spell using more than 2 AET, the healing increases by 1d8 for every additional AET spent, up to a maximum of 12d8 + your spellcasting ability modifier.
 
 ### Spells (D)
 
@@ -881,7 +760,7 @@ Magical darkness spreads from a point you choose within range to fill a 15-foot-
 
 If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
-If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.
+If any of this spell’s area overlaps with an area of light created by a spell of costing 3 AET or less, the spell that created the light is dispelled.
 
 ##### Darkvision
 
@@ -895,7 +774,7 @@ If any of this spell’s area overlaps with an area of light created by a spell 
 
 **Duration:** 8 hours
 
-You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.
+You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. If it already had darkvision, it can see color in the dark.
 
 ##### Daylight
 
@@ -909,11 +788,11 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 
 **Duration:** 1 hour
 
-A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
+A 60-foot-radius sphere of sunlight spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
 
 If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.
 
-If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.
+If any of this spell’s area overlaps with an area of darkness created by a spell costing 3 or less AET, the spell that created the darkness is dispelled.
 
 ##### Death Ward
 
@@ -946,38 +825,6 @@ If the spell is still in effect when the target is subjected to an effect that w
 **Duration:** Concentration, up to 10 minutes
 
 For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.
-
-The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
-
-##### Detect Magic
-
-_1st-level divination (ritual)_
-
-**Casting Time:** 1 action
-
-**Range:** Self
-
-**Components:** V, S
-
-**Duration:** Concentration, up to 10 minutes
-
-For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
-
-The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
-
-##### Detect Poison and Disease
-
-_1st-level divination (ritual)_
-
-**Casting Time:** 1 action
-
-**Range:** Self
-
-**Components:** V, S, M (a yew leaf)
-
-**Duration:** Concentration, up to 10 minutes
-
-For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
 
@@ -1319,7 +1166,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.
 
-The hound is invisible to all creatures except you and can’t be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.
+The hound is invisible to all creatures except you and can’t be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Border Shadow. It ignores illusions.
 
 At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound’s attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.
 
@@ -1553,26 +1400,6 @@ While in this form, the target’s only method of movement is a flying speed of 
 
 While in the form of a misty cloud, the target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. The target can’t attack or cast spells.
 
-##### Geas
-
-**Cost:** 12 AET
-
-**Casting Time:** 1 minute
-
-**Range:** 60 feet
-
-**Components:** V
-
-**Duration:** 30 days
-
-You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can’t understand you is unaffected by the spell.
-
-You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.
-
-You can end the spell early by using an action to dismiss it. A _remove curse_, _greater restoration_, or _wish_ spell also ends it.
-
-**_Overcast._** When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.
-
 ##### Gentle Repose
 
 _2nd-level necromancy (ritual)_
@@ -1608,6 +1435,24 @@ Each creature obeys your verbal commands, and in combat, they act on your turn e
 A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it.
 
 The GM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.
+
+##### Grave Touch
+
+*Necromancy cantrip_
+
+**Casting Time:** 1 action
+
+**Range:** 120 feet
+
+**Components:** V, S
+
+**Duration:** 1 round
+
+You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target.
+
+If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
+
+This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 ##### Grease
 

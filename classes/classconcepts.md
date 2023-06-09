@@ -1,4 +1,4 @@
-Barbarian --> Warder: Meat tank, gets anti-magic later. High HP + STA, low AET. Heavy melee, thrown, DW. Spends STA to add damage on hit.
+Barbarian --> Warder: Meat tank, gets anti-magic later. High HP + STA, low AET. Heavy melee, thrown, DW. Spends STA to add damage on hit. Split rage into two pieces (defensive/offensive). Base rage only gives resistance, costs STA to activate and can be sustained either by attacking, taking damage, or with a bonus action. Initially must spend STA to hit harder, upgraded to some steady state damage bonus + ability to spike.
 	- Whirlwind Path: Focuses on movement + aoe. Less tanky.
 	- Earthquake Path: Tanky, heavy hits, control.
 

@@ -14,6 +14,8 @@ Choose a culture that fits the origin of your character.  You gain the features 
 
 ***Coin Counter***: You can buy for a 10% discount and sell for a 10% markup (ie 55% of stock price for normal gear or 110% for treasures and trade goods sold at full value normally).
 
+***Babyl-dweller***: You know the *lesser gift of tongues* incantation and can perform it without a ritual scroll and without expending the component.
+
 ##### Maritime
 
 ***Region***: Byssia, Serpent Dominion, Southshore
@@ -61,7 +63,7 @@ Choose a culture that fits the origin of your character.  You gain the features 
 
 ***Proficiencies***: Animal Handling, Survival, Nature
 
-***Animal Whisperer***: You can use your action to attempt to soothe a hostile animal or tame a wild one that isn't hostile to you. Choose a beast or monstrosity you can see that can hear you. Make a Wisdom (Animal Handling) check against a DC of 10 + half the creature's CR (rounding up), with disadvantage if it has an Intelligence above 3. On a success, the creature is charmed by you for one hour or until you or your companions take a hostile action against it. If you successfully repeat this check every hour for 4 hours, the creature will follow you for 24 hours and will defend you. It remains an NPC and you cannot command it directly. You can only have one creature tamed at a time, and once you successfully use this ability, you cannot use it targeting any other creature until you finish a long rest.
+***Animal Whisperer***: You can use your action to attempt to soothe a hostile animal or tame a wild one that isn't hostile to you. Choose a beast or monstrosity you can see that can hear you. Make a Wisdom (Animal Handling) check against a DC of 10 + the creature's CR (rounding up), with disadvantage if it has an Intelligence above 3. On a success, the creature is charmed by you for one hour or until you or your companions take a hostile action against it. If you successfully repeat this check every hour for 4 hours, the creature will follow you for 24 hours and will defend you. It remains an NPC and you cannot command it directly. You can only have one creature tamed at a time, and once you successfully use this ability, you cannot use it targeting any other creature until you finish a long rest.
 
 #### Specific
 ##### Wall-builder
@@ -88,7 +90,7 @@ Choose a culture that fits the origin of your character.  You gain the features 
 
 ***Proficiencies***: One martial weapon, History, Survival
 
-***Trained for War***: Wyrmhold teaches endurance and resilience in the face of danger. When you spend a hit die to heal, if the die result is below half of its maximum, the hit die is not expended.
+***Trained for War***: When you spend a hit die to heal, if the die result is below half of its maximum, the hit die is not expended.
 
 ##### Child of Night
 ***Region***: Nocthian Caldera, Byssia

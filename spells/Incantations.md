@@ -481,7 +481,14 @@ The spell’s area can’t overlap with the area of another forbiddance incantat
 #### Geas
 *Rare, 1 minute, Debilitating (1). Duration 30 days.*
 
-You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each minute. A creature that can’t understand you is unaffected by the effect.
+You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. The course of action must have clear boundaries--"give all your wealth to the poor within 30 days" is appropriate, but "serve me however I wish" isn't because it isn't clear what exactly would break it. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. A charmed creature who attempts to break the geas must make the saving throw again. On a failure, the creature is compelled to uphold the geas. On a success, the creature can act as it chooses, but suffers a consequence of your choosing from the list below:
+- suffers the effect of any non-legendary spell without a saving throw. The effect must be negative for the creature in question, and it lasts for the entire duration without concentration.
+- is wracked with pain, gaining 5 levels of exhaustion immediately.
+- is tormented by guilt and is unable to benefit from a rest for 8 days.
+
+After suffering the penalty, the geas ends and you become aware that the creature has broken the compulsion.
+
+A creature that can’t understand you is unaffected by the effect.
 
 You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the effect ends.
 

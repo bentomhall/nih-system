@@ -241,7 +241,7 @@ For all of these, start with a base lineage. The feature marked with a (+) is re
 
 ***Wings***: As a bonus action, you can cause glowing wings of energy to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
 
-***No End to Duty***: As an action, you can touch a creature and restore hit points equal to 3 times your level. Starting at 5th level, instead of healing someone you can use this trait to cast *lesser restoration*. Starting at level 9, you can use the trait to cast *greater restoration* instead of any other effect. Once you use this trait, you cannot do so again until you finish a long or short rest.
+***No End to Duty***: As an action, you can touch a creature and restore hit points equal to 3 times your level. You can use this trait a number of times equal to your proficiency bonus, regaining all uses when you finish a long rest.
 
 #### Fiend-touched (devil)
 
@@ -251,7 +251,7 @@ For all of these, start with a base lineage. The feature marked with a (+) is re
 
 ***Wings***: As a bonus action, you can cause leathery wings to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
 
-***Diabolical Sight***: You gain Darkvision with a 60ft range and can see through magical darkness. As an action, you can bestow this sight on an ally within 30' of you for 10 minutes. Once you use this trait to bestow darkvision on another, you cannot do so again until you finish a long or short rest.
+***Diabolical Sight***: You gain Darkvision with a 60ft range and can see through magical darkness. As an action, you can bestow this sight on an ally within 30' of you for 10 minutes. You do not lose your vision when you do so. Once you use this trait to bestow darkvision on another, you cannot do so again until you finish a long or short rest.
 
 #### Element-touched
 

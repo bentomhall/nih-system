@@ -1,0 +1,10 @@
+assets/*.jpg
+assets/*.png
+assets/*.svg
+**/*.aux
+**/*.log
+**/*.gz
+**/*.pdf
+**/*.fls
+**/*.fdb_latexmk
+**/*.out

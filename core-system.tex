@@ -49,7 +49,7 @@ By the same token, if a feature or effect allows you to multiply your proficienc
 
 In general, you don't multiply your proficiency bonus for attack rolls or saving throws. If a feature or effect allows you to do so, these same rules apply.
 
-\section{Stamina (STA) and Aether (AET)}
+\section{Stamina (STA) and Aether (AET)}\label{sec:stamina-and-aether}
 Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class–physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
 
 \textbf{Deflect}: When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
@@ -272,9 +272,8 @@ Depending on the armor you wear, you might add some or all of your Dexterity mod
 
 At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.
 
-\begin{aside}
-\subsection{Hiding}
-
+\begin{figure}[htb]
+\begin{DndSidebar}{Hiding}
 The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
 
 You can't hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
@@ -286,8 +285,8 @@ In combat, most creatures stay alert for signs of danger all around, so if you c
 \subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
 \subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in chapter 8, “Adventuring.”
-\end{aside}
-
+\end{DndSidebar}
+\end{figure}
 \subsection{Constitution}
 
 Constitution measures health, stamina, and vital force.
@@ -459,18 +458,12 @@ Certain special mounts, such as a pegasus or griffon, or special vehicles, such 
 
 \textbf{Travel Pace (table)}
 
-\begin{table}
-    \centering
-    \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
-        \hline
-        Pace & Distance per: Minute & Hour & Day & Effect \\\hline
-        Fast & 400 feet & 4 miles & 32 miles & $-$5 penalty to passive Wisdom (Perception) scores \\\hline
-        Normal & 300 feet & 3 miles & 24 miles & -- \\\hline
-        Slow & 200 feet & 2 miles & 16 miles & Able to use stealth \\\hline
-    \end{tabularx}
-    \caption[Travel]{Travel Pace}
-    \label{tbl:travel-pace}
-\end{table}
+\begin{DndTable}[header=Travel Pace\label{tbl:travel-pace}]{XXXXX}
+    Pace & Distance per: Minute & Hour & Day & Effect \\
+    Fast & 400 feet & 4 miles & 32 miles & $-$5 penalty to passive Wisdom (Perception) scores \\
+    Normal & 300 feet & 3 miles & 24 miles & -- \\
+    Slow & 200 feet & 2 miles & 16 miles & Able to use stealth \\
+\end{DndTable}
 
 \subsubsection{Difficult Terrain}
 
@@ -584,15 +577,17 @@ Adventurers can take short rests in the midst of an adventuring day and a long r
 
 \subsection{Short Rest}
 
-A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds.
+A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds. Any spellcasting interrupts a short rest.
 
 A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, which is equal to the character's level. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character regains some spent Hit Dice upon finishing a long rest, as explained below.
+
+Additionally, characters recover their expended Stamina (see \nameref{sec:stamina-and-aether}) when they finish a short rest.
 
 \subsection{Long Rest}
 
 A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—at least 1 hour of walking, fighting, casting spells, or similar adventuring activity—the characters must begin the rest again to gain any benefit from it.
 
-At the end of a long rest, a character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
+At the end of a long rest, a character regains all lost hit points and aether (see \nameref{sec:stamina-and-aether}). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
 A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.
 
@@ -661,15 +656,15 @@ The training lasts for 250 days and costs 1 gp per day. After you spend the requ
 A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A
 \textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
 
-\begin{aside}
-    \subsection{Combat Step by Step}
-    
-    1.  \textbf{Determine surprise.} The GM determines whether anyone involved in the combat encounter is surprised.
-    2.  \textbf{Establish positions.} The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.
-    3.  \textbf{Roll initiative.} Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.
-    4.  \textbf{Take turns.} Each participant in the battle takes a turn in initiative order.
-    5.  \textbf{Begin the next round.} When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.
-\end{aside}
+\begin{DndComment}{Combat Step by Step\label{cmt:combat-step-by-step}}
+    \begin{enumerate}
+        \item \textbf{Determine surprise.} The GM determines whether anyone involved in the combat encounter is surprised.
+        \item \textbf{Establish positions.} The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.
+        \item \textbf{Roll initiative.} Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.
+        \item \textbf{Take turns.} Each participant in the battle takes a turn in initiative order.
+        \item \textbf{Begin the next round.} When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.
+    \end{enumerate}
+\end{DndComment}
 
 
 \subsection{Surprise}
@@ -809,23 +804,15 @@ Flying creatures enjoy many benefits of mobility, but they must also deal with t
 
 Each creature takes up a different amount of space. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
 
-\textbf{Size Categories (table)}
-
-\begin{table}
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        Size & Space \\\hline
-        Tiny & 2.5 by 2.5 ft. or smaller \\\hline
-        Small & 5 by 5 ft. \\\hline
-        Medium & 5 by 5 ft. \\\hline
-        Large & 10 by 10 ft. \\\hline
-        Huge & 15 by 15 ft. \\\hline
-        Gargantuan & 20 by 20 ft. or larger \\\hline
-    \end{tabular}
-    \caption[Sizes]{Size Categories}
-    \label{tbl:size-categories}
-\end{table}
+\begin{DndTable}[header=Size Categories\label{tbl:size-categories}]{XX}
+    Size & Space \\
+    Tiny & 2.5 by 2.5 ft. or smaller \\
+    Small & 5 by 5 ft. \\
+    Medium & 5 by 5 ft. \\
+    Large & 10 by 10 ft. \\
+    Huge & 15 by 15 ft. \\
+    Gargantuan & 20 by 20 ft. or larger \\
+\end{DndTable}
 
 \subsubsection{Space}
 
@@ -1199,38 +1186,26 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 
 \subparagraph*{Armor Class}. An object's Armor Class is a measure of how difficult it is to deal damage to the object when striking it (because the object has no chance of dodging out of the way). The Object Armor Class table provides suggested AC values for various substances.
 
-\begin{table}
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        Substance & AC \\\hline
-        Cloth, paper, rope  & 11 \\\hline
-        Crystal, glass, ice & 13 \\\hline
-        Wood, bone          & 15 \\\hline
-        Stone or force      & 17 \\\hline
-        Iron, steel         & 19 \\\hline
-        Mithral             & 21 \\\hline
-        Adamantine          & 23 \\\hline
-    \end{tabular}
-    \caption[Object AC]{Object Armor Class}
-    \label{tbl:object-ac}
-\end{table}
+\begin{DndTable}[header=Object Armor Class\label{tbl:object-ac}]{XX}
+    \textbf{Substance} & \textbf{AC} \\
+    Cloth, paper, rope  & 11 \\
+    Crystal, glass, ice & 13 \\
+    Wood, bone          & 15 \\
+    Stone or force      & 17 \\
+    Iron, steel         & 19 \\
+    Mithral             & 21 \\
+    Adamantine          & 23 \\
+\end{DndTable}
 
 \subparagraph*{Hit Points}. An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.
 
-\textbf{Object Hit Points (table)}
-\begin{table}
-    \centering
-    \begin{tabular}{|l|l|l|}
-        Size & Fragile & Resilient \\\hline
-        Tiny (bottle, lock) & 2 (1d4) & 5 (2d4) \\\hline
-        Small (chest, lute) & 3 (1d6) & 10 (3d6) \\\hline
-        Medium (barrel, chandelier) & 4 (1d8) & 18 (4d8) \\\hline
-        Large (cart, 10-ft.-by-10-ft. window) & 5 (1d10) & 27 (5d10) \\\hline
-    \end{tabular}
-    \caption[Object HP]{Object Hit Points}
-    \label{tbl:object-hp}
-\end{table}
+\begin{DndTable}[header=Object Hit Points\label{tbl:object-hp}]{XXX}
+        \textbf{Size} & \textbf{Fragile} & \textbf{Resilient} \\
+        Tiny (bottle, lock) & 2 (1d4) & 5 (2d4) \\
+        Small (chest, lute) & 3 (1d6) & 10 (3d6) \\
+        Medium (barrel, chandelier) & 4 (1d8) & 18 (4d8) \\
+        Large (cart, 10-ft.-by-10-ft. window) & 5 (1d10) & 27 (5d10) \\
+\end{DndTable}
 
 \subparagraph*{Huge and Gargantuan Objects}. Normal weapons are of little use against many Huge and Gargantuan objects, such as a colossal statue, towering column of stone, or massive boulder. That said, one torch can burn a Huge tapestry, and an \textit{earthquake} spell can reduce a colossus to rubble. You can track a Huge or Gargantuan object's hit points if you like, or you can simply decide how long the object can withstand whatever weapon or force is acting against it. If you track hit points for the object, divide it into Large or smaller sections, and track each section's hit points separately. Destroying one of those sections could ruin the entire object. For example, a Gargantuan statue of a human might topple over when one of its Large legs is reduced to 0 hit points.
 

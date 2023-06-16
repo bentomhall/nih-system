@@ -1,5 +1,5 @@
-#### Aboleth
-
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Aboleth}
+\begin{multicols}{2}
 _Large aberration, lawful evil_
 
 **Armor Class** 17 (natural armor)

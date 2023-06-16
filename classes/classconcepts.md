@@ -1,4 +1,4 @@
-Barbarian --> Warder: Meat tank, gets anti-magic later. High HP + STA, low AET. Heavy melee, thrown, DW. Spends STA to add damage on hit.
+Barbarian --> Warden: Meat tank, gets anti-magic later. High HP + STA, low AET. Heavy melee, thrown, DW. Spends STA to add damage on hit. Split rage into two pieces (defensive/offensive). Base rage only gives resistance, costs STA to activate and can be sustained either by attacking, taking damage, or with a bonus action. Initially must spend STA to hit harder, upgraded to some steady state damage bonus + ability to spike.
 	- Whirlwind Path: Focuses on movement + aoe. Less tanky.
 	- Earthquake Path: Tanky, heavy hits, control.
 
@@ -13,6 +13,7 @@ Cleric --> Priest: Light armor by default. High level is "miracles" (ie DI beefe
 Druid --> Shaman: No shapeshifting. Instead summons manifest zones. Focused on plants + elements.
 	- Spirit Shaman: Adds in some social
 	- Elemental Shaman: More blastery. Summons elementals.
+	- Indwelling Spirit: Summons spirits into them, enhancing abilities
 
 Fighter --> Armsman: Heavy armored. Switch hitter (can use melee or ranged equally). Spends AET to attack more. Higher AC but lower HP than Warder. High levels gets "tactical teleports", enhanced social, ??.
 	- Defender: All in on the tank playstyle. Control + sticky.

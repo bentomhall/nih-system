@@ -7,7 +7,7 @@ Creating a character follows a specific process.
 5. Assign ability scores.
 6. Pick proficiencies. If your background proficiencies overlap your class proficiencies, pick a new one.
 7. Pick starting gear from class.
-8. Calculate dependent values. This is HP, AC, 
+8. Calculate dependent values. This is HP, AC, AET, STA, weapon/spell attack mods/DCs, etc.
 
 ## Alignment
 Is not in effect, except descriptively. Instead, come up with two adjectives that describe your character’s default reaction to things. 
@@ -25,24 +25,24 @@ Some of these languages are actually families of languages with many dialects. F
 
 | Language | Typical Speakers | Script   |
 |----------|------------------|----------|
-| Common   | Humans           | Common   |
-| Dwarvish | Dwarves          | Dwarvish |
-| High Elvish   | High Elves  | Elvish   |
-| Wood Elvish   | Wood Elves  | Elvish   |
-| Giant    | Ogres, giants    | Dwarvish |
-| Goblin   | Goblinoids       | Mixed    |
-| Orc      | Orcs             | Dwarvish |
+| Common   | Most people of western Noefra | Imperial   |
+| Bidni-Kel | Dwarves          | Modern Runic |
+| Yonwach   | Gwerin  | Aelfic   |
+| Metsae   | Ihmisi  | Aelfic   |
+| Too-til    | Ogres, giants, jazuu    | Modern Runic |
+| Ngyon Toi   | Goblinoids       | Mixed (no native written form)    |
+| Ard-teang      | Orcs             | Modified Imperial |
 
 **Exotic Languages (table)**
 
 | Language    | Typical Speakers    | Script    |
 |-------------|---------------------|-----------|
-| Abyssal     | Demons              | Infernal  |
-| Celestial   | Celestials          | Celestial |
-| Draconic    | Dragons, dragonborn | Mixed Dwarvish/Elvish  |
-| Infernal    | Devils              | Infernal  |
-| Primordial  | Elementals          | Dwarvish  |
-| Sylvan      | Fey creatures       | Elvish    |
+| Abyssal     | Demons              | Lucian  |
+| Celestial   | Lucians on divine missions | Lucians |
+| Draconic    | Dragons, dragonborn | Varies (transliterated) |
+| Lucian      | Most astral residents | Lucian  |
+| Primordial  | Residents of the elemental planes | Modified Runic  |
+| Sylvan      | Fey creatures, druids       | Aelfic (transliterated)    |
 
 ## Backgrounds
 Every story has a beginning. Your character’s background reveals where you came from, how you became an adventurer, and your place in the world. Your fighter might have been a courageous knight or a grizzled soldier. Your wizard could have been a sage or an artisan. Your rogue might have gotten by as a guild thief or commanded audiences as a jester.

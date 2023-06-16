@@ -1,7 +1,7 @@
 ### Dragon
 I'm tired of having a crap-ton of dragon stat blocks, with some colors being stronger than others. So I'm attempting to slice and dice that.
 
-##### Wyrmling Dragon
+#### Dragon, Wyrmling
 _Medium dragon, Arrogant and Inquisitive_
 
 **Armor Class** 17 (natural armor)
@@ -26,24 +26,11 @@ _Medium dragon, Arrogant and Inquisitive_
 
 **Challenge** 2 (450 XP)
 
-**_Special Traits_**. Pick one of the following based on color:
-- Amphibious: The dragon can breath both air and water.
-- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
+**_Special Traits_**. Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
 
-**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
-- Black: Necrotic (CON)
-- Blue: Lightning (DEX)
-- Brass: Thunder (CON)
-- Bronze or Red: Fire (DEX)
-- Copper Acid (CON)
-- Green: Acid (DEX)
-- Gold: Radiant (DEX)
-- Silver or White: Cold (CON)
+**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
 
-**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:
-- Ball: 10 ft radius sphere centered on a point within 60 ft
-- Cone: 15 ft cone
-- Line: 15 ft line that is 5 ft wide
+**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 10 ft radius sphere centered on a point within 60 ft\\n- Cone: 15 ft cone\\n- Line: 15 ft line that is 5 ft wide
 
 **Actions**
 
@@ -56,7 +43,7 @@ To make a CR 3 version, add 2 hit dice (15 HP), increase the ability scores to 1
 
 To make a CR 4 version, add 6 hit dice (45 HP), increase the ability scores to 19/12/17/13/11/15, which increases the bite's modifier to +6 and the damage to 1d10 + 4 + 2d4. The breath weapon goes up to DC 13 and gains 1d6 damage.
 
-##### Dragon, Young
+#### Dragon, Young
 
 _Large dragon, Arrogant and Rapacious_
 
@@ -82,29 +69,11 @@ _Large dragon, Arrogant and Rapacious_
 
 **Challenge** 8
 
-**_Special Traits_**. Pick one of the following based on color:
-- Amphibious: The dragon can breath both air and water.
-- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
-- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
-- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 15.
-    - Pick 3 spells that cost 2 AET. It can cast these 3x/day each. 
-    - Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each.
-    - Pick 1 spell that costs 5 AET. It can cast this once/day.
+**_Special Traits_**. Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 15.\\n- Pick 3 spells that cost 2 AET. It can cast these 3x/day each.\\n- Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each.\\n- Pick 1 spell that costs 5 AET. It can cast this once/day.
 
-**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
-- Black: Necrotic (CON)
-- Blue: Lightning (DEX)
-- Brass: Thunder (CON)
-- Bronze or Red: Fire (DEX)
-- Copper Acid (CON)
-- Green: Acid (DEX)
-- Gold: Radiant (DEX)
-- Silver or White: Cold (CON)
+**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
 
-**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:
-- Ball: 15 ft radius sphere centered on a point within 60 ft
-- Cone: 30 ft cone
-- Line: 30 ft line that is 5 ft wide
+**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 15 ft radius sphere centered on a point within 60 ft\\n- Cone: 30 ft cone\\n- Line: 30 ft line that is 5 ft wide
 
 **Actions**
 
@@ -121,7 +90,7 @@ To increase the dragon's CR to 9, increase its hit points by 15 (no extra hit di
 
 To increase the dragon's CR to 10, increase its hit points by 21 (adding 2 hit dice), increase its STR, CON, and CHA by +3 and its DEX by 1 (increasing its attack modifier by 2 and physical damage modifiers by +1). Its breath weapon increases by 9 (+2d8) and its save DC increases by 2 (to 17). Its proficiency goes up by 1 as well.
 
-##### Dragon, Adult
+#### Dragon, Adult
 
 _Huge dragon, Arrogant and Superior_
 
@@ -147,29 +116,11 @@ _Huge dragon, Arrogant and Superior_
 
 **Challenge** 14
 
-**_Special Traits_**. Pick one of the following based on color:
-- Amphibious: The dragon can breath both air and water.
-- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
-- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
-- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16.
-    - Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. 
-    - Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each.
-    - Pick 1 spell that costs 8 AET. It can cast this once/day.
+**_Special Traits_**. Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16.\\n- Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. \\n- Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each.\\n- Pick 1 spell that costs 8 AET. It can cast this once/day.
 
-**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
-- Black: Necrotic (CON)
-- Blue: Lightning (DEX)
-- Brass: Thunder (CON)
-- Bronze or Red: Fire (DEX)
-- Copper Acid (CON)
-- Green: Acid (DEX)
-- Gold: Radiant (DEX)
-- Silver or White: Cold (CON)
+**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
 
-**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:
-- Ball: 20 ft radius sphere centered on a point within 90 ft
-- Cone: 60 ft cone
-- Line: 60 ft line that is 10 ft wide
+**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 20 ft radius sphere centered on a point within 90 ft\\n- Cone: 60 ft cone\\n- Line: 60 ft line that is 10 ft wide
 
 **_Legendary Resistance (3/Day)_**. If the dragon fails a saving throw, it can choose to succeed instead.
 
@@ -197,11 +148,14 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Wing Attack (Costs 2 Actions)_**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
 
-**Scaling**. To increase the dragon's CR to 15, increase its hit points to 212, its ability scores to 25/12/23/17/15/17 (increasing its attack bonus to +12 and its weapon damage output by 1), its breath weapon to 63 (14d8), and increase each of its saving throw DCs by 1.
+**Scaling**
+
+To increase the dragon's CR to 15, increase its hit points to 212, its ability scores to 25/12/23/17/15/17 (increasing its attack bonus to +12 and its weapon damage output by 1), its breath weapon to 63 (14d8), and increase each of its saving throw DCs by 1.
 
 To increase the dragon's CR to 16, increase its hit points to 225, its ability scores to 25/12/23/16/15/19, its breath weapon to 67 (15d8), its frightful presence DC to 18, its breath weapon DC to 19, and its wing attack DC to 20.
 
-##### Dragon, Ancient
+#### Dragon, Ancient
+
 _Gargantuan dragon, Arrogant and Controlling_
 
 **Armor Class** 22 (natural armor)
@@ -226,29 +180,11 @@ _Gargantuan dragon, Arrogant and Controlling_
 
 **Challenge** 21
 
-**_Special Traits_**. Pick one of the following based on color:
-- Amphibious: The dragon can breath both air and water.
-- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
-- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
-- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 19.
-    - Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. 
-    - Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each.
-    - Pick 1 spell that costs 13 AET. It can cast this once/day.
+**_Special Traits_**. Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 19.\\n- Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. \\n- Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each.\\n- Pick 1 spell that costs 13 AET. It can cast this once/day.
 
-**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
-- Black: Necrotic (CON)
-- Blue: Lightning (DEX)
-- Brass: Thunder (CON)
-- Bronze or Red: Fire (DEX)
-- Copper Acid (CON)
-- Green: Acid (DEX)
-- Gold: Radiant (DEX)
-- Silver or White: Cold (CON)
+**_Damage Type_**. The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
 
-**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:
-- Ball: 40 ft radius sphere centered on a point within 120 ft
-- Cone: 90 ft cone
-- Line: 90 ft line that is 10 ft wide
+**_Blast Shape_**. The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 40 ft radius sphere centered on a point within 120 ft\\n- Cone: 90 ft cone\\n- Line: 90 ft line that is 10 ft wide
 
 **_Legendary Resistance (3/Day)_**. If the dragon fails a saving throw, it can choose to succeed instead.
 
@@ -277,6 +213,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 **Wing Attack (Costs 2 Actions)_**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
 
 **Scaling**
+
 To increase the dragon's CR to 22, increase its HP to 385 (22d20+154), its AC to 22, its breath weapon damage to 77 (14d10), and its saving throw DCs to 20 (Frightful Presence and spellcasting), 23 (Breath weapon), and 24 (Wing Attack).
 
 To increase the dragon's CR to 23, increase its HP to 487 (25d20+225), its AC to 23, its ability scores to 30/12/29/18/15/23 (increasing its attack bonus to +17 and the damage modifier of each physical attack to +10), its breath weapon damage to 88 (16d10), and its saving throw DCs to 21 (Frightful Presence and spellcasting), 24 (Breath weapon), and 25 (Wing Attack)/

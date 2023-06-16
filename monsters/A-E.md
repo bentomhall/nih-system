@@ -1,5 +1,4 @@
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Aboleth}
-\begin{multicols}{2}
+#### Aboleth
 _Large aberration, lawful evil_
 
 **Armor Class** 17 (natural armor)
@@ -36,9 +35,7 @@ _Large aberration, lawful evil_
 
 **_Tail_**. _Melee Weapon Attack:_ +9 to hit, reach 10 ft. one target. _Hit:_ 15 (3d6 + 5) bludgeoning damage.
 
-**_Enslave (3/Day)_**. The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth’s control and can’t take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.
-
-Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.
+**_Enslave (3/Day)_**. The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth’s control and can’t take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.
 
 **Legendary Actions**
 
@@ -74,9 +71,7 @@ _Medium construct, unaligned_
 
 **Challenge** 1 (200 XP)
 
-**_Antimagic Susceptibility_**. The armor is incapacitated while in the area of an _antimagic field._ If targeted by _dispel magic_, the armor must succeed on a
-
-Constitution saving throw against the caster’s spell save DC or fall unconscious for 1 minute.
+**_Antimagic Susceptibility_**. The armor is incapacitated while in the area of an _antimagic field._ If targeted by _dispel magic_, the armor must succeed on a Constitution saving throw against the caster’s spell save DC or fall unconscious for 1 minute.
 
 **_False Appearance_**. While the armor remains motionless, it is indistinguishable from a normal suit of armor.
 
@@ -216,11 +211,7 @@ _Medium monstrosity, unaligned_
 
 **Challenge** 3 (700 XP)
 
-**Petrifying Gaze_**. If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn’t incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the _greater restoration_ spell or other magic.
-
-A creature that isn’t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can’t see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.
-
-If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.
+**_Petrifying Gaze_**. If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn’t incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the _greater restoration_ spell or other magic.\\nA creature that isn’t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can’t see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.\\nIf the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.
 
 **Actions**
 
@@ -260,9 +251,7 @@ _Huge monstrosity, neutral evil_
 
 **_Lightning Breath (Recharge 5–6)_**. The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
 
-**_Swallow_**. The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir’s turns. A behir can have only one creature swallowed at a time.
-
-If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
+**_Swallow_**. The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir’s turns. A behir can have only one creature swallowed at a time.\\nIf the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
 
 #### Bugbear
 
@@ -472,11 +461,7 @@ _Large aberration, chaotic neutral_
 
 **_Moan_**. Each creature within 60 feet of the cloaker that can hear its moan and that isn’t an aberration must succeed on a DC 13 Wisdom saving throw or become frightened until the end of the cloaker’s next turn. If a creature’s saving throw is successful, the creature is immune to the cloaker’s moan for the next 24 hours
 
-**_Phantasms (Recharges after a Short or Long Rest)_**. The cloaker magically creates three illusory duplicates of itself if it isn’t in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
-
-Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can’t see or if it relies on senses other than sight.
-
-A duplicate has the cloaker’s AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
+**_Phantasms (Recharges after a Short or Long Rest)_**. The cloaker magically creates three illusory duplicates of itself if it isn’t in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can’t see or if it relies on senses other than sight.\\nA duplicate has the cloaker’s AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
 
 #### Cockatrice
 
@@ -528,11 +513,7 @@ _Medium celestial, lawful good_
 
 **Challenge** 4 (1,100 XP)
 
-**_Innate Spellcasting_**. The couatl’s spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
-
-At will: _detect evil and good_, _detect magic_, _detect thoughts_
-3/day each: _bless_, _create food and water_, _cure wounds_, _lesser restoration_, _protection from poison_, _sanctuary_, _shield_
-1/day each: _dream_, _greater restoration_, _scrying_
+**_Innate Spellcasting_**. The couatl’s spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\\nAt will: _detect evil and good_, _detect magic_, _detect thoughts_\\n3/day each: _bless_, _create food and water_, _cure wounds_, _lesser restoration_, _protection from poison_, _sanctuary_, _shield_\\n1/day each: _dream_, _greater restoration_, _scrying_
 
 **_Magic Weapons_**. The couatl’s weapon attacks are magical.
 
@@ -544,9 +525,7 @@ At will: _detect evil and good_, _detect magic_, _detect thoughts_
 
 **_Constrict_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one Medium or smaller creature. _Hit:_ 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can’t constrict another target.
 
-**_Change Shape_**. The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl’s choice).
-
-In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
+**_Change Shape_**. The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl’s choice).\\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
 
 ### Monsters (D)
 
@@ -578,15 +557,11 @@ _Small monstrosity, unaligned_
 
 **Actions**
 
-**_Crush_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target’s head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.
-
-While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle’s speed also becomes 0, it can’t benefit from any bonus to its speed, and it moves with the target.
-
-A creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.
+**_Crush_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target’s head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.\\nWhile attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle’s speed also becomes 0, it can’t benefit from any bonus to its speed, and it moves with the target.\\nA creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.
 
 **_Darkness Aura (1/Day)_**. A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can’t penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
 
-##### Devil, Barbed
+#### Devil, Barbed
 
 _Medium fiend (devil), lawful evil_
 
@@ -632,7 +607,7 @@ _Medium fiend (devil), lawful evil_
 
 **_Hurl Flame_**. Ranged Spell Attack:_ +5 to hit, range 150 ft., one target. _Hit:_ 10 (3d6) fire damage. If the target is a flammable object that isn’t being worn or carried, it also catches fire.
 
-##### Devil, Bearded
+#### Devil, Bearded
 
 _Medium fiend (devil), lawful evil_
 
@@ -674,7 +649,7 @@ _Medium fiend (devil), lawful evil_
 
 **_Glaive_**. _Melee Weapon Attack:_ +5 to hit, reach 10 ft., one target. _Hit:_ 8 (1d10 + 3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.
 
-##### Devil, Bone
+#### Devil, Bone
 
 _Large fiend (devil), lawful evil_
 
@@ -716,7 +691,7 @@ _Large fiend (devil), lawful evil_
 
 **_Sting_**. _Melee Weapon Attack:_ +8 to hit, reach 10 ft., one target. _Hit:_ 13 (2d8 + 4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-##### Devil, Horned
+#### Devil, Horned
 
 _Large fiend (devil), lawful evil_
 
@@ -758,7 +733,7 @@ _Large fiend (devil), lawful evil_
 
 **_Hurl Flame_**. Ranged Spell Attack:_ +7 to hit, range 150 ft., one target. _Hit:_ 14 (4d6) fire damage. If the target is a flammable object that isn’t being worn or carried, it also catches fire.
 
-##### Devil, Ice
+#### Devil, Ice
 
 _Large fiend (devil), lawful evil_
 
@@ -863,9 +838,6 @@ _Small fiend (demon), chaotic evil_
 
 **_Fetid Cloud (1/Day)_**. A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can’t take reactions.
 
-#### Dragons
-[Dragon Template](DragonTemplate.md)
-
 #### Dragon Turtle
 
 _Gargantuan dragon, neutral_
@@ -928,10 +900,7 @@ _Large monstrosity, Arrogant and Hungry_
 
 **_Fey Ancestry_**. The drider has advantage on saving throws against being charmed, and magic can’t put the drider to sleep.
 
-**_Innate Spellcasting_**. The drider’s innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
-
-At will: _dancing lights_
-1/day each: _darkness_, _faerie fire_
+**_Innate Spellcasting_**. The drider’s innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\\nAt will: _dancing lights_\\n1/day each: _darkness_, _faerie fire_
 
 **_Spider Climb_**. The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -971,11 +940,7 @@ _Medium fey, Tricky and Protective_
 
 **Challenge** 1
 
-**_Innate Spellcasting_**. The dryad’s innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:
-
-At will: _druidcraft_
-3/day each: _entangle_, _goodberry_
-1/day each: _barkskin_, _pass without trace_, _shillelagh_
+**_Innate Spellcasting_**. The dryad’s innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\\nAt will: _druidcraft_\\n3/day each: _entangle_, _goodberry_\\n1/day each: _barkskin_, _pass without trace_, _shillelagh_
 
 **_Magic Resistance_**. The dryad has advantage on saving throws against spells and other magical effects.
 
@@ -987,11 +952,7 @@ At will: _druidcraft_
 
 **_Club_**. _Melee Weapon Attack:_ +2 to hit (+6 to hit with _shillelagh_), reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with _shillelagh_.
 
-**_Fey Charm_**. The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn’t under the dryad’s control, it takes the dryad’s requests or actions in the most favorable way it can.
-
-Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the dryad’s Fey Charm for the next 24 hours.
-
-The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+**_Fey Charm_**. The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn’t under the dryad’s control, it takes the dryad’s requests or actions in the most favorable way it can.\\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the dryad’s Fey Charm for the next 24 hours.\\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.
 
 #### Dwarf, Twisted
 _Medium humanoid (dwarf), Stubborn and Spiteful_
@@ -1062,11 +1023,9 @@ _Large elemental, neutral_
 
 **_Slam_**. _Melee Weapon Attack:_ +8 to hit, reach 5 ft., one target. _Hit:_ 14 (2d8 + 5) bludgeoning damage.
 
-**_Whirlwind (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
+**_Whirlwind (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn’t flung away or knocked prone.
 
-If the saving throw is successful, the target takes half the bludgeoning damage and isn’t flung away or knocked prone.
-
-##### Elemental, Earth
+#### Elemental, Earth
 
 _Large elemental, neutral_
 
@@ -1104,7 +1063,7 @@ _Large elemental, neutral_
 
 **_Slam_**. _Melee Weapon Attack:_ +8 to hit, reach 10 ft., one target. _Hit:_ 14 (2d8 + 5) bludgeoning damage.
 
-##### Elemental, Fire
+#### Elemental, Fire
 
 _Large elemental, neutral_
 
@@ -1142,17 +1101,11 @@ _Large elemental, neutral_
 
 **_Touch_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
 
-##### Elemental, Ice
-//TODO
-
-##### Elemental, Lightning
-//TODO
-
-##### Elemental, Water
+#### Elemental, Water
 
 _Large elemental, neutral_
 
-**Armor** Class 14 (natural armor)
+**Armor Class** Class 14 (natural armor)
 
 **Hit Points** 114 (12d10 + 48)
 
@@ -1184,11 +1137,7 @@ _Large elemental, neutral_
 
 **_Slam_**. Melee _Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) bludgeoning damage.
 
-**_Whelm (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8
-+ 4) bludgeoning damage. If it is Large or smaller, it is also grappled
-(escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental’s space.
-
-The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental’s turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.
+**_Whelm (Recharge 4–6)_**. Each creature in the elemental’s space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental’s space.\\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental’s turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.
 
 #### Erinyes
 

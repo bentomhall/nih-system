@@ -59,3 +59,25 @@
     \end{DndMonsterLegendaryActions}
 \end{multicols}
 \end{DndMonster}
+
+\subsection{Animated Armor}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Animated Armor}
+\begin{multicols}{2}
+\DndMonsterType{Medium construct}
+\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={33 (6d8 + 6)}, speed={25 ft.}]
+\MonsterStats{+2}{+0}{+1}{-5}{-4}{-5}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={1 (200 XP)}]
+\DndMonsterAction{Antimagic Susceptibility} The armor is incapacitated while in the area of an \textit{antimagic field.} If targeted by \textit{dispel magic}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
+
+\DndMonsterAction{False Appearance} While the armor remains motionless, it is indistinguishable from a normal suit of armor.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The armor makes two melee attacks.
+\DndMonsterMelee[
+    name=Slam,
+    mod=+4,
+    dmg=\DndDice{1d6+2},
+    dmg-type=bludgeoning
+]
+\end{multicols}
+\end{DndMonster}

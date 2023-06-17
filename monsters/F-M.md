@@ -1,5 +1,5 @@
 ### Monsters (F)
-##### Fungus, Shrieker
+#### Fungus, Shrieker
 
 _Medium plant, Mindless_
 
@@ -27,7 +27,7 @@ _Medium plant, Mindless_
 
 **_Shriek_**. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker’s turns afterward.
 
-##### Fungus, Violet
+#### Fungus, Violet
 
 _Medium plant, Mindless_
 
@@ -95,7 +95,7 @@ _Medium elemental, chaotic evil_
 
 **_Claws_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) slashing damage.
 
-##### Ghast
+#### Ghast
 
 _Medium undead, chaotic evil_
 
@@ -169,11 +169,9 @@ _Medium undead, any alignment_
 
 **_Horrifying Visage_**. Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to this ghost’s Horrifying Visage for the next 24 hours. The aging effect can be reversed with a _greater restoration_ spell, but only within 24 hours of it occurring.
 
-**_Possession (Recharge 6)_**. One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn’t deprive the target of awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.
+**_Possession (Recharge 6)_**. One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn’t deprive the target of awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.\\nThe possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the _dispel evil and good_ spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost’s Possession for 24 hours after succeeding on the saving throw or after the possession ends.
 
-The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the _dispel evil and good_ spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost’s Possession for 24 hours after succeeding on the saving throw or after the possession ends.
-
-##### Ghoul
+#### Ghoul
 
 _Medium undead, chaotic evil_
 
@@ -203,7 +201,7 @@ _Medium undead, chaotic evil_
 
 **_Claws_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-##### Giant, Cloud
+#### Giant, Cloud
 
 _Huge giant, neutral good (50%) or neutral evil (50%)_
 
@@ -229,11 +227,7 @@ _Huge giant, neutral good (50%) or neutral evil (50%)_
 
 **_Keen Smell_**. The giant has advantage on Wisdom (Perception) checks that rely on smell.
 
-**_Innate Spellcasting_**. The giant’s innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-At will: _detect magic_, _fog cloud_, _light_
-3/day each: _feather fall_, _fly_, _misty step_, _telekinesis_
-1/day each: _control weather_, _gaseous form_
+**_Innate Spellcasting_**. The giant’s innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:\\n\\nAt will: _detect magic_, _fog cloud_, _light_\\n3/day each: _feather fall_, _fly_, _misty step_, _telekinesis_\\n1/day each: _control weather_, _gaseous form_
 
 **Actions**
 
@@ -243,7 +237,7 @@ At will: _detect magic_, _fog cloud_, _light_
 
 **_Rock_**. _Ranged Weapon Attack:_ +12 to hit, range 60/240 ft., one target. _Hit:_ 30 (4d10 + 8) bludgeoning damage.
 
-##### Giant, Fire
+#### Giant, Fire
 
 _Huge giant, lawful evil_
 
@@ -277,7 +271,7 @@ _Huge giant, lawful evil_
 
 **_Rock_**. _Ranged Weapon Attack:_ +11 to hit, range 60/240 ft., one target. _Hit:_ 29 (4d10 + 7) bludgeoning damage.
 
-##### Giant, Frost
+#### Giant, Frost
 
 _Huge giant, neutral evil_
 
@@ -311,7 +305,7 @@ _Huge giant, neutral evil_
 
 **_Rock_**. _Ranged Weapon Attack:_ +9 to hit, range 60/240 ft., one target. _Hit:_ 28 (4d10 + 6) bludgeoning damage.
 
-##### Giant, Hill
+#### Giant, Hill
 
 _Huge giant, chaotic evil_
 
@@ -341,7 +335,7 @@ _Huge giant, chaotic evil_
 
 **_Rock_**. _Ranged Weapon Attack:_ +8 to hit, range 60/240 ft., one target. _Hit:_ 21 (3d10 + 5) bludgeoning damage.
 
-##### Giant, Stone
+#### Giant, Stone
 
 _Huge giant, neutral_
 
@@ -379,7 +373,7 @@ _Huge giant, neutral_
 
 **_Rock Catching_**. If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.
 
-##### Giant, Storm
+#### Giant, Storm
 
 _Huge giant, chaotic good_
 
@@ -409,10 +403,7 @@ _Huge giant, chaotic good_
 
 **_Amphibious_**. The giant can breathe air and water.
 
-**_Innate Spellcasting_**. The giant’s innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:
-
-At will: _detect magic_, _feather fall_, _levitate_, _light_
-3/day each: _control weather_, _water breathing_
+**_Innate Spellcasting_**. The giant’s innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:\\nAt will: _detect magic_, _feather fall_, _levitate_, _light_\\n3/day each: _control weather_, _water breathing_
 
 **Actions**
 
@@ -488,7 +479,7 @@ _Small humanoid (goblinoid), neutral evil_
 
 **_Shortbow_**. _Ranged Weapon Attack:_ +4 to hit, range 80/320 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
 
-##### Golem, Clay
+#### Golem, Clay
 
 _Large construct, unaligned_
 
@@ -512,7 +503,7 @@ _Large construct, unaligned_
 
 **Challenge** 9 (5,000 XP)
 
-**_Acid Absorption**_. Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.
+**_Acid Absorption_**. Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.
 
 **_Berserk_**. Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
 
@@ -530,7 +521,7 @@ _Large construct, unaligned_
 
 **_Haste (Recharge 5–6)_**. Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
 
-##### Golem, FLesh
+#### Golem, FLesh
 
 _Medium construct, neutral_
 
@@ -554,15 +545,13 @@ _Medium construct, neutral_
 
 **Challenge** 5 (1,800 XP)
 
-**_Berserk_**. Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
+**_Berserk_**. Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.\\nThe golem’s creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.
 
-The golem’s creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.
-
-**_Aversion of Fire_**. If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
+**_Aversion to Fire_**. If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
 
 **_Immutable Form_**. The golem is immune to any spell or effect that would alter its form.
 
-**_Lightning Absorption**_. Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.
+**_Lightning Absorption_**. Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.
 
 **_Magic Resistance_**. The golem has advantage on saving throws against spells and other magical effects.
 
@@ -574,7 +563,7 @@ The golem’s creator, if within 60 feet of the berserk golem, can try to calm i
 
 **_Slam_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) bludgeoning damage.
 
-##### Golem, Iron
+#### Golem, Iron
 
 _Large construct, unaligned_
 
@@ -616,7 +605,7 @@ _Large construct, unaligned_
 
 **_Poison Breath (Recharge 6)_**. The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
 
-##### Golem, Stone
+#### Golem, Stone
 
 _Large construct, unaligned_
 
@@ -747,11 +736,7 @@ _Medium monstrosity, chaotic evil_
 
 **_Club_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 3 (1d4 + 1) bludgeoning damage.
 
-**_Luring Song_**. The harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.
-
-While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.
-
-A target that successfully saves is immune to this harpy’s song for the next 24 hours.
+**_Luring Song_**. The harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.\\nWhile charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.\\nA target that successfully saves is immune to this harpy’s song for the next 24 hours.
 
 #### Hell Hound
 
@@ -871,11 +856,7 @@ _Huge monstrosity, unaligned_
 
 **_Hold Breath_**. The hydra can hold its breath for 1 hour.
 
-**_Multiple Heads_**. The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
-
-Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.
-
-At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
+**_Multiple Heads_**. The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.\\nWhenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.\\nAt the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
 
 **_Reactive Heads_**. For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.
 
@@ -964,9 +945,7 @@ _Gargantuan monstrosity (titan)**,** chaotic evil_
 
 **_Multiattack_**. The kraken makes three tentacle attacks, each of which it can replace with one use of Fling.
 
-**_Bite_**. _Melee Weapon Attack:_ +17 to hit, reach 5 ft., one target. _Hit:_ 23 (3d8 + 10) piercing damage. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken’s turns.
-
-If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
+**_Bite_**. _Melee Weapon Attack:_ +17 to hit, reach 5 ft., one target. _Hit:_ 23 (3d8 + 10) piercing damage. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken’s turns.\\nIf the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
 
 **_Tentacle_**. _Melee Weapon Attack:_ +17 to hit, reach 30 ft., one target. _Hit:_ 20 (3d6 + 10) bludgeoning damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained. The kraken has ten tentacles, each of which can grapple one target.
 
@@ -1019,18 +998,7 @@ _Medium undead, any evil alignment_
 
 **_Rejuvenation_**. If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.
 
-**_Spellcasting_**. The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:
-
-Cantrips (at will): _mage hand_, _prestidigitation_, _ray of frost_
-1st level (4 slots): _detect magic_, _magic missile_, _shield_, _thunderwave_
-2nd level (3 slots): _acid arrow_, _detect thoughts_, _invisibility_, _mirror image_
-3rd level (3 slots): _animate dead_, _counterspell_, _dispel magic_, _fireball_
-4th level (3 slots): _blight_, _dimension door_
-5th level (3 slots): _cloudkill_, _scrying_
-6th level (1 slot): _disintegrate_, _globe of invulnerability_
-7th level (1 slot): _finger of death_, _plane shift_
-8th level (1 slot): _dominate monster_, _power word stun_
-9th level (1 slot): _power word kill_
+**_Spellcasting_**. The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\\nCantrips (at will): _mage hand_, _prestidigitation_, _ray of frost_\\n1st level (4 slots): _detect magic_, _magic missile_, _shield_, _thunderwave_\\n2nd level (3 slots): _acid arrow_, _detect thoughts_, _invisibility_, _mirror image_\\n3rd level (3 slots): _animate dead_, _counterspell_, _dispel magic_, _fireball_\\n4th level (3 slots): _blight_, _dimension door_\\n5th level (3 slots): _cloudkill_, _scrying_\\n6th level (1 slot): _disintegrate_, _globe of invulnerability_\\n7th level (1 slot): _finger of death_, _plane shift_\\n8th level (1 slot): _dominate monster_, _power word stun_\\n9th level (1 slot): _power word kill_
 
 **_Turn Resistance_**. The lich has advantage on saving throws against any effect that turns undead.
 
@@ -1138,11 +1106,7 @@ _Medium monstrosity, lawful evil_
 
 **Challenge** 6 (2,300 XP)
 
-**_Petrifying Gaze_**. When a creature that can see the medusa’s eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn’t incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the _greater restoration_ spell or other magic.
-
-Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can’t see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.
-
-If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.
+**_Petrifying Gaze_**. When a creature that can see the medusa’s eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn’t incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the _greater restoration_ spell or other magic.\\nUnless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can’t see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.\\nIf the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.
 
 **Actions**
 
@@ -1154,9 +1118,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 **_Longbow_**. _Ranged Weapon Attack:_ +5 to hit, range 150/600 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage plus 7 (2d6) poison damage.
 
-#### Mephits
-
-##### Dust Mephit
+#### Dust Mephit
 
 _Small elemental, neutral evil_
 
@@ -1194,7 +1156,7 @@ _Small elemental, neutral evil_
 
 **_Blinding Breath (Recharge 6)_**. The mephit exhales a 15- foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-##### Ice Mephit
+#### Ice Mephit
 
 _Small elemental, neutral evil_
 
@@ -1234,7 +1196,7 @@ _Small elemental, neutral evil_
 
 **_Frost Breath (Recharge 6)_**. The mephit exhales a 15- foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.
 
-##### Magma Mephit
+#### Magma Mephit
 
 _Small elemental, neutral evil_
 
@@ -1274,7 +1236,7 @@ _Small elemental, neutral evil_
 
 **_Fire Breath (Recharge 6)_**. The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
 
-##### Steam Mephit
+#### Steam Mephit
 
 _Small elemental, neutral evil_
 
@@ -1348,7 +1310,7 @@ _Medium monstrosity (shapechanger), neutral_
 
 **_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.
 
-##### Mummy
+#### Mummy
 
 _Medium undead**,** lawful evil_
 
@@ -1386,7 +1348,7 @@ _Medium undead**,** lawful evil_
 
 **_Dreadful Glare_**. The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy’s next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
 
-##### Mummy Lord
+#### Mummy Lord
 
 _Medium undead, lawful evil_
 
@@ -1420,15 +1382,7 @@ _Medium undead, lawful evil_
 
 **_Rejuvenation_**. A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord’s heart.
 
-**_Spellcasting_**. The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
-
-Cantrips (at will): _sacred flame_, _thaumaturgy_
-1st level (4 slots): _command_, _guiding bolt_, _shield of faith_
-2nd level (3 slots): _hold person_, _silence_, _spiritual weapon_
-3rd level (3 slots): _animate dead_, _dispel magic_
-4th level (3 slots): _divination_, _guardian of faith_
-5th level (2 slots): _contagion_, _insect plague_
-6th level (1 slot): _harm_
+**_Spellcasting_**. The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:\\nCantrips (at will): _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _command_, _guiding bolt_, _shield of faith_\\n2nd level (3 slots): _hold person_, _silence_, _spiritual weapon_\\n3rd level (3 slots): _animate dead_, _dispel magic_\\n4th level (3 slots): _divination_, _guardian of faith_\\n5th level (2 slots):  _)contagion_, _insect plague_\\n6th level (1 slot): _harm_
 
 **Actions**
 

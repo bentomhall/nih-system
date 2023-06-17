@@ -1,9 +1,3 @@
-## Miscellaneous Creatures
-
----
-
-This appendix contains statistics for various animals, vermin, and other critters. The stat blocks are organized alphabetically by creature name.
-
 ### Creatures (A-C)
 
 #### Ape
@@ -66,8 +60,6 @@ _Small plant, unaligned_
 
 **_Rake_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 1 (1d4 − 1) slashing damage.
 
-An **awakened shrub** is an ordinary shrub given sentience and mobility by the _awaken_ spell or similar magic.
-
 #### Awakened Tree
 
 _Huge plant, unaligned_
@@ -98,8 +90,6 @@ _Huge plant, unaligned_
 
 **_Slam_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one target. _Hit:_ 14 (3d6 + 4) bludgeoning damage.
 
-An **awakened tree** is an ordinary tree given sentience and mobility by the _awaken_ spell or similar magic.
-
 #### Axe Beak
 
 _Large beast, unaligned_
@@ -123,8 +113,6 @@ _Large beast, unaligned_
 **Actions**
 
 **_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) slashing damage.
-
-An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.
 
 #### Baboon
 
@@ -268,8 +256,6 @@ _Medium fey, lawful good_
 
 **_Teleport (Recharge 4–6)_**. The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
 
-A **blink dog** takes its name from its ability to blink in and out of existence, a talent it uses to aid its attacks and to avoid harm. Blink dogs harbor a long- standing hatred for displacer beasts and attack them on sight.
-
 #### Blood Hawk
 
 _Small beast, unaligned_
@@ -300,7 +286,6 @@ _Small beast, unaligned_
 
 **_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) piercing damage.
 
-Taking its name from its crimson feathers and aggressive nature, the **blood hawk** fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.
 
 #### Boar
 
@@ -402,7 +387,7 @@ _Tiny beast, unaligned_
 
 **Skills** Perception +3, Stealth +4
 
-**Senses** passive Perception 13
+**Senses** Darkvision 60 ft, passive Perception 13
 
 **Languages** —
 
@@ -527,8 +512,6 @@ _Medium monstrosity, neutral evil_
 **_Multiattack_**. The dog makes two bite attacks.
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
-
-A **death dog** is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog’s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim’s flesh to slowly rot off the bone.
 
 #### Deer
 
@@ -718,8 +701,6 @@ _Tiny beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage plus 7 (3d4) poison damage.
 
-A **flying snake** is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.
-
 #### Frog
 
 _Tiny beast, unaligned_
@@ -745,8 +726,6 @@ _Tiny beast, unaligned_
 **_Amphibious_**. The frog can breathe air and water.
 
 **_Standing Leap_**. The frog’s long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
-
-A **frog** has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog’s statistics can also be used to represent a **toad**.
 
 ### Creatures (G-I)
 
@@ -1011,8 +990,6 @@ _Large beast, neutral good_
 
 **_Talons_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) slashing damage.
 
-A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).
-
 #### Giant Elk
 
 _Huge beast, unaligned_
@@ -1020,7 +997,6 @@ _Huge beast, unaligned_
 **Armor Class** 14 (natural armor)
 
 **Hit Points** 42 (5d12 + 10)
-
 
 **Speed** 60 ft.
 
@@ -1043,8 +1019,6 @@ _Huge beast, unaligned_
 **_Ram_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one target. _Hit:_ 11 (2d6 + 4) bludgeoning damage.
 
 **_Hooves_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one prone creature. _Hit:_ 22 (4d8 + 4) bludgeoning damage.
-
-The majestic **giant elk** is rare to the point that its appearance is often taken as a foreshadowing of an important event, such as the birth of a king. Legends tell of gods that take the form of giant elk when visiting the Material Plane. Many cultures therefore believe that to hunt these creatures is to invite divine wrath.
 
 #### Giant Fire Beetle
 
@@ -1071,8 +1045,6 @@ _Small beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 2 (1d6 − 1) slashing damage.
-
-A **giant fire beetle** is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle’s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.
 
 #### Giant Frog
 
@@ -1104,9 +1076,7 @@ _Medium beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can’t bite another target.
 
-**_Swallow_**. The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog’s turns. The frog can have only one target swallowed at a time.
-
-If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+**_Swallow_**. The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog’s turns. The frog can have only one target swallowed at a time.\\nIf the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 
 #### Giant Goat
 
@@ -1188,8 +1158,6 @@ _Large beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
 
-A **giant lizard** can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.
-
 #### Giant Octopus
 
 _Large beast, unaligned_
@@ -1254,8 +1222,6 @@ _Large beast, neutral_
 
 **_Talons_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 8 (2d6 + 1) slashing damage.
 
-**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.
-
 #### Giant Poisonous Snake
 
 _Medium beast, unaligned_
@@ -1309,12 +1275,6 @@ _Small beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) piercing damage.
-
-###### Variant: Diseased Giant Rats
-
-Some giant rats carry vile diseases that they spread with their bites. A diseased giant rat has a challenge rating of 1/8 (25 XP) and the following action instead of its normal bite attack.
-
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can’t regain hit points except by magical means, and the target’s hit point maximum decreases by 3 (1d6) every 24 hours. If the target’s hit point maximum drops to 0 as a result of this disease, the target dies.
 
 #### Giant Scorpion
 
@@ -1372,8 +1332,6 @@ _Large beast, unaligned_
 
 **_Ram_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage.
 
-Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.
-
 #### Giant Shark
 
 _Huge beast, unaligned_
@@ -1403,8 +1361,6 @@ _Huge beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +9 to hit, reach 5 ft., one target. _Hit:_ 22 (3d10 + 6) piercing damage.
-
-A **giant shark** is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.
 
 #### Giant Spider
 
@@ -1438,9 +1394,7 @@ _Large beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
-**_Web (Recharge 5–6)_**. _Ranged Weapon Attack:_ +5 to hit, range 30/60 ft., one creature. _Hit:_ The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
-
-To snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.
+**_Web (Recharge 5–6)_**. _Ranged Weapon Attack:_ +5 to hit, range 30/60 ft., one creature. _Hit:_ The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).\\nTo snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.
 
 #### Giant Toad
 
@@ -1470,9 +1424,7 @@ _Large beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can’t bite another target.
 
-**_Swallow_**. The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad’s turns. The toad can have only one target swallowed at a time.
-
-If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+**_Swallow_**. The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad’s turns. The toad can have only one target swallowed at a time.\\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 
 #### Giant Vulture
 
@@ -1507,8 +1459,6 @@ _Large beast, neutral evil_
 **_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) piercing damage.
 
 **_Talons_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 9 (2d6 + 2) slashing damage.
-
-A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.
 
 #### Giant Wasp
 
@@ -1593,8 +1543,6 @@ _Medium beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one creature. _Hit:_ 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
-
-Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.
 
 #### Goat
 
@@ -1682,8 +1630,6 @@ _Large beast, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) piercing damage.
 
-Smaller than a giant shark but larger and fiercer than a reef shark, a **hunter shark** haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.
-
 #### Hyena
 
 _Medium beast, unaligned_
@@ -1727,7 +1673,6 @@ _Small beast, unaligned_
 | STR    | DEX     | CON     | INT    | WIS     | CHA    |
 |--------|---------|---------|--------|---------|--------|
 | 8 (−1) | 15 (+2) | 11 (+0) | 3 (−4) | 12 (+1) | 6 (−2) |
-
 
 **Skills** Perception +3
 
@@ -1867,8 +1812,6 @@ _Huge beast, unaligned_
 
 **_Stomp_**. _Melee Weapon Attack:_ +10 to hit, reach 5 ft., one prone creature. _Hit:_ 29 (4d10 + 7) bludgeoning damage.
 
-A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.
-
 #### Mastiff
 
 _Medium beast, unaligned_
@@ -1896,8 +1839,6 @@ _Medium beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
-
-**Mastiffs** are impressive hounds prized by humanoids for their loyalty and keen senses. Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halflings and other Small humanoids ride them as mounts.
 
 #### Mule
 
@@ -2057,8 +1998,6 @@ _Large monstrosity, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
-A **phase spider** possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport.
-
 #### Poisonous Snake
 
 _Tiny beast, unaligned_
@@ -2149,9 +2088,9 @@ _Tiny beast, unaligned_
 
 **Speed** 0 ft., swim 40 ft.
 
-**STR DEX CON**
-
-2 (−4) 16 (+3) 9 (−1)
+| STR     | DEX     | CON     | INT    | WIS     | CHA    |
+|---------|---------|---------|--------|---------|--------|
+| 2 (-4)  | 16 (+3) | 9 (-1)  | 2 (−4) | 7 (-2)  | 3 (−4) |
 
 **Senses** darkvision 60 ft., passive Perception 8
 
@@ -2166,8 +2105,6 @@ _Tiny beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
-
-A **quipper** is a carnivorous fish with sharp teeth. Quippers can adapt to any aquatic environment, including cold subterranean lakes. They frequently gather in swarms; the statistics for a swarm of quippers appear later in this appendix.
 
 #### Rat
 
@@ -2252,8 +2189,6 @@ _Medium beast, unaligned_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
-
-Smaller than giant sharks and hunter sharks, **reef sharks** inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.
 
 #### Rhinoceros
 
@@ -2480,25 +2415,6 @@ _Medium swarm of Tiny beasts, unaligned_
 **Actions**
 
 **_Bites_**. _Melee Weapon Attack:_ +3 to hit, reach 0 ft., one target in the swarm’s space. _Hit:_ 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.
-
-###### Variant: Insect Swarms
-
-Different kinds of insects can gather in swarms, and each swarm has the special characteristics described below.
-
-**_Swarm of Beetles_**. A swarm of beetles gains a burrowing speed of 5 feet.
-
-**_Swarm of Centipedes_**. A creature reduced to 0 hit points by a swarm of centipedes is stable but poisoned for 1 hour, even after regaining hit points, and paralyzed while poisoned in this way.
-
-**_Swarm of Spiders_**. A swarm of spiders has the following additional traits.
-
-_Spider Climb._ The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-
-_Web Sense._ While in contact with a web, the swarm knows the exact location of any other creature in contact with the same web.
-
-_Web Walker._ The swarm ignores movement restrictions caused by webbing.
-
-**_Swarm of Wasps_**. A swarm of wasps has a walking speed of 5 feet, a flying speed of 30 feet, and no climbing speed.
-
 
 #### Swarm of Poisonous Snakes
 
@@ -2764,7 +2680,11 @@ _Large monstrosity, neutral evil_
 
 **Damage Immunities** cold
 
-**Senses** passive Perception 15 **Languages** Common, Giant, Winter Wolf **Challenge** 3 (700 XP)
+**Senses** passive Perception 15 
+
+**Languages** Common, Giant, Winter Wolf 
+
+**Challenge** 3 (700 XP)
 
 **_Keen Hearing and Smell_**. The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
@@ -2777,8 +2697,6 @@ _Large monstrosity, neutral evil_
 **_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
 
 **_Cold Breath (Recharge 5–6)_**. The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
-
-The arctic-dwelling **winter wolf** is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves’ deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.
 
 #### Wolf
 
@@ -2837,5 +2755,3 @@ _Large monstrosity, neutral evil_
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
-
-A **worg** is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.

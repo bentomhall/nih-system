@@ -1,4 +1,5 @@
 import re
+import sys
 
 class Monster(object):
     def __init__(self) -> None:
@@ -236,12 +237,13 @@ def parse_chunk(chunk: list[str]) -> Monster:
   return monster
 
 if __name__ == "__main__":
-  filename = 'A-E.md'
+  filename = sys.argv[1]+".md"
+  outputfile = sys.argv[2] or f"converted-{filename}.tex"
   text = []
   with open(filename, 'r', encoding='utf-8') as ifile:
     text = ifile.readlines()
   chunks = create_chunks(text)
-  with open('converted-a-e.tex', 'w') as ofile:
+  with open(outputfile, 'w', encoding='utf-8') as ofile:
      for chunk in chunks:
         monster = parse_chunk(chunk)
         print(monster.name)

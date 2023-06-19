@@ -1,33 +1,75 @@
 \subsection{Acolyte}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Acolyte}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Acolyte}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={10 }, hit-points={9 (2d8) }, speed={30 ft.}]
 \MonsterStats{+0}{+0}{+0}{+0}{+2}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Medicine +4, Religion +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Spellcasting} The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (3 slots): _bless_, _cure wounds_, _sanctuary_
+\DndMonsterAction{Spellcasting} The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
+
+Cantrips (at will): \textit{light}, \textit{sacred flame}, \textit{thaumaturgy}
+
+1st level (3 slots): \textit{bless}, \textit{cure wounds}, \textit{sanctuary}
 
 \DndMonsterSection{Actions}
-**_Club_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Club,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Archmage}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Archmage}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Archmage}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
-\DndMonsterBasics[armor-class={12 (15 with _mage armor_)}, hit-points={99 (18d8 + 18)}, speed={30 ft.}]
+\DndMonsterBasics[armor-class={12 (15 with \textit{mage armor})}, hit-points={99 (18d8 + 18)}, speed={30 ft.}]
 \MonsterStats{+0}{+2}{+1}{+5}{+2}{+3}
-\DndMonsterDetails[saving-throws={Int +9, Wis +6}, skills={Arcana +13, History +13}, damage-immunities={}, damage-resistances={damage from spells; nonmagical bludgeoning, piercing, and slashing (from _stoneskin_)}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any six languages}, challenge={12 (8,400 XP)}]
+\DndMonsterDetails[saving-throws={Int +9, Wis +6}, skills={Arcana +13, History +13}, damage-immunities={}, damage-resistances={damage from spells; nonmagical bludgeoning, piercing, and slashing (from \textit{stoneskin})}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any six languages}, challenge={12 (8,400 XP)}]
 \DndMonsterAction{Magic Resistance} The archmage has advantage on saving throws against spells and other magical effects.
 
-\DndMonsterAction{Spellcasting} The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast _disguise self_ and _invisibility_ at will and has the following wizard spells prepared:\\nCantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_, _shocking grasp_\\n1st level (4 slots): _detect magic_, _identify_, _mage armor_\*, _magic missile_\\n2nd level (3 slots): _detect thoughts_, _mirror image_, _misty step_\\n3rd level (3 slots): _counterspell_, _fly_, _lightning bolt_\\n4th level (3 slots): _banishment_, _fire shield_, _stoneskin_\*\\n5th level (3 slots): _cone of cold_, _scrying_, _wall of force_\\n6th level (1 slot): _globe of invulnerability_\\n7th level (1 slot): _teleport_\\n8th level (1 slot): _mind blank_\*\\n9th level (1 slot): _time stop_\\n\*The archmage casts these spells on itself before combat.
+\DndMonsterAction{Spellcasting} The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast \textit{disguise self} and \textit{invisibility} at will and has the following wizard spells prepared:
+
+Cantrips (at will): \textit{fire bolt}, \textit{light}, \textit{mage hand}, \textit{prestidigitation}, \textit{shocking grasp}
+
+1st level (4 slots): \textit{detect magic}, \textit{identify}, \textit{mage armor}\*, \textit{magic missile}
+
+2nd level (3 slots): \textit{detect thoughts}, \textit{mirror image}, \textit{misty step}
+
+3rd level (3 slots): \textit{counterspell}, \textit{fly}, \textit{lightning bolt}
+
+4th level (3 slots): \textit{banishment}, \textit{fire shield}, \textit{stoneskin}\*
+
+5th level (3 slots): \textit{cone of cold}, \textit{scrying}, \textit{wall of force}
+
+6th level (1 slot): \textit{globe of invulnerability}
+
+7th level (1 slot): \textit{teleport}
+
+8th level (1 slot): \textit{mind blank}\*
+
+9th level (1 slot): \textit{time stop}
+
+\*The archmage casts these spells on itself before combat.
 
 \DndMonsterSection{Actions}
-**_Dagger_**. _Melee or Ranged Weapon Attack:_ +6 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d4 + 2)  piercing damage.
+\DndMonsterAttack[
+	name=Dagger,
+	distance=both,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type= piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Assassin}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Assassin}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Assassin}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={15 (studded leather)}, hit-points={78 (12d8 + 24)}, speed={30 ft.}]
@@ -41,24 +83,58 @@
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The assassin makes two shortsword attacks.
-**_Shortsword_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
-**_Light Crossbow_**. _Ranged Weapon Attack:_ +6 to hit, range 80/320 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Shortsword,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.}
+]
+\DndMonsterAttack[
+	name=Light Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+6,
+	range=80/320,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Bandit}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Bandit}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Bandit}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={12 (leather armor)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
 \MonsterStats{+0}{+1}{+1}{+0}{+0}{+0}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Scimitar_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) slashing damage.
-**_Light Crossbow_**. _Ranged Weapon Attack:_ +3 to hit, range 80 ft./320 ft., one target. _Hit:_ 5 (1d8 + 1) piercing damage.
+\DndMonsterAttack[
+	name=Scimitar,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Light Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+3,
+	range=80 ft./320,
+	dmg=\DndDice{1d8 + 1},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Bandit Captain}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Bandit Captain}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Bandit Captain}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={15 (studded leather)}, hit-points={65 (10d8 + 20)}, speed={30 ft.}]
@@ -66,37 +142,70 @@
 \DndMonsterDetails[saving-throws={Str +4, Dex +5, Wis +2}, skills={Athletics +4, Deception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any two languages }, challenge={2 (450 XP)}]
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.
-**_Scimitar_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) slashing damage.
-**_Dagger_**. _Melee or Ranged Weapon Attack:_ +5 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 5 (1d4 + 2)  piercing damage.
-The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.
+\DndMonsterAttack[
+	name=Scimitar,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Dagger,
+	distance=both,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type= piercing
+]
+\DndMonsterAction{Parry}
+As a reaction, the captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.
 \end{multicols}
 \end{DndMonster}
 \subsection{Berserker}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Berserker}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Berserker}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={67 (9d8 + 27)}, speed={30 ft.}]
-\MonsterStats{+3}{+1}{+3}{−1}{+0}{−1}
+\MonsterStats{+3}{+1}{+3}{-1}{+0}{-1}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={2 (450 XP)}]
 \DndMonsterAction{Reckless} At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.
 
 \DndMonsterSection{Actions}
-**_Greataxe_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 9 (1d12 + 3) slashing damage.
+\DndMonsterAttack[
+	name=Greataxe,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d12 + 3},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Commoner}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Commoner}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Commoner}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={10 }, hit-points={4 (1d8) }, speed={30 ft.}]
 \MonsterStats{+0}{+0}{+0}{+0}{+0}{+0}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={0 (10 XP)}]
 \DndMonsterSection{Actions}
-**_Club_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Club,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Cultist}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Cultist}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Cultist}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={12 (leather armor)}, hit-points={9 (2d8)}, speed={30 ft.}]
@@ -105,11 +214,19 @@ The captain adds 2 to its AC against one melee attack that would hit it. To do s
 \DndMonsterAction{Dark Devotion} The cultist has advantage on saving throws against being charmed or frightened.
 
 \DndMonsterSection{Actions}
-**_Scimitar_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one creature. _Hit:_ 4 (1d6 + 1) slashing damage.
+\DndMonsterAttack[
+	name=Scimitar,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Cult Fanatic}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Cult Fanatic}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Cult Fanatic}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={33 (6d8 + 6)}, speed={30 ft.}]
@@ -117,28 +234,57 @@ The captain adds 2 to its AC against one melee attack that would hit it. To do s
 \DndMonsterDetails[saving-throws={}, skills={Deception +4, Persuasion +4, Religion +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any one language (usually Common)}, challenge={2 (450 XP)}]
 \DndMonsterAction{Dark Devotion} The fanatic has advantage on saving throws against being charmed or frightened.
 
-\DndMonsterAction{Spellcasting} The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _command_, _inflict wounds_, _shield of faith_\\n2nd level (3 slots): _hold person_, _spiritual weapon_
+\DndMonsterAction{Spellcasting} The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:
+
+Cantrips (at will): \textit{light}, \textit{sacred flame}, \textit{thaumaturgy}
+
+1st level (4 slots): \textit{command}, \textit{inflict wounds}, \textit{shield of faith}
+
+2nd level (3 slots): \textit{hold person}, \textit{spiritual weapon}
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The fanatic makes two melee attacks.
-**_Dagger_**. _Melee or Ranged Weapon Attack:_ +4 to hit, reach 5 ft. or range 20/60 ft., one creature. _Hit_: 4 (1d4 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Dagger,
+	distance=both,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Druid}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Druid}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Druid}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
-\DndMonsterBasics[armor-class={11 (16 with _barkskin_)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
+\DndMonsterBasics[armor-class={11 (16 with \textit{barkskin})}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
 \MonsterStats{+0}{+1}{+1}{+1}{+2}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Medicine +4, Nature +3, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14 }, languages={Druidic plus any two languages }, challenge={2 (450 XP)}]
-\DndMonsterAction{Spellcasting} The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\\nCantrips (at will): _druidcraft_, _produce flame_, _shillelagh_\\n1st level (4 slots): _entangle_, _longstrider_, _speak with animals_, _thunderwave_\\n2nd level (3 slots): _animal messenger_, _barkskin_
+\DndMonsterAction{Spellcasting} The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
+
+Cantrips (at will): \textit{druidcraft}, \textit{produce flame}, \textit{shillelagh}
+
+1st level (4 slots): \textit{entangle}, \textit{longstrider}, \textit{speak with animals}, \textit{thunderwave}
+
+2nd level (3 slots): \textit{animal messenger}, \textit{barkskin}
 
 \DndMonsterSection{Actions}
-**_Quarterstaff_**. _Melee Weapon Attack:_ +2 to hit (+4 to hit with _shillelagh_), reach 5 ft., one target. _Hit:_ 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with _shillelagh_.
+\DndMonsterAttack[
+	name=Quarterstaff,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=bludgeoning,
+	extra={, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with \textit{shillelagh}.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Gladiator}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Gladiator}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Gladiator}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={16 (studded leather, shield)}, hit-points={112 (15d8 + 45)}, speed={30 ft.}]
@@ -150,24 +296,54 @@ The captain adds 2 to its AC against one melee attack that would hit it. To do s
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The gladiator makes three melee attacks or two ranged attacks.
-**_Spear_**. _Melee or Ranged Weapon Attack:_ +7 to hit, reach 5 ft. and range 20/60 ft., one target. _Hit:_ 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.
-**_Shield Bash_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one creature. _Hit:_ 9 (2d4 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
-The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
+\DndMonsterAttack[
+	name=Spear,
+	distance=both,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	range=20/60,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=piercing,
+	extra={, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.}
+]
+\DndMonsterAttack[
+	name=Shield Bash,
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d4 + 4},
+	dmg-type=bludgeoning,
+	extra={. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.}
+]
+
+\DndMonsterAction{Parry}
+As a reaction, the gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 \end{multicols}
 \end{DndMonster}
 \subsection{Guard}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Guard}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Guard}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={16 (chain shirt, shield)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
 \MonsterStats{+1}{+1}{+1}{+0}{+0}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Spear_**. _Melee or Ranged Weapon Attack:_ +3 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d6 + 1)  piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
+\DndMonsterAttack[
+	name=Spear,
+	distance=both,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type= piercing,
+	extra={, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Knight}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Knight}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Knight}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={18 (plate)}, hit-points={52 (8d8 + 16)}, speed={30 ft.}]
@@ -177,39 +353,88 @@ The gladiator adds 3 to its AC against one melee attack that would hit it. To do
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The knight makes two melee attacks.
-**_Greatsword_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) slashing damage.
-**_Heavy Crossbow_**. _Ranged Weapon Attack:_ +2 to hit, range 100/400 ft., one target. _Hit:_ 5 (1d10) piercing damage.
+\DndMonsterAttack[
+	name=Greatsword,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Heavy Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+2,
+	range=100/400,
+	dmg=\DndDice{1d10},
+	dmg-type=piercing
+]
+\DndMonsterAction{Leadership (Recharges after a Short or Long Rest)}
 For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.
+\DndMonsterAction{Parry}
 The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.
 \end{multicols}
 \end{DndMonster}
 \subsection{Mage}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Mage}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Mage}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
-\DndMonsterBasics[armor-class={12 (15 with _mage armor_)}, hit-points={40 (9d8)}, speed={30 ft.}]
-\MonsterStats{−1}{+2}{+0}{+3}{+1}{+0}
+\DndMonsterBasics[armor-class={12 (15 with \textit{mage armor})}, hit-points={40 (9d8)}, speed={30 ft.}]
+\MonsterStats{-1}{+2}{+0}{+3}{+1}{+0}
 \DndMonsterDetails[saving-throws={Int +6, Wis +4}, skills={Arcana +6, History +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any four languages}, challenge={6 (2,300 XP)}]
-\DndMonsterAction{Spellcasting} The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\\nCantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_\\n1st level (4 slots): _detect magic_, _mage armor_, _magic missile_, _shield_\\n2nd level (3 slots): _misty step_, _suggestion_\\n3rd level (3 slots): _counterspell_, _fireball_, _fly_\\n4th level (3 slots): _greater invisibility_, _ice storm_\\n5th level (1 slot): _cone of cold_\\n
+\DndMonsterAction{Spellcasting} The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
+
+Cantrips (at will): \textit{fire bolt}, \textit{light}, \textit{mage hand}, \textit{prestidigitation}
+
+1st level (4 slots): \textit{detect magic}, \textit{mage armor}, \textit{magic missile}, \textit{shield}
+
+2nd level (3 slots): \textit{misty step}, \textit{suggestion}
+
+3rd level (3 slots): \textit{counterspell}, \textit{fireball}, \textit{fly}
+
+4th level (3 slots): \textit{greater invisibility}, \textit{ice storm}
+
+5th level (1 slot): \textit{cone of cold}
+
+
 
 \DndMonsterSection{Actions}
-**_Dagger_**. _Melee or Ranged Weapon Attack:_ +5 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d4 + 1)  piercing damage.
+\DndMonsterAttack[
+	name=Dagger,
+	distance=both,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d4 + 1},
+	dmg-type= piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Noble}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Noble}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Noble}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={15 (breastplate)}, hit-points={9 (2d8)}, speed={30 ft.}]
 \MonsterStats{+0}{+1}{+0}{+1}{+2}{+3}
 \DndMonsterDetails[saving-throws={}, skills={Deception +5, Insight +4, Persuasion +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any two languages}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Rapier_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 5 (1d8 + 1) piercing damage.
+\DndMonsterAttack[
+	name=Rapier,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d8 + 1},
+	dmg-type=piercing
+]
+\DndMonsterAction{Parry}
 The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.
 \end{multicols}
 \end{DndMonster}
 \subsection{Priest}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Priest}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Priest}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={13 (chain shirt)}, hit-points={27 (5d8 + 5)}, speed={25 ft.}]
@@ -217,14 +442,32 @@ The noble adds 2 to its AC against one melee attack that would hit it. To do so,
 \DndMonsterDetails[saving-throws={}, skills={Medicine +7, Persuasion +3, Religion +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={any two languages}, challenge={2 (450 XP)}]
 \DndMonsterAction{Divine Eminence} As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.
 
-\DndMonsterAction{Spellcasting} The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _cure wounds_, _guiding bolt_, _sanctuary_\\n2nd level (3 slots): _lesser restoration_, _spiritual weapon_\\n3rd level (2 slots): _dispel magic_, _spirit guardians_\\n
+\DndMonsterAction{Spellcasting} The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:
+
+Cantrips (at will): \textit{light}, \textit{sacred flame}, \textit{thaumaturgy}
+
+1st level (4 slots): \textit{cure wounds}, \textit{guiding bolt}, \textit{sanctuary}
+
+2nd level (3 slots): \textit{lesser restoration}, \textit{spiritual weapon}
+
+3rd level (2 slots): \textit{dispel magic}, \textit{spirit guardians}
+
+
 
 \DndMonsterSection{Actions}
-**_Mace_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 3 (1d6) bludgeoning damage.
+\DndMonsterAttack[
+	name=Mace,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Scout}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Scout}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Scout}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={16 (3d8 + 3)}, speed={30 ft.}]
@@ -234,12 +477,28 @@ The noble adds 2 to its AC against one melee attack that would hit it. To do so,
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The scout makes two melee attacks or two ranged attacks.
-**_Shortsword_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-**_Longbow_**. _Ranged Weapon Attack:_ +4 to hit, ranged 150/600 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Shortsword,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Longbow,
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=150/600,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Spy}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Spy}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Spy}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={12}, hit-points={27 (6d8)}, speed={30 ft.}]
@@ -251,12 +510,28 @@ The noble adds 2 to its AC against one melee attack that would hit it. To do so,
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The spy makes two melee attacks.
-**_Shortsword_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-**_Hand Crossbow_**. _Ranged Weapon Attack:_ +4 to hit, range 30/120 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Shortsword,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Hand Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=30/120,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Thug}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Thug}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Thug}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={11 (leather armor)}, hit-points={32 (5d8 + 10)}, speed={30 ft.}]
@@ -266,25 +541,50 @@ The noble adds 2 to its AC against one melee attack that would hit it. To do so,
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The thug makes two melee attacks.
-**_Mace_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) bludgeoning damage.
-**_Heavy Crossbow_**. _Ranged Weapon Attack:_ +2 to hit, range 100/400 ft., one target. _Hit:_ 5 (1d10) piercing damage.
+\DndMonsterAttack[
+	name=Mace,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Heavy Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+2,
+	range=100/400,
+	dmg=\DndDice{1d10},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Tribal Warrior}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Tribal Warrior}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Tribal Warrior}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={12 (hide armor)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
-\MonsterStats{+1}{+0}{+1}{−1}{+0}{−1}
+\MonsterStats{+1}{+0}{+1}{-1}{+0}{-1}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Pack Tactics} The warrior has advantage on an attack roll against a creature if at least one of the warrior’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
 
 \DndMonsterSection{Actions}
-**_Spear_**. _Melee or Ranged Weapon Attack:_ +3 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
+\DndMonsterAttack[
+	name=Spear,
+	distance=both,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	extra={, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Veteran}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Veteran}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Veteran}
 \begin{multicols}{2}
 \DndMonsterType{Medium humanoid (any race)}
 \DndMonsterBasics[armor-class={17 (splint)}, hit-points={58 (9d8 + 18)}, speed={30 ft.}]
@@ -292,8 +592,33 @@ The noble adds 2 to its AC against one melee attack that would hit it. To do so,
 \DndMonsterDetails[saving-throws={}, skills={Athletics +5, Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={3 (700 XP)}]
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.
-**_Longsword_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.
-**_Shortsword_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage.
-**_Heavy Crossbow_**. _Ranged Weapon Attack:_ +3 to hit, range 100/400 ft., one target. _Hit:_ 6 (1d10 + 1) piercing damage.
+\DndMonsterAttack[
+	name=Longsword,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=slashing,
+	extra={, or 8 (1d10 + 3) slashing damage if used with two hands.}
+]
+\DndMonsterAttack[
+	name=Shortsword,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Heavy Crossbow,
+	distance=ranged,
+	type=weapon,
+	mod=+3,
+	range=100/400,
+	dmg=\DndDice{1d10 + 1},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}

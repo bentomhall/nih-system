@@ -1,571 +1,992 @@
-\subsection{}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{}
-\begin{multicols}{2}
-\DndMonsterType{}
-\DndMonsterBasics[armor-class={}, hit-points={}, speed={}]
-\MonsterStats{0}{0}{0}{0}{0}{0}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={}, languages={}, challenge={0}]
-\DndMonsterSection{Actions}
-\end{multicols}
-\end{DndMonster}
+\section{Creatures}\label{sec:creatures}
 \subsection{Ape}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Ape}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Ape}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={12}, hit-points={19 (3d8 + 6)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{+3}{+2}{+2}{−2}{+1}{−2}
+\MonsterStats{+3}{+2}{+2}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Athletics +5, Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The ape makes two fist attacks.
-**_Fist_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) bludgeoning damage.
-**_Rock_**. _Ranged Weapon Attack:_ +5 to hit, range 25/50 ft., one target. _Hit:_ 6 (1d6 + 3) bludgeoning damage.
+\DndMonsterAttack[
+	name=Fist,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Rock,
+	distance=ranged,
+	type=weapon,
+	mod=+5,
+	range=25/50,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Awakened Shrub}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Awakened Shrub}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Awakened Shrub}
 \begin{multicols}{2}
 \DndMonsterType{Small plant}
 \DndMonsterBasics[armor-class={9}, hit-points={10 (3d6)}, speed={20 ft.}]
-\MonsterStats{−4}{−1}{+0}{+0}{+0}{−2}
+\MonsterStats{-4}{-1}{+0}{+0}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={0 (10 XP)}]
 \DndMonsterAction{False Appearance} While the shrub remains motionless, it is indistinguishable from a normal shrub.
 
 \DndMonsterSection{Actions}
-**_Rake_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 1 (1d4 − 1) slashing damage.
+\DndMonsterAttack[
+	name=Rake,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d4 - 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Awakened Tree}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Awakened Tree}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Awakened Tree}
 \begin{multicols}{2}
 \DndMonsterType{Huge plant}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d12 + 14)}, speed={20 ft.}]
-\MonsterStats{+4}{−2}{+2}{+0}{+0}{−2}
+\MonsterStats{+4}{-2}{+2}{+0}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={2 (450 XP)}]
 \DndMonsterAction{False Appearance} While the tree remains motionless, it is indistinguishable from a normal tree.
 
 \DndMonsterSection{Actions}
-**_Slam_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one target. _Hit:_ 14 (3d6 + 4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{3d6 + 4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Axe Beak}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Axe Beak}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Axe Beak}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11}, hit-points={19 (3d10 + 3)}, speed={50 ft.}]
-\MonsterStats{+2}{+1}{+1}{−4}{+0}{−3}
+\MonsterStats{+2}{+1}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) slashing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Baboon}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Baboon}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Baboon}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{−1}{+2}{+0}{−3}{+1}{−2}
+\MonsterStats{-1}{+2}{+0}{-3}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={0 (10 XP)}]
-\DndMonsterAction{Pack Tactics} The baboon has advantage on an attack roll against a creature if at least one of the baboon’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 1 (1d4 − 1) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d4 - 1},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Badger}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Badger}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Badger}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={10}, hit-points={3 (1d4 + 1)}, speed={20 ft., burrow 5 ft.}]
-\MonsterStats{−3}{+0}{+1}{−4}{+1}{−3}
+\MonsterStats{-3}{+0}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Smell} The badger has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Bat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Bat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Bat}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 − 1)}, speed={5 ft., fly 30 ft.}]
-\MonsterStats{−4}{+2}{−1}{−4}{+1}{−3}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 30 ft.}]
+\MonsterStats{-4}{+2}{-1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={0 (10 XP)}]
-\DndMonsterAction{Echolocation} The bat can’t use its blindsight while deafened.
+\DndMonsterAction{Echolocation} The bat can't use its blindsight while deafened.
 
 \DndMonsterAction{Keen Hearing} The bat has advantage on Wisdom (Perception) checks that rely on hearing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +0 to hit, reach 5 ft., one creature. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+0,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Black Bear}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Black Bear}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Black Bear}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={19 (3d8 + 6)}, speed={40 ft., climb 30 ft.}]
-\MonsterStats{+2}{+0}{+2}{−4}{+1}{−2}
+\MonsterStats{+2}{+0}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Keen Smell} The bear has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The bear makes two attacks: one with its bite and one with its claws.
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-**_Claws_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Blink Dog}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Blink Dog}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Blink Dog}
 \begin{multicols}{2}
 \DndMonsterType{Medium fey}
 \DndMonsterBasics[armor-class={13}, hit-points={22 (4d8 + 4)}, speed={40 ft.}]
 \MonsterStats{+1}{+3}{+1}{+0}{+1}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Blink Dog, understands Sylvan but can’t speak it}, challenge={1/4 (50 XP)}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Blink Dog, understands Sylvan but can't speak it}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing
+]
+\DndMonsterAction{Blink}
 The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
 \end{multicols}
 \end{DndMonster}
 \subsection{Blood Hawk}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Blood Hawk}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Blood Hawk}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={7 (2d6)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{−2}{+2}{+0}{−4}{+2}{−3}
+\MonsterStats{-2}{+2}{+0}{-4}{+2}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Keen Sight} The hawk has advantage on Wisdom (Perception) checks that rely on sight.
 
-\DndMonsterAction{Pack Tactics} The hawk has advantage on an attack roll against a creature if at least one of the hawk’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Boar}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Boar}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Boar}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
-\MonsterStats{+1}{+0}{+1}{−4}{−1}{−3}
+\MonsterStats{+1}{+0}{+1}{-4}{-1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 9}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Charge} If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Relentless (Recharges after a Short or Long Rest)} If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.
 
 \DndMonsterSection{Actions}
-**_Tusk_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) slashing damage.
+\DndMonsterAttack[
+	name=Tusk,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Brown Bear}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Brown Bear}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Brown Bear}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={34 (4d10 + 12)}, speed={40 ft., climb 30 ft.}]
-\MonsterStats{+4}{+0}{+3}{−4}{+1}{−2}
+\MonsterStats{+4}{+0}{+3}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Smell} The bear has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The bear makes two attacks: one with its bite and one with its claws.
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 8 (1d8 + 4) piercing damage.
-**_Claws_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 11 (2d6 + 4) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 4},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Camel}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Camel}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Camel}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={9}, hit-points={15 (2d10 + 4)}, speed={50 ft.}]
-\MonsterStats{+3}{−1}{+2}{−4}{−1}{−3}
+\MonsterStats{+3}{-1}{+2}{-4}{-1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 9}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Cat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Cat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Cat}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={12}, hit-points={2 (1d4)}, speed={40 ft., climb 30 ft.}]
-\MonsterStats{−4}{+2}{+0}{−4}{+1}{−2}
+\MonsterStats{-4}{+2}{+0}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={Darkvision 60 ft, passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Smell} The cat has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
-**_Claws_**. _Melee Weapon Attack:_ +0 to hit, reach 5 ft., one target. _Hit:_ 1 slashing damage.
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+0,
+	dmg=1,
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Constrictor Snake}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Constrictor Snake}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Constrictor Snake}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={13 (2d10 + 2)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{+2}{+2}{+1}{−5}{+0}{−4}
+\MonsterStats{+2}{+2}{+1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) piercing damage.
-**_Constrict_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can’t constrict another target.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Constrict,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Crab}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Crab}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Crab}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={2 (1d4)}, speed={20 ft., swim 20 ft.}]
-\MonsterStats{−4}{+0}{+0}{−5}{−1}{−4}
+\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 9}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Amphibious} The crab can breathe air and water.
 
 \DndMonsterSection{Actions}
-**_Claw_**. _Melee Weapon Attack:_ +0 to hit, reach 5 ft., one target. _Hit:_ 1 bludgeoning damage.
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+0,
+	dmg=1,
+	dmg-type=bludgeoning
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Crocodile}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Crocodile}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Crocodile}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={20 ft., swim 30 ft.}]
-\MonsterStats{+2}{+0}{+1}{−4}{+0}{−3}
+\MonsterStats{+2}{+0}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Hold Breath} The crocodile can hold its breath for 15 minutes.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can’t bite another target.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d10 + 2},
+	dmg-type=piercing,
+	extra={, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Death Dog}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Death Dog}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Death Dog}
 \begin{multicols}{2}
 \DndMonsterType{Medium monstrosity}
 \DndMonsterBasics[armor-class={12}, hit-points={39 (6d8 + 12)}, speed={40 ft.}]
-\MonsterStats{+2}{+2}{+2}{−4}{+1}{−2}
+\MonsterStats{+2}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Two-Headed} The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The dog makes two bite attacks.
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Deer}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Deer}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Deer}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={13}, hit-points={4 (1d8)}, speed={50 ft.}]
-\MonsterStats{+0}{+3}{+0}{−4}{+2}{−3}
+\MonsterStats{+0}{+3}{+0}{-4}{+2}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Dire Wolf}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Dire Wolf}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Dire Wolf}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={37 (5d10 + 10)}, speed={50 ft.}]
-\MonsterStats{+3}{+2}{+2}{−4}{+1}{−2}
+\MonsterStats{+3}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
-\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Draft Horse}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Draft Horse}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Draft Horse}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={10}, hit-points={19 (3d10 + 3)}, speed={40 ft.}]
-\MonsterStats{+4}{+0}{+1}{−4}{+0}{−2}
+\MonsterStats{+4}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Hooves_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 9 (2d4 + 4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d4 + 4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Eagle}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Eagle}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Eagle}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{−2}{+2}{+0}{−4}{+2}{−2}
+\MonsterStats{-2}{+2}{+0}{-4}{+2}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Sight} The eagle has advantage on Wisdom (Perception) checks that rely on sight.
 
 \DndMonsterSection{Actions}
-**_Talons_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) slashing damage.
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Elephant}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Elephant}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Elephant}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={76 (8d12 + 24)}, speed={40 ft.}]
-\MonsterStats{+6}{−1}{+3}{−4}{+0}{−2}
+\MonsterStats{+6}{-1}{+3}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={4 (1,100 XP)}]
 \DndMonsterAction{Trampling Charge} If the elephant moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Gore_**. _Melee Weapon Attack:_ +8 to hit, reach 5 ft., one target. _Hit:_ 19 (3d8 + 6) piercing damage.
-**_Stomp_**. _Melee Weapon Attack:_ +8 to hit, reach 5 ft., one prone creature. _Hit:_ 22 (3d10 + 6) bludgeoning damage.
+\DndMonsterAttack[
+	name=Gore,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=5,
+	dmg=\DndDice{3d8 + 6},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Stomp,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=5,
+	dmg=\DndDice{3d10 + 6},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Elk}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Elk}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Elk}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={10}, hit-points={13 (2d10 + 2)}, speed={50 ft.}]
-\MonsterStats{+3}{+0}{+1}{−4}{+0}{−2}
+\MonsterStats{+3}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Charge} If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 
 \DndMonsterSection{Actions}
-**_Ram_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) bludgeoning damage.
-**_Hooves_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one prone creature. _Hit:_ 8 (2d4 + 3) bludgeoning damage.
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d4 + 3},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Flying Snake}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Flying Snake}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Flying Snake}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={14}, hit-points={5 (2d4)}, speed={30 ft., fly 60 ft., swim 30 ft}]
-\MonsterStats{−3}{+4}{+0}{−4}{+1}{−3}
+\MonsterStats{-3}{+4}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 11}, languages={—}, challenge={1/8 (25 XP)}]
-\DndMonsterAction{Flyby} The snake doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.
+\DndMonsterAction{Flyby} The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage plus 7 (3d4) poison damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{3d4},
+	dmg-type=poison
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Frog}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Frog}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Frog}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 − 1)}, speed={20 ft., swim 20 ft.}]
-\MonsterStats{−5}{+1}{−1}{−5}{−1}{−4}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={20 ft., swim 20 ft.}]
+\MonsterStats{-5}{+1}{-1}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +1, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0 (0 XP)}]
 \DndMonsterAction{Amphibious} The frog can breathe air and water.
 
-\DndMonsterAction{Standing Leap} The frog’s long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
+\DndMonsterAction{Standing Leap} The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
 
-\DndMonsterSection{Actions}
 \end{multicols}
 \end{DndMonster}
+
+\FloatBarrier
+\subsection{Creatures (G)}
+
 \subsection{Giant Ape}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Ape}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Ape}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={12}, hit-points={157 (15d12 + 60)}, speed={40 ft., climb 40 ft.}]
-\MonsterStats{+6}{+2}{+4}{−2}{+1}{−2}
+\MonsterStats{+6}{+2}{+4}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Athletics +9, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={7 (2,900 XP)}]
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The ape makes two fist attacks.
-**_Fist_**. _Melee Weapon Attack:_ +9 to hit, reach 10 ft., one target. _Hit:_ 22 (3d10 + 6) bludgeoning damage.
-**_Rock_**. _Ranged Weapon Attack:_ +9 to hit, range 50/100 ft., one target. _Hit:_ 30 (7d6 + 6) bludgeoning damage.
+\DndMonsterAttack[
+	name=Fist,
+	distance=melee,
+	type=weapon,
+	mod=+9,
+	reach=10,
+	dmg=\DndDice{3d10 + 6},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Rock,
+	distance=ranged,
+	type=weapon,
+	mod=+9,
+	range=50/100,
+	dmg=\DndDice{7d6 + 6},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Badger}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Badger}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Badger}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={10}, hit-points={13 (2d8 + 4)}, speed={30 ft., burrow 10 ft.}]
-\MonsterStats{+1}{+0}{+2}{−4}{+1}{−3}
+\MonsterStats{+1}{+0}{+2}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Keen Smell} The badger has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The badger makes two attacks: one with its bite and one with its claws.
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage.
-**_Claws_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 6 (2d4 + 1) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{2d4 + 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Bat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Bat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Bat}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={13}, hit-points={22 (4d10)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{+2}{+3}{+0}{−4}{+1}{−2}
+\MonsterStats{+2}{+3}{+0}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Echolocation} The bat can’t use its blindsight while deafened.
+\DndMonsterAction{Echolocation} The bat can't use its blindsight while deafened.
 
 \DndMonsterAction{Keen Hearing} The bat has advantage on Wisdom (Perception) checks that rely on hearing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Boar}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Boar}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Boar}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={42 (5d10 + 15)}, speed={40 ft.}]
-\MonsterStats{+3}{+0}{+3}{−4}{−2}{−3}
+\MonsterStats{+3}{+0}{+3}{-4}{-2}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 8}, languages={—}, challenge={2 (450 XP)}]
 \DndMonsterAction{Charge} If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Relentless (Recharges after a Short or Long Rest)} If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.
 
 \DndMonsterSection{Actions}
-**_Tusk_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) slashing damage.
+\DndMonsterAttack[
+	name=Tusk,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Centipede}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Centipede}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Centipede}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={4 (1d6 + 1)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{−3}{+2}{+1}{−5}{−2}{−4}
+\MonsterStats{-3}{+2}{+1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 8}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing,
+	extra={, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Constrictor Snake}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Constrictor Snake}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Constrictor Snake}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={12}, hit-points={60 (8d12 + 8)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{+4}{+2}{+1}{−5}{+0}{−4}
+\MonsterStats{+4}{+2}{+1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 12}, languages={—}, challenge={2 (450 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one creature. _Hit:_ 11 (2d6 + 4) piercing damage.
-**_Constrict_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one creature. _Hit:_ 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can’t constrict another target.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Constrict,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Crab}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Crab}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Crab}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={13 (3d8)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{+1}{+2}{+0}{−5}{−1}{−4}
+\MonsterStats{+1}{+2}{+0}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 9}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Amphibious} The crab can breathe air and water.
 
 \DndMonsterSection{Actions}
-**_Claw_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Crocodile}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Crocodile}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Crocodile}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={85 (9d12 + 27)}, speed={30 ft., swim 50 ft.}]
-\MonsterStats{+5}{−1}{+3}{−4}{+0}{−2}
+\MonsterStats{+5}{-1}{+3}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={5 (1,800 XP)}]
 \DndMonsterAction{Hold Breath} The crocodile can hold its breath for 30 minutes.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The crocodile makes two attacks: one with its bite and one with its tail.
-**_Bite_**. _Melee Weapon Attack:_ +8 to hit, reach 5 ft., one target. _Hit:_ 21 (3d10 + 5) piercing damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the crocodile can’t bite another target.
-**_Tail_**. _Melee Weapon Attack:_ +8 to hit, reach 10 ft., one target not grappled by the crocodile. _Hit:_ 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=5,
+	dmg=\DndDice{3d10 + 5},
+	dmg-type=piercing,
+	extra={, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.}
+]
+\DndMonsterAttack[
+	name=Tail,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=10,
+	dmg=\DndDice{2d8 + 5},
+	dmg-type=bludgeoning,
+	extra={. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Eagle}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Eagle}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Eagle}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={13}, hit-points={26 (4d10 + 4)}, speed={10 ft., fly 80 ft.}]
-\MonsterStats{+3}{+3}{+1}{−1}{+2}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Giant Eagle, understands Common and Auran but can’t speak them}, challenge={1 (200 XP)}]
+\MonsterStats{+3}{+3}{+1}{-1}{+2}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Giant Eagle, understands Common and Auran but can't speak them}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Sight} The eagle has advantage on Wisdom (Perception) checks that rely on sight.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The eagle makes two attacks: one with its beak and one with its talons.
-**_Beak_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage.
-**_Talons_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) slashing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Elk}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Elk}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Elk}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={42 (5d12 + 10)}, speed={60 ft.}]
-\MonsterStats{+4}{+3}{+2}{−2}{+2}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Giant Elk, understands Common, Elvish, and Sylvan but can’t speak them}, challenge={2 (450 XP)}]
+\MonsterStats{+4}{+3}{+2}{-2}{+2}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Giant Elk, understands Common, Elvish, and Sylvan but can't speak them}, challenge={2 (450 XP)}]
 \DndMonsterAction{Charge} If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
 
 \DndMonsterSection{Actions}
-**_Ram_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one target. _Hit:_ 11 (2d6 + 4) bludgeoning damage.
-**_Hooves_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one prone creature. _Hit:_ 22 (4d8 + 4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{4d8 + 4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Fire Beetle}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Fire Beetle}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Fire Beetle}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={4 (1d6 + 1)}, speed={30 ft.}]
-\MonsterStats{−1}{+0}{+1}{−5}{−2}{−4}
+\MonsterStats{-1}{+0}{+1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 8}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Illumination} The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 2 (1d6 − 1) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d6 - 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Frog}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Frog}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Frog}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={11}, hit-points={18 (4d8)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{+1}{+1}{+0}{−4}{+0}{−4}
+\MonsterStats{+1}{+1}{+0}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 12}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Amphibious} The frog can breathe air and water.
 
-\DndMonsterAction{Standing Leap} The frog’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
+\DndMonsterAction{Standing Leap} The frog's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can’t bite another target.
-The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog’s turns. The frog can have only one target swallowed at a time.\\nIf the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	extra={, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.}
+]
+\DndMonsterAction{Swallow}
+The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time.\\nIf the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Goat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Goat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Goat}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={40 ft.}]
-\MonsterStats{+3}{+0}{+1}{−4}{+1}{−2}
+\MonsterStats{+3}{+0}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Charge} If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Sure-Footed} The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
 
 \DndMonsterSection{Actions}
-**_Ram_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 8 (2d4 + 3) bludgeoning damage.
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d4 + 3},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Hyena}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Hyena}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Hyena}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={45 (6d10 + 12)}, speed={50 ft.}]
-\MonsterStats{+3}{+2}{+2}{−4}{+1}{−2}
+\MonsterStats{+3}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Rampage} When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Lizard}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Lizard}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Lizard}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{+2}{+1}{+1}{−4}{+0}{−3}
+\MonsterStats{+2}{+1}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Octopus}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Octopus}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Octopus}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11}, hit-points={52 (8d10 + 8)}, speed={10 ft., swim 60 ft.}]
-\MonsterStats{+3}{+1}{+1}{−3}{+0}{−3}
+\MonsterStats{+3}{+1}{+1}{-3}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Hold Breath} While out of water, the octopus can hold its breath for 1 hour.
 
@@ -574,100 +995,170 @@ The frog makes one bite attack against a Small or smaller target it is grappling
 \DndMonsterAction{Water Breathing} The octopus can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Tentacles_**. _Melee Weapon Attack:_ +5 to hit, reach 15 ft., one target. _Hit:_ 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can’t use its tentacles on another target.
+\DndMonsterAttack[
+	name=Tentacles,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=15,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=bludgeoning,
+	extra={. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.}
+]
+\DndMonsterAction{Ink Cloud}
 A 20- foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Owl}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Owl}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Owl}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={19 (3d10 + 3)}, speed={5 ft., fly 60 ft.}]
-\MonsterStats{+1}{+2}{+1}{−1}{+1}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Giant Owl, understands Common, Elvish, and Sylvan but can’t speak them}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Flyby} The owl doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.
+\MonsterStats{+1}{+2}{+1}{-1}{+1}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Giant Owl, understands Common, Elvish, and Sylvan but can't speak them}, challenge={1/4 (50 XP)}]
+\DndMonsterAction{Flyby} The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.
 
 \DndMonsterAction{Keen Hearing and Sight} The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.
 
 \DndMonsterSection{Actions}
-**_Talons_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 8 (2d6 + 1) slashing damage.
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{2d6 + 1},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Poisonous Snake}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Poisonous Snake}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Poisonous Snake}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={14}, hit-points={11 (2d8 + 2)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{+0}{+4}{+1}{−4}{+0}{−4}
+\MonsterStats{+0}{+4}{+1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 12}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 10 ft., one target. _Hit:_ 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{1d4 + 4},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Rat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Rat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Rat}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={7 (2d6)}, speed={30 ft.}]
-\MonsterStats{−2}{+2}{+0}{−4}{+0}{−3}
+\MonsterStats{-2}{+2}{+0}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Keen Smell} The rat has advantage on Wisdom (Perception) checks that rely on smell.
 
-\DndMonsterAction{Pack Tactics} The rat has advantage on an attack roll against a creature if at least one of the rat’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Scorpion}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Scorpion}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Scorpion}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={52 (7d10 + 14)}, speed={40 ft.}]
-\MonsterStats{+2}{+1}{+2}{−5}{−1}{−4}
+\MonsterStats{+2}{+1}{+2}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 9}, languages={—}, challenge={3 (700 XP)}]
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The scorpion makes three attacks: two with its claws and one with its sting.
-**_Claw_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.
-**_Sting_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d10 + 2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.}
+]
+\DndMonsterAttack[
+	name=Sting,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d10 + 2},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Sea Horse}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Sea Horse}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Sea Horse}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={16 (3d10)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{+1}{+2}{+0}{−4}{+1}{−3}
+\MonsterStats{+1}{+2}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Charge} If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. It the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Water Breathing} The sea horse can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Ram_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage.
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Shark}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Shark}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Shark}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={0 ft., swim 50 ft.}]
-\MonsterStats{+6}{+0}{+5}{−5}{+0}{−3}
+\MonsterStats{+6}{+0}{+5}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 13}, languages={—}, challenge={5 (1,800 XP)}]
-\DndMonsterAction{Blood Frenzy} The shark has advantage on melee attack rolls against any creature that doesn’t have all its hit points.
+\DndMonsterAction{Blood Frenzy} The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
 \DndMonsterAction{Water Breathing} The shark can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +9 to hit, reach 5 ft., one target. _Hit:_ 22 (3d10 + 6) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+9,
+	reach=5,
+	dmg=\DndDice{3d10 + 6},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
+
 \subsection{Giant Spider}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Spider}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Spider}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{+2}{+3}{+1}{−4}{+0}{−3}
+\MonsterStats{+2}{+3}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., darkvision 60 ft., passive Perception 10}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -676,73 +1167,136 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
-**_Web (Recharge 5–6)_**. _Ranged Weapon Attack:_ +5 to hit, range 30/60 ft., one creature. _Hit:_ The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).\\nTo snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+]
+\DndMonsterAttack[
+	name=web,
+	distance=ranged,
+	type=weapon,
+	mod=+5,
+	reach=30/60,
+	dmg=\DndDice{1d8},
+	dmg-type=piercing bludgeoning,
+	extra={The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).}
+]
 \end{multicols}
 \end{DndMonster}
+
 \subsection{Giant Toad}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Toad}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Toad}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11}, hit-points={39 (6d10 + 6)}, speed={20 ft., swim 40 ft.}]
-\MonsterStats{+2}{+1}{+1}{−4}{+0}{−4}
+\MonsterStats{+2}{+1}{+1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Amphibious} The toad can breathe air and water.
 
-\DndMonsterAction{Standing Leap} The toad’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
+\DndMonsterAction{Standing Leap} The toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can’t bite another target.
-The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad’s turns. The toad can have only one target swallowed at a time.\\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d10 + 2},
+	dmg-type=piercing,
+	extra={ plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.}
+]
+\DndMonsterAction{Swallow}
+The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time. If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 \end{multicols}
 \end{DndMonster}
+
 \subsection{Giant Vulture}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Vulture}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Vulture}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={10}, hit-points={22 (3d10 + 6)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{+2}{+0}{+2}{−2}{+1}{−2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={understands Common but can’t speak}, challenge={1 (200 XP)}]
+\MonsterStats{+2}{+0}{+2}{-2}{+1}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={understands Common but can't speak}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Sight and Smell} The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.
 
-\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The vulture makes two attacks: one with its beak and one with its talons.
-**_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) piercing damage.
-**_Talons_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 9 (2d6 + 2) slashing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d6 + 2},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Wasp}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Wasp}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Wasp}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={12}, hit-points={13 (3d8)}, speed={10 ft., fly 50 ft.}]
-\MonsterStats{+0}{+2}{+0}{−5}{+0}{−4}
+\MonsterStats{+0}{+2}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterSection{Actions}
-**_Sting_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+\DndMonsterAttack[
+	name=Sting,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Weasel}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Weasel}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Weasel}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={13}, hit-points={9 (2d8)}, speed={40 ft.}]
-\MonsterStats{+0}{+3}{+0}{−3}{+1}{−3}
+\MonsterStats{+0}{+3}{+0}{-3}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 5 (1d4 + 3) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d4 + 3},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Giant Wolf Spider}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Giant Wolf Spider}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Giant Wolf Spider}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={13}, hit-points={11 (2d8 + 2)}, speed={40 ft., climb 40 ft.}]
-\MonsterStats{+1}{+3}{+1}{−4}{+1}{−3}
+\MonsterStats{+1}{+3}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -751,176 +1305,290 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 \DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one creature. _Hit:_ 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Goat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Goat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Goat}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={10}, hit-points={4 (1d8)}, speed={40 ft.}]
-\MonsterStats{+1}{+0}{+0}{−4}{+0}{−3}
+\MonsterStats{+1}{+0}{+0}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Charge} If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Sure-Footed} The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
 
 \DndMonsterSection{Actions}
-**_Ram_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 3 (1d4 + 1) bludgeoning damage.
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d4 + 1},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Hawk}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Hawk}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Hawk}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 − 1)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{−3}{+3}{−1}{−4}{+2}{−2}
+\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 60 ft.}]
+\MonsterStats{-3}{+3}{-1}{-4}{+2}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Sight} The hawk has advantage on Wisdom (Perception) checks that rely on sight.
 
 \DndMonsterSection{Actions}
-**_Talons_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 1 slashing damage.
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	dmg=1,
+	dmg-type=slashing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Hunter Shark}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Hunter Shark}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Hunter Shark}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={45 (6d10 + 12)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{+4}{+1}{+2}{−5}{+0}{−3}
+\MonsterStats{+4}{+1}{+2}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 12}, languages={—}, challenge={2 (450 XP)}]
-\DndMonsterAction{Blood Frenzy} The shark has advantage on melee attack rolls against any creature that doesn’t have all its hit points.
+\DndMonsterAction{Blood Frenzy} The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
 \DndMonsterAction{Water Breathing} The shark can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Hyena}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Hyena}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Hyena}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={11}, hit-points={5 (1d8 + 1)}, speed={50 ft.}]
-\MonsterStats{+0}{+1}{+1}{−4}{+1}{−3}
+\MonsterStats{+0}{+1}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
-\DndMonsterAction{Pack Tactics} The hyena has advantage on an attack roll against a creature if at least one of the hyena’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 3 (1d6) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Jackal}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Jackal}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Jackal}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={40 ft.}]
-\MonsterStats{−1}{+2}{+0}{−4}{+1}{−2}
+\MonsterStats{-1}{+2}{+0}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
-\DndMonsterAction{Pack Tactics} The jackal has advantage on an attack roll against a creature if at least one of the jackal’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +1 to hit, reach 5 ft., one target. _Hit:_ 1 (1d4 – 1) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d4 - 1},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Killer Whale}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Killer Whale}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Killer Whale}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={90 (12d12 + 12)}, speed={0 ft., swim 60 ft.}]
-\MonsterStats{+4}{+0}{+1}{−4}{+1}{−2}
+\MonsterStats{+4}{+0}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 120 ft., passive Perception 13}, languages={—}, challenge={3 (700 XP)}]
-\DndMonsterAction{Echolocation} The whale can’t use its blindsight while deafened.
+\DndMonsterAction{Echolocation} The whale can't use its blindsight while deafened.
 
 \DndMonsterAction{Hold Breath} The whale can hold its breath for 30 minutes.
 
 \DndMonsterAction{Keen Hearing} The whale has advantage on Wisdom (Perception) checks that rely on hearing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 21 (5d6 + 4) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{5d6 + 4},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Lion}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Lion}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Lion}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
-\MonsterStats{+3}{+2}{+1}{−4}{+1}{−1}
+\MonsterStats{+3}{+2}{+1}{-4}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Smell} The lion has advantage on Wisdom (Perception) checks that rely on smell.
 
-\DndMonsterAction{Pack Tactics} The lion has advantage on an attack roll against a creature if at least one of the lion’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterAction{Pounce} If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.
 
 \DndMonsterAction{Running Leap} With a 10-foot running start, the lion can long jump up to 25 feet.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage.
-**_Claw_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Lizard}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Lizard}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Lizard}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={10}, hit-points={2 (1d4)}, speed={20 ft., climb 20 ft.}]
-\MonsterStats{−4}{+0}{+0}{−5}{−1}{−4}
+\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 9}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +0 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+0,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Mammoth}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Mammoth}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Mammoth}
 \begin{multicols}{2}
 \DndMonsterType{Huge beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={40 ft.}]
-\MonsterStats{+7}{−1}{+5}{−4}{+0}{−2}
+\MonsterStats{+7}{-1}{+5}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={6 (2,300 XP)}]
 \DndMonsterAction{Trampling Charge} If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Gore_**. _Melee Weapon Attack:_ +10 to hit, reach 10 ft., one target. _Hit:_ 25 (4d8 + 7) piercing damage.
-**_Stomp_**. _Melee Weapon Attack:_ +10 to hit, reach 5 ft., one prone creature. _Hit:_ 29 (4d10 + 7) bludgeoning damage.
+\DndMonsterAttack[
+	name=Gore,
+	distance=melee,
+	type=weapon,
+	mod=+10,
+	reach=10,
+	dmg=\DndDice{4d8 + 7},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Stomp,
+	distance=melee,
+	type=weapon,
+	mod=+10,
+	reach=5,
+	dmg=\DndDice{4d10 + 7},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Mastiff}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Mastiff}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Mastiff}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={12}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
-\MonsterStats{+1}{+2}{+1}{−4}{+1}{−2}
+\MonsterStats{+1}{+2}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Mule}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Mule}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Mule}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={10}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
-\MonsterStats{+2}{+0}{+1}{−4}{+0}{−3}
+\MonsterStats{+2}{+0}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterAction{Beast of Burden} The mule is considered to be a Large animal for the purpose of determining its carrying capacity.
 
 \DndMonsterAction{Sure-Footed} The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
 
 \DndMonsterSection{Actions}
-**_Hooves_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) bludgeoning damage.
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Octopus}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Octopus}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Octopus}
 \begin{multicols}{2}
 \DndMonsterType{Small beast}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={5 ft., swim 30 ft.}]
-\MonsterStats{−3}{+2}{+0}{−4}{+0}{−3}
+\MonsterStats{-3}{+2}{+0}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 12}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Hold Breath} While out of water, the octopus can hold its breath for 30 minutes.
 
@@ -929,47 +1597,80 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 \DndMonsterAction{Water Breathing} The octopus can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Tentacles_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 1 bludgeoning damage, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can’t use its tentacles on another target.
+\DndMonsterAttack[
+	name=Tentacles,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	dmg=1,
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.}
+]
+
+\DndMonsterAction{Ink Cloud}
 A 5- foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
 \end{multicols}
 \end{DndMonster}
 \subsection{Owl}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Owl}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Owl}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 − 1)}, speed={5 ft., fly 60 ft.}]
-\MonsterStats{−4}{+1}{−1}{−4}{+1}{−2}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 60 ft.}]
+\MonsterStats{-4}{+1}{-1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
-\DndMonsterAction{Flyby} The owl doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.
+\DndMonsterAction{Flyby} The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.
 
 \DndMonsterAction{Keen Hearing and Sight} The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.
 
 \DndMonsterSection{Actions}
-**_Talons_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 1 slashing damage.
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	dmg=1,
+	dmg-type=slashing,
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Panther}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Panther}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Panther}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={12}, hit-points={13 (3d8)}, speed={50 ft., climb 40 ft.}]
-\MonsterStats{+2}{+2}{+0}{−4}{+2}{−2}
+\MonsterStats{+2}{+2}{+0}{-4}{+2}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Keen Smell} The panther has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterAction{Pounce} If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-**_Claw_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 4 (1d4 + 2) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Phase Spider}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Phase Spider}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Phase Spider}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={32 (5d10 + 5)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{+2}{+2}{+1}{−2}{+0}{−2}
+\MonsterStats{+2}{+2}{+1}{-2}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3 (700 XP)}]
 \DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.
 
@@ -978,159 +1679,274 @@ A 5- foot-radius cloud of ink extends all around the octopus if it is underwater
 \DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d10 + 2},
+	dmg-type=piercing,
+	extra={, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Poisonous Snake}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Poisonous Snake}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Poisonous Snake}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={13}, hit-points={2 (1d4)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{−4}{+3}{+0}{−5}{+0}{−4}
+\MonsterStats{-4}{+3}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d4},
+	dmg-type=poison,
+	extra={ on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Polar Bear}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Polar Bear}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Polar Bear}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={42 (5d10 + 15)}, speed={40 ft., swim 30 ft.}]
-\MonsterStats{+5}{+0}{+3}{−4}{+1}{−2}
+\MonsterStats{+5}{+0}{+3}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={2 (450 XP)}]
 \DndMonsterAction{Keen Smell} The bear has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The bear makes two attacks: one with its bite and one with its claws.
-**_Bite_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 9 (1d8 + 5) piercing damage.
-**_Claws_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 12 (2d6 + 5) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{1d8 + 5},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d6 + 5},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Pony}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Pony}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Pony}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={10}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
-\MonsterStats{+2}{+0}{+1}{−4}{+0}{−2}
+\MonsterStats{+2}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/8 (25 XP)}]
 \DndMonsterSection{Actions}
-**_Hooves_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) bludgeoning damage.
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Quipper}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Quipper}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Quipper}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 − 1)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{-4}{+3}{-1}{−4}{-2}{−4}
+\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 - 1)}, speed={0 ft., swim 40 ft.}]
+\MonsterStats{-4}{+3}{-1}{-4}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 8}, languages={—}, challenge={0 (10 XP)}]
-\DndMonsterAction{Blood Frenzy} The quipper has advantage on melee attack rolls against any creature that doesn’t have all its hit points.
+\DndMonsterAction{Blood Frenzy} The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
 \DndMonsterAction{Water Breathing} The quipper can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Rat}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Rat}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Rat}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={10}, hit-points={1 (1d4 − 1)}, speed={20 ft.}]
-\MonsterStats{−4}{+0}{−1}{−4}{+0}{−3}
+\DndMonsterBasics[armor-class={10}, hit-points={1 (1d4 - 1)}, speed={20 ft.}]
+\MonsterStats{-4}{+0}{-1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Smell} The rat has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +0 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Raven}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Raven}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Raven}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 − 1)}, speed={10 ft., fly 50 ft.}]
-\MonsterStats{−4}{+2}{−1}{−4}{+1}{−2}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 50 ft.}]
+\MonsterStats{-4}{+2}{-1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Mimicry} The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.
 
 \DndMonsterSection{Actions}
-**_Beak_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	mod=+5,
+	dmg=1,
+	dmg-type=piercing
+]
+
 \end{multicols}
 \end{DndMonster}
 \subsection{Reef Shark}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Reef Shark}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Reef Shark}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={22 (4d8 + 4)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{+2}{+1}{+1}{−5}{+0}{−3}
+\MonsterStats{+2}{+1}{+1}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 12}, languages={—}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Pack Tactics} The shark has advantage on an attack roll against a creature if at least one of the shark’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterAction{Water Breathing} The shark can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
+
 \subsection{Rhinoceros}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Rhinoceros}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Rhinoceros}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={45 (6d10 + 12)}, speed={40 ft.}]
-\MonsterStats{+5}{−1}{+2}{−4}{+1}{−2}
+\MonsterStats{+5}{-1}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={2 (450 XP)}]
 \DndMonsterAction{Charge} If the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 \DndMonsterSection{Actions}
-**_Gore_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 14 (2d8 + 5) bludgeoning damage.
+\DndMonsterAttack[
+	name=Gore,
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d8 + 5},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Riding Horse}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Riding Horse}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Riding Horse}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={10}, hit-points={13 (2d10 + 2)}, speed={60 ft.}]
-\MonsterStats{+3}{+0}{+1}{−4}{+0}{−2}
+\MonsterStats{+3}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterSection{Actions}
-**_Hooves_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 8 (2d4 + 3) bludgeoning damage.
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d4 + 3},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Saber-Toothed Tiger}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Saber-Toothed Tiger}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Saber-Toothed Tiger}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={52 (7d10 + 14)}, speed={40 ft.}]
-\MonsterStats{+4}{+2}{+2}{−4}{+1}{−1}
+\MonsterStats{+4}{+2}{+2}{-4}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={2 (450 XP)}]
 \DndMonsterAction{Keen Smell} The tiger has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterAction{Pounce} If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 10 (1d10 + 5) piercing damage.
-**_Claw_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 12 (2d6 + 5) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{1d10 + 5},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d6 + 5},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Scorpion}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Scorpion}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Scorpion}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={1 (1d4 − 1)}, speed={10 ft.}]
-\MonsterStats{−4}{+0}{−1}{−5}{−1}{−4}
+\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={1 (1d4 - 1)}, speed={10 ft.}]
+\MonsterStats{-4}{+0}{-1}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 9}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterSection{Actions}
-**_Sting_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one creature. _Hit:_ 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Sting,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d8},
+	dmg-type=poison,
+	extra={ on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Sea Horse}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Sea Horse}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Sea Horse}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 − 1)}, speed={0 ft., swim 20 ft.}]
-\MonsterStats{−5}{+1}{−1}{−5}{+0}{−4}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={0 ft., swim 20 ft.}]
+\MonsterStats{-5}{+1}{-1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={0 (0 XP)}]
 \DndMonsterAction{Water Breathing} The sea horse can breathe only underwater.
 
@@ -1138,11 +1954,11 @@ A 5- foot-radius cloud of ink extends all around the octopus if it is underwater
 \end{multicols}
 \end{DndMonster}
 \subsection{Spider}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Spider}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Spider}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 − 1)}, speed={20 ft., climb 20 ft.}]
-\MonsterStats{−4}{+2}{−1}{−5}{+0}{−4}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={20 ft., climb 20 ft.}]
+\MonsterStats{-4}{+2}{-1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -1151,197 +1967,327 @@ A 5- foot-radius cloud of ink extends all around the octopus if it is underwater
 \DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=poison
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Bats}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Bats}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Bats}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
 \DndMonsterBasics[armor-class={12}, hit-points={22 (5d8)}, speed={0 ft., fly 30 ft.}]
-\MonsterStats{−3}{+2}{+0}{−4}{+1}{−3}
+\MonsterStats{-3}{+2}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Echolocation} The swarm can’t use its blindsight while deafened.
+\DndMonsterAction{Echolocation} The swarm can't use its blindsight while deafened.
 
 \DndMonsterAction{Keen Hearing} The swarm has advantage on Wisdom (Perception) checks that rely on hearing.
 
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterSection{Actions}
-**_Bites_**. _Melee Weapon Attack:_ +4 to hit, reach 0 ft., one creature in the swarm’s space. _Hit:_ 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.
+\DndMonsterAttack[
+	name=Bites,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=0,
+	dmg=\DndDice{2d4},
+	dmg-type=piercing,
+	extra={, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Insects}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Insects}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Insects}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={22 (5d8)}, speed={20 ft., climb 20 ft.}]
-\MonsterStats{−4}{+1}{+0}{−5}{−2}{−5}
+\MonsterStats{-4}{+1}{+0}{-5}{-2}{-5}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 10 ft., passive Perception 8}, languages={—}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterSection{Actions}
-**_Bites_**. _Melee Weapon Attack:_ +3 to hit, reach 0 ft., one target in the swarm’s space. _Hit:_ 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.
+\DndMonsterAttack[
+	name=Bites,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=0,
+	dmg=\DndDice{4d4},
+	dmg-type=piercing,
+	extra={, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Poisonous Snakes}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Poisonous Snakes}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Poisonous Snakes}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
 \DndMonsterBasics[armor-class={14}, hit-points={36 (8d8)}, speed={30 ft., swim 30 ft.}]
-\MonsterStats{−1}{+4}{+0}{−5}{+0}{−4}
+\MonsterStats{-1}{+4}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={2 (450 XP)}]
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterSection{Actions}
-**_Bites_**. _Melee Weapon Attack:_ +6 to hit, reach 0 ft., one creature in the swarm’s space. _Hit:_ 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAttack[
+	name=Bites,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=0,
+	dmg=\DndDice{2d6},
+	dmg-type=piercing,
+	extra={, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Quippers}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Quippers}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Quippers}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
-\DndMonsterBasics[armor-class={13}, hit-points={28 (8d8 − 8)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{+1}{+3}{−1}{−5}{−2}{−4}
+\DndMonsterBasics[armor-class={13}, hit-points={28 (8d8 - 8)}, speed={0 ft., swim 40 ft.}]
+\MonsterStats{+1}{+3}{-1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={darkvision 60 ft., passive Perception 8}, languages={—}, challenge={1 (200 XP)}]
-\DndMonsterAction{Blood Frenzy} The swarm has advantage on melee attack rolls against any creature that doesn’t have all its hit points.
+\DndMonsterAction{Blood Frenzy} The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterAction{Water Breathing} The swarm can breathe only underwater.
 
 \DndMonsterSection{Actions}
-**_Bites_**. _Melee Weapon Attack:_ +5 to hit, reach 0 ft., one creature in the swarm’s space. _Hit:_ 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.
+\DndMonsterAttack[
+	name=Bites,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=0,
+	dmg=\DndDice{4d6},
+	dmg-type=piercing,
+	extra={, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Rats}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Rats}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Rats}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
-\DndMonsterBasics[armor-class={10}, hit-points={24 (7d8 − 7)}, speed={30 ft.}]
-\MonsterStats{−1}{+0}{−1}{−4}{+0}{−4}
+\DndMonsterBasics[armor-class={10}, hit-points={24 (7d8 - 7)}, speed={30 ft.}]
+\MonsterStats{-1}{+0}{-1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Keen Smell} The swarm has advantage on Wisdom (Perception) checks that rely on smell.
 
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterSection{Actions}
-**_Bites_**. _Melee Weapon Attack:_ +2 to hit, reach 0 ft., one target in the swarm’s space. _Hit:_ 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
+\DndMonsterAttack[
+	name=Bites,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=0,
+	dmg=\DndDice{2d6},
+	dmg-type=piercing,
+	extra={, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Swarm of Ravens}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Swarm of Ravens}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Swarm of Ravens}
 \begin{multicols}{2}
 \DndMonsterType{Medium swarm of Tiny beasts}
-\DndMonsterBasics[armor-class={12}, hit-points={24 (7d8 − 7)}, speed={10 ft., fly 50 ft.}]
-\MonsterStats{−2}{+2}{−1}{−4}{+1}{−2}
+\DndMonsterBasics[armor-class={12}, hit-points={24 (7d8 - 7)}, speed={10 ft., fly 50 ft.}]
+\MonsterStats{-2}{+2}{-1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={passive Perception 15}, languages={—}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Swarm} The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can’t regain hit points or gain temporary hit points.
+\DndMonsterAction{Swarm} The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points.
 
 \DndMonsterSection{Actions}
-**_Beaks_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target in the swarm’s space. _Hit:_ 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
+\DndMonsterAttack[
+	name=Beaks,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d6},
+	dmg-type=piercing,
+	extra={, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Tiger}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Tiger}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Tiger}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={12}, hit-points={37 (5d10 + 10)}, speed={40 ft.}]
-\MonsterStats{+3}{+2}{+2}{−4}{+1}{−1}
+\MonsterStats{+3}{+2}{+2}{-4}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1 (200 XP)}]
 \DndMonsterAction{Keen Smell} The tiger has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterAction{Pounce} If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 8 (1d10 + 3) piercing damage.
-**_Claw_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) slashing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d10 + 3},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=slashing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Vulture}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Vulture}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Vulture}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={10 ft., fly 50 ft.}]
-\MonsterStats{−2}{+0}{+1}{−4}{+1}{−3}
+\MonsterStats{-2}{+0}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Sight and Smell} The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.
 
-\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Beak_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) piercing damage.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Warhorse}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Warhorse}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Warhorse}
 \begin{multicols}{2}
 \DndMonsterType{Large beast}
 \DndMonsterBasics[armor-class={11}, hit-points={19 (3d10 + 3)}, speed={60 ft.}]
-\MonsterStats{+4}{+1}{+1}{−4}{+1}{−2}
+\MonsterStats{+4}{+1}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Trampling Charge} If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.
 
 \DndMonsterSection{Actions}
-**_Hooves_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 11 (2d6 + 4) bludgeoning damage.
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=bludgeoning
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Weasel}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Weasel}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Weasel}
 \begin{multicols}{2}
 \DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 − 1)}, speed={30 ft.}]
-\MonsterStats{−4}{+3}{−1}{−4}{+1}{−4}
+\DndMonsterBasics[armor-class={13}, hit-points={1 (1d4 - 1)}, speed={30 ft.}]
+\MonsterStats{-4}{+3}{-1}{-4}{+1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0 (10 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 1 piercing damage.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	dmg=1,
+	dmg-type=piercing
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Winter Wolf}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Winter Wolf}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Winter Wolf}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
-\MonsterStats{+4}{+1}{+2}{−2}{+1}{−1}
+\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Winter Wolf }, challenge={3 (700 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
-\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterAction{Snow Camouflage} The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.}
+]
+
+\DndMonsterAction{Frost Breath (recharge 5-6)}
 The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
 \end{multicols}
 \end{DndMonster}
 \subsection{Wolf}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Wolf}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Wolf}
 \begin{multicols}{2}
 \DndMonsterType{Medium beast}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
-\MonsterStats{+1}{+2}{+1}{−4}{+1}{−2}
+\MonsterStats{+1}{+2}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/4 (50 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
-\DndMonsterAction{Pack Tactics} The wolf has advantage on attack rolls against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+\DndMonsterAction{Pack Tactics} The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.}
+]
 \end{multicols}
 \end{DndMonster}
 \subsection{Worg}
-\begin{DndMonster}[float=*b,width\textwidth + 8pt]{Worg}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Worg}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
-\MonsterStats{+3}{+1}{+1}{−2}{+0}{−1}
+\MonsterStats{+3}{+1}{+1}{-2}{+0}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin, Worg}, challenge={1/2 (100 XP)}]
 \DndMonsterAction{Keen Hearing and Smell} The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
-**_Bite_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=piercing,
+	extra={. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.}
+]
 \end{multicols}
 \end{DndMonster}

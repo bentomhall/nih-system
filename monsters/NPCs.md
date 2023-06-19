@@ -1,22 +1,10 @@
-This appendix contains statistics for various humanoid non-player characters (NPCs) that adventurers might encounter during a campaign, including lowly commoners and mighty archmages. These stat blocks can be used to represent both human and nonhuman NPCs.
-
-### Customizing NPCs
-
-There are many easy ways to customize the NPCs in this appendix for your home campaign.
-
-**_Racial Traits_**. You can add racial traits to an NPC. For example, a halfling druid might have a speed of 25 feet and the Lucky trait. Adding racial traits to an NPC doesn’t alter its challenge rating. For more on racial traits, see the _Player’s Handbook_.
-
-**_Spell Swaps_**. One way to customize an NPC spellcaster is to replace one or more of its spells. You can substitute any spell on the NPC’s spell list with a different spell of the same level from the same spell list. Swapping spells in this manner doesn’t alter an NPC’s challenge rating.
-
-**_Armor and Weapon Swaps_**. You can upgrade or downgrade an NPC’s armor, or add or switch weapons. Adjustments to Armor Class and damage can change an NPC’s challenge rating.
-
-**_Magic Items_**. The more powerful an NPC, the more likely it has one or more magic items in its possession. An archmage, for example, might have a magic staff or wand, as well as one or more potions and scrolls. Giving an NPC a potent damage-dealing magic item could alter its challenge rating.
-
-### Acolyte
+#### Acolyte
 
 _Medium humanoid (any race), any alignment_
 
-**Armor Class** 10 **Hit Points** 9 (2d8) **Speed** 30 ft.
+**Armor Class** 10 
+**Hit Points** 9 (2d8) 
+**Speed** 30 ft.
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA     |
 |---------|---------|---------|---------|---------|---------|
@@ -30,19 +18,13 @@ _Medium humanoid (any race), any alignment_
 
 **Challenge** 1/4 (50 XP)
 
-**_Spellcasting_**. The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
-
-Cantrips (at will): _light_, _sacred flame_, _thaumaturgy_
-
-1st level (3 slots): _bless_, _cure wounds_, _sanctuary_
+**_Spellcasting_**. The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (3 slots): _bless_, _cure wounds_, _sanctuary_
 
 **Actions**
 
 **_Club_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage.
 
-**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
-
-**Archmage**
+#### Archmage
 
 _Medium humanoid (any race), any alignment_
 
@@ -60,7 +42,7 @@ _Medium humanoid (any race), any alignment_
 
 **Skills** Arcana +13, History +13
 
-**Damage Resistance** damage from spells; nonmagical bludgeoning, piercing, and slashing (from _stoneskin_)
+**Damage Resistances** damage from spells; nonmagical bludgeoning, piercing, and slashing (from _stoneskin_)
 
 **Senses** passive Perception 12
 
@@ -70,30 +52,13 @@ _Medium humanoid (any race), any alignment_
 
 **_Magic Resistance_**. The archmage has advantage on saving throws against spells and other magical effects.
 
-**_Spellcasting_**. The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast _disguise self_ and _invisibility_ at will and has the following wizard spells prepared:
-
-Cantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_, _shocking grasp_
-1st level (4 slots): _detect magic_, _identify_, _mage armor_\*, _magic missile_
-2nd level (3 slots): _detect thoughts_, _mirror image_, _misty step_
-3rd level (3 slots): _counterspell_, _fly_, _lightning bolt_
-4th level (3 slots): _banishment_, _fire shield_, _stoneskin_\*
-5th level (3 slots): _cone of cold_, _scrying_, _wall of force_
-6th level (1 slot): _globe of invulnerability_
-7th level (1 slot): _teleport_
-8th level (1 slot): _mind blank_\*
-9th level (1 slot): _time stop_
-
-\*The archmage casts these spells on itself before combat.
+**_Spellcasting_**. The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast _disguise self_ and _invisibility_ at will and has the following wizard spells prepared:\\nCantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_, _shocking grasp_\\n1st level (4 slots): _detect magic_, _identify_, _mage armor_\*, _magic missile_\\n2nd level (3 slots): _detect thoughts_, _mirror image_, _misty step_\\n3rd level (3 slots): _counterspell_, _fly_, _lightning bolt_\\n4th level (3 slots): _banishment_, _fire shield_, _stoneskin_\*\\n5th level (3 slots): _cone of cold_, _scrying_, _wall of force_\\n6th level (1 slot): _globe of invulnerability_\\n7th level (1 slot): _teleport_\\n8th level (1 slot): _mind blank_\*\\n9th level (1 slot): _time stop_\\n\*The archmage casts these spells on itself before combat.
 
 **Actions**
 
 **_Dagger_**. _Melee or Ranged Weapon Attack:_ +6 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d4 + 2)  piercing damage.
 
-**Archmages** are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
-
-An archmage typically has one or more apprentice mages, and an archmage’s abode has numerous magical wards and guardians to discourage interlopers.
-
-### Assassin
+#### Assassin
 
 _Medium humanoid (any race), any non-good alignment_
 
@@ -133,9 +98,7 @@ _Medium humanoid (any race), any non-good alignment_
 
 **_Light Crossbow_**. _Ranged Weapon Attack:_ +6 to hit, range 80/320 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
 
-Trained in the use of poison, **assassins** are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.
-
-### Bandit
+#### Bandit
 
 _Medium humanoid (any race), any non-lawful alignment_
 
@@ -161,11 +124,7 @@ _Medium humanoid (any race), any non-lawful alignment_
 
 **_Light Crossbow_**. _Ranged Weapon Attack:_ +3 to hit, range 80 ft./320 ft., one target. _Hit:_ 5 (1d8 + 1) piercing damage.
 
-**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.
-
-**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation’s vessels.
-
-### Bandit Captain
+#### Bandit Captain
 
 _Medium humanoid (any race), any non-lawful alignment_
 
@@ -185,7 +144,8 @@ _Medium humanoid (any race), any non-lawful alignment_
 
 **Senses** passive Perception 10
 
-**Languages** any two languages **Challenge** 2 (450 XP)
+**Languages** any two languages 
+**Challenge** 2 (450 XP)
 
 **Actions**
 
@@ -199,13 +159,7 @@ _Medium humanoid (any race), any non-lawful alignment_
 
 **_Parry_**. The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.
 
-It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.
-
-In addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.
-
-More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain’s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain’s colorful reputation.
-
-### Berserker
+#### Berserker
 
 _Medium humanoid (any race), any chaotic alignment_
 
@@ -231,13 +185,13 @@ _Medium humanoid (any race), any chaotic alignment_
 
 **_Greataxe_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 9 (1d12 + 3) slashing damage.
 
-Hailing from uncivilized lands, unpredictable **berserkers** come together in war parties and seek conflict wherever they can find it.
-
-### Commoner
+#### Commoner
 
 _Medium humanoid (any race), any alignment_
 
-**Armor Class** 10 **Hit Points** 4 (1d8) **Speed** 30 ft.
+**Armor Class** 10 
+**Hit Points** 4 (1d8) 
+**Speed** 30 ft.
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA     |
 |---------|---------|---------|---------|---------|---------|
@@ -253,9 +207,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Club_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 2 (1d4) bludgeoning damage.
 
-**Commoners** include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.
-
-### Cultist
+#### Cultist
 
 _Medium humanoid (any race), any non-good alignment_
 
@@ -283,9 +235,7 @@ _Medium humanoid (any race), any non-good alignment_
 
 **_Scimitar_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one creature. _Hit:_ 4 (1d6 + 1) slashing damage.
 
-**Cultists** swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.
-
-### Cult Fanatic
+#### Cult Fanatic
 
 _Medium humanoid (any race), any non-good alignment_
 
@@ -309,11 +259,7 @@ _Medium humanoid (any race), any non-good alignment_
 
 **_Dark Devotion_**. The fanatic has advantage on saving throws against being charmed or frightened.
 
-**_Spellcasting_**. The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:
-
-Cantrips (at will): _light_, _sacred flame_, _thaumaturgy_
-1st level (4 slots): _command_, _inflict wounds_, _shield of faith_
-2nd level (3 slots): _hold person_, _spiritual weapon_
+**_Spellcasting_**. The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _command_, _inflict wounds_, _shield of faith_\\n2nd level (3 slots): _hold person_, _spiritual weapon_
 
 **Actions**
 
@@ -321,9 +267,7 @@ Cantrips (at will): _light_, _sacred flame_, _thaumaturgy_
 
 **_Dagger_**. _Melee or Ranged Weapon Attack:_ +4 to hit, reach 5 ft. or range 20/60 ft., one creature. _Hit_: 4 (1d4 + 2) piercing damage.
 
-**Fanatics** are often part of a cult’s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.
-
-### Druid
+#### Druid
 
 _Medium humanoid (any race), any alignment_
 
@@ -339,21 +283,17 @@ _Medium humanoid (any race), any alignment_
 
 **Skills** Medicine +4, Nature +3, Perception +4
 
-**Senses** passive Perception 14 **Languages** Druidic plus any two languages **Challenge** 2 (450 XP)
+**Senses** passive Perception 14 
+**Languages** Druidic plus any two languages 
+**Challenge** 2 (450 XP)
 
-**_Spellcasting_**. The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
-
-Cantrips (at will): _druidcraft_, _produce flame_, _shillelagh_
-1st level (4 slots): _entangle_, _longstrider_, _speak with animals_, _thunderwave_
-2nd level (3 slots): _animal messenger_, _barkskin_
+**_Spellcasting_**. The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\\nCantrips (at will): _druidcraft_, _produce flame_, _shillelagh_\\n1st level (4 slots): _entangle_, _longstrider_, _speak with animals_, _thunderwave_\\n2nd level (3 slots): _animal messenger_, _barkskin_
 
 **Actions**
 
 **_Quarterstaff_**. _Melee Weapon Attack:_ +2 to hit (+4 to hit with _shillelagh_), reach 5 ft., one target. _Hit:_ 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with _shillelagh_.
 
-**Druids** dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are **tribal shamans** who heal the sick, pray to animal spirits, and provide spiritual guidance.
-
-### Gladiator
+#### Gladiator
 
 _Medium humanoid (any race), any alignment_
 
@@ -393,9 +333,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Parry_**. The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 
-**Gladiators** battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.
-
-### Guard
+#### Guard
 
 _Medium humanoid (any race), any alignment_
 
@@ -421,9 +359,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Spear_**. _Melee or Ranged Weapon Attack:_ +3 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d6 + 1)  piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
 
-**Guards** include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.
-
-### Knight
+#### Knight
 
 _Medium humanoid (any race), any alignment_
 
@@ -461,9 +397,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Parry_**. The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.
 
-**Knights** are warriors who pledge service to rulers, religious orders, and noble causes. A knight’s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.
-
-### Mage
+#### Mage
 
 _Medium humanoid (any race), any alignment_
 
@@ -487,22 +421,13 @@ _Medium humanoid (any race), any alignment_
 
 **Challenge** 6 (2,300 XP)
 
-**_Spellcasting_**. The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
-
-Cantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_
-1st level (4 slots): _detect magic_, _mage armor_, _magic missile_, _shield_
-2nd level (3 slots): _misty step_, _suggestion_
-3rd level (3 slots): _counterspell_, _fireball_, _fly_
-4th level (3 slots): _greater invisibility_, _ice storm_
-5th level (1 slot): _cone of cold_
+**_Spellcasting_**. The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\\nCantrips (at will): _fire bolt_, _light_, _mage hand_, _prestidigitation_\\n1st level (4 slots): _detect magic_, _mage armor_, _magic missile_, _shield_\\n2nd level (3 slots): _misty step_, _suggestion_\\n3rd level (3 slots): _counterspell_, _fireball_, _fly_\\n4th level (3 slots): _greater invisibility_, _ice storm_\\n5th level (1 slot): _cone of cold_\\n
 
 **Actions**
 
 **_Dagger_**. _Melee or Ranged Weapon Attack:_ +5 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d4 + 1)  piercing damage.
 
-**Mages** spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
-
-### Noble
+#### Noble
 
 _Medium humanoid (any race), any alignment_
 
@@ -532,11 +457,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Parry_**. The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.
 
-**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
-
-The noble’s statistics can also be used to represent **courtiers** who aren’t of noble birth.
-
-### Priest
+#### Priest
 
 _Medium humanoid (any race), any alignment_
 
@@ -560,22 +481,13 @@ _Medium humanoid (any race), any alignment_
 
 **_Divine Eminence_**. As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.
 
-**_Spellcasting_**. The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:
-
-Cantrips (at will): _light_, _sacred flame_, _thaumaturgy_
-1st level (4 slots): _cure wounds_, _guiding bolt_, _sanctuary_
-2nd level (3 slots): _lesser restoration_, _spiritual weapon_
-3rd level (2 slots): _dispel magic_, _spirit guardians_
+**_Spellcasting_**. The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:\\nCantrips (at will): _light_, _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _cure wounds_, _guiding bolt_, _sanctuary_\\n2nd level (3 slots): _lesser restoration_, _spiritual weapon_\\n3rd level (2 slots): _dispel magic_, _spirit guardians_\\n
 
 **Actions**
 
 **_Mace_**. _Melee Weapon Attack:_ +2 to hit, reach 5 ft., one target. _Hit:_ 3 (1d6) bludgeoning damage.
 
-**Priests** bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.
-
-A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
-
-### Scout
+#### Scout
 
 _Medium humanoid (any race), any alignment_
 
@@ -607,9 +519,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Longbow_**. _Ranged Weapon Attack:_ +4 to hit, ranged 150/600 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
 
-**Scouts** are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.
-
-### Spy
+#### Spy
 
 _Medium humanoid (any race), any alignment_
 
@@ -643,9 +553,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Hand Crossbow_**. _Ranged Weapon Attack:_ +4 to hit, range 30/120 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
 
-Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spies** to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.
-
-### Thug
+#### Thug
 
 _Medium humanoid (any race), any non-good alignment_
 
@@ -677,9 +585,7 @@ _Medium humanoid (any race), any non-good alignment_
 
 **_Heavy Crossbow_**. _Ranged Weapon Attack:_ +2 to hit, range 100/400 ft., one target. _Hit:_ 5 (1d10) piercing damage.
 
-**Thugs** are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.
-
-### Tribal Warrior
+#### Tribal Warrior
 
 _Medium humanoid (any race), any alignment_
 
@@ -705,9 +611,7 @@ _Medium humanoid (any race), any alignment_
 
 **_Spear_**. _Melee or Ranged Weapon Attack:_ +3 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
 
-**Tribal warriors** live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods.
-
-### Veteran
+#### Veteran
 
 _Medium humanoid (any race), any alignment_
 
@@ -738,5 +642,3 @@ _Medium humanoid (any race), any alignment_
 **_Shortsword_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage.
 
 **_Heavy Crossbow_**. _Ranged Weapon Attack:_ +3 to hit, range 100/400 ft., one target. _Hit:_ 6 (1d10 + 1) piercing damage.
-
-**Veterans** are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.

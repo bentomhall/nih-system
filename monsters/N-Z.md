@@ -1,8 +1,6 @@
 ### Monsters (N)
 
-#### Nagas
-
-##### Guardian Naga
+#### Guardian Naga
 
 _Large monstrosity, lawful good_
 
@@ -32,15 +30,7 @@ _Large monstrosity, lawful good_
 
 **_Rejuvenation_**. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a _wish_ spell can prevent this trait from functioning.
 
-**_Spellcasting_**. The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:
-
-Cantrips (at will): _mending_, _sacred flame_, _thaumaturgy_
-1st level (4 slots): _command_, _cure wounds_, _shield of faith_
-2nd level (3 slots) : _calm emotions_, _hold person_
-3rd level (3 slots): _bestow curse_, _clairvoyance_
-4th level (3 slots): _banishment_, _freedom of movement_
-5th level (2 slots): _flame strike_, _geas_
-6th level (1 slot): _true seeing_
+**_Spellcasting_**. The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:\\nCantrips (at will): _mending_, _sacred flame_, _thaumaturgy_\\n1st level (4 slots): _command_, _cure wounds_, _shield of faith_\\n2nd level (3 slots) : _calm emotions_, _hold person_\\n3rd level (3 slots): _bestow curse_, _clairvoyance_\\n4th level (3 slots): _banishment_, _freedom of movement_\\n5th level (2 slots): _flame strike_, _geas_\\n6th level (1 slot): _true seeing_
 
 **Actions**
 
@@ -48,7 +38,7 @@ Cantrips (at will): _mending_, _sacred flame_, _thaumaturgy_
 
 **_Spit Poison_**. _Ranged Weapon Attack:_ +8 to hit, range 15/30 ft., one creature. _Hit:_ The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
 
-##### Spirit Naga
+#### Spirit Naga
 
 _Large monstrosity, chaotic evil_
 
@@ -75,14 +65,7 @@ _Large monstrosity, chaotic evil_
 
 **_Rejuvenation_**. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a _wish_ spell can prevent this trait from functioning.
 
-**_Spellcasting_**. The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:
-
-Cantrips (at will): _mage hand_, _minor illusion_, _ray of frost_
-1st level (4 slots): _charm person_, _detect magic_, _sleep_
-2nd level (3 slots): _detect thoughts_, _hold person_
-3rd level (3 slots): _lightning bolt_, _water breathing_
-4th level (3 slots): _blight_, _dimension door_
-5th level (2 slots): _dominate person_
+**_Spellcasting_**. The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:\\nCantrips (at will): _mage hand_, _minor illusion_, _ray of frost_\\n1st level (4 slots): _charm person_, _detect magic_, _sleep_\\n2nd level (3 slots): _detect thoughts_, _hold person_\\n3rd level (3 slots): _lightning bolt_, _water breathing_\\n4th level (3 slots): _blight_, _dimension door_\\n5th level (2 slots): _dominate person_
 
 **Actions**
 
@@ -134,7 +117,7 @@ _Large giant, chaotic evil_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 19 (+4) | 8 (−1) | 16 (+3) | 5 (−3) | 7 (−2) | 7 (−2) |
+| 19 (+4) | 8 (-1) | 16 (+3) | 5 (-3) | 7 (-2) | 7 (-2) |
 
 **Senses** darkvision 60 ft., passive Perception 8
 
@@ -172,10 +155,7 @@ _Large giant, lawful evil_
 
 **Challenge** 7 (2,900 XP)
 
-**_Innate Spellcasting_**. The oni’s innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:
-
-At will: _darkness_, _invisibility_
-1/day each: _charm person_, _cone of cold_, _gaseous form_, _sleep_
+**_Innate Spellcasting_**. The oni’s innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:\\nAt will: _darkness_, _invisibility_\\n1/day each: _charm person_, _cone of cold_, _gaseous form_, _sleep_
 
 **_Magic Weapons_**. The oni’s weapon attacks are magical.
 
@@ -191,9 +171,7 @@ At will: _darkness_, _invisibility_
 
 **_Change Shape_**. The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
 
-#### Oozes
-
-##### Black Pudding
+#### Black Pudding
 
 _Large ooze, unaligned_
 
@@ -205,7 +183,7 @@ _Large ooze, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 16 (+3) | 5 (−3) | 16 (+3) | 1 (−5) | 6 (−2) | 1 (−5) |
+| 16 (+3) | 5 (-3) | 16 (+3) | 1 (-5) | 6 (-2) | 1 (-5) |
 
 **Damage Immunities** acid, cold, lightning, slashing
 
@@ -219,21 +197,19 @@ _Large ooze, unaligned_
 
 **_Amorphous_**. The pudding can move through a space as narrow as 1 inch wide without squeezing.
 
-**_Corrosive Form_**. A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage.
-
-The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
+**_Corrosive Form_**. A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage.\\nThe pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
 
 **_Spider Climb_**. The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
 **Actions**
 
-**_Pseudopod_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+**_Pseudopod_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
 
-**_Reactions_**
+**Reactions**
 
 **_Split_**. When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding’s, rounded down. New puddings are one size smaller than the original pudding.
 
-##### Gelatinous Cube
+#### Gelatinous Cube
 
 _Large ooze, unaligned_
 
@@ -245,7 +221,7 @@ _Large ooze, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 14 (+2) | 3 (−4) | 20 (+5) | 1 (−5) | 6 (−2) | 1 (−5) |
+| 14 (+2) | 3 (-4) | 20 (+5) | 1 (-5) | 6 (-2) | 1 (-5) |
 
 **Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, prone
 
@@ -255,13 +231,7 @@ _Large ooze, unaligned_
 
 **Challenge** 2 (450 XP)
 
-**_Ooze Cube_**. The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube’s Engulf and has disadvantage on the saving throw.
-
-Creatures inside the cube can be seen but have total cover.
-
-A creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage.
-
-The cube can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.
+**_Ooze Cube_**. The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube’s Engulf and has disadvantage on the saving throw.\\nCreatures inside the cube can be seen but have total cover.\\nA creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage.\\nThe cube can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.\\n
 
 **_Transparent_**. Even when the cube is in plain sight, it takes a successful DC 15 Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube’s space while unaware of the cube is surprised by the cube.
 
@@ -269,15 +239,9 @@ The cube can hold only one Large creature or up to four Medium or smaller creatu
 
 **_Pseudopod_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 10 (3d6) acid damage.
 
-**_Engulf_**. The cube moves up to its speed. While doing so, it can enter Large or smaller creatures’ spaces. Whenever the cube enters a creature’s space, the creature must make a DC 12 Dexterity saving throw.
+**_Engulf_**. The cube moves up to its speed. While doing so, it can enter Large or smaller creatures’ spaces. Whenever the cube enters a creature’s space, the creature must make a DC 12 Dexterity saving throw.\\nOn a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\\nOn a failed save, the cube enters the creature’s space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can’t breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube’s turns. When the cube moves, the engulfed creature moves with it.\\nAn engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
 
-On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.
-
-On a failed save, the cube enters the creature’s space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can’t breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube’s turns. When the cube moves, the engulfed creature moves with it.
-
-An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
-
-##### Gray Ooze
+#### Gray Ooze
 
 _Medium ooze, unaligned_
 
@@ -289,7 +253,7 @@ _Medium ooze, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 12 (+1) | 6 (−2) | 16 (+3) | 1 (−5) | 6 (−2) | 2 (−4) |
+| 12 (+1) | 6 (-2) | 16 (+3) | 1 (-5) | 6 (-2) | 2 (-4) |
 
 **Skills** Stealth +2
 
@@ -305,17 +269,15 @@ _Medium ooze, unaligned_
 
 **_Amorphous_**. The ooze can move through a space as narrow as 1 inch wide without squeezing.
 
-**_Corrode Metal_**. Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.
-
-The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.
+**_Corrode Metal_**. Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.\\nThe ooze can eat through 2-inch-thick, nonmagical metal in 1 round.
 
 **_False Appearance_**. While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.
 
 **Actions**
 
-**_Pseudopod_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+**_Pseudopod_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
 
-##### Ochre Jelly
+#### Ochre Jelly
 
 _Large ooze, unaligned_
 
@@ -327,7 +289,7 @@ _Large ooze, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 15 (+2) | 6 (−2) | 14 (+2) | 2 (−4) | 6 (−2) | 1 (−5) |
+| 15 (+2) | 6 (-2) | 14 (+2) | 2 (-4) | 6 (-2) | 1 (-5) |
 
 **Damage Resistances** acid
 
@@ -365,7 +327,7 @@ _Medium humanoid (orc), chaotic evil_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA     |
 |---------|---------|---------|--------|---------|---------|
-| 16 (+3) | 12 (+1) | 16 (+3) | 7 (−2) | 11 (+0) | 10 (+0) |
+| 16 (+3) | 12 (+1) | 16 (+3) | 7 (-2) | 11 (+0) | 10 (+0) |
 
 **Skills** Intimidation +2
 
@@ -395,7 +357,7 @@ _Large aberration, neutral_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA    |
 |---------|---------|---------|--------|---------|--------|
-| 16 (+3) | 11 (+0) | 19 (+4) | 6 (−2) | 13 (+1) | 6 (−2) |
+| 16 (+3) | 11 (+0) | 19 (+4) | 6 (-2) | 13 (+1) | 6 (-2) |
 
 **Saving Throws** Con +7
 
@@ -429,7 +391,7 @@ _Large monstrosity, unaligned_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA    |
 |---------|---------|---------|--------|---------|--------|
-| 20 (+5) | 12 (+1) | 17 (+3) | 3 (−4) | 12 (+1) | 7 (−2) |
+| 20 (+5) | 12 (+1) | 17 (+3) | 3 (-4) | 12 (+1) | 7 (-2) |
 
 **Skills** Perception +3
 
@@ -491,7 +453,7 @@ _Gargantuan monstrosity, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 28 (+9) | 7 (−2) | 22 (+6) | 1 (−5) | 8 (−1) | 4 (−3) |
+| 28 (+9) | 7 (-2) | 22 (+6) | 1 (-5) | 8 (-1) | 4 (-3) |
 
 **Saving Throws** Con +11, Wis +4
 
@@ -501,15 +463,13 @@ _Gargantuan monstrosity, unaligned_
 
 **Challenge** 15 (13,000 XP)
 
-**_Tunneler**_. The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
+**_Tunneler_**. The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
 
 **Actions**
 
 **_Multiattack_**. The worm makes two attacks: one with its bite and one with its stinger.
 
-**_Bite_**. _Melee Weapon Attack:_ +9 to hit, reach 10 ft., one target. _Hit:_ 22 (3d8 + 9) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm’s turns.
-
-If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
+**_Bite_**. _Melee Weapon Attack:_ +9 to hit, reach 10 ft., one target. _Hit:_ 22 (3d8 + 9) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm’s turns.\\nIf the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
 
 **_Tail Stinger_**. _Melee Weapon Attack:_ +9 to hit, reach 10 ft., one creature. _Hit:_ 19 (3d6 + 9) piercing damage, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 
@@ -526,7 +486,7 @@ _Huge monstrosity, unaligned_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA    |
 |---------|---------|---------|--------|---------|--------|
-| 24 (+7) | 13 (+1) | 21 (+5) | 4 (−3) | 10 (+0) | 5 (−3) |
+| 24 (+7) | 13 (+1) | 21 (+5) | 4 (-3) | 10 (+0) | 5 (-3) |
 
 **Damage Immunities** cold, fire
 
@@ -542,9 +502,7 @@ _Huge monstrosity, unaligned_
 
 **_Bite_**. _Melee Weapon Attack:_ +11 to hit, reach 10 ft., one target. _Hit:_ 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the target is a creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the remorhaz can’t bite another target.
 
-**_Swallow_**. The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite’s damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz’s turns.
-
-If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
+**_Swallow_**. The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite’s damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz’s turns.\\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
 
 #### Roc
 
@@ -558,7 +516,7 @@ _Gargantuan monstrosity, unaligned_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA    |
 |---------|---------|---------|--------|---------|--------|
-| 28 (+9) | 10 (+0) | 20 (+5) | 3 (−4) | 10 (+0) | 9 (−1) |
+| 28 (+9) | 10 (+0) | 20 (+5) | 3 (-4) | 10 (+0) | 9 (-1) |
 
 **Saving Throws** Dex +4, Con +9, Wis +4, Cha +3
 
@@ -592,7 +550,7 @@ _Large monstrosity, neutral evil_
 
 | STR     | DEX    | CON     | INT    | WIS     | CHA    |
 |---------|--------|---------|--------|---------|--------|
-| 18 (+4) | 8 (−1) | 17 (+3) | 7 (−2) | 16 (+3) | 6 (−2) |
+| 18 (+4) | 8 (-1) | 17 (+3) | 7 (-2) | 16 (+3) | 6 (-2) |
 
 **Skills** Perception +6, Stealth +5
 
@@ -630,7 +588,7 @@ _Medium monstrosity, unaligned_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA    |
 |---------|---------|---------|--------|---------|--------|
-| 13 (+1) | 12 (+1) | 13 (+1) | 2 (−4) | 13 (+1) | 6 (−2) |
+| 13 (+1) | 12 (+1) | 13 (+1) | 2 (-4) | 13 (+1) | 6 (-2) |
 
 **Senses** darkvision 60 ft., passive Perception 11
 
@@ -640,15 +598,13 @@ _Medium monstrosity, unaligned_
 
 **_Iron Scent_**. The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it.
 
-**_Rust Metal_**. Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage.
+**_Rust Metal_**. Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage.
 
 **Actions**
 
 **_Bite_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 5 (1d8 + 1) piercing damage.
 
-**_Antennae_**. The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn’t being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster’s touch.
-
-If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative −1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
+**_Antennae_**. The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn’t being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster’s touch.\\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
 
 #### Salamander
 
@@ -670,7 +626,7 @@ _Large elemental, neutral evil_
 
 **Damage Immunities** fire
 
-**Sense**s darkvision 60 ft., passive Perception 10
+**Senses** darkvision 60 ft., passive Perception 10
 
 **Languages** Ignan
 
@@ -704,7 +660,7 @@ _Medium fey, chaotic neutral_
 
 **Skills** Perception +2, Performance +6, Stealth +5
 
-**Sense**s passive Perception 12
+**Senses** passive Perception 12
 
 **Languages** Common, Elvish, Sylvan
 
@@ -732,7 +688,7 @@ _Medium undead, chaotic evil_
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA     |
 |---------|---------|---------|---------|---------|---------|
-| 6 (−2) | 14 (+2) | 13 (+1) | 6 (−2) | 10 (+0) | 8 (−1) |
+| 6 (-2) | 14 (+2) | 13 (+1) | 6 (-2) | 10 (+0) | 8 (-1) |
 
 **Skills** Stealth +4 (+6 in dim light or darkness)
 
@@ -758,9 +714,7 @@ _Medium undead, chaotic evil_
 
 **Actions**
 
-**_Strength Drain_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 9 (2d6 + 2) necrotic damage, and the target’s Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.
-
-If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.
+**_Strength Drain_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 9 (2d6 + 2) necrotic damage, and the target’s Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\\nIf a humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.
 
 #### Shambling Mound
 
@@ -774,7 +728,7 @@ _Large plant, unaligned_
 
 | STR     | DEX    | CON     | INT    | WIS     | CHA    |
 |---------|--------|---------|--------|---------|--------|
-| 18 (+4) | 8 (−1) | 16 (+3) | 5 (−3) | 10 (+0) | 5 (−3) |
+| 18 (+4) | 8 (-1) | 16 (+3) | 5 (-3) | 10 (+0) | 5 (-3) |
 
 **Skills** Stealth +2
 
@@ -790,7 +744,7 @@ _Large plant, unaligned_
 
 **Challenge** 5 (1,800 XP)
 
-**_Lightning Absorption**_. Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.
+**_Lightning Absorption_**. Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.
 
 **Actions**
 
@@ -800,9 +754,7 @@ _Large plant, unaligned_
 
 **_Engulf_**. The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound’s turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
 
-#### Skeletons
-
-##### Skeleton
+#### Skeleton
 
 _Medium undead, lawful evil_
 
@@ -814,7 +766,7 @@ _Medium undead, lawful evil_
 
 | STR     | DEX     | CON     | INT    | WIS    | CHA    |
 |---------|---------|---------|--------|--------|--------|
-| 10 (+0) | 14 (+2) | 15 (+2) | 6 (−2) | 8 (−1) | 5 (−3) |
+| 10 (+0) | 14 (+2) | 15 (+2) | 6 (-2) | 8 (-1) | 5 (-3) |
 
 **Damage Vulnerabilities** bludgeoning
 
@@ -834,7 +786,7 @@ _Medium undead, lawful evil_
 
 **_Shortbow_**. _Ranged Weapon Attack:_ +4 to hit, range 80/320 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
 
-##### Minotaur Skeleton
+#### Minotaur Skeleton
 
 _Large undead, lawful evil_
 
@@ -846,7 +798,7 @@ _Large undead, lawful evil_
 
 | STR     | DEX     | CON     | INT    | WIS    | CHA    |
 |---------|---------|---------|--------|--------|--------|
-| 18 (+4) | 11 (+0) | 15 (+2) | 6 (−2) | 8 (−1) | 5 (−3) |
+| 18 (+4) | 11 (+0) | 15 (+2) | 6 (-2) | 8 (-1) | 5 (-3) |
 
 **Damage Vulnerabilities** bludgeoning
 
@@ -868,7 +820,7 @@ _Large undead, lawful evil_
 
 **_Gore_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 13 (2d8 + 4) piercing damage.
 
-##### Warhorse Skeleton
+#### Warhorse Skeleton
 
 _Large undead, lawful evil_
 
@@ -880,7 +832,7 @@ _Large undead, lawful evil_
 
 | STR     | DEX     | CON     | INT    | WIS    | CHA    |
 |---------|---------|---------|--------|--------|--------|
-| 18 (+4) | 12 (+1) | 15 (+2) | 2 (−4) | 8 (−1) | 5 (−3) |
+| 18 (+4) | 12 (+1) | 15 (+2) | 2 (-4) | 8 (-1) | 5 (-3) |
 
 **Damage Vulnerabilities** bludgeoning
 
@@ -910,7 +862,7 @@ _Medium undead, chaotic evil_
 
 | STR    | DEX     | CON     | INT     | WIS     | CHA     |
 |--------|---------|---------|---------|---------|---------|
-| 1 (−5) | 14 (+2) | 11 (+0) | 10 (+0) | 10 (+0) | 11 (+0) |
+| 1 (-5) | 14 (+2) | 11 (+0) | 10 (+0) | 10 (+0) | 11 (+0) |
 
 **Damage Resistances** acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
 
@@ -944,7 +896,7 @@ _Tiny beast, unaligned_
 
 | STR    | DEX     | CON     | INT    | WIS    | CHA    |
 |--------|---------|---------|--------|--------|--------|
-| 4 (−3) | 16 (+3) | 11 (+0) | 2 (−4) | 8 (−1) | 6 (−2) |
+| 4 (-3) | 16 (+3) | 11 (+0) | 2 (-4) | 8 (-1) | 6 (-2) |
 
 **Senses** darkvision 60 ft., passive Perception 9
 
@@ -954,9 +906,7 @@ _Tiny beast, unaligned_
 
 **Actions**
 
-**_Blood Drain_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn’t attack. Instead, at the start of each of the stirge’s turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
-
-The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
+**_Blood Drain_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn’t attack. Instead, at the start of each of the stirge’s turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
 
 #### Succubus/Incubus
 
@@ -970,7 +920,7 @@ _Medium fiend (shapechanger), neutral evil_
 
 | STR    | DEX     | CON     | INT     | WIS     | CHA     |
 |--------|---------|---------|---------|---------|---------|
-| 8 (−1) | 17 (+3) | 13 (+1) | 15 (+2) | 12 (+1) | 20 (+5) |
+| 8 (-1) | 17 (+3) | 13 (+1) | 15 (+2) | 12 (+1) | 20 (+5) |
 
 **Skills** Deception +9, Insight +5, Perception +5, Persuasion +9, Stealth +7
 
@@ -990,15 +940,11 @@ _Medium fiend (shapechanger), neutral evil_
 
 **_Claw (Fiend Form Only)_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) slashing damage.
 
-**_Charm_**. One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend’s verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend’s Charm for the next 24 hours.
+**_Charm_**. One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend’s verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend’s Charm for the next 24 hours.\\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.
 
-The fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.
+**_Draining Kiss_**. The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target’s hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 
-**_Draining Kiss_**. The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15
-
-Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target’s hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
-
-**_Etherealness_**. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.
+**_Etherealness_**. The fiend magically enters the Border Shadow from the Mortal Plane, or vice versa.
 
 ### Monsters (T)
 
@@ -1014,7 +960,7 @@ _Gargantuan monstrosity (titan), unaligned_
 
 | STR      | DEX     | CON     | INT     | WIS     | CHA     |
 |----------|---------|---------|---------|---------|---------|
-| 30 (+10) | 11 (+0) | 30 (+10) | 3 (−4) | 11 (+0) | 11 (+0) |
+| 30 (+10) | 11 (+0) | 30 (+10) | 3 (-4) | 11 (+0) | 11 (+0) |
 
 **Saving Throws** Int +5, Wis +9, Cha +9
 
@@ -1032,8 +978,7 @@ _Gargantuan monstrosity (titan), unaligned_
 
 **_Magic Resistance_**. The tarrasque has advantage on saving throws against spells and other magical effects.
 
-**_Reflective Carapace_**. Any time the tarrasque is targeted by a
-_magic missile_ spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.
+**_Reflective Carapace_**. Any time the tarrasque is targeted by a _magic missile_ spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.
 
 **_Siege Monster_**. The tarrasque deals double damage to objects and structures.
 
@@ -1051,9 +996,7 @@ _magic missile_ spell, a line spell, or a spell that requires a ranged attack ro
 
 **_Frightful Presence_**. Each creature of the tarrasque’s choice within 120 feet of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the tarrasque’s Frightful Presence for the next 24 hours.
 
-**_Swallow_**. The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite’s damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque’s turns.
-
-If the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.
+**_Swallow_**. The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite’s damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque’s turns.\\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.
 
 **Legendary Actions**
 
@@ -1077,7 +1020,7 @@ _Huge plant, chaotic good_
 
 | STR     | DEX    | CON     | INT     | WIS     | CHA     |
 |---------|--------|---------|---------|---------|---------|
-| 23 (+6) | 8 (−1) | 21 (+5) | 12 (+1) | 16 (+3) | 12 (+1) |
+| 23 (+6) | 8 (-1) | 21 (+5) | 12 (+1) | 16 (+3) | 12 (+1) |
 
 **Damage Resistances** bludgeoning, piercing
 
@@ -1115,7 +1058,7 @@ _Large giant, chaotic evil_
 
 | STR     | DEX     | CON     | INT    | WIS    | CHA    |
 |---------|---------|---------|--------|--------|--------|
-| 18 (+4) | 13 (+1) | 20 (+5) | 7 (−2) | 9 (−1) | 7 (−2) |
+| 18 (+4) | 13 (+1) | 20 (+5) | 7 (-2) | 9 (-1) | 7 (-2) |
 
 **Skills** Perception +2
 
@@ -1165,10 +1108,7 @@ _Large celestial**,** lawful good_
 
 **_Charge_**. If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
-**_Innate Spellcasting_**. The unicorn’s innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:
-
-At will: _detect evil and good_, _druidcraft_, _pass without trace_
-1/day each: _calm emotions_, _dispel evil and good_, _entangle_
+**_Innate Spellcasting_**. The unicorn’s innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:\\nAt will: _detect evil and good_, _druidcraft_, _pass without trace_\\n1/day each: _calm emotions_, _dispel evil and good_, _entangle_
 
 **_Magic Resistance_**. The unicorn has advantage on saving throws against spells and other magical effects.
 
@@ -1198,9 +1138,7 @@ The unicorn can take 3 legendary actions, choosing from the options below. Only 
 
 ### Monsters (V)
 
-#### Vampires
-
-##### Vampire
+#### Vampire
 
 _Medium undead (shapechanger), lawful evil_
 
@@ -1226,31 +1164,17 @@ _Medium undead (shapechanger), lawful evil_
 
 **Challenge** 13 (10,000 XP)
 
-**_Shapechanger_**. If the vampire isn’t in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.
-
-While in bat form, the vampire can’t speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.
-
-While in mist form, the vampire can’t take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature’s space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can’t pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.
+**_Shapechanger_**. If the vampire isn’t in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.\\nWhile in bat form, the vampire can’t speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.\\nWhile in mist form, the vampire can’t take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature’s space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can’t pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.
 
 **_Legendary Resistance (3/Day)_**. If the vampire fails a saving throw, it can choose to succeed instead.
 
-**_Misty Escape_**. When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn’t in sunlight or running water. If it can’t transform, it is destroyed.
-
-While it has 0 hit points in mist form, it can’t revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.
+**_Misty Escape_**. When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn’t in sunlight or running water. If it can’t transform, it is destroyed.\\nWhile it has 0 hit points in mist form, it can’t revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.
 
 **_Regeneration_**. The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn’t in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn’t function at the start of the vampire’s next turn.
 
 **_Spider Climb_**. The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-**_Vampire Weaknesses_**. The vampire has the following flaws:
-
-_Forbiddance._ The vampire can’t enter a residence without an invitation from one of the occupants.
-
-_Harmed by Running Water._ The vampire takes 20 acid damage if it ends its turn in running water.
-
-_Stake to the Heart._ If a piercing weapon made of wood is driven into the vampire’s heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.
-
-_Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
+**_Vampire Weaknesses_**. The vampire has the following flaws:\\n_Forbiddance._ The vampire can’t enter a residence without an invitation from one of the occupants.\\n_Harmed by Running Water._ The vampire takes 20 acid damage if it ends its turn in running water.\\n_Stake to the Heart._ If a piercing weapon made of wood is driven into the vampire’s heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.\\n_Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
 
 **Actions**
 
@@ -1260,9 +1184,7 @@ _Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts 
 
 **_Bite (Bat or Vampire Form Only)_**. _Melee Weapon Attack:_ +9 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. _Hit:_ 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target’s hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire’s control.
 
-**_Charm_**. The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn’t under the vampire’s control, it takes the vampire’s requests or actions in the most favorable way it can, and it is a willing target for the vampire’s bite attack.
-
-Each time the vampire or the vampire’s companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.
+**_Charm_**. The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn’t under the vampire’s control, it takes the vampire’s requests or actions in the most favorable way it can, and it is a willing target for the vampire’s bite attack.\\nEach time the vampire or the vampire’s companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.
 
 **_Children of the Night (1/Day)_**. The vampire magically calls 2d4 swarms of bats or rats, provided that the sun isn’t up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.
 
@@ -1276,7 +1198,7 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 
 **Bite (Costs 2 Actions)_**. The vampire makes one bite attack.
 
-##### Vampire Spawn
+#### Vampire Spawn
 
 _Medium undead, neutral evil_
 
@@ -1306,15 +1228,7 @@ _Medium undead, neutral evil_
 
 **_Spider Climb_**. The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-**_Vampire Weaknesses_**. The vampire has the following flaws:
-
-_Forbiddance._ The vampire can’t enter a residence without an invitation from one of the occupants.
-
-_Harmed by Running Water._ The vampire takes 20 acid damage when it ends its turn in running water.
-
-_Stake to the Heart._ The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is incapacitated in its resting place.
-
-_Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
+**_Vampire Weaknesses_**. The vampire has the following flaws:\\n_Forbiddance._ The vampire can’t enter a residence without an invitation from one of the occupants.\\n_Harmed by Running Water._ The vampire takes 20 acid damage when it ends its turn in running water.\\n_Stake to the Heart._ The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is incapacitated in its resting place.\\n_Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
 
 **Actions**
 
@@ -1326,7 +1240,7 @@ _Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts 
 
 ### Monsters (W)
 
-##### Werebear
+#### Werebear
 
 _Medium humanoid (human, shapechanger), neutral good_
 
@@ -1364,7 +1278,7 @@ _Medium humanoid (human, shapechanger), neutral good_
 
 **_Greataxe (Humanoid or Hybrid Form Only)_**. _Melee Weapon Attack:_ +7 to hit, reach 5 ft., one target. _Hit:_ 10 (1d12 + 4) slashing damage.
 
-##### Wereboar
+#### Wereboar
 
 _Medium humanoid (human, shapechanger), neutral evil_
 
@@ -1376,7 +1290,7 @@ _Medium humanoid (human, shapechanger), neutral evil_
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA    |
 |---------|---------|---------|---------|---------|--------|
-| 17 (+3) | 10 (+0) | 15 (+2) | 10 (+0) | 11 (+0) | 8 (−1) |
+| 17 (+3) | 10 (+0) | 15 (+2) | 10 (+0) | 11 (+0) | 8 (-1) |
 
 **Skills** Perception +2
 
@@ -1402,7 +1316,7 @@ _Medium humanoid (human, shapechanger), neutral evil_
 
 **_Tusks (Boar or Hybrid Form Only)_**. _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 10 (2d6 + 3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.
 
-##### Wererat
+#### Wererat
 
 _Medium humanoid (human, shapechanger), lawful evil_
 
@@ -1414,7 +1328,7 @@ _Medium humanoid (human, shapechanger), lawful evil_
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA    |
 |---------|---------|---------|---------|---------|--------|
-| 10 (+0) | 15 (+2) | 12 (+1) | 11 (+0) | 10 (+0) | 8 (−1) |
+| 10 (+0) | 15 (+2) | 12 (+1) | 11 (+0) | 10 (+0) | 8 (-1) |
 
 **Skills** Perception +2, Stealth +4
 
@@ -1440,7 +1354,7 @@ _Medium humanoid (human, shapechanger), lawful evil_
 
 **_Hand Crossbow (Humanoid or Hybrid Form Only)_**. _Ranged Weapon Attack:_ +4 to hit, range 30/120 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
 
-##### Weretiger
+#### Weretiger
 
 _Medium humanoid (human, shapechanger), neutral_
 
@@ -1482,7 +1396,7 @@ _Medium humanoid (human, shapechanger), neutral_
 
 **_Longbow (Humanoid or Hybrid Form Only)_**. _Ranged Weapon Attack:_ +4 to hit, range 150/600 ft., one target. _Hit:_ 6 (1d8 + 2) piercing damage.
 
-##### Werewolf
+#### Werewolf
 
 _Medium humanoid (human, shapechanger), chaotic evil_
 
@@ -1554,9 +1468,7 @@ _Medium undead, neutral evil_
 
 **_Multiattack_**. The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack.
 
-**_Life Drain_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
-
-A humanoid slain by this attack rises 24 hours later as a zombie under the wight’s control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.
+**_Life Drain_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one creature. _Hit:_ 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.\\nA humanoid slain by this attack rises 24 hours later as a zombie under the wight’s control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.
 
 **_Longsword_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands.
 
@@ -1574,7 +1486,7 @@ _Tiny undead, chaotic evil_
 
 | STR    | DEX     | CON     | INT     | WIS     | CHA     |
 |--------|---------|---------|---------|---------|---------|
-| 1 (−5) | 28 (+9) | 10 (+0) | 13 (+1) | 14 (+2) | 11 (+0) |
+| 1 (-5) | 28 (+9) | 10 (+0) | 13 (+1) | 14 (+2) | 11 (+0) |
 
 **Damage Immunities** lightning, poison
 
@@ -1614,7 +1526,7 @@ _Medium undead, neutral evil_
 
 | STR    | DEX     | CON     | INT     | WIS     | CHA     |
 |--------|---------|---------|---------|---------|---------|
-| 6 (−2) | 16 (+3) | 16 (+3) | 12 (+1) | 14 (+2) | 15 (+2) |
+| 6 (-2) | 16 (+3) | 16 (+3) | 12 (+1) | 14 (+2) | 15 (+2) |
 
 **Damage Resistances** acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks that aren’t silvered
 
@@ -1650,7 +1562,7 @@ _Large dragon, unaligned_
 
 | STR     | DEX     | CON     | INT    | WIS     | CHA     |
 |---------|---------|---------|--------|---------|---------|
-| 19 (+4) | 10 (+0) | 16 (+3) | 5 (−3) | 12 (+1) | 6 (−2) |
+| 19 (+4) | 10 (+0) | 16 (+3) | 5 (-3) | 12 (+1) | 6 (-2) |
 
 **Skills** Perception +4
 
@@ -1711,46 +1623,7 @@ _Medium elemental, neutral_
 **_Bite_**. _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 13 (3d6 + 3) piercing damage.
 
 ### Monsters (Z)
-
-#### Zandolit Tribesman
-
-_Medium humanoid (lizardfolk), neutral_
-
-**Armor Class** 15 (natural armor, shield)
-
-**Hit Points** 22 (4d8 + 4)
-
-**Speed** 30 ft., swim 30 ft.
-
-| STR     | DEX     | CON     | INT    | WIS     | CHA    |
-|---------|---------|---------|--------|---------|--------|
-| 15 (+2) | 10 (+0) | 13 (+1) | 7 (−2) | 12 (+1) | 7 (−2) |
-
-**Skills** Perception +3, Stealth +4, Survival +5
-
-**Senses** passive Perception 13
-
-**Languages** Draconic
-
-**Challenge** 1/2 (100 XP)
-
-**_Hold Breath_**. The lizardfolk can hold its breath for 15 minutes.
-
-**Actions**
-
-**_Multiattack_**. The lizardfolk makes two melee attacks, each one with a different weapon.
-
-**_Bite_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-
-**_Heavy Club_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) bludgeoning damage.
-
-**_Javelin_**. _Melee or Ranged Weapon Attack:_ +4 to hit, reach 5 ft. or range 30/120 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-
-**_Spiked Shield_**. _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
-
-#### Zombies
-
-##### Zombie
+#### Zombie
 
 _Medium undead, neutral evil_
 
@@ -1762,7 +1635,7 @@ _Medium undead, neutral evil_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 13 (+1) | 6 (−2) | 16 (+3) | 3 (−4) | 6 (−2) | 5 (−3) |
+| 13 (+1) | 6 (-2) | 16 (+3) | 3 (-4) | 6 (-2) | 5 (-3) |
 
 **Saving Throws** Wis +0
 
@@ -1782,7 +1655,7 @@ _Medium undead, neutral evil_
 
 **_Slam_**. _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target. _Hit:_ 4 (1d6 + 1) bludgeoning damage.
 
-##### Ogre Zombie
+#### Ogre Zombie
 
 _Large undead, neutral evil_
 
@@ -1794,7 +1667,7 @@ _Large undead, neutral evil_
 
 | STR     | DEX    | CON     | INT    | WIS    | CHA    |
 |---------|--------|---------|--------|--------|--------|
-| 19 (+4) | 6 (−2) | 18 (+4) | 3 (−4) | 6 (−2) | 5 (−3) |
+| 19 (+4) | 6 (-2) | 18 (+4) | 3 (-4) | 6 (-2) | 5 (-3) |
 
 **Saving Throws** Wis +0
 

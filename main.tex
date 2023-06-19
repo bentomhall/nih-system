@@ -1,0 +1,36 @@
+\documentclass[10pt,twoside,twocolumn,openany]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{mdframed}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[section]{placeins}
+
+\extrafloats{1000}
+
+\newcommand*{\MonsterStats}[6]{%
+    \begin{DndTable}[color=PhbTan]{XXXXXX}
+    \StatLine\tabularnewline
+    $#1$ & $#2$ & $#3$ & $#4$ & $#5$ & $#6$
+    \end{DndTable}
+}
+
+\newcommand*{\StatLine}[0]{\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}}
+
+\begin{document}
+\import{./}{character-creation.tex}
+\import{./lineages}{alternate-lineages.tex}
+\import{./lineages}{cultures.tex}
+\import{./classes}{classes.tex}
+\import{./}{core-system.tex}
+\import{./}{equipment.tex}
+\import{./spells}{incantations.tex}
+\import{./spells}{spellcasting.tex}
+\import{./monsters}{monsters.tex}
+\chapter{Appendix}\label{ch:appendix}
+\import{./}{conditions.tex}
+
+\end{document}

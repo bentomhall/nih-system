@@ -14,36 +14,11 @@ The three main rolls of the game—the ability check, the saving throw, and the 
 
 ### Ability Scores and Modifiers
 
-Each of a creature’s abilities has a score, a number that defines the magnitude of that ability. An ability score is not just a measure of innate capabilities, but also encompasses a creature’s training and competence in activities related to that ability.
+Each of a creature’s abilities has a score, a number that defines the magnitude of that ability. An ability score is not just a measure of innate capabilities, but also encompasses a creature’s training and competence in activities related to that ability. In essence, an ability score is a measure of aptitude in a given approach to life. Those with high Strength are good at things that require forceful, direct physical approaches. Those with high Dexterity are nimble, quick to react, and good at things requiring a deft, subtle, or precise physical approach. Those with high Constitution are tough and hearty, good at things that benefit from endurance and resilience. Those with high Intelligence are quick of thought and knowledgeable, able to put the pieces together quickly and accurately. Those with high Wisdom are perceptive and "in tune" with events around them; they are good at understanding people and animals as well as more esoteric things like spirits. Those with high Charisma are forceful of personality, able to take charge and have people listen to them; they also often have the magical force of will to compel the universe to bend to them, even if only slightly.
 
-A score of 10 or 11 is the normal human average, but adventurers and many monsters are a cut above average in most abilities. A score of 18 is the highest that a person usually reaches. Adventurers can have scores as high as 20, and monsters and divine beings can have scores as high as 30.
+For player characters, the score can range between -5 and +5, with 0 representing the human average in that area. Some powerful monsters such as giants, dragons, and beings of the planes might have ability scores above +5; no ability score can be greater than +10.
 
-Each ability also has a modifier, derived from the score and ranging from −5 (for an ability score of 1) to +10 (for a score of 30). The Ability Scores and Modifiers table notes the ability modifiers for the range of possible ability scores, from 1 to 30.
-
-**Ability Scores and Modifiers (table)**
-
-| Score | Modifier |
-|-------|----------|
-| 1     | −5       |
-| 2–3   | −4       |
-| 4–5   | −3       |
-| 6–7   | −2       |
-| 8–9   | −1       |
-| 10–11 | +0       |
-| 12–13 | +1       |
-| 14–15 | +2       |
-| 16–17 | +3       |
-| 18–19 | +4       |
-| 20–21 | +5       |
-| 22–23 | +6       |
-| 24–25 | +7       |
-| 26–27 | +8       |
-| 28–29 | +9       |
-| 30    | +10      |
-
-To determine an ability modifier without consulting the table, subtract 10 from the ability score and then divide the total by 2 (round down).
-
-Because ability modifiers affect almost every attack roll, ability check, and saving throw, ability modifiers come up in play more often than their associated scores.
+Ability scores (also called "modifiers") are added to ability checks, saving throws, attack rolls, and weapon damage rolls.
 
 ### Advantage and Disadvantage
 
@@ -74,15 +49,11 @@ In general, you don’t multiply your proficiency bonus for attack rolls or savi
 ### Stamina (STA) and Aether (AET)
 Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class–physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
 
-**Dodge**: When you are targeted by an attack, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. Wearing heavy armor doubles the cost of this action while wearing light armor halves the cost.
+**Deflect**: When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
 
-**Deflect**: When you are targeted by an attack while you are wielding a melee weapon or shield or are affected by mage armor, you can use your reaction and spend 2 STA to reduce the damage taken by half if it hits. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with the weapon or shield you are wielding or attempt to Shove them. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. Wearing heavy armor halves the cost of this action while wearing light armor doubles the cost.
+**Exert**: By spending 1 STA when you make an ability check that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
 
-**Exert**: By spending 1 STA when you make an ability check or saving throw that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
-
-**Focus**: By spending 1 AET when you make an ability check or saving throw that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
-
-**Spell-shatter**: By spending 2 AET and your reaction when a creature casts a spell within your reach, you can make a special melee attack against the caster. If this hits, the creature must make a concentration saving throw as if they were concentrating on the spell. If the saving throw fails, the spell is lost, consuming any aether or daily use involved.
+**Focus**: By spending 1 AET when you make an ability check that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
 
 ### Ability Checks
 

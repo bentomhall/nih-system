@@ -1,7 +1,7 @@
 \subsection{Spells (Q)}
 
 \subsection{Spells (R)}
-
+\label{spell:ray-of-enfeeblement}
 \DndSpellHeader{Ray of Enfeeblement}
 {3 AET}
 {1 action}
@@ -9,10 +9,11 @@
 {V, S}
 {Concentration, up to 1 minute}
 
-A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d6 necrotic damage and deals only half damage with weapon attacks that use Strength until the spell ends.
+A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d6 necrotic damage and deals only half damage with weapon attacks until the spell ends.
 
 At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends.
 
+\label{spell:ray-of-frost}
 \DndSpellHeader{Ray of Frost}
 {cantrip}
 {1 action}
@@ -24,6 +25,7 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
+\label{spell:reincarnate}
 \DndSpellHeader{Reincarnate}
 {12 AET}
 {1 hour}
@@ -39,11 +41,19 @@ The magic fashions a new body for the creature to inhabit, which likely causes t
 
 \begin{DndTable}{XX}
 \textbf{d100}  & \textbf{Lineage}             \\
+1-45 & \nameref{lineage:human} \\
+46-55 & \nameref{lineage:dwarf} \\
+56-65 & \nameref{lineage:ihmisi} \\
+66-75 & \nameref{lineage:orc} \\
+76-85 & \nameref{lineage:gwerin} \\
+86-90 & \nameref{lineage:halfling} \\
+91-95 & \nameref{lineage:dragonborn} \\
+96-100 & \nameref{lineage:jazuu}
 \end{DndTable}
 
+The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly. Its culture does not change.
 
-The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly.
-
+\label{spell:remove-curse}
 \DndSpellHeader{Remove Curse}
 {5 AET}
 {1 action}
@@ -53,6 +63,7 @@ The reincarnated creature recalls its former life and experiences. It retains th
 
 At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.
 
+\label{spell:resilient-sphere}
 \DndSpellHeader{Resilient Sphere}
 {8 AET}
 {1 action}
@@ -66,6 +77,7 @@ Nothing—not physical objects, energy, or other spell effects—can pass throug
 
 The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.
 
+\label{spell:resistance}
 \DndSpellHeader{Resistance}
 {Cantrip}
 {1 action}
@@ -75,6 +87,7 @@ The sphere is weightless and just large enough to contain the creature or object
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.
 
+\label{spell:revivify}
 \DndSpellHeader{Revivify}
 {5 AET}
 {1 action}
@@ -86,6 +99,7 @@ You touch a creature that has died within the last minute. That creature returns
 
 \subsection{Spells (S)}
 
+\label{spell:sacred-flame}
 \DndSpellHeader{Sacred Flame}
 {Cantrip}
 {1 action}
@@ -93,10 +107,11 @@ You touch a creature that has died within the last minute. That creature returns
 {V, S}
 {Instantaneous}
 
-Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
+Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw and you do not need a clear path to the target.
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
+\label{spell:sanctuary}
 \DndSpellHeader{Sanctuary}
 {2 AET}
 {1 bonus action}
@@ -108,6 +123,7 @@ You ward a creature within range against attack. Until the spell ends, any creat
 
 If the warded creature makes an attack, deals damage, or casts a spell that affects an enemy creature, this spell ends.
 
+\label{spell:scorching-ray}
 \DndSpellHeader{Scorching Ray}
 {3 AET}
 {1 action}
@@ -121,6 +137,7 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 \subsection*{Overcast} When you cast this spell using more than 3 AET, you create one additional ray for every 2 additional AET you spend.
 
+\label{spell:secret-chest}
 \DndSpellHeader{Secret Chest}
 {8 AET}
 {1 action}
@@ -132,8 +149,9 @@ You hide a chest, and all its contents, on the Ethereal Plane. You must touch th
 
 While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.
 
-After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.
+This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.
 
+\label{spell:see-invisibility}
 \DndSpellHeader{See Invisibility}
 {3 AET}
 {1 action}
@@ -143,6 +161,7 @@ After 60 days, there is a cumulative 5 percent chance per day that the spell's e
 
 For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.
 
+\label{spell:seeming}
 \DndSpellHeader{Seeming}
 {12 AET}
 {1 action}
@@ -158,6 +177,7 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 A creature can use its action to inspect a target and make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised.
 
+\label{spell:shatter}
 \DndSpellHeader{Shatter}
 {3 AET}
 {1 action}
@@ -171,6 +191,7 @@ A nonmagical object that isn't being worn or carried also takes the damage if it
 
 \subsection*{Overcast} When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
+\label{spell:shield}
 \DndSpellHeader{Shield}
 {2 AET}
 {1 action}
@@ -180,6 +201,7 @@ A nonmagical object that isn't being worn or carried also takes the damage if it
 
 An invisible barrier of magical force appears and protects you. For the duration, you take no damage from \textit{magic missile}. Additionally, you can take the Deflect action as if you were wearing a shield, spending AET instead of STA to do so.
 
+\label{spell:shield-of-faith}
 \DndSpellHeader{Shield of Faith}
 {2 AET}
 {1 bonus action}
@@ -189,6 +211,7 @@ An invisible barrier of magical force appears and protects you. For the duration
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration. This does not stack with a shield.
 
+\label{spell:shillelagh}
 \DndSpellHeader{Shillelagh}
 {Cantrip}
 {1 bonus action}
@@ -198,6 +221,7 @@ A shimmering field appears and surrounds a creature of your choice within range,
 
 The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.
 
+\label{spell:shocking-grasp}
 \DndSpellHeader{Shocking Grasp}
 {Cantrip}
 {1 action}
@@ -209,6 +233,7 @@ Lightning springs from your hand to deliver a shock to a creature you try to tou
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
+\label{spell:silence}
 \DndSpellHeader{Silence}
 {3 AET}
 {1 action}
@@ -218,6 +243,7 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
 
+\label{spell:silent-image}
 \DndSpellHeader{Silent Image}
 {2 AET}
 {1 action}
@@ -231,21 +257,19 @@ You can use your action to cause the image to move to any spot within range. As 
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.
 
+\label{spell:sleep}
 \DndSpellHeader{Sleep}
 {2 AET}
 {1 action}
 {90 feet}
 {V, S, M (a pinch of fine sand, rose petals, or a cricket)}
-{1 minute}
+{Concentration, up to 1 minute}
 
-This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).
-
-Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.
+This spell sends creatures into a magical slumber. Creatures within 20 feet of a point you choose within range must make a Wisdom saving throw. Creatures who fail their saving throw fall unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.
 
 Undead and creatures immune to being charmed aren't affected by this spell.
 
-\subsection*{Overcast} When you cast this spell using more than 2 AET, roll an additional 1d8 for every additional AET spent.
-
+\label{spell:sleet-storm}
 \DndSpellHeader{Sleet Storm}
 {5 AET}
 {1 action}
@@ -259,6 +283,7 @@ The ground in the area is covered with slick ice, making it difficult terrain. W
 
 If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.
 
+\label{spell:slow}
 \DndSpellHeader{Slow}
 {5 AET}
 {1 action}
@@ -274,15 +299,7 @@ If the creature attempts to cast a spell with a casting time of 1 action, roll a
 
 A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.
 
-\DndSpellHeader{Spider Climb //kill}
-{3 AET}
-{1 action}
-{Touch}
-{V, S, M (a drop of bitumen and a spider)}
-{Concentration, up to 1 hour}
-
-Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.
-
+\label{spell:spike-growth}
 \DndSpellHeader{Spike Growth}
 {3 AET}
 {1 action}
@@ -294,6 +311,7 @@ The ground in a 20-foot radius centered on a point within range twists and sprou
 
 The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.
 
+\label{spell:spirit-guardians}
 \DndSpellHeader{Spirit Guardians}
 {5 AET}
 {1 action}
@@ -303,10 +321,11 @@ The transformation of the ground is camouflaged to look natural. Any creature th
 
 You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.
 
-When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.
+When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. Affected creatures treat the area as difficult terrain, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.
 
 \subsection*{Overcast} When you cast this spell using more than 5 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
+\label{spel:spiritual-weapon}
 \DndSpellHeader{Spiritual Weapon}
 {3 AET}
 {1 bonus action}
@@ -322,6 +341,7 @@ The weapon can take whatever form you choose.
 
 \subsection*{Overcast} When you cast this spell using more than 3 AET, the damage increases by 1d8 for every three additional AET.
 
+\label{spell:stinking-cloud}
 \DndSpellHeader{Stinking Cloud}
 {5 AET}
 {1 action}
@@ -335,6 +355,7 @@ Each creature that is completely within the cloud at the start of its turn must 
 
 A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.
 
+\label{spell:stone-shape}
 \DndSpellHeader{Stone Shape}
 {8 AET}
 {1 action}
@@ -344,6 +365,7 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 
 You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.
 
+\label{spell:stoneskin}
 \DndSpellHeader{Stoneskin}
 {8 AET}
 {1 action}
@@ -351,8 +373,9 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 {V, S, M (diamond dust worth 100 gp, which the spell consumes)}
 {1 hour}
 
-This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage.
+This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage, but their speed is reduced by 10 ft and they have disadvantage on Dexterity ability checks.
 
+\label{spell:suggestion}
 \DndSpellHeader{Suggestion}
 {3 AET}
 {1 action}
@@ -368,6 +391,7 @@ You can also specify conditions that will trigger a special activity during the 
 
 If you or any of your companions damage the target, the spell ends.
 
+\label{spell:sunbeam}
 \DndSpellHeader{Sunbeam}
 {9 AET}
 {1 action}
@@ -383,6 +407,7 @@ For the duration, a mote of brilliant radiance shines in your hand. It sheds bri
 
 \subsection{Spells (T)}
 
+\label{spell:telekinesis}
 \DndSpellHeader{Telekinesis}
 {12 AET}
 {1 action}
@@ -402,6 +427,7 @@ If the object is worn or carried by a creature, you must make an ability check w
 
 You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.
 
+\label{spell:thaumaturgy}
 \DndSpellHeader{Thaumaturgy}
 {Cantrip}
 {1 action}
@@ -419,6 +445,7 @@ You manifest a minor wonder, a sign of supernatural power, within range. You cre
 \item You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.
 \end{itemize}
 
+\label{spell:thunderwave}
 \DndSpellHeader{Thunderwave}
 {2 AET}
 {1 action}
@@ -426,12 +453,13 @@ You manifest a minor wonder, a sign of supernatural power, within range. You cre
 {V, S}
 {Instantaneous}
 
-A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
+A wave of thunderous force sweeps out from your outstretched hands. Each creature in a 15-foot cube originating from one side of your space you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
 
 In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.
 
 \subsection*{Overcast} When you cast this spell using more than 2 AET, the damage increases by 1d8 for every additional AET, up to a maximum of 5d8 (5 AET).
 
+\label{spell:tree-stride}
 \DndSpellHeader{Tree Stride}
 {12 AET}
 {1 action}
@@ -443,6 +471,7 @@ You gain the ability to enter a tree and move from inside it to inside another t
 
 You can use this transportation ability once per round for the duration. You must end each turn outside a tree.
 
+\label{spell:true-seeing}
 \DndSpellHeader{True Seeing}
 {12 AET}
 {1 action}
@@ -452,6 +481,7 @@ You can use this transportation ability once per round for the duration. You mus
 
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.
 
+\label{spell:true-strike}
 \DndSpellHeader{True Strike}
 {1 AET}
 {1 bonus action}
@@ -465,6 +495,7 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 
 \subsection{Spells (V)}
 
+\label{spell:vampiric-touch}
 \DndSpellHeader{Vampiric Touch}
 {4 AET}
 {1 action}
@@ -477,7 +508,7 @@ The touch of your shadow-wreathed hand can siphon life force from others to heal
 \subsection*{Overcast} When you cast this spell using more than 4 AET, the damage increases by 1d6 for every two additional AET spent.
 
 \subsection{Spells (W)}
-
+\label{spell:wall-of-fire}
 \DndSpellHeader{Wall of Fire}
 {8 AET}
 {1 action}
@@ -493,6 +524,7 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 fire d
 
 \subsection*{Overcast} When you cast this spell using more than 8 AET, the damage increases by 1d8 for every 3 additional AET.
 
+\label{spell:wall-of-force}
 \DndSpellHeader{Wall of Force}
 {15 AET}
 {1 action}
@@ -506,6 +538,7 @@ Nothing can physically pass through the wall. The wall also extends into the Eth
 
 \subsection*{Overcast} When you cast this spell using more than 15 AET, its HP increases by 3 for every additional AET spent.
 
+\label{spell:wall-of-ice}
 \DndSpellHeader{Wall of Ice}
 {12 AET}
 {1 action}
@@ -521,6 +554,7 @@ The wall is an object that can be damaged and thus breached. It has AC 12 and 30
 
 \subsection*{Overcast} When you cast this spell using a more than 12 AET, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for every 3 additional AET.
 
+\label{spell:wall-of-stone}
 \DndSpellHeader{Wall of Stone}
 {12 AET}
 {1 action}
@@ -540,6 +574,7 @@ The wall is an object made of stone that can be damaged and thus breached. Each 
 
 The wall disappears when the spell ends.
 
+\label{spell:wall-of-thorns}
 \DndSpellHeader{Wall of Thorns}
 {9 AET}
 {1 action}
@@ -555,6 +590,7 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 
 \subsection*{Overcast} When you cast this spell using more than 9 AET, both types of damage increase by 1d8 for every 2 additional AET spent.
 
+\label{spell:warding-bond}
 \DndSpellHeader{Warding Bond}
 {3 AET}
 {1 action}
@@ -566,6 +602,7 @@ This spell wards a willing creature you touch and creates a mystic connection be
 
 The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.
 
+\label{spell:web}
 \DndSpellHeader{Web}
 {3 AET}
 {1 action}
@@ -585,6 +622,7 @@ A creature restrained by the webs can use its action to make a Strength check ag
 
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
 
+\label{spell:wind-wall}
 \DndSpellHeader{Wind Wall}
 {5 AET}
 {1 action}

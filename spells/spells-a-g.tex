@@ -609,7 +609,7 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 {V, M (bat fur and a drop of pitch or piece of coal)}
 {Concentration, up to 10 minutes}
 
-Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
+Magical, opaque darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
 
 If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
@@ -725,7 +725,7 @@ You can end the spell early by using either of the following special functions.
 
 Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.
+\subparagraph*{Overcast} When you cast this spell using more than 5 AET, you gain +1 on the check for every 3 additional AET spent.
 
 \label{spell:divine-favor}
 \DndSpellHeader{Divine Favor}
@@ -753,7 +753,7 @@ You can use your action to take total and precise control of the target. Until t
 
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 
-\subparagraph*{Overcast} When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.
+\subparagraph*{Overcast} When you cast this spell and spend at least 12 AET, the duration is concentration, up to 10 minutes. When you use at least 15 AET, the duration is concentration, up to 1 hour. When you use at least 18 AET, the duration is concentration, up to 8 hours.
 
 \label{spell:dominate-person}
 \DndSpellHeader{Dominate Person}
@@ -771,7 +771,7 @@ You can use your action to take total and precise control of the target. Until t
 
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 
-\subparagraph*{Overcast} When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.
+\subparagraph*{Overcast} When you cast this spell using at least 15 AET, the duration is concentration, up to 10 minutes. When you use 18 AET, the duration is concentration, up to 1 hour. If you use 22 AET, the duration is concentration, up to 8 hours.
 
 \subsection{Spells (E)}
 
@@ -797,7 +797,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 
 \subparagraph*{Owl's Wisdom} The target has advantage on Wisdom checks.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+\subparagraph*{Overcast} When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
 \label{spell:enlarge-reduce}
 \DndSpellHeader{Enlarge/Reduce}
@@ -877,7 +877,7 @@ At the start of each of your turns, the hound attempts to bite one creature with
 
 Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.
+\subparagraph*{Overcast} When you cast this spell using more than 2 AET, you gain 5 additional temporary hit points for every 2 additional AET spent.
 
 \label{spell:fear}
 \DndSpellHeader{Fear}
@@ -900,24 +900,6 @@ While frightened by this spell, a creature must take the Dash action and move aw
 {1 minute}
 
 Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.
-
-\label{spell:find-steed}
-\DndSpellHeader{Find Steed}
-{3 AET}
-{10 minutes}
-{30 feet}
-{V, S}
-{Instantaneous}
-
-You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
-
-Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.
-
-When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.
-
-While your steed is within 1 mile of you, you can communicate with it telepathically.
-
-You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
 
 \label{spell:find-traps}
 \DndSpellHeader{Find Traps}
@@ -967,17 +949,19 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 {V, S, M (leaf of sumac)}
 {Concentration, up to 10 minutes}
 
-You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.
+You evoke a fiery scimitar in your free hand. The blade is lasts for the duration and you have proficiency in it. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.
 
 You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage.
 
+Alternatively, you can use it as a normal scimitar, except that it deals fire damage.
+
 The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
+\subparagraph*{Overcast} When you cast this spell using more than 3 AET, the damage increases by 1d6 for every 4 additional AET spent. When used as a normal weapon, the damage dice increase by 1d6 for every 4 additional AET.
 
 \label{spell:flame-strike}
 \DndSpellHeader{Flame Strike}
-{12 AET}
+{11 AET}
 {1 action}
 {60 feet}
 {V, S, M (pinch of sulfur)}
@@ -985,7 +969,7 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.
+\subparagraph*{Overcast} When you cast this spell using more than 11 AET, the fire damage and the radiant damage each increase by 1d6 for every 3 additional AET spent.
 
 \label{spell:flaming-sphere}
 \DndSpellHeader{Flaming Sphere}
@@ -1001,7 +985,7 @@ As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere 
 
 When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
+\subparagraph*{Overcast} When you cast this spell using more than 3 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
 \label{spell:fog-cloud}
 \DndSpellHeader{Fog Cloud}
@@ -1013,7 +997,7 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.
+\subparagraph*{Overcast} When you cast this spell using more than 2 AET, the radius of the fog increases by 10 feet for every 3 additional AET spent.
 
 \label{spell:freedom-of-movement}
 \DndSpellHeader{Freedom of Movement}
@@ -1117,7 +1101,7 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
+\subparagraph*{Overcast} When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
 \label{spell:gust-of-wind}
 \DndSpellHeader{Gust of Wind}

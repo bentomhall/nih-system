@@ -36,7 +36,7 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Leather armor, any simple weapon, and two daggers
 \end{itemize}
 
-\begin{DndTable}[header=The Warlock\label{tbl:warlock}]{XXXXXXXX}
+\begin{DndTable}[header=The Warlock\label{tbl:warlock}]{XXXXXXXXXXXX}
  Level & Proficiency Bonus & Features              & Cantrips Known & Blast Shapes & Blast Effects & Invocations & Stamina & Aether & Aether Limit \\
  1st   & +2  & Otherworldly Patron, Eldritch Blast & 2  & ---  & ---  & --- & 1  & 3  & 2  \\
  2nd   & +2  & Eldritch Invocations, Blast Effects & 2  & ---  & 1    & 2   & 1  & 4  & 2  \\
@@ -80,13 +80,13 @@ Charisma is your spellcasting ability for your warlock spells, so you use your C
 
 The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "eldritch blast".
 
-At its most basic, as an action on your turn you can shoot a bolt of raw force at a creature or object within 90 ft. of you. Make a spell attack roll. On a hit, the bolt deals 1d8 + your Charisma modifier force damage to the target. This damage increases by 1d8 at level 5, 11, and 17.
+At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a spell attack roll. On a hit, the bolt deals 1d8 + your Charisma modifier bludgeoning damage to the target. This damage increases by 1d8 at level 5, 11, and 17. This counts as casting a cantrip.
 
 \subsection{Blast Effects}
 
 At 2nd level, you have learned to add additional effects to your \textit{eldritch blast} on hit by spending AET. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your \textit{eldritch blast}. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the \nameref{tbl:warlock} table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise.
 
-Starting at level 7, you can learn Blast Effects labeled as Greater, and you no longer need to spend AET on regular Blast Effects. 
+Starting at level 7, you can learn Blast Effects labeled as Greater and the cost of non-greater blast effects is reduced by 1 (to a minumum of 0). Expending AET on Blast Effects increases the effective cost of the eldritch blast for the purpose of overcoming resistances, immunities, and other effects that care about the aether cost of a spell.
 
 \subsection{Eldritch Invocations}
 
@@ -110,7 +110,7 @@ Additionally, when you take the Attack action, you can forgo one of your own att
 
 \subsection{Pact of the Blade}
 
-You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+You can use your \textit{eldritch blast} to create a magical weapon of solidified aether in your hand. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You can use your Charisma as the ability modifier for attacks, but you add your Strength modifier (or Dexterity for finesse weapons if you choose) to the damage as usual. You can apply blast effects to it by expending AET as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your \textit{eldritch blast} damage instead of the normal weapon damage if this would be greater.
 
 Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
 
@@ -118,7 +118,7 @@ You can transform one magic weapon into your pact weapon by performing a special
 
 \subsection{Pact of the Tome}
 
-Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you.
+Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one spell from any list that costs less than 3 AET. While the book is on your person, you can cast those cantrips at will and cast the spell by expending AET. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that costs less than your AET limit.
 
 If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.
 
@@ -130,195 +130,229 @@ When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can 
 
 When you reach 5th level, you learn to modify the shape of your \textit{eldritch blast} in various ways. You learn one Blast Shape (detailed below) and can apply it by spending the indicated amount of AET. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the \nameref{tbl:warlock} table. Whenever you learn a new blast effect, you can choose one of the blast shapes you know and replace it with another blast shapes you could learn at that level.
 
-Starting at level 9, you can learn Greater Blast Shapes, and no longer have to spend AET to use regular blast shapes. 
+Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 (to a minimum of 0). Expending AET on Blast Shapes increases the effective cost of the eldritch blast for the purpose of overcoming resistances, immunities, and other effects that care about the aether cost of a spell.
 
 \subsection{Mystic Arcanum}
 
-At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th- level spell from the warlock spell list as this arcanum.
+At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one legendary effect from the legendary list as this arcanum.
 
-You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.
+You can cast your arcanum spell once without expending aether. You must finish a long rest before you can do so again.
 
-At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th- level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest.
+At higher levels, you gain more warlock spells of your choice that can be cast in this way: one at 13th level, one at 15th level, and one at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest.
 
 \subsection{Eldritch Master}
 
-At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.
+At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended aether. You can spend 1 minute entreating your patron for aid to regain all your expended aether. Once you use this feature, you must complete a long rest before using it again.
 
 \subsection{Eldritch Invocations}
 
 If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
 
-\subsection{Agonizing Blast}
+\subsubsection{Armor of Shadows}
 
-\textit{Prerequisite: eldritch blast cantrip}
+You can cast \textit{mage armor} on yourself at will, without expending aether or material components.
 
-When you cast \textit{eldritch }last*, add your Charisma modifier to the damage it deals on a hit.
-
-\subsection{Armor of Shadows}
-
-You can cast \textit{mage armor} on yourself at will, without expending a spell slot or material components.
-
-\subsection{Ascendant Step}
+\subsubsection{Ascendant Step}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{levitate} on yourself at will, without expending a spell slot or material components.
+You can cast \textit{levitate} on yourself at will, without expending aether or material components or requiring concentration.
 
-\subsection{Beast Speech}
+\subsubsection{Beast Speech}
 
-You can cast \textit{speak with animals} at will, without expending a spell slot.
+You can cast speak with beasts at will, as if you were under the effects of the Voice the Voiceless (beast) incantation.
 
-\subsection{Beguiling Influence}
+\subsubsection{Beguiling Influence}
 
-You gain proficiency in the Deception and Persuasion skills.
+You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills.
 
-\subsection{Bewitching Whispers}
+\subsubsection{Bewitching Whispers}
 
 \textit{Prerequisite: 7th level}
 
-You can cast \textit{compulsion} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{compulsion} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Book of Ancient Secrets}
+\subsubsection{Book of Ancient Secrets}
 
 \textit{Prerequisite: Pact of the Tome feature}
 
-You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.
+You learn two common incantations (see \nameref{ch:incantations} for details) of your choice and can perform them without needing a Ritual Scroll in hand.
 
-On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.
+Special: you can take this invocation more than once, learning a new incantation each time. If you take it when you are 5th level or above, you can learn an uncommon incantation instead. At 9th level or above you can learn a rare incantation.
 
-\subsection{Chains of Carceri}
+\subsubsection{Chains of Carceri}
 
 \textit{Prerequisite: 15th level, Pact of the Chain feature}
 
-You can cast \textit{hold monster} at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again.
+You can cast \textit{hold monster} at will—targeting a celestial, fiend, or elemental—without expending aether or material components. You must finish a long rest before you can use this invocation on the same creature again.
 
-\subsection{Devil's Sight}
+\subsubsection{Devil's Sight}
 
 You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
 
-\subsection{Dreadful Word}
+\subsubsection{Dreadful Word}
 
 \textit{Prerequisite: 7th level}
 
-You can cast \textit{confusion} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{confusion} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Eldritch Sight}
+\subsubsection{Eldritch Sight}
 
-You can cast \textit{detect magic} at will, without expending a spell slot.
+You can cast \textit{detect magic} at will, without expending aether.
 
-\subsection{Eldritch Spear}
-
-\textit{Prerequisite: eldritch blast cantrip}
-
-When you cast \textit{eldritch blast}, its range is 300 feet.
-
-\subsection{Eyes of the Rune Keeper}
+\subsubsection{Eyes of the Rune Keeper}
 
 You can read all writing.
 
-\subsection{Fiendish Vigor}
+\subsubsection{Fiendish Vigor}
 
-You can cast \textit{false life} on yourself at will as a 1st-level spell, without expending a spell slot or material components.
+You can cast \textit{false life} on yourself at will, without expending aether or material components. When you reach 5th level, it acts as if you spent 3 AET on it. At 9th level, you get the benefit of casting it with 5 AET.
 
-\subsection{Gaze of Two Minds}
+\subsubsection{Gaze of Two Minds}
 
 You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
 
-\subsection{Lifedrinker}
+\subsubsection{Lifedrinker}
 
 \textit{Prerequisite: 12th level, Pact of the Blade feature}
 
 When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).
 
-\subsection{Mask of Many Faces}
+\subsubsection{Mask of Many Faces}
 
-You can cast \textit{disguise self} at will, without expending a spell slot.
+You can cast \textit{disguise self} at will, without expending aether.
 
-\subsection{Master of Myriad Forms}
-
-\textit{Prerequisite: 15th level}
-
-You can cast \textit{alter self} at will, without expending a spell slot.
-
-\subsection{Minions of Chaos}
+\subsubsection{Master of Myriad Forms}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{conjure elemental} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{alter self} at will, without expending aether.
 
-\subsection{Mire the Mind}
+\subsubsection{Minions of Chaos}
+
+\textit{Prerequisite: 9th level}
+
+You can cast \textit{conjure elemental} once without using aether. You can't do so again until you finish a long rest.
+
+\subsubsection{Mire the Mind}
 
 \textit{Prerequisite: 5th level}
 
-You can cast \textit{slow} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{slow} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Misty Visions}
+\subsubsection{Misty Visions}
 
-You can cast \textit{silent image} at will, without expending a spell slot or material components.
+You can cast \textit{silent image} at will, without expending aether or material components.
 
-\subsection{One with Shadows}
+\subsubsection{One with Shadows}
 
 \textit{Prerequisite: 5th level}
 
 When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.
 
-\subsection{Otherworldly Leap}
+\subsubsection{Otherworldly Leap}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{jump} on yourself at will, without expending a spell slot or material components.
+You can cast \textit{jump} on yourself at will, without expending aether or material components.
 
-\subsection{Repelling Blast}
+\subsubsection{Stolen Knowledge}
 
-\textit{Prerequisite:} eldritch blast cantrip
+You learn one spell from the shaman, priest, or arcanist spell list. You must be able to cast it without breaking your aether limit. You can cast any spells you know this way using aether as normal; your casting ability is Charisma.
 
-When you hit a creature with \textit{eldritch blast}, you can push the creature up to 10 feet away from you in a straight line.
+Special: you can select this invocation more than once. Each time, pick a different spell. Each time you gain an invocation choice, you can also switch one spell you know via this invocation.
 
-\subsection{Sculptor of Flesh}
+\subsubsection{Sculptor of Flesh}
 
 \textit{Prerequisite: 7th level}
 
-You can cast \textit{polymorph} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{polymorph} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Sign of Ill Omen}
+\subsubsection{Sign of Ill Omen}
 
 \textit{Prerequisite: 5th level}
 
-You can cast \textit{bestow curse} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{bestow curse} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Thief of Five Fates}
+\subsubsection{Thief of Five Fates}
 
-You can cast \textit{bane} once using a warlock spell slot. You can't do so again until you finish a long rest.
+You can cast \textit{bane} once without using aether. You can't do so again until you finish a long rest.
 
-\subsection{Thirsting Blade}
+\subsubsection{Thirsting Blade}
 
 \textit{Prerequisite: 5th level, Pact of the Blade feature}
 
 You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.
 
-\subsection{Visions of Distant Realms}
+\subsubsection{Visions of Distant Realms}
 
 \textit{Prerequisite: 15th level}
 
-You can cast \textit{arcane eye} at will, without expending a spell slot.
+You can cast \textit{arcane eye} at will, without expending aether.
 
-\subsection{Voice of the Chain Master}
+\subsubsection{Voice of the Chain Master}
 
 \textit{Prerequisite: Pact of the Chain feature}
 
 You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.
 
-\subsection{Whispers of the Grave}
+\subsubsection{Whispers of the Grave}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{speak with dead} at will, without expending a spell slot.
+You can cast \textit{speak with dead} at will, without expending aether.
 
-\subsection{Witch Sight}
+\subsubsection{Witch Sight}
 
 \textit{Prerequisite: 15th level}
 
-You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.
+You can see the true form of any shapechanger or creature concealed by illusion or shape-changing magic while the creature is within 30 feet of you and within line of sight.
+
+\subsection{Blast Effects}
+
+Each blast effect has a cost listed after the name. Applying that blast effect requires expending the listed aether cost. If the cost is listed with a + sign, you can expend additional aether (up to your limit) to increase the effect.
+
+\subsubsection{Beckoning Blast: 1+ AET}
+Targets hit by your \textit{eldritch blast} are pulled 5 feet toward you for every aether spent. If they are more than two sizes larger than you are, they can makea Strength saving throw to halve the distance they are moved.
+
+\subsubsection{Blinding Blast: 3 AET}
+Targets hit by your \textit{eldritch blast} must make a Constitution saving throw or be blinded until the end of your next turn.
+
+\subsubsection{Draining Blast: 5 AET, greater}
+Targets hit by your \textit{eldritch blast} take additional necrotic damage equal to your Charisma bonus and you regain hit points equal to the necrotic damage dealt.
+
+\subsubsection{Elemental Blast: 1 AET}
+When you finish a long or short rest, choose one damage type from the following list: acid, cold, fire, lightning. When you use your eldritch blast, you can choose to deal the chosen damage type instead of bludgeoning. 
+
+\subsubsection{Frightening Blast: 3 AET}
+Targets hit by your \textit{eldritch blast} must make a Wisdom saving throw. On a failed save, they are frightened of you until the end of your next turn.
+
+\subsubsection{Hellfire Blast: 5 AET, greater}
+Targets hit by your \textit{eldritch blast} take additional fire damage equal to your Charisma bonus and the same amount again at the start of their next turn. This damage pierces resistance and immunity to fire damage.
+
+\subsubsection{Repelling Blast: 1+ AET}
+Targets hit by your \textit{eldritch blast} are pushed 5 feet away from you for every aether spent. If they are more than two sizes larger than you are, they can makea Strength saving throw to halve the distance they are moved.
+
+\subsection{Blast Shapes}
+Blast shapes alter the form of the \textit{eldritch blast} and may alter it from a spell attack to a saving throw.
+
+\subsubsection{Eldritch Arc: 3 AET}
+When you use your \textit{eldritch blast}, you can instead choose to make it take the shape of a circular arc with a 10 ft radius centered on you. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
+
+\subsubsection{Eldritch Cone: 4 AET, greater}
+When you use your \textit{eldritch blast}, you can instead choose to make it take the shape of a 30 ft cone. All creatures in the area must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
+
+\subsubsection{Eldritch Spear: 1 AET}
+The range of your \textit{eldritch blast} doubles.
+
+\subsubsection{Eldritch Sphere: 6 AET, greater}
+When you use your \textit{eldritch blast}, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within the spells' normal range. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
+
+\subsubsection{Eldritch Claws: 1 AET}
+Make an unarmed attack using Charisma as your weapon attack modifier. On a hit, apply your \textit{eldritch blast} damage. This counts as slashing damage from a magical weapon.
+
+\subsubsection{Split Bolts: 2 AET}
+When you use your \textit{eldritch blast}, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d8 damage of the appropriate attacks. The additional damage from your Charisma modifier only applies to one of them. Blast effects that add additional damage only affect a single target; non-damaging blast effects affect all targets hit.
 
 \subsection{Otherworldly Patrons}
 
@@ -326,11 +360,12 @@ The beings that serve as patrons for warlocks are mighty inhabitants of other pl
 
 Some patrons collect warlocks, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one warlock. Warlocks who serve the same patron might view each other as allies, siblings, or rivals.
 
-\subsection{The Fiend}
+%TODO: rewrite
+\subsubsection{The Fiend}
 
 You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.
 
-\subsection{Expanded Spell List}
+\subsubsection{Expanded Spell List}
 
 The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.
 

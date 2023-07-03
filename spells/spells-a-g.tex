@@ -119,7 +119,7 @@ Make a check with the hand's Strength contested by the Strength (Athletics) chec
 
 Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.
 
-\subparagraph*{Overcast} When you cast this spell using more than 4 AET, you can target one additional creature for every 2 extra AET you spend above the base cost.
+\subparagraph*{Overcast} When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.
 
 \label{spell:banishment}
 \DndSpellHeader{Banishment}
@@ -180,7 +180,7 @@ You touch a creature, and that creature must succeed on a Wisdom saving throw or
 
 A \textit{remove curse} spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
 
-\subparagraph*{Overcast} If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. If you use 20 AET the spell lasts until it is dispelled. Using 12 or more AET grants a duration that doesn't require concentration.
+\subparagraph*{Overcast} If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. Using 12 or more AET grants a duration that doesn't require concentration.
 
 \label{spell:black-tentacles}
 \DndSpellHeader{Black Tentacles}
@@ -325,11 +325,9 @@ You attempt to charm a humanoid you can see within range. It must make a Wisdom 
 {V, S, M (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing)}
 {Concentration, up to 10 minutes}
 
-You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.
+You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration. A creature that can see the sensor (such as a creature benefiting from \textit{see invisibility} or who has truesight) sees a luminous, intangible orb about the size of your fist. The sensor has an AC of 10 and is destroyed by any damage taken.
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
-
-A creature that can see the sensor (such as a creature benefiting from \textit{see invisibility} or who has truesight) sees a luminous, intangible orb about the size of your fist. The sensor has an AC of 10 and is destroyed by any damage taken.
 
 \label{spell:cloudkill}
 \DndSpellHeader{Cloudkill}
@@ -355,11 +353,9 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
 {V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)}
 {1 round}
 
-A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see).
+A dazzling array of flashing, colored light springs from your hand. All creatures that can see you in a 15' cone must make a Wisdom saving throw. On a failed save, they are blinded until the end of your next turn. 
 
-Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.
-
-\subparagraph*{Overcast} When you cast this spell using more than 2 AET, roll an additional 1d10 for every additional AET spent.
+\subparagraph*{Overcast} When you cast this spell using more than 2 AET, the duration increases by one round for every 2 additional AET spent.
 
 \label{spell:command}
 \DndSpellHeader{Command}
@@ -447,7 +443,7 @@ The GM has the creatures' statistics.
 \subparagraph*{Overcast} When you cast this spell using more than 5 AET, you can choose higher CR monsters:
 \begin{itemize}
 \item 8 AET spent: 1 giant scorpion or killer whale or 2 of the CR 2 options.
-\item 12 AET spent: 1 elephant or 2 of the CR 3 options.
+\item 11 AET spent: 1 elephant or 2 of the CR 3 options.
 \end{itemize}
 
 \label{spell:conjure-elemental}
@@ -609,7 +605,7 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 {V, M (bat fur and a drop of pitch or piece of coal)}
 {Concentration, up to 10 minutes}
 
-Magical, opaque darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
+Opaque magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
 
 If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
@@ -697,9 +693,9 @@ You make yourself—including your clothing, armor, weapons, and other belonging
 
 The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 
-To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.
+To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC. Creatures that physically interact with the disguise in a way that would reveal its falsity as part of a different action can immediate make the check without spending another action.
 
-\label{spell:dispell-evil-or-good}
+\label{spell:dispel-evil-or-good}
 \DndSpellHeader{Dispel Evil or Good}
 {12 AET}
 {1 action}
@@ -715,15 +711,15 @@ You can end the spell early by using either of the following special functions.
 
 \subparagraph*{Dismissal} As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
 
-\label{spell:dispel-magic}
-\DndSpellHeader{Dispel Magic}
+\label{spell:unbind-spell}
+\DndSpellHeader{Unbind Spell}
 {5 AET}
 {1 action}
 {120 feet}
 {V, S}
 {Instantaneous}
 
-Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.
+Choose one creature, object, or magical effect within range. Any spell costing 5 AET or lower on the target ends. For each spell higher cost on the target, make an ability check using your spellcasting ability. The DC equals 10 + half the spell's aether cost. On a successful check, the spell ends.
 
 \subparagraph*{Overcast} When you cast this spell using more than 5 AET, you gain +1 on the check for every 3 additional AET spent.
 
@@ -753,25 +749,9 @@ You can use your action to take total and precise control of the target. Until t
 
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 
-\subparagraph*{Overcast} When you cast this spell and spend at least 12 AET, the duration is concentration, up to 10 minutes. When you use at least 15 AET, the duration is concentration, up to 1 hour. When you use at least 18 AET, the duration is concentration, up to 8 hours.
+\subparagraph*{Overcast} When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.
 
-\label{spell:dominate-person}
-\DndSpellHeader{Dominate Person}
-{12 AET}
-{1 action}
-{60 feet}
-{V, S}
-{Concentration, up to 1 minute}
 
-You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
-
-While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.
-
-You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.
-
-Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
-
-\subparagraph*{Overcast} When you cast this spell using at least 15 AET, the duration is concentration, up to 10 minutes. When you use 18 AET, the duration is concentration, up to 1 hour. If you use 22 AET, the duration is concentration, up to 8 hours.
 
 \subsection{Spells (E)}
 
@@ -925,7 +905,7 @@ A bright streak flashes from your pointing finger to a point you choose within r
 
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.
 
-\subparagraph*{Overcast} When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
+\subparagraph*{Overcast} When you cast this spell using more than 5 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
 \label{spell:fire-shield}
 \DndSpellHeader{Fire Shield}
@@ -979,7 +959,7 @@ A vertical column of divine fire roars down from the heavens in a location you s
 {V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)}
 {Concentration, up to 1 minute}
 
-A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
+A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. The sphere is a solid object that occupies its space. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
 
 As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
 

@@ -1241,3 +1241,29 @@ A \textit{remove curse} spell or \textit{greater restoration} incantation cast o
 You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.
 
 You can use this transportation ability once per round for the duration. You must end each turn outside a tree.
+
+\label{spell:arcane-hand}
+\DndSpellHeader{Arcane Hand}
+{13 AET, damage + forced movement + movement restraint}
+{1 action}
+{120 feet}
+{V, S, M (an eggshell and a snakeskin glove)}
+{Concentration, up to 1 minute}
+
+You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.
+
+The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn't fill its space.
+
+When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.
+
+\subparagraph*{Clenched Fist} The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d8 force damage.
+
+\subparagraph*{Forceful Hand} The hand attempts to push a creature within 5 feet of it in a direction you choose.
+
+Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.
+
+\subparagraph*{Grasping Hand} The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier.
+
+\subparagraph*{Interposing Hand} The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.
+
+\subparagraph*{Overcast} When you cast this spell using at least 15 AET, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for every 3 extra AET you spend.

@@ -71,12 +71,12 @@ When a spellcaster casts a spell using more aether than the base costs, the spel
 Some spells, such as \textit{magic missile} and \textit{cure wounds}, have more powerful effects when overcast, as detailed in a spell's description.
 
 \begin{DndSidebar}{Casting in Armor}
-    Because of the mental focus and precise gestures required for spellcasting, armor inhibits spellcasting. Unless you gained proficiency from the class whose spells you are casting, you are too distracted and physically hampered by your armor for spellcasting.
+    Because of the mental focus and precise gestures required for spellcasting, armor inhibits spellcasting. Unless you gained proficiency from the class whose spells you are casting, you are too distracted and physically hampered by your armor for spellcasting. Features that alter this constraint will say so explicitly.
 \end{DndSidebar}
 
 \subsection{Cantrips}
 
-A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether.
+A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether and cannot be overcast. Some cantrips gain more power as the caster becomes stronger; this is detailed in the entry itself.
 
 \subsection{Incantations}
 See \nameref{ch:incantations}.
@@ -85,7 +85,7 @@ See \nameref{ch:incantations}.
 
 When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.
 
-Each spell description begins with a block of information, including the spell's name, aether cost, school of magic, casting time, range, components, and duration. The rest of a spell entry describes the spell's effect.
+Each spell description begins with a block of information, including the spell's name, aether cost, casting time, range, components, and duration. The rest of a spell entry describes the spell's effect.
 
 \subsection{Casting Time}
 
@@ -93,7 +93,7 @@ Most spells require a single action to cast, but some spells require a bonus act
 
 \subsubsection{Bonus Action}
 
-A spell cast with a bonus action is especially swift. Note that spending aether to cast a spell as a bonus action precludes casting any other aether-using spell that turn. You can still cast cantrips, however.
+A spell cast with a bonus action is especially swift. Note that spending aether to cast a spell as a bonus action precludes using any other aether-using ability that turn. You can still cast cantrips, however.
 
 \subsubsection{Reactions}
 
@@ -121,9 +121,13 @@ A spell's components are the physical requirements you must meet in order to cas
 
 Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the \textit{silence} spell, can't cast a spell with a verbal component.
 
+These mystic words are not in a recognizable language and can be immediately recognized as spellcasting by anyone who can hear the chanting (unless they are unintelligent or particularly ignorant). They cannot be hidden except by large amounts of ambient noise or intervening solid objects.
+
 \subsubsection{Somatic (S)}
 
 Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.
+
+These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
 
 \subsubsection{Material (M)}
 
@@ -145,7 +149,7 @@ Many spells are instantaneous. The spell harms, heals, creates, or alters a crea
 
 Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends.
 
-If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required).
+If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration on your turn (no action required).
 
 Normal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:
 
@@ -155,7 +159,7 @@ Normal activity, such as moving and attacking, doesn't interfere with concentrat
     \item \textbf{Being incapacitated or killed.} You lose concentration on a spell if you are incapacitated or if you die.
 \end{itemize}
 
-The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain concentration on a spell.
+The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a Constitution saving throw (against a DC they select) to maintain concentration on a spell.
 
 \subsection{Targets}
 
@@ -196,6 +200,8 @@ A cone's point of origin is not included in the cone's area of effect, unless yo
 You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side.
 
 A cube's point of origin is not included in the cube's area of effect, unless you decide otherwise.
+
+A 5' cube can affect four Medium or Small creatures as long as they are adjacent to each other in a square.
 
 \subsubsection{Cylinder}
 

@@ -23,7 +23,7 @@ As a priest, you gain the following class features.
 
 \subsection{Proficiencies}
 
-\textbf{Armor:} Light armor, medium armor, shields
+\textbf{Armor:} Light armor, shields
 
 \textbf{Weapons:} Simple weapons
 
@@ -38,7 +38,7 @@ As a priest, you gain the following class features.
 You start with the following equipment, in addition to the equipment granted by your background:
 \begin{itemize}
 \item (\textit{a}) a mace or (\textit{b}) a warhammer (if proficient)
-\item (\textit{a}) scale mail, (\textit{b}) leather armor, or (\textit{c}) chain mail (if proficient)
+\item (\textit{a}) leather armor, or (\textit{b}) a chain shirt (if proficient)
 \item (\textit{a}) a light crossbow and 20 bolts or (\textit{b}) any simple weapon
 \item (\textit{a}) a priest's pack or (\textit{b}) an explorer's pack
 \item A shield and a holy symbol
@@ -54,7 +54,7 @@ You start with the following equipment, in addition to the equipment granted by 
  5th   & +3                & Divine Overflow                                 	 & 4   & 6   & 1   & 3 & 20 & 6 \\
  6th   & +3                & Divine Domain Feature  													 & 4   & 7   & 2   & 3 & 24 & 7 \\
  7th   & +3                & Improved Channel, Improved Miracles							 & 4   & 8   & 2   & 4 & 28 & 8 \\
- 8th   & +3                & Ability Score Improvement,    										 & 4   & 9   & 2   & 4 & 32 & 9 \\
+ 8th   & +3                & Ability Score Improvement, Divine Strike    										 & 4   & 9   & 2   & 4 & 32 & 9 \\
  9th   & +4                & Divine Domain Feature                             & 4   & 10   & 2  & 5 & 36 & 10 \\
  10th  & +4                & Improved Divine Overflow                          & 5   & 10   & 2  & 5 & 40 & 11 \\
  11th  & +4                & Lesser Legendary Effect                           & 5   & 11   & 2  & 6 & 44 & 12 \\
@@ -103,12 +103,6 @@ You can use a holy symbol (see \nameref{ch:equipment}) as a spellcasting focus f
 \subsection{Divine Domain}
 
 Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
-
-\subsection{Domain Spells}
-
-Each domain has a list of spells—its domain spells— that you gain at the priest levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.
-
-If you have a domain spell that doesn't appear on the priest spell list, the spell is nonetheless a priest spell for you.
 
 \subsection{Miracles}
 
@@ -160,6 +154,10 @@ Starting at 7th level, the outcomes of your miracle uses have improved. Use the 
 	20+ & Any spell with cost less than 8 AET, chosen by you, takes effect \\
 \end{DndTable}
 
+\subsection{Divine Strike}
+
+At 8th level, you gain the ability to infuse your damaging strikes and spells with divine energy. Once on each of your turns when you hit a creature with an attack or spell that deals damage, you can cause the attack or spell to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
+
 \subsection{Radiating Overflow}
 Starting at 10th level, when you use your Divine Overflow ability, you can affect a number of creatures equal to half the ather expended instead of one. All creatures must be within 60 feet of you.
 
@@ -187,39 +185,47 @@ At level 20, you can perform greater miracles. Use the table below to determine 
 
 \subsection{Life Domain}
 
-The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods , gods of healing or endurance, and gods of home and community.
+The Life Domain focuses on bringing health and purity to those around them. Welcomed in all civilized areas, priests of the Life Domain are the core of most religions.
 
-\begin{DndTable}[header=Life Domain Spells]{XX}
- Priest Level & Spells                              \\ 
- 1st          & bless, cure wounds                   \\
- 3rd          & lesser restoration, spiritual weapon \\
- 5th          & beacon of hope, revivify             \\
- 7th          & death ward, guardian of faith        \\
- 9th          & mass cure wounds, raise dead         \\
-\end{DndTable}
+\subsubsection{Medic}
+At 1st level you learn the Medic skill trick even though you do not meet the requirements.
 
-\subsection{Bonus Proficiency}
+\subsubsection{Disciple of Life}
 
-When you choose this domain at 1st level, you gain proficiency with heavy armor.
+Starting at 1st level, your healing abilities are more effective. Whenever you use a spell or Channel Healing Power and expend 1 or more AET to restore hit points to a creature, the creature regains additional hit points equal to 2 + 1/2 the aether expended (rounded up).
 
-\subsection{Disciple of Life}
+\subsection{Miracle: Preserve Life}
 
-Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.
+Starting at 2nd level, when you use your Miracles ability to plead for healing for a creature who is below half health, the result on the miracle check is increased by one step.
 
-\subsection{Channel Divinity: Preserve Life}
+\subsection{Divine Overflow: Shielding Spell}
 
-Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.
+Beginning at 6th level, you can use your Divine Overflow ability to create a shield around allies. Whenever you cast a spell with total cost of 1 or more AET that targets an ally but does not restore hit points, you can grant the creature temporary hit points equal to 2 + the total aether cost of the spell. These temporary hit points last for one minute.
 
-As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your priest level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct.
+\subsubsection{Divine Channel: Panacea}
+At 9th level, you can use your Channel Divine Power ability to remove conditions affecting your allies as an action by expending 5 AET. When you do so, a number of creatures up to your proficiency bonus within 30 feet of you are cured of all poisons and if they are under any of the charmed, frightened, stunned, blinded, or deafened conditions, that condition ends for the creature.
 
-\subsection{Blessed Healer}
-
-Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level.
-
-\subsection{Divine Strike}
-
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
-
-\subsection{Supreme Healing}
+\subsubsection{Supreme Healing}
 
 Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
+
+\subsection{Battle Domain}
+Priests who focus on the domain of Battle are the militants of the religious world. They are most associated with Tor Elan and the Red Knight, but many gods and ascendants have militant orders. Unlike an Oathbound, battle priests are supporting players rather than front-line warriors.
+
+\subsubsection{Extra Proficiencies}
+When you choose this domain at level 1, you gain proficiency with medium armor and shields and can cast cleric spells while wearing medium armor and wielding a shield.
+
+\subsubsection{Miracle: Punish Heretics}
+Starting at 2nd level, when you use your Miracles feature to plead for an effect that deals damage or imposes a condition on an enemy, the result of the Miracle check is increased by one step.
+
+\subsubsection{Divine Overflow: Bolster Ally}
+Starting at 6th level, you can use your Divine Overflow ability to enhance the attacks of others. When you expend 1 or more aether to cast a spell that targets an enemy, you allow an ally you can see to use their reaction and expend 1 STA to make a weapon attack. If the weapon attack targets the same creature as the spell, the attack is made at advantage.
+
+\subsubsection{Divine Channel: Expose Weakness}
+Starting at 9th level, you can use your Channel Divine Power ability to target one or more creatures you can see within 30 feet. Spend 2+ AET and target one creature per 2 expended AET. Targets must make a Wisdom saving throw against your spell save DC. On a failed save, a target gains vulnerability to all damage until the beginning of your next turn.
+
+\subsubsection{Warleader}
+Starting at 17th level, when an ally within 60 feet rolls a damage roll, you can use your reaction to allow them to reroll the damage and take whichever result they choose.
+
+\subsubsection{Ascendant Wrath}
+You learn the greater Legendary Effect Holy Aura. If you already know this legendary effect, choose another legendary effect with the tags Divine and Greater.

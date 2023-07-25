@@ -66,22 +66,15 @@ For every ability check, the GM decides which of the six abilities is relevant t
 
 The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency).
 
-\textbf{Typical Difficulty Classes (table)}
-\begin{table}
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        Task Difficulty & DC  \\\hline
-        Very easy & 5 \\\hline
-        Easy & 10 \\\hline
-        Medium & 15 \\\hline
-        Hard & 20 \\\hline
-        Very hard & 25 \\\hline
-        Nearly impossible & 30 \\\hline
-    \end{tabular}
-    \caption[DCs]{Typical Difficulty Classes}
-    \label{tbl:dcs}
-\end{table}
+\begin{DndTable}[header=Typical Difficulty Classes\label{tbl:dcs}]{XX}
+	\textbf{Task Difficulty} & \textbf{DC} \\
+	Very easy & 5 \\
+	Easy & 10 \\
+	Medium & 15 \\
+	Hard & 20 \\
+	Very hard & 25 \\
+	Nearly impossible & 30 \\
+\end{DndTable}
 
 To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
 
@@ -395,7 +388,8 @@ A Charisma check might arise when you try to influence or entertain others, when
 \subsubsection{Spellcasting Ability}
 
 Bards, paladins, sorcerers, and warlocks use Charisma as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.
-Saving Throws
+
+\section{Saving Throws}
 A saving throw—also called a save—represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat. You don't normally decide to make a saving throw; you are forced to make one because your character or monster is at risk of harm.
 
 To make a saving throw, roll a d20 and add the appropriate ability modifier. For example, you use your Dexterity modifier for a Dexterity saving throw.
@@ -507,23 +501,43 @@ The most fundamental tasks of adventuring— noticing danger, finding hidden obj
 
 A given area might be lightly or heavily obscured. In a \textbf{lightly obscured} area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
 
-A \textbf{heavily obscured} area—such as darkness, opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
+A \textbf{heavily obscured} area—such as opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
 
-The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.
+The presence or absence of light in an environment creates three categories of illumination: bright, dim, and darkness.
 
-\textbf{Bright light} lets most creatures see normally.
+\textbf{Bright illumination} lets most creatures see normally.
 
 Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.
 
-\textbf{Dim light}, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
+\textbf{Dim illumination}, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
 
-\textbf{Darkness} creates a heavily obscured area.
+\textbf{Darkness} creates an area where normal vision is impossible. It is as if it is heavily obscured, but one can see an illuminated object across any reasonable distance of darkness (whereas heavy obscuration blocks vision through the affected area).
 
 Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.
 
+\begin{DndComment}{Visibility Ranges}
+Generally, creatures with human-like vision can see brightly-illuminated creatures and objects from a substantial distance (assuming nothing blocks their sight). A rule of thumb is that creatures and objects are visible and recognizable at the following distances based on their size, assuming normal contrast with the background (ie not camouflaged):
+\begin{DndTable}[header=Common visibility ranges]{XXX}
+	\textbf{Size} & \textbf{Visible at...} \\
+	Objects smaller than 6 in x 6 in & 25 ft  \\
+	Objects smaller than 1 ft x 1 ft & 50 ft \\
+	Tiny creatures & 100 ft \\
+	Small creatures or objects & 400 ft \\
+	Medium creatures or objects & 1/3 mile \\
+	Large creatures or objects & 1 mile \\
+	Huge+ creatures or objects & 2 miles  \\
+	Mountains, the sun, etc & any (horizon limited) \\
+\end{DndTable}
+
+Dim illumination or low-contrast backgrounds reduce the distance by at least half, stacking. So a small creature, dimly illuminated and against a low-contrast background or camouflaged, might only be visible out to 100 ft.
+
+As a rule of thumb, a candle flame in the darkness can be seen (obstructions allowing) for at least 1.5 miles. Larger fires can be seen from further away, limited mostly by the horizon (about 4 miles if standing at ground level).
+
+Adventurers can see the significant terrain features of the land about 2 miles from where they are, more if they high up (as much as 10 miles) or less if the area is heavily forested (as little as a few dozen feet).
+
 \subsubsection{Blindsight}
 
-A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.
+A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense. This counts as being able to "see" the target for spells and other abilities.
 
 \subsubsection{Darkvision}
 
@@ -532,6 +546,38 @@ Many creatures in fantasy gaming worlds, especially those that dwell underground
 \subsubsection{Truesight}
 
 A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
+
+\subsection{Other Senses}
+Most creatures rely primarily on sight, but are still capable of hearing and smelling other creatures, as well as perceiving them by touch. Some fantastic creatures have additional forms of perception, such as the ability to detect magic. The ranges at which this is possible are much more sharply limited than those of sight, but also vary wildly.
+
+\subsubsection{Hearing}
+For most humanoid (and similar) creatures, hearing is best at detecting \textit{presence and direction}, but not \textit{location} of creatures, and gives very little information about what they are doing. Background noise also plays a significant role in preventing hearing. As a rule of thumb, a Tiny or larger creature's movement produces enough noise to be audible out to at least 30 feet under normal conditions. If you cannot see the creature but can hear it, interactions that require pinpointing them are at disadvantage. If you can neither see nor hear the creature, they are hidden and you must guess their location (automatically failing any attempt to interact if you guess wrong). To prevent being heard within the normal hearing range, you need to have succeeded at a Hide attempt. 
+
+\begin{DndTable}[header=Normal Hearing Range]{XXX}
+	\textbf{Noise} & \textbf{Audible Distance (ft)} \\
+	Whispering or slow movement & 30 \\
+	Conversation or normal movement & 60 \\
+	Combat & 100 \\
+	Shouting, unamplified concerts, loud spells & 300 \\
+	Amplified concerts, explosions, thunder & 1 mile \\
+\end{DndTable}
+
+Substantial background noise (noise at least two steps higher) generally moves the distance down one step. So fighting during a rock concert would be audible out to 60 ft (instead of 100 ft). If this would reduce the audible distance below 30 ft, cut the distance in half instead. Creatures with advanced hearing such as dogs, cats, bats, etc. can generally hear and locate sounds at double the distance or more.
+
+\begin{DndComment}{Commentary}
+	This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity(Stealth) check instead.
+
+	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area, decrease them by a step.
+\end{DndComment}
+
+\subsubsection{Smell}
+
+For humanoid creatures, smell is even worse than hearing. You can detect, but not localize, exceptionally stinky creatures from a large distance as long as you're downwind. If you're upwind, you cannot detect anything. Smell is generally most useful for tracking creatures or detecting the presence of creatures (after which you use other senses).
+
+Some creatures with exceptional olifactory capabilities (like bloodhounds) are capable of tracking even low-scent targets a very long distance.
+
+\subsubsection{Magical Senses}
+In a fantasy world, most creatures are at least somewhat sensitive to the manipulation of aether, especially in the form of spells. As a general rule, all creatures can recognize spellcasting occurring within 60 feet of them as long as it has one or more components. Hiding spellcasting is generally not possible unless you can remove all components.
 
 \subsection{Food and Water}
 

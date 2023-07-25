@@ -1,6 +1,6 @@
 \section{Ranger}
 
-Design Discussion: Half-caster primalist. Less support, more damage than a shaman. SDCT 4/7/4/5.
+Design Discussion: Half-caster primalist. Less support, more damage than a shaman. SDCT 4/7/4/5. UCT: Enhance Armaments. Bind spirits into weapons and armor
 
 \subsection{Class Features}
 
@@ -39,16 +39,16 @@ You start with the following equipment, in addition to the equipment granted by 
 
 \begin{DndTable}[header=The Ranger\label{tbl:ranger}]{XXXXXXXXX}
  Level & Proficiency Bonus & Features                                          & Spells Known & Focused Foe Bonus & Stamina & Aether & Aether Limit \\
- 1st   & +2                & Focused Foe, Natural Explorer                   & -            & 1d4   & 1   & 2   & 1      \\
- 2nd   & +2                & Fighting Style, Spellcasting                      & 2            & 1d4   & 2   & 4   & 2      \\
+ 1st   & +2                & Focused Foe, Natural Explorer                     & -            & 1d4   & 1   & 2   & 1      \\
+ 2nd   & +2                & Weapon Specialization, Spellcasting               & 2            & 1d4   & 2   & 4   & 2      \\
  3rd   & +2                & Ranger Archetype, Primeval Awareness              & 3            & 1d4   & 3   & 6   & 3      \\
  4th   & +2                & Ability Score Improvement                         & 3            & 1d4   & 4   & 8   & 3      \\
  5th   & +3                & Extra Attack                                      & 4            & 1d6   & 5   & 10   & 4      \\
  6th   & +3                & Favored Enemy and Natural Explorer improvements   & 4            & 1d6   & 6   & 12   & 5      \\
  7th   & +3                & Ranger Archetype feature                          & 5            & 1d6   & 7   & 14   & 5      \\
  8th   & +3                & Ability Score Improvement, Land's Stride          & 5            & 1d6   & 8   & 16   & 6      \\
- 9th   & +4                & -                                                 & 6            & 1d6   & 9   & 18   & 7      \\
- 10th  & +4                & Natural Explorer improvement, Hide in Plain Sight & 6            & 1d6   & 10   & 20   & 7      \\
+ 9th   & +4                & Aether Strike                                     & 6            & 1d6   & 9   & 18   & 7      \\
+ 10th  & +4                & Natural Explorer Improvement                      & 6            & 1d6   & 10   & 20   & 7      \\
  11th  & +4                & Ranger Archetype feature                          & 7            & 1d8   & 11   & 22   & 8      \\
  12th  & +4                & Ability Score Improvement                         & 7            & 1d8   & 11   & 24   & 9      \\
  13th  & +5                & -                                                 & 8            & 1d8   & 12   & 26   & 9      \\
@@ -60,57 +60,57 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6                & Ability Score Improvement                         & 11           & 1d8   & 15   & 38   & 13      \\
  20th  & +6                & Foe Slayer                                        & 11           & 1d8   & 15   & 40   & 14      \\
 \end{DndTable}
-\subsection{Favored Enemy}
+\subsection{Focused Foe}
 
-Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.
+Rangers have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe die (originally a d4) once per turn when you hit them with an attack.
 
-Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.
-
-You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
-
-When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.
-
-You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.
+Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them.
 
 \subsection{Natural Explorer}
 
-You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
+You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or underground. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
 
-While traveling for an hour or more in your favored terrain, you gain the following benefits:
+While traveling in your favored terrain, you gain the following benefits:
 \begin{itemize}
 \item Difficult terrain doesn't slow your group's travel.
 \item Your group can't become lost except by magical means.
 \item Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
-\item If you are traveling alone, you can move stealthily at a normal pace.
+\item Your group can move stealthily at a normal pace.
 \item When you forage, you find twice as much food as you normally would.
 \item While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
 \end{itemize}
 
+Additionally, when you are in your favored terrain, creatures have disadvantage on attempts to hide from you and you have advantage on Wisdom (Perception) checks made to spot hidden creatures and objects.
+
 You choose additional favored terrain types at 6th and 10th level.
 
-\subsection{Fighting Style}
+\subsection{Weapon Specialization}
 
-At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
+You are especially adept at using particular properties. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 
-\subsection{Archery}
+\subparagraph*{Battering} Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
 
-You gain a +2 bonus to attack rolls you make with ranged weapons.
+\subparagraph*{Cleaving} You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
 
-\subsection{Defense}
+\subparagraph*{Heavy (Ranged only)} You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
 
-While you are wearing armor, you gain a +1 bonus to AC.
+\subparagraph*{Light} When you make the additional attack with a light weapon, you add your ability modifier to the damage dealt.
 
-\subsection{Dueling}
+\subparagraph*{Loading} You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
 
-When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+\subparagraph*{Parrying} The bonus from this property increases to +4.
 
-\subsection{Two-Weapon Fighting}
+\subparagraph*{Precise} You score a critical hit on an 18, 19, or 20 instead of on a 19 or 20.
 
-When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+\subparagraph*{Reach} You can make opportunity attacks when a creature enters your range as well as leaves it.
+
+\subparagraph*{Thrown} You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
+
+\subparagraph*{Versatile} You get the increased damage die even when wielding it in one hand.
 
 \subsection{Spellcasting}
 
-By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.
+By the time you reach 2nd level, you have learned to befriend the kami, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.
 
 \subsubsection{Preparing and Casting Spells}
 
@@ -132,27 +132,31 @@ At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beas
 
 \subsection{Primeval Awareness}
 
-Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.
+Beginning at 3rd level, you can use your action to focus your awareness on the region around you. For a number of minutes equal to your proficiency bonus, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature reveals the direction and approximate distance (very near, near, far, very far) as well as a general sense of the number (solitary, a group, a horde) of each distinct cluster of creatures detected. Once you use this feature, one hour must pass before you can use it again.
 
 \subsection{Ability Score Improvement}
 
-When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
+
+You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list. At levels 4 and 12, you learn two Skill Tricks instead of one.
 
 \subsection{Extra Attack}
 
-Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 2 STA when you hit with an attack to deal your Favored Foe damage an additional time per turn. 
 
 \subsection{Land's Stride}
 
-Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+Starting at 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the \textit{entangle} spell.
 
-\subsection{Hide in Plain Sight}
+\subsection{Aether Strike}
 
-Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
+Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 4+ AET and choose a number of targets equal to half the amount of Aether spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.
 
-Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.
+\subparagraph*{Melee weapon} You teleport from target to target in an order you choose, moving no more than twice your speed in each jump. As you briefly appear next to each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus a number of d10s equal to your proficiency bonus. This damage counts as magical. After attacking the final target, you appear in an empty space within your reach of that target.
+
+\subparagraph*{Ranged Weapon} Make a ranged weapon atack against each target in turn. On a hit, targets take normal damage from your weapon plus a number of d10s equal to your proficiency bonus. This damage counts as magical. Targets struck by this attack have disadvantage on their next attack.
 
 \subsection{Vanish}
 
@@ -165,10 +169,10 @@ At 18th level, you gain preternatural senses that help you fight creatures you c
 You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.
 
 \subsection{Foe Slayer}
-
+%fixme
 At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
 
-\subsection{Ranger Archetypes}
+\subsection{Ranger Archetypes}%replace me
 
 The ideal of the ranger has two classic expressions: the Hunter and the Beast Master.
 

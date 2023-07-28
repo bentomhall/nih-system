@@ -158,7 +158,17 @@ At 18th level, the range of this aura increases to 30 feet.
 
 \subsection{Find Steed}
 
-At 7th level, you have a bond with a special spirit that manifests as a warhorse or similar steed. You gain access to the \textit{Find Steed} spell, outlined in the sidebar \nameref{spell:find-steed}
+At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 Aether. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
+
+Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. You and your steed act on the same turn, and you can control its actions (mounted or not) without spending any actions of your own. Unlike other controlled mounts, the steed can take the Attack action while you are mounted on it, but cannot take the Multiattack action if it has it. While mounted on your steed, you can make any spell you cast that targets only you also target your steed. In addition, while mounted on the steed, you can force any attack that targets the mount to instead target you.
+
+When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.
+
+While your steed is within 1 mile of you, you can communicate with it telepathically.
+
+You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
+
+Starting at level 14, you can expend 8 Aether when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.
 
 \subsection{Aura of Courage}
 
@@ -253,26 +263,6 @@ A oathbound who has broken a vow typically seeks absolution from a cleric who sh
 If a oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.
 \end{DndComment}
 
-\begin{DndSidebar}{Find Steed}
-    \label{spell:find-steed}
-\DndSpellHeader{Find Steed}
-{5 AET}
-{10 minutes}
-{30 feet}
-{V, S}
-{Instantaneous}
-
-You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
-
-Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.
-
-When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.
-
-While your steed is within 1 mile of you, you can communicate with it telepathically.
-
-You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
-\end{DndSidebar}
-
 \subsection{Oathbound Spell List}
 The Oathbound Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost. The Details column may contain any of the following symbols:
 \begin{itemize}
@@ -285,9 +275,11 @@ The Oathbound Spell List table contains a short summary of the spells available 
 	\item $\rightarrow$: the spell affects a line.
 \end{itemize}
 
+\onecolumn
 \begin{DndTable}[header=Oathbound Spell List]{XXY}
 	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
 	1 & \nameref{spell:cure-wounds} & 1d8+MOD heal, 1 target \\
+	1 & \nameref{spell:true-string} & buff next attack, self, BA, 1 round \\
 	2 & \nameref{spell:bane} & \textminus 1d4 from ATK/CHK, 3 targets, \copyright 1 minute. \\
 	2 & \nameref{spell:bless} & +1d4 on ATK/SAVE, 3 targets, \copyright 1 minute \\
 	2 & \nameref{spell:command} & One-word command & \textbf{WIS}, 1 round \\
@@ -295,23 +287,28 @@ The Oathbound Spell List table contains a short summary of the spells available 
 	2 & \nameref{spell:heroism} & +THP, immune fear, 1 ally, \copyright 1 minute. \\
 	2 & \nameref{spell:longstrider} & +10 ft move, 1 ally, 1 hour. \\
 	2 & \nameref{spell:protection-from-otherworldly-influence} & Protect against certain types, touch, \copyright 10 minutes \\
-	2 & \nameref{spell:sanctuary} & 
+	2 & \nameref{spell:sanctuary} & Protect ally at cost of pacification, 1 target, BA, 1 minute \\
+	2 & \nameref{spell:shield-of-faith} & AC boost for ally, 1 target, BA, \copyright 10 minutes \\
 	3 & \nameref{spell:aid} & +HP, 3 allies, 8 hours. \\
 	3 & \nameref{spell:calm-emotions} & Suppress charm/fear, $\bigcirc$, \textbf{CHA}, \copyright 1 minute. \\
 	3 & \nameref{spell:magic-weapon} & makes weapon magic (+1), 1 weapon, \copyright 1 hour \\
 	3 & \nameref{spell:prayer-of-hope} & 2d8+MOD healing, 6 allies \\
 	3 & \nameref{spell:protection-from-poison} & neutralize/resist poison, touch, 1 hour \\
+	3 & \nameref{spell:see-invisibility} & See invisible things, self, 1 hour \\
+	3 & \nameref{spell:warding-bond} & Share damage, touch, 1 hour \\
 	5 & \nameref{spell:beacon-of-hope} & Save bonus, healing bonus, allies within 30, \copyright 1 minute. \\
 	5 & \nameref{spell:daylight} & Create daylight, $\bigcirc$, 1 hour \\
 	5 & \nameref{spell:remove-curse} & Dispel curses, touch \\
 	5 & \nameref{spell:revivify} & Raise dead (1 minute), touch \\
 	8 & \nameref{spell:banishment} & Remove one enemy, 1 target, \textbf{CHA}, \copyright 1 minute (special)\\
 	8 & \nameref{spell:death-ward} & Prevent death 1x, 1 ally, 8 hours \\
-	8 & \nameref{freedom-of-movement} & Prevent restraint, 1 ally, 1 hour \\
-	9 & \nameref{mass-cure-wounds} & 3d8 + MOD healing, 6 allies, $\bigcirc$ \\
-
-	12 & \nameref{dispel-otherworldly-influence} & Protect against otherplanar, self, \copyright 1 minute \\
+	8 & \nameref{spell:freedom-of-movement} & Prevent restraint, 1 ally, 1 hour \\
+	9 & \nameref{spell:mass-cure-wounds} & 3d8 + MOD healing, 6 allies, $\bigcirc$ \\
+	12 & \nameref{spell:dispel-otherworldly-influence} & Protect against otherplanar, self, \copyright 1 minute \\
+	12 & \nameref{spell:true-seeing} & Gain truesight, touch, 1 hour \\
+	12 & \nameref{spell:divine-wrath} & 5d8 radiant per turn, party friendly, $\odot$, \textbf{CHA}, \copyright 1 minute \\
 
 
 
 \end{DndTable}
+\twocolumns

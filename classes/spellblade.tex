@@ -56,7 +56,7 @@ You start with the following equipment, in addition to the equipment granted by 
  15th  & +5 & Arcane Manipulation (d12)                       & 8 + CHA      & 5              & 4   & 15  & 30 & 11  \\   
  16th  & +5 & Ability Score Improvement                       & 8 + CHA      & 5              & 5   & 16  & 32 & 11  \\   
  17th  & +6 & Channeling (8)                                  & 9 + CHA      & 6              & 5   & 17  & 34 & 12 \\   
- 18th  & +6 & ---                                      				& 9 + CHA      & 6              & 5   & 18  & 36 & 13 \\   
+ 18th  & +6 & Spellblade Focus Feature                 				& 9 + CHA      & 6              & 5   & 18  & 36 & 13 \\   
  19th  & +6 & Ability Score Improvement                       & 10 + CHA     & 6              & 6   & 19  & 38 & 13 \\   
  20th  & +6 & Superior Inspiration                            & 10 + CHA     & 6              & 6   & 20  & 40 & 14 \\   
 \end{DndTable}
@@ -112,7 +112,7 @@ When you gain access to a new Skill Trick, you can also swap any Skill Trick you
 
 \subsection{Spellblade Focus}
 
-At 3rd level, you delve into the advanced techniques of a spellblade focus of your choice and choose a specialization: the Skald or the Shadowblade, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level.
+At 3rd level, you delve into the advanced techniques of a spellblade focus of your choice and choose to focus either on Inspiration or War, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level.
 
 \subsection{Ability Score Improvement}
 
@@ -135,11 +135,53 @@ If you miss with an infused attack, the spell fizzles and has no effect.
 
 Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone within 60 ft of begins casting a spell or magical effect, you can spend 2 AET to attempt to counter it. The target must make a Charisma saving throw against your Spellcasting DC. They gain a +1 bonus for every 2 CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend additional AET up to your limit; for every additional AET, the DC increases by 1.
 
-Additionally, you learn \textit{dispel magic} if you do not already know it and can cast it using 2 AET instead of its normal cost. It does not count against your spells known.
+Additionally, you learn \textit{\nameref{spell:unbind}} if you do not already know it and can cast it using 2 AET instead of its normal cost. It does not count against your spells known.
 
 \subsection{Superior Manipulation}
 
 At 20th level, targets marked by your Arcane Manipulation must subtract the die from every attack roll or ability check they make for one minute. Only one saving throw is affected, regardless.
+
+\subsection{Spellblade Focuses}
+\subsection{Focus: Inspiration}
+Basically "bard, as a subclass.
+
+\subsubsection{Inspiring Manipulation}
+Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead \textit{adds} the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.
+
+\subsubsection{Beneficial Channel}
+Starting at 7th level, when you take the Attack action and choose \textit{not} to apply your Channeling ability, you can instead cast any Spellblade spell with a cost of 2 AET or less that has a cast time of 1 action and targets a willing creature other than yourself as a bonus action instead.
+
+\subsubsection{Shielding Counterweave}
+Starting at 14th level, when you use your Counterweave ability against a magical effect that causes damage and the target succeeds on the saving throw, you can choose a number of willing targets equal to your proficiency bonus. Those targets have resistance to the damage dealt by the magical effect.
+
+\subsubsection{Legendary Effect: Heroes' Feast}
+At 14th level, you learn the legendary effect \nameref{spell:heroes-feast} and can use it once per day.
+
+\subsubsection{Improved Inspiring Manipulation}
+Starting at 18th level, when you use your Inspiring Manipulation ability, the friendly target can add the die to an attack roll or saving throw as well as an ability check or damage roll.
+
+\subsubsection{Legendary Effect: Abjure Arcana}
+Starting at 18th level, you learn the legendary effect \nameref{spell:abjure-aether-manipulation} and can use it once per day.
+
+\subsection{Focus: War}
+Goes all in on combat.
+\subsubsection{Piercing Manipulation}
+Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to pierce the defenses of a foe you attack. When you make an attack roll, you can expend one use of Arcane Manipulation to add the die result to your attack roll. Alternatively, when you cast a spell or use an ability (other than Arcane Manipulation) that requires a saving throw from an enemy, you can expend one use of Arcane Manipulation to subtract the die result from the target's saving throw.
+
+\subsubsection{Steady Channeling}
+Starting at 7th level, when you deal damage with your Channeling ability and roll below half the maximum damage on the spell's damage, you can expend 1 STA to instead deal half of the spell's maximum damage.
+
+\subsubsection{Rebounding Counterweave}
+Starting at 14th level, when you use your Counterweave ability against a magical effect that causes damage and the target fails the saving throw, the target takes force damage equal to your level in addition to the regular effects of a failed save.
+
+\subsubsection{Legendary Effect: Globe of Invulnerability}
+At 14th level, you learn the legendary effect \nameref{spell:globe-of-invulnerability} and can use it once per day.
+
+\subsubsection{Improved Piercing Manipulation}
+Starting at 18th level, targets of your Piercing Manipulation take additional force damage equal to your level, regardless of whether the triggering attack hits or the triggering ability takes effect.
+
+\subsubsection{Legendary Effect: Power Word Kill}
+At 18th level, you learn the legendary effect \nameref{spell:power-word-kill} and can use it once per day.
 
 \subsection{Spellblade Spell List}
 The Spellblade Spell List table contains a short summary of the spells available to all spellblade, ordered by aether cost. The details column may contain any of the following symbols:
@@ -153,7 +195,6 @@ The Spellblade Spell List table contains a short summary of the spells available
 	\item $\rightarrow$: the spell affects a line.
 \end{itemize}
 
-\onecolumn
 \begin{DndTable}[header=Spellblade Spell List]{XXY}
 	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
     c & \nameref{spell:acid-burst} & \\

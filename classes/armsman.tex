@@ -1,4 +1,4 @@
-\section{Armsman}
+\section{Armsman\label{class:armsman}}
 
 The armsman is a master of weapons. His power comes from training and discipline and superior techniques that allow him to break the boundaries of what is possible for others.
 
@@ -116,9 +116,14 @@ Beginning at 5th level, you can attack twice, instead of once, whenever you take
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
 
 \subsection{Versatility}
-Beginning at 6th level, you can use Strength or Dexterity as the modifier for weapon attacks and damage regardless of the type of weapon.
-
-In addition, you can choose to make a Strength check when a Dexterity check would otherwise be called for and vice versa.
+Beginning at 6th level, you gain the following benefits:
+\begin{itemize}
+	\item You can use Strength or Dexterity as the modifier for weapon attacks and damage regardless of the type of weapon.
+	\item You can interact with any number of weapons as part of your other actions or movements as long as they are on your person. This does not consume your free object interaction.
+	\item Equipping or unequipping a shield only requires a bonus action.
+	\item You can choose to make a Strength check when a Dexterity check would otherwise be called for and vice versa.
+	\item You can Shove or Grapple instead of making a regular Opportunity Attack.
+\end{itemize} 
 
 \subsection{Everything's a Weapon}
 Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below.
@@ -176,30 +181,46 @@ Starting at 18th level, you have trained enough to be able to magically sense yo
 \subsection{Sword Saint}
 Don't let the name confuse you, there are sword saints devoted to all forms of weapons. The sword saint takes their weapon skills to an entirely new level. On the battlefield they are a flash of lightning, a stroke of thunder, an explosion of strikes. Many of their techniques draw on pure aether, mixing magic and weapon play.
 
-% \begin{DndTable}[header=Sword Saint]{XXXX}
-% 	\textbf{Armsman Level} & \textbf{Feature} & \textbf{Aether} & \textbf{Aether Limit} \\ 
-% 	3 & Exceptional Aether & 4 & 1 \\
-% 	4 & -- & 6 & 2 \\
-% 	5 & -- & 7 & 2 \\
-% 	6 & -- & 9 & 2 \\
-% 	7 & Something & 12 & 3 \\
-% 	8 & -- & 13 & 3 \\
-% 	9 & -- & 18 & 3 & \\
-% 	10 & Something & 20 & 3 \\ 
-% 	11 & -- & 23 & 3 \\
-% 	12 & -- & 23 & 3 \\
-% 	13 & -- & 27 & 5 \\
-% 	14 & -- & 27 & 5 \\
-% 	15 & Something & 30 & 5 \\ 
-% 	16 & -- & 30 & 5 \\
-% 	17 & -- & 33 & 5 \\
-% 	18 & Something & 33 & 5 \\ 
-% 	19 & -- & 36 & 8 \\
-% 	20 & -- & 36 & 8 
-% \end{DndTable}
+\begin{DndTable}[header=Sword Saint]{XXXX}
+	\textbf{Armsman Level} & \textbf{Feature} & \textbf{Aether} & \textbf{Aether Limit} \\ 
+	3 & Exceptional Aether, Weapon Flexibility & 3 & 1 \\
+	4 & -- & 4 & 2 \\
+	5 & -- & 5 & 2 \\
+	6 & -- & 6 & 2 \\
+	7 & Blades of Air & 7 & 3 \\
+	8 & -- & 8 & 3 \\
+	9 & -- & 9 & 3 & \\
+	10 & Cold as Ice & 10 & 3 \\ 
+	11 & -- & 11 & 3 \\
+	12 & -- & 12 & 3 \\
+	13 & -- & 13 & 5 \\
+	14 & -- & 14 & 5 \\
+	15 & Lightning Step & 15 & 5 \\ 
+	16 & -- & 16 & 5 \\
+	17 & -- & 17 & 5 \\
+	18 & Cascading Deathblow & 18 & 5 \\ 
+	19 & -- & 19 & 8 \\
+	20 & -- & 20 & 8 
+\end{DndTable}
 
 \subsubsection{Exceptional Aether}
 Starting at 3rd level, sword saints cultivate their aether thoroughly than most armsmen. Use the Sword Saint table instead of the Armsman table to determine your maximum aether and your aether limit as you gain levels.
 
 \subsubsection{Weapon Flexibility}
-Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any of the following weapon properties for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make 
+Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
+
+\subsubsection{Blades of Air}
+Starting at 7th level, you can concentrate air-aspected aether in your melee strikes, launching sharpened blades of air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ AET to extend your reach for that action by 10 ft per aether spent. When you do so, the weapon counts as magical for the purpose of overcoming resistance and immunity to attacks from non-magical weapons.
+
+\subsubsection{Cold as Ice}
+Starting at 10th level, you are nearly impossible to fluster or make angry. You can add twice your proficiency bonus to any saving throw or ability check against an effect that would impose the frightened or charmed condition and if you are affected by either of those conditions, you can expend 2 STA at the start of your turn to suppress the effect until the end of your turn.
+
+Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 AET as an action, removing the effect or expelling the possessor.
+
+\subsubsection{Lightning Step}
+Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus \texttimes your Intelligence modifier and are staggered until the beginning of your next turn. On a success, targets take half damage and are not staggered.
+
+When you do this, you can expend 5 AET. If you do so, creatures that fail their saving throw are stunned instead of staggered and targets that succeed are staggered until the start of your next turn.
+
+\subsubsection{Cascading Deathblow}
+Starting at 18th level, when you use your Deathblow ability, you can expend 1+ AET in addition to the STA spent (if any) to activate the ability. If you do so, all creatures of your choice within your reach if wielding a melee weapon or all creatures of your choice within 10 feet of the original target if wielding a ranged weapon take damage of the weapon's type equal to one roll of the weapon's base die for every aether spent.

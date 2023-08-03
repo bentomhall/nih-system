@@ -1,4 +1,4 @@
-\section{Priest}
+\section{Priest\label{class:priest}}
 
 Design Goals: The priest is the basic full-caster divine class, replacing the cleric. Their UCT is Miracles--basically Divine Intervention, but starting earlier. Their subclasses give bonuses to various types of spells, basically adding riders. SDCT: 7/4/5/4
 
@@ -258,3 +258,96 @@ At 9th level, you can use your Channel Divine Power ability to remove conditions
 
 Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
 
+\subsection{Priest Spell List}
+The Priest Spell List table contains a short summary of the spells available to all Priest, ordered by aether cost. The Details column may contain any of the following symbols:
+\begin{itemize}
+	\item \copyright : the spell requires concentration.
+	\item $\dagger$ : the spell requires an attack roll.
+	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
+	\item $\odot$ : The spell affects an area around yourself.
+	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
+	\item $\triangleleft$: The spell affects a cone.
+	\item $\rightarrow$: the spell affects a line.
+\end{itemize}
+
+\onecolumn
+\begin{DndTable}[header=Priest Spell List]{XXY}
+	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
+	c & \nameref{spell:grave-touch} & \\
+	c & \nameref{spell:guidance} & \\
+	c & \nameref{spell:light} & \\
+	c & \nameref{spell:message} & \\
+	c & \nameref{spell:resistance} & \\
+	c & \nameref{spell:sacred-flame} & \\
+	c & \nameref{spell:shillelagh} & \\
+	c & \nameref{spell:thaumaturgy} & \\
+	1 & \nameref{spell:cure-wounds} &\\
+	2 & \nameref{spell:bane} & \textbf{CHA}, \copyright 1 minute \\
+	2 & \nameref{spell:bless} & \\
+	2 & \nameref{spell:charm-person} & \\
+	2 & \nameref{spell:command} & \\
+	2 & \nameref{spell:create-or-destroy-water} &  \\
+	2 & \nameref{spell:feather-fall} & \\
+	2 & \nameref{spell:guiding-bolt} & \\
+	2 & \nameref{spell:healing-word} & \\
+	2 & \nameref{spell:inflict-wounds} & \\
+	2 & \nameref{spell:heroism} & \\
+	2 & \nameref{spell:longstrider} & \\
+	2 & \nameref{spell:protection-from-otherworldly-influence} & \\
+	2 & \nameref{spell:sanctuary} & \\
+	2 & \nameref{spell:shield-of-faith} & \\
+	2 & \nameref{spell:spiritual-weapon} & \\
+	3 & \nameref{spell:aid} & Bonus hp/max hp, 8 hours \\
+	3 & \nameref{spell:blindness-deafness} & \\
+	3 & \nameref{spell:calm-emotions} & \\
+	3 & \nameref{spell:darkvision} &\\
+	3 & \nameref{spell:detect-thoughts} & \\
+	3 & \nameref{spell:enlarge-reduce} & \\
+	3 & \nameref{spell:find-traps} & \\
+	3 & \nameref{spell:flame-blade} & \\
+	3 & \nameref{spell:invisibility} & \\
+	3 & \nameref{spell:magic-weapon} & \\
+	3 & \nameref{spell:prayer-of-healing} & \\
+	3 & \nameref{spell:protection-from-poison} & \\
+	3 & \nameref{spell:ray-of-enfeeblement} & \\
+	3 & \nameref{spell:see-invisibility} & \\
+	3 & \nameref{spell:shatter} & \\
+	3 & \nameref{spell:silence} & \\
+	3 & \nameref{spell:suggestion} & \\
+	3 & \nameref{spell:warding-bond} & \\
+	4 & \nameref{spell:hold-person} & \\
+	5 & \nameref{spell:beacon-of-hope} & $\odot$, \copyright 1 minute \\
+	5 & \nameref{spell:bestow-curse}, \copyright 1 minute \\
+	5 & \nameref{spell:clairvoyance} & \\
+	5 & \nameref{spell:daylight} & \\
+	5 & \nameref{spell:fear} & \\
+	5 & \nameref{spell:haste} & \\
+	5 & \nameref{spell:protection-from-energy} & \\
+	5 & \nameref{spell:remove-curse} & \\
+	5 & \nameref{spell:revivify} & \\
+	5 & \nameref{spell:unbind} & \\
+	5 & \nameref{spell:wind-wall} & \\
+	8 & \nameref{spell:banishment} & \\
+	8 & \nameref{spell:confusion} & \\
+	8 & \nameref{spell:control-water} & \\
+	8 & \nameref{spell:death-ward} & \\
+	8 & \nameref{spell:fire-shield} & \\
+	8 & \nameref{spell:freedom-of-movement} & \\
+	8 & \nameref{spell:resilient-sphere} & \\
+	8 & \nameref{spell:spirit-guardians} & \\
+	8 & \nameref{spell:stone-shape} & \\
+	8 & \nameref{spell:stoneskin} & \\
+	8 & \nameref{spell:wall-of-fire} & \\
+	9 & \nameref{spell:flame-strike} & \\
+	9 & \nameref{spell:mass-cure-wounds} & \\
+	12 & \nameref{spell:contagion} & \\
+	12 & \nameref{spell:dispel-otherworldly-influence} & \\
+	12 & \nameref{spell:divine-wrath} & \\
+	12 & \nameref{spell:hold-monster} & \\
+	12 & \nameref{spell:mislead} & \\
+	12 & \nameref{spell:move-earth} & \\
+	12 & \nameref{spell:true-seeing} & \\
+	12 & \nameref{spell:wall-of-stone} & \\
+	14 & \nameref{spell:sunbeam} & \\
+	15 & \nameref{spell:blade-barrier} & \\
+\end{DndTable}

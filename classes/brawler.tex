@@ -1,4 +1,4 @@
-\section{Brawler}
+\section{Brawler\label{class:brawler}}
 
 Design discussion: Replaces the monk, generalizing it. Extra stamina. Unarmed martial arts. Rolling some of open hand into base. SDCT 3/5/7/5.
 
@@ -101,7 +101,7 @@ At 9th level, you gain the ability to move along vertical surfaces, upside down,
 
 \subsection{Martial Tradition}
 
-When you reach 3rd level, you commit yourself to a martial tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
+When you reach 3rd level, you commit yourself to a martial tradition: the Way of the Guarded Soul or the Way of Closed Fist, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
 
 \subsection{Deflect Missiles}
 
@@ -129,7 +129,7 @@ Starting at 5th level, you can interfere with the flow of energy in an opponent'
 
 \subsection{Empowered Strikes}
 
-Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. In addition, you can expend 1 AET to increase the damage dealt by your Martial Arts die.
+Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. In addition, you can expend 1 AET to increase the damage dealt by your Martial Arts die by 1 die.
 
 \subsection{Evasion}
 
@@ -161,30 +161,63 @@ At 20th level, if you are reduced to zero hit points, you can spend 10 STA as a 
 
 \subsection{Martial Traditions}
 
-Three traditions of martial pursuit are common in the monasteries scattered across the multiverse. Most monasteries practice one tradition exclusively, but a few honor the three traditions and instruct each brawler according to his or her aptitude and interest. All three traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a brawler need choose a tradition only upon reaching 3rd level.
+There are many traditions for those that fight with spirit and fists. All these traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a brawler need choose a tradition only upon reaching 3rd level.
 
-\subsection{Way of the Open Hand}
+Some traditions are balanced, training body and soul as one, balancing martial and mystical powers. Others are more focused on direct physical action; yet others are focused primarily on the soul, emphasizing mystic powers.
 
-Brawlers of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.
+\subsection{Way of the Guarded Soul}
 
-\subsection{Open Hand Technique}
+Brawlers of the Way of the Guarded Soul are the ultimate masters of defensive martial arts combat. They learn techniques to push and trip their opponents, manipulate aether to heal damage to their bodies, and practice advanced techniques that can protect them from harm.
 
-Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:
+\subsubsection{Guarded Technique}
+
+Starting when you choose this tradition at 3rd level, you can manipulate your enemy when strike them. Whenever you hit a creature with an unarmed strike, you can impose one of the following effects on that target:
 \begin{itemize}
 \item It must succeed on a Dexterity saving throw or be knocked prone.
 \item It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
 \item It can't take reactions until the end of your next turn.
 \end{itemize}
 
-\subsection{Wholeness of Body}
+\subsubsection{Wholeness of Body}
 
 At 6th level, you gain the ability to heal yourself. As an action, you can spend 2 AET to regain hit points equal to three times your brawler level. By expending extra AET, you increase the amount healed by your brawler level per extra AET spent.
 
-\subsection{Tranquility}
+\subsubsection{Poise}
+At 12th level, your physical and mental balance are nearly total. You are immune to being charmed or frightened, and the cost of ending the incapacitated status on you using Stillness of Body is reduced to 2 STA.
 
+\subsubsection{Legendary Effect: Contingency}
+At 17th level, you are prepared for almost anything. You learn the legendary effect \nameref{spell:contingency} and can use it once per day without requiring the expensive component or needing to cast a spell. You can only use the following spells:
+\begin{itemize}
+	\item \nameref{spell:blur}
+	\item \nameref{spell:cure-wounds} (targeting only yourself, cast as if you spent 12 aether, and your spellcasting ability is Wisdom)
+	\item \nameref{spell:greater-invisibility} (targeting yourself)
+	\item \nameref{spell:remove-curse}
+	\item \nameref{spell:revivify} (targeting yourself, no component needed)
+	\item \nameref{spell:unbind} (targeting yourself)
+\end{itemize}
 
-\subsection{Quivering Palm}
+\subsection{Way of the Closed Fist}
+Brawlers of the Closed Fist are the masters of offensive unarmed martial arts combat. They train their bodies as weapons, focusing on delivering telling blows to their opponents.
 
-At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 AET to start these imperceptible vibrations, which last for a number of days equal to your brawler level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
+\subsubsection{Closed Fist Techniques}
+Starting when you pick this subclass at level 3, you gain the following benefits.
+\begin{itemize}
+	\item When you hit a target that is incapacitated with an unarmed attack, you deal maximum damage to them.
+	\item When you score a critical hit with an unarmed strike, the damage dealt by the additional damage die is maximized.
+\end{itemize}
+
+\subsubsection{Knock Off Balance}
+Starting at 6th level, when you attack a creature with an unarmed strke and hit, the creature cannot make Opportunity Attacks against you until the beginninng of your next turn.
+
+\subsubsection{Tornado Kick}
+Starting at 12th level, you can spend 1 AET and 2 STA and a bonus action to make a spinning attack. All creatures within 5 feet of you must make a Dexterity saving throw. On a failed save they take 5d10 bludgeoning damage and are knocked back 10 feet. On a success, they take half as much damage and are not knocked back.
+
+\subsubsection{Legendary Action: Mind Blank}
+At 12th level, you learn the legendary action \nameref{spell:mind-blank} and can use it on yourself once per day.
+
+\subsubsection{Quivering Palm}
+
+At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 AET to start these imperceptible vibrations, which last for a number of days equal to your brawler level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage. You can substitute this special action for one attack you can make during your turn or as an Opportunity Attack.
 
 You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
+

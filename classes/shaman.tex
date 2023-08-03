@@ -1,4 +1,4 @@
-\section{Shaman}
+\section{Shaman\label{class:shaman}}
 
 Design Discussion: Replaces the druid. No wild shape. UCT is manifest zones: basically placeable aoes. Heavily control-oriented. SDCT 5/4/7/4.
 
@@ -122,47 +122,146 @@ Starting at 18th level, the primal magic that you wield causes you to age more s
 
 The Circle of the Spirit acts as a bridge between man and the spirits of nature, as well as the spirits of the departed. Most frequently, shamans of the Spirit Circle are found as tribal advisors, priests of nature-focused communities, and the like.
 
-\subsection{Bonus Cantrip}
+\subsubsection{Bonus Cantrip}
 
 When you choose this circle at 2nd level, you learn one additional shaman cantrip of your choice.
 
-\subsection{Natural Recovery}
+\subsubsection{Natural Recovery}
 
 Starting at 3rd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you can meditate and regain Aether points equal to half your shaman level, rounded up. Once you use this once, you can't do so again until you complete a long rest.
 
-\subsection{Circle Spells}
+\subsubsection{Circle Spells}
 
 Your mystical connection to the spirits of nature and man infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
 
 Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
 
-\begin{DndTable}[header=Arctic]{XX}
+\begin{DndTable}[header=Spirit]{XX}
     Shaman Level & Circle Spells      \\              
-    3rd         & hold person, detect thoughts \\         
-    5th         & spirit guardians, mass healing word \\
-    7th         & death ward, greater invisibility \\  
-    9th         & reincarnate, dispel evil and good \\ 
+    3rd         & \nameref{spell:hold-person}, \nameref{spell:detect-thoughts} \\         
+    5th         & \nameref{spell:spirit-guardians}, \nameref{spell:mass-healing-word} \\
+    7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
+    9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
 \end{DndTable}
 
-\subsection{Spirit's Advice}
+\subsubsection{Spirit's Advice}
+At 6th level, the spirits give you advice when you need it most. When you make an ability check and don't like the result, you can roll the dice again and take either result. Once you use this feature, you can't use it again until you finish a long or short rest.
 
-
-\subsection{Nature's Ward}
+\subsubsection{Nature's Ward}
 
 When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.
 
-\subsection{Nature's Sanctuary}
+\subsubsection{Natural Rebirth}
+Starting at 14th level, your connection to the spirits has given you a certain influence over death. This gives you the following benefits:
+\begin{itemize}
+	\item You learn the \nameref{inc:resurrection} incantation, and count as a priest of the Life domain when performing it.
+	\item You can cast \nameref{spell:reincarnate} without expending expensive material components and when you do, you can choose the outcome.
+	\item When you are brought to zero hit points or killed outright, you can instead choose to be healed to half hit points. Once you do so, you cannot use this feature again until you finish a long rest.
+\end{itemize}
 
+\subsection{Circle of the Elements}
+Shamans who devote themselves to the elements tend to be the least connected to mortalkind. They serve and channel the most primal parts of nature...which are often the most destructive.
 
-\begin{DndComment}{Sacred Plants and Wood}
+\subsubsection{Circle Spells}
 
-A shaman holds certain plants to be sacred, particularly alder, ash, birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow, and yew. Shamans often use such plants as part of a spellcasting focus, incorporating lengths of oak or yew or sprigs of mistletoe.
+Your mystical connection to the primal nature of the elements infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
 
- Similarly, a shaman uses such woods to make other objects, such as weapons and shields. Yew is associated with death and rebirth, so weapon handles for scimitars or sickles might be fashioned from it. Ash is associated with life and oak with strength. These woods make excellent hafts or whole weapons, such as clubs or quarterstaffs, as well as shields. Alder is associated with air, and it might be used for thrown weapons, such as darts or javelins.
+Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
 
- Shamans from regions that lack the plants described here have chosen other plants to take on similar uses. For instance, a shaman of a desert region might value the yucca tree and cactus plants.
-\end{DndComment}
+\begin{DndTable}[header=Elements]{XX}
+    Shaman Level & Circle Spells      \\              
+    3rd         & \nameref{spell:scorching-ray}, \nameref{spell:detect-thoughts} \\         
+    5th         & \nameref{spell:spirit-guardians}, \nameref{spell:mass-healing-word} \\
+    7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
+    9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
+\end{DndTable}
 
-\begin{DndComment}{Shamans and the Gods}
- Some shamans venerate the forces of nature themselves, but most shamans are devoted to one of the many nature deities worshiped in the multiverse (the lists of gods in appendix B include many such deities). The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples.
-\end{DndComment}
+\subsection{Shaman Spell List}
+The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost. The Details column may contain any of the following symbols:
+\begin{itemize}
+	\item \copyright : the spell requires concentration.
+	\item $\dagger$ : the spell requires an attack roll.
+	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
+	\item $\odot$ : The spell affects an area around yourself.
+	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
+	\item $\triangleleft$: The spell affects a cone.
+	\item $\rightarrow$: the spell affects a line.
+\end{itemize}
+
+\onecolumn
+\begin{DndTable}[header=Shaman Spell List]{XXY}
+	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
+	c & \nameref{spell:acid-burst} & \\
+	c & \nameref{spell:dancing-lights} & \\
+	c & \nameref{spell:produce-flame} & \\
+	c & \nameref{spell:shillelagh} & \\
+	1 & \nameref{spell:cure-wounds} & \\
+	2 & \nameref{spell:bane} & \\
+	2 & \nameref{spell:burning-hands} & \\
+	2 & \nameref{spell:create-or-destroy-water} & \\
+	2 & \nameref{spell:entangle} & \\
+	2 & \nameref{spell:faerie-fire} & \\
+	2 & \nameref{spell:flash-freeze} & \\
+	2 & \nameref{spell:fog-cloud} & \\
+	2 & \nameref{spell:grease} & \\
+	2 & \nameref{spell:protection-from-otherworldly-influence} & \\
+	2 & \nameref{spell:sleep} & \\
+	2 & \nameref{spell:thunderwave} & \\
+	3 & \nameref{spell:acid-arrow} & \\
+	3 & \nameref{spell:alter-self} & \\
+	3 & \nameref{spell:barkskin} & \\
+	3 & \nameref{spell:blindness-deafness} & \\
+	3 & \nameref{spell:blur} & \\
+	3 & \nameref{spell:calm-emotions} & \\
+	3 & \nameref{spell:darkvision} & \\
+	3 & \nameref{spell:enlarge-reduce} & \\
+	3 & \nameref{spell:flame-blade} & \\
+	3 & \nameref{spell:flaming-sphere} & \\
+	3 & \nameref{spell:gust-of-wind} & \\
+	3 & \nameref{spell:heat-metal} & \\
+	3 & \nameref{spell:pass-without-trace} & \\
+	3 & \nameref{spell:protection-from-poison} & \\
+	3 & \nameref{spell:shatter} & \\
+	3 & \nameref{spell:spike-growth} & \\
+	3 & \nameref{spell:web} & \\
+	4 & \nameref{spell:moonbeam} & \\
+	4 & \nameref{spell:vampiric-touch} & \\
+	5 & \nameref{spell:bestow-curse} & \\
+	5 & \nameref{spell:conjure-animals} & \\
+	5 & \nameref{spell:gaseous-form} & \\
+	5 & \nameref{spell:lightning-bolt} & \\
+	5 & \nameref{spell:plant-growth} & \\
+	5 & \nameref{spell:sleet-storm} & \\
+	5 & \nameref{spell:slow} & \\
+	5 & \nameref{spell:stinking-cloud} & \\
+	5 & \nameref{spell:unbind} & \\
+	5 & \nameref{spell:wind-wall} & \\
+	6 & \nameref{spell:blight} & \\
+	6 & \nameref{spell:call-lightning} & \\
+	7 & \nameref{spell:ice-storm} & \\
+	7 & \nameref{spell:wall-of-thorns} & \\
+	8 & \nameref{spell:conjure-mephits} & \\
+	8 & \nameref{spell:conjure-woodland-beings} & \\
+	8 & \nameref{spell:control-water} & \\
+	8 & \nameref{spell:dominate-beast} & \\
+	8 & \nameref{spell:fire-shield} & \\
+	8 & \nameref{spell:giant-insect} & \\
+	8 & \nameref{spell:polymorph} & \\
+	8 & \nameref{spell:stone-shape} & \\
+	8 & \nameref{spell:stoneskin} & \\
+	8 & \nameref{spell:wall-of-fire} & \\
+	9 & \nameref{spell:mass-cure-wounds} & \\
+	10 & \nameref{spell:cone-of-cold} & \\
+	12 & \nameref{spell:conjure-elemental} & \\
+	12 & \nameref{spell:contagion} & \\
+	12 & \nameref{spell:dispel-otherworldly-influence} & \\
+	12 & \nameref{spell:move-earth} & \\
+	12 & \nameref{spell:passwall} & \\
+	12 & \nameref{spell:reincarnate} & \\
+	12 & \nameref{spell:wall-of-ice} & \\
+	12 & \nameref{spell:wall-of-stone} & \\
+	13 & \nameref{spell:chain-lightning} & \\
+	14 & \nameref{spell:cloudkill} & \\
+	14 & \nameref{spell:insect-plague} & \\
+\end{DndTable}
+

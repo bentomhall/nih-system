@@ -1,4 +1,4 @@
-\section{Oathbound}
+\section{Oathbound\label{class:oathbound}}
 
 Design Discussion: Basically a paladin. Not tons changed here except subclasses. Toned down the damage in favor of more support. SDCT 6/5/4/5.
 
@@ -44,7 +44,7 @@ You start with the following equipment, in addition to the equipment granted by 
  4th   & +2                & Ability Score Improvement                  & 2 & 3   & 8   & 3    \\
  5th   & +3                & Extra Attack                               & 2 & 3   & 10   & 4   \\ 
  6th   & +3                & Aura of Protection                         & 3 & 4   & 12   & 5    \\
- 7th   & +3                & Sacred Oath feature                        & 3 & 4   & 14   & 5    \\
+ 7th   & +3                & Sacred Oath feature, Find Steed            & 3 & 4   & 14   & 5    \\
  8th   & +3                & Ability Score Improvement                  & 4 & 5   & 16   & 6    \\
  9th   & +4                & -                                          & 4 & 5   & 18   & 7    \\
  10th  & +4                & Aura of Courage                            & 5 & 6   & 20   & 7    \\
@@ -76,25 +76,21 @@ Alternatively, you can expend 5 hit points from your pool of healing to cure the
 
 This feature has no effect on undead and constructs.
 
-\subsection{Fighting Style}
+\subsection{Weapon Specialization}
 
-At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
+You have learned to wield one type of weapon better. Choose one of the properties below. You gain the bonus listed. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 
-\subsubsection{Defense}
+\subparagraph*{Battering} Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
 
-While you are wearing armor, you gain a +1 bonus to AC.
+\subparagraph*{Cleaving} You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
 
-\subsubsection{Dueling}
+\subparagraph*{Heavy} You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
 
-When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+\subparagraph*{Parrying} The bonus from this property increases to +4.
 
-\subsubsection{Great Weapon Fighting}
+\subparagraph*{Reach} You can make opportunity attacks when a creature enters your range as well as leaves it.
 
-When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.
-
-\subsubsection{Protection}
-
-When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
+\subparagraph*{Versatile} You get the increased damage die even when wielding it in one hand.
 
 \subsection{Spellcasting}
 
@@ -121,6 +117,18 @@ You can use a holy symbol as a spellcasting focus for your oathbound spells.
 \subsection{Divine Smite}
 
 Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend 1 or more AET to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 1d8 + 1d8 per two additional AET to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.
+
+In addition to expending aether to deal more damage, you can expend aether to add additional effects (up to your aether limit).
+
+\subparagraph*{Banishing Smite} By expending 12 additional aether, you can force the target to make a Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane and incapacitated for 1 minute. If the target was a celestial or devil, it is instead banished to the Astral on a failed save. If the target was a demon or undead, it is banished to the Abyss on a failed save. If the target was an elemental, it is banished to the corresponding elemental plane. Targets native to the plane they were banished from can attempt the saving throw again at the end of each of their turns, ending the banishment on a success and reappearing in the closest unoccupied space to where they left. Targets banished to a specific plane cannot return to the plane they were banished from by any means for a year and a day.
+
+\subparagraph*{Blinding Smite} By expending 4 additional aether, you can force the target to make a Constitution saving throw against your spell DC, becoming blinded for 1 minute on a failure. The target can attempt the saving throw at the end of each of their turns, ending the effect on a success.
+
+\subparagraph*{Searing Smite} By expending 2 additional aether, you can convert the smite's damage to fire and cause it to ignite the target. The target takes additional fire damage equal to half the damage dealt by the smite at the beginning of their next turn and every turn thereafter for 1 minute or until they succeed on a Constitution saving throw against your spell DC or take an action to extinguish the flames.
+
+\subparagraph*{Thundrous Smite} By expending 2 additional aether, you can force the target to make a Strength saving throw against your spell DC. On a failed save, the target is pushed 10 feet away from you and knocked prone.
+
+\subparagraph*{Wrathful Smite} By expending 2 additional aether, you can force the target to make a Wisdom saving throw against your spell DC. On a failed save, the target is frightened of you until the end of your next turn.
 
 \subsection{Divine Health}
 
@@ -160,6 +168,20 @@ Starting at 6th level, whenever you or a friendly creature within 10 feet of you
 
 At 18th level, the range of this aura increases to 30 feet.
 
+\subsection{Find Steed}
+
+At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 Aether. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
+
+Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. You and your steed act on the same turn, and you can control its actions (mounted or not) without spending any actions of your own. Unlike other controlled mounts, the steed can take the Attack action while you are mounted on it, but cannot take the Multiattack action if it has it. While mounted on your steed, you can make any spell you cast that targets only you also target your steed. In addition, while mounted on the steed, you can force any attack that targets the mount to instead target you.
+
+When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.
+
+While your steed is within 1 mile of you, you can communicate with it telepathically.
+
+You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
+
+Starting at level 14, you can expend 8 Aether when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.
+
 \subsection{Aura of Courage}
 
 Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
@@ -196,21 +218,7 @@ Though the exact words and strictures of the Oath of Devotion vary, oathbounds o
 
 \subparagraph*{Honor.} Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
 
-\subparagraph*{Duty.} Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.
-
-\subsubsection{Oath Spells}
-
-You gain oath spells at the oathbound levels listed.
-
-\textbf{Oath of Devotion Spells (table)}
-\begin{DndTable}[header=Oath of Devotion Spells]{XX}
- \textbf{Level} & \textbf{Oathbound Spells}      \\
- 3rd   & \textit{protection from evil and good}, \textit{sanctuary} \\
- 5th   & lesser restoration\*, zone of truth        \\
- 9th   & beacon of hope, dispel magic             \\
- 13th  & freedom of movement, guardian of faith   \\
- 17th  & commune\*, flame strike
-\end{DndTable}                    
+\subparagraph*{Duty.} Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.                  
 
 \subsubsection{Channel Divinity}
 
@@ -253,22 +261,49 @@ A oathbound who has broken a vow typically seeks absolution from a cleric who sh
 If a oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.
 \end{DndComment}
 
-\begin{DndSidebar}{Find Steed}
-    \label{spell:find-steed}
-\DndSpellHeader{Find Steed}
-{3 AET}
-{10 minutes}
-{30 feet}
-{V, S}
-{Instantaneous}
+\subsection{Oathbound Spell List}
+The Oathbound Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost. The Details column may contain any of the following symbols:
+\begin{itemize}
+	\item \copyright : the spell requires concentration.
+	\item $\dagger$ : the spell requires an attack roll.
+	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
+	\item $\odot$ : The spell affects an area around yourself.
+	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
+	\item $\triangleleft$: The spell affects a cone.
+	\item $\rightarrow$: the spell affects a line.
+\end{itemize}
 
-You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
-
-Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.
-
-When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.
-
-While your steed is within 1 mile of you, you can communicate with it telepathically.
-
-You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
-\end{DndSidebar}
+\onecolumn
+\begin{DndTable}[header=Oathbound Spell List]{XXY}
+	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
+	1 & \nameref{spell:cure-wounds} & 1d8+MOD heal, 1 target \\
+	1 & \nameref{spell:true-strike} & buff next attack, self, BA, 1 round \\
+	2 & \nameref{spell:bane} & \textminus 1d4 from ATK/CHK, 3 targets, \copyright 1 minute. \\
+	2 & \nameref{spell:bless} & +1d4 on ATK/SAVE, 3 targets, \copyright 1 minute \\
+	2 & \nameref{spell:command} & One-word command & \textbf{WIS}, 1 round \\
+	2 & \nameref{spell:divine-favor} & +1d4 radiant on hit, self, BA, \copyright 1 minute. \\
+	2 & \nameref{spell:heroism} & +THP, immune fear, 1 ally, \copyright 1 minute. \\
+	2 & \nameref{spell:longstrider} & +10 ft move, 1 ally, 1 hour. \\
+	2 & \nameref{spell:protection-from-otherworldly-influence} & Protect against certain types, touch, \copyright 10 minutes \\
+	2 & \nameref{spell:sanctuary} & Protect ally at cost of pacification, 1 target, BA, 1 minute \\
+	2 & \nameref{spell:shield-of-faith} & AC boost for ally, 1 target, BA, \copyright 10 minutes \\
+	3 & \nameref{spell:aid} & +HP, 3 allies, 8 hours. \\
+	3 & \nameref{spell:calm-emotions} & Suppress charm/fear, $\bigcirc$, \textbf{CHA}, \copyright 1 minute. \\
+	3 & \nameref{spell:magic-weapon} & makes weapon magic (+1), 1 weapon, \copyright 1 hour \\
+	3 & \nameref{spell:prayer-of-hope} & 2d8+MOD healing, 6 allies \\
+	3 & \nameref{spell:protection-from-poison} & neutralize/resist poison, touch, 1 hour \\
+	3 & \nameref{spell:see-invisibility} & See invisible things, self, 1 hour \\
+	3 & \nameref{spell:warding-bond} & Share damage, touch, 1 hour \\
+	5 & \nameref{spell:beacon-of-hope} & Save bonus, healing bonus, allies within 30, \copyright 1 minute. \\
+	5 & \nameref{spell:daylight} & Create daylight, $\bigcirc$, 1 hour \\
+	5 & \nameref{spell:remove-curse} & Dispel curses, touch \\
+	5 & \nameref{spell:revivify} & Raise dead (1 minute), touch \\
+	8 & \nameref{spell:banishment} & Remove one enemy, 1 target, \textbf{CHA}, \copyright 1 minute (special)\\
+	8 & \nameref{spell:death-ward} & Prevent death 1x, 1 ally, 8 hours \\
+	8 & \nameref{spell:freedom-of-movement} & Prevent restraint, 1 ally, 1 hour \\
+	9 & \nameref{spell:mass-cure-wounds} & 3d8 + MOD healing, 6 allies, $\bigcirc$ \\
+	12 & \nameref{spell:dispel-otherworldly-influence} & Protect against otherplanar, self, \copyright 1 minute \\
+	12 & \nameref{spell:true-seeing} & Gain truesight, touch, 1 hour \\
+	12 & \nameref{spell:divine-wrath} & 5d8 radiant per turn, party friendly, $\odot$, \textbf{CHA}, \copyright 1 minute \\
+\end{DndTable}
+\twocolumns

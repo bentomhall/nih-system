@@ -16,7 +16,7 @@ Each skill trick detailed below shares some common characteristics:
 The DC for any saving throws required by skill tricks is given by
 
 \begin{center}
-\textbf{8 + the relevant ability score + your proficiency}
+\textbf{8 + the relevant ability score + your proficiency bonus}
 \end{center}
 
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
@@ -31,7 +31,7 @@ Some classes get native access to Skill Tricks as a class feature. If they grant
 
 Basic skill tricks only require a +2 proficiency or level 4 characters.
 
-\subsection{Alert}
+\subsection{Alert}\label{st:alert}
 \textit{Wisdom(Perception) Basic Skill Trick}
 You have advantage on Wisdom (Perception) checks against being surprised.
 
@@ -39,11 +39,19 @@ You have advantage on Wisdom (Perception) checks against being surprised.
 \textit{Intelligence Basic Skill Trick}
 You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 2 AET from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
+\subsection{Craft Apprentice}\label{st:craft-apprentice}
+\textit{Crafting Tool (any) Basic Skill Trick}
+You can make progress with your chosen crafting skill while on the road. You learn the schema for one common magic item that requires that proficiency of your choice.
+
+\subsection{Diplomat}\label{st:diplomat}
+\textit{Charisma(Persuasion) Basic Skill Trick}
+When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+
 \subsection{Divine Initiate}
 \textit{Wisdom{Religion} Basic Skill Trick}
 You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 2 AET from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-\subsection{Feint}
+\subsection{Feint}\label{st:feint}
 \textit{Charisma(Deception) Basic Skill Trick}
 You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 STA. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them.
 
@@ -51,25 +59,29 @@ You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 ST
 \textit{Charisma(Intimidation) Basic Skill Trick}
 As an action, you can expend 1 STA to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn.
 
+\subsection{Haggler}\label{st:haggler}
+\textit{Charisma(Persuasion OR Deception) Basic Skill Trick}
+You are particularly good at haggling. Any time you sell goods, you get 125\% of the normal price, and you buy for 90\% of the listed price.
+
 \subsection{Jump}
 \textit{Strength(Athletics) Basic Skill Trick}
 You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
 
-\subsection{Linguist}
+\subsection{Linguist}\label{st:linguist}
 \textit{Intelligence Skill Trick}
 When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
 
 Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
 
-\subsection{Lung Capacity}
+\subsection{Lung Capacity}\label{st:lung-capacity}
 \textit{Constitution Skill Trick}
 You can hold your breath for twice as long. In addition, you can spend 1 STA when you are exposed to a source of poison gas (such as \nameref{spell:cloudkill} or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw. 
 
-\subsection{Medic}
+\subsection{Medic}\label{st:medic}
 \textit{Wisdom(Medicine) Basic Skill Trick}
 When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, the target regains 1 hit point and is conscious instead.
 
-\subsection{Misdirect}
+\subsection{Misdirect}\label{st:misdirect}
 \textit{Dexterity(Stealth) Basic Skill Trick}
 When you are hidden, you can spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
@@ -77,11 +89,15 @@ When you are hidden, you can spend 1 STA to force a number of creatures equal to
 \textit{Wisdom Basic Skill Trick}
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-\subsection{Scholar: Religion}
+\subsection{Scholar: History}\label{st:scholar-history}
+\textit{Intelligence(History) Basic Skill Trick}
+You can automatically identify significant family lines, crests, and recent events across the Federated Nations. Additionally, when you make an Intelligence(History) check to know information about more obscure facts, you do so at advantage.
+
+\subsection{Scholar: Religion}\label{st:scholar-religion}
 \textit{Intelligence(Religion) Basic Skill Trick}
 You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
 
-\subsection{Sense Baleful Magic}
+\subsection{Sense Baleful Magic}\label{st:sense-baleful-magic}
 \textit{Intelligence(Arcana) Basic Skill Trick}
 You are sensitive to the presence of hostile magics in your proximity. When you are within 30 ft. of a magical trap, spell glyph, or other hostile magical environment, you can use your passive Intelligence (Arcana) instead of your passive Wisdom (Perception) to determine their location and nature.
 
@@ -91,11 +107,11 @@ Additionally, you have advantage on checks made to determine the spell being cas
 \textit{Strength(Shield) Basic Skill Trick}
 You lash out with your shield. Expend 1 STA and make an attack with a proficient melee weapon. On a hit, the opponent takes 1d4 bludgeoning damage and is \nameref{condition:staggered} until the end of their next turn. If you score a critical hit, the target is \nameref{condition:staggered} until the end of your next turn. This can replace an attack when you take the Attack action.
 
-\subsection{Soothe Domesticated Animal}
-\textit{Animal Handling Basic Skill Trick}
+\subsection{Soothe Domesticated Animal}\label{st:soothe-domesticated-animal}
+\textit{Wisdom(Animal Handling) Basic Skill Trick}
 You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
 
-\subsection{Tumble}
+\subsection{Tumble}\label{st:tumble}
 \textit{Dexterity (Acrobatics) Basic Skill Trick}
 You can move through opponents spaces if they are only one size larger than you, not two by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
 
@@ -188,7 +204,7 @@ Alternatively, you can target attended objects as follows, expending 2 STA:
 \begin{itemize}
 	\item \textbf{Armor}: Make an attack against the target's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
 	\item \textbf{Weapons}: Make an attack against the target's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
-	\item \textbf{Wielded Spell Foci or other objects in hand}: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 \texttimes 5 ft away in a random direction.
+	\item \textbf{Wielded spell foci or other objects in hand}: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 \texttimes 5 ft away in a random direction.
 \end{itemize}
 
 \subsection{Wrestler}

@@ -7,21 +7,37 @@ Creating a character follows a specific process.
     \item Pick a culture.
     \item Pick or design a background. Including deciding your motivations for adventuring.
     \item Assign ability scores.
-    \item Pick proficiencies. If your background proficiencies overlap your class proficiencies, pick a new one.
     \item Pick starting gear from class.
     \item Calculate dependent values. This is HP, AC, attack bonuses, saving throw modifiers, saving throw DCs, Stamina, Aether, etc.
 \end{enumerate}
+
+If a culture or background gives you a proficiency you already have from another source, pick a different one instead. 
+
+\section{Class}
+Each character has a "class", which represents how they go about adventuring. It is a combination of archetype, fictional "role", approach to matters, as well as the mechanical abilities you will use during play. Classes are not necessarily formal parts of the fictional world--you may meet many people who have similar abilities, but this does not mean that all wielders of arcane power are Arcanists and have all those abilities.
+
+The classes available for play are described in \nameref{ch:classes}.
+
+\section{Lineage and Culture}
+Your character's lineage describes their biological heritage. Are they one of the tall, long-lived gwerin? Or a human? Or a draconic-souled dragonborn? Or one of many other lineages. Each lineage grants a few features, including giving a +1 to one ability score. It also describes the common heights, weights, appearance, etc. of members of that lineage.
+
+The lineages available for play are described in \nameref{ch:lineages}.
+
+A character's culture describes where in the world they come from and what kind of culture they grew up with. Some cultures are more generic and others more narrow--pick what fits your character best after consultation with the GM. Each culture gives a set of features, including a +1 to one ability score. You can't pick the same ability score for this +1 as you did from your lineage--if they would overlap, pick a different one of your choice. After including both changes, no ability score can be greater than +5.
+
+The lineages available for play are described in \nameref{sec:cultures}.
+
+\import{./}{backgrounds.tex}
 
 \section{Alignment}
 \label{sec:alignment}
 Alignment is not in effect, except descriptively. Instead, come up with two adjectives that describe your character's default reaction to things. 
 
-
 \section{Languages}
 \label{sec:languages}
 Your culture indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet.
 
-Choose your languages from the Standard Languages table, or choose one that is common in your campaign. With your GM's permission, you can instead choose a language from the Exotic Languages table or a secret language, such as thieves' cant or the tongue of druids.
+Choose your languages from the Standard Languages table, or choose one that is common in your campaign. With your GM's permission, you can instead choose a language from the Exotic Languages table.
 
 Some of these languages are actually families of languages with many dialects. For example, the Primordial language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes. Creatures that speak different dialects of the same language can communicate with one another.
 
@@ -46,21 +62,62 @@ Some of these languages are actually families of languages with many dialects. F
     Kamigami & Druidic, Sylvan & Druids, fey & tr. Aelven \\
     Lucian & Infernal & Astral residents & Lucian \\
     Primordial & Elemental & Elementals & Archaic Runic \\
-    Tiborian & Old Imperial & Scholars & Imperial \\            
+    Sarthak & Ship Speech & Ship folk and pirates of the Moon Sea & Modified Aelven \\ 
+		Tiborian & Old Imperial & Scholars & Imperial \\
 \end{DndTable}
 
-\import{./}{backgrounds.tex}
+\section{Ability Scores}
+To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.
+
+\begin{DndComment}{Commentary on Expected Values}
+	The average for a normal, non-adventuring person is +0 in each score. Ability scores represent as much \textit{archetypes} or \textit{approaches} as they do physical parameters. Someone with high Dexterity and low Strength may be "strong"--wielding a bow (which requires Dexterity) also requires substantial physical strength. But the way they approach matters is more nimble, dextrous, and subtle. In appearance, they'd be less muscle-bound and more lean--more of a runner's build than a bodybuilder's build.
+
+	Generally, you'll want your highest ability score to be in your class's primary score. That is:
+	\begin{enumerate}
+		\item Arcanist: Intelligence
+		\item Armsman: Strength (if you want heavy armor) or Dexterity (for light armor)
+		\item Brawler: Either Dexterity or Wisdom
+		\item Oathbound: Either Strength or Charisma
+		\item Priest: Wisdom
+		\item Ranger: Dexterity
+		\item Rogue: Dexterity
+		\item Shaman: Wisdom
+		\item Spellblade: Charisma
+		\item Warden: Strength
+		\item Warlock: Charisma
+	\end{enumerate}
+
+	Many classes (especially Brawler, Oathbound, Ranger, and Spellblade) want your second highest score in one other score (called a secondary ability score). Some subclasses, chosen at level 3 generally, also key off of certain ability scores.
+
+	As a general rule, your Constitution score should be positive, but doesn't need to be your highest score.
+\end{DndComment}
+
+\subparagraph*{Standard Array}
+The standard array provides a fixed, consistent set of values for play. It trades the ability to get unusually high ability scores for the surety of not getting unusually low ability scores.
+
+To use the Standard Array, distribute the following values among your ability scores in whatever order you choose: +2, +2, +1, +1, 0, -1.
+
+\subparagraph*{Rolled Scores}
+Rolling provides a bit of risk in return for possible reward. It can produce widely varying attributes between party members, and so should be done with care.
+
+To roll ability scores, follow the following process:
+\begin{enumerate}
+	\item Roll 4d6 and sum the highest 3 (effectively discarding the lowest).
+	\item Subtract 10 from the resulting score.
+	\item Divide the result by 2, rounding toward negative numbers (ie -5 divided by 2 becomes -3).
+	\item Repeat the above steps until you have 6 numbers, then assign them to your ability scores in whatever order you choose.
+\end{enumerate}
 
 \section{Advancement}\label{sec:advancement}
 \subsection{Beyond 1st Level}\label{subsec:beyond-first-level}
 
 As your character goes on adventures and overcomes challenges, he or she gains experience, represented by experience points. A character who reaches a specified experience point total advances in capability. This advancement is called **gaining a level**.
 
-When your character gains a level, his or her class often grants additional features, as detailed in the class description. Some of these features allow you to increase your ability scores, either increasing two scores by 1 each or increasing one score by 2. You can't increase an ability score above 20. In addition, every character's proficiency bonus increases at certain levels.
+When your character gains a level, his or her class often grants additional features, as detailed in the class description. Some of these features allow you to increase one of your ability scores (usually by 1). You can't increase an ability score above +5 unless the feature explicitly says so. In addition, every character's proficiency bonus increases at certain levels.
 
-Each time you gain a level, you gain 1 additional Hit Die. Roll that Hit Die, add your Constitution modifier to the roll, and add the total to your hit point maximum. Alternatively, you can use the fixed value shown in your class entry, which is the average result of the die roll (rounded up).
+Each time you gain a level, you gain 1 additional Hit Die. This increases your maximum hit points by the average result of the die roll (rounded up) or half the maximum value of the die, plus 1 (which is the same result). Your maximum hit points also increase by your Constitution modifier. For example, a warden gains 7 (12 / 2 + 1) hit points from each additional hit die plus the value of his Constitution modifier.
 
-When your Constitution modifier increases by 1, your hit point maximum increases by 1 for each level you have attained. For example, if your 7th-level fighter has a Constitution score of 18, when he reaches 8th level, he increases his Constitution score from 17 to 18, thus increasing his Constitution modifier from +3 to +4. His hit point maximum then increases by 8.
+When your Constitution modifier increases by 1, your hit point maximum increases by 1 for each level you have attained. For example, if your 7th-level armsman has a Constitution score of +3, when he reaches 8th level and chooses to increase his Constitution score to +4, his hit point maximum then increases by 8.
 
 The Character Advancement table summarizes the XP you need to advance in levels from level 1 through level 20, and the proficiency bonus for a character of that level. Consult the information in your character's class description to see what other improvements you gain at each level.
 

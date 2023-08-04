@@ -23,6 +23,13 @@
 
 \newcommand*{\StatLine}[0]{\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}}
 
+\newcommand*{\BackgroundBlock}[4]{%
+	\subparagraph*{Proficiencies} #1
+	\subparagraph*{Languages} #2
+	\subparagraph*{Equipment} #3
+	\subparagraph*{Skill Trick} #4
+}
+
 \begin{document}
 \import{./}{character-creation.tex}
 \import{./lineages}{alternate-lineages.tex}

@@ -1,4 +1,4 @@
-\section{Warlock\label{class:warlock}}
+\section{Warlock}\label{class:warlock}
 
 Design Discussion: This one's going to change a lot (not yet done). The goal is to move toward the 3e version, with most things tied up in (class feature) eldritch blast + blast shapes + essences. Spellcasting will come only via invocations that grant the ability to grab specific spells off of specific (full-caster) lists. Only class that will get a familiar. SDCT 3/5-7/5-7/5.
 
@@ -36,8 +36,9 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Leather armor, any simple weapon, and two daggers
 \end{itemize}
 
-\begin{DndTable}[header=The Warlock\label{tbl:warlock}]{XXXXXXXXXXXX}
- Level & Proficiency Bonus & Features              & Cantrips Known & Blast Shapes & Blast Effects & Invocations & Stamina & Aether & Aether Limit \\
+\begin{figure*}[htb]
+\begin{DndTable}[header=The Warlock]{llXlllllllll}
+ \textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Cantrips} & \textbf{Shapes} & \textbf{Effects} & \textbf{Invocations} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\
  1st   & +2  & Otherworldly Patron, Eldritch Blast & 2  & ---  & ---  & --- & 1  & 3  & 2  \\
  2nd   & +2  & Eldritch Invocations, Blast Effects & 2  & ---  & 1    & 2   & 1  & 4  & 2  \\
  3rd   & +2  & Pact Boon                           & 2  & ---  & 1    & 3   & 2  & 7  & 3  \\
@@ -59,6 +60,7 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6  & Ability Score Improvement           & 4  & 8    & 4    & 11  & 8  & 55 & 22 \\
  20th  & +6  & Eldritch Master                     & 4  & 8    & 4    & 11  & 8  & 55 & 22 \\
 \end{DndTable}
+\end{figure*}
 
 \subsection{Otherworldly Patron}
 
@@ -128,7 +130,7 @@ When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can 
 
 \subsection{Blast Shapes}
 
-When you reach 5th level, you learn to modify the shape of your \textit{eldritch blast} in various ways. You learn one Blast Shape (detailed below) and can apply it by spending the indicated amount of AET. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the \nameref{tbl:warlock} table. Whenever you learn a new blast effect, you can choose one of the blast shapes you know and replace it with another blast shapes you could learn at that level.
+When you reach 5th level, you learn to modify the shape of your \textit{eldritch blast} in various ways. You learn one Blast Shape (detailed below) and can apply it by spending the indicated amount of AET. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the warlock table. Whenever you learn a new blast effect, you can choose one of the blast shapes you know and replace it with another blast shapes you could learn at that level.
 
 Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 (to a minimum of 0). Expending AET on Blast Shapes increases the effective cost of the eldritch blast for the purpose of overcoming resistances, immunities, and other effects that care about the aether cost of a spell.
 
@@ -150,13 +152,13 @@ If an eldritch invocation has prerequisites, you must meet them to learn it. You
 
 \subsubsection{Armor of Shadows}
 
-You can cast \textit{mage armor} on yourself at will, without expending aether or material components.
+You can cast \nameref{spell:mage-armor} on yourself at will, without expending aether or material components.
 
 \subsubsection{Ascendant Step}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{levitate} on yourself at will, without expending aether or material components or requiring concentration.
+You can cast \nameref{spell:levitate} on yourself at will, without expending aether or material components or requiring concentration.
 
 \subsubsection{Beast Speech}
 
@@ -165,12 +167,6 @@ You can cast speak with beasts at will, as if you were under the effects of the 
 \subsubsection{Beguiling Influence}
 
 You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills.
-
-\subsubsection{Bewitching Whispers}
-
-\textit{Prerequisite: 7th level}
-
-You can cast \textit{compulsion} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Book of Ancient Secrets}
 
@@ -184,7 +180,7 @@ Special: you can take this invocation more than once, learning a new incantation
 
 \textit{Prerequisite: 15th level, Pact of the Chain feature}
 
-You can cast \textit{hold monster} at will—targeting a celestial, fiend, or elemental—without expending aether or material components. You must finish a long rest before you can use this invocation on the same creature again.
+You can cast \nameref{spell:hold-monster} at will—targeting a celestial, fiend, or elemental—without expending aether or material components. You must finish a long rest before you can use this invocation on the same creature again.
 
 \subsubsection{Devil's Sight}
 
@@ -194,11 +190,11 @@ You can see normally in darkness, both magical and nonmagical, to a distance of 
 
 \textit{Prerequisite: 7th level}
 
-You can cast \textit{confusion} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:confusion} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Eldritch Sight}
 
-You can cast \textit{detect magic} at will, without expending aether.
+You are continually under the effect of the \nameref{inc:detect-aura} incantation as long as you are conscious. You can change which variety you are detecting as an action.
 
 \subsubsection{Eyes of the Rune Keeper}
 
@@ -206,7 +202,7 @@ You can read all writing.
 
 \subsubsection{Fiendish Vigor}
 
-You can cast \textit{false life} on yourself at will, without expending aether or material components. When you reach 5th level, it acts as if you spent 3 AET on it. At 9th level, you get the benefit of casting it with 5 AET.
+You can cast \nameref{spell:false-life} on yourself at will, without expending aether or material components. When you reach 5th level, it acts as if you spent 3 AET on it. At 9th level, you get the benefit of casting it with 5 AET.
 
 \subsubsection{Gaze of Two Minds}
 
@@ -220,29 +216,29 @@ When you hit a creature with your pact weapon, the creature takes extra necrotic
 
 \subsubsection{Mask of Many Faces}
 
-You can cast \textit{disguise self} at will, without expending aether.
+You can cast \nameref{spell:disguise-self} at will, without expending aether.
 
 \subsubsection{Master of Myriad Forms}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{alter self} at will, without expending aether.
+You can cast \nameref{spell:alter-self} at will, without expending aether.
 
 \subsubsection{Minions of Chaos}
 
 \textit{Prerequisite: 9th level}
 
-You can cast \textit{conjure elemental} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:conjure-elemental} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Mire the Mind}
 
 \textit{Prerequisite: 5th level}
 
-You can cast \textit{slow} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:slow} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Misty Visions}
 
-You can cast \textit{silent image} at will, without expending aether or material components.
+You can cast \nameref{spell:silent-image} at will, without expending aether or material components.
 
 \subsubsection{One with Shadows}
 
@@ -254,7 +250,7 @@ When you are in an area of dim light or darkness, you can use your action to bec
 
 \textit{Prerequisite: 3rd level}
 
-You can cast \textit{jump} on yourself at will, without expending aether or material components.
+You can cast \nameref{spell:jump} on yourself at will, without expending aether or material components.
 
 \subsubsection{Stolen Knowledge}
 
@@ -266,17 +262,17 @@ Special: you can select this invocation more than once. Each time, pick a differ
 
 \textit{Prerequisite: 7th level}
 
-You can cast \textit{polymorph} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:polymorph} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Sign of Ill Omen}
 
 \textit{Prerequisite: 5th level}
 
-You can cast \textit{bestow curse} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:bestow-curse} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Thief of Five Fates}
 
-You can cast \textit{bane} once without using aether. You can't do so again until you finish a long rest.
+You can cast \nameref{spell:bane} once without using aether. You can't do so again until you finish a long rest.
 
 \subsubsection{Thirsting Blade}
 
@@ -288,7 +284,7 @@ You can attack with your pact weapon twice, instead of once, whenever you take t
 
 \textit{Prerequisite: 12th level}
 
-You can cast \textit{arcane eye} at will, without expending aether.
+You can cast \nameref{spell:arcane-eye} at will, without expending aether.
 
 \subsubsection{Uncanny Skill}
 \textit{Prerequisite: 4th level}
@@ -305,7 +301,7 @@ You can communicate telepathically with your familiar and perceive through your 
 
 \textit{Prerequisite: 5th level}
 
-You learn the \textit{voice the voiceless} incantation and can cast it without a Ritual Scroll.
+You learn the \nameref{inc:voice-the-voiceless} incantation and can cast it without a Ritual Scroll.
 
 \subsubsection{Witch Sight}
 
@@ -374,17 +370,15 @@ Some patrons collect warlocks, doling out mystic knowledge relatively freely or 
 	If a warlock falls out of favor with their patron, DMs may decide that the warlock cannot progress further unless they find a new patron willing to swear the same sort of pact. Alternatively, the warlock can take steps to regain favor. This should not happen lightly or arbitrarily--this should further the narrative and be decided between player and DM and not used as a punishment.
 \end{DndComment}
 
-%TODO: rewrite
 \subsubsection{Pact of Destruction}
 
 Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.
 
 \subsubsection{Expanded Spell List}
 
-The Pact of Destruction grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells for you and you can cast them using aether.
+The Pact of Destruction grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
-\textbf{Destruction Spells (table)}
-\begin{DndTable}[header=Destruction Spells\label{tbl:fiend-spells}]{XX}
+\begin{DndTable}[header=Destruction Spells, width=0.5\linewidth]{lX}
  Warlock Level & Spells              \\
  3rd          & false life           \\
  5th          & flaming sphere 			 \\

@@ -1,4 +1,4 @@
-\section{Rogue\label:class:rogue}
+\section{Rogue}\label{class:rogue}
 
 Design Discussion: Less overtly criminal. Focuses on precision. Tons of skill tricks. Subclasses give overt magical abilities. SDCT 3/7/5/5
 \subsection{Class Features}
@@ -35,9 +35,9 @@ You start with the following equipment, in addition to the equipment granted by 
   \item (\textit{a}) Leather armor, two daggers, and thieves' tools
 \end{itemize}
 
-
-\begin{DndTable}[header=The Rogue\label{tbl:rogue}]{XXXXXXXX}
-	\textbf{Level} & \textbf{Proficiency Bonus} & \textbf{Sneak Attack} & \textbf{Features} & \textbf{Skill Tricks} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\
+\begin{figure*}[htb]
+\begin{DndTable}[header=The Rogue\label{tbl:rogue}]{lllXcccc}
+	\textbf{Level} & \textbf{Proficiency} & \textbf{Sneak Attack} & \textbf{Features} & \textbf{Skill Tricks} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\
 	1st & +2 & 1d6 & Expertise, Sneak Attack & -- & 1 + CON & 1 & 1 \\
 	2nd & +2 & 1d6 & Cunning Action, Skill Tricks & 1 & 2 + CON & 1 & 1 \\
 	3rd & +2 & 2d6 & Roguish Archetype & 2 & 3 + CON & 2 & 1 \\
@@ -59,7 +59,7 @@ You start with the following equipment, in addition to the equipment granted by 
 	19th & +6 & 10d6 & Ability Score Improvement & 9 & 19 + CON & 10 & 4 \\
 	20th & +6 & 11d6 & Stroke of Luck & 9 & 20 + CON & 10 & 4 \\
 \end{DndTable}
-
+\end{figure*}
 
 \subsubsection{Expertise}
 
@@ -83,7 +83,7 @@ Starting at 2nd level, your quick thinking and agility allow you to move and act
 
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one \nameref{sec:skill-tricks-basic} of your choice, even if you don't have proficiency in that skill. See \nameref{ch:skill-tricks} for more details and the rules governing skill tricks.
 
-You gain additional Skill Tricks as shown in the Skill Tricks column of the \nameref{tbl:rogue} table. When you reach 7th level, you can learn \nameref{sec:skill-tricks-advanced}; at 11th level \nameref{sec:skill-tricks-expert}; and 17th level \nameref{sec:skill-tricks-master}. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
+You gain additional Skill Tricks as shown in the Skill Tricks column of the Rogue table. When you reach 7th level, you can learn \nameref{sec:skill-tricks-advanced}; at 11th level \nameref{sec:skill-tricks-expert}; and 17th level \nameref{sec:skill-tricks-master}. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
@@ -95,7 +95,7 @@ At 3rd level, you choose an archetype that you emulate in the exercise of your r
 
 When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
-You can also pick a Skill Trick (included in the skill tricks column of the \nameref{tbl:rogue} table) but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list.
+You can also pick a Skill Trick (included in the skill tricks column of the Rogue table) but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list.
 
 \subsubsection{Uncanny Dodge}
 
@@ -127,15 +127,16 @@ At 20th level, you have an uncanny knack for succeeding when you need to. If you
 
 Once you use this feature, you can't use it again until you finish a short or long rest.
 
-\subsection{Roguish Archetypes}
+\section{Roguish Archetypes}
 
 Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques.
 
-\subsubsection{Shadowdancer}
+\subsection{Shadowdancer}
 
 Shadowdancers are infiltration and covert work specialists. They've trained their souls to the degree that they can truly become one with the shadows, wrapping the substance of the Shadow plane around themselves and slipping between the cracks just as that liminal plane "slips between the cracks" of the other planes. This lends them both extraordinary grace in combat as well as enhanced stealth abilities.
 
-\begin{DndTable}[header=Shadowdancer\label{tbl:shadowdancer}]{XX}
+\begin{figure*}[htb]
+\begin{DndTable}[header=Shadowdancer,width=0.5\linewidth]{lX}
 	\textbf{Rogue Level} & \textbf{Features} \\
 	3 & Shadow Strike, Stalk the Shadows \\
 	6 & Improved Uncanny Dodge \\
@@ -143,6 +144,7 @@ Shadowdancers are infiltration and covert work specialists. They've trained thei
 	13 & Shrouded Nature \\
 	17 & Ethereal Body \\
 \end{DndTable}
+\end{figure*}
 
 \subsubsection{Shadow Strike}
 Starting at 3rd level when you take this archetype, your strikes while in dimmed lighting are harder to stop. You have advantage on any attack made while you or your target are in any lighting condition other than sunlight.
@@ -161,7 +163,7 @@ Starting at 9th level, you can wrap the stuff of Shadow around yourself. You can
 \subsubsection{Shrouded Nature}
 Starting at 13th level, you have learned to shroud yourself in shadow even in bright light. As an action, you can expend 2 AET to create an aura of shadow around yourself for one hour. This magical aura leaves you lightly obscured and upgrades other sources of light obscurement to heavy obscurement. In addition, you always count as being in shadow for the purpose of Stalk the Shadows; neither your starting or ending point need to be shadowed by any external source.  
 
-\subsubsection(Ethereal Body)
+\subsubsection{Ethereal Body}
 Starting at 17th level, you have learned to transition to the Border Shadow more easily than most. As a bonus action while you are affected by Shrouded Nature, you can go fully ethereal. While you are ethereal you cannot be seen by any creature on the Mortal plane that does not have truesight, but you can see the Mortal plane. You can pass through walls and most barriers other than ones that explicitly affect the Border Shadow. You cannot affect the Mortal while ethereal. You can exit the Border Shadow as a bonus action.
 
 When you go ethereal, you can bring your gear, the objects you are carrying, and any unconscious creatures. You cannot bring a conscious creature with you, willing or not.

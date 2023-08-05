@@ -1,4 +1,4 @@
-\section{Spellblade\label{class:spellblade}}
+\section{Spellblade}\label{class:spellblade}
 
 Design Discussion: The half-rogue, half-arcanist gish. Skill tricks, mixing spell and magic. UCT is Arcane Manipulation (inverse bardic inspiration) + Channeling (cast spell as part of attack). SDC 3/6/6/5.
 
@@ -37,8 +37,9 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Leather armor and a dagger
 \end{itemize}
 
-\begin{DndTable}[header=Spellblade\label{tbl:spellblade}]{XXXXXXXXX}
- Level & Proficiency Bonus & Features                         & Spells Known & Cantrips Known & Skill Tricks & Stamina & Aether & Aether Limit \\ 
+\begin{figure*}[htb]
+\begin{DndTable}[header=Spellblade\label{tbl:spellblade}]{llXcccccc}
+ \textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Spells} & \textbf{Cantrips} & \textbf{Skill Tricks} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\ 
  1st   & +2 & Spellcasting, Arcane Manipulation (d6)        	& 1 + CHA      & 2              & --- & 1   & 2 & 1   \\  
  2nd   & +2 & Skill Tricks, Expertise                 				& 1 + CHA      & 2              & 1   & 2   & 4 & 2   \\   
  3rd   & +2 & Spellblade Focus                              	& 2 + CHA      & 2              & 1   & 3   & 6 & 3   \\   
@@ -60,6 +61,8 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6 & Ability Score Improvement                       & 10 + CHA     & 6              & 6   & 19  & 38 & 13 \\   
  20th  & +6 & Superior Inspiration                            & 10 + CHA     & 6              & 6   & 20  & 40 & 14 \\   
 \end{DndTable}
+\end{figure*}
+
 \subsection{Spellcasting}
 
 You have learned to untangle and reshape the fabric of reality in harmony with your wishes.
@@ -116,9 +119,9 @@ At 3rd level, you delve into the advanced techniques of a spellblade focus of yo
 
 \subsection{Ability Score Improvement}
 
-When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
-You can also pick a Skill Trick (included in the skill tricks column of the \nameref{tbl:spellblade} table) but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list.
+You can also pick a Skill Trick (included in the skill tricks column of the spellblade table) but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list.
 
 \subsection{Renewed Manipulation}
 
@@ -141,7 +144,7 @@ Additionally, you learn \textit{\nameref{spell:unbind}} if you do not already kn
 
 At 20th level, targets marked by your Arcane Manipulation must subtract the die from every attack roll or ability check they make for one minute. Only one saving throw is affected, regardless.
 
-\subsection{Spellblade Focuses}
+\section{Spellblade Focuses}
 \subsection{Focus: Inspiration}
 Basically "bard, as a subclass.
 
@@ -184,80 +187,42 @@ Starting at 18th level, targets of your Piercing Manipulation take additional fo
 At 18th level, you learn the legendary effect \nameref{spell:power-word-kill} and can use it once per day.
 
 \subsection{Spellblade Spell List}
-The Spellblade Spell List table contains a short summary of the spells available to all spellblade, ordered by aether cost. The details column may contain any of the following symbols:
-\begin{itemize}
-	\item \copyright : the spell requires concentration.
-	\item $\dagger$ : the spell requires an attack roll.
-	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
-	\item $\odot$ : The spell affects an area around yourself.
-	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
-	\item $\triangleleft$: The spell affects a cone.
-	\item $\rightarrow$: the spell affects a line.
-\end{itemize}
-
-\begin{DndTable}[header=Spellblade Spell List]{XXY}
-	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
-    c & \nameref{spell:acid-burst} & \\
-    c & \nameref{spell:dancing-lights} & \\
-    c & \nameref{spell:grave-touch} & \\
-    c & \nameref{spell:light} & \\
-		c & \nameref{spell:mage-hand} & \\
-    c & \nameref{spell:prestidigitation} & \\
-    c & \nameref{spell:produce-flame} & \\
-    c & \nameref{spell:ray-of-frost} & \\
-    c & \nameref{spell:resistance} & \\
-    c & \nameref{spell:shocking-grasp} & \\
-    1 & \nameref{spell:true-strike} & \\
-    2 & \nameref{spell:bane} & \\
-    2 & \nameref{spell:burning-hands} & \\
-    2 & \nameref{spell:color-spray} & \\
-    2 & \nameref{spell:disguise-self} & \\
-    2 & \nameref{spell:expeditious-retreat} & \\
-    2 & \nameref{spell:faerie-fire} & \\
-    2 & \nameref{spell:false-life} & \\
-    2 & \nameref{spell:flash-freeze} & \\
-    2 & \nameref{spell:fog-cloud} & \\
-    2 & \nameref{spell:inflict-wounds} & \\
-    2 & \nameref{spell:guiding-bolt} & \\
-    2 & \nameref{spell:hideous-laughter} & \\
-    2 & \nameref{spell:shield} & \\
-    2 & \nameref{spell:sleep} & \\
-    2 & \nameref{spell:thunderwave} & \\
-    3 & \nameref{spell:acid-arrow} & \\
-    3 & \nameref{spell:blur} & \\
-    3 & \nameref{spell:darkness} & \\
-    3 & \nameref{spell:enhance-ability} & \\
-    3 & \nameref{spell:enlarge-reduce} & \\
-    3 & \nameref{spell:flaming-sphere} & \\
-    3 & \nameref{spell:heat-metal} & \\
-    3 & \nameref{spell:invisibility} & \\
-    3 & \nameref{spell:levitate} & \\
-    3 & \nameref{spell:misty-step} & \\
-    3 & \nameref{spell:ray-of-enfeeblement} & \\
-    3 & \nameref{spell:scorching-ray} & \\
-    3 & \nameref{spell:shatter} & \\
-    4 & \nameref{spell:hold-person} & \\
-    4 & \nameref{spell:vampiric-touch} & \\
-    5 & \nameref{spell:bestow-curse} & \\
-    5 & \nameref{spell:blindness-deafness} & \\
-    5 & \nameref{spell:blink} & \\
-    5 & \nameref{spell:fear} & \\
-    5 & \nameref{spell:fireball} & \\
-    5 & \nameref{spell:hypnotic-pattern} & \\
-    5 & \nameref{spell:slow} & \\
-    5 & \nameref{spell:stinking-cloud} & \\
-    6 & \nameref{spell:blight} & \\
-    8 & \nameref{spell:arcane-eye} & \\
-    8 & \nameref{spell:banishment} & \\
-    8 & \nameref{spell:black-tentacles} & \\
-    8 & \nameref{spell:confusion} & \\
-    8 & \nameref{spell:dimension-door} & \\
-    8 & \nameref{spell:dominate-beast} & \\
-    8 & \nameref{spell:phantasmal-killer} & \\
-    10 & \nameref{spell:antilife-shell} & \\
-    10 & \nameref{spell:cone-of-cold} & \\
-    12 & \nameref{spell:contagion} & \\
-    12 & \nameref{spell:hold-monster} & \\
-    12 & \nameref{spell:mislead} & \\
-    12 & \nameref{spell:telekinesis} & \\
+The Spellblade Spell List table contains a short summary of the spells available to all spellblades, ordered by aether cost.
+\begin{figure*}[!ht]
+\begin{DndTable}[header=Spellblade Spell List,width=0.6\linewidth]{rlXrl}
+	\textbf{Aether Cost} & \textbf{Name} & & \textbf{Aether Cost} & \textbf{Name} \\
+    0 & \nameref{spell:acid-burst} & & 3 & \nameref{spell:invisibility}\\
+    0 & \nameref{spell:dancing-lights} & & 3 & \nameref{spell:levitate}\\
+    0 & \nameref{spell:grave-touch} & & 3 & \nameref{spell:misty-step}\\
+    0 & \nameref{spell:light} & & 3 & \nameref{spell:ray-of-enfeeblement} \\
+		0 & \nameref{spell:mage-hand} & & 3 & \nameref{spell:scorching-ray}\\
+    0 & \nameref{spell:prestidigitation} & & 3 & \nameref{spell:shatter}\\
+    0 & \nameref{spell:produce-flame} & & 4 & \nameref{spell:hold-person}\\
+    0 & \nameref{spell:ray-of-frost} & & 4 & \nameref{spell:vampiric-touch}\\
+    0 & \nameref{spell:resistance} & & 5 & \nameref{spell:bestow-curse}\\
+    0 & \nameref{spell:shocking-grasp} & & 5 & \nameref{spell:blindness-deafness}\\
+    1 & \nameref{spell:true-strike} & & 5 & \nameref{spell:blink}\\
+    2 & \nameref{spell:bane} & & 5 & \nameref{spell:fear}\\
+    2 & \nameref{spell:burning-hands} & & 5 & \nameref{spell:fireball}\\
+    2 & \nameref{spell:color-spray} & & 5 & \nameref{spell:hypnotic-pattern}\\
+    2 & \nameref{spell:disguise-self} & & 5 & \nameref{spell:slow}\\
+    2 & \nameref{spell:expeditious-retreat} & & 5 & \nameref{spell:stinking-cloud}\\
+    2 & \nameref{spell:faerie-fire} & & 6 & \nameref{spell:blight}\\
+    2 & \nameref{spell:false-life} & & 8 & \nameref{spell:arcane-eye}\\
+    2 & \nameref{spell:flash-freeze} & & 8 & \nameref{spell:banishment}\\
+    2 & \nameref{spell:fog-cloud} & & 8 & \nameref{spell:black-tentacles}\\
+    2 & \nameref{spell:inflict-wounds} & & 8 & \nameref{spell:confusion}\\
+    2 & \nameref{spell:guiding-bolt} & & 8 & \nameref{spell:dimension-door}\\
+    2 & \nameref{spell:hideous-laughter} & & 8 & \nameref{spell:dominate-beast}\\
+    2 & \nameref{spell:shield} & & 8 & \nameref{spell:phantasmal-killer}\\
+    2 & \nameref{spell:sleep} & & 10 & \nameref{spell:antilife-shell}\\
+    2 & \nameref{spell:thunderwave} & & 10 & \nameref{spell:cone-of-cold}\\
+    3 & \nameref{spell:acid-arrow} & & 12 & \nameref{spell:contagion}\\
+    3 & \nameref{spell:blur} & & 12 & \nameref{spell:hold-monster}\\
+    3 & \nameref{spell:darkness} & & 12 & \nameref{spell:mislead}\\
+    3 & \nameref{spell:enhance-ability} & & 12 & \nameref{spell:telekinesis}\\
+    3 & \nameref{spell:enlarge-reduce} & & & \\
+    3 & \nameref{spell:flaming-sphere} & & &\\
+    3 & \nameref{spell:heat-metal} & & & 
 \end{DndTable}
+\end{figure*}

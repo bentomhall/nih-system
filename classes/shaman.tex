@@ -35,6 +35,7 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Leather armor, an explorer's pack, and a shamanic focus
 \end{itemize}
 
+\begin{figure*}[htb]
 \begin{DndTable}[header=The Shaman\label{tbl:shaman}]{XXXXXXXXXXXXX}
  Level & Proficiency Bonus & Features                               & Cantrips Known & Spells Known & Stamina & Aether & Aether Limit \\
  1st   & +2                & Spellcasting                           & 2              & 2 + WIS   & 1    & 4     & 2   \\
@@ -58,6 +59,7 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6                & Ability Score Improvement              & 4              & 20 + WIS  & 10   & 76   & 16   \\
  20th  & +6                &                                        & 4              & 20 + WIS  & 10   & 80   & 17   \\
 \end{DndTable}
+\end{figure*}
 
 \subsection{Spellcasting}
 
@@ -69,7 +71,7 @@ At 1st level, you know two cantrips of your choice from the shaman spell list. Y
 
 \subsubsection{Preparing and Casting Spells}
 
-\nameref{tbl:shaman} table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
+The Shaman table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
 
 You know a certain number of shaman spells, choosing from the shaman spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of shaman spells equal to your Wisdom modifier + your shaman level (minimum of one spell). To prepare a spell you must be able to cast it without exceeding your Aether Limit.
 
@@ -116,7 +118,7 @@ You can also pick a Skill Trick but you must meet the prerequisites for skill tr
 
 Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.
 
-\subsection{Shaman Circles}
+\section{Shaman Circles}
 
 \subsection{Circle of the Spirit}
 
@@ -136,13 +138,15 @@ Your mystical connection to the spirits of nature and man infuses you with the a
 
 Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
 
-\begin{DndTable}[header=Spirit]{XX}
-    Shaman Level & Circle Spells      \\              
+\begin{figure*}[htb]
+\begin{DndTable}[header=Spirit, width=0.5\linewidth]{lX}
+    \textbf{Shaman Level} & \textbf{Circle Spells}      \\              
     3rd         & \nameref{spell:hold-person}, \nameref{spell:detect-thoughts} \\         
     5th         & \nameref{spell:spirit-guardians} \\
     7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
     9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
 \end{DndTable}
+\end{figure*}
 
 \subsubsection{Spirit's Advice}
 At 6th level, the spirits give you advice when you need it most. When you make an ability check and don't like the result, you can roll the dice again and take either result. Once you use this feature, you can't use it again until you finish a long or short rest.
@@ -168,100 +172,76 @@ Your mystical connection to the primal nature of the elements infuses you with t
 
 Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
 
-\begin{DndTable}[header=Elements]{XX}
-    Shaman Level & Circle Spells      \\              
+\begin{figure*}[htb]
+\begin{DndTable}[header=Elements,width=0.5\linewidth]{XX}
+    \textbf{Shaman Level} & \textbf{Circle Spells}      \\              
     3rd         & \nameref{spell:scorching-ray}, \nameref{spell:detect-thoughts} \\         
     5th         & \nameref{spell:spirit-guardians}, \\
     7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
     9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
 \end{DndTable}
+\end{figure*}
 
-\subsection{Shaman Spell List}
-The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost. The Details column may contain any of the following symbols:
+\subsubsection{Winds Whisper, Walls Have Ears}
+Starting at 6th level, the wind and earth bring you word of things going on elsewhere. If you meditate for 1 minute, you gain one of the following benefits depending on the terrain. Once you use this feature a number of times equal to your proficiency bonus, you cannot use it again until you finish a long rest.
+
+\subparagraph*{Open terrain} You sense the presence of any humanoids, giants, undead, or fiends within 1 mile. You know approximate numbers, directions, and distance, but not identity.
+\subparagraph*{Underground or enclosed terrain} You can cast your senses through a wall that you touch as part of your meditation and see and hear as if you were on the other side.
+
+\subsubsection{Elemental Resilience}
+Starting at 10th level, you can use your reaction to grant yourself a defensive benefit. Choose one of the following:
 \begin{itemize}
-	\item \copyright : the spell requires concentration.
-	\item $\dagger$ : the spell requires an attack roll.
-	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
-	\item $\odot$ : The spell affects an area around yourself.
-	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
-	\item $\triangleleft$: The spell affects a cone.
-	\item $\rightarrow$: the spell affects a line.
+	\item Earth: When you would take damage, you reduce the damage taken by half your level + your proficiency bonus.
+	\item Water: When you fail a saving throw that imposes a condition, you can reroll the saving throw and take the second result.
+	\item Air: During your turn, your movement speed doubles until the end of your turn and Opportunity Attacks against you are made at disadvantage.
+	\item Fire: When you are hit with an attack from an attacker you can see, you force the enemy to make a Dexterity saving throw against your spell save DC. On a failed save, the target takes fire damage equal to half your level + your proficiency bonus.
 \end{itemize}
 
-\onecolumn
-\begin{DndTable}[header=Shaman Spell List]{XXY}
-	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
-	c & \nameref{spell:acid-burst} & \\
-	c & \nameref{spell:dancing-lights} & \\
-	c & \nameref{spell:produce-flame} & \\
-	c & \nameref{spell:shillelagh} & \\
-	1 & \nameref{spell:cure-wounds} & \\
-	2 & \nameref{spell:bane} & \\
-	2 & \nameref{spell:burning-hands} & \\
-	2 & \nameref{spell:create-or-destroy-water} & \\
-	2 & \nameref{spell:entangle} & \\
-	2 & \nameref{spell:faerie-fire} & \\
-	2 & \nameref{spell:flash-freeze} & \\
-	2 & \nameref{spell:fog-cloud} & \\
-	2 & \nameref{spell:grease} & \\
-	2 & \nameref{spell:protection-from-otherworldly-influence} & \\
-	2 & \nameref{spell:sleep} & \\
-	2 & \nameref{spell:thunderwave} & \\
-	3 & \nameref{spell:acid-arrow} & \\
-	3 & \nameref{spell:alter-self} & \\
-	3 & \nameref{spell:barkskin} & \\
-	3 & \nameref{spell:blindness-deafness} & \\
-	3 & \nameref{spell:blur} & \\
-	3 & \nameref{spell:calm-emotions} & \\
-	3 & \nameref{spell:darkvision} & \\
-	3 & \nameref{spell:enlarge-reduce} & \\
-	3 & \nameref{spell:flame-blade} & \\
-	3 & \nameref{spell:flaming-sphere} & \\
-	3 & \nameref{spell:gust-of-wind} & \\
-	3 & \nameref{spell:heat-metal} & \\
-	3 & \nameref{spell:pass-without-trace} & \\
-	3 & \nameref{spell:protection-from-poison} & \\
-	3 & \nameref{spell:shatter} & \\
-	3 & \nameref{spell:spike-growth} & \\
-	3 & \nameref{spell:web} & \\
-	4 & \nameref{spell:moonbeam} & \\
-	4 & \nameref{spell:vampiric-touch} & \\
-	5 & \nameref{spell:bestow-curse} & \\
-	5 & \nameref{spell:conjure-animals} & \\
-	5 & \nameref{spell:gaseous-form} & \\
-	5 & \nameref{spell:lightning-bolt} & \\
-	5 & \nameref{spell:plant-growth} & \\
-	5 & \nameref{spell:sleet-storm} & \\
-	5 & \nameref{spell:slow} & \\
-	5 & \nameref{spell:stinking-cloud} & \\
-	5 & \nameref{spell:unbind} & \\
-	5 & \nameref{spell:wind-wall} & \\
-	6 & \nameref{spell:blight} & \\
-	6 & \nameref{spell:call-lightning} & \\
-	7 & \nameref{spell:ice-storm} & \\
-	7 & \nameref{spell:wall-of-thorns} & \\
-	8 & \nameref{spell:conjure-mephits} & \\
-	8 & \nameref{spell:conjure-woodland-beings} & \\
-	8 & \nameref{spell:control-water} & \\
-	8 & \nameref{spell:dominate-beast} & \\
-	8 & \nameref{spell:fire-shield} & \\
-	8 & \nameref{spell:giant-insect} & \\
-	8 & \nameref{spell:polymorph} & \\
-	8 & \nameref{spell:stone-shape} & \\
-	8 & \nameref{spell:stoneskin} & \\
-	8 & \nameref{spell:wall-of-fire} & \\
-	9 & \nameref{spell:mass-cure-wounds} & \\
-	10 & \nameref{spell:cone-of-cold} & \\
-	12 & \nameref{spell:conjure-elemental} & \\
-	12 & \nameref{spell:contagion} & \\
-	12 & \nameref{spell:dispel-otherworldly-influence} & \\
-	12 & \nameref{spell:move-earth} & \\
-	12 & \nameref{spell:passwall} & \\
-	12 & \nameref{spell:reincarnate} & \\
-	12 & \nameref{spell:wall-of-ice} & \\
-	12 & \nameref{spell:wall-of-stone} & \\
-	13 & \nameref{spell:chain-lightning} & \\
-	14 & \nameref{spell:cloudkill} & \\
-	14 & \nameref{spell:insect-plague} & \\
-\end{DndTable}
+Once you use this feature, you cannot use it again until you finish a long or short rest.
 
+\subsubsection{Elemental Summoning}
+You learn the \nameref{spell:conjure-elemental} spell if you do not know it already--it does not count against the number of spells you know. When you cast the spell, you get two elementals instead of one, both of the same type.
+
+\subsection{Shaman Spell List}
+The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost.
+
+\begin{figure*}[!ht]
+\begin{DndTable}[header=Shaman Spell List, width=0.7\linewidth]{rlXrl}
+	\textbf{Aether Cost} & \textbf{Name} & & \textbf{Aether Cost} & \textbf{Name}\\
+	0 & \nameref{spell:acid-burst} & & 5 & \nameref{spell:bestow-curse}\\
+	0 & \nameref{spell:dancing-lights} & & 5 & \nameref{spell:conjure-animals}\\
+	0 & \nameref{spell:produce-flame} & & 5 & \nameref{spell:gaseous-form}\\
+	0 & \nameref{spell:shillelagh} & & 5 & \nameref{spell:lightning-bolt}\\
+	1 & \nameref{spell:cure-wounds} & & 5 & \nameref{spell:plant-growth}\\
+	2 & \nameref{spell:bane} & & 5 & \nameref{spell:sleet-storm}\\
+	2 & \nameref{spell:burning-hands} & & 5 & \nameref{spell:slow}\\
+	2 & \nameref{spell:create-or-destroy-water} & & 5 & \nameref{spell:stinking-cloud}\\
+	2 & \nameref{spell:entangle} & & 5 & \nameref{spell:unbind}\\
+	2 & \nameref{spell:faerie-fire} & & 5 & \nameref{spell:wind-wall}\\
+	2 & \nameref{spell:flash-freeze} & & 6 & \nameref{spell:blight}\\
+	2 & \nameref{spell:fog-cloud} & & 6 & \nameref{spell:call-lightning}\\
+	2 & \nameref{spell:grease} & & 7 & \nameref{spell:ice-storm}\\
+	2 & \nameref{spell:protection-from-otherworldly-influence} & & 7 & \nameref{spell:wall-of-thorns}\\
+	2 & \nameref{spell:sleep} & & 8 & \nameref{spell:conjure-mephits}\\
+	2 & \nameref{spell:thunderwave} & & 8 & \nameref{spell:conjure-woodland-beings}\\
+	3 & \nameref{spell:acid-arrow} & & 8 & \nameref{spell:control-water}\\
+	3 & \nameref{spell:alter-self} & & 8 & \nameref{spell:dominate-beast}\\
+	3 & \nameref{spell:barkskin} & & 8 & \nameref{spell:fire-shield}\\
+	3 & \nameref{spell:blindness-deafness} & & 8 & \nameref{spell:giant-insect}\\
+	3 & \nameref{spell:blur} & & 8 & \nameref{spell:polymorph}\\
+	3 & \nameref{spell:calm-emotions} & & 8 & \nameref{spell:stone-shape}\\
+	3 & \nameref{spell:darkvision} & & 8 & \nameref{spell:stoneskin}\\
+	3 & \nameref{spell:enlarge-reduce} & & 8 & \nameref{spell:wall-of-fire}\\
+	3 & \nameref{spell:flame-blade} & & 9 & \nameref{spell:cone-of-cold}\\
+	3 & \nameref{spell:flaming-sphere} & & 10 & \nameref{spell:conjure-elemental}\\
+	3 & \nameref{spell:gust-of-wind} & & 12 & \nameref{spell:contagion}\\
+	3 & \nameref{spell:heat-metal} & & 12 & \nameref{spell:dispel-otherworldly-influence}\\
+	3 & \nameref{spell:pass-without-trace} & & 12 & \nameref{spell:move-earth}\\
+	3 & \nameref{spell:protection-from-poison} & & 12 & \nameref{spell:passwall}\\
+	3 & \nameref{spell:shatter} & & 12 & \nameref{spell:reincarnate}\\
+	3 & \nameref{spell:spike-growth} & & 12 & \nameref{spell:wall-of-ice}\\
+	3 & \nameref{spell:web} & & 12 & \nameref{spell:wall-of-stone}\\
+	4 & \nameref{spell:moonbeam} & & 12 & \nameref{spell:cloudkill}\\
+	4 & \nameref{spell:vampiric-touch} & & 14 & \nameref{spell:insect-plague}\\
+\end{DndTable}
+\end{figure*}

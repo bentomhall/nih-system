@@ -6,7 +6,7 @@ Subclasses:
 \begin{itemize}
 	\item Awakened: This is the self-taught "savant", whose powers are more instinctual than trained. They'll get more aether and some CHA-based abilities.
 	\item Book Mage: This is the closest to your classic "wizard". They'll get the ability to write in spells to have them always known and not counting against their limits, plus Ritual Caster.
-	\item Warmage: This Approach focuses on attacking. Gets motes when using metamagic, which do various things. Best at amplifying damage of spells. Gets light armor and some weapons.
+	%\item Warmage: This Approach focuses on attacking. Gets motes when using metamagic, which do various things. Best at amplifying damage of spells. Gets light armor and some weapons.
 \end{itemize}
 
 \subsection{Class Features}
@@ -43,8 +43,9 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Two daggers
 \end{itemize}
 
-\begin{DndTable}[header=The Arcanist\label{tbl:arcanist}]{XXXXXXXX}
- Level & Proficiency Bonus & Features        & Cantrips Known & Spells Known & Stamina & Aether & Aether Limit \\
+\begin{figure*}[htb]
+\begin{DndTable}[header=The Arcanist\label{tbl:arcanist}]{lcXccccc}
+ \textbf{Level} & \textbf{Proficiency} &\textbf{Features} & \textbf{Cantrips} & \textbf{Spells Known} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\
  1st   & +2  & Spellcasting, Arcane Approach & 4              & 2            & 1   & 4   & 2 \\
  2nd   & +2  & Font of Magic                 & 4              & 3            & 1   & 8   & 3 \\
  3rd   & +2  & Metamagic                     & 4              & 4            & 2   & 12   & 4 \\
@@ -54,8 +55,8 @@ You start with the following equipment, in addition to the equipment granted by 
  7th   & +3  & -                             & 5              & 8            & 4   & 28   & 8 \\
  8th   & +3  & Ability Score Improvement     & 5              & 9            & 4   & 32   & 9 \\
  9th   & +4  & Superior Metamagic            & 5              & 10           & 5   & 36   & 10 \\
- 10th  & +4  &                               & 6              & 11           & 5   & 40   & 11 \\
- 11th  & +4  &            & 6              & 12           & 6   & 44   & 12 \\
+ 10th  & +4  & -                             & 6              & 11           & 5   & 40   & 11 \\
+ 11th  & +4  & -                             & 6              & 12           & 6   & 44   & 12 \\
  12th  & +4  & Ability Score Improvement     & 6              & 12           & 6   & 48   & 13 \\
  13th  & +5  & Arcane Secrets (1)            & 6              & 13           & 7   & 52   & 13 \\
  14th  & +5  & Arcane Approach Feature       & 6              & 13           & 7   & 56   & 14 \\
@@ -66,6 +67,7 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6  & Ability Score Improvement     & 6              & 15           & 10   & 76   & 16 \\
  20th  & +6  & Sorcerous Restoration         & 6              & 15           & 10   & 80   & 17 \\
 \end{DndTable}
+\end{figure*}
 
 \subsection{Spellcasting}
 
@@ -77,25 +79,27 @@ At 1st level, you know four cantrips of your choice from the arcanist spell list
 
 \subsubsection{Preparing and Casting Spells}
 
-\nameref{tbl:arcanist} table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
+The Arcanist table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
 
-You know a certain number of arcanist spells, choosing from the arcanist spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of arcanist spells from your list as shown on the \nameref{tbl:arcanist} table. To prepare a spell you must be able to cast it without exceeding your Aether Limit.
+You know a certain number of arcanist spells, choosing from the arcanist spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of arcanist spells from your list as shown on the Arcanist table. To prepare a spell you must be able to cast it without exceeding your Aether Limit.
 
-\subsection{Spellcasting Ability}
+\subsubsection{Spellcasting Ability}
 
-Intelligence is your spellcasting ability for your arcanist spells, since the power of your magic relies on your ability to understand and recall the complex patterns of arcane magic. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a arcanist spell you cast and when making an attack roll with one.
+Intelligence is your spellcasting ability for your arcanist spells, since the power of your magic relies on your ability to understand and recall the complex patterns of arcane magic. You use your Intelligence whenever a spell refers to your spellcasting ability. 
+
+In addition, you use your Intelligence modifier when setting the saving throw DC for a arcanist spell you cast and when making an attack roll with one.
 
 \textbf{Spell save DC} = 8 + your proficiency bonus + your Intelligence modifier
 
 \textbf{Spell attack modifier} = your proficiency bonus + your Intelligence modifier
 
-\subsection{Spellcasting Focus}
+\subsubsection{Spellcasting Focus}
 
 You can use an arcane focus as a spellcasting focus for your arcanist spells.
 
 \subsection{Arcane Approach}
 
-Choose a arcane Approach, which describes the source of your magical training: Awakened Mage, Book Mage, or Warmage, all detailed at the end of the class description.
+Choose a arcane Approach, which describes the source of your magical training: Awakened Mage or Book Mage, both detailed at the end of the class description.
 
 Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
@@ -109,35 +113,35 @@ At 3rd level, you gain the ability to twist your spells to suit your needs. You 
 
 You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.
 
-\subsection{Careful Spell}
+\subsubsection{Careful Spell}
 
 When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 AET and choose a number of those creatures up to your Intelligence modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.
 
-\subsection{Distant Spell}
+\subsubsection{Distant Spell}
 
 When you cast a spell that has a range of 5 feet or greater, you can spend 1 AET to double the range of the spell.
 
 When you cast a spell that has a range of touch, you can spend 1 AET to make the range of the spell 30 feet.
 
-\subsection{Empowered Spell}
+\subsubsection{Empowered Spell}
 
 When you roll damage for a spell, you can spend 1 AET to reroll a number of the damage dice up to your Intelligence modifier (minimum of one). You must use the new rolls.
 
 You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
 
-\subsection{Extended Spell}
+\subsubsection{Extended Spell}
 
 When you cast a spell that has a duration of 1 minute or longer, you can spend 1 AET to double its duration, to a maximum duration of 24 hours.
 
-\subsection{Heightened Spell}
+\subsubsection{Heightened Spell}
 
 When you cast a spell that forces a creature to make a saving throw to resist or remove its effects, you can spend 3 AETs to give one target of the spell disadvantage on its saving throws made against the spell.
 
-\subsection{Quickened Spell}
+\subsubsection{Quickened Spell}
 
 When you cast a spell that has a casting time of 1 action, you can spend 2 AET to change the casting time to 1 bonus action for this casting.
 
-\subsection{Reshape Spell}
+\subsubsection{Reshape Spell}
 When you cast a spell that affects an area, you can spend 1 or more AET to change the shape of the spell. Choose one of the following.
 \begin{itemize}
   \item Increase the area of the spell. Increasing the radius of a spherical or circular effect (including a cylinder) costs 2 AET per 5 ft increase. Increasing the length of a line effect or a cone costs 1 AET per 5 ft increase.
@@ -145,11 +149,11 @@ When you cast a spell that affects an area, you can spend 1 or more AET to chang
   \item Concentrate the effect. This reduces the primary dimension (radius or length) of the spell to 1/2 of its original value (a 20 ft radius becomes a 10 ft radius, etc), but targets have disadvantage on the saving throw. This only affects spells that affect all creatures or objects in an area. This costs 4 AET.
 \end{itemize}
 
-\subsection{Subtle Spell}
+\subsubsection{Subtle Spell}
 
 When you cast a spell, you can spend 1 AET to cast it without any somatic or verbal components.
 
-\subsection{Twinned Spell}
+\subsubsection{Twinned Spell}
 
 When you cast a spell that targets only one creature and doesn't have a range of self, you can spend an amount of AET equal to 1/2 the spell's cost to target a second creature in range with the same spell (1 AET if the spell is a cantrip).
 
@@ -233,93 +237,47 @@ Starting at 14th level, your list of available Legendary Effects expands to incl
 Starting at 18th level, you can use any of your regular Legendary Effects twice per long rest instead of once.
 
 \subsection{Arcanist Spell List}
-The Arcanist Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost. The Details column may contain any of the following symbols:
-\begin{itemize}
-	\item \copyright : the spell requires concentration.
-	\item $\dagger$ : the spell requires an attack roll.
-	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
-	\item $\odot$ : The spell affects an area around yourself.
-	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
-	\item $\triangleleft$: The spell affects a cone.
-	\item $\rightarrow$: the spell affects a line.
-\end{itemize}
+The Arcanist Spell List table contains a list of the spells available to all Arcanists, ordered by aether cost.
 
 \onecolumn
-\begin{DndTable}[header=Arcanist Spell List]{XXY}
-	\textbf{Aether Cost} & \textbf{Name} & \textbf{Details} \\
-  c & \nameref{spell:acid-burst} & \\
-  c & \nameref{spell:dancing-lights} & \\
-  c & \nameref{spell:grave-touch} & \\
-  c & \nameref{spell:mage-hand} & \\
-  c & \nameref{spell:message} & \\
-  c & \nameref{spell:minor-illusion} & \\
-  c & \nameref{spell:prestidigitation} & \\
-  c & \nameref{spell:produce-flame} & \\
-  c & \nameref{spell:ray-of-frost} & \\
-  c & \nameref{spell:shocking-grasp} & \\
-  2 & \nameref{spell:burning-hands} & \\
-  2 & \nameref{spell:color-spray} & \\
-  2 & \nameref{spell:disguise-self} & \\
-  2 & \nameref{spell:expeditious-retreat} & \\
-  2 & \nameref{spell:false-life} & \\
-  2 & \nameref{spell:feather-fall} & \\
-  2 & \nameref{spell:flash-freeze} & \\
-  2 & \nameref{spell:fog-cloud} & \\
-  2 & \nameref{spell:grease} & \\
-  2 & \nameref{spell:mage-armor} & \\
-  2 & \nameref{spell:magic-missile} & \\
-  2 & \nameref{spell:shield} & \\
-  2 & \nameref{spell:silent-image} & \\
-  2 & \nameref{spell:sleep} & \\
-  2 & \nameref{spell:thunderwave} & \\
-  3 & \nameref{spell:acid-arrow} & \\
-  3 & \nameref{spell:alter-self} & \\
-  3 & \nameref{spell:blindness-deafness} & \\
-  3 & \nameref{spell:blur} & \\
-  3 & \nameref{spell:darkness} & \\
-  3 & \nameref{spell:detect-thoughts} & \\
-  3 & \nameref{spell:enlarge-reduce} & \\
-  3 & \nameref{spell:invisibility} & \\
-  3 & \nameref{spell:levitate} & \\
-  3 & \nameref{spell:mirror-image} & \\
-  3 & \nameref{spell:misty-step} & \\
-  3 & \nameref{spell:ray-of-enfeeblement} & \\
-  3 & \nameref{spell:scorching-ray} & \\
-  3 & \nameref{spell:shatter} & \\
-  3 & \nameref{spell:web} & \\
-  4 & \nameref{spell:hold-person} & \\
-  4 & \nameref{spell:vampiric-touch} & \\
-  5 & \nameref{spell:blink} & \\
-  5 & \nameref{spell:fear} & \\
-  5 & \nameref{spell:fireball} & \\
-  5 & \nameref{spell:haste} & \\
-  5 & \nameref{spell:hallucinatory-terrain} & \\
-  5 & \nameref{spell:hypnotic-pattern} & \\
-  5 & \nameref{spell:lightning-bolt} & \\
-  5 & \nameref{spell:major-image} & \\
-  5 & \nameref{spell:protection-from-energy} & \\
-  5 & \nameref{spell:slow} & \\
-  5 & \nameref{spell:stinking-cloud} & \\
-  5 & \nameref{spell:unbind} & \\
-  6 & \nameref{spell:blight} & \\
-  7 & \nameref{spell:ice-storm} & \\
-  8 & \nameref{spell:arcane-eye} & \\
-  8 & \nameref{spell:black-tentacles} & \\
-  8 & \nameref{spell:confusion} & \\
-  8 & \nameref{spell:conjure-mephits} & \\
-  8 & \nameref{spell:dimension-door} & \\
-  8 & \nameref{spell:faithful-hound} & \\
-  8 & \nameref{spell:greater-invisibility} & \\
-  8 & \nameref{spell:hallucinatory-terrain} & \\
-  8 & \nameref{spell:phantasmal-killer} & \\
-  8 & \nameref{spell:wall-of-fire} & \\
-  10 & \nameref{spell:cone-of-cold} & \\
-  12 & \nameref{spell:conjure-elemental} & \\
-  12 & \nameref{spell:hold-monster} & \\
-  12 & \nameref{spell:telekinesis} & \\
-  12 & \nameref{spell:wall-of-ice} & \\
-  13 & \nameref{spell:chain-lightning} & \\
-  14 & \nameref{spell:cloudkill} & \\
-  15 & \nameref{spell:wall-of-force} & \\
+\begin{DndTable}[header=Arcanist Spell List,width=0.75\linewidth]{rlXrl}
+	\textbf{Aether Cost} & \textbf{Name} & & \textbf{Aether Cost} & \textbf{Name} \\
+  0 & \nameref{spell:acid-burst} & & 3 & \nameref{spell:scorching-ray}\\
+  0 & \nameref{spell:dancing-lights} & & 3 & \nameref{spell:shatter} \\
+  0 & \nameref{spell:grave-touch} & & 3 & \nameref{spell:web}\\
+  0 & \nameref{spell:mage-hand} & & 4 & \nameref{spell:hold-person}\\
+  0 & \nameref{spell:message} & & 4 & \nameref{spell:vampiric-touch}\\
+  0 & \nameref{spell:minor-illusion} & & 5 & \nameref{spell:blink}\\
+  0 & \nameref{spell:prestidigitation} & & 5 & \nameref{spell:fear}\\
+  0 & \nameref{spell:produce-flame} & & 5 & \nameref{spell:fireball}\\
+  0 & \nameref{spell:ray-of-frost} & & 5 & \nameref{spell:haste}\\
+  0 & \nameref{spell:shocking-grasp} & & 5 & \nameref{spell:hallucinatory-terrain}\\
+  2 & \nameref{spell:burning-hands} & & 5 & \nameref{spell:hypnotic-pattern}\\
+  2 & \nameref{spell:color-spray} & & 5 & \nameref{spell:lightning-bolt}\\
+  2 & \nameref{spell:disguise-self} & & 5 & \nameref{spell:major-image}\\
+  2 & \nameref{spell:expeditious-retreat} & & 5 & \nameref{spell:protection-from-energy}\\
+  2 & \nameref{spell:false-life} & & 5 & \nameref{spell:slow}\\
+  2 & \nameref{spell:feather-fall} & & 5 & \nameref{spell:stinking-cloud}\\
+  2 & \nameref{spell:flash-freeze} & & 5 & \nameref{spell:unbind}\\
+  2 & \nameref{spell:fog-cloud} & & 6 & \nameref{spell:blight} \\
+  2 & \nameref{spell:grease} & & 7 & \nameref{spell:ice-storm}\\
+  2 & \nameref{spell:mage-armor} & & 8 & \nameref{spell:arcane-eye}\\
+  2 & \nameref{spell:magic-missile} & & 8 & \nameref{spell:black-tentacles}\\
+  2 & \nameref{spell:shield} & & 8 & \nameref{spell:confusion}\\
+  2 & \nameref{spell:silent-image} & & 8 & \nameref{spell:conjure-mephits}\\
+  2 & \nameref{spell:sleep} & & 8 & \nameref{spell:dimension-door}\\
+  2 & \nameref{spell:thunderwave} & & 8 & \nameref{spell:faithful-hound}\\
+  3 & \nameref{spell:acid-arrow} & & 8 & \nameref{spell:greater-invisibility}\\
+  3 & \nameref{spell:alter-self} & & 8 & \nameref{spell:hallucinatory-terrain}\\
+  3 & \nameref{spell:blindness-deafness} & & 8 & \nameref{spell:phantasmal-killer}\\
+  3 & \nameref{spell:blur} & & 8 & \nameref{spell:wall-of-fire}\\
+  3 & \nameref{spell:darkness} & & 10 & \nameref{spell:cone-of-cold}\\
+  3 & \nameref{spell:detect-thoughts} & & 12 & \nameref{spell:conjure-elemental}\\
+  3 & \nameref{spell:enlarge-reduce} & & 12 & \nameref{spell:hold-monster}\\
+  3 & \nameref{spell:invisibility} & & 12 & \nameref{spell:telekinesis}\\
+  3 & \nameref{spell:levitate} & &  12 & \nameref{spell:wall-of-ice}\\
+  3 & \nameref{spell:mirror-image} & & 13 & \nameref{spell:chain-lightning}\\
+  3 & \nameref{spell:misty-step} & & 14 & \nameref{spell:cloudkill}\\
+  3 & \nameref{spell:ray-of-enfeeblement} & & 15 & \nameref{spell:wall-of-force}
 \end{DndTable}
 

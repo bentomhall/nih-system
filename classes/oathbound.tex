@@ -36,8 +36,9 @@ You start with the following equipment, in addition to the equipment granted by 
 \item Chain mail and a holy symbol
 \end{itemize}
 
-\begin{DndTable}[header=The Oathbound\label{tbl:oathbound}]{XXXXXXX}
- Level & Proficiency Bonus & Features                                   & \textbf{Spells Known} & Stamina & Aether & Aether Limit \\
+\begin{figure*}[htb]
+\begin{DndTable}[header=The Oathbound\label{tbl:oathbound}]{llXcccc}
+ \textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Spells Known} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit} \\
  1st   & +2                & Divine Sense, Lay on Hands                 & --- & 1   & 2   & 1   \\
  2nd   & +2                & Fighting Style, Spellcasting, Divine Smite & 1 & 2   & 4   & 2   \\
  3rd   & +2                & Divine Health, Sacred Oath                 & 1 & 2   & 6   & 3    \\
@@ -59,16 +60,17 @@ You start with the following equipment, in addition to the equipment granted by 
  19th  & +6                & Ability Score Improvement                  & 9 & 10   & 38   & 13    \\
  20th  & +6                & Sacred Oath feature                        & 10 & 10   & 40   & 14   \\
 \end{DndTable}
+\end{figure*}
 
 \subsection{Divine Sense}
 
-The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the *hallow* spell.
+The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the *hallow* spell.
 
 You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.
 
 \subsection{Lay on Hands}
 
-Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your oathbound level × 5.
+Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your oathbound level \texttimes$\space$ 5.
 
 As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.
 
@@ -198,11 +200,11 @@ Beginning at 14th level, you can use your action to end one spell on yourself or
 
 You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
 
-\subsection{Sacred Oaths}
+\section{Sacred Oaths}
 
 Becoming a oathbound involves taking vows that commit the oathbound to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the oathbound's training. Some characters with this class don't consider themselves true oathbounds until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the oathbound's heart.
 
-\subsubsection{Oath of Devotion}
+\subsection{Oath of Devotion}
 
 The Oath of Devotion binds a oathbound to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these oathbounds meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.
 
@@ -263,18 +265,9 @@ If a oathbound willfully violates his or her oath and shows no sign of repentanc
 
 \subsection{Oathbound Spell List}
 The Oathbound Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost. The Details column may contain any of the following symbols:
-\begin{itemize}
-	\item \copyright : the spell requires concentration.
-	\item $\dagger$ : the spell requires an attack roll.
-	\item \textbf{STR|DEX|CON|INT|WIS|CHA} : the spell requires a saving throw of the indicated type.
-	\item $\odot$ : The spell affects an area around yourself.
-	\item $\bigcirc$ : The spell affects an area around a point you can choose. Note: this may be a square, circle, or cylinder.
-	\item $\triangleleft$: The spell affects a cone.
-	\item $\rightarrow$: the spell affects a line.
-\end{itemize}
 
-\onecolumn
-\begin{DndTable}[header=Oathbound Spell List]{XX}
+\begin{figure*}[htb]
+\begin{DndTable}[header=Oathbound Spell List,width=0.5\linewidth]{lX}
 	\textbf{Aether Cost} & \textbf{Name}  \\
 	1 & \nameref{spell:cure-wounds}  \\
 	1 & \nameref{spell:true-strike}  \\
@@ -306,3 +299,4 @@ The Oathbound Spell List table contains a short summary of the spells available 
 	12 & \nameref{spell:true-seeing}  \\
 	12 & \nameref{spell:divine-wrath}
 \end{DndTable}
+\end{figure*}

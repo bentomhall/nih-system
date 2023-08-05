@@ -66,7 +66,7 @@ For every ability check, the GM decides which of the six abilities is relevant t
 
 The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency).
 
-\begin{DndTable}[header=Typical Difficulty Classes\label{tbl:dcs}]{XX}
+\begin{DndTable}[header=Typical Difficulty Classes,width=0.5\linewidth]{XX}
 	\textbf{Task Difficulty} & \textbf{DC} \\
 	Very easy & 5 \\
 	Easy & 10 \\
@@ -442,8 +442,8 @@ Characters in wagons, carriages, or other land vehicles choose a pace as normal.
 
 Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a *carpet of flying*, allow you to travel more swiftly.
 
-\begin{DndTable}[header=Travel Pace\label{tbl:travel-pace}]{XXXXX}
-    Pace & Distance per: Minute & Hour & Day & Effect \\
+\begin{DndTable}[header=Travel Pace,width=0.75\linewidth]{XXXXX}
+    \textbf{Pace} & \textbf{Distance per: Minute} & \textbf{Hour} & \textbf{Day} & \textbf{Effect} \\
     Fast & 400 feet & 4 miles & 32 miles & $-$5 penalty to passive Wisdom (Perception) scores \\
     Normal & 300 feet & 3 miles & 24 miles & -- \\
     Slow & 200 feet & 2 miles & 16 miles & Able to use stealth \\
@@ -513,9 +513,10 @@ Even gloomy days provide bright light, as do torches, lanterns, fires, and other
 
 Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.
 
+\begin{figure*}[htb]
 \begin{DndComment}{Visibility Ranges}
 Generally, creatures with human-like vision can see brightly-illuminated creatures and objects from a substantial distance (assuming nothing blocks their sight). A rule of thumb is that creatures and objects are visible and recognizable at the following distances based on their size, assuming normal contrast with the background (ie not camouflaged):
-\begin{DndTable}[header=Common visibility ranges]{XXX}
+\begin{DndTable}[header=Common visibility ranges,width=0.7\linewidth]{Xll}
 	\textbf{Size} & \textbf{Visible at...} \\
 	Objects smaller than 6 in x 6 in & 25 ft  \\
 	Objects smaller than 1 ft x 1 ft & 50 ft \\
@@ -533,6 +534,7 @@ As a rule of thumb, a candle flame in the darkness can be seen (obstructions all
 
 Adventurers can see the significant terrain features of the land about 2 miles from where they are, more if they high up (as much as 10 miles) or less if the area is heavily forested (as little as a few dozen feet).
 \end{DndComment}
+\end{figure*}
 
 \subsubsection{Blindsight}
 
@@ -552,7 +554,8 @@ Most creatures rely primarily on sight, but are still capable of hearing and sme
 \subsubsection{Hearing}
 For most humanoid (and similar) creatures, hearing is best at detecting \textit{presence and direction}, but not \textit{location} of creatures, and gives very little information about what they are doing. Background noise also plays a significant role in preventing hearing. As a rule of thumb, a Tiny or larger creature's movement produces enough noise to be audible out to at least 30 feet under normal conditions. If you cannot see the creature but can hear it, interactions that require pinpointing them are at disadvantage. If you can neither see nor hear the creature, they are hidden and you must guess their location (automatically failing any attempt to interact if you guess wrong). To prevent being heard within the normal hearing range, you need to have succeeded at a Hide attempt. 
 
-\begin{DndTable}[header=Normal Hearing Range]{XXX}
+\begin{figure*}[!ht]
+\begin{DndTable}[header=Normal Hearing Range,width=0.5\linewidth]{Xl}
 	\textbf{Noise} & \textbf{Audible Distance (ft)} \\
 	Whispering or slow movement & 30 \\
 	Conversation or normal movement & 60 \\
@@ -560,6 +563,7 @@ For most humanoid (and similar) creatures, hearing is best at detecting \textit{
 	Shouting, unamplified concerts, loud spells & 300 \\
 	Amplified concerts, explosions, thunder & 1 mile \\
 \end{DndTable}
+\end{figure*}
 
 Substantial background noise (noise at least two steps higher) generally moves the distance down one step. So fighting during a rock concert would be audible out to 60 ft (instead of 100 ft). If this would reduce the audible distance below 30 ft, cut the distance in half instead. Creatures with advanced hearing such as dogs, cats, bats, etc. can generally hear and locate sounds at double the distance or more.
 
@@ -693,16 +697,17 @@ The training lasts for 250 days and costs 1 gp per day. After you spend the requ
 A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A
 \textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
 
-\begin{DndComment}{Combat Step by Step\label{cmt:combat-step-by-step}}
-    \begin{enumerate}
-        \item \textbf{Determine surprise.} The GM determines whether anyone involved in the combat encounter is surprised.
-        \item \textbf{Establish positions.} The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.
-        \item \textbf{Roll initiative.} Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.
-        \item \textbf{Take turns.} Each participant in the battle takes a turn in initiative order.
-        \item \textbf{Begin the next round.} When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.
-    \end{enumerate}
-\end{DndComment}
-
+\begin{figure*}[htb]
+    \begin{DndComment}{Combat Step by Step\label{cmt:combat-step-by-step}}
+        \begin{enumerate}
+            \item \textbf{Determine surprise.} The GM determines whether anyone involved in the combat encounter is surprised.
+            \item \textbf{Establish positions.} The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.
+            \item \textbf{Roll initiative.} Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.
+            \item \textbf{Take turns.} Each participant in the battle takes a turn in initiative order.
+            \item \textbf{Begin the next round.} When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.
+        \end{enumerate}
+    \end{DndComment}
+\end{figure*}
 
 \subsection{Surprise}
 
@@ -841,7 +846,7 @@ Flying creatures enjoy many benefits of mobility, but they must also deal with t
 
 Each creature takes up a different amount of space. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
 
-\begin{DndTable}[header=Size Categories\label{tbl:size-categories}]{XX}
+\begin{DndTable}[header=Size Categories,width=0.5\linewidth]{lX}
     Size & Space \\
     Tiny & 2.5 by 2.5 ft. or smaller \\
     Small & 5 by 5 ft. \\
@@ -1085,8 +1090,6 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 \subparagraph*{Fire} Red dragons breathe fire, and many spells conjure flames to deal fire damage.
 
-\subparagraph*{Force} Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including \textit{magic missile} and \textit{spiritual weapon}.
-
 \subparagraph*{Lightning} A \textit{lightning bolt} spell and a blue dragon's breath deal lightning damage.
 
 \subparagraph*{Necrotic} Necrotic damage, dealt by certain undead and a spell such as \textit{chill touch}, withers matter and even the soul.
@@ -1107,7 +1110,7 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.
 
-If a creature or an object has \textbf{resistance} to a damage type, damage of that type is halved against it. If a creature or an object has \textbf{vulnerability} to a damage type, damage of that type is doubled against it.
+If a creature or an object has \textbf{resistance} to a damage type, damage of that type is halved against it. If a creature or an object has \textbf{vulnerability} to a damage type, damage dice of that type are maximized when applying to that creature.
 
 Resistance and then vulnerability are applied after all other modifiers to damage. For example, a creature has resistance to bludgeoning damage and is hit by an attack that deals 25 bludgeoning damage. The creature is also within a magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.
 
@@ -1119,7 +1122,7 @@ Unless it results in death, damage isn't permanent. Even death is reversible thr
 
 When a creature receives healing of any kind, hit points regained are added to its current hit points. A creature's hit points can't exceed its hit point maximum, so any hit points regained in excess of this number are lost. For example, a druid grants a ranger 8 hit points of healing. If the ranger has 14 current hit points and has a hit point maximum of 20, the ranger regains 6 hit points from the druid, not 8.
 
-A creature that has died can't regain hit points until magic such as the \textit{revivify} spell has restored it to life.
+A creature that has died can't regain hit points until magic such as the \nameref{spell:revivify} spell has restored it to life.
 
 \subsection{Dropping to 0 Hit Points}
 
@@ -1129,7 +1132,7 @@ When you drop to 0 hit points, you either die outright or fall unconscious, as e
 
 Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
 
-For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.
+For example, a priest with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.
 
 \subsubsection{Falling Unconscious}
 
@@ -1161,7 +1164,7 @@ Mighty villains and special nonplayer characters are common exceptions; the GM m
 
 \subsection{Knocking a Creature Out}
 
-Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable.
+Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee weapon attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable. Ranged weapon attacks can knock a creature out, but the creature is always severely wounded.
 
 \subsection{Temporary Hit Points}
 
@@ -1223,7 +1226,8 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 
 \subparagraph*{Armor Class}. An object's Armor Class is a measure of how difficult it is to deal damage to the object when striking it (because the object has no chance of dodging out of the way). The Object Armor Class table provides suggested AC values for various substances.
 
-\begin{DndTable}[header=Object Armor Class\label{tbl:object-ac}]{XX}
+\begin{figure*}[htb]
+\begin{DndTable}[header=Object Armor Class,width=0.5\linewidth]{Xl}
     \textbf{Substance} & \textbf{AC} \\
     Cloth, paper, rope  & 11 \\
     Crystal, glass, ice & 13 \\
@@ -1233,16 +1237,19 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
     Mithral             & 21 \\
     Adamantine          & 23 \\
 \end{DndTable}
+\end{figure*}
 
 \subparagraph*{Hit Points}. An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.
 
-\begin{DndTable}[header=Object Hit Points\label{tbl:object-hp}]{XXX}
+\begin{figure*}
+\begin{DndTable}[header=Object Hit Points,width=0.5\linewidth]{Xll}
         \textbf{Size} & \textbf{Fragile} & \textbf{Resilient} \\
         Tiny (bottle, lock) & 2 (1d4) & 5 (2d4) \\
         Small (chest, lute) & 3 (1d6) & 10 (3d6) \\
         Medium (barrel, chandelier) & 4 (1d8) & 18 (4d8) \\
         Large (cart, 10-ft.-by-10-ft. window) & 5 (1d10) & 27 (5d10) \\
 \end{DndTable}
+\end{figure*}
 
 \subparagraph*{Huge and Gargantuan Objects}. Normal weapons are of little use against many Huge and Gargantuan objects, such as a colossal statue, towering column of stone, or massive boulder. That said, one torch can burn a Huge tapestry, and an \textit{earthquake} spell can reduce a colossus to rubble. You can track a Huge or Gargantuan object's hit points if you like, or you can simply decide how long the object can withstand whatever weapon or force is acting against it. If you track hit points for the object, divide it into Large or smaller sections, and track each section's hit points separately. Destroying one of those sections could ruin the entire object. For example, a Gargantuan statue of a human might topple over when one of its Large legs is reduced to 0 hit points.
 

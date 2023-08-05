@@ -1,5 +1,5 @@
 ### Humans
-Known as “the devout kindred”, humans lacked the arcane power of the gwerin or the druidic might of the puun ihmisia and so were the first to turn to the gods for aid. With this divine aid they built empires that lasted for centuries, until in their hubris they turned to the arts demonic and the empires fell into civil war, the War of Souls. This war blasted the landscape with abyssal power, tainting large portions and cutting others off from the rest of the universe (blasting them out of time).
+Known as “the devout kindred”, humans lacked the arcane power of the gwerin or the kami-blessed might of the puun ihmisia and so were the first to turn to the gods for aid. With this divine aid they built empires that lasted for centuries, until in their hubris they turned to the arts demonic and the empires fell into civil war, the War of Souls. This war blasted the landscape with abyssal power, tainting large portions and cutting others off from the rest of the universe (blasting them out of time).
 
 Since then, humans have adapted. Now one of the most common races, their presence is felt in most of the Federated Nations. Three major varieties of human exist in this area--they are described below.
 

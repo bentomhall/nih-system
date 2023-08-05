@@ -45,7 +45,7 @@ You start with the following equipment, in addition to the equipment granted by 
 \end{itemize}
 
 \begin{figure*}[htb]
-\begin{DndTable}[header=The Priest\label{tbl:priest}]{llXcccccc}
+\begin{DndTable}[header=The Priest]{lcXcccccc}
  \textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Cantrips} & \textbf{Spells} & \textbf{Miracles} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit}  \\
  1st   & +2                & Spellcasting, Divine Domain                       & 3   & 2   & -   & 1 & 4 & 2 \\
  2nd   & +2                & Miracles, Divine Domain Feature								   & 3   & 3   & 1   & 1 & 8 & 3 \\
@@ -80,7 +80,7 @@ At 1st level, you know three cantrips of your choice from the priest spell list.
 
 \subsubsection{Preparing and Casting Spells}
 
-\nameref{tbl:priest} table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
+The Priest table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.
 
 You know a certain number of priest spells, choosing from the priest spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of priest spells equal to your Wisdom modifier + your priest level (minimum of one spell). To prepare a spell you must be able to cast it without exceeding your Aether Limit.
 
@@ -108,7 +108,8 @@ Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest
 
 At 2nd level, your relationship with your Ascended patron has grown to the point that you can make impromptu pleas for direct assistance and have them answered based on your faith. As an action, you state the nature of the assistance you desire and roll a d20 and add your Wisdom modifier. This is not an ability check and cannot be modified by any other feature. The result determines the outcome:
 
-\begin{DndTable}[header=Miracle Outcomes,width=0.5\linewidth]{lX}
+\begin{figure}
+\begin{DndTable}[header=Miracle Outcomes,width=0.7\linewidth]{lX}
 	\textbf{Check Result} & \textbf{Outcome} \\
 	Less than 5 & No intervention \\
 	5-9 & No intervention, but the daily use is not expended \\
@@ -116,6 +117,7 @@ At 2nd level, your relationship with your Ascended patron has grown to the point
 	14-19 & A priest spell with cost less than 5 AET, chosen by you, takes effect \\
 	20+ & Any spell with cost less than 5 AET, chosen by you, takes effect \\
 \end{DndTable}
+\end{figure}
 
 Once you use this feature once, you cannot use it again until you complete a long rest. The number of uses per day increases as shown on the Priest table.
 
@@ -144,8 +146,8 @@ Starting at 7th level, when you use your Divine Channel ability, you add your Wi
 
 \subsection{Improved Miracles}
 Starting at 7th level, the outcomes of your miracle uses have improved. Use the table below instead of the previous one.
-
-\begin{DndTable}[header=Miracle Outcomes,width=0.5\linewidth]{lX}
+\begin{figure}
+\begin{DndTable}[header=Miracle Outcomes,width=0.7\linewidth]{lX}
 	\textbf{Check Result} & \textbf{Outcome} \\
 	Less than 5 & No intervention \\
 	5-9 & No intervention, but the daily use is not expended \\
@@ -153,6 +155,7 @@ Starting at 7th level, the outcomes of your miracle uses have improved. Use the 
 	14-19 & A priest spell with cost less than 8 AET, chosen by you, takes effect \\
 	20+ & Any spell with cost less than 8 AET, chosen by you, takes effect \\
 \end{DndTable}
+\end{figure}
 
 \subsection{Divine Strike}
 
@@ -171,7 +174,8 @@ You can use each Legendary effect once per long rest, and your saving throw DC f
 \subsection{Supreme Miracles}
 At level 20, you can perform greater miracles. Use the table below to determine the outcome of your miracles. You can only gain the benefit of rolling a 25 on the check once per day; any other times that result comes up, treat it as a 24.
 
-\begin{DndTable}[header=Miracle Outcomes,width=0.5\linewidth]{lX}
+\begin{figure}
+\begin{DndTable}[header=Miracle Outcomes,width=0.7\linewidth]{lX}
 	\textbf{Check Result} & \textbf{Outcome} \\
 	Less than 5 & No intervention \\
 	5-9 & No intervention, but the daily use is not expended \\
@@ -180,6 +184,7 @@ At level 20, you can perform greater miracles. Use the table below to determine 
 	20-24 & Any spell, chosen by you, takes effect \\
 	25+ & Any legendary effect, chosen by you, takes effect.
 \end{DndTable}
+\end{figure}
 
 \section{Priest Domains}
 
@@ -262,7 +267,7 @@ Starting at 17th level, when you would normally roll one or more dice to restore
 The Priest Spell List table contains a short summary of the spells available to all Priest, ordered by aether cost. 
 
 \begin{figure*}[htb]
-\begin{DndTable}[header=Priest Spell List,width=0.75\linewidth]{rlXrl}
+\begin{DndTable}[header=Priest Spell List]{rlXrl}
 	\textbf{Aether Cost} & \textbf{Name} & & \textbf{Aether Cost} & \textbf{Name} \\
 	0 & \nameref{spell:grave-touch} & & 3 & \nameref{spell:silence}\\
 	0 & \nameref{spell:guidance} & & 3 & \nameref{spell:suggestion}\\
@@ -302,6 +307,6 @@ The Priest Spell List table contains a short summary of the spells available to 
 	3 & \nameref{spell:protection-from-poison} & & 12 & \nameref{spell:true-seeing}\\
 	3 & \nameref{spell:ray-of-enfeeblement} & & 12 & \nameref{spell:wall-of-stone}\\
 	3 & \nameref{spell:see-invisibility} & & 14 & \nameref{spell:sunbeam}\\
-	3 & \nameref{spell:shatter} & & 15 & \nameref{spell:blade-barrier}\\
+	3 & \nameref{spell:shatter} & & 15 & \nameref{spell:blade-barrier}
 \end{DndTable}
 \end{figure*}

@@ -59,6 +59,7 @@
     \end{DndMonsterLegendaryActions}
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
 
 \subsection{Animated Armor}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Animated Armor}
@@ -81,7 +82,7 @@
 ]
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Ankheg}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ankheg}
 \begin{multicols}{2}
@@ -102,7 +103,7 @@
 \DndMonsterAction{Spit} The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Azer}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Azer}
 \begin{multicols}{2}
@@ -170,7 +171,7 @@
 \DndMonsterAction{Teleport} The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Basilisk}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Basilisk}
 \begin{multicols}{2}
@@ -193,7 +194,7 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
 ]
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Behir}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Behir}
 \begin{multicols}{2}
@@ -231,6 +232,7 @@ The behir makes one bite attack against a Medium or smaller target it is grappli
 If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
 \subsection{Bugbear}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Bugbear}
 \begin{multicols}{2}
@@ -264,7 +266,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 ]
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Bulette}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Bulette}
 \begin{multicols}{2}
@@ -292,46 +294,46 @@ If the bulette jumps at least 15 feet as part of its movement, it can then use t
 \FloatBarrier
 \section{Monsters (C)}\label{sec:monsters-c}
 
-\subsection{Centaur}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Centaur}
-\begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
-\DndMonsterBasics[armor-class={12}, hit-points={45 (6d10 + 12)}, speed={50 ft.}]
-\MonsterStats{+4}{+2}{+2}{-1}{+1}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Athletics +6, Perception +3, Survival +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Elvish, Sylvan}, challenge={2 (450 XP)}]
-\DndMonsterAction{Charge} If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage.
+% \subsection{Centaur}
+% \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Centaur}
+% \begin{multicols}{2}
+% \DndMonsterType{Large monstrosity}
+% \DndMonsterBasics[armor-class={12}, hit-points={45 (6d10 + 12)}, speed={50 ft.}]
+% \MonsterStats{+4}{+2}{+2}{-1}{+1}{+0}
+% \DndMonsterDetails[saving-throws={}, skills={Athletics +6, Perception +3, Survival +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Elvish, Sylvan}, challenge={2 (450 XP)}]
+% \DndMonsterAction{Charge} If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage.
 
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.
-\DndMonsterAttack[
-	name=Pike,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=10,
-	dmg=\DndDice{1d10 + 4},
-	dmg-type=piercing
-]
-\DndMonsterAttack[
-	name=Hooves,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{2d6 + 4},
-	dmg-type=bludgeoning
-]
-\DndMonsterAttack[
-	name=Longbow,
-	distance=ranged,
-	type=weapon,
-	mod=+4,
-	range=150/600,
-	dmg=\DndDice{1d8 + 2},
-	dmg-type=piercing
-]
-\end{multicols}
-\end{DndMonster}
+% \DndMonsterSection{Actions}
+% \DndMonsterAction{Multiattack} The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.
+% \DndMonsterAttack[
+% 	name=Pike,
+% 	distance=melee,
+% 	type=weapon,
+% 	mod=+6,
+% 	reach=10,
+% 	dmg=\DndDice{1d10 + 4},
+% 	dmg-type=piercing
+% ]
+% \DndMonsterAttack[
+% 	name=Hooves,
+% 	distance=melee,
+% 	type=weapon,
+% 	mod=+6,
+% 	reach=5,
+% 	dmg=\DndDice{2d6 + 4},
+% 	dmg-type=bludgeoning
+% ]
+% \DndMonsterAttack[
+% 	name=Longbow,
+% 	distance=ranged,
+% 	type=weapon,
+% 	mod=+4,
+% 	range=150/600,
+% 	dmg=\DndDice{1d8 + 2},
+% 	dmg-type=piercing
+% ]
+% \end{multicols}
+% \end{DndMonster}
 
 \subsection{Chimera}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Chimera}
@@ -373,7 +375,7 @@ If the bulette jumps at least 15 feet as part of its movement, it can then use t
 The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Chuul}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Chuul}
 \begin{multicols}{2}
@@ -383,7 +385,7 @@ The dragon head exhales fire in a 15-foot cone. Each creature in that area must 
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={understands Deep Speech but can't speak}, challenge={4 (1,100 XP)}]
 \DndMonsterAction{Amphibious} The chuul can breathe air and water.
 
-\DndMonsterAction{Sense Magic} The chuul senses magic within 120 feet of it at will. This trait otherwise works like the \textit{detect magic} spell but isn't itself magical.
+\DndMonsterAction{Sense Magic} The chuul senses magic within 120 feet of it at will. This trait otherwise works like the \nameref{inc:sense-aura} spell but isn't itself magical.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.
@@ -401,7 +403,7 @@ The dragon head exhales fire in a 15-foot cone. Each creature in that area must 
 One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Cloaker}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Cloaker}
 \begin{multicols}{2}
@@ -445,7 +447,7 @@ Whenever any creature targets the cloaker with an attack or a harmful spell whil
 A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Cockatrice}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Cockatrice}
 \begin{multicols}{2}
@@ -466,7 +468,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 ]
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Couatl}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Couatl}
 \begin{multicols}{2}
@@ -475,9 +477,9 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \MonsterStats{+3}{+5}{+3}{+4}{+5}{+4}
 \DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={4 (1,100 XP)}]
 \DndMonsterAction{Innate Spellcasting} The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
-At will: \textit{detect evil and good}, \textit{detect magic}, \textit{detect thoughts}
-3/day each: \textit{bless}, \textit{create food and water}, \textit{cure wounds}, \textit{lesser restoration}, \textit{protection from poison}, \textit{sanctuary}, \textit{shield}
-1/day each: \textit{dream}, \textit{greater restoration}, \textit{scrying}
+At will: \textit{detect thoughts}
+3/day each: \textit{bless}, \textit{create food and water}, \textit{cure wounds}, \textit{protection from poison}, \textit{sanctuary}, \textit{shield}
+1/day each: 
 
 \DndMonsterAction{Magic weapons} The couatl's weapon attacks are magical.
 
@@ -507,6 +509,7 @@ At will: \textit{detect evil and good}, \textit{detect magic}, \textit{detect th
 
 \DndMonsterAction{Change Shape}
 The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
+
 In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
 \end{multicols}
 \end{DndMonster}
@@ -541,6 +544,8 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
+
 \subsection{Devil, Barbed}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Devil, Barbed}
 \begin{multicols}{2}
@@ -586,7 +591,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 ]
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Devil, Bearded}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Devil, Bearded}
 \begin{multicols}{2}
@@ -624,6 +629,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 ]
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
 \subsection{Devil, Bone}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Devil, Bone}
 \begin{multicols}{2}
@@ -658,6 +664,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 ]
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
 \subsection{Devil, Horned}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Devil, Horned}
 \begin{multicols}{2}
@@ -701,6 +708,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 ]
 \end{multicols}
 \end{DndMonster}
+\FloatBarrier
 \subsection{Devil, Ice}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Devil, Ice}
 \begin{multicols}{2}
@@ -713,7 +721,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 \DndMonsterSection{Actions}
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Doppelganger}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Doppelganger}
 \begin{multicols}{2}
@@ -742,7 +750,7 @@ A 15-foot radius of magical darkness extends out from the darkmantle, moves with
 The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Dretch}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Dretch}
 \begin{multicols}{2}
@@ -774,7 +782,7 @@ The doppelganger magically reads the surface thoughts of one creature within 60 
 A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.
 \end{multicols}
 \end{DndMonster}
-
+\FloatBarrier
 \subsection{Dragon, Wyrmling}
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Dragon, Wyrmling}
 \begin{multicols}{2}
@@ -782,11 +790,30 @@ A 10-foot radius of disgusting green gas extends out from the dretch. The gas sp
 \DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={33 (6d8 + 6)}, speed={30 ft., fly 60 ft.}]
 \MonsterStats{+2}{+0}{+1}{+0}{+0}{+1}
 \DndMonsterDetails[saving-throws={Dex +2, Con +3, Wis +2, Cha +3}, skills={Perception +4, Stealth +4}, damage-immunities={Variable based on color}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., darkvision 60 ft., passive Perception 14}, languages={Draconic}, challenge={2 (450 XP)}]
-\DndMonsterAction{Special Traits} Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.
+\DndMonsterAction{Special Traits} Pick one of the following based on color:
+\begin{itemize}
+	\item[] Amphibious: The dragon can breath both air and water.
+	\item[] Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.
+\end{itemize}
 
-\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
+\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
+\begin{itemize}
+	\item[] Black: Necrotic (CON)
+	\item[] Blue: Lightning (DEX)
+	\item[] Brass: Thunder (CON)
+	\item[] Bronze or Red: Fire (DEX)
+	\item[] Copper Acid (CON)
+	\item[] Green: Acid (DEX)
+	\item[] Gold: Radiant (DEX)
+	\item[] Silver or White: Cold (CON)
+\end{itemize}
 
-\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 10 ft radius sphere centered on a point within 60 ft\\n- Cone: 15 ft cone\\n- Line: 15 ft line that is 5 ft wide
+\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:
+\begin{itemize}
+	\item[] Ball: 10 ft radius sphere centered on a point within 60 ft
+	\item[] Cone: 15 ft cone
+	\item[] Line: 15 ft line that is 5 ft wide
+\end{itemize}
 
 \DndMonsterSection{Actions}
 \DndMonsterAttack[
@@ -814,11 +841,37 @@ To make a CR 4 version, add 6 hit dice (45 HP), increase the ability scores to 1
 \DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={142 (15d10 + 45)}, speed={40 ft., fly 80 ft.}]
 \MonsterStats{+5}{+1}{+3}{+2}{+1}{+3}
 \DndMonsterDetails[saving-throws={Dex +4, Con +7, Wis +4, Cha +6}, skills={Perception +6, +one}, damage-immunities={Variable by color}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., darkvision 120 ft., passive Perception 16}, languages={Common, Draconic}, challenge={8}]
-\DndMonsterAction{Special Traits} Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 15.\\n- Pick 3 spells that cost 2 AET. It can cast these 3x/day each.\\n- Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each.\\n- Pick 1 spell that costs 5 AET. It can cast this once/day.
+\DndMonsterAction{Special Traits} Pick one of the following based on color:
+\begin{itemize}
+	\item[] Amphibious: The dragon can breath both air and water.
+	\item[] Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.
+	\item[] Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
+	\item[] Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 15.
+	\begin{itemize}
+		\item[] Pick 3 spells that cost 2 AET. It can cast these 3x/day each.
+		\item[] Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each.
+		\item[] Pick 1 spell that costs 5 AET. It can cast this once/day.
+	\end{itemize}
+\end{itemize}
 
-\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
+\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
+\begin{itemize}
+	\item[] Black: Necrotic (CON)
+	\item[] Blue: Lightning (DEX)
+	\item[] Brass: Thunder (CON)
+	\item[] Bronze or Red: Fire (DEX)
+	\item[] Copper Acid (CON)
+	\item[] Green: Acid (DEX)
+	\item[] Gold: Radiant (DEX)
+	\item[] Silver or White: Cold (CON)
+\end{itemize}
 
-\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 15 ft radius sphere centered on a point within 60 ft\\n- Cone: 30 ft cone\\n- Line: 30 ft line that is 5 ft wide
+\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:
+\begin{itemize}
+	\item[] Ball: 15 ft radius sphere centered on a point within 60 ft
+	\item[] Cone: 30 ft cone
+	\item[] Line: 30 ft line that is 5 ft wide
+\end{itemize}
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The dragon makes three attacks: one with its bite and two with its claws.
@@ -855,11 +908,37 @@ To increase the dragon's CR to 10, increase its hit points by 21 (adding 2 hit d
 \DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={195 (17d12 + 85)}, speed={40 ft., fly 80 ft., swim 40 ft.}]
 \MonsterStats{+6}{+1}{+5}{+3}{+2}{+3}
 \DndMonsterDetails[saving-throws={Dex +6, Con +10, Wis +6, Cha +8}, skills={Perception +11, Stealth +7}, damage-immunities={Variable based on color}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., darkvision 120 ft., passive Perception 21}, languages={Common, Draconic}, challenge={14}]
-\DndMonsterAction{Special Traits} Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16.\\n- Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. \\n- Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each.\\n- Pick 1 spell that costs 8 AET. It can cast this once/day.
+\DndMonsterAction{Special Traits} Pick one of the following based on color:
+\begin{itemize}
+	\item[] Amphibious: The dragon can breath both air and water.\
+	\item[] Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.\
+	\item[] Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\
+	\item[] Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16.
+	\begin{itemize}
+		\item[] Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. 
+		\item[] Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each.
+		\item[] Pick 1 spell that costs 8 AET. It can cast this once/day.
+	\end{itemize}
+\end{itemize}
 
-\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
+\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
+\begin{itemize}
+	\item[]  Black: Necrotic (CON)
+	\item[] Blue: Lightning (DEX)
+	\item[] Brass: Thunder (CON)
+	\item[] Bronze or Red: Fire (DEX)
+	\item[] Copper Acid (CON)
+	\item[] Green: Acid (DEX)
+	\item[] Gold: Radiant (DEX)
+	\item[] Silver or White: Cold (CON)
+\end{itemize}
 
-\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 20 ft radius sphere centered on a point within 90 ft\\n- Cone: 60 ft cone\\n- Line: 60 ft line that is 10 ft wide
+\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:
+\begin{itemize}
+	\item[] Ball: 20 ft radius sphere centered on a point within 90 ft\
+	\item[] Cone: 60 ft cone\
+	\item[] Line: 60 ft line that is 10 ft wide
+\end{itemize}
 
 \DndMonsterAction{Legendary Resistance (3/Day)} If the dragon fails a saving throw, it can choose to succeed instead.
 
@@ -894,7 +973,7 @@ To increase the dragon's CR to 10, increase its hit points by 21 (adding 2 hit d
 	dmg-type=bludgeoning
 ]
 \DndMonsterAction{Frightful Presence}
-Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.
+Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
 \DndMonsterAction{Breath Weapon (recharge 5-6)}
 The dragon exhales energy in a burst (see Blast Shape). Each creature in that area must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.
 
@@ -907,6 +986,7 @@ The Dragon, Adult can take 3 legendary actions, choosing from the options below.
 \end{DndMonsterLegendaryActions}
 \subsection{Scaling}
 To increase the dragon's CR to 15, increase its hit points to 212, its ability scores to 25/12/23/17/15/17 (increasing its attack bonus to +12 and its weapon damage output by 1), its breath weapon to 63 (14d8), and increase each of its saving throw DCs by 1.
+
 To increase the dragon's CR to 16, increase its hit points to 225, its ability scores to 25/12/23/16/15/19, its breath weapon to 67 (15d8), its frightful presence DC to 18, its breath weapon DC to 19, and its wing attack DC to 20.
 \end{multicols}
 \end{DndMonster}
@@ -917,11 +997,37 @@ To increase the dragon's CR to 16, increase its hit points to 225, its ability s
 \DndMonsterBasics[armor-class={22 (natural armor)}, hit-points={350 (20d20 + 140)}, speed={40 ft., fly 80 ft.}]
 \MonsterStats{+8}{+1}{+7}{+4}{+2}{+4}
 \DndMonsterDetails[saving-throws={Dex +8, Con +14, Wis +9, Cha +11}, skills={Perception +16, Stealth +9}, damage-immunities={Variable based on color}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., darkvision 120 ft., passive Perception 26}, languages={Common, Draconic}, challenge={21}]
-\DndMonsterAction{Special Traits} Pick one of the following based on color:\\n- Amphibious: The dragon can breath both air and water.\\n- Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra moment.\\n- Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.\\n- Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 19.\\n- Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. \\n- Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each.\\n- Pick 1 spell that costs 13 AET. It can cast this once/day.
+\DndMonsterAction{Special Traits} Pick one of the following based on color:
+\begin{itemize}
+	\item[] Amphibious: The dragon can breath both air and water.
+	\item[]Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.
+	\item[]Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change.
+	\item[]Spellcasting. The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 19.
+	\begin{itemize}
+	\item[]Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. 
+	\item[]Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each.
+	\item[]Pick 1 spell that costs 14 AET or less. It can cast this once/day.
+	\end{itemize}
+\end{itemize}
 
-\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color\\n- Black: Necrotic (CON)\\n- Blue: Lightning (DEX)\\n- Brass: Thunder (CON)\\n- Bronze or Red: Fire (DEX)\\n- Copper Acid (CON)\\n- Green: Acid (DEX)\\n- Gold: Radiant (DEX)\\n- Silver or White: Cold (CON)
+\DndMonsterAction{Damage Type} The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color
+\begin{itemize}
+	\item[]Black: Necrotic (CON)
+	\item[]Blue: Lightning (DEX)
+	\item[]Brass: Thunder (CON)
+	\item[]Bronze or Red: Fire (DEX)
+	\item[]Copper Acid (CON)
+	\item[]Green: Acid (DEX)
+	\item[]Gold: Radiant (DEX)
+	\item[]Silver or White: Cold (CON)
+\end{itemize}
 
-\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:\\n- Ball: 40 ft radius sphere centered on a point within 120 ft\\n- Cone: 90 ft cone\\n- Line: 90 ft line that is 10 ft wide
+\DndMonsterAction{Blast Shape} The dragon's breath weapon targets an area chosen from the list below:
+\begin{itemize}
+	\item[]Ball: 40 ft radius sphere centered on a point within 120 ft
+	\item[]Cone: 90 ft cone
+	\item[]Line: 90 ft line that is 10 ft wide
+\end{itemize}
 
 \DndMonsterAction{Legendary Resistance (3/Day)} If the dragon fails a saving throw, it can choose to succeed instead.
 
@@ -956,7 +1062,7 @@ To increase the dragon's CR to 16, increase its hit points to 225, its ability s
 	dmg-type=bludgeoning
 ]
 \DndMonsterAction{Frightful Presence}
-Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.
+Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
 \DndMonsterAction{Breath Weapon (recharge 5-6)}
 The dragon exhales energy in an area (see Blast Shape). Each creature in that area must make a DC 22 saving throw of the type indicated for the dragon's color, taking 71 (13d10) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.
 
@@ -969,6 +1075,7 @@ The Dragon, Ancient can take 3 legendary actions, choosing from the options belo
 \end{DndMonsterLegendaryActions}
 \subsection{Scaling}
 To increase the dragon's CR to 22, increase its HP to 385 (22d20+154), its AC to 22, its breath weapon damage to 77 (14d10), and its saving throw DCs to 20 (Frightful Presence and spellcasting), 23 (Breath weapon), and 24 (Wing Attack).
+
 To increase the dragon's CR to 23, increase its HP to 487 (25d20+225), its AC to 23, its ability scores to 30/12/29/18/15/23 (increasing its attack bonus to +17 and the damage modifier of each physical attack to +10), its breath weapon damage to 88 (16d10), and its saving throw DCs to 21 (Frightful Presence and spellcasting), 24 (Breath weapon), and 25 (Wing Attack)/
 \end{multicols}
 \end{DndMonster}

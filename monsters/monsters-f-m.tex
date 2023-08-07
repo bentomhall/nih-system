@@ -1,272 +1,7 @@
 \section{Monsters (F)}\label{sec:monster-f}
-\subsection{Fiends}
-"Fiend" is the word used by mortals to describe any resident of the Astral or Abyssal (few make a differentiation, although the differences are many) summoned via ritual or magic into another plane as weapons or soldiers and given a body woven of aether to inhabit. These "combat forms" have become quite standardized over the centuries, chosen as much for their intimidating looks as for their raw combat potential. One side effect of this new form is that killing a fiend on the Mortal requires trapping their core essence and dispersing it--simply shattering the body by physical or magical force just ends the spell and sends them back to where they came from. It does irritate them considerably though; they can feel pain in their borrowed forms just like in their "true" forms.
-
-The more powerful the summoned entity, the greater expenditure of aether is required to house it. A Flame Fiend, for example, is one of the most potent of its kind and can summon others subservient to it, while an imp or a dretch are the lowliest, the latter barely capable of thought.
-
-Such aether-born shells, however, do have a weakness to silver, as it disrupts the complex patterns that contain their otherplanar essence. Damage done by silvered weapons leaves them weakened, if just for a moment.
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Barbed}
-\begin{multicols}{2}
-\DndMonsterType{Medium fiend}
-\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={110 (13d8 + 52)}, speed={30 ft.}]
-\MonsterStats{+3}{+3}{+4}{+1}{+2}{+2}
-\DndMonsterDetails[saving-throws={Str +6, Con +7, Wis +5, Cha +5}, skills={Deception +5, Insight +5, Perception +8}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 18}, languages={Infernal, telepathy 120 ft.}, challenge={5}]
-\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
-
-\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The fiend makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.
-\DndMonsterAttack[
-	name=Claw,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{1d6 + 3},
-	dmg-type=piercing
-]
-\DndMonsterAttack[
-	name=Tail,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{2d6 + 3},
-	dmg-type=piercing
-]
-
-\DndMonsterAttack[
-	name=Hurl Flame,
-	type=spell,
-	distance=ranged,
-	mod=+5,	
-	range=150,
-	dmg=\DndDice{3d6},
-	extra={If the target is a flammable object that isn't being worn or carried, it also catches fire.}
-]
-
-\DndMonsterAction{Barbed Hide} As a bonus action, the barbed fiend deals 5 (1d10) piercing damage to any creature grappling it or grappled by it.
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Bearded}
-	\DndMonsterType{Medium fiend}
-	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={52 (8d8 + 16)}, speed={30 ft.}]
-	\MonsterStats{+3}{+2}{+2}{-1}{+0}{+0}
-	\DndMonsterDetails[saving-throws={Str +5, Con +4, Wis +2}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={Infernal, telepathy 120 ft.}, challenge={3 (700 XP)}]
-	\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-	\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
-	
-	\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
-	
-	\DndMonsterAction{Steadfast} The fiend can't be frightened while it can see an allied creature within 30 feet of it.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The fiend makes two attacks: one with its beard and one with its glaive.
-	\DndMonsterAttack[
-		name=Beard,
-		distance=melee,
-		type=weapon,
-		mod=+5,
-		reach=5,
-		dmg=\DndDice{1d8 + 2},
-		dmg-type=piercing,
-		extra={, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
-	]
-	\DndMonsterAttack[
-		name=Glaive,
-		distance=melee,
-		type=weapon,
-		mod=+5,
-		reach=10,
-		dmg=\DndDice{1d10 + 3},
-		dmg-type=slashing,
-		extra={. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the fiend hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check.}
-	]
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Bone}
-\begin{multicols}{2}
-\DndMonsterType{Large fiend}
-\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={142 (15d10 + 60)}, speed={40 ft., fly 40 ft.}]
-\MonsterStats{+4}{+3}{+4}{+1}{+2}{+3}
-\DndMonsterDetails[saving-throws={Int +5, Wis +6, Cha +7}, skills={Deception +7, Insight +6}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 12}, languages={Infernal, telepathy 120 ft.}, challenge={9}]
-\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
-
-\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The fiend makes three attacks: two with its claws and one with its sting.
-\DndMonsterAttack[
-	name=Claw,
-	distance=melee,
-	type=weapon,
-	mod=+8,
-	reach=10,
-	dmg=\DndDice{1d8 + 4},
-	dmg-type=slashing
-]
-\DndMonsterAttack[
-	name=Sting,
-	distance=melee,
-	type=weapon,
-	mod=+8,
-	reach=10,
-	dmg=\DndDice{2d8 + 4},
-	dmg-type=piercing,
-	extra={ plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
-]
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Flame}
-\begin{multicols}{2}
-\DndMonsterType{Huge fiend}
-\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={262 (21d12 + 126)}, speed={40 ft., fly 80 ft.}]
-\MonsterStats{+8}{+2}{+6}{+5}{+3}{+6}
-\DndMonsterDetails[saving-throws={Str +14, Con +12, Wis +9, Cha +12}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold, lightning}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={truesight 120 ft., passive Perception 13}, languages={Abyssal, telepathy 120 ft.}, challenge={19}]
-\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-\DndMonsterAction{Death Throes} When the flame fiend dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the flame fiend's weapons.
-
-\DndMonsterAction{Magic Resistance} The flame fiend has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Magic weapons} The flame fiend's weapon attacks are magical.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The flame fiend makes two attacks: one with its longsword and one with its whip.
-\DndMonsterMelee[
-    name=Longsword,
-    mod=+14,
-    reach=10,
-    dmg=\DndDice{3d8+8},
-    dmg-type=slashing,
-    plus-dmg=\DndDice{3d8},
-    plus-dmg-type=lightning,
-    extra={If the flame fiend scores a critical hit, it rolls damage dice three times, instead of twice.}
-]
-\DndMonsterMelee[
-    name=Whip,
-    mod=+14,
-    reach=30,
-    dmg=\DndDice{2d6+8},
-    dmg-type=slashing,
-    plus-dmg=\DndDice{3d6},
-    plus-dmg-type=fire,
-    extra={, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the flame fiend.}
-]
-\DndMonsterAction{Teleport} The flame fiend magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
-
-\DndMonsterAction{Fire Aura} As a bonus action, the flame fiend makes each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the flame fiend or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Fiend, Horned}
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Horned}
-\begin{multicols}{2}
-\DndMonsterType{Large fiend}
-\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={148 (17d10 + 55)}, speed={20 ft., fly 60 ft.}]
-\MonsterStats{+6}{+3}{+5}{+1}{+3}{+3}
-\DndMonsterDetails[saving-throws={Str +10, Dex +7, Wis +7, Cha +7}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 13}, languages={Infernal, telepathy 120 ft.}, challenge={11 (7,200 XP)}]
-\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
-
-\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The fiend makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.
-\DndMonsterAttack[
-	name=Fork,
-	distance=melee,
-	type=weapon,
-	mod=+10,
-	reach=10,
-	dmg=\DndDice{2d8 + 6},
-	dmg-type=piercing
-]
-\DndMonsterAttack[
-	name=Tail,
-	distance=melee,
-	type=weapon,
-	mod=+10,
-	reach=10,
-	dmg=\DndDice{1d8 + 6},
-	dmg-type=piercing,
-	extra={. If the target is a creature other than an undead or a construct, it must succeed on a DC 17 Constitution saving throw or lose 10 (3d6) hit points at the start of each of its turns due to an infernal wound. Each time the fiend hits the wounded target with this attack, the damage dealt by the wound increases by 10 (3d6). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.}
-]
-\DndMonsterAttack[
-	name=Hurl Flame,
-	type=spell,
-	distance=ranged,
-	mod=+7,	
-	range=150,
-	dmg=\DndDice{4d6},
-	extra={If the target is a flammable object that isn't being worn or carried, it also catches fire.}
-]
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Ice}
-\begin{multicols}{2}
-\DndMonsterType{Large fiend}
-\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={180 (19d10 + 76)}, speed={40 ft.}]
-\MonsterStats{+5}{+2}{+4}{+4}{+2}{+4}
-\DndMonsterDetails[saving-throws={Dex +7, Con +9, Wis +7, Cha +9}, skills={}, damage-immunities={cold, fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={blindsight 60 ft., darkvision 120 ft., passive Perception 12}, languages={Infernal, telepathy 120 ft.}, challenge={14}]
-\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
-
-\DndMonsterAction{Magic Resistance} The flame fiend has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The ice fiend makes three attacks: one with its bite, one with its claws, and one with its tail.
-
-\DndMonsterMelee[
-    name=Bite,
-    mod=+10,
-    reach=5,
-    dmg=\DndDice{2d6+5},
-    dmg-type=piercing,
-    plus-dmg=\DndDice{3d6},
-    plus-dmg-type=cold
-]
-\DndMonsterMelee[
-    name=Claws,
-    mod=+10,
-    reach=5,
-    dmg=\DndDice{2d4+5},
-    dmg-type=slashing,
-    plus-dmg=\DndDice{3d6},
-    plus-dmg-type=cold
-]
-\DndMonsterMelee[
-    name=Tail,
-    mod=+10,
-    reach=10,
-    dmg=\DndDice{2d6+5},
-    dmg-type=piercing,
-    plus-dmg=\DndDice{3d6},
-    plus-dmg-type=cold
-]
-\DndMonsterAction{Wall of Ice (Recharge 6)}
-The fiend magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.
-
-When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.
-
-The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.
-\end{multicols}
-\end{DndMonster}
 
 \subsection{Fungus, Shrieker}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Fungus, Shrieker}
+\begin{DndMonster}[width=\textwidth + 8pt]{Fungus, Shrieker}
 \begin{multicols}{2}
 \DndMonsterType{Medium plant}
 \DndMonsterBasics[armor-class={5}, hit-points={13 (3d8)}, speed={0 ft.}]
@@ -281,7 +16,7 @@ The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wal
 \end{DndMonster}
 
 \subsection{Fungus, Violet}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Fungus, Violet}
+\begin{DndMonster}[width=\textwidth + 8pt]{Fungus, Violet}
 \begin{multicols}{2}
 \DndMonsterType{Medium plant}
 \DndMonsterBasics[armor-class={5}, hit-points={18 (4d8)}, speed={5 ft.}]
@@ -307,39 +42,10 @@ The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wal
 \section{Monsters (G)}\label{sec:monsters-g}
 
 \subsection{Gargoyle}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Gargoyle}
-\begin{multicols}{2}
-\DndMonsterType{Medium elemental}
-\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={52 (7d8 + 21)}, speed={30 ft., fly 60 ft.}]
-\MonsterStats{+2}{+0}{+3}{-2}{+0}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine}, damage-vulnerabilities={}, condition-immunities={exhaustion, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Terran}, challenge={2 (450 XP)}]
-\DndMonsterAction{False Appearance} While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.
 
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The gargoyle makes two attacks: one with its bite and one with its claws.
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d6 + 2},
-	dmg-type=piercing
-]
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d6 + 2},
-	dmg-type=slashing
-]
-\end{multicols}
-\end{DndMonster}
 
 \subsection{Gelatinous Cube}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Gelatinous Cube}
+\begin{DndMonster}[width=\textwidth + 8pt]{Gelatinous Cube}
 \begin{multicols}{2}
 \DndMonsterType{Large ooze}
 \DndMonsterBasics[armor-class={6}, hit-points={84 (8d10 + 40)}, speed={15 ft.}]
@@ -365,7 +71,7 @@ The cube moves up to its speed. While doing so, it can enter Large or smaller cr
 \end{DndMonster}
 
 \subsection{Ghast}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ghast}
+\begin{DndMonster}[width=\textwidth + 8pt]{Ghast}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead}
 \DndMonsterBasics[armor-class={13}, hit-points={36 (8d8)}, speed={30 ft.}]
@@ -399,7 +105,7 @@ The cube moves up to its speed. While doing so, it can enter Large or smaller cr
 \end{DndMonster}
 
 \subsection{Ghost}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ghost}
+\begin{DndMonster}[width=\textwidth + 8pt]{Ghost}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead}
 \DndMonsterBasics[armor-class={11}, hit-points={45 (10d8)}, speed={0 ft., fly 40 ft. (hover)}]
@@ -432,7 +138,7 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 \end{DndMonster}
 
 \subsection{Ghoul}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ghoul}
+\begin{DndMonster}[width=\textwidth + 8pt]{Ghoul}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead}
 \DndMonsterBasics[armor-class={12}, hit-points={22 (5d8)}, speed={30 ft.}]
@@ -461,410 +167,8 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Giant, Cloud}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Cloud}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={200 (16d12 + 96)}, speed={40 ft.}]
-\MonsterStats{+8}{+0}{+6}{+1}{+3}{+3}
-\DndMonsterDetails[saving-throws={Con +10, Wis +7, Cha +7}, skills={Insight +7, Perception +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 17}, languages={Common, Giant}, challenge={9 (5,000 XP)}]
-\DndMonsterAction{Keen Smell} The giant has advantage on Wisdom (Perception) checks that rely on smell.
-
-\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-At will: \textit{detect magic}, \textit{fog cloud}, \textit{light}
-
-3/day each: \textit{feather fall}, \textit{fly}, \textit{misty step}, \textit{telekinesis}
-
-1/day each: \textit{control weather}, \textit{gaseous form}
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two morningstar attacks.
-\DndMonsterAttack[
-	name=Morningstar,
-	distance=melee,
-	type=weapon,
-	mod=+12,
-	reach=10,
-	dmg=\DndDice{3d8 + 8},
-	dmg-type=piercing
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+12,
-	range=60/240,
-	dmg=\DndDice{4d10 + 8},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Giant, Fire}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Fire}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={18 (plate)}, hit-points={162 (13d12 + 78)}, speed={30 ft.}]
-\MonsterStats{+7}{-1}{+6}{+0}{+2}{+1}
-\DndMonsterDetails[saving-throws={Dex +3, Con +10, Cha +5}, skills={Athletics +11, Perception +6}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={Giant}, challenge={9 (5,000 XP)}]
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two greatsword attacks.
-\DndMonsterAttack[
-	name=Greatsword,
-	distance=melee,
-	type=weapon,
-	mod=+11,
-	reach=10,
-	dmg=\DndDice{6d6 + 7},
-	dmg-type=slashing
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+11,
-	range=60/240,
-	dmg=\DndDice{4d10 + 7},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Giant, Frost}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Frost}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={15 (patchwork armor)}, hit-points={138 (12d12 + 60)}, speed={40 ft.}]
-\MonsterStats{+6}{-1}{+5}{-1}{+0}{+1}
-\DndMonsterDetails[saving-throws={Con +8, Wis +3, Cha +4}, skills={Athletics +9, Perception +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Giant}, challenge={8 (3,900 XP)}]
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two greataxe attacks.
-\DndMonsterAttack[
-	name=Greataxe,
-	distance=melee,
-	type=weapon,
-	mod=+9,
-	reach=10,
-	dmg=\DndDice{3d12 + 6},
-	dmg-type=slashing
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+9,
-	range=60/240,
-	dmg=\DndDice{4d10 + 6},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Giant, Hill}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Hill}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={105 (10d12 + 40)}, speed={40 ft.}]
-\MonsterStats{+5}{-1}{+4}{-3}{-1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Giant}, challenge={5 (1,800 XP)}]
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two greatclub attacks.
-\DndMonsterAttack[
-	name=Greatclub,
-	distance=melee,
-	type=weapon,
-	mod=+8,
-	reach=10,
-	dmg=\DndDice{3d8 + 5},
-	dmg-type=bludgeoning
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+8,
-	range=60/240,
-	dmg=\DndDice{3d10 + 5},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Giant, Stone}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Stone}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={40 ft.}]
-\MonsterStats{+6}{+2}{+5}{+0}{+1}{-1}
-\DndMonsterDetails[saving-throws={Dex +5, Con +8, Wis +4}, skills={Athletics +12, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant}, challenge={7 (2,900 XP)}]
-\DndMonsterAction{Stone Camouflage} The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two greatclub attacks.
-\DndMonsterAttack[
-	name=Greatclub,
-	distance=melee,
-	type=weapon,
-	mod=+9,
-	reach=15,
-	dmg=\DndDice{3d8 + 6},
-	dmg-type=bludgeoning
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+9,
-	range=60/240,
-	dmg=\DndDice{4d10 + 6},
-	dmg-type=bludgeoning,
-	extra={. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.}
-]
-
-\DndMonsterAction{Rock Catching}
-If a rock or similar object is hurled at the giant, the giant can, as a reaction, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Giant, Storm}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Giant, Storm}
-\begin{multicols}{2}
-\DndMonsterType{Huge giant}
-\DndMonsterBasics[armor-class={16 (scale mail)}, hit-points={230 (20d12 + 100)}, speed={50 ft., swim 50 ft.}]
-\MonsterStats{+9}{+2}{+5}{+3}{+4}{+4}
-\DndMonsterDetails[saving-throws={Str +14, Con +10, Wis +9, Cha +9}, skills={Arcana +8, Athletics +14, History +8, Perception +9}, damage-immunities={lightning, thunder}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 19}, languages={Common, Giant}, challenge={13 (10,000 XP)}]
-\DndMonsterAction{Amphibious} The giant can breathe air and water.
-
-\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:
-
-At will: \textit{detect magic}, \textit{feather fall}, \textit{levitate}, \textit{light}
-
-3/day each: \textit{control weather}, \textit{water breathing}
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The giant makes two greatsword attacks.
-\DndMonsterAttack[
-	name=Greatsword,
-	distance=melee,
-	type=weapon,
-	mod=+14,
-	reach=10,
-	dmg=\DndDice{6d6 + 9},
-	dmg-type=slashing
-]
-\DndMonsterAttack[
-	name=Rock,
-	distance=ranged,
-	type=weapon,
-	mod=+14,
-	range=60/240,
-	dmg=\DndDice{4d12 + 9},
-	dmg-type=bludgeoning
-]
-\DndMonsterAction{Lightning Strike (Recharge 5–6)}
-The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Gibbering Mouther}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Gibbering Mouther}
-\begin{multicols}{2}
-\DndMonsterType{Medium aberration}
-\DndMonsterBasics[armor-class={9}, hit-points={67 (9d8 + 27)}, speed={10 ft., swim 10 ft.}]
-\MonsterStats{+0}{-1}{+3}{-4}{+0}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={prone}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={2 (450 XP)}]
-\DndMonsterAction{Aberrant Ground} The ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.
-
-\DndMonsterAction{Gibbering} The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.
-\DndMonsterAttack[
-	name=Bites,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	reach=5,
-	dmg=\DndDice{5d6},
-	dmg-type=piercing,
-	extra={. If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.}
-]
-\DndMonsterAction{Blinding Spittle (Recharge 5–6)}
-The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Goblin}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Goblin}
-\begin{multicols}{2}
-\DndMonsterType{Small humanoid (goblinoid)}
-\DndMonsterBasics[armor-class={15 (leather armor, shield)}, hit-points={7 (2d6)}, speed={30 ft.}]
-\MonsterStats{-1}{+2}{+0}{+0}{-1}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={Common, Goblin}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Nimble Escape} The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Scimitar,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d6 + 2},
-	dmg-type=slashing
-]
-\DndMonsterAttack[
-	name=Shortbow,
-	distance=ranged,
-	type=weapon,
-	mod=+4,
-	range=80/320,
-	dmg=\DndDice{1d6 + 2},
-	dmg-type=piercing
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Golem, Clay}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Golem, Clay}
-\begin{multicols}{2}
-\DndMonsterType{Large construct}
-\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={133 (14d10 + 56)}, speed={20 ft.}]
-\MonsterStats{+5}{-1}{+4}{-4}{-1}{-5}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 9}, languages={understands the languages of its creator but can't speak}, challenge={9 (5,000 XP)}]
-\DndMonsterAction{Acid Absorption} Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.
-
-\DndMonsterAction{Berserk} Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
-
-\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
-
-\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Magic Weapons} The golem's weapon attacks are magical.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The golem makes two slam attacks.
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+8,
-	reach=5,
-	dmg=\DndDice{2d10 + 5},
-	dmg-type=bludgeoning,
-	extra={. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \textit{greater restoration} spell or other magic.}
-]
-\DndMonsterAction{Haste (Recharge 5–6)}
-Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Golem, FLesh}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Golem, FLesh}
-\begin{multicols}{2}
-\DndMonsterType{Medium construct}
-\DndMonsterBasics[armor-class={9}, hit-points={93 (11d8 + 44)}, speed={30 ft.}]
-\MonsterStats{+4}{-1}{+4}{-2}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={5 (1,800 XP)}]
-\DndMonsterAction{Berserk} Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
-
-The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.
-
-\DndMonsterAction{Aversion to Fire} If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
-
-\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
-
-\DndMonsterAction{Lightning Absorption} Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.
-
-\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Magic Weapons} The golem's weapon attacks are magical.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The golem makes two slam attacks.
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+7,
-	reach=5,
-	dmg=\DndDice{2d8 + 4},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Golem, Iron}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Golem, Iron}
-\begin{multicols}{2}
-\DndMonsterType{Large construct}
-\DndMonsterBasics[armor-class={20 (natural armor)}, hit-points={210 (20d10 + 100)}, speed={30 ft.}]
-\MonsterStats{+7}{-1}{+5}{-4}{+0}{-5}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={16 (15,000 XP)}]
-\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
-
-\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Magic Weapons} The golem's weapon attacks are magical.
-\DndMonsterAction{Fire Absorption} Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The golem makes two melee attacks.
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+13,
-	reach=5,
-	dmg=\DndDice{3d8 + 7},
-	dmg-type=bludgeoning
-]
-\DndMonsterAttack[
-	name=Sword,
-	distance=melee,
-	type=weapon,
-	mod=+13,
-	reach=10,
-	dmg=\DndDice{3d10 + 7},
-	dmg-type=slashing
-]
-\DndMonsterAction{Poison Breath (Recharge 6)}
-The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Golem, Stone}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Golem, Stone}
-\begin{multicols}{2}
-\DndMonsterType{Large construct}
-\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={178 (17d10 + 85)}, speed={30 ft.}]
-\MonsterStats{+6}{-1}{+5}{-4}{+0}{-5}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={10 (5,900 XP)}]
-\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
-
-\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
-
-\DndMonsterAction{Magic Weapons} The golem's weapon attacks are magical.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The golem makes two slam attacks.
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+10,
-	reach=5,
-	dmg=\DndDice{3d8 + 6},
-	dmg-type=bludgeoning
-]
-\DndMonsterAction{Slow (Recharge 5-6)}
-The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-\end{multicols}
-\end{DndMonster}
-
 \subsection{Grick}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Grick}
+\begin{DndMonster}[width=\textwidth + 8pt]{Grick}
 \begin{multicols}{2}
 \DndMonsterType{Medium monstrosity}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={27 (6d8)}, speed={30 ft., climb 30 ft.}]
@@ -896,7 +200,7 @@ The golem targets one or more creatures it can see within 10 feet of it. Each ta
 \end{DndMonster}
 
 \subsection{Griffon}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Griffon}
+\begin{DndMonster}[width=\textwidth + 8pt]{Griffon}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={12}, hit-points={59 (7d10 + 21)}, speed={30 ft., fly 80 ft.}]
@@ -931,7 +235,7 @@ The golem targets one or more creatures it can see within 10 feet of it. Each ta
 \section{Monsters (H)}\label{sec:monsters-h}
 
 \subsection{Harpy}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Harpy}
+\begin{DndMonster}[width=\textwidth + 8pt]{Harpy}
 \begin{multicols}{2}
 \DndMonsterType{Medium monstrosity}
 \DndMonsterBasics[armor-class={11}, hit-points={38 (7d8 + 7)}, speed={20 ft., fly 40 ft.}]
@@ -966,35 +270,8 @@ A target that successfully saves is immune to this harpy's song for the next 24 
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Hell Hound}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Hell Hound}
-\begin{multicols}{2}
-\DndMonsterType{Medium fiend}
-\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={45 (7d8 + 14)}, speed={50 ft.}]
-\MonsterStats{+3}{+1}{+2}{-2}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={understands Infernal but can't speak it}, challenge={3 (700 XP)}]
-\DndMonsterAction{Keen Hearing and Smell} The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.
-
-\DndMonsterAction{Pack Tactics} The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+5,
-	reach=5,
-	dmg=\DndDice{1d8 + 3},
-	dmg-type=piercing,
-	extra={ plus 7 (2d6) fire damage.}
-]
-\DndMonsterAction{Fire Breath (recharge 5-6)}
-The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
 \subsection{Hippogriff}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Hippogriff}
+\begin{DndMonster}[width=\textwidth + 8pt]{Hippogriff}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={11}, hit-points={19 (3d10 + 3)}, speed={40 ft., fly 60 ft.}]
@@ -1025,40 +302,10 @@ The hound exhales fire in a 15-foot cone. Each creature in that area must make a
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Hobgoblin}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Hobgoblin}
-\begin{multicols}{2}
-\DndMonsterType{Medium humanoid (goblinoid)}
-\DndMonsterBasics[armor-class={18 (chain mail, shield)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
-\MonsterStats{+1}{+1}{+1}{+0}{+0}{-1}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Goblin}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Martial Advantage} Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.
 
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Longsword,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d8 + 1},
-	dmg-type=slashing,
-	extra={, or 6 (1d10 + 1) slashing damage if used with two hands.}
-]
-\DndMonsterAttack[
-	name=Longbow,
-	distance=ranged,
-	type=weapon,
-	mod=+3,
-	range=150/600,
-	dmg=\DndDice{1d8 + 1},
-	dmg-type=piercing
-]
-\end{multicols}
-\end{DndMonster}
 
 \subsection{Hydra}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Hydra}
+\begin{DndMonster}[width=\textwidth + 8pt]{Hydra}
 \begin{multicols}{2}
 \DndMonsterType{Huge monstrosity}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={172 (15d12 + 75)}, speed={30 ft., swim 30 ft.}]
@@ -1094,34 +341,12 @@ At the end of its turn, it grows two heads for each of its heads that died since
 \section{Monsters (I)}\label{sec:monsters-i}
 
 \subsection{Invisible Stalker}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Invisible Stalker}
-\begin{multicols}{2}
-\DndMonsterType{Medium elemental}
-\DndMonsterBasics[armor-class={14}, hit-points={104 (16d8 + 32)}, speed={50 ft., fly 50 ft. (hover)}]
-\MonsterStats{+3}{+4}{+2}{+0}{+2}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +8, Stealth +10}, damage-immunities={poison}, damage-resistances={bludgeoning, piercing, and slashing from nonmagical attacks}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 18}, languages={Auran, understands Common but doesn't speak it}, challenge={6 (2,300 XP)}]
-\DndMonsterAction{Invisibility} The stalker is invisible.
 
-\DndMonsterAction{Faultless Tracker} The stalker is given a quarry by its summoner. The stalker knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The stalker also knows the location of its summoner.
-
-\DndMonsterSection{Actions}
-\DndMonsterAction{Multiattack} The stalker makes two slam attacks.
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{2d6 + 3},
-	dmg-type=bludgeoning
-]
-\end{multicols}
-\end{DndMonster}
 
 \FloatBarrier
 \section{Monsters (J)}
 \subsection{Jelly, Ochre}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ochre Jelly}
+\begin{DndMonster}[width=\textwidth + 8pt]{Ochre Jelly}
 \begin{multicols}{2}
 \DndMonsterType{Large ooze}
 \DndMonsterBasics[armor-class={8}, hit-points={45 (6d10 + 12)}, speed={10 ft., climb 10 ft.}]
@@ -1152,7 +377,7 @@ When a jelly that is Medium or larger is subjected to lightning or slashing dama
 \section{Monsters (K)}\label{sec:monsters-k}
 
 \subsection{Kraken}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Kraken}
+\begin{DndMonster}[width=\textwidth + 8pt]{Kraken}
 \begin{multicols}{2}
 \DndMonsterType{Gargantuan monstrosity (titan)**}
 \DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={472 (27d20 + 189)}, speed={20 ft., swim 60 ft.}]
@@ -1204,7 +429,7 @@ The Kraken can take 3 legendary actions, choosing from the options below. Only o
 \section{Monsters (L)}\label{sec:monsters-l}
 
 \subsection{Lich}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Lich}
+\begin{DndMonster}[width=\textwidth + 8pt]{Lich}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead}
 \DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={135 (18d8 + 54)}, speed={30 ft.}]
@@ -1243,33 +468,8 @@ The Lich can take 3 legendary actions, choosing from the options below. Only one
 \FloatBarrier
 \section{Monsters (M)}\label{sec:monsters-m}
 
-\subsection{Magmin}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Magmin}
-\begin{multicols}{2}
-\DndMonsterType{Small elemental}
-\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={9 (2d6 + 2)}, speed={30 ft.}]
-\MonsterStats{-2}{+2}{+1}{-1}{+0}{+0}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire}, damage-resistances={bludgeoning, piercing, and slashing from nonmagical attacks}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Ignan}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Death Burst} When the magmin dies, it explodes in a burst of fire and magma. Each creature within 10 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one. Flammable objects that aren't being worn or carried in that area are ignited.
-
-\DndMonsterAction{Ignited Illumination} As a bonus action, the magmin can set itself ablaze or extinguish its flames. While ablaze, the magmin sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Touch,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{2d6},
-	dmg-type=fire,
-	extra={. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.}
-]
-\end{multicols}
-\end{DndMonster}
-
 \subsection{Manticore}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Manticore}
+\begin{DndMonster}[width=\textwidth + 8pt]{Manticore}
 \begin{multicols}{2}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={68 (8d10 + 24)}, speed={30 ft., fly 50 ft.}]
@@ -1310,7 +510,7 @@ The Lich can take 3 legendary actions, choosing from the options below. Only one
 \end{DndMonster}
 
 \subsection{Medusa}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Medusa}
+\begin{DndMonster}[width=\textwidth + 8pt]{Medusa}
 \begin{multicols}{2}
 \DndMonsterType{Medium monstrosity}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={127 (17d8 + 51)}, speed={30 ft.}]
@@ -1356,119 +556,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Dust Mephit}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Dust Mephit}
-\begin{multicols}{2}
-\DndMonsterType{Small elemental}
-\DndMonsterBasics[armor-class={12}, hit-points={17 (5d6)}, speed={30 ft., fly 30 ft.}]
-\MonsterStats{-3}{+2}{+0}{-1}{+0}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={fire}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={Auran, Terran}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Death Burst} When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.
-
-\DndMonsterAction{Innate Spellcasting (1/Day)} The mephit can innately cast \textit{sleep}, requiring no material components. Its innate spellcasting ability is Charisma.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d4 + 2},
-	dmg-type=slashing
-]
-\DndMonsterAction{Dust Breath (recharge 5-6)}
-The mephit exhales a 15- foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Ice Mephit}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Ice Mephit}
-\begin{multicols}{2}
-\DndMonsterType{Small elemental}
-\DndMonsterBasics[armor-class={11}, hit-points={21 (6d6)}, speed={30 ft., fly 30 ft.}]
-\MonsterStats{-2}{+1}{+0}{-1}{+0}{+1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +3}, damage-immunities={cold, poison}, damage-resistances={}, damage-vulnerabilities={bludgeoning, fire}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={Aquan, Auran}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Death Burst} When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.
-
-\DndMonsterAction{False Appearance} While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.
-
-\DndMonsterAction{Innate Spellcasting (1/Day)} The mephit can innately cast \textit{fog cloud}, requiring no material components. Its innate spellcasting ability is Charisma.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d4 + 1},
-	dmg-type=slashing,
-	extra={ plus 2 (1d4) cold damage.}
-]
-\DndMonsterAction{Frost Breath (recharge 5-6)}
-The mephit exhales a 15- foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Magma Mephit}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Magma Mephit}
-\begin{multicols}{2}
-\DndMonsterType{Small elemental}
-\DndMonsterBasics[armor-class={11}, hit-points={22 (5d6 + 5)}, speed={30 ft., fly 30 ft.}]
-\MonsterStats{-1}{+1}{+1}{-2}{+0}{+0}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +3}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={cold}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Ignan, Terran}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Death Burst} When the mephit dies, it explodes in a burst of lava. Each creature within 5 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
-
-\DndMonsterAction{False Appearance} While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma.
-
-\DndMonsterAction{Innate Spellcasting (1/Day)} The mephit can innately cast \textit{heat metal} (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d4 + 1},
-	dmg-type=slashing,
-	extra={ plus 2 (1d4) fire damage.}
-]
-\DndMonsterAction{Fire Breath (recharge 5-6)}
-The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
-\subsection{Steam Mephit}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Steam Mephit}
-\begin{multicols}{2}
-\DndMonsterType{Small elemental}
-\DndMonsterBasics[armor-class={10}, hit-points={21 (6d6)}, speed={30 ft., fly 30 ft.}]
-\MonsterStats{-3}{+0}{+0}{+0}{+0}{+1}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Aquan, Ignan}, challenge={1/4 (50 XP)}]
-\DndMonsterAction{Death Burst} When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (1d8) fire damage.
-
-\DndMonsterAction{Innate Spellcasting (1/Day)} The mephit can innately cast \textit{blur}, requiring no material components. Its innate spellcasting ability is Charisma.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	reach=5,
-	dmg=\DndDice{1d4},
-	dmg-type=slashing,
-	extra={ plus 2 (1d4) fire damage.}
-]
-\DndMonsterAction{Steam Breath (recharge 5-6)}
-The mephit exhales a 15- foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
 \subsection{Mimic}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Mimic}
+\begin{DndMonster}[width=\textwidth + 8pt]{Mimic}
 \begin{multicols}{2}
 \DndMonsterType{Medium monstrosity (shapechanger)}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={58 (9d8 + 18)}, speed={15 ft.}]
@@ -1507,7 +596,7 @@ The mephit exhales a 15- foot cone of scalding steam. Each creature in that area
 \end{DndMonster}
 
 \subsection{Mummy}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Mummy}
+\begin{DndMonster}[width=\textwidth + 8pt]{Mummy}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead**}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={58 (9d8 + 18)}, speed={20 ft.}]
@@ -1531,7 +620,7 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 \end{DndMonster}
 
 \subsection{Mummy Lord}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Mummy Lord}
+\begin{DndMonster}[width=\textwidth + 8pt]{Mummy Lord}
 \begin{multicols}{2}
 \DndMonsterType{Medium undead}
 \DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={20 ft.}]

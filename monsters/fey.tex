@@ -1,0 +1,38 @@
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Satyr}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium fey}
+	\DndMonsterBasics[armor-class={14 (leather armor)}, hit-points={31 (7d8)}, speed={40 ft.}]
+	\MonsterStats{+1}{+3}{+0}{+1}{+0}{+2}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Performance +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Common, Elvish, Sylvan}, challenge={1/2 (100 XP)}]
+	\DndMonsterAction{Magic Resistance} The satyr has advantage on saving throws against spells and other magical effects.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Ram,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{2d4 + 1},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Shortsword,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Shortbow,
+		distance=ranged,
+		type=weapon,
+		mod=+5,
+		range=80/320,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing
+	]
+	\end{multicols}
+\end{DndMonster}

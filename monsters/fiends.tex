@@ -1,0 +1,435 @@
+\section{Fiends}
+"Fiend" is the word used by mortals to describe any resident of the Astral or Abyssal (few make a differentiation, although the differences are many) summoned via ritual or magic into another plane as weapons or soldiers and given a body woven of aether to inhabit. These "combat forms" have become quite standardized over the centuries, chosen as much for their intimidating looks as for their raw combat potential. One side effect of this new form is that killing a fiend on the Mortal requires trapping their core essence and dispersing it--simply shattering the body by physical or magical force just ends the spell and sends them back to where they came from. It does irritate them considerably though; they can feel pain in their borrowed forms just like in their "true" forms.
+
+The more powerful the summoned entity, the greater expenditure of aether is required to house it. A Flame Fiend, for example, is one of the most potent of its kind and can summon others subservient to it, while an imp or a dretch are the lowliest, the latter barely capable of thought.
+
+Such aether-born shells, however, do have a weakness to silver, as it disrupts the complex patterns that contain their otherplanar essence. Damage done by silvered weapons leaves them weakened, if just for a moment.
+
+\begin{figure}
+	\begin{DndComment}{Hierarchy of Fiend Forms}
+		Stronger entities require larger, more expensive shells. Some particularly powerful entities, such as diabolical dons or demon princes, cannot be summoned by normal means--no summoner or ritual has enough power to create a stable body for them. They can appear via rifts, but they do so in their own proper form.
+
+		The hierarchy of regularly summoned forms goes (from weakest to strongest)
+		\begin{enumerate}
+			\item Stench fiends. These are barely sapient, merely a squggle of a fragment of a True Word at their core.Only the weakest summoners summon these, but other fiends often employ them as cannon fodder.
+			\item Imps. These are the lowest forms regularly summoned--they are common familiars. They trade their freedom for an ongoing piece of the summoner's energy or a claim on their soul (if demon). Scouts, messengers, and gossips mostly, they are fragile in combat.
+			\item Succubi/Incubi. The form used depends on the needs of the caster, not the entity's innate nature. Commonly used for means other than combat.
+			\item Bearded fiends, hell hounds, and barbed fiends. These are the workhorse fiendish form, probably the most commonly summoned type for actual combat.
+			\item Fury, Horned, and Ice fiends. These are the commanders. Often capable of summoning large numbers of others.
+			\item Flame fiends. These are the pinnacle of the summonable forms, acting as generals. Those more powerful than this cannot generally be summoned.
+		\end{enumerate}
+	\end{DndComment}
+\end{figure}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Stench}
+\begin{multicols}{2}
+\DndMonsterType{Small fiend}
+\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={18 (4d6 + 4)}, speed={20 ft.}]
+\MonsterStats{+0}{+0}{+1}{-3}{-1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={cold, fire, lightning}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 9}, languages={Abyssal, telepathy 60 ft. (works only with creatures that understand Abyssal)}, challenge={1/4 (50 XP)}]
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The stench fiend makes two attacks: one with its bite and one with its claws.
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{2d4},
+	dmg-type=slashing
+]
+\DndMonsterAction{Fetid Cloud (1/Day)}
+A 10-foot radius of disgusting green gas extends out from the stench fiend. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Barbed}
+\begin{multicols}{2}
+\DndMonsterType{Medium fiend}
+\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={110 (13d8 + 52)}, speed={30 ft.}]
+\MonsterStats{+3}{+3}{+4}{+1}{+2}{+2}
+\DndMonsterDetails[saving-throws={Str +6, Con +7, Wis +5, Cha +5}, skills={Deception +5, Insight +5, Perception +8}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 18}, languages={Infernal, telepathy 120 ft.}, challenge={5}]
+\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
+
+\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The fiend makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Tail,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=piercing
+]
+
+\DndMonsterAttack[
+	name=Hurl Flame,
+	type=spell,
+	distance=ranged,
+	mod=+5,	
+	range=150,
+	dmg=\DndDice{3d6},
+	extra={If the target is a flammable object that isn't being worn or carried, it also catches fire.}
+]
+
+\DndMonsterAction{Barbed Hide} As a bonus action, the barbed fiend deals 5 (1d10) piercing damage to any creature grappling it or grappled by it.
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Bearded}
+	\DndMonsterType{Medium fiend}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={52 (8d8 + 16)}, speed={30 ft.}]
+	\MonsterStats{+3}{+2}{+2}{-1}{+0}{+0}
+	\DndMonsterDetails[saving-throws={Str +5, Con +4, Wis +2}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={Infernal, telepathy 120 ft.}, challenge={3 (700 XP)}]
+	\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+	\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
+	
+	\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
+	
+	\DndMonsterAction{Steadfast} The fiend can't be frightened while it can see an allied creature within 30 feet of it.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The fiend makes two attacks: one with its beard and one with its glaive.
+	\DndMonsterAttack[
+		name=Beard,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d8 + 2},
+		dmg-type=piercing,
+		extra={, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+	]
+	\DndMonsterAttack[
+		name=Glaive,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=10,
+		dmg=\DndDice{1d10 + 3},
+		dmg-type=slashing,
+		extra={. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the fiend hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check.}
+	]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Bone}
+\begin{multicols}{2}
+\DndMonsterType{Large fiend}
+\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={142 (15d10 + 60)}, speed={40 ft., fly 40 ft.}]
+\MonsterStats{+4}{+3}{+4}{+1}{+2}{+3}
+\DndMonsterDetails[saving-throws={Int +5, Wis +6, Cha +7}, skills={Deception +7, Insight +6}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 12}, languages={Infernal, telepathy 120 ft.}, challenge={9}]
+\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
+
+\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The fiend makes three attacks: two with its claws and one with its sting.
+\DndMonsterAttack[
+	name=Claw,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=10,
+	dmg=\DndDice{1d8 + 4},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Sting,
+	distance=melee,
+	type=weapon,
+	mod=+8,
+	reach=10,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=piercing,
+	extra={ plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Flame}
+\begin{multicols}{2}
+\DndMonsterType{Huge fiend}
+\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={262 (21d12 + 126)}, speed={40 ft., fly 80 ft.}]
+\MonsterStats{+8}{+2}{+6}{+5}{+3}{+6}
+\DndMonsterDetails[saving-throws={Str +14, Con +12, Wis +9, Cha +12}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold, lightning}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={truesight 120 ft., passive Perception 13}, languages={Abyssal, telepathy 120 ft.}, challenge={19}]
+\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+\DndMonsterAction{Death Throes} When the flame fiend dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the flame fiend's weapons.
+
+\DndMonsterAction{Magic Resistance} The flame fiend has advantage on saving throws against spells and other magical effects.
+
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The flame fiend makes two attacks: one with its longsword and one with its whip.
+\DndMonsterMelee[
+    name=Longsword,
+    mod=+14,
+    reach=10,
+    dmg=\DndDice{3d8+8},
+    dmg-type=slashing,
+    plus-dmg=\DndDice{3d8},
+    plus-dmg-type=lightning,
+    extra={If the flame fiend scores a critical hit, it rolls damage dice three times, instead of twice.}
+]
+\DndMonsterMelee[
+    name=Whip,
+    mod=+14,
+    reach=30,
+    dmg=\DndDice{2d6+8},
+    dmg-type=slashing,
+    plus-dmg=\DndDice{3d6},
+    plus-dmg-type=fire,
+    extra={, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the flame fiend.}
+]
+\DndMonsterAction{Teleport} The flame fiend magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+\DndMonsterAction{Fire Aura} As a bonus action, the flame fiend makes each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the flame fiend or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Fury}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium fiend (fiend)}
+	\DndMonsterBasics[armor-class={18 (plate)}, hit-points={153 (18d8 + 72)}, speed={30 ft., fly 60 ft.}]
+	\MonsterStats{+4}{+3 (+7)}{+4 (+8)}{+2}{+2 (+6)}{+4 (+8)}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={truesight 120 ft., passive Perception 12}, languages={Infernal, telepathy 120 ft.}, challenge={12}]
+	\DndMonsterAction{Aetheric Shell} When a fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+	\DndMonsterAction{Hellish weapons} The fiend's weapon attacks deal an extra 13 (3d8) poison damage on a hit (included in the attacks).
+	
+	\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The fiend makes three attacks.
+	\DndMonsterAttack[
+		name=Longsword,
+		distance=melee,
+		type=weapon,
+		mod=+8,
+		reach=5,
+		dmg=\DndDice{1d8 + 4},
+		dmg-type=slashing,
+		extra={, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage.}
+	]
+	\DndMonsterAttack[
+		name=Longbow,
+		distance=ranged,
+		type=weapon,
+		mod=+7,
+		range=150/600,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=piercing,
+		extra={ plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the \textit{lesser restoration} incantation or similar magic.}
+	]
+	
+	\DndMonsterAction{Parry}
+	The fiend adds 4 to its AC against one melee attack that would hit it as a reaction. To do so, the fiend must see the attacker and be wielding a melee weapon.
+	\end{multicols}
+	\end{DndMonster}
+
+\subsection{Fiend, Horned}
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Horned}
+\begin{multicols}{2}
+\DndMonsterType{Large fiend}
+\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={148 (17d10 + 55)}, speed={20 ft., fly 60 ft.}]
+\MonsterStats{+6}{+3}{+5}{+1}{+3}{+3}
+\DndMonsterDetails[saving-throws={Str +10, Dex +7, Wis +7, Cha +7}, skills={}, damage-immunities={fire, poison}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 120 ft., passive Perception 13}, languages={Infernal, telepathy 120 ft.}, challenge={11}]
+\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
+
+\DndMonsterAction{Magic Resistance} The fiend has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The fiend makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.
+\DndMonsterAttack[
+	name=Fork,
+	distance=melee,
+	type=weapon,
+	mod=+10,
+	reach=10,
+	dmg=\DndDice{2d8 + 6},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Tail,
+	distance=melee,
+	type=weapon,
+	mod=+10,
+	reach=10,
+	dmg=\DndDice{1d8 + 6},
+	dmg-type=piercing,
+	extra={. If the target is a creature other than an undead or a construct, it must succeed on a DC 17 Constitution saving throw or lose 10 (3d6) hit points at the start of each of its turns due to an infernal wound. Each time the fiend hits the wounded target with this attack, the damage dealt by the wound increases by 10 (3d6). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.}
+]
+\DndMonsterAttack[
+	name=Hurl Flame,
+	type=spell,
+	distance=ranged,
+	mod=+7,	
+	range=150,
+	dmg=\DndDice{4d6},
+	extra={If the target is a flammable object that isn't being worn or carried, it also catches fire.}
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fiend, Ice}
+\begin{multicols}{2}
+\DndMonsterType{Large fiend}
+\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={180 (19d10 + 76)}, speed={40 ft.}]
+\MonsterStats{+5}{+2}{+4}{+4}{+2}{+4}
+\DndMonsterDetails[saving-throws={Dex +7, Con +9, Wis +7, Cha +9}, skills={}, damage-immunities={cold, fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={blindsight 60 ft., darkvision 120 ft., passive Perception 12}, languages={Infernal, telepathy 120 ft.}, challenge={14}]
+\DndMonsterAction{Fiend's Sight} Magical darkness doesn't impede the fiend's darkvision.
+
+\DndMonsterAction{Magic Resistance} The flame fiend has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterAction{Aetheric Shell} When a flame fiend takes damage from a silvered weapon, its next attack before the end of its next turn has disadvantage.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The ice fiend makes three attacks: one with its bite, one with its claws, and one with its tail.
+
+\DndMonsterMelee[
+    name=Bite,
+    mod=+10,
+    reach=5,
+    dmg=\DndDice{2d6+5},
+    dmg-type=piercing,
+    plus-dmg=\DndDice{3d6},
+    plus-dmg-type=cold
+]
+\DndMonsterMelee[
+    name=Claws,
+    mod=+10,
+    reach=5,
+    dmg=\DndDice{2d4+5},
+    dmg-type=slashing,
+    plus-dmg=\DndDice{3d6},
+    plus-dmg-type=cold
+]
+\DndMonsterMelee[
+    name=Tail,
+    mod=+10,
+    reach=10,
+    dmg=\DndDice{2d6+5},
+    dmg-type=piercing,
+    plus-dmg=\DndDice{3d6},
+    plus-dmg-type=cold
+]
+\DndMonsterAction{Wall of Ice (Recharge 6)}
+The fiend magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.
+
+When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.
+
+The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.
+\end{multicols}
+\end{DndMonster}
+
+\subsection{Hell Hound}
+\begin{DndMonster}[width=\textwidth + 8pt]{Hell Hound}
+\DndMonsterType{Medium fiend}
+\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={45 (7d8 + 14)}, speed={50 ft.}]
+\MonsterStats{+3}{+1}{+2}{-2}{+1}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={understands Infernal but can't speak it}, challenge={3}]
+\DndMonsterAction{Keen Hearing and Smell} The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterAction{Pack Tactics} The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing,
+	extra={ plus 7 (2d6) fire damage.}
+]
+\DndMonsterAction{Fire Breath (recharge 5-6)}
+The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
+\end{DndMonster}
+
+\subsection{Succubus/Incubus}
+\begin{DndMonster}[width=\textwidth + 8pt]{Succubus/Incubus}
+\begin{multicols}{2}
+\DndMonsterType{Medium fiend (shapechanger)}
+\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={66 (12d8 + 12)}, speed={30 ft., fly 60 ft.}]
+\MonsterStats{-1}{+3}{+1}{+2}{+1}{+5}
+\DndMonsterDetails[saving-throws={}, skills={Deception +9, Insight +5, Perception +5, Persuasion +9, Stealth +7}, damage-immunities={}, damage-resistances={cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={Abyssal, Common, Infernal, telepathy 60 ft.}, challenge={4}]
+\DndMonsterAction{Telepathic Bond} The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence.
+
+\DndMonsterAction{Shapechanger} The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Claw (Fiend Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAction{Charm}
+One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.
+
+The fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.
+\DndMonsterAction{Draining Kiss}
+The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+\DndMonsterAction{Etherealness}
+The fiend magically enters the Border Shadow from the Mortal Plane, or vice versa.
+\end{multicols}
+\end{DndMonster}
+
+\subsection{Nightmare}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Nightmare}
+\begin{multicols}{2}
+\DndMonsterType{Large fiend}
+\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={68 (8d10 + 24)}, speed={60 ft., fly 90 ft.}]
+\MonsterStats{+4}{+2}{+3}{+0}{+1}{+2}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={understands Abyssal, Common, and Infernal but can't speak}, challenge={3}]
+\DndMonsterAction{Confer Fire Resistance} The nightmare can grant resistance to fire damage to anyone riding it.
+
+\DndMonsterAction{Illumination} The nightmare sheds bright light in a 10- foot radius and dim light for an additional 10 feet.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=bludgeoning,
+	extra={ plus 7 (2d6) fire damage.}
+]
+\DndMonsterAction{Etherealness}
+The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.
+\end{multicols}
+\end{DndMonster}

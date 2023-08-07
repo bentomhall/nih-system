@@ -1,0 +1,326 @@
+\section{Giants}
+
+\subsection{True Giants}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Cloud}
+	\begin{multicols}{2}
+	\DndMonsterType{Huge giant}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={200 (16d12 + 96)}, speed={40 ft.}]
+	\MonsterStats{+8}{+0}{+6 (+10)}{+1}{+3 (+7)}{+3 (+7)}
+	\DndMonsterDetails[saving-throws={Con +10, Wis +7, Cha +7}, skills={Insight +7, Perception +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 17}, languages={Common, Giant}, challenge={9}]
+	\DndMonsterAction{Keen Smell} The giant has advantage on Wisdom (Perception) checks that rely on smell.
+
+	\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+	\begin{itemize}
+		\item[] At will: \textit{detect magic}, \textit{fog cloud}, \textit{light}
+		\item[] 3/day each: \textit{feather fall}, \textit{fly}, \textit{misty step}, \textit{telekinesis}
+		\item[] 1/day each: \textit{control weather}, \textit{gaseous form}
+	\end{itemize}
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The giant makes two morningstar attacks.
+	\DndMonsterAttack[
+		name=Morningstar,
+		distance=melee,
+		type=weapon,
+		mod=+12,
+		reach=10,
+		dmg=\DndDice{3d8 + 8},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+12,
+		range=60/240,
+		dmg=\DndDice{4d10 + 8},
+		dmg-type=bludgeoning
+	]
+	\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Fire}
+	\DndMonsterType{Huge giant}
+	\DndMonsterBasics[armor-class={18 (plate)}, hit-points={162 (13d12 + 78)}, speed={30 ft.}]
+	\MonsterStats{+7}{-1 (+3)}{+6 (+10)}{+0}{+2}{+1 (+5)}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +11, Perception +6}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={Giant}, challenge={9}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The giant makes two greatsword attacks.
+	\DndMonsterAttack[
+		name=Greatsword,
+		distance=melee,
+		type=weapon,
+		mod=+11,
+		reach=10,
+		dmg=\DndDice{6d6 + 7},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+11,
+		range=60/240,
+		dmg=\DndDice{4d10 + 7},
+		dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Frost}
+	\DndMonsterType{Huge giant}
+	\DndMonsterBasics[armor-class={15}, hit-points={138 (12d12 + 60)}, speed={40 ft.}]
+	\MonsterStats{+6}{-1}{+5 (+8)}{-1}{+0 (+3)}{+1 (+4)}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +9, Perception +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Giant}, challenge={8}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The giant makes two greataxe attacks.
+	\DndMonsterAttack[
+		name=Greataxe,
+		distance=melee,
+		type=weapon,
+		mod=+9,
+		reach=10,
+		dmg=\DndDice{3d12 + 6},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+9,
+		range=60/240,
+		dmg=\DndDice{4d10 + 6},
+		dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Hill}
+	\DndMonsterType{Huge giant}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={105 (10d12 + 40)}, speed={40 ft.}]
+	\MonsterStats{+5}{-1}{+4}{-3}{-1}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Giant}, challenge={5}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The giant makes two greatclub attacks.
+	\DndMonsterAttack[
+		name=Greatclub,
+		distance=melee,
+		type=weapon,
+		mod=+8,
+		reach=10,
+		dmg=\DndDice{3d8 + 5},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+8,
+		range=60/240,
+		dmg=\DndDice{3d10 + 5},
+		dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+\subsection{Giant, Stone}
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Stone}
+	\DndMonsterType{Huge giant}
+	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={40 ft.}]
+	\MonsterStats{+6}{+2 (+5)}{+5 (+8)}{+0}{+1 (+4)}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +12, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant}, challenge={7 (2,900 XP)}]
+	\DndMonsterAction{Stone Camouflage} The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The giant makes two greatclub attacks.
+	\DndMonsterAttack[
+		name=Greatclub,
+		distance=melee,
+		type=weapon,
+		mod=+9,
+		reach=15,
+		dmg=\DndDice{3d8 + 6},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+9,
+		range=60/240,
+		dmg=\DndDice{4d10 + 6},
+		dmg-type=bludgeoning,
+		extra={. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.}
+	]
+
+	\DndMonsterAction{Rock Catching}
+	If a rock or similar object is hurled at the giant, the giant can, as a reaction, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.
+\end{DndMonster}
+
+\subsection{Giant, Storm}
+\begin{DndMonster}[width=\textwidth + 8pt]{Giant, Storm}
+	\begin{multicols}{2}
+		\DndMonsterType{Huge giant}
+		\DndMonsterBasics[armor-class={16 (scale mail)}, hit-points={230 (20d12 + 100)}, speed={50 ft., swim 50 ft.}]
+		\MonsterStats{+9 (+14)}{+2}{+5 (+10)}{+3}{+4 (+9)}{+4 (+9)}
+		\DndMonsterDetails[saving-throws={}, skills={Arcana +8, Athletics +14, History +8, Perception +9}, damage-immunities={lightning, thunder}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 19}, languages={Common, Giant}, challenge={13 (10,000 XP)}]
+		\DndMonsterAction{Amphibious} The giant can breathe air and water.
+
+		\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:
+		\begin{itemize}
+			\item[] At will: \textit{detect magic}, \textit{feather fall}, \textit{levitate}, \textit{light}
+			\item[] 3/day each: \textit{control weather}, \textit{water breathing}
+		\end{itemize}
+
+		\DndMonsterSection{Actions}
+		\DndMonsterAction{Multiattack} The giant makes two greatsword attacks.
+		\DndMonsterAttack[
+			name=Greatsword,
+			distance=melee,
+			type=weapon,
+			mod=+14,
+			reach=10,
+			dmg=\DndDice{6d6 + 9},
+			dmg-type=slashing
+		]
+		\DndMonsterAttack[
+			name=Rock,
+			distance=ranged,
+			type=weapon,
+			mod=+14,
+			range=60/240,
+			dmg=\DndDice{4d12 + 9},
+			dmg-type=bludgeoning
+		]
+		\DndMonsterAction{Lightning Strike (Recharge 5–6)}
+		The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.
+	\end{multicols}
+\end{DndMonster}
+
+\subsection{Giant-kin}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Ogre}
+	\DndMonsterType{Large giant}
+	\DndMonsterBasics[armor-class={11 (hide armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
+	\MonsterStats{+4}{-1}{+3}{-3}{-2}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 8}, languages={Common, Giant}, challenge={2 (450 XP)}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Greatclub,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d8 + 4},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Javelin,
+		distance=both,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d6 + 4},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+	
+\begin{DndMonster}[width=\textwidth + 8pt]{Oni}
+	\begin{multicols}{2}
+	\DndMonsterType{Large giant}
+	\DndMonsterBasics[armor-class={16 (chain mail)}, hit-points={110 (13d10 + 39)}, speed={30 ft., fly 30 ft.}]
+	\MonsterStats{+4}{+0 (+3)}{+3 (+6)}{+2}{+1 (+4)}{+2 (+5)}
+	\DndMonsterDetails[saving-throws={}, skills={Arcana +5, Deception +8, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Common, Giant}, challenge={7}]
+	\DndMonsterAction{Innate Spellcasting} The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:
+	\begin{itemize}
+		\item[] At will: \textit{darkness}, \textit{invisibility}
+		\item[] 1/day each: \textit{charm person}, \textit{cone of cold}, \textit{gaseous form}, \textit{sleep}
+	\end{itemize}
+	
+	\DndMonsterAction{Regeneration} The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The oni makes two attacks, either with its claws or its glaive.
+	\DndMonsterAttack[
+		name=Claw (Oni Form Only),
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{1d8 + 4},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Glaive,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=10,
+		dmg=\DndDice{2d10 + 4},
+		dmg-type=slashing,
+		extra={, or 9 (1d10 + 4) slashing damage in Small or Medium form.}
+	]
+	\DndMonsterAction{Change Shape}
+	The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
+	\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Troll}
+	\DndMonsterType{Large giant}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={84 (8d10 + 40)}, speed={30 ft.}]
+	\MonsterStats{+4}{+1}{+5}{-2}{-1}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 12}, languages={Giant}, challenge={5}]
+	\DndMonsterAction{Keen Smell} The troll has advantage on Wisdom (Perception) checks that rely on smell.
+	
+	\DndMonsterAction{Regeneration} The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The troll makes three attacks: one with its bite and two with its claws.
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{1d6 + 4},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Claw,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d6 + 4},
+		dmg-type=slashing
+	]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Ettin}
+	\DndMonsterType{Large giant}
+	\DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={85 (10d10 + 30)}, speed={40 ft.}]
+	\MonsterStats{+5}{-1}{+3}{-2}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant, Orc}, challenge={4}]
+	\DndMonsterAction{Two Heads} The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
+	
+	\DndMonsterAction{Wakeful} When one of the ettin's heads is asleep, its other head is awake.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The ettin makes two attacks: one with its battleaxe and one with its morningstar.
+	\DndMonsterAttack[
+		name=Battleaxe,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d8 + 5},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Morningstar,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d8 + 5},
+		dmg-type=piercing
+	]
+\end{DndMonster}

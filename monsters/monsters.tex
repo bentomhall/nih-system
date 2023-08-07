@@ -4,15 +4,13 @@ A monster's statistics, sometimes referred to as its \textbf{stat block}, provid
 
 \begin{figure}
 \begin{DndComment}{Modifying Monsters}
-    Despite the versatile collection of monsters in this book, you might be at a loss when it comes to finding the perfect creature for part of an adventure. Feel free to tweak an existing creature to make it into something more useful for you, perhaps by borrowing a trait or two from a different monster or by using a \textbf{variant} or \textbf{template}, such as the ones in this book. Keep in mind that modifying a monster, including when you apply a template to it, might change its challenge rating.
+    Despite the versatile collection of monsters in this book, you might be at a loss when it comes to finding the perfect creature for part of an adventure. Feel free to tweak an existing creature to make it into something more useful for you, perhaps by borrowing a trait or two from a different monster or by using a \textbf{variant} or \textbf{template}, such as the ones in this book. Keep in mind that modifying a monster, including when you apply a template to it, might change its challenge ratings.
 \end{DndComment}
 \end{figure}
 
 \subsection{Size}
 
-A monster can be Tiny, Small, Medium, Large, Huge, or Gargantuan. The Size Categories table shows how much space a creature of a particular size controls in combat. See the \textit{Player's Handbook} for more information on creature size and space.
-
-\textbf*{Size Categories (table)}
+A monster can be Tiny, Small, Medium, Large, Huge, or Gargantuan. The Size Categories table shows how much space a creature of a particular size controls in combat. See the Core Rules for more information on creature size and space.
 
 \begin{figure}
 \begin{DndTable}[header=Size Categories]{lXr}
@@ -25,6 +23,7 @@ A monster can be Tiny, Small, Medium, Large, Huge, or Gargantuan. The Size Categ
     Gargantuan & 20 by 20 ft. or larger & Kraken, purple worm \\
 \end{DndTable}
 \end{figure}
+
 \subsection{Type}
 
 A monster's type speaks to its fundamental nature. Certain spells, magic items, class features, and other effects in the game interact in special ways with creatures of a particular type. For example, an \textit{arrow of dragon slaying} deals extra damage not only to dragons but also other creatures of the dragon type, such as dragon turtles and wyverns.
@@ -103,7 +102,7 @@ A monster's Constitution modifier also affects the number of hit points it has. 
 
 \subsection{Speed}
 
-A monster's speed tells you how far it can move on its turn. For more information on speed, see the \textit{Player's Handbook}.
+A monster's speed tells you how far it can move on its turn. For more information on speed, see \nameref{ch:order-of-combat}.
 
 All creatures have a walking speed, simply called the monster's speed. Creatures that have no form of ground-based locomotion have a walking speed of 0 feet.
 
@@ -119,26 +118,23 @@ A monster that has a climbing speed can use all or part of its movement to move 
 
 \subsubsection{Fly}
 
-A monster that has a flying speed can use all or part of its movement to fly. Some monsters have the ability to \textbf{hover}, which makes them hard to knock out of the air (as explained in the rules on flying in the \textit{Player's Handbook}). Such a monster stops hovering when it dies.
+A monster that has a flying speed can use all or part of its movement to fly. Some monsters have the ability to \textbf{hover}, which makes them hard to knock out of the air (as explained in the rules on flying in the core rules). Such a monster stops hovering when it dies.
 
 \subsubsection{Swim}
 
 A monster that has a swimming speed doesn't need to spend extra movement to swim.
 
-\subsection{Ability Scores}
+\subsection{Ability Scores and Saving Throws}
 
-Every monster has six ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma) and corresponding modifiers. For more information on ability scores and how they're used in play, see the \textit{Player's Handbook}.
+Every monster has six ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma). If a creature has a bonus to a particular type of saving throw, that will be noted in parentheses after the modifier.
 
-\subsection{Saving Throws}
+\subsection{Proficiency Bonus}
 
-The Saving Throws entry is reserved for creatures that are adept at resisting certain kinds of effects. For example, a creature that isn't easily charmed or frightened might gain a bonus on its Wisdom saving throws. Most creatures don't have special saving throw bonuses, in which case this section is absent.
-
-A saving throw bonus is the sum of a monster's relevant ability modifier and its proficiency bonus, which is determined by the monster's challenge rating (as shown in the Proficiency Bonus by Challenge Rating table).
+Every monster has a proficiency bonus listed. When creating a monster, it is generally best to pick the proficiency bonus according to the approximate threat it poses. If you want to calculate it, use the geometric mean of the two challenge ratings and compare to the Proficiency Bonus by Mean Challenge Rating table.  
 
 \begin{figure}
-\begin{DndTable}[header=Proficiency Bonus by Challenge Rating]{lX}
+\begin{DndTable}[header=Proficiency Bonus by Mean Challenge Rating]{lX}
     Challenge & Proficiency Bonus \\
-     0         & +2                \\
      1/8       & +2                \\
      1/4       & +2                \\
      1/2       & +2                \\
@@ -179,11 +175,11 @@ A saving throw bonus is the sum of a monster's relevant ability modifier and its
 
 The Skills entry is reserved for monsters that are proficient in one or more skills. For example, a monster that is very perceptive and stealthy might have bonuses to Wisdom (Perception) and Dexterity (Stealth) checks.
 
-A skill bonus is the sum of a monster's relevant ability modifier and its proficiency bonus, which is determined by the monster's challenge rating (as shown in the Proficiency Bonus by Challenge Rating table). Other modifiers might apply. For instance, a monster might have a larger-than-expected bonus (usually double its proficiency bonus) to account for its heightened expertise.
+A skill bonus is usually the sum of a monster's relevant ability modifier and its proficiency bonus. Other modifiers might apply. For instance, a monster might have a larger-than-expected bonus (usually double its proficiency bonus) to account for its heightened expertise.
 
 \subsection{Vulnerabilities, Resistances, and Immunities}
 
-Some creatures have vulnerability, resistance, or immunity to certain types of damage. Particular creatures are even resistant or immune to damage from nonmagical attacks (a magical attack is an attack delivered by a spell, a magic item, or another magical source). In addition, some creatures are immune to certain conditions.
+Some creatures have vulnerability, resistance, or immunity to certain types of damage. In addition, some creatures are immune to certain conditions.
 
 \subsection{Senses}
 
@@ -211,7 +207,7 @@ A monster with truesight can, out to a specific range, see in normal and magical
 
 \subparagraph*{Armor, Weapon, and Tool Proficiencies}
 
-Assume that a creature is proficient with its armor, weapons, and tools. If you swap them out, you decide whether the creature is proficient with its new equipment.
+Assume that a creature is proficient with its armor, weapons, and tools. If you swap them out, you decide whether the creature is proficient with its new equipment. Except in rare cases, monsters generally prefer to use weapons and armor suited for them (which includes proficiency)
 
 For example, a hill giant typically wears hide armor and wields a greatclub. You could equip a hill giant with chain mail and a greataxe instead, and assume the giant is proficient with both, one or the other, or neither.
 
@@ -229,13 +225,48 @@ A telepathic monster doesn't need to see a contacted creature and can end the te
 
 A creature within the area of an \textit{antimagic field} or in any other location where magic doesn't function can't send or receive telepathic messages.
 
-\subsection{Challenge //rewrite this}
+\subsection{Challenge}
 
-A monster's \textbf*{challenge rating} tells you how great a threat the monster is. An appropriately equipped and well-rested party of four adventurers should be able to defeat a monster that has a challenge rating equal to its level without suffering any deaths. For example, a party of four 3rd-level characters should find a monster with a challenge rating of 3 to be a worthy challenge, but not a deadly one.
+A monster's \textbf*{challenge ratings} tells you how great a threat the monster is. Each monster has two ratings, offensive and defensive, separated by a slash, written as "offensive/defensive". Generally, the overall rating is the geometric mean of the two (the square root of the product of the values), but this is really only used for ordering monsters within their groups and provides little relevant information.
 
-Monsters that are significantly weaker than 1st- level characters have a challenge rating lower than 1. Monsters with a challenge rating of 0 are insignificant except in large numbers.
+\subparagraph*{Offensive Rating (OR)} The offensive rating of a monster tells you how likely it is for that monster to drop a full-health character to 0 HP in a single round.
 
-Some monsters present a greater challenge than even a typical 20th-level party can handle. These monsters have a challenge rating of 21 or higher and are specifically designed to test player skill.
+\begin{itemize}
+	\item[] \textbf{OR > Level + 4} The monster is likely to drop a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round even if they use defensive measures, and is capable of dropping a medium-health (ie d8 HD with +1 CON or d6 HD with +3 or more CON) character to zero in a single turn if they roll well or no defensive measures are taken. It is likely that this monster can kill a weak character through massive damage or by having enough attacks left over after downing the character to kill them outright.
+	\item[] \textbf{OR > Level} The monster poses a substantial threat and is capable of dropping a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round if they crit or roll well and significant defensive measures are not taken. It is unlikely, but possible, that a good round with crits can outright kill a weak character.
+	\item[] \textbf{OR $\approx$ Level} If the monster hits with all its abilities and deals average damage and no defensive measures are taken, it will come very close to downing a weak character or will just barely down them. It is unlikely that the monster can outright kill a character in a single round, even with crits.
+	\item[] \textbf{OR < Level} The monster has to crit and/or roll very well on its attacks to down a full-health weak character in one turn. It is highly unlikely to be able to outright kill a character in one turn.
+	\item[] \textbf{OR < Level - 4} The monster poses little direct offensive threat to even a weak character except in groups. Be careful of synergies, however, where one monster buffs or enables another monster to go well beyond its normal nature.
+\end{itemize}
+
+\subparagraph*{Defensive Rating (DR)} The defensive rating of a monster tells you how likely it is for that monster to survive long enough under direct fire from the party's damage dealers in order to do use its cool abilities at least once (generally considered about 3 rounds). This assumes "baseline" characters without substantial combat-effective magic items or particularly targeting vulnerabilities. It's a rough "static training dummy" measure and should be taken with a grain of salt.
+
+\begin{itemize}
+	\item[] \textbf{DR > Level} The monster is likely to survive at least 3 rounds of direct fire from a baseline party.
+	\item[] \textbf{DR $\approx$ Level} The monster will probably die in 2-3 rounds of direct fire from a baseline party, or survive double that if not focused down.
+	\item[] \textbf{DR < Level} The monster will likely die in 1-2 rounds of direct fire from the party. If the gap is substantial, it is unlikely that the monster will even get to act if it is attacked first. Such monsters need bodyguards or need ways of ambushing the party to have any influence on combat.
+\end{itemize}
+
+\begin{figure}
+	\begin{DndComment}{What is a baseline party?}
+		A baseline party makes the following assumptions.
+		\begin{itemize}
+			\item 4 player characters without combat-effective allies, summoned creatures, or pets.
+			\item Standard array
+			\item Characters built competently, but not particularly optimized for damage. Their highest ability scores are in their class primary attributes, their secondary attributes are not neglected, and they're using equipment that suits their class abilities. ASIs are spent to improve the primary ability score until cap.
+			\item Generally two of them are specialized damage dealers, with the other two playing any combination of support, healing, defensive, skills, or control.
+			\item None of them have magic items that substantially improve their combat capabilities.
+		\end{itemize}
+
+		An example of such a party might be
+		\begin{itemize}
+			\item A sword-and-shield-using Defender Armsman
+			\item A dual-wielding rogue
+			\item A fire-loving Awakened Arcanist
+			\item A Life-domain priest
+		\end{itemize}
+	\end{DndComment}
+\end{figure}
 
 \subsection{Special Traits}
 
@@ -243,7 +274,7 @@ Special traits (which appear after a monster's challenge rating but before any a
 
 \subsubsection{Spellcasting}
 
-A monster with the Spellcasting special trait has the ability to cast selected spells, which it uses to cast its spells (as explained in the \textit{Player's Handbook}).
+A monster with the Spellcasting special trait has the ability to cast selected spells, which it uses to cast its spells (as explained in \nameref{ch:spellcasting}).
 
 The monster has a list of spells known, which may be drawn from multiple class lists.
 
@@ -253,7 +284,7 @@ Specific monsters have innate spellcasting which means that they do require comp
 
 \begin{figure}
 \begin{DndComment}{Spell selection}
-    Casters generally only have a limited selection of spells in their stat blocks, those focused on combat use. Generally they have a big concentration spell and one or more lower priority or defensive spells. Their primary damage comes from their spell attacks, which count as cantrips. 
+    Casters generally only have a limited selection of spells in their stat blocks, those focused on combat use. Generally they have a big concentration spell and one or more lower priority or defensive spells. Their primary spell damage comes from their spell attacks, which count as cantrips. 
 \end{DndComment}
 \end{figure} 
 
@@ -343,11 +374,22 @@ There are many easy ways to customize the NPCs presented here for your home camp
 
 \subparagraph*{Lineage and Cultural Traits} You can add lineage and cultural traits to an NPC (generally humanoids and giants, especially). For example, a halfling shaman might have a speed of 25 feet and the Lucky trait. Adding racial traits to an NPC doesn't alter its challenge rating. For more on lineage traits, see \nameref{ch:lineages}; for more on cultural traits, see \nameref{sec:cultures}.
 
-\subparagraph*{Spell Swaps}. One way to customize an NPC spellcaster is to replace one or more of its spells. You can substitute any spell on the NPC's spell list with a different spell of the same cost from any list. Swapping spells in this manner doesn't alter an NPC's challenge rating.
+\subparagraph*{Spell Swaps}. One way to customize an NPC spellcaster is to replace one or more of its spells. You can substitute any spell on the NPC's spell list with a different spell of the same cost from any list. Swapping spells in this manner can an NPC's challenge ratings.
+
+\begin{figure}
+	\begin{DndComment}{Non-damaging spells and abilities and challenge ratings}
+		Damaging spells and abilities are fairly straightforward to apply to challenge rating. If they do more damage than the monster's other damaging actions, include them in the best-3-rounds model. Done. Non-damaging ones are more difficult. Some suggestions include:
+		\begin{itemize}
+			\item If a spell or ability does not deal damage, imposes no conditions on an enemy, and does not serve a defensive purpose (by healing, reducing damage, buffing the creature or its allies, etc.), then it likely has no effect on either challenge rating. For example, giving a monster access to the \nameref{spell:light} cantrip doesn't significantly change the combat difficulty.
+			\item If a spell imposes negative conditions on an enemy, find a similar-targeted damaging spell with the same cost (or a monster ability from a similar-threat monster) and include it in the damage calculations. Conditions that dominate or completely disable an opponent (such as a banshee's wail) are particularly strong and will generally increase offensive rating significantly.
+			\item If a spell or ability serves a defensive purpose, and especially if it does not require a full action, increase the monster's Defensive Rating by one. More may be warranted for particularly strong effects or those that cannot be overcome except by higher-level foes.
+			\item It a spell has a long duration (ie > 10 minutes) and does not require concentration, assume that it has pre-cast that spell unless the monster is surprised. Include such things as \nameref{spell:mage-armor} directly in the stat block as a baseline.
+	\end{DndComment}
+\end{figure}
 
 \subparagraph*{Armor and Weapon Swaps} You can upgrade or downgrade an NPC's armor, or add or switch weapons. Adjustments to Armor Class and damage can change an NPC's challenge rating.
 
-\subparagraph*{Magic Items}. The more powerful an NPC, the more likely it has one or more magic items in its possession. An archmage, for example, might have a magic staff or wand, as well as one or more potions and scrolls. Giving an NPC a potent damage-dealing magic item could alter its challenge rating.
+\subparagraph*{Magic Items}. The more powerful an NPC, the more likely it has one or more magic items in its possession. An archmage, for example, might have a magic staff or wand, as well as one or more potions and scrolls. Giving an NPC a potent damage-dealing magic item could alter its offensive challenge rating.
 
 \section{Monsters, Alphabetical}
 \import{./}{monsters-a-e.tex}

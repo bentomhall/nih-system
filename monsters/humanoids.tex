@@ -1,0 +1,350 @@
+\section{Humanoids}
+\subsection{Any Lineage}
+
+\subsection{Specific}
+\subsection{Dwarf, Twisted}
+\begin{DndMonster}[width=\textwidth + 8pt]{Dwarf, Twisted}
+	\DndMonsterType{Medium humanoid (dwarf)}
+	\DndMonsterBasics[armor-class={16 (scale mail, shield)}, hit-points={26 (4d8 + 8)}, speed={25 ft.}]
+	\MonsterStats{+2}{+0}{+2}{+0}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={poison}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 10}, languages={Dwarvish}, challenge={1}]
+	\DndMonsterAction{Dwarven Resilience} The dwarf has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.
+
+	\DndMonsterAction{Sunlight Sensitivity} While in sunlight, the dwarf has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Enlarge  (Recharges after a Short or Long Rest)}
+	For 1 minute, the dwarf magically increases in size, along with anything it is wearing or carrying. While enlarged, the dwarf is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the dwarf lacks the room to become Large, it attains the maximum size possible in the space available.
+	\DndMonsterAttack[
+		name=War Pick,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d8 + 2},
+		dmg-type=piercing,
+		extra={, or 11 (2d8 + 2) piercing damage while enlarged.}
+	]
+	\DndMonsterAttack[
+		name=Javelin,
+		distance=both,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing,
+		extra={, or 9 (2d6 + 2) piercing damage while enlarged.}
+	]
+	\DndMonsterAction{Invisibility (Recharges after a Short or Long Rest)}
+	The dwarf magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the dwarf wears or carries is invisible with it.
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Goblin Raider}
+	\DndMonsterType{Small humanoid (goblinoid)}
+	\DndMonsterBasics[armor-class={13 (leather armor, 15 with shield)}, hit-points={7 (2d6)}, speed={30 ft.}]
+	\MonsterStats{-1}{+2}{+0}{+0}{-1}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={Common, Goblin}, challenge={1/4 (50 XP)}]
+	\DndMonsterAction{Nimble Escape} The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Scimitar,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Shortbow,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=80/320,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Hobgoblin Raider}
+	\DndMonsterType{Medium humanoid (goblinoid)}
+	\DndMonsterBasics[armor-class={18 (chain mail, shield)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
+	\MonsterStats{+1}{+1}{+1}{+0}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Goblin}, challenge={1/2 (100 XP)}]
+	\DndMonsterAction{Martial Advantage} Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Longsword,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=slashing,
+		extra={, or 6 (1d10 + 1) slashing damage if used with two hands.}
+	]
+	\DndMonsterAttack[
+		name=Longbow,
+		distance=ranged,
+		type=weapon,
+		mod=+3,
+		range=150/600,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\subsection{Therianthropes}
+Therianthropes, more commonly known as were creatures, stem originally from demonic interference, mostly from the followers of the demon prince known as the Red Fang. But many of the creatures are blameless victims, and there are a substantial number of people who inherited the ability to transform from their cursed ancestors. These entries only describe those capable of passing on the curse via bite, in the main the victims themselves of a cursed bite. Were-creatures may either choose to revel in their blood-lust curse or seek to control it; either way, they remain dangerous.
+
+There are others, called Skinwalkers or Loup Garou, who willingly trafficked with demons to gain power. They are even more powerful, if thankfully rare.
+
+All were creatures possess extreme regenerative capability, being capable of near-instantly regenerating from even mortal wounds. Silvered weapons stop this healing, leaving lasting wounds, and being beheaded once made unconscious also works. Not much else does.
+
+\subsection{Werebear}
+\begin{DndMonster}[width=\textwidth + 8pt]{Werebear}
+\begin{multicols}{2}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={10 in humanoid form, 11 (natural armor) in bear and hybrid form}, hit-points={135 (18d8 + 54)}, speed={30 ft. (40 ft., climb 30 ft. in bear or hybrid form)}]
+\MonsterStats{+4}{+0}{+3}{+0}{+1}{+1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 17}, languages={Common (can't speak in bear form)}, challenge={5}]
+
+\DndMonsterAction{Cursed Regeneration} The werebear regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the werebear's maximum hit points by an amount equal to the damage dealt. This lasts until the werebear completes a long rest.
+
+\DndMonsterAction{Shapechanger} The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterAction{Keen Smell} The werebear has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.
+\DndMonsterAttack[
+	name=Bite (Bear or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d10 + 4},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with werebear lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claw (Bear or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Greataxe (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{1d12 + 4},
+	dmg-type=slashing
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Wereboar}
+\begin{multicols}{2}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={10 in humanoid form, 11 (natural armor) in boar or hybrid form}, hit-points={78 (12d8 + 24)}, speed={30 ft. (40 ft. in boar form)}]
+\MonsterStats{+3}{+0}{+2}{+0}{+0}{-1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Common (can't speak in boar form)}, challenge={4 (1,100 XP)}]
+
+\DndMonsterAction{Cursed Regeneration} The wereboar regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the wereboar's maximum hit points by an amount equal to the damage dealt. This lasts until the wereboar completes a long rest.
+
+\DndMonsterAction{Shapechanger} The wereboar can use its action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterAction{Charge (Boar or Hybrid Form Only)} If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+
+\DndMonsterAction{Relentless (Recharges after a Short or Long Rest)} If the wereboar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.
+
+\DndMonsterSection{Actions}
+The wereboar makes two attacks, only one of which can be with its tusks.
+\DndMonsterAttack[
+	name=Maul (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Tusks (Boar or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=slashing,
+	extra={. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.}
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Wererat}
+\begin{multicols}{2}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={12}, hit-points={33 (6d8 + 6)}, speed={30 ft.}]
+\MonsterStats{+0}{+2}{+1}{+0}{+0}{-1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft. (rat form only), passive Perception 12}, languages={Common (can't speak in rat form)}, challenge={2}]
+
+\DndMonsterAction{Cursed Regeneration} The wererat regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the wererat's maximum hit points by an amount equal to the damage dealt. This lasts until the wererat completes a long rest.
+
+\DndMonsterAction{Shapechanger} The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterAction{Keen Smell} The wererat has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+The wererat makes two attacks, only one of which can be a bite.
+\DndMonsterAttack[
+	name=Bite (Rat or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Shortsword (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Hand Crossbow (Humanoid or Hybrid Form Only),
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=30/120,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Weretiger}
+\begin{multicols}{2}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={12}, hit-points={120 (16d8 + 48)}, speed={30 ft. (40 ft. in tiger form)}]
+\MonsterStats{+3}{+2}{+3}{+0}{+1}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={Common (can't speak in tiger form)}, challenge={4 (1,100 XP)}]
+
+\DndMonsterAction{Cursed Regeneration} The weretiger regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the weretiger's maximum hit points by an amount equal to the damage dealt. This lasts until the weretiger completes a long rest.
+
+\DndMonsterAction{Shapechanger} The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterAction{Keen Hearing and Smell} The weretiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterAction{Pounce (Tiger or Hybrid Form Only)} If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.
+
+\DndMonsterSection{Actions}
+In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.
+\DndMonsterAttack[
+	name=Bite (Tiger or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d10 + 3},
+	dmg-type= piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claw (Tiger or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Scimitar (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Longbow (Humanoid or Hybrid Form Only),
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=150/600,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing
+]
+\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Werewolf}
+\begin{multicols}{2}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={11 in humanoid form, 12 (natural armor) in wolf or hybrid form}, hit-points={58 (9d8 + 18)}, speed={30 ft. (40 ft. in wolf form)}]
+\MonsterStats{+2}{+1}{+2}{+0}{+0}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Common (can't speak in wolf form)}, challenge={3}]
+
+\DndMonsterAction{Cursed Regeneration} The werewolf regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the werewolf's maximum hit points by an amount equal to the damage dealt. This lasts until the werewolf completes a long rest.
+
+\DndMonsterAction{Shapechanger} The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+\DndMonsterAction{Keen Hearing and Smell} The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterSection{Actions}
+The werewolf makes two attacks: one with its bite and one with its claws or spear.
+\DndMonsterAttack[
+	name=Bite (Wolf or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claws (Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Spear (Humanoid Form Only),
+	distance=both,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing,
+	extra={, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.}
+]
+\end{multicols}
+\end{DndMonster}

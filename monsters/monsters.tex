@@ -232,11 +232,11 @@ A monster's \textbf*{challenge ratings} tells you how great a threat the monster
 \subparagraph*{Offensive Rating (OR)} The offensive rating of a monster tells you how likely it is for that monster to drop a full-health character to 0 HP in a single round.
 
 \begin{itemize}
-	\item[] \textbf{OR > Level + 4} The monster is likely to drop a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round even if they use defensive measures, and is capable of dropping a medium-health (ie d8 HD with +1 CON or d6 HD with +3 or more CON) character to zero in a single turn if they roll well or no defensive measures are taken. It is likely that this monster can kill a weak character through massive damage or by having enough attacks left over after downing the character to kill them outright.
+	\item[] \textbf{OR > 2$\texttimes$ Level} The monster is very likely to drop a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round even if they use defensive measures, and is capable of dropping a medium-health (ie d8 HD with +1 CON or d6 HD with +3 or more CON) character to zero in a single turn if they roll well or no defensive measures are taken. It is likely that this monster can kill a weak character through massive damage or by having enough attacks left over after downing the character to kill them outright.
 	\item[] \textbf{OR > Level} The monster poses a substantial threat and is capable of dropping a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round if they crit or roll well and significant defensive measures are not taken. It is unlikely, but possible, that a good round with crits can outright kill a weak character.
 	\item[] \textbf{OR $\approx$ Level} If the monster hits with all its abilities and deals average damage and no defensive measures are taken, it will come very close to downing a weak character or will just barely down them. It is unlikely that the monster can outright kill a character in a single round, even with crits.
 	\item[] \textbf{OR < Level} The monster has to crit and/or roll very well on its attacks to down a full-health weak character in one turn. It is highly unlikely to be able to outright kill a character in one turn.
-	\item[] \textbf{OR < Level - 4} The monster poses little direct offensive threat to even a weak character except in groups. Be careful of synergies, however, where one monster buffs or enables another monster to go well beyond its normal nature.
+	\item[] \textbf{OR < Level / 2} The monster poses little direct offensive threat to even a weak character except in groups. Be careful of synergies, however, where one monster buffs or enables another monster to go well beyond its normal nature.
 \end{itemize}
 
 \subparagraph*{Defensive Rating (DR)} The defensive rating of a monster tells you how likely it is for that monster to survive long enough under direct fire from the party's damage dealers in order to do use its cool abilities at least once (generally considered about 3 rounds). This assumes "baseline" characters without substantial combat-effective magic items or particularly targeting vulnerabilities. It's a rough "static training dummy" measure and should be taken with a grain of salt.
@@ -390,6 +390,68 @@ There are many easy ways to customize the NPCs presented here for your home camp
 \subparagraph*{Armor and Weapon Swaps} You can upgrade or downgrade an NPC's armor, or add or switch weapons. Adjustments to Armor Class and damage can change an NPC's challenge rating.
 
 \subparagraph*{Magic Items}. The more powerful an NPC, the more likely it has one or more magic items in its possession. An archmage, for example, might have a magic staff or wand, as well as one or more potions and scrolls. Giving an NPC a potent damage-dealing magic item could alter its offensive challenge rating.
+
+\section{Monster Math}
+\subsection{Calculating Offensive Rating}
+Offensive Rating is determined by the following process:
+\begin{enumerate}
+	\item Determine the most damaging three rounds the monster can do. If it has a recharge ability, assume that can be used once in those three rounds, or twice if it is Recharge (4-6) or more. Assume all attacks hit and deal average damage. Assume that abilities that hit an area (such as cones, lines, or circles), hit two creatures. If an ability requires a saving throw, assume that the affected targets fail. This is a worst-reasonable-case scenario, and should be treated as such. Include Legendary actions and damaging reactions, auras, etc.
+	\item Calculate the average damage per round over those three rounds.
+	\item Compare to the \nameref{tbl:offensive-rating} table and find the matching rating. Note the attack bonus and saving throw modifier listed there.
+	\item Apply any listed adjustments. The most common is that if the creature's attack bonus is two or more points higher than the attack bonus for the listed row, the overall offensive rating should be adjusted up by one step for every two points higher the attack bonus is. Similarly, if the attack bonus is lower than the listed value by two or more, decrease the offensive rating by one step for every two points of difference. If most of the monster's damage comes from abilities that require saving throws, use that bonus instead of the attack bonus.
+	\item Playtest. Averages don't always tell the full story. If the monster has few attacks that each deal substantial damage, it will be more spiky (more liable to surprise-kill a character OR to fall flat and do nothing) than one that makes many smaller attacks. Higher number of dice do, however, also tend toward the average. 1d20 has a much broader distribution (being entirely flat) than 3d6+2, although the latter also has a higher floor (5 vs 1) and average (12.5 vs 10.5). The chances of rolling 20 damage on 1d20 is 1 in 20 (5\%); on 3d6+2 it's only 1 in 216 (0.46\%).
+\end{enumerate}
+
+The following table summarizes the relationship between Offensive Rating and damage output.
+
+\begin{figure}
+	\begin{DndTable}{lllll}
+		\textbf{OR} & \textbf{Damage Range} & \textbf{Attack} & \textbf{DC} \\
+		0 & 0-1 & +2 & 10 \\
+		1/8 & 2-3 & +2 & 10 \\
+		1/4 & 4-5 & +3 & 11 \\
+		1/2 & 6-7 & +3 & 11 \\
+		1		& 8-13 & +4 & 12 \\
+		2		& 14-19 & +4 & 12 \\
+		3		& 20-25 & +5 & 12 \\
+		4   & 26-30 & +5 & 12 \\
+		5   & 31-36 & +6 & 13 \\
+		6   & 37-42 & +6 & 13 \\
+		7   & 43-48 & +6 & 13 \\
+		8   & 49-54 & +6 & 13 \\
+		9   & 55-60 & +7 & 14 \\
+		10  & 61-66 & +7 & 14 \\
+		11  & 67-72 & +7 & 14 \\
+		12  & 73-78 & +7 & 14 \\
+		13  & 79-84 & +8 & 15 \\
+		14  & 85-90 & +8 & 15 \\
+		15  & 91-96 & +8 & 15 \\
+		16  & 97-102 & +8 & 15 \\
+		17  & 103-108 & +9 & 16 \\
+		18  & 109-114 & +9 & 16 \\
+		19  & 115-120 & +9 & 16 \\
+		20  & 121-126 & +9 & 16 \\
+	\end{DndTable}
+	\caption*{Offensive Rating Summary}
+	\label{tbl:offensive-rating}
+\end{figure}
+
+\begin{figure}
+	\begin{DndComment}
+		Those who have played Dungeons and Dragons in its more recent incarnations may notice that the numbers on the rating tables are different--higher damage output at a given rating, but lower accuracy. This is intentional--it is much harder to get flat bonuses to AC without spending resources. The target accuracy is 65\% against a "normal" foe (neither defense focused nor glass cannon). That corresponds to a "normal" AC at level 20 of 16, which is where a mage-armored arcanist with maximum Dexterity would end up (at the weaker end), or below a plate-armored armsman (without a shield). It's totally normal for a character to have ACs ranging from 15-20 at least before they use resources. However, baseline D&D had "soft" monsters, especially as defensive measures ramped up in later play. Which meant it required higher CRs to threaten people. Which caused undesirable results. The intent here is that combat should pose a threat even if the OR < level, as long as there are multiple monsters in play. Being forced to use your active defensive tools to absorb, avoid, or redirect incoming damage is totally normal and expected. You should not passively be able to ignore enemies whose OR is greater than half your level. And even ones below that can pose a threat in sufficient numbers.
+	\end{DndComment}
+\end{figure}
+
+\subparagraph*{Modifiers to Offensive Rating}
+The following are some considerations for adjusting offensive rating. These are not intended to be exhaustive, nor are they intended to be rules. As with everything homebrew, playtesting with the actual party involved is the final determiner.
+\begin{enumerate}
+	\item If the monster has an easy source of advantage on attacks such as Pack Tactics (advantage if an ally is within 5 feet of the target), increase their offensive rating by 1 after adjusting for accuracy.
+	\item If the monster has a significant ability (especially one that deals substantial damage like a breath weapon or one that would automatically take out an opponent on a failed save such as a banshee's wail) that requires a saving throw your party is particularly weak at (such as a party with no one proficient in INT saves facing a mkhulu), increase the offensive rating by two.
+	\item If the monster has a damage transfer ability, increase the actual damage by 50\% before calculating the offensive rating.
+	\item Summoning abilities depend on the mechanics--if the monster is expected to start combat with its allies summoned or the allies do not disappear when the monster is defeated, treat them as separate combatants. If they require in-combat actions to summon and/or disappear when the summoner is defeated, increase the summoner's offensive rating by two.
+\end{enumerate}
+
+\subsection{Calculating Defensive Rating}
 
 \section{Monsters, Alphabetical}
 \import{./}{monsters-a-e.tex}

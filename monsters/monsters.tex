@@ -454,6 +454,52 @@ The following are some considerations for adjusting offensive rating. These are 
 
 \subsection{Calculating Defensive Rating}
 
+Defensive rating is based on the idea that a monster of Defensive Rating X should live for approximately 3 rounds against a baseline party of level X characters actively fighting it. This allows it the substantial chance of getting off its "Big Cool Abilities" at least once before being soundly defeated (the assumption is, after all, that the heroes win way more fights than they lose). As such, the primary factor in Defensive Rating is hit points. The underlying assumption is that monsters will generally be focus-fired, or at least need to survive being focus-fired by the entire party for some time.
+
+To calculate Defensive Rating, follow the steps below:
+\begin{itemize}
+	\item calculate the base hit points of the monster, or pick an appropriate number from the \nameref{tbl:defensive-rating} table for the rating you approximately wish to end up with.
+	\item Adjust the base hit points for regeneration and substantial defensive measures (such as damage transfer abilities) based on the considerations below. This produces the \textit{effective hit points} of the monster. 
+	\item Compare the monster's AC to that on the line that matches the effective hit point total. If the listed AC is 2 or more points higher than the monster's AC, either change the AC or adjust the defensive CR down by one step for every 2 points difference. Similarly, if the monster's AC is two or more points higher than the table value, you can adjust the monster's AC to fit the table or adjust the defensive CR up by one step for every 2 points of difference.
+	\item Playtest. This is especially important if the monster has special abilities whose effect on their longevity is situational or isn't immediately apparent.
+\end{itemize}
+
+Once you've settled on a final hit point total, you can back-calculate the number of hit dice if you want, as long as you've defined the monster's ability scores. Generally, larger creatures have larger hit dice (but fewer of them), with Tiny creatures having d4 HD by default and Gargantuan creatures having d20 HD. The number of HD is given by $hit point total/(HD average + Constitution modifier)$, where the HD average is half of the maximum value on the die, plus 0.5 (e.g. a d4 has an average of 2.5). This will usually not come out cleanly--adjust the HP and HD until you're happy. As long as the total doesn't change to a different DR band, no other changes result.
+
+Saving throw proficiency generally does not play into Defensive Rating much unless it has high saving throw modifiers in multiple of Constitution, Dexterity, and Wisdom. In that case, adjust defensive CR up by one if your party substantially relies on saving-throw based effects.
+
+\begin{figure}
+	\begin{DndTable}{lllll}
+		\textbf{OR} & \textbf{Hit Points} & \textbf{AC} \\
+		0 & 1-6 & +2 \\
+		1/8 & 7-13 & 10 \\
+		1/4 & 14-34 & 13 \\
+		1/2 & 50-70 & +3 \\
+		1		& 71-85 & +4 \\
+		2		& 14-19 & +4 \\
+		3		& 20-25 & +5 \\
+		4   & 26-30 & +5 \\
+		5   & 31-36 & +6 \\
+		6   & 37-42 & +6 \\
+		7   & 43-48 & +6 \\
+		8   & 49-54 & +6 \\
+		9   & 55-60 & +7 \\
+		10  & 61-66 & +7 \\
+		11  & 67-72 & +7 \\
+		12  & 73-78 & +7 \\
+		13  & 79-84 & +8 \\
+		14  & 85-90 & +8 \\
+		15  & 91-96 & +8 \\
+		16  & 97-102 & +8 \\
+		17  & 103-108 & +9 \\
+		18  & 109-114 & +9 \\
+		19  & 115-120 & +9 \\
+		20  & 121-126 & +9 \\
+	\end{DndTable}
+	\caption*{Offensive Rating Summary}
+	\label{tbl:offensive-rating}
+\end{figure}
+
 % \section{Monsters, Alphabetical}
 % \import{./}{monsters-a-e.tex}
 % \FloatBarrier

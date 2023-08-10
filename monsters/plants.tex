@@ -1,2 +1,47 @@
+\clearpage
 \FloatBarrier
 \section{Plants}
+Most plants are not a threat and thus do not have stat blocks; things like toxic molds, poison thistles, etc are hazards, not creatures. But in a fantasy world, there are certainly animate plants. They are detailed here.
+
+\subsection{Awakened Shrub}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Awakened Shrub}
+\begin{multicols}{2}
+\DndMonsterType{Small plant}
+\DndMonsterBasics[armor-class={9}, hit-points={10 (3d6)}, speed={20 ft.}]
+\MonsterStats{-4}{-1}{+0}{+0}{+0}{-2}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={0 (10 XP)}]
+\DndMonsterAction{False Appearance} While the shrub remains motionless, it is indistinguishable from a normal shrub.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Rake,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d4 - 1},
+	dmg-type=slashing
+]
+\end{multicols}
+\end{DndMonster}
+\subsection{Awakened Tree}
+\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Awakened Tree}
+\begin{multicols}{2}
+\DndMonsterType{Huge plant}
+\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d12 + 14)}, speed={20 ft.}]
+\MonsterStats{+4}{-2}{+2}{+0}{+0}{-2}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={2 (450 XP)}]
+\DndMonsterAction{False Appearance} While the tree remains motionless, it is indistinguishable from a normal tree.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{3d6 + 4},
+	dmg-type=bludgeoning
+]
+\end{multicols}
+\end{DndMonster}

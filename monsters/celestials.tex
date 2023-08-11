@@ -2,13 +2,68 @@
 \section{Celestials}
 Creatures of the astral who are encountered in their own forms (either on the Astral plane or having traveled to another plane under their own power or that of an Ascendant) are called "celestials", after the most prominent group, the angels. Additionally, Mortal-plane creatures touched by strong amounts of Ascendant power may become MORE than they were. These two are counted as celestials--among them the heavenly flying horse, the pegasus, and the horned protector and friend to the innocent, the unicorn.
 \subsection{Angels}
+"Angel" most properly denotes the members of the Angelic Hosts, those sworn to the endless battle to keep the universe safe from threats from Beyond. In common parlance, however, it means all sapient Lucians who act on the orders of the Great Mechanism or various Ascendants. They inhabit either their own, often vaguely humanoid bodies of aether or wondrous shells of aether. Because their essence is of the Astral directly, they don't have the vulnerability to silver that fiends do.
+
+Don't mistake their luminous, kindly appearances for beneficence or goodness or kindness. Most often, angels are sent to the Mortal and other planes on specific missions, often of vengeance, justice, or punishment. Some are good and kindly, others are not. But angels are almost always \textit{dutiful}, even if that means wreaking havoc on mortals.
+
+\begin{DndMonster}{Astral Eye}
+	\DndMonsterType{Small celestial}
+	\DndMonsterBasics[armor-class={14}, hit-points={45}, speed={0 ft., fly 50 ft. (hover)}]
+	\MonsterStats{-1}{+4}{+1}{+1}{+5}{+4}
+	\DndMonsterDetails[skills={Perception +9}, damage-resistances={fire, radiant}, senses={truesight 60 ft., blindsight 60 ft., passive Perception 19}, languages={all, telepathy 60 ft.}, challenge={3:1}]
+	
+	\DndMonsterSection{Actions}
+	
+	\DndMonsterAction{Multiattack} The eye uses Blazing Beam twice. It can substitute one attack for either Divine Inspiration or Righteous Jaunt.
+	
+	\DndMonsterAttack[
+		name=Blazing Beam,
+		distance=ranged,
+		type=spell,
+		mod=+6,
+		range=120 ft.,
+		dmg=\DndDice{1d6+4},
+		dmg-type=radiant
+	]
+	\DndMonsterAction{Divine Inspiration (1/rest)} All allies other than the eye within 60 ft. of the eye that can see it gain advantage on their next attack roll, saving throw, or ability check made within 1 minute.
+	
+	\DndMonsterAction{Righteous Jaunt (3/rest)} The eye teleports to an unoccupied location it can see within 120 ft. Any creature within 5 ft. of its starting location must make a DC 14 Dexterity saving throw, taking 2d6 radiant damage on a failure or half as much on a success. 
+\end{DndMonster}
+
+\begin{DndMonster}{Blade Archon, Lesser}
+	\DndMonsterType{Medium celestial}
+	\DndMonsterBasics[armor-class={15 (scale mail)}, hit-points={60}, speed={30 ft., fly 50 ft. (hover)}]
+	\MonsterStats{4}{+2}{+2}{+0}{+3}{+2}
+	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={4:3}]
+
+	\DndMonsterAction{Astral Edge} The blade archon's weapon attacks deal an additional 1d6 radiant damage (included in the attacks). This is an inherent property of the archon, not a property of the weapon.
+	
+	\DndMonsterAction{Dancing Blades} The blade archon is accompanied by two floating longswords that it uses to make attacks either in melee or at range, giving it much larger reach than normal.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The Archon attacks twice with its longswords. It can use Confeitor in place of either of those attacks if available.
+	\DndMonsterAttack[
+		name=Floating Longsword,
+		distance=both,
+		type=weapon,
+		mod=+6,
+		reach=20 ft.,
+		dmg=\DndDice{1d10+4},
+		dmg-type=slashing,
+		plus-dmg=\DndDice{1d6},
+		plus-dmg-type=radiant
+	]
+	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 13 Dexterity saving throw, taking 4d6 psychic damage on a failure or half as much on a success. Creatures that fail are shaken by memories of their sins and are \nameref{condition:frightened} of the archon until the end of their next turn.
+\end{DndMonster}
+\FloatBarrier
 
 \subsection{Astral-Touched Mortal Creatures}
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Pegasus}
+\begin{DndMonster}{Pegasus}
 \DndMonsterType{Large celestial}
 \DndMonsterBasics[armor-class={12}, hit-points={59 (7d10 + 21)}, speed={60 ft., fly 90 ft.}]
 \MonsterStats{+4}{+2 (+4)}{+3}{+0}{+2 (+4)}{+1 (+3)}
-\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={understands Celestial, Common, Elvish, and Sylvan but can't speak}, challenge={2}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={understands Celestial, Common, Elvish, and Sylvan but can't speak}, challenge={1:2}]
+
 \DndMonsterSection{Actions}
 \DndMonsterAttack[
 	name=Hooves,
@@ -24,9 +79,9 @@ Creatures of the astral who are encountered in their own forms (either on the As
 \begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Couatl}
 \begin{multicols}{2}
 \DndMonsterType{Medium celestial}
-\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft., fly 90 ft.}]
+\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft., fly 90 ft.}]
 \MonsterStats{+3}{+5}{+3 (+5)}{+4}{+5 (+7)}{+4 (+6)}
-\DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={4}]
+\DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={3:6}]
 
 \DndMonsterAction{Innate Spellcasting} The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
 
@@ -36,8 +91,6 @@ Creatures of the astral who are encountered in their own forms (either on the As
 \item[] 1/day each: \nameref{spell:flame-strike}
 \end{itemize} 
 
-\DndMonsterAction{Magic weapons} The couatl's weapon attacks are magical.
-
 \DndMonsterAction{Shielded Mind} The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.
 
 \DndMonsterSection{Actions}
@@ -45,9 +98,9 @@ Creatures of the astral who are encountered in their own forms (either on the As
 	name=Bite,
 	distance=melee,
 	type=weapon,
-	mod=+8,
+	mod=+6,
 	reach=5,
-	dmg=\DndDice{1d6 + 5},
+	dmg=\DndDice{1d6 + 3},
 	dmg-type=piercing,
 	extra={, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.}
 ]
@@ -74,7 +127,7 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 \DndMonsterType{Large celestial}
 \DndMonsterBasics[armor-class={12}, hit-points={67 (9d10 + 18)}, speed={50 ft.}]
 \MonsterStats{+4}{+2}{+2}{+0}{+3}{+3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={Celestial, Elvish, Sylvan, telepathy 60 ft.}, challenge={5}]
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={Celestial, Elvish, Sylvan, telepathy 60 ft.}, challenge={6:4}]
 \DndMonsterAction{Charge} If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Innate Spellcasting} The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:

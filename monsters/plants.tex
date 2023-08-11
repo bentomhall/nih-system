@@ -45,3 +45,98 @@ Most plants are not a threat and thus do not have stat blocks; things like toxic
 ]
 \end{multicols}
 \end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Fungus, Shrieker}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium plant}
+	\DndMonsterBasics[armor-class={5}, hit-points={13 (3d8)}, speed={0 ft.}]
+	\MonsterStats{-5}{-5}{+0}{-5}{-4}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, deafened, frightened}, senses={blindsight 30 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={0 (10 XP)}]
+	\DndMonsterAction{False Appearance} While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.
+	
+	\DndMonsterAction{Shriek} When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.
+	
+	\DndMonsterSection{Actions}
+	\end{multicols}
+	\end{DndMonster}
+	
+	\subsection{Fungus, Violet}
+	\begin{DndMonster}[width=\textwidth + 8pt]{Fungus, Violet}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium plant}
+	\DndMonsterBasics[armor-class={5}, hit-points={18 (4d8)}, speed={5 ft.}]
+	\MonsterStats{-4}{-5}{+0}{-5}{-4}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, deafened, frightened}, senses={blindsight 30 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={1/4 (50 XP)}]
+	\DndMonsterAction{False Appearance} While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The fungus makes 1d4 Rotting Touch attacks.
+	\DndMonsterAttack[
+		name=Rotting Touch,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=10,
+		dmg=\DndDice{1d8},
+		dmg-type=necrotic
+	]
+	\end{multicols}
+	\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Shambling Mound}
+	\begin{multicols}{2}
+	\DndMonsterType{Large plant}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={136 (16d10 + 48)}, speed={20 ft., swim 20 ft.}]
+	\MonsterStats{+4}{-1}{+3}{-3}{+0}{-3}
+	\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={lightning}, damage-resistances={cold, fire}, damage-vulnerabilities={}, condition-immunities={blinded, deafened, exhaustion}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 10}, languages={—}, challenge={5 (1,800 XP)}]
+	\DndMonsterAction{Lightning Absorption} Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.
+	\DndMonsterAttack[
+		name=Slam,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d8 + 4},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAction{Engulf}
+	The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
+	\end{multicols}
+	\end{DndMonster}
+
+	\begin{DndMonster}[width=\textwidth + 8pt]{Treant}
+		\begin{multicols}{2}
+		\DndMonsterType{Huge plant}
+		\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={138 (12d12 + 60)}, speed={30 ft.}]
+		\MonsterStats{+6}{-1}{+5}{+1}{+3}{+1}
+		\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 13}, languages={Common, Druidic, Elvish, Sylvan}, challenge={9 (5,000 XP)}]
+		\DndMonsterAction{False Appearance} While the treant remains motionless, it is indistinguishable from a normal tree.
+		
+		\DndMonsterAction{Siege Monster} The treant deals double damage to objects and structures.
+		
+		\DndMonsterSection{Actions}
+		\DndMonsterAction{Multiattack} The treant makes two slam attacks.
+		\DndMonsterAttack[
+			name=Slam,
+			distance=melee,
+			type=weapon,
+			mod=+10,
+			reach=5,
+			dmg=\DndDice{3d6 + 6},
+			dmg-type=bludgeoning
+		]
+		\DndMonsterAttack[
+			name=Rock,
+			distance=ranged,
+			type=weapon,
+			mod=+10,
+			range=60/180,
+			dmg=\DndDice{4d10 + 6},
+			dmg-type=bludgeoning
+		]
+		The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
+		\end{multicols}
+		\end{DndMonster}

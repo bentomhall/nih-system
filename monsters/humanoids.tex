@@ -97,6 +97,36 @@
 	]
 \end{DndMonster}
 
+\begin{DndMonster}[width=\textwidth + 8pt]{Orc Raider}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium humanoid (orc)}
+	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={15 (2d8 + 6)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+3}{-2}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Intimidation +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Orc}, challenge={1/2 (100 XP)}]
+	\DndMonsterAction{Aggressive} As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Greataxe,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d12 + 3},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Javelin,
+		distance=both,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing
+	]
+	\end{multicols}
+\end{DndMonster}
+
 \subsection{Therianthropes}
 Therianthropes, more commonly known as were creatures, stem originally from demonic interference, mostly from the followers of the demon prince known as the Red Fang. But many of the creatures are blameless victims, and there are a substantial number of people who inherited the ability to transform from their cursed ancestors. These entries only describe those capable of passing on the curse via bite, in the main the victims themselves of a cursed bite. Were-creatures may either choose to revel in their blood-lust curse or seek to control it; either way, they remain dangerous.
 

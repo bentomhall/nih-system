@@ -1,2 +1,216 @@
-\FloatBarrier
+\clearpage
 \section{Undead}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Ghast}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium undead}
+	\DndMonsterBasics[armor-class={13}, hit-points={36 (8d8)}, speed={30 ft.}]
+	\MonsterStats{+3}{+3}{+0}{+0}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={necrotic}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Common}, challenge={2 (450 XP)}]
+	\DndMonsterAction{Stench} Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.
+	
+	\DndMonsterAction{Turning Defiance} The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{2d8 + 3},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Claws,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{2d6 + 3},
+		dmg-type=slashing,
+		extra={. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+	]
+	\end{multicols}
+	\end{DndMonster}
+	
+	\subsection{Ghost}
+	\begin{DndMonster}[width=\textwidth + 8pt]{Ghost}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium undead}
+	\DndMonsterBasics[armor-class={11}, hit-points={45 (10d8)}, speed={0 ft., fly 40 ft. (hover)}]
+	\MonsterStats{-2}{+1}{+0}{+0}{+1}{+3}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={cold, necrotic, poison}, damage-resistances={acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained}, senses={darkvision 60 ft., passive Perception 11}, languages={any languages it knew in life}, challenge={4 (1,100 XP)}]
+	\DndMonsterAction{Ethereal Sight} The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.
+	
+	\DndMonsterAction{Incorporeal Movement} The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Withering Touch,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{4d6 + 3},
+		dmg-type=necrotic
+	]
+	
+	\DndMonsterAction{Etherealness}
+	The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.
+	\DndMonsterAction{Horrifying Visage}
+	Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 \texttimes 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a \textit{greater restoration} spell, but only within 24 hours of it occurring.
+	
+	One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
+	
+	The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the \textit{dispel evil and good} spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
+	\end{multicols}
+	\end{DndMonster}
+	
+	\subsection{Ghoul}
+	\begin{DndMonster}[width=\textwidth + 8pt]{Ghoul}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium undead}
+	\DndMonsterBasics[armor-class={12}, hit-points={22 (5d8)}, speed={30 ft.}]
+	\MonsterStats{+1}{+2}{+0}{-2}{+0}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Common}, challenge={1 (200 XP)}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{2d6 + 2},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Claws,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{2d4 + 2},
+		dmg-type=slashing,
+		extra={. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+	]
+	\end{multicols}
+	\end{DndMonster}
+
+	\subsection{Lich}
+\begin{DndMonster}[width=\textwidth + 8pt]{Lich}
+\begin{multicols}{2}
+\DndMonsterType{Medium undead}
+\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={135 (18d8 + 54)}, speed={30 ft.}]
+\MonsterStats{+0}{+3}{+3}{+5}{+2}{+3}
+\DndMonsterDetails[saving-throws={Con +10, Int +12, Wis +9}, skills={Arcana +18, History +12, Insight +9, Perception +9}, damage-immunities={poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={cold, lightning, necrotic}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, poisoned}, senses={truesight 120 ft., passive Perception 19}, languages={Common plus up to five other languages}, challenge={21 (33,000 XP)}]
+\DndMonsterAction{Legendary Resistance (3/Day)} If the lich fails a saving throw, it can choose to succeed instead.
+
+\DndMonsterAction{Rejuvenation} If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.
+
+\DndMonsterAction{Spellcasting} The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following arcanist spells prepared:
+
+\DndMonsterAction{Turn Resistance} The lich has advantage on saving throws against any effect that turns undead.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Paralyzing Touch,
+	distance=melee,
+	type=spell,
+	mod=+12,
+	reach=5,
+	dmg=\DndDice{3d6},
+	dmg-type=cold,
+	extra={. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+]
+
+\DndMonsterSection{Legendary Actions}
+The Lich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Lich regains spent legendary actions at the start of its turn.
+\begin{DndMonsterLegendaryActions}
+\DndMonsterLegendaryAction{Cantrip}{The lich casts a cantrip.}
+\DndMonsterLegendaryAction{Paralyzing Touch (Costs 2 Actions)}{The lich uses its Paralyzing Touch.}
+\DndMonsterLegendaryAction{Frightening Gaze (Costs 2 Actions)}{The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.}
+\DndMonsterLegendaryAction{Disrupt Life (Costs 3 Actions)}{Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.}
+\end{DndMonsterLegendaryActions}
+\end{multicols}
+\end{DndMonster}
+
+\subsection{Mummy}
+\begin{DndMonster}[width=\textwidth + 8pt]{Mummy}
+\begin{multicols}{2}
+\DndMonsterType{Medium undead**}
+\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={58 (9d8 + 18)}, speed={20 ft.}]
+\MonsterStats{+3}{-1}{+2}{-2}{+0}{+1}
+\DndMonsterDetails[saving-throws={Wis +2}, skills={}, damage-immunities={necrotic, poison}, damage-resistances={bludgeoning, piercing, and slashing from nonmagical attacks}, damage-vulnerabilities={fire}, condition-immunities={charmed, exhaustion, frightened, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={the languages it knew in life}, challenge={3 (700 XP)}]
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
+\DndMonsterAttack[
+	name=Rotting Fist,
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=bludgeoning,
+	extra={ plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the \textit{remove curse} spell or other magic.}
+]
+\DndMonsterAction{Mummy's Curse (recharge 5-6)}
+The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
+\end{multicols}
+\end{DndMonster}
+
+\subsection{Mummy Lord}
+\begin{DndMonster}[width=\textwidth + 8pt]{Mummy Lord}
+\begin{multicols}{2}
+\DndMonsterType{Medium undead}
+\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={20 ft.}]
+\MonsterStats{+4}{+0}{+3}{+0}{+4}{+3}
+\DndMonsterDetails[saving-throws={Con +8, Int +5, Wis +9, Cha +8}, skills={History +5, Religion +5}, damage-immunities={necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={}, damage-vulnerabilities={fire}, condition-immunities={charmed, exhaustion, frightened, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={the languages it knew in life}, challenge={15 (13,000 XP)}]
+\DndMonsterAction{Magic Resistance} The mummy lord has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterAction{Rejuvenation} A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.
+
+\DndMonsterAction{Spellcasting} The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following priest spells prepared:
+
+Cantrips (at will): \textit{sacred flame}, \textit{thaumaturgy}
+
+1st level (4 slots): \textit{command}, \textit{guiding bolt}, \textit{shield of faith}
+
+2nd level (3 slots): \textit{hold person}, \textit{silence}, \textit{spiritual weapon}
+
+3rd level (3 slots): \textit{animate dead}, \textit{dispel magic}
+
+4th level (3 slots): \textit{divination}, \textit{guardian of faith}
+
+5th level (2 slots):  \textit{contagion}, \textit{insect plague}
+
+6th level (1 slot): \textit{harm}
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
+\DndMonsterAttack[
+	name=Rotting Fist,
+	distance=melee,
+	type=weapon,
+	mod=+9,
+	reach=5,
+	dmg=\DndDice{3d6 + 4},
+	dmg-type=bludgeoning,
+	extra={ plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the \textit{remove curse} spell or other magic.}
+]
+\DndMonsterAction{Mummy's Curse (recharge 5-6)}
+The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours.
+
+\DndMonsterSection{Legendary Actions}
+The Mummy Lord can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Mummy Lord regains spent legendary actions at the start of its turn.
+
+\begin{DndMonsterLegendaryActions}
+
+\DndMonsterLegendaryAction{Attack}{The mummy lord makes one attack with its rotting fist or uses its Dreadful Glare.}
+\DndMonsterLegendaryAction{Blinding Dust}{Blinding dust and sand swirls magically around the mummy lord. Each creature within 5 feet of the mummy lord must succeed on a DC 16 Constitution saving throw or be blinded until the end of the creature's next turn.}
+\DndMonsterLegendaryAction{Blasphemous Word (Costs 2 Actions)}{The mummy lord utters a blasphemous word. Each non-undead creature within 10 feet of the mummy lord that can hear the magical utterance must succeed on a DC 16 Constitution saving throw or be stunned until the end of the mummy lord's next turn.}
+\DndMonsterLegendaryAction{Channel Negative Energy (Costs 2 Actions)}{The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.}
+\DndMonsterLegendaryAction{Whirlwind of Sand (Costs 2 Actions)}{The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.}
+\end{DndMonsterLegendaryActions}
+\end{multicols}
+\end{DndMonster}

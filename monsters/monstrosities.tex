@@ -766,36 +766,49 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	\end{multicols}
 \end{DndMonster}
 
-%MARKER
-\begin{DndMonster}[width=\textwidth + 8pt]{Spirit Naga}
-\begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
-\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={40 ft.}]
-\MonsterStats{+4}{+3}{+2}{+3}{+2}{+3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={Abyssal, Common}, challenge={8 (3,900 XP)}]
-
-\DndMonsterAction{Spellcasting} The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following arcanist spells prepared:\\nCantrips (at will): \textit{mage hand}, \textit{minor illusion}, \textit{ray of frost}\\n1st level (4 slots): \textit{charm person}, \textit{detect magic}, \textit{sleep}\\n2nd level (3 slots): \textit{detect thoughts}, \textit{hold person}\\n3rd level (3 slots): \textit{lightning bolt}, \textit{water breathing}\\n4th level (3 slots): \textit{blight}, \textit{dimension door}\\n5th level (2 slots): \textit{dominate person}
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+7,
-	reach=10,
-	dmg=\DndDice{1d6 + 4},
-	dmg-type=piercing,
-	extra={, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.}
-]
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Otyugh}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Spirit Naga}
 	\begin{multicols}{2}
 	\DndMonsterType{Large monstrosity}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={160 (20d10 + 50)}, speed={40 ft.}]
+	\MonsterStats{+4}{+3}{+2}{+3}{+2}{+3}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={Abyssal, Common}, challenge={10:9}]
+
+	\DndMonsterAction{Spellcasting} The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:dominate} (Legendary, 1x), \nameref{spell:hold-person} (3x)
+		\item[] \textbf{Damage} \nameref{spell:blight} (2x), \nameref{spell:lightning-bolt} (2x)
+		\item[] \textbf{Other} \nameref{spell:dimension-door} (1x)
+	\end{itemize}
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=10,
+		dmg=\DndDice{1d6 + 4},
+		dmg-type=piercing,
+		extra={, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.}
+	]
+	\DndMonsterAttack[
+		name=Frost Blast,
+		distance=ranged,
+		type=spell,
+		mod=+6,
+		range=90,
+		dmg=\DndDice(2d8+3),
+		dmg-type=cold,
+		extra={ and the target's speed is reduced by 10 feet until the end of their next turn.}
+	]
+	\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}{Otyugh}
+	\DndMonsterType{Large monstrosity}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft.}]
-	\MonsterStats{+3}{+0}{+4}{-2}{+1}{-2}
-	\DndMonsterDetails[saving-throws={Con +7}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 11}, languages={Otyugh}, challenge={5 (1,800 XP)}]
+	\MonsterStats{+3}{+0}{+4 (+7)}{-2}{+1}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 11}, languages={Otyugh}, challenge={6:6}]
 	\DndMonsterAction{Limited Telepathy} The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.
 	
 	\DndMonsterSection{Actions}
@@ -822,72 +835,67 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	]
 	\DndMonsterAction{Slam}
 	The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.
-	\end{multicols}
-	\end{DndMonster}
-
-	\begin{DndMonster}[width=\textwidth + 8pt]{Owlbear}
-		\begin{multicols}{2}
-		\DndMonsterType{Large monstrosity}
-		\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
-		\MonsterStats{+5}{+1}{+3}{-4}{+1}{-2}
-		\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={3 (700 XP)}]
-		\DndMonsterAction{Keen Sight and Smell} The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell.
-		
-		\DndMonsterSection{Actions}
-		\DndMonsterAction{Multiattack} The owlbear makes two attacks: one with its beak and one with its claws.
-		\DndMonsterAttack[
-			name=Beak,
-			distance=melee,
-			type=weapon,
-			mod=+7,
-			reach=5,
-			dmg=\DndDice{1d10 + 5},
-			dmg-type=piercing
-		]
-		\DndMonsterAttack[
-			name=Claws,
-			distance=melee,
-			type=weapon,
-			mod=+7,
-			reach=5,
-			dmg=\DndDice{2d8 + 5},
-			dmg-type=slashing
-		]
-		\end{multicols}
-	\end{DndMonster}
-
-\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Phase Spider}
-\begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
-\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={32 (5d10 + 5)}, speed={30 ft., climb 30 ft.}]
-\MonsterStats{+2}{+2}{+1}{-2}{+0}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3 (700 XP)}]
-\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.
-
-\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-
-\DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d10 + 2},
-	dmg-type=piercing,
-	extra={, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
-]
-\end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}[width=\textwidth + 8pt]{Purple Worm}
-	\begin{multicols}{2}
+\begin{DndMonster}{Owlbear}
+	\DndMonsterType{Large monstrosity}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
+	\MonsterStats{+5}{+1}{+3}{-4}{+1}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={3:2}]
+	\DndMonsterAction{Keen Sight and Smell} The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The owlbear makes two attacks: one with its beak and one with its claws.
+	\DndMonsterAttack[
+		name=Beak,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{1d10 + 5},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Claws,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d8 + 5},
+		dmg-type=slashing
+	]
+\end{DndMonster}
+
+%MARKER
+\begin{DndMonster}{Phase Spider}
+	\DndMonsterType{Large monstrosity}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={32 (5d10 + 5)}, speed={30 ft., climb 30 ft.}]
+	\MonsterStats{+2}{+2}{+1}{-2}{+0}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3:1}]
+	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.
+
+	\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+	\DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d10 + 2},
+		dmg-type=piercing,
+		extra={, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Purple Worm}
 	\DndMonsterType{Gargantuan monstrosity}
 	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={247 (15d20 + 90)}, speed={50 ft., burrow 30 ft.}]
 	\MonsterStats{+9}{-2}{+6}{-5}{-1}{-3}
-	\DndMonsterDetails[saving-throws={Con +11, Wis +4}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., tremorsense 60 ft., passive Perception 9}, languages={—}, challenge={15 (13,000 XP)}]
+	\DndMonsterDetails[saving-throws={Con +11, Wis +4}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., tremorsense 60 ft., passive Perception 9}, languages={—}, challenge={16:14}]
 	\DndMonsterAction{Tunneler} The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
 	
 	\DndMonsterSection{Actions}
@@ -900,7 +908,9 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		reach=10,
 		dmg=\DndDice{3d8 + 9},
 		dmg-type=piercing,
-		extra={. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns.\\nIf the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.}
+		extra={. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns.
+		
+		If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.}
 	]
 	\DndMonsterAttack[
 		name=Tail Stinger,
@@ -912,16 +922,13 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		dmg-type=piercing,
 		extra={, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.}
 	]
-	\end{multicols}
 \end{DndMonster}
 
-\subsection{Remorhaz}
-\begin{DndMonster}[width=\textwidth + 8pt]{Remorhaz}
-\begin{multicols}{2}
+\begin{DndMonster}{Remorhaz}
 \DndMonsterType{Huge monstrosity}
 \DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={195 (17d12 + 85)}, speed={30 ft., burrow 20 ft.}]
 \MonsterStats{+7}{+1}{+5}{-3}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={cold, fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 10}, languages={—}, challenge={11 (7,200 XP)}]
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={cold, fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 10}, languages={—}, challenge={10:11}]
 \DndMonsterAction{Heated Body} A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.
 
 \DndMonsterSection{Actions}
@@ -937,10 +944,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 ]
 \DndMonsterAction{Swallow}
 The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
-\end{multicols}
 \end{DndMonster}
 
-\subsection{Roc}
 \begin{DndMonster}[width=\textwidth + 8pt]{Roc}
 \begin{multicols}{2}
 \DndMonsterType{Gargantuan monstrosity}
@@ -1012,38 +1017,11 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Rust Monster}
-\begin{DndMonster}[width=\textwidth + 8pt]{Rust Monster}
-\begin{multicols}{2}
-\DndMonsterType{Medium monstrosity}
-\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={27 (5d8 + 5)}, speed={40 ft.}]
-\MonsterStats{+1}{+1}{+1}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={—}, challenge={1/2 (100 XP)}]
-\DndMonsterAction{Iron Scent} The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it.
-
-\DndMonsterAction{Rust Metal} Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d8 + 1},
-	dmg-type=piercing
-]
-\DndMonsterAction{Antennae}
-The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.\\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[width=\textwidth + 8pt]{Stirge}
-	\begin{multicols}{2}
+\begin{DndMonster}{Stirge}
 	\DndMonsterType{Tiny monstrosity}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={2 (1d4)}, speed={10 ft., fly 40 ft.}]
 	\MonsterStats{-3}{+3}{+0}{-4}{-1}{-2}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={1/8 (25 XP)}]
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={1/4:0}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAttack[
 		name=Blood Drain,
@@ -1053,115 +1031,113 @@ The rust monster corrodes a nonmagical ferrous metal object it can see within 5 
 		reach=5,
 		dmg=\DndDice{1d4 + 3},
 		dmg-type=piercing,
-		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
+		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
+		
+		The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
 	]
-	\end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}[width=\textwidth + 8pt]{Tarrasque}
-	\begin{multicols}{2}
-	\DndMonsterType{Gargantuan monstrosity (titan)}
-	\DndMonsterBasics[armor-class={25 (natural armor)}, hit-points={676 (33d20 + 330)}, speed={40 ft.}]
-	\MonsterStats{+10}{+0}{+10}{-4}{+0}{+0}
-	\DndMonsterDetails[saving-throws={Int +5, Wis +9, Cha +9}, skills={}, damage-immunities={fire, poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, paralyzed, poisoned}, senses={blindsight 120 ft., passive Perception 10}, languages={—}, challenge={30 (155,000 XP)}]
-	\DndMonsterAction{Legendary Resistance (3/Day)} If the tarrasque fails a saving throw, it can choose to succeed instead.
+% \begin{DndMonster}[width=\textwidth + 8pt]{Tarrasque} rewrite me
+% 	\begin{multicols}{2}
+% 	\DndMonsterType{Gargantuan monstrosity (titan)}
+% 	\DndMonsterBasics[armor-class={25 (natural armor)}, hit-points={676 (33d20 + 330)}, speed={40 ft.}]
+% 	\MonsterStats{+10}{+0}{+10}{-4}{+0}{+0}
+% 	\DndMonsterDetails[saving-throws={Int +5, Wis +9, Cha +9}, skills={}, damage-immunities={fire, poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, paralyzed, poisoned}, senses={blindsight 120 ft., passive Perception 10}, languages={—}, challenge={30 (155,000 XP)}]
+% 	\DndMonsterAction{Legendary Resistance (3/Day)} If the tarrasque fails a saving throw, it can choose to succeed instead.
 	
-	\DndMonsterAction{Magic Resistance} The tarrasque has advantage on saving throws against spells and other magical effects.
+% 	\DndMonsterAction{Magic Resistance} The tarrasque has advantage on saving throws against spells and other magical effects.
 	
-	\DndMonsterAction{Reflective Carapace} Any time the tarrasque is targeted by a \textit{magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.
+% 	\DndMonsterAction{Reflective Carapace} Any time the tarrasque is targeted by a \textit{magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.
 	
-	\DndMonsterAction{Siege Monster} The tarrasque deals double damage to objects and structures.
+% 	\DndMonsterAction{Siege Monster} The tarrasque deals double damage to objects and structures.
 	
+% 	\DndMonsterSection{Actions}
+% 	\DndMonsterAction{Multiattack} The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its Swallow instead of its bite.
+% 	\DndMonsterAttack[
+% 		name=Bite,
+% 		distance=melee,
+% 		type=weapon,
+% 		mod=+19,
+% 		reach=10,
+% 		dmg=\DndDice{4d12 + 10},
+% 		dmg-type=piercing,
+% 		extra={. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the tarrasque can't bite another target.}
+% 	]
+% 	\DndMonsterAttack[
+% 		name=Claw,
+% 		distance=melee,
+% 		type=weapon,
+% 		mod=+19,
+% 		reach=15,
+% 		dmg=\DndDice{4d8 + 10},
+% 		dmg-type=slashing
+% 	]
+% 	\DndMonsterAttack[
+% 		name=Horns,
+% 		distance=melee,
+% 		type=weapon,
+% 		mod=+19,
+% 		reach=10,
+% 		dmg=\DndDice{4d10 + 10},
+% 		dmg-type=piercing
+% 	]
+% 	\DndMonsterAttack[
+% 		name=Tail,
+% 		distance=melee,
+% 		type=weapon,
+% 		mod=+19,
+% 		reach=20,
+% 		dmg=\DndDice{4d6 + 10},
+% 		dmg-type=bludgeoning,
+% 		extra={. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be knocked prone.}
+% 	]
+% 	\DndMonsterAction{Frightful Presence}
+% 	Each creature of the tarrasque's choice within 120 feet of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours.
+% 	\DndMonsterAction{Swallow}
+% 	The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.
+	
+% 	\DndMonsterSection{Legendary Actions}
+% 	The Tarrasque can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Tarrasque regains spent legendary actions at the start of its turn.
+% 	\begin{DndMonsterLegendaryActions}
+% 	\DndMonsterLegendaryAction{Attack}{The tarrasque makes one claw attack or tail attack.}
+% 	\DndMonsterLegendaryAction{Move}{The tarrasque moves up to half its speed.}
+% 	\DndMonsterLegendaryAction{Chomp (Costs 2 Actions)}{The tarrasque makes one bite attack or uses its Swallow.}
+% 	\end{DndMonsterLegendaryActions}
+% 	\end{multicols}
+% \end{DndMonster}
+
+\begin{DndMonster}{Winter Wolf}
+	\DndMonsterType{Large monstrosity}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
+	\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Winter Wolf }, challenge={3:3}]
+	\DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+	\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+	\DndMonsterAction{Snow Camouflage} The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
+
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its Swallow instead of its bite.
 	\DndMonsterAttack[
 		name=Bite,
 		distance=melee,
 		type=weapon,
-		mod=+19,
-		reach=10,
-		dmg=\DndDice{4d12 + 10},
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d6 + 4},
 		dmg-type=piercing,
-		extra={. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the tarrasque can't bite another target.}
+		extra={. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.}
 	]
-	\DndMonsterAttack[
-		name=Claw,
-		distance=melee,
-		type=weapon,
-		mod=+19,
-		reach=15,
-		dmg=\DndDice{4d8 + 10},
-		dmg-type=slashing
-	]
-	\DndMonsterAttack[
-		name=Horns,
-		distance=melee,
-		type=weapon,
-		mod=+19,
-		reach=10,
-		dmg=\DndDice{4d10 + 10},
-		dmg-type=piercing
-	]
-	\DndMonsterAttack[
-		name=Tail,
-		distance=melee,
-		type=weapon,
-		mod=+19,
-		reach=20,
-		dmg=\DndDice{4d6 + 10},
-		dmg-type=bludgeoning,
-		extra={. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be knocked prone.}
-	]
-	\DndMonsterAction{Frightful Presence}
-	Each creature of the tarrasque's choice within 120 feet of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours.
-	\DndMonsterAction{Swallow}
-	The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.
-	
-	\DndMonsterSection{Legendary Actions}
-	The Tarrasque can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Tarrasque regains spent legendary actions at the start of its turn.
-	\begin{DndMonsterLegendaryActions}
-	\DndMonsterLegendaryAction{Attack}{The tarrasque makes one claw attack or tail attack.}
-	\DndMonsterLegendaryAction{Move}{The tarrasque moves up to half its speed.}
-	\DndMonsterLegendaryAction{Chomp (Costs 2 Actions)}{The tarrasque makes one bite attack or uses its Swallow.}
-	\end{DndMonsterLegendaryActions}
-	\end{multicols}
+
+	\DndMonsterAction{Frost Breath (recharge 5-6)}
+	The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
 \end{DndMonster}
 
-\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Winter Wolf}
-\begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
-\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
-\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Winter Wolf }, challenge={3 (700 XP)}]
-\DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
-
-\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
-
-\DndMonsterAction{Snow Camouflage} The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{2d6 + 4},
-	dmg-type=piercing,
-	extra={. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.}
-]
-
-\DndMonsterAction{Frost Breath (recharge 5-6)}
-The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
-\end{multicols}
-\end{DndMonster}
-
-\begin{DndMonster}[float*=ht,width=\textwidth + 8pt]{Worg}
-\begin{multicols}{2}
+\begin{DndMonster}{Worg}
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{+1}{+1}{-2}{+0}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin, Worg}, challenge={1/2 (100 XP)}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin, Worg}, challenge={1:1/2}]
 \DndMonsterAction{Keen Hearing and Smell} The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}
@@ -1175,5 +1151,4 @@ The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in th
 	dmg-type=piercing,
 	extra={. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.}
 ]
-\end{multicols}
 \end{DndMonster}

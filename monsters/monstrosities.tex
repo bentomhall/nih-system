@@ -42,7 +42,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	]
 \end{DndMonster}
 	
-\begin{DndMonster}{Behir}
+\begin{DndMonster}[float*=hb,width=\textwidth+8pt]{Behir}
 	\begin{multicols}{2}
 	\DndMonsterType{Huge monstrosity}
 	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={168 (16d12 + 64)}, speed={50 ft., climb 40 ft.}]
@@ -349,6 +349,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 		dmg-type=piercing,
 		extra={ plus 4 (1d8) poison damage.}
 	]
+	\end{multicols}
 \end{DndMonster}
 
 \begin{DndMonster}[width=\textwidth + 8pt]{Ettercap}
@@ -545,6 +546,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 		dmg=\DndDice{1d10 + 5},
 		dmg-type=piercing
 	]
+
 	\DndMonsterSection{Variants}
 	\DndMonsterAction{Cryohydra} Cryohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 2.
 	\DndMonsterAction{Pyrohydra} Pyrohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 2. Their regeneration is stopped by cold, not fire.
@@ -797,7 +799,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		type=spell,
 		mod=+6,
 		range=90,
-		dmg=\DndDice(2d8+3),
+		dmg=\DndDice{2d8+3},
 		dmg-type=cold,
 		extra={ and the target's speed is reduced by 10 feet until the end of their next turn.}
 	]
@@ -908,9 +910,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		reach=10,
 		dmg=\DndDice{3d8 + 9},
 		dmg-type=piercing,
-		extra={. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns.
-		
-		If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.}
+		extra={. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.}
 	]
 	\DndMonsterAttack[
 		name=Tail Stinger,
@@ -1031,9 +1031,7 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 		reach=5,
 		dmg=\DndDice{1d4 + 3},
 		dmg-type=piercing,
-		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
-		
-		The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
+		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
 	]
 \end{DndMonster}
 

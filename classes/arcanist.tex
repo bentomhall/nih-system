@@ -1,5 +1,11 @@
 \section{Arcanist\label{class:arcanist}}
 
+Wizard, sorcerer, mage, witch
+
+The arcanist is, as the name suggests, the class that represents the mastery of arcane magic. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They do not wear armor--the slight restrictions caused interfere with their highly practiced motions.
+
+Arcanists learn and cast spells via complex memory palaces, practices, meditation, and other intellectual processes. Because of this, they can modify their spells in ways most cannot. 
+
 Design goals: The arcanist is the basic full-caster arcane magic user, replacing the sorcerer and wizard. Their UCT is Metamagic, which will be expanded to do a whole lot more. SDCT: 3/7/7/3
 
 Subclasses:
@@ -125,7 +131,7 @@ When you cast a spell that has a range of touch, you can spend 1 AET to make the
 
 \subsubsection{Empowered Spell}
 
-When you roll damage for a spell, you can spend 1 AET to reroll a number of the damage dice up to your Intelligence modifier (minimum of one). You must use the new rolls.
+When you roll damage for a spell, you can spend 1 AET replace the result with the average value.
 
 You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
 
@@ -157,7 +163,7 @@ When you cast a spell, you can spend 1 AET to cast it without any somatic or ver
 
 When you cast a spell that targets only one creature and doesn't have a range of self, you can spend an amount of AET equal to 1/2 the spell's cost to target a second creature in range with the same spell (1 AET if the spell is a cantrip).
 
-To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, \textit{magic missile} and \textit{scorching ray} aren't eligible, but \textit{ray of frost} and \textit{chromatic orb} are.
+To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, \nameref{spell:magic-missile} and \nameref{spell:scorching-ray} aren't eligible, but \nameref{spell:ray-of-frost} and \nameref{spell:produce-flame} are.
 
 \subsection{Ability Score Improvement}
 
@@ -166,36 +172,20 @@ When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can 
 You can also pick a Skill Trick (included in the skill tricks column of the \nameref{tbl:arcanist} table) but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list.
 
 \subsection{Arcane Secrets}
-Starting at 13th level, you begin learning Legendary Effects. Pick one Legendary Effect from the following list. You can cast it as if it was a spell once per day. You learn another of your choice at 15th level. When you gain a level, you can exchange one known Legendary Effect for another from the same list.
-
-\begin{itemize}
-  \item Dominate Person
-  \item Mirage Arcane
-  \item Wind Walk
-  \item Symbol
-  \item Reverse Gravity
-\end{itemize}
+Starting at 13th level, you begin learning Legendary Effects. Pick one Legendary Effect that has the tags \textit{Arcane} or \textit{General} as well as \textit{lesser}. You can pick another with these labels at level 15.
 
 \subsection{Supreme Arcane Secrets}
-At 17th level you learn an even greater Legendary Effect. Pick one from the following list. You can cast it once per day.
-
-\begin{itemize}
-  \item Anyspell
-  \item Power Word: Kill
-  \item Meteor Swarm
-  \item Maze
-  \item Imprisonment
-\end{itemize}
+At 17th level you learn an even greater Legendary Effect. Pick one Legendary Effect that has the tags \textit{Arcane} or \textit{General}. You can pick another with one of these labels at level 19.
 
 \subsection{Legendary Metamagic}
 Starting at 20th level, you can apply any single metamagic to a use of a Legendary Effect without expending AET.
 
 \subsection{Arcane Approaches}
 
-Wizard, sorcerer, mage. Different names for the same thing. A wielder of arcane magic. Each arcanist approaches things slightly differently, but there are decided similarities in how they gained and further their mastery of arcane power.
+Each arcanist approaches things slightly differently, but there are decided similarities in how they gained and further their mastery of arcane power.
 
 \subsubsection{Awakened Mage}
-Awakened mages come into their power naturally, without substantial training. Their power flows from within, on its own. This gives them larger reserves of power, at the cost of bodily stress. 
+Awakened mages come into their power naturally, without substantial official training. Their power flows from within, on its own, but requires self-mastery and will to control. This gives them larger reserves of power, at the cost of bodily stress. 
 
 \subparagraph*{Extra Training}
 Since you didn't have to spend time in your early years mastering your magic, you have picked up other tricks. You gain proficiency with light armor and one martial weapon of your choice. You can cast spells while wearing light armor.
@@ -224,17 +214,10 @@ While you are preparing spells and have the book open in front of you, you can i
 Starting at 6th level, you have specialized in one particular metamagic. Choose one metamagic you know. Its cost decreases by 1 AET. If this reduces its cost to 0 AET, you can apply a second metamagic alongside this focused metamagic.
 
 \subparagraph*{Extended Legendary Magic}
-Starting at 14th level, your list of available Legendary Effects expands to include the following and you can exchange both your Legendary Effects for other ones from the same combined list every time you gain a level.
-
-\begin{itemize}
-  \item Harm
-  \item Globe of Invulnerability
-  \item Flesh to Stone
-  \item Finger of Death
-\end{itemize}
+Starting at 14th level, you learn an additional Legendary effect of a level you could learn at this level using your Arcane Secrets ability.
 
 \subparagraph*{Repeated Legendary Magic}
-Starting at 18th level, you can use any of your regular Legendary Effects twice per long rest instead of once.
+Starting at 18th level, you can use any of your regular Legendary Effects twice per long rest instead of once. Once you cast the same Legendary Effect twice, you cannot cast any others twice until you finish a long rest.
 
 \subsection{Arcanist Spell List}
 The Arcanist Spell List table contains a list of the spells available to all Arcanists, ordered by aether cost.

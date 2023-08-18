@@ -733,11 +733,11 @@ If a tie occurs, the GM decides the order among tied GM-controlled creatures, an
 
 On your turn, you can \textbf{move} a distance up to your speed and \textbf{take one action}. You decide whether to move first or take your action first. Your speed— sometimes called your walking speed—is noted on your character sheet.
 
-The most common actions you can take are described in the “Actions in Combat” section later in this chapter. Many class features and other abilities provide additional options for your action.
+The most common actions you can take are described in the \nameref{sec:actions-in-combat} section later in this chapter. Many class features and other abilities provide additional options for your action.
 
 The \nameref{sec:movement-and-position} section later in this chapter gives the rules for your move.
 
-You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking the Guard or Ready action, as described in “Actions in Combat.”
+You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking Guard or Ready action, as described in \nameref{sec:actions-in-combat}.
 
 \subsubsection{Bonus Actions}
 
@@ -745,7 +745,13 @@ Various class features, spells, and other abilities let you take an additional a
 
 You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
 
-You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.
+You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action \textit{except} the Attack action when you can make multiple attacks with that action--in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
+
+\begin{figure}
+    \begin{DndComment}{On action timing}
+        Generally, NIH is more strict about actions being atomic than D&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions--you cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. \textbf{Note} movement is not an action--it can always be broken up however you wish in and around actions, bonus actions, and reactions.
+    \end{DndComment}
+\end{figure}
 
 \subsubsection{Other Activity on Your Turn}
 
@@ -786,7 +792,7 @@ If you take an action that includes more than one weapon attack, you can break u
 
 If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move.
 
-For example, if you have a speed of 30 and a flying speed of 60 because a arcanist cast the *fly* spell on you, you could fly 20 feet, then walk 10 feet, and then leap into the air to fly 30 feet more.
+For example, if you have a speed of 30 and a flying speed of 60 because a arcanist cast the \nameref{inc:fly} incantation on you, you could fly 20 feet, then walk 10 feet, and then leap into the air to fly 30 feet more.
 
 \subsection{Difficult Terrain}
 
@@ -844,11 +850,11 @@ If you leave a hostile creature's reach during your move, you provoke an opportu
 
 \subsection{Flying Movement}
 
-Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the *fly* spell.
+Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the \nameref{inc:fly} incantation.
 
 \subsection{Creature Size}
 
-Each creature takes up a different amount of space. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
+Each creature controls a different amount of space in combat. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
 
 \begin{figure}
 \begin{DndTable}[header=Size Categories]{lX}
@@ -879,7 +885,7 @@ Some spells, abilities, or environmental effects have clauses such as "when the 
 
 If the condition is "if the target \textit{voluntarily} moves...", this requires the same trigger as Opportunity Attacks--the target must use their action, reaction, or movement to do so.
 
-\section{Actions in Combat}
+\section{Actions in Combat}\label{sec:actions-in-combat}
 
 When you take your action on your turn, you can take one of the actions presented here, an action you gained from your class or a special feature, or an action that you improvise. Many monsters have action options of their own in their stat blocks.
 
@@ -919,7 +925,7 @@ Alternatively, you can aid a friendly creature in attacking a creature within 5 
 
 \subsection{Hide}
 
-When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits, as described in the “Unseen Attackers and Targets” section later in this chapter. Unless you take the Hide action and succeed, enemies in combat are generally aware of your location (to within 5 feet) as long as they could conceivably perceive you (via hearing, sight, smell, or other forms of perception).
+When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits, as described in the \nameref{subsec:unseen-attackers} section later in this chapter. Unless you take the Hide action and succeed, enemies in combat are generally aware of your location (to within 5 feet) as long as they could conceivably perceive you (via hearing, sight, smell, or other forms of perception).
 
 \subsection{Ready}
 
@@ -929,7 +935,7 @@ First, you decide what perceivable circumstance will trigger your reaction. Then
 
 When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round. Reactions happen after the action that triggered it completes; each 5 feet of movement is considered a separate "action" for this purpose. The ready action cannot interrupt an action.
 
-When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the \textit{web} spell and ready \textit{magic missile}, your \textit{web} spell ends, and if you take damage before you release \textit{magic missile} with your reaction, your concentration might be broken.
+When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the \nameref{spell:web} spell and ready \nameref{spell:magic-missile}, your \nameref{spell:web} spell ends, and if you take damage before you release \nameref{spell:magic-missile} with your reaction, your concentration might be broken.
 
 \subsection{Search}
 
@@ -941,7 +947,7 @@ You normally interact with an object while doing something else, such as when yo
 
 \section{Making an Attack}
 
-Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure.
+Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack--whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
 
 \begin{enumerate}
 \item \textbf{Choose a target.} Pick a target within your attack's range: a creature, an object, or a location.
@@ -953,7 +959,7 @@ If there's ever any question whether something you're doing counts as an attack,
 
 \subsection{Attack Rolls}
 
-When you make an attack, your attack roll determines whether the attack hits or misses. To make an attack roll, roll a d20 and add the appropriate modifiers. If the total of the roll plus modifiers equals or exceeds the target's Armor Class (AC), the attack hits. The AC of a character is determined at character creation, whereas the AC of a monster is in its stat block.
+When you make an attack, your attack roll determines whether the attack hits or misses. To make an attack roll, roll a d20 and add the appropriate modifiers. If the total of the roll plus modifiers equals or exceeds the target's Armor Class (AC), the attack hits. The AC of a character is determined at character creation and by modifications during play, whereas the AC of a monster is in its stat block.
 
 \subsubsection{Modifiers to the Roll}
 
@@ -997,7 +1003,7 @@ Some ranged attacks, such as those made with a longbow or a shortbow, have two r
 
 \subsubsection{Ranged Attacks in Close Combat}
 
-Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have disadvantage on the attack roll if you are within 5 feet of a hostile creature who can see you and who isn't incapacitated.
+Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you provoke opportunity attacks from hostile creatures who can see you and are within their reach of you.
 
 \subsection{Melee Attacks}
 
@@ -1015,6 +1021,8 @@ You can make an opportunity attack when a hostile creature that you can see move
 
 You can avoid provoking an opportunity attack by taking the Disengage action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy.
 
+Additionally, making ranged attacks while in the reach of an opponent who can see you provokes an opportunity attack, as does casting a spell with one or more component whose range is anything other than Self (including cones and auras) or Touch, even if it does not require an attack roll or a saving throw.
+
 \subsubsection{Two-Weapon Fighting}
 
 When you take the Attack action and attack with a light melee weapon that you're holding in one hand, you can make an additional attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the additional attack, unless that modifier is negative. Only one such additional attack can be made per action, regardless of how many other attacks you can make during that action.
@@ -1025,7 +1033,7 @@ If either weapon has the thrown property, you can throw the weapon, instead of m
 
 When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
 
-The target of your grapple must be no more than one size larger than you and must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check instead of an attack roll: a Strength (Athletics) check contested by the target's Strength (Athletics) check. If you succeed, you subject the target to the grappled condition (see appendix A). The condition specifies the things that end it, and you can release the target whenever you like (no action required).
+The target of your grapple must be no more than one size larger than you and must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check instead of an attack roll: a Strength (Athletics) check contested by the target's Strength (Athletics) check. If you succeed, you subject the target to the \nameref{condition:grappled} condition. The condition specifies the things that end it, and you can release the target whenever you like (no action required).
 
 \subparagraph*{Escaping a Grapple} A grappled creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength
 (Athletics) check.
@@ -1042,9 +1050,11 @@ Battle often involves pitting your prowess against that of your foe. Such a chal
 
 Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
 
-The target must be no more than one size larger than you and must be within your reach. Instead of making an attack roll, you make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you win the contest, you either knock the target prone or push it 5 feet away from you. THe distance you can push a creature increases by 5 feet for every 5 points your check beat theirs. Shoving a creature that is grappling someone and succeeding breaks the grapple if the shoved creature is pushed outside of their reach on the grappled creature.
+The target must be no more than one size larger than you and must be within your reach. Instead of making an attack roll, you make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you win the contest, you either knock the target prone or push it 5 feet away from you. The distance you can push a creature increases by 5 feet for every 5 points your check beat theirs. Shoving a creature that is grappling someone and succeeding breaks the grapple if the shoved creature is pushed outside of their reach on the grappled creature.
 
 Targets can choose to fail this context intentionally. If a friendly target is shoved while being grappled by a hostile creature, the hostile creature makes the opposed check instead of the friendly target.
+
+Successfully shoving a creature that is concentrating on a spell or other effect forces them to make a DC 10 Constitution saving throw or lose concentration on the effect.
 
 \section{Cover}
 
@@ -1056,7 +1066,7 @@ A target with \textbf{half cover} has a +2 bonus to AC and Dexterity saving thro
 
 A target with \textbf{three-quarters cover} has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.
 
-A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.
+A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by a solid obstacle.
 
 \section{Damage and Healing}
 
@@ -1064,11 +1074,19 @@ Injury and the risk of death are constant companions of those who explore fantas
 
 \subsection{Hit Points}
 
-Hit points represent a combination of physical and mental durability, the will to live, and luck. Creatures with more hit points are more difficult to kill. Those with fewer hit points are more fragile.
+Hit points represent the strength of the soul of the creature and its ability to suffer damage and keep fighting normally. Creatures with more hit points are more difficult to kill. Those with fewer hit points are more fragile.
 
 A creature's current hit points (usually just called hit points) can be any number from the creature's hit point maximum down to 0. This number changes frequently as a creature takes damage or receives healing.
 
-Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature's capabilities until the creature drops to 0 hit points.
+Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature's capabilities until the creature drops to 0 hit points. Generally, creatures show little signs of damage until their hit points reach half of their maximum, a state known as \nameref{condition:bloodied}. Any wounds they sustain as long as they have more than 0 hit points are superficial; the body's abilty to keep them going is unimpaired.
+
+\begin{figure}
+    \begin{DndComment}{Yes, hit points are meat}
+        Deal with it. Creatures in Quartus are usually triune--they have a "soul" (aka spark), a "spirit" (aka nimbus), and a body. The Spark is the self; the body is the interface with the physical world, and the Nimbus is the interface with the immaterial, as well as between the Spark and the body. The body contains both deep reserves of aether (the stuff of creation, out of which all things material or not are made), represented by the creature's Hit Dice, and more available reserves (Hit Points), both of which it can use to repair damage. This also explains why a \nameref{spell:fireball} doesn't burn up your gear but can burn unattended objects--your nimbus enfolds all of your possessions and shields them from harm...at some cost to your aether reserves.
+
+        When a creature is \nameref{condition:bloodied}, their autonomic body systems have pulled back their efforts, only healing the deep, potentially impairing or fatal injuries and leaving the superficial ones alone (and similarly for your gear). When you reach 0 hit points, your body can no longer heal those impairing injuries and it begins trying to grab aether from anywhere it can (aka Death Saves). Most people in the setting suffer lingering injuries such as lost limbs, broken bones, limps, etc. when they are reduced to zero hit points even if they are stabilized. PCs are special for game reasons--they don't suffer those injuries. This is an explicit departure from simulation and those can be added back in if so desired. I, personally, don't find them fun to play with, so I don't do them.
+    \end{DndComment}
+\end{figure}
 
 \subsection{Damage Rolls}
 
@@ -1076,7 +1094,7 @@ Each weapon, spell, and harmful monster ability specifies the damage it deals. Y
 
 When attacking with a \textbf{weapon}, you add your ability modifier—the same modifier used for the attack roll—to the damage. A \textbf{spell} tells you which dice to roll for damage and whether to add any modifiers.
 
-If a spell or other effect deals damage to \textbf{more than one target} at the same time, roll the damage once for all of them. For example, when an arcanist casts \textit{fireball} or a priest casts \textit{flame strike}, the spell's damage is rolled once for all creatures caught in the blast.
+If a spell or other effect deals damage to \textbf{more than one target} at the same time, roll the damage once for all of them. For example, when an arcanist casts \nameref{spell:fireball} or a priest casts \nameref{spell:flame-strike}, the spell's damage is rolled once for all creatures caught in the blast.
 
 Spells or effects that deal damage on a different creature's turn, such as \nameref{spell:flaming-sphere} or \nameref{spell:spirit-guardians}, roll their damage once per round at the beginning of the caster's turn. Anyone affected by the spell until the beginning of the caster's next turn takes that amount of damage (modified separately by any saving throws or resistances).
 
@@ -1100,9 +1118,9 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 \subparagraph*{Fire} Red dragons breathe fire, and many spells conjure flames to deal fire damage.
 
-\subparagraph*{Lightning} A \textit{lightning bolt} spell and a blue dragon's breath deal lightning damage.
+\subparagraph*{Lightning} A \nameref{spell:lightning-bolt} spell and a blue dragon's breath deal lightning damage.
 
-\subparagraph*{Necrotic} Necrotic damage, dealt by certain undead and a spell such as \textit{chill touch}, withers matter and even the soul.
+\subparagraph*{Necrotic} Necrotic damage, dealt by certain undead and a spell such as \nameref{spell:grave-touch}, withers matter and even the soul.
 
 \subparagraph*{Piercing} Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.
 
@@ -1110,11 +1128,11 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 \subparagraph*{Psychic} Mental abilities such as a mind flayer's psionic blast deal psychic damage.
 
-\subparagraph*{Radiant} Radiant damage, dealt by a priest's \textit{flame strike} spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.
+\subparagraph*{Radiant} Radiant damage, dealt by a priest's \nameref{spell:flame-strike} spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.
 
 \subparagraph*{Slashing} Swords, axes, and monsters' claws deal slashing damage.
 
-\subparagraph*{Thunder} A concussive burst of sound, such as the effect of the \textit{thunderwave} spell, deals thunder damage.
+\subparagraph*{Thunder} A concussive burst of sound, such as the effect of the \nameref{spell:thunderwave} spell, deals thunder damage. Thunder damage is only notably loud if the spell or ability says it is. Otherwise, it's normally lost in the general sounds of combat.
 
 \begin{figure}
     \begin{DndComment}{What happened to force damage?}
@@ -1143,7 +1161,7 @@ Dealing with resistance and vulnerability when a damage source has multiple dama
 
 \subsection{Healing}
 
-Unless it results in death, damage isn't permanent. Even death is reversible through powerful magic. Rest can restore a creature's hit points, and magical methods such as a \textit{cure wounds} spell or a \textit{potion of healing} can remove damage in an instant.
+Unless it results in death, damage isn't permanent. Even death is reversible through powerful magic. Rest can restore a creature's hit points, and magical methods such as a \nameref{spell:cure-wounds} spell or a \textit{potion of healing} can remove damage in an instant.
 
 When a creature receives healing of any kind, hit points regained are added to its current hit points. A creature's hit points can't exceed its hit point maximum, so any hit points regained in excess of this number are lost. For example, a shaman grants a ranger 8 hit points of healing. If the ranger has 14 current hit points and has a hit point maximum of 20, the ranger regains 6 hit points from the shaman, not 8.
 
@@ -1189,7 +1207,7 @@ Mighty villains and special nonplayer characters are common exceptions; the GM m
 
 \subsection{Knocking a Creature Out}
 
-Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee weapon attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable. Ranged weapon attacks can knock a creature out, but the creature is always severely wounded.
+Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee weapon attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable. It might sustain a lingering injury as a result unless attended medically before it becomes conscious. Ranged weapon attacks can knock a creature out, but the creature is always severely wounded.
 
 \subsection{Temporary Hit Points}
 
@@ -1276,7 +1294,7 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 \end{DndTable}
 \end{figure}
 
-\subparagraph*{Huge and Gargantuan Objects} Normal weapons are of little use against many Huge and Gargantuan objects, such as a colossal statue, towering column of stone, or massive boulder. That said, one torch can burn a Huge tapestry, and an \textit{earthquake} incantation can reduce a colossus to rubble. You can track a Huge or Gargantuan object's hit points if you like, or you can simply decide how long the object can withstand whatever weapon or force is acting against it. If you track hit points for the object, divide it into Large or smaller sections, and track each section's hit points separately. Destroying one of those sections could ruin the entire object. For example, a Gargantuan statue of a human might topple over when one of its Large legs is reduced to 0 hit points.
+\subparagraph*{Huge and Gargantuan Objects} Normal weapons are of little use against many Huge and Gargantuan objects, such as a colossal statue, towering column of stone, or massive boulder. That said, one torch can burn a Huge tapestry, and an \nameref{inc:earthquake} incantation can reduce a colossus to rubble. You can track a Huge or Gargantuan object's hit points if you like, or you can simply decide how long the object can withstand whatever weapon or force is acting against it. If you track hit points for the object, divide it into Large or smaller sections, and track each section's hit points separately. Destroying one of those sections could ruin the entire object. For example, a Gargantuan statue of a human might topple over when one of its Large legs is reduced to 0 hit points.
 
 \subparagraph*{Objects and Damage Types} Objects are immune to poison and psychic damage. You might decide that some damage types are more effective against a particular object or substance than others. For example, bludgeoning damage works well for smashing things but not for cutting through rope or leather. Paper or cloth objects might be vulnerable to fire and lightning damage. A pick can chip away stone but can't effectively cut down a tree. As always, use your best judgment.
 

@@ -23,7 +23,7 @@ For player characters, the score can range between -5 and +5, with 0 representin
 
 Ability scores (also called "modifiers") are added to ability checks, saving throws, attack rolls, and weapon damage rolls.
 
-\section{Advantage and Disadvantage}
+\section{Advantage and Disadvantage} \label{sec:advantage-and-disadvantage}
 
 Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.
 
@@ -253,7 +253,7 @@ You add your Dexterity modifier to your attack roll and your damage roll when at
 
 Depending on the armor you wear, you might add some or all of your Dexterity modifier to your Armor Class.
 
-\subsubsection{Initiative}
+\subsubsection{Initiative} \label{sec:initiative}
 
 At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.
 
@@ -749,7 +749,7 @@ You choose when to take a bonus action during your turn, unless the bonus action
 
 \begin{figure}
     \begin{DndComment}{On action timing}
-        Generally, NIH is more strict about actions being atomic than D&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions--you cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. \textbf{Note} movement is not an action--it can always be broken up however you wish in and around actions, bonus actions, and reactions.
+        Generally, NIH is more strict about actions being atomic than D\&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions--you cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. \textbf{Note} movement is not an action--it can always be broken up however you wish in and around actions, bonus actions, and reactions.
     \end{DndComment}
 \end{figure}
 
@@ -1082,7 +1082,7 @@ Whenever a creature takes damage, that damage is subtracted from its hit points.
 
 \begin{figure}
     \begin{DndComment}{Yes, hit points are meat}
-        Deal with it. Creatures in Quartus are usually triune--they have a "soul" (aka spark), a "spirit" (aka nimbus), and a body. The Spark is the self; the body is the interface with the physical world, and the Nimbus is the interface with the immaterial, as well as between the Spark and the body. The body contains both deep reserves of aether (the stuff of creation, out of which all things material or not are made), represented by the creature's Hit Dice, and more available reserves (Hit Points), both of which it can use to repair damage. This also explains why a \nameref{spell:fireball} doesn't burn up your gear but can burn unattended objects--your nimbus enfolds all of your possessions and shields them from harm...at some cost to your aether reserves.
+        Creatures in Quartus are usually triune--they have a "soul" (aka spark), a "spirit" (aka nimbus), and a body. The Spark is the self; the body is the interface with the physical world, and the Nimbus is the interface with the immaterial, as well as between the Spark and the body. The body contains both deep reserves of aether (the stuff of creation, out of which all things material or not are made), represented by the creature's Hit Dice, and more available reserves (Hit Points), both of which it can use to repair damage. This also explains why a \nameref{spell:fireball} doesn't burn up your gear but can burn unattended objects--your nimbus enfolds all of your possessions and shields them from harm...at some cost to your aether reserves.
 
         When a creature is \nameref{condition:bloodied}, their autonomic body systems have pulled back their efforts, only healing the deep, potentially impairing or fatal injuries and leaving the superficial ones alone (and similarly for your gear). When you reach 0 hit points, your body can no longer heal those impairing injuries and it begins trying to grab aether from anywhere it can (aka Death Saves). Most people in the setting suffer lingering injuries such as lost limbs, broken bones, limps, etc. when they are reduced to zero hit points even if they are stabilized. PCs are special for game reasons--they don't suffer those injuries. This is an explicit departure from simulation and those can be added back in if so desired. I, personally, don't find them fun to play with, so I don't do them.
     \end{DndComment}
@@ -1098,7 +1098,7 @@ If a spell or other effect deals damage to \textbf{more than one target} at the 
 
 Spells or effects that deal damage on a different creature's turn, such as \nameref{spell:flaming-sphere} or \nameref{spell:spirit-guardians}, roll their damage once per round at the beginning of the caster's turn. Anyone affected by the spell until the beginning of the caster's next turn takes that amount of damage (modified separately by any saving throws or resistances).
 
-\subsubsection{Critical Hits}
+\subsubsection{Critical Hits} \label{sec:critical-hits}
 
 When you score a critical hit with a weapon, you get to roll extra dice for the attack's damage against the target. Roll all of the attack's damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.
 
@@ -1134,7 +1134,7 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 \subparagraph*{Thunder} A concussive burst of sound, such as the effect of the \nameref{spell:thunderwave} spell, deals thunder damage. Thunder damage is only notably loud if the spell or ability says it is. Otherwise, it's normally lost in the general sounds of combat.
 
-\begin{figure}
+\begin{figure}[htb]
     \begin{DndComment}{What happened to force damage?}
         I've removed force damage as a type. There are constructs of force, but any damage they deal (or \nameref{spell:magic-missile}, for example), deal an appropriate physical damage type.
     \end{DndComment}

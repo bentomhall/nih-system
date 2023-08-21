@@ -261,13 +261,13 @@ At the beginning of every combat, you roll initiative by making a Dexterity chec
     \begin{DndSidebar}{Hiding}
 The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
 
-You can't hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
+You can't hide from a creature unless you have \textbf{total concealment} from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
 
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the DM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen.
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be \nameref{condition:surprised} by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM.
 
-\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
+\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
 \subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in chapter 8, “Adventuring.”
 \end{DndSidebar}
@@ -440,7 +440,7 @@ For each additional hour of travel beyond 8 hours, the characters cover the dist
 
 Characters in wagons, carriages, or other land vehicles choose a pace as normal. Characters in a waterborne vessel are limited to the speed of the vessel, and they don't suffer penalties for a fast pace or gain benefits from a slow pace. Depending on the vessel and the size of the crew, ships might be able to travel for up to 24 hours per day.
 
-Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a *carpet of flying*, allow you to travel more swiftly.
+Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a \textit{carpet of flying}, allow you to travel more swiftly.
 
 \begin{figure}
     \begin{DndTable}[header=Travel Pace]{XXXXX}
@@ -485,7 +485,7 @@ By its nature, adventuring involves delving into places that are dark, dangerous
 
 \subsection{Falling}
 
-A fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall.
+A fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall. Creatures that are not \nameref{condition:incapacitated} can generally fall a distance equal to their automatic standing high-jump distance without taking damage or twice that if they willingly fall prone when they land.
 
 \subsection{Suffocating}
 
@@ -493,15 +493,15 @@ A creature can hold its breath for a number of minutes equal to 1 + its Constitu
 
 When a creature runs out of breath or is choking, it can survive for a number of rounds equal to its Constitution modifier (minimum of 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again.
 
-For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
+For example, a creature with a Constitution of +2 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
 
 \subsection{Vision and Light}
 
-The most fundamental tasks of adventuring— noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
+The most fundamental tasks of adventuring—--noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—--rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
 
 A given area might be lightly or heavily obscured. In a \textbf{lightly obscured} area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
 
-A \textbf{heavily obscured} area—such as opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
+A \textbf{heavily obscured} area—--such as opaque fog, or dense foliage—--blocks vision entirely. A creature effectively suffers from the \nameref{condition:blinded} condition when trying to see something in that area or on the other side of the area.
 
 The presence or absence of light in an environment creates three categories of illumination: bright, dim, and darkness.
 
@@ -573,7 +573,7 @@ Substantial background noise (noise at least two steps higher) generally moves t
 \begin{DndComment}{Commentary on hearing}
 	This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity(Stealth) check instead.
 
-	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area, decrease them by a step.
+	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area or wide open area, decrease them by a step.
 \end{DndComment}
 \end{figure}
 
@@ -658,7 +658,7 @@ Downtime activities other than the ones presented below are possible. If you wan
 
 You can craft nonmagical objects, including adventuring equipment and works of art. You must be proficient with tools related to the object you are trying to create (typically artisan's tools). You might also need access to special materials or locations necessary to create it. For example, someone proficient with smith's tools needs a forge in order to craft a sword or suit of armor.
 
-For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 5 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 5 gp, you make progress every day in 5* gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 300 days to craft by yourself.
+For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 5 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 5 gp, you make progress every day in 5-gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 300 days to craft by yourself.
 
 Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 5 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 100 days, at a total cost of 750 gp.
 
@@ -717,9 +717,9 @@ A typical combat encounter is a clash between two sides, a flurry of weapon swin
 
 A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.
 
-The GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter.
+The GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is \nameref{condition:surprised} at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't. For an example of this, see Appendix C (\nameref{example:surprise})
 
-If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.
+Surprise generally requires that all attackers are \nameref{condition:hidden} from the target. In exceptional circumstances, the GM might allow surprise in cases where the outbreak of hostilities is completely unexpected (such as an assassin pulling a hidden dagger at a peaceful ball). In social situations like the one mentioned, the GM might call for a Charisma (Stealth) check (in addition to any Dexterity (Sleight of Hand) checks necessary to conceal the weapon in the first place). Surprise is rare if both sides are openly wearing weapons or bearing spell foci and are interacting.
 
 \subsection{Initiative}
 

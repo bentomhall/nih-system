@@ -65,14 +65,21 @@ Finishing a long rest reduces a creature's exhaustion level by 1, provided that 
 \item The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \textit{thunder-wave} spell. The reverse also holds--effects that move the grappler out of reach of the grappled creature end the grapple as well.
 \end{itemize}
 
+\subsection{Hidden}\label{condition:hidden}
+Hidden is a \textit{relative} condition--you can be hidden from one creature and not from another. To become hidden, you must either be impossible to detect by the other creature---have total concealment, be unable to be heard (such as by the \nameref{spell:silence} spell), and be unable to be smelled or otherwise sensed (via senses like tremorsense or blindsight)--or have successfully taken the Hide action (which requires total concealment) and beaten that creature's Passive Perception.
+\begin{itemize}
+	\item A hidden creature has advantage on their first attack against a creature they're hidden from. Hit or miss, the hidden condition then ends for any creature that could see the attack happen.
+	\item A hidden creature is automatically revealed if they move out of total concealment.
+\end{itemize}
+
 \subsection{Incapacitated\label{condition:incapacitated}}
 \begin{itemize}
-\item An incapacitated creature can't take actions or reactions.
+\item An incapacitated creature can't take actions or reactions. They can still move and speak.
 \end{itemize}
 
 \subsection{Invisible\label{condition:invisible}}
 \begin{itemize}
-\item An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.
+\item An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is totally concealed. The creature's location can be detected by any noise it makes or any tracks it leaves.
 \item Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.
 \end{itemize}
 
@@ -130,6 +137,13 @@ Finishing a long rest reduces a creature's exhaustion level by 1, provided that 
 \item A stunned creature is incapacitated (see \nameref{condition:incapacitated}), can't move, and can speak only falteringly.
 \item The creature automatically fails Strength and Dexterity saving throws.
 \item Attack rolls against the creature have advantage.
+\end{itemize}
+
+\subsection{Surprised}\label{condition:surprised}
+This condition is applied only on the first round of combat and automatically ends at the end of the affected person's first turn.
+\begin{itemize}
+	\item A surprised creature cannot take actions or reactions and cannot move. 
+	\item Surprised creatures still roll for initiative normally and take their turn. They can speak, but this speach cannot clear the surprised condition for other creatures in that encounter.
 \end{itemize}
 
 \subsection{Unconscious\label{condition:unconscious}}

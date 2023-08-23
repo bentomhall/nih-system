@@ -29,7 +29,7 @@ Before a spellcaster can use a spell, he or she must have the spell firmly fixed
 In every case, the number of spells a caster can have fixed in mind at any given time depends on the character's level.
 
 \subsection{Casting Spells}
-Casting a spell requires expending a certain amount of Aether from your personal reserves, as indicated in the spell. You cannot cast a spell that requires expending more aether than your Aether Limit. 
+Casting a spell requires expending a certain amount of Aether from your personal reserves, as indicated in the spell. You cannot cast a spell that requires expending more aether than your Aether Limit or that requires more Aether than you have remaining. 
 
 \subsubsection{Overcasting a spell}
 
@@ -72,13 +72,15 @@ Certain spells require more time to cast: minutes or even hours. When you cast a
 
 \subsection{Spell Range}
 
-The target of a spell must be within the spell's range. For a spell like \textit{magic missile}, the target is a creature. For a spell like \textit{fireball}, the target is the point in space where the ball of fire erupts.
+The target of a spell must be within the spell's range. For a spell like \nameref{spell:magic-missile}, the target is a creature. For a spell like \nameref{spell:fireball}, the target is the point in space where the ball of fire erupts.
 
-Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch. Other spells, such as the \textit{shield} spell, affect only you. These spells have a range of self.
+Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch. This is denoted as a range of Touch. Other spells, such as the \nameref{spell:shield} spell, affect only you. These spells have a range of self.
 
 Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell's effect must be you (see “\nameref{subsec:areas-of-effect}” later in the this chapter).
 
 Once a spell is cast, its effects aren't limited by its range, unless the spell's description says otherwise.
+
+Remember that spells with ranges other than Touch or Self provoke \nameref{sec:opportunity-attacks} from non-incapacitated enemies.
 
 \subsection{Components}
 
@@ -86,7 +88,7 @@ A spell's components are the physical requirements you must meet in order to cas
 
 \subsubsection{Verbal (V)}
 
-Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the \textit{silence} spell, can't cast a spell with a verbal component.
+Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the \nameref{spell:silence} spell, can't cast a spell with a verbal component.
 
 These mystic words are not in a recognizable language and can be immediately recognized as spellcasting by anyone who can hear the chanting (unless they are unintelligent or particularly ignorant). They cannot be hidden except by large amounts of ambient noise or intervening solid objects.
 
@@ -94,7 +96,7 @@ These mystic words are not in a recognizable language and can be immediately rec
 
 Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.
 
-These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
+These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and may recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
 
 \subsubsection{Material (M)}
 
@@ -102,7 +104,7 @@ Casting some spells requires particular objects, specified in parentheses in the
 
 If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.
 
-A spellcaster must have a hand free to access a spell's material components—or to hold a spellcasting focus—but it can be the same hand that he or she uses to perform somatic components.
+A spellcaster must have a hand free to access a spell's material components—--or to hold a spellcasting focus—--but it can be the same hand that he or she uses to perform somatic components.
 
 \subsection{Duration}
 
@@ -122,37 +124,43 @@ Normal activity, such as moving and attacking, doesn't interfere with concentrat
 
 \begin{itemize}
     \item \textbf{Casting another spell that requires concentration.} You lose concentration on a spell if you cast another spell that requires concentration. You can't concentrate on two spells at once.
-    \item \textbf{Taking damage.} Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage.
-    \item \textbf{Being incapacitated or killed.} You lose concentration on a spell if you are incapacitated or if you die.
+    \item \textbf{Taking damage or being grappled or shoved.} Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage. Being grappled or shoved requires a DC 10 Constitution saving throw to maintain concentration.
+    \item \textbf{Being incapacitated or killed.} You lose concentration on a spell if you are incapacitated or if you die. 
 \end{itemize}
 
 The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a Constitution saving throw (against a DC they select) to maintain concentration on a spell.
 
 \subsection{Targets}
 
-A typical spell requires you to pick one or more targets to be affected by the spell's magic. A spell's description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below).
+A typical spell requires you to pick one or more targets to be affected by the spell's magic. A spell's description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below). Spells that explicitly target creatures cannot target objects (see \nameref{sec:invalid-targets} below).
 
 Unless a spell has a perceptible effect, a creature might not know it was targeted by a spell at all. An effect like crackling lightning is obvious, but a more subtle effect, such as an attempt to read a creature's thoughts, typically goes unnoticed, unless a spell says otherwise.
 
-Any creature or object directly affected by the spell is a target for that spell. Spells that buff or conjure creatures who then make attacks or interact with other objects or creatures only target the creatures buffed or conjured. As such, a creature immune to spells with a cost of 10 AET or lower can still be hurt by a creature buffed with haste, despite that spell naturally having a cost lower than 10 AET.
+Any creature or object directly affected by the spell is a target for that spell. Spells that buff or conjure creatures who then make attacks or interact with other objects or creatures only target the creatures buffed or conjured. As such, a creature immune to spells with a cost of 10 AET or lower can still be hurt by a creature buffed with \nameref{spell:haste}, despite that spell naturally having a cost lower than 10 AET.
 
 Specific spells can override these general rules, but must say that they do. For example, fireball says it can spread around corners, so while you must have a clear path to the point targeted with the aoe, targets of the fire do not need to have a clear path to that center as long as there is some path within the spell's area.
 
 \subsubsection{A Clear Path to the Target}
 
-To target something, you must have a clear path to it, so it can't be behind total cover.
+To target something, you must have a clear path to it, so it can't be behind total cover. Spells that require you to see your target(s) specifically say so.
 
 If you place an area of effect at a point that you can't see and an obstruction, such as a wall, is between you and that point, the point of origin comes into being on the near side of that obstruction.
 
 \subsubsection{Targeting Yourself}
 
-If a spell targets a creature of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you can target yourself.
+If a spell targets a creature of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you are a target yourself unless the spell allows you to choose specific creatures, in which case you can (but are not required to) target yourself.
+
+Spells with ranges of Self (cone) or Self (cube) start at one side of your space and project outward away from you. You can choose to be included in the effect or not even if it normally does not allow a choice of targets.
+
+\subsubsection{Invalid Targets}\label{sec:invalid-targets}
+
+If you select a target that is not valid for the spell and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would \textit{not} be obvious (such as a fiend wearing a humanoid shape being targeted by \nameref{spell:hold-person}), the spell goes off, the aether (if any) is expended, but the target is not affected. You gains no information from this--for spells that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Spell attacks "miss" (have no effect on the target).
 
 \subsection{Areas of Effect}\label{subsec:areas-of-effect}
 
 Spells such as \nameref{spell:burning-hands} and \nameref{spell:cone-of-cold} cover an area, allowing them to affect multiple creatures at once.
 
-A spell's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere. Every area of effect has a 	extbf{point of origin}, a location from which the spell's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some spells have an area whose origin is a creature or an object.
+A spell's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere. Every area of effect has a \textbf{point of origin}, a location from which the spell's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some spells have an area whose origin is a creature or an object.
 
 A spell's effect expands in straight lines from the point of origin. If no unblocked straight line extends from the point of origin to a location within the area of effect, that location isn't included in the spell's area. To block one of these imaginary lines, an obstruction must provide total cover.
 
@@ -164,11 +172,11 @@ A cone's point of origin is not included in the cone's area of effect, unless yo
 
 \subsubsection{Cube}
 
-You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side.
+You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side. For example, 
 
 A cube's point of origin is not included in the cube's area of effect, unless you decide otherwise.
 
-A 5' cube can affect four Medium or Small creatures as long as they are adjacent to each other in a square.
+A 5' cube can affect four Medium or Small creatures as long as they are adjacent to each other in a square formation and the chosen point is directly between them.
 
 \subsubsection{Cylinder}
 
@@ -178,7 +186,7 @@ A cylinder's point of origin is included in the cylinder's area of effect.
 
 \subsubsection{Line}
 
-A line extends from its point of origin in a straight path up to its length and covers an area defined by its width.
+A line extends from its point of origin in a straight path up to its length and covers an area defined by its width. A 5' wide line can hit two creatures if they are adjacent to each other and the line is placed directly between them.
 
 A line's point of origin is not included in the line's area of effect, unless you decide otherwise.
 
@@ -190,7 +198,7 @@ A sphere's point of origin is included in the sphere's area of effect.
 
 \subsection{Spell Saving Throws}
 
-Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure.
+Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. The GM may decide to tell you which creatures failed or succeeded on the saving throw, but this is not mandatory.
 
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
@@ -198,13 +206,11 @@ The DC to resist one of your spells equals 8 + your spellcasting ability modifie
 
 Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.
 
-Most spells that require attack rolls involve ranged attacks. Remember that you have disadvantage on a ranged attack roll if you are within 5 feet of a hostile creature that can see you and that isn't incapacitated.
-
 \subsection{Combining Magical Effects}
 
 The effects of different spells add together while the durations of those spells overlap. The effects of the same spell cast multiple times don't combine, however. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap.
 
-For example, if two priests cast \textit{bless} on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.
+For example, if two priests cast \nameref{spell:bless} on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.
 
 \section{Legendary Effects}
 Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether but count (for effects that care) as spells with an aether cost of (5 + character level).

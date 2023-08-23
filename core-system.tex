@@ -261,13 +261,13 @@ At the beginning of every combat, you roll initiative by making a Dexterity chec
     \begin{DndSidebar}{Hiding}
 The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
 
-You can't hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
+You can't hide from a creature unless you have \textbf{total concealment} from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
 
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the DM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen.
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be \nameref{condition:surprised} by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM.
 
-\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
+\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
 \subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in chapter 8, “Adventuring.”
 \end{DndSidebar}
@@ -440,7 +440,7 @@ For each additional hour of travel beyond 8 hours, the characters cover the dist
 
 Characters in wagons, carriages, or other land vehicles choose a pace as normal. Characters in a waterborne vessel are limited to the speed of the vessel, and they don't suffer penalties for a fast pace or gain benefits from a slow pace. Depending on the vessel and the size of the crew, ships might be able to travel for up to 24 hours per day.
 
-Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a *carpet of flying*, allow you to travel more swiftly.
+Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a \textit{carpet of flying}, allow you to travel more swiftly.
 
 \begin{figure}
     \begin{DndTable}[header=Travel Pace]{XXXXX}
@@ -485,7 +485,7 @@ By its nature, adventuring involves delving into places that are dark, dangerous
 
 \subsection{Falling}
 
-A fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall.
+A fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall. Creatures that are not \nameref{condition:incapacitated} can generally fall a distance equal to their automatic standing high-jump distance without taking damage or twice that if they willingly fall prone when they land.
 
 \subsection{Suffocating}
 
@@ -493,15 +493,15 @@ A creature can hold its breath for a number of minutes equal to 1 + its Constitu
 
 When a creature runs out of breath or is choking, it can survive for a number of rounds equal to its Constitution modifier (minimum of 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again.
 
-For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
+For example, a creature with a Constitution of +2 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
 
 \subsection{Vision and Light}
 
-The most fundamental tasks of adventuring— noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
+The most fundamental tasks of adventuring—--noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—--rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
 
 A given area might be lightly or heavily obscured. In a \textbf{lightly obscured} area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
 
-A \textbf{heavily obscured} area—such as opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
+A \textbf{heavily obscured} area—--such as opaque fog, or dense foliage—--blocks vision entirely. A creature effectively suffers from the \nameref{condition:blinded} condition when trying to see something in that area or on the other side of the area.
 
 The presence or absence of light in an environment creates three categories of illumination: bright, dim, and darkness.
 
@@ -534,7 +534,7 @@ Dim illumination or low-contrast backgrounds reduce the distance by at least hal
 
 As a rule of thumb, a candle flame in the darkness can be seen (obstructions allowing) for at least 1.5 miles. Larger fires can be seen from further away, limited mostly by the horizon (about 4 miles if standing at ground level).
 
-Adventurers can see the significant terrain features of the land about 2 miles from where they are, more if they high up (as much as 10 miles) or less if the area is heavily forested (as little as a few dozen feet).
+Adventurers can see the significant terrain features of the land about 2 miles from where they are. If the party is high up or the features are tall, they might be visible from as much as 10-15 miles. Or less if the area is heavily forested (as little as a few dozen feet in dense undergrowth).
 \end{DndComment}
 \end{figure}
 
@@ -567,13 +567,13 @@ For most humanoid (and similar) creatures, hearing is best at detecting \textit{
 \end{DndTable}
 \end{figure}
 
-Substantial background noise (noise at least two steps higher) generally moves the distance down one step. So fighting during a rock concert would be audible out to 60 ft (instead of 100 ft). If this would reduce the audible distance below 30 ft, cut the distance in half instead. Creatures with advanced hearing such as dogs, cats, bats, etc. can generally hear and locate sounds at double the distance or more.
+Substantial background noise (noise at least one step higher) generally moves the distance down one step. So fighting during a riot would be audible out to 60 ft (instead of 100 ft). If this would reduce the audible distance below 30 ft, cut the distance in half instead. Creatures with advanced hearing such as dogs, cats, bats, etc. can generally hear and locate sounds at double the distance or more.
 
 \begin{figure}
 \begin{DndComment}{Commentary on hearing}
 	This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity(Stealth) check instead.
 
-	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area, decrease them by a step.
+	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area or wide open area, decrease them by a step.
 \end{DndComment}
 \end{figure}
 
@@ -588,11 +588,11 @@ In a fantasy world, most creatures are at least somewhat sensitive to the manipu
 
 \subsection{Food and Water}
 
-Characters who don't eat or drink suffer the effects of exhaustion (see appendix A). Exhaustion caused by lack of food or water can't be removed until the character eats and drinks the full required amount.
+Characters who don't eat or drink suffer the effects of \nameref{condition:exhaustion}. Exhaustion caused by lack of food or water can't be removed until the character eats and drinks the full required amount.
 
 \subsubsection{Food}
 
-A character needs one pound of food per day and can make food last longer by subsisting on half rations. Eating half a pound of food in a day counts as half a day without food.
+A character needs one pound of food per day and can make food last longer by subsisting on half rations. Eating half a pound of food in a day counts as half a day without food. Large creatures such as horses require 15 lbs of food per day, although they can subsist on forage and only two pounds of grain or other concentrated foods per day.
 
 A character can go without food for a number of days equal to 3 + his or her Constitution modifier (minimum 1). At the end of each day beyond that limit, a character automatically suffers one level of exhaustion.
 
@@ -600,7 +600,7 @@ A normal day of eating resets the count of days without food to zero.
 
 \subsubsection{Water}
 
-A character needs one gallon of water per day, or two gallons per day if the weather is hot. A character who drinks only half that much water must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day. A character with access to even less water automatically suffers one level of exhaustion at the end of the day.
+A character needs one gallon of water per day, or two gallons per day if the weather is hot. A character who drinks only half that much water must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day. A character with access to even less water automatically suffers one level of exhaustion at the end of the day. Large creatures such as horses used as mounts need 10 gallons per day, 20 if the weather is hot or the pace is fast. 
 
 If the character already has one or more levels of exhaustion, the character takes two levels in either case.
 
@@ -630,11 +630,11 @@ Additionally, characters recover their expended Stamina (see \nameref{sec:stamin
 
 \subsection{Long Rest}
 
-A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity—the characters must begin the rest again to gain any benefit from it.
+A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—--at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity—--the characters must begin the rest again to gain any benefit from it.
 
 At the end of a long rest, a character regains all lost hit points and aether (see \nameref{sec:stamina-and-aether}). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
-A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.
+A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits. Creatures cannot progress personal projects during long rests.
 
 \section{Between Adventures}
 
@@ -656,11 +656,11 @@ Downtime activities other than the ones presented below are possible. If you wan
 
 \subsubsection{Crafting}
 
-You can craft nonmagical objects, including adventuring equipment and works of art. You must be proficient with tools related to the object you are trying to create (typically artisan's tools). You might also need access to special materials or locations necessary to create it. For example, someone proficient with smith's tools needs a forge in order to craft a sword or suit of armor.
+You can craft nonmagical objects, including adventuring equipment and works of art. You must be proficient with tools related to the object you are trying to create (typically artisan's tools). You might also need access to special materials or locations necessary to create it. For example, someone proficient with smith's tools needs a forge in order to craft a sword or suit of armor. A travelling anvil and kit suffices for repairs or small modifications along the road.
 
-For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 5 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 5 gp, you make progress every day in 5* gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 300 days to craft by yourself.
+For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 50 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 50 gp, you make progress every day in 50-gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 30 days to craft by yourself.
 
-Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 5 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 100 days, at a total cost of 750 gp.
+Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 5 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 10 days, at a total cost of 750 gp.
 
 While crafting, you can maintain a modest lifestyle without having to pay 1 gp per day, or a comfortable lifestyle at half the normal cost.
 
@@ -691,15 +691,14 @@ For each day of research, you must spend 1 gp to cover your expenses. This cost 
 
 \subsubsection{Training}
 
-You can spend time between adventures learning a new language or training with a set of tools. Your GM might allow additional training options.
+You can spend time between adventures learning a new language, training with a set of tools, or exchanging a skill trick you know for a different one you qualify for. Your GM might allow additional training options.
 
 First, you must find an instructor willing to teach you. The GM determines how long it takes, and whether one or more ability checks are required.
 
-The training lasts for 250 days and costs 1 gp per day. After you spend the requisite amount of time and money, you learn the new language or gain proficiency with the new tool.
+The training lasts for 100 days minus 8 days per point of Intelligence modifier and costs 1 gp per day. After you spend the requisite amount of time and money, you learn the new language, gain proficiency with the new tool, or exchange the skill tricks.
 
 \chapter{The Order of Combat}\label{ch:order-of-combat}
-A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A
-\textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
+A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A \textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
 
 \begin{figure}[htb]
     \begin{DndComment}{Combat Step by Step\label{cmt:combat-step-by-step}}
@@ -717,9 +716,9 @@ A typical combat encounter is a clash between two sides, a flurry of weapon swin
 
 A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.
 
-The GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter.
+The GM determines who might be surprised, based on their understanding of the situation. If neither side tries to be stealthy, they automatically notice each other. If there is remaining uncertainty about who, if anyone, is surprised, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is \nameref{condition:surprised} at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't. For an example of this, see Appendix C (\nameref{example:surprise})
 
-If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.
+Surprise generally requires that all attackers are \nameref{condition:hidden} from the target. In exceptional circumstances, the GM might allow surprise in cases where the outbreak of hostilities is completely unexpected (such as an assassin pulling a hidden dagger at a peaceful ball). In social situations like the one mentioned, the GM might call for a Charisma (Stealth) check (in addition to any Dexterity (Sleight of Hand) checks necessary to conceal the weapon in the first place). Surprise is rare if both sides are openly wearing weapons or bearing spell foci and are interacting.
 
 \subsection{Initiative}
 
@@ -745,7 +744,7 @@ Various class features, spells, and other abilities let you take an additional a
 
 You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
 
-You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action \textit{except} the Attack action when you can make multiple attacks with that action--in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
+You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action \textit{except} the Attack action (when you can make multiple attacks with that action)--in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
 
 \begin{figure}
     \begin{DndComment}{On action timing}
@@ -757,7 +756,7 @@ You choose when to take a bonus action during your turn, unless the bonus action
 
 Your turn can include a variety of flourishes that require neither your action nor your move.
 
-You can communicate however you are able, through brief utterances and gestures, as you take your turn.
+You can communicate however you are able, through brief utterances and gestures, as you take your turn. Communicating complex content or attempting to persuade, intimidate, or deceive an enemy into doing something takes your action.
 
 You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.
 
@@ -769,16 +768,18 @@ The GM might require you to use an action for any of these activities when it ne
 
 Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's. The opportunity attack, described later in this chapter, is the most common type of reaction.
 
-When you take a reaction, you can't take another one until the start of your next turn. If the reaction interrupts another creature's turn, that creature can continue its turn right after the reaction.
+When you take a reaction, you can't take another one until the start of your next turn. If the reaction interrupts another creature's turn, that creature can continue its turn right after the reaction. Reactions do not interrupt actions unless they specifically say that they do, but they can interrupt movement.
 
 \section{Movement and Position}
 \label{sec:movement-and-position}
 
 In combat, characters and monsters are in constant motion, often using movement and position to gain the upper hand.
 
-On your turn, you can move a distance up to your speed. You can use as much or as little of your speed as you like on your turn, following the rules here.
+At the beginning of your turn, you gain available movement equal to your speed. You can use as much or as little of this movement as you like on your turn, following the rules here.
 
-Your movement can include jumping, climbing, and swimming. These different modes of movement can be combined with walking, or they can constitute your entire move. However you're moving, you deduct the distance of each part of your move from your speed until it is used up or until you are done moving.
+Your movement can include jumping, climbing, and swimming. These different modes of movement can be combined with walking, or they can constitute your entire move. If you have multiple speeds, each one has a separate pool of movement. However you're moving, you deduct the distance of each part of your move from your available movement in \textbf{all} mode (regardless of the mode you're actually using). When an available amount of movement in a mode reaches zero, you can no longer move using that mode that turn.
+
+Effects such as the \nameref{spell:slow} spell that reduce your speed reduce \textit{all} speeds you may have proportionately. For example, if you have a 30 foot walking speed and a 60 foot flying speed and are affected by \nameref{spell:slow}, you start your turn with only 15 feet of walking movement and 30 feet of flying movement available. If an effect changes your speed during your turn, recalculate your total available pool of movement and subtract the distance you have already moved from each of the (now altered) pools. This may stop further movement that turn. For example, in the case above if you were afflicted by \nameref{spell:slow} after you had walked for 20 feet, your new pool of walking movement (15 feet) is already consumed and you have no walking movement left. You can still fly for 10 feet, since 60 ft, halved, is 30 feet, which is greater than the 20 you've already moved that turn.
 
 \subsection{Breaking Up Your Move}
 
@@ -790,9 +791,9 @@ If you take an action that includes more than one weapon attack, you can break u
 
 \subsubsection{Using Different Speeds}
 
-If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move.
+If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Remember that any movement subtracts from all pools individually--if a movement mode has no movement available, you cannot use that mode for the remainder of that turn.
 
-For example, if you have a speed of 30 and a flying speed of 60 because a arcanist cast the \nameref{inc:fly} incantation on you, you could fly 20 feet, then walk 10 feet, and then leap into the air to fly 30 feet more.
+For example, if you have a 30 foot walking speed and a 60 foot flying speed (whether due to wings, a class ability, or an effect such as the \nameref{inc:fly} incantation), you start your turn with two pools of movement: 30 feet walking and 60 feet flying. If you fly for 20 feet, you now have 10 feet (30 - 20) of walking movement available and 40 feet (60 - 20) of flying movement available. If you then land and walk 10 feet, you now cannot walk further (since you have 0 feet of walking movement left) but could then fly for another 30 feet (because 60 ft - 20 ft flying - 10 ft walking - 30 ft flying = 0 remaining).
 
 \subsection{Difficult Terrain}
 
@@ -804,11 +805,9 @@ Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs are exa
 
 \subsection{Being Prone}
 
-Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they are prone, a condition described in appendix A.
+Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they have the \nameref{condition:prone} condition.
 
-You can \textbf{drop prone} without using any of your speed. \textbf{Standing up} takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend
-
-15 feet of movement to stand up. You can't stand up if you don't have enough movement left or if your speed is 0.
+You can \textbf{drop prone} without using any of your speed. \textbf{Standing up} takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have enough movement left or if your speed is 0.
 
 To move while prone, you must \textbf{crawl} or use magic such as teleportation. Every foot of movement while crawling costs 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.
 
@@ -834,7 +833,7 @@ Here are a few examples of the sorts of thing you can do in tandem with your mov
 \item don a mask
 \item pull the hood of your cloak up and over your head
 \item put your ear to a door
-\item kick a small stone
+\item kick a small stone or a dropped item in your own space or an adjacent one.
 \item turn a key in a lock
 \item tap the floor with a 10-foot pole
 \item hand an item to another character
@@ -844,7 +843,7 @@ Here are a few examples of the sorts of thing you can do in tandem with your mov
 
 You can move through a nonhostile creature's space. In contrast, you can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you. Remember that another creature's space is difficult terrain for you.
 
-Whether a creature is a friend or an enemy, you can't willingly end your move in its space, including interrupting your movement to take an action, reaction, or bonus action.
+Whether a creature is a friend or an enemy, you can't willingly end your move in its space unless it is two sizes larger than you or you are using it as a mount, including interrupting your movement to take an action, reaction, or bonus action.
 
 If you leave a hostile creature's reach during your move, you provoke an opportunity attack, as explained later in the chapter.
 
@@ -874,11 +873,13 @@ A creature's space is the area in feet that it effectively controls in combat, n
 
 A creature's space also reflects the area it needs to fight effectively. For that reason, there's a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one.
 
-Because larger creatures take up more space, fewer of them can surround a creature. If five Large creatures crowd around a Medium or smaller one, there's little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.
+Because larger creatures take up more space, fewer of them can surround a creature. If four Large creatures crowd around a Medium or smaller one, there's little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.
 
 \subsubsection{Squeezing into a Smaller Space}
 
 A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that's only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it's in the smaller space.
+
+Creatures can squeeze through spaces two sizes smaller than themselves under extreme circumstances. However, while doing so they cannot make attack rolls, cast spells with somatic or material components, fail all Dexterity saving throws, and cannot move more than 5 feet per round.
 
 \subsection{Effects that trigger on movement}
 Some spells, abilities, or environmental effects have clauses such as "when the target moves" or "when a creature enters the area for the first time on a turn", etc. These trigger regardless of whether the movement was voluntary or not. Being shoved, pulled, or otherwise forced to move without using your action, reaction, or movement will trigger the effect.
@@ -895,7 +896,7 @@ When you describe an action not detailed elsewhere in the rules, the GM tells yo
 
 The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists.
 
-With this action, you make one melee or ranged attack. See the “Making an Attack” section for the rules that govern attacks.
+With this action, you make one melee or ranged weapon attack. See the “Making an Attack” section for the rules that govern attacks.
 
 Certain features, such as the Extra Attack feature of the armsman, allow you to make more than one attack with this action.
 
@@ -933,7 +934,7 @@ Sometimes you want to get the jump on a foe or wait for a particular circumstanc
 
 First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the cultist steps on the trapdoor, I'll pull the lever that opens it,” and “If the goblin steps next to me, I move away.”
 
-When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round. Reactions happen after the action that triggered it completes; each 5 feet of movement is considered a separate "action" for this purpose. The ready action cannot interrupt an action.
+When the trigger occurs, you can either take your reaction right after the action or movement containing the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round. Reactions happen after the action that triggered it completes; each 5 feet of movement is considered a separate "action" for this purpose. The ready action cannot interrupt an action, regardless of how the triggers are are phrased. If you ready an action for when a goblin attacks you, the attack is completely resolved before your Readied action triggers. If you ignore the trigger and it happens again before you take your next turn, you can decide to use your readied action at that time. If it does not reoccur, your action is lost.
 
 When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the \nameref{spell:web} spell and ready \nameref{spell:magic-missile}, your \nameref{spell:web} spell ends, and if you take damage before you release \nameref{spell:magic-missile} with your reaction, your concentration might be broken.
 
@@ -950,7 +951,7 @@ You normally interact with an object while doing something else, such as when yo
 Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack--whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
 
 \begin{enumerate}
-\item \textbf{Choose a target.} Pick a target within your attack's range: a creature, an object, or a location.
+\item \textbf{Choose a target.} Pick a target within your attack's range: a creature, an object, or a location. The target cannot have total cover from you.
 \item \textbf{Determine modifiers.} The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.
 \item \textbf{Resolve the attack.} You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.
 \end{enumerate}
@@ -975,9 +976,9 @@ Some spells and magical abilities also require an attack roll. The ability modif
 
 Sometimes fate blesses or curses a combatant, causing the novice to hit and the veteran to miss.
 
-If the d20 roll for an attack is a 20, the attack hits regardless of any modifiers or the target's AC. This is called a critical hit, which is explained later in this chapter.
+If the d20 roll for an attack is a 20, the attack hits regardless of any modifiers or the target's AC. This is called a critical hit, which is explained later in this chapter. Features that allow scoring critical hits on other d20 results also cause such rolls to be automatic hits.
 
-If the d20 roll for an attack is a 1, the attack misses regardless of any modifiers or the target's AC.
+If the d20 roll for an attack is a 1, the attack misses regardless of any modifiers or the target's AC. No other penalty is assessed.
 
 \subsection{Unseen Attackers and Targets}\label{subsec:unseen-attackers}
 
@@ -991,7 +992,7 @@ When a creature can't see you, you have advantage on attack rolls against it. If
 
 When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack.
 
-If the target of a ranged attack is concealed by opaque heavy obscurement (such as dense fog), the attack is made with disadvantage. This overrides the \nameref{subsec:unseen-attackers} rules.
+If the target of a ranged attack is totally concealed but does not have total cover (such by as if they are heavily obscured by dense fog), the attack is made with disadvantage. This overrides the \nameref{subsec:unseen-attackers} rules.
 
 \subsubsection{Range}
 
@@ -1013,7 +1014,7 @@ Most creatures have a 5-foot \textbf{reach} and can thus attack targets within 5
 
 Instead of using a weapon to make a melee weapon attack, you can use an \textbf{unarmed strike}: a punch, kick, head-butt, or similar forceful blow (none of which count as manufactured weapons). On a hit, an unarmed strike deals bludgeoning damage equal to 1 + your Strength modifier. You are proficient with your unarmed strikes.
 
-\subsubsection{Opportunity Attacks}
+\subsubsection{Opportunity Attacks}\label{sec:opportunity-attacks}
 
 In a fight, everyone is constantly watching for a chance to strike an enemy who is fleeing or passing by. Such a strike is called an opportunity attack.
 
@@ -1062,11 +1063,11 @@ Walls, trees, creatures, and other obstacles can provide cover during combat, ma
 
 There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.
 
-A target with \textbf{half cover} has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.
+A target with \textbf{half cover} has a +2 bonus to AC and Dexterity saving throws. A target has half cover if a solid obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.
 
-A target with \textbf{three-quarters cover} has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.
+A target with \textbf{three-quarters cover} has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by a solid obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk. Creatures two sizes larger or more than the target provide three-quarters cover instead of half cover. 
 
-A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by a solid obstacle.
+A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different--a target has total cover when it stands behind a \nameref{spell:wall-of-force}, but as the wall is transparent, it has no concealment and cannot hide. And vice versa--a target concealed by heavy fog or by unilluminated darkness has no cover but is totally concealed and can attempt to hide.
 
 \section{Damage and Healing}
 
@@ -1098,11 +1099,15 @@ If a spell or other effect deals damage to \textbf{more than one target} at the 
 
 Spells or effects that deal damage on a different creature's turn, such as \nameref{spell:flaming-sphere} or \nameref{spell:spirit-guardians}, roll their damage once per round at the beginning of the caster's turn. Anyone affected by the spell until the beginning of the caster's next turn takes that amount of damage (modified separately by any saving throws or resistances).
 
+Abilities such as poison that trigger on a hit with a weapon attack still take effect even if the damage from the weapon is mitigated (via resistance, temporary hit points, or the like) to zero.
+
 \subsubsection{Critical Hits} \label{sec:critical-hits}
 
 When you score a critical hit with a weapon, you get to roll extra dice for the attack's damage against the target. Roll all of the attack's damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.
 
 For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue's Sneak Attack feature, you roll those dice twice as well.
+
+If an attack has additional effects that require a saving throw to take full effect (such as the poisoned from a Giant Spider's Bite attack), those additional damage dice are not doubled on a critical hit.
 
 \subsubsection{Damage Types}
 
@@ -1112,7 +1117,7 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 \subparagraph*{Acid} The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.
 
-\subparagraph*{Bludgeoning} Blunt force attacks—hammers, falling, constriction, and the like—deal bludgeoning damage.
+\subparagraph*{Bludgeoning} Blunt force attacks—hammers, constriction, unarmed blows, and the like—deal bludgeoning damage, as does falling.
 
 \subparagraph*{Cold} The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.
 
@@ -1181,7 +1186,13 @@ For example, a priest with a maximum of 12 hit points currently has 6 hit points
 
 If damage reduces you to 0 hit points and fails to kill you, you fall \nameref{condition:unconscious}. This unconsciousness ends if you regain any hit points.
 
-\subsubsection{Death Saving Throws}
+\begin{figure}
+	\begin{DndComment}{Variant: Heroic Resilience}
+		In particularly heroic games, the GM might allow PCs that are reduced to 0 hit points and are not killed outright to expend 1 Stamina per turn to become \nameref{condition:incapacitated} and \nameref{condition:prone} instead of \nameref{condition:unconscious}. This allows them to move (although slower) and speak, but not take actions, reactions, or bonus actions. Using this variant rule, you still make \nameref{sec:death-saves} as normal.
+	\end{DndComment}
+\end{figure}
+
+\subsubsection{Death Saving Throws} \label{sec:death-saves}
 
 Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn't tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
 

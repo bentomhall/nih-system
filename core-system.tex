@@ -630,7 +630,7 @@ Additionally, characters recover their expended Stamina (see \nameref{sec:stamin
 
 \subsection{Long Rest}
 
-A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity—the characters must begin the rest again to gain any benefit from it.
+A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—--at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity—--the characters must begin the rest again to gain any benefit from it.
 
 At the end of a long rest, a character regains all lost hit points and aether (see \nameref{sec:stamina-and-aether}). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
@@ -698,8 +698,7 @@ First, you must find an instructor willing to teach you. The GM determines how l
 The training lasts for 100 days minus 8 days per point of Intelligence modifier and costs 1 gp per day. After you spend the requisite amount of time and money, you learn the new language, gain proficiency with the new tool, or exchange the skill tricks.
 
 \chapter{The Order of Combat}\label{ch:order-of-combat}
-A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A
-\textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
+A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A \textbf{round} represents about 6 seconds in the game world. During a round, each participant in a battle takes a \textbf{turn}. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
 
 \begin{figure}[htb]
     \begin{DndComment}{Combat Step by Step\label{cmt:combat-step-by-step}}
@@ -717,7 +716,7 @@ A typical combat encounter is a clash between two sides, a flurry of weapon swin
 
 A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.
 
-The GM determines who might be surprised, based on their understanding of the situation. If neither side tries to be stealthy, they automatically notice each other. If there is remaining uncertainty about who is surprised (if anyone), the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is \nameref{condition:surprised} at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't. For an example of this, see Appendix C (\nameref{example:surprise})
+The GM determines who might be surprised, based on their understanding of the situation. If neither side tries to be stealthy, they automatically notice each other. If there is remaining uncertainty about who, if anyone, is surprised, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is \nameref{condition:surprised} at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't. For an example of this, see Appendix C (\nameref{example:surprise})
 
 Surprise generally requires that all attackers are \nameref{condition:hidden} from the target. In exceptional circumstances, the GM might allow surprise in cases where the outbreak of hostilities is completely unexpected (such as an assassin pulling a hidden dagger at a peaceful ball). In social situations like the one mentioned, the GM might call for a Charisma (Stealth) check (in addition to any Dexterity (Sleight of Hand) checks necessary to conceal the weapon in the first place). Surprise is rare if both sides are openly wearing weapons or bearing spell foci and are interacting.
 
@@ -844,7 +843,7 @@ Here are a few examples of the sorts of thing you can do in tandem with your mov
 
 You can move through a nonhostile creature's space. In contrast, you can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you. Remember that another creature's space is difficult terrain for you.
 
-Whether a creature is a friend or an enemy, you can't willingly end your move in its space, including interrupting your movement to take an action, reaction, or bonus action.
+Whether a creature is a friend or an enemy, you can't willingly end your move in its space unless it is two sizes larger than you or you are using it as a mount, including interrupting your movement to take an action, reaction, or bonus action.
 
 If you leave a hostile creature's reach during your move, you provoke an opportunity attack, as explained later in the chapter.
 
@@ -879,6 +878,8 @@ Because larger creatures take up more space, fewer of them can surround a creatu
 \subsubsection{Squeezing into a Smaller Space}
 
 A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that's only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it's in the smaller space.
+
+Creatures can squeeze through spaces two sizes smaller than themselves under extreme circumstances. However, while doing so they cannot make attack rolls, cast spells with somatic or material components, fail all Dexterity saving throws, and cannot move more than 5 feet per round.
 
 \subsection{Effects that trigger on movement}
 Some spells, abilities, or environmental effects have clauses such as "when the target moves" or "when a creature enters the area for the first time on a turn", etc. These trigger regardless of whether the movement was voluntary or not. Being shoved, pulled, or otherwise forced to move without using your action, reaction, or movement will trigger the effect.
@@ -1013,7 +1014,7 @@ Most creatures have a 5-foot \textbf{reach} and can thus attack targets within 5
 
 Instead of using a weapon to make a melee weapon attack, you can use an \textbf{unarmed strike}: a punch, kick, head-butt, or similar forceful blow (none of which count as manufactured weapons). On a hit, an unarmed strike deals bludgeoning damage equal to 1 + your Strength modifier. You are proficient with your unarmed strikes.
 
-\subsubsection{Opportunity Attacks}
+\subsubsection{Opportunity Attacks}\label{sec:opportunity-attacks}
 
 In a fight, everyone is constantly watching for a chance to strike an enemy who is fleeing or passing by. Such a strike is called an opportunity attack.
 

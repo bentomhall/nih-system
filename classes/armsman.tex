@@ -45,12 +45,12 @@ You start with the following equipment, in addition to the equipment granted by 
 \begin{figure*}[htb]
 	\begin{DndTable}[header=Armsman\label{tbl:armsman}]{lcXccc}
 		\textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit}\\ 
-		1st   & +2  & Fighting Style, Second Wind                       & 1 + CON         & 1     & 1 \\
+		1st   & +2  & Weapon Mastery, Second Wind                       & 1 + CON         & 1     & 1 \\
 		2nd   & +2  & Action Surge                           			 		 & 2 + CON         & 1     & 1 \\
 		3rd   & +2  & Martial Archetype                                 & 3 + CON         & 2     & 1 \\
 		4th   & +2  & Ability Score Improvement                         & 4 + CON         & 2     & 1 \\
-		5th   & +3  & Extra Attack                                      & 5 + CON         & 3     & 2 \\
-		6th   & +3  & Versatility                         				 			 & 6 + CON         & 3     & 2 \\
+		5th   & +3  & Extra Attack, Repeated Strikes                    & 5 + CON         & 3     & 2 \\
+		6th   & +3  & Versatility, Ability Score Improvement   	 			 & 6 + CON         & 3     & 2 \\
 		7th   & +3  & Martial Archetype Feature                         & 7 + CON         & 4     & 2 \\
 		8th   & +3  & Ability Score Improvement                         & 8 + CON         & 4     & 2 \\
 		9th   & +4  & Indomitable, Everything's a Weapon                & 9 + CON         & 5     & 2 \\
@@ -68,7 +68,7 @@ You start with the following equipment, in addition to the equipment granted by 
 	\end{DndTable}
 \end{figure*}
 
-\subsection{Fighting Style}
+\subsection{Weapon Mastery}
 
 You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 
@@ -116,6 +116,12 @@ Beginning at 5th level, you can attack twice, instead of once, whenever you take
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
 
+\subsection{Repeated Strikes}
+
+Beginning at 5th level, you've learned to strike the same point repeatedly in quick succession, amplifying the effects of the blows. Each time you hit a target with a weapon attack during one of your turns, you gain a Momentum point against that target. You can expend these Momentum points on any hit after your first in a given turn. If you end your turn with one or more unspent Momentum points, you automatically apply them the next time you hit the target, up to the first hit of your next turn. The Momentum gained on that first hit does not stack with the existing one. Each Momentum point spent increases the damage dealt by one.
+
+Alternatively, you can expend 2 Momentum points on a hit to force the target to make a Constitution saving throw against your Weapon Mastery DC. On a failed save, they are \nameref{condition:staggered} until the end of your next turn. You can expend 4 Momentum points to force the same saving throw, but instead of staggered, they are \nameref{condition:stunned} until the end of your next turn.
+
 \subsection{Versatility}
 Beginning at 6th level, you gain the following benefits:
 \begin{itemize}
@@ -127,7 +133,7 @@ Beginning at 6th level, you gain the following benefits:
 \end{itemize} 
 
 \subsection{Everything's a Weapon}
-Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below.
+Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below. You can change your approach when you finish a long or short rest.
 
 \begin{itemize}
 	\item \textbf{Direct.} When you make an ability check involving Intimidation, Athletics, or any ability check involving Constitution, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
@@ -213,7 +219,7 @@ Starting at 3rd level, sword saints cultivate their aether thoroughly than most 
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
 
 \subsubsection{Blades of Air}
-Starting at 7th level, you can concentrate air-aspected aether in your melee strikes, launching sharpened blades of air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ AET to extend your reach for that action by 10 ft per aether spent. When you do so, the weapon counts as magical for the purpose of overcoming resistance and immunity to attacks from non-magical weapons.
+Starting at 7th level, you can concentrate air-aspected aether in your melee strikes, launching sharpened blades of air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ AET to extend your reach for that action by 10 ft per aether spent. When you do so, the weapon counts as magical for the purpose of overcoming resistance and immunity to attacks from non-magical weapons. The damage dealt by these attacks also increases by 2 for every AET spent.
 
 \subsubsection{Cold as Ice}
 Starting at 10th level, you are nearly impossible to fluster or make angry. You can add twice your proficiency bonus to any saving throw or ability check against an effect that would impose the frightened or charmed condition and if you are affected by either of those conditions, you can expend 2 STA at the start of your turn to suppress the effect until the end of your turn.

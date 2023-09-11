@@ -1,0 +1,1020 @@
+\FloatBarrier
+\section{Humanoids}
+\subsection{Any Lineage}
+
+\begin{DndMonster}{Acolyte}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={10 }, hit-points={9 (2d8) }, speed={30 ft.}]
+	\MonsterStats{+0}{+0}{+0}{+0}{+2}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Medicine +4, Religion +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={1/4:1/8}]
+	\DndMonsterAction{Spellcasting} The acolyte's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following priest spells prepared:
+	\begin{itemize}
+		\item[] \textbf{Concentration}: \nameref{spell:bless} (x1), \nameref{spell:sanctuary} (x1)
+		\item[] \textbf{Healing}: \nameref{spell:cure-wounds} (x2)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Club,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{1d4},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Judgement Strike,
+		distance=ranged,
+		type=spell,
+		mod=+3,
+		range=60 ft.,
+		dmg=\DndDice{1d8},
+		dmg-type=radiant or necrotic,
+		extra={. This counts as a cantrip.}
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} Holy symbol, club.
+	\DndMonsterAction{Rare} A spell scroll or spell stone of a priest spell with cost 2 AET or less.
+\end{DndMonster}
+
+\begin{DndMonster}{Acolyte, Senior}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={33 (6d8 + 6)}, speed={30 ft.}]
+	\MonsterStats{+0}{+2}{+1}{+0}{+2}{+2}
+	\DndMonsterDetails[saving-throws={}, skills={Deception +4, Persuasion +4, Religion +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any one language (usually Common)}, challenge={1:1/2}]
+	
+	\DndMonsterAction{Spellcasting} The acolyte's spellcasting ability is Wisdom (spell save DC 11, +4 to hit with spell attacks). The acolyte has the following spells prepared:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:hold-person} (x2), \nameref{spell:shield-of-faith} (x1)
+		\item[] \textbf{Other} \nameref{spell:inflict-wounds} (x1), \nameref{spell:command} (x2)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The fanatic makes two dagger attacks or casts Judgement Strike twice.
+	\DndMonsterAttack[
+		name=Dagger,
+		distance=both,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d4 + 2},
+		dmg-type=piercing
+	]
+
+	\DndMonsterAttack[
+		name=Judgement Strike,
+		distance=ranged,
+		type=spell,
+		mod=+4,
+		range=60 ft.,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=radiant or necrotic,
+		extra={. This counts as a cantrip.}
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A holy symbol, a spell stone or scroll of a 1-4 AET priest spell, a healing potion
+
+	\DndMonsterSection{Variants}
+	\DndMonsterAction{Fanatic} The fanatic has advantage on saving throws against being charmed or frightened. This does not affect their ratings.
+\end{DndMonster}
+
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Archmage}
+	\begin{multicols}{2}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={12 (15 with \textit{mage armor})}, hit-points={99 (18d8 + 18)}, speed={30 ft.}]
+	\MonsterStats{+0}{+2}{+1}{+5}{+2}{+3}
+	\DndMonsterDetails[saving-throws={Int +9, Wis +6}, skills={Arcana +13, History +13}, damage-immunities={}, damage-resistances={damage from spells; bludgeoning, piercing, and slashing}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any six languages}, challenge={11:7}]
+	\DndMonsterAction{Magic Resistance} The archmage has advantage on saving throws against spells and other magical effects.
+	
+	\DndMonsterAction{Spellcasting} The archmage's spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast the following spells in combat:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:faerie-fire} (at will), \nameref{spell:black-tentacles} (x2), \nameref{spell:wall-of-force} (x2)
+		\item[] \textbf{Damage} \nameref{spell:disintegrate} (Legendary, x2), \nameref{spell:fireball} (x3)
+		\item[] \textbf{Defensive} \nameref{spell:misty-step} (at will), \nameref{spell:stoneskin} (x3), \nameref{spell:time-stop} (Legendary, x1)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multicast} The archmage can use one of its spell attacks as a bonus action if it casts a spell using its Spellcasting feature.
+
+	\DndMonsterAttack[
+		name=Dagger,
+		distance=both,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{1d4 + 2},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Fire blast,
+		distance=ranged,
+		type=spell,
+		mod=+9,
+		range=120ft.,
+		dmg=\DndDice{4d10 + 5},
+		dmg-type=fire,
+		extra={. This ability counts as a cantrip.}
+	]
+	\DndMonsterAttack[
+		name=Lightning Fist,
+		distance=melee,
+		type=spell,
+		mod=+9,
+		reach=5ft.,
+		dmg=\DndDice{4d8 + 5},
+		dmg-type=lightning,
+		extra={, and the target cannot take reactions until the start of their next turn. This ability counts as a cantrip.}
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} An arcane focus. A component pouch including 300 gp in diamond dust. 1d4 spell stones (cost 1-12 AET).
+	\DndMonsterAction{Rare} A rare or more common magic item, usually being wielded.
+	\end{multicols}
+\end{DndMonster}
+
+\subsection{Assassin}
+	\begin{DndMonster}{Assassin}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={15 (reinforced leather)}, hit-points={78 (12d8 + 24)}, speed={30 ft.}]
+	\MonsterStats{+0}{+3 (+6)}{+2}{+1}{+0 (+4)}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Acrobatics +6, Deception +3, Perception +3, Stealth +9}, damage-immunities={}, damage-resistances={poison}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Thieves' cant plus any two languages}, challenge={12:5}]
+	\DndMonsterAction{Assassinate} During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.
+	
+	\DndMonsterAction{Evasion} If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+	
+	\DndMonsterAction{Sneak Attack} Once per turn, the assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The assassin makes two shortsword attacks.
+	\DndMonsterAttack[
+		name=Shortsword,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing,
+		extra={, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.}
+	]
+	\DndMonsterAttack[
+		name=Light Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+6,
+		range=80/320,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=piercing,
+		extra={, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.}
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} Poison, Poisoner's Kit, pouch of gold, smoke bomb
+	\DndMonsterAction{Rare} Exotic poisons, written orders, uncommon or common magic items (usually stealth related)
+\end{DndMonster}
+
+\begin{DndMonster}{Bandit}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={12 (leather armor)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
+	\MonsterStats{+0}{+1}{+1}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={1/4:1/8}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Scimitar,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d6 + 1},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Light Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+3,
+		range=80 ft./320,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} Gambling set, small pouch of coin or minor art objects
+
+	\DndMonsterSection{Variants}
+	\DndMonsterAction{Cultist} Cultists have advantage against being frightened or charmed. This does not affect their ratings.
+\end{DndMonster}
+
+\begin{DndMonster}{Bandit Captain}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={15 (reinforced leather)}, hit-points={65 (10d8 + 20)}, speed={30 ft.}]
+	\MonsterStats{+2}{+3}{+2}{+2}{+0}{+2}
+	\DndMonsterDetails[saving-throws={Str +4, Dex +5, Wis +2}, skills={Athletics +4, Deception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any two languages }, challenge={2:3}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.
+	\DndMonsterAttack[
+		name=Scimitar,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Dagger,
+		distance=both,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d4 + 2},
+		dmg-type= piercing
+	]
+	\DndMonsterAction{Parry}
+	As a reaction, the captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A large pouch of gold, a common magic item (usually utility), small art objects.
+	\DndMonsterAction{Rare} Documents fingering a fence or traitor in the nearest town. A key to a base or map to a treasure dump. 
+\end{DndMonster}
+
+\subsection{Berserker}
+	\begin{DndMonster}{Berserker}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={67 (9d8 + 27)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+3}{-1}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={2:2}]
+	\DndMonsterAction{Reckless} At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Greataxe,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d12 + 3},
+		dmg-type=slashing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A few small gems or coins.
+	\DndMonsterAction{Rare} A silvered greataxe or common utility magic item.
+\end{DndMonster}
+
+\begin{DndMonster}{Commoner}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={10 }, hit-points={4 (1d8) }, speed={30 ft.}]
+	\MonsterStats{+0}{+0}{+0}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={0:1/8}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Club,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{1d4},
+		dmg-type=bludgeoning
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A few copper coins.
+\end{DndMonster}
+
+\begin{DndMonster}{Shaman}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (hide armor, 16 with barkskin)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
+	\MonsterStats{+0}{+1}{+1}{+1}{+2}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Medicine +4, Nature +3, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14 }, languages={Common plus any two languages, usually sylvan }, challenge={1:1}]
+	\DndMonsterAction{Spellcasting} The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:entangle} (x2), \nameref{spell:call-lightning} (x1)
+		\item[] \textbf{Defensive} \nameref{spell:barkskin} (x1), \nameref{spell:longstrider}
+		\item[] \textbf{Utility} \nameref{spell:cure-wounds} (x2)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Quarterstaff,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{1d6},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Flame Blast,
+		distance=ranged,
+		type=spell,
+		mod=+4,
+		range=60 ft.,
+		dmg=\DndDice{2d8 + 2},
+		dmg-type=fire
+	]
+	\DndMonsterAction{Manifest Zone: Earth} The shaman magically calls upon the plane of stone to shield its allies in a 10-foot radius sphere located at a point the shaman can see within 60 feet. The zone is difficult terrain for any of the shaman's enemies while it lasts. When the zone appears and at the start of each of the shaman's turns, all allies within the zone gain 5 temporary hit points that last for 1 minute. The zone disappears after 1 minute or when the shaman is incapacitated or moves more than 60 feet from the location.
+\end{DndMonster}
+
+\begin{DndMonster}{Warrior, Brutal}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={16 (reinforced leather, shield)}, hit-points={112 (15d8 + 45)}, speed={30 ft.}]
+	\MonsterStats{+4 (+7)}{+2 (+5)}{+3 (+6)}{+0}{+1}{+2}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +10, Intimidation +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any one language (usually Common)}, challenge={5:6}]
+	\DndMonsterAction{Brave} The warrior has advantage on saving throws against being frightened.
+	
+	\DndMonsterAction{Brute} A melee weapon deals one extra die of its damage when the warrior hits with it (included in the attack).
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The warrior makes three melee attacks or two ranged attacks.
+	\DndMonsterAttack[
+		name=Spear,
+		distance=both,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		range=20/60,
+		dmg=\DndDice{2d6 + 4},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Shield Bash,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d4 + 4},
+		dmg-type=bludgeoning,
+		extra={. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.}
+	]
+	
+	\DndMonsterAction{Parry}
+	As a reaction, the warrior adds 3 to its AC against one melee attack that would hit it. To do so, the warrior must see the attacker and be wielding a melee weapon.
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A medium pouch of gold, a healing potion, a gambling set.
+	\DndMonsterAction{Rare} An uncommon magic item (usually wielded)
+\end{DndMonster}
+
+\begin{DndMonster}{Guard}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={16 (chain shirt, shield)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
+	\MonsterStats{+1}{+1}{+1}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={1/4:1/2}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Spear,
+		distance=both,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d6 + 1},
+		dmg-type= piercing
+	]
+	\end{DndMonster}
+
+\begin{DndMonster}{Knight}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={18 (plate)}, hit-points={52 (8d8 + 16)}, speed={30 ft.}]
+	\MonsterStats{+3}{+0}{+2 (+4)}{+0}{+0 (+2)}{+2}
+	\DndMonsterDetails[saving-throws={Con +4, Wis +2}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={3:4}]
+	\DndMonsterAction{Brave} The knight has advantage on saving throws against being frightened.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The knight makes two melee attacks.
+	\DndMonsterAttack[
+		name=Greatsword,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{2d6 + 3},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Heavy Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+2,
+		range=100/400,
+		dmg=\DndDice{1d10},
+		dmg-type=piercing
+	]
+	\DndMonsterAction{Leadership (Recharges after a Short or Long Rest)}
+	For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.
+	\DndMonsterAction{Parry}
+	The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.
+\end{DndMonster}
+
+\begin{DndMonster}{Mage}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={15}, hit-points={40 (9d8)}, speed={30 ft.}]
+	\MonsterStats{-1}{+2}{+0}{+3}{+1}{+0}
+	\DndMonsterDetails[saving-throws={Int +6, Wis +4}, skills={Arcana +6, History +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any four languages}, challenge={8:3}]
+	\DndMonsterAction{Spellcasting} The mage's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage can cast the following spells:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:greater-invisibility} (x1), \nameref{spell:suggestion} (x2), \nameref{spell:fire-shield} (x1)
+		\item[] \textbf{Defensive} \nameref{spell:misty-step} (x3)
+		\item[] \textbf{AoE} \nameref{spell:cone-of-cold} (x1), \nameref{spell:ice-storm} (x2), \nameref{spell:magic-missile} (x3)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Dagger,
+		distance=both,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d4 + 1},
+		dmg-type= piercing
+	]
+\end{DndMonster}
+	
+\begin{DndMonster}{Noble}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={15 (breastplate)}, hit-points={9 (2d8)}, speed={30 ft.}]
+	\MonsterStats{+0}{+1}{+0}{+1}{+2}{+3}
+	\DndMonsterDetails[saving-throws={}, skills={Deception +5, Insight +4, Persuasion +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any two languages}, challenge={1/4:1/4}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Rapier,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=piercing
+	]
+	\DndMonsterAction{Parry}
+	The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A large amount of coin and/or personal jewelry.
+\end{DndMonster}
+
+\begin{DndMonster}{Priest}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (chain shirt)}, hit-points={44 (8d8 + 8)}, speed={30 ft.}]
+	\MonsterStats{+0}{+0}{+1}{+1}{+3}{+1}
+	\DndMonsterDetails[saving-throws={}, skills={Medicine +7, Persuasion +3, Religion +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={any two languages}, challenge={3:1}]
+	
+	\DndMonsterAction{Spellcasting} The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest can cast the following spells:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:bless}, \nameref{spell:sanctuary} (x2)
+		\item[] \textbf{Damage} \nameref{spell:spiritual-weapon} (x1), \nameref{spell:guiding-bolt} (x2)
+		\item[] \textbf{Utility/Healing} \nameref{spell:cure-wounds} (x2), \nameref{spell:unbind} (x2)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Mace,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{1d6},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Judgement Strike,
+		distance=ranged,
+		type=spell,
+		mod=+3,
+		range=60 ft.,
+		dmg=\DndDice{2d8 + 1},
+		dmg-type=radiant or necrotic,
+		extra={. This counts as a cantrip.}
+	]
+
+	\DndMonsterAction{Divine Radiance (1/day)} As a bonus action, the priest channels astral energy. All creatures within 10 feet of the priest regain 10 (3d6) hit points. Constructs are unaffected by this; undead must make a DC 13 Wisdom saving throw, taking 10 (3d6) radiant damage on a failure or half as much on a success.
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A holy symbol, a moderate amount of coin and/or jewels, a healing potion, and a spell stone of a 1-5 AET priest spell.
+	\DndMonsterAction{Rare} An uncommon or weaker magic item, usually wielded.
+\end{DndMonster}
+
+\subsection{Scout}
+	\begin{DndMonster}{Scout}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={16 (3d8 + 3)}, speed={30 ft.}]
+	\MonsterStats{+0}{+2}{+1}{+0}{+1}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Nature +4, Perception +5, Stealth +6, Survival +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15}, languages={any one language (usually Common)}, challenge={1:1/4}]
+	\DndMonsterAction{Keen Hearing and Sight} The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The scout makes two melee attacks or two ranged attacks.
+	\DndMonsterAttack[
+		name=Shortsword,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Longbow,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=150/600,
+		dmg=\DndDice{1d8 + 2},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A healer's kit, rations, 20 extra arrows
+\end{DndMonster}
+
+\begin{DndMonster}{Spy}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={12}, hit-points={27 (6d8)}, speed={30 ft.}]
+	\MonsterStats{+0}{+2}{+0}{+1}{+2}{+3}
+	\DndMonsterDetails[saving-throws={}, skills={Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of Hand +4, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={any two languages}, challenge={:21/2}]
+	\DndMonsterAction{Cunning Action} On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.
+	
+	\DndMonsterAction{Sneak Attack (1/Turn)} The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The spy makes two melee attacks.
+	\DndMonsterAttack[
+		name=Shortsword,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Hand Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=30/120,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A disguise kit, a forger's kit, a large amount of coin (often hidden)
+	\DndMonsterAction{Rare} A vial of poison, a forged signet ring, and stolen documents.
+\end{DndMonster}
+
+\begin{DndMonster}{Thug}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={14 (brigandine)}, hit-points={32 (5d8 + 10)}, speed={30 ft.}]
+	\MonsterStats{+2}{+0}{+2}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Intimidation +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={1:1}]
+	\DndMonsterAction{Pack Tactics} The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The thug makes two melee attacks.
+	\DndMonsterAttack[
+		name=Warhammer,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d8 + 2},
+		dmg-type=bludgeoning,
+		extra={. \textit{Miss} The target still takes 2 bludgeoning damage.}
+	]
+	\DndMonsterAttack[
+		name=Heavy Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+2,
+		range=100/400,
+		dmg=\DndDice{1d10},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A substantial amount of coin.
+\end{DndMonster}
+
+\begin{DndMonster}{Veteran}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={17 (splint)}, hit-points={58 (9d8 + 18)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+2}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +5, Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={3:5}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The veteran makes two longsword attacks and a shortsword attack.
+	\DndMonsterAttack[
+		name=Longsword,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Shortsword,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Heavy Crossbow,
+		distance=ranged,
+		type=weapon,
+		mod=+3,
+		range=100/400,
+		dmg=\DndDice{1d10 + 1},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A moderate amount of coin and/or jewelry. A healing potion.
+	\DndMonsterAction{Rare} A common magic item, usually utility.
+\end{DndMonster}
+
+\begin{DndMonster}{Warrior, Primitive}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={12 (hide armor)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
+	\MonsterStats{+1}{+0}{+1}{-1}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language}, challenge={1/2:1/8}]
+	\DndMonsterAction{Pack Tactics} The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Spear,
+		distance=both,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=piercing
+	]
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} Small carved trinkets (art objects).
+\end{DndMonster}
+
+\subsection{Specific}
+\begin{DndMonster}{Dwarf, Twisted}
+	\DndMonsterType{Medium humanoid (dwarf)}
+	\DndMonsterBasics[armor-class={16 (scale mail, shield)}, hit-points={26 (4d8 + 8)}, speed={25 ft.}]
+	\MonsterStats{+2}{+0}{+2}{+0}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={poison}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 10}, languages={Dwarvish}, challenge={1:2}]
+	\DndMonsterAction{Dwarven Resilience} The dwarf has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Enlarge  (Recharges after a Short or Long Rest)}
+	For 1 minute, the dwarf magically increases in size, along with anything it is wearing or carrying. While enlarged, the dwarf is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the dwarf lacks the room to become Large, it attains the maximum size possible in the space available.
+	\DndMonsterAttack[
+		name=War Pick,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d8 + 2},
+		dmg-type=piercing,
+		extra={, or 11 (2d8 + 2) piercing damage while enlarged.}
+	]
+	\DndMonsterAttack[
+		name=Javelin,
+		distance=both,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing,
+		extra={, or 9 (2d6 + 2) piercing damage while enlarged.}
+	]
+	\DndMonsterAction{Invisibility (Recharges after a Short or Long Rest)}
+	The dwarf magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the dwarf wears or carries is invisible with it.
+\end{DndMonster}
+
+\begin{DndMonster}{Goblin Raider}
+	\DndMonsterType{Small humanoid (goblinoid)}
+	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={7 (2d6)}, speed={30 ft.}]
+	\MonsterStats{-1}{+2}{+0}{+0}{-1}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={Common, Goblin}, challenge={1/2:1/8}]
+	\DndMonsterAction{Nimble Escape} The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Scimitar,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Shortbow,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=80/320,
+		dmg=\DndDice{1d6 + 2},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Hobgoblin Raider}
+	\DndMonsterType{Medium humanoid (goblinoid)}
+	\DndMonsterBasics[armor-class={14 (lamellar)}, hit-points={16 (3d8 + 3)}, speed={30 ft.}]
+	\MonsterStats{+1}{+1}{+1}{+0}{+0}{+1}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Goblin}, challenge={1:1/2}]
+	\DndMonsterAction{Martial Advantage} Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Longsword,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d10 + 1},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Longbow,
+		distance=ranged,
+		type=weapon,
+		mod=+3,
+		range=150/600,
+		dmg=\DndDice{1d8 + 1},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Orc Raider}
+	\DndMonsterType{Medium humanoid (orc)}
+	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={22 (3d8 + 9)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+3}{-2}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Intimidation +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Orc}, challenge={1:1/2}]
+	\DndMonsterAction{Aggressive} As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Greataxe,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d12 + 3},
+		dmg-type=slashing
+	]
+	\DndMonsterAttack[
+		name=Javelin,
+		distance=both,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\subsection{Therianthropes}
+Therianthropes, more commonly known as were creatures, stem originally from demonic interference, mostly from the followers of the demon prince known as the Red Fang. But many of the creatures are blameless victims, and there are a substantial number of people who inherited the ability to transform from their cursed ancestors. These entries only describe those capable of passing on the curse via bite, in the main the victims themselves of a cursed bite. Were-creatures may either choose to revel in their blood-lust curse or seek to control it; either way, they remain dangerous.
+
+There are others, called Skinwalkers or Loup Garou, who willingly trafficked with demons to gain power. They are even more powerful, if thankfully rare.
+
+All were creatures possess extreme regenerative capability, being capable of near-instantly regenerating from even mortal wounds. Silvered weapons stop this healing, leaving lasting wounds, and being beheaded once made unconscious also works. Not much else does.
+
+\subsection{Werebear}
+\begin{DndMonster}{Werebear}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={10 in humanoid form, 11 (natural armor) in bear and hybrid form}, hit-points={135 (18d8 + 54)}, speed={30 ft. (40 ft., climb 30 ft. in bear or hybrid form)}]
+\MonsterStats{+4}{+0}{+3}{+0}{+1}{+1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 17}, languages={Common (can't speak in bear form)}, challenge={4:8}]
+
+\DndMonsterAction{Cursed Regeneration} The werebear regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the werebear's maximum hit points by an amount equal to the damage dealt. This lasts until the werebear completes a long rest.
+
+\DndMonsterAction{Keen Smell} The werebear has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.
+\DndMonsterAttack[
+	name=Bite (Bear or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d10 + 4},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with werebear lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claw (Bear or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Greataxe (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+7,
+	reach=5,
+	dmg=\DndDice{1d12 + 4},
+	dmg-type=slashing
+]
+
+\DndMonsterAction{Shapechanger} The werebear can use its bonus action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+\end{DndMonster}
+
+\begin{DndMonster}{Wereboar}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={10 in humanoid form, 11 (natural armor) in boar or hybrid form}, hit-points={78 (12d8 + 24)}, speed={30 ft. (40 ft. in boar form)}]
+\MonsterStats{+3}{+0}{+2}{+0}{+0}{-1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Common (can't speak in boar form)}, challenge={3:4}]
+
+\DndMonsterAction{Cursed Regeneration} The wereboar regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the wereboar's maximum hit points by an amount equal to the damage dealt. This lasts until the wereboar completes a long rest.
+
+\DndMonsterAction{Charge (Boar or Hybrid Form Only)} If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+
+\DndMonsterAction{Relentless (Recharges after a Short or Long Rest)} If the wereboar takes damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead as long as its maximum hit points are not zero.
+
+\DndMonsterSection{Actions}
+The wereboar makes two attacks, only one of which can be with its tusks.
+\DndMonsterAttack[
+	name=Maul (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Tusks (Boar or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d6 + 3},
+	dmg-type=slashing,
+	extra={. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.}
+]
+
+
+\DndMonsterAction{Shapechanger} The wereboar can use its bonus action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+\end{DndMonster}
+
+\begin{DndMonster}{Wererat}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={12}, hit-points={33 (6d8 + 6)}, speed={30 ft.}]
+\MonsterStats{+0}{+2}{+1}{+0}{+0}{-1}
+\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 12}, languages={Common (can't speak in rat form)}, challenge={1:2}]
+
+\DndMonsterAction{Cursed Regeneration} The wererat regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the wererat's maximum hit points by an amount equal to the damage dealt. This lasts until the wererat completes a long rest.
+
+\DndMonsterAction{Keen Smell} The wererat has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+The wererat makes two attacks, only one of which can be a bite.
+\DndMonsterAttack[
+	name=Bite (Rat or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Shortsword (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAttack[
+	name=Hand Crossbow (Humanoid or Hybrid Form Only),
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=30/120,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=piercing
+]
+
+\DndMonsterAction{Shapechanger} The wererat can use its bonus action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+\end{DndMonster}
+
+\begin{DndMonster}{Weretiger}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={12}, hit-points={120 (16d8 + 48)}, speed={30 ft. (40 ft. in tiger form)}]
+\MonsterStats{+3}{+2}{+3}{+0}{+1}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={Common (can't speak in tiger form)}, challenge={4:6}]
+
+\DndMonsterAction{Cursed Regeneration} The weretiger regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the weretiger's maximum hit points by an amount equal to the damage dealt. This lasts until the weretiger completes a long rest.
+
+\DndMonsterAction{Keen Hearing and Smell} The weretiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterAction{Pounce (Tiger or Hybrid Form Only)} If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.
+
+\DndMonsterSection{Actions}
+In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks and a bite attack.
+\DndMonsterAttack[
+	name=Bite (Tiger or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{2d10 + 3},
+	dmg-type= piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claw (Tiger or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Scimitar (Humanoid or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+5,
+	reach=5,
+	dmg=\DndDice{1d6 + 3},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Longbow (Humanoid or Hybrid Form Only),
+	distance=ranged,
+	type=weapon,
+	mod=+4,
+	range=150/600,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=piercing
+]
+\DndMonsterAction{Shapechanger} The weretiger can use its bonus action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+\end{DndMonster}
+
+\begin{DndMonster}{Werewolf}
+\DndMonsterType{Medium humanoid (human, shapechanger)}
+\DndMonsterBasics[armor-class={11 in humanoid form, 12 (natural armor) in wolf or hybrid form}, hit-points={58 (9d8 + 18)}, speed={30 ft. (40 ft. in wolf form)}]
+\MonsterStats{+2}{+1}{+2}{+0}{+0}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Common (can't speak in wolf form)}, challenge={3:2}]
+
+\DndMonsterAction{Cursed Regeneration} The werewolf regenerates 20 hit points at the start of each of its turns. It only dies if its maximum hit points reach zero (see Silver Sensitivity) or if someone uses an action to behead it while it is unconscious at zero hit points.
+
+\DndMonsterAction{Silver Sensitivity} Silver's purity is antithetical to the cursed nature of a were creature. As such, damage dealt by silvered weapons reduce the werewolf's maximum hit points by an amount equal to the damage dealt. This lasts until the werewolf completes a long rest.
+
+\DndMonsterAction{Keen Hearing and Smell} The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterSection{Actions}
+The werewolf makes two attacks: one with its bite and two with its claws or spear.
+\DndMonsterAttack[
+	name=Bite (Wolf or Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d8 + 2},
+	dmg-type=piercing,
+	extra={. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.}
+]
+\DndMonsterAttack[
+	name=Claws (Hybrid Form Only),
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d4 + 2},
+	dmg-type=slashing
+]
+\DndMonsterAttack[
+	name=Spear (Humanoid Form Only),
+	distance=both,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d6 + 2},
+	dmg-type=piercing,
+	extra={, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.}
+]
+\DndMonsterAction{Shapechanger} The werewolf can use its bonus action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+\end{DndMonster}

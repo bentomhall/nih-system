@@ -1,0 +1,67 @@
+:root {
+    --main-color: cadetblue;
+    --comment-color: rgb(169, 109, 169);
+    --tan: tan;
+}
+
+body {
+    padding: 2em;
+}
+
+table {
+    background-color: var(--tan);
+    border-collapse: collapse;
+}
+
+table.wide {
+    width: 100%;
+}
+
+table.narrow {
+    width: 50%;
+}
+
+td, th {
+    text-align: left;
+    padding: 0.5em 1em 0.5em 0em;
+}
+
+tr:nth-child(even) {
+    background-color: var(--main-color);
+}
+
+header {
+    display: flex;
+    flex: row no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: var(--main-color);
+}
+
+.comment {
+    background-color: var(--comment-color);
+    padding:1em;
+    margin:1em 0em;
+    float: right;
+    max-width: 30%;
+    margin-left: 2em;
+}
+
+.sidebar {
+    background-color: var(--main-color);
+    float: left;
+    max-width: 30%;
+    margin-right: 2em;
+}
+
+.no-marker {
+   list-style-type: none;
+   padding: 0px;
+}
+
+.external::before {
+    content: '⇨'
+}
+

@@ -40,6 +40,17 @@ header {
     background-color: var(--main-color);
 }
 
+figure {
+	border: 1px solid var(--main-color);
+	width:fit-content;
+}
+
+figcaption {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
 .comment {
     background-color: var(--comment-color);
     padding:1em;

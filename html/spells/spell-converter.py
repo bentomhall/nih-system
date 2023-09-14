@@ -70,18 +70,38 @@ def process_spell(chunk):
 			s.text.append(line)
 	return s
 
+class SpellReference(object):
+	def __init__(self, type, id):
+		self.type = type
+		self.id = id
+		self.name = str.join(' ', id.split(id, '-')).title()
+		self.file = '../spells/allspells.html'
+	
+	def to_html(self):
+		if self.type == 'spell':
+			return f'<a href="{self.file}#{self.id}">{self.name}</a>"'
+		elif self.type == 'l':
+			return f'<a href="../spells/legendary-effects${self.id}">{self.name}</a>'
+	
+spellRe = re.compile(r"\\nameref{(spell|l):(.*?)}")
+def parseSpellReferences(lines):
+	output = []
+	for line in lines:
+		matches = spellRe.findall(line)
+		newLine = line
+		if matches:
+			for match in matches:
+				reference = SpellReference(match.group(1), match.group(2))
+				newLine = re.sub(match.group(0), reference.to_html(), newLine)
+		output.append(newLine)
+	return output
+
 if __name__ == "__main__":
-	ifile = r"spells-q-z.html"
+	ifile = r"spell-lists.html"
 	spells=[]
 	with open(ifile, 'r', encoding='utf-8') as input:
 		lines = input.readlines()
-		chunks = reversed(chunk(lines))
-		for ch in chunks:
-			spells.append(process_spell(ch).make_html())
-	with open("spell-blocks-q-z.html", 'w') as output:
-		for spell in spells:
-			output.write(spell)
-			output.write('\n')
+		print(parseSpellReferences(lines))
 
 
 		

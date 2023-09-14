@@ -1,4 +1,28 @@
-<h2 class="section">Arcanist\label{class:arcanist</h2>}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIH Spells</title>
+<link href="../main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="classes.css">
+</head>
+<body>
+<header>
+<div>Pages:</div>
+<div><a href="../changelog.html">Changelog</a></div>
+<div><a href="../introduction.html">Introduction</a></div>
+<div><a href="../core-system.html">Core System</a></div>
+<div><a href="../character-creation.html">Character Creation</a> > <a href="#">Arcanist</a></div>
+<div><a href="../equipment.html">Equipment</a></div>
+<div><a href="../spells.html">Incantations, Spells, and Legendary Effects</a></div>
+<div><a href="../skill-tricks.html">Skill Tricks</a></div>
+<div><a href="../items.html">Magic Items</a></div>
+<div><a href="../monsters.html">Monsters</a></div>
+<div><a href="../appendixes.html">Appendixes</a></div>
+</header>
+
+<h2 class="section">Arcanist</h2>
 
 <p>Wizard, sorcerer, mage, witch. Many names for the same thing. The masters of arcane magic, the arcanist. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They rarely wear armor--the slight restrictions interfere with their highly practiced motions.</p>
 
@@ -8,12 +32,12 @@
 
 <p>Subclasses:</p>
 <ul>
-	<li>Awakened: This is the self-taught "savant", whose powers are more instinctual than trained. They'll get more aether and some CHA-based abilities.</li>
-	<li>Book Mage: This is the closest to your classic "wizard". They'll get the ability to write in spells to have them always known and not counting against their limits, plus Ritual Caster.</li>
+	<li><a href="#awakened">Awakened</a>: This is the self-taught "savant", whose powers are more instinctual than trained. They'll get more aether and some CHA-based abilities.</li>
+	<li><a href="#book-mage">Book Mage</a>: This is the closest to your classic "wizard". They'll get the ability to write in spells to have them always known and not counting against their limits, plus Ritual Caster.</li>
 </ul>
 
-\subparagraph*{Quick Build}
-<p>To easily build an arcanist, put your highest ability score into Intelligence and your next two into Dexterity and Constitution. Pick the Awakened mage subclass and the \nameref{spell:ray-of-frost}, \nameref{spell:produce-flame}, \nameref{spell:mage-hand} and \nameref{spell:prestidigitation} cantrips. \nameref{spell:burning-hands} and \nameref{spell:sleep} are good spells at early levels. Pick up leather armor as soon as you can afford it, since you can wear it as an awakened mage.</p>
+<h3>Quick Build</h3>
+<p>To easily build an arcanist, put your highest ability score into Intelligence and your next two into Dexterity and Constitution. Pick the Awakened mage subclass and the <a href="../spells/allspells.html#ray-of-frost">ray of frost</a>, <a href="../spells/allspells.html#produce-flame">produce flame</a>, <a href="../spells/allspells.html#mage-hand">mage hand</a> and <a href="../spells/allspells.html#prestidigitation">prestidigitation</a> cantrips. <a href="../spells/allspells.html#burning-hands">burning hands</a> and <a href="../spells/allspells.html#sleep">sleep</a> are good spells at early levels. Pick up leather armor as soon as you can afford it, since you can wear it as an awakened mage.</p>
 
 <h3 class="subsection">Class Features</h3>
 
@@ -21,23 +45,23 @@
 
 <h3 class="subsection">Hit Points</h3>
 
-<b>Hit Dice:</b> 1d6 per arcanist level
+<p><b>Hit Dice:</b> 1d6 per arcanist level</p>
 
-<b>Hit Points at 1st Level:</b> 6 + your Constitution modifier
+<p><b>Hit Points at 1st Level:</b> 6 + your Constitution modifier</p>
 
-<b>Hit Points at Higher Levels:</b> 1d6 (or 4) + your Constitution modifier per arcanist level after 1st
+<p><b>Hit Points at Higher Levels:</b> 1d6 (or 4) + your Constitution modifier per arcanist level after 1st</p>
 
 <h3 class="subsection">Proficiencies</h3>
 
-<b>Armor:</b> None
+<p><b>Armor:</b> None</p>
 
-<b>Weapons:</b> Daggers, darts, slings, quarterstaffs, light crossbows
+<p><b>Weapons:</b> Daggers, darts, slings, quarterstaffs, light crossbows</p>
 
-<b>Tools:</b> None
+<p><b>Tools:</b> None</p>
 
-<b>Saving Throws:</b> Constitution, Intelligence
+<p><b>Saving Throws:</b> Constitution, Intelligence</p>
 
-<b>Skills:</b> Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion
+<p><b>Skills:</b> Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion</p>
 
 <h3 class="subsection">Equipment</h3>
 
@@ -49,31 +73,222 @@
 <li>Two daggers</li>
 </ul>
 
-\begin{figure*}[htb]
-\begin{DndTable}[header=The Arcanist\label{tbl:arcanist}]{lcXccccc}
- <b>Level</b> & <b>Proficiency</b> &<b>Features</b> & <b>Cantrips</b> & <b>Spells Known</b> & <b>Stamina</b> & <b>Aether</b> & <b>Aether Limit</b> \\
- 1st   & +2  & Spellcasting, Arcane Approach & 4              & 2            & 1   & 4   & 2 \\
- 2nd   & +2  & Font of Magic                 & 4              & 3            & 1   & 8   & 3 \\
- 3rd   & +2  & Metamagic                     & 4              & 4            & 2   & 12   & 4 \\
- 4th   & +2  & Ability Score Improvement     & 5              & 5            & 2   & 16   & 5 \\
- 5th   & +3  & Practiced Aether Manipulation & 5              & 6            & 3   & 20   & 6 \\
- 6th   & +3  & Arcane Approach Feature, Extra Metamagic  & 5              & 7            & 3   & 24   & 7 \\
- 7th   & +3  & Disruption                    & 5              & 8            & 4   & 28   & 8 \\
- 8th   & +3  & Ability Score Improvement     & 5              & 9            & 4   & 32   & 9 \\
- 9th   & +4  & Extra Metamagic               & 5              & 10           & 5   & 36   & 10 \\
- 10th  & +4  & Arcane Backlash               & 6              & 11           & 5   & 40   & 11 \\
- 11th  & +4  & Dual Metamagic                & 6              & 12           & 6   & 44   & 12 \\
- 12th  & +4  & Ability Score Improvement, Extra Metamagic     & 6              & 12           & 6   & 48   & 13 \\
- 13th  & +5  & Arcane Secrets (1)  					 & 6              & 13           & 7   & 52   & 13 \\
- 14th  & +5  & Arcane Approach Feature       & 6              & 13           & 7   & 56   & 14 \\
- 15th  & +5  & Arcane Secrets (2), Extra Metamagic            & 6              & 14           & 8   & 60   & 14 \\
- 16th  & +5  & Ability Score Improvement     & 6              & 14           & 8   & 64   & 15 \\
- 17th  & +6  & Supreme Arcane Secrets        & 6              & 15           & 9   & 68   & 15 \\
- 18th  & +6  & Arcane Approach Feature       & 6              & 15           & 9   & 72   & 16 \\
- 19th  & +6  & Ability Score Improvement, Extra Metamagic     & 6              & 15           & 10   & 76   & 16 \\
- 20th  & +6  & Sorcerous Restoration         & 6              & 15           & 10   & 80   & 17 \\
-\end{DndTable}
-\end{figure*}
+<table class=".wide">
+	<thead>
+			<tr>
+					<th>Level</th>
+					<th>Proficiency</th>
+					<th>Features</th>
+					<th>Cantrips</th>
+					<th>Spells Known</th>
+					<th>Stamina</th>
+					<th>Aether</th>
+					<th>Aether Limit</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1st</td>
+					<td>+2</td>
+					<td>Spellcasting, Arcane Approach</td>
+					<td>4</td>
+					<td>2</td>
+					<td>1</td>
+					<td>4</td>
+					<td>2</td>
+			</tr>
+			<tr>
+					<td>2nd</td>
+					<td>+2</td>
+					<td>Font of Magic</td>
+					<td>4</td>
+					<td>3</td>
+					<td>1</td>
+					<td>8</td>
+					<td>3</td>
+			</tr>
+			<tr>
+					<td>3rd</td>
+					<td>+2</td>
+					<td>Metamagic</td>
+					<td>4</td>
+					<td>4</td>
+					<td>2</td>
+					<td>12</td>
+					<td>4</td>
+			</tr>
+			<tr>
+					<td>4th</td>
+					<td>+2</td>
+					<td>Ability Score Improvement</td>
+					<td>5</td>
+					<td>5</td>
+					<td>2</td>
+					<td>16</td>
+					<td>5</td>
+			</tr>
+			<tr>
+					<td>5th</td>
+					<td>+3</td>
+					<td>Practiced Aether Manipulation</td>
+					<td>5</td>
+					<td>6</td>
+					<td>3</td>
+					<td>20</td>
+					<td>6</td>
+			</tr>
+			<tr>
+					<td>6th</td>
+					<td>+3</td>
+					<td>Arcane Approach Feature, Extra Metamagic</td>
+					<td>5</td>
+					<td>7</td>
+					<td>3</td>
+					<td>24</td>
+					<td>7</td>
+			</tr>
+			<tr>
+					<td>7th</td>
+					<td>+3</td>
+					<td>Disruption</td>
+					<td>5</td>
+					<td>8</td>
+					<td>4</td>
+					<td>28</td>
+					<td>8</td>
+			</tr>
+			<tr>
+					<td>8th</td>
+					<td>+3</td>
+					<td>Ability Score Improvement</td>
+					<td>5</td>
+					<td>9</td>
+					<td>4</td>
+					<td>32</td>
+					<td>9</td>
+			</tr>
+			<tr>
+					<td>9th</td>
+					<td>+4</td>
+					<td>Extra Metamagic</td>
+					<td>5</td>
+					<td>10</td>
+					<td>5</td>
+					<td>36</td>
+					<td>10</td>
+			</tr>
+			<tr>
+					<td>10th</td>
+					<td>+4</td>
+					<td>Arcane Backlash</td>
+					<td>6</td>
+					<td>11</td>
+					<td>5</td>
+					<td>40</td>
+					<td>11</td>
+			</tr>
+			<tr>
+					<td>11th</td>
+					<td>+4</td>
+					<td>Dual Metamagic</td>
+					<td>6</td>
+					<td>12</td>
+					<td>6</td>
+					<td>44</td>
+					<td>12</td>
+			</tr>
+			<tr>
+					<td>12th</td>
+					<td>+4</td>
+					<td>Ability Score Improvement, Extra Metamagic</td>
+					<td>6</td>
+					<td>12</td>
+					<td>6</td>
+					<td>48</td>
+					<td>13</td>
+			</tr>
+			<tr>
+					<td>13th</td>
+					<td>+5</td>
+					<td>Arcane Secrets (1)</td>
+					<td>6</td>
+					<td>13</td>
+					<td>7</td>
+					<td>52</td>
+					<td>13</td>
+			</tr>
+			<tr>
+					<td>14th</td>
+					<td>+5</td>
+					<td>Arcane Approach Feature</td>
+					<td>6</td>
+					<td>13</td>
+					<td>7</td>
+					<td>56</td>
+					<td>14</td>
+			</tr>
+			<tr>
+					<td>15th</td>
+					<td>+5</td>
+					<td>Arcane Secrets (2), Extra Metamagic</td>
+					<td>6</td>
+					<td>14</td>
+					<td>8</td>
+					<td>60</td>
+					<td>14</td>
+			</tr>
+			<tr>
+					<td>16th</td>
+					<td>+5</td>
+					<td>Ability Score Improvement</td>
+					<td>6</td>
+					<td>14</td>
+					<td>8</td>
+					<td>64</td>
+					<td>15</td>
+			</tr>
+			<tr>
+					<td>17th</td>
+					<td>+6</td>
+					<td>Supreme Arcane Secrets</td>
+					<td>6</td>
+					<td>15</td>
+					<td>9</td>
+					<td>68</td>
+					<td>15</td>
+			</tr>
+			<tr>
+					<td>18th</td>
+					<td>+6</td>
+					<td>Arcane Approach Feature</td>
+					<td>6</td>
+					<td>15</td>
+					<td>9</td>
+					<td>72</td>
+					<td>16</td>
+			</tr>
+			<tr>
+					<td>19th</td>
+					<td>+6</td>
+					<td>Ability Score Improvement, Extra Metamagic</td>
+					<td>6</td>
+					<td>15</td>
+					<td>10</td>
+					<td>76</td>
+					<td>16</td>
+			</tr>
+			<tr>
+					<td>20th</td>
+					<td>+6</td>
+					<td>Sorcerous Restoration</td>
+					<td>6</td>
+					<td>15</td>
+					<td>10</td>
+					<td>80</td>
+					<td>17</td>
+			</tr>
+	</tbody>
+</table>
 
 <h3 class="subsection">Spellcasting</h3>
 
@@ -95,9 +310,9 @@
 
 <p>In addition, you use your Intelligence modifier when setting the saving throw DC for a arcanist spell you cast and when making an attack roll with one.</p>
 
-<b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier
+<p><b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier</p>
 
-<b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier
+<p><b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier</p>
 
 <h4 class="subsub">Spellcasting Focus</h4>
 
@@ -163,7 +378,7 @@
 
 <p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend an amount of AET equal to 1/2 the spell's cost to target a second creature in range with the same spell (1 AET if the spell is a cantrip).</p>
 
-<p>To be eligible, a spell must be incapable of targeting or directly affecting more than one creature at the spell's current level. For example, \nameref{spell:magic-missile} and \nameref{spell:scorching-ray} aren't eligible, but \nameref{spell:ray-of-frost} and \nameref{spell:produce-flame} are. Secondary effects, such as being hit by the bonus attack granted by \nameref{spell:haste} do not count as "directly affecting".</p>
+<p>To be eligible, a spell must be incapable of targeting or directly affecting more than one creature at the spell's current level. For example, <a href="../spells/allspells.html#magic-missile">magic missile</a> and <a href="../spells/allspells.html#scorching-ray">scorching ray</a> aren't eligible, but <a href="../spells/allspells.html#ray-of-frost">ray of frost</a> and <a href="../spells/allspells.html#produce-flame">produce flame</a> are. Secondary effects, such as being hit by the bonus attack granted by <a href="../spells/allspells.html#haste">haste</a> do not count as "directly affecting".</p>
 
 <h3 class="subsection">Ability Score Improvement</h3>
 
@@ -206,87 +421,280 @@
 <h4 class="subsub">Awakened Mage</h4>
 <p>Awakened mages come into their power naturally, without substantial official training. Their power flows from within, on its own, but requires self-mastery and will to control. This gives them larger reserves of power, at the cost of bodily stress. </p>
 
-\subparagraph*{Extra Training}
+<h5>Extra Training</h5>
 <p>Since you didn't have to spend time in your early years mastering your magic, you have picked up other tricks. You gain proficiency with light armor and one martial weapon of your choice. You can cast spells while wearing light armor.</p>
 
-\subparagraph*{Mind over Matter}
+<h5>Mind over Matter</h5>
 <p>Starting at 6th level, you've learned to fuel your metamagic with your bodily reserves. You can expend STA instead of AET to pay the cost of adding metamagic to your spells. The total cost must still be within your aether limit.</p>
 
-\subparagraph*{Limit Break}
+<h5>Limit Break</h5>
 <p>Starting at 14th level, when you use your Mind over Matter feature, you can add metamagic even if that would increase the total cost above your aether limit. Once you do so once, you cannot use this feature again until you finish a long rest or unless you accept a level of exhaustion after casting the spell.</p>
 
-\subparagraph*{Sorcerous Restoration}
+<h5>Sorcerous Restoration</h5>
 <p>Starting at 18th level, you no longer suffer exhaustion when using your Limit Break ability.</p>
 
 <h4 class="subsub">Book Mage</h4>
 <p>Book mages must laboriously learn their power through mental training and meditation. They generally apprentice to other book mages for years before they cast their first spell. In return, they can "offload" some of their spells into written form, enabling them to prepare a much larger array of spells.</p>
 
-\subparagraph*{Arcane Learning}
+<h5>Arcane Learning</h5>
 <p>You gain proficiency in Arcana. If you already have proficiency, you gain expertise instead.</p>
 
-\subparagraph*{Written Magic}
+<h5>Written Magic</h5>
 <p>As part of your training, you have assembled a spellbook that holds records of your spells and invested part of your self into it. This book is immune to all damage while it is on your person and cannot be separated from you if you are conscious. Your book counts as a spell focus for your spells.</p>
 
 <p>While you are preparing spells and have the book open in front of you, you can invest a number of spells equal to your proficiency bonus into the book. These spells no longer count against your prepared spells limit, but you can only cast them with the book in one hand.</p>
 
-\begin{figure}
-	\begin{DndComment}{Spellbooks and You}
-		The basic assumption is that the spellbook is special. The form it takes is up to you and has no mechanical effect, but the default is that it is a book. To lose it, you have to have it out of your possession. Generally, this shouldn't happen under "normal" conditions. If you're captured/imprisoned, then your spellbook may be taken.
-	\end{DndComment}
-\end{figure}
+<div class="comment">
+	<h5>Spellbooks and you</h5>
+	<p>The basic assumption is that the spellbook is special. The form it takes is up to you and has no mechanical effect, but the default is that it is a book. To lose it, you have to have it out of your possession. Generally, this shouldn't happen under "normal" conditions. If you're captured/imprisoned, then your spellbook may be taken.</p>
+</div>{Spellbooks and You}
 
-\subparagraph*{Focused Metamagic}
+<h5>Focused Metamagic</h5>
 <p>Starting at 6th level, you have specialized in one particular metamagic. Choose one metamagic you know. Its cost decreases by 1 AET. If this reduces its cost to 0 AET, you can apply a second metamagic alongside this focused metamagic.</p>
 
-\subparagraph*{Extended Legendary Magic}
+<h5>Extended Legendary Magic</h5>
 <p>Starting at 14th level, you learn an additional Legendary effect of a level you could learn at this level using your Arcane Secrets ability.</p>
 
-\subparagraph*{Repeated Legendary Magic}
+<h5>Repeated Legendary Magic</h5>
 <p>Starting at 18th level, you can use any of your regular Legendary Effects twice per long rest instead of once. Once you cast the same Legendary Effect twice, you cannot cast any others twice until you finish a long rest.</p>
 
 <h3 class="subsection">Arcanist Spell List</h3>
 <p>The Arcanist Spell List table contains a list of the spells available to all Arcanists, ordered by aether cost.</p>
 
-\begin{figure*}[htb]
-\begin{DndTable}[header=Arcanist Spell List]{rlXrl}
-	<b>Aether Cost</b> & <b>Name</b> & & <b>Aether Cost</b> & <b>Name</b> \\
-  0 & \nameref{spell:acid-burst} & & 3 & \nameref{spell:scorching-ray}\\
-  0 & \nameref{spell:dancing-lights} & & 3 & \nameref{spell:shatter} \\
-  0 & \nameref{spell:grave-touch} & & 3 & \nameref{spell:web}\\
-  0 & \nameref{spell:mage-hand} & & 4 & \nameref{spell:hold-person}\\
-  0 & \nameref{spell:message} & & 4 & \nameref{spell:vampiric-touch}\\
-  0 & \nameref{spell:minor-illusion} & & 5 & \nameref{spell:blink}\\
-  0 & \nameref{spell:prestidigitation} & & 5 & \nameref{spell:fear}\\
-  0 & \nameref{spell:produce-flame} & & 5 & \nameref{spell:fireball}\\
-  0 & \nameref{spell:ray-of-frost} & & 5 & \nameref{spell:haste}\\
-  0 & \nameref{spell:shocking-grasp} & & 5 & \nameref{spell:hallucinatory-terrain}\\
-  2 & \nameref{spell:burning-hands} & & 5 & \nameref{spell:hypnotic-pattern}\\
-  2 & \nameref{spell:color-spray} & & 5 & \nameref{spell:lightning-bolt}\\
-  2 & \nameref{spell:disguise-self} & & 5 & \nameref{spell:major-image}\\
-  2 & \nameref{spell:expeditious-retreat} & & 5 & \nameref{spell:protection-from-energy}\\
-  2 & \nameref{spell:false-life} & & 5 & \nameref{spell:slow}\\
-  2 & \nameref{spell:feather-fall} & & 5 & \nameref{spell:stinking-cloud}\\
-  2 & \nameref{spell:flash-freeze} & & 5 & \nameref{spell:unbind}\\
-  2 & \nameref{spell:fog-cloud} & & 6 & \nameref{spell:blight} \\
-  2 & \nameref{spell:grease} & & 7 & \nameref{spell:ice-storm}\\
-  2 & \nameref{spell:mage-armor} & & 8 & \nameref{spell:arcane-eye}\\
-  2 & \nameref{spell:magic-missile} & & 8 & \nameref{spell:black-tentacles}\\
-  2 & \nameref{spell:shield} & & 8 & \nameref{spell:confusion}\\
-  2 & \nameref{spell:silent-image} & & 8 & \nameref{spell:conjure-mephits}\\
-  2 & \nameref{spell:sleep} & & 8 & \nameref{spell:dimension-door}\\
-  2 & \nameref{spell:thunderwave} & & 8 & \nameref{spell:faithful-hound}\\
-  3 & \nameref{spell:acid-arrow} & & 8 & \nameref{spell:greater-invisibility}\\
-  3 & \nameref{spell:alter-self} & & 8 & \nameref{spell:hallucinatory-terrain}\\
-  3 & \nameref{spell:blindness-deafness} & & 8 & \nameref{spell:phantasmal-killer}\\
-  3 & \nameref{spell:blur} & & 8 & \nameref{spell:wall-of-fire}\\
-  3 & \nameref{spell:darkness} & & 10 & \nameref{spell:cone-of-cold}\\
-  3 & \nameref{spell:detect-thoughts} & & 12 & \nameref{spell:conjure-elemental}\\
-  3 & \nameref{spell:enlarge-reduce} & & 12 & \nameref{spell:hold-monster}\\
-  3 & \nameref{spell:invisibility} & & 12 & \nameref{spell:telekinesis}\\
-  3 & \nameref{spell:levitate} & &  12 & \nameref{spell:wall-of-ice}\\
-  3 & \nameref{spell:mirror-image} & & 13 & \nameref{spell:chain-lightning}\\
-  3 & \nameref{spell:misty-step} & & 14 & \nameref{spell:cloudkill}\\
-  3 & \nameref{spell:ray-of-enfeeblement} & & 15 & \nameref{spell:wall-of-force}
-\end{DndTable}
-\end{figure*}
+<table>
+	<tr>
+			<td>Aether Cost</td>
+			<td>Name</td>
+			<td class="flex-column"></td>
+			<td>Aether Cost</td>
+			<td>Name</td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#acid-burst">acid burst</a></td>
+			<td class="flex-column"></td>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#scorching-ray">scorching ray</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#dancing-lights">dancing lights</a></td>
+			<td class="flex-column"></td>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#shatter">shatter</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#grave-touch">grave touch</a></td>
+			<td class="flex-column"></td>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#web">web</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#mage-hand">mage hand</a></td>
+			<td>4</td>
+			<td><a href="../spells/allspells.html#hold-person">hold person</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#message">message</a></td>
+			<td>4</td>
+			<td><a href="../spells/allspells.html#vampiric-touch">vampiric touch</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#minor-illusion">minor illusion</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#blink">blink</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#prestidigitation">prestidigitation</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#fear">fear</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#produce-flame">produce flame</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#fireball">fireball</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#ray-of-frost">ray of frost</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#haste">haste</a></td>
+	</tr>
+	<tr>
+			<td>0</td>
+			<td><a href="../spells/allspells.html#shocking-grasp">shocking grasp</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#hallucinatory-terrain">hallucinatory terrain</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#burning-hands">burning hands</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#hypnotic-pattern">hypnotic pattern</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#color-spray">color spray</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#lightning-bolt">lightning bolt</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#disguise-self">disguise self</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#major-image">major image</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#expeditious-retreat">expeditious retreat</a></td>
+			<td>5</td>
+			<td><a href="../spells/spell?.html#protection-from-energy">protection from energy</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#false-life">false life</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#slow">slow</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#feather-fall">feather fall</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#stinking-cloud">stinkingcloud</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#flash-freeze">flash freeze</a></td>
+			<td>5</td>
+			<td><a href="../spells/allspells.html#unbind">unbind</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#fog-cloud">fog cloud</a></td>
+			<td>6</td>
+			<td><a href="../spells/allspells.html#blight">blight</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#grease">grease</a></td>
+			<td>7</td>
+			<td><a href="../spells/allspells.html#ice-storm">ice storm</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#mage-armor">mage armor</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#arcane-eye">arcane eye</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#magic-missile">magic missile</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#black-tentacles">black tentacles</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#shield">shield</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#confusion">confusion</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#silent-image">silent image</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#conjure-mephits">conjure mephits</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#sleep">sleep</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#dimension-door">dimension door</a></td>
+	</tr>
+	<tr>
+			<td>2</td>
+			<td><a href="../spells/allspells.html#thunderwave">thunderwave</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#faithful-hound">faithful hound</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#acid-arrow">acid arrow</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#greater-invisibility">greater invisibility</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#alter-self">alter self</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#hallucinatory-terrain">hallucinatory terrain</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#blindness-deafness">blindness/deafness</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#phantasmal-killer">phantasmal killer</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/spell-a-g.html#blur">blur</a></td>
+			<td>8</td>
+			<td><a href="../spells/allspells.html#wall-of-fire">wall of fire</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#darkness">darkness</a></td>
+			<td>10</td>
+			<td><a href="../spells/allspells.html#cone-of-cold">cone of cold</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#detect-thoughts">detect thoughts</a></td>
+			<td>12</td>
+			<td><a href="../spells/allspells.html#conjure-elemental">conjure elemental</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/spell-a-g.html#enlarge-reduce">enlarge/reduce</a></td>
+			<td>12</td>
+			<td><a href="../spells/allspells.html#hold-monster">hold monster</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#invisibility">invisibility</a></td>
+			<td>12</td>
+			<td><a href="../spells/allspells.html#telekinesis">telekinesis</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#levitate">levitate</a></td>
+			<td>12</td>
+			<td><a href="../spells/allspells.html#wall-of-ice">wall of ice</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#mirror-image">mirror image</a></td>
+			<td>13</td>
+			<td><a href="../spells/allspells.html#chain-lightning">chain lightning</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#misty-step">misty step</a></td>
+			<td>14</td>
+			<td><a href="../spells/allspells.html#cloudkill">cloudkill</a></td>
+	</tr>
+	<tr>
+			<td>3</td>
+			<td><a href="../spells/allspells.html#ray-of-enfeeblement">ray of enfeeblement</a></td>
+			<td>15</td>
+			<td><a href="../spells/allspells.html#wall-of-force">wall of force</a></td>
+	</tr>
+</table>
+</body>
+</html>
 

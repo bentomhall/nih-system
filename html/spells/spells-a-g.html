@@ -1,97 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIH Appendixes</title>
+<link href="../main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="spell.css">
+</head>
+<body>
+<header>
+<div>Pages:</div>
+<div><a href="changelog.html">Changelog</a></div>
+<div><a href="introduction.html">Introduction</a></div>
+<div><a href="core-system.html">Core System</a></div>
+<div><a href="character-creation.html">Character Creation</a></div>
+<div><a href="equipment.html">Equipment</a></div>
+<div><a href="spells.html">Incantations, Spells, and Legendary Effects</a> > <a href="#">Spells A-G</a></div>
+<div><a href="skill-tricks.html">Skill Tricks</a></div>
+<div><a href="items.html">Magic Items</a></div>
+<div><a href="monsters.html">Monsters</a></div>
+<div><a href="appendixes.html">Appendixes</a></div>
+</header>
+
 <h3 class="subsection">Spells (A)</h3>
 
-\DndSpellHeader{Acid Arrow \label{spell:acid-arrow}}
-{3 AET, 1T, Acid, Attack}
-{1 action}
-{90 feet}
-{V, S, M (powdered rhubarb leaf and an adder's stomach)}
-{Instantaneous}
-
-<p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d6 acid damage immediately and 2d6 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.</p>
+<div class="spell-card" id="acid-arrow">
+	<div class="spell-header">
+		<div class="cost">3</div>
+		<div class="components">V, S, M</div>
+		<div class="spell-name">Acid Arrow</div>
+		<div class="cast-time">A</div>
+		<div class="targets">1 target/90 ft</div>
+		<div class="duration">Instantaneous</div>
+	</div>
+	<p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d6 acid damage immediately and 2d6 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.</p>
 
 <p><b>Overcast</b> When you cast this spell using more than 3 AET, the damage (both intial and subsequent) increases by 1d6 for every 2 AET you spend above 3.</p>
+</div>
 
-\DndSpellHeader{Acid Burst \label{spell:acid-burst}}
-{Cantrip, 1T, Acid, CON}
-{1 action}
-{60 feet}
-{V, S}
-{Instantaneous}
+<div class="spell-card" id="acid-burst">
+	<div class="spell-header">
+		<div class="cost">0</div>
+		<div class="components">V, S</div>
+		<div class="spell-name">Acid Burst</div>
+		<div class="cast-time">A</div>
+		<div class="targets">1 or 2 targets/60 ft</div>
+		<div class="duration">Instantaneous</div>
+	</div>
+	<p>Acidic liquid envelops a target you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d8 damage immediately and half as much at the beginning of their next turn.</p>
+	 <p><b>Overcast</b> This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+</div>
 
-<p>Acidic liquid envelops a target you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d8 damage immediately and half as much at the beginning of their next turn.</p>
+<div class="spell-card" id="aid">
+	<div class="spell-header">
+		<div class="cost">3</div>
+		<div class="components">V, S, M</div>
+		<div class="spell-name">Aid</div>
+		<div class="cast-time">A</div>
+		<div class="targets">3 allies/30 ft</div>
+		<div class="duration">8 hours</div>
+	</div>
+	<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p>
+	<p><b>Overcast</b> When you cast this spell using 4 or more AET, a target's hit points increase by an additional 5 for each 2 AET above 3.</p>
+</div>
 
-<p>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+<div class="spell-card" id="alter-self">
+	<div class="spell-header">
+		<div class="cost">3</div>
+		<div class="components">V, S</div>
+		<div class="spell-name">Alter self</div>
+		<div class="cast-time">A</div>
+		<div class="targets">Self</div>
+		<div class="duration">Concentration, up to 1 hour</div>
+	</div>
+	<p>You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</p>
 
+	<p><b>Aquatic Adaptation</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</p>
 
-\DndSpellHeader{Aid \label{spell:aid}}
-{3 AET, 3T, Defense}
-{1 action}
-{30 feet}
-{V, S, M (a tiny strip of white cloth)}
-{8 hours}
+	<p><b>Change Appearance</b> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.</p>
 
-<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p>
+	<p><b>Natural Weapons</b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.</p>
 
-<p><b>Overcast</b> When you cast this spell using 4 or more AET, a target's hit points increase by an additional 5 for each 2 AET above 3.</p>
+	<p><b>Overcast</b> For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.</p>
+</div>
 
+<div class="spell-card" id="antilife-shell">
+	<div class="spell-header">
+		<div class="cost">10</div>
+		<div class="components">V, S </div>
+		<div class="spell-name">Antilife Shell</div>
+		<div class="cast-time">A </div>
+		<div class="targets">Self/10-foot radius</div>
+		<div class="duration">Concentration, up to 1 hour</div>
+	</div>
+	<p>A shimmering barrier extends out from you in a 10 foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.</p>
 
-\DndSpellHeader{Alter Self \label{spell:alter-self}}
-{3 AET, Self, Shapechanging}
-{1 action}
-{Self}
-{V, S}
-{Concentration, up to 1 hour}
+	<p>The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.</p>
+	
+	<p>If you move so that an affected creature is forced to pass through the barrier, the spell ends.</p>
+</div>
 
-<p>You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</p>
+<div class="spell-card" id="arcane-eye">
+	<div class="spell-header">
+		<div class="cost">8</div>
+		<div class="components">V, S, M </div>
+		<div class="spell-name">Arcane Eye</div>
+		<div class="cast-time">A </div>
+		<div class="targets">---/30 feet</div>
+		<div class="duration">Concentration, up to 1 hour</div>
+	</div>
+	<p>You create an invisible, magical eye within range that hovers in the air for the duration.</p>
 
-<p><b>Aquatic Adaptation</b> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</p>
+	<p>You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.</p>
 
-<p><b>Change Appearance</b> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.</p>
+	<p>As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>
 
-<p><b>Natural Weapons</b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.</p>
-
-<p><b>Overcast</b> For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.</p>
-
-
-\DndSpellHeader{Antilife Shell \label{spell:antilife-shell}}
-{10 AET, CB2/aura, Defensive}
-{1 action}
-{Self (10-foot radius)}
-{V, S}
-{Concentration, up to 1 hour}
-
-<p>A shimmering barrier extends out from you in a 10 foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.</p>
-
-<p>The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.</p>
-
-<p>If you move so that an affected creature is forced to pass through the barrier, the spell ends.</p>
-
-
-\DndSpellHeader{Arcane Eye \label{spell:arcane-eye}}
-{8 AET, scouting}
-{1 action}
-{30 feet}
-{V, S, M (a bit of bat fur)}
-{Concentration, up to 1 hour}
-
-<p>You create an invisible, magical eye within range that hovers in the air for the duration.</p>
-
-<p>You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.</p>
-
-<p>As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>
+</div>
 
 <h3 class="subsection">Spells (B)</h3>
 
-\DndSpellHeader{Bane \label{spell:bane}}
-{2 AET, 3T, Debuff}
-{1 action}
-{30 feet}
-{V, S, M (a drop of blood)}
-{Concentration, up to 1 minute}
+<div class="spell-card" id="bane">
+	<div class="spell-header">
+		<div class="cost">2</div>
+		<div class="components">V, S, M </div>
+		<div class="spell-name">Bane </div>
+		<div class="cast-time">A </div>
+		<div class="targets">3 creatures/30 ft</div>
+		<div class="duration">Concentration, up to 1 minute</div>
+	</div>
+	<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
 
-<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
-
-<p><b>Overcast</b> When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.</p>
+	<p><b>Overcast</b> When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.</p>
+</div>
 
 
 \DndSpellHeader{Banishment \label{spell:banishment}}

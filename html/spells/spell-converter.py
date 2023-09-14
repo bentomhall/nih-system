@@ -4,7 +4,7 @@ nameRe = re.compile(r"\DndSpellHeader{([A-Za-z ]*).*}")
 costRe = re.compile(r"{([0-9]*? AET).*}")
 class Spell(object):
 	def __init__(self):
-		self.cost = -1
+		self.cost = 0
 		self.components = ""
 		self.time = ""
 		self.range = ""
@@ -71,14 +71,14 @@ def process_spell(chunk):
 	return s
 
 if __name__ == "__main__":
-	ifile = r"spells-a-g.html"
+	ifile = r"spells-q-z.html"
 	spells=[]
 	with open(ifile, 'r', encoding='utf-8') as input:
 		lines = input.readlines()
 		chunks = reversed(chunk(lines))
 		for ch in chunks:
 			spells.append(process_spell(ch).make_html())
-	with open("spell-blocks-a-g.html", 'w') as output:
+	with open("spell-blocks-q-z.html", 'w') as output:
 		for spell in spells:
 			output.write(spell)
 			output.write('\n')

@@ -1,15 +1,17 @@
 :root {
-    --main-color: cadetblue;
-    --comment-color: rgb(169, 109, 169);
-    --tan: tan;
+    --main-color: #66796B;
+    --comment-color: #BA8E7A;
+    --main-background: #EFDFCC;
+    --table-dark: #D7A184;
+    --table-light: #D4C2AD;
 }
 
 body {
-    padding: 2em;
+    background-color: var(--main-background);
 }
 
 table {
-    background-color: var(--tan);
+    background-color: var(--table-light);
     border-collapse: collapse;
 }
 
@@ -23,11 +25,15 @@ table.narrow {
 
 td, th {
     text-align: left;
-    padding: 0.5em 1em 0.5em 0em;
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+
+tr > th {
+    background-color: var(--main-color);
 }
 
 tr:nth-child(even) {
-    background-color: var(--main-color);
+    background-color: var(--table-dark);
 }
 
 header {
@@ -51,6 +57,23 @@ figcaption {
 	text-align: center;
 }
 
+h3 {
+    margin-bottom: 0.5em;
+}
+
+.divider {
+    clear: both;
+    background-color: var(--main-color);
+}
+
+.container {
+    padding: 2em;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+}
+
 .comment {
     background-color: var(--comment-color);
     padding:1em;
@@ -61,7 +84,7 @@ figcaption {
 }
 
 .sidebar {
-    background-color: var(--main-color);
+    background-color: var(--comment-color);
     float: left;
     max-width: 30%;
     margin-right: 2em;

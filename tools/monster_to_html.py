@@ -132,7 +132,7 @@ class MonsterBlock(object):
 		return
 
 	def add_variant(self, line: str):
-		blockRe = r'{(.*?)} (.*?)'
+		blockRe = r'{(.*?)} (.*?)$'
 		match = re.search(blockRe, line)
 		if match:
 			v = MonsterAction(match.group(1))
@@ -165,14 +165,15 @@ class MonsterAttack(MonsterAction):
 	def to_html(self):
 		output = [f'<p class="monster-attack"><b>{self.name}.</b>']
 		output.append(f'<em>{self.distance.title()} {self.type.title()} Attack.</em>')
-		output.append(f'<em>{self.mod} to hit, range {self.reach} ft.')
+		output.append(f'<em>{self.mod} to hit, range {self.reach} ft.</em>')
 		output.append(f'<em>Hit:</em>')
 		output.append(f'{self.dmg} {self.dmg_type}')
-		if (self.plus_dmg != ""): 
+		if self.plus_dmg: 
 			output.append(f'plus {self.plus_dmg} {self.plus_dmg_type}')
-		if (self.extra != ""):
+		if self.extra:
 			output.append(self.extra)
-		return " ".join(output) + ('.' if not self.extra else '')
+		output.append('</p>')
+		return " ".join(output)
 	
 	def from_data(self, lines: list[str]):
 		dmgRe = re.compile(r'\DndDice{(.*?)}')
@@ -219,7 +220,7 @@ def process(lines: list[str]) -> list[str]:
 			in_legendary: False
 			in_variants: False
 			current = MonsterBlock()
-			match = re.search(r'{.*?}{(.*?)}', line)
+			match = re.search(r'{.*?}.*?{(.*?)}', line)
 			if match:
 				current.name = match.group(1)
 		elif not line or not line.strip():
@@ -302,4 +303,30 @@ if __name__ == "__main__":
 		lines = ifile.readlines()
 		blocks = process(lines)
 	with open(f'{basename}_c.html', 'w') as ofile:
-		ofile.writelines(blocks)
+		preamble="""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIH Appendixes</title>
+<link href="main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="monsters.css">
+</head>
+<body>
+<header>
+<div>Pages:</div>
+<div><a href="changelog.html">Changelog</a></div>
+<div><a href="introduction.html">Introduction</a></div>
+<div><a href="core-system.html">Core System</a></div>
+<div><a href="character-creation.html">Character Creation</a></div>
+<div><a href="equipment.html">Equipment</a></div>
+<div><a href="spells.html">Incantations, Spells, and Legendary Effects</a></div>
+<div><a href="skill-tricks.html">Skill Tricks</a></div>
+<div><a href="items.html">Magic Items</a></div>
+<div><a href="monsters.html">Monsters</a></div>
+<div><a href="appendixes.html">Appendixes</a></div>
+</header>"""
+		output_lines = [preamble]
+		output_lines.extend(blocks)
+		output_lines.append('</body></html>')
+		ofile.writelines(output_lines)

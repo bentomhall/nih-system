@@ -1,119 +1,126 @@
-<h2 class="section">Plants</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIH Appendixes</title>
+<link href="main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="monsters.css">
+</head>
+<body>
+<header>
+<div>Pages:</div>
+<div><a href="changelog.html">Changelog</a></div>
+<div><a href="introduction.html">Introduction</a></div>
+<div><a href="core-system.html">Core System</a></div>
+<div><a href="character-creation.html">Character Creation</a></div>
+<div><a href="equipment.html">Equipment</a></div>
+<div><a href="spells.html">Incantations, Spells, and Legendary Effects</a></div>
+<div><a href="skill-tricks.html">Skill Tricks</a></div>
+<div><a href="items.html">Magic Items</a></div>
+<div><a href="monsters.html">Monsters</a></div>
+<div><a href="appendixes.html">Appendixes</a></div>
+</header><h2 class="section">Plants</h2>
 <p>Most plants are not a threat and thus do not have stat blocks; things like toxic molds, poison thistles, etc are hazards, not creatures. But in a fantasy world, there are certainly animate plants. They are detailed here.</p>
-
 <h3 class="subsection">Awakened Shrub</h3>
-\begin{DndMonster}{Awakened Shrub}
-\DndMonsterType{Small plant}
-\DndMonsterBasics[armor-class={9}, hit-points={10 (3d6)}, speed={20 ft.}]
-\MonsterStats{-4}{-1}{+0}{+0}{+0}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={1/8:1/8}]
-\DndMonsterAction{False Appearance} While the shrub remains motionless, it is indistinguishable from a normal shrub.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Rake,
-	distance=melee,
-	type=weapon,
-	mod=+1,
-	reach=5,
-	dmg=\DndDice{1d4 - 1},
-	dmg-type=slashing
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Awakened Tree}
-\DndMonsterType{Huge plant}
-\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d12 + 14)}, speed={20 ft.}]
-\MonsterStats{+4}{-2}{+2}{+0}{+0}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 10}, languages={one language known by its creator}, challenge={3:2}]
-\DndMonsterAction{False Appearance} While the tree remains motionless, it is indistinguishable from a normal tree.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Slam,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=10,
-	dmg=\DndDice{3d6 + 4},
-	dmg-type=bludgeoning
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Fungus, Violet}
-	\DndMonsterType{Medium plant}
-	\DndMonsterBasics[armor-class={5}, hit-points={18 (4d8)}, speed={5 ft.}]
-	\MonsterStats{-4}{-5}{+0}{-5}{-4}{-5}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, deafened, frightened}, senses={blindsight 30 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={1/4:1/8}]
-	\DndMonsterAction{False Appearance} While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The fungus makes 1d4 Rotting Touch attacks.
-	\DndMonsterAttack[
-		name=Rotting Touch,
-		distance=melee,
-		type=weapon,
-		mod=+2,
-		reach=10,
-		dmg=\DndDice{1d8},
-		dmg-type=necrotic
-	]
-\end{DndMonster}
-
-\begin{DndMonster}{Shambling Mound}
-	\DndMonsterType{Large plant}
-	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={136 (16d10 + 48)}, speed={20 ft., swim 20 ft.}]
-	\MonsterStats{+4}{-1}{+3}{-3}{+0}{-3}
-	\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={lightning}, damage-resistances={cold, fire}, damage-vulnerabilities={}, condition-immunities={blinded, deafened, exhaustion}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 10}, languages={—}, challenge={5:8}]
-	\DndMonsterAction{Lightning Absorption} Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.
-	\DndMonsterAttack[
-		name=Slam,
-		distance=melee,
-		type=weapon,
-		mod=+7,
-		reach=5,
-		dmg=\DndDice{2d8 + 4},
-		dmg-type=bludgeoning
-	]
-	\DndMonsterAction{Engulf}
-	The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
-\end{DndMonster}
-
-\begin{DndMonster}{Treant}
-	\DndMonsterType{Huge plant}
-	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={150 (13d12 + 66)}, speed={30 ft.}]
-	\MonsterStats{+6}{-1}{+5}{+1}{+3}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={fire}, condition-immunities={}, senses={passive Perception 13}, languages={Common, Metsae, Sylvan}, challenge={8:9}]
-	\DndMonsterAction{False Appearance} While the treant remains motionless, it is indistinguishable from a normal tree.
-	
-	\DndMonsterAction{Siege Monster} The treant deals double damage to objects and structures.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The treant makes three slam attacks.
-	\DndMonsterAttack[
-		name=Slam,
-		distance=melee,
-		type=weapon,
-		mod=+10,
-		reach=5,
-		dmg=\DndDice{3d6 + 6},
-		dmg-type=bludgeoning
-	]
-	\DndMonsterAttack[
-		name=Rock,
-		distance=ranged,
-		type=weapon,
-		mod=+10,
-		range=60/180,
-		dmg=\DndDice{4d10 + 6},
-		dmg-type=bludgeoning
-	]
-	\DndMonsterAction{Animate Trees}
-	The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
-
-	\DndMonsterSection{Variants}
-	\DndMonsterAction{Spellwarper} These treants have been warped by wild magic and that still echoes in their branches. Instead of <b>Animate Trees</b>, they have <b>Spell Echo</b>: When a creature casts a spell of aether cost 12 or lower within 30 feet of them, they can replicate the spell as a reaction, using the spell's original modifiers (including DC and spell attack modifier as appropriate) but choosing new targets. This increases their Offensive rating by 2.
-\end{DndMonster}
+<div class="monster">
+<h3 class="monster-name">Awakened Shrub</h3>
+<div class="monster-summary">
+<p><em>Small plant</em></p>
+<div class="monster-basics"><div>9 AC</div><div>10 (3d6) HP</div><div>Speed: 20 ft.</div></div>
+<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>-4</div><div>-1</div><div>+0</div><div>+0</div><div>+0</div><div>-2</div></div>
+<div class="monster-details">
+<p><b>Senses:</b> passive Perception 10</p>
+<p><b>Languages:</b> one language known by its creator</p>
+<p><b>Ratings:</b> 1/8:1/8</p></div>
+<p><b>Damage Resistances</b> piercing</p>
+<p><b>Damage Vulnerabilities</b> fire</p>
+</div>
+<div class="monster-action"><p><b>False Appearance.</b></p>
+<p>While the shrub remains motionless, it is indistinguishable from a normal shrub.</p></div>
+<h3>Actions</h3>
+<p class="monster-attack"><b>Rake.</b> <em>Melee Weapon Attack.</em> <em>+1 to hit, range 5 ft.</em> <em>Hit:</em> 1d4 - 1  </p>
+</div><div class="monster">
+<h3 class="monster-name">Awakened Tree</h3>
+<div class="monster-summary">
+<p><em>Huge plant</em></p>
+<div class="monster-basics"><div>13 (natural armor) AC</div><div>59 (7d12 + 14) HP</div><div>Speed: 20 ft.</div></div>
+<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>-2</div><div>+2</div><div>+0</div><div>+0</div><div>-2</div></div>
+<div class="monster-details">
+<p><b>Senses:</b> passive Perception 10</p>
+<p><b>Languages:</b> one language known by its creator</p>
+<p><b>Ratings:</b> 3:2</p></div>
+<p><b>Damage Resistances</b> bludgeoning, piercing</p>
+<p><b>Damage Vulnerabilities</b> fire</p>
+</div>
+<div class="monster-action"><p><b>False Appearance.</b></p>
+<p>While the tree remains motionless, it is indistinguishable from a normal tree.</p></div>
+<h3>Actions</h3>
+<p class="monster-attack"><b>Slam.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 10 ft.</em> <em>Hit:</em> 3d6 + 4  </p>
+</div><div class="monster">
+<h3 class="monster-name">Fungus, Violet</h3>
+<div class="monster-summary">
+<p><em>Medium plant</em></p>
+<div class="monster-basics"><div>5 AC</div><div>18 (4d8) HP</div><div>Speed: 5 ft.</div></div>
+<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>-4</div><div>-5</div><div>+0</div><div>-5</div><div>-4</div><div>-5</div></div>
+<div class="monster-details">
+<p><b>Senses:</b> blindsight 30 ft. (blind beyond this radius), passive Perception 6</p>
+<p><b>Languages:</b> —</p>
+<p><b>Ratings:</b> 1/4:1/8</p></div>
+<p><b>Condition Immunities</b> blinded, deafened, frightened</p>
+</div>
+<div class="monster-action"><p><b>False Appearance.</b></p>
+<p>While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.</p></div>
+<h3>Actions</h3>
+<div class="monster-action"><p><b>Multiattack.</b></p>
+<p>The fungus makes 1d4 Rotting Touch attacks.</p></div>
+<p class="monster-attack"><b>Rotting Touch.</b> <em>Melee Weapon Attack.</em> <em>+2 to hit, range 10 ft.</em> <em>Hit:</em> 1d8  </p>
+</div><div class="monster">
+<h3 class="monster-name">Shambling Mound</h3>
+<div class="monster-summary">
+<p><em>Large plant</em></p>
+<div class="monster-basics"><div>15 (natural armor) AC</div><div>136 (16d10 + 48) HP</div><div>Speed: 20 ft., swim 20 ft.</div></div>
+<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>-1</div><div>+3</div><div>-3</div><div>+0</div><div>-3</div></div>
+<div class="monster-details">
+<p><b>Senses:</b> blindsight 60 ft. (blind beyond this radius), passive Perception 10</p>
+<p><b>Languages:</b> —</p>
+<p><b>Ratings:</b> 5:8</p></div>
+<p><b>Damage Immunities</b> lightning</p>
+<p><b>Damage Resistances</b> cold, fire</p>
+<p><b>Condition Immunities</b> blinded, deafened, exhaustion</p>
+</div>
+<div class="monster-action"><p><b>Lightning Absorption.</b></p>
+<p>Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.</p></div>
+<h3>Actions</h3>
+<div class="monster-action"><p><b>Multiattack.</b></p>
+<p>The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.</p></div>
+<p class="monster-attack"><b>Slam.</b> <em>Melee Weapon Attack.</em> <em>+7 to hit, range 5 ft.</em> <em>Hit:</em> 2d8 + 4  </p>
+<div class="monster-action"><p><b>Engulf.</b></p>
+<p>The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.</p></div>
+</div><div class="monster">
+<h3 class="monster-name">Treant</h3>
+<div class="monster-summary">
+<p><em>Huge plant</em></p>
+<div class="monster-basics"><div>16 (natural armor) AC</div><div>150 (13d12 + 66) HP</div><div>Speed: 30 ft.</div></div>
+<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+6</div><div>-1</div><div>+5</div><div>+1</div><div>+3</div><div>+1</div></div>
+<div class="monster-details">
+<p><b>Senses:</b> passive Perception 13</p>
+<p><b>Languages:</b> Common, Metsae, Sylvan</p>
+<p><b>Ratings:</b> 8:9</p></div>
+<p><b>Damage Vulnerabilities</b> fire</p>
+</div>
+<div class="monster-action"><p><b>False Appearance.</b></p>
+<p>While the treant remains motionless, it is indistinguishable from a normal tree.</p></div>
+<div class="monster-action"><p><b>Siege Monster.</b></p>
+<p>The treant deals double damage to objects and structures.</p></div>
+<h3>Actions</h3>
+<div class="monster-action"><p><b>Multiattack.</b></p>
+<p>The treant makes three slam attacks.</p></div>
+<p class="monster-attack"><b>Slam.</b> <em>Melee Weapon Attack.</em> <em>+10 to hit, range 5 ft.</em> <em>Hit:</em> 3d6 + 6  </p>
+<p class="monster-attack"><b>Rock.</b> <em>Melee Weapon Attack.</em> <em>+10 to hit, range 5 ft.</em> <em>Hit:</em> 4d10 + 6  </p>
+<div class="monster-action"><p><b>Animate Trees.</b></p>
+<p>The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.</p></div>
+<h3>Variants</h3>
+<div class="monster-action"><p><b>Spellwarper.</b></p>
+<p>These treants have been warped by wild magic and that still echoes in their branches. Instead of <b>Animate Trees</b>, they have <b>Spell Echo</b>: When a creature casts a spell of aether cost 12 or lower within 30 feet of them, they can replicate the spell as a reaction, using the spell's original modifiers (including DC and spell attack modifier as appropriate) but choosing new targets. This increases their Offensive rating by 2.</p></div>
+</div></body></html>

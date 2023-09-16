@@ -1,0 +1,103 @@
+:root {
+    --main-color: #66796B;
+    --comment-color: #BA8E7A;
+    --main-background: #EFDFCC;
+    --table-dark: #D7A184;
+    --table-light: #D4C2AD;
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+table {
+    background-color: var(--table-light);
+    border-collapse: collapse;
+}
+
+table.wide {
+    width: 100%;
+}
+
+table.narrow {
+    width: 50%;
+}
+
+td, th {
+    text-align: left;
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+
+tr > th {
+    background-color: var(--main-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-dark);
+}
+
+header {
+    display: flex;
+    flex: row no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: var(--main-color);
+}
+
+figure {
+	border: 1px solid var(--main-color);
+	width:fit-content;
+}
+
+figcaption {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+.divider {
+    clear: both;
+    background-color: var(--main-color);
+}
+
+.container {
+    padding: 2em;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+}
+
+.comment {
+    background-color: var(--comment-color);
+    padding:1em;
+    margin:1em 0em;
+    float: right;
+    max-width: 30%;
+    margin-left: 2em;
+}
+
+.sidebar {
+    background-color: var(--comment-color);
+    float: left;
+    max-width: 30%;
+    margin-right: 2em;
+}
+
+.no-marker {
+   list-style-type: none;
+   padding: 0px;
+}
+
+.external::before {
+    content: '⇨'
+}
+
+
+

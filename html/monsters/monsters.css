@@ -1,0 +1,32 @@
+.monster {
+	margin: 2em;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+.monster-summary {
+	background-color: lightgray;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+.monster-basics {
+	display: flex;
+	gap: 2em;
+}
+
+.monster-stats {
+	border: 1px solid black;
+	margin-top:0.5em;
+	padding: 4px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.verbatim {
+	font-family: 'Courier New', Courier, monospace;
+	padding-left: 1em;
+}
+

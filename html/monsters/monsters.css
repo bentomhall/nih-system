@@ -1,0 +1,23 @@
+.monster {
+	margin: 2em;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+.monster-summary {
+	background-color: lightgray;
+	border: 1px solid black;
+}
+
+.monster-basics {
+	display: flex;
+	justify-content: space-between;
+}
+
+.monster-stats {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+}
+

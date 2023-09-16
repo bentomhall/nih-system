@@ -45,19 +45,9 @@
 \begin{DndMonster}[width=\textwidth + 8pt]{Comiedar, Twisted}
 	\begin{multicols}{2}
 			\DndMonsterType{Large aberration}
-			\DndMonsterBasics[
-					armor-class = {17 (natural armor)},
-					hit-points = {\DndDice{18d10 + 36}},
-					speed = {10 ft., swim 40 ft.}
-			]
+			\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={18d10 + 36}, speed={10 ft., swim 40 ft.}]
 			\MonsterStats{+5}{-1}{+2 (+6)}{+4 (+8)}{+2 (+6)}{+5}
-			\DndMonsterDetails[
-					saving-throws = {},
-					skills = {Deception +13, History +12, Perception +10},
-					senses = {darkvision 120 ft., passive Perception 20},
-					languages = {all, telepathy 120 ft.},
-					challenge = {13:8}
-			]
+			\DndMonsterDetails[saving-throws={}, skills={Deception +13, History +12, Perception +10}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 20}, languages={all, telepathy 120 ft.}, challenge={13:8}]
 			\DndMonsterAction{Amphibious}
 			The comiedar can breathe air and water.
 	
@@ -69,11 +59,11 @@
 			\DndMonsterAction{Multiattack} The comiedar makes three tentacle attacks. 
 	
 			\DndMonsterMelee[
-					name = Tentacle,
-					mod = +9,
-					reach = 10ft.,
-					dmg = \DndDice{2d6+5},
-					dmg-type = bludgeoning,
+					name=Tentacle,
+					mod=+9,
+					reach=10ft.,
+					dmg=\DndDice{2d6+5},
+					dmg-type=bludgeoning,
 					extra={. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by <em>heal</em> or another disease-curing legendary effect. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.}
 			]
 	
@@ -96,7 +86,7 @@
 			\begin{DndMonsterLegendaryActions}
 					\DndMonsterLegendaryAction{Detect}{The comiedar makes a Wisdom (Perception) check.}
 					\DndMonsterLegendaryAction{Tail Swipe}{The comiedar makes one tail attack.}
-					\DndMonsterLegendaryAction{Psychic Drain (Costs 2 Actions)}{One creature charmed by the comiedar takes \DndDice{3d6} psychic damage, and the comiedar regains hit points equal to the damage the creature takes.}
+					\DndMonsterLegendaryAction{Psychic Drain (Costs 2 Actions)}{One creature charmed by the comiedar takes 3d6 psychic damage, and the comiedar regains hit points equal to the damage the creature takes.}
 			\end{DndMonsterLegendaryActions}
 	\end{multicols}
 	\end{DndMonster}

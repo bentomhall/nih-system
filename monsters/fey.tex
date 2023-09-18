@@ -27,6 +27,43 @@ Fey cross over into Shadow naturally, existing on both sides of the veil almost 
 The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
 \end{DndMonster}
 
+
+\begin{DndMonster}{Kipuliin, Lesser}
+    \DndMonsterType{Small Fey}
+    \DndMonsterBasics[
+        armor-class={14 (natural armor)},
+        hit-points={51 (6d8 + 24)},
+        speed={30 ft.}
+    ]
+    \MonsterStats{+3}{+2}{+4 (+6)}{-1}{-1}{+2}
+    \DndMonsterDetails[
+        skills={--},
+        senses={darkvision 60 ft, passive perception 9},
+        languages={Common, Sylvan},
+        challenge={2:3},
+        damage-immunities={--},
+        damage-resistances={all damage when bloodied},
+        damage-vulnerabilities={--}
+    ]
+
+    \DndMonsterAction{Masochism} While bloodied, the kipuliin has resistance to all damage and regains 2hp the first time it hits with an attack on a turn. If the target hit is bloodied, it regains 10 hp instead.
+    \DndMonsterAction{Sadism} When the kipuliin hits a bloodied creature with a weapon attack, its weapons deal an additional 1d4 damage.
+
+    \DndMonsterSection{Actions}
+    \DndMonsterAttack[
+        name={Barbed Whip},
+        distance={melee},
+        type={weapon},
+        mod={+5},
+        reach={10 ft},
+        dmg-type={slashing},
+        extra={ plus 1d4 extra against bloodied targets.}
+    ]
+    
+
+    \DndMonsterAction{Multiattack} The kipuliin makes 3 whip attacks.
+\end{DndMonster}
+
 \begin{DndMonster}{Satyr}
 	\DndMonsterType{Medium fey}
 	\DndMonsterBasics[armor-class={14 (leather armor)}, hit-points={31 (7d8)}, speed={40 ft.}]

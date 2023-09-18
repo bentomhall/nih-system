@@ -55,6 +55,100 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 	]
 	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 13 Dexterity saving throw, taking 4d6 psychic damage on a failure or half as much on a success. Creatures that fail are shaken by memories of their sins and are \nameref{condition:frightened} of the archon until the end of their next turn.
 \end{DndMonster}
+
+
+\begin{DndMonster}{Seraph}
+    \DndMonsterType{Medium Celestial (Angel)}
+    \DndMonsterBasics[
+        armor-class={16 (chain)},
+        hit-points={104 (16d8 + 32)},
+        speed={30 ft., 90 ft. fly}
+    ]
+    \MonsterStats{0}{+4}{+2}{+1}{+4}{+3}
+    \DndMonsterDetails[
+        skills={--},
+        senses={darkvision 120 ft, passive perception 14},
+        languages={celestial, lucian},
+        challenge={9:5},
+        damage-immunities={--},
+        damage-resistances={radiant},
+        damage-vulnerabilities={--}
+    ]
+
+    \DndMonsterAction{Distant Aid} The angel can cast any spell that only targets allies out to a range of 60 ft, even if the range is smaller. This also extends the radius of aura-type spells.
+    \DndMonsterAction{Spellcasting} The seraph casts as a priest. Its spell attack modifier is +7 and its spell save DC is 15. It can cast the following spells:
+    \textit{Concentration:} \nameref{spell:aura-of-vitality} (1x), \nameref{spell:hold-person} (2x), \nameref{spell:bless} (1x)
+
+    \textit{Healing:} \nameref{spell:mass-cure-wounds} (1x), \nameref{spell:cure-wounds} (at will)
+
+    \textit{Other:} \nameref{spell:death-ward} (1x, has it active on self)
+
+    \DndMonsterAction{Death Ward} The first time per day the seraph falls to zero hit points or is hit by an effect that would instantly kill it, it is reduced to 1 hp instead.
+
+    \DndMonsterSection{Actions}
+    \DndMonsterAttack[
+        name={Sacred Lance},
+        distance={both},
+        type={spell},
+        mod={+7},
+        reach={5 ft or 90 ft},
+        dmg-type={radiant},
+        extra={.}
+    ]
+    
+
+    \DndMonsterAction{Multiattack} The seraph makes 3 attacks. It can exchange two attacks to cast a spell.
+
+
+
+\end{DndMonster}
+\begin{DndMonster}{Valorite}
+    \DndMonsterType{Medium Celestial (Angel)}
+    \DndMonsterBasics[
+        armor-class={18 (chain + shield)},
+        hit-points={91 (14d8 + 28)},
+        speed={30 ft., 60 ft. fly}
+    ]
+    \MonsterStats{+4}{0}{+2}{-1}{+2}{+2}
+    \DndMonsterDetails[
+        skills={--},
+        senses={darkvision 120 ft, passive perception 12},
+        languages={celestial, lucian},
+        challenge={5:6},
+        damage-immunities={--},
+        damage-resistances={radiant},
+        damage-vulnerabilities={--}
+    ]
+
+    \DndMonsterAction{Shield Wall} As long as another valorite is within 5ft, the angel makes all DEX saves at advantage and all ranged attacks against it are at disadvantage.
+    \DndMonsterAction{Angelic Weapons} The angel's weapon attacks deal an extra 2d8 radiant damage (included in the attack). This is an innate property.
+
+    \DndMonsterSection{Actions}
+    \DndMonsterAttack[
+        name={Gladius},
+        distance={melee},
+        type={weapon},
+        mod={+7},
+        reach={5 ft},
+        dmg-type={piercing},
+        extra={ plus 2d8 radiant.}
+    ]
+    
+    \DndMonsterAttack[
+        name={Javelin (3x)},
+        distance={ranged},
+        type={weapon},
+        mod={+7},
+        reach={30/120 ft},
+        dmg-type={piercing},
+        extra={ plus 2d8 radiant.}
+    ]
+    
+    \DndMonsterAction{Multiattack} The angel makes 2 gladius attacks.
+
+    \DndMonsterSection{Variants}
+        \DndMonsterAction{Sergeant} Upgrade to a longsword (1d8 + 4) slashing. Gain trait Commanding Presence: All angels within 60 ft have advantage on their first attack on each of their turns. No change to ratings.
+\end{DndMonster}
 \FloatBarrier
 
 \subsection{Astral-Touched Mortal Creatures}

@@ -315,7 +315,7 @@ if __name__ == "__main__":
 <body>
 <header>
 <div>Pages:</div>
-<div><a href="changelog.html">Changelog</a></div>
+<div><a href="index.html">Changelog</a></div>
 <div><a href="introduction.html">Introduction</a></div>
 <div><a href="core-system.html">Core System</a></div>
 <div><a href="character-creation.html">Character Creation</a></div>

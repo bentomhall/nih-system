@@ -5,14 +5,14 @@
     --table-dark: #D7A184;
     --table-light: #D4C2AD;
     --light-link-color: white;
-    --light-visited-links: grey;
+    --light-visited-links: lightgrey;
 }
 
-header > a {
+header a, header div {
     color: var(--light-link-color);
 }
 
-header > a:visited {
+header a:visited {
     color: var(--light-visited-links);
 }
 

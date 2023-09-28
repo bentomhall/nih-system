@@ -17,7 +17,7 @@ def parse_line(line: str) -> str:
 	else:
 		return line
 
-def parseTokens(allTokens: list[str]) -> list[str]:
+def parseTokens(allTokens):
 	tokens = []
 	spellRegex = r'\\nameref{spell:(.*?)}'
 	classRegex = r'\\nameref{class:(.*?)}'

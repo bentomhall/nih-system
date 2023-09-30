@@ -1,211 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIH Examples</title>
-    <link href="main.css" rel="stylesheet"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NIH Examples</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="main.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <div>Pages:</div>
-        <div><a href="index.html">Changelog</a></div>
-        <div><a href="introduction.html">Introduction</a></div>
-        <div><a href="core-system.html">Core System</a></div>
-        <div><a href="character-creation.html">Character Creation</a></div>
-        <div><a href="equipment.html">Equipment</a></div>
-        <div><a href="spells.html">Incantations, Spells, and Legendary Effects</a></div>
-        <div><a href="skill-tricks.html">Skill Tricks</a></div>
-        <div><a href="items.html">Magic Items</a></div>
-        <div><a href="monsters.html">Monsters</a></div>
-        <div><a href="appendixes.html">Appendixes</a> > <a href=#">B: Worked Examples</a></div>
-    </header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="lineages.html" class="dropdown-item">Lineages</a>
+					<a href="cultures.html" class="dropdown-item">Cultures</a>
+					<a href="backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="classes/classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="classes/arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="classes/armsman.html" class="dropdown-item">Armsman</a>
+					<a href="classes/brawler.html" class="dropdown-item">Brawler</a>
+					<a href="classes/oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="classes/priest.html" class="dropdown-item">Priest</a>
+					<a href="classes/ranger.html" class="dropdown-item">Ranger</a>
+					<a href="classes/rogue.html" class="dropdown-item">Rogue</a>
+					<a href="classes/shaman.html" class="dropdown-item">Shaman</a>
+					<a href="classes/spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="classes/warden.html" class="dropdown-item">Warden</a>
+					<a href="classes/warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="items/rings.html" class="dropdown-item">Rings</a>
+					<a href="items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="conditions.html" class="dropdown-item">Conditions</a>
+					<a href="examples.html" class="dropdown-item">Examples</a>
+					<a href="world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 <div class="container">
-    <h1 class="chapter" id="examples">Appendix B: Worked Examples</h1>
-    <p>This chapter contains examples of how certain parts of play are intended to work. They should be taken as (hopefully) illuminating examples only, not definitive statements of how play must go or in any way restrictive.</p>
-    
-    <p>Throughout this chapter, Gary is always the GM, and players are</p>
-    <ul>
-        <li>Alice, playing Alakabeth, a female dwarven Life priest of Melara.</li>
-        <li>Beth, playing Barkor, a male silver dragonborn Defender armsman.</li>
-        <li>Charlie, plaing Charleze, a female halfling rogue.</li>
-        <li>Dave, playing Delenor, a male gwerin book-mage arcanist.</li>
-    </ul>
-    
-    <h2 class="section" id="character-creation">Character Creation</h2>
-    <p><b>Situation:</b> It's session 0, and the group is sitting around the table coming up with their characters. Gary has said that the campaign will be starting in Crisial City, and will at least begin with chasing down rumors of a necromancer in the hills to the south.</p>
-    
-    <p><b>Alice:</b> Well, I like playing supporting characters. <em>Looks through the class summaries.</em> Oh, hey, a priest looks nice for what I want. I'll pick that.</p>
-    
-    <p><b>Gary:</b> Ok, what lineage were you thinking? And priests are particularly tied to individual Ascendants, usually gods. Do any of the ones in <a href="world.html#ascendants">Appendix C: Ascendants</a> look interesting?</p>
-    
-    <p><b>Alice:</b> Hmm...<em>leafs through the descriptions</em>...I like the idea of being a dwarf. But not a traditional one. So my lineage will be Dwarf (surfacer, for reference), and my culture will be...Cosmopolitan. I think I'll draw power from Melara, Lady of Mercy. So that's +1 Constitution and +1 Wisdom for my ability scores, with darkvision, stone's endurance, dwarven resilience, coin-counter, and babyl-dweller. I'll take yonwach, the gwerin language, as my free pick from my culture.</p>
-    
-    <p><b>Alice:</b> As for background---I think Alakabeth (that's going to be her name) grew up in an orphanage run by some Melaran clergy here in Crisial and became chosen after serving in the shrine. So I'm going to pick the Shrine-keeper background to reflect that. That gives me a few things...<em>notes them down</em>.</p>
-    
-    <p><b>Alice:</b> As for personality---let's see. She's not a particularly forceful person, she prefers to stand in the back and be unnoticed. Very devout, doesn't like Melara being defamed. Or any of the gods, really. Kinda cautious. So her ideal is Faith: I will be the best example of my religion for all to see. Her bond is the sisterhood and church that raised her--she'll protect it and obey if they ask her to do things. Her flaw is her lack of forcefulness--she's hesitant to engage in arguments or combat even when that's best. Why is she adventuring? Well...maybe she had a dream that she believes was a call from Melara to go fight the undead (since Melara <em>hates</em> the undead)? Yeah, that will work.</p>
-    
-    <p><b>Alice:</b> Ok, since I want to stand back and support, that means I'll pick Life as my Domain. Gary, we're using standard array, right? That means I should put my highest score, a +3 (after the culture contribution) into Wisdom, a +2 into Dexterity, the +1 (+1 from being a dwarf, so +2) into Constitution. The others...well...she's bookish, so I'll put the other +1 into Intelligence. Not very good with people, but not horrible. So the +0 into Charisma. She's not a strong person, so the -1 goes into Strength. For cantrips, I'll take...<a href="spells/allspells.html#guidance">guidance</a>, <a href="spells/allspells.html#grave-touch">grave touch</a>, and <a href="spells/allspells.html#light">light</a>. I'll pick spells each day, but say...<a href="spells/allspells.html#bless">bless</a> and <a href="spells/allspells.html#cure-wounds">cure wounds</a> for starters.</p>
-    
-    <p><b>Alice:</b> As for proficiencies: She gets Insight, Religion, and Persuasion from culture + background. She'll pick History and Medicine from being a priest. Tools: She's got wood-carvers tools from her background, and she'll take the hand drum and dice set from the culture. Languages---Common, of course. Everyone gets that. But then Yonwach (from culture) and Lucian from her background. Yeah, she doesn't know dwarven. She wasn't raised among dwarves.</p>
-    
-    <p><b>Alice:</b> For equipment, I'll take the leather armor and a mace, with a priest's pack and a light crossbow. My holy symbol is a snowflake emblem around my neck.</p>
-    
-    <p><b>Alice:</b> With a +2 Constitution, that gives me 10 HP. Leather with a +2 Dexterity gives me an AC of 13. +3 Wisdom and +2 proficiency means my spellcasting DC is 8 + 3 + 2 = 13. My spell attack modifier is 3 + 2 = 5. I've got only one hit die, so 1d8. I've got 1 Stamina, 4 Aether, and an aether limit of 2. With weapons...the mace is not Finesse, so it uses my (bad) strength. Attack modifier is -1 + 2 = 1 and damage is 1d6 - 1. For the crossbow, that uses Dexterity since it's ranged. Attack modifier is +2 + 2 = +4 and damage is 1d8 + 2. <em>She writes these down on the character sheet.</em> Ok, I think that's enough for me to start play.</p>
-    
-    <em>The rest of the party makes their characters.</em>
-    
-    <h2 class="section" id="basic-ability-checks">Basic Ability Checks</h2>
-    <p>The party is exploring a ruined temple of ancient sun worshipers. Undead guardians still patrol the halls at irregular intervals. The party comes across a locked stone door with a keyhole. On the wall nearby is a faded mural.</p>
-    
-    <p><b>Gary:</b> <em>After describing the scene</em>. Ok, what do you do?</p>
-    
-    <p><b>Dave:</b> Delenor is interested in the mural. He'll move closer to it with the torch and examine it in detail.</p>
-    
-    <p><b>Charlie:</b> While he's doing that, Charleze is going to take a close look at the door lock and see if it can be opened.</p>
-    
-    <p><b>Alice and Beth:</b> We're going to hang back and watch for baddies from our rear.</p>
-    
-    <p><b>Gary:</b> Ok, so looks like two of you are using your Passive Perception. That works. Delenor...<em>Describes the surface look of the mural and thinks: "There's some pieces hidden in that mural. If they find all of them, the next puzzle will be much easier. But Delenor is smart enough and this is his wheel-house enough that he'll get some of it...</em> Ok, go ahead and make me an Intelligence (Religion) check to decypher the mural's significance. It's going to be a degrees of success check--the better you do the more you'll know.</p>
-    
-    <p><b>Dave:</b> Ok, will do. <em>Rolls an 6, with proficiency and a +4 modifier for a total of 12</em>. I got a 12. What does that get me?</p>
-    
-    <p><b>Gary:</b> You get two significant pieces--first, it looks like a warning reminder to priests on how "to be approved by the Sun". It shows them carefully avoiding the dark squares. Second, there's a warning that "Dark is light when Sun is in Shadow."</p>
-    
-    <p><b>Gary:</b> Ok Charleze, give me an Intelligence (Investigation) check for the door lock. <em>Thinks: I know there's a heavily hidden magical trap in the latch. So the consequences of failing this is that the trap goes off when he opens the lock, inverting the colors in the next room. Success means he knows its there and can bypass it when picking the lock. It's heavily hidden, so this is going to be a Hard check, DC 20.</em></p>
-    
-    <p><b>Charlie:</b> Gotcha. <em>Rolls a 7, with proficiency and a +2 modifier making that 11</em>. Got an 11. Not great.</p>
-    
-    <p><b>Gary:</b> <em>Thinking: Ok, that's a fail to see the trap, but high enough to know something about the lock.</em> So the lock looks like an ornate metal lock. It's bypassable using your standard tools--that'll be a Medium (DC 15) Dexterity (Thieves Tools) check, with failure looking like it'll take you a long time to get it open (risking wandering monsters). Wanna do that?</p>
-    
-    <p><b>Charlie:</b> Yup. Charleze will get busy picking the lock. <em>Rolls a 16 on the die, with expertise and a +4 Dexterity giving 24</em>. Got a 24, so it opens, right?</p>
-    
-    <p><b>Gary:</b> Yeah. The lock opens immediately, but as you click the last pin, you feel a chill and a dour bell rings. Looks like you missed something in your inspection. Nothing immediately happens, however, except that the door slowly creaks open all on its own. On the other side is a large room with a tiled floor. There is a complex pattern of light and dark tiles on the floor, and on the far side is a statue holding a rayed sun emblem. It glows only on the rays--the center is dark. Ok, what do you all do?</p>
-    
-    <p><b>Dave:</b> Hey, this looks like the mural. So we stand on the light tiles...except...the sun isn't all glowing. Maybe that's what they meant by "the sun is in shadow?" So we stand on the dark ones.</p>
-    
-    <em>The adventure continues...</em>
-    
-    <h5>Discussion</h5>
-    <p>In this example, note that communication was open and explicit. Players stated what they wanted to do, not what mechanics they were engaging. Gary noted that Delenor is in his element here, so doing a degrees of success check (usually "one piece of information for every 5 points of total result") was appropriate, while not giving any information on a failure/all the information on a success wouldn't really fit.</p>
-    
-    <p>For picking the lock, note that there were two separate tasks, each with their own consequences. While picking the lock was a foregone conclusion and the only question was <em>how long would it take</em> (and thus what risk there was of unfriendly things coming along), noticing the trap wasn't. And since the presence of the trap needed to be hidden until it was either triggered or noticed, not giving the DC there is one way of reducing metagame thinking (acting based on the results of the dice even though the character wouldn't know that information). Charlie wasn't told whether he'd failed or succeeded. But after giving the (limited) information about the outcome of the Investigation result (which was true information even if it wasn't complete information), Charlie was given the opportunity to proceed or not. He could have paused there and had Barkor knock down the door (with any consequences that might have entailed). Or not. GMs usually should not presume more actions than were stated, but shouldn't nit-pick either.</p>
-    
-    <h2 class="section" id="social-situations">Social Situations</h2>
-    <p>The party is trying to convince Baron Bloated, the fat and cowardly Baron of Badtown, to send some troops to protect the village of Hommlet from an approaching army of tribal orc raiders. The party has some evidence of orcish activity--ears they gathered from their scouts as well as eyewitness accounts. The Baron has an advisor, Harold the Holy, who is a committed pacifist.</p>
-    
-    <p><b>Gary:</b> <em>Thinking: Ok, so Bloated is indifferent. He doesn't want Hommlet to be destroyed, since that eats into his revenue. But Harold has been pressuring him to be nicer to the neighboring orcs...</em> Ok, the Baron says "My guard captain says you think there's an invading army. What's up with that?" Harold says "certainly they're just peaceful migrants." How do you respond?</p>
-    
-    <p><b>Beth:</b> Barkor's not the most charismatic, but this is his thing. He pulls out the string of orc ears and dumps it on the table in front of the Baron. "We ran into a few of their scouting parties in the woods well within the Barony's borders. They weren't particularly inclined to talk...except with their javelins and arrows. We did find their tribal badges"--and he produces the carved tribal tokens--"seems they come from about 5 different tribes. All of which normally hate each other. One of them screamed something about 'the will of the Fang'. Probably some warleader or shaman that's unified the tribes." Barkor's trying to convince the leaders about the magnitude of the threat.</p>
-    
-    <p><b>Dave:</b> Delenor will speak up--"My best hypothesis as to who this 'Fang' is is that they're talking about the Red Fang. That is, the demon prince." I'm trying to help Barkor here.</p>
-    
-    <p><b>Gary:</b> Ok, Barkor, go ahead and make a Charisma (Persuasion) check at advantage because of Delenor's help. I'm going to treat this as an attempt to improve their attitude to you, since you haven't explicitly asked them to do anything yet. Success means that you've improved the Baron's attitude; great success (5+ over) means you'll improve Harold's from unfriendly. That work? Or do you want to try to go for the final goal of getting them to send help.</p>
-    
-    <p><b>Beth & Dave:</b> Nah, that's fine. Gotta break them out of their shells first. <em>Beth rolls: a 14 on the die. Not proficient, and only a +1 Charisma modifier</em>. 15 on that check.</p>
-    
-    <p><b>Gary:</b> That's enough for Bloated. He says, with fear in his eyes "really? That seems...mighty serious. And certainly not peaceful. Harold, are you sure?" Harold remains skeptical. "I'm sure the elf is mistaken. The orcs around here haven't worshiped the Red Fang since well before the Cataclysm." Ok, what next? Charleze? Alakabeth?</p>
-    
-    <p><b>Alice:</b> Alakabeth's been studying the two of them, trying to figure out why Harold is so insistent. What can she gather about his motivations?</p>
-    
-    <p><b>Gary:</b> Well, he's got a reputation as a committed pacifist. He particularly venerates Peor-fala, who is notoriously peace-loving. If you want to dig deeper, give me a Wisdom (Insight) check. <em>Thinks: He's slimy, but not super obvious about it. So not Easy...let's go with Medium. DC 15.</em></p>
-    
-    <p><b>Alice:</b> Can I combine my Religion and Insight here? See if he's really keeping to his god's tenets? <em>At Gary's nod, she goes ahead and rolls at advantage because she has two relevant proficiencies. The roll is a 17 and a 14, plus proficiency and a +3 modifier. 22 total.</em> 22. I think she's got a good read on him.</p>
-    
-    <p><b>Gary:</b> For a priest of Peor-fala, who normally swear to give their excess to the poor, Harold's robes are particularly fancy and the gleam of jewels on his fingers is notable. And from the well-padded look...he's not exactly been starving. And his denials of the possibility of orcish hostility seem quite strident, almost fearful.</p>
-    
-    <p><b>Alice:</b> <em>Out of character: Guys, I think the priest is being paid off by someone. Or is into something sketchy.</em> Alakabeth coughs and nudges Charleze, whispering something about how sketchy Harold is.</p>
-    
-    <p><b>Charlie:</b> Charleze is going to attempt to get close while Harold's distracted and pick his pockets. See if he has anything incriminating.</p>
-    
-    <p><b>Gary:</b> Give me a Dexterity (Sleight of Hand) check. It's not going to be easy, and if you fail he'll see you. And will likely be very unhappy.</p>
-    
-    <p><b>Charlie:</b> Gotcha. Gonna do it anyway. <em>Rolls: natural 20. Plus expertise and +3 Dexterity. Total of 27</em> 27. I'm a ghost.</p>
-    
-    <p><b>Gary:</b> As you dip into his pockets, you come up with a couple surprising things. First is a substantial sack of coin. Second is an emblem--a ring in the form of a barbed-wire circle. Looks painful to put on. Delenor, with your knowledge of demon cults, you recognize that as belonging to the Cult of the Barbed Coil, a demonic cult dedicated to the Lady of Pain.</p>
-    
-    <p><b>Delenor & Beth:</b> Looking at each other, we point this fact out to the Baron. "Your advisor seems to be in with demonic cults himself. Imagine that, a supposed priest of the Hearth Mistress sitting all fat and happy with a Barbed Coil cult emblem and a stack of cash. Probably bribe money." To Harold--"You know the penalty for demon worship in these lands. Fess up immediately and you'll get a clean death and a quiet burial." We're trying to intimidate him and the Baron.</p>
-    
-    <p><b>Gary:</b> Harold has a look of panic in his eyes. No need for a roll--he's been exposed. "I give up. I was paid much coin by the cult to make sure the orcs took out Hommlet. Seems there's something there they want."</p>
-    
-    <p><b>Beth:</b> Barkor barks "Baron, you <em>will</em> send aid, won't you? A couple companies of soldiers with some knights and scouts?"</p>
-    
-    <p><b>Gary:</b> Bloated's looking for a way out of this mess. "Of course! Of course!." No check needed--you'd already gotten through to him and then removed the last real obstacle.</p>
-    
-    <em>And play continues...</em>
-    
-    <p><b>Discussion</b> Note that most of the action <em>wasn't</em> in Charisma checks. They could have gone straight to the point, but that would have been a much harder row to hoe, breaking through Harold's influence without exposing him. They didn't have to give exact speeches, and the exact words they said didn't really matter as much as their explanations of what they were doing, how they were doing it, and what they wanted. Take, for instance, that first exchange from Beth and Dave. Beth (a) showed her evidence (in the form of the ears and badges), (b) gave enough detail to know that they weren't threatening but were explaining (hence Persuasion, not Intimidation...not yet), and (c) explained what she wanted to have happen. Since Gary wasn't entirely sure, he asked a clarifying question based on his impression of her desire and let her make the call on which it was. Dave's Help action wasn't just "I Help Barkor", but it was fiction-first--showing some bit of knowledge (pretended or otherwise) and how it fit, then explaining what his intent was in doing so. Not to supplant Barkor's efforts, but to assist.</p>
-    
-    <p>Later, Alice and Charlie both used their non-Charisma skills to assist--one in figuring out that Harold was particularly sketchy (and note the request to combine proficiencies to get specific information, a good example of such a request) and then Charlie picking his pocket. All of this together made a done deal and removed the need for further rolls. If he'd come up empty on the pick-pocketing, they still could have intimidated him but it wouldn't have been an easy roll and they certainly wouldn't have gotten the full story. The whole scenario could have gone very differently in many ways--that was just one way the party could have navigated the scenario.</p>
-    
-    <h2 class="section" id="surprise">Surprise</h2>
-    <p><b>Gary:</b> You're moving through the woods that are known to contain the nefarious Red Eagle bandit group. How do you want to do this?</p>
-    
-    <p><b>Charlie:</b> Let's try to not be seen. We're moving slowly and stealthily. I'll scout ahead. </p>
-    
-    <p><b>Group:</b> <em>Nods in agreement</em></p>
-    
-    <p><b>Gary:</b> Ok, everyone roll a Dexterity (Stealth) check.</p>
-    
-    <p><b>Group:</b> <em>rolls</em>.</p>
-    
-    <p><b>Alice:</b> <em>Thinks: I rolled a 12, and Alakabeth has a +1 Dexerity modifier and no proficiency.</em> Alakabeth got a 13.</p>
-    
-    <p><b>Beth:</b> <em>Thinks: Barkor is in heavy armor, so he has disadvantage. The dice were a 4 and a 20. Darn. He does have proficiency and a +2 modifier, so that's ok but not great.</em> Barkor got an 8, at disadvantage.</p>
-    
-    <p><b>Charlie:</b> <em>Thinks: Charleze has expertise in Stealth and a +4 modifier. I rolled a 16, so I'm probably hidden</em>. Charleze got a 24.</p>
-    
-    <p><b>Dave:</b> <em>Thinks: No proficiency, but Delenor has a cloak of elvenkind, so he has advantage and a +2 modifier. Rolled a 2 and an 18. Great!</em> Delenor got a 20, non-natural, at advantage.</p>
-    
-    <p><b>Gary:</b> You move through the woods with fair grace for an hour or so, taking care not to step on any twigs. Barkor, you're not so successful as your armor kinda glitters in the sun--you scare some rabbits and birds. Soon you see campfire smoke rising through the trees and hear the Red Eagle bandits going about their daily routine. Charleze, since you're scouting ahead, you catch sight of them first. They do have a watch, but it seems somewhat apathetic. Three bandits in the open, with tents for about 10 total. How do you want to handle this?</p>
-    
-    <p><b>Charlie:</b> I motion the group to silence. Let's ambush the guards. <em>The group agrees.</em></p>
-    
-    <p><b>Gary:</b> Ok, <em>draws out a battle map with the position of the guards marked, as well as trees.</em> Place yourselves behind cover from the guards. Looks like one of the guards (<em>indicates on the map</em>) was more alert than most. The others have disadvantage on their Passive Perception due to distraction. <em>Checks the bandits' Passive Perception: all the bandits normally have 10. With disadvantage, that makes 2 of them have a result of 5 and the other has a result of 10.</em> The two inattentive ones are <a href="conditions.html#surprised">surprised</a>; the alert one notices Barkor trying to hide and is not surprised. Everyone, roll initiative. <em>The players and the GM all roll initiative, resulting in an order of Charleze, Delenor, the bandits, Barkor, then Alakabeth</em>.</p>
-    
-    <p><b>Charlie:</b> Charleze shoots her crossbow at the alert guard, at advantage because I'm hidden from it. <em>Rolls, hits, doesn't deal enough damage to kill the bandit because of all 1s on the damage dice. Drat.</em></p>
-    
-    <p><b>Dave:</b> Delenor shoots a <a href="spells/allspells.html#produce-flame">produce flame</a> at the only bandit in range, one of the surprised ones. <em>Rolls at advantage because hidden, hits, kills the bandit.</em></p>
-    
-    <p><b>Gary:</b> Ok, the alert bandit goes. He yells to the camp, and you hear movement and shouts of alarm. He then draws his light crossbow and fires at the target he saw first, Barkor. <em>Rolls, misses.</em> He misses. The other bandits do nothing, but recover from their surprise at the end of their turn.</p>
-    
-    <p><b>Beth:</b> Well, since Barkor isn't hidden, he's going to charge the alert bandit. I'll move my speed closer and throw a javelin. <em>Rolls normally, hits, kills the bandit.</em></p>
-    
-    <p><b>Alice:</b> Alakabeth casts <a href="spells/allspells.html#bless">bless</a> on herself, Barkor, and Charleze.</p>
-    
-    <em>The rest of the combat plays out as the now-alerted bandits pour out of the camp...</em>
-    
-    <h2 class="section" id="visibility-and-hiding">Visibility and Hiding, Combat</h2>
-    <p>The party is in the depths of a goblin warren, in a large dimly-illuminated chamber with scattered rubble walls standing between 3 and 6 feet tall. Suddenly, they are attacked by a contingent of 4 goblin raiders, led by a goblin mage. Initiative has already been rolled, and the order is Charleze, Goblin Mage, Belkor, Alakabeth, Goblins, and then Delenor. No one was surprised. Currently, the raiders are all 50 ft away from the party; the mage is 60 ft.</p>
-    
-    <p><b>Gary:</b> Ok Charleze, it's your turn.</p>
-    
-    <p><b>Charlie:</b> Charleze wants to get sneak attack on the mage, so he's going to try to duck behind a nearby wall out of sight, hide with Cunning Action, and then take a pot-shot with his crossbow. <em>Gary nods ok. Charlie rolls Dexterity (Stealth): 15 total</em>. 15 on the Dexterity (Stealth) check.</p>
-    
-    <p><b>Gary:</b> Ok, you're hidden from the mage. Go ahead and make your attack at advantage.</p>
-    
-    <p><b>Charlie:</b> <em>Rolls an attack: total of 16.</em> 16. Does that hit? <em>Gary nods.</em> Damage...<em>rolls damage, including sneak attack. 12 total</em> 12 damage. That's my turn.</p>
-    
-    <p><b>Gary:</b> Ok, the mage is definitely not fond of you, but isn't bloodied yet. It's his turn...he casts a spell...<em>Pause, waiting for any reactions...none come</em>...and vanishes from sight. He's invisible. Since he's more than 30 feet from you, you all can no longer tell where he is. <em>Removes the token from the battle map.</em> Belkor, your turn.</p>
-    
-    <p><b>Beth:</b> Belkor's going to hang back and shoot his bow at one of the goblins he can see. I need to stay to protect the squishies. <em>Gary nods. Beth rolls attack: 14. Damage: 8</em>. 14 to hit, 8 damage if it hits. I'll move so I can get between as many of the goblins and the casters as I can.</p>
-    
-    <p><b>Gary:</b> Ok, that takes out that goblin. He's down on the floor squealing his last. Alakabeth--your turn.</p>
-    
-    <p><b>Alice:</b> Alakabeth is going reserve her big stuff and just <em>sacred flame</em> one of the goblins. Dex save, DC 13. <em>Gary nods and rolls: 15.</em> Darn. She's going to take cover behind some rubble.</p>
-    
-    <p><b>Gary:</b> Goblin raiders go--two use their bonus action to Dash and move up to within melee range of Belkor. Two attacks with their swords <em>Rolls, a hit and a miss. Rolls damage: 5</em> 5 slashing damage. The other two Hide behind the rubble <em>points</em> here and here. <em>Rolls Dexterity (Stealth): an 8 and a 15.</em> Ok, so this one's hidden <em>removes token</em>. The other one kicked a rock and yelped; you all heard that. Not hidden. Both try to shoot from cover at Delenor, yelling "gank the squishy!" in Goblin. Hidden one has advantage; other is normal. <em>rolls, hidden one rolls 18 and a natural 20, other one rolls 15.</em>. Crit and a hit. <em>Rolls damage:</em> 9 and 5...perfectly average. 14 total. The hidden one is now visible again because he made an attack. Delenor, your turn.</p>
-    
-    <p><b>Dave:</b> Ouch. Four goblins we can see, right? I'm going to use my Perceptive skill trick to Search for the mage as a bonus action. That's a Wisdom (Perception) check, right? And since I have darkvision, if he's within 60 feet, I don't have disadvantage. <em>Gary nods. Dave rolls.</em> Nice. 21. Does that give me an idea where he is?</p>
-    
-    <p><b>Gary:</b> <em>Thinking: he's 70 feet out, so that's really a 16. But his passive Dexterity (Stealth) is only 15, so...</em> Yeah. You catch a swirl of dust and the imprint of a hand against this pillar, about 70 feet away. You still can't see him, but you know where he is.</p>
-    
-    <p><b>Dave:</b> Ok, then I'll move a bit closer and for my action I'll cast <a href="spells/allspells.html#shatter">shatter</a>, centered right next to him. DC 13 Constitution saving throw, <em>rolls</em> 14 damage on a fail, 7 on a success. <em>Gary rolls...a 4. Then rolls a Constitution saving throw...a 5. Dice are not in the goblin's favor tonight.</em></p>
-    
-    <p><b>Gary:</b> The mage wasn't expecting that--his concentration drops and he becomes visible. He's also bloodied. Charleze, your turn.</p>
-    
-    <em>And the battle continues...</em>
+	<h1 class="chapter" id="examples">Appendix B: Worked Examples</h1>
+	<p>This chapter contains examples of how certain parts of play are intended to work. They should be taken as (hopefully) illuminating examples only, not definitive statements of how play must go or in any way restrictive.</p>
+	
+	<p>Throughout this chapter, Gary is always the GM, and players are</p>
+	<ul>
+		<li>Alice, playing Alakabeth, a female dwarven Life priest of Melara.</li>
+		<li>Beth, playing Barkor, a male silver dragonborn Defender armsman.</li>
+		<li>Charlie, plaing Charleze, a female halfling rogue.</li>
+		<li>Dave, playing Delenor, a male gwerin book-mage arcanist.</li>
+	</ul>
+	
+	<h2 class="section" id="character-creation">Character Creation</h2>
+	<p><b>Situation:</b> It's session 0, and the group is sitting around the table coming up with their characters. Gary has said that the campaign will be starting in Crisial City, and will at least begin with chasing down rumors of a necromancer in the hills to the south.</p>
+	
+	<p><b>Alice:</b> Well, I like playing supporting characters. <em>Looks through the class summaries.</em> Oh, hey, a priest looks nice for what I want. I'll pick that.</p>
+	
+	<p><b>Gary:</b> Ok, what lineage were you thinking? And priests are particularly tied to individual Ascendants, usually gods. Do any of the ones in <a href="world.html#ascendants">Appendix C: Ascendants</a> look interesting?</p>
+	
+	<p><b>Alice:</b> Hmm...<em>leafs through the descriptions</em>...I like the idea of being a dwarf. But not a traditional one. So my lineage will be Dwarf (surfacer, for reference), and my culture will be...Cosmopolitan. I think I'll draw power from Melara, Lady of Mercy. So that's +1 Constitution and +1 Wisdom for my ability scores, with darkvision, stone's endurance, dwarven resilience, coin-counter, and babyl-dweller. I'll take yonwach, the gwerin language, as my free pick from my culture.</p>
+	
+	<p><b>Alice:</b> As for background---I think Alakabeth (that's going to be her name) grew up in an orphanage run by some Melaran clergy here in Crisial and became chosen after serving in the shrine. So I'm going to pick the Shrine-keeper background to reflect that. That gives me a few things...<em>notes them down</em>.</p>
+	
+	<p><b>Alice:</b> As for personality---let's see. She's not a particularly forceful person, she prefers to stand in the back and be unnoticed. Very devout, doesn't like Melara being defamed. Or any of the gods, really. Kinda cautious. So her ideal is Faith: I will be the best example of my religion for all to see. Her bond is the sisterhood and church that raised her--she'll protect it and obey if they ask her to do things. Her flaw is her lack of forcefulness--she's hesitant to engage in arguments or combat even when that's best. Why is she adventuring? Well...maybe she had a dream that she believes was a call from Melara to go fight the undead (since Melara <em>hates</em> the undead)? Yeah, that will work.</p>
+	
+	<p><b>Alice:</b> Ok, since I want to stand back and support, that means I'll pick Life as my Domain. Gary, we're using standard array, right? That means I should put my highest score, a +3 (after the culture contribution) into Wisdom, a +2 into Dexterity, the +1 (+1 from being a dwarf, so +2) into Constitution. The others...well...she's bookish, so I'll put the other +1 into Intelligence. Not very good with people, but not horrible. So the +0 into Charisma. She's not a strong person, so the -1 goes into Strength. For cantrips, I'll take...<a href="spells/allspells.html#guidance">guidance</a>, <a href="spells/allspells.html#grave-touch">grave touch</a>, and <a href="spells/allspells.html#light">light</a>. I'll pick spells each day, but say...<a href="spells/allspells.html#bless">bless</a> and <a href="spells/allspells.html#cure-wounds">cure wounds</a> for starters.</p>
+	
+	<p><b>Alice:</b> As for proficiencies: She gets Insight, Religion, and Persuasion from culture + background. She'll pick History and Medicine from being a priest. Tools: She's got wood-carvers tools from her background, and she'll take the hand drum and dice set from the culture. Languages---Common, of course. Everyone gets that. But then Yonwach (from culture) and Lucian from her background. Yeah, she doesn't know dwarven. She wasn't raised among dwarves.</p>
+	
+	<p><b>Alice:</b> For equipment, I'll take the leather armor and a mace, with a priest's pack and a light crossbow. My holy symbol is a snowflake emblem around my neck.</p>
+	
+	<p><b>Alice:</b> With a +2 Constitution, that gives me 10 HP. Leather with a +2 Dexterity gives me an AC of 13. +3 Wisdom and +2 proficiency means my spellcasting DC is 8 + 3 + 2 = 13. My spell attack modifier is 3 + 2 = 5. I've got only one hit die, so 1d8. I've got 1 Stamina, 4 Aether, and an aether limit of 2. With weapons...the mace is not Finesse, so it uses my (bad) strength. Attack modifier is -1 + 2 = 1 and damage is 1d6 - 1. For the crossbow, that uses Dexterity since it's ranged. Attack modifier is +2 + 2 = +4 and damage is 1d8 + 2. <em>She writes these down on the character sheet.</em> Ok, I think that's enough for me to start play.</p>
+	
+	<em>The rest of the party makes their characters.</em>
+	
+	<h2 class="section" id="basic-ability-checks">Basic Ability Checks</h2>
+	<p>The party is exploring a ruined temple of ancient sun worshipers. Undead guardians still patrol the halls at irregular intervals. The party comes across a locked stone door with a keyhole. On the wall nearby is a faded mural.</p>
+	
+	<p><b>Gary:</b> <em>After describing the scene</em>. Ok, what do you do?</p>
+	
+	<p><b>Dave:</b> Delenor is interested in the mural. He'll move closer to it with the torch and examine it in detail.</p>
+	
+	<p><b>Charlie:</b> While he's doing that, Charleze is going to take a close look at the door lock and see if it can be opened.</p>
+	
+	<p><b>Alice and Beth:</b> We're going to hang back and watch for baddies from our rear.</p>
+	
+	<p><b>Gary:</b> Ok, so looks like two of you are using your Passive Perception. That works. Delenor...<em>Describes the surface look of the mural and thinks: "There's some pieces hidden in that mural. If they find all of them, the next puzzle will be much easier. But Delenor is smart enough and this is his wheel-house enough that he'll get some of it...</em> Ok, go ahead and make me an Intelligence (Religion) check to decypher the mural's significance. It's going to be a degrees of success check--the better you do the more you'll know.</p>
+	
+	<p><b>Dave:</b> Ok, will do. <em>Rolls an 6, with proficiency and a +4 modifier for a total of 12</em>. I got a 12. What does that get me?</p>
+	
+	<p><b>Gary:</b> You get two significant pieces--first, it looks like a warning reminder to priests on how "to be approved by the Sun". It shows them carefully avoiding the dark squares. Second, there's a warning that "Dark is light when Sun is in Shadow."</p>
+	
+	<p><b>Gary:</b> Ok Charleze, give me an Intelligence (Investigation) check for the door lock. <em>Thinks: I know there's a heavily hidden magical trap in the latch. So the consequences of failing this is that the trap goes off when he opens the lock, inverting the colors in the next room. Success means he knows its there and can bypass it when picking the lock. It's heavily hidden, so this is going to be a Hard check, DC 20.</em></p>
+	
+	<p><b>Charlie:</b> Gotcha. <em>Rolls a 7, with proficiency and a +2 modifier making that 11</em>. Got an 11. Not great.</p>
+	
+	<p><b>Gary:</b> <em>Thinking: Ok, that's a fail to see the trap, but high enough to know something about the lock.</em> So the lock looks like an ornate metal lock. It's bypassable using your standard tools--that'll be a Medium (DC 15) Dexterity (Thieves Tools) check, with failure looking like it'll take you a long time to get it open (risking wandering monsters). Wanna do that?</p>
+	
+	<p><b>Charlie:</b> Yup. Charleze will get busy picking the lock. <em>Rolls a 16 on the die, with expertise and a +4 Dexterity giving 24</em>. Got a 24, so it opens, right?</p>
+	
+	<p><b>Gary:</b> Yeah. The lock opens immediately, but as you click the last pin, you feel a chill and a dour bell rings. Looks like you missed something in your inspection. Nothing immediately happens, however, except that the door slowly creaks open all on its own. On the other side is a large room with a tiled floor. There is a complex pattern of light and dark tiles on the floor, and on the far side is a statue holding a rayed sun emblem. It glows only on the rays--the center is dark. Ok, what do you all do?</p>
+	
+	<p><b>Dave:</b> Hey, this looks like the mural. So we stand on the light tiles...except...the sun isn't all glowing. Maybe that's what they meant by "the sun is in shadow?" So we stand on the dark ones.</p>
+	
+	<em>The adventure continues...</em>
+	
+	<h5>Discussion</h5>
+	<p>In this example, note that communication was open and explicit. Players stated what they wanted to do, not what mechanics they were engaging. Gary noted that Delenor is in his element here, so doing a degrees of success check (usually "one piece of information for every 5 points of total result") was appropriate, while not giving any information on a failure/all the information on a success wouldn't really fit.</p>
+	
+	<p>For picking the lock, note that there were two separate tasks, each with their own consequences. While picking the lock was a foregone conclusion and the only question was <em>how long would it take</em> (and thus what risk there was of unfriendly things coming along), noticing the trap wasn't. And since the presence of the trap needed to be hidden until it was either triggered or noticed, not giving the DC there is one way of reducing metagame thinking (acting based on the results of the dice even though the character wouldn't know that information). Charlie wasn't told whether he'd failed or succeeded. But after giving the (limited) information about the outcome of the Investigation result (which was true information even if it wasn't complete information), Charlie was given the opportunity to proceed or not. He could have paused there and had Barkor knock down the door (with any consequences that might have entailed). Or not. GMs usually should not presume more actions than were stated, but shouldn't nit-pick either.</p>
+	
+	<h2 class="section" id="social-situations">Social Situations</h2>
+	<p>The party is trying to convince Baron Bloated, the fat and cowardly Baron of Badtown, to send some troops to protect the village of Hommlet from an approaching army of tribal orc raiders. The party has some evidence of orcish activity--ears they gathered from their scouts as well as eyewitness accounts. The Baron has an advisor, Harold the Holy, who is a committed pacifist.</p>
+	
+	<p><b>Gary:</b> <em>Thinking: Ok, so Bloated is indifferent. He doesn't want Hommlet to be destroyed, since that eats into his revenue. But Harold has been pressuring him to be nicer to the neighboring orcs...</em> Ok, the Baron says "My guard captain says you think there's an invading army. What's up with that?" Harold says "certainly they're just peaceful migrants." How do you respond?</p>
+	
+	<p><b>Beth:</b> Barkor's not the most charismatic, but this is his thing. He pulls out the string of orc ears and dumps it on the table in front of the Baron. "We ran into a few of their scouting parties in the woods well within the Barony's borders. They weren't particularly inclined to talk...except with their javelins and arrows. We did find their tribal badges"--and he produces the carved tribal tokens--"seems they come from about 5 different tribes. All of which normally hate each other. One of them screamed something about 'the will of the Fang'. Probably some warleader or shaman that's unified the tribes." Barkor's trying to convince the leaders about the magnitude of the threat.</p>
+	
+	<p><b>Dave:</b> Delenor will speak up--"My best hypothesis as to who this 'Fang' is is that they're talking about the Red Fang. That is, the demon prince." I'm trying to help Barkor here.</p>
+	
+	<p><b>Gary:</b> Ok, Barkor, go ahead and make a Charisma (Persuasion) check at advantage because of Delenor's help. I'm going to treat this as an attempt to improve their attitude to you, since you haven't explicitly asked them to do anything yet. Success means that you've improved the Baron's attitude; great success (5+ over) means you'll improve Harold's from unfriendly. That work? Or do you want to try to go for the final goal of getting them to send help.</p>
+	
+	<p><b>Beth & Dave:</b> Nah, that's fine. Gotta break them out of their shells first. <em>Beth rolls: a 14 on the die. Not proficient, and only a +1 Charisma modifier</em>. 15 on that check.</p>
+	
+	<p><b>Gary:</b> That's enough for Bloated. He says, with fear in his eyes "really? That seems...mighty serious. And certainly not peaceful. Harold, are you sure?" Harold remains skeptical. "I'm sure the elf is mistaken. The orcs around here haven't worshiped the Red Fang since well before the Cataclysm." Ok, what next? Charleze? Alakabeth?</p>
+	
+	<p><b>Alice:</b> Alakabeth's been studying the two of them, trying to figure out why Harold is so insistent. What can she gather about his motivations?</p>
+	
+	<p><b>Gary:</b> Well, he's got a reputation as a committed pacifist. He particularly venerates Peor-fala, who is notoriously peace-loving. If you want to dig deeper, give me a Wisdom (Insight) check. <em>Thinks: He's slimy, but not super obvious about it. So not Easy...let's go with Medium. DC 15.</em></p>
+	
+	<p><b>Alice:</b> Can I combine my Religion and Insight here? See if he's really keeping to his god's tenets? <em>At Gary's nod, she goes ahead and rolls at advantage because she has two relevant proficiencies. The roll is a 17 and a 14, plus proficiency and a +3 modifier. 22 total.</em> 22. I think she's got a good read on him.</p>
+	
+	<p><b>Gary:</b> For a priest of Peor-fala, who normally swear to give their excess to the poor, Harold's robes are particularly fancy and the gleam of jewels on his fingers is notable. And from the well-padded look...he's not exactly been starving. And his denials of the possibility of orcish hostility seem quite strident, almost fearful.</p>
+	
+	<p><b>Alice:</b> <em>Out of character: Guys, I think the priest is being paid off by someone. Or is into something sketchy.</em> Alakabeth coughs and nudges Charleze, whispering something about how sketchy Harold is.</p>
+	
+	<p><b>Charlie:</b> Charleze is going to attempt to get close while Harold's distracted and pick his pockets. See if he has anything incriminating.</p>
+	
+	<p><b>Gary:</b> Give me a Dexterity (Sleight of Hand) check. It's not going to be easy, and if you fail he'll see you. And will likely be very unhappy.</p>
+	
+	<p><b>Charlie:</b> Gotcha. Gonna do it anyway. <em>Rolls: natural 20. Plus expertise and +3 Dexterity. Total of 27</em> 27. I'm a ghost.</p>
+	
+	<p><b>Gary:</b> As you dip into his pockets, you come up with a couple surprising things. First is a substantial sack of coin. Second is an emblem--a ring in the form of a barbed-wire circle. Looks painful to put on. Delenor, with your knowledge of demon cults, you recognize that as belonging to the Cult of the Barbed Coil, a demonic cult dedicated to the Lady of Pain.</p>
+	
+	<p><b>Delenor & Beth:</b> Looking at each other, we point this fact out to the Baron. "Your advisor seems to be in with demonic cults himself. Imagine that, a supposed priest of the Hearth Mistress sitting all fat and happy with a Barbed Coil cult emblem and a stack of cash. Probably bribe money." To Harold--"You know the penalty for demon worship in these lands. Fess up immediately and you'll get a clean death and a quiet burial." We're trying to intimidate him and the Baron.</p>
+	
+	<p><b>Gary:</b> Harold has a look of panic in his eyes. No need for a roll--he's been exposed. "I give up. I was paid much coin by the cult to make sure the orcs took out Hommlet. Seems there's something there they want."</p>
+	
+	<p><b>Beth:</b> Barkor barks "Baron, you <em>will</em> send aid, won't you? A couple companies of soldiers with some knights and scouts?"</p>
+	
+	<p><b>Gary:</b> Bloated's looking for a way out of this mess. "Of course! Of course!." No check needed--you'd already gotten through to him and then removed the last real obstacle.</p>
+	
+	<em>And play continues...</em>
+	
+	<p><b>Discussion</b> Note that most of the action <em>wasn't</em> in Charisma checks. They could have gone straight to the point, but that would have been a much harder row to hoe, breaking through Harold's influence without exposing him. They didn't have to give exact speeches, and the exact words they said didn't really matter as much as their explanations of what they were doing, how they were doing it, and what they wanted. Take, for instance, that first exchange from Beth and Dave. Beth (a) showed her evidence (in the form of the ears and badges), (b) gave enough detail to know that they weren't threatening but were explaining (hence Persuasion, not Intimidation...not yet), and (c) explained what she wanted to have happen. Since Gary wasn't entirely sure, he asked a clarifying question based on his impression of her desire and let her make the call on which it was. Dave's Help action wasn't just "I Help Barkor", but it was fiction-first--showing some bit of knowledge (pretended or otherwise) and how it fit, then explaining what his intent was in doing so. Not to supplant Barkor's efforts, but to assist.</p>
+	
+	<p>Later, Alice and Charlie both used their non-Charisma skills to assist--one in figuring out that Harold was particularly sketchy (and note the request to combine proficiencies to get specific information, a good example of such a request) and then Charlie picking his pocket. All of this together made a done deal and removed the need for further rolls. If he'd come up empty on the pick-pocketing, they still could have intimidated him but it wouldn't have been an easy roll and they certainly wouldn't have gotten the full story. The whole scenario could have gone very differently in many ways--that was just one way the party could have navigated the scenario.</p>
+	
+	<h2 class="section" id="surprise">Surprise</h2>
+	<p><b>Gary:</b> You're moving through the woods that are known to contain the nefarious Red Eagle bandit group. How do you want to do this?</p>
+	
+	<p><b>Charlie:</b> Let's try to not be seen. We're moving slowly and stealthily. I'll scout ahead. </p>
+	
+	<p><b>Group:</b> <em>Nods in agreement</em></p>
+	
+	<p><b>Gary:</b> Ok, everyone roll a Dexterity (Stealth) check.</p>
+	
+	<p><b>Group:</b> <em>rolls</em>.</p>
+	
+	<p><b>Alice:</b> <em>Thinks: I rolled a 12, and Alakabeth has a +1 Dexerity modifier and no proficiency.</em> Alakabeth got a 13.</p>
+	
+	<p><b>Beth:</b> <em>Thinks: Barkor is in heavy armor, so he has disadvantage. The dice were a 4 and a 20. Darn. He does have proficiency and a +2 modifier, so that's ok but not great.</em> Barkor got an 8, at disadvantage.</p>
+	
+	<p><b>Charlie:</b> <em>Thinks: Charleze has expertise in Stealth and a +4 modifier. I rolled a 16, so I'm probably hidden</em>. Charleze got a 24.</p>
+	
+	<p><b>Dave:</b> <em>Thinks: No proficiency, but Delenor has a cloak of elvenkind, so he has advantage and a +2 modifier. Rolled a 2 and an 18. Great!</em> Delenor got a 20, non-natural, at advantage.</p>
+	
+	<p><b>Gary:</b> You move through the woods with fair grace for an hour or so, taking care not to step on any twigs. Barkor, you're not so successful as your armor kinda glitters in the sun--you scare some rabbits and birds. Soon you see campfire smoke rising through the trees and hear the Red Eagle bandits going about their daily routine. Charleze, since you're scouting ahead, you catch sight of them first. They do have a watch, but it seems somewhat apathetic. Three bandits in the open, with tents for about 10 total. How do you want to handle this?</p>
+	
+	<p><b>Charlie:</b> I motion the group to silence. Let's ambush the guards. <em>The group agrees.</em></p>
+	
+	<p><b>Gary:</b> Ok, <em>draws out a battle map with the position of the guards marked, as well as trees.</em> Place yourselves behind cover from the guards. Looks like one of the guards (<em>indicates on the map</em>) was more alert than most. The others have disadvantage on their Passive Perception due to distraction. <em>Checks the bandits' Passive Perception: all the bandits normally have 10. With disadvantage, that makes 2 of them have a result of 5 and the other has a result of 10.</em> The two inattentive ones are <a href="conditions.html#surprised">surprised</a>; the alert one notices Barkor trying to hide and is not surprised. Everyone, roll initiative. <em>The players and the GM all roll initiative, resulting in an order of Charleze, Delenor, the bandits, Barkor, then Alakabeth</em>.</p>
+	
+	<p><b>Charlie:</b> Charleze shoots her crossbow at the alert guard, at advantage because I'm hidden from it. <em>Rolls, hits, doesn't deal enough damage to kill the bandit because of all 1s on the damage dice. Drat.</em></p>
+	
+	<p><b>Dave:</b> Delenor shoots a <a href="spells/allspells.html#produce-flame">produce flame</a> at the only bandit in range, one of the surprised ones. <em>Rolls at advantage because hidden, hits, kills the bandit.</em></p>
+	
+	<p><b>Gary:</b> Ok, the alert bandit goes. He yells to the camp, and you hear movement and shouts of alarm. He then draws his light crossbow and fires at the target he saw first, Barkor. <em>Rolls, misses.</em> He misses. The other bandits do nothing, but recover from their surprise at the end of their turn.</p>
+	
+	<p><b>Beth:</b> Well, since Barkor isn't hidden, he's going to charge the alert bandit. I'll move my speed closer and throw a javelin. <em>Rolls normally, hits, kills the bandit.</em></p>
+	
+	<p><b>Alice:</b> Alakabeth casts <a href="spells/allspells.html#bless">bless</a> on herself, Barkor, and Charleze.</p>
+	
+	<em>The rest of the combat plays out as the now-alerted bandits pour out of the camp...</em>
+	
+	<h2 class="section" id="visibility-and-hiding">Visibility and Hiding, Combat</h2>
+	<p>The party is in the depths of a goblin warren, in a large dimly-illuminated chamber with scattered rubble walls standing between 3 and 6 feet tall. Suddenly, they are attacked by a contingent of 4 goblin raiders, led by a goblin mage. Initiative has already been rolled, and the order is Charleze, Goblin Mage, Belkor, Alakabeth, Goblins, and then Delenor. No one was surprised. Currently, the raiders are all 50 ft away from the party; the mage is 60 ft.</p>
+	
+	<p><b>Gary:</b> Ok Charleze, it's your turn.</p>
+	
+	<p><b>Charlie:</b> Charleze wants to get sneak attack on the mage, so he's going to try to duck behind a nearby wall out of sight, hide with Cunning Action, and then take a pot-shot with his crossbow. <em>Gary nods ok. Charlie rolls Dexterity (Stealth): 15 total</em>. 15 on the Dexterity (Stealth) check.</p>
+	
+	<p><b>Gary:</b> Ok, you're hidden from the mage. Go ahead and make your attack at advantage.</p>
+	
+	<p><b>Charlie:</b> <em>Rolls an attack: total of 16.</em> 16. Does that hit? <em>Gary nods.</em> Damage...<em>rolls damage, including sneak attack. 12 total</em> 12 damage. That's my turn.</p>
+	
+	<p><b>Gary:</b> Ok, the mage is definitely not fond of you, but isn't bloodied yet. It's his turn...he casts a spell...<em>Pause, waiting for any reactions...none come</em>...and vanishes from sight. He's invisible. Since he's more than 30 feet from you, you all can no longer tell where he is. <em>Removes the token from the battle map.</em> Belkor, your turn.</p>
+	
+	<p><b>Beth:</b> Belkor's going to hang back and shoot his bow at one of the goblins he can see. I need to stay to protect the squishies. <em>Gary nods. Beth rolls attack: 14. Damage: 8</em>. 14 to hit, 8 damage if it hits. I'll move so I can get between as many of the goblins and the casters as I can.</p>
+	
+	<p><b>Gary:</b> Ok, that takes out that goblin. He's down on the floor squealing his last. Alakabeth--your turn.</p>
+	
+	<p><b>Alice:</b> Alakabeth is going reserve her big stuff and just <em>sacred flame</em> one of the goblins. Dex save, DC 13. <em>Gary nods and rolls: 15.</em> Darn. She's going to take cover behind some rubble.</p>
+	
+	<p><b>Gary:</b> Goblin raiders go--two use their bonus action to Dash and move up to within melee range of Belkor. Two attacks with their swords <em>Rolls, a hit and a miss. Rolls damage: 5</em> 5 slashing damage. The other two Hide behind the rubble <em>points</em> here and here. <em>Rolls Dexterity (Stealth): an 8 and a 15.</em> Ok, so this one's hidden <em>removes token</em>. The other one kicked a rock and yelped; you all heard that. Not hidden. Both try to shoot from cover at Delenor, yelling "gank the squishy!" in Goblin. Hidden one has advantage; other is normal. <em>rolls, hidden one rolls 18 and a natural 20, other one rolls 15.</em>. Crit and a hit. <em>Rolls damage:</em> 9 and 5...perfectly average. 14 total. The hidden one is now visible again because he made an attack. Delenor, your turn.</p>
+	
+	<p><b>Dave:</b> Ouch. Four goblins we can see, right? I'm going to use my Perceptive skill trick to Search for the mage as a bonus action. That's a Wisdom (Perception) check, right? And since I have darkvision, if he's within 60 feet, I don't have disadvantage. <em>Gary nods. Dave rolls.</em> Nice. 21. Does that give me an idea where he is?</p>
+	
+	<p><b>Gary:</b> <em>Thinking: he's 70 feet out, so that's really a 16. But his passive Dexterity (Stealth) is only 15, so...</em> Yeah. You catch a swirl of dust and the imprint of a hand against this pillar, about 70 feet away. You still can't see him, but you know where he is.</p>
+	
+	<p><b>Dave:</b> Ok, then I'll move a bit closer and for my action I'll cast <a href="spells/allspells.html#shatter">shatter</a>, centered right next to him. DC 13 Constitution saving throw, <em>rolls</em> 14 damage on a fail, 7 on a success. <em>Gary rolls...a 4. Then rolls a Constitution saving throw...a 5. Dice are not in the goblin's favor tonight.</em></p>
+	
+	<p><b>Gary:</b> The mage wasn't expecting that--his concentration drops and he becomes visible. He's also bloodied. Charleze, your turn.</p>
+	
+	<em>And the battle continues...</em>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

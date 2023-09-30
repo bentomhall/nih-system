@@ -4,314 +4,390 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NIH Items</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="../main.css" rel="stylesheet"/>
-<link rel="stylesheet" href="classes.css">
 </head>
 <body>
-<header>
-<div>Pages:</div>
-<div><a href="../index.html">Changelog</a></div>
-<div><a href="../introduction.html">Introduction</a></div>
-<div><a href="../core-system.html">Core System</a></div>
-<div><a href="../character-creation.html">Character Creation</a></div>
-<div><a href="../equipment.html">Equipment</a></div>
-<div><a href="../spells.html">Incantations, Spells, and Legendary Effects</a></div>
-<div><a href="../skill-tricks.html">Skill Tricks</a></div>
-<div><a href="../items.html">Magic Items</a></div>
-<div><a href="../monsters.html">Monsters</a></div>
-<div><a href="../appendixes.html">Appendixes</a></div>
-</header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="lineages.html" class="dropdown-item">Lineages</a>
+					<a href="cultures.html" class="dropdown-item">Cultures</a>
+					<a href="backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="classes/classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="classes/arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="classes/armsman.html" class="dropdown-item">Armsman</a>
+					<a href="classes/brawler.html" class="dropdown-item">Brawler</a>
+					<a href="classes/oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="classes/priest.html" class="dropdown-item">Priest</a>
+					<a href="classes/ranger.html" class="dropdown-item">Ranger</a>
+					<a href="classes/rogue.html" class="dropdown-item">Rogue</a>
+					<a href="classes/shaman.html" class="dropdown-item">Shaman</a>
+					<a href="classes/spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="classes/warden.html" class="dropdown-item">Warden</a>
+					<a href="classes/warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="items/potions.html" class="dropdown-item active">Consumables</a>
+					<a href="items/rings.html" class="dropdown-item">Rings</a>
+					<a href="items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="conditions.html" class="dropdown-item">Conditions</a>
+					<a href="examples.html" class="dropdown-item">Examples</a>
+					<a href="world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 <div class="container">
-    <h2 class="section">Consumables</h2>
-    <p>The items in this section are all linked by the fact that they are truly consumable--they lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.</p>
-    
-    <p>Consuming a potion yourself requires a bonus action, while administering it to another requires an action. Only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature--generally oils apply to items or objects and unguents to creatures.</p>
-    
-    <h3 class="subsection">Apprentice's Friend</h3>
-    <p>Potion, Journeyman</p>
-    
-    <p>This oily black liquid has a strong smell. A single dose of this is approximately 16 ounces of liquid. When consumed by spending your action over the course of 1 minute, the drinker gains the benefit of a short rest. Drinking another Apprentice's Friend before finishing a long rest still provides the benefit of a short rest, but you gain 5 levels of exhaustion one minute after finishing the drink.</p>
-    
-    <p><b>Formula</b> Crafting this potion requires one quarter-cup of exotic wake-beans and one half-ounce of powdered aether-dense crystal (such as a gemstone). All together, the cost is 75 gp (including the halving for consumables). Brewer's Kit proficiency (+2) is required.</p>
-    
-    <h3 class="subsection">Bead of Force</h3>
-    <p>Consumable, Hero </p>
-    
-    <p>This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together.  You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 bludgeoning damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.</p>
-    
-    <h3 class="subsection">Chime of Opening</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens. The chime can be used ten times. After the tenth time, it cracks and becomes useless.</p>
-    
-    <h3 class="subsection">Dust of Disappearance</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks, casts a spell, causes damage, or imposes a negative condition on another creature, the invisibility ends for that creature.</p>
-    
-    <h3 class="subsection">Dust of Dryness</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible.</p>
-    <p>Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.</p>
-    
-    <p>An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.</p>
-    
-    <h3 class="subsection">Dust of Sneezing and Choking</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>Found in a small container, this powder resembles very fine sand. There is enough of it for one use.</p>
-    
-    <p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration incantation can also end the effect on a creature.</p>
-    
-    <h3 class="subsection">Efreeti Bottle</h3>
-    <p>Consumable, Hero</p>
-    
-    <p>This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.</p>
-    <table>
-    <tr><th><p>d100</th><th>Effect </p></th></tr>
-    <tr><td>01-10</td><td>The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.</td></tr>
-    <tr><td>11 - 90</td><td>The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.</td></tr>
-    <tr><td>91 - 00</td><td>The efreeti can grant three wishes for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic.</td></tr>
-    </table>
-    
-    <p>If the efreeti grants wishes, those wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.</p>
-    
-    <h3 class="subsection">Elemental Gem</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the</p>
-    <a href="../spells/allspells.html#conjure-elemental">conjure-elemental</a> spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
-    <table>
-    <tr><th>Gem</th><th>Summoned Elemental</th></tr>
-    <tr><td>Blue sapphire</td><td>Air elemental</td></tr>
-    <tr><td>Yellow diamond</td><td>Earth elemental</td></tr>
-    <tr><td>Red corundum</td><td>Fire elemental</td></tr>
-    <tr><td>Emerald</td><td>Water elemental</td></tr>
-    </table>
-    
-    <h3 class="subsection">Feather Token</h3>
-    <p>Consumable, Hero </p>
-    
-    <p>This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.</p>
-    <table>
-    <tr><th>d100</th><th>Feather Token</th><th></th><th>d100</th><th>Feather Token</th></tr>
-    <tr><td>01 - 20</td><td>Anchor</td><td></td><td>51 - 65</td><td>Swan boat</td></tr>
-    <tr><td>21 - 35</td><td>Bird</td><td></td><td>66 - 90</td><td>Tree</td></tr>
-    <tr><td>36 - 50</td><td>Fan</td><td></td><td>91 - 00</td><td>Whip</td></tr>
-    </table>
-    
-    <p><b>Anchor</b> You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.</p>
-    
-    <p><b>Bird</b> You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.</p>
-    
-    <p><b>Fan</b> If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.</p>
-    
-    <p><b>Swan Boat</b> You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.</p>
-    
-    <p><b>Tree</b> You must be outdoors to use this token.You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.</p>
-    
-    <p><b>Whip</b> You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 slashing damage.</p>
-    
-    <p>As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.</p>
-    
-    <h3 class="subsection">Gem of Brightness</h3>
-    <p>Consumable, Adventurer</p>
-    
-    <p>This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:</p>
-    <ul>
-    <li>The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.</li>
-    <li>The second command word expends 1 charge and causes the gem to fire a brilliant beam of light atone creature you can see within 60 feet of you. Thecreature must succeed on a DC 15 Constitutionsaving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
-    <li>The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.</li>
-    </ul>
-    
-    <p>When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.</p>
-    
-    <h3 class="subsection">Marvelous Pigments</h3>
-    <p>Consumable, Hero </p>
-    
-    <p>Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features-such as a door, a pit, flowers, trees, cells, rooms, or weapons-that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.</p>
-    
-    <h3 class="subsection">Necklace of Fireballs</h3>
-    <p>Consumable, Hero </p>
-    
-    <p>This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a <a href="../spells/allspells.html#fireball">fireball</a> spell (5 AET, save DC 15). You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the effective aether cost of the fireball by 2 for each bead beyond the first.</p>
-    
-    <h3 class="subsection">Oil of Etherealness</h3>
-    <p>Potion, Hero</p>
-    
-    <p>Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the <a href="../spells/legendary-effects.html#etherealness">etherealness</a> spell for 1 hour.</p>
-    
-    <h3 class="subsection">Oil of Sharpness</h3>
-    <p>Potion, Hero </p>
-    
-    <p>This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is masterwork and has a +6 bonus to damage rolls.</p>
-    
-    <h3 class="subsection">Oil of Slipperiness</h3>
-    <p>Potion, Adventurer </p>
-    
-    <p>This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a <a href="../spells/allspells.html#freedom-of-movement">freedom-of-movement</a> spell for 8 hours.  Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.</p>
-    
-    <h3 class="subsection">Potion of Animal Friendship</h3>
-    <p>Potion, Adventurer</p>
-    
-    <p>When you drink this potion and for one hour afterward, you can attempt to convice a beast that you mean it no harm. Choose a beast that you can see within 60 feet. It must be able to hear and see you. The beast must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 24 hours. If you or one of your companions harms the target, the effect ends. You do not gain any direct control over the charmed beast, but you may be able to interact with it (e.g. offering it treats) to convince it to do simple tasks. While charmed, you can understand its desires and communicate yours to it, but it decides how it acts.</p>
-    
-    <h3 class="subsection">Potion of Clairvoyance</h3>
-    <p>Potion, Hero</p>
-    
-    <p>When you drink this potion, you gain the effect of the <a href="../spells/allspells.html#clairvoyance">clairvoyance</a> spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.</p>
-    
-    <h3 class="subsection">Potion of Climbing</h3>
-    <p>Potion, common</p>
-    
-    <p>When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.</p>
-    
-    <h3 class="subsection">Potion of Diminution</h3>
-    <p>Potion, Hero</p>
-    
-    <p>When you drink this potion, you gain the “reduce” effect of the</p>
-    <a href="../spells/allspells.html#enlarge-reduce">enlarge-reduce</a> spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
-    
-    <h3 class="subsection">Potion of Flying</h3>
-    <p>Potion, Hero </p>
-    
-    <p>When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</p>
-    
-    <h3 class="subsection">Potion of Gaseous Form</h3>
-    <p>Potion, Hero </p>
-    
-    <p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
-    
-    <h3 class="subsection">Potion of Giant Strength</h3>
-    <p>Potion, tier varies </p>
-    
-    <p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
-    
-    <table>
-    <tr><th>Type</th><th>Strength</th><th>Tier</th></tr>
-    <tr><td>Hill giant</td><td>+5</td><td>Adventurer</td></tr>
-    <tr><td>Stone/frost giant</td><td>+6</td><td>Hero</td></tr>
-    <tr><td>Fire giant</td><td>+7</td><td>Hero</td></tr>
-    <tr><td>Cloud giant</td><td>+8</td><td>Legendary</td></tr>
-    <tr><td>Storm giant</td><td>+9</td><td>Legendary</td></tr>
-    </table>
-    
-    
-    <h3 class="subsection">Potion of Growth</h3>
-    <p>Potion, Adventurer </p>
-    
-    <p>When you drink this potion, you gain the “enlarge” effect of the <a href="../spells/allspells.html#enlarge-reduce">enlarge-reduce</a> spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.</p>
-    
-    <h3 class="subsection">Potion of Healing</h3>
-    <p>Potion, tier varies </p>
-    
-    <p>You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-    
-    <table>
-    <p><b>Potion of …</b> &      <b>Tier</b>  &   <b>HP Regained</b>
-    </p>
-    <tr><th><p>Healing</th><th>Journeyman</th><th>2d4 + 2      </p></th></tr>
-    <tr><td><p>Greater healing</td><td>Adventurer</td><td>4d4 + 4      </p></td></tr>
-    <tr><td><p>Superior healing</td><td>Adventurer</td><td>8d4 + 8      </p></td></tr>
-    <tr><td><p>Supreme healing</td><td>Hero</td><td>10d4 + 20    </p></td></tr>
-    </table>
-    
-    <p><b>Formula</b> Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing Cost table. The listed cost includes the discount for being consumable.</p>
-    
-    <table>
-    <tr><th>Potion of …</th><th>Cost (gp)</th><th>Proficiency</th></tr>
-    <tr><td>Healing</td><td>25 gp</td><td>+2</td></tr>
-    <tr><td>Greater healing</td><td>50 gp</td><td>+3</td></tr>
-    <tr><td>Superior healing</td><td>100</td><td>+4</td></tr>
-    <tr><td>Supreme healing</td><td>150</td><td>+5</td></tr>
-    </table>
-    
-    <h3 class="subsection">Potion of Heroism</h3>
-    <p>Potion, Hero</p>
-    
-    <p>For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the</p>
-    <a href="../spells/allspells.html#bless">bless</a> spell (no concentration required). This blue potion bubbles and steams as if boiling.
-    
-    <h3 class="subsection">Potion of Invisibility</h3>
-    <p>Potion, Hero</p>
-    
-    <p>This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Any object you wear or carry, whether you were carrying it when the effect started or not, is invisible with you. Items you stop wearing or carrying appear abruptly. The effect ends early if you attack, cast a spell, cause damage, or cause a condition on another creature. </p>
-    
-    <h3 class="subsection">Potion of Mind Reading</h3>
-    <p>Potion, Hero</p>
-    
-    <p>When you drink this potion, you gain the effect of the <a href="../spells/allspells.html#detect-thoughts">detect-thoughts</a> spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.</p>
-    
-    <h3 class="subsection">Potion of Energy Resistance</h3>
-    <p>Potion, Adventurer When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.</p>
-    <table>
-    <tr><th>d8</th><th>Damage Type</th><th></th><th>d8</th><th>Damage Type</th></tr>
-    <tr><td>1</td><td>Acid</td><td></td><td>5</td><td>Necrotic</td></tr>
-    <tr><td>2</td><td>Cold</td><td></td><td>6</td><td>Psychic</td></tr>
-    <tr><td>3</td><td>Fire</td><td></td><td>7</td><td>Radiant</td></tr>
-    <tr><td>4</td><td>Lightning</td><td></td><td>8</td><td>Thunder</td></tr>
-    </table>
-    
-    
-    <h3 class="subsection">Potion of Speed</h3>
-    <p>Potion, Hero When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.</p>
-    
-    <h3 class="subsection">Potion of Water Breathing</h3>
-    <p>Potion, Adventurer </p>
-    
-    <p>You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.</p>
-    
-    <h3 class="subsection">Purple Worm Oil</h3>
-    <p>Oil, Adventurer</p>
-    <p>This oily toxin coats weapons or objects, eating away at those who come in contact with it. This oil can be applied to an object or weapon (one melee weapon or up to 20 pieces of ammunition) over the course of 1 minute and lasts until someone touches the object or is hit by the weapon.</p>
-    
-    <p>A creature that touches the poisoned item or is hit by the poisoned weapon takes 3d6 poison damage, and must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of of their turns while poisoned in this way, the target takes 3d6 poison damage. At the end of each of their turns, they can repeat the saving throw. On a successful save, the poison damage they take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.</p>
-    
-    <h3 class="subsection">Restorative Ointment</h3>
-    <p>Consumable, Adventurer </p>
-    
-    <p>This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>
-    
-    <h3 class="subsection">Sovereign Glue</h3>
-    <p>Oil, Hero </p>
-    
-    <p>This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.  One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent, oil of etherealness, or a DC 30 Strength check.</p>
-    
-    <h3 class="subsection">Spell Scroll/Stone</h3>
-    <p>Scroll, varies </p>
-    
-    <p>A spell scroll (or stone, the only difference being the appropriate tool proficiency for crafting) bears the words of a single spell, written in a mystical cipher. You can read the scroll and cast its spell without providing any material components. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-    
-    <p>If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.</p>
-    
-    <p>The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.</p>
-    
-    <table>
-    <p><b>Aether Cost</b> &  <b>Tier</b> & <b>Save DC</b> & <b>Attack Bonus</b>
-    </p>
-    <tr><th>0</th><th>Journeyman</th><th>13</th><th>+5</th></tr>
-    <tr><td>2</td><td>Journeyman</td><td>13</td><td>+5</td></tr>
-    <tr><td>3</td><td>Adventurer</td><td>13</td><td>+5</td></tr>
-    <tr><td>5</td><td>Adventurer</td><td>15</td><td>+7</td></tr>
-    <tr><td>8</td><td>Hero</td><td>15</td><td>+7</td></tr>
-    <tr><td>12</td><td>Hero</td><td>17</td><td>+9</td></tr>
-    <tr><td><p>Legendary</td><td>Legendary</td><td>18</td><td>+10 </p></td></tr>
-    </table>
-    
-    <p><b>Formula</b> Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.</p>
-    
-    <table>
-    <tr><th>Tier</th><th>Cost (gp)</th><th>Proficiency</th></tr>
-    <tr><td>Journeyman</td><td>50</td><td>+2</td></tr>
-    <tr><td>Adventurer</td><td>150</td><td>+3</td></tr>
-    <tr><td>Hero</td><td>1500</td><td>+5</td></tr>
-    </table>
-    
-    <h3 class="subsection">Universal Solvent</h3>
-    <p>Wondrous item, Adventurer</p>
-    
-    <p>This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.</p>
+	<h2 class="section">Consumables</h2>
+	<p>The items in this section are all linked by the fact that they are truly consumable--they lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.</p>
+	
+	<p>Consuming a potion yourself requires a bonus action, while administering it to another requires an action. Only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature--generally oils apply to items or objects and unguents to creatures.</p>
+	
+	<h3 class="subsection">Apprentice's Friend</h3>
+	<p>Potion, Journeyman</p>
+	
+	<p>This oily black liquid has a strong smell. A single dose of this is approximately 16 ounces of liquid. When consumed by spending your action over the course of 1 minute, the drinker gains the benefit of a short rest. Drinking another Apprentice's Friend before finishing a long rest still provides the benefit of a short rest, but you gain 5 levels of exhaustion one minute after finishing the drink.</p>
+	
+	<p><b>Formula</b> Crafting this potion requires one quarter-cup of exotic wake-beans and one half-ounce of powdered aether-dense crystal (such as a gemstone). All together, the cost is 75 gp (including the halving for consumables). Brewer's Kit proficiency (+2) is required.</p>
+	
+	<h3 class="subsection">Bead of Force</h3>
+	<p>Consumable, Hero </p>
+	
+	<p>This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together.  You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 bludgeoning damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.</p>
+	
+	<h3 class="subsection">Chime of Opening</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens. The chime can be used ten times. After the tenth time, it cracks and becomes useless.</p>
+	
+	<h3 class="subsection">Dust of Disappearance</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks, casts a spell, causes damage, or imposes a negative condition on another creature, the invisibility ends for that creature.</p>
+	
+	<h3 class="subsection">Dust of Dryness</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible.</p>
+	<p>Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.</p>
+	
+	<p>An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+	
+	<h3 class="subsection">Dust of Sneezing and Choking</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>Found in a small container, this powder resembles very fine sand. There is enough of it for one use.</p>
+	
+	<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration incantation can also end the effect on a creature.</p>
+	
+	<h3 class="subsection">Efreeti Bottle</h3>
+	<p>Consumable, Hero</p>
+	
+	<p>This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.</p>
+	<table>
+	<tr><th><p>d100</th><th>Effect </p></th></tr>
+	<tr><td>01-10</td><td>The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.</td></tr>
+	<tr><td>11 - 90</td><td>The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.</td></tr>
+	<tr><td>91 - 00</td><td>The efreeti can grant three wishes for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic.</td></tr>
+	</table>
+	
+	<p>If the efreeti grants wishes, those wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.</p>
+	
+	<h3 class="subsection">Elemental Gem</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the</p>
+	<a href="../spells/allspells.html#conjure-elemental">conjure-elemental</a> spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
+	<table>
+	<tr><th>Gem</th><th>Summoned Elemental</th></tr>
+	<tr><td>Blue sapphire</td><td>Air elemental</td></tr>
+	<tr><td>Yellow diamond</td><td>Earth elemental</td></tr>
+	<tr><td>Red corundum</td><td>Fire elemental</td></tr>
+	<tr><td>Emerald</td><td>Water elemental</td></tr>
+	</table>
+	
+	<h3 class="subsection">Feather Token</h3>
+	<p>Consumable, Hero </p>
+	
+	<p>This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.</p>
+	<table>
+	<tr><th>d100</th><th>Feather Token</th><th></th><th>d100</th><th>Feather Token</th></tr>
+	<tr><td>01 - 20</td><td>Anchor</td><td></td><td>51 - 65</td><td>Swan boat</td></tr>
+	<tr><td>21 - 35</td><td>Bird</td><td></td><td>66 - 90</td><td>Tree</td></tr>
+	<tr><td>36 - 50</td><td>Fan</td><td></td><td>91 - 00</td><td>Whip</td></tr>
+	</table>
+	
+	<p><b>Anchor</b> You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.</p>
+	
+	<p><b>Bird</b> You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.</p>
+	
+	<p><b>Fan</b> If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.</p>
+	
+	<p><b>Swan Boat</b> You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.</p>
+	
+	<p><b>Tree</b> You must be outdoors to use this token.You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.</p>
+	
+	<p><b>Whip</b> You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 slashing damage.</p>
+	
+	<p>As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.</p>
+	
+	<h3 class="subsection">Gem of Brightness</h3>
+	<p>Consumable, Adventurer</p>
+	
+	<p>This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:</p>
+	<ul>
+	<li>The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.</li>
+	<li>The second command word expends 1 charge and causes the gem to fire a brilliant beam of light atone creature you can see within 60 feet of you. Thecreature must succeed on a DC 15 Constitutionsaving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+	<li>The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.</li>
+	</ul>
+	
+	<p>When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.</p>
+	
+	<h3 class="subsection">Marvelous Pigments</h3>
+	<p>Consumable, Hero </p>
+	
+	<p>Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features-such as a door, a pit, flowers, trees, cells, rooms, or weapons-that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.</p>
+	
+	<h3 class="subsection">Necklace of Fireballs</h3>
+	<p>Consumable, Hero </p>
+	
+	<p>This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a <a href="../spells/allspells.html#fireball">fireball</a> spell (5 AET, save DC 15). You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the effective aether cost of the fireball by 2 for each bead beyond the first.</p>
+	
+	<h3 class="subsection">Oil of Etherealness</h3>
+	<p>Potion, Hero</p>
+	
+	<p>Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the <a href="../spells/legendary-effects.html#etherealness">etherealness</a> spell for 1 hour.</p>
+	
+	<h3 class="subsection">Oil of Sharpness</h3>
+	<p>Potion, Hero </p>
+	
+	<p>This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is masterwork and has a +6 bonus to damage rolls.</p>
+	
+	<h3 class="subsection">Oil of Slipperiness</h3>
+	<p>Potion, Adventurer </p>
+	
+	<p>This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a <a href="../spells/allspells.html#freedom-of-movement">freedom-of-movement</a> spell for 8 hours.  Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.</p>
+	
+	<h3 class="subsection">Potion of Animal Friendship</h3>
+	<p>Potion, Adventurer</p>
+	
+	<p>When you drink this potion and for one hour afterward, you can attempt to convice a beast that you mean it no harm. Choose a beast that you can see within 60 feet. It must be able to hear and see you. The beast must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 24 hours. If you or one of your companions harms the target, the effect ends. You do not gain any direct control over the charmed beast, but you may be able to interact with it (e.g. offering it treats) to convince it to do simple tasks. While charmed, you can understand its desires and communicate yours to it, but it decides how it acts.</p>
+	
+	<h3 class="subsection">Potion of Clairvoyance</h3>
+	<p>Potion, Hero</p>
+	
+	<p>When you drink this potion, you gain the effect of the <a href="../spells/allspells.html#clairvoyance">clairvoyance</a> spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.</p>
+	
+	<h3 class="subsection">Potion of Climbing</h3>
+	<p>Potion, common</p>
+	
+	<p>When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.</p>
+	
+	<h3 class="subsection">Potion of Diminution</h3>
+	<p>Potion, Hero</p>
+	
+	<p>When you drink this potion, you gain the “reduce” effect of the</p>
+	<a href="../spells/allspells.html#enlarge-reduce">enlarge-reduce</a> spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
+	
+	<h3 class="subsection">Potion of Flying</h3>
+	<p>Potion, Hero </p>
+	
+	<p>When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</p>
+	
+	<h3 class="subsection">Potion of Gaseous Form</h3>
+	<p>Potion, Hero </p>
+	
+	<p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
+	
+	<h3 class="subsection">Potion of Giant Strength</h3>
+	<p>Potion, tier varies </p>
+	
+	<p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
+	
+	<table>
+	<tr><th>Type</th><th>Strength</th><th>Tier</th></tr>
+	<tr><td>Hill giant</td><td>+5</td><td>Adventurer</td></tr>
+	<tr><td>Stone/frost giant</td><td>+6</td><td>Hero</td></tr>
+	<tr><td>Fire giant</td><td>+7</td><td>Hero</td></tr>
+	<tr><td>Cloud giant</td><td>+8</td><td>Legendary</td></tr>
+	<tr><td>Storm giant</td><td>+9</td><td>Legendary</td></tr>
+	</table>
+	
+	
+	<h3 class="subsection">Potion of Growth</h3>
+	<p>Potion, Adventurer </p>
+	
+	<p>When you drink this potion, you gain the “enlarge” effect of the <a href="../spells/allspells.html#enlarge-reduce">enlarge-reduce</a> spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.</p>
+	
+	<h3 class="subsection">Potion of Healing</h3>
+	<p>Potion, tier varies </p>
+	
+	<p>You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+	
+	<table>
+	<p><b>Potion of …</b> &      <b>Tier</b>  &   <b>HP Regained</b>
+	</p>
+	<tr><th><p>Healing</th><th>Journeyman</th><th>2d4 + 2      </p></th></tr>
+	<tr><td><p>Greater healing</td><td>Adventurer</td><td>4d4 + 4      </p></td></tr>
+	<tr><td><p>Superior healing</td><td>Adventurer</td><td>8d4 + 8      </p></td></tr>
+	<tr><td><p>Supreme healing</td><td>Hero</td><td>10d4 + 20    </p></td></tr>
+	</table>
+	
+	<p><b>Formula</b> Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing Cost table. The listed cost includes the discount for being consumable.</p>
+	
+	<table>
+	<tr><th>Potion of …</th><th>Cost (gp)</th><th>Proficiency</th></tr>
+	<tr><td>Healing</td><td>25 gp</td><td>+2</td></tr>
+	<tr><td>Greater healing</td><td>50 gp</td><td>+3</td></tr>
+	<tr><td>Superior healing</td><td>100</td><td>+4</td></tr>
+	<tr><td>Supreme healing</td><td>150</td><td>+5</td></tr>
+	</table>
+	
+	<h3 class="subsection">Potion of Heroism</h3>
+	<p>Potion, Hero</p>
+	
+	<p>For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the</p>
+	<a href="../spells/allspells.html#bless">bless</a> spell (no concentration required). This blue potion bubbles and steams as if boiling.
+	
+	<h3 class="subsection">Potion of Invisibility</h3>
+	<p>Potion, Hero</p>
+	
+	<p>This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Any object you wear or carry, whether you were carrying it when the effect started or not, is invisible with you. Items you stop wearing or carrying appear abruptly. The effect ends early if you attack, cast a spell, cause damage, or cause a condition on another creature. </p>
+	
+	<h3 class="subsection">Potion of Mind Reading</h3>
+	<p>Potion, Hero</p>
+	
+	<p>When you drink this potion, you gain the effect of the <a href="../spells/allspells.html#detect-thoughts">detect-thoughts</a> spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.</p>
+	
+	<h3 class="subsection">Potion of Energy Resistance</h3>
+	<p>Potion, Adventurer When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.</p>
+	<table>
+	<tr><th>d8</th><th>Damage Type</th><th></th><th>d8</th><th>Damage Type</th></tr>
+	<tr><td>1</td><td>Acid</td><td></td><td>5</td><td>Necrotic</td></tr>
+	<tr><td>2</td><td>Cold</td><td></td><td>6</td><td>Psychic</td></tr>
+	<tr><td>3</td><td>Fire</td><td></td><td>7</td><td>Radiant</td></tr>
+	<tr><td>4</td><td>Lightning</td><td></td><td>8</td><td>Thunder</td></tr>
+	</table>
+	
+	
+	<h3 class="subsection">Potion of Speed</h3>
+	<p>Potion, Hero When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.</p>
+	
+	<h3 class="subsection">Potion of Water Breathing</h3>
+	<p>Potion, Adventurer </p>
+	
+	<p>You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.</p>
+	
+	<h3 class="subsection">Purple Worm Oil</h3>
+	<p>Oil, Adventurer</p>
+	<p>This oily toxin coats weapons or objects, eating away at those who come in contact with it. This oil can be applied to an object or weapon (one melee weapon or up to 20 pieces of ammunition) over the course of 1 minute and lasts until someone touches the object or is hit by the weapon.</p>
+	
+	<p>A creature that touches the poisoned item or is hit by the poisoned weapon takes 3d6 poison damage, and must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of of their turns while poisoned in this way, the target takes 3d6 poison damage. At the end of each of their turns, they can repeat the saving throw. On a successful save, the poison damage they take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.</p>
+	
+	<h3 class="subsection">Restorative Ointment</h3>
+	<p>Consumable, Adventurer </p>
+	
+	<p>This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>
+	
+	<h3 class="subsection">Sovereign Glue</h3>
+	<p>Oil, Hero </p>
+	
+	<p>This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.  One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent, oil of etherealness, or a DC 30 Strength check.</p>
+	
+	<h3 class="subsection">Spell Scroll/Stone</h3>
+	<p>Scroll, varies </p>
+	
+	<p>A spell scroll (or stone, the only difference being the appropriate tool proficiency for crafting) bears the words of a single spell, written in a mystical cipher. You can read the scroll and cast its spell without providing any material components. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+	
+	<p>If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.</p>
+	
+	<p>The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.</p>
+	
+	<table>
+	<p><b>Aether Cost</b> &  <b>Tier</b> & <b>Save DC</b> & <b>Attack Bonus</b>
+	</p>
+	<tr><th>0</th><th>Journeyman</th><th>13</th><th>+5</th></tr>
+	<tr><td>2</td><td>Journeyman</td><td>13</td><td>+5</td></tr>
+	<tr><td>3</td><td>Adventurer</td><td>13</td><td>+5</td></tr>
+	<tr><td>5</td><td>Adventurer</td><td>15</td><td>+7</td></tr>
+	<tr><td>8</td><td>Hero</td><td>15</td><td>+7</td></tr>
+	<tr><td>12</td><td>Hero</td><td>17</td><td>+9</td></tr>
+	<tr><td><p>Legendary</td><td>Legendary</td><td>18</td><td>+10 </p></td></tr>
+	</table>
+	
+	<p><b>Formula</b> Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.</p>
+	
+	<table>
+	<tr><th>Tier</th><th>Cost (gp)</th><th>Proficiency</th></tr>
+	<tr><td>Journeyman</td><td>50</td><td>+2</td></tr>
+	<tr><td>Adventurer</td><td>150</td><td>+3</td></tr>
+	<tr><td>Hero</td><td>1500</td><td>+5</td></tr>
+	</table>
+	
+	<h3 class="subsection">Universal Solvent</h3>
+	<p>Wondrous item, Adventurer</p>
+	
+	<p>This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.</p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,14 +8,6 @@
     --light-visited-links: lightgrey;
 }
 
-header a, header div {
-    color: var(--light-link-color);
-}
-
-header a:visited {
-    color: var(--light-visited-links);
-}
-
 body {
     background-color: var(--main-background);
 }
@@ -44,16 +36,6 @@ tr > th {
 
 tr:nth-child(even) {
     background-color: var(--table-dark);
-}
-
-header {
-    display: flex;
-    flex: row no-wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    background-color: var(--main-color);
 }
 
 figure {

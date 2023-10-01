@@ -44,7 +44,7 @@ h3 {
 
 .divider {
     clear: both;
-    background-color: var(--main-color);
+    border-bottom: 1px solid var(--main-color)
 }
 
 .container {

@@ -4,22 +4,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NIH Equipment</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="main.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-<div>Pages:</div>
-<div><a href="index.html">Changelog</a></div>
-<div><a href="introduction.html">Introduction</a></div>
-<div><a href="core-system.html">Core System</a></div>
-<div><a href="character-creation.html">Character Creation</a></div>
-<div><a href="equipment.html">Equipment</a></div>
-<div><a href="spells.html">Incantations, Spells, and Legendary Effects</a></div>
-<div><a href="skill-tricks.html">Skill Tricks</a></div>
-<div><a href="items.html">Magic Items</a></div>
-<div><a href="monsters.html">Monsters</a></div>
-<div><a href="appendixes.html">Appendixes</a></div>
-</header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="lineages.html" class="dropdown-item">Lineages</a>
+					<a href="cultures.html" class="dropdown-item">Cultures</a>
+					<a href="backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="classes/classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="classes/arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="classes/armsman.html" class="dropdown-item">Armsman</a>
+					<a href="classes/brawler.html" class="dropdown-item">Brawler</a>
+					<a href="classes/oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="classes/priest.html" class="dropdown-item">Priest</a>
+					<a href="classes/ranger.html" class="dropdown-item">Ranger</a>
+					<a href="classes/rogue.html" class="dropdown-item">Rogue</a>
+					<a href="classes/shaman.html" class="dropdown-item">Shaman</a>
+					<a href="classes/spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="classes/warden.html" class="dropdown-item">Warden</a>
+					<a href="classes/warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="items/rings.html" class="dropdown-item">Rings</a>
+					<a href="items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="conditions.html" class="dropdown-item">Conditions</a>
+					<a href="examples.html" class="dropdown-item">Examples</a>
+					<a href="world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 <div class="container">
 	<h1 class="chapter" id="equipment">Equipment</h1>
 	
@@ -37,7 +112,7 @@
 	
 	<p>A standard coin weighs about a third of an ounce, so fifty coins weigh a pound.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Coin</th> <th>CP</th> <th>SP</th> <th>GP</th> <th>PP</th> <th>AC</th></tr>
 		<tr><td>Copper (cp)</td><td>1</td><td>1/10</td><td>1/100</td><td>1/1,000</td><td>1/10,000 </td></tr>
@@ -46,7 +121,7 @@
 		<tr><td>Platinum (pp)</td><td>1,000</td><td>100</td><td>10</td><td>1</td><td>1/10 </td></tr>
 		<tr><td>Astral credit (ac)</td><td>10,000</td><td>1,000</td><td>100</td><td>10</td><td>1 </td></tr>
 		</table>
-		<figcaption>Standard Exchange Rates</figcaption>
+		<figcaption class="figure-caption">Standard Exchange Rates</figcaption>
 	</figure>
 	
 	
@@ -112,7 +187,7 @@
 	
 	<p><b>Plate</b> Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Armor</th><th>Cost</th><th>Armor Class (AC)</th><th>Strength</th><th>Stealth</th><th>Weight</th></tr>
 			<tr><td>Light Armor</td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -131,7 +206,7 @@
 			<tr><td><b>Shield</b></td><td></td><td></td><td></td><td></td><td></td></tr>
 			<tr><td>Shield</td><td>10 gp</td><td>+2</td><td>—</td><td>—</td><td>6 lb.</td></tr>
 		</table>
-		<figcaption>Armor</figcaption>
+		<figcaption class="figure-caption">Armor</figcaption>
 	</figure>
 	
 	
@@ -142,7 +217,7 @@
 	<p><b>Don</b> This is the time it takes to put on armor. You benefit from the armor's AC only if you take the full time to don the suit of armor.</p>
 	
 	<p><b>Doff</b> This is the time it takes to take off armor. If you have help, reduce this time by half.</p>
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Category</h></th><th>Don</th><th>Doff</th></tr>
 			<tr><td>Light Armor</td><td>1 minute</td><td>1 minute </td></tr>
@@ -150,7 +225,7 @@
 			<tr><td>Heavy Armor</td><td>10 minutes</td><td>5 minutes </td></tr>
 			<tr><td>Shield</td><td>1 action</td><td>1 action </td></tr>
 		</table>
-		<figcaption>Donning and Doffing Armor</figcaption>
+		<figcaption class="figure-caption">Donning and Doffing Armor</figcaption>
 	</figure>
 	
 	<h3 class="subsection">Fantastic Materials: Armor</h3>
@@ -158,7 +233,7 @@
 	
 	<p>Additionally, Masterwork armor can be crafted by particularly skilled craftsmen. It costs twice the normal price, but reduces the cost of the <a href="core-system.html#action-deflect">deflect</a> action by 1 STA. Masterwork heavy and medium armor also allows you to add an additional point of your Dexterity bonus (if positive) to your AC. This raises the contribution from Dexterity for heavy armor to +1 max.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Material</th><th>Applies To</th><th>Tier/Rarity</th><th>Effect</th> </td></tr>
 		<tr><td>Adamantine</td><td>Heavy armor</td><td>2/Uncommon</td><td>weight doubled, critical hits have no extra effect. Requires STR +3. </td></tr>
@@ -166,7 +241,7 @@
 		<tr><td>Exotic Leather</td><td>leather, hide, reinforced leather</td><td>1+/Common</td><td>Increases AC by 1. </td></tr>
 		<tr><td>Chitin/exotic scales</td><td>scale, brigandine, breastplate</td><td>2+/Uncommon</td><td>Non-metal. If the creature had immunity to a damage type, gain resistance to that type. </td></tr>
 		</table>
-		<figcaption>Exotic Armor Materials</figcaption>
+		<figcaption class="figure-caption">Exotic Armor Materials</figcaption>
 	</figure>
 	
 	<h2 class="section">Weapons</h2>
@@ -236,7 +311,7 @@
 	
 	<p>Additionally, weapons can be made out of exotic materials just like armor can. This is much more expensive than regular steel, but can add unusual effects. Most of these materials require quests to find a source (including possibly negotiating access to an existing source) of the material, as well as a craftsman capable of working them. The rarity, effect, and application of each material can be found on the Exotic Weapon Materials table.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Material</th><th>Applies To</th><th>Tier/Rarity</th><th>Effect</th></tr>
 		<tr><td>Adamantine</td><td>Metal weapons</td><td>2/Uncommon</td><td>Deals maximum damage to objects, ignores construct damage resistance. Requires STR +3. </td></tr>
@@ -244,7 +319,7 @@
 		<tr><td>Ignitite</td><td>Ammunition, melee weapons</td><td>3/Rare</td><td>Deals 1d6 fire damage on hit. Ignites flammable materials. </td></tr>
 		<tr><td>Necrite</td><td>Ammunition, melee weapons</td><td>3/Rare</td><td>Deals 1d6 necrotic damage on hit. Traps incorporeal creatures it reduces to zero, allowing them to be questioned (as Voice the Voiceless) for 1 minute. </td></tr>
 		</table>
-		<figcaption>Exotic Weapon materials</figcaption>
+		<figcaption class="figure-caption">Exotic Weapon materials</figcaption>
 	</figure>
 	
 	<h3 class="subsection">Special Weapons</h3>
@@ -261,7 +336,7 @@
 		
 	<p><b>Trident</b> Critical hits made with this weapon restrain the enemy until the end of your next turn.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Name</th><th>Cost</th><th>Damage</th><th>Weight</th><th>Properties</th></tr>
 		<tr><td>Simple Melee Weapons</td><td></td><td></td><td></td><td></td></tr>
@@ -307,7 +382,7 @@
 		<tr><td>Alchemist's fire, flask of</td><td>50 gp</td><td>2d4 fire</td><td>1 lb.</td><td>Consumed, special, thrown (range 20)</td></tr>
 		<tr><td>Holy water, flask of</td><td>25 gp</td><td>2d6 radiant (special)</td><td>1 lb.</td><td>Consumed, special, thrown (range 20)</td></tr>
 		</table>
-		<figcaption>Weapons</figcaption>
+		<figcaption class="figure-caption">Weapons</figcaption>
 	</figure>
 	
 	<h2 class="section">Adventuring Gear</h2>
@@ -392,7 +467,7 @@
 	<p><b>Torch</b> A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 	
 	
-	<figure style="width:100%;margin-left:0px">
+	<figure class="figure">
 		<table class="wide">
 		<tr><th>Item</th><th>Cost</th><th>Weight</th><th><!-- --></th><th>Item</th><th>Cost</th><th>Weight</th></tr>
 		<tr><td>Abacus</td><td>2 gp</td><td>2 lb.</td><td><!-- --></td><td>Hunting trap</td><td>5 gp</td><td>25 lb.</td></tr>
@@ -447,10 +522,10 @@
 		<tr><td>Holy water (flask)</td><td>25 gp</td><td>1 lb.</td><td><!-- --></td><td>Waterskin</td><td>2 sp</td><td>5 lb. (full)</td></tr>
 		<tr><td>Hourglass</td><td>25 gp</td><td>1 lb.</td><td><!-- --></td><td>Whetstone</td><td>1 cp</td><td>1 lb.</td></tr>
 		</table>
-		<figcaption>Adventuring Equipment</figcaption>
+		<figcaption class="figure-caption">Adventuring Equipment</figcaption>
 	</figure>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Container</th><th>Capacity</th></tr>
 			<tr><td>Backpack</td><td>1 cubic foot/30 pounds of gear</td></tr>
@@ -494,7 +569,7 @@
 	
 	<p>A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you make using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the GM might ask you to make a Dexterity check to carve a fine detail with your woodcarver's tools, or a Strength check to make something out of particularly hard wood.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Item</th><th>Cost</th><th>Weight</th></tr>
 			<tr><td><b>Artisan's Tools</b><td></td><td></td></tr>
@@ -537,7 +612,7 @@
 			<tr><td>Thieves' tools</td><td>25 gp</td><td>1 lb.  </td></tr>
 			<tr><td>Vehicles (land or water) </td><td>*</td><td>*</td></tr>
 		</table>
-		<figcaption>Tools and other proficiencies </figcaption>
+		<figcaption class="figure-caption">Tools and other proficiencies </figcaption>
 	</figure>
 
 	<p>* See the <a href="#mounts-and-vehicles">Mounts and Vehicles</a> section.</p>
@@ -576,7 +651,7 @@
 	
 	<p><b>Rowed Vessels</b> Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Item</th><th>Cost</th><th>Speed</th><th>Carrying Capacity</th></tr>
 			<tr><td>Camel</td><td>50 gp </td><td>50 ft.</td><td>480 lb.</td></tr>
@@ -588,10 +663,10 @@
 			<tr><td>Pony</td><td>30 gp </td><td>40 ft.</td><td>225 lb.</td></tr>
 			<tr><td>Warhorse</td><td>400 gp</td><td>60 ft.</td><td>540 lb.</td></tr>
 		</table>
-		<figcaption>Mounts</figcaption>
+		<figcaption class="figure-caption">Mounts</figcaption>
 	</figure>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Item</th><th>Cost</th><th>Weight</th>
 			<tr><td>Barding</td><td>&times;4</td><td>&times;2</td></tr>
@@ -610,10 +685,10 @@
 			<tr><td>Stabling (per day)</td><td>5 sp  </td><td>—</td></tr>
 			<tr><td>Wagon</td><td>35 gp </td><td>400 lb.</td></tr>
 		</table>
-		<figcaption>Saddles, Tack, and land vehicles</figcaption>
+		<figcaption class="figure-caption">Saddles, Tack, and land vehicles</figcaption>
 	</figure>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Item</th><th>Cost</th><th>Speed</th></tr>
 			<tr><td>Galley</td><td>30,000 gp</td><td>4 mph  </td></tr>
@@ -623,7 +698,7 @@
 			<tr><td>Sailing ship</td><td>10,000 gp</td><td>2 mph  </td></tr>
 			<tr><td>Warship</td><td>25,000 gp</td><td>2½ mph</td></tr>
 		</table>
-		<figcaption>Water vehicles</figcaption>
+		<figcaption class="figure-caption">Water vehicles</figcaption>
 	</figure>
 	
 	<h2 class="section">Trade Goods</h2>
@@ -632,7 +707,7 @@
 	
 	<p>Guilds, nobles, and royalty regulate trade. Chartered companies are granted rights to conduct trade along certain routes, to send merchant ships to various ports, or to buy or sell specific goods. Guilds set prices for the goods or services that they control, and determine who may or may not offer those goods and services. Merchants commonly exchange trade goods without using currency. The Trade Goods table shows the value of commonly exchanged goods.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr>
 				<th>Cost</th><th>Goods</th>
@@ -651,7 +726,7 @@
 			<tr><td>50 gp </td><td>1 lb. of gold</td></tr>
 			<tr><td>500 gp</td><td>1 lb. of platinum</td></tr>
 		</table>
-		<figcaption>Trade Goods</figcaption>
+		<figcaption class="figure-caption">Trade Goods</figcaption>
 	</figure>
 	
 	<h2 class="section">Expenses</h2>
@@ -665,7 +740,7 @@
 	
 	<p>Your lifestyle choice can have consequences. Maintaining a wealthy lifestyle might help you make contacts with the rich and powerful, though you run the risk of attracting thieves. Likewise, living frugally might help you avoid criminals, but you are unlikely to make powerful connections.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 			<tr><th>Lifestyle</th><th>Price/Day</th><th>Price/Week</th></tr>
 			<tr><td>Wretched</td><td>— </td><td>--- </td></tr>
@@ -676,7 +751,7 @@
 			<tr><td>Wealthy</td><td>4 gp</td><td>64 gp </td></tr>
 			<tr><td>Aristocratic</td><td>10 gp minimum</td><td>80 gp minimum </td></tr>
 		</table>
-		<figcaption>Lifestyle Costs</figcaption>
+		<figcaption class="figure-caption">Lifestyle Costs</figcaption>
 	</figure>
 	
 	<p><b>Wretched</b> You live in inhumane conditions. With no place to call home, you shelter wherever you can, sneaking into barns, huddling in old crates, and relying on the good graces of people better off than you. A wretched lifestyle presents abundant dangers. Violence, disease, and hunger follow you wherever you go. Other wretched people covet your armor, weapons, and adventuring gear, which represent a fortune by their standards. You are beneath the notice of most people.</p>
@@ -703,7 +778,7 @@
 	
 	<p>The Food, Drink, and Lodging table gives prices for individual food items and a single night's lodging. These prices are included in your total lifestyle expenses.</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Item</th><th>Cost</th></tr>
 		<tr><td><b>Ale</b></td><td>  </td></tr>
@@ -731,7 +806,7 @@
 		<tr><td>--- Common (pitcher)</td><td>2 sp </td></tr>
 		<tr><td>--- Fine (bottle)</td><td>10 gp </td></tr>
 		</table>
-		<figcaption>Food and Drink</figcaption>
+		<figcaption class="figure-caption">Food and Drink</figcaption>
 	</figure>
 	
 	<h3 class="subsection">Services</h3>
@@ -744,7 +819,7 @@
 	
 	<p>Skilled hirelings include anyone hired to perform a service that involves a proficiency (including weapon, tool, or skill): a mercenary, artisan, scribe, and so on. The pay shown is a minimum; some expert hirelings require more pay and hazardous situations generally require a danger bonus. Untrained hirelings are hired for menial work that requires no particular skill and can include laborers, porters, maids, and similar workers. They generally will not accompany a party into especially dangerous situations</p>
 	
-	<figure>
+	<figure class="figure">
 		<table>
 		<tr><th>Service</th><th>Pay</th></tr>
 		<tr><td><b>Coach cab</b>  </td><td></td></tr>
@@ -757,7 +832,7 @@
 		<tr><td>Road or gate toll</td><td>1 cp</td></tr>
 			<tr><td>Ship's passage</td><td>1 sp per mile </td></tr>
 		</table>
-		<figcaption>Services</figcaption>
+		<figcaption class="figure-caption">Services</figcaption>
 	</figure>
 	
 	<h3 class="subsection">Spellcasting Services</h3>
@@ -766,5 +841,7 @@
 	
 	<p>Hiring someone to cast a relatively common spell or incantation, such as <em>cure wounds</em> or <em>identify</em>, is easy enough in a city or town, and might cost 10 to 50 gold pieces (plus the cost of any expensive material components). Finding someone able and willing to cast a higher-power spell might involve traveling to a large city, perhaps one with a university or prominent temple. Once found, the spellcaster might ask for a service instead of payment—the kind of service that only adventurers can provide, such as retrieving a rare item from a dangerous locale or traversing a monster-infested wilderness to deliver something important to a distant settlement.</p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

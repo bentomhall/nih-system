@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIH Spells</title>
-    <link href="../main.css" rel="stylesheet"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NIH Spells</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="../main.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="spell.css">
 </head>
 <body>
-	<header>
-		<div>Pages:</div>
-		<div><a href="../index.html">Changelog</a></div>
-		<div><a href="../introduction.html">Introduction</a></div>
-		<div><a href="../core-system.html">Core System</a></div>
-		<div><a href="../character-creation.html">Character Creation</a></div>
-		<div><a href="../equipment.html">Equipment</a></div>
-		<div><a href="../spells.html">Incantations, Spells, and Legendary Effects</a> > <a href="#">Spells</a></div>
-		<div><a href="../skill-tricks.html">Skill Tricks</a></div>
-		<div><a href="../items.html">Magic Items</a></div>
-		<div><a href="../monsters.html">Monsters</a></div>
-		<div><a href="../appendixes.html">Appendixes</a></div>
-	</header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="../introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="../core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="../equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="../character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="../lineages.html" class="dropdown-item">Lineages</a>
+					<a href="../cultures.html" class="dropdown-item">Cultures</a>
+					<a href="../backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="../classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="../classes/arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="../classes/armsman.html" class="dropdown-item">Armsman</a>
+					<a href="../classes/brawler.html" class="dropdown-item">Brawler</a>
+					<a href="../classes/oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="../classes/priest.html" class="dropdown-item">Priest</a>
+					<a href="../classes/ranger.html" class="dropdown-item">Ranger</a>
+					<a href="../classes/rogue.html" class="dropdown-item">Rogue</a>
+					<a href="../classes/shaman.html" class="dropdown-item">Shaman</a>
+					<a href="../classes/spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="../classes/warden.html" class="dropdown-item">Warden</a>
+					<a href="../classes/warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="../spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="incantations.html" class="dropdown-item">Incantations</a>
+					<a href="legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="../items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="../items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="../items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="../items/rings.html" class="dropdown-item">Rings</a>
+					<a href="../items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="../items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="../items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="../monsters/monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="../monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="../monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="../monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="../monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="../monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="../monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="../monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="../monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="../monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="../monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="../monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="../monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="../monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="../monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="../conditions.html" class="dropdown-item">Conditions</a>
+					<a href="../examples.html" class="dropdown-item">Examples</a>
+					<a href="../world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 		<h2>All Spells By Name</h2>
-		<h3 class="subsection">Spells (A)</h3>
 		
 		<div class="spell-card" id="acid-arrow">
 		<div class="spell-header">
@@ -109,9 +184,6 @@
 		<p>As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>
 		
 		</div>
-		
-		<h3 class="subsection">Spells (B)</h3>
-		
 		<div class="spell-card" id="bane">
 		<div class="spell-header">
 			<div class="cost">2</div>
@@ -127,10 +199,10 @@
 		
 		<div class="spell-card" id="banishment">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Banishment </div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -142,10 +214,10 @@
 		</div>
 		<div class="spell-card" id="barkskin">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Barkskin </div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -156,10 +228,10 @@
 		</div>
 		<div class="spell-card" id="beacon-of-hope">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Beacon of Hope </div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Chosen creatures/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -168,10 +240,10 @@
 		</div>
 		<div class="spell-card" id="bestow-curse-">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Bestow Curse </div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -188,10 +260,10 @@
 		</div>
 		<div class="spell-card" id="black-tentacles">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Black Tentacles</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft square/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -203,10 +275,10 @@
 		</div>
 		<div class="spell-card" id="blade-barrier">
 		<div class="spell-header">
-			<div class="cost">15 AET</div>
+			<div class="cost">15</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Blade Barrier</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">100&times;20&times;5ft wall/90 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -216,10 +288,10 @@
 		</div>
 		<div class="spell-card" id="bless">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Bless</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">3 creatures/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -229,10 +301,10 @@
 		</div>
 		<div class="spell-card" id="blight">
 		<div class="spell-header">
-			<div class="cost">6 AET</div>
+			<div class="cost">6</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Blight</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -244,10 +316,10 @@
 		</div>
 		<div class="spell-card" id="blindness">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V</div>
 			<div class="spell-name">Blindness</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -257,10 +329,10 @@
 		</div>
 		<div class="spell-card" id="blink">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Blink</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -270,10 +342,10 @@
 		</div>
 		<div class="spell-card" id="blur">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V</div>
 			<div class="spell-name">Blur</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -282,10 +354,10 @@
 		</div>
 		<div class="spell-card" id="burning-hands">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Burning Hands</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft cone/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -296,10 +368,10 @@
 		</div>
 		<div class="spell-card" id="call-lightning">
 		<div class="spell-header">
-			<div class="cost">6 AET</div>
+			<div class="cost">6</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Call Lightning</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60&times;10-ft cylinder/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -311,10 +383,10 @@
 		</div>
 		<div class="spell-card" id="calm-emotions">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Calm Emotions</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -325,10 +397,10 @@
 		</div>
 		<div class="spell-card" id="chain-lightning">
 		<div class="spell-header">
-			<div class="cost">13 AET</div>
+			<div class="cost">13</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Chain Lightning</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">primary + 3 secondary creatures/150 feet + 30/secondary</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -339,10 +411,10 @@
 		</div>
 		<div class="spell-card" id="charm-person">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Charm Person</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 humanoid/30 feet</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -352,10 +424,10 @@
 		</div>
 		<div class="spell-card" id="clairvoyance">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Clairvoyance</div>
-			<div class="cast-time">10 minutes</div>
+			<div class="cast-time">10 m</div>
 			<div class="targets">--/1 mile</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -365,10 +437,10 @@
 		</div>
 		<div class="spell-card" id="cloudkill">
 		<div class="spell-header">
-			<div class="cost">14 AET</div>
+			<div class="cost">14</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Cloudkill</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -380,10 +452,10 @@
 		</div>
 		<div class="spell-card" id="color-spray">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Color Spray</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft cone/Self</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -393,10 +465,10 @@
 		</div>
 		<div class="spell-card" id="command">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V</div>
 			<div class="spell-name">Command</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -413,10 +485,10 @@
 		</div>
 		<div class="spell-card" id="cone-of-cold">
 		<div class="spell-header">
-			<div class="cost">10 AET</div>
+			<div class="cost">10</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Cone of Cold</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60-ft-cone/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -427,10 +499,10 @@
 		</div>
 		<div class="spell-card" id="confusion">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Confusion</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">10-ft-radius sphere/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -457,10 +529,10 @@
 		</div>
 		<div class="spell-card" id="conjure-animals">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Conjure Animals</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/60 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -480,10 +552,10 @@
 		</div>
 		<div class="spell-card" id="conjure-elemental">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Conjure Elemental</div>
-			<div class="cast-time">1 minute</div>
+			<div class="cast-time">1 m</div>
 			<div class="targets">--/90 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -496,10 +568,10 @@
 		</div>
 		<div class="spell-card" id="conjure-mephits">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Conjure Mephits</div>
-			<div class="cast-time">1 minute</div>
+			<div class="cast-time">1 m</div>
 			<div class="targets">--/90 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -514,10 +586,10 @@
 		</div>
 		<div class="spell-card" id="conjure-woodland-beings">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Conjure Woodland Beings</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/60 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -533,10 +605,10 @@
 		</div>
 		<div class="spell-card" id="contagion">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Contagion</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">7 days</div>
 		</div>
@@ -553,10 +625,10 @@
 		</div>
 		<div class="spell-card" id="control-water">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Control Water</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">100 ft cube/300 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -573,10 +645,10 @@
 		</div>
 		<div class="spell-card" id="create-or-destroy-water">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Create or Destroy Water</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -588,10 +660,10 @@
 		</div>
 		<div class="spell-card" id="cure-wounds">
 		<div class="spell-header">
-			<div class="cost">1 AET</div>
+			<div class="cost">1</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Cure Wounds</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -604,7 +676,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Dancing Lights</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -614,10 +686,10 @@
 		</div>
 		<div class="spell-card" id="darkness">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, M</div>
 			<div class="spell-name">Darkness</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft radius sphere/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -628,10 +700,10 @@
 		</div>
 		<div class="spell-card" id="darkvision">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Darkvision</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">8 hours</div>
 		</div>
@@ -640,10 +712,10 @@
 		</div>
 		<div class="spell-card" id="daylight">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Daylight</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60-ft-radius sphere/60 feet</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -654,10 +726,10 @@
 		</div>
 		<div class="spell-card" id="death-ward">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Death Ward</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">8 hours</div>
 		</div>
@@ -668,10 +740,10 @@
 		</div>
 		<div class="spell-card" id="detect-thoughts">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Detect Thoughts</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/30 ft</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -684,24 +756,24 @@
 		</div>
 		<div class="spell-card" id="dimension-door">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V</div>
 			<div class="spell-name">Dimension Door</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self + 1 willing creature/500 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as �200 feet straight downward� or �upward to the northwest at a 45* degree angle, 300 feet.�</p>
+		<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "upward to the northwest at a 45 degree angle, 300 feet."</p>
 		<p>You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.</p>
 		<p>If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 bludgeoning damage, and the spell fails to teleport you.</p>
 		
 		</div>
 		<div class="spell-card" id="disguise-self">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Disguise Self</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -712,10 +784,10 @@
 		</div>
 		<div class="spell-card" id="dispel-otherworldly-influence">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Dispel Otherworldly Influence</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -727,10 +799,10 @@
 		</div>
 		<div class="spell-card" id="divine-favor">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Divine Favor</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -739,10 +811,10 @@
 		</div>
 		<div class="spell-card" id="divine-wrath">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Divine Wrath</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft radius/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -751,15 +823,15 @@
 		</div>
 		<div class="spell-card" id="dominate-beast">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Dominate Beast</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 beast/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p>
-		<p>While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as �Attack that creature,� �Run over there,� or �Fetch that object.� If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p>
+		<p>While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as "Attack that creature," "Run over there," or "Fetch that object." If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p>
 		<p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p>
 		<p>Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p>
 		<p><b>Overcast</b> When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.</p>
@@ -768,10 +840,10 @@
 		</div>
 		<div class="spell-card" id="enhance-ability">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Enhance Ability</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Concentration, up to 1 hour.</div>
 		</div>
@@ -785,27 +857,27 @@
 		<p><b>Overcast</b> When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.</p>
 		
 		</div>
-		<div class="spell-card" id="enlarge">
+		<div class="spell-card" id="enlarge-reduce">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
-			<div class="spell-name">Enlarge</div>
-			<div class="cast-time">1 action</div>
+			<div class="spell-name">Enlarge/Reduce</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.</p>
 		<p>If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.</p>
-		<p><b>Enlarge</b> The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category� from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.</p>
-		<p><b>Reduce</b> The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category�from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).</p>
+		<p><b>Enlarge</b> The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category" from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.</p>
+		<p><b>Reduce</b> The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category"from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).</p>
 		
 		</div>
 		<div class="spell-card" id="entangle">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Entangle</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft square/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -816,10 +888,10 @@
 		</div>
 		<div class="spell-card" id="expeditious-retreat">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Expeditious Retreat</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -828,10 +900,10 @@
 		</div>
 		<div class="spell-card" id="faerie-fire">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V</div>
 			<div class="spell-name">Faerie Fire</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft cube/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -841,10 +913,10 @@
 		</div>
 		<div class="spell-card" id="faithful-hound">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Faithful Hound</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">8 hours</div>
 		</div>
@@ -855,10 +927,10 @@
 		</div>
 		<div class="spell-card" id="false-life">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">False Life</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -868,10 +940,10 @@
 		</div>
 		<div class="spell-card" id="fear">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Fear</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">30-ft cone/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -881,22 +953,23 @@
 		</div>
 		<div class="spell-card" id="feather-fall">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, M</div>
 			<div class="spell-name">Feather Fall</div>
-			<div class="cast-time">1 reaction, which you take when you or a creature within 60 feet of you falls</div>
+			<div class="cast-time">R</div>
 			<div class="targets">5 falling creatures/60 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
+		<p><b>Trigger:</b> you or a creature within 60 feet of you falls</p>
 		<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
 		
 		</div>
 		<div class="spell-card" id="find-traps">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Find Traps</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/120 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -906,10 +979,10 @@
 		</div>
 		<div class="spell-card" id="fireball">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Fireball</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/150 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -920,12 +993,12 @@
 		</div>
 		<div class="spell-card" id="fire-shield">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Fire Shield</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
-			<div class="duration">10 minutes</div>
+			<div class="duration">10 m</div>
 		</div>
 		<p>Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.</p>
 		<p>The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.</p>
@@ -934,10 +1007,10 @@
 		</div>
 		<div class="spell-card" id="flame-blade">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Flame Blade</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -950,10 +1023,10 @@
 		</div>
 		<div class="spell-card" id="flame-strike">
 		<div class="spell-header">
-			<div class="cost">9 AET</div>
+			<div class="cost">9</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Flame Strike</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">10&times;40-ft cylinder/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -963,10 +1036,10 @@
 		</div>
 		<div class="spell-card" id="flaming-sphere">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Flaming Sphere</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -978,10 +1051,10 @@
 		</div>
 		<div class="spell-card" id="flash-freeze">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Flash Freeze</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -991,10 +1064,10 @@
 		</div>
 		<div class="spell-card" id="fog-cloud">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Fog Cloud</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/120 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1004,10 +1077,10 @@
 		</div>
 		<div class="spell-card" id="freedom-of-movement">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Freedom of Movement</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -1017,10 +1090,10 @@
 		</div>
 		<div class="spell-card" id="gaseous-form">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Gaseous Form</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1031,10 +1104,10 @@
 		</div>
 		<div class="spell-card" id="giant-insect">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Giant Insect</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Insects/30 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1049,7 +1122,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Grave Touch</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/120 feet</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -1060,10 +1133,10 @@
 		</div>
 		<div class="spell-card" id="grease">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Grease</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">10-ft square/60 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -1074,10 +1147,10 @@
 		</div>
 		<div class="spell-card" id="greater-invisibility">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Greater Invisibility</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1086,10 +1159,10 @@
 		</div>
 		<div class="spell-card" id="guidance">
 		<div class="spell-header">
-			<div class="cost">-1</div>
+			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Guidance</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1098,10 +1171,10 @@
 		</div>
 		<div class="spell-card" id="guiding-bolt">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Guiding Bolt</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/120 feet</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -1111,10 +1184,10 @@
 		</div>
 		<div class="spell-card" id="gust-of-wind">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Gust of Wind</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60&times;10-ft line/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1124,15 +1197,13 @@
 		<p>As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>
 		
 		</div>
-		
-		<h3 class="subsection">Spells (H)</h3>
-		
+
 		<div class="spell-card" id="hallucinatory-terrain">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Hallucinatory Terrain</div>
-			<div class="cast-time">10 minutes</div>
+			<div class="cast-time">10 m</div>
 			<div class="targets">150-ft cube/300 feet</div>
 			<div class="duration">24 hours</div>
 		</div>
@@ -1142,10 +1213,10 @@
 		</div>
 		<div class="spell-card" id="haste">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Haste</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1155,10 +1226,10 @@
 		</div>
 		<div class="spell-card" id="healing-word">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V</div>
 			<div class="spell-name">Healing Word</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1168,10 +1239,10 @@
 		</div>
 		<div class="spell-card" id="heat-metal">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Heat Metal</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 metal object/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1182,10 +1253,10 @@
 		</div>
 		<div class="spell-card" id="heroism">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Heroism</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1195,10 +1266,10 @@
 		</div>
 		<div class="spell-card" id="hideous-laughter">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Hideous Laughter</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1208,10 +1279,10 @@
 		</div>
 		<div class="spell-card" id="hold-monster">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Hold Monster</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1221,10 +1292,10 @@
 		</div>
 		<div class="spell-card" id="hold-person">
 		<div class="spell-header">
-			<div class="cost">4 AET</div>
+			<div class="cost">4</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Hold Person</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 humanoid/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1234,23 +1305,22 @@
 		</div>
 		<div class="spell-card" id="hypnotic-pattern">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">S, M</div>
 			<div class="spell-name">Hypnotic Pattern</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">30-ft cube/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. Affected creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.</p>
 		<p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
 		</div>
-		<h3 class="subsection">Spells (I)</h3>
 		<div class="spell-card" id="ice-storm">
 		<div class="spell-header">
-			<div class="cost">7 AET</div>
+			<div class="cost">7</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Ice Storm</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20&times;40x cylinder/300 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1261,10 +1331,10 @@
 		</div>
 		<div class="spell-card" id="inflict-wounds">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Inflict Wounds</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1274,10 +1344,10 @@
 		</div>
 		<div class="spell-card" id="insect-plague">
 		<div class="spell-header">
-			<div class="cost">14 AET</div>
+			<div class="cost">14</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Insect Plague</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft radius sphere/300 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1288,38 +1358,34 @@
 		</div>
 		<div class="spell-card" id="invisibility">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Invisibility</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
 		<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying when the spell is cast is invisible as long as it is on the target's person. The spell ends for a target that attacks, casts a spell, or deals damage to a creature or object. Objects picked up by an invisible target do not become invisible.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.</p>
 		</div>
-		<h3 class="subsection">Spells (J)</h3>
 		<div class="spell-card" id="jump">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Jump</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">1 minute</div>
 		</div>
 		<p>You touch a creature. The creature's jump distance is tripled until the spell ends.</p>
 		
 		</div>
-		<h3 class="subsection">Spells (K)</h3>
-		
-		<h3 class="subsection">Spells (L)</h3>
 		<div class="spell-card" id="levitate">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Levitate</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1330,10 +1396,10 @@
 		</div>
 		<div class="spell-card" id="light">
 		<div class="spell-header">
-			<div class="cost">-1</div>
+			<div class="cost">0</div>
 			<div class="components">V, M</div>
 			<div class="spell-name">Light</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 object/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -1343,10 +1409,10 @@
 		</div>
 		<div class="spell-card" id="lightning-bolt">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Lightning Bolt</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">100&times;5ft line/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1357,23 +1423,22 @@
 		</div>
 		<div class="spell-card" id="longstrider">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Longstrider</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
 		<p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 2 AET, you can target one additional creature for every 3 additional AET spent.</p>
 		</div>
-		<h3 class="subsection">Spells (M)</h3>
 		<div class="spell-card" id="mage-armor">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Mage Armor</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">8 hours</div>
 		</div>
@@ -1385,7 +1450,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Mage Hand</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -1396,10 +1461,10 @@
 		</div>
 		<div class="spell-card" id="magic-missile">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Magic Missile</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1+ creatures/120 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1409,10 +1474,10 @@
 		</div>
 		<div class="spell-card" id="magic-weapon">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Magic Weapon</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">1 weapon/Touch</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1422,10 +1487,10 @@
 		</div>
 		<div class="spell-card" id="major-image">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Major Image</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1437,10 +1502,10 @@
 		</div>
 		<div class="spell-card" id="mass-cure-wounds">
 		<div class="spell-header">
-			<div class="cost">9 AET</div>
+			<div class="cost">9</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Mass Cure Wounds</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">6 creatures (30-ft radius sphere)/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1450,10 +1515,10 @@
 		</div>
 		<div class="spell-card" id="meld-into-stone">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Meld into Stone</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/Touch</div>
 			<div class="duration">8 hours</div>
 		</div>
@@ -1467,7 +1532,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Message</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/120 feet</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -1480,22 +1545,22 @@
 			<div class="cost">0</div>
 			<div class="components">S, M</div>
 			<div class="spell-name">Minor Illusion</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
 		<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p>
 		<p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
-		<p>If you create an image of an object�such as a chair, muddy footprints, or a small chest�it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
+		<p>If you create an image of an object"such as a chair, muddy footprints, or a small chest"it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
 		<p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
 		
 		</div>
 		<div class="spell-card" id="mirror-image">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Mirror Image</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -1508,10 +1573,10 @@
 		</div>
 		<div class="spell-card" id="mislead">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">S</div>
 			<div class="spell-name">Mislead</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1522,10 +1587,10 @@
 		</div>
 		<div class="spell-card" id="misty-step">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V</div>
 			<div class="spell-name">Misty Step</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1534,10 +1599,10 @@
 		</div>
 		<div class="spell-card" id="moonbeam">
 		<div class="spell-header">
-			<div class="cost">4 AET</div>
+			<div class="cost">4</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Moonbeam</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">5&times;40-ft cylinder/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1550,10 +1615,10 @@
 		</div>
 		<div class="spell-card" id="move-earth">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Move Earth</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/120 feet</div>
 			<div class="duration">Concentration, up to 2 hours</div>
 		</div>
@@ -1564,17 +1629,12 @@
 		<p>Similarly, this effect doesn't directly affect plant growth. The moved earth carries any plants along with it.</p>
 		
 		</div>
-		<h3 class="subsection">Spells (N)</h3>
-		
-		<h3 class="subsection">Spells (O)</h3>
-		
-		<h3 class="subsection">Spells (P)</h3>
 		<div class="spell-card" id="pass-without-trace">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Pass without Trace</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">30-ft-radius sphere/Self</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1583,10 +1643,10 @@
 		</div>
 		<div class="spell-card" id="passwall">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Passwall</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -1596,10 +1656,10 @@
 		</div>
 		<div class="spell-card" id="phantasmal-killer">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Phantasmal Killer</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1609,24 +1669,24 @@
 		</div>
 		<div class="spell-card" id="plant-growth">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Plant Growth</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">100-ft-radius/150 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
 		<p>This spell channels vitality into plants within a specific area, causing them to grow rapidly</p>
-		<p>If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.</p>
+		<p>If you cast this spell using A, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.</p>
 		<p>You can exclude one or more areas of any size within the spell's area from being affected.</p>
 		
 		</div>
 		<div class="spell-card" id="polymorph">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Polymorph</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1639,10 +1699,10 @@
 		</div>
 		<div class="spell-card" id="prayer-of-healing">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V</div>
 			<div class="spell-name">Prayer of Healing</div>
-			<div class="cast-time">10 minutes</div>
+			<div class="cast-time">10 m</div>
 			<div class="targets">6 creatures/30 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1655,7 +1715,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Prestidigitation</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/10 feet</div>
 			<div class="duration">Up to 1 hour</div>
 		</div>
@@ -1676,7 +1736,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Produce Flame</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 ft</div>
 			<div class="duration">10 minutes</div>
 		</div>
@@ -1687,10 +1747,10 @@
 		</div>
 		<div class="spell-card" id="protection-from-energy">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Protection from Energy</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -1699,10 +1759,10 @@
 		</div>
 		<div class="spell-card" id="protection-from-otherworldly-influence">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Protection from Otherworldly Influence</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Concentration up to 10 minutes</div>
 		</div>
@@ -1712,10 +1772,10 @@
 		</div>
 		<div class="spell-card" id="protection-from-poison">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Protection from Poison</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -1724,16 +1784,12 @@
 		
 		</div>
 		
-		<h3 class="subsection">Spells (Q)</h3>
-		
-		<h3 class="subsection">Spells (R)</h3>
-		
 		<div class="spell-card" id="ray-of-enfeeblement">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Ray of Enfeeblement</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1747,7 +1803,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Ray of Frost</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1757,13 +1813,14 @@
 		</div>
 		<div class="spell-card" id="reincarnate">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
-			<div class="components">V, S, M (rare oils and unguents worth at least 1,000 gp, which the spell consumes)</div>
+			<div class="cost">12</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Reincarnate</div>
-			<div class="cast-time">1 hour</div>
+			<div class="cast-time">1 h</div>
 			<div class="targets">1 dead humanoid/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
+		<p><b>Consumed Components:</b> rare oils and unguents worth at least 1,000 gp</p>
 		<p>You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body.</p>
 		<p>If the target's soul isn't free or willing to do so, the spell fails.</p>
 		<p>The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The GM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the GM chooses a form.</p>
@@ -1783,10 +1840,10 @@
 		</div>
 		<div class="spell-card" id="remove-curse">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Remove Curse</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1795,10 +1852,10 @@
 		</div>
 		<div class="spell-card" id="resilient-sphere">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Resilient Sphere</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target (Large or smaller)/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1812,7 +1869,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Resistance</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1821,13 +1878,14 @@
 		</div>
 		<div class="spell-card" id="revivify">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
-			<div class="components">V, S, M (diamonds worth 300 gp, which the spell consumes)</div>
+			<div class="cost">5</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Revivify</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 dead creature/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
+		<p><b>Consumed Components:</b> diamonds worth 300 gp</p>
 		<p>You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</p>
 		
 		</div>
@@ -1836,7 +1894,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Sacred Flame</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1846,10 +1904,10 @@
 		</div>
 		<div class="spell-card" id="sanctuary">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Sanctuary</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -1859,10 +1917,10 @@
 		</div>
 		<div class="spell-card" id="scorching-ray">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Scorching Ray</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1+ targets/120 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1873,10 +1931,10 @@
 		</div>
 		<div class="spell-card" id="see-invisibility">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">See Invisibility</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">1 hour</div>
 		</div>
@@ -1885,10 +1943,10 @@
 		</div>
 		<div class="spell-card" id="shatter">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Shatter</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">10-ft-radius sphere/60 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1899,10 +1957,10 @@
 		</div>
 		<div class="spell-card" id="shield">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Shield</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">10 minutes</div>
 		</div>
@@ -1915,10 +1973,10 @@
 		</div>
 		<div class="spell-card" id="shield-of-faith">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
-			<div class="components">V, S, M (a small parchment with a bit of holy text written on it)</div>
+			<div class="cost">2</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Shield of Faith</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">1 creature/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1930,7 +1988,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Shillelagh</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">1 club or quarterstaff/Touch</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -1942,7 +2000,7 @@
 			<div class="cost">0</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Shocking Grasp</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -1952,10 +2010,10 @@
 		</div>
 		<div class="spell-card" id="silence">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Silence</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1964,10 +2022,10 @@
 		</div>
 		<div class="spell-card" id="silent-image">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Silent Image</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -1978,10 +2036,10 @@
 		</div>
 		<div class="spell-card" id="sleep">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Sleep</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">5 creatures in 20-ft-radius-sphere/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -1992,10 +2050,10 @@
 		</div>
 		<div class="spell-card" id="sleet-storm">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Sleet Storm</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">40&times;20-ft cylinder/150 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2006,25 +2064,25 @@
 		</div>
 		<div class="spell-card" id="slow">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Slow</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">6 creatures in 40-ft cube/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.</p>
 		<p>An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>
-		<p>If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
+		<p>If the creature attempts to cast a spell with a casting time of A, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
 		<p>A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.</p>
 		
 		</div>
 		<div class="spell-card" id="spike-growth">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Spike Growth</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius/150 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2034,10 +2092,10 @@
 		</div>
 		<div class="spell-card" id="spirit-guardians">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Spirit Guardians</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft-radius sphere/Self</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2048,10 +2106,10 @@
 		</div>
 		<div class="spell-card" id="spiritual-weapon">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Spiritual Weapon</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">--/60 feet</div>
 			<div class="duration">1 minute</div>
 		</div>
@@ -2063,10 +2121,10 @@
 		</div>
 		<div class="spell-card" id="stinking-cloud">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Stinking Cloud</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft-radius sphere/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2077,10 +2135,10 @@
 		</div>
 		<div class="spell-card" id="stone-shape">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Stone Shape</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/Touch</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -2089,22 +2147,23 @@
 		</div>
 		<div class="spell-card" id="stoneskin">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
-			<div class="components">V, S, M (diamond dust worth 100 gp, which the spell consumes)</div>
+			<div class="cost">8</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Stoneskin</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
+		<p><b>Consumed Components:</b> diamond dust worth 100 gp</p>
 		<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage, but their speed is reduced by 10 ft and they have disadvantage on Dexterity ability checks.</p>
 		
 		</div>
 		<div class="spell-card" id="suggestion">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
+			<div class="cost">3</div>
 			<div class="components">V, M</div>
 			<div class="spell-name">Suggestion</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">Concentration, up to 8 hours</div>
 		</div>
@@ -2116,10 +2175,10 @@
 		</div>
 		<div class="spell-card" id="sunbeam">
 		<div class="spell-header">
-			<div class="cost">14 AET</div>
+			<div class="cost">14</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Sunbeam</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60&times;5-ft line/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2130,10 +2189,10 @@
 		</div>
 		<div class="spell-card" id="telekinesis">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Telekinesis</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target per round/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2150,7 +2209,7 @@
 			<div class="cost">0</div>
 			<div class="components">V</div>
 			<div class="spell-name">Thaumaturgy</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">--/30 feet</div>
 			<div class="duration">Up to 1 minute</div>
 		</div>
@@ -2167,10 +2226,10 @@
 		</div>
 		<div class="spell-card" id="thunderwave">
 		<div class="spell-header">
-			<div class="cost">2 AET</div>
+			<div class="cost">2</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Thunderwave</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">15-ft cube/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -2181,22 +2240,23 @@
 		</div>
 		<div class="spell-card" id="true-seeing">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
-			<div class="components">V, S, M (an ointment for the eyes that costs 25 gp and is consumed by the spell)</div>
+			<div class="cost">12</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">True Seeing</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
+		<p><b>Consumed Components:</b> an ointment for the eyes that costs 25 gp</p>
 		<p>This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Border Shadow, all out to a range of 120 feet.</p>
 		
 		</div>
 		<div class="spell-card" id="true-strike">
 		<div class="spell-header">
-			<div class="cost">1 AET</div>
+			<div class="cost">1</div>
 			<div class="components">S</div>
 			<div class="spell-name">True Strike</div>
-			<div class="cast-time">1 bonus action</div>
+			<div class="cast-time">BA</div>
 			<div class="targets">1 target/60 feet</div>
 			<div class="duration">1 round</div>
 		</div>
@@ -2205,10 +2265,10 @@
 		</div>
 		<div class="spell-card" id="unbind">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Unbind</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">1 target/120 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
@@ -2218,10 +2278,10 @@
 		</div>
 		<div class="spell-card" id="vampiric-touch">
 		<div class="spell-header">
-			<div class="cost">4 AET</div>
+			<div class="cost">4</div>
 			<div class="components">V, S</div>
 			<div class="spell-name">Vampiric Touch</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Creatures touched/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2231,10 +2291,10 @@
 		</div>
 		<div class="spell-card" id="wall-of-fire">
 		<div class="spell-header">
-			<div class="cost">8 AET</div>
+			<div class="cost">8</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Wall of Fire</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">60&times;20&times;1-ft wall/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2246,10 +2306,10 @@
 		</div>
 		<div class="spell-card" id="wall-of-force">
 		<div class="spell-header">
-			<div class="cost">15 AET</div>
+			<div class="cost">15</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Wall of Force</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">See text/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2260,10 +2320,10 @@
 		</div>
 		<div class="spell-card" id="wall-of-ice">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
-			<div class="components">V, S, M (a small piece of quartz)</div>
+			<div class="cost">12</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Wall of Ice</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">See text/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2275,10 +2335,10 @@
 		</div>
 		<div class="spell-card" id="wall-of-stone">
 		<div class="spell-header">
-			<div class="cost">12 AET</div>
+			<div class="cost">12</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Wall of Stone</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">See text/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2292,10 +2352,10 @@
 		</div>
 		<div class="spell-card" id="wall-of-thorns">
 		<div class="spell-header">
-			<div class="cost">7 AET</div>
+			<div class="cost">7</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Wall of Thorns</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">See text/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
@@ -2307,23 +2367,24 @@
 		</div>
 		<div class="spell-card" id="warding-bond">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
-			<div class="components">V, S, M (a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration)</div>
+			<div class="cost">3</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Warding Bond</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">Touched creature and self/Touch</div>
 			<div class="duration">1 hour</div>
 		</div>
+		<p><b>Focus Components:</b> a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration</p>
 		<p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p>
 		<p>The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
 		
 		</div>
 		<div class="spell-card" id="web">
 		<div class="spell-header">
-			<div class="cost">3 AET</div>
-			<div class="components">V, S, M (a bit of spiderweb)</div>
+			<div class="cost">3</div>
+			<div class="components">V, S, M</div>
 			<div class="spell-name">Web</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">20-ft cube/60 feet</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
@@ -2337,10 +2398,10 @@
 		</div>
 		<div class="spell-card" id="wind-wall">
 		<div class="spell-header">
-			<div class="cost">5 AET</div>
+			<div class="cost">5</div>
 			<div class="components">V, S, M</div>
 			<div class="spell-name">Wind Wall</div>
-			<div class="cast-time">1 action</div>
+			<div class="cast-time">A</div>
 			<div class="targets">See text/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
@@ -2350,5 +2411,7 @@
 		
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

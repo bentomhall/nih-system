@@ -4,345 +4,422 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NIH Classes</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="../main.css" rel="stylesheet"/>
 <link rel="stylesheet" href="classes.css">
 </head>
 <body>
-<header>
-<div>Pages:</div>
-<div><a href="../index.html">Changelog</a></div>
-<div><a href="../introduction.html">Introduction</a></div>
-<div><a href="../core-system.html">Core System</a></div>
-<div><a href="../character-creation.html">Character Creation</a> > <a href="#">Oathbound</a></div>
-<div><a href="../equipment.html">Equipment</a></div>
-<div><a href="../spells.html">Incantations, Spells, and Legendary Effects</a></div>
-<div><a href="../skill-tricks.html">Skill Tricks</a></div>
-<div><a href="../items.html">Magic Items</a></div>
-<div><a href="../monsters.html">Monsters</a></div>
-<div><a href="../appendixes.html">Appendixes</a></div>
-</header>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="../introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="../core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="../equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="../character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="../lineages.html" class="dropdown-item">Lineages</a>
+					<a href="../cultures.html" class="dropdown-item">Cultures</a>
+					<a href="../backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="../classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="armsman.html" class="dropdown-item">Armsman</a>
+					<a href="brawler.html" class="dropdown-item">Brawler</a>
+					<a href="oathbound.html" class="dropdown-item active">Oathbound</a>
+					<a href="priest.html" class="dropdown-item">Priest</a>
+					<a href="ranger.html" class="dropdown-item">Ranger</a>
+					<a href="rogue.html" class="dropdown-item">Rogue</a>
+					<a href="shaman.html" class="dropdown-item">Shaman</a>
+					<a href="spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="warden.html" class="dropdown-item">Warden</a>
+					<a href="warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="../spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="../spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="../items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="../items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="../items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="../items/rings.html" class="dropdown-item">Rings</a>
+					<a href="../items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="../items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="../items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="../monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="../monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="../monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="../monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="../monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="../monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="../monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="../monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="../monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="../monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="../monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="../monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="../monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="../monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="../monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="../conditions.html" class="dropdown-item">Conditions</a>
+					<a href="../examples.html" class="dropdown-item">Examples</a>
+					<a href="../world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 <div class="container">
-    <h2 class="section">Oathbound</h2>
-    
-    <p>Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much--even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.</p>
-    
-    <p>Unlike a priest, the oathbound's power comes not from faith in an Ascendant or the teachings of a religion, although the oathbound might be devoutly faithful. An oathbound's power comes from within as their soul reaches out to the universe itself in with wholehearted confidence in the righteousness of their cause and the necessity of their actions to further this cause. In effect, they demand that the universe give them power, and the universe looks at their confidence and stubbornness and bends to their will.</p>
-    
-    <p>Oathbound excel at front-line defense and support. While they can output significant damage, many of their abilities revolve around assisting and protecting others nearby. Their weaknesses are enemies at range (like a brawler) and large groups of weaker foes. Their charismatic bent makes them natively good at social situations.</p>
-    
-    <p>Design Discussion: Basically a paladin. Not tons changed here except subclasses. Toned down the damage in favor of more support. SDCT 6/5/4/5.</p>
-    
-    <h3>Quick Build</h3>
-    <p>To quickly build an oathbound, put your highest ability score into Strength and your second ability score into Charisma, with Constitution higher than zero. If you want to focus more on damage, use a two-handed weapon (and pick either Two-handed or Cleaving as your Weapon Specialization). For a more defensive build, pick a one-handed weapon and a shield, and pick Versatile or Parrying as your Weapon Specialization.</p>
-    
-    <h3 class="subsection">Class Features</h3>
-    
-    <p>As a oathbound, you gain the following class features.</p>
-    
-    <h4 class="subsub">Hit Points</h4>
-    
-    <p><b>Hit Dice:</b> 1d10 per oathbound level
-    </p>
-    
-    <p><b>Hit Points at 1st Level:</b> 10 + your Constitution modifier
-    </p>
-    
-    <p><b>Hit Points at Higher Levels:</b> 1d10 (or 6) + your Constitution modifier per oathbound level after 1st
-    </p>
-    
-    <h4 class="subsub">Proficiencies</h4>
-    
-    <p><b>Armor:</b> All armor, shields
-    </p>
-    
-    <p><b>Weapons:</b> Simple weapons, martial weapons
-    </p>
-    
-    <p><b>Tools:</b> None
-    </p>
-    
-    <p><b>Saving Throws:</b> Wisdom, Charisma
-    </p>
-    
-    <p><b>Skills:</b> Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion
-    </p>
-    
-    <h4 class="subsub">Equipment</h4>
-    
-    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-    <ul>
-    <li>(<em>a</em>) a martial weapon and a shield or (<em>b</em>) two martial weapons</li>
-    <li>(<em>a</em>) five javelins or (<em>b</em>) any simple melee weapon</li>
-    <li>(<em>a</em>) a priest's pack or (<em>b</em>) an explorer's pack</li>
-    <li>Chain mail</li>
-    </ul>
-    
-    <table class="wide">
-    <tr><th>Level</th><th>Proficiency</th><th>Features</th><th>Spells Known</th><th>Stamina</th><th>Aether</th><th>Aether Limit</th></tr>
-    <tr><td>1st</td><td>+2</td><td>Divine Sense, Lay on Hands</td><td>---</td><td>1</td><td>2</td><td>1</td></tr>
-    <tr><td>2nd</td><td>+2</td><td>Fighting Style, Spellcasting, Divine Smite</td><td>1</td><td>2</td><td>4</td><td>2</td></tr>
-    <tr><td>3rd</td><td>+2</td><td>Divine Health, Sacred Oath</td><td>1</td><td>2</td><td>6</td><td>3</td></tr>
-    <tr><td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>2</td><td>3</td><td>8</td><td>3</td></tr>
-    <tr><td>5th</td><td>+3</td><td>Extra Attack</td><td>2</td><td>3</td><td>10</td><td>4</td></tr>
-    <tr><td>6th</td><td>+3</td><td>Aura of Protection</td><td>3</td><td>4</td><td>12</td><td>5</td></tr>
-    <tr><td>7th</td><td>+3</td><td>Sacred Oath feature, Find Steed</td><td>3</td><td>4</td><td>14</td><td>5</td></tr>
-    <tr><td>8th</td><td>+3</td><td>Ability Score Improvement</td><td>4</td><td>5</td><td>16</td><td>6</td></tr>
-    <tr><td>9th</td><td>+4</td><td>-</td><td>4</td><td>5</td><td>18</td><td>7</td></tr>
-    <tr><td>10th</td><td>+4</td><td>Aura of Courage</td><td>5</td><td>6</td><td>20</td><td>7</td></tr>
-    <tr><td>11th</td><td>+4</td><td>Improved Divine Smite</td><td>5</td><td>6</td><td>22</td><td>8</td></tr>
-    <tr><td>12th</td><td>+4</td><td>Ability Score Improvement</td><td>6</td><td>7</td><td>24</td><td>9</td></tr>
-    <tr><td>13th</td><td>+5</td><td>-</td><td>6</td><td>7</td><td>26</td><td>9</td></tr>
-    <tr><td>14th</td><td>+5</td><td>Cleansing Touch</td><td>7</td><td>8</td><td>28</td><td>10</td></tr>
-    <tr><td>15th</td><td>+5</td><td>Sacred Oath feature</td><td>7</td><td>8</td><td>30</td><td>11</td></tr>
-    <tr><td>16th</td><td>+5</td><td>Ability Score Improvement</td><td>8</td><td>9</td><td>32</td><td>11</td></tr>
-    <tr><td>17th</td><td>+6</td><td>-</td><td>8</td><td>9</td><td>34</td><td>12</td></tr>
-    <tr><td>18th</td><td>+6</td><td>Aura improvements</td><td>9</td><td>10</td><td>36</td><td>13</td></tr>
-    <tr><td>19th</td><td>+6</td><td>Ability Score Improvement</td><td>9</td><td>10</td><td>38</td><td>13</td></tr>
-    <tr><td>20th</td><td>+6</td><td>Sacred Oath feature</td><td>10</td><td>10</td><td>40</td><td>14</td></tr>
-    </table>
-    
-    <h3 class="subsection">Divine Sense</h3>
-    
-    <p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <a href="../spells/incantations.html#hallow">hallow</a> spell.</p>
-    
-    <p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
-    
-    <h3 class="subsection">Lay on Hands</h3>
-    
-    <p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your oathbound level &times; 5.</p>
-    
-    <p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
-    
-    <p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p>
-    
-    <p>This feature has no effect on undead and constructs.</p>
-    
-    <h3 class="subsection">Weapon Specialization</h3>
-    
-    <p>You have learned to wield one type of weapon better. Choose one of the properties below. You gain the bonus listed. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.</p>
-    
-    <p><b>Battering</b> Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.</p>
-    
-    <p><b>Cleaving</b> You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.</p>
-    
-    <p><b>Parrying</b> The reaction attack from this property is made at advantage.</p>
-    
-    <p><b>Reach</b> You can make opportunity attacks when a creature enters your range as well as leaves it.</p>
-    
-    <p><b>Two-handed (Melee only)</b> You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.</p>
-    
-    <p><b>Versatile</b> You get the increased damage die even when wielding it in one hand.</p>
-    
-    <h3 class="subsection">Spellcasting</h3>
-    
-    <p>By 2nd level, you have learned to draw on astral power through meditation and confidence in your own rightness to cast spells much like a priest does.</p>
-    
-    <h4 class="subsub">Preparing and Casting Spells</h4>
-    
-    <p>The Oathbound table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.</p>
-    
-    <p>You know a certain number of Oathbound spells, choosing from the oathbound spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of oathbound spells equal to your Charisma modifier + half your oathbound level, rounded down (minimum of one spell). To prepare a spell you must be able to cast it without exceeding your Aether Limit.</p>
-    
-    <h4 class="subsub">Spellcasting Ability</h4>
-    
-    <p>Charisma is your spellcasting ability for your oathbound spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a oathbound spell you cast and when making an attack roll with one.</p>
-    
-    <p><b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier
-    </p>
-    
-    <p><b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier
-    </p>
+		<h1 class="class-title">Oathbound</h1>
+		
+		<p>Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much--even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.</p>
+		
+		<p>Unlike a priest, the oathbound's power comes not from faith in an Ascendant or the teachings of a religion, although the oathbound might be devoutly faithful. An oathbound's power comes from within as their soul reaches out to the universe itself in with wholehearted confidence in the righteousness of their cause and the necessity of their actions to further this cause. In effect, they demand that the universe give them power, and the universe looks at their confidence and stubbornness and bends to their will.</p>
+		
+		<p>Oathbound excel at front-line defense and support. While they can output significant damage, many of their abilities revolve around assisting and protecting others nearby. Their weaknesses are enemies at range (like a brawler) and large groups of weaker foes. Their charismatic bent makes them natively good at social situations.</p>
+		
+		<p>Design Discussion: Basically a paladin. Not tons changed here except subclasses. Toned down the damage in favor of more support. SDCT 6/5/4/5.</p>
+		
+		<h3>Quick Build</h3>
+		<p>To quickly build an oathbound, put your highest ability score into Strength and your second ability score into Charisma, with Constitution higher than zero. If you want to focus more on damage, use a two-handed weapon (and pick either Two-handed or Cleaving as your Weapon Specialization). For a more defensive build, pick a one-handed weapon and a shield, and pick Versatile or Parrying as your Weapon Specialization.</p>
+		
+		<h2 class="feature-group">Class Features</h2>
+		
+		<p>As a oathbound, you gain the following class features.</p>
+		
+		<h3 class="feature">Hit Points</h3>
+		
+		<p><b>Hit Dice:</b> 1d10 per oathbound level
+		</p>
+		
+		<p><b>Hit Points at 1st Level:</b> 10 + your Constitution modifier
+		</p>
+		
+		<p><b>Hit Points at Higher Levels:</b> 1d10 (or 6) + your Constitution modifier per oathbound level after 1st
+		</p>
+		
+		<h3 class="feature">Proficiencies</h3>
+		
+		<p><b>Armor:</b> All armor, shields
+		</p>
+		
+		<p><b>Weapons:</b> Simple weapons, martial weapons
+		</p>
+		
+		<p><b>Tools:</b> None
+		</p>
+		
+		<p><b>Saving Throws:</b> Wisdom, Charisma
+		</p>
+		
+		<p><b>Skills:</b> Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion
+		</p>
+		
+		<h3 class="feature">Equipment</h3>
+		
+		<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+		<ul>
+		<li>(<em>a</em>) a martial weapon and a shield or (<em>b</em>) two martial weapons</li>
+		<li>(<em>a</em>) five javelins or (<em>b</em>) any simple melee weapon</li>
+		<li>(<em>a</em>) a priest's pack or (<em>b</em>) an explorer's pack</li>
+		<li>Chain mail</li>
+		</ul>
+		
+		<table class="wide">
+		<tr><th>Level</th><th>Proficiency</th><th>Features</th><th>Spells Known</th><th>Stamina</th><th>Aether</th><th>Aether Limit</th></tr>
+		<tr><td>1st</td><td>+2</td><td>Divine Sense, Lay on Hands</td><td>---</td><td>1</td><td>2</td><td>1</td></tr>
+		<tr><td>2nd</td><td>+2</td><td>Fighting Style, Spellcasting, Divine Smite</td><td>1</td><td>2</td><td>4</td><td>2</td></tr>
+		<tr><td>3rd</td><td>+2</td><td>Divine Health, Sacred Oath</td><td>1</td><td>2</td><td>6</td><td>3</td></tr>
+		<tr><td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>2</td><td>3</td><td>8</td><td>3</td></tr>
+		<tr><td>5th</td><td>+3</td><td>Extra Attack</td><td>2</td><td>3</td><td>10</td><td>4</td></tr>
+		<tr><td>6th</td><td>+3</td><td>Aura of Protection</td><td>3</td><td>4</td><td>12</td><td>5</td></tr>
+		<tr><td>7th</td><td>+3</td><td>Sacred Oath feature, Find Steed</td><td>3</td><td>4</td><td>14</td><td>5</td></tr>
+		<tr><td>8th</td><td>+3</td><td>Ability Score Improvement</td><td>4</td><td>5</td><td>16</td><td>6</td></tr>
+		<tr><td>9th</td><td>+4</td><td>-</td><td>4</td><td>5</td><td>18</td><td>7</td></tr>
+		<tr><td>10th</td><td>+4</td><td>Aura of Courage</td><td>5</td><td>6</td><td>20</td><td>7</td></tr>
+		<tr><td>11th</td><td>+4</td><td>Improved Divine Smite</td><td>5</td><td>6</td><td>22</td><td>8</td></tr>
+		<tr><td>12th</td><td>+4</td><td>Ability Score Improvement</td><td>6</td><td>7</td><td>24</td><td>9</td></tr>
+		<tr><td>13th</td><td>+5</td><td>-</td><td>6</td><td>7</td><td>26</td><td>9</td></tr>
+		<tr><td>14th</td><td>+5</td><td>Cleansing Touch</td><td>7</td><td>8</td><td>28</td><td>10</td></tr>
+		<tr><td>15th</td><td>+5</td><td>Sacred Oath feature</td><td>7</td><td>8</td><td>30</td><td>11</td></tr>
+		<tr><td>16th</td><td>+5</td><td>Ability Score Improvement</td><td>8</td><td>9</td><td>32</td><td>11</td></tr>
+		<tr><td>17th</td><td>+6</td><td>-</td><td>8</td><td>9</td><td>34</td><td>12</td></tr>
+		<tr><td>18th</td><td>+6</td><td>Aura improvements</td><td>9</td><td>10</td><td>36</td><td>13</td></tr>
+		<tr><td>19th</td><td>+6</td><td>Ability Score Improvement</td><td>9</td><td>10</td><td>38</td><td>13</td></tr>
+		<tr><td>20th</td><td>+6</td><td>Sacred Oath feature</td><td>10</td><td>10</td><td>40</td><td>14</td></tr>
+		</table>
+		
+		<h3 class="feature">Divine Sense</h3>
+		
+		<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <a href="../spells/incantations.html#hallow">hallow</a> spell.</p>
+		
+		<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+		
+		<h3 class="feature">Lay on Hands</h3>
+		
+		<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your oathbound level &times; 5.</p>
+		
+		<p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
+		
+		<p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p>
+		
+		<p>This feature has no effect on undead and constructs.</p>
+		
+		<h3 class="feature">Weapon Specialization</h3>
+		
+		<p>You have learned to wield one type of weapon better. Choose one of the properties below. You gain the bonus listed. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.</p>
+		
+		<p><b>Battering</b> Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.</p>
+		
+		<p><b>Cleaving</b> You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.</p>
+		
+		<p><b>Parrying</b> The reaction attack from this property is made at advantage.</p>
+		
+		<p><b>Reach</b> You can make opportunity attacks when a creature enters your range as well as leaves it.</p>
+		
+		<p><b>Two-handed (Melee only)</b> You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.</p>
+		
+		<p><b>Versatile</b> You get the increased damage die even when wielding it in one hand.</p>
+		
+		<h3 class="feature">Spellcasting</h3>
+		
+		<p>By 2nd level, you have learned to draw on astral power through meditation and confidence in your own rightness to cast spells much like a priest does.</p>
+		
+		<h4>Preparing and Casting Spells</h4>
+		
+		<p>The Oathbound table shows how much aether (AET) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater. You regain all expended aether when you finish a long rest. It also shows your Aether Limit, which is the maximum aether you can expend on a single action.</p>
+		
+		<p>You know a certain number of Oathbound spells, choosing from the oathbound spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of oathbound spells equal to your Charisma modifier + half your oathbound level, rounded down (minimum of one spell). To prepare a spell you must be able to cast it without exceeding your Aether Limit.</p>
+		
+		<h4>Spellcasting Ability</h4>
+		
+		<p>Charisma is your spellcasting ability for your oathbound spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a oathbound spell you cast and when making an attack roll with one.</p>
+		
+		<p><b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier
+		</p>
+		
+		<p><b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier
+		</p>
 
 		<h4>Armored Caster</h4>
 		<p>You can cast oathbound spells while wearing any armor or wielding a shield. You can use your weapon or shield as a focus for your oathbound spells as long as it has a symbol relevant to your Oath (of your choice) emblazoned (ie painted, engraved, or otherwise drawn) on it.</p>
-    
-    <h3 class="subsection">Divine Smite</h3>
-    
-    <p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend 1 or more AET to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 1d8 + 1d8 per two additional AET to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>
-    
-    <p>In addition to expending aether to deal more damage, you can expend aether to add additional effects (up to your aether limit).</p>
-    
-    <p><b>Banishing Smite</b> By expending 12 additional aether, you can force the target to make a Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane and incapacitated for 1 minute. If the target was a celestial or devil, it is instead banished to the Astral on a failed save. If the target was a demon or undead, it is banished to the Abyss on a failed save. If the target was an elemental, it is banished to the corresponding elemental plane. Targets native to the plane they were banished from can attempt the saving throw again at the end of each of their turns, ending the banishment on a success and reappearing in the closest unoccupied space to where they left. Targets banished to a specific plane cannot return to the plane they were banished from by any means for a year and a day.</p>
-    
-    <p><b>Blinding Smite</b> By expending 4 additional aether, you can force the target to make a Constitution saving throw against your spell DC, becoming blinded for 1 minute on a failure. The target can attempt the saving throw at the end of each of their turns, ending the effect on a success.</p>
-    
-    <p><b>Searing Smite</b> By expending 2 additional aether, you can convert the smite's damage to fire and cause it to ignite the target. The target takes additional fire damage equal to half the damage dealt by the smite at the beginning of their next turn and every turn thereafter for 1 minute or until they succeed on a Constitution saving throw against your spell DC or take an action to extinguish the flames.</p>
-    
-    <p><b>Thundrous Smite</b> By expending 2 additional aether, you can force the target to make a Strength saving throw against your spell DC. On a failed save, the target is pushed 10 feet away from you and knocked prone.</p>
-    
-    <p><b>Wrathful Smite</b> By expending 2 additional aether, you can force the target to make a Wisdom saving throw against your spell DC. On a failed save, the target is frightened of you until the end of your next turn.</p>
-    
-    <h3 class="subsection">Divine Health</h3>
-    
-    <p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>
-    
-    <h3 class="subsection">Sacred Oath</h3>
-    
-    <p>When you reach 3rd level, you swear the oath that binds you as a oathbound forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
-    
-    <p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>
-    
-    <h4 class="subsub">Oath Spells</h4>
-    
-    <p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p>
-    
-    <p>If you gain an oath spell that doesn't appear on the oathbound spell list, the spell is nonetheless a oathbound spell for you.</p>
-    
-    <h4 class="subsub">Channel Divinity</h4>
-    
-    <p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p>
-    
-    <p>When you use your Channel Divinity, you choose which option to use and expend 3 STA.</p>
-    
-    <p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your oathbound spell save DC.</p>
-    
-    <h3 class="subsection">Ability Score Improvement</h3>
-    
-    <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1.  As normal, you can't increase an ability score above +5 using this feature.</p>
-    
-    <p>You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See <a href="../skill-tricks.html">Skill Tricks</a> for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.</p>
-    
-    <h3 class="subsection">Extra Attack</h3>
-    
-    <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
-    
-    <h3 class="subsection">Aura of Protection</h3>
-    
-    <p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
-    
-    <p>At 18th level, the range of this aura increases to 30 feet.</p>
-    
-    <h3 class="subsection">Find Steed</h3>
-    
-    <p>At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 Aether. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
-    
-    <p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. You and your steed act on the same turn, and you can control its actions (mounted or not) without spending any actions of your own. Unlike other controlled mounts, the steed can take the Attack action while you are mounted on it, but cannot take the Multiattack action if it has it. While mounted on your steed, you can make any spell you cast that targets only you also target your steed. In addition, while mounted on the steed, you can force any attack that targets the mount to instead target you.</p>
-    
-    <p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p>
-    
-    <p>While your steed is within 1 mile of you, you can communicate with it telepathically.</p>
-    
-    <p>You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>
-    
-    <p>Starting at level 14, you can expend 8 Aether when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.</p>
-    
-    <h3 class="subsection">Aura of Courage</h3>
-    
-    <p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
-    
-    <p>At 18th level, the range of this aura increases to 30 feet.</p>
-    
-    <h3 class="subsection">Improved Divine Smite</h3>
-    
-    <p>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</p>
-    
-    <h3 class="subsection">Cleansing Touch</h3>
-    
-    <p>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.</p>
-    
-    <p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
-    
-    <h2 class="divider">Sacred Oaths</h2>
-    
-    <p>Becoming a oathbound involves taking vows that commit the oathbound to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the oathbound's training. Some characters with this class don't consider themselves true oathbounds until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the oathbound's heart.</p>
-    
-    <div class="comment">
-        <h3>Breaking Your Oath</h3>
-        <p>A oathbound tries to hold to the highest standards of conduct, but even the most virtuous oathbound is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a oathbound to transgress his or her oath.</p>
-    
-    <p>A oathbound who has broken a vow typically seeks absolution from a priest who shares his or her faith or from another oathbound of the same order. The oathbound might spend an all- night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the oathbound starts fresh.</p>
-    
-    <p>If a oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.</p>
-    </div>
+		
+		<h3 class="feature">Divine Smite</h3>
+		
+		<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend 1 or more AET to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 1d8 + 1d8 per two additional AET to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>
+		
+		<p>In addition to expending aether to deal more damage, you can expend aether to add additional effects (up to your aether limit).</p>
+		
+		<p><b>Banishing Smite</b> By expending 12 additional aether, you can force the target to make a Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane and incapacitated for 1 minute. If the target was a celestial or devil, it is instead banished to the Astral on a failed save. If the target was a demon or undead, it is banished to the Abyss on a failed save. If the target was an elemental, it is banished to the corresponding elemental plane. Targets native to the plane they were banished from can attempt the saving throw again at the end of each of their turns, ending the banishment on a success and reappearing in the closest unoccupied space to where they left. Targets banished to a specific plane cannot return to the plane they were banished from by any means for a year and a day.</p>
+		
+		<p><b>Blinding Smite</b> By expending 4 additional aether, you can force the target to make a Constitution saving throw against your spell DC, becoming blinded for 1 minute on a failure. The target can attempt the saving throw at the end of each of their turns, ending the effect on a success.</p>
+		
+		<p><b>Searing Smite</b> By expending 2 additional aether, you can convert the smite's damage to fire and cause it to ignite the target. The target takes additional fire damage equal to half the damage dealt by the smite at the beginning of their next turn and every turn thereafter for 1 minute or until they succeed on a Constitution saving throw against your spell DC or take an action to extinguish the flames.</p>
+		
+		<p><b>Thundrous Smite</b> By expending 2 additional aether, you can force the target to make a Strength saving throw against your spell DC. On a failed save, the target is pushed 10 feet away from you and knocked prone.</p>
+		
+		<p><b>Wrathful Smite</b> By expending 2 additional aether, you can force the target to make a Wisdom saving throw against your spell DC. On a failed save, the target is frightened of you until the end of your next turn.</p>
+		
+		<h3 class="feature">Divine Health</h3>
+		
+		<p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>
+		
+		<h3 class="feature">Sacred Oath</h3>
+		
+		<p>When you reach 3rd level, you swear the oath that binds you as a oathbound forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
+		
+		<p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>
+		
+		<h4>Oath Spells</h4>
+		
+		<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p>
+		
+		<p>If you gain an oath spell that doesn't appear on the oathbound spell list, the spell is nonetheless a oathbound spell for you.</p>
+		
+		<h4>Channel Divinity</h4>
+		
+		<p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p>
+		
+		<p>When you use your Channel Divinity, you choose which option to use and expend 3 STA.</p>
+		
+		<p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your oathbound spell save DC.</p>
+		
+		<h3 class="feature">Ability Score Improvement</h3>
+		
+		<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1.  As normal, you can't increase an ability score above +5 using this feature.</p>
+		
+		<p>You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See <a href="../skill-tricks.html">Skill Tricks</a> for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.</p>
+		
+		<h3 class="feature">Extra Attack</h3>
+		
+		<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		
+		<h3 class="feature">Aura of Protection</h3>
+		
+		<p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
+		
+		<p>At 18th level, the range of this aura increases to 30 feet.</p>
+		
+		<h3 class="feature">Find Steed</h3>
+		
+		<p>At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 Aether. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
+		
+		<p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. You and your steed act on the same turn, and you can control its actions (mounted or not) without spending any actions of your own. Unlike other controlled mounts, the steed can take the Attack action while you are mounted on it, but cannot take the Multiattack action if it has it. While mounted on your steed, you can make any spell you cast that targets only you also target your steed. In addition, while mounted on the steed, you can force any attack that targets the mount to instead target you.</p>
+		
+		<p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p>
+		
+		<p>While your steed is within 1 mile of you, you can communicate with it telepathically.</p>
+		
+		<p>You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>
+		
+		<p>Starting at level 14, you can expend 8 Aether when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.</p>
+		
+		<h3 class="feature">Aura of Courage</h3>
+		
+		<p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
+		
+		<p>At 18th level, the range of this aura increases to 30 feet.</p>
+		
+		<h3 class="feature">Improved Divine Smite</h3>
+		
+		<p>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</p>
+		
+		<h3 class="feature">Cleansing Touch</h3>
+		
+		<p>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.</p>
+		
+		<p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
+		
+		<h1 class="divider">Sacred Oaths</h1>
+		
+		<p>Becoming a oathbound involves taking vows that commit the oathbound to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the oathbound's training. Some characters with this class don't consider themselves true oathbounds until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the oathbound's heart.</p>
+		
+		<div class="comment">
+				<h3>Breaking Your Oath</h3>
+				<p>A oathbound tries to hold to the highest standards of conduct, but even the most virtuous oathbound is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a oathbound to transgress his or her oath.</p>
+		
+		<p>A oathbound who has broken a vow typically seeks absolution from a priest who shares his or her faith or from another oathbound of the same order. The oathbound might spend an all- night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the oathbound starts fresh.</p>
+		
+		<p>If a oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.</p>
+		</div>
 
-    <h3 class="subsection">Oath of Devotion</h3>
-    
-    <p>The Oath of Devotion binds a oathbound to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these oathbounds meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>
-    
-    <h4 class="subsub">Tenets of Devotion</h4>
-    
-    <p>Though the exact words and strictures of the Oath of Devotion vary, oathbounds of this oath share these tenets.</p>
-    
-    <p><b>Honesty.</b> Don't lie or cheat. Let your word be your promise.</p>
-    
-    <p><b>Courage.</b> Never fear to act, though caution is wise.</p>
-    
-    <p><b>Compassion.</b> Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.</p>
-    
-    <p><b>Honor.</b> Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.</p>
-    
-    <p><b>Duty.</b> Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.                  </p>
-    
-    <h4 class="subsub">Channel Divinity</h4>
-    
-    <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
-    
-    <p><b>Sacred Weapon.</b> As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p>
-    
-    <p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>
-    
-    <p><b>Turn the Unholy.</b> As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
-    
-    <p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
-    
-    <h4 class="subsub">Improved Lay on Hands</h4>
-    <p>You can spend STA to refill your Lay on Hands pool--as an action, spend 1+ STA. The available pool of healing increases by 5 for every STA spent, up to a maximum of 5 &times; your level.</p>
-    
-    <h4 class="subsub">Aura of Devotion</h4>
-    
-    <p>Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.</p>
-    
-    <p>At 18th level, the range of this aura increases to 30 feet.</p>
-    
-    <h4 class="subsub">Purity of Spirit</h4>
-    
-    <p>Beginning at 15th level, you are always under the effects of a <em>protection from evil and good</em> spell.</p>
-    
-    <h4 class="subsub">Holy Nimbus</h4>
-    
-    <p>At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.</p>
-    
-    <p>Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.</p>
-    
-    <p>In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.</p>
-    
-    <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
-    
-    <h3 class="divider">Oathbound Spell List</h3>
-    <p>The Oathbound Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost.</p>
-    
-    <table>
-    <tr><th>Aether Cost</th><th>Name</th></tr>
-    <tr><td>1</td><td><a href="../spells/allspells.html#cure-wounds">cure wounds</a></td></tr>
-    <tr><td>1</td><td><a href="../spells/allspells.html#true-strike">true strike</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#bane">bane</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#bless">bless</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#command">command</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#divine-favor">divine favor</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#heroism">heroism</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#longstrider">longstrider</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#protection-from-otherworldly-influence">protection from otherworldly influence</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#sanctuary">sanctuary</a></td></tr>
-    <tr><td>2</td><td><a href="../spells/allspells.html#shield-of-faith">shield of faith</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#aid">aid</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#calm-emotions">calm emotions</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#magic-weapon">magic weapon</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#prayer-of-healing">prayer of healing</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#protection-from-poison">protection from poison</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#see-invisibility">see invisibility</a></td></tr>
-    <tr><td>3</td><td><a href="../spells/allspells.html#warding-bond">warding bond</a></td></tr>
-    <tr><td>5</td><td><a href="../spells/allspells.html#beacon-of-hope">beacon of hope</a></td></tr>
-    <tr><td>5</td><td><a href="../spells/allspells.html#daylight">daylight</a></td></tr>
-    <tr><td>5</td><td><a href="../spells/allspells.html#remove-curse">remove curse</a></td></tr>
-    <tr><td>5</td><td><a href="../spells/allspells.html#revivify">revivify</a></td></tr>
-    <tr><td>8</td><td><a href="../spells/allspells.html#banishment">banishment</a></td></tr>
-    <tr><td>8</td><td><a href="../spells/allspells.html#death-ward">death ward</a></td></tr>
-    <tr><td>8</td><td><a href="../spells/allspells.html#freedom-of-movement">freedom of movement</a></td></tr>
-    <tr><td>9</td><td><a href="../spells/allspells.html#mass-cure-wounds">mass cure wounds</a></td></tr>
-    <tr><td>12</td><td><a href="../spells/allspells.html#dispel-otherworldly-influence">dispel otherworldly influence</a></td></tr>
-    <tr><td>12</td><td><a href="../spells/allspells.html#true-seeing">true seeing</a></td></tr>
-    <tr><td>12</td><td><a href="../spells/allspells.html#divine-wrath">divine wrath</a></td></tr>
-    </table>
+		<h2 class="subclass">Oath of Devotion</h2>
+		
+		<p>The Oath of Devotion binds a oathbound to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these oathbounds meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>
+		
+		<h3>Tenets of Devotion</h3>
+		
+		<p>Though the exact words and strictures of the Oath of Devotion vary, oathbounds of this oath share these tenets.</p>
+		
+		<p><b>Honesty.</b> Don't lie or cheat. Let your word be your promise.</p>
+		
+		<p><b>Courage.</b> Never fear to act, though caution is wise.</p>
+		
+		<p><b>Compassion.</b> Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.</p>
+		
+		<p><b>Honor.</b> Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.</p>
+		
+		<p><b>Duty.</b> Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.                  </p>
+		
+		<h3 class="feature">Channel Divinity</h3>
+		
+		<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+		
+		<p><b>Sacred Weapon.</b> As an action, you can imbue one weapon that you are holding with radiant energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p>
+		
+		<p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>
+		
+		<p><b>Turn the Unholy.</b> As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+		
+		<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		
+		<h3 class="feature">Improved Lay on Hands</h3>
+		<p>You can spend STA to refill your Lay on Hands pool&mdash;as an action, spend 1+ STA. The available pool of healing increases by 5 for every STA spent, up to a maximum of 5 &times; your level.</p>
+		
+		<h3 class="feature">Aura of Devotion</h3>
+		
+		<p>Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.</p>
+		
+		<p>At 18th level, the range of this aura increases to 30 feet.</p>
+		
+		<h3 class="feature">Purity of Spirit</h3>
+		
+		<p>Beginning at 15th level, you are always under the effects of a <a href="../spells/allspells.html#protection-from-otherworldly-influence">protection from otherworldly influence</a> spell.</p>
+		
+		<h3 class="feature">Holy Nimbus</h3>
+		
+		<p>At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.</p>
+		
+		<p>Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.</p>
+		
+		<p>In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.</p>
+		
+		<p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+		
+		<h1 class="divider">Oathbound Spell List</h1>
+		<p>The Oathbound Spell List table contains a short summary of the spells available to all Oathbound, ordered by aether cost.</p>
+		
+		<table class="spell-list narrow">
+		<tr><th>Aether Cost</th><th>Name</th></tr>
+		<tr><td>1</td><td><a href="../spells/allspells.html#cure-wounds">cure wounds</a></td></tr>
+		<tr><td>1</td><td><a href="../spells/allspells.html#true-strike">true strike</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#bane">bane</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#bless">bless</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#command">command</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#divine-favor">divine favor</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#heroism">heroism</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#longstrider">longstrider</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#protection-from-otherworldly-influence">protection from otherworldly influence</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#sanctuary">sanctuary</a></td></tr>
+		<tr><td>2</td><td><a href="../spells/allspells.html#shield-of-faith">shield of faith</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#aid">aid</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#calm-emotions">calm emotions</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#magic-weapon">magic weapon</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#prayer-of-healing">prayer of healing</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#protection-from-poison">protection from poison</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#see-invisibility">see invisibility</a></td></tr>
+		<tr><td>3</td><td><a href="../spells/allspells.html#warding-bond">warding bond</a></td></tr>
+		<tr><td>5</td><td><a href="../spells/allspells.html#beacon-of-hope">beacon of hope</a></td></tr>
+		<tr><td>5</td><td><a href="../spells/allspells.html#daylight">daylight</a></td></tr>
+		<tr><td>5</td><td><a href="../spells/allspells.html#remove-curse">remove curse</a></td></tr>
+		<tr><td>5</td><td><a href="../spells/allspells.html#revivify">revivify</a></td></tr>
+		<tr><td>8</td><td><a href="../spells/allspells.html#banishment">banishment</a></td></tr>
+		<tr><td>8</td><td><a href="../spells/allspells.html#death-ward">death ward</a></td></tr>
+		<tr><td>8</td><td><a href="../spells/allspells.html#freedom-of-movement">freedom of movement</a></td></tr>
+		<tr><td>9</td><td><a href="../spells/allspells.html#mass-cure-wounds">mass cure wounds</a></td></tr>
+		<tr><td>12</td><td><a href="../spells/allspells.html#dispel-otherworldly-influence">dispel otherworldly influence</a></td></tr>
+		<tr><td>12</td><td><a href="../spells/allspells.html#true-seeing">true seeing</a></td></tr>
+		<tr><td>12</td><td><a href="../spells/allspells.html#divine-wrath">divine wrath</a></td></tr>
+		</table>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

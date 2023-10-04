@@ -147,10 +147,10 @@
 		
 		<table class="table table-striped table-primary table-hover">
 		<tr><th>Level</th><th>Proficiency</th><th>Features</th><th>Cantrips</th><th>Shapes</th><th>Effects</th><th>Invocations</th><th>Stamina</th><th>Aether</th><th>Aether Limit</th></tr>
-		<tr><td>1st</td><td>+2</td><td>Otherworldly Patron, Eldritch Blast</td><td>2</td><td>---</td><td>---</td><td>---</td><td>1</td><td>3</td><td>2</td></tr>
-		<tr><td>2nd</td><td>+2</td><td>Eldritch Invocations, Blast Effects</td><td>2</td><td>---</td><td>1</td><td>2</td><td>1</td><td>4</td><td>2</td></tr>
-		<tr><td>3rd</td><td>+2</td><td>Pact Boon</td><td>2</td><td>---</td><td>1</td><td>3</td><td>2</td><td>7</td><td>3</td></tr>
-		<tr><td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>3</td><td>---</td><td>2</td><td>3</td><td>2</td><td>9</td><td>3</td></tr>
+		<tr><td>1st</td><td>+2</td><td>Otherworldly Patron, Eldritch Blast</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>1</td><td>3</td><td>2</td></tr>
+		<tr><td>2nd</td><td>+2</td><td>Eldritch Invocations, Blast Effects</td><td>2</td><td>&mdash;</td><td>1</td><td>2</td><td>1</td><td>4</td><td>2</td></tr>
+		<tr><td>3rd</td><td>+2</td><td>Pact Boon</td><td>2</td><td>&mdash;</td><td>1</td><td>3</td><td>2</td><td>7</td><td>3</td></tr>
+		<tr><td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>3</td><td>&mdash;</td><td>2</td><td>3</td><td>2</td><td>9</td><td>3</td></tr>
 		<tr><td>5th</td><td>+3</td><td>Blast Shapes</td><td>3</td><td>1</td><td>2</td><td>4</td><td>3</td><td>11</td><td>5</td></tr>
 		<tr><td>6th</td><td>+3</td><td>Otherworldly Patron feature</td><td>3</td><td>1</td><td>2</td><td>4</td><td>3</td><td>13</td><td>5</td></tr>
 		<tr><td>7th</td><td>+3</td><td>Greater Blast Effects</td><td>3</td><td>2</td><td>2</td><td>5</td><td>4</td><td>17</td><td>8</td></tr>
@@ -509,23 +509,25 @@
 		
 		<p>Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.</p>
 		
-		<h3>Expanded Spell List</h3>
+		<h3>Pact Spells</h3>
 		
 		<p>The Pact of Destruction grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.</p>
 		
 		<table>
 		<tr><th>Warlock Level</th><th>Spells</th></tr>
-		<tr><td>1st</td><td>false life</td></tr>
-		<tr><td>3rd</td><td>flaming sphere</td></tr>
-		<tr><td>5th</td><td>vampiric touch</td></tr>
-		<tr><td>7th</td><td>wall of fire</td></tr>
-		<tr><td>9th</td><td>dispel otherworldly influence</td></tr>
+		<tr><td>1st</td><td>burning hands, thunderwave</td></tr>
+		<tr><td>3rd</td><td>flaming sphere, ray of enfeeblement</td></tr>
+		<tr><td>5th</td><td>unbind, vampiric touch</td></tr>
+		<tr><td>7th</td><td>black tentacles, wall of fire</td></tr>
+		<tr><td>9th</td><td>cloudkill, dispel otherworldly influence</td></tr>
 		</table>
 		
 		<h3>Destroyer's Blessing</h3>
 		
 		<p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>
 		
+		<p>Alternatively, when a hostile creature within 60 feet of you is reduced to 0 hit points by someone else, you can spend 2 STA and your reaction to gain the temporary hit points.</p>
+
 		<h3>Eldritch Backlash</h3>
 		<p>Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects:</p>
 
@@ -540,9 +542,9 @@
 		<p>Starting at 14th level, when you take damage from an attack or ability, you can force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by your eldritch blast. You can apply any single blast effect you know to this damage without expending aether; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again).</p>
 
 		<h2>Pact of Protection</h2>
-<p>Those Patrons who proffer Protection Pacts are wanting clients to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), archfey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not <em>good</em>, inherently---even the demon cults have protectors and defenders.</p>
+		<p>Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), archfey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not <em>good</em>, inherently&mdash;even the demon cults have protectors and defenders.</p>
 
-<h3>Expanded Spell List</h3>
+<h3>Pact Spells</h3>
 
 <p>The Pact of Protection grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.</p>
 
@@ -557,7 +559,7 @@
 </table>
 
 <h3>Steadfast Protection</h3>
-<p>When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.</p>
+<p>When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws. If you spend 2 STA, you have resistance to the damage as well.</p>
 
 <h3>Eldritch Shield</h3>
 <p>Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects.</p>
@@ -574,6 +576,43 @@
 </p>
 
 <p>If you already know this legendary effect via Mystic Arcanum, you may choose an additional legendary effect that you could know at this level.</p>
+
+<h2>Pact of Inquiry</h2>
+<p>Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics&mdash;each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedar both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge--the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests&mdash;Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade&mdash;gathering information requires deception. Thus, warlocks of Inquiry are often very good at appearing other than they truly are.</p>
+
+<h3>Pact Spells</h3>
+<p>The Pact of Inquiry grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.</p>
+
+	<table>
+		<caption>Inquiry Spells</caption>
+		<tr><th>Warlock Level</th><th>Spells</th></tr>
+		<tr><td>1st</td><td>charm person, disguise self</td></tr>           
+		<tr><td>3rd</td><td>detect thoughts, see invisibility</td></tr> 			 
+		<tr><td>5th</td><td>clairvoyance, major image</td></tr>        
+		<tr><td>7th</td><td>arcane eye, greater invisibility</td></tr>         
+		<tr><td>9th</td><td>mislead, true seeing</td></tr> 
+	</table>
+
+
+<h3>Deceptive Charm</h3>
+<p>When a creature you can see targets you with an attack or an ability that causes damage, you can spend 2 STA and your reaction to force them to make a Charisma saving throw against your Spellcasting DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to charm.</p>
+
+<h3>Eldritch Interrogation</h3>
+<p>At 6th level you learn the Whispers of the Grave invocation. It does not count against your normal limit of Invocations known. When you target a corpse with this invocation, the corpse is required to speak truthfully and answer the questions to the best of its ability even if it recognizes you as an enemy.</p>
+
+<p>If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.</p>
+
+<h3>Psychometry</h3>
+<p>Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from".</p>
+
+<p>A ghostly scene unfolds around you, centered on the object. It includes up to 10 minutes before and after the event in question. You can walk around this scene, which is visible to everyone within sight of it. At your discretion (no action required), you can pause the scene, rewind the action, or fast forward it. You can dismiss the scene as an action; if you do not, it fades 30 minutes after it was created, even if paused the whole time.</p>
+
+<p>This counts as divination magic, so creatures under the effect of <a href="../spells/allspells.html#nondetection">nondetection</a> are invisible. Additionally, the psychometric effect has no special senses&mdash;it acts as if you, personally, were present and uses your ability scores, senses, and proficiencies if relevant. The scene is video only, no sound, smell or other sensory information is present.</p>
+
+<p>Once you use this ability you must finish a long rest before you can use it again.</p>
+
+<h3>Legendary Effect: Mind Blank</h3>
+<p>At 14th level, you learn the legendary effect <a href="../spells/legendary-effects.html#mind-blank">mind-blank</a> and can use it once per long rest.</p>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

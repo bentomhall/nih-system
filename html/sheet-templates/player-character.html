@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PC Character Sheet</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="character.css">
+</head>
+<body>
+	<div class="bordered-container">
+		<div class="bordered-group-hz header">
+			<div class="input-group med-width">
+				<label for="char-name">Name</label>
+				<input type="text" name="char-name" id="char-name">
+				<hr class="group-divider">
+				<label for="proficiency">Proficiency</label>
+				<input type="number" name="proficiency" id="proficiency" min="2" max="6" placeholder="2">
+			</div>
+			<div class="input-group med-width">
+				<label for="char-class">Class</label>
+				<input type="text" name="char-class" id="char-class">
+				<hr class="group-divider">
+				<label for="char-archetype">Archetype</label>
+				<input type="text" name="char-archetype" id="char-archetype">
+			</div>
+			<div class="input-group med-width">
+				<label for="char-lineage">Lineage</label>
+				<input type="text" name="char-lineage" id="char-lineage">
+				<hr class="group-divider">
+				<label for="char-culture">Culture and Background</label>
+				<input type="text" name="char-culture" id="char-culture">
+			</div>
+			<div class="input-group med-width">
+				<label for="char-level">Level</label>
+				<input type="number" min="1" name="char-level" id="char-level" placeholder="1">
+				<hr class="group-divider">
+				<label for="char-xp">XP</label>
+				<input type="text" name="char-xp" id="char-xp">
+			</div>
+		</div>
+		<div class="abilities bordered-group">
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-str"><b>Strength</b></label>
+						<input type="number" name="ability-str" id="ability-str" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="str-prof">+Prof</label>
+						<input type="number" name="str-prof" id="str-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="str-exp">+2x Prof</label>
+						<input type="number" name="str-exp" id="str-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="str-3x">+3x Prof</label>
+						<input type="number" name="str-3x" id="str-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-dex"><b>Dexterity</b></label>
+						<input type="number" name="ability-dex" id="ability-dex" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="dex-prof">+Prof</label>
+						<input type="number" name="dex-prof" id="dex-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="dex-exp">+2x Prof</label>
+						<input type="number" name="dex-exp" id="dex-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="dex-3x">+3x Prof</label>
+						<input type="number" name="dex-3x" id="dex-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-con"><b>Constitution</b></label>
+						<input type="number" name="ability-con" id="ability-con" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="con-prof">+Prof</label>
+						<input type="number" name="con-prof" id="con-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="con-exp">+2x Prof</label>
+						<input type="number" name="con-exp" id="con-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="con-3x">+3x Prof</label>
+						<input type="number" name="con-3x" id="con-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-int"><b>Intelligence</b></label>
+						<input type="number" name="ability-int" id="ability-int" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="int-prof">+Prof</label>
+						<input type="number" name="int-prof" id="int-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="int-exp">+2x Prof</label>
+						<input type="number" name="int-exp" id="int-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="int-3x">+3x Prof</label>
+						<input type="number" name="int-3x" id="int-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-wis"><b>Wisdom</b></label>
+						<input type="number" name="ability-wis" id="ability-wis" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="wis-prof">+Prof</label>
+						<input type="number" name="wis-prof" id="wis-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="wis-exp">+2x Prof</label>
+						<input type="number" name="wis-exp" id="wis-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="wis-3x">+3x Prof</label>
+						<input type="number" name="wis-3x" id="wis-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="stat-group">
+				<div class="input-group med-height">
+					<div class="input-group-horiz">
+						<label for="ability-cha"><b>Charisma</b></label>
+						<input type="number" name="ability-cha" id="ability-cha" min="-5" max="10" placeholder="0">
+					</div>
+					<div class="input-group-horiz">
+						<label for="cha-prof">+Prof</label>
+						<input type="number" name="cha-prof" id="cha-prof" min="-3" max="16" placeholder="2">
+					</div>
+					<div class="input-group-horiz">
+						<label for="cha-exp">+2x Prof</label>
+						<input type="number" name="cha-exp" id="cha-exp" min="-1" max="22" placeholder="4">
+					</div>
+					<div class="input-group-horiz">
+						<label for="cha-3x">+3x Prof</label>
+						<input type="number" name="cha-3x" id="cha-3x" min="+1" max="28" placeholder="6">
+					</div>
+				</div>
+			</div>
+			<div class="skill-group">
+				<div>
+					<div class="input-group-horiz label-group bold">
+						<div class="center-text">E</div>
+						<div class="center-text">P</div>
+						<div>Name</div>
+					</div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="str-save-p" id="str-save-p">
+						<div>STR Save</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-athl-e" id="s-athl-e">
+						<input type="checkbox" name="s-athl-p" id="s-athl-p">
+						<div>Athletics</div>
+					</div>
+				</div>
+				<div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="dex-save-p" id="dex-save-p">
+						<div>DEX Save</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-acro-e" id="s-acro-e">
+						<input type="checkbox" name="s-acro-p" id="s-acro-p">
+						<div>Acrobatics</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-slh-p" id="s-slh-p">
+						<input type="checkbox" name="s-slh-e" id="s-slh-e">
+						<div>Sleight of Hand</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-ste-e" id="s-ste-e">
+						<input type="checkbox" name="s-ste-p" id="s-ste-p">
+						<div>Stealth</div>
+					</div>
+				</div>
+				<div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="con-save-p" id="con-save-p">
+						<div>CON Save</div>
+					</div>
+				</div>
+				<div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="int-save-p" id="int-save-p">
+						<div>INT Save</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-arc-e" id="s-arc-e">
+						<input type="checkbox" name="s-arc-p" id="s-arc-p">
+						<div>Arcana</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-his-e" id="s-his-e">
+						<input type="checkbox" name="s-his-p" id="s-his-p">
+						<div>History</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-inv-e" id="s-inv-e">
+						<input type="checkbox" name="s-inv-p" id="s-inv-p">
+						<div>Investigation</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-nat-e" id="s-nat-e">
+						<input type="checkbox" name="s-nat-p" id="s-nat-p">
+						<div>Nature</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-rel-e" id="s-rel-e">
+						<input type="checkbox" name="s-rel-p" id="s-rel-p">
+						<div>Religion</div>
+					</div>
+				</div>
+				<div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="wis-save-p" id="wis-save-p">
+						<div>WIS Save</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-aha-e" id="s-aha-e">
+						<input type="checkbox" name="s-aha-p" id="s-aha-p">
+						<div>Animal Handling</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-ins-e" id="s-ins-e">
+						<input type="checkbox" name="s-ins-p" id="s-ins-p">
+						<div>Insight</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-med-e" id="s-med-e">
+						<input type="checkbox" name="s-med-p" id="s-med-p">
+						<div>Medicine</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-per-e" id="s-per-e">
+						<input type="checkbox" name="s-per-p" id="s-per-p">
+						<div>Perception</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-sur-e" id="s-sur-e">
+						<input type="checkbox" name="s-sur-p" id="s-sur-p">
+						<div>Survival</div>
+					</div>
+				</div>
+				<div>
+					<div class="input-group-horiz">
+						<div></div>
+						<input type="checkbox" name="cha-save-p" id="cha-save-p">
+						<div>CHA Save</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-dec-e" id="s-dec-e">
+						<input type="checkbox" name="s-dec-p" id="s-dec-p">
+						<div>Deception</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-int-e" id="s-int-e">
+						<input type="checkbox" name="s-int-p" id="s-int-p">
+						<div>Intimidation</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-perf-e" id="s-perf-e">
+						<input type="checkbox" name="s-perf-p" id="s-perf-p">
+						<div>Performance</div>
+					</div>
+					<div class="input-group-horiz">
+						<input type="checkbox" name="s-pers-e" id="s-pers-e">
+						<input type="checkbox" name="s-pers-p" id="s-pers-p">
+						<div>Persuasion</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bordered-group-hz defenses"></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

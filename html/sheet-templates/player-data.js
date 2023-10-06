@@ -31,7 +31,8 @@ export class PlayerData {
     sta: 0,
     aet: 0,
     staMax: 0,
-    aetMax: 0
+    aetMax: 0,
+		aetLimit: 1
   };
   attacks = {
     melee: 0,
@@ -77,7 +78,8 @@ export class PlayerData {
       sta: json?.resources?.sta ?? 0,
       staMax: json?.resources?.staMax ?? 1,
       aet: json?.resources?.aet ?? 0,
-      aetMax: json?.resources?.aetMax ?? 1
+      aetMax: json?.resources?.aetMax ?? 1,
+			aetLimit: json?.resources?.aetLimit ?? 1
     }
     this.attacks = {
       melee: json?.attacks?.melee ?? 0,

@@ -117,7 +117,8 @@ let inputPathMap = new Map([
   ['char-resist', ['resistances']],
   ['favorite-actions', ['favorites']],
   ['user-defined-1', ['features1']],
-  ['user-defined-2', ['features2']]
+  ['user-defined-2', ['features2']],
+	['char-aet-limit', ['resources', 'aetLimit']]
 ])
 
 function onValueChange(id, value) {
@@ -195,6 +196,7 @@ function setAllOutput() {
   setTextOutput(`favorite-actions`, player.favorites, true);
   setTextOutput(`user-defined-1`, player.features1, true);
   setTextOutput(`user-defined-2`, player.features2, true);
+	setTextOutput('char-aet-limit', player.resources.aetLimit, true);
 }
 
 function onSave() {

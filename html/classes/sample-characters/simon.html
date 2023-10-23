@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NIH Classes</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="../../main.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="classes.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../../index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="../../introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="../../core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="../../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="../../equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="../../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="../../character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="../../lineages.html" class="dropdown-item">Lineages</a>
+					<a href="../../cultures.html" class="dropdown-item">Cultures</a>
+					<a href="../../backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="../../classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="../arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="../armsman.html" class="dropdown-item">Armsman</a>
+					<a href="../brawler.html" class="dropdown-item">Brawler</a>
+					<a href="../oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="../priest.html" class="dropdown-item">Priest</a>
+					<a href="../ranger.html" class="dropdown-item">Ranger</a>
+					<a href="../rogue.html" class="dropdown-item">Rogue</a>
+					<a href="../shaman.html" class="dropdown-item">Shaman</a>
+					<a href="../spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="../warden.html" class="dropdown-item">Warden</a>
+					<a href="../warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="../../spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="../../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="../../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="../../spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="../../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="../../items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="../../items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="../../items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="../../items/rings.html" class="dropdown-item">Rings</a>
+					<a href="../../items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="../../items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="../../items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="../../monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="../../monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="../../monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="../../monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="../../monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="../../monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="../../monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="../../monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="../../monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="../../monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="../../monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="../../monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="../../monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="../../monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="../../monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="../../conditions.html" class="dropdown-item">Conditions</a>
+					<a href="../../examples.html" class="dropdown-item">Examples</a>
+					<a href="../../world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Simon</h1>
+		<p>Fang-kin Sailor Human Spellblade</p>
+		<h2>Lineage and Culture Features</h2>
+		<ul class="no-marker">
+			<li><b>ASIs:</b> +1 CHA (Fang-kin), +1 INT (Human)</li>
+			<li><b>Age:</b>19</li>
+			<li><b>Size:</b> Medium, 5'2", 100 lbs</li>
+			<li><b>Speed:</b> 30 ft, 15 swim</li>
+			<li><b>Bonus Proficiencies:</b> Performance, Deception, Perception, Survival, Water Vehicles, Cartographer's Tools, Disguise Kit</li>
+			<li><b>Languages:</b> Common, Iath Neidr, Thieves Cant.</li>
+			<li><b>Desperate Plea (+)</b>  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.</li>
+			<li><b>Cultural Mimicry: Like a Fish</b> Choose any feature granted by a different culture than the one you chose. You have a swim speed equal to half your speed.</li>
+			<li><b>Serpentine Grace</b> The fang-kin prize grace and dancing. Most who grow up here are more flexible than those of other cultures, no matter their lineage. You can squeeze through spaces one size smaller than yourself without penalty. In addition, you can move through enemies spaces as long as they are one size larger or smaller than yourself instead of two, although the spaces are still difficult terrain.</li>
+			<li><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a></li>
+		</ul>
+
+		<h2>Level 1</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +2</li>
+			<li><b>Ability Scores:</b> 0/2 (+4)/1/0/1/3 (+5)</li>
+			<li><b>Hit Points:</b> 9/9 (1d8 HD)</li>
+			<li><b>AC:</b> 15 (chain shirt)</li>
+			<li><b>Skills:</b> Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 2, limit 2, LR</li>
+			<li><b>STA:</b> 1, SR</li>
+			<li><b>Ability DC (CHA):</b> 13</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +4 to hit, 5ft. Hit: 1d8 + 2 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +5 to hit, 90 ft. Hit: 1d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +5 to hit, 5ft. Hit: 1d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a></p>
+		<p><b>Spellcasting:</b> 4 spells known, 2 cantrips.</p>
+		<p><b>Arcane Manipulation (3x/LR):</b> BA, WIS save or -1d6 from check of your choice in 1 minute.</p>
+
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (2):</b> ray of frost, shocking grasp</p>
+		<p><b>Spells (4): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2)</p>
+
+		<h2>Level 3</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +2</li>
+			<li><b>Ability Scores:</b> 0/2 (+4)/1/0/1/3 (+5)</li>
+			<li><b>Hit Points:</b> 21/21 (3d8 HD)</li>
+			<li><b>AC:</b> 15 (chain shirt)</li>
+			<li><b>Skills:</b> (E) Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 6, limit 3, LR</li>
+			<li><b>STA:</b> 3, SR</li>
+			<li><b>Ability DC (CHA):</b> 13</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +4 to hit, 5ft. Hit: 1d8 + 2 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +5 to hit, 90 ft. Hit: 1d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +5 to hit, 5ft. Hit: 1d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a>, <a href="../../skill-tricks.html#piercing-wound">Piercing Wound</a></p>
+		<p><b>Spellcasting:</b> 5 spells known, 2 cantrips.</p>
+		<p><b>Arcane Manipulation (3x/LR):</b> BA, WIS save or -1d6 from check of your choice in 1 minute.</p>
+		<p><b>Inspiring Manipulation:</b> Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead <em>adds</em> the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.</p>
+
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (2):</b> ray of frost, shocking grasp</p>
+		<p><b>Spells (5): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2), enlarge/reduce (3)</p>
+		
+		<h2>Level 5</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +3</li>
+			<li><b>Ability Scores:</b> 0/3 (+6)/1/0/1/3 (+6)</li>
+			<li><b>Hit Points:</b> 33/33 (5d8 HD)</li>
+			<li><b>AC:</b> 16 (brigandine)</li>
+			<li><b>Skills:</b> (E) Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 10, limit 4, LR</li>
+			<li><b>STA:</b> 5, SR</li>
+			<li><b>Ability DC (CHA):</b> 14</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +6 to hit, 5ft. Hit: 1d8 + 3 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +6 to hit, 90 ft. Hit: 2d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +6 to hit, 5ft. Hit: 2d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a>, <a href="../../skill-tricks.html#piercing-wound">Piercing Wound</a>, <a href="../../skill-tricks.html#tumble">Tumble</a></p>
+		<p><b>Spellcasting:</b> 6 spells known, 2 cantrips.</p>
+		<p><b>Arcane Manipulation (3x/SR):</b> BA, WIS save or -1d8 from check of your choice in 1 minute.</p>
+		<p><b>Inspiring Manipulation:</b> Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead <em>adds</em> the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.</p>
+		<p><b>Renewed Manipulation: </b>Recover AM on SR.</p>
+
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (2):</b> ray of frost, shocking grasp</p>
+		<p><b>Spells (6): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2), enlarge/reduce (3), invisibility (3)</p>
+
+		<h2>Level 9</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +4</li>
+			<li><b>Ability Scores:</b> 0/3 (+7)/1/0/1/4 (+8)</li>
+			<li><b>Hit Points:</b> 57/57 (9d8 HD)</li>
+			<li><b>AC:</b> 17 (breastplate)</li>
+			<li><b>Skills:</b> (E) Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 18, limit 7, LR</li>
+			<li><b>STA:</b> 9, SR</li>
+			<li><b>Ability DC (CHA):</b> 16</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +7 to hit, 5ft. Hit: 1d8 + 3 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +8 to hit, 90 ft. Hit: 2d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +8 to hit, 5ft. Hit: 2d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a>, <a href="../../skill-tricks.html#piercing-wound">Piercing Wound</a>, <a href="../../skill-tricks.html#tumble">Tumble</a></p>
+		<p><b>Spellcasting:</b> 9 spells known, 4 cantrips.</p>
+		<p><b>Arcane Manipulation (4x/SR):</b> BA, WIS save or -1d8 from check of your choice in 1 minute.</p>
+		<p><b>Inspiring Manipulation:</b> Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead <em>adds</em> the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.</p>
+		<p><b>Renewed Manipulation: </b>Recover AM on SR.</p>
+		<p><b>Channeling (Cantrip): </b>Starting at 6th level, you have learned to weave your spells into your weapon use. When you take the Attack action on your turn, you can also cast a cantrip of your choice that targets another creature and infuse your weapon strike with it. If you hit with the attack, the target suffers the effect of both the regular weapon damage and the cantrip. If the cantrip targets two or more creatures, the additional creatures must be within 5 feet of the target of the weapon attack. If you miss, the spell fizzles and has no effect.</p>
+		<p><b>Counterweave (2 AET): </b>Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone within 60 ft of begins casting a spell or magical effect, you can spend 2 AET to attempt to counter it. The target must make a Charisma saving throw against your Spellcasting DC. They gain a +1 bonus for every 2 defensive CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend additional AET up to your limit; for every additional AET, the DC increases by 1.</p>
+		<p><b>Beneficial Channel:</b> Starting at 7th level, when you take the Attack action and choose <em>not</em> to apply your Channeling ability, you can instead grant temporary hit points equal to your proficiency bonus + your CHA modifier (8) to creature other than yourself you can see within 30 feet</p>
+		
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (4):</b> ray of frost, shocking grasp, prestidigitation, mage hand</p>
+		<p><b>Spells (10): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2), enlarge/reduce (3), invisibility (3), unbind (fixed, 2), fear (5), hypnotic pattern (5), blight (6) </p>
+
+		<h2>Level 11</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +4</li>
+			<li><b>Ability Scores:</b> 0/3 (+7)/1/0/1/4 (+8)</li>
+			<li><b>Hit Points:</b> 69/69 (11d8 HD)</li>
+			<li><b>AC:</b> 17 (breastplate)</li>
+			<li><b>Skills:</b> (E) Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 22, limit 8, LR</li>
+			<li><b>STA:</b> 11, SR</li>
+			<li><b>Ability DC (CHA):</b> 17</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +7 to hit, 5ft. Hit: 1d8 + 3 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +8 to hit, 90 ft. Hit: 3d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +8 to hit, 5ft. Hit: 3d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a>, <a href="../../skill-tricks.html#piercing-wound">Piercing Wound</a>, <a href="../../skill-tricks.html#tumble">Tumble</a></p>
+		<p><b>Spellcasting:</b> 9 spells known, 4 cantrips.</p>
+		<p><b>Arcane Manipulation (4x/SR):</b> BA, WIS save or -1d8 from check of your choice in 1 minute.</p>
+		<p><b>Inspiring Manipulation:</b> Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead <em>adds</em> the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.</p>
+		<p><b>Renewed Manipulation: </b>Recover AM on SR.</p>
+		<p><b>Channeling (Cantrip): </b>Starting at 6th level, you have learned to weave your spells into your weapon use. When you take the Attack action on your turn, you can also cast a cantrip of your choice that targets another creature and infuse your weapon strike with it. If you hit with the attack, the target suffers the effect of both the regular weapon damage and the cantrip. If the cantrip targets two or more creatures, the additional creatures must be within 5 feet of the target of the weapon attack. If you miss, the spell fizzles and has no effect.</p>
+		<p><b>Counterweave (2 AET): </b>Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone within 60 ft of begins casting a spell or magical effect, you can spend 2 AET to attempt to counter it. The target must make a Charisma saving throw against your Spellcasting DC. They gain a +1 bonus for every 2 defensive CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend additional AET up to your limit; for every additional AET, the DC increases by 1.</p>
+		<p><b>Beneficial Channel:</b> Starting at 7th level, when you take the Attack action and choose <em>not</em> to apply your Channeling ability, you can instead grant temporary hit points equal to your proficiency bonus + your CHA modifier (8) to creature other than yourself you can see within 30 feet</p>
+		
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (4):</b> ray of frost, shocking grasp, prestidigitation, mage hand</p>
+		<p><b>Spells (10): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2), enlarge/reduce (3), invisibility (3), unbind (fixed, 2), fear (5), hypnotic pattern (5), blight (6) </p>
+
+		<h2>Level 17</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +6</li>
+			<li><b>Ability Scores:</b> 0/4 (+10)/1/0/1/5 (+11)</li>
+			<li><b>Hit Points:</b> 105/105 (9d8 HD)</li>
+			<li><b>AC:</b> 17 (breastplate)</li>
+			<li><b>Skills:</b> (E) Acrobatics, Arcana, Deception, Insight, Perception, Performance, Survival</li>
+			<li><b>AET:</b> 34, limit 12, LR</li>
+			<li><b>STA:</b> 17, SR</li>
+			<li><b>Ability DC (CHA):</b> 19</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Rapier:</b> Melee Weapon Attack. +10 to hit, 5ft. Hit: 1d8 + 4 piercing damage.</li>
+			<li><b>Ray of Frost:</b> Ranged Spell Attack. +11 to hit, 90 ft. Hit: 4d8 cold damage and the creature's speed is reduced by 10 ft. until the end of your next turn.</li>
+			<li><b>Shocking Grasp:</b> Melee Spell Attack. +11 to hit, 5ft. Hit: 4d8 lightning damage and the creature cannot take reactions until the end of your next turn.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#alert">Alert</a>, <a href="../../skill-tricks.html#piercing-wound">Piercing Wound</a>, <a href="../../skill-tricks.html#tumble">Tumble</a></p>
+		<p><b>Spellcasting:</b> 14 + 1 spells known, 5 cantrips.</p>
+		<p><b>Arcane Manipulation (4x/SR):</b> BA, WIS save or -1d12 from check of your choice in 1 minute.</p>
+		<p><b>Inspiring Manipulation:</b> Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead <em>adds</em> the die to one ability check or damage roll they make within the next minute. No saving throw is required. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.</p>
+		<p><b>Renewed Manipulation: </b>Recover AM on SR.</p>
+		<p><b>Channeling (8 AET): </b>Starting at 6th level, you have learned to weave your spells into your weapon use. When you take the Attack action on your turn, you can also cast a spell with base cost 8 AET or lower of your choice that targets another creature and infuse your weapon strike with it. If you hit with the attack, the target suffers the effect of both the regular weapon damage and the cantrip. If the cantrip targets two or more creatures, the additional creatures must be within 5 feet of the target of the weapon attack. If you miss, the spell fizzles and has no effect.</p>
+		<p><b>Counterweave (2 AET): </b>Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone within 60 ft of begins casting a spell or magical effect, you can spend 2 AET to attempt to counter it. The target must make a Charisma saving throw against your Spellcasting DC. They gain a +1 bonus for every 2 defensive CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend additional AET up to your limit; for every additional AET, the DC increases by 1.</p>
+		<p>If the target succeeds, you can choose up to 6 willing creatures that are targets of the effect. If the effect deals damage, they have resistance to that damage.</p>
+		<p><b>Beneficial Channel:</b> Starting at 7th level, when you take the Attack action and choose <em>not</em> to apply your Channeling ability, you can instead grant temporary hit points equal to your proficiency bonus + your CHA modifier (11) to creature other than yourself you can see within 30 feet</p>
+		<p><b>Legendary Effect: Heroes Feast</b> At 14th level, you learn the legendary effect <a href="../spells/allspells.html#heroes-feast">heroes feast</a> and can use it once per day.</p>
+		<h3>Spells Known:</h3>
+		<p><b>Cantrips (4):</b> ray of frost, shocking grasp, prestidigitation, mage hand</p>
+		<p><b>Spells (15): </b> true strike (1), inflict wounds (2), false life (2), hideous laughter (2), enlarge/reduce (3), invisibility (3), unbind (fixed, 2), fear (5), hypnotic pattern (5), blight (6), banishment (8), arcane eye (8), confusion (8), cone of cold (10), hold monster (12) </p>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

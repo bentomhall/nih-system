@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NIH Classes</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="../../main.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="classes.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../../index.html">Changelog</a></div>
+			<div class="nav-item"><a class="navbar-brand" href="../../introduction.html">Introduction</a></div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
+				<div class="dropdown-menu">
+					<a href="../../core-system.html" class="dropdown-item">Core Rules</a>
+					<a href="../../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
+					<a href="../../equipment.html" class="dropdown-item">Equipment and Expenses</a>
+					<a href="../../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
+				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
+					<a href="../../character-creation.html" class="dropdown-item">Character Creation Basics</a>
+					<a href="../../lineages.html" class="dropdown-item">Lineages</a>
+					<a href="../../cultures.html" class="dropdown-item">Cultures</a>
+					<a href="../../backgrounds.html" class="dropdown-item">Backgrounds</a>
+					<a href="../../classes.html" class="dropdown-item">Classes</a>
+					<div class="dropdown-divider"></div>
+					<a href="../arcanist.html" class="dropdown-item">Arcanist</a>
+					<a href="../armsman.html" class="dropdown-item">Armsman</a>
+					<a href="../brawler.html" class="dropdown-item">Brawler</a>
+					<a href="../oathbound.html" class="dropdown-item">Oathbound</a>
+					<a href="../priest.html" class="dropdown-item">Priest</a>
+					<a href="../ranger.html" class="dropdown-item">Ranger</a>
+					<a href="../rogue.html" class="dropdown-item">Rogue</a>
+					<a href="../shaman.html" class="dropdown-item">Shaman</a>
+					<a href="../spellblade.html" class="dropdown-item">Spellblade</a>
+					<a href="../warden.html" class="dropdown-item">Warden</a>
+					<a href="../warlock.html" class="dropdown-item">Warlock</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
+				<div class="dropdown-menu" aria-labelledby="spellsMenu">
+					<a href="../../spells.html" class="dropdown-item">Spellcasting Rules</a>
+					<a href="../../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
+					<a href="../../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
+					<a href="../../spells/incantations.html" class="dropdown-item">Incantations</a>
+					<a href="../../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
+				<div class="dropdown-menu" aria-labelledby="itemsMenu">
+					<a href="../../items.html" class="dropdown-item">Rules and Crafting</a>
+					<a href="../../items/armor.html" class="dropdown-item">Armor and Clothing</a>
+					<a href="../../items/potions.html" class="dropdown-item">Consumables</a>
+					<a href="../../items/rings.html" class="dropdown-item">Rings</a>
+					<a href="../../items/wands.html" class="dropdown-item">Rods and Wands</a>
+					<a href="../../items/weapons.html" class="dropdown-item">Weapons</a>
+					<a href="../../items/misc.html" class="dropdown-item">Wondrous Items</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
+				<div class="dropdown-menu" aria-labelledby="monstersMenu">
+					<a href="../../monsters.html" class="dropdown-item">Monster Rules</a>
+					<a href="../../monsters/aberrations.html" class="dropdown-item">Aberrations</a>
+					<a href="../../monsters/beasts.html" class="dropdown-item">Beasts</a>
+					<a href="../../monsters/celestials.html" class="dropdown-item">Celestials</a>
+					<a href="../../monsters/constructs.html" class="dropdown-item">Constructs</a>
+					<a href="../../monsters/dragons.html" class="dropdown-item">Dragons</a>
+					<a href="../../monsters/elementals.html" class="dropdown-item">Elementals</a>
+					<a href="../../monsters/fey.html" class="dropdown-item">Fey</a>
+					<a href="../../monsters/fiends.html" class="dropdown-item">Fiends</a>
+					<a href="../../monsters/giants.html" class="dropdown-item">Giants</a>
+					<a href="../../monsters/humanoids.html" class="dropdown-item">Humaniods</a>
+					<a href="../../monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
+					<a href="../../monsters/oozes.html" class="dropdown-item">Oozes</a>
+					<a href="../../monsters/plants.html" class="dropdown-item">Plants</a>
+					<a href="../../monsters/undead.html" class="dropdown-item">Undead</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
+				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
+				<div class="dropdown-menu">
+					<a href="../../conditions.html" class="dropdown-item">Conditions</a>
+					<a href="../../examples.html" class="dropdown-item">Examples</a>
+					<a href="../../world.html" class="dropdown-item">The World of Quartus</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Ssa Tor</h1>
+		<p>Maritime Sailor Ophidian Warlock of Destruction.</p>
+		<h2>Lineage and Culture Features</h2>
+		<ul class="no-marker">
+			<li><b>ASIs:</b> +1 DEX (Maritime), +1 CHA (Ophidian)</li>
+			<li><b>Age:</b>19</li>
+			<li><b>Size:</b> Medium, 5'1", 110 lbs</li>
+			<li><b>Speed:</b> 30 ft, 15 ft swim (Maritime)</li>
+			<li><b>Bonus Proficiencies:</b> Survival, water vehicles, cartographer's tools, Perception, Deception, carpenter's tools, dice </li>
+			<li><b>Languages:</b> Common, Sarthak, Thieves Cant.</li>
+			<li><b>Distracting Charm (+)</b>  Proficiency bonus per long rest, as a reaction when you are targeted with an attack by someone you can see, the attacker must make a DC 8 + your Charisma modifier + proficiency Wisdom saving throw. On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack.</li>
+      <li><b>Entwining Limbs</b>  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot drag them along with you.</li>
+      <li><b>Heat Sense</b> You can detect the presence (and pinpoint location) of living creatures within 30ft even through opaque concealment but not total cover. You do not count as able to see them for spells and effects that require sight, but they are not concealed from you and do not count as an unseen attacker.</li>
+			<li><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a></li>
+		</ul>
+
+		<h2>Level 1</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +2</li>
+			<li><b>Ability Scores:</b> -1/+3/+1/1/0 (+2)/+3 (+5)</li>
+			<li><b>Hit Points:</b> 9/9 (1d8 HD)</li>
+			<li><b>AC:</b> 14 (leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 3, limit 2, LR</li>
+			<li><b>STA:</b> 1, SR</li>
+			<li><b>Ability DC (CHA):</b> 13</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Dagger:</b> Melee Weapon Attack. +5 to hit, 5ft or thrown 20/60. Hit: 1d4 + 3 piercing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +5 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +5 to hit, 90 ft. Hit: 1d12 + 3 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a></p>
+    <p><b>Destroyer's Blessing: </b> 4 THP when a creature is reduced to zero HP. No cost if you deal the killing blow.</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact)</p>
+
+    <h2>Level 3</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +2</li>
+			<li><b>Ability Scores:</b> -1/+3/+1/1/0 (+2)/+3 (+5)</li>
+			<li><b>Hit Points:</b> 21/21 (3d8 HD)</li>
+			<li><b>AC:</b> 14 (leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 7, limit 3, LR</li>
+			<li><b>STA:</b> 2, SR</li>
+			<li><b>Ability DC (CHA):</b> 13</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Dagger:</b> Melee Weapon Attack. +5 to hit, 5ft or thrown 20/60. Hit: 1d4 + 3 piercing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +5 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +5 to hit, 90 ft. Hit: 1d12 + 3 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a></p>
+    <p><b>Destroyer's Blessing: </b> 6 THP when a creature is reduced to zero HP. No cost if you deal the killing blow.</p>
+    <p><b>Blast Effects (1): </b>Repelling Blast (1+ aet, push 5 ft for every aet expended, STR save if 2+ sizes larger to halve distance)</p>
+    <p><b>Invocations (2)</b> Eldritch Sight, Book of Ancient Secrets</p>
+    <p><b>Pact Boon: Pact of the Tome</b> Guidance, light, thaumaturgy, alter self</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation, guidance, light, thaumaturgy</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact), flaming sphere (pact), ray of enfeeblement (pact), alter self (boon)</p>
+    <p><b>Incantations: </b> Lesser Tongues, Animal Messenger</p>
+
+    <h2>Level 5</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +3</li>
+			<li><b>Ability Scores:</b> -1/+3/+1/1/0 (+2)/+4 (+7)</li>
+			<li><b>Hit Points:</b> 33/33 (5d8 HD)</li>
+			<li><b>AC:</b> 15 (reinforced leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 11, limit 5, LR</li>
+			<li><b>STA:</b> 3, SR</li>
+			<li><b>Ability DC (CHA):</b> 15</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Dagger:</b> Melee Weapon Attack. +6 to hit, 5ft or thrown 20/60. Hit: 1d4 + 3 piercing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +6 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +7 to hit, 180 ft. Hit: 2d12 + 3 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a>, <a href="../../skill-tricks.html#frighten">Frighten</a></p>
+    <p><b>Destroyer's Blessing: </b> 9 THP when a creature is reduced to zero HP. No cost if you deal the killing blow. 2 STA + reaction if someone else did.</p>
+    <p><b>Blast Effects (2): </b>Repelling Blast (1+ aet, push 5 ft for every aet expended, STR save if 2+ sizes larger to halve distance), Elemental blast (1)</p>
+    <p><b>Invocations (3)</b> Eldritch Sight, Book of Ancient Secrets, Whispers of the Grave</p>
+    <p><b>Blast Shapes (1):</b> Eldritch Spear (1)</p>
+    <p><b>Pact Boon: Pact of the Tome</b> Guidance, light, thaumaturgy, alter self</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation, guidance, light, thaumaturgy, acid burst</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact), flaming sphere (pact), ray of enfeeblement (pact), alter self (boon), unbind (pact), vampiric touch (pact)</p>
+    <p><b>Incantations: </b> Lesser Tongues, Animal Messenger</p>
+
+    <h2>Level 9</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +4</li>
+			<li><b>Ability Scores:</b> -1/+3/+1/1/0 (+2)/+5 (+9)</li>
+			<li><b>Hit Points:</b> 57/57 (9d8 HD)</li>
+			<li><b>AC:</b> 15 (reinforced leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 26, limit 12, LR</li>
+			<li><b>STA:</b> 5, SR</li>
+			<li><b>Ability DC (CHA):</b> 17</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Eldritch Claws:</b> Melee Spell Attack. +9 to hit, 5ft. Hit: 2d12 + 5 slashing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +7 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +9 to hit, 180 ft. Hit: 2d12 + 5 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a>, <a href="../../skill-tricks.html#demoralize">Demoralize</a>, <a href="../../skill-tricks.html#mental-toughness"></a>Mental Toughness</p>
+    <p><b>Destroyer's Blessing: </b> 13 THP when a creature is reduced to zero HP. No cost if you deal the killing blow. 2 STA + reaction if someone else did.</p>
+    <p><b>Blast Effects (2): </b>Repelling Blast (1+ aet, push 5 ft for every aet expended, STR save if 2+ sizes larger to halve distance), Elemental blast (1), Hellfire Blast (5), Eldritch Backlash (pact, 1+)</p>
+    <p><b>Invocations (6)</b> Eldritch Sight, Book of Ancient Secrets, Whispers of the Grave, Sculptor of Flesh, Stolen Knowledge (fireball), Master of Myriad Forms</p>
+    <p><b>Blast Shapes (3):</b> Eldritch Spear (1), Eldritch Claws (1), Eldritch Cone (4)</p>
+    <p><b>Pact Boon: Pact of the Tome</b> Guidance, light, thaumaturgy, alter self</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation, guidance, light, thaumaturgy, acid burst</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact), flaming sphere (pact), ray of enfeeblement (pact), alter self (boon), unbind (pact), vampiric touch (pact), fireball, polymorph (1/day), alter self (at will), black tentacles, wall of fire, cloudkill, dispel otherworldly influence</p>
+    <p><b>Incantations: </b> Lesser Tongues, Animal Messenger</p>
+
+    <h2>Level 11</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +4</li>
+			<li><b>Ability Scores:</b> -1/+3/+1/1/0 (+2)/+5 (+9)</li>
+			<li><b>Hit Points:</b> 69/69 (11d8 HD)</li>
+			<li><b>AC:</b> 15 (reinforced leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 35, limit 14, LR</li>
+			<li><b>STA:</b> 5, SR</li>
+			<li><b>Ability DC (CHA):</b> 17</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Eldritch Claws:</b> Melee Spell Attack. +9 to hit, 5ft. Hit: 3d12 + 5 slashing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +7 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +9 to hit, 180 ft. Hit: 3d12 + 5 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a>, <a href="../../skill-tricks.html#demoralize">Demoralize</a>, <a href="../../skill-tricks.html#mental-toughness"></a>Mental Toughness</p>
+    <p><b>Destroyer's Blessing: </b> 13 THP when a creature is reduced to zero HP. No cost if you deal the killing blow. 2 STA + reaction if someone else did.</p>
+    <p><b>Blast Effects (4): </b>Repelling Blast (1+ aet, push 5 ft for every aet expended, STR save if 2+ sizes larger to halve distance), Elemental blast (1), Hellfire Blast (5), Eldritch Backlash (pact, 1+), Clinging Lightning (5)</p>
+    <p><b>Invocations (10)</b> Eldritch Sight, Book of Ancient Secrets, Whispers of the Grave, Sculptor of Flesh, Stolen Knowledge (fireball), Master of Myriad Forms, Eyes of the Rune Keeper, Devil's Sight, Witch Sight</p>
+    <p><b>Blast Shapes (3):</b> Eldritch Spear (1), Eldritch Claws (1), Eldritch Sphere (6)</p>
+    <p><b>Pact Boon: Pact of the Tome</b> Guidance, light, thaumaturgy, alter self</p>
+    <p><b>Resilience:</b> Resist one damage type of your choice, changing at SR or LR.</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation, guidance, light, thaumaturgy, acid burst</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact), flaming sphere (pact), ray of enfeeblement (pact), alter self (boon), unbind (pact), vampiric touch (pact), fireball, polymorph (1/day), alter self (at will), black tentacles, wall of fire, cloudkill, dispel otherworldly influence</p>
+    <p><b>Incantations: </b> Lesser Tongues, Animal Messenger</p>
+    <p><b>Legendary Effects: </b> Reverse Gravity (1/LR)</p>
+
+    <h2>Level 17</h2>
+		<ul class="no-marker">
+			<li><b>Proficiency:</b> +6</li>
+			<li><b>Ability Scores:</b> -1/+5/+1/1/0 (+2)/+5 (+9)</li>
+			<li><b>Hit Points:</b> 105/105 (17d8 HD)</li>
+			<li><b>AC:</b> 17 (reinforced leather)</li>
+			<li><b>Skills:</b> Arcana, Deception, Persuasion, Survival, Intimidation</li>
+			<li><b>AET:</b> 50, limit 20, LR</li>
+			<li><b>STA:</b> 7, SR</li>
+			<li><b>Ability DC (CHA):</b> 17</li>
+		</ul>
+
+		<h3>Attacks:</h3>
+		<ul class="no-marker">
+			<li><b>Eldritch Claws:</b> Melee Spell Attack. +11 to hit, 5ft. Hit: 4d12 + 5 slashing damage.</li>
+			<li><b>Light Crossbow:</b> Ranged Weapon Attack. +11 to hit, 120/240 ft. Hit: 1d8 + 3 piercing damage.</li>
+      <li><b>Eldritch Blast:</b> Ranged Spell Attack. +11 to hit, 180 ft. Hit: 4d12 + 5 bludgeoning damage.</li>
+		</ul>
+
+		<h3>Features:</h3>
+		<p><b>Skill Tricks:</b> <a href="../../skill-tricks.html#lung-capacity">Lung Capacity</a>, <a href="../../skill-tricks.html#demoralize">Demoralize</a>, <a href="../../skill-tricks.html#mental-toughness"></a>Mental Toughness</p>
+    <p><b>Destroyer's Blessing: </b> 13 THP when a creature is reduced to zero HP. No cost if you deal the killing blow. 2 STA + reaction if someone else did.</p>
+    <p><b>Blast Effects (3): </b>Repelling Blast (1+ aet, push 5 ft for every aet expended, STR save if 2+ sizes larger to halve distance), Elemental blast (1), Hellfire Blast (5), Eldritch Backlash (pact, 1+), Clinging Lightning (5)</p>
+    <p><b>Invocations (7)</b> Eldritch Sight, Book of Ancient Secrets, Whispers of the Grave, Sculptor of Flesh, Stolen Knowledge (fireball), Master of Myriad Forms, Eyes of the Rune Keeper</p>
+    <p><b>Blast Shapes (4):</b> Eldritch Spear (1), Eldritch Claws (1), Eldritch Cone (4), Eldritch Sphere (6)</p>
+    <p><b>Pact Boon: Pact of the Tome</b> Guidance, light, thaumaturgy, alter self</p>
+    <p><b>Resilience:</b> Resist one damage type of your choice, changing at SR or LR.</p>
+		
+    <h3>Spells</h3>
+    <p><b>Cantrips:</b> mage hand, prestidigitation, guidance, light, thaumaturgy, acid burst</p>
+    <p><b>Spells:</b> burning hands (pact), thunderwave (pact), flaming sphere (pact), ray of enfeeblement (pact), alter self (boon), unbind (pact), vampiric touch (pact), fireball, polymorph (1/day), alter self (at will), black tentacles, wall of fire, cloudkill, dispel otherworldly influence</p>
+    <p><b>Incantations: </b> Lesser Tongues, Animal Messenger</p>
+    <p><b>Legendary Effects: </b> Reverse Gravity (1/LR), Rip Soul (1/LR), PW: Kill (1/LR), Globe of Invulnerability (1/LR)</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+  </html>

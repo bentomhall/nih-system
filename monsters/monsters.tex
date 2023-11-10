@@ -456,6 +456,16 @@ The following are some considerations for adjusting offensive rating. These are 
 
 Defensive rating is based on the idea that a monster of Defensive Rating X should live for approximately 3 rounds against a baseline party of level X characters actively fighting it. This allows it the substantial chance of getting off its "Big Cool Abilities" at least once before being soundly defeated (the assumption is, after all, that the heroes win way more fights than they lose). As such, the primary factor in Defensive Rating is hit points. The underlying assumption is that monsters will generally be focus-fired, or at least need to survive being focus-fired by the entire party for some time.
 
+\begin{figure}
+	\begin{DndComment}{Expected PC Damage and accuracy}
+		Not every action taken by player characters will be aimed at dealing damage. As a result, the system \textbf{does not} expect everyone to be fully-focused and optimized for damage dealing. Monsters are developed, and the defensive rating chart is built around the following principles:
+		\begin{itemize}
+			\item Player characters will generally hit between 60 and 70\% of the time (including critical hits). Deviations from this are very noticeable on the player side. Very few options other than advantage and disadvantage exist to modify attack rolls--this is on purpose. Monsters who have AC more than 1 away from the expected value from the charts should have clear narrative signals that they are either really easy or really hard to hit. For example, a knight wearing plate armor and wielding a shield signals that they're going to be a hard target, while an ooze with limited mobility is a signal of an easy-to-damage monster.
+			\item Player characters will generally land between 50 and 80\% of the saving throw-based abilities they use. This one has much broader range because there are 6 ability scores. Generally, few monsters have really poor WIS saves, while DEX tends to be one of the lower saves. CON tends to be the hands-down best saving throw. The others are mixed--STR tends to be ok to great, INT is all over the place, and CHA is high for fiends and dragons but generally poor otherwise.
+			\item After accounting for accuracy, a not-very-optimized \textit{party} is expected to deal on average 3x the damage of a similar-level rogue with a shortbow who gets sneak attack each round and hits (including crits) 70\% of the time. This rogue-based reference point is refered to as Rogue Equivalent Damage (RED). The variance in party damage is expected to be roughly between 2.5 RED and ~4-5 RED, depending on resource usage, targets, etc. This results in monsters generally surviving around 3 rounds, except at level 1 where a DR 1 monster survives roughly 2 rounds. Note that a damage-focused character normally does a baseline of ~1.2-1.5 RED (with spikes up to 2+ RED when burning resources) and a spell-caster using cantrips ends up around ~0.5 RED.
+	\end{DndComment}
+\end{figure}
+
 To calculate Defensive Rating, follow the steps below:
 \begin{itemize}
 	\item calculate the base hit points of the monster, or pick an appropriate number from the \nameref{tbl:defensive-rating} table for the rating you approximately wish to end up with.

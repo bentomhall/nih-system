@@ -462,7 +462,9 @@ Defensive rating is based on the idea that a monster of Defensive Rating X shoul
 		\begin{itemize}
 			\item Player characters will generally hit between 60 and 70\% of the time (including critical hits). Deviations from this are very noticeable on the player side. Very few options other than advantage and disadvantage exist to modify attack rolls--this is on purpose. Monsters who have AC more than 1 away from the expected value from the charts should have clear narrative signals that they are either really easy or really hard to hit. For example, a knight wearing plate armor and wielding a shield signals that they're going to be a hard target, while an ooze with limited mobility is a signal of an easy-to-damage monster.
 			\item Player characters will generally land between 50 and 80\% of the saving throw-based abilities they use. This one has much broader range because there are 6 ability scores. Generally, few monsters have really poor WIS saves, while DEX tends to be one of the lower saves. CON tends to be the hands-down best saving throw. The others are mixed--STR tends to be ok to great, INT is all over the place, and CHA is high for fiends and dragons but generally poor otherwise.
-			\item After accounting for accuracy, a not-very-optimized \textit{party} is expected to deal on average 3x the damage of a similar-level rogue with a shortbow who gets sneak attack each round and hits (including crits) 70\% of the time. This rogue-based reference point is refered to as Rogue Equivalent Damage (RED). The variance in party damage is expected to be roughly between 2.5 RED and ~4-5 RED, depending on resource usage, targets, etc. This results in monsters generally surviving around 3 rounds, except at level 1 where a DR 1 monster survives roughly 2 rounds. Note that a damage-focused character normally does a baseline of ~1.2-1.5 RED (with spikes up to 2+ RED when burning resources) and a spell-caster using cantrips ends up around ~0.5 RED.
+			\item After accounting for accuracy, a not-very-optimized \textit{party} is expected to deal on average 3x the damage of a similar-level rogue with a shortbow who gets sneak attack each round and hits (including crits) 70\% of the time. This rogue-based reference point is refered to as Rogue Equivalent Damage (RED). The variance in party damage is expected to be roughly between 2.5 RED and ~4-6 RED, depending on resource usage, targets, etc. This results in monsters generally surviving around 3 rounds, except at level 1 where a DR 1 monster survives roughly 2 rounds. Note that a damage-focused character normally does a baseline of ~1.2-1.5 RED (with spikes up to 2+ RED when burning resources) and a spell-caster using cantrips ends up around ~0.5 RED.
+			\item Note from the table that there's an uptick in expected lifetime against a baseline party around defensive rating 12. That's because these monsters tend to be closer to "boss" monsters than normal scum. The expectation is that most significant encounters at high levels may have one "boss" monster and a bunch of smaller minions OR a larger swarm of smaller minions. A purely minion swarm at level 20 might look like 4-6 DR 10-11 monsters or 8-10 DR 6-8 monsters, while a "boss" encounter might be a single DR 17-20 and a 3-5 DR 6 or so monsters. Bounded accuracy ensures that these lower-DR monsters will still be a challenge.
+		\end{itemize}
 	\end{DndComment}
 \end{figure}
 
@@ -479,32 +481,32 @@ Once you've settled on a final hit point total, you can back-calculate the numbe
 Saving throw proficiency generally does not play into Defensive Rating much unless it has high saving throw modifiers in multiple of Constitution, Dexterity, and Wisdom. In that case, adjust defensive CR up by one if your party substantially relies on saving-throw based effects.
 
 \begin{figure}
-	\begin{DndTable}{llll}
-		\textbf{DR} & \textbf{Hit Points} & \textbf{AC} \\
-		0 & 1-6 & 11 \\
-		1/8 & 7-13 & 12 \\
-		1/4 & 14-20 & 12 \\
-		1/2 & 21-35 & 12 \\
-		1	& 36-45 & 13 \\
-		2   & 46-60 & 13 \\
-		3	& 61-75 & 13 \\
-		4   & 76-90 & 14 \\
-		5   & 91-105 & 15 \\
-		6   & 106-120 & 15 \\
-		7   & 121-135 & 15 \\
-		8   & 136-150 & 16 \\
-		9   & 151-165 & 17\\
-		10  & 166-180 & 17 \\
-		11  & 181-195 & 17 \\
-		12  & 196-220 & 17 \\
-		13  & 221-245 & 17 \\
-		14  & 246-270 & 18 \\
-		15  & 271-295 & 18 \\
-		16  & 296-320 & 18 \\
-		17  & 321-345 & 19 \\
-		18  & 346-370 & 19 \\
-		19  & 371-395 & 19 \\
-		20  & 396-420 & 19 \\
+	\begin{DndTable}{llllll}
+		\textbf{DR} & \textbf{Hit Points} & \textbf{AC} & \textbf{Party Baseline DPR} & \textbf{Rounds To Kill}\\
+		0 & 1-6 & 11 & 24 & 0.5\\
+		1/8 & 7-13 & 12 & 21 & 0.6\\
+		1/4 & 14-20 & 12 & 21 & 1.0\\
+		1/2 & 21-35 & 12 & 21 & 1.7\\
+		1	& 36-45 & 13 & 21 & 2.1\\
+		2   & 46-60 & 13 & 21 & 2.9\\
+		3	& 61-75 & 13 & 27 & 2.8\\
+		4   & 76-90 & 14 & 27 & 3.3\\
+		5   & 91-105 & 15 & 36 & 2.9\\
+		6   & 106-120 & 15 & 36 & 3.3\\
+		7   & 121-135 & 15 & 42 & 3.2\\
+		8   & 136-150 & 16 & 48 & 3.1\\
+		9   & 151-165 & 17 & 54 & 3.1\\
+		10  & 166-180 & 17 & 54 & 3.3\\
+		11  & 181-195 & 17 & 60 & 3.3\\
+		12  & 196-220 & 17 & 60 & 3.7\\
+		13  & 221-245 & 17 & 63 & 3.9\\
+		14  & 246-270 & 18 & 63 & 4.3\\
+		15  & 271-295 & 18 & 69 & 4.3\\
+		16  & 296-320 & 18 & 69 & 4.6\\
+		17  & 321-345 & 19 & 84 & 4.1\\
+		18  & 346-370 & 19 & 84 & 4.4\\
+		19  & 371-395 & 19 & 90 & 4.4\\
+		20  & 396-420 & 19 & 90 & 4.7\\
 	\end{DndTable}
 	\caption*{Defensive Rating Summary}
 	\label{tbl:defensive-rating}

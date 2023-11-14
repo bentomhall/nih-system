@@ -1,0 +1,10 @@
+At wills: adding riders to cantrips/attacks (Advantage, enemy has disadvantage, THP)
+
+Divine Aid (U2E): Target gets immediate save with bonus
+Split the Sky (E3): Weapon attack -> thunder + push/prone
+Spiritual Weapon (D5): As normal, but also flanks
+Rune of Peace (D5): Attack, but target can't attack you (so kinda sanctuary?)
+Astral Defenders (D9): Conjure 2 soldiers that make OAs as if they were spiritual weapons.
+Knights of Unyielding Valor (U10D): Conjure 4 soldiers that allies can move through but enemies cannot, friendly-only cover
+Holy Spark (D15): Lightning damage (ongoing), also hits allies of the target that start turn within 15' of the target.
+Purifying Fire (D15): Fire damage (ongoing, aoe). Your allies that start their turn adjacent to a burning target regain HP.

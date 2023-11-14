@@ -1,0 +1,14 @@
+Bait and Switch (E3): Switch places with target and then shift 1.
+Clever Riposte (D5): (hit or miss) enemy takes damage when they attack you and you can shift 1 after each such attack.
+Walking Wounded (D5): Prone, and enemy can't move more than half their speed or they'll fall prone.
+Cloud of Steel (E7): CB5 ranged attack.
+Deadly Positioning (D9): Slide target, then attack. Can do this every time you attack until EoE.
+Certain Freedom (U10D): Auto-escape grapple/restraint.
+Fool's Opportunity (E13): (vs will) Enemy takes damage as if they hit themselves. If you have advantage, add sneak attack to that.
+Bloody Path (D15): Move up to your speed. Any enemy that can OA against you must, and attacks themselves.
+Garrote Grab (D15): Damage, grapple target. While grappling, you have cover and any ranged or melee attack that misses you hits the grappled target. Turn 3 (if maintained), target falls unconscious until damaged.
+Counfounding Attack (D1): Hit or miss, enemy makes a basic attack against an adjacent creature of your choice. Can add Sneak Attack to the damage.
+Press the Advantage (D1): Free action attack when you bloody an enemy.
+Downward Spiral (D5): CB1 vs reflex. prone on hit.
+
+Invisible Infiltrator (Paragon 16 feature): When you drop an enemy or crit, you become invisible until EoNT.

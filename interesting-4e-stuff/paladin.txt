@@ -1,0 +1,11 @@
+Powers:
+On Pain of Death: target takes damage whenever they attack.
+Martyr's Blessing: take attack for ally. Angelic Intercession: teleport to ally first.
+Invigorating Smite: Heal if bloodied, along with allies within 25 ft.
+Righteous Smite: THP on hit 25 ft.
+Divine Reverence: CB1, daze on hit.
+Crown of Glory: Aura, slows enemies.
+Radiant Pulse: Ranged, hits target, damages and pushes adjacent enemies.
+Turn the Tide: Everyone around you gets a free save.
+Angelic Rescue: teleport ally to a square within 25 ft that is closer than before.
+Brand of Judgement: target that makes an attack takes half the expected damage it would deal, hit or miss.

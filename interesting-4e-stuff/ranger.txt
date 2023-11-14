@@ -1,0 +1,7 @@
+Hit and Run (At-will): basically mobile.
+Unbalancing Parry (U2E): Reaction on being missed--move target and gain advantage on next attack.
+Evade Ambush (U6D): WIS mod allies are not surprised.
+Blade Cascade (D15): Attack, alternating weapons, until you miss.
+Combined Fire (PE11): Reaction to attack enemy when ally attacks the target.
+Cruel Recovery (P feature 16): Damage from Hunter's Quarry gives you THP
+Blade-storm (P feature 11/16): 1 or 2 enemies adjacent take automatic damage if you're armed and not incapacitated.

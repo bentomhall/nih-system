@@ -1,0 +1,29 @@
+Features: OAs stop enemy movement.
+Trample the Fallen (paragon 16): Push or prone also causes CON-mod damage.
+Steel Blitz (paragon 16): Regain STA when you crit
+
+Powers:
+Steel Serpent Strike (E1): slow target on hit.
+Get Over Here (U2E): Pull target up to 10 ft adjacent to you.
+No Opening (U2E): Reaction, cancel enemy's advantage against you.
+Unstoppable (U2D): Gain THP
+Sweeping Burst (E3): Close Burst 1 AoE (bonus with axe, flail, heavy blade, or pick)
+Dizzying Blow (D5): Reliable, damage + immobilized
+Rain of Steel (D5): Stance, automatic damage against enemies that start their turn adjacent as long as not incapacitated.
+Come and Get It (E7): Pull all enemies within 15' 10' closer, then close burst 1 AoE.
+Anvil of Doom (E13): Hit and dazed/stunned.
+Silverstep (E13): Hit, push, and follow
+Devastation's Wake (E19): CB1, then repeat attack for free against targets that start next to you or move next to you until EoNT.
+
+MP:
+Insightful Strike (E1): Extra damage if target is bloodied.
+Harrier's Ploy (D1): Damage, and can follow the target, moving as a reaction when it moves, no OAs
+Rock Steady (U6E): Immune to prone, reduce forced movement by 5. Stance.
+Savage Parry (E7): When ally is hit with melee attack. Reaction counter attack, ally gets resistance to damage.
+Stay Down (E7): Damage, with extra damage if prone. Prone targets can't stand up until end of your next turn.
+Pestering Wound (D9): Extra damage if the target moves before EoNT.
+Stop Thrust (D9): Reaction when target gets within 10 ft: move to them and attack. If you hit, they can't move any more this turn.
+Scattering Swing (E13): CB1. Push target 5' on hit.
+Boulder Charge (D15): Charge through enemies, hitting final target and anyone you moved through, plus prone.
+Giant's Stride (U16D): Shift up to speed, ignoring difficult terrain and moving through enemies.
+

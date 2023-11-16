@@ -79,27 +79,6 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	\end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}{Land Shark}
-	\DndMonsterType{Large monstrosity}
-	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={94 (9d10 + 45)}, speed={40 ft., burrow 40 ft.}]
-	\MonsterStats{+4}{+0}{+5}{-4}{+0}{-3}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 16}, languages={—}, challenge={5:6}]
-	\DndMonsterAction{Standing Leap} The land shark's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Bite,
-		distance=melee,
-		type=weapon,
-		mod=+7,
-		reach=5,
-		dmg=\DndDice{4d12 + 4},
-		dmg-type=piercing
-	]
-	\DndMonsterAction{Deadly Leap}
-	If the land shark jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the land shark's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the land shark's space.
-\end{DndMonster}
-
 \begin{DndMonster}{Chimera}
 	\DndMonsterType{Large monstrosity}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft., fly 60 ft.}]
@@ -299,12 +278,12 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \begin{DndMonster}{Drider}
 	\begin{multicols}{2}
 	\DndMonsterType{Large monstrosity}
-	\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={123 (13d10 + 52)}, speed={30 ft., climb 30 ft.}]
+	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={151 (16d10 + 64)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+3}{+3}{+4}{+1}{+2}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +9}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Abyssal, one other}, challenge={9:8}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +9}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Abyssal, one other}, challenge={9:9}]
 	\DndMonsterAction{Fey Ancestry} The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.
 	
-	\DndMonsterAction{Innate Spellcasting} The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
+	\DndMonsterAction{Innate Spellcasting} The drider's innate spellcasting ability is Wisdom (spell save DC 14). The drider can innately cast the following spells, requiring no material components:
 	\begin{itemize}
 		\item[] \textbf{Concentration} \nameref{spell:faerie-fire} (1x), \nameref{spell:darkness} (1x)
 		\item[] \textbf{Other} \nameref{spell:dancing-lights}
@@ -600,6 +579,27 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	\DndMonsterLegendaryAction{Ink Cloud (Costs 3 Actions)}{While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.}
 	\end{DndMonsterLegendaryActions}
 	\end{multicols}
+\end{DndMonster}
+
+\begin{DndMonster}{Land Shark}
+	\DndMonsterType{Large monstrosity}
+	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={94 (9d10 + 45)}, speed={40 ft., burrow 40 ft.}]
+	\MonsterStats{+4}{+0}{+5}{-4}{+0}{-3}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 16}, languages={—}, challenge={5:6}]
+	\DndMonsterAction{Standing Leap} The land shark's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{4d12 + 4},
+		dmg-type=piercing
+	]
+	\DndMonsterAction{Deadly Leap}
+	If the land shark jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the land shark's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the land shark's space.
 \end{DndMonster}
 
 \begin{DndMonster}{Manticore}

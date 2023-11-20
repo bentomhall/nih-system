@@ -403,7 +403,7 @@
 		dmg-type=piercing
 	]
 	\DndMonsterAction{Leadership (Recharges after a Short or Long Rest)}
-	For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.
+	For 1 minute, the knight can utter a special command or warning whenever a non-hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.
 	\DndMonsterAction{Parry}
 	The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.
 \end{DndMonster}
@@ -429,6 +429,26 @@
 		reach=5,
 		dmg=\DndDice{1d4 + 1},
 		dmg-type= piercing
+	]
+
+	\DndMonsterAttack[
+		name={Fire Blast},
+		distance=ranged,
+		type=spell,
+		mod=+6,
+		range=90,
+		dmg=\DndDice{3d8},
+		dmg-type=fire
+	]
+	\DndMonsterAttack[
+		name={Lightning Fist},
+		distance=melee,
+		type=spell,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{3d8},
+		dmg-type=lightning,
+		extra={, and the target cannot take reactions until the end of its next turn.}
 	]
 \end{DndMonster}
 	

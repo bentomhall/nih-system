@@ -180,7 +180,9 @@ Each creature within 60 feet of the cloaker that can hear its moan and that isn'
 
 \DndMonsterAction{Phantasms (Recharges after a Short or Long Rest)}
 The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
+
 Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.
+
 A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
 \end{multicols}
 \end{DndMonster}
@@ -554,7 +556,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 		reach=5,
 		dmg=\DndDice{3d8 + 10},
 		dmg-type=piercing,
-		extra={. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken's turns. \\ If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.}
+		extra={. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken's turns. If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.}
 	]
 	\DndMonsterAttack[
 		name=Tentacle,
@@ -873,7 +875,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={32 (5d10 + 5)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+2}{+2}{+1}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3:1}]
-	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.
+	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa.
 
 	\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -950,7 +952,7 @@ The remorhaz makes one bite attack against a Medium or smaller creature it is gr
 \DndMonsterType{Gargantuan monstrosity}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={248 (16d20 + 80)}, speed={20 ft., fly 120 ft.}]
 \MonsterStats{+9}{+0}{+5}{-4}{+0}{-1}
-\DndMonsterDetails[saving-throws={Dex +4, Con +9, Wis +4, Cha +3}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={11 (7,200 XP)}]
+\DndMonsterDetails[saving-throws={Dex +4, Con +9, Wis +4, Cha +3}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={11:13}]
 \DndMonsterAction{Keen Sight} The roc has advantage on Wisdom (Perception) checks that rely on sight.
 
 \DndMonsterSection{Actions}
@@ -983,7 +985,7 @@ The remorhaz makes one bite attack against a Medium or smaller creature it is gr
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={20 (natural armor)}, hit-points={93 (11d10 + 33)}, speed={10 ft., climb 10 ft.}]
 \MonsterStats{+4}{-1}{+3}{-2}{+3}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 16}, languages={—}, challenge={5 (1,800 XP)}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 16}, languages={—}, challenge={5:6}]
 \DndMonsterAction{False Appearance} While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite.
 
 \DndMonsterAction{Grasping Tendrils} The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it.

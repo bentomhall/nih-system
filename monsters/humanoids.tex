@@ -284,83 +284,10 @@
 	\DndMonsterAction{Common} A few copper coins.
 \end{DndMonster}
 
-\begin{DndMonster}{Shaman}
-	\DndMonsterType{Medium humanoid (any race)}
-	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
-	\MonsterStats{+0}{+1}{+1}{+1}{+2}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={Medicine +4, Nature +3, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14 }, languages={Common plus any two languages, usually sylvan }, challenge={1:1}]
-	\DndMonsterAction{Spellcasting} The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells:
-	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:entangle} (x2), \nameref{spell:call-lightning} (x1)
-		\item[] \textbf{Defensive} \nameref{spell:longstrider} (x1)
-		\item[] \textbf{Utility} \nameref{spell:cure-wounds} (x2)
-	\end{itemize}
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Quarterstaff,
-		distance=melee,
-		type=weapon,
-		mod=+2,
-		reach=5,
-		dmg=\DndDice{1d6},
-		dmg-type=bludgeoning
-	]
-	\DndMonsterAttack[
-		name=Flame Blast,
-		distance=ranged,
-		type=spell,
-		mod=+4,
-		range=60 ft.,
-		dmg=\DndDice{2d8 + 2},
-		dmg-type=fire
-	]
-	\DndMonsterAction{Manifest Zone: Earth} The shaman magically calls upon the plane of stone to shield its allies in a 10-foot radius sphere located at a point the shaman can see within 60 feet. The zone is difficult terrain for any of the shaman's enemies while it lasts. When the zone appears and at the start of each of the shaman's turns, all allies within the zone gain 5 temporary hit points that last for 1 minute. The zone disappears after 1 minute or when the shaman is incapacitated or moves more than 60 feet from the location.
-\end{DndMonster}
-
-\begin{DndMonster}{Warrior, Brutal}
-	\DndMonsterType{Medium humanoid (any race)}
-	\DndMonsterBasics[armor-class={16 (reinforced leather, shield)}, hit-points={112 (15d8 + 45)}, speed={30 ft.}]
-	\MonsterStats{+4 (+7)}{+2 (+5)}{+3 (+6)}{+0}{+1}{+2}
-	\DndMonsterDetails[saving-throws={}, skills={Athletics +10, Intimidation +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any one language (usually Common)}, challenge={5:6}]
-	\DndMonsterAction{Brave} The warrior has advantage on saving throws against being frightened.
-	
-	\DndMonsterAction{Brute} A melee weapon deals one extra die of its damage when the warrior hits with it (included in the attack).
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The warrior makes three melee attacks or two ranged attacks.
-	\DndMonsterAttack[
-		name=Spear,
-		distance=both,
-		type=weapon,
-		mod=+7,
-		reach=5,
-		range=20/60,
-		dmg=\DndDice{2d6 + 4},
-		dmg-type=piercing
-	]
-	\DndMonsterAttack[
-		name=Shield Bash,
-		distance=melee,
-		type=weapon,
-		mod=+7,
-		reach=5,
-		dmg=\DndDice{2d4 + 4},
-		dmg-type=bludgeoning,
-		extra={. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.}
-	]
-	
-	\DndMonsterAction{Parry}
-	As a reaction, the warrior adds 3 to its AC against one melee attack that would hit it. To do so, the warrior must see the attacker and be wielding a melee weapon.
-
-	\DndMonsterSection{Inventory}
-	\DndMonsterAction{Common} A medium pouch of gold, a healing potion, a gambling set.
-	\DndMonsterAction{Rare} An uncommon magic item (usually wielded)
-\end{DndMonster}
 
 \begin{DndMonster}{Guard}
 	\DndMonsterType{Medium humanoid (any race)}
-	\DndMonsterBasics[armor-class={16 (chain shirt, shield)}, hit-points={11 (2d8 + 2)}, speed={30 ft.}]
+	\DndMonsterBasics[armor-class={14 (leather, shield)}, hit-points={16 (3d8 + 3)}, speed={30 ft.}]
 	\MonsterStats{+1}{+1}{+1}{+0}{+0}{+0}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={any one language (usually Common)}, challenge={1/4:1/2}]
 	\DndMonsterSection{Actions}
@@ -548,6 +475,40 @@
 	\DndMonsterAction{Common} A healer's kit, rations, 20 extra arrows
 \end{DndMonster}
 
+\begin{DndMonster}{Shaman}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
+	\MonsterStats{+0}{+1}{+1}{+1}{+2}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Medicine +4, Nature +3, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14 }, languages={Common plus any two languages, usually sylvan }, challenge={1:1}]
+	\DndMonsterAction{Spellcasting} The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:entangle} (x2), \nameref{spell:call-lightning} (x1)
+		\item[] \textbf{Defensive} \nameref{spell:longstrider} (x1)
+		\item[] \textbf{Utility} \nameref{spell:cure-wounds} (x2)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Quarterstaff,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{1d6},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Flame Blast,
+		distance=ranged,
+		type=spell,
+		mod=+4,
+		range=60 ft.,
+		dmg=\DndDice{2d8 + 2},
+		dmg-type=fire
+	]
+	\DndMonsterAction{Manifest Zone: Earth} The shaman magically calls upon the plane of stone to shield its allies in a 10-foot radius sphere located at a point the shaman can see within 60 feet. The zone is difficult terrain for any of the shaman's enemies while it lasts. When the zone appears and at the start of each of the shaman's turns, all allies within the zone gain 5 temporary hit points that last for 1 minute. The zone disappears after 1 minute or when the shaman is incapacitated or moves more than 60 feet from the location.
+\end{DndMonster}
+
 \begin{DndMonster}{Spy}
 	\DndMonsterType{Medium humanoid (any race)}
 	\DndMonsterBasics[armor-class={12}, hit-points={27 (6d8)}, speed={30 ft.}]
@@ -654,6 +615,46 @@
 	\DndMonsterSection{Inventory}
 	\DndMonsterAction{Common} A moderate amount of coin and/or jewelry. A healing potion.
 	\DndMonsterAction{Rare} A common magic item, usually utility.
+\end{DndMonster}
+
+\begin{DndMonster}{Warrior, Brutal}
+	\DndMonsterType{Medium humanoid (any race)}
+	\DndMonsterBasics[armor-class={16 (reinforced leather, shield)}, hit-points={112 (15d8 + 45)}, speed={30 ft.}]
+	\MonsterStats{+4 (+7)}{+2 (+5)}{+3 (+6)}{+0}{+1}{+2}
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +10, Intimidation +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={any one language (usually Common)}, challenge={5:6}]
+	\DndMonsterAction{Brave} The warrior has advantage on saving throws against being frightened.
+	
+	\DndMonsterAction{Brute} A melee weapon deals one extra die of its damage when the warrior hits with it (included in the attack).
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The warrior makes three melee attacks or two ranged attacks.
+	\DndMonsterAttack[
+		name=Spear,
+		distance=both,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		range=20/60,
+		dmg=\DndDice{2d6 + 4},
+		dmg-type=piercing
+	]
+	\DndMonsterAttack[
+		name=Shield Bash,
+		distance=melee,
+		type=weapon,
+		mod=+7,
+		reach=5,
+		dmg=\DndDice{2d4 + 4},
+		dmg-type=bludgeoning,
+		extra={. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.}
+	]
+	
+	\DndMonsterAction{Parry}
+	As a reaction, the warrior adds 3 to its AC against one melee attack that would hit it. To do so, the warrior must see the attacker and be wielding a melee weapon.
+
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A medium pouch of gold, a healing potion, a gambling set.
+	\DndMonsterAction{Rare} An uncommon magic item (usually wielded)
 \end{DndMonster}
 
 \begin{DndMonster}{Warrior, Primitive}

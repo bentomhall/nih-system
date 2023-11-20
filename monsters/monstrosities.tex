@@ -439,28 +439,28 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 
 \begin{DndMonster}{Harpy}
 	\DndMonsterType{Medium monstrosity}
-	\DndMonsterBasics[armor-class={11}, hit-points={38 (7d8 + 7)}, speed={20 ft., fly 40 ft.}]
-	\MonsterStats{+1}{+1}{+1}{-2}{+0}{+1}
+	\DndMonsterBasics[armor-class={12}, hit-points={38 (7d8 + 7)}, speed={20 ft., fly 40 ft.}]
+	\MonsterStats{+1}{+2}{+1}{-2}{+0}{+1}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={Common}, challenge={1:1}]
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The harpy makes two attacks: one with its claws and one with its club.
+	\DndMonsterAction{Multiattack} The harpy makes two attacks: one with its claws and one with its dagger.
 	\DndMonsterAttack[
 		name=Claws,
 		distance=melee,
 		type=weapon,
-		mod=+3,
+		mod=+4,
 		reach=5,
-		dmg=\DndDice{2d4 + 1},
+		dmg=\DndDice{2d4 + 2},
 		dmg-type=slashing
 	]
 	\DndMonsterAttack[
-		name=Club,
+		name=Dagger,
 		distance=melee,
 		type=weapon,
-		mod=+3,
+		mod=+4,
 		reach=5,
-		dmg=\DndDice{1d4 + 1},
-		dmg-type=bludgeoning
+		dmg=\DndDice{1d4 + 2},
+		dmg-type=piercing
 	]
 	\DndMonsterAction{Luring Song}
 	The harpy sings a magical melody. Every beast, monstrosity, humanoid, or giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.
@@ -727,7 +727,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Guardian Naga}
 	\begin{multicols}{2}
 	\DndMonsterType{Large monstrosity}
-	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={127 (15d10 + 45)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={144 (17d10 + 51)}, speed={40 ft.}]
 	\MonsterStats{+4}{+4 (+8)}{+3 (+7)}{+3 (+7)}{+4 (+8)}{+4 (+8)}
 	\DndMonsterDetails[saving-throws={Dex +8, Con +7, Int +7, Wis +8, Cha +8}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={Celestial, Common}, challenge={10:8}]
 

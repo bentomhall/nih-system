@@ -426,8 +426,8 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 	
 \begin{DndMonster}{Will-o'-Wisp}
 	\DndMonsterType{Tiny undead}
-	\DndMonsterBasics[armor-class={19}, hit-points={22 (9d4)}, speed={0 ft., fly 50 ft. (hover)}]
-	\MonsterStats{-5}{+9}{+0}{+1}{+2}{+0}
+	\DndMonsterBasics[armor-class={14}, hit-points={22 (9d4)}, speed={0 ft., fly 50 ft. (hover)}]
+	\MonsterStats{-5}{+4}{+0}{+1}{+2}{+0}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, poison}, damage-resistances={acid, cold, fire, necrotic, thunder; bludgeoning, piercing, and slashing}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious}, senses={darkvision 120 ft., passive Perception 12}, languages={the languages it knew in life}, challenge={1:2}]
 
 	\DndMonsterAction{Ephemeral} The will-o'-wisp can't wear or carry anything.
@@ -441,6 +441,8 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 	
 	\DndMonsterAttack[
 		name=Shock,
+		type=spell,
+		range=melee,
 		mod=+4,
 		dmg=\DndDice{2d8},
 		dmg-type=lightning

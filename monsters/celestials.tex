@@ -8,9 +8,9 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 
 \begin{DndMonster}{Astral Eye}
 	\DndMonsterType{Small celestial}
-	\DndMonsterBasics[armor-class={14}, hit-points={45}, speed={0 ft., fly 50 ft. (hover)}]
-	\MonsterStats{-1}{+4}{+1}{+1}{+5}{+4}
-	\DndMonsterDetails[skills={Perception +9}, damage-resistances={fire, radiant}, senses={truesight 60 ft., blindsight 60 ft., passive Perception 19}, languages={all, telepathy 60 ft.}, challenge={3:1}]
+	\DndMonsterBasics[armor-class={13}, hit-points={45}, speed={0 ft., fly 50 ft. (hover)}]
+	\MonsterStats{-1}{+3}{+1}{+1}{+5}{+4}
+	\DndMonsterDetails[skills={Perception +9}, damage-resistances={fire, radiant}, senses={truesight 60 ft., blindsight 60 ft., passive Perception 19}, languages={all, telepathy 60 ft.}, challenge={1:1}]
 	
 	\DndMonsterSection{Actions}
 	
@@ -20,21 +20,21 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 		name=Blazing Beam,
 		distance=ranged,
 		type=spell,
-		mod=+6,
+		mod=+5,
 		range=120 ft.,
-		dmg=\DndDice{1d6+4},
+		dmg=\DndDice{1d6+3},
 		dmg-type=radiant
 	]
 	\DndMonsterAction{Divine Inspiration (1/rest)} All allies other than the eye within 60 ft. of the eye that can see it gain advantage on their next attack roll, saving throw, or ability check made within 1 minute.
 	
-	\DndMonsterAction{Righteous Jaunt (3/rest)} The eye teleports to an unoccupied location it can see within 120 ft. Any creature within 5 ft. of its starting location must make a DC 14 Dexterity saving throw, taking 2d6 radiant damage on a failure or half as much on a success. 
+	\DndMonsterAction{Righteous Jaunt (3/rest)} The eye teleports to an unoccupied location it can see within 120 ft. Any creature within 5 ft. of its starting location must make a DC 13 Dexterity saving throw, taking 2d6 radiant damage on a failure or half as much on a success. 
 \end{DndMonster}
 
 \begin{DndMonster}{Blade Archon, Lesser}
 	\DndMonsterType{Medium celestial}
 	\DndMonsterBasics[armor-class={15 (scale mail)}, hit-points={60}, speed={30 ft., fly 50 ft. (hover)}]
-	\MonsterStats{4}{+2}{+2}{+0}{+3}{+2}
-	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={4:3}]
+	\MonsterStats{+4}{+2}{+2}{+0}{+3}{+2}
+	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={3:3}]
 
 	\DndMonsterAction{Astral Edge} The blade archon's weapon attacks deal an additional 1d6 radiant damage (included in the attacks). This is an inherent property of the archon, not a property of the weapon.
 	
@@ -69,7 +69,7 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
         skills={--},
         senses={darkvision 120 ft, passive perception 14},
         languages={celestial, lucian},
-        challenge={9:5},
+        challenge={5:5},
         damage-immunities={--},
         damage-resistances={radiant},
         damage-vulnerabilities={--}
@@ -97,10 +97,7 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
     ]
     
 
-    \DndMonsterAction{Multiattack} The seraph makes 3 attacks. It can exchange two attacks to cast a spell.
-
-
-
+    \DndMonsterAction{Multiattack} The seraph makes 2 attacks.
 \end{DndMonster}
 \begin{DndMonster}{Valorite}
     \DndMonsterType{Medium Celestial (Angel)}
@@ -130,6 +127,7 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
         type={weapon},
         mod={+7},
         reach={5 ft},
+				dmg={\DndDice{1d8+4}}
         dmg-type={piercing},
         extra={ plus 2d8 radiant.}
     ]
@@ -140,6 +138,7 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
         type={weapon},
         mod={+7},
         reach={30/120 ft},
+				dmg={\DndDice{1d6+4}}
         dmg-type={piercing},
         extra={ plus 2d8 radiant.}
     ]
@@ -155,7 +154,7 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 \begin{DndMonster}{Pegasus}
 \DndMonsterType{Large celestial}
 \DndMonsterBasics[armor-class={12}, hit-points={59 (7d10 + 21)}, speed={60 ft., fly 90 ft.}]
-\MonsterStats{+4}{+2 (+4)}{+3}{+0}{+2 (+4)}{+1 (+3)}
+\MonsterStats{+3}{+2 (+4)}{+3}{+0}{+2 (+4)}{+1 (+3)}
 \DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={understands Celestial, Common, Elvish, and Sylvan but can't speak}, challenge={1:2}]
 
 \DndMonsterSection{Actions}
@@ -163,65 +162,68 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 	name=Hooves,
 	distance=melee,
 	type=weapon,
-	mod=+6,
+	mod=+5,
 	reach=5,
-	dmg=\DndDice{2d6 + 4},
+	dmg=\DndDice{2d6 + 3},
 	dmg-type=bludgeoning
 ]
 \end{DndMonster}
 
-\begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Couatl}
-\begin{multicols}{2}
-\DndMonsterType{Medium celestial}
-\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft., fly 90 ft.}]
-\MonsterStats{+3}{+5}{+3 (+5)}{+4}{+5 (+7)}{+4 (+6)}
-\DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={3:5}]
+% \begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Couatl}
+% \begin{multicols}{2}
+% \DndMonsterType{Medium celestial}
+% \DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft., fly 90 ft.}]
+% \MonsterStats{+3}{+5}{+3 (+5)}{+4}{+5 (+7)}{+4 (+6)}
+% \DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={3:5}]
 
-\DndMonsterAction{Innate Spellcasting} The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
+% \DndMonsterAction{Innate Spellcasting} The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
 
-\begin{itemize}
-\item[] At will: \nameref{spell:detect-thoughts}
-\item[] 3/day each: \nameref{spell:bless},  \nameref{spell:cure-wounds}, \nameref{spell:protection-from-poison}, \nameref{spell:sanctuary}, \nameref{spell:shield}
-\item[] 1/day each: \nameref{spell:flame-strike}
-\end{itemize} 
+% \begin{itemize}
+% \item[] At will: \nameref{spell:detect-thoughts}
+% \item[] 3/day each: \nameref{spell:bless},  \nameref{spell:cure-wounds}, \nameref{spell:protection-from-poison}, \nameref{spell:sanctuary}, \nameref{spell:shield}
+% \item[] 1/day each: \nameref{spell:flame-strike}
+% \end{itemize} 
 
-\DndMonsterAction{Shielded Mind} The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.
+% \DndMonsterAction{Shielded Mind} The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.
 
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=5,
-	dmg=\DndDice{1d6 + 3},
-	dmg-type=piercing,
-	extra={, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.}
-]
-\DndMonsterAttack[
-	name=Constrict,
-	distance=melee,
-	type=weapon,
-	mod=+6,
-	reach=10,
-	dmg=\DndDice{2d6 + 3},
-	dmg-type=bludgeoning,
-	extra={, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.}
-]
+% \DndMonsterSection{Actions}
+% \DndMonsterAttack[
+% 	name=Bite,
+% 	distance=melee,
+% 	type=weapon,
+% 	mod=+6,
+% 	reach=5,
+% 	dmg=\DndDice{1d6 + 3},
+% 	dmg-type=piercing,
+% 	extra={, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.}
+% ]
+% \DndMonsterAttack[
+% 	name=Constrict,
+% 	distance=melee,
+% 	type=weapon,
+% 	mod=+6,
+% 	reach=10,
+% 	dmg=\DndDice{2d6 + 3},
+% 	dmg-type=bludgeoning,
+% 	extra={, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.}
+% ]
 
-\DndMonsterAction{Change Shape}
-The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
+% \DndMonsterAction{Change Shape}
+% The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
 
-In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
-\end{multicols}
-\end{DndMonster}
+% In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
+% \end{multicols}
+% \end{DndMonster}
 
 \begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Unicorn}
 \begin{multicols}{2}
 \DndMonsterType{Large celestial}
-\DndMonsterBasics[armor-class={12}, hit-points={67 (9d10 + 18)}, speed={50 ft.}]
+\DndMonsterBasics[armor-class={15}, hit-points={110 (13d10 + 26)}, speed={50 ft.}]
 \MonsterStats{+4}{+2}{+2}{+0}{+3}{+3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={Celestial, Elvish, Sylvan, telepathy 60 ft.}, challenge={6:4}]
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={Celestial, Sylvan, telepathy 60 ft.}, challenge={7:6}]
+
+\DndMonsterAction{Charmed Presence} The unicorn's armor class includes its Charisma modifier.
+
 \DndMonsterAction{Charge} If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 \DndMonsterAction{Innate Spellcasting} The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:
@@ -232,7 +234,7 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 
 \DndMonsterAction{Magic Resistance} The unicorn has advantage on saving throws against spells and other magical effects.
 
-\DndMonsterAction{Magic Weapons} The unicorn's weapon attacks are magical.
+\DndMonsterAction{Innate Purity} The unicorn's weapon attacks count as being silvered.
 
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The unicorn makes two attacks: one with its hooves and one with its horn.
@@ -242,7 +244,7 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 	type=weapon,
 	mod=+7,
 	reach=5,
-	dmg=\DndDice{2d6 + 4},
+	dmg=\DndDice{2d4 + 4},
 	dmg-type=bludgeoning
 ]
 \DndMonsterAttack[

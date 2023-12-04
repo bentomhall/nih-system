@@ -413,14 +413,14 @@
 	The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.
 
 	\DndMonsterSection{Inventory}
-	\DndMonsterAction{Common} A large amount of coin and/or personal jewelry.
+	\DndMonsterAction{Common} A large amount of coin and/or personal jewelry (100-300 gp total).
 \end{DndMonster}
 
 \begin{DndMonster}{Priest}
 	\DndMonsterType{Medium humanoid (any lineage)}
-	\DndMonsterBasics[armor-class={13 (chain shirt)}, hit-points={44 (8d8 + 8)}, speed={30 ft.}]
+	\DndMonsterBasics[armor-class={13 (chain shirt)}, hit-points={49 (9d8 + 9)}, speed={30 ft.}]
 	\MonsterStats{+0}{+0}{+1}{+1}{+3}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={Medicine +7, Persuasion +3, Religion +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={any two languages}, challenge={3:1}]
+	\DndMonsterDetails[saving-throws={}, skills={Medicine +7, Persuasion +3, Religion +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={any two languages}, challenge={3:2}]
 	
 	\DndMonsterAction{Spellcasting} The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest can cast the following spells:
 	\begin{itemize}
@@ -430,6 +430,8 @@
 	\end{itemize}
 	
 	\DndMonsterSection{Actions}
+	\DndMonsterAttack{Multiattack.} The priest casts Judgement Strike, attacks with its mace, or casts a spell. If it has Spiritual Weapon active, it makes an attack with that and move the weapon up to 20 ft.
+
 	\DndMonsterAttack[
 		name=Mace,
 		distance=melee,
@@ -443,26 +445,34 @@
 		name=Judgement Strike,
 		distance=ranged,
 		type=spell,
-		mod=+3,
+		mod=+5,
 		range=60 ft.,
-		dmg=\DndDice{2d8 + 1},
+		dmg=\DndDice{2d8 + 3},
 		dmg-type=radiant or necrotic,
 		extra={. This counts as a cantrip.}
+	]
+	\DndMonsterAttack[
+		name=Spiritual Weapon,
+		distance=melee,
+		type=spell,
+		mod=+5,
+		dmg=\DndDice{1d8+3},
+		dmg-type=slashing
 	]
 
 	\DndMonsterAction{Divine Radiance (1/day)} As a bonus action, the priest channels astral energy. All creatures within 10 feet of the priest regain 10 (3d6) hit points. Constructs are unaffected by this; undead must make a DC 13 Wisdom saving throw, taking 10 (3d6) radiant damage on a failure or half as much on a success.
 
 	\DndMonsterSection{Inventory}
 	\DndMonsterAction{Common} A holy symbol, a moderate amount of coin and/or jewels, a healing potion, and a spell stone of a 1-5 AET priest spell.
-	\DndMonsterAction{Rare} An uncommon or weaker magic item, usually wielded.
+	\DndMonsterAction{Rare} An adventurer-tier or weaker magic item, usually in use.
 \end{DndMonster}
 
 \subsection{Scout}
 	\begin{DndMonster}{Scout}
 	\DndMonsterType{Medium humanoid (any lineage)}
-	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={16 (3d8 + 3)}, speed={30 ft.}]
+	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={22 (4d8 + 4)}, speed={30 ft.}]
 	\MonsterStats{+0}{+2}{+1}{+0}{+1}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={Nature +4, Perception +5, Stealth +6, Survival +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15}, languages={any one language (usually Common)}, challenge={1:1/4}]
+	\DndMonsterDetails[saving-throws={}, skills={Nature +4, Perception +5, Stealth +6, Survival +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15}, languages={any one language (usually Common)}, challenge={1:1/2}]
 	\DndMonsterAction{Keen Hearing and Sight} The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.
 	
 	\DndMonsterSection{Actions}
@@ -488,11 +498,12 @@
 
 	\DndMonsterSection{Inventory}
 	\DndMonsterAction{Common} A healer's kit, rations, 20 extra arrows
+	\DndMonsterAction{Uncommon} A map detailing the area, including one or more monster lairs or camps.
 \end{DndMonster}
 
 \begin{DndMonster}{Shaman}
 	\DndMonsterType{Medium humanoid (any lineage)}
-	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
+	\DndMonsterBasics[armor-class={13 (reinforced leather)}, hit-points={27 (5d8 + 5)}, speed={30 ft.}]
 	\MonsterStats{+0}{+1}{+1}{+1}{+2}{+0}
 	\DndMonsterDetails[saving-throws={}, skills={Medicine +4, Nature +3, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14 }, languages={Common plus any two languages, usually sylvan }, challenge={1:1}]
 	\DndMonsterAction{Spellcasting} The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells:
@@ -522,6 +533,10 @@
 		dmg-type=fire
 	]
 	\DndMonsterAction{Manifest Zone: Earth} The shaman magically calls upon the plane of stone to shield its allies in a 10-foot radius sphere located at a point the shaman can see within 60 feet. The zone is difficult terrain for any of the shaman's enemies while it lasts. When the zone appears and at the start of each of the shaman's turns, all allies within the zone gain 5 temporary hit points that last for 1 minute. The zone disappears after 1 minute or when the shaman is incapacitated or moves more than 60 feet from the location.
+	
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A primal focus, a herbalism kit, 1-2 healing potions.
+	\DndMonsterAction{Rare} A spell stone of a 1-3 AET shaman spell.
 \end{DndMonster}
 
 \begin{DndMonster}{Spy}

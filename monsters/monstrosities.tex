@@ -10,14 +10,14 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 \DndMonsterSection{Actions}
 \DndMonsterMelee[
     name=Bite,
-    mod=+5,
+    mod=+4,
     dmg=\DndDice{2d6+3},
     dmg-type=slashing,
-    plus-dmg=\DndDice{1d6},
+    plus-dmg=\DndDice{2d6},
     plus-dmg-type=acid,
-    extra={If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.}
+    extra={If the target is a Large or smaller creature, it is grappled (escape DC 12). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.}
 ]
-\DndMonsterAction{Spit} The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
+\DndMonsterAction{Spit} The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 12 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
 \end{DndMonster}
 
 \begin{DndMonster}{Basilisk}
@@ -45,16 +45,16 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 \begin{DndMonster}[float*=hb,width=\textwidth+8pt]{Behir}
 	\begin{multicols}{2}
 	\DndMonsterType{Huge monstrosity}
-	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={168 (16d12 + 64)}, speed={50 ft., climb 40 ft.}]
+	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={199 (19d12 + 76)}, speed={50 ft., climb 40 ft.}]
 	\MonsterStats{+6}{+3}{+4}{-2}{+2}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +7}, damage-immunities={lightning}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 90 ft., passive Perception 16}, languages={Draconic}, challenge={13:10}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +7}, damage-immunities={lightning}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 90 ft., passive Perception 16}, languages={Draconic}, challenge={14:12}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The behir makes two attacks: one with its bite and one to constrict.
 	\DndMonsterAttack[
 		name=Bite,
 		distance=melee,
 		type=weapon,
-		mod=+10,
+		mod=+9,
 		reach=10,
 		dmg=\DndDice{3d10 + 6},
 		dmg-type=piercing
@@ -63,7 +63,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 		name=Constrict,
 		distance=melee,
 		type=weapon,
-		mod=+10,
+		mod=+9,
 		reach=5,
 		dmg=\DndDice{2d10 + 6},
 		dmg-type=bludgeoning,
@@ -114,7 +114,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 		dmg-type=slashing
 	]
 	\DndMonsterAction{Fire Breath (Recharge 5-6)}
-	The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
+	The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
 \end{DndMonster}
 
 \begin{DndMonster}{Chuul}

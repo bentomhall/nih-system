@@ -50,6 +50,7 @@ The dog magically teleports, along with any equipment it is wearing or carrying,
     \DndMonsterAction{Sadism} When the kipuliin hits a bloodied creature with a weapon attack, its weapons deal an additional 1d4 damage.
 
     \DndMonsterSection{Actions}
+		\DndMonsterAction{Multiattack} The kipuliin makes two barbed whip attacks.
     \DndMonsterAttack[
         name={Barbed Whip},
         distance={melee},
@@ -59,14 +60,11 @@ The dog magically teleports, along with any equipment it is wearing or carrying,
         dmg-type={slashing},
         extra={ plus 1d4 extra against bloodied targets.}
     ]
-    
-
-    \DndMonsterAction{Multiattack} The kipuliin makes 3 whip attacks.
 \end{DndMonster}
 
 \begin{DndMonster}{Satyr}
 	\DndMonsterType{Medium fey}
-	\DndMonsterBasics[armor-class={14 (leather armor)}, hit-points={31 (7d8)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={13}, hit-points={31 (7d8)}, speed={40 ft.}]
 	\MonsterStats{+1}{+3}{+0}{+1}{+0}{+2}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Performance +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Common, Elvish, Sylvan}, challenge={1/2:1/2}]
 	\DndMonsterAction{Magic Resistance} The satyr has advantage on saving throws against spells and other magical effects.
@@ -99,4 +97,6 @@ The dog magically teleports, along with any equipment it is wearing or carrying,
 		dmg=\DndDice{1d6 + 3},
 		dmg-type=piercing
 	]
+
+	\DndMonsterAction{Aura of Drunkenness} The satyr's nature overflows. All creatures within 30 feet must make a DC 12 Constitution saving throw. On a failed save they are poisoned for one minute. Creatures that end their turn more than 30 feet from the satyr can reattempt the saving throw at the end of each of their turns, ending the effect on a success.
 \end{DndMonster}

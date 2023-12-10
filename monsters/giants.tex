@@ -32,12 +32,12 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 
 \begin{DndMonster}{Giant, Cloud}
 	\DndMonsterType{Huge giant}
-	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={200 (16d12 + 96)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={200 (16d12 + 96)}, speed={40 ft.}]
 	\MonsterStats{+8}{+0}{+6 (+10)}{+1}{+3 (+7)}{+3 (+7)}
 	\DndMonsterDetails[saving-throws={Con +10, Wis +7, Cha +7}, skills={Insight +7, Perception +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 17}, languages={Common, Giant}, challenge={10:11}]
 	\DndMonsterAction{Keen Smell} The giant has advantage on Wisdom (Perception) checks that rely on smell.
 
-	\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+	\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma (DC 15). It can innately cast the following spells, requiring no material components:
 	\begin{itemize}
 		\item[] \textbf{Concentration} \nameref{spell:fog-cloud} (at will), \nameref{spell:control-weather} (Legendary, 1/day), \nameref{spell:telekinesis} (3/day)
 		\item[] \textbf{Movement} \nameref{spell:misty-step} (3/day), \nameref{spell:feather-fall} (3/day), \nameref{spell:gaseous-form}
@@ -50,57 +50,59 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Morningstar,
 		distance=melee,
 		type=weapon,
-		mod=+12,
+		mod=+9,
 		reach=10,
-		dmg=\DndDice{3d8 + 8},
+		dmg=\DndDice{5d8 + 8},
 		dmg-type=piercing
 	]
 	\DndMonsterAttack[
 		name=Rock,
 		distance=ranged,
 		type=weapon,
-		mod=+12,
+		mod=+9,
 		range=60/240,
-		dmg=\DndDice{4d10 + 8},
+		dmg=\DndDice{5d10 + 8},
 		dmg-type=bludgeoning
 	]
-	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his morningstar parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 16 Dexterity saving throw. On a failed save, targets take 3d8 + 8 bludgeoning damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
+	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his morningstar parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 16 Dexterity saving throw. On a failed save, targets take 5d8 + 8 bludgeoning damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
 \end{DndMonster}
 
 \begin{DndMonster}{Giant, Fire}
 	\DndMonsterType{Huge giant}
 	\DndMonsterBasics[armor-class={18 (plate)}, hit-points={162 (13d12 + 78)}, speed={30 ft.}]
 	\MonsterStats{+7}{-1 (+3)}{+6 (+10)}{+0}{+2}{+1 (+5)}
-	\DndMonsterDetails[saving-throws={}, skills={Athletics +11, Perception +6}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={Giant}, challenge={11:10}]
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +11, Perception +6}, damage-immunities={fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={Giant}, challenge={10:10}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The giant makes two greatsword attacks.
 	\DndMonsterAttack[
 		name=Greatsword,
 		distance=melee,
 		type=weapon,
-		mod=+11,
+		mod=+9,
 		reach=10,
 		dmg=\DndDice{6d6 + 7},
-		dmg-type=slashing
+		dmg-type=slashing,
+		plus-dmg=1d6,
+		plus-dmg-type=fire
 	]
 	\DndMonsterAttack[
 		name=Rock,
 		distance=ranged,
 		type=weapon,
-		mod=+11,
+		mod=+9,
 		range=60/240,
 		dmg=\DndDice{4d10 + 7},
 		dmg-type=bludgeoning
 	]
 
-	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his morningstar parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 15 Dexterity saving throw. On a failed save, targets take 6d6 + 7 slashing damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
+	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his greatsword parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 16 Dexterity saving throw. On a failed save, targets take 6d6 + 7 slashing damage and 2d6 fire damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
 \end{DndMonster}
 
 \begin{DndMonster}{Giant, Frost}
 	\DndMonsterType{Huge giant}
 	\DndMonsterBasics[armor-class={15}, hit-points={138 (12d12 + 60)}, speed={40 ft.}]
 	\MonsterStats{+6}{-1}{+5 (+8)}{-1}{+0 (+3)}{+1 (+4)}
-	\DndMonsterDetails[saving-throws={}, skills={Athletics +9, Perception +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Giant}, challenge={10:8}]
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +9, Perception +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Giant}, challenge={9:8}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The giant makes two greataxe attacks.
 	\DndMonsterAttack[
@@ -110,7 +112,9 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		mod=+9,
 		reach=10,
 		dmg=\DndDice{3d12 + 6},
-		dmg-type=slashing
+		dmg-type=slashing,
+		plus-dmg=1d6,
+		plus-dmg-type=cold
 	]
 	\DndMonsterAttack[
 		name=Rock,
@@ -121,14 +125,14 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		dmg=\DndDice{4d10 + 6},
 		dmg-type=bludgeoning
 	]
-	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his greataxe parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 14 Dexterity saving throw. On a failed save, targets take 3d12 + 6 bludgeoning damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
+	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his greataxe parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 14 Dexterity saving throw. On a failed save, targets take 3d12 + 6 bludgeoning damage and 1d6 cold damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
 \end{DndMonster}
 
 \begin{DndMonster}{Giant, Hill}
 	\DndMonsterType{Huge giant}
-	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={115 (11d12 + 44)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={115 (11d12 + 44)}, speed={40 ft.}]
 	\MonsterStats{+5}{-1}{+4}{-3}{-1}{-2}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Giant}, challenge={7:5}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Giant}, challenge={5:5}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The giant makes two greatclub attacks.
 	\DndMonsterAttack[
@@ -156,9 +160,9 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 \subsection{Giant, Stone}
 \begin{DndMonster}[width=\textwidth + 8pt]{Giant, Stone}
 	\DndMonsterType{Huge giant}
-	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={138 (12d12 + 60)}, speed={40 ft.}]
 	\MonsterStats{+6}{+2 (+5)}{+5 (+8)}{+0}{+1 (+4)}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Athletics +12, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant}, challenge={6:8}]
+	\DndMonsterDetails[saving-throws={}, skills={Athletics +12, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant}, challenge={7:8}]
 	\DndMonsterAction{Stone Camouflage} The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
 
 	\DndMonsterSection{Actions}
@@ -167,20 +171,20 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Greatclub,
 		distance=melee,
 		type=weapon,
-		mod=+9,
+		mod=+8,
 		reach=15,
-		dmg=\DndDice{3d8 + 6},
+		dmg=\DndDice{4d8 + 6},
 		dmg-type=bludgeoning
 	]
 	\DndMonsterAttack[
 		name=Rock,
 		distance=ranged,
 		type=weapon,
-		mod=+9,
+		mod=+8,
 		range=60/240,
-		dmg=\DndDice{4d10 + 6},
+		dmg=\DndDice{5d10 + 6},
 		dmg-type=bludgeoning,
-		extra={. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.}
+		extra={. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.}
 	]
 
 	\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his greatclub parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 14 Dexterity saving throw. On a failed save, targets take 3d8 + 6 bludgeoning damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
@@ -195,7 +199,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		\DndMonsterType{Huge giant}
 		\DndMonsterBasics[armor-class={16 (scale mail)}, hit-points={230 (20d12 + 100)}, speed={50 ft., swim 50 ft.}]
 		\MonsterStats{+9 (+14)}{+2}{+5 (+10)}{+3}{+4 (+9)}{+4 (+9)}
-		\DndMonsterDetails[saving-throws={}, skills={Arcana +8, Athletics +14, History +8, Perception +9}, damage-immunities={lightning, thunder}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 19}, languages={Common, Giant}, challenge={11:13}]
+		\DndMonsterDetails[saving-throws={}, skills={Arcana +8, Athletics +14, History +8, Perception +9}, damage-immunities={lightning, thunder}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 19}, languages={Common, Giant}, challenge={13:13}]
 		\DndMonsterAction{Amphibious} The giant can breathe air and water.
 
 		\DndMonsterAction{Innate Spellcasting} The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:
@@ -210,22 +214,24 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 			name=Greatsword,
 			distance=melee,
 			type=weapon,
-			mod=+14,
+			mod=+10,
 			reach=10,
 			dmg=\DndDice{6d6 + 9},
-			dmg-type=slashing
+			dmg-type=slashing,
+			plus-dmg=\DndDice{2d6},
+			plus-dmg-type=lightning
 		]
 		\DndMonsterAttack[
 			name=Rock,
 			distance=ranged,
 			type=weapon,
-			mod=+14,
+			mod=+10,
 			range=60/240,
 			dmg=\DndDice{4d12 + 9},
 			dmg-type=bludgeoning
 		]
 		\DndMonsterAction{Lightning Strike (Recharge 5-6)}
-		The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.
+		The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 18 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.
 
 		\DndMonsterAction{Sweeping Attack (Recharge 4-6)} The giant sweeps his greatsword parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 18 Dexterity saving throw. On a failed save, targets take 6d6 + 9 slashing damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.
 	\end{multicols}
@@ -235,7 +241,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 
 \begin{DndMonster}{Ogre}
 	\DndMonsterType{Large giant}
-	\DndMonsterBasics[armor-class={11 (hide armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
+	\DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
 	\MonsterStats{+4}{-1}{+3}{-3}{-2}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 8}, languages={Common, Giant}, challenge={2:1}]
 	\DndMonsterSection{Actions}
@@ -243,7 +249,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Greatclub,
 		distance=melee,
 		type=weapon,
-		mod=+6,
+		mod=+5,
 		reach=5,
 		dmg=\DndDice{2d8 + 4},
 		dmg-type=bludgeoning
@@ -252,7 +258,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Javelin,
 		distance=both,
 		type=weapon,
-		mod=+6,
+		mod=+5,
 		reach=5,
 		dmg=\DndDice{2d6 + 4},
 		dmg-type=piercing
@@ -265,19 +271,19 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 	\DndMonsterBasics[armor-class={16 (chain mail)}, hit-points={110 (13d10 + 39)}, speed={30 ft., fly 30 ft.}]
 	\MonsterStats{+4}{+0 (+3)}{+3 (+6)}{+2}{+1 (+4)}{+2 (+5)}
 	\DndMonsterDetails[saving-throws={}, skills={Arcana +5, Deception +8, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Common, Giant}, challenge={7:6}]
-	\DndMonsterAction{Innate Spellcasting} The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:
+	\DndMonsterAction{Innate Spellcasting} The fey ogre's innate spellcasting ability is Charisma (spell save DC 13). The fey ogre can innately cast the following spells, requiring no material components:
 	\begin{itemize}
 		\item[] \textbf{Concentration} \nameref{spell:darkness} (at will), \nameref{spell:invisibility} (at will), \nameref{spell:charm-person} (1x), \nameref{spell:sleep} (1x)
 		\item[] \textbf{Damage} \nameref{spell:cone-of-cold} (1x)
 		\item[] \textbf{Other} \nameref{spell:gaseous-form} (1x)
 	\end{itemize}
 	
-	\DndMonsterAction{Regeneration} The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.
+	\DndMonsterAction{Regeneration} The fey ogre regains 10 hit points at the start of its turn if it has at least 1 hit point.
 	
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The oni makes two attacks, either with its claws or its glaive.
+	\DndMonsterAction{Multiattack} The fey ogre makes two attacks, either with its claws or its glaive.
 	\DndMonsterAttack[
-		name=Claw (Oni Form Only),
+		name=Claw (Ogre Form Only),
 		distance=melee,
 		type=weapon,
 		mod=+7,
@@ -296,7 +302,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		extra={, or 9 (1d10 + 4) slashing damage in Small or Medium form.}
 	]
 	\DndMonsterAction{Change Shape}
-	The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
+	The fey ogre magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the fey ogre dies, it reverts to its true form, and its glaive reverts to its normal size.
 	\end{multicols}
 \end{DndMonster}
 
@@ -304,7 +310,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 	\DndMonsterType{Large giant}
 	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={84 (8d10 + 40)}, speed={30 ft.}]
 	\MonsterStats{+4}{+1}{+5}{-2}{-1}{-2}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 12}, languages={Giant}, challenge={4:6}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 12}, languages={Giant}, challenge={5:6}]
 	\DndMonsterAction{Keen Smell} The troll has advantage on Wisdom (Perception) checks that rely on smell.
 	
 	\DndMonsterAction{Regeneration} The troll regains 10 hit points at the start of its turn. The troll dies only if it starts its turn with 0 hit points and its maximum hit points are zero or someone has taken an action to behead the ogre while it was at 0 hit points. If the troll takes acid or fire damage, its maximum hit points are reduced by the damage taken.
@@ -346,7 +352,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Battleaxe,
 		distance=melee,
 		type=weapon,
-		mod=+7,
+		mod=+6,
 		reach=5,
 		dmg=\DndDice{2d8 + 5},
 		dmg-type=slashing
@@ -355,7 +361,7 @@ BECOME # no one has succeeded in this stage since the titans. Storm giants came 
 		name=Morningstar,
 		distance=melee,
 		type=weapon,
-		mod=+7,
+		mod=+6,
 		reach=5,
 		dmg=\DndDice{2d8 + 5},
 		dmg-type=piercing

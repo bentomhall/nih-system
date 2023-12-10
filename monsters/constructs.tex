@@ -97,11 +97,12 @@ Unlike golems (animated by elemental forces) or animated objects (animated direc
 		plus-dmg-type=lightning,
 		extra={. If the target is a creature, it cannot take reactions until the start of its next turn.}
 	]
-	\DndMonsterRanged[
-		name=Spiked Net,
+	\DndMonsterAttack[
+		name={Spiked Net},
 		mod=+4,
 		type=weapon,
-		range={30/60}
+		distance=ranged,
+		range={30/60},
 		dmg=\DndDice{1d8+2},
 		dmg-type=piercing,
 		extra={ and the target is restrained (escape DC 12). The net is an object with AC 10, 10 HP, vulnerability to fire damage, and immunity to all other non-slashing damage types.}

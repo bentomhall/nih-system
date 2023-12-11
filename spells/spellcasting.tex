@@ -254,6 +254,31 @@ Legendary effects are those whose power is too great to learn or cast as a norma
     \end{DndTable}
 \end{DndSidebar}
 
+\subsection{Guidance on control effects}
+Control effects are those effects (whether from spells or features or monster abilities) that remove or constrain the ability of a creature to take the actions they desire. They break down into two major categories--soft control merely constrains or diminishes the effect of certain actions, while hard control outright denies control/actions.
+
+Soft control is normal and good, as long as there's a diversity of saving throws being called for. This is things like grappling, restraining, slowing (as the spell), poisoning, etc. Still nasty, but people still get to play.
+
+Hard control is dangerous, because it's such a game-changer. Taking a hard enemy completely out of the fight dramatically shifts the balance. And when applied against player characters, it can become un-fun quite quickly, because it's, in essence, telling the player "no, you don't get to play". Traditionally, it's also targeted Wisdom, which is a secondary (at best) stat for martial types.
+
+Different tables have different points at which this is all acceptable, but as a general guideline, try to avoid hard control unless it takes multiple failed saves (or really badly failed saves) to take effect. And hard control effects should be much higher level than soft control effects.
+
+\subparagraph{Escalating Conditions} In some cases, it makes sense to "chain" conditions together--the first save (or a close failure) might incur a lesser condition, while a subsequent failed save (or a really bad failure) might incur a greater condition.
+
+\begin{figure}
+	\begin{DndTable}[title=Condition Chains]{llllX}
+		\textbf{Usual Save} & \textbf{Weak} & \textbf{Regular} & \textbf{Strong} & \textbf{Notes} \\
+		WIS & \nameref{condition:shaken} & \nameref{condition:frightened} & \nameref{condition:broken} & Broken should rarely apply to PCs. \\
+		STR & \nameref{condition:grappled} & \nameref{condition:restrained} & \nameref{condition:petrified} & Petrified should require multiple failed saves. Prone can work as a weak version where appropriate. \\
+		CON & \nameref{condition:staggered} & \nameref{condition:stunned} & \nameref{condition:paralyzed} & Be very careful with paralyzed. \\
+		CHA & --- & \nameref{condition:charmed} & Dominated && Dominated isn't a condition, but... \\
+		CON/WIS & --- & \nameref{condition:incapacitated} & \nameref{condition:unconscious} & \\
+		CON & --- & \nameref{condition:poisoned} & \nameref{condition:exhaustion} &
+	\end{DndTable}
+\end{figure}
+
+DEX and INT generally don't cause conditions--instead they deal damage (usually allowing a save for half damage). CON, WIS, and DEX are considered "major" saving throws--every class gets proficiency in one of these. Since CON is so rarely dumped, even if it isn't prioritized, it's the dumping ground here.
+
 \import{./}{spell-lists.tex}
 \section{Spells, Alphabetical}
 \import{./}{spells-a-g.tex}

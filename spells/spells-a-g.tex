@@ -87,9 +87,9 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 {1 action}
 {30 feet}
 {V, S, M (a drop of blood)}
-{Concentration, up to 1 minute}
+{Concentration, up to 1 minute. Save ends.}
 
-Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.
+Up to three creatures of your choice that you can see within range must make Charisma saving throws. Targets that fail their saving throw have disadvantage on attack rolls and ability checks for the duration. They can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.
 
@@ -99,7 +99,7 @@ Up to three creatures of your choice that you can see within range must make Cha
 {1 action}
 {60 feet}
 {V, S}
-{Concentration, up to 1 minute}
+{Concentration, up to 1 minute. Save ends.}
 
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
 
@@ -164,9 +164,9 @@ A \textit{remove curse} spell ends this effect. At the GM's option, you may choo
 
 Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.
 
-When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.
+When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Strength saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.
 
-A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.
+A creature restrained by the tentacles can use its action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself.
 \subparagraph*{Overcast} When you use more than 8 AET to cast this spell, the damage dealt increases by 1d6 for every two AET you spend up to 12 (dealing 5d6).
 
 \DndSpellHeader{Blade Barrier\label{spell:blade-barrier}}
@@ -214,7 +214,7 @@ If you target a nonmagical plant that isn't a creature, such as a tree or shrub,
 {1 action}
 {30 feet}
 {V}
-{1 minute}
+{1 minute, save ends}
 
 You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.
 
@@ -309,7 +309,7 @@ A target must make a Dexterity saving throw. The target takes 10d8 lightning dam
 {V, S}
 {1 hour}
 
-You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature's attitude toward you shifts to Friendly for the duration.
+You attempt to charm a humanoid you can see within range. It must make a Charisma saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature's attitude toward you shifts to Friendly for the duration.
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
@@ -349,7 +349,7 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
 {V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)}
 {1 round}
 
-A dazzling array of flashing, colored light springs from your hand. All creatures that can see you in a 15' cone must make a Wisdom saving throw. On a failed save, they are blinded until the end of your next turn. 
+A dazzling array of flashing, colored light springs from your hand. All creatures that can see you in a 15' cone must make a Constitution saving throw. On a failed save, they are blinded until the end of your next turn. 
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, the duration increases by one round for every 2 additional AET spent.
 
@@ -428,8 +428,8 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
 \begin{itemize}
-\item CR 2: One cave bear, giant boar, giant constrictor snake, hunter shark, or saber-toothed tiger.
-\item CR 1: Two dire wolves, brown bears, giant spiders, giant octopuses, or giant toads.
+\item One cave bear, giant boar, giant constrictor snake, hunter shark, or saber-toothed tiger.
+\item Two dire wolves, brown bears, giant spiders, giant octopuses, or giant toads.
 \end{itemize}
 
 The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
@@ -438,8 +438,8 @@ The GM has the creatures' statistics.
 
 \subparagraph*{Overcast} When you cast this spell using more than 5 AET, you can choose higher CR monsters:
 \begin{itemize}
-\item 8 AET spent: 1 giant scorpion or killer whale or 2 of the CR 2 options.
-\item 11 AET spent: 1 elephant or 2 of the CR 3 options.
+\item 8 AET spent: 1 giant scorpion or killer whale or 2 of the base solo options.
+\item 11 AET spent: 1 elephant or 2 giant scorpions or killer whales.
 \end{itemize}
 
 
@@ -471,10 +471,10 @@ The GM has the elemental's statistics.
 You summon mephits that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
 \begin{itemize}
 \item 4 of any of the following: Dust, Ice, or Magma mephits
-\item 5 of any of the following: mud, smoke, or steam mephits
+\item 5 of any of the following: Mud, Smoke, or Steam mephits
 \end{itemize}
 
-The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
+The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They are not under your control, but will attack and hamper enemies. When your concentration ends or is broken, they disappear.
 
 The GM has the creatures' statistics.
 
@@ -489,8 +489,8 @@ The GM has the creatures' statistics.
 You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
 \begin{itemize}
-\item One sea hag
-\item Three satyrs or two dryads
+\item One kipuliin
+\item Three satyrs or three blink dogs
 \end{itemize}
 
 A summoned creature disappears when it drops to 0 hit points or when the spell ends.
@@ -589,7 +589,7 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 {V, S, M (a bit of phosphorus or wychwood, or a glowworm)}
 {Concentration, up to 1 minute}
 
-You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10* foot radius.
+You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10 foot radius.
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
@@ -671,9 +671,9 @@ Once you detect the presence of a creature in this way, you can read its thought
 {V}
 {Instantaneous}
 
-You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45* degree angle, 300 feet.”
+You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45-degree angle, 300 feet.”
 
-You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.
+You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller (or a medium creature if you are small) who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.
 
 If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 bludgeoning damage, and the spell fails to teleport you.
 
@@ -745,7 +745,6 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 \subsection{Spells (E)}
 
- %todo rewrite me
 \DndSpellHeader{Enhance Ability\label{spell:enhance-ability}}
 {3 AET}
 {1 action}
@@ -755,17 +754,17 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.
 
-\subparagraph*{Bear's Endurance} The target gains 2d6 temporary hit points, which are lost when the spell ends.
+\subparagraph*{Bear's Endurance} The target gains 2d6 temporary hit points, which are lost when the spell ends. It also gains advantage on saving throws against being incapacitated or poisoned.
 
-\subparagraph*{Bull's Strength} The target has advantage on Strength checks, and his or her carrying capacity doubles.
+\subparagraph*{Bull's Strength} The target's carrying capacity and jump distance doubles. It also counts as one size larger when grappling or being grappled.
 
-\subparagraph*{Cat's Grace} The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
+\subparagraph*{Cat's Grace} The target gains a 20 ft climbing speed. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
 
-\subparagraph*{Eagle's Splendor} The target has advantage on Charisma checks.
+\subparagraph*{Eagle's Splendor} The target has advantage on Charisma saving throws. It also gains proficiency with your choice of Deception, Intimidation, or Persuasion checks. If it already had proficiency with that skill, it can add twice its proficiency bonus instead. If that was already the case, it gains advantage on those checks instead.
 
-\subparagraph*{Fox's Cunning} The target has advantage on Intelligence checks.
+\subparagraph*{Fox's Cunning} The target has advantage on Intelligence saving throws as well as Intelligence checks made to discern illusions.
 
-\subparagraph*{Owl's Wisdom} The target has advantage on Wisdom checks.
+\subparagraph*{Owl's Wisdom} The target has advantage on checks made to find hidden objects and to avoid being surprised.
 
 \subparagraph*{Overcast} When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
@@ -777,7 +776,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 {V, S, M (a pinch of powdered iron)}
 {Concentration, up to 1 minute}
 
-You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
+You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Charisma saving throw. On a success, the spell has no effect.
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
 

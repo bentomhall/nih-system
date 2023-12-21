@@ -217,7 +217,11 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 	dmg-type=bludgeoning
 ]
 \DndMonsterAction{Slow (Recharge 5-6)}
-The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This counts as being the spell \nameref{spell:slow} but does not have any components.
+The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic, becoming affected on a failed save. An affected target is \nameref{condition:shaken} and \nameref{condition:staggered}. It also takes a \textminus2 penalty to AC. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.
+
+If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. 
+
+This counts as being the spell \nameref{spell:slow} but does not have any components.
 \end{multicols}
 \end{DndMonster}
 

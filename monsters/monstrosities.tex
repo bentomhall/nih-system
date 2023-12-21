@@ -75,6 +75,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	
 	\DndMonsterAction{Swallow}
 	The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.
+
 	If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
 	\end{multicols}
 \end{DndMonster}
@@ -139,7 +140,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 		extra={. The target is grappled (escape DC 13) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.}
 	]
 	\DndMonsterAction{Tentacles}
-	One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+	One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is stunned. If the roll is 8 or lower, the target is paralyzed instead. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 \end{DndMonster}
 
 \begin{DndMonster}{Cloaker}
@@ -176,7 +177,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	dmg-type=slashing
 ]
 \DndMonsterAction{Moan}
-Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become frightened until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours
+Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become shaken until the end of the cloaker's next turn. If the total was 8 or less, the creature is instead frightened. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours
 
 \DndMonsterAction{Phantasms (Recharges after a Short or Long Rest)}
 The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
@@ -227,7 +228,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	]
 	
 	\DndMonsterAction{Darkness Aura (1/Day)}
-	A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
+	A 15-foot radius of opaque magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
 \end{DndMonster}
 
 \begin{DndMonster}{Death Dog}
@@ -465,7 +466,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	\DndMonsterAction{Luring Song}
 	The harpy sings a magical melody. Every beast, monstrosity, humanoid, or giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.
 	
-	While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.
+	While charmed by the harpy, a target cannot take any actions and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.
 	
 	A target that successfully saves is immune to this harpy's song for the next 24 hours.
 \end{DndMonster}
@@ -686,7 +687,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 	\DndMonsterAction{Spellcasting} The naga's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells:
 	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:banishment} (2x), \nameref{spell:shield-of-faith} (1x), \nameref{spell:bestow-curse} (1x), \nameref{spell:hold-person} (2x)
+		\item[] \textbf{Concentration} \nameref{spell:banishment} (2x), \nameref{spell:shield-of-faith} (1x), \nameref{spell:bestow-curse} (1x), \nameref{spell:arcane-binding} (2x)
 		\item[] \textbf{Healing} \nameref{spell:cure-wounds} (3x)
 		\item[] \textbf{Damage} \nameref{spell:flame-strike} (1x)
 	\end{itemize}
@@ -732,7 +733,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 	\DndMonsterAction{Spellcasting} The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells:
 	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:domination} (Legendary, 1x), \nameref{spell:hold-person} (3x)
+		\item[] \textbf{Concentration} \nameref{spell:domination} (Legendary, 1x), \nameref{spell:arcane-binding} (3x)
 		\item[] \textbf{Damage} \nameref{spell:blight} (2x), \nameref{spell:lightning-bolt} (2x)
 		\item[] \textbf{Other} \nameref{spell:dimension-door} (1x)
 	\end{itemize}

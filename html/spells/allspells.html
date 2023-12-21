@@ -169,7 +169,19 @@
 		
 		<p>If you move so that an affected creature is forced to pass through the barrier, the spell ends.</p>
 		</div>
-		
+		<div class="spell-card" id="arcane-binding">
+			<div class="spell-header">
+				<div class="cost">4</div>
+				<div class="components">V, S, M</div>
+				<div class="spell-name">arcane binding</div>
+				<div class="cast-time">A</div>
+				<div class="targets">1 humanoid/60 feet</div>
+				<div class="duration">Concentration, up to 1 minute</div>
+			</div>
+			<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
+			<p><b>Overcast</b> When you cast this spell using more than 4 AET, you can target one additional humanoid for every 3 additional AET spent. The humanoids must be within 30 feet of each other when you target them.</p>
+			
+			</div>
 		<div class="spell-card" id="arcane-eye">
 		<div class="spell-header">
 			<div class="cost">8</div>
@@ -947,8 +959,8 @@
 			<div class="targets">30-ft cone/Self</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
-		<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p>
-		<p>While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.</p>
+		<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or become shaken for the duration. If they were already shaken, they become frightened instead. Shaken creatures can make the saving throw at the end of each of their turns, ending the effect on a success or becoming frightened if they fail one of these subsequent saving throws by 5 or more.</p>
+		<p>While frightened by this spell, a creature that can see you must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. Frightened creatures can make the saving throw again at the end of any turn if they cannot see you at that point.</p>
 		
 		</div>
 		<div class="spell-card" id="feather-fall">
@@ -986,7 +998,7 @@
 			<div class="targets">20-ft-radius sphere/150 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+		<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw by 5 or more ignite, taking an additional 2d6 fire damage at the beginning of each of their turns until they or someone else spends an action to extinguish the flames.</p>
 		<p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 5 AET, the damage increases by 1d6 for every 2 additional AET spent.</p>
 		
@@ -1164,7 +1176,7 @@
 			<div class="spell-name">Guidance</div>
 			<div class="cast-time">A</div>
 			<div class="targets">1 willing creature/Touch</div>
-			<div class="duration">Concentration, up to 1 minute</div>
+			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
 		<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.</p>
 		
@@ -1273,36 +1285,11 @@
 			<div class="targets">1 creature/30 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
-		<p>A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.</p>
+		<p>A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone and be unable to stand up for the duration. Affected creatures cannot cast spells with verbal components and must make Constitution saving throw against your spell save DC at the start of their turn to maintain concentration on spells or abilities. A creature with an Intelligence score of 4 or less isn't affected.</p>
 		<p>At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends.</p>
 		
 		</div>
-		<div class="spell-card" id="hold-monster">
-		<div class="spell-header">
-			<div class="cost">12</div>
-			<div class="components">V, S, M</div>
-			<div class="spell-name">Hold Monster</div>
-			<div class="cast-time">A</div>
-			<div class="targets">1 creature/90 feet</div>
-			<div class="duration">Concentration, up to 1 minute</div>
-		</div>
-		<p>Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
-		<p><b>Overcast</b> When you cast this spell using more than 12 AET, you can target one additional creature for every 3 additional AET spent. The creatures must be within 30 feet of each other when you target them.</p>
 		
-		</div>
-		<div class="spell-card" id="hold-person">
-		<div class="spell-header">
-			<div class="cost">4</div>
-			<div class="components">V, S, M</div>
-			<div class="spell-name">Hold Person</div>
-			<div class="cast-time">A</div>
-			<div class="targets">1 humanoid/60 feet</div>
-			<div class="duration">Concentration, up to 1 minute</div>
-		</div>
-		<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
-		<p><b>Overcast</b> When you cast this spell using more than 4 AET, you can target one additional humanoid for every 3 additional AET spent. The humanoids must be within 30 feet of each other when you target them.</p>
-		
-		</div>
 		<div class="spell-card" id="hypnotic-pattern">
 		<div class="spell-header">
 			<div class="cost">5</div>
@@ -1312,8 +1299,7 @@
 			<div class="targets">30-ft cube/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
-		<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. Affected creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.</p>
-		<p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
+		<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Charisma saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature has a speed of 0 and must make a Charisma saving throw against your spell save DC if they try to act, losing their action on a failure. Affected creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. The spell also ends for an affected creature if it takes any damage.</p>
 		</div>
 		<div class="spell-card" id="ice-storm">
 		<div class="spell-header">
@@ -1389,7 +1375,7 @@
 			<div class="targets">1 target/60 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
-		<p>One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.</p>
+		<p>One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Strength saving throw is unaffected.</p>
 		<p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.</p>
 		<p>When the spell ends, the target floats gently to the ground if it is still aloft.</p>
 		
@@ -1416,7 +1402,7 @@
 			<div class="targets">100&times;5ft line/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 6d6 lightning damage on a failed save, or half as much damage on a successful one.</p>
+		<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 6d6 lightning damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw by 5 or more are shaken until the end of their next turn.</p>
 		<p>The lightning ignites flammable objects in the area that aren't being worn or carried.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 5 AET, the damage increases by 1d6 for every 2 additional aether spent.
 		
@@ -1481,8 +1467,8 @@
 			<div class="targets">1 weapon/Touch</div>
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
-		<p>You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>
-		<p><b>Overcast</b> When you cast this spell using 8 AET, the bonus increases to +2. When you expend 12 AET, the bonus increases to +3.</p>
+		<p>You touch a non-masterwork weapon. Until the spell ends, that weapon becomes masterwork for the duration, granting a bonus to damage equal to the wielder's proficiency bonus.</p>
+		<p><b>Overcast</b> When you cast this spell using more than 3 AET, you can target one additional weapon for every 3 AET you spend.</p>
 		
 		</div>
 		<div class="spell-card" id="major-image">
@@ -1494,7 +1480,7 @@
 			<div class="targets">--/120 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
-		<p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte's stench).</p>
+		<p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte's stench), or any effect that would impose any negative condition on a creature. </p>
 		<p>As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.</p>
 		<p>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.</p>
 		<p><b>Overcast</b> When you cast this spell using 15 AET, the spell lasts until dispelled, without requiring your concentration.</p>
@@ -1530,7 +1516,7 @@
 		<div class="spell-card" id="message">
 		<div class="spell-header">
 			<div class="cost">0</div>
-			<div class="components">V, S, M</div>
+			<div class="components">S, M</div>
 			<div class="spell-name">Message</div>
 			<div class="cast-time">A</div>
 			<div class="targets">1 creature/120 feet</div>
@@ -1565,9 +1551,7 @@
 			<div class="duration">1 minute</div>
 		</div>
 		<p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.</p>
-		<p>Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.</p>
-		<p>If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.</p>
-		<p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.</p>
+		<p>Each time a creature targets you with an attack during the spell's duration, you can choose to expend a duplicate as a reaction. If you do so, the duplicate vanishes but the attack deals no damage to you. You can make this decision after you see the attack roll but before damage is assigned.</p>
 		<p>A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</p>
 		
 		</div>
@@ -1588,13 +1572,13 @@
 		<div class="spell-card" id="misty-step">
 		<div class="spell-header">
 			<div class="cost">3</div>
-			<div class="components">V</div>
+			<div class="components">V, S</div>
 			<div class="spell-name">Misty Step</div>
 			<div class="cast-time">BA</div>
 			<div class="targets">Self/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+		<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see. There must be a clear path between you and the target location.</p>
 		
 		</div>
 		<div class="spell-card" id="moonbeam">
@@ -1663,7 +1647,7 @@
 			<div class="targets">1 creature/120 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
-		<p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.</p>
+		<p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make an Intelligence saving throw. On a failed save, the target takes 4d10 psychic damage and becomes shaken for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on an Intelligence saving throw, taking 4d10 psychic damage and becoming frightened as well if they were shaken before. On a successful save, the spell ends.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 8 AET, the damage increases by 1d10 for every 2 additional AET spent.</p>
 		
 		</div>
@@ -1691,7 +1675,7 @@
 			<div class="duration">Concentration, up to 1 hour</div>
 		</div>
 		<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Charisma saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.</p>
-		<p>The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than half the aether spent on the spell. The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.</p>
+		<p>The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose offensive rating is equal to or less than half the aether spent on the spell. The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality and can recognize friends and foes, but does not understand the nature of the change (including its ending conditions).</p>
 		<p>The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.</p>
 		<p>The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>
 		<p>The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
@@ -1728,7 +1712,7 @@
 		<li>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li>
 		<li>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li>
 		</ul>
-		<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+		<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action. None of its effects can impose any conditions or deal any damage to a creature or object (although lighting a fire can subsequently damage objects because it is real fire).</p>
 		
 		</div>
 		<div class="spell-card" id="produce-flame">
@@ -1860,7 +1844,7 @@
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.</p>
-		<p>Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage from outside the sphere, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. Unwilling targets inside can attack the sphere as an object with AC 17, damage threshold 10, and 16 HP. When it reaches 0 HP, the spell ends and the globe vanishes.</p>
+		<p>Nothing&mdash;not physical objects, energy, or other spell effects&mdash;can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage from outside the sphere, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. Unwilling targets inside can attack the sphere as an object with AC equal to your spell save DC, damage threshold 10, and 16 HP. When it reaches 0 HP, the spell ends and the globe vanishes.</p>
 		<p>The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.</p>
 		
 		</div>
@@ -1951,7 +1935,7 @@
 			<div class="duration">Instantaneous</div>
 		</div>
 		<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</p>
-		<p>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+		<p>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area. Objects made of crystal, glass, or stone have vulnerability to this damage.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional AET spent.</p>
 		
 		</div>
@@ -2043,7 +2027,7 @@
 			<div class="targets">5 creatures in 20-ft-radius-sphere/90 feet</div>
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
-		<p>This spell sends creatures into a magical slumber. Up to 5 creatures within 20 feet of a point you choose within range must make a Wisdom saving throw. Creatures who fail their saving throw fall unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.</p>
+		<p>This spell sends creatures into a magical slumber. Up to 5 creatures within 20 feet of a point you choose within range must make a Constitution saving throw. Creatures who fail their saving throw fall unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.</p>
 		<p>Undead and creatures immune to being charmed aren't affected by this spell.</p>
 		<p><b>Overcast</b> When you cast this spell and expend more than 2 AET, the number of affected creatures increases by one for every 3 additional AET spent.</p>
 		
@@ -2072,7 +2056,7 @@
 			<div class="duration">Concentration, up to 1 minute</div>
 		</div>
 		<p>You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.</p>
-		<p>An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>
+		<p>An affected target is <a href="../conditions.html#shaken">shaken</a> and <a href="../conditions.html#staggered">staggered</a>. It also takes a -2 penalty to AC and Dexterity saving throws. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.</p>
 		<p>If the creature attempts to cast a spell with a casting time of A, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
 		<p>A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.</p>
 		
@@ -2086,7 +2070,7 @@
 			<div class="targets">20-ft-radius/150 feet</div>
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
-		<p>The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels, up to a total per round of 16d4.</p>
+		<p>The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 1d4 piercing damage for every 5 feet it travels, up to a total per round of 16d4.</p>
 		<p>The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.</p>
 		
 		</div>
@@ -2100,7 +2084,7 @@
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
 		<p>You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. Their appearance is up to you.</p>
-		<p>When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. Affected creatures treat the area as difficult terrain, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage or 3d8 necrotic damage (your choice when you cast the spell). On a successful save, the creature takes half as much damage.</p>
+		<p>When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. Affected creatures treat the area as difficult terrain, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, the creature takes 3d8 radiant damage or 3d8 necrotic damage (your choice when you cast the spell). On a successful save, the creature takes half as much damage.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 5 AET, the damage increases by 1d8 for every 2 additional AET spent.</p>
 		
 		</div>
@@ -2233,7 +2217,7 @@
 			<div class="targets">15-ft cube/Self</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>A wave of thunderous force sweeps out from your outstretched hands. Each creature in a 15-foot cube originating from one side of your space you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p>
+		<p>A wave of thunderous force sweeps out from your outstretched hands. Each creature in a 15-foot cube originating from one side of your space you must make a Strength saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p>
 		<p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 2 AET, the damage increases by 1d8 for every additional AET, up to a maximum of 8d8 (8 AET).</p>
 		
@@ -2272,7 +2256,8 @@
 			<div class="targets">1 target/120 feet</div>
 			<div class="duration">Instantaneous</div>
 		</div>
-		<p>Choose one creature, object, or magical effect within range. Any spell costing 5 AET or lower on the target ends. For each spell higher cost on the target, make an ability check using your spellcasting ability. The DC equals 10 + half the spell's aether cost. On a successful check, the spell ends.</p>
+		<p>Choose one creature, object, or magical effect within range. Any spell costing 5 AET or lower on the target ends. For each spell higher cost on the target, make a proficient ability check using your spellcasting ability. The DC equals 10 + half the spell's aether cost. On a successful check, the spell ends.</p>
+		<p>This spell can affect non-spell magical effects as well. The effective aether cost is determined by the DM or specified in the ability that created it. Some creatures, such as animated objects, have special effects when this spell is cast on them.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 5 AET, you gain +1 on the check for every 3 additional AET spent.</p>
 		
 		</div>
@@ -2314,7 +2299,7 @@
 			<div class="duration">Concentration, up to 10 minutes</div>
 		</div>
 		<p>An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).</p>
-		<p>Nothing can physically pass through the wall. The wall also extends into the Border Shadow, blocking ethereal travel through the wall. Each panel of the wall has an AC of 17, a damage threshold of 10, and 45 HP. When its HP is reduced to 0, that panel collapses.</p>
+		<p>Nothing can physically pass through the wall--it provides total cover. The wall also extends into the Border Shadow, blocking ethereal travel through the wall. Each panel of the wall has an AC equal to your spell-save DC, a damage threshold of 10, and 45 HP. When its HP is reduced to 0, that panel collapses.</p>
 		<p><b>Overcast</b> When you cast this spell using more than 15 AET, its HP increases by 3 for every additional AET spent.</p>
 		
 		</div>
@@ -2329,7 +2314,7 @@
 		</div>
 		<p>You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.</p>
 		<p>If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save.</p>
-		<p>The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+		<p>The wall is an object that can be damaged and thus breached. It has AC equal to 4 + your spell attack modifier and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.</p>
 		<p><b>Overcast</b> When you cast this spell using a more than 12 AET, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for every 3 additional AET.</p>
 		
 		</div>
@@ -2346,7 +2331,7 @@
 		<p>If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.</p>
 		<p>The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.</p>
 		<p>If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.</p>
-		<p>The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.</p>
+		<p>The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 6 + your spell attack modifier and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.</p>
 		<p>The wall disappears when the spell ends.</p>
 		
 		</div>
@@ -2390,8 +2375,7 @@
 		</div>
 		<p>You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20 foot cube from that point for the duration unless conjured in mid-air without support, in which case it tangles around anything in the area and falls to the ground. The webs are difficult terrain and lightly obscure their area.</p>
 		<p>If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.</p>
-		<p>Each creature that starts its turn in the webs or that enters them during its turn must make a</p>
-		<p>Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.</p>
+		<p>Each creature that starts its turn in the webs or that enters them during its turn must make a Strength saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.</p>
 		<p>A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.</p>
 		<p>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.</p>
 		

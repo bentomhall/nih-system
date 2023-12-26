@@ -61,7 +61,7 @@ class CustomNav extends HTMLElement {
             title: "Backgrounds"
           },
           classes: {
-            path: "/classes.html",
+            path: "/classes/classes.html",
             title: "Classes"
           },
           divider: {
@@ -188,7 +188,7 @@ class CustomNav extends HTMLElement {
             path: "/monsters/aberrations.html",
             title: "Aberrations"
           },
-          beats: {
+          beasts: {
             path: "/monsters/beasts.html",
             title: "Beasts"
           },

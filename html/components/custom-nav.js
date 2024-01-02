@@ -258,7 +258,6 @@ class CustomNav extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    console.log(`attribute changed hit ${name}, ${oldValue}, ${newValue}`);
     if (name == "page") {
       this.currentPage = newValue;
     }

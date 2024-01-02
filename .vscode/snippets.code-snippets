@@ -33,5 +33,17 @@
 			"</div>"
 		],
 		"description": "A spell card"
+	},
+	"MonsterFluff": {
+		"scope": "html",
+		"prefix": "monster-fluff",
+		"body": [
+			"<h2>$1</h2>",
+			"<p> </p>",
+			"<h3>Habitat and Tactics</h3>",
+			"<p><b>Commonality:</b> </p>",
+			"<p><b>Habitat:</b> </p>",
+			"<p><b>Tactics:</b> </p>",
+		]
 	}
 }

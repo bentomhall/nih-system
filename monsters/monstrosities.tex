@@ -794,7 +794,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={45 (7d10 + 7)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+3}{+2}{+1}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3:2}]
-	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa.
+	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa. It can take one creature paralyzed by its poison along with it when it does as long as that creature is its size or smaller.
 
 	\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -939,29 +939,11 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}{Stirge}
-	\DndMonsterType{Tiny monstrosity}
-	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={2 (1d4)}, speed={10 ft., fly 40 ft.}]
-	\MonsterStats{-3}{+3}{+0}{-4}{-1}{-2}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={1/4:0}]
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Blood Drain,
-		distance=melee,
-		type=weapon,
-		mod=+3,
-		reach=5,
-		dmg=\DndDice{1d4 + 3},
-		dmg-type=piercing,
-		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
-	]
-\end{DndMonster}
-
 \begin{DndMonster}{Winter Wolf}
 	\DndMonsterType{Large monstrosity}
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
 	\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Winter Wolf }, challenge={3:3}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Primordial }, challenge={3:3}]
 	\DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 	\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
@@ -988,7 +970,7 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{+1}{+1}{-2}{+0}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin, Worg}, challenge={1:1/2}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin}, challenge={1:1/2}]
 \DndMonsterAction{Keen Hearing and Smell} The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}

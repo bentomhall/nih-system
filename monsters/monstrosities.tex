@@ -6,7 +6,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={14 (natural armor), 11 while prone}, hit-points={39 (6d10 + 6)}, speed={30 ft., burrow 10 ft.}]
 \MonsterStats{+3}{+0}{+1}{-5}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 11}, languages={—}, challenge={2:1}]
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={acid}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 11}, languages={—}, challenge={2:1}]
 \DndMonsterSection{Actions}
 \DndMonsterMelee[
     name=Bite,
@@ -80,6 +80,27 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	\end{multicols}
 \end{DndMonster}
 
+\begin{DndMonster}{Blink Dog}
+	\DndMonsterType{Medium monstrosity}
+	\DndMonsterBasics[armor-class={13}, hit-points={22 (4d8 + 4)}, speed={40 ft.}]
+	\MonsterStats{+1}{+3}{+1}{+0}{+1}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Understands Sylvan but can't speak it}, challenge={1/4:1/2}]
+	\DndMonsterAction{Keen Hearing and Smell} The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d6 + 1},
+		dmg-type=piercing
+	]
+	\DndMonsterAction{Blink}
+	The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
+	\end{DndMonster}
+
 \begin{DndMonster}{Chimera}
 	\DndMonsterType{Large monstrosity}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft., fly 60 ft.}]
@@ -148,7 +169,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={78 (12d10 + 12)}, speed={10 ft., fly 40 ft.}]
 \MonsterStats{+3}{+2}{+1}{+1}{+1}{+2}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={Deep Speech, Undercommon}, challenge={6:8}]
+\DndMonsterDetails[saving-throws={}, skills={Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={image-based telepathy (60 ft)}, challenge={6:8}]
 \DndMonsterAction{Damage Transfer} While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down), and that creature takes the other half.
 
 \DndMonsterAction{False Appearance} While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.
@@ -177,7 +198,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	dmg-type=slashing
 ]
 \DndMonsterAction{Moan}
-Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become shaken until the end of the cloaker's next turn. If the total was 8 or less, the creature is instead frightened. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours
+Each creature within 60 feet of the cloaker other than another cloaker that can hear its moan must succeed on a DC 13 Wisdom saving throw or become shaken until the end of the cloaker's next turn. If the total was 8 or less, the creature is instead frightened. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours
 
 \DndMonsterAction{Phantasms (Recharges after a Short or Long Rest)}
 The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
@@ -278,62 +299,6 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
 \end{DndMonster}
 	
-\begin{DndMonster}{Drider}
-	\begin{multicols}{2}
-	\DndMonsterType{Large monstrosity}
-	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={151 (16d10 + 64)}, speed={30 ft., climb 30 ft.}]
-	\MonsterStats{+3}{+3}{+4}{+1}{+2}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +9}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Abyssal, one other}, challenge={9:9}]
-	\DndMonsterAction{Fey Ancestry} The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.
-	
-	\DndMonsterAction{Innate Spellcasting} The drider's innate spellcasting ability is Wisdom (spell save DC 14). The drider can innately cast the following spells, requiring no material components:
-	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:faerie-fire} (1x), \nameref{spell:darkness} (1x)
-		\item[] \textbf{Other} \nameref{spell:dancing-lights}
-	\end{itemize}
-	
-	\DndMonsterAction{Spider Climb} The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-	
-	\DndMonsterAction{Sunlight Sensitivity} While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
-	
-	\DndMonsterAction{Web Walker} The drider ignores movement restrictions caused by webbing.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.
-	\DndMonsterAttack[
-		name=Bite,
-		distance=melee,
-		type=weapon,
-		mod=+6,
-		reach=5,
-		dmg=\DndDice{2d8 + 3},
-		dmg-type=piercing,
-		extra={ plus 9 (2d8) poison damage.}
-	]
-	\DndMonsterAttack[
-		name=Longsword,
-		distance=melee,
-		type=weapon,
-		mod=+6,
-		reach=5,
-		dmg=\DndDice{2d10 + 3},
-		dmg-type=slashing,
-		plus-dmg=\DndDice{1d8},
-		plus-dmg-type=poison
-	]
-	\DndMonsterAttack[
-		name=Longbow,
-		distance=ranged,
-		type=weapon,
-		mod=+6,
-		range=150/600,
-		dmg=\DndDice{2d8 + 3},
-		dmg-type=piercing,
-		extra={ plus 4 (1d8) poison damage.}
-	]
-	\end{multicols}
-\end{DndMonster}
-
 \begin{DndMonster}[width=\textwidth + 8pt]{Ettercap}
 	\begin{multicols}{2}
 	\DndMonsterType{Medium monstrosity}
@@ -530,9 +495,9 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	]
 
 	\DndMonsterSection{Variants}
-	\DndMonsterAction{Cryohydra} Cryohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 3.
-	\DndMonsterAction{Pyrohydra} Pyrohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.
-	\DndMonsterAction{Venom Hydra} Venom Hydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of poison 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 poison damage per head on a failure or half as much on a success. This increases the OR by 3.
+	\DndMonsterAction{Cryohydra} Cryohydras gain immunity to cold and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 3.
+	\DndMonsterAction{Pyrohydra} Pyrohydras gain immunity to fire and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.
+	\DndMonsterAction{Venom Hydra} Venom Hydras gain immunity to poison and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of poison 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 poison damage per head on a failure or half as much on a success. This increases the OR by 3.
 \end{DndMonster}
 
 \begin{DndMonster}{Land Shark}
@@ -829,7 +794,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={45 (7d10 + 7)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+3}{+2}{+1}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3:2}]
-	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa.
+	\DndMonsterAction{Ethereal Jaunt} As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa. It can take one creature paralyzed by its poison along with it when it does as long as that creature is its size or smaller.
 
 	\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
@@ -974,29 +939,11 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}{Stirge}
-	\DndMonsterType{Tiny monstrosity}
-	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={2 (1d4)}, speed={10 ft., fly 40 ft.}]
-	\MonsterStats{-3}{+3}{+0}{-4}{-1}{-2}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={1/4:0}]
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Blood Drain,
-		distance=melee,
-		type=weapon,
-		mod=+3,
-		reach=5,
-		dmg=\DndDice{1d4 + 3},
-		dmg-type=piercing,
-		extra={, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.}
-	]
-\end{DndMonster}
-
 \begin{DndMonster}{Winter Wolf}
 	\DndMonsterType{Large monstrosity}
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
 	\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Winter Wolf }, challenge={3:3}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Primordial }, challenge={3:3}]
 	\DndMonsterAction{Keen Hearing and Smell} The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 	\DndMonsterAction{Pack Tactics} The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
@@ -1023,7 +970,7 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \DndMonsterType{Large monstrosity}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{+1}{+1}{-2}{+0}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin, Worg}, challenge={1:1/2}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin}, challenge={1:1/2}]
 \DndMonsterAction{Keen Hearing and Smell} The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 \DndMonsterSection{Actions}

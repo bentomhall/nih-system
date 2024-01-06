@@ -7,97 +7,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="../main.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="monsters.css">
+	<script type="module" src="../components/custom-nav.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-		<div class="container-fluid">
-			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../index.html">Changelog</a></div>
-			<div class="nav-item"><a class="navbar-brand" href="../introduction.html">Introduction</a></div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
-				<div class="dropdown-menu">
-					<a href="../core-system.html" class="dropdown-item">Core Rules</a>
-					<a href="../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
-					<a href="../equipment.html" class="dropdown-item">Equipment and Expenses</a>
-					<a href="../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
-				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
-					<a href="../character-creation.html" class="dropdown-item">Character Creation Basics</a>
-					<a href="../lineages.html" class="dropdown-item">Lineages</a>
-					<a href="../cultures.html" class="dropdown-item">Cultures</a>
-					<a href="../backgrounds.html" class="dropdown-item">Backgrounds</a>
-					<a href="../classes.html" class="dropdown-item">Classes</a>
-					<div class="dropdown-divider"></div>
-					<a href="../classes/arcanist.html" class="dropdown-item">Arcanist</a>
-					<a href="../classes/armsman.html" class="dropdown-item">Armsman</a>
-					<a href="../classes/brawler.html" class="dropdown-item">Brawler</a>
-					<a href="../classes/oathbound.html" class="dropdown-item">Oathbound</a>
-					<a href="../classes/priest.html" class="dropdown-item">Priest</a>
-					<a href="../classes/ranger.html" class="dropdown-item">Ranger</a>
-					<a href="../classes/rogue.html" class="dropdown-item">Rogue</a>
-					<a href="../classes/shaman.html" class="dropdown-item">Shaman</a>
-					<a href="../classes/spellblade.html" class="dropdown-item">Spellblade</a>
-					<a href="../classes/warden.html" class="dropdown-item">Warden</a>
-					<a href="../classes/warlock.html" class="dropdown-item">Warlock</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
-				<div class="dropdown-menu" aria-labelledby="spellsMenu">
-					<a href="../spells.html" class="dropdown-item">Spellcasting Rules</a>
-					<a href="../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
-					<a href="../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
-					<a href="../spells/incantations.html" class="dropdown-item">Incantations</a>
-					<a href="../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
-				<div class="dropdown-menu" aria-labelledby="itemsMenu">
-					<a href="../items.html" class="dropdown-item">Rules and Crafting</a>
-					<a href="../items/armor.html" class="dropdown-item">Armor and Clothing</a>
-					<a href="../items/potions.html" class="dropdown-item">Consumables</a>
-					<a href="../items/rings.html" class="dropdown-item">Rings</a>
-					<a href="../items/wands.html" class="dropdown-item">Rods and Wands</a>
-					<a href="../items/weapons.html" class="dropdown-item">Weapons</a>
-					<a href="../items/misc.html" class="dropdown-item">Wondrous Items</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
-				<div class="dropdown-menu" aria-labelledby="monstersMenu">
-					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
-					<a href="aberrations.html" class="dropdown-item">Aberrations</a>
-					<a href="beasts.html" class="dropdown-item">Beasts</a>
-					<a href="celestials.html" class="dropdown-item">Celestials</a>
-					<a href="constructs.html" class="dropdown-item">Constructs</a>
-					<a href="dragons.html" class="dropdown-item">Dragons</a>
-					<a href="elementals.html" class="dropdown-item">Elementals</a>
-					<a href="fey.html" class="dropdown-item">Fey</a>
-					<a href="fiends.html" class="dropdown-item">Fiends</a>
-					<a href="giants.html" class="dropdown-item">Giants</a>
-					<a href="humanoids.html" class="dropdown-item">Humaniods</a>
-					<a href="monstrosities.html" class="dropdown-item">Monstrosities</a>
-					<a href="oozes.html" class="dropdown-item">Oozes</a>
-					<a href="plants.html" class="dropdown-item">Plants</a>
-					<a href="undead.html" class="dropdown-item">Undead</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
-				<div class="dropdown-menu">
-					<a href="../conditions.html" class="dropdown-item">Conditions</a>
-					<a href="../examples.html" class="dropdown-item">Examples</a>
-					<a href="../world.html" class="dropdown-item">The World of Quartus</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<custom-nav page="undead"></custom-nav>
 	<div class="container">
-		<h2 class="section">Undead</h2>
+		<h1 class="section">Undead</h1>
+		<p>With the exception of the ghost, all undead were once people or animals who became infected with jotnar, the entropy spirits from the heart of the Abyss. In this, they are kin to demons. Unlike demons, the jotnar is in full control. Most of the undead described here were killed before they were infested--the greater undead such as vampires and wights died after infection and were able to maintain some semblance of control or reach a bargain with the entropy spirit. In general, undead are considered extremely dangerous and taboo by most nations--their existence is fueled by draining the aether out of their surroundings. Areas infested by undead become less fertile, starting with young plants and animals. Even the insects die eventually, leaving the area sterile. Extreme exposure can even cause the rocks themselves to crumble into fine grey ash where no life can take root. A very few exceptions exist, where the undead find some other source of energy--a holy vow, a self-sacrificing partner, or powerful elemental magics. These are quite rare, however.</p>
+		<h2>Ghost</h2>
+		<p>Ghosts are unusual for undead--they are not jotnar-infested. There are two general kinds of ghosts--the unsettled spirits of those who could not pass through the veil into Shadow due to obligations, binding magic, or other impediments, and the echoes of the departed. The former will pass on when given the opportunity and when the way is cleared, and often can be reasoned with. The latter aren't really alive at all--they are recordings, shadows etched into reality, brought to life by ambient aetheric conditions (usually traumatic ones), and that must be solved for them to subside. Unlike most undead, ghosts do not generally hate the living. Some want desperately to communicate; others don't even know they are dead.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare everywhere. Each one is individual, so only general knowledge can be gained and only with an Intelligence (Arcana or Religion) check.</p>
+		<p><b>Habitat:</b> Almost anywhere. Unsettled spirits tend to haunt specific places and echoes occur most often where large-scale magical events (including catastrophes) happened, including battlefields.</p>
+		<p><b>Tactics:</b> Ghosts will try to possess people where possible. They only attack if frustrated or antagonized. Often, they prefer to phase through to the Border Shadow to avoid hostilities.</p>
 		<div class="monster">
 			<h3 class="monster-name">Ghost</h3>
 			<div class="monster-summary">
@@ -115,7 +37,7 @@
 				</div>
 			</div>
 			<div class="monster-action"><p><b>Ethereal Sight.</b></p>
-				<p>The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.</p>
+				<p>The ghost can see 60 feet into the Border Shadow when it is on the Material Plane, and vice versa.</p>
 			</div>
 			<div class="monster-action"><p><b>Incorporeal Movement.</b></p>
 				<p>The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) bludgeoning damage if it ends its turn inside an object.</p>
@@ -123,7 +45,7 @@
 			<h3>Actions</h3>
 			<p class="monster-attack"><b>Withering Touch.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 4d6 + 3 necrotic. </p>
 			<div class="monster-action"><p><b>Etherealness.</b></p>
-				<p>The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</p>
+				<p>The ghost enters the Border Shadow from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</p>
 			</div>
 			<div class="monster-action"><p><b>Horrifying Visage.</b></p>
 				<p>Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 &times; 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a <em>greater restoration</em> incantation, but only within 24 hours of it occurring.</p>
@@ -133,6 +55,12 @@
 				<p>The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like <a href="../spells/allspells.html#dispel-otherworldly-influence">dispel-otherworldly-influence</a>. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</p>
 			</div>
 		</div>
+		<h2>Ghouls and Ghasts</h2>
+		<p>The ghoul, and its larger cousin the ghast, are rare undead that hunger for flesh and blood as much as simply killing the living. They were infested at death or soon thereafter, retaining much of their physical forms, but becoming withered and growing claws and fangs. The jotnar inside of them drives them to rend and tear, preferring to begin devouring victims alive, consuming body and soul.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Ghouls are uncommon, but widely-known among adventurers. The paralytic nature of their claws are commonly known by anyone with proficiency in History, Religion, or Arcana.</p>
+		<p><b>Habitat:</b> Ghouls and ghasts are usually found in heavily-necromantic areas, especially underground crypts. They usually come with other undead or in packs of 3-5, often led by a ghast.</p>
+		<p>Ghouls and ghasts are straightforward attackers. They prefer to paralyze their victims with their toxic claws before devouring them alive. They will try to drag off paralyzed victims for future consumption. They do not generally have complex schemes, retaining only animal cunning.</p>
 		<div class="monster">
 			<h3 class="monster-name">Ghoul</h3>
 			<div class="monster-summary">
@@ -184,16 +112,24 @@
 				<p>The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.</p>
 			</div>
 		</div>
+		<h2>Shadow</h2>
+		<p>The shadow is the even-lesser cousin of the specter. Possessing very little of the person whose spirit was consumed to make the shadow, they are malevolent entities with nothing left inside them but hate. Their touch drains the will to live--their victims eventually lie down and give up their lives, often well before their bodies are actually terminally injured.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Shadows are quite uncommon. Distinguishing them from wraiths and specters requires a scholarly background or a successful Intelligence (Arcana) check.</p>
+		<p><b>Habitat:</b> Shadows only persist underground or in entirely enclosed areas, and are usually only found in old tombs or crypts. They avoid areas that are regularly exposed to sunlight. When found, they are usually found in packs, often with specters or wraiths in command.</p>
+		<p><b>Tactics:</b> Like all incorporeal undead, they prefer to hit and run, using solid objects as cover where possible. They aren't very tactical about it, however, and can be maneuvered into the open with reasonable ease.</p>
 		<div class="monster">
 			<h3 class="monster-name">Shadow</h3>
 			<div class="monster-summary">
 				<p><em>Medium undead</em></p>
 				<div class="monster-basics"><div>12 AC</div><div>16 (3d8 + 3) HP</div><div>Speed: 40 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>-2</div><div>+2</div><div>+1</div><div>-2</div><div>+0</div><div>-1</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>-2</div><div>+2</div><div>+1</div><div>-2</div><div>+0</div><div>-1</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 10</p>
 					<p><b>Languages:</b> —</p>
-					<p><b>Ratings:</b> 1:1/2</p>
+					<p><b>Ratings:</b> 1/2:1/2</p>
 				</div>
 				<p><b>Damage Immunities</b> necrotic, poison</p>
 				<p><b>Damage Resistances</b> acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing</p>
@@ -210,8 +146,14 @@
 				<p>While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.</p>
 			</div>
 			<h3>Actions</h3>
-			<p class="monster-attack"><b>Strength Drain.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 2 necrotic, and the target must make a DC 11 Constitution saving throw, gaining a level of exhaustion on a failed save or two levels of exhaustion if the result is 5 or below.</p>
+			<p class="monster-attack"><b>Strength Drain.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 necrotic, and the target must make a DC 11 Constitution saving throw, gaining a level of exhaustion on a failed save or two levels of exhaustion if the result is 5 or below.</p>
 		</div>
+		<h2>Skeleton</h2>
+		<p>Made when jotnar inhabit the bones of an animal or person, skeletons are superior in mentality to zombies, but remain among the least of the undead. Without the rotting flesh to distract, the jotnar can use the encoded, lingering memories to formulate animal-cunning plans. Sometimes they mimic aspects of the person that was before, patrolling where they once were guards, etc. Unlike zombies, they do not usually arise naturally--they tend to be created with intent and given commands, which they execute with precision...as long as they involve killing living things. When not closely supervised, they will twist orders in ways that let them inflict as much suffering and destruction as possible. Unlike golems, the jotnar pulling the strings hate all that lives and constantly works to the ends of the final destruction of all life.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Skeletons are well-known. No checks are needed.</p>
+		<p><b>Habitat:</b> Necromancers' or cultist lairs, old crypts. They generally come in large groups with other undead, often with a necromancer or cultist leader.</p>
+		<p><b>Tactics:</b> Skeletons use weapons and armor, and will generally act intelligently, at least to some degree. They will not retreat, but they will reposition for better attacks and have been known to <em>pretend</em> to flee to draw unwary adventurers into traps. They often lie around like piles of bones, rising to attack when the adventurers are fully surrounded. Many necromancers prefer skeleton servants to zombies--much more hygenic and able to follow orders, at the cost of being significantly more fragile.</p>
 		<div class="monster">
 			<h3 class="monster-name">Skeleton</h3>
 			<div class="monster-summary">
@@ -231,12 +173,20 @@
 			<p class="monster-attack"><b>Shortsword.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 piercing. </p>
 			<p class="monster-attack"><b>Shortbow.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 piercing. </p>
 		</div>
+		<h2>Specter</h2>
+		<p>One of the lesser incorporeal undead, specters are often created from those slain by wraiths or the restless spirits of those who die in heavily necromatically-tainted areas. While they retain sentience, their minds are clouded by a hate for all living things. They exist to drain the life out of everything they touch. Generally, they are under the control of the wraith that created them.</p>
+		<h2>Habitat and Tactics</h2>
+		<p><b>Commonality:</b> Rare. Distinguishing a specter from a shadow or wraith requires a successful Intelligence (Arcana) check.</p>
+		<p><b>Habitat:</b> Specters only persist underground or in entirely enclosed areas, and are usually only found in old tombs or crypts. They avoid areas that are regularly exposed to sunlight. When found, they are usually found in packs, often with wraiths in command or commanding shadows.</p>
+		<p><b>Tactics:</b> Like wraiths, they prefer to hide on the other side of solid objects and perform hit and run attacks. They flee from sunlight. They tend to be less focused on a single target than wraiths, attacking opportunistically.</p>
 		<div class="monster">
 			<h3 class="monster-name">Specter</h3>
 			<div class="monster-summary">
 				<p><em>Medium undead</em></p>
 				<div class="monster-basics"><div>12 AC</div><div>22 (5d8) HP</div><div>Speed: 0 ft., fly 50 ft. (hover)</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>-5</div><div>+2</div><div>+0</div><div>+0</div><div>+0</div><div>+0</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>-5</div><div>+2</div><div>+0</div><div>+0</div><div>+0</div><div>+0</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 10</p>
 					<p><b>Languages:</b> understands all languages it knew in life but can't speak</p>
@@ -256,6 +206,12 @@
 			<h3>Actions</h3>
 			<p class="monster-attack"><b>Touch.</b> <em>Melee Spell Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 3d6 necrotic. The target must succeed on a DC 12 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. When the target finishes a long rest, they can expend hit dice--the hit point maximum reduction is reduced by the amount rolled. The target dies if this effect reduces its hit point maximum to 0. </p>
 		</div>
+		<h2>Vampire</h2>
+		<p>It's said that the first vampires were very different from the thirst-driven creatures now known by that name. The Night Lords were early experimenters with imprisoning a jotnar in a cage inside a mortal soul in a quest for power and immortality. This brought extended existence, extreme strength and overwhelming magical and psychic abilities. Thankfully, the last of the Night Lords were destroyed back in the Second Age...or so everyone believes. The ritual that created the Night Lords has been lost, corrupted into the ritual to create vampires. It's said that the White Skull will grant the knowledge of the debased ritual to those that pledge to him but don't have the power to become a true lich.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Legendary. Tales are common...not all the tales are correct. Vampires also are known to mingle in civilization, hiding their identities by spells. Knowledge of weaknesses is common, but much of what is known is exaggerated.</p>
+		<p><b>Habitat:</b> Vampires are found in places where mortals gather, as they require sustenance regularly. They often charm their way to the upper reaches of society. They almost always have flunkies and minions and are rarely alone.</p>
+		<p><b>Tactics:</b> Vampires rarely play or fight fair. They prefer mind games and hit-and-run attacks, striking from the shadows or manipulating others into doing their bidding. They will generally only engage in direct combat when cornered, and will try to flee (often in mist or bat form) at the first opportunity, as long as their coffin is undisturbed and still hidden. When in combat, they prefer to charm the weakest mind and turn it against its allies. Hostages also are a great tool...and an easy food source. They will grapple and bite whenever possible. It is very rare for a vampire to act alone--they tend to have flunkies (charmed or bought mortals, usually), vampire spawn bound to them, and lesser undead (especially zombies and wights).</p>
 		<div class="monster">
 			<h3 class="monster-name">Vampire</h3>
 			<div class="monster-summary">
@@ -272,7 +228,7 @@
 			<div class="monster-action"><p><b>Shapechanger.</b></p>
 				<p>If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.</p>
 				<p>While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.</p>
-				<p>While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.</p>
+				<p>While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all damage, except the damage it takes from sunlight.</p>
 			</div>
 			<div class="monster-action"><p><b>Legendary Resistance (3/Day).</b></p>
 				<p>If the vampire fails a saving throw, it can choose to succeed instead.</p>
@@ -288,7 +244,7 @@
 				<p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
 			</div>
 			<div class="monster-action"><p><b>Vampire Weaknesses.</b></p>
-				<p>The vampire has the following flaws:</p>
+				<p>The vampire may have one or more of the following flaws (GM's choice):</p>
 				<p><em>Forbiddance.</em> The vampire can't enter a residence without an invitation from one of the occupants.</p>
 				<p><em>Harmed by Running Water.</em> The vampire takes 20 acid damage if it ends its turn in running water.</p>
 				<p><em>Stake to the Heart.</em> If a piercing weapon made of wood is driven into the vampire's heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.</p>
@@ -314,12 +270,21 @@
 				<p>The vampire makes one bite attack.</p>
 			</div>
 		</div>
+		<h2>Vampire Spawn</h2>
+		<p>Master-rank vampires can create spawn, if they choose, by carefully exanguinating their victims and filling them with stolen, jotnar-infused vital fluids. Many, if not most, do not retain much if any of their humanity, rising from the grave as nothing more than hungering monsters, aka ghouls. The strongest retain their sense of self and come to some form of mastery over the jotnar presence, drawing energy from it as it consumes the lives of innocent and guilty alike. Lacking the full powers of a true vampire, as well as its ability to vanish into mist and come back to unlife, spawn are dangerous nonetheless. Spawn do inherit some of the weaknesses of their parents.</p>
+		<p>Spawn can reason and think like the people they were, but for most of them their living passions and interests start to wither, leaving only the blood-thirst and taste for inflicting pain. Rare spawn retain their ability to use magic or their pre-transformation personality and desires.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality: </b>Vampire spawn, like vampires, are legendary. Confused tales exist, many false and spread by vampires themselves.</p>
+		<p><b>Habitat:</b> Vampire spawn are generally found in the lair of a master-rank vampire; occasionally they will terrorize a countryside or town when their creator lets them loose or loses control.</p>
+		<p><b>Tactics:</b> Vampire spawn tend to come in packs and attack from ambush, using their Spider Climb ability to get around. They are not mindless--they will break off when threatened with their vulnerabilities, but will tend to regroup and attack again. They will usually try to grapple and bite humanoids, especially if they can isolate them. Vampire spawn tend to work in concert with other undead, but usually only lesser ones such as ghouls, wights, and zombies.</p>
 		<div class="monster">
 			<h3 class="monster-name">Vampire Spawn</h3>
 			<div class="monster-summary">
 				<p><em>Medium undead</em></p>
 				<div class="monster-basics"><div>15 (natural armor) AC</div><div>97 (13d8 + 39) HP</div><div>Speed: 30 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+3</div><div>+3 (+6)</div><div>+3</div><div>+0</div><div>+0 (+3)</div><div>+1</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>+3</div><div>+3 (+6)</div><div>+3</div><div>+0</div><div>+0 (+3)</div><div>+1</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 13</p>
 					<p><b>Languages:</b> the languages it knew in life</p>
@@ -334,11 +299,12 @@
 				<p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
 			</div>
 			<div class="monster-action"><p><b>Vampire Weaknesses.</b></p>
-				<p>The vampire has the following flaws:</p>
+				<p>The vampire has two of the following flaws (GM's choice):</p>
 				<p><em>Forbiddance.</em> The vampire can't enter a residence without an invitation from one of the occupants.</p>
 				<p><em>Harmed by Running Water.</em> The vampire takes 20 acid damage when it ends its turn in running water.</p>
 				<p><em>Stake to the Heart.</em> The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is incapacitated in its resting place.</p>
 				<p><em>Sunlight Hypersensitivity.</em> The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.</p>
+				<p><em>Nocturnal Activity.</em> The vampire must spend the time between dawn and sunset in its resting place and is incapacitated during this time.</p>
 			</div>
 			<h3>Actions</h3>
 			<div class="monster-action"><p><b>Multiattack.</b></p>
@@ -347,12 +313,20 @@
 			<p class="monster-attack"><b>Claws.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d4 + 3 slashing and the vampire can grapple the target (escape DC 13). It can only grapple two creatures at a time.</p>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 3 piercing plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. This attack has advantage against targets the vampire is grappling. </p>
 		</div>
+		<h2>Wight</h2>
+		<p>One of the least of the greater undead, wights were infested with jotnar before their deaths, whether by living and dying in demon-traversed areas or by being sacrificed to demons. Some of the greater undead practice the creation of wights under their control. They retain much of the skills and knowledge of their living self, shrouded under the hunger and hatred attendant to being undead. They can drain the life out of their foes at a touch, weakening them and making them vulnerable to becoming undead themselves while healing the wight.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Of the greater undead, wights are among the more well-known. Only ignorant or naive adventurers need to make Intelligence (Arcana) checks for information.</p>
+		<p><b>Habitat:</b> Found wherever undead are. Generally in groups of 3-5 or commanding swarms of lesser corporeal undead.</p>
+		<p><b>Tactics:</b> Wights are smarter than zombies or skeletons and not as ruled by hunger as ghouls. As a result, they tend to use actual tactics, preferring to pick off the ones they consider dangerous from safety. If pressed into melee, they will focus on a single target until they've killed them with their Life Drain. They tend to run in packs with other wights or zombies, especially including zombies under their control. They frequently are found under the command of a greater undead such as a vampire, lich, or other such dominating creature, acting as sergeants directing squads of lesser undead.</p>
 		<div class="monster">
 			<h3 class="monster-name">Wight</h3>
 			<div class="monster-summary">
 				<p><em>Medium undead</em></p>
 				<div class="monster-basics"><div>14 (reinforced leather) AC</div><div>60 (8d8 + 24) HP</div><div>Speed: 30 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+2</div><div>+2</div><div>+3</div><div>+0</div><div>+1</div><div>+2</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>+2</div><div>+2</div><div>+3</div><div>+0</div><div>+1</div><div>+2</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 13</p>
 					<p><b>Languages:</b> the languages it knew in life</p>
@@ -374,6 +348,12 @@
 			<p class="monster-attack"><b>Longsword.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d10 + 2 slashing. </p>
 			<p class="monster-attack"><b>Longbow.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d8 + 2 piercing. </p>
 		</div>
+		<h2>Will-o'-Wisp</h2>
+		<p>The will-o'-wisp is a rarity--a jotnar-infested nature spirit. With a combination of the fey's trickster nature and the jotnari hatred for life, they delight in luring travelers and animals to their doom, miring them in the swamps they call home before burning them to death with malevolent lightning and consuming their souls. Thankfully, they are quite rare, known only in a few areas in the Sundown Hills and in the Hagfen.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon. Those familiar with swamplands and the kami know their patterns automatically; everyone else requires an Intelligence (Nature or Arcana) check.</p>
+		<p><b>Habitat:</b> Swamplands, especially necrotically-active ones. Generally found in groups of 2-4, and rarely with other creatures.</p>
+		<p><b>Tactics:</b> Will-o'-wisps tend to act in groups. They prefer trickery, luring enemies through dangerous (and especially ensnaring) terrain before clustering to feed. They frequently go invisible to gain advantage or to confuse their foes.</p>
 		<div class="monster">
 			<h3 class="monster-name">Will-o'-Wisp</h3>
 			<div class="monster-summary">
@@ -410,6 +390,12 @@
 				<p>The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).</p>
 			</div>
 		</div>
+		<h2>Wraith</h2>
+		<p>As the most powerful of the incorporeal undead, wraiths are thankfully quite rare. They result when a trapped spirit, unable to cross over into Shadow, becomes infested with jotnar while still full of mortal vigor. They remember much of who they were&hellip;but are suffused and controlled by the jotnari hunger and hatred for all living things. They pass the infection on to those that die near them, converting them into shadowy undead slaves. Due to their incorporeal nature, they are difficult to hurt either with magic or steel, except for abilities that channel the radiant nature of the Astral plane.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare. They try to disguise themselves as lesser incorporeal undead where they can, so distinguishing them from others is difficult.</p>
+		<p><b>Habitat:</b> As with other incorporeal undead, they are only found in the depths of lightless crypts and other such areas. Usually commanding groups of shadows or specters.</p>
+		<p><b>Tactics:</b> Wraiths tend to act in concert with lesser incorporeal undead. They will attack by phasing through solid objects and then running away, harrying their opponents to death. They are smart enough to plan tactics, rather than simply attack the first they see. They tend to focus on one target until killed, then use their Create Specter ability.</p>
 		<div class="monster">
 			<h3 class="monster-name">Wraith</h3>
 			<div class="monster-summary">
@@ -437,6 +423,13 @@
 				<p>The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</p>
 			</div>
 		</div>
+		<h2>Zombies</h2>
+		<p>The lowest, least intelligent and least independent of the undead, the zombie is a simple putrefying corpse reanimated by a jotnar, whether spontaneously or summoned by a necromantic ritual. No coherent thoughts remain in their rotting flesh and their bodies lack even a trace of the soul that once brought them to life. Unless forcibly compelled by blackest magic, zombies will attack any living thing--not out of hunger, but out of unrelenting hate for for all living existence. In the absence of anything to attack and when left without orders, they simply stand there, doing nothing. Zombies do cling to false-life with a tenacity nearly unmatched by other undead. Unless dismembered or burned in radiant fire, they frequently get up from even massive damage.</p>
+		<p>Presented here are two types of zombies, but any animal or person that once lived can be zombified. Zombies all have abysmal mental ability scores and poor Dexterity, regardless of what creature they came from, while their Strength and Constitution tend to improve slightly. They all have the Undead Fortitude trait, but never have proficiency in weapons or armor.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Common. Of all the undead, these are the best-known. No checks are necessary.</p>
+		<p><b>Habitat:</b> Anywhere. They are the most likely to spontaneously arise from improper burial in unconsecrated ground. Old battlefields are often rife with them. And rarely will a single zombie arise by itself--where you see one zombie, there are probably dozens.</p>
+		<p><b>Tactics:</b> Zombies don't have tactics beyond charging at the nearest living creature and using their Slam attack until the creature is dead or they are destroyed themselves. They will move blindly through dangerous terrain or spell effects, do not coordinate, and will frequently get in each other's way. It's all a controlling creature can do to get them pointed in the right direction; when uncontrolled they will blindly attack. Uncontrolled zombies are frequently either alone or in combination with other lesser undead such as ghouls or wights; zombies also serve as the basic brute soldier of more organized necromantic armies.</p>
 		<div class="monster">
 			<h3 class="monster-name">Zombie</h3>
 			<div class="monster-summary">

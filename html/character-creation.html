@@ -6,95 +6,10 @@
     <title>NIH Character Creation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="main.css" rel="stylesheet"/>
+<script type="module" src="components/custom-nav.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-		<div class="container-fluid">
-			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="index.html">Changelog</a></div>
-			<div class="nav-item"><a class="navbar-brand" href="introduction.html">Introduction</a></div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
-				<div class="dropdown-menu">
-					<a href="core-system.html" class="dropdown-item">Core Rules</a>
-					<a href="core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
-					<a href="equipment.html" class="dropdown-item">Equipment and Expenses</a>
-					<a href="skill-tricks.html" class="dropdown-item">Skill Tricks</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
-				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
-					<a href="character-creation.html" class="dropdown-item">Character Creation Basics</a>
-					<a href="lineages.html" class="dropdown-item">Lineages</a>
-					<a href="cultures.html" class="dropdown-item">Cultures</a>
-					<a href="backgrounds.html" class="dropdown-item">Backgrounds</a>
-					<a href="classes/classes.html" class="dropdown-item">Classes</a>
-					<div class="dropdown-divider"></div>
-					<a href="classes/arcanist.html" class="dropdown-item">Arcanist</a>
-					<a href="classes/armsman.html" class="dropdown-item">Armsman</a>
-					<a href="classes/brawler.html" class="dropdown-item">Brawler</a>
-					<a href="classes/oathbound.html" class="dropdown-item">Oathbound</a>
-					<a href="classes/priest.html" class="dropdown-item">Priest</a>
-					<a href="classes/ranger.html" class="dropdown-item">Ranger</a>
-					<a href="classes/rogue.html" class="dropdown-item">Rogue</a>
-					<a href="classes/shaman.html" class="dropdown-item">Shaman</a>
-					<a href="classes/spellblade.html" class="dropdown-item">Spellblade</a>
-					<a href="classes/warden.html" class="dropdown-item">Warden</a>
-					<a href="classes/warlock.html" class="dropdown-item">Warlock</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
-				<div class="dropdown-menu" aria-labelledby="spellsMenu">
-					<a href="spells.html" class="dropdown-item">Spellcasting Rules</a>
-					<a href="spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
-					<a href="spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
-					<a href="spells/incantations.html" class="dropdown-item">Incantations</a>
-					<a href="spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
-				<div class="dropdown-menu" aria-labelledby="itemsMenu">
-					<a href="items.html" class="dropdown-item">Rules and Crafting</a>
-					<a href="items/armor.html" class="dropdown-item">Armor and Clothing</a>
-					<a href="items/potions.html" class="dropdown-item">Consumables</a>
-					<a href="items/rings.html" class="dropdown-item">Rings</a>
-					<a href="items/wands.html" class="dropdown-item">Rods and Wands</a>
-					<a href="items/weapons.html" class="dropdown-item">Weapons</a>
-					<a href="items/misc.html" class="dropdown-item">Wondrous Items</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
-				<div class="dropdown-menu" aria-labelledby="monstersMenu">
-					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
-					<a href="monsters/aberrations.html" class="dropdown-item">Aberrations</a>
-					<a href="monsters/beasts.html" class="dropdown-item">Beasts</a>
-					<a href="monsters/celestials.html" class="dropdown-item">Celestials</a>
-					<a href="monsters/constructs.html" class="dropdown-item">Constructs</a>
-					<a href="monsters/dragons.html" class="dropdown-item">Dragons</a>
-					<a href="monsters/elementals.html" class="dropdown-item">Elementals</a>
-					<a href="monsters/fey.html" class="dropdown-item">Fey</a>
-					<a href="monsters/fiends.html" class="dropdown-item">Fiends</a>
-					<a href="monsters/giants.html" class="dropdown-item">Giants</a>
-					<a href="monsters/humanoids.html" class="dropdown-item">Humaniods</a>
-					<a href="monsters/monstrosities.html" class="dropdown-item">Monstrosities</a>
-					<a href="monsters/oozes.html" class="dropdown-item">Oozes</a>
-					<a href="monsters/plants.html" class="dropdown-item">Plants</a>
-					<a href="monsters/undead.html" class="dropdown-item">Undead</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
-				<div class="dropdown-menu">
-					<a href="conditions.html" class="dropdown-item">Conditions</a>
-					<a href="examples.html" class="dropdown-item">Examples</a>
-					<a href="world.html" class="dropdown-item">The World of Quartus</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<custom-nav page="characterCreationBasics"></custom-nav>
 <div class="container">
 	<h1 class="chapter" id="character-creation">Character Creation</h1>
 	<p>Creating a character follows a specific process.</p>
@@ -129,6 +44,8 @@
 	<h2 class="section">Ability Scores</h2>
 	<p>A character's basic approach to adventuring is summed up in 6 numbers, called "Ability Scores" (or sometimes "ability modifiers"). They range between -5 (nearly incapable, usually only used for things like unthinking oozes or undead) and +5 (about the peak of normal earth humanity in that area). Some class abilities, magic, and monsters break that upper limit, but no ability score in the game can be above +10. A score of +0 is perfectly average for that area. Ability scores are added, by default, to all d20 rolls, whether ability checks, saving throws, or attack rolls, as well as damage rolls with weapon attacks (not spells).</p>
 
+	
+
 	<p>The six abilities are, with abbreviations in parentheses:</p>
 	<ol>
 		<li><b>Strength (STR):</b> Someone with high STR is good at wielding big melee weapons, wearing heavy armor, lifting and carrying heavy weights, climbing, jumping, swimming, and generally performing tasks of brute strength. Such characters are often described as "ripped" or "buff". Armsmen and Wardens are particularly likely to have high STR; Oathbound as well tend to lean towards STR as a primary score. Melee weapons, by default, use STR as their modifier.</li>
@@ -140,6 +57,39 @@
 	</ol>
 	
 	<p>Ability scores aren't as much physical measurements as they are <em>archetypes</em>--you can have normal (ie +0) STR and still be physically fit. Using <em>any</em> weapon requires both physical power and coordination, but heavier melee weapons are archetypally associated with the Strong Guy, while ranged weapons and sneaky daggers are both associated with the Sneak or the Archer, neither of whom is traditionally "buff" (despite archers being very strong in reality). Your high ability scores are best thought of as how your character prefers to approach problems--brute force (STR), precise maneuvering or stealth (DEX), toughing them out (CON), outhinking the problem (INT), intuiting the solution (WIS), or just bluffing your way through on sheer personality and charm (CHA).</p>
+
+	<div class="sidebar">
+		<h3>Ability scores are for adventuring</h3>
+		<p>The translation of ability scores into things like jumping distance, lifting capacity, etc. are intended for medium humanoid adventurers. As with all such simplified, linear scales, applying them to very large or very small creatures, as well as those with non-humanoid body shapes or to very focused events such as weightlifting or olympic competitions tends to break down quickly. To adjudicate those other cases, here are some recommendations.</p>
+		<ul>
+			<li>For all tasks, ask whether the character's characterization and background (literal Background as well as general backstory and history) suggest that the character should be able to do those things. If so, don't demand any kind of check. Just let that character succeed.</li>
+			<li>For carrying/lifting capacity for Small PCs, consider simply handwaving it. Technically their gear should be lighter as well, but it's rarely worth doing anything about this. Simply treat a Small PC exactly as if they were Medium for this purpose. Lineages that give inherent abilities will say so.</li>
+			<li>For pack animals, assume that a standard cart (see <a href="equipment.html">Equipment</a>) can be pulled by a single mule or horse over normal terrain. A wagon generally requires 2-4 horses. For carrying capacity (assuming proper harness and tack), worry more about bulk than weight. Unless the objects are particularly dense (like bars of gold), the beast will no longer be able to maneuver with more than 1 non-trivially-heavy object of one size smaller strapped to it or more than 4-5 saddlebags. Animals other than those listed as mounts aren't built to carry or pull heavy weights very well unless the DM decides otherwise.</li>
+			<li>Generally tiny NPCs cannot lift any meaningful weight, and each size larger than Medium quadruples the amount of weight. So an ogre can carry 4x as much as a human of the same STR. But it's usually best to play these things out narratively rather than trying to do the math.</li>
+			<li>For particularly specific competitions or feats of strength (such as a proper deadlift that doesn't involve movement or a long jump on a course with a proper pit), consider using the character's Strength (Athletics) modifier instead of their straight Strength modifier in the calculation.</li>
+		</ul>
+	</div>
+
+	<div class="sidebar">
+		<h3>Summary of classes and ability scores</h3>
+		<p>The following table gives a summary of which classes particularly care about each ability score. Offensive scores govern attacks and spell save DCs. Defensive scores govern AC and health. Secondary scores govern all the various powers that aren't keyed directly off the offensive stat. If two are listed with a slash (/), you can choose depending on your build. If there is a comma, both are needed. All classes want at least some CON, so it's not listed.</p>
+		<table>
+			<tr><th>Class</th><th>Offensive</th><th>Defensive</th><th>Secondary</th></tr>
+			<tr><td>Arcanist</td><td>INT</td><td>DEX</td><td>&mdash;</td></tr>
+			<tr><td>Armsman</td><td>STR/DEX*</td><td>STR/DEX*</td><td>CHA/INT</td></tr>
+			<tr><td>Brawler</td><td>DEX</td><td>DEX, WIS</td><td>WIS</td></tr>
+			<tr><td>Oathbound</td><td>STR</td><td>STR</td><td>CHA</td></tr>
+			<tr><td>Priest</td><td>WIS</td><td>DEX</td><td>&mdash;</td></tr>
+			<tr><td>Ranger</td><td>DEX</td><td>DEX</td><td>WIS</td></tr>
+			<tr><td>Rogue</td><td>DEX</td><td>DEX</td><td>INT/CHA</td></tr>
+			<tr><td>Shaman</td><td>WIS</td><td>DEX</td><td>&mdash;</td></tr>
+			<tr><td>Spellblade</td><td>CHA, DEX</td><td>DEX</td><td>CHA</td></tr>
+			<tr><td>Warden</td><td>STR</td><td>DEX, CON**</td><td>&mdash;</td></tr>
+			<tr><td>Warlock</td><td>CHA</td><td>DEX</td><td>&mdash;</td></tr>
+		</table>
+		<p><em>*</em> Same score for both--if you attack with STR, you'll want to wear heavy armor. If you attack with DEX, you'll want to wear light armor. Armsmen get the ability to use STR or DEX for all weapons later on, so it's really about what armor you want to wear.</p>
+		<p><em>**</em> If you want to use Unarmored Defense, you'll need both. If you're happy with medium armor, you can stop at +2 DEX. You'll benefit a lot from high CON, so it's not recommended to dump it.</p>
+	</div>
 
 	<p>Also of note is that your character's decision-making skills are <b>NOT</b> governed by any ability score. Those are entirely up to you. You don't have to do stupid, reckless things because you have low WIS or INT. Such a character might have bad information (faulty perception) or not know the facts (lack of knowledge), but if an action wouldn't be fun for the rest of the party (insulting the king to his face knowing it will get you thrown into jail, touching the obviously-marked "end of the world" button), don't feel like your ability scores are compelling you to do it anyway.</p>
 

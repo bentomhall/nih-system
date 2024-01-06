@@ -7,98 +7,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="../main.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="monsters.css">
+	<script type="module" src="../components/custom-nav.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-		<div class="container-fluid">
-			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../index.html">Changelog</a></div>
-			<div class="nav-item"><a class="navbar-brand" href="../introduction.html">Introduction</a></div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
-				<div class="dropdown-menu">
-					<a href="../core-system.html" class="dropdown-item">Core Rules</a>
-					<a href="../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
-					<a href="../equipment.html" class="dropdown-item">Equipment and Expenses</a>
-					<a href="../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
-				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
-					<a href="../character-creation.html" class="dropdown-item">Character Creation Basics</a>
-					<a href="../lineages.html" class="dropdown-item">Lineages</a>
-					<a href="../cultures.html" class="dropdown-item">Cultures</a>
-					<a href="../backgrounds.html" class="dropdown-item">Backgrounds</a>
-					<a href="../classes.html" class="dropdown-item">Classes</a>
-					<div class="dropdown-divider"></div>
-					<a href="../classes/arcanist.html" class="dropdown-item">Arcanist</a>
-					<a href="../classes/armsman.html" class="dropdown-item">Armsman</a>
-					<a href="../classes/brawler.html" class="dropdown-item">Brawler</a>
-					<a href="../classes/oathbound.html" class="dropdown-item">Oathbound</a>
-					<a href="../classes/priest.html" class="dropdown-item">Priest</a>
-					<a href="../classes/ranger.html" class="dropdown-item">Ranger</a>
-					<a href="../classes/rogue.html" class="dropdown-item">Rogue</a>
-					<a href="../classes/shaman.html" class="dropdown-item">Shaman</a>
-					<a href="../classes/spellblade.html" class="dropdown-item">Spellblade</a>
-					<a href="../classes/warden.html" class="dropdown-item">Warden</a>
-					<a href="../classes/warlock.html" class="dropdown-item">Warlock</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
-				<div class="dropdown-menu" aria-labelledby="spellsMenu">
-					<a href="../spells.html" class="dropdown-item">Spellcasting Rules</a>
-					<a href="../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
-					<a href="../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
-					<a href="../spells/incantations.html" class="dropdown-item">Incantations</a>
-					<a href="../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
-				<div class="dropdown-menu" aria-labelledby="itemsMenu">
-					<a href="../items.html" class="dropdown-item">Rules and Crafting</a>
-					<a href="../items/armor.html" class="dropdown-item">Armor and Clothing</a>
-					<a href="../items/potions.html" class="dropdown-item">Consumables</a>
-					<a href="../items/rings.html" class="dropdown-item">Rings</a>
-					<a href="../items/wands.html" class="dropdown-item">Rods and Wands</a>
-					<a href="../items/weapons.html" class="dropdown-item">Weapons</a>
-					<a href="../items/misc.html" class="dropdown-item">Wondrous Items</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
-				<div class="dropdown-menu" aria-labelledby="monstersMenu">
-					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
-					<a href="aberrations.html" class="dropdown-item">Aberrations</a>
-					<a href="beasts.html" class="dropdown-item">Beasts</a>
-					<a href="celestials.html" class="dropdown-item">Celestials</a>
-					<a href="constructs.html" class="dropdown-item">Constructs</a>
-					<a href="dragons.html" class="dropdown-item">Dragons</a>
-					<a href="elementals.html" class="dropdown-item">Elementals</a>
-					<a href="fey.html" class="dropdown-item">Fey</a>
-					<a href="fiends.html" class="dropdown-item">Fiends</a>
-					<a href="giants.html" class="dropdown-item">Giants</a>
-					<a href="humanoids.html" class="dropdown-item">Humaniods</a>
-					<a href="monstrosities.html" class="dropdown-item">Monstrosities</a>
-					<a href="oozes.html" class="dropdown-item">Oozes</a>
-					<a href="plants.html" class="dropdown-item">Plants</a>
-					<a href="undead.html" class="dropdown-item">Undead</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
-				<div class="dropdown-menu">
-					<a href="../conditions.html" class="dropdown-item">Conditions</a>
-					<a href="../examples.html" class="dropdown-item">Examples</a>
-					<a href="../world.html" class="dropdown-item">The World of Quartus</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<custom-nav page="monstrosities"></custom-nav>
 	<div class="container">
 		<h2 class="section">Monstrosities</h2>
 		<p>Monstrosities are the catch-all category for things that aren't shaped roughly like a person. Does it speak but look like a <a href=beasts.html>beast</a>? Does it have magical abilities but not fit into another category? Was it created by a mage in a long-ago day but now breed normally? Then it's probably a monstrosity.</p>
+		<h2>Ankheg</h2>
+		<p>The Ankheg, aka tunnel worm, aka rancher's bane, is a dangerous pest common to the temperate plains regions of Quartus. They create large burrows and holes that horses and cattle break their legs in...when the ankheg aren't rising up and devouring said horses and cattle. They have an acid spit that can dissolve flesh and bone and their main mandibles grab and tear. Their plates are hard--various metal-scarce folks such as the Hevonen (aka Horse Clans) of the Lupaus Plain have been known to fashion them into breastplates. A talented leatherworker might be able to fashion an item that resists acid damage out of them.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> For anyone who grew up in or around the plains, ankheg and their nature are common knowledge.</p>
+		<p><b>Habitat:</b> Ankheg are mostly found on temperate plains. They come in swarms of 2d4-1.</p>
+		<p><b>Tactics:</b> Ankheg are ambush predators, preferring to stay burrowed until they detect edible creatures close by, and then rising to attack. They spit acid and then move in for the kill.</p>
 		<div class="monster">
 			<h3 class="monster-name">Ankheg</h3>
 			<div class="monster-summary">
@@ -109,6 +30,7 @@
 					<p><b>Senses:</b> darkvision 60 ft., tremorsense 60 ft., passive Perception 11</p>
 					<p><b>Languages:</b> —</p>
 					<p><b>Ratings:</b> 2:1</p>
+					<p><b>Damage Resistances:</b> acid</p>
 				</div>
 			</div>
 			<h3>Actions</h3>
@@ -117,6 +39,12 @@
 				<p>The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 12 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</p>
 			</div>
 		</div>
+		<h2>Basilisk</h2>
+		<p>The basilisk, with its six legs, four eyes (in pairs on each side of the elongated, crocodilian snout), and petrifying gaze is a feared predator. Thankfully it is quite unintelligent and can be tricked by shiny objects.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> The basilisk is not common outside areas such as the Bloodthirst Wildlands and the Great Eastern Dustlands, but its fame has spread. Most characters recognize them immediately, but the secrets to its gaze (including exact range) require a scholarly background, a ranger's lifestyle, or a successfully Intelligence (Nature) check.</p>
+		<p><b>Habitat:</b> Basilisks make dens in caves near water, usually in ravines and hill country. A den of basilisks is often a mated pair with possibly some young at certain times of year.</p>
+		<p><b>Tactics:</b> Basilisks try to get close enough to petrify their foes. Other than that, they tend to be straightforward predators. Their lack of speed means they tend to lie in wait until foes are close and then pounce.</p>
 		<div class="monster">
 			<h3 class="monster-name">Basilisk</h3>
 			<div class="monster-summary">
@@ -132,13 +60,19 @@
 				</div>
 			</div>
 			<div class="monster-action"><p><b>Petrifying Gaze.</b></p>
-				<p>If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the <a href="../spells/incantations.html#restoration">restoration</a> incantation (greater only) or other magic.</p>
-				<p>A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.</p>
+				<p>If a creature other than the basilisk's mate starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the <a href="../spells/incantations.html#restoration">restoration</a> incantation (greater only) or other magic.</p>
+				<p>A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn and treats it as an unseen target (disadvantage to hit with attacks, and the basilisk has advantage to hit the creature), when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.</p>
 				<p>If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.</p>
 			</div>
 			<h3>Actions</h3>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 3 piercing plus 2d6 acid.</p>
 		</div>
+		<h2>Behir</h2>
+		<p>Said to have been created by titans during the First Age as hunting partners against the Wyrm during their wars, a small population of them has survived in the wild. Intensely anti-social and imbued with a hatred of everything draconic, they lair individually and despoil livestock and prey on all sorts of creatures. While they pretend to be anti-dragon, they do also succumb to some of the same hoarding instincts and can sometimes be bribed to allow passage, especially if you claim to be hunting dragons.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Obscure. No one who has not studied them in particular knows anything about them, and even students of dragon and titan legends must succeed on an Intelligence (History) check.</p>
+		<p><b>Habitat:</b> Behir are only found in the wastelands of the northern Dragonreach. When encountered, they are nearly always alone. They lair in twisting caverns high enough for them to hide above enemies.</p>
+		<p><b>Tactics:</b> The behir use their climbing speed to gain the advantage, often blasting with their lightning breath before descending to do battle. They attempt to swallow foes where possible and then retreat, picking off the enemy with hit and run attacks. They will generally prioritize anyone speaking Draconic or who looks related to dragons (including dragonborn).</p>
 		<div class="monster">
 			<h3 class="monster-name">Behir</h3>
 			<div class="monster-summary">
@@ -167,13 +101,47 @@
 				<p>If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.</p>
 			</div>
 		</div>
-		
+		<h2>Blink Dogs</h2>
+		<p>These are dogs, infused with Shadow energy. Named for its ability to teleport short distances. Shy and evasive, but loyal if befriended. Human-level intelligence.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare, but not unknown.</p>
+		<p><b>Habitat:</b> Kami-heavy forested areas. Sometimes they will work with ihmisi or orc groups.</p>
+		<p><b>Tactics:</b> Blink dogs will only attack if they or their allies are threatened. Otherwise, they'll teleport away from danger where possible.</p>
+		<div class="monster">
+			<h3 class="monster-name">Blink Dog</h3>
+			<div class="monster-summary">
+				<p><em>Medium monstrosity</em></p>
+				<div class="monster-basics"><div>13 AC</div><div>22 (4d8 + 4) HP</div><div>Speed: 40 ft.</div></div>
+				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+1</div><div>+3</div><div>+1</div><div>+0</div><div>+1</div><div>+0</div></div>
+				<div class="monster-details">
+					<p><b>Senses:</b> passive Perception 13</p>
+					<p><b>Languages:</b> Understands Sylvan but can't speak it</p>
+					<p><b>Ratings:</b> 1/4:1/2</p>
+				</div>
+			</div>
+			<div class="monster-action"><p><b>Keen Hearing and Smell.</b></p>
+				<p>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+			</div>
+			<h3>Actions</h3>
+			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+3 to hit, range 5 ft. </em> <em>Hit:</em> 1d6 + 1 piercing damage.</p>
+			<div class="monster-action"><p><b>Blink.</b></p>
+				<p><p>The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.</p></p>
+			</div>
+		</div>
+		<h2>Chimera</h2>
+		<p>A three-headed combination of an enlarged, bat-winged lion with a dragon's head and a goat's head on either shoulder (mounted on snake-like necks), the chimera is both puzzling and extremely dangerous. Known for their ravenous appetites and extremely stupid behavior, chimeras are a scourge whenever they appear. Especially since the dragon head can breathe a cone of fire.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Chimeras are widely-known but rare, mostly because they're hunted down whenever they show up lest they eat everything in sight. No checks are necessary to identify them.</p>
+		<p><b>Habitat:</b> Chimeras keep to the wilds. Most of the known populations live in the mountains between the Giant-Spine range and the Ladyfrost range near Shinevog, although the prime nests aren't known.</p>
+		<p><b>Tactics:</b> Chimeras are stupid. They prefer to charge in, breathe fire, and start attacking whoever irritates them most. If injured, they'll usually try to flee with their superior flight speed. They especially like eating horses and cattle, preferentially attacking them over people (who tend to have sharp things).</p>
 		<div class="monster">
 			<h3 class="monster-name">Chimera</h3>
 			<div class="monster-summary">
 				<p><em>Large monstrosity</em></p>
 				<div class="monster-basics"><div>14 (natural armor) AC</div><div>114 (12d10 + 48) HP</div><div>Speed: 30 ft., fly 60 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>+0</div><div>+4</div><div>-4</div><div>+2</div><div>+0</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>+4</div><div>+0</div><div>+4</div><div>-4</div><div>+2</div><div>+0</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 18</p>
 					<p><b>Languages:</b> understands Draconic but can't speak</p>
@@ -191,12 +159,20 @@
 				<p>The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.</p>
 			</div>
 		</div>
+		<h2>Chuul</h2>
+		<p>The chuul were once lobsters, now twisted by biological magics into servants of the comiedar and the mkhulu. Some free populations exist where their masters were destroyed or abandoned them. Standing on four legs with an upright posture, like a lobster-human hybrid, they use the long tentacles coming from their mouth region and their claws to carry prey back for consumption or experimentation by their masters. Their tentacles carry a paralytic venom. They are also quite sensitive to active magic and use it to home in on interesting prey.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare. These are unknown by any but the most dedicated scholars of the sea-tyrants.</p>
+		<p><b>Habitat:</b> Found underwater near mkhulu settlements and occasionally on land in flooded or marshy areas. They rarely travel far from the sea. They are found in company of mkhulu, comeidar, or their servants, and often in groups of 2-5. Free nests tend to have half a dozen or so adults.</p>
+		<p><b>Tactics:</b> When serving sea tyrants, they are tasked to bring back certain individuals, usually spell-casters, and will do so relentlessly. When hunting for food, they take easy prey and drag them back underwater to drown and be eaten.</p>
 		<div class="monster">
 			<h3 class="monster-name">Chuul</h3>
 			<div class="monster-summary">
 				<p><em>Large monstrosity</em></p>
 				<div class="monster-basics"><div>16 (natural armor) AC</div><div>93 (11d10 + 33) HP</div><div>Speed: 30 ft., swim 30 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>+0</div><div>+3</div><div>-3</div><div>+0</div><div>-3</div></div>
+				<div class="monster-stats">
+					<div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div>
+					<div>+4</div><div>+0</div><div>+3</div><div>-3</div><div>+0</div><div>-3</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 14</p>
 					<p><b>Languages:</b> understands Deep Speech but can't speak</p>
@@ -220,6 +196,12 @@
 				<p>One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is stunned. If the roll is 8 or lower, the target is paralyzed instead. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			</div>
 		</div>
+		<h2>Cloaker</h2>
+		<p>So named because of its resemblance to a large cloak as it flutters down from the ceiling of a cave onto someone's head, the cloaker is a monstrous creature found underground. Warped by ancient wild magic, it is intelligent enough to communicate via telepathic image projection, even though it cannot speak. Feared by the goroesi of Moon's Vengeance as "the moaning death in the dark", cloakers are virtually unknown outside that blasted region.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Virtually unknown. Their existence is not found in any lore of the main parts of the Noefran continent.</p>
+		<p><b>Habitat:</b> Tunnels and caves of Moon's Vengeance and very occasionally the Inner Barrier Range. Found alone or using things like grick as stalking horses.</p>
+		<p><b>Tactics:</b> Cloakers hang from the ceiling, virtually invisible while motionless. They drop onto the heads of their targets and latch on, gnawing at them. It uses its tail against that creature or against others nearby, and uses Moan and Phantasms to protect itself. Cloakers can be reasoned with, mostly by bribing them with easier targets. If seriously threatened, they will detach and flee. They often save Moan to allow an easier escape.</p>
 		<div class="monster">
 			<h3 class="monster-name">Cloaker</h3>
 			<div class="monster-summary">
@@ -228,7 +210,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+3</div><div>+2</div><div>+1</div><div>+1</div><div>+1</div><div>+2</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 11</p>
-					<p><b>Languages:</b> Deep Speech, Undercommon</p>
+					<p><b>Languages:</b> image-based telepathy (60 ft) </p>
 					<p><b>Ratings:</b> 6:8</p>
 				</div>
 			</div>
@@ -248,7 +230,7 @@
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 3 piercing, and if the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 13 Strength check.</p>
 			<p class="monster-attack"><b>Tail.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 10 ft.</em> <em>Hit:</em> 1d8 + 3 slashing </p>
 			<div class="monster-action"><p><b>Moan.</b></p>
-				<p>Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become shaken until the end of the cloaker's next turn. If the result is 8 or lower, they are frightened instead. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours</p>
+				<p>Each creature other than a cloaker within 60 feet of the cloaker that can hear its moan must succeed on a DC 13 Wisdom saving throw or become shaken until the end of the cloaker's next turn. If the result is 8 or lower, they are frightened instead. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours</p>
 			</div>
 			<div class="monster-action"><p><b>Phantasms (Recharges after a Short or Long Rest).</b></p>
 				<p>The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.</p>
@@ -256,6 +238,12 @@
 				<p>A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.</p>
 			</div>
 		</div>
+		<h2>Cockatrice</h2>
+		<p>Chicken-like monsters with a petrifying bite. Why they exist, and how they feed on stone (without a basilisk's acidic saliva) is quite unknown. Most scholars blame the Twisted or one of his followers for coming up with this one--it's too bizarre even to blame on mages or the aelvar, the two most common suspects whenever a weird creature is discovered.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Cockatrice nests have been discovered throughout Noefra. They are fairly widely-known. Some believe that they are spontaneous mutations of chickens, but there is wide disagreement.</p>
+		<p><b>Habitat:</b> Anywhere chickens can be found. Usually found in flocks of 5-10.</p>
+		<p><b>Tactics:</b> Swarm and peck. Flee if damaged or panicked. That's about all they can manage. They're not particularly bright (like the chickens they resemble).</p>
 		<div class="monster">
 			<h3 class="monster-name">Cockatrice</h3>
 			<div class="monster-summary">
@@ -271,6 +259,12 @@
 			<h3>Actions</h3>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+3 to hit, range 5 ft.</em> <em>Hit:</em> 1d4 + 1 piercing, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours. </p>
 		</div>
+		<h2>Darkmantle</h2>
+		<p>This creature is akin to a smaller, stupider, less-dangerous cloaker. They fall from the ceiling onto people and attempt to crush them. Unlike the cloaker, they cannot talk or be reasoned with.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Virtually unknown outside Moon's Vengeance. Some fragmentary reports from the Uulani Confederacy say that they have reached at least that far north.</p>
+		<p><b>Habitat:</b> Underground tunnels and caves. Usually found in clusters and packs, often working with ropers or other ambush predators.</p>
+		<p><b>Tactics:</b> Darkmantles are ambush predators, preferring to drop from hiding onto someone and crush the life out of them. They use their Darkness Aura ability to cover their escape if damaged or to blind their foes.</p>
 		<div class="monster">
 			<h3 class="monster-name">Darkmantle</h3>
 			<div class="monster-summary">
@@ -316,6 +310,12 @@
 			</div>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 piercing. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0. </p>
 		</div>
+		<h2>Doppelganger</h2>
+		<p></p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rumors of dopplegangers abound, but most of them are false. An Intelligence (Arcana) check gives more information.</p>
+		<p><b>Habitat:</b> Dopplegangers are native to the plane of Clay, one of the Earth-aspected elemental planes, where they form a normal part of society. Elsewhere, they tend to be hired as spies, actors, prostitutes, and assassins. Only rarely are they found in groups with other doppelgangers, but they frequently are in cahoots with other mortals.</p>
+		<p><b>Tactics:</b> Dopplegangers aren't keen on combat. They prefer to infiltrate and escape. When tasked to assassinate targets, they seek to gain surprise in the hope that their Surprise Attack will finish the job. If not, they tend to attempt to flee.</p>
 		<div class="monster">
 			<h3 class="monster-name">Doppelganger</h3>
 			<div class="monster-summary">
@@ -349,46 +349,12 @@
 				<p>The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.</p>
 			</div>
 		</div>
-		
-		<div class="monster">
-			<h3 class="monster-name">Drider</h3>
-			<div class="monster-summary">
-				<p><em>Large monstrosity</em></p>
-				<div class="monster-basics"><div>18 (natural armor) AC</div><div>151 (16d10 + 64) HP</div><div>Speed: 30 ft., climb 30 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+3</div><div>+3</div><div>+4</div><div>+1</div><div>+2</div><div>+1</div></div>
-				<div class="monster-details">
-					<p><b>Senses:</b> darkvision 120 ft., passive Perception 15</p>
-					<p><b>Languages:</b> Abyssal, one other</p>
-					<p><b>Ratings:</b> 9:9</p>
-				</div>
-			</div>
-			<div class="monster-action"><p><b>Fey Ancestry.</b></p>
-				<p>The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.</p>
-			</div>
-			<div class="monster-action"><p><b>Innate Spellcasting.</b></p>
-				<p>The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:</p>
-				<ul>
-					<li> <b>Concentration</b> <a href="../spells/allspells.html#faerie-fire">faerie fire</a> (1x), <a href="../spells/allspells.html#darkness">darkness</a> (1x)</li>
-					<li> <b>Other</b> <a href="../spells/allspells.html#dancing-lights">dancing lights</a></li>
-				</ul>
-			</div>
-			<div class="monster-action"><p><b>Spider Climb.</b></p>
-				<p>The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
-			</div>
-			<div class="monster-action"><p><b>Sunlight Sensitivity.</b></p>
-				<p>While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
-			</div>
-			<div class="monster-action"><p><b>Web Walker.</b></p>
-				<p>The drider ignores movement restrictions caused by webbing.</p>
-			</div>
-			<h3>Actions</h3>
-			<div class="monster-action"><p><b>Multiattack.</b></p>
-				<p>The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.</p>
-			</div>
-			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d8 + 3 piercing plus 9 (2d8) poison damage.</p>
-			<p class="monster-attack"><b>Longsword.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d10 + 3 slashing plus 1d8 poison damage.</p>
-			<p class="monster-attack"><b>Longbow.</b> <em>Melee Weapon Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d8 + 3 piercing plus 4 (1d8) poison damage.</p>
-		</div>
+		<h2>Ettercap</h2>
+		<p>The ettercap is a horrifying amalgam of humanoid and spider traits. Originally created by acolytes of the Twisted, a small breeding population exists in the Bloodthirst Wildlands among other remote areas. While they look (mostly) humanoid, they are not Spoken and operate on animal instinct only.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Ettercap are known only to the residents of their native areas. A few depictions exist in rare books, but they are filled with guesses and interpolations.</p>
+		<p><b>Habitat:</b> Ettercap live in corrupted forests and caves, usually in and around nests of Giant Spiders or other such spider types. Usually one or two ettercap and a large number of spiders.</p>
+		<p><b>Tactics:</b> Ettercap act like spiders, attempting to surprise from above and use their web to entangle enemies. They rarely finish off their foes, preferring to incapacitate them and slowly drain them of life over days or weeks of feeding.</p>
 		<div class="monster">
 			<h3 class="monster-name">Ettercap</h3>
 			<div class="monster-summary">
@@ -418,6 +384,12 @@
 			<p class="monster-attack"><b>Claws.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 2d4 + 2 slashing damage </p>
 			<p class="monster-attack"><b>Web (Recharge 5-6).</b> <em>Ranged Weapon Attack.</em> <em>+4 to hit, range 30/60 ft.</em> <em>Hit:</em> 1d6 poison. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage. </p>
 		</div>
+		<h2>Grick</h2>
+		<p>The grick is an ugly worm-like segmented creature about 6 feet long when fully grown. It has four fleshy, octopus-like tentacles surrounding a hard beak, but no visible eyes (although it is not blind). Its coloration blends into rocky terrain. Most theories suggest that they were spawned by demonic meddling, probably that of the Twisted or his acolytes. However, they are natural creatures at this point.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare. Only fragmentary reports of grick exist outside of Moon's Vengeance, although some adventurers reported that a colony of hive-minded grick and other creatures live under part of Godsfall. Intelligence (Nature) gives information.</p>
+		<p><b>Habitat:</b> Grick live underground in areas heavy with rampant magic and demonic corruption, although they themselves are not demonic. They tend to come in nests of 2-10 adults.<p>
+		<p><b>Tactics:</b>Grick are nearly mindless and attack the nearest target. They will run away if injured, as they are mostly predatory beasts. Some other monstrosities have been known to tame them as attack animals.</p>
 		<div class="monster">
 			<h3 class="monster-name">Grick</h3>
 			<div class="monster-summary">
@@ -440,6 +412,12 @@
 			<p class="monster-attack"><b>Tentacles.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 2 slashing. </p>
 			<p class="monster-attack"><b>Beak.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 piercing. </p>
 		</div>
+		<h2>Griffon</h2>
+		<p>The noble-appearing griffon, with its eagle's forequarters and lion's hind-quarters, is known all over Noefra. The dwarves of the southern Jungle of Fangs tame them as mounts, as do various other groups. Wild griffons prey on herd animals, preferring unattended cows and horses. Kits can be tamed and will generally imprint on a single rider, although expert trainers can transfer the bond to some degree. Unlike most non-standard mounts, their bone structure accommodates a saddle fairly easily.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Common. It's rare for someone not to recognize them.</p>
+		<p><b>Habitat:</b> Mountains and hills all over Quartus, especially near open rolling plains. Usually found as a mated pair for adults, sometimes with kits.<p>
+		<p><b>Tactics:</b> Griffons are hit and run predators, preferring to strike from the sky and drag off their foes. They will only fight to the death when protecting their nests. They do recognize bows and crossbows and will avoid those where possible.</p>
 		<div class="monster">
 			<h3 class="monster-name">Griffon</h3>
 			<div class="monster-summary">
@@ -464,6 +442,12 @@
 			<p class="monster-attack"><b>Beak.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d8 + 3 piercing. </p>
 			<p class="monster-attack"><b>Claws.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 3 slashing. </p>
 		</div>
+		<h2>Harpy</h2>
+		<p>Harpies are a rare species of monstrosity known to inhabit many of the waste and fringe lands of Noefra and other continents. They are roughly a cross between a goblinoid torso, arms/hands (although clawed) and upper legs and head and a vulture's wings and lower legs/claws. The males of the species, called bloodhawks, are rarer than the females and have raptorial beaks as well; the females have fully goblinoid heads but sharpened carnivore teeth. Both sexes have aggressively exaggerated secondary sexual characteristics and external genitalia. They are obligate carnivores, although like dogs they can eat small amounts of grains and other vegetable matter. They are often territorial, cowardly, and aggressive, with bad tempers. Some exceptions exist.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon, but well-known. Their song is widely known among adventurers.</p>
+		<p><b>Habitat:</b> Hills and mountains, especially near the Bloodthirst Wildlands and the Eastern Dustlands. Usually found in groups of 2 or more.<p>
+		<p><b>Tactics:</b> Female harpies will try to lure people and animals close...or off cliffs with their song. If the song fails or the enemies look strong, the harpies will generally try to break off contact unless protecting their nests. Bloodhawks are more physically aggressive and will attack those that aren't charmed. Harpies have been known to use creatures like basilisks as hazards, luring people into range of the basilisk and then sharing the spoils.</p>
 		<div class="monster">
 			<h3 class="monster-name">Harpy</h3>
 			<div class="monster-summary">
@@ -489,6 +473,8 @@
 				<p>While charmed by the harpy, a target cannot take any actions and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.</p>
 				<p>A target that successfully saves is immune to this harpy's song for the next 24 hours.</p>
 			</div>
+			<h3>Variant</h3>
+			<p class="monster-action"><b>Bloodhawk</b> The male harpies, called bloodhawks, lack the Luring Song ability but do have a beak attack that deals 2d6 + 2 piercing damage that they can use as part of their multiattack. They also get Flyby Attack (they do not provoke opportunity attacks by movement when flying).</p>
 		</div>
 		<div class="monster">
 			<h3 class="monster-name">Hippogriff</h3>
@@ -512,6 +498,12 @@
 			<p class="monster-attack"><b>Beak.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d10 + 3 piercing. </p>
 			<p class="monster-attack"><b>Claws.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 2d6 + 3 slashing. </p>
 		</div>
+		<h2>Hydra</h2>
+		<p>The multi-headed hydra is legendary...but sadly not only a legend. With their multiple heads, regeneration (including regrowing heads), and extreme hunger (many mouths to feed, even if it's all the same stomach), they're a serious danger whenever encountered. In some elementally-charged areas there have been reports of hydras capable of breathing cold, fire, or poison. Thankfully, hydras are not smart like dragons.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare, but well-attested. Variants are rumored but not known. Intelligence (Nature) to determine if it's a variant.</p>
+		<p><b>Habitat:</b> Swamps, bogs, and marshes. Their large bodies need flotation. Rarely found in company of other monsters of size Medium or larger, since it tends to treat Small creatures as not worth eating.<p>
+		<p><b>Tactics:</b> No tactics. Charge and eat. Remember to use its multiple reactions and extended reach.</p>
 		<div class="monster">
 			<h3 class="monster-name">Hydra</h3>
 			<div class="monster-summary">
@@ -545,15 +537,21 @@
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+7 to hit, range 10 ft.</em> <em>Hit:</em> 1d10 + 5 piercing damage. </p>
 			<h3>Variants</h3>
 			<div class="monster-action"><p><b>Cryohydra.</b></p>
-				<p>Cryohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 3.</p>
+				<p>Cryohydras gain immunity to cold and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 3.</p>
 			</div>
 			<div class="monster-action"><p><b>Pyrohydra.</b></p>
-				<p>Pyrohydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.</p>
+				<p>Pyrohydras gain immunity to fire and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.</p>
 			</div>
 			<div class="monster-action"><p><b>Venom Hydra.</b></p>
-				<p>Venom Hydras gain a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breath a line of poison 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 poison damage per head on a failure or half as much on a success. This increases the OR by 3.</p>
+				<p>Venom Hydras gain immunity to poison a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of poison 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 poison damage per head on a failure or half as much on a success. This increases the OR by 3.</p>
 			</div>
 		</div>
+		<h2>Land Shark</h2>
+		<p>The land shark, also known as a bulette or "that abyss-spawned armored <em>thing</em>" are a nasty danger in the Lupaus Plains and most of the hill lands throughout Noefra. Thankfully they've been hunted out of more settled areas by adventurers. Like an overgrown basilisk, they have six legs and a vaguely reptilian look. They lack the petrifying stare, but are covered in tough chitinous armor plates like an overgrown armadillo. They have a heavy toothed beak, which is their primary offense. With their burrowing capabilities and tough armor, they lurk underground and try to surprise animals...and people. What is less obvious about them is that they also have prodigiously-strong legs, letting them leap onto foes.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare in more settled lands, but known in the outlying areas.</p>
+		<p><b>Habitat:</b> Hills and plains away from settlements, mostly. Rarely in groups of more than 2 (a mated pair).</p>
+		<p><b>Tactics:</b> Land sharks have one basic strategy--lurk and pounce. They try to stay underground until their tremorsense picks up edible targets, then they surface and pounce. If they're not in melee, they'll try to use Deadly Leap to get on top of someone. They primarily attack out of hunger and will drag bodies underground for later eating.</p>
 		<div class="monster">
 			<h3 class="monster-name">Land Shark</h3>
 			<div class="monster-summary">
@@ -575,7 +573,12 @@
 				<p>If the land shark jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 14 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the land shark's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the land shark's space.</p>
 			</div>
 		</div>
-		
+		<h2>Manticore</h2>
+		<p>Another "what insane person thought that would be a good idea" creation, variously attributed to acolytes of the Twisted and aelven bio-mages, the manticore is like a winged lion with a number of fast-growing, detatchable spines on its tail. It can throw these spines to great effect. Manticores can speak and can often be bought off with bribes of food (which they prefer to be in the form of fresh meat). Like giant cats, however, they usually have a perverse sense of humor and an insatiable curiosity.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon. Intelligence (Nature) is usually the appropriate check.</p>
+		<p><b>Habitat:</b> Found in mountainous areas and other places where game is plentiful and they can circle and pounce.</p>
+		<p><b>Tactics:</b> They will generally try to soften up their prey from a distance with their tail spikes, closing after it is wounded or if the enemy starts fighting back with ranged attacks. They recognize and particularly dislike archers and mages and will chase them around the map. Like cats, they like to play with their food.</p>
 		<div class="monster">
 			<h3 class="monster-name">Manticore</h3>
 			<div class="monster-summary">
@@ -599,6 +602,12 @@
 			<p class="monster-attack"><b>Claw.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 3 slashing. </p>
 			<p class="monster-attack"><b>Tail Spike.</b> <em>Ranged Weapon Attack.</em> <em>+5 to hit, range 100/200 ft.</em> <em>Hit:</em> 1d8 + 3 piercing. </p>
 		</div>
+		<h2>Medusa</h2>
+		<p>Medusae are, thankfully, rare. The result of particular curses, usually demonic in origin, these women have snakes for hair and the uncontrollable power to petrify any creature that meets their eyes. Thus, those that interact with others wear heavy veils or blindfolds, relying on their hearing for perception. Note that the curse they are subject to is not removable by <a href="../spells/allspells.html#remove-curse">remove curse</a> or other such abilities--it's become part of them. The curse is often family-linked, affecting the women of some bloodlines. While the medusa presented here is not a spell-caster, many of them learn illusion magic, mostly to hide their curse.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Extremely rare. Intelligence (Arcana) is the appropriate check to learn more about their cursed nature.</p>
+		<p><b>Habitat:</b> Often jungles, but in principle anywhere. Rarely where there are large numbers of people.</p>
+		<p><b>Tactics:</b> Medusae try to stay at range and petrify their foes when forced into combat (or acting out of malice). They try to avoid polished surfaces, although oddly natural reflective surfaces do not trigger their self-petrification.</p>
 		<div class="monster">
 			<h3 class="monster-name">Medusa</h3>
 			<div class="monster-summary">
@@ -624,6 +633,12 @@
 			<p class="monster-attack"><b>Shortsword.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d6 + 2 piercing. </p>
 			<p class="monster-attack"><b>Longbow.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d8 + 2 piercing plus 7 (2d6) poison damage.</p>
 		</div>
+		<h2>Mimic</h2>
+		<p>Why isn't the mimic an ooze? Who knows. Where did they come from? Someone with a sick sense of humor. Probably the Twisted. A corruption of the naturally-protean entities from the planes of mud and clay, these are archetypal dungeon dangers. Taking the form of a medium object that people will naturally interact with such as a door, chest, table, or other such object, they adhere to whoever touches them and then use their toothed maw to devour their prey. Some have speculated that mimics might be able to be trained, but few are foolhardy enough to try. Others have spread rumors of gigantic mimics capable of taking on the shape of a room or even an entire building...let us hope those are not true.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon. Intelligence (Nature or Arcana) is the appropriate check.</p>
+		<p><b>Habitat:</b> Places where unlucky creatures, especially humanoids, are likely to come. But that aren't frequented. Rarely-used cellars, ruins, underground vaults and tunnels, etc.</p>
+		<p><b>Tactics:</b> They stay motionless until something touches them, then strike. They do not react when attacked from range in their object form, as they've learned that adventurers get paranoid fast.</p>
 		<div class="monster">
 			<h3 class="monster-name">Mimic</h3>
 			<div class="monster-summary">
@@ -655,6 +670,12 @@
 			<p class="monster-attack"><b>Pseudopod.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d8 + 2 bludgeoning and the target is subjected to its Adhesive trait. </p>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+4 to hit, range 5 ft.</em> <em>Hit:</em> 1d8 + 2 piercing plus 4 (1d8) acid damage.</p>
 		</div>
+		<h2>Nagas</h2>
+		<p>The guardian and spirit nagas represent two snake-like creatures, originally created to act as protectors and nemesis figures, respectively. They represent the polar opposites of the astral--radiant and beneficent and necrotic and destructive. The few naga known to exist are mainly found in the Jungle of Fangs and Bloodthirst Wildlands, where they act as living deific figures to many of the ophidian tribes.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Legendary.</p>
+		<p><b>Habitat:</b>Jungle ruins, especially the Jungle of Fangs, Bloodthirst Wildlands, and Great Rift.</p>
+		<p><b>Tactics:</b>Both types prefer to cast spells until forced into melee, at which point they lay to with their bite. Guardian naga will act supportively of their allies, while spirit naga are more directly offensive. </p>
 		<div class="monster">
 			<h3 class="monster-name">Guardian Naga</h3>
 			<div class="monster-summary">
@@ -663,7 +684,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>+4 (+8)</div><div>+3 (+7)</div><div>+3 (+7)</div><div>+4 (+8)</div><div>+4 (+8)</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 14</p>
-					<p><b>Languages:</b> Celestial, Common</p>
+					<p><b>Languages:</b> Iath Neidr, Common</p>
 					<p><b>Ratings:</b> 8:8</p>
 					<p><b>Damage Immunities</b> poison</p>
 					<p><b>Condition Immunities</b> charmed, poisoned</p>
@@ -690,7 +711,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>+3</div><div>+2</div><div>+3</div><div>+2</div><div>+3</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 12</p>
-					<p><b>Languages:</b> Abyssal, Common</p>
+					<p><b>Languages:</b> Iath Neidr, Common</p>
 					<p><b>Ratings:</b> 8:9</p>
 					<p><b>Damage Immunities</b> poison</p>
 					<p><b>Condition Immunities</b> charmed, poisoned</p>
@@ -708,6 +729,12 @@
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+7 to hit, range 10 ft.</em> <em>Hit:</em> 1d6 + 4 piercing, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one. </p>
 			<p class="monster-attack"><b>Frost Blast.</b> <em>Melee Spell Attack.</em> <em>+6 to hit, range 5 ft.</em> <em>Hit:</em> 2d8+3 cold and the target's speed is reduced by 10 feet until the end of their next turn. </p>
 		</div>
+		<h2>Otyugh</h2>
+		<p>The otyugh, aka refuse gobbler, is a particularly weird monstrosity. With trilateral symmetry (three legs equally spaced around its spherical body and three sucker-lined tentacles placed over the legs, with three eyes on eye stalks) and its habit of dwelling in the most polluted, disgusting environments (such as city sewers, refuse pits, and waste dumps from mining operations), it is considered "aberrant" by many, despite having a normal lifecycle and actually serving to clean up those environments (by feeding on the refuse and breaking it down into harmless byproducts). While their intelligence is not great, they can communicate in simple ways telepathically and often learn to understand a native language. Some larger cities have "hired" groups of otuygh to manage their sewer systems.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon. Intelligence (Nature or Arcana).</p>
+		<p><b>Habitat:</b> Sewers in large cities, polluted bogs, refuse pits. Generally wet environments. Not particularly gregarious, otyugh are found in groups of no more than 3.<p>
+		<p><b>Tactics:</b> Otyugh are rarely aggressive, but will defend themselves against hostile actors.</p>
 		<div class="monster">
 			<h3 class="monster-name">Otyugh</h3>
 			<div class="monster-summary">
@@ -716,7 +743,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+3</div><div>+0</div><div>+4 (+7)</div><div>-2</div><div>+1</div><div>-2</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 120 ft., passive Perception 11</p>
-					<p><b>Languages:</b> Otyugh</p>
+					<p><b>Languages:</b>understands one language of your choice but cannot speak</p>
 					<p><b>Ratings:</b> 6:6</p>
 				</div>
 			</div>
@@ -733,6 +760,12 @@
 				<p>The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 13 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.</p>
 			</div>
 		</div>
+		<h2>Owlbear</h2>
+		<p>The owlbear is the poster child for "an aelven bio-mage did it". And a by-word for why bio-magics are feared and distrusted throughout Quartus, at least by most sane people. A hyper-aggressive creature with the head of a giant owl and feathered, taloned fore-limbs and the body and hind-quarters of a brown bear, these territorial creatures are known and feared throughout the forests and jungles of Noefra. Some attempts at taming them have been made, but all have failed.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b>Uncommon, but well-known.</p>
+		<p><b>Habitat:</b>Forests and temperate jungles, especially the Bloodthirst Wildlands. Thankfully they only tolerate their mates and young, so finding more than 2-3 adults at once is rare.<p>
+		<p><b>Tactics:</b>Owlbears are extremely aggressive and territorial. They kill even if not hungry, and do not stop attacking until the enemy is in shreds. Retreat is rarely an option.</p>
 		<div class="monster">
 			<h3 class="monster-name">Owlbear</h3>
 			<div class="monster-summary">
@@ -755,6 +788,12 @@
 			<p class="monster-attack"><b>Beak.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d10 + 5 piercing damage </p>
 			<p class="monster-attack"><b>Claws.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 2d8 + 5 slashing damage </p>
 		</div>
+		<h2>Phase Spiders</h2>
+		<p>More intelligent and magically-adapted than most giant spiders, the phase spider has been touched by the energies of Shadow. It can shift at will between the Border Shadow and the Mortal plane, using that to ambush its prey. Notable for their grey coloration and "faded" looking markings, which are swirls of red and yellow.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare. Intelligence (Nature or Arcana).</p>
+		<p><b>Habitat:</b> Anywhere giant spiders can be found.<p>
+		<p><b>Tactics:</b> Phase spiders are ambush predators, preferring to jump out of the Border Shadow, poison a target, and then drag them back into Shadow to be taken back to their nests. Phase spiders do not spin webs.</p>
 		<div class="monster">
 			<h3 class="monster-name">Phase Spider</h3>
 			<div class="monster-summary">
@@ -768,7 +807,7 @@
 				</div>
 			</div>
 			<div class="monster-action"><p><b>Ethereal Jaunt.</b></p>
-				<p>As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa.</p>
+				<p>As a bonus action, the spider can magically shift from the Mortal Plane to the Border Shadow, or vice versa. It can take one creature paralyzed by its poison along with it when it does as long as that creature is its size or smaller.</p>
 			</div>
 			<div class="monster-action"><p><b>Spider Climb.</b></p>
 				<p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
@@ -779,6 +818,12 @@
 			<h3>Actions</h3>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+5 to hit, range 5 ft.</em> <em>Hit:</em> 1d10 + 3 piercing, and the target must make a DC 12 Constitution saving throw, taking 13 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. </p>
 		</div>
+		<h2>Purple Worm</h2>
+		<p>A striking amethyst color, the purple worm is a gigantic tunneling worm native to the Plane of Stone, but that regularly finds its way to the Mortal plane (usually as a larva). Adults are generally 10-12 feet in diameter and up to 50 ft long. Nearly mindless and indiscriminately voracious, they feed on various forms of stone...and anything else in their way. They also have an incredibly corrosive acidic venom in a gland in their tail, which has a stinger.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare. Intelligence (Arcana).</p>
+		<p><b>Habitat:</b> Underground or in the Plane of Stone.<p>
+		<p><b>Tactics:</b> None. Purple worms barely recognize enemies, there is only food. If attacked, they respond by trying to consume anything in their way; anything not directly ahead of them gets stung by the stinger.</p>
 		<div class="monster">
 			<h3 class="monster-name">Purple Worm</h3>
 			<div class="monster-summary">
@@ -799,8 +844,14 @@
 				<p>The worm makes two attacks: one with its bite and one with its stinger.</p>
 			</div>
 			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+9 to hit, range 10 ft.</em> <em>Hit:</em> 4d8 + 9 piercing. If the target is a Large or smaller creature, it must succeed on a DC 16 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone. </p>
-			<p class="monster-attack"><b>Tail Stinger.</b> <em>Melee Weapon Attack.</em> <em>+9 to hit, range 10 ft.</em> <em>Hit:</em> 4d6 + 9 piercing, and the target must make a DC 16 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one. </p>
+			<p class="monster-attack"><b>Tail Stinger.</b> <em>Melee Weapon Attack.</em> <em>+9 to hit, range 10 ft.</em> <em>Hit:</em> 4d6 + 9 piercing, and the target must make a DC 16 Constitution saving throw, taking 42 (12d6) acid damage on a failed save, or half as much damage on a successful one. </p>
 		</div>
+		<h2>Remorhaz</h2>
+		<p>Also called a "frost worm", these creatures native to the Plane of Ice actually have dozens of legs on their chitinous body. Their mouths can grasp their foes, like preying mantis mandibles. Additionally (and surprisingly for a lot of unprepared foes), they are naturally <em>hot</em> despite living in icy environments, which they use to melt their way through ice floes. Usually hungry, they have been known to lie in wait in tunnels for prey before rising up to consume the victims. They've been known to prey on creatures up to and including young dragons.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare except in the Northern Wastes or the far north of Kotimaa. Used to be more common in the Nocthian Caldera before the fall of the Hungering Frost. Intelligence (Arcana).</p>
+		<p><b>Habitat:</b> Icy wastelands, the Plane of Ice<p>
+		<p><b>Tactics:</b> None. Bite and swallow.</p>
 		<div class="monster">
 			<h3 class="monster-name">Remorhaz</h3>
 			<div class="monster-summary">
@@ -823,6 +874,12 @@
 				<p>The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns. If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.</p>
 			</div>
 		</div>
+		<h2>Roc</h2>
+		<p>Descendants of Anzu, Stormbringer, these gigantic birds have wingspans of over 100 ft. Like gigantic eagles, they swoop down on creatures as large as young dragon turtles, whales, or bull elephants and carry them away in their claws for later consumption</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Legendary. Intelligence (History or Nature).</p>
+		<p><b>Habitat:</b>Unknown.<p>
+		<p><b>Tactics:</b>They are aloof until hungry. They rarely notice creatures smaller than Huge unless attacked.</p>
 		<div class="monster">
 			<h3 class="monster-name">Roc</h3>
 			<div class="monster-summary">
@@ -847,6 +904,12 @@
 			<p class="monster-attack"><b>Beak.</b> <em>Melee Weapon Attack.</em> <em>+13 to hit, range 10 ft.</em> <em>Hit:</em> 4d8 + 9  </p>
 			<p class="monster-attack"><b>Talons.</b> <em>Melee Weapon Attack.</em> <em>+13 to hit, range 5 ft.</em> <em>Hit:</em> 4d6 + 9 slashing, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained. The roc can restrain two targets in this fashion. </p>
 		</div>
+		<h2>Roper</h2>
+		<p>Also called a "false stalagmite", these rocky-shelled creatures are like sea anemones...on land. Found in caves and underground areas, they use their tendrils to pull unsuspecting prey in to be devoured. Smarter than they look, they are capable of deceit.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b>Rare. Intelligence (History or Nature). Wisdom (Survival) to detect traces of their feeding.</p>
+		<p><b>Habitat:</b> Underground. Rarely found in groups of more than 1-2.<p>
+		<p><b>Tactics:</b> Wait until creatures get close, then grab and drag them in. Attack the ranged targets first where possible.</p>
 		<div class="monster">
 			<h3 class="monster-name">Roper</h3>
 			<div class="monster-summary">
@@ -878,21 +941,12 @@
 				<p>The roper pulls each creature grappled by it up to 25 feet straight toward it.</p>
 			</div>
 		</div>
-		<div class="monster">
-			<h3 class="monster-name">Stirge</h3>
-			<div class="monster-summary">
-				<p><em>Tiny monstrosity</em></p>
-				<div class="monster-basics"><div>14 (natural armor) AC</div><div>2 (1d4) HP</div><div>Speed: 10 ft., fly 40 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>-3</div><div>+3</div><div>+0</div><div>-4</div><div>-1</div><div>-2</div></div>
-				<div class="monster-details">
-					<p><b>Senses:</b> darkvision 60 ft., passive Perception 9</p>
-					<p><b>Languages:</b> —</p>
-					<p><b>Ratings:</b> 1/4:0</p>
-				</div>
-			</div>
-			<h3>Actions</h3>
-			<p class="monster-attack"><b>Blood Drain.</b> <em>Melee Weapon Attack.</em> <em>+3 to hit, range 5 ft.</em> <em>Hit:</em> 1d4 + 3 piercing, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge. </p>
-		</div>
+		<h2>Winter Wolf</h2>
+		<p>AKA ice wolf, the winter wolf has been touched by the plane of ice. With its white fur, unusual intelligence (and ability to speak), it is the dominant predator in its niche. Often commanding a pack of dire wolves or sometimes even multiple packs of regular wolves, they are the pinnacle of lupine kind. Intelligent enough to speak, they often work in concert with giants.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon. Common in the Nocthian Caldera.</p>
+		<p><b>Habitat:</b> Boreal forests, the Nocthian Caldera, the Plane of Ice.<p>
+		<p><b>Tactics:</b> They use their frost breath against groups, angling to hit 3+ creatures if possible. Otherwise they fight like fierce, smart wolves.</p>
 		<div class="monster">
 			<h3 class="monster-name">Winter Wolf</h3>
 			<div class="monster-summary">
@@ -901,7 +955,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+4</div><div>+1</div><div>+2</div><div>-2</div><div>+1</div><div>-1</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> passive Perception 15 </p>
-					<p><b>Languages:</b> Common, Giant, Winter Wolf </p>
+					<p><b>Languages:</b> Common, Giant, Primordial.</p>
 					<p><b>Ratings:</b> 3:3</p>
 					<p><b>Damage Immunities</b> cold</p>
 				</div>
@@ -921,6 +975,12 @@
 				<p>The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.</p>
 			</div>
 		</div>
+		<h2>Worg</h2>
+		<p>The worg is most commonly associated with goblins, as the two have tamed each other in multiple areas. Smart enough to speak, they form valued assets of goblin tribes...or maybe the goblins serve as valued assets for the worg packs. Otherwise they're similar to dire wolves.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Common wherever goblins are found.</p>
+		<p><b>Habitat:</b> Wherever goblins are found. Often used as mounts for the goblins.<p>
+		<p><b>Tactics:</b> See dire wolves, but smarter. They cooperate well with their goblin allies.</p>
 		<div class="monster">
 			<h3 class="monster-name">Worg</h3>
 			<div class="monster-summary">
@@ -929,7 +989,7 @@
 				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+3</div><div>+1</div><div>+1</div><div>-2</div><div>+0</div><div>-1</div></div>
 				<div class="monster-details">
 					<p><b>Senses:</b> darkvision 60 ft., passive Perception 14</p>
-					<p><b>Languages:</b> Goblin, Worg</p>
+					<p><b>Languages:</b> Goblin</p>
 					<p><b>Ratings:</b> 1:1/2</p>
 				</div>
 			</div>

@@ -173,6 +173,61 @@ The fiend magically enters the Border Shadow from the Mortal Plane, or vice vers
 \end{multicols}
 \end{DndMonster}
 
+\begin{DndMonster}{Fiend, Spider}
+	\begin{multicols}{2}
+	\DndMonsterType{Large fiend}
+	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={151 (16d10 + 64)}, speed={30 ft., climb 30 ft.}]
+	\MonsterStats{+3}{+3}{+4}{+1}{+2}{+1}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +9}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={Abyssal, one other}, challenge={9:9}]
+
+	\DndMonsterAction{Innate Spellcasting} The spider fiend's innate spellcasting ability is Wisdom (spell save DC 14). The spider fiend can innately cast the following spells, requiring no material components:
+	\begin{itemize}
+		\item[] \textbf{Concentration} \nameref{spell:faerie-fire} (1x), \nameref{spell:darkness} (1x)
+		\item[] \textbf{Other} \nameref{spell:dancing-lights}
+	\end{itemize}
+	
+	\DndMonsterAction{Spider Climb} The spider fiend can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+	
+	\DndMonsterAction{Sunlight Sensitivity} While in sunlight, the spider fiend has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+	
+	\DndMonsterAction{Web Walker} The spider fiend ignores movement restrictions caused by webbing.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The spider fiend makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d8 + 3},
+		dmg-type=piercing,
+		extra={ plus 9 (2d8) poison damage.}
+	]
+	\DndMonsterAttack[
+		name=Longsword,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d10 + 3},
+		dmg-type=slashing,
+		plus-dmg=\DndDice{1d8},
+		plus-dmg-type=poison
+	]
+	\DndMonsterAttack[
+		name=Longbow,
+		distance=ranged,
+		type=weapon,
+		mod=+6,
+		range=150/600,
+		dmg=\DndDice{2d8 + 3},
+		dmg-type=piercing,
+		extra={ plus 4 (1d8) poison damage.}
+	]
+	\end{multicols}
+\end{DndMonster}
+
 \begin{DndMonster}{Fiend, Bone}
 \DndMonsterType{Large fiend}
 \DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={157 (16d10 + 64)}, speed={40 ft., fly 40 ft.}]

@@ -7,122 +7,22 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="../main.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="monsters.css">
+	<script type="module" src="../components/custom-nav.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-		<div class="container-fluid">
-			<div class="nav-item"><a class="navbar-brand" aria-current="page" href="../index.html">Changelog</a></div>
-			<div class="nav-item"><a class="navbar-brand" href="../introduction.html">Introduction</a></div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="coreMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Core System</a>
-				<div class="dropdown-menu">
-					<a href="../core-system.html" class="dropdown-item">Core Rules</a>
-					<a href="../core-system.html#order-of-combat" class="dropdown-item">Combat Rules</a>
-					<a href="../equipment.html" class="dropdown-item">Equipment and Expenses</a>
-					<a href="../skill-tricks.html" class="dropdown-item">Skill Tricks</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="characterCreationMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Creation</a>
-				<div class="dropdown-menu" aria-labelledby="characterCreationMenu">
-					<a href="../character-creation.html" class="dropdown-item">Character Creation Basics</a>
-					<a href="../lineages.html" class="dropdown-item">Lineages</a>
-					<a href="../cultures.html" class="dropdown-item">Cultures</a>
-					<a href="../backgrounds.html" class="dropdown-item">Backgrounds</a>
-					<a href="../classes.html" class="dropdown-item">Classes</a>
-					<div class="dropdown-divider"></div>
-					<a href="../classes/arcanist.html" class="dropdown-item">Arcanist</a>
-					<a href="../classes/armsman.html" class="dropdown-item">Armsman</a>
-					<a href="../classes/brawler.html" class="dropdown-item">Brawler</a>
-					<a href="../classes/oathbound.html" class="dropdown-item">Oathbound</a>
-					<a href="../classes/priest.html" class="dropdown-item">Priest</a>
-					<a href="../classes/ranger.html" class="dropdown-item">Ranger</a>
-					<a href="../classes/rogue.html" class="dropdown-item">Rogue</a>
-					<a href="../classes/shaman.html" class="dropdown-item">Shaman</a>
-					<a href="../classes/spellblade.html" class="dropdown-item">Spellblade</a>
-					<a href="../classes/warden.html" class="dropdown-item">Warden</a>
-					<a href="../classes/warlock.html" class="dropdown-item">Warlock</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="spellsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Incantations, Spells, and Legendary Effects</a>
-				<div class="dropdown-menu" aria-labelledby="spellsMenu">
-					<a href="../spells.html" class="dropdown-item">Spellcasting Rules</a>
-					<a href="../spells/spell-lists.html" class="dropdown-item">Spell Summaries</a>
-					<a href="../spells/allspells.html" class="dropdown-item">Spells, Alphabetical</a>
-					<a href="../spells/incantations.html" class="dropdown-item">Incantations</a>
-					<a href="../spells/legendary-effects.html" class="dropdown-item">Legendary Effects</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" id="itemsMenu" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Magic Items</a>
-				<div class="dropdown-menu" aria-labelledby="itemsMenu">
-					<a href="../items.html" class="dropdown-item">Rules and Crafting</a>
-					<a href="../items/armor.html" class="dropdown-item">Armor and Clothing</a>
-					<a href="../items/potions.html" class="dropdown-item">Consumables</a>
-					<a href="../items/rings.html" class="dropdown-item">Rings</a>
-					<a href="../items/wands.html" class="dropdown-item">Rods and Wands</a>
-					<a href="../items/weapons.html" class="dropdown-item">Weapons</a>
-					<a href="../items/misc.html" class="dropdown-item">Wondrous Items</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="monstersMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monsters</a>
-				<div class="dropdown-menu" aria-labelledby="monstersMenu">
-					<a href="monsters.html" class="dropdown-item">Monster Rules</a>
-					<a href="aberrations.html" class="dropdown-item">Aberrations</a>
-					<a href="beasts.html" class="dropdown-item">Beasts</a>
-					<a href="celestials.html" class="dropdown-item">Celestials</a>
-					<a href="constructs.html" class="dropdown-item">Constructs</a>
-					<a href="dragons.html" class="dropdown-item">Dragons</a>
-					<a href="elementals.html" class="dropdown-item">Elementals</a>
-					<a href="fey.html" class="dropdown-item">Fey</a>
-					<a href="fiends.html" class="dropdown-item">Fiends</a>
-					<a href="giants.html" class="dropdown-item">Giants</a>
-					<a href="humanoids.html" class="dropdown-item">Humaniods</a>
-					<a href="monstrosities.html" class="dropdown-item">Monstrosities</a>
-					<a href="oozes.html" class="dropdown-item">Oozes</a>
-					<a href="plants.html" class="dropdown-item">Plants</a>
-					<a href="undead.html" class="dropdown-item">Undead</a>
-				</div>
-			</div>
-			<div class="nav-item dropdown">
-				<a class="navbar-brand dropdown-toggle" href="#" id="appendixMenu"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appendixes</a>
-				<div class="dropdown-menu">
-					<a href="../conditions.html" class="dropdown-item">Conditions</a>
-					<a href="../examples.html" class="dropdown-item">Examples</a>
-					<a href="../world.html" class="dropdown-item">The World of Quartus</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+	<custom-nav page="fey"></custom-nav>
 	<div class="container">
-		<h2 class="section">Fey</h2>
-		<p>The fey are non-mortal, sometimes-embodied collections of the spirits that inhabit the natural world and Shadow (aka ihminen or kami). These beings, when exposed to mortal influences and strong emotions, often conglomerate and take form, mimicing the acts and emotions that brought them forth. This leads to what appears to be obsessive behavior--a fey born of violence will rampage destructively or tempt others into such acts; a fey born of intense romantic feelings may become a serial seducer. The longer the fey exists without being destroyed or losing interest, however, the more this obsession develops into a full-on mimicry of mortal life in many aspects. They retain an interest in that one particular obsession, but it generally broadens and becomes less of a caricature. Make no mistake--fey are dangerous. They do not, except the strongest and oldest, understand <em>death</em>. The more humanoid and "civilized" a fey, the more powerful.</p>
+		<h1 class="section">Fey</h1>
+		<p>The fey are non-mortal, sometimes-embodied collections of the spirits that inhabit the natural world and Shadow (aka ihminen or kami). These beings, when exposed to mortal influences and strong emotions, often conglomerate and take form, mimicking the acts and emotions that brought them forth. This leads to what appears to be obsessive behavior--a fey born of violence will rampage destructively or tempt others into such acts; a fey born of intense romantic feelings may become a serial seducer. The longer the fey exists without being destroyed or losing interest, however, the more this obsession develops into a full-on mimicry of mortal life in many aspects. They retain an interest in that one particular obsession, but it generally broadens and becomes less of a caricature. Make no mistake--fey are dangerous. They do not, except the strongest and oldest, understand <em>death</em>. The more humanoid and "civilized" a fey, the more powerful.</p>
 		<p>Some fey, in contrast to this strongly mortal-centric view, are born from elemental influences or those of strong, highly-magical areas (especially trees, for some reason). These are place-bound fey, bound to a particular natural feature. They often form deep, almost symbiotic bonds with mortal creatures, trading vastly extended life and power to the mortal in exchange for a shared consciousness and being bound close to one location for the rest of their existence. These fey tend to be much less fickle, if bound to a mortal. The mortal provides an understanding of death, of change, and of the mortal world. Instead, these fey tend to be very fiercely protective of the natural feature they're bound to.</p>
 		<p>Fey cross over into Shadow naturally, existing on both sides of the veil almost simultaneously. Many of the most powerful make their homes there, rarely manifesting on the Mortal. Others have no home and flit about wherever their fancy (and obsession) take them. </p>
-		<div class="monster">
-			<h3 class="monster-name">Blink Dog</h3>
-			<div class="monster-summary">
-				<p><em>Medium fey</em></p>
-				<div class="monster-basics"><div>13 AC</div><div>22 (4d8 + 4) HP</div><div>Speed: 40 ft.</div></div>
-				<div class="monster-stats"><div>STR</div><div>DEX</div><div>CON</div><div>INT</div><div>WIS</div><div>CHA</div><div>+1</div><div>+3</div><div>+1</div><div>+0</div><div>+1</div><div>+0</div></div>
-				<div class="monster-details">
-					<p><b>Senses:</b> passive Perception 13</p>
-					<p><b>Languages:</b> Blink Dog, understands Sylvan but can't speak it</p>
-					<p><b>Ratings:</b> 1/4:1/2</p>
-				</div>
-			</div>
-			<div class="monster-action"><p><b>Keen Hearing and Smell.</b></p>
-				<p>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
-			</div>
-			<h3>Actions</h3>
-			<p class="monster-attack"><b>Bite.</b> <em>Melee Weapon Attack.</em> <em>+3 to hit, range 5 ft. </em> <em>Hit:</em> 1d6 + 1 piercing damage.</p>
-			<div class="monster-action"><p><b>Blink.</b></p>
-				<p><p>The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.</p></p>
-			</div>
-		</div>
 		
+		<h2>Kipuliin</h2>
+		<p>Obsessed with pain (both causing and feeling it), the kipuliin are considered "dark" fey, those inimical to civilized life. They wield barbed whips and delight in bloodshed.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Rare, only in areas associated with much suffering and death.</p>
+		<p><b>Habitat:</b> Blood-soaked regions, prisons, sites of mass torture or death. Usually in packs.</p>
+		<p><b>Tactics:</b> Wade in with their whips. They prefer to attack those already bloodied and take no defensive measures until they themselves are bloodied. In fact, they'll willingly provoke Opportunity Attacks while not bloodied for no other reason than to experience pain.</p>
 		<div class="monster">
 			<h3 class="monster-name">Kipuliin, Lesser</h3>
 			<div class="monster-summary">
@@ -158,7 +58,12 @@
 				<p><b>Barbed Whip.</b> <em>Melee Weapon Attack:</em> +5 to hit, range 10 ft. <em>Hit:</em> 1d6 + 3 slashing  plus 1d4 extra against bloodied targets.</p>
 			</div>
 		</div>
-		
+		<h2>Satyr</h2>
+		<p>Goat-footed and horned and slight of stature, the satyr are fey obsessed with drunken excess and lechery. While this may seem harmless, their presence can turn a nice celebration into a riot or an orgy. Or both, simultaneously.</p>
+		<h3>Habitat and Tactics</h3>
+		<p><b>Commonality:</b> Uncommon.</p>
+		<p><b>Habitat:</b> Found around civilization, often in wine or beer-producing regions. Often in small groups.</p>
+		<p><b>Tactics:</b> If their revels are interrupted or denied, they become angry. They'll use Aura of Drunkenness and attack with their melee or ranged attacks.</p>
 		<div class="monster">
 			<h3 class="monster-name">Satyr</h3>
 			<div class="monster-summary">

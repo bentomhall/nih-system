@@ -46,10 +46,22 @@
 	<li>A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.</li>
 	<li>The charmer has advantage on any ability check to interact socially with the creature.</li>
 	</ul>
+
+	<h3 class="subsection" id="concentrating">Concentrating</h3>
+	<p>The Concentrating condition is applied when one begins casting a spell or activating an ability with duration involving Concentration or that says it requires concentration as if on a spell. You may only Concentrate on one effect at a time. While Concentrating, any effect that would apply the Concentrating condition again ends the first effect for all targets before the second takes effect. Similarly, if your Concentration is broken for any reason, the effect you were concentrating on ends.</p>
+	<p>Concentration lasts for the duration of the effect or until broken by one of the following.</p>
+	<ul>
+		<li>Taking damage while Concentrating requires a successful Constitution saving throw to maintain Concentration. The DC = 10 or half the damage taken, whichever is greater.</li>
+		<li>Becoming grappled, restrained, or knocked prone requires a successful DC 10 Constitution saving throw to maintain Concentration.</li>
+		<li>At the GM's discretion, a Constitution saving throw may be required to maintain Concentration under adverse environmental conditions such as casting spells on a ship's deck during a storm. The DC will vary but should not be lower than 10.</li>
+		<li>Becoming <a href="#incapacitated">incapacitated</a> immediately ends Concentration.</li>
+		<li>You can choose to drop Concentration on a spell or effect on your turn without using an action.</li>
+	</ul>
 	
 	<h3 class="subsection" id="deafened">Deafened</h3>
 	<ul>
 	<li>A deafened creature can't hear and automatically fails any ability check that requires hearing.</li>
+	<li>A deafened creature must make a Wisdom (Perception) check to cast a spell with a verbal component. The DC = 8 + the Aether expended on the spell.</li>
 	</ul>
 	
 	<h3 class="subsection" id="exhaustion">Exhaustion</h3>
@@ -68,11 +80,13 @@
 	<ul>
 	<li>A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.</li>
 	<li>The creature can't willingly move closer to the source of its fear.</li>
+	<li>Targets of a frightened creature's spells or abilities have advantage on saving throws against those abilities.</li>
 	</ul>
 	
 	<h3 class="subsection" id="grappled">Grappled</h3>
 	<ul>
 	<li>A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
+	<li>A grappled creature must make a DC 10 Constitution saving throw to maintain Concentration on a spell or effect when the grappled condition is applied.</li>
 	<li>The condition ends if the grappler is incapacitated (see <a href="#incapacitated">the incapacitated condition</a>).</li>
 	<li>The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the <em>thunder wave</em> spell. The reverse also holds--effects that move the grappler out of reach of the grappled creature end the grapple as well.</li>
 	</ul>
@@ -113,7 +127,8 @@
 	<h3 class="subsection" id="poisoned">Poisoned</h3>
 	<ul>
 	<li>A poisoned creature has disadvantage on attack rolls and ability checks.</li>
-	<li>Targets of spells and other effects caused by the poisoned creature have advantage on any necessary saving throw.</li>
+	<li>Targets of a poisoned creature's spells or abilities have advantage on saving throws against those abilities.</li>
+	<li>Expending Aether while poisoned requires a successful DC 10 Constitution saving throw. Failure means that the spell or ability does not take effect but the Aether is not consumed.</li>
 	</ul>
 	
 	<h3 class="subsection" id="prone">Prone</h3>
@@ -128,6 +143,7 @@
 	<li>A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.</li>
 	<li>Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</li>
 	<li>The creature has disadvantage on Dexterity saving throws.</li>
+	<li>Casting spells with somatic components requires a DC 10 Strength saving throw. Failure means that the spell does not take effect but the Aether (if any) is not consumed.</li>
 	</ul>
 	
 	<h3 class="subsection" id="shaken">Shaken</h3>
@@ -141,6 +157,7 @@
 		<li>A staggered creature has disadvantage on attack rolls </li>
 		<li>A staggered creature has disadvantage on Dexterity saving throws and ability checks.</li>
 		<li>A staggered creature that attempts to cast a spell must make a Constitution saving throw with DC = 8 + the aether cost of the spell. On a failed save, the spell does not take effect and the action is lost but the aether is not expended.</li>
+		<li>Targets of a staggered creature's spells or abilities have advantage on saving throws against those abilities.</li>
 	</ul>
 	
 	<h3 class="subsection" id="stunned">Stunned</h3>

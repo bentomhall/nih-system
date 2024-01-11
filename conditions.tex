@@ -35,9 +35,22 @@ The default way of imposing the broken condition is by the creature failing a Wi
 \item The charmer has advantage on any ability check to interact socially with the creature.
 \end{itemize}
 
+\subsection{Concentrating\label{condition:concentrating}}
+The Concentrating condition is applied when one begins casting a spell or activating an ability with duration involving Concentration or that says it requires concentration as if on a spell. You may only Concentrate on one effect at a time. While Concentrating, any effect that would apply the Concentrating condition again ends the first effect for all targets before the second takes effect. Similarly, if your Concentration is broken for any reason, the effect you were concentrating on ends.
+
+Concentration lasts for the duration of the effect or until broken by one of the following.
+\begin{itemize}
+	\item Taking damage while Concentrating requires a successful Constitution saving throw to maintain Concentration. The DC = 10 or half the damage taken, whichever is greater.
+	\item Becoming grappled, restrained, or knocked prone requires a successful DC 10 Constitution saving throw to maintain Concentration.
+	\item At the GM's discretion, a Constitution saving throw may be required to maintain Concentration under adverse environmental conditions such as casting spells on a ship's deck during a storm. The DC will vary but should not be lower than 10.
+	\item Becoming \nameref{condition:incapacitated} immediately ends Concentration.
+	\item You can choose to drop Concentration on a spell or effect on your turn without using an action.
+\end{itemize}
+
 \subsection{Deafened\label{condition:deafened}}
 \begin{itemize}
 \item A deafened creature can't hear and automatically fails any ability check that requires hearing.
+\item A deafened creature must make a Wisdom (Perception) check to cast a spell with a verbal component. The DC = 8 + the Aether expended on the spell.
 \end{itemize}
 
 \subsection{Exhaustion\label{condition:exhaustion}}
@@ -56,11 +69,13 @@ Finishing a long rest reduces a creature's exhaustion level by 1, provided that 
 \begin{itemize}
 \item A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.
 \item The creature can't willingly move closer to the source of its fear.
+\item Targets of a frightened creature's spells or abilities have advantage on saving throws against those abilities.
 \end{itemize}
 
 \subsection{Grappled\label{condition:grappled}}
 \begin{itemize}
 \item A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+\item A grappled creature must make a DC 10 Constitution saving throw to maintain Concentration on a spell or effect when the grappled condition is applied.
 \item The condition ends if the grappler is incapacitated (see \nameref{condition:incapacitated}).
 \item The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \textit{thunder-wave} spell. The reverse also holds--effects that move the grappler out of reach of the grappled creature end the grapple as well.
 \end{itemize}
@@ -101,6 +116,8 @@ An invisible creature is impossible to see without the aid of magic or a special
 \subsection{Poisoned\label{condition:poisoned}}
 \begin{itemize}
 \item A poisoned creature has disadvantage on attack rolls and ability checks.
+\item Targets of a poisoned creature's spells or abilities have advantage on saving throws against those abilities.
+\item Expending Aether while poisoned requires a successful DC 10 Constitution saving throw. Failure means that the spell or ability does not take effect but the Aether is not consumed. 
 \end{itemize}
 
 \subsection{Prone\label{condition:prone}}
@@ -115,6 +132,7 @@ An invisible creature is impossible to see without the aid of magic or a special
 \item A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
 \item Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
 \item The creature has disadvantage on Dexterity saving throws.
+\item Casting spells with somatic components requires a DC 10 Strength saving throw. Failure means that the spell does not take effect but the Aether (if any) is not consumed.
 \end{itemize}
 
 \subsection{Shaken\label{condition:shaken}}
@@ -127,6 +145,7 @@ An invisible creature is impossible to see without the aid of magic or a special
 \begin{itemize}
 	\item A staggered creature has disadvantage on attack rolls 
 	\item A staggered creature has disadvantage on Dexterity saving throws and ability checks.
+	\item Targets of a staggered creature's spells or abilities have advantage on saving throws against those abilities.
 \end{itemize}
 
 \subsection{Stunned\label{condition:stunned}}

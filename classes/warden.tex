@@ -77,7 +77,7 @@ In addition, you can spend an action to regain stamina equal to twice your Const
 \subsection{Furious Blow}
 Once per turn when you hit with a melee attack, you can choose to expend 1 or more STA to deal additional damage. If you do so, roll an additional weapon damage die for the first STA you spend and each additional 2 stamina expended and add it to the total rolled. You cannot spend more than 7 Stamina this way in a single attack.
 
-When you deal this extra damage, you gain Focus, which can be spent to fuel other abilities.
+When you deal this extra damage, you gain a point of Fury, which can be spent to fuel other abilities. You can have Fury points equal to half your proficiency bonus rounded up at any time, and any points are lost when you finish a long rest.
 
 Starting at 8th level, when you hit a creature that is Concentrating and deal the additional damage, they have disadvantage on the concentration check.
 
@@ -108,7 +108,7 @@ At 2nd level, you gain an uncanny sense of when things nearby aren't as they sho
 
 You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.
 
-Alternatively, you can expend Focus to gain advantage on a Wisdom saving throw against an effect that would impose the charmed, frightened, or incapacitated condition.
+\textbf{Expend 1 Fury:} gain advantage on a Wisdom saving throw against an effect that would impose the charmed, frightened, or incapacitated condition.
 
 \subsection{Primal Path}
 
@@ -118,9 +118,9 @@ At 3rd level, you choose a path that shapes the nature of your rage. Choose the 
 
 Starting at 3rd level, you have trained particularly with a particular weapon property. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 
-\subparagraph*{Battering} Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
+\subparagraph*{Battering} Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone.
 
-\subparagraph*{Cleaving} You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
+\subparagraph*{Cleaving} You can attempt to cleave even if you miss by spending 1 STA. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
 
 \subparagraph*{Light} When you make the additional attack with a light weapon, you add your ability modifier to the damage dealt.
 
@@ -165,12 +165,12 @@ Starting at 10th level, when you take damage from a creature that is within your
 
 \subsection{Relentless Rage}
 
-Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
+Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. \textbf{Expend 1 Fury:} you regain hit points as if you had spend 2 Hit Dice.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.
 
 \subsection{Spell Breaker}
-Starting at 15th level, the sheer weight of your primal power inhibits your enemies' magical abilities. While you have Focus, you make saving throws against magical effects at advantage. Additionally, you can expend 3 AET to end any spell effect within 5 feet of you.
+Starting at 15th level, the sheer weight of your primal power inhibits your enemies' magical abilities. While you have at least one point of Fury, you make saving throws against magical effects at advantage. Additionally, you can expend 3 AET to end any spell effect within 5 feet of you.
 
 \subsection{Magebane}
 
@@ -188,11 +188,11 @@ Those who embrace the Juggernaut Path embrace the inevitability of their opponen
 
 \subsubsection{Punishing Stance}
 
-Starting at 3rd level when you pick this Path, when an enemy within your reach makes an attack against anyone but you or targets any creature other than you with a spell or saving throw, you can expend 2 STA to impose disadvantage on the attack roll or grant the target advantage on the saving throw. Alternatively, you can expend Focus. If you do so, this costs no STA.
+Starting at 3rd level when you pick this Path, when an enemy within your reach makes an attack against anyone but you or targets any creature other than you with a spell or saving throw, you can expend 2 STA to impose disadvantage on the attack roll or grant the target advantage on the saving throw. \textbf{Expend 1 Fury:} This use of Punishing Stance does not cost STA.
 
 \subsubsection{Warding Rage}
 
-Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.
+Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage. \textbf{Expend 1 Fury:} The effect is removed instead of being suspended.
 
 \subsubsection{Inevitability}
 
@@ -214,31 +214,35 @@ Any non-legendary magical effect cast from outside the barrier can't affect crea
 Those who follow the Path of the Raging Storm channel the primal might of lightning storms to chain down their foes and to fly across the battlefield.
 
 \subsubsection{Lightning Shackles}
-At 3rd level when you choose this Path, you learn to create shackles of lighting that bind the feet of a foe, shocking them if they try to move. As an action, spend 1 AET and target an enemy you can see within 30 ft who is within 5 feet of a solid surface such as the ground or a wall. The target must make a Strength saving throw with a DC of 8 + your Charisma score + your proficiency bonus. On a failed save, the target is shackled by crackling lightning to the nearest surface. If they move or are moved more than 5 feet from that point, including by teleportation, the chain snaps and the target takes lightning damage equal to 1d10 + your level and is \nameref{condition:shaken} until the end of their next turn.
+At 3rd level when you choose this Path, you learn to create shackles of lighting that bind the feet of a foe, shocking them if they try to move. As an action, spend 1 AET and target an enemy you can see within 30 ft who is within 5 feet of a solid surface such as the ground or a wall. The target must make a Strength saving throw with a DC of 8 + your Charisma score + your proficiency bonus. On a failed save, the target is shackled by crackling lightning to the nearest surface. If they move or are moved more than 5 feet from that point, including by teleportation, the chain snaps and the target takes lightning damage equal to 1d10 + your level and is \nameref{condition:shaken} until the end of their next turn. \textbf{Expend 1+ Fury:} you can target a number of creatures equal to twice the Fury expended instead of 1.
 
-\subsubsection{Magnetic Levitation}
-Starting at 6th level, 
+\subsubsection{Wings of the Storm}
+Starting at 6th level, while you are raging you gain a fly speed equal to half your speed. You must end your turn in contact with a solid object (including a larger creature if you have succeeded at Climbing on a Larger Creature) or fall. Your speed also increases by an additional 10 feet.
+
+This fly speed increases to your full speed at 14th level and you no longer need to end your turn in contact with a solid object.
+
+\subsubsection{Shared Wings}
+Starting at 10th level, you can extend your Wings of the Storm feature to all creatures of your choice within 30 feet. They only maintain the flying speed while within this radius, immediately falling if they end their turn outside this radius. Their flying speed is equal to your flying speed instead of being set by their own walking speed.
+
+\subsubsection{Lightning Step}
+Starting at 14th level, you can teleport short distances, converting yourself into a streak of lightning. When you move on your turn, you can choose to instead teleport to the chosen location as long as you can see the target location and it is no further than your speed would allow. \textbf{Expend 1 Fury:} all creatures within 10 feet of your starting or ending position (your choice) must make a Constitution saving throw against a DC of 8 + your Strength + your proficiency bonus. On a failed save, they take lightning damage equal to your level and are affected by your Lightning Shackles ability. On a success, they take half as much damage and are not shackled.
 
 \subsection{Steel Whirlwind Path}
 Those who follow the Steel Whirlwind Path delight in carving a bloody swath through their foes and anything that gets in their way. Nimble and unpredictable as a tornado, they leave a trail of wreckage behind them as they dance the deadly dance.
 
 \subsubsection{Dance of Death}
-Starting at 3rd level when you choose this Path, you can spend 1 STA as a reaction to ignore any difficult terrain until the end of your turn or break free from a grapple or from restraint due to a creature or spell effect.
+Starting at 3rd level when you choose this Path, you can spend 1 STA as a reaction to ignore any difficult terrain until the end of your turn or break free from a grapple or from restraint due to a creature or spell effect. \textbf{Expend 1 Fury:} It no longer costs your reaction.
 
 \subsubsection{Whirling Fury}
-Starting at 3rd level when you choose this Path, you can spend 2 STA to trigger Furious Blow when you hit with an a subsequent attack and have already triggered Furious Blow this turn. When you do so, you cannot spend additional STA to increase the effect and do not gain Focus.
+Starting at 3rd level when you choose this Path, you can spend 2 STA to trigger Furious Blow when you hit with an a subsequent attack and have already triggered Furious Blow this turn. When you do so, you cannot spend additional STA to increase the effect and do not gain Fury.
 
-\subsubsection{Raging Leaps}
-Starting at 6th level, while you are raging you gain a fly speed equal to half your speed. You must end your turn in contact with a solid object (including a larger creature if you have succeeded at Climbing on a Larger Creature). Your speed also increases by an additional 10 feet.
-
-This fly speed increases to your full speed at 14th level.
+\subsubsection{Violent Charge}
+Starting at 6th level, you can take the Dash action as a bonus action on your turn. If you do so and move at least 10 feet, you have advantage on any attack rolls or checks made to grapple or push an enemy until the end of your turn.
 
 \subsubsection{Unpredictable Nature}
 Starting at 10th level, your path has become as unpredictable as a tornado. You are immune to divination effects that would predict your actions, read your thoughts, or determine whether you are lying, as well as the charmed condition while you are raging.
 
-In addition, you can expend Focus to automatically succeed on an otherwise possible attempt to deceive someone about your intent or into giving you information.
+In addition, you can expend 1 Fury to automatically succeed on an otherwise possible attempt to deceive someone about your intent or into giving you information.
 
-\subsubsection{Flash Step}
-Starting at 14th level, your speed has increased enough so that it appears you can teleport short distances. When you move on your turn, you can choose to instead teleport to the chosen location as long as you have a clear path to the target location and it is no further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through.
-
-Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
+\subsubsection{Blood Tornado}
+At 14th level, you have learned to spin your weapons around you, cleaving all those nearby. As an action, spend 7 STA and make one attack roll against each creature of your choice within your reach. On a hit, targets take damage as if you had rolled a critical hit. On a critical hit, you gain hit points equal to your Constitution modifier. You cannot use Furious Blow on these attacks.

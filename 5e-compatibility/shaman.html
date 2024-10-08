@@ -8,6 +8,15 @@
 <link href="../main.css" rel="stylesheet"/>
 <link rel="stylesheet" href="classes.css">
 <script type="module" src="../components/custom-nav.js"></script>
+<style>
+	.spells-container {
+		columns: 3;
+		max-height: 50em;
+	}
+	.spells-container li {
+		list-style-type: none;
+	}
+</style>
 </head>
 <body>
 	<custom-nav page="shaman"></custom-nav>
@@ -272,44 +281,127 @@
 	<h2 class="divider">Shaman Spell List</h2>
 	<p>The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost.</p>
 	
-	<table class="spell-list">
-	<tr><th>Aether Cost</th><th>Name</th><th></th><th>Aether Cost</th><th>Name</th></tr>
-	<tr><td>0</td><td><a href="../spells/allspells.html#acid-burst">acid burst</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#bestow-curse">bestow curse</a></td></tr>
-	<tr><td>0</td><td><a href="../spells/allspells.html#dancing-lights">dancing lights</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#conjure-animals">conjure animals</a></td></tr>
-	<tr><td>0</td><td><a href="../spells/allspells.html#produce-flame">produce flame</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#gaseous-form">gaseous form</a></td></tr>
-	<tr><td>0</td><td><a href="../spells/allspells.html#shillelagh">shillelagh</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#lightning-bolt">lightning bolt</a></td></tr>
-	<tr><td>1</td><td><a href="../spells/allspells.html#cure-wounds">cure wounds</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#plant-growth">plant growth</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#bane">bane</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#sleet-storm">sleet storm</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#burning-hands">burning hands</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#slow">slow</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#create-or-destroy-water">create-or-destroy-water</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#stinking-cloud">stinking cloud</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#entangle">entangle</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#unbind">unbind</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#faerie-fire">faerie fire</a></td><td></td><td>5</td><td><a href="../spells/allspells.html#wind-wall">wind wall</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#flash-freeze">flash freeze</a></td><td></td><td>6</td><td><a href="../spells/allspells.html#blight">blight</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#fog-cloud">fog cloud</a></td><td></td><td>6</td><td><a href="../spells/allspells.html#call-lightning">call lightning</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#grease">grease</a></td><td></td><td>7</td><td><a href="../spells/allspells.html#ice-storm">ice storm</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#protection-from-otherworldly-influence">protection-from-otherworldly-influence</a></td><td></td><td>7</td><td><a href="../spells/allspells.html#wall-of-thorns">wall-of-thorns</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#sleep">sleep</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#conjure-mephits">conjure mephits</a></td></tr>
-	<tr><td>2</td><td><a href="../spells/allspells.html#thunderwave">thunderwave</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#conjure-woodland-beings">conjure-woodland-beings</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#acid-arrow">acid arrow</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#control-water">control water</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#alter-self">alter self</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#dominate-beast">dominate beast</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#barkskin">barkskin</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#fire-shield">fire shield</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#blindness-deafness">blindness/deafness</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#giant-insect">giant insect</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#blur">blur</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#polymorph">polymorph</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#calm-emotions">calm emotions</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#stone-shape">stone shape</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#darkvision">darkvision</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#stoneskin">stoneskin</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#enlarge-reduce">enlarge/reduce</a></td><td></td><td>8</td><td><a href="../spells/allspells.html#wall-of-fire">wall-of-fire</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#flame-blade">flame blade</a></td><td></td><td>9</td><td><a href="../spells/allspells.html#cone-of-cold">cone-of-cold</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#flaming-sphere">flaming sphere</a></td><td></td><td>10</td><td><a href="../spells/allspells.html#conjure-elemental">conjure elemental</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#gust-of-wind">gust of wind</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#contagion">contagion</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#heat-metal">heat metal</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#dispel-otherworldly-influence">dispel otherworldly influence</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#pass-without-trace">pass without trace</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#move-earth">move earth</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#protection-from-poison">protection from poison</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#passwall">passwall</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#shatter">shatter</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#reincarnate">reincarnate</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#spike-growth">spike growth</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#wall-of-ice">wall of ice</a></td></tr>
-	<tr><td>3</td><td><a href="../spells/allspells.html#web">web</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#wall-of-stone">wall of stone</a></td></tr>
-	<tr><td>4</td><td><a href="../spells/allspells.html#moonbeam">moonbeam</a></td><td></td><td>12</td><td><a href="../spells/allspells.html#cloudkill">cloudkill</a></td></tr>
-	<tr><td>4</td><td><a href="../spells/allspells.html#vampiric-touch">vampiric touch</a></td><td></td><td>14</td><td><a href="../spells/allspells.html#insect-plague">insect plague</a></td></tr>
-	</table>
+	<div class="spells-container">
+		<h4>Cantrips</h4>
+		<ul>
+			<li>Acid Splash</li>
+			<li>Dancing Lights</li>
+			<li>Druidcraft</li>
+			<li>Guidance</li>
+			<li>Mending</li>
+			<li>Poison Spray</li>
+			<li>Produce Flame</li>
+			<li>Resistance</li>
+			<li>Shillelagh</li>
+			<li>Thorn Whip</li>
+		</ul>
+		<h4>1st level</h4>
+		<ul>
+			<li>Cure wounds</li>
+			<li>Bane</li>
+			<li>Burning Hands</li>
+			<li>Create or Destroy Water</li>
+			<li>Entangle</li>
+			<li>Faerie Fire</li>
+			<li>Fog Cloud</li>
+			<li>Grease</li>
+			<li>Protection from Evil and Good</li>
+			<li>Sleep</li>
+			<li>Thunderwave</li>
+		</ul>
+		<h4>2nd level</h4>
+		<ul>
+			<li>Acid arrow</li>
+			<li>Alter Self</li>
+			<li>Barkskin</li>
+			<li>Blindness/Deafness</li>
+			<li>Blur</li>
+			<li>Calm Emotions</li>
+			<li>Darkvision</li>
+			<li>Enlarge/Reduce</li>
+			<li>Flame Blade</li>
+			<li>Flaming Sphere</li>
+			<li>Gust of wind</li>
+			<li>Heat Metal</li>
+			<li>Pass without Trace</li>
+			<li>Protection from Poison</li>
+			<li>Shatter</li>
+			<li>Spike Growth</li>
+			<li>Web</li>
+			<li>Moonbeam</li>
+		</ul>
+		<h4>3rd level</h4>
+		<ul>
+			<li>Bestow Curse</li>
+			<li>Conjure Animals</li>
+			<li>Dispel Magic</li>
+			<li>Gaseous Form</li>
+			<li>Lightning Bolt</li>
+			<li>Plant Growth</li>
+			<li>Sleet storm</li>
+			<li>Slow</li>
+			<li>Stinking Cloud</li>
+			<li>Vampiric Touch</li>
+			<li>Wind Wall</li>
+		</ul>
+		<h4>4th level</h4>
+		<ul>
+			<li>Blight</li>
+			<li>Call lightning</li>
+			<li>Ice Storm</li>
+			<li>Conjure Mephits</li>
+			<li>Conjure Woodland Beings</li>
+			<li>Control Water</li>
+			<li>Dominate Beast</li>
+			<li>Fire Shield</li>
+			<li>Giant Insect</li>
+			<li>Polymorph</li>
+			<li>Stone Shape</li>
+			<li>Stoneskin</li>
+			<li>Wall of Fire</li>
+			<li>Wall of Thorns</li>
+		</ul>
+		<h4>5th level</h4>
+		<ul>
+			<li>Cloudkill</li>
+			<li>Cone of Cold</li>
+			<li>Conjure Elementals</li>
+			<li>Contagion</li>
+			<li>Dispel Evil and Good</li>
+			<li>Insect Plague</li>
+			<li>Move Earth</li>
+			<li>Passwall</li>
+			<li>Reincarnate</li>
+			<li>Wall of Ice</li>
+			<li>Wall of Stone</li>
+		</ul>
+		<h4>6th level</h4>
+		<ul>
+			<li>Conjure Fey</li>
+			<li>Fire storm</li>
+			<li>Harm</li>
+			<li>Heal</li>
+			<li>Regenerate</li>
+		</ul>
+		<h4>7th level</h4>
+		<ul>
+			<li>Dominate Person?</li>
+			<li>Reverse Gravity</li>
+			<li>Symbol</li>
+			<li>Wind Walk</li>
+		</ul>
+		<h4>8th level</h4>
+		<ul>
+			<li>Animal Shapes</li>
+			<li>Control Water</li>
+			<li>Dominate Monster</li>
+		</ul>
+		<h4>9th level</h4>
+		<ul>
+			<li>Meteor Swarm</li>
+			<li>Shapechange</li>
+		</ul>
+	</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

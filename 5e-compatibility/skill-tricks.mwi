@@ -1,0 +1,692 @@
+<div class="container">
+
+<span id="skill-tricks"></span>
+= Skill Tricks =
+
+Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
+
+Each skill trick detailed below shares some common characteristics:
+
+* '''An ability score'''. Every skill trick is tied to a particular ability score. That ability score sets its DC.
+* '''A prerequisite'''. Every skill trick has one or more prerequisites before it can be learned. These are generally either a particular level of proficiency (numerical value, which does not includes expertise) for those that are tied to a particular skill or tool, or a character level for those marked as General.
+* '''A target or targets'''. Many skill tricks target either an object or one or more creatures. A few target a particular area.
+* '''An effect'''. The text of the skill trick describes the effect, as well as any saving throws required.
+
+<span id="skill-trick-pool"></span>
+=== Skill Trick Pool ===
+
+Many skill tricks have wording that requires you to expend a use of your &quot;skill trick pool&quot;. When you take your first skill trick, you gain a pool of uses for all your skill tricks. The maximum number of uses in this pool is equal to your proficiency bonus and expended uses are restored when you finish a long or short rest.
+
+<span id="skill-trick-dcs"></span>
+=== Skill Trick DCs ===
+
+The DC for any saving throws required by skill tricks is given by
+
+<div class="centered">
+
+'''8 + the relevant ability score + your proficiency bonus'''
+
+</div>
+regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
+
+<span id="acquiring-skill-tricks"></span>
+=== Acquiring Skill Tricks ===
+
+Some classes get native access to Skill Tricks as a class feature. If they grant access to more advanced skill tricks beyond the basic ones at particular levels, that access overrides any level-based prerequisites in the skill trick. Everyone else can choose a skill trick that they qualify for whenever they acquire an Ability Score Improvement from their class. At the same time, they can trade out one skill trick they've learned for a different one they qualify for. If you replace a skill trick that grants access to a spell (such as Arcane Initiate) and do not have access to it in another way, you can no longer cast that spell.
+
+<span id="skill-tricks-basic"></span>
+== Basic Skill Tricks ==
+
+Basic skill tricks only require a +2 proficiency or level 4 characters.
+
+<span id="alert"></span>
+=== Alert ===
+
+<div>
+
+''Wisdom (Perception OR Insight) Basic Skill Trick''
+
+</div>
+You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight).
+
+<span id="arcane-initiate"></span>
+=== Arcane Initiate ===
+
+<div>
+
+''Intelligence (Arcana) Basic Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Wizard or Sorcerer list, as well as one spell of 1st level from that same list. You can cast this spell once without spending a spell slot and regain the ability to do so when you finish a long rest. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="charge"></span>
+=== Charge ===
+
+<div>
+
+''Strength (Martial Weapon) Basic Skill Trick''
+
+</div>
+When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can expend one use of your skill trick pool to either make a shove attack against them as part of that attack or deal one extra weapon die of damage against them.
+
+<span id="coordinated-strike"></span>
+=== Coordinated Strike ===
+
+<div>
+
+''Charisma (Martial Weapon) Basic Skill Trick''
+
+</div>
+As a bonus action you take when you take the Attack action and attack a target, can expend one use of your skill trick pool. Another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus.
+
+<span id="craft-apprentice"></span>
+=== Craft Apprentice ===
+
+<div>
+
+''Crafting Tool (any) Basic Skill Trick''
+
+</div>
+You can make 2 hours of progress with your chosen crafting skill while on the road as part of a long rest. You learn the schema for one common magic item that requires that proficiency of your choice.
+
+<span id="diplomat"></span>
+=== Diplomat ===
+
+<div>
+
+''Charisma (Persuasion) Basic Skill Trick''
+
+</div>
+When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+
+<span id="disarm"></span>
+=== Disarm ===
+
+<div>
+
+''Strength (Martial Weapon) Basic Skill Trick''
+
+</div>
+When you hit with a melee weapon attack, you can expend one use of your skill trick pool to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage.
+
+<span id="divine-initiate"></span>
+=== Divine Initiate ===
+
+<div>
+
+''Wisdom (Religion) Basic Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Cleric list, as well as one spell of 1st level from that same list. You can cast this spell once without spending a spell slot and regain the ability to do so when you finish a long rest. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="evasive-footwork"></span>
+=== Evasive Footwork ===
+
+<div>
+
+''Dexterity (General) Basic Skill Trick''
+
+</div>
+when you would be hit by an attack, you can use your reaction and expend one use of your skill trick pool to increase your Armor Class against that attack by your proficiency bonus, potentially causing the attack to miss. If you already have this capability from a feature such as the Brawler's Unarmored Defense, you can choose to either expend STA (as per the feature) or expend a use from your skill trick pool.
+
+<span id="feint"></span>
+=== Feint ===
+
+<div>
+
+''Charisma (Deception) Basic Skill Trick''
+
+</div>
+You can expend one use of your skill trick pool to fake an attack as a bonus action, trying to misdirect the enemy. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them. On a successful save, you do not expend the use of the trick, but cannot use it against that same target for one hour.
+
+<span id="frighten"></span>
+=== Frighten ===
+
+<div>
+
+''Charisma (Intimidation) Basic Skill Trick''
+
+</div>
+As an action, you can expend one use of your skill trick pool to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn. On a successful save, you do not expend the use of the trick, but cannot use it against that same target for one hour.
+
+<span id="haggler"></span>
+=== Haggler ===
+
+<div>
+
+''Charisma (Persuasion OR Deception) Basic Skill Trick''
+
+</div>
+You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
+
+<span id="jump"></span>
+=== Jump ===
+
+<div>
+
+''Strength (Athletics) Basic Skill Trick''
+
+</div>
+You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
+
+<span id="linguist"></span>
+=== Linguist ===
+
+<div>
+
+''Intelligence (General) Basic Skill Trick''
+
+</div>
+When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
+
+Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
+
+<span id="lung-capacity"></span>
+=== Lung Capacity ===
+
+<div>
+
+''Constitution (General) Basic Skill Trick''
+
+</div>
+You can hold your breath for twice as long. In addition, you can expend one use from your skill trick pool when you are exposed to a source of poison gas (such as [[spells/allspells.html#cloudkill|cloudkill]] or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw.
+
+<span id="medic"></span>
+=== Medic ===
+
+<div>
+
+''Wisdom (Medicine) Basic Skill Trick''
+
+</div>
+When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, you can expend one use of your skill trick pool to cause the target to regain 1 hit point and is conscious instead of stable.
+
+<span id="misdirect"></span>
+=== Misdirect ===
+
+<div>
+
+''Dexterity (Stealth) Basic Skill Trick''
+
+</div>
+When you are hidden, you can expend one use of your skill trick pool to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement. On a successful save, you do not expend the use of the trick, but cannot use it against that same target for one hour.
+
+<span id="piercing-wound"></span>
+=== Piercing Wound ===
+
+<div>
+
+''Dexterity (Martial Weapon) Basic Skill Trick''
+
+</div>
+When you hit with an attack from a ranged weapon or a Finesse weapon, you can expend one use of your skill trick pool to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. On a successful save, you do not expend the use of the trick, but cannot use it against that same target until the end of their next turn.
+
+<span id="primal-initiate"></span>
+=== Primal Initiate ===
+
+<div>
+
+''Wisdom (Nature) Basic Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Druid or Shaman list, as well as one spell of 1st level. You can cast this spell once without spending a spell slot and regain the ability to do so when you finish a long rest. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="scholar-history"></span>
+=== Scholar: History ===
+
+<div>
+
+''Intelligence (History) Basic Skill Trick''
+
+</div>
+You can automatically identify significant family lines, crests, and recent events across the local area. Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
+
+<span id="scholar-nature"></span>
+=== Scholar: Nature ===
+
+<div>
+
+''Intelligence (Nature) Basic Skill Trick''
+
+</div>
+You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
+
+<span id="scholar-religion"></span>
+=== Scholar: Religion ===
+
+<div>
+
+''Intelligence (Religion) Basic Skill Trick''
+
+</div>
+You automatically recognize holy symbols of currently-active religions and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
+
+<span id="sense-baleful-magic"></span>
+=== Sense Baleful Magic ===
+
+<div>
+
+''Wisdom (Arcana) Basic Skill Trick''
+
+</div>
+You are sensitive to the presence of hostile magics in your proximity. When you are within 30 ft. of a magical trap, spell glyph, or other hostile magical environment, you can use your passive Wisdom (Arcana) instead of your passive Wisdom (Perception) to determine their location and nature.
+
+Additionally, you have advantage on checks made to determine the spell being cast.
+
+<span id="shield-bash"></span>
+=== Shield Bash ===
+
+<div>
+
+''Strength (Shield) Basic Skill Trick''
+
+</div>
+You can expend one use of your skill trick pool to lash out with your shield. Make an attack with a proficient melee weapon. On a hit, the opponent takes 1d4 bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
+
+Staggered creatures make attacks at disadvantage, cannot take reactions or cast non-cantrip spells, and have disadvantage on Dexterity and Strength saving throws.
+
+<span id="soothe-domesticated-animal"></span>
+=== Soothe Domesticated Animal ===
+
+<div>
+
+''Wisdom (Animal Handling) Basic Skill Trick''
+
+</div>
+You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
+
+<span id="trap-finder"></span>
+=== Trap Finder ===
+
+<div>
+
+''Intelligence (Investigation) Basic Skill Trick''
+
+</div>
+You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you can expend a use of your skill trick pool to gain advantage on any Dexterity saving throws to avoid their effects.
+
+<span id="tumble"></span>
+=== Tumble ===
+
+<div>
+
+''Dexterity (Acrobatics) Basic Skill Trick''
+
+</div>
+You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space.
+
+<span id="skill-tricks-advanced"></span>
+== Advanced Skill Tricks ==
+
+Advanced skill tricks require a +4 proficiency or level 8 characters.
+
+<span id="arcane-journeyman"></span>
+=== Arcane Journeyman ===
+
+<div>
+
+''Intelligence (Arcana) Advanced Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Wizard or Sorcerer list, as well as one spell of 1st or 2nd level from the same list. You can cast this spell once without spending a spell slot and regain the ability to do so when you finish a long rest. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="athlete"></span>
+=== Athlete ===
+
+<div>
+
+''Strength (Athletics) Advanced Skill Trick''
+
+</div>
+You can climb at full speed without making checks even on surfaces with few handholds or slick surfaces. You can expend a use of your skill trick pool to climb even magically slick surfaces without needing hands or a check; if you are still on this surface at the start of your next turn, you must expend additional uses or use your hands.
+
+Additionally, you gain a swimming speed equal to your normal speed and no longer need to make checks to swim even in very rough or fast waters.
+
+Additionally, the distance you can jump doubles and the height at which you start taking fall damage increases to 30 ft (taking 1d6 for the first 30 ft you fall and 1d6 for every 10 ft above that).
+
+<span id="bait-and-switch"></span>
+=== Bait and Switch ===
+
+''Charisma (Deception) Advanced Skill Trick''
+
+As a bonus action, you can expend one use of your skill trick pool to swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks.
+
+<span id="befriend-wild-animal"></span>
+=== Befriend Wild Animal ===
+
+<div>
+
+''Wisdom (Animal Handling) Advanced Skill Trick''
+
+</div>
+As an action, you can expend one use of your skill trick pool to attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
+
+<span id="bond-breaker"></span>
+=== Bond Breaker ===
+
+<div>
+
+''Strength (General) Advanced Skill Trick''
+
+</div>
+You can break any non-magical shackles or bonds without a check by expending a use of your skill trick pool. If the shackles are magical, you gain +10 on the Strength check to break free.
+
+<span id="delay-unconsciousness"></span>
+=== Delay Unconsciousness ===
+
+<div>
+
+''Constitution (General) Advanced Skill Trick''
+
+</div>
+As a reaction when you are brought to zero hit points, you can expend one use of your skill trick pool to gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
+
+<span id="demoralize"></span>
+=== Demoralize ===
+
+<div>
+
+''Charisma (Intimidation) Advanced Skill Trick''
+
+</div>
+As an action, you can expend one use of your skill trick pool to either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken until the end of their next turn. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them.
+
+Broken creatures attempt to exit combat by fleeing, surrendering, or playing dead. They take no actions other than in service of this goal.
+
+<span id="divine-journeyman"></span>
+=== Divine Journeyman ===
+
+<div>
+
+''Wisdom (Religion) Advanced Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Cleric list, as well as one spell of 1st or 2nd level from the same list. You can cast this spell once without spending a spell slot and regain the ability to do so when you finish a long rest. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="fascinate"></span>
+=== Fascinate ===
+
+<div>
+
+''Charisma (Performance) Advanced Skill Trick''
+
+</div>
+As an action, you can expend one use of your skill trick pool to begin a distracting performance. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction).
+
+<span id="find-weakness"></span>
+=== Find Weakness ===
+
+<div>
+
+''Intelligence (Investigation) Advanced Skill Trick''
+
+</div>
+As a bonus action, you can expend one use of your skill trick pool to search for flaws in your opponent. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
+
+* Their highest and lowest saving throw modifiers
+* Any resistances or immunities they have.
+* Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
+* Their current goals
+
+Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
+
+<span id="mental-toughness"></span>
+=== Mental Toughness ===
+
+<div>
+
+''Charisma (General) Advanced Skill Trick''
+
+</div>
+When you are afflicted by the [[conditions.html#charmed|charmed]], [[conditions.html#frightened|frightened]], or [[conditions.html#incapacitated|incapacitated]] conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can expend one use of your skill trick pool to to ignore the effects of those conditions until the end of your turn.
+
+<span id="people-whisperer"></span>
+=== People Whisperer ===
+
+<div>
+
+''Wisdom (Insight) Advanced Skill Trick''
+
+</div>
+When you make a Wisdom (Insight) check and the result is above a 15, you gain one pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
+
+<span id="primal-journeyman"></span>
+=== Primal Journeyman ===
+
+<div>
+
+''Wisdom (Religion) Advanced Skill Trick''
+
+</div>
+You learn one cantrip of your choice from the Druid or Shaman list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+<span id="pocket-sand"></span>
+=== Pocket Sand ===
+
+<div>
+
+''Dexterity (Sleight of Hand) Advanced Skill Trick''
+
+</div>
+As a bonus action, you can expend one use of your skill trick pool to attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success, you do not expend the use but cannot use this skill trick on the same target for one hour.
+
+<span id="resuscitation"></span>
+=== Resuscitation ===
+
+<div>
+
+''Wisdom (Medicine) Advanced Skill Trick''
+
+</div>
+As an action, you can expend a use of your skill trick pool to attempt to resuscitate someone who died within the last minute. Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 HP and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion.
+
+<span id="skulker"></span>
+=== Skulker ===
+
+<div>
+
+''Dexterity (Stealth) Advanced Skill Trick''
+
+</div>
+You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
+
+<span id="snow-job"></span>
+=== Snow Job ===
+
+<div>
+
+''Charisma (Deception) Advanced Skill Trick''
+
+</div>
+When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so at advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
+
+<span id="sunder"></span>
+=== Sunder ===
+
+<div>
+
+''Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick''
+
+</div>
+When you make an attack against an unattended object and hit, you ignore its Damage Threshold and deal double damage.
+
+Alternatively, you can target attended objects as follows, expending a use of your skill trick pool:
+
+* '''Armor''': Make an attack against the wearer's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
+* '''Weapons''': Make an attack against the wielder's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
+* '''Wielded spell foci or other objects in hand''': Make an attack at disadvantage against the holder's AC. On a hit, the focus or object is knocked from their grasp and lands 1d6 × 5 ft away in a random direction.
+
+<span id="wrestler"></span>
+=== Wrestler ===
+
+<div>
+
+''Strength (Athletics) Advanced Skill Trick''
+
+</div>
+You can grapple and shove creatures two sizes larger than yourself. If you expend a use of your skill trick pool, you can remove the size limit entirely.
+
+Additionally, when you start your turn with a creature grappled, you can expend a use of your skill trick pool and attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
+
+<span id="skill-tricks-expert"></span>
+== Expert Skill Tricks ==
+
+Expert skill tricks require a +5 proficiency or level 12 characters.
+
+<span id="blindfighter"></span>
+=== Blindfighter ===
+
+<div>
+
+''Wisdom (Perception) Expert Skill Trick''
+
+</div>
+Invisible or unseen enemies no longer have advantage to hit you. In addition, you do not have disadvantage to hit invisible or unseen enemies and gain blindsight out to 10 ft. If you already have blindsight or gain it later, this stacks.
+
+<span id="break-will"></span>
+=== Break Will ===
+
+<div>
+
+''Charisma (Intimidation) Expert Skill Trick''
+
+</div>
+This skill trick acts like [[#demoralize|Demoralize]] except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming [[conditions.html#broken|broken]] on a failure and [[conditions.html#frightened|frightened]] of you on a success. The frightened or broken state lasts for 1 minute. The cost increases to two uses of your skill trick pool.
+
+<span id="comprehend-dweomer"></span>
+=== Comprehend Dweomer ===
+
+<div>
+
+''Intelligence (Arcana) Expert Skill Trick''
+
+</div>
+You gain the following benefits:
+
+* You can determine the nature of any arcane phenomena you encounter, including spell glyphs, illusions, etc.
+* You can detect spellcasting within 60 ft. of you even if there are no components.
+* You can expend a use of your skill trick pool as a reaction to attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence.
+
+<span id="dungeoncrasher"></span>
+=== Dungeoncrasher ===
+
+<div>
+
+''Strength (Athletics) Expert Skill Trick''
+
+</div>
+When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 15 feet if you expend a use of your skill trick pool when making the check. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
+
+<span id="find-portal"></span>
+=== Find Portal ===
+
+<div>
+
+''Wisdom (Survival) Expert Skill Trick''
+
+</div>
+You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check and expend a use of your skill trick pool, with advantage if you also are proficient in Arcana. The result determines your success:
+
+Check Total
+
+</div>
+Result
+
+&lt; 10
+
+You find a portal to a plane of the DM's choosing. The location on that plane that it leads to is dangerous.
+
+10-14
+
+You find a portal to a plane of the DM's choosing. The location on that plane that it leads to is not inherently dangerous.
+
+15-19
+
+You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the DM, but is not inherently dangerous.
+
+20+
+
+You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
+
+<span id="like-a-ghost"></span>
+=== Like a Ghost ===
+
+<div>
+
+''Dexterity (Stealth) Expert Skill Trick''
+
+</div>
+When you are hidden, you no longer need to be concealed to remain hidden, but you must expend a use of your skill trick pool for every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
+
+<span id="slippery"></span>
+=== Slippery ===
+
+<div>
+
+''Dexterity (Acrobatics) Expert Skill Trick''
+
+</div>
+You can no longer be grappled or restrained by non-legendary effects as long as you expend a use of your skill trick pool when the effect is applied.
+
+<span id="skill-tricks-master"></span>
+== Master Skill Tricks ==
+
+Master skill tricks require a +6 proficiency or level 16 characters.
+
+<span id="balance-on-thin-air"></span>
+=== Balance on Thin Air ===
+
+<div>
+
+''Dexterity (Acrobatics) Master Skill Trick''
+
+</div>
+You can expend a use of your skill trick pool per turn to walk on air as if it was solid ground.
+
+<span id="dragons-fear"></span>
+=== Dragon's Fear ===
+
+<div>
+
+''Charisma (Intimidation) Master Skill Trick''
+
+</div>
+This skill trick works as [[#break-will|Break Will]], but with the addition that creatures whose defensive rating is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw. The cost increases to three uses of your skill trick pool.
+
+<span id="friend-to-all"></span>
+=== Friend to All ===
+
+<div>
+
+''Charisma (Persuasion) Master Skill Trick''
+
+</div>
+As an action, you can expend two uses of your skill trick pool to magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons.
+
+Alternatively, if you are not actively fighting someone, you can expend a use of your skill trick pool to force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time (if their nature allows--exceptionally chaotic entities such as demons will act according to their natures), but their disposition toward you may change.
+
+<span id="force-portal"></span>
+=== Force Portal ===
+
+<div>
+
+''Wisdom (Survival) Master Skill Trick''
+
+</div>
+As an action, you can expend two uses of your skill trick pool to force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane.
+
+<span id="healing-hands"></span>
+=== Healing Hands ===
+
+<div>
+
+''Wisdom (Medicine) Master Skill Trick''
+
+</div>
+As an action you can expend three uses of your skill trick pool to magically do one of the following to a creature you touch.
+
+* Heal the creature to half of its maximum hit points.
+* Remove any condition from a living creature.
+* Cure any disease and remove any poison or curse affecting the creature.
+* Break one spell affecting the creature.
+* Restore a dead body to life as long as it has been dead less than 1 hour. Taking this benefit causes both you and the target 3 levels of exhaustion.

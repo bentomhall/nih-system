@@ -204,7 +204,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 
-'''Battering''' Once per turn when you hit with a weapon attack dealing bludgeoning damage, you can force the target to make a Strength saving throw as part of that action. On a failed save, the target is knocked prone. In addition, once per turn when you hit a prone creature with an attack that deals bludgeoning damage, the creature must make a Constitution saving throw. On a failed save, the creature is stunned until the end of their next turn.
+'''Battering''' Once per turn when you hit with a weapon attack dealing bludgeoning damage, you can force the target to make a Strength saving throw as part of that action. On a failed save, the target is knocked prone.
 
 '''Cleaving''' Once per turn when you hit with a melee weapon attack dealing slashing damage, you can carry some of the damage to another target. When you do so, choose another target within your reach. Compare your attack roll to their AC as if you had attacked them. If you would have hit, they take damage equal to your weapon ability modifier, or twice as much if the initial attack was a critical hit.
 

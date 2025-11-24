@@ -19,7 +19,7 @@ This suit of armor is reinforced with adamantine, one of the hardest substances 
 \subsection{Aelven Chain}
 \textit{Armor (masterwork chain shirt), Hero}
 
-This also counts as mithril. You are considered proficient with this armor even if you lack proficiency with medium armor.
+This also counts as mithril. You are considered proficient with this armor even if you lack proficiency with medium armor, and can cast spells normally while wearing it even if you would not otherwise be able to.
 
 \subsection{Animated Shield}
 \textit{Armor (shield), Hero (requires attunement)} 
@@ -91,7 +91,7 @@ These furred boots are snug and feel quite warm. While you wear them, you gain t
 \begin{itemize}
  \item You have resistance to cold damage.
  \item You ignore difficult terrain created by ice or snow.
- \item You can tolerate temperatures as low as \textminus50degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as \textminus100 degreesFahrenheit.
+ \item You can tolerate temperatures as low as \textminus50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as \textminus100 degrees Fahrenheit.
 \end{itemize}
 
 \subsection{Cape of the Mountebank}
@@ -119,7 +119,7 @@ This fine garment is made of black spider-silk interwoven with faint silvery thr
 \subsection{Cloak of Displacement}
 \textit{Cloak, Hero (requires attunement)}
 
-While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.
+While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move, and has no affect on creatures that use tremorsense or blindsight to see.
 
 \subsection{Cloak of Protection}
 \textit{Cloak, Adventurer (requires attunement)}
@@ -150,8 +150,8 @@ Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons
 
 \begin{DndTable}{llXll}
 Dragon  & Resistance && Dragon & Resistance \\ 
-Black &  Acid      &&  Gold  &  Fire        \\
-Blue  &  Lightning &&  Green &  Poison \\      
+Black &  Necrotic      &&  Gold  &  Radiant        \\
+Blue  &  Lightning &&  Green &  Acid \\      
 Brass &  Fire      &&  Red   & Fire     \\   
 Bronze & Lightning &&  Silver & Cold      \\  
 Copper & Acid      &&  White &  Cold \\
@@ -175,7 +175,7 @@ While wearing this armor, you can use a bonus action to cast \nameref{spell:disg
 \subsection{Gloves of Missile Snaring}
 Gloves, Adventurer (requires attunement) 
 
-These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand. The damage reduction provided by these gloves stacks with the Brawler ability Deflect Missiles.
+These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand. The damage reduction provided by these gloves stacks with the Brawler ability Deflect Attacks.
 
 \subsection{Gloves of Swimming and Climbing}
 Gloves, Adventurer (requires attunement) 
@@ -185,7 +185,7 @@ While wearing these gloves, climbing and swimming don't cost you extra movement,
 \subsection{Hat of Disguise}
 Hat, Adventurer (requires attunement) 
 
-While wearing this hat, you can use an action to cast the \nameref{spell:disguise-self} spell from it at will (DC 10). The spell ends if the hat is removed.
+While wearing this hat, you can use an action to cast the \nameref{spell:disguise-self} spell from it at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus. The spell ends if the hat is removed.
 
 \subsection{Headband of Intellect}
 Hat, Adventurer (requires attunement) 
@@ -200,7 +200,7 @@ This dazzling helm is set with 5 diamonds, 10 rubies, 15 fire opals, and 20 opal
     \item You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: \nameref{spell:daylight} (opal), \nameref{spell:fireball} (fire opal), \nameref{spell:true-seeing} (diamond), or \nameref{spell:wall-of-fire} (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
     \item As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.
     \item As long as the helm has at least one ruby, you have resistance to fire damage.
-    \item As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. Theflames are harmless to you and the weapon. When you hit with an attack using the blazing weapon,the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.
+    \item As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.
 \end{itemize}
 
 \subsection{Helm of Comprehending Languages}
@@ -211,8 +211,7 @@ While wearing this helm, you understand all spoken languages and can be understo
 \subsection{Helm of Telepathy}
 Hat, Adventurer (requires attunement)
 
-While wearing this helm, you can use an action to cast the \nameref{spell:detect-thoughts} spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply-using
-a bonus action to do so-while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the
+While wearing this helm, you can use an action to cast the \nameref{spell:detect-thoughts} spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the
 \nameref{spell:suggestion} spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
 
 \subsection{Helm of Teleportation}
@@ -333,7 +332,7 @@ These boots have 3 charges. While you wear these boots, you can expend a charge 
 \subsection{Wings of Flying}
 Cloak, Hero (requires attunement) 
 
-While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d12 hours.
+While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d4 hours.
 
 \subsection{Woodland Cloak}
 Cloak, Adventurer (requires attunement) 

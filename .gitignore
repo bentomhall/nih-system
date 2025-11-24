@@ -7,3 +7,4 @@ assets/*.svg
 **/*.fls
 **/*.fdb_latexmk
 **/*.out
+tools/output

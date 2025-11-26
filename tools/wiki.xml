@@ -149,7 +149,7 @@ If you use the [[Player Option--Variant Races| variant race]] option for applica
 [4]: Main stats are found in the [[Player Option--Variant Races]] document.
 
 ==== Classes and Archetypes ====
-To learn more about the role of the classes (and their NPC equivalents) in Dreams of Hope, see [[Classes and Quartus]]. For a list of allowed classes and archetypes, talk to the DM.
+To learn more about the role of the classes (and their NPC equivalents) in Dreams of Hope, see [[Classes and Quartus]]. For a list of allowed classes and archetypes, talk to the GM.
 
 ==== Technology and Magic Levels ====
 Magic is common, but permanent magic items are rare. There is no general ability to purchase most permanent magical items, although some organizations facilitate purchase of items for their members in good standing (generally limited to Uncommon and Common items). Potions and other consumable magical items are purchasable in the larger cities.
@@ -216,7 +216,7 @@ Pronunciation guide (capitalization indicates primary emphasis):
       <model>wikitext</model>
       <format>text/x-wiki</format>
       <text bytes="5441" sha1="m3wch0qgwexqo52s0u2hyc3c8fx5v4i" xml:space="preserve">
-These are the changes I usually make when DM'ing. Other than the racial restrictions these are not setting specific.
+These are the changes I usually make when GM'ing. Other than the racial restrictions these are not setting specific.
 
 == Class Changes ==
 UA and homebrew are available on a case-by-case basis except where noted.
@@ -7039,7 +7039,7 @@ Or, you can create your own from scratch. Follow these rules:
 #A pouch of gold between 10 and 20 gp.
 #A flavor item (unique tool, such as shovel, a musical instrument, etc).
 #1-2 trinkets
-#Choose one of the printed background features or talk to the DM to determine a suitable feature.
+#Choose one of the printed background features or talk to the GM to determine a suitable feature.
 
 ==Background Peculiarities by Starting Region==
 Not all backgrounds fit as written for all regions. For example, there are no hereditary aristocrats in [[Byssia]]. Thus, the Noble background needs modification. Backgrounds not mentioned can be used as written.
@@ -12510,7 +12510,7 @@ The following are significant players in Rauviz City.
 
 === Criminal Orgs ===
 
-# The '''Dockside Mutual Assistance organization'''. The DMA's (Deemas as they're frequently called) are the high-class, nearly-legitimate underground. They provide much of the security for the in-wall sector via their legitimate arm, which also does quiet money-lending and most of the entertainment (both salacious and otherwise) for the rich, famous, or otherwise big spenders. Their ''illegitimate'' arm provides drugs, unsavory pleasures, and extortion (often including kidnapping) for the high-class citizens. Several of the burghers are well-known to be members of the DMA. Their members wear a red armband with an anchor on it.
+# The '''Dockside Mutual Assistance organization'''. The GMA's (Deemas as they're frequently called) are the high-class, nearly-legitimate underground. They provide much of the security for the in-wall sector via their legitimate arm, which also does quiet money-lending and most of the entertainment (both salacious and otherwise) for the rich, famous, or otherwise big spenders. Their ''illegitimate'' arm provides drugs, unsavory pleasures, and extortion (often including kidnapping) for the high-class citizens. Several of the burghers are well-known to be members of the GMA. Their members wear a red armband with an anchor on it.
 # '''Greystreet Boys.''' Contrary to their name, the Boys are led by a tiny, foul-mouthed kliba halfling known as Lady Sugar. They grew out of a youth gang and have come to dominate the northern part of the out-wall of Rauviz (north of Market Road, but with influence in Marketside South. They specialize in commercial "insurance" (although they do provide actual policing for that area as well, making it one of the safer zones) and have regulated theft--residents and merchants buy theft insurance, which means that if more than a certain value of goods are stolen or the thieves use unnecessary force, the Boys will hunt them down and break their legs or worse. They also do a lot of smuggling and fencing of illicit goods, although not much in the way of drugs (at least to be sold within their area). Their members wear genteel clothes--a particular plaid pocket hanky is their recognition symbol.
 # '''[[Riverside Shadows]]'''. The Shadows are the least cultured of the three main criminal organizations in Rauviz. They control the slums south of Market Street by force and ruthless violence. They're especially known for using the youth gangs as a training ground. The only reason they haven't been crushed by the other groups is that they've made deals with the owners of the factories and the slumlords to bust up any worker's rights demonstrations or other impediments to exploitation. Their calling card is a black scarf tied around the head or neck.
 
@@ -12849,7 +12849,7 @@ And presents tensions as the Wyrmholders are not happy with this state of affair
 The town has no real government structure. Guarding is done by goons hired by the trading companies, and focuses on the warehouse districts. There is a local militia under the blacksmith, Agata, but that is rarely used.
 
 ==Map==
-[[File:vaeltaa_DM.png|frame|800px|Vaelta, showing districts and locations]]
+[[File:vaeltaa_GM.png|frame|800px|Vaelta, showing districts and locations]]
 
 ==Major buildings and Services== 
 ===Inns===
@@ -17428,7 +17428,7 @@ Normal occupancy of the facility includes
       <origin>2453</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="4499" sha1="gszhzcujfhtoq5y1k90r2n7psdb58gg" xml:space="preserve">Those who swear the Oath of Fanaticism go well beyond normal devotion to a religion or secular cause. They swear and pledge their lives to uphold, defend, and spread their organization’s influence throughout the world. When you choose this Oath, work with your DM to choose a faction present in your game world. From that faction, choose three points of doctrine or dogma that you are particularly attached to. These are your Core Doctrines.
+      <text bytes="4499" sha1="gszhzcujfhtoq5y1k90r2n7psdb58gg" xml:space="preserve">Those who swear the Oath of Fanaticism go well beyond normal devotion to a religion or secular cause. They swear and pledge their lives to uphold, defend, and spread their organization’s influence throughout the world. When you choose this Oath, work with your GM to choose a faction present in your game world. From that faction, choose three points of doctrine or dogma that you are particularly attached to. These are your Core Doctrines.
 
 ==Tenets==
 ;The Path of the Righteous is Straight: I must hold to the Core Doctrines and not step outside their bounds. Strict adherence in all things gives me the strength to push on the Great Work.
@@ -25800,7 +25800,7 @@ Credit: [[Dilligas Husty]], AKA KorvinStarmast and used by permission
       <model>wikitext</model>
       <format>text/x-wiki</format>
       <text bytes="2036" sha1="a84s59ruxr5blt8w02vz784vv0jcmj8" xml:space="preserve">This song is a direct rip from a song by Rush, ''Closer to the Heart'', and is a heck of a lot longer.  It steals the meter directly from the phrasing of the song as performed on the album Farewell to Kings ... 
-[https://www.youtube.com/watch?v=kyhW2v0NDM0]
+[https://www.youtube.com/watch?v=kyhW2v0NGM0]
 
 ==For a Cleaner Heart==
 &lt;div style="font-size:92%; line-height: 2.1em;"&gt;
@@ -35538,7 +35538,7 @@ The rules for crafting items from Xanathar's Guide to Everything are in play.
 
 Non-magical items (and healing potions) can be made during resting hours as long as that makes sense--things that involve very detailed or complex manipulations or that require significant stationary tools (ie refining metals) may only be able to be done during stationary downtime with a properly-equipped crafting area. Value accumulates normally. Note that a work week on [[Quartus]] is 6 days, so a standard healing potion takes 3 work days (24 total work hours), which can be split across several days. Which exact tool proficiency is needed is somewhat flexible, but is bound by the fiction. No using leatherworker's tools to build a house.
 
-Custom non-magical items require a check-in with the DM ahead of time (just as with any custom item).
+Custom non-magical items require a check-in with the GM ahead of time (just as with any custom item).
 
 Potions of healing are not considered magic items. Regular ones can be bought in limited quantities anywhere--larger, adventuring-focused shops may have (almost) unlimited quantities. Higher-grade ones require access to a [[Registered Companies|Registered Company]] most of the time, as they're the primary customers.
 
@@ -38167,7 +38167,7 @@ As the spell. Note: This does allow bypassing such things as glyphs of warding k
 
 As the spell, with the following paragraph added.
 
-The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the DM.
+The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the GM.
 
 ==== Mending ====
 ''Common, 1 minute.''
@@ -38198,7 +38198,7 @@ Greater Restoration (1 hour, 100 gp of diamond dust, requires 5th level): The cr
 ==== Unseen Servant ====
 ''Common, 10 minutes, Costly (1 gp).''
 
-As the spell, although it cannot take any action that would directly or foreseeably cause damage to another creature (as decided by the DM, although rejected courses of action won’t burn its turns). Intent: This is a noncombatant and can’t directly help you in combat.
+As the spell, although it cannot take any action that would directly or foreseeably cause damage to another creature (as decided by the GM, although rejected courses of action won’t burn its turns). Intent: This is a noncombatant and can’t directly help you in combat.
 
 ==== Voice the Voiceless [Speak with Animals, Speak with Plants, Speak with Dead] ====
 ''Common (see text), 10 minutes, Debilitating (1, see text)''.
@@ -38413,7 +38413,7 @@ A bound creature must follow your instructions to the best of its ability. You m
 
 A creature bound in this way cannot be bound again for a full year and a day after completing their binding. As binding a creature in this way involves compelling them by the True Words that comprise their essence, a very uncomfortable and agonizing process, creatures bound this way are almost invariably unfriendly to the performer after being released.
 
-'''Note''': The specificity of the task is a conversation between you and the DM. The intent is to make it clear when the task is over and avoid open-ended tasks.
+'''Note''': The specificity of the task is a conversation between you and the GM. The intent is to make it clear when the task is over and avoid open-ended tasks.
 
 '''Special''': By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
 
@@ -38422,7 +38422,7 @@ A creature bound in this way cannot be bound again for a full year and a day aft
 
 You commune with a deity, primal spirits, or an non-deific otherworldly entity.
 
-'''Deity''':  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren’t necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity’s knowledge. In a case where a one-word answer could be misleading or contrary to the deity’s interests, the DM might offer a short phrase as an answer instead.
+'''Deity''':  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren’t necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity’s knowledge. In a case where a one-word answer could be misleading or contrary to the deity’s interests, the GM might offer a short phrase as an answer instead.
 
 This incantation requires a pre-existing relationship with a deity and an environment attuned to the deity in question (such as a shrine, consecrated location, or the presence of holy symbols of that deity). Contacting this same deity again before completing a long rest angers the deity and they will refuse to answer.
 
@@ -41704,7 +41704,7 @@ After the death of the Immortal Emperor [[Hafgan ap Kel'tan]] in the fall of 251
       <origin>2752</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="1449" sha1="s8bj38lfium505wpoe01ur46q4ukor4" xml:space="preserve">''The following are some of the spells created for use during campaigns set in Dreams of Hope. They may be available for the designated classes--each one is marked with a label of either "unrestricted", meaning it can be chosen freely, or "restricted", in which case access requires either DM approval or may require a quest.''
+      <text bytes="1449" sha1="s8bj38lfium505wpoe01ur46q4ukor4" xml:space="preserve">''The following are some of the spells created for use during campaigns set in Dreams of Hope. They may be available for the designated classes--each one is marked with a label of either "unrestricted", meaning it can be chosen freely, or "restricted", in which case access requires either GM approval or may require a quest.''
 
 == A-F ==
 
@@ -44923,13 +44923,13 @@ You search for signs of an accessible planar portal within 1 mile of you. Make a
 !Result
 |-
 |&lt; 10
-|You find a portal to a plane of the DM's choosing. The location on that plane that it leads to is immediately dangerous.
+|You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is immediately dangerous.
 |-
 |10-14
-|You find a portal to a plane of the DM's choosing. The location on that plane that it leads to is not inherently dangerous.
+|You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous.
 |-
 |15-19
-|You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the DM, but is not inherently dangerous.
+|You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous.
 |-
 |20+
 |You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
@@ -45820,7 +45820,7 @@ You gain the following spells known at the indicated levels. These do not count 
 |9th
 |Enervation
 |}
-Spells marked with * are found in sources other than the Players Handbook and can be substituted for similarly-themed spells at the DM's discretion if not available.
+Spells marked with * are found in sources other than the Players Handbook and can be substituted for similarly-themed spells at the GM's discretion if not available.
 
 ==== Armored Caster ====
 When you pick this assignment at level one, you gain proficiency in medium armor and shields and can cast warmage spells while wearing and wielding them. You can use your shield as a focus for your spells.

@@ -50,7 +50,7 @@ By the same token, if a feature or effect allows you to multiply your proficienc
 In general, you don't multiply your proficiency bonus for attack rolls or saving throws. If a feature or effect allows you to do so, these same rules apply.
 
 \section{Stamina (STA) and Aether (AET)}\label{sec:stamina-and-aether}
-Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class–physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
+Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class---physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
 
 \subparagraph{Deflect}\label{action:deflect}  When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
 
@@ -216,7 +216,7 @@ Your Strength score determines the amount of weight you can bear. The following 
 
 \subparagraph*{Push, Drag, or Lift} You can push, drag, or lift a weight in pounds up to twice your carrying capacity (or 300 lbs + 60 times your Strength score). While pushing or dragging weight in excess of your carrying capacity, your speed drops to 5 feet.
 
-\subparagraph*{Size and Strength} Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above Medium, double the creature's carrying capacity and the amount it can push, drag, or lift. For a Tiny creature, halve these weights.
+\subparagraph*{Size and Strength} Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above Medium, double the creature's carrying capacity and the amount it can push, drag, or lift. For a Tiny creature, halve these weights. Miniscule creatures have a carrying capacity of < 1 lb and can only push, drag, or lift 1 lb max, regardless of their strength score.
 
 \subsection{Dexterity}
 
@@ -259,7 +259,7 @@ At the beginning of every combat, you roll initiative by making a Dexterity chec
 
 \begin{figure}[htb]
     \begin{DndSidebar}{Hiding}
-The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
+The GM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
 
 You can't hide from a creature unless you have \textbf{total concealment} from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
 
@@ -267,7 +267,7 @@ An invisible creature can always try to hide. Signs of its passage might still b
 
 In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be \nameref{condition:surprised} by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM.
 
-\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
+\subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
 \subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in chapter 8, “Adventuring.”
 \end{DndSidebar}
@@ -871,12 +871,13 @@ Flying creatures enjoy many benefits of mobility, but they must also deal with t
 
 \subsection{Creature Size}
 
-Each creature controls a different amount of space in combat. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
+Each creature controls a different amount of space in combat. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories. Miniscule creatures and objects are those no more than a few inches across, such as normal mice, non-giant insects, etc. They do not control space in combat.
 
 \begin{figure}
 \begin{DndTable}[header=Size Categories]{lX}
     Size & Space \\
-    Tiny & 2.5 by 2.5 ft. or smaller \\
+    Miniscule & --- \\
+    Tiny & 2.5 by 2.5 ft. \\
     Small & 5 by 5 ft. \\
     Medium & 5 by 5 ft. \\
     Large & 10 by 10 ft. \\
@@ -964,6 +965,117 @@ When you take the Search action, you devote your attention to finding something.
 
 You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.
 
+\section{Ability Range}
+\subsection{Ranged Attacks}
+
+You can make ranged attacks only against targets within a specified range.
+
+If a ranged attack, such as one made with a spell, has a single range, you can't attack a target beyond this range.
+
+Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can't attack a target beyond the long range.
+
+\subsection{Spells and Magical Effects}\label{subsec:magic-range}
+
+The target of a spell or magical effect must be within the effect's range. For a spell like \nameref{spell:magic-missile}, the target is a creature. For a spell like \nameref{spell:fireball}, the target is the point in space where the ball of fire erupts.
+
+Most effects have ranges expressed in feet. Some effects can target only a creature (including you) that you touch. This is denoted as a range of Touch. Other effects, such as the \nameref{spell:shield} spell, affect only you. These effects have a range of self.
+
+Effects that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the effect must be you (see “\nameref{subsec:areas-of-effect}” later in the this chapter).
+
+Once an effect is cast, its effects aren't limited by its range, unless the effect's description says otherwise.
+
+Remember that spells and legendary effects with ranges other than Touch or Self provoke \nameref{sec:opportunity-attacks} from non-incapacitated enemies.
+
+\section{Concentration \label{sec:concentration}}
+Some abilities require you to maintain \nameref{condition:concentration} in order to keep their magic active. If you lose concentration, such an ability ends.
+
+If an ability must be maintained with concentration, that fact appears in its Duration entry or its text, and the ability specifies how long you can concentrate on it. You can end concentration on your turn (no action required).
+
+Normal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:
+
+\begin{itemize}
+    \item \textbf{Casting another ability that requires concentration.} You lose concentration on an ability if you use a different ability that requires concentration. You can't concentrate on two abilities at once. The concentration on the first effect fades \textit{before} the second ability takes effect.
+    \item \textbf{Taking damage or being grappled or shoved.} Whenever you take damage while you are concentrating on an ability, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage. Being grappled or knocked prone requires a DC 10 Constitution saving throw to maintain concentration.
+    \item \textbf{Being incapacitated or killed.} You lose concentration on an ability if you are incapacitated or if you die. 
+\end{itemize}
+
+The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a Constitution saving throw (against a DC they select) to maintain concentration on an ability.
+
+\section{Targets \label{sec:targets}}
+A typical ability requires you to pick one or more targets to be affected by the ability's effect. A ability's description tells you whether the ability targets creatures, objects, or a point of origin for an area of effect (described below). Abilities that explicitly target creatures cannot target objects (see \nameref{sec:invalid-targets} below).
+
+Unless an ability has a perceptible effect, a creature might not know it was targeted by an ability at all. An effect like crackling lightning is obvious, but a more subtle effect, such as an attempt to read a creature's thoughts, typically goes unnoticed, unless the ability says otherwise.
+
+Any creature or object directly affected by the ability is a target for that ability. Abilities that enhance or conjure creatures who then make attacks or interact with other objects or creatures only target the creatures enhanced or conjured. As such, a creature immune to magical abilities with a cost of 10 AET or lower can still be hurt by a creature buffed with \nameref{spell:haste}, despite that spell naturally having a cost lower than 10 AET.
+
+Specific abilities can override these general rules, but must say that they do. For example, fireball says it can spread around corners, so while you must have a clear path to the point targeted with the aoe, targets of the fire do not need to have a clear path to that center as long as there is some path within the spell's area.
+
+\subsubsection{A Clear Path to the Target}
+
+To target something, you must have a clear path to it, so it can't be behind total cover. Abilities that require you to see your target(s) specifically say so.
+
+If you place an area of effect at a point that you can't see and an obstruction, such as a wall, is between you and that point, the point of origin comes into being on the near side of that obstruction.
+
+\subsubsection{Targeting Yourself}
+
+If an ability targets one or more creatures of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of an ability you use, you are a target yourself unless the ability allows you to choose specific creatures, in which case you can (but are not required to) target yourself.
+
+Abilities with ranges of Self (cone) or Self (cube) start at one side of your space and project outward away from you. You can choose to be included in the effect or not even if it normally does not allow a choice of targets.
+
+\subsubsection{Invalid Targets}\label{sec:invalid-targets}
+
+If you select a target that is not valid for the ability and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would \textit{not} be obvious, the spell goes off, the aether or stamina (if any) is expended, but the target is not affected. You gains no information from this--for abilities that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Attacks "miss" (have no effect on the target).
+
+\subsection{Areas of Effect}\label{subsec:areas-of-effect}
+
+Abilities such as \nameref{spell:burning-hands} and \nameref{spell:cone-of-cold} cover an area, allowing them to affect multiple creatures at once.
+
+An ability's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere. Every area of effect has a \textbf{point of origin}, a location from which the ability's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some abilities have an area whose origin is a creature or an object.
+
+A ability's effect expands in straight lines from the point of origin. If no unblocked straight line extends from the point of origin to a location within the area of effect, that location isn't included in the ability's area. To block one of these imaginary lines, an obstruction must provide total cover.
+
+\subsubsection{Cone}
+
+A cone extends in a direction you choose from its point of origin. A cone's width at a given point along its length is equal to that point's distance from the point of origin. A cone's area of effect specifies its maximum length.
+
+A cone's point of origin is not included in the cone's area of effect, unless you decide otherwise.
+
+\subsubsection{Cube}
+
+You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side. For example, 
+
+A cube's point of origin is not included in the cube's area of effect, unless you decide otherwise.
+
+A 5' cube can affect four Medium or Small creatures as long as they are adjacent to each other in a square formation and the chosen point is directly between them.
+
+\subsubsection{Cylinder}
+
+A cylinder's point of origin is the center of a circle of a particular radius, as given in the spell description. The circle must either be on the ground or at the height of the spell effect. The energy in a cylinder expands in straight lines from the point of origin to the perimeter of the circle, forming the base of the cylinder. The spell's effect then shoots up from the base or down from the top, to a distance equal to the height of the cylinder.
+
+A cylinder's point of origin is included in the cylinder's area of effect.
+
+\subsubsection{Line}
+
+A line extends from its point of origin in a straight path up to its length and covers an area defined by its width. A 5' wide line can hit two creatures if they are adjacent to each other and the line is placed directly between them.
+
+A line's point of origin is not included in the line's area of effect, unless you decide otherwise.
+
+\subsubsection{Sphere}
+
+You select a sphere's point of origin, and the sphere extends outward from that point. The sphere's size is expressed as a radius in feet that extends from the point.
+
+A sphere's point of origin is included in the sphere's area of effect.
+
+\section{Overlapping Effects (aka Stacking Rules)\label{sec:stacking}}
+Generally, effects combine (aka "stack") unless they came from abilities with the same name. Durations overlap---if you're stunned from two different sources and one is removed or ends, the other continues for its own independent duration. If multiple effects allow saving throws at the end of your turn to end the effect, you make the saving throws separately for each source. Binary conditions (such as poisoned) have no additional effect if poisoned multiple times.
+
+A few exceptions exist, mainly the following:
+\begin{itemize}
+\item If an ability creates multiple areas of effect (such as the legendary effect \textit{meteor swarm}), only one of those areas of effect can affect a single target at the same time even if they overlap or the creature (due to size, etc.) occupies multiple areas of effect.
+\item Can't is more specific than can unless explicitly stated. An effect that removes an ability (such as preventing movement) supersedes an ability or feature that allows movement unless the second ability or feature explicitly overrides the prohibition (such as \textit{freedom of movement}).
+\item No more than one bonus die can be added to any ability check or saving throw, even if multiple sources of bonus dice exist.
+\end{itemize}
+
 \section{Making an Attack}
 
 Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack--whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
@@ -1002,7 +1114,7 @@ If the d20 roll for an attack is a 1, the attack misses regardless of any modifi
 
 Combatants often try to escape their foes' notice by hiding, casting the invisibility spell, or lurking in darkness.
 
-When you attack a target that you can't see, you have disadvantage on the attack roll. This is true whether you're guessing the target's location or you're targeting a creature you can hear but not see. If the target isn't in the location you targeted, you automatically miss, but the GM typically just says that the attack missed, not whether you guessed the target's location correctly. As a general rule, characters are assumed to be able to locate other creatures within 30 ft of them via sound, smell, or other senses even if they can't see them and do not need to guess their locations. A DM may rule otherwise in particular environments.
+When you attack a target that you can't see, you have disadvantage on the attack roll. This is true whether you're guessing the target's location or you're targeting a creature you can hear but not see. If the target isn't in the location you targeted, you automatically miss, but the GM typically just says that the attack missed, not whether you guessed the target's location correctly. As a general rule, characters are assumed to be able to locate other creatures within 30 ft of them via sound, smell, or other senses even if they can't see them and do not need to guess their locations. A GM may rule otherwise in particular environments.
 
 When a creature can't see you, you have advantage on attack rolls against it. If you are hidden—both unseen and unheard—when you make an attack, you give away your location when the attack hits or misses.
 
@@ -1011,14 +1123,6 @@ When a creature can't see you, you have advantage on attack rolls against it. If
 When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack.
 
 If the target of a ranged attack is totally concealed but does not have total cover (such by as if they are heavily obscured by dense fog), the attack is made with disadvantage. This overrides the \nameref{subsec:unseen-attackers} rules.
-
-\subsubsection{Range}
-
-You can make ranged attacks only against targets within a specified range.
-
-If a ranged attack, such as one made with a spell, has a single range, you can't attack a target beyond this range.
-
-Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can't attack a target beyond the long range.
 
 \subsubsection{Ranged Attacks in Close Combat}
 
@@ -1085,7 +1189,9 @@ A target with \textbf{half cover} has a +2 bonus to AC and Dexterity saving thro
 
 A target with \textbf{three-quarters cover} has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by a solid obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk. Creatures two sizes larger or more than the target provide three-quarters cover instead of half cover. 
 
-A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different--a target has total cover when it stands behind a \nameref{spell:wall-of-force}, but as the wall is transparent, it has no concealment and cannot hide. And vice versa--a target concealed by heavy fog or by unilluminated darkness has no cover but is totally concealed and can attempt to hide.
+A target with \textbf{total cover} can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different--a target has total cover when it stands behind a \nameref{spell:wall-of-force}, but as the wall is transparent, it has no concealment and cannot hide. And vice versa--a target concealed by heavy fog or by unilluminated darkness has no cover but is totally concealed and can attempt to hide.
+
+All abilities require a clear path to their target unless they specify otherwise or unless their effect would not work as written otherwise (such as the \nameref{inc:teleport} incantation). 
 
 \section{Damage and Healing}
 
@@ -1316,6 +1422,7 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 \begin{figure}
 \begin{DndTable}[header=Object Hit Points]{Xll}
         \textbf{Size} & \textbf{Fragile} & \textbf{Resilient} \\
+        Miniscule (vial, ring) & 1 & 5 (2d4) \\
         Tiny (bottle, lock) & 2 (1d4) & 5 (2d4) \\
         Small (chest, lute) & 3 (1d6) & 10 (3d6) \\
         Medium (barrel, chandelier) & 4 (1d8) & 18 (4d8) \\

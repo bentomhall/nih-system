@@ -44,9 +44,6 @@ Because of the mental focus and precise gestures required for spellcasting, armo
 
 A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether and cannot be overcast. Some cantrips gain more power as the caster becomes stronger; this is detailed in the entry itself.
 
-\subsection{Incantations}
-See \nameref{ch:incantations}.
-
 \section{Casting a Spell}
 
 When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.
@@ -70,16 +67,7 @@ Some spells can be cast as reactions. These spells take a fraction of a second t
 Certain spells require more time to cast: minutes or even hours. When you cast a spell with a casting time longer than a single action or reaction, you must spend your action each turn casting the spell, and you must maintain your concentration while you do so (see “Concentration” below). If your concentration is broken, the spell fails, but you don't expend aether. If you want to try casting the spell again, you must start over.
 
 \subsection{Spell Range}
-
-The target of a spell must be within the spell's range. For a spell like \nameref{spell:magic-missile}, the target is a creature. For a spell like \nameref{spell:fireball}, the target is the point in space where the ball of fire erupts.
-
-Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch. This is denoted as a range of Touch. Other spells, such as the \nameref{spell:shield} spell, affect only you. These spells have a range of self.
-
-Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell's effect must be you (see “\nameref{subsec:areas-of-effect}” later in the this chapter).
-
-Once a spell is cast, its effects aren't limited by its range, unless the spell's description says otherwise.
-
-Remember that spells with ranges other than Touch or Self provoke \nameref{sec:opportunity-attacks} from non-incapacitated enemies.
+See \nameref{subsec:magic-range}.
 
 \subsection{Components}
 
@@ -115,85 +103,7 @@ Many spells are instantaneous. The spell harms, heals, creates, or alters a crea
 
 \subsubsection{Concentration}
 
-Some spells require you to maintain \nameref{condition:concentration} in order to keep their magic active. If you lose concentration, such a spell ends.
-
-If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration on your turn (no action required).
-
-Normal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:
-
-\begin{itemize}
-    \item \textbf{Casting another spell that requires concentration.} You lose concentration on a spell if you cast another spell or effect that requires concentration. You can't concentrate on two spells or effects at once.
-    \item \textbf{Taking damage or being grappled or shoved.} Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage. Being grappled or knocked prone requires a DC 10 Constitution saving throw to maintain concentration.
-    \item \textbf{Being incapacitated or killed.} You lose concentration on a spell if you are incapacitated or if you die. 
-\end{itemize}
-
-The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a Constitution saving throw (against a DC they select) to maintain concentration on a spell.
-
-\subsection{Targets}
-
-A typical spell requires you to pick one or more targets to be affected by the spell's magic. A spell's description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below). Spells that explicitly target creatures cannot target objects (see \nameref{sec:invalid-targets} below).
-
-Unless a spell has a perceptible effect, a creature might not know it was targeted by a spell at all. An effect like crackling lightning is obvious, but a more subtle effect, such as an attempt to read a creature's thoughts, typically goes unnoticed, unless a spell says otherwise.
-
-Any creature or object directly affected by the spell is a target for that spell. Spells that buff or conjure creatures who then make attacks or interact with other objects or creatures only target the creatures buffed or conjured. As such, a creature immune to spells with a cost of 10 AET or lower can still be hurt by a creature buffed with \nameref{spell:haste}, despite that spell naturally having a cost lower than 10 AET.
-
-Specific spells can override these general rules, but must say that they do. For example, fireball says it can spread around corners, so while you must have a clear path to the point targeted with the aoe, targets of the fire do not need to have a clear path to that center as long as there is some path within the spell's area.
-
-\subsubsection{A Clear Path to the Target}
-
-To target something, you must have a clear path to it, so it can't be behind total cover. Spells that require you to see your target(s) specifically say so.
-
-If you place an area of effect at a point that you can't see and an obstruction, such as a wall, is between you and that point, the point of origin comes into being on the near side of that obstruction.
-
-\subsubsection{Targeting Yourself}
-
-If a spell targets a creature of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you are a target yourself unless the spell allows you to choose specific creatures, in which case you can (but are not required to) target yourself.
-
-Spells with ranges of Self (cone) or Self (cube) start at one side of your space and project outward away from you. You can choose to be included in the effect or not even if it normally does not allow a choice of targets.
-
-\subsubsection{Invalid Targets}\label{sec:invalid-targets}
-
-If you select a target that is not valid for the spell and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would \textit{not} be obvious, the spell goes off, the aether (if any) is expended, but the target is not affected. You gains no information from this--for spells that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Spell attacks "miss" (have no effect on the target).
-
-\subsection{Areas of Effect}\label{subsec:areas-of-effect}
-
-Spells such as \nameref{spell:burning-hands} and \nameref{spell:cone-of-cold} cover an area, allowing them to affect multiple creatures at once.
-
-A spell's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere. Every area of effect has a \textbf{point of origin}, a location from which the spell's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some spells have an area whose origin is a creature or an object.
-
-A spell's effect expands in straight lines from the point of origin. If no unblocked straight line extends from the point of origin to a location within the area of effect, that location isn't included in the spell's area. To block one of these imaginary lines, an obstruction must provide total cover.
-
-\subsubsection{Cone}
-
-A cone extends in a direction you choose from its point of origin. A cone's width at a given point along its length is equal to that point's distance from the point of origin. A cone's area of effect specifies its maximum length.
-
-A cone's point of origin is not included in the cone's area of effect, unless you decide otherwise.
-
-\subsubsection{Cube}
-
-You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side. For example, 
-
-A cube's point of origin is not included in the cube's area of effect, unless you decide otherwise.
-
-A 5' cube can affect four Medium or Small creatures as long as they are adjacent to each other in a square formation and the chosen point is directly between them.
-
-\subsubsection{Cylinder}
-
-A cylinder's point of origin is the center of a circle of a particular radius, as given in the spell description. The circle must either be on the ground or at the height of the spell effect. The energy in a cylinder expands in straight lines from the point of origin to the perimeter of the circle, forming the base of the cylinder. The spell's effect then shoots up from the base or down from the top, to a distance equal to the height of the cylinder.
-
-A cylinder's point of origin is included in the cylinder's area of effect.
-
-\subsubsection{Line}
-
-A line extends from its point of origin in a straight path up to its length and covers an area defined by its width. A 5' wide line can hit two creatures if they are adjacent to each other and the line is placed directly between them.
-
-A line's point of origin is not included in the line's area of effect, unless you decide otherwise.
-
-\subsubsection{Sphere}
-
-You select a sphere's point of origin, and the sphere extends outward from that point. The sphere's size is expressed as a radius in feet that extends from the point.
-
-A sphere's point of origin is included in the sphere's area of effect.
+Many spells require concentration. See \nameref{sec:concentration} for details.
 
 \subsection{Spell Saving Throws}
 
@@ -201,18 +111,24 @@ Many spells specify that a target can make a saving throw to avoid some or all o
 
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
+\subsection{Targets}
+See \nameref{sec:targets} for the general rules that apply to all abilities, including spells and legendary effects.
+
 \subsection{Spell Attack Rolls}
 
 Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.
 
 \subsection{Combining Magical Effects}
+See \nameref{sec:stacking} for the general rules.
 
 The effects of different spells add together while the durations of those spells overlap. The effects of the same spell cast multiple times don't combine, however. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap.
 
 For example, if two priests cast \nameref{spell:bless} on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.
 
 \section{Legendary Effects}
-Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether but count (for effects that care) as spells with an aether cost of (5 + character level).
+See \nameref{sec:legendary-effects} for the full details. 
+
+Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether and effects that interact with spells do not interact with legendary effects unless they explicitly say they do.
 
 \begin{DndSidebar}[float=b]{Conversion from 5e spells}
     These are starting points. Unlike fixed spell levels, spells can have any integer base aether cost. And some spells will end up moving up or down a category.
@@ -277,7 +193,9 @@ Different tables have different points at which this is all acceptable, but as a
 	\end{DndTable}
 \end{figure}
 
-DEX and INT generally don't cause conditions--instead they deal damage (usually allowing a save for half damage). CON, WIS, and DEX are considered "major" saving throws--every class gets proficiency in one of these. Since CON is so rarely dumped, even if it isn't prioritized, it's the dumping ground here.
+DEX and INT generally don't cause conditions--instead they deal damage (usually allowing a save for half damage). CON, WIS, and DEX are considered "major" saving throws--every class gets proficiency in one of these. Since CON is so rarely disregarded, even if it isn't prioritized, it's the dumping ground for miscellaneous saving throws.
+
+Generally, monsters have the lowest Dexterity and Intelligence saving throw modifiers and the highest Constitution saving throw modifiers. There are many outliers, however.
 
 \import{./}{spell-lists.tex}
 \section{Spells, Alphabetical}

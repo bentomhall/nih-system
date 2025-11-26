@@ -34,4 +34,4 @@ Same basic rules as the SRD, but not quite so pretty. I will use quote blocks fo
 - Weapon properties built into the weapons themselves, allowing people with the right proficiencies to impose conditions (etc) based on weapon.
 - (Eventually) skill tricks, nifty things you get access to as you level. Rogues and bards (or really their replacements) get more and more powerful ones.
 - Complete rework of most classes, including giving 6+level-equivalent effects to martials at higher levels.
-- Removal of alignment. Replaced for monsters by 'Attitude', which gives some hints to the DM as to how they'll act. Will they flee? If so, what triggers them? Will they try to surrender? Backstab the players? Set up ambushes? Turn traitor on each other?
+- Removal of alignment. Replaced for monsters by 'Attitude', which gives some hints to the GM as to how they'll act. Will they flee? If so, what triggers them? Will they try to surrender? Backstab the players? Set up ambushes? Turn traitor on each other?

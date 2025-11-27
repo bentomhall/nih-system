@@ -7,9 +7,9 @@
 {V, S, M (powdered rhubarb leaf and an adder's stomach)}
 {Instantaneous}
 
-A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d6 acid damage immediately and 2d6 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.
+A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d6 acid damage immediately and 2d6 acid damage at the beginning of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the beginning of its next turn.
 
-\subparagraph*{Overcast} When you cast this spell using more than 3 AET, the damage (both intial and subsequent) increases by 1d6 for every 2 AET you spend above 3.
+\subparagraph*{Overcast} When you cast this spell using more than 3 AET, the damage (both initial and subsequent) increases by 1d6 for every 2 AET you spend above 3.
 
 \DndSpellHeader{Acid Burst \label{spell:acid-burst}}
 {Cantrip, 1T, Acid, CON}
@@ -21,7 +21,6 @@ A shimmering green arrow streaks toward a target within range and bursts in a sp
 Acidic liquid envelops a target you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d8 damage immediately and half as much at the beginning of their next turn.
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-
 
 \DndSpellHeader{Aid \label{spell:aid}}
 {3 AET, 3T, Defense}
@@ -36,7 +35,7 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 
 
 \DndSpellHeader{Alter Self \label{spell:alter-self}}
-{3 AET, Self, Shapechanging}
+{3 AET, Self, Shape-changing}
 {1 action}
 {Self}
 {V, S}
@@ -46,9 +45,9 @@ You assume a different form. When you cast the spell, choose one of the followin
 
 \subparagraph*{Aquatic Adaptation} You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.
 
-\subparagraph*{Change Appearance} You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.
+\subparagraph*{Change Appearance} You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another lineage, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.
 
-\subparagraph*{Natural Weapons} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.
+\subparagraph*{Natural Weapons} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is considered masterwork (adding twice your proficiency bonus in additional damage).
 
 \subparagraph*{Overcast} For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.
 
@@ -87,7 +86,7 @@ Choose a creature that you can see within range. The target must succeed on a St
 
 You create an invisible, magical eye within range that hovers in the air for the duration.
 
-You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.
+You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction. Any effect that interferes with divination magic interferes with the eye's movement (it can't enter any area warded by such an effect) and vision (creatures and areas warded by such magic are invisible to the eye).
 
 As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.
 
@@ -118,7 +117,7 @@ If the target is native to the plane of existence you're on, you banish the targ
 
 If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return. Non-native targets do not get additional saving throws past the initial one.
 
-\subparagraph*{Overcast} When you cast this spell using more than 8 AET, you can target one additional creature for every 3 additional AET you spend.
+\subparagraph*{Overcast} When you cast this spell using more than 8 AET, you can target one additional creature for every 3 additional AET you spend. Creatures save or not individually, but ending concentration affects all banished creatures.
 
 
 \DndSpellHeader{Barkskin \label{spell:barkskin}}
@@ -156,14 +155,14 @@ You touch a creature, and that creature must succeed on a Wisdom saving throw or
 
 \begin{itemize}
 \item Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.
-\item While cursed, the target has disadvantage on attack rolls against you.
+\item While cursed, the target has disadvantage on attack rolls.
 \item While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.
 \item While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.
 \end{itemize}
 
 A \textit{remove curse} spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
 
-\subparagraph*{Overcast} If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. Using 12 or more AET grants a duration that doesn't require concentration.
+\subparagraph*{Overcast} If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. Using 12 or more AET grants a duration that doesn't require concentration and lasts at least 8 hours (more at 16 AET).
 
 
 \DndSpellHeader{Black Tentacles\label{spell:black-tentacles}}
@@ -187,9 +186,9 @@ A creature restrained by the tentacles can use its action to make a Strength (At
 {V, S}
 {Concentration, up to 10 minutes}
 
-You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
+You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover and opaque concealment to creatures behind it, and its space is difficult terrain.
 
-When a creature enters the wall’s area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.
+When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.
 
 
 \DndSpellHeader{Bless\label{spell:bless}}
@@ -199,7 +198,7 @@ When a creature enters the wall’s area for the first time on a turn or starts 
 {V, S, M (a sprinkling of holy water)}
 {Concentration, up to 1 minute}
 
-You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.
+You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw. Note that only one source of bonus dice can be applied to any given d20 roll.
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you can target one additional creature for every 2 AET you spend.
 
@@ -215,7 +214,7 @@ Necromantic energy washes over a creature of your choice that you can see within
 
 If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.
 
-If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.
+If you target a non-magical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.
 
 \subparagraph*{Overcast} When you cast this spell using more than 8 AET, the damage increases by 1d8 for every AET you spend up to a maximum of 12 AET (12d8).
 
@@ -269,7 +268,6 @@ The fire ignites any flammable objects in the area that aren't being worn or car
 
 \subsection{Spells (C)}
 
-
 \DndSpellHeader{Call Lightning\label{spell:call-lightning}}
 {6 AET}
 {1 action}
@@ -277,9 +275,9 @@ The fire ignites any flammable objects in the area that aren't being worn or car
 {V, S}
 {Concentration, up to 10 minutes}
 
-A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).
+A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see at least 10 feet above and no more than 100 feet above you within range. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud). The cloud spreads around corners.
 
-When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.
+When you cast the spell, choose a point you can see under the storm cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.
 
 If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.
 
@@ -306,12 +304,11 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 {V, S, M (a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins)}
 {Instantaneous}
 
-You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
+You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
 
 A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.
 
 \subparagraph*{Overcast} When you cast this spell using more than 13 AET, one additional bolt leaps from the first target to another target for every 3 additional AET spent.
-
 
 \DndSpellHeader{Charm Person\label{spell:charm-person}}
 {2 AET}
@@ -324,7 +321,6 @@ You attempt to charm a humanoid you can see within range. It must make a Charism
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-
 \DndSpellHeader{Clairvoyance\label{spell:clairvoyance}}
 {5 AET}
 {10 minutes}
@@ -335,7 +331,6 @@ You attempt to charm a humanoid you can see within range. It must make a Charism
 You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration. A creature that can see the sensor (such as a creature benefiting from \textit{see invisibility} or who has truesight) sees a luminous, intangible orb about the size of your fist. The sensor has an AC of 10 and is destroyed by any damage taken.
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
-
 
 \DndSpellHeader{Cloudkill\label{spell:cloudkill}}
 {14 AET}
@@ -348,9 +343,9 @@ You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a 
 
 When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.
 
-The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.
+When you cast this spell, choose either \textbf{creeping fog} or \textbf{rolling fog}. If you chose creeping fog, the fog spreads 5 ft at the beginning of each of your turns until it reaches a maximum of a 50 ft radius. If you chose rolling fog, the center of the fog moves 10 feet in a direction you chose at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.
 
-\subparagraph*{Overcast} When you cast this spell using more than 12 AET , the damage increases by 1d8 for every 2 additional AET spent.
+\subparagraph*{Overcast} When you cast this spell using more than 14 AET , the damage increases by 1d8 for every 2 additional AET spent.
 
 
 \DndSpellHeader{Color Spray\label{spell:color-spray}}
@@ -398,7 +393,7 @@ A flying creature stays aloft, provided that it is able to do so. If it must mov
 {V, S, M (a small crystal or glass cone)}
 {Instantaneous}
 
-A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one. Targets that fail their save are stunned until the end of the caster's next turn.
+A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one. Targets that fail their save are stunned until the end of the caster's next turn. Targets that succeed have their speed reduced to 10 ft until the end of their next turn.
 
 A creature killed by this spell becomes a frozen statue until it thaws.
 
@@ -443,7 +438,7 @@ You summon fey spirits that take the form of beasts and appear in unoccupied spa
 \item Two dire wolves, brown bears, giant spiders, giant octopuses, or giant toads.
 \end{itemize}
 
-The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
+The summoned creatures are friendly to you and your companions. The summoned creatures take their turn immediately after your turn each round. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The spirits vanish without leaving corpses when the spell ends or when they are reduced to 0 hit points.
 
 The GM has the creatures' statistics.
 
@@ -463,7 +458,7 @@ The GM has the creatures' statistics.
 
 You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
 
-The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.
+The elemental is friendly to you and your companions for the duration. The elemental takes its turn immediately after your turn ends. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.
 
 If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.
 
@@ -485,7 +480,7 @@ You summon mephits that appear in unoccupied spaces that you can see within rang
 \item 5 of any of the following: Mud, Smoke, or Steam mephits
 \end{itemize}
 
-The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They are not under your control, but will attack and hamper enemies. When your concentration ends or is broken, they disappear.
+The summoned creatures are friendly to you and your companions. They take their turn as a group immediately after your turn ends. They are not under your control, but will attack and hamper enemies. When your concentration ends or is broken, they disappear, just as if they are reduced to zero hit points.
 
 The GM has the creatures' statistics.
 
@@ -506,7 +501,7 @@ You summon fey creatures that appear in unoccupied spaces that you can see withi
 
 A summoned creature disappears when it drops to 0 hit points or when the spell ends.
 
-The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
+The summoned creatures are friendly to you and your companions. They take their turn as a group immediately after your turn ends. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
 
 The GM has the creatures' statistics.
 
@@ -532,9 +527,9 @@ Since this spell induces a natural disease in its target, any effect that remove
 
 \subparagraph*{Mindfire} The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the \textit{confusion} spell during combat.
 
-\subparagraph*{Seizure} The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
+\subparagraph*{Seizure} The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity and cannot concentrate on spells or abilities.
 
-\subparagraph*{Slimy Doom} The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.
+\subparagraph*{Slimy Doom} The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is staggered until the end of its next turn.
 
 
 \DndSpellHeader{Control Water\label{spell:control-water}}
@@ -548,7 +543,7 @@ Until the spell ends, you control any freestanding water inside an area you choo
 
 \subparagraph*{Flood} You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land.
 
-If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.
+If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side and have a 25 percent chance of capsizing.
 
 The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.
 
@@ -570,11 +565,11 @@ The first time each turn that an object enters the vortex, the object takes 2d8 
 {V, S, M (a drop of water if creating water or a few grains of sand if destroying it)}
 {Instantaneous}
 
-You either create or destroy water.
+You either create or destroy water. Living beings do not count as open containers.
 
 \subparagraph*{Create Water} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.
 
-\subparagraph*{Destroy Water} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.
+\subparagraph*{Destroy Water} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range. If you cast this on an elemental mostly or entirely composed of water (such as a water elemental), it makes a Constitution saving throw, taking 4d8 necrotic damage on a failure or half as much on a success. If it fails the saving throw by at least 5, it is stunned until the end of your next turn.
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for every 2 additional AET spent.
 
@@ -591,7 +586,6 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 \subparagraph*{Overcast} When you cast this spell using more than 1 AET, the healing increases by 1d8 for every additional AET spent, up to a maximum of 12d8 + your spellcasting ability modifier.
 
 \subsection{Spells (D)}
-
 
 \DndSpellHeader{Dancing Lights\label{spell:dancing-lights}}
 {cantrip}
@@ -612,12 +606,11 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 {V, M (bat fur and a drop of pitch or piece of coal)}
 {Concentration, up to 10 minutes}
 
-Opaque magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
+Opaque magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and non-magical light can't illuminate it.
 
 If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
 If any of this spell's area overlaps with an area of light created by a spell of costing 3 AET or less, the spell that created the light is dispelled.
-
 
 \DndSpellHeader{Darkvision\label{spell:darkvision}}
 {3 AET}
@@ -627,7 +620,6 @@ If any of this spell's area overlaps with an area of light created by a spell of
 {8 hours}
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. If it already had darkvision, it can see color in the dark.
-
 
 \DndSpellHeader{Daylight\label{spell:daylight}}
 {5 AET}
@@ -641,7 +633,6 @@ A 60-foot-radius sphere of sunlight spreads out from a point you choose within r
 If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.
 
 If any of this spell's area overlaps with an area of darkness created by a spell costing 3 or less AET, the spell that created the darkness is dispelled.
-
 
 \DndSpellHeader{Death Ward\label{spell:death-ward}}
 {8 AET}
@@ -664,13 +655,13 @@ If the spell is still in effect when the target is subjected to an effect that w
 {V, S, M (a copper piece)}
 {Concentration, up to 1 minute}
 
-For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.
+For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of -4 or lower or doesn't speak any language, the creature is unaffected.
 
-You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.
+You initially learn the surface thoughts of the creature---what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.
 
 Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.
 
-You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.
+You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of -4 or lower or one that doesn't speak any language.
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
 
@@ -696,7 +687,7 @@ If you would arrive in a place already occupied by an object or a creature, you 
 {V, S}
 {1 hour}
 
-You make yourself—including your clothing, armor, weapons, and other belongings on your person— look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
+You make yourself---including your clothing, armor, weapons, and other belongings on your person---look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
 
 The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 
@@ -710,14 +701,13 @@ To discern that you are disguised, a creature can use its action to inspect your
 {V, S, M (holy water or powdered silver and iron)}
 {Concentration, up to 1 minute}
 
-Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.
+Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Mortal Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.
 
 You can end the spell early by using either of the following special functions.
 
 \subparagraph*{Break Enchantment} As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.
 
-\subparagraph*{Dismissal} As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
-
+\subparagraph*{Dismissal} As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, demons are sent to the Abyss, devils are sent to the Astral, and fey are sent to Shadow.
 
 \DndSpellHeader{Divine Favor\label{spell:divine-favor}}
 {2 AET}
@@ -735,18 +725,18 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 {V, S}
 {Concentration, up to 1 minute}
 
-You call upon holy power and radiate destruction. When you cast this spell and at the start of each of your turns for the duration, a wave of radiant energy pulses out in a 15 foot sphere. All creatures in the area must make a Charisma saving throw, taking 5d8 radiant damage on a failed save or half as much on a success. Fiends, undead, and creatures summoned by magic make this saving throw at disadvantage. When you cast the spell, you can choose a number of targets up to your proficiency bonus. Designated targets are immune to the effect.
+You call upon holy power and radiate destruction. When you cast this spell and at the start of each of your turns for the duration, a wave of radiant energy pulses out from you in a 15 foot sphere. All creatures in the area must make a Charisma saving throw, taking 5d8 radiant damage on a failed save or half as much on a success. Fiends, undead, and creatures summoned by magic make this saving throw at disadvantage. When you cast the spell, you can choose a number of targets up to your proficiency bonus. Designated targets are immune to the effect.
 
-\DndSpellHeader{Dominate Beast\label{spell:dominate-beast}}
+\DndSpellHeader{Dominate Unthinking\label{spell:dominate-beast}}
 {8 AET}
 {1 action}
 {60 feet}
 {V, S}
 {Concentration, up to 1 minute}
 
-You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
+You attempt to beguile a creature with an Intelligence of -4 or lower or that does not speak any language that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
 
-While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.
+While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.
 
 You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.
 
@@ -791,9 +781,9 @@ You cause a creature or an object you can see within range to grow larger or sma
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
 
-\subparagraph*{Enlarge} The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category— from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.
+\subparagraph*{Enlarge} The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category---from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.
 
-\subparagraph*{Reduce} The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category—from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
+\subparagraph*{Reduce} The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category---from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
 
 
 \DndSpellHeader{Entangle\label{spell:entangle}}
@@ -864,7 +854,7 @@ At the start of each of your turns, the hound attempts to bite one creature with
 {V, S, M (a small amount of alcohol or distilled spirits)}
 {1 hour}
 
-Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.
+Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + your spellcasting modifier temporary hit points for the duration.
 
 \subparagraph*{Overcast} When you cast this spell using more than 2 AET, you gain 5 additional temporary hit points for every 2 additional AET spent.
 
@@ -878,8 +868,7 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 
 You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or become shaken for the duration. If they were already shaken, they become frightened instead. Shaken creatures can make the saving throw at the end of each of their turns, ending the effect on a success or becoming frightened if they fail one of these subsequent saving throws by 5 or more.
 
-While frightened by this spell, a creature that can see you must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. Frightened creatures can make the saving throw again at the end of any turn if they cannot see you at that point.
-
+While frightened by this spell, a creature that can see you must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move, in which case they take the Dodge action. Frightened creatures can make the saving throw again at the end of any turn if they cannot see you at that point.
 
 \DndSpellHeader{Feather Fall\label{spell:feather-fall}}
 {2 AET}
@@ -898,10 +887,9 @@ Choose up to five falling creatures within range. A falling creature's rate of d
 {V, S}
 {Instantaneous}
 
-You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable. Thus, the spell would sense an area affected by the \textit{alarm} or \textit{glyph of warding} incantation, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.
+You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable. Creatures never count as traps. Thus, the spell would sense an area affected by the \textit{alarm} or \textit{spell trap} incantation, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole, but would not detect a hidden ambush force.
 
 You learn the location and the general nature of the danger posed by each trap.
-
 
 \DndSpellHeader{Fireball\label{spell:fireball}}
 {5 AET}
@@ -970,7 +958,7 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. The sphere is a solid object that occupies its space. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
 
-As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
+As a bonus action, you can move the sphere up to 30 feet. If it would enter another creature's space, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
 
 When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
 
@@ -1010,7 +998,7 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 
 You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.
 
-The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.
+The target can also spend 5 feet of movement to automatically escape from non-magical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.
 
 \subsection{Spells (G)}
 
@@ -1024,7 +1012,7 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 
 You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.
 
-While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.
+While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to bludgeoning, piercing, and slashing damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.
 
 While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.
 
@@ -1070,7 +1058,7 @@ Slick grease covers the ground in a 10-foot square centered on a point within ra
 
 When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
 
-This grease is flammable, acting like a flask of oil. Any ignition source ignites the entire area.
+This grease is flammable, acting like a flask of oil. Any ignition source ignites the entire area. This fire lasts until the next round, ending on the initiative count of the creature or effect that ignited it. A given grease spell can only be ignited once.
 
 
 \DndSpellHeader{Greater Invisibility\label{spell:greater-invisibility}}
@@ -1089,7 +1077,7 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 {V, S}
 {Concentration, up to 10 minutes}
 
-You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends. 
+You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends. Remember that only one bonus die can be added to any d20 roll, regardless of source.
 
 \DndSpellHeader{Guiding Bolt\label{spell:guiding-bolt}}
 {2 AET}
@@ -1113,6 +1101,6 @@ A line of strong wind 60 feet long and 10 feet wide blasts from you in a directi
 
 Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.
 
-The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.
+The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them for each turn they remain in the line.
 
 As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.

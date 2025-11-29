@@ -19,7 +19,7 @@ if (!(Test-Path $fullPath)) {
 $filename= [System.IO.Path]::GetFileNameWithoutExtension($InputPath)
 
 if (Test-Path "$PWD\output\$filename.pdf") {
-  Remove-Item "$PWD\output\$filename.pdf"
+  Remove-Item "$PWD\output\$filename.*"
 }
 
 docker run --rm -it -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" "dnd-latex:latest" $InputPath

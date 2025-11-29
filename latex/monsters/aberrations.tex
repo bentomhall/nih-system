@@ -1,0 +1,103 @@
+\clearpage
+\section{Aberrations}\label{sec:aberrations}
+Aberrations are all creatures that, by the normal laws of things, should not exist. Often one-offs (but not always), they sit outside the natural order. While they may eat, they often do not need to do so to survive. They do not generally have normal reproductive cycles and live until they are killed. Most often, aberrations are created by influence from the Dark Beyond, although the demon prince known as the Twisted has created his fair share of such creatures.
+
+\subsection{Flesh Amalgams}
+One "common" (as far as already rare aberrant beings go) result of influence from the Dark Beyond is the flesh amalgam. A hideous combination of features based on living beings, twisted into an insane mockery of reality. Each type is fairly unique, but they all share their unsettling effect on reality around them. Flesh amalgams are almost uniformly mindlessly hostile to all life around it, seeking to absorb it into themselves to grow stronger.
+
+The gibbering mouther is one of the more common variants of flesh amalgams. A blob of doughy flesh studded with mouths that continuously moan, wail, and chant nonsense, its presence also warps the ground around it. There are rumored to be larger versions, those that have absorbed many lives, with stranger abilities.
+
+\begin{DndMonster}{Gibbering Mouther}
+	\DndMonsterType{Medium aberration}
+	\DndMonsterBasics[armor-class={9}, hit-points={67 (9d8 + 27)}, speed={10 ft., swim 10 ft.}]
+	\MonsterStats{+0}{-1}{+3}{-4}{+0}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={prone}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={2:2}]
+
+	\DndMonsterAction{Aberrant Ground}
+	The ground in a 10-foot radius around the mouther is dough-like difficult terrain.
+		
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle. It uses Grasping Ground and Gibbering as well every turn even if it cannot attack.
+
+	\DndMonsterAttack[
+		name=Bites,
+		distance=melee,
+		type=weapon,
+		mod=+2,
+		reach=5,
+		dmg=\DndDice{5d6},
+		dmg-type=piercing,
+		extra={. If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.}
+	]
+	\DndMonsterAction{Blinding Spittle (Recharge 5-6)}
+	The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+
+	\DndMonsterAction{Grasping Ground} Each creature within a 10 foot radius must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the end of its next turn.
+	
+	\DndMonsterAction{Gibbering} The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature is staggered until the beginning of its next turn. If the save result is 5 or less, it uses its action cackling madly and cannot speak.
+\end{DndMonster}
+
+\FloatBarrier
+\subsection{Twisted Comiedar}
+The comiedai (singular comiedar, pronounced 'COH-mee-eh-dar', meaning 'memory keepers') are sea creatures with mental powers that exceed those of humans. They were originally created by Leviathan to act as mobile memory stores for information brought back by the mkhulu from explorations on land. But the Twisted (who was instrumental in encouraging their creation) had other plans. He altered most of them to desire domination for the purpose of "improving" the land-based mortals. Ever since, most comiedai have sought to make deals with land-dwellers in distress, promising them power (or usually vengeance) in exchange for service. They give power by converting them into mkhulu. By and large, they uphold their deals, but always in a way that creates expanding nests of mkhulu and their thralls. This they do to "order" the chaotic lives of mortals, breaking them into shape according to the philosophies of the particular comiedar. They prefer to remain aloof, manipulating the land folk and implanting mkhulu larvae into their skulls. Twisted comiedai do not generally socialize with each other--each one considers itself the rightful master of all it perceives.
+
+Physically, a comiedar is a bulbous, tentacled monstrosity that usually communicates telepathically. The twisted kinds are surrounded by a mutagenic mucous that they use to control and alter their victims.
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Comiedar, Twisted}
+	\begin{multicols}{2}
+			\DndMonsterType{Large aberration}
+			\DndMonsterBasics[
+					armor-class = {17 (natural armor)},
+					hit-points = {\DndDice{25d10 + 50}},
+					speed = {10 ft., swim 40 ft.}
+			]
+			\MonsterStats{+5}{-1}{+2 (+6)}{+4 (+8)}{+2 (+6)}{+5}
+			\DndMonsterDetails[
+					saving-throws = {},
+					skills = {Deception +13, History +12, Perception +10},
+					senses = {darkvision 120 ft., passive Perception 20},
+					languages = {all, telepathy 120 ft.},
+					challenge = {13:11}
+			]
+			\DndMonsterAction{Amphibious}
+			The comiedar can breathe air and water.
+	
+			\DndMonsterAction{Mucous Cloud} While underwater, the comiedar is surrounded by transformative mucus. A creature that touches the comiedar or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.
+	
+			\DndMonsterAction{Probing Telepathy} If a creature communicates telepathically with the comiedar, the comiedar learns the creature's greatest desires if the comiedar can see the creature.
+	
+			\DndMonsterSection{Actions}
+			\DndMonsterAction{Multiattack} The comiedar makes three tentacle attacks. 
+	
+			\DndMonsterMelee[
+					name = Tentacle,
+					mod = +9,
+					reach = 10ft.,
+					dmg = \DndDice{2d6+5},
+					dmg-type = bludgeoning,
+					extra={. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any ability that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by \nameref{spell:heal} or another disease-curing legendary effect. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.}
+			]
+	
+			\DndMonsterMelee[
+					name=Tail,
+					mod=+9,
+					reach=10ft.,
+					dmg=\DndDice{3d6+5},
+					dmg-type=bludgeoning
+			]
+	
+			\DndMonsterAction{Enslave (3/Day)} The comiedar targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the comiedar until the comiedar dies or until it is on a different plane of existence from the target. The charmed target is under the comiedar's control and can't take reactions, and the comiedar and the target can communicate telepathically with each other over any distance.
+	
+			Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the comiedar.
+	
+			\DndMonsterSection{Legendary Actions}
+	
+			The comiedar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The comiedar regains spent legendary actions at the start of its turn.
+	
+			\begin{DndMonsterLegendaryActions}
+					\DndMonsterLegendaryAction{Detect}{The comiedar makes a Wisdom (Perception) check.}
+					\DndMonsterLegendaryAction{Tail Swipe}{The comiedar makes one tail attack.}
+					\DndMonsterLegendaryAction{Psychic Drain (Costs 2 Actions)}{One creature charmed by the comiedar takes \DndDice{3d6} psychic damage, and the comiedar regains hit points equal to the damage the creature takes.}
+			\end{DndMonsterLegendaryActions}
+	\end{multicols}
+	\end{DndMonster}

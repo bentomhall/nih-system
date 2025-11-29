@@ -1,0 +1,267 @@
+\clearpage
+\section{Constructs}
+Artificial bodies brought to life by clockwork, elemental Words of power, or trapped souls. Few of these can be created these days other than the most simple animated objects, although simple golem-like creatures are common in Wyrmhold and Byssia--the first being labor constructs directed by their creators, mostly mobile muscle, and the second being fey-animated wooden protectors of remote shrines.
+
+Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as \nameref{spell:unbind}, while those that operate via clockwork or trapped spirits are not.
+
+Constructs, being unfeeling matter moved by non-sentient forces, is remarkably hard to meaningfully damage. As a general rule, most constructs have fixed damage reduction value. All incoming damage is reduced by the given amount. If that would reduce the damage to zero or less, the construct takes no damage. Effects that trigger on hit still occur as normal. Critial hits bypass this damage reduction, dealing full damage. This trait is called Constructed Resilience.
+
+\subsection{Animated Objects}
+
+Animated by simple (comparatively) spells, these creatures have specific programming fixed when they were created. All known forms of animation are temporary unless the creature is part of a larger, spell-worked environment such as a building. If an animated object is removed from their environment in any way, they go berserk, attacking all nearby creatures without distinction and then cease functioning in 1d4 hours. Once defeated, animated objects cannot be brought back to life without the same process that was required to create them in the first place.
+
+Due to their nature, animated objects do not have the Constructed Resilience trait.
+
+\begin{DndMonster}{Animated Furniture}
+	\DndMonsterType{Large construct}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={39 (6d10 + 6)}, speed={25 ft.}]
+	\MonsterStats{+3}{-1}{+1}{-5}{-4}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={1:1}]
+	\DndMonsterAction{Antimagic Susceptibility} The construct is incapacitated while in the area of \nameref{spell:abjure-aether-manipulation}. If targeted by \nameref{spell:unbind}, the construct must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
+	
+	\DndMonsterAction{False Appearance} While the furniture remains motionless, it is indistinguishable from a normal table, sofa, wardrobe, or whatever piece of furniture it was created from.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterMelee[
+			name=Slam,
+			mod=+5,
+			dmg=\DndDice{2d6+3},
+			dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Animated Armor}
+	\DndMonsterType{Medium construct}
+	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={33 (6d8 + 6)}, speed={25 ft.}]
+	\MonsterStats{+2}{+0}{+1}{-5}{-4}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={2:3}]
+	\DndMonsterAction{Antimagic Susceptibility} The armor is incapacitated while in the area of \nameref{spell:abjure-aether-manipulation}. If targeted by \nameref{spell:unbind}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
+	
+	\DndMonsterAction{False Appearance} While the armor remains motionless, it is indistinguishable from a normal suit of armor.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The armor makes two melee attacks.
+	\DndMonsterMelee[
+			name=Greatsword,
+			mod=+4,
+			dmg=\DndDice{1d12+2},
+			dmg-type=slashing
+	]
+\end{DndMonster}
+\FloatBarrier
+
+\subsection{Clockwork}
+Unlike golems (animated by elemental forces) or animated objects (animated directly by spells), clockwork constructs have gears, springs, and levers operating their limbs. These are powered by a crystalline, spell-worked core. Less durable than golems (but much easier to produce) and more permanent than animated objects, most of the automata in the Federated Nations fall into this category. Many hybrid constructs exist with a general purpose "brain" that can accept external commands (as long as they're simple) connected to a power core and the clockwork actuators.
+
+\begin{DndMonster}{Automaton, Heavy Defender}
+	\DndMonsterType{Large construct}
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={90 (12d10 + 24)}, speed={30 ft.}]
+	\MonsterStats{+5}{-1}{+2}{-3}{-1}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={athletics +8, perception +5}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 30 ft, darkvision 60 ft., passive Perception 14}, languages={—}, challenge={2:1}]
+	\DndMonsterAction{Immutable Form} The automaton is immune to any spell or effect that would alter its form.
+	
+	\DndMonsterAction{Tracked Movement} The automaton ignores difficult terrain, but climbing requires 4 feet of movement per foot climbed and the automaton cannot jump.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The armor makes two melee attacks. It can replace one of those with a flamethrower use if available.
+	\DndMonsterMelee[
+		name=Shield Bash,
+		mod=+5,
+		type=weapon,
+		dmg=\DndDice{2d10+5},
+		dmg-type=bludgeoning,
+		extra={. If the target is a creature, it must make a DC 14 STR saving throw. On a failed save, the target is knocked prone or pushed 5 feet back. If pushed back, the defender can immediately move into the vacated space if it would fit.}
+	]
+	
+	\DndMonsterAction{Flamethrower (Recharge 4-6)} All creatures in a 30-ft cone must make a DC 14 DEX saving throw, taking 4d6 fire damage on a failure or half as much on a success. Unattended flammable objects immediately catch fire.
+
+	\DndMonsterAction{Raise Shields (1/day)} As a reaction when first bloodied, the automaton raises an energy barrier around itself. It gains resistance to all damage and regenerates 10 HP at the start of each of its turns. This lasts for 4 rounds or until it is incapacitated or restored to full health.
+\end{DndMonster}
+
+\begin{DndMonster}{Automaton, Riot Control}
+	\DndMonsterType{Medium construct}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={44 (8d8 + 8)}, speed={30 ft.}]
+	\MonsterStats{+2}{+1}{+1}{-2}{-2}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={—}, challenge={2:1}]
+	\DndMonsterAction{Immutable Form} The automaton is immune to any spell or effect that would alter its form.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The armor makes two melee attacks.
+	\DndMonsterMelee[
+		name=Shock Baton,
+		mod=+4,
+		type=weapon,
+		dmg=\DndDice{1d6+2},
+		dmg-type=bludgeoning,
+		plus-dmg=\DndDice{1d4},
+		plus-dmg-type=lightning,
+		extra={. If the target is a creature, it cannot take reactions until the start of its next turn.}
+	]
+	\DndMonsterAttack[
+		name={Spiked Net},
+		mod=+4,
+		type=weapon,
+		distance=ranged,
+		range={30/60},
+		dmg=\DndDice{1d8+2},
+		dmg-type=piercing,
+		extra={ and the target is restrained (escape DC 12). The net is an object with AC 10, 10 HP, vulnerability to fire damage, and immunity to all other non-slashing damage types.}
+	]
+\end{DndMonster}
+
+\subsection{Golems}
+Golems are the traditional long-lived constructs, created by shaping a physical shell out of matter and then summoning and binding a mindless elemental force to animate it. Simpler golems have fixed programming that they cannot deviate from; more complex ones will listen to either their creator or someone holding an enchanted command rod. These rods are specifically made for a single golem or batch of golems and are not general purpose.
+
+Because golems are solid objects composed of durable, unfeeling matter, they tend to have high values of Construct Resilience. One downside is that golems, being animated by a trapped elemental force, tend to go berserk once damaged enough, as the elemental force's bindings fray and it tries to escape and return home.
+
+\begin{figure}
+	\begin{DndComment}{Golem Traits and DR}
+		Golems have two traits that strongly affect defensive rating. Construct Resilience and Magic Resistance. Construct Resilience is the big one--since very few things bypass it, it's generally worth +1 DR. Magic Resistance is generally weaker--their saves tend to either be very good (in which case advantage doesn't do much since they were already likely to pass) or very poor (in which case advantage can't save them very much). And with their extensive list of condition immunities, many of the spells they're bad at (Wisdom saves) just have no effect anyway. So it's generally worth +1 DR, but only if their DR was low relative to their OR already.
+	\end{DndComment}
+\end{figure}
+
+\subsubsection{Golem Types}
+\subparagraph*{Flesh Golems} Constructed out of the corpses of dead mortals, preserved via embalming or magic, and then animated by a lightning sprite, these distasteful things are not quite undead, although for many the difference is not worth caring about. Generally only outcast alchemists and other such practitioners with access to many dead bodies but not many other resources construct flesh golems. Unlike most golems, they are not extremely long-lasting, as the flesh tends to decay even when preserved.
+\subparagraph*{Clay Golems} Sculpted out of hardened (but not fired) clay and animated with an earth sprite, these golems are very durable. The enchantments on the clay allow bursts of speed and power and drain the aether out of those that they hit, making them fearsome guardians.
+\subparagraph*{Stone Golems} Carved out of hard stone (such as granite) and then animated with an earth sprite, these greater golems are even more durable than clay golems. They are enchanted to cause their enemies' surface to harden via sympathetic magic, reducing their speed and evasion.
+\subparagraph*{Iron Golems} Assembled from pieces of iron wrapped around stone or wood cores, iron golems are the greatest constructs commonly encountered, and the inspiration for Wyrmhold's servitor clockwork. Animated by a fire sprite, they spew toxic vapors at their foes and resist nearly all blows except those from adamantine weapons.
+
+\begin{DndMonster}{Golem, Flesh}
+\DndMonsterType{Medium construct}
+\DndMonsterBasics[armor-class={9}, hit-points={93 (11d8 + 44)}, speed={30 ft.}]
+\MonsterStats{+4}{-1}{+4}{-2}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={4:4}]
+\DndMonsterAction{Berserk} Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
+
+The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.
+
+\DndMonsterAction{Aversion to Fire} If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
+
+\DndMonsterAction{Construct Resilience} Any damage dealt to the golem except by adamantine weapons and fire is reduced by 5. This reduction cannot reduce the damage taken below 0. Critical hits bypass this damage reduction.
+
+\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
+
+\DndMonsterAction{Lightning Absorption} Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.
+
+\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The golem makes two slam attacks.
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=bludgeoning
+]
+\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Golem, Clay}
+	\begin{multicols}{2}
+	\DndMonsterType{Large construct}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={133 (14d10 + 56)}, speed={20 ft.}]
+	\MonsterStats{+5}{-1}{+4}{-4}{-1}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid, poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 60 ft., passive Perception 9}, languages={understands the languages of its creator but can't speak}, challenge={7:8}]
+	
+	\DndMonsterAction{Acid Absorption} Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.
+	
+	\DndMonsterAction{Berserk} Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
+	
+	\DndMonsterAction{Construct Resilience} Any damage dealt to the golem except by adamantine weapons is reduced by 5. Bludgeoning damage from non-adamantine weapons is reduced by 10. This reduction cannot reduce the damage taken below 0. Critical hits bypass this damage reduction.
+	
+	\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
+	
+	\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The golem makes three slam attacks.
+	\DndMonsterAttack[
+		name=Slam,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{2d10 + 5},
+		dmg-type=bludgeoning,
+		extra={. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \nameref{inc:restoration} incantation (in its greater form) or other magic of similar power.}
+	]
+	\DndMonsterAction{Haste (Recharge 5-6)}
+	Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action. On the next turn after that, its movement speed is reduced to half as the clay has solidified.
+	\end{multicols}
+	\end{DndMonster}
+
+\begin{DndMonster}[width=\textwidth + 8pt]{Golem, Stone}
+\begin{multicols}{2}
+\DndMonsterType{Large construct}
+\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={178 (17d10 + 85)}, speed={30 ft.}]
+\MonsterStats{+6}{-1}{+5}{-4}{+0}{-5}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={11:11}]
+
+\DndMonsterAction{Construct Resilience} Any damage dealt to the golem except by adamantine weapons and thunder is reduced by 10. This reduction cannot reduce the damage taken below 0. Critical hits bypass this damage reduction.
+
+\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
+
+\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The golem makes three slam attacks.
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{4d8 + 6},
+	dmg-type=bludgeoning
+]
+\DndMonsterAction{Slow (Recharge 5-6)}
+The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic, becoming affected on a failed save. An affected target is \nameref{condition:shaken} and \nameref{condition:staggered}. It also takes a \textminus2 penalty to AC. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.
+
+If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. 
+
+This counts as being the spell \nameref{spell:slow} but does not have any components.
+\end{multicols}
+\end{DndMonster}
+
+\subsection{Golem, Iron}
+\begin{DndMonster}[width=\textwidth + 8pt]{Golem, Iron}
+\begin{multicols}{2}
+\DndMonsterType{Large construct}
+\DndMonsterBasics[armor-class={19 (natural armor)}, hit-points={210 (20d10 + 100)}, speed={30 ft.}]
+\MonsterStats{+6}{-1}{+5}{-4}{+0}{-5}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={darkvision 120 ft., passive Perception 10}, languages={understands the languages of its creator but can't speak}, challenge={14:14}]
+
+\DndMonsterAction{Construct Resilience} Any damage dealt to the golem except by adamantine weapons and ice is reduced by 10. This reduction cannot reduce the damage taken below 0. Critical hits bypass this damage reduction.
+
+\DndMonsterAction{Fire Absorption} Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt.
+
+\DndMonsterAction{Immutable Form} The golem is immune to any spell or effect that would alter its form.
+
+\DndMonsterAction{Magic Resistance} The golem has advantage on saving throws against spells and other magical effects.
+
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The golem makes two slam attacks and two sword attacks.
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{3d8 + 6},
+	dmg-type=bludgeoning
+]
+\DndMonsterAttack[
+	name=Sword,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{3d10 + 6},
+	dmg-type=slashing
+]
+\DndMonsterAction{Poison Breath (Recharge 6)}
+The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw are poisoned for one minute, and can repeat the saving throw at the end of each of their turns, ending the effect on a success.
+\end{multicols}
+\end{DndMonster}

@@ -8,3 +8,4 @@ assets/*.svg
 **/*.fdb_latexmk
 **/*.out
 tools/output
+output/*

@@ -20,16 +20,22 @@ test-done () {
   if [[ ! -f "$f" ]]; then
     return 1
   fi
-  grep -c "Label(s) may have changed. Rerun to get cross-references right." /workdir/output/${inputFile%.*}.log
+  ! grep -q "LaTeX Warning: There were undefined references." "$f"
 }
 
 make-pdf () {
   isDone=1
   i=0
-  until test-done || [[ $i -gt 4 ]]; do
+  while true; do
+    if test-done; then
+      exit 0
+    fi
+    if [[ $i -gt 4 ]]; then
+      exit 0
+    fi
     ((i++))
     echo "iteration $i"
-    pdflatex --interaction=nonstopmode --output-directory=/workdir/output "$inputFile" > log.log 2>&1
+    pdflatex --interaction=nonstopmode --output-directory=/workdir/output "$inputFile" > /workdir/output/log-$i.log 2>&1
     
   done    
 }

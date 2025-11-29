@@ -3,6 +3,8 @@
 #assumes that the root input file is at /workdir/input/<first argument>.tex and that the output will be in the /workdir/output directory, named as <first argument>.pdf
 #yes, this means you need to docker volume in both things.
 
+trap "exit 99" SIGINT 
+
 inputFile="$1"
 
 cd /workdir/input
@@ -13,14 +15,22 @@ if [ -z "$1" ] || [ ! -f "$inputFile" ]; then
   exit 1
 fi
 
+test-done () {
+  f="/workdir/output/${inputFile%.*}.log"
+  if [[ ! -f "$f" ]]; then
+    return 1
+  fi
+  grep -c "Label(s) may have changed. Rerun to get cross-references right." /workdir/output/${inputFile%.*}.log
+}
+
 make-pdf () {
   isDone=1
   i=0
-  until [[ $isDone -eq 0 || $i -gt 4 ]]; do
+  until test-done || [[ $i -gt 4 ]]; do
     ((i++))
     echo "iteration $i"
     pdflatex --interaction=nonstopmode --output-directory=/workdir/output "$inputFile" > log.log 2>&1
-    isDone=$(grep -c "Label(s) may have changed. Rerun to get cross-references right." /workdir/output/*.log)
+    
   done    
 }
 

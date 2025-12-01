@@ -18,10 +18,10 @@ if [ ! -f "$fullPath" ]; then
   exit 1
 fi
 
-filename=${$input%.*}
+filename=${input%.*}
 
 if [ -f "$PWD/output/$filename.pdf" ]; then
-  rm "$PWD/output/$filename.*"
+  rm -rf "$PWD/output/$filename.*"
 fi
 
 docker run --rm -it -v $PWD/latex:/workdir/input -v $PWD/output:/workdir/output dnd-latex:latest $input

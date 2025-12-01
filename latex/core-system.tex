@@ -31,32 +31,31 @@ If multiple situations affect a roll and each one grants advantage or imposes di
 
 If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.
 
-When you have advantage or disadvantage and something in the game, such as the halfling's Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.
-
-You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage. The
-
-GM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.
+You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. The GM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.
 
 \section{Proficiency Bonus}
 
-Characters have a proficiency bonus determined by level. Monsters also have this bonus, which is incorporated in their stat blocks. The bonus is used in the rules on ability checks, saving throws, and attack rolls.
+Characters have a proficiency bonus determined by level. Monsters have a similar bonus, which is incorporated in their stat blocks. The bonus is used in the rules on ability checks, saving throws, and attack rolls.
 
 Your proficiency bonus can't be added to a single die roll or other number more than once. For example, if two different rules say you can add your proficiency bonus to a Wisdom saving throw, you nevertheless add the bonus only once when you make the save.
 
 Occasionally, your proficiency bonus might be multiplied or divided (doubled or halved, for example) before you apply it. For example, the rogue's Expertise feature doubles the proficiency bonus for certain ability checks. If a circumstance suggests that your proficiency bonus applies more than once to the same roll, you still add it only once and multiply or divide it only once unless the feature specifically says otherwise (such as the Exert and Focus special actions).
 
-By the same token, if a feature or effect allows you to multiply your proficiency bonus when making an ability check that wouldn't normally benefit from your proficiency bonus, you still don't add the bonus to the check. For that check your proficiency bonus is 0, given the fact that multiplying 0 by any number is still 0. For instance, if you lack proficiency in the History skill, you gain no benefit from a feature that lets you double your proficiency bonus when you make Intelligence (History) checks.
+By the same token, if a feature or effect allows you to multiply your proficiency bonus when making an ability check that wouldn't normally benefit from your proficiency bonus, you still don't add the bonus to the check. For that check your proficiency bonus is 0, given the fact that multiplying 0 by any number is still 0. For example, if you're making a straight Strength check and you had a feature that let you double your proficiency in Strength (Athletics) checks, you'd still only add your Strength modifier without any contribution from your proficiency.
 
 In general, you don't multiply your proficiency bonus for attack rolls or saving throws. If a feature or effect allows you to do so, these same rules apply.
+
+\section{Bonus Dice on d20 Rolls}
+Features, abilities, and spells that grant bonus, non-d20 dice on d20 rolls (attacks, saving throws, and/or ability checks) do not stack regardless of their sources. For example, if you had an Inspiring Manipulation use from a friendly spellblade and were under the effect of the \nameref{spell:bless} spell, you could choose to expend one or the other on any individual check, but not both. Negative dice (those that \textit{subtract} from the result) stack using the regular rules. 
 
 \section{Stamina (STA) and Aether (AET)}\label{sec:stamina-and-aether}
 Player characters have reserves of extraordinary stamina and magic (called aether). They can expend these reserves to accomplish feats beyond their norm. The size of the pools depends on your class---physically-oriented classes tend to have (and use) more stamina while spell-casting classes tend to have (and use) more aether. Classes that do both tend to have more evenly balanced pools. Every character has access to a few common uses; classes, lineages, and feats may grant extra ways.
 
 \subparagraph{Deflect}\label{action:deflect}  When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
 
-\subparagraph{Exert}\label{action:exert}: By spending 1 STA when you make an ability check that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
+\subparagraph{Exert}\label{action:exert} By spending 1 STA when you make an ability check or save that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
-\subparagraph{Focus}: By spending 1 AET when you make an ability check that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check.
+\subparagraph{Focus}\label{action:focus} By spending 1 AET when you make an ability check or save that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
 \section{Ability Checks}
 
@@ -64,17 +63,20 @@ An ability check tests a character's or monster's innate talent and training in 
 
 For every ability check, the GM decides which of the six abilities is relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class.
 
-The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency).
+The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency). You'll rarely be asked to make a Very Easy check--these are only relevant if you have less than a +4 bonus.
 
-\begin{DndTable}[header=Typical Difficulty Classes]{XX}
-	\textbf{Task Difficulty} & \textbf{DC} \\
-	Very easy & 5 \\
-	Easy & 10 \\
-	Medium & 15 \\
-	Hard & 20 \\
-	Very hard & 25 \\
-	Nearly impossible & 30 \\
+\begin{DndTable}[header=Typical Difficulty Classes]{XcX}
+	\textbf{Task Difficulty} & \textbf{DC} & \textbf{Failure Chance w/ +4}\\
+	Very easy & 5 & 0\% \\
+	Easy & 10 & 25\% \\
+	Medium & 15 & 50\% \\
+	Hard & 20 & 75\% \\
+	Very hard & 25 100\% $\ast$\\
+	Nearly impossible & 30 & 100\% $\ast \ast$\\
 \end{DndTable}
+$\ast$: a Very Hard check is generally only doable as a higher-level character with proficiency or as a low-probability result with some sort of bonus die added to your check (such as the \nameref{spell:bless} spell). You might be able to do it via one of the Exert or Focus special actions
+
+$\ast \ast$: A Nearly Impossible check generally requires both some sort of proficiency multiplier and a high-level character.
 
 To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
 
@@ -92,7 +94,7 @@ Each ability covers a broad range of capabilities, including skills that a chara
 
 For example, a Dexterity check might reflect a character's attempt to pull off an acrobatic stunt, to palm an object, or to stay hidden. Each of these aspects of Dexterity has an associated skill: Acrobatics, Sleight of Hand, and Stealth, respectively. So a character who has proficiency in the Stealth skill is particularly good at Dexterity checks related to sneaking and hiding.
 
-The skills related to each ability score are shown in the following list. (No skills are related to Constitution.) See an ability's description in the later sections of this section for examples of how to use a skill associated with an ability.
+The skills related to each ability score are shown in the following list. No skills are related to Constitution. See an ability's description in the later sections of this section for examples of how to use a skill associated with an ability.
 
 \subsubsection{Strength}
 
@@ -137,11 +139,9 @@ The skills related to each ability score are shown in the following list. (No sk
 \item Persuasion
 \end{itemize}
 
-Sometimes, the GM might ask for an ability check using a specific skill—for example, “Make a Wisdom (Perception) check.” At other times, a player might ask the GM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.
+Sometimes, the GM might ask for an ability check using a specific skill---for example, “Make a Wisdom (Perception) check.” At other times, a player might ask the GM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.
 
 For example, if a character attempts to climb up a dangerous cliff, the GM might ask for a Strength (Athletics) check. If the character is proficient in Athletics, the character's proficiency bonus is added to the Strength check. If the character lacks that proficiency, he or she just makes a Strength check.
-
-\subsubsection{Variant: Skills with Different Abilities}
 
 Normally, your proficiency in a skill applies only to a specific kind of ability check. Proficiency in Athletics, for example, usually applies to Strength checks. In some situations, though, your proficiency might reasonably apply to a different kind of check. In such cases, the GM might ask for a check using an unusual combination of ability and skill, or you might ask your GM if you can apply a proficiency to a different check. For example, if you have to swim from an offshore island to the mainland, your GM might call for a Constitution check to see if you have the stamina to make it that far. In this case, your GM might allow you to apply your proficiency in Athletics and ask for a Constitution (Athletics) check. So if you're proficient in Athletics, you apply your proficiency bonus to the Constitution check just as you would normally do for a Strength (Athletics) check. Similarly, when your half-orc warden uses a display of raw strength to intimidate an enemy, your GM might ask for a Strength (Intimidation) check, even though Intimidation is normally associated with Charisma.
 
@@ -161,7 +161,7 @@ The rules on hiding in the “Dexterity” section below rely on passive checks,
 
 \subsection{Working Together}
 
-Sometimes two or more characters team up to attempt a task. The character who's leading the effort—or the one with the highest ability modifier—can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action.
+Sometimes two or more characters team up to attempt a task. The character who's leading the effort---or the one with the highest ability modifier if it makes sense in the fiction---can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action. Helping with an Attack action requires the ability to attack using your own action.
 
 A character can only provide help if the task is one that he or she could attempt alone. For example, trying to open a lock requires proficiency with thieves' tools, so a character who lacks that proficiency can't help another character in that task. Moreover, a character can help only when two or more individuals working together would actually be productive. Some tasks, such as threading a needle, are no easier with help.
 
@@ -175,11 +175,11 @@ Group checks don't come up very often, and they're most useful when all the char
 
 \section{Using Each Ability}
 
-Every task that a character or monster might attempt in the game is covered by one of the six abilities. This section explains in more detail what those abilities mean and the ways they are used in the game.
+Every task that a character or monster might attempt in the game is covered by one of the six abilities. This section explains in more detail what those abilities mean and the ways they are used in the game. Remember that ability scores are not as much physical or intellectual measurements as they are approaches and archetypes. A character can be physically fit and strong without having especially high Strength---they're just not that prone to approaching tasks with brute force.
 
 \subsection{Strength}
 
-Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. As for archetypes, it correlates to the Strong Guy--having high Strength means you want your character to be good at using brute force and athletics to approach challenges.
 
 \subsubsection{Strength Checks}
 
@@ -220,7 +220,7 @@ Your Strength score determines the amount of weight you can bear. The following 
 
 \subsection{Dexterity}
 
-Dexterity measures agility, reflexes, and balance.
+Dexterity measures agility, reflexes, and balance. As an archetype, it maps to the Nimble Guy, the Sneak, and the Archer. While they may be strong, they don't generally think with their muscles and prefer to dodge, weave, sneak, and rely on precise hits or actions rather than overpowering force.
 
 \subsubsection{Dexterity Checks}
 
@@ -265,11 +265,11 @@ You can't hide from a creature unless you have \textbf{total concealment} from t
 
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be \nameref{condition:surprised} by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM.
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be \nameref{condition:surprised} by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM and the situation.
 
 \subparagraph*{Passive Perception.} When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
-\subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in chapter 8, “Adventuring.”
+\subparagraph*{What Can You See?} One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be \textbf{lightly} or \textbf{heavily obscured}, as explained in \nameref{sub:vision}.
 \end{DndSidebar}
 \end{figure}
 \subsection{Constitution}
@@ -292,9 +292,9 @@ The GM might call for a Constitution check when you try to accomplish tasks like
 
 \subsubsection{Hit Points}
 
-Your Constitution modifier contributes to your hit points. Typically, you add your Constitution modifier to each Hit Die you roll for your hit points.
+Your Constitution modifier contributes to your hit points. You add your Constitution modifier to each Hit Die you roll for your hit points.
 
-If your Constitution modifier changes, your hit point maximum changes as well, as though you had the new modifier from 1st level. For example, if you raise your Constitution score when you reach 4th level and your Constitution modifier increases from +1 to +2, you adjust your hit point maximum as though the modifier had always been +2. So you add 3 hit points for your first three levels, and then roll your hit points for 4th level using your new modifier. Or if you're 7th level and some effect lowers your Constitution score so as to reduce your Constitution modifier by 1, your hit point maximum is reduced by 7.
+If your Constitution modifier changes, your hit point maximum changes as well, as though you had the new modifier from 1st level. For example, if you raise your Constitution score when you reach 4th level and your Constitution modifier increases from +1 to +2, you adjust your hit point maximum as though the modifier had always been +2. So you add 3 hit points for your first three levels, and then roll your hit points for 4th level using your new modifier.
 
 \subsection{Intelligence}
 
@@ -345,9 +345,7 @@ A Wisdom check might reflect an effort to read body language, understand someone
 
 \subparagraph*{Perception} Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.
 
-\subparagraph*{Survival} The GM might ask you to make a
-
-Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.
+\subparagraph*{Survival} The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.
 
 \subparagraph*{Other Wisdom Checks} The GM might call for a
 
@@ -370,7 +368,7 @@ Charisma measures your ability to interact effectively with others. It includes 
 
 A Charisma check might arise when you try to influence or entertain others, when you try to make an impression or tell a convincing lie, or when you are navigating a tricky social situation. The Deception, Intimidation, Performance, and Persuasion skills reflect aptitude in certain kinds of Charisma checks.
 
-\subparagraph*{Deception} Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast* talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone's suspicions with false assurances, or maintain a straight face while telling a blatant lie.
+\subparagraph*{Deception} Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast-talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone's suspicions with false assurances, or maintain a straight face while telling a blatant lie.
 
 \subparagraph*{Intimidation} When you attempt to influence someone through overt threats, hostile actions, and physical violence, the GM might ask you to make a Charisma (Intimidation) check. Examples include trying to pry information out of a prisoner, convincing street thugs to back down from a confrontation, or using the edge of a broken bottle to convince a sneering vizier to reconsider a decision.
 
@@ -424,7 +422,7 @@ Sometimes it's important, though, to know how long it takes to get from one spot
 
 \subsection{Speed}
 
-Every character and monster has a speed, which is the distance in feet that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life* threatening situation.
+Every character and monster has a speed, which is the distance in feet that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life-threatening situation.
 
 The following rules determine how far a character or monster can move in a minute, an hour, or a day.
 
@@ -434,7 +432,7 @@ While traveling, a group of adventurers can move at a normal, fast, or slow pace
 
 \subparagraph*{Forced March} The Travel Pace table assumes that characters travel for 8 hours in day. They can push on beyond that limit, at the risk of exhaustion.
 
-For each additional hour of travel beyond 8 hours, the characters cover the distance shown in the Hour column for their pace, and each character must make a Constitution saving throw at the end of the hour. The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of exhaustion (see appendix A).
+For each additional hour of travel beyond 8 hours, the characters cover the distance shown in the Hour column for their pace, and each character must make a Constitution saving throw at the end of the hour. The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of exhaustion (see \nameref{condition:exhaustion})
 
 \subparagraph*{Mounts and Vehicles} For short spans of time (up to an hour), many animals move much faster than humanoids. A mounted character can ride at a gallop for about an hour, covering twice the usual distance for a fast pace. If fresh mounts are available every 8 to 10 miles, characters can cover larger distances at this pace, but this is very rare except in densely populated areas.
 
@@ -443,7 +441,7 @@ Characters in wagons, carriages, or other land vehicles choose a pace as normal.
 Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a \textit{carpet of flying}, allow you to travel more swiftly.
 
 \begin{figure}
-    \begin{DndTable}[header=Travel Pace]{XXXXX}
+    \begin{DndTable}[header=Travel Pace]{llllX}
         \textbf{Pace} & \textbf{Distance per: Minute} & \textbf{Hour} & \textbf{Day} & \textbf{Effect} \\
         Fast & 400 feet & 4 miles & 32 miles & $-$5 penalty to passive Wisdom (Perception) scores \\
         Normal & 300 feet & 3 miles & 24 miles & -- \\
@@ -453,7 +451,7 @@ Certain special mounts, such as a pegasus or griffon, or special vehicles, such 
 
 \subsubsection{Difficult Terrain}
 
-The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground—all considered difficult terrain.
+The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground---all considered difficult terrain.
 
 You move at half speed in difficult terrain---moving 1 foot in difficult terrain costs 2 feet of speed---so you can cover only half the normal distance in a minute, an hour, or a day.
 
@@ -469,11 +467,11 @@ While climbing or swimming, each foot of movement costs 1 extra foot (2 extra fe
 
 Your Strength determines how far you can jump without requiring a check. If you wish to jump further than described below, the GM may allow you to make a Strength (Athletics) check with a DC depending on the circumstances.
 
-\subparagraph*{Long Jump} When you make a long jump, you cover a number of feet up to 10 + twice your Strength score if you move at least 10 feet on foot immediately before the jump. When you make a standing long jump, you can leap only half that distance. Either way, each foot you clear on the jump costs a foot of movement.
+\subparagraph*{Long Jump} When you make a long jump, you cover a number of feet up to 10 + twice your Strength modifier if you move at least 10 feet on foot immediately before the jump. When you make a standing long jump, you can leap only half that distance. Either way, each foot you clear on the jump costs a foot of movement.
 
 This rule assumes that the height of your jump doesn't matter, such as a jump across a stream or chasm. At your GM's option, you must succeed on a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump's distance), such as a hedge or low wall. Otherwise, you hit it.
 
-When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone.
+When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. On a failed check you land prone.
 
 \subparagraph*{High Jump} When you make a high jump, you leap into the air a number of feet equal to 3 + your Strength modifier if you move at least 10 feet on foot immediately before the jump. When you make a standing high jump, you can jump only half that distance. Either way, each foot you clear on the jump costs a foot of movement. In some circumstances, your GM might allow you to make a Strength (Athletics) check to jump higher than you normally can.
 
@@ -489,13 +487,13 @@ A fall from a great height is one of the most common hazards facing an adventure
 
 \subsection{Suffocating}
 
-A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).
+A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds). A creature suddenly deprived of air or immersed in water must make a DC 10 Constitution saving throw or it fails to hold its breath.
 
 When a creature runs out of breath or is choking, it can survive for a number of rounds equal to its Constitution modifier (minimum of 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again.
 
 For example, a creature with a Constitution of +2 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
 
-\subsection{Vision and Light}
+\subsection{Vision and Light}\label{sub:vision}
 
 The most fundamental tasks of adventuring—--noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—--rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
 
@@ -571,7 +569,7 @@ Substantial background noise (noise at least one step higher) generally moves th
 
 \begin{figure}
 \begin{DndComment}{Commentary on hearing}
-	This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity(Stealth) check instead.
+	This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity (Stealth) check instead.
 
 	In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area or wide open area, decrease them by a step.
 \end{DndComment}
@@ -584,7 +582,7 @@ For humanoid creatures, smell is even worse than hearing. You can detect, but no
 Some creatures with exceptional olifactory capabilities (like bloodhounds) are capable of tracking even low-scent targets a very long distance.
 
 \subsubsection{Magical Senses}
-In a fantasy world, most creatures are at least somewhat sensitive to the manipulation of aether, especially in the form of spells. As a general rule, all creatures can recognize spellcasting occurring within 60 feet of them as long as it has one or more components. Hiding spellcasting is generally not possible unless you can remove all components.
+In a fantasy world, most creatures are at least somewhat sensitive to the manipulation of aether, especially in the form of spells. As a general rule, all creatures that have an Intelligence score of -3 or better can recognize spellcasting occurring within 60 feet of them as long as it has one or more components. Creatures with lower Intelligence may recognize that something is happening, but don't have enough reasoning capacity to know what spells are. Hiding spellcasting is generally not possible unless you can remove all components.
 
 \subsection{Food and Water}
 
@@ -592,7 +590,7 @@ Characters who don't eat or drink suffer the effects of \nameref{condition:exhau
 
 \subsubsection{Food}
 
-A character needs one pound of food per day and can make food last longer by subsisting on half rations. Eating half a pound of food in a day counts as half a day without food. Large creatures such as horses require 15 lbs of food per day, although they can subsist on forage and only two pounds of grain or other concentrated foods per day.
+A character needs one pound of food per day and can make food last longer by subsisting on half rations. Eating half a pound of food in a day counts as half a day without food. Large creatures such as horses require 15 lbs of food per day, although they can subsist on forage and only two pounds of grain or other concentrated foods per day as long as there is enough grass. Forage is not possible in places like deserts and barren lava fields.
 
 A character can go without food for a number of days equal to 3 + his or her Constitution modifier (minimum 1). At the end of each day beyond that limit, a character automatically suffers one level of exhaustion.
 
@@ -600,7 +598,7 @@ A normal day of eating resets the count of days without food to zero.
 
 \subsubsection{Water}
 
-A character needs one gallon of water per day, or two gallons per day if the weather is hot. A character who drinks only half that much water must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day. A character with access to even less water automatically suffers one level of exhaustion at the end of the day. Large creatures such as horses used as mounts need 10 gallons per day, 20 if the weather is hot or the pace is fast. 
+A character needs one gallon of water per day, or two gallons per day if the weather is hot. A character who drinks less than that much water (down to half the required amount) must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day. A character with access to even less water automatically suffers one level of exhaustion at the end of the day. Large creatures such as horses used as mounts need 10 gallons per day, 20 if the weather is hot or the pace is fast. 
 
 If the character already has one or more levels of exhaustion, the character takes two levels in either case.
 
@@ -616,13 +614,13 @@ A character can also attempt a Strength check to break an object. The GM sets th
 
 \section{Resting}
 
-Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest—time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
+Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest---time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
 
 Adventurers can take short rests in the midst of an adventuring day and a long rest to end the day.
 
 \subsection{Short Rest}
 
-A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds. Any spellcasting interrupts a short rest.
+A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds. Any spellcasting or combat interrupts a short rest.
 
 A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, which is equal to the character's level. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character regains some spent Hit Dice upon finishing a long rest, as explained below.
 
@@ -662,9 +660,7 @@ In some cases, the passage of time is something that occurs with little fanfare 
 
 \subsection{Lifestyle Expenses}
 
-Between adventures, you choose a particular quality of life and pay the cost of maintaining that lifestyle.
-
-Living a particular lifestyle doesn't have a huge effect on your character, but your lifestyle can affect the way other individuals and groups react to you. For example, when you lead an aristocratic lifestyle, it might be easier for you to influence the nobles of the city than if you live in poverty.
+Between adventures, you choose a particular quality of life and pay the cost of maintaining that lifestyle. Living a particular lifestyle doesn't have a huge effect on your character, but your lifestyle can affect the way other individuals and groups react to you. For example, when you lead an aristocratic lifestyle, it might be easier for you to influence the nobles of the city than if you live in poverty.
 
 \subsection{Downtime Activities}
 
@@ -678,7 +674,7 @@ You can craft nonmagical objects, including adventuring equipment and works of a
 
 For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 50 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 50 gp, you make progress every day in 50-gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 30 days to craft by yourself.
 
-Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 5 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 10 days, at a total cost of 750 gp.
+Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 50 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 10 days, at a total cost of 750 gp.
 
 While crafting, you can maintain a modest lifestyle without having to pay 1 gp per day, or a comfortable lifestyle at half the normal cost.
 
@@ -707,7 +703,7 @@ When you begin your research, the GM determines whether the information is avail
 
 For each day of research, you must spend 1 gp to cover your expenses. This cost is in addition to your normal lifestyle expenses.
 
-\subsubsection{Training}
+\subsubsection{Training} \label{sub:training}
 
 You can spend time between adventures learning a new language, training with a set of tools, or exchanging a skill trick you know for a different one you qualify for. Your GM might allow additional training options.
 

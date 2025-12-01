@@ -9,3 +9,4 @@ assets/*.svg
 **/*.out
 tools/output
 output/*
+.DS_Store

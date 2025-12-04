@@ -22,6 +22,14 @@
 
 \newcommand*{\StatLine}[0]{\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}}
 
+\hypersetup {
+    colorlinks = true,
+    urlcolor = blue,
+    linkcolor = blue,
+    citecolor = red
+}
+
 \begin{document}
-	\import{./monsters}{monsters.tex}
+	\import{./monsters/no-spell-ref}{monsters.tex}
+    \import{./}{conditions-no-ref}
 \end{document}

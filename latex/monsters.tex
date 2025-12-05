@@ -29,7 +29,15 @@
     citecolor = red
 }
 
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
+
 \begin{document}
-	\import{./monsters/no-spell-ref}{monsters.tex}
-    \import{./}{conditions-no-ref}
+	\import{./monsters}{monsters.tex}
+    \import{./}{conditions.tex}
 \end{document}

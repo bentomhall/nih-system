@@ -2,7 +2,7 @@
 \section{Constructs}
 Artificial bodies brought to life by clockwork, elemental Words of power, or trapped souls. Few of these can be created these days other than the most simple animated objects, although simple golem-like creatures are common in Wyrmhold and Byssia--the first being labor constructs directed by their creators, mostly mobile muscle, and the second being fey-animated wooden protectors of remote shrines.
 
-Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as \nameref{spell:unbind}, while those that operate via clockwork or trapped spirits are not.
+Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as \smartnameref{spell:unbind}{\textit{unbind}}, while those that operate via clockwork or trapped spirits are not.
 
 Constructs, being unfeeling matter moved by non-sentient forces, is remarkably hard to meaningfully damage. As a general rule, most constructs have fixed damage reduction value. All incoming damage is reduced by the given amount. If that would reduce the damage to zero or less, the construct takes no damage. Effects that trigger on hit still occur as normal. Critial hits bypass this damage reduction, dealing full damage. This trait is called Constructed Resilience.
 
@@ -17,7 +17,7 @@ Due to their nature, animated objects do not have the Constructed Resilience tra
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={39 (6d10 + 6)}, speed={25 ft.}]
 	\MonsterStats{+3}{-1}{+1}{-5}{-4}{-5}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={1:1}]
-	\DndMonsterAction{Antimagic Susceptibility} The construct is incapacitated while in the area of \nameref{spell:abjure-aether-manipulation}. If targeted by \nameref{spell:unbind}, the construct must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
+	\DndMonsterAction{Antimagic Susceptibility} The construct is incapacitated while in the area of \smartnameref{spell:abjure-aether-manipulation}{\textit{abjure aether manipulation}}. If targeted by \smartnameref{spell:unbind}{\textit{unbind}}, the construct must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
 	
 	\DndMonsterAction{False Appearance} While the furniture remains motionless, it is indistinguishable from a normal table, sofa, wardrobe, or whatever piece of furniture it was created from.
 	
@@ -35,7 +35,7 @@ Due to their nature, animated objects do not have the Constructed Resilience tra
 	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={33 (6d8 + 6)}, speed={25 ft.}]
 	\MonsterStats{+2}{+0}{+1}{-5}{-4}{-5}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 6}, languages={—}, challenge={2:3}]
-	\DndMonsterAction{Antimagic Susceptibility} The armor is incapacitated while in the area of \nameref{spell:abjure-aether-manipulation}. If targeted by \nameref{spell:unbind}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
+	\DndMonsterAction{Antimagic Susceptibility} The armor is incapacitated while in the area of \smartnameref{spell:abjure-aether-manipulation}{\textit{abjure aether manipulation}}. If targeted by \smartnameref{spell:unbind}{\textit{unbind}}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.
 	
 	\DndMonsterAction{False Appearance} While the armor remains motionless, it is indistinguishable from a normal suit of armor.
 	
@@ -185,7 +185,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 		reach=5,
 		dmg=\DndDice{2d10 + 5},
 		dmg-type=bludgeoning,
-		extra={. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \nameref{inc:restoration} incantation (in its greater form) or other magic of similar power.}
+		extra={. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \smartnameref{inc:restoration}{\textit{restoration}} incantation (in its greater form) or other magic of similar power.}
 	]
 	\DndMonsterAction{Haste (Recharge 5-6)}
 	Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action. On the next turn after that, its movement speed is reduced to half as the clay has solidified.
@@ -221,7 +221,7 @@ The golem targets one or more creatures it can see within 10 feet of it. Each ta
 
 If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. 
 
-This counts as being the spell \nameref{spell:slow} but does not have any components.
+This counts as being the spell \smartnameref{spell:slow}{\textit{slow}} but does not have any components.
 \end{multicols}
 \end{DndMonster}
 

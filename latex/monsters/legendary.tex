@@ -47,75 +47,6 @@
 	\end{multicols}
 \end{DndMonster}
 
-% \begin{DndMonster}[width=\textwidth + 8pt]{Tarrasque} rewrite me
-% 	\begin{multicols}{2}
-% 	\DndMonsterType{Gargantuan monstrosity (titan)}
-% 	\DndMonsterBasics[armor-class={25 (natural armor)}, hit-points={676 (33d20 + 330)}, speed={40 ft.}]
-% 	\MonsterStats{+10}{+0}{+10}{-4}{+0}{+0}
-% 	\DndMonsterDetails[saving-throws={Int +5, Wis +9, Cha +9}, skills={}, damage-immunities={fire, poison; bludgeoning, piercing, and slashing from nonmagical attacks}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, paralyzed, poisoned}, senses={blindsight 120 ft., passive Perception 10}, languages={—}, challenge={30 (155,000 XP)}]
-% 	\DndMonsterAction{Legendary Resistance (3/Day)} If the tarrasque fails a saving throw, it can choose to succeed instead.
-	
-% 	\DndMonsterAction{Magic Resistance} The tarrasque has advantage on saving throws against spells and other magical effects.
-	
-% 	\DndMonsterAction{Reflective Carapace} Any time the tarrasque is targeted by a \textit{magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.
-	
-% 	\DndMonsterAction{Siege Monster} The tarrasque deals double damage to objects and structures.
-	
-% 	\DndMonsterSection{Actions}
-% 	\DndMonsterAction{Multiattack} The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its Swallow instead of its bite.
-% 	\DndMonsterAttack[
-% 		name=Bite,
-% 		distance=melee,
-% 		type=weapon,
-% 		mod=+19,
-% 		reach=10,
-% 		dmg=\DndDice{4d12 + 10},
-% 		dmg-type=piercing,
-% 		extra={. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the tarrasque can't bite another target.}
-% 	]
-% 	\DndMonsterAttack[
-% 		name=Claw,
-% 		distance=melee,
-% 		type=weapon,
-% 		mod=+19,
-% 		reach=15,
-% 		dmg=\DndDice{4d8 + 10},
-% 		dmg-type=slashing
-% 	]
-% 	\DndMonsterAttack[
-% 		name=Horns,
-% 		distance=melee,
-% 		type=weapon,
-% 		mod=+19,
-% 		reach=10,
-% 		dmg=\DndDice{4d10 + 10},
-% 		dmg-type=piercing
-% 	]
-% 	\DndMonsterAttack[
-% 		name=Tail,
-% 		distance=melee,
-% 		type=weapon,
-% 		mod=+19,
-% 		reach=20,
-% 		dmg=\DndDice{4d6 + 10},
-% 		dmg-type=bludgeoning,
-% 		extra={. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be knocked prone.}
-% 	]
-% 	\DndMonsterAction{Frightful Presence}
-% 	Each creature of the tarrasque's choice within 120 feet of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours.
-% 	\DndMonsterAction{Swallow}
-% 	The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.
-	
-% 	\DndMonsterSection{Legendary Actions}
-% 	The Tarrasque can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Tarrasque regains spent legendary actions at the start of its turn.
-% 	\begin{DndMonsterLegendaryActions}
-% 	\DndMonsterLegendaryAction{Attack}{The tarrasque makes one claw attack or tail attack.}
-% 	\DndMonsterLegendaryAction{Move}{The tarrasque moves up to half its speed.}
-% 	\DndMonsterLegendaryAction{Chomp (Costs 2 Actions)}{The tarrasque makes one bite attack or uses its Swallow.}
-% 	\end{DndMonsterLegendaryActions}
-% 	\end{multicols}
-% \end{DndMonster}
-
 \begin{DndMonster}[float*=hb,width=\textwidth + 8pt]{Lich}
 	\begin{multicols}{2}
 	\DndMonsterType{Medium undead}
@@ -128,9 +59,9 @@
 	
 	\DndMonsterAction{Spellcasting} The lich's spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich can cast the following spells:
 	\begin{itemize}
-		\item[] \textbf{Concentration}: \nameref{spell:maze} (Legendary, 1x), \nameref{spell:antilife-shell} (1x), \nameref{spell:domination} (Legendary, 1x)
-		\item[] \textbf{Damage}: \nameref{spell:power-word-kill} (Legendary, use level of 20, 1x), \nameref{spell:disintegrate} (Legendary, 2x), \nameref{spell:rip-soul} (Legendary, 2x), \nameref{spell:circle-of-death} (2x)
-		\item[] \textbf{Defensive}: \nameref{spell:misty-step} (at will), \nameref{spell:blink} (1x)
+		\item[] \textbf{Concentration}: \smartnameref{spell:maze}{\textit{maze}} (Legendary, 1x), \smartnameref{spell:antilife-shell}{\textit{antilife shell}} (1x), \smartnameref{spell:domination}{\textit{domination}} (Legendary, 1x)
+		\item[] \textbf{Damage}: \smartnameref{spell:power-word-kill}{\textit{power word kill}} (Legendary, use level of 20, 1x), \smartnameref{spell:disintegrate}{\textit{disintegrate}} (Legendary, 2x), \smartnameref{spell:rip-soul}{\textit{rip soul}} (Legendary, 2x), \smartnameref{spell:circle-of-death}{\textit{circle of death}} (2x)
+		\item[] \textbf{Defensive}: \smartnameref{spell:misty-step}{\textit{misty step}} (at will), \smartnameref{spell:blink}{\textit{blink}} (1x)
 	\end{itemize}
 	
 	\DndMonsterAction{Turn Resistance} The lich has advantage on saving throws against any effect that turns undead.
@@ -182,9 +113,9 @@
 
 \DndMonsterAction{Spellcasting} The mummy lord's spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord can cast the following spells:
 \begin{itemize}
-	\item[] \textbf{Concentration} \nameref{spell:arcane-binding} (2x), \nameref{spell:shield-of-faith} (1x)
-	\item[] \textbf{Damage} \nameref{spell:harm} (Legendary, 1x, 14d6+30), \nameref{spell:guiding-bolt} (3x)
-	\item[] \textbf{Other} \nameref{spell:unbind} (3x), \nameref{spell:insect-plague} (1x)
+	\item[] \textbf{Concentration} \smartnameref{spell:arcane-binding}{\textit{arcane binding}} (2x), \smartnameref{spell:shield-of-faith}{\textit{shield of faith}} (1x)
+	\item[] \textbf{Damage} \smartnameref{spell:harm}{\textit{harm}} (Legendary, 1x, 14d6+30), \smartnameref{spell:guiding-bolt}{\textit{guiding bolt}} (3x)
+	\item[] \textbf{Other} \smartnameref{spell:unbind}{\textit{unbind}} (3x), \smartnameref{spell:insect-plague}{\textit{insect plague}} (1x)
 \end{itemize}
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The mummy can use its Dreadful Glare and makes one attack with its rotting fist or its Divine Lance.
@@ -224,49 +155,3 @@ The Mummy Lord can take 3 legendary actions, choosing from the options below. On
 \end{DndMonsterLegendaryActions}
 \end{multicols}
 \end{DndMonster}
-
-% \begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Couatl}
-% \begin{multicols}{2}
-% \DndMonsterType{Medium celestial}
-% \DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft., fly 90 ft.}]
-% \MonsterStats{+3}{+5}{+3 (+5)}{+4}{+5 (+7)}{+4 (+6)}
-% \DndMonsterDetails[saving-throws={Con +5, Wis +7, Cha +6}, skills={}, damage-immunities={psychic}, damage-resistances={radiant}, damage-vulnerabilities={}, condition-immunities={}, senses={truesight 120 ft., passive Perception 15}, languages={all, telepathy 120 ft.}, challenge={3:5}]
-
-% \DndMonsterAction{Innate Spellcasting} The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
-
-% \begin{itemize}
-% \item[] At will: \nameref{spell:detect-thoughts}
-% \item[] 3/day each: \nameref{spell:bless},  \nameref{spell:cure-wounds}, \nameref{spell:protection-from-poison}, \nameref{spell:sanctuary}, \nameref{spell:shield}
-% \item[] 1/day each: \nameref{spell:flame-strike}
-% \end{itemize} 
-
-% \DndMonsterAction{Shielded Mind} The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.
-
-% \DndMonsterSection{Actions}
-% \DndMonsterAttack[
-% 	name=Bite,
-% 	distance=melee,
-% 	type=weapon,
-% 	mod=+6,
-% 	reach=5,
-% 	dmg=\DndDice{1d6 + 3},
-% 	dmg-type=piercing,
-% 	extra={, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.}
-% ]
-% \DndMonsterAttack[
-% 	name=Constrict,
-% 	distance=melee,
-% 	type=weapon,
-% 	mod=+6,
-% 	reach=10,
-% 	dmg=\DndDice{2d6 + 3},
-% 	dmg-type=bludgeoning,
-% 	extra={, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.}
-% ]
-
-% \DndMonsterAction{Change Shape}
-% The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
-
-% In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
-% \end{multicols}
-% \end{DndMonster}

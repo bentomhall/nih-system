@@ -20,8 +20,6 @@ fi
 
 filename=${input%.*}
 
-if [ -f "$PWD/output/$filename.pdf" ]; then
-  rm -rf "$PWD/output/$filename.*"
-fi
+rm -rf output/*
 
 docker run --rm -it -v $PWD/latex:/workdir/input -v $PWD/output:/workdir/output dnd-latex:latest $input

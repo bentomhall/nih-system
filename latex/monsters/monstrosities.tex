@@ -25,7 +25,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={52 (8d8 + 16)}, speed={20 ft.}]
 	\MonsterStats{+3}{-1}{+2}{-4}{-1}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={2:2}]
-	\DndMonsterAction{Petrifying Gaze} If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the \nameref{inc:restoration} incantation (greater only) or other magic.
+	\DndMonsterAction{Petrifying Gaze} If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the \smartnameref{inc:restoration}{\textit{restoration}} incantation (greater only) or other magic.
 	
 	A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.
 	
@@ -146,7 +146,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={understands Deep Speech but can't speak}, challenge={4:5}]
 	\DndMonsterAction{Amphibious} The chuul can breathe air and water.
 
-	\DndMonsterAction{Sense Magic} The chuul senses magic within 120 feet of it at will. This trait otherwise works like the \nameref{inc:sense-aura} incantation but isn't itself magical.
+	\DndMonsterAction{Sense Magic} The chuul senses magic within 120 feet of it at will. This trait otherwise works like the \smartnameref{inc:sense-aura}{\textit{sense aura}} incantation but isn't itself magical.
 
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.
@@ -565,7 +565,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={127 (17d8 + 51)}, speed={30 ft.}]
 \MonsterStats{+0}{+2}{+3}{+1}{+1}{+2}
 \DndMonsterDetails[saving-throws={}, skills={Deception +5, Insight +4, Perception +4, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Common}, challenge={5:6}]
-\DndMonsterAction{Petrifying Gaze} When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the \nameref{inc:restoration} (greater only).
+\DndMonsterAction{Petrifying Gaze} When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the \smartnameref{inc:restoration}{\textit{restoration}} (greater only).
 
 Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.
 
@@ -652,9 +652,9 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 	\DndMonsterAction{Spellcasting} The naga's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells:
 	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:banishment} (2x), \nameref{spell:shield-of-faith} (1x), \nameref{spell:bestow-curse} (1x), \nameref{spell:arcane-binding} (2x)
-		\item[] \textbf{Healing} \nameref{spell:cure-wounds} (3x)
-		\item[] \textbf{Damage} \nameref{spell:flame-strike} (1x)
+		\item[] \textbf{Concentration} \smartnameref{spell:banishment}{\textit{banishment}} (2x), \smartnameref{spell:shield-of-faith}{\textit{shield of faith}} (1x), \smartnameref{spell:bestow-curse}{\textit{bestow curse}} (1x), \smartnameref{spell:arcane-binding}{\textit{arcane binding}} (2x)
+		\item[] \textbf{Healing} \smartnameref{spell:cure-wounds}{\textit{cure wounds}} (3x)
+		\item[] \textbf{Damage} \smartnameref{spell:flame-strike}{\textit{flame strike}} (1x)
 	\end{itemize}
 
 	\DndMonsterSection{Actions}
@@ -698,9 +698,9 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 	\DndMonsterAction{Spellcasting} The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells:
 	\begin{itemize}
-		\item[] \textbf{Concentration} \nameref{spell:domination} (Legendary, 1x), \nameref{spell:arcane-binding} (3x)
-		\item[] \textbf{Damage} \nameref{spell:blight} (2x), \nameref{spell:lightning-bolt} (2x)
-		\item[] \textbf{Other} \nameref{spell:dimension-door} (1x)
+		\item[] \textbf{Concentration} \smartnameref{spell:domination}{\textit{domination}} (Legendary, 1x), \smartnameref{spell:arcane binding}{\textit{arcane binding}} (3x)
+		\item[] \textbf{Damage} \smartnameref{spell:blight}{\textit{blight}} (2x), \smartnameref{spell:lightning-bolt}{\textit{lightning bolt}} (2x)
+		\item[] \textbf{Other} \smartnameref{spell:dimension-door}{\textit{dimension door}} (1x)
 	\end{itemize}
 
 	\DndMonsterSection{Actions}

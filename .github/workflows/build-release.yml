@@ -1,0 +1,34 @@
+name: build-nih-release
+on:
+ deployment
+jobs:
+  build-all:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - run: mkdir -P output
+      - name: build-main
+        id: main
+        run: ./build.sh main.tex
+      - name: build-monsters
+        id: monsters
+        run: 
+          ./build.sh monsters.tex
+      - name: build-no-monsters
+        id: no-monsters
+        run: 
+          ./build.sh no-monsters.tex
+      - name: changelog
+        id: changelog
+        run: 
+          ./build.sh changelog-only.tex
+      - name: Upload assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run:
+          gh release upload ${{github.ref_name }} output/*.pdf
+        
+        
+

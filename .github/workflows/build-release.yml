@@ -1,6 +1,10 @@
 name: build-nih-release
 on:
- deployment
+  workflow_dispatch:
+      inputs:
+        tag:
+          description: 'Tag to attach output to'
+          required: true
 jobs:
   build-all:
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run:
-          gh release upload ${{github.ref_name }} output/*.pdf
+          gh release upload ${{ github.event.inputs.tag }} output/*.pdf
         
         
 

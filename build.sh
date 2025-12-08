@@ -7,9 +7,8 @@ if [ -z "$1" ]; then
   input='main.tex'
 fi
 
-if [ -n "$BUILD" ] || [ -z $(docker image ls -q dnd-latex:latest) ]; then
-  docker build -t dnd-latex:latest ./tools/docker-build/
-fi
+if [ -n $BUILD ]; then
+  docker build -t admiralbenbo/dnd-latex:latest "$PWD/tools/docker-build/"
 
 fullPath="$PWD/latex/$input"
 
@@ -22,4 +21,4 @@ filename=${input%.*}
 
 rm -rf output/*
 
-docker run --rm -it -v $PWD/latex:/workdir/input -v $PWD/output:/workdir/output dnd-latex:latest $input
+docker run --rm -it -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" admiralbenbo/dnd-latex:latest $input

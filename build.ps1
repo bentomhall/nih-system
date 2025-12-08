@@ -3,10 +3,8 @@ param (
   [switch]$Build=$false
 )
 
-$exists = docker image ls -q 'dnd-latex'
-
-if ($Build -or !$exists) {
-  docker build -t dnd-latex:latest $PWD/tools/docker-build/
+if ($Build) {
+  docker build -t admiralbenbo/dnd-latex:latest $PWD/tools/docker-build/
 }
 
 $fullPath = "$PWD/latex/$InputPath"
@@ -22,7 +20,7 @@ if (Test-Path "$PWD\output\$filename.pdf") {
   Remove-Item "$PWD\output\$filename.*"
 }
 
-docker run --rm -it -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" "dnd-latex:latest" $InputPath
+docker run --rm -it -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" "admiralbenbo/dnd-latex:latest" $InputPath
 
 $success=(Test-Path "$PWD/output/$filename.pdf")
 

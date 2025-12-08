@@ -46,22 +46,22 @@ You start with the following equipment, in addition to the equipment granted by 
 	\begin{DndTable}[header=Armsman\label{tbl:armsman}]{lcXccc}
 		\textbf{Level} & \textbf{Proficiency} & \textbf{Features} & \textbf{Stamina} & \textbf{Aether} & \textbf{Aether Limit}\\ 
 		1st   & +2  & Weapon Mastery, Second Wind                       & 1 + CON         & 1     & 1 \\
-		2nd   & +2  & Action Surge                           			 		 & 2 + CON         & 1     & 1 \\
+		2nd   & +2  & Action Surge                           		    & 2 + CON         & 1     & 1 \\
 		3rd   & +2  & Martial Archetype                                 & 3 + CON         & 2     & 1 \\
 		4th   & +2  & Ability Score Improvement                         & 4 + CON         & 2     & 1 \\
 		5th   & +3  & Extra Attack, Repeated Strikes                    & 5 + CON         & 3     & 2 \\
-		6th   & +3  & Versatility, Ability Score Improvement   	 			 & 6 + CON         & 3     & 2 \\
+		6th   & +3  & Versatility, Ability Score Improvement   	 		& 6 + CON         & 3     & 2 \\
 		7th   & +3  & Martial Archetype Feature                         & 7 + CON         & 4     & 2 \\
 		8th   & +3  & Ability Score Improvement                         & 8 + CON         & 4     & 2 \\
 		9th   & +4  & Indomitable, Everything's a Weapon                & 9 + CON         & 5     & 2 \\
 		10th  & +4  & Martial Archetype Feature                         & 10 + CON        & 5     & 3 \\
 		11th  & +4  & Extra Attack (2)                                  & 11 + CON        & 6     & 3 \\
 		12th  & +4  & Ability Score Improvement                         & 12 + CON        & 6     & 3 \\
-		13th  & +5  & Flash Step                            			 			 & 13 + CON        & 7     & 3 \\
-		14th  & +5  & Deathblow                         				 				 & 14 + CON        & 7     & 3 \\
+		13th  & +5  & Flash Step                            			& 13 + CON        & 7     & 3 \\
+		14th  & +5  & Deathblow                         				& 14 + CON        & 7     & 3 \\
 		15th  & +5  & Martial Archetype Feature                         & 15 + CON        & 8     & 3 \\ 
 		16th  & +5  & Ability Score Improvement                         & 16 + CON        & 8     & 3 \\
-		17th  & +6  & Extra Attack (3) 								 								 & 17 + CON        & 9     & 4 \\
+		17th  & +6  & Extra Attack (3) 								 	& 17 + CON        & 9     & 4 \\
 		18th  & +6  & Martial Archetype Feature                         & 18 + CON        & 9     & 4 \\
 		19th  & +6  & Ability Score Improvement                         & 19 + CON        & 10    & 4 \\
 		20th  & +6  & Improved Deathblow                                & 20 + CON        & 10    & 4 \\
@@ -80,7 +80,7 @@ You are better than most at using the additional properties of your weapon. You 
 
 \subparagraph*{Loading} You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature by spending 1 STA. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
 
-\subparagraph*{Parrying} You can use the Deflect action as many times as you want per turn as long as you expend the necessary stamina.
+\subparagraph*{Parrying} When you take the Deflect action, the increased AC lasts until the start of your next turn instead of for the triggering attack only.
 
 \subparagraph*{Precise} You score a critical hit on an 18, 19, or 20 instead of on a 19 or 20.
 
@@ -118,7 +118,7 @@ The number of attacks increases to three when you reach 11th level in this class
 
 \subsection{Repeated Strikes}
 
-Beginning at 5th level, you've learned to carry some of the momentum from attack to attack, amplifying the effects of the blows. Each time you hit a target with a weapon attack during one of your turns, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. You can expend these Momentum points on any hit after your first in a given turn. Each Momentum point spent increases the damage dealt by 1d4. Unspent Momentum fades after one minute of not making any attacks.
+Beginning at 5th level, you've learned to carry some of the momentum from attack to attack, amplifying the effects of the blows. Each time you hit a target with a weapon attack during one of your turns, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. You can expend one or more Momentum points when you hit with a weapon attack. Each Momentum point spent increases the damage dealt by 1d4. Unspent Momentum fades after one minute of not making any attacks.
 
 Alternatively, you can expend 2 Momentum points on a hit to force the target to make a Constitution saving throw against your Weapon Mastery DC. On a failed save, they are \nameref{condition:staggered} until the end of your next turn. You can expend 4 Momentum points to force the same saving throw, but instead of staggered, they are \nameref{condition:stunned} until the end of your next turn.
 
@@ -189,31 +189,18 @@ Starting at 18th level, you have trained enough to be able to magically sense yo
 Don't let the name confuse you, there are sword saints devoted to all forms of weapons. The sword saint takes their weapon skills to an entirely new level. On the battlefield they are a flash of lightning, a stroke of thunder, an explosion of strikes. Many of their techniques draw on pure aether, mixing magic and weapon play.
 
 \begin{figure}[htb]
-\begin{DndTable}[header=Sword Saint]{lXcc}
-	\textbf{Armsman Level} & \textbf{Feature} & \textbf{Aether} & \textbf{Aether Limit} \\ 
-	3 & Exceptional Aether, Weapon Flexibility & 3 & 1 \\
-	4 & -- & 4 & 2 \\
-	5 & -- & 5 & 2 \\
-	6 & -- & 6 & 2 \\
-	7 & Blades of Air & 7 & 3 \\
-	8 & -- & 8 & 3 \\
-	9 & -- & 9 & 3 \\
-	10 & Cold as Ice & 10 & 3 \\ 
-	11 & -- & 11 & 3 \\
-	12 & -- & 12 & 3 \\
-	13 & -- & 13 & 5 \\
-	14 & -- & 14 & 5 \\
-	15 & Lightning Step & 15 & 5 \\ 
-	16 & -- & 16 & 5 \\
-	17 & -- & 17 & 5 \\
-	18 & Cascading Deathblow & 18 & 5 \\ 
-	19 & -- & 19 & 8 \\
-	20 & -- & 20 & 8 
+\begin{DndTable}[header=Sword Saint]{lc}
+	\textbf{Armsman Level} & \textbf{Aether Limit} \\ 
+	3  & 1 \\
+	4  & 2 \\
+	7  & 3 \\
+	13 & 5 \\
+	19 & 8 \\
 \end{DndTable}
 \end{figure}
 
 \subsubsection{Exceptional Aether}
-Starting at 3rd level, sword saints cultivate their aether thoroughly than most armsmen. Use the Sword Saint table instead of the Armsman table to determine your maximum aether and your aether limit as you gain levels.
+Starting at 3rd level, sword saints cultivate their aether thoroughly than most armsmen. Your maximum aether increases to be equal to your level (instead of half your level) and your aether limit increases as you gain levels as shown on the Sword Saint table.
 
 \subsubsection{Weapon Flexibility}
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.

@@ -16,4 +16,4 @@ fi
 
 rm -rf output/${input%.*}*
 
-docker run --rm -it -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" admiralbenbo/dnd-latex:latest $input
+docker run --rm -v "$PWD/latex:/workdir/input" -v "$PWD/output:/workdir/output" admiralbenbo/dnd-latex:latest $input

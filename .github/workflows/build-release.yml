@@ -12,7 +12,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v5
-      - run: mkdir -P output
+      - run: mkdir -p output
       - name: build-main
         id: main
         run: ./build.sh main.tex

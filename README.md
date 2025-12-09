@@ -12,7 +12,7 @@ This system is currently in the form of a number of LaTeX files under the /latex
 * /latex/no-monsters.tex The inverse of monsters.tex. ~350 pages.
 
 ### Building the PDF
-Building this requires either a full LaTeX installation, including the dndbook class/style files (https://github.com/rpgtex/DND-5e-LaTeX-Template.git) or docker. There is a dockerized build chain available by executing `./build.ps1 -InputPath main.tex` on Windows (with Docker running) or `./build.sh main.tex` on linux/mac (again, with docker installed and running). Warning: the latex image currently being used is _big_. A couple GB. It will only need to build the first time, unless you change the dockerfile. To rebuild it, set the environment variable `BUILD=1` on linux or add the `-Build` flag on Windows. It will build a few times to make sure references are right. Replace main.tex with whichever main file you're trying to build.
+Building this requires either a full LaTeX installation, including the dndbook class/style files (https://github.com/rpgtex/DND-5e-LaTeX-Template.git) or docker. There is a dockerized build chain available by executing `./build.ps1 -InputPath main.tex` on Windows (with Docker running) or `./build.sh main.tex` on linux/mac (again, with docker installed and running). Warning: the latex image currently being used is _big_. A couple GB. It pulls from docker.hub/admiralbenbo/dnd-latex:main. It will build a few times to make sure references are right. Replace main.tex with whichever main file you're trying to build.
 
 #### Setup Requirements
 For the dockerized build, you need to have a directory named 'output' at the main level. It should be empty. It will be volumed in and all the build output (intermediates, logs, and final pdf) will be output there.

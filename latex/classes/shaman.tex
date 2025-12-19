@@ -115,7 +115,7 @@ For the duration of the zone, enemies that start their turn in the zone or enter
 
 \subsection{Shaman Circle}
 
-At 3rd level, you choose to identify with a circle of shamans: Circle of the Spirit or Circle of the Elements, all of which are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level.
+At 3rd level, you choose to identify with a circle of shamans: the Circle of the Elements, the Circle of Firey Renewal, or the Circle of the Spirit, all of which are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level.
 
 \subsection{Ability Score Improvement}
 
@@ -163,6 +163,83 @@ At 20th level, the primal forces you channel act as a shield against death for y
 
 \section{Shaman Circles}
 
+\subsection{Circle of the Elements}
+Shamans who devote themselves to the elements tend to be the least connected to mortal-kind. They serve and channel the most primal parts of nature...which are often the most destructive.
+
+\subsubsection{Circle Spells}
+
+Your mystical connection to the primal nature of the elements infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
+
+Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
+
+\begin{figure}[htb]
+\begin{DndTable}[header=Elements]{XX}
+    \textbf{Shaman Level} & \textbf{Circle Spells}      \\              
+    3rd         & \nameref{spell:scorching-ray}, \nameref{spell:detect-thoughts} \\         
+    5th         & \nameref{spell:call-lightning}, \nameref{spell:protection-from-energy}\\
+    7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
+    9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
+\end{DndTable}
+\end{figure}
+
+\subsubsection{Winds Whisper, Walls Have Ears}
+Starting at 6th level, the wind and earth bring you word of things going on elsewhere. If you meditate for 1 minute and expend 3 STA, you gain one of the following benefits depending on the terrain.
+
+\subparagraph*{Open terrain} You sense the presence of any humanoids, giants, undead, or fiends within 1 mile. You know approximate numbers, directions, and distance, but not identity.
+
+\subparagraph*{Underground or enclosed terrain} You can cast your senses through a wall that you touch as part of your meditation and see and hear as if you were on the other side.
+
+\subsubsection{Elemental Resilience}
+Starting at 10th level, you can use your reaction to grant yourself a defensive benefit. Choose one of the following:
+\begin{itemize}
+  \item Earth: When you would take damage, you reduce the damage taken by half your level + your proficiency bonus.
+  \item Water: When you fail a saving throw that imposes a condition, you can reroll the saving throw and take the second result.
+  \item Air: During your turn, your movement speed doubles until the end of your turn and Opportunity Attacks against you are made at disadvantage.
+  \item Fire: When you are hit with an attack from an attacker you can see, you force the enemy to make a Dexterity saving throw against your spell save DC. On a failed save, the target takes fire damage equal to your level + your proficiency bonus.
+\end{itemize}
+
+Once you use this feature, you cannot use it again until you finish a long or short rest.
+
+\subsubsection{Elemental Summoning}
+At 14th level you learn the \nameref{spell:conjure-elemental} spell if you do not know it already--it does not count against the number of spells you know. When you cast the spell, you get two elementals instead of one, both of the same type.
+
+\subsection{Circle of Firey Renewal}
+The Circle of Firey Renewal takes as its exemplar the great Phoenix spirit, patron of cleansing and rebirth via fire. Although they rank among the best healers of the shamans, their healing tends to be painful.
+
+\subsubsection{Bonus Cantrips}
+When you choose this circle at 2nd level, you learn the \nameref{spell:light} cantrip and the \nameref{spell:produce-flames} cantrip.
+
+\subsubsection{Circle Spells}
+Your mystical connection to the phoenix infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
+
+Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
+
+\begin{figure}[htb]
+\begin{DndTable}[header=Firey Renewal]{lX}
+    \textbf{Shaman Level} & \textbf{Circle Spells}      \\              
+    3rd         & \nameref{spell:burning-hands}, \nameref{spell:cure-wounds} \\         
+    5th         & \nameref{spell:flaming-sphere}, \nameref{spell:prayer-of-healing} \\
+    7th         & \nameref{spell:death-ward}, \nameref{spell:fireball} \\  
+    9th         & \nameref{spell:flame-strike}, \nameref{spell:reincarnate} \\ 
+\end{DndTable}
+\end{figure}
+
+\subsubsection{Phoenix Manifestation}
+Starting at 6th level, you have learned an alternate use of your Manifest Zone ability. You can use it to conjure a spirit in the form of a Small, incorporeal phoenix that shares your space or appears in an ally's space you can see within 60 feet of you. For one minute, it takes one of the following actions of your choice on your turn, using your spell save DC and spell attack modifier as necessary. Once you summon the phoenix, you cannot do so again until you finish a long or short rest.
+
+\subparagraph*{Spit Fire} The phoenix casts \nameref{spell:produce-flame} at a target within range.
+\subparagraph*{Protective Flame} The phoenix grants a creature of your choice within 30 feet of it temporary hit points equal to your 1d8 + your Wisdom modifier.
+
+If you are reduced to zero hit points while the spirit is active and are within 30 feet of it, it can sacrifice itself to return you to 1 hit point at the start of your next turn after being downed.
+
+\subsubsection{Enhanced Phoenix}
+Starting at 10th level, the phoenix summoned by your Phoenix Manifestation ability grows stronger. It gains the ability to cast \nameref{spell:fireball} once during its duration and if it sacrifices itself to restore you to health, you regain 5d8 hit points instead of one.
+
+\subsubsection{Firey Rebirth}
+At 14th level, your bond with the phoenix has progressed to the point that it transcends unconsciousness or death. When an ally is killed within 60 feet of you, you can expend 7 AET to cast \nameref{spell:revivify} on them as a reaction, ignoring range and material component requirements.
+
+Additionally, if you are reduced to zero hit points or killed outright, you can choose to transform into a Large phoenix yourself for one minute or until healed/revived. While a phoenix, you can cast any spell you know that deals fire damage or restores hit points, spending aether as normal, and have a flying speed of 60 feet. The phoenix form shares your AC and saving throw modifiers. It is immune to all damage and conditions, but any damage taken forces a concentration check; a failed check causes you to revert to your (damaged/dead) where the phoenix was. Once you use this feature once, you cannot do so again until 7 days have passed.
+
 \subsection{Circle of the Spirit}
 
 The Circle of the Spirit acts as a bridge between man and the spirits of nature, as well as the spirits of the departed. Most frequently, shamans of the Spirit Circle are found as tribal advisors, priests of nature-focused communities, and the like.
@@ -205,46 +282,6 @@ Starting at 14th level, your connection to the spirits has given you a certain i
   \item You can cast \nameref{spell:reincarnate} without expending expensive material components and when you do, you can choose the outcome.
   \item When you are brought to zero hit points or killed outright, you can instead choose to be healed to half hit points. This costs half of your total STA and 5 AET.
 \end{itemize}
-
-\subsection{Circle of the Elements}
-Shamans who devote themselves to the elements tend to be the least connected to mortal-kind. They serve and channel the most primal parts of nature...which are often the most destructive.
-
-\subsubsection{Circle Spells}
-
-Your mystical connection to the primal nature of the elements infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
-
-Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
-
-\begin{figure}[htb]
-\begin{DndTable}[header=Elements]{XX}
-    \textbf{Shaman Level} & \textbf{Circle Spells}      \\              
-    3rd         & \nameref{spell:scorching-ray}, \nameref{spell:detect-thoughts} \\         
-    5th         & \nameref{spell:call-lightning}, \nameref{spell:protection-from-energy}\\
-    7th         & \nameref{spell:death-ward}, \nameref{spell:greater-invisibility} \\  
-    9th         & \nameref{spell:reincarnate}, \nameref{spell:dispel-otherworldly-influence} \\ 
-\end{DndTable}
-\end{figure}
-
-\subsubsection{Winds Whisper, Walls Have Ears}
-Starting at 6th level, the wind and earth bring you word of things going on elsewhere. If you meditate for 1 minute and expend 3 STA, you gain one of the following benefits depending on the terrain.
-
-\subparagraph*{Open terrain} You sense the presence of any humanoids, giants, undead, or fiends within 1 mile. You know approximate numbers, directions, and distance, but not identity.
-
-\subparagraph*{Underground or enclosed terrain} You can cast your senses through a wall that you touch as part of your meditation and see and hear as if you were on the other side.
-
-\subsubsection{Elemental Resilience}
-Starting at 10th level, you can use your reaction to grant yourself a defensive benefit. Choose one of the following:
-\begin{itemize}
-  \item Earth: When you would take damage, you reduce the damage taken by half your level + your proficiency bonus.
-  \item Water: When you fail a saving throw that imposes a condition, you can reroll the saving throw and take the second result.
-  \item Air: During your turn, your movement speed doubles until the end of your turn and Opportunity Attacks against you are made at disadvantage.
-  \item Fire: When you are hit with an attack from an attacker you can see, you force the enemy to make a Dexterity saving throw against your spell save DC. On a failed save, the target takes fire damage equal to your level + your proficiency bonus.
-\end{itemize}
-
-Once you use this feature, you cannot use it again until you finish a long or short rest.
-
-\subsubsection{Elemental Summoning}
-At 14th level you learn the \nameref{spell:conjure-elemental} spell if you do not know it already--it does not count against the number of spells you know. When you cast the spell, you get two elementals instead of one, both of the same type.
 
 \subsection{Shaman Spell List}
 The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost.

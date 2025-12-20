@@ -37,6 +37,14 @@
 	\subparagraph*{Skill Trick} #4
 }
 
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
+
 \begin{document}
 \import{./}{changelog.tex}
 \import{./}{introduction.tex}

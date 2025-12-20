@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,twocolumn,openany,bg=none]{dndbook}
+\documentclass[10pt,twoside,openany,bg=none]{dndbook}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage[section]{placeins}
+\usepackage{balance}
 
 \hfuzz=1pt
 
@@ -35,6 +36,14 @@
 	\subparagraph*{Equipment} #3
 	\subparagraph*{Skill Trick} #4
 }
+
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
 
 \begin{document}
 \import{./}{changelog.tex}

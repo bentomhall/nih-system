@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,twocolumn,openany,bg=none]{dndbook}
+\documentclass[10pt,twoside,openany,bg=none]{dndbook}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage[section]{placeins}
+\usepackage{balance}
 
 \hfuzz=1pt
 
@@ -36,12 +37,20 @@
 	\subparagraph*{Skill Trick} #4
 }
 
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
+
 \begin{document}
 \import{./}{introduction.tex}
 \import{./}{character-creation.tex}
+\import{./classes}{classes.tex}
 \import{./lineages}{alternate-lineages.tex}
 \import{./lineages}{cultures.tex}
-\import{./classes}{classes.tex}
 \import{./}{backgrounds.tex}
 \import{./}{core-system.tex}
 \import{./}{equipment.tex}

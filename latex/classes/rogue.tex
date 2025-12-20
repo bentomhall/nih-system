@@ -12,23 +12,23 @@ As a rogue, you have the following class features.
 
 \subsubsection{Hit Points}
 
-\textbf{Hit Dice:} 1d8 per rogue level
+\subparagraph*{Hit Dice} 1d8 per rogue level
 
-\textbf{Hit Points at 1st Level:} 8 + your Constitution modifier
+\subparagraph*{Hit Points at 1st Level} 8 + your Constitution modifier
 
-\textbf{Hit Points at Higher Levels:} 1d8 (or 5) + your Constitution modifier per rogue level after 1st
+\subparagraph*{Hit Points at Higher Levels} 1d8 (or 5) + your Constitution modifier per rogue level after 1st
 
 \subsubsection{Proficiencies}
 
-\textbf{Armor:} Light armor
+\subparagraph*{Armor} Light armor
 
-\textbf{Weapons:} Simple weapons, hand crossbows, longswords, rapiers, shortswords, acid vials, flasks of alchemist fire
+\subparagraph*{Weapons} Simple weapons, hand crossbows, longswords, rapiers, shortswords, acid vials, flasks of alchemist fire
 
-\textbf{Tools:} Thieves' tools
+\subparagraph*{Tools} Thieves' tools
 
-\textbf{Saving Throws:} Dexterity, Intelligence
+\subparagraph*{Saving Throws} Dexterity, Intelligence
 
-\textbf{Skills:} Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth
+\subparagraph*{Skills} Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth
 
 \subsubsection{Equipment}
 
@@ -94,7 +94,7 @@ When you gain access to a new Skill Trick, you can also swap any Skill Trick you
 
 \subsubsection{Roguish Archetype}
 
-At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: either Shadowdancer or Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 6th, 9th, 13th, and 17th level.
+At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: either Scout, Shadowdancer or Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 6th, 9th, 13th, and 17th level.
 
 \subsubsection{Ability Score Improvement}
 
@@ -133,6 +133,54 @@ At 20th level, you have an uncanny knack for succeeding when you need to. If you
 \section{Roguish Archetypes}
 
 Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques.
+
+\subsection{Scout}
+
+Scouts are sneaks and marksmen, remaining unseen until they can strike a telling blow and then fading into the background again. In addition, they're the specialists at exploring the world, natural or civilized. They learn minor primal magics, but mostly rely on their wits, weapons, and honed skills.
+
+\begin{figure}[htb]
+\begin{DndTable}[header=Scout]{lX}
+	\textbf{Rogue Level} & \textbf{Features} \\
+	3 & Called Shot, Exploration Adept \\
+	6 & Exposing Shot, Investigation Adept \\
+	9 &  \\
+	13 &  \\
+	17 &  \\
+\end{DndTable}
+\end{figure}
+
+\subsubsection{Called Shot}
+When you take this archetype at 3rd level, you have learned to hit specific parts of your enemies with greater effect. Once per turn when you make a weapon attack, you can choose to make it a Called Shot by expending 1 STA. The basic Called Shot allows you to apply your Sneak Attack damage even if you normally wouldn't qualify (such as because you have disadvantage or no ally is adjacent to the target). You gain additional ways to use this ability as you gain levels.
+
+\subsubsection{Exploration Adept}
+Starting at 3rd level, you remain alert even when performing other exploration tasks and gain proficiency with Perception. If you already were proficient in Perception, you gain expertise instead. 
+
+Additionally, you gain the \nameref{st:jump} skill trick even if you do not qualify, as you've learned to move in all sorts of environments. 
+
+\subsubsection{Exposing Shot}
+At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to create a breach in the target's defenses, making it more vulnerable to your allies' damage. Until the end of your next turn, attacks against the creature have advantage and deal extra damage equal to your proficiency bonus + your Intelligence modifier. If you otherwise qualify for Sneak Attack (without the normal effect of Called Shot), you may apply that feature as well---you simply cannot use the Called Shot to qualify for Sneak Attack when you otherwise could not.
+
+\subsubsection{Investigation Adept}
+At 6th level, you gain proficiency with Investigation. If you already had proficiency, you gain expertise instead. You also learn the \nameref{st:sense-baleful-magic} skill trick even if you don't otherwise qualify.
+
+\subsubsection{Break Contact}
+At 9th level, you've learned to duck into the shadows to evade scrutiny more easily than most. You have advantage on Dexterity (Stealth) checks made to become or remain hidden. In addition, you can attempt to hide even when only lightly obscured.
+
+In addition, if you make a Dexterity (Stealth) check and do not like the result, you can expend 2 STA to reroll the check, taking the second result.
+
+\subsubsection{Disrupting Shot}
+At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to disrupt the target's concentration in addition to any normal damage (possibly including Sneak Attack). If the target was concentrating on a spell or effect, that concentration ends immediately. If they were casting a spell or incantation with a cast time longer than a single action, that incantation or spell fizzles with no effect, consuming any resources.
+
+\subsubsection{Primal Awakening}
+At 9th level, you learn the \nameref{st:primal-initiate} skill trick, even if you don't qualify for it normally.
+
+\subsubsection{Enhanced Senses}
+At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the \nameref{inc:sense-aura} incantation.
+
+\subsubsection{Lethal Shot}
+At 17th level, you have developed the ability to strike at the cords that bind a creature to life. By spending 8 STA and 5 AET, you can make a special Called Shot. If you hit with this attack, you score a critical hit and can apply Sneak Attack even if you normally would not qualify. Once you use this ability, you cannot do so again until you finish a long rest.
+
+In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or \nameref{spell:death-ward}).
 
 \subsection{Shadowdancer}
 

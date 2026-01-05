@@ -1,10 +1,50 @@
 \clearpage
 \section{Fey}
-The fey are non-mortal, sometimes-embodied collections of the spirits that inhabit the natural world and Shadow (aka ihminen or kami). These beings, when exposed to mortal influences and strong emotions, often conglomerate and take form, mimicing the acts and emotions that brought them forth. This leads to what appears to be obsessive behavior--a fey born of violence will rampage destructively or tempt others into such acts; a fey born of intense romantic feelings may become a serial seducer. The longer the fey exists without being destroyed or losing interest, however, the more this obsession develops into a full-on mimicry of mortal life in many aspects. They retain an interest in that one particular obsession, but it generally broadens and becomes less of a caricature. Make no mistake--fey are dangerous. They do not, except the strongest and oldest, understand \textit{death}. The more humanoid and "civilized" a fey, the more powerful.
+The fey are non-mortal, sometimes-embodied collections of the spirits that inhabit the natural world and Shadow (aka ihminen or kami). These beings, when exposed to mortal influences and strong emotions, often conglomerate and take form, mimicking the acts and emotions that brought them forth. This leads to what appears to be obsessive behavior--a fey born of violence will rampage destructively or tempt others into such acts; a fey born of intense romantic feelings may become a serial seducer. The longer the fey exists without being destroyed or losing interest, however, the more this obsession develops into a full-on mimicry of mortal life in many aspects. They retain an interest in that one particular obsession, but it generally broadens and becomes less of a caricature. Make no mistake--fey are dangerous. They do not, except the strongest and oldest, understand \textit{death}. The more humanoid and "civilized" a fey, the more powerful.
 
 Some fey, in contrast to this strongly mortal-centric view, are born from elemental influences or those of strong, highly-magical areas (especially trees, for some reason). These are place-bound fey, bound to a particular natural feature. They often form deep, almost symbiotic bonds with mortal creatures, trading vastly extended life and power to the mortal in exchange for a shared consciousness and being bound close to one location for the rest of their existence. These fey tend to be much less fickle, if bound to a mortal. The mortal provides an understanding of death, of change, and of the mortal world. Instead, these fey tend to be very fiercely protective of the natural feature they're bound to.
 
-Fey cross over into Shadow naturally, existing on both sides of the veil almost simultaneously. Many of the most powerful make their homes there, rarely manifesting on the Mortal. Others have no home and flit about wherever their fancy (and obsession) take them. 
+Fey cross over into Shadow naturally, existing on both sides of the veil almost simultaneously. Many of the most powerful make their homes there, rarely manifesting on the Mortal. Others have no home and flit about wherever their fancy (and obsession) take them.
+
+\begin{DndMonster}{Dryad}
+	\DndMonsterType{Medium Fey}
+	\DndMonsterBasics[
+		armor-class={16 (barkskin)},
+		hit-points={27 (5d8 + 5)},
+		speed={30 ft.}
+	]
+	\MonsterStats{+0}{+2}{+1}{+2}{+2}{+4}
+	\DndMonsterDetails[
+		skills={Perception +4, Stealth +5},
+		senses={darkvision 60 ft, passive perception 14},
+		languages={Common, Sylvan},
+		challenge={1:1}
+	]
+	\DndMonsterAction{Barkskin} The dryad is continually under the effects of the \smartnameref{spell:barkskin}{barkskin} spell, increasing their armor class to 16 and gains 2 temporary hitpoints at the beginning of each of their turns.
+	\DndMonsterAction{Innate Spellcasting} The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:
+	\begin{itemize}
+		\item[] \textbf{Concentration:} \smartnameref{spell:entangle}{entangle} (3x), \smartnameref{spell:pass-without-trace}{pass without trace} (1x), \smartnameref{spell:spike-growth}{spike growth} (1x)
+	\end{itemize}
+	\DndMonsterAction{Magic Resistance} The dryad has advantage on saving throws against spells and other magical effects.
+	\DndMonsterAction{Speak with Beasts and Plants} The dryad can communicate with beasts and plants as if they shared a language.
+	\DndMonsterAction{Tree Stride} Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Club,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{1d8 + 4},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAction{Fey Charm} The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 12 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.
+
+	Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from teh target, or ends the effect as a bonus action. If the target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.
+
+	The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+\end{DndMonster}
 
 \begin{DndMonster}{Kipuliin, Lesser}
     \DndMonsterType{Small Fey}

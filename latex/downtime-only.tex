@@ -1,0 +1,33 @@
+\documentclass[10pt,twoside,openany,bg=none]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{mdframed}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[section]{placeins}
+
+\hfuzz=1pt
+
+\extrafloats{1000}
+
+\hypersetup {
+    colorlinks = true,
+    urlcolor = blue,
+    linkcolor = blue,
+    citecolor = red
+}
+
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
+
+\begin{document}
+\import{./}{downtime.tex}
+\end{document}

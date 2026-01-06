@@ -1,10 +1,14 @@
 \clearpage
 \section{Fey}
+\begin{multicols}{2}
 The fey are non-mortal, sometimes-embodied collections of the spirits that inhabit the natural world and Shadow (aka ihminen or kami). These beings, when exposed to mortal influences and strong emotions, often conglomerate and take form, mimicking the acts and emotions that brought them forth. This leads to what appears to be obsessive behavior--a fey born of violence will rampage destructively or tempt others into such acts; a fey born of intense romantic feelings may become a serial seducer. The longer the fey exists without being destroyed or losing interest, however, the more this obsession develops into a full-on mimicry of mortal life in many aspects. They retain an interest in that one particular obsession, but it generally broadens and becomes less of a caricature. Make no mistake--fey are dangerous. They do not, except the strongest and oldest, understand \textit{death}. The more humanoid and "civilized" a fey, the more powerful.
 
 Some fey, in contrast to this strongly mortal-centric view, are born from elemental influences or those of strong, highly-magical areas (especially trees, for some reason). These are place-bound fey, bound to a particular natural feature. They often form deep, almost symbiotic bonds with mortal creatures, trading vastly extended life and power to the mortal in exchange for a shared consciousness and being bound close to one location for the rest of their existence. These fey tend to be much less fickle, if bound to a mortal. The mortal provides an understanding of death, of change, and of the mortal world. Instead, these fey tend to be very fiercely protective of the natural feature they're bound to.
 
 Fey cross over into Shadow naturally, existing on both sides of the veil almost simultaneously. Many of the most powerful make their homes there, rarely manifesting on the Mortal. Others have no home and flit about wherever their fancy (and obsession) take them.
+
+\subsection{Dryads}
+The dryad is a place-bound fey, usually bound to a grove of trees. They act as the protector and voice for those trees. They rarely take physical form unless provoked, and use their powers to keep the peace. Those whose trees have been violated by unnatural things (especially undead or demons) become very violent, however.
 
 \begin{DndMonster}{Dryad}
 	\DndMonsterType{Medium Fey}
@@ -20,7 +24,7 @@ Fey cross over into Shadow naturally, existing on both sides of the veil almost 
 		languages={Common, Sylvan},
 		challenge={1:1}
 	]
-	\DndMonsterAction{Barkskin} The dryad is continually under the effects of the \smartnameref{spell:barkskin}{barkskin} spell, increasing their armor class to 16 and gains 2 temporary hitpoints at the beginning of each of their turns.
+	\DndMonsterAction{Barkskin} The dryad is continually under the effects of the \smartnameref{spell:barkskin}{barkskin} spell, increasing their armor class to 16 and gains 2 temporary hit points at the beginning of each of their turns.
 	\DndMonsterAction{Innate Spellcasting} The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:
 	\begin{itemize}
 		\item[] \textbf{Concentration:} \smartnameref{spell:entangle}{entangle} (3x), \smartnameref{spell:pass-without-trace}{pass without trace} (1x), \smartnameref{spell:spike-growth}{spike growth} (1x)
@@ -45,6 +49,9 @@ Fey cross over into Shadow naturally, existing on both sides of the veil almost 
 
 	The dryad can have no more than one humanoid and up to three beasts charmed at a time.
 \end{DndMonster}
+
+\subsection{Emotion-bound fey}
+Some fey are obsessed with various emotions or states of being, to the point of being nearly one-dimensional. For example, the kipuliin are obsessed with \textit{pain}---taking sadomasochism to the extremes. Satyrs are obsessive about \textit{intoxication}.
 
 \begin{DndMonster}{Kipuliin, Lesser}
     \DndMonsterType{Small Fey}
@@ -84,7 +91,7 @@ Fey cross over into Shadow naturally, existing on both sides of the veil almost 
 	\DndMonsterType{Medium fey}
 	\DndMonsterBasics[armor-class={13}, hit-points={31 (7d8)}, speed={40 ft.}]
 	\MonsterStats{+1}{+3}{+0}{+1}{+0}{+2}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Performance +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={Common, Elvish, Sylvan}, challenge={1/2:1/2}]
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Performance +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={passive Perception 12}, languages={Common, Elvish, Sylvan}, challenge={1/2:1/2}]
 	\DndMonsterAction{Magic Resistance} The satyr has advantage on saving throws against spells and other magical effects.
 	
 	\DndMonsterSection{Actions}
@@ -118,3 +125,4 @@ Fey cross over into Shadow naturally, existing on both sides of the veil almost 
 
 	\DndMonsterAction{Aura of Drunkenness} The satyr's nature overflows. All creatures within 30 feet must make a DC 12 Constitution saving throw. On a failed save they are \nameref{condition:poisoned} for one minute. Creatures that end their turn more than 30 feet from the satyr can reattempt the saving throw at the end of each of their turns, ending the effect on a success.
 \end{DndMonster}
+\end{multicols}

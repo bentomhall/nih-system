@@ -1,5 +1,6 @@
 \clearpage
 \section{Constructs}
+\begin{multicols}{2}
 Artificial bodies brought to life by clockwork, elemental Words of power, or trapped souls. Few of these can be created these days other than the most simple animated objects, although simple golem-like creatures are common in Wyrmhold and Byssia--the first being labor constructs directed by their creators, mostly mobile muscle, and the second being fey-animated wooden protectors of remote shrines.
 
 Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as \smartnameref{spell:unbind}{\textit{unbind}}, while those that operate via clockwork or trapped spirits are not.
@@ -48,12 +49,11 @@ Due to their nature, animated objects do not have the Constructed Resilience tra
 			dmg-type=slashing
 	]
 \end{DndMonster}
-\FloatBarrier
 
 \subsection{Clockwork}
 Unlike golems (animated by elemental forces) or animated objects (animated directly by spells), clockwork constructs have gears, springs, and levers operating their limbs. These are powered by a crystalline, spell-worked core. Less durable than golems (but much easier to produce) and more permanent than animated objects, most of the automata in the Federated Nations fall into this category. Many hybrid constructs exist with a general purpose "brain" that can accept external commands (as long as they're simple) connected to a power core and the clockwork actuators.
 
-\begin{DndMonster}{Automaton, Heavy Defender}
+\begin{DndMonster}{Heavy Defender}
 	\DndMonsterType{Large construct}
 	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={90 (12d10 + 24)}, speed={30 ft.}]
 	\MonsterStats{+5}{-1}{+2}{-3}{-1}{-4}
@@ -78,7 +78,7 @@ Unlike golems (animated by elemental forces) or animated objects (animated direc
 	\DndMonsterAction{Raise Shields (1/day)} As a reaction when first bloodied, the automaton raises an energy barrier around itself. It gains resistance to all damage and regenerates 10 HP at the start of each of its turns. This lasts for 4 rounds or until it is incapacitated or restored to full health.
 \end{DndMonster}
 
-\begin{DndMonster}{Automaton, Riot Control}
+\begin{DndMonster}{Riot Control}
 	\DndMonsterType{Medium construct}
 	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={44 (8d8 + 8)}, speed={30 ft.}]
 	\MonsterStats{+2}{+1}{+1}{-2}{-2}{-5}
@@ -114,11 +114,9 @@ Golems are the traditional long-lived constructs, created by shaping a physical 
 
 Because golems are solid objects composed of durable, unfeeling matter, they tend to have high values of Construct Resilience. One downside is that golems, being animated by a trapped elemental force, tend to go berserk once damaged enough, as the elemental force's bindings fray and it tries to escape and return home.
 
-\begin{figure}
-	\begin{DndComment}{Golem Traits and DR}
-		Golems have two traits that strongly affect defensive rating. Construct Resilience and Magic Resistance. Construct Resilience is the big one--since very few things bypass it, it's generally worth +1 DR. Magic Resistance is generally weaker--their saves tend to either be very good (in which case advantage doesn't do much since they were already likely to pass) or very poor (in which case advantage can't save them very much). And with their extensive list of condition immunities, many of the spells they're bad at (Wisdom saves) just have no effect anyway. So it's generally worth +1 DR, but only if their DR was low relative to their OR already.
-	\end{DndComment}
-\end{figure}
+\begin{DndComment}{Golem Traits and DR}
+	Golems have two traits that strongly affect defensive rating. Construct Resilience and Magic Resistance. Construct Resilience is the big one---since very few things bypass it, it's generally worth +1 DR. Magic Resistance is generally weaker---their saves tend to either be very good (in which case advantage doesn't do much since they were already likely to pass) or very poor (in which case advantage can't save them very much). And with their extensive list of condition immunities, many of the spells they're bad at (Wisdom saves) just have no effect anyway. So it's generally worth +1 DR, but only if their DR was low relative to their OR already.
+\end{DndComment}
 
 \subsubsection{Golem Types}
 \subparagraph*{Flesh Golems} Constructed out of the corpses of dead mortals, preserved via embalming or magic, and then animated by a lightning sprite, these distasteful things are not quite undead, although for many the difference is not worth caring about. Generally only outcast alchemists and other such practitioners with access to many dead bodies but not many other resources construct flesh golems. Unlike most golems, they are not extremely long-lasting, as the flesh tends to decay even when preserved.
@@ -157,7 +155,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 	dmg-type=bludgeoning
 ]
 \end{DndMonster}
-
+\end{multicols}
 \begin{DndMonster}[width=\textwidth + 8pt]{Golem, Clay}
 	\begin{multicols}{2}
 	\DndMonsterType{Large construct}
@@ -225,7 +223,6 @@ This counts as being the spell \smartnameref{spell:slow}{\textit{slow}} but does
 \end{multicols}
 \end{DndMonster}
 
-\subsection{Golem, Iron}
 \begin{DndMonster}[width=\textwidth + 8pt]{Golem, Iron}
 \begin{multicols}{2}
 \DndMonsterType{Large construct}

@@ -270,8 +270,10 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 
 \clearpage
 \subsection{True Elementals}
+
+In the elemental planes, true elementals rarely form as such. They are simply part of the True Name of the plane itself. So unless forced to coalesce by a spellcaster or by a threat to the plane (such as demonic corruption), they are rarely found there. On the Mortal plane, true elementals form part of the cycle of the elements themselves---lightning elementals ride the storms, water elementals channel water-aspected aether to refresh water, lava elementals in the calderas of active volcanoes, etc. Most often, adventurers encounter them when they are summoned by spellcasters or rise when a concentrated elemental node is disturbed. Almost mindless, they attack the threats as they appear, using very little in the way of tactics.
 \begin{DndMonster}{Elemental, Air}
-	\DndMonsterType{Large elemental}
+	\DndMonsterType{Large elemental, single-minded}
 	\DndMonsterBasics[armor-class={15}, hit-points={120 (16d10 + 32)}, speed={0 ft., fly 90 ft. (hover)}]
 	\MonsterStats{+2}{+5}{+2}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={lightning, thunder}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={Auran}, challenge={5:6}]
@@ -295,7 +297,7 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 	\end{DndMonster}
 	
 \begin{DndMonster}{Elemental, Earth}
-	\DndMonsterType{Large elemental}
+	\DndMonsterType{Large elemental, single-minded}
 	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={126 (12d10 + 60)}, speed={30 ft., burrow 30 ft.}]
 	\MonsterStats{+6}{-1}{+5}{-3}{+0}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={piercing, slashing, fire}, damage-vulnerabilities={thunder}, condition-immunities={exhaustion, paralyzed, petrified, poisoned, unconscious}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 10}, languages={Terran}, challenge={6:7}]
@@ -316,8 +318,8 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 	]
 	\end{DndMonster}
 	
-	\begin{DndMonster}{Elemental, Fire}
-	\DndMonsterType{Large elemental}
+\begin{DndMonster}{Elemental, Fire}
+	\DndMonsterType{Large elemental, single-minded}
 	\DndMonsterBasics[armor-class={14}, hit-points={102 (12d10 + 36)}, speed={50 ft.}]
 	\MonsterStats{+0}{+4}{+3}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={Ignan}, challenge={7:5}]
@@ -340,9 +342,86 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 		extra={. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.}
 	]
 	\end{DndMonster}
+
+	\begin{DndMonster}{Elemental, Lava}
+	\DndMonsterType{Large elemental, single-minded}
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft.}]
+	\MonsterStats{+5}{-1}{+4}{-3}{+0}{-3}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison, fire}, damage-resistances={piercing, slashing}, damage-vulnerabilities={}, condition-immunities={exhaustion, paralyzed, petrified, poisoned, unconscious}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 10}, languages={Terran}, challenge={7:6}]
+	\DndMonsterAction{Siege Monster} The elemental deals double damage to objects and structures.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The elemental makes two slam attacks.
+	\DndMonsterAttack[
+		name=Slam,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=10,
+		dmg=\DndDice{3d8 + 5},
+		dmg-type=bludgeoning,
+		extra={ plus 7 (2d6) fire damage.}
+	]
+	\DndMonsterAction{Pyroclasm (recharge 5-6)} The lava elemental sprays shards of volcanic glass. All creatures within 30 ft must make a DC 14 Dexterity saving throw, taking 4d6 piercing damage and 3d6 fire damage on a failure. On a success, they only take the fire damage.
+	\end{DndMonster}
+
+	\begin{DndMonster}{Elemental, Lightning}
+	\DndMonsterType{Large elemental, single-minded}
+	\DndMonsterBasics[armor-class={14}, hit-points={90 (12d10 + 24)}, speed={50 ft.}]
+	\MonsterStats{+0}{+4}{+2}{-2}{+0}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={Ignan}, challenge={5:4}]
+	\DndMonsterAction{Lightning Form} The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) lightning damage.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The elemental makes three touch attacks or 2 spark attacks.
+	\DndMonsterAttack[
+		name=Touch,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{2d6 + 4},
+		dmg-type=lightning,
+		extra={ and the creature cannot take reactions until the start of their next turn.}
+	]
+	\DndMonsterAttack[
+		name=Spark,
+		distance=ranged,
+		type=weapon,
+		mod=+6,
+		range=90,
+		dmg=\DndDice{4d6 + 4},
+		dmg-type=lightning
+	]
+	\end{DndMonster}
+
+	\begin{DndMonster}{Elemental, Mud}
+	\DndMonsterType{Large elemental, single-minded}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={25 ft.}]
+	\MonsterStats{+5}{-1}{+4}{-3}{+0}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={Terran}, challenge={6:7}]
+	 
+	\DndMonsterAction{Amorphous} The elemental can move through a space as narrow as 2 feet wide without squeezing.
+	\DndMonsterAction{Bog Down} The elemental softens the soil within 10 feet of it, making it difficult terrain. Creatures who start their turns within 10 feet must make a DC 13 Strength saving throw or have their speed reduced to 0 until the start of their next turn.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The elemental makes two slam attacks.
+	\DndMonsterAttack[
+		name=Slam,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{3d6 + 5},
+		dmg-type=bludgeoning,
+		extra={plus 7 (2d6) acid damage}
+	]
+
+		\DndMonsterAction{Throw Mud (recharge 5-6)} The elemental flings a glob of its own mud at a point it can see within 90 feet. All creatures within 10 feet of the chosen point must make a DC 14 Dexterity saving throw, taking 5d6 bludgeoning damage and 3d6 acid damage on a failure and are restrained until the end of their next turn. On a success, they take half as much damage and are not restrained. 
+	\end{DndMonster}
 	
 	\begin{DndMonster}{Elemental, Water}
-	\DndMonsterType{Large elemental}
+	\DndMonsterType{Large elemental, single-minded}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft., swim 90 ft.}]
 	\MonsterStats{+4}{+2}{+4}{-3}{+0}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={acid}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={Aquan}, challenge={5:6}]

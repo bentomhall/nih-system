@@ -274,6 +274,95 @@ An ancient dragon can take 3 legendary actions, choosing from the options below.
 \subsection{Dragons, False}
 \begin{multicols}{2}
 False dragons are those who do not bond with elemental sources and thus don't have the chromatic (or metallic) nature. Generally, they have a feral intelligence but lack languages. Their origin is uncertain, although many believe that they are actually dragon-touched beasts---beasts infused with draconic essence, rather than degenerate dragons.
+\subsection{Drakes}
+Drakes are smaller than true dragons and, while they may have some elemental attunement, lack the intelligence of a true dragon. Some societies use them as guardian beasts but many drakes simply live in flocks and packs at the fringes of society and in the wilderness. Drakes are, like true dragons, four-legged with leathery wings.
+
+Guard drakes are a subspecies that have been altered to only have vestigial wings. Like large, pseudo-reptilian (but warm blooded) guard dogs, guard drakes are fiercely loyal to their bonded handlers. Unlike guard dogs, they roar instead of bark. They lack the breath weapon of their true dragon kin, which makes them slightly less dangerous to their surroundings.
+\begin{DndMonster}{Guard Drake}
+	\DndMonsterType{Medium dragon, pack mentality}
+	\DndMonsterBasics{armor-class={14 (natural armor)}, hit-points={45 (6d8 + 18)}, speed={40 ft.}}
+	\MonsterStats{+3}{0}{+3}{-3}{+2}{0}
+	\DndMonsterDetails[
+		saving-throws={Dex +2}, 
+		skills={Perception +4}, 
+		damage-immunities={}, 
+		damage-resistances={one of acid, fire, cold, or lightning}, 
+		damage-vulnerabilities={}, 
+		condition-immunities={}, 
+		senses={blindsight 30 ft., darkvision 60 ft., passive Perception 14}, 
+		languages={---}, 
+		challenge={3:2}
+	]
+	\DndMonsterAction{Elemental Affinity} The drake is immune to one damage type matching the chromatic dragons: acid, fire, cold, or lightning. Its bite also deals an additional 2d4 damage of that type (included in the attack).
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The drake makes one bite and one tail attack.
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=piercing,
+		extra={ plus 5 (2d4) damage of the type chosen for its Elemental Affinity.}
+	]
+	\DndMonsterAttack[
+		name=Tail,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=10,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=bludgeoning,
+		extra={ and the target must make a DC 12 Strength saving throw or be knocked prone.}
+	]
+\end{DndMonster}
+
+Draconewts are small winged drakes with a poisonous tail. More intelligent than their guard drake cousins, some are capable of telepathy. Living in flocks of 3-10 individuals, they are fiercely territorial and often adopt a person or family of humanoids as "theirs". For better or worse.
+
+\begin{DndMonster}{Draconewts}
+	\DndMonsterType(Small dragon, pack mentality)
+	\DndMonsterBasics{armor-class={14 (natural armor)}, hit-points={15 (4d4 + 4)}, speed={20 ft., fly 40 ft.}}
+	\MonsterStats{-2}{+3}{+1}{-2}{+2}{+2}
+	\DndMonsterDetails[
+		saving-throws={}, 
+		skills={Perception +4}, 
+		damage-immunities={}, 
+		damage-resistances={one of acid, fire, cold, or lightning}, 
+		damage-vulnerabilities={}, 
+		condition-immunities={}, 
+		senses={darkvision 60 ft., passive Perception 14}, 
+		languages={understands Draconic but cannot speak}, 
+		challenge={1/2:1/2}
+	]
+	\DndMonsterAction{Elemental Affinity} The drake is immune to one damage type matching the chromatic dragons: acid, fire, cold, or lightning. Its bite also deals an additional 1d4 damage of that type (included in the attack).
+
+	\DndMonsterAction{Limited Telepathy} The drake can communicate intents and emotions to creatures within 60 feet of it. It cannot read thoughts.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d4 + 3},
+		dmg-type=piercing,
+		extra={ plus 2 (1d4) damage of the type chosen for its Elemental Affinity.}
+	]
+	\DndMonsterAttack[
+		name=Tail,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=10,
+		dmg=\DndDice{1d4 + 3},
+		dmg-type=piercing,
+		extra={ plus 2 (1d4) poison damage. The target must make a DC 11 Constitution saving throw, becoming poisoned for one minute on a failure. Poisoned creatures can attempt the save at the end of each of their turns, ending the effect on a success.}
+	]
+\end{DndMonster}
+
 \subsection{Wyvern}
 Two-legged, with clawed membranous wings and poison tails, wyverns are probably the most familiar of the false dragons. Roosting in steep bleak hills, they prey on large beasts, especially favoring the relatively defenseless herds of cattle.
 \begin{DndMonster}{Wyvern}

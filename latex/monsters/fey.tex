@@ -126,3 +126,64 @@ Some fey are obsessed with various emotions or states of being, to the point of 
 	\DndMonsterAction{Aura of Drunkenness} The satyr's nature overflows. All creatures within 30 feet must make a DC 12 Constitution saving throw. On a failed save they are \nameref{condition:poisoned} for one minute. Creatures that end their turn more than 30 feet from the satyr can reattempt the saving throw at the end of each of their turns, ending the effect on a success.
 \end{DndMonster}
 \end{multicols}
+
+\subsection{Hags}
+Hags once were regular mortals. But they became obsessed, consumed by an emotion. Even if it didn't start out as a dark, violent emotion (such as hatred or envy), it usually warps into one soon enough. At some point, the Mother Tree, an eldritch, malevolent entity in the form of a colossal tree makes contact in their dreams and promises them eternal life and power to pursue their obsession...in exchange for their heart. The Tree plants its seed inside of them, and they become a hag. To stay alive, they have to continuously pursue their obsession, wallowing in that emotion at whatever cost. It's rumored that if a hag reaches the pinnacle of its emotion and fulfills its obsession, the seed takes root and begins to grow into a Daughter Tree, a vile replica of a twisted mother.
+
+Not all hags are women, but many are. The Tree favors them as its hosts for an unknown reason. Male hags tend to obsess about the most brutal things---pain, hatred, lust, and violence of all sorts. They're less prone to obsession over envy, revenge, or sensuality. But hags of all genders and obsessions have been known to exist.
+
+\begin{DndMonster}{Envy Hag}
+	\DndMonsterType{Medium fey (shapeshifter), individualistic}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={52 (7d8 + 21)}, speed={30 ft.}]
+	\MonsterStats{-1}{+3}{+3}{+1}{+0}{+5}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Deception +8, Insight +3}, damage-immunities={}, damage-resistances={psychic}, damage-vulnerabilities={}, condition-immunities={charmed, frightened}, senses={passive Perception 12}, languages={Common, one other}, challenge={4:2}]
+	\DndMonsterAction{Magic Resistance} The hag has advantage on saving throws against spells and other magical effects.
+	\DndMonsterAction{Spellcasting} The hag casts spells using Charisma as its spellcasting modifier (+5 to hit with spell attacks, spell save DC 13). It has the following spells prepared:
+	\begin{itemize}
+		\item[] \textbf{Concentration:} \smartnameref{spell:bane}{bane} (at will), \smartnameref{spell:arcane-binding}{Arcane Binding} (1x)
+		\item[] \textbf{Damage:} \smartnameref{spell:hideous-laughter}{hideous laughter} (3x), \smartnameref{spell:fear}{fear} (1x)
+		\item[] \textbf{Defensive:} \smartnameref{spell:mirror-image}{mirror image} (1x)
+		\item[] \textbf{Utility:} \smartnameref{spell:disguise-self}{disguise self} (at will)
+	\end{itemize}
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Incite Contention (recharge 6)} One creature within 60 feet of the hag that can see the hag must make a DC 14 Wisdom saving throw. On a failed saving throw, the creature is charmed by the hag for one minute. While charmed, it loses the ability to discern friend from foe and must choose targets for its attacks and abilities at random, moving to bring the target into range if necessary. Charmed targets can attempt the saving throw at the end of each of their turns, ending the effect on a success.
+	
+	\DndMonsterAction{Mind Spike} One or two creatures within 60 feet of the hag must make DC 14 Intelligence saving throws, taking 16 (2d10 + 5) psychic damage on a failed save or half as much on a success. Targets that fail their save are \smartnameref{condition:shaken}{shaken} until the end of their next turn.
+
+	\DndMonsterAction{Beguiling Transformation} As a bonus action, the hag changes shape between its natural form and a beautiful medium humanoid of its choice. All its statistics and abilities remain the same. Creatures that witness the transformation must make a DC 13 Wisdom saving throw or be charmed by the hag for one minute. While charmed, they are incapacitated. Charmed creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.
+
+	\DndMonsterAttack[
+		name=Claws,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d8 + 3},
+		dmg-type=piercing
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Rage Hag}
+	\DndMonsterType{Medium fey (shapeshifter), individualistic}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={75 (10d8 + 30)}, speed={30 ft.}]
+	\MonsterStats{+4}{+1}{+3}{-1}{+0}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +2, Deception +2, Insight +2}, damage-immunities={}, damage-resistances={poison}, damage-vulnerabilities={}, condition-immunities={frightened}, senses={darkvision 60ft, passive Perception 12}, languages={Common, one other}, challenge={5:4}]
+	\DndMonsterAction{Magic Resistance} The hag has advantage on saving throws against spells and other magical effects.
+	\DndMonsterAction{Enraged Regeneration} When it is bloodied for the first time, it gains regeneration, regaining 10 hit points at the start of each of its turn as long as it started that turn with 1 or more hit point.
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The hag makes 3 claw attacks.
+
+	\DndMonsterAttack[
+		name=Claw,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{1d8 + 4},
+		dmg-type=piercing,
+		extra={plus 1d6 psychic damage. This attack is a critical hit on a roll of 19 or 20 against a bloodied target.}
+	]
+
+	\DndMonsterAction{Furious Charge} As a bonus action on its turn, the hag moves up to its speed toward an enemy it can see.
+\end{DndMonster}

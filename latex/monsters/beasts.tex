@@ -2,12 +2,13 @@
 \begin{multicols}{2}
 \raggedcolumns
 \section{Beasts}\label{sec:beasts}
-Beasts, also called "normal animals", are the bulk of the fauna of the fantasy realm. Most of the creatures here could be mistaken (if not for unusual size in some cases) as their counterparts on Earth. They participate normally in the circle of life and their origins are entirely mundane.
+Beasts, also called "normal animals", are the bulk of the fauna of the fantasy realm. Most of the creatures here could be mistaken (if not for unusual size in some cases) as their counterparts on Earth. They participate normally in the circle of life and their origins are entirely mundane. Normally, most beasts are unlikely to attack armed-and-armored groups of humanoids (ie adventuring groups) willingly, unless driven by hunger, magic, or threats to their dens or children. Most beasts have the Craven attitude, while some are Individualistic or Pack-minded.
 
 As a general rule, beasts have very few if any magical abilities and do not speak any language. Thus, a dire wolf is a beast, while both the warg (which can speak) and the winter wolf (which breathes elemental cold) are \nameref{sec:monstrosities}.
 
+Most normal gorillas, chimpanzees, and other larger apes are best represented by the Ape stat block. For smaller ones (baboons, etc.) use the baboon stat block. Giant apes are more like King Kong (in his smaller incarnations).
 \begin{DndMonster}{Ape}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={19 (3d8 + 6)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{+3}{+2}{+2}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Athletics +5, Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1/4}]
@@ -33,26 +34,9 @@ As a general rule, beasts have very few if any magical abilities and do not spea
 ]
 \end{DndMonster}
 
-
-\begin{DndMonster}{Axe Beak}
-\DndMonsterType{Large beast}
-\DndMonsterBasics[armor-class={11}, hit-points={19 (3d10 + 3)}, speed={50 ft.}]
-\MonsterStats{+2}{+1}{+1}{-4}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2:1/4}]
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Beak,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d8 + 2},
-	dmg-type=slashing
-]
-\end{DndMonster}
-
+The baboon can represent any smaller ape or monkey large enough to pose a threat to a normal person.
 \begin{DndMonster}{Baboon}
-\DndMonsterType{Small beast}
+\DndMonsterType{Small beast, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{-1}{+2}{+0}{-3}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/4:0}]
@@ -1180,6 +1164,36 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 	dmg=3,
 	dmg-type=slashing
 ]
+\end{DndMonster}
+
+The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and badlands, kicking to death any large creature that threatens it. Horsebirds are aggressive, rarely backing down. Otherwise, they look like horse-sized chickens. Some cultures, such as the inhabitants of the Dragonreach, have tamed them to use as beasts of burden.
+\begin{DndMonster}{Horsebird}
+\DndMonsterType{Large beast, pack-minded}
+\DndMonsterBasics[armor-class={11}, hit-points={31 (5d10 + 5)}, speed={50 ft.}]
+\MonsterStats{+2}{+1}{+1}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1:1/2}]
+\DndMonsterSection{Actions}
+\DndMonsterAction{Multiattack} The horsebird makes a kick attack. If it knocks the target prone, it makes an additional beak attack against that target. If the target was already prone, it uses its beak once.
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{2d8 + 2},
+	dmg-type=piercing	
+]
+\DndMonsterAttack[
+	name=Kick,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{1d8 + 2},
+	dmg-type=slashing,
+	extra={ and the target must make a DC 11 Strength saving throw or be knocked prone.}
+]
+
 \end{DndMonster}
 
 \begin{DndMonster}{Hunter Shark}

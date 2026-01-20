@@ -712,34 +712,6 @@
 \end{DndMonster}
 
 \subsection{Specific}
-\begin{DndMonster}{Goblin Raider}
-	\DndMonsterType{Small humanoid (goblinoid)}
-	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={7 (2d6)}, speed={30 ft.}]
-	\MonsterStats{-1}{+2}{+0}{+0}{-1}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={Common, Goblin}, challenge={1/2:1/8}]
-	\DndMonsterAction{Nimble Escape} The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
-
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Scimitar,
-		distance=melee,
-		type=weapon,
-		mod=+4,
-		reach=5,
-		dmg=\DndDice{1d6 + 2},
-		dmg-type=slashing
-	]
-	\DndMonsterAttack[
-		name=Shortbow,
-		distance=ranged,
-		type=weapon,
-		mod=+4,
-		range=80/320,
-		dmg=\DndDice{1d6 + 2},
-		dmg-type=piercing
-	]
-\end{DndMonster}
-
 \begin{DndMonster}{Hobgoblin Raider}
 	\DndMonsterType{Medium humanoid (goblinoid)}
 	\DndMonsterBasics[armor-class={14 (lamellar)}, hit-points={22 (4d8 + 4)}, speed={30 ft.}]
@@ -766,6 +738,9 @@
 		dmg=\DndDice{1d8 + 1},
 		dmg-type=piercing
 	]
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common}  1d4 small carved trinkets (art objects worth 1 gp)
+	\DndMonsterAction{Uncommon} A pouch of stolen coin containing 2d4 gp in assorted coin or a 10 gp art object or gem.
 \end{DndMonster}
 
 \begin{DndMonster}{Orc Raider}
@@ -795,6 +770,9 @@
 		dmg=\DndDice{1d6 + 2},
 		dmg-type=piercing
 	]
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common}  1d4 small carved trinkets (art objects worth 1 gp)
+	\DndMonsterAction{Uncommon} A pouch of stolen coin containing 2d4 gp in assorted coin or a 10 gp art object or gem.
 \end{DndMonster}
 
 \subsection{Therianthropes}

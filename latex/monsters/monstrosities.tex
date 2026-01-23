@@ -1,9 +1,12 @@
 \clearpage
+\begin{multicols}{2}
+\end{multicols}
 \section{Monstrosities}\label{sec:monstrosities}
 Monstrosities are the catch-all category for things that aren't shaped roughly like a person. Does it speak but look like a \hyperref[sec:beasts]{beast}? Does it have magical abilities but not fit into another category? Was it created by a mage in a long-ago day but now breed normally? Then it's probably a monstrosity.
 
+The ankheg, commonly called a tunnel worm, is a large centipede-like creature with a broad head and mandibles made for digging. They are a common pest in the plains areas that particularly prey on livestock, preferring to burrow underneath and emerge to grab a cow or horse. Their acid spit is reserved for bigger threats.
 \begin{DndMonster}{Ankheg}
-\DndMonsterType{Large monstrosity}
+\DndMonsterType{Large monstrosity, single-minded}
 \DndMonsterBasics[armor-class={14 (natural armor), 11 while prone}, hit-points={39 (6d10 + 6)}, speed={30 ft., burrow 10 ft.}]
 \MonsterStats{+3}{+0}{+1}{-5}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={acid}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 11}, languages={—}, challenge={2:1}]
@@ -21,7 +24,7 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 \end{DndMonster}
 
 \begin{DndMonster}{Basilisk}
-	\DndMonsterType{Medium monstrosity}
+	\DndMonsterType{Medium monstrosity, single-minded}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={52 (8d8 + 16)}, speed={20 ft.}]
 	\MonsterStats{+3}{-1}{+2}{-4}{-1}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={—}, challenge={2:2}]
@@ -41,10 +44,13 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 			plus-dmg-type=poison
 	]
 \end{DndMonster}
-	
-\begin{DndMonster}[float*=hb,width=\textwidth+8pt]{Behir}
+
+The salamander-like behir lives in the waste places and deserts. While it is best known for hating dragons (and even seeking out dragon nests to eat the young), behir are equal-opportunity killers. Completely non-social, it's believed that they are hermaphrodites whose only interaction with each other is to breed, after which they separate. They abandon their young soon after they hatch.
+
+\end{multicols}
+\begin{DndMonster}[width=\textwidth+8pt]{Behir}
 	\begin{multicols}{2}
-	\DndMonsterType{Huge monstrosity}
+	\DndMonsterType{Huge monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={199 (19d12 + 76)}, speed={50 ft., climb 40 ft.}]
 	\MonsterStats{+6}{+3}{+4}{-2}{+2}{+1}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +7}, damage-immunities={lightning}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 90 ft., passive Perception 16}, languages={Draconic}, challenge={14:12}]
@@ -79,9 +85,10 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
 	\end{multicols}
 \end{DndMonster}
+\begin{multicols}{2}
 
 \begin{DndMonster}{Blink Dog}
-	\DndMonsterType{Medium monstrosity}
+	\DndMonsterType{Medium monstrosity, pack mentality}
 	\DndMonsterBasics[armor-class={13}, hit-points={22 (4d8 + 4)}, speed={40 ft.}]
 	\MonsterStats{+1}{+3}{+1}{+0}{+1}{+0}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={Understands Sylvan but can't speak it}, challenge={1/4:1/2}]
@@ -102,10 +109,10 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	\end{DndMonster}
 
 \begin{DndMonster}{Chimera}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft., fly 60 ft.}]
-	\MonsterStats{+4}{+0}{+4}{-4}{+2}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +8}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 18}, languages={understands Draconic but can't speak}, challenge={8:6}]
+	\MonsterStats{+4}{+0}{+4}{-2}{+2}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +8}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 18}, languages={Common, Draconic}, challenge={8:6}]
 	\DndMonsterSection{Actions}
 	\DndMonsterAction{Multiattack} The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.
 	\DndMonsterAttack[
@@ -137,10 +144,14 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	]
 	\DndMonsterAction{Fire Breath (Recharge 5-6)}
 	The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
+	\DndMonsterSection{Variants}
+	\DndMonsterAction{Greater Chimera} Some chimera are more powerful and intelligent. Increase the hit points to 133 (14d10 + 56), and give them the following abilities, all usable instead of its breath as part of a Multiattack. Their DR is now +7 and their OR is now 10.
+	\subparagraph*{Heaven's Cry (Recharge 5-6)} All creatures within 60 feet but not within 10 feet must make a DC 14 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much on a successful one. Creatures that fail their save are \smartnameref{condition:staggered}{staggered} until the end of their next turn.
+	\subparagraph*{Ram's Keeper (Recharge 5-6)}  The chimera's ram's head causes ice to coalesce around all creatures within 10 feet of a point it can see within 60 ft. All affected creatures must make a DC 14 Constitution saving throw. On a failure, targets take 27 (6d8) cold damage and are stunned until the end of their next turn. On a success, they take half as much damage. The area becomes difficult terrain for one minute.
 \end{DndMonster}
 
 \begin{DndMonster}{Chuul}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, pack mentality, fearless}
 	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={93 (11d10 + 33)}, speed={30 ft., swim 30 ft.}]
 	\MonsterStats{+4}{+0}{+3}{-3}{+0}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={understands Deep Speech but can't speak}, challenge={4:5}]
@@ -164,9 +175,10 @@ Monstrosities are the catch-all category for things that aren't shaped roughly l
 	One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is stunned. If the roll is 8 or lower, the target is paralyzed instead. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 \end{DndMonster}
 
+\end{multicols}
 \begin{DndMonster}{Cloaker}
 \begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
+\DndMonsterType{Large monstrosity, individualistic}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={78 (12d10 + 12)}, speed={10 ft., fly 40 ft.}]
 \MonsterStats{+3}{+2}{+1}{+1}{+1}{+2}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={image-based telepathy (60 ft)}, challenge={6:8}]
@@ -209,8 +221,9 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{multicols}
 \end{DndMonster}
 
+\begin{multicols}{2}
 \begin{DndMonster}{Cockatrice}
-\DndMonsterType{Small monstrosity}
+\DndMonsterType{Small monstrosity, craven}
 \DndMonsterBasics[armor-class={11}, hit-points={27 (6d6 + 6)}, speed={20 ft., fly 40 ft.}]
 \MonsterStats{-2}{+1}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={—}, challenge={1/4:1/2}]
@@ -228,7 +241,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}[width=\textwidth + 8pt]{Darkmantle}
-	\DndMonsterType{Small monstrosity}
+	\DndMonsterType{Small monstrosity, single-minded}
 	\DndMonsterBasics[armor-class={11}, hit-points={22 (5d6 + 5)}, speed={10 ft., fly 30 ft.}]
 	\MonsterStats{+3}{+1}{+1}{-4}{+0}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 10}, languages={—}, challenge={1:1/2}]
@@ -253,7 +266,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}{Death Dog}
-\DndMonsterType{Medium monstrosity}
+\DndMonsterType{Medium monstrosity, pack mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={39 (6d8 + 12)}, speed={40 ft.}]
 \MonsterStats{+2}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={—}, challenge={1:1}]
@@ -274,7 +287,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}{Doppelganger}
-	\DndMonsterType{Medium monstrosity (shapechanger)}
+	\DndMonsterType{Medium monstrosity (shapechanger), individualistic}
 	\DndMonsterBasics[armor-class={13}, hit-points={52 (8d8 + 16)}, speed={30 ft.}]
 	\MonsterStats{+0}{+3}{+2}{+0}{+1}{+2}
 	\DndMonsterDetails[saving-throws={}, skills={Deception +6, Insight +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed}, senses={darkvision 60 ft., passive Perception 11}, languages={Common}, challenge={1:2}]
@@ -298,10 +311,11 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	\DndMonsterAction{Read Thoughts}
 	The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
 \end{DndMonster}
-	
+\end{multicols}
+
 \begin{DndMonster}[width=\textwidth + 8pt]{Ettercap}
 	\begin{multicols}{2}
-	\DndMonsterType{Medium monstrosity}
+	\DndMonsterType{Medium monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={44 (8d8 + 8)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+2}{+2}{+1}{-2}{+1}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4, Survival +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={2:1}]
@@ -344,9 +358,9 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	]
 	\end{multicols}
 \end{DndMonster}
-
+\begin{multicols}{2}
 \begin{DndMonster}{Grick}
-	\DndMonsterType{Medium monstrosity}
+	\DndMonsterType{Medium monstrosity, pack minded}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={40 (9d8)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+2}{+2}{+0}{-4}{+2}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 12}, languages={—}, challenge={2:1}]
@@ -375,7 +389,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 	
 \begin{DndMonster}{Griffon}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, pack mentality}
 	\DndMonsterBasics[armor-class={12}, hit-points={59 (7d10 + 21)}, speed={30 ft., fly 80 ft.}]
 	\MonsterStats{+3}{+2}{+3}{-4}{+1}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 15}, languages={—}, challenge={2:2}]
@@ -404,7 +418,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}{Harpy}
-	\DndMonsterType{Medium monstrosity}
+	\DndMonsterType{Medium monstrosity, craven, individualistic}
 	\DndMonsterBasics[armor-class={12}, hit-points={38 (7d8 + 7)}, speed={20 ft., fly 40 ft.}]
 	\MonsterStats{+1}{+2}{+1}{-2}{+0}{+1}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={Common}, challenge={1:1}]
@@ -437,7 +451,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 		
 \begin{DndMonster}{Hippogriff}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, herd mentality}
 	\DndMonsterBasics[armor-class={11}, hit-points={39 (6d10 + 6)}, speed={40 ft., fly 60 ft.}]
 	\MonsterStats{+3}{+1}{+1}{-4}{+1}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15}, languages={—}, challenge={2:1}]
@@ -466,7 +480,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 		
 \begin{DndMonster}{Hydra}
-	\DndMonsterType{Huge monstrosity}
+	\DndMonsterType{Huge monstrosity, individualistic, single-minded}
 	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={149 (13d12 + 65)}, speed={30 ft., swim 30 ft.}]
 	\MonsterStats{+5}{+1}{+5}{-4}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 16}, languages={—}, challenge={8:8}]
@@ -501,7 +515,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}{Land Shark}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={94 (9d10 + 45)}, speed={40 ft., burrow 40 ft.}]
 	\MonsterStats{+4}{+0}{+5}{-4}{+0}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 16}, languages={—}, challenge={5:6}]
@@ -522,7 +536,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 \end{DndMonster}
 
 \begin{DndMonster}{Manticore}
-\DndMonsterType{Large monstrosity}
+\DndMonsterType{Large monstrosity, individualistic}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={68 (8d10 + 24)}, speed={30 ft., fly 50 ft.}]
 \MonsterStats{+3}{+3}{+3}{-2}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 11}, languages={Common}, challenge={3:3}]
@@ -558,10 +572,11 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 	dmg-type=piercing
 ]
 \end{DndMonster}
+\end{multicols}
 
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Medusa}
+\begin{DndMonster}[width=\textwidth + 8pt]{Medusa}
 \begin{multicols}{2}
-\DndMonsterType{Medium monstrosity}
+\DndMonsterType{Medium monstrosity, honorable, individualistic}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={127 (17d8 + 51)}, speed={30 ft.}]
 \MonsterStats{+0}{+2}{+3}{+1}{+1}{+2}
 \DndMonsterDetails[saving-throws={}, skills={Deception +5, Insight +4, Perception +4, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Common}, challenge={5:6}]
@@ -604,9 +619,9 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 ]
 \end{multicols}
 \end{DndMonster}
-
+\begin{multicols}{2}
 \begin{DndMonster}{Mimic}
-	\DndMonsterType{Medium monstrosity (shapechanger)}
+	\DndMonsterType{Medium monstrosity (shapechanger), single-minded}
 	\DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={58 (9d8 + 18)}, speed={15 ft.}]
 	\MonsterStats{+2}{+1}{+2}{-3}{+1}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +5}, damage-immunities={acid}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={prone}, senses={darkvision 60 ft., passive Perception 11}, languages={—}, challenge={2:2}]
@@ -643,9 +658,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 	]
 \end{DndMonster}
 
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Guardian Naga}
-	\begin{multicols}{2}
-	\DndMonsterType{Large monstrosity}
+\begin{DndMonster}{Guardian Naga}
+	\DndMonsterType{Large monstrosity, honorable, guardian}
 	\DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={144 (17d10 + 51)}, speed={40 ft.}]
 	\MonsterStats{+4}{+4 (+8)}{+3 (+7)}{+3 (+7)}{+4 (+8)}{+4 (+8)}
 	\DndMonsterDetails[saving-throws={Dex +8, Con +7, Int +7, Wis +8, Cha +8}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, poisoned}, senses={darkvision 60 ft., passive Perception 14}, languages={Celestial, Common}, challenge={8:8}]
@@ -686,12 +700,10 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		dmg=\DndDice{3d8 + 4},
 		dmg-type=radiant
 	]
-	\end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Spirit Naga}
-	\begin{multicols}{2}
-	\DndMonsterType{Large monstrosity}
+\begin{DndMonster}{Spirit Naga}
+	\DndMonsterType{Large monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={160 (20d10 + 50)}, speed={40 ft.}]
 	\MonsterStats{+4}{+3}{+2}{+3}{+2}{+3}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, poisoned}, senses={darkvision 60 ft., passive Perception 12}, languages={Abyssal, Common}, challenge={8:9}]
@@ -724,11 +736,10 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 		dmg-type=cold,
 		extra={ and the target's speed is reduced by 10 feet until the end of their next turn.}
 	]
-	\end{multicols}
 \end{DndMonster}
 
 \begin{DndMonster}{Otyugh}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, honorable}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={114 (12d10 + 48)}, speed={30 ft.}]
 	\MonsterStats{+3}{+0}{+4 (+7)}{-2}{+1}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 11}, languages={Otyugh}, challenge={6:6}]
@@ -761,7 +772,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \end{DndMonster}
 
 \begin{DndMonster}{Owlbear}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, individualistic, guardian}
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={59 (7d10 + 21)}, speed={40 ft.}]
 	\MonsterStats{+5}{+1}{+3}{-4}{+1}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={3:2}]
@@ -790,7 +801,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \end{DndMonster}
 
 \begin{DndMonster}{Phase Spider}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, individualistic}
 	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={45 (7d10 + 7)}, speed={30 ft., climb 30 ft.}]
 	\MonsterStats{+3}{+2}{+1}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={3:2}]
@@ -814,7 +825,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \end{DndMonster}
 
 \begin{DndMonster}{Purple Worm}
-	\DndMonsterType{Gargantuan monstrosity}
+	\DndMonsterType{Gargantuan monstrosity, single-minded}
 	\DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={247 (15d20 + 90)}, speed={50 ft., burrow 30 ft.}]
 	\MonsterStats{+9}{-2}{+6}{-5}{-1}{-3}
 	\DndMonsterDetails[saving-throws={Con +11, Wis +4}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., tremorsense 60 ft., passive Perception 9}, languages={—}, challenge={16:14}]
@@ -845,7 +856,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 \end{DndMonster}
 
 \begin{DndMonster}{Remorhaz}
-\DndMonsterType{Huge monstrosity}
+\DndMonsterType{Huge monstrosity, individualistic}
 \DndMonsterBasics[armor-class={17 (natural armor)}, hit-points={195 (17d12 + 85)}, speed={30 ft., burrow 20 ft.}]
 \MonsterStats{+7}{+1}{+5}{-3}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={cold, fire}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., tremorsense 60 ft., passive Perception 10}, languages={—}, challenge={13:11}]
@@ -869,8 +880,7 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 \end{DndMonster}
 
 \begin{DndMonster}[width=\textwidth + 8pt]{Roc}
-\begin{multicols}{2}
-\DndMonsterType{Gargantuan monstrosity}
+\DndMonsterType{Gargantuan monstrosity, individualistic}
 \DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={217 (14d20 + 70)}, speed={20 ft., fly 120 ft.}]
 \MonsterStats{+9}{+0}{+5}{-4}{+0}{-1}
 \DndMonsterDetails[saving-throws={Dex +4, Con +9, Wis +4, Cha +3}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={12:12}]
@@ -897,13 +907,11 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 	dmg-type=slashing,
 	extra={, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained. The roc can restrain two targets in this fashion.}
 ]
-\end{multicols}
 \end{DndMonster}
-
-\subsection{Roper}
+\end{multicols}
 \begin{DndMonster}[width=\textwidth + 8pt]{Roper}
 \begin{multicols}{2}
-\DndMonsterType{Large monstrosity}
+\DndMonsterType{Large monstrosity, single-minded}
 \DndMonsterBasics[armor-class={18 (natural armor)}, hit-points={93 (11d10 + 33)}, speed={10 ft., climb 10 ft.}]
 \MonsterStats{+4}{-1}{+3}{-2}{+3}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +6, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 16}, languages={—}, challenge={7:6}]
@@ -938,9 +946,9 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \end{multicols}
 \end{DndMonster}
-
+\begin{multicols}{2}
 \begin{DndMonster}{Winter Wolf}
-	\DndMonsterType{Large monstrosity}
+	\DndMonsterType{Large monstrosity, pack mentality, honorable}
 	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={75 (10d10 + 20)}, speed={50 ft.}]
 	\MonsterStats{+4}{+1}{+2}{-2}{+1}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +3}, damage-immunities={cold}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 15 }, languages={Common, Giant, Primordial }, challenge={3:3}]
@@ -967,7 +975,7 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 \end{DndMonster}
 
 \begin{DndMonster}{Worg}
-\DndMonsterType{Large monstrosity}
+\DndMonsterType{Large monstrosity, honorable, pack mentality}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{+1}{+1}{-2}{+0}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Goblin}, challenge={1:1/2}]
@@ -985,3 +993,4 @@ The roper pulls each creature grappled by it up to 25 feet straight toward it.
 	extra={. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.}
 ]
 \end{DndMonster}
+\end{multicols}

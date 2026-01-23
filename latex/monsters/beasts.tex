@@ -8,7 +8,7 @@ As a general rule, beasts have very few if any magical abilities and do not spea
 
 Most normal gorillas, chimpanzees, and other larger apes are best represented by the Ape stat block. For smaller ones (baboons, etc.) use the baboon stat block. Giant apes are more like King Kong (in his smaller incarnations).
 \begin{DndMonster}{Ape}
-\DndMonsterType{Medium beast, craven}
+\DndMonsterType{Medium beast, pack mentality, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={19 (3d8 + 6)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{+3}{+2}{+2}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Athletics +5, Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1/4}]
@@ -36,7 +36,7 @@ Most normal gorillas, chimpanzees, and other larger apes are best represented by
 
 The baboon can represent any smaller ape or monkey large enough to pose a threat to a normal person.
 \begin{DndMonster}{Baboon}
-\DndMonsterType{Small beast, craven}
+\DndMonsterType{Small beast, pack mentality, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{-1}{+2}{+0}{-3}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/4:0}]
@@ -54,48 +54,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Badger}
-\DndMonsterType{Tiny beast}
-\DndMonsterBasics[armor-class={10}, hit-points={3 (1d4 + 1)}, speed={20 ft., burrow 5 ft.}]
-\MonsterStats{-3}{+0}{+1}{-4}{+1}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Keen Smell} The badger has advantage on Wisdom (Perception) checks that rely on smell.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
-\clearpage
-
-\begin{DndMonster}{Bat}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 30 ft.}]
-\MonsterStats{-4}{+2}{-1}{-4}{+1}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Echolocation} The bat can't use its blindsight while deafened.
-
-\DndMonsterAction{Keen Hearing} The bat has advantage on Wisdom (Perception) checks that rely on hearing.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Black Bear}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic, craven}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={19 (3d8 + 6)}, speed={40 ft., climb 30 ft.}]
 \MonsterStats{+2}{+0}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1/4}]
@@ -123,11 +83,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\vfill
-\columnbreak
-
 \begin{DndMonster}{Blood Hawk}
-\DndMonsterType{Small beast}
+\DndMonsterType{Small beast, pack mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={7 (2d6)}, speed={10 ft., fly 60 ft.}]
 \MonsterStats{-2}{+2}{+0}{-4}{+2}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/4:1/8}]
@@ -148,7 +105,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Boar}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, herd mentality, fearless}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
 \MonsterStats{+1}{+0}{+1}{-4}{-1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 9}, languages={—}, challenge={1/4:1/4}]
@@ -171,7 +128,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \clearpage
 
 \begin{DndMonster}{Brown Bear}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic, guardian}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={34 (4d10 + 12)}, speed={40 ft., climb 30 ft.}]
 \MonsterStats{+3}{+1}{+3}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={2:1/2}]
@@ -200,7 +157,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Camel}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, domestic, herd mentality}
 \DndMonsterBasics[armor-class={10}, hit-points={15 (2d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{0}{+2}{-4}{-1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 9}, languages={—}, challenge={1/8:1/8}]
@@ -216,26 +173,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Cat}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={2 (1d4)}, speed={40 ft., climb 30 ft.}]
-\MonsterStats{-4}{+2}{+0}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={Darkvision 60 ft, passive Perception 13}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Keen Smell} The cat has advantage on Wisdom (Perception) checks that rely on smell.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=slashing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Constrictor Snake}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={13 (2d10 + 2)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{+2}{+2}{+1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={1/2:1/8}]
@@ -261,27 +200,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Crab}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={2 (1d4)}, speed={20 ft., swim 20 ft.}]
-\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 9}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Amphibious} The crab can breathe air and water.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Claws,
-	distance=melee,
-	type=weapon,
-	mod=+0,
-	dmg=1,
-	dmg-type=bludgeoning
-]
-
-\end{DndMonster}
-
 \begin{DndMonster}{Crocodile}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={20 ft., swim 30 ft.}]
 \MonsterStats{+2}{+0}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2:1/4}]
@@ -300,26 +220,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-
-\begin{DndMonster}{Deer}
-\DndMonsterType{Medium beast}
-\DndMonsterBasics[armor-class={12}, hit-points={4 (1d8)}, speed={50 ft.}]
-\MonsterStats{+0}{+2}{+0}{-4}{+2}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={—}, challenge={1/8:0}]
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Hooves,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	reach=5,
-	dmg=\DndDice{1d4},
-	dmg-type=piercing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Dire Wolf}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, pack mentality}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={37 (5d10 + 10)}, speed={50 ft.}]
 \MonsterStats{+3}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1}]
@@ -341,7 +243,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Draft Horse}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, domestic, herd mentality}
 \DndMonsterBasics[armor-class={10}, hit-points={6 (1d10 + 1)}, speed={40 ft.}]
 \MonsterStats{+4}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1:0}]
@@ -357,27 +259,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Eagle}
-\DndMonsterType{Small beast}
-\DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{-2}{+2}{+0}{-4}{+2}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/4:0}]
-\DndMonsterAction{Keen Sight} The eagle has advantage on Wisdom (Perception) checks that rely on sight.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Talons,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{1d4 + 2},
-	dmg-type=slashing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Elephant}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, herd mentality, guardian}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={76 (8d12 + 24)}, speed={40 ft.}]
 \MonsterStats{+6}{-1}{+3}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={4:4}]
@@ -405,7 +288,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Elk}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality}
 \DndMonsterBasics[armor-class={11}, hit-points={13 (2d10 + 2)}, speed={50 ft.}]
 \MonsterStats{+3}{+1}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2:1/4}]
@@ -433,7 +316,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Flying Snake}
-\DndMonsterType{Tiny beast}
+\DndMonsterType{Tiny beast, individualistic}
 \DndMonsterBasics[armor-class={13}, hit-points={7 (3d4)}, speed={30 ft., fly 60 ft., swim 30 ft}]
 \MonsterStats{-3}{+3}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 11}, languages={—}, challenge={1:1/8}]
@@ -451,20 +334,8 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Frog}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={20 ft., swim 20 ft.}]
-\MonsterStats{-5}{+1}{-1}{-5}{-1}{-4}
-\DndMonsterDetails[saving-throws={}, skills={Perception +1, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Amphibious} The frog can breathe air and water.
-
-\DndMonsterAction{Standing Leap} The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
-
-\end{DndMonster}
-
-\clearpage
 \begin{DndMonster}{Giant Ape}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, individualistic}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={126 (12d12 + 48)}, speed={40 ft., climb 40 ft.}]
 \MonsterStats{+6}{+2}{+4}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Athletics +9, Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={7:7}]
@@ -491,7 +362,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Badger}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic, fearless}
 \DndMonsterBasics[armor-class={11}, hit-points={13 (2d8 + 4)}, speed={30 ft., burrow 10 ft.}]
 \MonsterStats{+1}{+1}{+2}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={1/4:1/8}]
@@ -520,7 +391,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Bat}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality}
 \DndMonsterBasics[armor-class={13}, hit-points={22 (4d10)}, speed={10 ft., fly 60 ft.}]
 \MonsterStats{+2}{+3}{+0}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={1/4:1/2}]
@@ -541,7 +412,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Boar}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality, guardian, fearless}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={42 (5d10 + 15)}, speed={40 ft.}]
 \MonsterStats{+3}{+0}{+3}{-4}{-2}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 8}, languages={—}, challenge={1:1}]
@@ -562,7 +433,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Centipede}
-\DndMonsterType{Small beast}
+\DndMonsterType{Small beast, individualistic, fearless}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={18 (4d6 + 4)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{-3}{+2}{+1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 8}, languages={—}, challenge={1:1/4}]
@@ -580,7 +451,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Constrictor Snake}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={60 (8d12 + 8)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{+4}{+2}{+1}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 12}, languages={—}, challenge={2:2}]
@@ -607,7 +478,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Crab}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={21 (5d8)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{+2}{+2}{+0}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 9}, languages={—}, challenge={1/4:1/2}]
@@ -627,7 +498,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Crocodile}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, individualistic}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={85 (9d12 + 27)}, speed={30 ft., swim 50 ft.}]
 \MonsterStats{+4}{-1}{+3}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={5:4}]
@@ -658,7 +529,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Eagle}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={13}, hit-points={45 (7d10 + 7)}, speed={10 ft., fly 80 ft.}]
 \MonsterStats{+3}{+3}{+1}{-1}{+2}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={}, challenge={2:2}]
@@ -687,7 +558,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Elk}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, herd mentality, guardian}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={50 (6d12 + 12)}, speed={60 ft.}]
 \MonsterStats{+4}{+3}{+2}{-2}{+2}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={understands Common, Elvish, and Sylvan but can't speak them}, challenge={3:2}]
@@ -715,7 +586,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Fire Beetle}
-\DndMonsterType{Small beast}
+\DndMonsterType{Small beast, herd mentality, craven}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={8 (2d6 + 2)}, speed={30 ft.}]
 \MonsterStats{-1}{+0}{+1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 8}, languages={—}, challenge={1/8:1/8}]
@@ -734,7 +605,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Frog}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={11}, hit-points={18 (4d8)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{+1}{+1}{+0}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 12}, languages={—}, challenge={1/4:1/4}]
@@ -760,7 +631,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Goat}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality, craven}
 \DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={40 ft.}]
 \MonsterStats{+3}{+0}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1:1/4}]
@@ -781,7 +652,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Hyena}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, pack mentality, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={45 (6d10 + 12)}, speed={50 ft.}]
 \MonsterStats{+3}{+2}{+2}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1}]
@@ -800,7 +671,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Lizard}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={19 (3d10 + 3)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{+2}{+1}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={1/2:1/4}]
@@ -817,7 +688,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Octopus}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={52 (8d10 + 8)}, speed={10 ft., swim 60 ft.}]
 \MonsterStats{+3}{+2}{+1}{-3}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={—}, challenge={1:1}]
@@ -843,7 +714,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Owl}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={19 (3d10 + 3)}, speed={5 ft., fly 60 ft.}]
 \MonsterStats{+1}{+2}{+1}{-1}{+1}{+0}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 15}, languages={understands Sylvan but can't speak it}, challenge={1:1/4}]
@@ -864,7 +735,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Poisonous Snake}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={13}, hit-points={22 (4d8 + 4)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{+0}{+3}{+1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 12}, languages={—}, challenge={2:1/2}]
@@ -882,7 +753,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Rat}
-\DndMonsterType{Small beast}
+\DndMonsterType{Small beast, craven, pack mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={7 (2d6)}, speed={30 ft.}]
 \MonsterStats{-2}{+2}{+0}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={1/4:1/8}]
@@ -903,7 +774,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Scorpion}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic, fearless}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={52 (7d10 + 14)}, speed={40 ft.}]
 \MonsterStats{+2}{+1}{+2}{-5}{-1}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 9}, languages={—}, challenge={4:3}]
@@ -932,7 +803,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Sea Horse}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality, craven}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={16 (3d10)}, speed={0 ft., swim 40 ft.}]
 \MonsterStats{+1}{+2}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1/2:1/4}]
@@ -953,7 +824,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Shark}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, individualistic}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={0 ft., swim 50 ft.}]
 \MonsterStats{+4}{+0}{+5}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 13}, languages={—}, challenge={6:6}]
@@ -977,7 +848,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Spider}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={13}, hit-points={26 (4d10 + 4)}, speed={30 ft., climb 30 ft.}]
 \MonsterStats{+2}{+3}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Stealth +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., darkvision 60 ft., passive Perception 10}, languages={—}, challenge={2:1}]
@@ -1011,7 +882,7 @@ A 20- foot-radius cloud of ink extends all around the octopus if it is underwate
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Toad}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={39 (6d10 + 6)}, speed={20 ft., swim 40 ft.}]
 \MonsterStats{+3}{+1}{+1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={2:1}]
@@ -1036,7 +907,7 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 
 
 \begin{DndMonster}{Giant Vulture}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={45 (6d10 + 12)}, speed={10 ft., fly 60 ft.}]
 \MonsterStats{+2}{+2}{+2}{-2}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={--}, challenge={2:1}]
@@ -1067,7 +938,7 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Wasp}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, fearless, pack mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={18 (4d8)}, speed={10 ft., fly 50 ft.}]
 \MonsterStats{+0}{+2}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1:1/4}]
@@ -1085,7 +956,7 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Weasel}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={13}, hit-points={9 (2d8)}, speed={40 ft.}]
 \MonsterStats{+0}{+3}{+0}{-3}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1/2:1/8}]
@@ -1104,7 +975,7 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 \end{DndMonster}
 
 \begin{DndMonster}{Giant Wolf Spider}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic, craven}
 \DndMonsterBasics[armor-class={12}, hit-points={16 (2d8 + 3)}, speed={40 ft., climb 40 ft.}]
 \MonsterStats{+1}{+2}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1:1/4}]
@@ -1124,45 +995,6 @@ The toad makes one bite attack against a Medium or smaller target it is grapplin
 	dmg=\DndDice{1d6 + 2},
 	dmg-type=piercing,
 	extra={, and the target must make a DC 12 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.}
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Goat}
-\DndMonsterType{Medium beast}
-\DndMonsterBasics[armor-class={10}, hit-points={4 (1d8)}, speed={40 ft.}]
-\MonsterStats{+1}{+0}{+0}{-4}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2:0}]
-\DndMonsterAction{Charge} If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.
-
-\DndMonsterAction{Sure-Footed} The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Ram,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d4 + 1},
-	dmg-type=bludgeoning
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Hawk}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 60 ft.}]
-\MonsterStats{-3}{+2}{-1}{-4}{+2}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/8:0}]
-\DndMonsterAction{Keen Sight} The hawk has advantage on Wisdom (Perception) checks that rely on sight.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Talons,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	dmg=3,
-	dmg-type=slashing
 ]
 \end{DndMonster}
 
@@ -1197,7 +1029,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 \end{DndMonster}
 
 \begin{DndMonster}{Hunter Shark}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={45 (6d10 + 12)}, speed={0 ft., swim 40 ft.}]
 \MonsterStats{+2}{+1}{+2}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 12}, languages={—}, challenge={1:1}]
@@ -1218,7 +1050,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 \end{DndMonster}
 
 \begin{DndMonster}{Hyena}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, pack mentality, craven}
 \DndMonsterBasics[armor-class={11}, hit-points={5 (1d8 + 1)}, speed={50 ft.}]
 \MonsterStats{+0}{+1}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/8:0}]
@@ -1236,29 +1068,8 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Jackal}
-\DndMonsterType{Small beast}
-\DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={40 ft.}]
-\MonsterStats{-1}{+2}{+0}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/8:0}]
-\DndMonsterAction{Keen Hearing and Smell} The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell.
-
-\DndMonsterAction{Pack Tactics} The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 feet of the creature and the ally isn't incapacitated.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	reach=5,
-	dmg=\DndDice{1d4},
-	dmg-type=piercing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Killer Whale}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, pack mentality}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={90 (12d12 + 12)}, speed={0 ft., swim 60 ft.}]
 \MonsterStats{+4}{+0}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 120 ft., passive Perception 13}, languages={—}, challenge={3:3}]
@@ -1281,7 +1092,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 \end{DndMonster}
 
 \begin{DndMonster}{Lion}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, pack mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={26 (4d10 + 4)}, speed={50 ft.}]
 \MonsterStats{+3}{+2}{+1}{-4}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1:1/2}]
@@ -1314,24 +1125,8 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Lizard}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={10}, hit-points={2 (1d4)}, speed={20 ft., climb 20 ft.}]
-\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 9}, languages={—}, challenge={0:0}]
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Mammoth}
-\DndMonsterType{Huge beast}
+\DndMonsterType{Huge beast, herd mentality}
 \DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={126 (11d12 + 55)}, speed={40 ft.}]
 \MonsterStats{+7}{-1}{+5}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={6:6}]
@@ -1359,7 +1154,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 \end{DndMonster}
 
 \begin{DndMonster}{Mastiff}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, domestic, guardian}
 \DndMonsterBasics[armor-class={12}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
 \MonsterStats{+1}{+2}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/4:0}]
@@ -1379,7 +1174,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 \end{DndMonster}
 
 \begin{DndMonster}{Mule}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, domestic}
 \DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
 \MonsterStats{+1}{+0}{+1}{-4}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/8:0}]
@@ -1399,54 +1194,8 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Octopus}
-\DndMonsterType{Small beast}
-\DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={5 ft., swim 30 ft.}]
-\MonsterStats{-3}{+2}{+0}{-4}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 12}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Hold Breath} While out of water, the octopus can hold its breath for 30 minutes.
-
-\DndMonsterAction{Underwater Camouflage} The octopus has advantage on Dexterity (Stealth) checks made while underwater.
-
-\DndMonsterAction{Water Breathing} The octopus can breathe only underwater.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Tentacles,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=bludgeoning,
-	extra={, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.}
-]
-
-\DndMonsterAction{Ink Cloud}
-A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
-\end{DndMonster}
-
-\begin{DndMonster}{Owl}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 60 ft.}]
-\MonsterStats{-4}{+1}{-1}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 13}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Flyby} The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.
-
-\DndMonsterAction{Keen Hearing and Sight} The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Talons,
-	distance=melee,
-	type=weapon,
-	mod=+3,
-	dmg=1,
-	dmg-type=slashing,
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Panther}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={13 (3d8)}, speed={50 ft., climb 40 ft.}]
 \MonsterStats{+2}{+2}{+0}{-4}{+2}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +4, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/2:1/8}]
@@ -1477,7 +1226,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 
 
 \begin{DndMonster}{Poisonous Snake}
-\DndMonsterType{Tiny beast}
+\DndMonsterType{Tiny beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={7 (3d4)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{-4}{+2}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={1/4:1/8}]
@@ -1494,10 +1243,10 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Polar Bear}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, Individualistic}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={51 (6d10 + 18)}, speed={40 ft., swim 30 ft.}]
 \MonsterStats{+5}{+0}{+3}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={3:2}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={cold}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={3:2}]
 \DndMonsterAction{Keen Smell} The bear has advantage on Wisdom (Perception) checks that rely on smell.
 
 \DndMonsterSection{Actions}
@@ -1520,82 +1269,32 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	dmg=\DndDice{2d6 + 5},
 	dmg-type=slashing
 ]
+
+\DndMonsterSection{Variants}
+\DndMonsterAction{Cave Bear} Cave bears lose the cold damage resistance and gain 60 ft of darkvision.
 \end{DndMonster}
 
 \begin{DndMonster}{Pony}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, domestic, herd mentality}
 \DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
 \MonsterStats{+2}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/4:0}]
+\DndMonsterAction{Trained Mount} While being used as a mount, the pony has advantage on Wisdom saving throws against being frightened.
 \DndMonsterSection{Actions}
+
 \DndMonsterAttack[
 	name=Hooves,
 	distance=melee,
 	type=weapon,
-	mod=+4,
+	mod=+2,
 	reach=5,
 	dmg=\DndDice{1d4 + 2},
 	dmg-type=bludgeoning
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Quipper}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={3 (2d4 - 2)}, speed={0 ft., swim 40 ft.}]
-\MonsterStats{-4}{+2}{-1}{-4}{-2}{-4}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 8}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Blood Frenzy} The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.
-
-\DndMonsterAction{Water Breathing} The quipper can breathe only underwater.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Rat}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={10}, hit-points={1 (1d4 - 1)}, speed={20 ft.}]
-\MonsterStats{-4}{+0}{-1}{-4}{+0}{-3}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Keen Smell} The rat has advantage on Wisdom (Perception) checks that rely on smell.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Raven}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 50 ft.}]
-\MonsterStats{-4}{+1}{-1}{-4}{+1}{-2}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Mimicry} The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Beak,
-	distance=melee,
-	mod=+3,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Reef Shark}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, pack mentality}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={22 (4d8 + 4)}, speed={0 ft., swim 40 ft.}]
 \MonsterStats{+2}{+1}{+1}{-5}{+0}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 12}, languages={—}, challenge={1/2:1/2}]
@@ -1617,7 +1316,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 
 
 \begin{DndMonster}{Rhinoceros}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, herd mentality}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={51 (6d10 + 18)}, speed={40 ft.}]
 \MonsterStats{+5}{-1}{+3}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={2:2}]
@@ -1636,10 +1335,12 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Riding Horse}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, domestic, herd mentality}
 \DndMonsterBasics[armor-class={10}, hit-points={13 (2d10 + 2)}, speed={60 ft.}]
 \MonsterStats{+1}{+0}{+1}{-4}{+0}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/2:0}]
+\DndMonsterAction{Trained Mount} While being used as a mount, the horse has advantage on Wisdom saves against being frightened.
+
 \DndMonsterSection{Actions}
 \DndMonsterAttack[
 	name=Hooves,
@@ -1653,7 +1354,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Saber-Toothed Tiger}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={52 (7d10 + 14)}, speed={40 ft.}]
 \MonsterStats{+3}{+2}{+2}{-4}{+1}{-1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={3:2}]
@@ -1668,7 +1369,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	name=Bite,
 	distance=melee,
 	type=weapon,
-	mod=+4,
+	mod=+5,
 	reach=5,
 	dmg=\DndDice{1d10 + 3},
 	dmg-type=piercing
@@ -1677,63 +1378,15 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	name=Claw,
 	distance=melee,
 	type=weapon,
-	mod=+4,
+	mod=+5,
 	reach=5,
 	dmg=\DndDice{2d6 + 3},
 	dmg-type=slashing
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Scorpion}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={1 (1d4 - 1)}, speed={10 ft.}]
-\MonsterStats{-4}{+0}{-1}{-5}{-1}{-4}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 9}, languages={—}, challenge={1/8:0}]
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Sting,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	reach=5,
-	dmg=\DndDice{1d4},
-	dmg-type=poison
-]
-\end{DndMonster}
-
-\begin{DndMonster}{Sea Horse}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={0 ft., swim 20 ft.}]
-\MonsterStats{-5}{+1}{-1}{-5}{+0}{-4}
-\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Water Breathing} The sea horse can breathe only underwater.
-\end{DndMonster}
-
-\begin{DndMonster}{Spider}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={20 ft., climb 20 ft.}]
-\MonsterStats{-4}{+2}{-1}{-5}{+0}{-4}
-\DndMonsterDetails[saving-throws={}, skills={Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-
-\DndMonsterAction{Web Sense} While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.
-
-\DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+2,
-	reach=5,
-	dmg=1,
-	dmg-type=poison
-]
-\end{DndMonster}
-
 \begin{DndMonster}{Swarm of Bats}
-\DndMonsterType{Medium swarm of Diminutive beasts}
+\DndMonsterType{Medium swarm of Diminutive beasts, fearless}
 \DndMonsterBasics[armor-class={12}, hit-points={22 (5d8)}, speed={0 ft., fly 30 ft.}]
 \MonsterStats{-3}{+2}{+0}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning, piercing, slashing}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={1/4:1}]
@@ -1757,7 +1410,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Swarm of Insects}
-\DndMonsterType{Medium swarm of Diminutive beasts}
+\DndMonsterType{Medium swarm of Diminutive beasts, fearless}
 \DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={22 (5d8)}, speed={20 ft., climb 20 ft.}]
 \MonsterStats{-4}{+1}{+0}{-5}{-2}{-5}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={damage from any single-target effect}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 10 ft., passive Perception 8}, languages={—}, challenge={1/4:1}]
@@ -1777,7 +1430,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Swarm of Poisonous Snakes}
-\DndMonsterType{Medium swarm of Tiny beasts}
+\DndMonsterType{Medium swarm of Tiny beasts, fearless}
 \DndMonsterBasics[armor-class={14}, hit-points={36 (8d8)}, speed={30 ft., swim 30 ft.}]
 \MonsterStats{-1}{+2}{+0}{-5}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={damage from any single-target effect}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={blindsight 10 ft., passive Perception 10}, languages={—}, challenge={2:2}]
@@ -1797,7 +1450,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Swarm of Quippers}
-\DndMonsterType{Medium swarm of Diminutive beasts}
+\DndMonsterType{Medium swarm of Diminutive beasts, fearless}
 \DndMonsterBasics[armor-class={13}, hit-points={28 (8d8 - 8)}, speed={0 ft., swim 40 ft.}]
 \MonsterStats{+1}{+3}{-1}{-5}{-2}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={damage from any single-target effect}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={darkvision 60 ft., passive Perception 8}, languages={—}, challenge={2:1}]
@@ -1812,7 +1465,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	name=Bites,
 	distance=melee,
 	type=weapon,
-	mod=+5,
+	mod=+3,
 	reach=0,
 	dmg=\DndDice{4d6},
 	dmg-type=piercing,
@@ -1821,7 +1474,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Swarm of Rats}
-\DndMonsterType{Medium swarm of Diminutive beasts}
+\DndMonsterType{Medium swarm of Diminutive beasts, fearless}
 \DndMonsterBasics[armor-class={11}, hit-points={24 (7d8 - 7)}, speed={30 ft.}]
 \MonsterStats{-1}{+1}{-1}{-4}{+0}{-4}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={damage from any single-target effect}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={1/2:1}]
@@ -1843,7 +1496,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Swarm of Ravens}
-\DndMonsterType{Medium swarm of Diminutive beasts}
+\DndMonsterType{Medium swarm of Diminutive beasts, fearless}
 \DndMonsterBasics[armor-class={12}, hit-points={24 (7d8 - 7)}, speed={10 ft., fly 50 ft.}]
 \MonsterStats{-2}{+2}{-1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +5}, damage-immunities={}, damage-resistances={damage from any single target effect}, damage-vulnerabilities={}, condition-immunities={charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned}, senses={passive Perception 15}, languages={—}, challenge={1/2:1}]
@@ -1863,20 +1516,20 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Tiger}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beast, individualistic}
 \DndMonsterBasics[armor-class={12}, hit-points={37 (5d10 + 10)}, speed={40 ft.}]
 \MonsterStats{+3}{+2}{+2}{-4}{+1}{-1}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={2:1}]
+\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={—}, challenge={1:1}]
 \DndMonsterAction{Keen Smell} The tiger has advantage on Wisdom (Perception) checks that rely on smell.
 
-\DndMonsterAction{Pounce} If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
+\DndMonsterAction{Pounce} If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 11 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
 
 \DndMonsterSection{Actions}
 \DndMonsterAttack[
 	name=Bite,
 	distance=melee,
 	type=weapon,
-	mod=+5,
+	mod=+3,
 	reach=5,
 	dmg=\DndDice{1d10 + 3},
 	dmg-type=piercing
@@ -1885,7 +1538,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	name=Claw,
 	distance=melee,
 	type=weapon,
-	mod=+5,
+	mod=+3,
 	reach=5,
 	dmg=\DndDice{1d8 + 3},
 	dmg-type=slashing
@@ -1893,7 +1546,7 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Vulture}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, individualistic}
 \DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={10 ft., fly 50 ft.}]
 \MonsterStats{-2}{+0}{+1}{-4}{+1}{-3}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/8:0}]
@@ -1914,10 +1567,11 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 \end{DndMonster}
 
 \begin{DndMonster}{Warhorse}
-\DndMonsterType{Large beast}
+\DndMonsterType{Large beas, domesticated, guardian}
 \DndMonsterBasics[armor-class={11}, hit-points={19 (3d10 + 3)}, speed={60 ft.}]
 \MonsterStats{+3}{+1}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 11}, languages={—}, challenge={1:1/4}]
+\DndMonsterAction{Battle Trained Mount} While being used as a mount, the warhorse has advantage on Wisdom saves against being frightened and gains its rider's proficiency bonus to all saves if the rider is proficient in Animal Handling. 
 \DndMonsterAction{Trampling Charge} If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.
 
 \DndMonsterSection{Actions}
@@ -1932,27 +1586,8 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Weasel}
-\DndMonsterType{Diminutive beast}
-\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={30 ft.}]
-\MonsterStats{-4}{+2}{-1}{-4}{+1}{-4}
-\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0:0}]
-\DndMonsterAction{Keen Hearing and Smell} The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
-
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Bite,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	dmg=1,
-	dmg-type=piercing
-]
-\end{DndMonster}
-
-
 \begin{DndMonster}{Wolf}
-\DndMonsterType{Medium beast}
+\DndMonsterType{Medium beast, pack mentality}
 \DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={11 (2d8 + 2)}, speed={40 ft.}]
 \MonsterStats{+1}{+2}{+1}{-4}{+1}{-2}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={1/2:1/8}]

@@ -1,8 +1,13 @@
 \clearpage
 \section{Oozes}
+\begin{multicols}
+It's not clear where the first oozes came from. Ooze-like creatures can be found on the earth-aspected elemental planes (especially where it overlaps with the planes of water), but those are much more refined and less mindless than your regular ooze. Some believe that oozes were created during the early ages to act as living cleaning agents or to dissolve waste. Most feared among the oozes are the nefarious boing-boings---oozes that \textit{bounce} with a distinctive sound rather than protoplasmically slither across the ground. Boing-boings also have markings that look like grinning faces. Thankfully, those types are quite rare.
 
+As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have only very simple nervous systems and blindly respond to stimuli (mainly "edible food" and "ouch"). Food is all they seek for.
+
+\subsection{Protoplasmic oozes}
 \begin{DndMonster}{Gelatinous Cube}
-	\DndMonsterType{Large ooze}
+	\DndMonsterType{Large ooze, single-minded}
 	\DndMonsterBasics[armor-class={6}, hit-points={84 (8d10 + 40)}, speed={15 ft.}]
 	\MonsterStats{+2}{-4}{+5}{-5}{-2}{-5}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={3:2}]
@@ -29,7 +34,7 @@
 	\end{DndMonster}
 
 \begin{DndMonster}{Ochre Jelly}
-	\DndMonsterType{Large ooze}
+	\DndMonsterType{Large ooze, single-minded}
 	\DndMonsterBasics[armor-class={8}, hit-points={45 (6d10 + 12)}, speed={10 ft., climb 10 ft.}]
 	\MonsterStats{+2}{-2}{+2}{-4}{-2}{-5}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, slashing}, damage-resistances={acid}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={2:1}]
@@ -53,7 +58,7 @@
 \end{DndMonster}
 
 \begin{DndMonster}{Gray Ooze}
-	\DndMonsterType{Medium ooze}
+	\DndMonsterType{Medium ooze, single-minded}
 	\DndMonsterBasics[armor-class={9 (natural armor)}, hit-points={22 (3d8 + 9)}, speed={10 ft., climb 10 ft.}]
 	\MonsterStats{+1}{-2}{+3}{-5}{-2}{-4}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={acid, cold, fire}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:1/2}]
@@ -79,7 +84,7 @@
 \end{DndMonster}
 
 \begin{DndMonster}{Black Pudding}
-	\DndMonsterType{Large ooze}
+	\DndMonsterType{Large ooze, single-minded}
 	\DndMonsterBasics[armor-class={9 (natural armor)}, hit-points={85 (10d10 + 30)}, speed={20 ft., climb 20 ft.}]
 	\MonsterStats{+3}{-3}{+3}{-5}{-2}{-5}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid, cold, lightning, slashing}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={3:2}]
@@ -105,3 +110,92 @@
 	\DndMonsterAction{Split}
 	When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.
 \end{DndMonster}
+
+%\subsection{Boing-Boings}
+%write boing boings
+
+\begin{DndMonster}{Bludger Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={9 (2d6 + 2)}, speed={30 ft.}]
+	\MonsterStats{+1}{+1}{+1}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1/4:1/4}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced, audible for 30 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=+5,
+		dmg=\DndDice{1d6+1},
+		dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+Heal slimes are a tragic creature, one that only exists to heal others at the cost of its own life. The goo left behind when they die can be used to create potions of healing that always heal the maximum possible for that grade. Creating a maximized regular potion of healing requires the goo from a single heal slime; each step up requires an additional heal slime's worth of goo.
+\begin{DndMonster}{Heal Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={11}, hit-points={36 (8d6 + 8)}, speed={0ft., fly 20 ft (hover).}]
+	\MonsterStats{-1}{+1}{+1}{-5}{-3}{0}
+	\DndMonsterDetails[saving-throws={}, skills={stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={piercing}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1/4:1/4}]
+	\DndMonsterAction{Floating} Unlike other boing-boings, heal slimes float several feet off the ground with dangling, jelly-fish-like tendrils.
+	\DndMonsterAction{Indiscriminate} Heal slimes will use their transfer health action on the closest creature that is lacking hit points other than another heal slime, preferring bloodied ones if two are equally close. They do not distinguish friend from foe.
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Transfer Health} One creature within 5 feet of the slime regains 6 hit points and the slime loses 6 hit points. It makes a small, pained moan when it does so.
+\end{DndMonster}
+
+\begin{DndMonster}{Spitter Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={18 (4d6 + 4)}, speed={30 ft.}]
+	\MonsterStats{-1}{+2}{+1}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:1/2}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced, audible for 30 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The spitter slime makes two spit rock attacks.
+	
+	\DndMonsterAttack[
+		name=Spit Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=60/120,
+		dmg=\DndDice{1d4+2},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+1,
+		reach=+5,
+		dmg=\DndDice{1d6-1},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterSection{Reactions}
+	\DndMonsterAction{Reflexive Evasion} As a reaction when a creature ends its movement within 5 feet of the spitter, the spitter moves up to its speed without provoking opportunity attacks.
+\end{DndMonster}
+
+\begin{DndMonster}{Steel Slime}
+	\DndMonsterType{Medium ooze, single-minded, guardian}
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={45 (6d6 + 24)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+4}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:2}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced. Steel slimes are audible for 60 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=+5,
+		dmg=\DndDice{2d6+3},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterSection{Reactions}
+	\DndMonsterAction{Harden} As a reaction when first bloodied, the steel slime hardens its body. Its speed is reduced by 10 feet and it gains a damage threshold of 10. Adamantine weapons, critical hits, cold, or fire damage bypass this damage threshold. This lasts until it is no longer bloodied.
+\end{DndMonster}
+
+\end{multicols}

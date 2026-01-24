@@ -1,8 +1,14 @@
 \clearpage
+\begin{multicols}{2}
 \section{Undead}
+
+Undead are, for the most part, perversions of nature. They are animated by the jotnar, anti-life spirits from the abyss, and drain the life out of the world around them simply by existing. Places infested by undead are often sterile, devoid of insect or plant life. Eventually, even the rocks crumble to fine grey dust, lacking any coherence. And the presence of undead weakens the walls between planes, letting more jotnar slip through and corroding Shadow into the demon-infested waste.
+
+Some undead, such as ghosts, are closer to echoes of souls caught up in strong magic or strong need. They are less intrinsically offensive to nature and will depart once their binding is resolved. Until then, they remain dangerous, however.
+\end{multicols}
 \begin{DndMonster}[width=\textwidth + 8pt]{Ghost}
 	\begin{multicols}{2}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, individualistic}
 	\DndMonsterBasics[armor-class={13}, hit-points={90 (20d8)}, speed={0 ft., fly 40 ft. (hover)}]
 	\MonsterStats{-2}{+3}{+0}{+0}{+1}{+3}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={cold, necrotic, poison}, damage-resistances={acid, fire, lightning, thunder}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained}, senses={darkvision 60 ft., passive Perception 11}, languages={any languages it knew in life}, challenge={2:5}]
@@ -32,9 +38,10 @@
 	The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like \smartnameref{spell:dispel-otherworldly-influence}{\textit{dispel otherworldly influence}}. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
 	\end{multicols}
 \end{DndMonster}
-	
+\begin{multicols}{2}
+Ghouls are one of the outcomes when jotnar infest people on the verge of death, consuming their souls while they still live. These creatures retain a semblance of the former person's personality, dominated by an unnatural hunger for flesh.
 \begin{DndMonster}{Ghoul}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, individualistic, fearless}
 	\DndMonsterBasics[armor-class={12}, hit-points={36 (7d8)}, speed={30 ft.}]
 	\MonsterStats{+1}{+2}{+0}{-2}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={Common}, challenge={2:1}]
@@ -49,6 +56,7 @@
 		reach=5,
 		dmg=\DndDice{2d6 + 2},
 		dmg-type=piercing
+		extra={. If the target is a living being, it must make a DC 10 Constitution saving throw. On a failed save, it becomes infected with ghoul plague. Its maximum health decreases by 5 immediately and they cannot regain hit points. At the end of each hour while diseased, the target must make another Constitution saving throw. On a success, the disease pauses and no further damage is incurred. On a failure, their maximum health decreases by 5. The disease can be cured by any magic that removes disease, thee successful saving throws (they do not need to be consecutive), or certain potions. If the creature's maximum hit points reach zero, it dies and cannot be revived.}
 	]
 	\DndMonsterAttack[
 		name=Claws,
@@ -57,8 +65,7 @@
 		mod=+4,
 		reach=5,
 		dmg=\DndDice{2d4 + 2},
-		dmg-type=slashing,
-		extra={. If the target is a creature other than an undead or construct, it must succeed on a DC 10 Constitution saving throw or be \nameref{condition:staggered} for 1 minute. If the save result is 5 or less, the target is instead \nameref{condition:paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}
+		dmg-type=slashing
 	]
 
 	\DndMonsterSection{Variants}
@@ -66,11 +73,20 @@
 \end{DndMonster}
 
 \clearpage
+
+The mummy is a rare undead intentionally created to serve as an eternal guardian for a tomb. Unlike ghouls or other lesser undead, they can generally be reasoned with and won't attack unless their charge is threatened.
 \begin{DndMonster}{Mummy}
-\DndMonsterType{Medium undead}
+\DndMonsterType{Medium undead, guardian, honorable, fearless}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={97 (15d8 + 30)}, speed={20 ft.}]
 \MonsterStats{+3}{-1}{+2}{-2}{+0}{+1}
 \DndMonsterDetails[saving-throws={Wis +2}, skills={}, damage-immunities={necrotic, poison}, damage-resistances={}, damage-vulnerabilities={fire}, condition-immunities={charmed, exhaustion, frightened, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 10}, languages={the languages it knew in life}, challenge={3:3}]
+\DndMonsterAction{Rebirth} 1d4 days after being destroyed, the mummy returns to life in its warded area. Mummies can only be completely destroyed by one of the following:
+\begin{itemize}
+	\item Casting \smartnameref{spell:remove-curse}{\textit{remove curse}} on them while they are at 0 hit points.
+	\item Finding and destroying the phylactery that binds them to life (usually in the form of a small gem) and reducing the mummy to 0 hit points.
+	\item Destroying the undead on hallowed ground.
+\end{itemize}
+\DndMonsterAction{Vengeful Undead} If the mummy is guarding a location, stealing from the location or damaging it causes it to chase the thief/vandal. It can track the offender while it is on the same plane of existence and continues to do so until destroyed.
 \DndMonsterSection{Actions}
 \DndMonsterAction{Multiattack} The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
 \DndMonsterAttack[
@@ -85,14 +101,10 @@
 ]
 \DndMonsterAction{Dreadful Glare}
 The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
-
 \end{DndMonster}
 
-
-
-\clearpage
 \begin{DndMonster}{Shadow}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, single-minded, fearless}
 	\DndMonsterBasics[armor-class={12}, hit-points={16 (3d8 + 3)}, speed={40 ft.}]
 	\MonsterStats{-2}{+2}{+1}{-2}{+0}{-1}
 	\DndMonsterDetails[saving-throws={}, skills={Stealth +4 (+6 in dim light or darkness)}, damage-immunities={necrotic, poison}, damage-resistances={acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing}, damage-vulnerabilities={radiant}, condition-immunities={exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={1/2:1/2}]
@@ -116,7 +128,7 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 \end{DndMonster}
 
 \begin{DndMonster}{Skeleton}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, fearless}
 	\DndMonsterBasics[armor-class={13 (armor scraps)}, hit-points={13 (2d8 + 4)}, speed={30 ft.}]
 	\MonsterStats{+0}{+2}{+2}{-2}{-1}{-3}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={bludgeoning}, condition-immunities={exhaustion, poisoned}, senses={darkvision 60 ft., passive Perception 9}, languages={understands all languages it knew in life but can't speak}, challenge={1/4:1/8}]
@@ -143,7 +155,7 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 
 \begin{DndMonster}{Specter}
 \begin{multicols}{2}
-\DndMonsterType{Medium undead}
+\DndMonsterType{Medium undead, single-minded, fearless}
 \DndMonsterBasics[armor-class={12}, hit-points={22 (5d8)}, speed={0 ft., fly 50 ft. (hover)}]
 \MonsterStats{-5}{+2}{+0}{+0}{+0}{+0}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={necrotic, poison}, damage-resistances={acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious}, senses={darkvision 60 ft., passive Perception 10}, languages={understands all languages it knew in life but can't speak}, challenge={1:1}]
@@ -160,14 +172,21 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 	reach=5,
 	dmg=\DndDice{3d6},
 	dmg-type=necrotic,
-	extra={. The target must succeed on a DC 12 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. When the target finishes a long rest, they can expend hit dice--the hit point maximum reduction is reduced by the amount rolled. The target dies if this effect reduces its hit point maximum to 0.}
+	extra={. The target must succeed on a DC 12 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. When the target finishes a long rest, they can expend hit dice---the hit point maximum reduction is reduced by the amount rolled. The target dies if this effect reduces its hit point maximum to 0.}
 ]
 \end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}[float*=hb, width=\textwidth + 8pt]{Vampire}
+
+As greater undead, vampires were infected by jotnar while still alive and, through ritual and blood have reached a balance with the anti-life spirit. As they age, they gain more power...and their hunger deepens and their humanity recedes under the endless thirst. All vampires need death to maintain themselves---if deprived of life's blood for more than 1 month, they fall unconscious and remain in a torpor until revived by blood. More powerful vampires may become fully demonic when they die.
+
+Vampires slowly lose the ability to feel emotions other than the strongest---one of their biggest threats is simple boredom causing them to do stupid things for a thrill. They often delight in perversions, including tortures, sadistic sexual games, and simply toying with "cattle". 
+
+Contrary to myth, vampires don't create other vampires simply by feeding. They may create thralls or spawn, but those will never become free-willed. Instead, vampires can only be created via a ritual, one that usually involves torturing the victim until they "willingly" accept the jotnar.
+\end{multicols}
+\begin{DndMonster}[width=\textwidth + 8pt]{Vampire}
 \begin{multicols}{2}
-\DndMonsterType{Medium undead (shapechanger)}
+\DndMonsterType{Medium undead (shapechanger), individualistic}
 \DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={170 (20d8 + 80)}, speed={30 ft.}]
 \MonsterStats{+4}{+4 (+9)}{+4}{+3}{+2 (+7)}{+4 (+9)}
 \DndMonsterDetails[saving-throws={}, skills={Perception +7, Stealth +9}, damage-immunities={}, damage-resistances={necrotic}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 17}, languages={the languages it knew in life}, challenge={9:11}]
@@ -187,7 +206,7 @@ While it has 0 hit points in mist form, it can't revert to its vampire form, and
 
 \DndMonsterAction{Spider Climb} The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-\DndMonsterAction{Vampire Weaknesses} The vampire has the following flaws:
+\DndMonsterAction{Vampire Weaknesses} The vampire has one of the following flaws (chosen by the GM):
 
 \textit{Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.
 \textit{Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.
@@ -236,9 +255,9 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 \end{multicols}
 \end{DndMonster}
 
-\begin{DndMonster}[float*=hb, width=\textwidth + 8pt]{Vampire Spawn}
+\begin{DndMonster}[width=\textwidth + 8pt]{Vampire Spawn}
 \begin{multicols}{2}
-\DndMonsterType{Medium undead}
+\DndMonsterType{Medium undead, fearless, individualistic}
 \DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={97 (13d8 + 39)}, speed={30 ft.}]
 \MonsterStats{+3}{+3 (+6)}{+3}{+0}{+0 (+3)}{+1}
 \DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +6}, damage-immunities={}, damage-resistances={necrotic}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 13}, languages={the languages it knew in life}, challenge={4:6}]
@@ -280,9 +299,10 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 ]
 \end{multicols}
 \end{DndMonster}
-
+\begin{multicols}{2}
+Wights are the greatest of the lesser undead, retaining a cold simulacrum of their former selves. Unlike ghouls, they can act rationally and sometimes even pretend to be living. Like all undead, however, the jotnar animating them makes them hunger for the destruction of all living things.
 \begin{DndMonster}{Wight}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, individualistic}
 	\DndMonsterBasics[armor-class={14 (reinforced leather)}, hit-points={60 (8d8 + 24)}, speed={30 ft.}]
 	\MonsterStats{+2}{+2}{+3}{+0}{+1}{+2}
 	\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={poison}, damage-resistances={necrotic}, damage-vulnerabilities={}, condition-immunities={exhaustion, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={the languages it knew in life}, challenge={3:3}]
@@ -319,9 +339,10 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 		dmg-type=piercing
 	]
 \end{DndMonster}
-	
+
+As a spectral undead, the will-o'-wisp dances between the Mortal and Shadow planes. Unlike most undead, they are generally not formed from corpses directly---instead they are one of the ways that jotnar manifest when they leak through on their own. Most often found in swampy areas that have seen undead infestations, demonic battles, or simply mass casualties.
 \begin{DndMonster}{Will-o'-Wisp}
-	\DndMonsterType{Tiny undead}
+	\DndMonsterType{Tiny undead, individualistic, fearless}
 	\DndMonsterBasics[armor-class={14}, hit-points={22 (9d4)}, speed={0 ft., fly 50 ft. (hover)}]
 	\MonsterStats{-5}{+4}{+0}{+1}{+2}{+0}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, poison}, damage-resistances={acid, cold, fire, necrotic, thunder; bludgeoning, piercing, and slashing}, damage-vulnerabilities={}, condition-immunities={exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious}, senses={darkvision 120 ft., passive Perception 12}, languages={the languages it knew in life}, challenge={1:2}]
@@ -349,7 +370,7 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 \end{DndMonster}
 
 \begin{DndMonster}{Wraith}
-	\DndMonsterType{Medium undead}
+	\DndMonsterType{Medium undead, individualistic, fearless}
 	\DndMonsterBasics[armor-class={13}, hit-points={67 (9d8 + 27)}, speed={0 ft., fly 60 ft. (hover)}]
 	\MonsterStats{-2}{+3}{+3}{+1}{+2}{+2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={necrotic, poison}, damage-resistances={acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing}, damage-vulnerabilities={}, condition-immunities={charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained}, senses={darkvision 60 ft., passive Perception 12}, languages={the languages it knew in life}, challenge={3:5}]
@@ -372,8 +393,9 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 	The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
 \end{DndMonster}
 
+Zombies are the result of jotnar possessing decaying corpses without even a trace of the former occupant. Of all the undead, they are the least intelligent. They ignore all orders that don't involve attacking living things and are incapable of meaningfully wielding weapons or armor.
 \begin{DndMonster}{Zombie}
-\DndMonsterType{Medium undead}
+\DndMonsterType{Medium undead, single-minded, fearless}
 \DndMonsterBasics[armor-class={8}, hit-points={22 (3d8 + 9)}, speed={20 ft.}]
 \MonsterStats{+1}{-2}{+3}{-4}{-2}{-3}
 \DndMonsterDetails[saving-throws={Wis +0}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 8}, languages={understands the languages it knew in life but can't speak}, challenge={1/4:1/4}]
@@ -409,3 +431,4 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 	dmg-type=bludgeoning
 ]
 \end{DndMonster}
+\end{multicols}

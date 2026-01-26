@@ -1,6 +1,7 @@
 \clearpage
 \section{Dragons}
 \begin{multicols}{2}
+	\raggedcolumns
 All dragons trace their descent from the wyrms of old, primal forces of destruction whose speech unmade matter, returning it to pure elemental force. True dragons retain the largest portion of that essence and are tied to elements; false dragons were either bred from wyrm essence or are the non-sapient descendents of corrupted dragons.
 
 \subsection{Dragon, True}
@@ -10,19 +11,19 @@ All true dragons are born as chromatic, rainbow colored hatchlings. Before they 
 Dragons are intensely magical creatures---their very bones and body is steeped in elemental energy. As such, a true dragon's corpse is quite valuable to alchemists and crafters and mages of all kinds; the eggs of true dragons (which can last centuries in a "fossilized" state before hatching when exposed to the correct energies) have been used as arcane power sources. Both of these uses cause extremely negative from any true dragons who discover them.
 
 Some dragons seek out and learn mortal magic---this effort leaves them visually changed for reasons that are not clear. Their scales become metallic. Generally, metallic dragons are more tolerant of humanoid mortals than their chromatic (non-metallic) kin; their hoards tend to reflect their mortal-focused nature. This does not make them less dangerous. For many metallics, manipulating mortals is a form of a game and they have little concern for the wellbeing of their play pieces except as sources of their hoard.
-
-\begin{DndTable}[header=Color Table]{XllX}
+\end{multicols}
+\begin{DndTable}[header=Color Table]{llll}
 	\textbf{Color} & \textbf{Damage Type} & \textbf{Saving throw} & \textbf{Special Feature} \\	
 	Black &  Necrotic & Constitution & Spellcasting, Shapechange \\
 	Blue & Lightning & DEX & Shapechange\\
 	Brass & Thunder & CON & Spellcasting or Shapechange\\
-	Bronze or Red& Fire & DEX & Spellcasting (Bronze) or shapechange (either) \\
+	Bronze/Red& Fire & DEX & Spellcasting (Bronze) or shapechange (either) \\
 	Copper & Acid & CON & Spellcasting or Shapechange\\
 	Green & Acid & DEX & Shapechange OR Amphibious\\
 	Gold & Radiant & DEX & Spellcasting, Shapechange\\
-	Silver or White & Cold & CON Spellcasting (Silver) or Ice walk (either) or Shapechange (either)\\
+	Silver/White & Cold & CON & Spellcasting (Silver) OR Ice walk (either) OR Shapechange (either)\\
 \end{DndTable}
-\end{multicols}
+
 \begin{DndMonster}[width=\textwidth + 8pt]{Dragon, Wyrmling}
 	\begin{multicols}{2}
 \DndMonsterType{Medium dragon, individualistic}
@@ -58,7 +59,7 @@ Some dragons seek out and learn mortal magic---this effort leaves them visually 
 
 \DndMonsterAction{Breath Weapon (recharge 5-6)}
 The dragon exhales energy in a burst (see Blast Shape). Each creature in that area must make a DC 12 saving throw (DEX or CON based on color), taking 22 (6d6) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.
-\subsection{Scaling}
+\DndMonsterSection{Scaling}
 To make a 4:3 version, add 2 hit dice (15 HP), increase the ability scores to +4/+1/+3/+1/+0/+2, which increases the bite's modifier to +6 and the damage to 1d10 + 4 + 1d4. Increase the breath weapon to 25 (7d6) damage.
 \end{multicols}
 \end{DndMonster}
@@ -114,7 +115,7 @@ To make a 4:3 version, add 2 hit dice (15 HP), increase the ability scores to +4
 ]
 \DndMonsterAction{Breath Weapon (recharge 5-6)}
 The dragon exhales energy in a burst (see Blast Shape). Each creature in that area must make a DC 15 saving throw (DEX or CON based on color), taking 45 (10d8) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.
-\subsection{Scaling}
+\DndMonsterSection{Scaling}
 To increase the dragon's ratings to 10:10, increase its hit points by 15 (no extra hit dice but +1 CON), increase its STR, CON, and CHA by 1 each (+6/+2/+4/+1/+2/+4, increasing its attack modifier by 1 and physical damage modifiers by +1), its breath weapon by 9 (+2d8), and its save DC (spellcasting and breath weapon) by 1 (to 16).
 \end{multicols}
 \end{DndMonster}
@@ -271,16 +272,18 @@ An ancient dragon can take 3 legendary actions, choosing from the options below.
 \end{DndMonster}
 
 \clearpage
-\subsection{Dragons, False}
 \begin{multicols}{2}
+	\raggedcolumns
+\subsection*{Dragons, False}
+
 False dragons are those who do not bond with elemental sources and thus don't have the chromatic (or metallic) nature. Generally, they have a feral intelligence but lack languages. Their origin is uncertain, although many believe that they are actually dragon-touched beasts---beasts infused with draconic essence, rather than degenerate dragons.
-\subsection{Drakes}
+\subparagraph*{Drakes}
 Drakes are smaller than true dragons and, while they may have some elemental attunement, lack the intelligence of a true dragon. Some societies use them as guardian beasts but many drakes simply live in flocks and packs at the fringes of society and in the wilderness. Drakes are, like true dragons, four-legged with leathery wings.
 
 Guard drakes are a subspecies that have been altered to only have vestigial wings. Like large, pseudo-reptilian (but warm blooded) guard dogs, guard drakes are fiercely loyal to their bonded handlers. Unlike guard dogs, they roar instead of bark. They lack the breath weapon of their true dragon kin, which makes them slightly less dangerous to their surroundings.
 \begin{DndMonster}{Guard Drake}
 	\DndMonsterType{Medium dragon, guardian, domestic, pack mentality}
-	\DndMonsterBasics{armor-class={14 (natural armor)}, hit-points={45 (6d8 + 18)}, speed={40 ft.}}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={45 (6d8 + 18)}, speed={40 ft.}]
 	\MonsterStats{+3}{0}{+3}{-3}{+2}{0}
 	\DndMonsterDetails[
 		saving-throws={Dex +2}, 
@@ -322,8 +325,8 @@ Guard drakes are a subspecies that have been altered to only have vestigial wing
 Draconewts are small winged drakes with a poisonous tail. More intelligent than their guard drake cousins, some are capable of telepathy. Living in flocks of 3-10 individuals, they are fiercely territorial and often adopt a person or family of humanoids as "theirs". For better or worse.
 
 \begin{DndMonster}{Draconewts}
-	\DndMonsterType(Small dragon, craven, pack mentality)
-	\DndMonsterBasics{armor-class={14 (natural armor)}, hit-points={15 (4d4 + 4)}, speed={20 ft., fly 40 ft.}}
+	\DndMonsterType{Small dragon, craven, pack mentality}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={15 (4d4 + 4)}, speed={20 ft., fly 40 ft.}]
 	\MonsterStats{-2}{+3}{+1}{-2}{+2}{+2}
 	\DndMonsterDetails[
 		saving-throws={}, 
@@ -363,7 +366,7 @@ Draconewts are small winged drakes with a poisonous tail. More intelligent than 
 	]
 \end{DndMonster}
 
-\subsection{Wyvern}
+\subparagraph*{Wyvern}
 Two-legged, with clawed membranous wings and poison tails, wyverns are probably the most familiar of the false dragons. Roosting in steep bleak hills, they prey on large beasts, especially favoring the relatively defenseless herds of cattle.
 \begin{DndMonster}{Wyvern}
 \DndMonsterType{Large dragon, individualistic, craven}
@@ -402,7 +405,7 @@ Two-legged, with clawed membranous wings and poison tails, wyverns are probably 
 ]
 \end{DndMonster}
 
-\subsection{Dragon Turtle}
+\subparagraph*{Dragon Turtle}
 The dragon turtle is the largest variety of dragon, true or otherwise. Some of the older ones are mistaken for islands. Unlike wyverns, they are intelligent and partake of the nature and mind of Leviathan. They are rarely hostile unless disturbed, although once their fury is roused it is extremely hard to quench. They are known for holding grudges for hundreds of years. Sailors, as a result, treat them very gingerly and reverently.
 
 \begin{DndMonster}{Dragon Turtle}

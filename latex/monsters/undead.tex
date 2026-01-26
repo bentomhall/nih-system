@@ -41,6 +41,7 @@ Some undead, such as ghosts, are closer to echoes of souls caught up in strong m
 \end{DndMonster}
 \begin{multicols}{2}
 	\raggedcolumns
+	\subparagraph*{Ghouls and ghasts}
 Ghouls are one of the outcomes when jotnar infest people on the verge of death, consuming their souls while they still live. These creatures retain a semblance of the former person's personality, dominated by an unnatural hunger for flesh.
 \begin{DndMonster}{Ghoul}
 	\DndMonsterType{Medium undead, individualistic, fearless}
@@ -74,6 +75,7 @@ Ghouls are one of the outcomes when jotnar infest people on the verge of death, 
 	\DndMonsterAction{Ghast} Add 14 HP and increase damage dice to 2d8 + 2 and 2d6 + 2. Increase save DC to 11. Ratings go up by 1 step each.
 \end{DndMonster}
 
+\subparagraph*{Mummies}
 The mummy is a rare undead intentionally created to serve as an eternal guardian for a tomb. Unlike ghouls or other lesser undead, they can generally be reasoned with and won't attack unless their charge is threatened.
 \begin{DndMonster}{Mummy}
 \DndMonsterType{Medium undead, guardian, honorable, fearless}
@@ -127,6 +129,8 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 	]
 \end{DndMonster}
 
+\subparagraph*{Skeletons} Animated out of bones, usually from the corpses of those that fell in battle or who were stronger of soul, skeletons are more tied to the creature-that-was than are zombies, retaining some semblance of mannerisms. Regardless, they are undead and desire nothing except to kill, at least when created by jotnar. The magic that animates them also creates a memory of weapons. Skeletons are found wielding the weapons they bore in life, and they are not capable of wearing other armor or wielding other weapons. They can be commanded by dark magic to guard an area, including discerning friend from foe, however they will take every possible opportunity to bend their orders to cause havoc---successful necromancers learn early to keep them under very tight constraints. Those that don't generally are killed by their own creations.
+
 \begin{DndMonster}{Skeleton}
 	\DndMonsterType{Medium undead, fearless}
 	\DndMonsterBasics[armor-class={13 (armor scraps)}, hit-points={13 (2d8 + 4)}, speed={30 ft.}]
@@ -175,7 +179,7 @@ The mummy targets one creature it can see within 60 feet of it. If the target ca
 ]
 \end{DndMonster}
 
-
+\subparagraph*{Vampires and Vampire Spawn}
 As greater undead, vampires were infected by jotnar while still alive and, through ritual and blood have reached a balance with the anti-life spirit. As they age, they gain more power...and their hunger deepens and their humanity recedes under the endless thirst. All vampires need death to maintain themselves---if deprived of life's blood for more than 1 month, they fall unconscious and remain in a torpor until revived by blood. More powerful vampires may become fully demonic when they die.
 
 Vampires slowly lose the ability to feel emotions other than the strongest---one of their biggest threats is simple boredom causing them to do stupid things for a thrill. They often delight in perversions, including tortures, sadistic sexual games, and simply toying with "cattle". 
@@ -299,6 +303,7 @@ The Vampire can take 3 legendary actions, choosing from the options below. Only 
 \end{DndMonster}
 \begin{multicols}{2}
 	\raggedcolumns
+	\subparagraph*{Wights}
 Wights are the greatest of the lesser undead, retaining a cold simulacrum of their former selves. Unlike ghouls, they can act rationally and sometimes even pretend to be living. Like all undead, however, the jotnar animating them makes them hunger for the destruction of all living things.
 \begin{DndMonster}{Wight}
 	\DndMonsterType{Medium undead, individualistic}
@@ -339,6 +344,7 @@ Wights are the greatest of the lesser undead, retaining a cold simulacrum of the
 	]
 \end{DndMonster}
 
+\subparagraph*{Will-o'-Wisp}
 As a spectral undead, the will-o'-wisp dances between the Mortal and Shadow planes. Unlike most undead, they are generally not formed from corpses directly---instead they are one of the ways that jotnar manifest when they leak through on their own. Most often found in swampy areas that have seen undead infestations, demonic battles, or simply mass casualties.
 \begin{DndMonster}{Will-o'-Wisp}
 	\DndMonsterType{Tiny undead, individualistic, fearless}
@@ -392,7 +398,28 @@ As a spectral undead, the will-o'-wisp dances between the Mortal and Shadow plan
 	The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
 \end{DndMonster}
 
+\subparagraph*{Zombies}
 Zombies are the result of jotnar possessing decaying corpses without even a trace of the former occupant. Of all the undead, they are the least intelligent. They ignore all orders that don't involve attacking living things and are incapable of meaningfully wielding weapons or armor.
+
+\begin{DndMonster}{Ogre Zombie}
+\DndMonsterType{Large undead}
+\DndMonsterBasics[armor-class={8}, hit-points={85 (9d10 + 36)}, speed={30 ft.}]
+\MonsterStats{+4}{-2}{+4}{-4}{-2}{-3}
+\DndMonsterDetails[saving-throws={Wis +0}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 8}, languages={understands Common and Giant but can't speak}, challenge={2:2}]
+\DndMonsterAction{Undead Fortitude} If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Slam,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	reach=5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=bludgeoning
+]
+\end{DndMonster}
+
 \begin{DndMonster}{Zombie}
 \DndMonsterType{Medium undead, single-minded, fearless}
 \DndMonsterBasics[armor-class={8}, hit-points={22 (3d8 + 9)}, speed={20 ft.}]
@@ -412,22 +439,5 @@ Zombies are the result of jotnar possessing decaying corpses without even a trac
 ]
 \end{DndMonster}
 
-\begin{DndMonster}{Ogre Zombie}
-\DndMonsterType{Large undead}
-\DndMonsterBasics[armor-class={8}, hit-points={85 (9d10 + 36)}, speed={30 ft.}]
-\MonsterStats{+4}{-2}{+4}{-4}{-2}{-3}
-\DndMonsterDetails[saving-throws={Wis +0}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={darkvision 60 ft., passive Perception 8}, languages={understands Common and Giant but can't speak}, challenge={2:2}]
-\DndMonsterAction{Undead Fortitude} If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
 
-\DndMonsterSection{Actions}
-\DndMonsterAttack[
-	name=Morningstar,
-	distance=melee,
-	type=weapon,
-	mod=+4,
-	reach=5,
-	dmg=\DndDice{2d8 + 4},
-	dmg-type=bludgeoning
-]
-\end{DndMonster}
 \end{multicols}

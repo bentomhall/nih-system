@@ -127,6 +127,38 @@ Some fey are obsessed with various emotions or states of being, to the point of 
 	\DndMonsterAction{Aura of Drunkenness} The satyr's nature overflows. All creatures within 30 feet must make a DC 12 Constitution saving throw. On a failed save they are \nameref{condition:poisoned} for one minute. Creatures that end their turn more than 30 feet from the satyr can reattempt the saving throw at the end of each of their turns, ending the effect on a success.
 \end{DndMonster}
 
+\subsection{Fey Animals}
+Some animals are exemplars of their type, with mystical properties as a result.
+
+\begin{DndMonster}{Giant Elk}
+\DndMonsterType{Huge fey, herd mentality, guardian}
+\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={56 (6d12 + 13)}, speed={60 ft.}]
+\MonsterStats{+4}{+3}{+3}{-2}{+2}{+0}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={Sylvan}, challenge={3:3}]
+\DndMonsterAction{Charge} If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
+\DndMonsterAction{Fey Guardian} The elk's weapon attacks count as being silvered.
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=10,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=bludgeoning,
+	extra={. If the target is a demon or undead, it must make a DC 14 Constitution saving throw. On a failed save it takes maximum damage (17 on a hit, 30 on a crit) and is stunned for one minute. On a success, it takes normal damage and is not stunned. Stunned creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.}
+]
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+6,
+	reach=5,
+	dmg=\DndDice{4d8 + 4},
+	dmg-type=bludgeoning,
+	extra={. If the target is a demon or undead, it must make a DC 14 Constitution saving throw. On a failed save it takes maximum damage (22 on a hit, 40 on a crit) and is stunned for one minute. On a success, it takes normal damage and is not stunned. Stunned creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.}
+]
+\end{DndMonster}
 
 \subsection{Hags}
 Hags once were regular mortals. But they became obsessed, consumed by an emotion. Even if it didn't start out as a dark, violent emotion (such as hatred or envy), it usually warps into one soon enough. At some point, the Mother Tree, an eldritch, malevolent entity in the form of a colossal tree makes contact in their dreams and promises them eternal life and power to pursue their obsession...in exchange for their heart. The Tree plants its seed inside of them, and they become a hag. To stay alive, they have to continuously pursue their obsession, wallowing in that emotion at whatever cost. It's rumored that if a hag reaches the pinnacle of its emotion and fulfills its obsession, the seed takes root and begins to grow into a Daughter Tree, a vile replica of a twisted mother.

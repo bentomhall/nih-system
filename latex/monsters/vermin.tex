@@ -1,4 +1,9 @@
-\begin{DndMonster}{Badger}
+\clearpage
+\begin{multicols}{2}
+\section{Appendix: Vermin}\label{section:vermin}
+Presented here is an alphabetical list of vermin---these are creatures who may appear but rarely, if ever, pose a combat challenge even in groups. They may be useful for familiars and pets, however.
+
+\begin{DndMonster}{Badger}\label{monster:badger}
 \DndMonsterType{Tiny beast}
 \DndMonsterBasics[armor-class={10}, hit-points={3 (1d4 + 1)}, speed={20 ft., burrow 5 ft.}]
 \MonsterStats{-3}{+0}{+1}{-4}{+1}{-3}
@@ -159,6 +164,25 @@
 ]
 \end{DndMonster}
 
+\begin{DndMonster}{Hyena}
+\DndMonsterType{Medium beast, pack mentality, craven}
+\DndMonsterBasics[armor-class={11}, hit-points={5 (1d8 + 1)}, speed={50 ft.}]
+\MonsterStats{+0}{+1}{+1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Pack Tactics} The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=piercing
+]
+\end{DndMonster}
+
 \begin{DndMonster}{Lizard}
 \DndMonsterType{Diminutive beast}
 \DndMonsterBasics[armor-class={10}, hit-points={2 (1d4)}, speed={20 ft., climb 20 ft.}]
@@ -172,6 +196,27 @@
 	mod=+2,
 	dmg=1,
 	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Mule}
+\DndMonsterType{Medium beast, domestic}
+\DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
+\MonsterStats{+1}{+0}{+1}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Beast of Burden} The mule is considered to be a Large animal for the purpose of determining its carrying capacity.
+
+\DndMonsterAction{Sure-Footed} The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d4 + 1},
+	dmg-type=bludgeoning
 ]
 \end{DndMonster}
 
@@ -324,6 +369,27 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 ]
 \end{DndMonster}
 
+\begin{DndMonster}{Vulture}
+\DndMonsterType{Medium beast, individualistic}
+\DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={10 ft., fly 50 ft.}]
+\MonsterStats{-2}{+0}{+1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Keen Sight and Smell} The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.
+
+\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=piercing
+]
+\end{DndMonster}
+
 \begin{DndMonster}{Weasel}
 \DndMonsterType{Diminutive beast}
 \DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={30 ft.}]
@@ -341,3 +407,4 @@ A 5-foot-radius cloud of ink extends all around the octopus if it is underwater.
 	dmg-type=piercing
 ]
 \end{DndMonster}
+\end{multicols}

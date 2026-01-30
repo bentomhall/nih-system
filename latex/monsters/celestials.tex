@@ -37,32 +37,34 @@ Astral Eyes are "floating winged eyeballs", autonomous scouts and communicators.
 \end{DndMonster}
 
 \subparagraph*{Archons}
-Archons are the special forces units of the angelic legions. They are especially called on to act independently or in small groups, sometimes commanding a small number of valorites and seraphs. Blade archons summon and control blades of force and steel, including telekinetically attacking with longswords that hover nearby. They can force their opponents to consider their sins, weakening them. 
+Archons are the special forces units of the angelic legions. They are especially called on to act independently or in small groups, sometimes alongside a small number of valorites and seraphs. 
+
+Blade archons are the least of the archons and often act as replacements for valorites in small-squad engagements. They summon and control blades of force and steel, including telekinetically attacking with longswords that hover nearby. They can force their opponents to consider their sins, weakening them.
 
 \begin{DndMonster}{Blade Archon}
 	\DndMonsterType{Medium celestial, honorable, group mentality}
-	\DndMonsterBasics[armor-class={15 (lamellar)}, hit-points={60}, speed={30 ft., fly 50 ft. (hover)}]
+	\DndMonsterBasics[armor-class={16 (chain)}, hit-points={91 (14d8 + 28)}, speed={30 ft., fly 50 ft. (hover)}]
 	\MonsterStats{+4}{+2}{+2}{+0}{+3}{+2}
-	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, condition-immunities={broken, charmed, frightened}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={3:3}]
+	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, condition-immunities={broken, charmed, frightened}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={6:6}]
 
 	\DndMonsterAction{Astral Edge} The blade archon's weapon attacks deal an additional 1d6 radiant damage (included in the attacks). This is an inherent property of the archon, not a property of the weapon.
 	
 	\DndMonsterAction{Dancing Blades} The blade archon is accompanied by two floating longswords that it uses to make attacks either in melee or at range, giving it much larger reach than normal.
 	
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The Archon attacks twice with its longswords. It can use Confeitor in place of either of those attacks if available.
+	\DndMonsterAction{Multiattack} The Archon attacks three times with its longswords. It can use Confeitor in place of one of those attacks if available.
 	\DndMonsterAttack[
 		name=Floating Longsword,
 		distance=both,
 		type=weapon,
-		mod=+6,
+		mod=+7,
 		reach=20 ft.,
 		dmg=\DndDice{1d10+4},
 		dmg-type=slashing,
-		plus-dmg=\DndDice{1d6},
+		plus-dmg=\DndDice{1d8},
 		plus-dmg-type=radiant
 	]
-	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 13 Wisdom saving throw, taking 4d6 psychic damage on a failure or half as much on a success. Creatures that fail are \nameref{condition:shaken} by memories of their sins and regrets until the end of their next turn.
+	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 14 Wisdom saving throw, taking 6d6 psychic damage on a failure or half as much on a success. Creatures that fail are \nameref{condition:shaken} by memories of their sins and regrets until the end of their next turn.
 \end{DndMonster}
 
 \subparagraph*{Seraph}

@@ -5,6 +5,28 @@
 	\raggedcolumns
 Elementals are born from the essence and Names of the elemental planes. Some are mortals who gave up their mortality (and ability to grow) in exchange for being tied to the nature of the plane (the genie); others are pure embodiments of the Word at the heart of each plane. Yet others are half-way creatures, mortals who have been shaped and bound by the Name of the elemental plane yet retain mortality. These latter are often called 'element-bound.' Most true elementals (such as the ones named like Air/Earth/Fire/Water Elemental) are barely sapient and have little free will---they are not much more than elemental beasts. Those born from mortals are much more "intelligent" and free-willed.
 
+\begin{DndMonster}{Dwarf, Lava-bound }
+	\DndMonsterType{Medium elemental (dwarf), honorable}
+	\DndMonsterBasics[armor-class={16 (natural armor, shield)}, hit-points={39 (6d8 + 12)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+2 (+4)}{+1}{+1}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={passive Perception 11}, languages={Ignan}, challenge={2:1}]
+	\DndMonsterAction{Heated Body} A creature that touches the lava-bound or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.
+	
+	\DndMonsterAction{Heated weapons} When the lava-bound hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).
+	
+	\DndMonsterAction{Illumination} The lava-bound sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterMelee[
+			name=Warhammer,
+			mod=+5,
+			dmg=\DndDice{1d8+3},
+			dmg-type=bludgeoning,
+			plus-dmg=\DndDice{1d6},
+			plus-dmg-type=fire
+	]
+\end{DndMonster}
+
 \begin{DndMonster}{Gargoyle}
 	\DndMonsterType{Medium elemental, fearless}
 	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={52 (7d8 + 21)}, speed={30 ft., fly 60 ft.}]
@@ -53,28 +75,6 @@ Elementals are born from the essence and Names of the elemental planes. Some are
 		reach=5,
 		dmg=\DndDice{2d6 + 3},
 		dmg-type=bludgeoning
-	]
-\end{DndMonster}
-
-\begin{DndMonster}{Lava-bound Dwarf}
-	\DndMonsterType{Medium elemental (dwarf), honorable}
-	\DndMonsterBasics[armor-class={16 (natural armor, shield)}, hit-points={39 (6d8 + 12)}, speed={30 ft.}]
-	\MonsterStats{+3}{+1}{+2 (+4)}{+1}{+1}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={fire, poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={poisoned}, senses={passive Perception 11}, languages={Ignan}, challenge={2:1}]
-	\DndMonsterAction{Heated Body} A creature that touches the lava-bound or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.
-	
-	\DndMonsterAction{Heated weapons} When the lava-bound hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).
-	
-	\DndMonsterAction{Illumination} The lava-bound sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterMelee[
-			name=Warhammer,
-			mod=+5,
-			dmg=\DndDice{1d8+3},
-			dmg-type=bludgeoning,
-			plus-dmg=\DndDice{1d6},
-			plus-dmg-type=fire
 	]
 \end{DndMonster}
 

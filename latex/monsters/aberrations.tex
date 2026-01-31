@@ -1,14 +1,17 @@
 \clearpage
+\begin{multicols}{2}
+	\raggedcolumns
 \section{Aberrations}\label{sec:aberrations}
 Aberrations are all creatures that, by the normal laws of things, should not exist. Often one-offs (but not always), they sit outside the natural order. While they may eat, they often do not need to do so to survive. They do not generally have normal reproductive cycles and live until they are killed. Most often, aberrations are created by influence from the Dark Beyond, although the demon prince known as the Twisted has created his fair share of such creatures.
 
 \subsection{Flesh Amalgams}
 One "common" (as far as already rare aberrant beings go) result of influence from the Dark Beyond is the flesh amalgam. A hideous combination of features based on living beings, twisted into an insane mockery of reality. Each type is fairly unique, but they all share their unsettling effect on reality around them. Flesh amalgams are almost uniformly mindlessly hostile to all life around it, seeking to absorb it into themselves to grow stronger.
 
+\subparagraph*{Gibbering Mouther}
 The gibbering mouther is one of the more common variants of flesh amalgams. A blob of doughy flesh studded with mouths that continuously moan, wail, and chant nonsense, its presence also warps the ground around it. There are rumored to be larger versions, those that have absorbed many lives, with stranger abilities.
 
 \begin{DndMonster}{Gibbering Mouther}
-	\DndMonsterType{Medium aberration}
+	\DndMonsterType{Medium aberration, single-minded}
 	\DndMonsterBasics[armor-class={9}, hit-points={67 (9d8 + 27)}, speed={10 ft., swim 10 ft.}]
 	\MonsterStats{+0}{-1}{+3}{-4}{+0}{-2}
 	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={prone}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={2:2}]
@@ -37,15 +40,130 @@ The gibbering mouther is one of the more common variants of flesh amalgams. A bl
 	\DndMonsterAction{Gibbering} The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature is staggered until the beginning of its next turn. If the save result is 5 or less, it uses its action cackling madly and cannot speak.
 \end{DndMonster}
 
-\FloatBarrier
-\subsection{Twisted Comiedar}
-The comiedai (singular comiedar, pronounced 'COH-mee-eh-dar', meaning 'memory keepers') are sea creatures with mental powers that exceed those of humans. They were originally created by Leviathan to act as mobile memory stores for information brought back by the mkhulu from explorations on land. But the Twisted (who was instrumental in encouraging their creation) had other plans. He altered most of them to desire domination for the purpose of "improving" the land-based mortals. Ever since, most comiedai have sought to make deals with land-dwellers in distress, promising them power (or usually vengeance) in exchange for service. They give power by converting them into mkhulu. By and large, they uphold their deals, but always in a way that creates expanding nests of mkhulu and their thralls. This they do to "order" the chaotic lives of mortals, breaking them into shape according to the philosophies of the particular comiedar. They prefer to remain aloof, manipulating the land folk and implanting mkhulu larvae into their skulls. Twisted comiedai do not generally socialize with each other--each one considers itself the rightful master of all it perceives.
+\subparagraph*{Voracious Maw}
+The voracious maw is a less-common flesh amalgam. Unlike the gibbering mouther, the maw is nearly silent except when it feeds, lean and hungry, all limbs and mouths. It ambushes its victims, dropping from cave ceilings and other hidden places and wrapping its many limbs around a creature, letting the mouths at the end of each of its tentacle-like arms rip out and devour chunks of the creature's living flesh. Thankfully, they are allergic to luminous radiation, such as direct sunlight or radiant damage, which causes them to slacken their grip.
+
+\begin{DndMonster}{Voracious Maw}
+	\DndMonsterType{Medium aberration, single-minded}
+	\DndMonsterBasics[armor-class={15 (natural armor)}, hit-points={67 (9d8 + 27)}, speed={40 ft., climb 40 ft.}]
+	\MonsterStats{+4}{+3}{+3}{-3}{+2}{-2}
+	\DndMonsterDetails[saving-throws={}, skills={stealth +7}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={prone}, senses={darkvision 60 ft., passive Perception 10}, languages={—}, challenge={2:3}]
+
+	\DndMonsterAction{Innate Camouflage}
+	A voracious maw is invisible until it moves or takes an action. It has advantage on Dexterity (Stealth) checks while invisible.
+
+	\DndMonsterAction{Deathgrip}
+	The voracious maw clings to its victims until either it dies or its victim does. It does not need to be conscious to grapple a creature, and only teleportation, being reduced to zero hit points, or an ability check prompted by its Radiant Vulnerability can remove the victim from its grasp.
+
+	\DndMonsterAction{Radiant Vulnerability}
+	The voracious maw is allergic to sunlight and radiant damage. When it starts its turn in direct sunlight, it takes 10 radiant damage. Additionally, if its grappling a creature when it takes radiant damage, the grappled creature can immediately use its reaction to make a DC 13 Dexterity (Acrobatics) or Strength (Athletics) (creature's choice) check. On a success, the creature is no longer grappled or restrained by the maw.
+		
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Myriad Maws} Melee weapon attack. +5 to hit. 1 creature grappled by the maw. \textit{Hit:} 4d6+3 piercing damage. If the target is bloodied, this is an automatic critical hit. If the target is killed by this damage, it is torn into pieces and cannot be raised by \smartnameref{spell:revivify}{the revivify spell}. 
+
+	\DndMonsterAttack[
+		name=Entangle,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=10,
+		dmg=\DndDice{14 (3d6 + 3)},
+		dmg-type=piercing,
+		extra={. If the target is Medium or smaller, it is grappled and restrained by the maw. It can only use this attack if it does not have a creature grappled.}
+	]
+\end{DndMonster}
+
+\subsection{Twisted Creations}
+Many aberrants are the result of the influence of the demon prince known as The Twisted, who glories in reshaping living beings as "art", or his followers. While most of these are pitiable wretches unable to do more than \textit{exist} in pain and agony, others are capable of causing problems that adventurers may have to solve. A few, such as the comeidai and mkhulu are actually self-perpetuating species in their own right. They count as aberrant because they don't fit into the normal ebb and flow of life---for example, the mkhulu are parasites that take over and warp humanoid hosts and the comeidai reproduce by budding but live nearly indefinitely if not killed.
+
+As the Twisted was once a resident of the oceans, many of the twisted creations have thematic elements that hearken of tentacles. Others are pure body horror.
+
+\subparagraph*{Jellyface}
+The jellyface is a particularly horrific creation--a humanoid head with transparent, cartilaginous bones and jellyfish-like tendrils descending from the border of its "face". The few that have any sapience left after the transformation are invariably insane. They and the rest simply undulate towards the nearest non-aberrant and inject flesh-melting poison from their tendrils before slurping up their victims.
+
+\begin{DndMonster}{Jellyface}
+	\DndMonsterType{Tiny aberration, single-minded}
+	\DndMonsterBasics[
+		armor-class={13}, hit-points={7 (2d4+2)}, speed={5 ft, swim 25 ft}
+	]
+	\MonsterStats{-4}{+3}{+2}{-4}{-1}{-4}
+	\DndMonsterDetails[
+		saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 9}, languages={—}, challenge={1/4:1/8}
+	]
+	\DndMonsterAction{Amphibious} The jellyface can breathe either water or air.
+
+	\DndMonsterAction{Gelatinous} Jellyfaces must be kept moist---they must be submerged in water at least every 4 hours or they will die.
+
+	\DndMonsterAction{Latching} Jellyfaces can share the space of a creature they are attached to using their Tendrils attack. They move with the creature without using their speed and can only be removed by being killed or incapacitated, in addition to the check described in that ability.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Tendrils,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d4 + 3},
+		dmg-type=piercing,
+		extra={ and the jellyface latches on until the target or another creature uses their action to make a DC 12 Strength check to remove it, the jelly face dies, or is incapacitated. While latched on, the jellyface cannot make another attack.}
+	]
+	\DndMonsterAction{Digest} One creature the jellyface is latched on to must make a DC 12 Constitution saving throw, taking 5 (2d4) necrotic damage on a failure or half as much on a success.
+\end{DndMonster}
+
+\subparagraph*{Twisted Hulk}
+Created by mkhulu and comeidai from ogres, these creatures have squid-like features---sucker-covered rubbery tentacles for one or both arms and a beak with necrotic poison. Even less intelligent than a normal ogre, they boast mental defenses against much magic that would confuse or control...other than that of the mkhulu themselves. 
+\begin{DndMonster}{Twisted Hulk}
+	\DndMonsterType{Large aberration, fearless}
+	\DndMonsterBasics[armor-class={13 (natural armor)}, hit-points={94 (9d10+45)}, speed={35 ft, swim 25 ft}]
+	\MonsterStats{+5}{-1}{+5}{-3}{0}{-3}
+	\DndMonsterDetails[saving-throws={WIS +3}, skills={}, damage-immunities={psychic}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={broken, charmed, frightened, shaken}, senses={blindsight 60ft, passive Perception 10}, languages={one language, usually common or giantish}, challenge={6:4}]
+
+	\DndMonsterAction{Amphibious} The twisted hulk can breathe either water or air.
+	\DndMonsterAction{Psychic Mirror} Hulks that would take psychic damage can instead choose a new target they can see within 30 feet for the causing ability. The ability keeps all parameters such as saving throws, damage, etc.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAction[Multiattack] The hulk makes 2 attacks with a combination of Tentacle Grasp or Slam.
+	\DndMonsterAttack[
+		name=Tentacle Grasp,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=10,
+		dmg=\DndDice{2d6 + 5},
+		dmg-type=bludgeoning,
+		extra={ plus 7 (2d6) psychic damage. If the target is a Large or smaller creature, it is grappled and restrained (escape DC 14). The hulk can only grapple two creatures at a time.}
+	]
+	\DndMonsterAttack[
+		name=Slam,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=10,
+		dmg=\DndDice{2d6 + 5},
+		dmg-type=bludgeoning,
+		extra={ plus 7 (2d6) psychic damage. If the hulk has a creature grappled, it can use the creature as the weapon, in which case both the grappled creature and the target take the damage.}
+	]
+	\DndMonsterAttack[
+		name=Bite,
+		distance=melee,
+		type=weapon,
+		mod=+6,
+		reach=5,
+		dmg=\DndDice{4d8+5},
+		dmg-type=piercing,
+		extra={ plus 17 (5d6) necrotic damage. The target must be restrained by the hulk.}
+	]
+\end{DndMonster}
+
+\subsection{Comiedai and Mkhulu}
+
+The comiedai (singular comiedar, pronounced 'COH-mee-eh-dar', meaning 'memory keepers') are sea creatures with mental powers that exceed those of humans. They were originally created by Leviathan to act as mobile memory stores for information brought back by the mkhulu from explorations on land. But the Twisted (who was instrumental in encouraging their creation) had other plans. He altered most of them to desire domination for the purpose of "improving" the land-based mortals. Ever since, most comiedai have sought to make deals with land-dwellers in distress, promising them power (or usually vengeance) in exchange for service. They give power by converting them into mkhulu. By and large, they uphold their deals, but always in a way that creates expanding nests of mkhulu and their thralls. This they do to "order" the chaotic lives of mortals, breaking them into shape according to the philosophies of the particular comiedar. They prefer to remain aloof, manipulating the land folk and implanting mkhulu larvae into their skulls. Twisted comiedai do not generally socialize with each other---each one considers itself the rightful master of all it perceives.
 
 Physically, a comiedar is a bulbous, tentacled monstrosity that usually communicates telepathically. The twisted kinds are surrounded by a mutagenic mucous that they use to control and alter their victims.
-
+\end{multicols}
 \begin{DndMonster}[width=\textwidth + 8pt]{Comiedar, Twisted}
 	\begin{multicols}{2}
-			\DndMonsterType{Large aberration}
+			\DndMonsterType{Large aberration, individualistic}
 			\DndMonsterBasics[
 					armor-class = {17 (natural armor)},
 					hit-points = {\DndDice{25d10 + 50}},
@@ -101,3 +219,48 @@ Physically, a comiedar is a bulbous, tentacled monstrosity that usually communic
 			\end{DndMonsterLegendaryActions}
 	\end{multicols}
 	\end{DndMonster}
+	
+\begin{multicols}{2}
+	\raggedcolumns
+	Technically, mkhulu [m'KHOO'loo] is the name of the worm-like parasite that was created to live symbiotically with mortals, acting as a source of powers in exchange for letting the symbiont observe life and relay it back to the comiedai and thus to Leviathan. Due to The Twisted's influence and that of his servants in the twisted comeidai, these symbonts became altered---instead of symbionts living quietly alongside the mortal soul, they now override the host's personality and essence entirely. Some dispute whether the original host \textit{dies} or simply is suppressed, living as a prisoner in their own head. The existence of partial fusions points to the latter, while the enormous change in personality points to the former.
+	
+	A completely-fused mkhulu experiences phsyiological changes unique to that parasite, although commonalities exist. Loss of hair (body and head) and changes in skin color (usually to a grey-blue) are nearly universal, but many choose to grow tentacle-like "hair", often (for the males) as a beard. The sexual characteristics of the host are usually suppressed, often to the point of entirely withering away, leaving them with barely-visible excretory openings and lean, sexless bodies. Most mkhulu do not consider themselves male or female---instead considering themselves something superior to both.
+
+	Mkhulu, contrary to popular belief, do not need to eat brains to survive. To spawn a new generation of parasites they must absorb vital aether from another living being. Many believe that the stronger the "donor", the stronger the spawn and so seek out Spoken donors...willing or not. However, many of those that follow the twisted comiedai or the Twisted himself have learned to draw maximum energy from eating the living brains of humanoids, in a form of blood magic. These are the ones most likely to grow facial tentacles capable of ripping a skull apart or burrowing through the nose/mouth to suck the brain out.
+	
+	Mkhulu have some mental powers inherent to them, but most of them have trained either their bodies or their minds as warriors or mages. It's very rare that a mkhulu becomes a priest or primalist---their natural arrogance gets in the way.
+
+	Presented here is a template that can be applied to any humanoid stat block. Challenge ratings will need to be recalculated. The defensive rating will be at least 5; the offensive rating will be at least 5 (if the only offensive action is its mind blast ability) but will likely be much higher, especially if it has another way of creating the stunned or staggered effect. \textbf{Warning:} Using multiple mkhulu together or a mkhulu in combination with another creature that can stagger or stun makes it \textit{much} more dangerous.
+	\begin{DndMonster}{Mkhulu (template)}
+	\DndMonsterAction{Type} The type of the creature changes to aberration. The size remains unchanged. It gains the Individualistic trait.
+	\DndMonsterAction{Hit Points} The creature's hit points increase to a minimum of 91 (14d8 + 28). If they are already higher, they remain unchanged.
+	\DndMonsterAction{Speed} The creature gains a swimming speed of 30 ft.
+	\DndMonsterAction{Ability Scores} The creature's ability scores change as follows:
+	\begin{itemize}
+		\item[] Strength: unchanged
+		\item[] Dexterity: unchanged
+		\item[] Constitution: increases to a minimum of +2
+		\item[] Intelligence: set to +5
+		\item[] Wisdom: decreases by 1 (minimum -1)
+		\item[] Charisma: decreases by 2 (minimum -1)
+	\end{itemize}
+	\DndMonsterAction{Traits} The creature gains the following traits:
+	\begin{itemize}
+		\item[] \textbf{Amphibious} The creature can breathe both air and water equally well.
+		\item[] \textbf{Aberrant Mind} The creature becomes resistant to psychic damage and immune to charm and fear. It has advantage on saving throws against effects that would read its mind or force it to tell the truth. It cannot be put to sleep by magic.
+		\item[] \textbf{Innate Spellcasting} The mkhulu can cast the following spells without requiring components. Its spellcasting ability is Intelligence (+7 to hit, spell save DC 15)
+		\begin{itemize}
+			\item[] \textbf{Concentration} \smartnameref{spell:minor-illusion}{minor illusion} (at will), \smartnameref{spell:mage-hand}{mage hand} (at will), \smartnameref{spell:disguise-self}{disguise self} (at will), \smartnameref{spell:yoink}{yoink} (at will), \smartnameref{spell:suggestion}{suggestion} (2x), \smartnameref{spell:major-image}{major image} (1x)
+			\item[] \textbf{Movement} \smartnameref{spell:misty-step}{misty step} (2x)
+		\end{itemize}
+	\end{itemize}
+	\DndMonsterAction{Actions} The creature gains the following actions.
+	\begin{itemize}
+		\item[] \textbf{Mind Blast (1/day)} All creatures in a 60 ft cone must make a DC 15 Intelligence saving throw. On a failed save they take 8d6 psychic damage and are \nameref{condition:staggered} for one minute. On a success, they take half as much damage and are not staggered. Creatures that fail by 5 or more are \nameref{condition:stunned} instead. Staggered or stunned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+		\item[] \textbf{Latch On} The mkhulu attempts to latch onto one staggered or stunned creature with its tentacles. It makes a melee weapon attack at disadvantage (+5 to hit, 5 ft reach). On a hit, the creature is grappled and restrained (escape DC 13). Only one creature can be Latched On by the mkhulu at a time.
+		\item[] \textbf{Enslave} One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Wisdom saving throw. On a failed save, the creature is under the mental control of the mkhulu as if it was affected by the legendary effect \smartnameref{spell:dominate}{dominate}. This does not require concentration from the mkhulu.
+		\item[] \textbf{Consume Brain} One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Constitution saving throw. On a failure it takes 5d8 piercing damage. On a success it takes half as much damage and the Latch On effect ends. If the creature fails the saving throw and this damage reduces the creature to 0, it dies as its brain is consumed by the mkhulu. Only the True Resurrection effect can return it to life.
+	\end{itemize} 
+\end{DndMonster}
+
+\end{multicols}

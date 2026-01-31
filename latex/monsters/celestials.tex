@@ -1,13 +1,19 @@
-\FloatBarrier
+\clearpage
+\begin{multicols}{2}
 \section{Celestials}
+
+    \raggedcolumns
 Creatures of the astral who are encountered in their own forms (either on the Astral plane or having traveled to another plane under their own power or that of an Ascendant) are called "celestials", after the most prominent group, the angels. Additionally, Mortal-plane creatures touched by strong amounts of Ascendant power may become MORE than they were. These two are counted as celestials--among them the heavenly flying horse, the pegasus, and the horned protector and friend to the innocent, the unicorn.
 \subsection{Angels}
 "Angel" most properly denotes the members of the Angelic Hosts, those sworn to the endless battle to keep the universe safe from threats from Beyond. In common parlance, however, it means all sapient lucians who act on the orders of the Great Mechanism or various Ascendants. They inhabit either their own, often vaguely humanoid bodies of aether or wondrous shells of aether. Because their essence is of the Astral directly, they don't have the vulnerability to silver that fiends do.
 
 Don't mistake their luminous, kindly appearances for beneficence or goodness or kindness. Most often, angels are sent to the Mortal and other planes on specific missions, often of vengeance, justice, or punishment. Some are good and kindly, others are not. But angels are almost always \textit{dutiful}, even if that means wreaking havoc on mortals.
 
+\subparagraph*{Astral Eyes}
+Astral Eyes are "floating winged eyeballs", autonomous scouts and communicators. They're not particularly strong combatants, but the legions follow behind them.
+
 \begin{DndMonster}{Astral Eye}
-	\DndMonsterType{Small celestial}
+	\DndMonsterType{Small celestial, honorable, group mentality}
 	\DndMonsterBasics[armor-class={13}, hit-points={45}, speed={0 ft., fly 50 ft. (hover)}]
 	\MonsterStats{-1}{+3}{+1}{+1}{+5}{+4}
 	\DndMonsterDetails[skills={Perception +9}, damage-resistances={fire, radiant}, condition-immunities={broken, charmed, frightened}, senses={truesight 60 ft., blindsight 60 ft., passive Perception 19}, languages={all, telepathy 60 ft.}, challenge={1:1}]
@@ -30,35 +36,42 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 	\DndMonsterAction{Righteous Jaunt (3/rest)} The eye teleports to an unoccupied location it can see within 120 ft. Any creature within 5 ft. of its starting location must make a DC 13 Dexterity saving throw, taking 2d6 radiant damage on a failure or half as much on a success. 
 \end{DndMonster}
 
-\begin{DndMonster}{Blade Archon, Lesser}
-	\DndMonsterType{Medium celestial}
-	\DndMonsterBasics[armor-class={15 (lamellar)}, hit-points={60}, speed={30 ft., fly 50 ft. (hover)}]
+\subparagraph*{Archons}
+Archons are the special forces units of the angelic legions. They are especially called on to act independently or in small groups, sometimes alongside a small number of valorites and seraphs. 
+
+Blade archons are the least of the archons and often act as replacements for valorites in small-squad engagements. They summon and control blades of force and steel, including telekinetically attacking with longswords that hover nearby. They can force their opponents to consider their sins, weakening them.
+
+\begin{DndMonster}{Blade Archon}
+	\DndMonsterType{Medium celestial, honorable, group mentality}
+	\DndMonsterBasics[armor-class={16 (chain)}, hit-points={91 (14d8 + 28)}, speed={30 ft., fly 50 ft. (hover)}]
 	\MonsterStats{+4}{+2}{+2}{+0}{+3}{+2}
-	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, condition-immunities={broken, charmed, frightened}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={3:3}]
+	\DndMonsterDetails[skills={Athletics +6}, damage-resistances={radiant}, damage-immunities={poison}, condition-immunities={broken, charmed, frightened}, senses={darkvision 60 ft., passive Perception 19}, languages={celestial}, challenge={6:6}]
 
 	\DndMonsterAction{Astral Edge} The blade archon's weapon attacks deal an additional 1d6 radiant damage (included in the attacks). This is an inherent property of the archon, not a property of the weapon.
 	
 	\DndMonsterAction{Dancing Blades} The blade archon is accompanied by two floating longswords that it uses to make attacks either in melee or at range, giving it much larger reach than normal.
 	
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The Archon attacks twice with its longswords. It can use Confeitor in place of either of those attacks if available.
+	\DndMonsterAction{Multiattack} The Archon attacks three times with its longswords. It can use Confeitor in place of one of those attacks if available.
 	\DndMonsterAttack[
 		name=Floating Longsword,
 		distance=both,
 		type=weapon,
-		mod=+6,
+		mod=+7,
 		reach=20 ft.,
 		dmg=\DndDice{1d10+4},
 		dmg-type=slashing,
-		plus-dmg=\DndDice{1d6},
+		plus-dmg=\DndDice{1d8},
 		plus-dmg-type=radiant
 	]
-	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 13 Wisdom saving throw, taking 4d6 psychic damage on a failure or half as much on a success. Creatures that fail are \nameref{condition:shaken} by memories of their sins and regrets until the end of their next turn.
+	\DndMonsterAction{Confeitor (Recharge 5-6)} The floating blades spin around him, creating after-images. These images shoot outward, piercing all creatures within 15 feet. Targets must make a DC 14 Wisdom saving throw, taking 6d6 psychic damage on a failure or half as much on a success. Creatures that fail are \nameref{condition:shaken} by memories of their sins and regrets until the end of their next turn.
 \end{DndMonster}
 
+\subparagraph*{Seraph}
+Seraphs are the support units of the angelic legion, normally lingering behind the front wall of valorites and archons to heal and protect their allies. They blast enemies with bursts of radiant energy, equally capable in melee or at range.
 
 \begin{DndMonster}{Seraph}
-    \DndMonsterType{Medium Celestial (Angel)}
+    \DndMonsterType{Medium Celestial (Angel), honorable, group mentality}
     \DndMonsterBasics[
         armor-class={16 (chain)},
         hit-points={104 (16d8 + 32)},
@@ -99,8 +112,12 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 
     \DndMonsterAction{Multiattack} The seraph makes 2 attacks.
 \end{DndMonster}
+
+\subparagraph*{Valorites}
+Valorites are the common soldier of the angelic legions, as well as a common form for non-legion lucians to take when they are on divine business. Bearing a shield and wearing astral-steel chain, they fight in close formation with javelins and broad stabbing shortswords that glow with radiant power.
+
 \begin{DndMonster}{Valorite}
-    \DndMonsterType{Medium Celestial (Angel)}
+    \DndMonsterType{Medium Celestial (Angel), honorable, group mentality}
     \DndMonsterBasics[
         armor-class={18 (chain + shield)},
         hit-points={91 (14d8 + 28)},
@@ -148,11 +165,11 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
     \DndMonsterSection{Variants}
         \DndMonsterAction{Sergeant} Upgrade to a longsword (1d8 + 4) slashing. Gain trait Commanding Presence: All angels within 60 ft have advantage on their first attack on each of their turns. No change to ratings.
 \end{DndMonster}
-\FloatBarrier
 
 \subsection{Astral-Touched Mortal Creatures}
+Some creatures aren't themselves of astral nature, but are touched heavily by the influence of the Astral plane.
 \begin{DndMonster}{Pegasus}
-\DndMonsterType{Large celestial}
+\DndMonsterType{Large celestial, honorable, herd mentality}
 \DndMonsterBasics[armor-class={12}, hit-points={59 (7d10 + 21)}, speed={60 ft., fly 90 ft.}]
 \MonsterStats{+3}{+2 (+4)}{+3}{+0}{+2 (+4)}{+1 (+3)}
 \DndMonsterDetails[saving-throws={}, skills={Perception +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 16}, languages={understands Celestial, Common, Elvish, and Sylvan but can't speak}, challenge={1:2}]
@@ -169,9 +186,8 @@ Don't mistake their luminous, kindly appearances for beneficence or goodness or 
 ]
 \end{DndMonster}
 
-\begin{DndMonster}[float*=htb,width=\textwidth + 8pt]{Unicorn}
-\begin{multicols}{2}
-\DndMonsterType{Large celestial}
+\begin{DndMonster}{Unicorn}
+\DndMonsterType{Large celestial, honorable, individualistic}
 \DndMonsterBasics[armor-class={15}, hit-points={110 (13d10 + 26)}, speed={50 ft.}]
 \MonsterStats{+4}{+2}{+2}{+0}{+3}{+3}
 \DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={poison}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={charmed, paralyzed, poisoned}, senses={darkvision 60 ft., passive Perception 13}, languages={Celestial, Sylvan, telepathy 60 ft.}, challenge={7:6}]
@@ -225,5 +241,5 @@ The Unicorn can take 3 legendary actions, choosing from the options below. Only 
 \DndMonsterLegendaryAction{Shimmering Shield (Costs 2 Actions)}{The unicorn creates a shimmering, magical field around itself or another creature it can see within 60 feet of it. The target gains a +2 bonus to AC until the end of the unicorn's next turn.}
 \DndMonsterLegendaryAction{Heal Self (Costs 3 Actions)}{The unicorn magically regains 11 (2d8 + 2) hit points.}
 \end{DndMonsterLegendaryActions}
-\end{multicols}
 \end{DndMonster}
+\end{multicols}

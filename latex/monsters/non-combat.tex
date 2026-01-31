@@ -1,0 +1,432 @@
+\clearpage
+\begin{multicols}{2}
+\section{Appendix: Non-combat NPCs}\label{section:non-combat}
+Presented here is an alphabetical list of non-combat creatures---these are creatures who may appear but rarely, if ever, pose a combat challenge even in groups. They may be useful for familiars and pets, however.
+
+\begin{DndMonster}{Badger}\label{monster:badger}
+\DndMonsterType{Tiny beast}
+\DndMonsterBasics[armor-class={10}, hit-points={3 (1d4 + 1)}, speed={20 ft., burrow 5 ft.}]
+\MonsterStats{-3}{+0}{+1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Keen Smell} The badger has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Bat}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 30 ft.}]
+\MonsterStats{-4}{+2}{-1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 60 ft., passive Perception 11}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Echolocation} The bat can't use its blindsight while deafened.
+
+\DndMonsterAction{Keen Hearing} The bat has advantage on Wisdom (Perception) checks that rely on hearing.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Cat}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={2 (1d4)}, speed={40 ft., climb 30 ft.}]
+\MonsterStats{-4}{+2}{+0}{-4}{+1}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={Darkvision 60 ft, passive Perception 13}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Keen Smell} The cat has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=slashing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Commoner}
+	\DndMonsterType{Medium humanoid (any lineage)}
+	\DndMonsterBasics[armor-class={10 }, hit-points={4 (1d8) }, speed={30 ft.}]
+	\MonsterStats{+0}{+0}{+0}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={0:1/8}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Club,
+		distance=melee,
+		type=weapon,
+		mod=+0,
+		reach=5,
+		dmg=\DndDice{1d4},
+		dmg-type=bludgeoning
+	]
+
+	\DndMonsterAction{Untrained} Commoners can only attack in self-defense, and fail any saving throw against fear.
+	
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A few copper coins.
+\end{DndMonster}
+
+\begin{DndMonster}{Crab}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={2 (1d4)}, speed={20 ft., swim 20 ft.}]
+\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 30 ft., passive Perception 9}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Amphibious} The crab can breathe air and water.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Claws,
+	distance=melee,
+	type=weapon,
+	mod=+0,
+	dmg=1,
+	dmg-type=bludgeoning
+]
+
+\end{DndMonster}
+
+\begin{DndMonster}{Deer}
+\DndMonsterType{Medium beast}
+\DndMonsterBasics[armor-class={12}, hit-points={4 (1d8)}, speed={50 ft.}]
+\MonsterStats{+0}{+2}{+0}{-4}{+2}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 12}, languages={—}, challenge={1/8:0}]
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Eagle}
+\DndMonsterType{Small beast}
+\DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={10 ft., fly 60 ft.}]
+\MonsterStats{-2}{+2}{+0}{-4}{+2}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={1/8:0}]
+\DndMonsterAction{Keen Sight} The eagle has advantage on Wisdom (Perception) checks that rely on sight.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4 + 2},
+	dmg-type=slashing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Frog}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={20 ft., swim 20 ft.}]
+\MonsterStats{-5}{+1}{-1}{-5}{-1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={Perception +1, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 11}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Amphibious} The frog can breathe air and water.
+
+\DndMonsterAction{Standing Leap} The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
+
+\end{DndMonster}
+
+\begin{DndMonster}{Goat}
+\DndMonsterType{Medium beast}
+\DndMonsterBasics[armor-class={10}, hit-points={4 (1d8)}, speed={40 ft.}]
+\MonsterStats{+1}{+0}{+0}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={1/8:0}]
+\DndMonsterAction{Charge} If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.
+
+\DndMonsterAction{Sure-Footed} The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Ram,
+	distance=melee,
+	type=weapon,
+	mod=+1,
+	reach=5,
+	dmg=\DndDice{1d4 + 1},
+	dmg-type=bludgeoning
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Hawk}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 60 ft.}]
+\MonsterStats{-3}{+2}{-1}{-4}{+2}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 14}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Keen Sight} The hawk has advantage on Wisdom (Perception) checks that rely on sight.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=slashing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Hyena}
+\DndMonsterType{Medium beast, pack mentality, craven}
+\DndMonsterBasics[armor-class={11}, hit-points={5 (1d8 + 1)}, speed={50 ft.}]
+\MonsterStats{+0}{+1}{+1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Pack Tactics} The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d6},
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Lizard}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={10}, hit-points={2 (1d4)}, speed={20 ft., climb 20 ft.}]
+\MonsterStats{-4}{+0}{+0}{-5}{-1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 9}, languages={—}, challenge={0:0}]
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Mule}
+\DndMonsterType{Medium beast, domestic}
+\DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={40 ft.}]
+\MonsterStats{+1}{+0}{+1}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Beast of Burden} The mule is considered to be a Large animal for the purpose of determining its carrying capacity.
+
+\DndMonsterAction{Sure-Footed} The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Hooves,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	reach=5,
+	dmg=\DndDice{1d4 + 1},
+	dmg-type=bludgeoning
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Octopus}
+\DndMonsterType{Small beast}
+\DndMonsterBasics[armor-class={12}, hit-points={3 (1d6)}, speed={5 ft., swim 30 ft.}]
+\MonsterStats{-3}{+2}{+0}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={Perception +2, Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 12}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Hold Breath} While out of water, the octopus can hold its breath for 30 minutes.
+
+\DndMonsterAction{Underwater Camouflage} The octopus has advantage on Dexterity (Stealth) checks made while underwater.
+
+\DndMonsterAction{Water Breathing} The octopus can breathe only underwater.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Tentacles,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=bludgeoning,
+	extra={, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.}
+]
+
+\DndMonsterAction{Ink Cloud}
+A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
+\end{DndMonster}
+
+\begin{DndMonster}{Owl}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={5 ft., fly 60 ft.}]
+\MonsterStats{-4}{+1}{-1}{-4}{+1}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 120 ft., passive Perception 13}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Flyby} The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.
+
+\DndMonsterAction{Keen Hearing and Sight} The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Talons,
+	distance=melee,
+	type=weapon,
+	mod=+3,
+	dmg=1,
+	dmg-type=slashing,
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Quipper}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={3 (2d4 - 2)}, speed={0 ft., swim 40 ft.}]
+\MonsterStats{-4}{+2}{-1}{-4}{-2}{-4}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 8}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Blood Frenzy} The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+
+\DndMonsterAction{Water Breathing} The quipper can breathe only underwater.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Rat}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={10}, hit-points={1 (1d4 - 1)}, speed={20 ft.}]
+\MonsterStats{-4}{+0}{-1}{-4}{+0}{-3}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Keen Smell} The rat has advantage on Wisdom (Perception) checks that rely on smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Raven}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={10 ft., fly 50 ft.}]
+\MonsterStats{-4}{+1}{-1}{-4}{+1}{-2}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Mimicry} The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	mod=+3,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Sea Horse}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11}, hit-points={1 (1d4 - 1)}, speed={0 ft., swim 20 ft.}]
+\MonsterStats{-5}{+1}{-1}{-5}{+0}{-4}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Water Breathing} The sea horse can breathe only underwater.
+\end{DndMonster}
+
+\begin{DndMonster}{Scorpion}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={11 (natural armor)}, hit-points={1 (1d4 - 1)}, speed={10 ft.}]
+\MonsterStats{-4}{+0}{-1}{-5}{-1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={blindsight 10 ft., passive Perception 9}, languages={—}, challenge={1/8:0}]
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Sting,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=poison
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Spider}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={20 ft., climb 20 ft.}]
+\MonsterStats{-4}{+2}{-1}{-5}{+0}{-4}
+\DndMonsterDetails[saving-throws={}, skills={Stealth +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 30 ft., passive Perception 10}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Spider Climb} The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+\DndMonsterAction{Web Sense} While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.
+
+\DndMonsterAction{Web Walker} The spider ignores movement restrictions caused by webbing.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=1,
+	dmg-type=poison
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Vulture}
+\DndMonsterType{Medium beast, individualistic}
+\DndMonsterBasics[armor-class={10}, hit-points={5 (1d8 + 1)}, speed={10 ft., fly 50 ft.}]
+\MonsterStats{-2}{+0}{+1}{-4}{+1}{-3}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={---}, challenge={1/8:0}]
+\DndMonsterAction{Keen Sight and Smell} The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.
+
+\DndMonsterAction{Pack Tactics} The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Beak,
+	distance=melee,
+	type=weapon,
+	mod=+2,
+	reach=5,
+	dmg=\DndDice{1d4},
+	dmg-type=piercing
+]
+\end{DndMonster}
+
+\begin{DndMonster}{Weasel}
+\DndMonsterType{Diminutive beast}
+\DndMonsterBasics[armor-class={12}, hit-points={1 (1d4 - 1)}, speed={30 ft.}]
+\MonsterStats{-4}{+2}{-1}{-4}{+1}{-4}
+\DndMonsterDetails[saving-throws={}, skills={Perception +3, Stealth +5}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 13}, languages={—}, challenge={0:0}]
+\DndMonsterAction{Keen Hearing and Smell} The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+\DndMonsterSection{Actions}
+\DndMonsterAttack[
+	name=Bite,
+	distance=melee,
+	type=weapon,
+	mod=+4,
+	dmg=1,
+	dmg-type=piercing
+]
+\end{DndMonster}
+\end{multicols}

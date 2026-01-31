@@ -1,6 +1,10 @@
-\FloatBarrier
+\clearpage
+\begin{multicols}{2}
+	\raggedcolumns
 \section{Humanoids}
-\subsection{Any Lineage}
+Humanoids don't generally have default attitudes, as the stat blocks are too generic for that. In general, humanoids can be reasoned with and aren't fearless. Individualistic vs group mentality depends entirely on the individual. Humanoids are never single-minded or domestic.
+
+The stat blocks presented here are starting points for further customization more so than most. Changing weapons, armor, and spells are normal, as are giving them an appropriate lineage trait. Changing weapons rarely changes their offensive rating as long as their ability scores are appropriate for the new weapon.
 
 \begin{DndMonster}{Acolyte}
 	\DndMonsterType{Medium humanoid (any lineage)}
@@ -81,8 +85,9 @@
 	\DndMonsterSection{Variants}
 	\DndMonsterAction{Fanatic} The fanatic has advantage on saving throws against being charmed or frightened. This does not affect their ratings.
 \end{DndMonster}
+\end{multicols}
 
-\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Archmage}
+\begin{DndMonster}[width=\textwidth + 8pt]{Archmage}
 	\begin{multicols}{2}
 	\DndMonsterType{Medium humanoid (any lineage)}
 	\DndMonsterBasics[armor-class={15 (\textit{mage armor})}, hit-points={156 (24d8 + 48)}, speed={30 ft.}]
@@ -136,7 +141,8 @@
 	\end{multicols}
 \end{DndMonster}
 
-\subsection{Assassin}
+\begin{multicols}{2}
+	\raggedcolumns
 	\begin{DndMonster}{Assassin}
 	\DndMonsterType{Medium humanoid (any lineage)}
 	\DndMonsterBasics[armor-class={15 (reinforced leather)}, hit-points={78 (12d8 + 24)}, speed={30 ft.}]
@@ -266,29 +272,6 @@
 	\DndMonsterAction{Common} A few small gems (2-5 gp each) or 2-3 gold pieces (usually in mixed silver and copper coin).
 	\DndMonsterAction{Rare} A silvered greataxe or a journeyman-tier utility magic item.
 \end{DndMonster}
-
-\begin{DndMonster}{Commoner}
-	\DndMonsterType{Medium humanoid (any lineage)}
-	\DndMonsterBasics[armor-class={10 }, hit-points={4 (1d8) }, speed={30 ft.}]
-	\MonsterStats{+0}{+0}{+0}{+0}{+0}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={0:1/8}]
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Club,
-		distance=melee,
-		type=weapon,
-		mod=+0,
-		reach=5,
-		dmg=\DndDice{1d4},
-		dmg-type=bludgeoning
-	]
-
-	\DndMonsterAction{Untrained} Commoners can only attack in self-defense, and fail any saving throw against fear.
-	
-	\DndMonsterSection{Inventory}
-	\DndMonsterAction{Common} A few copper coins.
-\end{DndMonster}
-
 
 \begin{DndMonster}{Guard}
 	\DndMonsterType{Medium humanoid (any lineage)}
@@ -468,7 +451,6 @@
 	\DndMonsterAction{Rare} An adventurer-tier or weaker magic item, usually in use.
 \end{DndMonster}
 
-\subsection{Scout}
 	\begin{DndMonster}{Scout}
 	\DndMonsterType{Medium humanoid (any lineage)}
 	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={22 (4d8 + 4)}, speed={30 ft.}]
@@ -711,92 +693,6 @@
 	\DndMonsterAction{Common}  A small carved trinket (art object worth 1 gp).
 \end{DndMonster}
 
-\subsection{Specific}
-\begin{DndMonster}{Goblin Raider}
-	\DndMonsterType{Small humanoid (goblinoid)}
-	\DndMonsterBasics[armor-class={13 (leather armor)}, hit-points={7 (2d6)}, speed={30 ft.}]
-	\MonsterStats{-1}{+2}{+0}{+0}{-1}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Stealth +6}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 9}, languages={Common, Goblin}, challenge={1/2:1/8}]
-	\DndMonsterAction{Nimble Escape} The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
-
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Scimitar,
-		distance=melee,
-		type=weapon,
-		mod=+4,
-		reach=5,
-		dmg=\DndDice{1d6 + 2},
-		dmg-type=slashing
-	]
-	\DndMonsterAttack[
-		name=Shortbow,
-		distance=ranged,
-		type=weapon,
-		mod=+4,
-		range=80/320,
-		dmg=\DndDice{1d6 + 2},
-		dmg-type=piercing
-	]
-\end{DndMonster}
-
-\begin{DndMonster}{Hobgoblin Raider}
-	\DndMonsterType{Medium humanoid (goblinoid)}
-	\DndMonsterBasics[armor-class={14 (lamellar)}, hit-points={22 (4d8 + 4)}, speed={30 ft.}]
-	\MonsterStats{+2}{+1}{+1}{+0}{+0}{+1}
-	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Goblin}, challenge={1:1}]
-	\DndMonsterAction{Martial Advantage} Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.
-
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Longsword,
-		distance=melee,
-		type=weapon,
-		mod=+4,
-		reach=5,
-		dmg=\DndDice{1d10 + 2},
-		dmg-type=slashing
-	]
-	\DndMonsterAttack[
-		name=Longbow,
-		distance=ranged,
-		type=weapon,
-		mod=+3,
-		range=150/600,
-		dmg=\DndDice{1d8 + 1},
-		dmg-type=piercing
-	]
-\end{DndMonster}
-
-\begin{DndMonster}{Orc Raider}
-	\DndMonsterType{Medium humanoid (orc)}
-	\DndMonsterBasics[armor-class={13 (hide armor)}, hit-points={22 (3d8 + 9)}, speed={30 ft.}]
-	\MonsterStats{+2}{+1}{+3}{-2}{+0}{+0}
-	\DndMonsterDetails[saving-throws={}, skills={Intimidation +2}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 10}, languages={Common, Orc}, challenge={1:1/2}]
-	\DndMonsterAction{Aggressive} As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.
-	\DndMonsterAction{Red Fang's Legacy} The orc scores a critical hit on a 19 or 20 and deals an extra weapon die (3d12 instead of 2d12) on a critical hit.
-	
-	\DndMonsterSection{Actions}
-	\DndMonsterAttack[
-		name=Greataxe,
-		distance=melee,
-		type=weapon,
-		mod=+4,
-		reach=5,
-		dmg=\DndDice{1d12 + 2},
-		dmg-type=slashing
-	]
-	\DndMonsterAttack[
-		name=Javelin,
-		distance=both,
-		type=weapon,
-		mod=+4,
-		reach=5,
-		dmg=\DndDice{1d6 + 2},
-		dmg-type=piercing
-	]
-\end{DndMonster}
-
 \subsection{Therianthropes}
 Therianthropes, more commonly known as were creatures, stem originally from demonic interference, mostly from the followers of the demon prince known as the Red Fang. But many of the creatures are blameless victims, and there are a substantial number of people who inherited the ability to transform from their cursed ancestors. These entries only describe those capable of passing on the curse via bite, in the main the victims themselves of a cursed bite. Were-creatures may either choose to revel in their blood-lust curse or seek to control it; either way, they remain dangerous.
 
@@ -804,7 +700,8 @@ There are others, called Skinwalkers or Loup Garou, who willingly trafficked wit
 
 All were creatures possess extreme regenerative capability, being capable of near-instantly regenerating from even mortal wounds. Silvered weapons stop this healing, leaving lasting wounds, and being beheaded once made unconscious also works. Not much else does.
 
-\subsection{Werebear}
+Almost all were creatures are individualistic.
+
 \begin{DndMonster}{Werebear}
 \DndMonsterType{Medium humanoid (human, shapechanger)}
 \DndMonsterBasics[armor-class={10 in humanoid form, 14 (natural armor) in bear and hybrid form}, hit-points={135 (18d8 + 54)}, speed={30 ft. (40 ft., climb 30 ft. in bear or hybrid form)}]
@@ -1038,3 +935,4 @@ The werewolf makes three attacks: one with its bite and two with its claws or sp
 ]
 \DndMonsterAction{Shapechanger} The werewolf can use its bonus action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
 \end{DndMonster}
+\end{multicols}

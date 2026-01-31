@@ -358,31 +358,31 @@ Two heads aren't always better than one, at least if you're an ettin. The ettin 
 
 \begin{DndMonster}{Ettin}
 	\DndMonsterType{Large giant, individualistic, craven}
-	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={85 (10d10 + 30)}, speed={40 ft.}]
-	\MonsterStats{+5}{-1}{+3}{-2}{+0}{-1}
-	\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant, Orc}, challenge={4:4}]
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={119 (14d10 + 42)}, speed={40 ft.}]
+	\MonsterStats{+6}{-1}{+3}{-2}{+0}{-1}
+	\DndMonsterDetails[saving-throws={}, skills={Perception +4}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={darkvision 60 ft., passive Perception 14}, languages={Giant, Orc}, challenge={5:6}]
 	\DndMonsterAction{Two Heads} The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
 	
 	\DndMonsterAction{Wakeful} When one of the ettin's heads is asleep, its other head is awake.
 	
 	\DndMonsterSection{Actions}
-	\DndMonsterAction{Multiattack} The ettin makes two attacks: one with its battleaxe and one with its morningstar.
+	\DndMonsterAction{Multiattack} The ettin makes three attacks: two with its battleaxe and one with its morningstar.
 	\DndMonsterAttack[
 		name=Battleaxe,
 		distance=melee,
 		type=weapon,
-		mod=+6,
+		mod=+7,
 		reach=5,
-		dmg=\DndDice{2d8 + 5},
+		dmg=\DndDice{2d8 + 6},
 		dmg-type=slashing
 	]
 	\DndMonsterAttack[
 		name=Morningstar,
 		distance=melee,
 		type=weapon,
-		mod=+6,
+		mod=+7,
 		reach=5,
-		dmg=\DndDice{2d8 + 5},
+		dmg=\DndDice{2d8 + 6},
 		dmg-type=piercing
 	]
 \end{DndMonster}

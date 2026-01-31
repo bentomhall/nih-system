@@ -1,7 +1,7 @@
 \clearpage
 \begin{multicols}{2}
-\section{Appendix: Vermin}\label{section:vermin}
-Presented here is an alphabetical list of vermin---these are creatures who may appear but rarely, if ever, pose a combat challenge even in groups. They may be useful for familiars and pets, however.
+\section{Appendix: Non-combat NPCs}\label{section:non-combat}
+Presented here is an alphabetical list of non-combat creatures---these are creatures who may appear but rarely, if ever, pose a combat challenge even in groups. They may be useful for familiars and pets, however.
 
 \begin{DndMonster}{Badger}\label{monster:badger}
 \DndMonsterType{Tiny beast}
@@ -57,6 +57,28 @@ Presented here is an alphabetical list of vermin---these are creatures who may a
 	dmg=1,
 	dmg-type=slashing
 ]
+\end{DndMonster}
+
+\begin{DndMonster}{Commoner}
+	\DndMonsterType{Medium humanoid (any lineage)}
+	\DndMonsterBasics[armor-class={10 }, hit-points={4 (1d8) }, speed={30 ft.}]
+	\MonsterStats{+0}{+0}{+0}{+0}{+0}{+0}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={}, senses={passive Perception 10}, languages={any one language (usually Common)}, challenge={0:1/8}]
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Club,
+		distance=melee,
+		type=weapon,
+		mod=+0,
+		reach=5,
+		dmg=\DndDice{1d4},
+		dmg-type=bludgeoning
+	]
+
+	\DndMonsterAction{Untrained} Commoners can only attack in self-defense, and fail any saving throw against fear.
+	
+	\DndMonsterSection{Inventory}
+	\DndMonsterAction{Common} A few copper coins.
 \end{DndMonster}
 
 \begin{DndMonster}{Crab}

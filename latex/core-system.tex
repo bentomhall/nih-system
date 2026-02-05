@@ -206,7 +206,7 @@ A Strength check can model any attempt to lift, push, pull, or break something, 
 
 \subsubsection{Attack Rolls and Damage}
 
-You add your Strength modifier to your attack roll and your damage roll when attacking with a melee weapon such as a mace, a battleaxe, or a javelin. You use melee weapons to make melee attacks in hand* to-hand combat, and some of them can be thrown to make a ranged attack.
+You add your Strength modifier to your attack roll and your damage roll when attacking with a melee weapon such as a mace, a battleaxe, or a javelin. You use melee weapons to make melee attacks in hand-to-hand combat, and some of them can be thrown to make an attack at longer ranges.
 
 \subsubsection{Lifting and Carrying}
 
@@ -247,7 +247,7 @@ A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or 
 
 \subsubsection{Attack Rolls and Damage}
 
-You add your Dexterity modifier to your attack roll and your damage roll when attacking with a ranged weapon, such as a sling or a longbow. You can also add your Dexterity modifier to your attack roll and your damage roll when attacking with a melee weapon that has the finesse property, such as a dagger or a rapier.
+You add your Dexterity modifier to your attack roll and your damage roll when attacking with a ranged weapon, such as a sling or a longbow.
 
 \subsubsection{Armor Class}
 
@@ -1098,13 +1098,19 @@ Note that a "miss" (d20 + modifiers \textless{} AC) only means that you didn't d
 
 \subsubsection{Modifiers to the Roll}
 
-When a character makes an attack roll, the two most common modifiers to the roll are an ability modifier and the character's proficiency bonus. When a monster makes an attack roll, it uses whatever modifier is provided in its stat block.
+When a character makes an attack roll, they add an attack modifier (one of a Melee Attack Modifier, Ranged Attack Modifier, or Spell Attack Modifier) by default. When a monster makes an attack roll, it uses whatever modifier is provided in its stat block.
 
-\subparagraph*{Ability Modifier} The ability modifier used for a melee weapon attack is Strength, and the ability modifier used for a ranged weapon attack is Dexterity. Weapons that have the finesse or thrown property override this rule.
+\subparagraph*{Attack Modifier} Each character has either two or three "attack modifiers." These are your Melee Attack Modifier (abbreviated as M ATK), used for attacks with melee weapons and unarmed strikes, Ranged Attack Modifier (R ATK), used for attacks with ranged weapons, and Spell Attack Modifier (S ATK), used for attacks with specific abilities. Not all characters have the latter.
 
-Some spells and magical abilities also require an attack roll. The ability modifier used for a spell attack depends on the spellcasting ability of the spellcaster.
+Each attack modifier is calculated by adding your proficiency bonus to the relevant ability score:
 
-\subparagraph*{Proficiency Bonus} You add your proficiency bonus to your attack roll when you attack using a weapon with which you have proficiency, as well as when you attack with a spell.
+\subparagraph*{M ATK} $ = $ STR + Proficiency
+\subparagraph*{R ATK} $ = $ DEX + Proficiency
+\subparagraph*{S ATK} $ = $ Spellcasting ability modifier + Proficiency
+
+A few specific classes have the Nimble Strike feature, which allows them to use their R ATK where they would normally use their M ATK. The Armsman has a feature that allows the reverse, using M ATK for attacks with ranged weapons.
+
+\subparagraph*{Attacks with non-proficient weapons} If you are not proficient in the weapon you are using (including improvised weapons), you make all attacks at disadvantage and ignore any source that would give you advantage. Everyone is proficient with their unarmed strikes.
 
 \subsubsection{Rolling 1 or 20}
 

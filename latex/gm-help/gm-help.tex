@@ -1,0 +1,92 @@
+\documentclass[10pt,twoside,openany,bg=none]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{mdframed}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[section]{placeins}
+
+\hfuzz=1pt
+
+\extrafloats{1000}
+
+\hypersetup {
+    colorlinks = true,
+    urlcolor = blue,
+    linkcolor = blue,
+    citecolor = red
+}
+
+\makeatletter
+\newcommand{\smartnameref}[2]{%
+    \@ifundefined{r@#1}%
+      {#2}%
+      {\nameref{#1}}%
+}
+\makeatother
+
+\title{NIH GM Guidance}
+\author{Ben Hall}
+\date{}
+\begin{document}
+\maketitle
+\section{How to use this document}
+This is an auxiliary document for Game Masters (GMs) of the NIH TTRPG system. It's not needed to play the game, but is designed to answer questions GMs might have and to provide additional helps, including guidance on treasure distribution, encounter building, setting DCs for checks, etc. There is no expectation that players will or will not read it. It does not contain \textit{rules}---everything here is couched as \textit{guidance and suggestions}. The tone is intended to be much less formal than the main play document, as it's friendly advice from one long-running GM to another, as well as a frank discussion of how I, as the designer, was thinking the game would be run. Feel free to deviate from this guidance if your table needs something different. That's a core principle of NIH---no one can know better what your table needs than you do. You're the final authority on that subject. As a game designer, all I can do is point out pitfalls I've seen and solutions that have worked at other tables. Consider this document to be a toolkit.
+
+\subsection{Core Principles}
+NIH is built around a few core principles.
+\begin{itemize}
+    \item[] \textbf{The focus is the PCs.} This is the story of the player characters and their heroics (or heroic failures). They are the ones shaping the narrative by their actions and the consequences of those actions. Things that boil down to bookeeping or get in the way of that should be the first things to go when something has to be ditched. This also means that it's not \textit{your} story that's being told, although you're a critical part of it.
+    \item[] \textbf{The party's fun outweighs all rules.} As the GM, you are the final backstop for the table's fun. Each player has a substantial responsibility to help themselves and their party have fun. But you're the last resort. Not the rules. "Sorry, I have to do this horribly unfun thing because the rules say so" is a \textit{dodge}, an attempt to shirk your responsibility to the party. Now there are certainly things that aren't immediately fun. For example, a PC dying. But maintaining those systems helps the party have fun long-term (most of the time) because a lack of consequences often robs the game of depth. So it's a tricky, table-by-table balance. But certainly, people on the internet or even these rules themselves are going to be worse at maintaining that balance than you will be. Because we can't see what you're dealing with and don't know the people involved.
+    \item[] \textbf{You are a player too and so deserve to have fun.} A GM is a critical moving piece of the system. Very few things kill games faster than the GM getting burnt out or losing interest or feeling like they're just going through the motions. Work with your party if you start to feel that way. Talk out of character. Make whatever changes are necessary. Don't feel like you need to sacrifice yourself on the altar of their fun---come to a mutually beneficial solution or stop playing.
+    \item[] \textbf{Player agency is important.} Agency is the feeling that your decisions matter. When players don't feel like they have agency, they tend to check out or start acting badly, trying to break things to regain a sense of agency (or as a form of protest). And this is generally bad. Player agency is maintained when players make informed decisions with actual consequences. It doesn't mean they have to have \textit{total} freedom to choose anything, and they certainly don't get to choose the consequences. But throughout the game, they have to be able to make choices that matter. If you're going to do a set piece that requires them to fail, get them to agree to it out of character first. Or do something differently. Both because otherwise you'll probably end up with a broken story (players are notorious for \textit{not} generally wanting to fail and doing all sorts of things to get out of it) and you'll hurt your relationship with the players if you try to force the issue.
+    \item[] \textbf{The PCs are working together against the enemies, not each other.} NIH is not designed for player-vs-player action. It's designed for the party working as a (mostly) cohesive group against monstrous foes and challenges. But remember that many abilities do affect everyone. I generally add a check when someone is going to, for example, hit another PC with a \textit{fireball} spell---I check with the threatened PC. If they're not ok, I ask the other player to choose a different target or different spell. PvP actions only resolve if all affected players are ok with it. Stealing from the group or getting the group in serious trouble (such as by attacking a king in his court) are, in my mind, pvp actions.
+    \item[] \textbf{The monsters are the enemy, not you.} You will be called on to portray antagonists. That does \textit{not} mean you yourself should be antagonistic to the player or the PCs. That's not a fair fight---the GM automatically wins. And that's bad. You, acting as players' window to the world, shouldn't lie to the players. They may not be observing the real truth (due to failed rolls or illusions or whatever), but your job is to accurately portray what their characters experience. Similarly, you shouldn't act out of malice or desire to hurt the characters or the players. The monsters certainly want to hurt the characters, but that's their problem.
+    \item[] \textbf{The monsters generally lose.} NIH is a game about heroes. And the basic assumption is that the heroes will win, eventually. Not all the time, but most fights should end up going their way. When they lose, it should be because they messed up, made bad choices, didn't do their research, etc. Not because you threw a "rocks fall, everyone dies" no-win scenario. And loss may or may not mean \textit{death}. An average party will face dozens if not hundreds of fights over their campaign. If they had an average fatality rate of even 5\%, the chances of having no deaths is under 75\% by the 6th fight and under 35\% by the 20th. 
+    \item[] \textbf{Out of character problems need out of character solutions.} If someone is causing issues, talk to them. Seriously. And kindly. Not accusing, not angry. Solve out of character problems out of character. Trying to "punish" their character for the player being bad rarely, if ever, works. It usually just makes things worse for everyone via escalation. The game system isn't designed to help you solve people problems. No rules can stop a malicious actor. In the end, it comes down to only playing with people you trust.
+\end{itemize}
+
+\subsection{Layout of this document}
+This document is divided into several sections that each cover a specific chunk of running the game.
+\begin{itemize}
+    \item This current section discusses how to use this document.
+    \item \nameref{sec:resolving-checks} discusses the role of dice in resolving checks (attack rolls, ability checks, or saving throws). It discusses different ways to set DCs, and what the DC values are intended to mean, as well as gives a few more examples as to when one proficiency might be more appropriate than others. It lightly touches on non-binary resolutions (aka degrees of success/failure) and when you'd want (or not want) to use those.
+    \item \nameref{sec:encounter-design} discusses different models for designing both individual encounters or challenges as well as "adventures" (strings of connected challenges). It discusses particular gotchas commonly encountered, and gives some guidance on manipulating the difficulty to be what you want it to be.
+    \item \nameref{sec:treasure} discusses the expectations for treasure distribution, as well as presenting ways to randomly generate "appropriate" treasure.
+    \item \nameref{sec:worldbuilding} discusses the system's expectations around the world you play in. There is a default setting for NIH, but it's not binding.
+    \item \nameref{sec:sample-adventure} presents a sample (short) adventure for level 1-3 characters, designed to quickly introduce people to the system, especially for new GMs. Although it takes place in Quartus, it is designed to be "low lore" and transplantable into any setting.
+\end{itemize}
+
+\section{Resolving Checks}\label{sec:resolving-checks}
+The mechanical core of NIH is using a d20 to resolve \textit{uncertainty}. If it's already clear from the fiction what should happen, adding dice rolls is at best fluff and at worse confusing. Now, rolling dice is fun for many people. And I don't want to discount that. But in general, the safest guiding principle behind any attack roll, ability check, or saving throw is "is this a situation where both success and failure are plausible outcomes and, more importantly, \textit{interesting, acceptable} outcomes with interesting consequences that move the narrative along." If the answer to either of those questions is no, \textit{don't roll. Just narrate.} This takes some finesse on the GM's part. There are differences between the different kinds of checks, so let's look at those in more detail.
+
+\subsection{Attack Rolls}
+NIH is a game about heroes and villains worthy of heros. So most of the time, if the task is "can I damage that creature", there is meaningful uncertainty. Even a completely unaware enemy might flinch out of the way at a critical moment. Even if asleep. And even attacking an object under stress can fail. And with attack rolls, a natural 1 is a miss and a natural 20 is a hit, regardless of the AC. So generally, a player asking to attack something will be resolved with an attack roll.
+
+There are exceptions. A party or NPC might decide to kill creatures that, in the fiction, pose them no threat and that they should be able to defeat without problem (such as a villain kicking a puppy). In this case, there's little reason to spend the extra time to roll the attack---we can just simply move along to the consequences of them hitting. Similarly, a character trying to break an enchanted adamantine wall with a wooden toothpick doesn't require an attack roll---he simply cannot do that. Simply narrate the failure of the attack. In cases like this, there is one situation where rolling might be useful---to decide \textit{how messy} the successful attack is or \texit{how bad} the failure is. That's covered in \nameref{subsec:degrees-of-success}.
+
+\subsection{Saving Throws}
+Nobody likes feeling powerless. It's a rare circumstance that a PC will not be able to make a saving throw against an effect---basically unless they are subjected to a condition that imposes automatic failures (such as \smartnameref{condition:paralyzed}{the Paralyzed condition} against Dexterity saving throws), they will be able to at least attempt the saving throw. And the consequences are almost always meaningful---death, damage, or a disabling condition. As a result, saving throws are almost always useful to roll and play out.
+
+There are a few exceptions, discussed below. In all of them, the core principle is \textit{to keep the focus on the party and keep the narrative moving.} NIH is not a physics engine; it's a toolkit designed to help you bring narratives to life and figure out what happens to the party and their goals.
+\begin{itemize}
+    \item If there isn't anything threatening the party and they're not under time pressure and the condition naturally resolves given time. For example, a slippery slope where the only consequence is falling prone, but no other threat looms. Since all this does is slightly slow down the party, rolling might not be all that important. Just narrate how they slip around and have to move carefully and move on to more important things.
+    \item If a damaging effect will do more than the monster's hit points even if halved, don't bother rolling saving throws for them. They can't survive even if they pass the saving throw. This is particularly common at higher levels facing off against a horde of small creatures such as bandits targeted by \textit{fireball}.
+    \item If it's just set dressing. A dragon doing a drive-by flaming of a camp of guards and commoners just kills however many of them as is thematically appropriate.
+\end{itemize}
+\section{Encounter Design}\label{sec:encounter-design}
+adsfads
+
+\section{Treasure}\label{sec:treasure}
+adsfads
+
+\section{Worldbuilding}\label{sec:worldbuilding}
+adsfadsf
+
+\section{Sample Adventure}\label{sec:sample-adventure}
+asdfasdf
+
+\end{document}

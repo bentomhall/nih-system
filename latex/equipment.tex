@@ -177,8 +177,6 @@ If you use a weapon that has the ammunition property to make a melee attack, you
 
 \subparagraph*{Cleaving} Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target.
 
-\subparagraph*{Finesse} When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
-
 \subparagraph*{Heavy} Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively. 
 
 \subparagraph*{Light} A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons. When you wield a light weapon in each hand and take the Attack action, you can make an extra attack as long as you make attacks with each weapon. This extra attack does not add your ability modifier to the damage dealt.
@@ -195,7 +193,7 @@ If you use a weapon that has the ammunition property to make a melee attack, you
 
 \subparagraph*{Special} A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see “Special Weapons” later in this section).
 
-\subparagraph*{Thrown} If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.
+\subparagraph*{Thrown} If a weapon has the thrown property, you can throw the weapon to make an attack at larger range. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. The range is defined the same way as it is for a ranged weapon, but this remains a melee attack.
 
 \subparagraph*{Two-Handed} This weapon requires two hands when you attack with it. You can hold it in one hand, however. Two-handed weapons add twice your Strength modifier to the damage dealt, instead of just your Strength modifier.
 
@@ -220,7 +218,7 @@ Additionally, weapons can be made out of exotic materials just like armor can. T
 	\begin{DndTable}[header=Exotic Weapon Materials]{lXlX}
 		\textbf{Material} & \textbf{Applies To} & \textbf{Tier} & \textbf{Effect} \\
 		Adamantine & Metal weapons & Adventurer & Deals maximum damage to objects, ignores construct damage resistance. Requires STR +3. \\
-		Mithril & Metal weapons & Adventurer & Weight is halved. Immune to rusting. Counts as silvered. Greatswords and Greataxes lose the Heavy property. Weapons without Two-handed gain Finesse.\\
+		Mithril & Metal weapons & Adventurer & Weight is halved. Immune to rusting. Counts as silvered. Greatswords and Greataxes lose the Heavy property. Weapons without Two-handed gain Light.\\
 		Ignitite & Ammunition, melee weapons & Adventurer & Deals 1d6 fire damage on hit. Ignites flammable materials. \\
 		Necrite & Ammunition, melee weapons & Adventurer & Deals 1d6 necrotic damage on hit. Traps incorporeal creatures it reduces to zero, allowing them to be questioned (as Voice the Voiceless) for 1 minute. \\
 
@@ -250,7 +248,7 @@ Weapons with special rules are described here.
 	\textbf{Name} & \textbf{Cost} & \textbf{Damage} & \textbf{Weight} & \textbf{Properties} \\
 	\textbf{Simple Melee Weapons} & & & & \\
 	Club & 1 sp & 1d4 bludgeoning & 2 lb. & Light \\
-	Dagger & 2 gp & 1d4 piercing & 1 lb. & Finesse, light, precise, thrown (range 20/60) \\
+	Dagger & 2 gp & 1d4 piercing & 1 lb. & Light, precise, thrown (range 20/60) \\
 	Greatclub & 2 sp & 1d8 bludgeoning & 10 lb. & Battering, two-handed \\
 	Handaxe & 5 gp & 1d6 slashing & 2 lb. & Light, thrown (range 20/60) \\
 	Javelin & 5 sp & 1d6 piercing & 2 lb. & Thrown (range 30/120) \\
@@ -261,7 +259,7 @@ Weapons with special rules are described here.
 	Spear & 1 gp & 1d8 piercing & 3 lb. & Thrown (range 20/60) \\
 	\textbf{Simple Ranged Weapons} & & & &\\
 	Crossbow, light & 25 gp & 1d8 piercing & 5 lb. & Ammunition (range 80/320), loading, two-handed \\
-	Dart & 5 cp & 1d4 piercing & 1/4 lb. & Finesse, thrown (range 20/60) \\
+	Dart & 5 cp & 1d4 piercing & 1/4 lb. & Thrown (range 20/60) \\
 	Shortbow & 15 gp & 1d6 piercing & 2 lb. & Ammunition (range 80/320), two-handed \\
 	Sling & 1 sp & 1d6 bludgeoning & \textemdash & Ammunition (range 30/120), battering \\
 	\textbf{Martial Melee Weapons} & & & &\\
@@ -275,12 +273,12 @@ Weapons with special rules are described here.
 	Maul & 10 gp & 1d12 bludgeoning & 10 lb. & Battering, heavy, two-handed \\
 	Morningstar & 15 gp & 1d10 piercing & 4 lb. & Battering \\
 	Pike & 5 gp & 1d10 & 18 lb. & Heavy, precise, reach, two-handed \\
-	Rapier & 25 gp & 1d8 piercing & 2 lb. & Finesse, precise \\
-	Scimitar & 15 gp & 1d6 slashing & 3 lb. & Finesse, cleaving, light \\
-	Shortsword & 10 gp & 1d6 piercing & 2 lb. & Finesse, light, precise \\
+	Rapier & 25 gp & 1d8 piercing & 2 lb. & Precise \\
+	Scimitar & 15 gp & 1d6 slashing & 3 lb. & Cleaving, light \\
+	Shortsword & 10 gp & 1d6 piercing & 2 lb. & Light, precise \\
 	War pick & 5 gp & 1d10 piercing & 2 lb. & Precise \\
 	Warhammer & 15 gp & 1d10 bludgeoning & 3 lb. & Battering \\
-	Whip & 2gp & 1d4 slashing & 3 lb. & Finesse, reach, special \\
+	Whip & 2gp & 1d4 slashing & 3 lb. & Reach, special \\
 	\textbf{Martial Ranged Weapons} & & & &\\
 	Blowgun & 10 gp & 1 piercing & 1 lb. & Ammunition (range 25/100), loading, special \\
 	Crossbow, hand & 75 gp & 1d4 piercing & 3 lb. & Ammunition (range 30/120), light, loading \\

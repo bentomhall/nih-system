@@ -47,7 +47,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 
 **Draconic Ancestry.**  Choose a color from the Elemental Affinity table and gain resistance to the related damage type. If you have the Breath Weapon feature, this also sets the damage type, saving throw, and shape of the breath weapon.
 | Color | Damage Type | Saving Throws | Shape |
-| ---- | ----| ---- | ---- |
+- |
 | Black|Necrotic|Constitution|20' cone|
 | Blue|Lightning |Dexterity|30'x 5' line|
 | Brass|Thunder |Constitution|20' cone|
@@ -326,9 +326,9 @@ The steelborn are varied, but generally human-size or smaller. Their shape is hu
 
 \page
 ## Touched Lineages
-The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to completely "normal" parents. Each culture reacts differently to this--the eastern Jinse empire considers the fiend-touched to be "blessed", as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched are often given to the Church of the Truth in the Holy Kaelthian Republic and raised to be merciless inquisitors in that rigidly theocratic land.
+The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents. Each culture reacts differently to this: the eastern Jinse empire considers the fiend-touched to be "blessed", as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched were often given to the Church of the Truth in the Holy Kaelthian Republic (before that collapsed) and were raised to be merciless inquisitors in that rigidly theocratic land, and treated with suspicion outside that role.
 
-For all of these, start with a base lineage. Take the ability score increase listed for your Touched lineage instead of the normal one. Then replace the base-lineage feature marked with a (+) and you choose one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
+For all of these, start with a base lineage. Take the ability score increase listed for your Touched lineage instead of the normal one. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
 
 ### Light-touched (Celestial)
 
@@ -349,9 +349,9 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 
 ### Fiend-touched (Lucian)
 
-The fiend-touched are born to those who traffic with fiends or who were exposed to significant fiendish energy, whether demonic or lucian. Those born of abyssal influence are much less acceptable in most societies, although those born to victims of attempted demon-serving sacrifice are accepted most places. They have a prediliction to fire, as most of the aether-woven fiendish combat bodies are fire-aspected.
+The fiend-touched are born to those who traffic with fiends or who were exposed to significant fiendish energy, whether demonic or lucian. Those born of abyssal influence are much less acceptable in most societies, although those born to victims of attempted demon-serving sacrifice are accepted most places after some alarm. They have a prediliction to fire, as most of the aether-woven fiendish combat bodies are fire-aspected.
 
-Fiend-touched have stigmata like light-born, but theirs tend toward red skin or golden slitted eyes, horns (whether small prongs or large ram-style horns), or tails. Some can manifest actual wings, but these are bat-like, not the glowing energy constructs of the light-born.
+Fiend-touched have stigmata like light-born, but theirs tend toward red skin or golden slitted eyes, horns (whether small prongs or large ram-style horns), or tails. Some can manifest actual wings, but these are bat-like, not the glowing energy constructs of the light-touched.
 
 #### Lineage Trait (Options)
 You gain the ASI instead of the normal lineage one and your choice of the one of the others, replacing the (+) trait from the parent lineage.
@@ -371,6 +371,8 @@ The element-touched are most common in Byssia and the less settled lands, as the
 
 #### Lineage Trait (Options)
 You gain the ASI instead of the normal lineage one and your choice of the one of the others, replacing the (+) trait from the parent lineage.
+
+**Ability Score Increase.** +1 STR OR +1 DEX OR +1 CON OR +1 INT instead of the normal lineage ASI.
 
 **Firelight Flicker.**  As an action, you can teleport to an unoccupied location you can see within 30' that is not behind total cover. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 
@@ -421,9 +423,9 @@ You grew up in one of the major cities dotting Noefra, surrounded by people of m
 
 **Proficiencies.** Insight, one musical instrument and one game set
 
-**Coin Counter.** You gain the \nameref{st:haggler} skill trick even if you wouldn't otherwise qualify.
+**Coin Counter.** You gain the haggler skill trick even if you wouldn't otherwise qualify.
 
-**Babyl-dweller.** You know the \textit{lesser gift of tongues} incantation and can perform it without a ritual scroll and without expending the component.
+**Babyl-dweller.** You know the Lesser Gift of Tongues incantation and can perform it without a ritual scroll and without expending the component.
 
 ### Maritime
 You grew up by of the of the major bodies of water (inland or oceanic) and spent your early life in and around the water, even if you didn't sail as a profession.
@@ -462,9 +464,9 @@ Your upbringing was full of religion, faith, ceremony, and worship. Whether of o
 
 **Proficiencies.** Religion, Insight, one artisan's tools of your choice
 
-**Ascendant Guidance.** You learn the \nameref{inc:augury} incantation and can cast it without a Ritual Scroll.
+**Ascendant Guidance.** You learn the augury incantation and can cast it without a Ritual Scroll.
 
-**Ritualist.** When you perform an incantation that has a performance time greater than 1 minute, you can reduce it by one step (to a minimum of one minute).
+**Ritualist.** When you perform an incantation or ritual spell that has a performance time greater than 1 minute, you can reduce it by one step (to a minimum of one minute).
 
 ### Rural
 You grew up part of a "civilized" nation, but like the majority of the population, you grew up outside the major cities and towns. Farming, ranching, keeping sheep or cows, and hunting made up most of your days. 
@@ -536,7 +538,7 @@ The Jungle of Fangs is home to several nations who share a common culture, histo
 **Serpentine Grace.** The fang-kin prize grace and dancing. Most who grow up here are more flexible than those of other cultures, no matter their lineage. You can squeeze through spaces one size smaller than yourself without penalty. In addition, you can move through enemies spaces as long as they are one size larger or smaller than yourself instead of two, although the spaces are still difficult terrain. 
 
 ### Uulani
-The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize \textit{family}, the uulani prioritize \textit{ideology}. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything--idleness is one of their sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
+The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize *family*, the uulani prioritize *ideology*. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything--idleness is one of their sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
 
 **Region.** Uulan Confederacy, Shinevog
 
@@ -558,15 +560,13 @@ The sample backgrounds in this chapter provide both concrete benefits (features,
 
 ## Proficiencies
 
-Each background gives a character proficiency in two skills (described in \nameref{ch:using-ability-scores}).
-
-In addition, most backgrounds give a character proficiency with one or more tools (detailed in \nameref{ch:equipment}).
+Each background gives a character proficiency in two skills. In addition, most backgrounds give a character proficiency with one or more tools.
 
 If a character would gain the same proficiency from two different sources, he or she can choose a different proficiency of the same kind (skill or tool) instead.
 
 ## Languages
 
-Some backgrounds also allow characters to learn additional languages beyond those given by your lineage. See “\nameref{sec:languages}.”
+Some backgrounds also allow characters to learn additional languages beyond those given by your lineage. See Languages at the end of this document.
 
 ## Equipment
 
@@ -577,58 +577,54 @@ Each sample background presents a list of questions you can use as a springboard
 
 ## Skill Trick
 
-A background gives access to a single skill trick (see \nameref{ch:skill-tricks} for more details and the complete list). As you customize your background, you can substitute the listed skill trick for any other that uses one of the proficiencies granted by the background.
+A background gives access to a single skill trick (see Skill Tricks later in this document for more details and the complete list). As you customize your background, you can substitute the listed skill trick for any other that uses one of the proficiencies granted by the background.
 
 ## Customizing a Background 
 
-You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace the granted skill trick with any other that uses one or more of the proficiencies granted by the background, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in the equipment section. If you spend coin, you can't also take the equipment package suggested for your class. Finally, choose two personality traits, one ideal, one bond, and one flaw.
+You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace the granted skill trick with any other that uses one or more of the proficiencies granted by the background, choose any two skills, and choose a total of three tool proficiencies or languages from the sample backgrounds. 
 
-### Personality Traits
+## Personality Traits
 Personality traits are small "tics" and mannerisms--things that your character does naturally--or other neutral facets other people can observe. These may be verbal tics, mannerisms, habits, etc. Generally these are small and neutral, just reminders for you to play off of. Unlike the bond, ideal, and flaw, they're less about being sources of plot hooks and more about characterization.
 
 Ideas:
-\begin{itemize}
-	\item You like to use overly-large words.
-	\item You talk with your hands, which can get dangerous if you happen to be armed.
-	\item Given a choice, you'll never take the shortest path between two points.
-	\item You have a horrible sense of direction and frequently get lost if left to your own devices.
-	\item You are fastidious about your grooming, getting annoyed if you're muddy or unable to bathe frequently.
-\end{itemize}
+- You like to use overly-large words.
+- You talk with your hands, which can get dangerous if you happen to be armed.
+- Given a choice, you'll never take the shortest path between two points.
+- You have a horrible sense of direction and frequently get lost if left to your own devices.
+- You are fastidious about your grooming, getting annoyed if you're muddy or unable to bathe frequently.
 
+\page
 ### Ideal
 Your ideal is something that you hold to deeply, something that you want to bring about. Different ideals can be interpreted many different ways--for one person, freedom might be being free from external restraints and going with the wind. For another, it might be about having enough power that no one tells you what to do. Choose something that your character will attempt to follow through on and seek for, but be careful about choosing things that strongly conflict with the ideals of fellow party members. Conflict of ideals isn't necessarily *wrong*, but it should be discussed openly out of character before the campaign begins so all the players are ok with it.
 
-\begin{itemize}
-	\item Freedom--you believe that everyone should be left to do as they please as long as it doesn't hurt anyone.
-	\item Freedom--you don't ever want anyone to tell you what to do.
-	\item Order--you believe it's best if everyone has a place and job and everyone stays in their place and does their job.
-	\item Order--you believe it's best if everyone listens to you.
-	\item Altruism--you believe that self-sacrifice for others is the noblest of goals.
-	\item Profit--you believe that money makes the world go round.
-\end{itemize}
+Examples:
+- Freedom. You believe that everyone should be left to do as they please as long as it doesn't hurt anyone.
+- Freedom. You don't ever want anyone to tell you what to do.
+- Order. You believe it's best if everyone has a place and job and everyone stays in their place and does their job.
+- Order. You believe it's best if everyone listens to you.
+- Altruism. You believe that self-sacrifice for others is the noblest of goals.
+- Profit. You believe that money makes the world go round.
 
 ### Bond
 While ideals are abstract, bonds are concrete. A person, organization, or place that you strongly want to protect, defend, regain, or help. Work with your GM to flesh out the details. A bond is supposed to act as a "plot eyebolt"--a place you've agreed with the GM that he or she can attach plot hooks and you'll bite.
 
-\begin{itemize}
-	\item Family--your family means everything to you, but you're not strong enough to defend them. Which is why you're adventuring.
-	\item Family--it was taken from you/you never had it. So you're out looking for family of your own.
-	\item Family--they kicked you out. So now you're looking to make your own or show them that they were wrong to do so.
-	\item A mentor--you act to further his or her legacy, fulfil their last wishes, etc.
-	\item A guild, company, etc.--you are an agent of a group that has sent you out on an adventure. You owe much to them.
-	\item A guild, company, etc.--they kicked you out and you want to prove them wrong/revenge/get back into their graces.
-\end{itemize}
+Examples:
+- Family. Your family means everything to you, but you're not strong enough to defend them. Which is why you're adventuring.
+- Family. It was taken from you/you never had it. So you're out looking for family of your own.
+- Family. They kicked you out. So now you're looking to make your own or show them that they were wrong to do so.
+- A mentor. You act to further his or her legacy, fulfil their last wishes, etc.
+- A guild, company, etc. You are an agent of a group that has sent you out on an adventure. You owe much to them.
+- A guild, company, etc. They kicked you out and you want to prove them wrong/get revenge/get back into their graces.
 
 ### Flaw
 A flaw is something that gets you in trouble. Like the bond, this is a plot eyebolt. Flaws should be noticeable and make you do things that aren't "optimal", but shouldn't make the game un-fun for others by putting the campaign in jeopardy senselessly. "I attack my fellows in blind rage" is not, generally, an appropriate flaw. Neither is "I never back down".
 
-\begin{itemize}
-	\item I tend to drink more than I should.
-	\item I'm an inveterate skirt-chaser (of the appropriate gender). A pretty person will turn my head and make me stop thinking as clearly.
-	\item I can stop gambling whenever I choose...
-	\item I'm in debt to a criminal organization.
-	\item I did something really stupid, and people are after me.
-\end{itemize}
+Examples:
+- I tend to drink more than I should.
+- I'm an inveterate skirt-chaser (of the appropriate gender). A pretty person will turn my head and make me stop thinking as clearly.
+- I can stop gambling whenever I choose...
+- I'm in debt to a criminal organization.
+- I did something really stupid, and people are after me.
 
 ## Regional Origin
 Every character comes from somewhere. And that origin makes a big difference. Who you know, what you know, who knows you, and what things you're good at are all part of your regional origin. Some regions have peculiarities that make some backgrounds inapposite or at least require significantly more explanation--for example, the entirely land-locked Uulan Confederacy doesn't exactly have many sailors. And the kritocracy of Byssia doesn't have nobility, but a similar background can be framed around one of the more influential (in practice, if not in law) merchant or religious families.
@@ -641,6 +637,8 @@ Byssia lies in the southern portion of the Nocthian Caldera and parts south, inc
 **Giant Spine and Barrier Mountains.**
 The mountain folk of Shinevog, Zhapai Karmap, the Tuura Adam, and the Uulan Confederacy are hardy and self-sufficient. Shinevog and Zhapai Karmap are known for their "anything goes" pursuit of knowledge and money, respectively, and are home to many peoples. The Tuura Adam and the Uulan Confederacy are both traditionalist states, the former the home of most jazuu and the later home to most of the dwarven clans. Neither of the latter has any water access, and neither really has "nobility" per se. But similar backgrounds can be constructed. All three are heavily craft oriented, but much more guild and individual-oriented than the industrialized forces of Wyrmhold. None of them have standing militaries.
 
+\page
+
 **Jungle of Fangs.**
 The Jungle lies mostly isolated from the south end of the Sea of Grass down to the Moon Sea. There are 3 nations here (Sha'slar, Asai'ka, and the Serpent Dominion), but they share most of the culture. Humans, half-elves (scaled), and ophidians are the dominant lineages, although dwarves are not uncommon. Aristocracy, merchant castes, and (in the far south), sailing are the big features. The area is uniformly religious, with heavy worship of the Queen Ascendant. Criminal organizations are quite common.
 
@@ -652,146 +650,325 @@ Wyrmhold is a highly militarized and industrial neighbor occupying the eastern f
 
 ## Sample Backgrounds
 ### Aristocrat
-**Proficiencies.** History, Persuasion, one gambling set, land or water vehicles
+**Proficiencies.** History, Persuasion, one gambling set, land OR water vehicles
 
 **Languages.** Any language of your choice
 
 **Equipment.** A set of fine clothes, a signet ring with your house's seal, a pouch containing 15 gp
 
-**Skill Trick.** Scholar: History OR Diplomat
+**Skill Trick.** Diplomat OR Scholar: History
 
 True nobles are rare in the Federated Nations--the noble houses are few and far between and mostly very small--and not generally suited for adventuring. But aristocrats (formal or informal), the scions of landed gentry, rich merchant princes, influential families, etc? Those are many, even in the more egalitarian nations. And second and third children often make a name for themselves as adventurers.
 
-**Questions to consider.**
-\begin{itemize}
-	\item What role did your family play in the nation you grew up in? Did they have a formal title or just significant influence? Maybe they had an old name, but had fallen on hard times?
-	\item Are you still in good favor with your family? Or are you estranged?
-	\item Is there anyone trying to get you to return and play a bigger role in the family affairs? Are you running from any arranged marriages?
-	\item How do you view the "common folk"? How familiar are you with their ways and traditions? How cloistered in your high status were you?
-\end{itemize}
+#### Questions to consider
+- What role did your family play in the nation you grew up in? Did they have a formal title or just significant influence? Maybe they had an old name, but had fallen on hard times?
+- Are you still in good favor with your family? Or are you estranged?
+- Is there anyone trying to get you to return and play a bigger role in the family affairs? Are you running from any arranged marriages?
+- How do you view the "common folk"? How familiar are you with their ways and traditions? How cloistered in your high status were you?
 
 ### Crafter
-\BackgroundBlock{Investigation, two crafting tools of your choice}{Dwarven}{A set of crafting tools you are proficient in, 10gp of materials for that work, and a pouch containing 15 gp}{\nameref{st:craft-apprentice}}
+**Proficiencies.** Investigation, Perception, two crafting tools of your choice
+
+**Languages.** Tumnii (Dwarven)
+
+**Equipment.** A set of crafting tools you are proficient in, 10gp of materials for that work, and a pouch containing 15 gp
+
+**Skill Trick.** Craft Apprentice
 
 Most of the Federated Nations works on a guild apprenticeship basis, with individual crafters learning under masters and striking out on their own to provide services. You were one of those crafters.
 
-**Questions to consider.**
-\begin{itemize}
-	\item Did you complete your apprenticeship? If not, is your master still looking for you? If so, what is your relationship with your former master?
-	\item Are you a member in good standing with any of the crafting guilds? If not, are you at odds with any?
-	\item What variety of crafting did you do (e.g. fine metal work, pots, structural metal, armor/weapon smithing, etc)?
-\end{itemize}
+#### Questions to Consider
+- Did you complete your apprenticeship? If not, is your master still looking for you? If so, what is your relationship with your former master?
+- Are you a member in good standing with any of the crafting guilds? If not, are you at odds with any?
+- What variety of crafting did you do (e.g. fine metal work, pots, structural metal, armor/weapon smithing, etc)?
 
 ### Criminal
-\BackgroundBlock{Intimidation OR Deception, Stealth, Thieves tools}{One common language of your choice}{Thieves tools, a set of dark clothing, and a pouch containing 15 gp}{\nameref{st:misdirect} OR \nameref{st:feint}}
+**Proficiencies.** Intimidation OR Deception, Stealth, Thieves tools
+
+**Languages.** One common language of your choice
+
+**Equipment.** Thieves tools, a set of dark clothing, and a pouch containing 15 gp
+
+**Skill Trick.** Misdirect OR Feint
 
 Criminal organizations, as well as individuals who live and operate outside the law, are common throughout the lands of the Federated Nations. The city state of Rauviz and the oligarchy of Asai'ka are most notorious for harboring criminal organizations, but "guilds" are present in most areas. Before you were an adventurer, you lived such a life.
 
-**Questions to Consider.**
-\begin{itemize}
-	\item Were you part of an organized group? Or a freelancer?
-	\item What was your specialty? Armed thuggery? Muscle? A pick-pocket? A confidence-man? A smuggler?
-	\item Do you still have connections with the underground where you came from? Are they friendly? Or did you flee in haste? If so, why?
-	\item What did you do that you regretted, if anything? What secrets do you have that might come back to bite you or your party?
-\end{itemize}
+#### Questions to Consider
+- Were you part of an organized group? Or a freelancer?
+- What was your specialty? Armed thuggery? Muscle? A pick-pocket? A confidence-man? A smuggler?
+- Do you still have connections with the underground where you came from? Are they friendly? Or did you flee in haste? If so, why?
+- What did you do that you regretted, if anything? What secrets do you have that might come back to bite you or your party?
 
+\page
 ### Entertainer
-\BackgroundBlock{Acrobatics, Performance, Disguise Kit, one musical instrument of your choice}{One common language of your choice}{A disguise kit, a set of performers clothes, a musical instrument, and a pouch containing 10 gp}{\nameref{st:tumble}}
+**Proficiencies.** Acrobatics, Performance, Disguise Kit, one musical instrument of your choice
+
+**Languages.** One common language of your choice
+
+**Equipment.** A disguise kit, a set of performers clothes, a musical instrument you are proficient in, and a pouch containing 10 gp
+
+**Skill Trick.** Tumble
 
 Entertainers are minstrels, traveling players, actors, actresses, temple dancers, street performers, etc. They often move from place to place in search of work and new audiences.
 
-**Questions to Consider.**
-\begin{itemize}
-	\item What kind of entertainer were you?
-	\item Were you part of a troupe or band, or were you solo?
-	\item What kinds of audiences did you favor? The common folk in taverns? Busking for coins on the street? The high society parties?
-	\item Was there any particular person or people you had drama with?
-\end{itemize}
+#### Questions to Consider
+- What kind of entertainer were you?
+- Were you part of a troupe or band, or were you solo?
+- What kinds of audiences did you favor? The common folk in taverns? Busking for coins on the street? The high society parties?
+- Was there any particular person or people you had drama with?
 
 ### Farmer
-\BackgroundBlock{Animal Handling, Survival, Nature, one crafting tool of your choice or Land Vehicles}{One common language of your choice}{A small pet (CR 0) such as a dog, cat, or squirrel that will do simple tricks, a pouch containing 5 gp}{\nameref{st:soothe-domesticated-animal} OR (if proficient in a crafting tool) \nameref{st:craft-apprentice}}
+**Proficiencies.** Animal Handling, Nature OR Survival, one crafting tool of your choice, and land vehicles
+
+**Languages.** One common language of your choice
+
+**Equipment.** A small pet (offensive CR 0) such as a dog, cat, or squirrel that will do simple tricks, a pouch containing 5 gp
+
+**Skill Trick.** Soothe domesticated animal OR Craft Apprentice
 
 The majority of the population of the Federated Nations is involved in farming or livestock handling to one degree or another. Without the rural folks, no one eats. Not even the greatest. You were part of that agricultural backbone...until you took up the adventuring life.
 
-\begin{itemize}
-	\item What did you or your family/village specialize in? Livestock? Grains? Did you have an orchard?
-	\item What kind of village or town did you live in? Maybe an isolated hamlet of a few dozen souls? maybe the outskirts of a large city?
-	\item Where did you get the resources and learning to pursue your adventuring career? A armsman might have inherited the sword and armor from an ancestor, etc.
-	\item Do you still have family back on the farm? Were they ok with you leaving?
-	\item What were you known for as a youth? Any particular events stand out?
-\end{itemize}
+#### Questions to Consider
+- What did you or your family/village specialize in? Livestock? Grains? Did you have an orchard?
+- What kind of village or town did you live in? Maybe an isolated hamlet of a few dozen souls? maybe the outskirts of a large city?
+- Where did you get the resources and learning to pursue your adventuring career? A armsman might have inherited the sword and armor from an ancestor, etc.
+- Do you still have family back on the farm? Were they ok with you leaving?
+- What were you known for as a youth? Any particular events stand out?
 
 ### Merchant
-\BackgroundBlock{Deception or Persuasion, Insight, land vehicles, one gambling set of your choice}{One common language of your choice}{A book, a quill pen, and ink. A pouch containing 20 gp}{\nameref{st:diplomat} OR \nameref{st:haggler}}
+**Proficiencies.** Deception OR Persuasion, Insight, land vehicles, one gambling set of your choice
+
+**Languages.** One common language of your choice
+
+**Equipment.** A book, a quill pen, and ink. A pouch containing 20 gp
+
+**Skill Trick.** Diplomat OR Haggler
 
 Merchants run the gamut from the great merchant princes of Rauviz or Asai'ka to the humble traveling peddlers wandering among the settlements on the fringes of the known world. Before taking up adventuring, you were living this life, trading goods produced by others for coin.
 
-\begin{itemize}
-	\item Were you a solo practitioner? Part of a family business? Or part of a larger conglomerate?
-	\item What did your business specialize in, if anything? Were you a purveyor of particular goods or a general peddler? What kind of customers were your norm?
-	\item What contacts do you still have?
-	\item What kind of reputation did you have? A fair dealer, accepted if not liked? A fly-by-night operator? Someone who could find what the customer wants...at a price? A shady, high pressure operator?
-\end{itemize}
+#### Questions to Consider
+- Were you a solo practitioner? Part of a family business? Or part of a larger conglomerate?
+- What did your business specialize in, if anything? Were you a purveyor of particular goods or a general peddler? What kind of customers were your norm?
+- What contacts do you still have?
+- What kind of reputation did you have? A fair dealer, accepted if not liked? A fly-by-night operator? Someone who could find what the customer wants...at a price? A shady, high pressure operator?
 
 ### Sailor
-\BackgroundBlock{Perception, Survival, water vehicles and cartographer's tools}{None}{A compass, a dagger, a pouch containing 10gp}{\nameref{st:alert} OR \nameref{st:lung-capacity}}
+**Proficiencies.** Perception, Survival, water vehicles and cartographer's tools
+
+**Languages.** One common language of your choice or Primordial
+
+**Equipment.** A compass, a dagger, a pouch containing 10gp
+
+**Skill Trick.** Alert OR Lung Capacity
 
 The Federated Nations is mostly landlocked. Four major bodies of water, plus a selection of riverine routes are the major outlets for the sailing dreams of mortal-kind. The cold and misty Sea of Dreams to the north, the placid, freshwater, and deep Lake Coy'in (more the size of an inland sea), the shallow and stormy Gap-tooth Bay near Byssia, and the pirate-infested, island-dotted tropical Serpent Sea south of the Jungle of Fangs. Each one has their own maritime tradition. You were crew aboard a ship, or maybe a solo fisherman.
 
-\begin{itemize}
-	\item Was your ship a large cargo vessel, a fast courier, or a fishing boat?
-	\item Was the business of your ship entirely above-board? Or was smuggling a factor?
-	\item What's your ship doing now?
-	\item Were you willingly part of that life? Or were you snatched up and bound to service?
-	\item Was your ship one big family or wer the captain and officers tyrants? Or maybe you were a tyrant?
-\end{itemize}
+#### Questions to Consider
+- Was your ship a large cargo vessel, a fast courier, or a fishing boat?
+- Was the business of your ship entirely above-board? Or was smuggling a factor?
+- What's your ship doing now?
+- Were you willingly part of that life? Or were you snatched up and bound to service?
+- Was your ship one big family or wer the captain and officers tyrants? Or maybe you were a tyrant?
 
+\page
 ### Scholar
-\BackgroundBlock{two of Arcana, History, Nature, or Religion}{Any two languages of your choice}{A quill, ink pot, and a notebook, a pouch containing 10 gp}{\nameref{st:linguist} OR \nameref{st:sense-baleful-magic}}
+**Proficiencies.** Your choice of two of Arcana, History, Nature, or Religion
 
-Many of the nations have a scholarly tradition, although not all have an *academic* tradition. Some scholars are bound up in a library, such as the Four Towers just outside Crisial City, others wander. Many, if not most, scholars have some association with the Sages Guild, the international union of "civilized" scholars. For some, however, that association is negative--they reject the hidebound and conservative traditions of the Sages.
+**Languages.** Any two languages of your choice
 
-\begin{itemize}
-	\item What was your specialty? The history of nations? Natural sciences? Arcana? The planes beyond? The practical matters of alchemy? Something even more esoteric or forbidden?
-	\item What is your relationship with the Sages Guild? A member in good standing? An outcast? Something in between?
-	\item If you were cloistered in a library or laboratory...what brought you out of that life? If you were a wanderer...what made you take up your particular practices (your class)?
-	\item Do you have a reputation in the scholarly community?
-\end{itemize}
+**Equipment.** A quill, ink pot, and a notebook, a pouch containing 10 gp
+
+**Skill Trick.** One of Linguist, Scholar: History, Scholar: Nature, or Scholar: Religion
+
+Many of the nations have a scholarly tradition, although not all have an *academic* tradition. Some scholars are bound up in a library, such as the Four Towers just outside Crisial City, others wander. Many, if not most, scholars have some association with the Sages Guild, the international union of "civilized" scholars. For some, however, that association is negative; they reject the hidebound and conservative traditions of the Sages.
+
+#### Questions to Consider
+- What was your specialty? The history of nations? Natural sciences? Arcana? The planes beyond? The practical matters of alchemy? Something even more esoteric or forbidden?
+- What is your relationship with the Sages Guild? A member in good standing? An outcast? Something in between?
+- If you were cloistered in a library or laboratory, what brought you out of that life? If you were a wanderer, what made you take up your particular practices (your class)?
+- Do you have a reputation in the scholarly community?
 
 ### Shrine-keeper
-\BackgroundBlock{Religion, Persuasion, Wood-carver's tools}{Sylvan OR Lucian}{A set of vestments, a holy symbol, and a pouch containing 10 gp}{\nameref{st:scholar-religion} OR \nameref{st:diplomat}}
+**Proficiencies.** Religion, Persuasion, Wood-carver's tools
+
+**Languages.** Sylvan OR Lucian
+
+**Equipment.** A set of vestments, a holy symbol, and a pouch containing 10 gp
+
+**Skill Trick.** Diplomat OR Scholar: Religion
 
 Shrine-keeper, priest, cleric, wise one, witch. Those that tend to the shrines of the Ascendants and kami that dot the landscape have many names. Most have no particular gifts of power; those that do often take up a calling like that of the priest or shaman class. But the number of those that simply tend the shrines, participating in the veneration and worship while not having an official standing with the Power in question, is legion. You were among that latter number whether by birth or choice.
 
-\begin{itemize}
-	\item What kind of shrine did you serve at? A small obscure rural shrine to a kami? Or a major temple in the heart of a city? Or maybe a private shrine frequented by the powerful?
-	\item Were you part of a larger group of keepers and priests? Or was this your duty alone?
-	\item Did you choose this life? Or was it thrust upon you by family obligations?
-	\item Do you still have faith in that Power? What's your relationship with Them now?
-	\item What event made you leave the service of the shrine and take up the life of a wandering adventurer? An oracle from your Power? Or the destruction/desecration of the shrine? Or maybe just a desire for a new life?
-\end{itemize}
+#### Questions to Consider
+- What kind of shrine did you serve at? A small obscure rural shrine to a kami? Or a major temple in the heart of a city? Or maybe a private shrine frequented by the powerful?
+- Were you part of a larger group of keepers and priests? Or was this your duty alone?
+- Did you choose this life? Or was it thrust upon you by family obligations?
+- Do you still have faith in that Power? What's your relationship with Them now?
+- What event made you leave the service of the shrine and take up the life of a wandering adventurer? An oracle from your Power? Or the destruction/desecration of the shrine? Or maybe just a desire for a new life?
 
 ### Soldier
-\BackgroundBlock{Athletics, Medicine, one game set, smiths' tools}{One common language of your choice}{One weapon you are proficient in, a rank insignia, and a pouch containing 10 gp}{\nameref{st:frighten} OR \nameref{st:medic}}
+**Proficiencies.** Athletics, Intimidation OR Medicine, one game set, smiths' tools
+
+**Languages.** One common language of your choice
+
+**Equipment.** One weapon you are proficient in, a rank insignia, and a pouch containing 10 gp
+
+**Skill Trick.** Frighten OR Medic
 
 Most of the Federated Nations don't have large standing armies--it's been a time of peace for quite a while (although this is changing with the advent of the Time of Troubles). Wyrmhold is the key exception. But they all have militias of one sort or another, and every nation has specialist forces such as Crisial's Scout Corps or the Caldera Wardens of Byssia. There are also many private guard companies (mercenary companies by another name) doing caravan and local security, as well as private "armies" of the various wealthy and/or aristocratic families, as well as the clan guards common in the more tribal areas. You served in one of these groups.
 
-\begin{itemize}
-	\item What kind of organization did you serve with?
-	\item Were you just a grunt or were you an officer?
-	\item What role did you play in that organization?
-	\item Did you leave on good terms? Or did you leave under a cloud (earned or not)?
-	\item Were there any particular (small-scale) actions you participated in?
-\end{itemize}
+#### Questions to Consider
+- What kind of organization did you serve with?
+- Were you just a grunt or were you an officer?
+- What role did you play in that organization?
+- Did you leave on good terms? Or did you leave under a cloud (earned or not)?
+- Were there any particular (small-scale) actions you participated in?
 
 ### Street Kid
-\BackgroundBlock{Perception, Stealth OR Intimidation, thieves tools, one gambling set of your choice}{None}{A gambling set, thieves tools, a pouch containing 5 gp}{\nameref{st:alert} OR \nameref{st:frighten}}
+**Proficiencies.** Perception, Stealth OR Intimidation, thieves tools, one gambling set of your choice
+
+**Languages.** Thieves' Cant
+
+**Equipment.** A gambling set, thieves tools, a pouch containing 5 gp
+
+**Skill Trick.** Alert OR Frighten
 
 Every city and substantial town has those who fall through the cracks. Kids, especially, who grow up among the poor and lack stable homes. Not all of them are orphans, but all of them share the desperate struggle for day-to-day survival. Working odd jobs, stealing food, joining a street gang, begging--these are the occupations of such children. You were part of that life, but unlike most, you broke out and gained enough training to adventure.
 
-\begin{itemize}
-	\item Were you an orphan? Why did you end up on the streets?
-	\item How did you survive? Did you try to play by the rules, or were you part of the underground (even if unofficially)? Were you part of a gang?
-	\item How did you gain the training and resources for your class? Was there a kind (or cruel!) mentor or benefactor? A happy accident? A particularly big score?
-	\item What kind of a town did you grow up in? Was it a big city? A medium-sized town?
-\end{itemize}
+#### Questions to Consider
+- Were you an orphan? Why did you end up on the streets?
+- How did you survive? Did you try to play by the rules, or were you part of the underground (even if unofficially)? Were you part of a gang?
+- How did you gain the training and resources for your class? Was there a kind (or cruel!) mentor or benefactor? A happy accident? A particularly big score?
+- What kind of a town did you grow up in? Was it a big city? A medium-sized town?
+
+\page
+# Appendix A: Skill Tricks
+The core rules document discusses skill tricks in more detail. This list contains the ones referenced above and general rules regarding skill tricks. Rules about gaining skill tricks or requirements are in the core rules document; you do not have to meet any prerequisites for any skill trick gained from your lineage, culture, or background.
+
+## General Rules
+Skill tricks are class-independent features gained by adventurers as they level and by lineage, culture, and backgrounds. They represent active or passive abilities stemming from training and practice with a particular proficiency or ability score. The DC for any skill trick is given by 8 + the listed ability modifier + your proficiency bonus. If you have expertise (add double your proficiency bonus to ability checks) in the listed skill or tool, targets of the ability make any saving throws at disadvantage.
+
+## Referenced Tricks
+
+### Alert
+
+*Wisdom (Perception OR Insight) Basic Skill Trick*
+
+You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight).
+
+### Diplomat
+
+*Charisma (Persuasion) Basic Skill Trick*
+
+When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+
+### Feint
+
+*Charisma (Deception) Basic Skill Trick*
+
+You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 STA. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them.
+
+### Frighten
+
+*Charisma (Intimidation) Basic Skill Trick*
+
+As an action, you can expend 1 STA to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn.
+
+### Haggler
+
+*Charisma (Persuasion OR Deception) Basic Skill Trick*
+
+You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90\% of the listed price.
+
+### Linguist
+
+*Intelligence (General) Basic Skill Trick*
+
+When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
+
+Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
+
+### Lung Capacity
+
+*Constitution (General) Basic Skill Trick*
+
+You can hold your breath for twice as long. In addition, you can spend 1 STA when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw. 
+
+### Medic
+
+*Wisdom (Medicine) Basic Skill Trick*
+
+When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, the target regains 1 hit point and is conscious instead.
+
+
+### Scholar: History
+
+*Intelligence (History) Basic Skill Trick*
+
+You can automatically identify significant family lines, crests, and recent events across the Federated Nations. Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
+
+### Scholar: Nature
+
+*Intelligence (Nature) Basic Skill Trick*
+
+You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
+
+\page
+### Scholar: Religion
+
+*Intelligence (Religion) Basic Skill Trick*
+
+You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
+
+### Soothe Domesticated Animal
+
+*Wisdom (Animal Handling) Basic Skill Trick*
+
+You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
+
+### Tumble
+
+*Dexterity (Acrobatics) Basic Skill Trick*
+
+You can move through opponents' spaces if they are one size larger than you by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
+
+# Appendix B: Languages of Quartus
+Your culture indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet. Every player character, by default, has proficiency in Common.
+
+Some of these languages are actually families of languages with many dialects. For example, the Primordial language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes. Creatures that speak different dialects of the same language can communicate with one another. A notation of "None, tr. [script]" means that the language is written transliterated into the other script, while it has no native written form. Native speakers of such a language generally do not write unless they're literate in another language that uses that script.
+
+Proficiency in a language includes the basic ability to speak, understand, read, and write (if that language has a written form). You can learn more languages after character creation via a variety of means, including training during downtime (the time between active on-screen adventures).
+
+## Common Languages
+
+|Language | Common Name | Typical Speakers | Script |
+|:----:|:----:|:----:|:----:|
+|Ard-teang| Orcish | Orcs, northern tribal peoples | Mixed Imperial/Aelven |
+|Common| -- | Most people | Reformed Imperial |
+|Metsae | Wood Elven | Ihmisi, northern tribal peoples | Aelven |
+|Ngyon Toi | Goblin | Goblins, southern tribal peoples | None, tr. Imperial |
+|Too-til | Giantish | Giants, jazuu, central mountain tribal peoples | Modern Runic |
+|Tumni | Dwarven | Dwarves, central mountain tribal peoples | Modern Runic |
+
+\page
+## Exotic Languages
+|Language | Common Name | Typical Speakers | Script |
+|:----:|:----:|:----:|:----:|
+|Abyssal | Demonic | Demons, cultists | Lucian |
+|Celestial | -- | Lucians acting on divine business | Lucian |
+|Draconic | -- | Dragons, dragonborn | None, tr. mixed Aelven/Runic |
+|Iath Neidr | Snakefolk | Ophidians | Modified Aelven |
+|Jinzi | Eastern Imperial | Eastern Noefrans | Jinzi |
+|Kamigami | Druidic, Sylvan | Druids, fey | None, tr. Aelven |
+|Lucian | Infernal | Astral residence | Lucian |
+|Primordial | Elemental | Elemental residents | Lucian |
+|Sarthak | Ship Speech | Ship folk and pirates of the Moon Sea & Modified Aelven |
+| Tiboran | Old Imperial | Scholars | Imperial |
+
+# Appendix C: Converting to 5e D&D
+Most of the material presented here should be fully compatible with normal 5e (2014) D&D. Characters gain all of Lineage (instead of race and subrace), Culture, and Background (replacing the regular background options). They are not, however, balanced for use alongside normal 5e races and backgrounds. A few specific alterations needed:
+
+- When a trait references learning an incantation, replace it with being able to ritual-cast (only, not spell slots) the relevant spell: augury -> augury, Lesser Gift of Tongues -> comprehend languages
+- Replace references to Stamina in skill tricks with a use limit of ability modifier (min one) per short rest.
+- Ability score increases become +2 from lineage and +2 from culture. The parent system doesn't split scores from modifiers, so +1 there is +2 in regular D&D. Similarly, the maximum ability score attainable from all normal sources is also 20, not +5.
+- The Shielding Stone feature instead grants the ability to raise the AC of one creature within 30 feet of you that is hit with an attack (as the *shield* spell) by your proficiency bonus, with the same usage limits as written.

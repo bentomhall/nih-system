@@ -1525,8 +1525,6 @@ Adamantine          | 23
 
 **Hit Points.** An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.
 
-
-
 **Size** | **Fragile** | **Resilient**
 |:----:|:----:|:----:| 
 Miniscule (vial, ring) | 1 | 5 (2d4) 

@@ -60,7 +60,7 @@ The most basic, most generic pattern of play is as follows:
 
 Many times, multiple actions can be resolved simultaneously and the GM may ask multiple players for their actions and decide how to order their resolutions. The first person to speak doesn't necessarily go first, because that depends on the entire situation.
 
-At times when exact sequencing is important (such as combat), the GM may call for initiative checks (see initiative). When in initiative order, players take actions from highest initiative downward. In the game world, they're all acting within the same short period of time--one complete pass through the initiative order, called a **round** represents about 6 seconds of game time--but they are sequenced for ease of play.
+At times when exact sequencing is important (such as combat), the GM may call for initiative checks (see initiative). When in initiative order, players take actions from highest initiative downward. In the game world, they're all acting within the same short period of time&mdash;one complete pass through the initiative order, called a **round** represents about 6 seconds of game time&mdash;but they are sequenced for ease of play.
 
 ### Rolling the Dice
 The role of dice (pun intended) in NIH is to provide a way of resolving actions when the outcome is uncertain and the outcomes are interesting. The dice never dictate the result but shouldn't be called on if one of the outcomes isn't acceptable. NIH calls for four major categories of dice rolls: attack rolls, saving throws, ability checks, and damage rolls. More occasionally, specific effects may call for rolling specific die, usually to pick at random from a table of possible results. Unlike other rolls, those table-based rolls cannot generally be modified by abilities or features.
@@ -169,10 +169,10 @@ An ability check tests a character's or monster's innate talent and training in 
 
 For every ability check, the GM decides which of the six abilities is relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class.
 
-The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency). You'll rarely be asked to make a Very Easy check--these are only relevant if you have less than a +4 bonus.
+The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency). You'll rarely be asked to make a Very Easy check; these are only relevant if you have less than a +4 bonus.
 
 |**Task Difficulty** | **DC** | **Failure Chance w/ +4**|
-|:----:|:----:|:----:|
+|:----|:----:|----:|
 |Very easy | 5 | 0% |
 |Easy | 10 | 25% |
 |Medium | 15 | 50% |
@@ -183,6 +183,8 @@ The more difficult a task, the higher its DC. The Typical Difficulty Classes tab
 \*: a Very Hard check is generally only doable as a higher-level character with proficiency or as a low-probability result with some sort of bonus die added to your check (such as the bless spell). You might be able to do it via one of the Exert or Focus special actions
 
 \*\*: A Nearly Impossible check generally requires both some sort of proficiency multiplier and a high-level character.
+
+::
 
 To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
 
@@ -251,7 +253,7 @@ The rules on hiding in the “Dexterity” section below rely on passive checks,
 \page
 ### Working Together
 
-Sometimes two or more characters team up to attempt a task. The character who's leading the effort---or the one with the highest ability modifier if it makes sense in the fiction---can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action. Helping with an Attack action requires the ability to attack using your own action.
+Sometimes two or more characters team up to attempt a task. The character who's leading the effort&mdash;or the one with the highest ability modifier if it makes sense in the fiction&mdash;can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action. Helping with an Attack action requires the ability to attack using your own action.
 
 A character can only provide help if the task is one that he or she could attempt alone. For example, trying to open a lock requires proficiency with thieves' tools, so a character who lacks that proficiency can't help another character in that task. Moreover, a character can help only when two or more individuals working together would actually be productive. Some tasks, such as threading a needle, are no easier with help.
 
@@ -265,11 +267,11 @@ Group checks don't come up very often, and they're most useful when all the char
 
 ## Using Each Ability
 
-Every task that a character or monster might attempt in the game is covered by one of the six abilities. This section explains in more detail what those abilities mean and the ways they are used in the game. Remember that ability scores are not as much physical or intellectual measurements as they are approaches and archetypes. A character can be physically fit and strong without having especially high Strength---they're just not that prone to approaching tasks with brute force.
+Every task that a character or monster might attempt in the game is covered by one of the six abilities. This section explains in more detail what those abilities mean and the ways they are used in the game. Remember that ability scores are not as much physical or intellectual measurements as they are approaches and archetypes. A character can be physically fit and strong without having especially high Strength&mdash;they're just not that prone to approaching tasks with brute force.
 
 ### Strength
 
-Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. As for archetypes, it correlates to the Strong Guy--having high Strength means you want your character to be good at using brute force and athletics to approach challenges.
+Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. As for archetypes, it correlates to the Strong Guy; having high Strength means you want your character to be good at using brute force and athletics to approach challenges.
 
 #### Strength Checks
 
@@ -629,7 +631,7 @@ Characters face darkness outdoors at night (even most moonlit nights), within th
 Generally, creatures with human-like vision can see brightly-illuminated creatures and objects from a substantial distance (assuming nothing blocks their sight). A rule of thumb is that creatures and objects are visible and recognizable at the following distances based on their size, assuming normal contrast with the background (ie not camouflaged):
 
 **Size** | **Visible at...**
-:----:|:----:| 
+:----|:----:| 
 Objects smaller than 6 in x 6 in | 25 ft  
 Objects smaller than 1 ft x 1 ft | 50 ft 
 Tiny creatures | 100 ft 
@@ -667,7 +669,7 @@ For most humanoid (and similar) creatures, hearing is best at detecting *presenc
 \page
 
 **Noise** | **Audible Distance**
-:----:|:----:|
+:----|:----:|
 Whispering or slow movement | 30 ft
 Conversation or normal movement | 60 ft 
 Combat | 100 ft
@@ -740,7 +742,7 @@ Additionally, characters recover their expended Stamina (see stamina-and-aether)
 
 ### Long Rest
 
-A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—--at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity—--the characters must begin the rest again to gain any benefit from it.
+A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity&mdash;at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity&mdash;the characters must begin the rest again to gain any benefit from it.
 
 At the end of a long rest, a character regains all lost hit points and aether (see stamina-and-aether). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
@@ -748,7 +750,7 @@ A character can't benefit from more than one long rest in a 24-hour period, and 
 
 <!--begin aside-->
 {Short rests are important}
-NIH system assumes that most "adventuring days" (the time between two long rests, whether 1 in-game day or many) that contain any significant amount of challenge will have time for at least one, and often two short rests. Some days may not--some days may have more. But on average, the system expects you to find time for at least one break sometime during the day, between challenges. That means that days consisting of a single big encounter are only ok when they're rare--use them as a spice, not a steady diet.
+NIH system assumes that most "adventuring days" (the time between two long rests, whether 1 in-game day or many) that contain any significant amount of challenge will have time for at least one, and often two short rests. Some days may not&mdash;some days may have more. But on average, the system expects you to find time for at least one break sometime during the day, between challenges. That means that days consisting of a single big encounter are only ok when they're rare&mdash;use them as a spice, not a steady diet.
 
 If you consistently find your pace too rushed (in universe) to take an hour off or if you frequently only have a single fight per in-game day, consider one of the variants listed below.
 ##### Fast Short Rests
@@ -759,7 +761,7 @@ This variant is designed for parties that prefer a more heroic, "catch your brea
 This variant allows a short-rest dependent class to adventure alongside a party of long-rest dependent classes without compromise, at the cost of some in-universe verisimilitude. In this variant, short rests only take 1 minute, but are limited to two per character per long rest. This way, any individual can choose to take a short rest at almost any time between combats, but can't endlessly spam them.
 
 ##### Safe resting only
-Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day, so short rests become meaningless. In this variant, you can only take a long rest when in a "safe spot"--an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest--short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
+Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day so short rests become meaningless. In this variant, you can only take a long rest when in a "safe spot": an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest; short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
 <!--end aside-->
 
 
@@ -831,7 +833,7 @@ A typical combat encounter is a clash between two sides, a flurry of weapon swin
 ## Combat Step by Step
         
 - **Determine surprise.** The GM determines whether anyone involved in the combat encounter is surprised.
-- **Establish positions.** The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.
+- **Establish positions.** The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are (how far away and in what direction).
 - **Roll initiative.** Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.
 - **Take turns.** Each participant in the battle takes a turn in initiative order.
 - **Begin the next round.** When everyone involved in the combat has had a turn, the round ends. Repeat steps 4 and 5 until the fighting stops, which may be before all participants on one side are dead or have fled.
@@ -854,13 +856,13 @@ If a tie occurs, the GM decides the order among tied GM-controlled creatures, an
 
 ### Your Turn
 
-On your turn, you can **move** a distance up to your speed and **take one action**. You decide whether to move first or take your action first. Your speed—--sometimes called your walking speed---is noted on your character sheet.
+On your turn, you can **move** a distance up to your speed and **take one action**. You decide whether to move first or take your action first. Your speed&mdash;sometimes called your walking speed&mdash;is noted on your character sheet.
 
-The most common actions you can take are described in the actions-in-combat section later in this chapter. Many class features and other abilities provide additional options for your action.
+The most common actions you can take are described in the Actions in Combat section later in this chapter. Many class features and other abilities provide additional options for your action.
 
-The movement-and-position section later in this chapter gives the rules for your move.
+The Movement and Position section later in this chapter gives the rules for your move.
 
-You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking Guard or Ready action, as described in actions-in-combat.
+You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking Guard or Ready action, as described in Actions in Combat.
 
 #### Bonus Actions
 
@@ -870,7 +872,7 @@ Various class features, spells, and other abilities let you take an additional a
 
 You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
 
-You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action *except* the Attack action (when you can make multiple attacks with that action)--in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
+You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action *except* the Attack action (when you can make multiple attacks with that action); in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
 
 {On action timing}
 Generally, NIH is more strict about actions being atomic than D&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions. You cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. **Note** movement is not an action. It can always be broken up however you wish around actions, bonus actions, and reactions, and with some restrictions even inside of actions (such as between attacks from a single action).
@@ -954,7 +956,7 @@ Each creature controls a different amount of space in combat. The Size Categorie
 
 
 **Size** | **Space**
-:----:|:----: 
+:----|----: 
 Miniscule | &mdash; 
 Tiny | 2.5 by 2.5 ft. 
 Small | 5 by 5 ft. 
@@ -966,7 +968,7 @@ Gargantuan | 20 by 20 ft. or larger
 \page
 #### Space
 
-A creature's space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn't 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can't get through unless the hobgoblin lets them. Miniscule creatures (such as a normal spider) do not control any space---any other creature can move through its space at will and it can enter other creatures' spaces at will.
+A creature's space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn't 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can't get through unless the hobgoblin lets them. Miniscule creatures (such as a normal spider) do not control any space&mdash;any other creature can move through its space at will and it can enter other creatures' spaces at will.
 
 A creature's space also reflects the area it needs to fight effectively. For that reason, there's a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one.
 
@@ -1123,11 +1125,11 @@ Abilities with ranges of Self (cone) or Self (cube) start at one side of your sp
 
 #### Invalid Targets
 
-If you select a target that is not valid for the ability and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would *not* be obvious, the spell goes off, the aether or stamina (if any) is expended, but the target is not affected. You gains no information from this--for abilities that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Attacks "miss" (have no effect on the target).
+If you select a target that is not valid for the ability and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would *not* be obvious, the spell goes off, the aether or stamina (if any) is expended, but the target is not affected. You gains no information from this; for abilities that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Attacks against invalid targets simply "miss" (have no effect on the target); no information is gained.
 
 ### Areas of Effect
 
-Abilities such as burning-hands and cone-of-cold cover an area, allowing them to affect multiple creatures at once.
+Abilities such as *burning hands* and *cone of cold* cover an area, allowing them to affect multiple creatures at once.
 
 An ability's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere. Every area of effect has a **point of origin**, a location from which the ability's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some abilities have an area whose origin is a creature or an object.
 
@@ -1164,7 +1166,7 @@ You select a sphere's point of origin, and the sphere extends outward from that 
 A sphere's point of origin is included in the sphere's area of effect.
 
 ## Overlapping Effects (aka Stacking Rules)
-Generally, effects combine (aka "stack") unless they came from abilities with the same name. Durations overlap---if you're stunned from two different sources and one is removed or ends, the other continues for its own independent duration. If multiple effects allow saving throws at the end of your turn to end the effect, you make the saving throws separately for each source. Binary conditions (such as poisoned) have no additional effect if poisoned multiple times.
+Generally, effects combine (aka "stack") unless they came from abilities with the same name. Durations overlap&mdash;if you're stunned from two different sources and one is removed or ends, the other continues for its own independent duration. If multiple effects allow saving throws at the end of your turn to end the effect, you make the saving throws separately for each source. Binary conditions (such as poisoned) have no additional effect if poisoned multiple times.
 
 \page
 
@@ -1199,11 +1201,11 @@ When a character makes an attack roll, they add an attack modifier (one of a Mel
 
 Each attack modifier is calculated by adding your proficiency bonus to the relevant ability score:
 
-**M ATK.** = STR + Proficiency
+**Melee ATK.** = STR + Proficiency
 
-**R ATK.** = DEX + Proficiency
+**Ranged ATK.** = DEX + Proficiency
 
-**S ATK.** = Spellcasting ability modifier + Proficiency
+**Spell ATK.** = Spellcasting ability modifier + Proficiency
 
 A few specific classes have the Nimble Strike feature, which allows them to use their R ATK where they would normally use their M ATK. The Armsman has a feature that allows the reverse, using M ATK for attacks with ranged weapons.
 
@@ -1230,7 +1232,6 @@ When a creature can't see you but you can see it, you have advantage on attack r
 ### Ranged Attacks
 
 When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack. Ranged weapon-based attacks add your Ranged Attack Modifier (DEX + proficiency) to the attack roll and your Dexterity modifier to the damage dealt; abilities that grant ranged spell attacks add your Spell Attack Modifier (class-specific modifier + proficiency) to the attack roll and generally do not add any modifier to the damage dealt. If you are not proficient with the weapon, you make the attack at disadvantage and ignore all sources of advantage for that attack.
-
 
 If the target of a ranged attack is totally concealed but does not have total cover (such by as if they are heavily obscured by dense fog), the attack is made with disadvantage. This overrides the unseen-attackers rules.
 
@@ -1326,7 +1327,7 @@ When a creature is bloodied, their autonomic body systems have pulled back their
 
 Each weapon, spell, and harmful monster ability specifies the damage it deals. You roll the damage die or dice, add any modifiers, and apply the damage to your target. Magic weapons, special abilities, and other factors can grant a bonus to damage. With a penalty, it is possible to deal 0 damage, but never negative damage.
 
-When attacking with a **weapon**, you add your ability modifier---the same modifier used for the attack roll---to the damage. A **spell** tells you which dice to roll for damage and whether to add any modifiers.
+When attacking with a **weapon**, you add your ability modifier&mdash;the same modifier used for the attack roll&mdash;to the damage. A **spell** tells you which dice to roll for damage and whether to add any modifiers.
 
 If a spell or other effect deals damage to **more than one target** at the same time, roll the damage once for all of them. For example, when an arcanist casts fireball or a priest casts flame-strike, the spell's damage is rolled once for all creatures caught in the blast.
 
@@ -1351,7 +1352,7 @@ The damage types follow, with examples to help a GM assign a damage type to a ne
 
 **Acid.** The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.
 
-**Bludgeoning.** Blunt force attacks---hammers, constriction, unarmed blows, and the like---deal bludgeoning damage, as does falling.
+**Bludgeoning.** Blunt force attacks&mdash;hammers, constriction, unarmed blows, and the like&mdash;deal bludgeoning damage, as does falling.
 
 **Cold.** The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.
 
@@ -1510,9 +1511,8 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 
 **Armor Class.** An object's Armor Class is a measure of how difficult it is to deal damage to the object when striking it (because the object has no chance of dodging out of the way). The Object Armor Class table provides suggested AC values for various substances.
 
-
 **Substance** | **AC**
-|:----:|:----|
+|:----|:----|
 Cloth, paper, rope  | 11 
 Crystal, glass, ice | 13 
 Wood, bone          | 15 
@@ -1526,7 +1526,7 @@ Adamantine          | 23
 **Hit Points.** An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.
 
 **Size** | **Fragile** | **Resilient**
-|:----:|:----:|:----:| 
+|:----|:----:|:----:| 
 Miniscule (vial, ring) | 1 | 5 (2d4) 
 Tiny (bottle, lock) | 2 (1d4) | 5 (2d4) 
 Small (chest, lute) | 3 (1d6) | 10 (3d6) 
@@ -1541,7 +1541,7 @@ Large (cart, 10-ft.-by-10-ft. window) | 5 (1d10) | 27 (5d10)
 
 \page
 
-# Appendix A: Summary of Changes from 5e SRD
+# Appendix B: Summary of Changes from 5e SRD
 NIH (hopefully not the final name) is proudly a 5e D&D fork. That's because I find that 5e does *most* of what I want in a system, at least at the core level. So why clone it and change stuff? To explore "what might have been."
 
 ## Why the code-name NIH?
@@ -1571,7 +1571,7 @@ Ok, this is a big list. And I'm not going to point out everything that changed, 
 - All PCs now have 2 new "universal" resources: Stamina and Aether. Aether replaces spell slots and fuels magical stuff and comes back on a long rest. Stamina fuels non-magical stuff and comes back on a short rest. Casters have more aether and less stamina; martials the reverse. Half-casters are more balanced. Your aether limit is how much aether you can spend in a single action, mostly used for limiting what spells you can learn/cast.
 - Everyone has three new options, Deflect, Exert, and Focus. 
   - Deflect is basically like the monster Parry ability (reaction to add +proficiency to AC) and must be declared before seeing the attack but allows a counter attack if the attack misses. Only affects one attack, and requires you to be wearing armor or mage armor. Costs Stamina.
-  - Exert spends Stamina to add your proficiency bonus to a STR/DEX/CON ability check or save. Allows you to stack proficiency--you can use it even if you have proficiency or expertise.
+  - Exert spends Stamina to add your proficiency bonus to a STR/DEX/CON ability check or save. Allows you to stack proficiency&mdash;you can use it even if you have proficiency or expertise.
   - Focus is basically Exert, but for INT/WIS/CHA stuff. Costs aether.
 - Helping someone with an attack requires you to be able to attack.
 - Explicit rules for jumping further than your STR (Athletics) allows.
@@ -1586,7 +1586,7 @@ Ok, this is a big list. And I'm not going to point out everything that changed, 
 - Cleaned up wording around movement. Basically everything is either explicitly difficult terrain (such as spirit guardians) or explicitly costs extra movement. No combining "speed halved" and "extra movement cost" weirdness.
 - Shoving now gives +5ft on the shove for every 5 you beat the opponent by.
 - Shoving someone successfully forces a DC 10 Concentration save.
-- Hit points are meat. Reintroduced the Bloodied condition--it has no effect directly, but serves as a trigger for other things.
+- Hit points are meat. Reintroduced the Bloodied condition&mdash;it has no effect directly, but serves as a trigger for other things.
 - Anything that repeatedly does damage is rolled once at the start of the initiator's turn and all targets take that same damage (unless they save or are resistant, of course).
 - No force damage type. It's all transformed into various physical types.
 - Only melee *weapon* attacks can knock someone out without consequences. Others can, but the NPC/PC will suffer lingering injuries.

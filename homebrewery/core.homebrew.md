@@ -228,7 +228,7 @@ The skills related to each ability score are shown in the following list. No ski
 - Performance
 - Persuasion
 
-Sometimes, the GM might ask for an ability check using a specific skill---for example, “Make a Wisdom (Perception) check.” At other times, a player might ask the GM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.
+Sometimes, the GM might ask for an ability check using a specific skill&mdash;for example, “Make a Wisdom (Perception) check.” At other times, a player might ask the GM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.
 
 For example, if a character attempts to climb up a dangerous cliff, the GM might ask for a Strength (Athletics) check. If the character is proficient in Athletics, the character's proficiency bonus is added to the Strength check. If the character lacks that proficiency, he or she just makes a Strength check.
 
@@ -357,7 +357,7 @@ You can't hide from a creature unless you have **total concealment** from that c
 
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight---the exact details are up to the GM and the situation.
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight, but the exact details are up to the GM and the situation.
 
 **Passive Perception..** When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
@@ -475,8 +475,8 @@ A Charisma check might arise when you try to influence or entertain others, when
 Attitudes of monsters toward PCs (and towards each other) strongly influence how much they can be persuaded, lied to, or intimidated. Often, getting what you want from a monster may require first taking steps to improve their attitude. This may involve *other* Charisma-based checks or may involve gifts, the heads of their enemies, or performing tasks for them.
 
 Generally, monster attitudes are one of the following (in order from most hostile to least).
-**Actively fighting you.** It's generally quite hard to get someone you or your allies are actively trying to harm (or who is actively trying to harm you) to stop and talk.
-**Hostile.** Hostility is one step up---they don't like you and don't want to help you, but aren't actively trying to kill/maim/eject you. Generally, the most you can get out of someone who is hostile to you is a grudging non-intervention, as long as that costs them nothing. They won't do anything that requires any effort on their part or runs them any risk.
+**Actively fighting you.** It's generally quite hard to get someone you or your allies are actively trying to harm (or who is actively trying to harm you) to stop and talk. Not impossible, but difficult and will generally require something dramatic.
+**Hostile.** Hostility is one step up. They don't like you and don't want to help you, but aren't actively trying to kill/maim/eject you. Generally, the most you can get out of someone who is hostile to you is a grudging non-intervention, as long as that costs them nothing. They won't do anything that requires any effort on their part or runs them any risk.
 **Unfriendly.** An unfriendly monster can be persuaded to take very minor risks as long as it gets them something good. But it's hard. And their preference is to do you minor disservice.
 **Indifferent.** An indifferent monster doesn't care either direction about you and your goals. They'll take minor risks if you butter them up enough, but won't normally go out of their way for you. On the flip side, it takes a major failure for them to do you dirty.
 **Friendly.** A friendly monster is willing to put forth minor efforts on your behalf with only the lightest persuasive touch. They'll take small risks. And generally they generally will forgive you if you accidentally do something they don't like. They might even do dangerous things for you with the right argument (or payment).
@@ -726,7 +726,7 @@ A character can also attempt a Strength check to break an object. The GM sets th
 \page
 ## Resting
 
-Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest---time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
+Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest, time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
 
 Adventurers can take short rests in the midst of an adventuring day and a long rest to end the day.
 
@@ -840,7 +840,7 @@ A typical combat encounter is a clash between two sides, a flurry of weapon swin
 
 A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.
 
-The GM determines who might be surprised, based on their understanding of the situation. If neither side tries to be stealthy, they automatically notice each other. If there is remaining uncertainty about who, if anyone, is surprised, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't. For an example of this, see the Appendix surprise
+The GM determines who might be surprised, based on their understanding of the situation. If neither side tries to be stealthy, they automatically notice each other. If there is remaining uncertainty about who, if anyone, is surprised, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter. They roll initiative and take their turn as normal. The condition automatically ends at the end of the surprised person's first turn. A member of a group can be surprised even if the other members aren't.
 
 Surprise generally requires that all attackers are hidden from the target. In exceptional circumstances, the GM might allow surprise in cases where the outbreak of hostilities is completely unexpected (such as an assassin pulling a hidden dagger at a peaceful ball). In social situations like the one mentioned, the GM might call for a Charisma (Stealth) check (in addition to any Dexterity (Sleight of Hand) checks necessary to conceal the weapon in the first place). Surprise is rare if both sides are openly wearing weapons or bearing spell foci and are interacting.
 
@@ -873,7 +873,7 @@ You can take only one bonus action on your turn, so you must choose which bonus 
 You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action. You cannot interrupt the resolution of an action with a bonus action *except* the Attack action (when you can make multiple attacks with that action)--in that case, you can take a bonus action between attacks just as you can move between attacks. If a bonus action requires you to take the Attack action, you must make at least one attack with that action before you can use the triggered bonus action.
 
 {On action timing}
-Generally, NIH is more strict about actions being atomic than D&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions---you cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. **Note** movement is not an action---it can always be broken up however you wish in and around actions, bonus actions, and reactions.
+Generally, NIH is more strict about actions being atomic than D&D. Unless specifically indicated in the text of the ability, you must resolve an action completely before using another action. This includes reactions. You cannot take reactions during your actions unless specifically allowed in the ability that grants the reaction. **Note** movement is not an action. It can always be broken up however you wish around actions, bonus actions, and reactions, and with some restrictions even inside of actions (such as between attacks from a single action).
     
 #### Other Activity on Your Turn
 
@@ -914,13 +914,13 @@ If you take an action that includes more than one attack, you can break up your 
 \page
 #### Using Different Speeds
 
-If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Remember that any movement subtracts from all pools individually---if a movement mode has no movement available, you cannot use that mode for the remainder of that turn.
+If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Remember that any movement subtracts from all pools individually. If a movement mode has no movement available, you cannot use that mode for the remainder of that turn.
 
 For example, if you have a 30 foot walking speed and a 60 foot flying speed (whether due to wings, a class ability, or an effect such as the fly incantation), you start your turn with two pools of movement: 30 feet walking and 60 feet flying. If you fly for 20 feet, you now have 10 feet (30 - 20) of walking movement available and 40 feet (60 - 20) of flying movement available. If you then land and walk 10 feet, you now cannot walk further (since you have 0 feet of walking movement left) but could then fly for another 30 feet (because 60 ft - 20 ft flying - 10 ft walking - 30 ft flying = 0 remaining).
 
 ### Difficult Terrain
 
-Combat rarely takes place in bare rooms or on featureless plains. Boulder-strewn caverns, briar-choked forests, treacherous staircases---the setting of a typical fight contains difficult terrain.
+Combat rarely takes place in bare rooms or on featureless plains. Boulder-strewn caverns, briar-choked forests, treacherous staircases; the setting of a typical fight contains difficult terrain.
 
 Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in a space count as difficult terrain.
 
@@ -981,7 +981,7 @@ Creatures can squeeze through spaces two sizes smaller than themselves under ext
 ### Effects that trigger on movement
 Some spells, abilities, or environmental effects have clauses such as "when the target moves" or "when a creature enters the area for the first time on a turn", etc. These trigger regardless of whether the movement was voluntary or not. Being shoved, pulled, or otherwise forced to move without using your action, reaction, or movement will trigger the effect.
 
-If the condition is "if the target *voluntarily* moves...", this requires the same trigger as Opportunity Attacks---the target must use their action, reaction, or movement to do so.
+If the condition is "if the target *voluntarily* moves...", this requires the same trigger as Opportunity Attacks: the target must use their action, reaction, or movement to do so.
 
 ## Interacting with Objects Around You
 
@@ -1056,7 +1056,7 @@ When the trigger occurs, you can either take your reaction right after the actio
 
 When you ready a spell, you cast it as normal (other than checking for valid targets and range) but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic-missile, your web spell ends, and if you take damage before you release magic-missile with your reaction, your concentration might be broken.
 
-Note that you cannot Ready an action outside of the initiative order (ie outside of combat). Adventurers and monsters are presumed (unless shown otherwise, such as by surprise) to be ready for combat---the entire point of the initiative system is to decide who could react to the presence of a threat first.
+Note that you cannot Ready an action outside of the initiative order (ie outside of combat). Adventurers and monsters are presumed (unless shown otherwise, such as by surprise) to be ready for combat. In fact, the entire point of the initiative system is to decide who could react to the presence of a threat first.
 
 ### Search
 
@@ -1073,7 +1073,7 @@ Every ability has a specific range, although for some that range is "basically a
 ### Melee Attacks
 Weapon-based melee attacks use the weapon's reach (usually 5 feet, but some weapons and abilities grant larger reach and monsters often have longer reach with their attacks) as the range. Spells and abilities that call for melee attacks will specify the range. You cannot make melee attacks against creatures beyond the range of the weapon or ability.
 
-Throwing a weapon is a slight exception to this rule---the thrown property specifies two ranges as if it was a ranged weapon. While this is still a melee attack (and thus does not provoke opportunity attacks and uses your Melee Attack Modifier), it obeys the ranged attack rules below with regard to its range. Weapons without the thrown property cannot be thrown as part of an attack and, while they can be thrown, do not deal damage or count as hitting the creature. In effect, they always miss. 
+Throwing a weapon is a slight exception to this rule: the thrown property specifies two ranges as if it was a ranged weapon. While this is still a melee attack (and thus does not provoke opportunity attacks and uses your Melee Attack Modifier), it obeys the ranged attack rules below with regard to its range. Weapons without the thrown property cannot be thrown as part of an attack and, while they can be thrown, do not deal damage or count as hitting the creature. In effect, they always miss. 
 
 ### Ranged Attacks
 
@@ -1177,13 +1177,13 @@ A few exceptions exist, including the following:
 
 ## Making an Attack
 
-Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack---whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
+Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack. Whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
 
 - **Choose a target.** Pick a target within your attack's range: a creature, an object, or a location. The target cannot have total cover from you.
 - **Determine modifiers.** The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.
 - **Resolve the attack.** You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.
 
-If there's ever any question whether something you're doing counts as an attack, the rule is simple: if you're making an attack roll, you're making an attack. And vice versa--attacks require attack rolls unless the ability specifically describes itself as an attack and calls for some other resolution method (such as the Grapple or Shove special attacks below).
+If there's ever any question whether something you're doing counts as an attack, the rule is simple: if you're making an attack roll, you're making an attack. And vice versa: attacks require attack rolls unless the ability specifically describes itself as an attack and calls for some other resolution method (such as the Grapple or Shove special attacks below).
 
 ### Attack Rolls
 
@@ -1300,7 +1300,7 @@ A target with **half cover** has a +2 bonus to AC and Dexterity saving throws. A
 
 A target with **three-quarters cover** has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by a solid obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk. Creatures two sizes larger or more than the target provide three-quarters cover instead of half cover. 
 
-A target with **total cover** can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different---a target has total cover when it stands behind a wall-of-force, but as the wall is transparent, it has no concealment and cannot hide. And vice versa--a target concealed by heavy fog or by un-illuminated darkness has no cover but is totally concealed and can attempt to hide.
+A target with **total cover** can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different; a target has total cover when it stands behind a wall-of-force, but as the wall is transparent, the target has no concealment and cannot hide. And vice versa; a target concealed by heavy fog or by un-illuminated darkness has no cover but is totally concealed and can attempt to hide.
 
 All abilities require a clear path to their target unless they specify otherwise or unless their effect would not work as written otherwise (such as the teleport incantation). 
 
@@ -1318,9 +1318,9 @@ A creature's current hit points (usually just called hit points) can be any numb
 Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature's capabilities until the creature drops to 0 hit points. Generally, creatures show little signs of damage until their hit points reach half of their maximum, a state known as bloodied. Any wounds they sustain as long as they have more than 0 hit points are superficial; the body's abilty to keep them going is unimpaired.
 
 {Yes, hit points are meat}
-Creatures in Quartus are usually triune---they have a "soul" (aka spark), a "spirit" (aka nimbus), and a body. The Spark is the self; the body is the interface with the physical world, and the Nimbus is the interface with the immaterial, as well as between the Spark and the body. The body contains both deep reserves of aether (the stuff of creation, out of which all things material or not are made), represented by the creature's Hit Dice, and more available reserves (Hit Points), both of which it can use to repair damage. This also explains why a fireball doesn't burn up your gear but can burn unattended objects---your nimbus enfolds all of your possessions and shields them from harm...at some cost to your aether reserves.
+Creatures in Quartus are usually triune. They have a "soul" (aka spark), a "spirit" (aka nimbus), and a body. The Spark is the self; the body is the interface with the physical world, and the Nimbus is the interface with the immaterial, as well as between the Spark and the body. The body contains both deep reserves of aether (the stuff of creation, out of which all things material or not are made), represented by the creature's Hit Dice, and more available reserves (Hit Points), both of which it can use to repair damage. This also explains why a fireball doesn't burn up your gear but can burn unattended objects; your nimbus enfolds all of your possessions and shields them from harm...at some cost to your aether reserves.
 
-When a creature is bloodied, their autonomic body systems have pulled back their efforts, only healing the deep, potentially impairing or fatal injuries and leaving the superficial ones alone (and similarly for your gear). When you reach 0 hit points, your body can no longer heal those impairing injuries and it begins trying to grab aether from anywhere it can (aka Death Saves). Most people in the setting suffer lingering injuries such as lost limbs, broken bones, limps, etc. when they are reduced to zero hit points even if they are stabilized. PCs are special for game reasons---they don't suffer those injuries. This is an explicit departure from simulation and those can be added back in if so desired. I, personally, don't find them fun to play with, so I don't do them.
+When a creature is bloodied, their autonomic body systems have pulled back their efforts, only healing the deep, potentially impairing or fatal injuries and leaving the superficial ones alone (and similarly for your gear). When you reach 0 hit points, your body can no longer heal those impairing injuries and it begins trying to grab aether from anywhere it can (aka Death Saves). Most people in the setting suffer lingering injuries such as lost limbs, broken bones, limps, etc. when they are reduced to zero hit points even if they are stabilized. PCs are special for game reasons, in that they don't suffer those injuries. This is an explicit departure from simulation and those can be added back in if so desired. I, personally, don't find them fun to play with, so I don't do them.
 
 ### Damage Rolls
 
@@ -1538,3 +1538,133 @@ Large (cart, 10-ft.-by-10-ft. window) | 5 (1d10) | 27 (5d10)
 **Objects and Damage Types.** Objects are immune to poison and psychic damage. You might decide that some damage types are more effective against a particular object or substance than others. For example, bludgeoning damage works well for smashing things but not for cutting through rope or leather. Paper or cloth objects might be vulnerable to fire and lightning damage. A pick can chip away stone but can't effectively cut down a tree. As always, use your best judgment.
 
 **Damage Threshold.** Big objects such as castle walls or particularly tough objects such as constructs of magical force often have extra resilience represented by a damage threshold. An object with a damage threshold has immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the object's damage threshold is considered superficial and doesn't reduce the object's hit points.
+
+\page
+
+# Appendix A: Summary of Changes from 5e SRD
+NIH (hopefully not the final name) is proudly a 5e D&D fork. That's because I find that 5e does *most* of what I want in a system, at least at the core level. So why clone it and change stuff? To explore "what might have been."
+
+## Why the code-name NIH?
+I'd like to say that it means something cool or clever. But it doesn't. NIH is short for both of "Naming Is Hard"...which it is...and "Not Invented Here". It started when I looked at the first UA material for what became 5.5e and went "I could do better than that." And figured I'd put my time and effort where my mouth was.
+
+I hope that by the time I publish this for real (if that day ever comes), I'll have a better name.
+
+## Can I steal stuff from NIH and use it in my own system/games?
+Absolutely 100%. It uses the CC-BY 4.0 SRD 5.1 as a base and everything new is licensed the same way. If you publish stuff using ideas or material, please do credit me somewhere. But imitation is the sincerest form of flattery.
+
+Attribution should be to "NIH System, Benjamin Hall, https://wiki.admiralbenbo.com"
+
+## Where can I get an updated version?
+The latest "fit for others to see" version is always found at [my github page](https://github.com/bentomhall/nih-system/blob/main/main.pdf). Click on the little down-arrow button under the word "history" to download the full PDF. This will always be kept up to date as I merge in side projects and rebuild it.
+
+## What changed from 5e?
+Ok, this is a big list. And I'm not going to point out everything that changed, just the highlights. And I'll try to break it up by chapter.
+
+### Core System Changes
+
+- I've rearranged a bunch of things. And tried to be more explicit about what I was thinking.
+- There is a default setting, [Dreams of Hope](https://wiki.admiralbenbo.org). It's got quite a few differences from most published settings.
+- XP is radically different. It's now a small counter that increments after each "meaningful" session, basically a formalized fiat leveling system.
+- No ability scores, just modifiers.
+- I've decided to lean in to ability scores as archetype-compliance, not physical measurements. You can be strong but not particularly high Strength, but being high Strength means that you are good at approaching things in a direct, forceful, physical way, often using brute physical force.
+- Wisdom is specifically called out as perceptiveness and Charisma as force of personality.
+- All PCs now have 2 new "universal" resources: Stamina and Aether. Aether replaces spell slots and fuels magical stuff and comes back on a long rest. Stamina fuels non-magical stuff and comes back on a short rest. Casters have more aether and less stamina; martials the reverse. Half-casters are more balanced. Your aether limit is how much aether you can spend in a single action, mostly used for limiting what spells you can learn/cast.
+- Everyone has three new options, Deflect, Exert, and Focus. 
+  - Deflect is basically like the monster Parry ability (reaction to add +proficiency to AC) and must be declared before seeing the attack but allows a counter attack if the attack misses. Only affects one attack, and requires you to be wearing armor or mage armor. Costs Stamina.
+  - Exert spends Stamina to add your proficiency bonus to a STR/DEX/CON ability check or save. Allows you to stack proficiency--you can use it even if you have proficiency or expertise.
+  - Focus is basically Exert, but for INT/WIS/CHA stuff. Costs aether.
+- Helping someone with an attack requires you to be able to attack.
+- Explicit rules for jumping further than your STR (Athletics) allows.
+- Added suggested vision distance limits and hearing limits.
+- A blind archer shooting at a blind target has disadvantage; unseen attackers only get advantage if they can see the target.
+- Small rework of the wording around (natural) darkness, concealment, etc.
+- More explicit wording around bonus action timing. Actions are atomic, although explicit permission is given for bonus actions to break up the Attack action (but not during an individual attack).
+
+\page
+- Dodge is renamed Guard. Because that annoyed me. You're always trying to dodge attacks.
+- Ranged attacks and spells (other than touch and self-ranged ones) provoke Opportunity attacks.
+- Cleaned up wording around movement. Basically everything is either explicitly difficult terrain (such as spirit guardians) or explicitly costs extra movement. No combining "speed halved" and "extra movement cost" weirdness.
+- Shoving now gives +5ft on the shove for every 5 you beat the opponent by.
+- Shoving someone successfully forces a DC 10 Concentration save.
+- Hit points are meat. Reintroduced the Bloodied condition--it has no effect directly, but serves as a trigger for other things.
+- Anything that repeatedly does damage is rolled once at the start of the initiator's turn and all targets take that same damage (unless they save or are resistant, of course).
+- No force damage type. It's all transformed into various physical types.
+- Only melee *weapon* attacks can knock someone out without consequences. Others can, but the NPC/PC will suffer lingering injuries.
+- More clarity around controlled vs independent mounts. Basically, if the player controls it/dictates its actions, it's controlled. Otherwise it's independent.
+
+### Equipment Changes
+- Ditched electrum. Instituted "astral credits" (at 10x platinum).
+- To cast spells in armor, you need to have proficiency in the armor and a feature in your class that grants that ability.
+- Reworked the armor types. Renamed some, moved some around, adjusted AC and especially weight (both generally downward)
+- Added some "exotic materials" for armor, with defined (non-magical) effects.
+- Also added masterwork armor, which reduces the cost of Deflect and (for heavy/medium armor) increases the amount of DEX you can apply by 1. Costs 2x and requires special craftsmen.
+- Added several new weapon properties that do special things (like cleaving).
+- TWF is now a property of light weapons, and no longer takes your bonus action.
+- Added special weapon materials. More of a role for silvered and adamantine weapons (see monsters for details), as well as masterwork weapons that cost 10x as much, require special craftsmen, but allow you to add your proficiency to damage.
+- Tridents now have the Special property that critical hits restrain the enemy until end of your next turn. Not much, but...
+- Hand crossbows only deal 1d4.
+- Nets are now equipment, not weapons, and require saves, not attacks.
+- Added "exotic ranged weapons", which subsumes all the thrown, attack-based consumables. Reworked their effects.
+
+### Character Creation
+Substantial changes. Many the classes got rewritten from the ground up, as did most of the "races" (now called lineages). 
+
+- Race is now Lineage. No sub-races. Each lineage gives a +1 ability modifier and a big feature or two small ones. Only physiological stuff.
+- Added Cultures. Anyone can take any culture. They give a +1 ability score and a non-biological feature.
+- Backgrounds now have a list of questions rather than tables to roll on. Mostly because I'm lazy. They also all give a skill trick (see that section for details).
+- Point-buy removed. You've got standard array and rolling. Because I have an irrational dislike for point-buy. And am too lazy to recalibrate the numeric scaling for modifier-only math..
+- No multiclassing. If it comes back, it will be very different. Probably in the form of skill tricks that emulate class features (getting lower level features with higher-level requirements).
+
+### Class Changes
+
+- Barbarian is now called Warden, and is explicitly magical/primal in nature. Complete rework of how rage works, splitting the offense and defensive parts. The defensive part can be sustained as a bonus action. Complete rework of subclasses. Super crit focused, and gets stuff that buffs crit chance.
+- Bard is removed, replaced by the Spellblade, a half-caster/half-rogue focusing on debilitating enemies and mixing spells and weapons. Has basically an inverted Bardic Inspiration. One subclass gets more party-buffing uses. No music focus.
+- Cleric renamed priest, and generalized. Only one domain gets medium armor, rest are light only. Gets Divine Intervention much earlier and more frequently, but weaker and roll-based. Very support focused.
+- Druid renamed Shaman, more elemental focused. Removed shape-shifting in favor of "manifest zones", basically placeable persistent buff/debuff/damage zones. More control focused.
+- Fighter renamed Armsman. Now the heavy armor/weapon/martial versatility guy. Anything's a weapon. Can use STR or DEX for all weapons starting at 6. At high levels, gets the ability to instantly kill low-health enemies, with a scaling threshold. Those too high to instantly kill must save or stun.
+- Monk renamed brawler, removed "eastern" influence. Gets extra stamina from Wisdom. No separate ki pool. More explicit magic.
+- Paladin becomes the oathbound. Not tons of changes here, but made find steed a class feature and integrated the smite spell effects into divine smite directly, trading damage dice to do special effects. Slightly more support oriented than stock.
+- Ranger keeps its name, but gets more focus on dealing damage. Subclasses refocused on "hunting" different types of prey (including "civilized" folks).
+
+\page
+- Rogue keeps its name, gets more explicit magic from subclasses. Lots and lots of skill tricks. Gets in-class ways to do sneak attack multiple times per turn (at a cost). No longer resource free.
+- Sorcerer and wizard merged into the arcanist. Now "wizard" is the book mage subclass. Metamagic is their big thing, and it's expanded.
+- Warlock goes much more like 3e's warlock: eldritch blast is a class feature and has blast shapes and effects. Only gets spells via invocations, but gets more invocations.
+
+### Skill Tricks
+Basically, I replaced feats with skill tricks. Everyone gets one when they gain an ASI. They're tiered into four groups (Basic, Advanced, Expert, and Master), with access half-way through each tier of play (except Master, which is 17). Rogues get more and get them early. They're mostly a single bullet point, but let you do all sorts of things, including (at high levels) find planar portals automatically and walk on air. Some are explicitly magical, others aren't.
+### Spell Changes
+Probably the most controversial part.
+
+- No spell levels or slots. Only aether and aether limits. Each spell costs a certain amount of aether to cast (1-15, roughly), and you can only spend so much on a single effect, including overcasting and metamagic or other effects.
+- Everyone is a "prepare from the full list every day" caster. But the lists are way smaller.
+- Spells as such stop at what would be 5th level (roughly). Higher level effects are Legendary Effects, and you gain access much more limitedly and they're limited to 1x/day each (unless you have specific features). And you can't change them out every day. But LE don't cost aether. So they're kinda like Mystic Arcana.
+- Many "utility" spells are moved to Incantations, which are kinda like 4e rituals. Anyone can find a Ritual Scroll (which allows you to do an Incantation if you're high enough level) and use it. They are balanced in other ways than spell slots. This includes everything from divinations to resurrection, flight, teleportation, planar travel, etc.
+- Minionmancy nerfed. Summon spells now explicitly prescribe what your choices are, and you can summon a lot fewer creatures (usually 1 bigger or 2 smaller). Animating dead is right out (in part for setting reasons, as necromancy is Kill on Sight just about everywhere for raisins).
+- Many spells rebalanced. Both up and down.
+- Upcasting (now called Overcasting) is better.
+- Counterspell doesn't exist as a spell. Instead, it's a feature some classes have in different ways and affects more than just spells. Yes, a high-level warden can smack a dragon and stop its breath.
+
+### Monster changes
+Not nearly as many here.
+
+- Split CR into offensive and defensive rating, listing both.
+- Removed resistance/immunity to non-magical attacks and (where appropriate) increased health to compensate.
+- Added specific vulnerabilities to silver and adamantine. For example, were creatures now have stupid high regeneration and don't die at 0 unless you can use your action and a weapon to chop their head off. Or, if you hit them with silver weapons (note, *not* magical ones), their maximum health goes down (basically they can't regenerate that damage). So reducing their max HP to 0 with silver kills them. Fiends (now unified) suffer disadvantage on their next attack if they're hit by silver. Constructs ignore a certain (often large) amount of damage from any source that isn't an adamantine weapon or a crit.
+- Reformatted how spells are done. No more slots means they're all X/day. Cantrips are moved to spell attacks specific to the monster, but they're marked as cantrips.
+
+### Magic Items
+
+- Remove most, if not all, +AC, +ATK, +save DC, +saves from items. I take bounded accuracy much more seriously. +Damage is ok. A +X weapon is generally now masterwork (ie +proficiency to damage).
+- Started adding the formulas directly to the magic items in some cases. Especially because some skill tricks give you access to magic item crafting recipes.
+
+
+## Can I suggest changes?
+Absolutely. Since I don't want to dox myself *directly*, the easiest way is to raise an issue or submit a Pull Request on the github repo ([located here](https://github.com/bentomhall/nih-system/)).
+
+I may not *accept* your suggestions, but I promise to consider them.
+
+## License Details
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of  the Coast LLC and available at [https://dnd.wizards.com/resources/systems-reference-document](https://dnd.wizards.com/resources/systems-reference-document). The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode). 
+
+The remainder of this work is &copy; Benjamin Hall 2023 and provided under the same license.

@@ -57,6 +57,40 @@ def convert_refs(text: str):
     output = re.sub(smarnamerefRe, r"\1", output)
     return output
 
+def convert_spell(text: str):
+    in_spell = False
+    startRe = r"\\DndSpellHeader\{(.*?)\}"
+    lineCount = 5
+    lines = text.splitlines()
+    output = []
+    current_line = 0
+    for line in lines:
+        startMatch = re.match(startRe, line)
+        if startMatch is None and not in_spell:
+            output.append(line)
+        elif startMatch is not None:
+            in_spell = True
+            current_line = 0
+            output.append(f"#### {startMatch.group(1)}")
+        elif in_spell:
+            if line[0] == "{":
+                txt = line[1:-1]
+                current_line += 1
+                if current_line == 1:
+                    output.append(f"*{txt}*\n")
+                elif current_line == 2:
+                    output.append(f"*Cast Time*: {txt}\n")
+                elif current_line == 3:
+                    output.append(f"*Range*: {txt}\n")
+                elif current_line == 4:
+                    output.append(f"*Components*: {txt}\n")
+                elif current_line == 5:
+                    in_spell = False
+                    output.append(f"*Duration*: {txt}")
+            else:
+                output.append(line)
+    return "\n".join(output)
+
 if __name__ == "__main__":
     filename = sys.argv[1]
     if filename is None:
@@ -67,9 +101,11 @@ if __name__ == "__main__":
         all_text = ifile.read()
         output = convert_sections(all_text)
         output = convert_refs(output)
+        output = convert_emphasis(output)
         output = convert_lists(output)
         output = convert_tables(output)
-        output = convert_emphasis(output)
+        output = convert_spell(output)
+        
         with open(outname, 'w', encoding='utf-8') as ofile:
             ofile.write(output)
 

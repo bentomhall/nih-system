@@ -1093,3 +1093,138 @@ Starting at 14th level, your speed has increased enough so that it appears you c
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 
+\page
+# Appendix A: Core Rules
+This section is a reminder of some of the unique rules, taken from the Core Rules and Equipment documents. If there's any doubt or ambiguity, check the full descriptions there first.
+
+## Universal Actions
+All PCs have access to the Deflect, Exert, and Focus activities, as long as they meet the prerequisites.
+
+### Deflect
+*Reaction when targeted by an attack, while wearing armor. Cost 2 STA.*
+
+When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
+
+### Exert
+*No action, when you make an ability check or saving throw that uses STR, DEX, or CON.*
+
+By spending 1 STA when you make an ability check or save that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
+
+### Focus
+*No action, when you make an ability check or saving throw that uses INT, WIS, or CHA.*
+
+By spending 1 AET when you make an ability check or save that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
+
+## Weapon Properties
+#### Ammunition 
+*Light crossbow (bolt), shortbow (arrow), sling (sling bullet), blowgun (dart), hand crossbow (bolt), heavy crossbow (bolt), longbow (arrow)*
+
+You can use a weapon that has the ammunition property to make a ranged
+attack only if you have ammunition to fire from the weapon. Each time
+you attack with the weapon, you expend one piece of ammunition. Drawing
+the ammunition from a quiver, case, or other container is part of the
+attack (you need a free hand to load a one-handed weapon). At the end of
+the battle, you can recover half your expended ammunition by taking a
+minute to search the battlefield.
+
+If you use a weapon that has the ammunition property to make a melee
+attack, you treat the weapon as an improvised weapon (see "Improvised
+Weapons" later in the section). A sling must be loaded to deal any
+damage when used in this way.
+
+#### Battering 
+*Greatclub, mace, quarterstaff, sling, maul, morningstar, warhammer*
+
+When you miss on an attack with a Battering weapon and do not roll a 1,
+the target still takes damage equal to your proficiency bonus.
+
+#### Consumed
+*Acid vial, alchemist's fire flask, holy water flask*
+
+Unlike most thrown weapons, each attack consumes the weapon--the weapon
+is its own ammunition.
+
+#### Cleaving
+*Sickle, battleaxe, glaive, greataxe, longsword, scimitar*
+
+Once per turn when you hit with a Cleaving weapon, you can attempt to
+carry some of the damage onto another target within your reach. If you
+do so, compare the initial attack roll to the new target's AC. If it
+hits, they take the same damage as the initial target.
+
+#### Heavy
+*Glaive, greataxe, greatsword, halberd, maul, pike*
+
+Small creatures have disadvantage on attack rolls with heavy weapons. A
+heavy weapon's size and bulk make it too large for a Small creature to
+use effectively.
+
+#### Light 
+*Club, dagger, handaxe, light hammer, sickle, scimitar, shortsword, hand crossbow*
+
+A light weapon is small and easy to handle, making it ideal for use when
+fighting with two weapons. When you wield a light weapon in each hand
+and take the Attack action, you can make an extra attack as long as you
+make attacks with each weapon. This extra attack does not add your
+ability modifier to the damage dealt.
+
+#### Loading
+*Light crossbow, hand crossbow, heavy crossbow*
+
+Because of the time required to load this weapon, you can fire only one
+piece of ammunition from it when you use an action, bonus action, or
+reaction to fire it, regardless of the number of attacks you can
+normally make.
+
+#### Parrying 
+*Greatsword, halberd, longsword*
+
+When you take the Deflect action while wielding a parrying weapon, you
+no longer expend your reaction. You can only use the Deflect action once
+during any turn.
+
+#### Precise
+*Dagger, pike, rapier, shortsword, war pick, longbow*
+
+These weapons are well adapted to finding the gaps in heavily-armored
+foes. When you make an attack with a precise weapon and have advantage,
+you score a critical hit on a 19 or 20.
+
+\page
+#### Range 
+*N/A*
+
+A weapon that can be used to make a ranged attack has a range in
+parentheses after the ammunition or thrown property. The range lists two
+numbers. The first is the weapon's normal range in feet, and the second
+indicates the weapon's long range. When attacking a target beyond normal
+range, you have disadvantage on the attack roll. You can't attack a
+target beyond the weapon's long range.
+
+#### Reach
+*Glaive, halberd, lance, pike, whip*
+
+This weapon adds 5 feet to your reach when you attack with it, as well
+as when determining your reach for opportunity attacks with it.
+
+#### Special
+*lance, whip, blowgun, alchemist's fire flask, holy water flask*
+
+A weapon with the special property has unusual rules governing its use,
+explained in the weapon's description (see "Special Weapons" in the Equipment document).
+
+#### Thrown
+*Dagger, handaxe, javelin, light hammer, dart, acid vial, alchemist's fire flask, holy water flask*
+
+If a weapon has the thrown property, you can throw the weapon to make an
+attack at larger range. If the weapon is a melee weapon, you use the
+same ability modifier for that attack roll and damage roll that you
+would use for a melee attack with the weapon. The range is defined the
+same way as it is for a ranged weapon, but this remains a melee attack.
+
+#### Two-Handed 
+*Greatclub, light crossbow, shortbow, glaive, greataxe, halberd, maul, pike, heavy crossbow, longbow*
+
+This weapon requires two hands when you attack with it. You can hold it
+in one hand, however. Two-handed melee weapons add twice your Strength
+modifier to the damage dealt, instead of just your Strength modifier.

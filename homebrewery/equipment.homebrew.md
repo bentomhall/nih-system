@@ -604,7 +604,7 @@ Whip | 2gp | 1d4 slashing | 3 lb. | Reach, special
 Blowgun | 10 gp | 1 piercing | 1 lb. | Ammunition (range 25/100), loading, special
 Crossbow, hand | 75 gp | 1d4 piercing | 3 lb. | Ammunition (range 30/120), light, loading
 Crossbow, heavy | 75 gp | 1d10 piercing | 18 lb. | Ammunition (range 100/400), heavy, loading, two-handed
-Longbow | 50 gp | 1d8 piercing | 2 lb. | Ammunition (range 150/600), heavy, piercing, two-handed
+Longbow | 50 gp | 1d8 piercing | 2 lb. | Ammunition (range 150/600), heavy, precise, two-handed
 **Exotic Ranged Weapons** | | | |
 Acid, Vial of | 25 gp | 2d6 acid | 1 lb. | Consumed, thrown (range 20)
 Alchemist’s Fire, Flask of | 50 gp | 2d4 fire | 1 lb. |Consumed, special, thrown (range 20)

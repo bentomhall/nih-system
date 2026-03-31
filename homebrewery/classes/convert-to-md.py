@@ -6,8 +6,8 @@ def convert_sections(text: str):
     subsectionRe = r"\\subsection\{(.*?)\}"
     subsubsectionRe = r"\\subsubsection\{(.*?)\}"
     subparagraphRe = r"\\subparagraph\*\{(.*?)\}"
-    output = re.sub(sectionRe, r"# \1", text)
-    output = re.sub(subsectionRe, r"### \1", output)
+    output = re.sub(sectionRe, r"### \1", text)
+    output = re.sub(subsectionRe, r"#### \1", output)
     output = re.sub(subsubsectionRe, r"#### \1", output)
     output = re.sub(subparagraphRe, r"**\1.**", output)
     output = re.sub(r"\\label\{.*?\}", r"", output)

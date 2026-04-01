@@ -27,6 +27,13 @@ Warlocks gain power by cheating. Unlike the arcanist who studies and meditates o
 
 Warlocks are a bit of an odd duck as classes go. They are the most flexible at build time, with options ranging from going all-in on spells (chosen from any list) to being a magical "archer" to being a sneaky wielder of darkness. Of all the classes, they are the only ones who can summon familiars. However, once built, they tend to focus on those few capabilities. Difficult to build, but easy to play (especially compared to an arcanist, for whom selecting the right spell at the right time is the difference between success and failure).
 
+|**Class**|**Primary Ability Score** |**Playstyle**
+:----|:----|:----
+Arcanist | INT | ranged control/damage
+Priest | WIS | mid-range support
+Shaman | WIS | mid-range control
+Warlock | CHA | flexible
+
 \page
 # Arcanist
 
@@ -307,7 +314,7 @@ When you gain this feature, you can replace one legendary effect you know with o
 ## Arcanist Spell List
 The Arcanist Spell List table contains a list of the spells available to all arcanists, ordered by aether cost.
 
-**0 Aether**
+##### 0 Aether
 	
 - acid burst
 - dancing lights
@@ -320,11 +327,11 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - ray of frost
 - shocking grasp
 	
-**1 Aether**
+##### 1 Aether
 	
 - yoink 
 	
-**2 Aether**
+##### 2 Aether
 	
 - burning hands
 - color spray
@@ -342,7 +349,7 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - sleep
 - thunderwave
 	
-**3 Aether**
+##### 3 Aether
 	
 - acid arrow
 - alter self
@@ -360,12 +367,12 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - shatter
 - web
 	
-**4 Aether**
+##### 4 Aether
 	
 - arcane binding
 - vampiric touch
 	
-**5 Aether**
+##### 5 Aether
 	
 - aetheric barrier
 - blink
@@ -381,15 +388,15 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - stinking cloud
 - unbind
 	
-**6 Aether**
+##### 6 Aether
 	
 - blight
 	
-**7 Aether**
+##### 7 Aether
 	
 - ice storm
 	
-**8 Aether**
+##### 8 Aether
 	
 - arcane eye
 - black tentacles
@@ -403,11 +410,11 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - phantasmal killer
 - wall of fire
 	
-**10 Aether**
+##### 10 Aether
 	
 - cone of cold
 	
-**12 Aether**
+##### 12 Aether
 	
 - conjure elemental
 - mislead
@@ -416,15 +423,15 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 - telekinesis
 - wall of ice
 	
-**13 Aether**
+##### 13 Aether
 	
 - chain lightning
 	
-**14 Aether**
+##### 14 Aether
 	
 - cloudkill
 	
-**15 Aether**
+##### 15 Aether
 	
 - wall of force
 
@@ -707,7 +714,7 @@ Starting at 17th level, when you would normally roll one or more dice to restore
 ## Priest Spell List
 The Priest Spell List table contains a short summary of the spells available to all Priest, ordered by aether cost. 
 
-**0 Aether**
+##### 0 Aether
 	
 - grave touch
 - guidance
@@ -718,11 +725,11 @@ The Priest Spell List table contains a short summary of the spells available to 
 - shillelagh
 - thaumaturgy
 	
-**1 Aether**
+##### 1 Aether
 	
 - cure wounds
 	
-**2 Aether**
+##### 2 Aether
 	
 - bane
 - bless
@@ -742,7 +749,7 @@ The Priest Spell List table contains a short summary of the spells available to 
 - shield of faith
 - spiritual weapon
 	
-**3 Aether**
+##### 3 Aether
 	
 - aid
 - blindness deafness
@@ -760,11 +767,11 @@ The Priest Spell List table contains a short summary of the spells available to 
 - suggestion
 - warding bond
 	
-**4 Aether**
+##### 4 Aether
 	
 - arcane binding
 	
-**5 Aether**
+##### 5 Aether
 	
 - aetheric barrier
 - beacon of hope
@@ -779,7 +786,7 @@ The Priest Spell List table contains a short summary of the spells available to 
 - unbind
 - wind wall
 	
-**8 Aether**
+##### 8 Aether
 	
 - banishment
 - confusion
@@ -793,12 +800,12 @@ The Priest Spell List table contains a short summary of the spells available to 
 - stoneskin
 - wall of fire
 	
-**9 Aether**
+##### 9 Aether
 	
 - flame strike
 - mass cure wounds
 	
-**12 Aether**
+##### 12 Aether
 	
 - contagion
 - dispel otherworldly influence
@@ -806,11 +813,11 @@ The Priest Spell List table contains a short summary of the spells available to 
 - true seeing
 - wall of stone
 	
-**14 Aether**
+##### 14 Aether
 	
 - sunbeam
 	
-**15 Aether**
+##### 15 Aether
 	
 - blade barrier
 
@@ -1113,7 +1120,7 @@ Starting at 14th level, your connection to the spirits has given you a certain i
 ## Shaman Spell List
 The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost.
 
-**0 Aether**
+##### 0 Aether
 	
 - acid burst
 - dancing lights
@@ -1121,11 +1128,11 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - produce flame
 - shillelagh
 	
-**1 Aether**
+##### 1 Aether
 	
 - cure wounds
 	
-**2 Aether**
+##### 2 Aether
 	
 - bane
 - burning hands
@@ -1141,7 +1148,7 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - sleep
 - thunderwave
 	
-**3 Aether**
+##### 3 Aether
 	
 - acid arrow
 - alter self
@@ -1160,11 +1167,11 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - spike growth
 - web
 	
-**4 Aether**
+##### 4 Aether
 	
 - moonbeam
 	
-**5 Aether**
+##### 5 Aether
 	
 - bestow curse
 - conjure animals
@@ -1177,17 +1184,17 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - unbind
 - wind wall
 	
-**6 Aether**
+##### 6 Aether
 	
 - blight
 - call lightning
 	
-**7 Aether**
+##### 7 Aether
 	
 - ice storm
 - wall of thorns
 	
-**8 Aether**
+##### 8 Aether
 	
 - caustic torrent
 - conjure mephits
@@ -1201,15 +1208,15 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - stoneskin
 - wall of fire
 	
-**9 Aether**
+##### 9 Aether
 	
 - cone of cold
 	
-**10 Aether**
+##### 10 Aether
 	
 - conjure elemental
 	
-**12 Aether**
+##### 12 Aether
 	
 - cloudkill
 - dispel otherworldly influence
@@ -1219,7 +1226,7 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - wall of ice
 - wall of stone
 	
-**14 Aether**
+##### 14 Aether
 	
 - insect plague
 

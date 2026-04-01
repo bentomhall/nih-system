@@ -1,3 +1,21 @@
+{{frontCover}}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+# Spells, Skill Tricks, and Equipment
+## NIH System
+___
+
+{{banner PLAYTEST}}
+
+{{footnote
+  Content for NIH. CC-BY-4.0, uses material from SRD 5.1
+}}
+
+![background image](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
+
+\page
+
 # Equipment
 
 Common coins come in several different denominations based on the
@@ -224,7 +242,7 @@ the arms.
 Plate (also called "plate mail", despite that being a misnomer) consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots or metal
 sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
 
-<!--{{wide--> 
+{{wide
 | **Armor**    | **Cost** | **Armor Class (AC)** | **Strength** | **Stealth** | **Weight** |
 |:----|:----:|:----:|----:|---------------------:|:--------------------:|
 | Light Armor  | | | | ||
@@ -243,9 +261,8 @@ sabatons, a visored helmet, and thick layers of padding and underneath the armor
 |Shield   |   ||  | ||
 | Shield| 10 gp  | +2  | &mdash;    | &mdash;   | 6 lb.    |
 
-<!--}}-->
+}}
 
-\page
 ### Getting Into and Out of Armor
 
 The time it takes to don or doff armor depends on the armor's category.
@@ -266,6 +283,9 @@ Light Armor | 1 minute | 1 minute
 Medium Armor | 5 minutes | 1 minute
 Heavy Armor | 10 minutes | 5 minutes
 Shield | 1 action | 1 action
+
+
+\page
 
 
 ### Fantastic Materials: Armor
@@ -305,7 +325,6 @@ When skinned carefully and properly tanned, exotic leathers and hides can be mad
 #### Mythril
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
 
-\page
 ## Weapons
 
 Your class grants proficiency in certain weapons, reflecting both the
@@ -342,7 +361,8 @@ add your proficiency bonus to the attack roll.
 Many weapons have special properties related to their use, as shown in
 the Weapons table.
 
-<!--begin note-->
+{{note
+###### Hands and Weapons
 Your character does not have a "main hand" and "off hand". If you are
 wielding more than one weapon, you can use either one to attack (or both
 if you have more than one attack per action). You only get additional
@@ -354,8 +374,10 @@ hands, and you can shift how you’re wielding your weapon without using
 an action during your turn. You can’t use a weapon in two hands if you
 are wielding a shield or are holding anything in one of your hands.
 Unlike 5e, there is no versatile property.
-<!--end note-->
 
+}}
+
+\page
 #### Ammunition 
 
 You can use a weapon that has the ammunition property to make a ranged
@@ -421,7 +443,6 @@ These weapons are well adapted to finding the gaps in heavily-armored
 foes. When you make an attack with a precise weapon and have advantage,
 you score a critical hit on a 19 or 20.
 
-\page
 #### Range 
 
 A weapon that can be used to make a ranged attack has a range in
@@ -474,6 +495,7 @@ ranged weapon to make a melee attack, or throws a melee weapon that does
 not have the thrown property, it also deals 1d4 damage. An improvised
 thrown weapon has a normal range of 20 feet and a long range of 60 feet.
 
+\page
 ### Silvered Weapons
 
 Some monsters are particularly susceptible to silver weapons, so
@@ -513,7 +535,6 @@ This red and black stone can be ground up and alloyed with steel to make weapons
 #### Mythril
 Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Greatswords and greataxes lose the Heavy property, and weapons without the Two-Handed property gain the Light property.
 
-\page
 #### Necrite
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.
 
@@ -564,7 +585,7 @@ someone prone (ie trip them) and when you do so, you can choose to pull
 them 5 ft closer to you as part of that same attack.
 
 \page
-<!--{{wide-->
+{{wide
 **Name** | **Cost**| **Damage** | **Weight** | **Properties**
 :----|:----:|:----|:----:|:----|
 **Simple Melee Weapons** | | | |
@@ -609,9 +630,9 @@ Longbow | 50 gp | 1d8 piercing | 2 lb. | Ammunition (range 150/600), heavy, prec
 Acid, Vial of | 25 gp | 2d6 acid | 1 lb. | Consumed, thrown (range 20)
 Alchemist’s Fire, Flask of | 50 gp | 2d4 fire | 1 lb. |Consumed, special, thrown (range 20)
 Holy water, Flask of | 25 gp | 2d6 radiant (special) | 1 lb. | Consumed, special, thrown (range 20)
-<!--}}-->
 
-\page
+}}
+
 ## Adventuring Gear
 
 This section describes items that have special rules or require further
@@ -638,6 +659,7 @@ A set of pulleys with a cable threaded through them and a hook to attach
 to objects, a block and tackle allows you to hoist up to four times the
 weight you can normally lift.
 
+\page
 #### Book 
 
 A book might contain poetry, historical accounts, information pertaining
@@ -733,7 +755,6 @@ A lamp casts bright light in a 15-foot radius and dim light for an
 additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint)
 of oil.
 
-\page
 #### Lantern, Bullseye 
 
 A bullseye lantern casts bright light in a 60-foot cone and dim light
@@ -753,7 +774,7 @@ A key is provided with the lock. Without the key, a creature proficient
 with thieves' tools can pick this lock with a successful DC 15 Dexterity
 check. Your GM may decide that better locks are available for higher
 prices.
-
+\page
 #### Magnifying Glass 
 
 This lens allows a closer look at small objects. It is also useful as a
@@ -851,7 +872,6 @@ weights up to 2 pounds. With it, you can measure the exact weight of
 small objects, such as raw precious metals or trade goods, to help
 determine their worth.
 
-\page
 #### Shamanic Focus 
 
 A shamanic focus might be a sprig of mistletoe or holly, a wand or
@@ -882,7 +902,7 @@ dim light for an additional 20 feet. If you make a melee attack with a
 burning torch and hit, it deals 1 fire damage.
 
 \page
-<!--{{wide-->
+{{wide
 **Item** | **Cost** | **Weight** | | **Item** | **Cost** | **Weight**
 :----|:----:|:----:|:----:|:----:|:----:|:----:|
 Abacus | 2 gp | 2 lb. | | Hunting trap | 5 gp | 25 lb.
@@ -936,7 +956,8 @@ Holy symbol | | | | Tent, two-person | 2 gp | 20 lb.
 &mdash;Reliquary | 5 gp | 2 lb. | | Vial | 1 gp | —
 Holy water (flask) | 25 gp | 1 lb. | | Waterskin | 2 sp | 5 lb. (full)
 Hourglass | 25 gp | 1 lb. | | Whetstone | 1 cp | 1 lb.
-<!--}}-->
+
+}}
 
 \page
 
@@ -1008,7 +1029,6 @@ waterskin.
 Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10
 sheets of parchment, a little bag of sand, and a small knife.
 
-\page
 ## Tools
 
 A tool helps you to do something you couldn't otherwise do, such as
@@ -1053,7 +1073,7 @@ examples appear on the Tools table, but other kinds of gaming sets
 exist. If you are proficient with a gaming set, you can add your
 proficiency bonus to ability checks you make to play a game with that
 set. Each type of gaming set requires a separate proficiency.
-
+\page
 #### Herbalism Kit 
 
 This kit contains a variety of instruments such as clippers, mortar and
@@ -1093,7 +1113,6 @@ pair of pliers. Proficiency with these tools lets you add your
 proficiency bonus to any ability checks you make to disarm traps or open
 locks.
 
-\page
 
 **Item** | **Cost** | **Weight**
 :----|----:|----:|
@@ -1136,7 +1155,7 @@ Navigator’s tools | 25 gp | 2 lb.
 Poisoner’s kit | 50 gp | 2 lb.
 Thieves’ tools | 25 gp | 1 lb.
 Vehicles (land or water) | |
-
+\page
 ## Mounts and Vehicles
 
 A good mount can help you move more quickly through the wilderness, but
@@ -1185,8 +1204,6 @@ the speed of the vehicle. These vehicles can't be rowed against any
 significant current, but they can be pulled upstream by draft animals on
 the shores. A rowboat weighs 100 pounds, in case adventurers carry it
 over land.
-
-\page
 
 **Item** | **Cost** | **Speed** | **Carrying Capacity**|
 :----|----:|----:|----:|
@@ -1255,6 +1272,7 @@ the value of commonly exchanged goods.
 50 gp | 1 lb. of gold
 500 gp | 1 lb. of platinum
 
+\page
 ## Expenses
 
 When not descending into the depths of the earth, exploring ruins for
@@ -1279,8 +1297,6 @@ chosen lifestyle over a thirty-two-day period (one Quartus month),
 multiply the listed price by 32. Your lifestyle might change from one
 period to the next, based on the funds you have at your disposal, or you
 might maintain the same lifestyle throughout your character's career.
-
-\page
 
 Your lifestyle choice can have consequences. Maintaining a wealthy
 lifestyle might help you make contacts with the rich and powerful,
@@ -1358,6 +1374,7 @@ owner of a few small businesses. You have respectable lodgings, usually
 a spacious home in a good part of town or a comfortable suite at a fine
 inn. You likely have a small staff of servants.
 
+\page
 #### Aristocratic 
 
 You live a life of plenty and comfort. You move in circles populated by
@@ -1387,7 +1404,7 @@ adventures practicing a profession, you can eke out the equivalent of a
 poor lifestyle. Proficiency in the Survival skill lets you live at the
 equivalent of a comfortable lifestyle.
 
-\page
+\column
 ### Food, Drink, and Lodging
 
 The Food, Drink, and Lodging table gives prices for individual food
@@ -1421,6 +1438,7 @@ Fine wine (bottle) | 10 gp
 Hard liquor (dram) | 1 gp
 Hard liquor (fifth) | 20 gp
 
+\page
 ### Services
 
 Adventurers can pay nonplayer characters to assist them or act on their
@@ -1495,10 +1513,13 @@ NIH system includes magic items. It is expected that adventurers will accumulate
 
 Another core principle is **attunement** limits. Items that provide lasting, stacking benefits, give permanent new options, or that significantly enhance the combat prowess of a character should generally require attunement. Characters are limited to having 3 items attuned at any one time. Attuning to an item requires you to finish a short rest with it in your possession and consciously decide to attune to it over that short rest. In the fiction layer, attunement represents bonding your spirit with the magic item so that it feeds off of your energy and can act as a part of you (to some limited degree).
 
-#### Developer Note: Cursed Items
+{{note
+###### Cursed Items
 I have chosen not to include cursed items in this list. Too often, I've found that the curse either only trivially affects the character (rendering it a power boost over a normal item) or is punitive (in which case the item just gets ignored). I prefer not to do things that foster meta-game thinking or promote an antagonistic, "gotcha" relationship between players and GMs.
 
 But, as always, do as you wish. They don't break anything, they're just not to my personal taste.
+}}
+
 
 ## Tier
 Magic items have a **tier** assigned to them, which indicates approximately at what stage of play (see stages-of-play) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
@@ -1555,6 +1576,7 @@ Even though many types of armor (especially heavy armor) have integrated sabaton
 **Robes.**
 Robes cannot be worn with any armor, magical or not, except a mithral breastplate or any chain shirt.
 
+\page
 #### Adamantine Armor
 
 *Armor (medium or heavy, but not hide), Adventurer*
@@ -1563,7 +1585,7 @@ This suit of armor is reinforced with adamantine, one of the hardest substances 
 
 **Formula.** To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
-\page
+
 #### Aelven Chain
 *Armor (masterwork chain shirt), Hero*
 
@@ -1589,7 +1611,8 @@ You have resistance to one type of damage while you wear this armor. The GM choo
 2  |  Cold      ||    6  | Psychic        
 3  |  Fire      ||    7  | Radiant       
 4  |  Lightning ||    8  | Thunder         
-     
+
+\column
 #### Armor of Physical Resistance
 *Armor (any), Hero (requires attunement)* 
 
@@ -1625,6 +1648,7 @@ While you wear these boots, you can use an action to cast the levitate spell on 
 
 While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect; otherwise, the effect ends after 1 minute. The boots have three charges; each use expends a charge and all expended charges are restored at dawn.
 
+\page
 #### Boots of Striding and Springing
 *Boots, Adventurer (requires attunement)* 
 
@@ -1639,7 +1663,6 @@ These furred boots are snug and feel quite warm. While you wear them, you gain t
 - You ignore difficult terrain created by ice or snow.
 - You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit.
 
-\page
 #### Cape of the Mountebank
 *Cloak, Hero*
 
@@ -1689,6 +1712,7 @@ While wearing this cloak with its hood up, you can breathe underwater, and you h
 
 While wearing this armor, you can understand and speak Abyssal. In addition, the armor's clawed gauntlets are light melee weapons that deal slashing damage with a +2 bonus to damage rolls and a damage die of 1d8. You have proficiency in these weapons. You cannot wear any other gloves while attuned to this armor.
 
+\page
 #### Dragon Scale Mail
 *Armor (masterwork lamellar), Hero (requires attunement)* 
 
@@ -1707,7 +1731,6 @@ Copper | Acid      ||  White |  Cold
 
 This armor counts as adamantine. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet. You also have advantage on any check or saving throw made to resist or escape a grapple.
 
-\page
 #### Gauntlets of Ogre Power
 *Gloves, Adventurer (requires attunement)*
 
@@ -1753,7 +1776,7 @@ This dazzling helm is set with 5 diamonds, 10 rubies, 15 fire opals, and 20 opal
 *Hat, Adventurer*
 
 While wearing this helm, you understand all spoken languages and can be understood by anyone who speaks at least one language.
-
+\page
 #### Helm of Telepathy
 *Hat, Adventurer (requires attunement)*
 
@@ -1774,7 +1797,6 @@ While you wear these boots, your steps make no sound, regardless of the surface 
 
 You have advantage on saving throws against spells while you wear this cloak.
 
-\page
 #### Masterwork Armor
 *Armor (any), Adventurer*
 
@@ -1810,7 +1832,7 @@ A light spell cast on the robe or a daylight spell cast within 5 feet of the rob
 *Robe, Hero (requires attunement)*
 
 This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.
-
+\page
 #### Robe of Stars
 *Robe, Hero (requires attunement)* 
 
@@ -1837,11 +1859,10 @@ This robe has cloth patches of various shapes and colors covering it. While wear
 - Hempen rope (50 feet, coiled)
 - Sack
 
-\page
 
 In addition, the robe has 4d4 other patches. The GM chooses the patches or determines them randomly.
 **d100** | **Patch**
-|:----|:----:
+|:----|:----
 01-08 | Bag of 100gp 
 09-15 | Silver coffer (1 foot long, 6 inches wide and  deep) worth 500 gp 
 16-22 | Iron door (up to 10 feet wide  and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself 
@@ -1870,7 +1891,7 @@ While holding this shield, you have resistance to damage from ranged attacks and
 *Boots, Adventurer (requires attunement)* 
 
 While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.
-
+\page
 #### Spellguard Shield
 *Armor (shield), Hero (requires attunement)*
 
@@ -1896,7 +1917,6 @@ The items in this section are all linked by the fact that they are truly consuma
 
 Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature--generally oils apply to items or objects and unguents to creatures.
 
-\page
 #### Apprentice's Friend
 *Potion, Journeyman*
 
@@ -1918,7 +1938,7 @@ This hollow metal tube measures about 1 foot long and weighs 1 pound. You can st
 *Consumable, Adventurer*
 
 Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks, casts a spell, causes damage, or imposes a negative condition on another creature, the invisibility ends for that creature.
-
+\page
 #### Dust of Dryness
 *Consumable, Adventurer*
 
@@ -1944,7 +1964,6 @@ d100 | Effect
 
 If the efreeti grants wishes, those wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.
 
-\page
 #### Elemental Gem
 *Consumable, Adventurer*
 
@@ -1973,7 +1992,7 @@ d100  |   Feather Token || d100  |   Feather Token
 **Bird.** You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.
 
 **Fan.** If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.
-
+\page
 **Swan Boat.** You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.
 
 **Tree.** You must be outdoors to use this token.You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.
@@ -1993,7 +2012,7 @@ This prism has 50 charges. While you are holding it, you can use an action to sp
 
 When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.
 
-\page
+
 #### Marvelous Pigments
 *Consumable, Hero* 
 
@@ -2014,6 +2033,7 @@ Beads of this cloudy gray oil form on the outside of its container and quickly e
 
 This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is masterwork and has a +6 bonus to damage rolls.
 
+\page
 #### Oil of Slipperiness
 *Oil, Adventurer* 
 
@@ -2044,7 +2064,6 @@ When you drink this potion, you gain the “reduce” effect of the enlarge-redu
 
 When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.
 
-\page
 #### Potion of Gaseous Form
 *Potion, Hero*
 
@@ -2068,6 +2087,7 @@ Storm giant       | +9  |      Legendary
 
 When you drink this potion, you gain the “enlarge” effect of the enlarge-reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.
 
+\page
 #### Potion of Healing
 *Potion, tier varies* 
 
@@ -2098,6 +2118,7 @@ This potion's container looks empty but feels as though it holds liquid. When yo
 
 When you drink this potion, you gain the effect of the detect-thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
 
+\column
 #### Potion of Energy Resistance
 *Potion, Adventurer* 
 
@@ -2112,7 +2133,6 @@ When you drink this potion, you gain resistance to one type of damage for 1 hour
 #### Potion of Speed
 Potion, Hero When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.
 
-\page
 #### Potion of Water Breathing
 *Potion, Adventurer*
 
@@ -2131,6 +2151,7 @@ A creature that touches the poisoned item or is hit by the poisoned weapon takes
 
 This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.
 
+\page
 #### Sovereign Glue
 *Oil, Hero*
 
@@ -2156,13 +2177,12 @@ The base aether cost of the spell on the scroll determines the spell's saving th
 Legendary | Legendary | 18 | +10 | &mdash; |&mdash; 
 
 **Formula.** Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.
-
+\column
 #### Universal Solvent
 *Wondrous item, Adventurer*
 
 This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.
 
-\page
 ### Miscellaneous Magic Items
 
 #### Bag of Holding
@@ -2174,7 +2194,7 @@ If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and it
 
 If you place a bag of holding inside another item that manipulates space or weight, such as a handy haversack or a portable hole, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
 
-
+\page
 #### Bag of Tricks
 *Wondrous item, Adventurer*
 
@@ -2241,7 +2261,6 @@ The brazier weighs 5 pounds.
 
 This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air, but doing so requires both hands. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land. You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you.
 
-\page
 #### Carpet of Flying
 *Wondrous item, Hero*
 
@@ -2257,6 +2276,7 @@ d100     |   Size  |         Capacity | Flying Speed
 
 A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.
 
+\page
 #### Censer of Controlling Air Elementals
 *Wondrous item, Hero*
 
@@ -2302,7 +2322,6 @@ Alternatively, if you use an action to press one side twice, you can cast the pl
 
 The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn.
 
-\page
 #### Decanter of Endless Water
 *Wondrous item, Adventurer*
 
@@ -2312,7 +2331,7 @@ This stoppered flask sloshes when shaken, as if it contains water. The decanter 
 - “Fountain” produces 5 gallons of water.
 - “Geyser” produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds.The object is either knocked over or pushed up to 15 feet away from you.
 
-
+\page
 #### Efficient Quiver
 *Wondrous item, Adventurer*
 
@@ -2338,7 +2357,6 @@ The creature is friendly to you and your companions. It understands your languag
 
 **Golden Lions (Hero).** These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed.
 
-\page
 
 **Ivory Goats (Hero).** These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:
 
@@ -2351,6 +2369,7 @@ The creature is friendly to you and your companions. It understands your languag
 
 **Obsidian Steed (Hero).** This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.
 
+\page
 **Onyx Dog (Hero).** This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.
 
 **Serpentine Owl (Hero).** This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.
@@ -2381,14 +2400,14 @@ The haversack has a few limitations. If it is overloaded, or if a sharp object p
 
 If you place a handy haversack inside another item that manipulates space or weight, such as a bag of holding or a portable hole, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
 
-\page
 #### Horn of Blasting
 *Wondrous item, Hero*
 
 You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.  Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.
 
+\page
 #### Horn of Calling
-*Wondrous item, Hero (silver or brass), Hero (bronze), or legendary (iron)*
+*Wondrous item, Hero (silver, brass, or bronze), or legendary (iron)*
 
 You can use an action to blow this horn. In response, warrior spirits appear within 60 feet of you. They use the statistics of a berserker. They disappear after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.  Four types of horn of calling are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly.
 
@@ -2455,6 +2474,7 @@ d20    |  Golem | Time     |  Cost
 
 To create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.  Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.
 
+\page
 #### Mirror of Life Trapping
 *Wondrous item, Hero*
 
@@ -2468,7 +2488,6 @@ If the mirror traps a creature but its twelve extradimensional cells are already
 
 While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally. In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.
 
-\page
 #### Pipes of Haunting
 *Wondrous item, Adventurer*
 
@@ -2481,6 +2500,7 @@ You must be proficient with wind instruments to use these pipes. While you are a
 
 The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the GM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn.  Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.
 
+\page
 #### Portable Hole
 *Wondrous item, Hero*
 
@@ -2496,7 +2516,6 @@ This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds
 
 The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.
 
-\page
 #### Rope of Entanglement
 *Wondrous item, Hero*
 
@@ -2504,7 +2523,21 @@ This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope a
 
 You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer restrained by the rope.
 
-The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed. 
+The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.
+
+#### Scarab of Protection
+*Wondrous item, legendary (requires attunement)*
+
+If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
+
+- You have advantage on saving throws against spells.
+- The scarab has 12 charges. If you fail a saving throw against a spell that deals necrotic damage or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.
+
+
+#### Stone of Good Luck (Luckstone)
+*Wondrous item, Adventurer (requires attunement)* 
+
+This polished stone has 3 charges. You can expend a charget to take the Exert or Focus actions without expending Stamina or Aether. All expended charges are restored at dawn.
 
 #### Stone of Controlling Earth Elementals
 *Wondrous item, Hero*
@@ -2515,7 +2548,7 @@ If the stone is touching the ground, you can use an action to speak its command 
 *Wondrous item, legendary*
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter. You can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the GM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once well of many worlds has opened a portal, it can't do so again for 1d8 hours.
-
+\page
 #### Wind Fan
 *Wondrous item, Adventurer*
 
@@ -2565,7 +2598,6 @@ You can use an action to place these shackles on an incapacitated creature. The 
 
 These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
 
-\page
 #### Eyes of Minute Seeing
 *Wondrous item, Adventurer*
 
@@ -2585,7 +2617,7 @@ While wearing these dark lenses, you have darkvision out to a range of 60 feet. 
 *Wondrous item, Adventurer (requires attunement)*
 
 The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect-thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
-
+\page
 #### Necklace of Adaptation
 *Wondrous item, Adventurer (requires attunement)*
 
@@ -2594,7 +2626,7 @@ While wearing this necklace, you can breathe normally in any environment, and yo
 #### Pearl of Power
 *Wondrous item, Adventurer (requires attunement by a spellcaster)*
 
-While this pearl is on your person, you can use an action to speak its command word, instantly regaining aether (AET) equal to your proficiency bonus up to your maximum. Once you use the pearl, it can`t be used again until the next dawn.
+While this pearl is on your person, you can use an action to speak its command word, instantly regaining aether (AET) equal to your proficiency bonus up to your maximum. Once you use the pearl, it can't be used again until the next dawn.
 
 #### Periapt of Health
 *Wondrous item, Adventurer*
@@ -2630,7 +2662,6 @@ While summoned, the djinni is friendly to you and your companions. It obeys any 
 
 After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies.
 
-\page
 #### Ring of Elemental Command
 *Ring, legendary (requires attunement)*
 
@@ -2639,7 +2670,7 @@ This ring is linked to one of the four Prime Elemental Planes. The GM chooses or
 While wearing this ring, you have advantage on attack rolls against elementals from the linked plane, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the linked plane.
 
 The ring has 5 charges. It regains 1d4 +1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17.
-
+\page
 **Ring of Air Elemental Command.** You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You have resistance to lightning damage.
@@ -2657,6 +2688,7 @@ You can expend 2 of the ring's charges to cast dominate monster on a fire elemen
 
 - You are immune to fire damage.
 - You can cast the following spells from the ring,expending the necessary number of charges:burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges).
+
 
 **Ring of Water Elemental Command.**
 You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
@@ -2697,12 +2729,11 @@ While wearing this ring, you are immune to magic that allows other creatures to 
 
 You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.
 
-\page
 #### Ring of Protection
 *Ring, Hero (requires attunement)*
 
 This ring has 3 charges. You can expend a charge to take the Deflect, Exert, or Focus actions without expending stamina or aether. The ring regains all expended charges at dawn.
-
+\page
 #### Ring of Regeneration
 *Ring, Hero (requires attunement)*
 
@@ -2766,7 +2797,6 @@ You have a swimming speed of 40 feet while wearing this ring.
 *Ring, Hero (requires attunement)*
 
 While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried.
-
 \page
 #### Ring of the Ram
 *Ring, Hero (requires attunement)*
@@ -2779,7 +2809,6 @@ This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. Whil
 While wearing this ring, you can use an action to expend 1 of its 3 charges to make a wish. The ring becomes nonmagical when you use the last charge.
 
 Wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.
-
 #### Ring of Warmth
 *Ring, Adventurer (requires attunement)*
 
@@ -2797,20 +2826,6 @@ While wearing this ring, you can use an action to speak its command word. When y
 
 Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.
 
-#### Scarab of Protection
-*Wondrous item, legendary (requires attunement)*
-
-If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
-
-- You have advantage on saving throws against spells.
-- The scarab has 12 charges. If you fail a saving throw against a spell that deals necrotic damage or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.
-
-
-#### Stone of Good Luck (Luckstone)
-*Wondrous item, Adventurer (requires attunement)* 
-
-This polished stone has 3 charges. You can expend a charget to take the Exert or Focus actions without expending Stamina or Aether. All expended charges are restored at dawn.
-
 ### Wands and Rods
 
 #### Rod of Absorption
@@ -2821,7 +2836,6 @@ When you become attuned to the rod, you know how much aether the rod has absorbe
 
 A newly found rod has 2d10 aether points stored in it already. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical.
 
-\page
 #### Rod of Alertness
 *Rod, Hero (requires attunement)*
 
@@ -2832,7 +2846,7 @@ This rod has a flanged head and the following properties.
 - **Spells.** While holding the rod, you can use an action to cast one of the following spells from it: detect evil and good, detect magic, detect poison and disease, or see invisibility.
 - **Protective Aura.** As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you gain a +1 bonus to AC and saving throws and can sense the location of any invisible hostile creature that is also in the bright light.  The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.
 
-
+\page
 #### Rod of Lordly Might
 *Rod, legendary (requires attunement)*
 
@@ -2863,18 +2877,18 @@ rod, you can force the target to make a DC 17 Constitution saving throw. On a fa
 
 You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.
 
-\page
 #### Rod of Security
 *Rod, Hero* 
 
 While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space.  For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).  When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed.
 
+\page
 #### Wand of Binding
 *Wand, Hero (requires attunement by a spellcaster)* 
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-**Spells.** While holding the wand, you can use an action to expend 2 charges to cast arcane-binding (save DC 17).
+**Spells.** While holding the wand, you can use an action to expend 2 charges to cast *arcane binding* (save DC 17).
 
 **Assisted Escape.** While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.
 
@@ -2893,7 +2907,7 @@ This wand has 7 charges for the following properties. It regains 1d6 + 1 expende
 **Command.** While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the command spell (save DC 15).
 
 **Cone of Fear.** While holding the wand, you can use an action to expend 2 charges, causing the wand's tip to emit a 60-foot cone of amber light. Each creature in the cone must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.
-
+\column
 #### Wand of Fireballs
 *Wand, Hero (requires attunement)*
 
@@ -2943,7 +2957,6 @@ This wand has 7 charges. While holding it, you can use an action to expend 1 of 
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-\page
 #### Wand of Wonder
 *Wand, Hero (requires attunement)*
 
@@ -2951,6 +2964,8 @@ This wand has 7 charges. While holding it, you can use an action to expend 1 of 
 If the effect causes you to cast a spell fromthe wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already.
 If an effect covers an area, you must center the spell on and include the target. If an effect has
 multiple possible subjects, the GM randomly determines which ones are affected. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.
+\page
+{{wide
 d100 | Effect
 |----|----                                   
 01-05 | You cast slow. 
@@ -2975,6 +2990,8 @@ d100 | Effect
 91 - 95 | A burst of colorful shimmering light extends  from you in a 30-foot radius. You and each  creature in the area that can see must succeed on a DC 15 Constitution saving throw or become  blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns,  ending the effect on itself on a success.
 96 - 97 | The target's skin turns bright blue for 1d10 days. If you chose a point in s pace, the creature  nearest to that point is affected.
 98 - 00 | If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration incantation or similar magic.
+
+}}
 
 \page
 ### Weapons, Magic
@@ -3031,13 +3048,12 @@ This is a masterwork, adamantine warhammer. It has the thrown property with a no
 *Weapon (any bow or crossbow), Hero (requires attunement)*
 
 This masterwork weapon has no natural string. Instead, a thread of magical force is generated between the tips of the bowstave. Similarly, it requires no ammunition, because it generates its own that count as silver and adamantine. Energy crossbows ignore the Loading property.
-
+\page
 #### Flame Tongue
 *Weapon (any sword), Hero (requires attunement)* 
 
 You can use a bonus action to speak this sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
 
-\page
 #### Frost Brand
 *Weapon (any sword), Hero (requires attunement)* 
 
@@ -3082,7 +3098,7 @@ This is a masterwork weapon. This sword has 3 charges. If the sword is on your p
 *Weapon (any bludgeoning), Hero (requires attunement)* 
 
 When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.  While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
-
+\page
 #### Mace of Smiting
 *Weapon (any bludgeoning), Hero*
 
@@ -3093,7 +3109,6 @@ This is a masterwork weapon that counts as adamantine. When used against a const
 
 This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. The mace regains 1d3 expended charges daily at dawn.
 
-\page
 #### Moons-glow Weapon
 *Weapon (any sword, axe, or polearm), Journeyman*
 
@@ -3122,7 +3137,7 @@ This is a masterwork weapon. In addition, you can make one attack with it as a b
 *Staff, Hero (requires attunement)* 
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
-
+\page
 #### Staff of Fire
 *Staff, Hero (requires attunement)*
 
@@ -3148,7 +3163,6 @@ This staff has 10 charges. While holding it, you can use an action to expend 1 o
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.
 
-\page
 #### Staff of Power
 *Staff, Hero (requires attunement)*
 
@@ -3172,6 +3186,7 @@ Distance from Origin |  Damage
 
 This staff can be wielded as a masterwork quarterstaff.  The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
 
+\page
 #### Staff of Swarming Insects
 *Staff, Hero (requires attunement)*
 
@@ -3199,7 +3214,6 @@ In addition, you can use the Voice the Voiceless incantation (Animals and Plants
 
 **Tree Form.** You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
 
-\page
 #### Staff of Thunder and Lightning
 *Staff, Hero (requires attunement)*
 
@@ -3220,6 +3234,7 @@ This staff can be wielded as a masterwork quarterstaff. It also has the followin
 
 This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
 
+\page
 #### Sun Blade
 *Weapon (longsword), Hero (requires attunement)*
 

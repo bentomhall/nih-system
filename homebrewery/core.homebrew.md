@@ -1,6 +1,23 @@
-<!--cover page-->
+{{frontCover}}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+# Core Rules
+## NIH System 0.1
+___
+
+{{banner Playtest}}
+
+{{footnote
+  A love letter to D&D 5e, unencumbered by legacy. CC-BY-4.0, uses material from the 5.1 SRD.
+}}
+
+![background image](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
+
+\page
+
 # Introduction
-This game is designed to explore "paths not taken" for the venerable TTRPG it originally stems from. A love letter from a long-term fan. What might it look like if the historical constraints (some may say sacred cows; others may say legacy) were relaxed? If, instead of only lightly adhering to design principles like bounded accuracy and such, it bought in fully? If it made no pretense at being a generic game and instead focused on what it does best (that is, small-unit fantasy adventures in the heroic mode)? This is my attempt at exploring that space.
+This game is designed to explore "paths not taken" for the venerable TTRPG it originally stems from. A love letter from a long-term fan. What might it look like if the historical constraints (some may say sacred cows; others may say legacy) were relaxed? If, instead of only lightly adhering to design principles like bounded accuracy and such, it bought in fully? If it made no pretense at being a generic game and instead focused on what it does best (that is, small-unit fantasy adventures in the heroic mode)? This is my attempt at exploring that space.å
 
 NIH has been designed around my long-running campaign world, [Dreams of Hope](https://wiki.admiralbenbo.com) and its primary planet, Quartus. It should be relatively easily ported to other settings, although some of the content (cultures, deities, and backgrounds especially) will have to change.
 
@@ -34,7 +51,7 @@ The core assumptions are that:
 - **PCs are usually the underdogs.** Either due to numbers (the enemy has an army) or due to individual power. PCs generally win against significant foes not by overwhelming the opponents with bigger numbers but by teamwork, guile, good strategy, finding the opponents' weak spots, building alliances with others, etc.
 - **Accuracy is bounded.** What does this mean? It means that attack bonuses, armor class, and saving throw and ability check DCs and modifiers are not assumed to grow significantly (relative to the d20's effect) with level. They may change and grow, but it should be hard if not impossible to "move off the d20" permanently in most cases. Monsters that hit PCs at level 1 should still be able to hit some appreciable fraction of the time against level 20 PCs, even if that fraction is smaller. Un-saveable saving throws shouldn't usually happen unless the PC or monster has a strongly negative modifier. Neither should "unmissable" attacks unless class features or magic is involved, and then rarely. PCs and monsters scale mostly in three ways: (a) having more health to absorb hits and stay standing, (b) dealing more damage (usually via more attacks rather than bigger single attacks, but this varies), and (c) having abilities that give different ways to approach the problem entirely (horizontal growth). As a result of this, magic items and spells no longer give +1 (etc) to AC, saving throw DCs, or attack rolls. Such passive stacking bonuses are rare if they exist at all.
 
-<!--Column-->>
+\page
 
 ## How to Play
 NIH requires one player to assume the role of Game Master (hereafter GM), while the remaining players (usually 2-4 in number) create and control individual characters, called Player Characters (PCs) or "the party". It's assumed that the PCs will work together cooperatively. The basic unit of the game is the party, not the individual. The GM's role is several-fold:
@@ -54,7 +71,6 @@ The most basic, most generic pattern of play is as follows:
   - An indication of how the player character is achieving that goal (a method)
   - And any pertinent facts, such as abilities being used, amounts of bribes being offered, etc. that may change the resolution of the action.
   
-\page
 - The GM, often after discussing details with the player, decides how the action will be resolved. This often involves some sort of die roll for randomization purposes. These rules are full of resolution mechanics such as attack rolls, ability checks, saving throws, etc. Many actions don't need any explicit resolution method. Instead, those actions just succeed. It is not expected that you have to roll to tie your shoes in the morning. Actions that have little opposition (chance of failure), are a core fictional competency of the character in question (the sailor can climb masts in calm or even normally-stormy weather), or where failure doesn't have meaningful consequences that change the situation (picking a practice lock in the safety of your home) rarely, if ever, call for active resolution.
 - Once the action is resolved, the GM narrates the changes to the situation and the loop continues.
 
@@ -62,6 +78,7 @@ Many times, multiple actions can be resolved simultaneously and the GM may ask m
 
 At times when exact sequencing is important (such as combat), the GM may call for initiative checks (see initiative). When in initiative order, players take actions from highest initiative downward. In the game world, they're all acting within the same short period of time&mdash;one complete pass through the initiative order, called a **round** represents about 6 seconds of game time&mdash;but they are sequenced for ease of play.
 
+\page
 ### Rolling the Dice
 The role of dice (pun intended) in NIH is to provide a way of resolving actions when the outcome is uncertain and the outcomes are interesting. The dice never dictate the result but shouldn't be called on if one of the outcomes isn't acceptable. NIH calls for four major categories of dice rolls: attack rolls, saving throws, ability checks, and damage rolls. More occasionally, specific effects may call for rolling specific die, usually to pick at random from a table of possible results. Unlike other rolls, those table-based rolls cannot generally be modified by abilities or features.
 
@@ -79,12 +96,11 @@ A roll of 1 on the d20 is always a miss (and nothing more), called a "critical m
 
 Each class is proficient in two of the six saving throws by default: usually one of Dexterity, Constitution, or Wisdom, and one of Strength, Intelligence, and Charisma. Some classes, such as the brawler, get extended saving throw proficiencies later on.
 
-\page
-
 **Ability Checks.** Ability checks are the catch-all. That is, if you need to make a check to determine success or failure and it isn't one of the other types, it's probably an ability check. Ability checks all involve an ability decided by the GM and may possibly include proficiency, which may come from one or more skills, tools, languages, or even weapons or armor. If you have proficiency that applies from multiple sources, you can make the check at advantage.
 
 **Damage Rolls.** When an ability calls for a damage roll, it will specify how many of what size of dice to roll and what, if anything, to add to the roll. This entire total (total of the numbers on the dice plus any modifiers) is the damage roll. You can never roll less than zero damage, but modifiers may reduce the damage to zero.
 
+\page
 **Inspiration.** Sometimes, the dice just aren't in your favor after you've done everything you can. The party, as befits heroes, has a pool of luck they can call on, called Inspiration. Each party has a maximum number of Inspiration Points equal to the number of player characters. You start the session with this pool full, and when someone *else* needs a boost, you can grant them inspiration by spending an Inspiration Point. Whether your character says some inspiring words or a plea to the heavens is up to you, but it's most moving when you do *something* in-character. When you do so, they can choose to reroll one attack roll, saving throw, or ability check they had just made and take either result. If the original roll had advantage or disadvantage, so does the new roll; the inspiration roll completely replaces the original. **Remember, you cannot give yourself inspiration**, although the character whose player is giving you inspiration does not have to be conscious, capable of taking actions, or even alive to do so (as you're inspired by their memory).
 
 ## Stages of Play
@@ -184,17 +200,15 @@ The more difficult a task, the higher its DC. The Typical Difficulty Classes tab
 
 \*\*: A Nearly Impossible check generally requires both some sort of proficiency multiplier and a high-level character.
 
-::
-
 To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
 
 ### Contests
 
 Sometimes one character's or monster's efforts are directly opposed to another's. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal— for example, when a monster tries to force open a door that an adventurer is holding closed. In situations like these, the outcome is determined by a special form of ability check, called a contest.
 
-Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.
-
 \page
+
+Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.
 
 If the contest results in a tie, the situation remains the same as it was before the contest. Thus, one contestant might win the contest by default. If two characters tie in a contest to snatch a ring off the floor, neither character grabs it. In a contest between a monster trying to open a door and an adventurer trying to keep the door closed, a tie means that the door remains shut.
 
@@ -246,11 +260,11 @@ Here's how to determine a character's total for a passive check:
 
 If the character has advantage on the check, add 5. For disadvantage, subtract 5. The game refers to a passive check total as a **score**.
 
+\page
 For example, if a 1st-level character has a Wisdom of 15 and proficiency in Perception, he or she has a passive Wisdom (Perception) score of 14.
 
 The rules on hiding in the “Dexterity” section below rely on passive checks, as do the exploration rules.
 
-\page
 ### Working Together
 
 Sometimes two or more characters team up to attempt a task. The character who's leading the effort&mdash;or the one with the highest ability modifier if it makes sense in the fiction&mdash;can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action. Helping with an Attack action requires the ability to attack using your own action.
@@ -306,11 +320,11 @@ Your Strength score determines the amount of weight you can bear. The following 
 
 **Carrying Capacity.** Your carrying capacity is 150 + your Strength score multiplied by 30. This is the weight (in pounds) that you can carry, which is high enough that most characters don't usually have to worry about it.
 
+\page
 **Push, Drag, or Lift.** You can push, drag, or lift a weight in pounds up to twice your carrying capacity (or 300 lbs + 60 times your Strength score). While pushing or dragging weight in excess of your carrying capacity, your speed drops to 5 feet.
 
 **Size and Strength.** Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above Medium, double the creature's carrying capacity and the amount it can push, drag, or lift. For a Tiny creature, halve these weights. Miniscule creatures have a carrying capacity of < 1 lb and can only push, drag, or lift 1 lb max, regardless of their strength score.
 
-\page
 ### Dexterity
 
 Dexterity measures agility, reflexes, and balance. As an archetype, it maps to the Nimble Guy, the Sneak, and the Archer. While they may be strong, they don't generally think with their muscles and prefer to dodge, weave, sneak, and rely on precise hits or actions rather than overpowering force.
@@ -350,16 +364,19 @@ Depending on the armor you wear, you might add some or all of your Dexterity mod
 
 At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.
 
-<!--note-->
-#### Hiding
+{{note
+###### Hiding
 The GM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
-<!--end note-->
 
 You can't hide from a creature unless you have **total concealment** from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
 
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
 In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight, but the exact details are up to the GM and the situation.
+}}
+
+
+
 
 **Passive Perception..** When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
@@ -437,9 +454,9 @@ A Wisdom check might reflect an effort to read body language, understand someone
 
 **Medicine.** A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.
 
+\page
 **Perception.** Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.
 
-\page
 
 **Survival.** The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.
 
@@ -472,22 +489,29 @@ A Charisma check might arise when you try to influence or entertain others, when
 
 **Persuasion.** When you attempt to influence someone or a group of people with tact, social graces, or good nature, the GM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk.
 
-<!--note-->
-{Monster Attitudes}
+{{note
+##### Monster Attitudes
 Attitudes of monsters toward PCs (and towards each other) strongly influence how much they can be persuaded, lied to, or intimidated. Often, getting what you want from a monster may require first taking steps to improve their attitude. This may involve *other* Charisma-based checks or may involve gifts, the heads of their enemies, or performing tasks for them.
 
 Generally, monster attitudes are one of the following (in order from most hostile to least).
+
 **Actively fighting you.** It's generally quite hard to get someone you or your allies are actively trying to harm (or who is actively trying to harm you) to stop and talk. Not impossible, but difficult and will generally require something dramatic.
+
 **Hostile.** Hostility is one step up. They don't like you and don't want to help you, but aren't actively trying to kill/maim/eject you. Generally, the most you can get out of someone who is hostile to you is a grudging non-intervention, as long as that costs them nothing. They won't do anything that requires any effort on their part or runs them any risk.
+
 **Unfriendly.** An unfriendly monster can be persuaded to take very minor risks as long as it gets them something good. But it's hard. And their preference is to do you minor disservice.
+
 **Indifferent.** An indifferent monster doesn't care either direction about you and your goals. They'll take minor risks if you butter them up enough, but won't normally go out of their way for you. On the flip side, it takes a major failure for them to do you dirty.
+
 **Friendly.** A friendly monster is willing to put forth minor efforts on your behalf with only the lightest persuasive touch. They'll take small risks. And generally they generally will forgive you if you accidentally do something they don't like. They might even do dangerous things for you with the right argument (or payment).
+
 **Devoted.** A devoted monster is willing to put their life on hold for you. You might even be able to get them to risk their life for you for a smile and a wave.
 
 It's rare to be able to raise someone's attitude toward you more than one step in a single interaction, but it is very possible to *drop* their attitude multiple steps.
-<!--end note-->
+}}
 
 
+\page
 **Other Charisma Checks.** The GM might call for a Charisma check when you try to accomplish tasks like the following:
 
 
@@ -499,7 +523,7 @@ It's rare to be able to raise someone's attitude toward you more than one step i
 
 Oathbound, spellblades, and warlocks use Charisma as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.
 
-\page
+
 ## Saving Throws
 A saving throw&mdash;also called a save&mdash;represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat. You don't normally decide to make a saving throw; you are forced to make one because your character or monster is at risk of harm.
 
@@ -543,6 +567,7 @@ The following rules determine how far a character or monster can move in a minut
 
 While traveling, a group of adventurers can move at a normal, fast, or slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time and whether the pace has any effect. A fast pace makes characters less perceptive, while a slow pace makes it possible to sneak around and to search an area more carefully.
 
+\page
 **Forced March.** The Travel Pace table assumes that characters travel for 8 hours in day. They can push on beyond that limit, at the risk of exhaustion.
 
 For each additional hour of travel beyond 8 hours, the characters cover the distance shown in the Hour column for their pace, and each character must make a Constitution saving throw at the end of the hour. The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of exhaustion (see exhaustion)
@@ -553,7 +578,6 @@ Characters in wagons, carriages, or other land vehicles choose a pace as normal.
 
 Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a *carpet of flying*, allow you to travel more swiftly.
 
-\page
 
 |**Pace** | **Distance per: Minute** | **Hour** | **Day** | **Effect**
 |:----|:----:|:----:|:----:|:----:|
@@ -593,6 +617,7 @@ You can extend your arms half your height above yourself during the jump. Thus, 
 
 By its nature, adventuring involves delving into places that are dark, dangerous, and full of mysteries to be explored. The rules in this section cover some of the most important ways in which adventurers interact with the environment in such places.
 
+\page
 ### Falling
 
 A fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall. Creatures that are not incapacitated can generally fall a distance equal to their automatic standing high-jump distance without taking damage or twice that if they willingly fall prone when they land.
@@ -605,7 +630,6 @@ When a creature runs out of breath or is choking, it can survive for a number of
 
 For example, a creature with a Constitution of +2 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.
 
-\page
 ### Vision and Light
 
 The most fundamental tasks of adventuring&mdash;noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few&mdash;rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
@@ -626,8 +650,8 @@ Even gloomy days provide bright light, as do torches, lanterns, fires, and other
 
 Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.
 
-<!--begin note-->
-{Visibility Ranges}
+{{note
+##### Visibility Ranges
 Generally, creatures with human-like vision can see brightly-illuminated creatures and objects from a substantial distance (assuming nothing blocks their sight). A rule of thumb is that creatures and objects are visible and recognizable at the following distances based on their size, assuming normal contrast with the background (ie not camouflaged):
 
 **Size** | **Visible at...**
@@ -639,8 +663,8 @@ Small creatures or objects | 400 ft
 Medium creatures or objects | 1/3 mile 
 Large creatures or objects | 1 mile 
 Huge+ creatures or objects | 2 miles  
-Mountains, the sun, etc | any (horizon limited) 
-<!--end note-->
+Mountains, the sun, etc | any (horizon limited)
+}}
 
 Dim illumination or low-contrast backgrounds reduce the distance by at least half, stacking. So a small creature, dimly illuminated and against a low-contrast background or camouflaged, might only be visible out to 100 ft.
 
@@ -652,6 +676,7 @@ Adventurers can see the significant terrain features of the land about 2 miles f
 
 A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense. This counts as being able to "see" the target for spells and other abilities.
 
+\page
 #### Darkvision
 
 Many creatures in fantasy gaming worlds, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in darkness, only shades of gray.
@@ -666,7 +691,6 @@ Most creatures rely primarily on sight, but are still capable of hearing and sme
 #### Hearing
 For most humanoid (and similar) creatures, hearing is best at detecting *presence and direction*, but not *location* of creatures, and gives very little information about what they are doing. Background noise also plays a significant role in preventing hearing. As a rule of thumb, a Tiny or larger creature's movement produces enough noise to be audible out to at least 30 feet under normal conditions. If you cannot see the creature but can hear it, interactions that require pinpointing them are at disadvantage. If you can neither see nor hear the creature, they are hidden and you must guess their location (automatically failing any attempt to interact if you guess wrong). To prevent being heard within the normal hearing range, you need to have succeeded at a Hide attempt. 
 
-\page
 
 **Noise** | **Audible Distance**
 :----|:----:|
@@ -675,17 +699,16 @@ Conversation or normal movement | 60 ft
 Combat | 100 ft
 Shouting, unamplified concerts, loud spells | 300 ft
 Amplified concerts, explosions, thunder | 1 mile 
-<!--end note-->
 
 
 Substantial background noise (noise at least one step higher) generally moves the distance down one step. So fighting during a riot would be audible out to 60 ft (instead of 100 ft). If this would reduce the audible distance below 30 ft, cut the distance in half instead. Creatures with advanced hearing such as dogs, cats, bats, etc. can generally hear and locate sounds at double the distance or more.
 
-<!--begin note-->
-{Commentary on hearing}
+{{note
+##### Commentary on hearing
 This is fairly generous for those doing the perceiving. Adventurers and the foes they face are exceptional. If you're trying to get around normal commoners, trying to adjudicate such things too precisely can be more trouble than its worth and you should generally just use a Dexterity (Stealth) check instead.
 
 In indoor/underground conditions, sounds can generally be heard from further away but become muffled/indistinct sooner. So it's a tradeoff not considered here. If the echoes are particularly strong, increase the range by a step. If it's an absorbent area or wide open area, decrease them by a step.
-<!--end note-->
+}}
 
 
 #### Smell
@@ -697,6 +720,7 @@ Some creatures with exceptional olifactory capabilities (like bloodhounds) are c
 #### Magical Senses
 In a fantasy world, most creatures are at least somewhat sensitive to the manipulation of aether, especially in the form of spells. As a general rule, all creatures that have an Intelligence score of -3 or better can recognize spellcasting occurring within 60 feet of them as long as it has one or more components. Creatures with lower Intelligence may recognize that something is happening, but don't have enough reasoning capacity to know what spells are. Hiding spellcasting is generally not possible unless you can remove all components.
 
+\page
 ### Food and Water
 
 Characters who don't eat or drink suffer the effects of exhaustion. Exhaustion caused by lack of food or water can't be removed until the character eats and drinks the full required amount.
@@ -725,7 +749,6 @@ Characters can also damage objects with their weapons and spells. Objects are im
 
 A character can also attempt a Strength check to break an object. The GM sets the DC for any such check.
 
-\page
 ## Resting
 
 Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest, time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
@@ -746,10 +769,11 @@ A long rest is a period of extended downtime, at least 8 hours long, during whic
 
 At the end of a long rest, a character regains all lost hit points and aether (see stamina-and-aether). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
+\page
 A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits. Creatures cannot progress personal projects during long rests.
 
-<!--begin aside-->
-{Short rests are important}
+{{note
+##### Short rests are important
 NIH system assumes that most "adventuring days" (the time between two long rests, whether 1 in-game day or many) that contain any significant amount of challenge will have time for at least one, and often two short rests. Some days may not&mdash;some days may have more. But on average, the system expects you to find time for at least one break sometime during the day, between challenges. That means that days consisting of a single big encounter are only ok when they're rare&mdash;use them as a spice, not a steady diet.
 
 If you consistently find your pace too rushed (in universe) to take an hour off or if you frequently only have a single fight per in-game day, consider one of the variants listed below.
@@ -762,10 +786,9 @@ This variant allows a short-rest dependent class to adventure alongside a party 
 
 ##### Safe resting only
 Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day so short rests become meaningless. In this variant, you can only take a long rest when in a "safe spot": an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest; short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
-<!--end aside-->
 
+}}
 
-\page
 ## Between Adventures
 
 Between trips to dungeons and battles against ancient evils, adventurers need time to rest, recuperate, and prepare for their next adventure. Many adventurers also use this time to perform other tasks, such as crafting arms and armor, performing research, or spending their hard-earned gold.
@@ -788,6 +811,7 @@ You can craft non-magical objects, including adventuring equipment and works of 
 
 For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 50 gp, and you must expend raw materials worth half the total market value. If something you want to craft has a market value greater than 50 gp, you make progress every day in 50-gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 30 days to craft by yourself.
 
+\page
 Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 50 gp worth of effort for every day spent helping to craft the item. For example, three characters with the requisite tool proficiency and the proper facilities can craft a suit of plate armor in 10 days, at a total cost of 750 gp.
 
 While crafting, you can maintain a modest lifestyle without having to pay 1 gp per day, or a comfortable lifestyle at half the normal cost.
@@ -809,7 +833,6 @@ After three days of downtime spent recuperating, you can make a DC 15 Constituti
 - End one effect on you that prevents you from regaining hit points.
 - For the next 24 hours, gain advantage on saving throws against one disease or poison currently affecting you.
 
-\page
 #### Researching
 
 The time between adventures is a great chance to perform research, gaining insight into mysteries that have unfurled over the course of the campaign. Research can include poring over dusty tomes and crumbling scrolls in a library or buying drinks for the locals to pry rumors and gossip from their lips.
@@ -864,11 +887,12 @@ The Movement and Position section later in this chapter gives the rules for your
 
 You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking Guard or Ready action, as described in Actions in Combat.
 
+\page
 #### Bonus Actions
 
 Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. The Cunning Action feature, for example, allows a rogue to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don't have a bonus action to take.
 
-\page
+
 
 You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
 
@@ -909,11 +933,12 @@ Effects such as the slow spell that reduce your speed reduce *all* speeds you ma
 
 You can break up your movement on your turn, using some of your speed before and after your action. For example, if you have a speed of 30 feet, you can move 10 feet, take your action, and then move 20 feet.
 
+\page
 #### Moving between Attacks
 
 If you take an action that includes more than one attack, you can break up your movement even further by moving between those attacks. For example, a armsman who can make two attacks with the Extra Attack feature and who has a speed of 25 feet could move 10 feet, make an attack, move 15 feet, and then attack again.
 
-\page
+
 #### Using Different Speeds
 
 If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Remember that any movement subtracts from all pools individually. If a movement mode has no movement available, you cannot use that mode for the remainder of that turn.
@@ -950,6 +975,7 @@ The rules of this subsection only apply during combat or when creatures are inte
 
 Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the fly incantation.
 
+\page
 ### Creature Size
 
 Each creature controls a different amount of space in combat. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories. Miniscule creatures and objects are those no more than a few inches across, such as normal mice, non-giant insects, etc. They do not control space in combat.
@@ -965,7 +991,6 @@ Large | 10 by 10 ft.
 Huge | 15 by 15 ft. 
 Gargantuan | 20 by 20 ft. or larger 
 
-\page
 #### Space
 
 A creature's space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn't 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can't get through unless the hobgoblin lets them. Miniscule creatures (such as a normal spider) do not control any space&mdash;any other creature can move through its space at will and it can enter other creatures' spaces at will.
@@ -1017,6 +1042,7 @@ When you take your action on your turn, you can take one of the actions presente
 
 When you describe an action not detailed elsewhere in the rules, the GM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure.
 
+\page
 ### Attack
 
 The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists. With this action, you make one melee or ranged attack with a weapon or an unarmed strike. See the making-an-attack section for the rules that govern attacks. Certain features, such as the Extra Attack feature of the armsman, allow you to make more than one attack with this action.
@@ -1025,7 +1051,6 @@ The most common action to take in combat is the Attack action, whether you are s
 
 Spellcasters such as arcanists and priests, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell.
 
-\page
 ### Dash
 
 When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash. Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.
@@ -1055,7 +1080,7 @@ Sometimes you want to get the jump on a foe or wait for a particular circumstanc
 First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the cultist steps on the trapdoor, I'll pull the lever that opens it,” and “If the goblin steps next to me, I move away.”
 
 When the trigger occurs, you can either take your reaction right after the action or movement containing the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round. Reactions happen after the action that triggered it completes; each 5 feet of movement is considered a separate "action" for this purpose. The ready action cannot interrupt an action, regardless of how the triggers are are phrased. If you ready an action for when a goblin attacks you, the attack is completely resolved before your Readied action triggers. If you ignore the trigger and it happens again before you take your next turn, you can decide to use your readied action at that time. If it does not reoccur, your action is lost.
-
+\page
 When you ready a spell, you cast it as normal (other than checking for valid targets and range) but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic-missile, your web spell ends, and if you take damage before you release magic-missile with your reaction, your concentration might be broken.
 
 Note that you cannot Ready an action outside of the initiative order (ie outside of combat). Adventurers and monsters are presumed (unless shown otherwise, such as by surprise) to be ready for combat. In fact, the entire point of the initiative system is to decide who could react to the presence of a threat first.
@@ -1068,7 +1093,6 @@ When you take the Search action, you devote your attention to finding something.
 
 You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.
 
-\page
 ## Ability Range
 Every ability has a specific range, although for some that range is "basically anywhere". In combat, measure the distance between your character and the target position or creature. If playing on a grid, measure from the nearest corner of the space of the acting creature to the nearest corner of the target's space (or to the specific grid intersection).
 
@@ -1090,7 +1114,7 @@ Most effects have ranges expressed in feet. Some effects can target only a creat
 Once an effect is cast, its effects aren't limited by its range, unless the effect's description says otherwise.
 
 Remember that spells and legendary effects with ranges other than Touch or Self provoke opportunity-attacks from non-incapacitated enemies.
-
+\page
 ## Concentration 
 Some abilities require you to maintain concentrating in order to keep their magic active. If you lose concentration, such an ability ends. If an ability must be maintained with concentration, that fact appears in its Duration entry or its text, and the ability specifies how long you can concentrate on it. You can end concentration on your turn (no action required). Normal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:
 
@@ -1106,8 +1130,6 @@ A typical ability requires you to pick one or more targets to be affected by the
 Unless an ability has a perceptible effect, a creature might not know it was targeted by an ability at all. An effect like crackling lightning or a weapon swing is obvious, but a more subtle effect, such as an attempt to read a creature's thoughts, typically goes unnoticed, unless the ability says otherwise.
 
 Any creature or object directly affected by the ability is a target for that ability. Abilities that enhance or conjure creatures who then make attacks or interact with other objects or creatures only target the creatures enhanced or conjured. As such, a creature immune to magical abilities with a cost of 10 AET or lower can still be hurt by a creature buffed with haste, despite that spell naturally having a cost lower than 10 AET.
-
-\page
 
 Specific abilities can override these general rules, but must say that they do. For example, fireball says it can spread around corners, so while you must have a clear path to the point targeted with the aoe, targets of the fire do not need to have a clear path to that center as long as there is some path within the spell's area.
 
@@ -1127,6 +1149,7 @@ Abilities with ranges of Self (cone) or Self (cube) start at one side of your sp
 
 If you select a target that is not valid for the ability and it would be obvious to the caster that this is the case, the GM will generally warn you that the cast will not succeed and allow you to pick a different target. If, for whatever reason, the invalidity would *not* be obvious, the spell goes off, the aether or stamina (if any) is expended, but the target is not affected. You gains no information from this; for abilities that do nothing if the target succeeds on a saving throw, you only know that they succeeded. Attacks against invalid targets simply "miss" (have no effect on the target); no information is gained.
 
+\page
 ### Areas of Effect
 
 Abilities such as *burning hands* and *cone of cold* cover an area, allowing them to affect multiple creatures at once.
@@ -1168,15 +1191,13 @@ A sphere's point of origin is included in the sphere's area of effect.
 ## Overlapping Effects (aka Stacking Rules)
 Generally, effects combine (aka "stack") unless they came from abilities with the same name. Durations overlap&mdash;if you're stunned from two different sources and one is removed or ends, the other continues for its own independent duration. If multiple effects allow saving throws at the end of your turn to end the effect, you make the saving throws separately for each source. Binary conditions (such as poisoned) have no additional effect if poisoned multiple times.
 
-\page
-
 A few exceptions exist, including the following:
 
 - If an ability creates multiple areas of effect (such as the legendary effect *meteor swarm*), only one of those areas of effect can affect a single target at the same time even if they overlap or the creature (due to size, etc.) occupies multiple areas of effect.
 - Can't is more specific than can unless explicitly stated. An effect that removes an ability (such as preventing movement) supersedes an ability or feature that allows movement unless the second ability or feature explicitly overrides the prohibition (such as *freedom of movement*).
 - No more than one bonus die can be added to any ability check or saving throw, even if multiple sources of bonus dice exist.
 
-
+\page
 ## Making an Attack
 
 Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack. Whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
@@ -1461,10 +1482,9 @@ Because temporary hit points are separate from your actual hit points, they can 
 Healing can't restore temporary hit points, and they can't be added together. If you have temporary hit points and receive more of them, you decide whether to keep the ones you have or to gain the new ones. For example, if a spell grants you 12 temporary hit points when you already have 10, you can have 12 or 10, not 22.
 
 If you have 0 hit points, receiving temporary hit points doesn't restore you to consciousness or stabilize you. They can still absorb damage directed at you while you're in that state (preventing additional failed death saving throws if the damage taken is reduced to zero), but only true healing can save you.
-
+\page
 Unless a feature that grants you temporary hit points has a duration, they last until they're depleted or you finish a long rest.
 
-\page
 ## Mounted Combat
 
 A knight charging into battle on a warhorse, an arcanist casting spells from the back of a griffon, or a priest soaring through the sky on a pegasus all enjoy the benefits of speed and mobility that a mount can provide.
@@ -1783,11 +1803,11 @@ Substantial changes. Many the classes got rewritten from the ground up, as did m
 - Cleric renamed priest, and generalized. Only one domain gets medium armor, rest are light only. Gets Divine Intervention much earlier and more frequently, but weaker and roll-based. Very support focused.
 - Druid renamed Shaman, more elemental focused. Removed shape-shifting in favor of "manifest zones", basically placeable persistent buff/debuff/damage zones. More control focused.
 - Fighter renamed Armsman. Now the heavy armor/weapon/martial versatility guy. Anything's a weapon. Can use STR or DEX for all weapons starting at 6. At high levels, gets the ability to instantly kill low-health enemies, with a scaling threshold. Those too high to instantly kill must save or stun.
+\page
 - Monk renamed brawler, removed "eastern" influence. Gets extra stamina from Wisdom. No separate ki pool. More explicit magic.
 - Paladin becomes the oathbound. Not tons of changes here, but made find steed a class feature and integrated the smite spell effects into divine smite directly, trading damage dice to do special effects. Slightly more support oriented than stock.
 - Ranger keeps its name, but gets more focus on dealing damage. Subclasses refocused on "hunting" different types of prey (including "civilized" folks).
 
-\page
 - Rogue keeps its name, gets more explicit magic from subclasses. Lots and lots of skill tricks. Gets in-class ways to do sneak attack multiple times per turn (at a cost). No longer resource free.
 - Sorcerer and wizard merged into the arcanist. Now "wizard" is the book mage subclass. Metamagic is their big thing, and it's expanded.
 - Warlock goes much more like 3e's warlock: eldritch blast is a class feature and has blast shapes and effects. Only gets spells via invocations, but gets more invocations.
@@ -1819,7 +1839,7 @@ Not nearly as many here.
 - Remove most, if not all, +AC, +ATK, +save DC, +saves from items. I take bounded accuracy much more seriously. +Damage is ok. A +X weapon is generally now masterwork (ie +proficiency to damage).
 - Started adding the formulas directly to the magic items in some cases. Especially because some skill tricks give you access to magic item crafting recipes.
 
-
+\page
 ## Can I suggest changes?
 Absolutely. Since I don't want to dox myself *directly*, the easiest way is to raise an issue or submit a Pull Request on the github repo ([located here](https://github.com/bentomhall/nih-system/)).
 

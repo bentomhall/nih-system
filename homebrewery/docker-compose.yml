@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  homebrewery:
+    image: kosmos367/homebrewery:latest
+    container_name: homebrewery
+    environment:
+      HB_HOST: "localhost"
+      HB_SECRET: "your-secret-key"
+      HB_PUBLIC_URL: "http://localhost:8000"
+      HB_DB_URI: "mongodb://mongo:27017/homebrewery"
+      # Optional mounts:
+      # HB_IMAGES: '/usr/src/app/images'
+      # HB_FONTS: '/usr/src/app/fonts'
+    ports:
+      - "8000:8000"
+    # Optional volumes for customization
+    #volumes:
+    #  - images-data:/usr/src/app/images
+    #  - fonts-data:/usr/src/app/fonts
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: homebrewery-db
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+  # Optional volumes for customization
+  # images-data:
+  # fonts-data:

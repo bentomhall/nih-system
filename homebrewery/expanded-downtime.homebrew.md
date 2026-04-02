@@ -8,7 +8,7 @@ Downtime is *supplemental* activity. The focus of the game is on adventuring. It
 
 {Disallowing use of currency}
 As a GM, it's your responsibility to make sure that uses of downtime currency or even downtime activities make sense, whether those might be. For example, Favors gained in a big city might not translate well to a tiny town that has been isolated for generations. There may be no way that a character could have discovered a certain fact (in keeping with the narrative). A goblin tribe might not use money, so Trading might not make sense there. Etc. When you make this determination, the attempted use of the currency fails and the currency is **not** expended. But generally, it's best to be generous. If you can imagine any possible scenario where it makes sense, let them do it. Don't look for ways it may not make sense---those are always too easy to find.
- 
+\column
 ## Downtime Currencies
 These downtime rules involve three different "currencies"---abstracted "points" that can be accumulated, exchanged, or spent to gain benefits in other areas. There is also a pair of trackers (one for crafting and one for training) that accumulate until you finish whatever training or crafting project you may be working on, called Progress. These currencies are Money (gold pieces, silver pieces, etc., your normal coins gained by selling treasures, completing quests, and finding monster hoards), Favors, and Discoveries.
 
@@ -33,7 +33,7 @@ Outside of downtime, you can spend a Discovery to gain extra knowledge from your
 Crafting and Training act a bit differently than the other activities. Instead of generating (or consuming) currencies to produce other (abstract, unspecified) currencies, they involve specifying exactly what kind of thing you're trying to craft or learn how to do (as described in their section). The outcome of the activity is 0 or more units of Progress towards that specific goal. Progress is not fungible--you can't trade Progress in learning how to speak Elvish for Progress crafting a suit of plate armor (or vice versa). Or even trade Progress in Elvish for Progress in Perception.
 
 See each activity's section for the necessary progress to reach each kind of goal.
-
+\column
 ## Activities
 The general rules for any activity are the same---at the end of each period of downtime, make one downtime check per workweek. Roll a number of d6s equal to the related ability score for that activity. For each die that rolls a 5 or 6, you accumulate one success (point of Progress, one Favor, one Discovery, or one unit of Money as described). If there is a required skill or tool proficiency and you have expertise in that skill or tool, you can reroll a number of failures up to half your proficiency bonus.
 
@@ -53,9 +53,8 @@ Crafting requires a few things:
 - **Proficiency** You must have proficiency in the relevant tool. For wondrous items that don't fit into any regular proficiency, use Arcana as the relevant proficiency. For magic items or masterwork equipment that list a required minimum proficiency, your proficiency bonus must be at least that high to craft the item successfully.
 - **Proper Space and Equipment** You need proper workspace to craft efficiently. You can craft on the road as long as you have a set of tools, but your progress is reduced. Generally, this means you need access to a forge (for metalwork), a loom or spinning wheel (for textiles), enough space and fuel to run your alchemy equipment, etc.
 - **Appropriate materials** For magic items with specific formulae, you need the listed special materials to begin crafting; they are consumed when you finish.
-- **Formula** For magic items, you need a formula. Some are known and listed in the item entry, others need to be discovered.
-
 \page
+- **Formula** For magic items, you need a formula. Some are known and listed in the item entry, others need to be discovered.
 
 **Proficiency** | **Ability** | **Example Items** |
 :----:|:----:|:----:|
@@ -80,25 +79,25 @@ Woodcarver's tools | DEX | Staffs, wands, rods, arrows, bolts. Decorative carvin
 
 
 Each time you gain Progress, you should check to see if you've accumulated enough to complete your goal, as shown on the tables below. If you have, you can expend any necessary money or special materials (for crafting) and then your goal is accomplished---you've crafted the item or gained the noted proficiency. Consumables (such as potions or scrolls) cost half the listed progress and money, but cannot be made Masterwork. Very Rare and Legendary items cannot generally be crafted under normal conditions. Individual items specify their crafting cost---for mundane items it is half the listed sale price. For otherwise mundane items made from special materials, the special material specifies an additional cost above the regular cost to make the mundane item, and you must specifically provide the requisite amount of special material.
-
+\column
 If a mundane item costs less than 100 gp, you can make as many as would be paid for by 100 gp (rounded down) per Progress gained, up to a maximum of 8. Ammunition is priced per bundle (20 for most, 50 for blowgun needles).
 
 Two or more characters with relevant tool proficiencies can combine their efforts on a single piece (assuming there's enough space, as decided by the GM). They each roll separately and contribute any Progress toward the same goal.
 
-
-{GP Cost}
+{{note
+##### GP Cost
 For custom mundane items not mentioned, the actual gp cost is going to require negotiation, although the tables of loot items can be a useful starting point. Crafting an intricate jewel-encrusted figurine is going to cost more than whittling a small carving.
 
 The crafting downtime activity is designed to be used for larger things, rather than trinkets or extremely low-value items without direct adventuring use. For those, it's often best to allow them to be crafted as part of regular activity. That is, simply say "Ok, you make those things".
 
-
 **Tier** | **Progress** | **Masterwork**  |
-:----:|:----:|:----:|
+:----|:----:|:----:|
 Mundane | 1 per 100 gp | 1 per 25 gp |
 Journeyman (Common) | 2 | 8 |
 Adventurer (Uncommon) | 20 | 40 |
 Hero (Rare) | 100 | 400 |
 
+}}
 ### Research
 **Produced Currency.** Discoveries.
 
@@ -108,6 +107,7 @@ Hero (Rare) | 100 | 400 |
 
 Research requires research materials. Either a laboratory or a source of information (such as a library) and an appropriate proficiency (Arcana, History, Nature, or Religion). The associated ability score for research is Intelligence.
 
+\page
 ### Socializing
 **Produced Currency.** Favors.
 
@@ -125,8 +125,6 @@ Socializing requires a social scene, but it can occur in humble roadside taverns
 - a background appropriate to the situation (Aristocrat for high society, merchant for trade talks, etc.)
 
 The associated ability score for socializing is Charisma.
-
-\page
 
 ### Trading
 **Produced Currency.** Money.
@@ -178,8 +176,10 @@ Consult the list below to determine what ability score is relevant:
   - Weapon: Use the main attack ability (STR for melee, DEX for ranged).
 
 
-{On the Road}
-Limited amounts of crafting and training can be done on the road, subject to GM approval. To gain the benefit of a day's work, you need to spend at least 8 hours *other* than during a long or short rest working on the goal in question. Due to the focus switching and interruptions, as well as the limited space and tools, you gain progress at half the normal rate---it takes 16 days of travel-based work to equal a single workweek. Some features may modify this rate. You cannot expend any downtime currency on crafting or training during an adventure.
+{{note 
+
+##### On the Road
+Limited amounts of crafting and training can be done on the road, subject to GM approval. To gain the benefit of a day's work, you need to spend at least 8 hours *other* than during a long or short rest working on the goal in question. Due to the focus switching and interruptions, as well as the limited space and tools, you gain progress at half the normal rate; it takes 16 days of travel-based work to equal a single workweek. Some features may modify this rate. You cannot expend any downtime currency on crafting or training during an adventure.
 
 The only exception is brewing potions of healing, which progresses normally.
-  
+  }}

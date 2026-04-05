@@ -8568,3 +8568,22 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 
 **Creature into Object.** If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 
+\page
+{{backCover}}
+
+# NIH Equipment, Skill Tricks, and Spells
+
+Covers all the ancillary player options for NIH System, including items magic and mundane, skill tricks, incantations, spells, and legendary effects.
+___
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
+
+The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License]."
+
+![background image](https://i.imgur.com/MJ4YHu7.jpg){position:absolute,bottom:0,left:0,height:100%}
+
+{{logo
+![](/assets/naturalCritLogoWhite.svg)
+
+Homebrewery.Naturalcrit.com
+}}

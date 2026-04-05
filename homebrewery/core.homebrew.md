@@ -1845,7 +1845,22 @@ Absolutely. Since I don't want to dox myself *directly*, the easiest way is to r
 
 I may not *accept* your suggestions, but I promise to consider them.
 
-## License Details
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of  the Coast LLC and available at [https://dnd.wizards.com/resources/systems-reference-document](https://dnd.wizards.com/resources/systems-reference-document). The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode). 
+\page
+{{backCover}}
 
-The remainder of this work is &copy; Benjamin Hall 2023 and provided under the same license.
+# NIH Core Rules
+
+Covers all the basic rules for using NIH System.
+___
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
+
+The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License]."
+
+![background image](https://i.imgur.com/MJ4YHu7.jpg){position:absolute,bottom:0,left:0,height:100%}
+
+{{logo
+![](/assets/naturalCritLogoWhite.svg)
+
+Homebrewery.Naturalcrit.com
+}}

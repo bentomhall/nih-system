@@ -4553,6 +4553,9 @@ Subclasses
 - Inquiry: Skill oriented. Associated with Leviathan and all those who want to know it all.
 - Protection: Defensively/support oriented. Associated with earth elementals, celestials, and everyone who wants to preserve their allies.
 
+#### Quick Build
+To build a warlock, put Charisma as your highest ability score, then Dexterity. Pick *shocking grasp* and one other cantrip of your choice.
+
 ### Class Features
 
 As a warlock, you gain the following class features.
@@ -4612,7 +4615,7 @@ You can cast any warlock spells you know while wearing light armor.
 \page
 {{wide
 **Level** | **Proficiency** | **Features** | **Cantrips** | **Shapes** | **Effects** | **Invocations** | **Stamina** | **Aether** | **Aether Limit**
- :----|:----:|:----|----:|----:|----:|----:|----:|----:|----: 
+ :----|:----:|:----|:----:|:----:|:----:|:----:|:----:|:----:|:----: 
  1st   | +2  | Otherworldly Patron, Eldritch Blast | 2  | &mdash;  | &mdash;  | &mdash; | 1  | 4  | 2  
  2nd   | +2  | Eldritch Invocations, Blast Effects | 2  | &mdash;  | 1    | 2   | 1  | 8  | 3  
  3rd   | +2  | Pact Boon                           | 2  | &mdash;  | 1    | 3   | 2  | 12  | 4  
@@ -4664,7 +4667,7 @@ At 3rd level, your otherworldly patron bestows a gift upon you for your loyal se
 
 #### Chainbound familiar
 
-You make a subsidiary pact with a familiar&mdash;an imp, gazer, or pseudodragon, or any Tiny beast. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.
+You make a subsidiary pact with a familiar&mdash;an imp, draconewt, or any Miniscule beast. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast or dragon.
 
 Your familiar acts independently of you, but it always obeys your commands. In combat, it acts on your turn. A familiar can't attack except as described below, but it can take other actions as normal. When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.
     
@@ -4676,8 +4679,14 @@ As an action, you can temporarily dismiss your familiar. It disappears into a po
     
 You can't have more than one familiar at a time. If you perform the summoning ritual while you already have a familiar, you can cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.
     
-Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll. 
+Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.
 
+{{note
+##### Your Familiar is a Person
+Each time you summon your familiar, you get the same creature, regardless of the form given. You give it orders, but it is still an NPC with thoughts and desires. It won't disobey or betray you...but may grumble.
+}}
+
+\column
 #### Boon-blade
 
 You can use your *eldritch blast* to create a magical weapon of solidified aether in your hand. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You make spell attacks, not melee attacks with this weapon. You can apply blast effects to it by expending AET as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your *eldritch blast* damage instead of the normal weapon damage if this would be greater.
@@ -4693,7 +4702,7 @@ Your patron gives you a grimoire called a Book of Shadows. When you gain this fe
 If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.
 
 {{note
-##### Your Pact Boon}
+##### Your Pact Boon
 Each Pact Boon option produces a special creature or an object that reflects your patron's nature. Its visual appearance is entirely up to you, although you should consult with your GM to ensure you have matching concepts about your Patron's nature.
 
 }}
@@ -5190,3 +5199,23 @@ same way as it is for a ranged weapon, but this remains a melee attack.
 This weapon requires two hands when you attack with it. You can hold it
 in one hand, however. Two-handed melee weapons add twice your Strength
 modifier to the damage dealt, instead of just your Strength modifier.
+
+\page
+{{backCover}}
+
+# NIH Character Creation
+
+Covers classes, lineages, cultures, and backgrounds for NIH System.
+___
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
+
+The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License]."
+
+![background image](https://i.imgur.com/MJ4YHu7.jpg){position:absolute,bottom:0,left:0,height:100%}
+
+{{logo
+![](/assets/naturalCritLogoWhite.svg)
+
+Homebrewery.Naturalcrit.com
+}}

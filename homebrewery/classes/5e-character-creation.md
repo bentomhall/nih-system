@@ -2,14 +2,14 @@
 
 {{logo ![](/assets/naturalCritLogoRed.svg)}}
 
-# Character Creation
-## NIH System
+# Character Options
+## Dawn of Hope
 ___
 
 {{banner PLAYTEST}}
 
 {{footnote
-  Classes, lineages, cultures, and backgrounds for NIH
+  Classes, lineages, cultures, and backgrounds for (Dawn of Hope)[https://wiki.admiralbenbo.org]
 }}
 
 ![background image](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
@@ -31,21 +31,21 @@ Creating a character follows a specific process. The order of the first four doe
 If a culture or background gives you a proficiency you already have from another source, pick a different one instead.
 
 ### Class
-Each character has a "class", which represents how they go about adventuring. It is a combination of archetype, fictional "role", approach to matters, as well as the mechanical abilities you will use during play. Classes are not necessarily formal parts of the fictional world. You may meet many people who have similar abilities, but this does not mean that all wielders of arcane power are arcanists and have all those abilities.
+Each character has a "class", which represents how they go about adventuring. It is a combination of archetype, fictional "role", approach to matters, as well as the mechanical abilities you will use during play. Classes are not necessarily formal parts of the fictional world;you may meet many people who have similar abilities, but this does not mean that all wielders of arcane power are arcanists and have all those abilities.
 
-The classes available for play are described in classes.
+The classes available for play are described in classes. None of these are designed to play directly with existing 5e classes, but should be roughly equivalent.
 
 ### Lineage and Culture
 Your character's lineage describes their biological heritage. Are they one of the tall, long-lived gwerin? Or a human? Or a draconic-souled dragonborn? Or one of many other lineages. Each lineage grants a few features, including giving a +1 to one ability score. It also describes the common heights, weights, appearance, etc. of members of that lineage.
 
 The lineages available for play are described in lineages.
 
-A character's culture describes where in the world they come from and what kind of culture they grew up with. Some cultures are more generic and others more narrow; pick what fits your character best after consultation with the GM. Each culture gives a set of features, including a +1 to one ability score. You can't pick the same ability score for this +1 as you did from your lineage. If they would overlap, pick a different one of your choice. After including both changes, no ability score can be greater than +5.
+A character's culture describes where in the world they come from and what kind of culture they grew up with. Some cultures are more generic and others more narrow--pick what fits your character best after consultation with the GM. Each culture gives a set of features, including a +1 to one ability score. You can't pick the same ability score for this +1 as you did from your lineage--if they would overlap, pick a different one of your choice. After including both changes, no ability score can be greater than +5.
 
 The lineages available for play are described in cultures.
 
 ### Ability Scores
-A character's basic approach to adventuring is summed up in 6 numbers, called "Ability Scores" (or sometimes "ability modifiers"). They range between $-$5 (nearly incapable, usually only used for things like unthinking oozes or undead) and +5 (about the peak of normal earth humanity in that area). Some class abilities, magic, and monsters break that upper limit, but no ability score in the game can be above +10. A score of +0 is perfectly average for that area. Ability scores are added, by default, to all d20 rolls, whether ability checks, saving throws, or attack rolls, as well as damage rolls with weapon-based attacks (not spells). The game is not so tightly balanced that maximizing your scores is critical; there is value in being widely capable as well as specialized. However, it will go best if your highest ability scores (read on for the details on how to generate them) go in your chosen class's primary requirements (such as Intelligence for an arcanist or Strength for a warden).
+A character's basic approach to adventuring is summed up in 6 numbers, called "Ability Scores" (or sometimes "ability modifiers"). They range between $-$5 (nearly incapable, usually only used for things like unthinking oozes or undead) and +5 (about the peak of normal earth humanity in that area). Some class abilities, magic, and monsters break that upper limit, but no ability score in the game can be above +10. A score of +0 is perfectly average for that area. Ability scores are added, by default, to all d20 rolls, whether ability checks, saving throws, or attack rolls, as well as damage rolls with weapon-based attacks (not spells). The game is not so tightly balanced that maximizing your scores is critical--there is value in being widely capable as well as specialized. However, it will go best if your highest ability scores (read on for the details on how to generate them) go in your chosen class's primary requirements (such as Intelligence for an arcanist or Strength for a warden).
 
 The six abilities are, with abbreviations in parentheses:
 
@@ -53,9 +53,9 @@ The six abilities are, with abbreviations in parentheses:
 \page
 - **Dexterity (DEX):** Someone with high DEX is good at tasks requiring a delicate, precise approach. Ranged weapons, stealth, feats of acrobatics, pick-pocketing, and acting first in combat are all governed by Dexterity. Such characters are often described as "quick" or "nimble". Rangers and rogues are particularly likely to have high DEX, as well as brawlers. Ranged weapons use DEX as their modifier. Most "big explosion" spells and effects require DEX saves to reduce or eliminate the effect. Light armor relies on having a high DEX to dodge, rather than outright block, incoming attacks.
 - **Constitution (CON):** Someone with high CON is good at enduring damage, dealing with toxins and diseases, and harsh environments. Such characters are often described as "tough" or "hardy". While CON is not a primary ability score for any class, it's rarely disregarded. Keeping it above zero is a good baseline approach. Your character's maximum hit points increases with your CON score, as does the amount you heal over a short rest. Poison, acid, and cold-based abilities often require CON saving throws.
-- **Intelligence (INT):** Someone with high INT is good at recalling lore, finding the connections between facts, dealing with languages, and generally handling arcane magic. They are often described as "smart". INT is a primary score for arcanists and spellblades. Low INT does not mean you are stupid: it also reflects a life or aptitude for intellectual pursuits for their own sake. So a person with street smarts may not have high INT, but wouldn't be stupid. INT also helps against illusions and other tricks that try to make you perceive a false reality. Several other subclasses depend on INT as a secondary score.
+- **Intelligence (INT):** Someone with high INT is good at recalling lore, finding the connections between facts, dealing with languages, and generally handling arcane magic. They are often described as "smart". INT is a primary score for arcanists and spellblades. Low INT does not mean you are stupid--it also reflects a life or aptitude for intellectual pursuits for their own sake. So a person with street smarts may not have high INT, but wouldn't be stupid. INT also helps against illusions and other tricks that try to make you perceive a false reality. Several other subclasses depend on INT as a secondary score.
 - **Wisdom (WIS):** Someone with high WIS is perceptive, in tune with the world around them. They can see what others cannot and understand how animals and people are feeling. They are often in tune with nature, being able to find tracks and food in the wilderness. They are often described as "wise" or "clear-eyed". WIS is a primary ability score for saving throws against magic or abilities that affects the mind. It is the primary ability score for priests and shamans, and a secondary ability score for brawlers and rangers. Both primal and divine magic rely on WIS as the spellcasting modifier.
-- **Charisma (CHA):** Someone with high CHA has a powerful force of personality. They are naturally good with people, as CHA governs social interactions by default. They are often described as having "magnetic personalities". It also represents force of will and sense of self: magics that try to alter your shape or banish you to other planes are defended against with CHA saves. It is the primary ability score of the warlock and a secondary ability score for the oathbound, both of whose magics come from sheer stubbornness and will.
+- **Charisma (CHA):** Someone with high CHA has a powerful force of personality. They are naturally good with people, as CHA governs social interactions by default. They are often described as having "magnetic personalities". It also represents force of will and sense of self--magics that try to alter your shape or banish you to other planes are defended against with CHA saves. It is the primary ability score of the warlock and a secondary ability score for the oathbound, both of whose magics come from sheer stubbornness and will.
 
 	
 Ability scores aren't as much physical measurements as they are *archetypes*--you can have normal (ie +0) STR and still be physically fit. Using *any* weapon requires both physical power and coordination, but heavier melee weapons are associated with the Strong Guy, while ranged weapons and sneaky daggers are both associated with the Sneak or the Archer, neither of whom is traditionally "buff" (despite archers being very strong in reality). Your high ability scores are best thought of as how your character prefers to approach problems&mdash;brute force (STR), precise maneuvering or stealth (DEX), toughing them out (CON), out-thinking the problem (INT), intuiting the solution (WIS), or just bluffing your way through on sheer personality and charm (CHA).
@@ -64,7 +64,21 @@ Also of note is that your character's decision-making skills are **NOT** governe
 
 ### Alignment
 
-Alignment is not in effect, except descriptively. Instead, come up with two adjectives that describe your character's default reaction to things. For example, a habitual straight-man, always serious and mission-focused, might be "Focused" and "Serious", while the flirty minx who loves to stir up trouble might be "Sexy Chaotic". This is best done in discussion with the rest of the table, as it sets a tone for the party as a whole. Some groups are ok with tonal dissonance, while it causes issues for others. Best to figure this out *before* you start playing.
+Alignment is not in effect, except descriptively. Instead, come up with two adjectives that describe your character's default reaction to things. For example, a habitual straight-man, always serious and mission-focused, might be "Focused" and "Serious", while the flirty minx who loves to stir up trouble might be "Sexy Chaotic". This is best done in discussion with the rest of the table--it sets a tone for the party as a whole. Some groups are ok with tonal dissonance, while it causes issues for others. Best to figure this out *before* you start playing.
+
+### Stamina and Aether
+Dawn of Hope's fundamental premises differ from the norm for other 5e settings in a number of ways. One of the key differences is that spell slots aren't a thing; instead, every class presented here has some amount of Aether (abbreviated as AET), using the spell point variant rules. Even non-spellcasting classes have spell points as if they were 1/3 casters (e.g. Eldritch Knight fighters). All Aether regenerates on a long rest. In addition, every class has some amount of Stamina (STA), which is restored on a short rest. Magical class abilities (including but not limited to spells) usually consume AET, while others (including the new skill-trick system) consume mostly STA.
+
+Alongside these are a trio of universal PC actions: Deflect, Exert, and Focus.
+
+#### Deflect
+When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
+
+#### Exert
+By spending 1 STA when you make an ability check or save that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
+
+#### Focus
+By spending 1 AET when you make an ability check or save that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
 \page
 ### Languages
@@ -108,7 +122,7 @@ To generate ability scores, choose from the following methods after discussion w
 
 {{note
 #### Commentary on Expected Values
-The average for a normal, non-adventuring person is +0 in each score. Ability scores represent as much *archetypes* or *approaches* as they do physical parameters. Someone with high Dexterity and low Strength may be "strong"; wielding a bow (which requires Dexterity) also requires substantial physical strength. But the way they approach matters is more nimble, dextrous, and subtle. In appearance, they'd likely be less muscle-bound and more lean--more of a runner's build than a bodybuilder's build.
+The average modifier for a normal, non-adventuring person is +0 in each score. Ability scores represent as much *archetypes* or *approaches* as they do physical parameters. Someone with high Dexterity and low Strength may be "strong"; wielding a bow (which requires Dexterity) also requires substantial physical strength. But the way they approach matters is more nimble, dextrous, and subtle. In appearance, they'd be less muscle-bound and more lean--more of a runner's build than a bodybuilder's build.
 
 Generally, you'll want your highest ability score to be in your class's primary score. That is:
 	
@@ -119,72 +133,11 @@ Generally, you'll want your highest ability score to be in your class's primary 
 - Wisdom: Priest, shamans, brawler\*
 - Charisma: Oathbound\*, warlock 
 	
-
 \*: Choose one of these scores. Generally oathbound who focus on weapons should choose STR over CHA, while brawlers who want to emphasize punching things should focus on DEX over WIS
 
 Many classes (especially brawlers, oathbound, rangers, and spellblades) want your second highest score in one other score (called a secondary ability score). Some subclasses, chosen at level 3 generally, also key off of certain ability scores.
 
 }}
-
-\page
-**Standard Array.**
-The standard array provides a fixed, consistent set of values for play. It trades the ability to get unusually high ability scores for the surety of not getting unusually low ability scores.
-
-To use the Standard Array, distribute the following values among your ability scores in whatever order you choose: +2, +2, +1, +1, 0, -1.
-
-**Rolled Scores.**
-Rolling provides a bit of risk in return for possible reward. It can produce widely varying attributes between party members, and so should be done with care.
-
-To roll ability scores, follow the following process:
-
-- Roll 4d6 and sum the highest 3 (effectively discarding the lowest).
-- Subtract 10 from the resulting score.
-- Divide the result by 2, rounding toward negative numbers (ie -5 divided by 2 becomes -3).
-- Repeat the above steps until you have 6 numbers, then assign them to your ability scores in whatever order you choose.
-
-
-### Advancement
-#### Beyond 1st Level
-
-As your character goes on adventures and overcomes challenges, he or she gains experience, represented by experience points. A character who reaches a specified experience point total advances in capability. This advancement is called **gaining a level**.
-
-When your character gains a level, his or her class often grants additional features, as detailed in the class description. Some of these features allow you to increase one of your ability scores (usually by 1). You can't increase an ability score above +5 unless the feature explicitly says so. In addition, every character's proficiency bonus increases at certain levels.
-
-Each time you gain a level, you gain 1 additional Hit Die. This increases your maximum hit points by the average result of the die roll (rounded up) or half the maximum value of the die, plus 1 (which is the same result). Your maximum hit points also increase by your Constitution modifier. For example, a warden gains 7 (12 / 2 + 1) hit points from each additional hit die plus the value of his Constitution modifier.
-
-When your Constitution modifier increases by 1, your hit point maximum increases by 1 for each level you have attained. For example, if your 7th-level armsman has a Constitution score of +3, when he reaches 8th level and chooses to increase his Constitution score to +4, his hit point maximum then increases by 8.
-
-The Character Advancement table summarizes the XP you need to advance in levels from level 1 through level 20, and the proficiency bonus for a character of that level. Consult the information in your character's class description to see what other improvements you gain at each level.
-
-{{note
-#### XP and Advancement
-The expectation is that 1 XP &approx; 1 session of serious play, regardless of what's accomplished, fought, or done during the session. GMs can provide extra XP for good play or not award XP if the party just sits around and dithers, but should do so sparingly. Two paths are presented: slow and fast. Slow expects it to take a number of sessions (XP) equal to your current level until level 6, at which point it stabilizes as 6/level. Fast caps at 4. A Fast-path advancement will take a party 1-20 in just over a year of weekly play (71 sessions, about 14 months), while a slow advancement path will take just shy of two years (100 sessions). The goal here is to keep Tier 1 quite fast, and then slow down to a fixed pace.
-}}
-
-
-
-**Experience Points (Fast)** | **Experience Points (Slow)** | **Level** | **Proficiency Bonus**
-:----:|:----:|:----:|:----:|
-0 | 0 | 1 | +2 
-1 | 1 | 2 | +2 
-3 | 3 | 3 | +2 
-7 | 7 | 4 | +2 
-11 | 11 | 5 | +3 
-15 | 16 | 6 | +3 
-19 | 22 | 7 | +3 
-23 | 28 | 8 | +3 
-27 | 34 | 9 | +4 
-31 | 40 | 10 | +4 
-35 | 46 | 11 | +4 
-39 | 52 | 12 | +4 
-43 | 58 | 13 | +5 
-47 | 64 | 14 | +5 
-51 | 70 | 15 | +5 
-55 | 76 | 16 | +5 
-59 | 82 | 17 | +6 
-63 | 88 | 18 | +6 
-67 | 94 | 19 | +6 
-71 | 100 | 20 | +6
 
 \page
 # Lineages, Cultures, and Backgrounds
@@ -215,7 +168,7 @@ Another "artificial" lineage, the true dragonborn (so called to distinguish them
 
 Few in number, the dragonborn are a proud, martially-oriented people both by nature and by history. Their nation spent 90 years fighting an existential battle against mysterious forces of ice and snow that nearly wiped them out and succeeded in pushing them out of their ancestral home down into the hills south of the Fiach Woods. Fircely clan-oriented, the dragonborn take no grief from anyone.
 
-Physically, dragonborn look like man-dragon hybrids. Standing of normal human height, they have scales, clawed feet and hands, dragon-like muzzles, and grow very little hair, if any. They are still mammals; females still have breasts and give birth to live young. Their scales are not always hard enough to provide protection, but they are less sensitive to the elements and general abrasion, so dragonborn often wear less clothing than most other kindred (although armor is still worn). They wear specially-constructed boots that allow their talons to jut out (or encase them in armored "toe sheaths" in the case of heavier armor). Their coloration is draconic: they have scales reminicient of one of the colors of dragons and a breath weapon like a wyrmling dragon that matches their soul's heritage. This is not hereditary; a pair of gold dragonborn might have a silver or white child. Some have nearly-vestigial bat-like wings; others have thicker, harder scales that provide some protection from blows.
+Physically, dragonborn look like man-dragon hybrids. Standing of normal human height, they have scales, clawed feet and hands, dragon-like muzzles, and grow very little hair, if any. They are still mammals; females still have breasts and give birth to live young. Their scales are not always hard enough to provide protection, but they are less sensitive to the elements and general abrasion, so dragonborn often wear less clothing than most other kindred (although armor is still worn). They wear specially-constructed boots that allow their talons to jut out (or encase them in armored "toe sheaths" in the case of heavier armor). Their coloration is draconic--they have scales reminicient of one of the colors of dragons and a breath weapon like a wyrmling dragon that matches their soul's heritage. This is not hereditary--a pair of gold dragonborn might have a silver or white child. Some have nearly-vestigial bat-like wings; others have thicker, harder scales that provide some protection from blows.
 
 #### Lineage Traits
 **Ability Score Increase.**  +1 Charisma OR Constitution
@@ -251,9 +204,9 @@ After you use your breath weapon, you can't use it again until you complete a sh
 
 **Minor Draconic Trait.**  Choose one of the following traits:
 
-**Vestigial Wings**: you gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn
+(*a*) Vestigial Wings--you gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn
 
-**Armored Hide**: your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
+(*b*) Armored Hide--your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
 
 \page
 
@@ -261,7 +214,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 
 Dwarves, more properly the *tumnii*, are the kindred most unchanged by time. Their ancestors at the end of the First Age, nearly 20,000 years ago, were titans, masters of order and runes. The ruling council, committed an act of hubris--they created the so-called Orb of All Might--to destroy their longstanding enemy, the wyrm (ancestors of dragons). To empower the Orb, they drained the power and potential out of the "weaker" elements of their society. These were the first dwarves. Sons and daughters of the earth and runes, they change only grudgingly. This carries over to their physiology. Undermountain-dwelling has sharpened their eyesight and the stone in their blood gives them increased endurance.
 
-Tumnii are overwhelmingly born as fraternal twins, one male and one female. Dwarves are considered adult at age 25 and generally live until they are about 150. Overall, they tend to be shorter than humans, standing between 4'0" and 5'2", but broader and more muscular. Generally, all adult dwarves have beards. Whether one or both sexes shave is a cultural matter. Of all the lineages of Quartus, there is the most in-group physiological difference between cultural groups of tumnii, as their physiology directly adapts to their circumstances at the clan-group level.
+Tumnii are overwhelmingly born as fraternal twins--one male and one female. Dwarves are considered adult at age 25 and generally live until they are about 150. Overall, they tend to be shorter than humans, standing between 4'0" and 5'2", but broader and more muscular. Generally, all adult dwarves have beards. Whether one or both sexes shave is a cultural matter. Of all the lineages of Quartus, there is the most in-group physiological difference between cultural groups of tumnii, as their physiology directly adapts to their circumstances at the clan-group level.
 
 Two major ethnic variants exist, although this is more *social* rather than directly physiological.
 
@@ -269,7 +222,7 @@ Two major ethnic variants exist, although this is more *social* rather than dire
 Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8" with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the majority cultures).
 
 #### Deep Mountain 
-Deep mountain dwarves live in the hard conditions deep inside the mountains. Their clans rarely come to the surface except to trade. As such, they tend to be shorter and more overtly muscular than surfacer dwarves. There is virtually no externaly-visible sexual dimorphism between male and female deep mountain dwarves.
+Deep mountain dwarves live in the hard conditions deep inside the mountains--their clans rarely come to the surface except to trade. As such, they tend to be shorter and more overtly muscular than surfacer dwarves. There is virtually no externaly-visible sexual dimorphism between male and female deep mountain dwarves.
 
 #### Lineage Traits
 **Ability Score Increase.**  +1 Constitution
@@ -317,7 +270,7 @@ Physically, they stand of medium-tall height but usually stick-thin, rarely show
 
 ### Halfling
 
-Halflings are the second-youngest of the lineages of Noefra, having spontaneously developed out of goblin-kind during the War of Souls roughly 800 years ago (just after the creation of the dragonborn). The magical radiations of that war and the extreme genetic bottlenecking attendant to their creation and then the Cataclysm (which hit their homelands the worst) led to an unusual genetic quirk: approximately 1/2 of all halflings are neuter females called Kliba. About 3/5 of the remainder are fertile females, known as matriarchs, and the remainder are males.
+Halflings are the second-youngest of the lineages of Noefra, having spontaneously developed out of goblin-kind during the War of Souls roughly 800 years ago (just after the creation of the dragonborn). The magical radiations of that war and the extreme genetic bottlenecking attendant to their creation and then the Cataclysm (which hit their homelands the worst) led to an unusual genetic quirk--approximately 1/2 of all halflings are neuter females called Kliba. About 3/5 of the remainder are fertile females, known as matriarchs, and the remainder are males.
 
 As the shortest, smallest kindred, they are often confused for children of larger lineages, especially humans (among whom they live quite frequently). They've taken this and run with it to a magical degree, using this "cute" nature to their advantage.
 
@@ -356,7 +309,7 @@ The wall-builders, native to the Sea of Grass, are a mixed group who can trace t
 Visually the most distinct, the Night's Children of Byssia are generally tall and statuesque, with visible musculature. With very pale skin (that rarely tans or burns) and pure-black, straight hair, they have the least internal variation. Descended from the ancient Nocthians, who were an isolated people, the Night's Children stand out from the rest.
 
 #### Fang-kin
-The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminicient of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
+The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminicient of snake scales scattered across their bodies--these flush and become more visible when they are experiencing strong emotions.
 
 #### Golden Coasters
 The eastern side of Noefra is dominated by the Jinse Empire, and has been for millennia. The main human ethnicity there is of medium stature, with slightly golden skin and generally fair-to-brown hair and eyes. Pure-blooded Jinse nobles often have a reddened cast to their skin due to generations of diabolical influence.
@@ -379,7 +332,7 @@ The eastern side of Noefra is dominated by the Jinse Empire, and has been for mi
 \page
 
 ### Ihmisi 
-The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The reprecussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
+The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The reprecussions of this event still remain--the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
 
 Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones...but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
 
@@ -451,7 +404,7 @@ Physically, playable ophidians are very close to fang-kin humans, except that th
 
 Like humans were created from goblinoids and gwerin, the orcs were created (at about the same time even) by the ihmisi from goblinoid, ihmisi, and animal souls. Second largest of the kindred (after the jazuu), they are an imposing people. Their early history was stained with the blood and curses of the War of Blood, when an orc leader turned to demonic power to fight back against oppression and assault...and instead built an empire of skulls and ruin. After the gods were created to cast him down to the Abyss, the people who shared his face (justly or not) were considered evil and outcast to the fringes of civilization throughout the Third Age. With the Cataclysm and the great leveling of the old ways, they have re-entered society as equals. The legacy of that demon-tainted orc still echoes in the blood of Noefran orcs, although the compulsion that once drove them to mad bloodlust is gone.
 
-Physically, orcs have slightly grey-green-colored, rough skin. The most common ethnic group in Noefra, the orcs of the Fiach Woods, use tatoos to indicate standing in their clan-based society and personal history. Exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tatooed orc "smooth skin" is a deadly insult. They stand much taller than most humans and much heavier, with dark hair and eyes. Some show signs of elongated lower canines, almost to the level of tusks.
+Physically, orcs have slightly grey-green-colored, rough skin. The most common ethnic group in Noefra, the orcs of the Fiach Woods, use tatoos to indicate standing in their clan-based society and personal history--exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tatooed orc "smooth skin" is a deadly insult. They stand much taller than most humans and much heavier, with dark hair and eyes. Some show signs of elongated lower canines, almost to the level of tusks.
 
 #### Lineage Traits
 
@@ -474,7 +427,7 @@ Physically, orcs have slightly grey-green-colored, rough skin. The most common e
 \page
 ### Soulforged, Steelborn 
 
-The steelborn soulforged, along with their mirrors the shrine guardians, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, metal clockwork labor constructs across Wyrmhold started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
+The steelborn soulforged, along with their mirrors the shrine guardians, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, metal clockwork labor constructs across Wyrmhold started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Not all of them--only a tiny fraction. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
 
 The steelborn are varied, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. How they talk and why they need rest is entirely unknown. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source.
 
@@ -496,7 +449,7 @@ The steelborn are varied, but generally human-size or larger, but much heavier. 
 \column
 ### Soulforged, Shrine Guardian 
 
-The shrine guardians, along with their counterparts the steelborn, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, magically-animated wood-and-stone shrine guardian golems started to "wake up", becoming ensouled living beings made of wood and stone. Only a tiny fraction of the shrine guardians have awoken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
+The shrine guardians, along with their counterparts the steelborn, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 40 years ago, magically-animated wood-and-stone shrine guardian golems started to "wake up", becoming ensouled living beings made of wood and stone. Not all of them--only a tiny fraction. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time--their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
 
 The steelborn are varied, but generally human-size or smaller. Their shape is humanoid, but the details vary and their faces are often carved into frightening masks.. How they talk and why they need rest is entirely unknown. Their connection to the nature spirits is real, and they are very difficult to pick out of a forest as long as they don't move.
 
@@ -524,7 +477,7 @@ For all of these, start with a base lineage. Take the ability score increase lis
 
 ### Light-touched (Celestial)
 
-Those that are born in areas or to parents touched heavily by astral influence, especially the clergy serving various Ascendant powers, are born with a measure of the light of the Astral. Light is not good; the angels are known as avengers and dispensers of justice as much as mercy.
+Those that are born in areas or to parents touched heavily by astral influence, especially the clergy serving various Ascendant powers, are born with a measure of the light of the Astral. Light is not good--the angels are known as avengers and dispensers of justice as much as mercy.
 
 Every light-touched has a stigma, a sign that sets them apart and makes them visible as light-touched. While it can be hidden, it often flares and becomes most visible when they experience strong emotions. This might be a visible halo, hair that sheds sparks of light, eyes that glow from within, or a birthmark of wings...that expands into luminous wings of pure energy.
 
@@ -584,7 +537,7 @@ Choose a culture that fits the origin of your character.  You gain the features 
 In general, any lineage can come from any culture. Restrictions are as noted in each description. Cultures specify
 
 * Region (where they're mostly found)
-* Ability Score Increase (+1 to one ability score from the list given, cannot overlap with your lineage choice. If it does, pick a different one).
+* Ability Score Increase (+1 to one ability score from the list given, cannot overlap with your lineage choice--if it does, pick a different one).
 * Extra languages. 1 or more languages other than Common, which every adventurer speaks.
 * Proficiencies. 3 total proficiencies (tools, skills, or otherwise).
 * Feature. One major-equivalent feature. Culture features are not replaced by plane-touched features.
@@ -594,7 +547,7 @@ Many of the lineages and cultures of Quartus have "traditional" attitudes toward
 
 A few specifics:
 * The dwarves of Fuar Uulan are very strictly heterosexual and monogamous. All regular adults are married and stay married to one person. They react badly to adultery or divorce, and look at unmarried/non-traditional dwarves with confusion and pity.
-* The high-ranking gwerin tend to do arranged marriages; adults only gain stature in the community if they've provided at least one child as part of a contract marriage. Some of the higher-society houses are still quite male-dominated, but the lower ranks and the more progressive houses are egalitarian. In either case, no one cares who (if anyone) you are attracted to as long as you provide your requisite children to the house.
+* The high-ranking gwerin tend to do arranged marriages--adults only gain stature in the community if they've provided at least one child as part of a contract marriage. Some of the higher-society houses are still quite male-dominated, but the lower ranks and the more progressive houses are egalitarian. In either case, no one cares who (if anyone) you are attracted to as long as you provide your requisite children to the house.
 * The ihmisi, especially the more tribal folks, have very relaxed gender roles. Anyone can fulfil any societal role. Similarly, goblins have virtually no concept of gender and very little grasp of individuality within the tribes.
 * The orcs of Wyrmhold tend to hold their women in regard;women tend to be the "glue" that holds the clans and tribes together. They don't care who you are attracted to, although refusing to provide children is considered weird.
 * Halflings are generally deeply matriarchal, treating men as some combination of decorative, protected, and/or weak. Almost obnoxiously so. Female sexuality is unconstrained, but men are expected to be tied to their wives. Most male halfling adventurers break this expectation, often fleeing from forced marraiges.
@@ -705,7 +658,7 @@ Wyrmhold, the nation of orcs, dragonborn, and goblins on the eastern edge of the
 **Trained for War.** When you spend a hit die to heal, if the die result is below half of its maximum, the hit die is regained when you finish the short rest.
 
 ### Child of Night
-Byssia, located to the south of the Nocthian Caldera, is a land culturally obsessed with mysteries. Keeping them from others and finding them out. They also are notable for not being conventionally religious: they worship either the nature spirits (kami) or the Ascendant Nocthis, patroness of the moons and of mystery. Their society is rural and decentralized, with much of it making conscious efforts to live in harmony with nature.
+Byssia, located to the south of the Nocthian Caldera, is a land culturally obsessed with mysteries. Keeping them from others and finding them out. They also are notable for not being conventionally religious--they worship either the nature spirits (kami) or the Ascendant Nocthis, patroness of the moons and of mystery. Their society is rural and decentralized, with much of it making conscious efforts to live in harmony with nature.
 **Region.** Nocthian Caldera, Byssia
 
 **Ability Score Increase.** +1 Wisdom
@@ -714,7 +667,7 @@ Byssia, located to the south of the Nocthian Caldera, is a land culturally obses
 
 **Proficiencies.** Animal Handling, Nature, Woodcarver's OR Carpenter's Tools
 
-**Delver into Mysteries.** The culture of Byssia is big on secrets, both keeping them and discovering them. You have advantage on any Wisdom (Perception), Intelligence (Investigation), or Wisdom (Insight) check made to determine a hidden location, object, or motive.
+**Delver into Mysteries.** The culture of Byssia is big on secrets--keeping them and discovering them. You have advantage on any Wisdom (Perception), Intelligence (Investigation), or Wisdom (Insight) check made to determine a hidden location, object, or motive.
 
 \page
 ### Fang-kin
@@ -731,7 +684,7 @@ The Jungle of Fangs is home to several nations who share a common culture, histo
 **Serpentine Grace.** The fang-kin prize grace and dancing. Most who grow up here are more flexible than those of other cultures, no matter their lineage. You can squeeze through spaces one size smaller than yourself without penalty. In addition, you can move through enemies spaces as long as they are one size larger or smaller than yourself instead of two, although the spaces are still difficult terrain. 
 
 ### Uulani
-The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize *family*, the uulani prioritize *ideology*. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything; idleness is one of their major sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
+The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize *family*, the uulani prioritize *ideology*. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything--idleness is one of their sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
 
 **Region.** Uulan Confederacy, Shinevog
 
@@ -788,7 +741,7 @@ Ideas:
 
 \page
 ### Ideal
-Your ideal is something that you hold to deeply, something that you want to bring about. Different ideals can be interpreted many different ways: for one person, freedom might be being free from external restraints and going with the wind. For another, it might be about having enough power that no one tells you what to do. Choose something that your character will attempt to follow through on and seek for, but be careful about choosing things that strongly conflict with the ideals of fellow party members. Conflict of ideals isn't necessarily *wrong*, but it should be discussed openly out of character before the campaign begins so all the players are ok with it.
+Your ideal is something that you hold to deeply, something that you want to bring about. Different ideals can be interpreted many different ways--for one person, freedom might be being free from external restraints and going with the wind. For another, it might be about having enough power that no one tells you what to do. Choose something that your character will attempt to follow through on and seek for, but be careful about choosing things that strongly conflict with the ideals of fellow party members. Conflict of ideals isn't necessarily *wrong*, but it should be discussed openly out of character before the campaign begins so all the players are ok with it.
 
 Examples:
 - Freedom. You believe that everyone should be left to do as they please as long as it doesn't hurt anyone.
@@ -820,7 +773,7 @@ Examples:
 - I did something really stupid, and people are after me.
 
 ## Regional Origin
-Every character comes from somewhere. And that origin makes a big difference. Who you know, what you know, who knows you, and what things you're good at are all part of your regional origin. Some regions have peculiarities that make some backgrounds inapposite or at least require significantly more explanation. For example, the entirely land-locked Uulan Confederacy doesn't exactly have many sailors. And the kritocracy of Byssia doesn't have nobility, but a similar background can be framed around one of the more influential (in practice, if not in law) merchant or religious families.
+Every character comes from somewhere. And that origin makes a big difference. Who you know, what you know, who knows you, and what things you're good at are all part of your regional origin. Some regions have peculiarities that make some backgrounds inapposite or at least require significantly more explanation--for example, the entirely land-locked Uulan Confederacy doesn't exactly have many sailors. And the kritocracy of Byssia doesn't have nobility, but a similar background can be framed around one of the more influential (in practice, if not in law) merchant or religious families.
 
 In the default setting (Dreams of Hope's Federated Nations area), the regions of origin are:
 
@@ -838,7 +791,7 @@ The Jungle lies mostly isolated from the south end of the Sea of Grass down to t
 The Sea of Grass is a wide plain encompassing most of the largest cities. It borders Lake Coy'in heavily, with significant water traffic. The merchant nation of Rauviz, the gwerin-influenced Crisial Kingdom, the rugged Duarchy of Kotimaa, and the theocratic Holy Kaelthian Republic, the latter 3 of which are the most expansive nations in the area, are the dominant powers. Humans, halflings, gwerin, and dwarves are the dominant lineages. Any background is appropriate here.
 
 **Wyrmhold.**
-Wyrmhold is a highly militarized and industrial neighbor occupying the eastern flank of the Nocthian Caldera and the adjoining Kairen Mountains, as well as the southern part of the Fiach Wood and western part of the Lupaus Plains. Populated primarily by dragonborn, orcs, and goblins, there are jazuu in the high mountains as well. Other lineages only occur as migrants in the last decade or so. A clan-based aristocracy ruled by a queen, the nation has a strong and proud military tradition. They are also the second-most technologically advanced nation of the area, with only Shinevog more advanced. But they have a much deeper industrial base (albeit mostly military focused until very recently). They have little water access and are not generally known for their trading or merchant prowess.
+Wyrmhold is a highly militarized and industrial neighbor occupying the eastern flank of the Nocthian Caldera and the adjoining Kairen Mountains, as well as the southern part of the Fiach Wood and western part of the Lupaus Plains. Populated primarily by dragonborn, orcs, and goblins, there are jazuu in the high mountains as well. Other lineages only occur as migrants in the last decade or so. A clan-based aristocracy ruled by a queen, the nation has a strong and proud military tradition. They are also the second-most technologically advanced nation of the area--Shinevog beats them out. But they have a much deeper industrial base (albeit mostly military focused until very recently). They have little water access and are not generally known for their trading or merchant prowess.
 
 \column
 ## Sample Backgrounds
@@ -1009,7 +962,7 @@ Shrine-keeper, priest, cleric, wise one, witch. Those that tend to the shrines o
 
 **Skill Trick.** Frighten OR Medic
 
-Most of the Federated Nations don't have large standing armies. It's been a time of peace for quite a while (although this is changing with the advent of the Time of Troubles). Wyrmhold is the key exception. But they all have militias of one sort or another, and every nation has specialist forces such as Crisial's Scout Corps or the Caldera Wardens of Byssia. There are also many private guard companies (mercenary companies by another name) doing caravan and local security, as well as private "armies" of the various wealthy and/or aristocratic families, as well as the clan guards common in the more tribal areas. You served in one of these groups.
+Most of the Federated Nations don't have large standing armies--it's been a time of peace for quite a while (although this is changing with the advent of the Time of Troubles). Wyrmhold is the key exception. But they all have militias of one sort or another, and every nation has specialist forces such as Crisial's Scout Corps or the Caldera Wardens of Byssia. There are also many private guard companies (mercenary companies by another name) doing caravan and local security, as well as private "armies" of the various wealthy and/or aristocratic families, as well as the clan guards common in the more tribal areas. You served in one of these groups.
 
 #### Questions to Consider
 - What kind of organization did you serve with?
@@ -1027,7 +980,7 @@ Most of the Federated Nations don't have large standing armies. It's been a time
 
 **Skill Trick.** Alert OR Frighten
 
-Every city and substantial town has those who fall through the cracks. Kids, especially, who grow up among the poor and lack stable homes. Not all of them are orphans, but all of them share the desperate struggle for day-to-day survival. Working odd jobs, stealing food, joining a street gang, begging; these are the occupations of such children. You were part of that life, but unlike most, you broke out and gained enough training to adventure.
+Every city and substantial town has those who fall through the cracks. Kids, especially, who grow up among the poor and lack stable homes. Not all of them are orphans, but all of them share the desperate struggle for day-to-day survival. Working odd jobs, stealing food, joining a street gang, begging--these are the occupations of such children. You were part of that life, but unlike most, you broke out and gained enough training to adventure.
 
 #### Questions to Consider
 - Were you an orphan? Why did you end up on the streets?
@@ -1328,7 +1281,7 @@ Starting at level 11, creatures who benefit from this also gain temporary hit po
 
 **Command: Stay With Me.** You've learned to provide effective emergency medicine. As bonus action, expend 2 STA and 1 AET and touch a creature. That creature regains hit points as if they had spent 1 hit die (but do not expend the hit die). If the creature was bloodied, they regain hit points as if they'd rolled the maximum value of their hit die instead.
 
-You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.
+You can expend additional STA to increase the effect--for every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.
 
 **Command: Hold the Line.** Starting at 7th level, you have become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the staggered, shaken, or frightened condition on themselves even if they would not otherwise be able to use a reaction.
 
@@ -1605,7 +1558,7 @@ At 17th level, you learn the legendary effect animal shapes and can use it once 
 \page
 # Rogue
 
-Rogues are those who focus their training on fighting smarter, not harder. Not for them is the clash of two-handed weapons on heavy armor; they fight nimbly and evade blows, waiting for the perfect moment to strike where it hurts. Out of combat they have a broad arsenal of capabilities: they are the undisputed masters of skills and skill tricks. At higher levels, they gain overtly magical effects, often tied to the spaces Between. Subtlety and stealth often characterize a rogue.
+Rogues are those who focus their training on fighting smarter, not harder. Not for them is the clash of two-handed weapons on heavy armor--they fight nimbly and evade blows, waiting for the perfect moment to strike where it hurts. Out of combat they have a broad arsenal of capabilities--they are the undisputed masters of skills and skill tricks. At higher levels, they gain overtly magical effects, often tied to the spaces Between. Subtlety and stealth often characterize a rogue.
 
 Rogues are both damage dealers and controllers, capable of inflicting conditions on enemies. They do not do well under direct pressure, preferring to attack opportunistically where their allies are commanding the enemy's attention, either up close or from range.
 
@@ -1668,14 +1621,14 @@ Starting at 2nd level, your quick thinking and agility allow you to move and act
 
 ### Skill Tricks
 
-Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks.
+Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one skill-tricks-basic of your choice, even if you don't have proficiency in that skill. See skill-tricks for more details and the rules governing skill tricks.
 
-You gain additional Skill Tricks as shown in the Skill Tricks column of the Rogue table. When you reach 7th level, you can learn advanced skill tricks; at 11th level expert skill tricks; and 17th level master skill tricks. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
+You gain additional Skill Tricks as shown in the Skill Tricks column of the Rogue table. When you reach 7th level, you can learn skill-tricks-advanced; at 11th level skill-tricks-expert; and 17th level skill-tricks-master. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
 \page
-{{classTable,wide
+{{wide
 **Level** | **Proficiency** | **Sneak Attack** | **Features** | **Skill Tricks** | **Stamina** | **Aether** | **Aether Limit** 
 |:----|:----:|:----:|:----|----:|----:|----:|----:
 1st | +2 | 1d6 | Expertise, Sneak Attack | -- | 1 + CON | 1 | 1 
@@ -1760,7 +1713,7 @@ Additionally, you gain the jump skill trick even if you do not qualify, as you'v
 At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to create a breach in the target's defenses, making it more vulnerable to your allies' damage. Until the end of your next turn, attacks against the creature have advantage and deal extra damage equal to your proficiency bonus + your Intelligence modifier. If you otherwise qualify for Sneak Attack (without the normal effect of Called Shot), you may apply that feature as well---you simply cannot use the Called Shot to qualify for Sneak Attack when you otherwise could not.
 
 #### Investigation Adept
-At 6th level, you gain proficiency with Investigation. If you already had proficiency, you gain expertise instead. You also learn the Sense Baleful Magic skill trick even if you don't otherwise qualify.
+At 6th level, you gain proficiency with Investigation. If you already had proficiency, you gain expertise instead. You also learn the sense-baleful-magic skill trick even if you don't otherwise qualify.
 
 #### Break Contact
 At 9th level, you've learned to duck into the shadows to evade scrutiny more easily than most. You have advantage on Dexterity (Stealth) checks made to become or remain hidden. In addition, you can attempt to hide even when only lightly obscured.
@@ -2144,7 +2097,7 @@ The hybrid classes of NIH are the Oathbound, the Ranger, and the Spellblade.
 Wearing heavy armor, the Oathbound are empowered by conviction, by a cause they champion. Their power comes from adherence to Oaths of power. Some are a shining light to others, fighting back darkness in all forms. Others are empowered by Oaths of retribution or Oaths of repentance for sins they've committed, giving them a darker aspect. They all have auras that bolster allies nearby or harm enemies; all of them can heal at a touch. But their most notable ability is to smite their foes. They shine against single targets (especially fiends and undead), but struggle at range. Their primary ability score is Strength, but they want high Charisma as well as it fuels their magic and auras.
 
 ### The Ranger
-"Ranger" is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders; these too draw a ranger's wrath.
+"Ranger" is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders--these too draw a ranger's wrath.
 
 Rangers are skirmishers, wearing light or medium armor and either attacking from afar with ranged weapons or fighting with multiple weapons. They can put on a shield and fight on the front-lines, but they are less suited to that than a specialized armsman, warder, or oathbound. They have more ability to deal with hordes of small enemies than most weapon-users, but are not nearly as supportive as a primalist. Their primary ability score is Dexterity, but Wisdom bolsters their magical abilities.
 
@@ -2160,7 +2113,7 @@ Spellblade | DEX | Ranged or melee skirmisher (control focus)
 \page
 # Oathbound
 
-Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much, even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.
+Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much--even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.
 
 Unlike a priest, the oathbound's power comes not from faith in an Ascendant or the teachings of a religion, although the oathbound might be devoutly faithful. An oathbound's power comes from within as their soul reaches out to the universe itself in with wholehearted confidence in the righteousness of their cause and the necessity of their actions to further this cause. In effect, they demand that the universe give them power, and the universe looks at their confidence and stubbornness and bends to their will.
 
@@ -2604,7 +2557,7 @@ The Oathbound Spell List table contains a list of the spells available to all Oa
 \page
 # Ranger
 
-Ranger is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders; these too draw a ranger's wrath.
+Ranger is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders--these too draw a ranger's wrath.
 
 Rangers are skirmishers, either attacking from afar with ranged weapons or fighting with multiple weapons. They can put on a shield and fight on the front-lines, but they are less suited to that than a specialized armsman, warder, or oathbound. They have more ability to deal with hordes of small enemies than most weapon-users, but are not nearly as supportive as a primalist.
 
@@ -2795,7 +2748,7 @@ At 20th level, you are particularly adept at finding the weak spots of your enem
 The ideal of the ranger has three classic expressions: the Bounty Hunter, the Monster Slayer, and the Primal Guardian.
 
 ### Bounty Hunter
-Bounty Hunters are those who specialize in tracking down and dealing with civilization's refuse. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable. A bounty hunter lives and dies by his reputation: it is his currency and one of his primary weapons.
+Bounty Hunters are those who specialize in tracking down and dealing with civilization's refuse. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable. A bounty hunter lives and dies by his reputation--it is his currency and one of his primary weapons.
 
 #### Information Gatherer
 At 3rd level, you gain proficiency in Charisma checks made to gain information. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
@@ -2816,7 +2769,7 @@ Starting at 15th level, your reputation and the aura that surrounds you are such
 
 \page
 ### Monster Slayer
-Monster Slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense, ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face. 
+Monster Slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense--ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face. 
 
 #### Hunter's Prey
 
@@ -3078,7 +3031,7 @@ At 10th level, you can choose another skill proficiency to gain this benefit.
 
 #### Skill Tricks
 
-Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks.
+Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one skill-tricks-basic of your choice, even if you don't have proficiency in that skill. See skill-tricks for more details and the rules governing skill tricks.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
@@ -3336,7 +3289,7 @@ Warlock | CHA | flexible
 \page
 # Arcanist
 
-Wizard, sorcerer, mage, witch. Many names for the same thing. The masters of arcane magic, the arcanist. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They rarely wear armor, as the slight restrictions interfere with their highly practiced motions.
+Wizard, sorcerer, mage, witch. Many names for the same thing. The masters of arcane magic, the arcanist. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They rarely wear armor--the slight restrictions interfere with their highly practiced motions.
 
 Arcanists learn and cast spells via complex memory palaces, practices, meditation, and other intellectual processes. Because of this, they can modify their spells in ways most cannot. Some arcanists have more intuitive grasp of their magics than those who must learn everything from books or teachers, but they in turn struggle to control the often wild power which causes stress on their bodies.
 
@@ -3744,9 +3697,9 @@ The Arcanist Spell List table contains a list of the spells available to all arc
 
 # Priest
 
-Priests draw their power from the Ascendants: the gods, powerful angels, elemental lords, and mortals who have transcended mortality through the worship of their fellows. The priest's power is not their own; they are the channels for a superior power. Priests who channel the power of the true gods are often called clerics, even if they belong to no particular religion.
+Priests draw their power from the Ascendants--the gods, powerful angels, elemental lords, and mortals who have transcended mortality through the worship of their fellows. The priest's power is not their own--they are the channels for a superior power. Priests who channel the power of the true gods are often called clerics, even if they belong to no particular religion.
 
-Priests rarely are the best at destroying enemies directly or even weakening them. Instead, they are the paragons at supporting allies, healing their wounds and bolstering their efforts. Slightly tougher than the arcanist (by default), they tend to sit in the middle: close enough to the front-line to affect them but far enough to not draw the majority of the attention. They do better against the undead and fiends, which react badly to the priest channeling divine power.
+Priests rarely are the best at destroying enemies directly or even weakening them. Instead, they are the paragons at supporting allies, healing their wounds and bolstering their efforts. Slightly tougher than the arcanist (by default), they tend to sit in the middle--close enough to the front-line to affect them but far enough to not draw the majority of the attention. They do better against the undead and fiends, which react badly to the priest channeling divine power.
 
 Subclasses:
 
@@ -3850,7 +3803,7 @@ You learn a common incantation (see incantations for the list) of your choice. W
 You can use a holy symbol (see equipment) as a spellcasting focus for your priest spells.
 
 #### Armored Caster
-You can cast your priest spells while wearing light armor and wielding a shield. You can emblazon your holy symbol on your shield; if you do so, you do not need a free hand to manipulate it as long as the symbol is visible.
+You can cast your priest spells while wearing light armor and wielding a shield. You can emblazon your holy symbol on your shield--if you do so, you do not need a free hand to manipulate it as long as the symbol is visible.
 
 ### Divine Domain
 
@@ -4289,7 +4242,7 @@ Starting at 9th level, you can use an action and expend 3 STA to draw elemental 
 **Water.** You gain a swimming speed equal to your walking speed and can breathe underwater; you have advantage on Intelligence checks made to recall information.
 
 ### Enhanced Zones
-Starting at 11th level, your zones have become more powerful. Choose one of the following. Whenever you create a zone, it gains the benefit.
+Starting at 11th level, your zones have become more powerful. Choose one of the following--it applies when you create a zone.
 
 **Larger Zones.** Your zones now have a radius of 15 feet.
 
@@ -4867,7 +4820,7 @@ You can cast arcane-eye at will, without expending aether.
 #### Uncanny Skill
 *Prerequisite: 4th level*
 
-You learn a skill trick (see skill tricks) that you otherwise qualify for. Special: You can pick this invocation multiple times, each time learning a new skill trick.
+You learn a skill trick (see skill-tricks) that you otherwise qualify for. Special: You can pick this invocation multiple times, each time learning a new skill trick.
 
 \page
 #### Voice of the Chain Master
@@ -4881,7 +4834,7 @@ You can communicate telepathically with your familiar and perceive through your 
 
 *Prerequisite: 5th level*
 
-You learn the *voice the voiceless* incantation and can cast it without a Ritual Scroll.
+You learn the voice-the-voiceless incantation and can cast it without a Ritual Scroll.
 
 #### Witch Sight
 
@@ -5054,7 +5007,7 @@ Starting at 10th level, you can call on your patron to shield allies from aether
 Once you use this feature, you can't use it again until you finish a short or long rest.
 
 #### Legendary Effect: Globe of Invulnerability
-At 14th level, you learn the legendary effect *globe of invulnerability* and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself.
+At 14th level, you learn the legendary effect globe-of-invulnerability and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself.
 
 If you already know this legendary effect via Mystic Arcanum, you may choose an additional legendary effect that you could know at this level.
 
@@ -5108,7 +5061,7 @@ the target still takes damage equal to your proficiency bonus.
 #### Consumed
 *Acid vial, alchemist's fire flask, holy water flask*
 
-Unlike most thrown weapons, each attack consumes the weapon, as the weapon
+Unlike most thrown weapons, each attack consumes the weapon--the weapon
 is its own ammunition.
 
 #### Cleaving

@@ -761,13 +761,13 @@ A short rest is a period of downtime, at least 1 hour long, during which a chara
 
 A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, which is equal to the character's level. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character regains some spent Hit Dice upon finishing a long rest, as explained below.
 
-Additionally, characters recover their expended Stamina (see stamina-and-aether) when they finish a short rest.
+Additionally, characters recover their expended Stamina (see Stamina and Aether) when they finish a short rest.
 
 ### Long Rest
 
 A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity&mdash;at least 1 hour of walking or any fighting, casting spells, or similar adventuring activity&mdash;the characters must begin the rest again to gain any benefit from it.
 
-At the end of a long rest, a character regains all lost hit points and aether (see stamina-and-aether). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
+At the end of a long rest, a character regains all lost hit points, stamina and aether (see Stamina and Aether). The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
 
 \page
 A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits. Creatures cannot progress personal projects during long rests.
@@ -1045,7 +1045,7 @@ When you describe an action not detailed elsewhere in the rules, the GM tells yo
 \page
 ### Attack
 
-The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists. With this action, you make one melee or ranged attack with a weapon or an unarmed strike. See the making-an-attack section for the rules that govern attacks. Certain features, such as the Extra Attack feature of the armsman, allow you to make more than one attack with this action.
+The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists. With this action, you make one melee or ranged attack with a weapon or an unarmed strike. See the Making an Attack section for the rules that govern attacks. Certain features, such as the Extra Attack feature of the armsman, allow you to make more than one attack with this action.
 
 ### Cast a Spell
 
@@ -1109,7 +1109,7 @@ You can make ranged attacks only against targets within a specified range. If a 
 
 The target of a spell or magical effect must be within the effect's range. For a spell like magic-missile, the target is a creature. For a spell like fireball, the target is the point in space where the ball of fire erupts.
 
-Most effects have ranges expressed in feet. Some effects can target only a creature (including you) that you touch. This is denoted as a range of Touch. Other effects, such as the shield spell, affect only you. These effects have a range of Self. Effects that create cones or lines of effect that originate from you also have a range of Self, indicating that the origin point of the effect must be you (see “areas-of-effect” later in the this chapter).
+Most effects have ranges expressed in feet. Some effects can target only a creature (including you) that you touch. This is denoted as a range of Touch. Other effects, such as the shield spell, affect only you. These effects have a range of Self. Effects that create cones or lines of effect that originate from you also have a range of Self, indicating that the origin point of the effect must be you (see Areas of Effect later in the this chapter).
 
 Once an effect is cast, its effects aren't limited by its range, unless the effect's description says otherwise.
 
@@ -1322,7 +1322,7 @@ A target with **half cover** has a +2 bonus to AC and Dexterity saving throws. A
 
 A target with **three-quarters cover** has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by a solid obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk. Creatures two sizes larger or more than the target provide three-quarters cover instead of half cover. 
 
-A target with **total cover** can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different; a target has total cover when it stands behind a wall-of-force, but as the wall is transparent, the target has no concealment and cannot hide. And vice versa; a target concealed by heavy fog or by un-illuminated darkness has no cover but is totally concealed and can attempt to hide.
+A target with **total cover** can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different; a target has total cover when it stands behind a *wall of force*, but as the wall is transparent, the target has no concealment and cannot hide. And vice versa; a target concealed by heavy fog or by un-illuminated darkness has no cover but is totally concealed and can attempt to hide.
 
 All abilities require a clear path to their target unless they specify otherwise or unless their effect would not work as written otherwise (such as the teleport incantation). 
 
@@ -1629,12 +1629,12 @@ If an already exhausted creature suffers another effect that causes exhaustion, 
 - A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
 - A grappled creature must make a DC 10 Constitution saving throw to maintain Concentration when the grappled condition is applied.
 
-The grappled condition can be ended by succeeding on an escape attempt--spending your action to make a Strength (Athletics) or Dexterity (Acrobatics) check opposed by either a fixed DC (from monster abilities that automatically grapple) or a Strength (Athletics) check made by the one doing the grappling. The condition can also be ended in a few other ways:
+The grappled condition can be ended by succeeding on an escape attempt, which involves spending your action to make a Strength (Athletics) or Dexterity (Acrobatics) check opposed by either a fixed DC (from monster abilities that automatically grapple) or a Strength (Athletics) check made by the one doing the grappling. The condition can also be ended in a few other ways:
 
-- The condition ends if the grappler is incapacitated (see ).
-- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-wave* spell. The reverse also holds--effects that move the grappler out of reach of the grappled creature end the grapple as well.
+- The condition ends if the grappler is incapacitated (see Conditions).
+- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-wave* spell. The reverse also holds; effects that move the grappler out of reach of the grappled creature end the grapple as well.
 
-If two people wish to play tug-of-war with a third, (such as an ally trying to pull someone out of a monster's grasp), the two opposing parties make the opposed checks. The grappled person can choose to help one side or the other or do nothing--helping grants that side advantage on the check. If not conscious or not able to take actions, the grappled person does nothing.
+If two people wish to play tug-of-war with a third, (such as an ally trying to pull someone out of a monster's grasp), the two opposing parties make the opposed checks. The grappled person can choose to help one side or the other or do nothing; helping grants that side advantage on the check. If not conscious or not able to take actions, the grappled person does nothing.
 
 ### Hidden 
 

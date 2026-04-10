@@ -1523,7 +1523,7 @@ But, as always, do as you wish. They don't break anything, they're just not to m
 
 
 ## Tier
-Magic items have a **tier** assigned to them, which indicates approximately at what stage of play (see stages-of-play) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
+Magic items have a **tier** assigned to them, which indicates approximately at what stage of play (see Stages of Play in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
 
 The item tiers are:
 
@@ -1767,7 +1767,7 @@ Your Intelligence score is +4 while you wear this headband. It has no effect on 
 
 This dazzling helm is set with 5 diamonds, 10 rubies, 15 fire opals, and 20 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic. You gain the following benefits while wearing it:
 
-- You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fire opal), true-seeing (diamond), or wall-of-fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
+- You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: *daylight* (opal), *fireball* (fire opal), *true seeing* (diamond), or *wall of fire* (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
 - As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.
 - As long as the helm has at least one ruby, you have resistance to fire damage.
 - As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.
@@ -1914,9 +1914,9 @@ While wearing this cloak, you can use an action to speak its command word. This 
 While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.
 
 ### Consumables
-The items in this section are all linked by the fact that they are truly consumable--they lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.
+The items in this section are all linked by the fact that they are truly consumable. They lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.
 
-Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature--generally oils apply to items or objects and unguents to creatures.
+Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature. Generally oils apply to items or objects and unguents to creatures.
 
 #### Apprentice's Friend
 *Potion, Journeyman*
@@ -2038,7 +2038,7 @@ This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil
 #### Oil of Slipperiness
 *Oil, Adventurer* 
 
-This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom-of-movement spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.
+This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a *freedom of movement* spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.
 
 #### Potion of Animal Friendship
 *Potion, Adventurer*
@@ -3904,9 +3904,9 @@ Different tables have different points at which this is all acceptable, but as a
 \page
 
 #### Escalating Conditions 
-In some cases, it makes sense to "chain" conditions together--the first save (or a close failure) might incur a lesser condition, while a subsequent failed save (or a really bad failure) might incur a greater condition.
+In some cases, it makes sense to "chain" conditions together: the first save (or a close failure) might incur a lesser condition, while a subsequent failed save (or a really bad failure) might incur a greater condition.
 
-DEX and INT generally don't cause conditions--instead they deal damage (usually allowing a save for half damage). CON, WIS, and DEX are considered "major" saving throws--every class gets proficiency in one of these. Since CON is so rarely disregarded, even if it isn't prioritized, it's the dumping ground for miscellaneous saving throws.
+DEX and INT generally don't cause conditions; instead they deal damage (usually allowing a save for half damage). CON, WIS, and DEX are considered "major" saving throws and every class gets proficiency in one of these. Since CON is so rarely disregarded, even if it isn't prioritized, it's the dumping ground for miscellaneous saving throws.
 
 Generally, monsters have the lowest Dexterity and Intelligence saving throw modifiers and the highest Constitution saving throw modifiers. There are many outliers, however.
 
@@ -7133,7 +7133,7 @@ The class feature that grants access will tell you what level you gain access as
 
 Each legendary effect listed below has one or more tags associated with it, listed after the name in the entry. Most of these tags, by themselves, have no effect. Other features may interact with them, however. An effect with the tag **Concentration** requires concentration as if concentrating on a spell. Every effect will either be tagged as **Lesser** or **Greater**. Generally, Lesser Legendary effects are suitable for learning by characters of levels 11-15 and Greater Legendary Effects are suitable for learning by characters of levels 16+. Some Greater effects are scaled up versions of Lesser ones; there are others that contain entirely new effects.
 
-For abilities and effects that key off of a spell or ability's cost, Legendary Effects count as spells costing aether equal to 8 + your character level. Some legendary effects scale with your level as well--that is called out in the effect description.
+For abilities and effects that key off of a spell or ability's cost, Legendary Effects count as spells costing aether equal to 8 + your character level. Some legendary effects scale with your level as well as specified in the effect description.
 
 *Note:* Legendary Effects are **not** spells, but they do follow the general rules for spells as far as cover, needing line of effect (unless they state otherwise), concentration, etc.
 
@@ -7358,7 +7358,7 @@ You smash the earth at your feet, causing it to crack and break. You can choose 
 
 All creatures within that area when a tremor occurs must make a DC 13 + your proficiency bonus Dexterity saving throw. On a failed save, they fall prone and take 3d10 bludgeoning damage. If they fail the saving throw by 5 or more, they are also staggered until the start of your next turn. On a success, they take half damage and are not prone. Objects in the area take 30 bludgeoning damage. Walls and buildings take double damage and may collapse.
 
-Fissures radiate through the area--for a cone, there is one 5' wide, 10' deep fissure that affects a contiguous line of your choice; for the circular one there are 4, each starting at right angles to the others. Fissures can pass through each other, but cannot occupy the same space for more than one space. If a Medium or smaller, non-hovering creature is in one of these lines when it appears, it makes the initial Dexterity saving throw at disadvantage and takes an additional 3d10 bludgeoning damage. Wall segments in such fissures may entirely collapse (at the GM's discretion). The fissures are difficult terrain.
+Fissures radiate through the area. For a cone, there is one 5' wide, 10' deep fissure that affects a contiguous line of your choice; for the circular one there are 4, each starting at right angles to the others. Fissures can pass through each other, but cannot occupy the same space for more than one space. If a Medium or smaller, non-hovering creature is in one of these lines when it appears, it makes the initial Dexterity saving throw at disadvantage and takes an additional 3d10 bludgeoning damage. Wall segments in such fissures may entirely collapse (at the GM's discretion). The fissures are difficult terrain.
 
 ### Etherealness
 **Tags.** Arcane, Lesser
@@ -8414,7 +8414,7 @@ As you cast the incantation, you draw a 10-foot-diameter circle on the ground in
 
 If the spell succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
 
-Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence--a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
+Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence, which is a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
 
 #### Transport via Plants
 *Rare, 1 minute, Immobile. Duration 1 minute*

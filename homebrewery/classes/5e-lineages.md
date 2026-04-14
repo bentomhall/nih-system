@@ -571,7 +571,6 @@ Byssia, located to the south of the Nocthian Caldera, is a land culturally obses
 
 **Delver into Mysteries.** The culture of Byssia is big on secrets, both keeping them and discovering them. You have advantage on any Wisdom (Perception), Intelligence (Investigation), or Wisdom (Insight) check made to determine a hidden location, object, or motive.
 
-\page
 ### Fang-kin
 The Jungle of Fangs is home to several nations who share a common culture, history, and religion. Most of the natives of the region are descendents of those who served the Old Masters (who disappeared about 400 years ago) and were changed by them. They dominantly worship the Queen Ascendant, a recently-ascended (about 45 years ago) "eternal queen" figure, doing so via dance and music. They prize the arts and commonly revere snakes. The color blue is reserved for nobles by long-standing tradition. Culturally, they are very caste oriented, with strong boundaries between nobles, tradesmen, and commoners.
 
@@ -584,7 +583,7 @@ The Jungle of Fangs is home to several nations who share a common culture, histo
 **Proficiencies.** Performance, Deception, Disguise Kit
 
 **Serpentine Grace.** The fang-kin prize grace and dancing. Most who grow up here are more flexible than those of other cultures, no matter their lineage. You can squeeze through spaces one size smaller than yourself without penalty, and can squeeze through spaces two sizes smaller using the normal squeezing rules. In addition, you can move through enemies spaces as long as they are one size larger or smaller than yourself instead of two, although the spaces are still difficult terrain. 
-
+\page
 ### Uulani
 The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize *family*, the uulani prioritize *ideology*. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything; idleness is one of their major sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
 
@@ -622,7 +621,7 @@ Each background provides a package of starting equipment. This is in addition to
 
 ### Questions to Consider
 Each sample background presents a list of questions you can use as a springboard to guide you in creating your character's history before they started adventuring. These are the sort of thing to discuss with your GM so that your story can be woven into the world and the ongoing campaign's story.
-
+\column
 ### Skill Trick
 
 A background gives access to a single skill trick (see Skill Tricks at the end of this document for a complete list). As you customize your background, you can substitute the listed skill trick for any other that uses one of the proficiencies granted by the background.
@@ -890,6 +889,7 @@ Every city and substantial town has those who fall through the cracks. Kids, esp
 - How did you gain the training and resources for your class? Was there a kind (or cruel!) mentor or benefactor? A happy accident? A particularly big score?
 - What kind of a town did you grow up in? Was it a big city? A medium-sized town?
 
+\page
 ## Skill Tricks
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
@@ -903,11 +903,9 @@ Each skill trick detailed below shares some common characteristics:
 
 #### Skill Trick DCs
 The DC for any saving throws required by skill tricks is given by
-
-\begin{center}
+:
 **8 + the relevant ability score + your proficiency bonus**
-\end{center}
-
+:
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
 
 ### Basic Skill Tricks
@@ -925,7 +923,7 @@ You have advantage on Wisdom (Perception) checks against being surprised as well
 *Intelligence (Arcana) Basic Skill Trick*
 
 You learn one cantrip of your choice from the Wizard list, as well as one spell of 1st level from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
+\column
 #### Charge
 
 *Strength (Martial Weapon) Basic Skill Trick*
@@ -956,13 +954,13 @@ When you attempt to persuade someone to bypass procedures or to stop hostilities
 
 When you hit with a melee weapon attack, you can attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. Once you use this feature a number of times equal to your Strength or Dexterity modifier (minimum 1), you cannot do so again until you finish a long or short rest.
 
-\page
 #### Divine Initiate
 
 *Wisdom (Religion) Basic Skill Trick*
 
 You learn one cantrip of your choice from the Cleric list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
+\page
 #### Evasive Footwork
 
 *Dexterity (General) Basic Skill Trick*
@@ -1075,15 +1073,84 @@ A staggered creature has disadvantage on attack rolls, disadvantage on Dexterity
 *Wisdom (Animal Handling) Basic Skill Trick*
 
 You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
-
+\column
 #### Trap Finder
 
 *Intelligence (Investigation) Basic Skill Trick*
 
 You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you have advantage on any Dexterity saving throws to avoid their effects.
-\column
+
 #### Tumble
 
 *Dexterity (Acrobatics) Basic Skill Trick*
 
 You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space. Once you use this feature a number of times equal to your Dexterity modifier, you cannot do so again until you finish a long or short rest.
+
+\page
+## Appendix: Languages
+
+Your culture indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet. Every player character, by default, has proficiency in Common.
+
+Choose your languages from the Common Languages table, or choose one that is common in your campaign. With your GM's permission, you can instead choose a language from the Exotic Languages table.
+
+Some of these languages are actually families of languages with many dialects. For example, the Primordial language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes. Creatures that speak different dialects of the same language can communicate with one another. A notation of 'tr. [language]' means that the language is written transliterated into the other language's script, while it has no native written form.
+
+Proficiency in a language includes the basic ability to speak, understand, read, and write (if that language has a written form). You can learn more languages after character creation via a variety of means, including training during downtime (the time between active on-screen adventures).
+
+{{wide
+#### Common Languages
+**Language** | **Common Name** | **Typical Speakers** | **Script**
+:---|:----:|:----:|:----:
+Common | -- | Most folks | Reformed Imperial 
+Tumni | Dwarven | Dwarves | Modern Runic 
+Yonwach | High Elven | Gwerin | Aelven 
+Metsae | Wood Elven | Ihmisi | Aelven 
+Too-til | Giantish | Giants, jazuu | Modern Runic 
+Ard-teang | Orcish | Orcs | Mixed Imperial/Aelven 
+Ngyon toi | Goblin | Goblins | None, tr. Imperial
+
+}}
+
+
+{{wide
+#### Exotic Languages
+**Language** | **Common Name** | **Typical Speakers** | **Script**
+|:----:|:----:|:----:|:----:
+Abyssal | Demonic | Demons, cultists | Lucian 
+Celestial | -- | Lucians acting on divine business | Lucian 
+Draconic | -- | Dragons, dragonborn | tr. mixed Aelven/Runic 
+Iath Neidr | Snakefolk | Ophidians | Modified Aelven 
+Jinzi | Eastern Imperial | Eastern Noefrans | Jinzi 
+Kamigami | Druidic, Sylvan | Druids, fey | tr. Aelven 
+Lucian | Infernal | Astral residents | Lucian 
+Primordial | Elemental | Elementals | Archaic Runic 
+Sarthak | Ship Speech | Ship folk and pirates of the Moon Sea | Modified Aelven  
+Tiboran | Old Imperial | Scholars | Imperial
+
+}}
+
+\page
+## Appendix: Gods, Ascendants, and Kami of Quartus
+Religion is a vital part of most peoples of Quartus. But not all (or even *most*) religion is directed toward the 16 "true gods", the members of the Congregation. Much is directed toward Ascendants, who are powerful individuals who have transcended mortality on the wings of this worship. In practice these two are similar; the differences are mostly cosmological rather than personal. Polytheism in various forms (including henotheism and mystery cults) is the most common form, with few if any truly monotheistic religions. In addition to worshipers of individuals or pantheons, many revere, propitiate, or otherwise pay homage to ancestors and "kami", the spirits of nature that are in and through everything. While there are very few true atheists (since the gods and ascendant powers demonstrably exist), there are many who reject *worship* of such beings, in part because they believe them unworthy of such worship. Others worship transactionally or contractually; they worship for the purpose of getting specific blessings, rather than out of true faith.
+
+Regardless, there are a few relevant factors. First, only the Congregation can create true (ie PC) clerics. All of the other beings and their religions can teach followers magical tricks, and even the gods only create clerics rarely; most of the priests are actually closer in nature to warlocks with pacts bound either to their ascendant power or to a religion. There are no clerics of "forces" or "philosophies"; getting power from a deity requires an actual deity. Clerics do represent a specific deity, but frequently act on behalf of multiple members simultaneously, as many of the factions align. Second, there is no alignment. Even the "evil" gods (such as the Hollow King, patron of assassins) are worshiped by otherwise "good" people. The only real exception is that worship of *demons* specifically is considered anathema by almost every culture; demons eat souls.
+
+Many player characters, including but not limited to clerics, will be religious. Pick from the list below or work with your GM to figure out what you believe.
+
+{{wide
+#### The Divine Congregation (True Gods)
+Name | Symbol | Portfolio | Primary Domains | Main Worshipers
+:----|:----:|:----:|:----:|:----:
+Aerielara| A harp | Art, beauty, music, sexuality | Life, Trickery | Auringon, Crisial, gwerin
+Hollow King | Crossed daggers | Untimely death, murder, order, assassins | Death, Trickery | Situational
+Kela Loran | Stacked coin | Commerce, wealth, luck | Knoweldge, Trickery | Rauviz, Asai'ka, merchants
+Korokonolkom | 3 mountains | The earth, mountains, endurance | Knowledge, War | dwarves, Uulani Confederacy
+Lae Loara | A tree | Wilderness, travellers, hunters, nature unbound | Nature, Trickery | ihmisi, wild tribes
+Lon-Ka | A hammer | The forge, technology, progress | Knowledge, Forge | dwarves, Shinevog, Wyrmhold
+Sarapha | Sheafs of grain | Harvest, agriculture, brewing, night, autumn | Life, Nature | Most areas.
+Melara | A snowflake | Timely death, endings, winter, healing, peace | Grave, Life | Most areas.
+Peor-fala | A stylized flame | Hearth, home, family, fertility, domesticity | Life, Light | Most areas, halflings
+Pinwheel | An opera mask | Deception, trickery, jokes (especially practical ones), jesters | Trickery, War | Rarely openly
+Roel Kor | A red castle | Tyranny, control, power, 
+
+}}

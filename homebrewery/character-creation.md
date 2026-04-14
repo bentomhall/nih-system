@@ -77,7 +77,8 @@ Some of these languages are actually families of languages with many dialects. F
 
 Proficiency in a language includes the basic ability to speak, understand, read, and write (if that language has a written form). You can learn more languages after character creation via a variety of means, including training during downtime (the time between active on-screen adventures). See training for details.
 
-##### Common Languages
+{{wide
+#### Common Languages
 **Language** | **Common Name** | **Typical Speakers** | **Script**
 :---|:----:|:----:|:----:
 Common | -- | Most folks | Reformed Imperial 
@@ -88,7 +89,10 @@ Too-til | Giantish | Giants, jazuu | Modern Runic
 Ard-teang | Orcish | Orcs | Mixed Imperial/Aelven 
 Ngyon toi | Goblin | Goblins | None, tr. Imperial
 
+}}
 
+
+{{wide
 #### Exotic Languages
 **Language** | **Common Name** | **Typical Speakers** | **Script**
 |:----:|:----:|:----:|:----:
@@ -102,6 +106,9 @@ Lucian | Infernal | Astral residents | Lucian
 Primordial | Elemental | Elementals | Archaic Runic 
 Sarthak | Ship Speech | Ship folk and pirates of the Moon Sea | Modified Aelven  
 Tiboran | Old Imperial | Scholars | Imperial
+
+}}
+
        
 ### Ability Scores
 To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.

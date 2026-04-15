@@ -1151,6 +1151,20 @@ Sarapha | Sheafs of grain | Harvest, agriculture, brewing, night, autumn | Life,
 Melara | A snowflake | Timely death, endings, winter, healing, peace | Grave, Life | Most areas.
 Peor-fala | A stylized flame | Hearth, home, family, fertility, domesticity | Life, Light | Most areas, halflings
 Pinwheel | An opera mask | Deception, trickery, jokes (especially practical ones), jesters | Trickery, War | Rarely openly
-Roel Kor | A red castle | Tyranny, control, power, 
+Roel Kor | A red castle | Tyranny, control, power | War, Order | Auringon, many nobles
+Tor Elan | A sun | The sun, honorable warfare, work and reward, summer | Light, War | Most areas, especially Southshore and Sea of Grass
+Sakara | A butterfly | Growth, beginnings, spring, romance, youth | Life, Nature | Most areas, especially Southshore, Dreamshore, and the Sea of Grass
+Selesurala | A lightning bolt | Storms, ocean, killing cold, disasters | Nature, Tempest | Rarely. Propitiated/feared by sailors especially.
+Yogg-Maggus | A dual spiral | Magic, scholars, the arcane | Arcana, Knowledge | Scholars everywhere. Crisial and Shinevog especially
+Ytra | Scales | Law, justice | Light, Order | Most places, but mainly begging for justice to be done. 
 
 }}
+
+Ascendants were once mortal. They are worshipped in concentrated geographic regions, rather than world-wide as with the Congregation. They have more of a hands-on approach, but are less powerful and more dependent on their worshipers.
+
+#### Prominent Ascendants
+Name | Religion | Region | Description
+:----|:----:|:----:|:----
+Nocthis | Church of Night Reborn | Byssia | The patron of Byssians, lady of mystery, lady of the moons. Her church is female-dominated and the apparent leaders aren't the real ones. Doesn't proselyte.
+Queen Ascendant | Church of the Queen Ascendant | Jungle of Fangs | Ascended during living memory (about 55 years ago). Church is much older, highly bureaucratic. Strong tension between church and state. Prioritizes action over inner belief.
+ 

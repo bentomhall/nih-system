@@ -1160,11 +1160,19 @@ Ytra | Scales | Law, justice | Light, Order | Most places, but mainly begging fo
 
 }}
 
+\page
 Ascendants were once mortal. They are worshipped in concentrated geographic regions, rather than world-wide as with the Congregation. They have more of a hands-on approach, but are less powerful and more dependent on their worshipers.
-
+:::::::
+{{wide
 #### Prominent Ascendants
 Name | Religion | Region | Description
 :----|:----:|:----:|:----
 Nocthis | Church of Night Reborn | Byssia | The patron of Byssians, lady of mystery, lady of the moons. Her church is female-dominated and the apparent leaders aren't the real ones. Doesn't proselyte.
 Queen Ascendant | Church of the Queen Ascendant | Jungle of Fangs | Ascended during living memory (about 55 years ago). Church is much older, highly bureaucratic. Strong tension between church and state. Prioritizes action over inner belief.
- 
+Perkunos | &mdash; | Zhapai Karmap and the Tuura Adam | Technically, Perkunos is a demigod in service to Selesurala rather than a separate Ascendant with his own religion. But his laid-back attitude and mortal-friendliness makes him widely revered.
+
+}}
+
+::
+Kami are nature spirits, the entities by which druids and rangers cast their spells. They are very not human, and don't communicate using normal language. Instead, people propitiate them with shrines, sacrifices, and taboos (especially the latter). Lacking personal identity, their worship practices are very localized.
+

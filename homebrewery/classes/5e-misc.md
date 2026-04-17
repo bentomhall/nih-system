@@ -1063,37 +1063,37 @@ When you attempt to persuade someone to bypass procedures or to stop hostilities
 
 *Strength (Martial Weapon) Basic Skill Trick*
 
-When you hit with a melee weapon attack, you can spend 1 STA to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. 
+When you hit with a melee weapon attack, you can attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. Once you successfully disarm an opponent using this feature, you cannot do so again until you finish a long or short rest.
 \page
 #### Divine Initiate
 
 *Wisdom (Religion) Basic Skill Trick*
 
-You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 2 AET from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Priest list, as well as one 1st-level spell from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 #### Evasive Footwork
 
 *Dexterity (General) Basic Skill Trick*
 
-When you use the Deflect action against opportunity attacks provoked by moving, the cost is reduced by 1 STA. This is cumulative with the benefit from masterwork armor.
+When you use the Deflect action but the attack still hits, you do not expend a use of the action.
 
 #### Feint
 
 *Charisma (Deception) Basic Skill Trick*
 
-You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 STA. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them.
+You fake an attack as a bonus action, trying to misdirect the enemy. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them. Once a creature fails a saving throw against this, they are immune to further attempts for the duration of that encounter. 
 
 #### Frighten 
 
 *Charisma (Intimidation) Basic Skill Trick*
 
-As an action, you can expend 1 STA to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn.
+As a bonus action, you can threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn. A creature that succeeds on their saving throw is immune to further uses of this ability for the duration of that encounter. 
 
 #### Haggler
 
 *Charisma (Persuasion OR Deception) Basic Skill Trick*
 
-You are particularly good at haggling. Any time you sell goods, you get 125\% of the normal price, and you buy for 90\% of the listed price.
+You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
 
 #### Jump
 
@@ -1113,7 +1113,7 @@ Additionally, you can make out the basic sense of any text written in a script f
 
 *Constitution (General) Basic Skill Trick*
 
-You can hold your breath for twice as long. In addition, you can spend 1 STA when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw. 
+You can hold your breath for twice as long. In addition, you can choose to gain advantage on any required Constitution saving throw when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability). Once you use the latter portion of this feature a number of times equal to your Constitution modifier (minimum 1), you cannot do so again until you finish a long rest.
 
 #### Medic
 
@@ -1125,19 +1125,19 @@ When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed
 
 *Dexterity (Stealth) Basic Skill Trick*
 
-When you are hidden, you can spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
+When you are hidden, you can spend your reaction to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
 #### Piercing Wound
 
 *Dexterity (Martial Weapon) Basic Skill Trick*
 
-When you hit with an attack from a ranged weapon, you can spend 1 STA to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. If you have the Nimble Strike feature, you can use this with any weapon attack that uses Dexterity.
+When you hit with an attack from a ranged or finesse weapon, you can try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. Once you use this ability a number of times equal to your Dexterity modifier (minimum once), you cannot do so again until you finish a long or short rest.
 
 #### Primal Initiate
 
 *Wisdom (Nature) Basic Skill Trick*
 
-You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Druid list, as well as one 1st level spell. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 #### Resourceful Combatant
 *Strength (Martial Weapon) Basic Skill Trick*
@@ -1174,7 +1174,7 @@ Additionally, you have advantage on checks made to determine the spell being cas
 
 *Strength (Shield) Basic Skill Trick*
 
-You lash out with your shield. Expend 1 STA and make an attack with your Melee Attack Modifier. On a hit, the opponent takes 1d4 bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
+You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
 
 #### Soothe Domesticated Animal
 
@@ -1186,13 +1186,13 @@ You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the di
 
 *Intelligence (Investigation) Basic Skill Trick*
 
-You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you can spend 1 STA to gain advantage on any Dexterity saving throws to avoid their effects.
+You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you gain advantage on any Dexterity saving throws to avoid their effects.
 \column
 #### Tumble
 
 *Dexterity (Acrobatics) Basic Skill Trick*
 
-You can move through opponents' spaces if they are one size larger than you by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
+You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space.
 
 ### Advanced Skill Tricks
 
@@ -1203,13 +1203,13 @@ Advanced skill tricks require a +4 proficiency or level 9 characters.
 
 *Intelligence (Arcana) Advanced Skill Trick*
 
-You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 3 AET from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Wizard list, as well as one spell of 1st or 2nd level from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 #### Athlete
 
 *Strength (Athletics) Advanced Skill Trick*
 
-You can climb at full speed without making checks even on surfaces with few handholds or slick surfaces. You can expend 1 STA to climb even magically slick surfaces without needing hands or a check; if you are still on this surface at the start of your next turn, you must expend additional STA or use your hands.
+You can climb at full speed without making checks even on surfaces with few handholds or slick surfaces. You can use your bonus action to climb even magically slick surfaces without needing hands or a check; if you are still on this surface at the start of your next turn, you must expend an additional bonus action or use your hands.
 
 Additionally, you gain a swimming speed equal to your normal speed and no longer need to make checks to swim even in very rough or fast waters.
 
@@ -1219,7 +1219,7 @@ Additionally, the distance you can jump doubles and the height at which you star
 
 *Charisma (Deception) Advanced Skill Trick*
 
-As a bonus action, you expend 2 STA to swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks.
+As a bonus action, you swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks. Once you do so, you cannot do so again during that same encounter or for one minute, whichever is shorter.
 
 #### Befriend Wild Animal
 
@@ -1231,31 +1231,31 @@ As an action, you can attempt to soothe an angry creature that does not speak an
 
 *Strength (General) Advanced Skill Trick*
 
-You can spend 2 STA to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
+You can use an action to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
 
 #### Delay Unconsciousness
 
 *Constitution (General) Advanced Skill Trick*
 
-As a reaction when you are brought to zero hit points, you can expend 3 STA and gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
+As a reaction when you are brought to zero hit points, you can choose to gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
 
 #### Demoralize
 
 *Charisma (Intimidation) Advanced Skill Trick*
 
-As an action, you expend 3 STA. You can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them.
+As an action, you can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they are frightened of you for one minute; if they fail the saving throw by more than 5 points, they will attempt to flee or surrender instead. A single targeted creature can attempt the saving throw again when they end their turn out of line of sight of you. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them. 
 
 #### Divine Journeyman
 
 *Wisdom (Religion) Basic Skill Trick*
 
-You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Cleric list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 #### Fascinate
 
 *Charisma (Performance) Advanced Skill Trick*
 
-As an action, you begin a distracting performance. Expend 1 STA. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction).
+As an action, you begin a distracting performance. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction). Any creature that succeeds on the saving throw or for whom the effect ends is immune to any further attempts by you to use this ability for 24 hours.
 
 #### Find Weakness
 
@@ -1267,7 +1267,6 @@ As a bonus action, you can search for flaws in your opponent. Expend 2 STA and m
 - Any resistances or immunities they have.
 - Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
 - Their current goals
-
 
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
 
@@ -1281,7 +1280,7 @@ You can attempt to hide even if only lightly obscured. Additionally, missing wit
 
 *Charisma (General) Advanced Skill Trick*
 
-When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
+When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can ignore the effects of those conditions until the end of your turn. Once you use this ability a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long rest.
 
 #### People Whisperer
 
@@ -1293,13 +1292,13 @@ When you make a Wisdom (Insight) check and the result is above a 15, you gain on
 
 *Wisdom (Religion) Advanced Skill Trick*
 
-You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Druid list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 #### Pocket Sand
 
 *Dexterity (Sleight of Hand) Advanced Skill Trick*
 
-As a bonus action, you can expend 1 STA and attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see.
+As a bonus action, you can attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success or failure, the creature is immune to further attempts to blind them this way until the end of the encounter.
 
 #### Resuscitation
 
@@ -1319,20 +1318,20 @@ When you make a Charisma (Deception) check to convince someone you know somethin
 
 When you make an attack against an unattended object and hit, you ignore its Damage Threshold and deal double damage. 
 
-Alternatively, you can target attended objects as follows, expending 2 STA:
+Alternatively, you can target attended objects as follows. Once you hit with such an attack, you cannot do so again for one minute.
 
 - **Armor**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
 - **Weapons**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
-- **Wielded spell foci or other objects in hand**: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 \texttimes 5 ft away in a random direction.
+- **Wielded spell foci or other objects in hand**: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 &times; 5 ft away in a random direction.
 
 
 #### Wrestler
 
 *Strength (Athletics) Advanced Skill Trick*
 
-You can grapple and shove creatures two sizes larger than yourself. If you expend 1 STA, you can remove the size limit entirely.
+You can grapple and shove creatures two sizes larger than yourself. Once per long or short rest, you can remove the size limit entirely.
 
-Additionally, when you start your turn with a creature grappled, you can expend 1 STA and attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
+Additionally, when you start your turn with a creature grappled, you can attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
 
 ### Expert Skill Tricks
 
@@ -1349,7 +1348,7 @@ Invisible or unseen enemies no longer have advantage to hit you. In addition, yo
 
 *Charisma (Intimidation) Expert Skill Trick*
 
-This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
+This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken (surrendering or fleeing) on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
 
 #### Comprehend Dweomer
 
@@ -1359,14 +1358,14 @@ You gain the following benefits:
 
 - You can determine the nature of any arcane phenomena you encounter, including spell glyphs, illusions, etc.
 - You can detect spellcasting within 60 ft. of you even if there are no components.
-- You can expend 3 AET as a reaction to attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence.
+- As a reaction you can attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence. Once you successfully disrupt a spell this way, you cannot do so again until you finish a long or short rest.
 
 
 #### Dungeoncrasher
 
 *Strength (Athletics) Expert Skill Trick*
 
-When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. for every STA you expend when making the check. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
+When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
 
 #### Find Portal
 
@@ -1376,7 +1375,7 @@ You search for signs of an accessible planar portal within 1 mile of you. Make a
 
 **Check Total**  | **Result**
 |:--------|:----|
-< 10 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous. 
+&lt; 10 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous. 
 10-14 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous. 
 15-19 | You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous. 
 20+ | You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
@@ -1386,13 +1385,13 @@ You search for signs of an accessible planar portal within 1 mile of you. Make a
 
 *Dexterity (Stealth) Expert Skill Trick*
 
-When you are hidden, you no longer need to be concealed to remain hidden, but you must expend 1 STA for every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
+When you are hidden, you no longer need to be concealed to remain hidden, but you must expend your bonus action every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
 
 #### Slippery
 
 *Dexterity (Acrobatics) Expert Skill Trick*
 
-You can no longer be grappled or restrained by non-legendary effects as long as you spend 1 STA when the effect is applied.
+You can no longer be grappled or restrained by spells under 6th level or by non-legendary creatures.
 
 ### Master Skill Tricks
 
@@ -1402,7 +1401,7 @@ Master skill tricks require a +6 proficiency or level 17 characters.
 
 *Dexterity (Acrobatics) Master Skill Trick*
 
-You can expend 1 AET per turn to walk on air as if it was solid ground.
+You can spend your bonus action on turn to walk on air as if it was solid ground. If you do not spend your bonus action while suspended,  you fall.
 
 #### Dragon's Fear
 
@@ -1414,7 +1413,7 @@ This skill trick works as Break Will, but with the addition that creatures whose
 
 *Charisma (Persuasion) Master Skill Trick*
 
-As an action, you can magically call for a truce even during combat, expending 3 AET. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons.
+As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. Once you do so, you cannot do so again until you finish a long rest.
 
 Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
 
@@ -1422,16 +1421,19 @@ Alternatively, if you are not actively fighting someone, you can force them to m
 
 *Wisdom (Survival) Master Skill Trick*
 
-As an action and expending 4 AET, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane.
+As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
 
 #### Healing Hands
 
 *Wisdom (Medicine) Master Skill Trick*
 
-As an action you can expend 4 AET to magically do one of the following to a creature you touch:
+As an action you can magically do one of the following to a creature you touch. Once you use an option, you cannot use that option again until you finish a long rest.
 
 - Heal the creature to half of its maximum hit points.
 - Remove any condition from a living creature.
 - Cure any disease and remove any poison or curse affecting the creature.
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
+\page
+
+# Conditions

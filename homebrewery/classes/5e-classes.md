@@ -117,13 +117,7 @@ Starting at 2nd level, you can push yourself beyond your normal limits for a mom
 Once you use this feature, you cannot use this feature again until you next roll initiative. Starting at 17th level, you can use it as many times as you have stamina for, but only once on the same turn.
 
 ### Active Defenses
-Starting at 2nd level, you gain three additional special reactions you can take.
-
-**Deflect.** When you are conscious and wearing armor, wielding a weapon, or wearing a shield and you are the target of an attack from a source you can see, you can use your reaction and expend 1 STA to deflect the attack. If you do so, you add your proficiency bonus to your AC against that attack. You must decide before the attack's result is announced. If the attack misses as a result of doing this, you can make a riposte attack against the attacking creature with a shield or weapon you are wielding or an unarmed attack, as long as they are in your reach. Shields count as battering martial weapons with a 5 foot reach and a 1d4 damage die.
-
-**Exert.** When you have to make a saving throw or ability check that involves Strength, Dexterity, or Constitution, you can use your reaction and expend 1 STA to add your proficiency bonus to the result, even if you have already added your proficiency bonus to this check or save. You must decide to do so before you roll the dice.
-
-**Focus.** When you have to make a saving throw or ability check that involves Intelligence, Wisdom, or Charisma, you can use your reaction to add your proficiency bonus to the result, even if you have already added your proficiency bonus to this check or save. You must decide to do so before you roll the dice. Once you use this special action, you cannot do so again until you finish a long or short rest.
+Starting at 2nd level, you are more apt at using the defensive special reactions all PCs can use. When you use the Deflect reaction, you can spend 2 STA instead of consuming a normal use. When you use the Exert reaction, you can spend 1 STA instead of consuming a normal use.
 
 ### Martial Archetype
 At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose the Defender, Sword Saint, or Warlord archetype, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
@@ -1055,32 +1049,114 @@ The Bounty hunter Spell List table contains a short summary of the spells availa
 
 Note: This spell list was designed with the idea that my Incantation homebrew is in play. Otherwise, use the Ranger list from the PHB + the additional spell list from Tasha’s, but remove hunter’s mark (as it’s a duplicate of Favored Foe and should not be stacked).
 
-{{wide
-AET (Spell Level) | Spell Name |  | AET (Spell Level) | Spell Name
-:----|:-----: |:--------: |:-----|:-----|
-2 (1) | Cure Wounds |  | 3 (2) | See Invisibility
-2 (1) | Enchanted Strike(*) |  | 3 (2) | Silence
-2 (1) | Bane |  | 3 (2) | Spike Growth
-2 (1) | Burning Hands |  | 3 (2) | Web
-2 (1) | Disguise Self |  | 5 (3) | Arcane Binding
-2 (1) | Entangle |  | 5 (3) | Bestow Curse
-2 (1) | Faerie Fire |  | 5 (3) | Call Lightning
-2 (1) | Flash Freeze(*) |  | 5 (3) | Clairvoyance
-2 (1) | Fog Cloud |  | 5 (3) | Conjure Animals
-2 (1) | Grease |  | 5 (3) | Plant Growth
-2 (1) | Longstrider |  | 5 (3) | Wall of Thorns
-2 (1) | Sleep |  | 5 (3) | Wind Wall
-2 (1) | Thunderwave |  | 6 (4) | Blight
-3 (2) | Alter Self |  | 6 (4) | Conjure Woodland Beings
-3 (2) | Barkskin (**) |  | 6 (4) | Dominate Beast
-3 (2) | Blindness/Deafness |  | 6 (4) | Faithful Hound
-3 (2) | Darkvision |  | 6 (4) | Freedom of Movement
-3 (2) | Detect Thoughts |  | 6 (4) | Giant Insect
-3 (2) | Find Traps (**) |  | 6 (4) | Greater Invisibility
-3 (2) | Flame Blade (**) |  | 7 (5) | Contagion
-3 (2) | Invisibility |  | 7 (5) | Chain Lightning
-3 (2) | Pass without Trace |  |  | 
+{{spellList
+#### 1st level (2 AET)
+- Cure Wounds
+- Enchanted Strike(\*)
+- Bane
+- Burning Hands
+- Disguise Self
+- Entangle
+- Faerie Fire
+- Flash Freeze(\*)
+- Fog Cloud
+- Grease
+- Longstrider
+- Sleep
+- Thunderwave
+
+#### 2nd level (3 AET)
+- Alter Self
+- Barkskin (\*\*)
+- Blindness/Deafness
+- Darkvision
+- Detect Thoughts
+- Find Traps (\*\*)
+- Flame Blade (\*\*)
+- Invisibility
+- Pass without Trace
+- See Invisibility
+- Silence
+- Spike Growth
+- Web
+
+#### 3rd level (5 AET)
+- Bestow Curse
+- Call Lightning
+- Clairvoyance
+- Hold Person
+- Plant Growth
+- Summon Beast (TCoE)
+- Wall of Thorns
+- Wind Wall
+
+#### 4th level (6 AET)
+- Blight
+- Dominate Beast
+- Faithful Hound
+- Freedom of Movement
+- Giant Insect
+- Greater Invisibility
+- Summon Fey
+
+#### 5th level (7 AET)
+- Contagion
+- Chain Lightning
 }}
+\page
+
+## Druid (Subclass)
+This section introduces one new druid subclass: The Circle of Spirit Talkers, which uses wildshape uses to instead summon spirit companions.
+
+### Circle of the Spirit Talkers
+Some druids take a more active role in society than most. They are the shamans of tribal groups, the advisors to forest-dwelling elven kings. They mediate between the spirits that inhabit the land and the people to maintain the balance. As a result of their more people-focused role, they rarely take the shape of animals themselves. Instead, they are accompanied by a spirit guide, a representative of the spirits with which they mediate. They pour their energy into these spirits to manifest them, aiding allies and hampering enemies.
+
+{{classTable
+Level | Features | Manifestations Known | Manifestation Die
+:---- | :----: | :----: |:----:
+2 | Spirit guide, Manifestation | 1 | d4
+6 | Spirit specialization | 2 | d6
+10 | Verge Walker | 3 | d8
+14 | Balance-Keeper | 4 | d10
+}}
+
+#### Spirit Guide
+When you choose this circle at 2nd level, you gain the service of a spirit guide. This incorporeal fey spirit travels with you and aids you in your adventures. It takes the shape of a tiny beast of your choice that moves with a flying speed equal to your speed. It cannot attack or take actions unless manifested (see Manifestations). Other creatures can occupy or move through its space without penalty. While not manifested it is immune to all damage and effects and cannot be targeted with attacks or spells.
+
+#### Manifestation
+The same pool of energy that lets you take the shape of animals also can be used to cause your spirit guide to manifest. When you choose this circle at 2nd level, choose 1 of the manifestations listed below. You can use one use of wildshape to activate the listed effect, which lasts for a number of hours equal to half your level. If the spirit guide has hit points listed and is reduced to zero hit points it does not die--instead the active manifestation ends early. Whenever a manifestation calls for your manifestation die, use the dice type shown in the Spirit-talker’s table.
+
+At levels 6, 10, and 14 you learn additional manifestations as shown on the Spirit-talker’s table.
+
+###### Ancestral Warrior
+Your spirit guide takes the form of a spectral archer with hit points equal to half your total hit points. It has resistance to all damage, immunity to all conditions, and uses your saving throw modifiers and AC. You can use a bonus action on your turn to command the spirit to attack a creature within 120 feet. It does so using your spell attack modifier and if it hits it deals necrotic damage equal to your manifestation die plus your Wisdom modifier.
+##### Beguiling Nymph
+Your spirit guide enters your body, enhancing your charm and persuasive abilities. You add your manifestation die to all Charisma checks and once before the effect ends you can force a humanoid or beast that can see and hear you to make a Charisma saving throw or be charmed by you for the duration. While charmed, it treats you as a friendly acquaintance. If it succeeds on the saving throw, it knows you attempted to influence it. If it fails, it does not.
+##### Guiding Ancestor
+Your spirit guide takes the form of a spectral elder whose presence inspires competence. While the spirit is manifested, you can use your reaction to add your manifestation die to an ability check or saving throw made by an ally within 30 feet of the spirit.
+##### Protecting Bear
+Your spirit guide takes the shape of a spectral bear and roars. Roll your manifestation dice twice; the spirit has hit points equal to your level times the total of the rolls. It uses your AC and saving throw modifiers but ignores any spell or effect that does not deal damage. All allies that can see and hear the spirit guide when it roared have resistance to all damage as long as the manifestation is active. Any damage they take is also taken by the spirit guide. When the spirit guide takes damage that would reduce it to 0 HP, the manifestation only ends at the end of the current turn, regardless of the total damage taken.
+#### Prowling Cat
+Your spirit guide takes the form of a spectral panther. Its presence aids your efforts at stealth. All allies within 30 feet of it add your manifestation die to their Dexterity (Stealth) and initiative checks.
+#### Watchful Hawk
+Your spirit guide circles overhead in the form of a spectral hawk, warning you and your allies of danger. While manifested, you and all allies within 60 feet of you add your manifestation die to their initiative, perception checks, and survival checks.
+#### Spirit Specialization
+At 6th level, you specialize in one particular kind of spirit manifestation. This modifies your chosen manifestation as shown in the Spirit Specialization table as well as an additional proficiency. If you already are proficient in the indicated skill, you gain expertise in it instead.
+
+Manifestation | Additional Manifestation Benefit | Associated Skill
+:----|:----:|:----
+Ancestral Warrior | When the warrior hits with an attack, the target has disadvantage on its next attack. | Athletics or heavy armor. If armor is chosen, you may wear metal armors of any type.
+Beguiling Nymph | The charm effect can now target any creature and the target has disadvantage on the saving throw. | Persuasion or Deception
+Guiding Ancestor | The effect no longer requires your reaction but you can only use it twice between the start of two of your consecutive turns. | One tool of your choice or History
+Protecting Bear | The bear now has resistance to all damage. | Athletics or Nature
+Prowling Cat | The range increases to 60 feet and affected allies gain improved darkvision (treating all light conditions as bright light out to 60 feet). | Stealth or Acrobatics
+Watchful Hawk | Attacks against allies made by unseen attackers in the area no longer gain advantage. | Perception or Nature
+
+#### Verge Walker
+Starting at 10th level, you have become preternaturally aware of the presence of spirits and sensitive to their intent. You have advantage on ability checks made to interact with fey or incorporeal undead and cannot be surprised by them while conscious.
+
+#### Spiritual Warding
+Starting at 14th level, your spiritual presence is undeniable. When a fey or an undead creature attacks your or targets you with a spell that does not target anyone else, they must roll a Wisdom saving throw. On a failed save, they must choose another target for the attack or spell or lose the action. If they fail the saving throw by 5 or more, they are unable to attack you for one minute. Creatures with an Intelligence score of 14 or more are unaffected by this ability.
 
 \page
 # Appendix A: Skill Tricks

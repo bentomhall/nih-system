@@ -2180,7 +2180,6 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - ray of frost
 - resistance
 - shocking grasp
-- true strike (2024 version)
 
 #### 1st Level
 
@@ -2188,10 +2187,11 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - burning hands
 - color spray
 - disguise self
+- enchanted strike (new)
 - expeditious retreat
 - faerie fire
 - false life
-- flash freeze
+- flash freeze (new)
 - fog cloud
 - inflict wounds
 - guiding bolt
@@ -2247,6 +2247,28 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - telekinesis
 
 }}
+
+#### Enchanted Strike 
+*1st level divination*
+____ 
+- Components: S
+- Range: 60 ft
+- Cast time: 1 bonus action
+- Duration: 1 round 
+____
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon mastery feature or some other effect), your critical hit range increases by 1 instead.
+
+#### Flash Freeze
+*1st level evocation*
+____
+- Components: V/S
+- Cast time: 1 action
+- Range: 60 ft
+- Duration instantaneous
+____
+The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their movement is reduced to 0 until the end of their next turn. On a success, they take half damage and are not slowed.
+
+When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 \page
 # War Mage
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.

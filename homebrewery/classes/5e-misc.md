@@ -52,11 +52,19 @@ Monsters with legendary resistances don't know what they're saving against (unle
 Spell scrolls no longer require having the spell on your spell list to cast. Instead, casting from a spell you do not meet the prerequisites to cast normally (other than preparation, ie a scroll of a spell not on your list or of a level you can cast) requires the same Intelligence (Arcana) check as not having spell slots of the appropriate level.
 
 ### Changes to Specific Spells
-**Wall of force**: It loses the "immune to all damage" line. It does not have hit points, but has AC 18 and threshold 8 (ie ignores any source of damage under that threshold), and immunity to all damage other than thunder, force, bludgeoning, piercing, and slashing. A single panel (10x10) breaks if it takes more than 40 damage during a single turn.
+**Barkskin**: Remove concentration. Add the following text: "In addition, the target gains temporary hit points equal to your spellcasting ability modifier at the beginning of each of their turns. These temporary hit points fade when the spell ends.
+
+When you cast this spell using a spell slot of 3rd or higher level, the target's minimum armor class increases by 1 for every additional spell level above 2nd, up to a maximum armor class of 20."
+
+**Find Traps**: Replace the text with “You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes any fixed-location construction, obstruction, or trap that would inflict a sudden or unexpected effect you consider harmful or that would impose a negative condition. Thus, the spell would sense an area affected by the alarm or glyph of warding spells, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole. You learn the location and the general nature of the danger posed by each trap.”
+
+**Flame Blade**: Add the following text: “Alternatively, you can use it as a normal scimitar, except that it deals fire damage.” and “When used as a normal weapon, the damage dice increase by 1d6 for every 2 spell levels above 2nd (+1d6 at 4th, +2d6 at 6th, +3d6 at 8th).”
 
 **Forcecage**: It loses the "immune to all damage" line. It does not have hit points, but has AC 20 and threshold 10 (ie ignores any source of damage under that threshold), and immunity to all damage other than thunder, force, bludgeoning, piercing, and slashing. It breaks and the spell ends if it takes more than 50 damage during a single turn.
 
 **Polymorph**: Change "The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating)." to "the new form can be any beast whose challenge rating is equal to or less than the level of the spell."
+
+**Wall of force**: It loses the "immune to all damage" line. It does not have hit points, but has AC 18 and threshold 8 (ie ignores any source of damage under that threshold), and immunity to all damage other than thunder, force, bludgeoning, piercing, and slashing. A single panel (10x10) breaks if it takes more than 40 damage during a single turn.
 
 #### Changes to Long-range Spells
 A setting-specific event (the Aether Fog) disrupted all long-range (roughly "more than a few hundred feet/a mile or so") spells. As a result, the following spells have changed.
@@ -172,6 +180,30 @@ Once you use this action a number of times equal to half your proficiency bonus 
 When you make an ability check or save that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
 Once you use this action a number of times equal to half your proficiency bonus (rounded up), you cannot do so again until you finish a long rest.
+\page
+# New Spells
+#### Enchanted Strike 
+*1st level divination*
+____ 
+- Components: S
+- Range: 60 ft
+- Cast time: 1 bonus action
+- Duration: 1 round 
+____
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon mastery feature or some other effect), your critical hit range increases by 1 instead.
+
+#### Flash Freeze
+*1st level evocation*
+____
+- Components: V/S
+- Cast time: 1 action
+- Range: 60 ft
+- Duration instantaneous
+
+The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their movement is reduced to 0 until the end of their next turn. On a success, they take half damage and are not slowed.
+
+When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
+
 \page
 # Incantations
 {{note
@@ -987,7 +1019,103 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 **Creature into Object.** If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 
 \page
+# Conditions
+\page
+# Appendix B: New Conditions
+### Bloodied
+
+Bloodied, by itself, does little. It is automatically applied to any creature whose hit points are below half of its maximum.
+
+### Broken
+
+The default way of imposing the broken condition is by the creature failing a Wisdom saving throw against Morale effects . Some other abilities may impose it. It lasts for one round at minimum, or more if appropriate. Mindless creatures are immune to being broken. Note: the PCs are heroes. They do not have to make Morale saves and should rarely, if ever, have the Broken condition.
+
+- A broken creature focuses their attention on personal survival. This may mean surrendering, fleeing, or taking the Total Defense action if they can't get away.
+- Broken creatures rarely attack, but if they do they do so at disadvantage.
+- Attacks against broken creatures are at advantage.
+
+### Concentrating
+
+The Concentrating condition is applied when one begins casting a spell or activating an ability with duration involving Concentration or that says it requires concentration as if on a spell. You may only Concentrate on one effect at a time. While Concentrating, any effect that would apply the Concentrating condition again ends the first effect for all targets before the second takes effect. Similarly, if your Concentration is broken for any reason, the effect you were concentrating on ends.
+
+Concentration lasts for the duration of the effect or until broken by one of the following.
+- Taking damage while Concentrating requires a successful Constitution saving throw to maintain Concentration. The DC is the greater of 10 or half the damage taken.
+- Becoming grappled, restrained, or knocked prone requires a successful DC 10 Constitution saving throw to maintain Concentration.
+- At the GM's discretion, a Constitution saving throw may be required to maintain Concentration under adverse environmental conditions such as casting spells on a ship's deck during a storm. The DC will vary but should not be lower than 10.
+- Becoming incapacitated immediately ends Concentration.
+- You can choose to drop Concentration on a spell or effect on your turn without using an action.
+
+### Deafened
+
+Added:
+- A deafened creature must make a Wisdom (Perception) check to cast a spell with a verbal component. The DC is 10 + the spell level of the slot used (cantrips count as spells of level 0). Failure means that the action is lost but the spell slot (if any) is not consumed.
 
 \page
+### Exhaustion
 
-# Conditions
+Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.
+
+Each level of exhaustion (up to five levels) adds a cumulative -1 modifier to all checks, saves, and attacks. It also decreases the save DC of your abilities and spells by 1. Upon taking a 6th level of exhaustion, you are incapacitated until you no longer have 6 levels.
+
+If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description. An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1. Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink (or was incapacitated with 6 levels).
+
+### Frightened
+Added:
+- Targets of a frightened creature's spells or abilities have advantage on saving throws against those abilities.
+
+### Grappled
+Added, reworded
+- A grappled creature must make a DC 10 Constitution saving throw to maintain Concentration when the grappled condition is applied.
+
+The grappled condition can be ended by succeeding on an escape attempt, which involves spending your action to make a Strength (Athletics) or Dexterity (Acrobatics) check opposed by either a fixed DC (from monster abilities that automatically grapple) or a Strength (Athletics) check made by the one doing the grappling. The condition can also be ended in a few other ways:
+
+- The condition ends if the grappler is incapacitated (see Conditions).
+- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-wave* spell. The reverse also holds; effects that move the grappler out of reach of the grappled creature end the grapple as well.
+
+If two people wish to play tug-of-war with a third, (such as an ally trying to pull someone out of a monster's grasp), the two opposing parties make the opposed checks. The grappled person can choose to help one side or the other or do nothing; helping grants that side advantage on the check. If not conscious or not able to take actions, the grappled person does nothing.
+
+### Hidden 
+
+Hidden is a *relative* condition; you can be hidden from one creature and not from another. To become hidden, you must either be impossible to detect by the other creature&mdash;have total concealment, be unable to be heard (such as by the spell), and be unable to be smelled or otherwise sensed (via senses like tremorsense or blindsight)&mdash;or have successfully taken the Hide action (which requires total concealment) and beaten that creature's Passive Perception.
+
+- A hidden creature has advantage on their first attack against a creature they're hidden from if they can see the other creature when they make their attack. Hit or miss, the hidden condition then ends for any creature that could see the attack happen.
+- A hidden creature is automatically revealed if they move out of total concealment.
+
+
+### Invisible
+
+An invisible creature is impossible to see without the aid of magic or a special sense. If they are unseen as a result, see the Unseen Attackers rules.
+
+\page
+### Poisoned
+
+Added:
+- Expending spell slots while poisoned requires a successful Constitution saving throw with a DC of 10 + the spell slot level. Failure means that the spell or ability does not take effect but the Aether is not consumed.
+
+### Prone
+
+Added:
+- A creature that is knocked prone while Concentrating must make a DC 10 Constitution saving throw to maintain concentration.
+
+### Restrained
+
+Added:
+- Casting spells with somatic components requires a Strength saving throw with a DC equal to 10 + half the aether cost (rounded down). Failure means that the spell does not take effect but the Aether (if any) is not consumed.
+
+### Shaken
+
+- A shaken creature cannot take reactions.
+- A shaken creature's speed is reduced to half.
+
+### Staggered
+
+- A staggered creature has disadvantage on attack rolls
+- A staggered creature has disadvantage on Dexterity saving throws and ability checks.
+- Targets of a staggered creature's spells or abilities have advantage on saving throws against those abilities.
+
+### Surprised 
+
+(Reworded): This condition is applied only on the first round of combat and automatically ends at the end of the affected person's first turn.
+
+- A surprised creature cannot take actions or reactions and cannot move.
+- Surprised creatures still roll for initiative normally and take their turn. They can speak, but this speech cannot clear the surprised condition for other creatures in that encounter.

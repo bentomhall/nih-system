@@ -2278,26 +2278,26 @@ Not all practitioners of wizardry are academics. Trained in military schools to 
 | Level | Proficiency | Features     | Max     |Spells  |Cantrips  | --- Spell Slots Per Spell Level ---|||||||||
 |      ^| Bonus      ^|             ^| Motes  ^|Known  ^|         ^|1st |2nd |3rd |4th |5th |6th |7th |8th |9th |
 |:-----:|:-----------:|:-------------|:------: |:------:|:--------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|  1st  | +2 | Mathematical Pharmacy | &mdash; |  2     |3      | 2  | —  | —  | —  | —  | —  | —  | —  | —  |
-|  2nd  | +2 | Pharmaceutical Outlaw |   2     |   3    |3      | 3  | —  | —  | —  | —  | —  | —  | —  | —  |
-|  3rd  | +2 | Biochemical Sorcery   |   3     |   4    |    3  | 4  | 2  | —  | —  | —  | —  | —  | —  | —  |
-|  4th  | +2 | Spell Analyst         |   4     |   5    |    4  | 4  | 3  | —  | —  | —  | —  | —  | —  | —  |
-|  5th  | +3 | Ritual Astronomy      |   5     |   6    |    4  | 4  | 3  | 2  | —  | —  | —  | —  | —  | —  |
-|  6th  | +3 | Statistical Occultism |   6     |   7    |    4  | 4  | 3  | 3  | —  | —  | —  | —  | —  | —  |
-|  7th  | +3 | Ritual Astronomy      | 7       |   8    | 4     | 4  | 3  | 3  | 1  | —  | —  | —  | —  | —  |
-|  8th  | +3 | Mathematical Pharmacy | 8       |   9    | 5     | 4  | 3  | 3  | 2  | —  | —  | —  | —  | —  |
-|  9th  | +4 | Malefic Chemist       | 9       |  10    | 5     | 4  | 3  | 3  | 2  | 1  | —  | —  | —  | —  |
-| 10th  | +4 | Gunpowder Torturer    | 10      |  11    | 5     | 4  | 3  | 3  | 2  | 1  | —  | —  | —  | —  |
-| 11th  | +4 | Torque Interfacer     | 11      |  12    | 5     | 4  | 3  | 3  | 2  | 1  | 1  | —  | —  | —  |
-| 12th  | +4 | Exo Interfacer        | 12      |  12    | 5     | 4  | 3  | 3  | 2  | 1  | 1  | —  | —  | —  |
-| 13th  | +5 | Gunpowder Torturer    | 13      |  13    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | —  | —  |
-| 14th  | +5 | Gunpowder Torturer    | 14      |  13    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | —  | —  |
-| 15th  | +5 | Phased Linguist       | 15      |  14    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | —  |
-| 16th  | +5 | Seismological Alchemy | 16      |  14    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | —  |
-| 17th  | +6 | Mathematical Pharmacy | 17      |  15    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | 1  |
-| 18th  | +6 | Gunslinger Corruptor  | 18      |  15    | 6     | 4  | 3  | 3  | 3  | 1  | 1  | 1  | 1  | 1  |
-| 19th  | +6 | Consecrated Augury    | 19      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 1  | 1  | 1  |
-| 20th  | +6 | Phased Linguist       | 20      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 2  | 1  | 1  |
+|  1st  | +2 | Spellcasting, Squad Assignment | &mdash; |  2     |3      | 2  | —  | —  | —  | —  | —  | —  | —  | —  |
+|  2nd  | +2 | Power Siphon |   2     |   3    |3      | 3  | —  | —  | —  | —  | —  | —  | —  | —  |
+|  3rd  | +2 | Piercing Spell   |   3     |   4    |    3  | 4  | 2  | —  | —  | —  | —  | —  | —  | —  |
+|  4th  | +2 | Ability Score Improvement, Skill Trick        |   4     |   5    |    4  | 4  | 3  | —  | —  | —  | —  | —  | —  | —  |
+|  5th  | +3 | Extra Attack      |   5     |   6    |    4  | 4  | 3  | 2  | —  | —  | —  | —  | —  | —  |
+|  6th  | +3 | Assignment Feature |   6     |   7    |    4  | 4  | 3  | 3  | —  | —  | —  | —  | —  | —  |
+|  7th  | +3 | Spell Efficiency      | 7       |   8    | 4     | 4  | 3  | 3  | 1  | —  | —  | —  | —  | —  |
+|  8th  | +3 | Ability Score Improvement, Skill Trick | 8       |   9    | 5     | 4  | 3  | 3  | 2  | —  | —  | —  | —  | —  |
+|  9th  | +4 | Magic Sensitivity       | 9       |  10    | 5     | 4  | 3  | 3  | 2  | 1  | —  | —  | —  | —  |
+| 10th  | +4 | Assignment Feature    | 10      |  11    | 5     | 4  | 3  | 3  | 2  | 1  | —  | —  | —  | —  |
+| 11th  | +4 | Dualcasting     | 11      |  12    | 5     | 4  | 3  | 3  | 2  | 1  | 1  | —  | —  | —  |
+| 12th  | +4 | Ability Score Improvement, Skill Trick        | 12      |  12    | 5     | 4  | 3  | 3  | 2  | 1  | 1  | —  | —  | —  |
+| 13th  | +5 | &mdash;    | 13      |  13    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | —  | —  |
+| 14th  | +5 | Assignment Feature    | 14      |  13    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | —  | —  |
+| 15th  | +5 | Focused Spell       | 15      |  14    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | —  |
+| 16th  | +5 | Ability Score Improvement, Skill Trick | 16      |  14    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | —  |
+| 17th  | +6 | &mdash; | 17      |  15    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | 1  |
+| 18th  | +6 | Assignment Feature  | 18      |  15    | 6     | 4  | 3  | 3  | 3  | 1  | 1  | 1  | 1  | 1  |
+| 19th  | +6 | Ability Score Increase, Skill Trick    | 19      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 1  | 1  | 1  |
+| 20th  | +6 | Destructive Mastery       | 20      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 2  | 1  | 1  |
 
 }}
 
@@ -2380,6 +2380,10 @@ Starting at 3rd level, you have learned to augment your spells to overcome resis
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
 Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
+
+### Skill Tricks
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you learn one skill trick you qualify for. Additionally, each time you gain a new skill trick, you can exchange one skill trick you know for a different one you qualify for at that level.
+
 \page
 ### Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn. You can choose to cast a warmage cantrip instead of one (and only one) of the weapon attacks.
@@ -2544,27 +2548,26 @@ Starting at 18th level, when you cast a spell as a bonus action using your Dualc
 ## Warmage Spell List
 Note: the warmage is intentionally limited to spells of 5th level and lower and have a fairly restricted "utility belt" of spell choices. They are intended to use upper slots for upcasting lower-level spells and mostly cast damaging/direct combat spells. This is why they have Extra Attack and other features (relative to a wizard).
 
-As usual, spells marked with * are found in sources other than the Players Handbook and should be substituted if not available.
 :::::::::::::::
 {{spellList,wide
 #### Cantrips (0 Level)
 - Acid Splash
 - Blade Ward
-- Booming Blade*
+- Booming Blade
 - Chill Touch
 - Create Bonfire
 - Fire Bolt
-- Frostbite*
-- Green-Flame Blade*
+- Frostbite
+- Green-Flame Blade
 - Light
-- Lightning Lure*
+- Lightning Lure
 - Mending
 - Message
-- Mold Earth*
+- Mold Earth
 - Prestidigitation
 - Ray of Frost
 - Shocking Grasp
-- Sword Burst*
+- Sword Burst
 
 #### 1st Level
 - Absorb Elements
@@ -2572,23 +2575,25 @@ As usual, spells marked with * are found in sources other than the Players Handb
 - Chromatic Orb
 - Cure Wounds
 - Detect Magic
-- Earth Tremor*
+- Earth Tremor
 - Find Familiar
+- Flash Freeze
 - Floating Disk
 - Fog Cloud
-- Frost Fingers*
-- Ice Knife*
+- Frost Fingers
+- Ice Knife
 - Magic Missile
 - Protection from Evil and Good
 - Shield
 - Thunderwave
+- Yoink
 #### 2nd Level
 - Acid Arrow
-- Binding Ice*
+- Binding Ice
 - Continual Flame
 - Darkness
 - Darkvision
-- Dragon's Breath*
+- Dragon's Breath
 - Earthbind*
 - Flaming Sphere
 - Gentle Repose
@@ -2598,21 +2603,21 @@ As usual, spells marked with * are found in sources other than the Players Handb
 - See Invisibility
 - Shatter
 - Skywrite
-- Warding Wind*
+- Warding Wind
 #### 3rd Level
-- Catnap*
+- Catnap
 - Counterspell
 - Dispel Magic
 - Fireball
 - Flame Arrows
-- Intellect Fortress*
+- Intellect Fortress
 - Tiny Hut
-- Minute Meteors*
+- Minute Meteors
 - Protection from Energy
 - Sending
 - Sleet Storm
 - Slow
-- Thunder Step*
+- Thunder Step
 - Wind Wall
 #### 4th Level
 - Arcane Eye
@@ -2631,10 +2636,10 @@ As usual, spells marked with * are found in sources other than the Players Handb
 - Cone of Cold
 - Control Winds
 - Dawn
-- Far Step*
+- Far Step
 - Immolation
 - Telepathic Bond
-- Steel Wind Strike*
+- Steel Wind Strike
 - Wall of Force
 - Wall of Light
 - Wall of Stone
@@ -2663,7 +2668,7 @@ Each skill trick detailed below shares some common characteristics:
 #### Skill Trick DCs
 The DC for any saving throws required by skill tricks is given by
 :
-**8 + the relevant ability score + your proficiency bonus**
+**8 + the associated ability modifier + your proficiency bonus**
 :
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
 

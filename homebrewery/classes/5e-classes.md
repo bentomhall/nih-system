@@ -850,7 +850,7 @@ A longbow and a quiver of 20 arrows
 
 {{classTable,wide
 Level  | Proficiency  | Features  | Focused  | Stamina  | Aether  | Max Spell  | 
-      ^| Bonus       ^|          ^| Foe Die ^| (SR)    ^| (SP)   ^| Level     ^|
+      ^| Bonus       ^|          ^| Foe Die ^| (STA)    ^| (AET)   ^| Level     ^|
 :----|:----:|:----:|:----:|:----:|:----:|:----:
 1 | +2 | Focused Foe, Natural Explorer | d4 | 1 | – | –
 2 | +2 | Weapon Specialization, Spellcasting | d4 | 2 | 4 | 1
@@ -2879,7 +2879,7 @@ Additionally, the distance you can jump doubles and the height at which you star
 
 *Charisma (Deception) Advanced Skill Trick*
 
-As a bonus action, you swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks. Once you do so, you cannot do so again during that same encounter or for one minute, whichever is shorter.
+As a reaction when you are targeted by an attack or ability that only targets you, you swap places with one willing creature within 5 feet of you. They become the target of the ability. This movement does not provoke opportunity attacks. Once you do so, you cannot do so again during that same encounter or for one minute, whichever is shorter.
 
 #### Befriend Wild Animal
 
@@ -2921,7 +2921,7 @@ As an action, you begin a distracting performance. Any number of creatures of yo
 
 *Intelligence (Investigation) Advanced Skill Trick*
 
-As a bonus action, you can search for flaws in your opponent. Expend 2 STA and make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
+As a bonus action, you can search for flaws in your opponent. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
 
 - Their highest and lowest saving throw modifiers
 - Any resistances or immunities they have.
@@ -2929,6 +2929,8 @@ As a bonus action, you can search for flaws in your opponent. Expend 2 STA and m
 - Their current goals
 
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
+
+Once you use this ability in either mode a number of times equal to your Intelligence modifier (minimum once), you cannot do so again until you finish a long rest.
 
 #### Like a Solid Snake
 
@@ -3031,7 +3033,7 @@ When you move at least 10 feet before attempting to shove a creature, you can sh
 
 *Wisdom (Survival) Expert Skill Trick*
 
-You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check and expend 2 AET, with advantage if you also are proficient in Arcana. The result determines your success:
+You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check, with advantage if you also are proficient in Arcana. The result determines your success as shown on the table below. Once you use this ability, you cannot do so again until you finish a long rest.
 
 **Check Total**  | **Result**
 |:--------|:----|

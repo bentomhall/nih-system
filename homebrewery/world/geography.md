@@ -10,6 +10,26 @@ However, the *surface observables* of this world are similar to those of Earth. 
 
 ## Planar Geography
 
+{{note
+#### Mapping DoH planes to normal Great Wheel Planes
+For spells and effects that talk about specific planes (such as *blink*), use the table below. Note that DoH does not use cosmological alignment, and in fact does not talk about alignment as such. Angels, demons, and devils can all be good or evil depending on their individual choices.
+
+Standard Plane | Dawn of Hope Equivalent
+:----|:------:
+Abyss | Abyss
+Astral | Border Shadow
+Elemental Planes | Elemental
+Ethereal | Border Shadow
+Feywild + Shadowfell | Shadow (non-Waste)
+Limbo | Abyss
+Material | Mortal
+Other Lower Planes | Shadow (Waste)
+Upper Planes + Nine Hells + Mechanus | Astral
+
+One caveat: all the *afterlife* portions of the planes are in Shadow. Only the divine (or fiendish) residences are in the Astral.
+
+}}
+
 Dawn of Hope has 3 primary planes and 2 secondary planes. The primary planes are the Mortal (the analogue of the Material plane in the Great Wheel cosmology), the Astral (taking the role of the many of the Upper Planes), and the Elemental (subdivided into 12 "regions", often called planes themselves). The secondary planes are that of Shadow (carrying the roles of the liminal Astral and Ethereal planes, plus the Feywild, Shadowfell, and parts of the Lower Planes), which is split into 3 layers (the liminal Border Shadow, the melancholy and nature-aspected Beastholm, and the manic and deceptive Mirrorhaven, plus the abyssal wound called the Waste that collapses the layers) and the Abyss (acting as the home of demons and the abcess surrounding their source).
 
 Each of these planes other than the Abyss plays a key role in the universal energy economy. The Mortal, being as it is the home of mortal beings, is the source of all anima (also called aether), the stuff and energy out of which all existence is created. This is released upon death (as well as periodically by normal souls) and transitions through Mirrorhaven into the Astral, where the Great Mechanism, assisted by the gods, devils, and angels, distributes it to the other planes. One large part is sent back down in the form of luminous aether released by Eua, the Mortal-plane sun, to give light and energy to the Mortal. The rest, other than that which is consumed to keep the Astral going, is sent to the Elemental, where it gains elemental "aspects", becoming air, water, heat, lava, and all other forms of matter, which the elemental forces there then transport back to the Mortal, closing the loop. This aether economy replaces the normal hydrologic, geologic, and atmospheric cycles. As a result, mines left abandoned for long enough are re-filled by busy earth elementals, ocean and air currents circulate. The seasons cycle as Quartus (the fourth planet) orbits through the fixed areas of influence of the various portions of the Elemental plane, with spring corresponding to the start of Earth's influence, summer to that of Fire, autumn to that of Air, and winter to that of Water.
@@ -178,3 +198,55 @@ The date is now 260 AC, and now the Time of Troubles. Adventurers have never bee
 ## Nations of Western Noefra, ca 260 AC.
 
 <!--Political Map-->
+
+### Auringon
+This nation dates back to just after the Cataclysm, when a band of ihmisi were desperately looking for shelter from the chaos. They found a magical library containing a book of stories. This book promised them security...if they dedicated themselves to living out the stories. Later, human refugees were incorporated into the story. In 212 AC, this story was completed and the people freed from the endless repetition and enforced narrative roles. Since then, they've focused on finding their way.
+
+To outsiders, Auringon looks like a stereotypical fantasy storybook kingdom. Everything is clean and neat, everyone knows their part. And it honestly tries. Internal divisions, threats from the expansionist tribes to the north and the brainwashed legions of Tlalocana to the south, and finding their way in a changed world after centuries of no change; all these are the threats faced by Auringon and its citizens.
+
+Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a King to whom they all pay homage. As of 260 AC, the beloved Aurel III has just died and the new king, his grandson, is weak and supported by his step grandmother, the beautiful and vapid-appearing (but secretly intelligent) _______.
+
+Several major adventurers have settled in the south near the border. Wan Tian Kuo married into the royal family (much to everyone's surprise) and has settled (sort of) nearby to the druid grove and school founded by Pyrrha and Eskel Kelshanne. Auringon has good relationships with Byssia and very little contact with anyone else.
+
+### Byssia
+One of the larger and more powerful nations, Byssia controls the southern flank of the Nocthian Caldera and the north end of Gap-Tooth Bay. Its people are a mix of highland ihmisi who venerate the spirits and elements, and the lowland Night's Children humans, who almost uniformly worship the ascendant known as Nocthis, Lady of Lunar Mystery. They are one of two strongly maritime cultures, primarily in the bay but also now extending around Cape Dread to the Jungle of Fangs.
+
+Uniquely, Byssia is metal-poor, leading to extensive use of magically-strengthened wood and stone. They also rarely worship the True Gods, considering them as powerful entities that are unworthy of actual worship. Byssia has some tensions with Wyrmhold (mainly over their very different approaches to industry), but the two share the Caldera quite peacefully as of 260 AC. They have good relations with Auringon.
+
+Byssia is decentralized politically, with towns and villages holding most of the power. What central government exists is in the form of Judges, elected from each village who try cases and decide disputes and who refer cross-town disputes to other, neutral judges. A police force of elemental-focused monks handles most internal disorder, while the Border Wardens under _________, a former adventurer provides external security. In recent years, the external security forces have started increasing in numbers, preparing for the inevitable war with Tlalocana.
+
+### Crisial Kingdom
+Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
+
+Governmentally, it is a more classical feudal nation, although with strong traditions of yeomanry and independence. Each of the major cities and their surroundings is governed by a Duke, and the Queen and her court handles the capital and the surroundings and mediates between Dukes. She acts more like a head of state in a confederation than an autocrat. Other major political forces are the various temples (it is a devout but multi-creedal nation) and the High Houses of the gwerin, which have aristocratic status. 
+
+One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
+
+### Serpent Dominion
+Preeminent among the nations that formed from the breakup of the Stone Throne in the Jungle of Fangs is the Serpent Dominion. It occupied the southern third of the Jungle until 258 AC, when King Azekiel Cai'valur led his armies in a (mostly) bloodless conquest of Asai'ka (the central nation of the Jungle); the latter had fallen into chaos and anarchy as a result of the Red Plague in 253 AC. It is no secret that he intends to reunite the entire jungle under his control eventually.
+
+Inhabited by fang-kin humans and half-elves as well as ophidians, with a few dwarven clans and others thrown in, the Serpent Dominion is one of the most prosperous nations of western Noefra. It escaped the Red Plague entirely unscathed (as the druid cult didn't want to tangle with King Cai'valur) and it owns the only sea route connecting Byssia, the Jungle of Fangs, and even Soefra (via the Ship Folk).
+
+The caste-based culture is receeding, but still has fangs. Almost everyone here (other than the deep jungle tribes) worships the Queen Ascendant, and her priests hold massive cachet. Nobles in their blue garments (forbidden to non-nobles) own most of the land, and merchants and crafters form the Lai caste. Commoners are not serfs, but are mostly sharecroppers or hired laborers. Ophidians are considered lower-caste, although this attitude has mostly faded.
+
+### Sha'slar Autonomous Zone
+The SAZ is the northern nation of the Jungle, inhabiting the forests and deep jungle just south of Kaelthia. Considered rural bumpkins by the southern plains-dwellers, the inhabitants of the SAZ (mostly humans and half-elves) are an independent lot. Much of the steel-silk (an alchemically-treated, plant-based fiber as tough as steel but as flexible as silk) is produced here on large plantations.
+
+The SAZ is only lightly settled, with only two large settlements: Sha'slar itself and Sraasa Saat, home to the Greenscale Brewery, a kobold-run distillery of some of the finest spirits on the continent, patronized by an adult dragon who hoards alcohol. Its government is technically a military junta under three generals, but mostly the noble landowners run their fiefdoms with few disruptions.
+
+### Uulani Confederacy
+Buried under the Outer Barrier Range east of Kaelthia is the dwarven-dominated collection of dwarven clanholds known as the Uulani Confederacy (named after one of the major clans, the Uulan). Centered at Fuar Uulan, only a small fraction of the nation extends outside the mountains. The clans here are traditionalist to the extreme. While they do not reject outsiders, they welcome few disruptions to their lifestyle. Change comes slowly here, and those who chafe at the conservative structure either go west to Crisial or north-east to Shinevog or Zhapai Karmap.
+
+Clans mostly govern themselves; cross-clan affairs are handled by a council of clan elders, Paragons (dwarves chosen for their skill in particular areas), and the Listener (high priest of Korokonolkom, Lord of Mountains). While most dwarves are religious, venerating Koro as their chief patron and Lon Ka, Lord of the Forge as second, their religiosity comes often with arguments and discussions. The gods are seen mostly as the ultimate examples, just as the Paragons (living and dead).
+
+Dwarven clans are ideological, rather than strictly kin-based, and changing clans is normal as one reaches adulthood. The vast majority of adult uulani are married; traditional dwarven culture treats marriage as an essential step into adulthood. Divorce, adultery, and abandonment are nearly unheard of and usually result in suicidal behavior from the abandoned dwarf.
+
+### Minor Nations
+#### Axeholm
+This small nation has only existed for a few years. Formed around the northern port of Axeholm and occupying portions of the western Dreamwall Mountains, it is a dynamic and multi-cultural nation, mixing dwarves, gnomes, orcs, and others. It is governed by a council...which most people mostly ignore except about foreign matters.
+
+#### Breeland
+This is a uniquely halfling nation located in the central-northern Sea of Grass. Its capital of Bree is a trade stop on the route between the eastern nations and the western nations; the nation is also a major producer of honey (a classically halfling pursuit as many wall-builder humans are allergic to bee stings). One unique feature is Heroes Rest, a village/temple complex dedicated to Tsun Azur, a halfling adventurer. This is quite embarrasing to said adventurer, who still lives there with his son Tson and daughter-in-law Betsy and their large number of children. Betsy is the ruler of Breeland, officially titled "Duke". But government here is mostly by common consensus. There are those who want Tsun to be king; he has so-far refused. 
+
+#### Dales, The
+The Dales are a small, rural, recently formed collection of otherwise independent villages located in the Sundown Hills between Crisial and the Sea of Grass proper. They used to be part of Crisial as well as Kaelthia, but as those nations consolidated inward after the Red Plague, became independant peacefully. They are united only in not wanting outside interference in their business. The humans and halflings that occupy those villages are hardy and suspicious folk, especially suspicious of arcane magic. They are extremely religious, devoutly worshipping the Seasonal Four with token worship for the other True Gods.

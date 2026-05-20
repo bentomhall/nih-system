@@ -271,5 +271,12 @@ This is a uniquely halfling nation located in the central-northern Sea of Grass.
 #### Dales, The
 The Dales are a small, rural, recently formed collection of otherwise independent villages located in the Sundown Hills between Crisial and the Sea of Grass proper. They used to be part of Crisial as well as Kaelthia, but as those nations consolidated inward after the Red Plague, became independant peacefully. They are united only in not wanting outside interference in their business. The humans and halflings that occupy those villages are hardy and suspicious folk, especially suspicious of arcane magic. They are extremely religious, devoutly worshipping the Seasonal Four with token worship for the other True Gods.
 
+#### Kaelthia
+10 years ago, marking Kaelthia a minor nation would have been unthinkable. 50 years ago it was the center of the dominant nation in the region. But even the mighty fall. Kaelthia in 260 AC is an insular religious backwater, only relevant to anything because of its location at the intersection of a few major trade routes. Trade routes that Kaelthia wishes went elsewhere, because they're not so fond of outsiders.
+
+In 260 AC, Kaelthia has mostly recovered from the explosion of the Grand Temple in 254 AC and the near-eruption of Mt. Refuge (the dormant volcano between whose flanks the city was built). The city still controls roughly a day's journey (~20 miles) around it. Kaelthian culture is conformist to a fault, with consensus as one of their highest values. They take "stay in your lane" to extremes. Politically, they're a communalist state governed by interlocking councils of professions running from the local level (a neighborhood or small village) all the way up to the city scope.
+
+Demographically, Kaelthia is mostly wall-builder human with one dwarven clan still part of them as well as one High House of the Gwerin (and the resulting half-elves). Religiously, they worship the Seasonal Four very strongly and look down on/reject any worship of the spirits, ancestors, or other Ascendants.
+
 ### Khaimal
 Very little is known about this xenophobic city-state. Located at the north-west corner of the Frozen Coast on the north sea, it is inhabited by vulkate (lava-born) dwarves who refuse any contact with the outside. Violently. Using long-range artillery against ships cresting the horizon.

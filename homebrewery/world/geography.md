@@ -271,6 +271,15 @@ This is a uniquely halfling nation located in the central-northern Sea of Grass.
 #### Dales, The
 The Dales are a small, rural, recently formed collection of otherwise independent villages located in the Sundown Hills between Crisial and the Sea of Grass proper. They used to be part of Crisial as well as Kaelthia, but as those nations consolidated inward after the Red Plague, became independant peacefully. They are united only in not wanting outside interference in their business. The humans and halflings that occupy those villages are hardy and suspicious folk, especially suspicious of arcane magic. They are extremely religious, devoutly worshipping the Seasonal Four with token worship for the other True Gods.
 
+#### Eastwalk
+Located north of the Glasweil river, south of the Dreamwall and west of the Eastwalk river and extending to the foothills of the Giant's Spine in the east, Eastwalk is the largest nation on the northern Sea of Grass. Its population is concentrated on the western edge; the remainder is populated by pastoral herders and various tribal groups. The southern side is dominated by halflings; the north by humans. They are among the most traditional of the wall-builder nations, keeping to the old ways of council and church, and disdaining modern inventions, magic, and cultural trends. Observers often remark that stepping across the border is stepping back 40 years into the past. Eastwalk, to butcher the quote, proudly stands athwart history, yelling "Stop".
+
+#### Elfhame
+Located at the border of the Kotimaa wood, Elfhame is a haven for the "civilized" ihmisi, half elves, and others who want to live alongside the civilized world but not entirely in it. Its only significant settlement is Rabbiton, northernmost port on Lake Coy'in, which has a reputation as a haven for smugglers, pirates, and other less reputable sorts of ships. Its ruler as of 260 AC is Kuni Kala Rabbit Lake (where Kuni means "King", but in a gender-neutral sort of way). Despite only being in her early 30s, Kuni Kala is a hardened half-ihmisi ship captain known for being very feminine while still being able to out-swear, out-drink, and out-fight veteran sailors.
+
+#### Freeglas
+One of the small states formed by the breakup of Kaelthia's dominant nation in 254 AC, Freeglass is a trade coalition state located on the River Road north of the Lowbridge Republic. Its only notable property is that it controls one of two ferries over the Kaela River to the central Sea of Grass.
+
 #### Kaelthia
 10 years ago, marking Kaelthia a minor nation would have been unthinkable. 50 years ago it was the center of the dominant nation in the region. But even the mighty fall. Kaelthia in 260 AC is an insular religious backwater, only relevant to anything because of its location at the intersection of a few major trade routes. Trade routes that Kaelthia wishes went elsewhere, because they're not so fond of outsiders.
 
@@ -280,3 +289,13 @@ Demographically, Kaelthia is mostly wall-builder human with one dwarven clan sti
 
 ### Khaimal
 Very little is known about this xenophobic city-state. Located at the north-west corner of the Frozen Coast on the north sea, it is inhabited by vulkate (lava-born) dwarves who refuse any contact with the outside. Violently. Using long-range artillery against ships cresting the horizon.
+
+### Lowbridge Republic, The
+The republic sits just north of Kaelthia, where the old Lowbridge Locks were (before the Winter War of 251 AC). The merchant town of Lowbridge has become a new trade hub connecting the dwarven and jazuu lands with the human lands of the west. It competes with the northern trade route through Merrydale; the route through Lowbridge is much more settled but longer and more heavily taxed, with explicit favoritism of Lowbridge-based caravan trading.
+
+### Mar'osh
+A newcomer to the political stage, Mar'osh was founded in 247 AC by Maerik Mar'osh, an orcish warlord and survivor of an attack that destroyed most of the rest of his tribe. Located in the Fiach Wood a few days journey from the furthest area claimed by Wyrmhold, it is built on a resolute desire for security from the "civilized" folks and their struggles. Originally fairly decentralized, with the constituent tribes retaining significant authority, the last few years have seen significant consolidation under the young king. A young black dragon named Segi no Iusta ("Hero of Justice") has taken up residence in the north parts of the kingdom with the king's assent, lending his enthusiastic (if sometimes ham-fisted) aid to suppressing threats.
+
+As a matter of policy, Mar'osh is strictly neutral, in a heavily armed way. They will not aggress against other groups, tribes, or nations, but any incursions against them or their allies will be met with extreme and unrelenting force.
+
+### Merrydale

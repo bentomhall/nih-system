@@ -200,22 +200,44 @@ The date is now 260 AC, and now the Time of Troubles. Adventurers have never bee
 <!--Political Map-->
 
 ### Auringon
+- Population: roughly 50,000 wind elves (ihmisi...but with some variations and shorter lives) and meztlan humans.
+- Major cities: Aurin (~10k), Avignon (~5k), Yvore (~5k), all including the surrounding countryside.
+- Names and architecture: Use medieval French names as base.
+- Culture: Lawful Storybook. But a bit more of the original faery tales than the modern, sanitized ones.
+- Economics: Vaguely medieval. Mostly self-sufficient trade-wise.
+- Magics: Leans arcane and divine. Primal is a distant 3rd.
+- Religion: Worships Aerielara and Roel Kor henotheistically, but accepts the other Congregants.
+
 This nation dates back to just after the Cataclysm, when a band of ihmisi were desperately looking for shelter from the chaos. They found a magical library containing a book of stories. This book promised them security...if they dedicated themselves to living out the stories. Later, human refugees were incorporated into the story. In 212 AC, this story was completed and the people freed from the endless repetition and enforced narrative roles. Since then, they've focused on finding their way.
 
 To outsiders, Auringon looks like a stereotypical fantasy storybook kingdom. Everything is clean and neat, everyone knows their part. And it honestly tries. Internal divisions, threats from the expansionist tribes to the north and the brainwashed legions of Tlalocana to the south, and finding their way in a changed world after centuries of no change; all these are the threats faced by Auringon and its citizens.
 
-Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a King to whom they all pay homage. As of 260 AC, the beloved Aurel III has just died and the new king, his grandson, is weak and supported by his step grandmother, the beautiful and vapid-appearing (but secretly intelligent) _______.
+Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a King to whom they all pay homage. As of 260 AC, the beloved Aurel III has just died and the new king, his grandson Alan Aurelian is inexperience. Thankfully he is supported by his step grandmother, the beautiful and vapid-appearing (but secretly extremely intelligent) Dowager Princess Tatya, who is Alan's age, despite having married his much older grandfather. As I said, storybook.
 
-Several major adventurers have settled in the south near the border. Wan Tian Kuo married into the royal family (much to everyone's surprise) and has settled (sort of) nearby to the druid grove and school founded by Pyrrha and Eskel Kelshanne. Auringon has good relationships with Byssia and very little contact with anyone else.
+Several major adventurers have settled in the south near the border. Wan Tian Kuo married into the royal family (marrying the king's younger daughter Yelena, much to everyone's surprise especially both of theirs. Blame the gods.) and has settled (sort of) nearby to the druid grove and school founded by Pyrrha and Eskel Kelshanne. Auringon has good relationships with Byssia and very little contact with anyone else.
 
 ### Byssia
+- Population: Roughly 150,000 night's children humans, ihmisi, and half-elves (approximately an even split)
+- Major Cities: Byss (~22,000), Delphni (~20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
+- Names and architecture: Use classical greek as base.
+- Economics: Self-sufficient for food. Expert woodworkers. Lower metal use than most. Modern merchant base, including maritime.
+- Magics: Heavily primal. Arcane is accepted, divine is regarded as 2nd class.
+- Religion: Ihmisi are mostly spirit-worshipers, night's children worship Nocthis extensively.
+
 One of the larger and more powerful nations, Byssia controls the southern flank of the Nocthian Caldera and the north end of Gap-Tooth Bay. Its people are a mix of highland ihmisi who venerate the spirits and elements, and the lowland Night's Children humans, who almost uniformly worship the ascendant known as Nocthis, Lady of Lunar Mystery. They are one of two strongly maritime cultures, primarily in the bay but also now extending around Cape Dread to the Jungle of Fangs.
 
 Uniquely, Byssia is metal-poor, leading to extensive use of magically-strengthened wood and stone. They also rarely worship the True Gods, considering them as powerful entities that are unworthy of actual worship. Byssia has some tensions with Wyrmhold (mainly over their very different approaches to industry), but the two share the Caldera quite peacefully as of 260 AC. They have good relations with Auringon.
 
-Byssia is decentralized politically, with towns and villages holding most of the power. What central government exists is in the form of Judges, elected from each village who try cases and decide disputes and who refer cross-town disputes to other, neutral judges. A police force of elemental-focused monks handles most internal disorder, while the Border Wardens under _________, a former adventurer provides external security. In recent years, the external security forces have started increasing in numbers, preparing for the inevitable war with Tlalocana.
+Byssia is decentralized politically, with towns and villages holding most of the power. What central government exists is in the form of Judges, elected from each village who try cases and decide disputes and who refer cross-town disputes to other, neutral judges. A police force of elemental-focused monks handles most internal disorder, while the Border Wardens under Yonas Akrotiz, a former adventurer provides external security. In recent years, the external security forces have started increasing in numbers, preparing for the inevitable war with Tlalocana.
 
 ### Crisial Kingdom
+- Population: Roughly 200,000 wall-builder humans, gwerin, halflings, and dwarves.
+- Major Cities: Crisial City (~30,000), Beiand (~15,000), Inegand (~10,000), Honel (~8,000). Most of the dwarves live near Honel, with gwerin in the capital and parts east.
+- Names and architecture: Use a mix of traditional English and Welsh. Architecture is "late medieval fantasy Europe".
+- Economics: Trade is the major thing. Extraction near Honel, farming throughout. Rule of Law is very strong. Acts most like a modern semi-democracy.
+- Magics: An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
+- Religion: Pluralistic. Worship who, where, and what you want. As long as it's not demons.
+
 Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
 
 Governmentally, it is a more classical feudal nation, although with strong traditions of yeomanry and independence. Each of the major cities and their surroundings is governed by a Duke, and the Queen and her court handles the capital and the surroundings and mediates between Dukes. She acts more like a head of state in a confederation than an autocrat. Other major political forces are the various temples (it is a devout but multi-creedal nation) and the High Houses of the gwerin, which have aristocratic status. 
@@ -223,6 +245,13 @@ Governmentally, it is a more classical feudal nation, although with strong tradi
 One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
 
 ### Serpent Dominion
+- Population: Roughly 200,000 fang-kin humans, half-elves, and ophidians. A few dwarven clans.
+- Major Cities: Kel'al'ar (~30,000), Asai'ka (~20,000 but sized for more due to catastrophes)
+- Names and architecture: Vaguely "south eastern asian + japanese". Fantasy apostrophes abound. Lots of snake motifs.
+- Economics: Maritime trade in the south, farming and extraction throughout. Somewhat caste-based, with noble landowners, middle-caste merchants and crafters, and commoner workers. Very few yeoman common landowners. Recently a rise in rich (but not noble) merchant families gaining prominence.
+- Magics: Arcane is heaviest in the cities, whereas the rural groups are more primal. Divine exists, but it's not super common.
+- Religion: Heavily dominated by worship of the Queen Ascendant. The Priest Bureaucracy of her monolithic church wields substantial political power. Other religions tolerated, but not encouraged.
+
 Preeminent among the nations that formed from the breakup of the Stone Throne in the Jungle of Fangs is the Serpent Dominion. It occupied the southern third of the Jungle until 258 AC, when King Azekiel Cai'valur led his armies in a (mostly) bloodless conquest of Asai'ka (the central nation of the Jungle); the latter had fallen into chaos and anarchy as a result of the Red Plague in 253 AC. It is no secret that he intends to reunite the entire jungle under his control eventually.
 
 Inhabited by fang-kin humans and half-elves as well as ophidians, with a few dwarven clans and others thrown in, the Serpent Dominion is one of the most prosperous nations of western Noefra. It escaped the Red Plague entirely unscathed (as the druid cult didn't want to tangle with King Cai'valur) and it owns the only sea route connecting Byssia, the Jungle of Fangs, and even Soefra (via the Ship Folk).
@@ -230,16 +259,37 @@ Inhabited by fang-kin humans and half-elves as well as ophidians, with a few dwa
 The caste-based culture is receeding, but still has fangs. Almost everyone here (other than the deep jungle tribes) worships the Queen Ascendant, and her priests hold massive cachet. Nobles in their blue garments (forbidden to non-nobles) own most of the land, and merchants and crafters form the Lai caste. Commoners are not serfs, but are mostly sharecroppers or hired laborers. Ophidians are considered lower-caste, although this attitude has mostly faded.
 
 ### Sha'slar Autonomous Zone
+- Population: Roughly 35,000 fang-kin humans and half-elves. A few ophidians.
+- Major Cities: Sha'slar (~10,000)
+- Names and architecture: Vaguely "south eastern asian + japanese". Fantasy apostrophes abound. Lots of snake motifs.
+- Economics: Plantation agriculture and forest products. Main producer of steel-silk.
+- Magics: Not much.
+- Religion: Heavily dominated by worship of the Queen Ascendant, but the Church has less political power.
+
 The SAZ is the northern nation of the Jungle, inhabiting the forests and deep jungle just south of Kaelthia. Considered rural bumpkins by the southern plains-dwellers, the inhabitants of the SAZ (mostly humans and half-elves) are an independent lot. Much of the steel-silk (an alchemically-treated, plant-based fiber as tough as steel but as flexible as silk) is produced here on large plantations. Here the people worship the Queen Ascendant with fervor, but less orthodoxy than their southern brethren.
 
 The SAZ is only lightly settled, with only two large settlements: Sha'slar itself and Sraasa Saat, home to the Greenscale Brewery, a kobold-run distillery of some of the finest spirits on the continent, patronized by an adult dragon who hoards alcohol. Its government is technically a military junta under three generals, but mostly the noble landowners run their fiefdoms with few disruptions.
 
 ### Shinevog
+- Population: Roughly 12,000 mixed, dwarves a plurality.
+- Major Cities: Shinevog (~12,000). It's a city-state with some closely outlying villages.
+- Names and architecture: Traditional "dwarf" architecture, plus some clockwork-style magitech. Names are roughly (but broadly) Mongolian.
+- Economics: Research & Tech. Substantial imports.
+- Magics: Arcane is priority. Lower divine, very little primal.
+- Religion: Minor, mostly focusing on Yogg-maggus and Lon Ka. But tolerant of any.
+
 Shinevog is the polar opposite of the Uulan Confederacy, despite both being dwarves. Settled on an abandoned clanhold along the main route from the Sea of Grass into the Giant's Spine, it was founded as a creative, iconoclastic outlet for those dwarves and others who wished to be free of traditional restraints on research (especially arcane and technological). Ruled by Theobard III, it has become a small (occupying only one small valley) but powerful hub of technology and arcane science. Not as lawless as Zhapai Karmap, it still maintains codes of ethics and responsibility.
 
 The primary religion here is that of Lon Ka, Hammer-lord, patron of technology and innovation. Yogg Maggus, lord of arcane magic, is also heavily worshiped here.
 
 ### Tlalocana
+- Population: Unknown, but likely 100+ thousand. Humans and mkhulu.
+- Major Cities: Tlalotecana (unknown), unknown others.
+- Names and architecture: Rigidly uniform, classical roman but bronze age. Names are vaguely meso-american.
+- Economics: Command economy, with mind control.
+- Magics: Unknown, but also psychic.
+- Religion: None. Gods are false, there is only the Way.
+
 Located on the Drowned Coast and slowly growing to conquer the entire peninsula (and beyond, if they have any say), Tlalocana is a repressive, totalitarian nation ruled by a large caste of organized mkhulu. They employ advanced psionic devices to spy on and control the thoughts of those in the national boundaries, suppressing independent thought and dictating unthinking adherence to the law. Unique among nations, they use very little iron, preferring magically-strengthened bronze. Their area of control grows 50 miles every 10 years, creating an expanding ring of fortified fortress-towns linked by psionic emitters. So far, no active hostilities have happened between them and their neighbors (Auringon and Byssia), but that is inevitable. Infiltrators (mkhulu or otherwise) have been found within the former Federated Nations members, fomenting disorder and searching for weaknesses.
 
 ### Tuura Adam
@@ -299,3 +349,7 @@ A newcomer to the political stage, Mar'osh was founded in 247 AC by Maerik Mar'o
 As a matter of policy, Mar'osh is strictly neutral, in a heavily armed way. They will not aggress against other groups, tribes, or nations, but any incursions against them or their allies will be met with extreme and unrelenting force.
 
 ### Merrydale
+One of the newer nations formed after the breakup of Kaelthian dominance over the Sea of Grass, Merrydale owns the new northern trade route crossing the Freeglas ferry and heading to Fuar Uulan. Ruled by a former Kaelthian mage named Lady Protector Rebecca Fallowstone. Her administration emphasizes building trade and economic growth...to funnel maximum power and wealth into the Lady Protector's pockets. The people here are mostly human with some numbers of halflings. By 260 AC, Merrydale has expanded to fill the area between the Shield River to the south and the Glasweil to the north, with the eastern boundary running up against the Uulani border.
+
+### Seraaja, Clans of the
+The Seraaja were once the Horse Clans, before their false goddess was defeated and destroyed. Now the traditional, xenophobic core has migrated north on the Lupaus Plains, actively fighting any intruders into their horse-and-cattle-nomad lifestyle. They consider the arcane to be evil and civilization to be demonic.

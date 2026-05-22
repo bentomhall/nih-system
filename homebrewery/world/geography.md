@@ -293,11 +293,25 @@ The primary religion here is that of Lon Ka, Hammer-lord, patron of technology a
 Located on the Drowned Coast and slowly growing to conquer the entire peninsula (and beyond, if they have any say), Tlalocana is a repressive, totalitarian nation ruled by a large caste of organized mkhulu. They employ advanced psionic devices to spy on and control the thoughts of those in the national boundaries, suppressing independent thought and dictating unthinking adherence to the law. Unique among nations, they use very little iron, preferring magically-strengthened bronze. Their area of control grows 50 miles every 10 years, creating an expanding ring of fortified fortress-towns linked by psionic emitters. So far, no active hostilities have happened between them and their neighbors (Auringon and Byssia), but that is inevitable. Infiltrators (mkhulu or otherwise) have been found within the former Federated Nations members, fomenting disorder and searching for weaknesses.
 
 ### Tuura Adam
+- Population: 45,000. Jazuu and giants (roughly 1000 of the latter)
+- Major Cities: Kozhuyn (10,000)
+- Names and Architecture: Big Stone Blocks for architecture (very little decoration, but all very high quality). Central Asian names.
+- Economics: Highly structured. Very organized, but still competitive (within the rules).
+- Magics: Mostly elemental-focused arcane.
+- Religion: Mostly none.
+
 Buried deep in the Giant's Spine moutains is the Noefran jazuu homeland, the land of the Mountain People, the Tuura Adam. It is both the ethnic name and the national name. Home to the only known fully-functional Titanwall (capable of transforming a jazuu into a true giant) on the continent, it is an orderly place. Other nations claim to work by law, but the T.A. literally live by the Code, a multi-volume, constantly-updated codex for the right way to do *anything*. From carpentry to music to combat, it's all there. And the jazuu of the T.A. treat it as law while constantly seeking improvement. Ruled by those who have successfully undergone the titanification ritual to become a true giant (and thus become neuter but very long lived, as well as the usual benefits of being a giant), they live orderly but competitive lives, making the most out of the scarse resources of the high alpine valleys.
 
 Their capital is Kozhuyn, built on the slopes of Skypiercer Peak, the highest peak in Noefra and the site of the ancient Titan citadel known now as Too Tekterin (High Rock), from which the Conclave shattered themselves and their draconic foes with the ill-fated Orb of All Might. Governmentally, they have a hierarchy of trades and professions, with a council of giants from each specialty at the head. The leader is the cloud giant Bulut Boron acting as High Regent.
 
 ### Uulani Confederacy
+- Population: 90k. Almost entirely dwarves.
+- Major Cities: Fuar Uulan (12k)
+- Names and Architecture: Utilitarian stone, underground. Mongolian names.
+- Economics: Great crafters.
+- Magics: Divine. Some minor primal and arcane.
+- Religion: Devoted to Korokonolkolm as Lord of Mountains, Silence, and Endurance. Also worship/revere the Paragons (living and dead) as examples of what to be.
+
 Buried under the Outer Barrier Range east of Kaelthia is the dwarven-dominated collection of dwarven clanholds known as the Uulani Confederacy (named after one of the major clans, the Uulan). Centered at Fuar Uulan, only a small fraction of the nation extends outside the mountains. The clans here are traditionalist to the extreme. While they do not reject outsiders, they welcome few disruptions to their lifestyle. Change comes slowly here, and those who chafe at the conservative structure either go west to Crisial or north-east to Shinevog or Zhapai Karmap.
 
 Clans mostly govern themselves; cross-clan affairs are handled by a council of clan elders, Paragons (dwarves chosen for their skill in particular areas), and the Listener (high priest of Korokonolkom, Lord of Mountains). While most dwarves are religious, venerating Koro as their chief patron and Lon Ka, Lord of the Forge as second, their religiosity comes often with arguments and discussions. The gods are seen mostly as the ultimate examples, just as the Paragons (living and dead).
@@ -305,6 +319,13 @@ Clans mostly govern themselves; cross-clan affairs are handled by a council of c
 Dwarven clans are ideological, rather than strictly kin-based, and changing clans is normal as one reaches adulthood. The vast majority of adult uulani are married; traditional dwarven culture treats marriage as an essential step into adulthood. Divorce, adultery, and abandonment are nearly unheard of and usually result in suicidal behavior from the abandoned dwarf.
 
 ### Wyrmhold
+- Population: 180k. 70k orcs, 60k goblins, 50k dragonborn.
+- Major Cities: Lyodnoir [L'YOHD noir] (18k), Byarmarsh (10k), ____
+- Names and Architecture: Slavic/Norse for dragonborn, Celtic for orcs. Vietnamese for goblins
+- Economics: Major industrial power, using clockwork and golems. Less magitech, more physical tech.
+- Magics: Arcane and divine for dragonborn and goblins. Primal (mostly) for orcs.
+- Religion: Pluralistic. Each family reveres a subset of the gods, often different ones. Queen is nominal High Priestess of all the gods.
+
 Founded in the War of Souls to give a home for the newly-created dragonborn race, this nation has become one of the most advanced and industrially-powerful in the Fourth Age. It was driven out of the Caldera by the Hungering Frost, an army from the Plane of Ice and spent 90 years in existential crisis, keeping the forces of the Frost from spilling down the only pass into the lowlands at extreme cost. The dragonborn were joined by local goblin and orc tribes, led by shamanic visions. This let them hold the line, developing advanced military industry and tactics to compensate for their few numbers. At the foundation of the Federated Nations in 205 AC, the dragonborn refugees from Kaelthia were reunited with their brethren and came to help, along with many heroes and other allied forces. This let Wyrmhold finish the Winter Wall at the head of the pass, preventing the Frost from accessing the softer areas. 5 years later, heroes managed to strike at the heart of the ritual creating the eternal winter on the Caldera, allowing it to thaw and ending the war.
 
 Now nearly 45 years later, Wyrmhold is finishing the transition from a 100% military-oriented society to a stable, industrial nation. This is not without pain, as the centrally-controlled (via nominal clans) structure that served well in wartime doesn't work well in a multipolar, mostly peaceful world. There is still a large military-industrial complex and Wyrmhold has a standing army, which is rare among peer nations. But not really anywhere to expand without coming into conflict with major resistance. Many of the more rural orcs are questioning the initial deal that left the dragonborn clans in command and desire to break off and become independent or join the orcish nation of Mar'osh nearby, while the dragonborn clans themselves are trying to retain relevance and control. The goblins, actually, are the most settled as any dissenters simply run away to join the tribes to the east.

@@ -1,21 +1,23 @@
-# Geography of Dawn of Hope
+# Dawn of Hope Gazetteer
 
-The universe in which Dawn of Hope is set is a pocket universe, with the main "material" plane (named the Mortal plane) roughly the size of the Inner Solar System (&approx; 2 AU, slightly larger than the orbit of Mars). Co-located with that Mortal plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth, outermost planet, as well as the planar regions to which that corresponds.
+The universe in which Dawn of Hope is set is a pocket-sized universe, with the main "material" plane (named the Mortal plane) roughly the size of the inner Solar System (&approx; 2 AU, slightly larger than the orbit of Mars). Co-located with that Mortal plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth, outermost planet, as well as the planar regions to which that corresponds.
 
 ### A Word About Metaphysics
 
 Dawn of Hope does *not* pretend that the underlying physical laws are those of Earth, with magic stapled on top as some form of "exception". There are no atoms or subatomic particles in DoH, no chemical reactions (as they're known here). Quantum mechanics is not a thing. In fact, even such conservation laws as momentum, matter, and energy are *not* upheld by default. Instead, everything is made from aether, "flavored" (the technical term is "aspected") in various ways. Different combinations of aspects result in different matter. Magic is thus just the application of resonant aetheric patterns to manipulate the aetheric aspects of surrounding matter.
 
-However, the *surface observables* of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying *reasons* for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective---those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.
+However, the *surface observables* of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying *reasons* for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.
 
 ## Planar Geography
+
+Dawn of Hope has 3 primary planes and 2 secondary planes. The primary planes are the Mortal (the analogue of the Material plane in the Great Wheel cosmology), the Astral (taking the role of the many of the Upper Planes), and the Elemental (subdivided into 12 "regions", often called planes themselves). The secondary planes are that of Shadow (carrying the roles of the liminal Astral and Ethereal planes, plus the Feywild, Shadowfell, and parts of the Lower Planes), which is split into 3 layers (the liminal Border Shadow, the melancholy and nature-aspected Beastholm, and the manic and deceptive Mirrorhaven, plus the abyssal wound called the Waste that collapses the layers) and the Abyss (acting as the home of demons and the abcess surrounding their source).
 
 {{note
 #### Mapping DoH planes to normal Great Wheel Planes
 For spells and effects that talk about specific planes (such as *blink*), use the table below. Note that DoH does not use cosmological alignment, and in fact does not talk about alignment as such. Angels, demons, and devils can all be good or evil depending on their individual choices.
 
 Standard Plane | Dawn of Hope Equivalent
-:----|:------:
+:----|------:
 Abyss | Abyss
 Astral | Border Shadow
 Elemental Planes | Elemental
@@ -24,15 +26,14 @@ Feywild + Shadowfell | Shadow (non-Waste)
 Limbo | Abyss
 Material | Mortal
 Other Lower Planes | Shadow (Waste)
-Upper Planes + Nine Hells + Mechanus | Astral
+Upper Planes, Nine Hells, Mechanus | Astral
 
 One caveat: all the *afterlife* portions of the planes are in Shadow. Only the divine (or fiendish) residences are in the Astral.
 
 }}
 
-Dawn of Hope has 3 primary planes and 2 secondary planes. The primary planes are the Mortal (the analogue of the Material plane in the Great Wheel cosmology), the Astral (taking the role of the many of the Upper Planes), and the Elemental (subdivided into 12 "regions", often called planes themselves). The secondary planes are that of Shadow (carrying the roles of the liminal Astral and Ethereal planes, plus the Feywild, Shadowfell, and parts of the Lower Planes), which is split into 3 layers (the liminal Border Shadow, the melancholy and nature-aspected Beastholm, and the manic and deceptive Mirrorhaven, plus the abyssal wound called the Waste that collapses the layers) and the Abyss (acting as the home of demons and the abcess surrounding their source).
-
 Each of these planes other than the Abyss plays a key role in the universal energy economy. The Mortal, being as it is the home of mortal beings, is the source of all anima (also called aether), the stuff and energy out of which all existence is created. This is released upon death (as well as periodically by normal souls) and transitions through Mirrorhaven into the Astral, where the Great Mechanism, assisted by the gods, devils, and angels, distributes it to the other planes. One large part is sent back down in the form of luminous aether released by Eua, the Mortal-plane sun, to give light and energy to the Mortal. The rest, other than that which is consumed to keep the Astral going, is sent to the Elemental, where it gains elemental "aspects", becoming air, water, heat, lava, and all other forms of matter, which the elemental forces there then transport back to the Mortal, closing the loop. This aether economy replaces the normal hydrologic, geologic, and atmospheric cycles. As a result, mines left abandoned for long enough are re-filled by busy earth elementals, ocean and air currents circulate. The seasons cycle as Quartus (the fourth planet) orbits through the fixed areas of influence of the various portions of the Elemental plane, with spring corresponding to the start of Earth's influence, summer to that of Fire, autumn to that of Air, and winter to that of Water.
+\page
 
 The Abyss is a festering wound, roughly the volume of Quartus itself. It orbits on a complex, non-eliptical orbit "between" the planes, and demons attempt to break out and infect the other planes, primarily the Mortal via Shadow, as demons feed on mortal souls above all else. At the Abyss's center is the Oblivion Gate, a possibly-sentient rupture in the fabric of reality iself, joining That Which Is (aka reality) to That Which Is Not. It manifests as a black hole that eagerly reaches out tendrils of annihilation to consume anything that approaches, as well as emitting fragments of itself called jotnar, "spirits" of pure entropy and destruction. It is these jotnar who, when they infest living beings or corpses, create demons and the undead.
 
@@ -48,26 +49,12 @@ The Astral Plane is the home of (most of) the gods and Ascendants, the home of t
 
 The Astral is divided into five primary domains ("landmasses" floating in empty space otherwise containing only the great conduits of the Mechanism's aether circulation system) as well as countless demiplanes. At the core, "above" Eua itself, is the Celestial City (composed of four smaller sections). Arranged roughly evenly around the City at about 1 AU distance are the other domains, each shaped roughly like sections of a spherical shell. "Above" and "below" (in the standard orbital sense) the Celestial city is the Central Vortex, which spirals down into Eua.
 
-#### Celestial City
-{stub} World core, machinarium, laboratorium, field of ardor
-
-#### Mara, Home of Desiring
-A mix of country and city, this domain is covered in greenery and lush vegetation. The second-smallest, it has an area of about 500,000 times that of Quartus. It contains the homes of Sakara, Peor-fala, Aerielara, and Kela Loran. The devil Territory here is that of Mara-deva.
-
-#### Ghenna, Home of Striving
-A harsh land with mighty beasts, Ghenna is dominated by the Grand Arena where heroes, devils, and elemental beings fight for glory. Second in size, it is about 100 million times the surface area of Quartus. It is home to Tor-Elan, Roel Kor, Melara, and the Hollow King. Here is found the Territory of Chou.
-
-#### Aaru, Home of Knowing
-This small domain is covered in workshops, libraries, and laboratories. Smallest of the domains, it occupies an area of only 20,000 times that of Quartus. It is the home of Yogg Maggus, Loran Hae, Lon-Ka, and Ytra. It is the Territory of Leiutis.
-
-#### Naga Padoha, Home of the Wild
-This vast wilderness of strange plants and animals is the home to Pinwheel, Korokonolkom, Selesurala, and Lae-loara. Gigantic seas churning with predators and prey dot the landscape, each many thousands of times the whole surface of Quartus. Despite their looks, these all are Lucians, same as the (more humanoid appearing) angels and devils. The largest of the domains, Naga Padoha is nearly 250 million times the surface area of Quartus. It is also the home to most of the Ascendants. It is the Territory of Ka-Kola.
 
 ### Shadow, Trifold Liminality
 Called one plane, Shadow is really composed of three layers (and a blight that merges the layers). Created out of the True Name of Death, it serves as the final resting place for the souls of dead mortals (those that do not ascend or get eaten by demons) as well as a home to most of the fey. There are other creatures that call it home as well, all partaking of that dread Name. At the core is the Gate of Eternity in the Watcher's Garden, where those souls who have laid down their concerns pass into the unknown. Most ancient of dragons, the Watcher oversees the cycle of death and burden-shedding with impartiality, aided by the Catocracy (a bureaucracy of cats assisting in guiding lost souls) and the orders of the Gleaners, mortals who parter with said cats to reap the stragglers, those who seek to cheat normal death too blatantly.
 
 Border Shadow is the truly liminal plane, extending "between" the Mortal and all the other planes. All portals, teleportation, and planar travel pass through the Border and disturb it, weakening the boundaries. The souls of the dead flow "up" from the Mortal through the Border, herded by the cats that act as psychopomps, although only the lost souls remain here. The rest find a second, temporary life in one of the other layers. Here, land and gravity don't exist, and movement is by the will of the traveller. Dreams peer through the veil here into the other layers.
-
+\page
 The other layers act as a twisted reflection of the Mortal, and only really have substance around the surface of Quartus itself. Where Quartus may have a moutain, the shadow reflection might have an inverted peak. Or a regular mountain. Time and space flow oddly and unevenly here.
 
 The bright mirror of the Mortal, Mirrorhaven is influenced by and partakes in the flow of energy from the Astral plane. Its nature is of bright colors, constant movement, and frenetic interplay of light and color. It is home to the Spring and Summer Court of the Fey. Do not be fooled by the names, however. Also associated with this layer is mania and illusion; nothing here is as it seems. Delusion is rampant; everything wears multiple faces. Decadence and lavish excess hide a hollow, insatiable hunger that cannot be filled; the shadow-stuff of which this is made is not stable or real enough to satisfy. The inhabitants continually search for greater and greater sensation to fill this numbness. The majority of the populace is the spirits of those departed mortal souls that were attuned toward the Astral, either as a life of devotion to the Gods or for personal reasons. Here they live a distorted reflection of their lives until either they lose track of who they are and their memories fade, until their memories are riven and consumed by one of the denizens, or until they press through to the Astral plane itself and carve out a residence there through transcendence. Many of the gods and ascendants maintain enclaves here.
@@ -84,7 +71,7 @@ The Waste is a cancer, a stain that propagates across Shadow collapsing layers i
 The Elemental Plane acts as the sink of aether and the source of Quartus's seasons, as well as the maintenance agents. From here, elemental forces, led by the Elemental Lords, bring fresh water, air, heat, and replenish the minerals within the planet. While the plane is one contiguous sphere equal in size to the Mortal or Astral, most consider it to be partitioned into either 12 or 18 sections. Within approximately twice the radius of Eua, it is one unified thing. All that exists there is luminous aether and the strange elementals native to that state. No condensed matter can exist here naturally, as the tides of light tear it apart. Further out (to just past the orbit of Secundus and Tertius), the four-fold elements begin to make their disparate natures known, resulting in four Prime Elementals (Earth, Fire, Air, and Water). The boundaries between them are still quite energetic, making seasons on the inner planets extremely violent in their transitions. Before the Cataclysm, this same four-fold division held throughout, and mixtures between the planes were unusual and confined only to the borders. The Cataclysm and resulting planar realignment shifted matters.
 
 At present, the elemental plane at the orbit of Quartus is usually divided into 12 segments: one for each prime (although softened and more umbral in nature) and two for each boundary, one for each dominant prime. So, for instance, the plane of Earth becomes (starting at the Water boundary) the planes of Clay (earth dominant over water), Stone (prime earth), and Iron (earth dominant over fire). Each of these planes dominates for the month during which Quartus orbits through its direct influence, with Clay being the first month of the year and Mud (Clay's water-dominant counterpart) the last. Each plane is commonly associated with two or three psychological states or emotions.
-
+\page
 {{wide
 Plane | Elements            | Aspects | Inhabitants | Key Feature | Lord
 :---- | :----:              | :----:   | :---------: | :----------: | :-----:
@@ -115,18 +102,28 @@ The only surviving Nightlord, the archetype from which all vampires descend, Llo
 
 #### The Twisted
 One of the four Children of the Mother of Monsters, the Twisted was the ur-kraken until it sided with the newly-opened Oblivion Gate out of a desire for power and betrayed its fellow Children while pretending to be repentant for its actions during the Dawn War. Now the dark mirror to Leviathan, it considers itself the patron of all things abominable, of disease, mutation, and flesh-crafting. It considers itself to be an artist, with living flesh as its canvas. Its followers each seek "beauty" in things most consider horrific. Its cults (often cellular in structure) seek to corrupt the land and twist all life into new, "beautiful" shapes. Among its major followers are many of the abantu mkhulu (called mind-flayers elsewhere) and the comiedai (called aboleth elsewhere). Of all the demon princes, the Twisted and its forces are the least welcomed by the inhabitants of the rest of the planes...which is a tall order since no demon or demon worshipper is exactly welcomed anywhere sane.
-
+\page
 #### The Black Lord, Orolaen
 Orolaen is the ur-lich, an aelf who discovered the lich transformation, and then became a demon. It's said that he then intentionally sabotaged the ritual, so all the versions now are inferior copies. Of all the demon princes, he is unique in that he can be trusted to keep his end of any bargains without deceit. His bargains are always fair...but the penalty for non-performance or violation is extreme. He demands that all those who deal with him also keep their word. He's been known to help adventurers against other threats, asking nothing but the continued existence of the planes as a reward. As the patron of all forbidden knowledge and necromancy, his mortal followers are often mages and necromancers and the sentient undead.
-
+\column
 #### Seleleana, called Jester
 The Jester is a wild-card. Not much is known about this insane entity, other than that it is ancient (possibly a shard of the Nameless left behind, too insane to rejoin creation) and utterly devoid of reason. It plots and schemes and acts out of incomprehensible motives. Many of its plots and those of its followers are mutually incompatible with themselves...and it seems to enjoy that. Some suspect it of having deeper motives, because nothing can be *truly* that random. Its followers are generally lone actors, but many of them are powerful. Including the entities known as rasksha, the cat demons.
+::::
 
+{{wide
 ## Noefra
+![Noefran Geography](https://admiralbenbo-foundry.s3.amazonaws.com/wiki/c/c2/Noefra-260-geographic.webp) {width:100%}
+
+}}
+
 
 Noefra is the original home of both humanity and the orcs, as well as the site of many of the most world-shaking events. Two of the other continents, Soefra and Oelfra, both were split off in displays of magical might in ages past. Split north to south by the Giant's Spine Mountains and the barren, blasted Great Eastern Dustlands, the halves have developed quite differently. 
 
-The East contains the ancient Jinse empire, now reduced to a smaller, decadent fiend-led state centered on the Golden City. To the south of Jinse is the Dragonreach, given to the flights of dragonkind by treaty and inhabited only by those willing to serve their flying masters...many of whom prefer to ignore the scurrying mortals unless they can provide them with the items that they hoard. To the north-west lies the overgrown, malevolent Hagfen and the Mother Tree, surrounded on two sides by forbidding mountains and bottled in by the necromantic energies of Ocieli on the south-west and the isolationist elves of Nirda on the north east. On the islands east and north of Jinse are the pirate nations of Abantu, and far to the north east lies the oldest city in the world, Tal Elamor, home to the Eternal Library, a city-sized building of its own said to have existed since the earliest days of creation and said to contain all the books that have ever been written. East of Jinse lies Zhanryu Island, prison to titanic monsters since the days of the titans.
+The East contains the ancient Jinse empire, now reduced to a smaller, decadent fiend-led state centered on the Golden City. To the south of Jinse is the Dragonreach, given to the flights of dragonkind by treaty and inhabited only by those willing to serve their flying masters...many of whom prefer to ignore the scurrying mortals unless they can provide them with the items that they hoard. 
+
+To the north-west lies the overgrown, malevolent Hagfen and the Mother Tree, surrounded on two sides by forbidding mountains and bottled in by the necromantic energies of Ocieli on the south-west and the isolationist elves of Nirda on the north east.
+\page
+On the islands east and north of Jinse are the pirate nations of Abantu, and far to the north east lies the oldest city in the world, Tal Elamor, home to the Eternal Library, a city-sized building of its own said to have existed since the earliest days of creation and said to contain all the books that have ever been written. East of Jinse lies Zhanryu Island, prison to titanic monsters since the days of the titans.
 
 The West is more fragmented and divided into several regions. From the Westward Ocean working east, we find the Drowned, Lost, and Frozen Coasts (southernmost to northernmost), inhabited by peoples such as the mkhulu-enslaved militant tyranny of Tlalocana on the Drowned Coast, the literally-storybook Auringon to the north on the Lost Coast, and the violently xenophobic vulkite city-state of Khaimal at the northern edge. 
 
@@ -142,12 +139,10 @@ To the east, across the West Moon Sea, lies the black-glass-surfaced, arcane-mag
 
 Far to the north of Kotimaa lies the volcanic Isle of Fire, of which not much is known.
 
-<!--Geographic map-->
-
 ## A Short History of Western Noefra
-### The Dawn War
-It's said that the Dreamer called the world into existence an uncountable time before time. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
-
+### Prehistory: The Dawn War
+It's said that the Dreamer called the world into existence an uncountable time before time began. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
+\page
 And then Change rebelled. Sought mastery over the others (or so the tale runs). Split creation into camps that warred. The eight against the one. At the end, something tore the Oblivion Gate open, and the Dreamer chose to enact the first and greatest sacrifice in its own being. It tore itself apart and with it the Names of its children the Primordials, creating the planes from their essence. The lesser creations were scattered across the planes, with many of them becoming mortal, touched by the fires of the Dreamer's essence. Mortality is not a curse, it is a gift. The blood and nerves of the Dreamer became the Great Mechanism, tasked with keeping all in order throughout the planes. Its skin became the Crystal Sphere that wards out the denizens of the Great Dark Beyond. This all happened about 25,000 years before the present day.
 
 ### The First Age (ending ca 10k YBP)
@@ -166,7 +161,9 @@ In the chaos, remnants of the aelvar seized the same artifacts used to split the
 ### The First Interregnum (ending 2504 BC)
 The period after Moon's Fall saw war between the primalist and arcane forces. The primalist ihmisi created orcs out of the proteans (now called goblins), mixing in animal elements via magic to stabilize them and make them suitable proxy warriors against the arcane-loving aelves (now called gwerin or high elves). In return, the gwerin created the first humans out of goblins by blending in some of their own elements (hence humans can interbreed with both elves and orcs, as they're cousins of sorts). Both of these two races, much faster breeding than the long-lived aelves, decided *not* to fight as commanded. Instead, society fractured into tribes who warred among themselves.
 
-This lasted until one orc, his tribe enslaved and slaughtered and he himselve forced into being a host to a jotnar, rebelled against *everyone*. He and his shamanic sister gathered the dissident, outcast, and warlike groups of all races, but especially orcs and goblins, into a host that spread across central Noefra, enslaving or killing all in its path. The "civilized" folks, seeing themselves pressed hard, banded together to fight back. This was the War of Blood. In the final days, seeing the end of their people in sight, the First Heros (a mixed-race band of civilized folks) sought out the Cosmic Forge and enacted the Third Wish: "Through Faith, Power." Some of them ascended to become the first gods; the remainder their first priests and clerics. With this power, the remaining Heroes made their way through stealth into Gor'osh (for that was the orc warrior's name)'s citadel to confront him. They only found his sister and the children of his immediate allies, whom they viciously and brutally slaughtered. When Gor'osh discovered this, he gave fully in to the demon, becoming the Demon Prince of Rage and Bloodshed and the first werewolf. Only one Hero survived his rage, managing in the end to banish him to the Abyss. Which ended the War of Blood and cursed the orcs for generations with an unmangeable bloodlust.
+This lasted until one orc, his tribe enslaved and slaughtered and he himselve forced into being a host to a jotnar demon-seed, rebelled against *everyone*. He and his shamanic sister gathered the dissident, outcast, and warlike groups of all races, but especially orcs and goblins, into a host that spread across central Noefra, enslaving or killing all in its path. The "civilized" folks, seeing themselves pressed hard, banded together to fight back. This was the War of Blood. In the final days, seeing the end of their people in sight, the First Heros (a mixed-race band of civilized folks) sought out the Cosmic Forge and enacted the Third Wish: "Through Faith, Power." Some of them ascended to become the first gods; the remainder their first priests and clerics. 
+\page
+With this power, the remaining Heroes made their way through stealth into Gor'osh (for that was the orc warrior's name)'s citadel to confront him. They only found his sister and the children of his immediate allies, whom they viciously and brutally slaughtered. When Gor'osh discovered this, he gave fully in to the demon, becoming the Demon Prince of Rage and Bloodshed and the first werewolf. Only one Hero survived his revenge strike, managing in the end to banish him to the Abyss. Which ended the War of Blood and cursed the orcs for generations with an unmangeable bloodlust.
 
 ### The Third Age (ending 600 BC)
 The survivors of the War of Blood, mostly humans, with dwarves and elves (of both kinds) much reduced in power, took to the new divine magic with gusto. Much religious war followed. The "evil" races (goblins and orcs) were hunted to the marginal places of the continent, including the great waste that once was the home of Gor'osh and his empire (now the Great Eastern Dustlands). Two great empires arose; Jinse in the east and Tibor Imperia in the west. Between them, they had peace (mostly) for close to 1500 years.
@@ -188,20 +185,24 @@ For 200 years, the survivors of the various nations of Western Noefra, scattered
 
 ### The Fourth Age.
 As the people recovered and multiplied, the Kaelthian survivors started expanding out of their mountain fortress, settling the Sea of Grass and Dreamshore. They still built walls around their settlements, becoming known as the Wall Builders. In 205 AC, a group of adventurers known as the Catalysts struck out into the wilds and discovered the other remaining nations (Byssia, Wyrmhold, and the Stone Throne). After facing many dangers, they brought the nations together and formed the Federated Nations Council, an international trade and discussion organization that prevented war for the next 40 years. The armies of Ice were driven back and their leader was eventually destroyed. The portal network, created by the aelvar of the Second Age, was re-opened, allowing fast travel between many points within the nations and even down to Soefra and eastern Noefra.
-
+\page
 This peace was not to last, with the Kaelthian Council falling into civil unrest and breaking up into smaller nations in 230 AC. Open war was averted, however, and the successor states mostly muddled along for 24 more years. This era was a time of discovery, exploration, and adventurers. 
 
-253 AC saw the Red Plague, a binary fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, a powerful ascendant (and former god) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
+253 AC saw the Red Plague, a binary fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, both the former God of Autumn (since deposed for too-aggressive meddling) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
 
-The date is now 260 AC, and now the Time of Troubles. Adventurers have never been more needed.
+The date is now 260 AC, and now is the Time of Troubles. Adventurers have never been more needed.
 
+\page
+{{wide
 ## Nations of Western Noefra, ca 260 AC.
-
-<!--Political Map-->
+<img src="https://admiralbenbo-foundry.s3.amazonaws.com/wiki/a/a2/Noefra-260AC-political.webp" style="width:100%;">
+<br>
+<br>
+}}
 
 ### Auringon
 - Population: roughly 50,000 wind elves (ihmisi...but with some variations and shorter lives) and meztlan humans.
-- Major cities: Aurin (~10k), Avignon (~5k), Yvore (~5k), all including the surrounding countryside.
+- Major cities: Aurin (&approx;10k), Avignon (&approx;5k), Yvore (&approx;5k), all including the surrounding countryside.
 - Names and architecture: Use medieval French names as base.
 - Culture: Lawful Storybook. But a bit more of the original faery tales than the modern, sanitized ones.
 - Economics: Vaguely medieval. Mostly self-sufficient trade-wise.
@@ -215,10 +216,10 @@ To outsiders, Auringon looks like a stereotypical fantasy storybook kingdom. Eve
 Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a King to whom they all pay homage. As of 260 AC, the beloved Aurel III has just died and the new king, his grandson Alan Aurelian is inexperience. Thankfully he is supported by his step grandmother, the beautiful and vapid-appearing (but secretly extremely intelligent) Dowager Princess Tatya, who is Alan's age, despite having married his much older grandfather. As I said, storybook.
 
 Several major adventurers have settled in the south near the border. Wan Tian Kuo married into the royal family (marrying the king's younger daughter Yelena, much to everyone's surprise especially both of theirs. Blame the gods.) and has settled (sort of) nearby to the druid grove and school founded by Pyrrha and Eskel Kelshanne. Auringon has good relationships with Byssia and very little contact with anyone else.
-
+\page
 ### Byssia
 - Population: Roughly 150,000 night's children humans, ihmisi, and half-elves (approximately an even split)
-- Major Cities: Byss (~22,000), Delphni (~20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
+- Major Cities: Byss (&approx;22,000), Delphni (&approx;20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
 - Names and architecture: Use classical greek as base.
 - Economics: Self-sufficient for food. Expert woodworkers. Lower metal use than most. Modern merchant base, including maritime.
 - Magics: Heavily primal. Arcane is accepted, divine is regarded as 2nd class.
@@ -232,7 +233,7 @@ Byssia is decentralized politically, with towns and villages holding most of the
 
 ### Crisial Kingdom
 - Population: Roughly 200,000 wall-builder humans, gwerin, halflings, and dwarves.
-- Major Cities: Crisial City (~30,000), Beiand (~15,000), Inegand (~10,000), Honel (~8,000). Most of the dwarves live near Honel, with gwerin in the capital and parts east.
+- Major Cities: Crisial City (&approx;30,000), Beiand (&approx;15,000), Inegand (&approx;10,000), Honel (&approx;8,000). Most of the dwarves live near Honel, with gwerin in the capital and parts east.
 - Names and architecture: Use a mix of traditional English and Welsh. Architecture is "late medieval fantasy Europe".
 - Economics: Trade is the major thing. Extraction near Honel, farming throughout. Rule of Law is very strong. Acts most like a modern semi-democracy.
 - Magics: An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
@@ -243,10 +244,10 @@ Crisial is the "shining light" nation (or so they like to portray themselves). F
 Governmentally, it is a more classical feudal nation, although with strong traditions of yeomanry and independence. Each of the major cities and their surroundings is governed by a Duke, and the Queen and her court handles the capital and the surroundings and mediates between Dukes. She acts more like a head of state in a confederation than an autocrat. Other major political forces are the various temples (it is a devout but multi-creedal nation) and the High Houses of the gwerin, which have aristocratic status. 
 
 One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
-
+\page
 ### Serpent Dominion
 - Population: Roughly 200,000 fang-kin humans, half-elves, and ophidians. A few dwarven clans.
-- Major Cities: Kel'al'ar (~30,000), Asai'ka (~20,000 but sized for more due to catastrophes)
+- Major Cities: Kel'al'ar (&approx;30,000), Asai'ka (&approx;20,000 but sized for more due to catastrophes)
 - Names and architecture: Vaguely "south eastern asian + japanese". Fantasy apostrophes abound. Lots of snake motifs.
 - Economics: Maritime trade in the south, farming and extraction throughout. Somewhat caste-based, with noble landowners, middle-caste merchants and crafters, and commoner workers. Very few yeoman common landowners. Recently a rise in rich (but not noble) merchant families gaining prominence.
 - Magics: Arcane is heaviest in the cities, whereas the rural groups are more primal. Divine exists, but it's not super common.
@@ -260,7 +261,7 @@ The caste-based culture is receeding, but still has fangs. Almost everyone here 
 
 ### Sha'slar Autonomous Zone
 - Population: Roughly 35,000 fang-kin humans and half-elves. A few ophidians.
-- Major Cities: Sha'slar (~10,000)
+- Major Cities: Sha'slar (&approx;10,000)
 - Names and architecture: Vaguely "south eastern asian + japanese". Fantasy apostrophes abound. Lots of snake motifs.
 - Economics: Plantation agriculture and forest products. Main producer of steel-silk.
 - Magics: Not much.
@@ -272,7 +273,7 @@ The SAZ is only lightly settled, with only two large settlements: Sha'slar itsel
 
 ### Shinevog
 - Population: Roughly 12,000 mixed, dwarves a plurality.
-- Major Cities: Shinevog (~12,000). It's a city-state with some closely outlying villages.
+- Major Cities: Shinevog (&approx;12,000). It's a city-state with some closely outlying villages.
 - Names and architecture: Traditional "dwarf" architecture, plus some clockwork-style magitech. Names are roughly (but broadly) Mongolian.
 - Economics: Research & Tech. Substantial imports.
 - Magics: Arcane is priority. Lower divine, very little primal.
@@ -281,7 +282,7 @@ The SAZ is only lightly settled, with only two large settlements: Sha'slar itsel
 Shinevog is the polar opposite of the Uulan Confederacy, despite both being dwarves. Settled on an abandoned clanhold along the main route from the Sea of Grass into the Giant's Spine, it was founded as a creative, iconoclastic outlet for those dwarves and others who wished to be free of traditional restraints on research (especially arcane and technological). Ruled by Theobard III, it has become a small (occupying only one small valley) but powerful hub of technology and arcane science. Not as lawless as Zhapai Karmap, it still maintains codes of ethics and responsibility.
 
 The primary religion here is that of Lon Ka, Hammer-lord, patron of technology and innovation. Yogg Maggus, lord of arcane magic, is also heavily worshiped here.
-
+\page
 ### Tlalocana
 - Population: Unknown, but likely 100+ thousand. Humans and mkhulu.
 - Major Cities: Tlalotecana (unknown), unknown others.
@@ -317,10 +318,10 @@ Buried under the Outer Barrier Range east of Kaelthia is the dwarven-dominated c
 Clans mostly govern themselves; cross-clan affairs are handled by a council of clan elders, Paragons (dwarves chosen for their skill in particular areas), and the Listener (high priest of Korokonolkom, Lord of Mountains). While most dwarves are religious, venerating Koro as their chief patron and Lon Ka, Lord of the Forge as second, their religiosity comes often with arguments and discussions. The gods are seen mostly as the ultimate examples, just as the Paragons (living and dead).
 
 Dwarven clans are ideological, rather than strictly kin-based, and changing clans is normal as one reaches adulthood. The vast majority of adult uulani are married; traditional dwarven culture treats marriage as an essential step into adulthood. Divorce, adultery, and abandonment are nearly unheard of and usually result in suicidal behavior from the abandoned dwarf.
-
+\page
 ### Wyrmhold
 - Population: 180k. 70k orcs, 60k goblins, 50k dragonborn.
-- Major Cities: Lyodnoir [L'YOHD noir] (18k), Byarmarsh (10k), ____
+- Major Cities: Lyodnoir [L'YOHD noir] (18k), Byarmarsh (10k), Baile Duchas (8k)
 - Names and Architecture: Slavic/Norse for dragonborn, Celtic for orcs. Vietnamese for goblins
 - Economics: Major industrial power, using clockwork and golems. Less magitech, more physical tech.
 - Magics: Arcane and divine for dragonborn and goblins. Primal (mostly) for orcs.
@@ -333,12 +334,18 @@ Now nearly 45 years later, Wyrmhold is finishing the transition from a 100% mili
 Governmentally, Wyrmhold is a clan-oriented monarchy. Clans (and tribes) provide social structure, while the Queen is both the nominal High Priestess and the head of the military (although this role was somewhat ceremonial in times past). The current Queen, Elspeth ka'Shakti is widely beloved by the common folk and is slowly reclaiming power from the clans as they flounder.
 
 ### Minor Nations
+Many minor nations, new and old, dot the landscape among the major players.
 #### Axeholm
 This small nation has only existed for a few years. Formed around the northern port of Axeholm and occupying portions of the western Dreamwall Mountains, it is a dynamic and multi-cultural nation, mixing dwarves, gnomes, orcs, and others. It is governed by a council...which most people mostly ignore except about foreign matters.
 
+#### Bolor Hold
+The Giant's Spine was one of original homes of the dwarven peoples in Noefra. Most of them fled south-west during the upheavals of the Cataclysm, but some were "abandoned", left behind by their fellows. Bolor Hold is one of them. Also called Betrayal or Pain, their ancestors were betrayed by their quondam allies the Alkh (now one of the major clans of the Uulani) and left to die in the years leading up to the Cataclysm. The Bolor survived, however. And have been slow to forget that grudge, although non-hostile relations and trade were re-established in 212 AC.
+
+Ruled by strongmen and gangs, with the strongest being the Boss, Bolor is notable for having debt slavery which can be worked off by fighting in an arena; a fraction of the betting went to settle the debt. Healers are on standby to prevent actual death (except in rare circumstances), but requiring such healing eats into your profits. It was under the influence of pain-addicted hags; since their unveiling and defeat, the sadism of the arena has decreased substantially.
+
 #### Breeland
 This is a uniquely halfling nation located in the central-northern Sea of Grass. Its capital of Bree is a trade stop on the route between the eastern nations and the western nations; the nation is also a major producer of honey (a classically halfling pursuit as many wall-builder humans are allergic to bee stings). One unique feature is Heroes Rest, a village/temple complex dedicated to Tsun Azur, a halfling adventurer. This is quite embarrasing to said adventurer, who still lives there with his son Tson and daughter-in-law Betsy and their large number of children. Betsy is the ruler of Breeland, officially titled "Duke". But government here is mostly by common consensus. There are those who want Tsun to be king; he has so-far refused. 
-
+\page
 #### Dales, The
 The Dales are a small, rural, recently formed collection of otherwise independent villages located in the Sundown Hills between Crisial and the Sea of Grass proper. They used to be part of Crisial as well as Kaelthia, but as those nations consolidated inward after the Red Plague, became independant peacefully. They are united only in not wanting outside interference in their business. The humans and halflings that occupy those villages are hardy and suspicious folk, especially suspicious of arcane magic. They are extremely religious, devoutly worshipping the Seasonal Four with token worship for the other True Gods.
 
@@ -354,23 +361,196 @@ One of the small states formed by the breakup of Kaelthia's dominant nation in 2
 #### Kaelthia
 10 years ago, marking Kaelthia a minor nation would have been unthinkable. 50 years ago it was the center of the dominant nation in the region. But even the mighty fall. Kaelthia in 260 AC is an insular religious backwater, only relevant to anything because of its location at the intersection of a few major trade routes. Trade routes that Kaelthia wishes went elsewhere, because they're not so fond of outsiders.
 
-In 260 AC, Kaelthia has mostly recovered from the explosion of the Grand Temple in 254 AC and the near-eruption of Mt. Refuge (the dormant volcano between whose flanks the city was built). The city still controls roughly a day's journey (~20 miles) around it. Kaelthian culture is conformist to a fault, with consensus as one of their highest values. They take "stay in your lane" to extremes. Politically, they're a communalist state governed by interlocking councils of professions running from the local level (a neighborhood or small village) all the way up to the city scope.
+In 260 AC, Kaelthia has mostly recovered from the explosion of the Grand Temple in 254 AC and the near-eruption of Mt. Refuge (the dormant volcano between whose flanks the city was built). The city still controls roughly a day's journey (&approx;20 miles) around it. Kaelthian culture is conformist to a fault, with consensus as one of their highest values. They take "stay in your lane" to extremes. Politically, they're a communalist state governed by interlocking councils of professions running from the local level (a neighborhood or small village) all the way up to the city scope.
 
 Demographically, Kaelthia is mostly wall-builder human with one dwarven clan still part of them as well as one High House of the Gwerin (and the resulting half-elves). Religiously, they worship the Seasonal Four very strongly and look down on/reject any worship of the spirits, ancestors, or other Ascendants.
 
-### Khaimal
+#### Khaimal
 Very little is known about this xenophobic city-state. Located at the north-west corner of the Frozen Coast on the north sea, it is inhabited by vulkate (lava-born) dwarves who refuse any contact with the outside. Violently. Using long-range artillery against ships cresting the horizon.
 
-### Lowbridge Republic, The
+#### Lowbridge Republic, The
 The republic sits just north of Kaelthia, where the old Lowbridge Locks were (before the Winter War of 251 AC). The merchant town of Lowbridge has become a new trade hub connecting the dwarven and jazuu lands with the human lands of the west. It competes with the northern trade route through Merrydale; the route through Lowbridge is much more settled but longer and more heavily taxed, with explicit favoritism of Lowbridge-based caravan trading.
 
-### Mar'osh
+#### Mar'osh
 A newcomer to the political stage, Mar'osh was founded in 247 AC by Maerik Mar'osh, an orcish warlord and survivor of an attack that destroyed most of the rest of his tribe. Located in the Fiach Wood a few days journey from the furthest area claimed by Wyrmhold, it is built on a resolute desire for security from the "civilized" folks and their struggles. Originally fairly decentralized, with the constituent tribes retaining significant authority, the last few years have seen significant consolidation under the young king. A young black dragon named Segi no Iusta ("Hero of Justice") has taken up residence in the north parts of the kingdom with the king's assent, lending his enthusiastic (if sometimes ham-fisted) aid to suppressing threats.
-
+\page
 As a matter of policy, Mar'osh is strictly neutral, in a heavily armed way. They will not aggress against other groups, tribes, or nations, but any incursions against them or their allies will be met with extreme and unrelenting force.
 
-### Merrydale
+#### Merrydale
 One of the newer nations formed after the breakup of Kaelthian dominance over the Sea of Grass, Merrydale owns the new northern trade route crossing the Freeglas ferry and heading to Fuar Uulan. Ruled by a former Kaelthian mage named Lady Protector Rebecca Fallowstone. Her administration emphasizes building trade and economic growth...to funnel maximum power and wealth into the Lady Protector's pockets. The people here are mostly human with some numbers of halflings. By 260 AC, Merrydale has expanded to fill the area between the Shield River to the south and the Glasweil to the north, with the eastern boundary running up against the Uulani border.
 
-### Seraaja, Clans of the
+#### Nazorat
+Another of the Abandoned, Nazorat lies north-west of Bolor Hold and near Zhapai Karmap. Once dominated by a group of mind flayers, the dwarves here have been altered by those mind flayers to have grey skin, no head hair, and grey beards. Very insular, only dwarves are permitted permanent residence inside the city.
+
+While Bolor works by strength of body and endurance, Nazorat, the City of Dominance, works by strength of mind. Torture is common. blackmail is legal. They hire out small bands of spies and infiltrators, capable of invisibility and other "mental powers".
+
+#### Scalefoot
+One of the nations formed from those left behind when the planar Hungering Frost retreated, Scalefoot is a mixed jazuu and goblin nation in the north-west Nocthian Caldera. A rough-and-ready, independent nation, it is ruled over (somewhat begrudgingly) by an ancient white dragon named Sargoranyx. It maintains trade relationships with both Byssia and Wyrmhold, and acts as a buffer for the Sigana; most trade with the latter occurs in Scalefoot territory.
+\column
+#### Seraaja, Clans of the
 The Seraaja were once the Horse Clans, before their false goddess was defeated and destroyed. Now the traditional, xenophobic core has migrated north on the Lupaus Plains, actively fighting any intruders into their horse-and-cattle-nomad lifestyle. They consider the arcane to be evil and civilization to be demonic.
+
+#### Sigana
+The north-west corner of the Nocthian Caldera's encircling mountains and that corner of the Frozen Coast was home to the second-largest and most technologically-advanced civilizations of dwarves during the late 3rd age and 2nd Interegnum. It was also one of the hardest-hit areas by the demonic hordes that presaged the Cataclysm. The few survivors split in two directions, going underground. Some pledged themselves to lava, becoming the Vulkate dwarves of Khaimal. Others fled under the mountains, warring with the invading orcs until near extinction of both sides. The descendents of these latter dwarves and orcs became the Sigana. Driven to fear the outside by the Black Tree (an offshoot of the Mother Tree, mother of hags), they sealed their doors to the outside world for many centuries, until the tree was destroyed in 251 AC.
+
+Since then they've started to open up and interact (at arms length) with the outside world, mainly the Byssian area to the south. They and the Scalefoot have formed a rough alliance, insisting on independence from either of the major powers of the Caldera. Aesthetically, they're steampunk. Clockwork and mechanical tech, tattoos and mohawks, full of bitter angst. They distrust all forms of magic, but grudgingly use an elemental-based fusion of arcane and primal power.
+
+#### Tarad'am
+Located at the southern tip of the Jungle of Fangs, Tarad'am *wants* to be called the "free port". Or maybe the "pirate port". Most people call it an unredeemable hive of scum and villainy. Here gold rules; he who has it can do what he wills as long as someone else doesn't stop it. Not getting caught is the best criminal defense.
+
+Given independence from both the Serpent Dominion and the Ship Folk fleet by treaty, it lets anyone dock. Run by organized (and disorganized) crime as well as merchant fleets, it has actually cleaned up its act somewhat over the last 10 years. Which has irritated a number of folks.
+\page
+#### Xhort
+The third of the Abandoned, Xhort is the city of hate. Once dominated in secret by a shapeshifting dragon who hated dwarves (along with many other peoples), the Xhori were conditioned to distrust and hate, well, everyone. Paranoia as a way of life. In the 50-ish years since he was revealed and driven off, the Xhori now make a living mining the deep veins of iron and other metals.
+
+Culturally, the ones they most dislike and hate are other dwarves. Only the Xhori are worthy; non-dwarves are to be pitied and disdained, but not outright disrespected, but other dwarves (especially the soft lowlands dwarves) are *khog khai* (worthless trash).
+
+#### Zhapai Karmap
+Of the nations of the Giant's Spine, ZK (as it's usually called), the Wild Hold, is the newest. Founded by a group of adventurers (the Wild Cards) in 212 AC at the site of a mind-flayer-occupied dwarven hold, its promise is simple. The only law is to not make the rulers have to care. Are you outcast from elsewhere? Do you practice magics or perform experiments that others forbid (often because of the danger posed to those around them)? Are you a jerk that no one else will tolerate? Then ZK is your home. As long as you don't aggravate the rulers and don't fail to pay the (minimal) taxes, you can do whatever you want. There are no social services other than a promise to swiftly destroy anyone who can't play even slightly nicely with others.
+
+Not coincidentally, the only major international banking franchise, run by paranoid goblins with advanced magics, is headquartered here, and its founder is one of the ruling group.
+
+## Gods and Worship
+The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
+
+The Third Wish changed that. It allowed mortals to transcend death and, via the worship of others, ascend to immortality in the Astral by replacing their mortal soul (their spark) with a fragment of the True Name of that plane. But more than that, it allowed those mortals, now gods, to gain power from the Great Mechanism in proportion to their worship base and to claim dominion over various domains of mortal existence. These were the Old Gods. And this mechanism brought much violence. Worship brings power both to the worshipped and the worshiper, and network effects apply. An upstart could supplant the existing deities by subverting their worship and stealing their worshippers.
+
+At the Cataclysm, this changed again. The Great Mechanism, seeing that it needed all of its resources to prevent the elemental planes from catastrophically destabilizing, took back the power it had granted the Old Gods. This killed the vast majority of them, with those that survived becoming depowered and being reduced to mere Ascendants, on par with a powerful devil. For 50 years, there were no gods. Prayers went unanswered, clerics had no power. Only one entity retained power, but it was absorbed (willingly) by the Mechanism, becoming an actual interface for that entity. One that, of course, still did not answer mortal prayers.
+
+At the end of this period, the Great Mechanism through its Voice chose 16 new souls from fallen mortals and elemental lords to become the new Congregation of True Gods. Unlike the Old Gods, the new gods have restrictions on how they can interact with mortals. These restrictions focus on preserving free will. The gods can still have schemes and machinations, but they cannot directly intervene except through free-willed agents and only in response to faithful prayer. In return, they are no longer dependent on mortal worship for their existence. They draw directly on the Great Mechanism, but must respond to *all* faithful prayers regarding to their domains, not discriminating on mode of worship.
+
+At the same time, the old methods of empowering Ascendants via worship still work, but the results are weaker. Many people disdain worshiping the Congregation, seeing them as disinterested and remote or simply not worth worshiping. Of these, many turn to worshiping more local "deities". A few of the elemental lords are worshipped, but most Ascendants are former mortals. Most notable in Noefra are Nocthis of Byssia and the Queen Ascendant (who shed her mortal name), worshiped in the Jungle of Fangs. These Ascendants rely on their worship, but can only intervene using their own power and can only be in one place at a time. More crucially, they are shaped by their worship as well. A schism in an Ascendant's church can, if it gains enough strength, alter the very nature of the being being worshipped against the Power's own will. Additionally, if an Ascendant grants power, they cannot take it back (unlike the relationship between a cleric and their deity). This constrains their actions and makes them pay much more attention to their churches, resulting in regional appeal.
+\page
+Most people who worship the gods focus on a smaller subset for most of their devotion, often changing throughout their lives. Others are worshipped or propitiated where appropriate for their domains. Some areas focus much more heavily on a subset (such as Auringon's depiction of Aerielara and Roel Kor as wife and husband), but it's rare for people to think monotheistically or for society to focus on a single god and neglect the others. By comparison, Ascendant worship is almost always at least henotheistic (focusing entirely on one Ascendant while accepting that other people can worship the other beings). True monotheism is almost unheard of and most consider it heretical.
+
+### The Afterlife
+Unlike many other D&D settings, Dawn of Hope does not have an eternal afterlife. For the vast majority of souls, there's about 100 years of life after death before the soul departs for shores unknown. Nor are the gods directly involved in judgement or managing souls.
+
+Living mortal creatures are tri-part: a Spark (or soul), an immaterial, difuse nimbus (or spirit) that mediates between the soul and the body or the ambient aether, and a physical body. Souls naturally emit aether, which forms into this nimbus. When a mortal (ensouled) being dies, the spark, wrapped in the nimbus, lingers near the body for about a minute, after which it begins to pass through the veil into Shadow. Souls that have too-strong ties to the mortal may linger for a bit longer, but it's rare for them to get trapped. The cats who serve as psychopomps see to that, herding lost souls to their next phase of existence.
+
+Once in Shadow, the soul quickly drifts to the layer that matches its affinity; primal-attuned souls and those seeking rest find themselves in Beastholme, while those with divine attunement or those with more manic tendencies find themselves in Mirrorhaven. Many, especially those who were diligent about worshiping a Power, find their way to a haven, an enclave maintained by that Power and its agents. Those who did not worship or who had mixed allegiance wander, often finding some way to settle down on their own. In Shadow, the soul and nimbus accrete a body of shadow aether, more psychoactive but also more fragile than condensed matter.
+
+Happy path, the souls of the deceased live for about another hundred years, reliving their mortal life with more or less fidelity. Some get to experience the heights they did not have while living, while others seek quiet solitude. Sad path, they wander into the realms of aether-hungry predators (whether the natives of the plane or other formerly-mortal spirits) who shred their shadow bodies and rip the nimbus off of the soul, ending its second life. Or worse, they wander into the Waste and fall prey to demons who devour the entire being, shadow body, spirit, and soul alike. For those there is no return.
+
+Those that survive the hazards eventually weary of their burdens, of their past and memories. Some have fulfilled all that they meant to do; others simply cannot bear it any longer. The spark sheds its shadow body and its nimbus and, like a star, blaze in glory as they arc towards the Garden of the Watcher and the Gate of Eternity that lies at its heart. Those whose nimbus was consumed, likewise, tread this path. Once there, they pass through the Gate and disappear. None have returned to tell what lies on the other side; some say that sparks are reborn, others say that they pass through to join the Dreamer's eternal fire.
+
+### The Congregation
+The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC an, reduced to the stature of an Ascendant, ended up dying at adventurer hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation backing off a bit.
+
+#### Aerielara, Jeweled Lady
+- Domain: Arts, beauty, music, sensuality, hedonism. **Trickery, Life**
+- Symbol: A stylized harp
+- Most worshiped by: gwerin, Auringon, artists, bards, prostitutes
+
+Aerielara presents herself as a vain, extremely beautiful gwerin woman, dressed in veils. She is much more intelligent than she appears. Her clergy are often young and beautiful (or extremely skilled artists) and bear protection against "complications" from their amorous exploits, which are legion.
+
+#### Hollow King, the Executioner
+- Domain: Untimely death, murder, order at any cost. Assassins. **Death, Trickery**
+- Symbol: Crossed daggers, points down.
+- Most worshiped by: assassins, those seeking justice denied by the local law. Usually propitiated, not worshipped.
+
+Dour and secretive, the Hollow King hides his face. His role is to do what the mortal law cannot. He abhors those that disrupt society, but also abhors those who take too much advantage of their social status and comit atrocities. Especially, he targets those who serve Lloitira.
+\page
+#### Kela Loran, Lady Luck
+- Domain: Commerce, Wealth, Gambling, Luck. **Knowledge, Trickery**
+- Symbol: A stack of coins.
+- Most worshipped by: merchants, gamblers, mercenaries. Popular in Rauviz and Asai'ka.
+
+Presenting as a ruddy-cheeked halfling woman of indeterminate age, Kela Loran is unambiguously mercenary and fickle. Cheating at dice and cards is a form of worship she favors. Business ethics she considers to be a drag on productivity. 
+
+#### Korokonolkom (Koro), The King Below/Lord of Silent Mountains
+- Domain: Earth, mountains, endurance. Patron of the dwarves. **Knowledge, War**
+- Symbol: Three stylized mountains
+- Most worshiped by: Uulani dwarves. Is also the Elemental Lord of Stone.
+
+The Silent Lord is called that for a reason. He rarely answers prayers. Which the dwarves who worship him find just perfect. They write their prayers on slate tablets which are dropped into blind holes into the mountains, never to be seen. But if you can rouse his anger...beware. He is depicted as a male titan, naked (although sometimes covered by a loincloth), with skin covered in runic writing.
+
+#### Lae Loara, The Huntress
+- Domain: Wilderness, travelers, nature red in fang and claw, the hunt. **Nature, Trickery**
+- Symbol: A stylized tree
+- Most worshiped by: Kotimaan and Fiach orcs and ihmisi. Propitiated by hunters and travelers.
+
+Lae Loara was raised by wild animals while a mortal, and she still doesn't do well with "civilization." Don't mistake her for a tree-hugger, though. She understands the full cycle of eat or be eaten. She rarely answers prayers in any discernable fashion, but her favored find prey more easily and avoid traps.
+
+#### Lon-Ka, the Hammerer
+- Domain: the forge, technology, and experimentation. Patron of smiths, engineers, and researchers. **Knowledge, Forge**
+- Symbol: A stylized hammer.
+- Most worshiped by: engineers, smiths, Shinevogari, the industrial parts of Wyrmhold.
+
+Lon-ka, presenting as a traditional dwarf, is a direct, stubborn being who supports the spreading of knowledge. Discovery isn't enough, knowledge should be shared. Even if that has consequences. Has no tact.
+
+#### Melara, Lady of Mercy
+- Domain: Timely death, endings, winter, memory, healing. **Grave, Life**
+- Symbol: A snowflake
+- Most worshiped by: very widespread. As one of the Seasonal Four, she is probably second only to her son-in-law Tor Elan for widespread worship.
+
+Mother to Sakara, mother in law to Tor Elan, and wife to the not-missed Loran Hae, Melara is the grandmother figure of the gods. Quiet, reserved, and believing strongly in order and justice, she presents as a dark-haired human woman of late-middle age. She *despises* necromancy and the undead, and her clergy maintain militant orders that travel from grave to grave to ensure they do not rise. Her clergy are also healers, because unlike the Hollow King, she only accepts death that comes in its true season. She is a major figure in the shadow enclaves, welcoming nearly anyone who wishes to quietly shed the burdens gathered in life before passing through the Gate.
+
+#### Peor Fala, Hearth-keeper
+- Domain: Domesticity, the home, the hearth, motherhood. **Life, Light**
+- Symbol: A stylized flame
+- Most worshiped by: mothers, peasants. Very commonly worshiped by halflings, but her worship is widespread among the lower classes.
+
+Peor Fala is a peacemaker among the gods. She dislikes violence, but can be fiercely protective and is by reputation the most scary when pushed too far. Her clergy are almost always mothers to many children (birthed or adopted) and tend not to travel very far.
+
+#### Pinwheel, the Fox.
+- Domain: Deception, trickery, practical jokes, disruption of order. **Trickery, War**
+- Symbol: A domino mask
+- Most worshiped by: Carnival folks, jesters. No real organized worship in most places.
+
+Counterpart to the Hollow King, Pinwheel dislikes stuffy, self-important people. He actively seeks to shove the shakey parts of society, puncturing over-inflated egos. If it collapses as a result, it wasn't going to last anyway. This makes him somewhat unpopular in more tight-laced areas. He never appears the same way twice.
+
+#### Roel Kor, the Red Knight
+- Domain: Nobility, tyranny, control, power. **War, Order**
+- Symbol: A red castle wall.
+- Most worshiped by: Auringon, Wyrmhold, nobles and other important folks. Or those that wish to become important.
+
+Appearing as a gwerin male in full armor and a greatsword, he belives that order must be maintained by careful hierarchy. The strong protect the weak, and the weak should obey the strong. No sense of humor and a micromanager. Dislikes Pinwheel *immensely*. Pinwheel loves to torment him.
+\page
+#### Sarapha, Festival Keeper/Brewmistress
+- Domain: Harvest, agriculture, night, autumn. **Life, Nature**
+- Symbol: sheafs of grain
+- Most worshiped by: Sea of Grass and Southshore. One of the Seasonal Four, worshiped as such in many areas.
+
+The newest of the Congregation, Sarapha replaced the former god of harvest and autumn, the unpleasant schemer Loran Hae, in 250 AC. Her personality is bubbly and generous. She especially prizes brewing and festivals. She presents as a well-endowed human woman, usually bearing large beer steins. If she has plots and schemes, she's very quiet about them.
+
+#### Tor Elan, Sun-lord
+- Domain: The sun, summer, honorable warfare, rewards of dutiful work. **Light, War**
+- Symbol: The sun on a shield.
+- Most worshiped by: Young men everywhere, warriors, farmers. As one of the Seasonal Four, he's probably the most widely worshiped.
+
+Appearing as a middle-aged human male in full armor with a mace and shield, he is the husband to Sakara and son-in-law to Melara. Widely regarded as being utterly incapable of understanding jokes. His clergy are almost always militant, usually engaging in teaching the common folk to defend themselves. A major religion devoted more henotheistically to him than usual is the Breath of the Sun, headquartered in Wyrmhold.
+
+#### Sakara, Lady of the Dawn and Cute Things
+- Domain: Growth, beginnings, spring. Anything cute. Romantic love. Fertility. **Life, Nature**
+- Symbol: A stylized flower or butterfly
+- Most worshiped by: young women everywhere, halflings. As one of the Seasonal Four, she's widely worshiped.
+
+Sakara is Tor Elan's wife, and very unlike him. She presents as a barely-adult woman, bubbly and not too bright. She loves bright colors, cute bunnies (or other things, including young beasts you shouldn't cuddle). Her catch phrase might as well be "if not friend, then why friend shaped?" She doesn't have enemies.
+
+#### Selesurala, Mistress of Storms
+- Domain: The pitiless ocean, storms, killing frosts, and natural disasters. **Nature, Tempest**
+- Symbol: A lightning bolt
+- Most worshiped by: propitiated by sailors. Rarely worshiped. Feared instead.
+
+Once the Elemental Lord of water, Selesurala is a titanic wyrm who ascended to elemental status during the First Age (about when Koro did). She cares little for mortals. Only the strong survive. Her clergy (who are few and far between) act as heralds of oncoming disasters, warning people to prepare.
+
+#### Yogg-Maggus, Lord of Magic
+- Domain: Arcana, knowledge, magic, keeping secrets. **Arcana, Knowledge**
+- Symbol: Two nested spirals
+- Most worshiped by: mages, researchers.
+
+Yogg-Maggus was chosen to prevent future Cataclysms, and he takes that job seriously. He believes that power should be hidden from those that cannot use it properly. He was responsible for re-writing the laws of magic so that many of the extremes of the earlier ages could not be replicated in the post-Cataclysm era. He presents as a human with four long braids in his beard, usually hooded. In actuality, he was a mkhulu (mind flayer) before his ascension. He rarely calls clergy, but does make warlock pacts quite frequently.
+
+### Other Ascendants
+There are many ascendants worshiped across Noefra and Quartus at large. Two main ones worshiped in western Noefra are Nocthis and the Queen Ascendant.
+
+#### Nocthis, Lady of Lunar Mystery
+Nocthis is the patron of the Byssian people from back during the 3rd age when they gained independence on the Nocthian Caldera, and is the one for whom that Caldera was named. A mage of massive power, she gained divinity alongside her then husband and took on aspects of Night, Moon, and Mystery. She taught her people to live apart from others, traveling out to seek out magical artifacts and and power sources and sequestering them for safety. Her religion strongly valued women over men, relegating the latter to lower roles in society. This lasted until the Cataclysm. Seeing the war coming, she sought refuge in a ritual to become mortal temporarily. This succeeded partially, locking her out of her divine power but keeping her alive through the depowering of the rest of the Old Gods. After her re-ascension (this time merely as an Ascendant Power), she has mellowed on both the misandry and the isolationism.
+
+Her religion, the Church of Night Reborn, still engages in keeping secrets, with an outer, public hierarchy and a real inner, secret, higher hierarchy. Only women can be priestesses of the inner circle, but men can participate in most other parts of life as equals. She does not restrict her church to the night's children of Byssia, but does not encourage proselytes. As a result, she's worshiped almost exclusively in Byssia and the Caldera.
+\page
+#### The Queen Ascendant
+When the gwerin masters of the Fanged Kingdom vanished about 500 years before the Cataclysm, they left behind an "eternal queen" on the throne of the Great Temple at Ar Salem Dolem. This gwerin woman, daughter of the high Fanged Lord, served as the focal point for the blood sacrifices of the bloodthirsty, demon-tainted religion they left behind. 700 years later, the Catalysts discovered that she was trapped in this role against her will, acting as a living conduit and filter for souls in a demonic bargain the old masters had made to ascend as gods (which ended up failing mostly, but that's a different story). They broke the spells binding her and killed the old priests who were complicit in the bloodshed, freeing her.
+
+Her soul nearly exhausted from the black magic, she harnessed the faith of her entire nation to ascend, giving up her mortal identity in the process. Now she is the Queen Ascendant, undisputed goddess-queen of the Jungle of Fangs. Her church, the Church of the Queen Ascendant, retains massive political and persuasive power across the Jungle. Highly bureaucratic with much infighting, it has agents everywhere and counterbalances the nobles...when it's not colluding with them.

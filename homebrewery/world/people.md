@@ -1,0 +1,505 @@
+# Lineages of Dawn of Hope
+Dawn of Hope has many of the familiar races (called lineages here because neither race nor species really fits), and a few new ones. Each one has a selection of cultures, presented as sub-lineage choices. While there are many cross-overs (for example humans raised under dwarven culture), not all of those can be presented here due to space constraints. Feel free, within reason and with your DM's permission, to mix and match.
+
+Features marked with (+) are there for the touched lineages; those are the features replaced by the touched race's primary feature. Lineages without such features cannot become touched.
+
+{{note
+#### Lineage Restrictions
+Unlike some settings, Dawn of Hope naturally restricts what lineages exist, because each one has a place in the world and access from other D&D settings is entirely cut off by the Crystal Sphere. As a result, the default is that no lineage not mentioned here is designed to be played on Quartus.
+
+And yes, these lineages have ability score increases. I don't play with Tasha's Race customization option. Keep them or not, your choice.
+}}
+
+### Dragonborn
+
+An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
+
+Few in number, the dragonborn are a proud, martially-oriented people both by nature and by history. Their nation spent 90 years fighting an existential battle against mysterious forces of ice and snow that nearly wiped them out and succeeded in pushing them out of their ancestral home down into the hills south of the Fiach Woods. Fircely clan-oriented, the dragonborn take no grief from anyone.
+
+Physically, dragonborn look like man-dragon hybrids. Standing of normal human height, they have scales, clawed feet and hands, dragon-like muzzles, and grow very little hair, if any. They are still mammals; females still have breasts and give birth to live young. Their scales are not always hard enough to provide protection, but they are less sensitive to the elements and general abrasion, so dragonborn often wear less clothing than most other lineage (although armor is still worn). They wear specially-constructed boots that allow their talons to jut out (or encase them in armored "toe sheaths" in the case of heavier armor). Their coloration is draconic: they have scales reminicient of one of the colors of dragons and a breath weapon like a wyrmling dragon that matches their soul's heritage. This is not hereditary; a pair of gold dragonborn might have a silver or white child. Some have nearly-vestigial bat-like wings; others have thicker, harder scales that provide some protection from blows.
+
+The dragonkin are rare in western Noefra, being much more common in the Dragonreach to the east, where humans who serve dragons, over generations, take on draconic forms. Culturally they're quite different, mechanically they're very similar.
+
+The two cultures presented here are the Lowland and the Caldera-born. The lowland dragonborn were raised in the rolling hills and plains of Safehold to the east of the Nocthian Caldera. They have a culture of industry, mechanization, and trade. The Caldera-born grew up in the ancestral lands of the Caldera, where life is tougher but pride is higher. Caldera-born often look at the lowland dragonborn as "soft", while the lowland dragonborn look at the caldera-born as rural bumpkins who think they're special.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Charisma OR Constitution
+
+**Age.**  adult around 16, live to 80-ish
+
+**Size.**  Medium. 5'0" - 6'6", 110-300 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra)
+
+**Breath Weapon(+).**. You can use your bonus action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. Alternatively, you can use this ability in place of a weapon attack from the Attack action.
+
+When you use your breath weapon, each creature must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
+
+After you use your breath weapon, you can't use it again until you complete a short or long rest.
+
+**Draconic Ancestry.**  Choose a color from the Elemental Affinity table and gain resistance to the related damage type. If you have the Breath Weapon feature, this also sets the damage type, saving throw, and shape of the breath weapon.
+
+| Color | Damage Type | Saving Throws | Shape |
+|:----|:----|:----|:----
+| Black|Necrotic|Constitution|20' cone|
+| Blue|Lightning |Dexterity|30'x 5' line|
+| Brass|Thunder |Constitution|20' cone|
+| Bronze|Fire |Dexterity|20' cone|
+| Copper|Acid |Constitution|30' x 5' line|
+| Green|Acid |Dexterity|20' cone|
+| Gold|Radiant|Dexterity|30' x 5' line|
+| Red|Fire |Dexterity|20' cone|
+| Silver|Cold|Constitution|30' x 5' line|
+| White|Cold|Constitution|20' cone|
+
+**Minor Draconic Trait.**  Choose one of the following traits:
+
+- **Vestigial Wings**: you gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn
+
+- **Armored Hide**: your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
+
+#### Caldera-born
+**Ability Score Increase.**  +2 Strength OR +1 Constitution and +1 Strength
+
+**Additional Proficiencies.** You are proficient in Survival and your choice of Ngyon Toi (goblin) or Too-til (giant).
+
+**High Altitude Acclamation.** You are at home at high altitudes and in cold climates, feeling no ill effects of either. Magical or unnatural cold still affects you unless you have resistance.
+
+**Quick Breath.** You can use your Breath Weapon twice between short or long rests instead of only once.
+
+#### Lowlands
+**Ability Score Increase.** +2 Intelligence OR +1 Charisma and +1 Dexterity
+
+**Additional Proficiencies.** Your are proficient in one artisan's tool of your choice and your choice of Ngyon Toi (goblin) or Ard-teang (orcish).
+
+**Mechanical Familiarity.** When you make an ability check to understand a mechanical device or disarm a mechanical trap, you do so at advantage.
+
+**Reliable Breath.** When you use your Breath Weapon feature, you can reroll any dice that show a one or a two and use the second result.
+
+\page
+
+### Dwarf
+Dwarves, more properly the *tumnii*, are the kindred most unchanged by time. Their ancestors at the end of the First Age, nearly 20,000 years ago, were titans, masters of order and runes. The ruling council, committed an act of hubris--they created the so-called Orb of All Might--to destroy their longstanding enemy, the wyrm (ancestors of dragons). To empower the Orb, they drained the power and potential out of the "weaker" elements of their society. These were the first dwarves. Sons and daughters of the earth and runes, they change only grudgingly. This carries over to their physiology. Undermountain-dwelling has sharpened their eyesight and the stone in their blood gives them increased endurance.
+
+Tumnii are overwhelmingly born as fraternal twins, one male and one female. Dwarves are considered adult at age 25 and generally live until they are about 150. Overall, they tend to be shorter than humans, standing between 4'0" and 5'2", but broader and more muscular. Generally, all adult dwarves have beards. Whether one or both sexes shave is a cultural matter. Of all the lineages of Quartus, there is the most in-group physiological difference between cultural groups of tumnii, as their physiology directly adapts to their circumstances at the clan-group level.
+
+Three major ethnic variants exist, although this is more *social* rather than directly physiological.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Constitution
+
+**Age.**  physically adult at 20, live until 150-ish
+
+**Size.**  Medium. 4' - 5'6", 150-250 lbs
+
+**Speed.**  30ft.
+
+**Status.**  core
+
+**Stone's Endurance (+).**  When you expend a hit die as part of a short rest, you can choose to either remove a level of exhaustion (keeping the rolled healing) or maximize the healing received from that hit die. You can use this feature once per short rest.
+
+**Darkvision.**  You have darkvision out to 60ft.
+
+**Poison Resistance.**  You have resistance to poison damage and make Constitution saving throws against being poisoned at advantage.
+
+#### Abandoned
+Abandoned dwarves come from the high-mountain regions in the Giant's Spine. The influence of malign creatures and magics, as well as the lack of resources, leaves these dwarves visibly different from most others. Their skin tends to the grey (and most often much paler), and they tend to be bald or shave much of their heads. Their eyes are red or violet, leading to an albino look. They tend to be slightly taller but much more slender than other dwarves, giving them an ungainly (to other dwarves) look, although they claim it's the other dwarves who are "squashed". They have even more sexual dimorphism than surfacer dwarves, and looser attitudes toward marriage and family.
+
+Culturally, they are much less clan-oriented and much more individualistic. They often violently reject traditional mores, which causes friction between them and the other cultures.
+
+**Ability Score Increase.** +2 Intelligence OR +2 Dexterity
+
+**Additional Proficiencies.** You have proficiency in your choice of Arcana or Survival, as well as Too-til (Giant).
+
+**Mental Fortitude.** When you start your turn and are affected by a condition (such as stunned) that prevents you from taking actions, you can choose to end that condition. If you do so, you gain a level of exhaustion. Once you use this ability, you cannot do so again until you have no more levels of exhaustion.
+
+#### Deep Mountain 
+Deep mountain dwarves live in the hard conditions deep inside the mountains. Their clans rarely come to the surface except to trade. As such, they tend to be shorter and more overtly muscular than surfacer dwarves. There is virtually no externally-visible sexual dimorphism between male and female deep mountain dwarves. Many Uulani dwarves, especially the most traditional, are deep-mountain dwarves.
+
+**Ability Score Increase.** +2 Strength OR +2 Wisdom
+
+**Born to the Craft.** You are proficient in two artisans tools of your choice. When you make a check with either one, you add twice your proficiency bonus instead of your proficiency bonus.
+
+**Stone's Resilience.** When you are reduced to zero hit points and not outright killed and do not have any levels of exhaustion, you are not unconscious and may act normally, but gain a level of exhaustion. You still make death saves as normal, including when you take damage.
+
+#### Surfacer 
+Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8" with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the Uulani and Southshore regions). Almost all dwarves native to the Jungle of Fangs fit into this culture. Surfacer dwarves are most known as merchants and traders, using their logical mindset to make deals.
+
+**Ability Score Increase.** +2 Charisma OR +1 Constitution and +1 Strength
+
+**Additional Proficiencies.** You are proficient in Persuasion, one artisan's tool of your choice, and one common language of your choice.
+
+**Persuasive.** When you make a Charisma (Persuasion) check and do not like the result, you can choose to reroll the check (including any advantage or disadvantage) and use the second result. You can do this a number of times equal to your Charisma modifier (minimum once) and recover all expended uses when you finish a long rest.
+
+**Shared Endurance.** When a creature you can see within 30 ft makes a Constitution or death saving throw, you can share some of your fortitude with them. You take one level of exhaustion and they add your Constitution modifier or Charisma modifier (whichever is higher, minimum 1) to the save result.
+
+\page
+
+### Gwerin (High Elves)
+One of two major elven lineages, the gwerin (aka high elves) are the least populous of the kindreds. Slow to breed due to a legacy of near-agelessness (now lost, a fact that still causes many hard feelings), they stand out wherever they go. Historically their kind were masters of arcane magics; even now they have an enhanced sensitivity to aetheric manipulation and a knack for intellectual pursuits. Culturally, they are stereotyped as being snooty and stuck up, always considering themselves better than other kindreds. And, truth be told, many fit that stereotype or even glory in it.
+
+Physically, they stand of medium-tall height but usually stick-thin, rarely showing many curves or muscle. A visibly obese gwerin is an oddity. Their hair, skin, and eyes are jewel or metallic tones, with pale ivory skin being quite common with various exotic shades of hair including amethyst and emerald. Their ears are quite pointed, but not substantially longer than most human ears.
+
+The two cultures presented here are the High House, those associated with or members of the named families that dominate gwerin society, and the Unhoused, those who are part of the common masses. The first have practiced selective breeding on themselves for generations to increase arcane power, while the others are much more free.
+
+#### Lineage Traits
+
+**Ability Score Increase.**  +1 Intelligence
+
+**Age.**  adult around 20, live to 190-200
+
+**Size.**  Medium. 5'4" - 6'5", 100-200 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra, Southern Soefra)
+
+**Legacy of Knowledge (+).**  When you make an ability check involving either Intelligence or Charisma, you can choose to apply double your proficiency bonus instead of whatever level of proficiency (including none at all) would normally apply. You can use this ability a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Aetherically Sensitive.**  When you make an ability check to disbelieve an illusion or a saving throw to resist an illusion, you do so at advantage.
+
+**Trance.**  Instead of sleeping, you remain semi-conscious and aware of your surroundings. You still require 6 hours of trance to complete a long rest. You cannot be magically put to sleep.
+
+#### High House
+The 7 High Houses are the (cultural and sometimes legally) noble caste of the western Noefran gwerin. They carefully curate their lineages, engaging in contract marriages. For the most part, this is all an effort to regain their lost near-agelessness (lost in the Cataclysm) and increase arcane power. When people think of haughty, hedonistic gwerin, these are those that they're thinking of. Each House is small, but has many associates.
+
+**Ability Score Increase.** +1 Intelligence, +1 Dexterity
+
+**Additional Proficiencies.** You have proficiency in Arcana, one other Intelligence-based skill of your choice, and two languages of your choice.
+
+**Magical Training.** You know two cantrips from the Wizard list. Pick one 1st level spell from the Wizard list; you can cast it once with this feature without expending a spell slot, regaining expended uses when you finish a long rest. If you have spell slots, you can cast it additional times using those slots. Intelligence is your spellcasting ability for these spells.
+
+#### Unhoused
+Those not of the Houses (a vast majority of the gwerin population) are the Unhoused. To the most arrogant of the High Houses, they are no better than the humans. As a reaction, the Unhoused have turned to wall-builder human ways, adopting much of the divine-oriented, highly-social ways of their neighbors. Many have leaned into the more physical pursuits, often mixing magic with weapon-play.
+
+**Ability Score Increase.** +2 Dexterity OR +2 Charisma
+
+**Additional Proficiencies.** You are proficient in one skill or tool and one language of your choice.
+
+**Weapon Training.** You are proficient with longswords, rapiers, short bows, and longbows. Longswords count as finesse weapons for you.
+
+**Magical Knack.** You know a cantrip from your choice of the Cleric, Druid, or Sorcerer list. Charisma is your spellcasting ability for this cantrip.
+
+\page
+
+### Halfling
+
+Halflings are the second-youngest of the lineages of Noefra, having spontaneously developed out of goblin-kind during the War of Souls roughly 800 years ago (just after the creation of the dragonborn). The magical radiations of that war and the extreme genetic bottlenecking attendant to their creation and then the Cataclysm (which hit their homelands the worst) led to an unusual genetic quirk: approximately 1/2 of all halflings are neuter females called Kliba. About 3/5 of the remainder are fertile females, known as matriarchs, and the remainder are males.
+
+As the shortest, smallest kindred, they are often confused for children of larger lineages, especially humans (among whom they live quite frequently). They've taken this and run with it to a magical degree, using this "cute" nature to their advantage.
+
+The tallest of them are shorter than the shortest humans, and they weigh very little.  Males are usually shorter and smaller than females. Halflings rarely grow beards or facial hair, and their hair is almost always short and tends to stick up. Their ears are slightly pointed and they have pronounced canines. Their eyes have a reflective undercoat like felines. All normal human hair colors and skin colors are found among the halfling-folk, although most have light hair and eyes.
+
+The two cultures presented here are the Wall-Builders of the Sea of Grass, known for their religious devotion and bucolic nature, and the Sharp Tooth of the northern Jungle of Fangs, known as a culture to be fiercely-protective swamp dwellers and (according to rumors) anthropophages.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Dexterity OR Charisma
+
+**Age.**  adult around 10, live to 60-ish
+
+**Size.**  Small. 2'8" - 4'0", 40-70 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra)
+
+**Small.**  You can move through the space of any creature that is of a size larger than yours as if was difficult terrain.
+
+**Diminutive Target.**  When you would gain half cover from an obstacle or creature, you gain 3/4 cover instead.
+
+#### Sharp Tooth
+**Ability Score Increase.** +1 Dexterity, +1 Constitution
+
+**Additional Proficiencies.** You have proficiency in poisoner's kits, herbalism kits, and Survival.
+
+**Poison Resistance.** You have resistance to poison damage and advantage on saving throws against being poisoned.
+
+**Adept Poisoner.** Poison you apply to your weapons deals an additional die of damage and applies to all hits for the duration, rather than just the first.
+
+#### Wall-Builder
+**Ability Score Increase.** +1 Dexterity, +1 Charisma
+
+**Additional Proficiencies.** You have proficiency in Animal Handling and your choice of Deception or Persuasion. 
+
+**Weaponized Charm.**  As an action, you can force a target that is either in combat with your or with whom you are interacting socially to make a Wisdom saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failure, the target makes attack rolls against you at disadvantage and their attitude increases by one step (hostile -> indifferent -> friendly) for the duration of the interaction. 
+
+In combat, targets that fail can repeat their saving throw at the end of each of their turns, ending the effect on a success. Creatures that succeed on their saving throw or for whom the effect ends cannot be affected by this ability again for 24 hours. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+\page
+### Human
+Humans, also called "the devout kindred", are among the most common of the peoples of Noefra. Created by the gwerin from goblinoids and gwerin blood during the interregnum between the Second and Third Ages, they dominated the Third Age with their devotion to the gods that arose with the dawn of the Third Age.
+
+Physically, humans are the standard against which others are measured. They have wide variance in hair and eye color, stature (although few are as short as dwarves or as tall as jazuu), and facial features. But an observer from the real world will see them as recognizably "human" (despite the significant *internal* differences necessary for a magical world). They occupy the middle ground of the lineages: not as strong as orcs, not as aetherically gifted as gwerin, not as connected to the spirits as the ihmisi, nor as durable as dwarves. Instead, they have faith and community. Unique among the lineages, they willingly and gracefully include others, even strangers, into their kin-esque groups. They lean on the gods and Powers, using whatever sources of power and help they can. Where ihmisi and orcs and dwarves have clans and gwerin have families, humans build nations on ideas and shared history.
+
+There are three main human cultures in western Noefra. Wall-builders are the most widespread, with Night's Children dominating Byssia and Fang-kin dwelling in the Jungle of Fangs.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Intelligence OR Wisdom
+
+**Age.**  adult at 16, live until 80-ish
+
+**Size.**  Medium. 5' - 6'6", 100-300 lbs
+
+**Speed.**  30ft.
+
+**Status.**  Core
+
+**Additional Proficiencies.** You gain proficiency in one skill and language of your choice.
+
+**Desperate Plea (+).**  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+#### Wall Builders
+The wall-builders, native to the Sea of Grass, are a mixed group who can trace their heritage back to the confusion around the Cataclysm about 250 years ago. Physically, they are have medium-brown skin, stand shorter and rounder than most, and have wide variation in hair. The median wall-builder has curly brown hair, but red, blonde, and even more exotic hair colors are known.
+
+Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. They're also the most community-oriented by far. Their name comes from a tradition that the first thing built in a new settlement is a wall, at least a palisade. This stems from the days when the Kaelthians who became the wall-builders thought they were alone in the world besides the monsters.
+
+**Ability Score Increase**. +1 Constitution, +1 Wisdom
+
+**Linguist.** Wall-builders live in the most melting-pot areas linguistically. This gives many of them a knack for picking up languages.When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
+
+Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
+
+**Diplomat.** When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+
+#### Night's Children
+Visually the most distinct, the Night's Children of Byssia are generally tall and statuesque, with visible musculature. With very pale skin (that rarely tans or burns) and pure-black, straight hair, they have the least internal variation. Descended from the ancient Nocthians, who were an isolated people, the Night's Children stand out from the rest.
+
+Culturally, they are dedicated to the worship of Nocthis, Lady of Mystery. Culturally, they are inveterate delvers into secrets.
+
+**Ability Score Increase.** +1 Strength, +1 Intelligence
+
+**Additional Proficiencies.** You are proficient in Investigation and Insight.
+
+**Intuitive Detective.** When you make an Investigation check to discover a hidden door, trap, concealed lever, you add twice your proficiency bonus instead. When you make an Insight check to figure out what secrets someone is keeping or detect a hidden motive, you gain one additional insight on a success.
+
+#### Fang-kin
+The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminiscent of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
+
+Their culture prizes snakes as symbols of royalty, and nimble dancing is part of the worship of the Queen Ascendant. Music and dancing are key skill most fang-kin are taught early on.
+
+**Ability Score Increase.** +2 Dexterity
+
+**Additional Proficiencies.** You are proficient in poisoner's kits, Medicine, and Iath Neidr (the ancient Fanged Kingdom language).
+
+**Tumbling Dance.** You can move through an opponent's space, counting it as difficult terrain. This provokes opportunity attacks.
+
+When an opponent misses you with an opportunity attack, you can use your reaction to make a melee weapon attack with an equipped weapon against them. You do so at advantage.
+
+\page
+
+### Ihmisi 
+{{note
+#### Ihmisi of Quartus
+The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The reprecussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
+}}
+
+Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones...but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Dexterity
+
+**Age.**  adult at 20, live until 120-ish
+**Size.**  Medium. 5' - 5'9", 80-180 lbs
+
+**Speed.**  30ft.
+
+**Status.**  core
+
+**Voices of the Kami (+).**  While on the mortal plane you can meditate for 1 minute. During that time, your senses (vision and hearing) expand to 100ft (increasing to 200ft starting at level 5, 500ft starting at level 11, and 1000 ft at level 17) regardless of natural obstructions and you can sense the presence and number of any creatures within range. The exact location of "unnatural" creatures (fiends, undead, aberrations, or celestials) are pinpointed and you know their type. In cities or other "worked" environments, the range is halved and only unnatural creatures are sensed. You cannot see through or into buildings or other constructed obstructions. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Trance.**  Instead of sleeping, you remain semi-conscious and aware of your surroundings. You still require 6 hours of trance to complete a long rest. You can not be magically put to sleep.
+
+**Naturally Stealthy.** Your connection with the land makes you able to hide more easily. While on the Mortal Plane or Shadow, you can attempt to Hide as long as you are in an area of dim light or are lightly obscured.
+
+\page
+### Jazuu
+{{note
+#### Jazuu of Quartus
+The other living descendants of the ancient titans, the jazuu are those whose ancestors were *not* drained of runic potential. In the wake of the Orb's backfire, the runic power was shattered, leaving them locked in their "small" form...which still towers over most others. They retreated into the mountains and deep wastes of Noefra, forming civilizations such as the Tuura Adam around the few Titanwalls remaining. These runic constructions carry the promise of transformation into a true giant for the worthy and strong. As a result, many jazuu-dominated cultures are fircely competitive and perfectionist. The Tuura Adam take this to an extreme; they do *everything* by the literal book, a collection of the "perfect ways to do things" that has grown and changed as new methods are discovered.
+}} 
+
+Jazuu are often called "goliaths" for their extreme stature. A short jazuu is taller than most humans, and the tall ones rival their ogre kin. They rarely have hair of any kind, and generally have extremely chiseled musculature (both males and females). Their eyes tend to be blue or grey, although other colors are somewhat common. Their skin is often blue-grey or mottled, giving them the appearance of being chiseled out of stone. Tatoos are very common among the jazuu.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Constitution or Wisdom
+
+**Age.**  adult around 18, live to 110-ish
+
+**Size.**  Medium. 6'0" - 8'10", 200-600 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra)
+
+**Child of Order(+).**  After you roll an ability check, saving throw, or attack roll but before you know the outcome, you can replace the number rolled with a 10. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Powerful Build.**  You count as one size larger for determining encumbrance, pulling and lifting objects, and grappling or shoving.
+
+\page
+### Ophidian 
+{{note
+#### Ophidians of Quartus
+The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans...and their distant relatives, the ophidians. Their ancestors were humans who were biomagically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
+}}
+
+Physically, playable ophidians are very close to fang-kin humans, except that their eyes are slitted and their tongues are forked. They tend to be extremely charming, almost magically so, and flexible to an extreme.
+
+#### Lineage Traits
+
+**Ability Score Increase.**  +1 Intelligence or Charisma
+
+**Age.**  adult around 15, live to 70-ish
+
+**Size.**  Medium. 4'9" - 6'0", 90-190 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Jungle of Fangs)
+
+**Distracting Charm (+).**  As a reaction when you are targeted with an attack by someone you can see, you can force the attacker to make a DC 8 + your Charisma modifier + proficiency Wisdom saving throw. On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Entwining Limbs.**  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot move them forcibly without releasing them from restraint (but not the grapple).
+
+**Heat Sense.**  You can detect the presence (and pinpoint the location) of living creatures within 30ft even through opaque concealment but not total cover. You do not count as able to see them for spells and effects that require sight, but they are not concealed from you and do not count as an unseen attacker.
+
+\page
+### Orc 
+{{note
+#### Orcs of Quartus
+Like humans were created from goblinoids and gwerin, the orcs were created (at about the same time even) by the ihmisi from goblinoid, ihmisi, and animal souls. Second largest of the kindred (after the jazuu), they are an imposing people. Their early history was stained with the blood and curses of the War of Blood, when an orc leader turned to demonic power to fight back against oppression and assault...and instead built an empire of skulls and ruin. After the gods were created to cast him down to the Abyss, the people who shared his face (justly or not) were considered evil and outcast to the fringes of civilization throughout the Third Age. With the Cataclysm and the great leveling of the old ways, they have re-entered society as equals. The legacy of that demon-tainted orc still echoes in the blood of Noefran orcs, although the compulsion that once drove them to mad bloodlust is gone.
+
+The most common ethnic group in Noefra, the orcs of the Fiach Woods, use tatoos to indicate standing in their clan-based society and personal history. Exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tatooed orc "smooth skin" is a deadly insult. 
+
+It should be noted that orcs are *not* barbarians or savage raiders...any more than any other lineage is. Orcs are valued members of society throughout the settled lands of Noefra.
+}}
+
+Physically, orcs have slightly grey-green-colored, rough skin. They stand much taller than most humans and much heavier, with dark hair and eyes. Some show signs of elongated lower canines, almost to the level of tusks. Their eyes tend to be somewhat sunken into their faces.
+
+#### Lineage Traits
+
+**Ability Score Increase.**  +1 Strength
+
+**Age.**  physically adult at 12, lives until 70-ish, although 80 is not uncommon.
+
+**Size.**  Medium. 5'6" - 7', 150-350 lbs
+
+**Speed.**  35ft.
+
+**Status.**  core
+
+**Fury's Legacy (+).**  Once per long rest, you can rage as if you were a level 1 barbarian, except that you can concentrate on spells (but not cast them) while raging in this way. If you have the Rage class feature, you instead can use that feature an additional time per long rest and can concentrate on spells while raging.
+
+**Relentless Advance.**  Your speed increases by 5ft (included in the speed entry).
+
+**Brutal Critical.**  When you critically hit with an attack, instead of rolling the damage dice twice, roll the damage dice for the attack once and add the result to the maximum roll of the dice (ie max + roll). Features that increase the number of critical dice are not maximized.
+
+\page
+### Soulforged, Steelborn 
+{{note
+#### Steelborn of Quartus
+The steelborn soulforged, along with their mirrors the shrine guardians, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, metal clockwork labor constructs across Wyrmhold started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken.
+
+}}
+
+The steelborn are varied, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. How they talk and why they need rest is entirely unknown. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source. Unlike most lineages, steelborn do not naturally visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Strength
+
+**Age.**  Undefined. No soulforged is more than 40 years old, but adulthood is not defined nor is a maximum age known.
+
+**Size.**  Medium. Usually 5'6"+, 200-400 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra). Cannot be Touched.
+
+**Lightning Core.**  As a bonus action, you can cause your weapon attacks (including unarmed strikes) to deal an additional 1d4 lightning damage on hit for one minute. You can use this a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Living Construct.**  You are immune to disease and do not require food or air. You do "sleep" normally, however, and are affected by poisons, including conventionally-inhaled ones. No one knows why.
+
+\column
+### Soulforged, Shrine Guardian
+{{note
+#### Shrine Guardians of Quartus
+The shrine guardians, along with their counterparts the steelborn, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, magically-animated wood-and-stone shrine guardian golems started to "wake up", becoming ensouled living beings made of wood and stone. Only a tiny fraction of the shrine guardians have awoken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken.
+
+}} 
+
+The steelborn are varied, but generally human-size or smaller. Their shape is humanoid, but the details vary and their faces are often carved into frightening masks.. How they talk and why they need rest is entirely unknown. Their connection to the nature spirits is real, and they are very difficult to pick out of a forest as long as they don't move. Unlike most lineages, they do not naturally visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
+
+**Ability Score Increase.**  +1 Wisdom
+
+**Age.**  Undefined. No soulforged is more than 40 years old, but adulthood is not defined nor is a maximum age known.
+
+**Size.**  Medium. Usually 5'0"+, 150-350 lbs
+
+**Speed.**  30ft
+
+**Status.**  regional (Western Noefra). Cannot be Touched.
+
+**Friend of the Kami.**  The kami whisper to you about possible threats. You have advantage on Wisdom (Perception) checks to find hidden creatures. Additionally, if you are not surprised but a creature that can hear you within 30' is, you can spend your reaction at the start of combat to alert them, removing the surprise.
+
+**Living Construct.**  You are immune to disease and do not require food or air. You do "sleep" normally, however, and are affected by poisons, including conventionally-inhaled ones. No one knows why.
+
+**Natural Mimicry.**  While in natural environments and stationary, you appear indistinguishable from a tree to visual inspection.
+
+\page
+## Touched Lineages
+The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents. Each culture reacts differently to this: the eastern Jinse empire considers the fiend-touched to be "blessed", as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched were often given to the Church of the Truth in the Holy Kaelthian Republic (before that collapsed) and were raised to be merciless inquisitors in that rigidly theocratic land, and treated with suspicion outside that role.
+
+For all of these, start with a base lineage. Take the ability score increase listed for your Touched lineage instead of the normal one. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
+
+### Light-touched (Celestial)
+
+Those that are born in areas or to parents touched heavily by astral influence, especially the clergy serving various Ascendant powers, are born with a measure of the light of the Astral. Light is not good; the angels are known as avengers and dispensers of justice as much as mercy.
+
+Every light-touched has a stigma, a sign that sets them apart and makes them visible as light-touched. While it can be hidden, it often flares and becomes most visible when they experience strong emotions. This might be a visible halo, hair that sheds sparks of light, eyes that glow from within, or a birthmark of wings...that expands into luminous wings of pure energy.
+
+#### Lineage Trait (Options)
+You gain the ASI instead of the normal lineage one and your choice of the one of the others, replacing the (+) trait from the parent lineage.
+
+**Ability Score Increase.**  +1 Charisma instead of the normal lineage ASI.
+
+**Avenging Wrath.**  When you hit with an attack, you can cause a flare of light to erupt, potentially blinding the enemy. The target must make a Constitution saving throw with a DC equal to 8 + your proficiency bonus + your Charisma modifier. On a failed save, they take 2d6 radiant damage and are blinded until the end of their next turn. On a success, the target takes half as much damage and is not blinded. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Wings.**  As a bonus action, you can cause glowing wings of energy to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
+
+**No End to Duty.**  As an action, you can touch a creature and restore hit points equal to 3 times your level. You can use this trait a number of times equal to your proficiency bonus, regaining all uses when you finish a long rest.
+
+### Fiend-touched (Lucian)
+
+The fiend-touched are born to those who traffic with fiends or who were exposed to significant fiendish energy, whether demonic or lucian. Those born of abyssal influence are much less acceptable in most societies, although those born to victims of attempted demon-serving sacrifice are accepted most places after some alarm. They have a prediliction to fire, as most of the aether-woven fiendish combat bodies are fire-aspected.
+
+Fiend-touched have stigmata like light-born, but theirs tend toward red skin or golden slitted eyes, horns (whether small prongs or large ram-style horns), or tails. Some can manifest actual wings, but these are bat-like, not the glowing energy constructs of the light-touched.
+
+#### Lineage Trait (Options)
+You gain the ASI instead of the normal lineage one and your choice of the one of the others, replacing the (+) trait from the parent lineage.
+
+**Ability Score Increase.**  +1 Charisma instead of the normal lineage ASI.
+
+**Hellfire Rebuke.**  When you hit with an attack, you can cause a flare of hellfire to erupt around the target. The target takes 2d6 fire damage and must make a Wisdom saving throw with a DC equal to 8 + your proficiency bonus + your Charisma modifier. On a failed save, they are frightened of you until the end of your next turn. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Wings.**  As a bonus action, you can cause leathery wings to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
+
+**Diabolical Sight.**  You gain Darkvision with a 60ft range and can see through magical darkness. As an action, you can bestow this sight on an ally within 30' of you for 10 minutes. You do not lose your vision when you do so. Once you use this trait to bestow darkvision on another, you cannot do so again until you finish a long or short rest.
+
+\page
+### Element-touched
+
+Depending on the exact influence, a fire-touched might have red hair that burst into literal (although heatless) flame when the child experiences strong emotions; a earth-touched might have rocky dermal patches, a water-touched might have (non-functional) gills and vestigial fins, and an air-touched might crackle with lightning.
+
+#### Lineage Trait (Options)
+You gain the ASI instead of the normal lineage one and your choice of the one of the others, replacing the (+) trait from the parent lineage.
+
+**Ability Score Increase.** +1 STR OR +1 DEX OR +1 CON OR +1 INT instead of the normal lineage ASI.
+
+**Firelight Flicker.**  As an action, you can teleport to an unoccupied location you can see within 30' that is not behind total cover. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Shielding Stone.**  As a reaction when you or a creature you can see within 30' of you is hit by an attack, you can take the Deflect action without expending Stamina, affecting the creature targeted. This effect lasts until the start of your next turn. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Rushing Waves.**  As an action, one creature within 5' must make a Strength saving throw of a DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution modifier. On a failed save, they are pushed 10' and knocked prone. On a success, they are only pushed 5'. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Lightning Burst.**  As an action, all creatures within 5' must make a Dexterity saving throw with DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution or take lightning damage equal to rolling a d8 a number of times equal to your proficiency bonus and be unable to take reactions until the start of their next turn. On a success, half damage. You can use this feature a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.

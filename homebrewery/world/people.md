@@ -33,6 +33,8 @@ The two cultures presented here are the Lowland and the Caldera-born. The lowlan
 
 **Status.**  regional (Western Noefra)
 
+**Languages.** You know Common and your choice of Ngyon Toi (Goblin) or Ard-teang (Orcish).
+
 **Breath Weapon(+).**. You can use your bonus action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. Alternatively, you can use this ability in place of a weapon attack from the Attack action.
 
 When you use your breath weapon, each creature must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
@@ -72,7 +74,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 #### Lowlands
 **Ability Score Increase.** +2 Intelligence OR +1 Charisma and +1 Dexterity
 
-**Additional Proficiencies.** Your are proficient in one artisan's tool of your choice and your choice of Ngyon Toi (goblin) or Ard-teang (orcish).
+**Additional Proficiencies.** Your are proficient in one artisan's tool of your choice and your choice of Ngyon Toi (goblin), Ard-teang (orcish), or Draconic.
 
 **Mechanical Familiarity.** When you make an ability check to understand a mechanical device or disarm a mechanical trap, you do so at advantage.
 
@@ -97,6 +99,8 @@ Three major ethnic variants exist, although this is more *social* rather than di
 **Speed.**  30ft.
 
 **Status.**  core
+
+**Languages.** You know Common and Tumni (Dwarven). You can read most written Too-til (Giantish) with some difficulty.
 
 **Stone's Endurance (+).**  When you expend a hit die as part of a short rest, you can choose to either remove a level of exhaustion (keeping the rolled healing) or maximize the healing received from that hit die. You can use this feature once per short rest.
 
@@ -156,6 +160,8 @@ The two cultures presented here are the High House, those associated with or mem
 
 **Status.**  regional (Western Noefra, Southern Soefra)
 
+**Languages.** You know Common and Yonwach (High Elven).
+
 **Legacy of Knowledge (+).**  When you make an ability check involving either Intelligence or Charisma, you can choose to apply double your proficiency bonus instead of whatever level of proficiency (including none at all) would normally apply. You can use this ability a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 
 **Aetherically Sensitive.**  When you make an ability check to disbelieve an illusion or a saving throw to resist an illusion, you do so at advantage.
@@ -205,6 +211,8 @@ The two cultures presented here are the Wall-Builders of the Sea of Grass, known
 
 **Status.**  regional (Western Noefra)
 
+**Languages.** You know Common.
+
 **Small.**  You can move through the space of any creature that is of a size larger than yours as if was difficult terrain.
 
 **Diminutive Target.**  When you would gain half cover from an obstacle or creature, you gain 3/4 cover instead.
@@ -246,33 +254,11 @@ There are three main human cultures in western Noefra. Wall-builders are the mos
 
 **Status.**  Core
 
+**Languages.** You know Common.
+
 **Additional Proficiencies.** You gain proficiency in one skill and language of your choice.
 
 **Desperate Plea (+).**  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
-
-#### Wall Builders
-The wall-builders, native to the Sea of Grass, are a mixed group who can trace their heritage back to the confusion around the Cataclysm about 250 years ago. Physically, they are have medium-brown skin, stand shorter and rounder than most, and have wide variation in hair. The median wall-builder has curly brown hair, but red, blonde, and even more exotic hair colors are known.
-
-Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. They're also the most community-oriented by far. Their name comes from a tradition that the first thing built in a new settlement is a wall, at least a palisade. This stems from the days when the Kaelthians who became the wall-builders thought they were alone in the world besides the monsters.
-
-**Ability Score Increase**. +1 Constitution, +1 Wisdom
-
-**Linguist.** Wall-builders live in the most melting-pot areas linguistically. This gives many of them a knack for picking up languages.When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
-
-Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
-
-**Diplomat.** When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
-
-#### Night's Children
-Visually the most distinct, the Night's Children of Byssia are generally tall and statuesque, with visible musculature. With very pale skin (that rarely tans or burns) and pure-black, straight hair, they have the least internal variation. Descended from the ancient Nocthians, who were an isolated people, the Night's Children stand out from the rest.
-
-Culturally, they are dedicated to the worship of Nocthis, Lady of Mystery. Culturally, they are inveterate delvers into secrets.
-
-**Ability Score Increase.** +1 Strength, +1 Intelligence
-
-**Additional Proficiencies.** You are proficient in Investigation and Insight.
-
-**Intuitive Detective.** When you make an Investigation check to discover a hidden door, trap, concealed lever, you add twice your proficiency bonus instead. When you make an Insight check to figure out what secrets someone is keeping or detect a hidden motive, you gain one additional insight on a success.
 
 #### Fang-kin
 The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminiscent of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
@@ -287,13 +273,38 @@ Their culture prizes snakes as symbols of royalty, and nimble dancing is part of
 
 When an opponent misses you with an opportunity attack, you can use your reaction to make a melee weapon attack with an equipped weapon against them. You do so at advantage.
 
+#### Night's Children
+Visually the most distinct, the Night's Children of Byssia are generally tall and statuesque, with visible musculature. With very pale skin (that rarely tans or burns) and pure-black, straight hair, they have the least internal variation. Descended from the ancient Nocthians, who were an isolated people, the Night's Children stand out from the rest.
+
+Culturally, they are dedicated to the worship of Nocthis, Lady of Mystery. Culturally, they are inveterate delvers into secrets.
+
+**Ability Score Increase.** +1 Strength, +1 Intelligence
+
+**Additional Proficiencies.** You are proficient in Investigation and Insight.
+
+**Darkvision.** The Lady of Mystery, Queen of Night, has gifted you with darkvision out to 60 ft.
+
+**Intuitive Detective.** When you make an Investigation check to discover a hidden door, trap, concealed lever, you add twice your proficiency bonus instead. When you make an Insight check to figure out what secrets someone is keeping or detect a hidden motive, you gain one additional insight on a success.
+
+#### Wall Builders
+The wall-builders, native to the Sea of Grass, are a mixed group who can trace their heritage back to the confusion around the Cataclysm about 250 years ago. Physically, they are have medium-brown skin, stand shorter and rounder than most, and have wide variation in hair. The median wall-builder has curly brown hair, but red, blonde, and even more exotic hair colors are known.
+
+Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. They're also the most community-oriented by far. Their name comes from a tradition that the first thing built in a new settlement is a wall, at least a palisade. This stems from the days when the Kaelthians who became the wall-builders thought they were alone in the world besides the monsters.
+
+**Ability Score Increase**. +1 Constitution, +1 Wisdom
+
+**Linguist.** Wall-builders live in the most melting-pot areas linguistically. This gives many of them a knack for picking up languages.When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
+
+Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
+
+**Diplomat.** When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+
+
 \page
 
 ### Ihmisi 
-{{note
-#### Ihmisi of Quartus
-The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The reprecussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
-}}
+
+The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The repercussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
 
 Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones...but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
 
@@ -301,11 +312,14 @@ Physically, ihmisi are of medium height, standing shorter than many taller human
 **Ability Score Increase.**  +1 Dexterity
 
 **Age.**  adult at 20, live until 120-ish
+
 **Size.**  Medium. 5' - 5'9", 80-180 lbs
 
-**Speed.**  30ft.
+**Speed.**  35ft.
 
 **Status.**  core
+
+**Languages.** You know Common and Metsae (wood elven). You can understand most speakers of Yonwach as long as the mode is common (rather than High Court Yonwach).
 
 **Voices of the Kami (+).**  While on the mortal plane you can meditate for 1 minute. During that time, your senses (vision and hearing) expand to 100ft (increasing to 200ft starting at level 5, 500ft starting at level 11, and 1000 ft at level 17) regardless of natural obstructions and you can sense the presence and number of any creatures within range. The exact location of "unnatural" creatures (fiends, undead, aberrations, or celestials) are pinpointed and you know their type. In cities or other "worked" environments, the range is halved and only unnatural creatures are sensed. You cannot see through or into buildings or other constructed obstructions. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 
@@ -313,14 +327,31 @@ Physically, ihmisi are of medium height, standing shorter than many taller human
 
 **Naturally Stealthy.** Your connection with the land makes you able to hide more easily. While on the Mortal Plane or Shadow, you can attempt to Hide as long as you are in an area of dim light or are lightly obscured.
 
+#### Kotimaan
+Kotimaan ihmisi are the proud "wild" ihmisi who dwell in the endless forests north of Lake Coy'in. Their culture is egalitarian but tribal; the varied tribes are constantly in conflict, but within a tribe there is very little hierarchy. Often, these tribes are led by the women, with children by whichever man they choose. Men and women alike are hunters and gatherers, choosing by their own aptitudes.
+
+These tribes rarely worship anything other than the local ihimen, although sometimes there is a reverence for the Huntress. They are united in one thing, however, which is their distrust of the "civilized" folks who sit in their own garbage.
+
+**Ability Score Improvement.** +1 Dexterity, +1 Wisdom
+
+**Primal Initiate.** You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.
+
+#### Traveler
+Ihmisi who have left their sylvan roots or who grew up in settled areas tend to become wanderers, forming insular families that move from place to place, always seeking a new horizon. Some few do settle down, but even then tend to be restless. Often, these traveling folk are known for being able to repair almost anything (a necessity when you're constantly on the road)...and sometimes petty theft.
+
+**Ability Score Increase.** +2 Wisdom OR +2 Charisma
+
+**Additional Proficiencies.** You are proficient in land vehicles, animal handling, thieves tools, and one artisan's tool of your choice.
+
+**Traveling Mender.** You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires a tool proficiency you have.
+
+**Weapon Training.** You are proficient in long bows, short bows, short swords, and longswords. Longswords are finesse weapons for you.
+
 \page
 ### Jazuu
-{{note
-#### Jazuu of Quartus
-The other living descendants of the ancient titans, the jazuu are those whose ancestors were *not* drained of runic potential. In the wake of the Orb's backfire, the runic power was shattered, leaving them locked in their "small" form...which still towers over most others. They retreated into the mountains and deep wastes of Noefra, forming civilizations such as the Tuura Adam around the few Titanwalls remaining. These runic constructions carry the promise of transformation into a true giant for the worthy and strong. As a result, many jazuu-dominated cultures are fircely competitive and perfectionist. The Tuura Adam take this to an extreme; they do *everything* by the literal book, a collection of the "perfect ways to do things" that has grown and changed as new methods are discovered.
-}} 
+The other living descendants of the ancient titans, the jazuu are those whose ancestors were *not* drained of runic potential. In the wake of the Orb's backfire, the runic power was shattered, leaving them locked in their "small" form...which still towers over most others. They retreated into the mountains and deep wastes of Noefra, forming civilizations such as the Tuura Adam around the few Titanwalls remaining. These runic constructions carry the promise of transformation into a true giant for the worthy and strong. As a result, many jazuu-dominated cultures are fircely competitive and perfectionist.  The other Noefran group of jazuu are those whose ancestors served the Hungering Frost on the Nocthian Caldera; they are much more tribal.
 
-Jazuu are often called "goliaths" for their extreme stature. A short jazuu is taller than most humans, and the tall ones rival their ogre kin. They rarely have hair of any kind, and generally have extremely chiseled musculature (both males and females). Their eyes tend to be blue or grey, although other colors are somewhat common. Their skin is often blue-grey or mottled, giving them the appearance of being chiseled out of stone. Tatoos are very common among the jazuu.
+Jazuu are often called "goliaths" for their extreme stature. A short jazuu is taller than most humans, and the tall ones rival their ogre kin. They rarely have hair of any kind, and generally have extremely chiseled musculature (both males and females). Their eyes tend to be blue or grey, although other colors are somewhat common. Their skin is often blue-grey or mottled, giving them the appearance of being chiseled out of stone. Tattoos are very common among the jazuu.
 
 #### Lineage Traits
 **Ability Score Increase.**  +1 Constitution or Wisdom
@@ -333,16 +364,39 @@ Jazuu are often called "goliaths" for their extreme stature. A short jazuu is ta
 
 **Status.**  regional (Western Noefra)
 
-**Child of Order(+).**  After you roll an ability check, saving throw, or attack roll but before you know the outcome, you can replace the number rolled with a 10. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+**Languages.** You know Common and Too-til (Giantish). You can read Tumni with some proficiency.
+
+**Child of Order(+).**  After you roll an ability check, saving throw, or attack roll but before you know the outcome, you can replace the number rolled with a 10. Once you use this feature, you cannot do so again until you finish a long rest.
+
+**High Altitude Acclamation.** You are at home at high altitudes and in cold climates, feeling no ill effects of either. Magical or unnatural cold still affects you unless you have resistance.
 
 **Powerful Build.**  You count as one size larger for determining encumbrance, pulling and lifting objects, and grappling or shoving.
 
+#### Tuuran
+The Tuura Adam built their civilization in the original jazuu homeland, deep in the Giant's Spine. They boast the only complete Titanwall, and their society is heavily entwined with the true giants created there. They take "fair competition" to an extreme; they do *everything* by the literal book, a collection of the "perfect ways to do things" that has grown and changed as new methods are discovered.
+
+**Ability Score Increase.** +1 Constitution, +1 Wisdom
+
+**Additional Proficiencies.** You are proficient in your choice of Athletics, Acrobatics, or Arcana. You also are proficient in one artisan's tool of your choice.
+
+**Review the Codex.** When you finish a long rest, you can pick a skill or tool you are not proficient in. You gain proficiency in that skill or tool until you finish a long rest. 
+
+**Increased Order.** You can use your Child of Order ability on any ability check, saving throw, or attack roll by a creature you can see within 60 feet instead of only on yourself.
+
+#### Frost-born
+The armies of the Hungering Frost were mostly jazuu and goblins. Many of them remained behind when the planar forces retreated, forming tribes and clans in the Nocthian Caldera. They retain a portion of their connection to elemental ice. Unlike their Tuuran cousins, they are much less obsessed with order or with the giant transformation and have no Titanwall of their own.
+
+**Ability Score Increase.** +1 Constitution, +1 Strength
+
+**Additional Proficiencies.** You are proficient in Survival and Ngyon Toi (Goblin).
+
+**Freezing Attunement.** Your connection with Ice gives you resistance to cold damage. In addition, you ignore difficult terrain caused by ice, snow, or other similar factors.
+
+**Freezing Touch.** As a bonus action, you can imbue your attacks with ice for one minute. Each time you hit with a weapon attack for the duration, you deal an additional 1d4 cold damage. Once during the duration when you hit, you can choose to force the creature to make a Strength saving throw against a DC of 8 + your proficiency bonus + your Strength modifier. On a failed save, the creature is restrained by ice until the end of your next turn.
+
 \page
 ### Ophidian 
-{{note
-#### Ophidians of Quartus
-The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans...and their distant relatives, the ophidians. Their ancestors were humans who were biomagically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
-}}
+The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans...and their distant relatives, the ophidians. Their ancestors were humans who were bio-magically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
 
 Physically, playable ophidians are very close to fang-kin humans, except that their eyes are slitted and their tongues are forked. They tend to be extremely charming, almost magically so, and flexible to an extreme.
 
@@ -358,22 +412,37 @@ Physically, playable ophidians are very close to fang-kin humans, except that th
 
 **Status.**  regional (Jungle of Fangs)
 
-**Distracting Charm (+).**  As a reaction when you are targeted with an attack by someone you can see, you can force the attacker to make a DC 8 + your Charisma modifier + proficiency Wisdom saving throw. On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
+**Languages.** You know Common and Iath Neidr.
 
-**Entwining Limbs.**  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot move them forcibly without releasing them from restraint (but not the grapple).
+**Distracting Charm (+).**  As a reaction when you are targeted with an attack by someone you can see, you can force the attacker to make a Wisdom saving throw against a DC of 8 + your Charisma modifier + proficiency . On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 
 **Heat Sense.**  You can detect the presence (and pinpoint the location) of living creatures within 30ft even through opaque concealment but not total cover. You do not count as able to see them for spells and effects that require sight, but they are not concealed from you and do not count as an unseen attacker.
 
+#### Venom-tip
+The Venom-tip ophidians were born with innate poison. They are lithe even for ophidians.
+
+**Ability Score Increase.** +2 Dexterity
+
+**Poison Resistance.** You have resistance to poison damage and make saving throws against being posioned at advantage.
+
+**Poison Bite.** You have a natural weapon you can use whenever you can make an attack. It counts as a finesse weapon with a reach of 5 feet, dealing 1d4 + your ability modifier piercing damage and 1d6 poison damage. When you reach 5th level, the poison damage increases to 2d6. At 11th level, it increases to 3d6.
+
+#### Strangler
+Strangler ophidians were born with flexible limbs capable of constricting foes. They tend to be surprisingly strong.
+
+**Ability Score Increase.** +2 Strength
+
+**Additional Proficiencies.** You are proficient in Athletics, and when you make a Strength (Athletics) check to grapple someone or escape a grapple, you add twice your proficiency bonus instead.
+
+**Entwining Limbs.**  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot move them forcibly without releasing them from restraint (but not the grapple).
+
 \page
 ### Orc 
-{{note
-#### Orcs of Quartus
 Like humans were created from goblinoids and gwerin, the orcs were created (at about the same time even) by the ihmisi from goblinoid, ihmisi, and animal souls. Second largest of the kindred (after the jazuu), they are an imposing people. Their early history was stained with the blood and curses of the War of Blood, when an orc leader turned to demonic power to fight back against oppression and assault...and instead built an empire of skulls and ruin. After the gods were created to cast him down to the Abyss, the people who shared his face (justly or not) were considered evil and outcast to the fringes of civilization throughout the Third Age. With the Cataclysm and the great leveling of the old ways, they have re-entered society as equals. The legacy of that demon-tainted orc still echoes in the blood of Noefran orcs, although the compulsion that once drove them to mad bloodlust is gone.
 
-The most common ethnic group in Noefra, the orcs of the Fiach Woods, use tatoos to indicate standing in their clan-based society and personal history. Exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tatooed orc "smooth skin" is a deadly insult. 
+The most common orcish ethnic group in Noefra, the orcs of the Fiach Woods, use tattoos to indicate standing in their clan-based society and personal history. Exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tattooed orc "smooth skin" is a deadly insult. 
 
 It should be noted that orcs are *not* barbarians or savage raiders...any more than any other lineage is. Orcs are valued members of society throughout the settled lands of Noefra.
-}}
 
 Physically, orcs have slightly grey-green-colored, rough skin. They stand much taller than most humans and much heavier, with dark hair and eyes. Some show signs of elongated lower canines, almost to the level of tusks. Their eyes tend to be somewhat sunken into their faces.
 
@@ -397,11 +466,7 @@ Physically, orcs have slightly grey-green-colored, rough skin. They stand much t
 
 \page
 ### Soulforged, Steelborn 
-{{note
-#### Steelborn of Quartus
 The steelborn soulforged, along with their mirrors the shrine guardians, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, metal clockwork labor constructs across Wyrmhold started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken.
-
-}}
 
 The steelborn are varied, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. How they talk and why they need rest is entirely unknown. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source. Unlike most lineages, steelborn do not naturally visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
 

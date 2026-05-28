@@ -9,14 +9,14 @@ As you will see, I am not the most serious of people [_that is the understatemen
 #### Introducing the Editor, Marceline Kaelthia-warden
 I am please to make your acquaintance, and hope you will enjoy this tome. I am Marceline, human sorcerer turned brass dragon, once protector of Kaelthia and hoarder of stories. And one of the few people on this plane who willingly associates with that degenerate [_hey! Everyone loves me! --IB_] Bard. Although, given how many children he has had...someone must find him attractive at least for short intervals.
 
-I will do my best to keep the Bard's disruptive "jokes" to a minimum, and my interruptions and corrections will be set off with square brackets and italics [_they need an example, so something like this! --IB]...thanks Bard. I think they've got it by now.
+I will do my best to keep the Bard's disruptive "jokes" to a minimum, and my interruptions and corrections will be set off with square brackets and italics [_they need an example, so something like this! --IB_]...thanks Bard. I think they've got it by now.
 }}
 
 ## Introduction
 This initial tome is aimed at those wishing to run games set in Dawn of Hope, those wishing to build characters for the setting, as well as those who simply want to know more. Most of the player-facing mechanical information is found in the other tomes (Lineages of Dawn of Hope, Classes of Dawn of Hope, and Player Options of Dawn of Hope).
 
 Here you'll find geographic, religious, and political information for the setting, focusing primarily on the region known as western Noefra in the year 260 AC, during the age known as the Time of Troubles.
-
+\column
 ## The Universe of Dawn of Hope
 The universe in which Dawn of Hope is set is a pocket-sized universe, with the main material plane (named the Mortal plane) roughly the size of the inner Solar System (&approx; 2 AU, slightly larger than the orbit of Mars). Co-located with that Mortal plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth, outermost planet, as well as the planar regions to which that corresponds.
 
@@ -28,6 +28,7 @@ Dawn of Hope does *not* pretend that the underlying physical laws are those of E
 
 However, the *surface observables* of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying *reasons* for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.
 }}
+\page
 ## Planar Geography
 
 Dawn of Hope has 3 primary planes and 2 secondary planes. The primary planes are the Mortal (the analogue of the Material plane in the Great Wheel cosmology), the Astral (taking the role of the many of the Upper Planes), and the Elemental (subdivided into 12 "regions", often called planes themselves). The secondary planes are that of Shadow (carrying the roles of the liminal Astral and Ethereal planes, plus the Feywild, Shadowfell, and parts of the Lower Planes), which is split into 3 layers (the liminal Border Shadow, the melancholy and nature-aspected Beastholm, and the manic and deceptive Mirrorhaven, plus the abyssal wound called the Waste that collapses the layers) and the Abyss (acting as the home of demons and the abcess surrounding their source).
@@ -53,13 +54,12 @@ One caveat: all the *afterlife* portions of the planes are in Shadow. Only the d
 }}
 
 Each of these planes other than the Abyss plays a key role in the universal energy economy. The Mortal, being as it is the home of mortal beings, is the source of all anima (also called aether), the stuff and energy out of which all existence is created. This is released upon death (as well as periodically by normal souls) and transitions through Mirrorhaven into the Astral, where the Great Mechanism, assisted by the gods, devils, and angels, distributes it to the other planes. One large part is sent back down in the form of luminous aether released by Eua, the Mortal-plane sun, to give light and energy to the Mortal. The rest, other than that which is consumed to keep the Astral going, is sent to the Elemental, where it gains elemental "aspects", becoming air, water, heat, lava, and all other forms of matter, which the elemental forces there then transport back to the Mortal, closing the loop. This aether economy replaces the normal hydrologic, geologic, and atmospheric cycles. As a result, mines left abandoned for long enough are re-filled by busy earth elementals, ocean and air currents circulate. The seasons cycle as Quartus (the fourth planet) orbits through the fixed areas of influence of the various portions of the Elemental plane, with spring corresponding to the start of Earth's influence, summer to that of Fire, autumn to that of Air, and winter to that of Water.
-\page
 
 The Abyss is a festering wound, roughly the volume of Quartus itself. It orbits on a complex, non-eliptical orbit "between" the planes, and demons attempt to break out and infect the other planes, primarily the Mortal via Shadow, as demons feed on mortal souls above all else. At the Abyss's center is the Oblivion Gate, a possibly-sentient rupture in the fabric of reality iself, joining That Which Is (aka reality) to That Which Is Not. It manifests as a black hole that eagerly reaches out tendrils of annihilation to consume anything that approaches, as well as emitting fragments of itself called jotnar, "spirits" of pure entropy and destruction. It is these jotnar who, when they infest living beings or corpses, create demons and the undead.
 
 ### The Mortal Plane
 The Mortal Plane consists of a central star, Eua, and four planets. Eua is approximately the same size and effective brightness and color as Earth's sun, although the fundamental principles by which it operates are different. The first planet, Primus, is considered uninhabitable, orbiting as it does at 0.25 AU. Its surface undergoes rapid seasonal changes, with each season lasting less than 12 Quartan days. Only elementals and other such resilient beings can tolerate the extremes of luminous energy here. The second two, Secundus and Tertius, are a dual planet, orbiting around their common center. Separated by only a few hundred miles, their atmospheres intermingle and some life migrates from one to the other. Their orbit is at 0.5 AU, leading to much more extreme seasons. Secundus is dominated by Earth and Air, leading to a planet with floating islands. Tertius is dominated by Water and Fire, leading to large oceans and masses of sentient plant life.
-
+\page
 The fourth, Quartus, is the primary setting of Dawn of Hope. An Earthlike planet orbiting at slightly more than 1 AU, it boasts two moons (Quella and Teki) with periods of 32 and 8 days, respectively. It has a year of 384 days, usually divided into 12 equal months of 32 days (one orbital period of Quella), 3 for each season. Its orbit is circular within very tight tolerance, and its axial tilt is nearly 0 (seasons and weather being provided by elemental influence rather than axial tilt). Quartus has 5 continent, named Noefra (in the north east), Soefra (south east), Oelfra (north west), Aenimos (south west), and Perdatos (south central-western). Noefra, and particularly the western half, are the subjects of most of this document. Only minimal information is provided about the other continents, as the Noefrans have only minimal contact with Soefra and none at all with the others.
 
 The Mortal Plane is built out of the True Name of Primordial Life, blended with parts of those of Death as well as the elemental Names. Virtually absent are the names of Light and Dark. Since the Cataclysm, the reborn name of Change has also found strong roots here, giving a renewed dynamism to those dwelling here. Despite its name, there are mortal beings on the other planes, especially the elemental planes. But the Mortal Plane is where the anima, stuff of existence, is generated in profusion.
@@ -74,11 +74,11 @@ The Astral is divided into five primary domains ("landmasses" floating in empty 
 Called one plane, Shadow is really composed of three layers (and a blight that merges the layers). Created out of the True Name of Death, it serves as the final resting place for the souls of dead mortals (those that do not ascend or get eaten by demons) as well as a home to most of the fey. There are other creatures that call it home as well, all partaking of that dread Name. At the core is the Gate of Eternity in the Watcher's Garden, where those souls who have laid down their concerns pass into the unknown. Most ancient of dragons, the Watcher oversees the cycle of death and burden-shedding with impartiality, aided by the Catocracy (a bureaucracy of cats assisting in guiding lost souls) and the orders of the Gleaners, mortals who parter with said cats to reap the stragglers, those who seek to cheat normal death too blatantly.
 
 Border Shadow is the truly liminal plane, extending "between" the Mortal and all the other planes. All portals, teleportation, and planar travel pass through the Border and disturb it, weakening the boundaries. The souls of the dead flow "up" from the Mortal through the Border, herded by the cats that act as psychopomps, although only the lost souls remain here. The rest find a second, temporary life in one of the other layers. Here, land and gravity don't exist, and movement is by the will of the traveller. Dreams peer through the veil here into the other layers.
-\page
+
 The other layers act as a twisted reflection of the Mortal, and only really have substance around the surface of Quartus itself. Where Quartus may have a moutain, the shadow reflection might have an inverted peak. Or a regular mountain. Time and space flow oddly and unevenly here.
 
 The bright mirror of the Mortal, Mirrorhaven is influenced by and partakes in the flow of energy from the Astral plane. Its nature is of bright colors, constant movement, and frenetic interplay of light and color. It is home to the Spring and Summer Court of the Fey. Do not be fooled by the names, however. Also associated with this layer is mania and illusion; nothing here is as it seems. Delusion is rampant; everything wears multiple faces. Decadence and lavish excess hide a hollow, insatiable hunger that cannot be filled; the shadow-stuff of which this is made is not stable or real enough to satisfy. The inhabitants continually search for greater and greater sensation to fill this numbness. The majority of the populace is the spirits of those departed mortal souls that were attuned toward the Astral, either as a life of devotion to the Gods or for personal reasons. Here they live a distorted reflection of their lives until either they lose track of who they are and their memories fade, until their memories are riven and consumed by one of the denizens, or until they press through to the Astral plane itself and carve out a residence there through transcendence. Many of the gods and ascendants maintain enclaves here.
-
+\page
 The hub of Mirrorhaven is Centrum. This city once was the capital of Tibor Imperia of Noefra (known then as Imperial Center) until a tremendous magical explosion threw it into Shadow about 800 years ago. The inhabitants have become shadow-kin, beings made of shadow-stuff. All the decadence, excess, and mania of the layer are most concentrated here—the entire city is one continual, frantic, eternal festival. Souls drift in and are caught up in the celebration. The weak burn out quickly; the strong prey on the weak for survival. 
 
 Beastholm is the layer of Shadow "closer" to the elemental planes. Also called the Dreamlands. This is the home of many of the fey, but especially the Winter Court. If Mirrorhaven is manic, the Dreamlands is soporific. The daily routine, the static sameness, the wilderness. If Mirrorhaven is deceptive, the Dreamlands is forthright in its madness. Here, the risk is depression and apathy. After a while, nothing seems to matter and the soul drifts into sleep. The spirits that find themselves here are those that were attuned to the primal, to the spirits of nature or to the elemental planes. They drift into slumber and shed their cares and memories before transiting the Gate. Those more energetic may force through to the Elemental and form bodies there, ascending as those born to their chosen element.
@@ -124,12 +124,205 @@ The only surviving Nightlord, the archetype from which all vampires descend, Llo
 One of the four Children of the Mother of Monsters, the Twisted was the ur-kraken until it sided with the newly-opened Oblivion Gate out of a desire for power and betrayed its fellow Children while pretending to be repentant for its actions during the Dawn War. Now the dark mirror to Leviathan, it considers itself the patron of all things abominable, of disease, mutation, and flesh-crafting. It considers itself to be an artist, with living flesh as its canvas. Its followers each seek "beauty" in things most consider horrific. Its cults (often cellular in structure) seek to corrupt the land and twist all life into new, "beautiful" shapes. Among its major followers are many of the abantu mkhulu (called mind-flayers elsewhere) and the comiedai (called aboleth elsewhere). Of all the demon princes, the Twisted and its forces are the least welcomed by the inhabitants of the rest of the planes...which is a tall order since no demon or demon worshipper is exactly welcomed anywhere sane.
 \page
 #### The Black Lord, Orolaen
-Orolaen is the ur-lich, an aelf who discovered the lich transformation, and then became a demon. It's said that he then intentionally sabotaged the ritual, so all the versions now are inferior copies. Of all the demon princes, he is unique in that he can be trusted to keep his end of any bargains without deceit. His bargains are always fair...but the penalty for non-performance or violation is extreme. He demands that all those who deal with him also keep their word. He's been known to help adventurers against other threats, asking nothing but the continued existence of the planes as a reward. As the patron of all forbidden knowledge and necromancy, his mortal followers are often mages and necromancers and the sentient undead.
-\column
-#### Seleleana, called Jester
-The Jester is a wild-card. Not much is known about this insane entity, other than that it is ancient (possibly a shard of the Nameless left behind, too insane to rejoin creation) and utterly devoid of reason. It plots and schemes and acts out of incomprehensible motives. Many of its plots and those of its followers are mutually incompatible with themselves...and it seems to enjoy that. Some suspect it of having deeper motives, because nothing can be *truly* that random. Its followers are generally lone actors, but many of them are powerful. Including the entities known as rasksha, the cat demons.
-::::
+Orolaen is the ur-lich, an aelf who discovered the lich transformation, and then became a demon. It's said that he then intentionally sabotaged the ritual, so all the versions now are inferior copies. Of all the demon princes, he is unique in that he can be trusted to keep his end of any bargains without deceit. His bargains are always fair, but the penalty for non-performance or violation is extreme. He demands that all those who deal with him also keep their word. He's been known to help adventurers against other threats, asking nothing but the continued existence of the planes as a reward. As the patron of all forbidden knowledge and necromancy, his mortal followers are often mages and necromancers and the sentient undead.
 
+#### Seleleana, called Jester
+The Jester is a wild card [*like you! --ed* *That's not fair --IB*]. Not much is known about this insane entity, other than that it is ancient (possibly a shard of the Nameless left behind, too insane to rejoin creation) and utterly devoid of reason. It plots and schemes and acts out of incomprehensible motives. Many of its plots and those of its followers are mutually incompatible with themselves...and it seems to enjoy that. Some suspect it of having deeper motives, because nothing can be *truly* that random. Its followers are generally lone actors, but many of them are powerful, including the entities known as rasksha, the cat demons.
+
+## Gods and Worship
+The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
+
+The Third Wish changed that. It allowed mortals to transcend death and, via the worship of others, ascend to immortality in the Astral by replacing their mortal soul (their spark) with a fragment of the True Name of that plane. But more than that, it allowed those mortals, now gods, to gain power from the Great Mechanism in proportion to their worship base and to claim dominion over various domains of mortal existence. These were the Old Gods. And this mechanism brought much violence. Worship brings power both to the worshipped and the worshiper, and network effects apply. An upstart could supplant the existing deities by subverting their worship and stealing their worshippers.
+
+At the Cataclysm, this changed again. The Great Mechanism, seeing that it needed all of its resources to prevent the elemental planes from catastrophically destabilizing, took back the power it had granted the Old Gods. This killed the vast majority of them, with those that survived becoming depowered and being reduced to mere Ascendants, on par with a powerful devil. For 50 years, there were no gods. Prayers went unanswered, clerics had no power. Only one entity retained power, but it was absorbed (willingly) by the Mechanism, becoming an actual interface for that entity. One that, of course, still did not answer mortal prayers.
+
+At the end of this period, the Great Mechanism through its Voice chose 16 new souls from fallen mortals and elemental lords to become the new Congregation of True Gods. Unlike the Old Gods, the new gods have restrictions on how they can interact with mortals. These restrictions focus on preserving free will. The gods can still have schemes and machinations, but they cannot directly intervene except through free-willed agents and only in response to faithful prayer. In return, they are no longer dependent on mortal worship for their existence. They draw directly on the Great Mechanism, but must respond to *all* faithful prayers regarding to their domains, not discriminating on mode of worship.
+
+At the same time, the old methods of empowering Ascendants via worship still work, but the results are weaker. Many people disdain worshiping the Congregation, seeing them as disinterested and remote or simply not worth worshiping. Of these, many turn to worshiping more local "deities". A few of the elemental lords are worshipped, but most Ascendants are former mortals. Most notable in Noefra are Nocthis of Byssia and the Queen Ascendant (who shed her mortal name), worshiped in the Jungle of Fangs. These Ascendants rely on their worship, but can only intervene using their own power and can only be in one place at a time. More crucially, they are shaped by their worship as well. A schism in an Ascendant's church can, if it gains enough strength, alter the very nature of the being being worshipped against the Power's own will. Additionally, if an Ascendant grants power, they cannot take it back (unlike the relationship between a cleric and their deity). This constrains their actions and makes them pay much more attention to their churches, resulting in regional appeal.
+
+Most people who worship the gods focus on a smaller subset for most of their devotion, often changing throughout their lives. Others are worshipped or propitiated where appropriate for their domains. Some areas focus much more heavily on a subset (such as Auringon's depiction of Aerielara and Roel Kor as wife and husband), but it's rare for people to think monotheistically or for society to focus on a single god and neglect the others. By comparison, Ascendant worship is almost always at least henotheistic (focusing entirely on one Ascendant while accepting that other people can worship the other beings). True monotheism is almost unheard of and most consider it heretical.
+
+\page
+### The Afterlife
+Unlike many other D&D settings, Dawn of Hope does not have an eternal afterlife. For the vast majority of souls, there's about 100 years of life after death before the soul departs for shores unknown. Nor are the gods directly involved in judgement or managing souls.
+
+Living mortal creatures are triparte: a Spark (or soul), an immaterial, difuse nimbus (or spirit) that mediates between the soul and the body or the ambient aether, and a physical body. Souls naturally emit aether, which forms into this nimbus. When a mortal (ensouled) being dies, the spark, wrapped in the nimbus, lingers near the body for about a minute, after which it begins to pass through the veil into Shadow. Souls that have too-strong ties to the mortal may linger for a bit longer, but it's rare for them to get trapped. The cats who serve as psychopomps see to that, herding lost souls to their next phase of existence.
+
+Once in Shadow, the soul quickly drifts to the layer that matches its affinity; primal-attuned souls and those seeking rest find themselves in Beastholme, while those with divine attunement or those with more manic tendencies find themselves in Mirrorhaven. Many, especially those who were diligent about worshiping a Power, find their way to a haven, an enclave maintained by that Power and its agents. Those who did not worship or who had mixed allegiance wander, often finding some way to settle down on their own. In Shadow, the soul and nimbus accrete a body of shadow aether, more psychoactive but also more fragile than condensed matter.
+
+Happy path, the souls of the deceased live for about another hundred years, reliving their mortal life with more or less fidelity. Some get to experience the heights they did not have while living, while others seek quiet solitude. Sad path, they wander into the realms of aether-hungry predators (whether the natives of the plane or other formerly-mortal spirits) who shred their shadow bodies and rip the nimbus off of the soul, ending its second life. Or worse, they wander into the Waste and fall prey to demons who devour the entire being, shadow body, spirit, and soul alike. For those there is no return.
+
+Those that survive the hazards eventually weary of their burdens, of their past and memories. Some have fulfilled all that they meant to do; others simply cannot bear it any longer. The spark sheds its shadow body and its nimbus and, like a star, blaze in glory as they arc towards the Garden of the Watcher and the Gate of Eternity that lies at its heart. Those whose nimbus was consumed, likewise, tread this path. Once there, they pass through the Gate and disappear. None have returned to tell what lies on the other side; some say that sparks are reborn, others say that they pass through to join the Dreamer's eternal fire.
+
+All of this also means that bodies, nimbuses, and souls can be transformed into magical fuel. Blood magic is exactly this [_and is generally considered a bad idea -IB_]; use a ritual to funnel the energy released when a soul separates into a spell. Willing sacrifice is even more potent, as you unlock more energy. And there are dark rumors of mechanisms used to convert the entire triparte soul into energy...with the soul left screaming and aware in some horrific sense.
+
+{{note
+#### Souls and PCs
+[*What's a PC? --IB*]
+
+The triparte soul is actually a core link to standard D&D mechanics. Stored in the nimbus of every individual (PC or not) is a certain amount of aether, a healing reserve if you will. Because everything is aether, the soul can expend that energy to repair body functions and even gear that it considers part of itself. Magical healing replenishes this reserve. But for most people, this pool is very small; a single good blow will exhaust it. Stronger creatures (including PCs) have stronger souls with correspondingly deeper reserves. And generally larger creatures have bigger reserves than smaller ones. Given a good night's rest, this reserve will entirely refill as the body processes food and ambient aether. In a word, this is your Hit Points.
+
+When your ready reserves are half depleted, most souls start being more wary about repairing injuries, focusing on repairing internal injuries that might impair functionality. Cosmetic tears, bruises, and cuts remain. At this point, you're *bloodied.* When completely expended or if the reserve is insufficient to repair damage, emergency measures kick in. Normal functions shut down and the triparte soul goes to heroic lengths, even canibalizing itself, to get enough energy to function. Aka Death Saves. Magical healing at this point *locks in* whatever damage was done; functionality is restored, but if your arm was broken and not set, it will heal out of place.
+
+For NPCs, being brought to 0 HP and then magically healed means they have a permanent injury. PCs don't conventionally use permanent injuries for entirely gameplay reasons--I don't like permanent injuries and neither do my players. But this is a great place to include them if you do like such things.
+
+}}
+
+\page
+### The Congregation
+The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC an, reduced to the stature of an Ascendant, ended up dying at adventurer hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation backing off a bit.
+
+#### Aerielara, Jeweled Lady
+- Domain: Arts, beauty, music, sensuality, hedonism. **Trickery, Life**
+- Symbol: A stylized harp
+- Most worshiped by: gwerin, Auringon, artists, bards, prostitutes
+
+Aerielara presents herself as a vain, extremely beautiful gwerin woman, dressed in veils. She is much more intelligent than she appears. Her clergy are often young and beautiful (or extremely skilled artists) and bear protection against "complications" from their amorous exploits, which are legion.
+
+#### Hollow King, the Executioner
+- Domain: Untimely death, murder, order at any cost. Assassins. **Death, Trickery**
+- Symbol: Crossed daggers, points down.
+- Most worshiped by: assassins, those seeking justice denied by the local law. Usually propitiated, not worshipped.
+
+Dour and secretive, the Hollow King hides his face. His role is to do what the mortal law cannot. He abhors those that disrupt society, but also abhors those who take too much advantage of their social status and comit atrocities. Especially, he targets those who serve Lloitira.
+
+#### Kela Loran, Lady Luck
+- Domain: Commerce, Wealth, Gambling, Luck. **Knowledge, Trickery**
+- Symbol: A stack of coins.
+- Most worshipped by: merchants, gamblers, mercenaries. Popular in Rauviz and Asai'ka.
+
+Presenting as a ruddy-cheeked halfling woman of indeterminate age, Kela Loran is unambiguously mercenary and fickle. Cheating at dice and cards is a form of worship she favors. Business ethics she considers to be a drag on productivity. 
+
+#### Korokonolkom (Koro), The King Below/Lord of Silent Mountains
+- Domain: Earth, mountains, endurance. Patron of the dwarves. **Knowledge, War**
+- Symbol: Three stylized mountains
+- Most worshiped by: Uulani dwarves. Is also the Elemental Lord of Stone.
+
+The Silent Lord is called that for a reason. He rarely answers prayers. Which the dwarves who worship him find just perfect. They write their prayers on slate tablets which are dropped into blind holes into the mountains, never to be seen. But if you can rouse his anger...beware. He is depicted as a male titan, naked (although sometimes covered by a loincloth), with skin covered in runic writing.
+
+#### Lae Loara, The Huntress
+- Domain: Wilderness, travelers, nature red in fang and claw, the hunt. **Nature, Trickery**
+- Symbol: A stylized tree
+- Most worshiped by: Kotimaan and Fiach orcs and ihmisi. Propitiated by hunters and travelers.
+
+Lae Loara was raised by wild animals while a mortal, and she still doesn't do well with "civilization." Don't mistake her for a tree-hugger, though. She understands the full cycle of eat or be eaten. She rarely answers prayers in any discernable fashion, but her favored find prey more easily and avoid traps.
+
+#### Lon-Ka, the Hammerer
+- Domain: the forge, technology, and experimentation. Patron of smiths, engineers, and researchers. **Knowledge, Forge**
+- Symbol: A stylized hammer.
+- Most worshiped by: engineers, smiths, Shinevogari, the industrial parts of Wyrmhold.
+
+Lon-ka, presenting as a traditional dwarf, is a direct, stubborn being who supports the spreading of knowledge. Discovery isn't enough, knowledge should be shared. Even if that has consequences. Has no tact.
+
+#### Melara, Lady of Mercy
+- Domain: Timely death, endings, winter, memory, healing. **Grave, Life**
+- Symbol: A snowflake
+- Most worshiped by: very widespread. As one of the Seasonal Four, she is probably second only to her son-in-law Tor Elan for widespread worship.
+
+Mother to Sakara, mother in law to Tor Elan, and wife to the not-missed Loran Hae, Melara is the grandmother figure of the gods. Quiet, reserved, and believing strongly in order and justice, she presents as a dark-haired human woman of late-middle age. She *despises* necromancy and the undead, and her clergy maintain militant orders that travel from grave to grave to ensure they do not rise. Her clergy are also healers, because unlike the Hollow King, she only accepts death that comes in its true season. She is a major figure in the shadow enclaves, welcoming nearly anyone who wishes to quietly shed the burdens gathered in life before passing through the Gate.
+\page
+#### Peor Fala, Hearth-keeper
+- Domain: Domesticity, the home, the hearth, motherhood. **Life, Light**
+- Symbol: A stylized flame
+- Most worshiped by: mothers, peasants. Very commonly worshiped by halflings, but her worship is widespread among the lower classes.
+
+Peor Fala is a peacemaker among the gods. She dislikes violence, but can be fiercely protective and is by reputation the most scary when pushed too far. Her clergy are almost always mothers to many children (birthed or adopted) and tend not to travel very far.
+
+#### Pinwheel, the Fox.
+- Domain: Deception, trickery, practical jokes, disruption of order. **Trickery, War**
+- Symbol: A domino mask
+- Most worshiped by: Carnival folks, jesters. No real organized worship in most places.
+
+Counterpart to the Hollow King, Pinwheel dislikes stuffy, self-important people. He actively seeks to shove the shakey parts of society, puncturing over-inflated egos. If it collapses as a result, it wasn't going to last anyway. This makes him somewhat unpopular in more tight-laced areas. He never appears the same way twice.
+
+#### Roel Kor, the Red Knight
+- Domain: Nobility, tyranny, control, power. **War, Order**
+- Symbol: A red castle wall.
+- Most worshiped by: Auringon, Wyrmhold, nobles and other important folks. Or those that wish to become important.
+
+Appearing as a gwerin male in full armor and a greatsword, he belives that order must be maintained by careful hierarchy. The strong protect the weak, and the weak should obey the strong. No sense of humor and a micromanager. Dislikes Pinwheel *immensely*. Pinwheel loves to torment him.
+
+#### Sarapha, Festival Keeper/Brewmistress
+- Domain: Harvest, agriculture, night, autumn. **Life, Nature**
+- Symbol: sheafs of grain
+- Most worshiped by: Sea of Grass and Southshore. One of the Seasonal Four, worshiped as such in many areas.
+
+The newest of the Congregation, Sarapha replaced the former god of harvest and autumn, the unpleasant schemer Loran Hae, in 250 AC. Her personality is bubbly and generous. She especially prizes brewing and festivals. She presents as a well-endowed human woman, usually bearing large beer steins. If she has plots and schemes, she's very quiet about them.
+
+#### Tor Elan, Sun-lord
+- Domain: The sun, summer, honorable warfare, rewards of dutiful work. **Light, War**
+- Symbol: The sun on a shield.
+- Most worshiped by: Young men everywhere, warriors, farmers. As one of the Seasonal Four, he's probably the most widely worshiped.
+
+Appearing as a middle-aged human male in full armor with a mace and shield, he is the husband to Sakara and son-in-law to Melara. Widely regarded as being utterly incapable of understanding jokes. His clergy are almost always militant, usually engaging in teaching the common folk to defend themselves. A major religion devoted more henotheistically to him than usual is the Breath of the Sun, headquartered in Wyrmhold.
+
+#### Sakara, Lady of the Dawn and Cute Things
+- Domain: Growth, beginnings, spring. Anything cute. Romantic love. Fertility. **Life, Nature**
+- Symbol: A stylized flower or butterfly
+- Most worshiped by: young women everywhere, halflings. As one of the Seasonal Four, she's widely worshiped.
+
+Sakara is Tor Elan's wife, and very unlike him. She presents as a barely-adult woman, bubbly and not too bright. She loves bright colors, cute bunnies (or other things, including young beasts you shouldn't cuddle). Her catch phrase might as well be "if not friend, then why friend shaped?" She doesn't have enemies.
+
+#### Selesurala, Mistress of Storms
+- Domain: The pitiless ocean, storms, killing frosts, and natural disasters. **Nature, Tempest**
+- Symbol: A lightning bolt
+- Most worshiped by: propitiated by sailors. Rarely worshiped. Feared instead.
+
+Once the Elemental Lord of water, Selesurala is a titanic wyrm who ascended to elemental status during the First Age (about when Koro did). She cares little for mortals. Only the strong survive. Her clergy (who are few and far between) act as heralds of oncoming disasters, warning people to prepare.
+\page
+#### Yogg-Maggus, Lord of Magic
+- Domain: Arcana, knowledge, magic, keeping secrets. **Arcana, Knowledge**
+- Symbol: Two nested spirals
+- Most worshiped by: mages, researchers.
+
+Yogg-Maggus was chosen to prevent future Cataclysms, and he takes that job seriously. He believes that power should be hidden from those that cannot use it properly. He was responsible for re-writing the laws of magic so that many of the extremes of the earlier ages could not be replicated in the post-Cataclysm era. He presents as a human with four long braids in his beard, usually hooded. In actuality, he was a mkhulu (mind flayer) before his ascension. He rarely calls clergy, but does make warlock pacts quite frequently.
+
+### Other Ascendants
+There are many ascendants worshiped across Noefra and Quartus at large. Two main ones worshiped in western Noefra are Nocthis and the Queen Ascendant.
+
+#### Nocthis, Lady of Lunar Mystery
+Nocthis is the patron of the Byssian people from back during the 3rd age when they gained independence on the Nocthian Caldera, and is the one for whom that Caldera was named. A mage of massive power, she gained divinity alongside her then husband and took on aspects of Night, Moon, and Mystery. She taught her people to live apart from others, traveling out to seek out magical artifacts and and power sources and sequestering them for safety. Her religion strongly valued women over men, relegating the latter to lower roles in society. This lasted until the Cataclysm. Seeing the war coming, she sought refuge in a ritual to become mortal temporarily. This succeeded partially, locking her out of her divine power but keeping her alive through the depowering of the rest of the Old Gods. After her re-ascension (this time merely as an Ascendant Power), she has mellowed on both the misandry and the isolationism.
+
+Her religion, the Church of Night Reborn, still engages in keeping secrets, with an outer, public hierarchy and a real inner, secret, higher hierarchy. Only women can be priestesses of the inner circle, but men can participate in most other parts of life as equals. She does not restrict her church to the night's children of Byssia, but does not encourage proselytes. As a result, she's worshiped almost exclusively in Byssia and the Caldera.
+
+#### The Queen Ascendant
+When the gwerin masters of the Fanged Kingdom vanished about 500 years before the Cataclysm, they left behind an "eternal queen" on the throne of the Great Temple at Ar Salem Dolem. This gwerin woman, daughter of the high Fanged Lord, served as the focal point for the blood sacrifices of the bloodthirsty, demon-tainted religion they left behind. 700 years later, the Catalysts discovered that she was trapped in this role against her will, acting as a living conduit and filter for souls in a demonic bargain the old masters had made to ascend as gods (which ended up failing mostly, but that's a different story). They broke the spells binding her and killed the old priests who were complicit in the bloodshed, freeing her.
+
+Her soul nearly exhausted from the black magic, she harnessed the faith of her entire nation to ascend, giving up her mortal identity in the process. Now she is the Queen Ascendant, undisputed goddess-queen of the Jungle of Fangs. Her church, the Church of the Queen Ascendant, retains massive political and persuasive power across the Jungle. Highly bureaucratic with much infighting, it has agents everywhere and counterbalances the nobles...when it's not colluding with them.
+
+{{note
+#### Mapping lineages to D&D races
+Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or species (since the lineages can interbreed [_something Bard found out the hard way a few times -ed_] [_it was quite enjoyable, really, other than the parental support -IB_] [_which you mostly ran away from! -ed_]). They're covered in detail in the Peoples of Dawn of Hope document; this is a cheat-sheet to map their Quartan names to "normal" 2014 D&D terms. 
+
+Dawn of Hope | Standard D&D |
+:----|----:
+**Playable** | -----
+dragonborn   | dragonborn 
+tumnii/dwarf | dwarf      
+gwerin       | high elf 
+halfling     | halfling
+human        | human
+ihmisi       | wood elf
+jazuu        | goliath
+ophidian     | yuan-ti pureblood
+orc          | orc
+soulforged   | warforged
+light-touched| aasimar
+fiend-touched| tiefling
+element-born | genasi
+**Non-playable** | -----
+goblin| goblin/hobgoblin &dagger;
+ika-ika| kuo-toa
+mkhulu| mind flayer
+kalasaa | triton
+
+&dagger; The goblin lineage is a complex one, with a tribally-shared memory/thinking space. Not a hive mind, but more like one person bleeding into another within the tribe. This makes them *genetically* ADHD. As well as literally smarter together than apart. They naturally pour some of their shared energy into a few individuals, transforming them into larger "hobgoblins" that are less prone to the tide-like enthusiasms because they have more distance from the shared memory space.
+}}
+
+
+
+
+\page
 {{wide
 ## Noefra
 ![Noefran Geography](https://admiralbenbo-foundry.s3.amazonaws.com/wiki/c/c2/Noefra-260-geographic.webp) {width:100%}
@@ -142,13 +335,13 @@ Noefra is the original home of both humanity and the orcs, as well as the site o
 The East contains the ancient Jinse empire, now reduced to a smaller, decadent fiend-led state centered on the Golden City. To the south of Jinse is the Dragonreach, given to the flights of dragonkind by treaty and inhabited only by those willing to serve their flying masters...many of whom prefer to ignore the scurrying mortals unless they can provide them with the items that they hoard. 
 
 To the north-west lies the overgrown, malevolent Hagfen and the Mother Tree, surrounded on two sides by forbidding mountains and bottled in by the necromantic energies of Ocieli on the south-west and the isolationist elves of Nirda on the north east.
-\page
+
 On the islands east and north of Jinse are the pirate nations of Abantu, and far to the north east lies the oldest city in the world, Tal Elamor, home to the Eternal Library, a city-sized building of its own said to have existed since the earliest days of creation and said to contain all the books that have ever been written. East of Jinse lies Zhanryu Island, prison to titanic monsters since the days of the titans.
 
 The West is more fragmented and divided into several regions. From the Westward Ocean working east, we find the Drowned, Lost, and Frozen Coasts (southernmost to northernmost), inhabited by peoples such as the mkhulu-enslaved militant tyranny of Tlalocana on the Drowned Coast, the literally-storybook Auringon to the north on the Lost Coast, and the violently xenophobic vulkite city-state of Khaimal at the northern edge. 
 
 East of there, north of the Gap-Tooth Bay, lies Byssia (home of druidic and elemental culture) and the Nocthian Caldera (an extinct mega-volcano caldera whose floor lies nearly 8000 ft above sea level with a diameter of 400 miles). North of the Caldera is the badlands left behind when a 90-year glacier receeded from the Caldera over the course of a summer (magic was involved). South east of Byssia lies the goblin dominated Windwalker lands; south of that lies the largely unexplored forests of the Bloodthirst Wildlands, heavy with fey, goblins, and twisted creatures of all sorts. North of the goblins is the western plains, called Lupaus, home to the gwerin, human, and dwarven Crisial Kingdom and the dragonborn, goblin, and orc industrial powerhouse of Wyrmhold (the latter of which also contests the Caldera with Byssia). To the north of the plain is the Fiach Wood, home to most of the remaining "uncivilized" (although that's a calumny) orcish tribes of the west. 
-
+\page
 Dominating the center of the western half of Noefra is Lake Coy'in, called Rabbit Lake due to its shape. This huge freshwater sea spans 400 miles north to south and about 300 east to west, somehow remaining fresh despite not having an outlet. Some claim there's a portal to Ocean at the bottom. It's said that this lake formed when the capital of Tibor Imperia was removed from existence at the start of the War of Souls about 900 years ago, and grew during the Cataclysm. Crisial City, shining hope of nations, lies in the plains of Southshore on its south bank while the ihmisi-dominated forests of Kotimaa grow to its north.
 
 East of the lake is the Sea of Grass, hundreds of miles of rolling grasslands occupied by humans and halflings primarily. They are bounded to the north by the Dreamshore Range, low rolling mountains that keep the shallow Sea of Dreams (which swallowed the ancient Flower Kingdom) from cascading over the landscape. To the south is Mt Refuge, beneath whose slopes the City of the Dragon, Kaelthia lies. Oldest human city in the central region, founded by refugees from the Cataclysm War 250 years ago. From here the survivors spread out, founding most of the other cities in the region. It has since become a theocratic, isolationist city-state. To the east lies the Outer Barrier Range and the western Giant's Spine, both inhabited by clans of dwarves and jazuu (towering giant-kin often called goliaths).
@@ -158,13 +351,14 @@ South of Kaelthia lies the Jungle of Fangs, a jungle valley once dominated by a 
 To the east, across the West Moon Sea, lies the black-glass-surfaced, arcane-magic wasteland known as Moon's Vengeance. Once home to the aelven empire's capital, it was the target of the first druids who convinced the third moon to fall on it. Now inhabited only by ghosts, arcane workings, and the underground-dwelling remnants of the goroesi (often called dark elves) who escaped Moon's Fall by cutting themselves off from time and space for a time.
 
 Far to the north of Kotimaa lies the volcanic Isle of Fire, of which not much is known.
-
+\column
 ## A Short History of Western Noefra
+[_Finally, we get to talk about me -IB_ _Do we have to? -ed_]
 ### Prehistory: The Dawn War
 It's said that the Dreamer called the world into existence an uncountable time before time began. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
-\page
-And then Change rebelled. Sought mastery over the others (or so the tale runs). Split creation into camps that warred. The eight against the one. At the end, something tore the Oblivion Gate open, and the Dreamer chose to enact the first and greatest sacrifice in its own being. It tore itself apart and with it the Names of its children the Primordials, creating the planes from their essence. The lesser creations were scattered across the planes, with many of them becoming mortal, touched by the fires of the Dreamer's essence. Mortality is not a curse, it is a gift. The blood and nerves of the Dreamer became the Great Mechanism, tasked with keeping all in order throughout the planes. Its skin became the Crystal Sphere that wards out the denizens of the Great Dark Beyond. This all happened about 25,000 years before the present day.
 
+And then Change rebelled. Sought mastery over the others (or so the tale runs). Split creation into camps that warred. The eight against the one. At the end, something tore the Oblivion Gate open, and the Dreamer chose to enact the first and greatest sacrifice in its own being. It tore itself apart and with it the Names of its children the Primordials, creating the planes from their essence. The lesser creations were scattered across the planes, with many of them becoming mortal, touched by the fires of the Dreamer's essence. Mortality is not a curse, it is a gift. The blood and nerves of the Dreamer became the Great Mechanism, tasked with keeping all in order throughout the planes. Its skin became the Crystal Sphere that wards out the denizens of the Great Dark Beyond. This all happened about 25,000 years before the present day.
+\page
 ### The First Age (ending ca 10k YBP)
 
 The Mortal plane, for the first fifteen thousand years, was dominated by the wars between the (now mortal) Titans and Wyrm. Without their primordials, their natures (one to order and structure and the other to break down and destroy) clashed. The lesser races (at this point only some of the lightborn who chose to become mortal and the forcibly devolved proteans) hid in fear, served the tyrant races, or died.
@@ -182,12 +376,12 @@ In the chaos, remnants of the aelvar seized the same artifacts used to split the
 The period after Moon's Fall saw war between the primalist and arcane forces. The primalist ihmisi created orcs out of the proteans (now called goblins), mixing in animal elements via magic to stabilize them and make them suitable proxy warriors against the arcane-loving aelves (now called gwerin or high elves). In return, the gwerin created the first humans out of goblins by blending in some of their own elements (hence humans can interbreed with both elves and orcs, as they're cousins of sorts). Both of these two races, much faster breeding than the long-lived aelves, decided *not* to fight as commanded. Instead, society fractured into tribes who warred among themselves.
 
 This lasted until one orc, his tribe enslaved and slaughtered and he himselve forced into being a host to a jotnar demon-seed, rebelled against *everyone*. He and his shamanic sister gathered the dissident, outcast, and warlike groups of all races, but especially orcs and goblins, into a host that spread across central Noefra, enslaving or killing all in its path. The "civilized" folks, seeing themselves pressed hard, banded together to fight back. This was the War of Blood. In the final days, seeing the end of their people in sight, the First Heros (a mixed-race band of civilized folks) sought out the Cosmic Forge and enacted the Third Wish: "Through Faith, Power." Some of them ascended to become the first gods; the remainder their first priests and clerics. 
-\page
+
 With this power, the remaining Heroes made their way through stealth into Gor'osh (for that was the orc warrior's name)'s citadel to confront him. They only found his sister and the children of his immediate allies, whom they viciously and brutally slaughtered. When Gor'osh discovered this, he gave fully in to the demon, becoming the Demon Prince of Rage and Bloodshed and the first werewolf. Only one Hero survived his revenge strike, managing in the end to banish him to the Abyss. Which ended the War of Blood and cursed the orcs for generations with an unmangeable bloodlust.
 
 ### The Third Age (ending 600 BC)
 The survivors of the War of Blood, mostly humans, with dwarves and elves (of both kinds) much reduced in power, took to the new divine magic with gusto. Much religious war followed. The "evil" races (goblins and orcs) were hunted to the marginal places of the continent, including the great waste that once was the home of Gor'osh and his empire (now the Great Eastern Dustlands). Two great empires arose; Jinse in the east and Tibor Imperia in the west. Between them, they had peace (mostly) for close to 1500 years.
-
+\page
 This ended (in the west) when mages, envious of the efforts of the Second Age, developed blood-magic-driven magical arts to embed fragments of dragon souls (taken from captive dragons) into the unborn children of unwilling mothers in an effort to create (as you might have guessed), a viable soldier race. The result were the dragonborn. When they showed off this effort to the emperor and senate of Tibor Imperia, some of the imperial folks took exception to this evil. They sacrificed themselves in a ritual to erase the capital (including the senate and emperor) from the face of Quartus and from space and time itself. This touched off the War of Souls, a magical civil war that bent space and time and lasted for several hundred years (in fits and starts).
 
 Out of this war arose the halfling race, goblins altered permanently by the magical energies. The dragonborn were granted space to dwell safely at the edge of the Nocthian Caldera, where they still dwell to this day.
@@ -197,22 +391,23 @@ As the exhausted remnants picked back up civilization, they signed a binding tre
 
 And then, roughly 600 years after the end of the War of Souls, the hubris of a mage led to the release of the Nameless and his allies from the Abyss. Demons flooded Noefra and quickly enlisted (both by force and by seduction) the marginalized orcs and goblins. This Army of Chaos swept across the land, utterly destroying many of the nations. The forces of Order gathered for a final battle west of what is now Lake Coy'in, in the shade of a tree of primal power. Despite the help of angels and devils both, the battle was going poorly.
 
-Until, far to the south in the center of the Bloodthirst, a party of adventurers found an ancient artifact and tried to use it themselves. Badly. The resulting aetheric shock misaligned the elemental planes and drew out all the ambient aether across the world, causing all magic to cease for a time. The Great Mechanism was forced to absorb the power of all the gods to balance the universe again. And the remaining whisps of the Primordials saw their chance. They sacrificed what remained of themselves to end the Dawn War, returning the Name of Change to the Nameless and accepting it, now emblemic of Free Will, into the universe itself.
+Until, far to the south in the center of the Bloodthirst, a party of adventurers found an ancient artifact and tried to use it themselves. Badly. The resulting aetheric shock misaligned the elemental planes and drew out all the ambient aether across the world, causing all magic to cease for a time. The Great Mechanism was forced to absorb the power of all the gods to balance the universe again. And the remaining whisps of the Primordials saw their chance. They sacrificed what remained of themselves to end the Dawn War, returning the Name of Change to the Nameless and accepting it, now emblematic of Free Will, into the universe itself.
 
 The consequences of this event (both the war and the aetheric shock) were enormous. Arcane and primal magic ceased to work properly for 50 years, with any form of magic requiring the death of the caster. The gods were dead, and thus not granting divine power. The land itself was broken, with new mountains forming and whole areas falling into the sea. Roughly 70% of the continent's population and 50% of the world's population perished either of the natural disasters or the ensuing chaos and famine. This event is marked in Noefra as the new start of their calendar epoch; dividing history into BC (Before the Cataclysm) and AC (After the Cataclysm).
+
+Yours truly was there at the Cataclysm's last battle, along with my lovely editor (who was transformed during that event as a gift of the old gods, just like my immortality [_agelessness! -ed_] and a number of boon companions). We led the survivors south, to found Kaelthia.
 
 For 200 years, the survivors of the various nations of Western Noefra, scattered across the landscape, huddled in their small areas and believed themselves to be the last survivors. At the end of this, the Nocthians (dwellers on the Caldera) retreated to the south and became the Byssians of today and the dragonborn were driven east by the forces of elemental Ice, which invaded and locked the caldera under eternal winter for 90 years.
 
 ### The Fourth Age.
 As the people recovered and multiplied, the Kaelthian survivors started expanding out of their mountain fortress, settling the Sea of Grass and Dreamshore. They still built walls around their settlements, becoming known as the Wall Builders. In 205 AC, a group of adventurers known as the Catalysts struck out into the wilds and discovered the other remaining nations (Byssia, Wyrmhold, and the Stone Throne). After facing many dangers, they brought the nations together and formed the Federated Nations Council, an international trade and discussion organization that prevented war for the next 40 years. The armies of Ice were driven back and their leader was eventually destroyed. The portal network, created by the aelvar of the Second Age, was re-opened, allowing fast travel between many points within the nations and even down to Soefra and eastern Noefra.
-\page
-This peace was not to last, with the Kaelthian Council falling into civil unrest and breaking up into smaller nations in 230 AC. Open war was averted, however, and the successor states mostly muddled along for 24 more years. This era was a time of discovery, exploration, and adventurers. 
 
+This peace was not to last, with the Kaelthian Council falling into civil unrest and breaking up into smaller nations in 230 AC [_which hurt -ed_] [_literally, since you were nearly assassinated as part of it -IB_]. Open war was averted, however, and the successor states mostly muddled along for 24 more years. This era was a time of discovery, exploration, and adventurers. 
+\page
 253 AC saw the Red Plague, a binary fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, both the former God of Autumn (since deposed for too-aggressive meddling) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
 
 The date is now 260 AC, and now is the Time of Troubles. Adventurers have never been more needed.
 
-\page
 {{wide
 ## Nations of Western Noefra, ca 260 AC.
 <img src="https://admiralbenbo-foundry.s3.amazonaws.com/wiki/a/a2/Noefra-260AC-political.webp" style="width:100%;">
@@ -230,13 +425,13 @@ The date is now 260 AC, and now is the Time of Troubles. Adventurers have never 
 - Religion: Worships Aerielara and Roel Kor henotheistically, but accepts the other Congregants.
 
 This nation dates back to just after the Cataclysm, when a band of ihmisi were desperately looking for shelter from the chaos. They found a magical library containing a book of stories. This book promised them security...if they dedicated themselves to living out the stories. Later, human refugees were incorporated into the story. In 212 AC, this story was completed and the people freed from the endless repetition and enforced narrative roles. Since then, they've focused on finding their way.
-
+\page
 To outsiders, Auringon looks like a stereotypical fantasy storybook kingdom. Everything is clean and neat, everyone knows their part. And it honestly tries. Internal divisions, threats from the expansionist tribes to the north and the brainwashed legions of Tlalocana to the south, and finding their way in a changed world after centuries of no change; all these are the threats faced by Auringon and its citizens.
 
 Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a King to whom they all pay homage. As of 260 AC, the beloved Aurel III has just died and the new king, his grandson Alan Aurelian is inexperience. Thankfully he is supported by his step grandmother, the beautiful and vapid-appearing (but secretly extremely intelligent) Dowager Princess Tatya, who is Alan's age, despite having married his much older grandfather. As I said, storybook.
 
 Several major adventurers have settled in the south near the border. Wan Tian Kuo married into the royal family (marrying the king's younger daughter Yelena, much to everyone's surprise especially both of theirs. Blame the gods.) and has settled (sort of) nearby to the druid grove and school founded by Pyrrha and Eskel Kelshanne. Auringon has good relationships with Byssia and very little contact with anyone else.
-\page
+
 ### Byssia
 - Population: Roughly 150,000 night's children humans, ihmisi, and half-elves (approximately an even split)
 - Major Cities: Byss (&approx;22,000), Delphni (&approx;20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
@@ -259,12 +454,12 @@ Byssia is decentralized politically, with towns and villages holding most of the
 - Magics: An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
 - Religion: Pluralistic. Worship who, where, and what you want. As long as it's not demons.
 
-Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
+Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts (the otherworldly Vassarian, the calculating and political Paresten, the quiet anchor Kalesin, and the tree-friend Safrir) in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
 
 Governmentally, it is a more classical feudal nation, although with strong traditions of yeomanry and independence. Each of the major cities and their surroundings is governed by a Duke, and the Queen and her court handles the capital and the surroundings and mediates between Dukes. She acts more like a head of state in a confederation than an autocrat. Other major political forces are the various temples (it is a devout but multi-creedal nation) and the High Houses of the gwerin, which have aristocratic status. 
-
-One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
 \page
+One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
+
 ### Serpent Dominion
 - Population: Roughly 200,000 fang-kin humans, half-elves, and ophidians. A few dwarven clans.
 - Major Cities: Kel'al'ar (&approx;30,000), Asai'ka (&approx;20,000 but sized for more due to catastrophes)
@@ -300,9 +495,9 @@ The SAZ is only lightly settled, with only two large settlements: Sha'slar itsel
 - Religion: Minor, mostly focusing on Yogg-maggus and Lon Ka. But tolerant of any.
 
 Shinevog is the polar opposite of the Uulan Confederacy, despite both being dwarves. Settled on an abandoned clanhold along the main route from the Sea of Grass into the Giant's Spine, it was founded as a creative, iconoclastic outlet for those dwarves and others who wished to be free of traditional restraints on research (especially arcane and technological). Ruled by Theobard III, it has become a small (occupying only one small valley) but powerful hub of technology and arcane science. Not as lawless as Zhapai Karmap, it still maintains codes of ethics and responsibility.
-
-The primary religion here is that of Lon Ka, Hammer-lord, patron of technology and innovation. Yogg Maggus, lord of arcane magic, is also heavily worshiped here.
 \page
+The primary religion here is that of Lon Ka, Hammer-lord, patron of technology and innovation. Yogg Maggus, lord of arcane magic, is also heavily worshiped here.
+
 ### Tlalocana
 - Population: Unknown, but likely 100+ thousand. Humans and mkhulu.
 - Major Cities: Tlalotecana (unknown), unknown others.
@@ -430,147 +625,3 @@ Of the nations of the Giant's Spine, ZK (as it's usually called), the Wild Hold,
 
 Not coincidentally, the only major international banking franchise, run by paranoid goblins with advanced magics, is headquartered here, and its founder is one of the ruling group.
 
-## Gods and Worship
-The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
-
-The Third Wish changed that. It allowed mortals to transcend death and, via the worship of others, ascend to immortality in the Astral by replacing their mortal soul (their spark) with a fragment of the True Name of that plane. But more than that, it allowed those mortals, now gods, to gain power from the Great Mechanism in proportion to their worship base and to claim dominion over various domains of mortal existence. These were the Old Gods. And this mechanism brought much violence. Worship brings power both to the worshipped and the worshiper, and network effects apply. An upstart could supplant the existing deities by subverting their worship and stealing their worshippers.
-
-At the Cataclysm, this changed again. The Great Mechanism, seeing that it needed all of its resources to prevent the elemental planes from catastrophically destabilizing, took back the power it had granted the Old Gods. This killed the vast majority of them, with those that survived becoming depowered and being reduced to mere Ascendants, on par with a powerful devil. For 50 years, there were no gods. Prayers went unanswered, clerics had no power. Only one entity retained power, but it was absorbed (willingly) by the Mechanism, becoming an actual interface for that entity. One that, of course, still did not answer mortal prayers.
-
-At the end of this period, the Great Mechanism through its Voice chose 16 new souls from fallen mortals and elemental lords to become the new Congregation of True Gods. Unlike the Old Gods, the new gods have restrictions on how they can interact with mortals. These restrictions focus on preserving free will. The gods can still have schemes and machinations, but they cannot directly intervene except through free-willed agents and only in response to faithful prayer. In return, they are no longer dependent on mortal worship for their existence. They draw directly on the Great Mechanism, but must respond to *all* faithful prayers regarding to their domains, not discriminating on mode of worship.
-
-At the same time, the old methods of empowering Ascendants via worship still work, but the results are weaker. Many people disdain worshiping the Congregation, seeing them as disinterested and remote or simply not worth worshiping. Of these, many turn to worshiping more local "deities". A few of the elemental lords are worshipped, but most Ascendants are former mortals. Most notable in Noefra are Nocthis of Byssia and the Queen Ascendant (who shed her mortal name), worshiped in the Jungle of Fangs. These Ascendants rely on their worship, but can only intervene using their own power and can only be in one place at a time. More crucially, they are shaped by their worship as well. A schism in an Ascendant's church can, if it gains enough strength, alter the very nature of the being being worshipped against the Power's own will. Additionally, if an Ascendant grants power, they cannot take it back (unlike the relationship between a cleric and their deity). This constrains their actions and makes them pay much more attention to their churches, resulting in regional appeal.
-\page
-Most people who worship the gods focus on a smaller subset for most of their devotion, often changing throughout their lives. Others are worshipped or propitiated where appropriate for their domains. Some areas focus much more heavily on a subset (such as Auringon's depiction of Aerielara and Roel Kor as wife and husband), but it's rare for people to think monotheistically or for society to focus on a single god and neglect the others. By comparison, Ascendant worship is almost always at least henotheistic (focusing entirely on one Ascendant while accepting that other people can worship the other beings). True monotheism is almost unheard of and most consider it heretical.
-
-### The Afterlife
-Unlike many other D&D settings, Dawn of Hope does not have an eternal afterlife. For the vast majority of souls, there's about 100 years of life after death before the soul departs for shores unknown. Nor are the gods directly involved in judgement or managing souls.
-
-Living mortal creatures are tri-part: a Spark (or soul), an immaterial, difuse nimbus (or spirit) that mediates between the soul and the body or the ambient aether, and a physical body. Souls naturally emit aether, which forms into this nimbus. When a mortal (ensouled) being dies, the spark, wrapped in the nimbus, lingers near the body for about a minute, after which it begins to pass through the veil into Shadow. Souls that have too-strong ties to the mortal may linger for a bit longer, but it's rare for them to get trapped. The cats who serve as psychopomps see to that, herding lost souls to their next phase of existence.
-
-Once in Shadow, the soul quickly drifts to the layer that matches its affinity; primal-attuned souls and those seeking rest find themselves in Beastholme, while those with divine attunement or those with more manic tendencies find themselves in Mirrorhaven. Many, especially those who were diligent about worshiping a Power, find their way to a haven, an enclave maintained by that Power and its agents. Those who did not worship or who had mixed allegiance wander, often finding some way to settle down on their own. In Shadow, the soul and nimbus accrete a body of shadow aether, more psychoactive but also more fragile than condensed matter.
-
-Happy path, the souls of the deceased live for about another hundred years, reliving their mortal life with more or less fidelity. Some get to experience the heights they did not have while living, while others seek quiet solitude. Sad path, they wander into the realms of aether-hungry predators (whether the natives of the plane or other formerly-mortal spirits) who shred their shadow bodies and rip the nimbus off of the soul, ending its second life. Or worse, they wander into the Waste and fall prey to demons who devour the entire being, shadow body, spirit, and soul alike. For those there is no return.
-
-Those that survive the hazards eventually weary of their burdens, of their past and memories. Some have fulfilled all that they meant to do; others simply cannot bear it any longer. The spark sheds its shadow body and its nimbus and, like a star, blaze in glory as they arc towards the Garden of the Watcher and the Gate of Eternity that lies at its heart. Those whose nimbus was consumed, likewise, tread this path. Once there, they pass through the Gate and disappear. None have returned to tell what lies on the other side; some say that sparks are reborn, others say that they pass through to join the Dreamer's eternal fire.
-
-### The Congregation
-The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC an, reduced to the stature of an Ascendant, ended up dying at adventurer hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation backing off a bit.
-
-#### Aerielara, Jeweled Lady
-- Domain: Arts, beauty, music, sensuality, hedonism. **Trickery, Life**
-- Symbol: A stylized harp
-- Most worshiped by: gwerin, Auringon, artists, bards, prostitutes
-
-Aerielara presents herself as a vain, extremely beautiful gwerin woman, dressed in veils. She is much more intelligent than she appears. Her clergy are often young and beautiful (or extremely skilled artists) and bear protection against "complications" from their amorous exploits, which are legion.
-
-#### Hollow King, the Executioner
-- Domain: Untimely death, murder, order at any cost. Assassins. **Death, Trickery**
-- Symbol: Crossed daggers, points down.
-- Most worshiped by: assassins, those seeking justice denied by the local law. Usually propitiated, not worshipped.
-
-Dour and secretive, the Hollow King hides his face. His role is to do what the mortal law cannot. He abhors those that disrupt society, but also abhors those who take too much advantage of their social status and comit atrocities. Especially, he targets those who serve Lloitira.
-\page
-#### Kela Loran, Lady Luck
-- Domain: Commerce, Wealth, Gambling, Luck. **Knowledge, Trickery**
-- Symbol: A stack of coins.
-- Most worshipped by: merchants, gamblers, mercenaries. Popular in Rauviz and Asai'ka.
-
-Presenting as a ruddy-cheeked halfling woman of indeterminate age, Kela Loran is unambiguously mercenary and fickle. Cheating at dice and cards is a form of worship she favors. Business ethics she considers to be a drag on productivity. 
-
-#### Korokonolkom (Koro), The King Below/Lord of Silent Mountains
-- Domain: Earth, mountains, endurance. Patron of the dwarves. **Knowledge, War**
-- Symbol: Three stylized mountains
-- Most worshiped by: Uulani dwarves. Is also the Elemental Lord of Stone.
-
-The Silent Lord is called that for a reason. He rarely answers prayers. Which the dwarves who worship him find just perfect. They write their prayers on slate tablets which are dropped into blind holes into the mountains, never to be seen. But if you can rouse his anger...beware. He is depicted as a male titan, naked (although sometimes covered by a loincloth), with skin covered in runic writing.
-
-#### Lae Loara, The Huntress
-- Domain: Wilderness, travelers, nature red in fang and claw, the hunt. **Nature, Trickery**
-- Symbol: A stylized tree
-- Most worshiped by: Kotimaan and Fiach orcs and ihmisi. Propitiated by hunters and travelers.
-
-Lae Loara was raised by wild animals while a mortal, and she still doesn't do well with "civilization." Don't mistake her for a tree-hugger, though. She understands the full cycle of eat or be eaten. She rarely answers prayers in any discernable fashion, but her favored find prey more easily and avoid traps.
-
-#### Lon-Ka, the Hammerer
-- Domain: the forge, technology, and experimentation. Patron of smiths, engineers, and researchers. **Knowledge, Forge**
-- Symbol: A stylized hammer.
-- Most worshiped by: engineers, smiths, Shinevogari, the industrial parts of Wyrmhold.
-
-Lon-ka, presenting as a traditional dwarf, is a direct, stubborn being who supports the spreading of knowledge. Discovery isn't enough, knowledge should be shared. Even if that has consequences. Has no tact.
-
-#### Melara, Lady of Mercy
-- Domain: Timely death, endings, winter, memory, healing. **Grave, Life**
-- Symbol: A snowflake
-- Most worshiped by: very widespread. As one of the Seasonal Four, she is probably second only to her son-in-law Tor Elan for widespread worship.
-
-Mother to Sakara, mother in law to Tor Elan, and wife to the not-missed Loran Hae, Melara is the grandmother figure of the gods. Quiet, reserved, and believing strongly in order and justice, she presents as a dark-haired human woman of late-middle age. She *despises* necromancy and the undead, and her clergy maintain militant orders that travel from grave to grave to ensure they do not rise. Her clergy are also healers, because unlike the Hollow King, she only accepts death that comes in its true season. She is a major figure in the shadow enclaves, welcoming nearly anyone who wishes to quietly shed the burdens gathered in life before passing through the Gate.
-
-#### Peor Fala, Hearth-keeper
-- Domain: Domesticity, the home, the hearth, motherhood. **Life, Light**
-- Symbol: A stylized flame
-- Most worshiped by: mothers, peasants. Very commonly worshiped by halflings, but her worship is widespread among the lower classes.
-
-Peor Fala is a peacemaker among the gods. She dislikes violence, but can be fiercely protective and is by reputation the most scary when pushed too far. Her clergy are almost always mothers to many children (birthed or adopted) and tend not to travel very far.
-
-#### Pinwheel, the Fox.
-- Domain: Deception, trickery, practical jokes, disruption of order. **Trickery, War**
-- Symbol: A domino mask
-- Most worshiped by: Carnival folks, jesters. No real organized worship in most places.
-
-Counterpart to the Hollow King, Pinwheel dislikes stuffy, self-important people. He actively seeks to shove the shakey parts of society, puncturing over-inflated egos. If it collapses as a result, it wasn't going to last anyway. This makes him somewhat unpopular in more tight-laced areas. He never appears the same way twice.
-
-#### Roel Kor, the Red Knight
-- Domain: Nobility, tyranny, control, power. **War, Order**
-- Symbol: A red castle wall.
-- Most worshiped by: Auringon, Wyrmhold, nobles and other important folks. Or those that wish to become important.
-
-Appearing as a gwerin male in full armor and a greatsword, he belives that order must be maintained by careful hierarchy. The strong protect the weak, and the weak should obey the strong. No sense of humor and a micromanager. Dislikes Pinwheel *immensely*. Pinwheel loves to torment him.
-\page
-#### Sarapha, Festival Keeper/Brewmistress
-- Domain: Harvest, agriculture, night, autumn. **Life, Nature**
-- Symbol: sheafs of grain
-- Most worshiped by: Sea of Grass and Southshore. One of the Seasonal Four, worshiped as such in many areas.
-
-The newest of the Congregation, Sarapha replaced the former god of harvest and autumn, the unpleasant schemer Loran Hae, in 250 AC. Her personality is bubbly and generous. She especially prizes brewing and festivals. She presents as a well-endowed human woman, usually bearing large beer steins. If she has plots and schemes, she's very quiet about them.
-
-#### Tor Elan, Sun-lord
-- Domain: The sun, summer, honorable warfare, rewards of dutiful work. **Light, War**
-- Symbol: The sun on a shield.
-- Most worshiped by: Young men everywhere, warriors, farmers. As one of the Seasonal Four, he's probably the most widely worshiped.
-
-Appearing as a middle-aged human male in full armor with a mace and shield, he is the husband to Sakara and son-in-law to Melara. Widely regarded as being utterly incapable of understanding jokes. His clergy are almost always militant, usually engaging in teaching the common folk to defend themselves. A major religion devoted more henotheistically to him than usual is the Breath of the Sun, headquartered in Wyrmhold.
-
-#### Sakara, Lady of the Dawn and Cute Things
-- Domain: Growth, beginnings, spring. Anything cute. Romantic love. Fertility. **Life, Nature**
-- Symbol: A stylized flower or butterfly
-- Most worshiped by: young women everywhere, halflings. As one of the Seasonal Four, she's widely worshiped.
-
-Sakara is Tor Elan's wife, and very unlike him. She presents as a barely-adult woman, bubbly and not too bright. She loves bright colors, cute bunnies (or other things, including young beasts you shouldn't cuddle). Her catch phrase might as well be "if not friend, then why friend shaped?" She doesn't have enemies.
-
-#### Selesurala, Mistress of Storms
-- Domain: The pitiless ocean, storms, killing frosts, and natural disasters. **Nature, Tempest**
-- Symbol: A lightning bolt
-- Most worshiped by: propitiated by sailors. Rarely worshiped. Feared instead.
-
-Once the Elemental Lord of water, Selesurala is a titanic wyrm who ascended to elemental status during the First Age (about when Koro did). She cares little for mortals. Only the strong survive. Her clergy (who are few and far between) act as heralds of oncoming disasters, warning people to prepare.
-
-#### Yogg-Maggus, Lord of Magic
-- Domain: Arcana, knowledge, magic, keeping secrets. **Arcana, Knowledge**
-- Symbol: Two nested spirals
-- Most worshiped by: mages, researchers.
-
-Yogg-Maggus was chosen to prevent future Cataclysms, and he takes that job seriously. He believes that power should be hidden from those that cannot use it properly. He was responsible for re-writing the laws of magic so that many of the extremes of the earlier ages could not be replicated in the post-Cataclysm era. He presents as a human with four long braids in his beard, usually hooded. In actuality, he was a mkhulu (mind flayer) before his ascension. He rarely calls clergy, but does make warlock pacts quite frequently.
-
-### Other Ascendants
-There are many ascendants worshiped across Noefra and Quartus at large. Two main ones worshiped in western Noefra are Nocthis and the Queen Ascendant.
-
-#### Nocthis, Lady of Lunar Mystery
-Nocthis is the patron of the Byssian people from back during the 3rd age when they gained independence on the Nocthian Caldera, and is the one for whom that Caldera was named. A mage of massive power, she gained divinity alongside her then husband and took on aspects of Night, Moon, and Mystery. She taught her people to live apart from others, traveling out to seek out magical artifacts and and power sources and sequestering them for safety. Her religion strongly valued women over men, relegating the latter to lower roles in society. This lasted until the Cataclysm. Seeing the war coming, she sought refuge in a ritual to become mortal temporarily. This succeeded partially, locking her out of her divine power but keeping her alive through the depowering of the rest of the Old Gods. After her re-ascension (this time merely as an Ascendant Power), she has mellowed on both the misandry and the isolationism.
-
-Her religion, the Church of Night Reborn, still engages in keeping secrets, with an outer, public hierarchy and a real inner, secret, higher hierarchy. Only women can be priestesses of the inner circle, but men can participate in most other parts of life as equals. She does not restrict her church to the night's children of Byssia, but does not encourage proselytes. As a result, she's worshiped almost exclusively in Byssia and the Caldera.
-\page
-#### The Queen Ascendant
-When the gwerin masters of the Fanged Kingdom vanished about 500 years before the Cataclysm, they left behind an "eternal queen" on the throne of the Great Temple at Ar Salem Dolem. This gwerin woman, daughter of the high Fanged Lord, served as the focal point for the blood sacrifices of the bloodthirsty, demon-tainted religion they left behind. 700 years later, the Catalysts discovered that she was trapped in this role against her will, acting as a living conduit and filter for souls in a demonic bargain the old masters had made to ascend as gods (which ended up failing mostly, but that's a different story). They broke the spells binding her and killed the old priests who were complicit in the bloodshed, freeing her.
-
-Her soul nearly exhausted from the black magic, she harnessed the faith of her entire nation to ascend, giving up her mortal identity in the process. Now she is the Queen Ascendant, undisputed goddess-queen of the Jungle of Fangs. Her church, the Church of the Queen Ascendant, retains massive political and persuasive power across the Jungle. Highly bureaucratic with much infighting, it has agents everywhere and counterbalances the nobles...when it's not colluding with them.

@@ -625,3 +625,103 @@ Of the nations of the Giant's Spine, ZK (as it's usually called), the Wild Hold,
 
 Not coincidentally, the only major international banking franchise, run by paranoid goblins with advanced magics, is headquartered here, and its founder is one of the ruling group.
 
+### Living Languages
+Presented here is a short description of each of the languages adventurers in western Noefra are likely to encounter or be proficient in. There are many other smaller, regional languages and dialects not mentioned.
+
+#### Common
+- Real Life Inspiration: English, especially early modern/Victorian English
+- Writing System: Reformed Imperial (alphabetic)
+- Grammar: A mostly uninflected, SVO word-order (like English) "neutral" phonemic and grammatical system with simple tense structures. Tons of loan words.
+
+Arising out of the common language of the great 3rd Age empire Tibor Imperia (now known as Old Imperial), Common is the primary trade tongue and common language throughout western Noefra. All adventurers are proficient in both spoken and written forms. Many folks outside the Sea of Grass/Southshore regions speak it as a second language.
+
+There are several major dialects:
+- Council Common is the "Received Pronounciation" of Common. The presumed default. It features crisp consonants and minimal clipping or blending of words. Outsiders say it has pronounced [_pun intended -IB_] Yonwach influence.
+- Jungle Common is the main dialect of the Jungle of Fangs. It tends to "slide around", stretching sibilants and taking on somewhat of a sing-song intonation. Classic tells are doubling of words for emphasis purposes (e.g. "that's good-good" meaning "very good") and inserting sibiliants where they don't normally appear.
+- Caldera Common is the main dialect in Wyrmhold and Byssia. To Council speakers, it feels choppy, rushed, and abrupt. Unnecessary subjects and even verbs are omitted and infered from context, and many endings are chopped or abbreviated and words pressed together, resulting in very long, drawn out "words" with drastically varying internal emphasis between syllables. Articles are omitted most of the time ("This--good wheel." instead of "this is a good wheel"). Heavy ard-teang and goblin influence, especially in Wyrmhold.
+
+#### Ard-Teang (Orcish)
+- Real Life Inspiration: Irish Gaelic
+- Writing System: Reformed Imperial + Aelven
+- Grammar: VSO word-order (ie Yoda-like). Heavy inflections and consonant mutations.
+
+Ard-teang is an old language (dating back to the First Interregnum), but has changed significantly since then. Of the major languages, it and Ngyon toi are the most dialectic, with each tribe having its own argot and pronunciations.
+
+It is spoken as a first language by the tribes in the Fiach Wood and Kotimaa and many Wyrmhold orcs (although Common is the official language of Wyrmhold). Many other Wyrmholders and residents of Elfhame speak it as a second language.
+
+#### Metsae (Ihmisi/wood elven)
+- Real Life Inspiration: Finnish
+- Writing System: Aelven
+- Grammar: Highly agglutinative. No prepositions, grammatical gender, or future tense. Prepositions replaced by case changes.
+
+One of the first things the first ihmisi did was fork the ancient aelvar language in protest against the aelvar masters. Even so, first-language Metsae speakers can follow Yonwach (low mode) conversations if spoken slowly and without much slang. The reverse is not so; Metsae was designed to make that difficult.
+
+Metsae is notoriously difficult to learn, from the extensive set of cases and case transitions to the writing system, which hijacks the aelvar characters but assembles them very differently, using secondary readings for most and dropping all vowels that aren't absolutely necessary for disambiguation (and even some of those). Which is hard because small differences in vowel length can make large differences in meaning. Metsae, some say, was designed to keep the ihmisi inward-looking and insular.
+
+#### Ngyon Toi (Goblin)
+- Real Life Inspiration: very vaguely Vietnamese. Very vaguely.
+- Writing System: None native. Often transliterated into Reformed Imperial.
+- Grammar: Very little. Mostly free-form assembling of words.
+
+Ngyon Toi is simultaneously the oldest currently-spoken language and one of the newest. Transmitted mostly by tribal shared memory, each tribe has their own variant with a shared kernel. And since so much of the context is transmitted over that shared memory band when members of the same tribe speak, the spoken portions are minimal. A few nouns, maybe a verb. Or maybe just an exclamation of surprise to draw attention. This means that when goblins are speaking to those not of that same tribe (or non-goblins), they have to engage in extensive circumlocutions and elaborate descriptions which makes them sound ignorant and stupid. Which many of them are very much not.
+
+Ngyon Toi has no native written form. Written Ngyon Toi is done in transliterated Reformed Imperial script, which tends to mangle phonemes badly. [_Some have suggested using aelvar characters but several of the gwerin involved on that committee nearly had heart attacks at the thought, so it was dropped -IB_].
+
+#### Too-til (Giantish)
+- Real Life Inspiration: Kyrgyz. Sort of. But only vaguely.
+- Writing System: Modern Runic
+- Grammar: Very rigid sentence structure. Effectively a regular grammar. Heavy on nested clauses. Structural ambiguity is avoided. As a result, it tends to be very verbose.
+
+Too-til comes in two primary forms. That spoken (and written) by the jazuu and that spoken (and mostly not written) by the various giant-kin (ogres, trolls, etc.) The first is extremely orderly, with sentence and word structures generally padded to multiples of 4 "units" by zero-content characters. To outsiders, it sounds extremely harsh with heavy gutterals and large consonant clusters. Every syllable is the same length, and stress is rigidly applied to the first syllable. "Pure" Too-til avoids loan words. The other form is much looser and full of words and phonemes from other languages. Still sounds harsh (made worse by the brutish nature of most of the speakers), but less rigid in structure, mostly by dropping complex words and reducing nested clauses to near-zero.
+
+Speakers of pure Too-til can, with difficulty, read written Tumni, once the different phoneme assignments are accounted for. Same runes, but generally palatalized pairs are flipped between languages. Much of the vocabulary is similar. Neither language has changed significantly in recorded history.
+
+#### Tumni (Dwarven)
+- Real Life Inspiration: Mongolian. Ish.
+- Writing System: Modern Runic
+- Grammar: Very rigid sentence structure. Effectively a regular grammar. Heavy on nested clauses. Structural ambiguity is avoided. As a result, it tends to be very verbose.
+
+Tumni is closely related to Too-til. One big difference is that Tumni accepts loan words, mostly by transliteration while Too-til does not.
+
+Culturally, most Uulani dwarves avoid writing things down in Tumni unless it is 100% verifiable fact. Writing a lie in Tumni is significantly taboo; other languages not so much. Similarly, destruction of written Tumni is taboo except under certain circumstances.
+
+#### Yonwach (High Elven)
+- Real Life Inspiration: Welsh
+- Writing System: Aelvar
+- Grammar: Complex and mode-dependent. Structural, syntactic, and semantic ambiguity is prized. Order is entirely vibe-based, depending on how much you're *trying* to insult your readers, hearers, or subject.
+
+Yonwach has three main "modes", and the language differs greatly depending on which mode you're in. Common (or Street) Yonwach is every-day talk for most people. It's significantly simplified compared to the other modes, with usually at most one sub-meaning per sentence. [_It's even possible to not be insulting! -IB_] [_Harsh but true -ed_]. Street Yonwach is written linearly, top to bottom, left to right, and each symbol is (mostly) used for its syllabic sound value, not any intrinsic meaning.
+
+High Yonwach is what is used in more formal meetings of the High House, as well as legal documents throughout Crisial Kingdom. It's substantially more complex than Street Yonwach, and contains multiple layers of meanings, some of which are almost always insulting. Symbols are a mix of sound values and intrinsic meaning(s), and are written in structured vertical blocks, where layout provides an additional few bits of information. Poetry and other artistic works break this form and are written in geometrically-complex two-dimensional shapes, where different paths give different meanings (sometimes even diametrically opposed).
+
+Court or Arcane Yonwach is what is sometimes used in academic writing throughout Noefra and is the closest match for ancient aelvar. Oddly, it's somewhat more structured than High Yonwach, but the complexities are multiplied. Symbols are fused to create new ones or split into parts that are distributed around. Some say it's an attempt to recreate how True Words might be written. Court Yonwach hasn't had a signficant grammar change since the Second Age.
+
+### Dead or Exotic Languages
+Some of these languages don't have living (mortal) speakers. Others are planar in origin, others were used by now-extinct cultures or by cultures that only exist at the fringes of the main play area. 
+
+#### Abyssal
+The language of demons. Written in the Lucian script but debased, it grates on the ear. Oddly, mortal speakers find it very easy to speak and learn. Almost *too* easy. Abyssal is a chaotic language, with dialects mutating and changing on a daily basis. It's a great language to swear in, because almost everything can be a vulgarity without difficulty.
+
+#### Celestial
+The language of those who serve the Mechanism. Technically a dialect of Lucian, but when spoken by a divine messenger or member of the angelic host, it has an additional property. Words spoken with divine authority cannot be (unknowingly) misunderstood, and it is impossible to say something you don't believe. When spoken by mortals, it's merely a less-ambiguous Lucian with almost no slang and very rigid grammar.
+
+#### Draconic
+The remains of the True Language spoken by Wyrm in the First Age, draconic is a verbose, ponderous language with no native written form. Nouns are more like descriptions, and saying anything meaningful takes a long time. Non-dragon mortals (and dragons speaking to mortals) tend to abbreviate things. Much of the content of the language is in body posture; to true dragons, mortals speaking draconic are speaking the baby version and missing the whole point. [_And most dragons refuse to talk in anything else just to lord it over those lesser mortals -IB_] [_That's so not true...mostly...ok, you may have a point. Sigh -ed_]. Transliterations are mostly in a mix of aelven and modern runic [_which is exactly as messed up as it sounds -IB_].
+
+#### Iath Neidr
+This is a nearly dead language, found now only in carvings on scattered ruins and spoken in modified form by deep-jungle Ophidian tribes. Written in a modified Aelven script, it resembles a cross between Metsae and High Yonwach.
+
+#### Kamigami (Sylvan/Druidic)
+This is a constructed language, created by the first druids and passed down, and then adopted (and modified) by most of the fey. It has no written form, but is usually transliterated into Metsae-form Aelven script.
+
+#### Lucian (Infernal)
+The primary language of the Astral plane, this is the language of the common lucian (devil, angel, or otherwise). It has a script that vaguely resembles Aelvar, and retains much of the complexity. It is often used for contracts between planes, as it is well suited for complex chicanery.
+
+#### Primordial
+The four dialects of Primordial are spoken throughout the Elemental Plane. They are (mostly) mutually intelligible. It is written in an archaic version of runic.
+
+#### Sarthak
+The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon and Serpent Seas. Written in a heavily modified, much simplified Aelven script with all the meaning stripped and only the syllabic sound values left behind, it is a pragmatic, business-first language.
+
+#### Tiborean (Old Imperial)
+The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.

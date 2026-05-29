@@ -7,14 +7,14 @@ Features marked with (+) are there for the touched lineages; those are the featu
 #### Lineage Restrictions
 Unlike some settings, Dawn of Hope naturally restricts what lineages exist, because each one has a place in the world and access from other D&D settings is entirely cut off by the Crystal Sphere. As a result, the default is that no lineage not mentioned here is designed to be played on Quartus.
 
-And yes, these lineages have ability score increases. I don't play with Tasha's Race customization option. Keep them or not, your choice.
+And yes, these lineages have ability score increases. I don't play with Tasha's ability score customization options. Keep them or not, your choice.
 }}
 
 ### Dragonborn
 
-An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
+An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. [_What is it with mortal mages and wanting to create a soldier race? Haven't they learned it never works out? -ed_] [_Hubris. It's an operating requirement to be an arcanist of a certain caliber, it seems. --IB_] This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
 
-Few in number, the dragonborn are a proud, martially-oriented people both by nature and by history. Their nation spent 90 years fighting an existential battle against mysterious forces of ice and snow that nearly wiped them out and succeeded in pushing them out of their ancestral home down into the hills south of the Fiach Woods. Fircely clan-oriented, the dragonborn take no grief from anyone.
+Few in number, the dragonborn are a proud, martially-oriented people both by nature and by history. Their nation spent 90 years fighting an existential battle against mysterious forces of ice and snow that nearly wiped them out and succeeded in pushing them out of their ancestral home down into the hills south-west of the Fiach Woods. Firce and clan-oriented, the dragonborn take no grief from anyone.
 
 Physically, dragonborn look like man-dragon hybrids. Standing of normal human height, they have scales, clawed feet and hands, dragon-like muzzles, and grow very little hair, if any. They are still mammals; females still have breasts and give birth to live young. Their scales are not always hard enough to provide protection, but they are less sensitive to the elements and general abrasion, so dragonborn often wear less clothing than most other lineage (although armor is still worn). They wear specially-constructed boots that allow their talons to jut out (or encase them in armored "toe sheaths" in the case of heavier armor). Their coloration is draconic: they have scales reminicient of one of the colors of dragons and a breath weapon like a wyrmling dragon that matches their soul's heritage. This is not hereditary; a pair of gold dragonborn might have a silver or white child. Some have nearly-vestigial bat-like wings; others have thicker, harder scales that provide some protection from blows.
 
@@ -529,7 +529,7 @@ The earliest shrine guardians to awaken (and the source of their name) were ench
 ## Touched Lineages
 The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents. Each culture reacts differently to this: the eastern Jinse empire considers the fiend-touched to be "blessed", as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched were often given to the Church of the Truth in the Holy Kaelthian Republic (before that collapsed) and were raised to be merciless inquisitors in that rigidly theocratic land, and treated with suspicion outside that role.
 
-For all of these, start with a base lineage. Take the ability score increase listed for your Touched lineage instead of the normal one. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
+For all of these, start with a base lineage, including sub-lineage/culture. The base lineage must have a feature marked with a (+). Take the ability score increase listed for your Touched lineage instead of the normal one for your base lineage. If this would result in more than a +2 lineage-derived bonus to any ability score, you gain +1 in any other ability score instead. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
 
 ### Light-touched (Celestial)
 
@@ -582,3 +582,106 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 **Rushing Waves.**  As an action, one creature within 5' must make a Strength saving throw of a DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution modifier. On a failed save, they are pushed 10' and knocked prone. On a success, they are only pushed 5'. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 
 **Lightning Burst.**  As an action, all creatures within 5' must make a Dexterity saving throw with DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution or take lightning damage equal to rolling a d8 a number of times equal to your proficiency bonus and be unable to take reactions until the start of their next turn. On a success, half damage. You can use this feature a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+## Hybrid Lineages
+In principle, any lineage other than the steelborn can interbreed successfully with any other. In practice, the only ones who are seen are mixes between humans, elves (ihmisi or gwerin) and orcs. Generally human + either elf or orc. These hybrids are stable, meaning the child of two half-elf/half-human parents will be notably hybrid. Most other crosses aren't nearly as stable, taking strongly after one parent or the other and not perpetuating in future generations. Oddly, fiend-touched humans make a more stable hybrid parent with other lineages than regular humans do.
+
+To make a character of a hybrid race, pick a lineage other than steelborn and a sub-lineage/culture from a different, non-steelborn lineage. If one base lineage has a trait marked with a (+) and the other does not, you must make the one with the marked trait your base lineage. Any cultural traits that rely on features the base race does not have (such as choosing a dragonborn culture on a human base, meaning no breath weapon) are replaced with a similar-power cultural trait from the base lineage. Making a character of a hybrid race other than human + elf or ihmisi + orc requires explicit DM collaboration and approval.
+
+Three examples are given: human base + traveler ihmisi, ihmisi base + night's child human, and orc base + sylvan ihmisi.
+
+### Traveler Human
+Most common in the northern Sea of Grass and Dreamwall mountain regions, as well as into southern Kotimaa, these are the result of generations of mixing between the local traveler ihmisi population and the wall-builder humans. Physically, they're shorter and more slender than the humans, and more charismatic/less primally-oriented than the ihmisi side. Culturally, they have troubles fitting into the very settled, boring human society but are too gregarious to fit into the tribal-dominated, insular ihmisi cultures of the region.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Intelligence, +2 Wisdom OR +2 Charisma
+
+**Age.**  adult at 16, live until 80-ish
+
+**Size.**  Medium. 5' - 6'6", 100-300 lbs
+
+**Speed.**  30ft.
+
+**Status.**  Core
+
+**Languages.** You know Common.
+
+**Additional Proficiencies.** You gain proficiency in one skill and language of your choice, as well as land vehicles, animal handling, thieves tools, and one artisan's tool of your choice.
+
+**Desperate Plea (+).**  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Traveling Mender.** You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires a tool proficiency you have.
+
+**Weapon Training.** You are proficient in long bows, short bows, short swords, and longswords. Longswords are finesse weapons for you.
+
+### Night's Child Ihmisi
+Making up a full third of the population of Byssia, these generational mixtures of the local Night's children humans and the highlands sylvan ihmisi are a staple part of Byssian society, especially where the highlands and lowlands meet.
+
+Physically, they're of intermediate height and build between their tall, bulky human ancestry and their shorter, slimmer elven ancestry. They have the jet-black, very straight hair of their human side, but their skin is darker [_not hard compared to the ivory paleness of a Night's Child -IB_] and they tan in the sun. Their eyes are generally green or brown.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Dexterity, +1 Intelligence, +1 Strength
+
+**Age.**  adult at 20, live until 110-ish
+
+**Size.**  Medium. 5'2" - 6'0", 100-210 lbs
+
+**Speed.**  35ft.
+
+**Status.**  core
+
+**Languages.** You know Common and Metsae (wood elven). You can understand most speakers of Yonwach as long as the mode is common (rather than High Court Yonwach).
+
+**Additional Proficiencies.** You are proficient in Investigation and Insight.
+
+**Voices of the Kami (+).**  While on the mortal plane you can meditate for 1 minute. During that time, your senses (vision and hearing) expand to 100ft (increasing to 200ft starting at level 5, 500ft starting at level 11, and 1000 ft at level 17) regardless of natural obstructions and you can sense the presence and number of any creatures within range. The exact location of "unnatural" creatures (fiends, undead, aberrations, or celestials) are pinpointed and you know their type. In cities or other "worked" environments, the range is halved and only unnatural creatures are sensed. You cannot see through or into buildings or other constructed obstructions. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
+
+**Trance.**  Instead of sleeping, you remain semi-conscious and aware of your surroundings. You still require 6 hours of trance to complete a long rest. You can not be magically put to sleep.
+
+**Naturally Stealthy.** Your connection with the land makes you able to hide more easily. While on the Mortal Plane or Shadow, you can attempt to Hide as long as you are in an area of dim light or are lightly obscured.
+
+**Darkvision.** The Lady of Mystery, Queen of Night, has gifted you with darkvision out to 60 ft.
+
+**Intuitive Detective.** When you make an Investigation check to discover a hidden door, trap, concealed lever, you add twice your proficiency bonus instead. When you make an Insight check to figure out what secrets someone is keeping or detect a hidden motive, you gain one additional insight on a success.
+
+### Wood Orc
+Found in tribes where the orc-dominated Fiach Woods blends into the elven-dominated Kotimaan forests, these are physically orcish (grey, mottled skin, prominant bottom canines, sunken eyes) but more slender and nimble and more innately connected to the wilds. Orcish tribes tend to treat them as tolerated cousins; the ihmisi are less favorable (but not outright hostile). They are rare to see in more civilized lands.
+
+#### Lineage Traits
+**Ability Score Increase.**  +1 Strength, +1 Dexterity, +1 Wisdom
+
+**Age.**  physically adult at 15, lives until 90-ish, although 100 is not uncommon.
+
+**Size.**  Medium. 5'4" - 6'6", 120-280 lbs
+
+**Speed.**  35ft.
+
+**Status.**  core
+
+**Languages.** You are proficient in Common and Ard-teang (Orcish).
+
+**Fury's Legacy (+).**  Once per long rest, you can rage as if you were a level 1 barbarian, except that you can concentrate on spells (but not cast them) while raging in this way. If you have the Rage class feature, you instead can use that feature an additional time per long rest and can concentrate on spells while raging.
+
+**Relentless Advance.**  Your speed increases by 5ft (included in the speed entry).
+
+**Primal Initiate.** You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.
+
+## Non-playable Lineages
+There are a few lineages that aren't suitable for player characters, but whose members are commonly encountered. A brief description is found below.
+
+### Goblins
+Goblins are the descendents of the Protean progenitor race, created to serve Primordial Change before the Dawn War. Adaptation and mutability is embedded in their nature. Goblins are tied to their tribes in a way that no other lineage is---a goblin tribe creates (through means none have unravelled) a psychic link between its members. As long as they're within a reasonable proximity (a few tens of miles), they unconsciously share most if not all of their experiences and memories and can even "think together", sharing brainpower and coordinating without conscious effort. These experiences are loosely tagged with the individual who really experienced it, but that gets ignored a lot. The result is that tribe is more important than individual. The tribe makes decisions often without more than minimal explicit communication, and keeping secrets within the tribe is nearly impossible. It must be clear that this is NOT a conscious process. If you tell something to one goblin and then talk to another about it, that latter one may interrupt you with "you already told me that." And will get confused when you say you told someone else, not them. And a tribless goblin is a dangerous thing---think a cat's curiosity and lack of object permanence in an adult, bipedal body with opposable thumbs. Lacking this shared memory, they lack a sense of object permanence and devolve to mischeif and destructive behaviors very fast.
+
+Another major effect of this is that tribes are quite vulnerable to fads and distractions. A single goblin seeing something shiny or having a new thought can pull the entire tribe away into focusing on that thing. Until the next obsession raises its head [_intrinsic, genetic ADHD. Fun. --ed_]. To combat this, tribes can offload some of their energy onto a few of their members (usually 1 in 10 or 1 in 20, with more in times of stress), transforming them into the larger, more stable and individual hobgoblin form. Hobgoblins act as the stabilizing keel for a tribe, leading them through difficulties and negotiating with other tribes. Their attenuated connection to the tribal memory (it's there and they can access it, but only with conscious effort) lets them travel and remain outside the storms of tribal life. In exchange, hobgoblins are sterile and lack any sexual drive (although they remain gendered). This status is, in principle, temporary. If the stress receedes, any excess hobgoblins revert to regular goblin status, often with even crazier ideas.
+
+Other lineages have found that goblins make great idea generators; when settled and guided, they are incredibly inventive. But they need someone else to *finish* the inventions; goblins left alone will move on to the next shiny idea way too frequently. Using goblin inventions is always at substantial risk. They may work. They may explode. Or fail to explode. Or cause rains of fishes.
+
+### Leviathan
+Leviathan isn't really a lineage, per se. But rather a memetic soul carried in the endless song of the great denizens of the deep. It is the shared consciousness of the great whales, sharks, squids, and all other "major" ocean denizens. Each of these is a cell; it barely notices their death. And these cells eat each other, as that's the way of life. It's hard, in fact, to really think of Leviathan as either a lineage (it's a single entity that has lived since the Dawn War) or an individual (as it acts like it's got split personalities across geographic regions). Leviathan is simply Leviathan. Ancient, alien, slow-thinking. Singer of the All-Song, containing all that has happened from the great to the small. Leviathan's influence has altered a number of lineages, including creating the comiedai: squid-like independent servants and record-keepers, at least originally. Now they and their shore-dwelling parasitic counterparts the abantu mkhulu have mostly turned to the service of The Twisted or have at least left the service of Leviathan. Other creations include the ika-ika, created as sea-dwelling goblin/fish hybrids. The kalasaa mostly serve Leviathan. Or at least claim to, as Leviathan rarely speaks in ways that can be comprehended. It's said that the origin of bardic, harmonic magic lies with Leviathan, who taught the lesser peoples of the First Age the rudiments of the chants and songs that are still sung by commoners everywhere.
+
+### Sena'ka
+The sena'ka are yet another attempt at creating super-soldiers. This time a bit more successful. Created in the Third Age by the Soefran Phoenix Empire out of goblins + many other influences, they are genetically locked; they breed only in magically-aided creches, giving their gwerin masters total control over their upbringing. Except for the group that successfully stole three creches during the late Third Age and founded the Ship Folk maritime empire that spans the Primal Sea between Noefra and Soefra. Physically, sena'ka are tall, slender humanoids with mottled, lizard-like skin and very little hair. Their most notable physical traits are the lack of nose cartilage (resulting in large gaping triangular nostrils) and their extremely enlarged eyes. Some of them have abnormal mental powers as well.
+
+The Ship Folk culture has reacted to their ancestral enslavement by turning the tables; they keep slaves. In fact, there are only sena'ka and slaves in their culture. Slaves who show promise can be made "honorary sena'ka", giving them status and protection. Their culture is pragmatic and strength-oriented. The strong rule, and the strong must continually prove their strength. The only major taboo is killing another sena'ka; with as low their birth rate is, killing a sena'ka is only allowed under extreme circumstances. They take each other hostage and demand ransoms instead.
+
+Ship Folk culture is, as the name suggests, oriented towards ships. Those who spend their lives at sea (or at least on a ship) are higher status than the "landlubbers", and the highest status in society is that of a free ship captain. The Admirals of the Fleets have more power...but often regret giving up their independent commands. Raiders and slavers, they mostly extort resources from the islands in the sea and the northern shore of Soefra. The First Fleet has made a treaty with the Serpent Dominion, allowing them to dock at Tarad'am and control much of the shipping around Sentinel Island (now belonging entirely to the Fleet) but preventing them from raiding the mainland or protected islands. This is enforced by a powerful former adventurer who has threatened to burn the Fleet to the waterline and murder every single sena'ka of the Fleet if they take slaves from the mainland again. [_that's my girl, Dilligas Husty! --ed_] And since she's mated to one of the oldest dragons on the planet, they believe her [_she absolutely would do it. And then make a best-selling hit song about it. --IB_]

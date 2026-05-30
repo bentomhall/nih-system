@@ -9,7 +9,7 @@ Unlike some settings, Dawn of Hope naturally restricts what lineages exist, beca
 
 And yes, these lineages have ability score increases. I don't play with Tasha's ability score customization options. Keep them or not, your choice.
 }}
-
+\page
 ### Dragonborn
 
 An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. [_What is it with mortal mages and wanting to create a soldier race? Haven't they learned it never works out? -ed_] [_Hubris. It's an operating requirement to be an arcanist of a certain caliber, it seems. --IB_] This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
@@ -61,7 +61,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 - **Vestigial Wings**: you gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn
 
 - **Armored Hide**: your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
-
+\page
 #### Caldera-born
 **Ability Score Increase.**  +2 Strength OR +1 Constitution and +1 Strength
 
@@ -127,7 +127,7 @@ Deep mountain dwarves live in the hard conditions deep inside the mountains. The
 **Born to the Craft.** You are proficient in two artisans tools of your choice. When you make a check with either one, you add twice your proficiency bonus instead of your proficiency bonus.
 
 **Stone's Resilience.** When you are reduced to zero hit points and not outright killed and do not have any levels of exhaustion, you are not unconscious and may act normally, but gain a level of exhaustion. You still make death saves as normal, including when you take damage.
-
+\page
 #### Surfacer 
 Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8" with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the Uulani and Southshore regions). Almost all dwarves native to the Jungle of Fangs fit into this culture. Surfacer dwarves are most known as merchants and traders, using their logical mindset to make deals.
 
@@ -225,7 +225,7 @@ The two cultures presented here are the Wall-Builders of the Sea of Grass, known
 **Poison Resistance.** You have resistance to poison damage and advantage on saving throws against being poisoned.
 
 **Adept Poisoner.** Poison you apply to your weapons deals an additional die of damage and applies to all hits for the duration, rather than just the first.
-
+\column
 #### Wall-Builder
 **Ability Score Increase.** +1 Dexterity, +1 Charisma
 
@@ -259,7 +259,7 @@ There are three main human cultures in western Noefra. Wall-builders are the mos
 **Additional Proficiencies.** You gain proficiency in one skill and language of your choice.
 
 **Desperate Plea (+).**  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
-
+\column
 #### Fang-kin
 The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminiscent of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
 
@@ -285,8 +285,8 @@ Culturally, they are dedicated to the worship of Nocthis, Lady of Mystery. Cultu
 **Darkvision.** The Lady of Mystery, Queen of Night, has gifted you with darkvision out to 60 ft.
 
 **Intuitive Detective.** When you make an Investigation check to discover a hidden door, trap, concealed lever, you add twice your proficiency bonus instead. When you make an Insight check to figure out what secrets someone is keeping or detect a hidden motive, you gain one additional insight on a success.
-
-#### Wall Builders
+\page
+#### Wall Builder
 The wall-builders, native to the Sea of Grass, are a mixed group who can trace their heritage back to the confusion around the Cataclysm about 250 years ago. Physically, they are have medium-brown skin, stand shorter and rounder than most, and have wide variation in hair. The median wall-builder has curly brown hair, but red, blonde, and even more exotic hair colors are known.
 
 Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. They're also the most community-oriented by far. Their name comes from a tradition that the first thing built in a new settlement is a wall, at least a palisade. This stems from the days when the Kaelthians who became the wall-builders thought they were alone in the world besides the monsters.
@@ -371,6 +371,17 @@ Jazuu are often called "goliaths" for their extreme stature. A short jazuu is ta
 **High Altitude Acclamation.** You are at home at high altitudes and in cold climates, feeling no ill effects of either. Magical or unnatural cold still affects you unless you have resistance.
 
 **Powerful Build.**  You count as one size larger for determining encumbrance, pulling and lifting objects, and grappling or shoving.
+\column
+#### Frost-born
+The armies of the Hungering Frost were mostly jazuu and goblins. Many of them remained behind when the planar forces retreated, forming tribes and clans in the Nocthian Caldera. They retain a portion of their connection to elemental ice. Unlike their Tuuran cousins, they are much less obsessed with order or with the giant transformation and have no Titanwall of their own.
+
+**Ability Score Increase.** +1 Constitution, +1 Strength
+
+**Additional Proficiencies.** You are proficient in Survival and Ngyon Toi (Goblin).
+
+**Freezing Attunement.** Your connection with Ice gives you resistance to cold damage. In addition, you ignore difficult terrain caused by ice, snow, or other similar factors.
+
+**Freezing Touch.** As a bonus action, you can imbue your attacks with ice for one minute. Each time you hit with a weapon attack for the duration, you deal an additional 1d4 cold damage. Once during the duration when you hit, you can choose to force the creature to make a Strength saving throw against a DC of 8 + your proficiency bonus + your Strength modifier. On a failed save, the creature is restrained by ice until the end of your next turn.
 
 #### Tuuran
 The Tuura Adam built their civilization in the original jazuu homeland, deep in the Giant's Spine. They boast the only complete Titanwall, and their society is heavily entwined with the true giants created there. They take "fair competition" to an extreme; they do *everything* by the literal book, a collection of the "perfect ways to do things" that has grown and changed as new methods are discovered.
@@ -383,22 +394,13 @@ The Tuura Adam built their civilization in the original jazuu homeland, deep in 
 
 **Increased Order.** You can use your Child of Order ability on any ability check, saving throw, or attack roll by a creature you can see within 60 feet instead of only on yourself.
 
-#### Frost-born
-The armies of the Hungering Frost were mostly jazuu and goblins. Many of them remained behind when the planar forces retreated, forming tribes and clans in the Nocthian Caldera. They retain a portion of their connection to elemental ice. Unlike their Tuuran cousins, they are much less obsessed with order or with the giant transformation and have no Titanwall of their own.
 
-**Ability Score Increase.** +1 Constitution, +1 Strength
-
-**Additional Proficiencies.** You are proficient in Survival and Ngyon Toi (Goblin).
-
-**Freezing Attunement.** Your connection with Ice gives you resistance to cold damage. In addition, you ignore difficult terrain caused by ice, snow, or other similar factors.
-
-**Freezing Touch.** As a bonus action, you can imbue your attacks with ice for one minute. Each time you hit with a weapon attack for the duration, you deal an additional 1d4 cold damage. Once during the duration when you hit, you can choose to force the creature to make a Strength saving throw against a DC of 8 + your proficiency bonus + your Strength modifier. On a failed save, the creature is restrained by ice until the end of your next turn.
 
 \page
 ### Ophidian 
 The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans...and their distant relatives, the ophidians. Their ancestors were humans who were bio-magically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
 
-Physically, playable ophidians are very close to fang-kin humans, except that their eyes are slitted and their tongues are forked. They tend to be extremely charming, almost magically so, and flexible to an extreme.
+Physically, playable ophidians are very close to fang-kin humans, except that their eyes are slitted and their tongues are forked, and their "scales" (mottled patches) are more visible. They tend to be extremely charming, almost magically so, and flexible to an extreme.
 
 #### Lineage Traits
 
@@ -417,6 +419,15 @@ Physically, playable ophidians are very close to fang-kin humans, except that th
 **Distracting Charm (+).**  As a reaction when you are targeted with an attack by someone you can see, you can force the attacker to make a Wisdom saving throw against a DC of 8 + your Charisma modifier + proficiency . On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 
 **Heat Sense.**  You can detect the presence (and pinpoint the location) of living creatures within 30ft even through opaque concealment but not total cover. You do not count as able to see them for spells and effects that require sight, but they are not concealed from you and do not count as an unseen attacker.
+\column
+#### Strangler
+Strangler ophidians were born with flexible limbs capable of constricting foes. They tend to be surprisingly strong.
+
+**Ability Score Increase.** +2 Strength
+
+**Additional Proficiencies.** You are proficient in Athletics, and when you make a Strength (Athletics) check to grapple someone or escape a grapple, you add twice your proficiency bonus instead.
+
+**Entwining Limbs.**  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot move them forcibly without releasing them from restraint (but not the grapple).
 
 #### Venom-tip
 The Venom-tip ophidians were born with innate poison. They are lithe even for ophidians.
@@ -427,14 +438,7 @@ The Venom-tip ophidians were born with innate poison. They are lithe even for op
 
 **Poison Bite.** You have a natural weapon you can use whenever you can make an attack. It counts as a finesse weapon with a reach of 5 feet, dealing 1d4 + your ability modifier piercing damage and 1d6 poison damage. When you reach 5th level, the poison damage increases to 2d6. At 11th level, it increases to 3d6.
 
-#### Strangler
-Strangler ophidians were born with flexible limbs capable of constricting foes. They tend to be surprisingly strong.
 
-**Ability Score Increase.** +2 Strength
-
-**Additional Proficiencies.** You are proficient in Athletics, and when you make a Strength (Athletics) check to grapple someone or escape a grapple, you add twice your proficiency bonus instead.
-
-**Entwining Limbs.**  When you successfully grapple a creature, you can make them restrained instead. If you do so, you cannot move them forcibly without releasing them from restraint (but not the grapple).
 
 \page
 ### Orc 
@@ -463,7 +467,7 @@ Physically, orcs have slightly grey-green-colored, rough skin. They stand much t
 **Fury's Legacy (+).**  Once per long rest, you can rage as if you were a level 1 barbarian, except that you can concentrate on spells (but not cast them) while raging in this way. If you have the Rage class feature, you instead can use that feature an additional time per long rest and can concentrate on spells while raging.
 
 **Relentless Advance.**  Your speed increases by 5ft (included in the speed entry).
-
+\column
 #### Industrialized
 Many orcs live in Wyrmhold, including in the Byarmarsh area which houses most of the factories, foundries, and other heavy industry of the nation. They are an integral part of this economic engine and have adapted well to this physically-demanding but also intellectually-demanding life.
 
@@ -487,7 +491,7 @@ The sylvan wood orcs are those who live the traditional, tribal lives in the Fia
 
 \page
 ### Soulforged 
-The soulforged are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, constructs of many types started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken.
+The soulforged are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, constructs of many types started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows *why* this is happening, or how long they will live. Or how to cause one to awaken. How they talk and why they need rest is entirely unknown.  Unlike most lineages, they do not naturally visibly change over time. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
 
 #### Lineage Traits
 **Ability Score Increase.**  +1 Constitution
@@ -505,7 +509,7 @@ The soulforged are the youngest lineage of Quartus. In the wake of the Fourth Wi
 **Poison Immunity.** You are immune to poison and the poisoned condition.
 
 #### Steelborn
-Most steelborn were Wyrmhold labor constructs of enchanted metal and wire, brought to life by the Awakening. A few were metallic constructs of other provenances, including pre-Cataclysm constructs. Steelborn are varied in physical appearance, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. How they talk and why they need rest is entirely unknown. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source. Unlike most lineages, steelborn do not naturally visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
+Most steelborn were Wyrmhold labor constructs of enchanted metal and wire, brought to life by the Awakening. A few were metallic constructs of other provenances, including pre-Cataclysm constructs. Steelborn are varied in physical appearance, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source. 
 
 **Ability Score Increase.** +1 Strength, +1 Constitution OR +1 Intelligence
 
@@ -513,9 +517,8 @@ Most steelborn were Wyrmhold labor constructs of enchanted metal and wire, broug
 
 **Natural Armor.** While not wearing armor, your armor class is calculated as 12 + your Dexterity modifier. You can benefit from a shield while using this calculation. 
 
-\column
 #### Shrine Guardian
-The earliest shrine guardians to awaken (and the source of their name) were enchanted wood-and-stone effigies scattered across the Byssian highlands, guarding ihimen or ancestor shrines. Other wood and stone constructs, usually carved in tribal, wild areas, have begun to awaken as well more recently. Shrine guardians were  are varied in physical appearance, but generally human-size or smaller. Their shape is humanoid, but the details vary and their faces are often carved into frightening masks. How they talk and why they need rest is entirely unknown. Their connection to the nature spirits is real, and they are very difficult to pick out of a forest as long as they don't move. Unlike most lineages, they do not naturally visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
+The earliest shrine guardians to awaken (and the source of their name) were enchanted wood-and-stone effigies scattered across the Byssian highlands, guarding ihimen or ancestor shrines. Other wood and stone constructs, usually carved in tribal, wild areas, have begun to awaken as well more recently. Shrine guardians were  are varied in physical appearance, but generally human-size or smaller. Their shape is humanoid, but the details vary and their faces are often carved into frightening masks. Their connection to the nature spirits is real, and they are very difficult to pick out of a forest as long as they don't move. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
 
 **Ability Score Increase.**  +1 Wisdom, +1 Constitution OR +1 Dexterity
 
@@ -527,9 +530,9 @@ The earliest shrine guardians to awaken (and the source of their name) were ench
 
 \page
 ## Touched Lineages
-The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents. Each culture reacts differently to this: the eastern Jinse empire considers the fiend-touched to be "blessed", as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched were often given to the Church of the Truth in the Holy Kaelthian Republic (before that collapsed) and were raised to be merciless inquisitors in that rigidly theocratic land, and treated with suspicion outside that role.
+The influence of various forces, whether from outside the Mortal plane or not, often produces "sports", called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents.
 
-For all of these, start with a base lineage, including sub-lineage/culture. The base lineage must have a feature marked with a (+). Take the ability score increase listed for your Touched lineage instead of the normal one for your base lineage. If this would result in more than a +2 lineage-derived bonus to any ability score, you gain +1 in any other ability score instead. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
+For all of these, start with a base lineage, including sub-lineage/culture. The base lineage must have a feature marked with a (+). Take the ability score increase listed for your Touched lineage instead of the normal one for your base lineage. If this would result in more than a +2 lineage-derived bonus to any ability score, you gain +1 in any other ability score instead. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage.
 
 ### Light-touched (Celestial)
 
@@ -582,7 +585,7 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 **Rushing Waves.**  As an action, one creature within 5' must make a Strength saving throw of a DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution modifier. On a failed save, they are pushed 10' and knocked prone. On a success, they are only pushed 5'. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 
 **Lightning Burst.**  As an action, all creatures within 5' must make a Dexterity saving throw with DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution or take lightning damage equal to rolling a d8 a number of times equal to your proficiency bonus and be unable to take reactions until the start of their next turn. On a success, half damage. You can use this feature a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
-
+\page
 ## Hybrid Lineages
 In principle, any lineage other than the steelborn can interbreed successfully with any other. In practice, the only ones who are seen are mixes between humans, elves (ihmisi or gwerin) and orcs. Generally human + either elf or orc. These hybrids are stable, meaning the child of two half-elf/half-human parents will be notably hybrid. Most other crosses aren't nearly as stable, taking strongly after one parent or the other and not perpetuating in future generations. Oddly, fiend-touched humans make a more stable hybrid parent with other lineages than regular humans do.
 
@@ -594,6 +597,7 @@ Three examples are given: human base + traveler ihmisi, ihmisi base + night's ch
 Most common in the northern Sea of Grass and Dreamwall mountain regions, as well as into southern Kotimaa, these are the result of generations of mixing between the local traveler ihmisi population and the wall-builder humans. Physically, they're shorter and more slender than the humans, and more charismatic/less primally-oriented than the ihmisi side. Culturally, they have troubles fitting into the very settled, boring human society but are too gregarious to fit into the tribal-dominated, insular ihmisi cultures of the region.
 
 #### Lineage Traits
+
 **Ability Score Increase.**  +1 Intelligence, +2 Wisdom OR +2 Charisma
 
 **Age.**  adult at 16, live until 80-ish
@@ -613,7 +617,7 @@ Most common in the northern Sea of Grass and Dreamwall mountain regions, as well
 **Traveling Mender.** You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires a tool proficiency you have.
 
 **Weapon Training.** You are proficient in long bows, short bows, short swords, and longswords. Longswords are finesse weapons for you.
-
+\page
 ### Night's Child Ihmisi
 Making up a full third of the population of Byssia, these generational mixtures of the local Night's children humans and the highlands sylvan ihmisi are a staple part of Byssian society, especially where the highlands and lowlands meet.
 
@@ -665,20 +669,22 @@ Found in tribes where the orc-dominated Fiach Woods blends into the elven-domina
 **Relentless Advance.**  Your speed increases by 5ft (included in the speed entry).
 
 **Primal Initiate.** You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.
-
+\page
 ## Non-playable Lineages
 There are a few lineages that aren't suitable for player characters, but whose members are commonly encountered. A brief description is found below.
 
 ### Goblins
 Goblins are the descendents of the Protean progenitor race, created to serve Primordial Change before the Dawn War. Adaptation and mutability is embedded in their nature. Goblins are tied to their tribes in a way that no other lineage is---a goblin tribe creates (through means none have unravelled) a psychic link between its members. As long as they're within a reasonable proximity (a few tens of miles), they unconsciously share most if not all of their experiences and memories and can even "think together", sharing brainpower and coordinating without conscious effort. These experiences are loosely tagged with the individual who really experienced it, but that gets ignored a lot. The result is that tribe is more important than individual. The tribe makes decisions often without more than minimal explicit communication, and keeping secrets within the tribe is nearly impossible. It must be clear that this is NOT a conscious process. If you tell something to one goblin and then talk to another about it, that latter one may interrupt you with "you already told me that." And will get confused when you say you told someone else, not them. And a tribless goblin is a dangerous thing&mdash;think a cat's curiosity and lack of object permanence in an adult, bipedal body with opposable thumbs. Lacking this shared memory, they lack a sense of object permanence and devolve to mischeif and destructive behaviors very fast.
 
-Another major effect of this is that tribes are quite vulnerable to fads and distractions. A single goblin seeing something shiny or having a new thought can pull the entire tribe away into focusing on that thing. Until the next obsession raises its head [_intrinsic, genetic ADHD. Fun. --ed_]. To combat this, tribes can offload some of their energy onto a few of their members (usually 1 in 10 or 1 in 20, with more in times of stress), transforming them into the larger, more stable and individual hobgoblin form. Hobgoblins act as the stabilizing keel for a tribe, leading them through difficulties and negotiating with other tribes. Their attenuated connection to the tribal memory (it's there and they can access it, but only with conscious effort) lets them travel and remain outside the storms of tribal life. In exchange, hobgoblins are sterile and lack any sexual drive (although they remain gendered). This status is, in principle, temporary. If the stress receedes, any excess hobgoblins revert to regular goblin status, often with even crazier ideas.
+Another major effect of this is that tribes are quite vulnerable to fads and distractions. A single goblin seeing something shiny or having a new thought can pull the entire tribe away into focusing on that thing. Until the next obsession raises its head [_intrinsic, genetic ADHD. Fun. --ed_]. To combat this, tribes can offload some of their energy onto a few of their members (usually 1 in 10 or 1 in 20, with more in times of stress), transforming them into the larger, more stable and individual hobgoblin form.
+
+Hobgoblins act as the stabilizing keel for a tribe, leading them through difficulties and negotiating with other tribes. Their attenuated connection to the tribal memory (it's there and they can access it, but only with conscious effort) lets them travel and remain outside the storms of tribal life. In exchange, hobgoblins are sterile and lack any sexual drive (although they remain gendered). This status is, in principle, temporary. If the stress receedes, any excess hobgoblins revert to regular goblin status, often with even crazier ideas.
 
 Other lineages have found that goblins make great idea generators; when settled and guided, they are incredibly inventive. But they need someone else to *finish* the inventions; goblins left alone will move on to the next shiny idea way too frequently. Using goblin inventions is always at substantial risk. They may work. They may explode. Or fail to explode. Or cause rains of fishes.
 
 ### Leviathan
 Leviathan isn't really a lineage, per se. But rather a memetic soul carried in the endless song of the great denizens of the deep. It is the shared consciousness of the great whales, sharks, squids, and all other "major" ocean denizens. Each of these is a cell; it barely notices their death. And these cells eat each other, as that's the way of life. It's hard, in fact, to really think of Leviathan as either a lineage (it's a single entity that has lived since the Dawn War) or an individual (as it acts like it's got split personalities across geographic regions). Leviathan is simply Leviathan. Ancient, alien, slow-thinking. Singer of the All-Song, containing all that has happened from the great to the small. Leviathan's influence has altered a number of lineages, including creating the comiedai: squid-like independent servants and record-keepers, at least originally. Now they and their shore-dwelling parasitic counterparts the abantu mkhulu have mostly turned to the service of The Twisted or have at least left the service of Leviathan. Other creations include the ika-ika, created as sea-dwelling goblin/fish hybrids. The kalasaa mostly serve Leviathan. Or at least claim to, as Leviathan rarely speaks in ways that can be comprehended. It's said that the origin of bardic, harmonic magic lies with Leviathan, who taught the lesser peoples of the First Age the rudiments of the chants and songs that are still sung by commoners everywhere.
-
+\page
 ### Sena'ka
 The sena'ka are yet another attempt at creating super-soldiers. This time a bit more successful. Created in the Third Age by the Soefran Phoenix Empire out of goblins + many other influences, they are genetically locked; they breed only in magically-aided creches, giving their gwerin masters total control over their upbringing. Except for the group that successfully stole three creches during the late Third Age and founded the Ship Folk maritime empire that spans the Primal Sea between Noefra and Soefra. Physically, sena'ka are tall, slender humanoids with mottled, lizard-like skin and very little hair. Their most notable physical traits are the lack of nose cartilage (resulting in large gaping triangular nostrils) and their extremely enlarged eyes. Some of them have abnormal mental powers as well.
 

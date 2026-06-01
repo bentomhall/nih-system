@@ -1,3 +1,49 @@
+{{frontCover}}
+
+{{logo ![](https://homebrewery.naturalcrit.com/assets/naturalCritLogoRed.svg)}}
+
+# Places of Quartus
+## A Gazetteer
+___
+
+{{banner Dawn of Hope}}
+
+{{footnote
+  A Guide to the planes, places, gods and nations of Dawn of Hope, compatible with 5e.
+}}
+
+![The Departure, 1837, by Thomas Cole](https://homebrewery.naturalcrit.com/assets/the_departure.webp){position:absolute,bottom:0,right:-400px,height:100%}
+
+
+
+\page
+{{insideCover}}
+
+Presented by everyone's favorite Immortal Bard, edited by his dragon companion, Marceline.
+
+<i class="far fa-copyright"></i> <year> This work is openly licensed via [CC BY-SA 4.0](https://creativecommons.org/publicdomain/by-sa/4.0/).
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+No generative AI was used in the production of this work. All images public domain.
+
+Cover credit: **The Departure**, 1837, Thomas Cole.
+
+{{artist,bottom:90px,right:30px
+##### The Spirit of War, 1851, 
+[by Jasper Francis Cropsey](https://homebrewery.naturalcrit.com/assets/the_spirit_of_war.webp)
+}}
+
+
+___
+
+{{imageMaskCenter3,--offsetX:0%,--offsetY:0%,--rotation:0
+  ![The Spirit of War, 1851, by Jasper Francis Cropsey](https://homebrewery.naturalcrit.com/assets/the_spirit_of_war.webp){position:absolute,bottom:100px,right:70px,height:70%}
+}}
+
+{{logo ![](https://homebrewery.naturalcrit.com/assets/naturalCritLogoRed.svg)}}
+
+\page
 # Dawn of Hope Gazetteer
 
 {{note,wide
@@ -74,7 +120,7 @@ The Astral is divided into five primary domains ("landmasses" floating in empty 
 
 
 ### Shadow, Trifold Liminality
-Called one plane, Shadow is really composed of three layers (and a blight that merges the layers). Created out of the True Name of Death, it serves as the final resting place for the souls of dead mortals (those that do not ascend or get eaten by demons) as well as a home to most of the fey. There are other creatures that call it home as well, all partaking of that dread Name. At the core is the Gate of Eternity in the Watcher's Garden, where those souls who have laid down their concerns pass into the unknown. Most ancient of dragons, the Watcher oversees the cycle of death and burden-shedding with impartiality, aided by the Catocracy (a bureaucracy of cats assisting in guiding lost souls) and the orders of the Gleaners, mortals who partner with said cats to reap the Stragglers, those who seek to cheat normal death too blatantly.
+Called one plane, Shadow is really composed of three layers (and a blight that merges the layers). Created out of the True Name of Death, it serves as the final resting place for the souls of dead mortals (those that do not ascend or get eaten by demons) as well as a home to most of the fey. There are other creatures that call it home as well, all partaking of that dread Name. At the core is the Gate of Eternity in the Watcher's Garden, where those souls who have laid down their concerns pass into the unknown. Most ancient of dragons, the Watcher oversees the cycle of death and burden-shedding with impartiality, aided by the Catocracy (a bureaucracy of cats assisting in guiding lost souls) and the orders of the Gleaners, mortals who partner with said cats to reap the stragglers, those who seek to cheat normal death too blatantly.
 
 Border Shadow is the truly liminal plane, extending "between" the Mortal and all the other planes. All portals, teleportation, and planar travel pass through the Border and disturb it, weakening the boundaries. The souls of the dead flow "up" from the Mortal through the Border, herded by the cats that act as psychopomps, although only the lost souls remain here. The rest find a second, temporary life in one of the other layers. Here, land and gravity don't exist, and movement is by the will of the traveler. Dreams peer through the veil here into the other layers.
 
@@ -88,7 +134,7 @@ Beastholm is the layer of Shadow "closer" to the elemental planes. Also called t
 
 The hub here is the Dream Titan’s Throne. This enormous (and physically inconsistent) castle, seemingly made of wood, rock, and bone changes from day to day; its inhabitants (mostly the fey) migrate around from “room” to “room” lest they get swallowed up in the dream and never awaken.
 
-The Waste is a cancer, a stain that propagates across Shadow collapsing layers into each other and transforming them into a blasted desert where demons and devils fight endless battles and the spirits of those who died there or chose to fight there struggle for survival. The Waste grows in the reflection of places where mortals summon demons, allow undead to continue to exist, or where a great number of souls died in agony (such as the events of Moon's Fall). Those that die in those areas are condemned to the waste unless they manage to escape. Many orders of druids and others exist to heal the Waste (by healing corresponding area in the Mortal) where possible.
+The Waste is a cancer, a stain that propagates across Shadow collapsing layers into each other and into a blasted waste where demons and devils fight endless battles and the spirits of those who died there...or chose to fight there struggle for survival. The Waste grows in the reflection of places where mortals summon demons, allow undead to continue to exist, or where great and blasphemous events occurred (such as the events of Moon's Fall). Those that die in those areas are condemned to the waste unless they manage to escape. Many orders of druids and others exist to heal the Waste where possible.
 
 ### The Elemental Plane
 The Elemental Plane acts as the sink of aether and the source of Quartus's seasons, as well as the maintenance agents. From here, elemental forces, led by the Elemental Lords, bring fresh water, air, heat, and replenish the minerals within the planet. While the plane is one contiguous sphere equal in size to the Mortal or Astral, most consider it to be partitioned into either 12 or 18 sections. Within approximately twice the radius of Eua, it is one unified thing. All that exists there is luminous aether and the strange elementals native to that state. No condensed matter can exist here naturally, as the tides of light tear it apart. Further out (to just past the orbit of Secundus and Tertius), the four-fold elements begin to make their disparate natures known, resulting in four Prime Elementals (Earth, Fire, Air, and Water). The boundaries between them are still quite energetic, making seasons on the inner planets extremely violent in their transitions. Before the Cataclysm, this same four-fold division held throughout, and mixtures between the planes were unusual and confined only to the borders. The Cataclysm and resulting planar realignment shifted matters.
@@ -114,7 +160,7 @@ Mud   | Water &rarr; Earth | Contentment, apathy, ennui | oozes, toadlin, mud me
 }}
 
 ### The Abyss
-A festering, partially sealed but eternally weeping wound in the planes, centered around the Oblivion Gate. This Gate was long thought to be merely a hole in the universe into the Is Not. The Gate is source of the jotnar, entropic spirits that consume aether and souls in endless blind hunger and that are the cause of demons and the undead. Recent events have made it clear that the Gate has a will of its own, as do the jotnar themselves. Summoned into reality during the tumult of the Dawn War when Change rebelled against the Dreamer and the other Primordials, the Abyss was formed from the essence of Primordial Darkness to become a prison for Change (stripped of his Name) and the more major forces that followed it during the War; the fractured Concepts and other Primal Demons. But not only a prison; the presence of prisoners acts as a sort of plug or filter, preventing all but the most minor jotnar from leaking out. But even those are enough to cause trouble.
+A festering, partially sealed but eternally weeping wound in the planes, centered around the Oblivion Gate. This "Gate" was long thought to be merely a hole in the universe into the Is Not, source of the jotnar, entropic spirits that consume all aether and souls in endless blind hunger. Recent events have made it clear that the Gate has a will of its own, as do the jotnar themselves. Summoned into reality during the tumult of the Dawn War when Change rebelled against the Dreamer and the other Primordials, the Abyss was formed from the essence of Primordial Darkness to become a prison for Change (stripped of his Name) and the more major forces that followed it during the War; the fractured Concepts and other Primal Demons. But not only a prison; the presence of prisoners acts as a sort of plug or filter, preventing all but the most minor jotnar from leaking out. But even those are enough to cause trouble.
 
 Other mortals (and immortals) have tried to use the jotnar as tools, trapping them inside themselves and feeding them on the souls and aether of others, gaining immortality and immense power themselves as a result. These are the Infected, called demons by most folks. Any demon of sufficient power is rejected by the Mortal and thrust back into the abyss unless summoned by a mortal (usually involving blood magic).
 
@@ -160,8 +206,7 @@ Those that survive the hazards eventually weary of their burdens, of their past 
 All of this also means that bodies, nimbuses, and souls can be transformed into magical fuel. Blood magic is exactly this [_and is generally considered a bad idea --IB_]; use a ritual to funnel the energy released when a soul separates into a spell. Willing sacrifice is even more potent, as you unlock more energy. And there are dark rumors of mechanisms used to convert the entire triparte soul into energy...with the soul left screaming and aware in some horrific sense.
 
 ### The Congregation
-The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. Loran Hae, the former God of Harvest and Autumn, was dethroned and reduced to the stature of an Ascendantfor meddling too hard (and crashing the wrong mortal wedding) in 250 AC. Loran Hae ended up dying at adventurer hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation backing off a bit.
-
+The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC an, reduced to the stature of an Ascendant, ended up dying at adventurer hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation backing off a bit.
 {{note
 #### Souls and PCs
 [*What's a PC? --IB*]
@@ -701,7 +746,7 @@ High Yonwach is what is used in more formal meetings of the High House, as well 
 \page
 Court or Arcane Yonwach is what is sometimes used in academic writing throughout Noefra and is the closest match for ancient aelvar. Oddly, it's somewhat more structured than High Yonwach, but the complexities are multiplied. Symbols are fused to create new ones or split into parts that are distributed around. Some say it's an attempt to recreate how True Words might be written. Court Yonwach hasn't had a signficant grammar change since the Second Age.
 
-### Dead or Exotic Languages
+### Dead and Exotic Languages
 Some of these languages don't have living (mortal) speakers. Others are planar in origin, others were used by now-extinct cultures or by cultures that only exist at the fringes of the main play area. 
 
 #### Abyssal
@@ -715,7 +760,7 @@ The remains of the True Language spoken by Wyrm in the First Age, draconic is a 
 
 #### Iath Neidr
 This is a nearly dead language, found now only in carvings on scattered ruins and spoken in modified form by deep-jungle Ophidian tribes. Written in a modified Aelven script, it resembles a cross between Metsae and High Yonwach.
-
+\column
 #### Kamigami (Sylvan/Druidic)
 This is a constructed language, created by the first druids and passed down, and then adopted (and modified) by most of the fey. It has no written form, but is usually transliterated into Metsae-form Aelven script.
 
@@ -730,3 +775,27 @@ The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon a
 
 #### Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
+\page
+{{backCover}}
+
+# Hope Dawns
+
+A world designed from the ground up as a new take on the familiar themes and elements of D&D.
+:
+Designed for GMs wanting to set a game on Quartus, for players in such games wanting to more thoroughly understand the world, or for those seeking inspiration.
+
+## Continue the Adventure
+* Peoples of Quartus
+* Classes and Player Options of Quartus
+* Expanded Rules (Incantations, Downtime, Skill Tricks)
+___
+
+Designed for use with 2014 5e D&D.
+
+![Italian Coast Scene with Ruined Tower, 1838, by Thomas Cole](https://homebrewery.naturalcrit.com/assets/ruined_tower.webp){position:absolute,bottom:0,right:-250px,height:100%}
+
+{{logo
+![](https://homebrewery.naturalcrit.com/assets/naturalCritLogoWhite.svg)
+
+Homebrewery.Naturalcrit.com
+}}

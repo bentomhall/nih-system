@@ -51,7 +51,7 @@ A few notes are in order. Dawn of Hope takes a traditional approach toward playe
 
 {{note
 #### Lineage Restrictions
-Unlike some settings, Dawn of Hope naturally restricts what lineages exist, because each one has a place in the world and access from other D&D settings is entirely cut off by the Crystal Sphere. As a result, the default is that no lineage not mentioned here is designed to be played on Quartus.
+Unlike some settings, Dawn of Hope naturally restricts what lineages exist, because each one has a place in the world and access from other settings is entirely cut off by the Crystal Sphere. As a result, the default is that all lineages not mentioned here are present on Quartus.
 
 And yes, these lineages have ability score increases. I don't play with Tasha's ability score customization options. Keep them or not, your choice.
 }}
@@ -59,10 +59,6 @@ And yes, these lineages have ability score increases. I don't play with Tasha's 
 {{imageMaskEdge4,--offset:10%,--rotation:270
   ![The Roman Theater at Taormina, 1828, by Louise-Joséphine sarazin de Belmont](https://homebrewery.naturalcrit.com/assets/roman_theatre.webp){height:100%}
 }}
-<!-- Use --offset to shift the mask away from page center (can use cm instead of %)
-     Use --rotation to set rotation angle in degrees. -->
-
-
 \page
 ### Dragonborn
 

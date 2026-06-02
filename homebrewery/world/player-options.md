@@ -1022,9 +1022,11 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Flash Freeze(\*)
 - Fog Cloud
 - Grease
+- Headshot (\*)
 - Longstrider
 - Sleep
 - Thunderwave
+- Yoink (\*)
 
 #### 2nd level (3 AET)
 - Alter Self
@@ -2012,7 +2014,7 @@ Starting at 18th level, when you use Piercing Manipulation, the target of the at
 At 18th level, you learn the spell *power word kill* and can cast it once per day without expending a spell slot.
 
 ## Spellblade Spell List
-The Spellblade spell list contains a list of the spells available to all spellblades, ordered by spell level. Hyperlinked spells are homebrew.
+The Spellblade spell list contains a list of the spells available to all spellblades, ordered by spell level. Spells marked with (\*) are new and found in the Spells section at the end of this document.
 
 {{spellList
 #### Cantrips
@@ -2034,11 +2036,11 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - burning hands
 - color spray
 - disguise self
-- enchanted strike (new)
+- enchanted strike (\*)
 - expeditious retreat
 - faerie fire
 - false life
-- flash freeze (new)
+- flash freeze (\*)
 - fog cloud
 - inflict wounds
 - guiding bolt
@@ -2046,6 +2048,7 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - shield
 - sleep
 - thunderwave
+- tick stop (\*)
 
 #### 2nd level
 
@@ -2063,6 +2066,7 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - ray of enfeeblement
 - scorching ray
 - shatter
+- spin (\*)
 
 #### 3rd level
 
@@ -2083,6 +2087,7 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - confusion
 - dimension door
 - dominate beast
+- gremlins (\*)
 - phantasmal killer
 
 #### 5th level
@@ -2361,7 +2366,7 @@ Starting at 14th level, you gain resistance to necrotic damage.
 Starting at 18th level, when you cast a spell as a bonus action using your Dualcasting feature, you can designate an enemy you can see within 30' of you. Any attacks that enemy makes against you until the beginning of your next turn are made at disadvantage.
 \page
 ## Warmage Spell List
-Note: the warmage is intentionally limited to spells of 5th level and lower and have a fairly restricted "utility belt" of spell choices. They are intended to use upper slots for upcasting lower-level spells and mostly cast damaging/direct combat spells. This is why they have Extra Attack and other features (relative to a wizard). Spells marked with (\*) are found in the Spells section.
+Note: the warmage is intentionally limited to spells of 5th level and lower and have a fairly restricted "utility belt" of spell choices. They are intended to use upper slots for upcasting lower-level spells and mostly cast damaging/direct combat spells. This is why they have Extra Attack and other features (relative to a wizard). Spells marked with (\*) are new and found in the Spells section.
 
 :::::::::::::::
 {{spellList,wide
@@ -2391,8 +2396,9 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 - Cure Wounds
 - Detect Magic
 - Earth Tremor
+- Enchanted Strike (\*)
 - Find Familiar
-- Flash Freeze
+- Flash Freeze (\*)
 - Floating Disk
 - Fog Cloud
 - Frost Fingers
@@ -2409,7 +2415,7 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 - Darkness
 - Darkvision
 - Dragon's Breath
-- Earthbind*
+- Earthbind
 - Flaming Sphere
 - Gentle Repose
 - Invisibility
@@ -3007,7 +3013,7 @@ ____
 - Cast time: 1 action
 - Range: 1 creature visible within 60 ft.
 - Duration: Concentration, up to 1 minute
-- Classes: Artificer, Mechanist
+- Classes: Artificer, Mechanist, Spellblade
 ____
 
 You target a creature you can see within range and curse it with bad mechanical luck for the duration unless it succeeds on an Intelligence saving throw. While cursed, attacks against the creature have advantage, it has disadvantage on all ability checks and saving throws made with Dexterity, Intelligence, or Wisdom, and it must make a Wisdom saving throw whenever it tries to cast a spell or do any other complex action, losing the action on a failed save.
@@ -3104,7 +3110,7 @@ ____
 - Cast time: 1 action
 - Range: 1 visible creature within 30 ft.
 - Duration: Concentration, up to 1 minute.
-- Classes: Artificer, Bard, Mechanist
+- Classes: Artificer, Bard, Mechanist, Spellblade
 ____
 The targeted creature must make a Wisdom saving throw. On a failed save, it can take either an action or a bonus action on each of its turns for the duration and cannot take reactions. If it attacks, it can only make a single attack regardless of how many attacks it normally would be able to make. If it casts a spell, it must roll a d20. On a 10 or lower, it must use its action on the next turn to cast the spell, at which point it takes effect. Affected creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
@@ -3117,7 +3123,7 @@ ____
 - Cast time: 1 bonus action
 - Range: creature or object within 90 ft
 - Duration: Instantaneous
-- Classes: Bounty Hunter, Mechanist, Ranger, Sorcerer, Wizard
+- Classes: Bounty Hunter, Mechanist, Ranger, Sorcerer, War Mage, Wizard
 ____
 
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so at advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.

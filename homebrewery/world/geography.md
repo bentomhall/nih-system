@@ -103,7 +103,7 @@ Feywild + Shadowfell | Shadow (non-Waste)
 Limbo | Abyss
 Material | Mortal
 Other Lower Planes | Shadow (Waste)
-Upper Planes, Nine Hells, Mechanus | Astral
+Any other plane not mentioned | Astral
 
 One caveat: all the *afterlife* portions of the planes are in Shadow. Only the divine (or fiendish) residences are in the Astral.
 
@@ -325,7 +325,7 @@ Once the Elemental Lord of water, Selesurala is a titanic wyrm who ascended to e
 - Symbol: Two nested spirals
 - Most worshiped by: mages, researchers.
 
-Yogg-Maggus was chosen to prevent future Cataclysms, and he takes that job seriously. He believes that power should be hidden from those that cannot use it properly. He was responsible for re-writing the laws of magic so that many of the extremes of the earlier ages could not be replicated in the post-Cataclysm era. He presents as a human with four long braids in his beard, usually hooded. In actuality, he was a mkhulu (mind flayer) before his ascension. He rarely calls clergy, but does make warlock pacts quite frequently.
+Yogg-Maggus was chosen to prevent future Cataclysms, and he takes that job seriously. He believes that power should be hidden from those that cannot use it properly. He was responsible for re-writing the laws of magic so that many of the extremes of the earlier ages could not be replicated in the post-Cataclysm era. He presents as a human with four long braids in his beard, usually hooded. In actuality, he was a mkhulu, a parasitically-twisted psychic humanoid before his ascension. He rarely calls clergy, but does make warlock pacts quite frequently.
 
 ### Other Ascendants
 There are many ascendants worshiped across Noefra and Quartus at large. Two main ones worshiped in western Noefra are Nocthis and the Queen Ascendant.
@@ -354,7 +354,7 @@ halfling     | halfling
 human        | human
 ihmisi       | wood elf
 jazuu        | goliath
-ophidian     | snake-folk
+ophidian     | snake folk
 orc          | orc
 soulforged   | warforged
 light-touched| aasimar
@@ -362,9 +362,8 @@ fiend-touched| tiefling
 element-born | genasi
 **Non-playable** | -----
 goblin| goblin/hobgoblin &dagger;
-ika-ika| fish-folk
-mkhulu| mind flayer
-kalasaa | merfolk
+ika-ika| fish folk
+kalasaa | triton
 
 &dagger; The goblin lineage is a complex one, with a tribally-shared memory/thinking space. Not a hive mind, but more like one person bleeding into another within the tribe. This makes them *genetically* ADHD. As well as literally smarter together than apart. They naturally pour some of their shared energy into a few individuals, transforming them into larger "hobgoblins" that are less prone to the tide-like enthusiasms because they have more distance from the shared memory space.
 }}
@@ -645,7 +644,7 @@ As a matter of policy, Mar'osh is strictly neutral, in a heavily armed way. They
 One of the newer nations formed after the breakup of Kaelthian dominance over the Sea of Grass, Merrydale owns the new northern trade route crossing the Freeglas ferry and heading to Fuar Uulan. Ruled by a former Kaelthian mage named Lady Protector Rebecca Fallowstone. Her administration emphasizes building trade and economic growth...to funnel maximum power and wealth into the Lady Protector's pockets. The people here are mostly human with some numbers of halflings. By 260 AC, Merrydale has expanded to fill the area between the Shield River to the south and the Glasweil to the north, with the eastern boundary running up against the Uulani border.
 
 #### Nazorat
-Another of the Abandoned, Nazorat lies north-west of Bolor Hold and near Zhapai Karmap. Once dominated by a group of mind flayers, the dwarves here have been altered by those mind flayers to have grey skin, no head hair, and grey beards. Very insular, only dwarves are permitted permanent residence inside the city.
+Another of the Abandoned, Nazorat lies north-west of Bolor Hold and near Zhapai Karmap. Once dominated by a group of mkhulu, the dwarves here have been altered by those beings to have grey skin, no head hair, and grey beards. Very insular, only dwarves are permitted permanent residence inside the city.
 
 While Bolor works by strength of body and endurance, Nazorat, the City of Dominance, works by strength of mind. Torture is common. blackmail is legal. They hire out small bands of spies and infiltrators, capable of invisibility and other "mental powers".
 

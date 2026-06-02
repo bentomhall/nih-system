@@ -47,7 +47,7 @@ Quartus is home to many of the familiar races (called lineages here because neit
 
 Features marked with (+) are there for the touched lineages; those are the features replaced by the touched race's primary feature. Lineages without such features cannot become touched.
 
-A few notes are in order. Dawn of Hope takes a traditional approach toward player lineages. Each lineage grants ability score increases (aiming for either +2 to one and +1 to another or +1 to three separate ability scores). Each lineage has several "cultural sub-lineages". These are primarily cultural rather than genetic, but some result in different normal appearances, usually for magical-historical reasons. Each entry also contains a "status" line with either Regional or Core. Regional lineages are only found in some small areas of Noefra and are unusual elsewhere. This is intended as a help for GMs and players to know how their lineage will be received in various areas. None of the lineages presented here are *feared* or *hated* (other than by particularly ignorant or bigoted individuals), but an Abandoned dwarf will, with their grey skin and large eyes, tend to draw attention and surprise in, say, Auringon.
+A few notes are in order. Dawn of Hope takes a traditional approach toward player lineages. Each lineage grants ability score increases (aiming for either +2 to one and +1 to another or +1 to three separate ability scores). Each lineage has several "cultural sub-lineages". These are primarily cultural rather than genetic, but some result in different normal appearances, usually for magical-historical reasons. Each entry also contains a "status" line with either Regional or Core. Regional lineages are only found in some small areas of Noefra and are unusual elsewhere. This is intended as a help for Game Masters and players to know how their lineage will be received in various areas. None of the lineages presented here are *feared* or *hated* (other than by particularly ignorant or bigoted individuals), but an Abandoned dwarf will, with their grey skin and large eyes, tend to draw attention and surprise in, say, Auringon.
 
 {{note
 #### Lineage Restrictions
@@ -592,7 +592,7 @@ Ship Folk culture is, as the name suggests, oriented towards ships. Those who sp
 
 A world designed from the ground up as a new take on the familiar themes and elements of D&D.
 :
-Designed for GMs wanting to set a game on Quartus, for players in such games wanting to more thoroughly understand the world, or for those seeking inspiration.
+Designed for Game Masters wanting to set a game on Quartus, for players in such games wanting to more thoroughly understand the world, or for those seeking inspiration.
 
 More than just places and nations, the people are what makes a setting live. This document contains the playable (and a few of the non-playable) peoples (called "lineages") found in western Noefra, the primary play area of Dawn of Hope. It is intended both for DMs and for players.
 
@@ -602,7 +602,7 @@ More than just places and nations, the people are what makes a setting live. Thi
 * Expanded Rules (Incantations, Downtime, Skill Tricks)
 ___
 
-Designed for use with 2014 5e D&D.
+Designed for use with other Fifth edition content.
 
 ![Italian Coast Scene with Ruined Tower, 1838, by Thomas Cole](https://homebrewery.naturalcrit.com/assets/ruined_tower.webp){position:absolute,bottom:0,right:-250px,height:100%}
 

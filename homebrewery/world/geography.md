@@ -781,7 +781,7 @@ The ancestral language for Common, much like how real-world Latin is the precurs
 
 A world designed from the ground up as a new take on the familiar themes and elements of D&D.
 :
-Designed for GMs wanting to set a game on Quartus, for players in such games wanting to more thoroughly understand the world, or for those seeking inspiration.
+Designed for Game Masters wanting to set a game on Quartus, for players in such games wanting to more thoroughly understand the world, or for those seeking inspiration.
 
 ## Continue the Adventure
 * Peoples of Quartus

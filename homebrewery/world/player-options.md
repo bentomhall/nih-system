@@ -1,7 +1,96 @@
-# Classes of Hope
-{{wide
-## Containing classes and subclasses adapted for Dawn of Hope
+{{frontCover}}
+
+{{logo ![](https://homebrewery.naturalcrit.com/assets/naturalCritLogoRed.svg)}}
+
+# Player Options
+## Classes, Spells, and New Subsystems for Players
+___
+
+{{banner Dawn of Hope}}
+
+{{footnote
+  Containing multiple new classes, subclasses, spells, and two new subsystems.
 }}
+
+![The Departure, 1837, by Thomas Cole](https://homebrewery.naturalcrit.com/assets/the_departure.webp){position:absolute,bottom:0,right:-400px,height:100%}
+
+\page
+
+
+{{toc,wide
+# Contents
+
+- ### [{{ Introduction}}{{ 2}}](#p2)
+- ### [{{ Classes}}{{ 3}}](#p3)
+- #### [{{ Armsman}}{{ 4}}](#p4)
+- ##### [{{ Martial Archetypes}}{{ 7}}](#p7)
+- #### [{{ Barbarian}}{{ 10}}](#p10)
+  - [{{ Path of the Stormbound Fist}}{{ 10}}](#p10)
+  - [{{ Path of the Whirling Blade}}{{ 11}}](#p11)
+- #### [{{ The Beholden (Variant Warlock)}}{{ 12}}](#p12)
+- ##### [{{ Otherworldly Patrons}}{{ 18}}](#p18)
+  - [{{ Pact of Destruction}}{{ 18}}](#p18)
+  - [{{ Pact of Protection}}{{ 19}}](#p19)
+- ##### [{{ Bounty Hunter (Variant Ranger)}}{{ 21}}](#p21)
+- #### [{{ Bounty hunter Archetypes}}{{ 24}}](#p24)
+  - [{{ Manhunter}}{{ 24}}](#p24)
+  - [{{ Monster Slayer}}{{ 25}}](#p25)
+- ##### [{{ Bounty Hunter Spell List}}{{ 26}}](#p26)
+- #### [{{ Druid (Subclass)}}{{ 27}}](#p27)
+  - [{{ Circle of the Spirit Talkers}}{{ 27}}](#p27)
+- #### [{{ Inventor}}{{ 29}}](#p29)
+- ##### [{{ Inventor Archetypes}}{{ 32}}](#p32)
+  - [{{ Gearhead}}{{ 32}}](#p32)
+  - [{{ Trapsmith}}{{ 32}}](#p32)
+  - [{{ Chemist}}{{ 33}}](#p33)
+- #### [{{ Mechanic}}{{ 35}}](#p35)
+- ##### [{{ Mechanist Archetypes}}{{ 38}}](#p38)
+  - [{{ Forgemaster}}{{ 38}}](#p38)
+  - [{{ Trapsmith}}{{ 38}}](#p38)
+  - [{{ Chemist}}{{ 39}}](#p39)
+- ##### [{{ Mechanic Spell List}}{{ 40}}](#p40)
+- #### [{{ Monk}}{{ 41}}](#p41)
+  - [{{ Way of Living Flame}}{{ 41}}](#p41)
+- #### [{{ Rogue}}{{ 42}}](#p42)
+  - [{{ Variant Features}}{{ 42}}](#p42)
+  - [{{ Mage Hunter (Roguish Archetype)}}{{ 42}}](#p42)
+- #### [{{ Spellblade}}{{ 43}}](#p43)
+- ##### [{{ Spellblade Focuses}}{{ 45}}](#p45)
+  - [{{ Focus: Inspiration}}{{ 45}}](#p45)
+  - [{{ Focus: War}}{{ 46}}](#p46)
+- ##### [{{ Spellblade Spell List}}{{ 46}}](#p46)
+- #### [{{ War Mage}}{{ 47}}](#p47)
+- ##### [{{ Squad Assignments}}{{ 49}}](#p49)
+  - [{{ Line Infantry}}{{ 49}}](#p49)
+  - [{{ Special Forces}}{{ 49}}](#p49)
+  - [{{ Artillery Squad}}{{ 50}}](#p50)
+  - [{{ Heavy Assault Squad}}{{ 51}}](#p51)
+- ##### [{{ Warmage Spell List}}{{ 51}}](#p51)
+- ### [{{ New and Modified Spells}}{{ 53}}](#p53)
+- #### [{{ New Spells}}{{ 54}}](#p54)
+- #### [{{ Modified SRD Spells}}{{ 57}}](#p57)
+- ### [{{ Skill Tricks}}{{ 58}}](#p58)
+  - [{{ Basic Skill Tricks}}{{ 59}}](#p59)
+  - [{{ Advanced Skill Tricks}}{{ 61}}](#p61)
+  - [{{ Expert Skill Tricks}}{{ 63}}](#p63)
+  - [{{ Master Skill Tricks}}{{ 64}}](#p64)
+- ### [{{ Incantations}}{{ 65}}](#p65)
+- #### [{{ Incantations by Rarity}}{{ 67}}](#p67)
+  - [{{ Common Incantations}}{{ 67}}](#p67)
+  - [{{ Uncommon Incantations}}{{ 72}}](#p72)
+  - [{{ Rare Incantations}}{{ 77}}](#p77)
+  - [{{ Very Rare Incantations}}{{ 83}}](#p83)
+  - [{{ Legendary Incantations}}{{ 85}}](#p85)
+- ### [{{ Copyright}}{{ 87}}](#p87)
+- #### [{{ Open Gaming License 1.0a}}{{ 87}}](#p87)
+}}
+
+# Introduction
+
+Designed for players looking for new options designed for use within Dawn of Hope (but not indelibly bound to that setting), this book contains 6 new classes (including two different takes on the same basic mold, the Inventor and Mechanist) and 5 new subclasses for barbarians, druids, monks, and rogues. It also contains two new subsystems: Skill Tricks (mini-feats designed to expand the uses of skill and tool proficiencies) and Incantations (a take on 4e's Rituals, bringing utility magic to the masses in a controlled way) and 15 new spells, as well as variant versions of 3 more often-panned spells.
+\column
+While these options were designed with Quartus in mind and have been played there, they should be setting-agnostic enough to play well in any fantasy-oriented setting.
+
 
 {{note
 #### Multiclasssing
@@ -9,6 +98,17 @@
 None of the classes, variants and subclasses presented here were designed with multiclassing in mind. Allow multiclassing in or out of them at your own risk; when I use them I don't allow these to multiclass in or out.
 }}
 \page
+{{partCover}}
+
+# Classes
+## New and Variant Archetypes
+
+{{imageMaskEdge1,--offset:10cm,--rotation:180
+  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
+}}
+
+\page
+
 
 ## Armsman
 {{note
@@ -47,9 +147,9 @@ You start with the following equipment, in addition to the equipment granted by 
 
 {{classTable
 #### The Armsman
-Level ^| Proficiency ^| Features ^| Stamina ^| Skill  ^|
-       | Bonus        |           |          | Tricks ^|
-:------|:------------:|:---------:|:---------:
+Level | Proficiency  | Features  | Stamina  | Skill   |
+     ^| Bonus       ^|          ^|         ^| Tricks ^|
+:------|:------------:|:---------:|:---------:|:------:
 1st    | +2           | Second Wind, Stamina, Weapon Mastery | 1 + CON | &mdash;
 2nd    | +2           | Action Surge, Active Defenses        | 2 + CON | &mdash;
 3rd    | +2           | Martial Archetype                    | 3 + CON | &mdash;
@@ -76,30 +176,22 @@ Level ^| Proficiency ^| Features ^| Stamina ^| Skill  ^|
 ### Second Wind
 You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can spend 1 STA use a bonus action to regain hit points equal to 1d10 + your armsman level. The cost increases by 1 STA each time you use it, resetting to 1 when you finish a long rest.
 
+\page
 ### Stamina
 As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier (minimum 1), and you regain expended points when you finish a long or short rest.
-\page
+
 ### Weapon Mastery
-You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
-
-**Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.
-
-**Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.
-
-**Light** The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.
-
-**Loading** You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature by spending 1 STA. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
-
-**Parrying** (greatsword, halberd, longsword) When you take the Deflect action while wielding a parrying weapon, you can make the riposte attack whether the triggering attack hits or misses.
-
-**Precise** (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on an 19 or 20.
-
-**Reach** You can make opportunity attacks with a reach weapon when a creature enters your range as well as leaves it.
-
-**Shields** (shield) You can make opportunity attacks with a shield (as a battering martial melee weapon with a 1d4 damage die). If you hit, you can apply the battering property (potentially knocking the creature prone).
-
-**Thrown** You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
-
+You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.  
+**Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.  
+**Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
+**Light** The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.  
+**Loading** You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature by spending 1 STA. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.  
+**Parrying** (greatsword, halberd, longsword) When you take the Deflect action while wielding a parrying weapon, you can make the riposte attack whether the triggering attack hits or misses.  
+**Precise** (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on an 19 or 20.  
+**Reach** You can make opportunity attacks with a reach weapon when a creature enters your range as well as leaves it. 
+\column
+**Shields** (shield) You can make opportunity attacks with a shield (as a battering martial melee weapon with a 1d4 damage die). If you hit, you can apply the battering property (potentially knocking the creature prone).  
+**Thrown** You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.  
 **Two-handed** You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
 
 ### Action Surge
@@ -120,12 +212,11 @@ Alternatively, you can take a feat that you qualify for.
 
 ### Skill Tricks
 When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Appendix A) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for. The total number and maximum tier (basic, advanced, expert, and master) of skill tricks you know is shown in the Skill Tricks column of the Armsman table.
-
+\page
 ### Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
-\page
 ### Repeated Strikes
 Beginning at 5th level, you've learned to carry energy from one blow to the next. Each time you hit with a weapon attack during one of your turns, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. Gathered Momentum is lost when you go at least one minute without making an attack.
 
@@ -141,16 +232,12 @@ Beginning at 6th level, you gain the following benefits:
 - You can Shove or Grapple instead of making a regular Opportunity Attack.
 
 ### Everything's a Weapon
-Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below. You can change your approach when you finish a long or short rest.
-
+Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below. You can change your approach when you finish a long or short rest.  
 **Direct.** When you make an ability check involving Intimidation, Athletics, or any ability check involving Constitution, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
-:
-**Gregarious.** When you make an ability check involving Charisma or Insight, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
-:
-**Inquisitive.** When you make an ability check involving Intelligence, Insight, or Animal Handling, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
-:
-**Intuitive.** When you make an ability check involving Wisdom or any saving throw against being charmed or scryed on, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
-:
+\column
+**Gregarious.** When you make an ability check involving Charisma or Insight, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.  
+**Inquisitive.** When you make an ability check involving Intelligence, Insight, or Animal Handling, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.  
+**Intuitive.** When you make an ability check involving Wisdom or any saving throw against being charmed or scryed on, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.  
 **Subtle.** When you make an ability check involving Acrobatics, Stealth, Sleight of Hand, or Deception, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
 
 ### Indomitable
@@ -186,7 +273,7 @@ Starting at 7th level, your training has taught you how to magically compel a ta
 
 #### Calming Words
 Starting at 10th level you've become particularly adept at predicting what will cause controversy--words are weapons too. As such, you can add twice your proficiency bonus to any Charisma check you make to defuse tense situations. In addition, when an ally you can hear makes a Charisma (Persuasion) check and you Help them, they can add your Charisma (Persuasion) modifier to theirs when resolving the check.
-
+\column
 #### Resilience
 Starting at 15th level, you can ignore your wounds and keep fighting even through attacks that would normally incapacitate you. When you are reduced to 0 HP or would be outright killed (such as by a Power Word: Kill effect), you can spend 8 STA to instead heal to half your maximum HP.
 
@@ -248,9 +335,8 @@ In addition, creatures of your choice that can see or hear you have advantage on
 
 \page
 ##### Commanding Presence
-Starting at 10th level, you've learned to inspire your allies to bursts of heroics. When you use your Action Surge, instead of taking an additional action, you can choose one of the following. All creatures of your choice that can see and hear you within 30 feet gain the chosen benefit until the end of your next turn.
-
-**Bravura:** Affected creatures can take one additional reaction or bonus action (their choice) during the duration of the effect.  
+Starting at 10th level, you've learned to inspire your allies to bursts of heroics. When you use your Action Surge, instead of taking an additional action, you can choose one of the following. All creatures of your choice that can see and hear you within 30 feet gain the chosen benefit until the end of your next turn.  
+**Bravura:** Affected creatures can take one additional reaction or bonus action (their choice) during the duration of the effect.    
 **Insightful:** Affected creatures gain a bonus to their next saving throw equal to your Charisma modifier.  
 **Inspirational:** Affected creatures gain temporary hit points equal to your level.  
 **Resourceful:** Once during the duration, affected creatures that deal damage with an attack deal additional damage equal to half your level + your Charisma modifier. If they make at least one attack and do not hit with any attacks that turn, they gain temporary hit points equal to the additional damage that would have been dealt.  
@@ -264,7 +350,7 @@ Starting at 15th level, you've learned to bring others with you when you Flash S
 At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They gain hit points equal to your proficiency bonus &times; your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
 \page
 
-## Barbarian (Subclasses)
+## Barbarian
 Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two shouldn't be played in the same party.
 
 ### Path of the Stormbound Fist
@@ -309,8 +395,8 @@ Those that follow the Path of the Whirling Blade seek to embody the essential na
 {{classTable
 #### The Whirling Blade
 
-Level ^| Shaping Die ^|
-       | Size
+Level  | Shaping Die |
+      ^| Size       ^|
 :----|:----:
 3 | d6
 6 | d8
@@ -334,7 +420,7 @@ Additionally, you make the extra attack from wielding two light weapons as part 
 
 #### Flash Step
 Starting at level 6, while enraged, you can use your reaction to move up to your speed toward anyone who attacked you or cast a spell with you as a target. This movement does not provoke opportunity attacks if you expend a shaping die as part of the reaction.
-
+\column
 #### Shielding Tempest
 Starting at 10th level, you can expend a shaping die when you are targeted by a ranged attack. If you do so, make an attack roll against the attacker's AC. On a hit, you suffer no ill effects from the attack and the attacker instead takes the normal damage of the attack + the amount you rolled on your shaping die. You can only use this once per turn.
 
@@ -448,12 +534,12 @@ Note that you cannot create spell slots of 6th or higher level and thus cannot c
 
 ### Magical Deflection
 When you take the Deflect special reaction, you can spend 2 spell points instead of consuming the normal use. Alternatively, you can take the Deflect special reaction by spending 2 spell points when you would be hit by *magic missile*. If you do so, the spell has no effect on you.
-\page
+
 ### Blast Effects
 At 2nd level, you have learned to add additional effects to your eldritch blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your eldritch blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise.
 
 Starting at level 7, you can learn Blast Effects labeled as Greater and the cost of non-greater blast effects is reduced by 1 to a minimum of 0.
-
+\page
 ### Eldritch Invocations
 In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain Beholden levels, you gain additional invocations of your choice, as shown in the Invocations column of the Beholden table.
 
@@ -473,7 +559,7 @@ You can use your eldritch blast to create a magical weapon of solidified aether 
 Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
 
 You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
-
+\column
 #### Pact of the Tome
 Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one first level spell from any list. While the book is on your person, you can cast those cantrips at will and cast the spell by expending the requisite amount of spell points. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that costs less than your spell point limit.
 
@@ -486,12 +572,12 @@ Alternatively, you can take a feat that you qualify for.
 
 ### Skill Tricks
 When you gain an Ability Score Improvement, you can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See Skill Tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
-\page
+
 ### Blast Shapes
 When you reach 5th level, you learn to modify the shape of your eldritch blast in various ways. You learn one Blast Shape detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level.
 
 Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 to a minimum of 0.
-
+\page
 ### Mystic Arcanum
 At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th level spell from any list as this arcanum. It becomes a Beholden spell for you and uses Charisma as its spellcasting ability.
 
@@ -544,7 +630,7 @@ You can read all non-coded writing, and have advantage on any checks made to dec
 
 #### Fiendish Vigor
 You can cast *false life* on yourself at will, without expending spell points or material components. When you reach 5th level, it acts as if you spent a 2nd level slot on it. At 9th level, you get the benefit of casting it with a 3rd level slot. Regardless of the level, you always get the maximum number of temporary hit points for that level.
-\page
+
 #### Gaze of Two Minds
 You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
 
@@ -559,15 +645,17 @@ You can cast *disguise self* at will without expending spell points.
 #### Master of Myriad Forms
 Prerequisite: 9th level
 
-You can cast alter self at will without expending spell points.
-
+You can cast *alter self* at will without expending spell points.
+\page
 #### Minions of Chaos
 Prerequisite: 9th level 
 
 You can cast *summon elemental* as an action once without using spell points. You can't do so again until you finish a long rest.
 
 #### Mire the Mind
-Prerequisite: 5th level You can cast slow once without using spell points. You can't do so again until you finish a long rest.
+Prerequisite: 5th level 
+
+You can cast slow once without using spell points. You can't do so again until you finish a long rest.
 
 #### Misty Visions
 You can cast *silent image* at will, without expending spell points or material components.
@@ -602,11 +690,11 @@ You can cast *bane* once without using spell points. You can't do so again until
 Prerequisite: 5th level, Pact of the Blade feature
 
 You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn. Additional hits after the first only deal the weapon's normal damage instead of the eldritch blast damage.
-
+\column
 #### Visions of Distant Realms
 Prerequisite: 12th level
 
-You can cast arcane eye at will, without expending spell points.
+You can cast *arcane eye* at will, without expending spell points.
 
 #### Uncanny Skill
 Prerequisite: 4th level
@@ -624,7 +712,7 @@ You can communicate telepathically with your familiar and perceive through your 
 Prerequisite: 5th level
 
 You can cast *speak with dead* at will without expending spell points or requiring material components.
-\page
+
 #### Witch Sight
 Prerequisite: 15th level 
 
@@ -638,7 +726,7 @@ Targets hit by your eldritch blast are pulled 5 feet toward you for every SP spe
 
 #### Blinding Blast: 3 SP
 Targets of your eldritch blast must make a Constitution saving throw or take the damage as necrotic damage and be blinded until the end of your next turn. On a successful saving throw, targets take half damage. This Constitution saving throw replaces the attack.
-
+\page
 #### Draining Blast: 5 SP, greater
 Your eldritch blast deals necrotic damage. Targets hit your eldritch blast take additional necrotic damage equal to your Charisma bonus and you regain hit points equal to half the necrotic damage dealt. If this affects multiple creatures, each creature takes the damage but you only heal once.
 
@@ -668,7 +756,7 @@ When you use your eldritch blast, you can instead choose to make it take the sha
 
 #### Eldritch Spear: 1 SP
 The range of your eldritch blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets and it does not provoke opportunity attacks from creatures within 5 feet.
-\page
+
 #### Eldritch Sphere: 6 SP, greater
 When you use your eldritch blast, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within the spells' normal range. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
 
@@ -677,7 +765,7 @@ Make an unarmed attack using Charisma as your weapon attack modifier. On a hit, 
 
 #### Split Bolts: 2 SP
 When you use your eldritch blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 damage of the appropriate attacks. The additional damage from your Charisma modifier only applies to one of them. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
-
+\page
 ## Otherworldly Patrons
 The beings that serve as patrons for beholden are mighty inhabitants of other planes of existence—not necessarily gods, but almost godlike in their power. Various patrons give their beholden access to different powers and invocations, and expect significant favors in return. Some gods choose both beholden and clerics--the two serve different purposes and often do not see eye to eye.
 
@@ -709,7 +797,7 @@ Beholden Level|Spells
 Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your beholden level (minimum of 1).
 
 Alternatively, when a hostile creature within 60 feet of you is reduced to 0 hit points by someone else, you can spend your reaction to gain the temporary hit points. You can use this alternative reaction a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long or short rest.
-\page
+
 #### Eldritch Backlash
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects:
 
@@ -720,7 +808,7 @@ Starting at 10th level, you can choose one damage type when you finish a short o
 
 #### Retribution
 Starting at 14th level, when you take damage from an attack or ability, you can use your reaction to force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your eldritch blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again).
-
+\page
 ### Pact of Protection
 Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), archfey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
 
@@ -734,7 +822,7 @@ Beholden Level|Spells
 5th|Beacon of hope, revivify
 7th|Death ward, mass cure wounds
 9th|Antilife shell, wall of stone
-\column
+
 #### Steadfast Protection
 When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
 
@@ -747,10 +835,10 @@ Starting at 6th level, you learn an additional Blast Effect that does not count 
 Starting at 10th level, you can call on your patron to shield allies from magical abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw at advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
 
 Once you use this feature, you can't use it again until you finish a short or long rest.
-
+\column
 #### Legendary Effect: Globe of Invulnerability
 At 14th level, you learn the *globe of invulnerability* spell and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
-\page
+
 #### Pact of Inquiry
 Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge--the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
 
@@ -767,12 +855,12 @@ Beholden Level|Spells
 
 #### Deceptive Charm
 When a creature you can see targets you with an attack or an ability that causes damage, you can spend your reaction to force them to make a Charisma saving throw against your Spellcasting DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to charm. You can use this feature a number of times equal to your Charisma modifier, regaining expended uses when you finish a long or short rest.
-
+\page
 #### Eldritch Interrogation
 At 6th level you learn the Whispers of the Grave invocation. It does not count against your normal limit of Invocations known. When you target a corpse with this invocation, the corpse is required to speak truthfully and answer the questions to the best of its ability even if it recognizes you as an enemy.
 
 If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.
-\column
+
 #### Psychometry
 Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from".
 
@@ -799,7 +887,7 @@ As a ranger variant, it is not intended to be played alongside a “stock” ran
 #### Quick Build
 To quickly build a bounty hunter, make Dexterity your highest ability score, with Wisdom and Constitution your secondaries. For weapons, you should either use a longbow for ranged combat or two light weapons for melee combat.
 
-## Class Features
+### Class Features
 As a bounty hunter, you gain the following class features.
 
 #### Hit Points
@@ -821,6 +909,8 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) two shortswords or (b) two simple melee weapons
 - (a) a dungeoneer's pack or (b) an explorer's pack
 - A longbow and a quiver of 20 arrows
+
+::::::
 
 {{classTable,wide
 Level  | Proficiency  | Features  | Focused  | Stamina  | Aether  | Max Spell  | 
@@ -871,7 +961,7 @@ While traveling in your favored terrain, you gain the following benefits:
 - Additionally, when you are in your favored terrain, creatures have disadvantage on attempts to hide from you and you have advantage on Wisdom (Perception) checks made to spot hidden creatures and objects.
 
 You choose additional favored terrain types at 6th and 10th level.
-
+\column
 ### Weapon Specialization
 You are better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn--this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
 
@@ -984,7 +1074,7 @@ At 3rd level, you gain the following features, but can only apply one of them pe
 **Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn. You can use it again on that same turn if you spend 1 STA when you hit again.  
 **Giant Killer.** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.  
 **Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon. You can use it again on that same turn if you spend 1 STA when you hit again.
-
+\column
 #### Defensive Tactics
 At 7th level, you gain the following features, but can only apply one of them per turn.
 
@@ -1010,7 +1100,7 @@ The Bounty hunter Spell List table contains a short summary of the spells availa
 
 Note: This spell list was designed with the idea that my Incantation system (Expanded Rules) is in play. Otherwise, use the Ranger list from the PHB + the additional spell list from Tasha’s, but remove hunter’s mark (as it’s a duplicate of Favored Foe and should not be stacked).
 
-{{spellList
+{{spellList,wide
 #### 1st level (2 AET)
 - Cure Wounds
 - Enchanted Strike(\*)
@@ -1106,19 +1196,23 @@ Your spirit guide circles overhead in the form of a spectral hawk, warning you a
 \page
 #### Spirit Specialization
 At 6th level, you specialize in one particular kind of spirit manifestation. This modifies your chosen manifestation as shown in the Spirit Specialization table as well as an additional proficiency. If you already are proficient in the indicated skill, you gain expertise in it instead.
-::::::::::
-{{wide
+
 Manifestation | Additional Manifestation Benefit | Associated Skill
 :----|:----:|:----:
-Ancestral Warrior | When the warrior hits with an attack, the target has disadvantage on its next attack. | Athletics or heavy armor. If armor is chosen, you may wear metal armors of any type.
-Beguiling Nymph | The charm effect can now target any creature and the target has disadvantage on the saving throw. | Persuasion or Deception
-Guiding Ancestor | The effect no longer requires your reaction but you can only use it twice between the start of two of your consecutive turns. | One tool of your choice or History
-Protecting Bear | The bear now has resistance to all damage. | Athletics or Nature
-Prowling Cat | The range increases to 60 feet and affected allies gain improved darkvision (treating all light conditions as bright light out to 60 feet). | Stealth or Acrobatics
-Watchful Hawk | Attacks against allies made by unseen attackers in the area no longer gain advantage. | Perception or Nature
-}}
-
-
+Ancestral Warrior | Distracting Attack | Athletics or heavy armor. 
+Beguiling Nymph | Enhanced Charm | Persuasion or Deception
+Guiding Ancestor | Effortless Guidance | One tool of your choice or History
+Protecting Bear | Tough Hide | Athletics or Nature
+Prowling Cat | Catseye | Stealth or Acrobatics
+Watchful Hawk | Shared Vigilance | Perception or Nature
+____
+**Distracting Attack:** When the warrior hits with an attack, the target has disadvantage on its next attack. If armor is chosen as the associated skill, you may wear metal armors of any type.  
+**Enhanced Charm:** The charm effect can now target any creature and the target has disadvantage on the saving throw.  
+**Effortless Guidance:** The effect no longer requires your reaction but you can only use it twice between the start of two of your consecutive turns.  
+**Tough Hide:** The bear now has resistance to all damage.  
+**Catseye:**  The range increases to 60 feet and affected allies gain improved darkvision (treating all light conditions as bright light out to 60 feet).  
+**Shared Vigilance:** Attacks against allies made by unseen attackers in the area no longer gain advantage. 
+____
 #### Verge Walker
 Starting at 10th level, you have become preternaturally aware of the presence of spirits and sensitive to their intent. You have advantage on ability checks made to interact with fey or incorporeal undead and cannot be surprised by them while conscious.
 
@@ -1191,18 +1285,18 @@ Level|Prof. Bonus|Features|Charge Die|Maximum Charges|Charge Limit
 
 }}
 \column
-### Archetype (1st, 3rd, 6th, 9th, 13th)
+### Archetype
 Adventuring inventors fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Gearhead, who specializes in enhancing his armor until he’s a walking tank and the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-### Improved Alchemical Munitions (1st)
+### Improved Alchemical Munitions
 You can make one vial of alchemist fire or acid as part of a long rest by expending 2 gp.
 
 When you attack with alchemist’s fire or acid, you can do so as part of an Attack action, and make the attack with proficiency.
 
-### Mechanical Talent (1st)
+### Mechanical Talent
 Starting at 2nd level, when you make an ability check to understand, fix, disable, or otherwise interact with mechanical items or aetheric technology, you can add twice your proficiency bonus instead of whatever proficiency bonus (including none at all) would be applied normally.
 
-### Clockwork Battery (2nd)
+### Clockwork Battery
 Starting at 2nd level, you’ve developed a battery system that can feed additional energy into your equipment, allowing you to manipulate aether, creating quasi-magical effects without the trappings or consequences of casting spells.
 
 This battery stores a certain amount of charge while you rest, which can then be expended to power your effects.
@@ -1218,17 +1312,17 @@ When an effect allows you to choose how many Charge Dice to expend, you can choo
 The associated ability score for your Charge effects is Intelligence. When an effect calls for your Battery DC, it is calculated by  
 **Charge DC** = 8 + your Intelligence Modifier + your proficiency bonus.
 
-### Energy Augmentation (2nd)
+### Energy Augmentation
 The most simple use of your Clockwork Battery is to infuse your weapon strikes with quasi-elemental energy or simply augment their striking power. When you hit with a weapon attack, unarmed strike, or with an alchemical munition, you can expend a number of Charge Dice up to your charge limit. When you do so, roll the Charge Dice and add the total to the damage dealt. You choose the damage type from the following: cold, fire, lighting, thunder, or the damage type of the weapon. When you do so, the entire damage result counts as coming from a magical weapon.
 
-### Clockwork Friend (3rd)
+### Clockwork Friend
 At 3rd level you’ve created a tiny clockwork construct to serve as your friend. It takes the shape of a spider, mouse, beetle or other similar non-flying creature. It has 1 HP, AC 10, 30 ft of movement, normal vision (passive perception of 10). Its Strength and Intelligence scores are 1 and all of its other ability scores are 10. It cannot attack, but can otherwise understand your simple orders and will fulfil them as practical for its shape. While it is on your person, it is considered to be immune to all damage and does not make saving throws.
 
 When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.
 
-- Movement: sticky pads (30 ft climb speed) or fins (30 ft swim speed)
-- Sensory: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
-
+- **Movement**: sticky pads (30 ft climb speed) OR fins (30 ft swim speed)
+- **Sensory**: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
+\column
 ### Multitool (3rd)
 At 3rd level, you’ve created a clockwork tool that counts as any tool with which you are proficient, as well as the following:
 
@@ -1240,39 +1334,39 @@ At 3rd level, you’ve created a clockwork tool that counts as any tool with whi
 
 If you lose this tool, you can recreate it by expending 1 GP of metal and wire during a long rest. It has a weight of 2 lbs and packs to the size of a sheathed shortsword.
 
-### Ability Score Increase (4th, 8th, 12th, 16th, 19th)
+### Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
 Alternatively, you can choose a feat that you qualify for.
 
-### Skill Tricks (4th, 8th, 12th)
+### Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder.
 
-### Extra Attack (5th)
+### Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
 
 In addition, you ignore the loading property of weapons as you’ve modified your personal weapon to automatically reload itself.
 \page
-### Energy Synthesis (6th)
+### Energy Synthesis 
 Starting at 6th level, you can release a burst of quasi-elemental aether from your Clockwork Battery. As an action, expend a number of Charge Dice up to your charge limit, roll and sum them, and pick one of the following:
-
+____
 **Flamethrower**: You create a 30 ft cone of fire. All creatures within that area must make a Dexterity saving throw against your Charge DC. On a failed save, they take the rolled total as fire damage now and at the beginning of their next turn. On a success, they only take the damage now.  
 **Stunner**: One creature you can see within 30 ft must make a Constitution saving throw against your Charge DC. On a failed save, they take the rolled total as lightning damage and are stunned until the end of your next turn. On a success, they take half as much damage and are not stunned but cannot take reactions until the end of your next turn.  
 **Air Blast**: All creatures within 10 ft. of you must make a Strength saving throw against your charge DC. On a failed save they take the rolled total as thunder damage and are pushed 5 feet away and knocked prone. On a success, they take half as much damage and are only pushed but not knocked prone. Creatures two sizes or more larger than you make the save at advantage; creatures smaller than you make the save at disadvantage. This also disperses any effect that can be dispersed by a strong wind.
-
-### Adaptive Defense (7th)
+____
+### Adaptive Defense
 At 7th level, you’ve incorporated significant alterations into your non-weapon gear, letting you defend yourself more efficiently in emergencies. You gain the following benefits as long as you are wearing any armor.
 
 - As a reaction when you take damage from a source you can see, you can expend a number of Charge Die up to your charge limit. Roll the dice and subtract the result from the damage taken. This occurs after resistance and vulnerability is accounted for.
 - As a reaction when you make a Strength, Dexterity, or Constitution ability check or saving throw, you can expend one Charge Die and add the result to the ability check or saving throw result.
 - As a bonus action, you can spend a number of Charge Dice up to your charge limit. Roll the dice and add the total to your hit points. You can only take this option if you are below half your maximum hit points.
 
-### Underwater Movement Engine (7th)
+### Underwater Movement Engine
 Starting at 7th level, you’ve modified your Clockwork Battery and gear to produce a bubble of air and jet propulsion while underwater. While you are wearing armor, you gain a swimming speed of 40 ft and can breathe underwater.
 
 Additionally, this air filtration gives limited protection against gaseous hazards. When you make a Constitution saving throw against airborne poisons (such as a green dragon’s breath weapon or the *cloudkill* spell), you do so at advantage.
 
-### Overclocked Clockwork Friend (9th)
+### Overclocked Clockwork Friend
 Starting at 9th level, you can spend 1 charge die to temporarily enhance your clockwork friend. It gains one of the following abilities:
 
 - A 60 ft fly speed for one hour.
@@ -1281,105 +1375,107 @@ Starting at 9th level, you can spend 1 charge die to temporarily enhance your cl
 
 Additionally, it has hit points equal to 5 times the sum of your proficiency bonus and your Intelligence modifier (minimum 5 times your proficiency bonus) and its armor class increases by your proficiency bonus.
 
-### Improved Energy Synthesis (10th)
+### Improved Energy Synthesis
 At 10th level, you gain an additional option for your Energy Synthesis ability.  
 **Freeze Ray**: All creatures in a 60 ft line that is 5 ft wide must make a Constitution saving throw. On a failed save, they take the rolled total as cold damage and are restrained for one minute. On a success, they take half as much damage and are not restrained, but their speed is reduced to 0 until the end of your next turn. Restrained creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.
 
 Alternatively, if you spend 4 dice, you create the effect of the wall of ice spell, except it does not require concentration and the wall must be created within 60 ft of you.
 
-### Improved Energy Augmentation (11th)
+### Improved Energy Augmentation
 Starting at 11th level, trace charge affects your weapon attacks even when you do not spend charge directly. Whenever you hit with a weapon attack and have at least one charge remaining, the damage increases by your Intelligence modifier. You choose the damage type from cold, fire, lightning, thunder, or the weapon’s damage type. Your weapon attacks are magical even if you do not expend charge to augment the attack.
 \page
-### 3D Movement Engine (14th)
+### 3D Movement Engine
 At 14th level, your movement engine has improved to the point that you gain a 40 ft fly speed and can hover while wearing armor. Additionally, you become immune to airborne poisons and diseases.
 
-### Completed Clockwork Friend (15th)
+### Completed Clockwork Friend
 By spending one minute, you can alter your friend’s size between tiny, small, medium, and large–it also gains a 60 ft fly speed for one hour when you do so. If it is sufficiently large, you or any creature you designate can ride it.
 
 While you are adjacent to your friend or it is being ridden, it ignores all damage and does not make saving throws.
 
-### Expert Energy Synthesis (17th)
+### Expert Energy Synthesis
 At 17th level, your Clockwork Battery has become more efficient. When you use your Energy Synthesis ability and one or more of the targets succeed on their saving throw, you regain one of the expended charge dice. If every target succeeded on the saving throw, you regain two charge dice (if you spent at least that many).
 
-### Self-Repair Circuits (20th)
+### Self-Repair Circuits
 At 20th level, your Clockwork Battery can preserve your life even when you take fatal damage. When you are reduced to 0 hit points or would be killed outright, roll all your remaining charge dice (or one if you have none remaining). Any effects that would kill you are nullified, your hit points are set to the rolled total (or your maximum hit points if the total would put you above your maximum) instead of 0 and all negative conditions affecting you are removed. After one minute, you gain a level of exhaustion. Once you use this ability, you cannot do so again until you finish a long rest.
 
-## Archetypes
+## Inventor Archetypes
 ### Gearhead
-The gearhead tinkers with a suit of clockwork armor adapted for themselves. A frame
+The gearhead tinkers with a suit of clockwork armor adapted for themselves. Starting with a powered frame over which normal armor hangs and slowly growing more and more elaborate.
 
-#### Power Armor: Core (1)
+#### Power Armor: Core
 You gain proficiency in heavy armor. Your carrying/lift/drag capacity doubles.
 
-#### Additional Proficiencies (1)
+#### Additional Proficiencies
 You gain proficiency in athletics and intimidation.
 
-#### Power Armor: Limbs (3)
-You always count as having a running start when you jump and your high jumps are as far as your long jumps.
+#### Power Armor: Limbs
+Starting at 3rd level, you always count as having a running start when you jump and your high jumps are as far as your long jumps.
 
 Additionally, you have advantage when grappling or shoving creatures your size or smaller and can grapple creatures up to two sizes larger than you.
 
-#### Power Armor: Helmet (6)
-You cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
+#### Power Armor: Helmet
+Starting at 6th level, you cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
 
-#### Power Armor: Improved Battery (9)
-As an action, you can regain up to four charge dice. Once you use this ability, you cannot do so again until you finish a long rest.
+#### Power Armor: Improved Battery
+Starting at 9th level, as an action, you can regain up to four charge dice. Once you use this ability, you cannot do so again until you finish a long rest.
 
-#### Power Armor: Complete Suit (13)
-Your full armor now works together even better. You gain the following features:
+#### Power Armor: Complete Suit
+Starting at 13th level, your full armor now works together even better. You gain the following features:
 
 - You are immune to being grappled and cannot be non-magically restrained. You have advantage on saving throws to resist magical restraint and ability checks or saving throws to escape restraint.
 - When you start your turn and are stunned, paralyzed, or otherwise incapacitated, you can end that effect by expending one Charge Die. This does not require an action.
 
 ### Trapsmith
-#### Ricochet Shot (1)
-If you miss with a ranged weapon attack, you can re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage.
+The trapsmith focuses on ranged combat and rapidly sythesizing enhanced tools and traps.
 
-#### Additional Proficiencies (1)
+#### Ricochet Shot
+If you miss with a ranged weapon attack, you can spend a charge die re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage.
+
+#### Additional Proficiencies
 You gain proficiency with acrobatics, deception, and thieves tools.
 
-#### Zip Line (3)
-You can shoot a special arrow attached to a cable up to 60 ft at a solid surface. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Perception check against your invention DC to see it–if they do not and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a long or short rest.
+#### Zip Line
+Starting at 3rd level, you can shoot a special arrow attached to a cable up to 60 ft at a solid surface. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Perception check against your invention DC to see it–if they do not and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a long or short rest.
 
-#### Mine-Layer (6)
-When you use your Energy Synthesis ability, you can choose instead to plant the effect at a point you can see within 30 ft and delay its activation until you spend your reaction to trigger it. When triggered, you choose the direction or target (for flamethrower, stunner, or freeze ray). If 10 minutes elapse or you use your Energy Synthesis ability again, the original effect dissipates without triggering, and you regain the Charge Dice you expended on that original effect.
+#### Mine-Layer
+Starting at 6th level, when you use your Energy Synthesis ability, you can choose instead to plant the effect at a point you can see within 30 ft and delay its activation until you spend your reaction to trigger it. When triggered, you choose the direction or target (for flamethrower, stunner, or freeze ray). If 10 minutes elapse or you use your Energy Synthesis ability again, the original effect dissipates without triggering, and you regain the Charge Dice you expended on that original effect.
 \page
-#### Aether Scanner (9)
-You have created a monocle that grants you the benefit of the detect magic and see invisibility spells. If you lose this monocle, you can recreate it during a long rest by spending 100 gp.
+#### Aether Scanner
+At 9th level, you have created a monocle that grants you the benefit of the *detect magic* and *see invisibility* spells. It does not require concentration, but must be worn by you to have this effect. If you lose this monocle, you can recreate it during a long rest by spending 100 gp.
 
-#### Perfected Synthesis (13)
-When you use your Mine-Layer or Energy Synthesis ability, the ability's effect is increased based on the chosen version. Choose one of the following that applies to your chosen mode:
-
-- Empowered (Any): You can choose to maximize up to half the Charge Dice rolled.
-- Napalm (Flamethrower): Targets that fail their saving throw take the damage at the start of each of their turns for one minute or until they use an action to put out the fire. Targets that succeed take the damage again at the beginning of their next turn, after which the fire goes out.
-- Arcing Stun (Stunner): This effect now chains from the original target to up to two additional creatures of your choice within 30 ft of the original target. They are affected as if they were the primary target.
-- Gale Force (Air Blast): The radius is now 20 ft and the push distance is 10 feet. Creatures larger than you no longer make the save at advantage.
-- Extreme Cold (Freeze Ray): Creatures restrained by the ice now take half the damage at the beginning of each of their turns. The area remains a 5' tall wall of ice for one minute. Additionally, you only need to spend 2 dice instead of 4 to use the wall of ice option.
-
+#### Perfected Synthesis
+Starting at 13th level, when you use your Mine-Layer or Energy Synthesis ability, the ability's effect is increased based on the chosen version. Choose one of the following that applies to your chosen mode:
+____
+**Empowered (Any)**: You can choose to maximize up to half the Charge Dice rolled.  
+**Napalm (Flamethrower)**: Targets that fail their saving throw take the damage at the start of each of their turns for one minute or until they use an action to put out the fire. Targets that succeed take the damage again at the beginning of their next turn, after which the fire goes out.  
+**Arcing Stun (Stunner)**: This effect now chains from the original target to up to two additional creatures of your choice within 30 ft of the original target. They are affected as if they were the primary target.  
+**Gale Force (Air Blast)**: The radius is now 20 ft and the push distance is 10 feet. Creatures larger than you no longer make the save at advantage.  
+**Extreme Cold (Freeze Ray)**: Creatures restrained by the ice now take half the damage at the beginning of each of their turns. The area remains a 5' tall wall of ice for one minute. Additionally, you only need to spend 2 dice instead of 4 to use the wall of ice option.
+____
 ### Chemist
+Chemists focus on the alchemical side of the inventor's life, creating ways to better disperse their munitions and potions to others, as well as creating new munitions
 #### Additional Proficiencies
 You gain proficiency in Arcana and Medicine, as well as alchemist’s tools and herbalists’ kits.
 
-#### Munition Launcher (3rd)
+#### Munition Launcher
 At 3rd level, you’ve created a system to launch potions, alchemical items, and other munitions out to 90 ft as an action. If you target a friendly creature, they can catch it out of the air and use it on themselves as a reaction. If you target a hostile creature with an alchemical munition, make the attack roll as normal. If you target a location, it simply hits that location.
 
-#### Fast Hands (3rd)
+#### Fast Hands
 Starting at 3rd level, you can use potions on yourself or administer them to someone adjacent to you as a bonus action.
 
-#### Extra Alchemical Munitions (6th)
-At 6th level, you’ve learned to create three additional types of alchemical munitions–the firestone, tanglefoot bag and the thunderstone.
-
+#### Extra Alchemical Munitions
+At 6th level, you’ve learned to create three additional types of alchemical munitions&mdash;the firestone, tanglefoot bag and the thunderstone.  
 **Firestone**: This crystal brims with fire aether. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are blinded for one minute. Blinded creatures can make the saving throw again at the end of each of their turns, ending the effect on a success. On a success, targets take half as much damage and are blinded only until the beginning of your next turn. Creating a firestone costs 10 gp and can be done over a long rest.  
 **Tanglefoot Bag**: This small pouch explodes into a tangle of sticky threads. Make a ranged attack with proficiency against a creature within range (30 ft normally, 90 ft for you). On a hit, the creature is restrained until they or someone else uses an action to break them free. Creating a tanglefoot bag costs 5 gp and can be done over a long rest.  
 **Thunderstone**: This crystal brims with lightning and thunder.  Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
 
-#### Improved Alchemical Munitions (6th)
-When you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
+#### Improved Alchemical Munitions
+Starting at 6th level, when you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
 
 Additionally, you can hastily concoct a munition of your choice by expending a charge die as part of a short rest. When you do so, that munition only lasts until you finish a long rest, but does not cost any gold.
 
-#### Alchemical Discoveries (9th)
-You learn the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
+#### Alchemical Discoveries
+At 9th level you learn the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
 Rarity|Cost (gp/time)
 :----|:----:
@@ -1388,7 +1484,7 @@ Uncommon|100 gp / 2 days
 Rare|500 gp / 10 days
 \page
 #### Alchemical Master (13th)
-At 13th level, you have discovered deep secrets to alchemy. You gain the following benefits
+At 13th level you have discovered deep secrets to alchemy. You gain the following benefits
 
 - You are immune to poison.
 - Healing potions you administer or use heal the maximum possible. If you expend one or more aether charges as part of the action, they heal an additional 1d8 for each expended charge.
@@ -1432,8 +1528,15 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) two light hammers or (b) a heavy crossbow and 20 bolts
 - (a) leather armor or (b, if proficient) chain armor
 - (a) a scholar’s pack or (b) a dungeoneer’s pack
+- Tinkerer’s tools
+  
+### Archetype
+Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Forgemaster, who specializes in enhancing his armor until he’s a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-Tinkerer’s tools
+### Aether Engine (1st)
+Unlike a conventional spell-caster, your method of creating magical effects depends on a mechanical contrivance, which is a tiny object of metal, gears, and crystal, which you have created at 1st level.This is your Aether Engine (AE).  It processes environmental aether into usable aether charge. Over time, you make it more capable. When you gain this engine, it can store up to two points of aether charge, which can be used to cast your infused spells and activate some of your class features. Expended points are regained when you complete a long or short rest, up to your maximum. You can never expend more charge as part of a single action than shown on the aether charge table below for your level.
+
+If you do not have the aether engine on your person, you cannot use abilities that require spending aether charge. If it is lost or destroyed, you can create a new one when you finish a long rest as long as you have some form of metal and even rudimentary tools at hand.
 \page
 {{classTable,wide
 #### The Mechanic
@@ -1463,14 +1566,6 @@ Level|Prof. Bonus|Features|Max. Aether Charge|Spells Known (max level)|Simultane
 
 }}
 
-### Archetype (1st, 3rd, 6th, 9th, 13th)
-Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry–the Forgemaster, who specializes in enhancing his armor until he’s a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
-
-### Aether Engine (1st)
-Unlike a conventional spell-caster, your method of creating magical effects depends on a mechanical contrivance, which is a tiny object of metal, gears, and crystal, which you have created at 1st level.This is your Aether Engine (AE).  It processes environmental aether into usable aether charge. Over time, you make it more capable. When you gain this engine, it can store up to two points of aether charge, which can be used to cast your infused spells and activate some of your class features. Expended points are regained when you complete a long or short rest, up to your maximum. You can never expend more charge as part of a single action than shown on the aether charge table below for your level.
-
-If you do not have the aether engine on your person, you cannot use abilities that require spending aether charge. If it is lost or destroyed, you can create a new one when you finish a long rest as long as you have some form of metal and even rudimentary tools at hand.
-
 ### Infused Spells (1st)
 At first level, you’ve learned to replicate the patterns of selected spells, albeit in a completely unconventional fashion. By carefully fashioning trinkets out of wire and crystal and gears (or laying patterns of wire and crystal into your existing items), you can resonate the ambient aether as if you cast the spells yourself, as long as they are linked to your Aether Engine. This is called “infusing” the spell into your AE, and your overall process as Spell Infusion.
 
@@ -1488,7 +1583,7 @@ At 1st level, you know two 1st-level spells of your choice from the mechanist li
 The Spells Known column of the mechanist table shows when you learn more mechanist spells of your choice of 1st level or higher. Spells you choose can be no higher level than the max level entry in the Spells Known column.
 
 The Simultaneous Infusions column of the Mechanist table shows how many infused trinkets you can have attached to your AE at any given time. You can only cast spells infused into trinkets attached to your AE, but you can switch which known spells are attached as part of a process that takes 1 minute of uninterrupted concentration.
-\page
+
 Additionally, when you gain a level in this class, you can choose one of the mechanist spells you know and replace it with another spell from the mechanist spell list, which also must be of a level for which you have spell slots.
 
 #### Spellcasting Ability
@@ -1503,52 +1598,51 @@ Your AE is your focus for your mechanist spells, and you must have the infused t
 As a result of your unorthodox method of creating spell effects, you do not use the conventional verbal and somatic components for spells. Instead, every spell has a material component (the infused trinket). Verbal components become an audible noise (gears whirring, clicking, a high-pitched whine, etc) that is easily audible out to 30 ft. Somatic components become visible effects (e.g. static charge, glowing or blinking lights, etc) visible out to 30 ft.
 
 As a side effect of this unorthodox method of casting, all attempts to counter your spells require the caster to make the ability check, and they do so at disadvantage unless they are a mechanist themselves.
-
-### Charged Strike (2nd)
+\page
+### Charged Strike
 Starting at 2nd level, you’ve learned to bleed charge from your AE into your weapon strikes, manifesting as arcing electrical charge. When you hit with a weapon attack and have your AE on your person, you can spend one or more aether charges to deal 1d8 lightning per charge spent. You can’t spend more than the cost of the highest spell level you can learn.
 
-### Mechanical Talent (2nd)
+### Mechanical Talent
 Starting at 2nd level, when you make an ability check to understand, fix, disable, or otherwise interact with mechanical items or aetheric technology, you can add twice your proficiency bonus instead of whatever proficiency bonus (including none at all) would be applied normally.
-\column
-### Clockwork Friend (3rd)
+
+### Clockwork Friend
 At 3rd level you’ve created a tiny clockwork construct to serve as your friend. It takes the shape of a spider, mouse, beetle or other similar non-flying creature. It has 1 HP, AC 10, 30 ft of movement, normal vision (passive perception of 10). Its Strength and Intelligence scores are 1 and all of its other ability scores are 10. It cannot attack, but can otherwise understand your simple orders and will fulfil them as practical for its shape. While it is on your person, it is considered to be immune to all damage and does not make saving throws.
 
-When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.
+When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.  
+**Movement**: sticky pads (30 ft climb speed) OR fins (30 ft swim speed)  
+**Sensory**: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
 
-- Movement: sticky pads (30 ft climb speed) or fins (30 ft swim speed)
-- Sensory: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
-
-### Ability Score Increase (4th, 8th, 12th, 16th, 19th)
+### Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
 Alternatively, you can choose a feat that you qualify for.
 
-### Skill Tricks (4th, 8th, 12th)
+### Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder.
 
-### Extra Attack (5th)
+### Extra Attack 
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
 
 In addition, you ignore the loading property of weapons as you’ve modified your personal weapon to automatically reload itself.
-\page
-### Aetheric Defense (7th)
+
+### Aetheric Defense
 Starting at 7th level, you can spend aether charge to do the following. As usual, the charge spent cannot exceed your normal limits.
 
 - As a reaction when you would be hit by an attack or would fail a Dexterity saving throw, you can expend one or more charges to add +2 per charge spent to your AC or Dexterity saving throw result, potentially changing the outcome.
 - As a reaction, you can expend one or more aether charges to fly 10 ft per expended charge in any direction. You must end this movement on a surface that can support your weight.
 - As a bonus action, you can expend one or more aether charges to attempt to push a creature within 15 ft of you away from you up to 5 ft per charge expended. Unwilling targets can make a Strength saving throw against your Infusion DC to resist this.
 
-### Overclocked Clockwork Friend (9)
+### Overclocked Clockwork Friend
 Starting at 9th level, you can spend 1 aether charge to temporarily enhance your clockwork friend. It gains one of the following abilities:
 
 - A 60 ft fly speed for one hour.
 - Invisibility (as the 2nd level spell) for 10 minutes. This does not require concentration from you.
 - Perform complex tasks (pull levers, speak messages (pre-recorded), etc) for 10 minutes. During this time, it is considered to have a strength score of 10.
 
-#### Absorb Charge (10th)
+#### Absorb Charge
 At 10th level, you’ve improved your Aether Engine to the point that it can rapidly draw in aether under the right circumstances. When you are targeted by a spell or ability that deals cold, fire, force, lighting, or radiant damage and allows a saving throw for half damage, you can activate your AE as a reaction. If you do so, you take half damage if you fail the saving throw and none if you succeed, and your AE gains aether charge equal to half its maximum. This charge can exceed its normal maximum, but any extra unexpended charge is lost when you finish a long or short rest. Once you use this ability, you cannot do so again until you finish a long rest.
-
-### Improved Charged Strike (11th)
+\page
+### Improved Charged Strike
 Once per turn when you hit with an attack, you can deal an additional 2d8 lightning damage. This stacks with Charged Strike. Starting at level 17, the damage from this increases to 3d8 and the damage from Charged Strike increases to 2d8 +1d8 for every aether charge spent after the first.
 
 ### Improved Aetheric Defense (14th)
@@ -1566,65 +1660,66 @@ While you are adjacent to your friend, it ignores all damage and does not make s
 ### Overclocked Aether Engine (20th)
 As an action, you put your aether engine into an hyperactive state. For one minute, you regain 10 aether charges at the start of each of your turns (up to its maximum) and you can cast any of your spells, infused or not. Additionally, you deal the extra lightning damage from Improved Charged Strike on every hit. Once you use this ability, you cannot do so again until you finish a long rest.
 
-## Archetypes
+## Mechanist Archetypes
 ### Forgemaster
-#### Power Armor: Core (1)
+The Forgemaster focuses on the mechanical part of his muse, creating a suit of magically-powered armor that enhances his abilities.
+
+#### Power Armor: Core
 You gain proficiency in heavy armor. Your carrying/lift/drag capacity doubles.
 
-#### Additional Proficiencies (1)
+#### Additional Proficiencies
 You gain proficiency in athletics and intimidation.
 
-#### Power Armor: Limbs (3)
-You always count as having a running start when you jump and your high jumps are as far as your long jumps.
+#### Power Armor: Limbs
+Starting at 3rd level, you always count as having a running start when you jump and your high jumps are as far as your long jumps.
 
 Additionally, you have advantage when grappling or shoving creatures your size or smaller and can grapple creatures up to two sizes larger than you.
-\page
-#### Power Armor: Helmet (6)
-You cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
 
-#### Power Armor: Improved Core (9)
-Choose one of the following:
+#### Power Armor: Helmet
+Starting at 6th level, you cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
 
-- Restorative Infusion: When you activate an infused spell item that does not deal damage, you regain hit points equal to 5x the spell level. If that would bring you above your maximum hit points, you gain the extra as temporary hit points instead.
-- Infusion slots: When you activate an infused spell item that targets only you, you do not have to have it in hand.
-- Pulsing Infusion: When you activate an infused spell that normally only targets you, you can choose up to 1 additional willing creature within 10 feet that you can see as a target.
+#### Power Armor: Improved Core
+Starting at 9th level, you can choose one of the following:  
+**Restorative Infusion:** When you activate an infused spell item that does not deal damage, you regain hit points equal to 5&times; the spell level. If that would bring you above your maximum hit points, you gain the extra as temporary hit points instead.  
+**Infusion slots:** When you activate an infused spell item that targets only you, you do not have to have it in hand.  
+**Pulsing Infusion:** When you activate an infused spell that normally only targets you, you can choose up to 1 additional willing creature within 10 feet that you can see as a target.
 
-#### Power Armor: Complete Set (13)
+#### Power Armor: Complete Set
+Starting at 13th level, your armor is complete. This grants the following benefits.
 - You can now breathe underwater and have a swim speed of 30 ft.
 - You gain a fly speed of 30 feet.
 - You are immune to gas-based poison or stench effects.
 
 ### Trapsmith
-#### Ricochet Shot (1)
-If you miss with a ranged weapon attack, you can re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage.
+Like their Inventor cousins, Trapsmith Mechanists focus on ranged combat and the innate abilities of their Aether Engines, enabling them to use them as traps.
+#### Ricochet Shot
+If you miss with a ranged weapon attack, you can re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage. Once you use this a number of times equal to your Intelligence modifier, you cannot do so again until you finish a long rest.
 
-#### Additional Proficiencies (1)
+#### Additional Proficiencies
 You gain proficiency with acrobatics, deception, and thieves tools.
+\page
+#### Mine-layer
+Starting at 3rd level, you can throw a small mine out to a point you can see within 30 ft as an action. Choose one of the following:  
+**Sticky Mine:** The next time a creature moves within 10 feet of the mine, it erupts in a mass of sticky foam, covering a 15 ft radius. All creatures within that radius must make a STR save or have their speed reduced to 0 by the foam. Affected creatures can make a Strength (Athletics) check to break free (same DC). The area is difficult terrain for 1 minute.  
+**Flashbang Mine:** The next time a creature moves within 10 feet of the mine, it erupts in a blinding flash of light and deafening sound. All creatures within 15 feet must make a Constitution saving throw. On a failed save, they take 3d8 thunder damage and are blinded until the end of your next turn. On a success, they take half damage and are not blinded. You can choose any number of creatures that will not trigger the effect. You can use this a number of times equal to your Intelligence modifier (minimum once), regaining expended uses when you finish a long rest.
 
-#### Mine-layer (3)
-You throw a small mine out to a point you can see within 30 ft. Choose one of the following:
+#### Zip Line
+Starting at 6th level, you can shoot a special arrow attached to a cable up to 60 ft at a solid surface as an action. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Wisdom (Perception) check against your spell DC to see it. If they do not see it and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a long or short rest.
 
-Sticky Mine: The next time a creature moves within 10 feet of the mine, it erupts in a mass of sticky foam, covering a 15 ft radius. All creatures within that radius must make a STR save or have their speed reduced to 0 by the foam. Affected creatures can make a Strength (Athletics) check to break free (same DC). The area is difficult terrain for 1 minute.
+#### Aether Scanner
+At 9th level you create a monocle that senses the presence of magical effects. While wearing it, you are under the effects of *detect magic* and *see invisibility*.
 
-Flashbang Mine: The next time a creature moves within 10 feet of the mine, it erupts in a blinding flash of light and deafening sound. All creatures within 15 feet must make a Constitution saving throw. On a failed save, they take 3d8 thunder damage and are blinded until the end of your next turn. On a success, they take half damage and are not blinded.
-You can choose any number of creatures that will not trigger the effect. You can use this a number of times equal to your Intelligence modifier (minimum once), regaining expended uses when you finish a long rest.
-
-#### Zip Line (6)
-You can shoot a special arrow attached to a cable up to 60 ft at a solid surface. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Perception check against your spell DC to see it–if they do not and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a long or short rest.
-
-#### Aether Scanner (9)
-You create a monocle that senses the presence of magical effects. While wearing it, you are under the effects of detect magic and see invisibility.
-
-#### Advanced Mines (13)
-When you use your Mine-layer ability, you can choose to enhance the mines. Choose one of the following:
+#### Advanced Mines
+Starting at 13th level, when you use your Mine-layer ability, you can choose to enhance the mines. Choose one of the following:
 
 - The radius increases to 25 ft explosion/20 ft sensor.
 - The foam from the sticky mine remains sticky for the duration–creatures that enter the foam or start their turn there must also make the saving throw.
 - The foam from the sticky mine restrains targets caught in it instead of simply immobilizing them.
 - The flashbang mine stuns creatures on a failed save and blinds them on a success.
 - The flashbang mine deals 8d6 thunder damage instead of 3d8.
-
+\column
 ### Chemist
+The alchemically-focused chemists learn to better cast spells as well as create and disperse potions and munitions.
 #### Additional Proficiencies
 You gain proficiency in Arcana and Medicine, as well as alchemist’s tools and herbalists’ kits.
 
@@ -1632,8 +1727,8 @@ You gain proficiency in Arcana and Medicine, as well as alchemist’s tools and 
 When you attack with items such as alchemists’ fire or vials of acid or holy water, you add your proficiency bonus to both attack and damage dealt.
 
 Additionally, as long as you have an alchemist’s tool set, you can create vials of alchemists’ fire or acid for 10 gp or 5 gp (respectively). You can create one as part of a long rest.
-\page
-#### Expanded Spell List (1st)
+
+#### Expanded Spell List
 The following spells are added to your spell list at the indicated levels.
 
 Level|Spells
@@ -1644,42 +1739,42 @@ Level|Spells
 12|Conjure Minor Elementals, Elemental Bane
 17|Cloudkill, immolation
 
-#### Munition Launcher (3rd)
+#### Munition Launcher
 At 3rd level, you’ve created a system to launch potions, alchemical items, and other munitions out to 90 ft as an action. If you target a friendly creature, they can catch it out of the air and use it on themselves as a reaction. If you target a hostile creature with an alchemical munition, make the attack roll as normal. If you target a location, it simply hits that location.
 
-#### Fast Hands (3rd)
+#### Fast Hands
 Starting at 3rd level, you can use potions on yourself or administer them to someone adjacent to you as a bonus action.
-
-#### Extra Alchemical Munitions (6th)
+\page
+#### Extra Alchemical Munitions
 At 6th level, you’ve learned to create three additional types of alchemical munitions–the firestone, tanglefoot bag and the thunderstone.  
 **Firestone:** This crystal brims with fire aether. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your spellcasting DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are blinded for one minute. Blinded creatures can make the saving throw again at the end of each of their turns, ending the effect on a success. On a success, targets take half as much damage and are blinded only until the beginning of your next turn. Creating a firestone costs 10 gp and can be done over a long rest.  
 **Tanglefoot Bag:** This small pouch explodes into a tangle of sticky threads. Make a ranged attack with proficiency against a creature within range (30 ft normally, 90 ft for you). On a hit, the creature is restrained until they or someone else uses an action to break them free. Creating a tanglefoot bag costs 5 gp and can be done over a long rest.  
 **Thunderstone:** This crystal brims with lightning and thunder.  Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your spellcasting DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
 
-#### Improved Alchemical Munitions (6th)
-When you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
+#### Improved Alchemical Munitions
+Starting at 6th level, when you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
 
 Additionally, you can hastily concoct a munition of your choice by expending 3 aether charges as part of a short rest. When you do so, that munition only lasts until you finish a long rest, but does not cost any gold.
 
-#### Alchemical Discoveries (9th)
-You learn the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
+#### Alchemical Discoveries
+At 9th level, you have learned the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
 Rarity|Cost (gp/time)
 :----|----:
 Common|25 gp / 1 day
 Uncommon|100 gp / 2 days
 Rare|500 gp / 10 days
-
-#### Alchemical Master (13th)
+\column
+#### Alchemical Master
 At 13th level, you have discovered deep secrets to alchemy. You gain the following benefits
 
 - You are immune to poison.
 - Healing potions you administer or use heal the maximum possible. If you expend one or more aether charges as part of the action, they heal an additional 1d8 for each expended charge.
 - When you use alchemical munitions that deal damage, the damage dealt is increased by your Intelligence modifier.
 - You can produce potions and alchemical munitions at twice the normal rate. If you could make one as part of a long rest, you can now make two.
-\page
+
 ## Spell List
-Spells marked with a (*) are found in the New Spells section of this document. Many have been taken with alterations from Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a), others are new.
+Spells marked with a (*) are found in the New Spells section of this document.
 
 {{spellList
 #### 1st
@@ -1739,7 +1834,7 @@ Spells marked with a (*) are found in the New Spells section of this document. M
 }}
 
 \page
-## Monk (Subclass)
+## Monk
 ### Way of Living Flame
 Some monks, whether by nature or by training, have attuned their souls with the Plane of Flame and elemental fire. Some of them have developed this attunement into a Way, incorporating fire into their martial arts.
 
@@ -1768,17 +1863,16 @@ Starting at 11th level, your connection with flame has added an aspect of lighti
 - You can spend 3 ki to cast lightning bolt as a 3rd level spell, using your Wisdom as a spellcasting modifier. This does not require any components and can deal either lightning or fire damage as you choose.
 
 #### Avatar of Living Flame
-At 17th level, your tie to the Fountain reaches its peak. As a bonus action you can transform into a burning elemental avatar for one minute. You gain the following benefits:
-
-- Continual Flame: You deal the extra fire or lightning damage on your unarmed and ranged attacks without expending uses of Lambent Aura. Additionally, anyone who touches you or hits you with an attack from within 5 feet takes fire or lightning (your choice) damage equal to 3 rolls of your martial arts die.
-- Rebirth: If you are reduced to 0 hit points or would be killed outright while in this form, the transformation fades and you are restored to full hit points and full ki instead.
-- One with Fire and Lightning: You are immune to fire and lightning.
+At 17th level, your tie to the Fountain reaches its peak. As a bonus action you can transform into a burning elemental avatar for one minute. You gain the following benefits:  
+**Continual Flame:** You deal the extra fire or lightning damage on your unarmed and ranged attacks without expending uses of Lambent Aura. Additionally, anyone who touches you or hits you with an attack from within 5 feet takes fire or lightning (your choice) damage equal to 3 rolls of your martial arts die.  
+**Rebirth:** If you are reduced to 0 hit points or would be killed outright while in this form, the transformation fades and you are restored to full hit points and full ki instead.  
+**One with Fire and Lightning:** You are immune to fire and lightning.
 
 Once you use this feature, you cannot use it again until you finish a long rest.
 \page
-## Rogue (Subclasses and Variant Features)
+## Rogue
 ### Variant Features
-The following features are available to all rogues.
+The following feature is available to all rogues, with their GM's permission.
 #### Skill Tricks
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks. This includes any gained normally alongside ability score increases.
 
@@ -1809,7 +1903,7 @@ Level | Skill Tricks
 19th | 9
 20th | 9
 
-### Mage Hunter (Archetypes)
+### Mage Hunter (Roguish Archetype)
 Magic is not always appreciated. Mortal spell-casters often believe themselves the lords of creation...and act that way. Mage hunters are trained to counter those. They employ the inversion of a family of techniques called formshaping: manipulating aether into the platonic shapes of "forms". Or in this case, shaping their personal aether to disrupt patterns, especially those created by spell-casting.
 
 This is an archetype of the Rogue class.
@@ -1857,6 +1951,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) diplomat's pack entertainer's pack or (b) entertainer's pack
 - (a) leather armor or (b) chain shirt
 - a dagger
+:
 
 {{classTable,wide
 #### The Spellblade
@@ -2154,7 +2249,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a suit of leather armor or (b) scale mail if proficient
 - (a) a longbow and 20 arrows or (b) 5 javelins
 - an explorer's pack
-\page
+
 ### Spellcasting
 Your ability with spells is why you were trained. Your spells come by memorization and long practice.
 
@@ -2166,8 +2261,8 @@ At 1st level, you know four cantrips of your choice from the warmage spell list.
 #### Spell Slots
 The Warmage table shows how many spell slots you have to cast your warmage spells of 1st level and higher. To cast one of these warmage spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
 
-For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.
-
+For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast *burning hands* using either slot.
+\page
 #### Spells Known of 1st Level and Higher
 You know two 1st-level spells of your choice from the warmage spell list.
 
@@ -2204,7 +2299,6 @@ Using the optional feats rule, you can forgo taking this feature to take a feat 
 ### Skill Tricks
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you learn one skill trick you qualify for. Additionally, each time you gain a new skill trick, you can exchange one skill trick you know for a different one you qualify for at that level.
 
-\page
 ### Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn. You can choose to cast a warmage cantrip instead of one (and only one) of the weapon attacks.
 
@@ -2216,7 +2310,7 @@ Starting at 9th level, you have become sensitive to the flows of magic around yo
 
 ### Dualcasting
 At 11th level you can expend a siphon mote when you cast a spell. When you do so, the cast time changes to a Bonus Action.
-
+\page
 ### Focused Spell
 At 15th level, you've chosen one spell to specialize in. Choose one of your warmage spells. When you cast that spell, it always acts as if it is one level higher in all respects except the spell slot needed to cast it. You can siphon motes from it as if it was the higher level; when you expend motes to further enhance it, it acts as if it was the higher level for calculating the cost.
 
@@ -2257,7 +2351,7 @@ Starting at 14th level, when you cast *counterspell* or *dispel magic* and must 
 
 #### Enhanced Piercing Spell
 Starting at 18th level, when you use your Piercing Spell feature, the target loses any resistance to the damage type dealt until the beginning of your next turn; if it was immune, it loses that immunity and gains resistance to that damage type until the beginning of your next turn.
-\page
+
 ### Special Forces
 The special forces squads are infiltrators, taking on missions deep into enemy territory. Stealth and overwhelming power from surprise are the name of the game. Warmages attached to these squads train to enhance both aspects.
 
@@ -2276,7 +2370,7 @@ Level|Spell
 You gain proficiency in Stealth. If you already had it, you can instead apply twice your proficiency bonus when you make a Dexterity (Stealth) check. You also gain proficiency in Athletics.
 
 You also learn one additional language of your choice.
-
+\page
 #### Magical Assassin
 You learn to apply your magical talents to hone your weapon strikes. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
 
@@ -2289,7 +2383,7 @@ Starting at 6th level, you can expend one or more of your siphon motes as a bonu
 
 #### Enhancing Motes
 Starting at 6th level, you have also learned to bolster your allies in other ways. Target an ally within 30' of you and expend a mote as a bonus action. That ally can add 1d4 to all ability checks and saving throws it makes for the next minute. Only one ally can be enhanced in this fashion at a time.
-\column
+
 #### Bolstered Enhancement
 Starting at 10th level, your Keen and Enhancing Motes are more effective. When you use your Keen Motes ability, the extra damage dealt is equal to 2d4 instead of 1d4. When you use your Enhancing Motes ability, you can expend extra motes to target a number of allies within 30 feet of you equal to the number of motes expended (instead of one).
 
@@ -2298,7 +2392,7 @@ Starting at 14th level, when an ally within 30' of you makes a Dexterity (Stealt
 
 #### Spellstrike
 Starting at 18th level, when you cast a spell as a bonus action using your Doublecast ability and use your action to Disengage, Hide, or Dodge, you can make a weapon attack before or after the action.
-
+\column
 ### Artillery Squad
 Like the squads they're attached to, Artillery Squad warmages specialize in raining death and destruction down on their foes from a distance. "There's no kill like overkill" is the motto of many such a mage.
 
@@ -2364,11 +2458,11 @@ Starting at 14th level, you gain resistance to necrotic damage.
 
 #### Spellshroud
 Starting at 18th level, when you cast a spell as a bonus action using your Dualcasting feature, you can designate an enemy you can see within 30' of you. Any attacks that enemy makes against you until the beginning of your next turn are made at disadvantage.
-\page
+
 ## Warmage Spell List
 Note: the warmage is intentionally limited to spells of 5th level and lower and have a fairly restricted "utility belt" of spell choices. They are intended to use upper slots for upcasting lower-level spells and mostly cast damaging/direct combat spells. This is why they have Extra Attack and other features (relative to a wizard). Spells marked with (\*) are new and found in the Spells section.
+\page
 
-:::::::::::::::
 {{spellList,wide
 #### Cantrips (0 Level)
 - Acid Splash
@@ -2440,6 +2534,7 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 - Slow
 - Thunder Step
 - Wind Wall
+\column
 #### 4th Level
 - Arcane Eye
 - Banishment
@@ -2466,458 +2561,18 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 - Wall of Stone
 }}
 
-<!--part-->
-
 \page
-# Skill Tricks
-Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
+{{partCover}}
 
-{{note
-#### Design Intent
-Skill tricks are an attempt to give horizontal progression to everyone, but especially non-spell-casters. They are designed as "mini-feats"; a single bullet point with a passive or active ability. But even the passives are designed to be more than just bigger numbers. They are designed to give *new capabilities* or to provide certainty.
+# New and Modified Spells
+## Dawn of Hope
 
+{{imageMaskEdge3,--offset:10cm,--rotation:180
+  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
 }}
 
-Each skill trick detailed below shares some common characteristics:
-
-- **An ability score**. Every skill trick is tied to a particular ability score. That ability score sets its DC.
-- **A prerequisite**. Every skill trick has one or more prerequisites before it can be learned. These are generally either a particular level of proficiency (numerical value, which does not includes expertise) for those that are tied to a particular skill or tool, or a character level for those marked as General.
-- **A target or targets**. Many skill tricks target either an object or one or more creatures. A few target a particular area.
-- **An effect**. The text of the skill trick describes the effect, as well as any saving throws required.
-
-
-#### Skill Trick DCs
-The DC for any saving throws required by skill tricks is given by
-:
-**8 + the associated ability modifier + your proficiency bonus**
-:
-regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
-
-#### Acquiring Skill Tricks
-The Dawn of Hope-specific classes in this document grant skill tricks every time you get an Ability Score Increase (more often for the Variant Rogue).
-
-For other classes, you should feel free doing the same, namely granting a Skill Trick every time the character gets an Ability Score Increase. Some of them overlap with bullet points from printed feats. It is up to the player to decide, but generally you cannot benefit from both at the same time (they do not stack).
-
-Additionally, you can grant skill tricks as rewards for quests or for spending downtime training.
-
-### Basic Skill Tricks
-
-Basic skill tricks only require a +2 proficiency or level 4 characters.
-
-#### Alert
-
-*Wisdom (Perception OR Insight) Basic Skill Trick*
-
-You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight). Additionally, you can take reactions even when surprised.
-
-#### Arcane Initiate
-
-*Intelligence (Arcana) Basic Skill Trick*
-
-You learn one cantrip of your choice from the Arcanist list, as well as one 1st level spell from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
-#### Charge
-
-*Strength (Martial Weapon) Basic Skill Trick*
-
-When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
-
-#### Coordinated Strike
-
-*Charisma (Martial Weapon) Basic Skill Trick*
-
-As a bonus action you take when you take the Attack action and attack a target, you can allow another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long or short rest.
-
-#### Craft Apprentice
-
-*Crafting Tool (any) Basic Skill Trick*
-
-You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires that proficiency of your choice.
 \page
-#### Diplomat
-
-*Charisma (Persuasion) Basic Skill Trick*
-
-When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
-
-#### Disarm
-
-*Strength (Martial Weapon) Basic Skill Trick*
-
-When you hit with a melee weapon attack, you can attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. Once you successfully disarm an opponent using this feature, you cannot do so again until you finish a long or short rest.
-
-#### Divine Initiate
-
-*Wisdom (Religion) Basic Skill Trick*
-
-You learn one cantrip of your choice from the Priest list, as well as one 1st-level spell from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
-#### Evasive Footwork
-
-*Dexterity (General) Basic Skill Trick*
-
-When you use the Deflect action but the attack still hits, you do not expend a use of the action.
-
-#### Feint
-
-*Charisma (Deception) Basic Skill Trick*
-
-You fake an attack as a bonus action, trying to misdirect the enemy. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them. Once a creature fails a saving throw against this, they are immune to further attempts for the duration of that encounter. 
-
-#### Frighten 
-
-*Charisma (Intimidation) Basic Skill Trick*
-
-As a bonus action, you can threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn. A creature that succeeds on their saving throw is immune to further uses of this ability for the duration of that encounter. 
-
-#### Haggler
-
-*Charisma (Persuasion OR Deception) Basic Skill Trick*
-
-You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
-
-#### Jump
-
-*Strength (Athletics) Basic Skill Trick*
-
-You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
-
-#### Linguist
-
-*Intelligence (General) Basic Skill Trick*
-
-When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
-
-Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
-
-#### Lung Capacity
-
-*Constitution (General) Basic Skill Trick*
-
-You can hold your breath for twice as long. In addition, you can choose to gain advantage on any required Constitution saving throw when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability). Once you use the latter portion of this feature a number of times equal to your Constitution modifier (minimum 1), you cannot do so again until you finish a long rest.
-
-#### Medic
-
-*Wisdom (Medicine) Basic Skill Trick*
-
-When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, the target regains 1 hit point and is conscious instead.
-
-#### Misdirect
-
-*Dexterity (Stealth) Basic Skill Trick*
-
-When you are hidden, you can spend your reaction to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
-
-#### Piercing Wound
-
-*Dexterity (Martial Weapon) Basic Skill Trick*
-
-When you hit with an attack from a ranged or finesse weapon, you can try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. Once you use this ability a number of times equal to your Dexterity modifier (minimum once), you cannot do so again until you finish a long or short rest.
-\page
-#### Primal Initiate
-
-*Wisdom (Nature) Basic Skill Trick*
-
-You learn one cantrip of your choice from the Druid list, as well as one 1st level spell. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
-#### Resourceful Combatant
-*Strength (Martial Weapon) Basic Skill Trick*
-
-You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
-
-#### Scholar: History
-
-*Intelligence (History) Basic Skill Trick*
-
-You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
-
-#### Scholar: Nature
-
-*Intelligence (Nature) Basic Skill Trick*
-
-You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
-
-#### Scholar: Religion
-
-*Intelligence (Religion) Basic Skill Trick*
-
-You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
-
-#### Sense Baleful Magic
-
-*Wisdom (Arcana) Basic Skill Trick*
-
-You are sensitive to the presence of hostile magics in your proximity. When you are within 30 ft. of a magical trap, spell glyph, or other hostile magical environment, you can use your passive Wisdom (Arcana) instead of your passive Wisdom (Perception) to determine their location and nature.
-
-Additionally, you have advantage on checks made to determine the spell being cast.
-
-#### Shield Bash
-
-*Strength (Shield) Basic Skill Trick*
-
-You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
-
-#### Soothe Domesticated Animal
-
-*Wisdom (Animal Handling) Basic Skill Trick*
-
-You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
-
-#### Trap Finder
-
-*Intelligence (Investigation) Basic Skill Trick*
-
-You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you gain advantage on any Dexterity saving throws to avoid their effects.
-
-#### Tumble
-
-*Dexterity (Acrobatics) Basic Skill Trick*
-
-You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space.
-
-### Advanced Skill Tricks
-
-
-Advanced skill tricks require a +4 proficiency or level 9 characters.
-
-#### Arcane Journeyman
-
-*Intelligence (Arcana) Advanced Skill Trick*
-
-You learn one cantrip of your choice from the Wizard list, as well as one spell of 1st or 2nd level from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-\page
-#### Athlete
-
-*Strength (Athletics) Advanced Skill Trick*
-
-You can climb at full speed without making checks even on surfaces with few handholds or slick surfaces. You can use your bonus action to climb even magically slick surfaces without needing hands or a check; if you are still on this surface at the start of your next turn, you must expend an additional bonus action or use your hands.
-
-Additionally, you gain a swimming speed equal to your normal speed and no longer need to make checks to swim even in very rough or fast waters.
-
-Additionally, the distance you can jump doubles and the height at which you start taking fall damage increases to 30 ft (taking 1d6 for the first 30 ft you fall and 1d6 for every 10 ft above that).
-
-#### Bait and Switch
-
-*Charisma (Deception) Advanced Skill Trick*
-
-As a reaction when you are targeted by an attack or ability that only targets you, you swap places with one willing creature within 5 feet of you. They become the target of the ability. This movement does not provoke opportunity attacks. Once you do so, you cannot do so again during that same encounter or for one minute, whichever is shorter.
-
-#### Befriend Wild Animal
-
-*Wisdom (Animal Handling) Advanced Skill Trick*
-
-As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
-
-#### Bond Breaker
-
-*Strength (General) Advanced Skill Trick*
-
-You can use an action to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
-
-#### Delay Unconsciousness
-
-*Constitution (General) Advanced Skill Trick*
-
-As a reaction when you are brought to zero hit points, you can choose to gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
-
-#### Demoralize
-
-*Charisma (Intimidation) Advanced Skill Trick*
-
-As an action, you can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they are frightened of you for one minute; if they fail the saving throw by more than 5 points, they will attempt to flee or surrender instead. A single targeted creature can attempt the saving throw again when they end their turn out of line of sight of you. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them. 
-
-#### Divine Journeyman
-
-*Wisdom (Religion) Basic Skill Trick*
-
-You learn one cantrip of your choice from the Cleric list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
-#### Fascinate
-
-*Charisma (Performance) Advanced Skill Trick*
-
-As an action, you begin a distracting performance. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction). Any creature that succeeds on the saving throw or for whom the effect ends is immune to any further attempts by you to use this ability for 24 hours.
-
-#### Find Weakness
-
-*Intelligence (Investigation) Advanced Skill Trick*
-
-As a bonus action, you can search for flaws in your opponent. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
-
-- Their highest and lowest saving throw modifiers
-- Any resistances or immunities they have.
-- Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
-- Their current goals
-
-Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
-
-Once you use this ability in either mode a number of times equal to your Intelligence modifier (minimum once), you cannot do so again until you finish a long rest.
-
-#### Like a Solid Snake
-
-*Dexterity (Stealth) Advanced Skill Trick*
-
-You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
-\page
-#### Mental Toughness
-
-*Charisma (General) Advanced Skill Trick*
-
-When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can ignore the effects of those conditions until the end of your turn. Once you use this ability a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long rest.
-
-#### People Whisperer
-
-*Wisdom (Insight) Advanced Skill Trick*
-
-When you make a Wisdom (Insight) check and the result is above a 15, you gain one pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
-
-#### Primal Journeyman
-
-*Wisdom (Religion) Advanced Skill Trick*
-
-You learn one cantrip of your choice from the Druid list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
-
-#### Pocket Sand
-
-*Dexterity (Sleight of Hand) Advanced Skill Trick*
-
-As a bonus action, you can attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success or failure, the creature is immune to further attempts to blind them this way until the end of the encounter.
-
-#### Resuscitation
-
-*Wisdom (Medicine) Advanced Skill Trick*
-
-As an action, you can attempt to resuscitate someone who died within the last minute. Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 HP and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion. 
-
-#### Snow Job
-
-*Charisma (Deception) Advanced Skill Trick*
-
-When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so at advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
-
-#### Sunder
-
-*Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick*
-
-When you make an attack against an unattended object and hit, you ignore its Damage Threshold and deal double damage. 
-
-Alternatively, you can target attended objects as follows. Once you hit with such an attack, you cannot do so again for one minute.
-
-- **Armor**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
-- **Weapons**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
-- **Wielded spell foci or other objects in hand**: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 &times; 5 ft away in a random direction.
-
-
-#### Wrestler
-
-*Strength (Athletics) Advanced Skill Trick*
-
-You can grapple and shove creatures two sizes larger than yourself. Once per long or short rest, you can remove the size limit entirely.
-
-Additionally, when you start your turn with a creature grappled, you can attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
-
-### Expert Skill Tricks
-
-
-Expert skill tricks require a +5 proficiency or level 13 characters.
-
-#### Blindfighter
-
-*Wisdom (Perception) Expert Skill Trick*
-
-Invisible or unseen enemies no longer have advantage to hit you. In addition, you do not have disadvantage to hit invisible or unseen enemies and gain blindsight out to 10 ft. If you already have blindsight or gain it later, this stacks.
-
-#### Break Will
-
-*Charisma (Intimidation) Expert Skill Trick*
-
-This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken (surrendering or fleeing) on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
-\page
-#### Comprehend Dweomer
-
-*Intelligence (Arcana) Expert Skill Trick*
-
-You gain the following benefits:
-
-- You can determine the nature of any arcane phenomena you encounter, including spell glyphs, illusions, etc.
-- You can detect spellcasting within 60 ft. of you even if there are no components.
-- As a reaction you can attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence. Once you successfully disrupt a spell this way, you cannot do so again until you finish a long or short rest.
-
-
-#### Dungeoncrasher
-
-*Strength (Athletics) Expert Skill Trick*
-
-When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
-
-#### Find Portal
-
-*Wisdom (Survival) Expert Skill Trick*
-
-You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check, with advantage if you also are proficient in Arcana. The result determines your success as shown on the table below. Once you use this ability, you cannot do so again until you finish a long rest.
-
-**Check Total**  | **Result**
-|:--------|:----|
-&lt; 10 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous. 
-10-14 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous. 
-15-19 | You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous. 
-20+ | You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
-
-#### Like a Ghost
-
-*Dexterity (Stealth) Expert Skill Trick*
-
-When you are hidden, you no longer need to be concealed to remain hidden, but you must expend your bonus action every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
-
-#### Slippery
-
-*Dexterity (Acrobatics) Expert Skill Trick*
-
-You can no longer be grappled or restrained by spells under 6th level or by non-legendary creatures.
-
-### Master Skill Tricks
-Master skill tricks require a +6 proficiency or level 17 characters.
-#### Balance on Thin Air
-
-*Dexterity (Acrobatics) Master Skill Trick*
-
-You can spend your bonus action on turn to walk on air as if it was solid ground. If you do not spend your bonus action while suspended,  you fall.
-
-#### Dragon's Fear
-
-*Charisma (Intimidation) Master Skill Trick*
-
-This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
-\page
-#### Friend to All
-
-*Charisma (Persuasion) Master Skill Trick*
-
-As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. Once you do so, you cannot do so again until you finish a long rest.
-
-Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
-
-#### Force Portal
-
-*Wisdom (Survival) Master Skill Trick*
-
-As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
-
-#### Healing Hands
-
-*Wisdom (Medicine) Master Skill Trick*
-
-As an action you can magically do one of the following to a creature you touch. Once you use an option, you cannot use that option again until you finish a long rest.
-
-- Heal the creature to half of its maximum hit points.
-- Remove any condition from a living creature.
-- Cure any disease and remove any poison or curse affecting the creature.
-- Break one spell affecting the creature.
-- Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
-
-<!--part-->
-
-# Spells
+## New Spells
 
 Spells marked as coming from OGL 1.0a sources are Open Game Content modified and licensed under that agreement, found at 
 
@@ -2991,7 +2646,7 @@ ____
 You create a burst of magically-propelled gears. Each creature within a 60 ft cone must make a Dexterity saving throw, taking 5d8 slashing damage on a failed save or half as much on a success.
 
 **Source** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
-
+\page
 #### Gear Shield
 *2nd level abjuration*
 ____
@@ -3005,7 +2660,7 @@ ____
 You cause a handful of gears to orbit the target’s body. These shield the spell’s target from incoming attacks and effects. The creature has resistance to all damage from the first source of damage taken since the beginning of their last turn.
 
 **Source** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
-\column
+
 #### Gremlins
 *4th level enchantment*
 ____
@@ -3131,9 +2786,9 @@ You extend a tether of sticky force and try to pull a creature or unattended obj
 Alternatively, you can use this spell to grapple to a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
 
 **Source:** Original, licensed CC-BY-4.0
-
+\page
 ## Modified SRD Spells
-The following spells from the 5.1 SRD have been altered, mostly to enhance them. Such modifications apply to all classes that have access to them.
+The following spells from the 5.1 SRD have been altered, mostly to enhance them. Such modifications apply to all classes that have access to them, at the GM's discretion.
 
 #### Barkskin
 Changes:
@@ -3150,35 +2805,1422 @@ Changes:
 Changes:
 - Can be used as a regular scimitar dealing only fire damage, dealing an extra (spell level / 2) fire damage per hit.
 - Can be given to another creature (as a scimitar). It disappears and returns to the caster if dropped or thrown.
+\page
+{{partCover}}
+
+# Skill Tricks
+## Enhancements for Skills and Proficiencies
+
+{{imageMaskEdge7,--offset:10cm,--rotation:180
+  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
+}}
 
 \page
-# Copyright
-<i class="far fa-copyright"></i> <year> This work is openly licensed via [CC BY-SA 4.0](https://creativecommons.org/publicdomain/by-sa/4.0/) except as noted. Noted material is licensed derivative work under the Open Gaming License 1.0a, presented below.
+## Skill Tricks
+Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
+{{note
+#### Design Intent
+Skill tricks are an attempt to give horizontal progression to everyone, but especially non-spell-casters. They are designed as "mini-feats"; a single bullet point with a passive or active ability. But even the passives are designed to be more than just bigger numbers. They are designed to give *new capabilities* or to provide certainty.
+
+}}
+
+Each skill trick detailed below shares some common characteristics:
+
+- **An ability score**. Every skill trick is tied to a particular ability score. That ability score sets its DC.
+- **A prerequisite**. Every skill trick has one or more prerequisites before it can be learned. These are generally either a particular level of proficiency (numerical value, which does not includes expertise) for those that are tied to a particular skill or tool, or a character level for those marked as General.
+- **A target or targets**. Many skill tricks target either an object or one or more creatures. A few target a particular area.
+- **An effect**. The text of the skill trick describes the effect, as well as any saving throws required.
+
+
+#### Skill Trick DCs
+The DC for any saving throws required by skill tricks is given by
+:
+**8 + the associated ability modifier + your proficiency bonus**
+:
+regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
+
+#### Acquiring Skill Tricks
+The Dawn of Hope-specific classes in this document grant skill tricks every time you get an Ability Score Increase (more often for the Variant Rogue).
+
+For other classes, you should feel free doing the same, namely granting a Skill Trick every time the character gets an Ability Score Increase. Some of them overlap with bullet points from printed feats. It is up to the player to decide, but generally you cannot benefit from both at the same time (they do not stack).
+
+Additionally, you can grant skill tricks as rewards for quests or for spending downtime training.
+\column
+### Basic Skill Tricks
+
+Basic skill tricks only require a +2 proficiency or level 4 characters.
+
+#### Alert
+
+*Wisdom (Perception OR Insight) Basic Skill Trick*
+
+You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight). Additionally, you can take reactions even when surprised.
+
+#### Arcane Initiate
+
+*Intelligence (Arcana) Basic Skill Trick*
+
+You learn one cantrip of your choice from the Arcanist list, as well as one 1st level spell from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+#### Charge
+
+*Strength (Martial Weapon) Basic Skill Trick*
+
+When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
+
+#### Coordinated Strike
+
+*Charisma (Martial Weapon) Basic Skill Trick*
+
+As a bonus action you take when you take the Attack action and attack a target, you can allow another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long or short rest.
+
+#### Craft Apprentice
+
+*Crafting Tool (any) Basic Skill Trick*
+
+You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires that proficiency of your choice.
+
+#### Diplomat
+
+*Charisma (Persuasion) Basic Skill Trick*
+
+When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
+\page
+#### Disarm
+
+*Strength (Martial Weapon) Basic Skill Trick*
+
+When you hit with a melee weapon attack, you can attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. Once you successfully disarm an opponent using this feature, you cannot do so again until you finish a long or short rest.
+
+#### Divine Initiate
+
+*Wisdom (Religion) Basic Skill Trick*
+
+You learn one cantrip of your choice from the Priest list, as well as one 1st-level spell from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+#### Evasive Footwork
+
+*Dexterity (General) Basic Skill Trick*
+
+When you use the Deflect action but the attack still hits, you do not expend a use of the action.
+
+#### Feint
+
+*Charisma (Deception) Basic Skill Trick*
+
+You fake an attack as a bonus action, trying to misdirect the enemy. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them. Once a creature fails a saving throw against this, they are immune to further attempts for the duration of that encounter. 
+
+#### Frighten 
+
+*Charisma (Intimidation) Basic Skill Trick*
+
+As a bonus action, you can threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn. A creature that succeeds on their saving throw is immune to further uses of this ability for the duration of that encounter. 
+
+#### Haggler
+
+*Charisma (Persuasion OR Deception) Basic Skill Trick*
+
+You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
+
+#### Jump
+
+*Strength (Athletics) Basic Skill Trick*
+
+You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
+
+#### Linguist
+
+*Intelligence (General) Basic Skill Trick*
+
+When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments. Enough to be understood, but not enough to convey subtle details.
+
+Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
+
+#### Lung Capacity
+
+*Constitution (General) Basic Skill Trick*
+
+You can hold your breath for twice as long. In addition, you can choose to gain advantage on any required Constitution saving throw when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability). Once you use the latter portion of this feature a number of times equal to your Constitution modifier (minimum 1), you cannot do so again until you finish a long rest.
+
+#### Medic
+
+*Wisdom (Medicine) Basic Skill Trick*
+
+When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, the target regains 1 hit point and is conscious instead.
+
+#### Misdirect
+
+*Dexterity (Stealth) Basic Skill Trick*
+
+When you are hidden, you can spend your reaction to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
+
+#### Piercing Wound
+
+*Dexterity (Martial Weapon) Basic Skill Trick*
+
+When you hit with an attack from a ranged or finesse weapon, you can try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. Once you use this ability a number of times equal to your Dexterity modifier (minimum once), you cannot do so again until you finish a long or short rest.
+
+#### Primal Initiate
+
+*Wisdom (Nature) Basic Skill Trick*
+
+You learn one cantrip of your choice from the Druid list, as well as one 1st level spell. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+\page
+#### Resourceful Combatant
+*Strength (Martial Weapon) Basic Skill Trick*
+
+You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
+
+#### Scholar: History
+
+*Intelligence (History) Basic Skill Trick*
+
+You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
+
+#### Scholar: Nature
+
+*Intelligence (Nature) Basic Skill Trick*
+
+You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
+
+#### Scholar: Religion
+
+*Intelligence (Religion) Basic Skill Trick*
+
+You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
+
+#### Sense Baleful Magic
+
+*Wisdom (Arcana) Basic Skill Trick*
+
+You are sensitive to the presence of hostile magics in your proximity. When you are within 30 ft. of a magical trap, spell glyph, or other hostile magical environment, you can use your passive Wisdom (Arcana) instead of your passive Wisdom (Perception) to determine their location and nature.
+
+Additionally, you have advantage on checks made to determine the spell being cast.
+
+#### Shield Bash
+
+*Strength (Shield) Basic Skill Trick*
+
+You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
+
+#### Soothe Domesticated Animal
+
+*Wisdom (Animal Handling) Basic Skill Trick*
+
+You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
+
+#### Trap Finder
+
+*Intelligence (Investigation) Basic Skill Trick*
+
+You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you gain advantage on any Dexterity saving throws to avoid their effects.
+
+#### Tumble
+
+*Dexterity (Acrobatics) Basic Skill Trick*
+
+You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space.
+
+### Advanced Skill Tricks
+
+
+Advanced skill tricks require a +4 proficiency or level 9 characters.
+
+#### Arcane Journeyman
+
+*Intelligence (Arcana) Advanced Skill Trick*
+
+You learn one cantrip of your choice from the Wizard list, as well as one spell of 1st or 2nd level from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+#### Athlete
+
+*Strength (Athletics) Advanced Skill Trick*
+
+You can climb at full speed without making checks even on surfaces with few handholds or slick surfaces. You can use your bonus action to climb even magically slick surfaces without needing hands or a check; if you are still on this surface at the start of your next turn, you must expend an additional bonus action or use your hands.
+
+Additionally, you gain a swimming speed equal to your normal speed and no longer need to make checks to swim even in very rough or fast waters.
+
+Additionally, the distance you can jump doubles and the height at which you start taking fall damage increases to 30 ft (taking 1d6 for the first 30 ft you fall and 1d6 for every 10 ft above that).
+\page
+#### Bait and Switch
+
+*Charisma (Deception) Advanced Skill Trick*
+
+As a reaction when you are targeted by an attack or ability that only targets you, you swap places with one willing creature within 5 feet of you. They become the target of the ability. This movement does not provoke opportunity attacks. Once you do so, you cannot do so again during that same encounter or for one minute, whichever is shorter.
+
+#### Befriend Wild Animal
+
+*Wisdom (Animal Handling) Advanced Skill Trick*
+
+As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
+
+#### Bond Breaker
+
+*Strength (General) Advanced Skill Trick*
+
+You can use an action to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
+
+#### Delay Unconsciousness
+
+*Constitution (General) Advanced Skill Trick*
+
+As a reaction when you are brought to zero hit points, you can choose to gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
+
+#### Demoralize
+
+*Charisma (Intimidation) Advanced Skill Trick*
+
+As an action, you can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they are frightened of you for one minute; if they fail the saving throw by more than 5 points, they will attempt to flee or surrender instead. A single targeted creature can attempt the saving throw again when they end their turn out of line of sight of you. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them. 
+
+#### Divine Journeyman
+
+*Wisdom (Religion) Basic Skill Trick*
+
+You learn one cantrip of your choice from the Cleric list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+#### Fascinate
+
+*Charisma (Performance) Advanced Skill Trick*
+
+As an action, you begin a distracting performance. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction). Any creature that succeeds on the saving throw or for whom the effect ends is immune to any further attempts by you to use this ability for 24 hours.
+
+#### Find Weakness
+
+*Intelligence (Investigation) Advanced Skill Trick*
+
+As a bonus action, you can search for flaws in your opponent. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
+
+- Their highest and lowest saving throw modifiers
+- Any resistances or immunities they have.
+- Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
+- Their current goals
+
+Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
+
+Once you use this ability in either mode a number of times equal to your Intelligence modifier (minimum once), you cannot do so again until you finish a long rest.
+
+#### Like a Solid Snake
+
+*Dexterity (Stealth) Advanced Skill Trick*
+
+You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
+
+#### Mental Toughness
+
+*Charisma (General) Advanced Skill Trick*
+
+When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can ignore the effects of those conditions until the end of your turn. Once you use this ability a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long rest.
+
+#### People Whisperer
+
+*Wisdom (Insight) Advanced Skill Trick*
+
+When you make a Wisdom (Insight) check and the result is above a 15, you gain one pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
+\page
+#### Primal Journeyman
+
+*Wisdom (Religion) Advanced Skill Trick*
+
+You learn one cantrip of your choice from the Druid list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+#### Pocket Sand
+
+*Dexterity (Sleight of Hand) Advanced Skill Trick*
+
+As a bonus action, you can attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success or failure, the creature is immune to further attempts to blind them this way until the end of the encounter.
+
+#### Resuscitation
+
+*Wisdom (Medicine) Advanced Skill Trick*
+
+As an action, you can attempt to resuscitate someone who died within the last minute. Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 HP and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion. 
+
+#### Snow Job
+
+*Charisma (Deception) Advanced Skill Trick*
+
+When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so at advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
+
+#### Sunder
+
+*Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick*
+
+When you make an attack against an unattended object and hit, you ignore its Damage Threshold and deal double damage. 
+
+Alternatively, you can target attended objects as follows. Once you hit with such an attack, you cannot do so again for one minute.
+
+- **Armor**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
+- **Weapons**: Make an attack against the target's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
+- **Wielded spell foci or other objects in hand**: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 &times; 5 ft away in a random direction.
+
+
+#### Wrestler
+
+*Strength (Athletics) Advanced Skill Trick*
+
+You can grapple and shove creatures two sizes larger than yourself. Once per long or short rest, you can remove the size limit entirely.
+
+Additionally, when you start your turn with a creature grappled, you can attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
+
+### Expert Skill Tricks
+
+
+Expert skill tricks require a +5 proficiency or level 13 characters.
+
+#### Blindfighter
+
+*Wisdom (Perception) Expert Skill Trick*
+
+Invisible or unseen enemies no longer have advantage to hit you. In addition, you do not have disadvantage to hit invisible or unseen enemies and gain blindsight out to 10 ft. If you already have blindsight or gain it later, this stacks.
+
+#### Break Will
+
+*Charisma (Intimidation) Expert Skill Trick*
+
+This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken (surrendering or fleeing) on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
+
+#### Comprehend Dweomer
+
+*Intelligence (Arcana) Expert Skill Trick*
+
+You gain the following benefits:
+
+- You can determine the nature of any arcane phenomena you encounter, including spell glyphs, illusions, etc.
+- You can detect spellcasting within 60 ft. of you even if there are no components.
+- As a reaction you can attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence. Once you successfully disrupt a spell this way, you cannot do so again until you finish a long or short rest.
+
+\page
+#### Dungeoncrasher
+
+*Strength (Athletics) Expert Skill Trick*
+
+When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
+
+#### Find Portal
+
+*Wisdom (Survival) Expert Skill Trick*
+
+You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check, with advantage if you also are proficient in Arcana. The result determines your success as shown on the table below. Once you use this ability, you cannot do so again until you finish a long rest.
+
+**Check Total**  | **Result**
+|:--------|:----|
+&lt; 10 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous. 
+10-14 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous. 
+15-19 | You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous. 
+20+ | You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
+
+#### Like a Ghost
+
+*Dexterity (Stealth) Expert Skill Trick*
+
+When you are hidden, you no longer need to be concealed to remain hidden, but you must expend your bonus action every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
+
+#### Slippery
+
+*Dexterity (Acrobatics) Expert Skill Trick*
+
+You can no longer be grappled or restrained by spells under 6th level or by non-legendary creatures.
+
+### Master Skill Tricks
+Master skill tricks require a +6 proficiency or level 17 characters.
+#### Balance on Thin Air
+
+*Dexterity (Acrobatics) Master Skill Trick*
+
+You can spend your bonus action on turn to walk on air as if it was solid ground. If you do not spend your bonus action while suspended,  you fall.
+
+#### Dragon's Fear
+
+*Charisma (Intimidation) Master Skill Trick*
+
+This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
+
+#### Friend to All
+
+*Charisma (Persuasion) Master Skill Trick*
+
+As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. Once you do so, you cannot do so again until you finish a long rest.
+
+Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
+
+#### Force Portal
+
+*Wisdom (Survival) Master Skill Trick*
+
+As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
+
+#### Healing Hands
+
+*Wisdom (Medicine) Master Skill Trick*
+
+As an action you can magically do one of the following to a creature you touch. Once you use an option, you cannot use that option again until you finish a long rest.
+
+- Heal the creature to half of its maximum hit points.
+- Remove any condition from a living creature.
+- Cure any disease and remove any poison or curse affecting the creature.
+- Break one spell affecting the creature.
+- Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
+
+\page
+{{partCover}}
+
+# Incantations
+## Rituals for Everyone!
+
+{{imageMaskEdge8,--offset:10cm,--rotation:180
+  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
+}}
+
+\page
+# Incantations
+
+{{note
+##### A word from the author
+A repeated issue is that "utility" and "spells" have become virtually synonymous. This means that for a martial to gain "utility", he has to gain something indistinguishable from spells...which casters already do better.
+
+The intent of the Incantation system is to break this link entirely by turning many of the "utility" spells into incantations that anyone of the appropriate level who discovers the ceremony can enact. The spells they're based on no longer exist on anyone's list. These are balanced by tier and components. These components may include consumable expensive items, required places, time, bloodlines, or number of casters. Note that since incantations are not spells, components must be provided explicitly and cannot be provided by a focus or component pouch.
+
+Spells eligible to be converted to incantations include those used for information gathering, those with either permanent or long-lasting (hours or more) effects, those that allow the party to travel quickly between locations or enable new movement modes (underwater, flying, etc), and those that raise the dead or remove strong conditions. Generally, those that deal damage or impose debilitating conditions in a combat environment (other than fixed-location traps and prepared defenses) are not good candidates for conversion.
+}}
+
+
+## List of Incantations, alphabetical with rarity
+- Abjure Espionage (Uncommon)
+- Alarm (Common)
+- Animal Messenger (Common)
+- Antipathy/Sympathy (Very Rare)
+- Arcane Lock (Common)
+- Astral Projection (Legendary)
+- Augment Fertility (Uncommon)
+- Augury (Common)
+- Awaken Beast or Plant (Rare)
+- Binding Circle (Rare)
+- Clairvoyance (Uncommon)
+- Commune (Rare)
+- Create Food and Water (Uncommon)
+- Create Demiplane (Very Rare)
+- Continual Flame (Common)
+- Divination (Uncommon)
+- Dream Messenger (Uncommon)
+- Extradimensional Refuge (Rare)
+- Extradimensional Refuge, Minor (Common)
+- Fabricate (Rare)
+- Find the Path (Uncommon)
+- Fly (Rare)
+- Floating Disk (Common)
+- Forbiddance (Rare)
+- Gate (Legendary)
+- Geas (Rare)
+- Gentle Repose (Common)    
+- Gift of Tongues, Greater (Uncommon)
+- Gift of Tongues, Lesser (Common)
+- Guards and Wards (Rare)
+- Hallow (Rare)
+- Identify (Common)
+- Illusory Script (Common)
+- Instant Summons (Uncommon)
+- Irresistible Summons (Legendary)
+- Legend Lore (Uncommon)
+- Lock-breaker's Boon (Common)
+- Magic Aura (Common)
+- Magic Mouth (Common)
+- Mending (Common)
+- Mind Blank (Very Rare)
+- Modify Memory (Rare)
+- Nondetection (Common)
+- Phantom Steed (Rare)
+- Planar Ally (Rare)
+- Plane Shift (Rare)
+- Private Sanctum (Uncommon)
+- Programmed Illusion (Rare)
+- Project Image (Very Rare)
+- Purify Food and Drink (Common)
+- Rapid Fortifications (Uncommon)
+- Restoration (Common)
+- Resurrection (Uncommon)
+- Scrying (Very Rare)
+- Secure Shelter (Uncommon)
+- Sending (Uncommon)
+- Sense Aura (Uncommon)
+- Sense Location (Uncommon)
+- Shadow Creation (Rare)
+- Spell Trap (Uncommon)
+- Telepathic Bond (Uncommon)
+- Teleport (Very Rare)
+- Teleportation Circle (Rare)
+- Teleport Trap (Uncommon)
+- Total Transformation (Legendary)
+- Transport via Plants (Uncommon)
+- Unseen Servant (Common)
+- Voice the Voiceless (Common)
+- Water Breathing (Common)
+- Water Walk (Common)
+- Zone of Truth (Uncommon)
+
+
+\page
+## Finding and Learning Incantations
+The knowledge to perform an incantation is encoded into Incantation Scrolls. These are similar to spell scrolls of the same rarity, with the difference that they are not consumed on use but that performing the incantation requires reading from the enchanted scroll. Characters can prepare a Incantation Scroll following the same rules as crafting a spell scroll; the rarity of the incantation matches the rarity of the “spell scroll” created. 
+
+Successfully performing an incantation requires a certain strength of will above all. Mechanically, this translates into level requirements. Incantations come in similar rarities to magic items, with corresponding level requirements to perform.
+
+*Common* incantations can be learned by anyone. They correspond to spells with costs between 2 and 4 aether as well as cantrips.
+
+*Uncommon* incantations require at least someone of level 5. They generally correspond to spells with costs between 5 and 12 aether.
+
+*Rare* incantations require at least someone of level 11. They generally correspond to lower-tier legendary effects.
+
+*Very Rare* incantations require level 15 to perform. They generally correspond to mid-tier legendary effects.
+
+*Legendary* incantations require someone of level 17 to perform. They correspond to highest-tier legendary effects.
+
+## Incantation Tags and Costs
+Each incantation has one or more tags that summarize the costs associated with performing the incantation. The exact details are explained in the text of the incantation entry. The tags are listed below:
+
+*Cooldown (X):* This incantation can only be performed once every X amount of time. This cooldown is per participant.
+
+*Costly (X):* This incantation requires a component with value of at least X gp, and that component is consumed per casting.
+
+*Debilitating (X):* Performing this incantation is exhausting. If you perform it again before finishing a long rest, anyone participating gains X levels of exhaustion, with subsequent performances causing stacking penalties.
+
+*Debilitating (Major, X):* Like Debilitating, except takes place immediately on first use per long rest as well as subsequent uses.
+
+*Exclusive:* The effects of this incantation immediately end if the incantation is performed again or if the target of the incantation is targeted by any other incantation.
+
+*Focus (X):* This incantation requires a component with value of at least X gp, but that component is not consumed in the casting.
+
+*Group (N):* This incantation requires N people who all know the incantation. All share in any negative effects/costs.
+
+*Immobile:* Those performing the incantation cannot move more than 5 feet during the time required to perform the incantation and for the duration of the incantation; if they do, the incantation fails.
+
+*Location:* This incantation can only be performed at specific locations as described in the text. Implies Immobile.
+
+Each incantation also requires a certain amount of time to perform (generally more than one action). Since these are not spells, that does not trigger the need for concentration. Incantations that are not Group (2) or larger can be performed by multiple celebrants simultaneously. Having one or more extra participants reduces the time required by 1 step (see below) with a minimum of a full-round action. Each participant shares in the restrictions and penalties and must know the incantation to participate.
+
+### Time Steps
+Full Round (takes effect at the beginning of the performer's next turn, requires action, bonus action, and reaction and is interrupted by any damage) &rarr; 1 minute &rarr; 10 minutes &rarr; 1 hour &rarr; 4 hours &rarr; 8 hours &rarr; 24 hours.
+
+### Duration
+Some incantations have effects that naturally expire. Those will have a Duration tag in their summary line. This duration starts once the incantation's effects begin (so a 1 hr performance time and a 1 hour duration mean that the effect will end 2 hours after the incantation began).
+
+## Incantations by Rarity
+
+### Common Incantations
+Common incantations are suitable to be found by Journeyman-rank adventurers, ie in levels 1-4, although many have effects that are still valuable much later.
+
+#### Alarm
+
+*Common, 10 minutes, duration 8 hours.*
+
+You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the incantation effect, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the incantation, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.
+
+A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.
+\page
+#### Animal Messenger
+*Common, 1 minute, Exclusive, Costly (Special). Duration 24 hours (Special).*
+
+By means of this incantation, you use an animal to deliver a message. Choose a Miniscule or Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the incantation toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.
+
+When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the incantation ends, the message is lost, and the beast makes its way back to where you cast this incantation.
+
+*Special:* By burning a sachet of costly herbs worth at least 10 gp while performing this incantation, you can extend the duration by 24 hours for the first 10 gp worth of herbs and 24 hours for every 50 gp of herbs after that.
+
+#### Arcane Lock
+*Common, 1 minute, Exclusive, Costly (25 gp of gold dust)*
+
+You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this incantation can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this effect for 1 minute. Use of the lock picks created by *lock-breaker's boon* suppresses this effect for that pick attempt.
+
+While affected by this incantation, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.
+
+#### Augury
+*Common, 10 minutes, Focus (specially marked sticks, bones, or other tokens worth at least 25 gp), Special (see text).*
+
+By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherwise uninterested otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens:
+
+- Weal, for good results
+- Woe, for bad results
+- Weal and woe, for both good and bad results
+- Nothing, for results that aren't especially good or bad
+
+The incantation doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
+
+*Special:* If you perform the incantation two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.
+
+#### Continual Flame
+*Common, 1 minute, Costly (ruby dust worth 50 gp), Cooldown (1 hour)*
+
+A flame, equivalent in brightness to a torch, springs forth from an Tiny or Miniscule object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched.
+
+#### Extradimensional Refuge, Minor
+*Common, 1 minute, Debilitating (1)*
+
+You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the incantation ends. The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space. Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see and hear out of it as if through a 3-foot-by-5 foot window centered on the rope. This window and the space beyond is invisible to creatures outside unless they have Truesight.
+
+Anything inside the extradimensional space drops out when the incantation ends. This extradimensional space does not interact with Bags of Holding or other similar objects.
+
+\page
+#### Floating Disk
+*Common, 10 minutes, Immobile. Duration 1 hour*
+
+This incantation creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the incantation ends, and everything on the disk falls to the ground.
+
+The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the effect ends.
+
+#### Gentle Repose
+*Common, Full round, Costly (2 cp). Duration 10 days*
+
+This incantation prevents the decay of corpses for the duration, prolonging the time over which the Resurrection incantation can be performed while still counting as an uncommon effect. This also increases the time that the Revivify spell will work. While in effect, it also prevents the raising of the target as undead.
+
+#### Gift of Tongues, Lesser
+*Common, Full round action, Costly (a small golden fish worth 1 gp). Duration 1 hour*
+
+For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
+
+This incantation doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.
+
+#### Identify
+*Common, 10 minutes, Focus (a pearl worth 100 gp and an owl feather).*
+
+You choose one object that you must touch throughout the casting of the incantation. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. If you instead touch a creature throughout the casting, you learn what spells or magical effects, if any, are currently affecting it.
+
+*Note:* Some effects (such as Magic Aura) may deceive this incantation and many more powerful effects simply cannot be detected this way.
+\column
+#### Illusory Script
+*Common, 10 minutes, Costly (a lead based ink worth at least 10 gp), Duration 10 days*
+
+You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration. To you and any creatures you designate when you cast the incantation, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know. Should the incantation be dispelled, the original script and the illusion both disappear. A creature with truesight can read the hidden message.
+
+#### Lock-breaker's Boon
+*Common, 1 minute, Exclusive. Duration 10 minutes*
+
+One creature touched gains proficiency with Thieves Tools for the duration. If the target already has proficiency, they gain expertise instead. The incantation also creates a set of thieves' tools made of solid force. When these tools are used on a door that was locked via Arcane Lock, the magical lock is suppressed for the duration of the attempt.
+
+#### Magic Aura
+*Common, 10 minutes, Costly (silk worth 10 gp). Duration 24 hours*
+You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.
+
+When you cast the incantation, choose one or both of the following effects. The effect lasts for the duration. If you cast this incantation on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.
+
+**False Aura.** You change the way the target appears to spells and magical effects, such as sense aura or identify, that detect magical auras. You can make a non-magical object appear magical, a magical object appear non-magical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item.
+
+**Mask.** You change the way the target appears to spells and magical effects that detect creature types, such as a oathbound's Divine Sense or the trigger of a Spell Trap incantation. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment. This allows a masked creature, for example, to bypass such things as glyphs of warding keyed to creature type.
+
+\page
+#### Magic Mouth
+*Common, 10 minutes, Costly (10gp, a small bit of honeycomb and jade dust)*
+
+You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the incantation to deliver your message.
+
+When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this incantation, you can have the incantation end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.
+
+The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the GM.
+
+#### Mending
+*Common, 1 minute.*
+
+This incantation repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This incantation can physically repair a magic item or construct, but the incantation can't restore magic to such an object.
+
+#### Purify Food and Drink
+*Common, 10 minutes*
+
+All non-magical food and drink within a 5-foot-radius sphere centered on a point of your choice within 10 ft is purified and rendered free of poison and disease. This does not affect creatures, even if you identify as an anthropophage.
+\column
+#### Restoration
+*Common (see text), Variable time (see text), Costly (see text).*
+
+This incantation removes afflictions. The power depends on the time spent and the components expended:
+
+*Lesser Restoration* (Full round, diamond dust worth 10 gp): The creature touched at the end of this incantation is cured of one disease afflicting it or one of the following conditions: blinded, deafened, paralyzed, or poisoned.
+
+*Greater Restoration* (1 hour, 100 gp of diamond dust, requires 5th level): The creature touched at the end of this incantation either reduces their exhaustion level by one or has one of the following effects ended:
+
+- One effect that charmed or petrified the target
+- One curse, including the target's attunement to a cursed magic item
+- Any reduction in one of the target's ability scores
+- One effect reducing the target's hit point maximum
+
+
+#### Sense Aura 
+*Common, 1 minute, Exclusive. Duration 10 minutes*
+This incantation opens your senses to more clearly sense the auras around creatures and objects. Choose one of the following:
+
+**Sense Otherworldly Nature.** You sense the aura associated with creatures with True Names. For the duration, you can determine whether a creature you see is an undead, fiend, celestial, fey, or elemental. You know the type and the general nature (such as zombie, vampire, demon, etc.) of the creature, but you don't know their personal identity (e.g. the Arch-zombie Bob). You can also sense the presence of areas that are affected by the *hallow* incantation, similar effects, or are heavily associated with Astral or Abyssal energies.
+
+**Sense Aether Manipulation.** You sense the auras associated with active aetheric abilities. For the duration, you can sense any magical effect or item within 60 ft of you and have an idea as to its strength. The GM will tell you the equivalent rarity of the effect. You also gain a sense of the type of magic involved and whether it is protective, baleful, or beneficial to the one that it is affecting or that would trigger it. For example, a magical trap that causes a burst of fire would be baleful, while a wall of force would be protective.
+\page
+#### Unseen Servant
+*Common, 10 minutes, Costly (1 gp). Duration 1 hour.*
+
+This incantation creates an invisible, mindless, shapeless force that performs simple tasks at your command until the incantation ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the effect ends.
+
+Once on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command. It cannot take any action that would directly or foreseeably cause damage or to another creature (as decided by the GM). If a command is rejected due to causing harm, you can give it a different command with that same bonus action.
+
+If you command the servant to perform a task that would move it more than 60 feet away from you, the effect ends.
+
+#### Voice the Voiceless
+*Common (see text), 10 minutes, Debilitating (1, see text). Duration 10 minutes*
+
+**Animal.** You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion. 
+
+**Plants.** You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the incantation's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.
+You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the GM's discretion. The incantation doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks.
+
+If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it. This incantation can cause the plants created by the entangle spell to release a restrained creature.
+
+**Corpse.** (requires level 5 and imposes Debilitating (1)): You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The incantation fails if the corpse was the target of this incantation within the last 10 days.
+
+Until the incantation ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This incantation doesn't return the creature's soul to its body; it only animates the corpse and accesses the latent memories still present. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.
+
+#### Water Breathing
+*Common, 10 minutes, Exclusive. Duration 24 hours*
+This incantation grants up to ten willing creatures you can see within range the ability to breathe underwater until the incantation ends. Affected creatures also retain their normal mode of respiration.
+
+#### Water Walk
+*Common, 10 minutes. Duration 1 hour*
+
+This incantation grants the ability to move across any liquid surface&mdash;such as water, acid, mud, snow, quicksand, or lava&mdash;as if it were solid ground (creatures crossing dangerous surfaces such as molten lava can still take damage or suffer other negative effects from contact but will not become immersed or mired in the liquid). Up to ten willing creatures you can see within range gain this ability for the duration. If you target a creature submerged in a liquid, the incantation carries the target to the surface of the liquid at a rate of 60 feet per round.
+\page
+### Uncommon Incantations
+Uncommon incantations are suitable to be first found during the early Adventurer phase, ie levels 5-7.
+#### Abjure Espionage
+*Uncommon, 1 minute, Exclusive, Debilitating (1). Duration 1 hour*
+
+You ward a 30' sphere around you against spying magics for 1 hour. Any spell or effect that would allow someone not in the area to see or hear the interior fails; no sound or vision can see into the area from the outside.
+
+*Special* if you expend a pearl worth at least 100 gp while performing this incantation, you can instead cause any foiled scrying attempt to see or hear a scene that you designate when you cast the incantation. This scene can last up to 10 minutes, after which it loops to the beginning.
+
+#### Augment Fertility
+*Uncommon, 8 hours, Cooldown (1 week), Location (the place to be enriched)*
+
+You enrich the land. All plants in a half-mile radius centered on your location become enriched for 1 year. The plants yield twice the normal amount of food when harvested. This has no effect on non-food plants or animals. Nor does it cause the plants to be ready for harvest earlier.
+
+#### Clairvoyance
+*Uncommon, 10 minutes, Focus (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing), Costly (herbs and incense worth 25 gp), Immobile. Duration 10 minutes.*
+
+You create an invisible sensor within 1 mile in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be interacted with except as below.
+
+When you cast the incantation, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As an action you can switch between seeing and hearing.
+
+A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist and can attack it. It counts as an object with AC 10, 1 HP, and is immune to all damage except from weapon attacks. If it is reduced to zero HP, the effect immediately ends.
+
+#### Create Food and Water
+*Uncommon, 1 minute, Costly (45 sp), Exclusive, Cooldown (1 day)*
+
+You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.
+
+#### Divination
+*Uncommon, 10 minutes, Costly (incense and an appropriate sacrificial offering worth at least 25 gp), Cooldown (8 hours).*
+
+Your magic and an offering put you in contact with a god or a god's servants with whom you have a pre-existing relationship (which could be as simple as being in a shrine sanctified to them). You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The GM offers a truthful reply, but the reply might be slanted to fit that entity's interests or knowledge or concerns. The reply might be a short phrase, a cryptic rhyme, or an omen.
+
+The incantation doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
+
+#### Dream Messenger
+*Uncommon, 10 minutes, Focus (a body part, lock of hair, nail clipping, or some similar portion of the intended target).*
+
+This incantation shapes a creature's dreams. Choose a creature known to you as the target of this incantation. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this incantation. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.
+
+If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the incantation. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the incantation early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the incantation, the messenger knows it, and can either end the trance (and the incantation) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.
+
+The target is aware of the identity of the messenger and can choose to reject the message. If they do so, the incantation immediately ends.
+\page
+#### Find the Path
+*Uncommon, 10 minutes, Focus (a set of divinatory tools—-such as bones, ivory sticks, cards, teeth, or carved runes--worth 100 gp and an object from the location you wish to find). Duration 1 day.*
+
+This incantation allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as “a green dragon's lair”), the incantation fails.
+
+For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.
+
+#### Gift of Tongues, Greater
+*Uncommon, 10 minutes, Focus (a golden tongue worth 100 gp). Duration 1 hour*
+
+This incantation grants the creature you touch the ability to understand any spoken language it hears for one hour. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
+
+#### Instant Summons
+*Uncommon, 10 minutes, Focus (sapphire worth 1000 gp)*
+
+You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The incantation leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this incantation, you must use a different sapphire. At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the incantation ends.
+
+If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment. Dispel magic or a similar effect successfully applied to the sapphire ends this incantation's effect.
+
+#### Legend Lore
+*Uncommon, 1 hour, Focus (four ivory strips worth at least 50 gp each), Costly (incense worth at least 250 gp).*
+
+Name or describe a person, place, or object. The incantation brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales, forgotten stories, or even secret lore that has never been widely known. If the thing you named isn't of legendary importance, you gain no information. The more information you already have about the thing, the more precise and detailed the information you receive is.
+
+The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the incantation might yield this information: “Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of the Lord of the Anvil, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.”
+
+#### Nondetection 
+*Uncommon, 10 minutes, Costly (a pinch of diamond dust worth 25 gp sprinkled over the target), Exclusive. Duration 8 hours.*
+
+For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic (including the Identify or Sense Aura incantations) or perceived through magical scrying sensors.
+
+#### Private Sanctum
+*Uncommon, 1 hour, Exclusive, Debilitating (1). Duration 24 hours*
+
+You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The effect lasts for the duration or until you use an action to dismiss it. When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:
+
+- Sound can't pass through the barrier at the edge of the warded area.
+- The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.
+- Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.
+- Creatures in the area can't be targeted by information-gathering effects, including telepathy, unless they are willing to be affected.
+- Nothing can teleport into or out of the warded area.
+- Planar travel is blocked within the warded area.
+
+Performing the incantation on the same spot every day for a year makes this effect permanent.
+\page
+#### Rapid Fortifications
+*Uncommon, 10 minutes, Cooldown (10 minutes), Immobile*
+
+A non magical, permanent wall of solid stone forms at a point you choose within 120 ft over the duration of the incantation. The wall is 6 inches thick and is composed of ten 10-foot- by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the incantation is interrupted, the wall disappears.
+
+The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this incantation to bridge a chasm or create a ramp.
+
+If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the edge of the panels to create crenellations, battlements, and so on, but cannot create openings within a panel.
+
+The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.
+
+#### Resurrection
+*Uncommon (see text), Time varies (see text), Costly (see text), Group (see text), Location (see text)*
+
+This incantation is capable of restoring life to the dead. The cost and requirements depend on the condition of the target. The target must be a creature that did not die of old age and is not undead. Mortal wounds are healed, as well as any disease or poison that affected the target, and the creature is restored to 1 hit point.
+
+If the target has been dead less than 10 days and the body is intact, this incantation has a minimum casting level of 5. Enacting this incantation requires an hour of casting and consumes 500 gold pieces worth of diamonds but no other requirements.
+
+If the target has been dead more than 10 days but less than 100 years, this incantation has a minimum casting level of 11. Enacting this incantation requires 8 hours of casting and consumes 5,000 gold pieces worth of diamonds. Unless performed in a sanctified location or by a priest with the Life domain, enacting this form requires Group (2).
+
+If the target has been dead for more than 100 years or the body is destroyed, this incantation has a minimum casting level of 17. Enacting this incantation requires a group of 4 eligible casters, 24 hours, and 15,000 gold pieces worth of diamonds. Unless one of the participants is a priest of the Life domain or the incantation is performed in a sanctified location (via the hallow location incantation or other means), the target cannot regain hit points, stamina, or aether for 8 days and all participants and the target gain 2 levels of exhaustion.
+
+#### Sending
+*Uncommon, Full round, Focus (see text), Cooldown (1 hour)*
+
+You converse with a creature who possesses a token you willingly gave away as an identifying mark. You did not necessarily have to give it to that particular person, as you are sending to the bearer of the mark, whoever that might be. When you complete the incantation, you know if the person holding it is familiar to you, and if so, you know who it is, and can abort the incantation at that point. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The incantation enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.
+
+You can talk across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 95 percent chance that the link does not form. The entire conversation must last less than 1 minute, but both sides can speak as many words as will fit in that time. The cooldown applies per sender.
+
+*Special* If both you and the target are willing, you can prolong the conversation by adding Debilitating (N), where N is 1 for every additional minute spent. This does not impose penalties on this conversation, but does on any subsequent performances before you finish a long rest. The hearer also suffers this penalty if they attempt the incantation again before finishing a long rest.
+\page
+#### Sense Location
+*Uncommon, Full round, Debilitating (1), Focus (see text). Duration 1 hour*
+
+Choose either a type of animal or plant, a specific creature familiar to you, or an object that is familiar to you.
+
+**Animal or plant.** Requires a focus of a carving of an animal or plant. Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.
+
+**Creature.** A carving of an eye worth at least 25 gp. Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
+
+The incantation can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this incantation doesn't locate the creature. This incantation can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.
+
+**Object.** A short forked stick. Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.
+
+The incantation can locate a specific object known to you, as long as you have seen it up close—within 30 feet—at least once. Alternatively, the incantation can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon. This incantation can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.
+
+#### Secret Chest
+*Uncommon, 1 minute, Focus (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp)*
+
+You hide a chest and all its contents in the Border Shadow. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).
+
+While the chest remains in the Border Shadow and protected by this magic, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Border Shadow by using an action and touching both the chest and the replica. While protected and in the Border Shadow, the chest and its contents cannot be detected or interacted with except by summoning it back to your presence.
+
+This effect ends if you cast this incantation again, if the smaller replica chest is destroyed, or if you choose to end the effect as an action. If the effect ends and the larger chest is in the Border Shadow, it is untethered and unprotected by the magic and may be discovered by other creatures traveling through that place.
+
+#### Secure Shelter
+*Uncommon, 10 minutes, Immobile, Duration 8 hours*
+
+A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The effect ends if you leave its area.
+
+Nine creatures of Medium size or smaller can fit inside the dome with you. The incantation fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this incantation can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't target creatures or points on the other side of the dome, but this does not block teleportation effects such as dimension door. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. This incantation cannot be performed while immersed in a liquid such as being underwater.
+
+Until the effect ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.
+The dome of force is an object with an AC of 10 and a damage threshold of 10. Any attack or effect dealing more damage to the dome than this forces the performer of the incantation to make a Constitution saving throw as if he were concentrating on a spell and had taken that amount of damage. On a failed save, the dome vanishes.
+
+\page
+#### Spell Trap
+*Uncommon, 1 hour, Costly (incense and powdered diamond worth at least 500 gp), Immobile*
+
+When you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The incantation cannot be performed in a demiplane or other extraplanar space. If the object on which it is inscribed is moved into such an extraplanar space, the effect immediately ends without being triggered.
+
+The glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found.
+
+You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.
+
+You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password. The glyph has no special senses and passive perception 10, but can detect creature types and counts as a divination effect for things like mind blank and nondetection.
+
+When you inscribe the glyph, choose explosive runes or a spell glyph.
+
+**Explosive Runes..** When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a DC 15 Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.
+
+**Spell Glyph..** You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area must either deal damage or conjure a creature hostile to the one who triggers it. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.
+
+#### Telepathic Bond
+*Uncommon, 10 minutes, Group (2-8). Duration 1 hour.*
+
+You forge a telepathic link among up the participants, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this effect. Until the effect ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication ends for a participant if they move more than 1 mile away from the nearest other participant or if they move to another plane of existence.
+
+#### Teleport Trap
+*Uncommon, 1 minute, Exclusive, Debilitating (1). Duration 24 hours*
+
+You ward an area up to 1000 sq ft by 20' tall against teleportation for 24 hours. Choose one of the options below:
+
+**Imprison.** When a creature attempts to teleport out of or within the area, they must make a DC 15 Charisma saving throw. On a failed save, they are teleported to an location you designate within the area and stunned for one minute. Stunned targets can repeat the saving throw at the end of each of their turns, ending the stun effect on a save. On a success, the teleport succeeds normally but you are aware that it happened.
+
+**Misdirect.** When a creature attempts to teleport into the warded area, they must make a DC 15 Charisma saving throw. On a failed save, they instead are shunted to a false destination (see the teleport description). On a success, the teleport succeeds normally but you are aware that it happened and the creature does not appear until 1 minute after it should have normally appeared.
+
+#### Zone of Truth
+*Uncommon, 1 minute, Immobile. Duration 10 minutes*
+
+You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the incantation ends, a creature that enters the incantation's area for the first time on a turn or starts its turn there must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Wisdom modifier. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.
+
+An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.
+
+\page
+### Rare Incantations
+Rare incantations are suitable to be found during for the latter half of Adventurer-phase play or later, ie levels 8-10 or higher.  
+
+#### Awaken Beast or Plant
+*Rare, 8 hours, Costly (agate worth 1000 gp), Immobile, Debilitating, Major (3)*
+
+After spending the casting time tracing magical pathways within a precious gemstone (the consumed component), you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your GM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree.
+
+The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.
+
+#### Binding Circle
+*Rare, Costly (a jewel worth at least 1000 gp), Immobile, Location (a prepared incantation circle large enough for the target creature), Exclusive, 1 hour. Duration 24 hours.*
+
+With this incantation, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the incantation inside the prepared incantation circle. At the completion of the casting, the target must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failed save, it is bound to attempt a single task you specify at the end of the casting. If the creature was summoned or created by a spell, the other incantation immediately ends but the creature does not disappear until the incantation expires.
+
+A bound creature must follow your instructions to the best of its ability. You might command the creature to guard a location, assassinate a target, or to deliver a message. The task must have a clear, fixed end condition and cannot be changed once assigned. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the incantation ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the incantation ends.
+
+A creature bound in this way cannot be bound again for a full year and a day after completing their binding. As binding a creature in this way involves compelling them by the True Words that comprise their essence, a very uncomfortable and agonizing process, creatures bound this way are almost invariably unfriendly to the performer after being released.
+
+Note: The specificity of the task is a conversation between you and the GM. The intent is to make it clear when the task is over and avoid open-ended tasks.
+
+*Special:* By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
+
+#### Commune
+*Rare, 10 minutes, Location (See Text), Cooldown (see text).*
+
+You commune with a deity, primal spirits, or an non-deific otherworldly entity.
+
+**Deity:.**  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren't necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.
+
+This incantation requires a pre-existing relationship with a deity and an environment attuned to the deity in question (such as a shrine, consecrated location, or the presence of holy symbols of that deity). Contacting this same deity again before completing a long rest angers the deity and they will refuse to answer.
+
+**Primal Spirits (Nature):.** You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the incantation gives you knowledge of the land within 3 miles of you. In caves and other underground settings or in towns, the radius is limited to 300 feet.
+
+You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
+
+- terrain and bodies of water
+- prevalent plants, minerals, animals, or peoples
+- powerful celestials, fey, fiends, elementals, or undead
+- influence from other planes of existence
+- buildings
+
+\page
+
+For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.
+Nature spirits are capricious, and communing again before moving out of range of the initial communion (ie 3 miles outdoors or 300' in caverns, underground settings or settlements) results in at least one lie.
+
+**Other entity.** You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this incantation, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.
+
+On a successful save, you can ask the entity up to five questions. You must ask your questions within 1 minute of finishing the incantation. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question).  Each time you perform this incantation again before finishing a long rest increases the DC of the saving throw by 5. The answers will generally be honest, but may be misleading depending on the entity's outlook and knowledge. If a one-word answer would be unintentionally misleading, the GM may answer as a short phrase instead.
+
+#### Extradimensional Mansion
+*Rare, 10 minutes, Focus (1500 gp), Immobile*
+
+You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the incantation can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. This extradimensional space does not interact with items such as the Bag of Holding.
+
+Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this incantation dissipate into smoke if removed from the mansion. When the effect ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.
+
+#### Fabricate
+*Rare, 1 hour, Debilitating (2), Costly (Special)*
+
+You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool. If you are creating an item out of metal, the metal must have been refined from ore previously.
+
+Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the incantation is commensurate with the quality of the raw materials. No matter what you create, you can only create a single object at a time, and the entire object must be created out of the same material.
+
+Creatures or magic items can't be created or transmuted by this incantation. You also can't use it to create items that ordinarily require a high degree of craftsmanship such as jewelry, exotic weapons (such as firearms), glass, or fitted armor (plate or half-plate).
+
+*Special*: The costly component required is that the amount of materials required is 150\% of the amount of material used in the final product.
+
+#### Fly 
+*Rare, 1 minute, Exclusive, Debilitating (1). Duration 10 minutes*
+
+Up to four willing creatures within 10 ft gain a flying speed of 60 feet for the duration. When the effect ends, the target falls if it is still aloft, unless it can stop the fall.
+
+*Special* If you take 10 minutes and expend a golden feather worth 100 gp, it can affect up to 8 creatures.
+\page
+#### Forbiddance
+*Rare,1 hour Costly (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1000 gp). Duration 1 day*
+
+You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate or irresistible summons incantations, to enter the area. The incantation proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Border Shadow, Feywild, Shadowfell, or the plane shift effect (incantation or spell).
+
+In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell).
+
+When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.
+
+The spell's area can't overlap with the area of another forbiddance incantation. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled.
+
+#### Geas
+*Rare, 1 minute, Debilitating (1). Duration 30 days.*
+
+You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. The course of action must have clear boundaries--"give all your wealth to the poor within 30 days" is appropriate, but "serve me however I wish" isn't because it isn't clear what exactly would break it. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. A charmed creature who attempts to break the geas must make the saving throw again. On a failure, the creature is compelled to uphold the geas. On a success, the creature can act as it chooses, but suffers a consequence of your choosing from the list below:
+
+- suffers the effect of any non-legendary spell without a saving throw. The effect must be negative for the creature in question, and it lasts for the entire duration without concentration.
+- is wracked with pain, gaining 5 levels of exhaustion immediately.
+- is tormented by guilt and is unable to benefit from a rest for 8 days.
+
+\column
+After suffering the penalty, the geas ends and you become aware that the creature has broken the compulsion.
+
+A creature that can't understand you is unaffected by the effect.
+
+You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the effect ends.
+
+You can end the effect early by using an action to dismiss it. A *remove curse* spell, or *restoration* incantation also end it.
+
+*Special* You can choose to immediately take 2 levels of exhaustion to increase the duration to a year and a day.
+
+#### Guards and Wards
+*Rare, 1 hour, Cooldown (12 hours), Focus (burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp). Duration 24 hours*
+
+You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the incantation.
+
+When you cast this incantation, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
+
+\page
+
+This incantation creates the following effects within the warded area.
+
+- Corridors. Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.
+- Doors. All doors in the warded area are magically locked, as if sealed by an arcane lock effect. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.
+- Stairs. Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while the guards and wards effect lasts.
+- Other Spell Effect. You can place your choice of one of the following magical effects within the warded area of the stronghold.    
+    - Place *dancing lights* in four corridors. You can designate a simple program that the lights repeat as long as guards and wards effect lasts.
+    - Place a *magic mouth* in two locations.
+    - Place a *stinking cloud* in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.
+    - Place a constant *gust of wind* in one corridor or room.
+    - Place a *suggestion* in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.
+    
+
+
+The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one year.
+
+#### Hallow 
+*Rare, 24 hours, Group (2), Debilitating (Major, 2), Costly (herbs, oils, and incense worth at least 1,000 gp, which the incantation consumes)*
+
+You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet. This effect does not stack even if different extra effects are chosen. The affected area is subject to the following effects.
+
+First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.
+
+Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the GM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the incantations's area for the first time on a turn or starts its turn there, it can make a DC 17 Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.
+
+- Courage. Affected creatures can't be frightened while in the area.
+- Darkness. Darkness fills the area. Normal light, as well as magical light created by spells of a 4th or lower level, can't illuminate the area.
+- Daylight. Bright daylight fills the area. Magical darkness created by spells of 4th or lower level can't extinguish the light.
+- Energy Protection. Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+- Energy Vulnerability. Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+- Everlasting Rest. Dead bodies interred in the area can't be turned into undead.
+- Extradimensional Interference. Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means.
+- Fear. Affected creatures are frightened while in the area.
+- Silence. No sound can emanate from within the area, and no sound can reach into it.
+- Tongues. Affected creatures can communicate with any other creature in the area, even if they don't share a common language.
+
+
+*Special:* Priests and oathbound in good standing ignore the immediate debilitating effect, treating it as Debilitating (2) instead.
+\page
+#### Modify Memory
+*Rare, Full round, Focus (a gold and clockwork pendant worth at least 1000 gp), Immobile, Debilitating (Major, 1). Duration 1 minute*
+
+You attempt to reshape another creature's memories. One creature that you can see must make a DC 15 Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this incantation ends, and none of the target's memories are modified. On a success, the creature is immune to this effect for 24 hours.
+
+While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.
+
+You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the effect ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the effect ends.
+
+A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The GM might deem a modified memory too nonsensical to affect a creature in a significant manner.
+
+A *remove curse* spell or *greater restoration* incantation cast on the target restores the creature's true memory. 
+
+#### Phantom Steed
+*Uncommon, 10 minutes, Exclusive. Duration 1 hour*
+
+A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the incantation vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
+
+For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the duration expires, the steed gradually fades, giving the rider 1 minute to dismount. The effect ends immediately without fading if you use an action to dismiss it or if the steed takes any damage.
+
+#### Planar Ally
+*Rare, 1 hour, Immobile, Special (requires a pre-existing relationship with the entity providing the ally), Exclusive, Costly (see text). Duration special (see text)*
+
+You beseech an otherworldly entity for aid. The being must be known to you and you must have a pre-existing relationship with them: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this incantation to request that creature, though you might get a different creature anyway (GM's choice).
+
+When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). 
+
+You must be able to communicate with the creature to bargain for its services. All tasks must have a clearly-defined duration and terms. Throughout its service, it acts as it sees fit and is not under your control, although it will follow through on the bargain to the best of its ability
+
+Payment can take a variety of forms. A celestial might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.
+
+As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1,000 gp per hour. And a task measured in days (up to 10 days) requires 10,000 gp per day. The GM can adjust these payments based on the circumstances under which you cast the incantation. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.
+
+After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.
+\page
+#### Plane Shift
+*Rare, 1 minute, Focus (a forked, metal rod worth at least 250 gp, attuned to the desired destination plane), Cooldown (1 day)*
+
+You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms and roll 1d10. On an even result you appear in or near that destination; on an odd result you end up some distance away. The exact location when used this way is up to the GM.
+
+Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, roll 1d6. On a roll of 2-6, the incantation takes you to that location. On a roll of 6, you end up at a point of the GM's choice near the circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
+
+*Note:* the focus component counts as a magic item of varying rarity&mdash;forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
+
+#### Programmed Illusion
+*Rare, 1 minute, Cooldown (8 hours), Costly (a bit of fleece and jade dust worth at least 25 gp), Exclusive (Special).*
+
+You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the incantation how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.
+
+When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again.
+
+The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions (as if the area had a passive perception of 10 and no particular senses) that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase.
+
+Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 15 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
+
+*Special:* You can have a number of these equal to your proficiency bonus active at any given time. Performing the incantation again when you have the maximum number makes the oldest effect end immediately.
+
+
+#### Seeming
+*10 minutes, Exclusive. Duration 8 hours*
+
+This incantation allows you to change the appearance of any number of willing creatures that you can see within range. You give each target you choose a new, illusory appearance. 
+
+The incantation disguises physical appearance as well as clothing, armor, weapons, and equipment. You can make each creature seem 1 foot shorter or taller and appear thin, fat, or in between. You can't change a target's body type, so you must choose a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The incantation lasts for the duration, unless you use your action to dismiss it sooner.
+
+The changes wrought by this incantation fail to hold up to physical inspection. For example, if you use this incantation to add a hat to a creature's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature's head and hair. If you use this incantation to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
+
+A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 16. If it succeeds, it becomes aware that the target is disguised.
+
+#### Shadow Creation
+*Rare, 10 minutes, Focus (see text), Exclusive, Costly (see text). Duration special (see text)*
+
+You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this incantation to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5 ft foot cube, and the object must be of a form and material that you have seen before.
+
+The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
+
+**Material** | **Duration** | **Cost**
+:----|:----:|:----:|  
+Vegetable Matter | 1 day | 0 gp 
+Stone, Crystal, or Regular Metals | 12 hours | 10 gp  
+Precious Metals | 1 hour | 50 gp 
+Gems | 10 minutes | 100 gp 
+Adamatine or mithral | 1 minute | 500 gp
+
+
+\page
+Using any material created by this incantation as another spell's material component causes that spell to fail.
+
+*Special* The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
+
+#### Teleportation Circle 
+*Rare, 10 minutes, Costly (rare chalks and inks infused with precious gems with 50 gp, which the incantation consumes), Cooldown (8 hours), Immobile. Duration 1 round*
+
+As you cast the incantation, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. Roll a d10 and consult the Teleportation Circle table. 
+
+**d10 Result** | **Outcome**
+|:----|:---- 
+1   | Fizzle. The portal does not appear. 
+2-4 | Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success. 
+5-10 | Success. The portal forms as normal and poses no threat.
+
+If the spell succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
+
+Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence, which is a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
+
+#### Transport via Plants
+*Rare, 1 minute, Immobile. Duration 1 minute*
+
+This incantation creates a magical link between a Large or larger inanimate plant within 10 ft and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.
+
+### Very Rare Incantations
+Very rare incantations are suitable to be first found in the Hero phase, ie levels 11-16.
+
+#### Antipathy/Sympathy
+*Very Rare, 1 hour, Cooldown (1 day), Exclusive. Duration 10 days*
+
+This incantation attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.  
+**Antipathy.** The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it.  
+**Sympathy.** The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.  
+**Ending the Effect.** If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a DC 17 Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the incantation is allowed another Wisdom saving throw every 24 hours while the effect persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again.
+\page
+#### Create Demiplane
+
+*Very Rare, 1 minute, Exclusive (special)*
+
+You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the incantation ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.
+
+Each time you cast this incantation, you can create a new demiplane by speaking a new identifier (causing the previous one to fade back into the interplanar space), or have the shadowy door connect to a demiplane you created with a previous casting of this incantation by speaking its identifier as part of the incantation. You magically know if the identifier you choose leads to an existing demiplane. Identifiers can be any short phrase of 60 characters or less, spaces included.
+
+Additionally, if you know the identifier of a demiplane created by a casting of this incantation by another creature, you can have the shadowy door connect to its demiplane instead.
+
+#### Mind Blank
+*Very Rare, 1 minute, Debilitating (3). Duration 24 hours.*
+
+Until the effect ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells and incantations, and the charmed condition. The incantation even foils legendary effects used to affect the target's mind or to gain information about the target.
+
+#### Project Image
+*Very Rare, 1 hour, Focus (a small replica of you made from materials worth at least 5 gp), Cooldown (1 day). Duration 1 day*
+
+You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within 500 miles that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the incantation ends.
+
+You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.
+
+You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
+
+Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 18 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
+
+#### Scrying
+*Very Rare, 10 minutes, Focus (an object such as a crystal ball, ornate basin of water or mirror worth at least 1000 gp). Cooldown (1 hour). Debilitating (1). Duration 10 minutes*
+
+You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a DC 15 Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this incantation, it can fail the saving throw voluntarily if it wants to be observed.
+
+*Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
+
+**Knowledge** | **Save Modifier** 
+:---- | ----:
+Secondhand (you have heard of the target) |+10 
+Firsthand (you have met the target) |+5 
+Familiar (you know the target well) |+0 
+
+**Connection** | **Save Modifier** 
+:---- | ----:
+None | +10 
+Likeness or picture   | -1 
+Possession or garment | -2 
+Body part, lock of hair, bit of nail, or the like | -5  
+
+On a successful save, the target isn't affected, and you can't use this incantation against it again for 24 hours.
+
+On a failed save, the incantation creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist and can use dispel magic to end the effect as if it was a 5th level incantation.
+
+Instead of targeting a creature, you can choose a location you have seen before as the target of this incantation. When you do, the sensor appears at that location and doesn't move.
+
+\page
+#### Teleport
+*Very Rare, 1 minute, Cooldown (8 hours), Immobile*
+
+This incantation instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.
+
+The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.
+
+*Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
+
+**Familiarity** | **Mishap** | **Similar Area** | **Off Target** | **On Target**
+:----|:----:|:----:|:----:|:----:|
+Permanent circle | 01-05 | 06-20 | 21-40 | 41-100 
+Associated object | 01-15 | 16-40 | 41-50 | 51-100 
+Very familiar | 01-33 | 34-43 | 44-53 | 54-100 
+Seen casually | 01-43 | 44-53 | 54-73 | 74-100 
+Viewed once | 01-63 | 64-73 | 74-83 | 84-100 
+Description | 01-63 | 64-53 | 74-73 | 84-100 
+False destination | 01-50 | 51-100 | |mdash; | |mdash;
+ 
+
+**Familiarity.**. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.
+
+“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the incantation. “Seen casually” is someplace you have seen more than once but with which you aren't very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else's description, perhaps from a map.
+
+“False destination” is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.
+
+**On Target.** You and your group (or the target object) appear where you want to.
+
+**Off Target.** You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.
+
+**Similar Area.** You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another arcanist's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the incantation has no range limit, you could conceivably wind up anywhere on the plane.
+
+**Mishap.** The incantation's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 bludgeoning damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
+
+### Legendary Incantations
+Legendary incantations are best suited for Tier 4 play, levels 17+.
+
+#### Astral Projection
+*Legendary, 8 hours, Group (1-8), Debilitating (5), Costly (each participant must provide a jacinth worth at least 1000 gp and an ornately carved bar of silver worth at least 100 gp).*
+
+You and up to eight willing creatures within 30' who participate in the incantation project your astral bodies into the Astral Plane (the incantation fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.
+
+Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut—something that can happen only when an effect specifically states that it does—your soul and body are separated, killing you instantly.
+
+Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this effect, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Any damage dealt to your astral form affects your real body as well and persists after the effect ends. (continues)
+\page
+##### Astral Projection (cont)
+The effect ends for a participant when they use their action to end it. When the effect ends for an individual, the affected creature returns to its physical body, and it awakens.
+
+The effect might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the effect for that creature. If a creature's original body or its astral form drops to 0 hit points, the effect ends for that creature. If the incantation ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.
+
+#### Gate
+*Legendary, 1 hour, Costly (a diamond worth at least 5000 gp), Cooldown (1 day)*
+
+You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for one minute.
+
+The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.
+
+Deities and other planar rulers can prevent portals created by this incantation from opening in their presence or anywhere within their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
+
+#### Irresistible Summons
+*Legendary, 1 hour, Group (4), Costly (a diamond worth at least 5000 gp), Cooldown (1 day)*
+
+When you perform this incantation, you speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, a portal up to 20 feet in diameter opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the GM deems appropriate. It might leave, attack you, or help you.
+
+Deities and other planar rulers can prevent this incantation from working on any creature in their presence or anywhere in their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
+
+#### Total Transformation
+*Legendary, 24 hours, duration special, Exclusive, Location (a prepared incantation circle)*
+
+Choose one creature. It must remain in the circle for the duration of the caster.  At the conclusion of the incantation, the target is transformed into another creature or into a non-magical object (as described below). An unwilling creature can make a DC 19 Wisdom saving throw, and if it succeeds, it isn't affected by this incantation.  
+**Duration.** The effect lasts until dispelled (counts as a legendary effect) or unless the target is reduced to 0 HP, in which case it reverts to its original form with any excess damage carrying over. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.  
+**Creature into Creature.** If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target's (or its level, if the target doesn't have a challenge rating), but cannot be a specific unique individual. The target's game statistics, including mental ability scores, are replaced by the statistics of the new form, although it does not gain any of the listed equipment. It retains its alignment and personality.
+
+The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.  
+**Creature into Object.** If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
+
+
+\page
+
+# Copyright
+This section contains legal stuff.
+
+<i class="far fa-copyright"></i> <year> This work is openly licensed via [CC BY-SA 4.0](https://creativecommons.org/publicdomain/by-sa/4.0/) except as noted. Noted material is licensed derivative work under the Open Gaming License 1.0a, presented below.
+\column
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 No generative AI was used in the production of this work. All images public domain.
+{{wide
 ## Open Gaming License 1.0a
 THIS LICENSE IS APPROVED FOR GENERAL USE. PERMISSION TO DISTRIBUTE THIS LICENSE IS MADE BY WIZARDS OF THE COAST!
 
 OPEN GAME LICENSE Version 1.0a
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
 1. Definitions: (a)"Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b)"Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)"Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.
-2. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
-3. Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
-4. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.
-5. Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
-6. Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
-7. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any 7.  Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
-8. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
-9. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
-10. Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.
-11. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
-12. Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
-13. Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
-14. Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
-15. COPYRIGHT NOTICE Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+2. 
+3. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
+4. Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
+5. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.
+6. Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
+7. Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
+}}
+\page
+{{wide
+
+9. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any 7.  Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
+10. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
+11. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
+12. Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.
+13. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
+14. Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
+15. Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
+16. Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
+17. COPYRIGHT NOTICE Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 
 System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
 
 END OF LICENSE
+
+}}

@@ -789,7 +789,7 @@ Designed for Game Masters wanting to set a game on Quartus, for players in such 
 * Expanded Rules (Incantations, Downtime, Skill Tricks)
 ___
 
-Designed for use with 2014 5e D&D.
+Designed for use with other Fifth edition content.
 
 ![Italian Coast Scene with Ruined Tower, 1838, by Thomas Cole](https://homebrewery.naturalcrit.com/assets/ruined_tower.webp){position:absolute,bottom:0,right:-250px,height:100%}
 

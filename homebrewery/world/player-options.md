@@ -552,7 +552,7 @@ You can use your eldritch blast to create a magical weapon of solidified aether 
 
 Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
 
-You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
+You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extra-dimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
 \column
 #### Pact of the Tome
 Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one first level spell from any list. While the book is on your person, you can cast those cantrips at will and cast the spell by expending the requisite amount of spell points. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that costs less than your spell point limit.
@@ -905,8 +905,8 @@ You start with the following equipment, in addition to the equipment granted by 
 ::::::
 
 {{classTable,wide
-Level  | Proficiency  | Features  | Focused  | Stamina  | Aether  | Max Spell  | 
-      ^| Bonus       ^|          ^| Foe Die ^| (STA)    ^| (AET)   ^| Level     ^|
+Level  | Proficiency  | Features  | Focused  | Stamina  | Spell Points  | Max Spell  | 
+      ^| Bonus       ^|          ^| Foe Die ^| (STA)    ^| (SP)   ^| Level     ^|
 :----|:----:|:----:|:----:|:----:|:----:|:----:
 1 | +2 | Focused Foe, Natural Explorer | d4 | 1 | – | –
 2 | +2 | Weapon Specialization, Spellcasting | d4 | 2 | 4 | 1
@@ -971,11 +971,11 @@ You are better than most at using the additional properties of your weapon. Choo
 By the time you reach 2nd level, you have learned to befriend the kami, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 of the Player’s Handbook for the general rules of spellcasting and the end of this entry for the Bounty Hunter spell list.
 
 #### Preparing and Casting Spells
-The Bounty hunter table shows how many aether (AET, aka spell points) you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend aether equal to its cost or greater (effectively casting it from a higher level slot). You regain all expended aether when you finish a long rest.
+The Bounty hunter table shows how many spell points you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend spell points equal to its cost or greater (effectively casting it from a higher level slot). You regain all expended spell points when you finish a long rest.
 
 You can prepare a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can learn from that list when you finish a long rest. You cannot prepare any spell with a level higher than the maximum spell level entry in the bounty hunter table for your level.
 
-Aether | Spell Level
+Spell Points | Spell Level
 :----|:----:
 2 | 1
 3 | 2
@@ -984,14 +984,12 @@ Aether | Spell Level
 7 | 5
 
 #### Spellcasting Ability
-Wisdom is your spellcasting ability for your bounty hunter spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Bounty hunter spell you cast and when making an attack roll with one.
-
-**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
-
+Wisdom is your spellcasting ability for your bounty hunter spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Bounty hunter spell you cast and when making an attack roll with one.  
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier  
 **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 #### Aether Limit
-When you expend AET on an ability other than a spell, you cannot expend more than your aether limit, which is equal to the aether cost of the highest spell level you can prepare (the tier # of the spell + the spell level).
+When you expend spell points, you cannot expend more than your spell point limit, which is equal to the spell point cost of the highest spell level you can prepare (the tier # of the spell + the spell level).
 
 ### Bounty hunter Archetype
 At 3rd level, you choose an archetype that you strive to emulate: Manhunter or Monster Slayer, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
@@ -1016,10 +1014,9 @@ Starting at 8th level, moving through difficult terrain costs you no extra movem
 In addition, you have advantage on saving throws against spells or abilities that would impede your movement, such as the entangle spell.
 \page
 ### Aether Strike
-Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 3 or more AET and choose a number of targets equal to half the amount of AET spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.
-
-**Melee weapon** You teleport from target to target in an order you choose, moving no more than twice your speed in each jump. As you briefly appear next to each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus a number of d10s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.  
-**Ranged Weapon** Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus a number of d10s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack. Either before the first attack or after the last attack you may teleport to an unoccupied location you can see within a distance of twice your speed.
+Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 3 or more spell points and choose a number of targets equal to half the amount of spell points spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.  
+**Melee weapon** You teleport from target to target in an order you choose, moving no more than twice your speed in each jump. As you briefly appear next to each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.  
+**Ranged Weapon** Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack. Either before the first attack or after the last attack you may teleport to an unoccupied location you can see within a distance of twice your speed.
 
 ### Vanish
 Starting at 14th level, you can use the Hide action as a bonus action on your turn. If you expend 2 STA while doing so, you become invisible until you attack or cast a spell.
@@ -1038,7 +1035,7 @@ At 20th level, you are particularly adept at finding the weak spots of your enem
 The ideal of the bounty hunter has two classic expressions: the Manhunter and the Monster Slayer.
 
 ### Manhunter
-Manhunters are those who specialize in tracking down and dealing with civilization's refuse, of whatever race they may be. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable and you must find them there. A manhunter lives and dies by his reputation--it is his currency and one of his primary weapons.
+Manhunters are those who specialize in tracking down and dealing with civilization's refuse, of whatever race they may be. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable and you must find them there. A manhunter lives and dies by his reputation; it is his currency and one of his primary weapons.
 
 #### Information Gatherer
 At 3rd level, you gain proficiency in Charisma checks made to gain information. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
@@ -1052,7 +1049,7 @@ Additionally, you have advantage on Charisma (Intimidation) checks made against 
 At 7th level, your reputation has grown strong enough to make the weak unable to act against you. When you use your Fearsome Reputation feature, choose one creature that failed the saving throw. That creature is unable to make attacks against you while frightened of you.
 
 #### Razor Dance
-At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 6 AET (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
+At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 6 spell points (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
 
 #### Wordless Reputation
 Starting at 15th level, your reputation and the aura that surrounds you are such that you can use your Fearsome Reputation ability against any foe, whether it can understand you or not. In addition, you can choose to use Debilitating Reputation against all creatures that fail their saving throws instead of just one.
@@ -1061,34 +1058,30 @@ Starting at 15th level, your reputation and the aura that surrounds you are such
 Monster slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense--ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face.
 
 #### Hunter's Prey
-At 3rd level, you gain the following features, but can only apply one of them per turn.
-
+At 3rd level, you gain the following features, but can only apply one of them per turn.  
 **Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn. You can use it again on that same turn if you spend 1 STA when you hit again.  
 **Giant Killer.** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.  
 **Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon. You can use it again on that same turn if you spend 1 STA when you hit again.
 \column
 #### Defensive Tactics
-At 7th level, you gain the following features, but can only apply one of them per turn.
-
+At 7th level, you gain the following features, but can only apply one of them per turn.  
 **Escape the Horde.** Opportunity attacks against you are made with disadvantage.  
 **Multi-attack Defense.** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.  
 **Steel Will.** You have advantage on saving throws against being frightened.
 
 #### Multi-attack
-At 11th level, you gain the following features.
-
-**Volley.** When you use your Aether Strike ability with a ranged weapon, you can target one creature for every aether spent instead of one target per two aether spent.  
+At 11th level, you gain the following features.  
+**Volley.** When you use your Aether Strike ability with a ranged weapon, you can target one creature for every aether spent instead of one target per two spell points spent.  
 **Whirlwind Attack.** When you use your Aether Strike ability with a melee weapon, you can choose to perform a whirlwind attack at any point along the chain of attacks. If you do so, all creatures within your reach at that point count as targets for your Aether Strike. Make a separate attack for each one. You may only perform a single whirlwind attack per use of Aether Strike.
 
 #### Superior Hunter's Defense
-At 15th level, you gain the following features.
-
+At 15th level, you gain the following features.  
 **Evasion.** When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.  
 **Stand Against the Tide.** When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.  
 **Uncanny Dodge.** When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
 \page
 ## Bounty hunter Spell List
-The Bounty hunter Spell List table contains a short summary of the spells available to all Bounty hunters, ordered by aether cost. Spells marked with (*) are new and listed in the Spells section document. Spells marked with (**) are subject to substantial changes from book printing, explained in the spells section.
+The Bounty hunter Spell List table contains a short summary of the spells available to all Bounty hunters, ordered by aether cost. Spells marked with (*) are new and listed in the Spells section document. Spells marked with (\*\*) are subject to substantial changes from book printing, explained in the spells section.
 
 Note: This spell list was designed with the idea that my Incantation system (Expanded Rules) is in play. Otherwise, use the Ranger list from the PHB + the additional spell list from Tasha’s, but remove hunter’s mark (as it’s a duplicate of Favored Foe and should not be stacked).
 
@@ -1154,7 +1147,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 This section introduces one new druid subclass: The Circle of Spirit Talkers, which uses wildshape uses to instead summon spirit companions.
 
 ### Circle of the Spirit Talkers
-Some druids take a more active role in society than most. They are the shamans of tribal groups, the advisors to forest-dwelling elven kings. They mediate between the spirits that inhabit the land and the people to maintain the balance. As a result of their more people-focused role, they rarely take the shape of animals themselves. Instead, they are accompanied by a spirit guide, a representative of the spirits with which they mediate. They pour their energy into these spirits to manifest them, aiding allies and hampering enemies.
+Some druids take a more active role in society than most. They are the shamans of tribal groups, the advisors to forest-dwelling orcish warlords. They mediate between the spirits that inhabit the land and the people to maintain the balance. As a result of their more people-focused role, they rarely take the shape of animals themselves. Instead, they are accompanied by a spirit guide, a representative of the spirits with which they mediate. They pour their energy into these spirits to manifest them, aiding allies and hampering enemies.
 
 {{classTable
 Level | Features | Manifestations Known | Manifestation Die
@@ -1171,20 +1164,13 @@ When you choose this circle at 2nd level, you gain the service of a spirit guide
 #### Manifestation
 The same pool of energy that lets you take the shape of animals also can be used to cause your spirit guide to manifest. When you choose this circle at 2nd level, choose 1 of the manifestations listed below. You can use one use of wildshape to activate the listed effect, which lasts for a number of hours equal to half your level. If the spirit guide has hit points listed and is reduced to zero hit points it does not die--instead the active manifestation ends early. Whenever a manifestation calls for your manifestation die, use the dice type shown in the Spirit-talker’s table.
 
-At levels 6, 10, and 14 you learn additional manifestations as shown on the Spirit-talker’s table.
-
-##### Ancestral Warrior
-Your spirit guide takes the form of a spectral archer with hit points equal to half your total hit points. It has resistance to all damage, immunity to all conditions, and uses your saving throw modifiers and AC. You can use a bonus action on your turn to command the spirit to attack a creature within 120 feet. It does so using your spell attack modifier and if it hits it deals necrotic damage equal to your manifestation die plus your Wisdom modifier.
-##### Beguiling Nymph
-Your spirit guide enters your body, enhancing your charm and persuasive abilities. You add your manifestation die to all Charisma checks and once before the effect ends you can force a humanoid or beast that can see and hear you to make a Charisma saving throw or be charmed by you for the duration. While charmed, it treats you as a friendly acquaintance. If it succeeds on the saving throw, it knows you attempted to influence it. If it fails, it does not.
-##### Guiding Ancestor
-Your spirit guide takes the form of a spectral elder whose presence inspires competence. While the spirit is manifested, you can use your reaction to add your manifestation die to an ability check or saving throw made by an ally within 30 feet of the spirit.
-##### Protecting Bear
-Your spirit guide takes the shape of a spectral bear and roars. Roll your manifestation dice twice; the spirit has hit points equal to your level times the total of the rolls. It uses your AC and saving throw modifiers but ignores any spell or effect that does not deal damage. All allies that can see and hear the spirit guide when it roared have resistance to all damage as long as the manifestation is active. Any damage they take is also taken by the spirit guide. When the spirit guide takes damage that would reduce it to 0 HP, the manifestation only ends at the end of the current turn, regardless of the total damage taken.
-##### Prowling Cat
-Your spirit guide takes the form of a spectral panther. Its presence aids your efforts at stealth. All allies within 30 feet of it add your manifestation die to their Dexterity (Stealth) and initiative checks.
-##### Watchful Hawk
-Your spirit guide circles overhead in the form of a spectral hawk, warning you and your allies of danger. While manifested, you and all allies within 60 feet of you add your manifestation die to their initiative, perception checks, and survival checks.
+At levels 6, 10, and 14 you learn additional manifestations as shown on the Spirit-talker’s table.  
+**Ancestral Warrior.**  Your spirit guide takes the form of a spectral archer with hit points equal to half your total hit points. It has resistance to all damage, immunity to all conditions, and uses your saving throw modifiers and AC. You can use a bonus action on your turn to command the spirit to make a ranged or melee spell attack against a creature within 120 feet. It does so using your spell attack modifier and if it hits it deals necrotic damage equal to your manifestation die plus your Wisdom modifier.
+**Beguiling Nymph.**  Your spirit guide enters your body, enhancing your charm and persuasive abilities. You add your manifestation die to all Charisma checks and once before the effect ends you can force a humanoid or beast that can see and hear you to make a Charisma saving throw or be charmed by you for the duration. While charmed, it treats you as a friendly acquaintance. If it succeeds on the saving throw, it knows you attempted to influence it. If it fails, it does not.
+**Guiding Ancestor.**  Your spirit guide takes the form of a spectral elder whose presence inspires competence. While the spirit is manifested, you can use your reaction to add your manifestation die to an ability check or saving throw made by an ally within 30 feet of the spirit.
+**Protecting Bear.**  Your spirit guide takes the shape of a spectral bear and roars. Roll your manifestation dice twice; the spirit has hit points equal to your level times the total of the rolls. It uses your AC and saving throw modifiers but ignores any spell or effect that does not deal damage. All allies that can see and hear the spirit guide when it roared have resistance to all damage as long as the manifestation is active. Any damage they take is also taken by the spirit guide. When the spirit guide takes damage that would reduce it to 0 HP, the manifestation only ends at the end of the current turn, regardless of the total damage taken.
+**Prowling Cat.**  Your spirit guide takes the form of a spectral panther. Its presence aids your efforts at stealth. All allies within 30 feet of it add your manifestation die to their Dexterity (Stealth) and initiative checks.
+**Watchful Hawk.**  Your spirit guide circles overhead in the form of a spectral hawk, warning you and your allies of danger. While manifested, you and all allies within 60 feet of you add your manifestation die to their initiative, perception checks, and survival checks.
 \page
 #### Spirit Specialization
 At 6th level, you specialize in one particular kind of spirit manifestation. This modifies your chosen manifestation as shown in the Spirit Specialization table as well as an additional proficiency. If you already are proficient in the indicated skill, you gain expertise in it instead.
@@ -1310,10 +1296,9 @@ The most simple use of your Clockwork Battery is to infuse your weapon strikes w
 ### Clockwork Friend
 At 3rd level you’ve created a tiny clockwork construct to serve as your friend. It takes the shape of a spider, mouse, beetle or other similar non-flying creature. It has 1 HP, AC 10, 30 ft of movement, normal vision (passive perception of 10). Its Strength and Intelligence scores are 1 and all of its other ability scores are 10. It cannot attack, but can otherwise understand your simple orders and will fulfil them as practical for its shape. While it is on your person, it is considered to be immune to all damage and does not make saving throws.
 
-When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.
-
-- **Movement**: sticky pads (30 ft climb speed) OR fins (30 ft swim speed)
-- **Sensory**: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
+When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.  
+**Movement**: sticky pads (30 ft climb speed) OR fins (30 ft swim speed)  
+**Sensory**: audio recorder/playback with improved hearing OR video (silent) recorder/playback and improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
 \column
 ### Multitool (3rd)
 At 3rd level, you’ve created a clockwork tool that counts as any tool with which you are proficient, as well as the following:
@@ -1333,6 +1318,8 @@ Alternatively, you can choose a feat that you qualify for.
 
 ### Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder.
+
+In addition, you learn one other skill trick that you qualify for.
 
 ### Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
@@ -1602,7 +1589,7 @@ At 3rd level you’ve created a tiny clockwork construct to serve as your friend
 
 When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker’s tool’s set.  
 **Movement**: sticky pads (30 ft climb speed) OR fins (30 ft swim speed)  
-**Sensory**: audio recorder/playback + improved hearing OR video (silent) recorder/playback + improved darkvision (60 ft  in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
+**Sensory**: audio recorder/playback and improved hearing OR video (silent) recorder/playback and improved darkvision (60 ft in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
 
 ### Ability Score Increase
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
@@ -1611,6 +1598,8 @@ Alternatively, you can choose a feat that you qualify for.
 
 ### Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder.
+
+In addition you learn one skill trick that you qualify for.
 
 ### Extra Attack 
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
@@ -1637,19 +1626,19 @@ At 10th level, you’ve improved your Aether Engine to the point that it can rap
 ### Improved Charged Strike
 Once per turn when you hit with an attack, you can deal an additional 2d8 lightning damage. This stacks with Charged Strike. Starting at level 17, the damage from this increases to 3d8 and the damage from Charged Strike increases to 2d8 +1d8 for every aether charge spent after the first.
 
-### Improved Aetheric Defense (14th)
+### Improved Aetheric Defense
 At 14th level, your Aetheric Defense ability has improved.
 
 - When you use the reaction to increase your AC or saving throw result, the effect applies to all attacks and dexterity saving throws you make until the start of the next person’s turn.
 - When you choose to fly as a reaction, this movement no longer provokes Opportunity Attacks.
 - When you choose to push a creature, you can now target any creature you can see within 60 ft of you.
 
-### Completed Clockwork Friend (15)
+### Completed Clockwork Friend
 As an action, you can expend one aether charge to alter your friend’s size between tiny, small, medium, and large–it also gains a 60 ft fly speed for one hour when you do so. If it is sufficiently large, you can ride it.
 
 While you are adjacent to your friend, it ignores all damage and does not make saving throws.
 
-### Overclocked Aether Engine (20th)
+### Overclocked Aether Engine
 As an action, you put your aether engine into an hyperactive state. For one minute, you regain 10 aether charges at the start of each of your turns (up to its maximum) and you can cast any of your spells, infused or not. Additionally, you deal the extra lightning damage from Improved Charged Strike on every hit. Once you use this ability, you cannot do so again until you finish a long rest.
 
 ## Mechanist Archetypes

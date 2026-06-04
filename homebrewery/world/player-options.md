@@ -126,9 +126,9 @@ To quickly build an armsman, put your highest ability score into Strength, with 
 As a Armsman, you gain the following class features.
 
 #### Hit Points
-***Hit Dice:*** 1d10 per Armsman level.  
-***Hit Points at 1st Level:*** 10 + your Constitution modifier.  
-***Hit Points at Higher Levels:*** 1d10 (or 6) + your Constitution modifier per Armsman level after 1st.
+**Hit Dice:** 1d10 per Armsman level.  
+**Hit Points at 1st Level:** 10 + your Constitution modifier.  
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per Armsman level after 1st.
 
 #### Proficiencies
 **Armor:** all armor, shields  
@@ -181,7 +181,7 @@ You have a limited well of stamina that you can draw on to protect yourself from
 As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier (minimum 1), and you regain expended points when you finish a long or short rest.
 
 ### Weapon Mastery
-You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.  
+You are better than most at using the additional properties of your weapon. While wielding a weapon, you gain the features below for that weapon. If the weapon has multiple additional properties, you must choose which feature to apply on any individual attack. If a feature calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.  
 **Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.  
 **Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
 **Light** The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.  
@@ -200,7 +200,10 @@ Starting at 2nd level, you can push yourself beyond your normal limits for a mom
 Once you use this feature, you cannot use this feature again until you next roll initiative. Starting at 17th level, you can use it as many times as you have stamina for, but only once on the same turn.
 
 ### Active Defenses
-Starting at 2nd level, you are more apt at using the defensive special reactions all PCs can use. When you use the Deflect reaction, you can spend 2 STA instead of consuming a normal use. When you use the Exert reaction, you can spend 1 STA instead of consuming a normal use.
+Starting at 2nd level, you gain additional special actions.  
+**Deflect.** When you are the target of an attack from a source you can see, you can use your reaction and spend 1 STA to attempt to deflect it before the attack is rolled. Your armor class increases by your proficiency bonus against that attack, possibly converting the hit into a miss. If the attack misses as a result and you are wielding a weapon or a shield and the attacker is in your reach (5 ft for a shield), you can make a counter attack as part of the same reaction. Make the attack as normal. If you make this attack with a shield, it counts as a battering melee weapon with which you have proficiency, with a damage die of 1d4 bludgeoning.  
+**Exert.** When you have to make an ability check or saving throw that adds your Strength, Dexterity, or Constitution modifier to the d20, you can spend 1 STA to add your proficiency bonus. This is an exception to the normal circumstances; you can do this even if you are already adding your proficiency bonus (such as from a skill proficiency) and thus add twice your proficiency bonus. This does not require an action, but you can only use this feature once per round.  
+**Focus.** When you have to make an ability check or saving throw that adds your Intelligence, Wisdom, or Charisma modifier to the d20, you can spend 2 STA to add your proficiency bonus. This is an exception to the normal circumstances; you can do this even if you are already adding your proficiency bonus (such as from a skill proficiency) and thus add twice your proficiency bonus. This does not require an action, but you can only use this feature once per round.
 
 ### Martial Archetype
 At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose the Defender, Sword Saint, or Warlord archetype, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
@@ -218,9 +221,9 @@ Beginning at 5th level, you can attack twice, instead of once, whenever you take
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
 ### Repeated Strikes
-Beginning at 5th level, you've learned to carry energy from one blow to the next. Each time you hit with a weapon attack during one of your turns, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. Gathered Momentum is lost when you go at least one minute without making an attack.
+Beginning at 5th level, you've learned to carry energy from one blow to the next. Each time you hit with a weapon attack, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. Gathered Momentum is lost when you go at least one minute without making an attack.
 
-When you hit a target and have one or more Momentum points, you can choose to expend that Momentum. When you do so, the target takes extra damage equal to 3 &times; the number of Momentum points expended and must make a Constitution saving throw against your Weapon Mastery DC. On a failed saving throw, the target is staggered (see Appendix B) until the end of your next turn. If you expended more than 4 Momentum, the target is stunned for the same duration instead.
+When you hit a target and have one or more Momentum points, you can choose to expend that Momentum. When you do so, the target takes extra damage equal to 3 &times; the number of Momentum points expended and must make a Constitution saving throw against your Weapon Mastery DC. On a failed saving throw, the target cannot take reactions and makes attacks at disadvantage until the end of your next turn. If you expended more than 4 Momentum, the target is stunned for the same duration instead.
 
 ### Versatility
 Beginning at 6th level, you gain the following benefits:
@@ -263,7 +266,7 @@ Different armsmen choose different approaches to perfecting their fighting prowe
 The defender archetype focuses on protecting allies from harm while locking down their enemies. While most use a one-handed weapon and a shield, others trust in their heavy armor to protect them.
 
 #### Thicket of Blades
-Starting at 3rd level, opponents provoke opportunity attacks from you by moving within your reach, making attacks against anyone but you, or casting a spell. Additionally, you can spend 1 STA to make an opportunity attack when provoked without consuming your reaction. No individual creature can provoke more than one opportunity attack per turn.
+Starting at 3rd level, opponents provoke opportunity attacks from you by moving within your reach, making attacks against anyone but you, making ranged attacks, or casting a spell. Additionally, you can spend 1 STA to make an opportunity attack when provoked without consuming your reaction. No individual creature can provoke more than one opportunity attack per turn.
 
 #### Shielding Bulwark
 Starting at 3rd level, when you are the target of an effect that targets a point in space and allows a Dexterity saving throw to take half damage, you can use your weapon and shield to diffuse and deflect the energies, protecting yourself and those behind you. Expend 2 STA. You and all creatures in a 15' long line that is 10' wide behind you (relative to the target point in space) gain advantage on the saving throw and the shielded creatures take no damage if they succeed on the saving throw and only half damage if they fail.
@@ -272,7 +275,7 @@ Starting at 3rd level, when you are the target of an effect that targets a point
 Starting at 7th level, your training has taught you how to magically compel a target to focus on you. As a bonus action, choose a target that can hear you and that you can see within 60 feet. The target must make a Charisma saving throw against a DC of 8 + your Charisma modifier + your proficiency bonus. On a failed save, the target cannot make attacks against anyone but you or target any of your allies with an ability (magical or otherwise). Additionally, they cannot willingly move further away from you. This effect lasts for one minute or until you use this ability against someone else or you are incapacitated. Once a creature fails their saving throw against this ability, you cannot use it again until you finish a long or short rest.
 
 #### Calming Words
-Starting at 10th level you've become particularly adept at predicting what will cause controversy--words are weapons too. As such, you can add twice your proficiency bonus to any Charisma check you make to defuse tense situations. In addition, when an ally you can hear makes a Charisma (Persuasion) check and you Help them, they can add your Charisma (Persuasion) modifier to theirs when resolving the check.
+Starting at 10th level you've become particularly adept at predicting what will cause controversy; words are weapons too. As such, you can add twice your proficiency bonus to any Charisma check you make to defuse tense situations. In addition, when an ally you can hear makes a Charisma (Persuasion) check and you Help them, they can add your Charisma modifier to theirs when resolving the check.
 \column
 #### Resilience
 Starting at 15th level, you can ignore your wounds and keep fighting even through attacks that would normally incapacitate you. When you are reduced to 0 HP or would be outright killed (such as by a Power Word: Kill effect), you can spend 8 STA to instead heal to half your maximum HP.
@@ -290,7 +293,7 @@ Starting at 3rd level, sword saints have an exceptionally large stamina pool by 
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
 
 #### Blazing Flash
-Starting at 3rd level, you can concentrate elemental fire in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA to force the target to make a Constitution saving throw. On a failed save, they are staggered until the end of their next turn.
+Starting at 3rd level, you can concentrate elemental fire in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA to force the target to make a Constitution saving throw. On a failed save, they are take additional fire damage equal to your Intelligence modifier (minimum 1) and are blinded until the end of their next turn. On a success, they only take the additional damage.
 
 #### Blades of Air
 Starting at 7th level, you can concentrate elemental air in your melee strikes, launching blades of solid air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ STA to extend your reach for that action by 10 ft per STA spent and convert the damage to thunder. The damage dealt by these attacks also increases by 2 for every STA spent.
@@ -302,7 +305,7 @@ Starting at 10th level, you are nearly impossible to fluster or make angry. You 
 Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 STA as an action, removing the effect or expelling the possessor.
 
 #### Lightning Step
-Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus &times; your Intelligence modifier and are staggered until the beginning of your next turn. On a success, targets take half damage and are not staggered.
+Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus &times; your Intelligence modifier and are staggered until the beginning of your next turn. On a success, targets take half damage and are not staggered. Staggered creatures cannot take reactions and make attacks at disadvantage.
 
 When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of staggered and targets that succeed are staggered until the start of your next turn.
 
@@ -313,25 +316,16 @@ Starting at 18th level, when you use your Deathblow ability, you can expend 1+ S
 Warlords are the battle commanders; they give up some of their personal prowess to bolster the capabilities of their allies.
 
 #### Battle Commands
-At 3rd level, you've learned to recognize and create opportunities for your allies to act. You learn your choice of two of the commands below. You learn an additional command from this list at level 9.
+At 3rd level, you've learned to recognize and create opportunities for your allies to act. You learn your choice of two of the commands below. You learn an additional command from this list at level 9.  
+**Command: Strike.** When you take the Attack action, you can forgo one or more attacks, expending 1 STA per attack. For each attack forgone, one willing creature that can see and hear you can use their reaction to make a weapon attack against a creature within their weapon's range. If this attack hits, they deal additional damage equal to your weapon's damage die (or 1d4 if you are not wielding a weapon). The additional damage increases by one weapon die at 11th level.  
+**Command: Hustle** As a bonus action on your turn, you can create an opening by expending 1 STA. One willing creature you can see moves up to their speed and does not provoke Opportunity attacks while moving.
 
-##### Command: Strike
-When you take the Attack action, you can forgo one or more attacks, expending 1 STA per attack. For each attack forgone, one willing creature that can see and hear you can use their reaction to make a weapon attack against a creature within their weapon's range. If this attack hits, they deal additional damage equal to your weapon's damage die (or 1d4 if you are not wielding a weapon). The additional damage increases by one weapon die at 11th level.
+Starting at level 11, creatures who benefit from this also gain temporary hit points equal to your level.  
+**Command: Stay With Me.** You've learned to provide effective emergency medicine. As bonus action, expend 3 STA and touch a creature. That creature regains hit points as if they had spent 1 hit die (but do not expend the hit die). If the creature was below half of its maximum hit points, they regain hit points equal to the maximum value possible for their hit die instead.
 
-##### Command: Hustle
-As a bonus action on your turn, you can create an opening by expending 1 STA. One willing creature you can see moves up to their speed and does not provoke Opportunity attacks while moving.
+You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.  **Command: Hold the Line.** Starting at 7th level, you have become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the frightened, charmed, or incapacitated condition on themselves even if they would not otherwise be able to use a reaction due to a condition. This automatically ends the unconscious condition when caused by poison or magical sleep.
 
-Starting at level 11, creatures who benefit from this also gain temporary hit points equal to your level.
-
-##### Command: Stay With Me
-You've learned to provide effective emergency medicine. As bonus action, expend 3 STA and touch a creature. That creature regains hit points as if they had spent 1 hit die (but do not expend the hit die). If the creature was bloodied, they regain hit points equal to the maximum value possible for their hit die instead.
-
-You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.
-
-##### Command: Hold the Line
-Starting at 7th level, you have become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the staggered, shaken, or frightened condition on themselves even if they would not otherwise be able to use a reaction.
-
-In addition, creatures of your choice that can see or hear you have advantage on any saving throws against being staggered, shaken, or frightened for one minute.
+In addition, creatures of your choice that can see or hear you have advantage on any saving throws against being or frightened, charmed, or incapacitated for one minute.
 
 \page
 ##### Commanding Presence
@@ -347,14 +341,14 @@ Starting at 10th level, you've learned to inspire your allies to bursts of heroi
 Starting at 15th level, you've learned to bring others with you when you Flash Step. When you use your Flash Step ability, you can expend 2 additional STA to bring one ally who is no more than Medium size with you. The ally must have been within 5 feet of you when you started your movement.
 
 #### Healing Strike
-At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They gain hit points equal to your proficiency bonus &times; your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
+At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They regain hit points equal to your proficiency bonus &times; your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
 \page
 
 ## Barbarian
 Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two shouldn't be played in the same party.
 
 ### Path of the Stormbound Fist
-Those that follow the path of the Stormbound Fist have an innate connection to elemental lightning; fire and air combined into a destructive mix. They often tend to favor unarmed attacks, but their attacks hit with the force of a bolt of lightning.
+Those that follow the path of the Stormbound Fist have an innate connection to elemental lightning; fire and air combined into a destructive mix. They often tend to favor unarmed attacks, but regardless their attacks hit with the force of a bolt of lightning.
 
 #### Storm Fist
 When you choose this path at 3rd level, you can concentrate your primal electricity in your unarmed attack. When you hit with an unarmed attack, your fists deal 1d10 damage instead of 1. When you hit with an unarmed attack, you can choose to make the damage lightning damage instead of bludgeoning.
@@ -368,7 +362,7 @@ Starting at 3rd level, when you make a ranged attack with a thrown weapon, the s
 Starting at 3rd level, when you hit with a weapon attack or an unarmed attack, you can choose to infuse it with extra electricity. When you do so, the attack deals 2d6 extra lightning damage and the target must make a Constitution saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, the target is stunned until the end of your next turn. If the triggering attack was a critical hit, the target automatically fails the saving throw. Once you use this ability, you cannot do so again until you finish a long or short rest.
 
 #### Implacable
-Starting at 6th level, you have gained a measure of implacability–one cannot stand against an oncoming storm or against your raging advance. You gain the following benefits.
+Starting at 6th level, you have gained a measure of implacability. No one cannot stand against an oncoming storm or against your raging advance. You gain the following benefits.
 
 - When you are grappled or restrained by an ability that requires a check to escape, you can do so once per turn without expending an action. Additionally, you have advantage on Strength (Athletics) checks made to impose a grapple.
 - When you take the Dash action, you add movement equal to twice your speed instead of only equal to your speed. Additionally, when you take the Dash action, move at least 10 feet, and end your movement within reach of a creature, you can immediately make an unarmed attack against them as part of that action.
@@ -3903,8 +3897,6 @@ This incantation creates the following effects within the warded area.
     - Place a constant *gust of wind* in one corridor or room.
     - Place a *suggestion* in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.
     
-
-
 The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one year.
 
 #### Hallow 

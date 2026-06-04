@@ -384,7 +384,7 @@ Starting at 14th level, your rage carries with it primal lightning and thunder. 
 \page
 ### Path of the Whirling Blade
 
-Those that follow the Path of the Whirling Blade seek to embody the essential nature of the blade. As formshapers, they manipulate their personal aether into forms, the platonic ideal of a particular concept. In this case, curved blades. As a side effect, those of the Whirling Blade dance like (angry, hulking) tornadoes across the battlefield, striking seemingly randomly, leaving devastation in their wake.
+Those that follow the Path of the Whirling Blade seek to embody the essential nature of the blade. They manipulate their personal aether into forms, the platonic ideal of a particular concept. In this case, curved blades. As a side effect, those of the Whirling Blade dance like (angry, hulking) tornadoes across the battlefield, striking seemingly randomly, leaving devastation in their wake.
 
 {{classTable
 #### The Whirling Blade
@@ -403,7 +403,7 @@ Level  | Shaping Die |
 You have 4 shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The the size of each die increases with level as shown on the Whirling Blade table.
 
 #### Aetheric Weapons
-Starting when you choose this archetype at level 3, you can manifest aetheric blades from one or both of your hands as a bonus action. These glittering blue swords count as light melee weapons with the thrown (60/120) property. Their damage die is equal to your shaping die and they deal your choice of slashing or piercing damage. When you throw one of them as an attack, it reappears instantly in your hands after the attack completes, hit or miss.
+Starting when you choose this archetype at level 3, you can manifest aetheric blades from one or both of your hands as a bonus action. These glittering blue swords count as magical light melee weapons with the thrown (60/120) property. Their damage die is equal to your shaping die and they deal your choice of slashing or piercing damage. When you throw one of them as an attack, it reappears instantly in your hands after the attack completes, hit or miss.
 
 Additionally, you can choose to meld with up to two one-handed magical weapons you are touching at the end of a long rest. While bonded, the weapons disappear and any magical properties they possess are replicated on your aetheric blades.
 
@@ -422,7 +422,7 @@ Starting at 10th level, you can expend a shaping die when you are targeted by a 
 Starting at 14th level, when you make a thrown attack with your aetheric blade and hit, you can choose to teleport next to the target.
 \page
 ## The Beholden (Variant Warlock)
-Beholden gain power by cheating. Unlike the arcanist who studies and meditates or the priest who must have faith, the beholden has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the beholden's soul, shoving in unearned power. Each beholden is different, but they all learn the ability to shape raw aether into blasts.
+Beholden gain power by cheating. Unlike the wizard who studies and meditates or the cleric who must have faith, the beholden has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the beholden's soul, shoving in unearned power. Each beholden is different, but they all learn the ability to shape raw aether into blasts.
 
 {{note
 #### Compatibility
@@ -495,11 +495,9 @@ Beholden are not traditional spellcasters. They do not inherently get access to 
 You know two cantrips of your choice from any list. You learn additional beholden cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Beholden table.
 
 #### Spellcasting Ability
-Charisma is your spellcasting ability for your beholden spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a beholden spell you cast and when making an attack roll with one.
-
-Spell save DC = 8 + your proficiency bonus + your Charisma modifier
-
-Spell attack modifier = your proficiency bonus + your Charisma modifier
+Charisma is your spellcasting ability for your beholden spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a beholden spell you cast and when making an attack roll with one.  
+**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier  
+**Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 #### Spell Points
 All of your magical effects rely on spending spell points (SP). At first level, you have 4 spell points and gain more as shown on the Spell Points column of the Beholden table. Features such as blast effects and invocations may specify a cost. You can never spend more spell points in a single action than is specified in the Point Limit column of the Beholden table, whether that is to emulate a spell by creating spell slots, enhancing your eldritch blast, or in any other way.
@@ -527,10 +525,12 @@ When you expend spell points to modify your eldritch blast (ie via blast shapes 
 Note that you cannot create spell slots of 6th or higher level and thus cannot cast spells of those levels, whether upcast or not, normally. To cast such spells, you need to use your Mystic Arcanum feature. Those table rows exist to relate to eldritch blast effective levels.
 
 ### Magical Deflection
-When you take the Deflect special reaction, you can spend 2 spell points instead of consuming the normal use. Alternatively, you can take the Deflect special reaction by spending 2 spell points when you would be hit by *magic missile*. If you do so, the spell has no effect on you.
+When you are the target of an attack, you can use 1 spell point and your reaction to attempt to deflect it with a barrier of kinetic energy. Add your proficiency bonus to your armor class against the triggering attack. If this causes the attack to miss, you can use either your eldritch Blast or a melee weapon you are wielding (if the attacker is in your reach) to make an attack against your attacker, dealing normal damage on a success. You cannot add any blast shapes or effects to this attack. 
+
+Alternatively, you can spend 1 spell point and your reaction to negate the damage from the *magic missile* spell.
 
 ### Blast Effects
-At 2nd level, you have learned to add additional effects to your eldritch blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your eldritch blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise.
+At 2nd level, you have learned to add additional effects to your eldritch blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your eldritch blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise. You cannot learn any effects labeled as Greater until level 7.
 
 Starting at level 7, you can learn Blast Effects labeled as Greater and the cost of non-greater blast effects is reduced by 1 to a minimum of 0.
 \page
@@ -568,7 +568,7 @@ Alternatively, you can take a feat that you qualify for.
 When you gain an Ability Score Improvement, you can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See Skill Tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
 ### Blast Shapes
-When you reach 5th level, you learn to modify the shape of your eldritch blast in various ways. You learn one Blast Shape detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level.
+When you reach 5th level, you learn to modify the shape of your eldritch blast in various ways. You learn one Blast Shape (detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level. You cannot learn Greater blast shapes until level 9.
 
 Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 to a minimum of 0.
 \page
@@ -599,17 +599,17 @@ You can cast *levitate* on yourself at will, without expending spell points or p
 You can cast speak with beasts at will without expending spell points or material components.
 
 #### Beguiling Influence
-You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills.
+You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills and is of a level you qualify for (Basic before level 7, Advanced until level 11, and Expert until level 17).
 
 #### Book of Ancient Secrets
 Prerequisite: Pact of the Tome feature
 
-You learn two common incantations (see incantations for details) of your choice and can perform them without needing a Ritual Scroll in hand.
+You learn two common incantations (see Incantations for details) of your choice and can perform them without needing a Ritual Scroll in hand.
 
 *Special*: you can take this invocation more than once, learning a new incantation each time. If you take it when you are 5th level or above, you can learn an uncommon incantation instead. At 9th level or above you can learn a rare incantation.
 
 #### Devil's Sight
-You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+You can see normally in darkness, both magical and non-magical, to a distance of 120 feet.
 
 #### Dreadful Word
 Prerequisite: 7th level
@@ -620,7 +620,7 @@ You can cast *confusion* once without using spell points. You can't do so again 
 You are continually under the effect of the detect magic spell while you are conscious. This does not require concentration, but is a magical effect equivalent to a first level spell. If dispelled or suppressed, it comes back when you finish a short or long rest.
 
 #### Eyes of the Rune Keeper
-You can read all non-coded writing, and have advantage on any checks made to decypher ecrypted writing.
+You can read all non-coded writing, and have advantage on any checks made to decipher encrypted writing.
 
 #### Fiendish Vigor
 You can cast *false life* on yourself at will, without expending spell points or material components. When you reach 5th level, it acts as if you spent a 2nd level slot on it. At 9th level, you get the benefit of casting it with a 3rd level slot. Regardless of the level, you always get the maximum number of temporary hit points for that level.
@@ -649,7 +649,7 @@ You can cast *summon elemental* as an action once without using spell points. Yo
 #### Mire the Mind
 Prerequisite: 5th level 
 
-You can cast slow once without using spell points. You can't do so again until you finish a long rest.
+You can cast *slow* once without using spell points. You can't do so again until you finish a long rest.
 
 #### Misty Visions
 You can cast *silent image* at will, without expending spell points or material components.
@@ -793,8 +793,7 @@ Starting at 1st level, when you reduce a hostile creature to 0 hit points, you g
 Alternatively, when a hostile creature within 60 feet of you is reduced to 0 hit points by someone else, you can spend your reaction to gain the temporary hit points. You can use this alternative reaction a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long or short rest.
 
 #### Eldritch Backlash
-Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects:
-
+Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects:  
 **Eldritch Backlash: 1+ SP** When you hit a target with your Eldritch Blast, a lingering aura of warped aether surrounds them until the end of your next turn. If they cast a spell or use a magical ability while the field surrounds them, they take psychic damage equal to 1d10 per SP spent.
 
 #### Resilience
@@ -804,7 +803,7 @@ Starting at 10th level, you can choose one damage type when you finish a short o
 Starting at 14th level, when you take damage from an attack or ability, you can use your reaction to force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your eldritch blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again).
 \page
 ### Pact of Protection
-Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), archfey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
+Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), arch fey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
 
 #### Pact Spells
 The Pact of Protection grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
@@ -821,9 +820,8 @@ Beholden Level|Spells
 When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
 
 #### Eldritch Shield
-Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known Blast Effects:
-
-*Eldritch Shield: 1+ SP* When you hit a target with your eldritch blast, you can choose one creature other than yourself per SP spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma bonus + your proficiency.
+Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known Blast Effects:  
+**Eldritch Shield: 1+ SP** When you hit a target with your eldritch blast, you can choose one creature other than yourself per SP spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma bonus + your proficiency.
 
 #### Aether Ward
 Starting at 10th level, you can call on your patron to shield allies from magical abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw at advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
@@ -834,7 +832,7 @@ Once you use this feature, you can't use it again until you finish a short or lo
 At 14th level, you learn the *globe of invulnerability* spell and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
 
 #### Pact of Inquiry
-Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge--the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
+Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge; the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
 
 #### Pact Spells
 The Pact of Inquiry grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
@@ -860,7 +858,7 @@ Starting at 10th level, your pact gives you the power to read the environment an
 
 A ghostly scene unfolds around you, centered on the object. It includes up to 10 minutes before and after the event in question. You can walk around this scene, which is visible to everyone within sight of it. At your discretion (no action required), you can pause the scene, rewind the action, or fast forward it. You can dismiss the scene as an action; if you do not, it fades 30 minutes after it was created, even if paused the whole time.
 
-This counts as divination magic, so creatures under the effect of mind blank and similar magics are invisible. Additionally, the psychometric effect has no special senses---it acts as if you, personally, were present and uses your ability scores, senses, and proficiencies if relevant. The scene is video only, no sound, smell or other sensory information is present.
+This counts as divination magic, so creatures under the effect of mind blank and similar magics are invisible. Additionally, the psychometric effect has no special senses. It acts as if you, personally, were present and uses your ability scores, senses, and proficiencies if relevant. The scene is video only, no sound, smell or other sensory information is present.
 
 Once you use this ability you must finish a long rest before you can use it again.
 

@@ -26,15 +26,30 @@ Designed for players looking for new options designed for use within Dawn of Hop
 While these options were designed with Quartus in mind and have been played there, they should be setting-agnostic enough to play well in any fantasy-oriented setting.
 
 
-{{note
-#### Multiclasssing
 
-None of the classes, variants and subclasses presented here were designed with multiclassing in mind. Allow multiclassing in or out of them at your own risk; when I use them I don't allow these to multiclass in or out.
-}}
 \page
 {{partCover}}
 
 # Classes
+A player character's class is an important part of their interaction with the world of Dawn of Hope. But classes are instantiations of archetypes, not necessarily in-universe organizations. Most NPCs do not have classes, even if they have abilities similar to those of player characters. Some class names are *close* to being diagetic; calling one of the robed peacekeepers of Byssia a "monk" is reasonable enough and you'd be understood by people in the setting. But don't look too closely.
+
+This section presents multiple new classes (including variants of existing classes) and subclasses for others. Many of them use similar mechanics:
+- Stamina is a general-purpose martial resource, generally equalling your Level + Constitution modifier. Like ki, it recovers on short rest and fuels many abilities.
+- Many (but not all) of the classes use spell points instead of spell slots. These follow the standard conversions: A spell slot of level X in tier T costs X + T spell points to cast. But many of them also use spell points for other effects without directly casting spells.
+- Some classes (armsman, bounty hunter, and warden) have extended Weapon Specialization features, which add abilities to specific weapon traits and add additional traits.
+- All classes have access to Skill Tricks *in addition to* feats. These are described in their own section at the end of this document. Skill tricks mostly provide horizontal growth, rather than bigger numbers.
+
+#### Multiclasssing
+None of the classes, variants and subclasses presented here were designed with multiclassing in mind. Allow multiclassing in or out of them at your own risk; when I use them I don't allow these to multiclass in or out.
+
+#### What about the other classes?
+Not all of the core classes are extended here. The others exist and there have been many notable adventurers best represented by those classes. I, personally, prefer to replace the Artificer with either the Inventor or Mechanist, but do as you will. A few setting specifics:
+- Bards, while technically arcane casters, wield a variant dating back to the earliest days when Leviathan taught the cowering lesser races to use music and harmony to alter reality. As such, bardic casters are overwhelmingly musicians. Even those who wield the power using dance and chanting are working on the rhythms and patterns laid down in music.
+- Clerics are bound to a specific member of the Congregation. There are no clerics of forces or philosophies on Quartus; only a member of the Congregation can grant clerical powers, which grant the cleric direct (but limited) access to the Great Mechanism. Most "priests" in the world are explicitly *not* clerics. They are closer to warlocks, taught and empowered by their religious training, meditation, or the intercession of a Power. Ascendants (such as the Queen Ascendant or Nocthis) *only* have the latter type of "clergy". The big distinction is that the gods can revoke access; secrets taught by a church or Ascendant cannot be taken back once granted.
+- Fighters are fantastic, but not spell-casters (other than the Eldritch Knight). That means that their powers are fueled by aether (the stuff of existence and magic). They can use Second Wind (etc) only a limited number of times because these are not purely practiced techniques. Instead, practice and training has tapped them into the ambient power inherent in themselves, unlocking "unrealistic" and "superhuman" abilities while not casting regular spells.
+- Rangers, like druids, talk to the ihimien. But unlike druids, they make friends with specific ones and attach those spirits to their gear and (if Beastmaster) their animal companions. Druids are more transactional; rangers (and bounty hunters) are training their friends to do tricks for them. This is the bond that makes a ranger's animal companion more than just a beast.
+- Wizards and sorcerers aren't as far apart as in some settings. While anyone, in principle, can learn arcane magic, it's easier for some people. Specifically, the difference is in where they get their spells. Sorcerers are born (in the fiction) with a fixed set of spell patterns encoded in them. Their challenge is to fuel them appropriately (ie create spell slots for them). Wizards have this same problem, but *also* have to learn their patterns from text and practice. Unlike many settings, *sorcerers* are the more inventive ones, because their spells *evolve*. Wizards are more methodical, but less apt to create new spells. They are better at preserving and teaching spells, however.
+
 ## New and Variant Archetypes
 
 {{imageMaskEdge1,--offset:10cm,--rotation:180
@@ -1847,6 +1862,60 @@ Starting at 11th level, the poison damage dealt by your Serpent's Venom ability 
 
 #### Legendary Transformation
 At 17th level, you learn the spell *animal shapes* and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
+\page
+## Paladin
+Paladins are not connected to gods (unless they choose to be). The Oath is not made *to* a god; it may be made *calling a god to witness*. Or not. The empowering thing is the absolute conviction that following the tenets is Right. And that absolute conviction lets them, under limited circumstances, tell the universe to get bent and it will obey. One distinguishing factor of the vast majority of paladins is *stubbornness*, at least when it comes to something connected to their Oath.
+
+Paladins are not necessarily *knightly*. Many paladins take their Oaths (which may be formally sworn in ceremony or simply locked in the heart in a moment of supreme need) progressively, "growing into" their path. Others take them in a moment out of sheer desperation or agony, kneeling at the burning ruins containing their former lives and families and then take time to learn how to wield this power.
+
+Presented here is one Oath, that of Sin's Weight.
+### Oath of Sin's Weight
+Those who swear the Oath of Sin's Weight (the Sinners, as they're often called) are those who have felt the pain that their betrayals, murders, and other "sinful" actions have caused themselves and others. Many of them believe themselves beyond any hope of redemption and have dedicated the remainder of lives to taking on the hard jobs, the dirty jobs, the *necessary* jobs so that others do not have to pay the price, do not have to lose their innocence. Many Sinners have lost their faith in the gods and ascendant powers. They still believe in their existence, but no longer consider themselves worthy of being worshippers. When they do worship, it tends to be the Redeeming Blades, demigods who accept everyone as long as they are willing to sacrifice their past for redemption. Not out of hope for redemption for themselves, but as models in helping others.
+
+Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much...about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
+
+\page
+#### Tenets of Sin's Weight  
+**Sin is Painful, but Pain is Unavoidable.** No Sinner *wants* to sin, least of all me. I do not glory in it; I prefer if it can be avoided. But sometimes, sin must happen that righteousness may prevail.  
+**An Imperfect World Demands People Do Hard Things.** Despite not wanting to sin, Sinners know that sometimes sin and other hard things must be done. The demon cult must be suppressed, the oppressive taskmaster, although he does not violate the law, must be stopped. The raiding tribes cannot be allowed free rein to plunder, even if they're not evil.  
+**Better the Sinner Suffer than the Innocent Shed a Tear.** Sinners are already damned. My soul is already blackened by sin. Better *I* be the ones to carry more weight. Heavy is the weight of sin; strong is my back for having carried it this far. Let me carry more, so that others are unburdened by its weight.  
+**The Meaning of Sin is Personal.** Most Sinners agree that demons and undead are evil. But each of us has their own personal crusade, the thing that he or she considers *particularly* sinful, that they are willing to stain their souls to fight. *Choose something (in coordination with your GM) that fits your character.*
+
+#### Oath Spells
+As a Sinner, your fervent devotion to your Oath grants you certain spells.
+
+Once you gain access to a oath spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the oathbound spell list, the spell is nonetheless an oathbound spell for you.
+
+**Oathbound Level** | **Oath Spells**
+:---- | ----:                    
+3rd         | disguise self          
+5th         | calm emotions 
+7th         | suggestion   
+9th         | fear 
+
+#### Channel Divinity
+When you take this oath at 3rd level, you gain the following two Channel Divinity options. Once you use either one, you cannot use this feature again until you finish a long rest.
+
+**Unveil.** As an action, you unveil the weight of your accumulated sins, which causes those who witness it to cower and quail. All creatures of your choice within 30 ft that can see and hear you must make a Charisma saving throw. On a failed save, they are frightened of you for one minute. While frightened, their speed is reduced to zero. Frightened creatures can repeat the saving throw at the end of each of their turns, ending the effect on a success. Creatures who succeed on the initial saving throw are instead shaken until the end of your next turn. This has no effect on demons, the undead, or constructs.
+
+**Drive Home the Blade.** When you hit with a weapon attack but do not score a critical hit, you can expend your Channel Divinity to convert the hit into a critical hit. Alternatively, you can use it when you miss to turn the miss into a hit.
+
+#### Bear Another's Burden
+Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the charmed, frightened, or stunned conditions. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
+
+#### Aura of Weight
+Starting at 7th level, you can expend a spell slot of 1st level or higher as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minute. On a success, they are shaken until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
+
+#### Penance Stare
+Starting at 15th level, you can use your action and expend a spell slot of 3nd level or higher to target one creature you can see within 60 ft and magically force it to relive its mistakes and sins. The target must make a Wisdom saving throw. On a failed save, the target takes 8d6 psychic damage and is incapacitated for one minute. On a success, the target takes half as much damage and is frightened of you until the end of your next turn. Incapacitated targets can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+
+#### Inner Demon
+At 20th level, as an action you can become what others think you, at least outwardly: a ravening fiend. You gain the following benefits for 1 minute or until you are incapacitated. Once you use this ability, you cannot do so again until you finish a long rest.
+- You grow shadowy wings, gaining a flight speed of 60 ft for the duration
+- Your attacks deal extra fire or necrotic (your choice) damage equal to one roll of the weapon's base damage die. Damage dealt by Divine Smite or Improved Divine Smite becomes that same damage type
+- You gain 20 temporary hit points whenever a creature is reduced to 0 HP within your Aura of Protection
+- The area within your Aura of Protection cannot be brighter than dim light, regardless of sources of illumination. If it already would be dimly illuminated, it becomes complete darkness.
+
 \page
 ## Rogue
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a *fireball* and come out unscathed&mdash;the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.

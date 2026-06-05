@@ -2819,17 +2819,15 @@ Starting at 18th level, you can rain death down on enemies even faster. When you
 Heavy Assault squads are those who specialize in fighting monstrous and magical beasts; they specialize in taking down the largest, most heavy hitting enemies around. The mages who serve in these squads are self-sufficient and bolster their own strength by sapping the life of their foes.
 
 #### Bonus Spells
-You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
+You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out. Spells marked with (\*) are found in the New Spells section in this document.
 
 Level|Spell
 :----|:----:
 1st|False Life
-3rd|Wither and Bloom&dagger;
-5th|Life Transference&dagger;
+3rd|Drain Vitality (\*)
+5th|Tap Vitality Reserves (\*)
 7th|Vampiric Touch
 9th|Enervation
-
-Spells marked with &dagger; are found in sources other than the core 5e books and can be substituted for similarly-themed spells at the DM's discretion if not available.
 
 #### Armored Caster
 When you pick this assignment at level one, you gain proficiency in medium armor and shields and can cast warmage spells while wearing and wielding them. You can use your shield as a focus for your spells.
@@ -2982,6 +2980,23 @@ ____
 The targeted creature gains resistance to bludgeoning, piercing, psychic, and slashing damage until the end of your next turn.
 
 **Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+
+#### Drain Vitality
+*2nd level necromancy*
+____
+- Components: V, S, M (a leech)
+- Range: 60 ft
+- Cast Time: 1 action
+- Duration: Instantaneous
+- Classes: Druid, Ranger, War Mage (Heavy Assault)
+
+All creatures in a 10-foot radius sphere around a point you can see within range must make a Constitution saving throw. On a failed save, targets take 2d6 necrotic damage and cannot regain hit points until the start of your next turn. On a success, targets take half as much damage but no other effects. All natural plant life and CR 0 Tiny creatures wither and die without a saving throw.
+
+In addition, you regain hit points equal to half of the damage roll. Any healing in excess of your maximum hit points becomes temporary hit points.
+
+**At Higher Levels:** When you cast this spell using a spell slot of 3rd or higher level, the damage dealt increases by 1d6 for every two spell levels above 2nd.
+
+**Source:** Original. Licensed CC-BY-4.0.
 
 #### Enchanted Strike 
 *1st level divination*
@@ -3136,7 +3151,7 @@ You target a creature within 60 feet and tell it to spin. The creature must make
 
 **Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
-#### Steam Blast (4th level evocation)
+#### Steam Blast
 *4th level evocation*
 ____
 - Components: V, S, M (a drop of water)
@@ -3150,6 +3165,22 @@ You unleash a burst of superheated steam in a 15‑foot radius centered on you. 
 At Higher Levels: When you cast this spell using a spell slot of 5th level, the damage increases to 6d8 and the push distance increases to 15 feet.
 
 **Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+
+#### Tap Vitality Reserves
+*3rd level necromancy*
+____
+- Components: V, S
+- Cast time: 1 action
+- Range: Touch
+- Duration: Instantaneous
+- Classes: Bard, Cleric, Druid, Paladin, Ranger, War Mage (Heavy Assault)
+____
+Your touch unlocks the deep reserves inside your target. One willing creature touched can expend and roll up to two unused hit dice. For each hit die expended, they can choose one of the following
+- Regain hit points equal to the amount rolled plus their Constitution modifier.
+- Regain spell points equal to half the amount rolled (rounded down). If the character has spell slots instead, they regain expended spell slots equivalent to the total spell points restored.
+- Regain stamina equal to half the amount rolled.
+
+**Source:** Original. Licensed CC-BY-4.0.
 
 #### Tick Stop
 *1st level enchantment*

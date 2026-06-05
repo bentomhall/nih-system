@@ -112,10 +112,11 @@ None of the classes, variants and subclasses presented here were designed with m
 
 ## Armsman
 {{note
+#### Compatibility
 This is a replacement for the Fighter and should not be played in the same group. It is intentionally somewhat stronger.
 }}
-#### Compatibility
-The armsman is a master of weapons. His power comes from training, discipline and superior techniques that allow him to break the boundaries of what is possible for others. While he does not cast spells, his skills are themselves beyond the natural.
+
+The armsman is a master of weapons. His power comes from training, discipline and superior techniques that allow him to break the boundaries of what is possible for others. While he does not cast spells, his skills are themselves beyond the natural, manipulating the aether of which everything is made to produce exceptional effects. Many consider Crisial City the birthplace of the Sword Saint, mixing aelven magic with physical arts, while Wyrmhold's Crown Guard is known for teaching techniques similar to those of Defender and Warlord Armsmen. That said, armsmen of all types can be found throughout Noefra.
 
 Wearing heavy armor, able to use any weapon with equal skill, the armsman is versatile and deadly in any situation. Durable as well, he isn't as suited at standing on the back lines and assisting others. His control over the battlefield is more oriented toward punishing those who attack his allies.
 
@@ -345,7 +346,9 @@ At level 18, you've learned to channel the dying energies of foes into healing f
 \page
 
 ## Barbarian
-Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two shouldn't be played in the same party.
+The barbarian archetype is common throughout Noefra, and not only (not even predominantly) among the "uncivilized" tribes. It's said that the origin of the iconic rage was developed by watching pre-cataclysm orcs tap into primal (but demon-tainted) power through their bloodline curse of blood-lust and anger. [_That's a story I don't believe. People have been getting angry and gaining power from it for a long time. End of the 2nd Age at the most recent. --IB_] Whatever the origin, the orcs of the Fiach Wood (and those of Wyrmhold) are most associated in the common mind with barbarians. Barbarians draw on the primal aether of the Mortal world , often through their emotions. They draw that aether into themselves to reinforce their bodies and souls. While anger (ie rage) is one of the easiest emotions to do this with, many barbarians wield other emotions. Their minds remain clear. Some, in fact, treat this as an entirely intellectual exercise as they become the primal embodiment of the blade.
+
+Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two (barbarian and warder) shouldn't be played in the same party.
 
 ### Path of the Stormbound Fist
 Those that follow the path of the Stormbound Fist have an innate connection to elemental lightning; fire and air combined into a destructive mix. They often tend to favor unarmed attacks, but regardless their attacks hit with the force of a bolt of lightning.
@@ -867,7 +870,7 @@ At 14th level, you learn the *mind blank* spell and can use it once per long res
 
 \page
 ## Bounty Hunter (Variant Ranger)
-Bounty hunters draw on the spirits of nature as do druids, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many bounty hunters find that civilization is also in peril from the uncivilized folks within its borders, and these too draw a bounty hunter's wrath.
+Bounty hunters draw on the spirits of nature as do druids, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many bounty hunters find that civilization is also in peril from the uncivilized folks within its borders, and these too draw a bounty hunter's wrath. The Border Wardens of Byssia and the Tower Scouts of Crisial Kingdom are among the more organized bodies most known for bounty hunters, but bounty hunters are found throughout Noefra.
 
 Bounty hunters are skirmishers, either attacking from afar with ranged weapons or fighting with multiple weapons. They can put on a shield and fight on the front-lines, but they are less suited to that than a specialized barbarian, fighter, or paladin. They have more ability to deal with hordes of small enemies than most weapon-users, but are not nearly as supportive as a druid or cleric.
 
@@ -1144,6 +1147,10 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 \page
 
 ## Druid (Subclass)
+Druidism is the 2nd oldest of the organized magics of Quartus. Druids, like clerics, channel their magic from other entities instead of creating the resonant patterns themselves. Unlike clerics, druids aren't beholden to the gods or to powers of the Astral. They negotiate with, befriend, and sometimes bully the ihimen, called the "little gods" or "kami" or "spirits of nature", the collective entities who are in and through everything. In exchange for experiences not available to these bodiless beings and a small piece of the druid's aether, they perform "tricks" in the form of spells and other effects. Their signature is the wildshape, a trick where the druid channels an animal spirit to create an aetheric "shell" as a body, dissolving their real body into the border shadow (in effect). The ihimen merges with the druid's spirit and handles the mechanics of the new body but gets to experience corporeality. This is why the druid is unharmed when the animal body takes blows; it isn't really their body.
+
+Druids are most common in Byssia, with the druids of the Dreamgrove actively participating in that nation's government (although they have stepped back somewhat since the Red Plague and the involvement of the Circle of Purging Flame, which had substantial support in the Dreamgrove community). Crisial has the Lady's Grove, a much more civilization-friendly grove where the dryad of the ancient oak at the center (the titular Lady) still mourns her mate, Safrir of the Catalysts, who sacrificed himself in 254 AC to prevent the veil into Shadow from tearing completely at the start of the Time of Troubles. The other of the large groves is at Pactum in the central-northern Sea of Grass, which centers around an ancient tree and the spirit of that tree, Maevea and her husband Kantorell. Of the groves, Pactum Grove has the least dealings with civilization. Its primary focus is on the balance between life and death.
+
 This section introduces one new druid subclass: The Circle of Spirit Talkers, which uses wildshape uses to instead summon spirit companions.
 
 ### Circle of the Spirit Talkers
@@ -1199,7 +1206,7 @@ Starting at 14th level, your spiritual presence is undeniable. When a fey or an 
 \page
 
 ## Inventor
-Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. 
+Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanics have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the inventor's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
 
 {{{note 
 
@@ -1472,18 +1479,19 @@ At 13th level you have discovered deep secrets to alchemy. You gain the followin
 \page
 
 ## Mechanic
+Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanics have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the mechanic's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
 {{note
 #### Designer’s Note
 The two primary archetypes at play here are the bulky, short-tempered smith who can’t leave his forge behind, so he brings it with him and wades into melee combat in a clockwork suit of armor, and the quick-fingered, quick-witted tinkerer, almost roguish but with much more of a mechanical bent, whose style revolves around souped-up crossbows and mechanical traps and gadgets. It also has the Chemist variant, who mixes atheric technology with alchemy.
 
-Both are married on a “half-caster”-like chassis, with a twist. Instead of standard spell slots, the mechanist infuses spell-like magical effects into pieces of his gear–rods, goggles, twists of wire and crystal that look like junk–the outward form matters little. But the mechanist must have it ready to hand to create the magical effect stored within. The mechanist doesn’t have spell slots and knows very few spells, but instead uses his Aether Engine to power his gadgets. It has a number of charges that restore over time. These power many of his magical effects. Mechanically, it looks like delayed warlock progression, but with spell points instead of slots.
+All three are married to a half-caster-like chassis, with a twist. Instead of standard spell slots, the mechanist infuses spell-like magical effects into pieces of his gear: rods, goggles, twists of wire and crystal that look like junk–the outward form matters little. But the mechanist must have it ready to hand to create the magical effect stored within. The mechanist doesn’t have spell slots and knows very few spells, but instead uses his Aether Engine to power his gadgets. It has a number of charges that restore over time. These power many of his magical effects. Mechanically, it looks like delayed warlock progression, but with spell points instead of slots.
 
 Note: this is an alternative to the Inventor and not designed to be played at the same time in the same party. They fit the same thematic niche and are probably not balanced against each other.
 
 }}
 
 #### Quick Build
-If you want to play the melee-oriented Forgemaster archetype, Strength and Intelligence should be your primary attributes, with Constitution as your secondary. Pick the heaviest armor you can wear and a two-handed weapon, along with armored heart and lightning charge as your infused spells.
+If you want to play the melee-oriented Forgemaster archetype, Strength and Intelligence should be your primary attributes, with Constitution as your secondary. Pick the heaviest armor you can wear and a two-handed weapon, along with *armored heart* and *lightning charge* as your infused spells.
 
 If instead you want to play the quick-fingered, ranged sniper Trapsmith archetype, Dexterity and Intelligence should be your primary attributes. Choose light armor and a heavy crossbow, with a light hammer as a melee weapon. Take *headshot* and *tick stop* as your infused spells.
 
@@ -1816,6 +1824,12 @@ Spells marked with a (*) are found in the New Spells section of this document.
 
 \page
 ## Monk
+There are four main monasteries in western Noefra, but most monks learn their art from an unaffiliated master or on their own. Tysh, located near Fuar Uulan, and Quietus, located in Wyrmhold, teach the traditional martial arts associated with monks as a class. Tysh-trained monks focus on the more mystical side and often take vows of silence; the graduates often travel on obscure quests for enlightenment. Quietus, founded by Kalesin of the Catalysts, teaches the common folk the unarmed martial arts and focus. Unlike the other monasteries, it is much closer to a normal school and its graduates don't take any form of vow other than to not use their skills for evil. Tyom, located near Asai'ka, trains spies, dancers, and assassins in shadowy mystical arts. Associated with the Dancers of the Church of the Queen Ascendant, its graduates often join the clergy or dancer corps. Those that don't often dance professionally...or use their skills in the many criminal endeavors across the Jungle. Alone of the schools, the Home of the Elements in the Byssian Highlands, is officially part of the government and includes arcane and primal components. It teaches not only monks but other elementalists to hear and manipulate the elements in many ways. Its martial graduates act as patrolling judges, peace keepers, and messengers throughout Byssia, most often simply resolving disputes through discussion. They wear traditional, simple, colored robes denoting their focused element (amber for air, grey-blue for water, crimson for fire, and green for earth) and carry walking sticks that double as instruments of discipline.
+
+The ki used by monks is aether like the rest of Quartus, just focused inward. As such, monk abilities in Quartus are not subject to anti-magic fields, which only suppress external aetheric resonances.
+
+Presented here is one specialized Way; a more focused elementalist. As the Plane of Flame is most associated with the duality of destruction and rebirth, symbolized by the phoenix, so the Way is both destructive and protective.
+
 ### Way of Living Flame
 Some monks, whether by nature or by training, have attuned their souls with the Plane of Flame and elemental fire. Some of them have developed this attunement into a Way, incorporating fire into their martial arts.
 

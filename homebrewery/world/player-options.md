@@ -31,6 +31,13 @@ While these options were designed with Quartus in mind and have been played ther
 {{partCover}}
 
 # Classes
+## New and Variant Archetypes
+
+{{imageMaskEdge1,--offset:10cm,--rotation:180
+  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
+}}
+
+\page
 A player character's class is an important part of their interaction with the world of Dawn of Hope. But classes are instantiations of archetypes, not necessarily in-universe organizations. Most NPCs do not have classes, even if they have abilities similar to those of player characters. Some class names are *close* to being diagetic; calling one of the robed peacekeepers of Byssia a "monk" is reasonable enough and you'd be understood by people in the setting. But don't look too closely.
 
 This section presents multiple new classes (including variants of existing classes) and subclasses for others. Many of them use similar mechanics:
@@ -49,16 +56,7 @@ Not all of the core classes are extended here. The others exist and there have b
 - Fighters are fantastic, but not spell-casters (other than the Eldritch Knight). That means that their powers are fueled by aether (the stuff of existence and magic). They can use Second Wind (etc) only a limited number of times because these are not purely practiced techniques. Instead, practice and training has tapped them into the ambient power inherent in themselves, unlocking "unrealistic" and "superhuman" abilities while not casting regular spells.
 - Rangers, like druids, talk to the ihimien. But unlike druids, they make friends with specific ones and attach those spirits to their gear and (if Beastmaster) their animal companions. Druids are more transactional; rangers (and bounty hunters) are training their friends to do tricks for them. This is the bond that makes a ranger's animal companion more than just a beast.
 - Wizards and sorcerers aren't as far apart as in some settings. While anyone, in principle, can learn arcane magic, it's easier for some people. Specifically, the difference is in where they get their spells. Sorcerers are born (in the fiction) with a fixed set of spell patterns encoded in them. Their challenge is to fuel them appropriately (ie create spell slots for them). Wizards have this same problem, but *also* have to learn their patterns from text and practice. Unlike many settings, *sorcerers* are the more inventive ones, because their spells *evolve*. Wizards are more methodical, but less apt to create new spells. They are better at preserving and teaching spells, however.
-
-## New and Variant Archetypes
-
-{{imageMaskEdge1,--offset:10cm,--rotation:180
-  ![The United States Frigate "President" Engaging the British Squadron, 1815, 1850, by Fitz Henry Lane](https://homebrewery.naturalcrit.com/assets/frigate.webp){position:absolute,bottom:0,right:0,height:100%}
-}}
-
 \page
-
-
 ## Armsman
 {{note
 #### Compatibility
@@ -726,7 +724,7 @@ If a beholden falls out of favor with their patron, DMs may decide that the beho
 
 ### Pact of Destruction
 Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.
-
+\column
 #### Pact Spells
 The Pact of Destruction grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using spell points.
 
@@ -774,7 +772,7 @@ When a creature you can see targets you with an attack or an ability that causes
 At 6th level you learn the Whispers of the Grave invocation. It does not count against your normal limit of Invocations known. When you target a corpse with this invocation, the corpse is required to speak truthfully and answer the questions to the best of its ability even if it recognizes you as an enemy.
 
 If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.
-
+\column
 #### Psychometry
 Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from".
 
@@ -786,7 +784,7 @@ Once you use this ability you must finish a long rest before you can use it agai
 
 #### Legendary Effect: Mind Blank
 At 14th level, you learn the *mind blank* spell and can use it once per long rest. In addition, it provides immunity to psychic damage. If you already know this spell via Mystic Arcanum, you can use that arcanum twice instead of once per long rest and the additional effect applies.
-
+\page
 ### Pact of Protection
 Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), arch fey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
 
@@ -800,7 +798,7 @@ Beholden Level|Spells
 5th|Beacon of hope, revivify
 7th|Death ward, mass cure wounds
 9th|Antilife shell, wall of stone
-\page
+
 #### Steadfast Protection
 When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
 
@@ -812,6 +810,7 @@ Starting at 6th level, you learn an additional Blast Effect that does not count 
 Starting at 10th level, you can call on your patron to shield allies from magical abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw at advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
 
 Once you use this feature, you can't use it again until you finish a short or long rest.
+\column
 #### Legendary Effect: Globe of Invulnerability
 At 14th level, you learn the *globe of invulnerability* spell and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
 
@@ -1370,7 +1369,7 @@ You gain proficiency in heavy armor. Your carrying/lift/drag capacity doubles.
 
 #### Additional Proficiencies
 You gain proficiency in athletics and intimidation.
-
+\column
 #### Power Armor: Limbs
 Starting at 3rd level, you always count as having a running start when you jump and your high jumps are as far as your long jumps.
 
@@ -1418,7 +1417,7 @@ ____
 Chemists focus on the alchemical side of the inventor's life, creating ways to better disperse their munitions and potions to others, as well as creating new munitions
 #### Additional Proficiencies
 You gain proficiency in Arcana and Medicine, as well as alchemist’s tools and herbalists’ kits.
-
+\column
 #### Munition Launcher
 At 3rd level, you’ve created a system to launch potions, alchemical items, and other munitions out to 90 ft as an action. If you target a friendly creature, they can catch it out of the air and use it on themselves as a reaction. If you target a hostile creature with an alchemical munition, make the attack roll as normal. If you target a location, it simply hits that location.
 
@@ -1476,7 +1475,7 @@ If instead you want to play the quick-fingered, ranged sniper Trapsmith archetyp
 **Hit Dice:** 1d8 per mechanist level  
 **Hit Points at 1st Level:** 8 + your Constitution modifier  
 **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per mechanist level after 1st.
-
+\column
 #### Proficiencies
 **Armor:** Light armor  
 **Weapons:** Simple weapons, martial weapons  
@@ -1496,7 +1495,7 @@ You start with the following equipment, in addition to the equipment granted by 
 ### Archetype
 Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Forgemaster, who specializes in enhancing his armor until he’s a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-### Aether Engine (1st)
+### Aether Engine
 Unlike a conventional spell-caster, your method of creating magical effects depends on a mechanical contrivance, which is a tiny object of metal, gears, and crystal, which you have created at 1st level.This is your Aether Engine (AE).  It processes environmental aether into usable aether charge. Over time, you make it more capable. When you gain this engine, it can store up to two points of aether charge, which can be used to cast your infused spells and activate some of your class features. Expended points are regained when you complete a long or short rest, up to your maximum. You can never expend more charge as part of a single action than shown on the aether charge table below for your level.
 
 If you do not have the aether engine on your person, you cannot use abilities that require spending aether charge. If it is lost or destroyed, you can create a new one when you finish a long rest as long as you have some form of metal and even rudimentary tools at hand.
@@ -1529,7 +1528,7 @@ Level|Prof. Bonus|Features|Max. Aether Charge|Spells Known (max level)|Simultane
 
 }}
 
-### Infused Spells (1st)
+### Infused Spells
 At first level, you’ve learned to replicate the patterns of selected spells, albeit in a completely unconventional fashion. By carefully fashioning trinkets out of wire and crystal and gears (or laying patterns of wire and crystal into your existing items), you can resonate the ambient aether as if you cast the spells yourself, as long as they are linked to your Aether Engine. This is called “infusing” the spell into your AE, and your overall process as Spell Infusion.
 
 Spell Level|Aether Charge Cost|Minimum Level Required
@@ -1874,7 +1873,6 @@ Those who swear the Oath of Sin's Weight (the Sinners, as they're often called) 
 
 Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much...about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
 
-\page
 #### Tenets of Sin's Weight  
 **Sin is Painful, but Pain is Unavoidable.** No Sinner *wants* to sin, least of all me. I do not glory in it; I prefer if it can be avoided. But sometimes, sin must happen that righteousness may prevail.  
 **An Imperfect World Demands People Do Hard Things.** Despite not wanting to sin, Sinners know that sometimes sin and other hard things must be done. The demon cult must be suppressed, the oppressive taskmaster, although he does not violate the law, must be stopped. The raiding tribes cannot be allowed free rein to plunder, even if they're not evil.  
@@ -1902,7 +1900,7 @@ When you take this oath at 3rd level, you gain the following two Channel Divinit
 
 #### Bear Another's Burden
 Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the charmed, frightened, or stunned conditions. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
-
+\page
 #### Aura of Weight
 Starting at 7th level, you can expend a spell slot of 1st level or higher as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minute. On a success, they are shaken until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
 
@@ -3076,7 +3074,7 @@ ____
 - Duration: 1 round
 - Classes: Bounty Hunter, Fighter (Eldritch Knight), Ranger, Spellblade, Rogue (Arcane Trickster), War Mage
 ____
-You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon mastery feature or some other effect), your critical hit range increases by 1 instead.
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon specialization feature or some other effect), your critical hit range increases by 1 instead.
 
 **Source:** Original. Licensed CC-BY-4.0.
 
@@ -3110,7 +3108,7 @@ The air around a creature you can see within range takes on the aspect of ice. T
 When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 
 **Source:** Original. Licensed CC-BY-SA.
-
+\page
 #### Gear Barrage
 *3rd level conjuration*
 ____
@@ -3123,7 +3121,7 @@ ____
 You create a burst of magically-propelled gears. Each creature within a 60 ft cone must make a Dexterity saving throw, taking 5d8 slashing damage on a failed save or half as much on a success.
 
 **Source** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
-\page
+
 #### Gear Shield
 *2nd level abjuration*
 ____
@@ -3327,10 +3325,9 @@ Each skill trick detailed below shares some common characteristics:
 
 
 #### Skill Trick DCs
-The DC for any saving throws required by skill tricks is given by
-:
+The DC for any saving throws required by skill tricks is given by  
 **8 + the associated ability modifier + your proficiency bonus**
-:
+
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
 
 #### Acquiring Skill Tricks
@@ -3421,7 +3418,7 @@ You are particularly good at haggling. Any time you sell goods, you get 125% of 
 *Strength (Athletics) Basic Skill Trick*
 
 You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
-
+\column
 #### Linguist
 
 *Intelligence (General) Basic Skill Trick*
@@ -3496,7 +3493,7 @@ Additionally, you have advantage on checks made to determine the spell being cas
 *Strength (Shield) Basic Skill Trick*
 
 You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
-
+\column
 #### Soothe Domesticated Animal
 
 *Wisdom (Animal Handling) Basic Skill Trick*
@@ -3722,7 +3719,7 @@ Master skill tricks require a +6 proficiency or level 17 characters. These are p
 *Dexterity (Acrobatics) Master Skill Trick*
 
 You can spend your bonus action to walk on air as if it was solid ground. If you do not spend your bonus action on each of your turns while suspended, you fall.
-
+\column
 #### Clean Slice
 *Strength (any slashing weapon) Master Skill Trick*
 
@@ -3749,7 +3746,7 @@ Alternatively, if you are not actively fighting someone, you can force them to m
 *Wisdom (Survival) Master Skill Trick*
 
 As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
-
+\page
 #### Healing Hands
 
 *Wisdom (Medicine) Master Skill Trick*

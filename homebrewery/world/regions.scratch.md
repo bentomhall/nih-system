@@ -1,0 +1,28 @@
+# Regions
+## Combined
+- Gap-tooth Bay
+  - Drowned Coast
+  - Auringon
+  - Byssian Gap
+- Northern Wilds
+  - Lost Coast (north of Auringon)
+  - Frozen Coast
+  - Fiach Wood
+  - Nocthian Caldera
+  - Lupaus Plain
+- Central Core
+  - Southshore
+  - Sundown Hills
+  - Eastshore
+  - Sea of Grass
+  - Dreamwall
+  - Kotimaa
+- Blood Fang
+  - Jungle of Fangs
+  - Bloodthirst Wildlands
+  - Sentinel Island, Serpent Sea, W. Moon Sea
+  - Moon's Vengeance
+- Titan Lands
+  - Giant's Spine
+  - Dust Gap
+  - Border Range

@@ -1,15 +1,39 @@
 # Regions
+Information per region:
+- Nations and significant groups (w/leaders where appropriate)
+- Major settlements
+- Climate/Ecology
+- Major Threats
+  - monsters
+  - humanoid (bandits/criminal orgs/cults)
+  - External
+- Short-blurb adventure seeds
+
 ## Combined
 - Gap-tooth Bay
   - Drowned Coast
+    - Tlalocana
+    - Demon tribes (naming!)
   - Auringon
   - Byssian Gap
+    - Highlands
+    - Lowlands
+  - Gap-tooth Bay
+    - Three Sisters
+    - Freeport
+    - Isle of Beasts
 - Northern Wilds
   - Lost Coast (north of Auringon)
+    - Tribes (get names)
   - Frozen Coast
+    - Xhaimal
+    - Broken Lands
   - Fiach Wood
+    - Mar'osh
   - Nocthian Caldera
+    - Including City of Night
   - Lupaus Plain
+    - Including Serajaa
 - Central Core
   - Southshore
   - Sundown Hills
@@ -19,7 +43,13 @@
   - Kotimaa
 - Blood Fang
   - Jungle of Fangs
+    - Sha'slar
+    - Asai'ka
+    - Serpent Dominion
   - Bloodthirst Wildlands
+    - Wildlands proper (northern jungle)
+    - Dolor (central plains)
+    - Cape Dread + ______ (city)
   - Sentinel Island, Serpent Sea, W. Moon Sea
   - Moon's Vengeance
 - Titan Lands

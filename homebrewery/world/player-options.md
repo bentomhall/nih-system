@@ -83,7 +83,7 @@ As a Armsman, you gain the following class features.
 **Weapons:** all weapons  
 **Tools:** None  
 **Saving Throws:** Strength, Constitution  
-**Skills:** Choose two from Acrobatics, Animal, Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
+**Skills:** Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
 
 #### Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
@@ -271,7 +271,7 @@ Starting at level 11, creatures who benefit from this also gain temporary hit po
 
 You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.  
 \page
-**Command: Hold the Line.** Starting at 7th level, you have become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the frightened, charmed, or incapacitated condition on themselves even if they would not otherwise be able to use a reaction due to a condition. This automatically ends the unconscious condition when caused by poison or magical sleep.
+**Command: Hold the Line.** You become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the frightened, charmed, or incapacitated condition on themselves even if they would not otherwise be able to use a reaction due to a condition. This automatically ends the unconscious condition when caused by poison or magical sleep.
 
 In addition, creatures of your choice that can see or hear you have advantage on any saving throws against being or frightened, charmed, or incapacitated for one minute.
 
@@ -328,7 +328,7 @@ Starting at 10th level, the lightning courses through your blood. You gain the f
 Starting at 14th level, your rage carries with it primal lightning and thunder. You gain the following benefits:
 
 - You now have 2 charges of Amplification per short rest instead of one.
-- While you are raging, you can use an action to stomp the ground, creating a shocking web of lightning. All creatures of your choice within 30 feet  must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they take 8d8 lightning damage and are knocked prone and restrained by bands of lightning. On a success, they take half as much damage and are only knocked prone (not restrained). Restrained creatures take 2d8 lightning damage at the beginning of each of their turn and can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+- While you are raging, you can use an action to stomp the ground, creating a shocking web of lightning. All creatures of your choice within 30 feet  must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they take 8d8 lightning damage and are knocked prone and restrained by bands of lightning. On a success, they take half as much damage and are only knocked prone (not restrained). Restrained creatures take 2d8 lightning damage at the beginning of each of their turn and can attempt the saving throw again at the end of each of their turns, ending the effect on a success. Once you use this feature, you cannot do so again until you finish a long or short rest.
 
 \page
 ### Path of the Whirling Blade
@@ -531,7 +531,7 @@ At higher levels, you gain more spells of your choice that can be cast in this w
 When you gain a level in this class, you can exchange one arcanum spell you know for another that you could choose at that level.
 
 ### Eldritch Master
-At 20th level, you can draw on your inner reserve of mystical power while entreating your patron for at least one minute. When you do so, you can either regain spell points equal to your level or regain one expended use of a mystic arcanum.
+At 20th level, you can draw on your inner reserve of mystical power while entreating your patron for at least one minute. When you do so, you can either regain spell points equal to your level or regain one expended use of a mystic arcanum. Once you use this feature, you cannot do so again until you finish a long rest.
 
 ### Eldritch Invocations
 If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
@@ -613,9 +613,6 @@ Prerequisite: 3rd level
 
 You can cast *jump* on yourself at will, without expending spell points or material components.
 
-#### Stolen Knowledge
-You learn one spell from the bard, cleric, druid, sorcerer, or wizard list. You must be able to cast it without exceeding your spell point limit. You can cast any spells you know this way using spell points as normal; your casting ability is Charisma. Special: you can select this invocation more than once. Each time, pick a different spell. Each time you gain an invocation choice, you can also switch one spell you know via this invocation.
-
 #### Sculptor of Flesh
 Prerequisite: 7th level
 
@@ -625,6 +622,9 @@ You can cast *polymorph* once without using spell points. You can't do so again 
 Prerequisite: 5th level
 
 You can cast *bestow curse* once without using spell points. You can't do so again until you finish a long rest.
+
+#### Stolen Knowledge
+You learn one spell from the bard, cleric, druid, sorcerer, or wizard list. You must be able to cast it without exceeding your spell point limit. You can cast any spells you know this way using spell points as normal; your casting ability is Charisma. Special: you can select this invocation more than once. Each time, pick a different spell. Each time you gain an invocation choice, you can also switch one spell you know via this invocation.
 
 #### Thief of Five Fates
 You can cast *bane* once without using spell points. You can't do so again until you finish a long rest.
@@ -694,20 +694,21 @@ Blast shapes alter the form of the eldritch blast and may alter it from a spell 
 #### Eldritch Arc: 3 SP
 When you use your eldritch blast, you can instead choose to make it take the shape of a circular arc with a 10 ft radius centered on you. All creatures within the area must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
+#### Eldritch Claws: 1 SP
+Make an unarmed attack using Charisma as your weapon attack modifier. On a hit, add your eldritch blast damage to the normal unarmed damage. This counts as slashing damage from a magical weapon.
+
 #### Eldritch Cone: 4 SP, greater
 When you use your eldritch blast, you can instead choose to make it take the shape of a 30 ft cone. All creatures in the area must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
 #### Eldritch Spear: 1 SP
-The range of your eldritch blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets and it does not provoke opportunity attacks from creatures within 5 feet.
+The range of your eldritch blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets or from having enemies within 5 feet.
 
 #### Eldritch Sphere: 6 SP, greater
 When you use your eldritch blast, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within the spells' normal range. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
 \page
-#### Eldritch Claws: 1 SP
-Make an unarmed attack using Charisma as your weapon attack modifier. On a hit, add your eldritch blast damage to the normal unarmed damage. This counts as slashing damage from a magical weapon.
 
 #### Split Bolts: 2 SP
-When you use your eldritch blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 damage of the appropriate attacks. The additional damage from your Charisma modifier only applies to one of them. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
+When you use your eldritch blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 plus your charisma modifier damage of the appropriate type. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
 
 ## Otherworldly Patrons
 The beings that serve as patrons for beholden are mighty inhabitants of other planes of existence—not necessarily gods, but almost godlike in their power. Various patrons give their beholden access to different powers and invocations, and expect significant favors in return. Some gods choose both beholden and clerics--the two serve different purposes and often do not see eye to eye.
@@ -749,7 +750,7 @@ Starting at 6th level, you learn an additional Blast Effect that does not count 
 Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature.
 
 #### Retribution
-Starting at 14th level, when you take damage from an attack or ability, you can use your reaction to force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your eldritch blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again).
+Starting at 14th level, when you take damage from an attack or ability, you can use your reaction to force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your eldritch blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again). Once you use this ability, you cannot do so again until you finish a long or short rest.
 \page
 ### Pact of Inquiry
 Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge; the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
@@ -1126,58 +1127,41 @@ Druids are most common in Byssia, with the druids of the Dreamgrove actively par
 
 This section introduces one new druid subclass: The Circle of Spirit Talkers, which uses wildshape uses to instead summon spirit companions.
 
-### Circle of the Spirit Talkers
-Some druids take a more active role in society than most. They are the shamans of tribal groups, the advisors to forest-dwelling orcish warlords. They mediate between the spirits that inhabit the land and the people to maintain the balance. As a result of their more people-focused role, they rarely take the shape of animals themselves. Instead, they are accompanied by a spirit guide, a representative of the spirits with which they mediate. They pour their energy into these spirits to manifest them, aiding allies and hampering enemies.
+### The Circle of Wrathful Seasons
+The Circle of Wrathful Seasons teaches that the elemental cycle of the seasons drives the cycles in nature, and demands that its adherents pay special homage and attention to the elemental forces of the world. Unlike many other circles, the followers of Wrathful Seasons focus on the wild and destructive aspects of those seasons. While they can still heal and encourage growth, their specialty is on bringing nature's wrath to those that defile the world. They bond to elemental spirits drawn from these seasonal aspects and in tandem burn, freeze, entangle, and blast their foes with natural wrath. 
 
-{{classTable
-Level | Features | Manifestations Known | Manifestation Die
-:---- | :----: | :----: |:----:
-2 | Spirit guide, Manifestation | 1 | d4
-6 | Spirit specialization | 2 | d6
-10 | Verge Walker | 3 | d8
-14 | Balance-Keeper | 4 | d10
-}}
+#### Familiar Spirit
+When you take this subclass at 2nd level, you learn to summon an elemental companion spirit as an action, expending one use of Wild Shape. When you do so, choose one of the forms below. The spirit manifests in a space you can see within 60 feet. It does not occupy its space and is immune to all damage and effects other than *dispel magic* and similar effects. It lasts for a number of hours equal to half your druid level or until you are incapacitated. You can only have one summoned at a time.
 
-#### Spirit Guide
-When you choose this circle at 2nd level, you gain the service of a spirit guide. This incorporeal fey spirit travels with you and aids you in your adventures. It takes the shape of a tiny beast of your choice that moves with a flying speed equal to your speed. It cannot attack or take actions unless manifested (see Manifestations). Other creatures can occupy or move through its space without penalty. While not manifested it is immune to all damage and effects and cannot be targeted with attacks or spells.
+As a bonus action on your turn, you can move the spirit up to 30 feet in any direction and activate its ability. It uses your spell save DC and spell attack modifier.  
 
-#### Manifestation
-The same pool of energy that lets you take the shape of animals also can be used to cause your spirit guide to manifest. When you choose this circle at 2nd level, choose 1 of the manifestations listed below. You can use one use of wildshape to activate the listed effect, which lasts for a number of hours equal to half your level. If the spirit guide has hit points listed and is reduced to zero hit points it does not die--instead the active manifestation ends early. Whenever a manifestation calls for your manifestation die, use the dice type shown in the Spirit-talker’s table.
+**Blazing Summer Spirit.** This spirit arises from the scorching heat of the summer sun. When summoned, all creatures within 10 feet of its location must make a Dexterity saving throw against your spell save DC, taking fire damage equal to your level on a failed saving throw or half as much on a success. Creatures that fail their saving throw are frightened for one minute and can make a Wisdom saving throw against your spell save DC at the end of each of their turns, ending the fear on a success.
 
-At levels 6, 10, and 14 you learn additional manifestations as shown on the Spirit-talker’s table.  
-**Ancestral Warrior.**  Your spirit guide takes the form of a spectral archer with hit points equal to half your total hit points. It has resistance to all damage, immunity to all conditions, and uses your saving throw modifiers and AC. You can use a bonus action on your turn to command the spirit to make a ranged or melee spell attack against a creature within 120 feet. It does so using your spell attack modifier and if it hits it deals necrotic damage equal to your manifestation die plus your Wisdom modifier.  
-**Beguiling Nymph.**  Your spirit guide enters your body, enhancing your charm and persuasive abilities. You add your manifestation die to all Charisma checks and once before the effect ends you can force a humanoid or beast that can see and hear you to make a Charisma saving throw or be charmed by you for the duration. While charmed, it treats you as a friendly acquaintance. If it succeeds on the saving throw, it knows you attempted to influence it. If it fails, it does not.  
-**Guiding Ancestor.**  Your spirit guide takes the form of a spectral elder whose presence inspires competence. While the spirit is manifested, you can use your reaction to add your manifestation die to an ability check or saving throw made by an ally within 30 feet of the spirit.  
-\page
-**Protecting Bear.**  Your spirit guide takes the shape of a spectral bear and roars. Roll your manifestation dice twice; the spirit has hit points equal to your level times the total of the rolls. It uses your AC and saving throw modifiers but ignores any spell or effect that does not deal damage. All allies that can see and hear the spirit guide when it roared have resistance to all damage as long as the manifestation is active. Any damage they take is also taken by the spirit guide. When the spirit guide takes damage that would reduce it to 0 HP, the manifestation only ends at the end of the current turn, regardless of the total damage taken.  
-**Prowling Cat.**  Your spirit guide takes the form of a spectral panther. Its presence aids your efforts at stealth. All allies within 30 feet of it add your manifestation die to their Dexterity (Stealth) and initiative checks.  
-**Watchful Hawk.**  Your spirit guide circles overhead in the form of a spectral hawk, warning you and your allies of danger. While manifested, you and all allies within 60 feet of you add your manifestation die to their initiative, perception checks, and survival checks.
+*Bonus Action:* All creatures within 10 feet of the spirit must make a Dexterity saving throw against your spell save DC, taking 1d8 + your Wisdom modifier fire damage on a failure or half as much on a success. This damage increases by 1d8 at each of 6th, 10th, and 14th levels.  
 
-#### Spirit Specialization
-At 6th level, you specialize in one particular kind of spirit manifestation. This modifies your chosen manifestation as shown in the Spirit Specialization table as well as an additional proficiency. If you already are proficient in the indicated skill, you gain expertise in it instead.
+**Bleak Winter Spirit.** This spirit arises from the cold dark of winter. When summoned, all creatures within 10 feet of its location must make a Constitution saving throw against your spell save DC. On a failed save, targets take cold damage equal to your level and are staggered for one minute; on a success, their speed is reduced by half until the end of their next turn. Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action. Staggered creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. 
 
-Manifestation | Additional Manifestation Benefit | Associated Skill
-:----|:----:|:----:
-Ancestral Warrior | Distracting Attack | Athletics or heavy armor. 
-Beguiling Nymph | Enhanced Charm | Persuasion or Deception
-Guiding Ancestor | Effortless Guidance | One tool of your choice or History
-Protecting Bear | Tough Hide | Athletics or Nature
-Prowling Cat | Catseye | Stealth or Acrobatics
-Watchful Hawk | Shared Vigilance | Perception or Nature
-____
-**Distracting Attack:** When the warrior hits with an attack, the target has disadvantage on its next attack. If armor is chosen as the associated skill, you may wear metal armors of any type.  
-**Enhanced Charm:** The charm effect can now target any creature and the target has disadvantage on the saving throw.  
-**Effortless Guidance:** The effect no longer requires your reaction but you can only use it twice between the start of two of your consecutive turns.  
-**Tough Hide:** The bear now has resistance to all damage.  
-**Catseye:**  The range increases to 60 feet and affected allies gain improved darkvision (treating all light conditions as bright light out to 60 feet).  
-**Shared Vigilance:** Attacks against allies made by unseen attackers in the area no longer gain advantage. 
-____
-\column
-#### Verge Walker
-Starting at 10th level, you have become preternaturally aware of the presence of spirits and sensitive to their intent. You have advantage on ability checks made to interact with fey or incorporeal undead and cannot be surprised by them while conscious.
+*Bonus Action:* One creature of your choice within 10 feet of the spirit must make a Constitution saving throw, taking 1d8 + your Wisdom modifier cold damage on a failure or half as much on a success. Creatures that fail their saving throw have their speed reduced by 10 feet until the start of your next turn. This damage increases by 1d8 at each of 6th, 10th, and 14th levels.
 
-#### Spiritual Warding
-Starting at 14th level, your spiritual presence is undeniable. When a fey or an undead creature attacks your or targets you with a spell that does not target anyone else, they must roll a Wisdom saving throw. On a failed save, they must choose another target for the attack or spell or lose the action. If they fail the saving throw by 5 or more, they are unable to attack you for one minute. Creatures with an Intelligence score of 14 or more are unaffected by this ability.
+**Entangling Spring Spirit.** This spirit arises from the uncontrolled spring growth. When summoned, all creatures within 10 feet of its location must make a Strength saving throw against your spell save DC. On a failed save, they take magical bludgeoning damage equal to level and become restrained by rapidly growing plants for one minute. On a success, they take half as much damage and are not restrained. Restrained creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success. The area remains difficult terrain for 10 minutes, after which the plants wither.
+
+*Bonus Action:* Make a spell attack using your spell attack modifier against one creature of your choice within 30 feet of the spirit. On a hit, the creature takes 1d8 + your Wisdom modifier magical bludgeoning damage and you can pull it 10 feet closer to the spirit. The damage increases by 1d8 at each of 6th, 10th, and 14th level.
+
+**Tempestuous Autumn Spirit.** This spirit arises from the roaring storms of autumn in a flash of lightning and crash of thunder. When summoned, all creatures within 10 feet of its location must make a Constitution saving throw against your spell save DC. On a failed save, they take thunder or lightning damage (your choice) equal to your level and are blinded and deafened for one minute. On a success, they take the damage but are not blinded or deafened. Blind or deaf creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.
+
+*Bonus Action:* One creature of your choice within 10 feet of the spirit must make a Strength saving throw against your spell save DC. On a failed save, they take 1d8 + your Wisdom modifier thunder damage and are pushed 10 feet away from the spirit. On a success they take half damage and are not pushed. This damage increases by 1d8 at each of 6th, 10th, and 14th level.
+
+#### L6: Spirit Translocation
+Starting at level 6, as a bonus action on your turn, you can swap your location and your spirit's location.
+
+#### L6: Spirit Sight
+Starting at level 6, your connection to the spirits gives you insight into the unseen world. You can cast *detect magic* and *detect evil and good* at will.
+
+#### L10: Renewed Emergence
+Starting at level 10, while you have a spirit out, you can re-trigger its emergence effect once as an action. You cannot do so again until you expend another charge of wild shape to re-summon your Familiar Spirit (whether of the same type or another).
+
+#### Spirit Unity
+Starting at level 14, when you summon your familiar spirit, you can instead choose to summon any two of them. If you do so, they only last 1 minute but you only expend a single charge of wild shape and can command both of them with the same bonus action; if you use Spirit Translocation you can choose which one you swap with, and Renewed Emergence affects either or both of them as you choose. Once you use this ability, you cannot do so again until you finish a long rest.
 \page
 
 ## Inventor
@@ -3685,6 +3669,8 @@ You have advantage on Wisdom (Perception) checks against being surprised as well
 
 You learn one cantrip of your choice from the Arcanist list, as well as one 1st level spell from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
+
 #### Charge
 
 *Strength (Martial Weapon) Basic Skill Trick*
@@ -3719,7 +3705,9 @@ When you hit with a melee weapon attack, you can attempt to disarm the opponent.
 
 *Wisdom (Religion) Basic Skill Trick*
 
-You learn one cantrip of your choice from the Priest list, as well as one 1st-level spell from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Cleric list, as well as one 1st-level spell from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
 
 #### Evasive Footwork
 
@@ -3788,6 +3776,8 @@ When you hit with an attack from a ranged or finesse weapon, you can try to hamp
 *Wisdom (Nature) Basic Skill Trick*
 
 You learn one cantrip of your choice from the Druid list, as well as one 1st level spell. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
 \page
 #### Resourceful Combatant
 *Strength (Martial Weapon) Basic Skill Trick*
@@ -3855,6 +3845,8 @@ Advanced skill tricks require a +4 proficiency or level 9 characters.
 
 You learn one cantrip of your choice from the Wizard list, as well as one spell of 1st or 2nd level from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
+
 #### Athlete
 
 *Strength (Athletics) Advanced Skill Trick*
@@ -3901,6 +3893,8 @@ As an action, you can either threaten a single enemy that can hear and see you o
 
 You learn one cantrip of your choice from the Cleric list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
+
 #### Fascinate
 
 *Charisma (Performance) Advanced Skill Trick*
@@ -3942,9 +3936,11 @@ When you make a Wisdom (Insight) check and the result is above a 15, you gain on
 \page
 #### Primal Journeyman
 
-*Wisdom (Religion) Advanced Skill Trick*
+*Wisdom (Nature) Advanced Skill Trick*
 
 You learn one cantrip of your choice from the Druid list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+
+You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
 
 #### Pocket Sand
 
@@ -4236,14 +4232,14 @@ Common incantations are suitable to be found by Tier 1 adventurers, ie in levels
 
 *Common, 10 minutes, duration 8 hours.*
 
-You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the incantation effect, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the incantation, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.
+You set an alarm against unwanted intrusion. Choose a door, a window, or an area within 60 ft that is no larger than a 20-foot cube. Until the incantation effect, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the incantation, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.
 
 A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.
 \page
 #### Animal Messenger
 *Common, 1 minute, Exclusive, Costly (Special). Duration 24 hours (Special).*
 
-By means of this incantation, you use an animal to deliver a message. Choose a Miniscule or Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the incantation toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.
+By means of this incantation, you use an animal to deliver a message. Choose a Miniscule or Tiny beast you can see within 60 ft, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the incantation toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.
 
 When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the incantation ends, the message is lost, and the beast makes its way back to where you cast this incantation.  
 *Special:* By burning a sachet of costly herbs worth at least 10 gp while performing this incantation, you can extend the duration by 24 hours for the first 10 gp worth of herbs and 24 hours for every 50 gp of herbs after that.

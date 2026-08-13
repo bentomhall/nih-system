@@ -797,8 +797,8 @@ Beholden Level|Spells
 1st|Cure wounds, shield of faith
 3rd|Calm emotions, prayer of healing
 5th|Beacon of hope, revivify
-7th|Death ward, mass cure wounds
-9th|Antilife shell, wall of stone
+7th|Death ward, stoneskin
+9th|Mass cure wounds, wall of stone
 
 #### Steadfast Protection
 When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
@@ -907,15 +907,14 @@ You choose additional favored terrain types at 6th and 10th level.
 ### Weapon Specialization
 You are better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn--this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
 
-**Battering** Once per turn when you hit with a weapon attack dealing bludgeoning damage, you can force the target to make a Strength saving throw as part of that action. On a failed save, the target is knocked prone.  
-**Cleaving** Once per turn when you hit with a melee weapon attack dealing slashing damage, you can carry some of the damage to another target. When you do so, choose another target within your reach. Compare your attack roll to their AC as if you had attacked them. If you would have hit, they take damage equal to your weapon ability modifier, or twice as much if the initial attack was a critical hit.  
-**Light** When you make the additional attack with a light weapon, you add your ability modifier to the damage dealt. In addition, you make this additional attack as part of the original Attack action instead of as a bonus action.  
-**Loading** You ignore the normal effect of this property. Instead, once per turn when you hit with an attack from a loading weapon, you can choose to have the ammo pass through at a creature behind the original target. The closest creature on a 5' wide line connecting you to the original target and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.  
-**Parrying** While wielding a dagger, shortsword, longsword, greatsword, or halberd, you can use your reaction to react to incoming attacks. As a reaction when you are targeted by an attack, you can add your proficiency bonus to your AC against that attack. You can use this ability after you see the die result but before any damage or other effects are applied.  
-**Precise** Attacks made with daggers, pikes, rapiers, shortswords, and longbows score critical hits on a die result of 19 or 20 instead of only 20.  
-**Reach** You can make opportunity attacks with reach weapons when a creature enters your range as well as leaves it.  
+**Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Dexterity modifier unless the d20 result was a 1.  
+**Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
+**Light** The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.  
+**Loading** You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature by spending 1 STA. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.  
+**Parrying** (greatsword, halberd, longsword) While wielding a parrying weapon and are the target of an attack from a source you can see, you can use your reaction to increase your armor class against the triggering attack by your proficiency bonus, potentially causing the attack to miss.  
+**Precise** (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on an 19 or 20.  
 **Thrown** You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.  
-**Two-handed (Ranged Only)** You can choose to forgo your proficiency bonus to the attack roll with two-handed ranged weapons. If you still hit, you can add twice your proficiency bonus to the damage dealt.
+**Two-handed** While wielding a two-handed weapon, you can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
 \page
 ### Spellcasting
 By the time you reach 2nd level, you have learned to befriend the kami, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 of the Player’s Handbook for the general rules of spellcasting and the end of this entry for the Bounty Hunter spell list.
@@ -925,13 +924,13 @@ The Bounty hunter table shows how many spell points you have to cast your spells
 
 You can prepare a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can learn from that list when you finish a long rest. You cannot prepare any spell with a level higher than the maximum spell level entry in the bounty hunter table for your level.
 
-Spell Points | Spell Level
-:----|:----:
-2 | 1
-3 | 2
-5 | 3
-6 | 4
-7 | 5
+Spell Points | Spell Level | Class Level
+:----|:----:|:----:
+2 | 1 | 2
+3 | 2 | 6
+5 | 3 | 10
+6 | 4 | 14
+7 | 5 | 18
 
 #### Spellcasting Ability
 Wisdom is your spellcasting ability for your bounty hunter spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Bounty hunter spell you cast and when making an attack roll with one.  
@@ -1063,7 +1062,7 @@ The Bounty hunter Spell List table contains a short summary of the spells availa
 Note: This spell list was designed with the idea that my Incantation system (Expanded Rules) is in play. Otherwise, use the Ranger list from the PHB + the additional spell list from Tasha’s, but remove hunter’s mark (as it’s a duplicate of Favored Foe and should not be stacked).
 
 {{spellList,wide
-#### 1st level (2 AET)
+#### 1st level (2 SP)
 - Cure Wounds
 - Enchanted Strike(\*)
 - Bane
@@ -1080,7 +1079,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Thunderwave
 - Yoink (\*)
 
-#### 2nd level (3 AET)
+#### 2nd level (3 SP)
 - Alter Self
 - Barkskin (\*\*)
 - Blindness/Deafness
@@ -1095,7 +1094,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Spike Growth
 - Web
 
-#### 3rd level (5 AET)
+#### 3rd level (5 SP)
 - Bestow Curse
 - Call Lightning
 - Clairvoyance
@@ -1105,7 +1104,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Wall of Thorns
 - Wind Wall
 
-#### 4th level (6 AET)
+#### 4th level (6 SP)
 - Blight
 - Dominate Beast
 - Faithful Hound
@@ -1114,7 +1113,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Greater Invisibility
 - Summon Fey
 
-#### 5th level (7 AET)
+#### 5th level (7 SP)
 - Contagion
 - Chain Lightning
 }}
@@ -1835,7 +1834,7 @@ Starting when you pick this subclass at level 3, you have learned to move throug
 When you pick this subclass at level 3, you gain proficiency in Deception. If you already had proficiency, you gain expertise instead. In addition, you learn the *feint* skill trick. If you spend ki on a different bonus action granted by this class, you can use feint as part of the same bonus action.
 
 #### Serpent's Venom
-At 6th level, you've learned to infuse your personal aether with toxic aspects, coating your unarmed strikes with necrotic venom. Once per turn when you hit a creature with an unarmed strike, you can change the damage type to poison. If you do, you deal extra damage equal to your Wisdom modifier, and you can spend 2 ki points to force the creature to make a Constitution saving throw against your stunning strike DC. On a failed save, the creature takes 1d10 poison damage per AET spent and is poisoned for one minute. On a success, they take half as much damage and are not poisoned. Poisoned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+At 6th level, you've learned to infuse your personal aether with toxic aspects, coating your unarmed strikes with necrotic venom. Once per turn when you hit a creature with an unarmed strike, you can change the damage type to poison. If you do, you deal extra damage equal to your Wisdom modifier, and you can spend 2 ki points to force the creature to make a Constitution saving throw against your stunning strike DC. On a failed save, the creature takes 1d10 poison damage per SP spent and is poisoned for one minute. On a success, they take half as much damage and are not poisoned. Poisoned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
 #### Scale Dance
 At 11th level, you embody the bewitching aspect of a cobra as you dance. As an action, you can spend 3 ki and begin to dance, forcing all creatures of your choice that can see you within 30 feet to make a Wisdom saving throw. On a failed save, they become charmed by you. While charmed, they must use their movement to sway in time with you and cannot cast spells; if they attack, they do so at disadvantage. This effect ends at the start of your next turn unless you use your action again to continue the effect. If you do so, you do not need to pay the cost an additional time, but targets get to re-attempt their saving throw.
@@ -3362,7 +3361,7 @@ ____
 
 The targeted creature gains resistance to bludgeoning, piercing, psychic, and slashing damage until the end of your next turn.
 
-**Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Drain Vitality
 *2nd level necromancy*
@@ -3423,7 +3422,7 @@ The air around a creature you can see within range takes on the aspect of ice. T
 
 When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 
-**Source:** Original. Licensed CC-BY-SA.
+**Source:** Original. Licensed CC-BY-4.0.
 \page
 #### Gear Barrage
 *3rd level conjuration*
@@ -3478,6 +3477,8 @@ ____
 
 You enchant your next shot with a ranged weapon until the end of your turn, granting you advantage on the attack. If the attack hits and the d20 roll was 10 or above, the damage done by the weapon is maximized.
 
+**Source** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+
 #### Lightning Charge
 *1st level transmutation*
 ____
@@ -3516,7 +3517,7 @@ ____
 - Duration: Concentration, up to 1 hour.
 - Classes: Artificer, Mechanist
 ____
-One willing creature you touch becomes immune to charm, fear, exhaustion, and psychic damage for the duration. The effects of any existing levels of exhaustion are suppressed for the duration, but resume once the spell ends. In addition, they become immune to any spell or effect that would change their shape or take control of their actions (such as *confusion*).
+One willing creature you touch becomes immune to charm, fear, and exhaustion, and they gain resistance to psychic damage for the duration. The effects of any existing levels of exhaustion are suppressed for the duration, but resume once the spell ends. In addition, they become immune to any spell or effect that would change their shape or take control of their actions (such as *confusion*).
 
 **Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 \page
@@ -3545,7 +3546,7 @@ ____
 ____
 You unleash a burst of superheated steam in a 15‑foot radius centered on you. All other creatures in that area take 5d8 fire damage and must make a Strength saving throw or be knocked 10 feet away from you. Nonmagical fires smaller than a bonfire are extinguished and everything becomes wet.
 
-At Higher Levels: When you cast this spell using a spell slot of 5th level, the damage increases to 6d8 and the push distance increases to 15 feet.
+At Higher Levels: When you cast this spell using a spell slot of 5th level, the damage increases to 6d8 and the push distance increases to 15 feet. For every spell slot level higher, the damage increases by 1d8.
 
 **Source"** Kobold Press’s Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
@@ -3561,7 +3562,7 @@ ____
 Your touch unlocks the deep reserves inside your target. One willing creature touched can expend and roll up to two unused hit dice. For each hit die expended, they can choose one of the following
 - Regain hit points equal to the amount rolled plus their Constitution modifier.
 - Regain spell points equal to half the amount rolled (rounded down). If the character has spell slots instead, they regain expended spell slots equivalent to the total spell points restored.
-- Regain stamina equal to half the amount rolled.
+- Regain stamina equal to half the amount rolled. If they don't have a Stamina feature, they can regain one use of a non-spell feature that regains uses on a long or short rest.
 
 **Source:** Original. Licensed CC-BY-4.0.
 

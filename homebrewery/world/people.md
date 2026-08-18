@@ -180,7 +180,7 @@ The two cultures presented here are the High House, those associated with or mem
 **Trance.**  Instead of sleeping, you remain semi-conscious and aware of your surroundings. You still require 6 hours of trance to complete a long rest. You cannot be magically put to sleep.
 
 #### High House
-The seven High Houses are the (cultural and sometimes legally) noble caste of the western Noefran gwerin. They carefully curate their lineages, engaging in contract marriages. For the most part, this is all an effort to regain their lost near-agelessness (lost in the Cataclysm) and increase arcane power. When people think of haughty, hedonistic gwerin, these are those that they're thinking of. Each House is small, but has many associates.  
+The seven High Houses are the (cultural and sometimes legal) noble caste of the western Noefran gwerin. They carefully curate their lineages, engaging in contract marriages. For the most part, this is all an effort to regain their lost near-agelessness (lost in the Cataclysm) and increase arcane power. When people think of haughty, hedonistic gwerin, these are those that they're thinking of. Each House is small, but has many associates.  
 **Ability Score Increase.** +1 Intelligence, +1 Dexterity  
 **Additional Proficiencies.** You have proficiency in Arcana, one other Intelligence-based skill of your choice, and two languages of your choice.  
 **Magical Training.** You know two cantrips from the Wizard list. Pick one 1st level spell from the Wizard list; you can cast it once with this feature without expending a spell slot, regaining expended uses when you finish a long rest. If you have spell slots, you can cast it additional times using those slots. Intelligence is your spellcasting ability for these spells.

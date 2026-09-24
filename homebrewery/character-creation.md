@@ -2802,7 +2802,7 @@ At 20th level, you are particularly adept at finding the weak spots of your enem
 The ideal of the ranger has three classic expressions: the Bounty Hunter, the Monster Slayer, and the Primal Guardian.
 
 ### Bounty Hunter
-Bounty Hunters are those who specialize in tracking down and dealing with civilization's refuse. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable. A bounty hunter lives and dies by his reputation: it is his currency and one of his primary weapons.
+Bounty hunters are those who specialize in tracking down and dealing with civilization's refuse. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable. A bounty hunter lives and dies by his reputation: it is his currency and one of his primary weapons.
 
 #### Information Gatherer
 At 3rd level, you gain proficiency in Charisma checks made to gain information. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.

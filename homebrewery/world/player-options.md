@@ -42,7 +42,7 @@ A player character's class is an important part of their interaction with the wo
 
 This section presents multiple new classes (including variants of existing classes) and subclasses for others. Many of them use similar mechanics:
 - Stamina is a general-purpose martial resource, generally equalling your Level + Constitution modifier. Like ki, it recovers on short rest and fuels many abilities.
-- Many (but not all) of the classes use spell points instead of spell slots. These follow the standard conversions: A spell slot of level X in tier T costs X + T spell points to cast. But many of them also use spell points for other effects without directly casting spells.
+- Many (but not all) of the classes use spell points instead of spell slots. These follow the standard conversions: A spell slot of level X in tier T costs X + T spell points to cast. The tiers are as follows: Spell levels 0-2 are tier 1, levels 3-5 are tier 2, 6-8 are tier 3, and 9th level spells are tier 4. But many of them also use spell points for other effects without directly casting spells.
 - Some classes (armsman, bounty hunter, and warden) have extended Weapon Specialization features, which add abilities to specific weapon traits and add additional traits.
 - All classes have access to Skill Tricks *in addition to* feats. These are described in their own section at the end of this document. Skill tricks mostly provide horizontal growth, rather than bigger numbers.
 
@@ -98,7 +98,7 @@ You start with the following equipment, in addition to the equipment granted by 
 Level | Proficiency  | Features  | Stamina  | Skill   |
      ^| Bonus       ^|          ^|         ^| Tricks ^|
 :------|:------------:|:---------:|:---------:|:------:
-1st    | +2           | Second Wind, Stamina, Weapon Mastery | 1 + CON | &mdash;
+1st    | +2           | Second Wind, Stamina, Weapon Specialization | 1 + CON | &mdash;
 2nd    | +2           | Action Surge, Active Defenses        | 2 + CON | &mdash;
 3rd    | +2           | Martial Archetype                    | 3 + CON | &mdash;
 4th    | +2           | Ability Score Increase, Skill Tricks | 4 + CON | 1/basic
@@ -128,7 +128,7 @@ You have a limited well of stamina that you can draw on to protect yourself from
 ### Stamina
 As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier (minimum 1), and you regain expended points when you finish a long or short rest.
 
-### Weapon Mastery
+### Weapon Specialization
 You are better than most at using the additional properties of your weapon. While wielding a weapon, you gain the features below for that weapon. If the weapon has multiple additional properties, you must choose which feature to apply on any individual attack. If a feature calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.  
 **Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.  
 **Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
@@ -162,7 +162,7 @@ When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you
 Alternatively, you can take a feat that you qualify for.
 
 ### Skill Tricks
-When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Appendix A) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for. The total number and maximum tier (basic, advanced, expert, and master) of skill tricks you know is shown in the Skill Tricks column of the Armsman table.
+When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
 ### Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
@@ -240,7 +240,7 @@ Starting at 3rd level, sword saints have an exceptionally large stamina pool by 
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
 
 #### Blazing Flash
-Starting at 3rd level, you can concentrate elemental fire in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA to force the target to make a Constitution saving throw. On a failed save, they are take additional fire damage equal to your Intelligence modifier (minimum 1) and are blinded until the end of their next turn. On a success, they only take the additional damage.
+Starting at 3rd level, you can concentrate elemental fire in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA to force the target to make a Constitution saving throw against a DC of 8 + the higher of your Dexterity or Strength modifier + your proficiency bonus. On a failed save, they are take additional fire damage equal to your Intelligence modifier (minimum 1) and are blinded until the end of their next turn. On a success, they only take the additional damage.
 
 #### Blades of Air
 Starting at 7th level, you can concentrate elemental air in your melee strikes, launching blades of solid air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ STA to extend your reach for that action by 10 ft per STA spent and convert the damage to thunder. The damage dealt by these attacks also increases by 2 for every STA spent.
@@ -251,9 +251,9 @@ Starting at 10th level, you are nearly impossible to fluster or make angry. You 
 Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 STA as an action, removing the effect or expelling the possessor.
 
 #### Lightning Step
-Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus &times; your Intelligence modifier and are staggered until the beginning of your next turn. On a success, targets take half damage and are not staggered. Staggered creatures cannot take reactions and make attacks at disadvantage.
+Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus &times; your Intelligence modifier and are shaken until the beginning of your next turn. On a success, targets take half damage and are not shaken. Shaken creatures cannot take reactions and make attacks at disadvantage.
 
-When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of staggered and targets that succeed are staggered until the start of your next turn.
+When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of shaken and targets that succeed are shaken until the start of your next turn.
 
 #### Cascading Deathblow
 Starting at 18th level, when you use your Deathblow ability, you can expend 1+ STA in addition to the STA spent (if any) to activate the ability. If you do so, all creatures of your choice within your reach if wielding a melee weapon or all creatures of your choice within 10 feet of the original target if wielding a ranged weapon take damage of the weapon's type equal to one roll of the weapon's base die for every stamina spent in this way.
@@ -413,15 +413,15 @@ Level  | Proficiency  | Features  | Cantrips  | Blast    | Blast    | Invocation
 5  | +3 | Blast Shapes                                            | 3 | 2       | 1       | 4       | 27 | 5  |
 6  | +3 | Otherworldly Patron Feature                             | 3 | 2       | 1       | 4       | 32 | 5  |
 7  | +3 | Greater Blast Effects                                   | 3 | 3       | 2       | 5       | 38 | 6  |
-8  | +3 | Ability Score Improvement, Skill Tricks (2/basic)       | 3 | 3       | 2       | 5       | 44 | 6  |
+8  | +3 | Ability Score Improvement, Skill Tricks (2/advanced)       | 3 | 3       | 2       | 5       | 44 | 6  |
 9  | +4 | Greater Blast Shapes                                    | 3 | 3       | 3       | 6       | 57 | 7  |
 10 | +4 | Otherworldly Patron Feature                             | 4 | 3       | 3       | 6       | 57 | 7  |
 11 | +4 | Mystic Arcanum                                          | 4 | 4       | 3       | 7       | 64 | 9  |
-12 | +4 | Ability Score Improvement, Skill Tricks (3/advanced)    | 4 | 4       | 4       | 7       | 64 | 9  |
+12 | +4 | Ability Score Improvement, Skill Tricks (3/expert)    | 4 | 4       | 4       | 7       | 64 | 9  |
 13 | +5 | Mystic Arcanum                                          | 4 | 4       | 4       | 8       | 73 | 10 |
 14 | +5 | Otherworldly Patron Feature                             | 4 | 4       | 4       | 8       | 73 | 10 |
 15 | +5 | Mystic Arcanum                                          | 4 | 4       | 4       | 9       | 83 | 11 |
-16 | +5 | Ability Score Improvement, Skill Tricks (4/expert)      | 4 | 4       | 4       | 9       | 83 | 11 |
+16 | +5 | Ability Score Improvement, Skill Tricks (4/master)      | 4 | 4       | 4       | 9       | 83 | 11 |
 17 | +6 | Mystic Arcanum                                          | 4 | 5       | 5       | 10      | 94 | 13 |
 18 | +6 | &mdash;                                                 | 4 | 5       | 5       | 10      | 94 | 13 |
 19 | +6 | Ability Score Improvement, Skill Tricks (5/master)      | 4 | 5       | 5       | 11      | 107 | 13 |
@@ -548,7 +548,7 @@ You can cast *levitate* on yourself at will, without expending spell points or p
 You can cast speak with beasts at will without expending spell points or material components.
 
 #### Beguiling Influence
-You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills and is of a level you qualify for (Basic before level 7, Advanced until level 11, and Expert until level 17).
+You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills and is of a level you qualify for.
 
 #### Book of Ancient Secrets
 Prerequisite: Pact of the Tome feature
@@ -764,7 +764,7 @@ Beholden Level|Spells
 3rd|Detect thoughts, see invisibility
 5th|Clairvoyance, major image
 7th|Arcane eye, greater invisibility
-9th|Mislead, true seeing
+9th|Contact Other Plane, Mislead 
 
 #### Deceptive Charm
 When a creature you can see targets you with an attack or an ability that causes damage, you can spend your reaction to force them to make a Charisma saving throw against your Spellcasting DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to charm. You can use this feature a number of times equal to your Charisma modifier, regaining expended uses when you finish a long or short rest.
@@ -863,7 +863,7 @@ Level  | Proficiency  | Features  | Focused  | Stamina  | Spell Points  | Max Sp
 3 | +2 | Bounty Hunter Archetype, Primeval Awareness | d4 | 3 | 4 | 1
 4 | +2 | Ability Score Improvement | d4 | 4 | 6 | 1
 5 | +3 | Extra Attack | d6 | 5 | 6 | 1
-6 | +3 | Favored Foe and Natural Explorer Improvements | d6 | 6 | 14 | 2
+6 | +3 | Focused Foe and Natural Explorer Improvements | d6 | 6 | 14 | 2
 7 | +3 | Bounty Hunter Archetype Feature | d6 | 7 | 14 | 2
 8 | +3 | Ability Score Improvement, Land’s Stride | d6 | 8 | 17 | 2
 9 | +4 | Aether Strike | d6 | 9 | 17 | 2
@@ -871,7 +871,7 @@ Level  | Proficiency  | Features  | Focused  | Stamina  | Spell Points  | Max Sp
 11 | +4 | Bounty Hunter Archetype Feature | d8 | 11 | 27 | 3
 12 | +4 | Ability Score Improvement | d8 | 11 | 32 | 3
 13 | +5 | – | d8 | 12 | 32 | 3
-14 | +5 | Favored Enemy Improvement, Vanish | d8 | 12 | 38 | 4
+14 | +5 | Focused Foe Improvement, Vanish | d8 | 12 | 38 | 4
 15 | +5 | Bounty Hunter Archetype Feature | d8 | 13 | 38 | 4
 16 | +5 | Ability Score Improvement | d8 | 13 | 44 | 4
 17 | +6 | – | d8 | 14 | 44 | 4
@@ -952,7 +952,7 @@ When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can 
 Alternatively, if your GM allows, you can pick a feat that you qualify for.
 
 ### Skill Tricks
-When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for. In addition, you qualify for Advanced tricks at 8th level, expert tricks at 12th, and master tricks at 16th level (all one level earlier than normal).
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
 ### Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 2 STA when you hit with an attack to deal your Favored Foe damage an additional time per turn.
@@ -1164,7 +1164,7 @@ Starting at level 14, when you summon your familiar spirit, you can instead choo
 \page
 
 ## Inventor
-Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanics have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the inventor's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
+Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the inventor's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
 
 {{{note 
 
@@ -1247,7 +1247,7 @@ This battery stores a certain amount of charge while you rest, which can then be
 #### Charge Die
 When an effect calls for you to roll one or more Charge Dice, you roll that many d6s and add together the result. At higher levels, the charge die size increases, as shown on the Charge Die column of the Inventor table.
 
-You have two charge dice available at 2nd level, once you’ve rolled your Charge Die twice, you cannot do so again until you finish a long rest. This maximum number increases as you gain levels, as shown on the Maximum Charges column of the Inventor table.
+You have five charge dice available at 2nd level. After you expend these, you cannot do so again until you finish a long rest. This maximum number increases as you gain levels, as shown on the Maximum Charges column of the Inventor table.
 
 When an effect allows you to choose how many Charge Dice to expend, you can choose any number as long as you have that many charges available and it is less than the value shown on the Charge Limit column of the Inventor table. For example, if you are level 3 and have not spent any Charge Dice, you can still only expend 2 of those dice on any individual use of an ability.
 \page
@@ -1411,7 +1411,7 @@ Starting at 3rd level, you can use potions on yourself or administer them to som
 At 6th level, you’ve learned to create three additional types of alchemical munitions&mdash;the firestone, tanglefoot bag and the thunderstone.  
 **Firestone**: This crystal brims with fire aether. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are blinded for one minute. Blinded creatures can make the saving throw again at the end of each of their turns, ending the effect on a success. On a success, targets take half as much damage and are blinded only until the beginning of your next turn. Creating a firestone costs 10 gp and can be done over a long rest.  
 **Tanglefoot Bag**: This small pouch explodes into a tangle of sticky threads. Make a ranged attack with proficiency against a creature within range (30 ft normally, 90 ft for you). On a hit, the creature is restrained until they or someone else uses an action to break them free. Creating a tanglefoot bag costs 5 gp and can be done over a long rest.  
-**Thunderstone**: This crystal brims with lightning and thunder.  Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
+**Thunderstone**: This crystal brims with lightning and thunder.  Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 lightning damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
 
 #### Improved Alchemical Munitions
 Starting at 6th level, when you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
@@ -1436,8 +1436,8 @@ At 13th level you have discovered deep secrets to alchemy. You gain the followin
 - You can produce potions and alchemical munitions at twice the normal rate. If you could make one as part of a long rest, you can now make two.
 \page
 
-## Mechanic
-Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanics have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the mechanic's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
+## Mechanist
+Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the mechanic's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
 {{note
 #### Designer’s Note
 The two primary archetypes at play here are the bulky, short-tempered smith who can’t leave his forge behind, so he brings it with him and wades into melee combat in a clockwork suit of armor, and the quick-fingered, quick-witted tinkerer, almost roguish but with much more of a mechanical bent, whose style revolves around souped-up crossbows and mechanical traps and gadgets. It also has the Chemist variant, who mixes atheric technology with alchemy.
@@ -1756,7 +1756,7 @@ Spells marked with a (*) are found in the New Spells section of this document.
 - Counterspell
 - Dispel Magic
 - Gear Barrage (*)
-- Glyph of Magic
+- Glyph of Warding
 - Lightning Bolt
 - Protection from Energy
 - Sending
@@ -2029,7 +2029,7 @@ When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can 
 Alternatively, if your GM allows, you can pick a feat that you qualify for.
 
 ### Skill Tricks
-When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for. In addition, you qualify for Advanced tricks at 8th level, expert tricks at 12th, and master tricks at 16th level (all one level earlier than normal).
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
 ### Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
@@ -2238,7 +2238,7 @@ There are several Noefran organizations well-suited to a rogue's talents, from t
 ### Variant Features
 The following feature is available to all rogues, with their GM's permission.
 #### Skill Tricks
-Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks. This includes any gained normally alongside ability score increases.
+Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks for more details and the rules governing skill tricks. This includes any gained normally alongside ability score increases.
 
 You gain additional Skill Tricks as shown in the Skill Tricks table below. When you reach 7th level, you can learn advanced skill tricks; at 11th level expert skill tricks; and 17th level master skill tricks. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
 
@@ -2503,7 +2503,7 @@ At 2nd level, choose one of your skill proficiencies. Your proficiency bonus is 
 At 10th level, you can choose another skill proficiency to gain this benefit.
 
 ### Skill Tricks
-Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See the linked page for more details and the rules governing skill tricks. You gain additional skill tricks every time you gain an Ability Score Improvement, but you must qualify for them normally.
+Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See the section on Skill Tricks for more details and the rules governing skill tricks. You gain additional skill tricks every time you gain an Ability Score Improvement, but you must qualify for them normally.
 
 When you gain access to a new skill trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
@@ -2842,12 +2842,12 @@ Starting at 3rd level, you have trained particularly with a particular weapon pr
 **Two-handed (Melee only).** You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with Great Weapon Mastery.  
 
 ### Ability Score Improvement
-When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores by 1 each. As normal, you can't increase an ability score above 20 using this feature.
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores by 1 each. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can take a feat that you qualify for.
 
 ### Skill Tricks
-When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for. The total number and maximum tier (basic, advanced, expert, and master) of skill tricks you know is shown in the Skill Tricks column of the Armsman table.
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
 ### Extra Attack
 
@@ -2907,7 +2907,7 @@ At 3rd level when you pick this Path, choose one of the elements below. You gain
 **Lightning.** You gain resistance to lightning damage. If a creature you can see within 30 feet is targeted by an attack, you can use your reaction and spend 2 STA to teleport to an unoccupied space within 5 feet of them and become the target of the attack instead.
 
 #### Elemental Blow
-At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Raging Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is staggered until the end of your next turn. If they were already staggered, they become stunned instead. Staggered creatures cannot take reactions and make all attacks at disadvantage.
+At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Raging Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is staggered until the end of your next turn. If they were already staggered, they become stunned instead. Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action.
 
 #### Flickering Rush
 Starting at 10th level, you can spend 5 STA on your turn to teleport up to twice your speed. If you do so, you cannot move any further that turn.
@@ -2969,10 +2969,10 @@ Starting at 14th level, your speed has increased enough so that it appears you c
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 
 \page
-## War Mage
+## Warmage
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.
 
-War Mages in Noefra are most common in Auringon and Wyrmhold, although many nations have begun training their own due to the increased risk of hostilities.
+Warmages in Noefra are most common in Auringon and Wyrmhold, although many nations have begun training their own due to the increased risk of hostilities.
 
 {{classTable,wide
 ##### The Warmage
@@ -2998,7 +2998,7 @@ War Mages in Noefra are most common in Auringon and Wyrmhold, although many nati
 | 17th  | +6 | &mdash; | 17      |  15    | 6     | 4  | 3  | 3  | 2  | 1  | 1  | 1  | 1  | 1  |
 | 18th  | +6 | Assignment Feature  | 18      |  15    | 6     | 4  | 3  | 3  | 3  | 1  | 1  | 1  | 1  | 1  |
 | 19th  | +6 | Ability Score Increase, Skill Trick    | 19      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 1  | 1  | 1  |
-| 20th  | +6 | Destructive Mastery       | 20      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 2  | 1  | 1  |
+| 20th  | +6 | Siphon Mastery       | 20      |  15    | 6     | 4  | 3  | 3  | 3  | 2  | 2  | 2  | 1  | 1  |
 
 }}
 
@@ -3031,7 +3031,7 @@ Your ability with spells is why you were trained. Your spells come by memorizati
 See Spells Rules for the general rules of spellcasting and the Spells Listing for the warmage spell list.
 
 #### Cantrips
-At 1st level, you know four cantrips of your choice from the warmage spell list. You learn additional warmage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warmage table.
+At 1st level, you know three cantrips of your choice from the warmage spell list. You learn additional warmage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warmage table.
 \page
 #### Spell Slots
 The Warmage table shows how many spell slots you have to cast your warmage spells of 1st level and higher. To cast one of these warmage spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
@@ -3370,7 +3370,7 @@ ____
 - Range: 60 ft
 - Cast Time: 1 action
 - Duration: Instantaneous
-- Classes: Druid, Ranger, War Mage (Heavy Assault)
+- Classes: Druid, Ranger, Warmage (Heavy Assault)
 
 All creatures in a 10-foot radius sphere around a point you can see within range must make a Constitution saving throw. On a failed save, targets take 2d6 necrotic damage and cannot regain hit points until the start of your next turn. On a success, targets take half as much damage but no other effects. All natural plant life and CR 0 Tiny creatures wither and die without a saving throw.
 
@@ -3387,7 +3387,7 @@ ____
 - Range: 60 ft
 - Cast time: 1 bonus action
 - Duration: 1 round
-- Classes: Bounty Hunter, Fighter (Eldritch Knight), Ranger, Spellblade, Rogue (Arcane Trickster), War Mage
+- Classes: Bounty Hunter, Fighter (Eldritch Knight), Ranger, Spellblade, Rogue (Arcane Trickster), Warmage
 ____
 You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon specialization feature or some other effect), your critical hit range increases by 1 instead.
 
@@ -3400,7 +3400,7 @@ ____
 - Range: 60 ft
 - Cast time: 1 action
 - Duration: Instantaneous
-- Classes: Sorcerer, War Mage
+- Classes: Sorcerer, Warmage
 ____
 
 As you strike both palms down upon the ground, a web of flame crackles out around you and five streaks of fire rapidly snake along the ground toward up to five targets the caster can see within range. The streaks explode into a column of flame upon reaching them. Each target must make a Dexterity saving throw, taking 8d6 + 2d6 for every additional streak after the first fire damage on a failed save or half as much on a success. The fire can travel over obstacles up to 5 feet high and can only target creatures on or within 5 feet of the ground. It ignites flammable objects along its path that are not being worn or carried.
@@ -3416,7 +3416,7 @@ ____
 - Cast time: 1 action
 - Range: 60 ft
 - Duration instantaneous
-- Classes: Druid, Bounty Hunter, Ranger, Spellblade, War Mage
+- Classes: Druid, Bounty Hunter, Ranger, Spellblade, Warmage
 ____
 The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their movement is reduced to 0 until the end of their next turn. On a success, they take half damage and are not slowed.
 
@@ -3557,7 +3557,7 @@ ____
 - Cast time: 1 action
 - Range: Touch
 - Duration: Instantaneous
-- Classes: Bard, Cleric, Druid, Paladin, Ranger, War Mage (Heavy Assault)
+- Classes: Bard, Cleric, Druid, Paladin, Ranger, Warmage (Heavy Assault)
 ____
 Your touch unlocks the deep reserves inside your target. One willing creature touched can expend and roll up to two unused hit dice. For each hit die expended, they can choose one of the following
 - Regain hit points equal to the amount rolled plus their Constitution modifier.
@@ -3586,7 +3586,7 @@ ____
 - Cast time: 1 bonus action
 - Range: creature or object within 90 ft
 - Duration: Instantaneous
-- Classes: Bounty Hunter, Mechanist, Ranger, Sorcerer, War Mage, Wizard
+- Classes: Bounty Hunter, Mechanist, Ranger, Sorcerer, Warmage, Wizard
 ____
 
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so at advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.
@@ -3837,8 +3837,7 @@ You can move through opponents' spaces if they are one size larger than you. The
 
 ### Advanced Skill Tricks
 
-
-Advanced skill tricks require a +4 proficiency or level 9 characters.
+Advanced skill tricks require level 8 characters.
 
 #### Arcane Journeyman
 
@@ -3985,7 +3984,7 @@ Additionally, when you start your turn with a creature grappled, you can attempt
 ### Expert Skill Tricks
 
 
-Expert skill tricks require a +5 proficiency or level 13 characters.
+Expert skill tricks require level 12 characters.
 
 #### Blindfighter
 
@@ -3997,7 +3996,7 @@ Invisible or unseen enemies no longer have advantage to hit you. In addition, yo
 
 *Charisma (Intimidation) Expert Skill Trick*
 
-This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken (surrendering or fleeing) on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
+This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw. Creatures targeted become frightened of you. On a failed save, the frightened state lasts for 1 minute. On a success, it last until the end of their next turn. You can choose when you use this ability whether creatures that fail their save must use their movement to move away from you or whether their movement speed is reduced to zero while frightened. Creatures that failed the saving throw can re-attempt the saving throw at the end of each of their turns, ending the effect on a success.
 
 #### Comprehend Dweomer
 
@@ -4042,7 +4041,7 @@ When you are hidden, you no longer need to be concealed to remain hidden, but yo
 You can no longer be grappled or restrained by spells under 6th level or by non-legendary creatures.
 
 ### Master Skill Tricks
-Master skill tricks require a +6 proficiency or level 17 characters. These are powerful, supernatural effects. 
+Master skill tricks require level 16 characters. These are powerful, supernatural effects. 
 #### Balance on Thin Air
 
 *Dexterity (Acrobatics) Master Skill Trick*
@@ -4984,6 +4983,13 @@ Choose one creature. It must remain in the circle for the duration of the caster
 The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.  
 **Creature into Object.** If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 
+\page
+# Appendix: New Conditions
+## Staggered
+Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action.
+
+## Shaken
+Shaken creatures cannot take reactions and make attacks at disadvantage.
 
 \page
 

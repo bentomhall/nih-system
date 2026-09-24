@@ -2270,7 +2270,7 @@ The air around a creature you can see within range takes on the aspect of ice. T
 
 When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 \page
-# War Mage
+# Warmage
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.
 
 {{classTable,wide

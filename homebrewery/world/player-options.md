@@ -292,7 +292,7 @@ At level 18, you've learned to channel the dying energies of foes into healing f
 \page
 
 ## Barbarian
-The barbarian archetype is common throughout Noefra, and not only (not even predominantly) among the "uncivilized" tribes. It's said that the origin of the iconic rage was developed by watching pre-cataclysm orcs tap into primal (but demon-tainted) power through their bloodline curse of blood-lust and anger. [_That's a story I don't believe. People have been getting angry and gaining power from it for a long time. End of the 2nd Age at the most recent. --IB_] Whatever the origin, the orcs of the Fiach Wood (and those of Wyrmhold) are most associated in the common mind with barbarians. Barbarians draw on the primal aether of the Mortal world , often through their emotions. They draw that aether into themselves to reinforce their bodies and souls. While anger (ie rage) is one of the easiest emotions to do this with, many barbarians wield other emotions. Their minds remain clear. Some, in fact, treat this as an entirely intellectual exercise as they become the primal embodiment of the blade.
+The barbarian archetype is common throughout Noefra, and not only (not even predominantly) among the "uncivilized" tribes. It's said that the origin of the iconic rage was developed by watching pre-cataclysm orcs tap into primal (but demon-tainted) power through their bloodline curse of blood-lust and anger. [_That's a story I don't believe. People have been getting angry and gaining power from it for a long time. End of the 2nd Age at the most recent. --IB_] Whatever the origin, the orcs of the Fiach Wood (and those of Wyrmhold) are most associated in the common mind with barbarians. Barbarians draw on the primal aether of the Mortal world, often through their emotions. They draw that aether into themselves to reinforce their bodies and souls. While anger (ie rage) is one of the easiest emotions to do this with, many barbarians wield other emotions. Their minds remain clear. Some, in fact, treat this as an entirely intellectual exercise as they become the primal embodiment of the blade.
 
 Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two (barbarian and warden) shouldn't be played in the same party.
 
@@ -311,7 +311,7 @@ Starting at 3rd level, when you make a ranged attack with a thrown weapon, the s
 Starting at 3rd level, when you hit with a weapon attack or an unarmed attack, you can choose to infuse it with extra electricity. When you do so, the attack deals 2d6 extra lightning damage and the target must make a Constitution saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, the target is stunned until the end of your next turn. If the triggering attack was a critical hit, the target automatically fails the saving throw. Once you use this ability, you cannot do so again until you finish a short or long rest.
 
 #### Implacable
-Starting at 6th level, you have gained a measure of implacability. No one cannot stand against an oncoming storm or against your raging advance. You gain the following benefits.
+Starting at 6th level, you have gained a measure of implacability. No one can stand against an oncoming storm or against your raging advance. You gain the following benefits.
 
 - When you are grappled or restrained by an ability that requires a check to escape, you can do so once per turn without expending an action. Additionally, you have advantage on Strength (Athletics) checks made to impose a grapple.
 - When you take the Dash action, you add movement equal to twice your speed instead of only equal to your speed. Additionally, when you take the Dash action, move at least 10 feet, and end your movement within reach of a creature, you can immediately make an unarmed attack against them as part of that action.
@@ -327,8 +327,8 @@ Starting at 10th level, the lightning courses through your blood. You gain the f
 #### Havoc
 Starting at 14th level, your rage carries with it primal lightning and thunder. You gain the following benefits:
 
-- You now have 2 charges of Amplification per short rest instead of one.
-- While you are raging, you can use an action to stomp the ground, creating a shocking web of lightning. All creatures of your choice within 30 feet  must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they take 8d8 lightning damage and are knocked prone and restrained by bands of lightning. On a success, they take half as much damage and are only knocked prone (not restrained). Restrained creatures take 2d8 lightning damage at the beginning of each of their turn and can attempt the saving throw again at the end of each of their turns, ending the effect on a success. Once you use this feature, you cannot do so again until you finish a short or long rest.
+- You can use Amplification twice before needing to complete a short or long rest to use it again.
+- While you are raging, you can use an action to stomp the ground, creating a shocking web of lightning. All creatures of your choice within 30 feet  must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they take 8d8 lightning damage and are knocked prone and restrained by bands of lightning. On a success, they take half as much damage and are only knocked prone (not restrained). Restrained creatures take 2d8 lightning damage at the beginning of each of their turns and can attempt the saving throw again at the end of each of their turns, ending the effect on a success. Once you use this feature, you cannot do so again until you finish a short or long rest.
 
 \page
 ### Path of the Whirling Blade
@@ -343,13 +343,13 @@ Level  | Shaping Die |
 :----|:----:
 3 | d6
 6 | d8
-10 | d8
-14 | d10
+10 | d10
+14 | d12
 
 }}
 
 #### Shaping Dice
-You have 4 shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The the size of each die increases with level as shown on the Whirling Blade table.
+You have 4 shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The size of each die increases with level as shown on the Whirling Blade table.
 
 #### Aetheric Weapons
 Starting when you choose this archetype at level 3, you can manifest aetheric blades from one or both of your hands as a bonus action. These glittering blue swords count as magical light melee weapons with the thrown (60/120) property. Their damage die is equal to your shaping die and they deal your choice of slashing or piercing damage. When you throw one of them as an attack, it reappears instantly in your hands after the attack completes, hit or miss.
@@ -357,15 +357,15 @@ Starting when you choose this archetype at level 3, you can manifest aetheric bl
 Additionally, you can choose to meld with up to two one-handed magical weapons you are touching at the end of a long rest. While bonded, the weapons disappear and any magical properties they possess are replicated on your aetheric blades.
 
 #### Blade Dance
-You gain the two-weapon fighting style (allowing you to add your ability modifier to the damage dealt when using two-weapon fighting). When you hit with your aetheric blades, you can spend a shaping die to increase the damage done by the amount rolled.
+At 3rd level you gain the two-weapon fighting style (allowing you to add your ability modifier to the damage dealt when using two-weapon fighting). When you hit with your aetheric blades, you can spend a shaping die to increase the damage done by the amount rolled.
 
 Additionally, you make the extra attack from wielding two light weapons as part of the Attack action instead of a bonus action. You can still only make this extra attack once per turn.
 
 #### Blurred Step
-Starting at level 6, while enraged, you can use your reaction to move up to your speed toward anyone who attacked you or cast a spell with you as a target. This movement does not provoke opportunity attacks if you expend a shaping die as part of the reaction.
+Starting at level 6, while raging, you can use your reaction to move up to your speed toward anyone who attacked you or cast a spell with you as a target. This movement does not provoke opportunity attacks if you expend a shaping die as part of the reaction.
 \column
 #### Shielding Tempest
-Starting at 10th level, you can expend a shaping die when you are targeted by a ranged attack. If you do so, make an attack roll against the attacker's AC. On a hit, you suffer no ill effects from the attack and the attacker instead takes the normal damage of the attack + the amount you rolled on your shaping die. You can only use this once per turn.
+Starting at 10th level, you can expend a shaping die when you are targeted by a ranged attack. If you do so, make an attack with your wielded weapon or with an unarmed strike if not wielding a weapon against the attacker's AC. On a hit, you suffer no ill effects from the attack and the attacker instead takes the normal damage of the attack + the amount you rolled on your shaping die. You can only use this once per turn.
 
 #### Warp Strike
 Starting at 14th level, when you make a thrown attack with your aetheric blade and hit, you can choose to teleport next to the target.
@@ -375,7 +375,7 @@ Beholden gain power by cheating. Unlike the wizard who studies and meditates or 
 
 {{note
 #### Compatibility
-This is a variant warlock. As such, it should not be played in a party with a regular warlock. The goal is to move toward the 3e version, with most things tied up in class features: eldritch blast + blast shapes + essences. Spellcasting will come only via invocations that grant the ability to grab specific spells off of specific full-caster lists. Uses spell points by default.
+This is a variant warlock. As such, it should not be played in a party with a regular warlock. The goal is to move toward the 3e version, with most things tied up in class features: Eldritch Blast + blast shapes + essences. Spellcasting will come only via invocations that grant the ability to grab specific spells off of specific full-caster lists. Uses spell points by default.
 }}
 ### Class Features
 
@@ -397,16 +397,16 @@ As a beholden, you gain the following class features.
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) a light crossbow or (b) any simple weapon
-- (a) a component pouch an arcane focus or (b) an arcane focus
+- (a) a component pouch or (b) an arcane focus
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - Leather armor, any simple weapon, and two daggers
 
 {{classTable,wide
 #### The Beholden
-Level  | Proficiency  | Features  | Cantrips  | Blast    | Blast    | Invocations  | Spell   | Limit  |
-      ^| Bonus       ^|          ^| Known    ^| Effects ^| Shapes  ^| Known       ^| Points ^|        |
+Level  | Proficiency  | Features  | Cantrips  | Blast    | Blast    | Invocations  | Spell   | Point  |
+      ^| Bonus       ^|          ^| Known    ^| Effects ^| Shapes  ^| Known       ^| Points ^| Limit ^|
 :----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:
-1  | +2 | Magical Deflection, Eldritch Blast, Otherworldly Patron | 2 | &mdash; | &mdash; | &mdash; | 4  | 2  |
+1  | +2 | Magical Deflection, Eldritch Blast, Otherworldly Patron, Spellcasting | 2 | &mdash; | &mdash; | &mdash; | 4  | 2  |
 2  | +2 | Eldritch Invocations, Blast Effects                     | 2 | 1       | &mdash; | 2       | 6  | 2  |
 3  | +2 | Pact Boon                                               | 3 | 1       | &mdash; | 3       | 14 | 3  |
 4  | +2 | Ability Score Improvement, Skill Tricks (1/basic)       | 3 | 2       | &mdash; | 3       | 17 | 3  |
@@ -430,7 +430,7 @@ Level  | Proficiency  | Features  | Cantrips  | Blast    | Blast    | Invocation
 }}
 \page
 ### Eldritch Blast
-The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "eldritch blast".
+The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "Eldritch Blast".
 
 At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a ranged spell attack, using Charisma as the ability score. On a hit, the bolt deals 1d12 + your Charisma modifier bludgeoning or piercing (your choice) damage to the target. This damage increases by 1d12 at level 5, 11, and 17. This counts as casting a cantrip and the damage is magical for the purpose of overcoming resistance or immunity.
 
@@ -438,10 +438,10 @@ At its most basic, as an action on your turn you can shoot a bolt of raw kinetic
 At 1st level, you have struck a bargain with an otherworldly being of your choice and formed a pact that is shaped by their attitudes and desires for you: Pact of Destruction, Pact of Protection, or Pact of Inquiry, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
 
 ### Spellcasting
-Beholden are not traditional spellcasters. They do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via incantations and other means, and do learn cantrips.
+Beholden are not traditional spellcasters. They do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via invocations and other means, and do learn cantrips.
 
 #### Cantrips
-You know two cantrips of your choice from any list. You learn additional beholden cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Beholden table.
+You know two cantrips of your choice from any list. You learn additional cantrips of your choice from any list at higher levels, as shown in the Cantrips Known column of the Beholden table.
 
 #### Spellcasting Ability
 Charisma is your spellcasting ability for your beholden spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a beholden spell you cast and when making an attack roll with one.  
@@ -449,7 +449,7 @@ Charisma is your spellcasting ability for your beholden spells, so you use your 
 **Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 #### Spell Points
-All of your magical effects rely on spending spell points (SP). At first level, you have 4 spell points and gain more as shown on the Spell Points column of the Beholden table. Features such as blast effects and invocations may specify a cost. You can never spend more spell points in a single action than is specified in the Point Limit column of the Beholden table, whether that is to emulate a spell by creating spell slots, enhancing your eldritch blast, or in any other way.
+All of your magical effects rely on spending spell points (SP). At first level, you have 4 spell points and gain more as shown on the Spell Points column of the Beholden table. Features such as blast effects and invocations may specify a cost. You can never spend more spell points in a single action than is specified in the Point Limit column of the Beholden table, whether that is to emulate a spell by creating spell slots, enhancing your Eldritch Blast, or in any other way.
 
 You regain all expended spell points when you finish a long rest.
 
@@ -469,19 +469,19 @@ Spend ... SP | To cast a spell of ... level | Minimum beholden level
 
 }}
 
-When you expend spell points to modify your eldritch blast (ie via blast shapes and blast effects), the total amount of spell points spent relates to the blast's effective spell level using the conversion in the table above.
+When you expend spell points to modify your Eldritch Blast (ie via blast shapes and blast effects), the total amount of spell points spent relates to the blast's effective spell level using the conversion in the table above.
 
-Note that you cannot create spell slots of 6th or higher level and thus cannot cast spells of those levels, whether upcast or not, normally. To cast such spells, you need to use your Mystic Arcanum feature. Those table rows exist to relate to eldritch blast effective levels.
+Note that you cannot create spell slots of 6th or higher level and thus cannot cast spells of those levels, whether upcast or not, normally. To cast such spells, you need to use your Mystic Arcanum feature. Those table rows exist to relate to Eldritch Blast effective levels.
 
 ### Magical Deflection
-When you are the target of an attack, you can use 1 spell point and your reaction to attempt to deflect it with a barrier of kinetic energy. Add your proficiency bonus to your armor class against the triggering attack. If this causes the attack to miss, you can use either your eldritch Blast or a melee weapon you are wielding (if the attacker is in your reach) to make an attack against your attacker, dealing normal damage on a success. You cannot add any blast shapes or effects to this attack. 
+When you are the target of an attack, you can use 1 spell point and your reaction to attempt to deflect it with a barrier of kinetic energy. Add your proficiency bonus to your armor class against the triggering attack. If this causes the attack to miss, you can use either your Eldritch Blast or a melee weapon you are wielding (if the attacker is in your reach) to make an attack against your attacker, dealing normal damage on a hit. You cannot add any blast shapes or effects to this attack. 
 
 Alternatively, you can spend 1 spell point and your reaction to negate the damage from the *magic missile* spell.
 \page
 ### Blast Effects
-At 2nd level, you have learned to add additional effects to your eldritch blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your eldritch blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise. You cannot learn any effects labeled as Greater until level 7.
+At 2nd level, you have learned to add additional effects to your Eldritch Blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your Eldritch Blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of Eldritch Blast unless the effect says otherwise. You cannot learn any effects labeled as greater until level 7.
 
-Starting at level 7, you can learn Blast Effects labeled as Greater and the cost of non-greater blast effects is reduced by 1 to a minimum of 0.
+Starting at level 7, you can learn Blast Effects labeled as greater and the cost of non-greater blast effects is reduced by 1 to a minimum of 0. For blast effects that allow spending one or more spell points, you gain the effect of spending one point for free; increasing the effect costs one per additional level of effect. This still must obey the single effect per use condition.
 
 ### Eldritch Invocations
 In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain Beholden levels, you gain additional invocations of your choice, as shown in the Invocations column of the Beholden table.
@@ -491,20 +491,20 @@ Additionally, when you gain a level in this class, you can choose one of the inv
 ### Pact Boon
 At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.
 
-#### Pact of the Chain
+#### Chainbound Familiar
 You can cast *find familiar* as a Ritual, and can choose the additional shapes of an imp, sprite, or gazer.
 
 When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.
 
-#### Pact of the Blade
-You can use your eldritch blast to create a magical weapon of solidified aether in your hand. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You can use your Charisma as the ability modifier for attacks, but you add your Strength modifier (or Dexterity for finesse weapons if you choose) to the damage as usual. You can apply blast effects to it by expending spell points as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your eldritch blast damage instead of the normal weapon damage if this would be greater.
+#### Boon-blade
+You can use your Eldritch Blast as a bonus action to create a magical weapon of solidified aether in your hand, called your boon blade. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You can use your Charisma as the ability modifier for attacks, but you add your Strength modifier (or Dexterity for finesse weapons if you choose) to the damage as usual. You can apply blast effects to it by expending spell points as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your Eldritch Blast damage instead of the normal weapon damage if this would be greater.
 
-Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
+Your boon blade disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
 
-You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extra-dimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
+You can transform one magic weapon into your boon blade by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extra-dimensional space, and it appears whenever you create your boon blade thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your boon blade if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
 
-#### Pact of the Tome
-Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one first level spell from any list. While the book is on your person, you can cast those cantrips at will and cast the spell by expending the requisite amount of spell points. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that costs less than your spell point limit.
+#### Eldritch Tome
+Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one first level spell from any list. While the book is on your person, you can cast those cantrips at will and cast the spell by expending the requisite amount of spell points. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that does not exceed your spell point limit.
 
 If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.
 
@@ -517,9 +517,9 @@ Alternatively, you can take a feat that you qualify for.
 When you gain an Ability Score Improvement, you can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See Skill Tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 \page
 ### Blast Shapes
-When you reach 5th level, you learn to modify the shape of your eldritch blast in various ways. You learn one Blast Shape (detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level. You cannot learn Greater blast shapes until level 9.
+When you reach 5th level, you learn to modify the shape of your Eldritch Blast in various ways. You learn one Blast Shape (detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your Eldritch Blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level. You cannot learn greater blast shapes until level 9.
 
-Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 to a minimum of 0.
+Starting at level 9, you can learn greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 to a minimum of 0.
 
 ### Mystic Arcanum
 At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th level spell from any list as this arcanum. It becomes a Beholden spell for you and uses Charisma as its spellcasting ability.
@@ -551,7 +551,7 @@ You can cast speak with beasts at will without expending spell points or materia
 You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills and is of a level you qualify for.
 
 #### Book of Ancient Secrets
-Prerequisite: Pact of the Tome feature
+Prerequisite: Eldritch Tome feature
 
 You learn two common incantations (see Incantations for details) of your choice and can perform them without needing a Ritual Scroll in hand.
 
@@ -566,7 +566,7 @@ Prerequisite: 7th level
 You can cast *confusion* once without using spell points. You can't do so again until you finish a long rest.
 
 #### Eldritch Sight
-You are continually under the effect of the detect magic spell while you are conscious. This does not require concentration, but is a magical effect equivalent to a first level spell. If dispelled or suppressed, it comes back when you finish a short or long rest.
+You are continually under the effect of the *detect magic* spell while you are conscious. This does not require concentration, but is a magical effect equivalent to a first level spell. If dispelled or suppressed, it comes back when you finish a short or long rest.
 
 #### Eyes of the Rune Keeper
 You can read all non-coded writing, and have advantage on any checks made to decipher encrypted writing.
@@ -578,9 +578,9 @@ You can cast *false life* on yourself at will, without expending spell points or
 You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
 
 #### Lifedrinker
-Prerequisite: 12th level, Pact of the Blade feature
+Prerequisite: 12th level, Boon-blade feature
 
-When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 0).
+When you hit a creature with your boon-blade, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 0).
 
 #### Mask of Many Faces
 You can cast *disguise self* at will without expending spell points.
@@ -630,14 +630,9 @@ You learn one spell from the bard, cleric, druid, sorcerer, or wizard list. You 
 You can cast *bane* once without using spell points. You can't do so again until you finish a long rest.
 
 #### Thirsting Blade
-Prerequisite: 5th level, Pact of the Blade feature
+Prerequisite: 5th level, Boon-blade feature
 
-You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn. Additional hits after the first only deal the weapon's normal damage instead of the eldritch blast damage.
-
-#### Visions of Distant Realms
-Prerequisite: 12th level
-
-You can cast *arcane eye* at will, without expending spell points.
+You can attack with your boon-blade twice, instead of once, whenever you take the Attack action on your turn. Additional hits after the first only deal the weapon's normal damage instead of the Eldritch Blast damage.
 
 #### Uncanny Skill
 Prerequisite: 4th level
@@ -646,8 +641,13 @@ You learn a skill trick that you otherwise qualify for.
 
 *Special*: You can pick this invocation multiple times, each time learning a new skill trick.
 
+#### Visions of Distant Realms
+Prerequisite: 12th level
+
+You can cast *arcane eye* at will, without expending spell points.
+
 #### Voice of the Chain Master
-Prerequisite: Pact of the Chain feature
+Prerequisite: Chainbound-familiar feature
 
 You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.
 
@@ -662,53 +662,53 @@ Prerequisite: 15th level
 You can see the true form of any shapechanger or creature concealed by illusion or shape-changing magic while the creature is within 30 feet of you and within line of sight.
 \page
 ### Blast Effects
-Each blast effect has a cost listed after the name. Applying that blast effect requires expending the listed SP cost. If the cost is listed with a + sign, you can expend additional spell points (up to your limit) to increase the effect. SP is an abbreviation for Spell Points
+Each blast effect has a cost listed after the name. Applying that blast effect requires expending the listed SP cost. If the cost is listed with a + sign, you can expend additional spell points (up to your limit) to increase the effect. SP is an abbreviation for Spell Points.
 
 #### Beckoning Blast: 1+ SP
-Targets hit by your eldritch blast are pulled 5 feet toward you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
+Targets hit by your Eldritch Blast are pulled 5 feet toward you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
 
 #### Blinding Blast: 3 SP
-Targets of your eldritch blast must make a Constitution saving throw or take the damage as necrotic damage and be blinded until the end of your next turn. On a successful saving throw, targets take half damage. This Constitution saving throw replaces the attack.
-
-#### Draining Blast: 5 SP, greater
-Your eldritch blast deals necrotic damage. Targets hit your eldritch blast take additional necrotic damage equal to your Charisma modifier and you regain hit points equal to half the necrotic damage dealt. If this affects multiple creatures, each creature takes the damage but you only heal once.
-
-#### Elemental Blast: 1 SP
-When you finish a short or long rest, choose one damage type from the following list: acid, cold, fire, lightning. When you use your eldritch blast, you can choose to deal the chosen damage type instead of bludgeoning.
-
-#### Frightening Blast: 3 SP
-Targets of your eldritch blast must make a Wisdom saving throw instead of you making an attack roll. On a failed save, they are frightened of you until the end of your next turn and take the full damage. On a successful save they take half damage as psychic damage and are not frightened.
-
-#### Hellfire Blast: 5 SP, greater
-Your eldritch blast deals fire damage. Targets hit by your eldritch blast take additional fire damage equal to twice your Charisma modifier and the same amount again at the start of their next turn. This damage pierces resistance and immunity to fire damage.
-
-#### Repelling Blast: 1+ SP
-Targets hit by your eldritch blast are pushed 5 feet away from you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
+Targets of your Eldritch Blast must make a Constitution saving throw or take the damage as necrotic damage and be blinded until the end of your next turn. On a successful saving throw, targets take half damage. This Constitution saving throw replaces the attack.
 
 #### Clinging Lightning Blast: 5 SP, greater
-Your eldritch blast deals lightning damage and deals additional damage equal to twice your Charisma modifier, and requires a Dexterity saving throw instead of an attack roll. On a failed save, targets take the full damage and are paralyzed until the end of your next turn. On a successful save, targets take half damage and are not paralyzed.
+Your Eldritch Blast deals lightning damage and deals additional damage equal to twice your Charisma modifier, and requires a Dexterity saving throw instead of an attack roll. On a failed save, targets take the full damage and are paralyzed until the end of your next turn. On a successful save, targets take half damage and are not paralyzed.
+
+#### Draining Blast: 5 SP, greater
+Your Eldritch Blast deals necrotic damage. Targets hit by your Eldritch Blast take additional necrotic damage equal to your Charisma modifier and you regain hit points equal to half the necrotic damage dealt. If this affects multiple creatures, each creature takes the damage but you only heal once.
+
+#### Elemental Blast: 1 SP
+When you finish a short or long rest, choose one damage type from the following list: acid, cold, fire, lightning. When you use your Eldritch Blast, you can choose to deal the chosen damage type instead of its normal type.
+
+#### Frightening Blast: 3 SP
+Your Eldrich Blast deals psychic damage. Targets of your Eldritch Blast must make a Wisdom saving throw instead of you making an attack roll. On a failed save, they are frightened of you until the end of your next turn and take the full damage. On a successful save they take half damage and are not frightened.
+
+#### Hellfire Blast: 5 SP, greater
+Your Eldritch Blast deals fire damage. Targets hit by your Eldritch Blast take additional fire damage equal to twice your Charisma modifier and the same amount again at the start of their next turn. This damage pierces resistance and immunity to fire damage.
+
+#### Repelling Blast: 1+ SP
+Targets hit by your Eldritch Blast are pushed 5 feet away from you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
 
 ### Blast Shapes
-Blast shapes alter the form of the eldritch blast and may alter it from a spell attack to a saving throw. As above, SP is an abbreviation for Spell Points.
+Blast shapes alter the form of the Eldritch Blast and may alter it from a spell attack to a saving throw. As above, SP is an abbreviation for Spell Points.
 
 #### Eldritch Arc: 3 SP
-When you use your eldritch blast, you can instead choose to make it take the shape of a circular arc with a 10 ft radius centered on you. All creatures within the area must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
+When you use your Eldritch Blast, you can instead choose to affect all creatures within 10 feet of you. Targets must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
 #### Eldritch Claws: 1 SP
-Make an unarmed attack using Charisma as your weapon attack modifier. On a hit, add your eldritch blast damage to the normal unarmed damage. This counts as slashing damage from a magical weapon.
+When you activate this shape and use your Eldritch Blast, you make a melee weapon attack using Charisma as your weapon attack modifier instead of a ranged spell attack. On a hit, add your Eldritch Blast damage to the normal unarmed damage. This counts as slashing damage from a magical weapon.
 
 #### Eldritch Cone: 4 SP, greater
-When you use your eldritch blast, you can instead choose to make it take the shape of a 30 ft cone. All creatures in the area must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
+When you use your Eldritch Blast, you can instead choose to make it take the shape of a 30 ft cone. All creatures in the area must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
 #### Eldritch Spear: 1 SP
-The range of your eldritch blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets or from having enemies within 5 feet.
+The range of your Eldritch Blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets or from having enemies within 5 feet.
 
 #### Eldritch Sphere: 6 SP, greater
-When you use your eldritch blast, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within the spells' normal range. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the eldritch blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
+When you use your Eldritch Blast, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within range of your Eldritch Blast. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
 \page
 
 #### Split Bolts: 2 SP
-When you use your eldritch blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 plus your charisma modifier damage of the appropriate type. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
+When you use your Eldritch Blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 plus your charisma modifier damage of the appropriate type. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
 
 ## Otherworldly Patrons
 The beings that serve as patrons for beholden are mighty inhabitants of other planes of existence—not necessarily gods, but almost godlike in their power. Various patrons give their beholden access to different powers and invocations, and expect significant favors in return. Some gods choose both beholden and clerics--the two serve different purposes and often do not see eye to eye.
@@ -727,7 +727,7 @@ If a beholden falls out of favor with their patron, DMs may decide that the beho
 Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.
 \column
 #### Pact Spells
-The Pact of Destruction grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using spell points.
+The Pact of Destruction grants some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using spell points.
 
 Beholden Level|Spells
 :----|:----:
@@ -735,7 +735,7 @@ Beholden Level|Spells
 3rd|Flaming sphere, ray of enfeeblement
 5th|Dispel magic, vampiric touch
 7th|Black tentacles, wall of fire
-9th|cloudkill, dispel evil and good
+9th|Cloudkill, dispel evil and good
 
 #### Destroyer's Blessing
 Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your beholden level (minimum of 1).
@@ -750,13 +750,13 @@ Starting at 6th level, you learn an additional Blast Effect that does not count 
 Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature.
 
 #### Retribution
-Starting at 14th level, when you take damage from an attack or ability, you can use your reaction to force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your eldritch blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again). Once you use this ability, you cannot do so again until you finish a short or long rest.
+Starting at 14th level, when you take damage from an attack or ability from a creature you can see, you can use your reaction to force the triggering creature to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your Eldritch Blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again). Once you use this ability, you cannot do so again until you finish a short or long rest.
 \page
 ### Pact of Inquiry
 Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge; the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
 
 #### Pact Spells
-The Pact of Inquiry grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
+The Pact of Inquiry grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
 Beholden Level|Spells
 :----|:----:
@@ -767,7 +767,7 @@ Beholden Level|Spells
 9th|Contact Other Plane, Mislead 
 
 #### Deceptive Charm
-When a creature you can see targets you with an attack or an ability that causes damage, you can spend your reaction to force them to make a Charisma saving throw against your spell save DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to charm. You can use this feature a number of times equal to your Charisma modifier, regaining expended uses when you finish a short or long rest.
+Starting at 1st level, when a creature you can see targets you with an attack or an ability that causes damage, you can spend your reaction to force them to make a Charisma saving throw against your spell save DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to being charmed. You can use this feature a number of times equal to your Charisma modifier (minimum once), regaining expended uses when you finish a short or long rest.
 
 #### Eldritch Interrogation
 At 6th level you learn the Whispers of the Grave invocation. It does not count against your normal limit of Invocations known. When you target a corpse with this invocation, the corpse is required to speak truthfully and answer the questions to the best of its ability even if it recognizes you as an enemy.
@@ -775,7 +775,7 @@ At 6th level you learn the Whispers of the Grave invocation. It does not count a
 If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.
 \column
 #### Psychometry
-Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from".
+Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from?".
 
 A ghostly scene unfolds around you, centered on the object. It includes up to 10 minutes before and after the event in question. You can walk around this scene, which is visible to everyone within sight of it. At your discretion (no action required), you can pause the scene, rewind the action, or fast forward it. You can dismiss the scene as an action; if you do not, it fades 30 minutes after it was created, even if paused the whole time.
 
@@ -784,13 +784,13 @@ This counts as divination magic, so creatures under the effect of mind blank and
 Once you use this ability you must finish a long rest before you can use it again.
 
 #### Legendary Effect: Mind Blank
-At 14th level, you learn the *mind blank* spell and can use it once per long rest. In addition, it provides immunity to psychic damage. If you already know this spell via Mystic Arcanum, you can use that arcanum twice instead of once per long rest and the additional effect applies.
+At 14th level, you learn the *mind blank* spell and can use it once per long rest. If you already know this spell via Mystic Arcanum, you can use that arcanum twice instead of once per long rest and the additional effect applies.
 \page
 ### Pact of Protection
-Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), arch fey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
+Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), arch fey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently&mdash;even the demon cults have protectors and defenders.
 
 #### Pact Spells
-The Pact of Protection grants some particular spells to its beholden at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
+The Pact of Protection grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
 Beholden Level|Spells
 :----|:----:
@@ -801,11 +801,11 @@ Beholden Level|Spells
 9th|Mass cure wounds, wall of stone
 
 #### Steadfast Protection
-When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
+Starting at 1st level, when a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did (after applying resistances or immunities). You can still apply any of your applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
 
 #### Eldritch Shield
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known Blast Effects:  
-**Eldritch Shield: 1+ SP** When you hit a target with your eldritch blast, you can choose one creature other than yourself per SP spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma modifier + your proficiency.
+**Eldritch Shield: 1+ SP** When you hit a target with your Eldritch Blast, you can choose one creature other than yourself per SP spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma modifier + your proficiency bonus.
 
 #### Aether Ward
 Starting at 10th level, you can call on your patron to shield allies from magical abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw with advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
@@ -813,7 +813,7 @@ Starting at 10th level, you can call on your patron to shield allies from magica
 Once you use this feature, you can't use it again until you finish a short or long rest.
 \column
 #### Legendary Effect: Globe of Invulnerability
-At 14th level, you learn the *globe of invulnerability* spell and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
+At 14th level, you learn the *globe of invulnerability* spell and can use it once per long rest. Unlike the normal effect, it targets one willing creature of your choice within 30 ft. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
 
 \page
 ## Bounty Hunter
@@ -840,7 +840,7 @@ As a bounty hunter, you gain the following class features.
 #### Proficiencies
 **Armor:** Light armor, medium armor, shields  
 **Weapons:** Simple weapons, martial weapons  
-**Tools:** Woodcarvers or leatherworker's tools  
+**Tools:** Woodcarver's or leatherworker's tools  
 **Saving Throws:** Strength, Dexterity  
 **Skills:** Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
 
@@ -863,7 +863,7 @@ Level  | Proficiency  | Features  | Focused  | Stamina  | Spell Points  | Max Sp
 3 | +2 | Bounty Hunter Archetype, Primeval Awareness | d4 | 3 | 4 | 1
 4 | +2 | Ability Score Improvement, Skill Tricks | d4 | 4 | 6 | 1
 5 | +3 | Extra Attack | d6 | 5 | 6 | 1
-6 | +3 | Focused Foe and Natural Explorer Improvements | d6 | 6 | 14 | 2
+6 | +3 | Natural Explorer Improvement | d6 | 6 | 14 | 2
 7 | +3 | Bounty Hunter Archetype Feature | d6 | 7 | 14 | 2
 8 | +3 | Ability Score Improvement, Land's Stride | d6 | 8 | 17 | 2
 9 | +4 | Aether Strike | d6 | 9 | 17 | 2
@@ -871,7 +871,7 @@ Level  | Proficiency  | Features  | Focused  | Stamina  | Spell Points  | Max Sp
 11 | +4 | Bounty Hunter Archetype Feature | d8 | 11 | 27 | 3
 12 | +4 | Ability Score Improvement | d8 | 11 | 32 | 3
 13 | +5 | – | d8 | 12 | 32 | 3
-14 | +5 | Focused Foe Improvement, Vanish | d8 | 12 | 38 | 4
+14 | +5 | Vanish | d8 | 12 | 38 | 4
 15 | +5 | Bounty Hunter Archetype Feature | d8 | 13 | 38 | 4
 16 | +5 | Ability Score Improvement | d8 | 13 | 44 | 4
 17 | +6 | – | d8 | 14 | 44 | 4
@@ -887,7 +887,7 @@ As a bounty hunter, you have a pool of energy called stamina you can use to fuel
 ### Focused Foe
 Bounty hunters have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe Die (originally a d4) once per turn when you hit them with an attack.
 
-Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them.
+Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them as long as they are on the same plane of existence.
 
 ### Natural Explorer
 You are particularly familiar with one type of environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, underground, or urban. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
@@ -905,13 +905,13 @@ While traveling in your favored terrain, you gain the following benefits:
 You choose additional favored terrain types at 6th and 10th level.
 \column
 ### Weapon Specialization
-You are better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn--this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
+Starting at 2nd level, you have become better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn--this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
 
 **Battering** (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Dexterity modifier unless the d20 result was a 1.  
 **Cleaving** (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
 **Light** The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.  
 **Loading** You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to zero hit points, you can choose to have the bolt pass through the target at a creature behind the slain creature by spending 1 STA. The closest creature on a 5 foot wide line connecting you to the slain creature and extending 30 feet  behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.  
-**Parrying** (greatsword, halberd, longsword) While wielding a parrying weapon and are the target of an attack from a source you can see, you can use your reaction to increase your armor class against the triggering attack by your proficiency bonus, potentially causing the attack to miss.  
+**Parrying** (greatsword, halberd, longsword) When you are the target of an attack from a source you can see while wielding a parrying weapon, you can use your reaction to increase your armor class against the triggering attack by your proficiency bonus, potentially causing the attack to miss.  
 **Precise** (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on a 19 or 20.  
 **Thrown** You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.  
 **Two-handed** While wielding a two-handed weapon, you can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
@@ -922,7 +922,7 @@ By the time you reach 2nd level, you have learned to befriend the kami, teaching
 #### Preparing and Casting Spells
 The Bounty hunter table shows how many spell points you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend spell points equal to its cost or greater (effectively casting it from a higher level slot). You regain all expended spell points when you finish a long rest.
 
-You can prepare a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can learn from that list when you finish a long rest. You cannot prepare any spell with a level higher than the maximum spell level entry in the bounty hunter table for your level.
+You learn a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can prepare from that list when you finish a long rest. You cannot learn any spell with a level higher than the Max Spell Level for your level (summarized below).
 
 Spell Points | Spell Level | Class Level
 :----|:----:|:----:
@@ -938,10 +938,10 @@ Wisdom is your spellcasting ability for your bounty hunter spells, since your ma
 **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 #### Aether Limit
-When you expend spell points, you cannot expend more than your spell point limit, which is equal to the spell point cost of the highest spell level you can prepare (the tier # of the spell + the spell level).
+When you expend spell points on spell or ability, you cannot expend more than your spell point limit, which is equal to the spell point cost of the highest spell level you can prepare (the tier # of the spell + the spell level).
 
 ### Bounty Hunter Archetype
-At 3rd level, you choose an archetype that you strive to emulate: Manhunter or Monster Slayer, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
+At 3rd level, you choose an archetype that you strive to emulate: Manhunter, Monster Slayer or Primal Guardian, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 \column
 ### Primeval Awareness
 Beginning at 3rd level, you can use your action to focus your awareness on the region around you. For a number of minutes equal to your proficiency bonus, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature reveals the direction and approximate distance (very near, near, far, very far) as well as a general sense of the number (solitary, a group, a horde) of each distinct cluster of creatures detected. Once you use this feature, one hour must pass before you can use it again.
@@ -955,7 +955,7 @@ Alternatively, if your GM allows, you can pick a feat that you qualify for.
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
 ### Extra Attack
-Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 2 STA when you hit with an attack to deal your Favored Foe damage an additional time per turn.
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 2 STA when you hit with your second attack from this action to deal your Favored Foe damage one additional time per turn.
 
 ### Land's Stride
 Starting at 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
@@ -963,9 +963,9 @@ Starting at 8th level, moving through difficult terrain costs you no extra movem
 In addition, you have advantage on saving throws against spells or abilities that would impede your movement, such as the entangle spell.
 \page
 ### Aether Strike
-Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 3 or more spell points and choose a number of targets equal to half the amount of spell points spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.  
-**Melee weapon** You teleport from target to target in an order you choose, moving no more than twice your speed in each jump. As you briefly appear next to each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.  
-**Ranged Weapon** Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack. Either before the first attack or after the last attack you may teleport to an unoccupied location you can see within a distance of twice your speed.
+Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 3 or more spell points and choose a number of targets equal to one plus half the amount of spell points spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.  
+**Melee weapon** You teleport from target to target in an order you choose as long as the distance between each occupied space is not greater than your speed and you have unoccupied spaces to occupy within your reach of each target. As you briefly appear within reach of each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.  
+**Ranged Weapon** Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack until the end of their next turn. Either before the first attack or after the last attack you may teleport to an unoccupied location you can see within a distance of twice your speed.
 
 ### Vanish
 Starting at 14th level, you can use the Hide action as a bonus action on your turn. If you expend 2 STA while doing so, you become invisible until you attack or cast a spell.
@@ -978,7 +978,7 @@ At 18th level, you gain preternatural senses that help you fight creatures you c
 You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.
 
 ### Foe Slayer
-At 20th level, you are particularly adept at finding the weak spots of your enemies. When you attack a target you've selected as your favored foe, you can spend 5 STA and choose to target a vital spot. Make the attack as normal. If the attack hits, it is a critical hit. On a natural 20, you score a critical hit and the damage done is the maximum possible damage for that attack, including all additional damage. A natural 1 is still an automatic miss. Once you use this ability against a particular foe, you cannot use it again against that creature.
+At 20th level, you are particularly adept at finding the weak spots of your enemies. When you attack a target you've selected as your favored foe, you can spend 5 STA and choose to target a vital spot. Make the attack as normal. If the attack hits, it is a critical hit. On a natural 20, you score a critical hit and the damage done is the maximum possible damage for that attack, including all additional damage. A natural 1 is still an automatic miss. Once you use this ability against a particular foe, you cannot use it again against that creature for 24 hours.
 
 ## Bounty Hunter Archetypes
 The ideal of the bounty hunter has two classic expressions: the Manhunter and the Monster Slayer.
@@ -987,10 +987,10 @@ The ideal of the bounty hunter has two classic expressions: the Manhunter and th
 Manhunters are those who specialize in tracking down and dealing with civilization's refuse, of whatever race they may be. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable and you must find them there. A manhunter lives and dies by his reputation; it is his currency and one of his primary weapons.
 
 #### Information Gatherer
-At 3rd level, you gain proficiency in Charisma checks made to gain information. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
+At 3rd level, you can apply your proficiency to any Charisma check made to gain information, whether or not you would normally be able to. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
 
 #### Fearsome Reputation
-At 3rd level, you've begun to establish a reputation as a hunter to be feared. This lets you unsettle the minds of the weak. As a bonus action on your turn, you can spend 2 STA to attempt to intimidate a number of creatures that can see and hear you equal to your proficiency bonus. The targets must speak at least one language that you are proficient in. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, they are frightened of you for one minute. A creature who ends its turn where it cannot see you can attempt the saving throw again, ending the effect on a success. Creatures that succeed on the saving throw are immune to this ability for 24 hours.
+At 3rd level, you've begun to establish a reputation as a hunter to be feared. This lets you unsettle the minds of the weak. As a bonus action on your turn, you can spend 2 STA to attempt to intimidate a number of creatures equal to your proficiency bonus. The targets must speak at least one language that you are proficient in and be able to see and hear you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, they are frightened of you for one minute. A frightened creature who ends its turn where it cannot see you can attempt the saving throw again, ending the effect on a success. Creatures that succeed on the saving throw are immune to this ability for 24 hours.
 
 Additionally, you have advantage on Charisma (Intimidation) checks made against any creature who can see you and who speaks a language that you are proficient in.
 \page
@@ -998,7 +998,7 @@ Additionally, you have advantage on Charisma (Intimidation) checks made against 
 At 7th level, your reputation has grown strong enough to make the weak unable to act against you. When you use your Fearsome Reputation feature, choose one creature that failed the saving throw. That creature is unable to make attacks against you while frightened of you.
 
 #### Razor Dance
-At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 6 spell points (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
+At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 5 spell points (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
 
 #### Wordless Reputation
 Starting at 15th level, your reputation and the aura that surrounds you are such that you can use your Fearsome Reputation ability against any foe, whether it can understand you or not. In addition, you can choose to use Debilitating Reputation against all creatures that fail their saving throws instead of just one.
@@ -1020,7 +1020,7 @@ At 7th level, you gain the following features, but can only apply one of them pe
 
 #### Multi-attack
 At 11th level, you gain the following features.  
-**Volley.** When you use your Aether Strike ability with a ranged weapon, you can target one creature for every aether spent instead of one target per two spell points spent.  
+**Volley.** When you use your Aether Strike ability with a ranged weapon, the number of targets equals one plus the amount of spell points spent (instead of one plus half that number).  
 **Whirlwind Attack.** When you use your Aether Strike ability with a melee weapon, you can choose to perform a whirlwind attack at any point along the chain of attacks. If you do so, all creatures within your reach at that point count as targets for your Aether Strike. Make a separate attack for each one. You may only perform a single whirlwind attack per use of Aether Strike.
 
 #### Superior Hunter's Defense
@@ -1030,7 +1030,7 @@ At 15th level, you gain the following features.
 **Uncanny Dodge.** When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
 \page
 ### Primal Guardian
-Primal Guardians are the most in-tune with the spirits of nature among the ranger. While they still favor their weapons, they blend their primal magic more thoroughly into their hunts, often calling on the spirits of beasts to aid them.
+Primal Guardians are the most in-tune with the spirits of nature among the bounty hunters. While they still favor their weapons, they blend their primal magic more thoroughly into their hunts, often calling on the spirits of beasts to aid them.
 
 #### Spirit Companion
 Starting when you choose this subclass at level 3, you gain the companionship of an invisible animal spirit. It grants you several benefits, growing with you as you gain levels. Choose one of the companions below. All spirit companions increase your maximum spell points by your Wisdom modifier, increasing to twice your Wisdom modifier at 11th level.  
@@ -1042,19 +1042,19 @@ Starting when you choose this subclass at level 3, you gain the companionship of
 Starting at 7th level, you can choose an additional Spirit Companion, choosing which one is in effect at the end of a long rest. 
 
 #### Manifested Spirit
-At 7th level, you've learned to manifest your active Spirit Companion as a spectral force as an action by spending 4 spell points. It performs the listed action, which lasts until the end of your next turn.  
+At 7th level, you've learned to manifest your active Spirit Companion as a spectral force as an action by spending 3 spell points. It performs the listed action, which lasts until the end of your next turn.  
 **Hawk Manifestation.** The hawk appears as a Huge spectral beast at a point you choose within 30 feet. It does not occupy a space. It screeches, freezing the blood of your foes. All creatures of your choice within 60 feet that can see and hear the spirit must make a Wisdom saving throw against your spell save DC. On a failed save, they take 8d6 psychic damage and are incapacitated for the duration as they cower. While incapacitated, their speed is reduced to zero. When the incapacitation ends, creatures that failed their save are frightened of you until the end of their next turn. Creatures that succeed on the saving throw take half as much damage and are only frightened until the end of their next turn.  
 **Wolf Manifestation.** A spectral wolf appears at your side and then flickers and multiplies, creating a pack that appear to surround all creatures of your choice within 30 feet. When a surrounded creature moves more than 5 feet, the wolves attack. Make a melee spell attack using your Wisdom modifier against the creature. On a hit, the creature takes 4d10 psychic damage and their speed is reduced to zero until the end of their next turn. If they were casting a spell or making an attack when they triggered the wolves, that action fails without effect.  
 **Bear Manifestation.** A Huge spectral bear appears at your side. It does not occupy its space. For the duration, all allies within 30 feet have resistance to bludgeoning, piercing, and slashing damage as the bear soaks part of each attack.
 
 #### Spirit Strike
 Starting at 11th level, when you use your Aether Strike ability, your active spirit briefly manifests.  
-**Hawk Strike.** The wings of the hawk grant you speed, increasing the number of targets to equal the amount of aether spent (instead of half that number).  
+**Hawk Strike.** The wings of the hawk grant you speed, increasing the number of targets to equal one plus the amount of spell points spent (instead of one plus half that number).  
 **Wolf Strike.** The snapping jaws of the wolf reduce the speed of any target hit by your Aether Strike to zero until the end of your next turn. While thus immobilized, targets cannot make opportunity attacks.  
 **Bear Strike.** The crushing paws of the bear knock prone or push 10 feet (your choice) any target hit by your Aether Strike.
 
 #### Spirit Union
-Starting at 15th level, you can call on the power of all three companions. When you finish a short rest, you can expend 8 spell points. If you do so, you gain all three passive effects until you finish a short or long rest and once during that period when you use your Manifested Spirit or Spirit Strike ability, you gain all three effects. Once you use this ability, you cannot do so again until you finish a long rest.
+Starting at 15th level, you can call on the power of all three companions. When you finish a short rest, you can expend 6 spell points. If you do so, you gain all three passive effects until you finish a short or long rest and once during that period when you use your Manifested Spirit or Spirit Strike ability, you gain all three effects. Once you use this ability, you cannot do so again until you finish a long rest.
 \page
 ## Bounty Hunter Spell List
 The Bounty hunter Spell List table contains a short summary of the spells available to all Bounty hunters, ordered by aether cost. Spells marked with (*) are new and listed in the Spells section document. Spells marked with (\*\*) are subject to substantial changes from book printing, explained in the spells section.
@@ -1063,14 +1063,14 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 
 {{spellList,wide
 #### 1st level (2 SP)
-- Cure Wounds
-- Enchanted Strike(\*)
 - Bane
 - Burning Hands
+- Cure Wounds
 - Disguise Self
+- Enchanted Strike (\*)
 - Entangle
 - Faerie Fire
-- Flash Freeze(\*)
+- Flash Freeze (\*)
 - Fog Cloud
 - Grease
 - Headshot (\*)
@@ -1087,6 +1087,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Detect Thoughts
 - Find Traps (\*\*)
 - Flame Blade (\*\*)
+- Hold Person
 - Invisibility
 - Pass without Trace
 - See Invisibility
@@ -1098,10 +1099,8 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Bestow Curse
 - Call Lightning
 - Clairvoyance
-- Hold Person
 - Plant Growth
 - Summon Beast (TCoE)
-- Wall of Thorns
 - Wind Wall
 
 #### 4th level (6 SP)
@@ -2229,7 +2228,7 @@ At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an 
 ## Rogue
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a *fireball* and come out unscathed&mdash;the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.
 
-There are several Noefran organizations well-suited to a rogue's talents, from the the rump of the Benevolent Association, the organized crime ring that ruled Asai'ka from the shadows until the Red Plague, to the Hollow Knives, assassins and secret law-keepers in service to the Hollow King. The Dimwit Syndicate, headquartered in Tarad'am, is another significant criminal organization. Other rogues wear a white hat, acting as investigators, spies, and agents (governmental or private) throughout the scattered nations.
+There are several Noefran organizations well-suited to a rogue's talents, from rump of the Benevolent Association, the organized crime ring that ruled Asai'ka from the shadows until the Red Plague, to the Hollow Knives, assassins and secret law-keepers in service to the Hollow King. The Dimwit Syndicate, headquartered in Tarad'am, is another significant criminal organization. Other rogues wear a white hat, acting as investigators, spies, and agents (governmental or private) throughout the scattered nations.
 
 ### Variant Features
 The following feature is available to all rogues, with their GM's permission.
@@ -2269,7 +2268,7 @@ Magic is not always appreciated. Mortal spell-casters often believe themselves t
 This is an archetype of the Rogue class.
 
 #### Shaping Dice
-You have four shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The the size of each die increases with level as shown on the Mage Hunter.
+You have four shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The size of each die increases with level as shown on the Mage Hunter.
 
 #### Disruptive Strike
 Starting at level 3 when a creature within your reach (if wielding a melee weapon) or normal range (if wielding a ranged weapon) begins casting a spell or using a magical ability, you can use your reaction and spend a shaping die to make an attack against them with a wielded weapon. If it hits, you add the result from your shaping die to the damage dealt and the target must make a concentration check at disadvantage. On a failed check, the spell or magical ability fails and the spell slot or charge is consumed.

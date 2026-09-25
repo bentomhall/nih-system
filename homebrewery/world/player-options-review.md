@@ -30,74 +30,24 @@ These come up in several classes, so fix each one in a single pass.
 - Resilience (228): no per-rest limit and no action type stated [intentional--gated by stamina cost not per-rest limits].
 - Hold the Line (274): no range [intentional]. Skirmishing (284): "5× Charisma modifier" has no unit. Leave No One Behind (288): the ally's destination isn't specified.
 
-### Barbarian (294–372) <marker>
-- 295: stray space before a comma. 314: "No one cannot stand" (double negative). 323: "Lighting". 331: "each of their turn". 352: "The the size".
-- Whirling Blade table (344–347): 10th level repeats d8. It should probably be d10, with d12 at 14th.
-- Havoc (330) says "2 charges of Amplification", but Amplification (311) has no charges.
-- 365: "while enraged" should be "while raging".
-- Shielding Tempest (368): no reaction stated and no attack modifier. Aetheric Weapons (355): no duration. Blade Dance (360): no level, and it names the wrong fighting style.
-
 ### The Beholden (373–818)
 **Table vs. text**
-- The table header says "Limit"; the text says "Point Limit column" (452). The second header row is malformed (406–407).
-- (The Spell Point Cost Table at 458–468 is correct. See Part 1, item 4.)
-- The Spell Points column plateaus in pairs from 9th (417–418). Check whether that's intended.
-- The table omits Spellcasting (440).
-- **Pact of Inquiry lists *true seeing* at 9th (767).** It's a 6th-level spell, and 474 says the beholden can't cast 6th-level spells with SP. Swap in *legend lore* or *scrying*.
-- Deceptive Charm (770), Steadfast Protection (804) and Blade Dance (360) never state a level.
+- The Spell Points column plateaus in pairs from 9th (417–418). Check whether that's intended. [intentional]
 
 **Wording and grammar**
-- 378 "invocations" vs 441 "incantations". Incantations are a separate subsystem.
-- 441 says there's no spell list; 444 says "beholden cantrips".
-- "Pact of X" is used for both patrons and boons, so "Pact of the Blade feature" prerequisites are ambiguous.
-- 400: equipment line garbled: "a component pouch an arcane focus or (b) an arcane focus".
-- 477 "normal damage on a success" should be "on a hit". 674: "Targets hit your eldritch blast". 707: "spells' normal range". 808: "your proficiency" is missing "bonus". 778 is missing "?". 665 is missing a period.
-- 730/759/793: "its beholden" vs "your career".
-- Invocations are out of alphabetical order (637/642, 688).
-- Capitalization: "eldritch Blast" (477), "Eldritch Blast" (747), *Special* labels, "Greater/greater", "cloudkill".
-- Legendary Effects: "once per day" (816) vs "once per long rest" (787).
+- Capitalization: *Special* labels
 
 **Rules problems**
-- Cost reduction "by 1 to a minimum of 0" (484, 522) is unclear for "1+ SP" scaling effects.
-- Pact of the Tome (507): "less than" your limit vs Stolen Knowledge (627) "without exceeding" it.
-- Pact of the Blade (500): no action cost.
-- Eldritch Claws (698): its relationship to the blast attack isn't stated. Eldritch Arc (695): the shape is unclear.
-- Elemental Blast (677): "instead of bludgeoning", but the base blast is bludgeoning *or* piercing (435).
-- Frightening Blast (680) and Blinding Blast (671): the damage type is missing on one branch.
-- Clinging Lightning Blast (689): paralysis with no repeat save for 5 SP at 7th. **Balance.**
-- Minions of Chaos (596): *summon elemental* is from TCoE, not the PHB.
-- One with Shadows (609): drops "until you move". Check that's intended.
-- Destroyer's Blessing (743) / "half PB" has no rounding rule. Deceptive Charm (770) needs "(minimum 1)", and "immune to charm" should be "immune to being charmed".
-- Retribution (753): "force the caster" when the trigger includes attacks. No range.
-- Steadfast Protection (804): pre- vs post-resistance amount is unclear.
-- Legendary *mind blank* (787): the psychic immunity is already part of the spell.
-- Legendary *globe of invulnerability* (816): the spell is Self, so "target any creature within 30 ft" is undefined.
+- Clinging Lightning Blast (689): paralysis with no repeat save for 5 SP at 7th. **Balance.** [intentional: lasts until end of your next turn only, no chance for a repeat save]
+- Minions of Chaos (596): *summon elemental* is from TCoE, not the PHB. [intentional]
+- One with Shadows (609): drops "until you move". Check that's intended. [intentional]
+- Destroyer's Blessing (743) / "half PB" has no rounding rule [the default PHB rule is round down if not specified].
 
-### Bounty Hunter (819–1121)
-**Table vs. text**
-- The table has "Favored Foe and Natural Explorer Improvements" at 6th (866) and "Favored Enemy Improvement" at 14th (874). The feature is **Focused Foe**, it has no 6th or 14th improvement, and 14th has no text at all.
-- Weapon Specialization is in the table at 2nd, but the text never states a level.
-- 944/984 say two archetypes; there are three (Primal Guardian, 1032).
-- **Aether Limit (941)** conflicts with many costs:
-  - Aether Strike maxes at 2 targets at 9th.
-  - The Razor Dance example (1001) spends 6 SP at 11th against a limit of 5.
-  - Manifested Spirit (1045) costs 4 SP at 7th against a limit of 3.
-  - Spirit Union (1057) costs 8 SP at 15th against a limit of 6.
-  - State whether the limit applies to spends that aren't spells.
-- 925: says "prepare" but also swaps "known" spells. "maximum spell level entry" should be "Max Spell Level".
-- Spell list levels differ from the source: *wall of thorns* is 6th, listed 3rd; *hold person* 2nd, listed 3rd; *summon beast* 2nd, listed 3rd; *summon fey* 3rd, listed 4th; *chain lightning* 6th, listed 5th. Confirm these are intentional. The list is also unalphabetized, and "Strike(\*)" vs "Headshot (\*)" are spaced differently.
-
-**Wording**
-- "Favored Foe" (958, 1062, 981) should be Focused Foe. Volley (1023) and Hawk Strike (1052) say "aether spent" where the rest of the class says spell points.
-- 1033: "among the ranger". 843: "Woodcarvers". 990: "proficiency in Charisma checks" isn't a 5e construct.
-- 913/914/993: grammar.
-
+### Bounty Hunter (819–1121) <marker>
 **Rules problems**
-- Focused Foe (888): no range. It overlaps with Feral Senses (976).
-- Extra Attack (958): the extra Focused Foe damage has no per-turn cap.
-- Aether Strike (966–968): the teleport rules are unclear. The ranged disadvantage has no end.
-- Foe Slayer (981): "cannot use it again against that creature" forever.
-- Hunter's Prey (1013): the trigger doesn't match Horde Breaker. Defensive Tactics (1016): "one per turn" doesn't work for passive options. Superior Hunter's Defense (1027): you get all three, where the PHB gives one.
+- Focused Foe (888): no range. It overlaps with Feral Senses (976). [Feral senses is an upgrade--it affects more than just your one Focused Foe]
+- Hunter's Prey (1013): the trigger doesn't match Horde Breaker. Defensive Tactics (1016): "one per turn" doesn't work for passive options. 
+- Superior Hunter's Defense (1027): you get all three, where the PHB gives one [intentional].
 - Manifested Spirit Wolf (1045–1048): it triggers on "an action that would provoke". In 5e only movement provokes, so it never fires. Hawk: 8d6 plus incapacitated for 4 SP. **Balance.**
 - Spirit Strike Wolf (1053): "immobilized".
 

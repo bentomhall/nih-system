@@ -8,111 +8,29 @@ Read-only review. Line numbers refer to the file as of commit `0d6c50c`. Rules c
 
 These come up in several classes, so fix each one in a single pass.
 
-1. **Skill trick grants are inconsistent.**
-   - The rules (3651) say you get a trick "every time you get an Ability Score Increase". The tier gates are Basic 4 / Advanced 9 (+4 PB) / Expert 13 / Master 17 (3659, 3841, 3988, 4045).
-   - Armsman table (104–119): Advanced at 8th with no early-access clause (165), Expert 16, Master 19.
-   - Beholden table (412–427): Advanced at 12, Expert 16, Master 19.
-   - Beguiling Influence (551) uses a third scheme: Basic <7, Advanced <11, Expert <17.
-   - Bounty Hunter (955) and Planar Warrior (2032) grant a trick at 6th, but have no ASI at 6th (949, 2026).
-   - Warden (2845, 2850) grants an ASI *and* a trick at 6th. That was copy-pasted from the Armsman, and the table has no ASI at 6th.
-   - Inventor (1284–1287) and Mechanic (1565–1568) grant tricks only at 4/8/12, plus "one other skill trick" with no level given. Both classes have ASIs at 16 and 19.
-   - Spellblade Social Adept (2589) grants *fascinate* or *people whisperer* at 7th. Both are Advanced tricks that a +3 PB character can't qualify for.
-   - Skill Tricks are missing from the Bounty Hunter, Planar Warrior and Warden tables.
-2. **Broken references to the Skill Tricks section:**
-   - 165: "see Appendix A"
-   - 2241: "in the Equipment document"
-   - 2506: "See the linked page" (there's no link)
-   - 2850: the Warden cites "the Skill Tricks column of the Armsman table"
-3. **"Staggered" is defined three ways** and is never a shared condition:
-   - 254 and 2910: no reactions, plus disadvantage on attacks.
-   - 1141: half speed, action *or* bonus action, no reactions, one attack.
-   - 3818: used with no definition.
+1. **Weapon Specialization isn't parallel across classes:**
+   - Parrying works completely differently for the Warden (2837). (Expected, these are adapted to the classes themselves)
+   - The DC ability varies (Str 132, Dex 910/1985) even when the weapon is a Strength weapon. (expected, it should be the class primary stat)
 
-   Define it once, in the intro or a glossary. "Shaken" (Paladin, 1880/1888) and "broken" (Skill Tricks, 4000/4063) are used and never defined anywhere.
-4. **Spell-point cost wording (retracted as a table error).** The Beholden (458–468) and Mechanic (1517–1523) cost tables correctly follow level + *spell* tier (1–2 → T1, 3–5 → T2, 6–8 → T3, 9 → T4). Only the wording of the intro is ambiguous: "A spell slot of level X in tier T" (45) reads naturally as the character's tier. Line 941 already says "the tier # of the spell". Consider using that phrasing at 45, or listing the spell-level bands.
-5. **Stamina formula.** The intro (44) says Level + Con modifier. The Bounty Hunter Stamina column (861–880) is 1–11, then +1 per two levels, and never adds Con.
-6. **ASI naming and wording:**
-   - "Ability Score Increase" vs "Improvement" is mixed within tables and between each table and its heading: Armsman, Inventor, Mechanic, War Mage (2985–3000 vs 3069).
-   - Bounty Hunter ASI (950) gives only "+1 to one score … above +5". That is a modifier cap, not a score cap, and it contradicts every other class.
-7. **Class naming:**
-   - Mechanic vs Mechanist: the heading and table (1439, 1487) say "Mechanic", while the intro, the body text and "Mechanist Archetypes" (1610) say "Mechanist".
-   - "War Mage" vs "Warmage".
-   - "Bounty hunter" is lowercase in several headings (943, 983, 1059).
-   - "warder" appears for "warden" (297).
-8. **Weapon Specialization isn't parallel across classes:**
-   - The Armsman calls it "Weapon Mastery" (131). That's a 2024 term, and the intro (46) calls these "Weapon Specialization".
-   - Armsman and Bounty Hunter say "choose two"; the Warden says "choose one" (2833).
-   - Battering is free in some versions and costs 1 STA in the Bounty Hunter one (909).
-   - Parrying works completely differently for the Warden (2837).
-   - The DC ability varies (Str 132, Dex 910/1985) even when the weapon is a Strength weapon.
-   - The intro (46) omits the Planar Warrior, which has this feature (1984) with no level and no table entry.
-   - "pass through at a creature" is garbled in all copies (136, 913, 1990). "on an 19" appears in 138 and 915.
-9. **Terms with no rules in 2014 5e** (these come from other editions or aren't defined here): Weapon Mastery (2024), "bloodied" (2328), "immobilized/immobilizing" (1053, 1661), "dizzy" (3534), "not slowed" (3421), "for the duration of that encounter" (3723, 3729, 3950, 3865), "Deflect action" used as a general action (3717), "Miniscule" as a size (4243, 4272), "total obscurement" (2346), and "heavy obscurement" (3767).
-10. **Wrong 2014 tool and skill names:**
-    - "tinkerer's tools" / "tinker's tool's set" should be tinker's tools.
-    - "alchemist's tool set" should be alchemist's supplies.
-    - "herbalists' kits" should be herbalism kit.
-    - "thieves tools" should be thieves' tools.
-    - "Blacksmith's" should be smith's tools.
-    - "Carpentry" should be carpenter's tools.
-    - "chain armor" should be chain shirt or chain mail.
-    - "alchemist fire" / "alchemists' fire" should be alchemist's fire.
-    - Wrong skill/ability pairs: Wisdom (Religion) at 3707/3893, Wisdom (Nature) at 3777/3940, and Wisdom (Arcana) at 3808/3810.
-11. **Style drift to normalize in one pass:**
-    - HP / hit points / 0 HP / zero hit points
-    - `30'` / 30 ft / 30 ft. / 30 feet
-    - "at advantage" vs "with advantage"
-    - "long or short rest" vs the PHB's "short or long rest"
+2.  **Wrong 2014 tool and skill names:**
+    - Wrong skill/ability pairs: Wisdom (Religion) at 3707/3893 [intentional], Wisdom (Nature) at 3777/3940 [intentional], and Wisdom (Arcana) at 3808/3810 [intentional].
+3.  **Style drift to normalize in one pass:**
     - Spell names not italicized (many)
-    - "(minimum once)" vs "(minimum 1)"
-    - "Charisma bonus" vs "modifier"
-    - "Spellcasting DC" vs "spell save DC"
-    - Curly vs straight apostrophes
-12. **Homebrewery markup:**
-    - Missing trailing double spaces merge lines at 1052–1054 (Spirit Strikes), 2431–2432 (Spellblade Tools/Saves/Skills), 2840 (Warden Shields/Thrown) and 4203 (Rare/Very Rare).
-    - `{{{note … }}}` uses triple braces (1169/1175).
+4.  **Homebrewery markup:**
     - Table header/delimiter pipes don't match (2407, 4025, 4831).
-    - A closing `____` is missing (3373).
-    - Other bad markup: `|mdash;` (4927), `&times` with no semicolon (4057), and "**Source"**" with a stray quote (3509, 3522, 3536, 3551, 3580).
 
 ---
 
 ## Part 2: Findings by section
 
-### Front matter and intro (1–58)
-- 24: says "15 new spells", but there are **17** (6 original, 11 Kobold Press). The 3 modified spells is correct.
-- 41: "diagetic" should be **diegetic**. 49: "Multiclasssing".
-- 57 "ihimien" vs 1123 "ihimen".
-
 ### Armsman (60–292)
-**Table vs. text**
-- The Warlord has **no 7th-level feature**. 157 lists archetype levels 3/7/10/15/18, and the Warlord also adds a command "at level 9" (265), which isn't an archetype level.
-- The table says "Ability Score Increase"; the heading at 159 says "Improvement".
-- The table omits the Action Surge (17th) and Indomitable use upgrades (148, 196). Optional.
-
-**Wording and grammar**
-- 74: "As a Armsman".
-- 92: equipment line garbled: "a martial weapon and a shield two martial weapons or (b) two martial weapons".
-- 125: "spend 1 STA use a bonus action" is missing a word.
-- 137: Parrying refers to "the Deflect action", but Deflect is a 2nd-level reaction, and Parrying is available at 1st. "riposte" (137) vs "counter attack" (152).
-- 186: "techniques … also applies". 190: "scryed" should be scried.
-- 225: missing comma. 240: "If you chose". 243: "they are take". 267: Hustle heading missing its period. 270: "As bonus action". 276: "against being or frightened".
-- 228: "Power Word: Kill" should be *power word kill*.
-- "Flash Step" is the name of two different features (198 Armsman, 364 Whirling Blade).
-
 **Rules problems**
-- Deflect (152): used "before the attack is rolled" yet "converting the hit into a miss". Choose one timing.
-- Blazing Flash (243): the Con save has **no DC**.
-- Shielding Bulwark (219): no action type. "Targets a point in space" contradicts itself. The shield requirement is implied but never stated.
-- Thicket of Blades (216): "moving within your reach" is ambiguous. There is no range limit for ranged attacks or spells.
-- Weapon Flexibility (240): the swapped property has no duration.
-- Deathblow (204): "your Strength" should be "modifier". The Str-based DC conflicts with Dex builds via Versatility (179).
-- Repeated Strikes (172–174): Momentum has no cap and no spend limit.
-- Resilience (228): no per-rest limit and no action type stated.
-- Hold the Line (274): no range. Skirmishing (284): "5× Charisma modifier" has no unit. Leave No One Behind (288): the ally's destination isn't specified.
-- Combat Challenge (222): no repeat save for a 1-minute compulsion.
+- Deathblow (204): "your Strength" should be "modifier". The Str-based DC conflicts with Dex builds via Versatility (179) [intentional, the primary purpose of Versatility is to allow using normally dex options in a STR-focused class].
+- Repeated Strikes (172–174): Momentum has no spend limit [intentional].
+- Resilience (228): no per-rest limit and no action type stated [intentional--gated by stamina cost not per-rest limits].
+- Hold the Line (274): no range [intentional]. Skirmishing (284): "5× Charisma modifier" has no unit. Leave No One Behind (288): the ally's destination isn't specified.
 
-### Barbarian (294–372)
+### Barbarian (294–372) <marker>
 - 295: stray space before a comma. 314: "No one cannot stand" (double negative). 323: "Lighting". 331: "each of their turn". 352: "The the size".
 - Whirling Blade table (344–347): 10th level repeats d8. It should probably be d10, with d12 at 14th.
 - Havoc (330) says "2 charges of Amplification", but Amplification (311) has no charges.

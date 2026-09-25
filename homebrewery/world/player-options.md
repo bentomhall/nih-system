@@ -1144,19 +1144,19 @@ As a bonus action on your turn, you can move the spirit up to 30 feet in any dir
 
 **Entangling Spring Spirit.** This spirit arises from the uncontrolled spring growth. When summoned, all creatures within 10 feet of its location must make a Strength saving throw against your spell save DC. On a failed save, they take magical bludgeoning damage equal to level and become restrained by rapidly growing plants for one minute. On a success, they take half as much damage and are not restrained. Restrained creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success. The area remains difficult terrain for 10 minutes, after which the plants wither.
 
-*Bonus Action:* Make a spell attack using your spell attack modifier against one creature of your choice within 30 feet of the spirit. On a hit, the creature takes 1d8 + your Wisdom modifier magical bludgeoning damage and you can pull it 10 feet closer to the spirit. The damage increases by 1d8 at each of 6th, 10th, and 14th level.
+*Bonus Action:* Make a melee spell attack using your spell attack modifier against one creature of your choice within 30 feet of the spirit. On a hit, the creature takes 1d8 + your Wisdom modifier magical bludgeoning damage and you can pull it 10 feet closer to the spirit. The damage increases by 1d8 at each of 6th, 10th, and 14th level.
 
 **Tempestuous Autumn Spirit.** This spirit arises from the roaring storms of autumn in a flash of lightning and crash of thunder. When summoned, all creatures within 10 feet of its location must make a Constitution saving throw against your spell save DC. On a failed save, they take thunder or lightning damage (your choice) equal to your level and are blinded and deafened for one minute. On a success, they take the damage but are not blinded or deafened. Blind or deaf creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.
 
 *Bonus Action:* One creature of your choice within 10 feet of the spirit must make a Strength saving throw against your spell save DC. On a failed save, they take 1d8 + your Wisdom modifier thunder damage and are pushed 10 feet away from the spirit. On a success they take half damage and are not pushed. This damage increases by 1d8 at each of 6th, 10th, and 14th level.
 
-#### L6: Spirit Translocation
+#### Spirit Translocation
 Starting at level 6, as a bonus action on your turn, you can swap your location and your spirit's location.
 
-#### L6: Spirit Sight
+#### Spirit Sight
 Starting at level 6, your connection to the spirits gives you insight into the unseen world. You can cast *detect magic* and *detect evil and good* at will.
 
-#### L10: Renewed Emergence
+#### Renewed Emergence
 Starting at level 10, while you have a spirit out, you can re-trigger its emergence effect once as an action. You cannot do so again until you expend another charge of wild shape to re-summon your Familiar Spirit (whether of the same type or another).
 
 #### Spirit Unity
@@ -1931,11 +1931,11 @@ You start with the following equipment, in addition to the equipment granted by 
 |      ^| Bonus      ^|         ^|              ^| 1st | 2nd | 3rd | 4th | 5th |
 |:-----|:----:|:--------|:----:|:----:|:----:|:----:|:----:|:----:|
 | 1st | +2 | Planar Knowledge, Planar Attunement, Protective Ward | -- | -- | -- | -- | -- | -- |
-| 2nd | +2 | Fighting Style, Spellcasting | 2 | 2 | -- | -- | -- | -- |
+| 2nd | +2 | Weapon Specialization, Spellcasting | 2 | 2 | -- | -- | -- | -- |
 | 3rd | +2 | Planar Devotion, Devotion Spells | 3 | 3 | -- | -- | -- | -- |
 | 4th | +2 | Ability Score Improvement | 3 | 3 | -- | -- | -- | -- |
 | 5th | +3 | Extra Attack | 4 | 4 | 2 | -- | -- | -- |
-| 6th | +3 | Planar Adaptation Improvement, Elemental Resistance | 4 | 4 | 2 | -- | -- | -- |
+| 6th | +3 | Planar Adaptation Improvement, Planar Resistance | 4 | 4 | 2 | -- | -- | -- |
 | 7th | +3 | Planar Devotion Feature | 5 | 4 | 3 | -- | -- | -- |
 | 8th | +3 | Ability Score Improvement | 5 | 4 | 3 | -- | -- | -- |
 | 9th | +4 | Improved Protective Ward | 6 | 4 | 3 | 2 | -- | -- |

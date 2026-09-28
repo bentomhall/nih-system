@@ -3346,7 +3346,7 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 \page
 ## New Spells
 
-Spells marked as coming from OGL 1.0a sources are Open Game Content modified and licensed under that agreement, found at 
+Spells marked as coming from OGL 1.0a sources are Open Game Content modified and licensed under that agreement, found at the end of this document.
 
 #### Armored Heart
 *1st level abjuration*
@@ -3358,7 +3358,7 @@ ____
 - Classes: Artificer, Mechanist
 ____
 
-The targeted creature gains resistance to bludgeoning, piercing, psychic, and slashing damage until the end of your next turn.
+The creature touched gains resistance to bludgeoning, piercing, psychic, and slashing damage until the end of your next turn.
 
 **Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
@@ -3376,7 +3376,7 @@ All creatures in a 10-foot radius sphere around a point you can see within range
 
 In addition, you regain hit points equal to half of the damage roll. Any healing in excess of your maximum hit points becomes temporary hit points.
 
-**At Higher Levels:** When you cast this spell using a spell slot of 3rd or higher level, the damage dealt increases by 1d6 for every two spell levels above 2nd.
+**At Higher Levels:** When you cast this spell using a spell slot of 4th or higher level, the damage dealt and healing increases by 1d6 for every two spell levels above 2nd.
 
 **Source:** Original. Licensed CC-BY-4.0.
 
@@ -3389,7 +3389,7 @@ ____
 - Duration: 1 round
 - Classes: Bounty Hunter, Fighter (Eldritch Knight), Ranger, Spellblade, Rogue (Arcane Trickster), Warmage
 ____
-You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon specialization feature or some other effect), your critical hit range increases by 1 instead.
+You extend your hand and point a finger at a target you can see in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the precise weapon specialization feature or some other effect), your critical hit range increases by 1 instead.
 
 **Source:** Original. Licensed CC-BY-4.0.
 
@@ -3403,24 +3403,24 @@ ____
 - Classes: Sorcerer, Warmage
 ____
 
-As you strike both palms down upon the ground, a web of flame crackles out around you and five streaks of fire rapidly snake along the ground toward up to five targets the caster can see within range. The streaks explode into a column of flame upon reaching them. Each target must make a Dexterity saving throw, taking 8d6 + 2d6 for every additional streak after the first fire damage on a failed save or half as much on a success. The fire can travel over obstacles up to 5 feet high and can only target creatures on or within 5 feet of the ground. It ignites flammable objects along its path that are not being worn or carried.
+As you strike both palms down upon the ground, a web of flame crackles out around you and five streaks of fire rapidly snake along the ground toward up to five targets the caster can see within range. The streaks explode into a column of flame upon reaching them. Each target must make a Dexterity saving throw, taking 8d6 fire damage on a failed save or half as much on a success. The fire can travel over obstacles up to 5 feet high and can only target creatures on or within 5 feet of the ground. It ignites flammable objects along its path that are not being worn or carried. Streaks without targets do nothing.
 
-At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you create one additional streak for each spell level above 4th.
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, you create one additional streak for each spell level above 4th.
 
 **Source:** Original. Licensed CC-BY-4.0.
 
 #### Flash Freeze
 *1st level evocation*
 ____
-- Components: V/S
-- Cast time: 1 action
+- Components: V, S
 - Range: 60 ft
-- Duration instantaneous
+- Cast time: 1 action
+- Duration: Instantaneous
 - Classes: Druid, Bounty Hunter, Ranger, Spellblade, Warmage
 ____
-The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their movement is reduced to 0 until the end of their next turn. On a success, they take half damage and their speed is not reduced.
+The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their speed is reduced to 0 until the end of their next turn. On a success, they take half damage and their speed is not reduced.
 
-When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 
 **Source:** Original. Licensed CC-BY-4.0.
 \page
@@ -3428,77 +3428,77 @@ When you cast this spell using a spell slot of 2nd level or higher, the damage i
 *3rd level conjuration*
 ____
 - Components: S, M (a small gear)
-- Cast time: 1 action
 - Range: Self (60 ft cone)
+- Cast time: 1 action
 - Duration: Instantaneous
 - Classes: Artificer, Mechanist
 ____
 You create a burst of magically-propelled gears. Each creature within a 60 ft cone must make a Dexterity saving throw, taking 5d8 slashing damage on a failed save or half as much on a success.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Gear Shield
 *2nd level abjuration*
 ____
 - Components: S, M (a small gear)
-- Cast time: 1 action
 - Range: 1 creature within 60 ft.
+- Cast time: 1 action
 - Duration: Concentration, up to 10 minutes
 - Classes: Artificer, Mechanist
 ____
 
 You cause a handful of gears to orbit the target's body. These shield the spell's target from incoming attacks and effects. The creature has resistance to all damage from the first source of damage taken since the beginning of their last turn.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Gremlins
 *4th level enchantment*
 ____
 - Components: S, M (a piece of wire)
-- Cast time: 1 action
 - Range: 1 creature visible within 60 ft.
+- Cast time: 1 action
 - Duration: Concentration, up to 1 minute
 - Classes: Artificer, Mechanist, Spellblade
 ____
 
-You target a creature you can see within range and curse it with bad mechanical luck for the duration unless it succeeds on an Intelligence saving throw. While cursed, attacks against the creature have advantage, it has disadvantage on all ability checks and saving throws made with Dexterity, Intelligence, or Wisdom, and it must make a Wisdom saving throw whenever it tries to cast a spell or do any other complex action, losing the action on a failed save.
+You target a creature you can see within range and curse it with bad mechanical luck for the duration unless it succeeds on an Intelligence saving throw. While cursed, attacks against the creature have advantage, it has disadvantage on all ability checks and saving throws made with Dexterity, Intelligence, or Wisdom, and it must make a Wisdom saving throw whenever it tries to cast a spell or do any other complex action, losing the action on a failed save. Cursed creatures can attempt the Intelligence saving throw at the end of each of their turns, ending the effect on a success.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Headshot
 *1st level enchantment*
 ____
 - Components: S
-- Cast time: 1 bonus action
 - Range: Touch (ranged weapon)
+- Cast time: 1 bonus action
 - Duration: End of your turn.
 - Classes: Artificer, Bounty Hunter, Mechanist, Ranger
 ____
 
-You enchant your next shot with a ranged weapon until the end of your turn, granting you advantage on the attack. If the attack hits and the d20 roll was 10 or above, the damage done by the weapon is maximized.
+You enchant your next shot with a ranged weapon until the end of your turn, granting you advantage on the attack. If the attack hits and the higher d20 roll was 10 or above, the damage done by the weapon is maximized.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Lightning Charge
 *1st level transmutation*
 ____
 - Components: M (a piece of amber and a piece of fur)
-- Cast time: 1 bonus action
 - Range: Self
+- Cast time: 1 bonus action
 - Duration: End of your turn.
 - Classes: Artificer, Mechanist
 ____
 
-Until the end of your turn, your speed triples and if you end your movement within 5 feet of an enemy, you can discharge the built-up energy into them. The target must make a Constitution saving throw. On a failed save, the target takes 1d4 thunder damage for every 5 feet of movement you used this turn and is knocked prone. On a success, they take half as much damage and are not knocked prone.
+Until the end of your turn, if you end your movement within 5 feet of an enemy, you can discharge the built-up energy from your movement into them. The target must make a Constitution saving throw. On a failed save, the target takes 1d4 lightning damage for every 5 feet of movement you used this turn and is knocked prone. On a success, they take half as much damage and are not knocked prone.
 
-**Source** Kobold Press's *Deep Magic 5e: Clockwork Magic* document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's *Deep Magic 5e: Clockwork Magic* document (OGL 1.0a) and licensed as such.
 
 #### Machine's Load
 *1st level transmutation*
 ____
 - Components: S, M (a small lead weight)
-- Cast time: 1 action
 - Range: Touch
+- Cast time: 1 action
 - Duration: 1 hour
 - Classes: Artificer, Mechanist
 ____
@@ -3506,63 +3506,66 @@ You touch a willing creature and give it the capacity to carry, lift, push, or d
 
 At Higher Levels: When you cast this spell using a spell slot higher than 1st, you can touch one additional creature for each spell level.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Soul of the Machine
 *3rd level abjuration*
 ____
 - Components: V, S
-- Cast time: 1 action
 - Range: Touch
+- Cast time: 1 action
 - Duration: Concentration, up to 1 hour.
 - Classes: Artificer, Mechanist
 ____
-One willing creature you touch becomes immune to charm, fear, and exhaustion, and they gain resistance to psychic damage for the duration. The effects of any existing levels of exhaustion are suppressed for the duration, but resume once the spell ends. In addition, they become immune to any spell or effect that would change their shape or take control of their actions (such as *confusion*).
+One willing creature you touch becomes immune to being charmed, frightened, and cannot gain levels of exhaustion, and they gain resistance to psychic damage for the duration. The effects of any existing levels of exhaustion are suppressed for the duration, but resume once the spell ends. In addition, they become immune to any spell or effect that would change their shape or take control of their actions (such as *confusion*).
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 \page
 #### Spin
 *2nd level enchantment*
 ____
 - Components: V, S, M (a top)
-- Cast time: 1 action
 - Range: 1 visible creature within 60 ft.
+- Cast time: 1 action
 - Duration: Concentration, up to 1 minute.
 - Classes: Artificer, Bard, Mechanist, Spellblade
 ____
 
 You target a creature within 60 feet and tell it to spin. The creature must make a Wisdom saving throw. On a failed save the creature spins in place for the duration of the spell. While spinning, the creature has disadvantage on all attack rolls and ability checks and their speed is reduced to 0. A spinning creature repeats the Wisdom saving throw at the end of each of its turns, ending the effect on a success. A creature that has spun for 1 round or more becomes dizzy and has disadvantage on attack rolls and ability checks until one round after it stops spinning.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Steam Blast
 *4th level evocation*
 ____
 - Components: V, S, M (a drop of water)
-- Cast time: 1 action
 - Range: Self (15 ft radius)
+- Cast time: 1 action
 - Duration: Instantaneous
 - Classes: Artificer, Mechanist
 ____
-You unleash a burst of superheated steam in a 15‑foot radius centered on you. All other creatures in that area take 5d8 fire damage and must make a Strength saving throw or be knocked 10 feet away from you. Nonmagical fires smaller than a bonfire are extinguished and everything becomes wet.
+You unleash a burst of superheated steam in a 15‑foot radius centered on you. All other creatures in that area must make a Strength saving throw, taking 5d8 fire damage and be knocked 10 feet away from you on a failure. Creatures that succeed only take half as much damage and are not moved back. Nonmagical fires smaller than a bonfire are extinguished and everything becomes wet.
 
 At Higher Levels: When you cast this spell using a spell slot of 5th level, the damage increases to 6d8 and the push distance increases to 15 feet. For every spell slot level higher, the damage increases by 1d8.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Tap Vitality Reserves
 *3rd level necromancy*
 ____
 - Components: V, S
-- Cast time: 1 action
 - Range: Touch
+- Cast time: 1 action
 - Duration: Instantaneous
 - Classes: Bard, Cleric, Druid, Paladin, Ranger, Warmage (Heavy Assault)
 ____
-Your touch unlocks the deep reserves inside your target. One willing creature touched can expend and roll up to two unused hit dice. For each hit die expended, they can choose one of the following
-- Regain hit points equal to the amount rolled plus their Constitution modifier.
+Your touch unlocks the deep reserves inside your target. One willing creature touched can expend and roll up to two unused hit dice. For each hit die expended, they regain hit points equal to the amount rolled plus their Constitution modifier.
+
+In addition, if they expend two hit dice, they can choose one of the following.
 - Regain spell points equal to half the amount rolled (rounded down). If the character has spell slots instead, they regain expended spell slots equivalent to the total spell points restored.
 - Regain stamina equal to half the amount rolled. If they don't have a Stamina feature, they can regain one use of a non-spell feature that regains uses on a short or long rest.
+
+A creature can only benefit from this spell once before finishing a short or long rest.
 
 **Source:** Original. Licensed CC-BY-4.0.
 
@@ -3570,28 +3573,28 @@ Your touch unlocks the deep reserves inside your target. One willing creature to
 *1st level enchantment*
 ____
 - Components: V, S, M (a small shiny object on a string)
-- Cast time: 1 action
 - Range: 1 visible creature within 30 ft.
+- Cast time: 1 action
 - Duration: Concentration, up to 1 minute.
 - Classes: Artificer, Bard, Mechanist, Spellblade
 ____
 The targeted creature must make a Wisdom saving throw. On a failed save, it can take either an action or a bonus action on each of its turns for the duration and cannot take reactions. If it attacks, it can only make a single attack regardless of how many attacks it normally would be able to make. If it casts a spell, it must roll a d20. On a 10 or lower, it must use its action on the next turn to cast the spell, at which point it takes effect. Affected creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-**Source** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
+**Source:** Kobold Press's Deep Magic 5e: Clockwork Magic document (OGL 1.0a) and licensed as such.
 
 #### Yoink
 *1st level evocation*
 ____
 - Components: V, S, M (a tiny replica grappling hook and thread)
-- Cast time: 1 bonus action
 - Range: creature or object within 90 ft
+- Cast time: 1 bonus action
 - Duration: Instantaneous
 - Classes: Bounty Hunter, Mechanist, Ranger, Sorcerer, Warmage, Wizard
 ____
 
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so with advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.
 
-Alternatively, you can use this spell to grapple to a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
+Alternatively, you can use this spell to grab ahold of a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
 
 **Source:** Original, licensed CC-BY-4.0
 \page
@@ -3601,12 +3604,12 @@ The following spells from the 5.1 SRD have been altered, mostly to enhance them.
 #### Barkskin
 Changes:
 - No longer concentration.
-- Now scales with spell slot, gaining +1 minimum AC at 3rd level and another (to 18 minimum) at 5th level.
+- Now scales with spell slot, gaining +1 minimum AC from a 3rd level spell slot and another (to 18 minimum) at 5th level.
 - Gives (2&times;spell level) temporary hit points at the start of each turn.
 
 #### Find Traps
 Changes:
-- creates visible highlight around trap area
+- creates visible highlight around trap area for 1 minute
 - also includes anything that would unexpectedly cause damage or cause negative conditions
 
 #### Flame Blade

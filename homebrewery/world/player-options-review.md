@@ -2,22 +2,6 @@
 
 Read-only review. Line numbers refer to the file as of commit `0d6c50c`. Rules checks are against D&D 5e 2014 (PHB/DMG/XGtE/TCoE).
 
-### New and Modified Spells (3340–3618)
-**Formatting and wording**
-- Stat-block field order and labels vary: "Cast time", "Range" used as a target line, "At Higher Levels" styled four different ways, "**Source**" with no colon, and "**Source"**" with a stray quote.
-- 3350: sentence cut off ("found at "). 3373: missing `____`. 3406: garbled Fire Web damage clause. 3416–3418: "V/S", "Duration instantaneous".
-
-**Rules problems**
-- Drain Vitality (3375–3379): the higher-level scaling starts at 3rd but adds nothing there, and the heal condition is unclear.
-- Fire Web (3406): unparseable, and very high damage (8d6 × 5 targets at 4th).
-- Flash Freeze (3421): "movement reduced to 0" should say speed. "not slowed" isn't a term.
-- Armored Heart (3362): no target stated. Enchanted Strike (3392): needs "you can see".
-- Gremlins (3464): no repeat save. Headshot (3478): unclear which die counts with advantage. Lightning Charge (3492): about 18d4 at 1st level, and thunder damage. Spin (3534): "dizzy". Steam Blast (3547): 5d8 with no save, and it hits allies.
-- Soul of the Machine (3520): "charm, fear" should name the conditions.
-- Tap Vitality Reserves (3564): no cap, and "one use of any feature" is very strong.
-- Yoink (3592): "grapple to a fixed object".
-- Barkskin (3604): "at 3rd level" should say slot level, and whose turn isn't stated. Find Traps (3609): no duration for the highlight. Flame Blade (3614): no rounding rule, and wielder stats are unclear.
-
 ### Skill Tricks (3619–4098)
 **Rules vs. entries**
 - 3639 says prerequisites are skill or tool proficiencies, but many use weapon or armor proficiencies.

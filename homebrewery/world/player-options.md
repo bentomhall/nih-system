@@ -3639,10 +3639,9 @@ Skill tricks are an attempt to give horizontal progression to everyone, but espe
 Each skill trick detailed below shares some common characteristics:
 
 - **An ability score**. Every skill trick is tied to a particular ability score. That ability score sets its DC.
-- **A prerequisite**. Every skill trick has one or more prerequisites before it can be learned. These are generally either a particular level of proficiency (numerical value, which does not includes expertise) for those that are tied to a particular skill or tool, or a character level for those marked as General.
+- **A prerequisite**. Every skill trick has one or more prerequisites before it can be learned. These are generally a character level and often proficiency in a particular skill, tool, or sometimes a weapon or armor.
 - **A target or targets**. Many skill tricks target either an object or one or more creatures. A few target a particular area.
 - **An effect**. The text of the skill trick describes the effect, as well as any saving throws required.
-
 
 #### Skill Trick DCs
 The DC for any saving throws required by skill tricks is given by  
@@ -3653,25 +3652,25 @@ regardless of whether the trick involves a proficiency or not. If you have exper
 #### Acquiring Skill Tricks
 The Dawn of Hope-specific classes in this document grant skill tricks every time you get an Ability Score Improvement (more often for the Variant Rogue).
 
-For other classes, you should feel free doing the same, namely granting a Skill Trick every time the character gets an Ability Score Improvement. Some of them overlap with bullet points from printed feats. It is up to the player to decide, but generally you cannot benefit from both at the same time (they do not stack).
+For other classes, you should feel free to do the same, namely granting a Skill Trick every time the character gets an Ability Score Improvement. Some of them overlap with bullet points from printed feats. It is up to the player to decide, but generally you cannot benefit from both at the same time (they do not stack).
 
 Additionally, you can grant skill tricks as rewards for quests or for spending downtime training.
 \column
 ### Basic Skill Tricks
 
-Basic skill tricks only require a +2 proficiency or level 4 characters.
+Basic skill tricks require level 4 characters.
 
 #### Alert
 
 *Wisdom (Perception OR Insight) Basic Skill Trick*
 
-You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight). Additionally, you can take reactions even when surprised.
+You gain +5 on passive Wisdom (Perception) and Wisdom (Insight) checks. Additionally, you can take reactions even when surprised.
 
 #### Arcane Initiate
 
 *Intelligence (Arcana) Basic Skill Trick*
 
-You learn one cantrip of your choice from the Arcanist list, as well as one 1st level spell from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
+You learn one cantrip of your choice from the Wizard list, as well as one 1st level spell from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
 
@@ -3685,11 +3684,11 @@ When you move at least 15 feet toward an enemy and hit them with a melee weapon 
 
 *Charisma (Martial Weapon) Basic Skill Trick*
 
-As a bonus action you take when you take the Attack action and attack a target, you can allow another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a short or long rest.
+As a bonus action you take when you take the Attack action and attack a target, you can allow another creature of your choice that can hear you to use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a short or long rest.
 
 #### Craft Apprentice
 
-*Crafting Tool (any) Basic Skill Trick*
+*Artisan's Tool (any) Basic Skill Trick*
 
 You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Common magic item that requires that proficiency of your choice.
 
@@ -3729,7 +3728,7 @@ You fake an attack as a bonus action, trying to misdirect the enemy. The opponen
 
 *Charisma (Intimidation) Basic Skill Trick*
 
-As a bonus action, you can threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn. A creature that succeeds on their saving throw is immune to further uses of this ability until you next roll initiative. 
+As a bonus action, you can threaten one enemy that can hear you. The target must make a Wisdom saving throw. On a failed save, they are frightened of you until the end of your next turn. A creature that succeeds on their saving throw is immune to further uses of this ability until you next roll initiative. 
 
 #### Haggler
 
@@ -3755,7 +3754,7 @@ Additionally, you can make out the basic sense of any text written in a script f
 
 *Constitution (General) Basic Skill Trick*
 
-You can hold your breath for twice as long. In addition, you can choose to gain advantage on any required Constitution saving throw when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability). Once you use the latter portion of this feature a number of times equal to your Constitution modifier (minimum once), you cannot do so again until you finish a long rest.
+You can hold your breath for twice as long. In addition, you can choose to gain advantage on any required Constitution saving throw when you are exposed to a source of poison gas (such as cloudkill or a dretch's Fetid Cloud ability). Once you use the latter portion of this feature a number of times equal to your Constitution modifier (minimum once), you cannot do so again until you finish a long rest.
 
 #### Medic
 
@@ -3767,11 +3766,11 @@ When you make a Wisdom (Medicine) check to stabilize someone at zero hit points 
 
 *Dexterity (Stealth) Basic Skill Trick*
 
-When you are hidden, you can spend your reaction to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
+When you are hidden, you can spend your bonus action to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
 #### Piercing Wound
 
-*Dexterity (Martial Weapon) Basic Skill Trick*
+*Dexterity (Piercing Weapon) Basic Skill Trick*
 
 When you hit with an attack from a ranged or finesse weapon, you can try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. Once you use this ability a number of times equal to your Dexterity modifier (minimum once), you cannot do so again until you finish a short or long rest.
 
@@ -3804,7 +3803,7 @@ You automatically tell the creature type of beings you interact with for at leas
 
 *Intelligence (Religion) Basic Skill Trick*
 
-You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
+You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenets of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
 
 #### Sense Baleful Magic
 
@@ -3870,7 +3869,7 @@ As a reaction when you are targeted by an attack or ability that only targets yo
 
 *Wisdom (Animal Handling) Advanced Skill Trick*
 
-As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, with advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
+As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, with advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control. Creatures that succeed on their saving throw are immune to this skill trick for 24 hours.
 
 #### Bond Breaker
 
@@ -3888,11 +3887,11 @@ As a reaction when you are brought to zero hit points, you can choose to gain a 
 
 *Charisma (Intimidation) Advanced Skill Trick*
 
-As an action, you can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they are frightened of you for one minute; if they fail the saving throw by more than 5 points, they will attempt to flee or surrender instead. A single targeted creature can attempt the saving throw again when they end their turn out of line of sight of you. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them. 
+As an action, you can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they are frightened of you for one minute; if they fail the saving throw by more than 5 points, they will attempt to flee or surrender instead. A single targeted creature can attempt the saving throw again when they end their turn out of line of sight of you. If you threaten a group of creatures, they all are affected as if you used the Frighten skill trick on them.  Creatures that succeed on their saving throw are immune to this skill trick for 24 hours.
 
 #### Divine Journeyman
 
-*Wisdom (Religion) Basic Skill Trick*
+*Wisdom (Religion) Advanced Skill Trick*
 
 You learn one cantrip of your choice from the Cleric list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
@@ -3908,11 +3907,11 @@ As an action, you begin a distracting performance. Any number of creatures of yo
 
 *Intelligence (Investigation) Advanced Skill Trick*
 
-As a bonus action, you can search for flaws in your opponent. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
+As a bonus action, you can search for flaws in your opponent you can see. Make an Intelligence (Investigation) check against a DC of 10 + half the target's CR. On a success, you learn three of the following of your choice.
 
 - Their highest and lowest saving throw modifiers
 - Any resistances or immunities they have.
-- Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
+- Any vulnerabilities they have (whether to damage particularly or things like Sunlight Sensitivity)
 - Their current goals
 
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
@@ -3935,8 +3934,14 @@ When you are afflicted by the charmed, frightened, or incapacitated conditions a
 
 *Wisdom (Insight) Advanced Skill Trick*
 
-When you make a Wisdom (Insight) check and the result is above a 15, you gain one pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
+When you make a Wisdom (Insight) check and the result is 15 or higher, you gain one pertinent, specific detail about the target's mental or emotional state and one more for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
 \page
+#### Pocket Sand
+
+*Dexterity (Sleight of Hand) Advanced Skill Trick*
+
+As a bonus action, you can attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success or failure, the creature is immune to further attempts to blind them this way until you next roll initiative.
+
 #### Primal Journeyman
 
 *Wisdom (Nature) Advanced Skill Trick*
@@ -3944,12 +3949,6 @@ When you make a Wisdom (Insight) check and the result is above a 15, you gain on
 You learn one cantrip of your choice from the Druid list, as well as one 1st or 2nd level spell from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 You can cast the spell gained this way once using this feature without expending a spell slot, regaining the ability to do so when you finish a long rest.
-
-#### Pocket Sand
-
-*Dexterity (Sleight of Hand) Advanced Skill Trick*
-
-As a bonus action, you can attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see. On a success or failure, the creature is immune to further attempts to blind them this way until you next roll initiative.
 
 #### Resuscitation
 
@@ -3982,7 +3981,7 @@ Alternatively, you can target attended objects as follows. Once you hit with suc
 
 You can grapple and shove creatures two sizes larger than yourself. Once per short or long rest, you can remove the size limit entirely.
 
-Additionally, when you start your turn with a creature grappled, you can attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
+Additionally, when you start your turn with a creature grappled, you can attempt a second grapple check as a bonus action. If you succeed, the target is restrained until the grapple ends.
 
 ### Expert Skill Tricks
 
@@ -3999,7 +3998,7 @@ Invisible or unseen enemies no longer have advantage to hit you. In addition, yo
 
 *Charisma (Intimidation) Expert Skill Trick*
 
-This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw. Creatures targeted become frightened of you. On a failed save, the frightened state lasts for 1 minute. On a success, it last until the end of their next turn. You can choose when you use this ability whether creatures that fail their save must use their movement to move away from you or whether their movement speed is reduced to zero while frightened. Creatures that failed the saving throw can re-attempt the saving throw at the end of each of their turns, ending the effect on a success.
+This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw. Creatures targeted become frightened of you. On a failed save, the frightened state lasts for 1 minute. On a success, it last until the end of their next turn. You can choose when you use this ability whether creatures that fail their save must use their movement to move away from you or whether their movement speed is reduced to zero while frightened. Creatures that failed the saving throw can re-attempt the saving throw at the end of each of their turns, ending the effect on a success. Creatures that succeed on the saving throw are immune to this skill trick for 24 hours.
 
 #### Comprehend Dweomer
 
@@ -4045,55 +4044,58 @@ You can no longer be grappled or restrained by spells under 6th level or by non-
 
 ### Master Skill Tricks
 Master skill tricks require level 16 characters. These are powerful, supernatural effects. 
+#### Adamantine Strike
+*Strength (any bludgeoning weapon) Master Skill Trick*
+
+Damage you deal against objects and structures counts as a critical hit and deals maximum damage. Constructs have vulnerability to bludgeoning damage you deal.
 #### Balance on Thin Air
 
 *Dexterity (Acrobatics) Master Skill Trick*
 
-You can spend your bonus action to walk on air as if it was solid ground. If you do not spend your bonus action on each of your turns while suspended, you fall.
+You can spend your bonus action to walk on air as if it were solid ground. If you do not spend your bonus action on each of your turns while suspended, you fall.
 \column
 #### Clean Slice
 *Strength (any slashing weapon) Master Skill Trick*
 
-You make a melee weapon attack with a slashing weapon against a target within reach, using both your action and bonus action. On a hit, the If the object is an object of Huge size or smaller, it is cut along an axis you choose. If it was a creature, it makes a Constitution saving throw. On a success, it takes damage equal to the maximum weapon damage you could deal with an Attack action if all your attacks hit. On a failure, it is instantly reduced to zero and, if it has appropriate anatomy, loses its head or equivalent.
+You make a melee weapon attack with a slashing weapon against a target within reach, using both your action and bonus action. On a hit, if the object is an object of Huge size or smaller, it is cut along an axis you choose. If it was a creature, it makes a Constitution saving throw. On a failed save, it takes damage equal to the maximum weapon damage you could deal with an Attack action if all your attacks hit. On a success, it takes half as much damage.
 
-For example, if you were a 17th level Armsman (and so could attack 4 times with the Attack action), had 20 STR and were attacking with a greatsword (2d6 + STR damage), you would deal 4&times(2&times; 6 + 5) or 68 damage on a successful save or instantly kill the target on a failed save.
+For example, if you were a 17th level Armsman (and so could attack 4 times with the Attack action), had 20 STR and were attacking with a greatsword (2d6 + STR damage), you would deal 4&times;(2&times; 6 + 5) or 68 damage on a failed save or 34 on a success.
+
+Once you use this skill trick a number of times equal to your Strength modifier (minimum once), you cannot do so again until you finish a long rest.
 
 #### Dragon's Fear
 
 *Charisma (Intimidation) Master Skill Trick*
 
-This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
+This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw. Creatures that are immune to Break Will are also immune to this skill trick.
 
 #### Friend to All
 
 *Charisma (Persuasion) Master Skill Trick*
 
-As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. Once you do so, you cannot do so again until you finish a long rest.
+As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. 
 
 Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
+
+Once you do use this skill trick, you cannot do so again until you finish a long rest.
 
 #### Force Portal
 
 *Wisdom (Survival) Master Skill Trick*
 
-As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
+As an action, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds at a spot of your choosing within 30 feet of you. You can choose what plane it exits to, but only a rough description of the location on that plane. Once you do so, you cannot do so again until you finish a long rest.
 \page
 #### Healing Hands
 
 *Wisdom (Medicine) Master Skill Trick*
 
-As an action you can magically do one of the following to a creature you touch. Once you use an option, you cannot use that option again until you finish a long rest.
+As an action you can magically do one of the following to a creature you touch. Once you use an option, you cannot use this skill trick again again until you finish a long rest.
 
 - Heal the creature for half of its maximum hit points.
 - Remove any condition from a living creature.
 - Cure any disease and remove any poison or curse affecting the creature.
-- Break one spell affecting the creature.
+- Dispel one spell affecting the creature, even if the spell effect is normally not subject to *dispel magic*.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
-
-#### Adamantine Body
-*Strength (any bludgeoning weapon) Master Skill Trick*
-
-Damage you deal against objects and structures counts as a critical hit and deals maximum damage. Constructs have vulnerability to bludgeoning damage you deal.
 
 \page
 {{partCover}}

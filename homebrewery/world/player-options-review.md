@@ -2,28 +2,6 @@
 
 Read-only review. Line numbers refer to the file as of commit `0d6c50c`. Rules checks are against D&D 5e 2014 (PHB/DMG/XGtE/TCoE).
 
-### Skill Tricks (3619–4098)
-**Rules vs. entries**
-- 3639 says prerequisites are skill or tool proficiencies, but many use weapon or armor proficiencies.
-- The "+4 PB or level 9" routes are the same thing. The only difference is that Basic proficiency tricks open at 1st while General ones open at 4th (3659).
-- **Divine Journeyman (3893) is labeled Basic but sits in Advanced.**
-- Arcane Initiate uses "Arcanist list" (3671), while Journeyman uses "Wizard list" (3847). Primal Initiate (3779) doesn't name a list.
-- "Crafting Tool (any)" (3689) should be artisan's tools. Frighten uses a Cha save (3729); Demoralize and Break Will use Wis.
-- Evasive Footwork (3717) is General but modifies an Armsman-only reaction.
-
-**Grammar**
-- 3639: "does not includes". 3653: "feel free doing". 3685: "can allow … can use". 3755: *Fetid Cloud*, not Stench. 3804: "tenants". 3889: "a group of creature". 3913: "ot damage". 4050: "as if it was". **4055: garbled sentence** ("On a hit, the If the object…"). 4057: `&times`. 4089: missing "to gain".
-- Alphabetical order: Pocket Sand, Force Portal, Adamantine Body.
-
-**Rules problems**
-- Alert (3665): surprise uses passive Perception, and "advantage on passive" should say +5.
-- Charge (3679): no cost or limit. Misdirect (3767): **a reaction with no trigger.** Piercing Wound (3773) allows simple weapons despite its Martial prerequisite.
-- Shield Bash (3818): the crit duration is shorter than a normal hit's. Tumble (3836) mostly duplicates core rules.
-- Break Will (4000), Dragon's Fear (4063): "broken" is undefined and they can be spammed. Clean Slice (4055): an unlimited instant kill.
-- Befriend Wild Animal, Demoralize, Find Weakness, Friend to All, Find Portal: no range, duration or limit.
-- People Whisperer (3936): the threshold contradicts itself. Resuscitation (3956): "permanent injury" is undefined.
-- Wrestler (3981): the second grapple has no action cost. Healing Hands (4085–4089): several gaps. Adamantine Body: the name doesn't match the effect.
-
 ### Incantations (4099–4989)
 **List vs. entries (cross-checked by script)**
 - Rarity mismatches:

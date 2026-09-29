@@ -4791,35 +4791,47 @@ An affected creature is aware of the effect and can thus avoid answering questio
 Rare incantations are suitable to be found during for the latter half of Tier 2 play or later, ie levels 8-10 or higher.  
 
 #### Awaken Beast or Plant
-*Rare, 8 hours, Costly (agate worth 1000 gp), Immobile, Debilitating (Major, 3)*
+____
+**Rarity:** Rare  
+**Cast Time:** 8 hours  
+**Tags:** Costly (agate worth 1000 gp), Immobile, Debilitating (Major, 3)
+**Duration:** Permanent
+____
 
 After spending the casting time tracing magical pathways within a precious gemstone (the consumed component), you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your GM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree.
 
 The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.
 
 #### Binding Circle
-*Rare, Costly (a jewel worth at least 1000 gp), Immobile, Location (a prepared incantation circle large enough for the target creature), Exclusive, 1 hour. Duration 24 hours.*
+____
+**Rarity:** Rare  
+**Cast Time:** 1 hour  
+**Tags:** Costly (a jewel worth at least 1000 gp), Immobile, Location (a prepared incantation circle large enough for the target creature), Exclusive
+**Duration:** 24 hours
+____
 
-With this incantation, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the incantation inside the prepared incantation circle. At the completion of the casting, the target must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failed save, it is bound to attempt a single task you specify at the end of the casting. If the creature was summoned or created by a spell, the other incantation immediately ends but the creature does not disappear until the incantation expires.
+With this incantation, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be inside the prepared incantation circle for the entire casting of the incantation, and you must be within 10 feet of the circle for the entire casting. At the completion of the casting, the target must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failed save, it is bound to attempt a single task you specify at the end of the casting. If the creature was summoned or created by a spell, the other incantation immediately ends but the creature does not disappear until the incantation expires.
 
 A bound creature must follow your instructions to the best of its ability. You might command the creature to guard a location, assassinate a target, or to deliver a message. The task must have a clear, fixed end condition and cannot be changed once assigned. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the incantation ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the incantation ends.
 
-A creature bound in this way cannot be bound again for a full year and a day after completing their binding. As binding a creature in this way involves compelling them by the True Words that comprise their essence, a very uncomfortable and agonizing process, creatures bound this way are almost invariably unfriendly to the performer after being released.
+A creature bound in this way cannot be bound again for a full year and a day after completing their binding. As binding a creature in this way involves compelling them by the True Words that comprise their essence, which is a very uncomfortable and agonizing process, creatures bound this way are almost invariably unfriendly to the performer after being released.
 
 Note: The specificity of the task is a conversation between you and the GM. The intent is to make it clear when the task is over and avoid open-ended tasks.
 
-*Special:* By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
+**Special:** By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
 
 #### Commune
-*Rare, 10 minutes, Location (See Text), Cooldown (see text).*
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Location (see text), Cooldown (see text)
+**Duration:** Instantaneous
+____
+You commune with a deity, primal spirits, or an non-deific otherworldly entity.  
+**Deity:**  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren't necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.
 
-You commune with a deity, primal spirits, or an non-deific otherworldly entity.
-
-**Deity:.**  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren't necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.
-
-This incantation requires a pre-existing relationship with a deity and an environment attuned to the deity in question (such as a shrine, consecrated location, or the presence of holy symbols of that deity). Contacting this same deity again before completing a long rest angers the deity and they will refuse to answer.
-
-**Primal Spirits (Nature):.** You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the incantation gives you knowledge of the land within 3 miles of you. In caves and other underground settings or in towns, the radius is limited to 300 feet.
+This incantation requires a pre-existing relationship with a deity and an environment attuned to the deity in question (such as a shrine, consecrated location, or the presence of holy symbols of that deity). Contacting this same deity again before completing a long rest angers the deity and they will refuse to answer.  
+**Primal Spirits (Nature):** You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the incantation gives you knowledge of the land within 3 miles of you. In caves and other underground settings or in towns, the radius is limited to 300 feet.
 
 You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
 
@@ -4832,71 +4844,96 @@ You instantly gain knowledge of up to three facts of your choice about any of th
 \page
 
 For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.
-Nature spirits are capricious, and communing again before moving out of range of the initial communion (ie 3 miles outdoors or 300 feet  in caverns, underground settings or settlements) results in at least one lie.
 
-**Other entity.** You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this incantation, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.
+Nature spirits are capricious, and communing again before moving out of range of the initial communion (ie 3 miles outdoors or 300 feet  in caverns, underground settings or settlements) results in at least one lie.  
+**Other entity:** You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this incantation, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.
 
-On a successful save, you can ask the entity up to five questions. You must ask your questions within 1 minute of finishing the incantation. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question).  Each time you perform this incantation again before finishing a long rest increases the DC of the saving throw by 5. The answers will generally be honest, but may be misleading depending on the entity's outlook and knowledge. If a one-word answer would be unintentionally misleading, the GM may answer as a short phrase instead.
+On a successful save, you can ask the entity up to five questions. You must ask your questions within 1 minute of finishing the incantation. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question). Each time you perform this incantation again before finishing a long rest increases the DC of the saving throw by 5. The answers will generally be honest, but may be misleading depending on the entity's outlook and knowledge. If a one-word answer would be unintentionally misleading, the GM may answer as a short phrase instead.
 
-#### Extradimensional Mansion
-*Rare, 10 minutes, Focus (1500 gp), Immobile*
+#### Extradimensional Refuge
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Exclusive, Focus (a jeweled model of a house worth at least 1500 gp)
+**Duration:** 24 hours
+____
 
 You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the incantation can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. This extradimensional space does not interact with items such as the Bag of Holding.
 
 Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this incantation dissipate into smoke if removed from the mansion. When the effect ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.
 
 #### Fabricate
-*Rare, 1 hour, Debilitating (2), Costly (Special)*
+____
+**Rarity:** Rare  
+**Cast Time:** 1 hour  
+**Tags:** Debilitating (2), Costly (see text)
+**Duration:** Permanent
+____
 
 You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool. If you are creating an item out of metal, the metal must have been refined from ore previously.
 
-Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the incantation is commensurate with the quality of the raw materials. No matter what you create, you can only create a single object at a time, and the entire object must be created out of the same material.
+Choose raw materials that you can see within 30 feet. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the incantation is commensurate with the quality of the raw materials. No matter what you create, you can only create a single object at a time, and the entire object must be created out of the same material.
 
 Creatures or magic items can't be created or transmuted by this incantation. You also can't use it to create items that ordinarily require a high degree of craftsmanship such as jewelry, exotic weapons (such as firearms), glass, or fitted armor (plate or half-plate).
 
-*Special*: The costly component required is that the amount of materials required is 150\% of the amount of material used in the final product.
+**Special:** The costly component required is that the amount of materials required is 150% of the amount of material used in the final product.
 
-#### Fly 
-*Rare, 1 minute, Exclusive, Debilitating (1). Duration 10 minutes*
+#### Fly
+____
+**Rarity:** Rare  
+**Cast Time:** 1 minute  
+**Tags:** Exclusive, Debilitating (1)
+**Duration:** 10 minutes
+____
 
 Up to four willing creatures within 10 ft gain a flying speed of 60 feet for the duration. When the effect ends, the target falls if it is still aloft, unless it can stop the fall.
 
-*Special* If you take 10 minutes and expend a golden feather worth 100 gp, it can affect up to 8 creatures.
+**Special:** If you take 10 minutes and expend a golden feather worth 100 gp, it can affect up to 8 creatures.
 \page
 #### Forbiddance
-*Rare,1 hour Costly (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1000 gp). Duration 1 day*
-
+____
+**Rarity:** Rare  
+**Cast Time:** 1 hour  
+**Tags:** Costly (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1000 gp), Immobile
+**Duration:** 24 hours
+____
 You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate or irresistible summons incantations, to enter the area. The incantation proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Border Shadow, Feywild, Shadowfell, or the plane shift effect (incantation or spell).
 
-In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell).
+In addition, the incantation damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the incantation's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this incantation).
 
-When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.
+When you cast this incantation, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the incantation.
 
-The spell's area can't overlap with the area of another forbiddance incantation. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled.
+If you cast this incantation where it would overlap the area of a different forbiddence effect (from you or anyone else), the original effect supersedes this one in the overlapping area. If you cast forbiddance every day for 30 days in the same location, the incantation lasts until it is dispelled.
 
 #### Geas
-*Rare, 1 minute, Debilitating (1). Duration 30 days.*
+____
+**Rarity:** Rare  
+**Cast Time:** 1 minute  
+**Tags:** Debilitating (1)
+**Duration:** 30 days
+____
+You place a magical command on a creature that you can see within 30 feet, forcing it to carry out some service or refrain from some action or course of activity as you decide. The course of action must have clear boundaries&mdash;"give all your wealth to the poor within 30 days" is appropriate, but "serve me however I wish" isn't because it isn't clear what exactly would break it. Should you issue a suicidal command (one that obviously requires the creature's death), the effect ends. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. A charmed creature who attempts to break the geas must make the saving throw again. On a failure, the creature is compelled to uphold the geas. On a success, the creature can act as it chooses, but suffers a consequence of your choosing from the list below:
 
-You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. The course of action must have clear boundaries--"give all your wealth to the poor within 30 days" is appropriate, but "serve me however I wish" isn't because it isn't clear what exactly would break it. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. A charmed creature who attempts to break the geas must make the saving throw again. On a failure, the creature is compelled to uphold the geas. On a success, the creature can act as it chooses, but suffers a consequence of your choosing from the list below:
-
-- suffers the effect of any non-legendary spell without a saving throw. The effect must be negative for the creature in question, and it lasts for the entire duration without concentration.
+- suffers the effect of any spell of 5th level or lower as if they'd failed whatever saving throw the spell in question requires. The effect must be negative for the creature in question, and it lasts for the entire duration without concentration.
 - is wracked with pain, gaining 5 levels of exhaustion immediately.
-- is tormented by guilt and is unable to benefit from a rest for 8 days.
+- is tormented by guilt and is unable to benefit from a rest for 8 days (other than to stave off exhaustion).
 
 \column
 After suffering the penalty, the geas ends and you become aware that the creature has broken the compulsion.
 
-A creature that can't understand you is unaffected by the effect.
-
-You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the effect ends.
+A creature that can't understand you is unaffected by the effect. 
 
 You can end the effect early by using an action to dismiss it. A *remove curse* spell, or *restoration* incantation also end it.
 
-*Special* You can choose to immediately take 2 levels of exhaustion to increase the duration to a year and a day.
+**Special:** You can choose to make this Debilitating (Major, 2) to increase the duration to a year and a day.
 
 #### Guards and Wards
-*Rare, 1 hour, Cooldown (12 hours), Focus (burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp). Duration 24 hours*
-
+____
+**Rarity:** Rare  
+**Cast Time:** 1 hour  
+**Tags:** Cooldown (12 hours), Costly (burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood worth 10 gp), Focus (a small silver rod worth at least 20 gp)
+**Duration:** 24 hours
+____
 You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the incantation.
 
 When you cast this incantation, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
@@ -4906,8 +4943,8 @@ When you cast this incantation, you can specify individuals that are unaffected 
 This incantation creates the following effects within the warded area.
 
 - Corridors. Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.
-- Doors. All doors in the warded area are magically locked, as if sealed by an arcane lock effect. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.
-- Stairs. Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while the guards and wards effect lasts.
+- Doors. All doors in the warded area are magically locked, as if sealed by an arcane lock effect. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the *minor illusion* spell) to make them appear as plain sections of wall.
+- Stairs. Webs fill all stairs in the warded area from top to bottom, as the *web* spell. These strands regrow in 10 minutes if they are burned or torn away while the guards and wards effect lasts.
 - Other Spell Effect. You can place your choice of one of the following magical effects within the warded area of the stronghold.    
     - Place *dancing lights* in four corridors. You can designate a simple program that the lights repeat as long as guards and wards effect lasts.
     - Place a *magic mouth* in two locations.
@@ -4915,10 +4952,15 @@ This incantation creates the following effects within the warded area.
     - Place a constant *gust of wind* in one corridor or room.
     - Place a *suggestion* in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.
     
-The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one year.
+The whole warded area radiates magic. A *dispel magic* cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one year.
 
-#### Hallow 
-*Rare, 24 hours, Group (2), Debilitating (Major, 2), Costly (herbs, oils, and incense worth at least 1,000 gp, which the incantation consumes)*
+#### Hallow
+____
+**Rarity:** Rare  
+**Cast Time:** 24 hours  
+**Tags:** Group (2), Debilitating (Major, 2), Costly (herbs, oils, and incense worth at least 1000 gp)
+**Duration:** Until dispelled
+____
 
 You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet. This effect does not stack even if different extra effects are chosen. The affected area is subject to the following effects.
 
@@ -4938,32 +4980,45 @@ Second, you can bind an extra effect to the area. Choose the effect from the fol
 - Tongues. Affected creatures can communicate with any other creature in the area, even if they don't share a common language.
 
 
-*Special:* Priests and oathbound in good standing ignore the immediate debilitating effect, treating it as Debilitating (2) instead.
+**Special:** Clerics and paladins in good standing ignore the immediate debilitating effect, treating it as Debilitating (2) instead.
 \page
 #### Modify Memory
-*Rare, Full round, Focus (a gold and clockwork pendant worth at least 1000 gp), Immobile, Debilitating (Major, 1). Duration 1 minute*
-
-You attempt to reshape another creature's memories. One creature that you can see must make a DC 15 Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this incantation ends, and none of the target's memories are modified. On a success, the creature is immune to this effect for 24 hours.
+____
+**Rarity:** Rare  
+**Cast Time:** Full round  
+**Tags:** Focus (a gold and clockwork pendant worth at least 1000 gp), Immobile, Debilitating (Major, 1)
+**Duration:** 1 minute (see text)
+____
+You attempt to reshape another creature's memories. One creature that you can see must make a DC 17 Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this incantation ends, and none of the target's memories are modified. On a success, the creature is immune to this effect for 24 hours.
 
 While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.
 
-You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the effect ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the effect ends.
+You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the effect ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the effect ends and last until dispelled.
 
 A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The GM might deem a modified memory too nonsensical to affect a creature in a significant manner.
 
-A *remove curse* spell or *greater restoration* incantation cast on the target restores the creature's true memory. 
+A *remove curse* spell or *restoration* (using the greater mode) incantation cast on the target restores the creature's true memory. 
 
 #### Phantom Steed
-*Rare, 10 minutes, Exclusive. Duration 1 hour*
-
-A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the incantation vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Exclusive
+**Duration:** 1 hour
+____
+A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within 10 feet. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the incantation vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
 
 For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the duration expires, the steed gradually fades, giving the rider 1 minute to dismount. The effect ends immediately without fading if you use an action to dismiss it or if the steed takes any damage.
 
 #### Planar Ally
-*Rare, 1 hour, Immobile, Special (requires a pre-existing relationship with the entity providing the ally), Exclusive, Costly (see text). Duration special (see text)*
+____
+**Rarity:** Rare  
+**Cast Time:** 1 hour  
+**Tags:** Immobile, Special (requires a pre-existing relationship with the entity providing the ally), Exclusive, Costly (see text).
+**Duration:** See text
+____
 
-You beseech an otherworldly entity for aid. The being must be known to you and you must have a pre-existing relationship with them: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this incantation to request that creature, though you might get a different creature anyway (GM's choice).
+You beseech an otherworldly entity for aid. The being must be known to you and you must have a pre-existing relationship with them: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within 30 feet. If you know a specific creature's name, you can speak that name when you cast this incantation to request that creature, though you might get a different creature anyway (GM's choice).
 
 When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). 
 
@@ -4976,18 +5031,27 @@ As a rule of thumb, a task that can be measured in minutes requires a payment wo
 After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.
 \page
 #### Plane Shift
-*Rare, 1 minute, Focus (a forked, metal rod worth at least 250 gp, attuned to the desired destination plane), Cooldown (1 day)*
-
+____
+**Rarity:** Rare  
+**Cast Time:** 1 minute  
+**Tags:** Focus (a forked, metal rod worth at least 250 gp, attuned to the desired destination plane), Cooldown (24 hours)
+**Duration:** Instantaneous
+____
 You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms and roll 1d10. On an even result you appear in or near that destination; on an odd result you end up some distance away. The exact location when used this way is up to the GM.
 
-Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, roll 1d6. On a roll of 2-6, the incantation takes you to that location. On a roll of 6, you end up at a point of the GM's choice near the circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
+Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, roll 1d6. On a roll of 2-6, the incantation takes you to that location. On a roll of 1, you end up at a point of the GM's choice near the circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
 
-*Note:* the focus component counts as a magic item of varying rarity&mdash;forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
+The focus component counts as a magic item of varying rarity&mdash;forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
 
 #### Programmed Illusion
-*Rare, 1 minute, Cooldown (8 hours), Costly (a bit of fleece and jade dust worth at least 25 gp), Exclusive (Special).*
+____
+**Rarity:** Rare  
+**Cast Time:** 1 minute  
+**Tags:** Cooldown (8 hours), Costly (a bit of fleece and jade dust worth at least 25 gp), Exclusive (see text)
+**Duration:** Until dispelled
+____
 
-You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the incantation how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.
+You create an illusion of an object, a creature, or some other visible phenomenon within 30 feet that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the incantation how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.
 
 When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again.
 
@@ -4995,24 +5059,32 @@ The triggering condition can be as general or as detailed as you like, though it
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 15 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
-*Special:* You can have a number of these equal to your proficiency bonus active at any given time. Performing the incantation again when you have the maximum number makes the oldest effect end immediately.
+**Special:** You can have a number of these equal to your proficiency bonus active at any given time. Performing the incantation again when you have the maximum number makes the oldest effect end immediately.
 
 
 #### Seeming
-*Rare, 10 minutes, Exclusive. Duration 8 hours*
-
-This incantation allows you to change the appearance of any number of willing creatures that you can see within range. You give each target you choose a new, illusory appearance. 
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Exclusive
+**Duration:** 8 hours
+____
+This incantation allows you to change the appearance of any number of willing creatures that you can see within 30 feet. You give each target you choose a new, illusory appearance. 
 
 The incantation disguises physical appearance as well as clothing, armor, weapons, and equipment. You can make each creature seem 1 foot shorter or taller and appear thin, fat, or in between. You can't change a target's body type, so you must choose a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The incantation lasts for the duration, unless you use your action to dismiss it sooner.
 
 The changes wrought by this incantation fail to hold up to physical inspection. For example, if you use this incantation to add a hat to a creature's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature's head and hair. If you use this incantation to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 
-A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 16. If it succeeds, it becomes aware that the target is disguised.
+A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 17. If it succeeds, it becomes aware that the target is disguised.
 
 #### Shadow Creation
-*Rare, 10 minutes, Focus (see text), Exclusive, Costly (see text). Duration special (see text)*
-
-You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this incantation to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5 ft foot cube, and the object must be of a form and material that you have seen before.
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Costly (see text), Focus (see text), Exclusive
+**Duration:** See text
+____
+You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within 10 feet: soft goods, rope, wood, or something similar. You can also use this incantation to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5 ft foot cube, and the object must be of a form and material that you have seen before.
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
@@ -5024,14 +5096,18 @@ Precious Metals | 1 hour | 50 gp
 Gems | 10 minutes | 100 gp 
 Adamatine or mithral | 1 minute | 500 gp
 
-
 \page
 Using any material created by this incantation as another spell's material component causes that spell to fail.
 
-*Special* The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
+**Special:** The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
 
-#### Teleportation Circle 
-*Rare, 10 minutes, Costly (rare chalks and inks infused with precious gems with 50 gp, which the incantation consumes), Cooldown (8 hours), Immobile. Duration 1 round*
+#### Teleportation Circle
+____
+**Rarity:** Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Costly (rare chalks and inks infused with precious gems worth 50 gp), Cooldown (8 hours), Immobile
+**Duration:** 6 seconds
+____
 
 As you cast the incantation, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. Roll a d10 and consult the Teleportation Circle table. 
 
@@ -5041,43 +5117,65 @@ As you cast the incantation, you draw a 10-foot-diameter circle on the ground in
 2-4 | Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success. 
 5-10 | Success. The portal forms as normal and poses no threat.
 
-If the spell succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
+If the incantation succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
 
 Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence, which is a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
 
 #### Transport via Plants
-*Rare, 1 minute, Immobile. Duration 1 minute*
-
+____
+**Rarity:** Rare  
+**Cast Time:** 1 minute  
+**Tags:** Cooldown (8 hours), Immobile
+**Duration:** 1 minute
+____
 This incantation creates a magical link between a Large or larger inanimate plant within 10 ft and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.
 
 ### Very Rare Incantations
-Very rare incantations are suitable to be first found in the Hero phase, ie levels 11-16.
+Very rare incantations are suitable to be first found in Tier 3, ie levels 11-16.
 
 #### Antipathy/Sympathy
-*Very Rare, 1 hour, Cooldown (1 day), Exclusive. Duration 10 days*
+____
+**Rarity:** Very Rare  
+**Cast Time:** 1 hour  
+**Tags:** Cooldown (24 hours), Exclusive
+**Duration:** 10 days
+____
 
-This incantation attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.  
-**Antipathy.** The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it.  
-**Sympathy.** The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.  
+This incantation attracts or repels creatures of your choice. You target something within 10 feet, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.  
+**Antipathy.** The incantation causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it.  
+**Sympathy.** The incantation causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.  
 **Ending the Effect.** If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a DC 17 Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the incantation is allowed another Wisdom saving throw every 24 hours while the effect persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again.
 \page
 #### Create Demiplane
-
-*Very Rare, 1 minute, Exclusive (special)*
-
-You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the incantation ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.
+____
+**Rarity:** Very Rare  
+**Cast Time:** 1 minute  
+**Tags:** Cooldown (24 hours), Exclusive
+**Duration:** 1 minute
+____
+You create a shadowy door on a flat solid surface that you can see within 30 feet. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the incantation ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.
 
 Each time you cast this incantation, you can create a new demiplane by speaking a new identifier (causing the previous one to fade back into the interplanar space), or have the shadowy door connect to a demiplane you created with a previous casting of this incantation by speaking its identifier as part of the incantation. You magically know if the identifier you choose leads to an existing demiplane. Identifiers can be any short phrase of 60 characters or less, spaces included.
 
 Additionally, if you know the identifier of a demiplane created by a casting of this incantation by another creature, you can have the shadowy door connect to its demiplane instead.
 
 #### Mind Blank
-*Very Rare, 1 minute, Debilitating (3). Duration 24 hours.*
+____
+**Rarity:** Very Rare  
+**Cast Time:** 1 minute  
+**Tags:** Debilitating (3)
+**Duration:** 24 hours
+____
 
-Until the effect ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells and incantations, and the charmed condition. The incantation even foils legendary effects used to affect the target's mind or to gain information about the target.
+Until the effect ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells and incantations, and the charmed condition.
 
 #### Project Image
-*Very Rare, 1 hour, Focus (a small replica of you made from materials worth at least 5 gp), Cooldown (1 day). Duration 1 day*
+____
+**Rarity:** Very Rare  
+**Cast Time:** 1 hour  
+**Tags:** Focus (a small replica of you, made from materials worth at least 5 gp), Cooldown (24 hours)
+**Duration:** 24 hours
+____
 
 You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within 500 miles that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the incantation ends.
 
@@ -5088,11 +5186,16 @@ You can see through its eyes and hear through its ears as if you were in its spa
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 18 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
 #### Scrying
-*Very Rare, 10 minutes, Focus (an object such as a crystal ball, ornate basin of water or mirror worth at least 1000 gp). Cooldown (1 hour). Debilitating (1). Duration 10 minutes*
+____
+**Rarity:** Very Rare  
+**Cast Time:** 10 minutes  
+**Tags:** Focus (an object such as a crystal ball, ornate basin of water or ink, or mirror worth at least 1000 gp). Cooldown (1 hour). Debilitating (1).
+**Duration:** 10 minutes
+____
 
 You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a DC 15 Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this incantation, it can fail the saving throw voluntarily if it wants to be observed.
 
-*Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
+**Note:** With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
 
 **Knowledge** | **Save Modifier** 
 :---- | ----:
@@ -5109,19 +5212,23 @@ Body part, lock of hair, bit of nail, or the like | -5
 
 On a successful save, the target isn't affected, and you can't use this incantation against it again for 24 hours.
 
-On a failed save, the incantation creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist and can use dispel magic to end the effect as if it was a 5th level incantation.
+On a failed save, the incantation creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist and can use *dispel magic* to end the effect as if it was a 8th level spell.
 
 Instead of targeting a creature, you can choose a location you have seen before as the target of this incantation. When you do, the sensor appears at that location and doesn't move.
 
 \page
 #### Teleport
-*Very Rare, 1 minute, Cooldown (8 hours), Immobile*
-
-This incantation instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.
+____
+**Rarity:** Very Rare  
+**Cast Time:** 1 minute  
+**Tags:** Cooldown (8 hours), Immobile
+**Duration:** Instantaneous
+____
+This incantation instantly transports you and up to eight willing creatures of your choice that you can see within 10 feet, or a single object that you can see within 10 feet, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.
 
 The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.
 
-*Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
+**Note:**  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
 
 **Familiarity** | **Mishap** | **Similar Area** | **Off Target** | **On Target**
 :----|:----:|:----:|:----:|:----:|
@@ -5132,60 +5239,73 @@ Seen casually | 01-43 | 44-53 | 54-73 | 74-100
 Viewed once | 01-63 | 64-73 | 74-83 | 84-100 
 Description | 01-63 | 64-53 | 74-73 | 84-100 
 False destination | 01-50 | 51-100 | &mdash; | &mdash;
- 
 
-**Familiarity.**. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.
+**Familiarity.** “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.
 
 “Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the incantation. “Seen casually” is someplace you have seen more than once but with which you aren't very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else's description, perhaps from a map.
 
 “False destination” is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.
 
-**On Target.** You and your group (or the target object) appear where you want to.
-
-**Off Target.** You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.
-
-**Similar Area.** You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another arcanist's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the incantation has no range limit, you could conceivably wind up anywhere on the plane.
-
+**On Target.** You and your group (or the target object) appear where you want to.  
+**Off Target.** You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.  
+**Similar Area.** You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another arcanist's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the incantation has no range limit, you could conceivably wind up anywhere on the plane.  
 **Mishap.** The incantation's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 bludgeoning damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
 
 ### Legendary Incantations
 Legendary incantations are best suited for Tier 4 play, levels 17+.
 
 #### Astral Projection
-*Legendary, 8 hours, Group (1-8), Debilitating (5), Costly (each participant must provide a jacinth worth at least 1000 gp and an ornately carved bar of silver worth at least 100 gp).*
+____
+**Rarity:** Legendary  
+**Cast Time:** 8 hours  
+**Tags:** Group (1-8), Debilitating (5), Costly (each participant must provide a jacinth worth at least 1000 gp and an ornately carved bar of silver worth at least 100 gp)
+**Duration:** See text
+____
+You and up to eight willing creatures within 30 feet  who participate in the incantation project your astral bodies into Border Shadow (the incantation fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.
 
-You and up to eight willing creatures within 30 feet  who participate in the incantation project your astral bodies into the Astral Plane (the incantation fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.
+Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut&mdash;something that can happen only when an effect specifically states that it does&mdash;your soul and body are separated, killing you instantly.
 
-Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut—something that can happen only when an effect specifically states that it does—your soul and body are separated, killing you instantly.
+Your astral form can freely travel through Border Shadow and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this effect, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Any damage dealt to your astral form affects your real body as well and persists after the effect ends.
 
-Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this effect, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Any damage dealt to your astral form affects your real body as well and persists after the effect ends. (continues)
-\page
-##### Astral Projection (cont)
 The effect ends for a participant when they use their action to end it. When the effect ends for an individual, the affected creature returns to its physical body, and it awakens.
 
-The effect might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the effect for that creature. If a creature's original body or its astral form drops to 0 hit points, the effect ends for that creature. If the incantation ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.
+The effect might also end early for you or one of your companions. A successful *dispel magic* spell used against an astral or physical body ends the effect for that creature. If a creature's original body or its astral form drops to 0 hit points, the effect ends for that creature. If the incantation ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.
 
 #### Gate
-*Legendary, 1 hour, Costly (a diamond worth at least 5000 gp), Cooldown (1 day)*
+____
+**Rarity:** Legendary
+**Cast Time:** 1 hour  
+**Tags:** Cooldown (24 hours), Costly (a diamond worth at least 5000 gp)
+**Duration:** 1 minute
+____
 
-You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for one minute.
+You conjure a portal linking an unoccupied space you can see within 30 feet to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for one minute.
 
 The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.
 
 Deities and other planar rulers can prevent portals created by this incantation from opening in their presence or anywhere within their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
 
 #### Irresistible Summons
-*Legendary, 1 hour, Group (4), Costly (a diamond worth at least 5000 gp), Cooldown (1 day)*
+____
+**Rarity:** Legendary  
+**Cast Time:** 1 hour  
+**Tags:** Cooldown (24 hours), Costly (a diamond worth at least 5000 gp), Group (4)
+**Duration:** Instantaneous
+____
 
 When you perform this incantation, you speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, a portal up to 20 feet in diameter opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the GM deems appropriate. It might leave, attack you, or help you.
 
 Deities and other planar rulers can prevent this incantation from working on any creature in their presence or anywhere in their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
 
 #### Total Transformation
-*Legendary, 24 hours, duration special, Exclusive, Location (a prepared incantation circle)*
-
+____
+**Rarity:** Legendary  
+**Cast Time:** 24 hours  
+**Tags:** Exclusive, Location (a prepared incantation circle)
+**Duration:** See text
+____
 Choose one creature. It must remain in the circle for the duration of the caster.  At the conclusion of the incantation, the target is transformed into another creature or into a non-magical object (as described below). An unwilling creature can make a DC 19 Wisdom saving throw, and if it succeeds, it isn't affected by this incantation.  
-**Duration.** The effect lasts until dispelled (counts as a legendary effect) or until the target is reduced to zero hit points, in which case it reverts to its original form with any excess damage carrying over. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.  
+**Duration.** The effect lasts until dispelled or until the target is reduced to zero hit points, in which case it reverts to its original form with any excess damage carrying over. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.  
 **Creature into Creature.** If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target's (or its level, if the target doesn't have a challenge rating), but cannot be a specific unique individual. The target's game statistics, including mental ability scores, are replaced by the statistics of the new form, although it does not gain any of the listed equipment. It retains its alignment and personality.
 
 The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.  
@@ -5204,40 +5324,50 @@ Shaken creatures cannot take reactions and make attacks at disadvantage.
 # Copyright
 This section contains legal stuff.
 
-<i class="far fa-copyright"></i> <year> This work is openly licensed via [CC BY-SA 4.0](https://creativecommons.org/publicdomain/by-sa/4.0/) except as noted. Noted material is licensed derivative work under the Open Gaming License 1.0a, presented below.
+<i class="far fa-copyright"></i> 2026 This work is openly licensed via [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) except as noted in a specific item. Noted material is licensed derivative work under the Open Gaming License 1.0a, presented below.
 \column
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 No generative AI was used in the production of this work. All images public domain.
 {{wide
-## Open Gaming License 1.0a
-THIS LICENSE IS APPROVED FOR GENERAL USE. PERMISSION TO DISTRIBUTE THIS LICENSE IS MADE BY WIZARDS OF THE COAST!
-
 OPEN GAME LICENSE Version 1.0a
+
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
-1. Definitions: (a)"Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b)"Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)"Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.
-2. 
-3. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
-4. Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
-5. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.
-6. Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
-7. Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
-}}
-\page
-{{wide
 
-9. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any 7.  Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
-10. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
-11. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
-12. Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.
-13. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
-14. Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
-15. Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
-16. Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
-17. COPYRIGHT NOTICE Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+Definitions: (a)"Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b)"Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)"Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.
 
-System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
 
-END OF LICENSE
+Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
+
+Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non- exclusive license with the exact terms of this License to Use, the Open Game Content.
+
+Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
+
+Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
+
+Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
+
+Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
+
+Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
+
+Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.
+
+Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
+
+Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
+
+Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
+
+Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
+
+COPYRIGHT NOTICE.
+
+Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+
+System Reference Document 5.0 Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
+
+END OF LICENSE 
 
 }}

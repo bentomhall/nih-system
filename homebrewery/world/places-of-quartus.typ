@@ -5,34 +5,33 @@
 )
 
 #let aside(body) = [\[#emph(body)\]]
-#let wide(body) = {place(
+#let wide(body) = place(
   top + center,
   scope: "parent",
   float: true,
-)[body]}
+  body,
+)
 
 #title("Places of Quartus")
-
-Presented by everyone's favorite Immortal Bard, edited by his dragon companion, Marceline.
-
-This work is openly licensed via https://creativecommons.org/publicdomain/by-sa/4.0/. #sym.copyright 2026
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work. All images public domain.
-
-Cover credit: *The Departure*, 1837, Thomas Cole.
-Credit: *The Spirit of War, 1851*, 1851, Jasper Francis Cropsey
-
-#figure(image("img/the_spirit_of_war.webp", width: 140%))
-
 #pagebreak()
+
+= Introduction
+#columns(2, [
+
+This initial tome is aimed at those wishing to run games set in Dawn of Hope, those wishing to build characters for the setting, as well as those who simply want to know more. Most of the player-facing mechanical information is found in the other tomes (Lineages of Dawn of Hope and Player Options of Dawn of Hope).
+
+Here you'll find geographic, religious, and political information for the setting, focusing primarily on the region known as western Noefra in the year 260 AC, during the age known as the Time of Troubles.
+
+The full setting wiki is at https://wiki.admiralbenbo.com. 
+== The Universe of Dawn of Hope
+The universe in which Dawn of Hope is set is a pocket-sized universe, with the main material plane (named the Mortal plane) roughly the size of the inner Solar System #aside[#sym.approx 2 AU, slightly larger than the orbit of Mars --AB]. Co-located with that Mortal Plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth and outermost planet (Quartus), as well as the planar regions to which that corresponds.
 
 #dnd-note[
 === Introducing the Author, the Immortal Bard
 Hello readers across the Great Dark Beyond! I am your humble author, the Immortal Bard #aside[yes, he insists on calling himself that, but his real name is Bard --ed] here to tell you about Quartus, or as you'll call it, the setting of the Dawn of Hope. Who am I? Well, for the first part, I am immortal #aside[actually only mostly ageless, he has avoided being killed for his obnoxious behavior mostly by running away very fast --ed], so I have had lots of time to delve into the mysteries of this universe. And now, courtesy of Vassarian (formerly of the Catalysts) and his lovely patron, I have been granted the opportunity to share some of it with you.
 
-As you will see, I am not the most serious of people #aside[that is the understatement of the age --ed]. Everything I am about to tell you is true, at least from a certain point of view. But I will add my own snark and feeble #aside[yup --ed] attempts at humor, at least when my lovely editor #aside[more about me below --ed] doesn't force me to take them out. I've collaborated with a certain Admiral (or so he calls himself) from your planet to translate the tomes into your language and insert the necessary academic and technical terms (don't blame me, I'm a free-spirited #strike[lover] field researcher, not a dusty scholar).]
+As you will see, I am not the most serious of people #aside[that is the understatement of the age --ed]. Everything I am about to tell you is true, at least from a certain point of view. But I will add my own snark and feeble #aside[yup --ed] attempts at humor, at least when my lovely editor #aside[more about me below --ed] doesn't force me to take them out. I've collaborated with a certain Admiral (or so he calls himself) from your planet to translate the tomes into your language and insert the necessary academic and technical terms (don't blame me, I'm a free-spirited #strike[lover] field researcher, not a dusty scholar).
+]
 
 #dnd-note[
 === Introducing the Editor, Marceline Kaelthia-warden  
@@ -40,25 +39,10 @@ I am please to make your acquaintance, and hope you will enjoy this tome. I am M
 
 I will do my best to keep the Bard's disruptive "jokes" to a minimum, and my interruptions and corrections will be set off with square brackets and italics #aside[they need an example, so something like this! --IB]...thanks Bard. I think they've got it by now.]
 
-= Introduction
-This initial tome is aimed at those wishing to run games set in Dawn of Hope, those wishing to build characters for the setting, as well as those who simply want to know more. Most of the player-facing mechanical information is found in the other tomes (Lineages of Dawn of Hope and Player Options of Dawn of Hope).
-
-Here you'll find geographic, religious, and political information for the setting, focusing primarily on the region known as western Noefra in the year 260 AC, during the age known as the Time of Troubles.
-== The Universe of Dawn of Hope
-The universe in which Dawn of Hope is set is a pocket-sized universe, with the main material plane (named the Mortal plane) roughly the size of the inner Solar System #aside[#sym.approx 2 AU, slightly larger than the orbit of Mars --AB]. Co-located with that Mortal Plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth and outermost planet (Quartus), as well as the planar regions to which that corresponds.
-
-#dnd-note[
-=== A Word about Metaphysics  
-Admiral Benbo here with a few technical matters.
-
-Dawn of Hope does not pretend that the underlying physical laws are those of Earth, with magic stapled on top as some form of "exception". There are no atoms or subatomic particles in DoH, no chemical reactions. Quantum mechanics is not a thing #aside[thankfully, my head hurts just thinking about it --IB] #aside[A very low bar for difficulty, to be sure --ed]. In fact, even such conservation laws as momentum, matter, and energy are not upheld by default. Instead, everything is made from aether, flavored (the technical term is _aspected_) in various ways. Different combinations of aspects result in different matter. Magic is thus just the application of resonant aetheric patterns to manipulate the aetheric aspects of surrounding matter.
-
-However, the *surface observables* of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying *reasons* for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.]
-
-#pagebreak()
-
+])
 = Geography of Noefra
-#wide[#image("img/Noefra-260-geographic.webp", width:140%)]
+#figure([#image("img/Noefra-260-geographic.webp", width:120%)])
+#columns(2, [
 Noefra is the original home of both humanity and the orcs, as well as the site of many of the most world-shaking events. Two other continents, Soefra and Oelfra, were split off in displays of magical might in ages past. Split north to south by the Giant's Spine Mountains and the barren, blasted Great Eastern Dustlands, the halves have developed nearly in isolation. 
 
 The East is dominated by the Dustlands, inhabited by wandering tribes of humans and orcs, and plagued by storms of acid and malevolent tornadoes. The southern side of the half-continent, including the great coastal Greensward and the barren Cerulean Desert (named for the blue tint to the sand) is home to dragons, some of whom rule over tribes of men and goblins, changed by draconic power into dragon-kin (the lesser of which are often called kobolds). On the eastern coast lies the expansive Golden Plain, home to the ancient Jinse culture, as well as the Shaanti forest, where most of the eastern ihmisi dwell. 
@@ -79,17 +63,28 @@ South of Kaelthia lies the Jungle of Fangs, a jungle valley once dominated by a 
 
 To the east across the West Moon Sea, lies the black-glass-surfaced, arcane-magic wasteland known as Moon's Vengeance. Once home to the aelven empire's capital, it was the target of the first druids who convinced the third moon to fall on it. Now inhabited only by ghosts, arcane workings, and the underground-dwelling remnants of the goroesi (often called dark elves) who escaped Moon's Fall by cutting themselves off from time and space for a time.
 
+#dnd-note[
+=== A Word about Metaphysics  
+Admiral Benbo here with a few technical matters.
+
+Dawn of Hope does not pretend that the underlying physical laws are those of Earth, with magic stapled on top as some form of "exception". There are no atoms or subatomic particles in DoH, no chemical reactions. Quantum mechanics is not a thing #aside[thankfully, my head hurts just thinking about it --IB] #aside[A very low bar for difficulty, to be sure --ed]. In fact, even such conservation laws as momentum, matter, and energy are not upheld by default. Instead, everything is made from aether, flavored (the technical term is _aspected_) in various ways. Different combinations of aspects result in different matter. Magic is thus just the application of resonant aetheric patterns to manipulate the aetheric aspects of surrounding matter.
+
+However, the surface observables of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying reasons for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.]
+])
+
 = A Short History of Western Noefra
-#aside[Finally, we get to talk about me --IB_ _Do we have to? --ed]
+#columns(2,[
+#aside[Finally, we get to talk about me --IB] #aside[Do we have to? --ed]
 == Prehistory: The Dawn War
 It's said that the Dreamer called the world into existence an uncountable time before time began. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
 
 And then Change rebelled and sought mastery over the others (or so the tale runs), splitting creation into camps that warred. The Eight fought against the One. At the end, something tore the Oblivion Gate open, and the Dreamer chose to enact the first and greatest sacrifice in its own being. It tore itself apart and with it the Names of its children the Primordials, creating the planes from their essence. Change, now stripped of his Name, was imprisoned in the Abyss. The lesser creations were scattered across the planes, with many of them becoming mortal, touched by the fires of the Dreamer's essence. Mortality is not a curse, it is a gift. The blood and nerves of the Dreamer became the Great Mechanism, tasked with keeping all in order throughout the planes. Its skin became the Crystal Sphere that wards out the denizens of the Great Dark Beyond. This all happened about 25,000 years before the present day.
 
-{{note
+#dnd-note[
 === Abbreviations
-Three terms are used for dates: Years Before Present (YBP), Before Cataclysm (BC), and After Cataclysm (AC). The first is used for approximate dates many thousand years ago or where the dates are highly uncertain. AC and BC are the commonly used terms in the modern western calendar, denoting years after or before the Cataclysm, which is taken as year zero. The current date is thus 260 AC, or 0 YBP.
+Three terms are used for dates: Years Before Present (YBP), Before Cataclysm (BC), and After Cataclysm (AC). The first is used for approximate dates many thousand years ago or where the dates are highly uncertain. AC and BC are the commonly used terms in the modern western calendar, denoting years after or before the Cataclysm, which is taken as year zero. The current date is thus 260 AC, or 0 YBP.]
 
+#dnd-note[
 === Brief Timeline
 - *Dawn War (ca 25 000 YBP)*. The Nameless rebels and is banished, planes formed.
 - *First Age (25 000 YBP -- 10 000 YBP)*. Titans and Wyrm fight off and on. Aelves and proteans serve, cower, or die. Ends with both sides weakened and Oelfra split off from the supercontinent.
@@ -97,8 +92,8 @@ Three terms are used for dates: Years Before Present (YBP), Before Cataclysm (BC
 - *Interregnum (4 000 YBP -- 2504 BC)*. Soefra splits from Noefra. Ihmisi and aelvar fight proxy battles, creating humans and orcs. Culminates in the War of Blood, which creates the Great Eastern Dustlands.
 - *Third Age (2504 BC -- 600 BC)*. The first gods ascend and are worshiped. Two great empires form, dominating east and west of Noefra. Ends (in the west) with the destruction of the imperial capital after the creation of the dragonborn, leading to the War of Souls.
 - *Second Interregnum (600 BC -- 205 AC)*. The War of Souls and the recovery therefrom leave the west exhausted. The east becomes more decadent and insular. The Cataclysm (0 AC) shatters everything and kills most of the population. Ends with the mutual re-discovery of surviving nations.
-- *Fourth Age (205 AC -- present)*. The current day. The nations and peoples of Western Noefra try to find their right place and shape. 
-}}
+- *Fourth Age (205 AC -- present)*. The current day. The nations and peoples of Western Noefra try to find their right place and shape.
+]
 
 == The First Age (ending ca 10k YBP)
 
@@ -114,14 +109,14 @@ This ended when a group of dissenters, shunned as "lesser" because they lacked t
 In the chaos, remnants of the aelvar seized the same artifacts used to split the continents at the end of the First Age and split off Soefra, trying to leave their traitorous primal bretheren behind and forge a new arcane empire.
 
 == The First Interregnum (ending 2504 BC)
-The period after Moon's Fall saw war between the primalist and arcane forces. The primalist ihmisi created orcs out of the proteans (now called goblins), mixing in animal elements via magic to stabilize them and make them suitable proxy warriors against the arcane-loving aelves (now called gwerin or high elves). In return, the gwerin created the first humans out of goblins by blending in some of their own elements (hence humans can interbreed with both elves and orcs, as they're cousins of sorts). Both of these two races, much faster breeding than the long-lived aelves, decided *not* to fight as commanded. Instead, society fractured into tribes who warred among themselves.
+The period after Moon's Fall saw war between the primalist and arcane forces. The primalist ihmisi created orcs out of the proteans (now called goblins), mixing in animal elements via magic to stabilize them and make them suitable proxy warriors against the arcane-loving aelves (now called gwerin or high elves). In return, the gwerin created the first humans out of goblins by blending in some of their own elements (hence humans can interbreed with both elves and orcs, as they're cousins of sorts). Both of these two races, much faster breeding than the long-lived aelves, decided _not_ to fight as commanded. Instead, society fractured into tribes who warred among themselves.
 
-This lasted until one orc, Gor'osh, whose tribe was enslaved and slaughtered and he himself was forced into being a host to a jotnar, rebelled against *everyone*. He and his shamanic sister gathered the dissident, outcast, and warlike groups of all races, but especially orcs and goblins, into a host that spread across central Noefra, enslaving or killing all in its path. The civilized folks, seeing themselves pressed hard, banded together to fight back. This was the War of Blood. In the final days, seeing the end of their people in sight, the First Heros (a mixed-race band of civilized folks) sought out the Cosmic Forge and enacted the Third Wish: "Through Faith, Power." Some of them ascended to become the first gods; the remainder their first priests and clerics. 
+This lasted until one orc, Gor'osh, whose tribe was enslaved and slaughtered and he himself was forced into being a host to a jotnar, rebelled against _everyone_. He and his shamanic sister gathered the dissident, outcast, and warlike groups of all races, but especially orcs and goblins, into a host that spread across central Noefra, enslaving or killing all in its path. The civilized folks, seeing themselves pressed hard, banded together to fight back. This was the War of Blood. In the final days, seeing the end of their people in sight, the First Heros (a mixed-race band of civilized folks) sought out the Cosmic Forge and enacted the Third Wish: "Through Faith, Power." Some of them ascended to become the first gods; the remainder their first priests and clerics. 
 
 With this power, the remaining Heroes made their way through stealth into Gor'osh's citadel to confront him. They only found his sister and the children of his immediate allies, whom they viciously and brutally slaughtered. When Gor'osh discovered this, he gave fully in to the demon, becoming the Demon Prince of Rage and Bloodshed and the first werewolf. Only one Hero survived his revenge strike, managing in the end to banish him to the Abyss. This ended the War of Blood, and Gor'osh's legacy cursed the orcs for generations with an unmangeable bloodlust.
 
 == The Third Age (ending 600 BC)
-The survivors of the War of Blood, mostly humans, with dwarves and elves (of both kinds) much reduced in power, took to the new divine magic with gusto. Much religious war followed. The "evil" races (goblins and orcs) were hunted to the marginal places of the continent, including the great waste that once was the home of Gor'osh and his empire (now the Great Eastern Dustlands). Two great empires arose; Jinse in the east and Tibor Imperia in the west. Between them, they had peace (mostly) for close to 1500 years.
+The survivors of the War of Blood, mostly humans, with dwarves and elves (of both kinds) much reduced in power, took to the new divine magic with gusto. Much religious war followed. The so-called evil races (goblins and orcs) were hunted to the marginal places of the continent, including the great waste that once was the home of Gor'osh and his empire (now the Great Eastern Dustlands). Two great empires arose; Jinse in the east and Tibor Imperia in the west. Between them, they had peace (mostly) for close to 1500 years.
 
 This ended (in the west) when mages, envious of the efforts of the Second Age, developed blood-magic-driven magical arts to embed fragments of stolen draconic souls into the unborn children of unwilling mothers in an effort to create (as you might have guessed), a viable soldier race. The result were the dragonborn. When they showed off this effort to the emperor and senate of Tibor Imperia, some of the imperial folks took exception to this evil. They sacrificed themselves in a ritual to erase the capital (including the senate and emperor) from the face of Quartus and from space and time itself. This touched off the War of Souls, a magical civil war that bent space and time and lasted for several hundred years (in fits and starts).
 
@@ -148,10 +143,10 @@ This peace was not to last, with the Kaelthian government falling into civil unr
 253 AC saw the Red Plague, an engineered fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, both the former God of Autumn (since deposed for too-aggressive meddling) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
 
 The date is now 260 AC, and now is the Time of Troubles. Adventurers have never been more needed.
-
+])
 
 = Planar Geography
-
+#columns(2, [
 Dawn of Hope has three primary planes and two secondary planes. The primary planes are the Mortal, the Astral, and the Elemental (subdivided into 12 regions, often called planes themselves). The main secondary plane is Shadow, the liminal transition between planes. The Abyss rounds out the tale of the planes; a pocket-plane prison and weeping abscess around a hole in reality, home of the demons.
 
 Each of these planes other than the Abyss plays a key role in the universal energy economy. The Mortal, being as it is the home of mortal beings, is the source of all anima (also called aether), the stuff and energy out of which all existence is created. This is released upon death (as well as periodically by normal souls) and transitions through Shadow's Mirrorhaven into the Astral, where the Great Mechanism, assisted by the gods, devils, and angels, distributes it to the other planes.  One large part is sent back down in the form of luminous aether released by Eua, the sun, to give light and energy to the Mortal. 
@@ -165,12 +160,12 @@ Each plane was constructed in the time before history began out of the True Name
 == The Mortal Plane
 The Mortal Plane consists of a central star, Eua, and four planets. Eua is approximately the same size and effective brightness and color as Earth's sun, although the fundamental principles by which it operates are different. The first planet, Primus, is considered uninhabitable, orbiting as it does at 0.25 AU. Its surface undergoes rapid seasonal changes, with each season lasting less than 12 Quartan days. Only elementals and other such resilient beings can tolerate the extremes of luminous energy here. The second two, Secundus and Tertius, are a dual planet, orbiting around their common center. Separated by only a few hundred miles, their atmospheres intermingle and some life migrates from one to the other. Their orbit is at 0.5 AU, leading to much more extreme seasons. Secundus is dominated by Earth and Air, leading to a planet with floating islands. Tertius is dominated by Water and Fire, leading to large oceans and masses of sentient plant life.
 
-#wide[#dnd-note[
+#dnd-note[
 === Mapping DoH Planes to Normal Great Wheel Planes
 For spells and effects that talk about specific planes (such as _blink_), use the table below. Note that DoH does not use cosmological alignment, and in fact does not talk about alignment as such. Angels, demons, and devils can all be good or evil depending on their individual choices.
 
 #table(columns: (1fr, auto),
-  table.header([*Standard Plane*, *Dawn of Hope Equivalent*]),
+  table.header("Standard Plane", "Dawn of Hope Equivalent"),
   "Abyss", "Abyss",
 "Astral", "Border Shadow",
 "Elemental Planes", "Elemental",
@@ -182,8 +177,8 @@ For spells and effects that talk about specific planes (such as _blink_), use th
 "Any other plane not mentioned", "Astral"
 )
 
-One caveat: all the *afterlife* portions of the planes are in Shadow. Only the divine (or fiendish) residences are in the Astral.
-]]
+One caveat: all the _afterlife_ portions of the planes are in Shadow. Only the divine (or fiendish) residences are in the Astral.
+]
 
 The fourth, Quartus, is the primary setting of Dawn of Hope. An Earth-like planet orbiting at slightly more than 1 AU, it boasts two moons (Quella and Teki) with periods of 32 and 8 days, respectively. It has a year of 384 days, usually divided into 12 equal months of 32 days (one orbital period of Quella), three for each season. Its orbit is circular within very tight tolerance, and its axial tilt is nearly 0 (seasons and weather being provided by elemental influence rather than axial tilt). Quartus has continents named Noefra, Soefra, Oelfra, Aenimos, and Perdatos. Noefra, and particularly the western half, are the subjects of most of this document. Only minimal information is provided about the other continents, as the Noefrans have only minimal contact with Soefra and none at all with the others.
 
@@ -220,21 +215,21 @@ At present, the elemental plane at the orbit of Quartus is usually divided into 
 
 #wide[
   #table(
-    columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr),
+    columns: (1fr, 1fr, 2fr, 3fr, 2fr, 2fr),
+    align: left + horizon,
     table.header("Plane", "Elements", "Aspects", "Inhabitants" , "Key Feature", "Lord"),
     "Clay", [Earth #sym.arrow Water], "Mutability, loss of self", "Dopplegangers, mimics, oozes", "The Street of Joy", "The Skin-dancer",
     "Stone", "Earth", "Endurance, greed", "Dao, stone-born dwarves, stone giants", "The All-Things Bazaar", "Korokonolkom",
-    [Iron", "Earth #sym.arrow Fire], "Industry, slavery", "Deep gnomes, stone-born dwarves", "Neversleep and the Utility Market", "The Gnoman Congress",
-    [Lava", "Fire #sym.arrow Earth], "Law, conquest, cruelty", "Vulkates, efreeti, and fire giants", "The Grand Court", "Alastor, World Judge",
+    [Iron], [Earth #sym.arrow Fire], "Industry, slavery", "Deep gnomes, stone-born dwarves", "Neversleep and the Utility Market", "The Gnoman Congress",
+    [Lava], [Fire #sym.arrow Earth], "Law, conquest, cruelty", "Vulkates, efreeti, and fire giants", "The Grand Court", "Alastor, World Judge",
     "Flame", "Fire", "Passion, destruction, rebirth", "efreeti, dragons, salamanders", "Fountain of Fiery Renewal", "Pyros, All-consuming",
-    [Lightning", "Fire #sym.arrow Air], "Spontaneity, unpredictability", "thunderbirds, dragons, gremlins, djinni", "The Eternal Storm", "Horagall the Thundering",
-    [Smoke", "Air #sym.arrow Fire], "Illusion, dreams", "stalkers, djinni, smoke mephits", "Dream Circus", "Fecor the Inscrutiable",
+    [Lightning], [Fire #sym.arrow Air], "Spontaneity, unpredictability", "thunderbirds, dragons, gremlins, djinni", "The Eternal Storm", "Horagall the Thundering",
+    [Smoke], [Air #sym.arrow Fire], "Illusion, dreams", "stalkers, djinni, smoke mephits", "Dream Circus", "Fecor the Inscrutiable",
     "Wind", "Air", "Discovery, wanderlust", "djinni, dragons, sky whales", "Player's Round", "Shaher, Voice of Creation",
-    [Cloud", "Air #sym.arrow Water], "Rest, depression", "djinni, winged aelves", "The Sleep of Ages Inn", "Lamies the Silent",
-    [Ice", "Water #sym.arrow Air], "Memory, grudges, vengeance", "frost giants, wolves, barbegazi", "Hall of Frozen Memory", "Elphas",
+    [Cloud], [Air #sym.arrow Water], "Rest, depression", "djinni, winged aelves", "The Sleep of Ages Inn", "Lamies the Silent",
+    [Ice], [Water #sym.arrow Air], "Memory, grudges, vengeance", "frost giants, wolves, barbegazi", "Hall of Frozen Memory", "Elphas",
     "Ocean", "Water", "Music, secrets, lies", "marid, sea creatures, ika ika, kalasaa", "The Living Library of Song", "Gremory",
-    [Mud", "Water #sym.arrow Earth], "Contentment, apathy, ennui", "oozes, toadlin, mud mephits", "Baths of Es Aluu", "None (no one cares"),
-  )
+    [Mud], [Water #sym.arrow Earth], "Contentment, apathy, ennui", "oozes, toadlin, mud mephits", "Baths of Es Aluu", "None (no one cares)")
 ]
 
 == The Abyss
@@ -243,8 +238,10 @@ A festering, partially sealed but eternally weeping wound in the planes, centere
 Other mortals (and immortals) have tried to use the jotnar as tools, trapping them inside themselves and feeding them on the souls and aether of others, gaining immortality and immense power themselves as a result. These are the Infected, called demons by most folks. Any demon of sufficient power is rejected by the Mortal and thrust back into the abyss unless summoned by a mortal (usually involving blood magic).
 
 The Abyss itself is approximately the size of Quartus, but devoid of natural solid matter. Everything that exists there was built by demons out of the souls and aether of those they absorbed elsewhere. While the inhabitants of the Abyss are a disorganized lot, each pursuing its own designs, they roughly fall into 5 camps, each headed by a Demon Prince, an extremely powerful entity who is powerful enough to carve out a stable domain.
+])
 
 = Gods and Worship
+#columns(2, [
 The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
 
 The Third Wish changed that. It allowed mortals to transcend death and, via the worship of others, ascend to immortality in the Astral by replacing their mortal soul (their spark) with a fragment of the True Name of that plane. But more than that, it allowed those mortals, now gods, to gain power from the Great Mechanism in proportion to their worship base and to claim dominion over various domains of mortal existence. These were the Old Gods. And this mechanism brought much violence. Worship brings power both to the worshipped and the worshiper, and network effects apply. An upstart could supplant the existing deities by subverting their worship and stealing their worshippers.
@@ -283,6 +280,7 @@ When your ready reserves are half depleted, most souls start being more wary abo
 For NPCs, being brought to 0 HP and then magically healed means they have a permanent injury. PCs don't conventionally use permanent injuries for entirely gameplay reasons. I don't like permanent injuries and neither do my players, but this is a great place to include them if you do like such things.
 ]
 
+#colbreak()
 === Aerielara, Jeweled Lady
 - Domain: Arts, beauty, music, sensuality, hedonism. *Trickery, Life*
 - Symbol: A stylized harp
@@ -444,9 +442,10 @@ Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species
 
 #sym.dagger The goblin lineage is a complex one, with a shared memory/thinking space. This shared memory is not a hive mind; it acts more like one person bleeding into another within the tribe. This makes them *genetically* ADHD, as well as literally smarter together than apart. They naturally pour some of their shared energy into a few individuals, transforming them into larger "hobgoblins" that are less prone to the tide-like enthusiasms because they have more distance from the shared memory space.
 ]
-
+])
 = Nations of Western Noefra, ca 260 AC.
-#wide[#image("img/Noefra-260AC-political.webp", width:140%)]
+#wide[#image("img/Noefra-260AC-political.webp", width:120%)]
+#columns(2, [
 
 == Auringon
 - Population: roughly 50,000 wind elves (ihmisi, but with some variations and shorter lives) and meztlan humans.
@@ -758,3 +757,12 @@ The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon a
 
 === Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
+])
+
+= Legal Notices
+
+#sym.copyright 2026, Benjamin Hall. This work is openly licensed via https://creativecommons.org/licenses/by/4.0/. 
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+No generative AI was used in the production of this work. All images original.

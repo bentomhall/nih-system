@@ -7,7 +7,7 @@ When you would be hit by an attack or fail a saving throw against an ability tha
 
 Alternately, you can expend a spell slot of 1st level or higher when you use this ability. If you do so, roll an additional d8 per level of the slot expended when determining the damage reduction.
 
-You gain one Backlash point per die rolled, up to a maximum of your twice your Intelligence modifier. You lose any accumulated Fracture points when you finish a long or short rest.
+You gain one Backlash point per die rolled, up to a maximum of your twice your Intelligence modifier. You lose any accumulated Backlash points when you finish a long or short rest.
 
 L2: Fracture
 When you deal damage with a spell of 1st level or higher, you can choose to expend one or more Backlash points. If you do so, roll 1d4 for each point expended. You can split the total as force damage between any number of targets you damaged, but you take half as much force damage as well.

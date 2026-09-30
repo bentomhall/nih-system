@@ -272,7 +272,7 @@ The wall-builders, native to the Sea of Grass, are a mixed group who can trace t
 
 Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. They're also the most community-oriented by far. Their name comes from a tradition that the first thing built in a new settlement is a wall, at least a palisade. This stems from the days when the Kaelthians who became the wall-builders thought they were alone in the world besides the monsters.  
 **Ability Score Increase**. +1 Constitution, +1 Wisdom  
-**Linguist.** Wall-builders live in the most melting-pot areas linguistically. This gives many of them a knack for picking up languages.When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments; enough to be understood, but not enough to convey subtle details.
+**Linguist.** Wall-builders live in the most melting-pot areas linguistically. This gives many of them a knack for picking up languages. When you listen to conversation in a language you don't speak for at least 10 minutes, you can pick up the rudiments; enough to be understood, but not enough to convey subtle details.
 
 Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.  
 **Diplomat.** When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.

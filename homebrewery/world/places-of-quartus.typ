@@ -12,9 +12,6 @@
   body,
 )
 
-#title("Places of Quartus")
-#pagebreak()
-
 = Introduction
 #columns(2, [
 

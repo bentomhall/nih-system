@@ -1,20 +1,11 @@
 #import "@preview/owlbear:0.0.1": *
+#import "functions.typ": *
 #show: book-template.with(
   chapters: false,
-  dropcaps: false
+  dropcaps: false,
 )
 
-#let aside(body) = [\[#emph(body)\]]
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
+#cover-page("Lineages of Quartus", "A guide to the cultures and lineages, playable and not, of Western Noefra", "Admiral Benbo", image("img/the_departure.webp"))
 
 = Introduction
 #columns(2, [

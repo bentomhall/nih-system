@@ -4,13 +4,9 @@
   dropcaps: false
 )
 
-#let aside(body) = [\[#emph(body)\]]
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
+#import "functions.typ": *
+
+#cover-page("Places of Quartus", "A Guide to the planes, places, gods and nations of Dawn of Hope, compatible with 5e.", "Admiral Benbo", image("img/the_spirit_of_war.webp"))
 
 = Introduction
 #columns(2, [

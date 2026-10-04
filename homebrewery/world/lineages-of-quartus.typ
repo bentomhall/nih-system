@@ -5,7 +5,7 @@
   dropcaps: false,
 )
 
-#cover-page("Lineages of Quartus", "A guide to the cultures and lineages, playable and not, of Western Noefra", "Admiral Benbo", image("img/the_departure.webp"))
+#cover-page("Lineages of Quartus", "A guide to the cultures and lineages, playable and not, of Western Noefra", "Admiral Benbo", none)
 
 = Introduction
 #columns(2, [

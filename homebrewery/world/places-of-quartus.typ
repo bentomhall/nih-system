@@ -6,7 +6,7 @@
 
 #import "functions.typ": *
 
-#cover-page("Places of Quartus", "A Guide to the planes, places, gods and nations of Dawn of Hope, compatible with 5e.", "Admiral Benbo", image("img/the_spirit_of_war.webp"))
+#cover-page("Places of Quartus", "A Guide to the planes, places, gods and nations of Dawn of Hope, compatible with 5e.", "Admiral Benbo", none))
 
 = Introduction
 #columns(2, [
@@ -34,7 +34,7 @@ I will do my best to keep the Bard's disruptive "jokes" to a minimum, and my int
 
 ])
 = Geography of Noefra
-#figure([#image("img/Noefra-260-geographic.webp", width:120%)])
+#figure([#image("img/Noefra-260-geographic.jpeg", width:120%)])
 #columns(2, [
 Noefra is the original home of both humanity and the orcs, as well as the site of many of the most world-shaking events. Two other continents, Soefra and Oelfra, were split off in displays of magical might in ages past. Split north to south by the Giant's Spine Mountains and the barren, blasted Great Eastern Dustlands, the halves have developed nearly in isolation. 
 
@@ -437,7 +437,7 @@ Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species
 ]
 ])
 = Nations of Western Noefra, ca 260 AC.
-#wide[#image("img/Noefra-260AC-political.webp", width:120%)]
+#wide[#image("img/Noefra-260AC-political.jpeg", width:120%)]
 #columns(2, [
 
 == Auringon

@@ -17,7 +17,7 @@ ___
 \page
 
 # Introduction
-This game is designed to explore "paths not taken" for the venerable TTRPG it originally stems from. A love letter from a long-term fan. What might it look like if the historical constraints (some may say sacred cows; others may say legacy) were relaxed? If, instead of only lightly adhering to design principles like bounded accuracy and such, it bought in fully? If it made no pretense at being a generic game and instead focused on what it does best (that is, small-unit fantasy adventures in the heroic mode)? This is my attempt at exploring that space.å
+This game is designed to explore "paths not taken" for the venerable TTRPG it originally stems from. A love letter from a long-term fan. What might it look like if the historical constraints (some may say sacred cows; others may say legacy) were relaxed? If, instead of only lightly adhering to design principles like bounded accuracy and such, it bought in fully? If it made no pretense at being a generic game and instead focused on what it does best (that is, small-unit fantasy adventures in the heroic mode)? This is my attempt at exploring that space.
 
 NIH has been designed around my long-running campaign world, [Dreams of Hope](https://wiki.admiralbenbo.com) and its primary planet, Quartus. It should be relatively easily ported to other settings, although some of the content (cultures, deities, and backgrounds especially) will have to change.
 

@@ -1,8 +1,8 @@
-#import "@preview/owlbear:0.0.1": *
+#import "@preview/owlbear-evolved:0.0.1": *
 #show: book-template.with(
-  chapters: false,
-  dropcaps: false
+  chapters: false
 )
+
 
 #import "functions.typ": *
 

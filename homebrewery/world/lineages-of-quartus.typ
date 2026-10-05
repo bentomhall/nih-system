@@ -1,8 +1,7 @@
-#import "@preview/owlbear:0.0.1": *
+#import "@preview/owlbear-evolved:0.0.1": *
 #import "functions.typ": *
 #show: book-template.with(
-  chapters: false,
-  dropcaps: false,
+  chapters: false
 )
 
 #cover-page("Lineages of Quartus", "A guide to the cultures and lineages, playable and not, of Western Noefra", "Admiral Benbo", none)

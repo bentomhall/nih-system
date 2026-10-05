@@ -1,7 +1,6 @@
-#import "@preview/owlbear:0.0.1": *
+#import "@preview/owlbear-evolved:0.0.1": *
 #show: book-template.with(
-  chapters: false,
-  dropcaps: false
+  chapters: false
 )
 
 #set figure.caption(position: top)
@@ -64,7 +63,7 @@ As an Armsman, you gain the following class features.
 - *Hit Points at 1st Level:* 10 + your Constitution modifier.  
 - *Hit Points at Higher Levels:* 1d10 (or 6) + your Constitution modifier per Armsman level after 1st.
 ]
-
+#colbreak()
 ==== Proficiencies
 #flush-block[
 - *Armor:* all armor, shields  
@@ -81,6 +80,12 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a martial weapon and a shield or (b) two martial weapons  
 - (a) a light crossbow and 20 bolts or (b) two handaxes  
 - (a) a dungeoneer's pack or (b) an explorer's pack
+
+=== Second Wind
+You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can spend 1 STA and use a bonus action to regain hit points equal to 1d10 + your armsman level. The cost increases by 1 STA each time you use it, resetting to 1 when you finish a long rest.
+
+=== Stamina
+As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier and you regain expended points when you finish a short or long rest.
 ]
 #figure(caption: "The Armsman",
   table(align:center, columns: (1fr, 1fr, auto, 1fr, 1fr),
@@ -108,19 +113,13 @@ You start with the following equipment, in addition to the equipment granted by 
   )
 )
 #columns(2)[
-=== Second Wind
-You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can spend 1 STA and use a bonus action to regain hit points equal to 1d10 + your armsman level. The cost increases by 1 STA each time you use it, resetting to 1 when you finish a long rest.
-
-
-=== Stamina
-As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier and you regain expended points when you finish a short or long rest.
-
 === Weapon Specialization
 You are better than most at using the additional properties of your weapon. While wielding a weapon, you gain the features below for that weapon. If the weapon has multiple additional properties, you must choose which feature to apply on any individual attack. If a feature calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
 - *Battering* (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.  
 - *Cleaving* (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.  
-- *Light* The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.  
+- *Light* The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.
+#colbreak()
 - *Loading* You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to zero hit points, you can choose to have the bolt pass through the target at a creature behind the slain creature by spending 1 STA. The closest creature on a 5 foot wide line connecting you to the slain creature and extending 30 feet  behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.  
 - *Parrying* (greatsword, halberd, longsword) When a creature misses you with a weapon attack from within your reach, you can make an attack with your weapon against them as a reaction. If you take the Deflect action, you can make the counter attack whether the triggering attack hits or misses.  
 - *Precise* (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on a 19 or 20.  
@@ -317,7 +316,7 @@ Starting at 6th level, you have gained a measure of implacability. No one can st
 - When you are grappled or restrained by an ability that requires a check to escape, you can do so once per turn without expending an action. Additionally, you have advantage on Strength (Athletics) checks made to impose a grapple.
 - When you take the Dash action, you add movement equal to twice your speed instead of only equal to your speed. Additionally, when you take the Dash action, move at least 10 feet, and end your movement within reach of a creature, you can immediately make an unarmed attack against them as part of that action.
 - You gain resistance to lightning and thunder damage.
-
+#colbreak()
 ==== Overcharged
 Starting at 10th level, the lightning courses through your blood. You gain the following benefits.
 
@@ -357,7 +356,7 @@ Additionally, you can choose to meld with up to two one-handed magical weapons y
 At 3rd level you gain the two-weapon fighting style (allowing you to add your ability modifier to the damage dealt when using two-weapon fighting). When you hit with your aetheric blades, you can spend a shaping die to increase the damage done by the amount rolled.
 
 Additionally, you make the extra attack from wielding two light weapons as part of the Attack action instead of a bonus action. You can still only make this extra attack once per turn.
-
+#colbreak() 
 ==== Blurred Step
 Starting at level 6, while raging, you can use your reaction to move up to your speed toward anyone who attacked you or cast a spell with you as a target. This movement does not provoke opportunity attacks if you expend a shaping die as part of the reaction.
 
@@ -405,6 +404,14 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a component pouch or (b) an arcane focus
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - Leather armor, any simple weapon, and two daggers
+
+=== Eldritch Blast
+The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "Eldritch Blast".
+
+At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a ranged spell attack, using Charisma as the ability score. On a hit, the bolt deals 1d12 + your Charisma modifier bludgeoning or piercing (your choice) damage to the target. This damage increases by 1d12 at level 5, 11, and 17. This counts as casting a cantrip and the damage is magical for the purpose of overcoming resistance or immunity.
+
+=== Otherworldly Patron
+At 1st level, you have struck a bargain with an otherworldly being of your choice and formed a pact that is shaped by their attitudes and desires for you: Pact of Destruction, Pact of Protection, or Pact of Inquiry, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
 ]
 
 
@@ -437,14 +444,6 @@ You start with the following equipment, in addition to the equipment granted by 
   )
 ]
 #columns(2)[
-=== Eldritch Blast
-The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "Eldritch Blast".
-
-At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a ranged spell attack, using Charisma as the ability score. On a hit, the bolt deals 1d12 + your Charisma modifier bludgeoning or piercing (your choice) damage to the target. This damage increases by 1d12 at level 5, 11, and 17. This counts as casting a cantrip and the damage is magical for the purpose of overcoming resistance or immunity.
-
-=== Otherworldly Patron
-At 1st level, you have struck a bargain with an otherworldly being of your choice and formed a pact that is shaped by their attitudes and desires for you: Pact of Destruction, Pact of Protection, or Pact of Inquiry, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
-
 === Spellcasting
 Beholden are not traditional spellcasters. They do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via invocations and other means, and do learn cantrips.
 

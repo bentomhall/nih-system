@@ -1,5 +1,4 @@
 
-#set page(paper: "us-letter", background: none, flipped: false, margin: (left: 15mm, right: 15mm, top: 30mm, bottom: 30mm), numbering: "1", number-align: start)
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
   top + center,

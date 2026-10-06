@@ -857,7 +857,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 === Stamina
 As a bounty hunter, you have a pool of energy called stamina you can use to fuel your non-magical exploits. You have a number of stamina points as shown in the Stamina column of the Bounty Hunter table. Expended stamina is restored when you finish a short rest.
-
+#wide[
 #dndtab("The Bounty Hunter",
   "Level", "Proficiency Bonus", "Features", "Focused Foe Die", "Stamina (STA)", "Spell Points (SP)", "Max Spell Level",
     "1", "+2", "Focused Foe, Natural Explorer", "d4", "1", "---", "---",
@@ -881,7 +881,7 @@ As a bounty hunter, you have a pool of energy called stamina you can use to fuel
     "19", "+6", "Ability Score Improvement", "d8", "15", "57", "5",
     "20", "+6", "Foe Slayer", "d8", "15", "64", "5",
   )
-)
+]
 
 
 === Focused Foe
@@ -1217,11 +1217,9 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) leather armor, (b) scale armor, or (c, if proficient) chain mail
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - (a) Tinkerer's tools, (b) Smith's tools
-
-#figure(
-  caption: "The Inventor",
-  table(columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr),
-    table.header("Level", "Prof. Bonus", "Features", "Charge Die", "Maximum Charges", "Charge Limit"),
+#wide[
+#dndtab("The Inventor",
+    "Level", "Prof. Bonus", "Features", "Charge Die", "Maximum Charges", "Charge Limit",
     "1st", "+2", "Archetype, Alchemical Munitions", "---", "---", "---",
     "2nd", "+2", "Clockwork Battery, Energy Augmentation, Mechanical Talent", "d6", "5", "2",
     "3rd", "+2", "Archetype Feature, Clockwork Friend, Multitool", "d6", "5", "2",
@@ -1241,10 +1239,8 @@ You start with the following equipment, in addition to the equipment granted by 
     "17th", "+6", "Expert Energy Synthesis", "d12", "30", "5",
     "18th", "+6", "---", "d12", "30", "5",
     "19th", "+6", "Ability Score Improvement", "d12", "36", "5",
-    "20th", "+6", "Self Repair Circuits", "d12", "36", "5",
-  )
-)
-
+    "20th", "+6", "Self Repair Circuits", "d12", "36", "5",)
+]
 
 === Archetype
 Adventuring inventors fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: The chemist, who specializes in alchemical munitions and other consumables, the Gearhead, who specializes in enhancing his armor until he's a walking tank, and the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
@@ -1390,9 +1386,8 @@ Additionally, you can hastily concoct a munition of your choice by expending a c
 ==== Alchemical Discoveries
 At 9th level you learn the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
-#table(
-  columns: (1fr, 1fr, 1fr),
-  table.header("Rarity", "GP cost", "Time"),
+#dndtab("Formula Cost",
+  "Rarity", "GP cost", "Time",
   "Common", "25 gp", "1 day",
   "Uncommon", "100 gp", "2 days",
   "Rare", "500 gp", "10 days"
@@ -1502,9 +1497,8 @@ You start with the following equipment, in addition to the equipment granted by 
 === Archetype
 Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Forgemaster, who specializes in enhancing his armor until he's a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-#figure(caption: "The Mechanist",
-  table(columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr),
-     table.header("Level", "Proficiency Bonus", "Features", "Max. Aether Charge", "Spells Known (max level)", "Simultaneous Infusions"),
+#dndtab("The Mechanist",
+     "Level", "Proficiency Bonus", "Features", "Max. Aether Charge", "Spells Known (max level)", "Simultaneous Infusions",
      "1st", "+2", "Aether Engine, Archetype, Infused Spells", "2", "2 (1st)", "1",
      "2nd", "+2", "Charged Strike, Mechanical Talent", "3", "3", "1",
      "3rd", "+2", "Archetype Feature, Clockwork Friend", "3", "3", "1",
@@ -1524,9 +1518,7 @@ Adventuring mechanists fall into their specialization fairly early. Three such s
      "17th", "+6", "---", "28", "10 (5th)", "5",
      "18th", "+6", "---", "28", "10", "5",
      "19th", "+6", "Ability Score Improvement", "32", "11", "6",
-     "20th", "+6", "Overclocked Aether Engine", "32", "11", "6",
-  )
-)
+     "20th", "+6", "Overclocked Aether Engine", "32", "11", "6",)
 
 
   === Aether Engine
@@ -1536,7 +1528,8 @@ If you do not have the aether engine on your person, you cannot use abilities th
 === Infused Spells
 At first level, you've learned to replicate the patterns of selected spells, albeit in a completely unconventional fashion. By carefully fashioning trinkets out of wire and crystal and gears (or laying patterns of wire and crystal into your existing items), you can resonate the ambient aether as if you cast the spells yourself, as long as they are linked to your Aether Engine. This is called “infusing” the spell into your AE, and your overall process as Spell Infusion.
 
-#table(columns: (1fr, 1fr, 1fr), table.header("Aether Charge", "Spell Level", "Class Level"),
+#dndtab("Aether Charge per Spell Slot",
+  "Aether Charge", "Spell Level", "Class Level",
 "2", "1", "1",
 "3", "2", "4",
 "5", "3", "8",
@@ -1645,8 +1638,8 @@ Additionally, as long as you have an alchemist's tool set, you can create vials 
 ==== Expanded Spell List
 The following spells are added to your spell list at the indicated levels.
 
-#table(columns:(1fr, auto),
-  table.header("Level", "Spells"),
+#dndtab("Chemist Spells",
+  "Level", "Spells",
   "1", [_absorb elements_, _cure wounds_],
   "4", [_aid_, _blindness/deafness_],
   "8", [_catnap_, _erupting earth_],
@@ -1675,9 +1668,8 @@ Additionally, you can hastily concoct a munition of your choice by expending 3 a
 ==== Alchemical Discoveries
 At 9th level, you have learned the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
-#table(
-  columns: (1fr, 1fr, 1fr),
-  table.header("Rarity", "GP cost", "Time"),
+#dndtab("Chemist Formula Cost",
+  "Rarity", "GP cost", "Time",
   "Common", "25 gp", "1 day",
   "Uncommon", "100 gp", "2 days",
   "Rare", "500 gp", "10 days"
@@ -1895,8 +1887,8 @@ As a Sinner, your fervent devotion to your Oath grants you certain spells.
 
 Once you gain access to a oath spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the paladin spell list, the spell is nonetheless an paladin spell for you.
 
-#table(columns: (1fr, auto),
-  table.header("Paladin Level", "Oath Spells"),
+#dndtab("Oath Spells",
+  "Paladin Level", "Oath Spells",
   "3rd", [_disguise self, protection from evil and good_],
   "5th", [_calm emotions, suggestion_],
   "9th", [_fear, speak with dead_],
@@ -1962,30 +1954,22 @@ You start with the following equipment, in addition to the equipment granted by 
 === Planar Attunement
 Choose one of the inner planes: one of the general Elemental planes (Fire, Earth, Air, or Water), Mirrorhaven or Beastholme. You have advantage on any ability checks you make when you are tracking, interacting with, or identifying creatures from this plane or sub-planes (or their works). You also suffer no ill environmental effects that might otherwise occur while you are on this plane. When you reach level 6, level 11 and level 14, choose another plane from this list to gain the same benefits.
 
-#wide[#figure(
-  caption: "Planar Elements",
-  table(
-    columns: (auto, 1fr, 1fr),
-    table.header("Plane (Subplanes)", "Primary Damage Type", "Secondary Damage Type"),
+#wide[#dndtab("Planar Elements",
+    "Plane (Subplanes)", "Primary Damage Type", "Secondary Damage Type",
     "Air (Ash, Wind, Storm)", "Thunder", "Slashing",
     "Beastholme", "Necrotic", "Poison",
     "Earth (Clay, Stone, Coal)", "Bludgeoning", "Force",
     "Fire (Lava, Flame, Lightning)", "Fire", "Lightning",
     "Mirrorhaven", "Radiant", "Psychic",
-    "Water (Ice, Ocean, Mud)", "Cold", "Acid"
-  )
-)]
+    "Water (Ice, Ocean, Mud)", "Cold", "Acid")]
 
 Each plane is associated with two damage types as shown in the Planar Element Table above. This primarily affects your Protective Ward ability, but also influences your Planar Resistance feature.
 
 === Planar Knowledge
 At first level you gain proficiency in the Arcana skill (or another skill of your choice if you already have proficiency with Arcana). When you make an ability check that adds your arcana proficiency, you can add twice your proficiency bonus instead.
 
-#figure(
-  caption: "The Planar Warrior",
-  table(
-    columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Spells Known", "1st", "2nd", "3rd", "4th", "5th"),
+#wide[#dndtab("The Planar Warrior",
+    "Level", "Proficiency Bonus", "Features", "Spells Known", "1st", "2nd", "3rd", "4th", "5th",
     "1st", "+2", "Planar Knowledge, Planar Attunement, Protective Ward", "--", "--", "--", "--", "--", "--",
     "2nd", "+2", "Weapon Specialization, Spellcasting", "2", "2", "--", "--", "--", "--",
     "3rd", "+2", "Planar Devotion, Devotion Spells", "3", "3", "--", "--", "--", "--",
@@ -2005,9 +1989,7 @@ At first level you gain proficiency in the Arcana skill (or another skill of you
     "17th", "+6", "Planar Bond", "10", "4", "3", "3", "3", "1",
     "18th", "+6", "Planar Body", "10", "4", "3", "3", "3", "1",
     "19th", "+6", "Ability Score Improvement", "11", "4", "3", "3", "3", "2",
-    "20th", "+6", "Planar Devotion Feature", "11", "4", "3", "3", "3", "2",
-  )
-)
+    "20th", "+6", "Planar Devotion Feature", "11", "4", "3", "3", "3", "2",)]
 
 
 
@@ -2106,9 +2088,8 @@ Devotees of Immolating Lava combine fire and earth into destructive blasts of en
 
 ==== Devotion Spells
 You gain the devotion spells at the planar warrior levels listed.
-#table(
-  columns: (1fr, auto),
-  table.header("Planar Warrior Level", "Spells"),
+#dndtab("Lava Bonus Spells",
+  "Planar Warrior Level", "Spells",
   "3rd", [_burning hands_, _earth tremor_],
   "5th", [_heat metal_, _earthbind_],
   "9th", [_fireball_, _meld into stone_],
@@ -2134,9 +2115,8 @@ At 20th level, your devotion to earth and fire is total. As an action you can tr
 Like a hurricane, devotees of the primal storm sweep through the battlefield, leaving only devastation in their wake. Devoted to air and water, they prefer quick attacks and rapid movement to standing and fighting.
 #colbreak()
 ==== Devotion Spells
-#table(
-  columns: (1fr, auto),
-  table.header("Planar Warrior Level", "Spells"),
+#dndtab("Storm Bonus Spells",
+  "Planar Warrior Level", "Spells",
   "3rd", [_feather fall_, _thunderwave_],
   "5th", [_dust devil_, _gust of wind_],
   "9th", [_fly_, _lightning bolt_],
@@ -2162,9 +2142,8 @@ At 20th level, your devotion to air and water is total. As an action you can tra
 Those who are drawn to the deathly chill of winter often also find a home among the necrotic, wasting energies of the Waste. These are the devotees of the Devouring Winter. They drain the life from their foes and freeze them in place, hampering their movement and regaining strength from their suffering.
 
 ==== Devotion Spells
-#table(
-  columns: (1fr, auto),
-  table.header("Planar Warrior Level", "Spells"),
+#dndtab("Winter Bonus Spells",
+  "Planar Warrior Level", "Spells",
   "3rd", [_ice knife_, _ray of sickness_],
   "5th", [_invisibility_, _snowball swarm_],
   "9th", [_speak with dead_, _vampiric touch_],
@@ -2188,9 +2167,8 @@ At 20th level, your devotion to ice and shadow is total. As an action you can tr
 Those who are drawn to the heat of the summer often also find a home among the shifting colors and bewitching sights of Mirrorhaven. These are the devotees of the Beguiling Summer.
 
 ==== Devotion Spells
-#table(
-  columns: (1fr, auto),
-  table.header("Planar Warrior Level", "Spells"),
+#dndtab("Summer Bonus Spells",
+  "Planar Warrior Level", "Spells",
   "3rd", [_charm person_, _faerie fire_],
   "5th", [_calm emotions_, _moonbeam_],
   "9th", [_daylight_, _hypnotic pattern_],
@@ -2405,9 +2383,8 @@ Starting at 6th level, you've become even better at providing distractions for o
 ==== Trick Attack
 At 9th level, you learn to impose conditions on those that you hit with your Sneak Attacks by forgoing some of the damage. Each condition has a cost in sneak attack dice forgone, a saving throw necessary to apply the condition (or --- for those that are applied automatically by spending the resource), and a duration. The DC for all of these saving throws is *8 + your proficiency bonus + your Dexterity modifier*. If you have expertise in Sleight of Hand, the DC increases by half your proficiency bonus. You can only apply one condition each time you apply Sneak Attack.
 
-#table(
-  columns:(2fr, 1fr, 1fr, 3fr),
-  table.header("Condition", "Cost", "Save", "Duration"),
+#dndtab("Trick Attack",
+  "Condition", "Cost", "Save", "Duration",
   "blinded", "2 dice", "CON", "End of your next turn",
   "charmed", "2 dice", "WIS", "1 minute, can attempt save at end of each of their turns to end.",
   "deafened", "1 die", "CON", "End of your next turn",
@@ -2428,9 +2405,8 @@ Starting at 13th level, you've learned to mold your aether to mimic that of othe
 ==== Deceive the Universe
 Starting at 17th level, you can attempt to cast any spell of 7th level or lower or use any incantation. Make a Charisma (Deception) check against the DC listed in the table below. This attempt takes the same time as the regular casting time and any material components. On a success, the spell or incantation takes effect, using Charisma as the requisite spellcasting modifier where appropriate. Once you use this feature once, you incur 2 levels of exhaustion every time you use it again until you finish a long rest. You cannot apply your Stroke of Luck or Reliable Talent features to this roll.
 
-#table(
-  columns: (auto, auto),
-  table.header("Type", "DC"),
+#dndtab("Deceive the Universe",
+  "Type", "DC",
   "Spell", "14 + spell level",
   "Incantations", "---",
   "--- Common", "12",
@@ -2480,13 +2456,9 @@ You can mark creatures with this feature a number of times equal to your Charism
 
 Your Arcane Manipulation die changes when you reach certain levels in this class as shown on the Manipulation die column of the Spellblade table. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
 
-
-#figure(
-  caption: "The Spellblade",
-  table(
-    align: left,
-    columns: (1fr, 3fr, 5.5fr, 2.5fr, 2fr, 2fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Manipulation Die", "Spells Prepared", "Cantrips Known", "Skill Tricks Known", "1st", "2nd", "3rd", "4th", "5th"),
+#wide[
+#dndtab("The Spellblade",
+    "Level", "Proficiency Bonus", "Features", "Manipulation Die", "Spells Prepared", "Cantrips Known", "Skill Tricks Known", "1st", "2nd", "3rd", "4th", "5th",
     "1st", "+2", "Arcane Manipulation, Spellcasting", "d6", "1", "2", "--", "2", "--", "--", "--", "--",
     "2nd", "+2", "Expertise, Skill Tricks", "d6", "1", "2", "1", "2", "--", "--", "--", "--",
     "3rd", "+2", "Spellblade Focus", "d6", "2", "2", "1", "3", "--", "--", "--", "--",
@@ -2506,10 +2478,8 @@ Your Arcane Manipulation die changes when you reach certain levels in this class
     "17th", "+6", "Channeling (4th level)", "d12", "9", "6", "5", "4", "3", "3", "2", "1",
     "18th", "+6", "Spellblade Focus Feature", "d12", "9", "6", "5", "4", "3", "3", "2", "1",
     "19th", "+6", "Ability Score Improvement", "d12", "10", "6", "6", "4", "3", "3", "3", "2",
-    "20th", "+6", "Superior Manipulation", "d12", "10", "6", "6", "4", "3", "3", "3", "2",
-  )
-)
-
+    "20th", "+6", "Superior Manipulation", "d12", "10", "6", "6", "4", "3", "3", "3", "2",)
+]
 
 === Spellcasting
 You have learned to untangle and reshape the fabric of reality in harmony with your wishes.
@@ -2578,9 +2548,8 @@ While many spellblades are best at tearing down their foes, those who focus on i
 ==== Focus spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as their spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Spellblade Level", "Focus Spells"),
+#dndtab("Inspiration Bonus Spells",
+  "Spellblade Level", "Focus Spells",
   "3rd", [_healing word_, _heroism_],
   "7th", [_aid_, _hold person_],
   "14th", [_protection from energy_, _beacon of hope_],
@@ -2611,9 +2580,8 @@ Society-focused spellblades include hired duelist as well as others whose weapon
 ==== Focus Spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as the spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Spellblade Level", "Focus Spells"),
+#dndtab("Society Bonus Spells",
+  "Spellblade Level", "Focus Spells",
   "3rd", [_command_, _inflict wounds_],
   "7th", [_calm emotions_, _invisibility_],
   "14th", [_bestow curse_, _remove curse_],
@@ -2641,9 +2609,8 @@ Spellblades that focus on war have chosen to focus on all-out combat and destroy
 ==== Focus spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as their spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Spellblade Level", "Focus Spells"),
+#dndtab("War Bonus Spells",
+  "Spellblade Level", "Focus Spells",
   "3rd", [_guiding bolt_, _magic missile_],
   "7th", [_shatter_, _scorching ray_],
   "14th", [_lightning bolt_, _protection from energy_],
@@ -2808,12 +2775,9 @@ When you deal this extra damage, you gain Focus, which can be spent to fuel othe
 
 Starting at 8th level, when you hit a creature that is concentrating and deal the additional damage, they have disadvantage on the concentration check.
 
-
-#figure(
-  caption: "The Warden",
-  table(
-    columns:(1fr, 1fr, auto, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Stamina"),
+#wide[
+#dndtab("The Warden",
+    "Level", "Proficiency Bonus", "Features", "Stamina",
     "1st", "+2", "Exceptional Stamina, Furious Blow, Rage, Unarmored Defense", "1 + CON",
     "2nd", "+2", "Reckless Attack, Danger Sense", "2 + CON",
     "3rd", "+2", "Primal Path, Weapon Specialization", "3 + CON",
@@ -2833,9 +2797,8 @@ Starting at 8th level, when you hit a creature that is concentrating and deal th
     "17th", "+6", "Brutal Critical (3 dice)", "17 + CON",
     "18th", "+6", "Magebane", "18 + CON",
     "19th", "+6", "Ability Score Improvement", "19 + CON",
-    "20th", "+6", "Primal Champion", "20 + CON"
-  )
-)
+    "20th", "+6", "Primal Champion", "20 + CON")
+]
 
 
 === Rage
@@ -3049,12 +3012,10 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a suit of leather armor or (b) scale mail if proficient
 - (a) a longbow and 20 arrows or (b) 5 javelins
 - an explorer's pack
-  
-#figure(
-  caption: "The Warmage",
-  table(
-    columns: (1.1fr, 2fr, 5fr, 1.8fr, 2fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Max Motes", "Spells Known", "Cantrips Known", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"),
+
+#wide[ 
+#dndtab("The Warmage",
+    "Level", "Proficiency Bonus", "Features", "Max Motes", "Spells Known", "Cantrips Known", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th",
     "1st", "+2", "Spellcasting, Squad Assignment",         "---", "2", "3", "2", "---", "---", "---", "---", "---", "---", "---", "---",
     "2nd", "+2", "Power Siphon",                           "2"  , "3", "3", "3", "---", "---", "---", "---", "---", "---", "---", "---",
     "3rd", "+2", "Piercing Spell",                         "3"  , "4", "3", "4", "2", "---", "---", "---", "---", "---", "---", "---",
@@ -3074,10 +3035,8 @@ You start with the following equipment, in addition to the equipment granted by 
     "17th", "+6", "---",                                   "17", "17", "5", "4", "3", "3", "3", "1", "1", "1", "1", "1", 
     "18th", "+6", "Assignment Feature",                    "18", "18", "5", "4", "3", "3", "3", "1", "1", "1", "1", "1",
     "19th", "+6", "Ability Score Improvement, Skill Trick","19", "19", "5", "4", "3", "3", "3", "2", "2", "1", "1", "1", 
-    "20th", "+6", "Siphon Mastery",                        "20", "20", "5", "4", "3", "3", "3", "3", "2", "2", "1", "1",
-  )
-)
-
+    "20th", "+6", "Siphon Mastery",                        "20", "20", "5", "4", "3", "3", "3", "3", "2", "2", "1", "1",)
+]
 
 === Spellcasting
 Your ability with spells is why you were trained. Your spells come by memorization and long practice.
@@ -3155,9 +3114,8 @@ Line Infantry squads are in the thickest of the battle and often ordered to hold
 
 ==== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
-#table(
-  columns: (1fr, auto),
-  table.header("Warmage Level", "Spell"),
+#dndtab("Infantry Bonus Spells",
+  "Warmage Level", "Spell",
   "1st", [_healing word_],
   "3rd", [_magic weapon_],
   "5th", [_aura of vitality_],
@@ -3191,9 +3149,8 @@ The special forces squads are infiltrators, taking on missions deep into enemy t
 ==== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Warmage Level", "Spell"),
+#dndtab("Special Forces Bonus Spells",
+  "Warmage Level", "Spell",
   "1st", [_bane_],
   "3rd", [_pass without trace_],
   "5th", [_tiny hut_],
@@ -3234,9 +3191,8 @@ Like the squads they're attached to, Artillery Squad warmages specialize in rain
 ==== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Warmage Level", "Spell"),
+#dndtab("Artillery Bonus Spells",
+  "Warmage Level", "Spell",
   "1st", [_chromatic orb_],
   "3rd", [_shatter_],
   "5th", [_fireball_],
@@ -3265,9 +3221,8 @@ Heavy Assault squads are those who specialize in fighting monstrous and magical 
 ==== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out. Spells marked with (\*) are found in the New Spells section in this document.
 
-#table(
-  columns: (1fr, auto),
-  table.header("Warmage Level", "Spell"),
+#dndtab("Assault Bonus Spells",
+  "Warmage Level", "Spell",
   "1st", [_false life_],
   "3rd", [_drain vitality (\*)_],
   "5th", [_tap vitality reserves (\*)_],
@@ -4056,16 +4011,12 @@ _Wisdom (Survival) Expert Skill Trick_
 You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check, with advantage if you also are proficient in Arcana. The result determines your success as shown on the Find Portal Table. Once you use this ability, you cannot do so again until you finish a long rest.
 
 #wide[
-  #figure(
-    caption: "Find Portal",
-    table(columns: (1fr, 5fr),
-  table.header("Check Total", "Result"),
+  #dndtab("Find Portal",
+  "Check Total", "Result",
   "< 10", "You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous.",
   "10-14", "You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous.",
   "15-19", "You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous.",
-  "20+", "You find a portal to a plane of your choosing. You can choose the approximate location that it leads to."
-)
-  )
+  "20+", "You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.")
 ]
 
 ==== Like a Ghost
@@ -5156,9 +5107,8 @@ You pull wisps of shadow material from the Shadowfell to create a nonliving obje
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
-#table(
-  columns: (auto, 1fr, 1fr),
-  table.header("Material", "Duration", "Cost"),
+#dndtab("Shadow Creation Cost",
+  "Material", "Duration", "Cost",
   "Vegetable Matter", "1 day", "0 gp",
   "Stone, Crystal, or Regular Metals", "12 hours", "10 gp",
   "Precious Metals", "1 hour", "50 gp",
@@ -5179,9 +5129,8 @@ Using any material created by this incantation as another spell's material compo
 ]
 
 As you cast the incantation, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. Roll a d10 and consult the Teleportation Circle table. 
-#table(
-  columns: (1fr, 5fr),
-  table.header("d10 Result", "Outcome"),
+#dndtab("Teleportation Circle Outcomes",
+  "d10 Result", "Outcome",
   "1", "Fizzle. The portal does not appear.",
   "2-4", "Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success.",
   "5-10", "Success. The portal forms as normal and poses no threat."
@@ -5272,15 +5221,15 @@ You can see and hear a particular creature you choose that is on the same plane 
 
 *Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
 
-#table(columns: (2fr, 1fr),
-  table.header("Knowledge", "Save Modifier"),
+#dndtab("Scrying Knowledge Modifiers",
+  "Knowledge", "Save Modifier",
   "Secondhand (you have heard of the target)", "+10",
   "Firsthand (you have met the target or seen it via magic)", "+5",
   "Familiar (you know the target well or have seen it in person)", "+0"
 )
 
-#table(columns: (2fr, 1fr),
-  table.header("Connection", "Save Modifier"),
+#dndtab("Scrying Connection Modifiers",
+  "Connection", "Save Modifier",
   "None", "+10",
   "Likeness or picture", "-1",
   "Possession or garment", "-2",
@@ -5307,9 +5256,8 @@ The destination you choose must be known to you, and it must be on the same plan
 
 *Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
 
-#table(
-  columns: (2.5fr, 1fr, 1fr, 1fr, 1fr),
-  table.header("Familiarity", "Mishap", "Similar Area", "Off Target", "On Target"),
+#dndtab("Teleport Outcomes",
+  "Familiarity", "Mishap", "Similar Area", "Off Target", "On Target",
   "Permanent circle", "01-05", "06-20", "21-40", "41-100",
   "Associated object", "01-15", "16-40", "41-50", "51-100",
   "Very familiar", "01-33", "34-43", "44-53", "54-100",

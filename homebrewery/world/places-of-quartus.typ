@@ -1,41 +1,43 @@
-#import "@preview/owlbear-evolved:0.0.1": *
-#show: book-template.with(
-  chapters: false
-)
+#import "@preview/dragonling:0.3.1": *
 
+#show: dndmodule.with(
+    title: "Places of Quartus",
+    subtitle: "A Gazetteer",
+    author: "Admiral Benbo",
+    cover: none,
+    paper: "us-letter",
+    logo: none,
+    fancy-author: true
+)
 
 #import "functions.typ": *
 
-#cover-page("Places of Quartus", "A Guide to the planes, places, gods and nations of Dawn of Hope, compatible with 5e.", "Admiral Benbo", none))
-
 = Introduction
-#columns(2, [
 
 This initial tome is aimed at those wishing to run games set in Dawn of Hope, those wishing to build characters for the setting, as well as those who simply want to know more. Most of the player-facing mechanical information is found in the other tomes (Lineages of Dawn of Hope and Player Options of Dawn of Hope).
 
 Here you'll find geographic, religious, and political information for the setting, focusing primarily on the region known as western Noefra in the year 260 AC, during the age known as the Time of Troubles.
 
-The full setting wiki is at https://wiki.admiralbenbo.com. 
+The full setting wiki is at #link("https://wiki.admiralbenbo.com")[https://wiki.admiralbenbo.org]. 
 == The Universe of Dawn of Hope
 The universe in which Dawn of Hope is set is a pocket-sized universe, with the main material plane (named the Mortal plane) roughly the size of the inner Solar System #aside[#sym.approx 2 AU, slightly larger than the orbit of Mars --AB]. Co-located with that Mortal Plane are two other major planes and two special planes that do not occupy the whole space. The primary setting of Dawn of Hope is one half of one continent on the fourth and outermost planet (Quartus), as well as the planar regions to which that corresponds.
 
-#dnd-note[
-=== Introducing the Author, the Immortal Bard
+#breakoutbox("Introducing the Author, the Immortal Bard")[
 Hello readers across the Great Dark Beyond! I am your humble author, the Immortal Bard #aside[yes, he insists on calling himself that, but his real name is Bard --ed] here to tell you about Quartus, or as you'll call it, the setting of the Dawn of Hope. Who am I? Well, for the first part, I am immortal #aside[actually only mostly ageless, he has avoided being killed for his obnoxious behavior mostly by running away very fast --ed], so I have had lots of time to delve into the mysteries of this universe. And now, courtesy of Vassarian (formerly of the Catalysts) and his lovely patron, I have been granted the opportunity to share some of it with you.
 
 As you will see, I am not the most serious of people #aside[that is the understatement of the age --ed]. Everything I am about to tell you is true, at least from a certain point of view. But I will add my own snark and feeble #aside[yup --ed] attempts at humor, at least when my lovely editor #aside[more about me below --ed] doesn't force me to take them out. I've collaborated with a certain Admiral (or so he calls himself) from your planet to translate the tomes into your language and insert the necessary academic and technical terms (don't blame me, I'm a free-spirited #strike[lover] field researcher, not a dusty scholar).
 ]
 
-#dnd-note[
-=== Introducing the Editor, Marceline Kaelthia-warden  
+#breakoutbox("Introducing the Editor, Marceline Kaelthia-warden")[ 
 I am please to make your acquaintance, and hope you will enjoy this tome. I am Marceline, human sorcerer turned brass dragon, once protector of Kaelthia and hoarder of stories. And one of the few people on this plane who willingly associates with that degenerate #aside[hey! Everyone loves me! --IB] Bard. Although, given how many children he has had, someone must find him attractive at least for short intervals.
 
 I will do my best to keep the Bard's disruptive "jokes" to a minimum, and my interruptions and corrections will be set off with square brackets and italics #aside[they need an example, so something like this! --IB]...thanks Bard. I think they've got it by now.]
 
-])
+#wide[
 = Geography of Noefra
 #figure([#image("img/Noefra-260-geographic.jpeg", width:120%)])
-#columns(2, [
+]
+
 Noefra is the original home of both humanity and the orcs, as well as the site of many of the most world-shaking events. Two other continents, Soefra and Oelfra, were split off in displays of magical might in ages past. Split north to south by the Giant's Spine Mountains and the barren, blasted Great Eastern Dustlands, the halves have developed nearly in isolation. 
 
 The East is dominated by the Dustlands, inhabited by wandering tribes of humans and orcs, and plagued by storms of acid and malevolent tornadoes. The southern side of the half-continent, including the great coastal Greensward and the barren Cerulean Desert (named for the blue tint to the sand) is home to dragons, some of whom rule over tribes of men and goblins, changed by draconic power into dragon-kin (the lesser of which are often called kobolds). On the eastern coast lies the expansive Golden Plain, home to the ancient Jinse culture, as well as the Shaanti forest, where most of the eastern ihmisi dwell. 
@@ -56,29 +58,25 @@ South of Kaelthia lies the Jungle of Fangs, a jungle valley once dominated by a 
 
 To the east across the West Moon Sea, lies the black-glass-surfaced, arcane-magic wasteland known as Moon's Vengeance. Once home to the aelven empire's capital, it was the target of the first druids who convinced the third moon to fall on it. Now inhabited only by ghosts, arcane workings, and the underground-dwelling remnants of the goroesi (often called dark elves) who escaped Moon's Fall by cutting themselves off from time and space for a time.
 
-#dnd-note[
-=== A Word about Metaphysics  
+#breakoutbox("A Word about Metaphysics")[ 
 Admiral Benbo here with a few technical matters.
 
 Dawn of Hope does not pretend that the underlying physical laws are those of Earth, with magic stapled on top as some form of "exception". There are no atoms or subatomic particles in DoH, no chemical reactions. Quantum mechanics is not a thing #aside[thankfully, my head hurts just thinking about it --IB] #aside[A very low bar for difficulty, to be sure --ed]. In fact, even such conservation laws as momentum, matter, and energy are not upheld by default. Instead, everything is made from aether, flavored (the technical term is _aspected_) in various ways. Different combinations of aspects result in different matter. Magic is thus just the application of resonant aetheric patterns to manipulate the aetheric aspects of surrounding matter.
 
 However, the surface observables of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying reasons for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.]
-])
 
-= A Short History of Western Noefra
-#columns(2,[
+#wide[= A Short History of Western Noefra]
 #aside[Finally, we get to talk about me --IB] #aside[Do we have to? --ed]
 == Prehistory: The Dawn War
 It's said that the Dreamer called the world into existence an uncountable time before time began. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
 
 And then Change rebelled and sought mastery over the others (or so the tale runs), splitting creation into camps that warred. The Eight fought against the One. At the end, something tore the Oblivion Gate open, and the Dreamer chose to enact the first and greatest sacrifice in its own being. It tore itself apart and with it the Names of its children the Primordials, creating the planes from their essence. Change, now stripped of his Name, was imprisoned in the Abyss. The lesser creations were scattered across the planes, with many of them becoming mortal, touched by the fires of the Dreamer's essence. Mortality is not a curse, it is a gift. The blood and nerves of the Dreamer became the Great Mechanism, tasked with keeping all in order throughout the planes. Its skin became the Crystal Sphere that wards out the denizens of the Great Dark Beyond. This all happened about 25,000 years before the present day.
 
-#dnd-note[
-=== Abbreviations
+#breakoutbox("Abbreviations")[
 Three terms are used for dates: Years Before Present (YBP), Before Cataclysm (BC), and After Cataclysm (AC). The first is used for approximate dates many thousand years ago or where the dates are highly uncertain. AC and BC are the commonly used terms in the modern western calendar, denoting years after or before the Cataclysm, which is taken as year zero. The current date is thus 260 AC, or 0 YBP.]
 
-#dnd-note[
-=== Brief Timeline
+#breakoutbox("Brief Timeline")[
+#flush-block[
 - *Dawn War (ca 25 000 YBP)*. The Nameless rebels and is banished, planes formed.
 - *First Age (25 000 YBP -- 10 000 YBP)*. Titans and Wyrm fight off and on. Aelves and proteans serve, cower, or die. Ends with both sides weakened and Oelfra split off from the supercontinent.
 - *Second Age (10 000 YBP -- 4 000 YBP)*. Age of the aelves (on the main continent). Arcane magic developed to an extreme height. Ends with Moon's Fall as rebel ihmisi develop the primal arts.
@@ -86,7 +84,7 @@ Three terms are used for dates: Years Before Present (YBP), Before Cataclysm (BC
 - *Third Age (2504 BC -- 600 BC)*. The first gods ascend and are worshiped. Two great empires form, dominating east and west of Noefra. Ends (in the west) with the destruction of the imperial capital after the creation of the dragonborn, leading to the War of Souls.
 - *Second Interregnum (600 BC -- 205 AC)*. The War of Souls and the recovery therefrom leave the west exhausted. The east becomes more decadent and insular. The Cataclysm (0 AC) shatters everything and kills most of the population. Ends with the mutual re-discovery of surviving nations.
 - *Fourth Age (205 AC -- present)*. The current day. The nations and peoples of Western Noefra try to find their right place and shape.
-]
+]]
 
 == The First Age (ending ca 10k YBP)
 
@@ -136,10 +134,9 @@ This peace was not to last, with the Kaelthian government falling into civil unr
 253 AC saw the Red Plague, an engineered fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, both the former God of Autumn (since deposed for too-aggressive meddling) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
 
 The date is now 260 AC, and now is the Time of Troubles. Adventurers have never been more needed.
-])
 
-= Planar Geography
-#columns(2, [
+#wide[= Planar Geography]
+
 Dawn of Hope has three primary planes and two secondary planes. The primary planes are the Mortal, the Astral, and the Elemental (subdivided into 12 regions, often called planes themselves). The main secondary plane is Shadow, the liminal transition between planes. The Abyss rounds out the tale of the planes; a pocket-plane prison and weeping abscess around a hole in reality, home of the demons.
 
 Each of these planes other than the Abyss plays a key role in the universal energy economy. The Mortal, being as it is the home of mortal beings, is the source of all anima (also called aether), the stuff and energy out of which all existence is created. This is released upon death (as well as periodically by normal souls) and transitions through Shadow's Mirrorhaven into the Astral, where the Great Mechanism, assisted by the gods, devils, and angels, distributes it to the other planes.  One large part is sent back down in the form of luminous aether released by Eua, the sun, to give light and energy to the Mortal. 
@@ -153,12 +150,10 @@ Each plane was constructed in the time before history began out of the True Name
 == The Mortal Plane
 The Mortal Plane consists of a central star, Eua, and four planets. Eua is approximately the same size and effective brightness and color as Earth's sun, although the fundamental principles by which it operates are different. The first planet, Primus, is considered uninhabitable, orbiting as it does at 0.25 AU. Its surface undergoes rapid seasonal changes, with each season lasting less than 12 Quartan days. Only elementals and other such resilient beings can tolerate the extremes of luminous energy here. The second two, Secundus and Tertius, are a dual planet, orbiting around their common center. Separated by only a few hundred miles, their atmospheres intermingle and some life migrates from one to the other. Their orbit is at 0.5 AU, leading to much more extreme seasons. Secundus is dominated by Earth and Air, leading to a planet with floating islands. Tertius is dominated by Water and Fire, leading to large oceans and masses of sentient plant life.
 
-#dnd-note[
-=== Mapping DoH Planes to Normal Great Wheel Planes
+#breakoutbox("Mapping DoH Planes to Normal Great Wheel Planes")[
 For spells and effects that talk about specific planes (such as _blink_), use the table below. Note that DoH does not use cosmological alignment, and in fact does not talk about alignment as such. Angels, demons, and devils can all be good or evil depending on their individual choices.
 
-#table(columns: (1fr, auto),
-  table.header("Standard Plane", "Dawn of Hope Equivalent"),
+#dndtab([*Standard Plane*], [*Dawn of Hope Equivalent*],
   "Abyss", "Abyss",
 "Astral", "Border Shadow",
 "Elemental Planes", "Elemental",
@@ -207,10 +202,8 @@ The Elemental Plane acts as the sink of aether and the source of Quartus's seaso
 At present, the elemental plane at the orbit of Quartus is usually divided into 12 segments: one for each prime and two for each boundary (one for each dominant prime). So, for instance, the plane of Earth becomes (starting at the Water boundary) the planes of Clay (earth dominant over water), Stone (prime earth), and Iron (earth dominant over fire). Each of these planes dominates for the month during which Quartus orbits through its direct influence, with Clay being the first month of the year and Mud (Clay's water-dominant counterpart) the last. Each plane is commonly associated with two or three psychological states or emotions.
 
 #wide[
-  #table(
-    columns: (1fr, 1fr, 2fr, 3fr, 2fr, 2fr),
-    align: left + horizon,
-    table.header("Plane", "Elements", "Aspects", "Inhabitants" , "Key Feature", "Lord"),
+  #dndtab(
+    [*Plane*], [*Elements*], [*Aspects*], [*Inhabitants*] , [*Key Feature*], [*Lord*],
     "Clay", [Earth #sym.arrow Water], "Mutability, loss of self", "Dopplegangers, mimics, oozes", "The Street of Joy", "The Skin-dancer",
     "Stone", "Earth", "Endurance, greed", "Dao, stone-born dwarves, stone giants", "The All-Things Bazaar", "Korokonolkom",
     [Iron], [Earth #sym.arrow Fire], "Industry, slavery", "Deep gnomes, stone-born dwarves", "Neversleep and the Utility Market", "The Gnoman Congress",
@@ -222,7 +215,8 @@ At present, the elemental plane at the orbit of Quartus is usually divided into 
     [Cloud], [Air #sym.arrow Water], "Rest, depression", "djinni, winged aelves", "The Sleep of Ages Inn", "Lamies the Silent",
     [Ice], [Water #sym.arrow Air], "Memory, grudges, vengeance", "frost giants, wolves, barbegazi", "Hall of Frozen Memory", "Elphas",
     "Ocean", "Water", "Music, secrets, lies", "marid, sea creatures, ika ika, kalasaa", "The Living Library of Song", "Gremory",
-    [Mud], [Water #sym.arrow Earth], "Contentment, apathy, ennui", "oozes, toadlin, mud mephits", "Baths of Es Aluu", "None (no one cares)")
+    [Mud], [Water #sym.arrow Earth], "Contentment, apathy, ennui", "oozes, toadlin, mud mephits", "Baths of Es Aluu", "None (no one cares)"
+  )
 ]
 
 == The Abyss
@@ -231,10 +225,9 @@ A festering, partially sealed but eternally weeping wound in the planes, centere
 Other mortals (and immortals) have tried to use the jotnar as tools, trapping them inside themselves and feeding them on the souls and aether of others, gaining immortality and immense power themselves as a result. These are the Infected, called demons by most folks. Any demon of sufficient power is rejected by the Mortal and thrust back into the abyss unless summoned by a mortal (usually involving blood magic).
 
 The Abyss itself is approximately the size of Quartus, but devoid of natural solid matter. Everything that exists there was built by demons out of the souls and aether of those they absorbed elsewhere. While the inhabitants of the Abyss are a disorganized lot, each pursuing its own designs, they roughly fall into 5 camps, each headed by a Demon Prince, an extremely powerful entity who is powerful enough to carve out a stable domain.
-])
 
-= Gods and Worship
-#columns(2, [
+#wide[= Gods and Worship]
+
 The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
 
 The Third Wish changed that. It allowed mortals to transcend death and, via the worship of others, ascend to immortality in the Astral by replacing their mortal soul (their spark) with a fragment of the True Name of that plane. But more than that, it allowed those mortals, now gods, to gain power from the Great Mechanism in proportion to their worship base and to claim dominion over various domains of mortal existence. These were the Old Gods. And this mechanism brought much violence. Worship brings power both to the worshipped and the worshiper, and network effects apply. An upstart could supplant the existing deities by subverting their worship and stealing their worshippers.
@@ -262,8 +255,7 @@ All of this also means that bodies, nimbuses, and souls can be transformed into 
 
 == The Congregation
 The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC and, reduced to the stature of an Ascendant, ended up dying at mortal hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation retreating from meddling in mortal affairs.
-#dnd-note[
-=== Souls and PCs
+#breakoutbox("Souls and PCs")[
 #aside[What's a PC? --IB]
 
 The triparte soul is actually a core link to standard D&D mechanics. Stored in the nimbus of every individual (PC or not) is a certain amount of aether, a healing reserve if you will. Because everything is aether, the soul can expend that energy to repair body functions and even gear that it considers part of itself. Magical healing replenishes this reserve. But for most people, this pool is very small; a single good blow will exhaust it. Stronger creatures (including PCs) have stronger souls with correspondingly deeper reserves. And generally larger creatures have bigger reserves than smaller ones. Given a good night's rest, this reserve will entirely refill as the body processes food and ambient aether. In a word, this is your Hit Points.
@@ -273,7 +265,6 @@ When your ready reserves are half depleted, most souls start being more wary abo
 For NPCs, being brought to 0 HP and then magically healed means they have a permanent injury. PCs don't conventionally use permanent injuries for entirely gameplay reasons. I don't like permanent injuries and neither do my players, but this is a great place to include them if you do like such things.
 ]
 
-#colbreak()
 === Aerielara, Jeweled Lady
 - Domain: Arts, beauty, music, sensuality, hedonism. *Trickery, Life*
 - Symbol: A stylized harp
@@ -407,12 +398,11 @@ Orolaen is the ur-lich, an aelf who originally discovered the lich transformatio
 === Seleleana, called Jester
 The Jester is a wild card #aside[like you! --ed] #aside[That's not fair --IB]. Not much is known about this insane entity, other than that it is ancient (possibly a shard of the Nameless left behind, too insane to rejoin creation) and utterly devoid of reason. It plots and schemes and acts out of incomprehensible motives. Many of its plots and those of its followers are mutually incompatible with themselves. It seems to enjoy that. Some suspect it of having deeper motives, because nothing can be *truly* that random. Its followers are generally lone actors, but many of them are powerful, including the entities known as rasksha, the cat demons.
 
-#dnd-note[
-=== Mapping lineages to D&D races
+#breakoutbox("Mapping lineages to D&D races")[
 Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species" (since the lineages can interbreed #aside[something Bard found out the hard way a few times --ed] #aside[it was quite enjoyable, really, other than the parental support --IB] #aside[which you mostly ran away from! --ed]). They're covered in detail in the Peoples of Dawn of Hope document; this is a cheat-sheet to map their Quartan names to more common names. 
 
-#table(columns: (1fr, 1fr),
-  table.header([Dawn of Hope], [Standard D&D]),
+#dndtab(
+  [*Dawn of Hope*], [*Standard D&D*],
   [*Playable*], [-----],
   [dragonborn], [dragonborn],
   [tumnii/dwarf], [dwarf],
@@ -435,19 +425,19 @@ Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species
 
 #sym.dagger The goblin lineage is a complex one, with a shared memory/thinking space. This shared memory is not a hive mind; it acts more like one person bleeding into another within the tribe. This makes them *genetically* ADHD, as well as literally smarter together than apart. They naturally pour some of their shared energy into a few individuals, transforming them into larger "hobgoblins" that are less prone to the tide-like enthusiasms because they have more distance from the shared memory space.
 ]
-])
+#wide[
 = Nations of Western Noefra, ca 260 AC.
-#wide[#image("img/Noefra-260AC-political.jpeg", width:120%)]
-#columns(2, [
+#image("img/Noefra-260AC-political.jpeg", width:120%)
+]
 
 == Auringon
-- Population: roughly 50,000 wind elves (ihmisi, but with some variations and shorter lives) and meztlan humans.
-- Major cities: Aurin (&approx;10k), Avignon (&approx;5k), Yvore (&approx;5k), all including the surrounding countryside.
-- Names and architecture: Use medieval French names as base.
-- Culture: Lawful Storybook. Closer to the original faery tales than the modern, sanitized ones.
-- Economics: Vaguely medieval. Mostly self-sufficient trade-wise.
-- Magics: Leans arcane and divine. Primal is a distant third.
-- Religion: Worships Aerielara and Roel Kor henotheistically, but accepts the other Congregants.
+- *Population:* roughly 50,000 wind elves (ihmisi, but with some variations and shorter lives) and meztlan humans.
+- *Major cities:* Aurin (#sym.approx 10k), Avignon (#sym.approx 5k), Yvore (#sym.approx 5k), all including the surrounding countryside.
+- *Names and architecture:* Use medieval French names as base.
+- *Culture:* Lawful Storybook. Closer to the original faery tales than the modern, sanitized ones.
+- *Economics:* Vaguely medieval. Mostly self-sufficient trade-wise.
+- *Magics:* Leans arcane and divine. Primal is a distant third.
+- *Religion:* Worships Aerielara and Roel Kor henotheistically, but accepts the other Congregants.
 
 This nation dates back to just after the Cataclysm, when a band of ihmisi were desperately looking for shelter from the chaos. They found a magical library containing a book of stories. This book promised them security, but only if they dedicated themselves to living out the stories. Later, human refugees were incorporated into the story. In 212 AC, this story was completed and the people freed from the endless repetition and enforced narrative roles. Since then, they've focused on finding their way.
 
@@ -458,12 +448,12 @@ Politically, Auringon is a typical fantasy-feudal nation, with four Dukes and a 
 Several major adventurers have settled in the south near the border, providing substantial security and leading a mage school and a druid grove, the Phoenix Grove. Auringon has good relationships with Byssia and very little contact with anyone else.
 
 == Byssia
-- Population: Roughly 150,000 night's children humans, ihmisi, and half-elves (approximately an even split)
-- Major cities: Byss (&approx;22,000), Delphni (&approx;20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
-- Names and architecture: Use classical greek as base.
-- Economics: Self-sufficient for food. Expert woodworkers. Lower metal use than most. Modern merchant base, including maritime.
-- Magics: Heavily primal. Arcane is accepted, divine is regarded as second class.
-- Religion: Ihmisi are mostly spirit-worshipers. Night's children worship Nocthis extensively.
+- *Population:* Roughly 150,000 night's children humans, ihmisi, and half-elves (approximately an even split)
+- *Major Cities:* Byss (#sym.approx 22,000), Delphni (#sym.approx 20,000). Many smaller, but approximately equal-sized cities rather than a normal distribution.
+- *Names and Architecture:* Use classical greek as base.
+-  *Economics:* Self-sufficient for food. Expert woodworkers. Lower metal use than most. Modern merchant base, including maritime.
+- *Magics:* Heavily primal. Arcane is accepted, divine is regarded as second class.
+- *Religion:* Ihmisi are mostly spirit-worshipers. Night's children worship Nocthis extensively.
 
 One of the larger and more powerful nations, Byssia controls the southern flank of the Nocthian Caldera and the north end of Gap-Tooth Bay. Its people are a mix of highland ihmisi who venerate the spirits and elements, and the lowland Night's Children humans, who almost uniformly worship the Ascendant known as Nocthis, Lady of Lunar Mystery. They are one of two strongly maritime cultures, primarily in the bay but also now extending around Cape Dread to the Jungle of Fangs.
 
@@ -472,12 +462,12 @@ Uniquely, Byssia is metal-poor, leading to extensive use of magically strengthen
 Byssia is decentralized politically, with towns and villages holding most of the power. What central government exists is in the form of Judges, elected from each village, who try cases and decide disputes and who refer cross-town disputes to other, neutral judges. A police force of elemental-focused monks handles most internal disorder, while the Border Wardens under Yonas Akrotiz, a former adventurer, provides external security. In recent years, the external security forces have started increasing in numbers, preparing for the inevitable war with Tlalocana.
 
 == Crisial Kingdom
-- Population: Roughly 200,000 humans, gwerin, halflings, and dwarves.
-- Major cities: Crisial City (&approx;30,000), Beiand (&approx;15,000), Inegand (&approx;10,000), Honel (&approx;8,000). Most of the dwarves live near Honel, with gwerin in the capital and parts east.
-- Names and architecture: Use a mix of traditional English and Welsh. Architecture is late medieval fantasy Europe.
-- Economics: Trade is the major thing. Extraction near Honel, farming throughout. Rule of law is very strong. Acts most like a modern semi-democracy.
-- Magics: An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
-- Religion: Pluralistic. Worship who, where, and what you want, as long as it's not demons.
+- *Population:* Roughly 200,000 humans, gwerin, halflings, and dwarves.
+- *Major Cities:* Crisial City (#sym.approx 30,000), Beiand (#sym.approx 15,000), Inegand (#sym.approx 10,000), Honel (#sym.approx 8,000). Most of the dwarves live near Honel, with gwerin in the capital and parts east.
+- *Names and Architecture:* Use a mix of traditional English and Welsh. Architecture is late medieval fantasy Europe.
+-  *Economics:* Trade is the major thing. Extraction near Honel, farming throughout. Rule of law is very strong. Acts most like a modern semi-democracy.
+- *Magics:* An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
+- *Religion:* Pluralistic. Worship who, where, and what you want, as long as it's not demons.
 
 Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts (the otherworldly Vassarian, the calculating and political Paresten, the quiet anchor Kalesin, and the tree-friend Safrir) in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
 
@@ -486,12 +476,12 @@ Governmentally, it is a classical feudal nation, although with strong traditions
 One key strength is the Four Towers, a pre-Cataclysm library and research facility located on an island about 10 miles north of Crisial City. This is the headquarters for the Sages Guild, the predominant academic research organization in western Noefra, although the Sages have outposts in most significant cities across the region. This makes Crisial a magical powerhouse and the home of many of the more powerful arcanists and divine workers. It has a druidic grove (the Ladysgrove) located outside the city, formerly headed by Safrir of the Catalysts until his death in 254 AC.
 
 == Serpent Dominion
-- Population: Roughly 200,000 fang-kin humans, half-elves, and ophidians. A few dwarven clans.
-- Major cities: Kel'al'ar (&approx;30,000), Asai'ka (&approx;20,000 but sized for more due to catastrophes)
-- Names and architecture: Vaguely south-eastern asian. Fantasy apostrophes abound. Lots of snake motifs.
-- Economics: Maritime trade in the south, farming and extraction throughout. Somewhat caste-based, with noble landowners, middle-caste merchants and crafters, and commoner workers. Very few yeoman common landowners. Recently a rise in rich (but not noble) merchant families gaining prominence.
-- Magics: Arcane is heaviest in the cities, whereas the rural groups are more primal. Divine exists, but it's not super common.
-- Religion: Heavily dominated by worship of the Queen Ascendant. The Priest Bureaucracy of her monolithic church wields substantial political power. Other religions are tolerated, but not encouraged.
+- *Population:* Roughly 200,000 fang-kin humans, half-elves, and ophidians. A few dwarven clans.
+- *Major Cities:* Kel'al'ar (#sym.approx 30,000), Asai'ka (#sym.approx 20,000 but sized for more due to catastrophes)
+- *Names and Architecture:* Vaguely south-eastern asian. Fantasy apostrophes abound. Lots of snake motifs.
+-  *Economics:* Maritime trade in the south, farming and extraction throughout. Somewhat caste-based, with noble landowners, middle-caste merchants and crafters, and commoner workers. Very few yeoman common landowners. Recently a rise in rich (but not noble) merchant families gaining prominence.
+- *Magics:* Arcane is heaviest in the cities, whereas the rural groups are more primal. Divine exists, but it's not super common.
+- *Religion:* Heavily dominated by worship of the Queen Ascendant. The Priest Bureaucracy of her monolithic church wields substantial political power. Other religions are tolerated, but not encouraged.
 
 Preeminent among the nations that formed from the breakup of the Stone Throne in the Jungle of Fangs is the Serpent Dominion. It occupied the southern third of the jungle until 258 AC, when King Azekiel Cai'valur led his armies in a (mostly) bloodless conquest of Asai'ka (the central nation of the jungle); the latter had fallen into chaos and anarchy as a result of the Red Plague in 253 AC. It is no secret that he intends to reunite the entire jungle under his control eventually.
 
@@ -500,58 +490,58 @@ Inhabited by fang-kin humans and half-elves as well as ophidians, with a few dwa
 The caste-based culture is in retreat, but still has fangs. Almost everyone here (other than the deep jungle tribes) worships the Queen Ascendant, and her priests hold massive cachet. Nobles in their blue garments (forbidden to non-nobles) own most of the land, and merchants and crafters form the Lai caste. Commoners are not serfs, but are mostly sharecroppers or hired laborers. Ophidians are considered lower-caste, although this attitude has mostly faded.
 
 == Sha'slar Autonomous Zone
-- Population: Roughly 35,000 fang-kin humans and half-elves. A few ophidians.
-- Major cities: Sha'slar (&approx;10,000)
-- Names and architecture: Vaguely south-eastern asian. Fantasy apostrophes abound. Lots of snake motifs.
-- Economics: Plantation agriculture and forest products. Main producer of steel-silk.
-- Magics: Not much.
-- Religion: Heavily dominated by worship of the Queen Ascendant, but the Church has less political power.
+- *Population:* Roughly 35,000 fang-kin humans and half-elves. A few ophidians.
+- *Major Cities:* Sha'slar (#sym.approx 10,000)
+- *Names and Architecture:* Vaguely south-eastern asian. Fantasy apostrophes abound. Lots of snake motifs.
+-  *Economics:* Plantation agriculture and forest products. Main producer of steel-silk.
+- *Magics:* Not much.
+- *Religion:* Heavily dominated by worship of the Queen Ascendant, but the Church has less political power.
 
 The SAZ is the northern nation of the jungle, inhabiting the forests and deep jungle just south of Kaelthia. Considered rural bumpkins by the southern plains-dwellers, the inhabitants of the SAZ (mostly humans and half-elves) are an independent lot. Much of the steel-silk (an alchemically treated, plant-based fiber as tough as steel but as flexible as silk) is produced here on large plantations. Here the people worship the Queen Ascendant with fervor, but less orthodoxy than their southern brethren.
 
 The SAZ is only lightly settled, with only two large settlements: Sha'slar itself and Sraasa Saat, home to the Greenscale Brewery, a kobold-run distillery of some of the finest spirits on the continent, patronized by an adult dragon who hoards alcohol. Its government is technically a military junta under three generals, but mostly the noble landowners run their fiefdoms with few disruptions.
 
 == Shinevog
-- Population: Roughly 12,000 mixed, dwarves a plurality.
-- Major cities: Shinevog (&approx;12,000), a city-state with some closely outlying villages.
-- Names and architecture: Traditional dwarven architecture, plus some clockwork-style magitech. Names are Mongolian.
-- Economics: Research and technology. Substantial imports.
-- Magics: Arcane is priority. Lower emphasis on the divine, and with very little primal influence.
-- Religion: Minor, mostly focusing on Yogg-Maggus and Lon Ka, while being tolerant of any religion.
+- *Population:* Roughly 12,000 mixed, dwarves a plurality.
+- *Major Cities:* Shinevog (#sym.approx 12,000), a city-state with some closely outlying villages.
+- *Names and Architecture:* Traditional dwarven architecture, plus some clockwork-style magitech. Names are Mongolian.
+-  *Economics:* Research and technology. Substantial imports.
+- *Magics:* Arcane is priority. Lower emphasis on the divine, and with very little primal influence.
+- *Religion:* Minor, mostly focusing on Yogg-Maggus and Lon Ka, while being tolerant of any religion.
 
 Shinevog is the polar opposite of the Uulan Confederacy, despite both being dwarves. Settled on an abandoned clanhold along the main route from the Sea of Grass into the Giant's Spine, it was founded as a creative, iconoclastic outlet for those dwarves and others who wished to be free of traditional restraints on research (especially arcane and technological). Ruled by Theobard III, it has become a small (occupying only one small valley) but powerful hub of technology and arcane science. Not as lawless as Zhapai Karmap, it still maintains codes of ethics and responsibility.
 
 The primary religion here is that of Lon Ka, Hammer-lord, patron of technology and innovation. Yogg-Maggus, lord of arcane magic, is also heavily worshiped here.
 
 == Tlalocana
-- Population: Unknown, but likely 100+ thousand. Humans and mkhulu.
-- Major cities: Tlalotecana, unknown others.
-- Names and architecture: Rigidly uniform, classical Roman architecture. Names are vaguely Meso-American.
-- Economics: Command economy, with mind control.
-- Magics: Unknown, but also psychic.
-- Religion: None. Gods are false, there is only the Way.
+- *Population:* Unknown, but likely 100+ thousand. Humans and mkhulu.
+- *Major Cities:* Tlalotecana, unknown others.
+- *Names and Architecture:* Rigidly uniform, classical Roman architecture. Names are vaguely Meso-American.
+-  *Economics:* Command economy, with mind control.
+- *Magics:* Unknown, but also psychic.
+- *Religion:* None. Gods are false, there is only the Way.
 
 Located on the Drowned Coast and slowly growing to conquer the entire peninsula (and beyond, if they have any say), Tlalocana is a repressive, totalitarian nation ruled by a large caste of organized mkhulu. They employ advanced psionic devices to spy on and control the thoughts of those in the national boundaries, suppressing independent thought and dictating unthinking adherence to the law. Unique among nations, they use very little iron, preferring magically strengthened bronze. Their area of control grows 50 miles every 10 years, creating an expanding ring of fortified fortress-towns linked by psionic emitters. So far, no active hostilities have happened between them and their neighbors (Auringon and Byssia), but that is inevitable. Infiltrators (mkhulu or otherwise) have been found within the former Federated Nations members, fomenting disorder and searching for weaknesses.
 
 == Tuura Adam
-- Population: 45,000. Jazuu and giants (roughly 1000 of the latter)
-- Major cities: Kozhuyn (10,000)
-- Names and architecture: Big stone blocks for architecture, with very little decoration, but all very high quality. Central Asian names.
-- Economics: Highly structured. Very organized, but still competitive (within the rules).
-- Magics: Mostly elemental-focused arcane.
-- Religion: Mostly none.
+- *Population:* 45,000. Jazuu and giants (roughly 1000 of the latter)
+- *Major Cities:* Kozhuyn (10,000)
+- *Names and Architecture:* Big stone blocks for architecture, with very little decoration, but all very high quality. Central Asian names.
+-  *Economics:* Highly structured. Very organized, but still competitive (within the rules).
+- *Magics:* Mostly elemental-focused arcane.
+- *Religion:* Mostly none.
 
 Buried deep in the Giant's Spine moutains is the Noefran jazuu homeland, the land of the Mountain People, the Tuura Adam. It is both the ethnic name and the national name. Home to the only known fully functional Titanwall (capable of transforming a jazuu into a true giant) on the continent, it is an orderly place. Other nations claim to work by law, but the Tuura Adam literally live by the Code, a multi-volume, constantly updated codex for the right way to do *anything*. From carpentry to music to combat, it's all there. And the jazuu of the Tuura Adam treat it as law while constantly seeking improvement. Ruled by those who have successfully undergone the titanification ritual to become a true giant (and thus become neuter but very long lived, as well as the usual benefits of being a giant), they live orderly but competitive lives, making the most out of the limited resources of the high alpine valleys.
 
 Their capital is Kozhuyn, built on the slopes of Skypiercer Peak, the highest peak in Noefra and the site of the ancient Titan citadel known now as Too Tekterin (High Rock), from which the Conclave shattered themselves and their draconic foes with the ill-fated Orb of All Might. Governmentally, they have a hierarchy of trades and professions, with a council of giants from each specialty at the head. The leader is the cloud giant Bulut Boron acting as High Regent.
 
 == Uulani Confederacy
-- Population: 90,000. Almost entirely dwarves.
-- Major cities: Fuar Uulan (12k)
-- Names and architecture: Utilitarian architecture stone, mostly buried underground. Names are Mongolian.
-- Economics: Great crafters
-- Magics: Divine magic is dominant. Some minor primal and arcane influence can be found, but mostly focused on manipulating the elements where present.
-- Religion: Devoted to Korokonolkolm as Lord of Mountains, Silence, and Endurance. Also worship/revere the Paragons (living and dead) as examples of what to be.
+- *Population:* 90,000. Almost entirely dwarves.
+- *Major Cities:* Fuar Uulan (12k)
+- *Names and Architecture:* Utilitarian architecture stone, mostly buried underground. Names are Mongolian.
+-  *Economics:* Great crafters
+- *Magics:* Divine magic is dominant. Some minor primal and arcane influence can be found, but mostly focused on manipulating the elements where present.
+- *Religion:* Devoted to Korokonolkolm as Lord of Mountains, Silence, and Endurance. Also worship/revere the Paragons (living and dead) as examples of what to be.
 
 Buried under the Outer Barrier Range east of Kaelthia is the dwarven-dominated collection of dwarven clanholds known as the Uulani Confederacy (named after one of the major clans, the Uulan). Centered at Fuar Uulan, only a small fraction of the nation extends outside the mountains. The clans here are traditionalist to the extreme. While they do not reject outsiders, they welcome few disruptions to their lifestyle. Change comes slowly here, and those who chafe at the conservative structure either go west to Crisial or north-east to Shinevog or Zhapai Karmap.
 
@@ -560,12 +550,12 @@ Clans mostly govern themselves; cross-clan affairs are handled by a council of c
 Dwarven clans are ideological, rather than strictly kin-based, and changing clans is normal as one reaches adulthood. The vast majority of adult Uulani are married; traditional dwarven culture treats marriage as an essential step into adulthood. Divorce, adultery, and abandonment are nearly unheard of and usually result in suicidal behavior from the abandoned dwarf.
 
 == Wyrmhold
-- Population: 180k. 70k orcs, 60k goblins, 50k dragonborn.
-- Major cities: Lyodnoir [L'YOHD noir] (18k), Byarmarsh (10k), Baile Duchas (8k)
-- Names and architecture: Slavic/Norse for dragonborn, Celtic for orcs. Vietnamese for goblins.
-- Economics: Major industrial power, using clockwork and golems. Less magitech, more physical tech.
-- Magics: Arcane and divine for dragonborn and goblins. Primal (mostly) for orcs.
-- Religion: Pluralistic. Each family reveres a subset of the gods, often different ones. Queen is nominal High Priestess of all the gods.
+- *Population:* 180k. 70k orcs, 60k goblins, 50k dragonborn.
+- *Major Cities:* Lyodnoir [L'YOHD noir] (18k), Byarmarsh (10k), Baile Duchas (8k)
+- *Names and Architecture:* Slavic/Norse for dragonborn, Celtic for orcs. Vietnamese for goblins.
+-  *Economics:* Major industrial power, using clockwork and golems. Less magitech, more physical tech.
+- *Magics:* Arcane and divine for dragonborn and goblins. Primal (mostly) for orcs.
+- *Religion:* Pluralistic. Each family reveres a subset of the gods, often different ones. Queen is nominal High Priestess of all the gods.
 
 Founded in the War of Souls to give a home for the newly created dragonborn race, this nation has become one of the most advanced and industrially powerful in the Fourth Age. It was driven out of the Caldera by the Hungering Frost, an army from the Plane of Ice, and spent 90 years in existential crisis, keeping the forces of the Frost from spilling down the only pass into the lowlands at extreme cost. The dragonborn were joined by local goblin and orc tribes, led by shamanic visions. This let them hold the line, developing advanced military industry and tactics to compensate for their few numbers. At the foundation of the Federated Nations in 205 AC, the dragonborn refugees from Kaelthia were reunited with their brethren and came to help, along with many heroes and other allied forces. This let Wyrmhold finish the Winter Wall at the head of the pass, preventing the Frost from accessing the softer areas. Five years later, heroes managed to strike at the heart of the ritual creating the eternal winter on the Caldera, allowing it to thaw and ending the war.
 
@@ -601,7 +591,7 @@ One of the small states formed by the breakup of Kaelthia's dominant nation in 2
 === Kaelthia
 10 years ago, marking Kaelthia a minor nation would have been unthinkable. 50 years ago it was the center of the dominant nation in the region. But even the mighty fall. Kaelthia in 260 AC is an insular religious backwater, only relevant to anything because of its location at the intersection of a few major trade routes, routes that Kaelthia wishes went elsewhere, because they're not so fond of outsiders.
 
-In 260 AC, Kaelthia has mostly recovered from the explosion of the Grand Temple in 254 AC and the near-eruption of Mt. Refuge (the dormant volcano between whose flanks the city was built). The city still controls roughly a day's journey (&approx;20 miles) around it. Kaelthian culture is conformist to a fault, with consensus as one of their highest values. They take "stay in your lane" to extremes. Politically, they're a communalist state governed by interlocking councils of professions running from the local level (a neighborhood or small village) all the way up to the city scope.
+In 260 AC, Kaelthia has mostly recovered from the explosion of the Grand Temple in 254 AC and the near-eruption of Mt. Refuge (the dormant volcano between whose flanks the city was built). The city still controls roughly a day's journey (#sym.approx 20 miles) around it. Kaelthian culture is conformist to a fault, with consensus as one of their highest values. They take "stay in your lane" to extremes. Politically, they're a communalist state governed by interlocking councils of professions running from the local level (a neighborhood or small village) all the way up to the city scope.
 
 Demographically, Kaelthia is mostly Wall-Builder human with one dwarven clan still part of them as well as one High House of the gwerin (and the resulting half-elves). Religiously, they worship the Seasonal Four very strongly and look down on and reject any worship of the spirits, ancestors, or other Ascendants.
 
@@ -643,7 +633,7 @@ Given independence from both the Serpent Dominion and the Ship Folk fleet by tre
 === Xhort
 The third of the Abandoned, Xhort is the city of hate. Once dominated in secret by a shapeshifting dragon who hated dwarves (along with many other peoples), the Xhori were conditioned to distrust and hate, well, everyone. Paranoia as a way of life. In the 50-ish years since he was revealed and driven off, the Xhori now make a living mining the deep veins of iron and other metals.
 
-Culturally, the ones they most dislike and hate are other dwarves. Only the Xhori are worthy; non-dwarves are to be pitied and disdained, but not outright disrespected, but other dwarves (especially the soft lowlands dwarves) are *khog khai* (worthless trash).
+Culturally, the ones they most dislike and hate are other dwarves. Only the Xhori are worthy; non-dwarves are to be pitied and disdained, but not outright disrespected, but other dwarves (especially the soft lowlands dwarves) are _khog khai_ (worthless trash).
 
 === Zhapai Karmap
 Of the nations of the Giant's Spine, ZK (as it's usually called), the Wild Hold, is the newest. Founded by a group of adventurers (the Wild Cards) in 212 AC at the site of a mind-flayer-occupied dwarven hold, its promise is simple. The only law is to not make the rulers have to care. Are you outcast from elsewhere? Do you practice magics or perform experiments that others forbid (often because of the danger posed to those around them)? Are you a jerk that no one else will tolerate? Then ZK is your home. As long as you don't aggravate the rulers and don't fail to pay the (minimal) taxes, you can do whatever you want. There are no social services other than a promise to swiftly destroy anyone who can't play even slightly nicely with others.
@@ -750,7 +740,6 @@ The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon a
 
 === Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
-])
 
 = Legal Notices
 

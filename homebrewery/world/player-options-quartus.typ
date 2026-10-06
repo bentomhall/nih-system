@@ -1,24 +1,26 @@
-#import "@preview/owlbear-evolved:0.0.1": *
-#show: book-template.with(
-  chapters: false
+#import "@preview/dragonling:0.3.1": *
+
+#show: dndmodule.with(
+  title: "Player Options of Quartus",
+  subtitle: "Containing multiple new classes, subclasses, spells, and two new subsystems",
+  author: "Admiral Benbo",
+  paper: "us-letter",
+  logo: none,
+  cover: none,
+  fancy-author: true
 )
 
 #set figure.caption(position: top)
 
 #import "functions.typ": *
 
-#cover-page("Player Options", "Containing multiple new classes, subclasses, spells, and two new subsystems.", "Admiral Benbo", none)
+#wide[= Introduction]
 
-= Introduction
-#columns(2)[
 Designed for players looking for new options designed for use within Dawn of Hope (but not indelibly bound to that setting), this book contains multiple new classes (including two different takes on the same basic mold, the Inventor and Mechanist) and new subclasses for several classic classes. It also contains two new subsystems: Skill Tricks (mini-feats designed to expand the uses of skill and tool proficiencies) and Incantations (a take on 4e's Rituals, bringing utility magic to the masses in a controlled way) and 17 new spells, as well as variant versions of 3 more often-panned spells.
 
 While these options were designed with Quartus in mind and have been played there, they should be setting-agnostic enough to play well in any fantasy-oriented setting.
-]
 
-= Classes
-== New and Variant Archetypes
-#columns(2)[
+#wide[= Classes]
   
 A player character's class is an important part of their interaction with the world of Dawn of Hope. But classes are instantiations of archetypes, not necessarily in-universe organizations. Most NPCs do not have classes, even if they have abilities similar to those of player characters. Some class names are _close_ to being diegetic; calling one of the robed peacekeepers of Byssia a "monk" is reasonable enough and you'd be understood by people in the setting. But don't look too closely.
 
@@ -38,12 +40,10 @@ Not all of the core classes are extended here. The others exist and there have b
 - Fighters are fantastic, but not spell-casters (other than the Eldritch Knight). That means that their powers are fueled by aether (the stuff of existence and magic). They can use Second Wind (etc) only a limited number of times because these are not purely practiced techniques. Instead, practice and training has tapped them into the ambient power inherent in themselves, unlocking "unrealistic" and "superhuman" abilities while not casting regular spells.
 - Rangers, like druids, talk to the ihimen. But unlike druids, they make friends with specific ones and attach those spirits to their gear and (if Beastmaster) their animal companions. Druids are more transactional; rangers (and bounty hunters) are training their friends to do tricks for them. This is the bond that makes a ranger's animal companion more than just a beast.
 - Wizards and sorcerers aren't as far apart as in some settings. While anyone, in principle, can learn arcane magic, it's easier for some people. Specifically, the difference is in where they get their spells. Sorcerers are born (in the fiction) with a fixed set of spell patterns encoded in them. Their challenge is to fuel them appropriately (ie create spell slots for them). Wizards have this same problem, but _also_ have to learn their patterns from text and practice. Unlike many settings, _sorcerers_ are the more inventive ones, because their spells _evolve_. Wizards are more methodical, but less apt to create new spells. They are better at preserving and teaching spells, however.
-]
-#pagebreak()
-== Armsman
-#columns(2)[
-#dnd-note[
-==== Compatibility
+
+== Armsman (Variant Fighter)
+
+#breakoutbox("Compatibility")[
 This is a replacement for the Fighter and should not be played in the same group. It is intentionally somewhat stronger.
 ]
 
@@ -86,11 +86,11 @@ You have a limited well of stamina that you can draw on to protect yourself from
 
 === Stamina
 As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier and you regain expended points when you finish a short or long rest.
-]
-#figure(caption: "The Armsman",
-  table(align:center, columns: (1fr, 1fr, auto, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Stamina", "Skill Tricks"),
-    "1st", "+2", "Second Wind, Stamina, Weapon Specialization", "1 + CON", "---",
+
+#wide[
+#dndtab("The Armsman",
+[*Level*], [*Proficiency Bonus*], [*Features*], [*Stamina*], [*Skill Tricks*],
+"1st", "+2", "Second Wind, Stamina, Weapon Specialization", "1 + CON", "---",
     "2nd", "+2", "Action Surge, Active Defenses", "2 + CON", "---",
     "3rd", "+2", "Martial Archetype", "3 + CON", "---",
     "4th", "+2", "Ability Score Improvement, Skill Tricks", "4 + CON", "1/basic",
@@ -110,9 +110,8 @@ As an armsman, your abilities are fueled by your internal reserves of energy, ca
     "18th", "+6", "Martial Archetype Feature", "18 + CON", "5/expert",
     "19th", "+6", "Ability Score Improvement", "19 + CON", "6/master",
     "20th", "+6", "Improved Deathblow", "20 + CON", "6/master"
-  )
 )
-#columns(2)[
+]
 === Weapon Specialization
 You are better than most at using the additional properties of your weapon. While wielding a weapon, you gain the features below for that weapon. If the weapon has multiple additional properties, you must choose which feature to apply on any individual attack. If a feature calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
@@ -288,10 +287,10 @@ Starting at 15th level, you've learned to bring others with you when you Flash S
 
 ==== Healing Strike
 At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They regain hit points equal to your proficiency bonus #sym.times  your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
-]
-#pagebreak()
-== Barbarian
-#columns(2)[
+
+#colbreak()
+#wide[== Barbarian]
+
 The barbarian archetype is common throughout Noefra, and not only (not even predominantly) among the "uncivilized" tribes. It's said that the origin of the iconic rage was developed by watching pre-cataclysm orcs tap into primal (but demon-tainted) power through their bloodline curse of blood-lust and anger. [_That's a story I don't believe. People have been getting angry and gaining power from it for a long time. End of the 2nd Age at the most recent. --IB_] Whatever the origin, the orcs of the Fiach Wood (and those of Wyrmhold) are most associated in the common mind with barbarians. Barbarians draw on the primal aether of the Mortal world, often through their emotions. They draw that aether into themselves to reinforce their bodies and souls. While anger (ie rage) is one of the easiest emotions to do this with, many barbarians wield other emotions. Their minds remain clear. Some, in fact, treat this as an entirely intellectual exercise as they become the primal embodiment of the blade.
 
 Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two (barbarian and warden) shouldn't be played in the same party.
@@ -334,14 +333,12 @@ Starting at 14th level, your rage carries with it primal lightning and thunder. 
 
 Those that follow the Path of the Whirling Blade seek to embody the essential nature of the blade. They manipulate their personal aether into forms, the platonic ideal of a particular concept. In this case, curved blades. As a side effect, those of the Whirling Blade dance like (angry, hulking) tornadoes across the battlefield, striking seemingly randomly, leaving devastation in their wake.
 
-#figure(caption: "The Whirling Blade", table(
-  columns:(1fr, 1fr), 
-  table.header("Level", "Shaping Die"),
+#dndtab("The Whirling Blade", 
+[*Level*], [*Shaping Die*],
   "3", "d6",
   "6", "d8",
   "10", "d10",
   "14", "d12"
-  )
 )
 
 ==== Shaping Dice
@@ -365,15 +362,13 @@ Starting at 10th level, you can expend a shaping die when you are targeted by a 
 
 ==== Warp Strike
 Starting at 14th level, when you make a thrown attack with your aetheric blade and hit, you can choose to teleport next to the target.
-]
 
 #pagebreak()
 == The Beholden (Variant Warlock)
-#columns(2)[
+
 Beholden gain power by cheating. Unlike the wizard who studies and meditates or the cleric who must have faith, the beholden has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the beholden's soul, shoving in unearned power. Each beholden is different, but they all learn the ability to shape raw aether into blasts.
 
-#dnd-note[
-==== Compatibility
+#breakoutbox("Compatibility")[
 This is a variant warlock. As such, it should not be played in a party with a regular warlock. The goal is to move toward the 3e version, with most things tied up in class features: Eldritch Blast + blast shapes + essences. Spellcasting will come only via invocations that grant the ability to grab specific spells off of specific full-caster lists. Uses spell points by default.
 ]
 
@@ -412,14 +407,10 @@ At its most basic, as an action on your turn you can shoot a bolt of raw kinetic
 
 === Otherworldly Patron
 At 1st level, you have struck a bargain with an otherworldly being of your choice and formed a pact that is shaped by their attitudes and desires for you: Pact of Destruction, Pact of Protection, or Pact of Inquiry, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
-]
-
 
 #wide[
-  #figure(
-    caption: "The Beholden",
-    table(columns: (1fr, 2fr, 5fr, 1.5fr, 1.3fr, 1.5fr, 2fr, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Cantrips Known", "Blast Effects", "Blast Shapes", "Invocations Known", "Spell Points", "Point Limit"),
+  #dndtab("The Beholden",
+    [*Level*], [*Proficiency Bonus*], [*Features*], [*Cantrips Known*], [*Blast Effects*], [*Blast Shapes*], [*Invocations Known*], [*Spell Points*], [*Point Limit*],
     "1", "+2", "Magical Deflection, Eldritch Blast, Otherworldly Patron, Spellcasting", "2", "---", "---", "---", "4", "2",
     "2", "+2", "Eldritch Invocations, Blast Effects", "2", "1", "---", "2", "6", "2",
     "3", "+2", "Pact Boon", "3", "1", "---", "3", "14", "3",
@@ -443,7 +434,7 @@ At 1st level, you have struck a bargain with an otherworldly being of your choic
     )
   )
 ]
-#columns(2)[
+
 === Spellcasting
 Beholden are not traditional spellcasters. They do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via invocations and other means, and do learn cantrips.
 
@@ -462,10 +453,9 @@ All of your magical effects rely on spending spell points (SP). At first level, 
 
 You regain all expended spell points when you finish a long rest.
 
-#figure(
-  caption: "Spell Point Cost Table",
-  table(columns: (1fr, 2fr, 1fr),
-    table.header("Spend ... SP", "To cast a spell of ... level", "Minimum beholden level"),
+#dndtab(
+  "Spell Point Cost Table",
+  [*Spend ... SP*], [*To cast a spell of ... level*], [*Minimum beholden level*],
     "2", "1st", "1st",
     "3", "2nd", "3rd",
     "5", "3rd", "5th",
@@ -476,7 +466,6 @@ You regain all expended spell points when you finish a long rest.
     "11", "8th", "---",
     "13", "9th", "---"
   )
-)
 
 When you expend spell points to modify your Eldritch Blast (ie via blast shapes and blast effects), the total amount of spell points spent relates to the blast's effective spell level using the conversion in the table above.
 
@@ -723,8 +712,7 @@ The beings that serve as patrons for beholden are mighty inhabitants of other pl
 
 Some patrons collect beholden, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one beholden. Beholden who serve the same patron might view each other as allies, siblings, or rivals.
 
-#dnd-note[
-==== Breaking your pact
+#breakoutbox("Breaking Your Pact")[
 A patron's secrets, once given, cannot be withdrawn by an act of will or by losing favor with the patron. This separates them from a cleric, whose patron can withdraw their support at any time.
 
 If a beholden falls out of favor with their patron, DMs may decide that the beholden cannot progress further unless they find a new patron willing to swear the same sort of pact. Alternatively, the beholden can take steps to regain favor. This should not happen lightly or arbitrarily; this should further the narrative and be decided between player and DM and not used as a punishment.
@@ -736,8 +724,7 @@ Patrons who proffer pacts of Destruction do so for many reasons, but all of them
 ==== Pact Spells
 The Pact of Destruction grants some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using spell points.
 
-#table(columns: (1fr, auto),
-table.header("Beholden Level", "Spells"),
+#dndtab("Destruction Spells", [*Beholden Level*], [*Spells*],
 "1st", [#emph("burning hands"), #emph("thunderwave")],
 "3rd", [#emph("flaming sphere"), #emph("ray of enfeeblement")],
 "5th", [#emph("dispel magic"), #emph("vampiric touch")],
@@ -768,8 +755,7 @@ Those Patrons who proffer Inquiry Pacts want clients to go out into the world in
 ==== Pact Spells
 The Pact of Inquiry grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
-#table(columns: (1fr, auto),
-table.header("Beholden Level", "Spells"),
+#dndtab("Inquiry Spells", [*Beholden Level*], [*Spells*],
 "1st", [#emph("charm person"), #emph("disguise self")],
 "3rd", [#emph("detect thoughts"), #emph("see invisibility")],
 "5th", [#emph("clairvoyance"), #emph("major image")],
@@ -803,8 +789,7 @@ Those Patrons who proffer Protection Pacts want agents to act in defense of what
 ==== Pact Spells
 The Pact of Protection grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
-#table(columns: (1fr, auto),
-table.header("Beholden Level", "Spells"),
+#dndtab("Protection Spells", [*Beholden Level*], [*Spells*],
 "1st", [#emph("cure wounds"), #emph("shield of faith")],
 "3rd", [#emph("calm emotions"), #emph("prayer of healing")],
 "5th", [#emph("beacon of hope"), #emph("revivify")],
@@ -828,16 +813,15 @@ Once you use this feature, you can't use it again until you finish a short or lo
 
 ==== Legendary Effect: Globe of Invulnerability
 At 14th level, you learn the _globe of invulnerability_ spell and can use it once per long rest. Unlike the normal effect, it targets one willing creature of your choice within 30 ft. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
-]
-#pagebreak()
+
+#colbreak()
 == Bounty Hunter
-#columns(2)[
+
 Bounty hunters draw on the spirits of nature as do druids, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many bounty hunters find that civilization is also in peril from the uncivilized folks within its borders, and these too draw a bounty hunter's wrath. The Border Wardens of Byssia and the Tower Scouts of Crisial Kingdom are among the more organized bodies most known for bounty hunters, but bounty hunters are found throughout Noefra.
 
 Bounty hunters are skirmishers, either attacking from afar with ranged weapons or fighting with multiple weapons. They can put on a shield and fight on the front-lines, but they are less suited to that than a specialized barbarian, fighter, or paladin. They have more ability to deal with hordes of small enemies than most weapon-users, but are not nearly as supportive as a druid or cleric.
 
-#dnd-note[
-==== Compatibility
+#breakoutbox("Compatibility")[
 As a ranger variant, it is not intended to be played alongside a “stock” ranger. 
 ]
 
@@ -873,13 +857,9 @@ You start with the following equipment, in addition to the equipment granted by 
 
 === Stamina
 As a bounty hunter, you have a pool of energy called stamina you can use to fuel your non-magical exploits. You have a number of stamina points as shown in the Stamina column of the Bounty Hunter table. Expended stamina is restored when you finish a short rest.
-]
 
-#figure(
-  caption: "The Bounty Hunter",
-  table(
-    columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr, 1fr),
-    table.header("Level", "Proficiency Bonus", "Features", "Focused Foe Die", "Stamina (STA)", "Spell Points (SP)", "Max Spell Level"),
+#dndtab("The Bounty Hunter",
+  "Level", "Proficiency Bonus", "Features", "Focused Foe Die", "Stamina (STA)", "Spell Points (SP)", "Max Spell Level",
     "1", "+2", "Focused Foe, Natural Explorer", "d4", "1", "---", "---",
     "2", "+2", "Weapon Specialization, Spellcasting", "d4", "2", "4", "1",
     "3", "+2", "Bounty Hunter Archetype, Primeval Awareness", "d4", "3", "4", "1",
@@ -903,7 +883,7 @@ As a bounty hunter, you have a pool of energy called stamina you can use to fuel
   )
 )
 
-#columns(2)[
+
 === Focused Foe
 Bounty hunters have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe Die (originally a d4) once per turn when you hit them with an attack.
 
@@ -945,7 +925,7 @@ The Bounty hunter table shows how many spell points you have to cast your spells
 
 You learn a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can prepare from that list when you finish a long rest. You cannot learn any spell with a level higher than the Max Spell Level for your level (summarized below).
 
-#table(columns: (1fr, 1fr, 1fr), table.header("Spell Points", "Spell Level", "Class Level"),
+#dndtab("Spell Points", "Spell Points", "Spell Level", "Class Level",
 "2", "1", "2",
 "3", "2", "6",
 "5", "3", "10",
@@ -1154,11 +1134,10 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 - Contagion
 - Chain Lightning
 ]
-]
 
 #pagebreak()
 == Druid
-#columns(2)[
+
 Druidism is the 2nd oldest of the organized magics of Quartus. Druids, like clerics, channel their magic from other entities instead of creating the resonant patterns themselves. Unlike clerics, druids aren't beholden to the gods or to powers of the Astral. They negotiate with, befriend, and sometimes bully the ihimen, called the "little gods" or "kami" or "spirits of nature", the collective entities who are in and through everything. In exchange for experiences not available to these bodiless beings and a small piece of the druid's aether, they perform "tricks" in the form of spells and other effects. Their signature is the wildshape, a trick where the druid channels an animal spirit to create an aetheric "shell" as a body, dissolving their real body into the border shadow (in effect). The ihimen merges with the druid's spirit and handles the mechanics of the new body but gets to experience corporeality. This is why the druid is unharmed when the animal body takes blows; it isn't really their body.
 
 Druids are most common in Byssia, with the druids of the Dreamgrove actively participating in that nation's government (although they have stepped back somewhat since the Red Plague and the involvement of the Circle of Purging Flame, which had substantial support in the Dreamgrove community). Crisial has the Lady's Grove, a much more civilization-friendly grove where the dryad of the ancient oak at the center (the titular Lady) still mourns her mate, Safrir of the Catalysts, who sacrificed himself in 254 AC to prevent the veil into Shadow from tearing completely at the start of the Time of Troubles. The other of the large groves is at Pactum in the central-northern Sea of Grass, which centers around an ancient tree and the spirit of that tree, Maevea and her husband Kantorell. Of the groves, Pactum Grove has the least dealings with civilization. Its primary focus is on the balance between life and death.
@@ -1200,14 +1179,13 @@ Starting at level 10, while you have a spirit out, you can re-trigger its emerge
 
 ==== Spirit Unity
 Starting at level 14, when you summon your familiar spirit, you can instead choose to summon any two of them. If you do so, they only last 1 minute but you only expend a single use of Wild Shape and can command both of them with the same bonus action; if you use Spirit Translocation you can choose which one you swap with, and Renewed Emergence affects either or both of them as you choose. Once you use this ability, you cannot do so again until you finish a long rest.
-]
+
 #pagebreak()
 = Inventor
-#columns(2)[
+
 Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the inventor's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
 
-#dnd-note[
-==== Designer's Note
+#breakoutbox("Designer's Note")[
 The three primary archetypes at play here are the bulky, short-tempered smith who can't leave his forge behind, so he brings it with him and wades into melee combat in a clockwork suit of armor, the quick-fingered, quick-witted tinkerer, almost roguish but with much more of a mechanical bent, whose style revolves around souped-up crossbows and mechanical traps and gadgets, and the alchemically-inclined inventor whose talents lean much more toward supporting allies.
 
 This is an alternative to the mechanist, not designed to see play simultaneously in the same party, as they fill much of the same thematic niche and may not be balanced against each other.
@@ -1239,7 +1217,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) leather armor, (b) scale armor, or (c, if proficient) chain mail
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - (a) Tinkerer's tools, (b) Smith's tools
-]
+
 #figure(
   caption: "The Inventor",
   table(columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr),
@@ -1267,7 +1245,7 @@ You start with the following equipment, in addition to the equipment granted by 
   )
 )
 
-#columns(2)[
+
 === Archetype
 Adventuring inventors fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: The chemist, who specializes in alchemical munitions and other consumables, the Gearhead, who specializes in enhancing his armor until he's a walking tank, and the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
@@ -1479,14 +1457,12 @@ Starting at 13th level, when you use your Mine-Layer or Energy Synthesis ability
 - *Gale Force (Air Blast)*: The radius is now 20 ft and the push distance is 10 feet. Creatures no longer make the save with advantage due to their size.  
 - *Extreme Cold (Freeze Ray)*: Creatures restrained by the ice now take half the damage at the beginning of each of their turns. The area remains a 5 feet tall wall of ice for one minute. Additionally, you only need to spend 2 dice instead of 4 to use the _wall of ice_ option.
 ]
-]
 
 #pagebreak()
 = Mechanist
-#columns(2)[
+
 Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the mechanic's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
-#dnd-note[
-==== Designer's Note
+#breakoutbox("Designer's Note")[
 The two primary archetypes at play here are the bulky, short-tempered smith who can't leave his forge behind, so he brings it with him and wades into melee combat in a clockwork suit of armor, and the quick-fingered, quick-witted tinkerer, almost roguish but with much more of a mechanical bent, whose style revolves around souped-up crossbows and mechanical traps and gadgets. It also has the Chemist variant, who mixes aetheric technology with alchemy.
 
 All three are married to a half-caster-like chassis, with a twist. Instead of standard spell slots, the mechanist infuses spell-like magical effects into pieces of his gear: rods, goggles, twists of wire and crystal that look like junk---the outward form matters little. But the mechanist must have it ready to hand to create the magical effect stored within. The mechanist doesn't have spell slots and knows very few spells, but instead uses his Aether Engine to power his gadgets. It has a number of charges that restore over time. These power many of his magical effects. Mechanically, it looks like delayed warlock progression, but with spell points instead of slots.
@@ -1526,7 +1502,6 @@ You start with the following equipment, in addition to the equipment granted by 
 === Archetype
 Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Forgemaster, who specializes in enhancing his armor until he's a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-]
 #figure(caption: "The Mechanist",
   table(columns: (1fr, 1fr, auto, 1fr, 1fr, 1fr),
      table.header("Level", "Proficiency Bonus", "Features", "Max. Aether Charge", "Spells Known (max level)", "Simultaneous Infusions"),
@@ -1553,7 +1528,7 @@ Adventuring mechanists fall into their specialization fairly early. Three such s
   )
 )
 
-#columns(2)[
+
   === Aether Engine
 Unlike a conventional spell-caster, your method of creating magical effects depends on a mechanical contrivance, which is a tiny object of metal, gears, and crystal, which you have created at 1st level. This is your Aether Engine (AE).  It processes environmental aether into usable aether charge. Over time, you make it more capable. When you gain this engine, it can store up to two points of aether charge, which can be used to cast your infused spells and activate some of your class features. Expended points are regained when you complete a short or long rest, up to your maximum. You can never expend more charge as part of a single action than the cost of the highest spell you can cast at your level.
 
@@ -1831,10 +1806,9 @@ Spells marked with a (\*) are found in the New Spells section of this document.
 - Telekinesis
 - Wall of Stone
 ]
-]
 
 == Monk
-#columns(2)[
+
 There are four main monasteries in western Noefra, but most monks learn their art from an unaffiliated master or on their own. Tysh, located near Fuar Uulan, and Quietus, located in Wyrmhold, teach the traditional martial arts associated with monks as a class. Tysh-trained monks focus on the more mystical side and often take vows of silence; the graduates often travel on obscure quests for enlightenment. Quietus, founded by Kalesin of the Catalysts, teaches the common folk the unarmed martial arts and focus. Unlike the other monasteries, it is much closer to a normal school and its graduates don't take any form of vow other than to not use their skills for evil. Tyom, located near Asai'ka, trains spies, dancers, and assassins in shadowy mystical arts. Associated with the Dancers of the Church of the Queen Ascendant, its graduates often join the clergy or dancer corps. Those that don't often dance professionally...or use their skills in the many criminal endeavors across the Jungle. Alone of the schools, the Home of the Elements in the Byssian Highlands, is officially part of the government and includes arcane and primal components. It teaches not only monks but other elementalists to hear and manipulate the elements in many ways. Its martial graduates act as patrolling judges, peace keepers, and messengers throughout Byssia, most often simply resolving disputes through discussion. They wear traditional, simple, colored robes denoting their focused element (amber for air, grey-blue for water, crimson for fire, and green for earth) and carry walking sticks that double as instruments of discipline.
 
 The ki used by monks is aether like the rest of Quartus, just focused inward. As such, monk abilities in Quartus are not subject to anti-magic fields, which only suppress external aetheric resonances.
@@ -1896,10 +1870,10 @@ Starting at 11th level, the poison damage dealt by your Serpent's Venom ability 
 
 ==== Legendary Transformation
 At 17th level, you learn the spell _animal shapes_ and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
-]
+
 #pagebreak()
 == Paladin
-#columns(2)[
+
 Paladins are not connected to gods (unless they choose to be). The Oath is not made _to_ a god; it may be made _calling a god to witness_. Or not. The empowering thing is the absolute conviction that following the tenets is Right. And that absolute conviction lets them, under limited circumstances, tell the universe to get bent and it will obey. One distinguishing factor of the vast majority of paladins is _stubbornness_, at least when it comes to something connected to their Oath.
 
 Paladins are not necessarily _knightly_. Many paladins take their Oaths (which may be formally sworn in ceremony or simply locked in the heart in a moment of supreme need) progressively, growing into their path. Others take them in a moment out of sheer desperation or agony, kneeling at the burning ruins containing their former lives and families and then take time to learn how to wield this power.
@@ -1953,9 +1927,9 @@ At 20th level, as an action you can become what others think you, at least outwa
 - Your attacks deal extra fire or necrotic (your choice) damage equal to one roll of the weapon's base damage die. Damage dealt by Divine Smite or Improved Divine Smite becomes that same damage type
 - You gain 20 temporary hit points whenever a creature is reduced to zero hit points within your Aura of Protection
 - The area within your Aura of Protection cannot be brighter than dim light, regardless of sources of illumination. If it already would be dimly illuminated, it becomes complete darkness.
-]
+
 == Planar Warrior
-#columns(2)[
+
 Planar warriors are those who have, for one reason or another, forged a connection to the Inner Planes (Shadow and the elemental planes) of reality. Starting with the Border Shadow, they learn to manipulate the otherworldly energies for attack, defense, and movement. As their connection grows, they bond to two of the Inner planes more specifically and devote themselves to those particular energies.
 
 ==== Quick Build
@@ -2006,7 +1980,7 @@ Each plane is associated with two damage types as shown in the Planar Element Ta
 
 === Planar Knowledge
 At first level you gain proficiency in the Arcana skill (or another skill of your choice if you already have proficiency with Arcana). When you make an ability check that adds your arcana proficiency, you can add twice your proficiency bonus instead.
-]
+
 #figure(
   caption: "The Planar Warrior",
   table(
@@ -2034,7 +2008,7 @@ At first level you gain proficiency in the Arcana skill (or another skill of you
     "20th", "+6", "Planar Devotion Feature", "11", "4", "3", "3", "3", "2",
   )
 )
-#columns(2)[
+
 
 
 === Protective Ward
@@ -2302,10 +2276,10 @@ At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an 
 - Transmute Rock
 - Wall of Force
 ]
-]
+
 
 == Rogue
-#columns(2)[
+
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a _fireball_ and come out unscathed---the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.
 
 There are several Noefran organizations well-suited to a rogue's talents, from rump of the Benevolent Association, the organized crime ring that ruled Asai'ka from the shadows until the Red Plague, to the Hollow Knives, assassins and secret law-keepers in service to the Hollow King. The Dimwit Syndicate, headquartered in Tarad'am, is another significant criminal organization. Other rogues wear a white hat, acting as investigators, spies, and agents (governmental or private) throughout the scattered nations.
@@ -2465,10 +2439,10 @@ Starting at 17th level, you can attempt to cast any spell of 7th level or lower 
   "--- Very Rare", "25",
   "--- Legendary", "30",
 )
-]
+
 #pagebreak()
 == Spellblade
-#columns(2)[
+
 The spellblade is half-rogue, half-arcanist. They weave distraction, illusion, and weapon-play to confuse their foes, warping reality around them to hamper their ability to strike others. Unique among the classes, they have the ability to mix weapons and spells directly, gaining the ability to cast a spell on their weapon and have it take effect when they strike an enemy.
 
 === Class Features
@@ -2505,7 +2479,7 @@ You can magically distort the minds of your foes. To do so, you use a bonus acti
 You can mark creatures with this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
 
 Your Arcane Manipulation die changes when you reach certain levels in this class as shown on the Manipulation die column of the Spellblade table. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
-]
+
 
 #figure(
   caption: "The Spellblade",
@@ -2536,7 +2510,7 @@ Your Arcane Manipulation die changes when you reach certain levels in this class
   )
 )
 
-#columns(2)[
+
 === Spellcasting
 You have learned to untangle and reshape the fabric of reality in harmony with your wishes.
 
@@ -2778,16 +2752,15 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - Mislead
 - Telekinesis
 ]
-]
+
 
 == Warden (Variant Barbarian)
-#columns(2)[
+
 Wardens are warriors whose prowess has as much to do with their ties to primal power as their own skill. They channel nature's power via strong emotions. Many give themselves to supernatural anger, enough so that many call this state "Rage", despite it not always being anger that serves as the channel. They archetypally fight using two-handed weapons, although some fight with a weapon in each hand and a few use weapon and shield.
 
 Primal power hardens their skin, acting as armor (although many still wear more normal armor). When gripped by their emotional channel, wardens can survive a pummeling that would kill all lesser types. Their blows carry power to crush bones and cleave foes in half, dealing devastating blows to their enemies. The heightened strength and agility from the primal emotion speeds their movements and grants them the ability to react faster than most; at higher levels they even gain the ability to appear like they're flying as they make soaring leaps.
 
-#dnd-note[
-==== Compatibility
+#breakoutbox("Compatibility")[
 This is a variant barbarian and should not be played alongside a barbarian.
 ]
 
@@ -2834,7 +2807,7 @@ Once per turn when you hit with a melee attack, you can choose to expend 1 or mo
 When you deal this extra damage, you gain Focus, which can be spent to fuel other abilities. You can only have one point of Focus at a time; any additional Focus generated is lost. Focus is also lost when you finish a long rest.
 
 Starting at 8th level, when you hit a creature that is concentrating and deal the additional damage, they have disadvantage on the concentration check.
-]
+
 
 #figure(
   caption: "The Warden",
@@ -2864,7 +2837,7 @@ Starting at 8th level, when you hit a creature that is concentrating and deal th
   )
 )
 
-#columns(2)[
+
 === Rage
 
 You can summon primal strength in dire circumstances. As a bonus action on your turn or as a reaction when you take damage, you can spend 2 STA to enter a heightened state, commonly called Rage.
@@ -3038,17 +3011,14 @@ In addition, you can expend Focus to automatically succeed on an otherwise possi
 Starting at 14th level, your speed has increased enough so that it appears you can teleport short distances. When you move on your turn, you can choose to instead teleport to the chosen location as long as you have a clear path to the target location and it is not further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through.
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
-]
 
 == Warmage
-#columns(2)[
+
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.
 
 Warmages in Noefra are most common in Auringon and Wyrmhold, although many nations have begun training their own due to the increased risk of hostilities.
 
-#dnd-note[
-==== Designer's Notes
-
+#breakoutbox("Designer's Note")[
 Warmages use an intentionally strange spell and spell-slot progression. Their list does not contain spells above 5th level, but they do gain access to higher-level spell slots (albeit at a slightly reduced rate compared to normal full casters), allowing them to upcast their lower-level spells (especially with their Power Siphon feature) much more frequently and with greater effect. They're designed for _efficiency_, rather than cutting edge spells. This means they lean into the idea of making the most of their limited repertoire and substituting raw destructive power for wide versatility.
 ]
 
@@ -3080,10 +3050,6 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a longbow and 20 arrows or (b) 5 javelins
 - an explorer's pack
   
-]
-
-
-
 #figure(
   caption: "The Warmage",
   table(
@@ -3112,7 +3078,7 @@ You start with the following equipment, in addition to the equipment granted by 
   )
 )
 
-#columns(2)[
+
 === Spellcasting
 Your ability with spells is why you were trained. Your spells come by memorization and long practice.
 
@@ -3430,11 +3396,10 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 - Wall of Light
 - Wall of Stone
 ]
-]
 
 #pagebreak()
 = New and Modified Spells
-#columns(2)[
+
 
 Contained here are 17 new spells, some of which were taken from _Kobold Press's Deep Magic 5e: Clockwork Magic_ and are used under the Open Game License (OGL 1.0a). That license is presented at the end of this document. All other content is either original or derived from the SRD as marked; both are licensed CC-BY-4.0. Also contained here are modified versions of existing SRD spells, primarily those considered particularly weak that would be flavorful for the classes presented in this document.
 
@@ -3697,14 +3662,12 @@ Changes:
 Changes:
 - Can be used as a regular scimitar dealing only fire damage, dealing an extra (spell level / 2) fire damage per hit.
 - Can be given to another creature (as a scimitar). It disappears and returns to the caster if dropped or thrown.
-]
 
-= Skill Tricks
-#columns(2)[
+#wide[= Skill Tricks]
+
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
-#dnd-note[
-==== Design Intent
+#breakoutbox("Designer's Note")[
 Skill tricks are an attempt to give horizontal progression to everyone, but especially non-spell-casters. They are designed as "mini-feats"; a single bullet point with a passive or active ability. But even the passives are designed to be more than just bigger numbers. They are designed to give _new capabilities_ or to provide certainty.
 ]
 
@@ -4172,10 +4135,9 @@ As an action you can magically do one of the following to a creature you touch. 
 - Cure any disease and remove any poison or curse affecting the creature.
 - Dispel one spell affecting the creature, even if the spell effect is normally not subject to _dispel magic_.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
-]
 
 = Incantations
-#columns(2)[
+
 *Rituals for Everyone!*
 
 A repeated issue is that "utility" and "spells" have become virtually synonymous. This means that for a martial to gain "utility", he has to gain something indistinguishable from spells...which casters already do better.
@@ -4184,11 +4146,10 @@ The intent of the Incantation system is to break this link entirely by turning m
 
 Spells eligible to be converted to incantations include those used for information gathering, those with either permanent or long-lasting (hours or more) effects, those that allow the party to travel quickly between locations or enable new movement modes (underwater, flying, etc), and those that raise the dead or remove strong conditions. Generally, those that deal damage or impose debilitating conditions in a combat environment (other than fixed-location traps and prepared defenses) are not good candidates for conversion.
 
-#dnd-note[
-==== A more extreme variant
+#breakoutbox("A More Extreme Variant")[
 You can take this one step further and _remove_ the spells being emulated here from spell lists entirely, making it so the only real way to produce those effects is through the Incantation system. But that's not a necessary part of the subsystem. They work just fine being a bonus.
 
-==== Doesn't this provide early access to several spell effects?
+==== Doesn't This Provide Early Access to Several Spell Effects?
 Yup. That's because they're gated behind GM action in making the Ritual Scrolls available (for the most part). And the early-access spells aren't exactly the most powerful effects.
 ]
 
@@ -5434,10 +5395,9 @@ Choose one creature. It must remain in the circle for the duration of the caster
 The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.  
 - *Creature into Object.* If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 ]
-]
 
 = Appendix: New Conditions
-#columns(2)[
+
 Two new conditions are used throughout this work and are described here. They are lesser effects of various other effects found throughout the base system, systematized here for ease of reference.
 
 == Staggered
@@ -5445,7 +5405,6 @@ Staggered creatures have their speed reduced to half and can take either an acti
 
 == Shaken
 Shaken creatures cannot take reactions and make attacks at disadvantage.
-]
 
 #pagebreak()
 = Legal Legalities

@@ -1,21 +1,25 @@
-#import "@preview/owlbear-evolved:0.0.1": *
+#import "@preview/dragonling:0.3.1": *
 #import "functions.typ": *
-#show: book-template.with(
-  chapters: false
+#show: dndmodule.with(
+  title: "Lineages of Quartus",
+  subtitle: "A guide to the cultures and lineages, playable and not, of Western Noefra",
+  author: "Admiral Benbo",
+  paper: "us-letter",
+  cover: none,
+  logo: none,
+  fancy-author: true
 )
 
-#cover-page("Lineages of Quartus", "A guide to the cultures and lineages, playable and not, of Western Noefra", "Admiral Benbo", none)
 
 = Introduction
-#columns(2, [
+
 Quartus is home to many of the familiar races (called lineages here because neither race nor species really fits), and a few new ones. Each one has a selection of cultures, presented as sub-lineage choices. While there are many cross-overs (for example humans raised under dwarven culture), not all of those can be presented here due to space constraints. Feel free, within reason and with your DM's permission, to mix and match.
 
 Features marked with (+) are there for the touched lineages; those are the features replaced by the touched race's primary feature. Lineages without such features cannot become touched.
 
 A few notes are in order. Dawn of Hope takes a traditional approach toward player lineages. Each lineage grants ability score increases (aiming for either +2 to one and +1 to another or +1 to three separate ability scores). Each lineage has several "cultural sub-lineages". These are primarily cultural rather than genetic, but some result in different normal appearances, usually for magical-historical reasons. Each entry also contains a "status" line with either Regional or Core. Regional lineages are only found in some small areas of Noefra and are unusual elsewhere. This is intended as a help for Game Masters and players to know how their lineage will be received in various areas. None of the lineages presented here are _feared_  or _hated_  (other than by particularly ignorant or bigoted individuals), but an Abandoned dwarf will, with their grey skin and large eyes, tend to draw attention and surprise in, say, Auringon.
 
-#dnd-note[
-=== Lineage Restrictions
+#breakoutbox("Lineage Restrictions")[
 Unlike some settings, Dawn of Hope naturally restricts what lineages exist, because each one has a place in the world and access from other settings is entirely cut off by the Crystal Sphere. As a result, the default is that all lineages not mentioned here are _not_ present on Quartus.
 
 And yes, these lineages have ability score increases. I don't play with Tasha's ability score customization options. Keep them or not, your choice.
@@ -49,17 +53,16 @@ After you use your breath weapon, you can't use it again until you complete a sh
 - *Draconic Ancestry.*   Choose a color from the Elemental Affinity table and gain resistance to the related damage type. If you have the Breath Weapon feature, this also sets the damage type, saving throw, and shape of the breath weapon.
 ])
 
- #wide[#table(columns: (1fr, 1fr, 1fr, 1fr),
-    table.header("Color", "Damage Type", "Saving Throws", "Shape"),
+ #wide[#dndtab([*Color*], [*Damage Type*], [*Saving Throws*], [*Shape*],
     "Black", "Necrotic", "Constitution", "20ft cone",
-    "Blue", "Lightning", "Dexterity", "30ft x 5ft line",
+    "Blue", "Lightning", "Dexterity", [30ft #sym.times 5ft line],
     "Brass", "Thunder", "Constitution", "20ft cone",
     "Bronze", "Fire", "Dexterity", "20ft cone",
-    "Copper", "Acid", "Constitution", "30ft x 5ft line",
+    "Copper", "Acid", "Constitution", [30ft #sym.times 5ft line],
     "Green", "Acid", "Dexterity", "20ft cone",
-    "Gold", "Radiant", "Dexterity", "30ft x 5ft line",
+    "Gold", "Radiant", "Dexterity", [30ft #sym.times 5ft line],
     "Red", "Fire", "Dexterity", "20ft cone",
-    "Silver", "Cold", "Constitution", "30ft x 5ft line",
+    "Silver", "Cold", "Constitution", [30ft #sym.times 5ft line],
     "White", "Cold", "Constitution", "20ft cone"
 )]
 *Minor Draconic Trait.*   Choose one of the following traits:  
@@ -452,10 +455,9 @@ The earliest shrine guardians to awaken (and the source of their name) were ench
 - *Friend of the Kami.*   The kami whisper to you about possible threats. You have advantage on Wisdom (Perception) checks to find hidden creatures and natural threats (such as rock slides, etc). Additionally, if you are not surprised but a creature that can hear you within 30 ft. is, you can spend your reaction at the start of combat to alert them, removing the surprise.  
 - *Natural Mimicry.*   While in natural environments and stationary, you appear indistinguishable from a tree to visual inspection.
 ])
-])
  
-= Touched Lineages
-#columns(2, [
+#wide[= Touched Lineages]
+
 The influence of various forces, whether from outside the Mortal plane or not, often produces sports, called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The Touched do not, generally, breed true, although the descendants of Touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents.
 
 For all of these, start with a base lineage, including sub-lineage/culture. The base lineage must have a feature marked with a (+). Take the ability score increase listed for your Touched lineage instead of the normal one for your base lineage. If this would result in more than a +2 lineage-derived bonus to any ability score, you gain +1 in any other ability score instead. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage.
@@ -503,11 +505,8 @@ Depending on the exact influence, a fire-touched might have red hair that burst 
 - * Rushing Waves.*   As an action, one creature within 5 feet must make a Strength saving throw of a DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution modifier. On a failed save, they are pushed 10 feet and knocked prone. On a success, they are only pushed 5 feet. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 - * Lightning Burst.*   As an action, all creatures within 5 feet of you must make a Dexterity saving throw with DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution or take lightning damage equal to rolling a d8 a number of times equal to your proficiency bonus and be unable to take reactions until the start of their next turn. On a success, targeted creatures take half damage and no other effects. You can use this feature a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 
+#wide[= Hybrid Lineages]
 
-])
-
-= Hybrid Lineages
-#columns(2, [
 In principle, any lineage other than the steelborn can interbreed successfully with any other. In practice, the only ones who are seen are mixes between humans, elves (ihmisi or gwerin), and orcs, and most commonly human mixed with either elf or orc. These hybrids are stable, meaning the child of two half-elf/half-human parents will be notably hybrid. Most other crosses aren't nearly as stable, taking strongly after one parent or the other and not perpetuating in future generations. Oddly, fiend-touched humans make a more stable hybrid parent with other lineages than regular humans do.
 
 To make a character of a hybrid race, pick a lineage other than steelborn and a sub-lineage/culture from a different, non-steelborn lineage. If one base lineage has a trait marked with a (+) and the other does not, you must make the one with the marked trait your base lineage. Any cultural traits that rely on features the base race does not have (such as choosing a dragonborn culture on a human base, meaning no breath weapon) are replaced with a similar-power cultural trait from the base lineage. Making a character of a hybrid race other than human + elf or ihmisi + orc requires explicit DM collaboration and approval.
@@ -572,11 +571,9 @@ Found in tribes where the orc-dominated Fiach Woods blends into the elven-domina
 - *Primal Initiate.*  You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.  
 - *Relentless Advance.*   Your speed increases by 5 feet (included in the speed entry).
 ])
-
-])
  
-= Non-playable Lineages
-#columns(2, [
+#wide[= Non-playable Lineages]
+
 There are a few lineages that aren't suitable for player characters, but whose members are commonly encountered. A brief description is found below.
 
 == Goblins
@@ -597,8 +594,6 @@ The sena'ka are yet another attempt at creating super-soldiers, one that was bit
 The Ship Folk culture has reacted to their ancestral enslavement by turning the tables; they keep slaves. In fact, there are only sena'ka and slaves in their culture. Slaves who show promise can be made "honorary sena'ka", giving them status and protection. Their culture is pragmatic and strength-oriented. The strong rule, and the strong must continually prove their strength. The only major taboo is killing another sena'ka; with as low their birth rate is, killing a sena'ka is only allowed under extreme circumstances. They take each other hostage and demand ransoms instead.
 
 Ship Folk culture is, as the name suggests, oriented towards ships. Those who spend their lives at sea (or at least on a ship) are higher status than the landlubbers, and the highest status in society is that of a free ship captain. The admirals of the Fleets that organize their society have more power, but often regret giving up their independent commands. Raiders and slavers, they mostly extort resources from the islands in the sea and the northern shore of Soefra. The First Fleet has made a treaty with the Serpent Dominion, allowing them to dock at Tarad'am and control much of the shipping around Sentinel Island (now belonging entirely to the Fleet) but preventing them from raiding the mainland or protected islands. This is enforced by a powerful retired adventurer who has threatened to burn the Fleet to the waterline and murder every single sena'ka of the Fleet if they take slaves from the mainland again. #aside[that's my girl, Dilligas Husty! --ed] And since she's mated to one of the oldest dragons on the planet, they believe her #aside[she absolutely would do it. And then make a hit song about it. --IB]
-])
-
 
 = Legal Notices
 

@@ -7,9 +7,19 @@
   paper: "us-letter",
   cover: none,
   logo: none,
-  fancy-author: true
+  fancy-author: true,
+  bg: none
 )
 
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
 
 = Introduction
 
@@ -24,7 +34,7 @@ Unlike some settings, Dawn of Hope naturally restricts what lineages exist, beca
 
 And yes, these lineages have ability score increases. I don't play with Tasha's ability score customization options. Keep them or not, your choice.
 ]
- 
+#pagebreak()
 == Dragonborn
 
 An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. #aside[What is it with mortal mages and wanting to create a soldier race? Haven't they learned it never works out? -ed] #aside[Hubris. It's an operating requirement to be an arcanist of a certain caliber, it seems. --IB] This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
@@ -36,7 +46,7 @@ Physically, dragonborn look like man-dragon hybrids. Standing of normal human he
 The dragonkin are rare in Western Noefra, being much more common in the Dragonreach to the east, where humans who serve dragons, over generations, take on draconic forms. Culturally they're quite different--mechanically they're very similar.
 
 The two cultures presented here are the Lowland and the Caldera-born. The lowland dragonborn were raised in the rolling hills and plains of Safehold to the east of the Nocthian Caldera. They have a culture of industry, mechanization, and trade. The Caldera-born grew up in the ancestral lands of the Caldera, where life is tougher but pride is higher. Caldera-born often look at the lowland dragonborn as "soft", while the lowland dragonborn look at the Caldera-born as rural bumpkins who think they're special.
-
+#colbreak()
 === Lineage Traits
 #flush-block([
 - *Ability Score Increase.*   +1 Charisma OR Constitution
@@ -51,9 +61,13 @@ When you use your breath weapon, each creature must make a saving throw, the typ
 
 After you use your breath weapon, you can't use it again until you complete a short or long rest.
 - *Draconic Ancestry.*   Choose a color from the Elemental Affinity table and gain resistance to the related damage type. If you have the Breath Weapon feature, this also sets the damage type, saving throw, and shape of the breath weapon.
+- *Minor Draconic Trait.*   Choose one of the following traits:
 ])
+- *Vestigial Wings.* You gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn  
+- *Armored Hide.* Your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
 
- #wide[#dndtab([*Color*], [*Damage Type*], [*Saving Throws*], [*Shape*],
+#figure(
+dndtab(columns: (0.75fr, 1fr, 1.5fr, 2fr),"Elemental Affinity", [*Color*], [*Damage Type*], [*Saving Throws*], [*Shape*],
     "Black", "Necrotic", "Constitution", "20ft cone",
     "Blue", "Lightning", "Dexterity", [30ft #sym.times 5ft line],
     "Brass", "Thunder", "Constitution", "20ft cone",
@@ -64,11 +78,8 @@ After you use your breath weapon, you can't use it again until you complete a sh
     "Red", "Fire", "Dexterity", "20ft cone",
     "Silver", "Cold", "Constitution", [30ft #sym.times 5ft line],
     "White", "Cold", "Constitution", "20ft cone"
-)]
-*Minor Draconic Trait.*   Choose one of the following traits:  
-- *Vestigial Wings.* You gain a flight speed equal to half your base speed, but cannot end your turn aloft on more than one consecutive turn  
-- *Armored Hide.* Your AC is equal to 13 + your Dexterity modifier while not wearing armor. You can wield a shield and retain this bonus.
- 
+))
+
 === Caldera-born
 #flush-block([
 - *Ability Score Increase.*   +2 Strength OR +1 Constitution and +1 Strength  
@@ -76,7 +87,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 - *High Altitude Acclamation.*  You are at home at high altitudes and in cold climates, feeling no ill effects of either. Magical or unnatural cold still affects you unless you have resistance.  
 - *Quick Breath.*  You can use your Breath Weapon twice between short or long rests instead of only once.
 ]) 
-
+#colbreak()
 === Lowlands
 #flush-block([
 - *Ability Score Increase.*  +2 Intelligence OR +1 Charisma and +1 Dexterity  
@@ -84,7 +95,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
 - *Mechanical Familiarity.*  When you make an ability check to understand a mechanical device or disarm a mechanical trap, you do so at advantage.  
 - *Reliable Breath.*  When you use your Breath Weapon feature, you can reroll any dice that show a 1 or 2. You must use the second result, even if the result is a 1 or a 2.
 ])
-
+#pagebreak()
 == Dwarf
 Dwarves, more properly the *tumnii*, are the kindred most unchanged by time. Their ancestors at the end of the First Age, nearly 20,000 years ago, were titans, masters of order and runes. The ruling council, committed an act of hubris. They created the so-called Orb of All Might to destroy their longstanding enemy, the wyrm (ancestors of dragons). To empower the Orb, they drained the power and potential out of the "weaker" elements of their society. These were the first dwarves. Sons and daughters of the earth and runes, they change only grudgingly. This carries over to their physiology. Dwelling in the mountain depths has sharpened their eyesight and the stone in their blood gives them increased endurance.
 
@@ -132,7 +143,7 @@ Surfacer dwarves have ancestors that lived above ground and were craftsmen and t
 - *Shared Endurance.*  When a creature you can see within 30 ft makes a Constitution or death saving throw, you can share some of your fortitude with them. You take one level of exhaustion, and they add your Constitution modifier or Charisma modifier (whichever is higher, minimum 1) to the save result.
 ])
 
-
+#pagebreak()
 == Gwerin (High Elves)
 One of two major elven lineages, the gwerin (aka high elves) are the least populous of the kindreds. Slow to breed due to a legacy of near-agelessness (now lost, a fact that still causes many hard feelings), they stand out wherever they go. Historically their kind were masters of arcane magics; even now they have an enhanced sensitivity to aetheric manipulation and a knack for intellectual pursuits. Culturally, they are stereotyped as being snooty and stuck up, always considering themselves better than other kindreds. And, truth be told, many fit that stereotype or even glory in it.
 
@@ -170,7 +181,7 @@ Those not of the Houses (a vast majority of the gwerin population) are the Unhou
 - *Weapon Training.*  You are proficient with longswords, rapiers, short bows, and longbows. Longswords count as finesse weapons for you.  
 - *Magical Knack.*  You know a cantrip from your choice of the Cleric, Druid, or Sorcerer list. Charisma is your spellcasting ability for this cantrip.
 ])  
-
+#pagebreak()
 == Halfling
 
 Halflings are the second-youngest of the lineages of Noefra, having spontaneously developed out of goblin-kind during the War of Souls roughly 800 years ago (just after the creation of the dragonborn). The magical radiations of that war and the extreme genetic bottlenecking attendant to their creation and then the Cataclysm (which hit their homelands the worst) led to an unusual genetic quirk: approximately 50% of all halflings are neuter females called Kliba. 30% are fertile females, known as matriarchs, and the remainder are males.
@@ -180,7 +191,7 @@ As the shortest, smallest kindred, they are often confused for children of large
 The tallest of them are shorter than the shortest humans, and they weigh very little.  Males are usually shorter and smaller than females. Halflings rarely grow beards or facial hair, and their hair is almost always short and tends to stick up. Their ears are slightly pointed and they have pronounced canines. Their eyes have a reflective undercoat like felines. All normal human hair colors and skin colors are found among the halfling-folk, although most have light hair and eyes.
 
 The two cultures presented here are the Wall-Builders of the Sea of Grass, known for their religious devotion and bucolic nature, and the Sharp Tooth of the northern Jungle of Fangs, known as a culture to be fiercely protective swamp dwellers #aside[and according to rumors, anthropophages --IB].
-
+#colbreak()
 === Lineage Traits
 #flush-block([
 - *Ability Score Increase.*   +1 Dexterity OR Charisma  
@@ -200,16 +211,16 @@ The two cultures presented here are the Wall-Builders of the Sea of Grass, known
 - *Adept Poisoner.*  Poison you apply to your weapons deals an additional die of damage and applies to all hits for the duration, rather than just the first.  
 - *Poison Resistance.*  You have resistance to poison damage and advantage on saving throws against being poisoned.
 ])
-
+#pagebreak()
 === Wall-Builder
 #flush-block([
 - *Ability Score Increase.*  +1 Dexterity, +1 Charisma  
-- *Additional Proficiencies.*  You have proficiency in Animal Handling and your choice of Deception or Persuasion.   
+- *Additional Proficiencies.*  You have proficiency in Animal Handling and your choice of Deception or Persuasion.  
 - *Weaponized Charm.*   As an action, you can force a target that is either in combat with you or with whom you are interacting socially to make a Wisdom saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failure, the target makes attack rolls against you at disadvantage and their attitude increases by one step (hostile #sym.arrow indifferent #sym.arrow friendly) for the duration of the interaction. 
 
 In combat, targets that fail can repeat their saving throw at the end of each of their turns, ending the effect on a success. Creatures that succeed on their saving throw or for whom the effect ends cannot be affected by this ability again for 24 hours. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 ])
-
+#pagebreak()
 == Human
 Humans, also called the devout kindred, are among the most common of the peoples of Noefra. Created by the gwerin from goblinoids and gwerin blood during the interregnum between the Second and Third Ages, they dominated the Third Age with their devotion to the gods that arose with the dawn of the Third Age.
 
@@ -228,7 +239,7 @@ There are three main human cultures in western Noefra. Wall-builders are the mos
 - *Additional Proficiencies.*  You gain proficiency in one skill and language of your choice.  
 - *Desperate Plea (+).*   As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 ])
-#colbreak()
+
 === Fang-kin
 The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Fang-kin are seen as somewhat androgynous by the other human cultures as they show only minimal secondary sexual characteristics and their features are delicate. Their notable feature is that they have visible patches that are reminiscent of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
 
@@ -263,13 +274,13 @@ Culturally, wall-builders are the most god-bound, worshiping the Seasonal Four. 
 Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.  
 - *Diplomat.*  When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
 ])
-
+#pagebreak()
 == Ihmisi 
 
 The ihmisi, the children of the woods, also called "wood elves" by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The repercussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
 
-Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones...but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
-
+Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones, but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
+#colbreak()
 === Lineage Traits
 #flush-block([
 - *Ability Score Increase.*   +1 Dexterity  
@@ -294,7 +305,7 @@ These tribes rarely worship anything other than the local Ihimen, although somet
 - *Primal Initiate.*  You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.
 ])
 
-
+#colbreak()
 === Traveler
 Ihmisi who have left their sylvan roots or who grew up in settled areas tend to become wanderers, forming insular families that move from place to place, always seeking a new horizon. Some few do settle down, but even then, tend to be restless. Often, these traveling folk are known (justly or not) for being able to repair almost anything (a necessity when you're constantly on the road) and sometimes petty theft.
 
@@ -305,8 +316,7 @@ Ihmisi who have left their sylvan roots or who grew up in settled areas tend to 
 - *Weapon Training.*  You are proficient in longbows, shortbows, shortswords, and longswords. Longswords are finesse weapons for you.
 ])
 
-
- 
+#pagebreak()
 == Jazuu
 The other living descendants of the ancient titans, the jazuu are those whose ancestors were _not_  drained of runic potential. In the wake of the Orb's backfire, the runic power was shattered, leaving them locked in their "small" form, which still towers over most other lineages. They retreated into the mountains and deep wastes of Noefra, forming civilizations such as the Tuura Adam around the few Titanwalls remaining. These runic constructions carry the promise of transformation into a true giant for the worthy and strong. As a result, many jazuu-dominated cultures are fircely competitive and perfectionist.  The other Noefran group of jazuu are those whose ancestors served the Hungering Frost on the Nocthian Caldera; they are much more tribal.
 
@@ -344,7 +354,7 @@ The Tuura Adam built their civilization in the original jazuu homeland, deep in 
 - *Increased Order.*  You can use your Child of Order ability on any ability check, saving throw, or attack roll by a creature you can see within 60 feet instead of only on yourself.
 - *Review the Codex.*  When you finish a long rest, you can pick a skill or tool you are not proficient in. You gain proficiency in that skill or tool until you finish a long rest.
 ])
-
+#pagebreak()
 == Ophidian 
 The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans...and their distant relatives, the ophidians. Their ancestors were humans who were bio-magically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
 
@@ -379,7 +389,7 @@ The Venom-tip ophidians were born with innate poison. They are lithe even for op
 - *Poison Bite.*  You have a natural weapon you can use whenever you can make an attack. It counts as a finesse weapon with a reach of 5 feet, dealing 1d4 + your ability modifier piercing damage and 1d6 poison damage. When you reach 5th level, the poison damage increases to 2d6. At 11th level, it increases to 3d6.  
 - *Poison Resistance.*  You have resistance to poison damage and make saving throws against being posioned at advantage.
 ]) 
-
+#pagebreak()
 == Orc 
 Like humans were created from goblinoids and gwerin, the orcs were created (at about the same time even) by the ihmisi from goblinoid, ihmisi, and animal souls. Second largest of the kindred (after the jazuu), they are an imposing people. Their early history was stained with the blood and curses of the War of Blood, when an orc leader turned to demonic power to fight back against oppression and assault and instead built an empire of skulls and ruin. After the gods were created to cast him down to the Abyss, the people who shared his face (justly or not) were considered evil and outcast to the fringes of civilization throughout the Third Age. With the Cataclysm and the great leveling of the old ways, they have re-entered society as equals. The legacy of that demon-tainted orc still echoes in the blood of Noefran orcs, although the compulsion that once drove them to mad bloodlust is gone.
 
@@ -421,7 +431,7 @@ The sylvan wood orcs are those who live the traditional, tribal lives in the Fia
 - *Brutal Critical.*   When you critically hit with an attack, instead of rolling the damage dice twice, roll the damage dice for the attack once and add the result to the maximum roll of the dice (max + roll). Features that increase the number of critical dice are not maximized.
 ])
 
-
+#pagebreak()
 == Soulforged 
 The soulforged are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, constructs of many types started to "wake up", becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows _why_  this is happening, how long they will live, or how to cause one to awaken. How they talk and why they need rest is entirely unknown.  Unlike most lineages, they do not naturally visibly change over time. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
 
@@ -455,7 +465,7 @@ The earliest shrine guardians to awaken (and the source of their name) were ench
 - *Friend of the Kami.*   The kami whisper to you about possible threats. You have advantage on Wisdom (Perception) checks to find hidden creatures and natural threats (such as rock slides, etc). Additionally, if you are not surprised but a creature that can hear you within 30 ft. is, you can spend your reaction at the start of combat to alert them, removing the surprise.  
 - *Natural Mimicry.*   While in natural environments and stationary, you appear indistinguishable from a tree to visual inspection.
 ])
- 
+#pagebreak()
 #wide[= Touched Lineages]
 
 The influence of various forces, whether from outside the Mortal plane or not, often produces sports, called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The Touched do not, generally, breed true, although the descendants of Touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents.
@@ -504,7 +514,7 @@ Depending on the exact influence, a fire-touched might have red hair that burst 
 - * Shielding Stone.*   As a reaction when you or a creature you can see within 30 feet of you is hit by an attack, you can take the Deflect action without expending Stamina, affecting the creature targeted. This effect lasts until the start of your next turn. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 - * Rushing Waves.*   As an action, one creature within 5 feet must make a Strength saving throw of a DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution modifier. On a failed save, they are pushed 10 feet and knocked prone. On a success, they are only pushed 5 feet. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
 - * Lightning Burst.*   As an action, all creatures within 5 feet of you must make a Dexterity saving throw with DC equal to 8 + your proficiency bonus + your choice of Strength or Constitution or take lightning damage equal to rolling a d8 a number of times equal to your proficiency bonus and be unable to take reactions until the start of their next turn. On a success, targeted creatures take half damage and no other effects. You can use this feature a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
-
+#pagebreak()
 #wide[= Hybrid Lineages]
 
 In principle, any lineage other than the steelborn can interbreed successfully with any other. In practice, the only ones who are seen are mixes between humans, elves (ihmisi or gwerin), and orcs, and most commonly human mixed with either elf or orc. These hybrids are stable, meaning the child of two half-elf/half-human parents will be notably hybrid. Most other crosses aren't nearly as stable, taking strongly after one parent or the other and not perpetuating in future generations. Oddly, fiend-touched humans make a more stable hybrid parent with other lineages than regular humans do.
@@ -571,7 +581,7 @@ Found in tribes where the orc-dominated Fiach Woods blends into the elven-domina
 - *Primal Initiate.*  You learn one cantrip of your choice from the Druid list, as well as one spell of 1st level from that same list. Wisdom is your casting ability for these spells. You can cast the spell once with this feature and regain the ability to do so when you finish a long rest. If you have the Spellcasting feature, you can use your spell slots to cast it as well.  
 - *Relentless Advance.*   Your speed increases by 5 feet (included in the speed entry).
 ])
- 
+#pagebreak()
 #wide[= Non-playable Lineages]
 
 There are a few lineages that aren't suitable for player characters, but whose members are commonly encountered. A brief description is found below.
@@ -597,8 +607,8 @@ Ship Folk culture is, as the name suggests, oriented towards ships. Those who sp
 
 = Legal Notices
 
-#sym.copyright 2026, Benjamin Hall. This work is openly licensed via https://creativecommons.org/licenses/by/4.0/. 
+#sym.copyright 2026, Benjamin Hall. This work is openly licensed via #link("https://creativecommons.org/licenses/by/4.0/legalcode")["CC-BY-4.0"]. 
 
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at #link("https://dnd.wizards.com/resources/systems-reference-document"). The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at #link("https://creativecommons.org/licenses/by/4.0/legalcode").
 
-No generative AI was used in the production of this work. All images original.
+No generative AI was used in the production of this work.

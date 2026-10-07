@@ -7,20 +7,30 @@
   paper: "us-letter",
   logo: none,
   cover: none,
-  fancy-author: true
+  fancy-author: true,
+  bg: none
 )
 
-#set figure.caption(position: top)
+#set page(margin: 15mm)
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
 
 #import "functions.typ": *
 
-#wide[= Introduction]
+= Introduction
 
 Designed for players looking for new options designed for use within Dawn of Hope (but not indelibly bound to that setting), this book contains multiple new classes (including two different takes on the same basic mold, the Inventor and Mechanist) and new subclasses for several classic classes. It also contains two new subsystems: Skill Tricks (mini-feats designed to expand the uses of skill and tool proficiencies) and Incantations (a take on 4e's Rituals, bringing utility magic to the masses in a controlled way) and 17 new spells, as well as variant versions of 3 more often-panned spells.
 
 While these options were designed with Quartus in mind and have been played there, they should be setting-agnostic enough to play well in any fantasy-oriented setting.
 
-#wide[= Classes]
+= Classes
   
 A player character's class is an important part of their interaction with the world of Dawn of Hope. But classes are instantiations of archetypes, not necessarily in-universe organizations. Most NPCs do not have classes, even if they have abilities similar to those of player characters. Some class names are _close_ to being diegetic; calling one of the robed peacekeepers of Byssia a "monk" is reasonable enough and you'd be understood by people in the setting. But don't look too closely.
 
@@ -40,8 +50,8 @@ Not all of the core classes are extended here. The others exist and there have b
 - Fighters are fantastic, but not spell-casters (other than the Eldritch Knight). That means that their powers are fueled by aether (the stuff of existence and magic). They can use Second Wind (etc) only a limited number of times because these are not purely practiced techniques. Instead, practice and training has tapped them into the ambient power inherent in themselves, unlocking "unrealistic" and "superhuman" abilities while not casting regular spells.
 - Rangers, like druids, talk to the ihimen. But unlike druids, they make friends with specific ones and attach those spirits to their gear and (if Beastmaster) their animal companions. Druids are more transactional; rangers (and bounty hunters) are training their friends to do tricks for them. This is the bond that makes a ranger's animal companion more than just a beast.
 - Wizards and sorcerers aren't as far apart as in some settings. While anyone, in principle, can learn arcane magic, it's easier for some people. Specifically, the difference is in where they get their spells. Sorcerers are born (in the fiction) with a fixed set of spell patterns encoded in them. Their challenge is to fuel them appropriately (ie create spell slots for them). Wizards have this same problem, but _also_ have to learn their patterns from text and practice. Unlike many settings, _sorcerers_ are the more inventive ones, because their spells _evolve_. Wizards are more methodical, but less apt to create new spells. They are better at preserving and teaching spells, however.
-
-== Armsman (Variant Fighter)
+#pagebreak()
+= Armsman (Variant Fighter)
 
 #breakoutbox("Compatibility")[
 This is a replacement for the Fighter and should not be played in the same group. It is intentionally somewhat stronger.
@@ -51,20 +61,20 @@ The armsman is a master of weapons. His power comes from training, discipline an
 
 Wearing heavy armor, able to use any weapon with equal skill, the armsman is versatile and deadly in any situation. Durable as well, he isn't as suited at standing on the back lines and assisting others. His control over the battlefield is more oriented toward punishing those who attack his allies.
 
-==== Quick Build
+=== Quick Build
 To quickly build an armsman, put your highest ability score into Strength, with Constitution also high and take a one-handed weapon and a shield.
 
-=== Class Features
+== Class Features
 As an Armsman, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d10 per Armsman level.
 - *Hit Points at 1st Level:* 10 + your Constitution modifier.
 - *Hit Points at Higher Levels:* 1d10 (or 6) + your Constitution modifier per Armsman level after 1st.
 ]
 #colbreak()
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* all armor, shield.
 - *Weapons:* all weapon.
@@ -73,7 +83,7 @@ As an Armsman, you gain the following class features.
 - *Skills:* Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
 ]
 
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) chain mail or (b) leather armor, a longbow, and 20 arrow.
@@ -81,14 +91,14 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a light crossbow and 20 bolts or (b) two handaxe.
 - (a) a dungeoneer's pack or (b) an explorer's pack
 
-=== Second Wind
+== Second Wind
 You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can spend 1 STA and use a bonus action to regain hit points equal to 1d10 + your armsman level. The cost increases by 1 STA each time you use it, resetting to 1 when you finish a long rest.
 
-=== Stamina
+== Stamina
 As an armsman, your abilities are fueled by your internal reserves of energy, called Stamina (abbreviated as STA). You have a pool of stamina points equal to your level + your Constitution modifier and you regain expended points when you finish a short or long rest.
 
 #wide[
-#dndtab("The Armsman",
+#dndtab("The Armsman", columns: (1fr, 1fr, 3fr, 1fr, 1fr),
 [*Level*], [*Proficiency Bonus*], [*Features*], [*Stamina*], [*Skill Tricks*],
 "1st", "+2", "Second Wind, Stamina, Weapon Specialization", "1 + CON", "---",
     "2nd", "+2", "Action Surge, Active Defenses", "2 + CON", "---",
@@ -112,13 +122,13 @@ As an armsman, your abilities are fueled by your internal reserves of energy, ca
     "20th", "+6", "Improved Deathblow", "20 + CON", "6/master"
 )
 ]
-=== Weapon Specialization
+#pagebreak()
+== Weapon Specialization
 You are better than most at using the additional properties of your weapon. While wielding a weapon, you gain the features below for that weapon. If the weapon has multiple additional properties, you must choose which feature to apply on any individual attack. If a feature calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
 - *Battering* (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw by spending 1 STA. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Strength modifier unless the d20 result was a 1.
 - *Cleaving* (Sickle, battleaxe, glaive, greataxe, scimitar) Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it hits, they take the same damage as the initial target, not including any non-weapon damage sources (such as spell effects). By spending 1 STA, you can attempt the cleave attack even if you miss. If you do so, make a new attack roll against the secondary target.
 - *Light* The additional attack made when fighting with two light weapons does not require your bonus action but can only be made once per turn. When you hit with this attack, you add your ability modifier to the damage dealt.
-#colbreak()
 - *Loading* You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to zero hit points, you can choose to have the bolt pass through the target at a creature behind the slain creature by spending 1 STA. The closest creature on a 5 foot wide line connecting you to the slain creature and extending 30 feet behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
 - *Parrying* (greatsword, halberd, longsword) When a creature misses you with a weapon attack from within your reach, you can make an attack with your weapon against them as a reaction. If you take the Deflect action, you can make the counter attack whether the triggering attack hits or misses.
 - *Precise* (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on a 19 or 20.
@@ -126,15 +136,16 @@ You are better than most at using the additional properties of your weapon. Whil
 - *Shields* (shield) You can make opportunity attacks with a shield (as a battering martial melee weapon with a 1d4 damage die). If you hit, you can apply the battering property (potentially knocking the creature prone).
 - *Thrown* You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
 - *Two-handed* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
-.
+]
 
 
-=== Action Surge
+== Action Surge
 Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can spend 3 STA to take one additional action on top of your regular action and a possible bonus action.
 
 Once you use this feature, you cannot use this feature again until you next roll initiative. Starting at 17th level, you can use it as many times as you have stamina for, but only once on the same turn.
 
-=== Active Defenses
+#pagebreak()
+== Active Defenses
 Starting at 2nd level, you gain additional special actions.
 #flush-block[
 - *Deflect.* When you are the target of an attack from a source you can see, you can use your reaction and spend 1 STA to attempt to deflect it before the attack is rolled. Your armor class increases by your proficiency bonus against that attack. If the attack misses as a result and you are wielding a weapon or a shield and the attacker is in your reach (5 ft for a shield), you can make a counter attack as part of the same reaction. Make the attack as normal. If you make this attack with a shield, it counts as a battering melee weapon with which you have proficiency, with a damage die of 1d4 bludgeoning.
@@ -142,28 +153,27 @@ Starting at 2nd level, you gain additional special actions.
 - *Focus.* When you have to make an ability check or saving throw that adds your Intelligence, Wisdom, or Charisma modifier to the d20, you can spend 2 STA to add your proficiency bonus. This is an exception to the normal circumstances; you can do this even if you are already adding your proficiency bonus (such as from a skill proficiency) and thus add twice your proficiency bonus. This does not require an action, but you can only use this feature once per round.
 ]
 
-
-=== Martial Archetype
+== Martial Archetype
 At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose the Defender, Sword Saint, or Warlord archetype, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores by 1 each. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can take a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can pick a Skill Trick you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
-=== Extra Attack
+== Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
-=== Repeated Strikes
+== Repeated Strikes
 Beginning at 5th level, you've learned to carry energy from one blow to the next. Each time you hit with a weapon attack, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. Gathered Momentum is lost when you go at least one minute without making an attack. You can have a maximum amount of momentum equal to your level.
 
 When you hit a target and have one or more Momentum points, you can choose to expend that Momentum. When you do so, the target takes extra damage equal to 3 #sym.times the number of Momentum points expended and must make a Constitution saving throw against your Weapon Mastery DC. On a failed saving throw, the target cannot take reactions and makes attacks at disadvantage until the end of your next turn. If you expended more than 4 Momentum, the target is stunned for the same duration instead.
 
-=== Versatility
+== Versatility
 Beginning at 6th level, you gain the following benefits:
 
 - You can use Strength or Dexterity as the modifier for weapon attacks and damage regardless of the type of weapon.
@@ -172,7 +182,7 @@ Beginning at 6th level, you gain the following benefits:
 - You can choose to make a Strength check when a Dexterity check would otherwise be called for and vice versa.
 - You can Shove or Grapple instead of making a regular Opportunity Attack.
 
-=== Everything's a Weapon
+== Everything's a Weapon
 Beginning at 9th level, you've discovered that the same techniques you use with your weapons also apply to other situations. Choose one of the approaches below. You can change your approach when you finish a short or long rest.
 #flush-block[
 - *Direct.* When you make an ability check involving Intimidation, Athletics, or any ability check involving Constitution, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
@@ -183,95 +193,89 @@ Beginning at 9th level, you've discovered that the same techniques you use with 
 ]
 
 
-=== Indomitable
+== Indomitable
 Beginning at 9th level, you can choose to succeed on a saving throw instead of rolling. If you do so, you cannot use this feature again until you finish a long rest.
 
 You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
 
-=== Flash Step
+== Flash Step
 Starting at 13th level, you have learned to move so fast over short distances that it appears you can teleport. When you move on your turn, you can spend 2 STA to instead teleport to the chosen location as long as you have a clear path to the target location and it is no further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through. This consumes your movement at a rate of 1 ft per ft teleported.
 
-=== Deathblow
+== Deathblow
 Starting at 14th level, you can attempt to strike down a wounded foe. When you hit an enemy with a weapon attack and the enemy has less than 25 hit points, you can choose to spend 4 STA to drop it to zero hit points instead of dealing normal damage. You can choose whether this is lethal or nonlethal if you hit with a melee attack.
 
 If the target has hit points above this threshold, you can choose to force the target to make a Constitution saving throw at disadvantage against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed save they are stunned until the end of your next turn. Alternatively, you can choose to refund the STA spent.
 
-=== Improved Deathblow
+== Improved Deathblow
 Starting at 20th level, your touch is death for most weaker foes. You no longer need to expend STA to use Deathblow if the target's current or maximum hit points is below 25, and can spend stamina to use Deathblow as long as the target's current hit points is under 50.
 
-=== Martial Archetypes
+== Martial Archetypes
 Different armsmen choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach.
 
-=== Defender
+== Defender
 The defender archetype focuses on protecting allies from harm while locking down their enemies. While most use a one-handed weapon and a shield, others trust in their heavy armor to protect them.
 
-==== Thicket of Blades
+=== Thicket of Blades
 Starting at 3rd level, opponents within your reach provoke opportunity attacks from you by moving 5 feet or more, making attacks against anyone but you, making ranged attacks while, or casting a spell. Additionally, you can spend 1 STA to make an opportunity attack when provoked without consuming your reaction. No individual creature can provoke more than one opportunity attack per turn.
 
-==== Shielding Bulwark
+=== Shielding Bulwark
 Starting at 3rd level, when you are the target of an effect that affects an area and allows a Dexterity saving throw to take half damage and wield a shield, you can use your weapon and shield to diffuse and deflect the energies, protecting yourself and those behind you. Expend 2 STA. You and all creatures in a 15 foot long line that is 10 feet wide behind you (relative to the target point in space) gain advantage on the saving throw and the shielded creatures take no damage if they succeed on the saving throw and only half damage if they fail.
 
-==== Combat Challenge
+=== Combat Challenge
 Starting at 7th level, your training has taught you how to magically compel a target to focus on you. As a bonus action, choose a target that can hear you and that you can see within 60 feet. The target must make a Charisma saving throw against a DC of 8 + your Charisma modifier + your proficiency bonus. On a failed save, the target cannot make attacks against anyone but you or target any of your allies with an ability (magical or otherwise). Additionally, they cannot willingly move further away from you. This effect lasts for one minute or until you use this ability against someone else or you are incapacitated. If you make attacks with the Attack action against other creatures, the target can attempt the saving throw again, ending the effect on a success. Once a creature fails their saving throw against this ability, you cannot use it again until you finish a short or long rest.
 
-==== Calming Words
+=== Calming Words
 Starting at 10th level you've become particularly adept at predicting what will cause controversy; words are weapons too. As such, you can add twice your proficiency bonus to any Charisma check you make to defuse tense situations. In addition, when an ally you can hear makes a Charisma (Persuasion) check and you Help them, they can add your Charisma modifier to theirs when resolving the check.
 
-==== Resilience
+=== Resilience
 Starting at 15th level, you can ignore your wounds and keep fighting even through attacks that would normally incapacitate you. When you are reduced to zero hit points or would be outright killed (such as by a _power word kill_ effect), you can spend 8 STA to instead heal to half your maximum hit points.
 
-==== Total Prediction
+=== Total Prediction
 Starting at 18th level, you have trained enough to be able to magically sense your enemies' actions a few steps ahead. As an action you gain limited precognitive abilities for one hour. For the duration, you cannot be surprised and have advantage on attack rolls. Additionally, other creatures have disadvantage on attack rolls against you for the duration. Once you use this ability, you cannot do so again until you finish a long rest.
 
-=== Sword Saint
+== Sword Saint
 Don't let the name confuse you, there are sword saints devoted to all forms of weapons. The sword saint takes their weapon skills to an entirely new level. On the battlefield they are a flash of lightning, a stroke of thunder, an explosion of strikes. Many of their techniques draw on pure aether, mixing magic and weapon play.
 
-==== Exceptional Stamina
+=== Exceptional Stamina
 Starting at 3rd level, sword saints have an exceptionally large stamina pool by fusing their aether with it. Your stamina pool increases by your Intelligence modifier.
 
-==== Weapon Flexibility
+=== Weapon Flexibility
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list until the start of your next turn: Battering, Cleaving, Finesse, Parrying, Precise, or Thrown. If you choose to make a weapon Thrown, its range is 30/120.
 
-==== Blazing Flash
+=== Blazing Flash
 Starting at 3rd level, you can concentrate elemental fire in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA to force the target to make a Constitution saving throw against a DC of 8 + the higher of your Dexterity or Strength modifier + your proficiency bonus. On a failed save, they take additional fire damage equal to your Intelligence modifier (minimum 0) and are blinded until the end of their next turn. On a success, they only take the additional damage.
 
-==== Blades of Air
+=== Blades of Air
 Starting at 7th level, you can concentrate elemental air in your melee strikes, launching blades of solid air at your foes. When you take the Attack action with a melee weapon, you can expend 1+ STA to extend your reach for that action by 10 ft per STA spent and convert the damage to thunder. The damage dealt by these attacks also increases by 2 for every STA spent.
 
-==== Cold as Ice
+=== Cold as Ice
 Starting at 10th level, you are nearly impossible to fluster or make angry. You can add twice your proficiency bonus to any saving throw or ability check against an effect that would impose the frightened or charmed condition and if you are affected by either of those conditions, you can expend 2 STA at the start of your turn to suppress the effect until the end of your turn.
 
 Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 STA as an action, removing the effect or expelling the possessor.
 
-==== Lightning Step
+=== Lightning Step
 Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus #sym.times your Intelligence modifier and are shaken until the beginning of your next turn. On a success, targets take half damage and are not shaken. Shaken creatures cannot take reactions and make attacks at disadvantage.
 
 When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of shaken and targets that succeed are shaken until the start of your next turn.
 
-==== Cascading Deathblow
+=== Cascading Deathblow
 Starting at 18th level, when you use your Deathblow ability, you can expend 1+ STA in addition to the STA spent (if any) to activate the ability. If you do so, all creatures of your choice within your reach if wielding a melee weapon or all creatures of your choice within 10 feet of the original target if wielding a ranged weapon take damage of the weapon's type equal to one roll of the weapon's base die for every stamina spent in this way.
 
-=== Warlord
+== Warlord
 Warlords are the battle commanders; they give up some of their personal prowess to bolster the capabilities of their allies.
 
-==== Battle Commands
+=== Battle Commands
 At 3rd level, you've learned to recognize and create opportunities for your allies to act. You learn your choice of two of the commands below. You learn an additional command from this list at level 7.
 #flush-block[
 - *Command: Strike.* When you take the Attack action, you can forgo one or more attacks, expending 1 STA per attack. For each attack forgone, one willing creature that can see and hear you can use their reaction to make a weapon attack against a creature within their weapon's range. If this attack hits, they deal additional damage equal to your weapon's damage die (or 1d4 if you are not wielding a weapon). The additional damage increases by one weapon die at 11th level.
-- *Command: Hustle.* As a bonus action on your turn, you can create an opening by expending 1 STA. One willing creature you can see moves up to their speed and does not provoke Opportunity attacks while moving.
-
-Starting at level 11, creatures who benefit from this also gain temporary hit points equal to your level.
-- *Command: Stay With Me.* You've learned to provide effective emergency medicine. As a bonus action, expend 3 STA and touch a creature. That creature regains hit points as if they had spent 1 hit die (but do not expend the hit die). If the creature was below half of its maximum hit points, they regain hit points equal to the maximum value possible for their hit die instead.
-
-You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.
-
-- *Command: Hold the Line.* You become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the frightened, charmed, or incapacitated condition on themselves even if they would not otherwise be able to use a reaction due to a condition. This automatically ends the unconscious condition when caused by poison or magical sleep.
-
+- *Command: Hustle.* As a bonus action on your turn, you can create an opening by expending 1 STA. One willing creature you can see moves up to their speed and does not provoke Opportunity attacks while moving. Starting at level 11, creatures who benefit from this also gain temporary hit points equal to your level.
+- *Command: Stay With Me.* You've learned to provide effective emergency medicine. As a bonus action, expend 3 STA and touch a creature. That creature regains hit points as if they had spent 1 hit die (but do not expend the hit die). If the creature was below half of its maximum hit points, they regain hit points equal to the maximum value possible for their hit die instead. You can expend additional STA to increase the effect. For every 2 extra STA you expend, the creature regains additional hit points as if they'd spent an additional hit die.
+- *Command: Hold the Line.* You become an inspiration to your allies. As a bonus action on your turn, you can spend 3 STA to issue a command to Hold the Line. Any creature of your choice that can see or hear you can immediately use their reaction to end the frightened, charmed, or incapacitated condition on themselves even if they would not otherwise be able to use a reaction due to a condition. This automatically ends the unconscious condition when caused by poison or magical sleep. 
 In addition, creatures of your choice that can see or hear you have advantage on any saving throws against being frightened, charmed, or incapacitated for one minute.
-.
+]
 
 
-==== Commanding Presence
+=== Commanding Presence
 Starting at 10th level, you've learned to inspire your allies to bursts of heroics. When you use your Action Surge, instead of taking an additional action, you can choose one of the following. All creatures of your choice that can see and hear you within 30 feet gain the chosen benefit until the end of your next turn.
 #flush-block[
 - *Bravura:* Affected creatures can take one additional reaction or bonus action (their choice) during the duration of the effect. .
@@ -280,56 +284,56 @@ Starting at 10th level, you've learned to inspire your allies to bursts of heroi
 - *Resourceful:* Once during the duration, affected creatures that deal damage with an attack deal additional damage equal to half your level + your Charisma modifier. If they make at least one attack and do not hit with any attacks that turn, they gain temporary hit points equal to the additional damage that would have been dealt.
 - *Skirmishing:* Once during the duration, affected creatures can move a number of feet up to 5#sym.times your Charisma modifier as a reaction without provoking Opportunity Attacks.
 - *Tactical:* Affected creatures gain advantage on one attack roll or ability check made during the duration of the effect.
-.
+]
 
-==== Leave No One Behind
+=== Leave No One Behind
 Starting at 15th level, you've learned to bring others with you when you Flash Step. When you use your Flash Step ability, you can expend 2 additional STA to bring one ally who is no more than Medium size with you. The ally must have been within 5 feet of you when you started your movement and ends up within 5 feet of you.
 
-==== Healing Strike
+=== Healing Strike
 At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They regain hit points equal to your proficiency bonus #sym.times your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
 
-#colbreak()
-#wide[== Barbarian]
+#pagebreak()
+= Barbarian
 
 The barbarian archetype is common throughout Noefra, and not only (not even predominantly) among the "uncivilized" tribes. It's said that the origin of the iconic rage was developed by watching pre-cataclysm orcs tap into primal (but demon-tainted) power through their bloodline curse of blood-lust and anger. [_That's a story I don't believe. People have been getting angry and gaining power from it for a long time. End of the 2nd Age at the most recent. --IB_] Whatever the origin, the orcs of the Fiach Wood (and those of Wyrmhold) are most associated in the common mind with barbarians. Barbarians draw on the primal aether of the Mortal world, often through their emotions. They draw that aether into themselves to reinforce their bodies and souls. While anger (ie rage) is one of the easiest emotions to do this with, many barbarians wield other emotions. Their minds remain clear. Some, in fact, treat this as an entirely intellectual exercise as they become the primal embodiment of the blade.
 
 Presented here are two new subclasses for the 2014 Barbarian class. For a different take on the barbarian entirely, see Warden, later in this document. The two (barbarian and warden) shouldn't be played in the same party.
 
-=== Path of the Stormbound Fist
+== Path of the Stormbound Fist
 Those that follow the path of the Stormbound Fist have an innate connection to elemental lightning; fire and air combined into a destructive mix. They often tend to favor unarmed attacks, but regardless their attacks hit with the force of a bolt of lightning.
 
-==== Storm Fist
+=== Storm Fist
 When you choose this path at 3rd level, you can concentrate your primal electricity in your unarmed attack. When you hit with an unarmed attack, your fists deal 1d10 damage instead of 1. When you hit with an unarmed attack, you can choose to make the damage lightning damage instead of bludgeoning.
 
 If you wield a weapon, the weapon deals lightning damage or its regular damage type (your choice).
 
-==== Lightning Throw
+=== Lightning Throw
 Starting at 3rd level, when you make a ranged attack with a thrown weapon, the short range is equal to the long range. Additionally, when you hit with a ranged attack with a thrown weapon, the attack deals an additional 1d6 lightning damage.
 
-==== Amplification
+=== Amplification
 Starting at 3rd level, when you hit with a weapon attack or an unarmed attack, you can choose to infuse it with extra electricity. When you do so, the attack deals 2d6 extra lightning damage and the target must make a Constitution saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, the target is stunned until the end of your next turn. If the triggering attack was a critical hit, the target automatically fails the saving throw. Once you use this ability, you cannot do so again until you finish a short or long rest.
 
-==== Implacable
+=== Implacable
 Starting at 6th level, you have gained a measure of implacability. No one can stand against an oncoming storm or against your raging advance. You gain the following benefits.
 
 - When you are grappled or restrained by an ability that requires a check to escape, you can do so once per turn without expending an action. Additionally, you have advantage on Strength (Athletics) checks made to impose a grapple.
 - When you take the Dash action, you add movement equal to twice your speed instead of only equal to your speed. Additionally, when you take the Dash action, move at least 10 feet, and end your movement within reach of a creature, you can immediately make an unarmed attack against them as part of that action.
 - You gain resistance to lightning and thunder damage.
 #colbreak()
-==== Overcharged
+=== Overcharged
 Starting at 10th level, the lightning courses through your blood. You gain the following benefits.
 
 - Lighting damage that you do ignores resistance and treats immunity as resistance.
 - When you hit with the attack granted by your Implacable feature, you can use your Amplification ability even if you have already expended it. If you have not expended it, this does not expend its use.
 - While you are raging, you gain a flying speed equal to your speed as lightning forms crackling wings.
 
-==== Havoc
+=== Havoc
 Starting at 14th level, your rage carries with it primal lightning and thunder. You gain the following benefits:
 
 - You can use Amplification twice before needing to complete a short or long rest to use it again.
 - While you are raging, you can use an action to stomp the ground, creating a shocking web of lightning. All creatures of your choice within 30 feet must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they take 8d8 lightning damage and are knocked prone and restrained by bands of lightning. On a success, they take half as much damage and are only knocked prone (not restrained). Restrained creatures take 2d8 lightning damage at the beginning of each of their turns and can attempt the saving throw again at the end of each of their turns, ending the effect on a success. Once you use this feature, you cannot do so again until you finish a short or long rest.
 
-=== Path of the Whirling Blade
+== Path of the Whirling Blade
 
 Those that follow the Path of the Whirling Blade seek to embody the essential nature of the blade. They manipulate their personal aether into forms, the platonic ideal of a particular concept. In this case, curved blades. As a side effect, those of the Whirling Blade dance like (angry, hulking) tornadoes across the battlefield, striking seemingly randomly, leaving devastation in their wake.
 
@@ -341,30 +345,30 @@ Those that follow the Path of the Whirling Blade seek to embody the essential na
   "14", "d12"
 )
 
-==== Shaping Dice
+=== Shaping Dice
 You have 4 shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The size of each die increases with level as shown on the Whirling Blade table.
 
-==== Aetheric Weapons
+=== Aetheric Weapons
 Starting when you choose this archetype at level 3, you can manifest aetheric blades from one or both of your hands as a bonus action. These glittering blue swords count as magical light melee weapons with the thrown (60/120) property. Their damage die is equal to your shaping die and they deal your choice of slashing or piercing damage. When you throw one of them as an attack, it reappears instantly in your hands after the attack completes, hit or miss.
 
 Additionally, you can choose to meld with up to two one-handed magical weapons you are touching at the end of a long rest. While bonded, the weapons disappear and any magical properties they possess are replicated on your aetheric blades.
 
-==== Blade Dance
+=== Blade Dance
 At 3rd level you gain the two-weapon fighting style (allowing you to add your ability modifier to the damage dealt when using two-weapon fighting). When you hit with your aetheric blades, you can spend a shaping die to increase the damage done by the amount rolled.
 
 Additionally, you make the extra attack from wielding two light weapons as part of the Attack action instead of a bonus action. You can still only make this extra attack once per turn.
-#colbreak() 
-==== Blurred Step
+
+=== Blurred Step
 Starting at level 6, while raging, you can use your reaction to move up to your speed toward anyone who attacked you or cast a spell with you as a target. This movement does not provoke opportunity attacks if you expend a shaping die as part of the reaction.
 
-==== Shielding Tempest
+=== Shielding Tempest
 Starting at 10th level, you can expend a shaping die when you are targeted by a ranged attack. If you do so, make an attack with your wielded weapon or with an unarmed strike if not wielding a weapon against the attacker's AC. On a hit, you suffer no ill effects from the attack and the attacker instead takes the normal damage of the attack + the amount you rolled on your shaping die. You can only use this once per turn.
 
-==== Warp Strike
+=== Warp Strike
 Starting at 14th level, when you make a thrown attack with your aetheric blade and hit, you can choose to teleport next to the target.
 
 #pagebreak()
-== The Beholden (Variant Warlock)
+= The Beholden (Variant Warlock)
 
 Beholden gain power by cheating. Unlike the wizard who studies and meditates or the cleric who must have faith, the beholden has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the beholden's soul, shoving in unearned power. Each beholden is different, but they all learn the ability to shape raw aether into blasts.
 
@@ -372,18 +376,18 @@ Beholden gain power by cheating. Unlike the wizard who studies and meditates or 
 This is a variant warlock. As such, it should not be played in a party with a regular warlock. The goal is to move toward the 3e version, with most things tied up in class features: Eldritch Blast + blast shapes + essences. Spellcasting will come only via invocations that grant the ability to grab specific spells off of specific full-caster lists. Uses spell points by default.
 ]
 
-=== Class Features
+== Class Features
 
 As a beholden, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d8 per beholden level.
 - *Hit Points at 1st Level:* 8 + your Constitution modifier.
 - *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per beholden level after 1st.
 ]
 
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* Light armo.
 - *Weapons:* Simple weapon.
@@ -392,7 +396,7 @@ As a beholden, you gain the following class features.
 - *Skills:* Choose 2 from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion
 ]
 
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) a light crossbow or (b) any simple weapon
@@ -400,12 +404,12 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - Leather armor, any simple weapon, and two daggers
 
-=== Eldritch Blast
+== Eldritch Blast
 The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an "Eldritch Blast".
 
 At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a ranged spell attack, using Charisma as the ability score. On a hit, the bolt deals 1d12 + your Charisma modifier bludgeoning or piercing (your choice) damage to the target. This damage increases by 1d12 at level 5, 11, and 17. This counts as casting a cantrip and the damage is magical for the purpose of overcoming resistance or immunity.
 
-=== Otherworldly Patron
+== Otherworldly Patron
 At 1st level, you have struck a bargain with an otherworldly being of your choice and formed a pact that is shaped by their attitudes and desires for you: Pact of Destruction, Pact of Protection, or Pact of Inquiry, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
 
 #wide[
@@ -435,20 +439,20 @@ At 1st level, you have struck a bargain with an otherworldly being of your choic
   )
 ]
 
-=== Spellcasting
+== Spellcasting
 Beholden are not traditional spellcasters. They do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via invocations and other means, and do learn cantrips.
 
-==== Cantrips
+=== Cantrips
 You know two cantrips of your choice from any list. You learn additional cantrips of your choice from any list at higher levels, as shown in the Cantrips Known column of the Beholden table.
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Charisma is your spellcasting ability for your beholden spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a beholden spell you cast and when making an attack roll with one.
 #flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Charisma modifie.
 - *Spell attack modifier* = your proficiency bonus + your Charisma modifier
 ]
 
-==== Spell Points
+=== Spell Points
 All of your magical effects rely on spending spell points (SP). At first level, you have 4 spell points and gain more as shown on the Spell Points column of the Beholden table. Features such as blast effects and invocations may specify a cost. You can never spend more spell points in a single action than is specified in the Point Limit column of the Beholden table, whether that is to emulate a spell by creating spell slots, enhancing your Eldritch Blast, or in any other way.
 
 You regain all expended spell points when you finish a long rest.
@@ -471,55 +475,55 @@ When you expend spell points to modify your Eldritch Blast (ie via blast shapes 
 
 Note that you cannot create spell slots of 6th or higher level and thus cannot cast spells of those levels, whether upcast or not, normally. To cast such spells, you need to use your Mystic Arcanum feature. Those table rows exist to relate to Eldritch Blast effective levels.
 
-=== Magical Deflection
+== Magical Deflection
 When you are the target of an attack, you can use 1 spell point and your reaction to attempt to deflect it with a barrier of kinetic energy. Add your proficiency bonus to your armor class against the triggering attack. If this causes the attack to miss, you can use either your Eldritch Blast or a melee weapon you are wielding (if the attacker is in your reach) to make an attack against your attacker, dealing normal damage on a hit. You cannot add any blast shapes or effects to this attack. 
 
 Alternatively, you can spend 1 spell point and your reaction to negate the damage from the _magic missile_ spell.
 
-=== Blast Effects
+== Blast Effects
 At 2nd level, you have learned to add additional effects to your Eldritch Blast on hit by spending spell points. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your Eldritch Blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the beholden table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of Eldritch Blast unless the effect says otherwise. You cannot learn any effects labeled as greater until level 7.
 
 Starting at level 7, you can learn Blast Effects labeled as greater and the cost of non-greater blast effects is reduced by 1 to a minimum of 0. For blast effects that allow spending one or more spell points, you gain the effect of spending one point for free; increasing the effect costs one per additional level of effect. This still must obey the single effect per use condition.
 
-=== Eldritch Invocations
+== Eldritch Invocations
 In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain Beholden levels, you gain additional invocations of your choice, as shown in the Invocations column of the Beholden table.
 
 Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.
 
-=== Pact Boon
+== Pact Boon
 At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.
 
-==== Chainbound Familiar
+=== Chainbound Familiar
 You can cast _find familiar_ as a Ritual, and can choose the additional shapes of an imp, sprite, or gazer.
 
 When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.
 
-==== Boon-blade
+=== Boon-blade
 You can use your Eldritch Blast as a bonus action to create a magical weapon of solidified aether in your hand, called your boon blade. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You can use your Charisma as the ability modifier for attacks, but you add your Strength modifier (or Dexterity for finesse weapons if you choose) to the damage as usual. You can apply blast effects to it by expending spell points as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your Eldritch Blast damage instead of the normal weapon damage if this would be greater.
 
 Your boon blade disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
 
 You can transform one magic weapon into your boon blade by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extra-dimensional space, and it appears whenever you create your boon blade thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your boon blade if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
 
-==== Eldritch Tome
+=== Eldritch Tome
 Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one first level spell from any list. While the book is on your person, you can cast those cantrips at will and cast the spell by expending the requisite amount of spell points. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that does not exceed your spell point limit.
 
 If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores by 1 each. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can take a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 When you gain an Ability Score Improvement, you can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See Skill Tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-=== Blast Shapes
+== Blast Shapes
 When you reach 5th level, you learn to modify the shape of your Eldritch Blast in various ways. You learn one Blast Shape (detailed at the end of the class entry) and can apply it by spending the indicated amount of spell points. You must choose the shape when you use your Eldritch Blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the Beholden table. Whenever you learn a new blast shape, you can choose one of the blast shapes you know and replace it with another blast shape you could learn at that level. You cannot learn greater blast shapes until level 9.
 
 Starting at level 9, you can learn greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 to a minimum of 0.
 
-=== Mystic Arcanum
+== Mystic Arcanum
 At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th level spell from any list as this arcanum. It becomes a Beholden spell for you and uses Charisma as its spellcasting ability.
 
 You can cast any of your arcanum spells once without expending spell points. You must finish a long rest before you can do so again.
@@ -528,186 +532,186 @@ At higher levels, you gain more spells of your choice that can be cast in this w
 
 When you gain a level in this class, you can exchange one arcanum spell you know for another that you could choose at that level.
 
-=== Eldritch Master
+== Eldritch Master
 At 20th level, you can draw on your inner reserve of mystical power while entreating your patron for at least one minute. When you do so, you can either regain spell points equal to your level or regain one expended use of a mystic arcanum. Once you use this feature, you cannot do so again until you finish a long rest.
 
-=== Eldritch Invocations
+== Eldritch Invocations
 If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
 
-==== Armor of Shadows
+=== Armor of Shadows
 You can cast _mage armor_ on yourself at will, without expending spell points or material components.
 
-==== Ascendant Step
+=== Ascendant Step
 Prerequisite: 9th level
 
 You can cast _levitate_ on yourself at will, without expending spell points or providing normal components for the spell.
 
-==== Beast Speech
+=== Beast Speech
 You can cast speak with beasts at will without expending spell points or material components.
 
-==== Beguiling Influence
+=== Beguiling Influence
 You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills and is of a level you qualify for.
 
-==== Book of Ancient Secrets
+=== Book of Ancient Secrets
 Prerequisite: Eldritch Tome feature
 
 You learn two common incantations (see Incantations for details) of your choice and can perform them without needing a Ritual Scroll in hand.
 
 *Special:* you can take this invocation more than once, learning a new incantation each time. If you take it when you are 5th level or above, you can learn an uncommon incantation instead. At 9th level or above you can learn a rare incantation.
 
-==== Devil's Sight
+=== Devil's Sight
 You can see normally in darkness, both magical and non-magical, to a distance of 120 feet.
 
-==== Dreadful Word
+=== Dreadful Word
 Prerequisite: 7th level
 
 You can cast _confusion_ once without using spell points. You can't do so again until you finish a long rest.
 
-==== Eldritch Sight
+=== Eldritch Sight
 You are continually under the effect of the _detect magic_ spell while you are conscious. This does not require concentration, but is a magical effect equivalent to a first level spell. If dispelled or suppressed, it comes back when you finish a short or long rest.
 
-==== Eyes of the Rune Keeper
+=== Eyes of the Rune Keeper
 You can read all non-coded writing, and have advantage on any checks made to decipher encrypted writing.
 
-==== Fiendish Vigor
+=== Fiendish Vigor
 You can cast _false life_ on yourself at will, without expending spell points or material components. When you reach 5th level, it acts as if you spent a 2nd level slot on it. At 9th level, you get the benefit of casting it with a 3rd level slot. Regardless of the level, you always get the maximum number of temporary hit points for that level.
 
-==== Gaze of Two Minds
+=== Gaze of Two Minds
 You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
 
-==== Lifedrinker
+=== Lifedrinker
 Prerequisite: 12th level, Boon-blade feature
 
 When you hit a creature with your boon-blade, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 0).
 
-==== Mask of Many Faces
+=== Mask of Many Faces
 You can cast _disguise self_ at will without expending spell points.
 
-==== Master of Myriad Forms
+=== Master of Myriad Forms
 Prerequisite: 9th level
 
 You can cast _alter self_ at will without expending spell points.
 
-==== Minions of Chaos
+=== Minions of Chaos
 Prerequisite: 9th level 
 
 You can cast _summon elemental_ as an action once without using spell points. You can't do so again until you finish a long rest.
 
-==== Mire the Mind
+=== Mire the Mind
 Prerequisite: 5th level 
 
 You can cast _slow_ once without using spell points. You can't do so again until you finish a long rest.
 
-==== Misty Visions
+=== Misty Visions
 You can cast _silent image_ at will, without expending spell points or material components.
 
-==== One with Shadows
+=== One with Shadows
 Prerequisite: 5th level 
 
 When you are in an area of dim light or darkness, you can use your action to become invisible until you take an action or a reaction.
 
-==== Otherworldly Leap
+=== Otherworldly Leap
 Prerequisite: 3rd level 
 
 You can cast _jump_ on yourself at will, without expending spell points or material components.
 
-==== Sculptor of Flesh
+=== Sculptor of Flesh
 Prerequisite: 7th level
 
 You can cast _polymorph_ once without using spell points. You can't do so again until you finish a long rest.
 
-==== Sign of Ill Omen
+=== Sign of Ill Omen
 Prerequisite: 5th level
 
 You can cast _bestow curse_ once without using spell points. You can't do so again until you finish a long rest.
 
-==== Stolen Knowledge
+=== Stolen Knowledge
 You learn one spell from the bard, cleric, druid, sorcerer, or wizard list. You must be able to cast it without exceeding your spell point limit. You can cast any spells you know this way using spell points as normal; your casting ability is Charisma. Special: you can select this invocation more than once. Each time, pick a different spell. Each time you gain an invocation choice, you can also switch one spell you know via this invocation.
 
-==== Thief of Five Fates
+=== Thief of Five Fates
 You can cast _bane_ once without using spell points. You can't do so again until you finish a long rest.
 
-==== Thirsting Blade
+=== Thirsting Blade
 Prerequisite: 5th level, Boon-blade feature
 
 You can attack with your boon-blade twice, instead of once, whenever you take the Attack action on your turn. Additional hits after the first only deal the weapon's normal damage instead of the Eldritch Blast damage.
 
-==== Uncanny Skill
+=== Uncanny Skill
 Prerequisite: 4th level
 
 You learn a skill trick that you otherwise qualify for.
 
 *Special*: You can pick this invocation multiple times, each time learning a new skill trick.
 
-==== Visions of Distant Realms
+=== Visions of Distant Realms
 Prerequisite: 12th level
 
 You can cast _arcane eye_ at will, without expending spell points.
 
-==== Voice of the Chain Master
+=== Voice of the Chain Master
 Prerequisite: Chainbound-familiar feature
 
 You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.
 
-==== Whispers of the Grave
+=== Whispers of the Grave
 Prerequisite: 5th level
 
 You can cast _speak with dead_ at will without expending spell points or requiring material components.
 
-==== Witch Sight
+=== Witch Sight
 Prerequisite: 15th level 
 
 You can see the true form of any shapechanger or creature concealed by illusion or shape-changing magic while the creature is within 30 feet of you and within line of sight.
 
-=== Blast Effects
+== Blast Effects
 Each blast effect has a cost listed after the name. Applying that blast effect requires expending the listed SP cost. If the cost is listed with a + sign, you can expend additional spell points (up to your limit) to increase the effect. SP is an abbreviation for Spell Points.
 
-==== Beckoning Blast: 1+ SP
+=== Beckoning Blast: 1+ SP
 Targets hit by your Eldritch Blast are pulled 5 feet toward you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
 
-==== Blinding Blast: 3 SP
+=== Blinding Blast: 3 SP
 Targets of your Eldritch Blast must make a Constitution saving throw or take the damage as necrotic damage and be blinded until the end of your next turn. On a successful saving throw, targets take half damage. This Constitution saving throw replaces the attack.
 
-==== Clinging Lightning Blast: 5 SP, greater
+=== Clinging Lightning Blast: 5 SP, greater
 Your Eldritch Blast deals lightning damage and deals additional damage equal to twice your Charisma modifier, and requires a Dexterity saving throw instead of an attack roll. On a failed save, targets take the full damage and are paralyzed until the end of your next turn. On a successful save, targets take half damage and are not paralyzed.
 
-==== Draining Blast: 5 SP, greater
+=== Draining Blast: 5 SP, greater
 Your Eldritch Blast deals necrotic damage. Targets hit by your Eldritch Blast take additional necrotic damage equal to your Charisma modifier and you regain hit points equal to half the necrotic damage dealt. If this affects multiple creatures, each creature takes the damage but you only heal once.
 
-==== Elemental Blast: 1 SP
+=== Elemental Blast: 1 SP
 When you finish a short or long rest, choose one damage type from the following list: acid, cold, fire, lightning. When you use your Eldritch Blast, you can choose to deal the chosen damage type instead of its normal type.
 
-==== Frightening Blast: 3 SP
+=== Frightening Blast: 3 SP
 Your Eldrich Blast deals psychic damage. Targets of your Eldritch Blast must make a Wisdom saving throw instead of you making an attack roll. On a failed save, they are frightened of you until the end of your next turn and take the full damage. On a successful save they take half damage and are not frightened.
 
-==== Hellfire Blast: 5 SP, greater
+=== Hellfire Blast: 5 SP, greater
 Your Eldritch Blast deals fire damage. Targets hit by your Eldritch Blast take additional fire damage equal to twice your Charisma modifier and the same amount again at the start of their next turn. This damage pierces resistance and immunity to fire damage.
 
-==== Repelling Blast: 1+ SP
+=== Repelling Blast: 1+ SP
 Targets hit by your Eldritch Blast are pushed 5 feet away from you for every SP spent. If they are more than two sizes larger than you are, they can make a Strength saving throw to halve the distance they are moved.
 
-=== Blast Shapes
+== Blast Shapes
 Blast shapes alter the form of the Eldritch Blast and may alter it from a spell attack to a saving throw. As above, SP is an abbreviation for Spell Points.
 
-==== Eldritch Arc: 3 SP
+=== Eldritch Arc: 3 SP
 When you use your Eldritch Blast, you can instead choose to affect all creatures within 10 feet of you. Targets must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
-==== Eldritch Claws: 1 SP
+=== Eldritch Claws: 1 SP
 When you activate this shape and use your Eldritch Blast, you make a melee weapon attack using Charisma as your weapon attack modifier instead of a ranged spell attack. On a hit, add your Eldritch Blast damage to the normal unarmed damage. This counts as slashing damage from a magical weapon.
 
-==== Eldritch Cone: 4 SP, greater
+=== Eldritch Cone: 4 SP, greater
 When you use your Eldritch Blast, you can instead choose to make it take the shape of a 30 ft cone. All creatures in the area must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area.
 
-==== Eldritch Spear: 1 SP
+=== Eldritch Spear: 1 SP
 The range of your Eldritch Blast doubles. Additionally, you do not have disadvantage on ranged attacks with it against prone targets or from having enemies within 5 feet.
 
-==== Eldritch Sphere: 6 SP, greater
+=== Eldritch Sphere: 6 SP, greater
 When you use your Eldritch Blast, you can instead choose to make it take the shape of a spherical orb that erupts from a point of your choice within range of your Eldritch Blast. All creatures within a 20 ft radius of the chosen point must make a Dexterity saving throw. On a failed save, they take damage equal to the Eldritch Blast damage and are affected by any blast effects. On a success, they take half damage and are not affected by the non-damaging blast effects. Damaging blast effects apply the additional damage (halved on a success) to all targets in the area. Blast effects that push or pull the target use the center point of the effect as the reference point.
 
-==== Split Bolts: 2 SP
+=== Split Bolts: 2 SP
 When you use your Eldritch Blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 plus your charisma modifier damage of the appropriate type. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
 
-== Otherworldly Patrons
+= Otherworldly Patrons
 The beings that serve as patrons for beholden are mighty inhabitants of other planes of existence---not necessarily gods, but almost godlike in their power. Various patrons give their beholden access to different powers and invocations, and expect significant favors in return. Some gods choose both beholden and clerics--the two serve different purposes and often do not see eye to eye.
 
 Some patrons collect beholden, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one beholden. Beholden who serve the same patron might view each other as allies, siblings, or rivals.
@@ -718,10 +722,10 @@ A patron's secrets, once given, cannot be withdrawn by an act of will or by losi
 If a beholden falls out of favor with their patron, DMs may decide that the beholden cannot progress further unless they find a new patron willing to swear the same sort of pact. Alternatively, the beholden can take steps to regain favor. This should not happen lightly or arbitrarily; this should further the narrative and be decided between player and DM and not used as a punishment.
 ]
 
-=== Pact of Destruction
+== Pact of Destruction
 Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.
 
-==== Pact Spells
+=== Pact Spells
 The Pact of Destruction grants some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using spell points.
 
 #dndtab("Destruction Spells", [*Beholden Level*], [*Spells*],
@@ -732,27 +736,27 @@ The Pact of Destruction grants some particular spells at specific points in your
 "9th", [#emph("cloudkill"), #emph("dispel evil and good")]
 )
 
-==== Destroyer's Blessing
+=== Destroyer's Blessing
 Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your beholden level (minimum of 1).
 
 Alternatively, when a hostile creature within 60 feet of you is reduced to 0 hit points by someone else, you can spend your reaction to gain the temporary hit points. You can use this alternative reaction a number of times equal to half your proficiency bonus, regaining expended uses when you finish a short or long rest.
 
-==== Eldritch Backlash
+=== Eldritch Backlash
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects.
 #flush-block[
 - *Eldritch Backlash: 1+ SP* When you hit a target with your Eldritch Blast, a lingering aura of warped aether surrounds them until the end of your next turn. If they cast a spell or use a magical ability while the field surrounds them, they take psychic damage equal to 1d10 per SP spent.
 ]
 
-==== Resilience
+=== Resilience
 Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature.
 
-==== Retribution
+=== Retribution
 Starting at 14th level, when you take damage from an attack or ability from a creature you can see, you can use your reaction to force the triggering creature to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your Eldritch Blasts. You can apply any single blast effect you know to this damage without expending SP; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again). Once you use this ability, you cannot do so again until you finish a short or long rest.
 
-=== Pact of Inquiry
+== Pact of Inquiry
 Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedai both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge; the devils of Leutis are most associated with this. But even some of the Ascendants themselves prefer to form Inquiry Pacts rather than empower priests or clerics, with Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade: gathering information requires deception. Thus, beholden of Inquiry are often very good at appearing other than they truly are.
 
-==== Pact Spells
+=== Pact Spells
 The Pact of Inquiry grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
 #dndtab("Inquiry Spells", [*Beholden Level*], [*Spells*],
@@ -763,15 +767,15 @@ The Pact of Inquiry grants you some particular spells at specific points in your
 "9th", [#emph("contact other plane"), #emph("mislead")]
 )
 
-==== Deceptive Charm
+=== Deceptive Charm
 Starting at 1st level, when a creature you can see targets you with an attack or an ability that causes damage, you can spend your reaction to force them to make a Charisma saving throw against your spell save DC. On a failed save, they must target someone else if possible. If no other targets are valid (in range, etc.), they can continue with the effect regardless. This has no effect on targets immune to being charmed. You can use this feature a number of times equal to your Charisma modifier (minimum once), regaining expended uses when you finish a short or long rest.
 
-==== Eldritch Interrogation
+=== Eldritch Interrogation
 At 6th level you learn the Whispers of the Grave invocation. It does not count against your normal limit of Invocations known. When you target a corpse with this invocation, the corpse is required to speak truthfully and answer the questions to the best of its ability even if it recognizes you as an enemy.
 
 If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.
 
-==== Psychometry
+=== Psychometry
 Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from?".
 
 A ghostly scene unfolds around you, centered on the object. It includes up to 10 minutes before and after the event in question. You can walk around this scene, which is visible to everyone within sight of it. At your discretion (no action required), you can pause the scene, rewind the action, or fast forward it. You can dismiss the scene as an action; if you do not, it fades 30 minutes after it was created, even if paused the whole time.
@@ -780,13 +784,13 @@ This counts as divination magic, so creatures under the effect of mind blank and
 
 Once you use this ability you must finish a long rest before you can use it again.
 
-==== Legendary Effect: Mind Blank
+=== Legendary Effect: Mind Blank
 At 14th level, you learn the _mind blank_ spell and can use it once per long rest. If you already know this spell via Mystic Arcanum, you can use that arcanum twice instead of once per long rest and the additional effect applies.
 
-=== Pact of Protection
+== Pact of Protection
 Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), arch fey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their "investments". Protection is not good, inherently---even the demon cults have protectors and defenders.
 
-==== Pact Spells
+=== Pact Spells
 The Pact of Protection grants you some particular spells at specific points in your career. These spells count as beholden spells you know and you can cast them using SP.
 
 #dndtab("Protection Spells", [*Beholden Level*], [*Spells*],
@@ -797,25 +801,25 @@ The Pact of Protection grants you some particular spells at specific points in y
 "9th", [#emph("mass cure wounds"), #emph("wall of stone")]
 )
 
-==== Steadfast Protection
+=== Steadfast Protection
 Starting at 1st level, when a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did (after applying resistances or immunities). You can still apply any of your applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws.
 
-==== Eldritch Shield
+=== Eldritch Shield
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known Blast Effects:
 #flush-block[
 - *Eldritch Shield: 1+ SP* When you hit a target with your Eldritch Blast, you can choose one creature other than yourself per SP spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma modifier + your proficiency bonus.
-.
+]
 
-==== Aether Ward
+=== Aether Ward
 Starting at 10th level, you can call on your patron to shield allies from magical abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw with advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
 
 Once you use this feature, you can't use it again until you finish a short or long rest.
 
-==== Legendary Effect: Globe of Invulnerability
+=== Legendary Effect: Globe of Invulnerability
 At 14th level, you learn the _globe of invulnerability_ spell and can use it once per long rest. Unlike the normal effect, it targets one willing creature of your choice within 30 ft. If you already know this spell via your Mystic Arcanum, you can use it twice instead of once per day and the additional effect still applies.
 
 #colbreak()
-== Bounty Hunter
+= Bounty Hunter
 
 Bounty hunters draw on the spirits of nature as do druids, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many bounty hunters find that civilization is also in peril from the uncivilized folks within its borders, and these too draw a bounty hunter's wrath. The Border Wardens of Byssia and the Tower Scouts of Crisial Kingdom are among the more organized bodies most known for bounty hunters, but bounty hunters are found throughout Noefra.
 
@@ -825,20 +829,20 @@ Bounty hunters are skirmishers, either attacking from afar with ranged weapons o
 As a ranger variant, it is not intended to be played alongside a “stock” ranger. 
 ]
 
-==== Quick Build
+=== Quick Build
 To quickly build a bounty hunter, make Dexterity your highest ability score, with Wisdom and Constitution your secondaries. For weapons, you should either use a longbow for ranged combat or two light weapons for melee combat.
 
-=== Class Features
+== Class Features
 As a bounty hunter, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d10 per bounty hunter leve.
 - *Hit Points at 1st Level:* 10 + your Constitution modifie.
 - *Hit Points at Higher Levels:* 1d10 (or 6) + your Constitution modifier per bounty hunter level after 1st
 ]
 
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* Light armor, medium armor, shield.
 - *Weapons:* Simple weapons, martial weapon.
@@ -847,7 +851,7 @@ As a bounty hunter, you gain the following class features.
 - *Skills:* Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
 ]
 
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) chain shirt or (b) leather armor
@@ -855,7 +859,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a dungeoneer's pack or (b) an explorer's pack
 - A longbow and a quiver of 20 arrows
 
-=== Stamina
+== Stamina
 As a bounty hunter, you have a pool of energy called stamina you can use to fuel your non-magical exploits. You have a number of stamina points as shown in the Stamina column of the Bounty Hunter table. Expended stamina is restored when you finish a short rest.
 #wide[
 #dndtab("The Bounty Hunter",
@@ -884,12 +888,12 @@ As a bounty hunter, you have a pool of energy called stamina you can use to fuel
 ]
 
 
-=== Focused Foe
+== Focused Foe
 Bounty hunters have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe Die (originally a d4) once per turn when you hit them with an attack.
 
 Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them as long as they are on the same plane of existence.
 
-=== Natural Explorer
+== Natural Explorer
 You are particularly familiar with one type of environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, underground, or urban. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
 
 While traveling in your favored terrain, you gain the following benefits:
@@ -904,7 +908,7 @@ While traveling in your favored terrain, you gain the following benefits:
 
 You choose additional favored terrain types at 6th and 10th level.
 
-=== Weapon Specialization
+== Weapon Specialization
 Starting at 2nd level, you have become better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn--this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
 #flush-block[
 - *Battering* (Greatclub, mace, sling, maul, morningstar, warhammer) Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone. In addition, on a miss you still deal damage equal to your Dexterity modifier unless the d20 result was a 1.
@@ -917,10 +921,10 @@ Starting at 2nd level, you have become better than most at using the additional 
 - *Two-handed* While wielding a two-handed weapon, you can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
 ]
 #colbreak()
-=== Spellcasting
+== Spellcasting
 By the time you reach 2nd level, you have learned to befriend the ihimen, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 of the Player's Handbook for the general rules of spellcasting and the end of this entry for the Bounty Hunter spell list.
 
-==== Preparing and Casting Spells
+=== Preparing and Casting Spells
 The Bounty hunter table shows how many spell points you have to cast your spells and do other magical tasks. To cast a spell that requires aether, you must expend spell points equal to its cost or greater (effectively casting it from a higher level slot). You regain all expended spell points when you finish a long rest.
 
 You learn a number of bounty hunter spells equal to your Wisdom modifier + half your bounty hunter level, rounded down (minimum one spell), choosing from the bounty hunter spell list. You can trade out any single known spell for any other spell you can prepare from that list when you finish a long rest. You cannot learn any spell with a level higher than the Max Spell Level for your level (summarized below).
@@ -933,37 +937,37 @@ You learn a number of bounty hunter spells equal to your Wisdom modifier + half 
 "7", "5", "18",
 )
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Wisdom is your spellcasting ability for your bounty hunter spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Bounty hunter spell you cast and when making an attack roll with one.
 #align(center)[#strong("Spell save DC") = 8 + your proficiency bonus + your Wisdom modifier] 
 #align(center)[#strong("Spell attack modifier") = your proficiency bonus + your Wisdom modifier]
 
-==== Aether Limit
+=== Aether Limit
 When you expend spell points on spell or ability, you cannot expend more than your spell point limit, which is equal to the spell point cost of the highest spell level you can prepare (the tier \# of the spell + the spell level).
 
-=== Bounty Hunter Archetype
+== Bounty Hunter Archetype
 At 3rd level, you choose an archetype that you strive to emulate: Manhunter, Monster Slayer or Primal Guardian, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 
-=== Primeval Awareness
+== Primeval Awareness
 Beginning at 3rd level, you can use your action to focus your awareness on the region around you. For a number of minutes equal to your proficiency bonus, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature reveals the direction and approximate distance (very near, near, far, very far) as well as a general sense of the number (solitary, a group, a horde) of each distinct cluster of creatures detected. Once you use this feature, one hour must pass before you can use it again.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase two ability scores of your choice by 1 or one ability score of your choice by 2. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, if your GM allows, you can pick a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
-=== Extra Attack
+== Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 2 STA when you hit with your second attack from this action to deal your Favored Foe damage one additional time per turn.
 
-=== Land's Stride
+== Land's Stride
 Starting at 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 In addition, you have advantage on saving throws against spells or abilities that would impede your movement, such as the entangle spell.
 
-=== Aether Strike
+== Aether Strike
 Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 3 or more spell points and choose a number of targets equal to one plus half the amount of spell points spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.
 #flush-block[
 - *Melee weapon* You teleport from target to target in an order you choose as long as the distance between each occupied space is not greater than your speed and you have unoccupied spaces to occupy within your reach of each target. As you briefly appear within reach of each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus damage of the same type equal to the result of rolling a number of d8s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.
@@ -971,46 +975,46 @@ Starting at 9th level, you can manipulate aether to strike multiple targets in a
 ]
 
 
-=== Vanish
+== Vanish
 Starting at 14th level, you can use the Hide action as a bonus action on your turn. If you expend 2 STA while doing so, you become invisible until you attack or cast a spell.
 
 Additionally you can't be tracked by non-magical means, unless you choose to leave a trail.
 
-=== Feral Senses
+== Feral Senses
 At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it, nor do those creatures gain advantage on attack rolls against you.
 
 You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.
 
-=== Foe Slayer
+== Foe Slayer
 At 20th level, you are particularly adept at finding the weak spots of your enemies. When you attack a target you've selected as your favored foe, you can spend 5 STA and choose to target a vital spot. Make the attack as normal. If the attack hits, it is a critical hit. On a natural 20, you score a critical hit and the damage done is the maximum possible damage for that attack, including all additional damage. A natural 1 is still an automatic miss. Once you use this ability against a particular foe, you cannot use it again against that creature for 24 hours.
 
-== Bounty Hunter Archetypes
+= Bounty Hunter Archetypes
 The ideal of the bounty hunter has two classic expressions: the Manhunter and the Monster Slayer.
 
 === Manhunter
 Manhunters are those who specialize in tracking down and dealing with civilization's refuse, of whatever race they may be. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable and you must find them there. A manhunter lives and dies by his reputation; it is his currency and one of his primary weapons.
 
-==== Information Gatherer
+=== Information Gatherer
 At 3rd level, you can apply your proficiency to any Charisma check made to gain information, whether or not you would normally be able to. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
 
-==== Fearsome Reputation
+=== Fearsome Reputation
 At 3rd level, you've begun to establish a reputation as a hunter to be feared. This lets you unsettle the minds of the weak. As a bonus action on your turn, you can spend 2 STA to attempt to intimidate a number of creatures equal to your proficiency bonus. The targets must speak at least one language that you are proficient in and be able to see and hear you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, they are frightened of you for one minute. A frightened creature who ends its turn where it cannot see you can attempt the saving throw again, ending the effect on a success. Creatures that succeed on the saving throw are immune to this ability for 24 hours.
 
 Additionally, you have advantage on Charisma (Intimidation) checks made against any creature who can see you and who speaks a language that you are proficient in.
 
-==== Debilitating Reputation
+=== Debilitating Reputation
 At 7th level, your reputation has grown strong enough to make the weak unable to act against you. When you use your Fearsome Reputation feature, choose one creature that failed the saving throw. That creature is unable to make attacks against you while frightened of you.
 
-==== Razor Dance
+=== Razor Dance
 At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 5 spell points (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
 
-==== Wordless Reputation
+=== Wordless Reputation
 Starting at 15th level, your reputation and the aura that surrounds you are such that you can use your Fearsome Reputation ability against any foe, whether it can understand you or not. In addition, you can choose to use Debilitating Reputation against all creatures that fail their saving throws instead of just one.
 
-=== Monster Slayer
+== Monster Slayer
 Monster slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense--ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face.
 
-==== Hunter's Prey
+=== Hunter's Prey
 At 3rd level, you gain the following features, but can only apply one of them per turn.
 #flush-block[
 - *Colossus Slayer.* Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn. You can use it again on that same turn if you spend 1 STA when you hit again.
@@ -1018,7 +1022,7 @@ At 3rd level, you gain the following features, but can only apply one of them pe
 - *Horde Breaker.* Once on each of your turns when you hit with a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon. You can use it again on that same turn if you spend 1 STA when you hit again.
 ]
 
-==== Defensive Tactics
+=== Defensive Tactics
 At 7th level, you gain the following features, but can only apply one of them per turn.
 #flush-block[
 - *Escape the Horde.* The first opportunity attack against you in a turn is made with disadvantage.
@@ -1027,7 +1031,7 @@ At 7th level, you gain the following features, but can only apply one of them pe
 ]
 
 
-==== Multi-attack
+=== Multi-attack
 At 11th level, you gain the following features.
 #flush-block[
 - *Volley.* When you use your Aether Strike ability with a ranged weapon, the number of targets equals one plus the amount of spell points spent (instead of one plus half that number).
@@ -1035,7 +1039,7 @@ At 11th level, you gain the following features.
 ]
 
 
-==== Superior Hunter's Defense
+=== Superior Hunter's Defense
 At 15th level, you gain the following features.
 #flush-block[
 - *Evasion.* When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
@@ -1043,10 +1047,10 @@ At 15th level, you gain the following features.
 - *Uncanny Dodge.* When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
 ]
 
-=== Primal Guardian
+== Primal Guardian
 Primal Guardians are the most in-tune with the spirits of nature among the bounty hunters. While they still favor their weapons, they blend their primal magic more thoroughly into their hunts, often calling on the spirits of beasts to aid them.
 
-==== Spirit Companion
+=== Spirit Companion
 Starting when you choose this subclass at level 3, you gain the companionship of an invisible animal spirit. It grants you several benefits, growing with you as you gain levels. Choose one of the companions below. All spirit companions increase your maximum spell points by your Wisdom modifier, increasing to twice your Wisdom modifier at 11th level.
 #flush-block[
 - *Hawk Spirit.* Your spirit circles overhead or perches on your shoulder, granting you the benefit of its keen senses. You cannot be surprised and you make Wisdom (Perception) checks with advantage. If you are asleep, the hawk spirit keeps watch and awakens you if any trouble starts. At 11th level, this benefit extends to all creatures of your choice within 60 feet of you.
@@ -1054,10 +1058,10 @@ Starting when you choose this subclass at level 3, you gain the companionship of
 - *Bear Spirit.* The bear grants you endurance. Your hit point maximum increases by your level and you gain 1 additional maximum hit point each time you gain a level.
 ] 
 
-==== Additional Spirit Companion
+=== Additional Spirit Companion
 Starting at 7th level, you can choose an additional Spirit Companion, choosing which one is in effect at the end of a long rest. 
 
-==== Manifested Spirit
+=== Manifested Spirit
 At 7th level, you've learned to manifest your active Spirit Companion as a spectral force as an action by spending 3 spell points. It performs the listed action, which lasts until the end of your next turn.
 #flush-block[
 - *Hawk Manifestation.* The hawk appears as a Huge spectral beast at a point you choose within 30 feet. It does not occupy a space. It screeches, freezing the blood of your foes. All creatures of your choice within 60 feet that can see and hear the spirit must make a Wisdom saving throw against your spell save DC. On a failed save, they take 4d6 psychic damage and are frightened for the duration as they cower. While frightened, their speed is reduced to zero. Creatures that succeed on the saving throw take half as much damage and are not frightened.
@@ -1065,7 +1069,7 @@ At 7th level, you've learned to manifest your active Spirit Companion as a spect
 - *Bear Manifestation.* A Huge spectral bear appears at your side. It does not occupy its space. For the duration, all allies within 30 feet have resistance to bludgeoning, piercing, and slashing damage as the bear soaks part of each attack.
 ]
 
-==== Spirit Strike
+=== Spirit Strike
 Starting at 11th level, when you use your Aether Strike ability, your active spirit briefly manifests.
 #flush-block[
 - *Hawk Strike.* The wings of the hawk grant you speed, increasing the number of targets to equal one plus the amount of spell points spent (instead of one plus half that number).
@@ -1073,10 +1077,10 @@ Starting at 11th level, when you use your Aether Strike ability, your active spi
 - *Bear Strike.* The crushing paws of the bear knock prone or push 10 feet (your choice) any target hit by your Aether Strike.
 ]
 
-==== Spirit Union
+=== Spirit Union
 Starting at 15th level, you can call on the power of all three companions. When you finish a short rest, you can expend 6 spell points. If you do so, you gain all three passive effects until you finish a short or long rest and once during that period when you use your Manifested Spirit or Spirit Strike ability, you gain all three effects. Once you use this ability, you cannot do so again until you finish a long rest.
 
-== Bounty Hunter Spell List
+= Bounty Hunter Spell List
 The Bounty hunter Spell List table contains a short summary of the spells available to all Bounty hunters, ordered by aether cost. Spells marked with (\*) are new and listed in the Spells section document. Spells marked with (\*\*) are subject to substantial changes from book printing, explained in the spells section.
 
 Note: This spell list was designed with the idea that my Incantation system (Expanded Rules) is in play. Otherwise, use the Ranger list from the PHB + the additional spell list from Tasha's, but remove _hunter's mark_ (as it's a duplicate of Favored Foe and should not be stacked).
@@ -1136,7 +1140,7 @@ Note: This spell list was designed with the idea that my Incantation system (Exp
 ]
 
 #pagebreak()
-== Druid
+= Druid
 
 Druidism is the 2nd oldest of the organized magics of Quartus. Druids, like clerics, channel their magic from other entities instead of creating the resonant patterns themselves. Unlike clerics, druids aren't beholden to the gods or to powers of the Astral. They negotiate with, befriend, and sometimes bully the ihimen, called the "little gods" or "kami" or "spirits of nature", the collective entities who are in and through everything. In exchange for experiences not available to these bodiless beings and a small piece of the druid's aether, they perform "tricks" in the form of spells and other effects. Their signature is the wildshape, a trick where the druid channels an animal spirit to create an aetheric "shell" as a body, dissolving their real body into the border shadow (in effect). The ihimen merges with the druid's spirit and handles the mechanics of the new body but gets to experience corporeality. This is why the druid is unharmed when the animal body takes blows; it isn't really their body.
 
@@ -1144,10 +1148,10 @@ Druids are most common in Byssia, with the druids of the Dreamgrove actively par
 
 This section introduces one new druid subclass: The Circle of Wrathful Seasons, which uses Wild Shape uses to instead summon spirit companions.
 
-=== The Circle of Wrathful Seasons
+== The Circle of Wrathful Seasons
 The Circle of Wrathful Seasons teaches that the elemental cycle of the seasons drives the cycles in nature, and demands that its adherents pay special homage and attention to the elemental forces of the world. Unlike many other circles, the followers of Wrathful Seasons focus on the wild and destructive aspects of those seasons. While they can still heal and encourage growth, their specialty is on bringing nature's wrath to those that defile the world. They bond to elemental spirits drawn from these seasonal aspects and in tandem burn, freeze, entangle, and blast their foes with natural wrath. 
 
-==== Familiar Spirit
+=== Familiar Spirit
 When you take this subclass at 2nd level, you learn to summon an elemental companion spirit as an action, expending one use of Wild Shape. When you do so, choose one of the forms below. The spirit manifests in a space you can see within 60 feet. It does not occupy its space and is immune to all damage and effects other than _dispel magic_ and similar effects. It lasts for a number of hours equal to half your druid level or until you are incapacitated. You can only have one summoned at a time. For the purpose of _dispel magic_ and other such effects, it counts as a spell of level equal to the maximum spell level you can cast.
 
 As a bonus action on your turn, you can move the spirit up to 30 feet in any direction and activate its ability. It uses your spell save DC and spell attack modifier.
@@ -1168,16 +1172,16 @@ _Bonus Action:_ Make a melee spell attack using your spell attack modifier again
 
 _Bonus Action:_ One creature of your choice within 10 feet of the spirit must make a Strength saving throw against your spell save DC. On a failed save, they take 1d8 + your Wisdom modifier thunder damage and are pushed 10 feet away from the spirit. On a success they take half damage and are not pushed. This damage increases by 1d8 at each of 6th, 10th, and 14th level.
 ]
-==== Spirit Translocation
+=== Spirit Translocation
 Starting at level 6, as a bonus action on your turn, you can swap your location and your spirit's location.
 
-==== Spirit Sight
+=== Spirit Sight
 Starting at level 6, your connection to the spirits gives you insight into the unseen world. You can cast _detect magic_ and _detect evil and good_ at will.
 
-==== Renewed Emergence
+=== Renewed Emergence
 Starting at level 10, while you have a spirit out, you can re-trigger its emergence effect once as an action. You cannot do so again until you expend another use of Wild Shape to re-summon your Familiar Spirit (whether of the same type or another).
 
-==== Spirit Unity
+=== Spirit Unity
 Starting at level 14, when you summon your familiar spirit, you can instead choose to summon any two of them. If you do so, they only last 1 minute but you only expend a single use of Wild Shape and can command both of them with the same bonus action; if you use Spirit Translocation you can choose which one you swap with, and Renewed Emergence affects either or both of them as you choose. Once you use this ability, you cannot do so again until you finish a long rest.
 
 #pagebreak()
@@ -1191,7 +1195,7 @@ The three primary archetypes at play here are the bulky, short-tempered smith wh
 This is an alternative to the mechanist, not designed to see play simultaneously in the same party, as they fill much of the same thematic niche and may not be balanced against each other.
 ]
 
-==== Quick Build
+=== Quick Build
 If you want to play the melee-oriented Gearhead archetype, Strength and Intelligence should be your primary attributes, with Constitution as your secondary. Pick the heaviest armor you can wear and a two-handed weapon.
 
 If instead you want to play the quick-fingered, ranged sniper Trapsmith archetype, Dexterity and Intelligence should be your primary attributes. Choose light armor and a heavy crossbow, with a light hammer as a melee weapon.
@@ -1242,47 +1246,47 @@ You start with the following equipment, in addition to the equipment granted by 
     "20th", "+6", "Self Repair Circuits", "d12", "36", "5",)
 ]
 
-=== Archetype
+== Archetype
 Adventuring inventors fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: The chemist, who specializes in alchemical munitions and other consumables, the Gearhead, who specializes in enhancing his armor until he's a walking tank, and the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
-=== Alchemical Munitions
+== Alchemical Munitions
 You can make one vial of alchemist's fire or acid as part of a long rest by expending 2 gp.
 
 When you attack with alchemist's fire or acid, you can do so as part of an Attack action, and make the attack with proficiency.
 
-=== Mechanical Talent
+== Mechanical Talent
 Starting at 2nd level, when you make an ability check to understand, fix, disable, or otherwise interact with mechanical items or aetheric technology, you can add twice your proficiency bonus instead of whatever proficiency bonus (including none at all) would be applied normally.
 
-=== Clockwork Battery
+== Clockwork Battery
 Starting at 2nd level, you've developed a battery system that can feed additional energy into your equipment, allowing you to manipulate aether, creating quasi-magical effects without the trappings or consequences of casting spells.
 
 This battery stores a certain amount of charge while you rest, which can then be expended to power your effects.
 
-==== Charge Die
+=== Charge Die
 When an effect calls for you to roll one or more Charge Dice, you roll that many dice (originaly d6s) and add together the result. At higher levels, the charge die size increases, as shown on the Charge Die column of the Inventor table.
 
 You have five charge dice available at 2nd level. After you expend these, you cannot do so again until you finish a long rest. This maximum number increases as you gain levels, as shown on the Maximum Charges column of the Inventor table.
 
 When an effect allows you to choose how many Charge Dice to expend, you can choose any number as long as you have that many charges available and it is no more than than the value shown on the Charge Limit column of the Inventor table. For example, if you are level 3 and have not spent any Charge Dice, you can still only expend 2 of those dice on any individual use of an ability.
 
-==== Charge Ability and DC
+=== Charge Ability and DC
 The associated ability score for your Charge effects is Intelligence. When an effect calls for your Charge DC, it is calculated b.
 #align(center)[*Charge DC* = 8 + your Intelligence Modifier + your proficiency bonus.]
 
-=== Energy Augmentation
+== Energy Augmentation
 The most simple use of your Clockwork Battery, gained when you unlock the Battery at 2nd level, is to infuse your weapon strikes with quasi-elemental energy or simply augment their striking power. When you hit with a weapon attack, unarmed strike, or with an alchemical munition, you can expend a number of Charge Dice up to your charge limit. When you do so, roll the Charge Dice and add the total to the damage dealt. You choose the damage type from the following: cold, fire, lightning, thunder, or the damage type of the weapon. When you do so, the entire damage result counts as coming from a magical weapon.
 
-=== Clockwork Friend
+== Clockwork Friend
 At 3rd level you've created a tiny clockwork construct to serve as your friend. It takes the shape of a spider, mouse, beetle or other similar non-flying creature. It has 1 hit point, AC 10, 30 ft of movement, normal vision (passive perception of 10). Its Strength and Intelligence scores are 1 and all of its other ability scores are 10. It cannot attack, but can otherwise understand your simple orders and will fulfil them as practical for its shape. While it is on your person, it is considered to be immune to all damage and does not make saving throws.
 
 When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker's tool's set.
-#flush-block.
+#flush-block[
 - *Movement*: sticky pads (30 ft climb speed) OR fins (30 ft swim speed.
 - *Sensory*: audio recorder/playback with improved hearing OR video (silent) recorder/playback and improved darkvision (60 ft in color). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
 ]
 If destroyed or lost, you can reconstruct it by spending mechanical gears and metal worth 10 gp during a long rest. You can only have one active at a time; trying to build a second causes the first to immediately become nonfunctional.
 
-=== Multitool
+== Multitool
 At 3rd level, you've created a clockwork tool that counts as any tool with which you are proficient, as well as the following:
 
 - A crowbar
@@ -1293,39 +1297,39 @@ At 3rd level, you've created a clockwork tool that counts as any tool with which
 
 If you lose this tool, you can recreate it by expending 1 GP of metal and wire during a long rest. It has a weight of 2 lbs and packs to the size of a sheathed shortsword.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can choose a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick and one other skill trick you qualify for. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder. At 16th and 19th level, you can pick a skill trick you otherwise qualify for.
 
-=== Extra Attack
+== Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
 
 In addition, you ignore the loading property of weapons as you've modified your personal weapon to automatically reload itself.
 
-=== Energy Synthesis 
+== Energy Synthesis 
 Starting at 6th level, you can release a burst of quasi-elemental aether from your Clockwork Battery. As an action, expend a number of Charge Dice up to your charge limit, roll and sum them, and pick one of the following:
 #flush-block[
 - *Flamethrower*: You create a 30 ft cone of fire. All creatures within that area must make a Dexterity saving throw against your Charge DC. On a failed save, they take the rolled total as fire damage now and at the beginning of their next turn. On a success, they only take the damage now.
 - *Stunner*: One creature you can see within 30 ft must make a Constitution saving throw against your Charge DC. On a failed save, they take the rolled total as lightning damage and are stunned until the end of your next turn. On a success, they take half as much damage and are not stunned but cannot take reactions until the end of your next turn.
 - *Air Blast*: All creatures within 10 ft. of you must make a Strength saving throw against your charge DC. On a failed save they take the rolled total as thunder damage and are pushed 5 feet away and knocked prone. On a success, they take half as much damage and are only pushed but not knocked prone. Creatures two sizes or more larger than you make the save with advantage; creatures smaller than you make the save at disadvantage. This also disperses any effect that can be dispersed by a strong wind.
 ]
-=== Adaptive Defense
+== Adaptive Defense
 At 7th level, you've incorporated significant alterations into your non-weapon gear, letting you defend yourself more efficiently in emergencies. You gain the following benefits as long as you are wearing any armor.
 
 - As a reaction when you take damage from a source you can see, you can expend a number of Charge Die up to your charge limit. Roll the dice and subtract the result from the damage taken. This occurs after resistance and vulnerability are accounted for.
 - As a reaction when you make a Strength, Dexterity, or Constitution ability check or saving throw, you can expend one Charge Die and add the result to the ability check or saving throw result. You can do this after you see the result but before the outcome is applied.
 - As a bonus action, you can spend a number of Charge Dice up to your charge limit. Roll the dice and add the total to your hit points. You can only take this option if you are below half your maximum hit points.
 
-=== Underwater Movement Engine
+== Underwater Movement Engine
 Starting at 7th level, you've modified your Clockwork Battery and gear to produce a bubble of air and jet propulsion while underwater. While you are wearing armor, you gain a swimming speed of 40 ft and can breathe underwater.
 
 Additionally, this air filtration gives limited protection against gaseous hazards. When you make a Constitution saving throw against airborne poisons (such as a green dragon's breath weapon or the _cloudkill_ spell), you do so with advantage.
 
-=== Overclocked Clockwork Friend
+== Overclocked Clockwork Friend
 Starting at 9th level, you can spend 1 charge die to temporarily enhance your clockwork friend. It gains one of the following abilities:
 
 - A 60 ft fly speed for one hour.
@@ -1334,56 +1338,56 @@ Starting at 9th level, you can spend 1 charge die to temporarily enhance your cl
 
 Additionally, it has hit points equal to 5 times the sum of your proficiency bonus and your Intelligence modifier (minimum 5 times your proficiency bonus) and its armor class increases by your proficiency bonus.
 
-=== Improved Energy Synthesis
+== Improved Energy Synthesis
 At 10th level, you gain an additional option for your Energy Synthesis ability.
 #flush-block[
 - *Freeze Ray*: All creatures in a 60 ft line that is 5 ft wide must make a Constitution saving throw against your Charge DC. On a failed save, they take the rolled total as cold damage and are restrained for one minute. On a success, they take half as much damage and are not restrained, but their speed is reduced to 0 until the end of your next turn. Restrained creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.
 ]
 Alternatively, if you spend 4 dice, you create the effect of the _wall of ice_ spell as if it were cast at 6th level, except it does not require concentration and the wall must be created within 60 ft of you. This does not count as a spell (and thus cannot be dispelled).
 
-=== Improved Energy Augmentation
+== Improved Energy Augmentation
 Starting at 11th level, trace charge affects your weapon attacks even when you do not spend charge directly. Whenever you hit with a weapon attack and have at least one charge remaining, the damage increases by your Intelligence modifier. You choose the damage type from cold, fire, lightning, thunder, or the weapon's damage type. Your weapon attacks are magical even if you do not expend charge to augment the attack.
 
-=== 3D Movement Engine
+== 3D Movement Engine
 At 14th level, your movement engine has improved to the point that you gain a 40 ft fly speed and can hover while wearing armor. Additionally, you become immune to damage or the poisoned condition from airborne poisons and diseases.
 
-=== Completed Clockwork Friend
+== Completed Clockwork Friend
 At 15th level, you've completed your work on your mechanical companion. By spending one minute, you can alter your friend's size between tiny, small, medium, and large---it also gains a 60 ft fly speed for one hour when you do so. If it is sufficiently large, you or any creature you designate can ride it.
 
 While you are adjacent to your friend or it is being ridden, it ignores all damage and does not make saving throws.
 
-=== Expert Energy Synthesis
+== Expert Energy Synthesis
 At 17th level, your Clockwork Battery has become more efficient. When you use your Energy Synthesis ability and one or more of the targets succeed on their saving throw, you regain one of the expended charge dice. If every target succeeded on the saving throw, you regain two charge dice (if you spent at least that many).
 
-=== Self Repair Circuits
+== Self Repair Circuits
 At 20th level, your Clockwork Battery can preserve your life even when you take fatal damage. When you are reduced to 0 hit points or would be killed outright, roll all your remaining charge dice (or one if you have none remaining). Any effects that would kill you are nullified, your hit points are set to the rolled total (or your maximum hit points if the total would put you above your maximum) instead of 0 and all negative conditions affecting you are removed. After one minute, you gain a level of exhaustion. Once you use this ability, you cannot do so again until you finish a long rest.
 
-== Inventor Archetypes
+= Inventor Archetypes
 Inventors, while they share many common abilities, all eventually find obsessions. Parts of their skill-set that they focus on and constantly polish, tinker with, and improve. These are their archetypes. 
-=== Chemist
+== Chemist
 Chemists focus on the alchemical side of the inventor's life, creating ways to better disperse their munitions and potions to others, as well as creating new munitions.
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency in Arcana and Medicine, as well as alchemist's supplies and herbalism kits.
 
-==== Munition Launcher
+=== Munition Launcher
 At 3rd level, you've created a system to launch potions, alchemical items, and other munitions out to 90 ft as an action. If you target a friendly creature other than yourself, they can catch it out of the air and use it on themselves as a reaction. If you target a hostile creature with an alchemical munition, make the attack roll as normal. If you target a location, it simply hits that location.
 
-==== Fast Hands
+=== Fast Hands
 Starting at 3rd level, you can use potions on yourself or administer them to someone adjacent to you as a bonus action.
 
-==== Extra Alchemical Munitions
+=== Extra Alchemical Munitions
 At 6th level, you've learned to create three additional types of alchemical munitions---the firestone, tanglefoot bag and the thunderstone.
-#flush-block.
+#flush-block[
 - *Firestone*: This crystal brims with fire aether. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are blinded for one minute. Blinded creatures can make the saving throw again at the end of each of their turns, ending the effect on a success. On a success, targets take half as much damage and are blinded only until the beginning of your next turn. Creating a firestone costs 10 gp and can be done over a long rest.
 - *Tanglefoot Bag*: This small pouch explodes into a tangle of sticky threads. Make a ranged attack with proficiency against a creature within range (30 ft normally, 90 ft for you). On a hit, the creature is restrained until they or someone else uses an action to break them free. Creating a tanglefoot bag costs 5 gp and can be done over a long rest.
 - *Thunderstone*: This crystal brims with lightning and thunder. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your charge DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 lightning damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
 ]
-==== Improved Alchemical Munitions
+=== Improved Alchemical Munitions
 Starting at 6th level, when you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
 
 Additionally, you can hastily concoct a munition of your choice by expending a charge die as part of a short rest. When you do so, that munition only lasts until you finish a long rest, but does not cost any gold.
 
-==== Alchemical Discoveries
+=== Alchemical Discoveries
 At 9th level you learn the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
 #dndtab("Formula Cost",
@@ -1393,57 +1397,57 @@ At 9th level you learn the formula for all common and uncommon potions and oils,
   "Rare", "500 gp", "10 days"
 )
 
-==== Alchemical Master (13th)
+=== Alchemical Master (13th)
 At 13th level you have discovered deep secrets to alchemy. You gain the following benefits
 
 - You are immune to the poisoned condition and poison damage.
 - Healing potions you administer or use heal the maximum possible. If you expend one or more aether charges as part of the action, they heal an additional 1d8 for each expended charge.
 - When you use alchemical munitions that deal damage, the damage dealt is increased by your Intelligence modifier.
 - You can produce potions and alchemical munitions at twice the normal rate. If you could make one as part of a long rest, you can now make two.
-=== Gearhead
+== Gearhead
 The gearhead tinkers with a suit of clockwork armor adapted for themselves. Starting with a powered frame over which normal armor hangs and slowly growing more and more elaborate.
 
-==== Power Armor: Core
+=== Power Armor: Core
 You gain proficiency in heavy armor. Your carrying/lift/drag capacity doubles.
 
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency in athletics and intimidation.
 
-==== Power Armor: Limbs
+=== Power Armor: Limbs
 Starting at 3rd level, you always count as having a running start when you jump and your high jumps are as far as your long jumps.
 
 Additionally, you have advantage when grappling or shoving creatures your size or smaller and can grapple creatures up to two sizes larger than you.
 
-==== Power Armor: Helmet
+=== Power Armor: Helmet
 Starting at 6th level, you cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
 
-==== Power Armor: Improved Battery
+=== Power Armor: Improved Battery
 Starting at 9th level, as an action, you can regain up to four charge dice. Once you use this ability, you cannot do so again until you finish a long rest.
 
-==== Power Armor: Complete Suit
+=== Power Armor: Complete Suit
 Starting at 13th level, your full armor now works together even better. You gain the following features:
 
 - You are immune to being grappled and cannot be non-magically restrained. You have advantage on saving throws to resist magical restraint and ability checks or saving throws to escape restraint.
 - When you start your turn and are stunned, paralyzed, or otherwise incapacitated, you can end that effect by expending one Charge Die. This does not require an action.
 
-=== Trapsmith
+== Trapsmith
 The Trapsmith focuses on ranged combat and rapidly synthesizing enhanced tools and traps.
 
-==== Zip Line
+=== Zip Line
 As an action starting at 1st level, you can shoot a special arrow attached to a cable up to 60 ft at a solid surface. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Perception check against your charge DC to see it---if they do not see it and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a short or long rest.
 
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency with acrobatics, deception, and thieves' tools.
 
-==== Ricochet Shot
+=== Ricochet Shot
 Starting at 3rd level, if you miss with a ranged weapon attack, you can spend a charge die re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage.
 
-==== Mine-Layer
+=== Mine-Layer
 Starting at 6th level, when you use your Energy Synthesis ability, you can choose instead to plant the effect at a point you can see within 30 ft and delay its activation until you spend your reaction to trigger it. When triggered, you choose the direction or target (for flamethrower, stunner, or freeze ray). If 10 minutes elapse or you use your Energy Synthesis ability again, the original effect dissipates without triggering, and you regain the Charge Dice you expended on that original effect.
-==== Aether Scanner
+=== Aether Scanner
 At 9th level, you have created a monocle that grants you the benefit of the _detect magic_ and _see invisibility_ spells. It does not require concentration, but must be worn by you to have this effect. If you lose this monocle, you can recreate it during a long rest by spending 100 gp.
 
-==== Perfected Synthesis
+=== Perfected Synthesis
 Starting at 13th level, when you use your Mine-Layer or Energy Synthesis ability, the ability's effect is increased based on the chosen version. Choose one of the following that applies to your chosen mode:
 #flush-block[
 - *Empowered (Any)*: You can choose to maximize up to half the Charge Dice rolled.
@@ -1465,19 +1469,19 @@ All three are married to a half-caster-like chassis, with a twist. Instead of st
 Note: this is an alternative to the Inventor and not designed to be played at the same time in the same party. They fit the same thematic niche and are probably not balanced against each other.
 ]
 
-==== Quick Build
+=== Quick Build
 If you want to play the melee-oriented Forgemaster archetype, Strength and Intelligence should be your primary attributes, with Constitution as your secondary. Pick the heaviest armor you can wear and a two-handed weapon, along with _armored heart_ and _lightning charge_ as your infused spells.
 
 If instead you want to play the quick-fingered, ranged sniper Trapsmith archetype, Dexterity and Intelligence should be your primary attributes. Choose light armor and a heavy crossbow, with a light hammer as a melee weapon. Take _headshot_ and _tick stop_ as your infused spells.
 
-=== Class Features
-==== Hit Points
+== Class Features
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d8 per mechanist leve.
 - *Hit Points at 1st Level:* 8 + your Constitution modifie.
 - *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per mechanist level after 1st.
 ]
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* Light armo.
 - *Weapons:* Simple weapons, martial weapon.
@@ -1485,7 +1489,7 @@ If instead you want to play the quick-fingered, ranged sniper Trapsmith archetyp
 - *Saving Throws:* Dexterity, Intelligenc.
 - *Skills:* Choose three from Arcana, History, Investigation, Medicine, Perception, and Sleight of Hand
 ]
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background.
 
 - any martial weapon
@@ -1494,7 +1498,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) a scholar's pack or (b) a dungeoneer's pack
 - Tinkerer's tools
   
-=== Archetype
+== Archetype
 Adventuring mechanists fall into their specialization fairly early. Three such specializations are presented at the end of this class entry: the Forgemaster, who specializes in enhancing his armor until he's a walking tank, the Trapsmith who focuses on upgrading his ranged weapons and rapidly deployable traps, and the Chemist, who focuses on supporting allies with alchemical concoctions, as well as grenade-like munitions. You gain features from them when you first select your Archetype at level 1 and again at 3rd, 6th, 9th, and 13th levels.
 
 #dndtab("The Mechanist",
@@ -1525,7 +1529,7 @@ Adventuring mechanists fall into their specialization fairly early. Three such s
 Unlike a conventional spell-caster, your method of creating magical effects depends on a mechanical contrivance, which is a tiny object of metal, gears, and crystal, which you have created at 1st level. This is your Aether Engine (AE). It processes environmental aether into usable aether charge. Over time, you make it more capable. When you gain this engine, it can store up to two points of aether charge, which can be used to cast your infused spells and activate some of your class features. Expended points are regained when you complete a short or long rest, up to your maximum. You can never expend more charge as part of a single action than the cost of the highest spell you can cast at your level.
 
 If you do not have the aether engine on your person, you cannot use abilities that require spending aether charge. If it is lost or destroyed, you can create a new one when you finish a long rest as long as you have some form of metal and even rudimentary tools at hand.
-=== Infused Spells
+== Infused Spells
 At first level, you've learned to replicate the patterns of selected spells, albeit in a completely unconventional fashion. By carefully fashioning trinkets out of wire and crystal and gears (or laying patterns of wire and crystal into your existing items), you can resonate the ambient aether as if you cast the spells yourself, as long as they are linked to your Aether Engine. This is called “infusing” the spell into your AE, and your overall process as Spell Infusion.
 
 #dndtab("Aether Charge per Spell Slot",
@@ -1537,7 +1541,7 @@ At first level, you've learned to replicate the patterns of selected spells, alb
 "7", "5", "17",
 )
 
-==== Spells Known of 1st Level and Higher
+=== Spells Known of 1st Level and Higher
 At 1st level, you know two 1st-level spells of your choice from the mechanist list, each inscribed into a separate trinket or item.
 
 The Spells Known column of the mechanist table shows when you learn more mechanist spells of your choice of 1st level or higher. Spells you choose can be no higher level than the max level entry in the Spells Known column.
@@ -1546,96 +1550,96 @@ The Simultaneous Infusions column of the Mechanist table shows how many infused 
 
 Additionally, when you gain a level in this class, you can choose one of the mechanist spells you know and replace it with another spell from the mechanist spell list, which also must be of a level you could learn normally at this class level.
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Intelligence is your spellcasting ability for your mechanist spells, so you use your Intelligence whenever a spell or ability refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a mechanist spell you cast and when making an attack roll with one. 
 #flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Intelligence modifie.
 - *Spell attack modifier* = your proficiency bonus + your Intelligence modifier
 ] 
 
-==== Spellcasting Focus
+=== Spellcasting Focus
 Your Aether Engine is your focus for your mechanist spells, and you must have the infused trinket for the spell in hand to cast the spells.
 
-==== Special Spellcasting Components
+=== Special Spellcasting Components
 As a result of your unorthodox method of creating spell effects, you do not use the conventional verbal and somatic components for spells. Instead, every spell has an additional material component (the infused trinket). Verbal components become an audible noise (gears whirring, clicking, a high-pitched whine, etc) that is easily audible out to 30 ft. Somatic components become visible effects (e.g. static charge, glowing or blinking lights, etc) visible out to 30 ft.
 
 As a side effect of this unorthodox method of casting, all attempts to counter your spells require the caster to make the ability check, and they do so at disadvantage unless they are a mechanist themselves.
 
-=== Charged Strike
+== Charged Strike
 Starting at 2nd level, you've learned to bleed charge from your Aether Engine into your weapon strikes, manifesting as arcing electrical charge. When you hit with a weapon attack and have your AE on your person, you can spend one or more aether charges to deal 1d8 lightning per charge spent. You can't spend more than the cost of the highest spell level you can cast.
 
-=== Mechanical Talent
+== Mechanical Talent
 Starting at 2nd level, when you make an ability check to understand, fix, disable, or otherwise interact with mechanical items or aetheric technology, you can add twice your proficiency bonus instead of whatever proficiency bonus (including none at all) would be applied normally.
 
-=== Clockwork Friend
+== Clockwork Friend
 At 3rd level you've created a tiny clockwork construct to serve as your friend. It takes the shape of a spider, mouse, beetle or other similar non-flying creature. It has 1 hit point, AC 10, 30 ft of movement, normal vision (passive perception of 10). Its Strength and Intelligence scores are 1 and all of its other ability scores are 10. It cannot attack, but can otherwise understand your simple orders and will fulfil them as practical for its shape. While it is on your person, it is considered to be immune to all damage and does not make saving throws.
 
 When you create your friend, choose one movement module and one sensory module. You can alter your choices when you finish a long rest as long as you have a tinker's tool's set.
-#flush-block.
+#flush-block[
 - *Movement*: sticky pads (30 ft climb speed) OR fins (30 ft swim speed.
 - *Sensory*: audio recorder/playback and improved hearing OR video (silent) recorder/playback and 60 foot darkvision (except that it can perceive colors). In either case, it can record up to 10 minutes of audio or video and can trigger recording start/stop based on orders given.
 ]
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can choose a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 At 4th level, you have learned the Craft Apprentice skill trick and one other skill trick of your choice that you qualify for. At 8th level, you learn your choice of Medic, Trap Finder, or Tumble (even if you would not otherwise qualify). At 12th level, you learn your choice of Find Weakness or Sunder. At 16th and 19th level, you gain one skill trick of your choice that you qualify for.
 
-=== Extra Attack 
+== Extra Attack 
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn.
 
 In addition, you ignore the loading property of weapons as you've modified your personal weapon to automatically reload itself.
 
-=== Aetheric Defense
+== Aetheric Defense
 Starting at 7th level, you can spend aether charge to do the following. As usual, the charge spent cannot exceed the cost of the highest spell level you can cast.
 
 - As a reaction when you would be hit by an attack or would fail a Dexterity saving throw, you can expend one or more charges to add +2 per charge spent to your AC or Dexterity saving throw result, potentially changing the outcome.
 - When you move on your turn, you can expend one or more aether charges to fly 10 ft per expended charge in any direction without consuming movement. You must end this movement on a surface that can support your weight.
 - As a bonus action, you can expend one or more aether charges to attempt to push a creature within 15 ft of you away from you up to 5 ft per charge expended. Unwilling targets can make a Strength saving throw against your spell save DC to resist this.
 
-=== Overclocked Clockwork Friend
+== Overclocked Clockwork Friend
 Starting at 9th level, you can spend 1 aether charge to temporarily enhance your clockwork friend. It gains one of the following abilities:
 
 - A 60 ft fly speed for one hour.
 - Invisibility (as the spell) for 10 minutes. This does not require concentration from you.
 - Perform complex tasks (pull levers, speak messages (pre-recorded), etc) for 10 minutes. During this time, it is considered to have a strength score of 10.
 
-=== Absorb Charge
+== Absorb Charge
 At 10th level, you've improved your Aether Engine to the point that it can rapidly draw in aether under the right circumstances. When you are a target of a spell or ability that deals cold, fire, force, lightning, or radiant damage and allows a saving throw for half damage, you can activate your AE as a reaction. If you do so, you take half damage if you fail the saving throw and none if you succeed, and your AE gains aether charge equal to half its maximum. This charge can exceed its normal maximum, but any extra unexpended charge is lost when you finish a short or long rest. Once you use this ability, you cannot do so again until you finish a long rest.
 
-=== Improved Charged Strike
+== Improved Charged Strike
 At 11th level, your weapon attacks bleed stray charge from your Aether Engine. Once per turn when you hit with an attack, you can deal an additional 2d8 lightning damage. This stacks with Charged Strike. Starting at level 17, the damage from this increases to 3d8 and the damage from Charged Strike increases to 2d8 +1d8 for every aether charge spent after the first.
 
-=== Improved Aetheric Defense
+== Improved Aetheric Defense
 At 14th level, your Aetheric Defense ability has improved.
 
 - When you use the reaction to increase your AC or saving throw result, the effect applies to all attacks and dexterity saving throws you make until the start of the turn.
 - When you choose to fly by expending aether charge, this movement no longer provokes Opportunity Attacks.
 - When you choose to push a creature, you can now target any creature you can see within 60 ft of you.
 
-=== Completed Clockwork Friend
+== Completed Clockwork Friend
 As an action, you can expend one aether charge to alter your friend's size between tiny, small, medium, and large---it also gains a 60 ft fly speed for one hour when you do so. If it is sufficiently large, you can ride it.
 
 While you are adjacent to your friend, it ignores all damage and does not make saving throws.
 
-=== Overclocked Aether Engine
+== Overclocked Aether Engine
 As an action, you put your Aether Engine into a hyperactive state. For one minute, you regain 10 aether charges at the start of each of your turns (up to its maximum) and you can cast any of your spells, infused or not. Additionally, you deal the extra lightning damage from Improved Charged Strike on every hit. Once you use this ability, you cannot do so again until you finish a long rest.
 
-== Mechanist Archetypes
+= Mechanist Archetypes
 Mechanists, while they share many common abilities, all eventually find obsessions. Parts of their skill-set that they focus on and constantly polish, tinker with, and improve. These are their archetypes. 
-=== Chemist
+== Chemist
 The alchemically-focused chemists learn to better cast spells as well as create and disperse potions and munitions.
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency in Arcana and Medicine, as well as alchemist's tools and herbalists' kits.
 
-==== Alchemical Proficiency
+=== Alchemical Proficiency
 When you attack with items such as alchemist's fire or vials of acid or holy water, you add your proficiency bonus to both attack and damage dealt.
 
 Additionally, as long as you have an alchemist's tool set, you can create vials of alchemists' fire or acid for 10 gp or 5 gp (respectively). You can create one as part of a long rest.
 
-==== Expanded Spell List
+=== Expanded Spell List
 The following spells are added to your spell list at the indicated levels.
 
 #dndtab("Chemist Spells",
@@ -1647,25 +1651,25 @@ The following spells are added to your spell list at the indicated levels.
   "17", [_cloudkill_, _immolation_]
 )
 
-==== Munition Launcher
+=== Munition Launcher
 At 3rd level, you've created a system to launch potions, alchemical items, and other munitions out to 90 ft as an action. If you target a friendly creature, they can catch it out of the air and use it on themselves as a reaction. If you target a hostile creature with an alchemical munition, make the attack roll as normal. If you target a location, it simply hits that location.
 
-==== Fast Hands
+=== Fast Hands
 Starting at 3rd level, you can use potions on yourself or administer them to someone adjacent to you as a bonus action.
 
-==== Extra Alchemical Munitions
+=== Extra Alchemical Munitions
 At 6th level, you've learned to create three additional types of alchemical munitions---the firestone, tanglefoot bag and the thunderstone.
-#flush-block.
+#flush-block[
 - *Firestone:* This crystal brims with fire aether. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your spell save DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 fire damage and are blinded for one minute. Blinded creatures can make the saving throw again at the end of each of their turns, ending the effect on a success. On a success, targets take half as much damage and are blinded only until the beginning of your next turn. Creating a firestone costs 10 gp and can be done over a long rest.
 - *Tanglefoot Bag:* This small pouch explodes into a tangle of sticky threads. Make a ranged attack with proficiency against a creature within range (30 ft normally, 90 ft for you). On a hit, the creature is restrained until they or someone else uses an action to break them free. Creating a tanglefoot bag costs 5 gp and can be done over a long rest.
 - *Thunderstone:* This crystal brims with lightning and thunder. Choose a point you can see within 30 ft (90 ft if used by you). All creatures within 15 ft. must make a Constitution saving throw against your spell save DC (or DC 12 if used by someone else). On a failed saving throw, they take 3d8 thunder damage and are deafened and stunned until the end of your next turn. On a success, targets take half as much damage and are only deafened until the end of your next turn (and not stunned). Creating a thunderstone costs 20 gp and can be done over a long rest.
 ]
-==== Improved Alchemical Munitions
+=== Improved Alchemical Munitions
 Starting at 6th level, when you take the Attack action on your turn, you can replace one of the attacks with a use of an alchemical munition.
 
 Additionally, you can hastily concoct a munition of your choice by expending 3 aether charges at the end of a short rest (after recovering expended aether charges). When you do so, that munition only lasts until you finish a long rest, but does not cost any gold.
 
-==== Alchemical Discoveries
+=== Alchemical Discoveries
 At 9th level, you have learned the formula for all common and uncommon potions and oils, as well as one rare potion of your choice. The cost to create these items is shown on the following table.
 
 #dndtab("Chemist Formula Cost",
@@ -1675,64 +1679,64 @@ At 9th level, you have learned the formula for all common and uncommon potions a
   "Rare", "500 gp", "10 days"
 )
 
-==== Alchemical Master
+=== Alchemical Master
 At 13th level, you have discovered deep secrets to alchemy. You gain the following benefits
 
 - You are immune to poison.
 - Healing potions you administer or use heal the maximum possible. If you expend one or more aether charges as part of the action, they heal an additional 1d8 for each expended charge.
 - When you use alchemical munitions that deal damage, the damage dealt is increased by your Intelligence modifier.
 - You can produce potions and alchemical munitions at twice the normal rate. If you could make one as part of a long rest, you can now make two.
-=== Forgemaster
+== Forgemaster
 The Forgemaster focuses on the mechanical part of his muse, creating a suit of magically-powered armor that enhances his abilities.
 
-==== Power Armor: Core
+=== Power Armor: Core
 You gain proficiency in heavy armor. Your carrying/lift/drag capacity doubles.
 
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency in athletics and intimidation.
 
-==== Power Armor: Limbs
+=== Power Armor: Limbs
 Starting at 3rd level, you always count as having a running start when you jump and your high jumps are as far as your long jumps.
 
 Additionally, you have advantage when grappling or shoving creatures your size or smaller and can grapple creatures up to two sizes larger than you.
 
-==== Power Armor: Helmet
+=== Power Armor: Helmet
 Starting at 6th level, you cannot be blinded or deafened. Additionally, you can see creatures within 60 feet of you regardless of heavy obscurement, as long as they do not have total cover from you.
 
-==== Power Armor: Improved Core
+=== Power Armor: Improved Core
 Starting at 9th level, you can choose one of the following:
 #flush-block[
 - *Restorative Infusion:* When you activate an infused spell item that does not deal damage, you regain hit points equal to 5#sym.times the spell level. If that would bring you above your maximum hit points, you gain the extra as temporary hit points instead.
 - *Infusion slots:* When you activate an infused spell item that targets only you, you do not have to have it in hand.
 - *Pulsing Infusion:* When you activate an infused spell that normally only targets you, you can choose up to 1 additional willing creature within 10 feet that you can see as a target.
 ]
-==== Power Armor: Complete Set
+=== Power Armor: Complete Set
 Starting at 13th level, your armor is complete. This grants the following benefits.
 - You can now breathe underwater and have a swim speed of 30 ft.
 - You gain a fly speed of 30 feet.
 - You are immune to gas-based poison or stench effects.
 
-=== Trapsmith
+== Trapsmith
 Like their Inventor cousins, Trapsmith Mechanists focus on ranged combat and the innate abilities of their Aether Engines, enabling them to use them as traps.
-==== Ricochet Shot
+=== Ricochet Shot
 If you miss with a ranged weapon attack, you can re-target the attack to another creature within 30 ft of the original target. Roll the attack again at disadvantage. Once you use this a number of times equal to your Intelligence modifier, you cannot do so again until you finish a long rest.
 
-==== Additional Proficiencies
+=== Additional Proficiencies
 You gain proficiency with acrobatics, deception, and thieves' tools.
 
-==== Mine-layer
+=== Mine-layer
 Starting at 3rd level, you can throw a small mine out to a point you can see within 30 ft as an action. You can only have one mine active at a time, and they last until triggered or for one hour. You can use this a number of times equal to your Intelligence modifier (minimum once), regaining expended uses when you finish a long rest. Choose one of the following:
 #flush-block[
 - *Sticky Mine:* The next time a creature moves within 10 feet of the mine, it erupts in a mass of sticky foam, covering a 15 ft radius. All creatures within that radius must make a STR save against your spell save dc or have their speed reduced to 0 by the foam. Affected creatures can make a Strength (Athletics) check to break free (same DC). The area is difficult terrain for 1 minute.
 - *Flashbang Mine:* The next time a creature moves within 10 feet of the mine, it erupts in a blinding flash of light and deafening sound. All creatures within 15 feet must make a Constitution saving throw against your spell save dc. On a failed save, they take 3d8 thunder damage and are blinded until the end of your next turn. On a success, they take half damage and are not blinded. You can choose any number of creatures that will not trigger the effect.
 ]
-==== Zip Line
+=== Zip Line
 As an action starting at 6th level, you can shoot a special arrow attached to a cable up to 60 ft at a solid surface as an action. It embeds itself and the line anchors itself to a surface within 5 feet of you. It can hold up to 300 lbs. Creatures who did not see it being shot must make a Wisdom (Perception) check against your spell DC to see it. If they do not see it and walk through it, they are knocked prone. Once you use this ability, you cannot use it again until you complete a short or long rest.
 
-==== Aether Scanner
+=== Aether Scanner
 At 9th level you create a monocle that senses the presence of magical effects. While wearing it, you are under the effects of _detect magic_ and *see invisibility*.
 
-==== Advanced Mines
+=== Advanced Mines
 Starting at 13th level, when you use your Mine-layer ability, you can choose to enhance the mines. Choose one of the following:
 
 - The radius increases to 25 ft explosion/20 ft sensor.
@@ -1799,7 +1803,7 @@ Spells marked with a (\*) are found in the New Spells section of this document.
 - Wall of Stone
 ]
 
-== Monk
+= Monk
 
 There are four main monasteries in western Noefra, but most monks learn their art from an unaffiliated master or on their own. Tysh, located near Fuar Uulan, and Quietus, located in Wyrmhold, teach the traditional martial arts associated with monks as a class. Tysh-trained monks focus on the more mystical side and often take vows of silence; the graduates often travel on obscure quests for enlightenment. Quietus, founded by Kalesin of the Catalysts, teaches the common folk the unarmed martial arts and focus. Unlike the other monasteries, it is much closer to a normal school and its graduates don't take any form of vow other than to not use their skills for evil. Tyom, located near Asai'ka, trains spies, dancers, and assassins in shadowy mystical arts. Associated with the Dancers of the Church of the Queen Ascendant, its graduates often join the clergy or dancer corps. Those that don't often dance professionally...or use their skills in the many criminal endeavors across the Jungle. Alone of the schools, the Home of the Elements in the Byssian Highlands, is officially part of the government and includes arcane and primal components. It teaches not only monks but other elementalists to hear and manipulate the elements in many ways. Its martial graduates act as patrolling judges, peace keepers, and messengers throughout Byssia, most often simply resolving disputes through discussion. They wear traditional, simple, colored robes denoting their focused element (amber for air, grey-blue for water, crimson for fire, and green for earth) and carry walking sticks that double as instruments of discipline.
 
@@ -1807,26 +1811,26 @@ The ki used by monks is aether like the rest of Quartus, just focused inward. As
 
 Presented here are two specialized Ways; a more focused elementalist. As the Plane of Flame is most associated with the duality of destruction and rebirth, symbolized by the phoenix, so the Way is both destructive and protective.
 
-=== Way of Living Flame
+== Way of Living Flame
 Some monks, whether by nature or by training, have attuned their souls with the Plane of Flame and elemental fire. Some of them have developed this attunement into a Way, incorporating fire into their martial arts.
 
-==== Lambent Aura
+=== Lambent Aura
 Starting at 3rd level, you can make your ki resonate with elemental fire. When you make an unarmed attack on your turn, you can ignite the ki around body part you strike with. An unarmed strike made this way deals fire damage instead of bludgeoning damage.
 
 When you hit with this strike, you can deal 1d10 additional fire damage. You can add this extra damage a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest. While you have no uses available, you can spend 1 ki point to activate the extra damage again.
 
-==== Shedding Sparks 
+=== Shedding Sparks 
 Starting at 3rd level, instead of making an unarmed strike as part of the Attack action or your Martial Arts/Flurry of Blows attacks, you can instead make ranged weapon attacks with flaming ki with a range of 30/120. These ranged attacks deal fire damage as if you had hit with an unarmed strike. You can expend uses of Lambent Aura to deal the same extra damage.
 
-==== Ignition Control
+=== Ignition Control
 Starting at 3rd level, you can cast the _control flames_ cantrip without needing components. Additionally, you can generate light from your body as if it was a torch, turning it on or off as an action.
 
-==== From the Ashes 
+=== From the Ashes 
 Starting at 6th level, you draw on an aspect of eternal renewal. When you use your Step of the Wind, you can choose to heal yourself an amount of hit points equal to two rolls of your martial arts die plus your Wisdom modifier. You can heal in this fashion a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 
 You also gain resistance to fire damage.
 
-==== Lightning Dance
+=== Lightning Dance
 Starting at 11th level, your connection with flame has added an aspect of lightning. This has several effects:
 
 - When you use Lambent Aura or Shedding Sparks, you can choose to deal lightning damage instead of fire damage.
@@ -1834,7 +1838,7 @@ Starting at 11th level, your connection with flame has added an aspect of lightn
 - You can use your Stunning Strike on the ranged attacks from your Shedding Sparks feature as if they were unarmed strikes.
 - You can spend 3 ki to cast lightning bolt as a 3rd level spell, using your stunning strike DC as the spell save DC. This does not require any components and can deal either lightning damage or fire damage as you choose.
 
-==== Avatar of Living Flame
+=== Avatar of Living Flame
 At 17th level, your tie to the Fountain at the heart of Elemental Flame reaches its peak. As a bonus action you can transform into a burning elemental avatar for one minute. You gain the following benefits.
 - *Continual Flame:* You deal the extra fire or lightning damage on your unarmed and ranged attacks without expending uses of Lambent Aura. Additionally, anyone who touches you or hits you with an attack from within 5 feet takes fire or lightning (your choice) damage equal to 3 rolls of your martial arts die.
 - *Rebirth:* If you are reduced to 0 hit points or would be killed outright while in this form, the transformation fades and you are restored to full hit points and full ki instead.
@@ -1842,47 +1846,47 @@ At 17th level, your tie to the Fountain at the heart of Elemental Flame reaches 
 
 Once you use this feature, you cannot use it again until you finish a long rest.
 
-=== Way of the Serpent Dance
+== Way of the Serpent Dance
 Monks of the Serpent Dance choose to emphasize subtlety and grace in both combat and social situations, concealing within the paralyzing toxicity of their namesake. The name is from the Jungle of Fangs, where this style took root in modern times.
 
-==== Serpent's Grace
+=== Serpent's Grace
 Starting when you pick this subclass at level 3, you have learned to move through the world with nary a ripple. When you make a Dexterity (Stealth) check, you can add your Wisdom modifier to the result. In addition, when you take the Step of the Wind bonus action, the first attack against you on any turn has disadvantage until the start of your next turn.
 
-==== Serpent's Charm
+=== Serpent's Charm
 When you pick this subclass at level 3, you gain proficiency in Deception. If you already had proficiency, you gain expertise instead. In addition, you learn the _feint_ skill trick. If you spend ki on a different bonus action granted by this class, you can use feint as part of the same bonus action.
 
-==== Serpent's Venom
+=== Serpent's Venom
 At 6th level, you've learned to infuse your personal aether with toxic aspects, coating your unarmed strikes with venom. Once per turn when you hit a creature with an unarmed strike, you can change the damage type to poison. If you do, you deal extra damage equal to your Wisdom modifier, and you can spend 2 or more ki points to force the creature to make a Constitution saving throw against your stunning strike DC. On a failed save, the creature takes 1d10 poison damage per ki spent and is poisoned for one minute. On a success, they take half as much damage and are not poisoned. Poisoned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-==== Scale Dance
+=== Scale Dance
 At 11th level, you embody the bewitching aspect of a cobra as you dance. As an action, you can spend 3 ki and begin to dance, forcing all creatures of your choice that can see you within 30 feet to make a Wisdom saving throw. On a failed save, they become charmed by you. While charmed, they must use their movement to sway in time with you and cannot cast spells; if they attack, they do so at disadvantage. This effect ends at the start of your next turn unless you use your action again to continue the effect. If you do so, you do not need to pay the cost an additional time, but targets get to re-attempt their saving throw.
 
-==== Necrotic Venom
+=== Necrotic Venom
 Starting at 11th level, the poison damage dealt by your Serpent's Venom ability becomes necrotic in addition to poison. This means that a creature must be resistant or immune to both necrotic and poison to be resistant or immune to the damage. In addition, creatures immune to the poisoned condition cannot take reactions instead for the same duration as they would have been poisoned for (subject to repeated saves as normal).
 
-==== Legendary Transformation
+=== Legendary Transformation
 At 17th level, you learn the spell _animal shapes_ and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
 
 #pagebreak()
-== Paladin
+= Paladin
 
 Paladins are not connected to gods (unless they choose to be). The Oath is not made _to_ a god; it may be made _calling a god to witness_. Or not. The empowering thing is the absolute conviction that following the tenets is Right. And that absolute conviction lets them, under limited circumstances, tell the universe to get bent and it will obey. One distinguishing factor of the vast majority of paladins is _stubbornness_, at least when it comes to something connected to their Oath.
 
 Paladins are not necessarily _knightly_. Many paladins take their Oaths (which may be formally sworn in ceremony or simply locked in the heart in a moment of supreme need) progressively, growing into their path. Others take them in a moment out of sheer desperation or agony, kneeling at the burning ruins containing their former lives and families and then take time to learn how to wield this power.
 
 Presented here is one Oath, that of Sin's Weight.
-=== Oath of Sin's Weight
+== Oath of Sin's Weight
 Those who swear the Oath of Sin's Weight (the Sinners, as they're often called) are those who have felt the pain that their betrayals, murders, and other "sinful" actions have caused themselves and others. Many of them believe themselves beyond any hope of redemption and have dedicated the remainder of lives to taking on the hard jobs, the dirty jobs, the _necessary_ jobs so that others do not have to pay the price, do not have to lose their innocence. Many Sinners have lost their faith in the gods and ascendant powers. They still believe in their existence, but no longer consider themselves worthy of being worshippers. When they do worship, it tends to be the Redeeming Blades, demigods who accept everyone as long as they are willing to sacrifice their past for redemption. Not out of hope for redemption for themselves, but as models in helping others.
 
 Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
 
-==== Tenets of Sin's Weigh.
+=== Tenets of Sin's Weigh.
 - *Sin is Painful, but Pain is Unavoidable.* No Sinner _wants_ to sin, least of all me. I do not glory in it; I prefer if it can be avoided. But sometimes, sin must happen that righteousness may prevail.
 - *An Imperfect World Demands People Do Hard Things.* Despite not wanting to sin, Sinners know that sometimes sin and other hard things must be done. The demon cult must be suppressed, the oppressive taskmaster, although he does not violate the law, must be stopped. The raiding tribes cannot be allowed free rein to plunder, even if they're not evil.
 - *Better the Sinner Suffer than the Innocent Shed a Tear.* Sinners are already damned. My soul is already blackened by sin. Better _I_ be the ones to carry more weight. Heavy is the weight of sin; strong is my back for having carried it this far. Let me carry more, so that others are unburdened by its weight.
 - *The Meaning of Sin is Personal.* Most Sinners agree that demons and undead are evil. But each of us has their own personal crusade, the thing that he or she considers _particularly_ sinful, that they are willing to stain their souls to fight. *Choose something (in coordination with your GM) that fits your character.*
 
-==== Oath Spells
+=== Oath Spells
 As a Sinner, your fervent devotion to your Oath grants you certain spells.
 
 Once you gain access to a oath spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the paladin spell list, the spell is nonetheless an paladin spell for you.
@@ -1896,7 +1900,7 @@ Once you gain access to a oath spell, you always have it prepared, and it doesn'
   "17th", [_geas, planar binding_]
 )
 
-==== Channel Divinity
+=== Channel Divinity
 When you take this oath at 3rd level, you gain the following two Channel Divinity options. Once you use either one, you cannot use this feature again until you finish a short or long rest.
 #colbreak()
 #flush-block[
@@ -1904,39 +1908,39 @@ When you take this oath at 3rd level, you gain the following two Channel Divinit
 
 - *Drive Home the Blade.* When you hit with a weapon attack but do not score a critical hit, you can expend your Channel Divinity to convert the hit into a critical hit. Alternatively, you can use it when you miss to turn the miss into a hit.
 ]
-==== Bear Another's Burden
+=== Bear Another's Burden
 Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the charmed, frightened, or stunned conditions from a creature you touch. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
 
-==== Aura of Weight
+=== Aura of Weight
 Starting at 7th level, you can expend a spell slot of 1st level or higher as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw against your spell save DC. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minute. On a success, they are shaken until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
 
-==== Penance Stare
+=== Penance Stare
 Starting at 15th level, you can use your action and expend a spell slot of 3nd level or higher to target one creature you can see within 60 ft and magically force it to relive its mistakes and sins. The target must make a Wisdom saving throw against your spell save DC. On a failed save, the target takes 8d6 psychic damage and is incapacitated for one minute. On a success, the target takes half as much damage and is frightened of you until the end of your next turn. Incapacitated targets can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-==== Inner Demon
+=== Inner Demon
 At 20th level, as an action you can become what others think you, at least outwardly: a ravening fiend. You gain the following benefits for 1 minute or until you are incapacitated. Once you use this ability, you cannot do so again until you finish a long rest.
 - You grow shadowy wings, gaining a flight speed of 60 ft for the duration
 - Your attacks deal extra fire or necrotic (your choice) damage equal to one roll of the weapon's base damage die. Damage dealt by Divine Smite or Improved Divine Smite becomes that same damage type
 - You gain 20 temporary hit points whenever a creature is reduced to zero hit points within your Aura of Protection
 - The area within your Aura of Protection cannot be brighter than dim light, regardless of sources of illumination. If it already would be dimly illuminated, it becomes complete darkness.
 
-== Planar Warrior
+= Planar Warrior
 
 Planar warriors are those who have, for one reason or another, forged a connection to the Inner Planes (Shadow and the elemental planes) of reality. Starting with the Border Shadow, they learn to manipulate the otherworldly energies for attack, defense, and movement. As their connection grows, they bond to two of the Inner planes more specifically and devote themselves to those particular energies.
 
-==== Quick Build
+=== Quick Build
 Put your highest ability score into Strength (if you wish to wield a two handed weapon) or Dexterity (for ranged weapons and dual wielding). Put your second highest score into Intelligence. Pick proficiency in Athletics and Investigation. Choose attunement to Fire.
 
-=== Class Features
+== Class Features
 As a planar warrior, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d10 per planar warrior leve.
 - *Hit Points at 1st Level:* 10 + your Constitution modifie.
 - *Hit Points at Higher Levels:* 1d10 (or 6) + your Constitution modifier per planar warrior level after 1st.
 ]
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* Light armor, medium armor, shield.
 - *Weapons:* Simple weapons, martial weapon.
@@ -1944,14 +1948,14 @@ As a planar warrior, you gain the following class features.
 - *Saving Throws:* Intelligence, Constitutio.
 - *Skills:* Choose two skills from Athletics, Investigation, Nature, Perception, Persuasion, and Religion.
 ]
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background.
 - (a) scale mail or (b) leather armor, a longbow and a quiver of 20 arrow.
 - (a) a martial weapon and a shield or (b) two martial weapon.
 - (a) an explorer's pack or (b) a dungeoneer's pac.
 - (a) a light crossbow and 20 bolts or (b) two handaxes
 
-=== Planar Attunement
+== Planar Attunement
 Choose one of the inner planes: one of the general Elemental planes (Fire, Earth, Air, or Water), Mirrorhaven or Beastholme. You have advantage on any ability checks you make when you are tracking, interacting with, or identifying creatures from this plane or sub-planes (or their works). You also suffer no ill environmental effects that might otherwise occur while you are on this plane. When you reach level 6, level 11 and level 14, choose another plane from this list to gain the same benefits.
 
 #wide[#dndtab("Planar Elements",
@@ -1965,7 +1969,7 @@ Choose one of the inner planes: one of the general Elemental planes (Fire, Earth
 
 Each plane is associated with two damage types as shown in the Planar Element Table above. This primarily affects your Protective Ward ability, but also influences your Planar Resistance feature.
 
-=== Planar Knowledge
+== Planar Knowledge
 At first level you gain proficiency in the Arcana skill (or another skill of your choice if you already have proficiency with Arcana). When you make an ability check that adds your arcana proficiency, you can add twice your proficiency bonus instead.
 
 #wide[#dndtab("The Planar Warrior",
@@ -1993,15 +1997,15 @@ At first level you gain proficiency in the Arcana skill (or another skill of you
 
 
 
-=== Protective Ward
+== Protective Ward
 Starting at first level you have learned to wrap yourself in a thin layer of the Border Ethereal to protect yourself from harm, shunting part of the force of blows and spells into that liminal space. As a bonus action on your turn you can activate the ward, which then remains active until you finish a long rest, are knocked unconscious, or use an ability that specifically deactivates your ward. The ward has hit points equal to your level #sym.times your Intelligence modifier. When you cast a Planar Warrior spell, the ward regains hit points equal to the spell slot used #sym.times your Intelligence modifier, up to its maximum. Using another use of this ability restores it to full health and makes it active, regardless of whether it was active or inactive. You can activate your protective ward two times. You regain all expended uses when you finish a long rest.
 
 Once your ward has been activated, it takes damage on your behalf as long as it has hit points remaining, benefiting from your resistances and immunities as relevant. Damage absorbed this way does not count for provoking Concentration checks.
 
-==== Explosive Ward
+=== Explosive Ward
 As a reaction when your ward takes damage, you can choose to deactivate your ward (after it takes the damage). If you do so, it explodes, dealing damage equal to its maximum hit points to the creature that damaged you. This damage is a type of your choosing from the ones associated with the planes to which you are attuned. Your planar ward must be reactivated to have any further effect.
 #colbreak()
-=== Weapon Specialization
+== Weapon Specialization
 Starting at 2nd level, you've become better than most at using the additional properties of your weapon. Choose two of the following options. You gain the bonus while wielding the weapons specified. If a wielded weapon qualifies for multiple bonuses, you must choose which bonus applies at the beginning of your turn---this choice lasts until the beginning of your next turn. If a bonus calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
 #flush-block[
 - *Battering* Once per turn when you hit with a weapon attack dealing bludgeoning damage, you can force the target to make a Strength saving throw as part of that action. On a failed save, the target is knocked prone.
@@ -2016,77 +2020,77 @@ Starting at 2nd level, you've become better than most at using the additional pr
 ]
 
 
-=== Spellcasting
+== Spellcasting
 By 2nd level, you have learned to draw on the magic of other planes to cast spells much like a wizard does. Unlike a wizard, you do not use a spellbook. See chapter 10 of the Player's Handbook for the general rules of spellcasting and the end of this document for the planar warrior spell list.
 
-==== Spell Slots
+=== Spell Slots
 The planar warrior table shows how many spell slots you have to cast your spells of 1st level or higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
-==== Spells Known of 1st Level and Higher
+=== Spells Known of 1st Level and Higher
 You know two 1st-level spells of your choice from the planar warrior spell list.
 
 The Spells Known column of the planar warrior table shows when you learn more planar warrior spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.
 
 Additionally, when you gain a level in this class, you can choose one of the planar warrior spells you know and replace it with another spell from the planar warrior spell list, which also must be of a level for which you have spell slots.
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Intelligence is your spellcasting ability for planar warrior spells, since your magic relies on an understanding of the interactions between the planes. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a planar warrior spell you cast and when making an attack roll with one.
 #flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Intelligence modifie.
 - *Spell attack modifier* = your proficiency bonus + your Intelligence modifier
 ]
 
-==== Ritual Casting
+=== Ritual Casting
 You can cast a planar warrior spell you know as a ritual if that spell has the ritual tag.
 
-=== Planar Devotion
+== Planar Devotion
 At 3rd level you have become devoted to a particular combination of planes that influences your abilities. Four of these devotions are detailed at the end of this class description: Immolating Lava, Primal Storm, Devouring Winter, and Beguiling Summer. Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level.
 
-=== Devotion Spells
+== Devotion Spells
 Each Planar Devotion has a list of associated spells. You gain access to these spells at the levels specified in the devotion description. These count as spells known for you but do not count against the limit of spells you can know.
 
 If you gain a devotion spell that doesn't appear on the Planar Warrior spell list, the spell is nonetheless a planar warrior spell for you.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, if your GM allows, you can pick a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick (see Skill Tricks later in this document) you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
-=== Extra Attack
+== Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-=== Planar Resistance
+== Planar Resistance
 Starting at 6th level, as an action you can expend a spell slot to gain resistance to one of the damage types associated with one of the planes you are attuned to for one hour. This requires concentration as if concentrating on a spell.
 
 For each level of spell slot above 1st that you expend, you can choose one additional creature you can see within 30 feet of you to gain this benefit as well.
 
-=== Improved Protective Ward
+== Improved Protective Ward
 Starting at 9th level, you can extend your protective ward's effects to others. When a creature you can see within 30 feet of you would take damage, you can use your reaction to cause your active ward to take the damage instead as long as it has more than 0 hit points. If you do so, you can choose to use your Explosive Ward without a further action requirement.
 
-=== Planar Jaunt
+== Planar Jaunt
 Starting at 10th level, you have learned to take shortcuts through the border Shadow. As a bonus action on your turn you can teleport to an unoccupied point you can see within 90 feet. Once you use this feature a number of times equal to your Intelligence modifier (minimum once), you must complete a long rest before you can use it again.
 
-=== Echoing Strike
+== Echoing Strike
 Starting at 11th level, you have learned to wrap energies of the Border Ethereal around your spells and weapons when you strike, creating a duplicate of the initial attack. Once on your turn when you hit with a weapon or spell attack you can choose to repeat the attack against the same target without using an action. The copied version requires its own attack roll and damage roll. If the initial attack dealt bludgeoning, piercing, or slashing damage, the additional attack deals force damage. Otherwise it matches the initial attack's damage type.
 
-=== Perfected Protective Ward
+== Perfected Protective Ward
 Starting at 13th level, you can siphon energy from the damage absorbed by your protective ward, converting it into vitality. When your ward is reduced to zero hit points, you gain temporary hit points equal to half of your level as long as your ward absorbed at least one point of damage from a hostile creature over its duration. These temporary hit points expire when you complete a short or long rest.
 
-=== Planar Bond
+== Planar Bond
 Starting at 17th level, your bond with the planes is strong enough to rapidly recharge your stock of warding energies. Your protective ward now regains its uses when you finish a short or long rest.
 
-=== Planar Body
+== Planar Body
 Starting at 18th level, your body is suffused with the stuff of the planes. You no longer need to eat, drink, or breathe.
 
 == Planar Devotions
 
-=== Immolating Lava
+= Immolating Lava
 Devotees of Immolating Lava combine fire and earth into destructive blasts of energy against foes that get too close.
 
-==== Devotion Spells
+=== Devotion Spells
 You gain the devotion spells at the planar warrior levels listed.
 #dndtab("Lava Bonus Spells",
   "Planar Warrior Level", "Spells",
@@ -2097,24 +2101,24 @@ You gain the devotion spells at the planar warrior levels listed.
   "17th", [_flame strike_, _immolation_]
 )
 
-==== Burning Ward
+=== Burning Ward
 After you choose this devotion at level three, your Protective Ward takes on an aspect of explosive fire and earth. When a creature deals damage to your Protective Ward from within 10 ft of you, they take damage equal to your Intelligence modifier.
 
 Additionally, when you use your Explosive Ward, all enemies within 10 ft of the triggering creature must make a Strength saving throw against your spell DC. On a failed save they are knocked prone and take fire damage equal to your Intelligence modifier + half your planar warrior level. On a success they take half damage and are not knocked prone. The triggering creature takes the normal full damage regardless, but is knocked prone if they fail the saving throw.
 
-==== One with Stone
+=== One with Stone
 Beginning at 7th level, you can slowly meld with and travel through stone and earth. As an action, you gain a burrow speed of 10 feet for one minute, but you cannot attack or cast spells during this time. You can carry up to one other person or goods weighing no more than half your carrying capacity with you while you do this, but you do not leave a tunnel behind you.
 
-==== Fiery Jaunt
+=== Fiery Jaunt
 Beginning at 15th level, when you use your Planar Jaunt feature you pick up a shroud of elemental fire. Until the end of your next turn, your melee weapon attacks deal extra fire damage equal to your Intelligence modifier and any creature that hits you with an attack from within 5 feet takes fire damage equal to your Intelligence modifier.
 
-==== Avatar of Lava
+=== Avatar of Lava
 At 20th level, your devotion to earth and fire is total. As an action you can transform into an avatar of lava for one minute. While transformed, your size increases to Large if there is room to do so without squeezing, you gain immunity to fire and acid, and all enemies that end their turns within 10 feet of you take 4d6 fire damage unless they succeed on a Dexterity saving throw against your spell save DC. Once you use this feature, you must complete a long rest before you can use it again.
 
-=== Primal Storm
+== Primal Storm
 Like a hurricane, devotees of the primal storm sweep through the battlefield, leaving only devastation in their wake. Devoted to air and water, they prefer quick attacks and rapid movement to standing and fighting.
 #colbreak()
-==== Devotion Spells
+=== Devotion Spells
 #dndtab("Storm Bonus Spells",
   "Planar Warrior Level", "Spells",
   "3rd", [_feather fall_, _thunderwave_],
@@ -2124,24 +2128,24 @@ Like a hurricane, devotees of the primal storm sweep through the battlefield, le
   "17th", [_cloudkill_, _steel wind strike_]
 )
 
-==== Storm Ward
+=== Storm Ward
 After you choose this devotion at level three, your Protective Ward takes on an aspect of wind, further protecting you from ranged and opportunity attacks. While your protective ward is active, ranged attacks against you are made at disadvantage and you can Disengage as a bonus action. When you use your bonus action to Disengage, your speed increases by 10 feet until the end of your turn.
 
-==== Flash Step
+=== Flash Step
 Beginning at 7th level, you can move and jump extraordinarily far. Your speed increases by 10 feet, and you can use either Dexterity or Strength to determine the distance you can jump. You always count as having a running start when jumping horizontally, and the vertical distance you can jump increases by a number of feet equal to your proficiency bonus.
 
 In addition, you make any Dexterity checks to maintain your balance with advantage.
 
-==== Thunderous Jaunt
+=== Thunderous Jaunt
 Beginning at 15th level, when you use your Planar Jaunt feature you leave a pocket of elemental thunder behind. All enemies within 10 feet of your departure point must make a Constitution saving throw against your spell save DC. On a failed save, they take 4d8 thunder damage, are deafened, and cannot take reactions until the beginning of your next turn. On a success they take half damage but suffer no other effects.
 
-==== Avatar of the Storm
+=== Avatar of the Storm
 At 20th level, your devotion to air and water is total. As an action you can transform into an avatar of the storm for one minute. While transformed, you gain immunity to lightning and thunder damage. In addition you gain a fly speed (with hover) equal to twice your normal speed. As an action while transformed you can cast _chain lightning_ once as an 8th level spell without using a spell slot. Once you use this feature, you must complete a long rest before you can use it again.
 
-=== Devouring Winter Devotion
+== Devouring Winter Devotion
 Those who are drawn to the deathly chill of winter often also find a home among the necrotic, wasting energies of the Waste. These are the devotees of the Devouring Winter. They drain the life from their foes and freeze them in place, hampering their movement and regaining strength from their suffering.
 
-==== Devotion Spells
+=== Devotion Spells
 #dndtab("Winter Bonus Spells",
   "Planar Warrior Level", "Spells",
   "3rd", [_ice knife_, _ray of sickness_],
@@ -2151,22 +2155,22 @@ Those who are drawn to the deathly chill of winter often also find a home among 
   "17th", [_cone of cold_, _negative energy flood_]
 )
 
-==== Freezing Ward
+=== Freezing Ward
 After you choose this devotion at level three, your Protective Ward takes on an aspect of ice, slowing those that strike you. When a creature hits you with a melee attack for the first time on a turn while your ward is active even if it has zero hit points, they must make a Strength saving throw against your spell DC. On a failed save their speed is reduced to 0 and they cannot take reactions until the end of their next turn. On a successful save their speed is reduced by 10 feet until the end of their next turn. This speed reduction does not stack with itself.
 
-==== Cold, Dead Memories
+=== Cold, Dead Memories
 Beginning at 7th level, you can commune with Shadow and learn some of the secret knowledge lost there. You can take 1 minute of meditation to ask a question about a person, place, object, or event. When you do so, make an Intelligence (History) check against a DC of 15. If you fail this check by 5 or more, you take 1d10 necrotic damage and are incapacitated for 1 minute. If you succeed, you learn a relevant fact about your target. For every 5 by which you beat the DC, you learn an additional fact. Every time you use this feature (other than the first) before you take a long rest, the DC increases by 5. You can only gain information about an individual target once with this feature; each success must focus on a different target.
 
-==== Frost-bound Jaunt
+=== Frost-bound Jaunt
 Beginning at 15th level, when you use your Planar Jaunt feature you can use some of the energies to freeze the blood of a target near your destination. Choose one creature within 5 feet of your destination. That target must make a Constitution saving throw against your spell save DC. On a failed save they take 6d6 cold damage and are stunned until the end of their next turn. On a successful save they take half damage and are not stunned.
 
-==== Avatar of Shadow
+=== Avatar of Shadow
 At 20th level, your devotion to ice and shadow is total. As an action you can transform into an avatar of shadow for one minute. While transformed, you gain immunity to cold and necrotic damage. In addition, you project an aura of necrotic cold. All enemies that start their turns within 20 feet of you have their speed reduced by 10 feet until the beginning of their next turn and must make a Wisdom saving throw against your spell save DC. On a failed save they take 1d10 necrotic damage and 1d10 cold damage. On a successful save they take half damage. Once you use this feature, you must complete a long rest before you can use it again.
 
-=== Beguiling Summer Devotion
+== Beguiling Summer Devotion
 Those who are drawn to the heat of the summer often also find a home among the shifting colors and bewitching sights of Mirrorhaven. These are the devotees of the Beguiling Summer.
 
-==== Devotion Spells
+=== Devotion Spells
 #dndtab("Summer Bonus Spells",
   "Planar Warrior Level", "Spells",
   "3rd", [_charm person_, _faerie fire_],
@@ -2176,19 +2180,19 @@ Those who are drawn to the heat of the summer often also find a home among the s
   "17th", [_destructive wave_, _seeming_]
 )
 
-==== Beguiling Ward
+=== Beguiling Ward
 After you choose this devotion at level three, your Protective Ward takes on an aspect of radiance, letting you blind and confuse your foes. When you activate your Protective Ward or recharge it by expending a spell slot, you can use your reaction to force a number of creatures equal to half your proficiency bonus that you can see within 60 feet of you to make a Wisdom saving throw against your spell save DC. On a failed save, they are blinded until the end of your next turn. Creatures blinded by this effect must roll a d6 at the beginning of their turn: on a roll of 1-3 they take no action and remain stationary; on a roll of 4-6 they must use their movement to move a distance equal to their speed in a random direction but can use their action freely before or after their motion.
 
-==== Warmth of Summer
+=== Warmth of Summer
 Beginning at 7th level, you can channel the timeless memory of summer and peace to soothe the hearts of those around you. Choose a number of willing creatures equal to your Intelligence modifier that you can see within 30 feet. Each of them can make a saving throw with advantage against an effect that can be ended by a saving throw, ending the effect on a success. Once you use this ability, you must finish a long rest before you can use it again.
 
-==== Radiant Jaunt
+=== Radiant Jaunt
 Beginning at 15th level, when you use your Planar Jaunt feature you can use some of the energies to misdirect the enemy. An illusionary duplicate of you is created at your starting point which has your armor class but cannot act and you become invisible until you attack or the duplicate is destroyed. If this duplicate is struck with an attack, the duplicate is destroyed and you become visible again. An attacker that dispels the duplicate takes 2d10 radiant damage. The duplicate fades and the invisibility ends after one minute if not sooner.
 
-==== Avatar of Mirrorhaven
+=== Avatar of Mirrorhaven
 At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an action you can transform into an avatar of Mirrorhaven for one minute. While transformed, you gain immunity to fire and psychic damage for the duration. In addition, allies who start their turn within 30 feet of you gain temporary hit points equal to your proficiency bonus + your Intelligence modifier and their speed increases by 10 feet. Once you use this feature, you must complete a long rest before you can use it again
 #colbreak()
-== Planar Warrior Spell List
+= Planar Warrior Spell List
 
 #flush-block[
 ==== 1st level
@@ -2256,113 +2260,113 @@ At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an 
 ]
 
 
-== Rogue
+= Rogue
 
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a _fireball_ and come out unscathed---the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.
 
 There are several Noefran organizations well-suited to a rogue's talents, from rump of the Benevolent Association, the organized crime ring that ruled Asai'ka from the shadows until the Red Plague, to the Hollow Knives, assassins and secret law-keepers in service to the Hollow King. The Dimwit Syndicate, headquartered in Tarad'am, is another significant criminal organization. Other rogues wear a white hat, acting as investigators, spies, and agents (governmental or private) throughout the scattered nations.
 
-=== Variant Features
+== Variant Features
 The following feature is available to all rogues, with their GM's permission.
-==== Skill Tricks
+=== Skill Tricks
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks for more details and the rules governing skill tricks. This includes any gained normally alongside ability score increases.
 
 You gain additional Skill Tricks at 3rd, 4th, 6th, 8th, 10th, 12th, 16th, and 19th levels. When you reach 7th level, you can learn advanced skill tricks; at 11th level expert skill tricks; and 17th level master skill tricks. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
-=== Mage Hunter
+== Mage Hunter
 Magic is not always appreciated. Mortal spell-casters often believe themselves the lords of creation...and act that way. Mage hunters are trained to counter those. They employ the inversion of a family of techniques called formshaping: manipulating aether into the platonic shapes of "forms". Or in this case, shaping their personal aether to disrupt patterns, especially those created by spell-casting.
 
-==== Shaping Dice
+=== Shaping Dice
 You have four shaping dice, each of which is a d6. You use these to empower your archetype features. You regain expended dice when you complete a short or long rest. The size of each die increases with level as shown on the Mage Hunter.
 
-==== Disruptive Strike
+=== Disruptive Strike
 Starting at level 3 when a creature within your reach (if wielding a melee weapon) or normal range (if wielding a ranged weapon) begins casting a spell or using a magical ability, you can use your reaction and spend a shaping die to make an attack against them with a wielded weapon. If it hits, you add the result from your shaping die to the damage dealt and the target must make a concentration check at disadvantage. On a failed check, the spell or magical ability fails and the spell slot or charge is consumed.
 
-==== Magical Awareness
+=== Magical Awareness
 Also starting at level 3, you can create the effect of _detect magic_ or _identify_ twice without requiring components or a spell slot or concentration. You regain expended uses when you finish a short or long rest.
 
-==== Slippery Form
+=== Slippery Form
 Starting at level 9, your awareness of the limits of spell-craft has increased. You can expend a shaping die when you make an ability check or saving throw against a spell or magical effect and add the result to your total. You can do so after you know whether you've succeeded or failed.
 
-==== Greater Disruptive Strike
+=== Greater Disruptive Strike
 Starting at level 13, your ability to disrupt magical effects has increased. As an action you can spend a shaping die to make an attack against a magical effect you can perceive. On an attack roll of 10 or higher, treat the effect as if you had cast _dispel magic_ at 3rd level. For effects from higher level spells, your attack roll result is the ability check result; if the attack roll is equal to or higher than 10 + the spell's level, the spell effect ends. This can even disrupt magical effects that cannot be dispelled by _dispel magic_, such as _force cage_ and _wall of force_, assuming the result is high enough.
 
-==== Resurgent Shaping
+=== Resurgent Shaping
 Starting at level 17, you recover your ability to shape forms more quickly. When you expend your last shaping die, roll a d20. On a result of 10 or above, the shaping die is not expended.
 
-=== Scout
+== Scout
 
 Scouts are sneaks and marksmen, remaining unseen until they can strike a telling blow and then fading into the background again. In addition, they're the specialists at exploring the world, natural or civilized. They learn minor primal magics, but mostly rely on their wits, weapons, and honed skills.
 
-==== Called Shot
+=== Called Shot
 When you take this archetype at 3rd level, you have learned to hit specific parts of your enemies with greater effect. When you make a weapon attack on your turn, you can use your bonus action to make it a Called Shot. The basic Called Shot allows you to apply your Sneak Attack damage even if you normally wouldn't qualify (such as because you have disadvantage or no ally is adjacent to the target). Once you use this feature, you cannot do so again until you have spent a bonus action on a future turn doing something else. You gain additional ways to use this ability as you gain levels.
 
-==== Exploration Adept
+=== Exploration Adept
 Starting at 3rd level, you remain alert even when performing other exploration tasks and gain proficiency with Perception. If you already were proficient in Perception, you gain expertise instead. 
 
 Additionally, you gain the _jump_ skill trick even if you do not qualify, as you've learned to move in all sorts of environments.
 
-==== Investigation Adept
+=== Investigation Adept
 At 3rd level, you gain proficiency with Investigation. If you already had proficiency, you gain expertise instead. You also learn the Sense Baleful Magic skill trick even if you don't otherwise qualify.
 
-==== Exposing Shot
+=== Exposing Shot
 At 9th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to create a breach in the target's defenses, making it more vulnerable to your allies' damage. Until the end of your next turn, attacks against the creature have advantage and deal extra damage equal to your proficiency bonus + your Intelligence modifier. If you otherwise qualify for Sneak Attack (without the normal effect of Called Shot), you may apply that feature as well---you simply cannot use the Called Shot to qualify for Sneak Attack when you otherwise could not.
 
-==== Break Contact
+=== Break Contact
 At 9th level, you've learned to duck into the shadows to evade scrutiny more easily than most. You have advantage on Dexterity (Stealth) checks made to become or remain hidden. In addition, you can attempt to hide even when only lightly obscured.
 
 In addition, if you make a Dexterity (Stealth) check and do not like the result, you can reroll the check, taking the second result. Once you use this reroll, you cannot do so again until you finish a short or long rest.
 
-==== Disrupting Shot
+=== Disrupting Shot
 At 9th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to disrupt the target's concentration in addition to any normal damage (possibly including Sneak Attack). If the target was concentrating on a spell or effect, that concentration ends immediately. If they were casting a spell or incantation with a cast time longer than a single action, that incantation or spell fizzles with no effect, consuming any resources.
 
-==== Primal Awakening
+=== Primal Awakening
 At 13th level, you learn the Primal Initiate skill trick, even if you don't qualify for it normally.
 
-==== Enhanced Senses
+=== Enhanced Senses
 At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the _sense aura_ incantation.
 
-==== Lethal Shot
+=== Lethal Shot
 At 17th level, you have developed the ability to strike at the cords that bind a creature to life. You can make a special Called Shot. If you hit with this attack, you score a critical hit and can apply Sneak Attack even if you normally would not qualify. Once you use this ability, you cannot do so again until you finish a long rest.
 
 In addition, if the target is below half its maximum hit points, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or _death ward_).
 
-=== Shadowdancer
+== Shadowdancer
 
 Shadowdancers are infiltration and covert work specialists. They've trained their souls to the degree that they can truly become one with the shadows, wrapping the substance of the Shadow plane around themselves and slipping between the cracks just as that liminal plane slips between the cracks of the other planes. This lends them both extraordinary grace in combat as well as enhanced stealth abilities.
 
-==== Shadow Strike
+=== Shadow Strike
 Starting at 3rd level when you take this archetype, your strikes while in dimmed lighting are harder to stop. You have advantage on any attack made while you or your target are in any lighting condition other than bright light.
 
 Additionally, when you hit with a weapon attack and have advantage on the attack, you can add your proficiency bonus to the damage dealt. If you do so, you can choose to have the entire attack deal necrotic damage.
 
-==== Stalk the Shadows
+=== Stalk the Shadows
 Starting at 3rd level when you take this archetype, you can magically transport yourself between the shadows. You use your bonus action to teleport to an area of shadow large enough to fit your body that you can see within 60 ft. You must be in an area of shadow large enough to fit your body already. For this ability, "shadow" includes any dimly-lit or unlit area as well as the shadows cast by objects and other obstructions. The vertical dimension of the shadow doesn't matter. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a long rest.
 
-==== Improved Uncanny Dodge
+=== Improved Uncanny Dodge
 Starting at 9th level, you can shunt incoming attacks partially into Shadow more effectively. When you use your Uncanny Dodge, the effect lasts until the end of the current turn instead of only for that attack.
 
-==== Hide in Plain Sight
+=== Hide in Plain Sight
 Starting at 9th level, you can wrap the stuff of Shadow around yourself. You can attempt to hide even when directly observed and/or in bright light. If you succeed at the attempt but could be seen by one or more enemies at the beginning of your next turn, you immediately become unhidden. Once you use this feature, you cannot do so again until you finish a short or long rest.
 
-==== Shrouded Nature
+=== Shrouded Nature
 Starting at 13th level, you have learned to shroud yourself in shadow even in bright light. As an action, you can create an aura of shadow around yourself for one hour. This magical aura leaves you lightly obscured and upgrades other sources of light obscurement to heavy obscurement. In addition, you always count as being in shadow for the purpose of Stalk the Shadows; neither your starting or ending point need to be shadowed by any external source. Once you use this feature, you cannot do so again until you finish a long rest. 
 
-==== Ethereal Body
+=== Ethereal Body
 Starting at 17th level, you have learned to transition to the Border Shadow more easily than most. As a bonus action while you are affected by Shrouded Nature, you can go fully ethereal. While you are ethereal you cannot be seen by any creature on the Mortal plane that does not have truesight, but you can see the Mortal plane. You can pass through walls and most barriers other than ones that explicitly affect the Border Shadow. You cannot affect the Mortal while ethereal. You can exit the Border Shadow as a bonus action.
 
 When you go ethereal, you can bring your gear, the objects you are carrying, and any unconscious creatures. You cannot bring a conscious creature with you, willing or not.
 #colbreak()
-=== Trickster
+== Trickster
 
 Tricksters hone their skills with less of a supernatural flair, but are no less effective for that. They gain better uses of mundane and magical objects and specialize in imposing conditions on their foes in combat.
 
-==== Reliable Sneak Attack
+=== Reliable Sneak Attack
 Starting at 3rd level when you take this archetype, when you hit and apply Sneak Attack, you can treat any damage die that was less than half the maximum value as half the maximum value instead. Once you use this feature a number of times equal to your Charisma modifier (minimum once), you cannot do so again until you finish a short or long rest. Critical hits do not consume a use of this feature.
 
-==== Fast Hands
+=== Fast Hands
 Starting at 3rd level when you take this archetype, you can do any one of the following as part of your Cunning Action in addition to the normal effect:
 
 - Administer a potion to someone else.
@@ -2372,15 +2376,15 @@ Starting at 3rd level when you take this archetype, you can do any one of the fo
 - Make a Wisdom (Medicine) check to stabilize someone.
 - Flip any number of switches, pull any number of levers, or otherwise interact with the environment in ways that do not require ability checks.
 
-==== Confident Disguise
+=== Confident Disguise
 Starting at 6th level, you can pull off disguises and impersonations more effectively. You have advantage on any attempt to persuade or deceive someone into believing you are someone else. 
 
 Additionally, you can magically convince people against whom you succeeded that whatever documents you present (including blank paper) confirm your story in all details. If the documents are examined outside of your presence, the ruse will be revealed. Once you use this portion of the feature once, anyone affected by it is immune to its effects for 24 hours.
 
-==== Distraction
+=== Distraction
 Starting at 6th level, you've become even better at providing distractions for others. As an action, you can attempt a distraction that affects a number of creatures of your choice that can see or hear you equal to your Charisma modifier (minimum one). Each target must make a Wisdom (Perception) check opposed by your Charisma (Deception) check. On a failure, they are considered blinded and deafened to everything but you until the end of your next turn. To maintain the deception, you must take the action again on your next turn(s), redoing the opposed check each time.
 
-==== Trick Attack
+=== Trick Attack
 At 9th level, you learn to impose conditions on those that you hit with your Sneak Attacks by forgoing some of the damage. Each condition has a cost in sneak attack dice forgone, a saving throw necessary to apply the condition (or --- for those that are applied automatically by spending the resource), and a duration. The DC for all of these saving throws is *8 + your proficiency bonus + your Dexterity modifier*. If you have expertise in Sleight of Hand, the DC increases by half your proficiency bonus. You can only apply one condition each time you apply Sneak Attack.
 
 #dndtab("Trick Attack",
@@ -2394,7 +2398,7 @@ At 9th level, you learn to impose conditions on those that you hit with your Sne
   "unconscious", "3 dice", "CON", "1 minute or when they take damage",
 )
 
-==== Magical Impersonation
+=== Magical Impersonation
 Starting at 13th level, you've learned to mold your aether to mimic that of other creatures. You gain the following benefits:
 
 - You can attune to and use any magic item, regardless of the normal requirements, and your attunement limit increases by 1.
@@ -2402,7 +2406,7 @@ Starting at 13th level, you've learned to mold your aether to mimic that of othe
 - You can impersonate the master of golems, automated defenses, and other constructs unless that is tied to a particular item rather than a person. For each minute spent doing this, you must make a DC 15 Constitution saving throw, gaining a level of exhaustion on a failure. You cannot use this while you have any levels of exhaustion, but failure does not end the effect.
 - You can activate magic items keyed to another person by choosing to take a level of exhaustion.
 
-==== Deceive the Universe
+=== Deceive the Universe
 Starting at 17th level, you can attempt to cast any spell of 7th level or lower or use any incantation. Make a Charisma (Deception) check against the DC listed in the table below. This attempt takes the same time as the regular casting time and any material components. On a success, the spell or incantation takes effect, using Charisma as the requisite spellcasting modifier where appropriate. Once you use this feature once, you incur 2 levels of exhaustion every time you use it again until you finish a long rest. You cannot apply your Stroke of Luck or Reliable Talent features to this roll.
 
 #dndtab("Deceive the Universe",
@@ -2417,21 +2421,21 @@ Starting at 17th level, you can attempt to cast any spell of 7th level or lower 
 )
 
 #pagebreak()
-== Spellblade
+= Spellblade
 
 The spellblade is half-rogue, half-arcanist. They weave distraction, illusion, and weapon-play to confuse their foes, warping reality around them to hamper their ability to strike others. Unique among the classes, they have the ability to mix weapons and spells directly, gaining the ability to cast a spell on their weapon and have it take effect when they strike an enemy.
 
-=== Class Features
+== Class Features
 As a spellblade, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d8 per spellblade level.
 - *Hit Points at 1st Level:* 8 + your Constitution modifier.
 - *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per spellblade level after 1st.
 ]
 
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* light armor, medium armo.
 - *Weapons:* simple weapons, hand crossbows, longswords, rapiers, shortsword.
@@ -2441,7 +2445,7 @@ As a spellblade, you gain the following class features.
 ]
 
 
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) rapier or (b) any simple weapon
@@ -2449,7 +2453,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (a) leather armor or (b) chain shirt
 - a dagger
 
-=== Arcane Manipulation
+== Arcane Manipulation
 You can magically distort the minds of your foes. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you and mark them for ill-luck. Once within the next minute when the creature makes an attack roll, saving throw, or ability check, you can invoke the mark without using an action. If you do so, the creature must roll your Arcane Manipulation die (originally a d6) and subtract it from the die result before applying modifiers. This can convert a critical hit into a regular hit or miss. Any creature can only be marked with one manipulation die at a time. You can invoke the mark after you see the die result but before the success or failure is resolved.
 
 You can mark creatures with this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
@@ -2481,71 +2485,71 @@ Your Arcane Manipulation die changes when you reach certain levels in this class
     "20th", "+6", "Superior Manipulation", "d12", "10", "6", "6", "4", "3", "3", "3", "2",)
 ]
 
-=== Spellcasting
+== Spellcasting
 You have learned to untangle and reshape the fabric of reality in harmony with your wishes.
 
-==== Cantrips
+=== Cantrips
 You know two cantrips of your choice from the spellblade spell list. You learn additional spellblade cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Spellblade table.
 
-==== Preparing and Casting Spells
+=== Preparing and Casting Spells
 The spellblade table shows how many spell slots you have to cast your spellblade spells. To cast one of your spellblade spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
 You prepare the list of spellblade spells that are available for you to cast, choosing from the spellblade spell list. When you do so, choose a number of spellblade spells equal to the number shown on the Spells Prepared column of the Spellblade table (initially 1). The spells must be of a level for which you have spell slots.
 
 You can change your list of prepared spells when you finish a long rest.
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Charisma is your spellcasting ability for your spellblade spells, since their power derives from the strength of your will. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a spellblade spell you cast and when making an attack roll with one.
 #flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Charisma modifie.
 - *Spell attack modifier* = your proficiency bonus + your Charisma modifier
 ]
 
-==== Spellcasting Focus
+=== Spellcasting Focus
 You can use a weapon you are proficient in and wielding as a spellcasting focus for your spellblade spells.
 
-=== Expertise
+== Expertise
 At 2nd level, choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.
 
 At 10th level, you can choose another skill proficiency to gain this benefit.
 
-=== Skill Tricks
+== Skill Tricks
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See the section on Skill Tricks for more details and the rules governing skill tricks. You gain additional skill tricks every time you gain an Ability Score Improvement, but you must qualify for them normally.
 
 When you gain access to a new skill trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
-=== Spellblade Focus
+== Spellblade Focus
 At 3rd level, you delve into the advanced techniques of a spellblade focus of your choice and choose to focus either on Inspiration, Society, or War, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 14th, and 18th level.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores of your choice by 1 each. As usual, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can pick a feat that you qualify for.
 
-=== Renewed Manipulation
+== Renewed Manipulation
 Beginning when you reach 5th level, you regain all of your expended uses of Arcane Manipulation when you finish a short or long rest.
 
-=== Channeling
+== Channeling
 Starting at 6th level, you have learned to weave your spells into your weapon use. When you take the Attack action on your turn, you can also cast a cantrip of your choice that targets another creature and infuse your weapon strike with it. If you hit with the attack, the target suffers the effect of both the regular weapon damage and the cantrip. If the cantrip targets two or more creatures, the additional creatures must be within 5 feet of the target of the weapon attack.
 
 Starting at 11th level, you can infuse any 1st or 2nd level spell that has a cast time of one action or one bonus action by expending the appropriate spell slot. It does not require a separate action. The spell must target a creature or a point in space. If it targets a single creature, the target of your weapon attack is the target of the spell and must make any requisite saving throws, although they do so at disadvantage. If it targets a point in space, the target is centered on the creature struck. The limit on spell slots increases to 3rd level at 13th and 4th level at 17th level.
 
 If you miss with an infused attack, the spell fizzles and has no effect. The spell's range becomes equal to the reach of your weapon (if melee) or the range of your weapon (if ranged).
 
-=== Counter-weave
+== Counter-weave
 Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone you can see within 60 ft of you begins casting a spell or magical effect, you can spend a first level spell slot to attempt to counter it. The target must make a Charisma saving throw against your spell save DC. They gain a +1 bonus for every 2 CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend spell slots above 1st level; for every additional spell level above 1st, the DC increases by 1.
 #colbreak()
 Additionally, you learn _dispel magic_ if you do not already know it and can cast it using a first-level slot instead of its normal slot. It does not count against your spells known. However, if cast using a slot below 3rd level, the level of spell effect automatically dispelled without a check becomes the level of the slot used to cast it.
 
-=== Superior Manipulation
+== Superior Manipulation
 At 20th level, targets marked by your Arcane Manipulation must subtract the die from every attack roll or ability check they make for one minute. Only one saving throw of your choice is affected, regardless.
 
-== Spellblade Focuses
+= Spellblade Focuses
 Every spellblade can do most of the same things, but each one also specializes, focusing their efforts on one area of life. These Focuses grant the spellblade additional features when they use their class features or might grant additional abilities.
-=== Focus: Inspiration
+== Focus: Inspiration
 While many spellblades are best at tearing down their foes, those who focus on inspiration are equally capable of building up their allies as well.
 
-==== Focus spells
+=== Focus spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as their spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("Inspiration Bonus Spells",
@@ -2556,28 +2560,28 @@ Your focus provides you with the following spells, which are spellblade spells f
   "18th", [_arcane eye_, _greater invisibility_]
 )
 
-==== Inspiring Manipulation
+=== Inspiring Manipulation
 Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead adds the die to one ability check or damage roll they make within the next minute. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.
 
-==== Beneficial Channel
+=== Beneficial Channel
 Starting at 7th level, when you take the Attack action and choose not to apply your Channeling ability, you can instead grant temporary hit points equal to your proficiency bonus + your CHA modifier to creature other than yourself you can see within 30 feet.
 
-==== Shielding Counter-Weave
+=== Shielding Counter-Weave
 Starting at 14th level, when you use your Counter-Weave ability against a magical effect that causes damage and the target succeeds on the saving throw, you can choose a number of willing targets equal to your proficiency bonus. Those targets have resistance to the damage dealt by the magical effect.
 
-==== Legendary Effect: Heroes' Feast
+=== Legendary Effect: Heroes' Feast
 At 14th level, you learn the spell _heroes' feast_ and can cast it once per day without expending a spell slot. It still requires the material component.
 
-==== Improved Inspiring Manipulation
+=== Improved Inspiring Manipulation
 Starting at 18th level, when you use your Inspiring Manipulation ability, the friendly target can add the die to an attack roll or saving throw as well as an ability check or damage roll.
 
-==== Legendary Effect: Abjure Aether Manipulation
+=== Legendary Effect: Abjure Aether Manipulation
 Starting at 18th level, you learn the spell _antimagic field_ and can cast it once per day without expending a spell slot.
 
-=== Focus: Society
+== Focus: Society
 Society-focused spellblades include hired duelist as well as others whose weapons aren't always made of steel. While adventuring spellblades are all capable of violence, society focused spellblades are equally capable of cutting someone to ribbons verbally as well as with a blade. They tend to focus more on the skilled side of things rather than the magical, however.
 
-==== Focus Spells
+=== Focus Spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as the spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("Society Bonus Spells",
@@ -2589,25 +2593,25 @@ Your focus provides you with the following spells, which are spellblade spells f
 )
 .
 
-==== Focused Charm
+=== Focused Charm
 At 3rd level when you pick this focus, you gain your choice of the Diplomat or Frighten skill tricks.
 
-==== Social Manipulation
+=== Social Manipulation
 Starting at 3rd level, you can use your Arcane Manipulation feature when you make a Charisma check using Deception, Intimidation, or Persuasion and do not like the result to reroll the check. You must use the second result, and you must use this feature before any of the effects of that check are applied.
 
-==== Social Adept
+=== Social Adept
 Starting at 7th level, you learn your choice of the fascinate or people whisperer skill tricks despite not meeting the level requirements. You also learn the find weakness skill trick even if you don't otherwise qualify.
 
-==== Mass Manipulation
+=== Mass Manipulation
 Starting at 14th level, when you use your Arcane Manipulation ability, you can spend spell slots to target more creatures. For each spell slot level spent, you can target an additional creature within range.
 
-==== Legendary Effects
+=== Legendary Effects
 At 18th level, you learn the spells _dominate person_ and the _modify memory_ and can cast them once each without spending a spell slot, regaining the ability to do so once you finish a long rest. Charisma is the spellcasting ability for these spells.
 
-=== Focus: War
+== Focus: War
 Spellblades that focus on war have chosen to focus on all-out combat and destroying their enemies...with style.
 
-==== Focus spells
+=== Focus spells
 Your focus provides you with the following spells, which are spellblade spells for you and use Charisma as their spellcasting ability. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("War Bonus Spells",
@@ -2618,24 +2622,24 @@ Your focus provides you with the following spells, which are spellblade spells f
   "18th", [_fire shield_, _wall of fire_]
 )
 
-==== Piercing Manipulation
+=== Piercing Manipulation
 Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to pierce the defenses of a foe you attack. When you make an attack roll, you can expend one use of Arcane Manipulation to add the die result to your attack roll. Alternatively, when you cast a spell or use an ability (other than Arcane Manipulation) that requires a saving throw from an enemy, you can expend one use of Arcane Manipulation to subtract the die result from the target's saving throw. This can only affect a single target even if the spell or ability targets multiple creatures.
 
-==== Steady Channeling
+=== Steady Channeling
 Starting at 7th level, when you deal damage with your Channeling ability and roll below half the maximum damage on the spell's damage, you can choose to instead deal half of the spell's maximum damage (rounded up). You can use this ability a number of times equal to your Charisma modifier (minimum once), regaining expended uses when you complete a long rest.
 
-==== Rebounding counter-weave
+=== Rebounding counter-weave
 Starting at 14th level, when you use your counter-weave ability against a magical effect that causes damage and the target fails the saving throw, the target takes psychic damage equal to your level in addition to the regular effects of a failed save.
 
-==== Legendary Effect: Globe of Invulnerability
+=== Legendary Effect: Globe of Invulnerability
 At 14th level, you learn the spell _globe of invulnerability_ and can cast it once per day without expending a spell slot.
 
-==== Improved Piercing Manipulation
+=== Improved Piercing Manipulation
 Starting at 18th level, when you use Piercing Manipulation, the target of the attack or ability it modified takes additional psychic damage equal to your level, regardless of whether the triggering attack hits or the triggering ability takes effect.
 
-==== Legendary Effect: Power Word Kill
+=== Legendary Effect: Power Word Kill
 At 18th level, you learn the spell _power word kill_ and can cast it once per day without expending a spell slot.
-== Spellblade Spell List
+= Spellblade Spell List
 The Spellblade spell list contains a list of the spells available to all spellblades, ordered by spell level. Spells marked with (\*) are new and found in the Spells section at the end of this document.
 
 #flush-block[
@@ -2722,7 +2726,7 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 ]
 
 
-== Warden (Variant Barbarian)
+= Warden (Variant Barbarian)
 
 Wardens are warriors whose prowess has as much to do with their ties to primal power as their own skill. They channel nature's power via strong emotions. Many give themselves to supernatural anger, enough so that many call this state "Rage", despite it not always being anger that serves as the channel. They archetypally fight using two-handed weapons, although some fight with a weapon in each hand and a few use weapon and shield.
 
@@ -2732,21 +2736,21 @@ Primal power hardens their skin, acting as armor (although many still wear more 
 This is a variant barbarian and should not be played alongside a barbarian.
 ]
 
-==== Quick Build
+=== Quick Build
 To quickly build a warden, make Strength your highest ability score, with Constitution second and Dexterity third. Wear medium armor and wield a greataxe, greatsword, or maul. In tough combats, use Rage to gain defensive bonuses and then place yourself where incoming attacks will sustain it; spend your Stamina on Furious Blows, spending more than 1 STA per hit only against tough foes or where you know you'll be able to rest afterward. Your Stamina pool is large and refills on a short rest, so don't spare it if it will do good.
 
-=== Class Features
+== Class Features
 
 As a warden, you gain the following class features.
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice.* 1d12 per warden level
 - *Hit Points at 1st Level.* 12 + your Constitution modifier
 - *Hit Points at Higher Levels.* 1d12 (or 7) + your Constitution modifier per warden level after 1st
 ]
 
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor.* Light armor, medium armor, shields
 - *Weapons.* Simple weapons, martial weapons
@@ -2756,20 +2760,20 @@ As a warden, you gain the following class features.
 ]
 
 
-==== Equipment
+=== Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
 - (a) a greataxe or (b) any martial melee weapon
 - (a) two handaxes or (b) any simple weapon
 - An explorer's pack and four javelins
 
-=== Stamina
+== Stamina
 Like many adventurers of Quartus, Wardens have a pool of energy in their souls that fuels their abilities. This is Stamina (STA). Your maximum amount of stamina is shown on the Warden table, and expended stamina is restored when you finish a short or long rest.
 
-=== Exceptional Stamina
+== Exceptional Stamina
 Wardens pull on the vitality of the earth, fueling their stamina. As an action, you can regain stamina equal to twice your Constitution modifier. Once you do so, you cannot use this ability again until you finish a long rest.
 
-=== Furious Blow
+== Furious Blow
 Once per turn when you hit with a melee attack, you can choose to expend 1 or more STA to deal additional damage. If you do so, roll an additional weapon damage die for the first STA you spend and each additional 2 stamina expended and add it to the total rolled. You cannot spend more than 7 Stamina this way in a single attack.
 
 When you deal this extra damage, you gain Focus, which can be spent to fuel other abilities. You can only have one point of Focus at a time; any additional Focus generated is lost. Focus is also lost when you finish a long rest.
@@ -2802,7 +2806,7 @@ Starting at 8th level, when you hit a creature that is concentrating and deal th
 ]
 
 
-=== Rage
+== Rage
 
 You can summon primal strength in dire circumstances. As a bonus action on your turn or as a reaction when you take damage, you can spend 2 STA to enter a heightened state, commonly called Rage.
 
@@ -2812,15 +2816,15 @@ While raging, you gain the following benefits if you aren't wearing heavy armor:
 - You have resistance to bludgeoning, piercing, and slashing damage.
 
 Your rage lasts until the end of your next turn. If you take damage or make an attack while raging, your rage is extended for another turn. Additionally, you can sustain your rage for another turn with a bonus action on your turn.
-=== Unarmored Defense
+== Unarmored Defense
 
 While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
 
-=== Reckless Attack
+== Reckless Attack
 
 Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
 #colbreak()
-=== Danger Sense
+== Danger Sense
 
 At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
 
@@ -2828,11 +2832,11 @@ You have advantage on Dexterity saving throws against effects that you can see, 
 
 Alternatively, you can expend Focus to gain advantage on a Wisdom saving throw against an effect that would impose the charmed, frightened, or incapacitated condition.
 
-=== Primal Path
+== Primal Path
 
 At 3rd level, you choose a path that shapes the nature of your rage. Choose the Elemental Path, the Juggernaut Path or the Whirlwind Path, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
-=== Weapon Specialization
+== Weapon Specialization
 
 Starting at 3rd level, you have trained particularly with a particular weapon property. Choose two of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
@@ -2846,66 +2850,66 @@ Starting at 3rd level, you have trained particularly with a particular weapon pr
 - *Two-handed (Melee only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with Great Weapon Mastery.
 ] 
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or two ability scores by 1 each. As normal, you can't increase an ability score above 20 using this feature.
 
 Alternatively, you can take a feat that you qualify for.
 
-=== Skill Tricks
+== Skill Tricks
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can pick a Skill Trick you qualify for. When you do so, you can also substitute one skill trick you've learned for another you qualify for.
 
-=== Extra Attack
+== Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-=== Fast Movement
+== Fast Movement
 
 Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor. You can also always jump as if you had a running start.
 
-=== Feral Instinct
+== Feral Instinct
 
 By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 
 Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you activate Rage before doing anything else on that turn.
 
-=== Brutal Critical
+== Brutal Critical
 
 Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. You also score a critical hit on a 19 as well as a 20 on the d20.
 
 This increases to two additional dice at 13th level and three additional dice at 17th level. From 13th level you also score a critical hit on an 18.
 
-=== Retaliation
+== Retaliation
 Starting at 10th level, when you take damage from a creature that is within your reach, you can use your reaction to make a melee weapon attack against that creature. You can spend 2 STA while doing so to attack with advantage.
 
-=== Relentless
+== Relentless
 
 Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can spend 5 STA to make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.
 
-=== Ground Smash
+== Ground Smash
 
 At 13th level you learn the spell _earthquake_ and can use it as an action once per long rest. When you do so, you must center it on yourself, but you are not affected by the effect. The DC for this equals 8 + your Constitution modifier + your proficiency bonus.
 
-=== Spellbreaker
+== Spellbreaker
 Starting at 15th level, the sheer weight of your primal power inhibits your enemies' magical abilities. While you have Focus, you make saving throws against magical effects with advantage. Additionally, you can expend your Focus as an action to end any spell effect within 5 feet of you.
 
-=== Magebane
+== Magebane
 
 Beginning at 18th level, if an enemy within your reach attempts to cast a spell or use a magical ability, you can spend your reaction and Focus to force them to make a Constitution saving throw against a DC of 8 + your Strength + your proficiency bonus. On a failure, the spell or ability fails and the action is wasted but any resource (aether or daily uses) is not expended.
 
-=== Primal Champion
+== Primal Champion
 
 At 20th level, you embody the power of the wilds. Your Strength and Constitution scores each increase by +2. Your maximum for those scores is now 24.
 
-== Warden Paths
+= Warden Paths
 
 Different wardens interpret their calling and talents differently. These interpretations tend to coalesce around some similarities, often called Paths.
 
-=== Elemental Path
+== Elemental Path
 Those who embrace the Elemental Path embrace the primal side of their nature as it manifests in elemental power. They are the rock, the grinding ice floes, the lightning bolt, the erupting volcano.
 
-==== Elemental Rage
+=== Elemental Rage
 At 3rd level when you pick this Path, choose one of the elements below. You gain the listed feature while you are raging.
 #flush-block[
 - *Lava.* You gain resistance to fire damage. If a creature you can see hits you with an attack, you can use your reaction and spend 2 STA to roll a number of d10s equal to half of your proficiency bonus. You deal the rolled amount plus your Constitution modifier as fire damage to the triggering attacker.
@@ -2914,30 +2918,30 @@ At 3rd level when you pick this Path, choose one of the elements below. You gain
 - *Lightning.* You gain resistance to lightning damage. If a creature you can see within 30 feet is targeted by an attack, you can use your reaction and spend 2 STA to teleport to an unoccupied space within 5 feet of them and become the target of the attack instead.
 ]
 
-==== Elemental Blow
+=== Elemental Blow
 At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Furious Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is staggered until the end of your next turn. If they were already staggered, they become stunned instead.
 
-==== Flickering Rush
+=== Flickering Rush
 Starting at 10th level, you can spend 5 STA on your turn to teleport up to twice your speed. If you do so, you cannot move any further that turn.
 
 In addition, if you are raging when you use this ability, at your choice of starting or ending points you can release elemental energy corresponding to the choice you made for your Elemental Rage feature. All creatures within 10 feet must make a Dexterity saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed save, they take 6d6 damage of the type you gained resistance to. On a success, they take half as much damage. 
 
-==== Legendary Effect: Control Weather
+=== Legendary Effect: Control Weather
 At 14th level you learn the spell _control weather_ and can use it once per long rest. Constitution is your spellcasting ability for this spell.
 
-=== Juggernaut Path
+== Juggernaut Path
 
 Those who embrace the Juggernaut Path embrace the inevitability of their opponents' doom. It may not come fast, but it will certainly come. A Juggernaut, once unleashed, is very hard to stop.
 
-==== Punishing Stance
+=== Punishing Stance
 
 Starting at 3rd level when you pick this Path, when an enemy within your reach makes an attack against anyone but you or targets any creature other than you with a spell or saving throw, you can expend 2 STA or your Focus as a reaction to impose disadvantage on the attack roll or grant the target advantage on the saving throw. 
 
-==== Warding Rage
+=== Warding Rage
 
 Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.
 
-==== Inevitability
+=== Inevitability
 
 Starting at 10th level, your advance is inexorable as long as you still have strength. You can expend 5 STA as an action to do one of the following:
 
@@ -2946,37 +2950,37 @@ Starting at 10th level, your advance is inexorable as long as you still have str
 -  Open a naturally-occurring portal or Way that would normally require special circumstances.
 -  Jump to a point you can see within 150 ft of you.
 
-==== Primal Ward
+=== Primal Ward
 
 Starting at 14th level, your primal presence is such that you can ward out all non-legendary spell effects. As an action and by expending 8 STA, you can invoke a Primal Ward, which takes the form of a swirling barrier of energy in a 10-foot radius around you which remains for one minute or until you are incapacitated.
 
 Any spell or magical effect of 5th level or lower (or the equivalent as decided by the GM) cast from outside the barrier can't affect creatures or objects within the barrier. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.
 #colbreak()
-=== Whirlwind Path
+== Whirlwind Path
 Those who follow the Whirlwind Path delight in carving a bloody swath through their foes and anything that gets in their way. Nimble and unpredictable as a tornado, they leave a trail of wreckage behind them as they dance the deadly dance.
 
-==== Dance of Death
+=== Dance of Death
 Starting at 3rd level when you choose this Path, you can spend 1 STA as a reaction to entering difficult terrain, being restrained or grappled, to ignore any difficult terrain until the end of your turn or break free from a grapple or from restraint due to a creature or spell effect.
 
-==== Whirling Fury
+=== Whirling Fury
 Starting at 3rd level when you choose this Path, you can spend 2 STA to trigger Furious Blow when you hit with a subsequent attack and have already triggered Furious Blow this turn. When you do so, you cannot spend additional STA to increase the effect and do not gain Focus.
 
-==== Raging Leaps
+=== Raging Leaps
 Starting at 6th level, while you are raging you gain a fly speed equal to half your speed. You must end your turn in contact with a solid object (including a larger creature if you have succeeded at Climbing on a Larger Creature). Your speed also increases by an additional 10 feet.
 
 This fly speed increases to your full speed at 14th level.
 
-==== Unpredictable Nature
+=== Unpredictable Nature
 Starting at 10th level, your path has become as unpredictable as a tornado. You are immune to divination effects that would predict your actions, read your thoughts, or determine whether you are lying, as well as the charmed condition while you are raging.
 
 In addition, you can expend Focus to automatically succeed on an otherwise possible attempt to deceive someone about your intent or into giving you information.
 
-==== Flash Step
+=== Flash Step
 Starting at 14th level, your speed has increased enough so that it appears you can teleport short distances. When you move on your turn, you can choose to instead teleport to the chosen location as long as you have a clear path to the target location and it is not further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through.
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 
-== Warmage
+= Warmage
 
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.
 
@@ -2986,17 +2990,17 @@ Warmages in Noefra are most common in Auringon and Wyrmhold, although many natio
 Warmages use an intentionally strange spell and spell-slot progression. Their list does not contain spells above 5th level, but they do gain access to higher-level spell slots (albeit at a slightly reduced rate compared to normal full casters), allowing them to upcast their lower-level spells (especially with their Power Siphon feature) much more frequently and with greater effect. They're designed for _efficiency_, rather than cutting edge spells. This means they lean into the idea of making the most of their limited repertoire and substituting raw destructive power for wide versatility.
 ]
 
-=== Class Features
+== Class Features
 As a warmage, you gain the following class features
 
-==== Hit Points
+=== Hit Points
 #flush-block[
 - *Hit Dice:* 1d8 per warmage leve.
 - *Hit Points at 1st Level:* 8 + your Constitution modifie.
 - *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per warmage level after 1st
 ]
 
-==== Proficiencies
+=== Proficiencies
 #flush-block[
 - *Armor:* Light Armo.
 - *Weapons:* Simple weapons, rapiers, longbows.
@@ -3006,7 +3010,7 @@ As a warmage, you gain the following class features
 ]
 
 
-==== Equipment
+=== Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
 
 - (a) a simple weapon or (b) a martial weapon if proficient
@@ -3039,27 +3043,27 @@ You start with the following equipment, in addition to the equipment granted by 
     "20th", "+6", "Siphon Mastery",                        "20", "20", "5", "4", "3", "3", "3", "3", "2", "2", "1", "1",)
 ]
 
-=== Spellcasting
+== Spellcasting
 Your ability with spells is why you were trained. Your spells come by memorization and long practice.
 
 See Spells Rules for the general rules of spellcasting and the Spells Listing for the warmage spell list.
 
-==== Cantrips
+=== Cantrips
 At 1st level, you know three cantrips of your choice from the warmage spell list. You learn additional warmage cantrips of your choice at higher levels, as shown in the Cantrips column of the Warmage table.
 
-==== Spell Slots
+=== Spell Slots
 The Warmage table shows how many spell slots you have to cast your warmage spells of 1st level and higher. To cast one of these warmage spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
 For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast _burning hands_ using either slot.
 #colbreak()
-==== Spells Known of 1st Level and Higher
+=== Spells Known of 1st Level and Higher
 You know two 1st-level spells of your choice from the warmage spell list.
 
 The Spells Known column of the Warmage table shows when you learn more warmage spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
 
 Additionally, when you gain a level in this class, you can choose one of the Warmage spells you know and replace it with another spell from the Warmage spell list, which also must be of a level for which you have spell slots.
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 Intelligence is your spellcasting ability for your warmage spells, since the power of your magic relies on your ability to remember and flawlessly execute complex incantations in stressful situations. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warmage spell you cast and when making an attack roll with one.
 #flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Intelligence modifie.
@@ -3067,53 +3071,53 @@ Intelligence is your spellcasting ability for your warmage spells, since the pow
 ]
 
 
-==== Spellcasting Focus
+=== Spellcasting Focus
 You can use a melee weapon with which you are proficient as a spellcasting focus for your warmage spells but you must be holding it to do so.
 
-=== Squad Assignment
+== Squad Assignment
 All warmages are trained for specific assignments based on the type of squad they normally accompany into hostile situations. Choose between the Line Infantry, Special Forces, Artillery Squad, or Heavy Assault assignments.
 
 Your choice grants you features when you choose it at 1st level and again at 6th, 10th, 14th, and 18th level.
 
-=== Power Siphon
+== Power Siphon
 Starting at 2nd level, you have learned to siphon off some of the energies that would otherwise be wasted when you cast your warmage spells. When you cast a warmage spell of 1st level or higher, you gain a number of siphon motes equal to half the level of the slot expended, rounded up. You can have a number of motes equal to your level in this class at any one time. Any extras generated are lost. Your accumulated siphon motes are reset to zero when you finish a long rest.
 
 Siphon motes can be expended in many ways, and each Squad Assignment provides its own uses. The most fundamental use is to empower spells. When you cast a warmage spell of 1st level or higher, you can cast it as if from a higher level slot by expending a number of siphon motes equal to twice the difference between the intended spell slot and the slot you expended. The spell acts as if it was cast out of that higher slot, but you do not regain motes from the cast or expend that higher-level slot. You cannot use this feature to upcast a spell more than one spell level above the highest level of slots you have.
 
-=== Piercing Spell
+== Piercing Spell
 Starting at 3rd level, you have learned to augment your spells to overcome some resistances and immunities. When you cast a warmage spell of 1st level or higher that deals damage, you can expend one siphon mote to ignore defenses such as Magic Resistance. If the target has immunity to the damage type, you can choose to instead deal damage of a type they are not immune to. When you do so, the target takes 1/4 of the normal damage of the spell.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
 
-=== Skill Tricks
+== Skill Tricks
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you learn one skill trick you qualify for. Additionally, each time you gain a new skill trick, you can exchange one skill trick you know for a different one you qualify for at that level.
 
-=== Extra Attack
+== Extra Attack
 Starting at 5th level, you can attack twice instead of once when you take the Attack action on your turn. You can choose to cast a warmage cantrip that has a casting time of one action instead of one (and only one) of the weapon attacks.
 
-=== Spell Efficiency
+== Spell Efficiency
 Starting at 7th level, you siphon one mote when you cast a warmage cantrip.
 
-=== Magic Sensitivity
+== Magic Sensitivity
 Starting at 9th level, you have become sensitive to the flows of magic around you. You learn _identify_. Additionally, you learn _detect magic_ (if you didn't already know it). These spells no longer count against your limit of spells known and you can cast them at will without spending spell slots to do so.
 
-=== Dualcasting
+== Dualcasting
 At 11th level you can expend a siphon mote when you cast a spell. When you do so, the cast time changes to a Bonus Action. As usual, any other spell you cast on the same turn you do this must be a cantrip with a casting time of one action.
 
-=== Focused Spell
+== Focused Spell
 At 15th level, you've chosen one spell to specialize in. Choose one of your warmage spells. When you cast that spell, it always acts as if it is one level higher in all respects except the spell slot needed to cast it. You can siphon motes from it as if it was the higher level; when you expend motes to further enhance it, it acts as if it was the higher level for calculating the cost.
 
-=== Siphon Mastery
+== Siphon Mastery
 At 20th level, you are even better at using siphoned energy. When you would gain motes normally, you gain twice as many as long as you have less than half your maximum.
 
-== Squad Assignments
-=== Line Infantry
+= Squad Assignments
+== Line Infantry
 Line Infantry squads are in the thickest of the battle and often ordered to hold objectives against overwhelming force. Warmages assigned to Line squads have one primary mission--keep their squad alive against whatever the enemy throws at them.
 
-==== Bonus Spells
+=== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
 #dndtab("Infantry Bonus Spells",
   "Warmage Level", "Spell",
@@ -3124,30 +3128,30 @@ You gain the following spells known at the indicated levels. These do not count 
   "9th", [_mass cure wounds_]
 )
 
-==== Armored Caster
+=== Armored Caster
 When you pick this assignment at first level, you gain proficiency in medium armor and shields. You can use your shield as a focus for your spells and do not need a separate free hand to manipulate material components while wielding a shield.
 
-==== Martial Specialist
+=== Martial Specialist
 You gain proficiency in martial weapons.
 
-==== Warding Motes
+=== Warding Motes
 Starting at 6th level, you can expend your siphon motes to shield your allies. As a bonus action on your turn, you can expend one or more motes to create a spherical protective barrier around you until the end of your next turn. This barrier has a radius of 10 ft and hit points equal to the number of motes expended times your proficiency bonus. The barrier has two effects. First, when an effect targets a point in space inside the barrier, it targets the surface of the barrier instead. Second, when a creature within the barrier would take damage from a source outside the barrier, the barrier absorbs that damage as long as it has hit points remaining. If multiple creatures would take damage from the same effect, you can split the absorption effect among those creatures as you choose.
 
 In addition, when you cast any of your Line Infantry spells while the barrier is active, you can designate an additional ally within the warded zone to receive the benefits of that spell without further cost (including expending additional costly components). If the spell requires concentration and your concentration is broken, both instances of the spell are lost.
 
-==== Enhanced Concentration
+=== Enhanced Concentration
 Starting at 10th level, you gain proficiency in Constitution saving throws.
 
-==== Enhanced Spell Disruption
+=== Enhanced Spell Disruption
 Starting at 14th level, when you cast _counterspell_ or _dispel magic_ and must make a check to see if it succeeds, you do so with advantage.
 
-==== Enhanced Piercing Spell
+=== Enhanced Piercing Spell
 Starting at 18th level, when you use your Piercing Spell feature, the target loses any resistance to the damage type dealt until the beginning of your next turn; if it was immune, it loses that immunity and gains resistance to that damage type until the beginning of your next turn.
 
-=== Special Forces
+== Special Forces
 The special forces squads are infiltrators, taking on missions deep into enemy territory. Stealth and overwhelming power from surprise are the name of the game. Warmages attached to these squads train to enhance both aspects.
 
-==== Bonus Spells
+=== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
 
 #dndtab("Special Forces Bonus Spells",
@@ -3159,37 +3163,37 @@ You gain the following spells known at the indicated levels. These do not count 
   "9th", [_telepathic bond_]
 )
 
-==== Bonus Proficiencies
+=== Bonus Proficiencies
 You gain proficiency in Stealth. If you already had it, you can instead apply twice your proficiency bonus when you make a Dexterity (Stealth) check. You also gain proficiency in Athletics.
 
 You also learn one additional language of your choice.
 
-==== Magical Assassin
+=== Magical Assassin
 You learn to apply your magical talents to hone your weapon strikes. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
 
 You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.
 
 The extra damage dealt increases by 1d6 when you reach each of 5th, 9th, 13th, and 17th levels. Starting at 9th level, you can also deal this extra damage when you hit with a warmage cantrip requiring an attack roll.
 
-==== Keen Motes
+=== Keen Motes
 Starting at 6th level, you can expend one or more of your siphon motes as a bonus action. When you do so, choose a number of allies within 30 feet of you equal to the motes you expended. Chosen allies deal an extra 1d4 force damage when they hit with a weapon attack for the next minute.
 
-==== Enhancing Motes
+=== Enhancing Motes
 Starting at 6th level, you have also learned to bolster your allies in other ways. Target an ally within 30 feet of you and expend a mote as a bonus action. That ally can add 1d4 to all ability checks and saving throws it makes for the next minute. Only one ally can be enhanced in this fashion at a time.
 
-==== Bolstered Enhancement
+=== Bolstered Enhancement
 Starting at 10th level, your Keen and Enhancing Motes are more effective. When you use your Keen Motes ability, the extra damage dealt is equal to 2d4 instead of 1d4. When you use your Enhancing Motes ability, you can expend extra motes to target a number of allies within 30 feet of you equal to the number of motes expended (instead of one).
 
-==== Enhanced Infiltration
+=== Enhanced Infiltration
 Starting at 14th level, when an ally within 30 feet of you makes a Dexterity (Stealth) check or a Charisma (Deception) check, you can use your reaction to grant advantage on the check.
 
-==== Spellstrike
+=== Spellstrike
 Starting at 18th level, when you cast a spell as a bonus action using your Dualcasting ability and use your action to Disengage, Hide, or Dodge, you can make a weapon attack before or after the action.
 
-=== Artillery Squad
+== Artillery Squad
 Like the squads they're attached to, Artillery Squad warmages specialize in raining death and destruction down on their foes from a distance. "There's no kill like overkill" is the motto of many such a mage.
 
-==== Bonus Spells
+=== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out.
 
 #dndtab("Artillery Bonus Spells",
@@ -3201,25 +3205,25 @@ You gain the following spells known at the indicated levels. These do not count 
   "9th", [_wall of force_]
 )
 
-==== Sculpt Spell
+=== Sculpt Spell
 Beginning at 1st level, you can create pockets of relative safety within the effects of your warmage spells. When you cast a warmage spell that affects creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.
 
-==== Widening Motes
+=== Widening Motes
 Starting at 6th level, when you cast a warmage spell that targets a point in space or has a range of Self (X feet), you can expend one or more siphon motes (in addition to any used to heighten the spell). When you do so, the number that defines the size of the affected area increases by 5 feet for every mote expended. For line effects, the length of the line increases. Thus, a 20 feet sphere becomes a 25 feet sphere if you spend one mote, 30 feet if you spend two. An aura of Self (10 ft) becomes Self (20 ft) on spending two motes. 
 
-==== Empowered Evocation
+=== Empowered Evocation
 Starting at 10th level, you can add your Intelligence modifier to one damage roll of any warmage spell you cast.
 
-==== Relocate
+=== Relocate
 Starting at 14th level, when you take the Disengage action, you can move half your speed as part of the action.
 
-==== Explosive Dualcasting
+=== Explosive Dualcasting
 Starting at 18th level, you can rain death down on enemies even faster. When you use your Dualcasting feature, you can cast any warmage spell of 5th level or lower (including mote-based upcasting) that deals damage and has a cast time of one action with your action on that same turn instead of just a cantrip.
 
-=== Heavy Assault Squad
+== Heavy Assault Squad
 Heavy Assault squads are those who specialize in fighting monstrous and magical beasts; they specialize in taking down the largest, most heavy hitting enemies around. The mages who serve in these squads are self-sufficient and bolster their own strength by sapping the life of their foes.
 
-==== Bonus Spells
+=== Bonus Spells
 You gain the following spells known at the indicated levels. These do not count against your spells known limit but cannot be traded out. Spells marked with (\*) are found in the New Spells section in this document.
 
 #dndtab("Assault Bonus Spells",
@@ -3231,28 +3235,28 @@ You gain the following spells known at the indicated levels. These do not count 
   "9th", [_enervation_]
 )
 
-==== Armored Caster
+=== Armored Caster
 When you pick this assignment at level one, you gain proficiency in medium armor and shields. You can use your shield as a focus for your spells and do not need a separate free hand to manipulate material components while wielding a shield.
 
-==== Bonus Cantrip
+=== Bonus Cantrip
 You learn _chill touch_ as a warmage cantrip. It does not count against your limit of cantrips known.
 
-==== Drain Life
+=== Drain Life
 Starting when you pick this assignment at level one, you drain life from your dying foes. When an enemy is reduced to zero hit points within 30 feet of you that you damaged with a weapon attack or warmage spell since the beginning of your previous turn, you gain temporary hit points equal to your level.
 
-==== Healing Motes
+=== Healing Motes
 Starting at 6th level, you have learned to heal others with life stolen from your foes. When you damage an enemy with a spell you cast, you can expend a siphon mote to heal an ally you can see within 30 feet of you for 1d4 per mote expended.
 
-==== Necrotic Recoil
+=== Necrotic Recoil
 Starting at 10th level, as long as you have temporary hit points from your Drain Life feature, attacks that hit you deal necrotic damage equal to your level to the attacker.
 
-==== Inured to Rot
+=== Inured to Rot
 Starting at 14th level, you gain resistance to necrotic damage.
 
-==== Spellshroud
+=== Spellshroud
 Starting at 18th level, when you cast a spell as a bonus action using your Dualcasting feature, you can designate an enemy you can see within 30 feet of you. Any attacks that enemy makes against you until the beginning of your next turn are made at disadvantage.
 
-== Warmage Spell List
+= Warmage Spell List
 Note: the warmage is intentionally limited to spells of 5th level and lower and have a fairly restricted "utility belt" of spell choices. They are intended to use upper slots for upcasting lower-level spells and mostly cast damaging/direct combat spells. This is why they have Extra Attack and other features (relative to a wizard). Spells marked with (\*) are new and found in the Spells section.
 
 #flush-block[
@@ -3360,7 +3364,7 @@ Note: the warmage is intentionally limited to spells of 5th level and lower and 
 Contained here are 17 new spells, some of which were taken from _Kobold Press's Deep Magic 5e: Clockwork Magic_ and are used under the Open Game License (OGL 1.0a). That license is presented at the end of this document. All other content is either original or derived from the SRD as marked; both are licensed CC-BY-4.0. Also contained here are modified versions of existing SRD spells, primarily those considered particularly weak that would be flavorful for the classes presented in this document.
 
 == New Spells
-==== Armored Heart
+=== Armored Heart
 _1st level abjuration_
 #flush-block[
 - _Components_: S, M (a small piece of metal plate)
@@ -3373,7 +3377,7 @@ _1st level abjuration_
 
 The creature touched gains resistance to bludgeoning, piercing, psychic, and slashing damage until the end of your next turn.
 
-==== Drain Vitality
+=== Drain Vitality
 _2nd level necromancy_
 #flush-block[
 - _Components_: V, S, M (a leech)
@@ -3390,7 +3394,7 @@ In addition, you regain hit points equal to half of the damage roll. Any healing
 
 *At Higher Levels:* When you cast this spell using a spell slot of 4th or higher level, the damage dealt and healing increases by 1d6 for every two spell levels above 2nd.
 
-==== Enchanted Strike 
+=== Enchanted Strike 
 _1st level divination_
 #flush-block[
 - _Components_: S
@@ -3402,7 +3406,7 @@ _1st level divination_
 ]
 You extend your hand and point a finger at a target you can see in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (due to the Precise Weapon Specialization feature or some other effect), your critical hit range increases by 1 instead.
 
-==== Fire Web
+=== Fire Web
 _4th level evocation_
 #flush-block[
 - _Components_: V, S
@@ -3417,7 +3421,7 @@ As you strike both palms down upon the ground, a web of flame crackles out aroun
 
 *At Higher Levels.* When you cast this spell using a spell slot of 5th level or higher, you create one additional streak for each spell level above 4th.
 
-==== Flash Freeze
+=== Flash Freeze
 _1st level evocation_
 #flush-block[
 - _Components_: V, S
@@ -3432,7 +3436,7 @@ The air around a creature you can see within range takes on the aspect of ice. T
 
 *At Higher Levels.* When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for every spell slot level above 1st.
 
-==== Gear Barrage
+=== Gear Barrage
 _3rd level conjuration_
 #flush-block[
 - _Components_: S, M (a small gear)
@@ -3445,7 +3449,7 @@ _3rd level conjuration_
 
 You create a burst of magically-propelled gears. Each creature within a 60 ft cone must make a Dexterity saving throw, taking 5d8 slashing damage on a failed save or half as much on a success.
 
-==== Gear Shield
+=== Gear Shield
 _2nd level abjuration_
 #flush-block[
 - _Components_: S, M (a small gear)
@@ -3458,7 +3462,7 @@ _2nd level abjuration_
 
 You cause a handful of gears to orbit the target's body. These shield the spell's target from incoming attacks and effects. The creature has resistance to all damage from the first source of damage taken since the beginning of their last turn.
 
-==== Gremlins
+=== Gremlins
 _4th level enchantment_
 #flush-block[
 - _Components_: S, M (a piece of wire)
@@ -3471,7 +3475,7 @@ _4th level enchantment_
 
 You target a creature you can see within range and curse it with bad mechanical luck for the duration unless it succeeds on an Intelligence saving throw. While cursed, attacks against the creature have advantage, it has disadvantage on all ability checks and saving throws made with Dexterity, Intelligence, or Wisdom, and it must make a Wisdom saving throw whenever it tries to cast a spell or do any other complex action, losing the action on a failed save. Cursed creatures can attempt the Intelligence saving throw at the end of each of their turns, ending the effect on a success.
 
-==== Headshot
+=== Headshot
 _1st level enchantment_
 #flush-block[
 - _Components_: S
@@ -3484,7 +3488,7 @@ _1st level enchantment_
 
 You enchant your next shot with a ranged weapon until the end of your turn, granting you advantage on the attack. If the attack hits and the higher d20 roll was 10 or above, the damage done by the weapon is maximized.
 
-==== Lightning Charge
+=== Lightning Charge
 _1st level transmutation_
 #flush-block[
 - _Components_: M (a piece of amber and a piece of fur)
@@ -3497,7 +3501,7 @@ _1st level transmutation_
 
 Until the end of your turn, if you end your movement within 5 feet of an enemy, you can discharge the built-up energy from your movement into them. The target must make a Constitution saving throw. On a failed save, the target takes 1d4 lightning damage for every 5 feet of movement you used this turn and is knocked prone. On a success, they take half as much damage and are not knocked prone.
 
-==== Machine's Load
+=== Machine's Load
 _1st level transmutation_
 #flush-block[
 - _Components_: S, M (a small lead weight)
@@ -3512,7 +3516,7 @@ You touch a willing creature and give it the capacity to carry, lift, push, or d
 
 *At Higher Levels:* When you cast this spell using a spell slot higher than 1st, you can touch one additional creature for each spell level.
 
-==== Soul of the Machine
+=== Soul of the Machine
 _3rd level abjuration_
 #flush-block[
 - _Components_: V, S
@@ -3525,7 +3529,7 @@ _3rd level abjuration_
 
 One willing creature you touch becomes immune to being charmed, frightened, and cannot gain levels of exhaustion, and they gain resistance to psychic damage for the duration. The effects of any existing levels of exhaustion are suppressed for the duration, but resume once the spell ends. In addition, they become immune to any spell or effect that would change their shape or take control of their actions (such as _confusion_).
 
-==== Spin
+=== Spin
 _2nd level enchantment_
 #flush-block[
 - _Components_: V, S, M (a top)
@@ -3538,7 +3542,7 @@ _2nd level enchantment_
 
 You target a creature within 60 feet and tell it to spin. The creature must make a Wisdom saving throw. On a failed save the creature spins in place for the duration of the spell. While spinning, the creature has disadvantage on all attack rolls and ability checks and their speed is reduced to 0. A spinning creature repeats the Wisdom saving throw at the end of each of its turns, ending the effect on a success. A creature that has spun for 1 round or more becomes dizzy and has disadvantage on attack rolls and ability checks until one round after it stops spinning.
 
-==== Steam Blast
+=== Steam Blast
 _4th level evocation_
 #flush-block[
 - _Components_: V, S, M (a drop of water)
@@ -3553,7 +3557,7 @@ You unleash a burst of superheated steam in a 15-foot radius centered on you. Al
 
 *At Higher Levels:* When you cast this spell using a spell slot of 5th level, the damage increases to 6d8 and the push distance increases to 15 feet. For every spell slot level higher, the damage increases by 1d8.
 
-==== Tap Vitality Reserves
+=== Tap Vitality Reserves
 _3rd level necromancy_
 #flush-block[
 - _Components_: V, S
@@ -3572,7 +3576,7 @@ In addition, if they expend two hit dice, they can choose one of the following.
 
 A creature can only benefit from this spell once before finishing a short or long rest.
 
-==== Tick Stop
+=== Tick Stop
 _1st level enchantment_
 #flush-block[
 - _Components_: V, S, M (a small shiny object on a string)
@@ -3585,7 +3589,7 @@ _1st level enchantment_
 
 The targeted creature must make a Wisdom saving throw. On a failed save, it can take either an action or a bonus action on each of its turns for the duration and cannot take reactions. If it attacks, it can only make a single attack regardless of how many attacks it normally would be able to make. If it casts a spell, it must roll a d20. On a 10 or lower, it must use its action on the next turn to cast the spell, at which point it takes effect. Affected creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-==== Yoink
+=== Yoink
 _1st level evocation_
 #flush-block[
 - _Components_: V, S, M (a tiny replica grappling hook and thread)
@@ -3603,18 +3607,18 @@ Alternatively, you can use this spell to grab ahold of a fixed object that can s
 == Modified SRD Spells
 The following spells from the 5.1 SRD have been altered, mostly to enhance them. Such modifications apply to all classes that have access to them, at the GM's discretion.
 
-==== Barkskin
+=== Barkskin
 Changes:
 - No longer concentration.
 - Now scales with spell slot, gaining +1 minimum AC from a 3rd level spell slot and another (to 18 minimum) at 5th level.
 - Gives (2#sym.times spell level) temporary hit points at the start of each turn.
 
-==== Find Traps
+=== Find Traps
 Changes:
 - creates visible highlight around trap area for 1 minute
 - also includes anything that would unexpectedly cause damage or cause negative conditions
 
-==== Flame Blade
+=== Flame Blade
 Changes:
 - Can be used as a regular scimitar dealing only fire damage, dealing an extra (spell level / 2) fire damage per hit.
 - Can be given to another creature (as a scimitar). It disappears and returns to the caster if dropped or thrown.
@@ -4144,7 +4148,7 @@ Full Round (takes effect at the beginning of the performer's next turn, requires
 ==== Duration
 Some incantations have effects that naturally expire. Those will have a Duration tag in their summary line. This duration starts once the incantation's effects begin (so a 1 hr performance time and a 1 hour duration mean that the effect will end 2 hours after the incantation began).
 
-== Alphabetical with rarity
+== Alphabetical
 #flush-block[
 - Abjure Espionage (Uncommon)
 - Alarm (Common)
@@ -4693,7 +4697,6 @@ If the target has been dead for more than 100 years or the body is destroyed, th
 - _Cast Time_: Full roun.
 - _Tags_: Focus (a predetermined object given to the target)
 - _Duration_: 1 minute
-
 ]
 
 You converse with a creature who possesses a token you willingly gave away as an identifying mark. You did not necessarily have to give it to that particular person, as you are sending to the bearer of the mark, whoever that might be. When you complete the incantation, you know if the person holding it is familiar to you, and if so, you know who it is, and can abort the incantation at that point. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The incantation enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.

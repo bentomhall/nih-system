@@ -1,7 +1,6 @@
-
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
-  top + center,
+  auto,
   scope: "parent",
   float: true,
   body,

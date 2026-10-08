@@ -7,7 +7,8 @@
     cover: none,
     paper: "us-letter",
     logo: none,
-    fancy-author: true
+    fancy-author: true,
+    bg: none
 )
 
 #let wide(body) = place(
@@ -41,28 +42,27 @@ See system changes (Appendix A) for a semi-complete listing of major changes fro
 That word is used throughout these documents, and deserves a little more reflection. "Magic", as used here, is all those things that separate the fictional world in which the game takes place from the real world in which the players act. Spells? Magic. Dragons? Magic. Heroic mortals breaking "normal" constraints? Magic. #emph[It's magic all the way down.] Unlike Dungeons and Dragons, I attempt to be more precise in my use of this term. So abilities that counter #emph[specific forms] of magic will be written precisely.
 ]
 
-=== Core Assumptions
 The core assumptions are that:
 #flush-block[
 - *The world is thoroughly magical.* Magic is in and through everything and everyone. There is no mundane (in the sense of "bound by all the principles of real world"), at least as far as adventurers and adventuring goes.
 - *Adventuring is normalized.* Adventurers are a known social "group", even if a disreputable one.
 - *The world responds to mortal efforts.* In these sorts of worlds, training really hard physically _is_ a form of access to magical power just as much as learning magic gestures and words in a book. But both of these plateau quite hard for most people.
-- *The world has its own logic, not real-world science.* Players should be able to rely on _surface_ similarity between the real world and the fictional one. Things will fall when dropped. Water flows downhill. Paper burns and fire hurts. Fire turns water to steam. If it looks like a cow, walks like a cow, and moos like a cow, it's probably a cow. But the _reasons_ why these happen are not at all guaranteed to be the same. The further and deeper you get into modern scientific understanding of the world, the less this will apply to the fictional world. A fire spell will burn flammable things...but not because of exothermic oxidation reactions. There might not even be oxygen, and fires might burn just fine even in a "vacuum"...if such a thing even exists. Atoms, molecules, cells, DNA; these sorts of things are not at all guaranteed to exist.
+- *The world has its own logic, not real-world science.* Players should be able to rely on _surface_ similarity between the real world and the fictional one. Things will fall when dropped. Water flows downhill. Paper burns and fire hurts. Fire turns water to steam. If it looks like a cow, walks like a cow, and moos like a cow, it's probably a cow. But the _reasons_ why these happen are not at all guaranteed to be the same. The further and deeper you get into modern scientific understanding of the world, the less this will apply to the fictional world. A fire spell will burn flammable things, but not because of exothermic oxidation reactions. There might not even be oxygen, and fires might burn just fine even in a "vacuum", but such a thing might not exist. Atoms, molecules, cells, DNA; these sorts of things are not at all guaranteed to exist.
 - *PCs are among the few that break the normal (soft) limits.* Most people in the world are relatively low power, and will never grow much further. PCs are not bounded in the same way.
 - *World-ending threats are rare, but problems are common.* Most threats a party will face don't have whole-world-changing consequences. But they do change the local world.
-- *PCs change the world...but not by simply pushing character-sheet buttons.* It's expected that the outcome of the PCs adventure will be changes to the status quo. The world _should_ react to their actions. But the PCs don't have powers that allow them to directly do that on the large scale. Large-scale changes happen because of the relationships the PCs form with others, the movements they support, and the people they affect.
-- *PCs are usually the underdogs.* Either due to numbers (the enemy has an army) or due to individual power. PCs generally win against significant foes not by overwhelming the opponents with bigger numbers but by teamwork, guile, good strategy, finding the opponents' weak spots, building alliances with others, etc.
-- *Accuracy is bounded.* What does this mean? It means that attack bonuses, armor class, and saving throw and ability check DCs and modifiers are not assumed to grow significantly (relative to the d20's effect) with level. They may change and grow, but it should be hard if not impossible to "move off the d20" permanently in most cases. Monsters that hit PCs at level 1 should still be able to hit some appreciable fraction of the time against level 20 PCs, even if that fraction is smaller. Un-saveable saving throws shouldn't usually happen unless the PC or monster has a strongly negative modifier. Neither should "unmissable" attacks unless class features or magic is involved, and then rarely. PCs and monsters scale mostly in three ways: (a) having more health to absorb hits and stay standing, (b) dealing more damage (usually via more attacks rather than bigger single attacks, but this varies), and (c) having abilities that give different ways to approach the problem entirely (horizontal growth). As a result of this, magic items and spells no longer give +1 (etc) to AC, saving throw DCs, or attack rolls. Such passive stacking bonuses are rare if they exist at all.
+- *PCs change the world, but not by simply pushing character-sheet buttons.* It's expected that the outcome of the PCs adventure will be changes to the status quo. The world _should_ react to their actions. But the PCs don't have powers that allow them to directly do that on the large scale. Large-scale changes happen because of the relationships the PCs form with others, the movements they support, and the people they affect.
+- *PCs are usually the underdogs.* Either due to numbers (the enemy has an army) or due to individual power. PCs generally win against significant foes not by overwhelming the opponents with sheer power but by teamwork, guile, good strategy, finding the opponents' weak spots, building alliances with others, etc.
+- *Accuracy is bounded.* What does this mean? It means that attack bonuses, armor class, and saving throw and ability check DCs and modifiers are not assumed to grow significantly (relative to the d20's effect) with level. They may change and grow, but it should be hard if not impossible to move off the d20 (make the roll irrelevant) permanently in most cases. Monsters that hit PCs at level 1 should still be able to hit some appreciable fraction of the time against level 20 PCs, even if that fraction is smaller. Un-saveable saving throws shouldn't usually happen unless the PC or monster has a strongly negative modifier. Neither should unmissable (hit on a roll of 2+) attacks unless class features or magic is involved, and then rarely. PCs and monsters scale mostly in three ways: (a) having more health to absorb hits and stay standing, (b) dealing more damage (usually via more attacks rather than bigger single attacks, but this varies), and (c) having abilities that give different ways to approach the problem entirely (horizontal growth). As a result of this, magic items and spells no longer give +1 (etc) to AC, saving throw DCs, or attack rolls. Such passive stacking bonuses are rare if they exist at all.
 ]
 
 
 == How to Play
 NIH requires one player to assume the role of Game Master (hereafter GM), while the remaining players (usually 2-4 in number) create and control individual characters, called Player Characters (PCs) or "the party". It's assumed that the PCs will work together cooperatively. The basic unit of the game is the party, not the individual. The GM's role is several-fold:
 
-- He voices and decides the actions for all the non-Player Character characters (NPCs, for short). If the party is fighting someone, the GM makes decisions for that antagonist. This doesn't mean the GM is antagonistic toward the _players_ or is trying to kill the PCs, but the characters he or she controls most certainly may be antagonists.
-- The GM is the voice of the setting and the narrative. Nothing happens in-game until he narrates it, and he is the eyes through which the players experience the world and the story they are collectively creating. Which makes it imperative that the GM is not biased toward or against any of the players and should, when speaking as the "voice of the world", never lie to the players. NPCs may lie and try to deceive, the GM as the GM should not. Of course, when illusions and compulsions are in play, what a PC sees or experiences may not be real. But what is described should be what the PC experiences.
+- The GM voices and decides the actions for all the non-Player Character characters (NPCs, for short). If the party is fighting someone, the GM makes decisions for that antagonist. This doesn't mean the GM is antagonistic toward the _players_ or is trying to kill the PCs, but the characters he or she controls most certainly may be antagonists.
+- The GM is the voice of the setting and the narrative. Nothing happens in-game until the GM narrates it, and the GM is the eyes through which the players experience the world and the story they are collectively creating. Which makes it imperative that the GM is not biased toward or against any of the players and should, when speaking as the voice of the world, never lie to the players. NPCs may lie and try to deceive, the GM as the GM should not. Of course, when illusions and compulsions are in play, what a PC sees or experiences may not be real. But what is described should be what the PC experiences.
 - The GM is the rules engine for the game. These rules are inputs and guidelines, not mandates. It's the GM's role to decide how, when, and even if the rules apply and to adjust on the fly. Many GMs rely on group consensus for rule modifications and rulings, but at the end of the day, the GM is the final decider. If a player says that his PC acts a certain way, the GM is responsible for deciding how to execute that action and what success or failure looks like, as well as narrating the result. 
-- Often, the GM is responsible for coming up with the world and/or the set of events surrounding the PCs. Unlike a video game, there may not be a "main quest" that the PCs must follow, but the GM is the one placing things in the world for them to find and interact with.
+- Often, the GM is responsible for coming up with the world and/or the set of events surrounding the PCs. Unlike a video game, there may not be a main quest that the PCs must follow, but the GM is the one placing things in the world for them to find and interact with.
 
 === The Basic Game Loop
 The most basic, most generic pattern of play is as follows:
@@ -73,14 +73,12 @@ The most basic, most generic pattern of play is as follows:
   - An indication of what the player wants to have happen (a goal)
   - An indication of how the player character is achieving that goal (a method)
   - And any pertinent facts, such as abilities being used, amounts of bribes being offered, etc. that may change the resolution of the action.
-  
 - The GM, often after discussing details with the player, decides how the action will be resolved. This often involves some sort of die roll for randomization purposes. These rules are full of resolution mechanics such as attack rolls, ability checks, saving throws, etc. Many actions don't need any explicit resolution method. Instead, those actions just succeed. It is not expected that you have to roll to tie your shoes in the morning. Actions that have little opposition (chance of failure), are a core fictional competency of the character in question (the sailor can climb masts in calm or even normally-stormy weather), or where failure doesn't have meaningful consequences that change the situation (picking a practice lock in the safety of your home) rarely, if ever, call for active resolution.
 - Once the action is resolved, the GM narrates the changes to the situation and the loop continues.
 
 Many times, multiple actions can be resolved simultaneously and the GM may ask multiple players for their actions and decide how to order their resolutions. The first person to speak doesn't necessarily go first, because that depends on the entire situation.
 
 At times when exact sequencing is important (such as combat), the GM may call for initiative checks (see initiative). When in initiative order, players take actions from highest initiative downward. In the game world, they're all acting within the same short period of time---one complete pass through the initiative order, called a *round* represents about 6 seconds of game time---but they are sequenced for ease of play.
-
 
 === Rolling the Dice
 The role of dice (pun intended) in NIH is to provide a way of resolving actions when the outcome is uncertain and the outcomes are interesting. The dice never dictate the result but shouldn't be called on if one of the outcomes isn't acceptable. NIH calls for four major categories of dice rolls: attack rolls, saving throws, ability checks, and damage rolls. More occasionally, specific effects may call for rolling specific die, usually to pick at random from a table of possible results. Unlike other rolls, those table-based rolls cannot generally be modified by abilities or features.
@@ -112,31 +110,27 @@ Play is roughly divided into four *stages of play*, each spanning about 5 levels
 
 It is important to keep in mind that player characters are adventurers first and foremost. Even a high-level character is not a world-class expert at anything except adventuring. Classes and proficiencies are _adventuring-focused_ skill-sets and powers. Even a level 20 arcanist with expertise in Arcana is not a world-class theoretical mage; having tool proficiency and high level doesn't make one a master-craftsman. Your time and learning has been in the adventuring applications, and of that you are truly a master (at higher levels).
 
-*Journeyman Stage (Levels 1-4).*
-The first stage is that of the *journeyman adventurer*. This covers the introduction to adventuring life; the events that happened after you left your earlier way of life and set out on the path to become a true hero. Journeyman adventurers are not nobodies. They're stronger, tougher, faster, and generally more capable than the average militiaman or town guard, for instance. But they're just learning the ways of adventuring. At the early stages, a few bandits or an ogre with some goblin goons poses a serious threat; they might end this stage facing down a nest of werewolves or a succubus and a demon cult. The problems they face and effect they have is generally local. It might affect a village, a small region, a caravan or a town. They're not well known except to those that they personally help. Bards don't sing songs about them; if they've decided on a group name, the general reaction is "who?" Comparatively, they're action heroes with minor fantastic powers. Permanent magic items at this stage are rare and often cosmetic, although consumable items are not super uncommon.
+*Journeyman Stage (Levels 1-4).* The first stage is that of the *journeyman adventurer*. This covers the introduction to adventuring life; the events that happened after you left your earlier way of life and set out on the path to become a true hero. Journeyman adventurers are not nobodies. They're stronger, tougher, faster, and generally more capable than the average militiaman or town guard, for instance. But they're just learning the ways of adventuring. At the early stages, a few bandits or an ogre with some goblin goons poses a serious threat; they might end this stage facing down a nest of werewolves or a succubus and a demon cult. The problems they face and effect they have is generally local. It might affect a village, a small region, a caravan or a town. They're not well known except to those that they personally help. Bards don't sing songs about them; if they've decided on a group name, the general reaction is "who?" Comparatively, they're action heroes with minor fantastic powers. Permanent magic items at this stage are rare and often cosmetic, although consumable items are not super uncommon.
 
-*Adventurer Stage (Levels 5-10).*
-This is the "meat" of adventuring. By the end of this stage, you've gained a solid reputation in an area that might be as large as a nation; national and international organizations are paying attention to you. The kings' champions and most top mages are of comparable power to a high-end adventurer; you've reached the peak of what people normally can do, but aren't legends. Dedicated adventurer-watchers know your names. Threats as large as a vampire or even a rogue archmage or marauding young dragon (or even a weaker adult) might be the capstone of this stage. Comparatively, you're a street-level superhero. Way stronger, tougher, faster, smarter, and more powerful than the average man, but facing those high-power threats with guile and tricks rather than a knock-down brawl. By the end of this stage, the purely mundane is being left behind and everyone is using both mundane and aetheric skills to adventure. Travel becomes much quicker, whether by flight, wondrous mounts, teleportation, or other means. Travel to other planes may happen, but it's rare and generally uses fixed portals. You start to acquire permanent magic items of various degrees of power, as well as find information leading toward constructing new ones. 
+*Adventurer Stage (Levels 5-10).* This is the "meat" of adventuring. By the end of this stage, you've gained a solid reputation in an area that might be as large as a nation; national and international organizations are paying attention to you. The kings' champions and most top mages are of comparable power to a high-end adventurer; you've reached the peak of what people normally can do, but aren't legends. Dedicated adventurer-watchers know your names. Threats as large as a vampire or even a rogue archmage or marauding young dragon (or even a weaker adult) might be the capstone of this stage. Comparatively, you're a street-level superhero. Way stronger, tougher, faster, smarter, and more powerful than the average man, but facing those high-power threats with guile and tricks rather than a knock-down brawl. By the end of this stage, the purely mundane is being left behind and everyone is using both mundane and aetheric skills to adventure. Travel becomes much quicker, whether by flight, wondrous mounts, teleportation, or other means. Travel to other planes may happen, but it's rare and generally uses fixed portals. You start to acquire permanent magic items of various degrees of power, as well as find information leading toward constructing new ones. 
 
-*Hero Stage (Levels 11-16).*
-This stage is where the world really starts to know your names and deeds. People as powerful as kings and regional leaders pay attention to where you go and with whom you ally yourselves. Your growth definitely starts to slow down here, although you are starting to learn the introductory legendary-effects, feats very few are capable of. You've transcended what is normal; broken beyond the plateau that most face no matter how they try. You may face adult dragons, minor demon or fiendish lords, aberrant creatures from Beyond, or elemental threats that promise to reshape continental affairs. Much of your large-scale power, however, comes from your reputation and relationships (ie the allies you've made along the way). And the major enemies (individuals and factions) you've made may now be gathering together in a last attempt to impede your efforts. Travel to other planes is more regular and more controllable, but still not effortless. Overland travel is rarely much of a challenge in the Mortal plane; only the most barren and hostile environments even pose a small challenge. Comparatively, you're still low-power superheroes; much of the growth is horizontal, developing new capabilities. Everyone is firmly planted in both mundane and magical worlds by this point. By the end of this stage, the stakes are set for the final showdown, the culminating events of the campaign. Magic items, while not _common_, are prevalent here. Most characters have several permanent items of significant power. Possibly even ones with histories of their own.
+*Hero Stage (Levels 11-16).* This stage is where the world really starts to know your names and deeds. People as powerful as kings and regional leaders pay attention to where you go and with whom you ally yourselves. Your growth definitely starts to slow down here, although you are starting to learn the introductory legendary-effects, feats very few are capable of. You've transcended what is normal; broken beyond the plateau that most face no matter how they try. You may face adult dragons, minor demon or fiendish lords, aberrant creatures from Beyond, or elemental threats that promise to reshape continental affairs. Much of your large-scale power, however, comes from your reputation and relationships (ie the allies you've made along the way). And the major enemies (individuals and factions) you've made may now be gathering together in a last attempt to impede your efforts. Travel to other planes is more regular and more controllable, but still not effortless. Overland travel is rarely much of a challenge in the Mortal plane; only the most barren and hostile environments even pose a small challenge. Comparatively, you're still low-power superheroes; much of the growth is horizontal, developing new capabilities. Everyone is firmly planted in both mundane and magical worlds by this point. By the end of this stage, the stakes are set for the final showdown, the culminating events of the campaign. Magic items, while not _common_, are prevalent here. Most characters have several permanent items of significant power. Possibly even ones with histories of their own.
 
-*Legendary Stage (Levels 17-20).*
-This is the capstone. The denouement, the climax and resolution of a full-length campaign. An ancient dragon, a demon lord (although only very rarely a full Prince), an impending elemental catastrophe, a full manifestation from Beyond. These are the threats that you face at the end of your journey. At this point, you've entered legend. Your powers are beyond those of most mortals and are on par with the least of the Ascendants, although major Ascendants and demigods still outclass you significantly. The threats you face shape the fate of the world and possibly the planes beyond. Still, much of your power and "reach" comes from the allies you've gained. If you're storming a section of the Abyss to stop a Demon Prince from breaching the veil between worlds, you're doing so with the aid of an entire Adventuring Company or maybe even a few nations. You might have earned favors from gods, be friends with dragons, and be owed debts by angelic flight-leaders. Comparatively you're middle-weight superheros. Not a hero of myth or demigod; no mountain cracking or casual city destroying. No throwing planets at each other. But more than capable of punching above your weight class. Your magic items might have names of their own and even the ones that were not already part of history have started to accumulate stories of their own.
-
+*Legendary Stage (Levels 17-20).* This is the capstone. The denouement, the climax and resolution of a full-length campaign. An ancient dragon, a demon lord (although only very rarely a full Prince), an impending elemental catastrophe, a full manifestation from Beyond. These are the threats that you face at the end of your journey. At this point, you've entered legend. Your powers are beyond those of most mortals and are on par with the least of the Ascendants, although major Ascendants and demigods still outclass you significantly. The threats you face shape the fate of the world and possibly the planes beyond. Still, much of your power and reach comes from the allies you've gained. If you're storming a section of the Abyss to stop a Demon Prince from breaching the veil between worlds, you're doing so with the aid of an entire Adventuring Company or maybe even a few nations. You might have earned favors from gods, be friends with dragons, and be owed debts by angelic flight-leaders. Comparatively you're middle-weight superheros. Not a hero of myth or demigod; no mountain cracking or casual city destroying. No throwing planets at each other. But more than capable of punching above your weight class. Your magic items might have names of their own and even the ones that were not already part of history have started to accumulate stories of their own.
 
 = Using Ability Scores
 Six abilities provide a quick description of every creature's physical and mental characteristics:
+#flush-block[
 - *Strength*, measuring physical power
 - *Dexterity*, measuring agility
 - *Constitution*, measuring endurance
 - *Intelligence*, measuring reasoning and memory
 - *Wisdom*, measuring perception and insight
 - *Charisma*, measuring force of personality
+]
+Is a character muscle-bound and insightful? Brilliant and charming? Nimble and hardy? Ability scores define these qualities, which are both a creature's assets as well as their weaknesses.
 
-Is a character muscle-bound and insightful? Brilliant and charming? Nimble and hardy? Ability scores define these qualities—a creature's assets as well as weaknesses.
-
-The three main rolls of the game—the ability check, the saving throw, and the attack roll—rely on the six ability scores. The book's introduction describes the basic rule behind these rolls: roll a d20, add an ability modifier derived from one of the six ability scores, and compare the total to a target number.
+The three main rolls of the game---the ability check, the saving throw, and the attack roll---rely on the six ability scores. The book's introduction describes the basic rule behind these rolls: roll a d20, add an ability modifier derived from one of the six ability scores, and compare the total to a target number.
 
 == Ability Scores and Modifiers
 
@@ -185,7 +179,7 @@ For every ability check, the GM decides which of the six abilities is relevant t
 
 The more difficult a task, the higher its DC. The Typical Difficulty Classes table shows the most common DCs. As a note, the names are calibrated around someone with a +4 bonus in the required ability score (possibly including proficiency). You'll rarely be asked to make a Very Easy check; these are only relevant if you have less than a +4 bonus.
 
-#dndtab("Typical Difficulty Classes", columns: (5fr, 1fr, 3fr), 
+#dndtab("Typical Difficulty Classes", columns: (4fr, 1fr, 4fr), 
 [*Task Difficulty*], [*DC*], [*Failure Chance w/ +4*],
 [Very easy], [5], [0%],
 [Easy], [10], [25%],
@@ -194,16 +188,15 @@ The more difficult a task, the higher its DC. The Typical Difficulty Classes tab
 [Very hard], [25], [100% \*],
 [Nearly impossible], [30], [100 \*\*]
 )
-
-\*: a Very Hard check is generally only doable as a higher-level character with proficiency or as a low-probability result with some sort of bonus die added to your check (such as the bless spell). You might be able to do it via one of the Exert or Focus special actions
-
-\*\*: A Nearly Impossible check generally requires both some sort of proficiency multiplier and a high-level character.
-
-To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
+#flush-block[
+- \*: a Very Hard check is generally only doable as a higher-level character with proficiency or as a low-probability result with some sort of bonus die added to your check (such as the bless spell). You might be able to do it via one of the Exert or Focus special actions
+- \*\*: A Nearly Impossible check generally requires both some sort of proficiency multiplier and a high-level character.
+]
+To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success---the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.
 
 === Contests
 
-Sometimes one character's or monster's efforts are directly opposed to another's. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal— for example, when a monster tries to force open a door that an adventurer is holding closed. In situations like these, the outcome is determined by a special form of ability check, called a contest.
+Sometimes one character's or monster's efforts are directly opposed to another's. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal--- for example, when a monster tries to force open a door that an adventurer is holding closed. In situations like these, the outcome is determined by a special form of ability check, called a contest.
 
 Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.
 
@@ -275,25 +268,23 @@ To make a group ability check, everyone in the group makes the ability check. If
 
 Group checks don't come up very often, and they're most useful when all the characters succeed or fail as a group. For example, when adventurers are navigating a swamp, the GM might call for a group Wisdom (Survival) check to see if the characters can avoid the quicksand, sinkholes, and other natural hazards of the environment. If at least half the group succeeds, the successful characters are able to guide their companions out of danger. Otherwise, the group stumbles into one of these hazards.
 
-== Using Each Ability
+= Using Each Ability
 
 Every task that a character or monster might attempt in the game is covered by one of the six abilities. This section explains in more detail what those abilities mean and the ways they are used in the game. Remember that ability scores are not as much physical or intellectual measurements as they are approaches and archetypes. A character can be physically fit and strong without having especially high Strength---they're just not that prone to approaching tasks with brute force.
 
-=== Strength
+== Strength
 
 Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. As for archetypes, it correlates to the Strong Guy; having high Strength means you want your character to be good at using brute force and athletics to approach challenges.
 
-==== Strength Checks
+=== Strength Checks
 
 A Strength check can model any attempt to lift, push, pull, or break something, to force your body through a space, or to otherwise apply brute force to a situation. The Athletics skill reflects aptitude in certain kinds of Strength checks.
 
 *Athletics.* Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming. Examples include the following activities:
 
-
 - You attempt to climb a sheer or slippery cliff, avoid hazards while scaling a wall, or cling to a surface while something is trying to knock you off.
 - You try to jump an unusually long distance or pull off a stunt midjump.
 - You struggle to swim or stay afloat in treacherous currents, storm-tossed waves, or areas of thick seaweed. Or another creature tries to push or pull you underwater or otherwise interfere with your swimming.
-
 
 *Other Strength Checks.* The GM might also call for a Strength check when you try to accomplish tasks like the following:
 
@@ -306,11 +297,11 @@ A Strength check can model any attempt to lift, push, pull, or break something, 
 - Keep a boulder from rolling
 
 
-==== Attack Rolls and Damage
+=== Attack Rolls and Damage
 
 You add your Strength modifier to your attack roll and your damage roll when attacking with a melee weapon such as a mace, a battleaxe, or a javelin. You use melee weapons to make melee attacks in hand-to-hand combat, and some of them can be thrown to make an attack at longer ranges.
 
-==== Lifting and Carrying
+=== Lifting and Carrying
 
 Your Strength score determines the amount of weight you can bear. The following terms define what you can lift or carry.
 
@@ -321,11 +312,11 @@ Your Strength score determines the amount of weight you can bear. The following 
 
 *Size and Strength.* Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above Medium, double the creature's carrying capacity and the amount it can push, drag, or lift. For a Tiny creature, halve these weights. Miniscule creatures have a carrying capacity of < 1 lb and can only push, drag, or lift 1 lb max, regardless of their strength score.
 
-=== Dexterity
+== Dexterity
 
 Dexterity measures agility, reflexes, and balance. As an archetype, it maps to the Nimble Guy, the Sneak, and the Archer. While they may be strong, they don't generally think with their muscles and prefer to dodge, weave, sneak, and rely on precise hits or actions rather than overpowering force.
 
-==== Dexterity Checks
+=== Dexterity Checks <dex>
 
 A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks.
 
@@ -337,7 +328,6 @@ A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or 
 
 *Other Dexterity Checks.* The GM might call for a Dexterity check when you try to accomplish tasks like the following:
 
-
 - Control a heavily laden cart on a steep descent
 - Steer a chariot around a tight turn
 - Pick a lock
@@ -348,15 +338,15 @@ A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or 
 - Craft a small or detailed object
 
 
-==== Attack Rolls and Damage
+=== Attack Rolls and Damage
 
 You add your Dexterity modifier to your attack roll and your damage roll when attacking with a ranged weapon, such as a sling or a longbow.
 
-==== Armor Class
+=== Armor Class
 
 Depending on the armor you wear, you might add some or all of your Dexterity modifier to your Armor Class.
 
-==== Initiative 
+=== Initiative 
 
 At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.
 
@@ -368,22 +358,20 @@ You can't hide from a creature unless you have *total concealment* from that cre
 An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
 
 In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight, but the exact details are up to the GM and the situation.
-]
 
 *Passive Perception.* When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
 
 *What Can You See?.* One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be *lightly* or *heavily obscured*, as explained in vision.
-
-=== Constitution
+]
+== Constitution
 
 Constitution measures health, stamina, and vital force.
 
-==== Constitution Checks
+=== Constitution Checks
 
 Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving a specific effort on the part of a character or monster. A Constitution check can model your attempt to push beyond normal limits, however.
 
 The GM might call for a Constitution check when you try to accomplish tasks like the following:
-
 
 - Hold your breath
 - March or labor for hours without rest
@@ -391,18 +379,17 @@ The GM might call for a Constitution check when you try to accomplish tasks like
 - Survive without food or water
 - Quaff an entire stein of ale in one go
 
-
-==== Hit Points
+=== Hit Points
 
 Your Constitution modifier contributes to your hit points. You add your Constitution modifier to each Hit Die you roll for your hit points.
 
 If your Constitution modifier changes, your hit point maximum changes as well, as though you had the new modifier from 1st level. For example, if you raise your Constitution score when you reach 4th level and your Constitution modifier increases from +1 to +2, you adjust your hit point maximum as though the modifier had always been +2. So you add 3 hit points for your first three levels, and then roll your hit points for 4th level using your new modifier.
 
-=== Intelligence
+== Intelligence
 
 Intelligence measures mental acuity, accuracy of recall, and the ability to reason.
 
-==== Intelligence Checks
+=== Intelligence Checks
 
 An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning. The Arcana, History, Investigation, Nature, and Religion skills reflect aptitude in certain kinds of Intelligence checks.
 
@@ -427,15 +414,15 @@ An Intelligence check comes into play when you need to draw on logic, education,
 - Win a game of skill
 
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 
 Arcanists use Intelligence as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.
 
-=== Wisdom
+== Wisdom
 
 Wisdom reflects how attuned you are to the world around you and represents perceptiveness and intuition.
 
-==== Wisdom Checks
+=== Wisdom Checks
 
 A Wisdom check might reflect an effort to read body language, understand someone's feelings, notice things about the environment, or care for an injured person. The Animal Handling, Insight, Medicine, Perception, and Survival skills reflect aptitude in certain kinds of Wisdom checks.
 
@@ -460,15 +447,15 @@ Wisdom check when you try to accomplish tasks like the following:
 - Discern whether a seemingly dead or living creature is undead
 
 
-==== Spellcasting Ability
+=== Spellcasting Ability
 
 Priests, rangers and shamans use Wisdom as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.
 
-=== Charisma
+== Charisma
 
 Charisma measures your ability to interact effectively with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality.
 
-==== Charisma Checks
+=== Charisma Checks
 
 A Charisma check might arise when you try to influence or entertain others, when you try to make an impression or tell a convincing lie, or when you are navigating a tricky social situation. The Deception, Intimidation, Performance, and Persuasion skills reflect aptitude in certain kinds of Charisma checks.
 
@@ -480,7 +467,11 @@ A Charisma check might arise when you try to influence or entertain others, when
 
 *Persuasion.* When you attempt to influence someone or a group of people with tact, social graces, or good nature, the GM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk.
 
-#breakoutbox("Monster Attitudes")[
+*Other Charisma Checks.* The GM might call for a Charisma check when you try to accomplish tasks like the following:
+- Find the best person to talk to for news, rumors, and gossip
+- Blend into a crowd to get the sense of key topics of conversation
+
+=== Monster Attitudes
 Attitudes of monsters toward PCs (and towards each other) strongly influence how much they can be persuaded, lied to, or intimidated. Often, getting what you want from a monster may require first taking steps to improve their attitude. This may involve _other_ Charisma-based checks or may involve gifts, the heads of their enemies, or performing tasks for them.
 
 Generally, monster attitudes are one of the following (in order from most hostile to least).
@@ -498,17 +489,10 @@ Generally, monster attitudes are one of the following (in order from most hostil
 *Devoted.* A devoted monster is willing to put their life on hold for you. You might even be able to get them to risk their life for you for a smile and a wave.
 
 It's rare to be able to raise someone's attitude toward you more than one step in a single interaction, but it is very possible to _drop_ their attitude multiple steps.
-]
 
-*Other Charisma Checks.* The GM might call for a Charisma check when you try to accomplish tasks like the following:
-- Find the best person to talk to for news, rumors, and gossip
-- Blend into a crowd to get the sense of key topics of conversation
-
-
-==== Spellcasting Ability
+=== Spellcasting Ability
 
 Oathbound, spellblades, and warlocks use Charisma as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.
-
 
 == Saving Throws
 A saving throw---also called a save---represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat. You don't normally decide to make a saving throw; you are forced to make one because your character or monster is at risk of harm.
@@ -537,7 +521,7 @@ In combat and other fast-paced situations, the game relies on *rounds*, a 6-seco
 
 == Movement
 
-Swimming across a rushing river, sneaking down a dungeon corridor, scaling a treacherous mountain slope—all sorts of movement play a key role in fantasy gaming adventures.
+Swimming across a rushing river, sneaking down a dungeon corridor, scaling a treacherous mountain slope---all sorts of movement play a key role in fantasy gaming adventures.
 
 The GM can summarize the adventurers' movement without calculating exact distances or travel times: “You travel through the forest and find the dungeon entrance late in the evening of the third day.” Even in a dungeon, particularly a large dungeon or a cave network, the GM can summarize movement between encounters: “After killing the guardian at the entrance to the ancient dwarven stronghold, you consult your map, which leads you through miles of echoing corridors to a chasm bridged by a narrow stone arch.”
 
@@ -553,7 +537,6 @@ The following rules determine how far a character or monster can move in a minut
 
 While traveling, a group of adventurers can move at a normal, fast, or slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time and whether the pace has any effect. A fast pace makes characters less perceptive, while a slow pace makes it possible to sneak around and to search an area more carefully.
 
-
 *Forced March.* The Travel Pace table assumes that characters travel for 8 hours in day. They can push on beyond that limit, at the risk of exhaustion.
 
 For each additional hour of travel beyond 8 hours, the characters cover the distance shown in the Hour column for their pace, and each character must make a Constitution saving throw at the end of the hour. The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of exhaustion (see exhaustion)
@@ -564,7 +547,7 @@ Characters in wagons, carriages, or other land vehicles choose a pace as normal.
 
 Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a Carpet of Flying, allow you to travel more swiftly.
 
-#dndtab("Travel Pace", 
+#dndtab("Travel Pace", columns: (1fr, 2fr, 1fr, 1fr, 2fr),
 [*Pace*], [*Distance per: Minute*], [*Hour*], [*Day*], [*Effect*],
 [Fast], [400 feet], [4 miles], [32 miles], [-5 penalty to passive Wisdom (Perception) checks],
 [Normal], [300 feet], [3 miles], [24 miles], [---],
@@ -639,7 +622,7 @@ Characters face darkness outdoors at night (even most moonlit nights), within th
 #breakoutbox("Visibility Ranges")[
 Generally, creatures with human-like vision can see brightly-illuminated creatures and objects from a substantial distance (assuming nothing blocks their sight). A rule of thumb is that creatures and objects are visible and recognizable at the following distances based on their size, assuming normal contrast with the background (ie not camouflaged):
 
-#dndtab("Visibility",
+#dndtab("Visibility", columns: (2fr, 1fr),
 [*Size*], [*Visible at...*],
 [Objects smaller than 6in #sym.times 6 in], [25 ft],
 [Objects smaller than 1ft #sym.times 1 ft], [50 ft],
@@ -677,7 +660,7 @@ Most creatures rely primarily on sight, but are still capable of hearing and sme
 ==== Hearing
 For most humanoid (and similar) creatures, hearing is best at detecting _presence and direction_, but not _location_ of creatures, and gives very little information about what they are doing. Background noise also plays a significant role in preventing hearing. As a rule of thumb, a Tiny or larger creature's movement produces enough noise to be audible out to at least 30 feet under normal conditions. If you cannot see the creature but can hear it, interactions that require pinpointing them are at disadvantage. If you can neither see nor hear the creature, they are hidden and you must guess their location (automatically failing any attempt to interact if you guess wrong). To prevent being heard within the normal hearing range, you need to have succeeded at a Hide attempt. 
 
-#dndtab("Hearing", 
+#dndtab("Hearing", columns: (3fr, 1fr),
 [*Noise*], [*Audible Distance*],
 [Whispering or slow movement], [30 ft],
 [Conversation or normal movement], [60 ft],
@@ -755,20 +738,16 @@ At the end of a long rest, a character regains all lost hit points, stamina and 
 
 A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits. Creatures cannot progress personal projects during long rests.
 
-#breakoutbox("Short rests are important")[
+=== Short rests are important
 NIH system assumes that most "adventuring days" (the time between two long rests, whether 1 in-game day or many) that contain any significant amount of challenge will have time for at least one, and often two short rests. Some days may not---some days may have more. But on average, the system expects you to find time for at least one break sometime during the day, between challenges. That means that days consisting of a single big encounter are only ok when they're rare---use them as a spice, not a steady diet.
 
 If you consistently find your pace too rushed (in universe) to take an hour off or if you frequently only have a single fight per in-game day, consider one of the variants listed below.
-===== Fast Short Rests
 
-This variant is designed for parties that prefer a more heroic, "catch your breath before back into the next fight" style or who find that in-universe it rarely makes sense to pause for an hour to rest. In this variant, short rests take 10 minutes. Note that this makes classes that primarily depend on STA much more powerful, since they can routinely burn their entire pool each fight, unlike the casters who have to conserve. This is especially true if you have many (more than 2) short rests on most days.
+*Fast Short Rests:* This variant is designed for parties that prefer a more heroic, "catch your breath before back into the next fight" style or who find that in-universe it rarely makes sense to pause for an hour to rest. In this variant, short rests take 10 minutes. Note that this makes classes that primarily depend on STA much more powerful, since they can routinely burn their entire pool each fight, unlike the casters who have to conserve. This is especially true if you have many (more than 2) short rests on most days.
 
-===== Individual, limited short rests
-This variant allows a short-rest dependent class to adventure alongside a party of long-rest dependent classes without compromise, at the cost of some in-universe verisimilitude. In this variant, short rests only take 1 minute, but are limited to two per character per long rest. This way, any individual can choose to take a short rest at almost any time between combats, but can't endlessly spam them.
+*Individual, limited short rests:* This variant allows a short-rest dependent class to adventure alongside a party of long-rest dependent classes without compromise, at the cost of some in-universe verisimilitude. In this variant, short rests only take 1 minute, but are limited to two per character per long rest. This way, any individual can choose to take a short rest at almost any time between combats, but can't endlessly spam them.
 
-===== Safe resting only
-Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day so short rests become meaningless. In this variant, you can only take a long rest when in a "safe spot": an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest; short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
-]
+*Safe resting only:* Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day so short rests become meaningless. In this variant, you can only take a long rest when in a safe spot: an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest; short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
 
 == Between Adventures
 
@@ -959,7 +938,7 @@ Flying creatures enjoy many benefits of mobility, but they must also deal with t
 
 Each creature controls a different amount of space in combat. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories. Miniscule creatures and objects are those no more than a few inches across, such as normal mice, non-giant insects, etc. They do not control space in combat.
 
-#dndtab("Size Categories",
+#dndtab("Size Categories", columns: (1fr, 3fr),
 [*Size*], [*Space*],
 [Miniscule], [---],
 [Tiny], [2.5 #sym.times 2.5 feet],
@@ -1095,11 +1074,11 @@ Remember that spells and legendary effects with ranges other than Touch or Self 
 
 == Concentration 
 Some abilities require you to maintain concentrating in order to keep their magic active. If you lose concentration, such an ability ends. If an ability must be maintained with concentration, that fact appears in its Duration entry or its text, and the ability specifies how long you can concentrate on it. You can end concentration on your turn (no action required). Normal activity, such as moving and attacking, doesn't interfere with concentration. The following factors can break concentration:
-
+#flush-block[
 - *Using another ability that requires concentration.* You lose concentration on an ability if you use a different ability that requires concentration. You can't concentrate on two abilities at once. The concentration on the first effect fades _before_ the second ability takes effect.
 - *Taking damage or being grappled or shoved.* Whenever you take damage while you are concentrating on an ability, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage. Being grappled or knocked prone requires a DC 10 Constitution saving throw to maintain concentration.
 - *Being incapacitated or killed.* You lose concentration on an ability if you are incapacitated or if you die. 
-
+]
 The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a Constitution saving throw (against a DC they select) to maintain concentration on an ability.
 
 == Targets 
@@ -1171,19 +1150,20 @@ Generally, effects combine (aka "stack") unless they came from abilities with th
 
 A few exceptions exist, including the following:
 
-- If an ability creates multiple areas of effect (such as the legendary effect *meteor swarm*), only one of those areas of effect can affect a single target at the same time even if they overlap or the creature (due to size, etc.) occupies multiple areas of effect.
-- Can't is more specific than can unless explicitly stated. An effect that removes an ability (such as preventing movement) supersedes an ability or feature that allows movement unless the second ability or feature explicitly overrides the prohibition (such as *freedom of movement*).
-- No more than one bonus die can be added to any ability check or saving throw, even if multiple sources of bonus dice exist.
+If an ability creates multiple areas of effect (such as the legendary effect *meteor swarm*), only one of those areas of effect can affect a single target at the same time even if they overlap or the creature (due to size, etc.) occupies multiple areas of effect.
 
+Can't is more specific than can unless explicitly stated. An effect that removes an ability (such as preventing movement) supersedes an ability or feature that allows movement unless the second ability or feature explicitly overrides the prohibition (such as *freedom of movement*).
+
+No more than one bonus die can be added to any ability check or saving throw, even if multiple sources of bonus dice exist.
 
 == Making an Attack
 
-Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack. Whatever was true at when the attack was declared is true throughout unless specifically overriden by another ability.
+Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure. The game does not model changes in modifiers and conditionals during an attack. Whatever was true at when the attack was declared is true throughout unless specifically overridden by another ability.
 
-- *Choose a target.* Pick a target within your attack's range: a creature, an object, or a location. The target cannot have total cover from you.
-- *Determine modifiers.* The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.
-- *Resolve the attack.* You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.
-
++ *Choose a target.* Pick a target within your attack's range: a creature, an object, or a location. The target cannot have total cover from you.
++ *Determine modifiers.* The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.
++ *Resolve the attack.* You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.
+ 
 If there's ever any question whether something you're doing counts as an attack, the rule is simple: if you're making an attack roll, you're making an attack. And vice versa: attacks require attack rolls unless the ability specifically describes itself as an attack and calls for some other resolution method (such as the Grapple or Shove special attacks below).
 
 === Attack Rolls
@@ -1224,13 +1204,11 @@ Combatants often try to escape their foes' notice by hiding, casting the invisib
 
 When you attack a target that you can't see, you have disadvantage on the attack roll. This is true whether you're guessing the target's location or you're targeting a creature you can hear but not see. If the target isn't in the location you targeted, you automatically miss, but the GM typically just says that the attack missed, not whether you guessed the target's location correctly. As a general rule, characters are assumed to be able to locate other creatures within 30 ft of them via sound, smell, or other senses even if they can't see them and do not need to guess their locations. A GM may rule otherwise in particular environments. *Note:* this disadvantage is an exception to the normal advantage/disadvantage rules in that you have disadvantage even if your target cannot see you (in the next paragraph)
 
-
-
 When a creature can't see you but you can see it, you have advantage on attack rolls against it. If you are hidden from one or more creatures when you make an attack, that condition ends after the attack is complete whether it hits or misses. If the action used to attack has multiple attacks (such as the Extra Attack feature of the Armsman class), you lose the hidden condition after the first attack.
 
 === Ranged Attacks
 
-When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack. Ranged weapon-based attacks add your Ranged Attack Modifier (DEX + proficiency) to the attack roll and your Dexterity modifier to the damage dealt; abilities that grant ranged spell attacks add your Spell Attack Modifier (class-specific modifier + proficiency) to the attack roll and generally do not add any modifier to the damage dealt. If you are not proficient with the weapon, you make the attack at disadvantage and ignore all sources of advantage for that attack.
+When you make a ranged attack, you fire a bow or a crossbow, hurl a hand-axe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack. Ranged weapon-based attacks add your Ranged Attack Modifier (DEX + proficiency) to the attack roll and your Dexterity modifier to the damage dealt; abilities that grant ranged spell attacks add your Spell Attack Modifier (class-specific modifier + proficiency) to the attack roll and generally do not add any modifier to the damage dealt. If you are not proficient with the weapon, you make the attack at disadvantage and ignore all sources of advantage for that attack.
 
 If the target of a ranged attack is totally concealed but does not have total cover (such by as if they are heavily obscured by dense fog), the attack is made with disadvantage. This overrides the unseen-attackers rules.
 
@@ -1240,7 +1218,7 @@ Aiming a ranged attack is more difficult when a foe is next to you. When you mak
 
 === Melee Attacks
 
-Used in hand-to-hand combat, a melee attack allows you to attack a foe within your reach. A melee attack typically uses a handheld weapon such as a sword, a warhammer, or an axe. A typical monster makes a melee attack when it strikes with its claws, horns, teeth, tentacles, or other body part. A few spells also involve making a melee attack. Melee weapon-based attacks add your Melee Attack Modifier (STR + proficiency) to the attack roll and your Strength modifier to the damage dealt. Melee spell attacks add your Spell Attack Modifier (class-specific modifier + proficiency) to the attack roll and generally do not add any modifier to the damage dealt. If you are not proficient with the weapon, you make the attack at disadvantage and ignore all sources of advantage for that attack.
+Used in hand-to-hand combat, a melee attack allows you to attack a foe within your reach. A melee attack typically uses a handheld weapon such as a sword, a war-hammer, or an axe. A typical monster makes a melee attack when it strikes with its claws, horns, teeth, tentacles, or other body part. A few spells also involve making a melee attack. Melee weapon-based attacks add your Melee Attack Modifier (STR + proficiency) to the attack roll and your Strength modifier to the damage dealt. Melee spell attacks add your Spell Attack Modifier (class-specific modifier + proficiency) to the attack roll and generally do not add any modifier to the damage dealt. If you are not proficient with the weapon, you make the attack at disadvantage and ignore all sources of advantage for that attack.
 
 Most creatures have a 5-foot *reach* and can thus attack targets within 5 feet of them when making a melee attack. Certain creatures (typically those larger than Medium) have melee attacks with a greater reach than 5 feet, as noted in their descriptions.
 
@@ -1262,12 +1240,11 @@ When you take the Attack action and attack with a light melee weapon that you're
 
 If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.
 
-=== Contests in Combat
+== Contests in Combat
 
 Battle often involves pitting your prowess against that of your foe. Such a challenge is represented by a contest. This section includes the most common contests that require an action in combat: grappling and shoving a creature. The GM can use these contests as models for improvising others.
 
-
-==== Grappling
+=== Grappling
 
 When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
 
@@ -1280,7 +1257,7 @@ The target of your grapple must be no more than one size larger than you and mus
 
 If you try to stay in place and rotate the grappled creature around you, you must spend 2 feet of movement per foot moved by the grappled creature.
 
-==== Shoving a Creature
+=== Shoving a Creature
 
 Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
 
@@ -1302,8 +1279,7 @@ A target with *three-quarters cover* has a +5 bonus to AC and Dexterity saving t
 
 A target with *total cover* can't be targeted directly by an attack or a spell, although some abilities can reach such a target by including it in an area of effect. A target has total cover if it is completely behind a solid obstacle. Note that total cover and total concealment are different; a target has total cover when it stands behind a _wall of force_, but as the wall is transparent, the target has no concealment and cannot hide. And vice versa; a target concealed by heavy fog or by un-illuminated darkness has no cover but is totally concealed and can attempt to hide.
 
-All abilities require a clear path to their target unless they specify otherwise or unless their effect would not work as written otherwise (such as the teleport incantation). 
-
+All abilities require a clear path to their target unless they specify otherwise or unless their effect would not work as written otherwise (such as the _teleport_ incantation). 
 
 == Damage and Healing
 
@@ -1342,40 +1318,28 @@ For example, if you score a critical hit with a dagger, roll 2d4 for the damage,
 
 If an attack has additional effects that require a saving throw to take full effect (such as the poisoned from a Giant Spider's Bite attack), those additional damage dice are not doubled on a critical hit.
 
-
 ==== Damage Types
 
 Different attacks, damaging spells, and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as damage resistance, rely on the types. There is no distinction in the rules between magical or non-magical sources of each damage type.
 
 The damage types follow, with examples to help a GM assign a damage type to a new effect.
-
-*Acid.* The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.
-
-*Bludgeoning.* Blunt force attacks---hammers, constriction, unarmed blows, and the like---deal bludgeoning damage, as does falling.
-
-*Cold.* The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.
-
-*Fire.* Red dragons breathe fire, and many spells conjure flames to deal fire damage.
-
-*Lightning.* A lightning-bolt spell and a blue dragon's breath deal lightning damage.
-
-*Necrotic.* Necrotic damage, dealt by certain undead and a spell such as grave-touch, withers matter and even the soul.
-
-*Piercing.* Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.
-
-*Poison.* Venomous stings and the toxic gas of a green dragon's breath deal poison damage.
-
-*Psychic.* Mental abilities such as a mind flayer's psionic blast deal psychic damage.
-
-*Radiant.* Radiant damage, dealt by a priest's flame-strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.
-
-*Slashing.* Swords, axes, and monsters' claws deal slashing damage.
-
-*Thunder.* A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage. Thunder damage is only notably loud if the spell or ability says it is. Otherwise, it's normally lost in the general sounds of combat.
-
-{What happened to force damage?}
-I've removed force damage as a type. There are constructs of force, but any damage they deal (or magic-missile, for example), deal an appropriate physical damage type (bludgeoning, piercing, or rarely slashing). Why? Force damage was always seriously underspecified. Which made it both hard to narratively describe and hard to determine what should cause it. And had correspondingly few resistances or immunities.
-
+#flush-block[
+- *Acid.* The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.
+- *Bludgeoning.* Blunt force attacks---hammers, constriction, unarmed blows, and the like---deal bludgeoning damage, as does falling.
+- *Cold.* The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.
+- *Fire.* Red dragons breathe fire, and many spells conjure flames to deal fire damage.
+- *Lightning.* A lightning-bolt spell and a blue dragon's breath deal lightning damage.
+- *Necrotic.* Necrotic damage, dealt by certain undead and a spell such as grave-touch, withers matter and even the soul.
+- *Piercing.* Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.
+- *Poison.* Venomous stings and the toxic gas of a green dragon's breath deal poison damage.
+- *Psychic.* Mental abilities such as a mind flayer's psionic blast deal psychic damage.
+- *Radiant.* Radiant damage, dealt by a priest's flame-strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.
+- *Slashing.* Swords, axes, and monsters' claws deal slashing damage.
+- *Thunder.* A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage. Thunder damage is only notably loud if the spell or ability says it is. Otherwise, it's normally lost in the general sounds of combat.
+]
+#breakoutbox("What happened to force damage?")[
+I've removed force damage as a type. There are constructs of force, but any damage they deal (or magic-missile, for example), deal an appropriate physical damage type (bludgeoning, piercing, or rarely slashing). Why? Force damage was always seriously under-specified. Which made it both hard to narratively describe and hard to determine what should cause it. And had correspondingly few resistances or immunities.
+]
 === Damage Resistance and Vulnerability
 
 Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.
@@ -1394,7 +1358,6 @@ Dealing with resistance and vulnerability when a damage source has multiple dama
 - For every relevant source of resistance, cut the damage by 25\%, to a maximum reduction of 50\%.
 - For every relevant source of vulnerability, increase the damage by 25\%, to a maximum increase of 100\%.
 
-
 === Healing
 
 Unless it results in death, damage isn't permanent. Even death is reversible through powerful magic. Rest can restore a creature's hit points, and magical methods such as a cure-wounds spell or a _potion of healing_ can remove damage in an instant.
@@ -1403,25 +1366,24 @@ When a creature receives healing of any kind, hit points regained are added to i
 
 A creature that has died can't regain hit points until magic such as the revivify spell has restored it to life.
 
-
 === Dropping to 0 Hit Points
 
 When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.
 
-==== Instant Death
+*Instant Death*
 
 Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
 
 For example, a priest with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the priest dies.
 
-==== Falling Unconscious
+*Falling Unconscious*
 
 If damage reduces you to 0 hit points and fails to kill you, you fall unconscious. This unconsciousness ends if you regain any hit points.
 
 {Variant: Heroic Resilience}
 In particularly heroic games, the GM might allow PCs that are reduced to 0 hit points and are not killed outright to expend 1 Stamina per turn to become incapacitated and prone instead of unconscious. This allows them to move (although slower) and speak, but not take actions, reactions, or bonus actions. Using this variant rule, you still make death-saves as normal.
 
-==== Death Saving Throws 
+*Death Saving Throws*
 
 Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn't tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
 
@@ -1431,7 +1393,7 @@ Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A suc
 
 *Damage at 0 Hit Points.* If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death.
 
-==== Stabilizing a Creature
+*Stabilizing a Creature*
 
 The best way to save a creature with 0 hit points is to heal it. If healing is unavailable, the creature can at least be stabilized so that it isn't killed by a failed death saving throw.
 
@@ -1439,11 +1401,9 @@ You can use your action to administer first aid to an unconscious creature and a
 
 A *stable* creature doesn't make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn't healed regains 1 hit point after 1d4 hours. Creatures at zero hit points cannot benefit from long or short rests.
 
-==== Monsters and Death
+*Monsters and Death*
 
-Most GMs have a monster die the instant it drops to 0 hit points, rather than having it fall unconscious and make death saving throws.
-
-Mighty villains and special nonplayer characters are common exceptions; the GM might have them fall unconscious and follow the same rules as player characters.
+Most GMs have a monster die the instant it drops to 0 hit points, rather than having it fall unconscious and make death saving throws. Mighty villains and special non-player characters are common exceptions; the GM might have them fall unconscious and follow the same rules as player characters.
 
 === Knocking a Creature Out
 
@@ -1509,7 +1469,7 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 
 *Armor Class.* An object's Armor Class is a measure of how difficult it is to deal damage to the object when striking it (because the object has no chance of dodging out of the way). The Object Armor Class table provides suggested AC values for various substances.
 
-#dndtab("Object AC", 
+#dndtab("Object AC", columns: (2fr, 1fr),
 [*Substance*], [*AC*],
 [Cloth, paper, rope], [11],
 [Crystal, glass, ice], [13],
@@ -1523,7 +1483,7 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 
 *Hit Points.* An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.
 
-#dndtab("Object HP", 
+#dndtab("Object HP", columns: (3fr, 1fr, 1fr),
 [*Size*], [*Fragile*], [*Resilient*],
 [Miniscule (vial, ring)] , [1], [5 (2d4)], 
 [Tiny (bottle, lock)],[2 (1d4)],[5 (2d4)], 
@@ -1539,8 +1499,7 @@ When time is a factor, you can assign an Armor Class and hit points to a destruc
 *Damage Threshold.* Big objects such as castle walls or particularly tough objects such as constructs of magical force often have extra resilience represented by a damage threshold. An object with a damage threshold has immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the object's damage threshold is considered superficial and doesn't reduce the object's hit points.
 
 
-
-= Appendix A: Conditions 
+= Appendix A: Conditions <conditions>
 
 Conditions alter a creature's capabilities in a variety of ways and can arise as a result of a spell, a class feature, a monster's attack, or other effect. Most conditions, such as blinded, are impairments, but a few, such as invisible, can be advantageous.
 
@@ -1550,17 +1509,17 @@ If multiple effects impose the same condition on a creature, each instance of th
 
 The following definitions specify what happens to a creature while it is subjected to a condition. As with everything, common sense and narrative consistency can override these descriptions. These are summaries, not computer code.
 
-=== Blinded
+=== Blinded <blinded>
 
 - A blinded creature can't see and automatically fails any ability check that requires sight.
 - Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
 
-=== Bloodied
+=== Bloodied <bloodied>
 
 Bloodied, by itself, does little. It is automatically applied to any creature whose hit points are below half of its maximum.
 - Deflect, exert, and focus cost double.
 
-=== Broken
+=== Broken <broken>
 
 The default way of imposing the broken condition is by the creature failing a Wisdom saving throw against Morale effects (see the monsters chapter in the full pdf). Some other abilities may impose it. It lasts for one round at minimum, or more if appropriate. Mindless creatures are immune to being broken. Note: the PCs are heroes. They do not have to make Morale saves and should rarely, if ever, have the Broken condition.
 
@@ -1699,8 +1658,6 @@ This condition is applied only on the first round of combat and automatically en
 - Attack rolls against the creature have advantage.
 - Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.
 
-
-
 = Appendix B: Summary of Changes from 5e SRD
 NIH (hopefully not the final name) is proudly a 5e D&D fork. That's because I find that 5e does _most_ of what I want in a system, at least at the core level. So why clone it and change stuff? To explore "what might have been."
 
@@ -1712,10 +1669,10 @@ I hope that by the time I publish this for real (if that day ever comes), I'll h
 == Can I steal stuff from NIH and use it in my own system/games?
 Absolutely 100%. It uses the CC-BY 4.0 SRD 5.1 as a base and everything new is licensed the same way. If you publish stuff using ideas or material, please do credit me somewhere. But imitation is the sincerest form of flattery.
 
-Attribution should be to "NIH System, Benjamin Hall, https://wiki.admiralbenbo.com"
+Attribution should be to "NIH System, Benjamin Hall, #link("https://wiki.admiralbenbo.com")
 
 == Where can I get an updated version?
-The latest "fit for others to see" version is always found at [my github page](https://github.com/bentomhall/nih-system/blob/main/main.pdf). Click on the little down-arrow button under the word "history" to download the full PDF. This will always be kept up to date as I merge in side projects and rebuild it.
+The latest "fit for others to see" version is always found at #link("https://github.com/bentomhall/nih-system/blob/main/main.pdf")[my github page]. Click on the little down-arrow button under the word "history" to download the full PDF. This will always be kept up to date as I merge in side projects and rebuild it.
 
 == What changed from 5e?
 Ok, this is a big list. And I'm not going to point out everything that changed, just the highlights. And I'll try to break it up by chapter.
@@ -1723,7 +1680,7 @@ Ok, this is a big list. And I'm not going to point out everything that changed, 
 === Core System Changes
 
 - I've rearranged a bunch of things. And tried to be more explicit about what I was thinking.
-- There is a default setting, [Dreams of Hope](https://wiki.admiralbenbo.org). It's got quite a few differences from most published settings.
+- There is a default setting, #link("https://wiki.admiralbenbo.org")[Dreams of Hope]. It's got quite a few differences from most published settings.
 - XP is radically different. It's now a small counter that increments after each "meaningful" session, basically a formalized fiat leveling system.
 - No ability scores, just modifiers.
 - I've decided to lean in to ability scores as archetype-compliance, not physical measurements. You can be strong but not particularly high Strength, but being high Strength means that you are good at approaching things in a direct, forceful, physical way, often using brute physical force.
@@ -1739,8 +1696,6 @@ Ok, this is a big list. And I'm not going to point out everything that changed, 
 - A blind archer shooting at a blind target has disadvantage; unseen attackers only get advantage if they can see the target.
 - Small rework of the wording around (natural) darkness, concealment, etc.
 - More explicit wording around bonus action timing. Actions are atomic, although explicit permission is given for bonus actions to break up the Attack action (but not during an individual attack).
-
-
 - Dodge is renamed Guard. Because that annoyed me. You're always trying to dodge attacks.
 - Ranged attacks and spells (other than touch and self-ranged ones) provoke Opportunity attacks.
 - Cleaned up wording around movement. Basically everything is either explicitly difficult terrain (such as spirit guardians) or explicitly costs extra movement. No combining "speed halved" and "extra movement cost" weirdness.
@@ -1773,7 +1728,7 @@ Substantial changes. Many the classes got rewritten from the ground up, as did m
 - Added Cultures. Anyone can take any culture. They give a +1 ability score and a non-biological feature.
 - Backgrounds now have a list of questions rather than tables to roll on. Mostly because I'm lazy. They also all give a skill trick (see that section for details).
 - Point-buy removed. You've got standard array and rolling. Because I have an irrational dislike for point-buy. And am too lazy to recalibrate the numeric scaling for modifier-only math..
-- No multiclassing. If it comes back, it will be very different. Probably in the form of skill tricks that emulate class features (getting lower level features with higher-level requirements).
+- No multi-classing. If it comes back, it will be very different. Probably in the form of skill tricks that emulate class features (getting lower level features with higher-level requirements).
 
 === Class Changes
 
@@ -1817,7 +1772,6 @@ Not nearly as many here.
 
 - Remove most, if not all, +AC, +ATK, +save DC, +saves from items. I take bounded accuracy much more seriously. +Damage is ok. A +X weapon is generally now masterwork (ie +proficiency to damage).
 - Started adding the formulas directly to the magic items in some cases. Especially because some skill tricks give you access to magic item crafting recipes.
-
 
 == Can I suggest changes?
 Absolutely. Since I don't want to dox myself _directly_, the easiest way is to raise an issue or submit a Pull Request on the github repo (#link("https://github.com/bentomhall/nih-system/")[located here]).

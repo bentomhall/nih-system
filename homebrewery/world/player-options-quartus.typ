@@ -86,7 +86,7 @@ As an Armsman, you gain the following class features.
 - *Armor:* all armor, shield.
 - *Weapons:* all weapon.
 - *Tools:* Non.
-- *Saving Throws:* Strength, Constitutio.
+- *Saving Throws:* Strength, Constitution.
 - *Skills:* Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
 ]
 
@@ -1869,7 +1869,7 @@ At 11th level, you embody the bewitching aspect of a cobra as you dance. As an a
 Starting at 11th level, the poison damage dealt by your Serpent's Venom ability becomes necrotic in addition to poison. This means that a creature must be resistant or immune to both necrotic and poison to be resistant or immune to the damage. In addition, creatures immune to the poisoned condition cannot take reactions instead for the same duration as they would have been poisoned for (subject to repeated saves as normal).
 
 === Legendary Transformation
-At 17th level, you learn the spell _animal shapes_ and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
+At 17th level, you learn the spell _animal shapes_ and can use it once per long rest without needing components. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
 
 #pagebreak()
 = Paladin
@@ -2264,7 +2264,7 @@ At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an 
 ]
 
 #pagebreak()
-= Rogue //marker
+= Rogue
 
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a _fireball_ and come out unscathed---the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.
 

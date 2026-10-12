@@ -607,7 +607,7 @@ Ship Folk culture is, as the name suggests, oriented towards ships. Those who sp
 
 = Legal Notices
 
-#sym.copyright 2026, Benjamin Hall. This work is openly licensed via #link("https://creativecommons.org/licenses/by/4.0/legalcode")["CC-BY-4.0"]. 
+#sym.copyright 2026, Admiral Benbo. This work is openly licensed via #link("https://creativecommons.org/licenses/by/4.0/legalcode")["CC-BY-4.0"].
 
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at #link("https://dnd.wizards.com/resources/systems-reference-document"). The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at #link("https://creativecommons.org/licenses/by/4.0/legalcode").
 

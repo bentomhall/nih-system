@@ -1,7 +1,7 @@
 #import "@preview/dragonling:0.3.1": *
 
 #show: dndmodule.with(
-  title: "Dawn of Hope: Martial Classes",
+  title: "Dawn of Hope: Spellcasting Classes",
   subtitle: "New classes, variant versions of old classes, and new subclasses",
   author: "Admiral Benbo",
   paper: "us-letter",
@@ -50,6 +50,7 @@ This section presents multiple new classes (including variants of existing class
 == Multi-classsing
 None of the classes, variants and subclasses presented here were designed with multi-classing in mind. Allow multi-classing in or out of them at your own risk; when I use them I don't allow these to multi-class in or out.
 
+#pagebreak()
 = The Beholden (Variant Warlock)
 
 Beholden gain power by cheating. Unlike the wizard who studies and meditates or the cleric who must have faith, the beholden has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the beholden's soul, shoving in unearned power. Each beholden is different, but they all learn the ability to shape raw aether into blasts.
@@ -568,12 +569,12 @@ As a bounty hunter, you have a pool of energy called stamina you can use to fuel
   )
 ]
 
-
+#pagebreak()
 == Focused Foe
 Bounty hunters have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe Die (originally a d4) once per turn when you hit them with an attack.
 
 Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them as long as they are on the same plane of existence.
-#pagebreak()
+
 == Natural Explorer
 You are particularly familiar with one type of environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, underground, or urban. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
 
@@ -598,7 +599,6 @@ Starting at 2nd level, you have become better than most at using the additional 
 - *Loading* You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to zero hit points, you can choose to have the bolt pass through the target at a creature behind the slain creature by spending 1 STA. The closest creature on a 5 foot wide line connecting you to the slain creature and extending 30 feet behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
 - *Parrying* (greatsword, halberd, longsword) When you are the target of an attack from a source you can see while wielding a parrying weapon, you can use your reaction to increase your armor class against the triggering attack by your proficiency bonus, potentially causing the attack to miss.
 - *Precise* (dagger, pike, rapier, shortsword, war pick) You score a critical hit with a precise weapon on a 19 or 20.
-#colbreak()
 - *Thrown* You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
 - *Two-handed* While wielding a two-handed weapon, you can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt. This does not stack with the Great Weapon Master feat.
 ]
@@ -626,7 +626,7 @@ Wisdom is your spellcasting ability for your bounty hunter spells, since your ma
 
 === Aether Limit
 When you expend spell points on spell or ability, you cannot expend more than your spell point limit, which is equal to the spell point cost of the highest spell level you can prepare (the tier \# of the spell + the spell level).
-#pagebreak()
+
 == Bounty Hunter Archetype
 At 3rd level, you choose an archetype that you strive to emulate: Manhunter, Monster Slayer or Primal Guardian, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 
@@ -858,7 +858,7 @@ Starting at level 10, while you have a spirit out, you can re-trigger its emerge
 
 === Spirit Unity
 Starting at level 14, when you summon your familiar spirit, you can instead choose to summon any two of them. If you do so, they only last 1 minute but you only expend a single use of Wild Shape and can command both of them with the same bonus action; if you use Spirit Translocation you can choose which one you swap with, and Renewed Emergence affects either or both of them as you choose. Once you use this ability, you cannot do so again until you finish a long rest.
-
+#pagebreak()
 = Mechanist
 
 Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the mechanic's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
@@ -1205,7 +1205,7 @@ Spells marked with a (\*) are found in the New Spells section of this document.
 - Telekinesis
 - Wall of Stone
 ]
-
+#pagebreak()
 = Paladin
 
 Paladins are not connected to gods (unless they choose to be). The Oath is not made _to_ a god; it may be made _calling a god to witness_. Or not. The empowering thing is the absolute conviction that following the tenets is Right. And that absolute conviction lets them, under limited circumstances, tell the universe to get bent and it will obey. One distinguishing factor of the vast majority of paladins is _stubbornness_, at least when it comes to something connected to their Oath.
@@ -1596,7 +1596,7 @@ At 20th level, your devotion to the Summer Court of Mirrorhaven is total. As an 
 - Transmute Rock
 - Wall of Force
 ]
-
+#pagebreak()
 = Spellblade
 
 The spellblade is half-rogue, half-arcanist. They weave distraction, illusion, and weapon-play to confuse their foes, warping reality around them to hamper their ability to strike others. Unique among the classes, they have the ability to mix weapons and spells directly, gaining the ability to cast a spell on their weapon and have it take effect when they strike an enemy.
@@ -1901,7 +1901,7 @@ The Spellblade spell list contains a list of the spells available to all spellbl
 - Mislead
 - Telekinesis
 ]
-
+#pagebreak()
 = Warmage
 
 Not all practitioners of wizardry are academics. Trained in military schools to accompany soldiers into battle against foes both humanoid and monstrous, the warmages are, as their name suggests, specialists in the combat applications of magic. While their magic, like that of wizards, is learned rather than instinctive or channeled, the warmages focus on rote memorization of useful magical formulae and the practical applications of such spells. This limits their ultimate power as they do not have the theoretical understanding of the deeper magics. On the other hand, this practical approach allows them to be more efficient with their spell-casting than most wizards.

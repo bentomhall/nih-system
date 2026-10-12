@@ -49,6 +49,7 @@ This section presents multiple new classes (including variants of existing class
 == Multi-classsing
 None of the classes, variants and subclasses presented here were designed with multi-classing in mind. Allow multi-classing in or out of them at your own risk; when I use them I don't allow these to multi-class in or out.
 
+#pagebreak()
 = Armsman (Variant Fighter)
 
 #breakoutbox("Compatibility")[
@@ -364,7 +365,7 @@ Starting at 10th level, you can expend a shaping die when you are targeted by a 
 
 === Warp Strike
 Starting at 14th level, when you make a thrown attack with your aetheric blade and hit, you can choose to teleport next to the target.
-
+#pagebreak()
 = Inventor
 
 Inventors are adventurers whose talents bend toward the clockwork, toward arcane technology (aethertech) as applied beyond the manufactory floor. Unlike mechanists, they do not cast spells; instead they directly manipulate aether and machinery. Since the Fourth Wish and the awakening of the Soul-forged, inventors and mechanists have multiplied. One oddity of both of them is that most of their inventions can't actually be operated by other people without the inventor present. There's always something missing. Some theorize that the inventor's own soul is a critical component in the tech. This has drastically reduced the speed with which advanced technology can spread.
@@ -638,6 +639,7 @@ Starting at 13th level, when you use your Mine-Layer or Energy Synthesis ability
 - *Extreme Cold (Freeze Ray)*: Creatures restrained by the ice now take half the damage at the beginning of each of their turns. The area remains a 5 feet tall wall of ice for one minutes Additionally, you only need to spend 2 dice instead of 4 to use the _wall of ice_ option.
 ]
 
+#pagebreak()
 = Monk
 
 There are four main monasteries in western Noefra, but most monks learn their art from an unaffiliated master or on their own. Tysh, located near Fuar Uulan, and Quietus, located in Wyrmhold, teach the traditional martial arts associated with monks as a class. Tysh-trained monks focus on the more mystical side and often take vows of silence; the graduates often travel on obscure quests for enlightenment. Quietus, founded by Kalesin of the Catalysts, teaches the common folk the unarmed martial arts and focus. Unlike the other monasteries, it is much closer to a normal school and its graduates don't take any form of vow other than to not use their skills for evil. Tyom, located near Asai'ka, trains spies, dancers, and assassins in shadowy mystical arts. Associated with the Dancers of the Church of the Queen Ascendant, its graduates often join the clergy or dancer corps. Those that don't often dance professionally...or use their skills in the many criminal endeavors across the Jungle. Alone of the schools, the Home of the Elements in the Byssian Highlands, is officially part of the government and includes arcane and primal components. It teaches not only monks but other elementalists to hear and manipulate the elements in many ways. Its martial graduates act as patrolling judges, peace keepers, and messengers throughout Byssia, most often simply resolving disputes through discussion. They wear traditional, simple, colored robes denoting their focused element (amber for air, grey-blue for water, crimson for fire, and green for earth) and carry walking sticks that double as instruments of discipline.
@@ -701,7 +703,7 @@ Starting at 11th level, the poison damage dealt by your Serpent's Venom ability 
 
 === Legendary Transformation
 At 17th level, you learn the spell _animal shapes_ and can use it once per long rest without needing components. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
-
+#pagebreak()
 = Rogue
 
 On Quartus, rogues, like everyone else, have a magical side to their skill set. In this case, rogues are all, to one degree or another, attuned to the Border Shadow, that liminal space between planes. Unconsciously (for most of them), they wrap themselves in the veil between the Material and Shadow. This is how they seemingly "dodge" a _fireball_ and come out unscathed---the energy went into shadow around them. Some wield this power more consciously. But the Border Shadow isn't only darkness and stealth. And rogues are much more than just dancers in shadow. Long (but irregular, for the most part) training teaches them skills and knacks others lack.
@@ -862,7 +864,7 @@ Starting at 17th level, you can attempt to cast any spell of 7th level or lower 
   "--- Very Rare", "25",
   "--- Legendary", "30",
 )
-
+#pagebreak()
 = Warden (Variant Barbarian)
 
 Wardens are warriors whose prowess has as much to do with their ties to primal power as their own skill. They channel nature's power via strong emotions. Many give themselves to supernatural anger, enough so that many call this state "Rage", despite it not always being anger that serves as the channel. They archetypally fight using two-handed weapons, although some fight with a weapon in each hand and a few use weapon and shield.

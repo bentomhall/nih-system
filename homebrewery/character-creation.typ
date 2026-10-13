@@ -1999,8 +1999,8 @@ In addition, you can expend Focus to automatically succeed on an otherwise possi
 Starting at 14th level, your speed has increased enough so that it appears you can teleport short distances. When you move on your turn, you can choose to instead teleport to the chosen location as long as you have a clear path to the target location and it is no further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through.
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
-
-= NIH Classes: Hybrid
+#pagebreak()
+= NIH Classes: Hybrid <marker-up>
 
 Hybrid classes in NIH are those that use both spells and weapons together. They bridge the gap between the martials and the full casters. With less stamina but more aether than martials, more of their abilities are outright magical than martials. At the same time, they are generally more durable and weapon-oriented than full spellcasters. Generally, hybrid classes require investment in multiple ability scores to do well.
 
@@ -2020,12 +2020,12 @@ Lightly-armored and wielding a bow or a blade, the spellblade uniquely merges sp
 
 #dndtab("Hybrid Summary", columns:(2fr, 1fr, 3fr),
 "Class", "Primary Ability Score", "Play Style",
-"Oathbound ", " STR or CHA ", " Melee heavy support",
-"Ranger ", " DEX ", " Ranged or melee skirmisher (damage focus)",
-"Spellblade ", " DEX ", " Ranged or melee skirmisher (control focus)"
+"Oathbound ", " STR/CHA ", "Melee heavy support",
+"Ranger ", " DEX/WIS", "Ranged or melee skirmisher (damage focus)",
+"Spellblade ", "DEX/INT ", "Ranged or melee magical support/control"
 )
 
-
+#pagebreak()
 = Oathbound
 
 Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much, even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.
@@ -2044,25 +2044,20 @@ To quickly build an oathbound, put your highest ability score into Strength and 
 As an oathbound, you gain the following class features.
 
 === Hit Points
-
+#flush-block[
 - *Hit Dice.* 1d10 per oathbound level
-
 - *Hit Points at 1st Level.* 10 + your Constitution modifier
-
 - *Hit Points at Higher Levels.* 1d10 (or 6) + your Constitution modifier per oathbound level after 1st
-
+]
 
 === Proficiencies
-
+#flush-block[
 - *Armor.* All armor, shields
-
 - *Weapons.* Simple weapons, martial weapons
-
 - *Tools.* None
-
 - *Saving Throws.* Wisdom, Charisma
-
 - *Skills.* Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion
+]
 
 === Equipment
 
@@ -2072,6 +2067,14 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a priest's pack or (*b*) an explorer's pack
 - Chain mail
 
+=== Class DC
+When a magical ability from this class requires a saving throw, the DC is given by
+
+#align(center)[*magical DC = 8 + your Charisma modifier + your proficiency bonus*]
+
+When a non-magical ability from this class requires a saving throw, the DC is given by
+
+#align(center)[*magical DC = 8 + your Strength modifier + your proficiency bonus*]
 == Divine Sense
 
 The presence of strong astral and abyssal influence readily apparent to you. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow incantation.
@@ -2115,16 +2118,14 @@ This feature has no effect on undead and constructs.
 == Weapon Specialization
 
 You have learned to wield one type of weapon better. Choose one of the properties below. You gain the bonus listed. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
-
+#flush-block[
 - *Battering.* Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
-
 - *Cleaving.* You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
-
 - *Parrying.* When you take the Deflect action, the increased AC lasts until the start of your next turn instead of for the triggering attack only.
-
 - *Reach.* You can make opportunity attacks when a creature enters your range as well as leaves it.
-
 - *Two-handed (Melee only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
+]
+
 
 == Spellcasting
 
@@ -2136,14 +2137,13 @@ The Oathbound table shows how much aether (AET) you have to cast your spells and
 
 You know a certain number of Oathbound spells, choosing from the oathbound spell list. You can trade out any known spell for any other spell you can learn from that list when you finish a long rest. When you do so, choose a number of oathbound spells equal to your Charisma modifier + half your oathbound level, rounded down (minimum of one spell). To prepare a spell you must be able to cast it without exceeding your Aether Limit.
 
-
 === Spellcasting Ability
 
 Charisma is your spellcasting ability for your oathbound spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for an oathbound spell you cast and when making an attack roll with one.
-
+#flush-block[
 - *Spell save DC* = 8 + your proficiency bonus + your Charisma modifier
-
 - *Spell attack modifier* = your proficiency bonus + your Charisma modifier
+]
 
 === Armored Caster
 You can cast oathbound spells while wearing any armor or wielding a shield. You can use your weapon or shield as a focus for your oathbound spells as long as it has a symbol relevant to your Oath (of your choice) emblazoned (ie painted, engraved, or otherwise drawn) on it.
@@ -2153,16 +2153,14 @@ You can cast oathbound spells while wearing any armor or wielding a shield. You 
 Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend 1 or more AET to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 1d8 + 1d8 per two additional AET to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.
 
 In addition to expending aether to deal more damage, you can expend aether to add additional effects (up to your aether limit).
-
+#flush-block[
 - *Banishing Smite.* By expending 12 additional aether, you can force the target to make a Charisma saving throw. On a failed save, the creature is banished to a harmless demiplane and incapacitated for 1 minute. If the target was a celestial or devil, it is instead banished to the Astral on a failed save. If the target was a demon or undead, it is banished to the Abyss on a failed save. If the target was an elemental, it is banished to the corresponding elemental plane. Targets native to the plane they were banished from can attempt the saving throw again at the end of each of their turns, ending the banishment on a success and reappearing in the closest unoccupied space to where they left. Targets banished to a specific plane cannot return to the plane they were banished from by any means for a year and a day.
-
 - *Blinding Smite.* By expending 4 additional aether, you can force the target to make a Constitution saving throw against your spell DC, becoming blinded for 1 minute on a failure. The target can attempt the saving throw at the end of each of their turns, ending the effect on a success.
-
 - *Searing Smite.* By expending 2 additional aether, you can convert the smite's damage to fire and cause it to ignite the target. The target takes additional fire damage equal to half the damage dealt by the smite at the beginning of their next turn and every turn thereafter for 1 minute or until they succeed on a Constitution saving throw against your spell DC or take an action to extinguish the flames.
-
 - *Thunderous Smite.* By expending 2 additional aether, you can force the target to make a Strength saving throw against your spell DC. On a failed save, the target is pushed 10 feet away from you and knocked prone.
-
 - *Wrathful Smite.* By expending 2 additional aether, you can force the target to make a Wisdom saving throw against your spell DC. On a failed save, the target is frightened of you until the end of your next turn.
+]
+
 
 == Divine Health
 
@@ -2174,13 +2172,13 @@ When you reach 3rd level, you swear the oath that binds you as an oathbound fore
 
 Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
 
-=== Oath Spells
+== Oath Spells
 
 Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 
 If you gain an oath spell that doesn't appear on the oathbound spell list, the spell is nonetheless an oathbound spell for you.
 
-=== Channel Divinity
+== Channel Divinity
 
 Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.
 
@@ -2188,26 +2186,26 @@ When you use your Channel Divinity, you choose which option to use and expend 3 
 
 Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your oathbound spell save DC.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
 
-=== Extra Attack
+== Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-=== Aura of Protection
+== Aura of Protection
 
 Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-=== Find Steed
+== Find Steed
 
-At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 Aether. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. Your GM might allow other animals to be summoned as steeds. The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
+At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 AET. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. Your GM might allow other animals to be summoned as steeds. The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
 
 Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. You and your steed act on the same turn, and you can control its actions (mounted or not) without spending any actions of your own. Unlike other controlled mounts, the steed can take the Attack action while you are mounted on it, but cannot take the Multiattack action if it has it. While mounted on your steed, you can make any spell you cast that targets only you also target your steed. In addition, while mounted on the steed, you can force any attack that targets the mount to instead target you.
 
@@ -2217,19 +2215,19 @@ While your steed is within 1 mile of you, you can communicate with it telepathic
 
 You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
 
-Starting at level 14, you can expend 8 Aether when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.
+Starting at level 14, you can expend 8 AET when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.
 
-=== Aura of Courage
+== Aura of Courage
 
 Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-=== Improved Divine Smite
+== Improved Divine Smite
 
 By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.
 
-=== Cleansing Touch
+== Cleansing Touch
 
 Beginning at 14th level, you can use your action to end one spell or magical effect on yourself or on one willing creature that you touch.
 
@@ -2243,22 +2241,19 @@ Becoming an oathbound involves taking vows that commit the oathbound to the caus
 
 The Oath of Devotion binds an oathbound to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these oathbound meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Depending on culture, they may be particularly devoted to one of the Congregation such as Ytra (goddess of justice) or Tor Elan (god of summer and honor), although many also feel strong connections to Melara (goddess of mercy and winter). They hold angels---the perfect servants of duty and unbending conduct---as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.
 
-
 The Oath of Devotion gets a bad rap as being hidebound, stodgy, and anti-fun for other players. Remember that you may be law-abiding, but you're not a robot. Just because something is illegal doesn't mean it's _wrong_. The law and your oath can be in conflict. The tenets of the Oath are written to give you flexibility to work within a party and not cause undue discomfort. That said, it's incumbent on everyone to adapt their characters to fit, not just you.
 
 === Tenets of Devotion
 
 Though the exact words and strictures of the Oath of Devotion vary, oathbound of this oath share these tenets.
+#flush-block[
+- *Honesty.* I don't lie or cheat. My word is my promise, and I always keep my promises.
+- *Courage.* I don't fear to act, though caution is wise.
+- *Compassion.* I will aid others, protect the weak, and punish those who threaten them. I will show mercy to my foes, but will temper it with wisdom.
+- *Honor.* I will treat others with fairness, and let my honorable deeds be an example to them. I will strive to do as much good as possible while causing the least amount of harm.
+- *Duty.* I will take responsibility for my actions and their consequences, protect those entrusted to your care, and obey those who have just authority over me. Those that claim unjust authority have no such guarantee.
+]
 
-- *Honesty.* Don't lie or cheat. Let your word be your promise.
-
-- *Courage.* Never fear to act, though caution is wise.
-
-- *Compassion.* Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.
-
-- *Honor.* Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
-
-- *Duty.* Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.
 
 === Oath Spells
 Your Oath provides you with the following spells, which are oathbound spells for you. You always have them prepared and they do not count against your spell limit.
@@ -2273,13 +2268,12 @@ Your Oath provides you with the following spells, which are oathbound spells for
 === Channel Divinity
 
 When you take this oath at 3rd level, you gain the following two Channel Divinity options.
-
-=== Stubborn Soul.
-As a reaction when you or a creature you can see within 30 feet fails a saving throw against the charmed, incapacitated, shaken, or feared condition, you can allow them to immediately re-attempt the saving throw. On a success, they are not affected by that condition.
-
+#flush-block[
+- *Stubborn Soul.* As a reaction when you or a creature you can see within 30 feet fails a saving throw against the charmed, incapacitated, shaken, or feared condition, you can allow them to immediately re-attempt the saving throw. On a success, they are not affected by that condition.
 - *Turn the Unholy.* As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
+- A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Guard action.
+]
 
-A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Guard action.
 
 === Improved Lay on Hands
 You can spend STA to refill your Lay on Hands pool. As an action, spend 1+ STA. The available pool of healing increases by 5 for every STA spent, up to a maximum of 5 &times; your level.
@@ -2305,18 +2299,16 @@ In addition, for the duration, you have advantage on saving throws against spell
 == Oath of Sin's Weight
 Those who swear the Oath of Sin's Weight (the Sinners, as they're often called) are those who have felt the pain that their betrayals, murders, and other sinful actions have caused themselves and others. Many of them believe themselves beyond any hope of redemption and have dedicated the remainder of lives to taking on the hard jobs, the dirty jobs, the _necessary_ jobs so that others do not have to pay the price, do not have to lose their innocence. Many Sinners have lost their faith in the gods and ascendant powers. They still believe in their existence, but no longer consider themselves worthy of being worshippers. When they do worship, it tends to be the Redeeming Blades, demigods who accept everyone as long as they are willing to sacrifice their past for redemption. Not out of hope for redemption for themselves, but as models in helping others.
 
-Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much...about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
-
+Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
 
 === Tenets of Sin's Weight
-
+#flush-block[
 - *Sin is Painful, but Pain is Unavoidable.* No Sinner _wants_ to sin. I do not glory in it; I prefer if it can be avoided. But sometimes, sin must happen that righteousness may prevail.
-
 - *An Imperfect World Demands People Do Hard Things.* Despite not wanting to sin, Sinners know that sometimes sin and other hard things must be done. The demon cult must be suppressed, the oppressive taskmaster, although he does not violate the law, must be stopped. The raiding tribes cannot be allowed free rein to plunder, even if they're not evil.
+- *Better the Sinner Suffer than the Innocent Shed a Tear.* Sinners are already damned. My soul is already blackened by sin. Better _I_ be the one to carry more weight. Heavy is the weight of sin; strong is my back for having carried it this far. Let me carry more, so that others are unburdened by its weight.
+- *The Meaning of Sin is Personal.* Most Sinners agree that demons and undead are evil. But each Sinner has his or her personal crusade, the thing that he or she considers _particularly_ sinful, that they are willing to stain their souls to fight. Your fight may not be my fight. Choose something (in coordination with your GM) that fits your character.
+]
 
-- *Better the Sinner Suffer than the Innocent Shed a Tear.* Sinners are already damned. My soul is already blackened by sin. Better _I_ be the ones to carry more weight. Heavy is the weight of sin; strong is my back for having carried it this far. Let me carry more, so that others are unburdened by its weight.
-
-- *The Meaning of Sin is Personal.* Most Sinners agree that demons and undead are evil. But each Sinner has his or her personal crusade, the thing that he or she considers _particularly_ sinful, that they are willing to stain their souls to fight. Choose something (in coordination with your GM) that fits your character.
 
 === Oath Spells
 As a Sinner, your fervent devotion to your Oath grants you certain spells.
@@ -2333,10 +2325,10 @@ Once you gain access to a oath spell, you always have it prepared, and it doesn'
 
 === Channel Divinity
 When you take this oath at 3rd level, you gain the following two Channel Divinity options. Once you use either one, you cannot use this feature again until you finish a long rest.
-
+#flush-block[
 - *Unveil.* As an action, you unveil the weight of your accumulated sins, which causes those who witness it to cower and quail. All creatures of your choice within 30 ft that can see and hear you must make a Charisma saving throw. On a failed save, they are frightened of you for one minute. While frightened, their speed is reduced to zero. Frightened creatures can repeat the saving throw at the end of each of their turns, ending the effect on a success. Creatures who succeed on the initial saving throw are instead shaken until the end of your next turn. This has no effect on demons, the undead, or constructs.
-
 - *Drive Home the Blade.* When you hit with a weapon attack but do not score a critical hit, you can expend your Channel Divinity to convert the hit into a critical hit. Alternatively, you can use it when you miss to turn the miss into a hit.
+]
 
 === Bear Another's Burden
 Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the staggered, stunned, shaken, frightened, or broken conditions. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
@@ -2346,7 +2338,6 @@ Starting at 7th level, you can expend 4 STA as a bonus action to impose burdens 
 
 === Penance Stare
 Starting at 15th level, you spend 3 AET and an action to target one creature you can see within 60 ft and force it to relive its mistakes and sins. The target must make a Wisdom saving throw. On a failed save, the target takes 8d6 psychic damage and is incapacitated for one minute. On a success, the target takes half as much damage and is frightened of you until the end of your next turn. Incapacitated targets can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
-
 
 === Inner Demon
 At 20th level, as an action you can become what others think you are by spending 4 STA and 5 AET, at least outwardly: a ravening fiend. You gain the following benefits for 1 minute or until you are incapacitated
@@ -2365,11 +2356,12 @@ If an oathbound willfully violates his or her oath and shows no sign of repentan
 Those who take the Oath of Retribution are generally those who have lost something or someone dear to them at the hand of a villain or foe. For some, this villain is concrete---the Lord of Castle Keep, who murdered their daughter---for others, it may be as abstract as "those who enslave others" or "the gods themselves". Importantly, their target is individual to them. Of all the Oaths, this is the one least likely to have an organization or order backing them. Lone wolves, joining with the party out of shared motives or because their paths happened to coincide for a while. An oathbound of Retribution devotes themselves to the destruction of their sworn foe and all those who assist or aid them. Generally, good backstories for oathbound of Retribution _generalize_ to match the campaign's themes. If your sworn foe is one specific person, there's really no good path for the character if the campaign steers the party away from that person or if they're defeated early on. In a campaign with a narrow focus, a narrow foe works best. In a more open-ended campaign, a more open-ended sworn foe is more appropriate.
 
 === Tenets of Retribution
+#flush-block[
 - *All for Vengeance.* I will give up anything and do anything to achieve my vengeance.
-
 - *Break a Few Eggs.* Collateral damage is sometimes necessary in the course of vengeance, but cycles of vengeance are costly. Only break eggs when necessary.
-
 - *The Enemy of My Enemy.* Sometimes I will need to join forces with evil to defeat greater evil. But I should remember that it is still evil.
+]
+
 
 === Oath Spells
 Your Oath provides you with the following spells, which are oathbound spells for you. You always have them prepared and they do not count against your spell limit.
@@ -2385,11 +2377,10 @@ Your Oath provides you with the following spells, which are oathbound spells for
 === Channel Divinity
 
 When you take this oath at 3rd level, you gain the following two Channel Divinity options.
-
-=== Implacable.
-As a bonus action, you and all creatures of your choice within 30 feet cannot have their speed reduced for one minute and are immune to difficult terrain.
-
-*Designated Target.* As an action, you point at a creature you can see within 30 feet. For the next minute, you can teleport next to them as a bonus action. Additionally, when you hit the marked target with a melee weapon attack and use your Divine Smite ability, you can use one additional effect without paying the cost or counting against your aether limit. The cost of that additional effect must be less than or equal to your aether limit.
+#flush-block[
+- *Implacable.* As a bonus action, you and all creatures of your choice within 30 feet cannot have their speed reduced for one minute and are immune to difficult terrain.
+- *Designated Target.* As an action, you point at a creature you can see within 30 feet. For the next minute, you can teleport next to them as a bonus action. Additionally, when you hit the marked target with a melee weapon attack and use your Divine Smite ability, you can use one additional effect without paying the cost or counting against your aether limit. The cost of that additional effect must be less than or equal to your aether limit.
+]
 
 === Retributive Strike
 As a reaction when you are hit with an attack from within 5 feet, you may make a melee weapon attack against them with an unarmed strike or weapon or shield you are wielding. If you use a shield or an unarmed strike, it counts as a martial bludgeoning weapon you are proficient in with the battering feature and a base 1d6 damage die. If you hit, you deal additional radiant damage as if you had spent 1 AET on your Divine Smite ability but do not have to pay the aether. If you hit with a shield, the target is also knocked prone as if it had failed the saving throw against the Crushing Weapon Mastery option (even if you did not select that mastery).
@@ -2402,17 +2393,16 @@ At 18th level, the range of this aura increases to 30 feet.
 
 === Scorn the Unworthy
 
-Beginning at 15th level, you are immune to charm. If you are bloodied, you have advantage on all Wisdom saving throws.
+Beginning at 15th level, you are immune to being charmed. If you are bloodied, you have advantage on all Wisdom saving throws.
 
 === Executioner
 
-At 20th level, as an action, you can attempt to execute an enemy. Choose a bloodied target you can see and expend 5 STA and 11 AET. If they are your Designated Target, you can teleport next to them as part of this action. Otherwise, the target must be within your reach. Make a melee weapon attack against them with a weapon you are wielding. If you hit, you deal radiant damage to them equal to the maximum critical damage roll with the weapon plus a maximized critical damage roll for your Divine Smite (as if you'd spent your aether limit on additional damage). If this is enough to reduce them to zero hit points, they die regardless of any regeneration, death saving throws, or other effects (such as Relentless Endurance or _death ward_ effects). If you are bloodied, you regain hit points equal to half your maximum.
+At 20th level, as an action, you can attempt to execute an enemy. Choose a bloodied target you can see and expend 5 STA and 11 AET. If they are your Designated Target, you can teleport next to them as part of this action. Otherwise, the target must be within your reach. Make a melee weapon attack against them with a weapon you are wielding. If you hit, you deal radiant damage to them equal to the maximum critical damage roll with the weapon plus a maximized critical damage roll for your Divine Smite (as if you'd spent your aether limit on additional damage). If this is enough to reduce them to zero hit points, they die regardless of any regeneration, death saving throws, or other effects (such as Relentless Endurance or _death ward_ effects). If you are bloodied, you regain hit points equal to one quarter of your maximum hit points.
 
 == Oathbound Spell List
 The Oathbound Spell List table contains a list of the spells available to all Oathbound, ordered by aether cost.
 
-{{spellList
-
+#flush-block[
 === 1 Aether
 - cure wounds
 - true strike
@@ -2459,9 +2449,7 @@ The Oathbound Spell List table contains a list of the spells available to all Oa
 - dispel otherworldly influence
 - divine wrath
 - true seeing
-}}
-
-
+]
 
 = Ranger
 
@@ -2505,6 +2493,15 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 - A longbow and a quiver of 20 arrows
 
+=== Class DC
+Whenever a magical ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[magical DC = 8 + your Wisdom modifier + your proficiency bonus.]
+
+Whenever a non-magical ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[nonmagical DC = 8 + your Dexterity modifier + your proficiency bonus.]
+
 == Focused Foe
 
 Rangers have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe die (originally a d4) once per turn when you hit them with an attack.
@@ -2524,11 +2521,9 @@ While traveling in your favored terrain, you gain the following benefits:
 - When you forage, you find twice as much food as you normally would.
 - While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
 
-
 Additionally, when you are in your favored terrain, creatures have disadvantage on attempts to hide from you and you have advantage on Wisdom (Perception) checks made to spot hidden creatures and objects.
 
 You choose additional favored terrain types at 6th and 10th level.
-
 
 #dndtab("The Ranger", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells Known", "Focused Foe Die", "Stamina", "Aether", "Aether Limit",
@@ -2560,30 +2555,22 @@ Beginning at 1st level, you have learned to use your agile precision to strike w
 
 == Weapon Specialization
 
-At second level, you have become especially adept at using particular weapon properties. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Dexterity modifier + your proficiency bonus.
-
+At second level, you have become especially adept at using particular weapon properties. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect.
+#flush-block[
 - *Battering.* Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
-
 - *Cleaving.* You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
-
 - *Light.* When you make the additional attack with a light weapon, you add your ability modifier to the damage dealt.
-
 - *Loading.* You ignore the normal effect of this property. Instead, when you hit with an attack from a loading weapon and drop the target to 0 HP, you can choose to have the bolt pass through at a creature behind the slain creature. The closest creature on a 5' wide line connecting you to the slain creature and extending 30' behind him acts as the new target. Make an attack at disadvantage against that creature. If it hits, it takes damage as normal from the attack.
-
 - *Parrying.* When you take the Deflect action, the increased AC lasts until the start of your next turn instead of for the triggering attack only.
-
 - *Precise.* You score a critical hit on an 18, 19, or 20 instead of on a 19 or 20.
-
 - *Reach.* You can make opportunity attacks when a creature enters your range as well as leaves it.
-
 - *Thrown.* You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
-
 - *Two-handed (Ranged only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
+]
 
 == Spellcasting
 
 By the time you reach 2nd level, you have learned to befriend the kami, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 for the general rules of spellcasting and the end of this section for the ranger spell list.
-
 
 === Preparing and Casting Spells
 
@@ -2594,58 +2581,58 @@ You know a certain number of ranger spells, choosing from the ranger spell list.
 === Spellcasting Ability
 
 Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.
-
-- *Spell save DC* = 8 + your proficiency bonus + your Wisdom modifier
-
-- *Spell attack modifier* = your proficiency bonus + your Wisdom modifier
+#flush-block[
+- #align(center)[*Spell save DC* = 8 + your proficiency bonus + your Wisdom modifier]
+- #align(center)[*Spell attack modifier* = your proficiency bonus + your Wisdom modifier]
+]
 
 === Armored Caster
 You can cast your ranger spells while wearing light or medium armor.
 
-=== Ranger Archetype
+== Ranger Archetype
 
 At 3rd level, you choose an archetype that you strive to emulate. Three archetypes, the Bounty Hunter, Monster Slayer, and Primal Guardian are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 
-=== Primeval Awareness
+== Primeval Awareness
 
 Beginning at 3rd level, you can use your action to focus your awareness on the region around you. For a number of minutes equal to your proficiency bonus, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature reveals the direction and approximate distance (very near, near, far, very far) as well as a general sense of the number (solitary, a group, a horde) of each distinct cluster of creatures detected. Once you use this feature, one hour must pass before you can use it again.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list. At levels 4 and 12, you learn two Skill Tricks instead of one.
 
-=== Extra Attack
+== Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 1 STA when you hit with an attack to deal your Favored Foe damage an additional time per turn.
 
-=== Land's Stride
+== Land's Stride
 
 Starting at 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the _entangle_ spell.
 
-=== Aether Strike
+== Aether Strike
 
 Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 4+ AET and choose a number of targets equal to half the amount of Aether spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.
-
+#flush-block[
 - *Melee weapon.* You teleport from target to target in an order you choose, moving no more than twice your speed in each jump. As you briefly appear next to each of them, make a melee weapon attack against the target. On a hit, the target takes normal damage from your weapon plus a number of d10s equal to your proficiency bonus. After attacking the final target, you appear in an empty space within your reach of that target.
-
 - *Ranged Weapon.* Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus a number of d10s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack.
+]
 
-=== Vanish
+== Vanish
 
 Starting at 14th level, you can use the Hide action as a bonus action on your turn. If you expend 2 STA while doing so, you have advantage on the check. Also, you can't be tracked by non-magical means, unless you choose to leave a trail.
 
 
-=== Feral Senses
+== Feral Senses
 
 At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it, nor do those creatures gain advantage on attack rolls against you.
 
 You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.
 
-=== Foe Slayer
+== Foe Slayer
 At 20th level, you are particularly adept at finding the weak spots of your enemies. When you attack a target you've selected as your favored foe, you can spend 5 STA and choose to target a vital spot. Make the attack as normal. You score a critical hit on a roll of a 2 - 19, as long as the attack would hit. On a natural 20, you score a critical hit and the damage done is the maximum possible damage for that attack, including all additional damage. A natural 1 is still an automatic miss. Once you use this ability against a particular foe, you cannot use it again against that creature.
 
 = Ranger Archetypes
@@ -2672,27 +2659,27 @@ At 11th level, you've honed your skills at taking down a single target. When you
 === Wordless Reputation
 Starting at 15th level, your reputation and the aura that surrounds you are such that you can use your Fearsome Reputation ability against any foe, whether it can understand you or not. In addition, you can choose to use Debilitating Reputation against all creatures that fail their saving throws instead of just one.
 
-
 == Monster Slayer
 Monster Slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense, ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face.
 
 === Hunter's Prey
 
 At 3rd level, you gain the following features, but can only apply one of them per turn.
-
+#flush-block[
 - *Colossus Slayer.* Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn. You can use it again on that same turn if you spend 1 STA when you hit again.
-
 - *Giant Killer.* When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
-
 - *Horde Breaker.* Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon. You can use it again on that same turn if you spend 1 STA when you hit again.
+]
+
 
 === Defensive Tactics
 
-At 7th level, you gain the following features, but can only apply one of them per turn.
-
+At 7th level, you gain the following features.
+#flush-block[
 - *Escape the Horde.* Opportunity attacks against you are made with disadvantage.
-
 - *Multiattack Defense.* When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+]
+
 
 === Steel Will.
 Starting at 7th level, you have advantage on saving throws against being frightened.
@@ -2700,59 +2687,57 @@ Starting at 7th level, you have advantage on saving throws against being frighte
 === Multiattack.
 
 At 11th level, you gain the following features.
-
+#flush-block[
 - *Volley.* When you use your Aether Strike ability with a ranged weapon, you can target one creature for every aether spent instead of one target per two aether spent.
-
 - *Whirlwind Attack.* When you use your Aether Strike ability with a melee weapon, you can choose to perform a whirlwind attack at any point along the chain of attacks. If you do so, all creatures within your reach at that point count as targets for your Aether Strike. Make a separate attack for each one. You may only perform a single whirlwind attack per use of Aether Strike.
+]
 
 === Superior Hunter's Defense
 
 At 15th level, you gain the following features.
-
+#flush-block[
 - *Evasion.* When you are subjected to an effect, such as a red dragon's fiery breath or a _lightning bolt_ spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
-
 - *Stand Against the Tide.* When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.
-
 - *Uncanny Dodge.* When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
+]
+
 
 == Primal Guardian
 Primal Guardians are the most in-tune with the spirits of nature among the ranger. While they still favor their weapons, they blend their primal magic more thoroughly into their hunts, often calling on the spirits of beasts to aid them.
 
 === Spirit Companion
 Starting when you choose this subclass at level 3, you gain the companionship of an invisible animal spirit. It grants you several benefits, growing with you as you gain levels. Choose one of the companions below. All spirit companions increase your maximum aether by your Wisdom modifier, increasing to twice your Wisdom modifier at 11th level.
-
-- *Hawk Spirit.* Your spirit circles overhead or perches on your shoulder, granting you the benefit of its keen senses. You cannot be surprised and you make Wisdom (Perception) checks at advantage. If you are asleep, the hawk spirit keeps watch and awakens you if any trouble starts. At 11th level, this benefit extends to all creatures of your choice within 60 feet of you.
-
-- *Wolf Spirit.* The wolf grants you speed and ferocity. Your walking speed increases by 10 feet and once per turn when you make an attack with a melee weapon and miss, you can choose to reroll the attack. At 11th level, if you hit with the re-rolled attack, it becomes a critical hit.
-
+#flush-block[
 - *Bear Spirit.* The bear grants you endurance. Your hit point maximum increases by your level and you gain 1 additional maximum hit point each time you gain a level.
+- *Hawk Spirit.* Your spirit circles overhead or perches on your shoulder, granting you the benefit of its keen senses. You cannot be surprised and you make Wisdom (Perception) checks at advantage. If you are asleep, the hawk spirit keeps watch and awakens you if any trouble starts. At 11th level, this benefit extends to all creatures of your choice within 60 feet of you.
+- *Wolf Spirit.* The wolf grants you speed and ferocity. Your walking speed increases by 10 feet and once per turn when you make an attack with a melee weapon and miss, you can choose to reroll the attack. At 11th level, if you hit with the re-rolled attack, it becomes a critical hit.
+]
 
 === Additional Spirit Companion
 Starting at 7th level, you can choose an additional Spirit Companion, choosing which one is in effect at the end of a long rest.
 
-
 === Manifested Spirit
 At 7th level, you've learned to manifest your active Spirit Companion as a spectral force as an action by spending 4 AET. It performs the listed action, which lasts until the end of your next turn.
-
-- *Hawk Manifestation.* The hawk appears as a Huge spectral beast at a point you choose within 30 feet. It does not occupy a space. It screeches, freezing the blood of your foes. All creatures of your choice within 60 feet that can see and hear the spirit must make a Wisdom saving throw against your spell save DC. On a failed save, they take 8d6 psychic damage and are incapacitated for the duration as they cower. While incapacitated, their speed is reduced to zero. When the incapacitation ends, creatures that failed their save are frightened of you until the end of their next turn. Creatures that succeed on the saving throw take half as much damage and are only frightened until the end of their next turn.
-
-- *Wolf Manifestation.* A spectral wolf appears at your side and then flickers and multiplies, creating a pack that appear to surround all creatures of your choice within 30 feet. When a surrounded creature moves more than 5 feet or takes an action that would provoke an opportunity attack, the wolves attack. Make a melee spell attack using your Wisdom modifier against the creature. On a hit, the creature takes 4d10 psychic damage and their speed is reduced to zero until the end of their next turn. If they were casting a spell or making an attack when they triggered the wolves, that action fails without effect.
-
+#flush-block[
 - *Bear Manifestation.* A Huge spectral bear appears at your side. It does not occupy its space. For the duration, all allies within 30 feet have resistance to bludgeoning, piercing, and slashing damage as the bear soaks part of each attack.
+- *Hawk Manifestation.* The hawk appears as a Huge spectral beast at a point you choose within 30 feet. It does not occupy a space. It screeches, freezing the blood of your foes. All creatures of your choice within 60 feet that can see and hear the spirit must make a Wisdom saving throw against your spell save DC. On a failed save, they take 8d6 psychic damage and are incapacitated for the duration as they cower. While incapacitated, their speed is reduced to zero. When the incapacitation ends, creatures that failed their save are frightened of you until the end of their next turn. Creatures that succeed on the saving throw take half as much damage and are only frightened until the end of their next turn.
+- *Wolf Manifestation.* A spectral wolf appears at your side and then flickers and multiplies, creating a pack that appear to surround all creatures of your choice within 30 feet. When a surrounded creature moves more than 5 feet or takes an action that would provoke an opportunity attack, the wolves attack. Make a melee spell attack using your Wisdom modifier against the creature. On a hit, the creature takes 4d10 psychic damage and their speed is reduced to zero until the end of their next turn. If they were casting a spell or making an attack when they triggered the wolves, that action fails without effect.
+]
 
 === Spirit Strike
 Starting at 11th level, when you use your Aether Strike ability, your active spirit briefly manifests.
-
+#flush-block[
+- *Bear Strike.* The crushing paws of the bear knock prone or push 10 feet (your choice) any target hit by your Aether Strike.
 - *Hawk Strike.* The wings of the hawk grant you speed, increasing the number of targets to equal the amount of aether spent (instead of half that number).
 - *Wolf Strike.* The snapping jaws of the wolf reduce the speed of any target hit by your Aether Strike to zero until the end of your next turn. While immobilized, targets cannot make opportunity attacks.
-- *Bear Strike.* The crushing paws of the bear knock prone or push 10 feet (your choice) any target hit by your Aether Strike.
+]
 
 === Spirit Union
 Starting at 15th level, you can call on the power of all three companions. When you finish a short rest, you can expend 8 AET. If you do so, you gain all three passive effects until you finish a long or short rest and once during that period when you use your Manifested Spirit or Spirit Strike ability, you gain all three effects. Once you use this ability, you cannot do so again until you finish a long rest.
 
 == Ranger Spell List
 The Ranger Spell List table contains a list of the spells available to all rangers, ordered by aether cost.
-
+#flush-block[
 === 1 Aether
 - cure wounds
 - true strike
@@ -2818,7 +2803,7 @@ The Ranger Spell List table contains a list of the spells available to all range
 	
 === 13 Aether
 - chain lightning
-
+]
 
 
 = Spellblade
@@ -2828,31 +2813,25 @@ The spellblade is half-rogue, half-arcanist. They weave distraction, illusion, a
 == Class Features
 
 As a spellblade, you gain the following class features.
-
+#flush-block[
 - *Hit Points*
-
 - *Hit Dice.* 1d8 per spellblade level
-
 - *Hit Points at 1st Level.* 8 + your Constitution modifier
-
 - *Hit Points at Higher Levels.* 1d8 (or 5) + your Constitution modifier per spellblade level after 1st
+]
 
 === Proficiencies
-
+#flush-block[
 - *Armor.* Light armor, medium armor
-
 - *Weapons.* Simple weapons, hand crossbows, longswords, rapiers, shortswords
-
 - *Tools.* Three musical instruments of your choice
-
 - *Saving Throws.* Dexterity, Charisma
-
 - *Skills.* Choose any three
+]
 
 === Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
-
 
 - (*a*) a rapier, (*b*) a longsword, or (*c*) any simple weapon
 - (*a*) a diplomat's pack or (*b*) an entertainer's pack or (*c*) an explorer's pack
@@ -2876,10 +2855,10 @@ You know a certain number of spellblade spells, choosing from the spellblade spe
 === Spellcasting Ability
 
 Charisma is your spellcasting ability for your spellblade spells, since their power derives from the strength of your will. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a spellblade spell you cast and when making an attack roll with one.
-
-- *Spell save DC* = 8 + your proficiency bonus + your Charisma modifier
-
-- *Spell attack modifier* = your proficiency bonus + your Charisma modifier
+#flush-block[
+- #align(center)[*Spell save DC* = 8 + your proficiency bonus + your Charisma modifier]
+- #align(center)[*Spell attack modifier* = your proficiency bonus + your Charisma modifier]
+]
 
 === Ritual Casting
 
@@ -2918,7 +2897,7 @@ You can cast your spellblade spells while wearing light or medium armor.
 " 20th  ", " +6 ", " Superior Inspiration                            ", " 10      ", " 6              ", " 6   ", " 20  ", " 40 ", " 14",
 )
 
-=== Arcane Manipulation
+== Arcane Manipulation
 
 You can magically distort the minds of your foes. To do so, you use a bonus action on your turn and expend 1 AET to choose one creature other than yourself within 60 feet of you who can hear you and mark them for ill-luck. Once within the next minute when the creature makes an attack roll, saving throw, or ability check, you can invoke the mark without using an action. If you do so, the creature must roll a d6 (hereafter an Arcane Manipulation die) and subtract it from the die result before applying modifiers. This can convert a critical hit into a regular hit or miss. Any creature can only be marked with one manipulation die at a time. You can invoke the mark after you see the die result but before the success or failure is resolved.
 
@@ -3020,7 +2999,7 @@ Your focus provides you with the following spells, which are spellblade spells f
 
 
 === Focused Charm
-At 3rd level when you pick this focus, you gain your choice of diplomat or frighten.
+At 3rd level when you pick this focus, you gain your choice of the Diplomat or Frighten skill tricks.
 
 === Social Manipulation
 Starting at 3rd level, you can use your Arcane Manipulation feature when you make a Charisma check using Deception, Intimidation, or Persuasion and do not like the result to reroll the check. You must use the second result, and you must use this feature before any of the effects of that check are applied.
@@ -3032,7 +3011,7 @@ Starting at 7th level, you learn your choice of the fascinate or people-whispere
 Starting at 14th level, when you use your Arcane Manipulation ability, you can spend extra AET to target an additional creature per 2 AET spent beyond the first.
 
 === Legendary Effects
-At 18th level, you learn the legendary effect domination and the legendary effect modify memory.
+At 18th level, you learn the legendary effect _domination_ and the legendary effect _modify memory_.
 
 == Focus: War
 War-focused spellblades, as the name suggests, have gone all-in on the death of their enemies while also preventing themselves from dying to their enemies' attacks.
@@ -3069,7 +3048,7 @@ At 18th level, you learn the legendary effect _power word kill_ and can use it o
 == Spellblade Spell List
 The Spellblade Spell List table contains a short summary of the spells available to all spellblades, ordered by aether cost.
 
-{{spellList
+#flush-block[
 === 0 Aether
 - acid burst
 - dancing lights
@@ -3152,8 +3131,7 @@ The Spellblade Spell List table contains a short summary of the spells available
 - contagion
 - mislead
 - telekinesis
-
-}} <marker>
+]
 
 = NIH Classes: Spellcasters
 
@@ -3238,6 +3216,11 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a component pouch or (*b*) an arcane focus
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack or (*c*) a scholar's pack
 - Two daggers
+
+=== Class DC
+Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[DC = 8 + your Intelligence modifier + your proficiency bonus]
 
 == Spellcasting
 
@@ -3617,6 +3600,11 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a priest's pack or (*b*) an explorer's pack
 - A shield and a holy symbol
 
+=== Class DC
+Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[DC = 8 + your Wisdom modifier + your proficiency bonus]
+
 == Spellcasting
 
 As a conduit for divine power, you can cast priest spells.
@@ -3948,9 +3936,6 @@ The Priest Spell List table contains a short summary of the spells available to 
 - blade barrier
 ]
 
-
-
-
 = Shaman
 
 The shaman is the pure devotee of the primal powers, the spirits of nature and the elements. They call on elemental forces to create Manifest Zones to blast their foes and hamper them while aiding allies.
@@ -3989,6 +3974,11 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a wooden shield or (*b*) any simple weapon
 - (*a*) a scimitar or (*b*) any simple melee weapon
 - Leather armor, an explorer's pack, and a shamanic focus
+
+=== Class DC
+Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[DC = 8 + your Wisdom modifier + your proficiency bonus]
 
 == Spellcasting
 
@@ -4341,10 +4331,6 @@ The Shaman Spell List table contains a short summary of the spells available to 
 - insect plague
 ]
 
-
-
-
-
 = Warlock
 
 Warlocks gain power by cheating. Unlike the arcanist who studies and meditates or the priest who must have faith, the warlock has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the warlock's soul, shoving in unearned power. Each warlock is different, but they all learn the ability to shape raw aether into blasts.
@@ -4386,6 +4372,11 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a component pouch or (*b*) an arcane focus
 - (*a*) a scholar's pack or (*b*) a dungeoneer's pack
 - Leather armor, any simple weapon, and two daggers
+
+=== Class DC
+Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
+
+#align(center)[DC = 8 + your Charisma modifier + your proficiency bonus]
 
 == Otherworldly Patron
 

@@ -84,28 +84,28 @@ Proficiency in a language includes the basic ability to speak, understand, read,
 
 #dndtab("Common Languages", columns: (1fr, 1fr, 1fr, 1fr),
 "Language* ", "Common Name", "Typical Speakers", "*Script",
-"Common ", " -- ", " Most folks ", " Reformed Imperial",
-"Tumni ", " Dwarven ", " Dwarves ", " Modern Runic",
-"Yonwach ", " High Elven ", " Gwerin ", " Aelven",
-"Metsae ", " Wood Elven ", " Ihmisi ", " Aelven",
-"Too-til ", " Giantish ", " Giants, jazuu ", " Modern Runic",
-"Ard-teang ", " Orcish ", " Orcs ", " Mixed Imperial/Aelven",
-"Ngyon toi ", " Goblin ", " Goblins ", " None, tr. Imperial"
+"Common ", "--", "Most folks", "Reformed Imperial",
+"Tumni ", "Dwarven", "Dwarves", "Modern Runic",
+"Yonwach ", "High Elven", "Gwerin", "Aelven",
+"Metsae ", "Wood Elven", "Ihmisi", "Aelven",
+"Too-til ", "Giantish", "Giants, jazuu", "Modern Runic",
+"Ard-teang ", "Orcish", "Orcs", "Mixed Imperial/Aelven",
+"Ngyon toi ", "Goblin", "Goblins", "None, tr. Imperial"
 )
 
 {{wide
 #dndtab("Exotic Languages", columns:(1fr, 1fr, 1fr, 1fr),
 "Language* ", "Common Name", "Typical Speakers", "*Script",
-"Abyssal ", " Demonic ", " Demons, cultists ", " Lucian",
-"Celestial ", " -- ", " Lucians acting on divine business ", " Lucian",
-"Draconic ", " -- ", " Dragons, dragonborn ", " tr. mixed Aelven/Runic",
-"Iath Neidr ", " Snakefolk ", " Ophidians ", " Modified Aelven",
-"Jinzi ", " Eastern Imperial ", " Eastern Noefrans ", " Jinzi",
-"Kamigami ", " Druidic, Sylvan ", " Druids, fey ", " tr. Aelven",
-"Lucian ", " Infernal ", " Astral residents ", " Lucian",
-"Primordial ", " Elemental ", " Elementals ", " Archaic Runic",
-"Sarthak ", " Ship Speech ", " Ship folk and pirates of the Moon Sea ", " Modified Aelven",
-"Tiboran ", " Old Imperial ", " Scholars ", " Imperial
+"Abyssal ", "Demonic", "Demons, cultists", "Lucian",
+"Celestial ", "--", "Lucians acting on divine business", "Lucian",
+"Draconic ", "--", "Dragons, dragonborn", "tr. mixed Aelven/Runic",
+"Iath Neidr ", "Snakefolk", "Ophidians", "Modified Aelven",
+"Jinzi ", "Eastern Imperial", "Eastern Noefrans", "Jinzi",
+"Kamigami ", "Druidic, Sylvan", "Druids, fey", "tr. Aelven",
+"Lucian ", "Infernal", "Astral residents", "Lucian",
+"Primordial ", "Elemental", "Elementals", "Archaic Runic",
+"Sarthak ", "Ship Speech", "Ship folk and pirates of the Moon Sea", "Modified Aelven",
+"Tiboran ", "Old Imperial", "Scholars", " Imperial
 ")
 
 
@@ -164,26 +164,26 @@ The expectation is that 1 XP &approx; 1 session of serious play, regardless of w
 
 #dndtab("Experience Points Per Level", columns: (2fr, 2fr, 1fr, 2fr),
 "Experience Points (Fast)", "Experience Points (Slow)", "Level", "Proficiency Bonus",
-"0 ", " 0 ", " 1 ", " +2",
-"1 ", " 1 ", " 2 ", " +2",
-"3 ", " 3 ", " 3 ", " +2",
-"7 ", " 7 ", " 4 ", " +2",
-"11 ", " 11 ", " 5 ", " +3",
-"15 ", " 16 ", " 6 ", " +3",
-"19 ", " 22 ", " 7 ", " +3",
-"23 ", " 28 ", " 8 ", " +3",
-"27 ", " 34 ", " 9 ", " +4",
-"31 ", " 40 ", " 10 ", " +4",
-"35 ", " 46 ", " 11 ", " +4",
-"39 ", " 52 ", " 12 ", " +4",
-"43 ", " 58 ", " 13 ", " +5",
-"47 ", " 64 ", " 14 ", " +5",
-"51 ", " 70 ", " 15 ", " +5",
-"55 ", " 76 ", " 16 ", " +5",
-"59 ", " 82 ", " 17 ", " +6",
-"63 ", " 88 ", " 18 ", " +6",
-"67 ", " 94 ", " 19 ", " +6",
-"71 ", " 100 ", " 20 ", " +6"
+"0 ", "0", "1", "+2",
+"1 ", "1", "2", "+2",
+"3 ", "3", "3", "+2",
+"7 ", "7", "4", "+2",
+"11 ", "11", "5", "+3",
+"15 ", "16", "6", "+3",
+"19 ", "22", "7", "+3",
+"23 ", "28", "8", "+3",
+"27 ", "34", "9", "+4",
+"31 ", "40", "10", "+4",
+"35 ", "46", "11", "+4",
+"39 ", "52", "12", "+4",
+"43 ", "58", "13", "+5",
+"47 ", "64", "14", "+5",
+"51 ", "70", "15", "+5",
+"55 ", "76", "16", "+5",
+"59 ", "82", "17", "+6",
+"63 ", "88", "18", "+6",
+"67 ", "94", "19", "+6",
+"71 ", "100", "20", "+6"
 )
 
 
@@ -223,7 +223,7 @@ The two cultures presented here are the Lowland and the Caldera-born. The lowlan
 #flush-block[
 - *Ability Score Increase.*  +1 Charisma OR Constitution
 - *Age.*  adult around 16, live to 80-ish
-- *Size.*  Medium. 5'0" - 6'6", 110-300 lbs
+- *Size.*  Medium. 5'0"- 6'6", 110-300 lbs
 - *Speed.*  30ft
 - *Status.*  regional (Western Noefra)
 - *Breath Weapon(+).*. You can use your bonus action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. Alternatively, you can use this ability in place of a weapon attack from the Attack action.
@@ -254,7 +254,7 @@ dndtab(columns: (0.75fr, 1fr, 1.5fr, 2fr),"Elemental Affinity", [*Color*], [*Dam
 
 Dwarves, more properly the *tumnii*, are the kindred most unchanged by time. Their ancestors at the end of the First Age, nearly 20,000 years ago, were titans, masters of order and runes. The ruling council, committed an act of hubris. They created the so-called Orb of All Might to destroy their longstanding enemy, the wyrm (ancestors of dragons). To empower the Orb, they drained the power and potential out of the weaker elements of their society. These were the first dwarves. Sons and daughters of the earth and runes, they change only grudgingly. This carries over to their physiology. Dwelling in the mountain depths has sharpened their eyesight and the stone in their blood gives them increased endurance.
 
-Tumnii are overwhelmingly born as fraternal twins, one male and one female. Dwarves are considered Adult at age 25 and generally live until they are about 150. Overall, they tend to be shorter than humans, standing between 4'0" and 5'2", but broader and more muscular. Generally, all adult dwarves have beards. Whether one or both sexes shave is a cultural matter. Of all the lineages of Quartus, there is the most in-group physiological difference between cultural groups of tumnii, as their physiology directly adapts to their circumstances at the clan-group level.
+Tumnii are overwhelmingly born as fraternal twins, one male and one female. Dwarves are considered Adult at age 25 and generally live until they are about 150. Overall, they tend to be shorter than humans, standing between 4'0"and 5'2", but broader and more muscular. Generally, all adult dwarves have beards. Whether one or both sexes shave is a cultural matter. Of all the lineages of Quartus, there is the most in-group physiological difference between cultural groups of tumnii, as their physiology directly adapts to their circumstances at the clan-group level.
 
 Three major ethnic variants exist, although this is more social rather than directly physiological.
 
@@ -268,7 +268,7 @@ Deep mountain dwarves live in the hard conditions deep inside the mountains. The
 
 === Surfacer
 
-Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8" with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the majority cultures).
+Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8"with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the majority cultures).
 
 === Lineage Traits
 #flush-block[
@@ -291,7 +291,7 @@ Physically, they stand of medium-tall height but usually stick-thin, rarely show
 #flush-block[
 - *Ability Score Increase.*  +1 Intelligence
 - *Age.*  adult around 20, live to 190-200
-- *Size.*  Medium. 5'4" - 6'5", 100-200 lbs
+- *Size.*  Medium. 5'4"- 6'5", 100-200 lbs
 - *Speed.*  30ft
 - *Status.*  regional (Western Noefra, Southern Soefra)
 - *Aetherically Sensitive.*  When you make an ability check to disbelieve an illusion or a saving throw to resist an illusion, you do so at advantage.
@@ -311,7 +311,7 @@ The tallest of them are shorter than the shortest humans, and they weigh very li
 #flush-block[
 - *Ability Score Increase.*  +1 Dexterity OR Charisma
 - *Age.*  adult around 10, live to 60-ish
-- *Size.*  Small. 2'8" - 4'0", 40-70 lbs
+- *Size.*  Small. 2'8"- 4'0", 40-70 lbs
 - *Speed.*  30ft
 - *Status.*  regional (Western Noefra)
 - *Diminutive Target.*  When you would gain half cover from an obstacle or creature, you gain 3/4 cover instead.
@@ -381,7 +381,7 @@ A short jazuu is taller than most humans, and the tall ones rival their ogre kin
 #flush-block[
 - *Ability Score Increase.*  +1 Constitution or Wisdom
 - *Age.*  adult around 18, live to 110-ish
-- *Size.*  Medium. 6'0" - 8'10", 200-600 lbs
+- *Size.*  Medium. 6'0"- 8'10", 200-600 lbs
 - *Speed.*  30ft
 - *Status.*  regional (Western Noefra)
 - *Child of Order(+).*  After you roll an ability check, saving throw, or attack roll but before you know the outcome, you can replace the number rolled with a 10. You can use this trait a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
@@ -398,7 +398,7 @@ Physically, playable ophidians are very close to fang-kin humans, except that th
 #flush-block[
 - *Ability Score Increase.*  +1 Intelligence or Charisma
 - *Age.*  adult around 15, live to 70-ish
-- *Size.*  Medium. 4'9" - 6'0", 90-190 lbs
+- *Size.*  Medium. 4'9"- 6'0", 90-190 lbs
 - *Speed.*  30ft
 - *Status.*  regional (Jungle of Fangs)
 - *Distracting Charm (+).*  As a reaction when you are targeted with an attack by someone you can see, you can force the attacker to make a DC 8 + your Charisma modifier + proficiency Wisdom saving throw. On a failure, you can force them to change the target of the attack to another creature of your choice within range or choose to make them lose the attack. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.
@@ -713,7 +713,7 @@ Examples:
 - A guild, company, etc. They kicked you out and you want to prove them wrong/get revenge/get back into their graces.
 
 === Flaw
-A flaw is something that gets you in trouble. Like the bond, this is a plot eyebolt. Flaws should be noticeable and make you do things that aren't optimal, but shouldn't make the game un-fun for others by putting the campaign in jeopardy senselessly. "I attack my fellows in blind rage" is not, generally, an appropriate flaw. Neither is "I never back down".
+A flaw is something that gets you in trouble. Like the bond, this is a plot eyebolt. Flaws should be noticeable and make you do things that aren't optimal, but shouldn't make the game un-fun for others by putting the campaign in jeopardy senselessly. "I attack my fellows in blind rage"is not, generally, an appropriate flaw. Neither is"I never back down".
 
 Examples:
 - I tend to drink more than I should.
@@ -948,10 +948,10 @@ A shadow in the night, the rogue is a stealthy character. They don't make many a
 The warden is a brute, drawing primal power from their emotions (most often sheer anger). Their rage gives them armor, hardening their skin and strengthening their blows. Most often they wield two-handed weapons, but some archetypes dual-wield or use a shield and a one-handed weapon. They excel at surviving against massive damage and fighting those that depend on magic (spell or otherwise); at high levels they gain the ability to stop any aether-using ability cold. They struggle most with targets they can't reach. Their primary ability score is Strength.
 
 #dndtab("Melee Class Summary", columns: (1fr, 1fr, auto),
-"Armsman", "STR", "Flexible, heavy armor",
-"Brawler", "DEX/WIS", "Melee Skirmisher",
-"Rogue", "DEX", "Flexible Skirmisher with dirty tricks",
-"Warden", "STR", "Heavy Melee")
+"Armsman", "STR", "Ranged or melee, heavy armor",
+"Brawler", "DEX/WIS", "Melee skirmisher",
+"Rogue", "DEX", "Ranged or melee skirmisher with dirty tricks",
+"Warden", "STR", "Durable heavy melee")
 
 = Armsman
 
@@ -994,7 +994,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 
 === Class DC
-Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
+Whenever an ability from this class forces an enemy to make a saving throw against a DC, that DC is given by
 
 #align(center)[DC = 8 + your Strength modifier + your proficiency bonus]
 
@@ -1239,9 +1239,7 @@ As a brawler, you gain the following class features.
 === Hit Points
 #flush-block[
 - *Hit Dice:* 1d8 per brawler level
-
 - *Hit Points at 1st Level:* 8 + your Constitution modifier
-
 - *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per brawler level after 1st
 ]
 
@@ -1255,7 +1253,6 @@ As a brawler, you gain the following class features.
 - *Skills.* Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth
 ]
 
-
 === Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
@@ -1263,6 +1260,11 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a shortsword or (*b*) any simple weapon
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 - 10 darts
+
+=== Class DC
+When an ability of this class requires an enemy to make a saving throw, the DC is given by 
+
+#align(center)[*DC = 8 + your Wisdom modifier + your proficiency bonus*]
 
 == Unarmored Defense
 
@@ -1294,98 +1296,97 @@ You can spend 1 STA to take the Disengage or Dash action as a bonus action on yo
 
 #dndtab("The Brawler", columns: (1fr, 1fr, 1fr, 1fr, 3fr, 1fr, 1fr, 1fr),
  "Level ", "Proficiency", "Die", "Movement", "Features", "Stamina", "Aether", "Aether Limit",
-"1st   ", " +2 ", " 1d6  ", " -       ", " Unarmored Defense, Martial Arts             ", " 1 + CON ", " 1 ", " 1 ",
-"2nd   ", " +2 ", " 1d6  ", " +10 ft. ", " Conditioning, Unarmored Movement      ", " 2 + CON + WIS ", " 1 ", " 1",
-"3rd   ", " +2 ", " 1d6  ", " +10 ft. ", " Martial Tradition, Deflect Missiles   ", " 3 + CON + WIS ", " 2 ", " 1",
-"4th   ", " +2 ", " 1d6  ", " +10 ft. ", " Ability Score Improvement, Slow Fall  ", " 4 + CON + WIS ", " 2 ", " 1",
-"5th   ", " +3 ", " 1d8  ", " +10 ft. ", " Extra Attack, Stunning Strike         ", " 5 + CON + WIS ", " 3 ", " 2",
-"6th   ", " +3 ", " 1d8  ", " +15 ft. ", " Empowered Strikes, Martial Tradition Feature ", " 6 + CON + WIS ", " 3 ", " 2 ",
-"7th   ", " +3 ", " 1d8  ", " +15 ft. ", " Evasion, Stillness of Mind           ", " 7 + CON + WIS ", " 4 ", " 2",
-"8th   ", " +3 ", " 1d8  ", " +15 ft. ", " Ability Score Improvement            ", " 8 + CON + WIS ", " 4 ", " 2",
-"9th   ", " +4 ", " 1d8  ", " +15 ft. ", " Unarmored Movement improvement       ", " 9 + CON + WIS ", " 5 ", " 2",
-"10th  ", " +4 ", " 1d8  ", " +20 ft. ", " Purity of Body                      ", " 10 + CON + WIS ", " 5 ", " 3",
-"11th  ", " +4 ", " 1d10  ", " +20 ft. ", " Martial Tradition Feature         ", " 11 + CON + WIS ", " 6 ", " 3",
-"12th  ", " +4 ", " 1d10  ", " +20 ft. ", " Ability Score Improvement          ", " 12 + CON + WIS ", " 6 ", " 3",
-"13th  ", " +5 ", " 1d10  ", " +20 ft. ", " ---         ", " 13 + CON + WIS ", " 7 ", " 3",
-"14th  ", " +5 ", " 1d10  ", " +25 ft. ", " Diamond Soul                       ", " 14 + CON + WIS ", " 7 ", " 3",
-"15th  ", " +5 ", " 1d10  ", " +25 ft. ", " Timeless Body                      ", " 15 + CON + WIS ", " 8 ", " 3",
-"16th  ", " +5 ", " 1d10  ", " +25 ft. ", " Ability Score Improvement          ", " 16 + CON + WIS ", " 8 ", " 3",
-"17th  ", " +6 ", " 1d12 ", " +25 ft. ", " Martial Tradition Feature          ", " 17 + CON + WIS ", " 9 ", " 4",
-"18th  ", " +6 ", " 1d12 ", " +30 ft. ", " Empty Body                          ", " 18 + CON + WIS ", " 9 ", " 4",
-"19th  ", " +6 ", " 1d12 ", " +30 ft. ", " Ability Score Improvement           ", " 19 + CON + WIS ", " 10 ", " 4",
-"20th  ", " +6 ", " 1d12 ", " +30 ft. ", " Perfect Self                        ", " 20 + CON + WIS ", " 10 ", " 4"
+"1st   ", "+2", "1d6", "-", "Unarmored Defense, Martial Arts", "1 + CON", "1", "1",
+"2nd   ", "+2", "1d6", "+10 ft.", "Conditioning, Unarmored Movement", "2 + CON + WIS", "1", "1",
+"3rd   ", "+2", "1d6", "+10 ft.", "Martial Tradition, Deflect Missiles", "3 + CON + WIS", "2", "1",
+"4th   ", "+2", "1d6", "+10 ft.", "Ability Score Improvement, Slow Fall", "4 + CON + WIS", "2", "1",
+"5th   ", "+3", "1d8", "+10 ft.", "Extra Attack, Stunning Strike", "5 + CON + WIS", "3", "2",
+"6th   ", "+3", "1d8", "+15 ft.", "Empowered Strikes, Martial Tradition Feature", "6 + CON + WIS", "3", "2",
+"7th   ", "+3", "1d8", "+15 ft.", "Evasion, Stillness of Mind", "7 + CON + WIS", "4", "2",
+"8th   ", "+3", "1d8", "+15 ft.", "Ability Score Improvement", "8 + CON + WIS", "4", "2",
+"9th   ", "+4", "1d8", "+15 ft.", "Unarmored Movement improvement", "9 + CON + WIS", "5", "2",
+"10th  ", "+4", "1d8", "+20 ft.", "Purity of Body", "10 + CON + WIS", "5", "3",
+"11th  ", "+4", "1d10", "+20 ft.", "Martial Tradition Feature", "11 + CON + WIS", "6", "3",
+"12th  ", "+4", "1d10", "+20 ft.", "Ability Score Improvement", "12 + CON + WIS", "6", "3",
+"13th  ", "+5", "1d10", "+20 ft.", "---", "13 + CON + WIS", "7", "3",
+"14th  ", "+5", "1d10", "+25 ft.", "Diamond Soul", "14 + CON + WIS", "7", "3",
+"15th  ", "+5", "1d10", "+25 ft.", "Timeless Body", "15 + CON + WIS", "8", "3",
+"16th  ", "+5", "1d10", "+25 ft.", "Ability Score Improvement", "16 + CON + WIS", "8", "3",
+"17th  ", "+6", "1d12", "+25 ft.", "Martial Tradition Feature", "17 + CON + WIS", "9", "4",
+"18th  ", "+6", "1d12", "+30 ft.", "Empty Body", "18 + CON + WIS", "9", "4",
+"19th  ", "+6", "1d12", "+30 ft.", "Ability Score Improvement", "19 + CON + WIS", "10", "4",
+"20th  ", "+6", "1d12", "+30 ft.", "Perfect Self", "20 + CON + WIS", "10", "4"
 )
 
 
-=== Conditioning
+== Conditioning
 Beginning at 2nd level, your understanding of the world around you and yourself has made you more efficient. In effect, your Stamina pool is larger than most. You add your Wisdom modifier (if positive) to your Stamina pool. This is included in the Stamina column of the Brawler table.
 
-=== Unarmored Movement
+== Unarmored Movement
 
 Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain brawler levels, as shown in the Brawler table.
 
 At 9th level, you gain the ability to move along vertical surfaces, upside down, and across liquids without falling and without expending extra movement.
 
-=== Martial Tradition
+== Martial Tradition
 
 When you reach 3rd level, you commit yourself to a martial tradition. Three such traditions are detailed at the end of the class description: the defensively-oriented Way of the Guarded Soul, the offensively-oriented Way of Closed Fist, and the poison-aspected Way of the Serpent Dance. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
 
-=== Deflect Attacks
+== Deflect Attacks
 
-Starting at 3rd level, you can use your reaction to deflect an attack or catch the missile when you are hit by an attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity or Strength modifier + your brawler level.
+Starting at 3rd level, you can use your reaction to deflect an attack or catch the missile when you are hit by an attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity + your brawler level.
 
 If you reduce the damage from a projectile-based attack (such as a thrown rock or arrow) to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 STA to make a ranged attack with the projectile you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a brawler weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet. You can expend extra STA to increase the damage dealt by 2 for every extra STA expended.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-=== Slow Fall
+== Slow Fall
 
 Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your brawler level.
 
-=== Extra Attack
+== Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-
-=== Stunning Strike
+== Stunning Strike
 
 Starting at 5th level, you can interfere with the flow of energy in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 2 STA to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn. This does not stack with itself---you cannot use stunning strike on a creature already stunned using stunning strike.
 
-=== Empowered Strikes
+== Empowered Strikes
 
 Starting at 6th level, your unarmed strikes count as silvered. In addition, once per turn when you hit with an attack you can expend 1 AET to increase the damage dealt by your Martial Arts by 1 die (dealing 2d8 bludgeoning damage on an unarmed strike, increasing as your Martial Arts die increases).
 
 At 9th level, your unarmed strikes count as adamantine and silver.
 
-=== Evasion
+== Evasion
 
 At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 
-=== Stillness of Mind
+== Stillness of Mind
 
 Starting at 7th level, you can use a bonus action to end one effect on yourself that is causing you to be charmed or frightened, even if you could not normally take actions.
 
 Additionally, on your turn you can end an effect on yourself that causes you to be incapacitated by spending 3 STA without taking an action as long as you have at least 1 hit point.
 
-=== Purity of Body
+== Purity of Body
 
 At 10th level, your mastery of the energy flowing through you makes you immune to disease and poison (including both poison damage and the poisoned condition).
 
-=== Diamond Soul
+== Diamond Soul
 
 Beginning at 14th level, your self-mastery grants you proficiency in all saving throws.
 
 Additionally, whenever you make a saving throw and fail, you can spend 3 STA to reroll it and take the second result.
 
-=== Empty Body
+== Empty Body
 
 Beginning at 18th level, you can use your action to spend 4 STA to become invisible for 1 minute. During that time, you also have resistance to all damage. This invisibility does not end when you make an attack roll, but it does end early if you are incapacitated at the start of your turn.
 
-=== Perfect Self
+== Perfect Self
 
 At 20th level, if you are reduced to zero hit points, you can spend 8 STA as a reaction to instead heal to full health.
 
@@ -1406,7 +1407,6 @@ Starting when you choose this tradition at 3rd level, you can manipulate your en
 - It must succeed on a Dexterity saving throw or be knocked prone.
 - It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
 - It can't take reactions until the end of your next turn.
-
 
 === Wholeness of Body
 
@@ -1433,7 +1433,6 @@ Starting when you pick this subclass at level 3, you gain the following benefits
 
 - When you hit a target that is incapacitated with an unarmed attack, you deal maximum damage to them.
 - When you score a critical hit with an unarmed strike, the damage dealt by the additional damage die is maximized.
-
 
 === Knock Off Balance
 Starting at 6th level, when you attack a creature with an unarmed strike and hit, the creature cannot make Opportunity Attacks against you until the beginning of your next turn.
@@ -1469,9 +1468,9 @@ At 11th level, you embody the bewitching aspect of a cobra as you dance. As an a
 Starting at 11th level, the poison damage dealt by your Serpent's Venom ability becomes necrotic in addition to poison. Remember, this means that a creature must be resistant or immune to both necrotic and poison to be immune to the damage. In addition, creatures immune to the poisoned condition become staggered instead.
 
 === Legendary Transformation
-At 17th level, you learn the legendary effect animal shapes and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
+At 17th level, you learn the legendary effect _animal shapes_ and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
 
-
+#pagebreak()
 = Rogue
 
 Rogues are those who focus their training on fighting smarter, not harder. Not for them is the clash of two-handed weapons on heavy armor; they fight nimbly and evade blows, waiting for the perfect moment to strike where it hurts. Out of combat they have a broad arsenal of capabilities: they are the undisputed masters of skills and skill tricks. At higher levels, they gain overtly magical effects, often tied to the spaces Between. Subtlety and stealth often characterize a rogue.
@@ -1485,24 +1484,21 @@ Design Discussion: Less overtly criminal. Focuses on precision. Tons of skill tr
 As a rogue, you have the following class features.
 
 === Hit Points
-
+#flush-block[
 - *Hit Dice.* 1d8 per rogue level
-
 - *Hit Points at 1st Level.* 8 + your Constitution modifier
-
 - *Hit Points at Higher Levels.* 1d8 (or 5) + your Constitution modifier per rogue level after 1st
+]
 
 === Proficiencies
-
+#flush-block[
 - *Armor.* Light armor
-
 - *Weapons.* Simple weapons, hand crossbows, longswords, rapiers, shortswords, acid vials, flasks of alchemist fire
-
 - *Tools.* Thieves' tools
-
 - *Saving Throws.* Dexterity, Intelligence
-
 - *Skills.* Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth
+]
+
 
 === Equipment
 
@@ -1513,17 +1509,22 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a burglar's pack, (*b*) a dungeoneer's pack, or (*c*) an explorer's pack
 - (*a*) Leather armor, two daggers, and thieves' tools
 
-=== Expertise
+=== Class DC
+When an ability of this class requires an enemy to make a saving throw, the DC is given by
+
+#align(center)[*DC = 8 + your Dexterity modifier + your proficiency bonus*]
+
+== Expertise
 
 At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
 
 At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.
 
-=== Nimble Strike
+== Nimble Strike
 
 Beginning at 1st level, you have learned to use your agile precision to strike with melee weapons. You can use your Ranged Attack Modifier instead of your Melee Attack Modifier when making attacks with melee weapons. When you do so, you add your Dexterity modifier to weapon damage instead of your Strength modifier.
 
-=== Sneak Attack
+== Sneak Attack
 
 Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a weapon you are proficient in.
 
@@ -1531,11 +1532,11 @@ You don't need advantage on the attack roll if another enemy of the target is wi
 
 The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.
 
-=== Cunning Action
+== Cunning Action
 
 Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
 
-=== Skill Tricks
+== Skill Tricks
 
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks.
 
@@ -1545,68 +1546,67 @@ When you gain access to a new Skill Trick, you can also swap any Skill Trick you
 
 #dndtab("The Rogue", columns: (1fr, 1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Sneak Attack", "Features", "Skill Tricks", "Stamina", "Aether", "Aether Limit",
-"1st ", " +2 ", " 1d6 ", " Expertise, Sneak Attack ", " -- ", " 1 + CON ", " 1 ", " 1",
-"2nd ", " +2 ", " 1d6 ", " Cunning Action, Skill Tricks ", " 1 ", " 2 + CON ", " 1 ", " 1",
-"3rd ", " +2 ", " 2d6 ", " Roguish Archetype ", " 2 ", " 3 + CON ", " 2 ", " 1",
-"4th ", " +2 ", " 2d6 ", " Ability Score Improvement ", " 3 ", " 4 + CON ", " 2 ", " 1",
-"5th ", " +3 ", " 3d6 ", " Uncanny Dodge ", " 3 ", " 5 + CON ", " 3 ", " 2",
-"6th ", " +3 ", " 3d6 ", " Expertise, Roguish Archetype Feature ", " 4 ", " 6 + CON ", " 3 ", " 2",
-"7th ", " +3 ", " 4d6 ", " Evasion, Improved Skill Tricks ", " 4 ", " 7 + CON ", " 4 ", " 2",
-"8th ", " +3 ", " 4d6 ", " Ability Score Improvement ", " 5 ", " 8 + CON ", " 4 ", " 2",
-"9th ", " +4 ", " 5d6 ", " Roguish Archetype Feature ", " 5 ", " 9 + CON ", " 5 ", " 2",
-"10th ", " +4 ", " 5d6 ", " Ability Score Improvement ", " 6 ", " 10 + CON ", " 5 ", " 3",
-"11th ", " +4 ", " 6d6 ", " Reliable Talent, Expert Skill Tricks ", " 6 ", " 11 + CON ", " 6 ", " 3",
-"12th ", " +4 ", " 6d6 ", " Ability Score Improvement ", " 7 ", " 12 + CON ", " 6 ", " 3",
-"13th ", " +5 ", " 7d6 ", " Roguish Archetype Feature ", " 7 ", " 13 + CON ", " 7 ", " 3",
-"14th ", " +5 ", " 7d6 ", " Blindsense ", " 7 ", " 14 + CON ", " 7 ", " 3",
-"15th ", " +5 ", " 8d6 ", " Slippery Mind, Master Skill Tricks ", " 7 ", " 15 + CON ", " 8 ", " 3",
-"16th ", " +5 ", " 8d6 ", " Ability Score Improvement ", " 8 ", " 16 + CON ", " 8 ", " 3",
-"17th ", " +6 ", " 9d6 ", " Roguish Archetype Feature ", " 8 ", " 17 + CON ", " 9 ", " 4",
-"18th ", " +6 ", " 9d6 ", " Elusive ", " 8 ", " 18 + CON ", " 9 ", " 4",
-"19th ", " +6 ", " 10d6 ", " Ability Score Improvement ", " 9 ", " 19 + CON ", " 10 ", " 4",
-"20th ", " +6 ", " 11d6 ", " Stroke of Luck ", " 9 ", " 20 + CON ", " 10 ", " 4",
+"1st ", "+2", "1d6", "Expertise, Sneak Attack", "--", "1 + CON", "1", "1",
+"2nd ", "+2", "1d6", "Cunning Action, Skill Tricks", "1", "2 + CON", "1", "1",
+"3rd ", "+2", "2d6", "Roguish Archetype", "2", "3 + CON", "2", "1",
+"4th ", "+2", "2d6", "Ability Score Improvement", "3", "4 + CON", "2", "1",
+"5th ", "+3", "3d6", "Uncanny Dodge", "3", "5 + CON", "3", "2",
+"6th ", "+3", "3d6", "Expertise, Roguish Archetype Feature", "4", "6 + CON", "3", "2",
+"7th ", "+3", "4d6", "Evasion, Improved Skill Tricks", "4", "7 + CON", "4", "2",
+"8th ", "+3", "4d6", "Ability Score Improvement", "5", "8 + CON", "4", "2",
+"9th ", "+4", "5d6", "Roguish Archetype Feature", "5", "9 + CON", "5", "2",
+"10th ", "+4", "5d6", "Ability Score Improvement", "6", "10 + CON", "5", "3",
+"11th ", "+4", "6d6", "Reliable Talent, Expert Skill Tricks", "6", "11 + CON", "6", "3",
+"12th ", "+4", "6d6", "Ability Score Improvement", "7", "12 + CON", "6", "3",
+"13th ", "+5", "7d6", "Roguish Archetype Feature", "7", "13 + CON", "7", "3",
+"14th ", "+5", "7d6", "Blindsense", "7", "14 + CON", "7", "3",
+"15th ", "+5", "8d6", "Slippery Mind, Master Skill Tricks", "7", "15 + CON", "8", "3",
+"16th ", "+5", "8d6", "Ability Score Improvement", "8", "16 + CON", "8", "3",
+"17th ", "+6", "9d6", "Roguish Archetype Feature", "8", "17 + CON", "9", "4",
+"18th ", "+6", "9d6", "Elusive", "8", "18 + CON", "9", "4",
+"19th ", "+6", "10d6", "Ability Score Improvement", "9", "19 + CON", "10", "4",
+"20th ", "+6", "11d6", "Stroke of Luck", "9", "20 + CON", "10", "4",
 )
 
-=== Roguish Archetype
+== Roguish Archetype
 
 At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: either Scout, Shadowdancer or Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 6th, 9th, 13th, and 17th level.
 
-=== Ability Score Improvement
+== Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 You can also pick a Skill Trick (included in the skill tricks column of the Rogue table) but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list.
 
-=== Uncanny Dodge
+== Uncanny Dodge
 
 Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you. You can use this ability even if you have used your reaction already by expending 2 STA.
 
-=== Evasion
+== Evasion
 
 Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice-storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 
-=== Reliable Talent
+== Reliable Talent
 
 By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10. If you expend 3 STA, you can treat a d20 roll of 14 or lower as a 15.
 
-=== Blindsense
+== Blindsense
 
 Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.
 
-=== Slippery Mind
+== Slippery Mind
 
 By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.
 
-=== Elusive
+== Elusive
 
 Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.
 
-=== Stroke of Luck
+== Stroke of Luck
 
 At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Either option requires spending 6 STA.
 
-
-== Roguish Archetypes
+= Roguish Archetypes
 
 Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques.
 
@@ -1620,7 +1620,7 @@ When you take this archetype at 3rd level, you have learned to hit specific part
 === Exploration Adept
 Starting at 3rd level, you remain alert even when performing other exploration tasks and gain proficiency with Perception. If you already were proficient in Perception, you gain expertise instead.
 
-Additionally, you gain the jump skill trick even if you do not qualify, as you've learned to move in all sorts of environments.
+Additionally, you gain the Jump skill trick even if you do not qualify, as you've learned to move in all sorts of environments.
 
 === Exposing Shot
 At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to create a breach in the target's defenses, making it more vulnerable to your allies' damage. Until the end of your next turn, attacks against the creature have advantage and deal extra damage equal to your proficiency bonus + your Intelligence modifier. If you otherwise qualify for Sneak Attack (without the normal effect of Called Shot), you may apply that feature as well---you simply cannot use the Called Shot to qualify for Sneak Attack when you otherwise could not.
@@ -1637,16 +1637,15 @@ In addition, if you make a Dexterity (Stealth) check and do not like the result,
 At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to disrupt the target's concentration in addition to any normal damage (possibly including Sneak Attack). If the target was concentrating on a spell or effect, that concentration ends immediately. If they were casting a spell or incantation with a cast time longer than a single action, that incantation or spell fizzles with no effect, consuming any resources.
 
 === Primal Awakening
-At 9th level, you learn the primal-initiate skill trick, even if you don't qualify for it normally.
+At 9th level, you learn the Primal Initiate skill trick, even if you don't qualify for it normally.
 
 === Enhanced Senses
-At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the sense-aura incantation.
+At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the _sense aura_ incantation.
 
 === Lethal Shot
 At 17th level, you have developed the ability to strike at the cords that bind a creature to life. By spending 8 STA and 5 AET, you can make a special Called Shot. If you hit with this attack, you score a critical hit and can apply Sneak Attack even if you normally would not qualify. Once you use this ability, you cannot do so again until you finish a long rest.
 
-In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or death-ward).
-
+In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or _death ward_).
 
 == Shadowdancer
 
@@ -1691,10 +1690,8 @@ Starting at 3rd level when you take this archetype, you can do any one of the fo
 - Make a Wisdom (Medicine) check to stabilize someone.
 - Flip any number of switches, pull any number of levers, or otherwise interact with the environment in ways that do not require ability checks.
 
-
 === Confident Disguise
 Starting at 6th level, you can pull off disguises and impersonations more effectively. You have advantage on any attempt to persuade or deceive someone into believing you are someone else. If you spend 1 AET per person deceived, you can magically convince people against whom you succeeded that whatever documents you present (including blank paper) confirm your story in all details. If the documents are examined outside of your presence, the ruse will be revealed.
-
 
 === Distraction
 Starting at 6th level, you've become even better at providing distractions for others. As an action, you can spend 1+ STA to attempt a distraction that affects a number of creatures of your choice that can see or hear you equal to the stamina expended. The targets must make a Wisdom (Perception) check opposed by your Charisma (Deception) check. On a failure, they are considered blind and deaf to everything but you until the end of your next turn. To maintain the deception, you must take the action again on your next turn(s), redoing the opposed check each time, but you do not need to expend more stamina.
@@ -1704,18 +1701,17 @@ At 9th level, you learn to impose conditions on those that you hit with your Sne
 
 #dndtab("Trick Attack", columns: (2fr, 1fr, 1fr, 2fr),
 "Condition", "Cost", "Save", "Duration",
-"blinded ", " 4 STA ", " CON ", " 1 round",
-"broken ", " 2 AET + 3 STA ", " WIS ", " Save Ends",
-"charmed ", " 2 AET + 1 STA ", " WIS ", " Save Ends",
-"deafened ", " 2 STA ", " CON ", " 1 round",
-"frightened ", " 2 AET + 1 STA ", " WIS ", " 1 round",
-"prone ", " 2 STA ", " STR ", " ---",
-"shaken ", " 1 STA ", " --- ", " 1 round",
-"staggered ", " 3 STA ", " CON ", " Save Ends",
-"stunned ", " 2 AET + 2 STA ", " CON ", " 1 round",
-"unconscious ", " 2 AET + 8 STA ", " CON ", " Save Ends", 
+"blinded ", "4 STA", "CON", "1 round",
+"broken ", "2 AET + 3 STA", "WIS", "Save Ends",
+"charmed ", "2 AET + 1 STA", "WIS", "Save Ends",
+"deafened ", "2 STA", "CON", "1 round",
+"frightened ", "2 AET + 1 STA", "WIS", "1 round",
+"prone ", "2 STA", "STR", "---",
+"shaken ", "1 STA", "---", "1 round",
+"staggered ", "3 STA", "CON", "Save Ends",
+"stunned ", "2 AET + 2 STA", "CON", "1 round",
+"unconscious ", "2 AET + 8 STA", "CON", "Save Ends", 
 )
-
 
 === Magical Impersonation
 Starting at 13th level, you've learned to mold your aether to mimic that of other creatures. You gain the following benefits:
@@ -1730,15 +1726,15 @@ Starting at 17, you can attempt to cast any spell or use any incantation (withou
 
 #dndtab("Deceive the Universe", columns: (3fr, 1fr), 
 "Type", "DC",
-"Spell ", " 12 + base cost",
-"Incantations ", " ---",
-"--- Common ", " 12",
-"--- Uncommon ", " 17",
-"--- Rare ", " 22",
-"--- Very Rare ", " 25",
-"--- Legendary ", " 30"
+"Spell ", "12 + base cost",
+"Incantations ", "---",
+"--- Common ", "12",
+"--- Uncommon ", "17",
+"--- Rare ", "22",
+"--- Very Rare ", "25",
+"--- Legendary ", "30"
 )
-
+#pagebreak()
 = Warden
 
 Wardens are warriors whose prowess has as much to do with their ties to primal power as their own skill. They channel nature's power via strong emotions. Many give themselves to supernatural anger, enough so that many call this state Rage, despite it not always being anger that serves as the channel. They archetypally fight using two-handed weapons, although some fight with a weapon in each hand and a few use weapon and shield.
@@ -1755,24 +1751,20 @@ To quickly build a warden, make Strength your highest ability score, with Consti
 As a warden, you gain the following class features.
 
 === Hit Points
-
+#flush-block[
 - *Hit Dice.* 1d12 per warden level
-
 - *Hit Points at 1st Level.* 12 + your Constitution modifier
-
 - *Hit Points at Higher Levels.* 1d12 (or 7) + your Constitution modifier per warden level after 1st
+]
 
 === Proficiencies
-
+#flush-block[
 - *Armor.* Light armor, medium armor, shields
-
 - *Weapons.* Simple weapons, martial weapons
-
 - *Tools.* None
-
 - *Saving Throws.* Strength, Constitution
-
 - *Skills.* Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival
+]
 
 === Equipment
 
@@ -1782,19 +1774,24 @@ You start with the following equipment, in addition to the equipment granted by 
 -  (*a*) two handaxes or (*b*) any simple weapon
 -  An explorer's pack and four javelins
 
-=== Exceptional Stamina
+=== Class DC
+When an ability of this class requires an enemy to make a saving throw, the DC is given by
+
+#align(center)[*DC = 8 + your Strength modifier + your proficiency bonus*]
+
+== Exceptional Stamina
 Wardens pull on the vitality of the earth, fueling their stamina. Your stamina at each level is equal to your level + your Constitution modifier.
 
 In addition, you can spend an action to regain stamina equal to twice your Constitution modifier. Once you do so, you cannot use this ability again until you finish a long rest.
 
-=== Furious Blow
+== Furious Blow
 Once per turn when you hit with a melee attack, you can choose to expend 1 or more STA to deal additional damage. If you do so, roll an additional weapon damage die for the first STA you spend and each additional 2 stamina expended and add it to the total rolled. You cannot spend more than 7 Stamina this way in a single attack.
 
 When you deal this extra damage, you gain Focus, which can be spent to fuel other abilities.
 
 Starting at 8th level, when you hit a creature that is Concentrating and deal the additional damage, they have disadvantage on the concentration check.
 
-=== Rage
+== Rage
 
 You can summon primal strength in dire circumstances. As a bonus action on your turn or as a reaction when you take damage, you can spend 2 STA to enter a heightened state, commonly called Rage.
 
@@ -1808,38 +1805,38 @@ Your rage lasts until the end of your next turn. If you take damage or make an a
 
 #dndtab("The Warden", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr), 
 "Level", "Proficiency", "Features", "Stamina", "Aether", "Aether Limit",
-"1st    ", " +2 ", " Exceptional Stamina, Furious Blow, Rage, Unarmored Defense    ", " 1 + CON         ", " 1     ", " 1",
-"2nd    ", " +2 ", " Reckless Attack, Danger Sense ", " 2 + CON         ", " 1     ", " 1",
-"3rd    ", " +2 ", " Primal Path                   ", " 3 + CON         ", " 2     ", " 1",
-"4th    ", " +2 ", " Ability Score Improvement     ", " 4 + CON         ", " 2     ", " 1",
-"5th    ", " +3 ", " Extra Attack, Fast Movement   ", " 5 + CON         ", " 3     ", " 2",
-"6th    ", " +3 ", " Path feature                  ", " 6 + CON         ", " 3     ", " 2",
-"7th    ", " +3 ", " Feral Instinct                ", " 7 + CON         ", " 4     ", " 2",
-"8th    ", " +3 ", " Ability Score Improvement     ", " 8 + CON         ", " 4     ", " 2",
-"9th    ", " +4 ", " Brutal Critical (1 die, 19)   ", " 9 + CON         ", " 5     ", " 2",
-"10th   ", " +4 ", " Path feature, Retaliation     ", " 10 + CON        ", " 5     ", " 3",
-"11th   ", " +4 ", " Relentless,                   ", " 11 + CON        ", " 6     ", " 3",
-"12th   ", " +4 ", " Ability Score Improvement     ", " 12 + CON        ", " 6     ", " 3",
-"13th   ", " +5 ", " Brutal Critical (2 dice, 18), Ground Smash  ", " 13 + CON        ", " 7     ", " 3",
-"14th   ", " +5 ", " Path feature                  ", " 14 + CON        ", " 7     ", " 3",
-"15th   ", " +5 ", " Spellbreaker               ", " 15 + CON        ", " 8     ", " 3",
-"16th   ", " +5 ", " Ability Score Improvement     ", " 16 + CON        ", " 8     ", " 3",
-"17th   ", " +6 ", " Brutal Critical (3 dice)      ", " 17 + CON        ", " 9     ", " 4",
-"18th   ", " +6 ", " Magebane             ", " 18 + CON        ", " 9     ", " 4",
-"19th   ", " +6 ", " Ability Score Improvement     ", " 19 + CON        ", " 10     ", " 4",
-"20th   ", " +6 ", " Primal Champion               ", " 20 + CON        ", " 10     ", " 4",
+"1st    ", "+2", "Exceptional Stamina, Furious Blow, Rage, Unarmored Defense", "1 + CON", "1", "1",
+"2nd    ", "+2", "Reckless Attack, Danger Sense", "2 + CON", "1", "1",
+"3rd    ", "+2", "Primal Path", "3 + CON", "2", "1",
+"4th    ", "+2", "Ability Score Improvement", "4 + CON", "2", "1",
+"5th    ", "+3", "Extra Attack, Fast Movement", "5 + CON", "3", "2",
+"6th    ", "+3", "Path feature", "6 + CON", "3", "2",
+"7th    ", "+3", "Feral Instinct", "7 + CON", "4", "2",
+"8th    ", "+3", "Ability Score Improvement", "8 + CON", "4", "2",
+"9th    ", "+4", "Brutal Critical (1 die, 19)", "9 + CON", "5", "2",
+"10th   ", "+4", "Path feature, Retaliation", "10 + CON", "5", "3",
+"11th   ", "+4", "Relentless,", "11 + CON", "6", "3",
+"12th   ", "+4", "Ability Score Improvement", "12 + CON", "6", "3",
+"13th   ", "+5", "Brutal Critical (2 dice, 18), Ground Smash", "13 + CON", "7", "3",
+"14th   ", "+5", "Path feature", "14 + CON", "7", "3",
+"15th   ", "+5", "Spellbreaker", "15 + CON", "8", "3",
+"16th   ", "+5", "Ability Score Improvement", "16 + CON", "8", "3",
+"17th   ", "+6", "Brutal Critical (3 dice)", "17 + CON", "9", "4",
+"18th   ", "+6", "Magebane", "18 + CON", "9", "4",
+"19th   ", "+6", "Ability Score Improvement", "19 + CON", "10", "4",
+"20th   ", "+6", "Primal Champion", "20 + CON", "10", "4",
 )
 
 
-=== Unarmored Defense
+== Unarmored Defense
 
 While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
 
-=== Reckless Attack
+== Reckless Attack
 
 Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
 
-=== Danger Sense
+== Danger Sense
 
 At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
 
@@ -1847,78 +1844,70 @@ You have advantage on Dexterity saving throws against effects that you can see, 
 
 Alternatively, you can expend Focus to gain advantage on a Wisdom saving throw against an effect that would impose the charmed, frightened, or incapacitated condition.
 
-=== Primal Path
+== Primal Path
 
 At 3rd level, you choose a path that shapes the nature of your rage. Choose the Elemental Path, the Juggernaut Path or the Whirlwind Path, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
-=== Weapon Specialization
+== Weapon Specialization
 
 Starting at 3rd level, you have trained particularly with a particular weapon property. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
-
+#flush-block[
 - *Battering.* Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
-
 - *Cleaving.* You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
-
 - *Light.* When you make the additional attack with a light weapon, you add your ability modifier to the damage dealt.
-
 - *Parrying.* The reaction attack granted by this property is made at advantage.
-
 - *Reach.* You can make opportunity attacks when a creature enters your range as well as leaves it.
-
 - *Thrown.* You can draw thrown weapons as part of the attack. In addition, the damage die increases by one step when thrown and you do not suffer disadvantage out to the long range of the attack.
-
 - *Two-handed (Melee only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
+]
 
-- *Versatile.* You get the increased damage die even when wielding it in one hand.
-
-
-=== Ability Score Improvement
+== Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-=== Extra Attack
+== Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-=== Fast Movement
+== Fast Movement
 
 Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor. You can also always jump as if you had a running start.
 
-=== Feral Instinct
+== Feral Instinct
 
 By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 
 Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you activate Rage before doing anything else on that turn.
 
-=== Brutal Critical
+== Brutal Critical
 
 Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. You also score a critical hit on a 19 as well as a 20 on the d20.
 
 This increases to two additional dice at 13th level and three additional dice at 17th level. From 13th level you also score a critical hit on an 18.
 
-=== Retaliation
+== Retaliation
 Starting at 10th level, when you take damage from a creature that is within your reach, you can use your reaction to make a melee weapon attack against that creature. You can spend 2 STA while doing so to attack at advantage.
 
-=== Relentless
+== Relentless
 
 Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can spend 5 STA to make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.
 
-=== Ground Smash
+== Ground Smash
 
 At 13th level you learn the legendary effect _earthquake_ and can use it as an action once per long rest, even when you are Raging. When you do so, you must center it on yourself.
 
-=== Spell Breaker
+== Spell Breaker
 Starting at 15th level, the sheer weight of your primal power inhibits your enemies' magical abilities. While you have Focus, you make saving throws against magical effects at advantage. Additionally, you can expend 3 AET to end any spell effect within 5 feet of you.
 
-=== Magebane
+== Magebane
 
-Beginning at 18th level, if an enemy within your reach attempts to cast a spell or use a magical ability, you can spend your reaction and 2 AET to force them to make a Constitution saving throw against a DC of 8 + your Strength + your proficiency bonus. On a failure, the spell or ability fails and the action is wasted but any resource (aether or daily uses) is not expended.
+Beginning at 18th level, if an enemy within your reach attempts to cast a spell or use a magical ability, you can spend your reaction and 2 AET to force them to make a Constitution saving throw. On a failure, the spell or ability fails and the action is wasted but any resource (aether or daily uses) is not expended.
 
-=== Primal Champion
+== Primal Champion
 
 At 20th level, you embody the power of the wilds. Your Strength and Constitution scores each increase by +2. Your maximum for those scores is now +7.
 
@@ -1931,20 +1920,19 @@ Those who embrace the Elemental Path embrace the primal side of their nature as 
 
 === Elemental Rage
 At 3rd level when you pick this Path, choose one of the elements below. You gain the listed feature while you are raging.
-
-- *Lava.* You gain resistance to fire damage. If a creature you can see hits you with an attack, you can use your reaction and spend 1 AET to roll a number of d10s equal to half of your proficiency bonus. You deal the rolled amount plus your Constitution modifier as fire damage to the triggering attacker.
-
+#flush-block[
 - *Ice.* You gain resistance to cold damage. If a creature you can see hits you with an attack, you can use your reaction and spend 1 AET to reduce their movement speed by half until the end of their next turn.
-
+- *Lava.* You gain resistance to fire damage. If a creature you can see hits you with an attack, you can use your reaction and spend 1 AET to roll a number of d10s equal to half of your proficiency bonus. You deal the rolled amount plus your Constitution modifier as fire damage to the triggering attacker.
 - *Lightning.* You gain resistance to lightning damage. If a creature you can see within 30 feet is targeted by an attack, you can use your reaction and spend 1 AET to teleport to an unoccupied space within 5 feet of them and become the target of the attack instead.
+]
 
 === Elemental Blow
-At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Raging Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is \nameref{condition:staggered} until the end of your next turn. If they were already staggered, they become \nameref{condition:stunned} instead.
+At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Raging Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw. On a failed saving throw, the target is staggered until the end of your next turn. If they were already staggered, they become stunned instead.
 
 === Flickering Rush
 Starting at 10th level, you can spend 3 AET on your turn to teleport up to twice your speed. If you do so, you cannot move any further that turn.
 
-In addition, if you are raging when you use this ability, at your choice of starting or ending points you can release elemental energy corresponding to the choice you made for your Elemental Rage feature. All creatures within 10 feet must make a Dexterity saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed save, they take 6d6 damage of the type you gained resistance to. On a success, they take half as much damage.
+In addition, if you are raging when you use this ability, at your choice of starting or ending points you can release elemental energy corresponding to the choice you made for your Elemental Rage feature. All creatures within 10 feet must make a Dexterity saving throw. On a failed save, they take 6d6 damage of the type you gained resistance to. On a success, they take half as much damage.
 
 === Legendary Effect: Control Weather
 At 14th level you learn the legendary effect _control weather_ and can use it once per long rest.
@@ -2000,7 +1988,7 @@ Starting at 14th level, your speed has increased enough so that it appears you c
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 #pagebreak()
-= NIH Classes: Hybrid <marker-up>
+= NIH Classes: Hybrid
 
 Hybrid classes in NIH are those that use both spells and weapons together. They bridge the gap between the martials and the full casters. With less stamina but more aether than martials, more of their abilities are outright magical than martials. At the same time, they are generally more durable and weapon-oriented than full spellcasters. Generally, hybrid classes require investment in multiple ability scores to do well.
 
@@ -2020,8 +2008,8 @@ Lightly-armored and wielding a bow or a blade, the spellblade uniquely merges sp
 
 #dndtab("Hybrid Summary", columns:(2fr, 1fr, 3fr),
 "Class", "Primary Ability Score", "Play Style",
-"Oathbound ", " STR/CHA ", "Melee heavy support",
-"Ranger ", " DEX/WIS", "Ranged or melee skirmisher (damage focus)",
+"Oathbound ", "STR/CHA", "Melee heavy support",
+"Ranger ", "DEX/WIS", "Ranged or melee skirmisher (damage focus)",
 "Spellblade ", "DEX/INT ", "Ranged or melee magical support/control"
 )
 
@@ -2083,26 +2071,26 @@ You can use this feature a number of times equal to 1 + your Charisma modifier. 
 
 #dndtab("The Oathbound", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr),
 "Level ", "Proficiency", "Features", "Spells Known", "Stamina", "Aether", "Aether Limit",
-" 1st   ", " +2                ", " Divine Sense, Lay on Hands                 ", " --- ", " 1   ", " 2   ", " 1",
-" 2nd   ", " +2                ", " Weapon Specialization, Spellcasting, Divine Smite ", " 1 ", " 2   ", " 4   ", " 2",
-" 3rd   ", " +2                ", " Divine Health, Sacred Oath                 ", " 1 ", " 3   ", " 6   ", " 3",
-" 4th   ", " +2                ", " Ability Score Improvement                  ", " 2 ", " 4   ", " 8   ", " 3",
-" 5th   ", " +3                ", " Extra Attack                               ", " 2 ", " 5   ", " 10   ", " 4",
-" 6th   ", " +3                ", " Aura of Protection                         ", " 3 ", " 6   ", " 12   ", " 5",
-" 7th   ", " +3                ", " Sacred Oath feature, Find Steed            ", " 3 ", " 7   ", " 14   ", " 5",
-" 8th   ", " +3                ", " Ability Score Improvement                  ", " 4 ", " 8   ", " 16   ", " 6",
-" 9th   ", " +4                ", " -                                          ", " 4 ", " 9   ", " 18   ", " 7",
-" 10th  ", " +4                ", " Aura of Courage                            ", " 5 ", " 10   ", " 20   ", " 7",
-" 11th  ", " +4                ", " Improved Divine Smite                      ", " 5 ", " 11  ", " 22   ", " 8",
-" 12th  ", " +4                ", " Ability Score Improvement                  ", " 6 ", " 12   ", " 24   ", " 9",
-" 13th  ", " +5                ", " -                                          ", " 6 ", " 13   ", " 26   ", " 9",
-" 14th  ", " +5                ", " Cleansing Touch                            ", " 7 ", " 14   ", " 28   ", " 10",
-" 15th  ", " +5                ", " Sacred Oath feature                        ", " 7 ", " 15   ", " 30   ", " 11",
-" 16th  ", " +5                ", " Ability Score Improvement                  ", " 8 ", " 16   ", " 32  ", " 11",
-" 17th  ", " +6                ", " -                                          ", " 8 ", " 17   ", " 34   ", " 12",
-" 18th  ", " +6                ", " Aura improvements                          ", " 9 ", " 18   ", " 36   ", " 13",
-" 19th  ", " +6                ", " Ability Score Improvement                  ", " 9 ", " 19   ", " 38   ", " 13",
-" 20th  ", " +6                ", " Sacred Oath feature                        ", " 10 ", " 20   ", " 40   ", " 14",
+"1st", "+2", "Divine Sense, Lay on Hands", "---", "1", "2", "1",
+"2nd", "+2", "Weapon Specialization, Spellcasting, Divine Smite", "1", "2", "4", "2",
+"3rd", "+2", "Divine Health, Sacred Oath", "1", "3", "6", "3",
+"4th", "+2", "Ability Score Improvement", "2", "4", "8", "3",
+"5th", "+3", "Extra Attack", "2", "5", "10", "4",
+"6th", "+3", "Aura of Protection", "3", "6", "12", "5",
+"7th", "+3", "Sacred Oath feature, Find Steed", "3", "7", "14", "5",
+"8th", "+3", "Ability Score Improvement", "4", "8", "16", "6",
+"9th", "+4", "-", "4", "9", "18", "7",
+"10th", "+4", "Aura of Courage", "5", "10", "20", "7",
+"11th", "+4", "Improved Divine Smite", "5", "11", "22", "8",
+"12th", "+4", "Ability Score Improvement", "6", "12", "24", "9",
+"13th", "+5", "-", "6", "13", "26", "9",
+"14th", "+5", "Cleansing Touch", "7", "14", "28", "10",
+"15th", "+5", "Sacred Oath feature", "7", "15", "30", "11",
+"16th", "+5", "Ability Score Improvement", "8", "16", "32", "11",
+"17th", "+6", "-", "8", "17", "34", "12",
+"18th", "+6", "Aura improvements", "9", "18", "36", "13",
+"19th", "+6", "Ability Score Improvement", "9", "19", "38", "13",
+"20th", "+6", "Sacred Oath feature", "10", "20", "40", "14",
 )
 
 == Lay on Hands
@@ -2353,7 +2341,7 @@ An oathbound who has broken a vow typically seeks absolution from a priest who s
 If an oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.]
 
 == Oath of Retribution
-Those who take the Oath of Retribution are generally those who have lost something or someone dear to them at the hand of a villain or foe. For some, this villain is concrete---the Lord of Castle Keep, who murdered their daughter---for others, it may be as abstract as "those who enslave others" or "the gods themselves". Importantly, their target is individual to them. Of all the Oaths, this is the one least likely to have an organization or order backing them. Lone wolves, joining with the party out of shared motives or because their paths happened to coincide for a while. An oathbound of Retribution devotes themselves to the destruction of their sworn foe and all those who assist or aid them. Generally, good backstories for oathbound of Retribution _generalize_ to match the campaign's themes. If your sworn foe is one specific person, there's really no good path for the character if the campaign steers the party away from that person or if they're defeated early on. In a campaign with a narrow focus, a narrow foe works best. In a more open-ended campaign, a more open-ended sworn foe is more appropriate.
+Those who take the Oath of Retribution are generally those who have lost something or someone dear to them at the hand of a villain or foe. For some, this villain is concrete---the Lord of Castle Keep, who murdered their daughter---for others, it may be as abstract as "those who enslave others"or"the gods themselves". Importantly, their target is individual to them. Of all the Oaths, this is the one least likely to have an organization or order backing them. Lone wolves, joining with the party out of shared motives or because their paths happened to coincide for a while. An oathbound of Retribution devotes themselves to the destruction of their sworn foe and all those who assist or aid them. Generally, good backstories for oathbound of Retribution _generalize_ to match the campaign's themes. If your sworn foe is one specific person, there's really no good path for the character if the campaign steers the party away from that person or if they're defeated early on. In a campaign with a narrow focus, a narrow foe works best. In a more open-ended campaign, a more open-ended sworn foe is more appropriate.
 
 === Tenets of Retribution
 #flush-block[
@@ -2527,26 +2515,26 @@ You choose additional favored terrain types at 6th and 10th level.
 
 #dndtab("The Ranger", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells Known", "Focused Foe Die", "Stamina", "Aether", "Aether Limit",
-"1st   ", " +2                ", " Focused Foe, Natural Explorer                     ", " -            ", " d4   ", " 1   ", " 2   ", " 1",
-"2nd   ", " +2                ", " Weapon Specialization, Spellcasting               ", " 2            ", " d4   ", " 2   ", " 4   ", " 2",
-"3rd   ", " +2                ", " Ranger Archetype, Primeval Awareness              ", " 3            ", " d4   ", " 3   ", " 6   ", " 3",
-"4th   ", " +2                ", " Ability Score Improvement                         ", " 3            ", " d4   ", " 4   ", " 8   ", " 3",
-"5th   ", " +3                ", " Extra Attack                                      ", " 4            ", " d6   ", " 5   ", " 10   ", " 4",
-"6th   ", " +3                ", " Favored Enemy and Natural Explorer improvements   ", " 4            ", " d6   ", " 6   ", " 12   ", " 5",
-"7th   ", " +3                ", " Ranger Archetype feature                          ", " 5            ", " d6   ", " 7   ", " 14   ", " 5",
-"8th   ", " +3                ", " Ability Score Improvement, Land's Stride          ", " 5            ", " d6   ", " 8   ", " 16   ", " 6",
-"9th   ", " +4                ", " Aether Strike                                     ", " 6            ", " d6   ", " 9   ", " 18   ", " 7",
-"10th  ", " +4                ", " Natural Explorer Improvement                      ", " 6            ", " d6   ", " 10   ", " 20   ", " 7",
-"11th  ", " +4                ", " Ranger Archetype feature                          ", " 7            ", " d8   ", " 11   ", " 22   ", " 8",
-"12th  ", " +4                ", " Ability Score Improvement                         ", " 7            ", " d8   ", " 11   ", " 24   ", " 9",
-"13th  ", " +5                ", " -                                                 ", " 8            ", " d8   ", " 12   ", " 26   ", " 9",
-"14th  ", " +5                ", " Favored Enemy improvement, Vanish                 ", " 8            ", " d8   ", " 12   ", " 28   ", " 10",
-"15th  ", " +5                ", " Ranger Archetype feature                          ", " 9            ", " d8   ", " 13   ", " 30   ", " 11",
-"16th  ", " +5                ", " Ability Score Improvement                         ", " 9            ", " d8   ", " 13   ", " 32   ", " 11",
-"17th  ", " +6                ", " -                                                 ", " 10           ", " d8   ", " 14   ", " 34   ", " 12",
-"18th  ", " +6                ", " Feral Senses                                      ", " 10           ", " d8   ", " 14   ", " 36   ", " 13",
-"19th  ", " +6                ", " Ability Score Improvement                         ", " 11           ", " d8   ", " 15   ", " 38   ", " 13",
-"20th  ", " +6                ", " Foe Slayer                                        ", " 11           ", " d8   ", " 15   ", " 40   ", " 14",
+"1st   ", "+2", "Focused Foe, Natural Explorer", "-", "d4", "1", "2", "1",
+"2nd   ", "+2", "Weapon Specialization, Spellcasting", "2", "d4", "2", "4", "2",
+"3rd   ", "+2", "Ranger Archetype, Primeval Awareness", "3", "d4", "3", "6", "3",
+"4th   ", "+2", "Ability Score Improvement", "3", "d4", "4", "8", "3",
+"5th   ", "+3", "Extra Attack", "4", "d6", "5", "10", "4",
+"6th   ", "+3", "Favored Enemy and Natural Explorer improvements", "4", "d6", "6", "12", "5",
+"7th   ", "+3", "Ranger Archetype feature", "5", "d6", "7", "14", "5",
+"8th   ", "+3", "Ability Score Improvement, Land's Stride", "5", "d6", "8", "16", "6",
+"9th   ", "+4", "Aether Strike", "6", "d6", "9", "18", "7",
+"10th  ", "+4", "Natural Explorer Improvement", "6", "d6", "10", "20", "7",
+"11th  ", "+4", "Ranger Archetype feature", "7", "d8", "11", "22", "8",
+"12th  ", "+4", "Ability Score Improvement", "7", "d8", "11", "24", "9",
+"13th  ", "+5", "-", "8", "d8", "12", "26", "9",
+"14th  ", "+5", "Favored Enemy improvement, Vanish", "8", "d8", "12", "28", "10",
+"15th  ", "+5", "Ranger Archetype feature", "9", "d8", "13", "30", "11",
+"16th  ", "+5", "Ability Score Improvement", "9", "d8", "13", "32", "11",
+"17th  ", "+6", "-", "10", "d8", "14", "34", "12",
+"18th  ", "+6", "Feral Senses", "10", "d8", "14", "36", "13",
+"19th  ", "+6", "Ability Score Improvement", "11", "d8", "15", "38", "13",
+"20th  ", "+6", "Foe Slayer", "11", "d8", "15", "40", "14",
 )
 
 == Nimble Strike
@@ -2875,26 +2863,26 @@ You can cast your spellblade spells while wearing light or medium armor.
 
 #dndtab("The Spellblade", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells", "Cantrips", "Skill Tricks", "Stamina", "Aether", "Aether Limit",
-" 1st   ", " +2 ", " Spellcasting, Arcane Manipulation (d6)        	", " 1      ", " 2              ", " --- ", " 1   ", " 2 ", " 2",
-" 2nd   ", " +2 ", " Skill Tricks, Expertise                 				", " 1       ", " 2              ", " 1   ", " 2   ", " 4 ", " 2",
-" 3rd   ", " +2 ", " Spellblade Focus, Nimble Strike                	", " 2       ", " 2              ", " 1   ", " 3   ", " 6 ", " 3",
-" 4th   ", " +2 ", " Ability Score Improvement                     	", " 2       ", " 2              ", " 2   ", " 4   ", " 8 ", " 3",
-" 5th   ", " +3 ", " Arcane Manipulation (d8), Renewed Manipulation	", " 3       ", " 3              ", " 2   ", " 5   ", " 10 ", " 4",
-" 6th   ", " +3 ", " Channeling (Cantrip)               							", " 3       ", " 3              ", " 2   ", " 6   ", " 12 ", " 5",
-" 7th   ", " +3 ", " Spellblade Focus Feature                        ", " 4       ", " 3              ", " 2   ", " 7   ", " 14 ", " 5",
-" 8th   ", " +3 ", " Ability Score Improvement                       ", " 4       ", " 3              ", " 3   ", " 8   ", " 16 ", " 6",
-" 9th   ", " +4 ", " Counter-weave                                    ", " 5       ", " 4              ", " 3   ", " 9   ", " 18 ", " 7",
-" 10th  ", " +4 ", " Arcane Manipulation (d10), Expertise 						", " 5       ", " 4              ", " 3   ", " 10  ", " 20 ", " 7",
-" 11th  ", " +4 ", " Channeling (3)                                  ", " 6       ", " 4              ", " 3   ", " 11  ", " 22 ", " 8",
-" 12th  ", " +4 ", " Ability Score Improvement                       ", " 6       ", " 4              ", " 4   ", " 12  ", " 24 ", " 9",
-" 13th  ", " +5 ", " Channeling (5)                                  ", " 7       ", " 5              ", " 4   ", " 13  ", " 26 ", " 9",
-" 14th  ", " +5 ", " Spellblade Focus Feature                				", " 7       ", " 5              ", " 4   ", " 14  ", " 28 ", " 10",
-" 15th  ", " +5 ", " Arcane Manipulation (d12)                       ", " 8       ", " 5              ", " 4   ", " 15  ", " 30 ", " 11",
-" 16th  ", " +5 ", " Ability Score Improvement                       ", " 8       ", " 5              ", " 5   ", " 16  ", " 32 ", " 11",
-" 17th  ", " +6 ", " Channeling (8)                                  ", " 9       ", " 6              ", " 5   ", " 17  ", " 34 ", " 12",
-" 18th  ", " +6 ", " Spellblade Focus Feature                 				", " 9       ", " 6              ", " 5   ", " 18  ", " 36 ", " 13",
-" 19th  ", " +6 ", " Ability Score Improvement                       ", " 10      ", " 6              ", " 6   ", " 19  ", " 38 ", " 13",
-" 20th  ", " +6 ", " Superior Inspiration                            ", " 10      ", " 6              ", " 6   ", " 20  ", " 40 ", " 14",
+"1st", "+2", "Spellcasting, Arcane Manipulation (d6)", "1", "2", "---", "1", "2", "2",
+"2nd", "+2", "Skill Tricks, Expertise", "1", "2", "1", "2", "4", "2",
+"3rd", "+2", "Spellblade Focus, Nimble Strike", "2", "2", "1", "3", "6", "3",
+"4th", "+2", "Ability Score Improvement", "2", "2", "2", "4", "8", "3",
+"5th", "+3", "Arcane Manipulation (d8), Renewed Manipulation", "3", "3", "2", "5", "10", "4",
+"6th", "+3", "Channeling (Cantrip)", "3", "3", "2", "6", "12", "5",
+"7th", "+3", "Spellblade Focus Feature", "4", "3", "2", "7", "14", "5",
+"8th", "+3", "Ability Score Improvement", "4", "3", "3", "8", "16", "6",
+"9th", "+4", "Counter-weave", "5", "4", "3", "9", "18", "7",
+"10th", "+4", "Arcane Manipulation (d10), Expertise", "5", "4", "3", "10", "20", "7",
+"11th", "+4", "Channeling (3)", "6", "4", "3", "11", "22", "8",
+"12th", "+4", "Ability Score Improvement", "6", "4", "4", "12", "24", "9",
+"13th", "+5", "Channeling (5)", "7", "5", "4", "13", "26", "9",
+"14th", "+5", "Spellblade Focus Feature", "7", "5", "4", "14", "28", "10",
+"15th", "+5", "Arcane Manipulation (d12)", "8", "5", "4", "15", "30", "11",
+"16th", "+5", "Ability Score Improvement", "8", "5", "5", "16", "32", "11",
+"17th", "+6", "Channeling (8)", "9", "6", "5", "17", "34", "12",
+"18th", "+6", "Spellblade Focus Feature", "9", "6", "5", "18", "36", "13",
+"19th", "+6", "Ability Score Improvement", "10", "6", "6", "19", "38", "13",
+"20th", "+6", "Superior Inspiration", "10", "6", "6", "20", "40", "14",
 )
 
 == Arcane Manipulation
@@ -3164,10 +3152,10 @@ Warlocks are a bit of an odd duck as classes go. They are the most flexible at b
 
 #dndtab("Caster Summary", 
  "Class", "Primary Ability Score", "Playstyle",
-"Arcanist ", " INT ", " ranged control/damage",
-"Priest ", " WIS ", " mid-range support",
-"Shaman ", " WIS ", " mid-range control",
-"Warlock ", " CHA ", " flexible"
+"Arcanist ", "INT", "ranged control/damage",
+"Priest ", "WIS", "mid-range support",
+"Shaman ", "WIS", "mid-range control",
+"Warlock ", "CHA", "flexible"
 )
 
 = Arcanist
@@ -3239,26 +3227,26 @@ You have a certain number of arcanist spells fixed in mind (prepared for casting
 
 #dndtab("The Arcanist", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Spells Known", "Stamina", "Aether", "*Aether Limit",
-" 1st   ", " +2  ", " Spellcasting, Arcane Approach ", " 4              ", " 2            ", " 1   ", " 4   ", " 2",
-" 2nd   ", " +2  ", " Font of Magic                 ", " 4              ", " 3            ", " 1   ", " 8   ", " 3",
-" 3rd   ", " +2  ", " Metamagic                     ", " 4              ", " 4            ", " 2   ", " 12   ", " 4",
-" 4th   ", " +2  ", " Ability Score Improvement     ", " 5              ", " 5            ", " 2   ", " 16   ", " 5",
-" 5th   ", " +3  ", " Practiced Aether Manipulation ", " 5              ", " 6            ", " 3   ", " 20   ", " 6",
-" 6th   ", " +3  ", " Arcane Approach Feature, Extra Metamagic  ", " 5              ", " 7            ", " 3   ", " 24   ", " 7",
-" 7th   ", " +3  ", " Disruption                    ", " 5              ", " 8            ", " 4   ", " 28   ", " 8",
-" 8th   ", " +3  ", " Ability Score Improvement     ", " 5              ", " 9            ", " 4   ", " 32   ", " 9",
-" 9th   ", " +4  ", " Extra Metamagic               ", " 5              ", " 10           ", " 5   ", " 36   ", " 10",
-" 10th  ", " +4  ", " Arcane Backlash               ", " 6              ", " 11           ", " 5   ", " 40   ", " 11",
-" 11th  ", " +4  ", " Dual Metamagic                ", " 6              ", " 12           ", " 6   ", " 44   ", " 12",
-" 12th  ", " +4  ", " Ability Score Improvement, Extra Metamagic     ", " 6              ", " 12           ", " 6   ", " 48   ", " 13",
-" 13th  ", " +5  ", " Arcane Secrets (1)  					 ", " 6              ", " 13           ", " 7   ", " 52   ", " 13",
-" 14th  ", " +5  ", " Arcane Approach Feature       ", " 6              ", " 13           ", " 7   ", " 56   ", " 14",
-" 15th  ", " +5  ", " Arcane Secrets (2), Extra Metamagic            ", " 6              ", " 14           ", " 8   ", " 60   ", " 14",
-" 16th  ", " +5  ", " Ability Score Improvement     ", " 6              ", " 14           ", " 8   ", " 64   ", " 15",
-" 17th  ", " +6  ", " Supreme Arcane Secrets        ", " 6              ", " 15           ", " 9   ", " 68   ", " 15",
-" 18th  ", " +6  ", " Arcane Approach Feature       ", " 6              ", " 15           ", " 9   ", " 72   ", " 16",
-" 19th  ", " +6  ", " Ability Score Improvement, Extra Metamagic     ", " 6              ", " 15           ", " 10   ", " 76   ", " 16",
-" 20th  ", " +6  ", " Sorcerous Restoration         ", " 6              ", " 15           ", " 10   ", " 80   ", " 17"
+"1st", "+2", "Spellcasting, Arcane Approach", "4", "2", "1", "4", "2",
+"2nd", "+2", "Font of Magic", "4", "3", "1", "8", "3",
+"3rd", "+2", "Metamagic", "4", "4", "2", "12", "4",
+"4th", "+2", "Ability Score Improvement", "5", "5", "2", "16", "5",
+"5th", "+3", "Practiced Aether Manipulation", "5", "6", "3", "20", "6",
+"6th", "+3", "Arcane Approach Feature, Extra Metamagic", "5", "7", "3", "24", "7",
+"7th", "+3", "Disruption", "5", "8", "4", "28", "8",
+"8th", "+3", "Ability Score Improvement", "5", "9", "4", "32", "9",
+"9th", "+4", "Extra Metamagic", "5", "10", "5", "36", "10",
+"10th", "+4", "Arcane Backlash", "6", "11", "5", "40", "11",
+"11th", "+4", "Dual Metamagic", "6", "12", "6", "44", "12",
+"12th", "+4", "Ability Score Improvement, Extra Metamagic", "6", "12", "6", "48", "13",
+"13th", "+5", "Arcane Secrets (1)", "6", "13", "7", "52", "13",
+"14th", "+5", "Arcane Approach Feature", "6", "13", "7", "56", "14",
+"15th", "+5", "Arcane Secrets (2), Extra Metamagic", "6", "14", "8", "60", "14",
+"16th", "+5", "Ability Score Improvement", "6", "14", "8", "64", "15",
+"17th", "+6", "Supreme Arcane Secrets", "6", "15", "9", "68", "15",
+"18th", "+6", "Arcane Approach Feature", "6", "15", "9", "72", "16",
+"19th", "+6", "Ability Score Improvement, Extra Metamagic", "6", "15", "10", "76", "16",
+"20th", "+6", "Sorcerous Restoration", "6", "15", "10", "80", "17"
 )
 
 === Spellcasting Ability
@@ -3633,26 +3621,26 @@ You learn a common incantation (see incantations for the list) of your choice. W
 
 #dndtab("The Priest", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Spells", "Miracles", "Stamina", "Aether", "Aether Limit",
-" 1st   ", " +2                ", " Spellcasting, Divine Domain                       ", " 3   ", " 2   ", " -   ", " 1 ", " 4 ", " 2",
-" 2nd   ", " +2                ", " Miracles, Divine Domain Feature								   ", " 3   ", " 3   ", " 1   ", " 1 ", " 8 ", " 3",
-" 3rd   ", " +2                ", " Channel Divine Power						                   ", " 3   ", " 4   ", " 1   ", " 2 ", " 12 ", " 4",
-" 4th   ", " +2                ", " Ability Score Improvement                         ", " 4   ", " 5   ", " 1   ", " 2 ", " 16 ", " 5",
-" 5th   ", " +3                ", " Divine Overflow                                 	 ", " 4   ", " 6   ", " 1   ", " 3 ", " 20 ", " 6",
-" 6th   ", " +3                ", " Divine Domain Feature  													 ", " 4   ", " 7   ", " 2   ", " 3 ", " 24 ", " 7",
-" 7th   ", " +3                ", " Improved Channel, Improved Miracles							 ", " 4   ", " 8   ", " 2   ", " 4 ", " 28 ", " 8",
-" 8th   ", " +3                ", " Ability Score Improvement, Divine Strike    										 ", " 4   ", " 9   ", " 2   ", " 4 ", " 32 ", " 9",
-" 9th   ", " +4                ", " Divine Domain Feature                             ", " 4   ", " 10   ", " 2  ", " 5 ", " 36 ", " 10",
-" 10th  ", " +4                ", " Improved Divine Overflow                          ", " 5   ", " 10   ", " 2  ", " 5 ", " 40 ", " 11",
-" 11th  ", " +4                ", " Lesser Legendary Effect                           ", " 5   ", " 11   ", " 2  ", " 6 ", " 44 ", " 12",
-" 12th  ", " +4                ", " Ability Score Improvement                         ", " 5   ", " 11   ", " 2  ", " 6 ", " 48 ", " 13",
-" 13th  ", " +5                ", " Lesser Legendary Effect (2)                       ", " 5   ", " 12   ", " 2  ", " 7 ", " 52 ", " 13",
-" 14th  ", " +5                ", " Radiating Overflow									               ", " 5   ", " 12   ", " 2  ", " 7 ", " 56 ", " 14",
-" 15th  ", " +5                ", " Lesser Legendary Effect (3)                       ", " 5   ", " 13   ", " 2  ", " 8 ", " 60 ", " 14",
-" 16th  ", " +5                ", " Ability Score Improvement                         ", " 5   ", " 13   ", " 2  ", " 8 ", " 64 ", " 15",
-" 17th  ", " +6                ", " Divine Domain Feature, Greater Legendary Effect   ", " 5   ", " 14   ", " 3  ", " 9 ", " 68 ", " 15",
-" 18th  ", " +6                ", " Greater Legendary Effect (2)                         ", " 5   ", " 14   ", " 3  ", " 9 ", " 72 ", " 16",
-" 19th  ", " +6                ", " Ability Score Improvement                         ", " 5   ", " 15   ", " 3  ", " 10 ", " 76 ", " 16",
-" 20th  ", " +6                ", " Supreme Miracles								                   ", " 5   ", " 15   ", " 3  ", " 10 ", " 80 ", " 17",
+"1st", "+2", "Spellcasting, Divine Domain", "3", "2", "-", "1", "4", "2",
+"2nd", "+2", "Miracles, Divine Domain Feature", "3", "3", "1", "1", "8", "3",
+"3rd", "+2", "Channel Divine Power", "3", "4", "1", "2", "12", "4",
+"4th", "+2", "Ability Score Improvement", "4", "5", "1", "2", "16", "5",
+"5th", "+3", "Divine Overflow", "4", "6", "1", "3", "20", "6",
+"6th", "+3", "Divine Domain Feature", "4", "7", "2", "3", "24", "7",
+"7th", "+3", "Improved Channel, Improved Miracles", "4", "8", "2", "4", "28", "8",
+"8th", "+3", "Ability Score Improvement, Divine Strike", "4", "9", "2", "4", "32", "9",
+"9th", "+4", "Divine Domain Feature", "4", "10", "2", "5", "36", "10",
+"10th", "+4", "Improved Divine Overflow", "5", "10", "2", "5", "40", "11",
+"11th", "+4", "Lesser Legendary Effect", "5", "11", "2", "6", "44", "12",
+"12th", "+4", "Ability Score Improvement", "5", "11", "2", "6", "48", "13",
+"13th", "+5", "Lesser Legendary Effect (2)", "5", "12", "2", "7", "52", "13",
+"14th", "+5", "Radiating Overflow", "5", "12", "2", "7", "56", "14",
+"15th", "+5", "Lesser Legendary Effect (3)", "5", "13", "2", "8", "60", "14",
+"16th", "+5", "Ability Score Improvement", "5", "13", "2", "8", "64", "15",
+"17th", "+6", "Divine Domain Feature, Greater Legendary Effect", "5", "14", "3", "9", "68", "15",
+"18th", "+6", "Greater Legendary Effect (2)", "5", "14", "3", "9", "72", "16",
+"19th", "+6", "Ability Score Improvement", "5", "15", "3", "10", "76", "16",
+"20th", "+6", "Supreme Miracles", "5", "15", "3", "10", "80", "17",
 )
 
 === Spellcasting Focus
@@ -3672,11 +3660,11 @@ At 2nd level, your relationship with your Ascended patron has grown to the point
 
 #dndtab("Miracles", 
 "Check Result", "Outcome",
-"Less than 5 ", " No intervention",
-"5-9 ", " No intervention, but the daily use is not expended",
-"10-14 ", " A priest spell with cost less than 5 AET, chosen by the GM, takes effect",
-"14-19 ", " A priest spell with cost less than 5 AET, chosen by you, takes effect",
-"20+ ", " Any spell with cost less than 5 AET, chosen by you, takes effect",
+"Less than 5 ", "No intervention",
+"5-9 ", "No intervention, but the daily use is not expended",
+"10-14 ", "A priest spell with cost less than 5 AET, chosen by the GM, takes effect",
+"14-19 ", "A priest spell with cost less than 5 AET, chosen by you, takes effect",
+"20+ ", "Any spell with cost less than 5 AET, chosen by you, takes effect",
 )
 
 Once you use this feature once, you cannot use it again until you complete a long rest. The number of uses per day increases as shown on the Priest table.
@@ -3708,11 +3696,11 @@ Starting at 7th level, the outcomes of your miracle uses have improved. Use the 
 
 #dndtab("Improved Miracles",
 "Check Result", "Outcome",
-"Less than 5 ", " No intervention",
-"5-9 ", " No intervention, but the daily use is not expended",
-"10-14 ", " A priest spell with cost less than 8 AET, chosen by the GM, takes effect",
-"14-19 ", " A priest spell with cost less than 8 AET, chosen by you, takes effect",
-"20+ ", " Any spell with cost less than 8 AET, chosen by you, takes effect",
+"Less than 5 ", "No intervention",
+"5-9 ", "No intervention, but the daily use is not expended",
+"10-14 ", "A priest spell with cost less than 8 AET, chosen by the GM, takes effect",
+"14-19 ", "A priest spell with cost less than 8 AET, chosen by you, takes effect",
+"20+ ", "Any spell with cost less than 8 AET, chosen by you, takes effect",
 )
 
 
@@ -3739,12 +3727,12 @@ At level 20, you can perform greater miracles. Use the table below to determine 
 
 #dndtab("Supreme Miracles", 
 "Check Result", "Outcome",
-"Less than 5 ", " No intervention",
-"5-9 ", " No intervention, but the daily use is not expended",
-"10-14 ", " Any priest spell, chosen by the GM, takes effect",
-"14-19 ", " Any priest spell, chosen by you, takes effect",
-"20-24 ", " Any spell, chosen by you, takes effect",
-"25+ ", " Any spell or legendary effect, chosen by you, takes effect."
+"Less than 5 ", "No intervention",
+"5-9 ", "No intervention, but the daily use is not expended",
+"10-14 ", "Any priest spell, chosen by the GM, takes effect",
+"14-19 ", "Any priest spell, chosen by you, takes effect",
+"20-24 ", "Any spell, chosen by you, takes effect",
+"25+ ", "Any spell or legendary effect, chosen by you, takes effect."
 )
 
 = Priest Domains
@@ -4017,26 +4005,26 @@ You can cast your shaman spells while wearing light or medium armor. Shields sti
 
 #dndtab("The Shaman", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Spells", "Stamina", "Aether", "Aether Limit",
-"1st   ", " +2                ", " Spellcasting                           ", " 2              ", " 2   ", " 1    ", " 4     ", " 2",
-"2nd   ", " +2                ", " Manifest Zones                         ", " 2              ", " 3   ", " 2    ", " 8     ", " 3",
-"3rd   ", " +2                ", " Shaman Circle                          ", " 2              ", " 4   ", " 2    ", " 12    ", " 4",
-"4th   ", " +2                ", " Ability Score Improvement 							", " 3    		       ", " 5   ", " 3    ", " 16    ", " 5",
-"5th   ", " +3                ", " Detonate Manifest Zone                 ", " 3              ", " 6   ", " 3    ", " 20    ", " 6",
-"6th   ", " +3                ", " Shaman Circle feature                  ", " 3              ", " 7   ", " 4    ", " 24    ", " 7",
-"7th   ", " +3                ", " Dual Zones                             ", " 3              ", " 8   ", " 4    ", " 28    ", " 8",
-"8th   ", " +3                ", " Ability Score Improvement 							", " 3              ", " 9 	 ", " 5    ", " 32    ", " 9",
-"9th   ", " +4                ", " Internalized Elements                  ", " 3              ", " 10   ", " 5    ", " 36    ", " 10",
-"10th  ", " +4                ", " Shaman Circle feature                  ", " 4              ", " 11   ", " 6    ", " 40    ", " 11",
-"11th  ", " +4                ", " Enhanced Zones                         ", " 4              ", " 12   ", " 6    ", " 44    ", " 12",
-"12th  ", " +4                ", " Ability Score Improvement              ", " 4              ", " 13   ", " 7    ", " 48    ", " 13",
-"13th  ", " +5                ", " Primal Legend                          ", " 4              ", " 14   ", " 7    ", " 52    ", " 13",
-"14th  ", " +5                ", " Shaman Circle feature                  ", " 4              ", " 15   ", " 8    ", " 56    ", " 14",
-"15th  ", " +5                ", " Extra Legendary Effect                 ", " 4              ", " 16   ", " 8    ", " 60    ", " 14",
-"16th  ", " +5                ", " Ability Score Improvement              ", " 4              ", " 17   ", " 9    ", " 64    ", " 15",
-"17th  ", " +6                ", " Greater Primal Legend                  ", " 4              ", " 18   ", " 9    ", " 68   ", " 15",
-"18th  ", " +6                ", " Timeless Body                       		", " 4              ", " 19   ", " 10   ", " 72   ", " 16",
-"19th  ", " +6                ", " Ability Score Improvement              ", " 4              ", " 20   ", " 10   ", " 76   ", " 16",
-"20th  ", " +6                ", " Rebirth                                ", " 4              ", " 20   ", " 10   ", " 80   ", " 17",
+"1st   ", "+2", "Spellcasting", "2", "2", "1", "4", "2",
+"2nd   ", "+2", "Manifest Zones", "2", "3", "2", "8", "3",
+"3rd   ", "+2", "Shaman Circle", "2", "4", "2", "12", "4",
+"4th   ", "+2", "Ability Score Improvement", "3", "5", "3", "16", "5",
+"5th   ", "+3", "Detonate Manifest Zone", "3", "6", "3", "20", "6",
+"6th   ", "+3", "Shaman Circle feature", "3", "7", "4", "24", "7",
+"7th   ", "+3", "Dual Zones", "3", "8", "4", "28", "8",
+"8th   ", "+3", "Ability Score Improvement", "3", "9", "5", "32", "9",
+"9th   ", "+4", "Internalized Elements", "3", "10", "5", "36", "10",
+"10th  ", "+4", "Shaman Circle feature", "4", "11", "6", "40", "11",
+"11th  ", "+4", "Enhanced Zones", "4", "12", "6", "44", "12",
+"12th  ", "+4", "Ability Score Improvement", "4", "13", "7", "48", "13",
+"13th  ", "+5", "Primal Legend", "4", "14", "7", "52", "13",
+"14th  ", "+5", "Shaman Circle feature", "4", "15", "8", "56", "14",
+"15th  ", "+5", "Extra Legendary Effect", "4", "16", "8", "60", "14",
+"16th  ", "+5", "Ability Score Improvement", "4", "17", "9", "64", "15",
+"17th  ", "+6", "Greater Primal Legend", "4", "18", "9", "68", "15",
+"18th  ", "+6", "Timeless Body", "4", "19", "10", "72", "16",
+"19th  ", "+6", "Ability Score Improvement", "4", "20", "10", "76", "16",
+"20th  ", "+6", "Rebirth", "4", "20", "10", "80", "17",
 )
 
 == Manifest Zones
@@ -4404,26 +4392,26 @@ You can cast any warlock spells you know while wearing light armor.
 
 #dndtab("The Warlock", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Shapes", "Effects", "Invocations", "Stamina", "Aether", "Aether Limit",
-" 1st   ", " +2  ", " Otherworldly Patron, Eldritch Blast ", " 2  ", " ---  ", " ---  ", " --- ", " 1  ", " 4  ", " 2",
-" 2nd   ", " +2  ", " Eldritch Invocations, Blast Effects ", " 2  ", " ---  ", " 1    ", " 2   ", " 1  ", " 8  ", " 3",
-" 3rd   ", " +2  ", " Pact Boon                           ", " 2  ", " ---  ", " 1    ", " 3   ", " 2  ", " 12  ", " 4",
-" 4th   ", " +2  ", " Ability Score Improvement           ", " 3  ", " ---  ", " 2    ", " 3   ", " 2  ", " 16  ", " 5",
-" 5th   ", " +3  ", " Blast Shapes                        ", " 3  ", " 1    ", " 2    ", " 4   ", " 3  ", " 20 ", " 6",
-" 6th   ", " +3  ", " Otherworldly Patron feature         ", " 3  ", " 1    ", " 2    ", " 4   ", " 3  ", " 24 ", " 7",
-" 7th   ", " +3  ", " Greater Blast Effects               ", " 3  ", " 1    ", " 2    ", " 5   ", " 4  ", " 28 ", " 8",
-" 8th   ", " +3  ", " Ability Score Improvement           ", " 3  ", " 2    ", " 3    ", " 5   ", " 4  ", " 32 ", " 9",
-" 9th   ", " +4  ", " Greater Blast Shapes                ", " 3  ", " 2    ", " 3    ", " 6   ", " 5  ", " 36 ", " 10",
-" 10th  ", " +4  ", " Otherworldly Patron feature         ", " 4  ", " 3    ", " 3    ", " 6   ", " 5  ", " 40 ", " 11",
-" 11th  ", " +4  ", " Mystic Arcanum                      ", " 4  ", " 3    ", " 4    ", " 7   ", " 5  ", " 44 ", " 12",
-" 12th  ", " +4  ", " Ability Score Improvement           ", " 4  ", " 4    ", " 4    ", " 7   ", " 6  ", " 48 ", " 13",
-" 13th  ", " +5  ", " Mystic Arcanum                      ", " 4  ", " 4    ", " 4    ", " 8   ", " 6  ", " 52 ", " 13",
-" 14th  ", " +5  ", " Otherworldly Patron feature         ", " 4  ", " 4    ", " 4    ", " 8   ", " 6  ", " 56 ", " 14",
-" 15th  ", " +5  ", " Mystic Arcanum                      ", " 4  ", " 4    ", " 4    ", " 9   ", " 7  ", " 60 ", " 14",
-" 16th  ", " +5  ", " Ability Score Improvement           ", " 4  ", " 4    ", " 4    ", " 9   ", " 7  ", " 64 ", " 15",
-" 17th  ", " +6  ", " Mystic Arcanum                      ", " 4  ", " 5    ", " 5    ", " 10  ", " 7  ", " 68 ", " 15",
-" 18th  ", " +6  ", " -                                   ", " 4  ", " 5    ", " 5    ", " 10  ", " 8  ", " 72 ", " 16",
-" 19th  ", " +6  ", " Ability Score Improvement           ", " 4  ", " 5    ", " 5    ", " 11  ", " 8  ", " 76 ", " 16",
-" 20th  ", " +6  ", " Eldritch Master                     ", " 4  ", " 5    ", " 5    ", " 11  ", " 8  ", " 80 ", " 17",
+"1st", "+2", "Otherworldly Patron, Eldritch Blast", "2", "---", "---", "---", "1", "4", "2",
+"2nd", "+2", "Eldritch Invocations, Blast Effects", "2", "---", "1", "2", "1", "8", "3",
+"3rd", "+2", "Pact Boon", "2", "---", "1", "3", "2", "12", "4",
+"4th", "+2", "Ability Score Improvement", "3", "---", "2", "3", "2", "16", "5",
+"5th", "+3", "Blast Shapes", "3", "1", "2", "4", "3", "20", "6",
+"6th", "+3", "Otherworldly Patron feature", "3", "1", "2", "4", "3", "24", "7",
+"7th", "+3", "Greater Blast Effects", "3", "1", "2", "5", "4", "28", "8",
+"8th", "+3", "Ability Score Improvement", "3", "2", "3", "5", "4", "32", "9",
+"9th", "+4", "Greater Blast Shapes", "3", "2", "3", "6", "5", "36", "10",
+"10th", "+4", "Otherworldly Patron feature", "4", "3", "3", "6", "5", "40", "11",
+"11th", "+4", "Mystic Arcanum", "4", "3", "4", "7", "5", "44", "12",
+"12th", "+4", "Ability Score Improvement", "4", "4", "4", "7", "6", "48", "13",
+"13th", "+5", "Mystic Arcanum", "4", "4", "4", "8", "6", "52", "13",
+"14th", "+5", "Otherworldly Patron feature", "4", "4", "4", "8", "6", "56", "14",
+"15th", "+5", "Mystic Arcanum", "4", "4", "4", "9", "7", "60", "14",
+"16th", "+5", "Ability Score Improvement", "4", "4", "4", "9", "7", "64", "15",
+"17th", "+6", "Mystic Arcanum", "4", "5", "5", "10", "7", "68", "15",
+"18th", "+6", "-", "4", "5", "5", "10", "8", "72", "16",
+"19th", "+6", "Ability Score Improvement", "4", "5", "5", "11", "8", "76", "16",
+"20th", "+6", "Eldritch Master", "4", "5", "5", "11", "8", "80", "17",
 )
 
 == Eldritch Blast
@@ -4740,7 +4728,7 @@ Patrons who proffer pacts of Destruction do so for many reasons, but all of them
 The Pact of Destruction grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Destruction Spells",
-"Warlock Level ", " Spells",
+"Warlock Level ", "Spells",
 "1st         ", [_burning hands, thunderwave_],
 "3rd         ", [_flaming sphere, ray of enfeeblement_],
 "5th         ", [_unbind, vampiric touch_],
@@ -4774,7 +4762,7 @@ Those Patrons who proffer Inquiry Pacts want clients to go out into the world in
 The Pact of Inquiry grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Inquiry Spells",
-"Warlock Level ", " Spells",
+"Warlock Level ", "Spells",
 "1st         ", [_charm person_, _disguise self_],
 "3rd         ", [_detect thoughts, see invisibility_],
 "5th         ", [_clairvoyance, major image_],
@@ -4814,7 +4802,7 @@ Those Patrons who proffer Protection Pacts want agents to act in defense of what
 The Pact of Protection grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Protection Spells",
-"Warlock Level ", " Spells",
+"Warlock Level ", "Spells",
 "1st         ", [_cure wounds, shield_],
 "3rd         ", [_calm emotions, prayer of healing_],
 "5th         ", [_beacon of hope, revivify_],

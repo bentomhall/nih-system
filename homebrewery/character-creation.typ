@@ -22,6 +22,16 @@
   body
 }
 
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
+
 = Character Creation
 
 Creating a character follows a specific process. The order of the first four doesn't really matter, but generally your class matters most for what you're doing during the session and the others act in supporting roles. It's up to you to decide whether you want a character that plays the archetype straight, such as a gwerin book-mage arcanist who was a scholar (doubling down on the stereotype that gwerin are masters of the arcane) or plays against type, like a jazuu rogue with a background as an acolyte (the very straight-laced jazuu not generally being known for their nimble stealth or gods-fearing ways, alongside having an average height well over 6 ft 6 inches).

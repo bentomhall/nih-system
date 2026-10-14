@@ -22,6 +22,16 @@
   body
 }
 
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
+
 = Equipment
 
 Common coins come in several different denominations based on the
@@ -59,14 +69,14 @@ excess energy produced by a standard human soul during a day.
 A standard coin weighs about a third of an ounce, so fifty coins weigh a
 pound.
 
-|*Coin*|*CP*|*SP*|*GP*|*PP*|*AC*|
-|:----|----:|----:|----:|----:|----:|
-|Copper (cp)|1|1/10|1/100|1/1000|1/10,000|
-|Silver (sp)|10|1|1/10|1/100|1/1000|
-|Gold (gp)|100|10|1|1/10|1/100|
-|Platinum (pp)|1000|100|10|1|1/10|
-|Astral Credit (ac)|10,000|1000|100|10|1|
-
+#dndtab("Coin Conversion Rates", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+"Coin","CP","SP","GP","PP","AC",
+"Copper (cp)","1","1/10","1/100","1/1000","1/10,000",
+"Silver (sp)","10","1","1/10","1/100","1/1000",
+"Gold (gp)","100","10","1","1/10","1/100",
+"Platinum (pp)","1000","100","10","1","1/10",
+"Astral Credit (ac)","10,000","1000","100","10","1",
+)
 
 == Selling Treasure
 
@@ -85,7 +95,7 @@ monsters are rarely in good enough condition to sell.
 
 Selling magic items is problematic. Finding someone to buy a potion or a
 scroll isn't too hard, but other items are out of the realm of most but
-the wealthiest nobles. Likewise, aside from a few common magic items,
+the wealthiest nobles or large organizations. Likewise, aside from potions and a few Journeyman magic items,
 you won't normally come across magic items or spells to purchase. The
 value of magic is far beyond simple gold and should always be treated as
 such.
@@ -99,12 +109,12 @@ you to find a buyer in a large town or larger community first.
 
 === Trade Goods
 
-On the borderlands, many people conduct transactions through barter.
+Many people conduct transactions through barter.
 Like gems and art objects, trade goods---bars of iron, bags of salt,
 livestock, and so on---retain their full value in the market and can be
 used as currency.
 
-== Armor
+= Armor
 
 Quartus is a vast tapestry made up of many different cultures, each with
 its own technology level and historical development path. For this
@@ -118,10 +128,9 @@ cast spells while wearing armor unless you have a feature that
 specifically allows doing so.
 
 The Armor table shows the cost, weight, and other properties of the
-common types of armor worn by adventurers.
+common types of armor worn by adventurers. Those types worn mostly by NPCs, such as various cloth armors and primitive hides, are omitted. Most forms of armor are commonly worn with a helmet of some kind, ranging from a simple boiled-leather cap to a full on bascinet, and this protection is included in the armor's rating, as are normal gloves and boots. Magical helms, boots, and gloves can replace those normally worn; they do not change the AC of the armor unless they specifically say they do.
 
-
-=== Armor Proficiency
+== Armor Proficiency
 
 Anyone can put on a suit of armor or strap a shield to an arm. Only
 those proficient in the armor's use know how to wear it effectively,
@@ -130,12 +139,12 @@ If you wear armor or wield a shield that you lack proficiency with, you
 have disadvantage on any ability check, saving throw, or attack roll
 that involves Strength or Dexterity.
 
-=== Armor Class (AC)
+== Armor Class (AC)
 
 Armor protects its wearer from attacks. The armor (and shield) you wear
 determines your base Armor Class.
 
-=== Heavy Armor
+== Heavy Armor
 
 Heavier armor interferes with the wearer's ability to move quickly,
 stealthily, and freely. If the Armor table shows "Str +2" or "Str +3" in
@@ -143,12 +152,12 @@ the Strength column for an armor type, the armor imposes disadvantage on
 attack rolls and Dexterity saving throws unless the wearer has a
 Strength score equal to or higher than the listed score.
 
-=== Stealth
+== Stealth
 
 If the Armor table shows "Disadvantage" in the Stealth column, the
 wearer has disadvantage on Dexterity (Stealth) checks.
 
-=== Shields
+== Shields
 
 A shield is made from wood or metal and is carried in one hand. Wielding
 a shield increases your Armor Class by 2. You can benefit from only one
@@ -156,7 +165,7 @@ shield at a time. You can grasp an item in the same hand, but you cannot
 effectively wield a weapon or cast a spell with the hand that is
 occupied.
 
-=== Light Armor
+== Light Armor
 
 Made from supple and thin materials, light armor favors agile
 adventurers since it offers some protection without sacrificing
@@ -166,27 +175,21 @@ the base number from your armor type to determine your Armor Class.
 === Leather
 
 The breastplate and shoulder protectors of this armor are made of
-leather that has been stiffened by being boiled in oil. It only covers
+leather that has been stiffened by being boiled in oil. The remainder is either supple leather or cloth. It only covers
 the vitals and rarely has a back-plate.
 
 === Reinforced Leather
 
 Reinforced leather armor is a regular leather suit of armor that has
-been reinforced with metal, wood, or bone plates in critical areas. It
-still only covers the upper body and shoulders.
+been reinforced with metal, wood, or bone plates in a few critical areas. It
+still only covers the upper body and shoulders, and is much less reinforced than a brigandine, while simultaneously restricting movement less.
 
-=== Medium Armor
+== Medium Armor
 
 Medium armor offers more protection than light armor, but it also
 impairs movement more. If you wear medium armor, you add your Dexterity
 modifier, to a maximum of +2, to the base number from your armor type to
 determine your Armor Class.
-
-=== Hide
-
-This crude armor consists of thick furs and pelts. It is commonly worn
-by folk who lack access to the tools and materials needed to create
-better armor. Generally not used by player characters, this is mostly used by "uncivilized" humanoids or tribal groups.
 
 === Chain Shirt
 
@@ -200,21 +203,20 @@ one another to be muffled by outer layers.
 Also called a coat-of-plates, this armor consists of a heavy cloth cover
 with small plates riveted between the layers, much like a heavier
 version of Reinforced Leather. It may cover the upper arms, but is often
-in the form of a vest.
+in the form of a vest. It is often worn with protective leg coverings of cloth and leather.
 
 === Breastplate
 
 This armor consists of a fitted metal chest piece worn with chain
 tassets (covering the hips and upper thighs) and fauds (covering the
-shoulders). Although it leaves the legs and arms relatively unprotected,
+shoulders). Although it leaves the legs and arms relatively unprotected (other than any separate leggings, greaves, or gloves worn),
 this armor provides good protection for the wearer's vital organs while
 leaving the wearer relatively unencumbered.
 
-
-=== Heavy Armor
+== Heavy Armor
 
 Of all the armor categories, heavy armor offers the best protection.
-These suits of armor cover the torso with at least tassets and fauds and
+These suits of armor cover the torso and include at least tassets and fauds and
 often include integrated arm, hand, leg, head, and foot protection and
 are designed to stop a wide range of attacks. Only proficient warriors
 can manage their weight and bulk.
@@ -239,7 +241,7 @@ coif (head covering).
 === Half Plate
 
 Half plate consists of shaped metal plates that cover most of the
-wearer's body with a mail skirt to cover the hips and groin. It does not include leg protection beyond simple greaves
+wearer's body with a mail skirt and metal tassets and fauds to cover the hips, groin, and shoulders. It does not include leg protection beyond simple greaves
 that are attached with leather straps; similar coverings are used for
 the arms.
 
@@ -248,28 +250,27 @@ the arms.
 Plate (also called "plate mail", despite that being a misnomer) consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots or metal
 sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
 
-{{wide
-| *Armor*    | *Cost* | *Armor Class (AC)* | *Strength* | *Stealth* | *Weight* |
-|:----|:----:|:----:|----:|---------------------:|:--------------------:|
-| Light Armor  | | | | ||
-| Leather | 10 gp | 11 + DEX | &mdash;    | &mdash;   | 10 lb.   |
-| Reinforced leather   | 45 gp  | 12 + DEX  | &mdash;    | &mdash;   | 13 lb.   |
-| Medium Armor |   ||  | ||
-| Hide  | 10 gp  | 12 + DEX (max 2)    | &mdash;    | &mdash;   | 12 lb.   |
-| Chain shirt| 50 gp  | 13 + DEX (max 2)    | &mdash;    | &mdash;   | 15 lb.   |
-| Brigandine | 400 gp | 14 + DEX (max 2)    | +2| &mdash;   | 15 lb.   |
-| Breastplate| 750 gp | 15 + DEX (max 2)    | +2| D   | 20 lb.   |
-| Heavy Armor  |   ||  | ||
-| Lamellar armor  | 30 gp  | 15  | &mdash;    | D   | 20 lb.   |
-| Chain mail | 75 gp  | 16  | +1| D   | 25 lb.   |
-| Half plate | 750 gp | 17  | +2| D   | 25 lb.   |
-| Plate | 1,500 gp    | 18  | +2| D   | 30 lb.   |
-|Shield   |   ||  | ||
-| Shield| 10 gp  | +2  | &mdash;    | &mdash;   | 6 lb.    |
+#wide[
+  #dndtab("Armor", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  "Armor","Cost","Armor Class (AC)","Strength","Stealth","Weight",
+  [*Light Armor*],"","","","","",
+  "Leather","10 gp","11 + DEX","---","---","10 lb.",
+  "Reinforced leather","45 gp","12 + DEX","---","---","13 lb.",
+  [*Medium Armor*],"","","","","",
+  "Chain shirt","50 gp","13 + DEX (max 2)","---","---","15 lb.",
+  "Brigandine","400 gp","14 + DEX (max 2)","+2","---","15 lb.",
+  "Breastplate","750 gp","15 + DEX (max 2)","+2","D","20 lb.",
+  [*Heavy Armor*],"","","","","",
+  "Lamellar armor","30 gp","15","---","D","20 lb.",
+  "Chain mail","75 gp","16","+1","D","25 lb.",
+  "Half plate","750 gp","17","+2","D","25 lb.",
+  "Plate","1,500 gp","18","+2","D","30 lb.",
+  [*Shield*],"","","","","",
+  "Shield","10 gp","+2","---","---","6 lb.",
+  )
+]
 
-}}
-
-=== Getting Into and Out of Armor
+== Getting Into and Out of Armor
 
 The time it takes to don or doff armor depends on the armor's category.
 
@@ -283,18 +284,15 @@ AC only if you take the full time to don the suit of armor.
 This is the time it takes to take off armor. If you have help, reduce
 this time by half.
 
-|*Category*|*Don*|*Doff*|
-|:----|:----:|:----:|
-Light Armor | 1 minute | 1 minute
-Medium Armor | 5 minutes | 1 minute
-Heavy Armor | 10 minutes | 5 minutes
-Shield | 1 action | 1 action
+#dndtab("Don/Doff Armor", columns: (1fr, 1fr, 1fr),
+"Category","Don","Doff",
+"Light Armor","1 minute","1 minute",
+"Medium Armor","5 minutes","1 minute",
+"Heavy Armor","10 minutes","5 minutes",
+"Shield","1 action","1 action",
+)
 
-
-
-
-
-=== Fantastic Materials: Armor
+== Fantastic Materials: Armor
 
 Cow leather, cloth, iron, steel. Wood or iron for shields. These are the
 normal materials used for armor, and what makes up the entries above.
@@ -312,26 +310,27 @@ add an additional point of your Dexterity bonus (if positive) to your
 AC. This raises the contribution from Dexterity for heavy armor to +1
 max.
 
-=== Material* | *Applies To* | *Tie
-:----|:----|:----:|
-Adamantine | Heavy armor | Adventurer 
-Exotic chitin and scales | scale, brigandine, breastplate | Adventurer
-Exotic leather | leather, hide, reinforced leather | Journeyman
-Mithril | Heavy armor, chain shirt, breastplate | Adventurer
+#dndtab("Exotic Armor Materials", columns: (1fr, 2fr, 1fr),
+"Material","Applies To","Tier",
+"Adamantine","Heavy armor","Adventurer",
+"Exotic chitin and scales","Lamellar, brigandine, breastplate","Adventurer",
+"Exotic leather","Leather, reinforced leather","Journeyman",
+"Mithril","Heavy armor, medium armor","Adventurer",
+)
 
 === Adamantine
 This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor has a strength requirement of +3.
 
 === Exotic Chitin and Scales
-When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into scale, brigandine, and breastplates. Such armor is non-metallic, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
+When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into lamellar, brigandine, and breastplates. Such armor is non-metallic, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
 
 === Exotic Leather
-When skinned carefully and properly tanned, exotic leathers and hides can be made into leather, hide, and reinforced leather armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
+When skinned carefully and properly tanned, exotic leathers and hides can be made into leather and reinforced leather armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
 
 === Mythril
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
 
-== Weapons
+= Weapons
 
 Your class grants proficiency in certain weapons, reflecting both the
 class's focus and the tools you are most likely to use. Whether you
@@ -346,7 +345,7 @@ as either melee or ranged. A melee weapon is usually used to attack a
 target within 5 feet of you, whereas a ranged weapon is used to attack a
 target at a distance.
 
-=== Weapon Proficiency
+== Weapon Proficiency
 
 Your lineage, culture, and class can grant you proficiency with certain
 weapons or categories of weapons. The two categories are *simple* and
@@ -362,13 +361,12 @@ the attack roll for any attack you make with that weapon. If you make an
 attack roll using a weapon with which you lack proficiency, you do not
 add your proficiency bonus to the attack roll.
 
-=== Weapon Properties
+== Weapon Properties
 
 Many weapons have special properties related to their use, as shown in
 the Weapons table.
 
-{{note
- Hands and Weapons
+#breakoutbox("Hands and Weapons")[
 Your character does not have a "main hand" and "off hand". If you are
 wielding more than one weapon, you can use either one to attack (or both
 if you have more than one attack per action). You only get additional
@@ -379,10 +377,8 @@ Any non-light, non-two-handed weapon can be wielded in one or two
 hands, and you can shift how you’re wielding your weapon without using
 an action during your turn. You can’t use a weapon in two hands if you
 are wielding a shield or are holding anything in one of your hands.
-Unlike 5e, there is no versatile property.
-
-}}
-
+Unlike 5e, there is no Versatile property.
+]
 
 === Ammunition 
 
@@ -501,8 +497,7 @@ ranged weapon to make a melee attack, or throws a melee weapon that does
 not have the thrown property, it also deals 1d4 damage. An improvised
 thrown weapon has a normal range of 20 feet and a long range of 60 feet.
 
-
-=== Silvered Weapons
+== Silvered Weapons
 
 Some monsters are particularly susceptible to silver weapons, so
 cautious adventurers invest extra coin to plate their weapons with
@@ -511,12 +506,12 @@ silver. You can silver a single weapon or ten pieces of ammunition for
 time and expertise needed to add silver to the weapon without making it
 less effective.
 
-=== Fantastic Materials: Weapons
+== Fantastic Materials: Weapons
 
 Some weapons are particularly finely crafted. Only the most skilled
 craftsmen can craft masterwork items. Many magic weapons are only
 available as masterwork. Masterwork weapons allow you to add your
-proficiency bonus to the damage dealt and cost 10x the normal price.
+proficiency bonus to the damage dealt and cost 10x the normal price, after including any cost from special materials. Many weapons with magical enchantments are masterwork.
 
 Additionally, weapons can be made out of exotic materials just like
 armor can. This is much more expensive than regular steel, but can add
@@ -525,12 +520,13 @@ unusual effects. Most of these materials require quests to find a source
 material, as well as a craftsman capable of working them. The rarity,
 effect, and application of each material can be found on the table.
 
-*Material* | *Applies To* | *Tier* |
-:----|:----|:----:|
-Adamantine | Metal weapons | Adventurer | 
-Mithril | Metal weapons | Adventurer | 
-Ignitite | Ammunition, melee weapons | Adventurer | 
-Necrite | Ammunition, melee weapons | Adventurer | 
+#dndtab("Fantastic Weapons Materials", columns: (1fr, 2fr, 1fr),
+"Material","Applies To","Tier",
+"Adamantine","Metal weapons","Adventurer",
+"Mithril","Metal weapons","Adventurer",
+"Ignitite","Ammunition, melee weapons","Adventurer",
+"Necrite","Ammunition, melee weapons","Adventurer",
+)
 
 === Adamantine
 This dark, dull-black metal is quite dense (about twice the density of iron). It takes an expert to work it into effective weapons. Weapons forged from adamantine deal maximum damage to objects, ignore construct damage resistance, but cannot be effectively wielded by anyone without at least STR +3. 
@@ -544,8 +540,7 @@ Silvery and light, mythril is one of the more well-known special materials. When
 === Necrite
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.
 
-
-=== Special Weapons
+== Special Weapons
 
 Weapons with special rules are described here.
 
@@ -592,50 +587,49 @@ them 5 ft closer to you as part of that same attack.
 
 
 {{wide
-=== Name* | *Cost*| *Damage* | *Weight* | *Propertie
-:----|:----:|:----|:----:|:----|
-*Simple Melee Weapons* | | | |
-Club | 1 sp | 1d4 bludgeoning | 2 lb. | Light
-Dagger | 2 gp | 1d4 piercing | 1 lb. | Light, precise, thrown (range 20/60)
-Greatclub | 2 sp | 1d8 bludgeoning | 10 lb. | Battering, two-handed
-Handaxe | 5 gp | 1d6 slashing | 2 lb. | Light, thrown (range 20/60)
-Javelin | 5 sp | 1d6 piercing | 2 lb. | Thrown (range 30/120)
-Light hammer | 2 gp | 1d4 bludgeoning | 2 lb. | Light, thrown (range 20/60)
-Mace | 5 gp | 1d6 bludgeoning | 2 lb. | Battering
-Quarterstaff | 2 sp | 1d6 bludgeoning | 3 lb. | Battering
-Sickle | 1 gp | 1d4 slashing | 1 lb | Cleaving, light
-Spear | 1 gp | 1d8 piercing | 3 lb. | Thrown (range 20/60)
-*Simple Ranged Weapons* | | | |
-Crossbow, light | 25 gp | 1d8 piercing | 5 lb. | Ammunition (range 80/320), loading, two-handed
-Dart | 5 cp | 1d4 piercing | 1/4 lb. | Thrown (range 20/60)
-Shortbow | 15 gp | 1d6 piercing | 2 lb. | Ammunition (range 80/320), two-handed
-Sling | 1 sp | 1d6 bludgeoning | | Ammunition (range 30/120), battering
-*Martial Melee Weapons* | | | |
-Battleaxe | 10 gp | 1d10 slashing | 4 lb. | Cleaving
-Glaive | 20 gp | 1d10 slashing | 6 lb. | Cleaving, heavy, reach, two-handed
-Greataxe | 15 gp | 1d12 slashing | 7 lb. | Cleaving, heavy, two-handed
-Greatsword | 50 gp | 1d12 slashing | 6 lb. | Heavy, parrying, two-handed
-Halberd | 20 gp | 1d10 slashing | 6 lb. | Heavy, parrying, reach, two-handed
-Lance | 10 gp | 1d12 piercing | 6 lb. | Reach, special
-Longsword | 15 gp | 1d8 slashing or piercing | 3 lb. | Cleaving, Parrying
-Maul | 10 gp | 1d12 bludgeoning | 10 lb. | Battering, heavy, two-handed
-Morningstar | 15 gp | 1d10 piercing | 4 lb. | Battering
-Pike | 5 gp | 1d10 | 18 lb. | Heavy, precise, reach, two-handed
-Rapier | 25 gp | 1d8 piercing | 2 lb. | Precise
-Scimitar | 15 gp | 1d6 slashing | 3 lb. | Cleaving, light
-Shortsword | 10 gp | 1d6 piercing | 2 lb. | Light, precise
-War pick | 5 gp | 1d10 piercing | 2 lb. | Precise
-Warhammer | 15 gp | 1d10 bludgeoning | 3 lb. | Battering
-Whip | 2gp | 1d4 slashing | 3 lb. | Reach, special
-*Martial Ranged Weapons* | | | |
-Blowgun | 10 gp | 1 piercing | 1 lb. | Ammunition (range 25/100), loading, special
-Crossbow, hand | 75 gp | 1d4 piercing | 3 lb. | Ammunition (range 30/120), light, loading
-Crossbow, heavy | 75 gp | 1d10 piercing | 18 lb. | Ammunition (range 100/400), heavy, loading, two-handed
-Longbow | 50 gp | 1d8 piercing | 2 lb. | Ammunition (range 150/600), heavy, precise, two-handed
-*Exotic Ranged Weapons* | | | |
-Acid, Vial of | 25 gp | 2d6 acid | 1 lb. | Consumed, thrown (range 20)
-Alchemist’s Fire, Flask of | 50 gp | 2d4 fire | 1 lb. |Consumed, special, thrown (range 20)
-Holy water, Flask of | 25 gp | 2d6 radiant (special) | 1 lb. | Consumed, special, thrown (range 20)
+"=== Name*","Cost","Damage","Weight","*Propertie",
+"Simple Melee Weapons","","","",
+"Club","1 sp","1d4 bludgeoning","2 lb.","Light",
+"Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
+"Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
+"Handaxe","5 gp","1d6 slashing","2 lb.","Light, thrown (range 20/60)",
+"Javelin","5 sp","1d6 piercing","2 lb.","Thrown (range 30/120)",
+"Light hammer","2 gp","1d4 bludgeoning","2 lb.","Light, thrown (range 20/60)",
+"Mace","5 gp","1d6 bludgeoning","2 lb.","Battering",
+"Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
+"Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
+"Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
+"Simple Ranged Weapons","","","",
+"Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
+"Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
+"Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
+"Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
+"Martial Melee Weapons","","","",
+"Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
+"Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
+"Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
+"Greatsword","50 gp","1d12 slashing","6 lb.","Heavy, parrying, two-handed",
+"Halberd","20 gp","1d10 slashing","6 lb.","Heavy, parrying, reach, two-handed",
+"Lance","10 gp","1d12 piercing","6 lb.","Reach, special",
+"Longsword","15 gp","1d8 slashing or piercing","3 lb.","Cleaving, Parrying",
+"Maul","10 gp","1d12 bludgeoning","10 lb.","Battering, heavy, two-handed",
+"Morningstar","15 gp","1d10 piercing","4 lb.","Battering",
+"Pike","5 gp","1d10","18 lb.","Heavy, precise, reach, two-handed",
+"Rapier","25 gp","1d8 piercing","2 lb.","Precise",
+"Scimitar","15 gp","1d6 slashing","3 lb.","Cleaving, light",
+"Shortsword","10 gp","1d6 piercing","2 lb.","Light, precise",
+"War pick","5 gp","1d10 piercing","2 lb.","Precise",
+"Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
+"Whip","2gp","1d4 slashing","3 lb.","Reach, special",
+"Martial Ranged Weapons","","","",
+"Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
+"Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
+"Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
+"Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
+"Exotic Ranged Weapons","","","",
+"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
+"Alchemist’s Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
+"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
 
 }}
 
@@ -896,59 +890,58 @@ A simple and portable canvas shelter, a tent sleeps two.
 
 
 {{wide
-=== Item* | *Cost* | *Weight* | | *Item* | *Cost* | *Weigh
-:----|:----:|:----:|:----:|:----:|:----:|:----:|
-Abacus | 2 gp | 2 lb. | | Hunting trap | 5 gp | 25 lb.
-Ammunition | | | | Ink (1 ounce bottle) | 10 gp | —
-&mdash;Arrows (20) | 1 gp | 1lb. | | Ink pen | 2 cp | —
-&mdash;Blowgun needles (50) | 1 gp | 1 lb. | | Jug or pitcher | 2 cp | 4 lb.
-&mdash;Crossbow bolts (20) | 1 gp | 1½ lb. | | Ladder (10-foot) | 1 sp | 25 lb.
-&mdash;Sling bullets (20) | 4 cp | 1½ lb. | | Lamp | 5 sp | 1 lb.
-Antitoxin (vial) | 50 gp | &mdash;| | Lantern, bullseye | 10 gp | 2 lb.
-Arcane focus | | | | Lantern, hooded | 5 gp | 2 lb.
-&mdash;Crystal | 10 gp | 1 lb. | | Lock | 10 gp | 1 lb.
-&mdash;Orb | 20 gp | 3 lb. | | Magnifying glass | 100 gp | —
-&mdash;Rod | 10 gp | 2 lb. | | Manacles | 2 gp | 6 lb.
-&mdash;Staff | 5 gp | 5 lb. | | Mess kit | 2 sp | 1 lb.
-&mdash;Wand | 10 gp | 1 lb. | | Mirror, steel | 5 gp | 1/2 lb.
-Backpack | 2 gp | 5 lb. | | Net | 1gp | 3 lb.
-Ball bearings (bag of 1,000) | 1 gp | 2 lb. | | Oil (flask) | 1 sp | 1 lb.
-Barrel | 2 gp | 70 lb. | | Paper (one sheet) | 2 sp | —
-Basket | 4 sp | 2 lb. | | Parchment (one sheet) | 1 sp | —
-Bedroll | 1 gp | 7 lb. | | Perfume (vial) | 5 gp | —
-Bell | 1 gp | &mdash;| | Pick, miner’s | 2 gp | 10 lb.
-Blanket | 5 sp | 3 lb. | | Piton | 5 cp | 1/4 lb.
-Block and tackle | 1 gp | 5 lb. | | Poison, basic (vial) | 100 gp | —
-Book | 25 gp | 5 lb. | | Pole (10-foot) | 5 cp | 7 lb.
-Bottle, glass | 2 gp | 2 lb. | | Pot, iron | 2 gp | 10 lb.
-Bucket | 5 cp | 2 lb. | | Potion of healing | 50 gp | 1/2 lb.
-Caltrops (bag of 20) | 1 gp | 2 lb. | | Pouch | 5 sp | 1 lb.
-Candle | 1 cp | &mdash;| | Quiver | 1 gp | 1 lb.
-Case, crossbow bolt | 1 gp | 1 lb. | | Ram, portable | 4 gp | 35 lb.
-Case, map or scroll | 1 gp | 1 lb. | | Rations (1 day) | 5 sp | 2 lb.
-Chain (10 feet) | 5 gp | 10 lb. | | Robes | 1 gp | 4 lb.
-Chalk (1 piece) | 1 cp | &mdash;| | Rope, hempen (50 feet) | 1 gp | 10 lb.
-Chest | 5 gp | 25 lb. | | Rope, silk (50 feet) | 10 gp | 5 lb.
-Climber’s kit | 25 gp | 12 lb. | | Sack | 1 cp | 1/2 lb.
-Clothes, common | 5 sp | 3 lb. | | Scale, merchant’s | 5 gp | 3 lb.
-Clothes, costume | 5 gp | 4 lb. | | Sealing wax | 5 sp | —
-Clothes, fine | 15 gp | 6 lb. | | Shamanic focus | |
-Clothes, traveler’s | 2 gp | 4 lb. | | &mdash;Sprig of mistletoe | 1 gp | —
-Clothes, winter | 15 gp | 6 lb. | | &mdash;Totem | 1 gp | —
-Component pouch | 25 gp | 2 lb. | | &mdash;Wooden staff | 5 gp | 4 lb.
-Crowbar | 2 gp | 5 lb. | | &mdash;Yew wand | 10 gp | 1 lb.
-Fishing tackle | 1 gp | 4 lb. | | Shovel | 2 gp | 5 lb.
-Flask or tankard | 2 cp | 1 lb. | | Signal whistle | 5 cp | —
-Grappling hook | 2 gp | 4 lb. | | Signet ring | 5 gp | —
-Hammer | 1 gp | 3 lb. | | Soap | 2 cp | —
-Hammer, sledge | 2 gp | 10 lb. | | Spikes, iron (10) | 1 gp | 5 lb.
-Healer’s kit | 5 gp | 3 lb. | | Spyglass | 1,000 gp | 1 lb.
-Holy symbol | | | | Tent, two-person | 2 gp | 20 lb.
-&mdash;Amulet | 5 gp | 1 lb. | | Tinderbox | 5 sp | 1 lb.
-&mdash;Emblem | 5 gp | &mdash;| | Torch | 1 cp | 1 lb.
-&mdash;Reliquary | 5 gp | 2 lb. | | Vial | 1 gp | —
-Holy water (flask) | 25 gp | 1 lb. | | Waterskin | 2 sp | 5 lb. (full)
-Hourglass | 25 gp | 1 lb. | | Whetstone | 1 cp | 1 lb.
+"=== Item*","Cost","Weight","","Item","Cost","*Weigh",
+"Abacus","2 gp","2 lb.","","Hunting trap","5 gp","25 lb.",
+"Ammunition","","","","Ink (1 ounce bottle)","10 gp","—",
+"---Arrows (20)","1 gp","1lb.","","Ink pen","2 cp","—",
+"---Blowgun needles (50)","1 gp","1 lb.","","Jug or pitcher","2 cp","4 lb.",
+"---Crossbow bolts (20)","1 gp","1½ lb.","","Ladder (10-foot)","1 sp","25 lb.",
+"---Sling bullets (20)","4 cp","1½ lb.","","Lamp","5 sp","1 lb.",
+"Antitoxin (vial)","50 gp","---","","Lantern, bullseye","10 gp","2 lb.",
+"Arcane focus","","","","Lantern, hooded","5 gp","2 lb.",
+"---Crystal","10 gp","1 lb.","","Lock","10 gp","1 lb.",
+"---Orb","20 gp","3 lb.","","Magnifying glass","100 gp","—",
+"---Rod","10 gp","2 lb.","","Manacles","2 gp","6 lb.",
+"---Staff","5 gp","5 lb.","","Mess kit","2 sp","1 lb.",
+"---Wand","10 gp","1 lb.","","Mirror, steel","5 gp","1/2 lb.",
+"Backpack","2 gp","5 lb.","","Net","1gp","3 lb.",
+"Ball bearings (bag of 1,000)","1 gp","2 lb.","","Oil (flask)","1 sp","1 lb.",
+"Barrel","2 gp","70 lb.","","Paper (one sheet)","2 sp","—",
+"Basket","4 sp","2 lb.","","Parchment (one sheet)","1 sp","—",
+"Bedroll","1 gp","7 lb.","","Perfume (vial)","5 gp","—",
+"Bell","1 gp","---","","Pick, miner’s","2 gp","10 lb.",
+"Blanket","5 sp","3 lb.","","Piton","5 cp","1/4 lb.",
+"Block and tackle","1 gp","5 lb.","","Poison, basic (vial)","100 gp","—",
+"Book","25 gp","5 lb.","","Pole (10-foot)","5 cp","7 lb.",
+"Bottle, glass","2 gp","2 lb.","","Pot, iron","2 gp","10 lb.",
+"Bucket","5 cp","2 lb.","","Potion of healing","50 gp","1/2 lb.",
+"Caltrops (bag of 20)","1 gp","2 lb.","","Pouch","5 sp","1 lb.",
+"Candle","1 cp","---","","Quiver","1 gp","1 lb.",
+"Case, crossbow bolt","1 gp","1 lb.","","Ram, portable","4 gp","35 lb.",
+"Case, map or scroll","1 gp","1 lb.","","Rations (1 day)","5 sp","2 lb.",
+"Chain (10 feet)","5 gp","10 lb.","","Robes","1 gp","4 lb.",
+"Chalk (1 piece)","1 cp","---","","Rope, hempen (50 feet)","1 gp","10 lb.",
+"Chest","5 gp","25 lb.","","Rope, silk (50 feet)","10 gp","5 lb.",
+"Climber’s kit","25 gp","12 lb.","","Sack","1 cp","1/2 lb.",
+"Clothes, common","5 sp","3 lb.","","Scale, merchant’s","5 gp","3 lb.",
+"Clothes, costume","5 gp","4 lb.","","Sealing wax","5 sp","—",
+"Clothes, fine","15 gp","6 lb.","","Shamanic focus","",
+"Clothes, traveler’s","2 gp","4 lb.","","---Sprig of mistletoe","1 gp","—",
+"Clothes, winter","15 gp","6 lb.","","---Totem","1 gp","—",
+"Component pouch","25 gp","2 lb.","","---Wooden staff","5 gp","4 lb.",
+"Crowbar","2 gp","5 lb.","","---Yew wand","10 gp","1 lb.",
+"Fishing tackle","1 gp","4 lb.","","Shovel","2 gp","5 lb.",
+"Flask or tankard","2 cp","1 lb.","","Signal whistle","5 cp","—",
+"Grappling hook","2 gp","4 lb.","","Signet ring","5 gp","—",
+"Hammer","1 gp","3 lb.","","Soap","2 cp","—",
+"Hammer, sledge","2 gp","10 lb.","","Spikes, iron (10)","1 gp","5 lb.",
+"Healer’s kit","5 gp","3 lb.","","Spyglass","1,000 gp","1 lb.",
+"Holy symbol","","","","Tent, two-person","2 gp","20 lb.",
+"---Amulet","5 gp","1 lb.","","Tinderbox","5 sp","1 lb.",
+"---Emblem","5 gp","---","","Torch","1 cp","1 lb.",
+"---Reliquary","5 gp","2 lb.","","Vial","1 gp","—",
+"Holy water (flask)","25 gp","1 lb.","","Waterskin","2 sp","5 lb. (full)",
+"Hourglass","25 gp","1 lb.","","Whetstone","1 cp","1 lb.",
 
 }}
 
@@ -958,7 +951,7 @@ Hourglass | 25 gp | 1 lb. | | Whetstone | 1 cp | 1 lb.
 
 This small container holds flint, fire steel, and tinder (usually dry
 cloth soaked in light oil) used to kindle a fire. Using it to light a
-torch&mdash;or anything else with abundant, exposed fuel&mdash;takes an action.
+torch---or anything else with abundant, exposed fuel---takes an action.
 Lighting any other fire takes 1 minute.
 
 === Torch
@@ -968,21 +961,20 @@ dim light for an additional 20 feet. If you make a melee attack with a
 burning torch and hit, it deals 1 fire damage.
 
 
-=== Container* | *Capacit
-:----|:----|
-Backpack | 1 cubic foot/30 pounds of gear
-Barrel | 40 gallons liquid, 4 cubic feet solid
-Basket | 2 cubic feet/40 pounds of gear
-Bottle | 1½ pints liquid
-Bucket | 3 gallons liquid, 1/2 cubic foot solid
-Chest | 12 cubic feet/300 pounds of gear
-Flask or tankard | 1 pint liquid
-Jug or pitcher | 1 gallon liquid
-Pot, iron | 1 gallon liquid
-Pouch | 1/5 cubic foot/6 pounds of gear
-Sack | 1 cubic foot/30 pounds of gear
-Vial | 4 ounces liquid
-Waterskin | 4 pints liquid
+"=== Container*","*Capacit",
+"Backpack","1 cubic foot/30 pounds of gear",
+"Barrel","40 gallons liquid, 4 cubic feet solid",
+"Basket","2 cubic feet/40 pounds of gear",
+"Bottle","1½ pints liquid",
+"Bucket","3 gallons liquid, 1/2 cubic foot solid",
+"Chest","12 cubic feet/300 pounds of gear",
+"Flask or tankard","1 pint liquid",
+"Jug or pitcher","1 gallon liquid",
+"Pot, iron","1 gallon liquid",
+"Pouch","1/5 cubic foot/6 pounds of gear",
+"Sack","1 cubic foot/30 pounds of gear",
+"Vial","4 ounces liquid",
+"Waterskin","4 pints liquid",
 
 You can also strap items, such as a bedroll or a coil of rope, to the
 outside of a backpack. This does not count against the weight limit.
@@ -1121,47 +1113,46 @@ proficiency bonus to any ability checks you make to disarm traps or open
 locks.
 
 
-=== Item* | *Cost* | *Weigh
-:----|----:|----:|
-*Artisan’s tools* | |
-&mdash;Alchemist’s supplies | 50 gp | 8 lb.
-&mdash;Brewer’s supplies | 20 gp | 9 lb.
-&mdash;Calligrapher’s supplies | 10 gp | 5 lb.
-&mdash;Carpenter’s tools | 8 gp | 6 lb.
-&mdash;Cartographer’s tools | 15 gp | 6 lb.
-&mdash;Cobbler’s tools | 5 gp | 5 lb.
-&mdash;Cook’s utensils | 1 gp | 8 lb.
-&mdash;Glassblower’s tools | 30 gp | 5 lb.
-&mdash;Jeweler’s tools | 25 gp | 2 lb.
-&mdash;Leatherworker’s tools | 5 gp | 5 lb.
-&mdash;Mason’s tools | 10 gp | 8 lb.
-&mdash;Painter’s supplies | 10 gp | 5 lb.
-&mdash;Potter’s tools | 10 gp | 3 lb.
-&mdash;Smith’s tools | 20 gp | 8 lb.
-&mdash;Tinker’s tools | 50 gp | 10 lb.
-&mdash;Weaver’s tools | 1 gp | 5 lb.
-&mdash;Woodcarver’s tools | 1 gp | 5 lb.
-Disguise kit | 25 gp | 3 lb.
-Forgery kit | 15 gp | 5 lb.
-Gaming sets | |
-&mdash;Dice set | 1 sp | —
-&mdash;Playing card set | 5 sp | —
-Herbalism kit | 5 gp | 3 lb.
-*Musical instruments* | |
-&mdash;Bagpipes | 30 gp | 6 lb.
-&mdash;Drum | 6 gp | 3 lb.
-&mdash;Dulcimer | 25 gp | 10 lb.
-&mdash;Flute | 2 gp | 1 lb.
-&mdash;Lute | 35 gp | 2 lb.
-&mdash;Lyre | 30 gp | 2 lb.
-&mdash;Horn | 3 gp | 2 lb.
-&mdash;Pan flute | 12 gp | 2 lb.
-&mdash;Shawm | 2 gp | 1 lb.
-&mdash;Viol | 30 gp | 1 lb.
-Navigator’s tools | 25 gp | 2 lb.
-Poisoner’s kit | 50 gp | 2 lb.
-Thieves’ tools | 25 gp | 1 lb.
-Vehicles (land or water) | |
+"=== Item*","Cost","*Weigh",
+"Artisan’s tools","",
+"---Alchemist’s supplies","50 gp","8 lb.",
+"---Brewer’s supplies","20 gp","9 lb.",
+"---Calligrapher’s supplies","10 gp","5 lb.",
+"---Carpenter’s tools","8 gp","6 lb.",
+"---Cartographer’s tools","15 gp","6 lb.",
+"---Cobbler’s tools","5 gp","5 lb.",
+"---Cook’s utensils","1 gp","8 lb.",
+"---Glassblower’s tools","30 gp","5 lb.",
+"---Jeweler’s tools","25 gp","2 lb.",
+"---Leatherworker’s tools","5 gp","5 lb.",
+"---Mason’s tools","10 gp","8 lb.",
+"---Painter’s supplies","10 gp","5 lb.",
+"---Potter’s tools","10 gp","3 lb.",
+"---Smith’s tools","20 gp","8 lb.",
+"---Tinker’s tools","50 gp","10 lb.",
+"---Weaver’s tools","1 gp","5 lb.",
+"---Woodcarver’s tools","1 gp","5 lb.",
+"Disguise kit","25 gp","3 lb.",
+"Forgery kit","15 gp","5 lb.",
+"Gaming sets","",
+"---Dice set","1 sp","—",
+"---Playing card set","5 sp","—",
+"Herbalism kit","5 gp","3 lb.",
+"Musical instruments","",
+"---Bagpipes","30 gp","6 lb.",
+"---Drum","6 gp","3 lb.",
+"---Dulcimer","25 gp","10 lb.",
+"---Flute","2 gp","1 lb.",
+"---Lute","35 gp","2 lb.",
+"---Lyre","30 gp","2 lb.",
+"---Horn","3 gp","2 lb.",
+"---Pan flute","12 gp","2 lb.",
+"---Shawm","2 gp","1 lb.",
+"---Viol","30 gp","1 lb.",
+"Navigator’s tools","25 gp","2 lb.",
+"Poisoner’s kit","50 gp","2 lb.",
+"Thieves’ tools","25 gp","1 lb.",
+"Vehicles (land or water)","",
 
 == Mounts and Vehicles
 
@@ -1212,42 +1203,39 @@ significant current, but they can be pulled upstream by draft animals on
 the shores. A rowboat weighs 100 pounds, in case adventurers carry it
 over land.
 
-*Item* | *Cost* | *Speed* | *Carrying Capacity*|
-:----|----:|----:|----:|
-Camel | 50 gp | 50 ft. | 480 lb.
-Donkey or mule | 8 gp | 40 ft. | 420 lb.
-Elephant | 200 gp | 40 ft. | 1,320 lb.
-Horse, draft | 50 gp | 40 ft. | 540 lb.
-Horse, riding | 75 gp | 60 ft. | 480 lb.
-Mastiff | 25 gp | 40 ft. | 195 lb.
-Pony | 30 gp | 40 ft. | 225 lb.
-Warhorse | 400 gp | 60 ft. | 540 lb.
+"Item","Cost","Speed","Carrying Capacity",
+"Camel","50 gp","50 ft.","480 lb.",
+"Donkey or mule","8 gp","40 ft.","420 lb.",
+"Elephant","200 gp","40 ft.","1,320 lb.",
+"Horse, draft","50 gp","40 ft.","540 lb.",
+"Horse, riding","75 gp","60 ft.","480 lb.",
+"Mastiff","25 gp","40 ft.","195 lb.",
+"Pony","30 gp","40 ft.","225 lb.",
+"Warhorse","400 gp","60 ft.","540 lb.",
 
-=== Item* | *Cost* | *Weigh
-:----|----:|----:|
-Barding | 4x | 4x
-Bit and bridle | 2 gp | 1 lb.
-Carriage | 100 gp | 600 lb.
-Cart | 15 gp | 200 lb.
-Chariot | 250 gp | 100 lb.
-Feed (per day) | 5 cp | 10 lb.
-Exotic saddle | 60 gp | 40 lb.
-Military saddle| 20 gp | 30 lb.
-Pack saddle | 5 gp | 15 lb.
-Riding saddle| 10 gp | 25 lb.
-Saddlebags | 4 gp | 8 lb.
-Sled | 20 gp | 300 lb.
-Stabling (per day) | 5 sp | —
-Wagon | 35 gp | 400 lb.
+"=== Item*","Cost","*Weigh",
+"Barding","4x","4x",
+"Bit and bridle","2 gp","1 lb.",
+"Carriage","100 gp","600 lb.",
+"Cart","15 gp","200 lb.",
+"Chariot","250 gp","100 lb.",
+"Feed (per day)","5 cp","10 lb.",
+"Exotic saddle","60 gp","40 lb.",
+"Military saddle","20 gp","30 lb.",
+"Pack saddle","5 gp","15 lb.",
+"Riding saddle","10 gp","25 lb.",
+"Saddlebags","4 gp","8 lb.",
+"Sled","20 gp","300 lb.",
+"Stabling (per day)","5 sp","—",
+"Wagon","35 gp","400 lb.",
 
-=== Item* | *Cost*| *Spee
-:----|:----:|----:|
-Galley | 30,000 gp | 4 mph
-Keelboat | 3,000 gp | 1 mph
-Longship | 10,000 gp | 3 mph
-Rowboat | 50 gp | 1½ mph
-Sailing ship | 10,000 gp | 2 mph
-Warship | 25,000 gp | 2½ mph
+"=== Item*","Cost","*Spee",
+"Galley","30,000 gp","4 mph",
+"Keelboat","3,000 gp","1 mph",
+"Longship","10,000 gp","3 mph",
+"Rowboat","50 gp","1½ mph",
+"Sailing ship","10,000 gp","2 mph",
+"Warship","25,000 gp","2½ mph",
 
 == Trade Goods
 
@@ -1263,21 +1251,20 @@ may or may not offer those goods and services. Merchants commonly
 exchange trade goods without using currency. The Trade Goods table shows
 the value of commonly exchanged goods.
 
-|*Cost* | *Goods*|
-|:----|:----|
-1 cp | 1 lb. of wheat
-2 cp | 1 lb. of flour or one chicken
-5 cp | 1 lb. of salt
-1 sp | 1 lb. of iron or 1 sq. yd. of canvas
-5 sp | 1 lb. of copper or 1 sq. yd. of cotton cloth
-1 gp | 1 lb. of ginger or one goat
-2 gp | 1 lb. of cinnamon or pepper, or one sheep
-3 gp | 1 lb. of cloves or one pig
-5 gp | 1 lb. of silver or 1 sq. yd. of linen
-10 gp | 1 sq. yd. of silk or one cow
-15 gp | 1 lb. of saffron or one ox
-50 gp | 1 lb. of gold
-500 gp | 1 lb. of platinum
+"Cost","Goods",
+"1 cp","1 lb. of wheat",
+"2 cp","1 lb. of flour or one chicken",
+"5 cp","1 lb. of salt",
+"1 sp","1 lb. of iron or 1 sq. yd. of canvas",
+"5 sp","1 lb. of copper or 1 sq. yd. of cotton cloth",
+"1 gp","1 lb. of ginger or one goat",
+"2 gp","1 lb. of cinnamon or pepper, or one sheep",
+"3 gp","1 lb. of cloves or one pig",
+"5 gp","1 lb. of silver or 1 sq. yd. of linen",
+"10 gp","1 sq. yd. of silk or one cow",
+"15 gp","1 lb. of saffron or one ox",
+"50 gp","1 lb. of gold",
+"500 gp","1 lb. of platinum",
 
 
 == Expenses
@@ -1311,15 +1298,14 @@ though you run the risk of attracting thieves. Likewise, living frugally
 might help you avoid criminals, but you are unlikely to make powerful
 connections.
 
-=== Lifestyle* | *Price/Day* | *Price/Wee
-:----|----:|----:|
-Wretched | &mdash;| —
-Squalid | 1 sp | 8 sp
-Poor | 2 sp | 16 sp
-Modest | 1 gp | 8 gp
-Comfortable | 2 gp | 16 gp
-Wealthy | 4 gp | 64 gp
-Aristocratic | 10 gp minimum | 80 gp minimum
+"=== Lifestyle*","Price/Day","*Price/Wee",
+"Wretched","---","—",
+"Squalid","1 sp","8 sp",
+"Poor","2 sp","16 sp",
+"Modest","1 gp","8 gp",
+"Comfortable","2 gp","16 gp",
+"Wealthy","4 gp","64 gp",
+"Aristocratic","10 gp minimum","80 gp minimum",
 
 === Wretched
 
@@ -1418,32 +1404,31 @@ The Food, Drink, and Lodging table gives prices for individual food
 items and a single night's lodging. These prices are included in your
 total lifestyle expenses.
 
-=== Item* | *Cos
-:----|----:|
-Ale, Gallon | 2 sp
-Ale, Mug | 4 cp
-Banquet (per person) | 10 gp
-Bread, loaf | 2 cp
-Cheese, hunk | 1 sp
-Meat, chunk | 3 sp
-*Inn stay (per day)* |
-Squalid | 7 cp
-Poor | 1 sp
-Modest | 5 sp
-Comfortable | 8 sp
-Wealthy | 2 gp
-Aristocratic | 4 gp
-*Meals (per day)* |
-Squalid | 3 cp
-Poor | 6 cp
-Modest | 3 sp
-Comfortable | 5 sp
-Wealthy | 8 sp
-Aristocratic | 2 gp
-Common wine (pitcher) | 2 sp
-Fine wine (bottle) | 10 gp
-Hard liquor (dram) | 1 gp
-Hard liquor (fifth) | 20 gp
+"=== Item*","*Cos",
+"Ale, Gallon","2 sp",
+"Ale, Mug","4 cp",
+"Banquet (per person)","10 gp",
+"Bread, loaf","2 cp",
+"Cheese, hunk","1 sp",
+"Meat, chunk","3 sp",
+"Inn stay (per day)",
+"Squalid","7 cp",
+"Poor","1 sp",
+"Modest","5 sp",
+"Comfortable","8 sp",
+"Wealthy","2 gp",
+"Aristocratic","4 gp",
+"Meals (per day)",
+"Squalid","3 cp",
+"Poor","6 cp",
+"Modest","3 sp",
+"Comfortable","5 sp",
+"Wealthy","8 sp",
+"Aristocratic","2 gp",
+"Common wine (pitcher)","2 sp",
+"Fine wine (bottle)","10 gp",
+"Hard liquor (dram)","1 gp",
+"Hard liquor (fifth)","20 gp",
 
 
 === Services
@@ -1479,18 +1464,17 @@ particular skill and can include laborers, porters, maids, and similar
 workers. They generally will not accompany a party into especially
 dangerous situations
 
-=== Service* | *Pa
-:----:|:----:|
-*Coach cab* |
-Between towns | 3 cp per mile
-Within a city | 1 cp
-*Hireling* |
-Skilled | 2 gp per day
-Untrained | 2 sp per day
-Messenger | 2 cp per mile
-*Other* | 
-Road or gate toll | 1 cp
-Ship’s passage | 1 sp per mile
+"=== Service*","*Pa",
+"Coach cab",
+"Between towns","3 cp per mile",
+"Within a city","1 cp",
+"Hireling",
+"Skilled","2 gp per day",
+"Untrained","2 sp per day",
+"Messenger","2 cp per mile",
+"Other",
+"Road or gate toll","1 cp",
+"Ship’s passage","1 sp per mile",
 
 === Spellcasting Services
 
@@ -1554,12 +1538,11 @@ To craft magic items, you need a few things.
 
 Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
 
-=== Tier* | *Proficiency* | *Cost Range (gp
-|:----|:----:|----:|
-Journeyman | +2 | 50-150  
-Adventurer | +3 | 300-2000 
-Hero	   | +5 | 4000-20000 
-Legendary  | &mdash; | &mdash; 
+"=== Tier*","Proficiency","*Cost Range (gp",
+"Journeyman","+2","50-150",
+"Adventurer","+3","300-2000",
+"Hero","+5","4000-20000",
+"Legendary","---","---",
 	
 == Magic Item Lists
 The presented items are examples; many other magic items may exist. The GM is free to create magic items fitting their own campaign, using these as samples or baselines or inspiration or adapting items from other games entirely. Or just making them up out of whole cloth. Players that want specific items not listed here should talk to their GM.
@@ -1612,12 +1595,11 @@ You have resistance to all damage while you wear this armor. Additionally, you c
 _Armor (any), Hero (requires attunement)_
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.
-=== d8* | *Damage Type* | | *d8* |  *Damage Typ
-:----|:----:|:----:|:----|:----:
-1  |  Acid      ||    5  |  Necrotic      
-2  |  Cold      ||    6  | Psychic        
-3  |  Fire      ||    7  | Radiant       
-4  |  Lightning ||    8  | Thunder         
+"=== d8*","Damage Type","","d8","*Damage Typ",
+"1","Acid","","5","Necrotic",
+"2","Cold","","6","Psychic",
+"3","Fire","","7","Radiant",
+"4","Lightning","","8","Thunder",
 
 
 === Armor of Physical Resistance
@@ -1637,13 +1619,12 @@ While wearing this belt, your Strength score changes to a score granted by the b
 
 Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect.
 
-=== Type*    | *Strength* | *Tie
-|:---- | :----: | :----:   
-Hill giant        | +5  |      Hero       
-Stone/frost giant | +6  |      Hero       
-Fire giant        | +7  |      Legendary  
-Cloud giant       | +8  |      Legendary  
-Storm giant       | +9  |      Legendary  
+"=== Type*","Strength","*Tie",
+"Hill giant","+5","Hero",
+"Stone/frost giant","+6","Hero",
+"Fire giant","+7","Legendary",
+"Cloud giant","+8","Legendary",
+"Storm giant","+9","Legendary",
 
 === Boots of Levitation
 _Boots, Hero (requires attunement)_
@@ -1725,13 +1706,12 @@ _Armor (masterwork lamellar), Hero (requires attunement)_
 
 Dragon scale mail (technically a form of lamellar armor) is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
 
-Dragon  | Resistance || Dragon | Resistance 
-:---- | ---- | ---- |:---- | ---- 
-Black |  Necrotic      ||  Gold  |  Radiant        
-Blue  |  Lightning ||  Green |  Acid       
-Brass |  Fire      ||  Red   | Fire        
-Bronze | Lightning ||  Silver | Cold        
-Copper | Acid      ||  White |  Cold 
+"Dragon","Resistance","","Dragon","Resistance",
+"Black","Necrotic","","Gold","Radiant",
+"Blue","Lightning","","Green","Acid",
+"Brass","Fire","","Red","Fire",
+"Bronze","Lightning","","Silver","Cold",
+"Copper","Acid","","White","Cold",
 
 === Dwarven Plate
 _Armor (masterwork plate), Hero_ 
@@ -1787,7 +1767,7 @@ While wearing this helm, you understand all spoken languages and can be understo
 === Helm of Telepathy
 _Hat, Adventurer (requires attunement)_
 
-While wearing this helm, you can use an action to cast the _detect thoughts_ spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply&mdash;using a bonus action to do so&mdash;while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
+While wearing this helm, you can use an action to cast the _detect thoughts_ spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
 
 === Helm of Teleportation
 _Hat, Hero (requires attunement)_
@@ -1868,21 +1848,20 @@ This robe has cloth patches of various shapes and colors covering it. While wear
 
 
 In addition, the robe has 4d4 other patches. The GM chooses the patches or determines them randomly.
-=== d100* | *Patc
-|:----|:----
-01-08 | Bag of 100gp 
-09-15 | Silver coffer (1 foot long, 6 inches wide and  deep) worth 500 gp 
-16-22 | Iron door (up to 10 feet wide  and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself 
-23-30 | 10 gems worth 100 gp each 
-31-44 | Wooden ladder (24 feet long) 
-45-51 | A riding horse with saddle bags (friendly toward you) 
-52-59 | Pit (a cube 10 feet on a side), which you can place on the ground within 10 feet of you 
-60-68 | 4 potions of healing 
-69-75 | Rowboat (12 feet long) 
-76-83 | Spell scroll containing one spell costing 5 or less AET. 
-84-90 | 2 mastiffs (friendly toward you) 
-91-96 | Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach 
-97-00 | Portable ram 
+"=== d100*","*Patc",
+"01-08","Bag of 100gp",
+"09-15","Silver coffer (1 foot long, 6 inches wide and  deep) worth 500 gp",
+"16-22","Iron door (up to 10 feet wide  and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself",
+"23-30","10 gems worth 100 gp each",
+"31-44","Wooden ladder (24 feet long)",
+"45-51","A riding horse with saddle bags (friendly toward you)",
+"52-59","Pit (a cube 10 feet on a side), which you can place on the ground within 10 feet of you",
+"60-68","4 potions of healing",
+"69-75","Rowboat (12 feet long)",
+"76-83","Spell scroll containing one spell costing 5 or less AET.",
+"84-90","2 mastiffs (friendly toward you)",
+"91-96","Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach",
+"97-00","Portable ram",
 
 === Rune-inscribed Belt
 _Belt, Hero (requires attunement)_
@@ -1976,23 +1955,21 @@ _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-Gem | Summoned Elemental 
-:---- | :----
-Blue sapphire | Air elemental       
-Yellow diamond | Earth elemental     
-Red corundum | Fire elemental      
-Emerald | Water elemental 
+"Gem","Summoned Elemental",
+"Blue sapphire","Air elemental",
+"Yellow diamond","Earth elemental",
+"Red corundum","Fire elemental",
+"Emerald","Water elemental",
 
 === Feather Token
 _Consumable, Hero_
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.
 
-d100  |   Feather Token || d100  |   Feather Token   
-:---- | :----: | :----: | :---- | :----:
-01 - 20 | Anchor   ||      51 - 65 | Swan boat       
-21 - 35 | Bird      ||     66 - 90 | Tree           
-36 - 50 | Fan       ||     91 - 00 | Whip 
+"d100","Feather Token","","d100","Feather Token",
+"01 - 20","Anchor","","51 - 65","Swan boat",
+"21 - 35","Bird","","66 - 90","Tree",
+"36 - 50","Fan","","91 - 00","Whip",
           
 *Anchor.* You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.
 
@@ -2023,7 +2000,7 @@ When all of the gem's charges are expended, the gem becomes a nonmagical jewel w
 === Marvelous Pigments
 _Consumable, Hero_ 
 
-Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features&mdash;such as a door, a pit, flowers, trees, cells, rooms, or weapons&mdash;that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.
+Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features---such as a door, a pit, flowers, trees, cells, rooms, or weapons---that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.
 
 === Necklace of Fireballs
 _Consumable, Hero_
@@ -2081,13 +2058,12 @@ _Potion, tier varies_
 
 When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.
 
-=== Type*    | *Strength* | *Tie
-:----|:----:|:----    
-Hill giant        | +5  |      Adventurer       
-Stone/frost giant | +6  |      Hero       
-Fire giant        | +7  |      Hero  
-Cloud giant       | +8  |      Legendary  
-Storm giant       | +9  |      Legendary  
+"=== Type*","Strength","*Tie",
+"Hill giant","+5","Adventurer",
+"Stone/frost giant","+6","Hero",
+"Fire giant","+7","Hero",
+"Cloud giant","+8","Legendary",
+"Storm giant","+9","Legendary",
 
 === Potion of Growth
 _Potion, Adventurer_ 
@@ -2100,14 +2076,13 @@ _Potion, tier varies_
 
 You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.
 
-=== Potion of …* |      *Tier*  |   *HP Regained*  | *Cost (gp)* | *Crafting Tim
-:---- | :---- | :---- |:---- | :----
-Healing         |  Journeyman |    2d4 + 2 | 25 | 4 hrs    
-Greater healing  | Adventurer |  4d4 + 4 | 125 | 2 days    
-Superior healing | Adventurer |      8d4 + 8 | 450 | 4 days    
-Supreme healing |  Hero | 10d4 + 20 | 1000 | 10 days  
+"=== Potion of …*","Tier","HP Regained","Cost (gp)","*Crafting Tim",
+"Healing","Journeyman","2d4 + 2","25","4 hrs",
+"Greater healing","Adventurer","4d4 + 4","125","2 days",
+"Superior healing","Adventurer","8d4 + 8","450","4 days",
+"Supreme healing","Hero","10d4 + 20","1000","10 days",
 
-*Formula.* Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing table. The listed cost includes the discount for being consumable. Special: Crafting potions of healing is faster than normal&mdash;the time to craft a potion of healing is shown in the Potions of Healing table.
+*Formula.* Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing table. The listed cost includes the discount for being consumable. Special: Crafting potions of healing is faster than normal---the time to craft a potion of healing is shown in the Potions of Healing table.
 
 === Potion of Heroism
 _Potion, Hero_
@@ -2130,12 +2105,11 @@ When you drink this potion, you gain the effect of the detect-thoughts spell (sa
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.
-=== d8* | *Damage Type* | | *d8* |  *Damage Typ
-:----|:----:|:----:|:----|:----
-1  |  Acid      ||    5  |  Necrotic      
-2  |  Cold      ||    6  | Psychic        
-3  |  Fire      ||    7  | Radiant       
-4  |  Lightning ||    8  | Thunder         
+"=== d8*","Damage Type","","d8","*Damage Typ",
+"1","Acid","","5","Necrotic",
+"2","Cold","","6","Psychic",
+"3","Fire","","7","Radiant",
+"4","Lightning","","8","Thunder",
 
 === Potion of Speed
 _Potion, Hero_ 
@@ -2175,15 +2149,14 @@ If the spell has a base cost higher than your aether limit, you must make an abi
 
 The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.
 
-=== Aether Cost* |  *Tier* | *Save DC* | *Attack Bonus* | *Cost* | *Proficienc
-|----|----|----|----|----|---- 
-0 | Journeyman | 13 | +5 | 50 | +2           
-2 | Journeyman | 13 | +5 | 50 | +2               
-3 | Adventurer | 13 | +5 | 150 | +3              
-5 | Adventurer | 15 | +7 | 300 | +3             
-8 | Hero       | 15 | +7 | 1500 | +5           
-12 | Hero      | 17 | +9 | 3000 | +5             
-Legendary | Legendary | 18 | +10 | &mdash; |&mdash; 
+"=== Aether Cost*","Tier","Save DC","Attack Bonus","Cost","*Proficienc",
+"0","Journeyman","13","+5","50","+2",
+"2","Journeyman","13","+5","50","+2",
+"3","Adventurer","13","+5","150","+3",
+"5","Adventurer","15","+7","300","+3",
+"8","Hero","15","+7","1500","+5",
+"12","Hero","17","+9","3000","+5",
+"Legendary","Legendary","18","+10","---","---",
 
 *Formula.* Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.
 
@@ -2216,40 +2189,37 @@ The creature is friendly to you and your companions, and it acts on your turn. Y
 Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.
 
 Grey Bag:
-d8 | Creature
-|----|----      
-1 |  Weasel        
-2 |  Giant rat     
-3 |  Badger        
-4 |  Boar          
-5 |  Panther       
-6 |  Giant badger 
-7 | Dire wolf  
-8 | Giant elk 
+"d8","Creature",
+"1","Weasel",
+"2","Giant rat",
+"3","Badger",
+"4","Boar",
+"5","Panther",
+"6","Giant badger",
+"7","Dire wolf",
+"8","Giant elk",
 
 Rust Bag:
-d8 | Creature
-|----|----    
-1  | Rat         
-2  | Owl         
-3  | Mastiff     
-4  | Goat        
-5  | Giant goat  
-6  | Giant boar  
-7  | Lion        
-8  | Brown bear  
+"d8","Creature",
+"1","Rat",
+"2","Owl",
+"3","Mastiff",
+"4","Goat",
+"5","Giant goat",
+"6","Giant boar",
+"7","Lion",
+"8","Brown bear",
 
 Tan Bag:
-d8 | Creature
-|----|----       
-1  | Jackal        
-2  | Ape           
-3  | Baboon        
-4  | Axe beak      
-5  | Black bear    
-6  | Giant weasel  
-7  | Giant hyena  
-8  | Tiger
+"d8","Creature",
+"1","Jackal",
+"2","Ape",
+"3","Baboon",
+"4","Axe beak",
+"5","Black bear",
+"6","Giant weasel",
+"7","Giant hyena",
+"8","Tiger",
 
 === Bowl of Commanding Water Elementals
 _Wondrous item, Hero_
@@ -2276,12 +2246,11 @@ _Wondrous item, Hero_
 You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
 
 Four sizes of carpet of flying exist. The GM chooses the size of a given carpet or determines it randomly.
-d100     |   Size  |         Capacity | Flying Speed
-|----|----|----|----   
-01-20    |  3 ft. &times; 5 ft. | 200 lb. |  80  feet       
-21-55    |  4 ft. &times; 6 ft. | 400 lb. |  60 feet      
-56-80    |  5 ft. &times; 7 ft. | 600 lb. |  40 feet    
-81 - 100 |  6 ft. &times; 9 ft. |  800 lb. |  30 feet  
+"d100","Size","Capacity","Flying Speed",
+"01-20","3 ft. &times; 5 ft.","200 lb.","80  feet",
+"21-55","4 ft. &times; 6 ft.","400 lb.","60 feet",
+"56-80","5 ft. &times; 7 ft.","600 lb.","40 feet",
+"81 - 100","6 ft. &times; 9 ft.","800 lb.","30 feet",
 
 A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.
 
@@ -2311,14 +2280,13 @@ _Wondrous item, Hero (requires attunement)_
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.  You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.  If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.
 
-Face | Charges | Effect
-:----|:----|----          
-1  |   1  |      Gases, wind, and  fog can't pass through the barrier.                                                   
-2  |   2  |      Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.  
-3  |   3  |      Living matter can't pass through the barrier.                           
-4  |   4  |      Magical effects can't pass through the barrier.                                 
-5  |   5  |      Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion. 
-6  |   0  |      The barrier deactivates.                                                                  
+"Face","Charges","Effect",
+"1","1","Gases, wind, and  fog can't pass through the barrier.",
+"2","2","Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
+"3","3","Living matter can't pass through the barrier.",
+"4","4","Magical effects can't pass through the barrier.",
+"5","5","Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
+"6","0","The barrier deactivates.",
 
 === Cubic Gate
 _Wondrous item, legendary_
@@ -2420,12 +2388,11 @@ _Wondrous item, Hero (silver, brass, or bronze), or legendary (iron)_
 
 You can use an action to blow this horn. In response, warrior spirits appear within 60 feet of you. They use the statistics of a berserker. They disappear after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.  Four types of horn of calling are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly.
 
-d100  | Horn Type | Berserkers Summoned | Requirement
-|----|----|----|----                            
-01-40 | Silver |     2d4 + 2 |              None                                    
-41-75 | Brass |      3d4 + 3 |              Proficiency with all simple weapons    
-76-90 | Bronze |    4d4 + 4   |           Proficiency with all medium armor     
-91-00 | Iron   |    5d4 + 5   |            Proficiency with all martial weapons  
+"d100","Horn Type","Berserkers Summoned","Requirement",
+"01-40","Silver","2d4 + 2","None",
+"41-75","Brass","3d4 + 3","Proficiency with all simple weapons",
+"76-90","Bronze","4d4 + 4","Proficiency with all medium armor",
+"91-00","Iron","5d4 + 5","Proficiency with all martial weapons",
 
 If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your verbal commands.
 
@@ -2474,12 +2441,11 @@ _Wondrous item, Hero_
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be at least 12th level and have an Intelligence modifier of +3 or higher. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
 
-d20    |  Golem | Time     |  Cost
-|:----|:----:|:----:|:----:|       
-1 - 5  |  Clay  | 30 days  |  65,000 gp    
-6 - 17 |  Flesh | 60 days  |  50,000 gp   
-18     |  Iron  | 120 days |  100,000 gp  
-19 - 20 | Stone | 90 days  |  80,000 gp   
+"d20","Golem","Time","Cost",
+"1 - 5","Clay","30 days","65,000 gp",
+"6 - 17","Flesh","60 days","50,000 gp",
+"18","Iron","120 days","100,000 gp",
+"19 - 20","Stone","90 days","80,000 gp",
 
 To create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.  Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.
 
@@ -2752,17 +2718,16 @@ While wearing this ring, you regain 1d6 hit points every 10 minutes, provided th
 _Ring, Hero (requires attunement)_ 
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.
-d10 | Damage Type | Gem
-|----|----|----          
-1  |  Acid  |       Pearl       
-2  |  Cold  |       Tourmaline   
-3  |  Fire   |      Garnet      
-4  |  Lightning |   Citrine     
-5  |  Necrotic  |   Jet            
-7  |  Psychic   |   Jade        
-8  |  Radiant   |   Topaz       
-9  | Thunder    |  Spinel      
-10 | Reroll | |mdash; 
+"d10","Damage Type","Gem",
+"1","Acid","Pearl",
+"2","Cold","Tourmaline",
+"3","Fire","Garnet",
+"4","Lightning","Citrine",
+"5","Necrotic","Jet",
+"7","Psychic","Jade",
+"8","Radiant","Topaz",
+"9","Thunder","Spinel",
+"10","Reroll","","mdash;",
 
 === Ring of Shooting Stars
 _Ring, Hero (requires attunement outdoors at night)_
@@ -2774,12 +2739,11 @@ While wearing this ring in dim light or darkness, you can cast dancing lights an
 *Ball Lightning.* You can expend 2 charges as an action to create one to four 3-foot-diameter spheres of lightning. The more spheres you create, the less powerful each sphere is individually.  Each sphere appears in an unoccupied space you can see within 120 feet of you. The spheres last as long as you concentrate (as if concentrating on a spell), up to 1 minute. Each sphere sheds dim light in a 30-foot radius.
 
 As a bonus action, you can move each sphere up to 30 feet, but no farther than 120 feet away from you. When a creature other than you comes within 5 feet of a sphere, the sphere discharges lightning at that creature and disappears. That creature must make a DC 15 Dexterity saving throw. On a failed save, the creature takes lightning damage based on the number of spheres you created.
-Spheres | Lightning Damage
-|----|----|   
-4   |     2d4               
-3   |     2d6               
-2   |     5d4               
-1   |     4d12 
+"Spheres","Lightning Damage",
+"4","2d4",
+"3","2d6",
+"2","5d4",
+"1","4d12",
 
 *Shooting Stars.* You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one.
 
@@ -2839,7 +2803,7 @@ Whenever you use the ring again before taking a long rest, you must succeed on a
 
 === Rod of Absorption
 _Rod, Hero (requires attunement)_
-While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy&mdash;not the spell itself&mdash;is stored in the rod. The energy stored has the same aether value as the spell did when it was cast. The rod can absorb and store up to 100 aether points during its existence. Once the rod absorbs 100 aether points, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.
+While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy---not the spell itself---is stored in the rod. The energy stored has the same aether value as the spell did when it was cast. The rod can absorb and store up to 100 aether points during its existence. Once the rod absorbs 100 aether points, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.
 
 When you become attuned to the rod, you know how much aether the rod has absorbed over the course of its existence, and how much aether it currently has stored. You can use the stored aether as if it was your own to cast spells and activate abilities, up to your regular aether limit.
 
@@ -2975,30 +2939,29 @@ If an effect covers an area, you must center the spell on and include the target
 multiple possible subjects, the GM randomly determines which ones are affected. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.
 
 {{wide
-d100 | Effect
-|----|----                                   
-01-05 | You cast slow. 
-06-10 | You cast faerie fire. 
-11-15 | You are stunned until the start of your next turn,  believing something awesome just happened. 
-16-20 | You cast gust of wind. 
-21 - 25 | You cast detect thoughts on the target you  chose. If you didn't target a creature,  you  instead take 1d6 psychic damage. 
-26 - 30 | You cast stinking cloud 
-31 - 33 | Heavy rain falls in a 60 -- foot radius centered on  the target. The area becomes lightly obscured.  The rain falls until the start of your next turn. 
-34 - 36 | An animal appears in the unoccupied space  nearest the target. The animal isn't under your control and acts as it normally would. Roll a d100 to determine which animal appears. On a 01 -25,  a rhinoceros appears; on a 26 -50, an elephant  appears; and on a 51 - 100, a rat appears. 
-37 - 46 | You cast lightning bolt. 
-47 - 49 | A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes  heavily obscured. The butterflies remain for 10 minutes. 
-50 - 53 | You enlarge the target as if you  had cast  enlarge/reduce. If the target can't be affected by  that spell, or if you didn't target a creature, you  become the target. 
-54 - 58 | You cast darkness.    
-59 - 62 | Grass grows on the ground in a 60-foot radius centered on the target. If grass is already  there, it grows to ten times its normal size and remains overgrown for 1 minute. 
-63 - 65 | An object of the GM's choice disappears into the Border Shadow. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.
-66 - 69 | You shrink yourself as if you had cast  enlarge/reduce on yourself.
-70 - 79 | You cast fireball. 
-80 - 84 | You cast invisibility on yourself. 
-85 - 87 | Leaves grow from the target. If you chose a point  in space as the target, leaves sprout  from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off  after 24 hours. 
-88 - 90 | A stream of 1d4 \texttimes 10 gems, each worth 1 gp, shoots from the wand's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line. 
-91 - 95 | A burst of colorful shimmering light extends  from you in a 30-foot radius. You and each  creature in the area that can see must succeed on a DC 15 Constitution saving throw or become  blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns,  ending the effect on itself on a success.
-96 - 97 | The target's skin turns bright blue for 1d10 days. If you chose a point in s pace, the creature  nearest to that point is affected.
-98 - 00 | If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration incantation or similar magic.
+"d100","Effect",
+"01-05","You cast slow.",
+"06-10","You cast faerie fire.",
+"11-15","You are stunned until the start of your next turn,  believing something awesome just happened.",
+"16-20","You cast gust of wind.",
+"21 - 25","You cast detect thoughts on the target you  chose. If you didn't target a creature,  you  instead take 1d6 psychic damage.",
+"26 - 30","You cast stinking cloud",
+"31 - 33","Heavy rain falls in a 60 -- foot radius centered on  the target. The area becomes lightly obscured.  The rain falls until the start of your next turn.",
+"34 - 36","An animal appears in the unoccupied space  nearest the target. The animal isn't under your control and acts as it normally would. Roll a d100 to determine which animal appears. On a 01 -25,  a rhinoceros appears; on a 26 -50, an elephant  appears; and on a 51 - 100, a rat appears.",
+"37 - 46","You cast lightning bolt.",
+"47 - 49","A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes  heavily obscured. The butterflies remain for 10 minutes.",
+"50 - 53","You enlarge the target as if you  had cast  enlarge/reduce. If the target can't be affected by  that spell, or if you didn't target a creature, you  become the target.",
+"54 - 58","You cast darkness.",
+"59 - 62","Grass grows on the ground in a 60-foot radius centered on the target. If grass is already  there, it grows to ten times its normal size and remains overgrown for 1 minute.",
+"63 - 65","An object of the GM's choice disappears into the Border Shadow. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.",
+"66 - 69","You shrink yourself as if you had cast  enlarge/reduce on yourself.",
+"70 - 79","You cast fireball.",
+"80 - 84","You cast invisibility on yourself.",
+"85 - 87","Leaves grow from the target. If you chose a point  in space as the target, leaves sprout  from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off  after 24 hours.",
+"88 - 90","A stream of 1d4 \texttimes 10 gems, each worth 1 gp, shoots from the wand's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line.",
+"91 - 95","A burst of colorful shimmering light extends  from you in a 30-foot radius. You and each  creature in the area that can see must succeed on a DC 15 Constitution saving throw or become  blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns,  ending the effect on itself on a success.",
+"96 - 97","The target's skin turns bright blue for 1d10 days. If you chose a point in s pace, the creature  nearest to that point is affected.",
+"98 - 00","If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration incantation or similar magic.",
 
 }}
 
@@ -3184,11 +3147,10 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 *Spells.*. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: _cone of cold_ (5 charges), _fireball_ (cast with 12 AET, 5 charges), _globe of invulnerability_ (6 charges), _hold monster_ (5 charges), _levitate_ (2 charges), _lightning bolt_ (cast with 12 AET, 5 charges), _magic missile_ (1 charge), _ray of enfeeblement_ (1 charge), or _wall of force_ (6 charges).
 
 *Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 \texttimes the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
-Distance from Origin |  Damage                          
-|----|----          
-10 ft. away or closer | 8 \texttimes the number of charges in the staff   
-11 to 20 ft. away     | 6 \texttimes the  number of charges in the staff  
-21 to 30 ft. away     | 4 \texttimes the number of charges in the staff   
+"Distance from Origin","Damage",
+"10 ft. away or closer","8 \texttimes the number of charges in the staff",
+"11 to 20 ft. away","6 \texttimes the  number of charges in the staff",
+"21 to 30 ft. away","4 \texttimes the number of charges in the staff",
 
 === Staff of Striking
 _Staff, Hero (requires attunement)_
@@ -3663,12 +3625,11 @@ _Wisdom (Survival) Expert Skill Trick_
 
 You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check and expend 2 AET, with advantage if you also are proficient in Arcana. The result determines your success:
 
-=== Check Total*  | *Resul
-|:--------|:----|
-< 10 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous. 
-10-14 | You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous. 
-15-19 | You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous. 
-20+ | You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.
+"=== Check Total*","*Resul",
+"< 10","You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous.",
+"10-14","You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous.",
+"15-19","You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous.",
+"20+","You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.",
 
 
 === Like a Ghost
@@ -3864,41 +3825,39 @@ Legendary effects are those whose power is too great to learn or cast as a norma
 === Conversion from 5e spells
 These are starting points. Unlike fixed spell levels, spells can have any integer base aether cost. And some spells will end up moving up or down a category.
 
-=== Spell level (5e)* | *Starting Aether Cos
-:----|:----
-1                | 2                    
-2                | 3                    
-3                | 5                    
-4                | 8                    
-5                | 12                   
-6+               | legendary                   
+"=== Spell level (5e)*","*Starting Aether Cos",
+"1","2",
+"2","3",
+"3","5",
+"4","8",
+"5","12",
+"6+","legendary",
 
 
 === Starting values for aether/limit
 Starting points. Note that everyone gets aether. "Martial" is those who don't explicitly have a Spellcasting trait.
 
-=== Level* | *Full* | *Half* | *Martial* | *Limit (F/H/M
-:----|:----:|:----:|:----:|:----: 
-1     | 4    | 2  | 1       | 2/1/1         
-2     | 8    | 4  | 1       | 3/2/1         
-3     | 12   | 6  | 2       | 4/3/1                      
-4     | 16   | 8  | 2       | 5/3/1         
-5     | 20   | 10 | 3       | 6/4/2         
-6     | 24   | 12 | 3       | 7/5/2         
-7     | 28   | 14 | 4       | 8/5/2         
-8     | 32   | 16 | 4       | 9/6/2         
-9     | 36   | 18 | 5       | 10/7/2        
-10    | 40   | 20 | 5       | 11/7/3        
-11    | 44   | 22 | 6       | 12/8/3        
-12    | 48   | 24 | 6       | 13/9/3        
-13    | 52   | 26 | 7       | 13/9/3        
-14    | 56   | 28 | 7       | 14/10/3        
-15    | 60   | 30 | 8       | 14/11/3        
-16    | 64   | 32 | 8       | 15/11/3        
-17    | 68  | 34  | 9       | 15/12/4       
-18    | 72  | 36  | 9       | 16/13/4       
-19    | 76  | 38  | 10      | 16/13/4       
-20    | 80  | 40  | 10      | 17/14/4       
+"=== Level*","Full","Half","Martial","*Limit (F/H/M",
+"1","4","2","1","2/1/1",
+"2","8","4","1","3/2/1",
+"3","12","6","2","4/3/1",
+"4","16","8","2","5/3/1",
+"5","20","10","3","6/4/2",
+"6","24","12","3","7/5/2",
+"7","28","14","4","8/5/2",
+"8","32","16","4","9/6/2",
+"9","36","18","5","10/7/2",
+"10","40","20","5","11/7/3",
+"11","44","22","6","12/8/3",
+"12","48","24","6","13/9/3",
+"13","52","26","7","13/9/3",
+"14","56","28","7","14/10/3",
+"15","60","30","8","14/11/3",
+"16","64","32","8","15/11/3",
+"17","68","34","9","15/12/4",
+"18","72","36","9","16/13/4",
+"19","76","38","10","16/13/4",
+"20","80","40","10","17/14/4",
 
 === Guidance on control effects
 Control effects are those effects (whether from spells or features or monster abilities) that remove or constrain the ability of a creature to take the actions they desire. They break down into two major categories--soft control merely constrains or diminishes the effect of certain actions, while hard control outright denies control/actions.
@@ -3919,14 +3878,13 @@ DEX and INT generally don't cause conditions; instead they deal damage (usually 
 Generally, monsters have the lowest Dexterity and Intelligence saving throw modifiers and the highest Constitution saving throw modifiers. There are many outliers, however.
 
 {{wide
-=== Save* | *Weak* | *Regular* | *Strong* | *Note
-|:----|:----|:----|:----|:----
-WIS | shaken | frightened | broken | Broken should rarely apply to PCs. 
-STR | grappled | restrained | petrified | Petrified should require multiple failed saves. Prone can work as a weak version where appropriate. 
-CON | staggered | stunned | paralyzed | Be very careful with paralyzed. 
-CHA | |&mdash; | charmed | Dominated | Dominated isn't a condition, but... 
-CON/WIS | |&mdash; | incapacitated | unconscious | 
-CON | |&mdash; | poisoned | exhaustion |
+"=== Save*","Weak","Regular","Strong","*Note",
+"WIS","shaken","frightened","broken","Broken should rarely apply to PCs.",
+"STR","grappled","restrained","petrified","Petrified should require multiple failed saves. Prone can work as a weak version where appropriate.",
+"CON","staggered","stunned","paralyzed","Be very careful with paralyzed.",
+"CHA","","---","charmed","Dominated","Dominated isn't a condition, but...",
+"CON/WIS","","---","incapacitated","unconscious",
+"CON","","---","poisoned","exhaustion",
 
 }}
 
@@ -4731,12 +4689,11 @@ This spell assaults and twists creatures' minds, spawning delusions and provokin
 
 An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
 
-=== d10* | *Behavio
-:----|:---- 
-1 | The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn. 
-2-6 | The creature doesn't move or take actions this turn. 
-7-8 | The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn. 
-9-10 | The creature can act and move normally.
+"=== d10*","*Behavio",
+"1","The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.",
+"2-6","The creature doesn't move or take actions this turn.",
+"7-8","The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.",
+"9-10","The creature can act and move normally.",
 
 At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.
 
@@ -5017,7 +4974,7 @@ _3 AET_
 
 For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of -4 or lower or doesn't speak any language, the creature is unaffected.
 
-You initially learn the surface thoughts of the creature&mdash;what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.
+You initially learn the surface thoughts of the creature---what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.
 
 Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.
 
@@ -5054,7 +5011,7 @@ _2 AET_
 
 *Duration*: 1 hour
 
-You make yourself&mdash;including your clothing, armor, weapons, and other belongings on your person&mdash;look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
+You make yourself---including your clothing, armor, weapons, and other belongings on your person---look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
 
 The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 
@@ -5172,9 +5129,9 @@ You cause a creature or an object you can see within range to grow larger or sma
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
 
-*Enlarge.* The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category&mdash;from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.
+*Enlarge.* The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category---from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.
 
-*Reduce.* The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category&mdash;from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
+*Reduce.* The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category---from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
 
 === Entangle
 _2 AET_
@@ -6001,7 +5958,7 @@ You create a sound or an image of an object within range that lasts for the dura
 
 If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.
 
-If you create an image of an object&mdash;such as a chair, muddy footprints, or a small chest&mdash;it must be no larger than a 5-foot cube (ie less than 5ft on any dimension). The image can't create sound, light, smell, or any other sensory effect. Creating a reflective surface (such as a hand mirror) works but only reflects what the viewer expects to see. Physical interaction with the image reveals it to be an illusion, because things can pass through it. 
+If you create an image of an object---such as a chair, muddy footprints, or a small chest---it must be no larger than a 5-foot cube (ie less than 5ft on any dimension). The image can't create sound, light, smell, or any other sensory effect. Creating a reflective surface (such as a hand mirror) works but only reflects what the viewer expects to see. Physical interaction with the image reveals it to be an illusion, because things can pass through it. 
 
 If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.
 
@@ -6364,16 +6321,15 @@ If the target's soul isn't free or willing to do so, the spell fails. The creatu
 
 The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The GM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the GM chooses a form.
 
-=== d100*  | *Lineag
-|:----|:----           
-1-45 | human 
-46-55 | dwarf 
-56-65 | ihmisi 
-66-75 | orc 
-76-85 | gwerin 
-86-90 | halfling 
-91-95 | dragonborn 
-96-100 | jazuu
+"=== d100*","*Lineag",
+"1-45","human",
+"46-55","dwarf",
+"56-65","ihmisi",
+"66-75","orc",
+"76-85","gwerin",
+"86-90","halfling",
+"91-95","dragonborn",
+"96-100","jazuu",
 
 The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly. Its culture does not change.
 
@@ -6404,7 +6360,7 @@ _8 AET_
 
 A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.
 
-Nothing&mdash;not physical objects, energy, or other spell effects&mdash;can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage from outside the sphere, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. Unwilling targets inside can attack the sphere as an object with AC equal to your spell save DC, damage threshold 10, and 16 HP. When it reaches 0 HP, the spell ends and the globe vanishes.
+Nothing---not physical objects, energy, or other spell effects---can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage from outside the sphere, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. Unwilling targets inside can attack the sphere as an object with AC equal to your spell save DC, damage threshold 10, and 16 HP. When it reaches 0 HP, the spell ends and the globe vanishes.
 
 The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures. While enclosed, creatures take no damage from falling.
 
@@ -6435,7 +6391,7 @@ _2 AET_
 
 One target you can see within range must make a Dexterity saving throw. On a failed save, the creature takes radiant damage equal to twice the difference between your maximum health and your current health (maximum 10). On a success, the creature takes half as much damage.
 
-Alternatively, you can choose an ally within the spells' range to act as the source of the damage&mdash;the target takes damage (on a failed save) equal to twice the difference between the source's maximum health and their current health (up to the same limit).
+Alternatively, you can choose an ally within the spells' range to act as the source of the damage---the target takes damage (on a failed save) equal to twice the difference between the source's maximum health and their current health (up to the same limit).
 
 In either case, temporary hit points do not count as health (maximum or otherwise).
 
@@ -7275,7 +7231,7 @@ The GM has the fey creature's statistics.
 
 *Other Requirements.* A jeweled statuette of yourself costing 1500 gp.
 
-Choose a spell costing 15 or less AET that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell&mdash;called the contingent spell&mdash;as part of creating the *contingency* effect and must expend the aether to cast it, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you create the effect. For example, a *contingency* cast with *water breathing* might stipulate that *water breathing* comes into effect when you are engulfed in water or a similar liquid.
+Choose a spell costing 15 or less AET that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell---called the contingent spell---as part of creating the *contingency* effect and must expend the aether to cast it, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you create the effect. For example, a *contingency* cast with *water breathing* might stipulate that *water breathing* comes into effect when you are engulfed in water or a similar liquid.
 
 The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then *contingency* ends.
 
@@ -7293,30 +7249,27 @@ When you cast the spell, you change the current weather conditions, which are de
 
 When you change the weather conditions, find a current condition on the following tables and change it to a new one. When changing the wind, you can change its direction.
 
-=== Stage* | *Conditio
-|:----|:----
-1 | Clear 
-2 | Light clouds 
-3 | Overcast or ground fog 
-4 | Rain, hail, or snow 
-5 | Torrential rain, driving hail, or blizzard 
+"=== Stage*","*Conditio",
+"1","Clear",
+"2","Light clouds",
+"3","Overcast or ground fog",
+"4","Rain, hail, or snow",
+"5","Torrential rain, driving hail, or blizzard",
 
-=== Stage* | *Conditio
-|:----|:----
-1     | Unbearable heat 
-2     | Hot             
-3     | Warm            
-4     | Cool            
-5     | Cold            
-6     | Arctic cold     
+"=== Stage*","*Conditio",
+"1","Unbearable heat",
+"2","Hot",
+"3","Warm",
+"4","Cool",
+"5","Cold",
+"6","Arctic cold",
 
-=== Stage* | *Conditio
-|:----|:----    
-1     | Calm          
-2     | Moderate wind 
-3     | Strong wind   
-4     | Gale          
-5     | Storm         
+"=== Stage*","*Conditio",
+"1","Calm",
+"2","Moderate wind",
+"3","Strong wind",
+"4","Gale",
+"5","Storm",
 
 
 === Disintegrate
@@ -7362,7 +7315,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 *Cast Time.* 1 Action.
 
-You smash the earth at your feet, causing it to crack and break. You can choose to affect either a 90 ft cone starting at your location or a 60 ft-diameter circle radiating from your location. In either case, you are not affected, nor is your space. This has several effects&mdash;it creates tremors immediately and at the beginning of each of your turns for the next 3 turns and causes permanent fissures in the terrain.
+You smash the earth at your feet, causing it to crack and break. You can choose to affect either a 90 ft cone starting at your location or a 60 ft-diameter circle radiating from your location. In either case, you are not affected, nor is your space. This has several effects---it creates tremors immediately and at the beginning of each of your turns for the next 3 turns and causes permanent fissures in the terrain.
 
 All creatures within that area when a tremor occurs must make a DC 13 + your proficiency bonus Dexterity saving throw. On a failed save, they fall prone and take 3d10 bludgeoning damage. If they fail the saving throw by 5 or more, they are also staggered until the start of your next turn. On a success, they take half damage and are not prone. Objects in the area take 30 bludgeoning damage. Walls and buildings take double damage and may collapse.
 
@@ -7963,7 +7916,7 @@ This incantation grants up to ten willing creatures you can see within range the
 === Water Walk
 _Common, 10 minutes. Duration 1 hour_
 
-This incantation grants the ability to move across any liquid surface&mdash;such as water, acid, mud, snow, quicksand, or lava&mdash;as if it were solid ground (creatures crossing dangerous surfaces such as molten lava can still take damage or suffer other negative effects from contact but will not become immersed or mired in the liquid). Up to ten willing creatures you can see within range gain this ability for the duration. If you target a creature submerged in a liquid, the incantation carries the target to the surface of the liquid at a rate of 60 feet per round.
+This incantation grants the ability to move across any liquid surface---such as water, acid, mud, snow, quicksand, or lava---as if it were solid ground (creatures crossing dangerous surfaces such as molten lava can still take damage or suffer other negative effects from contact but will not become immersed or mired in the liquid). Up to ten willing creatures you can see within range gain this ability for the duration. If you target a creature submerged in a liquid, the incantation carries the target to the surface of the liquid at a rate of 60 feet per round.
 
 == Uncommon Incantations
 Uncommon incantations are suitable to be first found during the early Adventurer phase, ie levels 5-7.
@@ -8349,7 +8302,7 @@ You and up to eight willing creatures who link hands in a circle are transported
 
 Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, roll 1d6. On a roll of 2-6, the incantation takes you to that location. On a roll of 6, you end up at a point of the GM's choice near the circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
 
-*Note:* the focus component counts as a magic item of varying rarity&mdash;forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
+*Note:* the focus component counts as a magic item of varying rarity---forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
 
 === Programmed Illusion
 _Rare, 1 minute, Cooldown (8 hours), Costly (a bit of fleece and jade dust worth at least 25 gp), Exclusive (Special)._
@@ -8383,13 +8336,12 @@ You pull wisps of shadow material from the Shadowfell to create a nonliving obje
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
-=== Material* | *Duration* | *Cos
-:----|:----:|:----:|  
-Vegetable Matter | 1 day | 0 gp 
-Stone, Crystal, or Regular Metals | 12 hours | 10 gp  
-Precious Metals | 1 hour | 50 gp 
-Gems | 10 minutes | 100 gp 
-Adamatine or mithral | 1 minute | 500 gp
+"=== Material*","Duration","*Cos",
+"Vegetable Matter","1 day","0 gp",
+"Stone, Crystal, or Regular Metals","12 hours","10 gp",
+"Precious Metals","1 hour","50 gp",
+"Gems","10 minutes","100 gp",
+"Adamatine or mithral","1 minute","500 gp",
 
 Using any material created by this incantation as another spell's material component causes that spell to fail.
 
@@ -8400,11 +8352,10 @@ _Rare, 10 minutes, Costly (rare chalks and inks infused with precious gems with 
 
 As you cast the incantation, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. Roll a d10 and consult the Teleportation Circle table. 
 
-=== d10 Result* | *Outcom
-|:----|:---- 
-1   | Fizzle. The portal does not appear. 
-2-4 | Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success. 
-5-10 | Success. The portal forms as normal and poses no threat.
+"=== d10 Result*","*Outcom",
+"1","Fizzle. The portal does not appear.",
+"2-4","Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success.",
+"5-10","Success. The portal forms as normal and poses no threat.",
 
 If the spell succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
 
@@ -8462,18 +8413,16 @@ You can see and hear a particular creature you choose that is on the same plane 
 
 *Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
 
-*Knowledge* | *Save Modifier*
-:---- | ----:
-Secondhand (you have heard of the target) |+10 
-Firsthand (you have met the target) |+5 
-Familiar (you know the target well) |+0 
+"Knowledge","Save Modifier",
+"Secondhand (you have heard of the target)","+10",
+"Firsthand (you have met the target)","+5",
+"Familiar (you know the target well)","+0",
 
-*Connection* | *Save Modifier*
-:---- | ----:
-None | +10 
-Likeness or picture   | -1 
-Possession or garment | -2 
-Body part, lock of hair, bit of nail, or the like | -5  
+"Connection","Save Modifier",
+"None","+10",
+"Likeness or picture","-1",
+"Possession or garment","-2",
+"Body part, lock of hair, bit of nail, or the like","-5",
 
 On a successful save, the target isn't affected, and you can't use this incantation against it again for 24 hours.
 
@@ -8491,15 +8440,14 @@ The destination you choose must be known to you, and it must be on the same plan
 
 *Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
 
-*Familiarity* | *Mishap* | *Similar Area* | *Off Target* | *On Target*
-:----|:----:|:----:|:----:|:----:|
-Permanent circle | 01-05 | 06-20 | 21-40 | 41-100 
-Associated object | 01-15 | 16-40 | 41-50 | 51-100 
-Very familiar | 01-33 | 34-43 | 44-53 | 54-100 
-Seen casually | 01-43 | 44-53 | 54-73 | 74-100 
-Viewed once | 01-63 | 64-73 | 74-83 | 84-100 
-Description | 01-63 | 64-53 | 74-73 | 84-100 
-False destination | 01-50 | 51-100 | |mdash; | |mdash;
+"Familiarity","Mishap","Similar Area","Off Target","On Target",
+"Permanent circle","01-05","06-20","21-40","41-100",
+"Associated object","01-15","16-40","41-50","51-100",
+"Very familiar","01-33","34-43","44-53","54-100",
+"Seen casually","01-43","44-53","54-73","74-100",
+"Viewed once","01-63","64-73","74-83","84-100",
+"Description","01-63","64-53","74-73","84-100",
+"False destination","01-50","51-100","","mdash;","","mdash;",
  
 
 *Familiarity.*. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.
@@ -8565,4 +8513,4 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
 
-The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License]."
+The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License].",

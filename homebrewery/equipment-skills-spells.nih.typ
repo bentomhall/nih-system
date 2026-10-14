@@ -2469,7 +2469,7 @@ _Wondrous item, Adventurer_
 
 While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, non-magical tatters.
 
-== Rings and Amulets <marker>
+== Rings and Amulets
 
 This section contains items worn as jewelry. Rings, amulets, broaches, earrings, bracers, etc. Almost all of these require attunement, which serves as the limiting factor on how many you can gain benefit from at a time.
 
@@ -2496,12 +2496,12 @@ While wearing these bracers, you have proficiency with the longbow and shortbow,
 === Bracers of Defense
 _Wondrous item, Hero (requires attunement)_
 
-While attuned to these bracers, you gain the benefits of the mage-armor spell.
+While attuned to these bracers, you gain the benefits of the _mage armor_ spell.
 
 === Brooch of Shielding
 _Wondrous item, Adventurer (requires attunement)_
 
-While wearing this brooch, you have resistance to bludgeoning damage, and you have immunity to damage from the magic-missile spell.
+While wearing this brooch, you have resistance to bludgeoning damage, and you have immunity to damage from the _magic missile_ spell.
 
 === Dimensional Shackles
 _Wondrous item, Hero_
@@ -2511,7 +2511,7 @@ You can use an action to place these shackles on an incapacitated creature. The 
 === Eyes of Charming
 _Wondrous item, Adventurer (requires attunement)_
 
-These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
+These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the _charm person_ spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
 
 === Eyes of Minute Seeing
 _Wondrous item, Adventurer_
@@ -2531,7 +2531,7 @@ While wearing these dark lenses, you have darkvision out to a range of 60 feet. 
 === Medallion of Thoughts
 _Wondrous item, Adventurer (requires attunement)_
 
-The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect-thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
+The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the _detect thoughts_ spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
 
 === Necklace of Adaptation
 _Wondrous item, Adventurer (requires attunement)_
@@ -2563,9 +2563,9 @@ _Ring, Hero_
 
 This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:
 
-- Animal friendship (save DC 13)
-- Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower
-- Speak with animals
+- _Animal friendship_ (save DC 13)
+- _Fear_ (save DC 13), targeting only beasts that have an Intelligence of 3 or lower
+- _Voice the voiceless_ (incantation, using only the speak with animals mode)
 
 
 === Ring of Djinni Summoning
@@ -2586,30 +2586,29 @@ While wearing this ring, you have advantage on attack rolls against elementals f
 
 The ring has 5 charges. It regains 1d4 +1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17.
 
-*Ring of Air Elemental Command.* You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
+*Ring of Air Elemental Command.* You can expend 2 of the ring's charges to cast _domination_ on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You have resistance to lightning damage.
 - You have a flying speed equal to your walking speed and can hover.
-- You can cast the following spells from the ring,expending the necessary number of charges: chain lightning (3 charges), gust of wind (2 charges), or wind wall (1 charge).
+- You can cast the following spells from the ring, expending the necessary number of charges: _chain lightning_ (3 charges), _gust of wind_ (2 charges), or _wind wall_ (1 charge).
 
-*Ring of Earth Elemental Command.* You can expend 2 of the ring's charges to cast dominate monster on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.  If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:
+*Ring of Earth Elemental Command.* You can expend 2 of the ring's charges to cast _domination_ on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.  If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You have resistance to acid damage.
 - You can move through solid earth or rock as if those areas were difficult terrain. If you end your turn there, you are shunted out to the nearest unoccupied space you last occupied.
-- You can cast the following spells from the ring,expending the necessary number of charges: stone shape (2 charges), stoneskin (3 charges), or wall of stone (3 charges).
+- You can cast the following spells from the ring,expending the necessary number of charges: _stone shape_ (2 charges), _stoneskin_ (3 charges), or _wall of stone_ (3 charges).
 
 === Ring of Fire Elemental Command
-You can expend 2 of the ring's charges to cast dominate monster on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:
+You can expend 2 of the ring's charges to cast _domination_ on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You are immune to fire damage.
-- You can cast the following spells from the ring,expending the necessary number of charges:burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges).
-
+- You can cast the following spells from the ring,expending the necessary number of charges: _burning hands_ (1 charge), _fireball_ (2 charges), and _wall of fire_ (3 charges).
 
 === Ring of Water Elemental Command
-You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
+You can expend 2 of the ring's charges to cast _domination_ on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You can breathe underwater and have a swimming speed equal to your walking speed.
-- You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges).
+- You can cast the following spells from the ring, expending the necessary number of charges: _create or destroy water_ (1 charge), _control water_ (3 charges), _ice storm_ (2 charges), or _wall of ice_ (3 charges).
 
 
 === Ring of Evasion
@@ -2635,7 +2634,7 @@ While wearing this ring, you can turn invisible as an action. Anything you are w
 === Ring of Jumping
 _Ring, Adventurer (requires attunement)_
 
-While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.
+While wearing this ring, you can cast the _jump_ spell from it as a bonus action at will, but can target only yourself when you do so.
 
 === Ring of Mind Shielding
 _Ring, Adventurer (requires attunement)_
@@ -2658,6 +2657,7 @@ While wearing this ring, you regain 1d6 hit points every 10 minutes, provided th
 _Ring, Hero (requires attunement)_ 
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.
+#dndtab("", columns: (1fr, 2fr, 2fr), 
 "d10","Damage Type","Gem",
 "1","Acid","Pearl",
 "2","Cold","Tourmaline",
@@ -2667,25 +2667,26 @@ You have resistance to one damage type while wearing this ring. The gem in the r
 "7","Psychic","Jade",
 "8","Radiant","Topaz",
 "9","Thunder","Spinel",
-"10","Reroll","","mdash;",
+"10","Reroll","---",
+)
 
 === Ring of Shooting Stars
 _Ring, Hero (requires attunement outdoors at night)_
 
 While wearing this ring in dim light or darkness, you can cast dancing lights and light from the ring at will. Casting either spell from the ring requires an action. The ring has 6 charges for the following other properties. The ring regains 1d6 expended charges daily at dawn.
-
-*Faerie Fire.* You can expend 1 charge as an action to cast faerie fire from the ring.
-
-*Ball Lightning.* You can expend 2 charges as an action to create one to four 3-foot-diameter spheres of lightning. The more spheres you create, the less powerful each sphere is individually.  Each sphere appears in an unoccupied space you can see within 120 feet of you. The spheres last as long as you concentrate (as if concentrating on a spell), up to 1 minute. Each sphere sheds dim light in a 30-foot radius.
-
-As a bonus action, you can move each sphere up to 30 feet, but no farther than 120 feet away from you. When a creature other than you comes within 5 feet of a sphere, the sphere discharges lightning at that creature and disappears. That creature must make a DC 15 Dexterity saving throw. On a failed save, the creature takes lightning damage based on the number of spheres you created.
+#flush-block[
+- *Faerie Fire.* You can expend 1 charge as an action to cast faerie fire from the ring.
+- *Ball Lightning.* You can expend 2 charges as an action to create one to four 3-foot-diameter spheres of lightning. The more spheres you create, the less powerful each sphere is individually.  Each sphere appears in an unoccupied space you can see within 120 feet of you. The spheres last as long as you concentrate (as if concentrating on a spell), up to 1 minute. Each sphere sheds dim light in a 30-foot radius.
+- As a bonus action, you can move each sphere up to 30 feet, but no farther than 120 feet away from you. When a creature other than you comes within 5 feet of a sphere, the sphere discharges lightning at that creature and disappears. That creature must make a DC 15 Dexterity saving throw. On a failed save, the creature takes lightning damage based on the number of spheres you created.
+- *Shooting Stars.* You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one.
+]
+#dndtab("Ball Lightning", columns: (1fr, 1fr),
 "Spheres","Lightning Damage",
 "4","2d4",
 "3","2d6",
 "2","5d4",
 "1","4d12",
-
-*Shooting Stars.* You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one.
+)
 
 === Ring of Spell Storing
 _Ring, Hero (requires attunement)_
@@ -2709,7 +2710,7 @@ You have a swimming speed of 40 feet while wearing this ring.
 === Ring of Telekinesis
 _Ring, Hero (requires attunement)_
 
-While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried.
+While wearing this ring, you can cast the _telekinesis_ spell at will, but you can target only objects that aren't being worn or carried.
 
 === Ring of the Ram
 _Ring, Hero (requires attunement)_
@@ -2721,11 +2722,16 @@ _Ring, legendary_
 
 While wearing this ring, you can use an action to expend 1 of its 3 charges to make a wish. The ring becomes nonmagical when you use the last charge.
 
-Wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.
+Wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect. 
+
+#breakoutbox("Wish Ettiquite")[
+The GM can refuse a wish (refunding the expended charge) at their discretion, but shouldn't twist the wish against the character. This is an out of character conversation about what you want to happen, not an excuse to try to get one up on anyone else, player or GM.
+]
+
 === Ring of Warmth
 _Ring, Adventurer (requires attunement)_
 
-While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as \textminus50 degrees Fahrenheit.
+While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit.
 
 === Ring of Water Walking
 _Ring, Adventurer_
@@ -2754,10 +2760,11 @@ _Rod, Hero (requires attunement)_
 
 This rod has a flanged head and the following properties.
 
-
+#flush-block[
 - *Alertness.* While holding the rod, you have advantage on Wisdom (Perception) checks and on rolls for initiative.
-- *Spells.* While holding the rod, you can use an action to cast one of the following spells from it: detect evil and good, detect magic, detect poison and disease, or see invisibility.
-- *Protective Aura.* As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you gain a +1 bonus to AC and saving throws and can sense the location of any invisible hostile creature that is also in the bright light.  The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.
+- *Spells.* While holding the rod, you can use an action to cast one of the following spells and incantations from it: _sense aura_, _detect poison and disease_, or _see invisibility_.
+- *Protective Aura.* As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you can take the Deflect, Exert, or Focus actions (the latter against saving throws) without expending AET or STA and can sense the location of any invisible hostile creature that is also in the bright light.  The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.
+]
 
 
 === Rod of Lordly Might
@@ -2778,8 +2785,7 @@ If you press button 5, the rod transforms into a handheld battering ram and gran
 
 If you press button 6, the rod assumes or remains in its normal form and indicates magnetic north. (Nothing happens if this function of the rod is used in a location that has no magnetic north.) The rod also gives you knowledge of your approximate depth beneath the ground or your height above it.
 
-*Drain Life.* When you hit a creature with a melee attack using the
-rod, you can force the target to make a DC 17 Constitution saving throw. On a failure, the target takes an extra 4d6 necrotic damage, and you regain a number of hit points equal to half that necrotic damage. This property can't be used again until the next dawn.
+*Drain Life.* When you hit a creature with a melee attack using the rod, you can force the target to make a DC 17 Constitution saving throw. On a failure, the target takes an extra 4d6 necrotic damage, and you regain a number of hit points equal to half that necrotic damage. This property can't be used again until the next dawn.
 
 *Paralyze.* When you hit a creature with a melee attack using the rod, you can force the target to make a DC 17 Strength saving throw. On a failure, the target is paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. This property can't be used again until the next dawn.
 
@@ -2817,14 +2823,14 @@ _Wand, Hero (requires attunement)_
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-*Command.* While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the command spell (save DC 15).
+*Command.* While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the _command_ spell (save DC 15).
 
 *Cone of Fear.* While holding the wand, you can use an action to expend 2 charges, causing the wand's tip to emit a 60-foot cone of amber light. Each creature in the cone must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.
 
 === Wand of Fireballs
 _Wand, Hero (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
+This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the _fireball_ spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
@@ -2838,12 +2844,12 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 === Wand of Magic Detection
 _Wand, Adventurer_
 
-This wand has 3 charges. While holding it, you can expend 1 charge as an action to gain the effects of the sense-aura incantation (in its detect magic usage) from it. The wand regains 1d3 expended charges daily at dawn.
+This wand has 3 charges. While holding it, you can expend 1 charge as an action to gain the effects of the _sense aura_ incantation (in its detect magic usage) from it. The wand regains 1d3 expended charges daily at dawn.
 
 === Wand of Magic Missiles
 _Wand, Adventurer_ 
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
+This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the _magic missile_ spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
 
 === Wand of Paralysis
@@ -2854,7 +2860,7 @@ This wand has 7 charges. While holding it, you can use an action to expend 1 of 
 === Wand of Polymorph
 _Wand, Hero (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the polymorph spell (save DC 15) from it.
+This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the _polymorph_ spell (save DC 15) from it.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
@@ -2866,52 +2872,16 @@ The wand has 3 charges. While holding it, you can use an action to expend 1 of i
 === Wand of Web
 _Wand, Adventurer (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the web spell (save DC 15) from it.
+This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the _web_ spell (save DC 15) from it.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Wonder
-_Wand, Hero (requires attunement)_
-
-This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll d100 and consult the following table to discover what happens.
-If the effect causes you to cast a spell fromthe wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already.
-If an effect covers an area, you must center the spell on and include the target. If an effect has
-multiple possible subjects, the GM randomly determines which ones are affected. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.
-
-{{wide
-"d100","Effect",
-"01-05","You cast slow.",
-"06-10","You cast faerie fire.",
-"11-15","You are stunned until the start of your next turn,  believing something awesome just happened.",
-"16-20","You cast gust of wind.",
-"21 - 25","You cast detect thoughts on the target you  chose. If you didn't target a creature,  you  instead take 1d6 psychic damage.",
-"26 - 30","You cast stinking cloud",
-"31 - 33","Heavy rain falls in a 60 -- foot radius centered on  the target. The area becomes lightly obscured.  The rain falls until the start of your next turn.",
-"34 - 36","An animal appears in the unoccupied space  nearest the target. The animal isn't under your control and acts as it normally would. Roll a d100 to determine which animal appears. On a 01 -25,  a rhinoceros appears; on a 26 -50, an elephant  appears; and on a 51 - 100, a rat appears.",
-"37 - 46","You cast lightning bolt.",
-"47 - 49","A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes  heavily obscured. The butterflies remain for 10 minutes.",
-"50 - 53","You enlarge the target as if you  had cast  enlarge/reduce. If the target can't be affected by  that spell, or if you didn't target a creature, you  become the target.",
-"54 - 58","You cast darkness.",
-"59 - 62","Grass grows on the ground in a 60-foot radius centered on the target. If grass is already  there, it grows to ten times its normal size and remains overgrown for 1 minute.",
-"63 - 65","An object of the GM's choice disappears into the Border Shadow. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.",
-"66 - 69","You shrink yourself as if you had cast  enlarge/reduce on yourself.",
-"70 - 79","You cast fireball.",
-"80 - 84","You cast invisibility on yourself.",
-"85 - 87","Leaves grow from the target. If you chose a point  in space as the target, leaves sprout  from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off  after 24 hours.",
-"88 - 90","A stream of 1d4 \texttimes 10 gems, each worth 1 gp, shoots from the wand's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line.",
-"91 - 95","A burst of colorful shimmering light extends  from you in a 30-foot radius. You and each  creature in the area that can see must succeed on a DC 15 Constitution saving throw or become  blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns,  ending the effect on itself on a success.",
-"96 - 97","The target's skin turns bright blue for 1d10 days. If you chose a point in s pace, the creature  nearest to that point is affected.",
-"98 - 00","If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration incantation or similar magic.",
-
-}}
-
-
-=== Weapons, Magic
+== Weapons, Magic
 
 === Ammunition of Slaying
 _Weapon (arrow, bolt, or sling stone), Hero_ 
 
-An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying is hit by the arrow, the attack is a critical hit and the creature takes an additional 6d10 piercing damage (not doubled due to the critical hit). In addition, the creature must make a DC 17 Constitution saving throw. On a failed save, the creature is killed outright. If the creature was reduced to zero hit points by the attack's damage (including the extra damage), it automatically fails the saving throw. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
+An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, lineage, or group associated with an arrow of slaying is hit by the arrow, the attack is a critical hit and the creature takes an additional 6d10 piercing damage (not doubled due to the critical hit). In addition, the creature must make a DC 17 Constitution saving throw. On a failed save, the creature is killed outright. If the creature was reduced to zero hit points by the attack's damage (including the extra damage), it automatically fails the saving throw. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
 
 === Berserker Axe
 _Weapon (any masterwork axe), Hero (requires attunement)_
@@ -2926,7 +2896,7 @@ When you attack an object with this sword and hit, maximize your weapon damage d
 In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.
 
 === Dagger of Venom
-_Weapon (masterwork dagger), Hero_
+_Weapon (masterwork dagger), Adventurer_
 
 This is a masterwork dagger.
 
@@ -2969,7 +2939,7 @@ You can use a bonus action to speak this sword's command word, causing flames to
 === Frost Brand
 _Weapon (any sword), Hero (requires attunement)_ 
 
-When you hit with an attack using this sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
+When you hit with an attack using this sword, the target takes an extra 2d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
 In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 
@@ -2983,7 +2953,7 @@ _Weapon (maul), legendary_
 
 This is a masterwork weapon that counts as adamantine and silvered.
 
-*Giant's Bane (Requires Attunement).* You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 2 and can exceed +5, but not +10. When you roll a 20 on an attack roll made with this weapon against a giant, the giant must succeed on a DC 17 Constitution saving throw or die.
+*Giant's Bane (Requires Attunement).* You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 2 and can exceed +5, but not +10.
 
 The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.
 
@@ -3036,7 +3006,7 @@ This is a masterwork weapon. The sword has 1d8 + 1 charges. If you score a criti
 === Oathbow
 _Weapon (longbow), Hero (requires attunement)_
 
-When you nock an arrow on this bow, it whispers in Metsae, “Swift defeat to my enemies.” When you use this weapon to make a ranged attack, you can, as a command phrase, say, “Swift death to you who have wronged me.” The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
+When you nock an arrow on this masterwork bow, it whispers in Metsae, “Swift defeat to my enemies.” When you use this weapon to make a ranged attack, you can, as a command phrase, say, “Swift death to you who have wronged me.” The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
 
 When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.
 
@@ -3048,14 +3018,14 @@ This is a masterwork weapon. In addition, you can make one attack with it as a b
 === Staff of Charming
 _Staff, Hero (requires attunement)_ 
 
-While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
+While holding this staff, you can use an action to expend 1 of its 10 charges to cast _charm person_ or _command_ from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
 
 === Staff of Fire
 _Staff, Hero (requires attunement)_
 
 You have resistance to fire damage while you hold this staff.
 
-The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges).
+The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: _burning hands_ (1 charge), _fireball_ (3 charges), or _wall of fire_ (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff blackens, crumbles into cinders, and is destroyed.
 
@@ -3064,33 +3034,37 @@ _Staff, Hero (requires attunement)_
 
 You have resistance to cold damage while you hold this staff.
 
-The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges).
+The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: _cone of cold_ (5 charges), _fog cloud_ (1 charge), _ice storm_ (4 charges), or _wall of ice_ (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns to water and is destroyed.
 
 === Staff of Healing
 _Staff, Hero (requires attunement)_
 
-This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier or 8 + your Wisdom modifier + your proficiency bonus if you do not have a spellcasting DC (using Wisdom as your spellcasting ability modifier in that case): cure wounds (1 charge per two aether, up to 8 AET), lesser restoration (2 charges), or mass cure wounds (5 charges).
+This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using Wisdom as the spellcasting ability modifier: _cure wounds_ (1 charge per two aether, up to 8 AET), _restoration_ (lesser variant, 2 charges), or _mass cure wounds_ (5 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.
 
 === Staff of Power
 _Staff, Hero (requires attunement)_
 
-This staff can be wielded as a magic quarterstaff that grants a +4 bonus to damage rolls made with it.
+This staff can be wielded as a masterwork quarterstaff.
 
 The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn as long as it has at least one charge remaining. If you expend the last charge, roll a d20. On a 20, the staff regains 1d8 + 2 charges.
 
 *Power Strike.* When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 bludgeoning damage to the target.
 
-*Spells.*. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: _cone of cold_ (5 charges), _fireball_ (cast with 12 AET, 5 charges), _globe of invulnerability_ (6 charges), _hold monster_ (5 charges), _levitate_ (2 charges), _lightning bolt_ (cast with 12 AET, 5 charges), _magic missile_ (1 charge), _ray of enfeeblement_ (1 charge), or _wall of force_ (6 charges).
+*Spells.*. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus (or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spell save DC): _cone of cold_ (5 charges), _fireball_ (cast with 12 AET, 5 charges), _globe of invulnerability_ (6 charges), _hold monster_ (5 charges), _levitate_ (2 charges), _lightning bolt_ (cast with 12 AET, 5 charges), _magic missile_ (1 charge), _ray of enfeeblement_ (1 charge), or _wall of force_ (6 charges).
 
-*Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 \texttimes the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
+*Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 #sym.times the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
+
+#dndtab("", 
 "Distance from Origin","Damage",
-"10 ft. away or closer","8 \texttimes the number of charges in the staff",
-"11 to 20 ft. away","6 \texttimes the  number of charges in the staff",
-"21 to 30 ft. away","4 \texttimes the number of charges in the staff",
+"10 ft. away or closer",[8 #sym.times the number of charges in the staff],
+"11 to 20 ft. away",[6 #sym.times the  number of charges in the staff],
+"21 to 30 ft. away",[4 #sym.times the number of charges in the staff],
+)
+
 
 === Staff of Striking
 _Staff, Hero (requires attunement)_
@@ -3119,11 +3093,11 @@ This staff can be wielded as a masterwork quarterstaff.
 
 The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.
 
-*Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: animal friendship (1 charge), awaken(5 charges), barkskin (2 charges), or wall of thorns(6 charges).
+*Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: _barkskin_ (2 charges), or _wall of thorns_ (6 charges).
 
-In addition, you can use the Voice the Voiceless incantation (Animals and Plants only).
+In addition, you can use the Voice the Voiceless (1 charge, Animals and Plants only), and Awaken Beast or Plant (5 charges) incantations.
 
-*Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
+*Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by _sense aura_. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
 
 === Staff of Thunder and Lightning
 _Staff, Hero (requires attunement)_
@@ -3163,8 +3137,7 @@ When you attack a creature with this magic weapon and roll a 20 on the attack ro
 === Trident of Fish Command
 _Weapon (trident), Adventurer (requires attunement)_
 
-This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast
-dominate beast(save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.
+This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast _domination_ (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.
 
 === Vicious Weapon
 _Weapon (any), Hero_
@@ -3181,8 +3154,6 @@ _Weapon (any), Hero (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.
 
-
-
 = Skill Tricks
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
@@ -3194,25 +3165,20 @@ Each skill trick detailed below shares some common characteristics:
 - *A target or targets*. Many skill tricks target either an object or one or more creatures. A few target a particular area.
 - *An effect*. The text of the skill trick describes the effect, as well as any saving throws required.
 
-
 === Skill Trick DCs
 The DC for any saving throws required by skill tricks is given by
 
-\begin{center}
-=== 8 + the relevant ability score + your proficiency bonu
-\end{center}
+#align(center)[*8 + the relevant ability score + your proficiency bonus*]
 
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
 
 === Acquiring Skill Tricks
 
-
 Some classes get native access to Skill Tricks as a class feature. If they grant access to more advanced skill tricks beyond the basic ones at particular levels, that access overrides any prerequisites in the skill trick. Everyone else can choose a skill trick that they qualify for whenever they acquire an Ability Score Improvement from their class. At the same time, they can trade out one skill trick they've learned for a different one they qualify for.
 
 === Basic Skill Tricks
 
-
-Basic skill tricks only require a +2 proficiency or level 4 characters.
+Basic skill tricks only require a +2 proficiency bonus.
 
 === Alert
 
@@ -3284,7 +3250,7 @@ As an action, you can expend 1 STA to threaten one enemy that can hear you. The 
 
 _Charisma (Persuasion OR Deception) Basic Skill Trick_
 
-You are particularly good at haggling. Any time you sell goods, you get 125\% of the normal price, and you buy for 90\% of the listed price.
+You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
 
 === Jump
 
@@ -3310,13 +3276,13 @@ You can hold your breath for twice as long. In addition, you can spend 1 STA whe
 
 _Wisdom (Medicine) Basic Skill Trick_
 
-When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed, the target regains 1 hit point and is conscious instead.
+When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed or expend a charge from a Healer's Kit, the target regains 1 hit point and is conscious instead of being stable.
 
 === Misdirect
 
 _Dexterity (Stealth) Basic Skill Trick_
 
-When you are hidden, you can spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
+When you are hidden, you can use your bonus action and spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
 === Piercing Wound
 
@@ -3336,7 +3302,6 @@ _Strength (Martial Weapon) Basic Skill Trick_
 You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
 
 === Scholar: History
-
 _Intelligence (History) Basic Skill Trick_
 
 You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
@@ -3386,9 +3351,7 @@ _Dexterity (Acrobatics) Basic Skill Trick_
 You can move through opponents' spaces if they are one size larger than you by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
 
 === Advanced Skill Tricks
-
-
-Advanced skill tricks require a +4 proficiency or level 9 characters.
+Advanced skill tricks require a +4 proficiency.
 
 === Arcane Journeyman
 
@@ -3419,22 +3382,19 @@ _Wisdom (Animal Handling) Advanced Skill Trick_
 As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
 
 === Bond Breaker
-
 _Strength (General) Advanced Skill Trick_
 
 You can spend 2 STA to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
 
 === Delay Unconsciousness
-
 _Constitution (General) Advanced Skill Trick_
 
 As a reaction when you are brought to zero hit points, you can expend 3 STA and gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
 
 === Demoralize
-
 _Charisma (Intimidation) Advanced Skill Trick_
 
-As an action, you expend 3 STA. You can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken. If you threaten a group of creature, they all are affected as if you used the frighten skill trick on them.
+As an action, you expend 3 STA. You can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken until the end of your next turn. If you threaten a group of creature, they all are affected as if you used the Frighten skill trick on them.
 
 === Divine Journeyman
 
@@ -3459,26 +3419,22 @@ As a bonus action, you can search for flaws in your opponent. Expend 2 STA and m
 - Any vulnerabilities they have (whether ot damage particularly or things like Sunlight Sensitivity)
 - Their current goals
 
-
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
 
 === Like a Solid Snake
-
 _Dexterity (Stealth) Advanced Skill Trick_
 
 You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
 
 === Mental Toughness
-
 _Charisma (General) Advanced Skill Trick_
 
 When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
 
 === People Whisperer
-
 _Wisdom (Insight) Advanced Skill Trick_
 
-When you make a Wisdom (Insight) check and the result is above a 15, you gain one pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
+When you make a Wisdom (Insight) check and the result is above a 10, you gain one extra pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
 
 === Primal Journeyman
 
@@ -3511,11 +3467,11 @@ _Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick_
 When you make an attack against an unattended object and hit, you ignore its Damage Threshold and deal double damage. 
 
 Alternatively, you can target attended objects as follows, expending 2 STA:
-
+#flush-block[
 - *Armor*: Make an attack against the target's AC. On a hit, the target takes half damage from the attack but any other attacks against the target have advantage until the target uses an action to realign the damaged piece.
 - *Weapons*: Make an attack against the target's AC. On a hit, the target takes half damage from the attack and has disadvantage on all attacks made with that weapon.
-- *Wielded spell foci or other objects in hand*: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 \texttimes 5 ft away in a random direction.
-
+- *Wielded spell foci or other objects in hand*: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 #sym.times 5 ft away in a random direction.
+]
 
 === Wrestler
 
@@ -3527,8 +3483,7 @@ Additionally, when you start your turn with a creature grappled, you can expend 
 
 === Expert Skill Tricks
 
-
-Expert skill tricks require a +5 proficiency or level 13 characters.
+Expert skill tricks require a +5 proficiency bonus.
 
 === Blindfighter
 
@@ -3540,7 +3495,7 @@ Invisible or unseen enemies no longer have advantage to hit you. In addition, yo
 
 _Charisma (Intimidation) Expert Skill Trick_
 
-This skill trick acts like demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The frightened state lasts for 1 minute.
+This skill trick acts like Demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The broken state lasts until the end of your next turn and broken creatures become frightened of you as if they had succeeded once the broken status ends; The frightened state lasts for 1 minute in either case.
 
 === Comprehend Dweomer
 
@@ -3565,12 +3520,13 @@ _Wisdom (Survival) Expert Skill Trick_
 
 You search for signs of an accessible planar portal within 1 mile of you. Make a Wisdom (Survival) check and expend 2 AET, with advantage if you also are proficient in Arcana. The result determines your success:
 
-"=== Check Total*","*Resul",
+#dndtab("", 
+"Check Total","Result",
 "< 10","You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is dangerous.",
 "10-14","You find a portal to a plane of the GM's choosing. The location on that plane that it leads to is not inherently dangerous.",
 "15-19","You find a portal to a plane of your choosing. The location on that plane that it leads to is chosen by the GM, but is not inherently dangerous.",
 "20+","You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.",
-
+)
 
 === Like a Ghost
 
@@ -3587,7 +3543,7 @@ You can no longer be grappled or restrained by non-legendary effects as long as 
 === Master Skill Tricks
 
 
-Master skill tricks require a +6 proficiency or level 17 characters.
+Master skill tricks require a +6 proficiency.
 === Balance on Thin Air
 
 _Dexterity (Acrobatics) Master Skill Trick_
@@ -3626,8 +3582,6 @@ As an action you can expend 4 AET to magically do one of the following to a crea
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
 
-
-
 = Spellcasting
 Magic permeates fantasy gaming worlds and often appears in the form of a spell.
 
@@ -3637,9 +3591,9 @@ This chapter provides the rules for casting spells. Different character classes 
 
 A spell is a discrete magical effect, a single shaping of the magical energies that suffuse the world into a specific, limited expression. In casting a spell, a character carefully alters the aspects of the raw magic suffusing the world, pins them in place in a particular pattern, sets them vibrating in a specific way, and then releases them to unleash the desired effect; in most cases, all in the span of seconds.
 
-Spells can be versatile tools, weapons, or protective wards. They can deal damage or undo it, impose or remove conditions (see appendix A), drain life energy away, and restore life to the dead.
+Spells can be versatile tools, weapons, or protective wards. They can deal damage or undo it, impose or remove conditions, drain life energy away, and restore life to the dead.
 
-Uncounted thousands of spells have been created over the course of the multiverse's history, and many of them are long forgotten. Some might yet lie recorded in crumbling spell-books hidden in ancient ruins or trapped in the minds of dead gods. Or they might someday be reinvented by a character who has amassed enough power and wisdom to do so.
+Uncounted thousands of spells have been created over the course of history, and many of them are long forgotten. Some might yet lie recorded in crumbling spell-books hidden in ancient ruins or trapped in the minds of dead gods. Or they might someday be reinvented by a character who has amassed enough power and wisdom to do so.
 
 === Aether
 Every character has a pool of Aether which they draw on to produce magical effects. Spellcasting also draws on this pool, and spell-casters tend to have much larger Aether pools than non-spell-casters.
@@ -3647,7 +3601,7 @@ Every character has a pool of Aether which they draw on to produce magical effec
 Some items have their own pools of aether that can be used to cast spells from them. These are separate from the character's aether.
 
 === Aether Limit
-Each class has a limit on how much aether they can channel into any one thing. This is denoted on their class table, and increases with level.
+Each class has a limit on how much aether they can channel into any one spell or effect. This is denoted on their class table, and increases with level.
 
 === Aether Recovery
 Aether pools are completely recovered on completing a Long Rest. In addition, some classes have features that let them recover a limited portion more quickly, and some items grant reserves that can be used to restore some aether to a pool.
@@ -3674,7 +3628,6 @@ Because of the mental focus and precise gestures required for spellcasting, armo
 
 A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether and cannot be overcast. Some cantrips gain more power as the caster becomes stronger; this is detailed in the entry itself.
 
-
 == Casting a Spell
 
 When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.
@@ -3684,10 +3637,6 @@ Each spell description begins with a block of information, including the spell's
 === Casting Time
 
 Most spells require a single action to cast, but some spells require a bonus action, a reaction, or much more time to cast. You can't spend aether to cast a spell more than once per turn regardless of action costs.
-
-=== Bonus Action
-
-A spell cast with a bonus action is especially swift. Note that spending aether to cast a spell as a bonus action precludes using any other aether-using ability that turn. You can still cast cantrips, however.
 
 === Reactions
 
@@ -3704,21 +3653,15 @@ See Range in the core rules.
 
 A spell's components are the physical requirements you must meet in order to cast it. Each spell's description indicates whether it requires verbal (V), somatic (S), or material (M) components. If you can't provide one or more of a spell's components, you are unable to cast the spell.
 
-=== Verbal (V)
-
-Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the silence spell, can't cast a spell with a verbal component.
+*Verbal (V).* Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the silence spell, can't cast a spell with a verbal component.
 
 These mystic words are not in a recognizable language and can be immediately recognized as spellcasting by anyone who can hear the chanting (unless they are unintelligent or particularly ignorant). They cannot be hidden except by large amounts of ambient noise or intervening solid objects.
 
-=== Somatic (S)
-
-Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.
+*Somatic (S).* Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.
 
 These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and may recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
 
-=== Material (M)
-
-Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in “equipment") in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
+*Material (M).* Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in “equipment") in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
 
 If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.
 
@@ -3734,8 +3677,7 @@ Many spells are instantaneous. The spell harms, heals, creates, or alters a crea
 
 === Concentration
 
-Many spells require concentration. See concentration for details.
-
+Many spells require concentration. See Concentration for details.
 
 === Spell Saving Throws
 
@@ -3744,7 +3686,7 @@ Many spells specify that a target can make a saving throw to avoid some or all o
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
 === Targets
-See targets for the general rules that apply to all abilities, including spells and legendary effects.
+See Targets for the general rules that apply to all abilities, including spells and legendary effects.
 
 === Spell Attack Rolls
 

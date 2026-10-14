@@ -374,8 +374,8 @@ attacks if both have the light property (see that property for
 details).
 
 Any non-light, non-two-handed weapon can be wielded in one or two
-hands, and you can shift how you’re wielding your weapon without using
-an action during your turn. You can’t use a weapon in two hands if you
+hands, and you can shift how you're wielding your weapon without using
+an action during your turn. You can't use a weapon in two hands if you
 are wielding a shield or are holding anything in one of your hands.
 Unlike 5e, there is no Versatile property.
 ]
@@ -585,10 +585,9 @@ While wielding a whip, you have advantage on ability checks made to push
 someone prone (ie trip them) and when you do so, you can choose to pull
 them 5 ft closer to you as part of that same attack.
 
-
-{{wide
-"=== Name*","Cost","Damage","Weight","*Propertie",
-"Simple Melee Weapons","","","",
+#dndtab("Weapons", columns: (1.5fr, 1fr, 2fr, 1fr, 3fr), 
+"Name","Cost","Damage","Weight","Properties",
+[*Simple Melee Weapons*],"","","",
 "Club","1 sp","1d4 bludgeoning","2 lb.","Light",
 "Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
 "Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
@@ -599,12 +598,15 @@ them 5 ft closer to you as part of that same attack.
 "Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
 "Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
 "Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
-"Simple Ranged Weapons","","","",
+[*Simple Ranged Weapons*],"","","",
+"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
+"Alchemist's Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
 "Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
 "Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
+"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
 "Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
 "Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
-"Martial Melee Weapons","","","",
+[*Martial Melee Weapons*],"","","",
 "Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
 "Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
 "Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
@@ -621,17 +623,12 @@ them 5 ft closer to you as part of that same attack.
 "War pick","5 gp","1d10 piercing","2 lb.","Precise",
 "Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
 "Whip","2gp","1d4 slashing","3 lb.","Reach, special",
-"Martial Ranged Weapons","","","",
+[*Martial Ranged Weapons*],"","","",
 "Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
 "Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
 "Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
 "Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
-"Exotic Ranged Weapons","","","",
-"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
-"Alchemist’s Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
-"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
-
-}}
+)
 
 == Adventuring Gear
 
@@ -658,7 +655,6 @@ need to make the save.
 A set of pulleys with a cable threaded through them and a hook to attach
 to objects, a block and tackle allows you to hoist up to four times the
 weight you can normally lift.
-
 
 === Book
 
@@ -802,8 +798,8 @@ shallow bowl.
 === Net
 
 As an action, throw the net at a creature within 15 ft. The target must
-make a Dexterity saving throw with a DC of 8 plus your Strength modifier
-plus proficiency if you have proficiency in martial weapons. A creature
+make a Dexterity saving throw with a DC of 8 + your Strength modifier
++ your proficiency bonus if you have proficiency in martial weapons. A creature
 that fails the save is restrained until it is freed. A net has no effect
 on creatures that are formless, or creatures that are Huge or larger. A
 creature can use its action to make a DC 10 Strength check, freeing
@@ -886,19 +882,18 @@ Objects viewed through a spyglass are magnified to twice their size, making them
 
 === Tent
 
-A simple and portable canvas shelter, a tent sleeps two.
+A simple and portable canvas shelter, a tent sleeps two and protects from the elements.
 
-
-{{wide
-"=== Item*","Cost","Weight","","Item","Cost","*Weigh",
+#dndtab("Adventuring Items", breakable: true, columns: (2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 1fr),
+"Item","Cost","Weight","","Item","Cost","Weight",
 "Abacus","2 gp","2 lb.","","Hunting trap","5 gp","25 lb.",
-"Ammunition","","","","Ink (1 ounce bottle)","10 gp","—",
+[*Ammunition*],"","","","Ink (1 ounce bottle)","10 gp","—",
 "---Arrows (20)","1 gp","1lb.","","Ink pen","2 cp","—",
 "---Blowgun needles (50)","1 gp","1 lb.","","Jug or pitcher","2 cp","4 lb.",
 "---Crossbow bolts (20)","1 gp","1½ lb.","","Ladder (10-foot)","1 sp","25 lb.",
 "---Sling bullets (20)","4 cp","1½ lb.","","Lamp","5 sp","1 lb.",
 "Antitoxin (vial)","50 gp","---","","Lantern, bullseye","10 gp","2 lb.",
-"Arcane focus","","","","Lantern, hooded","5 gp","2 lb.",
+[*Arcane focus*],"","","","Lantern, hooded","5 gp","2 lb.",
 "---Crystal","10 gp","1 lb.","","Lock","10 gp","1 lb.",
 "---Orb","20 gp","3 lb.","","Magnifying glass","100 gp","—",
 "---Rod","10 gp","2 lb.","","Manacles","2 gp","6 lb.",
@@ -909,7 +904,7 @@ A simple and portable canvas shelter, a tent sleeps two.
 "Barrel","2 gp","70 lb.","","Paper (one sheet)","2 sp","—",
 "Basket","4 sp","2 lb.","","Parchment (one sheet)","1 sp","—",
 "Bedroll","1 gp","7 lb.","","Perfume (vial)","5 gp","—",
-"Bell","1 gp","---","","Pick, miner’s","2 gp","10 lb.",
+"Bell","1 gp","---","","Pick, miner's","2 gp","10 lb.",
 "Blanket","5 sp","3 lb.","","Piton","5 cp","1/4 lb.",
 "Block and tackle","1 gp","5 lb.","","Poison, basic (vial)","100 gp","—",
 "Book","25 gp","5 lb.","","Pole (10-foot)","5 cp","7 lb.",
@@ -922,11 +917,11 @@ A simple and portable canvas shelter, a tent sleeps two.
 "Chain (10 feet)","5 gp","10 lb.","","Robes","1 gp","4 lb.",
 "Chalk (1 piece)","1 cp","---","","Rope, hempen (50 feet)","1 gp","10 lb.",
 "Chest","5 gp","25 lb.","","Rope, silk (50 feet)","10 gp","5 lb.",
-"Climber’s kit","25 gp","12 lb.","","Sack","1 cp","1/2 lb.",
-"Clothes, common","5 sp","3 lb.","","Scale, merchant’s","5 gp","3 lb.",
+"Climber's kit","25 gp","12 lb.","","Sack","1 cp","1/2 lb.",
+"Clothes, common","5 sp","3 lb.","","Scale, merchant's","5 gp","3 lb.",
 "Clothes, costume","5 gp","4 lb.","","Sealing wax","5 sp","—",
-"Clothes, fine","15 gp","6 lb.","","Shamanic focus","",
-"Clothes, traveler’s","2 gp","4 lb.","","---Sprig of mistletoe","1 gp","—",
+"Clothes, fine","15 gp","6 lb.","",[*Shamanic focus*],"",
+"Clothes, traveler's","2 gp","4 lb.","","---Sprig of mistletoe","1 gp","—",
 "Clothes, winter","15 gp","6 lb.","","---Totem","1 gp","—",
 "Component pouch","25 gp","2 lb.","","---Wooden staff","5 gp","4 lb.",
 "Crowbar","2 gp","5 lb.","","---Yew wand","10 gp","1 lb.",
@@ -935,17 +930,14 @@ A simple and portable canvas shelter, a tent sleeps two.
 "Grappling hook","2 gp","4 lb.","","Signet ring","5 gp","—",
 "Hammer","1 gp","3 lb.","","Soap","2 cp","—",
 "Hammer, sledge","2 gp","10 lb.","","Spikes, iron (10)","1 gp","5 lb.",
-"Healer’s kit","5 gp","3 lb.","","Spyglass","1,000 gp","1 lb.",
-"Holy symbol","","","","Tent, two-person","2 gp","20 lb.",
+"Healer's kit","5 gp","3 lb.","","Spyglass","1,000 gp","1 lb.",
+[*Holy symbol*],"","","","Tent, two-person","2 gp","20 lb.",
 "---Amulet","5 gp","1 lb.","","Tinderbox","5 sp","1 lb.",
 "---Emblem","5 gp","---","","Torch","1 cp","1 lb.",
 "---Reliquary","5 gp","2 lb.","","Vial","1 gp","—",
 "Holy water (flask)","25 gp","1 lb.","","Waterskin","2 sp","5 lb. (full)",
 "Hourglass","25 gp","1 lb.","","Whetstone","1 cp","1 lb.",
-
-}}
-
-
+)
 
 === Tinderbox
 
@@ -960,8 +952,8 @@ A torch burns for 1 hour, providing bright light in a 20-foot radius and
 dim light for an additional 20 feet. If you make a melee attack with a
 burning torch and hit, it deals 1 fire damage.
 
-
-"=== Container*","*Capacit",
+#dndtab("Containers", columns: (1fr, 4fr),
+"Container","*Capacity",
 "Backpack","1 cubic foot/30 pounds of gear",
 "Barrel","40 gallons liquid, 4 cubic feet solid",
 "Basket","2 cubic feet/40 pounds of gear",
@@ -975,6 +967,8 @@ burning torch and hit, it deals 1 fire damage.
 "Sack","1 cubic foot/30 pounds of gear",
 "Vial","4 ounces liquid",
 "Waterskin","4 pints liquid",
+)
+
 
 You can also strap items, such as a bedroll or a coil of rope, to the
 outside of a backpack. This does not count against the weight limit.
@@ -1112,33 +1106,33 @@ pair of pliers. Proficiency with these tools lets you add your
 proficiency bonus to any ability checks you make to disarm traps or open
 locks.
 
-
+#dndtab("Tools", columns: (3fr, 1fr, 1fr),
 "=== Item*","Cost","*Weigh",
-"Artisan’s tools","",
-"---Alchemist’s supplies","50 gp","8 lb.",
-"---Brewer’s supplies","20 gp","9 lb.",
-"---Calligrapher’s supplies","10 gp","5 lb.",
-"---Carpenter’s tools","8 gp","6 lb.",
-"---Cartographer’s tools","15 gp","6 lb.",
-"---Cobbler’s tools","5 gp","5 lb.",
-"---Cook’s utensils","1 gp","8 lb.",
-"---Glassblower’s tools","30 gp","5 lb.",
-"---Jeweler’s tools","25 gp","2 lb.",
-"---Leatherworker’s tools","5 gp","5 lb.",
-"---Mason’s tools","10 gp","8 lb.",
-"---Painter’s supplies","10 gp","5 lb.",
-"---Potter’s tools","10 gp","3 lb.",
-"---Smith’s tools","20 gp","8 lb.",
-"---Tinker’s tools","50 gp","10 lb.",
-"---Weaver’s tools","1 gp","5 lb.",
-"---Woodcarver’s tools","1 gp","5 lb.",
+[*Artisan's tools*],"",
+"---Alchemist's supplies","50 gp","8 lb.",
+"---Brewer's supplies","20 gp","9 lb.",
+"---Calligrapher's supplies","10 gp","5 lb.",
+"---Carpenter's tools","8 gp","6 lb.",
+"---Cartographer's tools","15 gp","6 lb.",
+"---Cobbler's tools","5 gp","5 lb.",
+"---Cook's utensils","1 gp","8 lb.",
+"---Glassblower's tools","30 gp","5 lb.",
+"---Jeweler's tools","25 gp","2 lb.",
+"---Leatherworker's tools","5 gp","5 lb.",
+"---Mason's tools","10 gp","8 lb.",
+"---Painter's supplies","10 gp","5 lb.",
+"---Potter's tools","10 gp","3 lb.",
+"---Smith's tools","20 gp","8 lb.",
+"---Tinker's tools","50 gp","10 lb.",
+"---Weaver's tools","1 gp","5 lb.",
+"---Woodcarver's tools","1 gp","5 lb.",
 "Disguise kit","25 gp","3 lb.",
 "Forgery kit","15 gp","5 lb.",
-"Gaming sets","",
+[*Gaming sets*],"",
 "---Dice set","1 sp","—",
 "---Playing card set","5 sp","—",
 "Herbalism kit","5 gp","3 lb.",
-"Musical instruments","",
+[*Musical instruments*],"",
 "---Bagpipes","30 gp","6 lb.",
 "---Drum","6 gp","3 lb.",
 "---Dulcimer","25 gp","10 lb.",
@@ -1149,10 +1143,11 @@ locks.
 "---Pan flute","12 gp","2 lb.",
 "---Shawm","2 gp","1 lb.",
 "---Viol","30 gp","1 lb.",
-"Navigator’s tools","25 gp","2 lb.",
-"Poisoner’s kit","50 gp","2 lb.",
-"Thieves’ tools","25 gp","1 lb.",
+"Navigator's tools","25 gp","2 lb.",
+"Poisoner's kit","50 gp","2 lb.",
+"Thieves' tools","25 gp","1 lb.",
 "Vehicles (land or water)","",
+)
 
 == Mounts and Vehicles
 
@@ -1202,7 +1197,7 @@ the speed of the vehicle. These vehicles can't be rowed against any
 significant current, but they can be pulled upstream by draft animals on
 the shores. A rowboat weighs 100 pounds, in case adventurers carry it
 over land.
-
+#dndtab("Mounts", columns: (2fr, 1fr, 1fr, 1fr),
 "Item","Cost","Speed","Carrying Capacity",
 "Camel","50 gp","50 ft.","480 lb.",
 "Donkey or mule","8 gp","40 ft.","420 lb.",
@@ -1212,8 +1207,10 @@ over land.
 "Mastiff","25 gp","40 ft.","195 lb.",
 "Pony","30 gp","40 ft.","225 lb.",
 "Warhorse","400 gp","60 ft.","540 lb.",
+)
 
-"=== Item*","Cost","*Weigh",
+#dndtab("Land Vehicles and Tack", columns: (2fr, 1fr, 1fr),
+"Item","Cost","Weight",
 "Barding","4x","4x",
 "Bit and bridle","2 gp","1 lb.",
 "Carriage","100 gp","600 lb.",
@@ -1228,14 +1225,18 @@ over land.
 "Sled","20 gp","300 lb.",
 "Stabling (per day)","5 sp","—",
 "Wagon","35 gp","400 lb.",
+)
 
-"=== Item*","Cost","*Spee",
+#dndtab("Water Vehicles", columns: (1fr, 1fr, 1fr),
+"Item","Cost","Speed",
 "Galley","30,000 gp","4 mph",
 "Keelboat","3,000 gp","1 mph",
 "Longship","10,000 gp","3 mph",
 "Rowboat","50 gp","1½ mph",
 "Sailing ship","10,000 gp","2 mph",
 "Warship","25,000 gp","2½ mph",
+)
+
 
 == Trade Goods
 
@@ -1251,6 +1252,7 @@ may or may not offer those goods and services. Merchants commonly
 exchange trade goods without using currency. The Trade Goods table shows
 the value of commonly exchanged goods.
 
+#dndtab("Trade Goods",
 "Cost","Goods",
 "1 cp","1 lb. of wheat",
 "2 cp","1 lb. of flour or one chicken",
@@ -1265,7 +1267,7 @@ the value of commonly exchanged goods.
 "15 gp","1 lb. of saffron or one ox",
 "50 gp","1 lb. of gold",
 "500 gp","1 lb. of platinum",
-
+)
 
 == Expenses
 
@@ -1298,7 +1300,8 @@ though you run the risk of attracting thieves. Likewise, living frugally
 might help you avoid criminals, but you are unlikely to make powerful
 connections.
 
-"=== Lifestyle*","Price/Day","*Price/Wee",
+#dndtab("Lifestyle Costs", columns: (2fr, 1fr, 1fr),
+"Lifestyle","Price/Day","Price/Week",
 "Wretched","---","—",
 "Squalid","1 sp","8 sp",
 "Poor","2 sp","16 sp",
@@ -1306,20 +1309,16 @@ connections.
 "Comfortable","2 gp","16 gp",
 "Wealthy","4 gp","64 gp",
 "Aristocratic","10 gp minimum","80 gp minimum",
-
-=== Wretched
-
-You live in inhumane conditions. With no place to call home, you shelter
+)
+#flush-block[
+- *Wretched.* You live in inhumane conditions. With no place to call home, you shelter
 wherever you can, sneaking into barns, huddling in old crates, and
 relying on the good graces of people better off than you. A wretched
 lifestyle presents abundant dangers. Violence, disease, and hunger
 follow you wherever you go. Other wretched people covet your armor,
 weapons, and adventuring gear, which represent a fortune by their
 standards. You are beneath the notice of most people.
-
-=== Squalid
-
-You live in a leaky stable, a mud-floored hut just outside town, or a
+- *Squalid.* You live in a leaky stable, a mud-floored hut just outside town, or a
 vermin-infested boarding house in the worst part of town. You have
 shelter from the elements, but you live in a desperate and often violent
 environment, in places rife with disease, hunger, and misfortune. You
@@ -1327,10 +1326,7 @@ are beneath the notice of most people, and you have few legal
 protections. Most people at this lifestyle level have suffered some
 terrible setback. They might be disturbed, marked as exiles, or suffer
 from disease.
-
-=== Poor
-
-A poor lifestyle means going without the comforts available in a stable
+- *Poor.* A poor lifestyle means going without the comforts available in a stable
 community. Simple food and lodgings, threadbare clothing, and
 unpredictable conditions result in a sufficient, though probably
 unpleasant, experience. Your accommodations might be a room in a
@@ -1339,38 +1335,25 @@ legal protections, but you still have to contend with violence, crime,
 and disease. People at this lifestyle level tend to be unskilled
 laborers, costermongers, peddlers, thieves, mercenaries, and other
 disreputable types.
-
-=== Modest
-
-A modest lifestyle keeps you out of the slums and ensures that you can
+- *Modest.* A modest lifestyle keeps you out of the slums and ensures that you can
 maintain your equipment. You live in an older part of town, renting a
 room in a boarding house, inn, or temple. You don't go hungry or
 thirsty, and your living conditions are clean, if simple. Ordinary
 people living modest lifestyles include soldiers with families,
 laborers, students, priests, hedge wizards, and the like.
-
-=== Comfortable
-
-Choosing a comfortable lifestyle means that you can afford nicer
+- *Comfortable.* Choosing a comfortable lifestyle means that you can afford nicer
 clothing and can easily maintain your equipment. You live in a small
 cottage in a middle-class neighborhood or in a private room at a fine
 inn. You associate with merchants, skilled tradespeople, and military
 officers.
-
-=== Wealthy
-
-Choosing a wealthy lifestyle means living a life of luxury, though you
+- *Wealthy.* Choosing a wealthy lifestyle means living a life of luxury, though you
 might not have achieved the social status associated with the old money
 of nobility or royalty. You live a lifestyle comparable to that of a
 highly successful merchant, a favored servant of the royalty, or the
 owner of a few small businesses. You have respectable lodgings, usually
 a spacious home in a good part of town or a comfortable suite at a fine
 inn. You likely have a small staff of servants.
-
-
-=== Aristocratic
-
-You live a life of plenty and comfort. You move in circles populated by
+- *Aristocratic.* You live a life of plenty and comfort. You move in circles populated by
 the most powerful people in the community. You have excellent lodgings,
 perhaps a townhouse in the nicest part of town or rooms in the finest
 inn. You dine at the best restaurants, retain the most skilled and
@@ -1380,6 +1363,7 @@ and spend evenings in the company of politicians, guild leaders, high
 priests, and nobility. You must also contend with the highest levels of
 deceit and treachery. The wealthier you are, the greater the chance you
 will be drawn into political intrigue as a pawn or participant.
+]
 
 === Self-Sufficiency
 
@@ -1397,43 +1381,43 @@ adventures practicing a profession, you can eke out the equivalent of a
 poor lifestyle. Proficiency in the Survival skill lets you live at the
 equivalent of a comfortable lifestyle.
 
-
 === Food, Drink, and Lodging
 
 The Food, Drink, and Lodging table gives prices for individual food
 items and a single night's lodging. These prices are included in your
 total lifestyle expenses.
 
-"=== Item*","*Cos",
+#dndtab("Food, Drink, and Lodging", columns: (4fr, 1fr),
+"Item","Cost",
 "Ale, Gallon","2 sp",
 "Ale, Mug","4 cp",
 "Banquet (per person)","10 gp",
 "Bread, loaf","2 cp",
 "Cheese, hunk","1 sp",
 "Meat, chunk","3 sp",
-"Inn stay (per day)",
-"Squalid","7 cp",
-"Poor","1 sp",
-"Modest","5 sp",
-"Comfortable","8 sp",
-"Wealthy","2 gp",
-"Aristocratic","4 gp",
-"Meals (per day)",
-"Squalid","3 cp",
-"Poor","6 cp",
-"Modest","3 sp",
-"Comfortable","5 sp",
-"Wealthy","8 sp",
-"Aristocratic","2 gp",
+[*Inn stay (per day)*], "",
+"---Squalid","7 cp",
+"---Poor","1 sp",
+"---Modest","5 sp",
+"---Comfortable","8 sp",
+"---Wealthy","2 gp",
+"---Aristocratic","4 gp",
+[*Meals (per day)*], "",
+"---Squalid","3 cp",
+"---Poor","6 cp",
+"---Modest","3 sp",
+"---Comfortable","5 sp",
+"---Wealthy","8 sp",
+"---Aristocratic","2 gp",
 "Common wine (pitcher)","2 sp",
 "Fine wine (bottle)","10 gp",
 "Hard liquor (dram)","1 gp",
 "Hard liquor (fifth)","20 gp",
-
+)
 
 === Services
 
-Adventurers can pay nonplayer characters to assist them or act on their
+Adventurers can pay non-player characters to assist them or act on their
 behalf in a variety of circumstances. Most such hirelings have fairly
 ordinary skills, while others are masters of a craft or art, and a few
 are experts with specialized adventuring skills.
@@ -1464,17 +1448,19 @@ particular skill and can include laborers, porters, maids, and similar
 workers. They generally will not accompany a party into especially
 dangerous situations
 
-"=== Service*","*Pa",
-"Coach cab",
-"Between towns","3 cp per mile",
-"Within a city","1 cp",
-"Hireling",
-"Skilled","2 gp per day",
-"Untrained","2 sp per day",
-"Messenger","2 cp per mile",
-"Other",
+#dndtab("Services", columns: (2fr, 3fr),
+"Service","Pay",
+[*Coach cab*], "",
+"---Between towns","3 cp per mile",
+"---Within a city","1 cp",
+[*Hireling*], "",
+"---Skilled","2 gp per day",
+"---Untrained","2 sp per day",
+"---Messenger","2 cp per mile",
+[*Other*],"",
 "Road or gate toll","1 cp",
-"Ship’s passage","1 sp per mile",
+"Ship's passage","1 sp per mile",
+)
 
 === Spellcasting Services
 
@@ -1497,6 +1483,8 @@ locale or traversing a monster-infested wilderness to deliver something
 important to a distant settlement. Powerful spell-casters rarely need
 more coin, but mostly-disposable help is always in demand.
 
+As a general rule (with wide variation), you can find people willing to cast spells for pay based on the size of the settlement: those that require 2 AET or less can be found in most villages, 3 AET or less in most towns, and 5 AET or less in cities. You're highly unlikely to find anyone willing to take coin for spells costing more than 5 AET or incantations above the Adventurer rank.
+
 
 = Fantastic Equipment
 
@@ -1504,45 +1492,42 @@ NIH system includes magic items. It is expected that adventurers will accumulate
 
 Another core principle is *attunement* limits. Items that provide lasting, stacking benefits, give permanent new options, or that significantly enhance the combat prowess of a character should generally require attunement. Characters are limited to having 3 items attuned at any one time. Attuning to an item requires you to finish a short rest with it in your possession and consciously decide to attune to it over that short rest. In the fiction layer, attunement represents bonding your spirit with the magic item so that it feeds off of your energy and can act as a part of you (to some limited degree).
 
-{{note
- Cursed Items
+#breakoutbox("Cursed Items")[
 I have chosen not to include cursed items in this list. Too often, I've found that the curse either only trivially affects the character (rendering it a power boost over a normal item) or is punitive (in which case the item just gets ignored). I prefer not to do things that foster meta-game thinking or promote an antagonistic, "gotcha" relationship between players and GMs.
 
 But, as always, do as you wish. They don't break anything, they're just not to my personal taste.
-}}
-
+]
 
 == Tier
 Magic items have a *tier* assigned to them, which indicates approximately at what stage of play (see Stages of Play in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
 
 The item tiers are:
-
-- Journeyman. These are appropriate for Journeyman Adventurers (levels 1 - 4) and above. Bigger cities might have particularly common Journeyman items for sale for prices between 50 and 150 gp, with consumables costing roughly half price. They generally have cosmetic effects only or emulate cantrips.
-- Adventurer. These are appropriate for Adventurer-stage play (levels 5 - 10). The largest cities and organizations might have some of these that they grant as rewards or (very occasionally) sell, usually at auction, although consumable Adventurer  items are generally more available. Prices range between 300 and 1000 gp. These might emulate spells with costs between 1 and 8 Aether or class features of the Adventurer-stage level range.
-- Hero. These are appropriate for Heroic-stage play (levels 11 - 16). Heroic items might be held in national vaults and lent out to heroes on the direst missions. If they are sold, it is only in planar marketplaces and heavily-guarded and special-invitation-only black-market auctions. These may be crafted, but the components and the crafters necessary to do so are extremely rare and generally require separate quests. Those that find these do so in deep lost vaults and other such places. These might emulate spells with aether cost above 8 Aether as well as lesser Legendary Effects or class features in a similar level range.
-- Legendary. These are appropriate for Legendary Hero-stage play (levels 17 - 20). Legend-tier items are only whispered about among the sages or found as fragmentary records in the oldest books. These generally cannot be made by mortal smiths, although Ascendants and similar planar Powers may assist in granting them.
-- Artifact. Artifacts are plot items of widely ranging power and may or may not appear in any given game. These are named items with substantial historical significance and, if they can be created at all, their creation is the subject of an entire campaign; they act as key plot items. Generally, once an artifact is used (whether for its intended purpose or not), it disappears and reappears somewhere and somewhen else. Artifacts are frequently actual characters in item form, with a mind and will of their own. *No artifacts are detailed here. They're too individual to a particular campaign.*
-
+#flush-block[
+- *Journeyman.* These are appropriate for Journeyman Adventurers (levels 1 - 4) and above. Bigger cities might have particularly common Journeyman items for sale for prices between 50 and 150 gp, with consumables costing roughly half price. They generally have cosmetic effects only or emulate cantrips.
+- *Adventurer.* These are appropriate for Adventurer-stage play (levels 5 - 10). The largest cities and organizations might have some of these that they grant as rewards or (very occasionally) sell, usually at auction, although consumable Adventurer items are generally more available. Prices range between 300 and 1000 gp. These might emulate spells with costs between 1 and 8 Aether or class features of the Adventurer-stage level range.
+- *Hero.* These are appropriate for Heroic-stage play (levels 11 - 16). Heroic items might be held in national vaults and lent out to heroes on the direst missions. If they are sold, it is only in planar marketplaces and heavily-guarded and special-invitation-only black-market auctions. These may be crafted, but the components and the crafters necessary to do so are extremely rare and generally require separate quests. Those that find these do so in deep lost vaults and other such places. These might emulate spells with aether cost above 8 Aether as well as lesser Legendary Effects or class features in a similar level range.
+- *Legendary.* These are appropriate for Legendary Hero-stage play (levels 17 - 20). Legend-tier items are only whispered about among the sages or found as fragmentary records in the oldest books. These generally cannot be made by mortal smiths, although Ascendants and similar planar Powers may assist in granting them.
+- *Artifact.* Artifacts are plot items of widely ranging power and may or may not appear in any given game. These are named items with substantial historical significance and, if they can be created at all, their creation is the subject of an entire campaign; they act as key plot items. Generally, once an artifact is used (whether for its intended purpose or not), it disappears and reappears somewhere and somewhen else. Artifacts are frequently actual characters in item form, with a mind and will of their own. *No artifacts are detailed here. They're too individual to a particular campaign.*
+]
 
 == Crafting Magic Items
 
 To craft magic items, you need a few things.
+#flush-block[
+- *A formula.* Each magic item has a specific "formula" or recipe. This includes the necessary components, some of which are abstracted into a general gold cost (such as the precious metals, incenses, inks, etc. that can be generally purchased or are shared among many items) and at least one of which which must be found by adventuring and cannot be purchased on the open market. Common consumable items (such as generic healing potions) are an exception to this latter step; they generally just require "standard" (ie purchaseable) ingredients. Some items have their formula included in the item description. These are the items whose secrets are understood generally across Noefra. Others (especially higher-tier items) do not; the secrets of their construction are either lost and must be rediscovered in play or are closely-guarded secrets among the most elite guilds.
+- *A crafting tool and proficiency level.* Crafting a magic item requires proficiency in a specific type of crafting tool, specified in the item description. Some items can use multiple different tools; someone proficient in more than one gets a bonus to their crafting speed (as described below). A certain level of proficiency is also required. For example, crafting Resistant Leather Armor requires Leatherworker's Tools proficiency at a +3 proficiency. Thus, you must be level 5 or higher to craft Resistant Leather Armor. NPCs can substitute for this part; since they're working out of dedicated workshops, they also get a bonus to crafting speed. But finding crafters for higher-tier items becomes progressively more complicated.
+- *A sum of coin.* Crafting a magic item has many costs, including for general purchaseable components or raw materials and some for experimentation. Generally, the cost for consumable items is half of the normal crafting cost. 
+- *Crafting time.* Creating a magic item requires substantial time. In general, each person who has the appropriate proficiencies who assists in the work provides 50 gp of "progress" per 8 hours spent crafting, or half as much if they are working on the road (ie not at a stable workspace). Having a fully-equipped workshop of the appropriate type doubles the progress. When an item's entire cost has been paid, it is complete. No more than one item can be progressed by a given worker in any 8 hour period except for regular healing potions (where 8 hours in a stable workspace can create two); any excess progress is wasted.
+- Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
+]
 
-*A formula.* Each magic item has a specific "formula" or recipe. This includes the necessary components, some of which are abstracted into a general gold cost (such as the precious metals, incenses, inks, etc. that can be generally purchased or are shared among many items) and at least one of which which must be found by adventuring and cannot be purchased on the open market. Common consumable items (such as generic healing potions) are an exception to this latter step; they generally just require "standard" (ie purchaseable) ingredients. Some items have their formula included in the item description. These are the items whose secrets are understood generally across Noefra. Others (especially higher-tier items) do not; the secrets of their construction are either lost and must be rediscovered in play or are closely-guarded secrets among the most elite guilds.
-
-*A crafting tool and proficiency level.* Crafting a magic item requires proficiency in a specific type of crafting tool, specified in the item description. Some items can use multiple different tools; someone proficient in more than one gets a bonus to their crafting speed (as described below). A certain level of proficiency is also required. For example, crafting Resistant Leather Armor requires Leatherworker's Tools proficiency at a +3 proficiency. Thus, you must be level 5 or higher to craft Resistant Leather Armor. NPCs can substitute for this part; since they're working out of dedicated workshops, they also get a bonus to crafting speed. But finding crafters for higher-tier items becomes progressively more complicated.
-
-*A sum of coin.* Crafting a magic item has many costs, including for general purchaseable components or raw materials and some for experimentation. Generally, the cost for consumable items is half of the normal crafting cost. 
-
-*Crafting time.* Creating a magic item requires substantial time. In general, each person who has the appropriate proficiencies who assists in the work provides 50 gp of "progress" per 8 hours spent crafting, or half as much if they are working on the road (ie not at a stable workspace). Having a fully-equipped workshop of the appropriate type doubles the progress. When an item's entire cost has been paid, it is complete. No more than one item can be progressed by a given worker in any 8 hour period except for regular healing potions (where 8 hours in a stable workspace can create two); any excess progress is wasted.
-
-Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
-
-"=== Tier*","Proficiency","*Cost Range (gp",
+#dndtab("Crafting Costs", columns: (2fr, 1fr, 1fr),
+"Tier","Proficiency","Cost Range (gp)",
 "Journeyman","+2","50-150",
 "Adventurer","+3","300-2000",
 "Hero","+5","4000-20000",
 "Legendary","---","---",
+)
 	
 == Magic Item Lists
 The presented items are examples; many other magic items may exist. The GM is free to create magic items fitting their own campaign, using these as samples or baselines or inspiration or adapting items from other games entirely. Or just making them up out of whole cloth. Players that want specific items not listed here should talk to their GM.
@@ -1566,15 +1551,13 @@ Even though many types of armor (especially heavy armor) have integrated sabaton
 === Robes
 Robes cannot be worn with any armor, magical or not, except a mithral breastplate or any chain shirt.
 
-
 === Adamantine Armor
 
-=== Armor (medium or heavy, but not hide), Adventure
+_Armor (medium or heavy, but not hide), Adventurer_
 
 This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.
 
 *Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
-
 
 === Aelven Chain
 _Armor (masterwork chain shirt), Hero_
@@ -1595,12 +1578,13 @@ You have resistance to all damage while you wear this armor. Additionally, you c
 _Armor (any), Hero (requires attunement)_
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.
-"=== d8*","Damage Type","","d8","*Damage Typ",
+#dndtab("Energy Type", columns: (1fr, 2fr, 1fr, 1fr, 2fr),
+"d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
 "3","Fire","","7","Radiant",
 "4","Lightning","","8","Thunder",
-
+)
 
 === Armor of Physical Resistance
 _Armor (any), Hero (requires attunement)_ 
@@ -1619,23 +1603,24 @@ While wearing this belt, your Strength score changes to a score granted by the b
 
 Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect.
 
-"=== Type*","Strength","*Tie",
+#dndtab("", columns: (2fr, 1fr, 2fr),
+"Type","Strength","Tier",
 "Hill giant","+5","Hero",
 "Stone/frost giant","+6","Hero",
 "Fire giant","+7","Legendary",
 "Cloud giant","+8","Legendary",
 "Storm giant","+9","Legendary",
+)
 
 === Boots of Levitation
 _Boots, Hero (requires attunement)_
 
-While you wear these boots, you can use an action to cast the levitate spell on yourself at will.
+While you wear these boots, you can use an action to cast the _levitate_ spell on yourself at will.
 
 === Boots of Speed
 _Boots, Hero (requires attunement)_
 
 While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect; otherwise, the effect ends after 1 minute. The boots have three charges; each use expends a charge and all expended charges are restored at dawn.
-
 
 === Boots of Striding and Springing
 _Boots, Adventurer (requires attunement)_ 
@@ -1654,7 +1639,7 @@ These furred boots are snug and feel quite warm. While you wear them, you gain t
 === Cape of the Mountebank
 _Cloak, Hero_
 
-This cape smells faintly of brimstone. While wearing it, you can use it to cast the dimension-door spell as an action. This property of the cape can't be used again until the next dawn. When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke.
+This cape smells faintly of brimstone. While wearing it, you can use it to cast the _dimension door_ spell as an action. This property of the cape can't be used again until the next dawn. When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke.
 
 === Circlet of Blasting
 _Hat, Adventurer_
@@ -1688,7 +1673,7 @@ _Cloak, Hero (requires attunement)_
 
 While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.
 
-While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.
+While wearing the cloak in an area of dim light or darkness, you can use your action to cast _polymorph_ on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.
 
 === Cloak of the Manta Ray
 _Cloak, Adventurer_
@@ -1700,18 +1685,19 @@ _Armor (masterwork plate), Adventurer (requires attunement)_
 
 While wearing this armor, you can understand and speak Abyssal. In addition, the armor's clawed gauntlets are light melee weapons that deal slashing damage with a +2 bonus to damage rolls and a damage die of 1d8. You have proficiency in these weapons. You cannot wear any other gloves while attuned to this armor.
 
-
 === Dragon Scale Mail
 _Armor (masterwork lamellar), Hero (requires attunement)_ 
 
 Dragon scale mail (technically a form of lamellar armor) is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
 
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
 "Dragon","Resistance","","Dragon","Resistance",
 "Black","Necrotic","","Gold","Radiant",
 "Blue","Lightning","","Green","Acid",
 "Brass","Fire","","Red","Fire",
 "Bronze","Lightning","","Silver","Cold",
 "Copper","Acid","","White","Cold",
+)
 
 === Dwarven Plate
 _Armor (masterwork plate), Hero_ 
@@ -1767,7 +1753,7 @@ While wearing this helm, you understand all spoken languages and can be understo
 === Helm of Telepathy
 _Hat, Adventurer (requires attunement)_
 
-While wearing this helm, you can use an action to cast the _detect thoughts_ spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
+While wearing this helm, you can use an action to cast the _detect thoughts_ spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with _detect thoughts_, you can use an action to cast the _suggestion_ spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
 
 === Helm of Teleportation
 _Hat, Hero (requires attunement)_
@@ -1801,7 +1787,7 @@ Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be 
 === Plate Armor of Etherealness
 _Armor (plate), legendary (requires attunement)_ 
 
-While you're wearing this armor, you can speak its command word as an action to gain the effect of the etherealness legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
+While you're wearing this armor, you can speak its command word as an action to gain the effect of the _etherealness_ legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
 
 === Robe of Eyes
 _Robe, Hero (requires attunement)_
@@ -1810,8 +1796,7 @@ This robe is adorned with eye like patterns. While you wear the robe, you gain t
 
 - The robe lets you see in all directions, and you have advantage on Wisdom (Perception) checks that rely on sight.
 - You have darkvision out to a range of 120 feet.
-- You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of120 feet.The eyes on the robe can't be closed or averted.Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe.
-
+- You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet.The eyes on the robe can't be closed or averted.Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe.
 
 A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success.
 
@@ -1823,7 +1808,7 @@ This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. Whil
 === Robe of Stars
 _Robe, Hero (requires attunement)_ 
 
-This black or dark blue robe is embroidered with small white or silver stars. Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast _magic missile_, creating 8 darts. Daily at dusk, 1d6 removed stars reappear on the robe.  While you wear the robe, you can use an action to enter the Border Shadow along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.
+This black or dark blue robe is embroidered with small white or silver stars. Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast _magic missile_, creating 8 darts. Daily at dusk, 1d6 removed stars reappear on the robe. While you wear the robe, you can use an action to enter the Border Shadow along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.
 
 === Robe of the Archmagi
 _Robe, legendary (requires attunement by an arcanist)_ 
@@ -1846,9 +1831,9 @@ This robe has cloth patches of various shapes and colors covering it. While wear
 - Hempen rope (50 feet, coiled)
 - Sack
 
-
 In addition, the robe has 4d4 other patches. The GM chooses the patches or determines them randomly.
-"=== d100*","*Patc",
+#wide[#dndtab("", columns: (1fr, 5fr),
+"d100","Patch",
 "01-08","Bag of 100gp",
 "09-15","Silver coffer (1 foot long, 6 inches wide and  deep) worth 500 gp",
 "16-22","Iron door (up to 10 feet wide  and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself",
@@ -1862,6 +1847,7 @@ In addition, the robe has 4d4 other patches. The GM chooses the patches or deter
 "84-90","2 mastiffs (friendly toward you)",
 "91-96","Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach",
 "97-00","Portable ram",
+)]
 
 === Rune-inscribed Belt
 _Belt, Hero (requires attunement)_
@@ -1884,7 +1870,7 @@ _Armor (shield), Hero (requires attunement)_
 While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.
 
 === Winged Boots
-_Boots, Adventurer (requires attunement)_ 
+_Boots, Hero (requires attunement)_ 
 
 These boots have 3 charges. While you wear these boots, you can expend a charge to gain a flying speed equal to your walking speed for 1 hour. If you are still flying when a charge expires, you descend at a rate of 50 ft per round, taking no fall damage. All expended charges are restored at dawn.
 
@@ -1898,7 +1884,7 @@ _Cloak, Adventurer (requires attunement)_
 
 While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.
 
-=== Consumables
+== Consumables
 The items in this section are all linked by the fact that they are truly consumable. They lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.
 
 Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature. Generally oils apply to items or objects and unguents to creatures.
@@ -1906,7 +1892,7 @@ Consuming a potion yourself requires a bonus action, while administering it to a
 === Apprentice's Friend
 _Potion, Journeyman_
 
-This oily black liquid has a strong smell. A single dose of this is approximately 16 ounces of liquid. When consumed by spending your action over the course of 1 minute, the drinker gains the benefit of a short rest. Drinking another Apprentice's Friend before finishing a long rest still provides the benefit of a short rest, but you gain 5 levels of exhaustion one minute after finishing the drink.
+This oily black liquid has a strong smell. A single dose of this is approximately 16 ounces of liquid. When consumed by spending your action each turn over the course of 1 minute, the drinker gains the benefit of a short rest. Drinking another Apprentice's Friend before finishing a long rest still provides the benefit of a short rest, but you gain 5 levels of exhaustion one minute after finishing the drink.
 
 *Formula.* Crafting this potion requires one quarter-cup of exotic wake-beans and one half-ounce of powdered aether-dense crystal (such as a gemstone). All together, the cost is 75 gp (including the halving for consumables). Brewer's Kit proficiency (+2) is required.
 
@@ -1943,10 +1929,12 @@ When you use an action to throw a handful of the dust into the air, you and each
 _Consumable, Hero_
 
 This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.
-d100 | Effect 
-01 - 10 | The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic. 
-11 - 90 | The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic. 
-91 - 00 | The efreeti can grant three wishes for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic.
+#dndtab("", columns: (1fr, 5fr),
+"d100", "Effect", 
+"01 - 10", "The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.", 
+"11 - 90", "The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.",
+"91 - 00", "The efreeti can grant three wishes for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic."
+)
 
 If the efreeti grants wishes, those wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.
 
@@ -1955,35 +1943,34 @@ _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
+#dndtab("", columns: (1fr, 1fr),
 "Gem","Summoned Elemental",
 "Blue sapphire","Air elemental",
 "Yellow diamond","Earth elemental",
 "Red corundum","Fire elemental",
 "Emerald","Water elemental",
+)
 
 === Feather Token
 _Consumable, Hero_
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.
-
+#dndtab("", columns: (1fr, 2fr, 0.5fr, 1fr, 2fr),
 "d100","Feather Token","","d100","Feather Token",
 "01 - 20","Anchor","","51 - 65","Swan boat",
 "21 - 35","Bird","","66 - 90","Tree",
 "36 - 50","Fan","","91 - 00","Whip",
-          
-*Anchor.* You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.
+)
 
-*Bird.* You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.
-
-*Fan.* If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.
-
-*Swan Boat.* You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.
-
-*Tree.* You must be outdoors to use this token.You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.
-
-*Whip.* You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.
-
-As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.
+#flush-block[
+- *Anchor.* You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.
+- *Bird.* You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.
+- *Fan.* If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.
+- *Swan Boat.* You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.
+- *Tree.* You must be outdoors to use this token.You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a non-magical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.
+- *Whip.* You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.
+- As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.
+]
 
 === Gem of Brightness
 _Consumable, Adventurer_
@@ -1991,16 +1978,16 @@ _Consumable, Adventurer_
 This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
 
 - The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.
-- The second command word expends 1 charge and causes the gem to fire a brilliant beam of light atone creature you can see within 60 feet of you. Thecreature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+- The second command word expends 1 charge and causes the gem to fire a brilliant beam of light atone creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.
 
-When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.
+When all of the gem's charges are expended, the gem becomes a non-magical jewel worth 50 gp.
 
 
 === Marvelous Pigments
 _Consumable, Hero_ 
 
-Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features---such as a door, a pit, flowers, trees, cells, rooms, or weapons---that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.
+Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features---such as a door, a pit, flowers, trees, cells, rooms, or weapons---that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, non-magical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.
 
 === Necklace of Fireballs
 _Consumable, Hero_
@@ -2026,12 +2013,12 @@ This sticky black unguent is thick and heavy in the container, but it flows quic
 === Potion of Animal Friendship
 _Potion, Adventurer_
 
-When you drink this potion and for one hour afterward, you can attempt to convice a beast that you mean it no harm. Choose a beast that you can see within 60 feet. It must be able to hear and see you. The beast must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 24 hours. If you or one of your companions harms the target, the effect ends. You do not gain any direct control over the charmed beast, but you may be able to interact with it (e.g. offering it treats) to convince it to do simple tasks. While charmed, you can understand its desires and communicate yours to it, but it decides how it acts.
+When you drink this potion and for one hour afterward, you can attempt to convince a beast that you mean it no harm. Choose a beast that you can see within 60 feet. It must be able to hear and see you. The beast must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 24 hours. If you or one of your companions harms the target, the effect ends. You do not gain any direct control over the charmed beast, but you may be able to interact with it (e.g. offering it treats) to convince it to do simple tasks. While charmed, you can understand its desires and communicate yours to it, but it decides how it acts.
 
 === Potion of Clairvoyance
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.
+When you drink this potion, you gain the effect of the _clairvoyance_ incantation. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.
 
 === Potion of Climbing
 _Potion, Journeyman_
@@ -2041,7 +2028,7 @@ When you drink this potion, you gain a climbing speed equal to your walking spee
 === Potion of Diminution
 _Potion, Hero_
 
-When you drink this potion, you gain the “reduce” effect of the enlarge-reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
+When you drink this potion, you gain the “reduce” effect of the _enlarge/reduce_ spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
 
 === Potion of Flying
 _Potion, Hero_
@@ -2051,19 +2038,21 @@ When you drink this potion, you gain a flying speed equal to your walking speed 
 === Potion of Gaseous Form
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.
+When you drink this potion, you gain the effect of the _gaseous form_ spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.
 
 === Potion of Giant Strength
 _Potion, tier varies_
 
 When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.
 
-"=== Type*","Strength","*Tie",
+#dndtab("", columns: (2fr, 1fr, 2fr),
+"Type","Strength","Tier",
 "Hill giant","+5","Adventurer",
 "Stone/frost giant","+6","Hero",
 "Fire giant","+7","Hero",
 "Cloud giant","+8","Legendary",
 "Storm giant","+9","Legendary",
+)
 
 === Potion of Growth
 _Potion, Adventurer_ 
@@ -2075,20 +2064,22 @@ When you drink this potion, you gain the “enlarge” effect of the enlarge-red
 _Potion, tier varies_ 
 
 You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.
-
-"=== Potion of …*","Tier","HP Regained","Cost (gp)","*Crafting Tim",
+#dndtab("", columns: (2fr, 2fr, 2fr, 1fr, 1fr),
+"Potion of …","Tier","HP Regained","Cost (gp)","Crafting Time",
 "Healing","Journeyman","2d4 + 2","25","4 hrs",
 "Greater healing","Adventurer","4d4 + 4","125","2 days",
 "Superior healing","Adventurer","8d4 + 8","450","4 days",
 "Supreme healing","Hero","10d4 + 20","1000","10 days",
+)
 
-*Formula.* Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing table. The listed cost includes the discount for being consumable. Special: Crafting potions of healing is faster than normal---the time to craft a potion of healing is shown in the Potions of Healing table.
+*Formula.* Crafting a potion of healing requires healing herbs and aether-rich powders, including powdered bloodstone, as well as proficiency in either Herbalism Kits or Alchemist's Tools. The total cost and required proficiency is shown in the Potions of Healing table. The listed cost includes the discount for being consumable. 
+
+*Special*: Crafting potions of healing is faster than normal---the time to craft a potion of healing is shown in the Potions of Healing table.
 
 === Potion of Heroism
 _Potion, Hero_
 
-For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the
-bless spell (no concentration required). This blue potion bubbles and steams as if boiling.
+For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the _bless_ spell (no concentration required). This blue potion bubbles and steams as if boiling.
 
 === Potion of Invisibility
 _Potion, Hero_
@@ -2098,18 +2089,19 @@ This potion's container looks empty but feels as though it holds liquid. When yo
 === Potion of Mind Reading
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the detect-thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
-
+When you drink this potion, you gain the effect of the _detect thoughts_ spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
 
 === Potion of Energy Resistance
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.
-"=== d8*","Damage Type","","d8","*Damage Typ",
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
+"d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
 "3","Fire","","7","Radiant",
 "4","Lightning","","8","Thunder",
+)
 
 === Potion of Speed
 _Potion, Hero_ 
@@ -2125,6 +2117,7 @@ You can breathe underwater for 1 hour after drinking this potion. Its cloudy gre
 
 === Purple Worm Oil
 _Oil, Adventurer_
+
 This oily toxin coats weapons or objects, eating away at those who come in contact with it. This oil can be applied to an object or weapon (one melee weapon or up to 20 pieces of ammunition) over the course of 1 minute and lasts until someone touches the object or is hit by the weapon.
 
 A creature that touches the poisoned item or is hit by the poisoned weapon takes 3d6 poison damage, and must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of of their turns while poisoned in this way, the target takes 3d6 poison damage. At the end of each of their turns, they can repeat the saving throw. On a successful save, the poison damage they take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.
@@ -2133,7 +2126,6 @@ A creature that touches the poisoned item or is hit by the poisoned weapon takes
 _Unguent, Adventurer_
 
 This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.
-
 
 === Sovereign Glue
 _Oil, Hero_
@@ -2148,8 +2140,8 @@ A spell scroll (or stone, the only difference being the appropriate tool profici
 If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.
 
 The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.
-
-"=== Aether Cost*","Tier","Save DC","Attack Bonus","Cost","*Proficienc",
+#wide[#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+"Aether Cost","Tier","Save DC","Attack Bonus","Cost","Proficiency",
 "0","Journeyman","13","+5","50","+2",
 "2","Journeyman","13","+5","50","+2",
 "3","Adventurer","13","+5","150","+3",
@@ -2157,15 +2149,16 @@ The base aether cost of the spell on the scroll determines the spell's saving th
 "8","Hero","15","+7","1500","+5",
 "12","Hero","17","+9","3000","+5",
 "Legendary","Legendary","18","+10","---","---",
+)]
 
-*Formula.* Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.
+*Formula.* Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency bonus is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.
 
 === Universal Solvent
 _Wondrous item, Adventurer_
 
 This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.
 
-=== Miscellaneous Magic Items
+== Miscellaneous Magic Items
 
 === Bag of Holding
 _Wondrous item, Adventurer_
@@ -2175,7 +2168,6 @@ This bag has an interior space considerably larger than its outside dimensions, 
 If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents fall out. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.
 
 If you place a bag of holding inside another item that manipulates space or weight, such as a handy haversack or a portable hole, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
-
 
 === Bag of Tricks
 _Wondrous item, Adventurer_
@@ -2188,57 +2180,36 @@ The creature is friendly to you and your companions, and it acts on your turn. Y
 
 Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.
 
-Grey Bag:
-"d8","Creature",
-"1","Weasel",
-"2","Giant rat",
-"3","Badger",
-"4","Boar",
-"5","Panther",
-"6","Giant badger",
-"7","Dire wolf",
-"8","Giant elk",
-
-Rust Bag:
-"d8","Creature",
-"1","Rat",
-"2","Owl",
-"3","Mastiff",
-"4","Goat",
-"5","Giant goat",
-"6","Giant boar",
-"7","Lion",
-"8","Brown bear",
-
-Tan Bag:
-"d8","Creature",
-"1","Jackal",
-"2","Ape",
-"3","Baboon",
-"4","Axe beak",
-"5","Black bear",
-"6","Giant weasel",
-"7","Giant hyena",
-"8","Tiger",
+#dndtab("", columns: (1fr, 1.5fr, 1.5fr, 1.5fr),
+"d8","Creature (Grey Bag)", "Creature (Rust Bag)", "Creature (Tan Bag)",
+"1","Weasel", "Rat", "Jackal",
+"2","Giant rat", "Owl", "Ape",
+"3","Badger", "Mastiff", "Baboon",
+"4","Boar", "Goat", "Axe beak",
+"5","Panther", "Giant goat", "Black bear",
+"6","Giant badger", "Giant boar", "Giant weasel",
+"7","Dire wolf", "Lion", "Giant hyena",
+"8","Giant elk", "Brown Bear", "Tiger"
+)
 
 === Bowl of Commanding Water Elementals
 _Wondrous item, Hero_
 
-While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure-elemental spell. The bowl can't be used this way again until the next dawn.
+While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the _conjure elemental_ spell. The bowl can't be used this way again until the next dawn.
 
 The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.
 
 === Brazier of Commanding Fire Elementals
 _Wondrous item, Hero_
 
-While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure-elemental spell. The brazier can't be used this way again until the next dawn.
+While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the _conjure elemental_ spell. The brazier can't be used this way again until the next dawn.
 
 The brazier weighs 5 pounds.
 
 === Broom of Flying
 _Wondrous item, Hero_
 
-This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air, but doing so requires both hands. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land. You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you.
+This wooden broom, which weighs 3 pounds, functions like a mundane broom until you sit astride it and speak its command word. It then hovers beneath you and can be ridden in the air, but controlling it requires both hands and your action each turn. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land. You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you.
 
 === Carpet of Flying
 _Wondrous item, Hero_
@@ -2246,32 +2217,34 @@ _Wondrous item, Hero_
 You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
 
 Four sizes of carpet of flying exist. The GM chooses the size of a given carpet or determines it randomly.
+#dndtab("", columns: (1fr, 2fr, 1fr, 1fr),
 "d100","Size","Capacity","Flying Speed",
-"01-20","3 ft. &times; 5 ft.","200 lb.","80  feet",
-"21-55","4 ft. &times; 6 ft.","400 lb.","60 feet",
-"56-80","5 ft. &times; 7 ft.","600 lb.","40 feet",
-"81 - 100","6 ft. &times; 9 ft.","800 lb.","30 feet",
+"01-20",[3 ft. #sym.times 5 ft.],"200 lb.","80  feet",
+"21-55",[4 ft. #sym.times 6 ft.],"400 lb.","60 feet",
+"56-80",[5 ft. #sym.times 7 ft.],"600 lb.","40 feet",
+"81 - 100",[6 ft. #sym.times 9 ft.],"800 lb.","30 feet",
+
+)
 
 A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.
-
 
 === Censer of Controlling Air Elementals
 _Wondrous item, Hero_
 
-While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the conjure-elemental spell. The censer can't be used this way again until the next dawn.
+While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the _conjure elemental_ spell. The censer can't be used this way again until the next dawn.
 
 This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. It weighs 1 pound.
 
 === Crystal Ball
 _Wondrous item, Hero or legendary (requires attunement)_
 
-The typical crystal ball, a Hero item, is about 6 inches in diameter. While touching it, you can cast the scrying incantation (save DC 17) with it.
+The typical crystal ball, a Hero item, is about 6 inches in diameter. While touching it, you can cast the _scrying_ incantation (save DC 17) with it. Once you use this property, you cannot do so again until the next dawn.
+
 The following crystal ball variants are legendary items and have additional properties.
 
-*Crystal Ball of Mind Reading.* You can use an action to cast the
-detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends.
+*Crystal Ball of Mind Reading.* You can use an action to cast the _detect thoughts_ spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this _detect thoughts_ to maintain it during its duration, but it ends if scrying ends.
 
-*Crystal Ball of Telepathy.* While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.
+*Crystal Ball of Telepathy.* While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the _suggestion_ spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.
 
 *Crystal Ball of True Seeing.* While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor.
 
@@ -2280,6 +2253,7 @@ _Wondrous item, Hero (requires attunement)_
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.  You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.  If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.
 
+#dndtab("", columns: (1fr, 1fr, 4fr),
 "Face","Charges","Effect",
 "1","1","Gases, wind, and  fog can't pass through the barrier.",
 "2","2","Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
@@ -2287,15 +2261,16 @@ This cube is about an inch across. Each face has a distinct marking on it that c
 "4","4","Magical effects can't pass through the barrier.",
 "5","5","Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
 "6","0","The barrier deactivates.",
+)
 
 === Cubic Gate
 _Wondrous item, legendary_
 
 This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the GM.
 
-You can use an action to press one side of the cube to cast the gate incantation with it, opening a portal to the plane keyed to that side. 
+You can use an action to press one side of the cube to cast the _gate_ incantation with it, opening a portal to the plane keyed to that side. 
 
-Alternatively, if you use an action to press one side twice, you can cast the plane shift incantation (save DC 17) with the cube and transport the targets to the plane keyed to that side.
+Alternatively, if you use an action to press one side twice, you can cast the _plane shift_ incantation (save DC 17) with the cube and transport the targets to the plane keyed to that side.
 
 The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn.
 
@@ -2312,7 +2287,7 @@ This stoppered flask sloshes when shaken, as if it contains water. The decanter 
 === Efficient Quiver
 _Wondrous item, Adventurer_
 
-Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears.  You can draw any item the quiver contains as if doing so from a regular quiver or scabbard.
+Each of the quiver's three compartments connects to an extra-dimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears.  You can draw any item the quiver contains as if doing so from a regular quiver or scabbard.
 
 === Eversmoking Bottle
 _Wondrous item, Adventurer_
@@ -2328,31 +2303,23 @@ A figurine of wondrous power is a statuette of a beast small enough to fit in a 
 
 The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.  The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.
 
-*Bronze Griffon (Hero).* This bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed.
-
-*Ebony Fly (Hero).* This ebony statuette is carved in the likeness of a horsefly. It can become a giant fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed. The giant fly has the statistics of a riding horse except with a fly speed of 60 feet.
-
-*Golden Lions (Hero).* These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed.
-
-
-*Ivory Goats (Hero).* These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:
-
+#flush-block[
+- *Bronze Griffon (Hero).* This bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed.
+- *Ebony Fly (Hero).* This ebony statuette is carved in the likeness of a horsefly. It can become a giant fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed. The giant fly has the statistics of a riding horse except with a fly speed of 60 feet.
+- *Golden Lions (Hero).* These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed.
+- *Ivory Goats (Hero).* These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:
+]
 - The goat of traveling can become a Large goat with the same statistics as a riding horse. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.
 - The goat of travail becomes a giant goat for up to 3hours. Once it has been used, it can't be used again until 30 days have passed.
 - The goat of terror becomes a giant goat for up to 3hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition,the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns,ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed.
 
-
-*Marble Elephant (Hero).* This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.
-
-*Obsidian Steed (Hero).* This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.
-
-
-*Onyx Dog (Hero).* This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.
-
-*Serpentine Owl (Hero).* This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.
-
-*Silver Raven (Adventurer).* This silver statuette of a raven can become a raven for up to 12 hours. Once
-it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will.
+#flush-block[
+- *Marble Elephant (Hero).* This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.
+- *Obsidian Steed (Hero).* This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.
+- *Onyx Dog (Hero).* This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.
+- *Serpentine Owl (Hero).* This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.
+- *Silver Raven (Adventurer).* This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the _animal messenger_ incantation on it at will. If you upgrade the effect by paying the additional cost, it lasts for the duration.
+]
 
 === Folding Boat
 _Wondrous item, Hero_
@@ -2381,20 +2348,6 @@ If you place a handy haversack inside another item that manipulates space or wei
 _Wondrous item, Hero_
 
 You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.  Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.
-
-
-=== Horn of Calling
-_Wondrous item, Hero (silver, brass, or bronze), or legendary (iron)_
-
-You can use an action to blow this horn. In response, warrior spirits appear within 60 feet of you. They use the statistics of a berserker. They disappear after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.  Four types of horn of calling are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly.
-
-"d100","Horn Type","Berserkers Summoned","Requirement",
-"01-40","Silver","2d4 + 2","None",
-"41-75","Brass","3d4 + 3","Proficiency with all simple weapons",
-"76-90","Bronze","4d4 + 4","Proficiency with all medium armor",
-"91-00","Iron","5d4 + 5","Proficiency with all martial weapons",
-
-If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your verbal commands.
 
 === Horseshoes of a Zephyr
 _Wondrous item, Hero_
@@ -2441,27 +2394,15 @@ _Wondrous item, Hero_
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be at least 12th level and have an Intelligence modifier of +3 or higher. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
 
+#dndtab("", columns: (1fr, 1fr, 1fr, 1.5fr),
 "d20","Golem","Time","Cost",
 "1 - 5","Clay","30 days","65,000 gp",
 "6 - 17","Flesh","60 days","50,000 gp",
 "18","Iron","120 days","100,000 gp",
 "19 - 20","Stone","90 days","80,000 gp",
+)
 
 To create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.  Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.
-
-
-=== Mirror of Life Trapping
-_Wondrous item, Hero_
-
-When this 4-foot-tall mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points. If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can use an action to speak its command word and activate it. It remains activated until you use an action to speak the command word again.
-
-Any creature other than you that sees its reflection in the activated mirror while within 30 feet of it must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. This saving throw is made with advantage if the creature knows the mirror's nature, and constructs succeed on the saving throw automatically.
-
-An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.
-
-If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.
-
-While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally. In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.
 
 === Pipes of Haunting
 _Wondrous item, Adventurer_
@@ -2508,11 +2449,10 @@ If you hold this beetle-shaped medallion in your hand for 1 round, an inscriptio
 - You have advantage on saving throws against spells.
 - The scarab has 12 charges. If you fail a saving throw against a spell that deals necrotic damage or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.
 
-
 === Stone of Good Luck (Luckstone)
 _Wondrous item, Adventurer (requires attunement)_ 
 
-This polished stone has 3 charges. You can expend a charget to take the Exert or Focus actions without expending Stamina or Aether. All expended charges are restored at dawn.
+This polished stone has 3 charges. You can expend a charge to take the Exert or Focus actions without expending Stamina or Aether. All expended charges are restored at dawn.
 
 === Stone of Controlling Earth Elementals
 _Wondrous item, Hero_
@@ -2529,7 +2469,7 @@ _Wondrous item, Adventurer_
 
 While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, non-magical tatters.
 
-=== Rings and Amulets
+== Rings and Amulets <marker>
 
 This section contains items worn as jewelry. Rings, amulets, broaches, earrings, bracers, etc. Almost all of these require attunement, which serves as the limiting factor on how many you can gain benefit from at a time.
 
@@ -7245,7 +7185,7 @@ The contingent spell takes effect only on you, even if it can normally target ot
 
 You take control of the weather within 5 miles of you for the 8 hours or until you lose concentration (as if on a spell). You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.
 
-When you cast the spell, you change the current weather conditions, which are determined by the GM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 &times; 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.
+When you cast the spell, you change the current weather conditions, which are determined by the GM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 #sym.times 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.
 
 When you change the weather conditions, find a current condition on the following tables and change it to a new one. When changing the wind, you can change its direction.
 

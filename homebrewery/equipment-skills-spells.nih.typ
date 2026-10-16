@@ -3896,7 +3896,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *beacon of hope* (oathbound, priest): 30 ft radius (C 1 min), self. Chosen targets have advantage on WIS saves and death saves and maximizes all healing received.
 - *bestow curse* (priest, ranger, shaman, spellblade): Touch (C, 1 min). WIS save or cursed with one of a few options.
 - *blight* (arcanist, ranger, spellblade): 30 ft. 10d8 necrotic (CON for half). Extra effect on plants; no effect on undead or constructs.
-- *blink* (arcanist, spellblade): Self (1 min). 50\% chance of being ethereal between turns. Dismissable.
+- *blink* (arcanist, spellblade): Self (1 min). 50% chance of being ethereal between turns. Dismissable.
 - *call lightning* (ranger): 60x10 cylinder, 120 ft (C, 10 min). Requires enough space. Action to do 3d10 (Dex for half) lightning in 5 ft radius. Extra effect when stormy.
 - *clairvoyance* (priest, ranger): 1 mile (C, 10 min). 100 gp focus. Create invisible, immobile sensor at familiar or obvious unfamiliar location. Hearing or sight, can switch.
 - *conjure animals* (shaman, ranger): 60 ft. (C, 1 hr). Create 1 OR 2 or 2 OR 1 from list. They obey verbal commands.
@@ -3929,13 +3929,14 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *banishment* (oathbound, priest, spellblade): 60 ft (C, 1 min). CHA or banished. Natives are incapacitated and CHA ends. Non natives are permanently banished unless spell ends early.
 - *black tentacles* (arcanist, spellblade): 20 ft square (C, 1 min), 90 ft. DEX or 3d6 bludgeoning damage and restrained. Action to STR or DEX to escape. Restrained targets take 3d6/rnd.
 - *caustic torrent* (arcanist, shaman): 30 ft cone (C, 1 minute). 8d6 acid and poisoned. 3d6 per turn after while poisoned. DEX for half, DEX ends.
+- *cone of cold* (arcanist, shaman, spellblade): 60 ft cone, Self. 8d8 cold (CON for half). Stuns 1 rnd on fail.
 - *confusion* (arcanist, priest, spellblade): 10-ft sphere (C, 1 min), 90 ft. WIS or 80% chance of losing control of actions. WIS ends.
 - *conjure mephits* (arcanist, shaman): 90 ft (C, 1 hr). 1 min cast time. Summon mephits that obey you.
 - *conjure woodland beings* (ranger, shaman): 60 ft (C, 1 hr). Summon fey creatures that obey you.
 - *control water* (priest, shaman): 100-ft cube (C, 10 min), 300 ft. Create flood, part water, redirect flow, or cause whirlpool.
 - *death ward* (oathbound, priest): Touch, 8 hrs. Prevent first death or KO.
 - *dimension door* (arcanist, spellblade): Self + one other similar-size target. Teleport up to 500 ft.
-- *dominate beast* (ranger, shaman, spellblade): 60 ft (C, 1 min). Charm + control one beast (WIS negates). WIS ends (save only when taking damage).
+- *dominate unthinking* (ranger, shaman, spellblade): 60 ft (C, 1 min). Charm + control one beast (WIS negates). WIS ends (save only when taking damage).
 - *faithful hound* (arcanist): 30 ft, 8 hr. Immobile phantom watchdog. Attacks hostiles within 5 ft 1/rnd (4d8 piercing). Ignores illusions. Vanishes if you move too far.
 - *fire shield* (priest, shaman): Self, 10 min. Resist cold or fire, deal 2d8 fire or cold when struck by melee attack.
 - *freedom of movement* (oathbound, priest): Touch, 1 hr. Target ignores difficult terrain and is immune to paralysis/restraint and can escape better.
@@ -3958,7 +3959,6 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *blade barrier* (priest): Special (C, 10 min), 90 ft. Wall provides 3/4 cover and difficult terrain. Passing through causes 6d10 slashing (DEX for half).
 - *chain lightning* (ranger): 4 targets within 30 ft, 150 ft. 10d8 (DEX for half) lightning damage. 
 - *cloudkill* (arcanist): 20 ft radius (C, 10 min), 120 ft. Heavy obscured. 5d8 poison (CON for half). Automatically moves 10 ft/rnd. 
-- *cone of cold* (arcanist, shaman, spellblade): 60 ft cone, Self. 8d8 cold (CON for half). Stuns 1 rnd on fail.
 - *conjure elemental* (arcanist, shaman): 90 ft (C, 1 hr). 1 min cast time. Summons friendly elemental.
 - *contagion* (priest, ranger, spellblade): Touch, 7 days. Inflicts disease on failed CON saves.
 - *dispel otherworldly influence* (oathbound, priest, shaman): Self (C, 1 min). As protection from otherworldly influence, but can expend protection to break charm, fear, or possession or banish an affected creature.
@@ -4409,15 +4409,14 @@ A target must make a Dexterity saving throw. The target takes 10d8 lightning dam
 *Overcast.* When you cast this spell using more than 13 AET, one additional bolt leaps from the first target to another target for every 3 additional AET spent.
 
 === Charm Person
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 hour
+- _Classes_: Priest
+]
 
 You attempt to charm a humanoid you can see within range. It must make a Charisma saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature's attitude toward you shifts to Friendly for the duration.
 
@@ -4425,30 +4424,28 @@ You attempt to charm a humanoid you can see within range. It must make a Charism
 
 
 === Clairvoyance
-_5 AET_
-
+#flush-block[
+- _5 AET_
 - _Cast Time_: 10 minutes
-
 - _Range_: 1 mile
-
 - _Components_: V, S, M (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: Priest, Ranger
+]
 
 You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration. A creature that can see the sensor (such as a creature benefiting from *see invisibility* or who has truesight) sees a luminous, intangible orb about the size of your fist. The sensor has an AC of 10 and is destroyed by any damage taken.
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
 
 === Cloudkill
-_14 AET_
-
+#flush-block[
+- _14 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: Arcanist
+]
 
 You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.
 
@@ -4458,60 +4455,51 @@ When you cast this spell, choose either *creeping fog* or *rolling fog*. If you 
 
 *Overcast.* When you cast this spell using more than 14 AET , the damage increases by 1d8 for every 2 additional AET spent.
 
-
 === Color Spray
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (15-foot cone)
-
 - _Components_: V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)
-
 - _Duration_: 1 round
+- _Classes_: Arcanist, Spellblade
+]
 
 A dazzling array of flashing, colored light springs from your hand. All creatures that can see you in a 15' cone must make a Constitution saving throw. On a failed save, they are blinded until the end of your next turn. 
 
 *Overcast.* When you cast this spell using more than 2 AET, the duration increases by one round for every 2 additional AET spent.
 
 === Command
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V
-
 - _Duration_: 1 round
+- _Classes_: Oathbound, Priest
+]
 
 You speak a one-word command from the list below to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it. If the target can't follow your command, the spell ends.
-
-*Approach.* The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.
-
-*Drop.* The target drops whatever it is holding and then ends its turn.
-
-*Flee.* The target spends its turn moving away from you by the fastest available means.
-
-*Grovel.* The target falls prone and then ends its turn.
-
-*Halt.* The target doesn't move and takes no actions.
-
-A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.
+#flush-block[
+- *Approach.* The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.
+- *Drop.* The target drops whatever it is holding and then ends its turn.
+- *Flee.* The target spends its turn moving away from you by the fastest available means.
+- *Grovel.* The target falls prone and then ends its turn.
+- *Halt.* The target doesn't move and takes no actions.
+- A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.
+]
 
 *Overcast.* When you cast this spell using more than 2 AET, you can affect one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-
 === Cone of Cold
-_10 AET_
-
+#flush-block[
+- _10 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (60-foot cone)
-
 - _Components_: V, S, M (a small crystal or glass cone)
-
 - _Duration_: Instantaneous
+- _Classes_: Arcanist, Shaman, Spellblade
+]
 
 A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one. Targets that fail their save are stunned until the end of the caster's next turn. Targets that succeed have their speed reduced to 10 ft until the end of their next turn.
 
@@ -4521,41 +4509,40 @@ A creature killed by this spell becomes a frozen statue until it thaws.
 
 
 === Confusion
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 90 feet
-
 - _Components_: V, S, M (three nut shells)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Arcanist, Priest, Spellblade
+]
 
 This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.
 
 An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
 
-"=== d10*","*Behavio",
+#dndtab("Confusion",
+"d10","*Behavior",
 "1","The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.",
 "2-6","The creature doesn't move or take actions this turn.",
 "7-8","The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.",
 "9-10","The creature can act and move normally.",
+)
 
 At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.
 
 *Overcast.* When you cast this spell using more than 8 AET, the radius of the sphere increases by 5 feet for every 3 additional AET spent.
 
-
 === Conjure Animals
-_5 AET_
-
+#flush-block[
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: Shaman, Ranger
+]
 
 You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
@@ -4572,15 +4559,14 @@ The GM has the creatures' statistics.
 - 11 AET spent: 1 elephant or 2 giant scorpions or killer whales.
 
 === Conjure Elemental
-_12 AET_
-
+#flush-block[
+- _12 AET_
 - _Cast Time_: 1 minute
-
 - _Range_: 90 feet
-
 - _Components_: V, S, M (burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: Arcanist, Shaman
+]
 
 You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
 
@@ -4593,15 +4579,14 @@ The GM has the elemental's statistics.
 *Overcast.* When you cast this spell using more than 12 AET, the hit points of the summoned elemental increase by 5 for each additional AET spent and it gains an additional attack for every 3 additional AET spent.
 
 === Conjure Mephits
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 minute
-
 - _Range_: 90 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: Arcanist, Shaman
+]
 
 You summon mephits that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
 
@@ -4613,15 +4598,14 @@ The summoned creatures are friendly to you and your companions. They take their 
 The GM has the creatures' statistics.
 
 === Conjure Woodland Beings
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (one holly berry per creature summoned)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: Ranger, Shaman
+]
 
 You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
@@ -4635,44 +4619,39 @@ The summoned creatures are friendly to you and your companions. They take their 
 The GM has the creatures' statistics.
 
 === Contagion
-_12 AET_
-
+#flush-block[
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: 7 days
+- _Classes_: Priest, Ranger, Spellblade
+]
 
 Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.
 
 At the end of each of the target's turns, it must make a Constitution saving throw. After failing three of these saving throws, the disease's effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.
 
 Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.
+#flush-block[
+- *Blinding Sickness.* Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
+- *Filth Fever.* A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
+- *Flesh Rot.* The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.
+- *Mindfire.* The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the _confusion_ spell during combat.
+- *Seizure.* The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity and cannot concentrate on spells or abilities.
+- *Slimy Doom.* The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is staggered until the end of its next turn.
+]
 
-*Blinding Sickness.* Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
-
-*Filth Fever.* A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
-
-*Flesh Rot.* The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.
-
-*Mindfire.* The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the *confusion* spell during combat.
-
-*Seizure.* The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity and cannot concentrate on spells or abilities.
-
-*Slimy Doom.* The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is staggered until the end of its next turn.
 
 === Control Water
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 300 feet
-
 - _Components_: V, S, M (a drop of water and a pinch of dust)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: Priest, Shaman
+]
 
 Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.
 
@@ -4693,15 +4672,14 @@ When a creature enters the vortex for the first time on a turn or starts its tur
 The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.
 
 === Create or Destroy Water
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a drop of water if creating water or a few grains of sand if destroying it)
-
 - _Duration_: Instantaneous
+- _Classes_: Priest, Shaman
+]
 
 You either create or destroy water. Living beings do not count as open containers.
 
@@ -4712,45 +4690,42 @@ You either create or destroy water. Living beings do not count as open container
 *Overcast.* When you cast this spell using more than 2 AET, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for every 2 additional AET spent.
 
 === Cure Wounds
-_1 AET_
-
+#flush-block[
+- _1 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: Oathbound, Priest, Ranger, Shaman
+]
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
 *Overcast.* When you cast this spell using more than 1 AET, the healing increases by 1d8 for every additional AET spent, up to a maximum of 12d8 + your spellcasting ability modifier.
 
 === Dancing Lights
-=== cantri
-
+#flush-block[
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a bit of phosphorus or wychwood, or a glowworm)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Arcanist, Shaman, Spellblade
+]
 
 You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10 foot radius.
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
 === Darkness
-_3 AET_
-
+#flush-block[
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, M (bat fur and a drop of pitch or piece of coal)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: Arcanist, Priest, Spellblade
+]
 
 Opaque magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and non-magical light can't illuminate it.
 
@@ -4759,28 +4734,26 @@ If the point you choose is on an object you are holding or one that isn't being 
 If any of this spell's area overlaps with an area of light created by a spell of costing 3 AET or less, the spell that created the light is dispelled.
 
 === Darkvision
-_3 AET_
-
+#flush-block[
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (either a pinch of dried carrot or an agate)
-
 - _Duration_: 8 hours
+- _Classes_: Arcanist, Priest, Spellblade
+]
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. If it already had darkvision, it can see color in the dark.
 
 === Daylight
-_5 AET_
-
+#flush-block[
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 hour
+- _Classes_: Oathbound, Priest
+]
 
 A 60-foot-radius sphere of sunlight spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
 
@@ -4788,35 +4761,30 @@ If you chose a point on an object you are holding or one that isn't being worn o
 
 If any of this spell's area overlaps with an area of darkness created by a spell costing 3 or less AET, the spell that created the darkness is dispelled.
 
-
 === Death Ward
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: 8 hours
+- _Classes_: Oathbound, Priest
+]
 
-You touch a creature and grant it a measure of protection from death.
-
-The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.
+You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.
 
 
 === Detect Thoughts
-_3 AET_
-
+#flush-block[
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (a copper piece)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Arcanist, Oathbound, Priest, Ranger
+]
 
 For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of -4 or lower or doesn't speak any language, the creature is unaffected.
 
@@ -4829,15 +4797,14 @@ You can also use this spell to detect the presence of thinking creatures you can
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
 
 === Dimension Door
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 500 feet
-
 - _Components_: V
-
 - _Duration_: Instantaneous
+- _Classes_: Arcanist, Spellblade
+]
 
 You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45-degree angle, 300 feet.”
 
@@ -4847,15 +4814,14 @@ If you would arrive in a place already occupied by an object or a creature, you 
 
 
 === Disguise Self
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: 1 hour
+- _Classes_: Arcanist, Ranger, Spellblade
+]
 
 You make yourself---including your clothing, armor, weapons, and other belongings on your person---look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
 
@@ -4865,15 +4831,14 @@ To discern that you are disguised, a creature can use its action to inspect your
 
 
 === Dispel Otherworldly Influence
-_12 AET_
-
+#flush-block[
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (holy water or powdered silver and iron)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Oathbound, Priest, Shaman
+]
 
 Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Mortal Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.
 
@@ -4884,41 +4849,38 @@ You can end the spell early by using either of the following special functions.
 *Dismissal.* As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, demons are sent to the Abyss, devils are sent to the Astral, and fey are sent to Shadow.
 
 === Divine Favor
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Oathbound
+]
 
 Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
 === Divine Wrath
-_12 AET_
-
+#flush-block[
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (15 ft radius)
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Oathbound, Priest
+]
 
 You call upon holy power and radiate destruction. When you cast this spell and at the start of each of your turns for the duration, a wave of radiant energy pulses out from you in a 15 foot sphere. All creatures in the area must make a Charisma saving throw, taking 5d8 radiant damage on a failed save or half as much on a success. Fiends, undead, and creatures summoned by magic make this saving throw at disadvantage. When you cast the spell, you can choose a number of targets up to your proficiency bonus. Designated targets are immune to the effect.
 
 === Dominate Unthinking
-_8 AET_
-
+#flush-block[
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Ranger, Shaman, Spellblade
+]
 
 You attempt to beguile a creature with an Intelligence of -4 or lower or that does not speak any language that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
 
@@ -4930,9 +4892,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 *Overcast.* When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.
 
-
-
-=== Enhance Ability
+=== Enhance Ability <marker>
 _3 AET_
 
 - _Cast Time_: 1 action

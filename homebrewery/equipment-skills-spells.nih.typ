@@ -3858,7 +3858,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *darkvision* (priest, ranger, shaman): Touch, 8 hrs. Target gains darkvision (60 ft).
 - *detect thoughts* (arcanist, oathbound, priest, ranger): Self (C, 1 min), 30 ft. Can perceive intelligent (INT > 3 and speaks a language) minds and read surface thoughts. Can probe deeper, but might get detected.
 - *enhance ability* (spellblade): Touch (C, 1 hour). One of several abilities (one per ability score).
-- *enlarge reduce* (arcanist, priest, shaman, spellblade): 30 ft (C, 1 min). Creature or object grows or shrinks one size. CON negates if unwilling.
+- *enlarge/reduce* (arcanist, priest, shaman, spellblade): 30 ft (C, 1 min). Creature or object grows or shrinks one size. CON negates if unwilling.
 - *enthrall* (spellblade): 60 ft (C, 1 min). Targets that fail a WIS save are charmed and blinded/deafened to all other creatures but the caster.
 - *find traps* (priest, ranger): 120 ft radius, Self. Detect location and nature of traps and hazards in line of sight. 
 - *flame blade* (ranger, shaman): Self (C, 10 min). Bonus action. Create scimitar of flame. Can also melee spell attack (3d6 fire). Grants temporary proficiency.
@@ -4892,44 +4892,39 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 *Overcast.* When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.
 
-=== Enhance Ability <marker>
-_3 AET_
-
+=== Enhance Ability
+#flush-block[
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (fur or a feather from a beast)
-
 - _Duration_: Concentration, up to 1 hour.
+- _Classes_: Spellblade
+]
 
 You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.
+#flush-block[
+- *Bear's Endurance.* The target gains 2d6 temporary hit points, which are lost when the spell ends. It also gains advantage on saving throws against being incapacitated or poisoned.
+- *Bull's Strength.* The target's carrying capacity and jump distance doubles. It also counts as one size larger when grappling or being grappled.
+- *Cat's Grace.* The target gains a 20 ft climbing speed. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
+- *Eagle's Splendor.* The target has advantage on Charisma saving throws. It also gains proficiency with your choice of Deception, Intimidation, or Persuasion checks. If it already had proficiency with that skill, it can add twice its proficiency bonus instead. If that was already the case, it gains advantage on those checks instead.
+- *Fox's Cunning.* The target has advantage on Intelligence saving throws as well as Intelligence checks made to discern illusions.
+- *Owl's Wisdom.* The target has advantage on checks made to find hidden objects and to avoid being surprised.
+]
 
-*Bear's Endurance.* The target gains 2d6 temporary hit points, which are lost when the spell ends. It also gains advantage on saving throws against being incapacitated or poisoned.
-
-*Bull's Strength.* The target's carrying capacity and jump distance doubles. It also counts as one size larger when grappling or being grappled.
-
-*Cat's Grace.* The target gains a 20 ft climbing speed. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
-
-*Eagle's Splendor.* The target has advantage on Charisma saving throws. It also gains proficiency with your choice of Deception, Intimidation, or Persuasion checks. If it already had proficiency with that skill, it can add twice its proficiency bonus instead. If that was already the case, it gains advantage on those checks instead.
-
-*Fox's Cunning.* The target has advantage on Intelligence saving throws as well as Intelligence checks made to discern illusions.
-
-*Owl's Wisdom.* The target has advantage on checks made to find hidden objects and to avoid being surprised.
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
 
 === Enlarge/Reduce
-_3 AET_
-
+#flush-block[
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a pinch of powdered iron)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Arcanist, Priest, Shaman, Spellblade
+]
 
 You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Charisma saving throw. On a success, the spell has no effect.
 
@@ -4940,15 +4935,14 @@ If the target is a creature, everything it is wearing and carrying changes size 
 *Reduce.* The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category---from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
 
 === Entangle
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 90 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Ranger, Shaman
+]
 
 Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.
 

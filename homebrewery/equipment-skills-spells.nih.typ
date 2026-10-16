@@ -4166,8 +4166,8 @@ Up to three creatures of your choice that you can see within range must make Cha
 - _Range_: 60 feet
 - _Components_: V, S
 - _Duration_: Concentration, up to 1 minute. Save ends.
+- _Classes_: 
 ]
-
 
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
 
@@ -4952,59 +4952,50 @@ When the spell ends, the conjured plants wilt away.
 
 
 === Enthrall
-_4 AET_
-
+#flush-block[
+- _4 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 ft
-
 - _Components_: V, M (a gold pendant worth at least 100 gp)
-
 - _Duration_: Concentration, up to 1 minute (see text)
+- _Classes_: Spellblade
+]
 
 You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target is blinded and deafened to all creatures other than you for 1 minute. If you move out of sight of them or they can no longer hear you, they can attempt the saving throw at the end of each of their turns, ending the effect on a success. Once the effect ends for a target, they cannot be affected by it for 48 hours regardless of the source.
 
 *Overcast.* When you cast this spell and spend at least 6 AET, the duration increases to 10 minutes. If you spend at least 8 AET, it no longer requires concentration and lasts for 10 minutes.
 
 === Envenom
-_2 AET_
-
+#flush-block[
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Touch
-
 - _Components_: S, M (a drop of spider or snake venom)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: Ranger, Shaman
+]
 
 You touch a weapon or container of ammunition and enchant it with venom. For the duration, when a creature hits with a weapon attack using the enchanted weapon or ammunition from the enchanted container, it deals an additional 2d4 poison damage.
 
 *Overcast.* When you cast this spell and spend more than 2 AET, you can target an additional weapon or container of ammunition for every 2 AET spent above 2.
 
 === Expeditious Retreat
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
-
+- _Classes_: 
 This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.
 
 
 === Faerie Fire
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 
@@ -5012,15 +5003,12 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 
 === Faithful Hound
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a tiny silver whistle, a piece of bone, and a thread)
-
 - _Duration_: 8 hours
+- _Classes_: 
 
 You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.
 
@@ -5030,15 +5018,12 @@ At the start of each of your turns, the hound attempts to bite one creature with
 
 
 === False Life
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (a small amount of alcohol or distilled spirits)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + your spellcasting modifier temporary hit points for the duration.
 
@@ -5046,59 +5031,47 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + your sp
 
 
 === Fear
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (30-foot cone)
-
 - _Components_: V, S, M (a white feather or the heart of a hen)
-
 - _Duration_: Concentration, up to 1 minute, save ends
+- _Classes_: 
 
 You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or become shaken for the duration. If they were already shaken, they become frightened instead. Shaken creatures can make the saving throw at the end of each of their turns, ending the effect on a success or becoming frightened if they fail one of these subsequent saving throws by 5 or more.
 
 While frightened by this spell, a creature that can see you must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move, in which case they take the Guard action. Frightened creatures can make the saving throw again at the end of any turn if they cannot see you at that point.
 
 === Feather Fall
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 reaction, which you take when you or a creature within 60 feet of you falls
-
 - _Range_: 60 feet
-
 - _Components_: V, M (a small feather or piece of down)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.
 
 
 === Find Traps
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable. Creatures never count as traps. Thus, the spell would sense an area affected by the *alarm* or *spell trap* incantation, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole, but would not detect a hidden ambush force.
 
 You learn the location and the general nature of the danger posed by each trap.
 
 === Fireball
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 150 feet
-
 - _Components_: V, S, M (a tiny ball of bat guano and sulfur)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw by 5 or more ignite, taking an additional 2d6 fire damage at the beginning of each of their turns until they or someone else spends an action to extinguish the flames. 
 
@@ -5108,15 +5081,12 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 
 
 === Fire Shield
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (a bit of phosphorus or a firefly)
-
 - _Duration_: 10 minutes
+- _Classes_: 
 
 Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.
 
@@ -5126,15 +5096,12 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 
 
 === Flame Blade
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Self
-
 - _Components_: V, S, M (leaf of sumac)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You evoke a fiery scimitar in your free hand. The blade is lasts for the duration and you have proficiency in it. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.
 
@@ -5148,15 +5115,12 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 
 === Flame Strike
-_9 AET_
-
+- _9 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (pinch of sulfur)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one. Undead and fiends have disadvantage on the saving throw.
 
@@ -5164,15 +5128,12 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 
 === Flaming Sphere
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. The sphere is a solid object that occupies its space. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
 
@@ -5184,15 +5145,12 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 
 === Flash Freeze
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 The air around a creature you can see within range takes on the aspect of ice. The target must make a Constitution saving throw. On a failed save, the target takes 4d6 cold damage and their movement is reduced to 0 until the end of their next turn. On a success, they take half damage and are not slowed.
 
@@ -5200,15 +5158,12 @@ The air around a creature you can see within range takes on the aspect of ice. T
 
 
 === Fog Cloud
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
@@ -5216,30 +5171,24 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 
 
 === Freedom of Movement
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a leather strap, bound around the arm or a similar appendage)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.
 
 The target can also spend 5 feet of movement to automatically escape from non-magical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.
 
 === Gaseous Form
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a bit of gauze and a wisp of smoke)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.
 
@@ -5249,15 +5198,12 @@ While in the form of a misty cloud, the target can't talk or manipulate objects,
 
 
 === Giant Insect
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion.
 
@@ -5269,15 +5215,12 @@ The GM might allow you to choose different targets. For example, if you transfor
 
 
 === Grave Touch
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 round
+- _Classes_: 
 
 You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.
 
@@ -5287,15 +5230,12 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 
 === Grease
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a bit of pork rind or butter)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.
 
@@ -5305,41 +5245,32 @@ This grease is flammable, acting like a flask of oil. Any ignition source ignite
 
 
 === Greater Invisibility
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.
 
 === Guidance
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends. Remember that only one bonus die can be added to any d20 roll, regardless of source.
 
 === Guiding Bolt
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 round
+- _Classes_: 
 
 A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.
 
@@ -5347,15 +5278,12 @@ A flash of light streaks toward a creature of your choice within range. Make a r
 
 
 === Gust of Wind
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (60-foot line)
-
 - _Components_: V, S, M (a legume seed)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 15 feet away from you in a direction following the line.
 
@@ -5366,15 +5294,12 @@ The gust disperses gas or vapor, and it extinguishes candles, torches, and simil
 As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.
 
 === Hallucinatory Terrain
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 10 minutes
-
 - _Range_: 300 feet
-
 - _Components_: V, S, M (a stone, a twig, and a bit of green plant)
-
 - _Duration_: 24 hours
+- _Classes_: 
 
 You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.
 
@@ -5382,15 +5307,12 @@ The tactile characteristics of the terrain are unchanged, so creatures entering 
 
 
 === Haste
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a shaving of licorice root)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Dash, Disengage, Hide, or Use an Object action.
 
@@ -5398,30 +5320,24 @@ Choose a willing creature that you can see within range. Until the spell ends, t
 
 
 === Healing Word
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 *Overcast.* When you cast this spell using more than 1 AET, the healing increases by 1d4 for every 2 additional AET spent.
 
 
 === Heat Metal
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a piece of iron and a flame)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.
 
@@ -5431,60 +5347,48 @@ If a creature is holding or wearing the object and takes the damage from it, the
 
 
 === Heroism
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 3 additional AET spent.
 
 
 === Hideous Laughter
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (tiny tarts and a feather that is waved in the air)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone and be unable to stand up for the duration. Affected creatures cannot cast spells with verbal components and must make Constitution saving throw against your spell save DC at the start of their turn to maintain concentration on spells or abilities. A creature with an Intelligence score of -3 or less isn't affected.
 
 At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends.
 
 === Hypnotic Pattern
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: S, M (a glowing stick of incense or a crystal vial filled with phosphorescent material)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Charisma saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature has a speed of 0 and must make a Charisma saving throw against your spell save DC if they try to act, losing their action on a failure. Affected creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. The spell also ends for an affected creature if it takes any damage.
 
 
 
 === Ice Storm
-_7 AET_
-
+- _7 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 300 feet
-
 - _Components_: V, S, M (a pinch of dust and a few drops of water)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 4d6 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
 
@@ -5493,30 +5397,24 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 
 
 === Inflict Wounds
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
 
 === Insect Plague
-_14 AET_
-
+- _14 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 300 feet
-
 - _Components_: V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.
 
@@ -5525,42 +5423,34 @@ When the area appears, each creature in it must make a Constitution saving throw
 
 
 === Invisibility
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (an eyelash encased in gum arabic)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying when the spell is cast is invisible as long as it is on the target's person. The spell ends for a target that attacks, casts a spell, or deals damage to a creature or object. Objects picked up by an invisible target do not become invisible.
+
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
 === Jump
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a grasshopper's hind leg)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 You touch a creature. The creature's jump distance is tripled until the spell ends.
 
 === Levitate
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Strength saving throw is unaffected.
 
@@ -5570,15 +5460,12 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 
 
 === Light
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, M (a firefly or phosphorescent moss)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.
 
@@ -5586,15 +5473,12 @@ If you target an object held or worn by a hostile creature, that creature must s
 
 
 === Lightning Bolt
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (100-foot line)
-
 - _Components_: V, S, M (a bit of fur and a rod of amber, crystal, or glass)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 6d6 lightning damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw by 5 or more are shaken until the end of their next turn.
 
@@ -5603,43 +5487,34 @@ The lightning ignites flammable objects in the area that aren't being worn or ca
 
 
 === Longstrider
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a pinch of dirt)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 You touch a creature. The target's speed increases by 10 feet until the spell ends.
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 3 additional AET spent.
 
 === Mage Armor
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a piece of cured leather)
-
 - _Duration_: 8 hours
+- _Classes_: 
 
 You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 12 + its Dexterity modifier and the target can take the deflect action. The spell ends if the target dons armor or if you dismiss the spell as an action.
 
 
 === Mage Hand
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
 
@@ -5648,44 +5523,35 @@ You can use your action to control the hand. You can use the hand to manipulate 
 The hand can't attack, activate magic items, or carry more than 10 pounds.
 
 === Magic Missile
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 piercing damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several. Roll for each dart separately; each dart causes a different instance of damage for effects (such as concentration saving throw) that care about such things.
 
 *Overcast.* When you cast this spell using more than 2 AET, the spell creates one more dart for every 2 additional AET spent.
 
 === Magic Weapon
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 You touch a non-masterwork weapon. Until the spell ends, that weapon becomes masterwork for the duration, granting a bonus to damage equal to the wielder's proficiency bonus.
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional weapon for every 3 AET you spend.
 
 === Major Image
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a bit of fleece)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte's stench), or any effect that would impose any negative condition on a creature. An image of a reflective surface (such as a mirror) reflects only what the viewer would expect it to reflect, but cannot be used to focus light such as to ignite objects.
 
@@ -5696,30 +5562,24 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 
 === Mass Cure Wounds
-_9 AET_
-
+- _9 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
+
 *Overcast.* When you cast this spell using more than 9 AET, the healing increases by 1d8 for every 2 additional AET spent.
 
-
 === Meld into Stone
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: 8 hours
+- _Classes_: 
 
 You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by non-magical senses.
 
@@ -5729,30 +5589,24 @@ Minor physical damage to the stone doesn't harm you, but its partial destruction
 
 
 === Message
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: S, M (a short piece of copper wire)
-
 - _Duration_: 1 round
+- _Classes_: 
 
 You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.
 
 You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.
 
 === Minor Illusion
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: S, M (a bit of fleece)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.
 
@@ -5764,15 +5618,12 @@ If a creature uses its action to examine the sound or image, the creature can de
 
 
 === Mirror Image
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.
 
@@ -5782,15 +5633,12 @@ A creature is unaffected by this spell if it can't see, if it relies on senses o
 
 
 === Mislead
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell.
 
@@ -5800,29 +5648,23 @@ You can see through its eyes and hear through its ears as if you were located wh
 
 
 === Misty Step
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see. There must be a clear path between you and the target location (ie you can't teleport through transparent total cover such as a window).
 
 
 === Moonbeam
-_4 AET_
-
+- _4 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.
 
@@ -5835,15 +5677,12 @@ On each of your turns after you cast this spell, you can use an action to move t
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
 === Move Earth
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (an iron blade and a small bag containing a mixture of soils—clay, loam, and sand)
-
 - _Duration_: Concentration, up to 2 hours
+- _Classes_: 
 
 Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square's elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete.
 
@@ -5858,44 +5697,36 @@ Similarly, this effect doesn't directly affect plant growth. The moved earth car
 
 
 === Noxious Stench
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (10 ft radius)
 
 - _Components_: S, M (a drop of skunk musk or something similar)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 A burst of noxious fumes billows from you. All creatures other than yourself that have a sense of smell in the area must make a Constitution saving throw. On a failed saving throw, they take 4d8 poison damage and are staggered until the end of their next turn. On a success, they take half as much damage and are not staggered. Creatures with an enhanced sense of smell make the saving throw at disadvantage and are stunned instead of staggered on a failure.
 
 The scent lingers for 10 minutes or until dispersed by a brisk wind, but does not cause saving throws after the initial instantaneous effect. Creatures that have passed through the cloud retain some of the stench for 8 hours or until they thoroughly clean themselves and their gear. This makes most other creatures dislike them, but also foils any attempt to track them via non-magical scent for that period.
 
 === Pass without Trace
-_4 AET_
-
+- _4 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) treats a d20 result of less than 10 as a 10 on Dexterity (Stealth) checks and any attempt to track them via sight or sound is at disadvantage. Scent is unaffected.
 
 
 === Passwall
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a pinch of sesame seeds)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it.
 
@@ -5903,30 +5734,24 @@ When the opening disappears, any creatures or objects still in the passage creat
 
 
 === Phantasmal Killer
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make an Intelligence saving throw. On a failed save, the target takes 4d10 psychic damage and becomes shaken for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on an Intelligence saving throw, taking 4d10 psychic damage and becoming frightened as well if they were shaken before. On a successful save, the spell ends.
 
 *Overcast.* When you cast this spell using more than 8 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
 === Plant Growth
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 150 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 This spell channels vitality into plants within a specific area, causing them to grow rapidly
 
@@ -5935,30 +5760,25 @@ If you cast this spell using 1 action, choose a point within range. All normal p
 You can exclude one or more areas of any size within the spell's area from being affected.
 
 === Poison Spray
-_0 AET_
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (15 ft cone)
 
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You spray poison in a cone. All creatures in that cone must make a Constitution saving throw, taking 1d6 poison damage on a failure. The damage from this spell increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.
 
 
 
 === Polymorph
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a caterpillar cocoon)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Charisma saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.
 
@@ -5972,30 +5792,25 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 
 
 === Prayer of Healing
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 10 minutes
-
 - _Range_: 30 feet
-
 - _Components_: V
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
+
 *Overcast.* When you cast this spell and spend more than 3 AET, the healing increases by 1d8 for every AET above 3, up to a maximum of 13d8 + your spellcasting ability modifier.
 
 
 === Prestidigitation
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 10 feet
-
 - _Components_: V, S
-
 - _Duration_: Up to 1 hour
+- _Classes_: 
 
 This spell is a minor magical trick that novice spell-casters use for practice. You create one of the following magical effects within range:
 
@@ -6010,15 +5825,12 @@ If you cast this spell multiple times, you can have up to three of its non-insta
 
 
 === Produce Flame
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: 10 minutes
+- _Classes_: 
 
 A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.
 
@@ -6028,29 +5840,23 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 
 === Protection from Energy
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.
 
 
 === Protection from Otherworldly Influence
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (holy water or powdered silver and iron, which the spell consumes)
-
 - _Duration_: Concentration up to 10 minutes
+- _Classes_: 
 
 Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.
 
@@ -6058,30 +5864,24 @@ The protection grants several benefits. Creatures of those types have disadvanta
 
 
 === Protection from Poison
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.
 
 For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.
 
 === Ray of Enfeeblement
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d8 necrotic damage and deals only half damage with weapon attacks until the spell ends.
 
@@ -6089,15 +5889,12 @@ A black beam of enervating energy springs from your finger toward a creature wit
 
 
 === Ray of Frost
-=== cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
 
@@ -6105,15 +5902,12 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 
 === Reincarnate
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 hour
-
 - _Range_: Touch
-
 - _Components_: V, S, M (rare oils and unguents worth at least 1,000 gp, which the spell consumes)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body.
 
@@ -6121,7 +5915,7 @@ If the target's soul isn't free or willing to do so, the spell fails. The creatu
 
 The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The GM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the GM chooses a form.
 
-"=== d100*","*Lineag",
+#dndtab("", "d100","Lineage",
 "1-45","human",
 "46-55","dwarf",
 "56-65","ihmisi",
@@ -6129,34 +5923,29 @@ The magic fashions a new body for the creature to inhabit, which likely causes t
 "76-85","gwerin",
 "86-90","halfling",
 "91-95","dragonborn",
-"96-100","jazuu",
+"96-100","jazuu",)
+
 
 The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly. Its culture does not change.
 
 === Remove Curse
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 At your touch, all non-legendary curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.
 
 
 === Resilient Sphere
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.
 
@@ -6166,28 +5955,22 @@ The sphere is weightless and just large enough to contain the creature or object
 
 
 === Resistance
-=== Cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a miniature cloak)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends. Remember that no more than one bonus die can be used on any d20 roll.
 
 === Retribution
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: S (a pointed finger)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 One target you can see within range must make a Dexterity saving throw. On a failed save, the creature takes radiant damage equal to twice the difference between your maximum health and your current health (maximum 10). On a success, the creature takes half as much damage.
 
@@ -6198,28 +5981,22 @@ In either case, temporary hit points do not count as health (maximum or otherwis
 *Overcast.* When you cast this spell and spend more than 2 AET, the maximum damage dealt increases by 10 for every 2 AET you spend.
 
 === Revivify
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (diamonds worth 300 gp, which the spell consumes)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.
 
 === Sacred Flame
-=== Cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw and you do not need a clear path to the target.
 
@@ -6227,15 +6004,12 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 
 === Sanctuary
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: 30 feet
-
 - _Components_: V, S, M (a small silver mirror)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.
 
@@ -6243,15 +6017,12 @@ If the warded creature makes an attack, deals damage, or casts a spell that affe
 
 
 === Scorching Ray
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.
 
@@ -6261,29 +6032,23 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 
 === See Invisibility
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S, M (a pinch of talc and a small sprinkling of powdered silver)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Border Shadow. Ethereal creatures and objects appear ghostly and translucent. You ignore the invisible condition.
 
 
 === Shatter
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a chip of mica)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
 
@@ -6293,15 +6058,12 @@ A non-magical object that isn't being worn or carried also takes the damage if i
 
 
 === Shield
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: 10 minutes
+- _Classes_: 
 
 An invisible barrier of magical force appears and protects you. This barrier has 10 hit points. Whenever you would take damage and the barrier is active, the barrier takes the damage instead, reducing its hit points. If the barrier absorbs all the damage, you do not need to make Concentration saves if you are concentrating on a spell or ability. You take any damage in excess of the barrier's hit points, which provokes Concentration saves as normal. When the barrier is reduced to zero hit points, the spell ends. Because this barrier takes damage instead of you, it does not benefit from any resistances or immunities you may have. Any overflow damage is, however, affected.
 
@@ -6311,43 +6073,34 @@ In addition, you are immune to the magic-missile spell as long as the barrier is
 
 
 === Shield of Faith
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a small parchment with a bit of holy text written on it)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it the ability to use the deflect action without expending STA.
 
 
 === Shillelagh
-=== Cantri
-
+- _0 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes masterwork, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.
 
 
 === Shocking Grasp
-=== Cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor dominantly made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.
 
@@ -6355,29 +6108,23 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 
 === Silence
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
 
 
 === Silent Image
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a bit of fleece)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube (ie no more than 15 feet in any dimension). The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects. It reflects light as normal for the object created.
 
@@ -6387,15 +6134,12 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 
 === Sleep
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 90 feet
-
 - _Components_: V, S, M (a pinch of fine sand, rose petals, or a cricket)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 This spell sends creatures into a magical slumber. Up to 5 creatures within 20 feet of a point you choose within range must make a Constitution saving throw. Creatures who fail their saving throw fall unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.
 
@@ -6405,15 +6149,12 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 
 
 === Sleet Storm
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 150 feet
-
 - _Components_: V, S, M (a pinch of dust and a few drops of water)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.
 
@@ -6423,15 +6164,12 @@ If a creature is concentrating in the spell's area, the creature must make a suc
 
 
 === Slow
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a drop of molasses)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.
 
@@ -6443,30 +6181,25 @@ A creature affected by this spell makes another Wisdom saving throw at the end o
 
 
 === Spike Growth
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 150 feet
-
 - _Components_: V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 1d4 piercing damage for every 5 feet it travels, up to a total per round of 16d4.
 
 The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.
 
 === Spirit Guardians
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (15-foot radius)
 
 - _Components_: V, S, M (a holy symbol)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. Their appearance is up to you.
 
@@ -6476,15 +6209,12 @@ When you cast this spell, you can designate any number of creatures you can see 
 
 
 === Spiritual Weapon
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: 1 minute
+- _Classes_: 
 
 You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes bludgeoning, piercing, or slashing (your choice) damage equal to 1d10 + your spellcasting ability modifier.
 
@@ -6496,15 +6226,12 @@ The weapon can take whatever form you choose. The damage type should be appropri
 
 
 === Stinking Cloud
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 90 feet
-
 - _Components_: V, S, M (a rotten egg or several skunk cabbage leaves)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.
 
@@ -6514,43 +6241,34 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 
 
 === Stone Shape
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (soft clay, which must be worked into roughly the desired shape of the stone object)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.
 
 
 === Stoneskin
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (diamond dust worth 100 gp, which the spell consumes)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage, but their speed is reduced by 10 ft and they have disadvantage on Dexterity ability checks.
 
 
 === Suggestion
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)
-
 - _Duration_: Concentration, up to 8 hours
+- _Classes_: 
 
 You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable, as judged by the GM. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.
 
@@ -6561,15 +6279,13 @@ You can also specify conditions that will trigger a specific course of action du
 If you or any of your companions damage the target or any of its allies that it can see, the spell ends.
 
 === Sunbeam
-_14 AET_
-
+- _14 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (60-foot line)
 
 - _Components_: V, S, M (a magnifying glass)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A beam of brilliant sunlight flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 5d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.
 
@@ -6578,15 +6294,12 @@ You can create a new line of radiance as your action on any turn until the spell
 For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.
 
 === Telekinesis
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.
 
@@ -6602,15 +6315,12 @@ You can exert fine control on objects with your telekinetic grip, such as manipu
 
 
 === Thaumaturgy
-=== Cantri
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 30 feet
-
 - _Components_: V
-
 - _Duration_: Up to 1 minute
+- _Classes_: 
 
 You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:
 
@@ -6624,15 +6334,13 @@ You manifest a minor wonder, a sign of supernatural power, within range. You cre
 
 
 === Thunderwave
-_2 AET_
-
+- _2 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self (15-foot cube)
 
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 A wave of thunderous force sweeps out from your outstretched hands. Each creature in a 15-foot cube originating from one side of your space you must make a Strength saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
 
@@ -6642,42 +6350,33 @@ In addition, unsecured objects that are completely within the area of effect are
 
 
 === True Seeing
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Border Shadow, all out to a range of 120 feet.
 
 
 === True Strike
-_1 AET_
-
+- _1 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: 60 feet
-
 - _Components_: S
-
 - _Duration_: 1 round
+- _Classes_: 
 
 You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. 
 
 === Unbind
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 Choose one creature, object, or magical effect within range. Any spell or ability costing 5 AET or lower on the target ends. For each spell higher cost on the target, make a proficient ability check using your spellcasting ability. The DC equals 10 + half the spell's aether cost. On a successful check, the spell ends.
 
@@ -6686,30 +6385,24 @@ This spell can affect non-spell magical effects as well. The effective aether co
 *Overcast.* When you cast this spell using more than 5 AET, you gain +1 on the check for every 3 additional AET spent.
 
 === Vampiric Touch
-_4 AET_
-
+- _4 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Self
-
 - _Components_: V, S
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.
 
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d6 for every two additional AET spent.
 
 === Vicious Mockery
-_0 AET_
-
+- _0 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 ft
-
 - _Components_: V
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
 
@@ -6717,15 +6410,12 @@ This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level 
 
 
 === Wall of Fire
-_8 AET_
-
+- _8 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a small piece of phosphorus)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, but it must form in a straight line. The wall is opaque and lasts for the duration.
 
@@ -6737,15 +6427,12 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 fire d
 
 
 === Wall of Force
-_15 AET_
-
+- _15 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a pinch of powder made by crushing a clear gemstone)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel and cannot have any gaps within a panel, but you can choose the orientation of each panel separately. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).
 
@@ -6755,15 +6442,12 @@ Nothing can physically pass through the wall. It provides total cover but does n
 
 
 === Wall of Ice
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a small piece of quartz)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a vertical surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel along its edges. In any form, the wall is 1 foot thick and lasts for the duration.
 
@@ -6775,15 +6459,12 @@ The wall is an object that can be damaged and thus breached. It has AC equal to 
 
 
 === Wall of Stone
-_12 AET_
-
+- _12 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a small block of granite)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 A non-magical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.
 
@@ -6799,15 +6480,12 @@ The wall disappears when the spell ends.
 
 
 === Wall of Thorns
-_7 AET_
-
+- _7 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a handful of thorns)
-
 - _Duration_: Concentration, up to 10 minutes
+- _Classes_: 
 
 You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight and provides 3/4 cover.
 
@@ -6819,15 +6497,12 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 
 
 === Warding Bond
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: Touch
-
 - _Components_: V, S, M (a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration)
-
 - _Duration_: 1 hour
+- _Classes_: 
 
 This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage. The resistance to damage on the target is factored in first, then any resistance or immunity you have applies separately to the reduced damage.
 
@@ -6835,15 +6510,12 @@ The spell ends if you drop to 0 hit points or if you and the target become separ
 
 
 === Web
-_3 AET_
-
+- _3 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 60 feet
-
 - _Components_: V, S, M (a bit of spiderweb)
-
 - _Duration_: Concentration, up to 1 hour
+- _Classes_: 
 
 You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20 foot cube from that point for the duration unless conjured in mid-air without support, in which case it tangles around anything in the area and falls to the ground. The webs are difficult terrain and lightly obscure their area.
 
@@ -6856,15 +6528,12 @@ A creature restrained by the webs can use its action to make a Strength check ag
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
 
 === Wind Wall
-_5 AET_
-
+- _5 AET_
 - _Cast Time_: 1 action
-
 - _Range_: 120 feet
-
 - _Components_: V, S, M (a tiny fan and a feather of exotic origin)
-
 - _Duration_: Concentration, up to 1 minute
+- _Classes_: 
 
 A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
 
@@ -6874,15 +6543,12 @@ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flyin
 
 
 === Yoink
-_1 AET_
-
+- _1 AET_
 - _Cast Time_: 1 bonus action
-
 - _Range_: 90 ft
-
 - _Components_: V, S, M (a tiny replica grappling hook and thread)
-
 - _Duration_: Instantaneous
+- _Classes_: 
 
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so at advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.
 

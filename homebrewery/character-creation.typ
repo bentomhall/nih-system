@@ -3833,7 +3833,7 @@ The Priest Spell List table contains a short summary of the spells available to 
 - light
 - message
 - resistance
-- sacred flame
+- searing light
 - shillelagh
 - thaumaturgy
 	
@@ -3859,7 +3859,6 @@ The Priest Spell List table contains a short summary of the spells available to 
 - retribution
 - sanctuary
 - shield of faith
-- spiritual weapon
 	
 === 3 Aether
 	
@@ -3876,6 +3875,7 @@ The Priest Spell List table contains a short summary of the spells available to 
 - protection from poison
 - see invisibility
 - silence
+- spiritual weapon
 - suggestion
 - warding bond
 	

@@ -1,0 +1,202 @@
+\clearpage
+\begin{multicols}{2}
+\section{Oozes}
+	\raggedcolumns
+It's not clear where the first oozes came from. Ooze-like creatures can be found on the earth-aspected elemental planes (especially where it overlaps with the planes of water), but those are much more refined and less mindless than your regular ooze. Some believe that oozes were created during the early ages to act as living cleaning agents or to dissolve waste. Most feared among the oozes are the nefarious boing-boings---oozes that \textit{bounce} with a distinctive sound rather than protoplasmically slither across the ground. Boing-boings also have markings that look like grinning faces. Thankfully, those types are quite rare.
+
+As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have only very simple nervous systems and blindly respond to stimuli (mainly "edible food" and "ouch"). Food is all they seek for.
+
+\subsection{Protoplasmic oozes}
+\begin{DndMonster}{Gelatinous Cube}
+	\DndMonsterType{Large ooze, single-minded}
+	\DndMonsterBasics[armor-class={6}, hit-points={84 (8d10 + 40)}, speed={15 ft.}]
+	\MonsterStats{+2}{-4}{+5}{-5}{-2}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={3:2}]
+	\DndMonsterAction{Ooze Cube} The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube's Engulf and has disadvantage on the saving throw. Creatures inside the cube can be seen but have total cover.
+	
+	A creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage. The cube can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.
+	
+	\DndMonsterAction{Transparent} Even when the cube is in plain sight, it takes a successful DC 15 Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is surprised by the cube.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Pseudopod,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{3d6},
+		dmg-type=acid
+	]
+	\DndMonsterAction{Engulf}
+	The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.
+	
+	An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
+	\end{DndMonster}
+
+\begin{DndMonster}{Ochre Jelly}
+	\DndMonsterType{Large ooze, single-minded}
+	\DndMonsterBasics[armor-class={8}, hit-points={45 (6d10 + 12)}, speed={10 ft., climb 10 ft.}]
+	\MonsterStats{+2}{-2}{+2}{-4}{-2}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={lightning, slashing}, damage-resistances={acid}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={2:1}]
+	\DndMonsterAction{Amorphous} The jelly can move through a space as narrow as 1 inch wide without squeezing.
+	
+	\DndMonsterAction{Spider Climb} The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+	
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Pseudopod,
+		distance=melee,
+		type=weapon,
+		mod=+4,
+		reach=5,
+		dmg=\DndDice{2d6 + 2},
+		dmg-type=bludgeoning,
+		extra={ plus 3 (1d6) acid damage.}
+	]
+	\DndMonsterAction{Split}
+	When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.
+\end{DndMonster}
+
+\begin{DndMonster}{Gray Ooze}
+	\DndMonsterType{Medium ooze, single-minded}
+	\DndMonsterBasics[armor-class={9 (natural armor)}, hit-points={22 (3d8 + 9)}, speed={10 ft., climb 10 ft.}]
+	\MonsterStats{+1}{-2}{+3}{-5}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={Stealth +2}, damage-immunities={}, damage-resistances={acid, cold, fire}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:1/2}]
+	\DndMonsterAction{Amorphous} The ooze can move through a space as narrow as 1 inch wide without squeezing.
+
+	\DndMonsterAction{Corrode Metal} Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, attacks with that weapon have disadvantage until repaired as part of a long rest. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage. Repair requires proficiency with and access to smith's tools.
+	
+	The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.
+
+	\DndMonsterAction{False Appearance} While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Pseudopod,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=5,
+		dmg=\DndDice{1d6 + 1},
+		dmg-type=bludgeoning,
+		extra={ plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with and access to smith's tools.}
+	]
+\end{DndMonster}
+
+\begin{DndMonster}{Black Pudding}
+	\DndMonsterType{Large ooze, single-minded}
+	\DndMonsterBasics[armor-class={9 (natural armor)}, hit-points={85 (10d10 + 30)}, speed={20 ft., climb 20 ft.}]
+	\MonsterStats{+3}{-3}{+3}{-5}{-2}{-5}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={acid, cold, lightning, slashing}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={3:2}]
+	\DndMonsterAction{Amorphous} The pudding can move through a space as narrow as 1 inch wide without squeezing.
+
+	\DndMonsterAction{Corrosive Form} A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, attacks with the weapon have disadvantage until repaired during a long rest. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage.
+
+	The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
+
+	\DndMonsterAction{Spider Climb} The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Pseudopod,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=5,
+		dmg=\DndDice{1d6 + 3},
+		dmg-type=bludgeoning,
+		extra={ plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved; attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool.}
+	]
+	\DndMonsterAction{Split}
+	When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.
+\end{DndMonster}
+
+\subsection{Boing-Boings}
+
+\begin{DndMonster}{Bludger Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={12 (natural armor)}, hit-points={9 (2d6 + 2)}, speed={30 ft.}]
+	\MonsterStats{+1}{+1}{+1}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1/4:1/4}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced, audible for 30 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+3,
+		reach=+5,
+		dmg=\DndDice{1d6+1},
+		dmg-type=bludgeoning
+	]
+\end{DndMonster}
+
+\subparagraph*{Heal Slimes}
+Heal slimes are a tragic creature, one that only exists to heal others at the cost of its own life. The goo left behind when they die can be used to create potions of healing that always heal the maximum possible for that grade. Creating a maximized regular potion of healing requires the goo from a single heal slime; each step up requires an additional heal slime's worth of goo.
+\begin{DndMonster}{Heal Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={11}, hit-points={36 (8d6 + 8)}, speed={0ft., fly 20 ft (hover).}]
+	\MonsterStats{-1}{+1}{+1}{-5}{-3}{0}
+	\DndMonsterDetails[saving-throws={}, skills={stealth +3}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={piercing}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={0:1/8}]
+	\DndMonsterAction{Floating} Unlike other boing-boings, heal slimes float several feet off the ground with dangling, jelly-fish-like tendrils.
+	\DndMonsterAction{Indiscriminate} Heal slimes will use their transfer health action on the closest creature that is lacking hit points other than another heal slime, preferring bloodied ones if two are equally close. They do not distinguish friend from foe.
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Transfer Health} One creature within 5 feet of the slime regains 6 hit points and the slime loses 6 hit points. It makes a small, pained moan when it does so.
+\end{DndMonster}
+
+\begin{DndMonster}{Spitter Slime}
+	\DndMonsterType{Small ooze, single-minded}
+	\DndMonsterBasics[armor-class={14 (natural armor)}, hit-points={18 (4d6 + 4)}, speed={30 ft.}]
+	\MonsterStats{-1}{+2}{+1}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={bludgeoning}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:1/2}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced, audible for 30 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack} The spitter slime makes two spit rock attacks.
+	
+	\DndMonsterAttack[
+		name=Spit Rock,
+		distance=ranged,
+		type=weapon,
+		mod=+4,
+		range=60/120,
+		dmg=\DndDice{1d4+2},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+1,
+		reach=+5,
+		dmg=\DndDice{1d6-1},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterSection{Reactions}
+	\DndMonsterAction{Reflexive Evasion} As a reaction when a creature ends its movement within 5 feet of the spitter, the spitter moves up to its speed without provoking opportunity attacks.
+\end{DndMonster}
+
+\begin{DndMonster}{Steel Slime}
+	\DndMonsterType{Medium ooze, single-minded, guardian}
+	\DndMonsterBasics[armor-class={16 (natural armor)}, hit-points={45 (6d6 + 24)}, speed={30 ft.}]
+	\MonsterStats{+3}{+1}{+4}{-4}{-2}{-4}
+	\DndMonsterDetails[saving-throws={}, skills={}, damage-immunities={}, damage-resistances={}, damage-vulnerabilities={}, condition-immunities={blinded, charmed, deafened, exhaustion, frightened, prone}, senses={blindsight 60 ft. (blind beyond this radius), passive Perception 8}, languages={—}, challenge={1:2}]
+	\DndMonsterAction{Bouncy} Boing-boings move by bouncing. They always count as having a running start when jumping and can jump in any direction up to their movement speed, unrestricted by their strength score. They are immune to damage from falling.
+	\DndMonsterAction{Restless} Boing-boings are unable to stay at rest---even when not moving from place to place they vibrate, making a sound like a rubber ball being bounced. Steel slimes are audible for 60 ft.
+	\DndMonsterSection{Actions}
+	\DndMonsterAttack[
+		name=Bludgeon,
+		distance=melee,
+		type=weapon,
+		mod=+5,
+		reach=+5,
+		dmg=\DndDice{2d6+3},
+		dmg-type=bludgeoning
+	]
+	\DndMonsterSection{Reactions}
+	\DndMonsterAction{Harden} As a reaction when first bloodied, the steel slime hardens its body. Its speed is reduced by 10 feet and it gains a damage threshold of 10. Adamantine weapons, critical hits, cold, or fire damage bypass this damage threshold. This lasts until it is no longer bloodied.
+\end{DndMonster}
+
+\end{multicols}

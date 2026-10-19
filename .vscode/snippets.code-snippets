@@ -15,35 +15,12 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"HTML Spell Header": {
-		"scope": "html",
-		"prefix": "spell",
+	"MonsterAttack": {
+		"scope": "typst",
+		"prefix": "monster-attack",
 		"body": [
-			"<div class=\"spell-card\" id=\"$0\">",
-			"  <div class=\"spell-header\">",
-			"    <div class=\"cost\">${1:cost}</div>",
-			"    <div class=\"components\">${2:components}</div>",
-			"    <div class=\"spell-name\">${3:name}</div>",
-			"    <div class=\"cast-time\">${4:cast-time}</div>",
-			"    <div class=\"targets\">${5:area}/${6:range}</div>",
-			"    <div class=\"duration\">${7:duration}</div>",
-			"  </div>"
-			"  <p>$8</p>",
-			"	 <p><b>Overcast</b>$9</p>",
-			"</div>"
-		],
-		"description": "A spell card"
-	},
-	"MonsterFluff": {
-		"scope": "html",
-		"prefix": "monster-fluff",
-		"body": [
-			"<h2>$1</h2>",
-			"<p> </p>",
-			"<h3>Habitat and Tactics</h3>",
-			"<p><b>Commonality:</b> </p>",
-			"<p><b>Habitat:</b> </p>",
-			"<p><b>Tactics:</b> </p>",
+			"(\"$1\", [Melee Attack: $2 to hit, reach $3 ft, one target. _Hit:_ $4 $5 damage $6]),",
+			"$0"
 		]
 	}
 }

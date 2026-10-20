@@ -1,70 +1,97 @@
-import os
+"""Formatting for \\DndMonsterAttack blocks.
 
-class Attack:
-  def __init__(self):
-    self.name = ''
-    self.distance = ''
-    self.reach = ''
-    self.dmg = ''
-    self.dmg_type = ''
-    self.mod = ''
-    self.extra = ''
-    self.finished = False
-    self.started = False
-    pass
+Used by convert-stat-blocks.py, which hands over the parsed key=value options.
+Can also be run directly on a .typ file to convert any raw attack blocks left in it:
 
-  def consume_line(self, line: str) -> bool:
-    stripped = line.strip()
-    if self.is_attack_block(stripped) and not self.finished:
-      self.started = True
-      return True
-    if stripped == ']' and self.started:
-      self.finished = True
-      return True
-    parsed = None
-    for key in ['name', 'distance', 'mod', 'reach', 'range', 'dmg', 'dmg_type', 'extra', 'type']:
-      parsed = self.parse(key, stripped)
-      if parsed is not None:
-        self.__dict__[parsed[0]] = parsed[1]
-        return True
-    return False
-    
-  def is_attack_block(self, line:str) -> bool:
-    return line.startswith(r"\DndMonsterAttack[")
+  python3 convert-attacks.py celestials.typ
+"""
+import re
+import sys
 
-  def parse(self, key: str, stripped:str) -> tuple[str, str] | None:
-    parts = stripped.split('=')
-    if len(parts) != 2:
-      return None
-    if parts[0] == key.replace('_', '-'):
-      return (key, parts[1].strip(r',{}$'))
-    return None
+diceRe = re.compile(r"\\DndDice\{(.*?)\}")
 
-  def __str__(self):
-    if self.distance == 'melee':
-      return f"(\"{self.name}\", [Melee Attack: {self.mod} to hit, reach {self.reach}, one target. _Hit:_ {self.dmg} {self.dmg_type}{self.extra if len(self.extra) != 0 else '.'}]),"
-    elif self.distance == 'ranged':
-      return f"(\"{self.name}\", [Ranged Attack: {self.mod} to hit, range {self.range}, one target. _Hit:_ {self.dmg} {self.dmg_type}{self.extra if len(self.extra) != 0 else '.'}]),"
-    else:
-      return f"(\"{self.name}\", [Spell Attack: {self.mod} to hit, range {self.reach}, one target. _Hit:_ {self.dmg} {self.dmg_type}{self.extra if len(self.extra) != 0 else '.'}]),"
 
-lines = []
-with open('beasts.typ', 'r', encoding='utf-8') as ifile:
-  lines = ifile.readlines()
+def extractDiceValue(val: str) -> str:
+  return diceRe.sub(lambda m: m.group(1), val).strip().strip(",").strip()
 
-output = []
-current = None
-for line in lines:
-  if current is None:
-    current = Attack()
-  consumed = current.consume_line(line)
-  if consumed and not current.finished:
-    continue
-  elif consumed and current.finished:
-    output.append(str(current)+'\n')
-    current = None
+
+def unit(distance: str) -> str:
+  """'5' -> '5 ft.'; leaves '20 ft.' or '30/120 ft' alone."""
+  distance = distance.strip()
+  if re.fullmatch(r"[\d/]+", distance):
+    return distance + " ft."
+  return distance
+
+
+def format_attack(opts: dict) -> tuple[str, str]:
+  """Returns (name, typst body) for an attack described by its option dict."""
+  get = lambda key: extractDiceValue(opts.get(key, ''))
+  distance = get('distance').lower()
+  kind = {'melee': 'Melee', 'ranged': 'Ranged', 'both': 'Melee or Ranged'}.get(distance, 'Melee')
+  if get('type').lower() == 'spell':
+    kind += ' Spell'
+
+  reach, rng = get('reach'), get('range')
+  if distance == 'ranged':
+    where = f"range {unit(rng or reach)}"
+  elif distance == 'both' and reach and rng:
+    where = f"reach {unit(reach)} or range {unit(rng)}"
+  elif reach:
+    where = f"reach {unit(reach)}"
   else:
-    output.append(line)
+    where = f"range {unit(rng)}"
 
-with open('beasts-2.typ', 'w', encoding='utf-8') as ofile:
-  ofile.writelines(output)
+  hit = ' '.join(p for p in (get('dmg'), get('dmg-type'), 'damage') if p)
+  if get('plus-dmg'):
+    hit += f" plus {get('plus-dmg')} {get('plus-dmg-type')} damage".rstrip()
+  extra = opts.get('extra', '').strip().strip('{}')
+  if extra and extra != '.':
+    hit += ('' if extra[0] in '.,;' else ' ') + extra.strip()
+  if not hit.endswith('.'):
+    hit += '.'
+
+  body = f"{kind} Attack: {get('mod')} to hit, {where}, one target. _Hit:_ {hit}"
+  return get('name'), body
+
+
+# --- standalone mode: convert raw \DndMonsterAttack[...] blocks inside a .typ file ---
+
+def parse_options(text: str) -> dict:
+  """Parses 'key=value, key={value, with commas}' respecting brace nesting."""
+  opts, depth, current = {}, 0, ''
+  parts = []
+  for ch in text:
+    if ch == '{':
+      depth += 1
+    elif ch == '}':
+      depth -= 1
+    if ch == ',' and depth == 0:
+      parts.append(current)
+      current = ''
+    else:
+      current += ch
+  parts.append(current)
+  for part in parts:
+    if '=' not in part:
+      continue
+    key, value = part.split('=', 1)
+    value = value.strip()
+    if value.startswith('{') and value.endswith('}'):
+      value = value[1:-1]
+    opts[key.strip()] = value.strip()
+  return opts
+
+
+attackBlockRe = re.compile(r"\\DndMonsterAttack\[(.*?)\n\s*\]", re.S)
+
+if __name__ == '__main__':
+  filename = sys.argv[1]
+  with open(filename, 'r', encoding='utf-8') as ifile:
+    text = ifile.read()
+
+  def replace(match):
+    name, body = format_attack(parse_options(match.group(1)))
+    return f'("{name}", [{body}]),'
+
+  with open(filename, 'w', encoding='utf-8') as ofile:
+    ofile.write(attackBlockRe.sub(replace, text))

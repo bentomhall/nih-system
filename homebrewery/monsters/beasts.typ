@@ -11,7 +11,7 @@ Most normal gorillas, chimpanzees, and other larger apes are best represented by
 	ac: [12],
 	hp: [19 (3d8 + 6)],
 	speed: [30 ft., climb 30 ft.],
-	stats: [STR: +3, DEX: +2, CON: +2, INT: -2, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Athletics +5, Perception +3],
@@ -23,6 +23,7 @@ Most normal gorillas, chimpanzees, and other larger apes are best represented by
 		Languages: [---],
 		Challenge: [1:1/4],
 ),
+traits: (),
 actions: (
 	("Multiattack", [The ape makes two fist attacks.]),
 	("Fist", [Melee Attack: +5 to hit, reach 5 ft, one target. _Hit:_ 1d6 + 3 bludgeoning damage.]),
@@ -36,7 +37,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	ac: [12],
 	hp: [3 (1d6)],
 	speed: [30 ft., climb 30 ft.],
-	stats: [STR: -1, DEX: +2, CON: +0, INT: -3, WIS: +1, CHA: -2],
+	stats: (STR: [-1], DEX: [+2], CON: [+0], INT: [-3], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -61,7 +62,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	ac: [11 (natural armor)],
 	hp: [19 (3d8 + 6)],
 	speed: [40 ft., climb 30 ft.],
-	stats: [STR: +2, DEX: +0, CON: +2, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+2], DEX: [+0], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -88,7 +89,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	ac: [12],
 	hp: [7 (2d6)],
 	speed: [10 ft., fly 60 ft.],
-	stats: [STR: -2, DEX: +2, CON: +0, INT: -4, WIS: +2, CHA: -3],
+	stats: (STR: [-2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+2], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +4],
@@ -113,7 +114,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	ac: [11 (natural armor)],
 	hp: [11 (2d8 + 2)],
 	speed: [40 ft.],
-	stats: [STR: +1, DEX: +0, CON: +1, INT: -4, WIS: -1, CHA: -3],
+	stats: (STR: [+1], DEX: [+0], CON: [+1], INT: [-4], WIS: [-1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -140,7 +141,7 @@ traits: (
 	ac: [12 (natural armor)],
 	hp: [34 (4d10 + 12)],
 	speed: [40 ft., climb 30 ft.],
-	stats: [STR: +3, DEX: +1, CON: +3, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+1], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -167,7 +168,7 @@ traits: (
 	ac: [10],
 	hp: [15 (2d10 + 4)],
 	speed: [50 ft.],
-	stats: [STR: +3, DEX: 0, CON: +2, INT: -4, WIS: -1, CHA: -3],
+	stats: (STR: [+3], DEX: [0], CON: [+2], INT: [-4], WIS: [-1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -179,6 +180,7 @@ traits: (
 		Languages: [---],
 		Challenge: [1/8:1/8],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +3 to hit, reach 5, one target. _Hit:_ 1d4 bludgeoning.]),)
 ))
@@ -188,7 +190,7 @@ traits: (
 	ac: [12],
 	hp: [13 (2d10 + 2)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: +2, DEX: +2, CON: +1, INT: -5, WIS: +0, CHA: -4],
+	stats: (STR: [+2], DEX: [+2], CON: [+1], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -200,6 +202,7 @@ traits: (
 		Languages: [---],
 		Challenge: [1/2:1/8],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d6 + 2 piercing.]),
 ("Constrict", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d8 + 2 bludgeoning and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.]),)
@@ -210,7 +213,7 @@ traits: (
 	ac: [12 (natural armor)],
 	hp: [19 (3d10 + 3)],
 	speed: [20 ft., swim 30 ft.],
-	stats: [STR: +2, DEX: +0, CON: +1, INT: -4, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Stealth +2],
@@ -235,7 +238,7 @@ traits: (
 	ac: [14 (natural armor)],
 	hp: [37 (5d10 + 10)],
 	speed: [50 ft.],
-	stats: [STR: +3, DEX: +2, CON: +2, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +4],
@@ -262,7 +265,7 @@ traits: (
 	ac: [10],
 	hp: [6 (1d10 + 1)],
 	speed: [40 ft.],
-	stats: [STR: +4, DEX: +0, CON: +1, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+4], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -274,6 +277,7 @@ traits: (
 		Languages: [---],
 		Challenge: [1:0],
 ),
+	traits: (),
 	actions: (
 ("Hooves", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 2d4 + 4 bludgeoning.]),
 )))
@@ -283,7 +287,7 @@ traits: (
 	ac: [13 (natural armor)],
 	hp: [76 (8d12 + 24)],
 	speed: [40 ft.],
-	stats: [STR: +6, DEX: -1, CON: +3, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+6], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -309,7 +313,7 @@ traits: (
 	ac: [11],
 	hp: [13 (2d10 + 2)],
 	speed: [50 ft.],
-	stats: [STR: +3, DEX: +1, CON: +1, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -335,7 +339,7 @@ traits: (
 	ac: [13],
 	hp: [7 (3d4)],
 	speed: [30 ft., fly 60 ft., swim 30 ft],
-	stats: [STR: -3, DEX: +3, CON: +0, INT: -4, WIS: +1, CHA: -3],
+	stats: (STR: [-3], DEX: [+3], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -360,7 +364,7 @@ traits: (
 	ac: [14 (natural armor)],
 	hp: [126 (12d12 + 48)],
 	speed: [40 ft., climb 40 ft.],
-	stats: [STR: +6, DEX: +2, CON: +4, INT: -2, WIS: +1, CHA: -2],
+	stats: (STR: [+6], DEX: [+2], CON: [+4], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Athletics +9, Perception +4],
@@ -372,6 +376,7 @@ traits: (
 		Languages: [---],
 		Challenge: [7:7],
 ),
+	traits: (),
 	actions: (
 ("Multiattack", [The ape makes two fist attacks.]),
 ("Fist", [Melee Attack: +7 to hit, reach 10, one target. _Hit:_ 3d10 + 6 bludgeoning.]),
@@ -383,7 +388,7 @@ traits: (
 	ac: [11],
 	hp: [13 (2d8 + 4)],
 	speed: [30 ft., burrow 10 ft.],
-	stats: [STR: +1, DEX: +1, CON: +2, INT: -4, WIS: +1, CHA: -3],
+	stats: (STR: [+1], DEX: [+1], CON: [+2], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -410,7 +415,7 @@ traits: (
 	ac: [13],
 	hp: [22 (4d10)],
 	speed: [10 ft., fly 60 ft.],
-	stats: [STR: +2, DEX: +3, CON: +0, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+2], DEX: [+3], CON: [+0], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -437,7 +442,7 @@ traits: (
 	ac: [12 (natural armor)],
 	hp: [42 (5d10 + 15)],
 	speed: [40 ft.],
-	stats: [STR: +3, DEX: +0, CON: +3, INT: -4, WIS: -2, CHA: -3],
+	stats: (STR: [+3], DEX: [+0], CON: [+3], INT: [-4], WIS: [-2], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -464,7 +469,7 @@ traits: (
 	ac: [13 (natural armor)],
 	hp: [18 (4d6 + 4)],
 	speed: [30 ft., climb 30 ft.],
-	stats: [STR: -3, DEX: +2, CON: +1, INT: -5, WIS: -2, CHA: -4],
+	stats: (STR: [-3], DEX: [+2], CON: [+1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -476,6 +481,7 @@ traits: (
 		Languages: [---],
 		Challenge: [1:1/4],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d4 + 2 piercing and the target must succeed on a DC 11 Constitution saving throw or take 7 (2d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.]),
 )))
@@ -485,7 +491,7 @@ traits: (
 	ac: [12],
 	hp: [60 (8d12 + 8)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: +4, DEX: +2, CON: +1, INT: -5, WIS: +0, CHA: -4],
+	stats: (STR: [+4], DEX: [+2], CON: [+1], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +2],
@@ -497,6 +503,7 @@ traits: (
 		Languages: [---],
 		Challenge: [2:2],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +5 to hit, reach 10, one target. _Hit:_ 2d6 + 4 piercing.]),
 ("Constrict", [Melee Attack: +5 to hit, reach 5, one target. _Hit:_ 2d10 + 4 bludgeoning and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.]),
@@ -507,7 +514,7 @@ traits: (
 	ac: [15 (natural armor)],
 	hp: [21 (5d8)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: +2, DEX: +2, CON: +0, INT: -5, WIS: -1, CHA: -4],
+	stats: (STR: [+2], DEX: [+2], CON: [+0], INT: [-5], WIS: [-1], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Stealth +4],
@@ -532,7 +539,7 @@ traits: (
 	ac: [14 (natural armor)],
 	hp: [85 (9d12 + 27)],
 	speed: [30 ft., swim 50 ft.],
-	stats: [STR: +4, DEX: -1, CON: +3, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+4], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -559,7 +566,7 @@ traits: (
 	ac: [13],
 	hp: [45 (7d10 + 7)],
 	speed: [10 ft., fly 80 ft.],
-	stats: [STR: +3, DEX: +3, CON: +1, INT: -1, WIS: +2, CHA: +0],
+	stats: (STR: [+3], DEX: [+3], CON: [+1], INT: [-1], WIS: [+2], CHA: [+0]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +4],
@@ -586,7 +593,7 @@ traits: (
 	ac: [13 (natural armor)],
 	hp: [8 (2d6 + 2)],
 	speed: [30 ft.],
-	stats: [STR: -1, DEX: +0, CON: +1, INT: -5, WIS: -2, CHA: -4],
+	stats: (STR: [-1], DEX: [+0], CON: [+1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -611,7 +618,7 @@ traits: (
 	ac: [11],
 	hp: [18 (4d8)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: +1, DEX: +1, CON: +0, INT: -4, WIS: +0, CHA: -4],
+	stats: (STR: [+1], DEX: [+1], CON: [+0], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +2, Stealth +3],
@@ -642,7 +649,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [11 (natural armor)],
 	hp: [19 (3d10 + 3)],
 	speed: [40 ft.],
-	stats: [STR: +3, DEX: +0, CON: +1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+0], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -669,7 +676,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [45 (6d10 + 12)],
 	speed: [50 ft.],
-	stats: [STR: +3, DEX: +2, CON: +2, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -694,7 +701,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12 (natural armor)],
 	hp: [19 (3d10 + 3)],
 	speed: [30 ft., climb 30 ft.],
-	stats: [STR: +2, DEX: +1, CON: +1, INT: -4, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -706,6 +713,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Languages: [---],
 		Challenge: [1/2:1/4],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d8 + 2 piercing.]),
 )))
@@ -715,7 +723,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [52 (8d10 + 8)],
 	speed: [10 ft., swim 60 ft.],
-	stats: [STR: +3, DEX: +2, CON: +1, INT: -3, WIS: +0, CHA: -3],
+	stats: (STR: [+3], DEX: [+2], CON: [+1], INT: [-3], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +5],
@@ -745,7 +753,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [19 (3d10 + 3)],
 	speed: [5 ft., fly 60 ft.],
-	stats: [STR: +1, DEX: +2, CON: +1, INT: -1, WIS: +1, CHA: +0],
+	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-1], WIS: [+1], CHA: [+0]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +5, Stealth +4],
@@ -772,7 +780,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [13],
 	hp: [22 (4d8 + 4)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: +0, DEX: +3, CON: +1, INT: -4, WIS: +0, CHA: -4],
+	stats: (STR: [+0], DEX: [+3], CON: [+1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +2],
@@ -784,6 +792,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Languages: [---],
 		Challenge: [2:1/2],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +5 to hit, reach 10, one target. _Hit:_ 1d4 + 3 piercing and the target must make a DC 13 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.]),
 )))
@@ -793,7 +802,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [7 (2d6)],
 	speed: [30 ft.],
-	stats: [STR: -2, DEX: +2, CON: +0, INT: -4, WIS: +0, CHA: -3],
+	stats: (STR: [-2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -820,7 +829,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [15 (natural armor)],
 	hp: [52 (7d10 + 14)],
 	speed: [40 ft.],
-	stats: [STR: +2, DEX: +1, CON: +2, INT: -5, WIS: -1, CHA: -4],
+	stats: (STR: [+2], DEX: [+1], CON: [+2], INT: [-5], WIS: [-1], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -832,6 +841,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Languages: [---],
 		Challenge: [4:3],
 ),
+	traits: (),
 	actions: (
 ("Multiattack", [The scorpion makes three attacks: two with its claws and one with its sting.]),
 ("Claw", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d8 + 2 bludgeoning and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.]),
@@ -843,7 +853,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [13 (natural armor)],
 	hp: [16 (3d10)],
 	speed: [0 ft., swim 40 ft.],
-	stats: [STR: +1, DEX: +2, CON: +0, INT: -4, WIS: +1, CHA: -3],
+	stats: (STR: [+1], DEX: [+2], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -870,7 +880,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [14 (natural armor)],
 	hp: [126 (11d12 + 55)],
 	speed: [0 ft., swim 50 ft.],
-	stats: [STR: +4, DEX: +0, CON: +5, INT: -5, WIS: +0, CHA: -3],
+	stats: (STR: [+4], DEX: [+0], CON: [+5], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -900,7 +910,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [13],
 	hp: [26 (4d10 + 4)],
 	speed: [30 ft., climb 30 ft.],
-	stats: [STR: +2, DEX: +3, CON: +1, INT: -4, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+3], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Stealth +7],
@@ -930,7 +940,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12 (natural armor)],
 	hp: [39 (6d10 + 6)],
 	speed: [20 ft., swim 40 ft.],
-	stats: [STR: +3, DEX: +1, CON: +1, INT: -4, WIS: +0, CHA: -4],
+	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -959,7 +969,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [45 (6d10 + 12)],
 	speed: [10 ft., fly 60 ft.],
-	stats: [STR: +2, DEX: +2, CON: +2, INT: -2, WIS: +1, CHA: -2],
+	stats: (STR: [+2], DEX: [+2], CON: [+2], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -988,7 +998,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [18 (4d8)],
 	speed: [10 ft., fly 50 ft.],
-	stats: [STR: +0, DEX: +2, CON: +0, INT: -5, WIS: +0, CHA: -4],
+	stats: (STR: [+0], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1000,6 +1010,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Languages: [---],
 		Challenge: [1:1/4],
 ),
+	traits: (),
 	actions: (
 ("Sting", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d6 + 2 piercing and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.]),
 )))
@@ -1009,7 +1020,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [13],
 	hp: [9 (2d8)],
 	speed: [40 ft.],
-	stats: [STR: +0, DEX: +3, CON: +0, INT: -3, WIS: +1, CHA: -3],
+	stats: (STR: [+0], DEX: [+3], CON: [+0], INT: [-3], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +5],
@@ -1034,7 +1045,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	ac: [12],
 	hp: [16 (2d8 + 3)],
 	speed: [40 ft., climb 40 ft.],
-	stats: [STR: +1, DEX: +2, CON: +1, INT: -4, WIS: +1, CHA: -3],
+	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
@@ -1064,7 +1075,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [11],
 	hp: [31 (5d10 + 5)],
 	speed: [50 ft.],
-	stats: [STR: +2, DEX: +1, CON: +1, INT: -4, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1076,6 +1087,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 		Languages: [---],
 		Challenge: [1:1/2],
 ),
+	traits: (),
 	actions: (
 ("Multiattack", [The horsebird makes a kick attack. If it knocks the target prone, it makes an additional beak attack against that target. If the target was already prone, it uses its beak once.]),
 ("Beak", [Melee Attack: +2 to hit, reach 5, one target. _Hit:_ 2d8 + 2 piercing.]),
@@ -1088,7 +1100,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12 (natural armor)],
 	hp: [45 (6d10 + 12)],
 	speed: [0 ft., swim 40 ft.],
-	stats: [STR: +2, DEX: +1, CON: +2, INT: -5, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+1], CON: [+2], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +2],
@@ -1115,7 +1127,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [13 (natural armor)],
 	hp: [90 (12d12 + 12)],
 	speed: [0 ft., swim 60 ft.],
-	stats: [STR: +4, DEX: +0, CON: +1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+4], DEX: [+0], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -1144,7 +1156,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [26 (4d10 + 4)],
 	speed: [50 ft.],
-	stats: [STR: +3, DEX: +2, CON: +1, INT: -4, WIS: +1, CHA: -1],
+	stats: (STR: [+3], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
@@ -1176,7 +1188,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [14 (natural armor)],
 	hp: [126 (11d12 + 55)],
 	speed: [40 ft.],
-	stats: [STR: +7, DEX: -1, CON: +5, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+7], DEX: [-1], CON: [+5], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1202,7 +1214,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [5 (1d8 + 1)],
 	speed: [40 ft.],
-	stats: [STR: +1, DEX: +2, CON: +1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -1227,7 +1239,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [13 (3d8)],
 	speed: [50 ft., climb 40 ft.],
-	stats: [STR: +2, DEX: +2, CON: +0, INT: -4, WIS: +2, CHA: -2],
+	stats: (STR: [+2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+2], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +6],
@@ -1256,7 +1268,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [7 (3d4)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: -4, DEX: +2, CON: +0, INT: -5, WIS: +0, CHA: -4],
+	stats: (STR: [-4], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1268,6 +1280,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 		Languages: [---],
 		Challenge: [1/4:1/8],
 ),
+	traits: (),
 	actions: (
 ("Bite", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 2d4 poison.]),
 )))
@@ -1277,7 +1290,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12 (natural armor)],
 	hp: [51 (6d10 + 18)],
 	speed: [40 ft., swim 30 ft.],
-	stats: [STR: +5, DEX: +0, CON: +3, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+5], DEX: [+0], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3],
@@ -1307,7 +1320,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [10],
 	hp: [5 (1d8 + 1)],
 	speed: [40 ft.],
-	stats: [STR: +2, DEX: +0, CON: +1, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+2], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1332,7 +1345,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12 (natural armor)],
 	hp: [22 (4d8 + 4)],
 	speed: [0 ft., swim 40 ft.],
-	stats: [STR: +2, DEX: +1, CON: +1, INT: -5, WIS: +0, CHA: -3],
+	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +2],
@@ -1360,7 +1373,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12 (natural armor)],
 	hp: [51 (6d10 + 18)],
 	speed: [40 ft.],
-	stats: [STR: +5, DEX: -1, CON: +3, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+5], DEX: [-1], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1385,7 +1398,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [10],
 	hp: [13 (2d10 + 2)],
 	speed: [60 ft.],
-	stats: [STR: +1, DEX: +0, CON: +1, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+1], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1410,7 +1423,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [52 (7d10 + 14)],
 	speed: [40 ft.],
-	stats: [STR: +3, DEX: +2, CON: +2, INT: -4, WIS: +1, CHA: -1],
+	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
@@ -1440,7 +1453,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [22 (5d8)],
 	speed: [0 ft., fly 30 ft.],
-	stats: [STR: -3, DEX: +2, CON: +0, INT: -4, WIS: +1, CHA: -3],
+	stats: (STR: [-3], DEX: [+2], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1469,7 +1482,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12 (natural armor)],
 	hp: [22 (5d8)],
 	speed: [20 ft., climb 20 ft.],
-	stats: [STR: -4, DEX: +1, CON: +0, INT: -5, WIS: -2, CHA: -5],
+	stats: (STR: [-4], DEX: [+1], CON: [+0], INT: [-5], WIS: [-2], CHA: [-5]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1494,7 +1507,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [14],
 	hp: [36 (8d8)],
 	speed: [30 ft., swim 30 ft.],
-	stats: [STR: -1, DEX: +2, CON: +0, INT: -5, WIS: +0, CHA: -4],
+	stats: (STR: [-1], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1519,7 +1532,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [13],
 	hp: [28 (8d8 - 8)],
 	speed: [0 ft., swim 40 ft.],
-	stats: [STR: +1, DEX: +3, CON: -1, INT: -5, WIS: -2, CHA: -4],
+	stats: (STR: [+1], DEX: [+3], CON: [-1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1548,7 +1561,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [11],
 	hp: [24 (7d8 - 7)],
 	speed: [30 ft.],
-	stats: [STR: -1, DEX: +1, CON: -1, INT: -4, WIS: +0, CHA: -4],
+	stats: (STR: [-1], DEX: [+1], CON: [-1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1575,7 +1588,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [24 (7d8 - 7)],
 	speed: [10 ft., fly 50 ft.],
-	stats: [STR: -2, DEX: +2, CON: -1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [-2], DEX: [+2], CON: [-1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +5],
@@ -1600,7 +1613,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [12],
 	hp: [37 (5d10 + 10)],
 	speed: [40 ft.],
-	stats: [STR: +3, DEX: +2, CON: +2, INT: -4, WIS: +1, CHA: -1],
+	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
@@ -1628,7 +1641,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [11],
 	hp: [19 (3d10 + 3)],
 	speed: [60 ft.],
-	stats: [STR: +3, DEX: +1, CON: +1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -1654,7 +1667,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	ac: [13 (natural armor)],
 	hp: [11 (2d8 + 2)],
 	speed: [40 ft.],
-	stats: [STR: +1, DEX: +2, CON: +1, INT: -4, WIS: +1, CHA: -2],
+	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +4],

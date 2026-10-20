@@ -1,3 +1,7 @@
+#let darkred = rgb("#540808")
+#let darkyellow = rgb("#fcba03")
+
+
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
   auto,
@@ -42,9 +46,9 @@
 
     #line(stroke: 2pt + darkred, length: 100%)
     #context [
-      #text(fill: darkred)[*#language.get().stats.ac*] #stats.ac\
-      #text(fill: darkred)[*#language.get().stats.hp*] #stats.hp\
-      #text(fill: darkred)[*#language.get().stats.speed*] #stats.speed\
+      #text(fill: darkred)[*Armor Class*] #stats.ac\
+      #text(fill: darkred)[*Hit Points*] #stats.hp\
+      #text(fill: darkred)[*Speed*] #stats.speed\
     ]
     
     #line(stroke: 2pt + darkred, length: 100%)
@@ -61,11 +65,13 @@
     
     #context {
       let sections = (
-        language.get().sections.actions,
-        language.get().sections.reactions,
-        language.get().sections.limited_usage,
-        language.get().sections.equip,
-        language.get().sections.legendary_act,
+        "Actions",
+        "Reactions",
+        "Limited Usage",
+        "Equipment",
+        "Legendary Actions",
+        "Variants",
+        "Scaling"
       )
       for section in sections {
         if section in stats.keys() {

@@ -13,7 +13,7 @@ The gibbering mouther is one of the more common variants of flesh amalgams. A bl
 	ac: [9],
 	hp: [67 (9d8 + 27)],
 	speed: [10 ft., swim 10 ft.],
-	stats: [STR: +0, DEX: -1, CON: +3, INT: -4, WIS: +0, CHA: -2],
+	stats: (STR: [+0], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -26,7 +26,7 @@ The gibbering mouther is one of the more common variants of flesh amalgams. A bl
 		Challenge: [2:2],
 	),
 	traits: (
-		("Aberrant Ground", [The ground in a 10-foot radius around the mouther is dough-like difficult terrain.])
+		("Aberrant Ground", [The ground in a 10-foot radius around the mouther is dough-like difficult terrain.]),
 	),
 	actions: (
 		("Multiattack", [The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle. It uses Grasping Ground and Gibbering as well every turn even if it cannot attack.]),
@@ -45,7 +45,7 @@ The voracious maw is a less-common flesh amalgam. Unlike the gibbering mouther, 
 	ac: [15 (natural armor)],
 	hp: [67 (9d8 + 27)],
 	speed: [40 ft., climb 40 ft.],
-	stats: [STR: +4, DEX: +3, CON: +3, INT: -3, WIS: +2, CHA: -2],
+	stats: (STR: [+4], DEX: [+3], CON: [+3], INT: [-3], WIS: [+2], CHA: [-2]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [stealth +7],
@@ -82,7 +82,7 @@ The jellyface is a particularly horrific creation---a humanoid head with transpa
 	ac: [13],
 	hp: [7 (2d4+2)],
 	speed: [5 ft, swim 25 ft],
-	stats: [STR: -4, DEX: +3, CON: +2, INT: -4, WIS: -1, CHA: -4],
+	stats: (STR: [-4], DEX: [+3], CON: [+2], INT: [-4], WIS: [-1], CHA: [-4]),
 	skillblock: (
 		"Saving Throws": [],
 		Skills: [],
@@ -114,7 +114,7 @@ Created by mkhulu and comeidai from ogres, these creatures have squid-like featu
 	ac: [13 (natural armor)],
 	hp: [94 (9d10+45)],
 	speed: [35 ft, swim 25 ft],
-	stats: [STR: +5, DEX: -1, CON: +5, INT: -3, WIS: 0, CHA: -3],
+	stats: (STR: [+5], DEX: [-1], CON: [+5], INT: [-3], WIS: [0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [WIS +3],
 		Skills: [],
@@ -150,7 +150,7 @@ Physically, a comiedar is a bulbous, tentacled monstrosity that usually communic
 	ac: [17 (natural armor)],
 	hp: [\DndDice{25d10 + 50}],
 	speed: [10 ft., swim 40 ft.],
-	stats: [STR: +5, DEX: -1, CON: +2 (+6), INT: +4 (+8), WIS: +2 (+6), CHA: +5],
+	stats: (STR: [+5], DEX: [-1], CON: [+2 (+6)], INT: [+4 (+8)], WIS: [+2 (+6)], CHA: [+5]),
 	skillblock: (
 		Skills: [Deception +13, History +12, Perception +10],
 		Senses: [darkvision 120 ft., passive Perception 20],
@@ -197,16 +197,16 @@ Presented here is a template that can be applied to any humanoid stat block. Cha
 		- *Speed.* The creature gains a swimming speed of 30 ft.
 		- *Ability Scores.* The creature's ability scores change as follows: CON increases to a minimum of +2. INT becomes +5. WIS decreases by 1 (minimum -1). Charisma decreases by 2 (minimum -1).
 		- *Traits.* The creature gains the following traits:
-		- #h(quad)*Amphibious.* The creature can breathe both air and water equally well.
-		- #h(quad)*Aberrant Mind.* The creature becomes resistant to psychic damage and immune to charm and fear. It has advantage on saving throws against effects that would read its mind or force it to tell the truth. It cannot be put to sleep by magic.
-		- #h(quad)*Innate Spellcasting.* The mkhulu can cast the following spells without requiring components. Its spellcasting ability is Intelligence (+7 to hit, spell save DC 15)
-		- #h(wide)*Concentration.* _minor illusion_ (at will), _mage hand_ (at will), _disguise self_ (at will), _suggestion_ (2/LR), _major image_ (1/LR)
-		- #h(wide)*Movement.* _misty step_ (2/LR)
-		- #h(wide)*Other.* _yoink_ (at will)
+		- #h(1em)*Amphibious.* The creature can breathe both air and water equally well.
+		- #h(1em)*Aberrant Mind.* The creature becomes resistant to psychic damage and immune to charm and fear. It has advantage on saving throws against effects that would read its mind or force it to tell the truth. It cannot be put to sleep by magic.
+		- #h(1em)*Innate Spellcasting.* The mkhulu can cast the following spells without requiring components. Its spellcasting ability is Intelligence (+7 to hit, spell save DC 15)
+		- #h(2em)*Concentration.* _minor illusion_ (at will), _mage hand_ (at will), _disguise self_ (at will), _suggestion_ (2/LR), _major image_ (1/LR)
+		- #h(2em)*Movement.* _misty step_ (2/LR)
+		- #h(2em)*Other.* _yoink_ (at will)
 		- *Actions.* The creature gains the following actions:
-		- #h(quad)*Mind Blast (1/day)* All creatures in a 60 ft cone must make a DC 15 Intelligence saving throw. On a failed save they take 8d6 psychic damage and are staggered for one minute. On a success, they take half as much damage and are not staggered. Creatures that fail by 5 or more are stunned instead. Staggered or stunned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
-		- #h(quad)*Latch On* The mkhulu attempts to latch onto one staggered or stunned creature with its tentacles. It makes a melee weapon attack at disadvantage (+5 to hit, 5 ft reach). On a hit, the creature is grappled and restrained (escape DC 13). Only one creature can be Latched On by the mkhulu at a time.
-		- #h(quad)*Enslave* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Wisdom saving throw. On a failed save, the creature is under the mental control of the mkhulu as if it was affected by the legendary effect _dominate_. This does not require concentration from the mkhulu.
-		- #h(quad)*Consume Brain* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Constitution saving throw. On a failure it takes 5d8 piercing damage. On a success it takes half as much damage and the Latch On effect ends. If the creature fails the saving throw and this damage reduces the creature to 0, it dies as its brain is consumed by the mkhulu. Only the True Resurrection effect can return it to life.
+		- #h(1em)*Mind Blast (1/day)* All creatures in a 60 ft cone must make a DC 15 Intelligence saving throw. On a failed save they take 8d6 psychic damage and are staggered for one minute. On a success, they take half as much damage and are not staggered. Creatures that fail by 5 or more are stunned instead. Staggered or stunned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+		- #h(1em)*Latch On* The mkhulu attempts to latch onto one staggered or stunned creature with its tentacles. It makes a melee weapon attack at disadvantage (+5 to hit, 5 ft reach). On a hit, the creature is grappled and restrained (escape DC 13). Only one creature can be Latched On by the mkhulu at a time.
+		- #h(1em)*Enslave* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Wisdom saving throw. On a failed save, the creature is under the mental control of the mkhulu as if it was affected by the legendary effect _dominate_. This does not require concentration from the mkhulu.
+		- #h(1em)*Consume Brain* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Constitution saving throw. On a failure it takes 5d8 piercing damage. On a success it takes half as much damage and the Latch On effect ends. If the creature fails the saving throw and this damage reduces the creature to 0, it dies as its brain is consumed by the mkhulu. Only the True Resurrection effect can return it to life.
 	]
 ]

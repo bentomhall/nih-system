@@ -1,6 +1,8 @@
 #import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
 
-#show: dndmodule.with(
+  #show: dndmodule.with(
     title: "NIH Core",
     subtitle: "A love letter for 5e, minus the legacy",
     author: "Admiral Benbo",
@@ -9,28 +11,8 @@
     logo: none,
     fancy-author: true,
     bg: none
-)
-
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
+  )
+]
 
 = Introduction
 This game is designed to explore "paths not taken" for the venerable TTRPG it originally stems from. A love letter from a long-term fan. What might it look like if the historical constraints (some may say sacred cows; others may say legacy) were relaxed? If, instead of only lightly adhering to design principles like bounded accuracy and such, it bought in fully? If it made no pretense at being a generic game and instead focused on what it does best (that is, small-unit fantasy adventures in the heroic mode)? This is my attempt at exploring that space.

@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Giants <giants>
 Giants in all their forms descend from the ancient titans. Contrary to the name, titans were of reasonably normal stature. But they possessed the power of True Words in the form of runes, often inscribed on their bodies. These runes gave them control over matter, allowing them to transform into hulking figures many tens of feet (some even a hundred) feet tall and with strength to move mountains.

@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Beasts <beasts>
 Beasts, also called "normal animals", are the bulk of the fauna of the fantasy realm. Most of the creatures here could be mistaken (if not for unusual size in some cases) as their counterparts on Earth. They participate normally in the circle of life and their origins are entirely mundane. Normally, most beasts are unlikely to attack armed-and-armored groups of humanoids (ie adventuring groups) willingly, unless driven by hunger, magic, or threats to their dens or children. Most beasts have the Craven attitude, while some are Individualistic or Pack-minded.

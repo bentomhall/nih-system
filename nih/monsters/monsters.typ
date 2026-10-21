@@ -1,7 +1,7 @@
 #import "@preview/dragonling:0.3.1": *
-#import "./functions.typ": *
-
-#show: dndmodule.with(
+#import "../../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
     title: "NIH Monsters",
     subtitle: "A NIH Bestiary and Guide",
     author: "Admiral Benbo",
@@ -10,18 +10,8 @@
     logo: none,
     fancy-author: true,
     bg: none
-)
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
+  )
+]
 
 = Monsters
 A monster's statistics, sometimes referred to as its *stat block*, provide the essential information that you need to run the monster.

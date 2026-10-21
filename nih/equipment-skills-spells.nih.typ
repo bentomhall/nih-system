@@ -1,6 +1,8 @@
-#import "@preview/dragonling:0.3.1": *
 
-#show: dndmodule.with(
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
     title: "NIH: Equipment, Skill Tricks, Spells",
     subtitle: "All the extras you need to make a character",
     author: "Admiral Benbo",
@@ -9,28 +11,8 @@
     logo: none,
     fancy-author: true,
     bg: none
-)
-
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
+  )
+]
 
 = Equipment
 

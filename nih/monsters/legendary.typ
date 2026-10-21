@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 #statbox((name: "Kraken",
 	description: [Gargantuan monstrosity (titan)],

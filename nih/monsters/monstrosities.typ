@@ -1,5 +1,5 @@
-#import "functions.typ": *
-
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 = Monstrosities
 Monstrosities are the catch-all category for things that aren't shaped roughly like a person. Does it speak but look like a beast? Does it have magical abilities but not fit into another category? Was it created by a mage in a long-ago day but now breed normally? Then it's probably a monstrosity.
 

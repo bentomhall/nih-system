@@ -1,35 +1,20 @@
+
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
-  title: "Incantations",
-  subtitle: "Bringing Utility Magic to the Masses",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  logo: none,
-  cover: none,
-  fancy-author: true,
-  bg: none
-)
-
-#set page(margin: 15mm)
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-#let flush-caption(title, subtitle) = {
-  set par(first-line-indent: 0em,spacing: 1em)
-  strong(title)
-  linebreak()
-  subtitle
-}
-
 #import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Incantations",
+    subtitle: "Bringing Utility Magic to the Masses",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+
+  #set page(margin: 15mm)
+]
 
 = Incantations
 

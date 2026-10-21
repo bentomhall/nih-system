@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Oozes <oozes>
 It's not clear where the first oozes came from. Ooze-like creatures can be found on the earth-aspected elemental planes (especially where it overlaps with the planes of water), but those are much more refined and less mindless than your regular ooze. Some believe that oozes were created during the early ages to act as living cleaning agents or to dissolve waste. Most feared among the oozes are the nefarious boing-boings---oozes that _bounce_ with a distinctive sound rather than protoplasmically slither across the ground. Boing-boings also have markings that look like grinning faces. Thankfully, those types are quite rare.

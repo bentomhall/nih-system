@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Humanoids <humanoids>
 Humanoids don't generally have default attitudes, as the stat blocks are too generic for that. In general, humanoids can be reasoned with and aren't fearless. Individualistic vs group mentality depends entirely on the individual. Humanoids are never single-minded or domestic.

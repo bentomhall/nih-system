@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Appendix: Non-combat NPCs
 Presented here is an alphabetical list of non-combat creatures---these are creatures who may appear but rarely, if ever, pose a combat challenge even in groups. They may be useful for familiars and pets, however.

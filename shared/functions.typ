@@ -32,6 +32,15 @@
   }
 }
 
+#let safe-link(lbl, body) = context {
+  let matches = query(lbl)
+  if matches.len > 0 {
+    link(lbl, body)
+  } else {
+    body
+  }
+}
+
 #let stats-table(stats) = {
   let content = ()
   for k in stats.keys() {

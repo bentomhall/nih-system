@@ -3,7 +3,7 @@
 
 = Elementals <elementals>
 
-Elementals are born from the essence and Names of the elemental planes. Some are mortals who gave up their mortality (and ability to grow) in exchange for being tied to the nature of the plane (the genie); others are pure embodiments of the Word at the heart of each plane. Yet others are half-way creatures, mortals who have been shaped and bound by the Name of the elemental plane yet retain mortality. These latter are often called 'element-bound.' Most true elementals (such as the ones named like Air/Earth/Fire/Water Elemental) are barely sapient and have little free will---they are not much more than elemental beasts. Those born from mortals are much more "intelligent" and free-willed.
+Elementals are born from the essence and Names of the elemental planes. Some are mortals who gave up their mortality (and ability to grow) in exchange for being tied to the nature of the plane (the genie); others are pure embodiments of the Word at the heart of each plane. Yet others are half-way creatures, mortals who have been shaped and bound by the Name of the elemental plane yet retain mortality. These latter are often called 'element-bound.' Most true elementals (such as the ones named like Air/Earth/Fire/Water Elemental) are barely sapient and have little free will; they are not much more than elemental beasts. Those born from mortals are much more "intelligent" and free-willed.
 
 #statbox((name: "Dwarf, Lava-bound",
 	description: [Medium elemental (dwarf), honorable],
@@ -169,8 +169,8 @@ Elementals are born from the essence and Names of the elemental planes. Some are
 	),
 ))
 
-=== Mephits
-Mephits are the elemental version of minor fey, a hybrid of nature spirits and elemental energy. They arise in droves in elemental hot-spots in the Mortal, and are one of the more common types summoned, especially by beginning mages. More intelligent than most "true" elementals, they are often mischievous and petty. They are all known to explode when fatally wounded.
+=== Mephits <mephits>
+Mephits are the elemental version of minor fey, a hybrid of nature spirits and elemental energy. They arise in droves in elemental hot-spots in the Mortal, and are one of the more common types summoned, especially by beginning mages. More intelligent than most true elementals, they are often mischievous and petty. They are all known to explode when fatally wounded.
 
 #statbox((name: "Dust Mephit",
 	description: [Small elemental, craven],
@@ -219,11 +219,11 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 	traits: (
 		("Death Burst", [When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.]),
 		("False Appearance", [While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.]),
-		("Innate Spellcasting (1/Day)", [The mephit can innately cast _fog-cloud_, requiring no material components. Its innate spellcasting ability is Charisma.]),
+		("Innate Spellcasting (1/Day)", [The mephit can innately cast #safe-link("fog-cloud",[_fog cloud_]), requiring no material components. Its innate spellcasting ability is Charisma.]),
 	),
 	actions: (
 		("Claws", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 1 slashing damage plus 2 (1d4) cold damage.]),
-		("Frost Breath (recharge 5-6)", [The mephit exhales a 15- foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.]),
+		("Frost Breath (recharge 5-6)", [The mephit exhales a 15-foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.]),
 	),
 ))
 
@@ -247,7 +247,7 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 	traits: (
 		("Death Burst", [When the mephit dies, it explodes in a burst of lava. Each creature within 5 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.]),
 		("False Appearance", [While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma.]),
-		("Innate Spellcasting (1/Day)", [The mephit can innately cast _heat-metal_ (spell save DC 11), requiring no material components.]),
+		("Innate Spellcasting (1/Day)", [The mephit can innately cast #safe-link("heat-metal",[_heat metal_]) (spell save DC 11), requiring no material components.]),
 	),
 	actions: (
 		("Claws", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 1 slashing damage plus 2 (1d4) fire damage.]),
@@ -274,7 +274,7 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 	),
 	traits: (
 		("Death Burst", [When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (1d8) fire damage.]),
-		("Innate Spellcasting (1/Day)", [The mephit can innately cast _blur_, requiring no material components.]),
+		("Innate Spellcasting (1/Day)", [The mephit can innately cast #safe-link("blur", [_blur_]), requiring no material components.]),
 	),
 	actions: (
 		("Claws", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d4+1 slashing damage plus 2 (1d4) fire damage.]),
@@ -284,7 +284,7 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 
 == True Elementals
 
-In the elemental planes, true elementals rarely form as such. They are simply part of the True Name of the plane itself. So unless forced to coalesce by a spellcaster or by a threat to the plane (such as demonic corruption), they are rarely found there. On the Mortal plane, true elementals form part of the cycle of the elements themselves---lightning elementals ride the storms, water elementals channel water-aspected aether to refresh water, lava elementals in the calderas of active volcanoes, etc. Most often, adventurers encounter them when they are summoned by spell-casters or rise when a concentrated elemental node is disturbed. Almost mindless, they attack the threats as they appear, using very little in the way of tactics.
+In the elemental planes, true elementals rarely form as such. They are simply part of the True Name of the plane itself. So unless forced to coalesce by a spellcaster or by a threat to the plane (such as demonic corruption), they are rarely found there. On the Mortal plane, true elementals form part of the cycle of the elements themselves: lightning elementals ride the storms, water elementals channel water-aspected aether to refresh water, lava elementals in the calderas of active volcanoes, etc. Most often, adventurers encounter them when they are summoned by spellcasters or rise when a concentrated elemental node is disturbed. Almost mindless, they attack the threats as they appear, using very little in the way of tactics.
 
 #statbox((name: "Elemental, Air",
 	description: [Large elemental, single-minded],

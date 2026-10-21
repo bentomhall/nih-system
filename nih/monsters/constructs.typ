@@ -5,11 +5,11 @@
 
 Artificial bodies brought to life by clockwork, elemental Words of power, or trapped souls. Few of these can be created these days other than the most simple animated objects, although simple golem-like creatures are common in Wyrmhold and Byssia--the first being labor constructs directed by their creators, mostly mobile muscle, and the second being fey-animated wooden protectors of remote shrines.
 
-Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as _unbind_, while those that operate via clockwork or trapped spirits are not.
+Generally, constructs are immune to most mind-or-soul affecting abilities as well as poison, but repairing them is more difficult as they do not heal naturally and most healing magic does not fix them. As a general rule, constructs only become disabled when their animating force (regardless of its nature) is damaged or dispelled. Those animated directly by spells, such as the Animated Objects below, are disrupted by magic such as #safe-link("unbind", [_unbind_]), while those that operate via clockwork or trapped spirits are not.
 
 Constructs, being unfeeling matter moved by non-sentient forces, is remarkably hard to meaningfully damage. As a general rule, most constructs have fixed damage reduction value. All incoming damage is reduced by the given amount. If that would reduce the damage to zero or less, the construct takes no damage. Effects that trigger on hit still occur as normal. Critical hits bypass this damage reduction, dealing full damage. This trait is called Construct Resilience.
 
-== Animated Objects
+== Animated Objects <animated-objects>
 
 Animated by simple (comparatively) spells, these creatures have specific programming fixed when they were created. All known forms of animation are temporary unless the creature is part of a larger, spell-worked environment such as a building. If an animated object is removed from their environment in any way, they go berserk, attacking all nearby creatures without distinction and then cease functioning in 1d4 hours. Once defeated, animated objects cannot be brought back to life without the same process that was required to create them in the first place.
 
@@ -33,7 +33,7 @@ Due to their nature, animated objects do not have the Construct Resilience trait
 		Challenge: [2:3],
 	),
 	traits: (
-		("Antimagic Susceptibility", [The armor is incapacitated while in the area of _abjure aether manipulation_. If targeted by _unbind_, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.]),
+		("Antimagic Susceptibility", [The armor is incapacitated while in the area of #safe-link("abjure-aether-manipulation", [_abjure aether manipulation_]). If targeted by #safe-link("unbind", [_unbind_]), the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.]),
 		("False Appearance", [While the armor remains motionless, it is indistinguishable from a normal suit of armor.]),
 	),
 	actions: (
@@ -60,7 +60,7 @@ Due to their nature, animated objects do not have the Construct Resilience trait
 		Challenge: [1:1],
 	),
 	traits: (
-		("Antimagic Susceptibility", [The construct is incapacitated while in the area of _abjure aether manipulation_. If targeted by _unbind_, the construct must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.]),
+		("Antimagic Susceptibility", [The construct is incapacitated while in the area of#safe-link("abjure-aether-manipulation", [_abjure aether manipulation_]). If targeted by #safe-link("unbind", [_unbind_]), the construct must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.]),
 		("False Appearance", [While the furniture remains motionless, it is indistinguishable from a normal table, sofa, wardrobe, or whatever piece of furniture it was created from.]),
 	),
 	actions: (
@@ -68,8 +68,8 @@ Due to their nature, animated objects do not have the Construct Resilience trait
 	),
 ))
 
-== Clockwork
-Unlike golems (animated by elemental forces) or animated objects (animated directly by spells), clockwork constructs have gears, springs, and levers operating their limbs. These are powered by a crystalline, spell-worked core. Less durable than golems (but much easier to produce) and more permanent than animated objects, most of the automata in the Federated Nations fall into this category. Many hybrid constructs exist with a general purpose "brain" that can accept external commands (as long as they're simple) connected to a power core and the clockwork actuators.
+== Clockwork <clockwork>
+Unlike golems (animated by elemental forces) or animated objects (animated directly by spells), clockwork constructs have gears, springs, and levers operating their limbs. These are powered by a crystalline, spell-worked core. Less durable than golems (but much easier to produce) and more permanent than animated objects, most of the automata in the Federated Nations fall into this category. Simple clockwork creations have a fixed, unchangeable (without replacement of the core) routine and fail to adapt to changing circumstances very well; hybrid constructs exist with a general purpose "brain" that can accept external commands (as long as they're simple) connected to a power core and the clockwork actuators.
 
 #statbox((name: "Heavy Defender Automaton",
 	description: [Large construct, fearless, guardian],
@@ -127,17 +127,18 @@ Unlike golems (animated by elemental forces) or animated objects (animated direc
 	),
 ))
 
-== Golems
+== Golems <golems>
 Golems are the traditional long-lived constructs, created by shaping a physical shell out of matter and then summoning and binding a mindless elemental force to animate it. Simpler golems have fixed programming that they cannot deviate from; more complex ones will listen to either their creator or someone holding an enchanted command rod. These rods are specifically made for a single golem or batch of golems and are not general purpose.
 
 Because golems are solid objects composed of durable, unfeeling matter, they tend to have high values of Construct Resilience. One downside is that golems, being animated by a trapped elemental force, tend to go berserk once damaged enough, as the elemental force's bindings fray and it tries to escape and return home.
 
-=== Golem Traits and DR
+#breakoutbox("Golem Traits and DR")[
 Golems have two traits that strongly affect defensive rating. Construct Resilience and Magic Resistance. Construct Resilience is the big one---since very few things bypass it, it's generally worth +1 DR. Magic Resistance is generally weaker---their saves tend to either be very good (in which case advantage doesn't do much since they were already likely to pass) or very poor (in which case advantage can't save them very much). And with their extensive list of condition immunities, many of the spells they're bad at (Wisdom saves) just have no effect anyway. So it's generally worth +1 DR, but only if their DR was low relative to their OR already.
+]
 
 === Golem Types
 #flush-block[
-- *Flesh Golems.* Constructed out of the corpses of dead mortals, preserved via embalming or magic, and then animated by a lightning sprite, these distasteful things are not quite undead, although for many the difference is not worth caring about. Generally only outcast alchemists and other such practitioners with access to many dead bodies but not many other resources construct flesh golems. Unlike most golems, they are not extremely long-lasting, as the flesh tends to decay even when preserved.
+- *Flesh Golems.* Constructed out of the corpses of dead mortals, preserved via embalming or magic, and then animated by a lightning sprite, these distasteful things are not quite undead, although for many the difference is not worth caring about. Generally only outcast alchemists and other such practitioners with access to many dead bodies but not many other resources construct flesh golems. Unlike most golems, they are not long lasting, as the flesh tends to decay even when preserved.
 - *Clay Golems.* Sculpted out of hardened (but not fired) clay and animated with an earth sprite, these golems are very durable. The enchantments on the clay allow bursts of speed and power and drain the aether out of those that they hit, making them fearsome guardians.
 - *Stone Golems.* Carved out of hard stone (such as granite) and then animated with an earth sprite, these greater golems are even more durable than clay golems. They are enchanted to cause their enemies' surface to harden via sympathetic magic, reducing their speed and evasion.
 - *Iron Golems.* Assembled from pieces of iron wrapped around stone or wood cores, iron golems are the greatest constructs commonly encountered, and the inspiration for Wyrmhold's servitor clockwork. Animated by a fire sprite, they spew toxic vapors at their foes and resist nearly all blows except those from adamantine weapons.
@@ -169,7 +170,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	),
 	actions: (
 		("Multiattack", [The golem makes three slam attacks.]),
-		("Slam", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d10 + 5 bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the _restoration_ incantation (in its greater form) or other magic of similar power.]),
+		("Slam", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d10 + 5 bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the #safe-link("restoration",[_restoration_]) incantation (in its greater form) or other magic of similar power.]),
 		("Haste (Recharge 5-6)", [Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action. On the next turn after that, its movement speed is reduced to half as the clay has solidified.]),
 	),
 ))
@@ -261,6 +262,6 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	actions: (
 		("Multiattack", [The golem makes three slam attacks.]),
 		("Slam", [Melee Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 4d8 + 6 bludgeoning damage.]),
-		("Slow (Recharge 5-6)", [The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic, becoming affected on a failed save. An affected target is shaken and staggered. It also takes a -2 penalty to AC. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. \ If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. \ This counts as being the spell _slow_ but does not have any components.]),
+		("Slow (Recharge 5-6)", [The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic, becoming affected on a failed save. An affected target is #safe-link("shaken", "shaken") and #safe-link("staggered", "staggered"). It also takes a -2 penalty to AC. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. \ If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. \ This counts as being the spell #safe-link("slow")[_slow_] but does not have any components.]),
 	),
 ))

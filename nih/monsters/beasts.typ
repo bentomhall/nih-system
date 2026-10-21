@@ -5,8 +5,8 @@
 Beasts, also called "normal animals", are the bulk of the fauna of the fantasy realm. Most of the creatures here could be mistaken (if not for unusual size in some cases) as their counterparts on Earth. They participate normally in the circle of life and their origins are entirely mundane. Normally, most beasts are unlikely to attack armed-and-armored groups of humanoids (ie adventuring groups) willingly, unless driven by hunger, magic, or threats to their dens or children. Most beasts have the Craven attitude, while some are Individualistic or Pack-minded.
 
 As a general rule, beasts have very few if any magical abilities and do not speak any language. Thus, a dire wolf is a beast, while both the warg (which can speak) and the winter wolf (which breathes elemental cold) are monstrosities.
-== Apes and baboons
-Most normal gorillas, chimpanzees, and other larger apes are best represented by the Ape stat block. For smaller ones (baboons, etc.) use the baboon stat block. Giant apes are more like King Kong (in his smaller incarnations).
+
+Most normal gorillas, chimpanzees, and other larger apes are best represented by the ape stat block. For smaller ones (baboons, etc.) use the baboon stat block. Giant apes are more like King Kong (in his smaller incarnations).
 #statbox((name: "Ape",
 	description: [Medium beast, pack mentality, craven],
 	ac: [12],

@@ -2,24 +2,23 @@
 #import "../../shared/functions.typ": *
 
 = Fiends <fiends>
-"Fiend" is the word used by mortals to describe any resident of the Astral or Abyssal (few make a differentiation, although the differences are many) summoned via ritual or magic into another plane as weapons or soldiers and given a body woven of aether to inhabit. These "combat forms" have become quite standardized over the centuries, chosen as much for their intimidating looks as for their raw combat potential. One side effect of this new form is that killing a fiend on the Mortal requires trapping their core essence and dispersing it---simply shattering the body by physical or magical force just ends the spell and sends them back to where they came from. It does irritate them considerably though; they can feel pain in their borrowed forms just like in their "true" forms.
+Fiend is the word used by mortals to describe any resident of the Astral or Abyssal (few make a differentiation, although the differences are many) summoned via ritual or magic into another plane as weapons or soldiers and given a body woven of aether to inhabit. These "combat forms" have become quite standardized over the centuries, chosen as much for their intimidating looks as for their raw combat potential. One side effect of this new form is that killing a fiend on the Mortal requires trapping their core essence and dispersing it; simply shattering the body by physical or magical force just ends the spell and sends them back to where they came from. It does irritate them considerably though; they can feel pain in their borrowed forms just like in their "true" forms.
 
 The more powerful the summoned entity, the greater expenditure of aether is required to house it. A Flame Fiend, for example, is one of the most potent of its kind and can summon others subservient to it, while an imp or a dretch are the lowliest, the latter barely capable of thought.
 
 Such aether-born shells, however, do have a weakness to silver, as it disrupts the complex patterns that contain their other-planar essence. Damage done by silvered weapons leaves them weakened, if just for a moment.
 
 #breakoutbox("Hierarchy of Fiend Forms")[
-Stronger entities require larger, more expensive shells. Some particularly powerful entities, such as diabolical dons or demon princes, cannot be summoned by normal means--no summoner or ritual has enough power to create a stable body for them. They can appear via rifts, but they do so in their own proper form.
+Stronger entities require larger, more expensive shells. Some particularly powerful entities, such as diabolical dons or demon princes, cannot be summoned by normal means, as no summoner or ritual has enough power to create a stable body for them. They can appear via rifts, but they do so in their own proper form.
 
 The hierarchy of regularly summoned forms goes (from weakest to strongest)
 
--  Stench fiends. These are barely sapient, merely a squiggle of a fragment of a True Word at their core. Only the weakest summoners summon these, but other fiends often employ them as cannon fodder.
--  Imps. These are the lowest forms regularly summoned---they are common familiars. They trade their freedom for an ongoing piece of the summoner's energy or a claim on their soul (if demon). Scouts, messengers, and gossips mostly, they are fragile in combat.
--  Succubi/Incubi. The form used depends on the needs of the caster, not the entity's innate nature. Commonly used for ends other than combat.
--  Bearded fiends, hell hounds, and barbed fiends. These are the workhorse fiendish form, probably the most commonly summoned type for actual combat.
--  Fury, Horned, Bone, and Ice fiends. These are the commanders. Often capable of summoning large numbers of others.
--  Flame fiends. These are the pinnacle of the summonable forms, acting as generals. Those more powerful than this cannot generally be summoned.
-
+-  *Stench fiends.* These are barely sapient, merely a squiggle of a fragment of a True Word at their core. Only the weakest summoners summon these, but other fiends often employ them as cannon fodder.
+-  *Imps.* These are the lowest forms regularly summoned; they are common familiars. They trade their freedom for an ongoing piece of the summoner's energy or a claim on their soul (if demon). Scouts, messengers, and gossips mostly, they are fragile in combat.
+-  *Succubi/Incubi.* The form used depends on the needs of the caster, not the entity's innate nature. Commonly used for ends other than combat.
+-  *Bearded fiends, hell hounds, and barbed fiends.* These are the workhorse fiendish form, probably the most commonly summoned type for actual combat.
+-  *Fury, Horned, Bone, and Ice fiends.* These are the commanders. Often capable of summoning large numbers of others.
+-  *Flame fiends.* These are the pinnacle of the summonable forms, acting as generals. Those more powerful than this cannot generally be summoned.
 ]
 
 #statbox((name: "Fiend, Stench",
@@ -159,7 +158,7 @@ The hierarchy of regularly summoned forms goes (from weakest to strongest)
 		Challenge: [9:9],
 	),
 	traits: (
-		("Innate Spellcasting", [The spider fiend's innate spellcasting ability is Wisdom (spell save DC 14). The spider fiend can innately cast the following spells, requiring no material components: \ *Concentration* _faerie fire_ (1x), _darkness_ (1x) \ *Other* _dancing lights_]),
+		("Innate Spellcasting", [The spider fiend's innate spellcasting ability is Wisdom (spell save DC 14). The spider fiend can innately cast the following spells, requiring no material components: \ *Concentration* #safe-link("faerie-fire",[_faerie fire_]) (1x), #safe-link("darkness",[_darkness_]) (1x) \ *Other* #safe-link("dancing-lights",[_dancing lights_])]),
 		("Spider Climb", [The spider fiend can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.]),
 		("Sunlight Sensitivity", [While in sunlight, the spider fiend has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.]),
 		("Web Walker", [The spider fiend ignores movement restrictions caused by webbing.]),
@@ -226,7 +225,7 @@ The hierarchy of regularly summoned forms goes (from weakest to strongest)
 	actions: (
 		("Multiattack", [The fiend makes three attacks.]),
 		("Longsword", [Melee Attack: +8 to hit, reach 5 ft., one target. _Hit:_ 1d10 + 4 slashing damage plus 13 (3d8) poison damage.]),
-		("Longbow", [Ranged Attack: +7 to hit, range 150/600 ft., one target. _Hit:_ 1d8 + 3 piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the _lesser restoration_ incantation or similar magic.]),
+		("Longbow", [Ranged Attack: +7 to hit, range 150/600 ft., one target. _Hit:_ 1d8 + 3 piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the #safe-link("restoration",[_restoration (lesser)_]) incantation or similar magic.]),
 		("Parry", [The fiend adds 4 to its AC against one melee attack that would hit it once per turn, possibly negating the hit. To do so, the fiend must see the attacker and be wielding a melee weapon.]),
 	),
 ))
@@ -288,7 +287,7 @@ The hierarchy of regularly summoned forms goes (from weakest to strongest)
 		("Bite", [Melee Attack: +8 to hit, reach 5 ft., one target. _Hit:_ 2d6+5 piercing damage plus 4d6 cold damage.]),
 		("Claws", [Melee Attack: +8 to hit, reach 5 ft., one target. _Hit:_ 2d4+5 slashing damage plus 4d6 cold damage.]),
 		("Tail", [Melee Attack: +8 to hit, reach 10 ft., one target. _Hit:_ 2d6+5 piercing damage plus 4d6 cold damage.]),
-		("Wall of Ice (Recharge 6)", [The fiend magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter. \ When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 15 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one. \ The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 15 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes. \ For purposes of _unbind_, this counts as a spell of aether cost 12.]),
+		("Wall of Ice (Recharge 6)", [The fiend magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter. \ When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 15 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one. \ The wall lasts for 1 minute or until the fiend is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 15 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes. \ For purposes of #safe-link("unbind",[_unbind_]), this counts as a spell of aether cost 12.]),
 	),
 ))
 
@@ -323,7 +322,7 @@ The hierarchy of regularly summoned forms goes (from weakest to strongest)
 	),
 ))
 
-== Fiendish Beasts
+== Fiendish Beasts <fiendish-beasts>
 
 These natural-seeming creatures have been exposed to fiendish energies, becoming themselves fiendish in large measure. As mortals, they are not vulnerable to silver but truly die when killed.
 

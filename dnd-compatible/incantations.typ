@@ -1,0 +1,1294 @@
+#import "@preview/dragonling:0.3.1": *
+
+#show: dndmodule.with(
+  title: "Incantations",
+  subtitle: "4e Ritual Magic in 5e, Bringing Utility Magic to the Masses",
+  author: "Admiral Benbo",
+  paper: "us-letter",
+  logo: none,
+  cover: none,
+  fancy-author: true,
+  bg: none
+)
+
+#set page(margin: 15mm)
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
+
+#let flush-caption(title, subtitle) = {
+  set par(first-line-indent: 0em,spacing: 1em)
+  strong(title)
+  linebreak()
+  subtitle
+}
+
+#import "functions.typ": *
+
+= Incantations
+
+*Rituals for Everyone!*
+
+A repeated issue is that "utility" and "spells" have become virtually synonymous. This means that for a martial to gain "utility", he has to gain something indistinguishable from spells...which casters already do better.
+
+The intent of the Incantation system is to break this link entirely by turning many of the "utility" spells into incantations that anyone of the appropriate level who discovers the ceremony can enact. These are balanced by tier and components. These components may include consumable expensive items, required places, time, bloodlines, or number of casters. Note that since incantations are not spells, components must be provided explicitly and cannot be provided by a focus or component pouch.
+
+Spells eligible to be converted to incantations include those used for information gathering, those with either permanent or long-lasting (hours or more) effects, those that allow the party to travel quickly between locations or enable new movement modes (underwater, flying, etc), and those that raise the dead or remove strong conditions. Generally, those that deal damage or impose debilitating conditions in a combat environment (other than fixed-location traps and prepared defenses) are not good candidates for conversion.
+
+#breakoutbox("A More Extreme Variant")[
+You can take this one step further and _remove_ the spells being emulated here from spell lists entirely, making it so the only real way to produce those effects is through the Incantation system. But that's not a necessary part of the subsystem. They work just fine being a bonus.
+
+==== Doesn't This Provide Early Access to Several Spell Effects?
+Yup. That's because they're gated behind GM action in making the Ritual Scrolls available (for the most part). And the early-access spells aren't exactly the most powerful effects.
+]
+
+== General Rules for Incantations
+
+=== Finding and Learning Incantations
+The knowledge to perform an incantation is encoded into Incantation Scrolls. These are similar to spell scrolls of the same rarity, with the difference that they are not consumed on use but that performing the incantation requires reading from the enchanted scroll. Characters can prepare a Incantation Scroll following the same rules as crafting a spell scroll; the rarity of the incantation matches the rarity of the “spell scroll” created. 
+
+Successfully performing an incantation requires a certain strength of will above all. Mechanically, this translates into level requirements. Incantations come in similar rarities to magic items, with corresponding level requirements to perform.
+
+While incantations are not spells, they can be affected by _dispel magic_ and _antimagic field_ and effects that check for spell levels (such as the Rakshasa's Limited Magic Immunity) as if they were.
+#flush-block[
+- *Common* incantations can be learned by anyone. They correspond to spells of 1st and 2nd levels as well as cantrips. For the purposes of _dispel magic_ or effects that check the effect's level, they act as if they were 2nd level spells.
+- *Uncommon* incantations require at least someone of level 5. They generally correspond to spells of 3rd - 5th levels. For the purposes of _dispel magic_ or effects that check the effect's level, they act as if they were 5th level spells.
+- *Rare* incantations require at least someone of level 11. They generally correspond to spells of 6th - 7th levels. For the purposes of _dispel magic_ or effects that check the effect's level, they act as if they were 7th level spells.
+- *Very Rare* incantations require level 15 to perform. They generally correspond to 8th-level spells. For the purposes of _dispel magic_ or effects that check the effect's level, they act as if they were 8th level spells.
+- *Legendary* incantations require someone of level 17 to perform. They correspond to 9th-level spells. For the purposes of _dispel magic_ or effects that check the effect's level, they act as if they were 9th level spells.
+]
+
+=== Incantation Tags and Costs
+Each incantation has one or more tags that summarize the costs associated with performing the incantation. The exact details are explained in the text of the incantation entry. The tags are listed below:
+#flush-block[
+- *Cooldown (X):* This incantation can only be performed once every X amount of time. This cooldown is per participant.
+- *Costly (X):* This incantation requires a component with value of at least X (gold pieces, silver pieces, etc.), and that component is consumed per casting.
+- *Debilitating (X):* Performing this incantation is exhausting. If you perform it again before finishing a long rest, anyone participating gains X levels of exhaustion, with subsequent performances causing stacking penalties.
+- *Debilitating (Major, X):* Like Debilitating, except takes place immediately on first use per long rest as well as subsequent uses.
+- *Exclusive:* The effects of this incantation immediately end if the incantation is performed again with either the same target or same caster(s) or if the target of the incantation is targeted by any other incantation.
+- *Focus (X):* This incantation requires a component with value of at least X gp, but that component is not consumed in the casting.
+- *Group (N):* This incantation requires N people who all know the incantation. All share in any negative effects/costs. Used as a range, it indicates that it affects only those that participated.
+- *Immobile:* Those performing the incantation cannot move more than 5 feet during the time required to perform the incantation and for the duration of the incantation; if they do, the incantation fails.
+- *Location:* This incantation can only be performed at specific locations as described in the text. Implies Immobile.
+- *Special:* This marker, along with "(see text)", indicates that the cost is explained in full in the text and generally varies depending on the mode in which the incantation is used.
+]
+
+Each incantation also requires a certain amount of time to perform (generally more than one action). Since these are not spells, that does not trigger the need for concentration. Incantations that are not Group (2) or larger can be performed by multiple celebrants simultaneously. Having one or more extra participants reduces the time required by 1 step (see below) with a minimum of a full-round action. Each participant shares in the restrictions and penalties and must know the incantation to participate.
+
+==== Time Steps
+Full Round (takes effect at the beginning of the performer's next turn, requires action, bonus action, and reaction and is interrupted by any damage) #sym.arrow 1 minute #sym.arrow 10 minutes #sym.arrow 1 hour #sym.arrow 4 hours #sym.arrow 8 hours #sym.arrow 24 hours.
+
+==== Duration
+Some incantations have effects that naturally expire. Those will have a Duration tag in their summary line. This duration starts once the incantation's effects begin (so a 1 hr performance time and a 1 hour duration mean that the effect will end 2 hours after the incantation began).
+#pagebreak()
+== Alphabetical
+#flush-block[
+- Abjure Espionage (Uncommon)
+- Alarm (Common)
+- Animal Messenger (Common)
+- Antipathy/Sympathy (Very Rare)
+- Arcane Lock (Common)
+- Astral Projection (Legendary)
+- Augment Fertility (Uncommon)
+- Augury (Common)
+- Awaken Beast or Plant (Rare)
+- Binding Circle (Rare)
+- Clairvoyance (Uncommon)
+- Commune (Rare)
+- Continual Flame (Common)
+- Create Demiplane (Very Rare)
+- Create Food and Water (Uncommon)
+- Divination (Uncommon)
+- Dream Messenger (Uncommon)
+- Extradimensional Refuge (Rare)
+- Extradimensional Refuge, Minor (Common)
+- Fabricate (Rare)
+- Find the Path (Uncommon)
+- Floating Disk (Common)
+- Fly (Rare)
+- Forbiddance (Rare)
+- Gate (Legendary)
+- Geas (Rare)
+- Gentle Repose (Common)
+- Gift of Tongues, Greater (Uncommon)
+- Gift of Tongues, Lesser (Common)
+- Guards and Wards (Rare)
+- Hallow (Rare)
+- Identify (Common)
+- Illusory Script (Common)
+- Instant Summons (Uncommon)
+- Irresistible Summons (Legendary)
+- Legend Lore (Uncommon)
+- Lock-breaker's Boon (Common)
+- Magic Aura (Common)
+- Magic Mouth (Common)
+- Mending (Common)
+- Mind Blank (Very Rare)
+- Modify Memory (Rare)
+- Nondetection (Unommon)
+- Phantom Steed (Rare)
+- Planar Ally (Rare)
+- Plane Shift (Rare)
+- Private Sanctum (Uncommon)
+- Programmed Illusion (Rare)
+- Project Image (Very Rare)
+- Purify Food and Drink (Common)
+- Rapid Fortifications (Uncommon)
+- Restoration (Common)
+- Resurrection (Uncommon)
+- Scrying (Very Rare)
+- Secret Chest (Uncommon)
+- Secure Shelter (Uncommon)
+- Seeming (Rare)
+- Sending (Uncommon)
+- Sense Aura (Common)
+- Sense Location (Uncommon)
+- Shadow Creation (Rare)
+- Spell Trap (Uncommon)
+- Telepathic Bond (Uncommon)
+- Teleport (Very Rare)
+- Teleportation Circle (Rare)
+- Teleport Trap (Uncommon)
+- Total Transformation (Legendary)
+- Transport via Plants (Rare)
+- Unseen Servant (Common)
+- Voice the Voiceless (Common)
+- Water Breathing (Common)
+- Water Walk (Common)
+- Zone of Truth (Uncommon)
+]
+#pagebreak()
+== Incantations by Rarity
+
+=== Common Incantations
+Common incantations are suitable to be found by Tier 1 adventurers, ie in levels 1-4, although many have effects that are still valuable much later.
+
+#flush-caption("Alarm","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: N/A
+- _Duration_: 8 hours
+]
+
+You set an alarm against unwanted intrusion. Choose a door, a window, or an area within 60 ft that is no larger than a 20-foot cube. Until the incantation effect, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the incantation, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.
+
+A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.
+
+#flush-caption("Animal Messenger","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Costly (see text)
+- _Duration_: 24 hours (see text)
+]
+
+By means of this incantation, you use an animal to deliver a message. Choose a Tiny beast you can see within 60 ft, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the incantation toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.
+
+When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the incantation ends, the message is lost, and the beast makes its way back to where you cast this incantation.
+
+*Special:* By burning a sachet of costly herbs worth at least 10 gp while performing this incantation, you can extend the duration by 24 hours for the first 10 gp worth of herbs and 24 hours for every 50 gp of herbs after that.
+
+#flush-caption("Arcane Lock","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Costly (25 gp of gold dust)
+- _Duration_: Until dispelled
+]
+
+You touch a closed door, window, gate, chest, or other entryway, and it becomes locked until dispelled. You and the creatures you designate when you cast this incantation can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this effect for 1 minutes Use of the lock picks created by _lock-breaker's boon_ suppresses this effect for that pick attempt.
+
+While affected by this incantation, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.
+
+#flush-caption("Augury","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (specially marked sticks, bones, or other tokens worth at least 25 gp), Special (see text)
+- _Duration_: Instantaneous
+]
+
+By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherwise uninterested otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens:
+
+- Weal, for good results
+- Woe, for bad results
+- Weal and woe, for both good and bad results
+- Nothing, for results that aren't especially good or bad
+
+The incantation doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
+
+*Special:* If you perform the incantation two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.
+
+#flush-caption("Continual Flame","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Costly (ruby dust worth 50 gp), Cooldown (1 hour)
+- _Duration_: Until dispelled
+]
+
+A flame, equivalent in brightness to a torch, springs forth from an Tiny object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched.
+
+#flush-caption("Extradimensional Refuge, Minor","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Debilitating (1)
+- _Duration_: 1 hour
+]
+
+You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the incantation ends. The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space. Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see and hear out of it as if through a 3-foot-by-5 foot window centered on the rope. This window and the space beyond is invisible to creatures outside unless they have Truesight.
+
+Anything inside the extradimensional space drops out when the incantation ends. This extradimensional space does not interact with Bags of Holding or other similar objects.
+
+#flush-caption("Floating Disk","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive
+- _Duration_: 1 hour
+]
+
+This incantation creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within 10 feet. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the incantation ends, and everything on the disk falls to the ground.
+
+The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the effect ends.
+#pagebreak()
+#flush-caption("Gentle Repose","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: Full round
+- _Tags_: Costly (2 cp)
+- _Duration_: 10 days
+]
+
+This incantation prevents the decay of corpses for the duration, prolonging the time over which the Resurrection incantation can be performed while still counting as an uncommon effect. This also increases the time that the Revivify spell will work. While in effect, it also prevents the raising of the target as undead.
+
+#flush-caption("Gift of Tongues, Lesser","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: Full round
+- _Tags_: Costly (a small golden fish worth 1 gp)
+- _Duration_: 1 hour
+]
+
+For the duration, you understand the literal meaning of any spoken language that you heare You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
+
+This incantation doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.
+
+#flush-caption("Identify","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (a pearl worth 100 gp and an owl feather)
+- _Duration_: Instantaneous
+]
+
+You choose one object that you must touch throughout the casting of the incantation. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. If you instead touch a creature throughout the casting, you learn what spells or magical effects, if any, are currently affecting it. Some effects (such as _magic aura_) may deceive this incantation and many more powerful effects simply cannot be detected this way.
+
+#flush-caption("Illusory Script","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (a lead-based ink worth at least 10 gp)
+- _Duration_: 10 days
+]
+
+You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration. To you and any creatures you designate when you cast the incantation, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know. Should the incantation be dispelled, the original script and the illusion both disappeare A creature with truesight can read the hidden message.
+
+#flush-caption("Lock-breaker's Boon","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive
+- _Duration_: 10 minutes
+]
+
+One creature touched gains proficiency with Thieves' Tools for the duration. If the target already has proficiency, they gain expertise instead. The incantation also creates a set of thieves' tools made of solid force. When these tools are used on a door that was locked via Arcane Lock, the magical lock is suppressed for the duration of the attempt.
+#pagebreak()
+#flush-caption("Magic Aura","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (silk worth 10 gp)
+- _Duration_: 24 hours (see text)
+]
+
+You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.
+
+When you cast the incantation, choose one or both of the following effects. The effect lasts for the duration. If you cast this incantation on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.
+#flush-block[
+- *False Aura.* You change the way the target appears to spells and magical effects, such as sense aura or identify, that detect magical auras. You can make a non-magical object appear magical, a magical object appear non-magical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item.
+- *Mask.* You change the way the target appears to spells and magical effects that detect creature types, such as a oathbound's Divine Sense or the trigger of a Spell Trap incantation. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment. This allows a masked creature, for example, to bypass such things as glyphs of warding keyed to creature type.
+]
+
+#flush-caption("Magic Mouth","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (10 gp, a small bit of honeycomb and jade dust)
+- _Duration_: Until dispelled
+]
+
+You implant a message within an object you touch, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the incantation to deliver your message.
+
+When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this incantation, you can have the incantation end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.
+
+The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the GM.
+
+#flush-caption("Mending","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: N/A
+- _Duration_: Instantaneous
+]
+
+This incantation repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This incantation can physically repair a magic item or construct, but the incantation can't restore magic to such an object.
+#pagebreak()
+#flush-caption("Purify Food and Drink","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: N/A
+- _Duration_: Instantaneous
+]
+
+All non-magical food and drink within a 5-foot-radius sphere centered on a point of your choice within 10 ft is purified and rendered free of poison and disease. This does not affect creatures, even if you identify as an anthropophage.
+
+#flush-caption("Restoration","")
+#flush-block[
+- _Rarity_: Common (see text)
+- _Cast Time_: See text
+- _Tags_: Costly (see text)
+- _Duration_: Instantaneous
+
+]
+
+This incantation removes afflictions. The power depends on the time spent and the components expended.
+#flush-block[
+- *Lesser Restoration* (Full round, diamond dust worth 10 gp): The creature touched at the end of this incantation is cured of one disease afflicting it or one of the following conditions: blinded, deafened, paralyzed, or poisoned)
+- *Greater Restoration* (1 hour, 100 gp of diamond dust, requires 5th level): The creature touched at the end of this incantation either reduces their exhaustion level by one or has one of the following effects ended:
+]
+- One effect that charmed or petrified the target
+- One curse, including the target's attunement to a cursed magic item
+- Any reduction in one of the target's ability scores
+- One effect reducing the target's hit point maximum
+
+#flush-caption("Sense Aura","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive
+- _Duration_: 10 minutes
+]
+
+This incantation opens your senses to more clearly sense the auras around creatures and objects. Choose one of the following.
+#flush-block[
+- *Sense Otherworldly Nature.* You sense the aura associated with creatures with True Names. For the duration, you can determine whether a creature you see is an undead, fiend, celestial, fey, or elemental. You know the type and the general nature (such as zombie, vampire, demon, etc.) of the creature, but you don't know their personal identity (e.g. the Arch-zombie Bob). You can also sense the presence of areas that are affected by the _hallow_ incantation, similar effects, or are heavily associated with Astral or Abyssal energies.
+- *Sense Aether Manipulation.* You sense the auras associated with active aetheric abilities. For the duration, you can sense any magical effect or item within 60 ft of you and have an idea as to its strength. The GM will tell you the equivalent rarity of the effect. You also gain a sense of the type of magic involved and whether it is protective, baleful, or beneficial to the one that it is affecting or that would trigger it. For example, a magical trap that causes a burst of fire would be baleful, while a wall of force would be protective.
+]
+
+#flush-caption("Unseen Servant","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (1 gp)
+- _Duration_: 1 hour
+]
+
+This incantation creates an invisible, mindless, shapeless force that performs simple tasks at your command until the incantation ends. The servant springs into existence in an unoccupied space on the ground within 15 feet. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the effect ends.
+
+Once on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command. It cannot take any action that would directly or foreseeably cause damage or to another creature (as decided by the GM). If a command is rejected due to causing harm, you can give it a different command with that same bonus action.
+
+If you command the servant to perform a task that would move it more than 60 feet away from you, the effect ends.
+
+#flush-caption("Voice the Voiceless","")
+#flush-block[
+- _Rarity_: Common (see text)
+- _Cast Time_: 10 minutes
+- _Tags_: Special (see text)
+- _Duration_: 10 minutes
+]
+
+Choose one of the following modes.
+#flush-block[
+- *Animal.* You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion..
+- *Plants.* You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the incantation's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.
+You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the GM's discretion. The incantation doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks.
+-If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it. This incantation can cause the plants created by the entangle spell to release a restrained creature.
+- *Corpse.* (requires level 5 and imposes Debilitating (1)): You grant the semblance of life and intelligence to a corpse of your choice within 5 feet, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The incantation fails if the corpse was the target of this incantation within the last 10 days.
+- Until the incantation ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This incantation doesn't return the creature's soul to its body; it only animates the corpse and accesses the latent memories still present. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.
+]
+
+#flush-caption("Water Breathing","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive
+- _Duration_: 24 hours
+]
+
+This incantation grants up to ten willing creatures you can see within 30 ft the ability to breathe underwater until the incantation ends. Affected creatures also retain their normal mode of respiration.
+
+#flush-caption("Water Walk","")
+#flush-block[
+- _Rarity_: Common
+- _Cast Time_: 10 minutes
+- _Tags_: N/A
+- _Duration_: 1 hour
+]
+
+This incantation grants the ability to move across any liquid surface---such as water, acid, mud, snow, quicksand, or lava---as if it were solid ground (creatures crossing dangerous surfaces such as molten lava can still take damage or suffer other negative effects from contact but will not become immersed or mired in the liquid). Up to ten willing creatures you can see within 30 feet gain this ability for the duration. If you target a creature submerged in a liquid, the incantation carries the target to the surface of the liquid at a rate of 60 feet per round.
+
+=== Uncommon Incantations
+Uncommon incantations are suitable to be first found during first half of Tier 2, ie levels 5-7.
+#flush-caption("Abjure Espionage","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Debilitating (1)
+- _Duration_: 1 hour
+]
+
+You ward a 30 feet sphere around you against spying magics for 1 hour. Any spell or effect that would allow someone not in the area to see or hear the interior fails; no sound or vision can see into the area from the outside.
+
+*Special:* if you expend a pearl worth at least 100 gp while performing this incantation, you can instead cause any foiled scrying attempt to see or hear a scene that you designate when you cast the incantation. This scene can last up to 10 minutes, after which it loops to the beginning.
+
+#flush-caption("Augment Fertility","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 8 hours
+- _Tags_: Cooldown (1 week), Location (the place to be enriched)
+- _Duration_: One year
+]
+
+You enrich the land. All plants in a half-mile radius centered on your location become enriched for 1 yeare The plants yield twice the normal amount of food when harvested. This has no effect on non-food plants or animals; nor does it cause the plants to be ready for harvest earlier.
+
+#flush-caption("Clairvoyance","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing), Costly (herbs and incense worth 25 gp), Immobile.
+- _Duration_: 10 minutes
+]
+
+You create an invisible sensor within 1 mile in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be interacted with except as below.
+
+When you cast the incantation, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As an action you can switch between seeing and hearing.
+
+A creature that can see the sensor (such as a creature benefiting from _see invisibility_ or who has truesight) sees a luminous, intangible orb about the size of your fist and can attack it. It counts as an object with AC 10, 1 hit point, and is immune to all damage except from weapon attacks. If it is reduced to zero hit points or successfully dispelled via _dispel magic_ or similar effects, the effect immediately ends.
+
+#flush-caption("Create Food and Water","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 minute
+- _Tags_: Costly (45 sp), Exclusive, Cooldown (1 day)
+- _Duration_: See text
+]
+
+You create 45 pounds of food and 30 gallons of water on the ground or in containers within 10 feet, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.
+
+#flush-caption("Divination","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (incense and an appropriate sacrificial offering worth at least 25 gp), Immobile, Cooldown (8 hours.
+- _Duration_: Instantaneous
+]
+
+Your magic and an offering put you in contact with a god or a god's servants with whom you have a pre-existing relationship (which could be as simple as being in a shrine sanctified to them). You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The GM offers a truthful reply, but the reply might be slanted to fit that entity's interests or knowledge or concerns. The reply might be a short phrase, a cryptic rhyme, or an omen.
+
+The incantation doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
+
+#flush-caption("Dream Messenger","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (a body part, lock of hair, nail clipping, or some similar portion of the intended target), Immobile.
+- _Duration_: Up to 8 hours (see text).
+]
+
+This incantation shapes a creature's dreams. Choose a creature known to you as the target of this incantation. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this incantation. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.
+
+If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the incantation. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the incantation early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the incantation, the messenger knows it, and can either end the trance (and the incantation) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.
+
+The target is aware of the identity of the messenger and can choose to reject the message. If they do so, the incantation immediately ends.
+
+#flush-caption("Find the Path","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (a set of divinatory tools---such as bones, ivory sticks, cards, teeth, or carved runes---worth 100 gp)
+- _Duration_: 24 hours
+]
+
+This incantation allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as “a green dragon's lair”), the incantation fails.
+
+For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.
+
+#flush-caption("Gift of Tongues, Greater","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (a golden tongue worth 100 gp)
+- _Duration_: 1 hour
+]
+
+This incantation grants the creature you touch the ability to understand any spoken language it hears for one hour. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
+
+#flush-caption("Instant Summons","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (sapphire worth 1000 gp)
+- _Duration_: Until dispelled, see text
+]
+
+You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The incantation leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this incantation, you must use a different sapphire. At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the incantation ends.
+
+If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment. _Dispel magic_ or a similar effect successfully applied to the sapphire ends this incantation's effect.
+
+#flush-caption("Legend Lore","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 hour
+- _Tags_: Focus (four ivory strips worth at least 50 gp each), Costly (incense worth at least 250 gp)
+- _Duration_: Instantaneous
+]
+
+Name or describe a person, place, or object. The incantation brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales, forgotten stories, or even secret lore that has never been widely known. If the thing you named isn't of legendary importance, you gain no information. The more information you already have about the thing, the more precise and detailed the information you receive is.
+
+The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the incantation might yield this information: “Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of the Lord of the Anvil, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.”
+
+#flush-caption("Nondetection","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (a pinch of diamond dust worth 25 gp sprinkled over the target), Exclusive
+- _Duration_: 8 hours
+]
+
+For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic (including the Identify or Sense Aura incantations) or perceived through magical scrying sensors.
+
+#flush-caption("Private Sanctum","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 hour
+- _Tags_: Exclusive, Debilitating (Major, 1)
+- _Duration_: 24 hours
+]
+
+You make an area within 30 feet magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The effect lasts for the duration or until you use an action to dismiss it. When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:
+
+- Sound can't pass through the barrier at the edge of the warded area.
+- The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.
+- Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.
+- Creatures in the area can't be targeted by information-gathering effects, including telepathy, unless they are willing to be affected.
+- Nothing can teleport into or out of the warded area.
+- Planar travel is blocked within the warded area.
+
+Performing the incantation on the same spot every day for a year makes this effect permanent.
+
+#flush-caption("Rapid Fortifications","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Cooldown (10 minutes), Debilitating (1), Immobile
+- _Duration_: Permanent
+]
+
+A non magical, permanent wall of solid stone forms at a point you choose within 120 ft over the duration of the incantation. The wall is 6 inches thick and is composed of ten 10-foot- by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the incantation is interrupted, the wall disappears.
+
+The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this incantation to bridge a chasm or create a ramp.
+
+If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the edge of the panels to create crenellations, battlements, and so on, but cannot create openings within a panel.
+
+The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.
+
+#flush-caption("Resurrection","")
+#flush-block[
+- _Rarity_: Uncommon (see text)
+- _Cast Time_: Varies (see text)
+- _Tags_: Special (see text)
+- _Duration_: Instantaneous
+]
+
+This incantation is capable of restoring life to the dead. The cost and requirements depend on the condition of the target. The target must be a creature that did not die of old age and is not undead. Mortal wounds are healed, as well as any disease or poison that affected the target, and the creature is restored to 1 hit point.
+
+If the target has been dead less than 10 days and the body is intact, this incantation has a minimum casting level of 5. Enacting this incantation requires an hour of casting and consumes 500 gold pieces worth of diamonds but no other requirements.
+
+If the target has been dead 10 or more days but less than 100 years, this incantation has a minimum casting level of 11. Enacting this incantation requires 8 hours of casting and consumes 5,000 gold pieces worth of diamonds. Unless performed in a sanctified location or by a cleric with the Life domain, enacting this form requires Group (2).
+
+If the target has been dead for more than 100 years or the body is destroyed, this incantation has a minimum casting level of 17. Enacting this incantation requires a Group (4), 24 hours, and 15,000 gold pieces worth of diamonds. Unless one of the participants is a cleric of the Life domain or the incantation is performed in a sanctified location (via the _hallow_ incantation or other means), the target cannot regain hit points or any rest-based resource for 8 days and all participants and the target gain 2 levels of exhaustion.
+
+#flush-caption("Sending","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: Full round
+- _Tags_: Focus (a predetermined object given to the target)
+- _Duration_: 1 minute
+]
+
+You converse with a creature who possesses a token you willingly gave away as an identifying mark. You did not necessarily have to give it to that particular person, as you are sending to the bearer of the mark, whoever that might be. When you complete the incantation, you know if the person holding it is familiar to you, and if so, you know who it is, and can abort the incantation at that point. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The incantation enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.
+
+You can talk across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 95 percent chance that the link does not form. The entire conversation must last less than 1 minute, but both sides can speak as many words as will fit in that time. The cooldown applies per sender.
+
+*Special* If both you and the target are willing, you can prolong the conversation by adding Debilitating (N), where N is 1 for every additional minute spent. This does not impose penalties on this conversation, but does on any subsequent performances before you finish a long rest. The hearer also suffers this penalty if they attempt the incantation again before finishing a long rest.
+
+#flush-caption("Sense Location","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: Full round
+- _Tags_: Debilitating (1), Focus (see text)
+- _Duration_: 1 hour
+]
+
+Choose either a type of animal or plant, a specific creature familiar to you, or an object that is familiar to you.
+#flush-block[
+- *Animal or plant.* Requires a focus of a carving of an animal or plant. Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.
+- *Creature.* A carving of an eye worth at least 25 gp. Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
+- The incantation can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close---within 30 feet---at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this incantation doesn't locate the creature. This incantation can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.
+- *Object.* A short forked stick. Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.
+- The incantation can locate a specific object known to you, as long as you have seen it up close---within 30 feet---at least once. Alternatively, the incantation can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon. This incantation can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.
+]
+
+#flush-caption("Secret Chest","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Focus (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp)
+- _Duration_: Until dispelled
+]
+
+You hide a chest and all its contents in the Border Shadow. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).
+
+While the chest remains in the Border Shadow and protected by this magic, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Border Shadow by using an action and touching both the chest and the replica. While protected and in the Border Shadow, the chest and its contents cannot be detected or interacted with except by summoning it back to your presence.
+
+This effect ends if you cast this incantation again, if the smaller replica chest is destroyed, or if you choose to end the effect as an action. If the effect ends and the larger chest is in the Border Shadow, it is untethered and unprotected by the magic and may be discovered by other creatures traveling through that place.
+
+#flush-caption("Secure Shelter","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive, Focus (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp)
+- _Duration_: 8 hours
+]
+
+A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The effect ends if you leave its area.
+
+Nine creatures of Medium size or smaller can fit inside the dome with you. The incantation fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this incantation can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't target creatures or points on the other side of the dome, but this does not block teleportation effects such as dimension door. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. This incantation cannot be performed while immersed in a liquid such as being underwater.
+
+Until the effect ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.
+The dome of force is an object with an AC of 10 and a damage threshold of 10. Any attack or effect dealing more damage to the dome than this forces the performer of the incantation to make a Constitution saving throw as if he were concentrating on a spell and had taken that amount of damage. On a failed save, the dome vanishes.
+
+#flush-caption("Spell Trap","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 hour
+- _Tags_: Costly (incense and powdered diamond worth at least 500 gp), Immobile
+- _Duration_: Until dispelled
+]
+
+When you cast this incantation, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this incantation, the glyph is broken, and the incantation ends without being triggered. The incantation cannot be performed in a demiplane or other extraplanar space. If the object on which it is inscribed is moved into such an extraplanar space, the effect immediately ends without being triggered.
+
+The glyph is nearly invisible and requires a successful DC 15 Intelligence (Investigation) check to be found.
+
+You decide what triggers the glyph when you cast the incantation. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this incantation ends.
+
+You can further refine the trigger so the incantation activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password. The glyph has no special senses and passive perception 10, but can detect creature types and counts as a divination effect for things like mind blank and nondetection.
+
+When you inscribe the glyph, choose explosive runes or a spell glyph.
+#flush-block[
+- *Explosive Runes.* When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a DC 15 Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.
+- *Spell Glyph.* You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area must either deal damage to its target(s), impose a negative condition on them, or conjure a creature hostile to the one who triggers it. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.
+]
+
+#flush-caption("Telepathic Bond","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 10 minutes
+- _Tags_: Group (2-8)
+- _Duration_: 1 hour
+]
+
+You forge a telepathic link among up the participants, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this effect. Until the effect ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication ends for a participant if they move more than 1 mile away from the nearest other participant or if they move to another plane of existence.
+
+#flush-caption("Teleport Trap","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Debilitating (1)
+- _Duration_: 24 hours
+]
+
+You ward an area up to 1000 sq ft by 20 feet tall against teleportation for 24 hours. Choose one of the options below.
+#flush-block[
+- *Imprison.* When a creature attempts to teleport out of or within the area, they must make a DC 15 Charisma saving throw. On a failed save, they are teleported to an location you designate within the area and stunned for one minutes Stunned targets can repeat the saving throw at the end of each of their turns, ending the stun effect on a save. On a success, the teleport succeeds normally but you are aware that it happened.
+- *Misdirect.* When a creature attempts to teleport into the warded area, they must make a DC 15 Charisma saving throw. On a failed save, they instead are shunted to a false destination (see the _teleport_ description). On a success, the teleport succeeds normally but you are aware that it happened and the creature does not appear until 1 minute after it should have normally appeared.
+]
+
+#flush-caption("Zone of Truth","")
+#flush-block[
+- _Rarity_: Uncommon
+- _Cast Time_: 1 minute
+- _Tags_: Immobile
+- _Duration_: 1 minute
+]
+
+You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within 10 feet. Until the incantation ends, a creature that enters the incantation's area for the first time on a turn or starts its turn there must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Wisdom modifier. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.
+
+An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.
+
+=== Rare Incantations
+Rare incantations are suitable to be found during for the latter half of Tier 2 play or later, ie levels 8-10 or higher.
+
+#flush-caption("Awaken Beast or Plant","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 8 hours
+- _Tags_: Costly (agate worth 1000 gp), Immobile, Debilitating (Major, 3)
+- _Duration_: Permanent
+]
+
+After spending the casting time tracing magical pathways within a precious gemstone (the consumed component), you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your GM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree.
+
+The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.
+
+#flush-caption("Binding Circle","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 hour
+- _Tags_: Costly (a jewel worth at least 1000 gp), Immobile, Location (a prepared incantation circle large enough for the target creature), Exclusive
+- _Duration_: 24 hours
+]
+
+With this incantation, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be inside the prepared incantation circle for the entire casting of the incantation, and you must be within 10 feet of the circle for the entire casting. At the completion of the casting, the target must make a Charisma saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failed save, it is bound to attempt a single task you specify at the end of the casting. If the creature was summoned or created by a spell, the other incantation immediately ends but the creature does not disappear until the incantation expires.
+
+A bound creature must follow your instructions to the best of its ability. You might command the creature to guard a location, assassinate a target, or to deliver a message. The task must have a clear, fixed end condition and cannot be changed once assigned. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the incantation ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the incantation ends.
+
+A creature bound in this way cannot be bound again for a full year and a day after completing their binding. As binding a creature in this way involves compelling them by the True Words that comprise their essence, which is a very uncomfortable and agonizing process, creatures bound this way are almost invariably unfriendly to the performer after being released.
+
+Note: The specificity of the task is a conversation between you and the GM. The intent is to make it clear when the task is over and avoid open-ended tasks.
+
+*Special:* By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
+
+#flush-caption("Commune","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Location (see text), Cooldown (see text)
+- _Duration_: Instantaneous
+]
+
+You commune with a deity, primal spirits, or an non-deific otherworldly entity.
+#flush-block[
+- *Deity:*  You can ask up to three yes or no questions. You receive an honest answer, but the deity is not guaranteed to know the answer. Divine beings aren't necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.
+- This incantation requires a pre-existing relationship with a deity and an environment attuned to the deity in question (such as a shrine, consecrated location, or the presence of holy symbols of that deity). Contacting this same deity again before completing a long rest angers the deity and they will refuse to answer.
+- *Primal Spirits (Nature):* You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the incantation gives you knowledge of the land within 3 miles of you. In caves and other underground settings or in towns, the radius is limited to 300 feet.
+- You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
+]
+- terrain and bodies of water
+- prevalent plants, minerals, animals, or peoples
+- powerful celestials, fey, fiends, elementals, or undead
+- influence from other planes of existence
+- buildings
+#flush-block[
+- For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.
+- Nature spirits are capricious, and communing again before moving out of range of the initial communion (ie 3 miles outdoors or 300 feet in caverns, underground settings or settlements) results in at least one lie.
+- *Other entity:* You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this incantation, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.
+- On a successful save, you can ask the entity up to five questions. You must ask your questions within 1 minute of finishing the incantation. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question). Each time you perform this incantation again before finishing a long rest increases the DC of the saving throw by 5. The answers will generally be honest, but may be misleading depending on the entity's outlook and knowledge. If a one-word answer would be unintentionally misleading, the GM may answer as a short phrase instead.
+]
+
+#flush-caption("Extradimensional Refuge","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive, Focus (a jeweled model of a house worth at least 1500 gp)
+- _Duration_: 24 hours
+]
+
+You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the incantation can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. This extradimensional space does not interact with items such as the Bag of Holding.
+
+Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this incantation dissipate into smoke if removed from the mansion. When the effect ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.
+
+#flush-caption("Fabricate","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 hour
+- _Tags_: Debilitating (2), Costly (see text)
+- _Duration_: Permanent
+]
+
+You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool. If you are creating an item out of metal, the metal must have been refined from ore previously.
+
+Choose raw materials that you can see within 30 feet. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the incantation is commensurate with the quality of the raw materials. No matter what you create, you can only create a single object at a time, and the entire object must be created out of the same material.
+
+Creatures or magic items can't be created or transmuted by this incantation. You also can't use it to create items that ordinarily require a high degree of craftsmanship such as jewelry, exotic weapons (such as firearms), glass, or fitted armor (plate or half-plate).
+
+*Special:* The costly component required is an additional 50% of the amount of material used in the final product. Thus, casting this incantation requires the necessary raw materials for the item itself as well as an additional 50% of those same materials that is consumed by the incantation.
+
+#flush-caption("Fly","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 minute
+- _Tags_: Exclusive, Debilitating (1)
+- _Duration_: 10 minutes
+]
+
+Up to four willing creatures within 10 ft gain a flying speed of 60 feet for the duration. When the effect ends, the target falls if it is still aloft, unless it can stop the fall.
+
+*Special:* If you take 10 minutes and expend a golden feather worth 100 gp, it can affect up to 8 creatures.
+
+#flush-caption("Forbiddance","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 hour
+- _Tags_: Costly (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1000 gp), Immobile
+- _Duration_: 24 hours
+]
+
+You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate or irresistible summons incantations, to enter the area. The incantation proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Border Shadow, Feywild, Shadowfell, or the plane shift effect (incantation or spell).
+
+In addition, the incantation damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the incantation's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this incantation).
+
+When you cast this incantation, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the incantation.
+
+If you cast this incantation where it would overlap the area of a different forbiddence effect (from you or anyone else), the original effect supersedes this one in the overlapping area. If you cast forbiddance every day for 30 days in the same location, the incantation lasts until it is dispelled.
+
+#flush-caption("Geas","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 minute
+- _Tags_: Debilitating (1)
+- _Duration_: 30 days
+]
+
+You place a magical command on a creature that you can see within 30 feet, forcing it to carry out some service or refrain from some action or course of activity as you decide. The course of action must have clear boundaries---"give all your wealth to the poor within 30 days" is appropriate, but "serve me however I wish" isn't because it isn't clear what exactly would break it. Should you issue a suicidal command (one that obviously requires the creature's death), the effect ends. If the creature can understand you, it must succeed on a DC 17 Wisdom saving throw or become charmed by you for the duration. A charmed creature who attempts to break the geas must make the saving throw again. On a failure, the creature is compelled to uphold the geas. On a success, the creature can act as it chooses, but suffers a consequence of your choosing from the list below:
+
+- suffers the effect of any spell of 5th level or lower as if they'd failed whatever saving throw the spell in question requires. The effect must be negative for the creature in question, and it lasts for the entire duration without concentration.
+- is wracked with pain, gaining 5 levels of exhaustion immediately.
+- is tormented by guilt and is unable to benefit from a rest for 8 days (other than to stave off exhaustion).
+
+After suffering the penalty, the geas ends and you become aware that the creature has broken the compulsion. A creature that can't understand you is unaffected by the effect. You can end the effect early by using an action to dismiss it. A _remove curse_ spell, or _restoration_ incantation (requires the more costly version) also ends it.
+
+*Special:* You can choose to make this Debilitating (Major, 2) to increase the duration to a year and a day.
+
+#flush-caption("Guards and Wards","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 hour
+- _Tags_: Cooldown (12 hours), Costly (burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood worth 10 gp), Focus (a small silver rod worth at least 20 gp)
+- _Duration_: 24 hours
+]
+
+You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the incantation.
+
+When you cast this incantation, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
+
+This incantation creates the following effects within the warded area.
+
+- Corridors. Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.
+- Doors. All doors in the warded area are magically locked, as if sealed by an arcane lock effect. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the _minor illusion_ spell) to make them appear as plain sections of wall.
+- Stairs. Webs fill all stairs in the warded area from top to bottom, as the _web_ spell. These strands regrow in 10 minutes if they are burned or torn away while the guards and wards effect lasts.
+- Other Spell Effect. You can place your choice of one of the following magical effects within the warded area of the stronghold. .
+  - Place _dancing lights_ in four corridors. You can designate a simple program that the lights repeat as long as guards and wards effect lasts.
+  - Place a _magic mouth_ in two locations.
+  - Place a _stinking cloud_ in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.
+  - Place a constant _gust of wind_ in one corridor or room.
+  - Place a _suggestion_ in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.
+ .
+The whole warded area radiates magic. A _dispel magic_ cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one yeare
+
+#flush-caption("Hallow","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 24 hours
+- _Tags_: Group (2), Debilitating (Major, 2), Costly (herbs, oils, and incense worth at least 1000 gp)
+- _Duration_: Until dispelled
+]
+
+You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet. This effect does not stack even if different extra effects are chosen. The affected area is subject to the following effects.
+
+First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.
+
+Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the GM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the incantations's area for the first time on a turn or starts its turn there, it can make a DC 17 Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.
+
+- *Courage.* Affected creatures can't be frightened while in the area.
+- *Darkness*. Darkness fills the area. Normal light, as well as magical light created by spells of a 4th or lower level, can't illuminate the area.
+- *Daylight.* Bright daylight fills the area. Magical darkness created by spells of 4th or lower level can't extinguish the light.
+- *Energy Protection.* Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+- *Energy Vulnerability.* Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+- *Everlasting Rest.* Dead bodies interred in the area can't be turned into undead.
+- *Extradimensional Interference.* Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means.
+- *Fear.* Affected creatures are frightened while in the area.
+- *Silence.* No sound can emanate from within the area, and no sound can reach into it.
+- *Tongues.* Affected creatures can communicate with any other creature in the area, even if they don't share a common language.
+
+*Special:* Clerics and paladins in good standing ignore the immediate debilitating effect, treating it as Debilitating (2) instead.
+
+#flush-caption("Modify Memory","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: Full round
+- _Tags_: Focus (a gold and clockwork pendant worth at least 1000 gp), Immobile, Debilitating (Major, 1)
+- _Duration_: 1 minute (see text)
+]
+
+You attempt to reshape another creature's memories. One creature that you can see must make a DC 17 Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this incantation ends, and none of the target's memories are modified. On a success, the creature is immune to this effect for 24 hours.
+
+While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.
+
+You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the effect ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the effect ends and last until dispelled.
+
+A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The GM might deem a modified memory too nonsensical to affect a creature in a significant manner.
+
+A _remove curse_ spell or _restoration_ (using the greater mode) incantation cast on the target restores the creature's true memory. 
+
+#flush-caption("Phantom Steed","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive
+- _Duration_: 1 hour
+]
+
+A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within 10 feet. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the incantation vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
+
+For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the duration expires, the steed gradually fades, giving the rider 1 minute to dismount. The effect ends immediately without fading if you use an action to dismiss it or if the steed takes any damage.
+
+#flush-caption("Planar Ally","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 hour
+- _Tags_: Immobile, Special (requires a pre-existing relationship with the entity providing the ally), Exclusive, Costly (see text).
+- _Duration_: See text
+]
+
+You beseech an otherworldly entity for aid. The being must be known to you and you must have a pre-existing relationship with them: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within 30 feet. If you know a specific creature's name, you can speak that name when you cast this incantation to request that creature, though you might get a different creature anyway (GM's choice).
+
+When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). 
+
+You must be able to communicate with the creature to bargain for its services. All tasks must have a clearly-defined duration and terms. Throughout its service, it acts as it sees fit and is not under your control, although it will follow through on the bargain to the best of its ability
+
+Payment can take a variety of forms. A celestial might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.
+
+As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minutes A task measured in hours requires 1,000 gp per hour. And a task measured in days (up to 10 days) requires 10,000 gp per day. The GM can adjust these payments based on the circumstances under which you cast the incantation. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.
+
+After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.
+
+#flush-caption("Plane Shift","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 minute
+- _Tags_: Focus (a forked, metal rod worth at least 250 gp, attuned to the desired destination plane), Cooldown (24 hours)
+- _Duration_: Instantaneous
+]
+
+You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms and roll 1d10. On an even result you appear in or near that destination; on an odd result you end up some distance away. The exact location when used this way is up to the GM.
+
+Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, roll 1d6. On a roll of 2-6, the incantation takes you to that location. On a roll of 1, you end up at a point of the GM's choice near the circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
+
+The focus component counts as a magic item of varying rarity---forks attuned to the Material plane are Common while those attuned elsewhere range from Uncommon (Beastholm, Mirrorhaven) to Rare (other planes).
+
+#flush-caption("Programmed Illusion","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 minute
+- _Tags_: Focus (a forked, metal rod worth at least 250 gp, attuned to the desired destination plane), Cooldown (24 hours)
+- _Duration_: Instantaneous
+]
+
+You create an illusion of an object, a creature, or some other visible phenomenon within 30 feet that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the incantation how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.
+
+When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again.
+
+The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions (as if the area had a passive perception of 10 and no particular senses) that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase.
+
+Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 15 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
+
+*Special:* You can have a number of these illusions equal to your proficiency bonus active at any given time. Performing the incantation again when you have the maximum number makes the oldest effect end immediately.
+
+#flush-caption("Seeming","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Exclusive
+- _Duration_: 8 hours
+]
+
+This incantation allows you to change the appearance of any number of willing creatures that you can see within 30 feet. You give each target you choose a new, illusory appearance. 
+
+The incantation disguises physical appearance as well as clothing, armor, weapons, and equipment. You can make each creature seem 1 foot shorter or taller and appear thin, fat, or in between. You can't change a target's body type, so you must choose a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The incantation lasts for the duration, unless you use your action to dismiss it sooner.
+
+The changes wrought by this incantation fail to hold up to physical inspection. For example, if you use this incantation to add a hat to a creature's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature's head and hair. If you use this incantation to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
+
+A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 17. If it succeeds, it becomes aware that the target is disguised.
+
+#flush-caption("Shadow Creation","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (see text), Focus (see text), Exclusive
+- _Duration_: See text
+]
+
+You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within 10 feet: soft goods, rope, wood, or something similare You can also use this incantation to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5 ft foot cube, and the object must be of a form and material that you have seen before.
+
+The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
+
+#dndtab("Shadow Creation Cost", columns: (1fr, 1fr),
+  "Material", "Duration", "Cost",
+  "Vegetable Matter", "1 day", "0 gp",
+  "Stone, Crystal, or Regular Metals", "12 hours", "10 gp",
+  "Precious Metals", "1 hour", "50 gp",
+  "Gems", "10 minutes", "100 gp",
+  "Adamatine or mithral", "1 minute", "500 gp"
+)
+
+Using any material created by this incantation as another spell's material component causes that spell to fail.
+
+*Special:* The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
+
+#flush-caption("Teleportation Circle","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Costly (rare chalks and inks infused with precious gems worth 50 gp), Cooldown (8 hours), Immobile
+- _Duration_: 6 seconds
+]
+
+As you cast the incantation, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. Roll a d10 and consult the Teleportation Circle table. 
+#dndtab("Teleportation Circle Outcomes",
+  "d10 Result", "Outcome",
+  "1", "Fizzle. The portal does not appeare",
+  "2-4", "Hazard. The portal forms, but anyone passing through the portal must make a DC 15 Constitution saving throw, taking 2d10 bludgeoning damage on a failure or half as much on a success.",
+  "5-10", "Success. The portal forms as normal and poses no threat."
+)
+
+If the incantation succeeds, a shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
+
+Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence, which is a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minutes
+
+#flush-caption("Transport via Plants","")
+#flush-block[
+- _Rarity_: Rare
+- _Cast Time_: 1 minute
+- _Tags_: Cooldown (8 hours), Immobile
+- _Duration_: 1 minute
+]
+
+This incantation creates a magical link between a Large or larger inanimate plant within 10 ft and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.
+
+=== Very Rare Incantations
+Very rare incantations are suitable to be first found in Tier 3, ie levels 11-16.
+
+#flush-caption("Antipathy/Sympathy","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 1 hour
+- _Tags_: Cooldown (24 hours), Exclusive
+- _Duration_: 10 days
+]
+
+This incantation attracts or repels creatures of your choice. You target something within 10 feet, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.
+#flush-block[
+- *Antipathy.* The incantation causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it.
+- *Sympathy.* The incantation causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target. If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.
+]
+
+*Ending the Effect.* If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a DC 17 Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the incantation is allowed another Wisdom saving throw every 24 hours while the effect persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again.
+
+#flush-caption("Create Demiplane","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 1 minute
+- _Tags_: Cooldown (24 hours), Exclusive
+- _Duration_: 1 minute
+]
+
+You create a shadowy door on a flat solid surface that you can see within 30 feet. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the incantation ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.
+
+Each time you cast this incantation, you can create a new demiplane by speaking a new identifier (causing the previous one to fade back into the interplanar space), or have the shadowy door connect to a demiplane you created with a previous casting of this incantation by speaking its identifier as part of the incantation. You magically know if the identifier you choose leads to an existing demiplane. Identifiers can be any short phrase of 60 characters or less, spaces included.
+
+Additionally, if you know the identifier of a demiplane created by a casting of this incantation by another creature, you can have the shadowy door connect to its demiplane instead.
+
+#flush-caption("Mind Blank","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 1 minute
+- _Tags_: Debilitating (3)
+- _Duration_: 24 hours
+]
+
+Until the effect ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells and incantations, and the charmed condition.
+
+#flush-caption("Project Image","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 1 hour
+- _Tags_: Focus (a small replica of you, made from materials worth at least 5 gp), Cooldown (24 hours)
+- _Duration_: 24 hours
+]
+
+You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within 500 miles that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the incantation ends.
+
+You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.
+
+You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
+
+Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 18 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
+
+#flush-caption("Scrying","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 10 minutes
+- _Tags_: Focus (an object such as a crystal ball, ornate basin of water or ink, or mirror worth at least 1000 gp). Cooldown (1 hour). Debilitating (1).
+- _Duration_: 10 minutes
+]
+
+You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a DC 15 Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this incantation, it can fail the saving throw voluntarily if it wants to be observed.
+
+*Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
+
+#dndtab("Scrying Knowledge Modifiers", columns: (4fr, 1fr),
+  "Knowledge", "Save Modifier",
+  "Secondhand (you have heard of the target)", "+10",
+  "Firsthand (you have met the target or seen it via magic)", "+5",
+  "Familiar (you know the target well or have seen it in person)", "+0"
+)
+
+#dndtab("Scrying Connection Modifiers", columns: (4fr, 1fr),
+  "Connection", "Save Modifier",
+  "None", "+10",
+  "Likeness or picture", "-1",
+  "Possession or garment", "-2",
+  "Body part, lock of hair, bit of nail, or the like", "-5"
+)
+
+On a successful save, the target isn't affected, and you can't use this incantation against it again for 24 hours.
+
+On a failed save, the incantation creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist and can use _dispel magic_ to end the effect as if it was a 8th level spell.
+
+Instead of targeting a creature, you can choose a location as the target of this incantation. When you do, the sensor appears at that location and doesn't move. The GM makes a DC 15 d20 check using the Knowledge table's modifiers as the check's modifier. On a failure, the incantation fails and no sensor is created.
+
+#flush-caption("Teleport","")
+#flush-block[
+- _Rarity_: Very Rare
+- _Cast Time_: 1 minute
+- _Tags_: Cooldown (8 hours), Immobile
+- _Duration_: Instantaneous
+]
+
+This incantation instantly transports you and up to eight willing creatures of your choice that you can see within 10 feet, or a single object that you can see within 10 feet, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.
+
+The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.
+
+*Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
+
+#dndtab("Teleport Outcomes", columns: (2fr, 1fr, 1fr, 1fr, 1fr),
+  "Familiarity", "Mishap", "Similar Area", "Off Target", "On Target",
+  "Permanent circle", "01-05", "06-20", "21-40", "41-100",
+  "Associated object", "01-15", "16-40", "41-50", "51-100",
+  "Very familiar", "01-33", "34-43", "44-53", "54-100",
+  "Seen casually", "01-43", "44-53", "54-73", "74-100",
+  "Viewed once", "01-63", "64-73", "74-83", "84-100",
+  "Description", "01-63", "64-53", "74-73", "84-100",
+  "False destination", "01-50", "51-100", "---", "---",
+)
+
+*Familiarity.* “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.
+
+“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the incantation. “Seen casually” is someplace you have seen more than once but with which you aren't very familiare “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else's description, perhaps from a map.
+
+“False destination” is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.
+
+*On Target.* You and your group (or the target object) appear where you want to.
+
+*Off Target.* You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d100 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 15 on the d100, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.
+
+*Similar Area.* You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another arcanist's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the incantation has no range limit, you could conceivably wind up anywhere on the plane.
+
+*Mishap.* The incantation's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 bludgeoning damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
+
+=== Legendary Incantations
+Legendary incantations are best suited for Tier 4 play, levels 17+.
+
+#flush-caption("Astral Projection","")
+#flush-block[
+- _Rarity_: Legendary
+- _Cast Time_: 8 hours
+- _Tags_: Group (1-8), Debilitating (5), Costly (each participant must provide a jacinth worth at least 1000 gp and an ornately carved bar of silver worth at least 100 gp)
+- _Duration_: See text
+]
+
+You and up to eight willing creatures within 30 feet who participate in the incantation project your astral bodies into Border Shadow (the incantation fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.
+
+Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut---something that can happen only when an effect specifically states that it does---your soul and body are separated, killing you instantly.
+
+Your astral form can freely travel through Border Shadow and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this effect, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Any damage dealt to your astral form affects your real body as well and persists after the effect ends.
+
+The effect ends for a participant when they use their action to end it. When the effect ends for an individual, the affected creature returns to its physical body, and it awakens.
+
+The effect might also end early for you or one of your companions. A successful _dispel magic_ spell used against an astral or physical body ends the effect for that creature. If a creature's original body or its astral form drops to 0 hit points, the effect ends for that creature. If the incantation ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.
+
+#flush-caption("Gate","")
+#flush-block[
+- _Rarity_: Legendary
+- _Cast Time_: 1 hour
+- _Tags_: Cooldown (24 hours), Costly (a diamond worth at least 5000 gp)
+- _Duration_: 1 minute
+]
+
+You conjure a portal linking an unoccupied space you can see within 30 feet to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for one minutes
+
+The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.
+
+Deities and other planar rulers can prevent portals created by this incantation from opening in their presence or anywhere within their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
+
+#flush-caption("Irresistible Summons","")
+#flush-block[
+- _Rarity_: Legendary
+- _Cast Time_: 1 hour
+- _Tags_: Cooldown (24 hours), Costly (a diamond worth at least 5000 gp), Group (4)
+- _Duration_: Instantaneous
+]
+
+When you perform this incantation, you speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, a portal up to 20 feet in diameter opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the GM deems appropriate. It might leave, attack you, or help you.
+
+Deities and other planar rulers can prevent this incantation from working on any creature in their presence or anywhere in their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
+
+#flush-caption("Total Transformation","")
+#flush-block[
+- _Rarity_: Legendary
+- _Cast Time_: 24 hours
+- _Tags_: Exclusive, Location (a prepared incantation circle)
+- _Duration_: See text
+]
+Choose one creature. It must remain in the circle for the duration of the caster. At the conclusion of the incantation, the target is transformed into another creature or into a non-magical object (as described below). An unwilling creature can make a DC 19 Wisdom saving throw, and if it succeeds, it isn't affected by this incantation.
+#flush-block[
+- *Duration.* The effect lasts until dispelled or until the target is reduced to zero hit points, in which case it reverts to its original form with any excess damage carrying over. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.
+- *Creature into Creature.* If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target's (or its level, if the target doesn't have a challenge rating), but cannot be a specific unique individual. The target's game statistics, including mental ability scores, are replaced by the statistics of the new form, although it does not gain any of the listed equipment. It retains its alignment and personality.
+
+The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.
+- *Creature into Object.* If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
+]
+
+#pagebreak()
+= Legal Legalities
+
+This section contains legal stuff.
+
+#sym.copyright 2026 Admiral Benbo
+
+This work is openly licensed via (https://creativecommons.org/licenses/by/4.0/).
+
+This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+No generative AI was used in the production of this work.

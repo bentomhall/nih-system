@@ -529,3 +529,20 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 "19", "130" ,
 "20", "130"
 )
+
+#include "aberrations.typ"
+#include "beasts.typ"
+#include "celestials.typ"
+#include "dragons.typ"
+#include "elementals.typ"
+#include "fey.typ"
+#include "fiends.typ"
+#include "giants.typ"
+#include "humanoids.typ"
+#include "monstrosities.typ"
+#include "oozes.typ"
+#include "plants.typ"
+#include "undead.typ"
+
+#include "legendary.typ"
+#include "non-combat.typ"

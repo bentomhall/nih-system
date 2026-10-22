@@ -14,7 +14,7 @@
   )
 ]
 
-= Equipment
+= Equipment <equipment>
 
 Common coins come in several different denominations based on the
 relative worth of the metal from which they are made. The three most
@@ -96,7 +96,7 @@ Like gems and art objects, trade goods---bars of iron, bags of salt,
 livestock, and so on---retain their full value in the market and can be
 used as currency.
 
-= Armor
+= Armor <armor>
 
 Quartus is a vast tapestry made up of many different cultures, each with
 its own technology level and historical development path. For this
@@ -312,7 +312,7 @@ When skinned carefully and properly tanned, exotic leathers and hides can be mad
 === Mythril
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
 
-= Weapons
+= Weapons <weapons>
 
 Your class grants proficiency in certain weapons, reflecting both the
 class's focus and the tools you are most likely to use. Whether you
@@ -343,7 +343,7 @@ the attack roll for any attack you make with that weapon. If you make an
 attack roll using a weapon with which you lack proficiency, you do not
 add your proficiency bonus to the attack roll.
 
-== Weapon Properties
+== Weapon Properties <weapon-properties>
 
 Many weapons have special properties related to their use, as shown in
 the Weapons table.
@@ -362,7 +362,7 @@ are wielding a shield or are holding anything in one of your hands.
 Unlike 5e, there is no Versatile property.
 ]
 
-=== Ammunition 
+=== Ammunition <ammunition-property>
 
 You can use a weapon that has the ammunition property to make a ranged
 attack only if you have ammunition to fire from the weapon. Each time
@@ -377,30 +377,30 @@ attack, you treat the weapon as an improvised weapon (see "Improvised
 Weapons" later in the section). A sling must be loaded to deal any
 damage when used in this way.
 
-=== Battering 
+=== Battering <battering-property>
 
 When you miss on an attack with a Battering weapon and do not roll a 1,
 the target still takes damage equal to your proficiency bonus.
 
-=== Consumed 
+=== Consumed <consumed-property>
 
 Unlike most thrown weapons, each attack consumes the weapon, as the weapon
 is its own ammunition.
 
-=== Cleaving 
+=== Cleaving <cleaving-property>
 
 Once per turn when you hit with a Cleaving weapon, you can attempt to
 carry some of the damage onto another target within your reach. If you
 do so, compare the initial attack roll to the new target's AC. If it
 hits, they take the same damage as the initial target.
 
-=== Heavy 
+=== Heavy <heavy-property>
 
 Small creatures have disadvantage on attack rolls with heavy weapons. A
 heavy weapon's size and bulk make it too large for a Small creature to
 use effectively.
 
-=== Light
+=== Light <light-property>
 
 A light weapon is small and easy to handle, making it ideal for use when
 fighting with two weapons. When you wield a light weapon in each hand
@@ -408,26 +408,26 @@ and take the Attack action, you can make an extra attack as long as you
 make attacks with each weapon. This extra attack does not add your
 ability modifier to the damage dealt.
 
-=== Loading
+=== Loading <loading-property>
 
 Because of the time required to load this weapon, you can fire only one
 piece of ammunition from it when you use an action, bonus action, or
 reaction to fire it, regardless of the number of attacks you can
 normally make.
 
-=== Parrying
+=== Parrying <parrying-property>
 
 When you take the Deflect action while wielding a parrying weapon, you
 no longer expend your reaction. You can only use the Deflect action once
 during any turn.
 
-=== Precise
+=== Precise <precise-property>
 
 These weapons are well adapted to finding the gaps in heavily-armored
 foes. When you make an attack with a precise weapon and have advantage,
 you score a critical hit on a 19 or 20.
 
-=== Range
+=== Range <range-property>
 
 A weapon that can be used to make a ranged attack has a range in
 parentheses after the ammunition or thrown property. The range lists two
@@ -436,18 +436,18 @@ indicates the weapon's long range. When attacking a target beyond normal
 range, you have disadvantage on the attack roll. You can't attack a
 target beyond the weapon's long range.
 
-=== Reach
+=== Reach <reach-property>
 
 This weapon adds 5 feet to your reach when you attack with it, as well
 as when determining your reach for opportunity attacks with it.
 
-=== Special
+=== Special <special-property>
 
 A weapon with the special property has unusual rules governing its use,
 explained in the weapon's description (see "Special Weapons" later in
 this section).
 
-=== Thrown
+=== Thrown <thrown-property>
 
 If a weapon has the thrown property, you can throw the weapon to make an
 attack at larger range. If the weapon is a melee weapon, you use the
@@ -455,13 +455,13 @@ same ability modifier for that attack roll and damage roll that you
 would use for a melee attack with the weapon. The range is defined the
 same way as it is for a ranged weapon, but this remains a melee attack.
 
-=== Two-Handed
+=== Two-Handed <two-handed-property>
 
 This weapon requires two hands when you attack with it. You can hold it
 in one hand, however. Two-handed weapons add twice your Strength
 modifier to the damage dealt, instead of just your Strength modifier.
 
-=== Improvised Weapons
+=== Improvised Weapons <improvised-weapons>
 
 Sometimes characters don't have their weapons and have to attack with
 whatever is at hand. An improvised weapon includes any object you can
@@ -522,7 +522,7 @@ Silvery and light, mythril is one of the more well-known special materials. When
 === Necrite
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.
 
-== Special Weapons
+== Special Weapons <special-weapons>
 
 Weapons with special rules are described here.
 
@@ -612,7 +612,7 @@ them 5 ft closer to you as part of that same attack.
 "Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
 )
 
-== Adventuring Gear
+== Adventuring Gear <adventuring-gear>
 
 This section describes items that have special rules or require further
 explanation.
@@ -954,7 +954,7 @@ burning torch and hit, it deals 1 fire damage.
 You can also strap items, such as a bedroll or a coil of rope, to the
 outside of a backpack. This does not count against the weight limit.
 
-=== Equipment Packs
+=== Equipment Packs <equipment-packs>
 
 The starting equipment you get from your class includes a collection of
 useful adventuring gear, put together in a pack. The contents of these
@@ -1003,7 +1003,7 @@ waterskin.
 Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10
 sheets of parchment, a little bag of sand, and a small knife.
 
-== Tools
+== Tools <tool-proficiencies>
 
 A tool helps you to do something you couldn't otherwise do, such as
 craft or repair an item, forge a document, or pick a lock. Your lineage,
@@ -1130,7 +1130,7 @@ locks.
 "Vehicles (land or water)","",
 )
 
-== Mounts and Vehicles
+== Mounts and Vehicles <mounts-and-vehicles>
 
 A good mount can help you move more quickly through the wilderness, but
 its primary purpose is to carry the gear that would otherwise slow you
@@ -1218,7 +1218,7 @@ over land.
 "Warship","25,000 gp","2½ mph",
 )
 
-== Trade Goods
+== Trade Goods <trade-goods>
 
 Most wealth is not in coins. It is measured in livestock, grain, land,
 rights to collect taxes, or rights to resources (such as a mine or a
@@ -1249,7 +1249,7 @@ the value of commonly exchanged goods.
 "500 gp","1 lb. of platinum",
 )
 
-== Expenses
+== Expenses <expenses>
 
 When not descending into the depths of the earth, exploring ruins for
 lost treasures, or waging war against the encroaching darkness,
@@ -1395,7 +1395,7 @@ total lifestyle expenses.
 "Hard liquor (fifth)","20 gp",
 )
 
-=== Services
+=== Services <services>
 
 Adventurers can pay non-player characters to assist them or act on their
 behalf in a variety of circumstances. Most such hirelings have fairly
@@ -1465,7 +1465,7 @@ more coin, but mostly-disposable help is always in demand.
 
 As a general rule (with wide variation), you can find people willing to cast spells for pay based on the size of the settlement: those that require 2 AET or less can be found in most villages, 3 AET or less in most towns, and 5 AET or less in cities. You're highly unlikely to find anyone willing to take coin for spells costing more than 5 AET or incantations above the Adventurer rank.
 
-= Fantastic Equipment
+= Fantastic Equipment <magic-equipment>
 
 NIH system includes magic items. It is expected that adventurers will accumulate some items of various worth over the course of their adventures. However, NIH system does not assume, in its core math, that adventurers will have _specific_ magic items at specific levels, especially those that enhance Armor Class, Attack Bonus, Saving Throw modifiers, or Saving Throw DCs. In fact, these kinds of items do not exist. You will not find a single "+1 longsword" here. Enhancements to damage are completely fine. Enhancements to accuracy (or target numbers) cause significant distortions in bounded accuracy and quickly become the dominant option in all but the rarest of cases.
 
@@ -1477,8 +1477,8 @@ I have chosen not to include cursed items in this list. Too often, I've found th
 But, as always, do as you wish. They don't break anything, they're just not to my personal taste.
 ]
 
-== Tier
-Magic items have a *tier* assigned to them, which indicates approximately at what stage of play (see Stages of Play in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
+== Tier <equipment-tiers>
+Magic items have a *tier* assigned to them, which indicates approximately at what stage of play (see #safe-link("stages-of-play")[Stages of Play] in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
 
 The item tiers are:
 #flush-block[
@@ -1489,7 +1489,7 @@ The item tiers are:
 - *Artifact.* Artifacts are plot items of widely ranging power and may or may not appear in any given game. These are named items with substantial historical significance and, if they can be created at all, their creation is the subject of an entire campaign; they act as key plot items. Generally, once an artifact is used (whether for its intended purpose or not), it disappears and reappears somewhere and somewhen else. Artifacts are frequently actual characters in item form, with a mind and will of their own. *No artifacts are detailed here. They're too individual to a particular campaign.*
 ]
 
-== Crafting Magic Items
+== Crafting Magic Items <crafting-magic-items>
 
 To craft magic items, you need a few things.
 #flush-block[
@@ -1520,7 +1520,7 @@ Magic items are organized alphabetically by category. The categories are:
 - weapons (including magic staffs, which can be used as quarterstaffs)
 - miscellaneous items (often called "wondrous items")
 
-== Armor, Magic
+== Armor, Magic <magic-armor>
 
 This section contains the various magic items that are worn as armor or clothing, as well as shields.
 
@@ -1861,7 +1861,7 @@ _Cloak, Adventurer (requires attunement)_
 
 While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.
 
-== Consumables
+== Consumables <consumable-items>
 The items in this section are all linked by the fact that they are truly consumable. They lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.
 
 Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature. Generally oils apply to items or objects and unguents to creatures.
@@ -2132,7 +2132,7 @@ _Wondrous item, Adventurer_
 
 This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.
 
-== Miscellaneous Magic Items
+== Miscellaneous Magic Items <wondrous-items>
 
 === Bag of Holding
 _Wondrous item, Adventurer_
@@ -2440,7 +2440,7 @@ _Wondrous item, Adventurer_
 
 While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, non-magical tatters.
 
-== Rings and Amulets
+== Rings and Amulets <rings-amulets>
 
 This section contains items worn as jewelry. Rings, amulets, broaches, earrings, bracers, etc. Almost all of these require attunement, which serves as the limiting factor on how many you can gain benefit from at a time.
 
@@ -2714,7 +2714,7 @@ While wearing this ring, you can use an action to speak its command word. When y
 
 Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.
 
-=== Wands and Rods
+=== Wands and Rods <wands-and-rods>
 
 === Rod of Absorption
 _Rod, Hero (requires attunement)_
@@ -2842,7 +2842,7 @@ This wand has 7 charges. While holding it, you can use an action to expend 1 of 
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-== Weapons, Magic
+== Weapons, Magic <magic-weapons>
 
 === Ammunition of Slaying
 _Weapon (arrow, bolt, or sling stone), Hero_ 
@@ -3117,7 +3117,7 @@ _Weapon (any), Hero (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.
 
-= Skill Tricks
+= Skill Tricks <skill-tricks>
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
 Each skill trick detailed below shares some common characteristics:
@@ -3139,89 +3139,89 @@ regardless of whether the trick involves a proficiency or not. If you have exper
 
 Some classes get native access to Skill Tricks as a class feature. If they grant access to more advanced skill tricks beyond the basic ones at particular levels, that access overrides any prerequisites in the skill trick. Everyone else can choose a skill trick that they qualify for whenever they acquire an Ability Score Improvement from their class. At the same time, they can trade out one skill trick they've learned for a different one they qualify for.
 
-=== Basic Skill Tricks
+=== Basic Skill Tricks <basic-tricks>
 
 Basic skill tricks only require a +2 proficiency bonus.
 
-=== Alert
+=== Alert <alert-trick>
 
 _Wisdom (Perception OR Insight) Basic Skill Trick_
 
 You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight).
 
-=== Arcane Initiate
+=== Arcane Initiate <arcane-initiate-trick>
 
 _Intelligence (Arcana) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 2 AET from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Charge
+=== Charge <charge-trick>
 
 _Strength (Martial Weapon) Basic Skill Trick_
 
 When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
 
-=== Coordinated Strike
+=== Coordinated Strike <coordinated-strike-trick>
 
 _Charisma (Martial Weapon) Basic Skill Trick_
 
 As a bonus action you take when you take the Attack action and attack a target, expend 2 STA. Another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus.
 
-=== Craft Apprentice
+=== Craft Apprentice <craft-apprentice-trick>
 
 _Crafting Tool (any) Basic Skill Trick_
 
 You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Journeyman magic item that requires that proficiency of your choice.
 
-=== Diplomat
+=== Diplomat <diplomat-trick>
 
 _Charisma (Persuasion) Basic Skill Trick_
 
 When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
 
-=== Disarm
+=== Disarm <disarm-trick>
 
 _Strength (Martial Weapon) Basic Skill Trick_
 
 When you hit with a melee weapon attack, you can spend 1 STA to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. 
 
-=== Divine Initiate
+=== Divine Initiate <divine-initiate-trick>
 
 _Wisdom (Religion) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 2 AET from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Evasive Footwork
+=== Evasive Footwork <evasive-footwork-trick>
 
 _Dexterity (General) Basic Skill Trick_
 
 When you use the Deflect action against opportunity attacks provoked by moving, the cost is reduced by 1 STA. This is cumulative with the benefit from masterwork armor.
 
-=== Feint
+=== Feint <feint-trick>
 
 _Charisma (Deception) Basic Skill Trick_
 
 You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 STA. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them.
 
-=== Frighten
+=== Frighten <frighten-trick>
 
 _Charisma (Intimidation) Basic Skill Trick_
 
 As an action, you can expend 1 STA to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn.
 
-=== Haggler
+=== Haggler <haggler-trick>
 
 _Charisma (Persuasion OR Deception) Basic Skill Trick_
 
 You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
 
-=== Jump
+=== Jump <jump-trick>
 
 _Strength (Athletics) Basic Skill Trick_
 
 You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
 
-=== Linguist
+=== Linguist <linguist-trick>
 
 _Intelligence (General) Basic Skill Trick_
 
@@ -3229,59 +3229,59 @@ When you listen to conversation in a language you don't speak for at least 10 mi
 
 Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
 
-=== Lung Capacity
+=== Lung Capacity <lung-capacity-trick>
 
 _Constitution (General) Basic Skill Trick_
 
 You can hold your breath for twice as long. In addition, you can spend 1 STA when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw. 
 
-=== Medic
+=== Medic <medic-trick>
 
 _Wisdom (Medicine) Basic Skill Trick_
 
 When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed or expend a charge from a Healer's Kit, the target regains 1 hit point and is conscious instead of being stable.
 
-=== Misdirect
+=== Misdirect <misdirect-trick>
 
 _Dexterity (Stealth) Basic Skill Trick_
 
 When you are hidden, you can use your bonus action and spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
-=== Piercing Wound
+=== Piercing Wound <piercing-wound-trick>
 
 _Dexterity (Martial Weapon) Basic Skill Trick_
 
 When you hit with an attack from a ranged weapon, you can spend 1 STA to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. If you have the Nimble Strike feature, you can use this with any weapon attack that uses Dexterity.
 
-=== Primal Initiate
+=== Primal Initiate <primal-initiate-trick>
 
 _Wisdom (Nature) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Resourceful Combatant
+=== Resourceful Combatant <resourceful-combatant-trick>
 _Strength (Martial Weapon) Basic Skill Trick_
 
 You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
 
-=== Scholar: History
+=== Scholar: History <scholar-history-trick>
 _Intelligence (History) Basic Skill Trick_
 
 You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
 
-=== Scholar: Nature
+=== Scholar: Nature <scholar-nature-trick>
 
 _Intelligence (Nature) Basic Skill Trick_
 
 You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
 
-=== Scholar: Religion
+=== Scholar: Religion <scholar-religion-trick>
 
 _Intelligence (Religion) Basic Skill Trick_
 
 You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
 
-=== Sense Baleful Magic
+=== Sense Baleful Magic <sense-baleful-magic-trick>
 
 _Wisdom (Arcana) Basic Skill Trick_
 
@@ -3289,40 +3289,40 @@ You are sensitive to the presence of hostile magics in your proximity. When you 
 
 Additionally, you have advantage on checks made to determine the spell being cast.
 
-=== Shield Bash
+=== Shield Bash <shield-bash-trick>
 
 _Strength (Shield) Basic Skill Trick_
 
 You lash out with your shield. Expend 1 STA and make an attack with your Melee Attack Modifier. On a hit, the opponent takes 1d4 bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
 
-=== Soothe Domesticated Animal
+=== Soothe Domesticated Animal <soothe-domesticated-animal-trick>
 
 _Wisdom (Animal Handling) Basic Skill Trick_
 
 You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
 
-=== Trap Finder
+=== Trap Finder <trap-finder-trick>
 
 _Intelligence (Investigation) Basic Skill Trick_
 
 You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you can spend 1 STA to gain advantage on any Dexterity saving throws to avoid their effects.
 
-=== Tumble
+=== Tumble <tumble-trick>
 
 _Dexterity (Acrobatics) Basic Skill Trick_
 
 You can move through opponents' spaces if they are one size larger than you by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
 
-=== Advanced Skill Tricks
+=== Advanced Skill Tricks <advanced-tricks>
 Advanced skill tricks require a +4 proficiency.
 
-=== Arcane Journeyman
+=== Arcane Journeyman <arcane-journeyman-trick>
 
 _Intelligence (Arcana) Advanced Skill Trick_
 
 You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 3 AET from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Athlete
+=== Athlete <athlete-trick>
 
 _Strength (Athletics) Advanced Skill Trick_
 
@@ -3332,46 +3332,46 @@ Additionally, you gain a swimming speed equal to your normal speed and no longer
 
 Additionally, the distance you can jump doubles and the height at which you start taking fall damage increases to 30 ft (taking 1d6 for the first 30 ft you fall and 1d6 for every 10 ft above that).
 
-=== Bait and Switch
+=== Bait and Switch <bait-and-switch-trick>
 
 _Charisma (Deception) Advanced Skill Trick_
 
 As a bonus action, you expend 2 STA to swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks.
 
-=== Befriend Wild Animal
+=== Befriend Wild Animal <befriend-wild-animal-trick>
 
 _Wisdom (Animal Handling) Advanced Skill Trick_
 
 As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
 
-=== Bond Breaker
+=== Bond Breaker <bond-breaker-trick>
 _Strength (General) Advanced Skill Trick_
 
 You can spend 2 STA to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
 
-=== Delay Unconsciousness
+=== Delay Unconsciousness <delay-unconsciousness-trick>
 _Constitution (General) Advanced Skill Trick_
 
 As a reaction when you are brought to zero hit points, you can expend 3 STA and gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
 
-=== Demoralize
+=== Demoralize <demoralize-trick>
 _Charisma (Intimidation) Advanced Skill Trick_
 
 As an action, you expend 3 STA. You can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken until the end of your next turn. If you threaten a group of creature, they all are affected as if you used the Frighten skill trick on them.
 
-=== Divine Journeyman
+=== Divine Journeyman <divine-journeyman-trick>
 
 _Wisdom (Religion) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Fascinate
+=== Fascinate <fascinate-trick>
 
 _Charisma (Performance) Advanced Skill Trick_
 
 As an action, you begin a distracting performance. Expend 1 STA. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction).
 
-=== Find Weakness
+=== Find Weakness <find-weakness-trick>
 
 _Intelligence (Investigation) Advanced Skill Trick_
 
@@ -3384,46 +3384,46 @@ As a bonus action, you can search for flaws in your opponent. Expend 2 STA and m
 
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
 
-=== Like a Solid Snake
+=== Like a Solid Snake <solid-snake-trick>
 _Dexterity (Stealth) Advanced Skill Trick_
 
 You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
 
-=== Mental Toughness
+=== Mental Toughness <mental-toughness-trick>
 _Charisma (General) Advanced Skill Trick_
 
-When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
+When you are afflicted by the #safe-link("charmed", [charmed]), #safe-link("frightened", [frightened]), or #safe-link("incapacitated", [incapacitated]) conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
 
-=== People Whisperer
+=== People Whisperer <people-whisperer-trick>
 _Wisdom (Insight) Advanced Skill Trick_
 
 When you make a Wisdom (Insight) check and the result is above a 10, you gain one extra pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
 
-=== Primal Journeyman
+=== Primal Journeyman <primal-journeyman-trick>
 
 _Wisdom (Religion) Advanced Skill Trick_
 
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Pocket Sand
+=== Pocket Sand <pocket-sand-trick>
 
 _Dexterity (Sleight of Hand) Advanced Skill Trick_
 
 As a bonus action, you can expend 1 STA and attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see.
 
-=== Resuscitation
+=== Resuscitation <resuscitation-trick>
 
 _Wisdom (Medicine) Advanced Skill Trick_
 
 As an action, you can attempt to resuscitate someone who died within the last minute. Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 HP and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion. 
 
-=== Snow Job
+=== Snow Job <snow-job-trick>
 
 _Charisma (Deception) Advanced Skill Trick_
 
 When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so at advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
 
-=== Sunder
+=== Sunder <sunder-trick>
 
 _Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick_
 
@@ -3436,7 +3436,7 @@ Alternatively, you can target attended objects as follows, expending 2 STA:
 - *Wielded spell foci or other objects in hand*: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 #sym.times 5 ft away in a random direction.
 ]
 
-=== Wrestler
+=== Wrestler <wrestler-trick>
 
 _Strength (Athletics) Advanced Skill Trick_
 
@@ -3444,23 +3444,23 @@ You can grapple and shove creatures two sizes larger than yourself. If you expen
 
 Additionally, when you start your turn with a creature grappled, you can expend 1 STA and attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
 
-=== Expert Skill Tricks
+=== Expert Skill Tricks <expert-tricks>
 
 Expert skill tricks require a +5 proficiency bonus.
 
-=== Blindfighter
+=== Blindfighter <blindfighter-trick>
 
 _Wisdom (Perception) Expert Skill Trick_
 
 Invisible or unseen enemies no longer have advantage to hit you. In addition, you do not have disadvantage to hit invisible or unseen enemies and gain blindsight out to 10 ft. If you already have blindsight or gain it later, this stacks.
 
-=== Break Will
+=== Break Will <break-will-trick>
 
 _Charisma (Intimidation) Expert Skill Trick_
 
-This skill trick acts like Demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The broken state lasts until the end of your next turn and broken creatures become frightened of you as if they had succeeded once the broken status ends; The frightened state lasts for 1 minute in either case.
+This skill trick acts like #safe-link("demoralize-trick", [Demoralize]) except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The broken state lasts until the end of your next turn and broken creatures become frightened of you as if they had succeeded once the broken status ends; The frightened state lasts for 1 minute in either case.
 
-=== Comprehend Dweomer
+=== Comprehend Dweomer <comprehend-dweomer-trick>
 
 _Intelligence (Arcana) Expert Skill Trick_
 
@@ -3470,13 +3470,13 @@ You gain the following benefits:
 - You can detect spellcasting within 60 ft. of you even if there are no components.
 - You can expend 3 AET as a reaction to attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence.
 
-=== Dungeoncrasher
+=== Dungeoncrasher <dungeoncrasher-trick>
 
 _Strength (Athletics) Expert Skill Trick_
 
 When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. for every STA you expend when making the check. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
 
-=== Find Portal
+=== Find Portal <find-portal-trick>
 
 _Wisdom (Survival) Expert Skill Trick_
 
@@ -3490,34 +3490,34 @@ You search for signs of an accessible planar portal within 1 mile of you. Make a
 "20+","You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.",
 )
 
-=== Like a Ghost
+=== Like a Ghost <like-a-ghost-trick>
 
 _Dexterity (Stealth) Expert Skill Trick_
 
 When you are hidden, you no longer need to be concealed to remain hidden, but you must expend 1 STA for every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
 
-=== Slippery
+=== Slippery <slippery-trick>
 
 _Dexterity (Acrobatics) Expert Skill Trick_
 
 You can no longer be grappled or restrained by non-legendary effects as long as you spend 1 STA when the effect is applied.
 
-=== Master Skill Tricks
+=== Master Skill Tricks <master-tricks>
 
 Master skill tricks require a +6 proficiency.
-=== Balance on Thin Air
+=== Balance on Thin Air <balance-on-thin-air-trick>
 
 _Dexterity (Acrobatics) Master Skill Trick_
 
 You can expend 1 AET per turn to walk on air as if it was solid ground.
 
-=== Dragon's Fear
+=== Dragon's Fear <dragons-fear-trick>
 
 _Charisma (Intimidation) Master Skill Trick_
 
-This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
+This skill trick works as #safe-link("break-will-trick", [Break Will]), but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
 
-=== Friend to All
+=== Friend to All <friend-to-all-trick>
 
 _Charisma (Persuasion) Master Skill Trick_
 
@@ -3525,13 +3525,13 @@ As an action, you can magically call for a truce even during combat, expending 3
 
 Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
 
-=== Force Portal
+=== Force Portal <force-portal-trick>
 
 _Wisdom (Survival) Master Skill Trick_
 
 As an action and expending 4 AET, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane.
 
-=== Healing Hands
+=== Healing Hands <healing-hands-trick>
 
 _Wisdom (Medicine) Master Skill Trick_
 
@@ -3543,7 +3543,7 @@ As an action you can expend 4 AET to magically do one of the following to a crea
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
 
-= Spellcasting
+= Spellcasting <spellcasting>
 Magic permeates fantasy gaming worlds and often appears in the form of a spell.
 
 This chapter provides the rules for casting spells. Different character classes have distinctive ways of learning and preparing their spells, and monsters use spells in unique ways. Regardless of its source, a spell follows the rules here.
@@ -3556,7 +3556,7 @@ Spells can be versatile tools, weapons, or protective wards. They can deal damag
 
 Uncounted thousands of spells have been created over the course of history, and many of them are long forgotten. Some might yet lie recorded in crumbling spell-books hidden in ancient ruins or trapped in the minds of dead gods. Or they might someday be reinvented by a character who has amassed enough power and wisdom to do so.
 
-=== Aether
+=== Aether <aether>
 Every character has a pool of Aether which they draw on to produce magical effects. Spellcasting also draws on this pool, and spell-casters tend to have much larger Aether pools than non-spell-casters.
 
 Some items have their own pools of aether that can be used to cast spells from them. These are separate from the character's aether.
@@ -3589,7 +3589,7 @@ Because of the mental focus and precise gestures required for spellcasting, armo
 
 A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether and cannot be overcast. Some cantrips gain more power as the caster becomes stronger; this is detailed in the entry itself.
 
-== Casting a Spell
+== Casting a Spell <casting-a-spell>
 
 When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.
 
@@ -3647,7 +3647,7 @@ Many spells specify that a target can make a saving throw to avoid some or all o
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
 === Targets
-See Targets for the general rules that apply to all abilities, including spells and legendary effects.
+See #safe-link("targets", [Targets]) for the general rules that apply to all abilities, including spells and legendary effects.
 
 === Spell Attack Rolls
 
@@ -3661,7 +3661,7 @@ The effects of different spells add together while the durations of those spells
 For example, if two priests cast bless on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.
 
 == Legendary Effects
-See Legendary Effects below for the full details. 
+See #safe-link("legendary-effects", [Legendary Effects]) below for the full details. 
 
 Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether and effects that interact with spells do not interact with legendary effects unless they explicitly say they do.
 
@@ -3732,9 +3732,9 @@ Generally, monsters have the lowest Dexterity and Intelligence saving throw modi
   )
 ]
 
-= Spell Lists
+= Spell Lists <spell-lists>
 
-== By Cost
+== By Cost <spells-by-cost>
 Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists and spellblades, etc.). (C) indicates a concentration spell. ATK means "requires a spell attack". "Save for half" means that on a successful save the target takes half damage and no other effect. "Save ends" means that the target can re-attempt the saving throw at the end of each of their turns, ending the effect on a success.
 
 === 0 (Cantrips)
@@ -3932,7 +3932,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *wall of stone* (priest, shaman): Special (C, 10 min), 120 ft. Thick stone wall/surface. Must be anchored to solid stone.
 ]
 
-=== Legendary.
+=== Legendary
 #flush-block[
 - *abjure aether manipulation* (Concentration, Generic, Greater)
 - *animal shapes* (Concentration, Primal, Greater)
@@ -3977,9 +3977,9 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *word of recall* (Divine, Lesser)
 ]
 
-== Spells A-Z
+== Spells A-Z <alpha-spells>
 
-=== Acid Arrow
+=== Acid Arrow <acid-arrow>
 #flush-block[
 - _3 AET, Damage_
 - _Cast Time_: 1 action
@@ -3993,7 +3993,7 @@ A shimmering green arrow streaks toward a target within range and bursts in a sp
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage (both initial and subsequent) increases by 1d6 for every 2 AET you spend above 3.
 
-=== Acid Burst
+=== Acid Burst <acid-burst>
 #flush-block[
 - _Cantrip, Damage_
 - _Cast Time_: 1 action
@@ -4007,7 +4007,7 @@ Acidic liquid envelops a target you can see within range. The target must make a
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Aetheric Barrier
+=== Aetheric Barrier <aetheric-barrier>
 #flush-block[
 - _5 AET, Defense_
 - _Cast Time_: 1 action
@@ -4019,7 +4019,7 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 You envelop yourself and all creatures of your choice within 10 feet of you in protective aether. When you cast this spell and one additional time as a bonus action while the spell is active, all targets gain 2d10 + your spellcasting modifier temporary hit points that last for the duration. While they have these temporary hit points, they have advantage on concentration saves caused by taking damage.
 
-=== Aid
+=== Aid <aid>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4033,7 +4033,7 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 
 *Overcast.* When you cast this spell using 4 or more AET, a target's hit points increase by an additional 5 for each 2 AET above 3.
 
-=== Alter Self
+=== Alter Self <alter-self>
 #flush-block[
 - _3 AET, Shape-changing_
 - _Cast Time_: 1 action
@@ -4053,7 +4053,7 @@ You assume a different form. When you cast the spell, choose one of the followin
 
 *Overcast.* For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.
 
-=== Antilife Shell
+=== Antilife Shell <antilife-shell>
 #flush-block[
 - _12 AET, Defensive_
 - _Cast Time_: 1 action
@@ -4069,7 +4069,7 @@ The barrier prevents an affected creature from passing or reaching through. An a
 
 If you move so that an affected creature is forced to pass through the barrier, the spell ends.
 
-=== Arcane Binding
+=== Arcane Binding <arcane-binding>
 #flush-block[
 - _4 AET, Control_
 - _Cast Time_: 1 action
@@ -4083,7 +4083,7 @@ Choose a creature that you can see within range. The target must succeed on a St
 
 *Overcast.* When you cast this spell using 6 or more AET, you can target a second creature within range. When you cast this spell using 8 or more AET, the targets are paralyzed (with the same exception) if they fail the saving throw at all, rather than by 5 or more.
 
-=== Arcane Eye
+=== Arcane Eye <arcane-eye>
 #flush-block[
 - _8 AET, scouting_
 - _Cast Time_: 1 action
@@ -4099,7 +4099,7 @@ You mentally receive visual information from the eye, which has normal vision an
 
 As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.
 
-=== Bane
+=== Bane <bane>
 #flush-block[
 - _2 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4113,7 +4113,7 @@ Up to three creatures of your choice that you can see within range must make Cha
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.
 
-=== Banishment
+=== Banishment <banishment>
 #flush-block[
 - _8 AET, Control_
 - _Cast Time_: 1 action
@@ -4131,7 +4131,7 @@ If the target is native to a different plane of existence than the one you're on
 
 *Overcast.* When you cast this spell using more than 8 AET, you can target one additional creature for every 3 additional AET you spend. Creatures save or not individually, but ending concentration affects all banished creatures.
 
-=== Barkskin
+=== Barkskin <barkskin>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4147,7 +4147,7 @@ In addition, the target gains temporary hit points equal to your spellcasting mo
 
 *Overcast.* When you cast this spell using more than 3 AET, the target's minimum AC increases by 1 for ever 3 AET you spend, up to a maximum AC of 20.
 
-=== Beacon of Hope
+=== Beacon of Hope <beacon-of-hope>
 #flush-block[
 - _5 AET, Buff_
 - _Cast Time_: 1 action
@@ -4159,7 +4159,7 @@ In addition, the target gains temporary hit points equal to your spellcasting mo
 
 This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.
 
-=== Bestow Curse
+=== Bestow Curse <bestow-curse>
 #flush-block[
 - _5 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4176,11 +4176,11 @@ You touch a creature, and that creature must succeed on a Wisdom saving throw or
 - While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.
 - While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.
 
-A _remove curse_ spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
+A #safe-link("remove-curse", [_remove curse_]) spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
 
 *Overcast.* If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. Using 12 or more AET grants a duration that doesn't require concentration and lasts at least 8 hours (more at 16 AET).
 
-=== Black Tentacles
+=== Black Tentacles <black-tentacles>
 #flush-block[
 - _8 AET, zone, DEX, movement + damage_
 - _Cast Time_: 1 action
@@ -4197,7 +4197,7 @@ When a creature enters the affected area for the first time on a turn or starts 
 A creature restrained by the tentacles can use its action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself.
 *Overcast.* When you use more than 8 AET to cast this spell, the damage dealt increases by 1d6 for every two AET you spend up to 12 (dealing 5d6).
 
-=== Blade Barrier
+=== Blade Barrier <blade-barrier>
 #flush-block[
 - _15 AET, Wall_
 - _Cast Time_: 1 action
@@ -4211,7 +4211,7 @@ You create a vertical wall of whirling, razor-sharp blades made of magical energ
 
 When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.
 
-=== Bless
+=== Bless <bless>
 #flush-block[
 - _2 AET, Buff_
 - _Cast Time_: 1 action
@@ -4225,7 +4225,7 @@ You bless up to three creatures of your choice within range. Whenever a target m
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 AET you spend.
 
-=== Blight
+=== Blight <blight>
 #flush-block[
 - _6 AET, Damage_
 - _Cast Time_: 1 action
@@ -4243,7 +4243,7 @@ If you target a non-magical plant that isn't a creature, such as a tree or shrub
 
 *Overcast.* When you cast this spell using more than 8 AET, the damage increases by 1d8 for every AET you spend up to a maximum of 12 AET (12d8).
 
-=== Blindness/Deafness
+=== Blindness/Deafness <blindness-deafness>
 #flush-block[
 - _3 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4257,7 +4257,7 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every two additional AET spent.
 
-=== Blink
+=== Blink <blink>
 #flush-block[
 - _5 AET, Defense_
 - _Cast Time_: 1 action
@@ -4271,7 +4271,7 @@ Roll a d20 at the end of each of your turns for the duration of the spell. On a 
 
 While on the Border Shadow, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Border Shadow. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.
 
-=== Blur
+=== Blur <blur>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4283,7 +4283,7 @@ While on the Border Shadow, you can see and hear the plane you originated from, 
 
 Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.
 
-=== Burning Hands
+=== Burning Hands <burning-hands>
 #flush-block[
 - _2 AET, Damage_
 - _Cast Time_: 1 action
@@ -4299,7 +4299,7 @@ The fire ignites any flammable objects in the area that aren't being worn or car
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
-=== Call Lightning
+=== Call Lightning <call-lightning>
 #flush-block[
 - _6 AET, Damage_
 - _Cast Time_: 1 action
@@ -4317,7 +4317,7 @@ If you are outdoors in stormy conditions when you cast this spell, the spell giv
 
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d10 for every 3 additional AET spent.
 
-=== Calm Emotions
+=== Calm Emotions <calm-emotions>
 #flush-block[
 - _3 AET, Buff/Debuff_
 - _Cast Time_: 1 action
@@ -4333,7 +4333,7 @@ You can suppress any effect causing a target to be charmed or frightened. When t
 
 Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the GM rules otherwise.
 
-=== Caustic Torrent
+=== Caustic Torrent <caustic-torrent>
 #flush-block[
 - _8 AET, Damage_
 - _Cast time_: 1 action
@@ -4345,7 +4345,7 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 When you cast this spell, you project a 30-foot cone of caustic, vile-smelling liquid. Creatures in the area must make a Dexterity saving throw. On a failed save, they are poisoned for the duration and take 6d6 acid damage and 3d6 acid damage at the beginning of each of their turns while poisoned. On a success, they take half as much damage initially and no ongoing effects. Poisoned creatures can make a CON save against the same DC at the end of each of their turns, ending the effect on a success. Unattended objects in the area take 8d6 acid damage and no ongoing effects. 
 
-=== Chain Lightning
+=== Chain Lightning <chain-lightning>
 #flush-block[
 - _13 AET, Damage_
 - _Cast Time_: 1 action
@@ -4361,7 +4361,7 @@ A target must make a Dexterity saving throw. The target takes 10d8 lightning dam
 
 *Overcast.* When you cast this spell using more than 13 AET, one additional bolt leaps from the first target to another target for every 3 additional AET spent.
 
-=== Charm Person
+=== Charm Person <charm-person>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4375,7 +4375,7 @@ You attempt to charm a humanoid you can see within range. It must make a Charism
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-=== Clairvoyance
+=== Clairvoyance <clairvoyance>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 10 minutes
@@ -4389,7 +4389,7 @@ You create an invisible sensor within range in a location familiar to you (a pla
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
 
-=== Cloudkill
+=== Cloudkill <cloudkill>
 #flush-block[
 - _14 AET_
 - _Cast Time_: 1 action
@@ -4407,7 +4407,7 @@ When you cast this spell, choose either *creeping fog* or *rolling fog*. If you 
 
 *Overcast.* When you cast this spell using more than 14 AET , the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Color Spray
+=== Color Spray <color-spray>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4421,7 +4421,7 @@ A dazzling array of flashing, colored light springs from your hand. All creature
 
 *Overcast.* When you cast this spell using more than 2 AET, the duration increases by one round for every 2 additional AET spent.
 
-=== Command
+=== Command <command>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4443,7 +4443,7 @@ You speak a one-word command from the list below to a creature you can see withi
 
 *Overcast.* When you cast this spell using more than 2 AET, you can affect one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-=== Cone of Cold
+=== Cone of Cold <cone-of-cold>
 #flush-block[
 - _10 AET_
 - _Cast Time_: 1 action
@@ -4459,7 +4459,7 @@ A creature killed by this spell becomes a frozen statue until it thaws.
 
 *Overcast.* When you cast this spell using more than 10 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Confusion
+=== Confusion <confusion>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4485,7 +4485,7 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 
 *Overcast.* When you cast this spell using more than 8 AET, the radius of the sphere increases by 5 feet for every 3 additional AET spent.
 
-=== Conjure Animals
+=== Conjure Animals <conjure-animals>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -4509,17 +4509,17 @@ The GM has the creatures' statistics.
 - 8 AET spent: 1 giant scorpion or killer whale or 2 of the base solo options.
 - 11 AET spent: 1 elephant or 2 giant scorpions or killer whales.
 
-=== Conjure Elemental
+=== Conjure Elemental <conjure-elemental>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 minute
 - _Range_: 90 feet
-- _Components_: V, S, M (burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water)
+- _Components_: V, S, M (burning incense for air or lightning, soft clay for earth or mud, sulfur and phosphorus for fire or lava, or water and sand for water or ice)
 - _Duration_: Concentration, up to 1 hour
 - _Classes_: Arcanist, Shaman
 ]
 
-You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
+You call forth an elemental servant in an unoccupied 10x10 area within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in that space. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
 
 The elemental is friendly to you and your companions for the duration. The elemental takes its turn immediately after your turn ends. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.
 
@@ -4529,7 +4529,7 @@ The GM has the elemental's statistics.
 
 *Overcast.* When you cast this spell using more than 12 AET, the hit points of the summoned elemental increase by 5 for each additional AET spent and it gains an additional attack for every 3 additional AET spent.
 
-=== Conjure Mephits
+=== Conjure Mephits <conjure-mephits>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 minute
@@ -4548,7 +4548,7 @@ The summoned creatures are friendly to you and your companions. They take their 
 
 The GM has the creatures' statistics.
 
-=== Conjure Woodland Beings
+=== Conjure Woodland Beings <conjure-woodland-beings>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4569,7 +4569,7 @@ The summoned creatures are friendly to you and your companions. They take their 
 
 The GM has the creatures' statistics.
 
-=== Contagion
+=== Contagion <contagion>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4593,7 +4593,7 @@ Since this spell induces a natural disease in its target, any effect that remove
 - *Slimy Doom.* The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is staggered until the end of its next turn.
 ]
 
-=== Control Water
+=== Control Water <control-water>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4621,7 +4621,7 @@ When a creature enters the vortex for the first time on a turn or starts its tur
 
 The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.
 
-=== Create or Destroy Water
+=== Create or Destroy Water <create-or-destroy-water>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4639,7 +4639,7 @@ You either create or destroy water. Living beings do not count as open container
 
 *Overcast.* When you cast this spell using more than 2 AET, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for every 2 additional AET spent.
 
-=== Cure Wounds
+=== Cure Wounds <cure-wounds>
 #flush-block[
 - _1 AET_
 - _Cast Time_: 1 action
@@ -4653,7 +4653,7 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 
 *Overcast.* When you cast this spell using more than 1 AET, the healing increases by 1d8 for every additional AET spent, up to a maximum of 12d8 + your spellcasting ability modifier.
 
-=== Dancing Lights
+=== Dancing Lights <dancing-lights>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -4667,7 +4667,7 @@ You create up to four torch-sized lights within range, making them appear as tor
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
-=== Darkness
+=== Darkness <darkness>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4683,7 +4683,7 @@ If the point you choose is on an object you are holding or one that isn't being 
 
 If any of this spell's area overlaps with an area of light created by a spell of costing 3 AET or less, the spell that created the light is dispelled.
 
-=== Darkvision
+=== Darkvision <darkvision>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4695,7 +4695,7 @@ If any of this spell's area overlaps with an area of light created by a spell of
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. If it already had darkvision, it can see color in the dark.
 
-=== Daylight
+=== Daylight <daylight>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -4711,7 +4711,7 @@ If you chose a point on an object you are holding or one that isn't being worn o
 
 If any of this spell's area overlaps with an area of darkness created by a spell costing 3 or less AET, the spell that created the darkness is dispelled.
 
-=== Death Ward
+=== Death Ward <death-ward>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4725,7 +4725,7 @@ You touch a creature and grant it a measure of protection from death. The first 
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.
 
-=== Detect Thoughts
+=== Detect Thoughts <detect-thoughts>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4745,7 +4745,7 @@ You can also use this spell to detect the presence of thinking creatures you can
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
 
-=== Dimension Door
+=== Dimension Door <dimension-door>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4761,7 +4761,7 @@ You can bring along objects as long as their weight doesn't exceed what you can 
 
 If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 bludgeoning damage, and the spell fails to teleport you.
 
-=== Disguise Self
+=== Disguise Self <disguise-self>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4777,7 +4777,7 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC. Creatures that physically interact with the disguise in a way that would reveal its falsity as part of a different action can immediate make the check without spending another action.
 
-=== Dispel Otherworldly Influence
+=== Dispel Otherworldly Influence <dispel-otherworldly-influence>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4795,7 +4795,7 @@ You can end the spell early by using either of the following special functions.
 
 *Dismissal.* As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, demons are sent to the Abyss, devils are sent to the Astral, and fey are sent to Shadow.
 
-=== Divine Favor
+=== Divine Favor <divine-favor>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4807,7 +4807,7 @@ You can end the spell early by using either of the following special functions.
 
 Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
-=== Divine Wrath
+=== Divine Wrath <divine-wrath>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4819,7 +4819,7 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 
 You call upon holy power and radiate destruction. When you cast this spell and at the start of each of your turns for the duration, a wave of radiant energy pulses out from you in a 15 foot sphere. All creatures in the area must make a Charisma saving throw, taking 5d8 radiant damage on a failed save or half as much on a success. Fiends, undead, and creatures summoned by magic make this saving throw at disadvantage. When you cast the spell, you can choose a number of targets up to your proficiency bonus. Designated targets are immune to the effect.
 
-=== Dominate Unthinking
+=== Dominate Unthinking <dominate-unthinking>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4839,7 +4839,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 *Overcast.* When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.
 
-=== Enhance Ability
+=== Enhance Ability <enhance-ability>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4861,7 +4861,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
-=== Enlarge/Reduce
+=== Enlarge/Reduce <enlarge-reduce>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4879,7 +4879,7 @@ If the target is a creature, everything it is wearing and carrying changes size 
 
 *Reduce.* The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category---from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
 
-=== Entangle
+=== Entangle <entangle>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4895,7 +4895,7 @@ A creature in the area when you cast the spell must succeed on a Strength saving
 
 When the spell ends, the conjured plants wilt away.
 
-=== Enthrall
+=== Enthrall <enthrall>
 #flush-block[
 - _4 AET_
 - _Cast Time_: 1 action
@@ -4909,7 +4909,7 @@ You weave a distracting string of words, causing creatures of your choice that y
 
 *Overcast.* When you cast this spell and spend at least 6 AET, the duration increases to 10 minutes. If you spend at least 8 AET, it no longer requires concentration and lasts for 10 minutes.
 
-=== Envenom
+=== Envenom <envenom>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4923,7 +4923,7 @@ You touch a weapon or container of ammunition and enchant it with venom. For the
 
 *Overcast.* When you cast this spell and spend more than 2 AET, you can target an additional weapon or container of ammunition for every 2 AET spent above 2.
 
-=== Expeditious Retreat
+=== Expeditious Retreat <expeditious-retreat>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4935,7 +4935,7 @@ You touch a weapon or container of ammunition and enchant it with venom. For the
 
 This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.
 
-=== Faerie Fire
+=== Faerie Fire <marker>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action

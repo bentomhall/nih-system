@@ -33,9 +33,10 @@
 }
 
 #let safe-link(lbl, body) = context {
-  let matches = query(lbl)
-  if matches.len > 0 {
-    link(lbl, body)
+  let target = label(lbl)
+  let matches = query(target)
+  if matches.len() > 0 {
+    link(target, body)
   } else {
     body
   }

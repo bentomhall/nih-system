@@ -1,6 +1,6 @@
 #import "@preview/dragonling:0.3.1": *
 #import "../../shared/functions.typ": *
-= Monstrosities
+= Monstrosities <monstrosities>
 Monstrosities are the catch-all category for things that aren't shaped roughly like a person. Does it speak but look like a beast? Does it have magical abilities but not fit into another category? Was it created by a mage in a long-ago day but now breed normally? Then it's probably a monstrosity.
 
 === Ankheg
@@ -49,7 +49,7 @@ The ankheg, commonly called a tunnel worm, is a large centipede-like creature wi
 		Challenge: [2:2],
 	),
 	traits: (
-		("Petrifying Gaze", [If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the _restoration_ incantation (greater only) or other magic. \ A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \ If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.]),
+		("Petrifying Gaze", [If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the #safe-link("restoration",[_restoration_]) incantation (greater only) or other magic. \ A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \ If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.]),
 	),
 	actions: (
 		("Bite", [Melee Attack: +5 to hit, range , one target. _Hit:_ 2d6 + 3 piercing damage plus 2d6 poison damage.]),
@@ -140,7 +140,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		("Fire Breath (Recharge 5-6)", [The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.]),
 	),
 	variants: (
-		("Greater Chimera", [Some chimera are more powerful and intelligent. Increase the hit points to 133 (14d10 + 56), and give them the following abilities, all usable instead of its breath as part of a Multiattack. Their DR is now 7 and their OR is now 10. \subparagraph\*{Heaven's Cry (Recharge 5-6)} All creatures within 60 feet but not within 10 feet must make a DC 14 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much on a successful one. Creatures that fail their save are staggered until the end of their next turn. \subparagraph\*{Ram's Keeper (Recharge 5-6)} The chimera's ram's head causes ice to coalesce around all creatures within 10 feet of a point it can see within 60 ft. All affected creatures must make a DC 14 Constitution saving throw. On a failure, targets take 27 (6d8) cold damage and are stunned until the end of their next turn. On a success, they take half as much damage. The area becomes difficult terrain for one minute.]),
+		("Greater Chimera", [Some chimera are more powerful and intelligent. Increase the hit points to 133 (14d10 + 56), and give them the following abilities, all usable instead of its breath as part of a Multiattack. Their DR is now 7 and their OR is now 10. _Heaven's Cry (Recharge 5-6)_ All creatures within 60 feet but not within 10 feet must make a DC 14 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much on a successful one. Creatures that fail their save are staggered until the end of their next turn. _Ram's Keeper (Recharge 5-6)_ The chimera's ram's head causes ice to coalesce around all creatures within 10 feet of a point it can see within 60 ft. All affected creatures must make a DC 14 Constitution saving throw. On a failure, targets take 27 (6d8) cold damage and are stunned until the end of their next turn. On a success, they take half as much damage. The area becomes difficult terrain for one minute.]),
 	),
 ))
 
@@ -163,7 +163,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 	),
 	traits: (
 		("Amphibious", [The chuul can breathe air and water.]),
-		("Sense Magic", [The chuul senses magic within 120 feet of it at will. This trait otherwise works like the _sense aura_ incantation but isn't itself magical.]),
+		("Sense Magic", [The chuul senses magic within 120 feet of it at will. This trait otherwise works like the #safe-link("sense-aura")[_sense aura_] incantation but isn't itself magical.]),
 	),
 	actions: (
 		("Multiattack", [The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.]),
@@ -553,7 +553,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		Challenge: [5:6],
 	),
 	traits: (
-		("Petrifying Gaze", [When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the _restoration_ (greater only). \ Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. \ If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.]),
+		("Petrifying Gaze", [When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the #safe-link("restoration",[_restoration (greater)_]) incantation. \ Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. \ If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.]),
 	),
 	actions: (
 		("Multiattack", [The medusa makes either three melee attacks—one with its snake hair and two with its shortsword—or two ranged attacks with its longbow.]),
@@ -611,7 +611,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		Challenge: [8:8],
 	),
 	traits: (
-		("Spellcasting", [The naga's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* _banishment_ (2x), _shield of faith_ (1x), _bestow curse_ (1x), _arcane binding_ (2x) \ *Healing* _cure wounds_ (3x) \ *Damage* _flame strike_ (1x)]),
+		("Spellcasting", [The naga's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* #safe-link("banishment",[_banishment_]) (2x), #safe-link("shield-of-faith",[_shield of faith_]) (1x), #safe-link("bestow-curse",[_bestow curse_]) (1x), #safe-link("arcane-binding",[_arcane binding_]) (2x) \ *Healing* #safe-link("cure-wounds",[_cure wounds_]) \ *Damage* #safe-link("flame-strike",[_flame strike_])]),
 	),
 	actions: (
 		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d8 + 4 piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.]),
@@ -638,7 +638,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		Challenge: [8:9],
 	),
 	traits: (
-		("Spellcasting", [The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* _domination_ (Legendary, 1x), _arcane binding_ (3x) \ *Damage* _blight_ (2x), _lightning bolt_ (2x) \ *Other* _dimension door_ (1x)]),
+		("Spellcasting", [The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* #safe-link("domination",[_domination_]) (Legendary, 1x), #safe-link("arcane-binding",[_arcane binding_]) (3x) \ *Damage* #safe-link("blight",[_blight_]) (2x), #safe-link("lightning-bolt",[_lightning bolt_]) (2x) \ *Other* #safe-link("dimension-door",[_dimension door_]) (1x)]),
 	),
 	actions: (
 		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d6 + 4 piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.]),

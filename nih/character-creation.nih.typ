@@ -4188,10 +4188,10 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 
 #dndtab("Spirit Spells", 
 "Shaman Level", "Circle Spells",
-"3rd         ", [_arcane binding, detect thoughts_],
-"5th         ", [_hypnotic pattern, bestow curse_],
-"7th         ", [_death ward, greater invisibility_],
-"9th         ", [_reincarnate, dispel otherworldly influence_],
+"3rd         ", [_arcane binding_, _detect thoughts_],
+"5th         ", [_hypnotic pattern_, _bestow curse_],
+"7th         ", [_death ward_, _greater invisibility_],
+"9th         ", [_reincarnate_, _dispel otherworldly influence_],
 )
 
 === Spirit's Advice
@@ -4213,21 +4213,21 @@ The Shaman Spell List table contains a short summary of the spells available to 
 
 #flush-block[
 === 0 Aether
-- acid burst
-- dancing lights
-- poison spray
-- produce flame
-- shillelagh
+- _acid burst_
+- _dancing lights_
+- _poison spray_
+- _produce flame_
+- _shillelagh_
 	
 === 1 Aether
-- cure wounds
+- _cure wounds_
 	
 === 2 Aether
-- bane
-- burning hands
-- create or destroy water
-- envenom
-- entangle
+- _bane_
+- _burning hands_
+- _create or destroy water_
+- _envenom_
+- _entangle_
 - faerie fire
 - flash freeze
 - fog cloud

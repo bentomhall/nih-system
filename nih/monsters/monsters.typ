@@ -13,14 +13,14 @@
   )
 ]
 
-= Monsters
+= Monsters <monsters>
 A monster's statistics, sometimes referred to as its *stat block*, provide the essential information that you need to run the monster.
 
 #breakoutbox("Modifying Monsters")[
 Modifying Monsters Despite the versatile collection of monsters in this book, you might be at a loss when it comes to finding the perfect creature for part of an adventure. Feel free to tweak an existing creature to make it into something more useful for you, perhaps by borrowing a trait or two from a different monster or by using a *variant* or *template*, such as the ones in this book. Keep in mind that modifying a monster, including when you apply a template to it, might change its challenge ratings.
 ]
 
-=== Size
+=== Size <monster-size>
 
 A monster can be Diminutive, Tiny, Small, Medium, Large, Huge, or Gargantuan. The Size Categories table shows how much space a creature of a particular size controls in combat. See the Core Rules for more information on creature size and space.
 
@@ -36,7 +36,7 @@ A monster can be Diminutive, Tiny, Small, Medium, Large, Huge, or Gargantuan. Th
 )
 
 
-=== Type
+=== Type <monster-type>
 
 A monster's type speaks to its fundamental nature. Certain spells, magic items, class features, and other effects in the game interact in special ways with creatures of a particular type. For example, an _arrow of dragon slaying_ deals extra damage not only to dragons but also other creatures of the dragon type, such as dragon turtles and wyverns.
 
@@ -70,7 +70,7 @@ The game includes the following monster types, which have no rules of their own.
 
 *Undead* are once-living creatures brought to a horrifying state of undeath through the practice of necromantic magic or some unholy curse, generally involving the entropy spirits called jotnar. Undead include walking corpses, such as vampires and zombies, as well as bodiless spirits, such as ghosts and specters.
 
-==== Tags
+==== Tags <monster-tags>
 
 A monster might have one or more tags appended to its type, in parentheses. For example, an orc has the _humanoid (orc)_ type. The parenthetical tags provide additional categorization for certain creatures. The tags have no rules of their own, but something in the game, such as a magic item, might refer to them. For instance, a spear that is especially effective at fighting demons would work against any monster that has the demon tag.
 
@@ -78,23 +78,23 @@ A monster might have one or more tags appended to its type, in parentheses. For 
 
 Monsters have an attitude listed next to their size and type (e.g. _Large beast, craven_;) that describes how a generic member of that type of monster will act by default. Specific individuals may act differently, but this serves as a guide to role play for the GM. Example attitudes:
 
-*Craven.* A craven creature is easy to intimidate into fleeing (if possible) or surrendering (if flight is too risky). They tend to attack in groups and run when casualties start to mount or if their leader is killed.
+*Craven.*<craven> A craven creature is easy to intimidate into fleeing (if possible) or surrendering (if flight is too risky). They tend to attack in groups and run when casualties start to mount or if their leader is killed.
 
-*Fearless.* Fearless monsters are immune to morale checks. While not totally single-minded, they generally are resistant to mental manipulation.
+*Fearless.*<fearless> Fearless monsters are immune to morale checks. While not totally single-minded, they generally are resistant to mental manipulation.
 
-*Guardian.* Guardian monsters have either been trained to protect their masters or are naturally inclined to protect their fellows/allies. Usually combined with domestic. Guardian animals act as lookouts and will aggressively intervene in attempts to attack their protected allies.
+*Guardian.*<guardian> Guardian monsters have either been trained to protect their masters or are naturally inclined to protect their fellows/allies. Usually combined with domestic. Guardian animals act as lookouts and will aggressively intervene in attempts to attack their protected allies.
 
-*Domestic.* Domesticated monsters are particularly apt to be used as beasts of burden, mounts, work animals, and pets. In general, they will avoid fighting unless trained as a guard animal, and can be easily soothed with Animal Handling checks.
+*Domestic.*<domestic> Domesticated monsters are particularly apt to be used as beasts of burden, mounts, work animals, and pets. In general, they will avoid fighting unless trained as a guard animal, and can be easily soothed with Animal Handling checks.
 
-*Herd Mentality.* Herd animals are a mix of pack animals and craven. they operate together, and if one fights they all fight; if one flees, the rest will stampede as well.
+*Herd Mentality.*<herd> Herd animals are a mix of pack animals and craven. they operate together, and if one fights they all fight; if one flees, the rest will stampede as well.
 
-*Honorable.* These creatures will generally honor bargains, parole, and challenges to duels. Even evil creatures can be honorable. Most honorable creatures can be reasoned with.
+*Honorable.*<honorable> These creatures will generally honor bargains, parole, and challenges to duels. Even evil creatures can be honorable. Most honorable creatures can be reasoned with.
 
-*Individualistic.* Every monster for themselves. These tend to live alone or, if the are encountered in groups, not really care about the other members of their groups. Killing one doesn't affect a different one, but an individual might flee if wounded even if it shatters the group's chances.
+*Individualistic.*<individualistic> Every monster for themselves. These tend to live alone or, if the are encountered in groups, not really care about the other members of their groups. Killing one doesn't affect a different one, but an individual might flee if wounded even if it shatters the group's chances.
 
-*Group/Pack Mentality.* The opposite of being Individualistic. These bond to their pack and will protect them, up to sacrificing themselves for other members of their pack.
+*Group/Pack Mentality.*<group-mentality> The opposite of being Individualistic. These bond to their pack and will protect them, up to sacrificing themselves for other members of their pack.
 
-*Single-minded.* Oozes, zombies, and some other creatures are single-minded. This means that they generally cannot be reasoned with, distracted, confused, or intimidate. They will not flee or surrender. Generally they will pursue the closest target in combat; if given other orders they will do those to the exclusion of all else, including personal safety.
+*Single-minded.*<single-minded> Oozes, zombies, and some other creatures are single-minded. This means that they generally cannot be reasoned with, distracted, confused, or intimidate. They will not flee or surrender. Generally they will pursue the closest target in combat; if given other orders they will do those to the exclusion of all else, including personal safety.
 
 === Armor Class
 
@@ -157,13 +157,11 @@ A monster that has a swimming speed doesn't need to spend extra movement to swim
 
 Every monster has six ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma). If a monster has a bonus to a saving throw, it is listed in the saving throws section. If a save isn't listed, the saving throw modifiers are equal to the ability scores.
 
-==== Morale
+=== Morale
 
 Monsters, unlike PCs, can be by effects that shake them enough emotionally. When the GM decides that a non-legendary monster may not be able to continue a combat for reasons other than being reduced to zero hit points (or outright killed), they will generally make a Morale save for that creature. This is a Wisdom saving throw. The first save usually has a DC of 10; particularly dramatic events may require beating a DC of 15 to succeed. On a failed save, the creature gains the condition until conditions materially change or the end of their next turn, whichever lasts longer.
 
-*Triggering a Morale Save.*
-
-Here are some conditions that might (depending on the fiction) trigger a Morale Save.
+*Triggering a Morale Save.* Here are some conditions that might (depending on the fiction) trigger a Morale Save.
 
 - A hunting predator becoming (unless it is defending its nest or magically compelled).
 - A common warrior (guard, goblin raider, etc.) seeing their leader get taken out.
@@ -172,9 +170,7 @@ Here are some conditions that might (depending on the fiction) trigger a Morale 
 - Powerful supernatural or monstrous fear effects against normal people.
 - A powerful intimidation attempt or offer of surrender when already on the edge.
 
-*Recovering from Being Broken.*
-
-A few possible circumstances that may trigger a recovery from being broken:
+*Recovering from Being Broken.* A few possible circumstances that may trigger a recovery from being broken:
 
 - A powerful enemy being reduced to zero hit points.
 - A rousing speech by a leader they trust.
@@ -231,13 +227,11 @@ Telepathy is a magical ability that allows a monster to communicate mentally wit
 
 A telepathic monster doesn't need to see a contacted creature and can end the telepathic contact at any time. The contact is broken as soon as the two creatures are no longer within range of each other or if the telepathic monster contacts a different creature within range. A telepathic monster can initiate or terminate a telepathic conversation without using an action, but while the monster is incapacitated, it can't initiate telepathic contact, and any current contact is terminated.
 
-=== Challenge
+=== Challenge <challenge-rating>
 
 A monster's *challenge ratings* tells you how great a threat the monster is. Each monster has two ratings, offensive and defensive, separated by a slash, written as offensive/defensive. Generally, the overall rating is the geometric mean of the two (the square root of the product of the values), but this really provides little relevant information.
 
-*Offensive Rating (OR).*
-
-The offensive rating of a monster relative to the party level tells you how likely it is for that monster to drop a full-health character to 0 HP in a single round.
+*Offensive Rating (OR).* The offensive rating of a monster relative to the party level tells you how likely it is for that monster to drop a full-health character to 0 HP in a single round.
 #flush-block[
 - *OR > 2#sym.times Level* The monster is very likely to drop a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round even if they use defensive measures, and is capable of dropping a medium-health (ie d8 HD with +1 CON or d6 HD with +3 or more CON) character to zero in a single turn if they roll well or no defensive measures are taken. It is likely that this monster can kill a weak character through massive damage or by having enough attacks left over after downing the character to kill them outright.
 - *OR > Level* The monster poses a substantial threat and is capable of dropping a weak (ie d6 HD with +0 or +1 CON) character to zero from full in a single round if they crit or roll well and significant defensive measures are not taken. It is unlikely, but possible, that a good round with critical hits can outright kill a weak character.
@@ -246,9 +240,7 @@ The offensive rating of a monster relative to the party level tells you how like
 - *OR < Level / 2* The monster poses little direct offensive threat to even a weak character except in groups. Be careful of synergies, however, where one monster buffs or enables another monster to go well beyond its normal nature.
 ]
 
-*Defensive Rating (DR).*
-
-The defensive rating of a monster tells you how likely it is for that monster to survive long enough under direct fire from the party's primary damage dealers in order to do use its cool abilities at least once (generally considered about 3 rounds). This assumes baseline characters without substantial combat-effective magic items or particularly targeting vulnerabilities. It's a rough static training dummy measure and should be taken with a grain of salt.
+*Defensive Rating (DR).* The defensive rating of a monster tells you how likely it is for that monster to survive long enough under direct fire from the party's primary damage dealers in order to do use its cool abilities at least once (generally considered about 3 rounds). This assumes baseline characters without substantial combat-effective magic items or particularly targeting vulnerabilities. It's a rough static training dummy measure and should be taken with a grain of salt.
 #flush-block[
 - *DR > Level* The monster is likely to survive at least 3 rounds of direct fire from a baseline party.
 - *DR #sym.times Level* The monster will probably die in 2-3 rounds of direct fire from a baseline party, or survive double that if party attention is split between it and other monsters.
@@ -390,7 +382,7 @@ Non-damaging spells and abilities and challenge ratings Damaging spells and abil
 
 *Magic Items.* The more powerful an NPC, the more likely it has one or more magic items in its possession. An archmage, for example, might have a magic staff or wand, as well as one or more potions and scrolls. Giving an NPC a potent damage-dealing magic item could alter its offensive challenge rating.
 
-== Monster Math
+== Monster Math <monster-math>
 
 === Calculating Offensive Rating
 
@@ -520,6 +512,8 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 "20", "130"
 )
 
+= Monsters by Type <monsters-by-type>
+
 #include "aberrations.typ"
 #include "beasts.typ"
 #include "celestials.typ"
@@ -534,5 +528,4 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 #include "plants.typ"
 #include "undead.typ"
 
-#include "legendary.typ"
 #include "non-combat.typ"

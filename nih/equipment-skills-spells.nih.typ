@@ -3621,7 +3621,7 @@ These mystic words are not in a recognizable language and can be immediately rec
 
 These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and may recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
 
-*Material (M).* Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in “equipment") in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
+*Material (M).* Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in #safe-link("equipment", [Equipment]) in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
 
 If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.
 

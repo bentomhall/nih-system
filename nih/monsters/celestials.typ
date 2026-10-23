@@ -1,14 +1,15 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Celestials <celestials>
 
 Creatures of the astral who are encountered in their own forms (either on the Astral plane or having traveled to another plane under their own power or that of an Ascendant) are called "celestials", after the most prominent group, the angels. Additionally, Mortal-plane creatures touched by strong amounts of Ascendant power may become MORE than they were. These two are counted as celestials--among them the heavenly flying horse, the pegasus, and the horned protector and friend to the innocent, the unicorn.
-== Angels
+== Angels <angels>
 "Angel" most properly denotes the members of the Angelic Hosts, those sworn to the endless battle to keep the universe safe from threats from Beyond. In common parlance, however, it means all sapient lucians who act on the orders of the Great Mechanism or various Ascendants. They inhabit either their own, often vaguely humanoid bodies of aether or wondrous shells of aether. Because their essence is of the Astral directly, they don't have the vulnerability to silver that fiends do.
 
 Don't mistake their luminous, kindly appearances for beneficence or goodness or kindness. Most often, angels are sent to the Mortal and other planes on specific missions, often of vengeance, justice, or punishment. Some are good and kindly, others are not. But angels are almost always _dutiful_, even if that means wreaking havoc on mortals.
 
-=== Astral Eyes
+=== Astral Eyes <astral-eye>
 Astral Eyes are "floating winged eyeballs", autonomous scouts and communicators. They're not particularly strong combatants, but the legions follow behind them.
 
 #statbox((name: "Astral Eye",
@@ -38,7 +39,7 @@ Astral Eyes are "floating winged eyeballs", autonomous scouts and communicators.
 	),
 ))
 
-=== Archons
+=== Archons <archons>
 Archons are the special forces units of the angelic legions. They are especially called on to act independently or in small groups, sometimes alongside a small number of valorites and seraphs.
 
 Blade archons are the least of the archons and often act as replacements for valorites in small-squad engagements. They summon and control blades of force and steel, including telekinetically attacking with longswords that hover nearby. They can force their opponents to consider their sins, weakening them.
@@ -71,7 +72,7 @@ Blade archons are the least of the archons and often act as replacements for val
 	),
 ))
 
-=== Seraph
+=== Seraphs <seraph>
 Seraphs are the support units of the angelic legion, normally lingering behind the front wall of valorites and archons to heal and protect their allies. They blast enemies with bursts of radiant energy, equally capable in melee or at range.
 
 #statbox((name: "Seraph",
@@ -102,7 +103,7 @@ Seraphs are the support units of the angelic legion, normally lingering behind t
 	),
 ))
 
-=== Valorites
+=== Valorites <valorites>
 Valorites are the common soldier of the angelic legions, as well as a common form for non-legion lucians to take when they are on divine business. Bearing a shield and wearing astral-steel chain, they fight in close formation with javelins and broad stabbing shortswords that glow with radiant power.
 
 #statbox((name: "Valorite",
@@ -136,7 +137,7 @@ Valorites are the common soldier of the angelic legions, as well as a common for
 	),
 ))
 
-== Astral-Touched Mortal Creatures
+== Astral-Touched Mortal Creatures <astral-touched>
 Some creatures aren't themselves of astral nature, but are touched heavily by the influence of the Astral plane.
 
 #statbox((name: "Pegasus",

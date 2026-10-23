@@ -1,11 +1,12 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 = Aberrations <aberrations>
 Aberrations are all creatures that, by the normal laws of things, should not exist. Often one-offs (but not always), they sit outside the natural order. While they may eat, they often do not need to do so to survive. They do not generally have normal reproductive cycles and live until they are killed. Most often, aberrations are created by influence from the Dark Beyond, although the demon prince known as the Twisted has created his fair share of such creatures.
 
-== Flesh Amalgams
+== Flesh Amalgams <flesh-amalgams>
 One "common" (as far as already rare aberrant beings go) result of influence from the Dark Beyond is the flesh amalgam. A hideous combination of features based on living beings, twisted into an insane mockery of reality. Each type is fairly unique, but they all share their unsettling effect on reality around them. Flesh amalgams are almost uniformly mindlessly hostile to all life around it, seeking to absorb it into themselves to grow stronger.
 
-=== Gibbering Mouther
+=== Gibbering Mouther <gibbering-mouther>
 The gibbering mouther is one of the more common variants of flesh amalgams. A blob of doughy flesh studded with mouths that continuously moan, wail, and chant nonsense, its presence also warps the ground around it. There are rumored to be larger versions, those that have absorbed many lives, with stranger abilities.
 
 #statbox((name: "Gibbering Mouther",
@@ -37,7 +38,7 @@ The gibbering mouther is one of the more common variants of flesh amalgams. A bl
 	)
 ))
 
-=== Voracious Maw
+=== Voracious Maw <voracious-maw>
 The voracious maw is a less-common flesh amalgam. Unlike the gibbering mouther, the maw is nearly silent except when it feeds, lean and hungry, all limbs and mouths. It ambushes its victims, dropping from cave ceilings and other hidden places and wrapping its many limbs around a creature, letting the mouths at the end of each of its tentacle-like arms rip out and devour chunks of the creature's living flesh. Thankfully, they are allergic to luminous radiation, such as direct sunlight or radiant damage, which causes them to slacken their grip.
 
 #statbox((name: "Voracious Maw",
@@ -69,12 +70,12 @@ The voracious maw is a less-common flesh amalgam. Unlike the gibbering mouther, 
 	)
 ))
 
-== Twisted Creations
+== Twisted Creations <twisted-creations>
 Many aberrants are the result of the influence of the demon prince known as The Twisted, who glories in reshaping living beings as so-called art, or his followers. While most of these are pitiable wretches unable to do more than _exist_ in pain and agony, others are capable of causing problems that adventurers may have to solve. A few, such as the comeidai and mkhulu are actually self-perpetuating species in their own right. They count as aberrant because they don't fit into the normal ebb and flow of life---for example, the mkhulu are parasites that take over and warp humanoid hosts and the comeidai reproduce by budding but live nearly indefinitely if not killed.
 
-As the Twisted was once a resident of the oceans, many of the twisted creations have thematic elements that hearken of tentacles. Others are pure body horror.
+As the Twisted was once a resident of the oceans, many of the twisted creations have aquatic themes (especially tentacles). Others are pure body horror.
 
-=== Jellyface
+=== Jellyface <jellyface>
 The jellyface is a particularly horrific creation---a humanoid head with transparent, cartilaginous bones and jellyfish-like tendrils descending from the border of its "face". The few that have any sapience left after the transformation are invariably insane. They, and the rest, simply undulate towards the nearest non-aberrant and inject flesh-melting poison from their tendrils before slurping up their victims.
 
 #statbox((name: "Jellyface",
@@ -107,7 +108,7 @@ The jellyface is a particularly horrific creation---a humanoid head with transpa
 	
 ))
 
-=== Twisted Hulk
+=== Twisted Hulk <twisted-hulk>
 Created by mkhulu and comeidai from ogres, these creatures have squid-like features---sucker-covered rubbery tentacles for one or both arms and a beak with necrotic poison. Even less intelligent than a normal ogre, they boast mental defenses against much magic that would confuse or control...other than that of the mkhulu themselves. 
 #statbox((name: "Twisted Hulk",
 	description: [Large aberration, fearless],
@@ -139,7 +140,7 @@ Created by mkhulu and comeidai from ogres, these creatures have squid-like featu
 	)
 ))
 
-== Comiedai and Mkhulu
+== Comiedai and Mkhulu <comiedai>
 
 The comiedai (singular comiedar, pronounced 'COH-mee-eh-dar', meaning 'memory keepers') are sea creatures with mental powers that exceed those of humans. They were originally created by Leviathan to act as mobile memory stores for information brought back by the mkhulu from explorations on land. But the Twisted (who was instrumental in encouraging their creation) had other plans. He altered most of them to desire domination for the purpose of improving the land-based mortals. Ever since, most comiedai have sought to make deals with land-dwellers in distress, promising them power (or usually vengeance) in exchange for service. They give power by converting them into mkhulu. By and large, they uphold their deals, but always in a way that creates expanding nests of mkhulu and their thralls. This they do to bring order to the chaotic lives of mortals, breaking them into shape according to the philosophies of the particular comiedar. They prefer to remain aloof, manipulating the land folk and implanting mkhulu larvae into their skulls. Twisted comiedai do not generally socialize with each other---each one considers itself the rightful master of all it perceives.
 
@@ -177,7 +178,7 @@ Physically, a comiedar is a bulbous, tentacled monstrosity that usually communic
 	))
 ]
 
-=== Mkhulu
+=== Mkhulu <mkhulu>
 Technically, mkhulu [m'KHOO'loo] is the name of the worm-like parasite that was created to live symbiotically with mortals, acting as a source of powers in exchange for letting the symbiont observe life and relay it back to the comiedai and thus to Leviathan. Due to The Twisted's influence and that of his servants in the twisted comeidai, these symbonts became altered---instead of symbionts living quietly alongside the mortal soul, they now override the host's personality and essence entirely. Some dispute whether the original host _dies_ or simply is suppressed, living as a prisoner in their own head. The existence of partial fusions points to the latter, while the enormous change in personality points to the former.
 
 A completely-fused mkhulu experiences physiological changes unique to that parasite, although commonalities exist. Loss of hair (body and head) and changes in skin color (usually to a grey-blue) are nearly universal, but many choose to grow tentacle-like "hair", often (for the males) as a beard. The sexual characteristics of the host are usually suppressed, often to the point of entirely withering away, leaving them with barely-visible excretory openings and lean, sexless bodies. Most mkhulu do not consider themselves male or female---instead considering themselves something superior to both.

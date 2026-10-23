@@ -1,6 +1,7 @@
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
     title: "NIH Character Creation",
     subtitle: "Classes, lineages, cultures, and backgrounds for NIH",
     author: "Admiral Benbo",
@@ -9,30 +10,10 @@
     logo: none,
     fancy-author: true,
     bg: none
-)
+  )
+]
 
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-= Character Creation
+= Character Creation <character-creation>
 
 Creating a character follows a specific process. The order of the first four doesn't really matter, but generally your class matters most for what you're doing during the session and the others act in supporting roles. It's up to you to decide whether you want a character that plays the archetype straight, such as a gwerin book-mage arcanist who was a scholar (doubling down on the stereotype that gwerin are masters of the arcane) or plays against type, like a jazuu rogue with a background as an acolyte (the very straight-laced jazuu not generally being known for their nimble stealth or gods-fearing ways, alongside having an average height well over 6 ft 6 inches).
 
@@ -46,12 +27,12 @@ Creating a character follows a specific process. The order of the first four doe
 
 If a class, lineage, culture or background gives you a proficiency you already have from another source, pick a different one instead.
 
-=== Class
+=== Class <class>
 Each character has a *class*, which represents how they go about adventuring. It is a combination of archetype, fictional role, approach to matters, as well as many of the mechanical abilities you will use during play. Classes are not necessarily formal parts of the fictional world. If you are an arcanist, for example, you may meet many people who have similar abilities, but this does not mean that all wielders of arcane power are arcanists and have all those abilities.
 
 The classes available for play are described in classes.
 
-=== Lineage and Culture
+=== Lineage and Culture <lineage-and-culture>
 Your character's lineage describes their biological heritage. Are they one of the tall, long-lived gwerin? Or a human? Or a draconic-souled dragonborn? Or one of many other lineages. Each lineage grants a few features, including giving a +1 to one ability score. It also describes the common heights, weights, appearance, etc. of members of that lineage.
 
 The lineages available for play are described in lineages.
@@ -60,7 +41,7 @@ A character's culture describes where in the world they come from and what kind 
 
 The lineages available for play are described in cultures.
 
-=== Ability Scores
+=== Ability Scores <ability-scores>
 A character's basic approach to adventuring is summed up in 6 numbers, called *Ability Scores* (or sometimes *ability modifiers*). They range between -5 (nearly incapable, usually only used for things like unthinking oozes or undead) and +5 (about the peak of normal earth humanity in that area). Some class abilities, magic, and monsters break that upper limit, but no ability score in the game can be above +10. A score of +0 is perfectly average for that area. Ability scores are added, by default, to all d20 rolls, whether ability checks, saving throws, or attack rolls, as well as damage rolls with weapon-based attacks (not spells). The game is not so tightly balanced that maximizing your scores is critical; there is value in being widely capable as well as specialized. However, it will go best if your highest ability scores (read on for the details on how to generate them) go in your chosen class's primary requirements (such as Intelligence for an arcanist or Strength for a warden).
 
 The six abilities are, with abbreviations in parentheses:
@@ -77,12 +58,12 @@ Ability scores aren't as much physical measurements as they are _archetypes_---y
 
 Also of note is that your character's decision-making skills are _NOT_ governed by any ability score. Those are entirely up to you. You don't have to do stupid, reckless things because you have low WIS or INT. Such a character might have bad information (faulty perception) or not know the facts (lack of knowledge), but if an action wouldn't be fun for the rest of the party (insulting the king to his face knowing it will get you thrown into jail, touching the obviously-marked End of the World button), don't feel like your ability scores are compelling you to do it anyway.
 
-=== Alignment
+=== Alignment <alignment>
 
 Alignment is not in effect, except descriptively. Instead, come up with two adjectives that describe your character's default reaction to things. For example, a habitual straight-man, always serious and mission-focused, might be Focused and Serious, while the flirty minx who loves to stir up trouble might be Sexy Chaotic. This is best done in discussion with the rest of the table, as it sets a tone for the party as a whole. Some groups are ok with tonal dissonance, while it causes issues for others. Best to figure this out _before_ you start playing.
 
 
-=== Languages
+=== Languages <languages>
 
 Your culture indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet. Every player character, by default, has proficiency in Common.
 
@@ -119,7 +100,7 @@ Proficiency in a language includes the basic ability to speak, understand, read,
 ")
 
 
-=== Ability Scores
+=== Ability Scores <ability-scores>
 To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.
 
 #breakoutbox("Commentary on Expected Values")[
@@ -140,13 +121,11 @@ Generally, you'll want your highest ability score to be in your class's primary 
 Many classes (especially brawlers, oathbound, rangers, and spellblades) want your second highest score in one other score (called a secondary ability score). Some subclasses, chosen at level 3 generally, also key off of certain ability scores.
 ]
 
-=== Standard Array.
-The standard array provides a fixed, consistent set of values for play. It trades the ability to get unusually high ability scores for the surety of not getting unusually low ability scores.
+*Standard Array.* The standard array provides a fixed, consistent set of values for play. It trades the ability to get unusually high ability scores for the surety of not getting unusually low ability scores.
 
 To use the Standard Array, distribute the following values among your ability scores in whatever order you choose: +2, +2, +1, +1, 0, -1.
 
-=== Rolled Scores.
-Rolling provides a bit of risk in return for possible reward. It can produce widely varying attributes between party members, and so should be done with care.
+*Rolled Scores.* Rolling provides a bit of risk in return for possible reward. It can produce widely varying attributes between party members, and so should be done with care.
 
 To roll ability scores, follow the following process:
 
@@ -155,8 +134,7 @@ To roll ability scores, follow the following process:
 - Divide the result by 2, rounding toward negative numbers (ie -5 divided by 2 becomes -3).
 - Repeat the above steps until you have 6 numbers, then assign them to your ability scores in whatever order you choose.
 
-
-=== Advancement Beyond 1st Level
+=== Advancement Beyond 1st Level <advancement-beyond-1st-level>
 
 As your character goes on adventures and overcomes challenges, he or she gains experience, represented by experience points. A character who reaches a specified experience point total advances in capability. This advancement is called *gaining a level*.
 
@@ -197,7 +175,7 @@ The expectation is that 1 XP &approx; 1 session of serious play, regardless of w
 )
 
 
-= Lineages, Cultures, and Backgrounds
+= Lineages, Cultures, and Backgrounds <lineages-cultures-backgrounds>
 
 Every adventurer has a few parts that pre-exist their adventuring life. Who they are, what they did before they became adventurers, and what kind of creature they are. Effectively, this breaks down into the biological, the socio-cultural, and the individual backgrounds. We call those, respectively, Lineage, Culture, and Background.
 
@@ -207,7 +185,7 @@ A character's culture describes where in the world they come from and what kind 
 
 Your background is more personal. Each character has a background, reflecting what they did growing up and/or before becoming an adventurer, as well as giving the character a motivation for adventuring and a connection to NPCs or areas. This document describes some common backgrounds, but you're more than welcome to create your own in coordination with your GM, as described in that section.
 
-= Lineages of Quartus
+= Lineages of Quartus <lineages-of-quartus>
 Lineages are the biological part of a character. Every lineage specifies
 
 - Size (both category and suggested height/weight bands)
@@ -217,7 +195,7 @@ Lineages are the biological part of a character. Every lineage specifies
 - Status. One of "core", "regional", and "rare. Core lineages are found everywhere and raise no especial eyebrows. Regional lineages are common/normal in region X, but will raise eyebrows elsewhere. Rare lineages raise eyebrows everywhere. This element has fewer _direct_ gameplay effects, but has significant narrative effects. NPCs may or may not change how they treat you based on how common your lineage is in that region.
 - Some combination of features. One minor feature only counts as half of a major feature; each lineage has the equivalent of 2 major features. Features marked with (+) are for use with the Touched template, which replaces one lineage feature from a base lineage with one caused by exposure to extra-planar forces.
 
-== Dragonborn, True
+== Dragonborn, True <true-dragonborn>
 
 An "artificial" lineage, the true dragonborn (so called to distinguish them from the dragonkin or draconians who result from prolonged human exposure and interaction with dragons) were created in a lab by mages of the Western Empire immediately prior to the War of Souls that destroyed that empire. In fact, their creation sparked the war; they were created by forcibly implanting fragments of dragon souls into unborn human babies conceived on unwilling mothers in factory conditions. This so horrified many people that civil war erupted. The new-born dragonborn victims were considered innocents and given a place of their home high on the Nocthian Caldera, now known as Wyrmhold.
 
@@ -260,7 +238,7 @@ dndtab(columns: (0.75fr, 1fr, 1.5fr, 2fr),"Elemental Affinity", [*Color*], [*Dam
 ))
 
 
-== Dwarf
+== Dwarf <dwarf>
 
 Dwarves, more properly the *tumnii*, are the kindred most unchanged by time. Their ancestors at the end of the First Age, nearly 20,000 years ago, were titans, masters of order and runes. The ruling council, committed an act of hubris. They created the so-called Orb of All Might to destroy their longstanding enemy, the wyrm (ancestors of dragons). To empower the Orb, they drained the power and potential out of the weaker elements of their society. These were the first dwarves. Sons and daughters of the earth and runes, they change only grudgingly. This carries over to their physiology. Dwelling in the mountain depths has sharpened their eyesight and the stone in their blood gives them increased endurance.
 
@@ -268,15 +246,15 @@ Tumnii are overwhelmingly born as fraternal twins, one male and one female. Dwar
 
 Three major ethnic variants exist, although this is more social rather than directly physiological.
 
-=== Abandoned
+=== Abandoned <abandoned>
 
 Abandoned dwarves come from the high-mountain regions in the Giant's Spine. The influence of malign creatures and magics, as well as the lack of resources, leaves these dwarves visibly different from most others. Their skin tends to the grey (and most often much paler), and they tend to be bald or shave much of their heads. Their eyes are red or violet, leading to an albino look. They tend to be slightly taller but much more slender than other dwarves, giving them an ungainly (to other dwarves) look, although they claim it's the other dwarves who are squashed. They have even more sexual dimorphism than surfacer dwarves, and looser attitudes toward marriage and family.
 
-=== Deep Mountain
+=== Deep Mountain <deep-mountain>
 
 Deep mountain dwarves live in the hard conditions deep inside the mountains. Their clans rarely come to the surface except to trade. As such, they tend to be shorter and more overtly muscular than surfacer dwarves. There is virtually no externally-visible sexual dimorphism between male and female deep mountain dwarves.
 
-=== Surfacer
+=== Surfacer <surfacer>
 
 Surfacer dwarves have ancestors that lived above ground and were craftsmen and traders. They tend to be taller than deep-mountain dwarves (averaging 4'8"with 5'0" not being too uncommon) but more wiry and slender than mountain dwarves. Sexual dimorphism (while muted compared to other races) is more pronounced in surfacer dwarves than in deep-mountain dwarves. This mainly shows up in facial features and body build. Height, weight, and strength are only minimally different. Female surfacer dwarves tend to have sharper features and straighter, longer hair than males. Both have elaborate beards (at least in the majority cultures).
 
@@ -292,7 +270,7 @@ Surfacer dwarves have ancestors that lived above ground and were craftsmen and t
 - *Poison Resistance.*  You have resistance to poison damage and make Constitution saving throws against being poisoned at advantage.
 ]
 
-== Gwerin
+== Gwerin <gwerin>
 The other major elven kindred, the gwerin (aka high elves) are the least populous of the kindreds. Slow to breed due to a legacy of near-agelessness (now lost, a fact that still causes many hard feelings), they stand out wherever they go. Historically their kind were masters of arcane magics; even now they have an enhanced sensitivity to aetheric manipulation and a knack for intellectual pursuits. Culturally, they are stereotyped as being snooty and stuck up, always considering themselves better than other kindreds. And, truth be told, many fit that stereotype or even glory in it.
 
 Physically, they stand of medium-tall height but usually stick-thin, rarely showing many curves or muscle. A visibly obese gwerin is an oddity. Their hair, skin, and eyes are jewel or metallic tones, with pale ivory skin being quite common with various exotic shades of hair including amethyst and emerald. Their ears are quite pointed, but not substantially longer than most human ears.
@@ -309,7 +287,7 @@ Physically, they stand of medium-tall height but usually stick-thin, rarely show
 - *Trance.*  Instead of sleeping, you remain semi-conscious and aware of your surroundings. You still require 6 hours of trance to complete a long rest. You cannot be magically put to sleep.
 ]
 
-== Halfling
+== Halfling <halfling>
 
 Halflings are the second-youngest of the lineages of Noefra, having spontaneously developed out of goblin-kind during the War of Souls roughly 800 years ago (just after the creation of the dragonborn). The magical radiations of that war and the extreme genetic bottlenecking attendant to their creation and then the Cataclysm (which hit their homelands the worst) led to an unusual genetic quirk: approximately 1/2 of all halflings are neuter females called Kliba. About 3/5 of the remainder are fertile females, known as matriarchs, and the remainder are males.
 
@@ -317,7 +295,7 @@ As the shortest, smallest kindred, they are often confused for children of large
 
 The tallest of them are shorter than the shortest humans, and they weigh very little.  Males are usually shorter and smaller than females. Halflings rarely grow beards or facial hair, and their hair is almost always short and tends to stick up. Their ears are slightly pointed and they have pronounced canines. Their eyes have a reflective undercoat like felines. All normal human hair colors and skin colors are found among the halfling-folk, although most have light hair and eyes.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Dexterity OR Charisma
 - *Age.*  adult around 10, live to 60-ish
@@ -332,28 +310,28 @@ The tallest of them are shorter than the shortest humans, and they weigh very li
 
 
 
-=== Human
+=== Human <human>
 
 Humans, also called the devout kindred, are among the most common of the peoples of Noefra. Created by the gwerin from goblinoids and gwerin blood during the interregnum between the Second and Third Ages, they dominated the Third Age with their devotion to the gods that arose with the dawn of the Third Age. They occupy the middle ground of the lineages: not as strong as orcs, not as aetherically gifted as gwerin, not as connected to the spirits as the ihmisi, nor as durable as dwarves. Instead, they have faith and community. Unique among the lineages, they willingly and gracefully include others, even strangers, into their kin-esque groups. They lean on the gods and Powers, using whatever sources of power and help they can. Where ihmisi and orcs and dwarves have clans and gwerin have families, humans build nations on ideas and shared history.
 
 Physically, humans of Noefra come in four major appearances, each with wide variation.
 
-=== Wall Builders
+=== Wall Builders <wall-builders>
 The wall-builders, native to the Sea of Grass, are a mixed group who can trace their heritage back to the confusion around the Cataclysm about 250 years ago. Physically, they are have medium-brown skin, stand shorter and rounder than most, and have wide variation in hair. The median wall-builder has curly brown hair, but red, blonde, and even more exotic hair colors are known.
 
-=== Night's Children
+=== Night's Children <nights-children>
 
 Visually the most distinct, the Night's Children of Byssia are generally tall and statuesque, with visible musculature. With very pale skin (that rarely tans or burns) and pure-black, straight hair, they have the least internal variation. Descended from the ancient Nocthians, who were an isolated people, the Night's Children stand out from the rest.
 
-=== Fang-kin
+=== Fang-kin <fang-kin>
 
 The fang-kin of the Jungle of Fangs are the shortest and slightest ethnic group of humans in Noefra. They rarely display any notable musculature or fat; both males and females are slender. Males rarely grow facial hair; females tend to be less well endowed. Their notable feature is that they have visible patches that are reminiscent of snake scales scattered across their bodies; these flush and become more visible when they are experiencing strong emotions.
 
-=== Golden Coasters
+=== Golden Coasters <golden-coasters>
 
 The eastern side of Noefra is dominated by the Jinse Empire, and has been for millennia. The main human ethnicity there is of medium stature, with slightly golden skin and generally fair-to-brown hair and eyes. Pure-blooded Jinse nobles often have a reddened cast to their skin due to generations of diabolical influence.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Intelligence OR Wisdom
 - *Age.*  adult at 16, live until 80-ish
@@ -364,12 +342,12 @@ The eastern side of Noefra is dominated by the Jinse Empire, and has been for mi
 - *Desperate Plea (+).*  As a reaction when you make an attack roll, an ability check, or a saving throw, you can choose to reroll the check and take the second result. If you had advantage or disadvantage, the reroll does as well. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 ]
 
-=== Ihmisi
-The ihmisi, the children of the woods, also called wood elves by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihminen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The repercussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
+=== Ihmisi <ihmisi>
+The ihmisi, the children of the woods, also called wood elves by the less educated, are the descendants of those ancient elves (the aelvar) who renounced or were psychologically or physically ill-suited for the practice of arcane magic. Outcast from the mage-dominated aelvar society, they found a home in the woods. The end of the Second Age came when they developed the primal arts, calling on the spirits of nature (aka ihimen or kami) for power. With this power, some of them wreaked a terrible vengeance against the decadent empire, cajoling the great spirit embodied in the third moon of Quartus to crash down upon their capital. The repercussions of this event still remain: the ihmisi and gwerin (the other major aelvar offshoot) are still somewhat at odds despite the passage of more than four millennia.
 
 Physically, ihmisi are of medium height, standing shorter than many taller humans but much taller than dwarves. Slender and graceful, they have light-brown skin (often with a greenish undertone) and brown hair, often with blonde or red tones...but just as often with green tones and mottled, almost leaf-like patterns. Green and brown eyes are most common; their eyes only have a small amount of the jewel tones of the gwerin. Their ears are slightly elongated and pointed, and their faces are sharper with larger eyes than most humans. Their pupils are cat-like slits.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Dexterity
 - *Age.*  adult at 20, live until 120-ish
@@ -381,13 +359,13 @@ Physically, ihmisi are of medium height, standing shorter than many taller human
 - *Voices of the Kami (+).*  While on the mortal plane you can meditate for 1 minute. During that time, your senses (vision and hearing) expand to 100ft (increasing to 200ft starting at level 5, 500ft starting at level 11, and 1000 ft at level 17) regardless of natural obstructions and you can sense the presence and number of any creatures within range. The exact location of unnatural creatures (fiends, undead, aberrations, or celestials) are pinpointed and you know their type. In cities or other worked environments, the range is halved and only unnatural creatures are sensed. You cannot see through or into buildings or other constructed obstructions. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 ]
 
-=== Jazuu
+=== Jazuu <jazuu>
 
 The other living descendants of the ancient titans, the jazuu are those whose ancestors were _not_ drained of runic potential. In the wake of the Orb's backfire, the runic power was shattered, leaving them locked in their small form, which still towers over most others. They retreated into the mountains and deep wastes of Noefra, forming civilizations such as the Tuura Adam around the few Titanwalls remaining. These runic constructions carry the promise of transformation into a true giant for the worthy and strong. As a result, many jazuu-dominated cultures are fircely competitive and perfectionist. The Tuura Adam take this to an extreme; they do _everything_ by the literal book, a collection of the perfect ways to do things that has grown and changed as new methods are discovered.
 
 A short jazuu is taller than most humans, and the tall ones rival their ogre kin. They rarely have hair of any kind, and generally have extremely chiseled musculature (both males and females). Their eyes tend to be blue or grey, although other colors are somewhat common. Their skin is often blue-grey or mottled, giving them the appearance of being chiseled out of stone. Tatoos are very common among the jazuu.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Constitution or Wisdom
 - *Age.*  adult around 18, live to 110-ish
@@ -398,13 +376,13 @@ A short jazuu is taller than most humans, and the tall ones rival their ogre kin
 - *Powerful Build.*  You count as one size larger for determining encumbrance, pulling and lifting objects, and grappling or shoving.
 ]
 
-=== Ophidian
+=== Ophidian <ophidian>
 
 The gwerin masters who ruled the Jungle of Fangs before they abruptly vanished about 400 years ago were obsessed with snakes. Hence the fang-kin humans and their distant relatives, the ophidians. Their ancestors were humans who were biomagically infused with snake essence to a much greater degree than their kin. To this day, they retain visual markers and altered physiology. Some of them suffer extreme mutations; their kin-folk often resort to extreme ritual magics to stabilize them in human/snake-hybrid forms so they don't die. Those hybrids are outcast except among the most isolated tribes.
 
 Physically, playable ophidians are very close to fang-kin humans, except that their eyes are slitted and their tongues are forked. They tend to be extremely charming, almost magically so, and flexible to an extreme.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Intelligence or Charisma
 - *Age.*  adult around 15, live to 70-ish
@@ -416,13 +394,13 @@ Physically, playable ophidians are very close to fang-kin humans, except that th
 - *Heat Sense.*  You can detect the presence (and pinpoint location) of living creatures within 30ft even through opaque concealment but not total cover. You do not count as able to see them for spells and effects that require sight, but they are not concealed from you and do not count as an unseen attacker.
 ]
 
-=== Orc
+=== Orc <orc>
 
 Like humans were created from goblinoids and gwerin, the orcs were created (at about the same time even) by the ihmisi from goblinoid, ihmisi, and animal souls. Second largest of the kindred (after the jazuu), they are an imposing people. Their early history was stained with the blood and curses of the War of Blood, when an orc leader turned to demonic power to fight back against oppression and assault and instead built an empire of skulls and ruin. After the gods were created to cast him down to the Abyss, the people who shared his face (justly or not) were considered evil and outcast to the fringes of civilization throughout the Third Age. With the Cataclysm and the great leveling of the old ways, they have re-entered society as equals. The legacy of that demon-tainted orc still echoes in the blood of Noefran orcs, although the compulsion that once drove them to mad bloodlust is gone.
 
 Physically, orcs have slightly grey-green-colored, rough skin. The most common ethnic group in Noefra, the orcs of the Fiach Woods, use tatoos to indicate standing in their clan-based society and personal history. Exiles have their tattoos magically (and painfully) wiped, leaving smooth scar tissue. Calling a tatooed orc "smooth skin" is a deadly insult. They stand much taller than most humans and much heavier, with dark hair and eyes. Some show signs of elongated lower canines, almost to the level of tusks.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Strength
 - *Age.*  physically adult at 12, lives until 70-ish, although 80 is not uncommon.
@@ -436,13 +414,13 @@ Physically, orcs have slightly grey-green-colored, rough skin. The most common e
 
 
 
-=== Soulforged, Steelborn
+=== Soulforged, Steelborn <steelborn>
 
 The steelborn soulforged, along with their mirrors the shrine guardians, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, metal clockwork labor constructs across Wyrmhold started to wake up, becoming ensouled living beings made of metal, stone, and crystal. Only a tiny fraction of all constructs awaken. No one knows _why_ this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, something many steelborn engage in. It is rare for a non-humanoid-shaped construct to awaken, and this playable lineage presumes that you are humanoid in shape (bilateral symmetry with a distinct head and torso).
 
 The steelborn are varied, but generally human-size or larger, but much heavier. The exact look is entirely arbitrary. Some have almost humanoid features; others just a plain metal mask. How they talk and why they need rest is entirely unknown. They are much stronger (due to their labor-construct nature) than the average human and have a lightning-infused core...although their souls are their real power source.
 
-=== Lineage Traits
+=== Lineage Traits 
 #flush-block[
 - *Ability Score Increase.*  +1 Strength
 - *Age.*  Undefined. No soulforged is more than 40 years old, but adulthood is not defined nor is a maximum age known.
@@ -453,7 +431,7 @@ The steelborn are varied, but generally human-size or larger, but much heavier. 
 - *Living Construct.*  You are immune to disease and do not require food or air. You do sleep normally, however, and are affected by poisons, including conventionally-inhaled ones. No one knows why.
 ]
 
-=== Soulforged, Shrine Guardian
+=== Soulforged, Shrine Guardian <shrine-guardian>
 
 The shrine guardians, along with their counterparts the steelborn, are the youngest lineage of Quartus. In the wake of the Fourth Wish approximately 50 years ago, magically-animated wood-and-stone shrine guardian golems started to wake up, becoming ensouled living beings made of wood and stone. Only a tiny fraction of the shrine guardians have awoken. No one knows _why_ this is happening, or how long they will live. Or how to cause one to awaken. Unlike most, they do not visibly change over time. Their appearance at the time of their awakening is how they will look throughout their lives unless they modify their own appearance, although shrine guardians tend to be less free with this than the steelborn.
 
@@ -469,12 +447,12 @@ The steelborn are varied, but generally human-size or smaller. Their shape is hu
 - *Natural Mimicry.*  While in natural environments and stationary, you appear indistinguishable from a tree to visual inspection.
 ]
 
-== Touched Lineages
+== Touched Lineages <touched-lineages>
 The influence of various forces, whether from outside the Mortal plane or not, often produces sports, called the Touched. Most often, these are human-touched (especially the light- and fiend-touched), but also the element-touched. The touched do not, generally, breed true, although the descendants of touched individuals have a larger chance of showing signs of that influence randomly (skipping generations). Many, if not most, are born to otherwise normal parents. Each culture reacts differently to this: the eastern Jinse empire considers the fiend-touched to be blessed, as they worship and traffic with fiends on a regular basis. By contrast, the fiend-touched were often given to the Church of the Truth in the Holy Kaelthian Republic (before that collapsed) and were raised to be merciless inquisitors in that rigidly theocratic land, and treated with suspicion outside that role.
 
 For all of these, start with a base lineage. Take the ability score increase listed for your Touched lineage instead of the normal one. Then replace the base-lineage feature marked with a (+) with one of those listed for the Touched lineage you chose instead. For all other purposes, you count as being a member of the base lineage. Some Touched lineages also may change other features; those replace the feature with the same name entirely.
 
-=== Light-touched (Celestial)
+=== Light-touched (Celestial) <light-touched>
 
 Those that are born in areas or to parents touched heavily by astral influence, especially the clergy serving various Ascendant powers, are born with a measure of the light of the Astral. Light is not good; the angels are known as avengers and dispensers of justice as much as mercy.
 
@@ -491,7 +469,7 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 - *Wings.*  As a bonus action, you can cause glowing wings of energy to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
 ]
 
-=== Fiend-touched (Lucian)
+=== Fiend-touched (Lucian) <fiend-touched>
 
 The fiend-touched are born to those who traffic with fiends or who were exposed to significant fiendish energy, whether demonic or lucian. Those born of abyssal influence are much less acceptable in most societies, although those born to victims of attempted demon-serving sacrifice are accepted most places after some alarm. They have a prediliction to fire, as most of the aether-woven fiendish combat bodies are fire-aspected.
 
@@ -508,7 +486,7 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 - *Wings.*  As a bonus action, you can cause leathery wings to extend from you, granting you a fly speed equal to your walking speed for one minute. Once you use this trait, you cannot do so again until you complete a long rest.
 ]
 
-=== Element-touched
+=== Element-touched <element-touched>
 
 The element-touched are most common in Byssia and the less settled lands, as the influence of the elements is strongest there. Depending on the exact influence, a fire-touched might have red hair that burst into literal (although heatless) flame when the child experiences strong emotions; a earth-touched might have rocky dermal patches, a water-touched might have (non-functional) gills and vestigial fins, and an air-touched might crackle with lightning.
 
@@ -523,7 +501,7 @@ You gain the ASI instead of the normal lineage one and your choice of the one of
 - *Shielding Stone.*  As a reaction when you or a creature you can see within 30' of you is hit by an attack, you can take the Deflect action without expending Stamina, affecting the creature targeted. This effect lasts until the start of your next turn. You can use this trait a number of times equal to half your proficiency bonus, regaining expended uses when you finish a long rest.
 ]
 
-= Cultures of Quartus
+= Cultures of Quartus <cultures-of-quartus>
 
 Culture represents all the socio-political aspects of your upbringing. In some cases, a culture and a nation of origin are coterminous; in many cases the culture is extends between nations and may only be a minority in any of them. People of many lineages have similar (enough for game purposes) cultures, so you can pick any culture regardless of your lineage. Different lineages tend to express shared cultures slightly differently, but that's between you and your GM.
 
@@ -537,7 +515,7 @@ In general, any lineage can come from any culture. Restrictions are as noted in 
 - Proficiencies. 3 total proficiencies (tools, skills, or otherwise).
 - Feature. One major-equivalent feature. Culture features are not replaced by plane-touched features.
 
-== Gender and Sexuality
+== Gender and Sexuality <gender-and-sexuality>
 Many of the lineages and cultures of Quartus have traditional attitudes toward gender roles. But adventurers are known to be weird. So they get a pass. You can play any gender, including non-binary. Be warned that some NPCs will react differently depending on their perceptions of your gender and how it meets the culture's expectations.
 
 A few specifics:
@@ -549,10 +527,10 @@ A few specifics:
 - The the Tuura Adam tend to place women in the gate-keeping role for relationships. Men are expected to prove themselves worthy. Non-binary or non-traditional gender roles are fully accepted, as long as you're good at whatever you do. Incompetence is the only thing not respected.
 
 
-== Generic (multi-region)
+== Generic (multi-region) <generic-cultures>
 These backgrounds are not specific to a region or culture, but instead represent a way of life common to all or most regions.
 
-=== Cosmopolitan
+=== Cosmopolitan <cosmopolitan>
 You grew up in one of the major cities dotting Noefra, surrounded by people of many lineages and cultures. The constant rush of commerce, the babel of different languages, all these shaped you.
 #flush-block[
 - *Region.* Any major city
@@ -563,7 +541,7 @@ You grew up in one of the major cities dotting Noefra, surrounded by people of m
 - *Babyl-dweller.* You know the Lesser Gift of Tongues incantation and can perform it without a ritual scroll and without expending the component.
 ]
 
-=== Maritime
+=== Maritime <maritime>
 You grew up by of the of the major bodies of water (inland or oceanic) and spent your early life in and around the water, even if you didn't sail as a profession.
 #flush-block[
 - *Region.* Byssia, Serpent Dominion, Southshore
@@ -573,7 +551,7 @@ You grew up by of the of the major bodies of water (inland or oceanic) and spent
 - *Like a Fish.* you have a swim speed equal to half your speed.
 ]
 
-=== Tribal
+=== Tribal <tribal>
 You grew up in a close-knit family, tribe, or clan, whether settled or migratory. Unlike most rural dwellers, your clan came first, rather than any nation or regional allegiance. Survival in the wilderness was often a top concern.
 #flush-block[
 - *Region.* Fiatch Wood, Kotimaa, Byssian Highlands, Jungle of Fangs, and many others
@@ -583,7 +561,7 @@ You grew up in a close-knit family, tribe, or clan, whether settled or migratory
 - *Hardy.* Once per long rest, you can reduce your Exhaustion level by one when you finish a short rest.
 ]
 
-=== Religious
+=== Religious <religious>
 Your upbringing was full of religion, faith, ceremony, and worship. Whether of one of the gods or some other Ascendant, this pattern of worship dominated your early life even though you were not necessarily a priest or acolyte at any temple.
 #flush-block[
 - *Region.* Any
@@ -594,7 +572,7 @@ Your upbringing was full of religion, faith, ceremony, and worship. Whether of o
 - *Ritualist.* When you perform an incantation or ritual spell that has a performance time greater than 1 minute, you can reduce it by one step (to a minimum of one minute).
 ]
 
-=== Rural
+=== Rural <rural>
 You grew up part of a civilized nation, but like the majority of the population, you grew up outside the major cities and towns. Farming, ranching, keeping sheep or cows, and hunting made up most of your days.
 #flush-block[
 - *Region.* Any
@@ -604,7 +582,7 @@ You grew up part of a civilized nation, but like the majority of the population,
 - *Animal Whisperer.* You can use your action to attempt to soothe a hostile animal or tame a wild one that isn't hostile to you. Choose a beast or monstrosity you can see that can hear you. Make a Wisdom (Animal Handling) check against a DC of 10 + the creature's CR (rounding up), with disadvantage if it has an Intelligence above 3. On a success, the creature is charmed by you for one hour or until you or your companions take a hostile action against it. If you successfully repeat this check every hour for 4 hours, the creature will follow you for 24 hours without any further checks and will defend you. It remains an NPC and you cannot command it directly. You can only have one creature tamed at a time, and once you successfully use this ability, you cannot use it targeting any other creature until you finish a long rest.
 ]
 
-== Specific
+== Specific <specific-cultures>
 These cultures tie you to a specific region of the world.
 === Wall-builder
 The wall-builders are the dominant culture of those whose ancestors fled the Cataclysm into the Sea of Grass in central-western Noefra. Their name comes from their historical pattern of always building a wall around every settlement, no matter how minor. Even isolated hamlets and farms have at least a palisade or berm. Highly religious and consensus-driven, they believe in community and finding your expected role in society without making waves.
@@ -617,7 +595,7 @@ The wall-builders are the dominant culture of those whose ancestors fled the Cat
 - *Children of the Congregation.* You learn a cantrip of your choice from the Priest list. Wisdom is the casting ability for this cantrip.
 ]
 
-=== Wyrmhold Clan
+=== Wyrmhold Clan <wyrmhold-clan>
 Wyrmhold, the nation of orcs, dragonborn, and goblins on the eastern edge of the Nocthian Caldera, is a very martial culture while also being clannish (although the clan-based structure is fading in more recent years). Everyone is trained in wielding a weapon and strength is prized. The three lineages each play their own parts and leave the internal affairs of the others alone, which is both a strength and a weakness.
 #flush-block[
 - *Region.* Nocthian Caldera, Safehold, Byarmarsh, Kiren Mountains, Fiach Woods
@@ -627,7 +605,7 @@ Wyrmhold, the nation of orcs, dragonborn, and goblins on the eastern edge of the
 - *Trained for War.* When you spend a hit die to heal, if the die result is below half of its maximum, the hit die is regained when you finish the short rest.
 ]
 
-=== Child of Night
+=== Child of Night <child-of-night>
 Byssia, located to the south of the Nocthian Caldera, is a land culturally obsessed with mysteries. Keeping them from others and finding them out. They also are notable for not being conventionally religious: they worship either the nature spirits (kami) or the Ascendant Nocthis, patroness of the moons and of mystery. Their society is rural and decentralized, with much of it making conscious efforts to live in harmony with nature.
 #flush-block[
 - *Region.* Nocthian Caldera, Byssia
@@ -637,7 +615,7 @@ Byssia, located to the south of the Nocthian Caldera, is a land culturally obses
 - *Delver into Mysteries.* The culture of Byssia is big on secrets, both keeping them and discovering them. You have advantage on any Wisdom (Perception), Intelligence (Investigation), or Wisdom (Insight) check made to determine a hidden location, object, or motive.
 ]
 
-=== Fang-kin
+=== Fang-kin <fang-kin>
 The Jungle of Fangs is home to several nations who share a common culture, history, and religion. Most of the natives of the region are descendents of those who served the Old Masters (who disappeared about 400 years ago) and were changed by them. They dominantly worship the Queen Ascendant, a recently-ascended (about 45 years ago) eternal queen figure, doing so via dance and music. They prize the arts and commonly revere snakes. The color blue is reserved for nobles by long-standing tradition. Culturally, they are very caste oriented, with strong boundaries between nobles, tradesmen, and commoners.
 #flush-block[
 - *Region.* Jungle of Fangs
@@ -648,7 +626,7 @@ The Jungle of Fangs is home to several nations who share a common culture, histo
 ]
 
 
-=== Uulani
+=== Uulani <uulani>
 The Uulani are mostly dwarves, but some humans and halflings who have adopted their ways. Unlike the Wyrmhold clans who prioritize _family_, the uulani prioritize _ideology_. Each clan is a shared mind-set, and switching clans as one grows up is not unheard of or unwelcome. Like the wall-builders, they are consensus-driven; unlike them they have no problems making waves and questioning things. They prize hard work and good workmanship in everything; idleness is one of their major sins. Not incredibly religious, they revere specific ancestor figures (called the Paragons) as examples of what a good Uulani should be and pay homage to the God of Mountains and Silent Endurance, Korokonolkolm.
 #flush-block[
 - *Region.* Uulan Confederacy, Shinevog
@@ -658,7 +636,7 @@ The Uulani are mostly dwarves, but some humans and halflings who have adopted th
 - *Famous Artisans.* The Uulani are known far and wide for their crafting prowess. All crafting costs half as much time and money. In addition, you start with the schema for one Journeyman item of your choice. At level 6, you discover a schema of your choice for an Adventurer item.
 ]
 
-= Backgrounds
+= Backgrounds <backgrounds>
 Every story has a beginning. Your character's background reveals where you came from, how you became an adventurer, and your place in the world. Your armsman might have been a courageous knight or a grizzled soldier. Your arcanist could have been a sage or an artisan. Your rogue might have gotten by as a guild thief or commanded audiences as a jester. Or none of these---an armsman may have trained in secret on her father's farm and an arcanist might have come to his power while hauling nets full of fish.
 
 Choosing a background provides you with important story cues about your character's identity. The most important question to ask about your background is _what changed_? Why did you stop doing whatever your background describes and start adventuring? Where did you get the money to purchase your starting gear, or, if you come from a wealthy background, why don't you have _more_ money? How did you learn the skills of your class? What sets you apart from ordinary people who share your background?
@@ -686,11 +664,11 @@ Each sample background presents a list of questions you can use as a springboard
 
 A background gives access to a single skill trick (see Skill Tricks later in this document for more details and the complete list). As you customize your background, you can substitute the listed skill trick for any other that uses one of the proficiencies granted by the background.
 
-=== Customizing a Background
+=== Customizing a Background <customizing-a-background>
 
 You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace the granted skill trick with any other that uses one or more of the proficiencies granted by the background, choose any two skills, and choose a total of three tool proficiencies or languages from the sample backgrounds.
 
-=== Personality Traits
+=== Personality Traits <personality-traits>
 Personality traits are small tics and mannerisms---things that your character does naturally---or other neutral facets other people can observe. These may be verbal tics, mannerisms, habits, etc. Generally these are small and neutral, just reminders for you to play off of. Unlike the bond, ideal, and flaw, they're less about being sources of plot hooks and more about characterization.
 
 Ideas:
@@ -700,7 +678,7 @@ Ideas:
 - You have a horrible sense of direction and frequently get lost if left to your own devices.
 - You are fastidious about your grooming, getting annoyed if you're muddy or unable to bathe frequently.
 
-=== Ideal
+=== Ideal <ideal>
 Your ideal is something that you hold to deeply, something that you want to bring about. Different ideals can be interpreted many different ways: for one person, freedom might be being free from external restraints and going with the wind. For another, it might be about having enough power that no one tells you what to do. Choose something that your character will attempt to follow through on and seek for, but be careful about choosing things that strongly conflict with the ideals of fellow party members. Conflict of ideals isn't necessarily _wrong_, but it should be discussed openly out of character before the campaign begins so all the players are ok with it.
 
 Examples:
@@ -711,7 +689,7 @@ Examples:
 - Altruism. You believe that self-sacrifice for others is the noblest of goals.
 - Profit. You believe that money makes the world go round.
 
-=== Bond
+=== Bond <bond>
 While ideals are abstract, bonds are concrete. A person, organization, or place that you strongly want to protect, defend, regain, or help. Work with your GM to flesh out the details. A bond is supposed to act as a plot eyebolt--a place you've agreed with the GM that he or she can attach plot hooks and you'll bite.
 
 Examples:
@@ -722,7 +700,7 @@ Examples:
 - A guild, company, etc. You are an agent of a group that has sent you out on an adventure. You owe much to them.
 - A guild, company, etc. They kicked you out and you want to prove them wrong/get revenge/get back into their graces.
 
-=== Flaw
+=== Flaw <flaw>
 A flaw is something that gets you in trouble. Like the bond, this is a plot eyebolt. Flaws should be noticeable and make you do things that aren't optimal, but shouldn't make the game un-fun for others by putting the campaign in jeopardy senselessly. "I attack my fellows in blind rage"is not, generally, an appropriate flaw. Neither is"I never back down".
 
 Examples:
@@ -732,7 +710,7 @@ Examples:
 - I'm in debt to a criminal organization.
 - I did something really stupid, and people are after me.
 
-=== Regional Origin
+=== Regional Origin <regional-origin>
 Every character comes from somewhere. And that origin makes a big difference. Who you know, what you know, who knows you, and what things you're good at are all part of your regional origin. Some regions have peculiarities that make some backgrounds inapposite or at least require significantly more explanation. For example, the entirely land-locked Uulan Confederacy doesn't exactly have many sailors. And the kritocracy of Byssia doesn't have nobility, but a similar background can be framed around one of the more influential (in practice, if not in law) merchant or religious families.
 
 In the default setting (Dreams of Hope's Federated Nations area), the regions of origin are:
@@ -747,8 +725,8 @@ In the default setting (Dreams of Hope's Federated Nations area), the regions of
 
 *Wyrmhold.* Wyrmhold is a highly militarized and industrial neighbor occupying the eastern flank of the Nocthian Caldera and the adjoining Kairen Mountains, as well as the southern part of the Fiach Wood and western part of the Lupaus Plains. Populated primarily by dragonborn, orcs, and goblins, there are jazuu in the high mountains as well. Other lineages only occur as migrants in the last decade or so. A clan-based aristocracy ruled by a queen, the nation has a strong and proud military tradition. They are also the second-most technologically advanced nation of the area, with only Shinevog more advanced. But they have a much deeper industrial base (albeit mostly military focused until very recently). They have little water access and are not generally known for their trading or merchant prowess.
 
-== Sample Backgrounds
-=== Aristocrat
+== Sample Backgrounds <sample-backgrounds>
+=== Aristocrat <aristocrat>
 #flush-block[
 - *Proficiencies.* History, Persuasion, one gambling set, land OR water vehicles
 - *Languages.* Any language of your choice
@@ -764,7 +742,7 @@ True nobles are rare in the Federated Nations---the noble houses are few and far
 - Is there anyone trying to get you to return and play a bigger role in the family affairs? Are you running from any arranged marriages?
 - How do you view the common folk? How familiar are you with their ways and traditions? How cloistered in your high status were you?
 
-=== Crafter
+=== Crafter <crafter>
 #flush-block[
 - *Proficiencies.* Investigation, Perception, two crafting tools of your choice
 - *Languages.* Tumnii (Dwarven)
@@ -780,7 +758,7 @@ Most of the Federated Nations works on a guild apprenticeship basis, with indivi
 - What variety of crafting did you do (e.g. fine metal work, pots, structural metal, armor/weapon smithing, etc)?
 
 
-=== Criminal
+=== Criminal <criminal>
 #flush-block[
 - *Proficiencies.* Intimidation OR Deception, Stealth, Thieves tools
 - *Languages.* One common language of your choice
@@ -796,7 +774,7 @@ Criminal organizations, as well as individuals who live and operate outside the 
 - Do you still have connections with the underground where you came from? Are they friendly? Or did you flee in haste? If so, why?
 - What did you do that you regretted, if anything? What secrets do you have that might come back to bite you or your party?
 
-=== Entertainer
+=== Entertainer <entertainer>
 #flush-block[
 - *Proficiencies.* Acrobatics, Performance, Disguise Kit, one musical instrument of your choice
 - *Languages.* One common language of your choice
@@ -812,7 +790,7 @@ Entertainers are minstrels, traveling players, actors, actresses, temple dancers
 - What kinds of audiences did you favor? The common folk in taverns? Busking for coins on the street? The high society parties?
 - Was there any particular person or people you had drama with?
 
-=== Farmer
+=== Farmer <farmer>
 #flush-block[
 - *Proficiencies.* Animal Handling, Nature OR Survival, one crafting tool of your choice, and land vehicles
 - *Languages.* One common language of your choice
@@ -829,7 +807,7 @@ The majority of the population of the Federated Nations is involved in farming o
 - Do you still have family back on the farm? Were they ok with you leaving?
 - What were you known for as a youth? Any particular events stand out?
 
-=== Merchant
+=== Merchant <merchant>
 #flush-block[
 - *Proficiencies.* Deception OR Persuasion, Insight, land vehicles, one gambling set of your choice
 - *Languages.* One common language of your choice
@@ -846,7 +824,7 @@ Merchants run the gamut from the great merchant princes of Rauviz or Asai'ka to 
 - What kind of reputation did you have? A fair dealer, accepted if not liked? A fly-by-night operator? Someone who could find what the customer wants, for a high enough price? A shady, high pressure operator?
 
 
-=== Sailor
+=== Sailor <sailor>
 #flush-block[
 - *Proficiencies.* Perception, Survival, water vehicles and cartographer's tools
 - *Languages.* One common language of your choice or Primordial
@@ -863,7 +841,7 @@ The Federated Nations is mostly landlocked. Four major bodies of water, plus a s
 - Were you willingly part of that life? Or were you snatched up and bound to service?
 - Was your ship one big family or wer the captain and officers tyrants? Or maybe you were a tyrant?
 
-=== Scholar
+=== Scholar <scholar>
 #flush-block[
 - *Proficiencies.* Your choice of two of Arcana, History, Nature, or Religion
 - *Languages.* Any two languages of your choice
@@ -879,7 +857,7 @@ Many of the nations have a scholarly tradition, although not all have an _academ
 - If you were cloistered in a library or laboratory, what brought you out of that life? If you were a wanderer, what made you take up your particular practices (your class)?
 - Do you have a reputation in the scholarly community?
 
-=== Shrine-keeper
+=== Shrine-keeper <shrine-keeper>
 #flush-block[
 - *Proficiencies.* Religion, Persuasion, Wood-carver's tools
 - *Languages.* Sylvan OR Lucian
@@ -897,7 +875,7 @@ Shrine-keeper, priest, cleric, wise one, witch. Those that tend to the shrines o
 - What event made you leave the service of the shrine and take up the life of a wandering adventurer? An oracle from your Power? Or the destruction/desecration of the shrine? Or maybe just a desire for a new life?
 
 
-=== Soldier
+=== Soldier <soldier>
 #flush-block[
 - *Proficiencies.* Athletics, Intimidation OR Medicine, one game set, smiths' tools
 - *Languages.* One common language of your choice
@@ -914,7 +892,7 @@ Most of the Federated Nations don't have large standing armies. It's been a time
 - Did you leave on good terms? Or did you leave under a cloud (earned or not)?
 - Were there any particular (small-scale) actions you participated in?
 
-=== Street Kid
+=== Street Kid <street-kid>
 #flush-block[
 - *Proficiencies.* Perception, Stealth OR Intimidation, thieves tools, one gambling set of your choice
 - *Languages.* Thieves' Cant
@@ -930,19 +908,19 @@ Every city and substantial town has those who fall through the cracks. Kids, esp
 - How did you gain the training and resources for your class? Was there a kind (or cruel!) mentor or benefactor? A happy accident? A particularly big score?
 - What kind of a town did you grow up in? Was it a big city? A medium-sized town?
 
-== Converting Lineages, Cultures, and Backgrounds to 5e D&D
+== Converting Lineages, Cultures, and Backgrounds to 5e D&D <converting-lineages>
 Most of the material presented here should be fully compatible with normal 5e (2014) #dnd. Characters gain all of Lineage (instead of race and subrace), Culture, and Background (replacing the regular background options). They are not, however, balanced for use alongside normal 5e races and backgrounds. A few specific alterations needed:
 
 - When a trait references learning an incantation, replace it with being able to ritual-cast (only, not spell slots) the relevant spell: Augury -> _augury_, Lesser Gift of Tongues -> _comprehend languages_, etc
 - Replace references to Stamina in skill tricks with a use limit of ability modifier (min one) per short rest.
 - Ability score increases become +2 from lineage and +2 from culture. The parent system doesn't split scores from modifiers, so +1 there is +2 in regular D&D. Similarly, the maximum ability score attainable from all normal sources is also 20, not +5.
-- The Shielding Stone feature instead grants the ability to raise the AC of one creature within 30 feet of you that is hit with an attack (as the _shield_ spell) by your proficiency bonus, with the same usage limits as written.
+- The Shielding Stone feature instead grants the ability to raise the AC of one creature within 30 feet of you that is hit with an attack (as the #safe-link("shield", [_shield_]) spell) by your proficiency bonus, with the same usage limits as written.
 
-= NIH Classes: Martials
+= NIH Classes: Martials <martial-classes>
 
 Martial characters are those that don't learn or cast spells as part of their normal class operations. Some may gain spell-casting from other features (such as skill tricks), but the class itself doesn't grant spell-casting. This does not mean that they are mundane or non-magical. Every PC in NIH (at least at higher levels) has fantastic abilities most would call magic. Martials use weapons to deal damage; most of their abilities depend on having a weapon in hand (although in the brawler's case, their body is their weapon).
 
-== Summary of Martial Classes
+== Summary of Martial Classes <summary-of-martial-classes>
 The four martial classes of NIH are the armsman, the brawler, the rogue, and the warden.
 
 === The Armsman
@@ -963,7 +941,7 @@ The warden is a brute, drawing primal power from their emotions (most often shee
 "Rogue", "DEX", "Ranged or melee skirmisher with dirty tricks",
 "Warden", "STR", "Durable heavy melee")
 
-= Armsman
+= Armsman <armsman>
 
 The armsman is a master of weapons. His power comes from training, discipline and superior techniques that allow him to break the boundaries of what is possible for others. While he does not cast spells, his skills are themselves beyond the natural.
 
@@ -1032,7 +1010,7 @@ Whenever an ability from this class forces an enemy to make a saving throw again
 "20th", "+2", "Improved Deathblow", "20 + CON", "10", "4"
 )]
 
-== Weapon Mastery
+== Weapon Mastery <armsman-weapon-mastery>
 
 You are better than most at using the additional properties of your weapon. You gain a bonus depending on the additional property. If the weapon has multiple additional properties, you must choose which bonus to apply on any individual attack.
 #flush-block[
@@ -1047,39 +1025,39 @@ You are better than most at using the additional properties of your weapon. You 
 - *Two-handed.* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
 ]
 
-== Second Wind
+== Second Wind <second-wind>
 
 You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can spend 1 STA use a bonus action to regain hit points equal to 1d10 + your armsman level. The cost increases by 1 STA each time you use it, resetting to 1 when you finish a long rest.
 
-== Action Surge
+== Action Surge <action-surge>
 
 Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can spend 3 STA to take one additional action on top of your regular action and a possible bonus action.
 
 Once you use this feature, you cannot use this feature again until you next roll initiative. Starting at 17th level, you can use it as many times as you have stamina for, but only once on the same turn.
 
-== Martial Archetype
+== Martial Archetype <armsman-martial-archetype>
 
 At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose from the Defender, Sword Saint, or Warlord archetype, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
 
-== Ability Score Improvement
+== Ability Score Improvement <armsman-ability-score-improvement>
 
 When you reach 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Extra Attack
+== Extra Attack <armsman-extra-attack>
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class.
 
-== Repeated Strikes
+== Repeated Strikes <repeated-strikes>
 
 Beginning at 5th level, you've learned to carry some of the momentum from attack to attack, amplifying the effects of the blows. Each time you hit a target with a weapon attack during one of your turns, you can spend 1 STA to gain a Momentum point. If you spent STA as part of the attack, you gain a Momentum point for no additional cost. You can expend one or more Momentum points when you hit with a weapon attack. Each Momentum point spent increases the damage dealt by 1d4. Unspent Momentum fades after one minute of not making any attacks.
 
 Alternatively, you can expend 2 Momentum points on a hit to force the target to make a Constitution saving throw against your Weapon Mastery DC. On a failed save, they are staggered until the end of your next turn. You can expend 4 Momentum points to force the same saving throw, but instead of staggered, they are stunned until the end of your next turn.
 
-=== Versatility
+=== Versatility <armsman-versatility>
 
 Beginning at 6th level, you gain the following benefits:
 
@@ -1089,7 +1067,7 @@ Beginning at 6th level, you gain the following benefits:
 - You can choose to make a Strength check when a Dexterity check would otherwise be called for and vice versa. Any specified proficiency still applies.
 - You can Shove or Grapple instead of making a regular Opportunity Attack.
 
-=== Everything's a Weapon
+=== Everything's a Weapon <everythings-a-weapon>
 
 Beginning at 9th level, you've discovered that the same techniques you use with your weapons also applies to other situations. Choose one of the approaches below. You can change your approach when you finish a long or short rest.
 #flush-block[
@@ -1100,59 +1078,59 @@ Beginning at 9th level, you've discovered that the same techniques you use with 
 - *Subtle.* When you make an ability check involving Acrobatics, Stealth, Sleight of Hand, or Deception, you may add twice your proficiency bonus instead of any proficiency (including none) that may have applied.
 ]
 
-=== Indomitable
+=== Indomitable <indomitable>
 
 Beginning at 9th level, you can choose to succeed on a saving throw instead of rolling. If you do so, you cannot use this feature again until you finish a long rest.
 
 You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
 
-=== Flash Step
+=== Flash Step <armsman-flash-step>
 
 Starting at 13th level, you have learned to move so fast over short distances that it appears you can teleport. When you move on your turn, you can spend 2 STA to instead teleport to the chosen location as long as you have a clear path to the target location and it is no further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through. This consumes your movement at a rate of 1 ft per ft teleported.
 
-=== Deathblow
+=== Deathblow <deathblow>
 
 Starting at 14th level, you can attempt to strike down a wounded foe. When you hit an enemy with a weapon attack and the enemy has less than 25 HP, you can choose to spend 4 STA to drop it to 0 HP instead of dealing normal damage. You can choose whether this is lethal or nonlethal if you hit with a melee attack.
 
 If the target has hit points above this threshold, you can choose to force the target to make a Constitution saving throw at disadvantage. On a failed save they are stunned until the end of your next turn. Alternatively, you can choose to refund the STA spent.
 
-=== Improved Deathblow
+=== Improved Deathblow <improved-deathblow>
 
 Starting at 20th level, your touch is death for most weaker foes. You no longer need to expend STA to use Deathblow if the target's current or maximum HP is below 50, and can spend stamina to use Deathblow as long as the target's current HP is under 100.
 
-= Martial Archetypes
+= Martial Archetypes <armsman-martial-archetypes>
 
 Different armsmen choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach.
 
-== Defender
+== Defender <defender>
 
 The defender archetype focuses on protecting allies from harm while locking down their enemies. While most use a one-handed weapon and a shield, others trust in their heavy armor to protect them.
 
-=== Thicket of Blades
+=== Thicket of Blades <thicket-of-blades>
 
 Starting at 3rd level, opponents provoke opportunity attacks from you by moving 5 ft or more within your reach, making attacks against anyone but you, or casting a spell (including ones with range self or touch). When you hit a creature with an opportunity attack, their speed is reduced to zero until the start of their next turn.
 
-=== Shielding Bulwark
+=== Shielding Bulwark <shielding-bulwark>
 
 Starting at 3rd level, when you are the target of an effect that centers on a point in space and allows a Dexterity saving throw to take half damage, you can use your weapon and shield to diffuse and deflect the energies, protecting yourself and those behind you. Expend 2 STA. You and all creatures in a 15 ft long line that is 10 ft wide behind you (relative to the target point in space) gain advantage on the saving throw and the shielded creatures take no damage if they succeed on the saving throw and only half damage if they fail.
 
-=== Combat Challenge
+=== Combat Challenge <combat-challenge>
 
 Starting at 7th level, your training has taught you how to magically compel a target to focus on you. As a bonus action, spend 2 AET and choose a target that can hear you and that you can see within 60 feet. The target must make a Charisma saving throw. On a failed save, the target cannot make attacks against anyone but you or target any of your allies with an ability (magical or otherwise). Additionally, they cannot willingly move further away from you. This effect lasts for one minute or until you use this ability against someone else or you are incapacitated.
 
-=== Calming Words
+=== Calming Words <calming-words>
 
 Starting at 10th level you've become particularly adept at predicting what will cause controversy---words are weapons too. As such, you can add twice your proficiency bonus to any Charisma check you make to defuse tense situations. In addition, when an ally you can hear makes a Charisma (Persuasion) check and you Help them, they can add your Charisma (Persuasion) modifier to theirs when resolving the check.
 
-=== Resilience
+=== Resilience <resilience>
 
-Starting at 15th level, you can ignore your wounds and keep fighting even through attacks that would normally incapacitate you. When you are reduced to 0 HP or would be outright killed (such as by a _power word kill_ effect), you can spend 8 STA to instead heal to half your maximum HP.
+Starting at 15th level, you can ignore your wounds and keep fighting even through attacks that would normally incapacitate you. When you are reduced to 0 HP or would be outright killed (such as by a #safe-link("power-word-kill", [_power word kill_]) effect), you can spend 8 STA to instead heal to half your maximum HP.
 
-=== Total Prediction
+=== Total Prediction <total-prediction>
 
 Starting at 18th level, you have trained enough to be able to magically sense your enemies' actions a few steps ahead. As an action you can expend 4 AET and 4 STA, gaining limited precognitive abilities for one hour. For the duration, you cannot be surprised and have advantage on attack rolls. Additionally, other creatures have disadvantage on attack rolls against you for the duration.
 
-== Sword Saint
+== Sword Saint <sword-saint>
 
 Don't let the name confuse you, there are sword saints devoted to all forms of weapons. The sword saint takes their weapon skills to an entirely new level. On the battlefield they are a flash of lightning, a stroke of thunder, an explosion of strikes. Many of their techniques draw on pure aether, mixing magic and weapon play.
 
@@ -1165,43 +1143,43 @@ Don't let the name confuse you, there are sword saints devoted to all forms of w
 "19", "8"
 )
 
-=== Exceptional Aether
+=== Exceptional Aether <exceptional-aether>
 
 Starting at 3rd level, sword saints cultivate their aether thoroughly than most armsmen. Your maximum aether increases to be equal to your level (instead of half your level) and your aether limit increases as you gain levels as shown on the Sword Saint table.
 
-=== Weapon Flexibility
+=== Weapon Flexibility <weapon-flexibility>
 
 Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list until the start of your next turn: Battering, Cleaving, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
 
-=== Blazing Flash
+=== Blazing Flash <blazing-flash>
 
 Starting at 3rd level, you can concentrate fire-aspected aether in your weapon strikes. When you hit with a weapon attack, you can expend 1 STA or AET to add 2d4 fire damage to the attack and force the target to make a Constitution saving throw. On a failed save, they are staggered until the end of their next turn.
 
-=== Blades of Air
+=== Blades of Air <blades-of-air>
 
 Starting at 7th level, you can concentrate air-aspected aether in your melee strikes, launching blades of solid air at your foes. When you take the Attack action with a melee weapon, you can expend 1 or more AET to extend your reach for that action by 10 ft per aether spent and convert the damage to thunder. The damage dealt by these attacks also increases by 1d4 for every AET spent.
 
-=== Cold as Ice
+=== Cold as Ice <cold-as-ice>
 
 Starting at 10th level, you are nearly impossible to fluster or make angry. You can add twice your proficiency bonus to any saving throw or ability check against an effect that would impose the frightened or charmed condition and if you are affected by either of those conditions, you can expend 2 STA at the start of your turn to suppress the effect until the end of your turn. You can do so even if you otherwise would not be able to take actions, as long as you are conscious.
 
 Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 AET as an action, removing the effect or expelling the possessor.
 
-=== Lightning Step
+=== Lightning Step <lightning-step>
 
 Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw. On a failed save, targets take lightning damage equal to your proficiency bonus #sym.times your Intelligence modifier and are staggered until the beginning of your next turn. On a success, targets take half damage and are not staggered.
 
 When you do this, you can expend 5 AET. If you do so, creatures that fail their saving throw are stunned instead of staggered and targets that succeed are staggered until the start of your next turn.
 
-=== Cascading Deathblow
+=== Cascading Deathblow <cascading-deathblow>
 
 Starting at 18th level, when you use your Deathblow ability, you can expend 1 or more AET in addition to the STA spent (if any) to activate the ability. If you do so, all creatures of your choice within your reach if wielding a melee weapon or all creatures of your choice within 10 feet of the original target if wielding a ranged weapon take damage of the weapon's type equal to one roll of the weapon's base die for every aether spent.
 
-== Warlord
+== Warlord <warlord>
 
 Warlords are the battle commanders; they give up some of their personal prowess to bolster the capabilities of their allies.
 
-=== Battle Commands
+=== Battle Commands <battle-commands>
 
 At 3rd level, you've learned to recognize and create opportunities for your allies to act. You learn your choice of two of the commands below. You learn an additional command from this list at level 9.
 #flush-block[
@@ -1214,7 +1192,7 @@ At 3rd level, you've learned to recognize and create opportunities for your alli
 - In addition, creatures of your choice that can see or hear you have advantage on any saving throws against being staggered, shaken, or frightened for one minute.
 ]
 
-=== Commanding Presence
+=== Commanding Presence <commanding-presence>
 
 Starting at 10th level, you've learned to inspire your allies to bursts of heroics. When you use your Action Surge, instead of taking an additional action, you can choose one of the following. All creatures of your choice that can see and hear you within 30 feet gain the chosen benefit until the end of your next turn.
 #flush-block[
@@ -1226,15 +1204,15 @@ Starting at 10th level, you've learned to inspire your allies to bursts of heroi
 - *Tactical:* Affected creatures gain advantage on one attack roll or ability check made during the duration of the effect.
 ]
 
-=== Leave No One Behind
+=== Leave No One Behind <leave-no-one-behind>
 
 Starting at 15th level, you've learned to bring others with you when you Flash Step. When you use your Flash Step ability, you can expend 2 AET to bring one willing ally who is no more than Medium size with you. The ally must have been within 5 feet of you when you started your movement, and ends the movement in an unoccupied space within 5 feet of you.
 
-=== Healing Strike
+=== Healing Strike <healing-strike>
 
 At level 18, you've learned to channel the dying energies of foes into healing for your allies. When you use your Deathblow ability and do not refund the STA cost, you can choose up to 3 creatures within 30 feet of you. They gain hit points equal to your proficiency bonus times your Charisma modifier. Any hit points that would have been healed above their maximum hit points are converted into temporary hit points instead.
 
-= Brawler
+= Brawler <brawler>
 
 Not all warriors use weapons and armor; some use their body as both weapon and armor. They have substantial reserves of stamina and prefer many lighter hits over slow massive hits. Darting in and out of combat, they dodge attacks and strike to the weak points. They excel at separating and locking down the most dangerous foes. Their raw damage isn't the best, but it's respectable. They can be vulnerable if caught alone and without any way out, and aren't the best at actively healing and supporting their allies' efforts. Ranged damage is their particular weakness.
 
@@ -1276,11 +1254,11 @@ When an ability of this class requires an enemy to make a saving throw, the DC i
 
 #align(center)[*DC = 8 + your Wisdom modifier + your proficiency bonus*]
 
-== Unarmored Defense
+== Unarmored Defense <unarmored-defense>
 
 Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier or your Strength modifier (whichever is higher) + your Wisdom modifier. Additionally, you can take the deflect action as if you were armored.
 
-== Martial Arts
+== Martial Arts <martial-arts>
 
 At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and brawler weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
 
@@ -1292,15 +1270,15 @@ You gain the following benefits while you are unarmed or wielding only brawler w
 - When you use the Attack action with an unarmed strike or a brawler weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
 - You count as being armed when you take the deflect action.
 
-== Flurry of Blows
+== Flurry of Blows <flurry-of-blows>
 
 When you take the Attack action on your turn, you can spend 1 STA to make two unarmed strikes as a bonus action. This replaces the Martial Arts bonus action attack when you do.
 
-== Patient Defense
+== Patient Defense <patient-defense>
 
 You can spend 1 STA to take the Guard action as a bonus action on your turn.
 
-== Step of the Wind
+== Step of the Wind <step-of-the-wind>
 
 You can spend 1 STA to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.
 
@@ -1329,88 +1307,88 @@ You can spend 1 STA to take the Disengage or Dash action as a bonus action on yo
 )
 
 
-== Conditioning
+== Conditioning <conditioning>
 Beginning at 2nd level, your understanding of the world around you and yourself has made you more efficient. In effect, your Stamina pool is larger than most. You add your Wisdom modifier (if positive) to your Stamina pool. This is included in the Stamina column of the Brawler table.
 
-== Unarmored Movement
+== Unarmored Movement <unarmored-movement>
 
 Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain brawler levels, as shown in the Brawler table.
 
 At 9th level, you gain the ability to move along vertical surfaces, upside down, and across liquids without falling and without expending extra movement.
 
-== Martial Tradition
+== Martial Tradition <brawler-martial-tradition>
 
 When you reach 3rd level, you commit yourself to a martial tradition. Three such traditions are detailed at the end of the class description: the defensively-oriented Way of the Guarded Soul, the offensively-oriented Way of Closed Fist, and the poison-aspected Way of the Serpent Dance. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
 
-== Deflect Attacks
+== Deflect Attacks <deflect-attacks>
 
 Starting at 3rd level, you can use your reaction to deflect an attack or catch the missile when you are hit by an attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity + your brawler level.
 
 If you reduce the damage from a projectile-based attack (such as a thrown rock or arrow) to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 STA to make a ranged attack with the projectile you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a brawler weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet. You can expend extra STA to increase the damage dealt by 2 for every extra STA expended.
 
-== Ability Score Improvement
+== Ability Score Improvement <brawler-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Slow Fall
+== Slow Fall <slow-fall>
 
 Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your brawler level.
 
-== Extra Attack
+== Extra Attack <brawler-extra-attack>
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-== Stunning Strike
+== Stunning Strike <stunning-strike>
 
 Starting at 5th level, you can interfere with the flow of energy in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 2 STA to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn. This does not stack with itself---you cannot use stunning strike on a creature already stunned using stunning strike.
 
-== Empowered Strikes
+== Empowered Strikes <empowered-strikes>
 
 Starting at 6th level, your unarmed strikes count as silvered. In addition, once per turn when you hit with an attack you can expend 1 AET to increase the damage dealt by your Martial Arts by 1 die (dealing 2d8 bludgeoning damage on an unarmed strike, increasing as your Martial Arts die increases).
 
 At 9th level, your unarmed strikes count as adamantine and silver.
 
-== Evasion
+== Evasion <brawler-evasion>
 
 At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 
-== Stillness of Mind
+== Stillness of Mind <stillness-of-mind>
 
 Starting at 7th level, you can use a bonus action to end one effect on yourself that is causing you to be charmed or frightened, even if you could not normally take actions.
 
 Additionally, on your turn you can end an effect on yourself that causes you to be incapacitated by spending 3 STA without taking an action as long as you have at least 1 hit point.
 
-== Purity of Body
+== Purity of Body <purity-of-body>
 
 At 10th level, your mastery of the energy flowing through you makes you immune to disease and poison (including both poison damage and the poisoned condition).
 
-== Diamond Soul
+== Diamond Soul <diamond-soul>
 
 Beginning at 14th level, your self-mastery grants you proficiency in all saving throws.
 
 Additionally, whenever you make a saving throw and fail, you can spend 3 STA to reroll it and take the second result.
 
-== Empty Body
+== Empty Body <empty-body>
 
 Beginning at 18th level, you can use your action to spend 4 STA to become invisible for 1 minute. During that time, you also have resistance to all damage. This invisibility does not end when you make an attack roll, but it does end early if you are incapacitated at the start of your turn.
 
-== Perfect Self
+== Perfect Self <perfect-self>
 
 At 20th level, if you are reduced to zero hit points, you can spend 8 STA as a reaction to instead heal to full health.
 
-= Martial Traditions
+= Martial Traditions <brawler-martial-traditions>
 
 There are many traditions for those that fight with spirit and fists. All these traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a brawler need choose a tradition only upon reaching 3rd level.
 
 Some traditions are balanced, training body and soul as one, balancing martial and mystical powers. Others are more focused on direct physical action; yet others are focused primarily on the soul, emphasizing mystic powers.
 
-== Way of the Guarded Soul
+== Way of the Guarded Soul <way-of-the-guarded-soul>
 
 Brawlers of the Way of the Guarded Soul are the ultimate masters of defensive martial arts combat. They learn techniques to push and trip their opponents, manipulate aether to heal damage to their bodies, and practice advanced techniques that can protect them from harm.
 
-=== Guarded Technique
+=== Guarded Technique <guarded-technique>
 
 Starting when you choose this tradition at 3rd level, you can manipulate your enemy when strike them. Whenever you hit a creature with an unarmed strike, you can impose one of the following effects on that target. Your saving throw DC for these abilities is 8 + your Wisdom modifier + your proficiency bonus.
 
@@ -1418,70 +1396,70 @@ Starting when you choose this tradition at 3rd level, you can manipulate your en
 - It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
 - It can't take reactions until the end of your next turn.
 
-=== Wholeness of Body
+=== Wholeness of Body <wholeness-of-body>
 
 At 6th level, you gain the ability to heal yourself. As an action, you can spend 2 AET to regain hit points equal to three times your brawler level. By expending extra AET, you increase the amount healed by your brawler level per extra AET spent.
 
-=== Poise
+=== Poise <poise>
 At 11th level, your physical and mental balance are nearly total. You are immune to being charmed or frightened, and the cost of ending the incapacitated status on you using Stillness of Mind is reduced to 2 STA.
 
-=== Legendary Effect: Contingency
+=== Legendary Effect: Contingency <legendary-effect-contingency>
 At 17th level, you are prepared for almost anything. You learn the legendary effect contingency and can use it once per day without requiring the expensive component or needing to cast a spell. You can only use the following spells:
 
-- _blur_
-- _cure wounds_ (targeting only yourself, cast as if you spent 12 aether, and your spellcasting ability is Wisdom)
-- _greater invisibility_ (targeting yourself)
-- _remove curse_
-- _revivify_ (targeting yourself, no component needed)
-- _unbind_ (targeting yourself)
+- #safe-link("blur", [_blur_])
+- #safe-link("cure-wounds", [_cure wounds_]) (targeting only yourself, cast as if you spent 12 aether, and your spellcasting ability is Wisdom)
+- #safe-link("greater-invisibility", [_greater invisibility_]) (targeting yourself)
+- #safe-link("remove-curse", [_remove curse_])
+- #safe-link("revivify", [_revivify_]) (targeting yourself, no component needed)
+- #safe-link("unbind", [_unbind_]) (targeting yourself)
 
-== Way of the Closed Fist
+== Way of the Closed Fist <way-of-the-closed-fist>
 Brawlers of the Closed Fist are the masters of offensive unarmed martial arts combat. They train their bodies as weapons, focusing on delivering telling blows to their opponents.
 
-=== Closed Fist Techniques
+=== Closed Fist Techniques <closed-fist-techniques>
 Starting when you pick this subclass at level 3, you gain the following benefits.
 
 - When you hit a target that is incapacitated with an unarmed attack, you deal maximum damage to them.
 - When you score a critical hit with an unarmed strike, the damage dealt by the additional damage die is maximized.
 
-=== Knock Off Balance
+=== Knock Off Balance <knock-off-balance>
 Starting at 6th level, when you attack a creature with an unarmed strike and hit, the creature cannot make Opportunity Attacks against you until the beginning of your next turn.
 
-=== Tornado Kick
+=== Tornado Kick <tornado-kick>
 Starting at 11th level, you can spend 1 AET and 2 STA and a bonus action to make a spinning attack. All creatures within 5 feet of you must make a Dexterity saving throw. On a failed save they take 5d10 bludgeoning damage and are knocked back 10 feet. On a success, they take half as much damage and are not knocked back.
 
-=== Empty Mind
-At 17th level, you learn the legendary effect _mind blank_ and can use it on yourself once per day.
+=== Empty Mind <empty-mind>
+At 17th level, you learn the legendary effect #safe-link("mind-blank", [_mind blank_]) and can use it on yourself once per day.
 
-=== Quivering Palm
+=== Quivering Palm <quivering-palm>
 
 At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 AET to start these imperceptible vibrations, which last for a number of days equal to your brawler level. The vibrations are harmless unless you use your bonus action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage. You can substitute this special action for one attack you can make during your turn or as an Opportunity Attack.
 
 You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
 
-== Way of the Serpent Dance
+== Way of the Serpent Dance <way-of-the-serpent-dance>
 Brawlers of the Serpent Dance chose to emphasize subtlety and grace in both combat and social situations, concealing within the paralyzing toxicity of their namesake. The name is from the Jungle of Fangs, where this style took root in modern times.
 
-=== Serpent's Grace
+=== Serpent's Grace <serpents-grace>
 Starting when you pick this subclass at level 3, you have learned to move through the world with nary a ripple. When you make a Dexterity (Stealth) check, you can add your Wisdom modifier to the result. In addition, when you take the Step of the Wind action, the first attack against you on any turn has disadvantage until the start of your next turn.
 
-=== Serpent's Charm
+=== Serpent's Charm <serpents-charm>
 When you pick this subclass at level 3, you gain proficiency in Deception. If you already had proficiency, you gain expertise instead. In addition, you learn the feint skill trick. If you spend STA on a different bonus action granted by this class, you can use Feint as part of the same bonus action, expending stamina as usual.
 
-=== Serpent's Venom
+=== Serpent's Venom <serpents-venom>
 At 6th level, you've learned to infuse your personal aether with toxic aspects, coating your unarmed strikes with necrotic venom. Once per turn when you hit a creature with an unarmed strike, you can change the damage type to poison. If you do, you deal extra damage equal to your Wisdom modifier. You can expend 1 or more AET to force the creature to make a Constitution saving throw against your stunning strike DC. On a failed save, the creature takes 1d10 poison damage per AET spent and is poisoned for one minute. On a success, they take half as much damage and are not poisoned. Poisoned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-=== Scale Dance
+=== Scale Dance <scale-dance>
 At 11th level, you embody the bewitching aspect of a cobra as you dance. As an action, you can spend 2 AET and 4 STA and begin to dance, forcing all creatures of your choice that can see you within 30 feet to make a Wisdom saving throw. On a failed save, they become charmed by you. While charmed, they must use their movement to sway in time with you and cannot cast spells; if they attack, they do so at disadvantage. This effect ends at the start of your next turn unless you use your action again to continue the effect. If you do so, you do not need to pay the cost an additional time, but targets get to re-attempt their saving throw.
 
-=== Necrotic Venom
+=== Necrotic Venom <necrotic-venom>
 Starting at 11th level, the poison damage dealt by your Serpent's Venom ability becomes necrotic in addition to poison. Remember, this means that a creature must be resistant or immune to both necrotic and poison to be immune to the damage. In addition, creatures immune to the poisoned condition become staggered instead.
 
-=== Legendary Transformation
-At 17th level, you learn the legendary effect _animal shapes_ and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
+=== Legendary Transformation <legendary-transformation>
+At 17th level, you learn the legendary effect #safe-link("animal-shapes", [_animal shapes_]) and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.
 
 #pagebreak()
-= Rogue
+= Rogue <rogue>
 
 Rogues are those who focus their training on fighting smarter, not harder. Not for them is the clash of two-handed weapons on heavy armor; they fight nimbly and evade blows, waiting for the perfect moment to strike where it hurts. Out of combat they have a broad arsenal of capabilities: they are the undisputed masters of skills and skill tricks. At higher levels, they gain overtly magical effects, often tied to the spaces Between. Subtlety and stealth often characterize a rogue.
 
@@ -1524,17 +1502,17 @@ When an ability of this class requires an enemy to make a saving throw, the DC i
 
 #align(center)[*DC = 8 + your Dexterity modifier + your proficiency bonus*]
 
-== Expertise
+== Expertise <rogue-expertise>
 
 At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
 
 At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.
 
-== Nimble Strike
+== Nimble Strike <nimble-strike>
 
 Beginning at 1st level, you have learned to use your agile precision to strike with melee weapons. You can use your Ranged Attack Modifier instead of your Melee Attack Modifier when making attacks with melee weapons. When you do so, you add your Dexterity modifier to weapon damage instead of your Strength modifier.
 
-== Sneak Attack
+== Sneak Attack <sneak-attack>
 
 Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a weapon you are proficient in.
 
@@ -1542,11 +1520,11 @@ You don't need advantage on the attack roll if another enemy of the target is wi
 
 The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.
 
-== Cunning Action
+== Cunning Action <cunning-action>
 
 Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
 
-== Skill Tricks
+== Skill Tricks <rogue-skill-tricks>
 
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks.
 
@@ -1578,119 +1556,119 @@ When you gain access to a new Skill Trick, you can also swap any Skill Trick you
 "20th ", "+6", "11d6", "Stroke of Luck", "9", "20 + CON", "10", "4",
 )
 
-== Roguish Archetype
+== Roguish Archetype <roguish-archetype>
 
 At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: either Scout, Shadowdancer or Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 6th, 9th, 13th, and 17th level.
 
-== Ability Score Improvement
+== Ability Score Improvement <rogue-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 You can also pick a Skill Trick (included in the skill tricks column of the Rogue table) but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list.
 
-== Uncanny Dodge
+== Uncanny Dodge <uncanny-dodge>
 
 Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you. You can use this ability even if you have used your reaction already by expending 2 STA.
 
-== Evasion
+== Evasion <rogue-evasion>
 
 Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice-storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 
-== Reliable Talent
+== Reliable Talent <reliable-talent>
 
 By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10. If you expend 3 STA, you can treat a d20 roll of 14 or lower as a 15.
 
-== Blindsense
+== Blindsense <rogue-blindsense>
 
 Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.
 
-== Slippery Mind
+== Slippery Mind <slippery-mind>
 
 By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.
 
-== Elusive
+== Elusive <elusive>
 
 Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.
 
-== Stroke of Luck
+== Stroke of Luck <stroke-of-luck>
 
 At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Either option requires spending 6 STA.
 
-= Roguish Archetypes
+= Roguish Archetypes <roguish-archetypes>
 
 Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques.
 
-== Scout
+== Scout <scout>
 
 Scouts are sneaks and marksmen, remaining unseen until they can strike a telling blow and then fading into the background again. In addition, they're the specialists at exploring the world, natural or civilized. They learn minor primal magics, but mostly rely on their wits, weapons, and honed skills.
 
-=== Called Shot
+=== Called Shot <called-shot>
 When you take this archetype at 3rd level, you have learned to hit specific parts of your enemies with greater effect. Once per turn when you make a weapon attack, you can choose to make it a Called Shot by expending 1 STA. The basic Called Shot allows you to apply your Sneak Attack damage even if you normally wouldn't qualify (such as because you have disadvantage or no ally is adjacent to the target). You gain additional ways to use this ability as you gain levels.
 
-=== Exploration Adept
+=== Exploration Adept <exploration-adept>
 Starting at 3rd level, you remain alert even when performing other exploration tasks and gain proficiency with Perception. If you already were proficient in Perception, you gain expertise instead.
 
 Additionally, you gain the Jump skill trick even if you do not qualify, as you've learned to move in all sorts of environments.
 
-=== Exposing Shot
+=== Exposing Shot <exposing-shot>
 At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to create a breach in the target's defenses, making it more vulnerable to your allies' damage. Until the end of your next turn, attacks against the creature have advantage and deal extra damage equal to your proficiency bonus + your Intelligence modifier. If you otherwise qualify for Sneak Attack (without the normal effect of Called Shot), you may apply that feature as well---you simply cannot use the Called Shot to qualify for Sneak Attack when you otherwise could not.
 
-=== Investigation Adept
+=== Investigation Adept <investigation-adept>
 At 6th level, you gain proficiency with Investigation. If you already had proficiency, you gain expertise instead. You also learn the Sense Baleful Magic skill trick even if you don't otherwise qualify.
 
-=== Break Contact
+=== Break Contact <break-contact>
 At 9th level, you've learned to duck into the shadows to evade scrutiny more easily than most. You have advantage on Dexterity (Stealth) checks made to become or remain hidden. In addition, you can attempt to hide even when only lightly obscured.
 
 In addition, if you make a Dexterity (Stealth) check and do not like the result, you can expend 2 STA to reroll the check, taking the second result.
 
-=== Disrupting Shot
+=== Disrupting Shot <disrupting-shot>
 At 6th level you've gained an additional option when you make a Called Shot and hit with the attack. Instead of its normal effect, you can choose to disrupt the target's concentration in addition to any normal damage (possibly including Sneak Attack). If the target was concentrating on a spell or effect, that concentration ends immediately. If they were casting a spell or incantation with a cast time longer than a single action, that incantation or spell fizzles with no effect, consuming any resources.
 
-=== Primal Awakening
+=== Primal Awakening <primal-awakening>
 At 9th level, you learn the Primal Initiate skill trick, even if you don't qualify for it normally.
 
-=== Enhanced Senses
-At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the _sense aura_ incantation.
+=== Enhanced Senses <enhanced-senses>
+At 13th level, you have become attuned to the stirrings of aether around you. You are constantly under both effects of the #safe-link("sense-aura", [_sense aura_]) incantation.
 
-=== Lethal Shot
+=== Lethal Shot <lethal-shot>
 At 17th level, you have developed the ability to strike at the cords that bind a creature to life. By spending 8 STA and 5 AET, you can make a special Called Shot. If you hit with this attack, you score a critical hit and can apply Sneak Attack even if you normally would not qualify. Once you use this ability, you cannot do so again until you finish a long rest.
 
-In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or _death ward_).
+In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or #safe-link("death-ward", [_death ward_])).
 
-== Shadowdancer
+== Shadowdancer <shadowdancer>
 
 Shadowdancers are infiltration and covert work specialists. They've trained their souls to the degree that they can truly become one with the shadows, wrapping the substance of the Shadow plane around themselves and slipping between the cracks just as that liminal plane slips between the cracks of the other planes. This lends them both extraordinary grace in combat as well as enhanced stealth abilities.
 
-=== Shadow Strike
+=== Shadow Strike <shadow-strike>
 Starting at 3rd level when you take this archetype, your strikes while in dimmed lighting are harder to stop. You have advantage on any attack made while you or your target are in any lighting condition other than sunlight.
 
 Additionally, when you hit with a weapon attack and have advantage on the attack, you can spend 1 STA to add your proficiency bonus to the damage dealt. If you do so, you can choose to have the entire attack deal necrotic damage.
 
-=== Stalk the Shadows
+=== Stalk the Shadows <stalk-the-shadows>
 Starting at 3rd level when you take this archetype, you can magically transport yourself between the shadows. Spend 1 AET and a bonus action to teleport to an area of shadow large enough to fit your body that you can see within 60 ft. You must be in an area of shadow large enough to fit your body already. For this ability, "shadow" includes any dimly-lit or unlit area as well as the shadows cast by objects and other obstructions. The vertical dimension of the shadow doesn't matter.
 
-=== Improved Uncanny Dodge
+=== Improved Uncanny Dodge <improved-uncanny-dodge>
 Starting at 6th level, you can shunt incoming attacks partially into Shadow more effectively. When you use your Uncanny Dodge, the effect lasts until the end of the current turn instead of only for that attack.
 
-=== Hide in Plain Sight
+=== Hide in Plain Sight <hide-in-plain-sight>
 Starting at 9th level, you can wrap the stuff of Shadow around yourself. You can spend 1 AET to attempt to hide even when directly observed and/or in bright light. If you succeed at the attempt and do not reach total obscurement by the beginning of your next turn, you immediately become unhidden.
 
-=== Shrouded Nature
+=== Shrouded Nature <shrouded-nature>
 Starting at 13th level, you have learned to shroud yourself in shadow even in bright light. As an action, you can expend 2 AET to create an aura of shadow around yourself for one hour. This magical aura leaves you lightly obscured and upgrades other sources of light obscurement to heavy obscurement. In addition, you always count as being in shadow for the purpose of Stalk the Shadows; neither your starting or ending point need to be shadowed by any external source.
 
-=== Ethereal Body
+=== Ethereal Body <ethereal-body>
 Starting at 17th level, you have learned to transition to the Border Shadow more easily than most. As a bonus action while you are affected by Shrouded Nature, you can spend an additional 1 AET to go fully ethereal. While you are ethereal you cannot be seen by any creature on the Mortal plane that does not have truesight, but you can see the Mortal plane. You can pass through walls and most barriers other than ones that explicitly affect the Border Shadow. You cannot affect the Mortal while ethereal. You can exit the Border Shadow as a bonus action.
 
 When you go ethereal, you can bring your gear, the objects you are carrying, and any unconscious creatures. You cannot bring a conscious creature with you, willing or not.
 
-== Trickster
+== Trickster <trickster>
 
 Tricksters hone their skills with less of a supernatural flair, but are no less effective for that. They gain better uses of mundane and magical objects and specialize in imposing conditions on their foes in combat.
 
-=== Reliable Sneak Attack
+=== Reliable Sneak Attack <reliable-sneak-attack>
 Starting at 3rd level when you take this archetype, when you hit and apply Sneak Attack, you can spend 1 STA to treat any damage die that was less than half the maximum value as half the maximum value instead. On a critical hit, you do not need to expend stamina to use this feature.
 
-=== Fast Hands
+=== Fast Hands <fast-hands>
 Starting at 3rd level when you take this archetype, you can do any one of the following as part of your Cunning Action in addition to the normal effect:
 
 - Administer a potion to someone else.
@@ -1700,13 +1678,13 @@ Starting at 3rd level when you take this archetype, you can do any one of the fo
 - Make a Wisdom (Medicine) check to stabilize someone.
 - Flip any number of switches, pull any number of levers, or otherwise interact with the environment in ways that do not require ability checks.
 
-=== Confident Disguise
+=== Confident Disguise <confident-disguise>
 Starting at 6th level, you can pull off disguises and impersonations more effectively. You have advantage on any attempt to persuade or deceive someone into believing you are someone else. If you spend 1 AET per person deceived, you can magically convince people against whom you succeeded that whatever documents you present (including blank paper) confirm your story in all details. If the documents are examined outside of your presence, the ruse will be revealed.
 
-=== Distraction
+=== Distraction <rogue-distraction>
 Starting at 6th level, you've become even better at providing distractions for others. As an action, you can spend 1+ STA to attempt a distraction that affects a number of creatures of your choice that can see or hear you equal to the stamina expended. The targets must make a Wisdom (Perception) check opposed by your Charisma (Deception) check. On a failure, they are considered blind and deaf to everything but you until the end of your next turn. To maintain the deception, you must take the action again on your next turn(s), redoing the opposed check each time, but you do not need to expend more stamina.
 
-=== Trick Attack
+=== Trick Attack <trick-attack>
 At 9th level, you learn to impose conditions on those that you hit with your Sneak Attacks. Each condition has a cost in either AET or STA, a saving throw necessary to apply the condition (or --- for those that are applied automatically by spending the resource), and a duration. Notation of Save Ends indicates that the target can re-attempt the saving throw at the end of their turns, ending the effect on a success. The DC for all of these saving throws is 8 + your proficiency bonus + your Dexterity modifier. If you have expertise in Sleight of Hand, the DC increases by half your proficiency bonus. You can only apply one condition each time you apply Sneak Attack.
 
 #dndtab("Trick Attack", columns: (2fr, 1fr, 1fr, 2fr),
@@ -1723,7 +1701,7 @@ At 9th level, you learn to impose conditions on those that you hit with your Sne
 "unconscious ", "2 AET + 8 STA", "CON", "Save Ends", 
 )
 
-=== Magical Impersonation
+=== Magical Impersonation <magical-impersonation>
 Starting at 13th level, you've learned to mold your aether to mimic that of other creatures. You gain the following benefits:
 
 - You can attune to and use any magic item, regardless of the normal requirements, and your attunement limit increases by 1.
@@ -1731,7 +1709,7 @@ Starting at 13th level, you've learned to mold your aether to mimic that of othe
 - You can impersonate the master of golems, automated defenses, and other constructs unless that is tied to a particular item rather than a person. You must spend 1 AET per minute you attempt to do this.
 - You can activate magic items keyed to another person by spending 2 AET and 2 STA.
 
-=== Deceive the Universe
+=== Deceive the Universe <deceive-the-universe>
 Starting at 17, you can attempt to cast any spell or use any incantation (without needing the Ritual Scroll). Spend any combination of AET and STA equal to the base cost of the spell and make a Charisma (Deception) check against the DC listed in the table below. This attempt takes the same time as the regular casting time and any material components. On a success, the spell or incantation takes effect, using Charisma as the requisite spellcasting modifier where appropriate. Once you use this feature once, you incur 2 levels of exhaustion every time you use it again until you finish a long rest. You cannot apply your Stroke of Luck or Reliable Talent features to this roll.
 
 #dndtab("Deceive the Universe", columns: (3fr, 1fr), 
@@ -1745,7 +1723,7 @@ Starting at 17, you can attempt to cast any spell or use any incantation (withou
 "--- Legendary ", "30"
 )
 #pagebreak()
-= Warden
+= Warden <warden>
 
 Wardens are warriors whose prowess has as much to do with their ties to primal power as their own skill. They channel nature's power via strong emotions. Many give themselves to supernatural anger, enough so that many call this state Rage, despite it not always being anger that serves as the channel. They archetypally fight using two-handed weapons, although some fight with a weapon in each hand and a few use weapon and shield.
 
@@ -1789,19 +1767,19 @@ When an ability of this class requires an enemy to make a saving throw, the DC i
 
 #align(center)[*DC = 8 + your Strength modifier + your proficiency bonus*]
 
-== Exceptional Stamina
+== Exceptional Stamina <exceptional-stamina>
 Wardens pull on the vitality of the earth, fueling their stamina. Your stamina at each level is equal to your level + your Constitution modifier.
 
 In addition, you can spend an action to regain stamina equal to twice your Constitution modifier. Once you do so, you cannot use this ability again until you finish a long rest.
 
-== Furious Blow
+== Furious Blow <furious-blow>
 Once per turn when you hit with a melee attack, you can choose to expend 1 or more STA to deal additional damage. If you do so, roll an additional weapon damage die for the first STA you spend and each additional 2 stamina expended and add it to the total rolled. You cannot spend more than 7 Stamina this way in a single attack.
 
 When you deal this extra damage, you gain Focus, which can be spent to fuel other abilities.
 
 Starting at 8th level, when you hit a creature that is Concentrating and deal the additional damage, they have disadvantage on the concentration check.
 
-== Rage
+== Rage <rage>
 
 You can summon primal strength in dire circumstances. As a bonus action on your turn or as a reaction when you take damage, you can spend 2 STA to enter a heightened state, commonly called Rage.
 
@@ -1838,15 +1816,15 @@ Your rage lasts until the end of your next turn. If you take damage or make an a
 )
 
 
-== Unarmored Defense
+== Unarmored Defense <unarmored-defense>
 
 While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
 
-== Reckless Attack
+== Reckless Attack <reckless-attack>
 
 Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
 
-== Danger Sense
+== Danger Sense <danger-sense>
 
 At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
 
@@ -1854,11 +1832,11 @@ You have advantage on Dexterity saving throws against effects that you can see, 
 
 Alternatively, you can expend Focus to gain advantage on a Wisdom saving throw against an effect that would impose the charmed, frightened, or incapacitated condition.
 
-== Primal Path
+== Primal Path <primal-path>
 
 At 3rd level, you choose a path that shapes the nature of your rage. Choose the Elemental Path, the Juggernaut Path or the Whirlwind Path, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
-== Weapon Specialization
+== Weapon Specialization <warden-weapon-specialization>
 
 Starting at 3rd level, you have trained particularly with a particular weapon property. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
@@ -1871,64 +1849,64 @@ Starting at 3rd level, you have trained particularly with a particular weapon pr
 - *Two-handed (Melee only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
 ]
 
-== Ability Score Improvement
+== Ability Score Improvement <warden-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See \nameref{ch:skill-tricks} for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Extra Attack
+== Extra Attack <warden-extra-attack>
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-== Fast Movement
+== Fast Movement <warden-fast-movement>
 
 Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor. You can also always jump as if you had a running start.
 
-== Feral Instinct
+== Feral Instinct <feral-instinct>
 
 By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 
 Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you activate Rage before doing anything else on that turn.
 
-== Brutal Critical
+== Brutal Critical <brutal-critical>
 
 Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. You also score a critical hit on a 19 as well as a 20 on the d20.
 
 This increases to two additional dice at 13th level and three additional dice at 17th level. From 13th level you also score a critical hit on an 18.
 
-== Retaliation
+== Retaliation <retaliation>
 Starting at 10th level, when you take damage from a creature that is within your reach, you can use your reaction to make a melee weapon attack against that creature. You can spend 2 STA while doing so to attack at advantage.
 
-== Relentless
+== Relentless <relentless>
 
 Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can spend 5 STA to make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.
 
-== Ground Smash
+== Ground Smash <ground-smash>
 
-At 13th level you learn the legendary effect _earthquake_ and can use it as an action once per long rest, even when you are Raging. When you do so, you must center it on yourself.
+At 13th level you learn the legendary effect #safe-link("earthquake", [_earthquake_]) and can use it as an action once per long rest, even when you are Raging. When you do so, you must center it on yourself.
 
-== Spell Breaker
+== Spell Breaker <spell-breaker>
 Starting at 15th level, the sheer weight of your primal power inhibits your enemies' magical abilities. While you have Focus, you make saving throws against magical effects at advantage. Additionally, you can expend 3 AET to end any spell effect within 5 feet of you.
 
-== Magebane
+== Magebane <magebane>
 
 Beginning at 18th level, if an enemy within your reach attempts to cast a spell or use a magical ability, you can spend your reaction and 2 AET to force them to make a Constitution saving throw. On a failure, the spell or ability fails and the action is wasted but any resource (aether or daily uses) is not expended.
 
-== Primal Champion
+== Primal Champion <primal-champion>
 
 At 20th level, you embody the power of the wilds. Your Strength and Constitution scores each increase by +2. Your maximum for those scores is now +7.
 
-= Warden Paths
+= Warden Paths <warden-paths>
 
 Different wardens interpret their calling and talents differently. These interpretations tend to coalesce around some similarities, often called Paths.
 
-== Elemental Path
+== Elemental Path <elemental-path>
 Those who embrace the Elemental Path embrace the primal side of their nature as it manifests in elemental power. They are the rock, the grinding ice floes, the lightning bolt, the erupting volcano.
 
-=== Elemental Rage
+=== Elemental Rage <elemental-rage>
 At 3rd level when you pick this Path, choose one of the elements below. You gain the listed feature while you are raging.
 #flush-block[
 - *Ice.* You gain resistance to cold damage. If a creature you can see hits you with an attack, you can use your reaction and spend 1 AET to reduce their movement speed by half until the end of their next turn.
@@ -1936,30 +1914,30 @@ At 3rd level when you pick this Path, choose one of the elements below. You gain
 - *Lightning.* You gain resistance to lightning damage. If a creature you can see within 30 feet is targeted by an attack, you can use your reaction and spend 1 AET to teleport to an unoccupied space within 5 feet of them and become the target of the attack instead.
 ]
 
-=== Elemental Blow
+=== Elemental Blow <elemental-blow>
 At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Raging Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw. On a failed saving throw, the target is staggered until the end of your next turn. If they were already staggered, they become stunned instead.
 
-=== Flickering Rush
+=== Flickering Rush <flickering-rush>
 Starting at 10th level, you can spend 3 AET on your turn to teleport up to twice your speed. If you do so, you cannot move any further that turn.
 
 In addition, if you are raging when you use this ability, at your choice of starting or ending points you can release elemental energy corresponding to the choice you made for your Elemental Rage feature. All creatures within 10 feet must make a Dexterity saving throw. On a failed save, they take 6d6 damage of the type you gained resistance to. On a success, they take half as much damage.
 
-=== Legendary Effect: Control Weather
-At 14th level you learn the legendary effect _control weather_ and can use it once per long rest.
+=== Legendary Effect: Control Weather <legendary-effect-control-weather>
+At 14th level you learn the legendary effect #safe-link("control-weather", [_control weather_]) and can use it once per long rest.
 
-== Juggernaut Path
+== Juggernaut Path <juggernaut-path>
 
 Those who embrace the Juggernaut Path embrace the inevitability of their opponents' doom. It may not come fast, but it will certainly come. A Juggernaut, once unleashed, is very hard to stop.
 
-=== Punishing Stance
+=== Punishing Stance <punishing-stance>
 
 Starting at 3rd level when you pick this Path, when an enemy within your reach makes an attack against anyone but you or targets any creature other than you with a spell or saving throw, you can expend 2 STA or your Focus to impose disadvantage on the attack roll or grant the target advantage on the saving throw.
 
-=== Warding Rage
+=== Warding Rage <warding-rage>
 
 Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.
 
-=== Inevitability
+=== Inevitability <inevitability>
 
 Starting at 10th level, your advance is inexorable  as long as you still have strength. You can expend 5 STA as an action to do one of the following:
 
@@ -1968,52 +1946,52 @@ Starting at 10th level, your advance is inexorable  as long as you still have st
 -  Open a naturally-occurring portal or Way that would normally require special circumstances.
 -  Jump to a point you can see within 150 ft of you.
 
-=== Primal Ward
+=== Primal Ward <primal-ward>
 
 Starting at 14th level, your primal presence is such that you can ward out all non-legendary spell effects. As an action and by expending 8 STA, you can invoke a Primal Ward, which takes the form of a swirling barrier of energy in a 10-foot radius around you which remains for one minute or unless you are incapacitated.
 
 Any non-legendary magical effect cast from outside the barrier can't affect creatures or objects within the barrier. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.
 
-== Whirlwind Path
+== Whirlwind Path <whirlwind-path>
 Those who follow the Whirlwind Path delight in carving a bloody swath through their foes and anything that gets in their way. Nimble and unpredictable as a tornado, they leave a trail of wreckage behind them as they dance the deadly dance.
 
-=== Dance of Death
+=== Dance of Death <dance-of-death>
 Starting at 3rd level when you choose this Path, you can spend 1 STA as a reaction to ignore any difficult terrain until the end of your turn or break free from a grapple or from restraint due to a creature or spell effect.
 
-=== Whirling Fury
+=== Whirling Fury <whirling-fury>
 Starting at 3rd level when you choose this Path, you can spend 2 STA to trigger Furious Blow when you hit with an a subsequent attack and have already triggered Furious Blow this turn. When you do so, you cannot spend additional STA to increase the effect and do not gain Focus.
 
-=== Raging Leaps
+=== Raging Leaps <raging-leaps>
 Starting at 6th level, while you are raging you gain a fly speed equal to half your speed. You must end your turn in contact with a solid object (including a larger creature if you have succeeded at Climbing on a Larger Creature). Your speed also increases by an additional 10 feet.
 
 This fly speed increases to your full speed at 14th level.
 
-=== Unpredictable Nature
+=== Unpredictable Nature <unpredictable-nature>
 Starting at 10th level, your path has become as unpredictable as a tornado. You are immune to divination effects that would predict your actions, read your thoughts, or determine whether you are lying, as well as the charmed condition while you are raging.
 
 In addition, you can expend Focus to automatically succeed on an otherwise possible attempt to deceive someone about your intent or into giving you information.
 
-=== Flash Step
+=== Flash Step <whirlwind-flash-step>
 Starting at 14th level, your speed has increased enough so that it appears you can teleport short distances. When you move on your turn, you can choose to instead teleport to the chosen location as long as you have a clear path to the target location and it is no further than your speed would allow. The clear path to the target does not have to be in a straight line, but you cannot pass through areas too small to squeeze through.
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 #pagebreak()
-= NIH Classes: Hybrid
+= NIH Classes: Hybrid <hybrid-classes>
 
 Hybrid classes in NIH are those that use both spells and weapons together. They bridge the gap between the martials and the full casters. With less stamina but more aether than martials, more of their abilities are outright magical than martials. At the same time, they are generally more durable and weapon-oriented than full spellcasters. Generally, hybrid classes require investment in multiple ability scores to do well.
 
-== Summary of Hybrid Classes
+== Summary of Hybrid Classes <summary-of-hybrid-classes>
 The hybrid classes of NIH are the Oathbound, the Ranger, and the Spellblade.
 
-=== The Oathbound
+=== The Oathbound <the-oathbound>
 Wearing heavy armor, the Oathbound are empowered by conviction, by a cause they champion. Their power comes from adherence to Oaths of power. Some are a shining light to others, fighting back darkness in all forms. Others are empowered by Oaths of retribution or Oaths of repentance for sins they've committed, giving them a darker aspect. They all have auras that bolster allies nearby or harm enemies; all of them can heal at a touch. But their most notable ability is to smite their foes. They shine against single targets (especially fiends and undead), but struggle at range. Their primary ability score is Strength, but they want high Charisma as well as it fuels their magic and auras.
 
-=== The Ranger
+=== The Ranger <the-ranger>
 Ranger is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders; these too draw a ranger's wrath.
 
 Rangers are skirmishers, wearing light or medium armor and either attacking from afar with ranged weapons or fighting with multiple weapons. They can put on a shield and fight on the front-lines, but they are less suited to that than a specialized armsman, warder, or oathbound. They have more ability to deal with hordes of small enemies than most weapon-users, but are not nearly as supportive as a primalist. Their primary ability score is Dexterity, but Wisdom bolsters their magical abilities.
 
-=== The Spellblade
+=== The Spellblade <the-spellblade>
 Lightly-armored and wielding a bow or a blade, the spellblade uniquely merges spells and weapon strikes, channeling their damaging spells into their weapon strikes. They curse their foes, weakening them by twisting their luck against them. They share some of the skill focus of the rogue. Their primary ability score is Dexterity, but Intelligence is important for their magic.
 
 #dndtab("Hybrid Summary", columns:(2fr, 1fr, 3fr),
@@ -2024,7 +2002,7 @@ Lightly-armored and wielding a bow or a blade, the spellblade uniquely merges sp
 )
 
 #pagebreak()
-= Oathbound
+= Oathbound <oathbound>
 
 Many knights, priests, nobles, and others swear oaths to do or not do certain things; to live in fealty to a king, prince, or god. Their oaths are important, but do not themselves give rise to power. For an oathbound, their Oaths are their devoted purpose. Their reason for existing. Obedience to those vows gives their lives meaning. The altar on which they sacrifice much, even their own lives if necessary. And the universe respects this sacrifice, this devotion, this purity of purpose. In return, the Oathbound is helped to become a warrior, bearing arms and magic both to uphold their Oath.
 
@@ -2032,9 +2010,7 @@ Unlike a priest, the oathbound's power comes not from faith in an Ascendant or t
 
 Oathbound excel at front-line defense and support. While they can output significant damage, many of their abilities revolve around assisting and protecting others nearby. Their weaknesses are enemies at range (like a brawler) and large groups of weaker foes. Their charismatic bent makes them natively good at social situations.
 
-Design Discussion: Basically a paladin. Not tons changed here except subclasses. Toned down the damage in favor of more support.
-
-=== Quick Build.
+=== Quick Build
 To quickly build an oathbound, put your highest ability score into Strength and your second ability score into Charisma, with Constitution higher than zero. If you want to focus more on damage, use a two-handed weapon (and pick either Two-handed or Cleaving as your Weapon Specialization). For a more defensive build, pick a one-handed weapon and a shield, and pick Versatile or Parrying as your Weapon Specialization.
 
 == Class Features
@@ -2073,7 +2049,7 @@ When a magical ability from this class requires a saving throw, the DC is given 
 When a non-magical ability from this class requires a saving throw, the DC is given by
 
 #align(center)[*magical DC = 8 + your Strength modifier + your proficiency bonus*]
-== Divine Sense
+== Divine Sense <divine-sense>
 
 The presence of strong astral and abyssal influence readily apparent to you. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow incantation.
 
@@ -2103,7 +2079,7 @@ You can use this feature a number of times equal to 1 + your Charisma modifier. 
 "20th", "+6", "Sacred Oath feature", "10", "20", "40", "14",
 )
 
-== Lay on Hands
+== Lay on Hands <lay-on-hands>
 
 Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your oathbound level &times; 5.
 
@@ -2113,7 +2089,7 @@ Alternatively, you can expend 5 hit points from your pool of healing to cure the
 
 This feature has no effect on undead and constructs.
 
-== Weapon Specialization
+== Weapon Specialization <oathbound-weapon-specialization>
 
 You have learned to wield one type of weapon better. Choose one of the properties below. You gain the bonus listed. If a bonus calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
 #flush-block[
@@ -2125,7 +2101,7 @@ You have learned to wield one type of weapon better. Choose one of the propertie
 ]
 
 
-== Spellcasting
+== Spellcasting <oathbound-spellcasting>
 
 By 2nd level, you have learned to draw on astral power through meditation and confidence in your own rightness to cast spells much like a priest does.
 
@@ -2146,7 +2122,7 @@ Charisma is your spellcasting ability for your oathbound spells, since their pow
 === Armored Caster
 You can cast oathbound spells while wearing any armor or wielding a shield. You can use your weapon or shield as a focus for your oathbound spells as long as it has a symbol relevant to your Oath (of your choice) emblazoned (ie painted, engraved, or otherwise drawn) on it.
 
-=== Divine Smite
+== Divine Smite <divine-smite>
 
 Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend 1 or more AET to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 1d8 + 1d8 per two additional AET to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.
 
@@ -2160,23 +2136,23 @@ In addition to expending aether to deal more damage, you can expend aether to ad
 ]
 
 
-== Divine Health
+== Divine Health <divine-health>
 
 By 3rd level, the divine magic flowing through you makes you immune to disease.
 
-== Sacred Oath
+== Sacred Oath <sacred-oath>
 
 When you reach 3rd level, you swear the oath that binds you as an oathbound forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Choose the Oath of Devotion, the Oath of the Sin's Weight, or the Oath of Retribution, all detailed at the end of the class description.
 
 Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
 
-== Oath Spells
+== Oath Spells <oath-spells>
 
 Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 
 If you gain an oath spell that doesn't appear on the oathbound spell list, the spell is nonetheless an oathbound spell for you.
 
-== Channel Divinity
+== Channel Divinity <oathbound-channel-divinity>
 
 Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.
 
@@ -2184,24 +2160,24 @@ When you use your Channel Divinity, you choose which option to use and expend 3 
 
 Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your oathbound spell save DC.
 
-== Ability Score Improvement
+== Ability Score Improvement <oathbound-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
 
-== Extra Attack
+== Extra Attack <oathbound-extra-attack>
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-== Aura of Protection
+== Aura of Protection <aura-of-protection>
 
 Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-== Find Steed
+== Find Steed <find-steed>
 
 At 7th level, you learn to summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Summoning your steed takes 10 minutes of prayer and requires expending 5 AET. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. Your GM might allow other animals to be summoned as steeds. The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.
 
@@ -2215,33 +2191,33 @@ You can't have more than one steed bonded by this spell at a time. As an action,
 
 Starting at level 14, you can expend 8 AET when you summon your steed to instead summon a gryphon, dire wolf, saber-toothed tiger, or pegasus.
 
-== Aura of Courage
+== Aura of Courage <aura-of-courage>
 
 Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-== Improved Divine Smite
+== Improved Divine Smite <improved-divine-smite>
 
 By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.
 
-== Cleansing Touch
+== Cleansing Touch <cleansing-touch>
 
 Beginning at 14th level, you can use your action to end one spell or magical effect on yourself or on one willing creature that you touch.
 
 You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
 
-= Sacred Oaths
+= Sacred Oaths <sacred-oaths>
 
 Becoming an oathbound involves taking vows that commit the oathbound to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the oathbound's training. Some characters with this class don't consider themselves truly oathbound until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the oathbound's heart.
 
-== Oath of Devotion
+== Oath of Devotion <oath-of-devotion>
 
 The Oath of Devotion binds an oathbound to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these oathbound meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Depending on culture, they may be particularly devoted to one of the Congregation such as Ytra (goddess of justice) or Tor Elan (god of summer and honor), although many also feel strong connections to Melara (goddess of mercy and winter). They hold angels---the perfect servants of duty and unbending conduct---as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.
 
 The Oath of Devotion gets a bad rap as being hidebound, stodgy, and anti-fun for other players. Remember that you may be law-abiding, but you're not a robot. Just because something is illegal doesn't mean it's _wrong_. The law and your oath can be in conflict. The tenets of the Oath are written to give you flexibility to work within a party and not cause undue discomfort. That said, it's incumbent on everyone to adapt their characters to fit, not just you.
 
-=== Tenets of Devotion
+=== Tenets of Devotion <tenets-of-devotion>
 
 Though the exact words and strictures of the Oath of Devotion vary, oathbound of this oath share these tenets.
 #flush-block[
@@ -2253,17 +2229,17 @@ Though the exact words and strictures of the Oath of Devotion vary, oathbound of
 ]
 
 
-=== Oath Spells
+=== Oath Spells <devotion-oath-spells>
 Your Oath provides you with the following spells, which are oathbound spells for you. You always have them prepared and they do not count against your spell limit.
 #dndtab("Devotion Spells",
 "Oathbound Level", "Oath Spells",
-"3rd         ", [_protection from otherworldly influence_],
-"5th         ", [_enhance ability_],
-"7th         ", [_revivify_],
-"9th         ", [_death ward_],
+"3rd         ", [#safe-link("protection-from-otherworldly-influence", [_protection from otherworldly influence_])],
+"5th         ", [#safe-link("enhance-ability", [_enhance ability_])],
+"7th         ", [#safe-link("revivify", [_revivify_])],
+"9th         ", [#safe-link("death-ward", [_death ward_])],
 )
 
-=== Channel Divinity
+=== Channel Divinity <devotion-channel-divinity>
 
 When you take this oath at 3rd level, you gain the following two Channel Divinity options.
 #flush-block[
@@ -2273,20 +2249,20 @@ When you take this oath at 3rd level, you gain the following two Channel Divinit
 ]
 
 
-=== Improved Lay on Hands
+=== Improved Lay on Hands <improved-lay-on-hands>
 You can spend STA to refill your Lay on Hands pool. As an action, spend 1+ STA. The available pool of healing increases by 5 for every STA spent, up to a maximum of 5 &times; your level.
 
-=== Aura of Devotion
+=== Aura of Devotion <aura-of-devotion>
 
 Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-=== Purity of Spirit
+=== Purity of Spirit <purity-of-spirit>
 
-Beginning at 15th level, you are always under the effects of a _protection from otherworldly influence_ spell.
+Beginning at 15th level, you are always under the effects of a #safe-link("protection-from-otherworldly-influence", [_protection from otherworldly influence_]) spell.
 
-=== Holy Nimbus
+=== Holy Nimbus <holy-nimbus>
 
 At 20th level, as an action, you can spend 5 or more AET to emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.
 
@@ -2294,12 +2270,12 @@ Whenever an enemy creature starts its turn in the bright light, the creature tak
 
 In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.
 
-== Oath of Sin's Weight
+== Oath of Sin's Weight <oath-of-sins-weight>
 Those who swear the Oath of Sin's Weight (the Sinners, as they're often called) are those who have felt the pain that their betrayals, murders, and other sinful actions have caused themselves and others. Many of them believe themselves beyond any hope of redemption and have dedicated the remainder of lives to taking on the hard jobs, the dirty jobs, the _necessary_ jobs so that others do not have to pay the price, do not have to lose their innocence. Many Sinners have lost their faith in the gods and ascendant powers. They still believe in their existence, but no longer consider themselves worthy of being worshippers. When they do worship, it tends to be the Redeeming Blades, demigods who accept everyone as long as they are willing to sacrifice their past for redemption. Not out of hope for redemption for themselves, but as models in helping others.
 
 Sinners are generally pragmatic and often cynical, but not uncaring. In fact, they often care too much about everyone else but themselves. The cynicism and rough manners are a defense. As an archetype, they are the Knight in Sour Armor, the Jerk with a Heart of Gold.
 
-=== Tenets of Sin's Weight
+=== Tenets of Sin's Weight <tenets-of-sins-weight>
 #flush-block[
 - *Sin is Painful, but Pain is Unavoidable.* No Sinner _wants_ to sin. I do not glory in it; I prefer if it can be avoided. But sometimes, sin must happen that righteousness may prevail.
 - *An Imperfect World Demands People Do Hard Things.* Despite not wanting to sin, Sinners know that sometimes sin and other hard things must be done. The demon cult must be suppressed, the oppressive taskmaster, although he does not violate the law, must be stopped. The raiding tribes cannot be allowed free rein to plunder, even if they're not evil.
@@ -2308,36 +2284,36 @@ Sinners are generally pragmatic and often cynical, but not uncaring. In fact, th
 ]
 
 
-=== Oath Spells
+=== Oath Spells <sinner-oath-spells>
 As a Sinner, your fervent devotion to your Oath grants you certain spells.
 
 Once you gain access to a oath spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the oathbound spell list, the spell is nonetheless an oathbound spell for you.
 
 #dndtab("Sinner Spells",
 "Oathbound Level", "Oath Spells",
-"3rd         ", [_disguise self_],
-"5th         ", [_calm emotions_],
-"7th         ", [_suggestion_],
-"9th         ", [_fear_],
+"3rd         ", [#safe-link("disguise-self", [_disguise self_])],
+"5th         ", [#safe-link("calm-emotions", [_calm emotions_])],
+"7th         ", [#safe-link("suggestion", [_suggestion_])],
+"9th         ", [#safe-link("fear", [_fear_])],
 )
 
-=== Channel Divinity
+=== Channel Divinity <sinner-channel-divinity>
 When you take this oath at 3rd level, you gain the following two Channel Divinity options. Once you use either one, you cannot use this feature again until you finish a long rest.
 #flush-block[
 - *Unveil.* As an action, you unveil the weight of your accumulated sins, which causes those who witness it to cower and quail. All creatures of your choice within 30 ft that can see and hear you must make a Charisma saving throw. On a failed save, they are frightened of you for one minute. While frightened, their speed is reduced to zero. Frightened creatures can repeat the saving throw at the end of each of their turns, ending the effect on a success. Creatures who succeed on the initial saving throw are instead shaken until the end of your next turn. This has no effect on demons, the undead, or constructs.
 - *Drive Home the Blade.* When you hit with a weapon attack but do not score a critical hit, you can expend your Channel Divinity to convert the hit into a critical hit. Alternatively, you can use it when you miss to turn the miss into a hit.
 ]
 
-=== Bear Another's Burden
+=== Bear Another's Burden <bear-anothers-burden>
 Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the staggered, stunned, shaken, frightened, or broken conditions. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
 
-=== Aura of Weight
+=== Aura of Weight <aura-of-weight>
 Starting at 7th level, you can expend 4 STA as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minute. On a success, they are shaken until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
 
-=== Penance Stare
+=== Penance Stare <penance-stare>
 Starting at 15th level, you spend 3 AET and an action to target one creature you can see within 60 ft and force it to relive its mistakes and sins. The target must make a Wisdom saving throw. On a failed save, the target takes 8d6 psychic damage and is incapacitated for one minute. On a success, the target takes half as much damage and is frightened of you until the end of your next turn. Incapacitated targets can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
 
-=== Inner Demon
+=== Inner Demon <inner-demon>
 At 20th level, as an action you can become what others think you are by spending 4 STA and 5 AET, at least outwardly: a ravening fiend. You gain the following benefits for 1 minute or until you are incapacitated
 - You grow shadowy wings, gaining a flight speed of 60 ft for the duration
 - Your attacks deal extra fire or necrotic (your choice) damage equal to one roll of the weapon's base damage die. Damage dealt by Divine Smite or Improved Divine Smite becomes that same damage type
@@ -2350,10 +2326,10 @@ An oathbound who has broken a vow typically seeks absolution from a priest who s
 
 If an oathbound willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the GM's discretion, an impenitent oathbound might be forced to become an NPC. This should be used as a last resort and agreed to between the player and the GM. When this happens, the player should create a new character of the same level.]
 
-== Oath of Retribution
+== Oath of Retribution <oath-of-retribution>
 Those who take the Oath of Retribution are generally those who have lost something or someone dear to them at the hand of a villain or foe. For some, this villain is concrete---the Lord of Castle Keep, who murdered their daughter---for others, it may be as abstract as "those who enslave others"or"the gods themselves". Importantly, their target is individual to them. Of all the Oaths, this is the one least likely to have an organization or order backing them. Lone wolves, joining with the party out of shared motives or because their paths happened to coincide for a while. An oathbound of Retribution devotes themselves to the destruction of their sworn foe and all those who assist or aid them. Generally, good backstories for oathbound of Retribution _generalize_ to match the campaign's themes. If your sworn foe is one specific person, there's really no good path for the character if the campaign steers the party away from that person or if they're defeated early on. In a campaign with a narrow focus, a narrow foe works best. In a more open-ended campaign, a more open-ended sworn foe is more appropriate.
 
-=== Tenets of Retribution
+=== Tenets of Retribution <tenets-of-retribution>
 #flush-block[
 - *All for Vengeance.* I will give up anything and do anything to achieve my vengeance.
 - *Break a Few Eggs.* Collateral damage is sometimes necessary in the course of vengeance, but cycles of vengeance are costly. Only break eggs when necessary.
@@ -2361,18 +2337,18 @@ Those who take the Oath of Retribution are generally those who have lost somethi
 ]
 
 
-=== Oath Spells
+=== Oath Spells <retribution-oath-spells>
 Your Oath provides you with the following spells, which are oathbound spells for you. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("Retribution Spells", 
 "Oathbound Level", "Oath Spells",
-"3rd         ", [_retribution_],
-"5th         ", [_arcane binding_],
-"7th         ", [_unbind_],
-"9th         ", [_dispel otherworldly influence_],
+"3rd         ", [#safe-link("retribution", [_retribution_])],
+"5th         ", [#safe-link("arcane-binding", [_arcane binding_])],
+"7th         ", [#safe-link("unbind", [_unbind_])],
+"9th         ", [#safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])],
 )
 
-=== Channel Divinity
+=== Channel Divinity <retribution-channel-divinity>
 
 When you take this oath at 3rd level, you gain the following two Channel Divinity options.
 #flush-block[
@@ -2380,76 +2356,76 @@ When you take this oath at 3rd level, you gain the following two Channel Divinit
 - *Designated Target.* As an action, you point at a creature you can see within 30 feet. For the next minute, you can teleport next to them as a bonus action. Additionally, when you hit the marked target with a melee weapon attack and use your Divine Smite ability, you can use one additional effect without paying the cost or counting against your aether limit. The cost of that additional effect must be less than or equal to your aether limit.
 ]
 
-=== Retributive Strike
+=== Retributive Strike <retributive-strike>
 As a reaction when you are hit with an attack from within 5 feet, you may make a melee weapon attack against them with an unarmed strike or weapon or shield you are wielding. If you use a shield or an unarmed strike, it counts as a martial bludgeoning weapon you are proficient in with the battering feature and a base 1d6 damage die. If you hit, you deal additional radiant damage as if you had spent 1 AET on your Divine Smite ability but do not have to pay the aether. If you hit with a shield, the target is also knocked prone as if it had failed the saving throw against the Crushing Weapon Mastery option (even if you did not select that mastery).
 
-=== Aura of Haste
+=== Aura of Haste <aura-of-haste>
 
 Starting at 7th level, you and friendly creatures within 10 feet of you gain advantage on Initiative checks and your speed increases by 10 feet.
 
 At 18th level, the range of this aura increases to 30 feet.
 
-=== Scorn the Unworthy
+=== Scorn the Unworthy <scorn-the-unworthy>
 
 Beginning at 15th level, you are immune to being charmed. If you are bloodied, you have advantage on all Wisdom saving throws.
 
-=== Executioner
+=== Executioner <executioner>
 
-At 20th level, as an action, you can attempt to execute an enemy. Choose a bloodied target you can see and expend 5 STA and 11 AET. If they are your Designated Target, you can teleport next to them as part of this action. Otherwise, the target must be within your reach. Make a melee weapon attack against them with a weapon you are wielding. If you hit, you deal radiant damage to them equal to the maximum critical damage roll with the weapon plus a maximized critical damage roll for your Divine Smite (as if you'd spent your aether limit on additional damage). If this is enough to reduce them to zero hit points, they die regardless of any regeneration, death saving throws, or other effects (such as Relentless Endurance or _death ward_ effects). If you are bloodied, you regain hit points equal to one quarter of your maximum hit points.
+At 20th level, as an action, you can attempt to execute an enemy. Choose a bloodied target you can see and expend 5 STA and 11 AET. If they are your Designated Target, you can teleport next to them as part of this action. Otherwise, the target must be within your reach. Make a melee weapon attack against them with a weapon you are wielding. If you hit, you deal radiant damage to them equal to the maximum critical damage roll with the weapon plus a maximized critical damage roll for your Divine Smite (as if you'd spent your aether limit on additional damage). If this is enough to reduce them to zero hit points, they die regardless of any regeneration, death saving throws, or other effects (such as Relentless Endurance or #safe-link("death-ward", [_death ward_]) effects). If you are bloodied, you regain hit points equal to one quarter of your maximum hit points.
 
-== Oathbound Spell List
+== Oathbound Spell List <oathbound-spell-list>
 The Oathbound Spell List table contains a list of the spells available to all Oathbound, ordered by aether cost.
 
 #flush-block[
-=== 1 Aether
-- cure wounds
-- true strike
-=== 2 Aether
-- bane
-- bless
-- command
-- divine favor
-- healing word
-- heroism
-- longstrider
-- protection from otherworldly influence
-- retribution
-- sanctuary
-- shield of faith
-=== 3 Aether
-- aid
-- calm emotions
-- detect thoughts
-- magic weapon
-- prayer of healing
-- protection from poison
-- see invisibility
-- silence
-- warding bond
+=== 1 Aether 
+- #safe-link("cure-wounds", [_cure wounds_])
+- #safe-link("true-strike", [_true strike_])
+=== 2 Aether 
+- #safe-link("bane", [_bane_])
+- #safe-link("bless", [_bless_])
+- #safe-link("command", [_command_])
+- #safe-link("divine-favor", [_divine favor_])
+- #safe-link("healing-word", [_healing word_])
+- #safe-link("heroism", [_heroism_])
+- #safe-link("longstrider", [_longstrider_])
+- #safe-link("protection-from-otherworldly-influence", [_protection from otherworldly influence_])
+- #safe-link("retribution", [_retribution_])
+- #safe-link("sanctuary", [_sanctuary_])
+- #safe-link("shield-of-faith", [_shield of faith_])
+=== 3 Aether 
+- #safe-link("aid", [_aid_])
+- #safe-link("calm-emotions", [_calm emotions_])
+- #safe-link("detect-thoughts", [_detect thoughts_])
+- #safe-link("magic-weapon", [_magic weapon_])
+- #safe-link("prayer-of-healing", [_prayer of healing_])
+- #safe-link("protection-from-poison", [_protection from poison_])
+- #safe-link("see-invisibility", [_see invisibility_])
+- #safe-link("silence", [_silence_])
+- #safe-link("warding-bond", [_warding bond_])
 
-=== 5 Aether
+=== 5 Aether 
 
-- aetheric barrier
-- beacon of hope
-- daylight
-- remove curse
-- revivify
-=== 8 Aether
+- #safe-link("aetheric-barrier", [_aetheric barrier_])
+- #safe-link("beacon-of-hope", [_beacon of hope_])
+- #safe-link("daylight", [_daylight_])
+- #safe-link("remove-curse", [_remove curse_])
+- #safe-link("revivify", [_revivify_])
+=== 8 Aether 
 
-- banishment
-- death ward
-- freedom of movement
-=== 9 Aether
+- #safe-link("banishment", [_banishment_])
+- #safe-link("death-ward", [_death ward_])
+- #safe-link("freedom-of-movement", [_freedom of movement_])
+=== 9 Aether 
 
-- mass cure wounds
-=== 12 Aether
+- #safe-link("mass-cure-wounds", [_mass cure wounds_])
+=== 12 Aether 
 
-- dispel otherworldly influence
-- divine wrath
-- true seeing
+- #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])
+- #safe-link("divine-wrath", [_divine wrath_])
+- #safe-link("true-seeing", [_true seeing_])
 ]
 
-= Ranger
+= Ranger <ranger>
 
 Ranger is the name given to those that range the borders between civilization and wildness. Hunter, scout, and bounty-hunter are other terms often used. Rangers draw on the spirits of nature as do shamans, but balance their magical prowess with martial training. Most often, they stand with civilization against the perils of the wilds...whether those perils come from uncivilized people or beasts or nature itself. Many rangers find that civilization is also in peril from the uncivilized folks within its borders; these too draw a ranger's wrath.
 
@@ -2500,13 +2476,13 @@ Whenever a non-magical ability from this class forces someone to make a saving t
 
 #align(center)[nonmagical DC = 8 + your Dexterity modifier + your proficiency bonus.]
 
-== Focused Foe
+== Focused Foe <focused-foe>
 
 Rangers have the ability to focus on a single enemy at a time, predicting their actions and striking their weak spots. As a bonus action, choose a creature you can see to become your Focused Foe. This lasts until the target dies or you select another target as your Focused Foe. While focused, a creature takes additional damage from your attacks equal to your Focused Foe die (originally a d4) once per turn when you hit them with an attack.
 
 Additionally, focused foes cannot gain advantage on attacks against you and you cannot have disadvantage to attack them. This even works if they are invisible. You always know where they are if they are within 120 feet of you; if they are further away, you have advantage to track them.
 
-== Conditioned Explorer
+== Conditioned Explorer <conditioned-explorer>
 
 You are particularly familiar with one type of environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, underground, or urban. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
 
@@ -2547,11 +2523,11 @@ You choose additional favored terrain types at 6th and 10th level.
 "20th  ", "+6", "Foe Slayer", "11", "d8", "15", "40", "14",
 )
 
-== Nimble Strike
+== Nimble Strike <ranger-nimble-strike>
 
 Beginning at 1st level, you have learned to use your agile precision to strike with melee weapons. You can use your Ranged Attack Modifier instead of your Melee Attack Modifier when making attacks with melee weapons. When you do so, add your Dexterity modifier to weapon damage instead of your Strength modifier.
 
-== Weapon Specialization
+== Weapon Specialization <ranger-weapon-specialization>
 
 At second level, you have become especially adept at using particular weapon properties. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect.
 #flush-block[
@@ -2566,7 +2542,7 @@ At second level, you have become especially adept at using particular weapon pro
 - *Two-handed (Ranged only).* You can choose to forgo your proficiency bonus to the attack roll. If you still hit, you can add twice your proficiency bonus to the damage dealt.
 ]
 
-== Spellcasting
+== Spellcasting <ranger-spellcasting>
 
 By the time you reach 2nd level, you have learned to befriend the kami, teaching them to do magical tricks (in the form of spells) in exchange for your personal aether. See chapter 10 for the general rules of spellcasting and the end of this section for the ranger spell list.
 
@@ -2587,31 +2563,31 @@ Wisdom is your spellcasting ability for your ranger spells, since your magic dra
 === Armored Caster
 You can cast your ranger spells while wearing light or medium armor.
 
-== Ranger Archetype
+== Ranger Archetype <ranger-archetype>
 
 At 3rd level, you choose an archetype that you strive to emulate. Three archetypes, the Bounty Hunter, Monster Slayer, and Primal Guardian are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 
-== Primeval Awareness
+== Primeval Awareness <primeval-awareness>
 
 Beginning at 3rd level, you can use your action to focus your awareness on the region around you. For a number of minutes equal to your proficiency bonus, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature reveals the direction and approximate distance (very near, near, far, very far) as well as a general sense of the number (solitary, a group, a horde) of each distinct cluster of creatures detected. Once you use this feature, one hour must pass before you can use it again.
 
-== Ability Score Improvement
+== Ability Score Improvement <ranger-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list. At levels 4 and 12, you learn two Skill Tricks instead of one.
 
-== Extra Attack
+== Extra Attack <ranger-extra-attack>
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, you can expend 1 STA when you hit with an attack to deal your Favored Foe damage an additional time per turn.
 
-== Land's Stride
+== Land's Stride <lands-stride>
 
 Starting at 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
-In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the _entangle_ spell.
+In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the #safe-link("entangle", [_entangle_]) spell.
 
-== Aether Strike
+== Aether Strike <aether-strike>
 
 Starting at 9th level, you can manipulate aether to strike multiple targets in a blur. As an action on your turn while you are wielding a weapon, expend 4+ AET and choose a number of targets equal to half the amount of Aether spent, rounded up. Depending on the type of weapon (ranged or melee) you are wielding, one of the following occurs.
 #flush-block[
@@ -2619,48 +2595,48 @@ Starting at 9th level, you can manipulate aether to strike multiple targets in a
 - *Ranged Weapon.* Make a ranged weapon attack against each target in turn. On a hit, targets take normal damage from your weapon plus a number of d10s equal to your proficiency bonus. Targets struck by this attack have disadvantage on their next attack.
 ]
 
-== Vanish
+== Vanish <vanish>
 
 Starting at 14th level, you can use the Hide action as a bonus action on your turn. If you expend 2 STA while doing so, you have advantage on the check. Also, you can't be tracked by non-magical means, unless you choose to leave a trail.
 
 
-== Feral Senses
+== Feral Senses <feral-senses>
 
 At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it, nor do those creatures gain advantage on attack rolls against you.
 
 You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.
 
-== Foe Slayer
+== Foe Slayer <foe-slayer>
 At 20th level, you are particularly adept at finding the weak spots of your enemies. When you attack a target you've selected as your favored foe, you can spend 5 STA and choose to target a vital spot. Make the attack as normal. You score a critical hit on a roll of a 2 - 19, as long as the attack would hit. On a natural 20, you score a critical hit and the damage done is the maximum possible damage for that attack, including all additional damage. A natural 1 is still an automatic miss. Once you use this ability against a particular foe, you cannot use it again against that creature.
 
-= Ranger Archetypes
+= Ranger Archetypes <ranger-archetypes>
 
 The ideal of the ranger has three classic expressions: the Bounty Hunter, the Monster Slayer, and the Primal Guardian.
 
-== Bounty Hunter
+== Bounty Hunter <bounty-hunter>
 Bounty hunters are those who specialize in tracking down and dealing with civilization's refuse. Those who harm others, those who prey on the weak, those who flout society's standards. Many of your preferred foes are humanoid, but more monstrous foes are not exempt. You are just as much at home in the cities and settled areas as you are in the wilds; your quarry goes to ground wherever they are most comfortable. A bounty hunter lives and dies by his reputation: it is his currency and one of his primary weapons.
 
-=== Information Gatherer
+=== Information Gatherer <information-gatherer>
 At 3rd level, you gain proficiency in Charisma checks made to gain information. Additionally, you learn the secret signals that identify one as an ally of the various criminal organizations of the known world. This does not gain you any direct favors, but grants access to black markets, fences, and other less reputable establishments.
 
-=== Fearsome Reputation
+=== Fearsome Reputation <fearsome-reputation>
 At 3rd level, you've begun to establish a reputation as a hunter to be feared. This lets you unsettle the minds of the weak. As a bonus action on your turn, you can spend 2 STA to attempt to intimidate a number of creatures that can see and hear you equal to your proficiency bonus. The targets must speak at least one language that you are proficient in. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, they are frightened of you for one minute. A creature who ends its turn where it cannot see you can attempt the saving throw again, ending the effect on a success. Creatures that succeed on the saving throw are immune to this ability for 24 hours.
 
 Additionally, you have advantage on Charisma (Intimidation) checks made against any creature who can see you and who speaks a language that you are proficient in.
 
-=== Debilitating Reputation
+=== Debilitating Reputation <debilitating-reputation>
 At 7th level, your reputation has grown strong enough to make the weak unable to act against you. When you use your Fearsome Reputation feature, choose one creature that failed the saving throw. That creature is unable to make attacks against you while frightened of you.
 
-=== Razor Dance
+=== Razor Dance <razor-dance>
 At 11th level, you've honed your skills at taking down a single target. When you use your Aether Strike ability, instead of choosing multiple targets, you can choose to distribute the same number of attacks between fewer targets. For example, if you spent 6 AET (and thus could target 3 creatures), you can choose to make 3 attacks against a single target or 2 attacks against one target and 1 against another.
 
-=== Wordless Reputation
+=== Wordless Reputation <wordless-reputation>
 Starting at 15th level, your reputation and the aura that surrounds you are such that you can use your Fearsome Reputation ability against any foe, whether it can understand you or not. In addition, you can choose to use Debilitating Reputation against all creatures that fail their saving throws instead of just one.
 
-== Monster Slayer
+== Monster Slayer <monster-slayer>
 Monster Slayers protect civilization from the horrific things that lurk on the frontier. Most at home in the wilderness, they are rangers in the truest sense, ranging the borders of civilization. Many of the things they hunt are twisted monstrosities and aberrations...but many of the worst monsters present a civilized face.
 
-=== Hunter's Prey
+=== Hunter's Prey <hunters-prey>
 
 At 3rd level, you gain the following features, but can only apply one of them per turn.
 #flush-block[
@@ -2670,7 +2646,7 @@ At 3rd level, you gain the following features, but can only apply one of them pe
 ]
 
 
-=== Defensive Tactics
+=== Defensive Tactics <defensive-tactics>
 
 At 7th level, you gain the following features.
 #flush-block[
@@ -2679,10 +2655,10 @@ At 7th level, you gain the following features.
 ]
 
 
-=== Steel Will.
+=== Steel Will <steel-will>
 Starting at 7th level, you have advantage on saving throws against being frightened.
 
-=== Multiattack.
+=== Multiattack <slayer-multiattack>
 
 At 11th level, you gain the following features.
 #flush-block[
@@ -2690,20 +2666,20 @@ At 11th level, you gain the following features.
 - *Whirlwind Attack.* When you use your Aether Strike ability with a melee weapon, you can choose to perform a whirlwind attack at any point along the chain of attacks. If you do so, all creatures within your reach at that point count as targets for your Aether Strike. Make a separate attack for each one. You may only perform a single whirlwind attack per use of Aether Strike.
 ]
 
-=== Superior Hunter's Defense
+=== Superior Hunter's Defense <superior-hunters-defense>
 
 At 15th level, you gain the following features.
 #flush-block[
-- *Evasion.* When you are subjected to an effect, such as a red dragon's fiery breath or a _lightning bolt_ spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
+- *Evasion.* When you are subjected to an effect, such as a red dragon's fiery breath or a #safe-link("lightning-bolt", [_lightning bolt_]) spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 - *Stand Against the Tide.* When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.
 - *Uncanny Dodge.* When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
 ]
 
 
-== Primal Guardian
+== Primal Guardian <primal-guardian>
 Primal Guardians are the most in-tune with the spirits of nature among the ranger. While they still favor their weapons, they blend their primal magic more thoroughly into their hunts, often calling on the spirits of beasts to aid them.
 
-=== Spirit Companion
+=== Spirit Companion <spirit-companion>
 Starting when you choose this subclass at level 3, you gain the companionship of an invisible animal spirit. It grants you several benefits, growing with you as you gain levels. Choose one of the companions below. All spirit companions increase your maximum aether by your Wisdom modifier, increasing to twice your Wisdom modifier at 11th level.
 #flush-block[
 - *Bear Spirit.* The bear grants you endurance. Your hit point maximum increases by your level and you gain 1 additional maximum hit point each time you gain a level.
@@ -2711,10 +2687,10 @@ Starting when you choose this subclass at level 3, you gain the companionship of
 - *Wolf Spirit.* The wolf grants you speed and ferocity. Your walking speed increases by 10 feet and once per turn when you make an attack with a melee weapon and miss, you can choose to reroll the attack. At 11th level, if you hit with the re-rolled attack, it becomes a critical hit.
 ]
 
-=== Additional Spirit Companion
+=== Additional Spirit Companion <additional-spirit-companion>
 Starting at 7th level, you can choose an additional Spirit Companion, choosing which one is in effect at the end of a long rest.
 
-=== Manifested Spirit
+=== Manifested Spirit <manifested-spirit>
 At 7th level, you've learned to manifest your active Spirit Companion as a spectral force as an action by spending 4 AET. It performs the listed action, which lasts until the end of your next turn.
 #flush-block[
 - *Bear Manifestation.* A Huge spectral bear appears at your side. It does not occupy its space. For the duration, all allies within 30 feet have resistance to bludgeoning, piercing, and slashing damage as the bear soaks part of each attack.
@@ -2722,7 +2698,7 @@ At 7th level, you've learned to manifest your active Spirit Companion as a spect
 - *Wolf Manifestation.* A spectral wolf appears at your side and then flickers and multiplies, creating a pack that appear to surround all creatures of your choice within 30 feet. When a surrounded creature moves more than 5 feet or takes an action that would provoke an opportunity attack, the wolves attack. Make a melee spell attack using your Wisdom modifier against the creature. On a hit, the creature takes 4d10 psychic damage and their speed is reduced to zero until the end of their next turn. If they were casting a spell or making an attack when they triggered the wolves, that action fails without effect.
 ]
 
-=== Spirit Strike
+=== Spirit Strike <spirit-strike>
 Starting at 11th level, when you use your Aether Strike ability, your active spirit briefly manifests.
 #flush-block[
 - *Bear Strike.* The crushing paws of the bear knock prone or push 10 feet (your choice) any target hit by your Aether Strike.
@@ -2730,81 +2706,81 @@ Starting at 11th level, when you use your Aether Strike ability, your active spi
 - *Wolf Strike.* The snapping jaws of the wolf reduce the speed of any target hit by your Aether Strike to zero until the end of your next turn. While immobilized, targets cannot make opportunity attacks.
 ]
 
-=== Spirit Union
+=== Spirit Union <spirit-union>
 Starting at 15th level, you can call on the power of all three companions. When you finish a short rest, you can expend 8 AET. If you do so, you gain all three passive effects until you finish a long or short rest and once during that period when you use your Manifested Spirit or Spirit Strike ability, you gain all three effects. Once you use this ability, you cannot do so again until you finish a long rest.
 
-== Ranger Spell List
+== Ranger Spell List <ranger-spell-list>
 The Ranger Spell List table contains a list of the spells available to all rangers, ordered by aether cost.
 #flush-block[
-=== 1 Aether
-- cure wounds
-- true strike
-- yoink
+=== 1 Aether 
+- #safe-link("cure-wounds", [_cure wounds_])
+- #safe-link("true-strike", [_true strike_])
+- #safe-link("yoink", [_yoink_])
 	
-=== 2 Aether
-- bane
-- burning hands
-- disguise self
-- entangle
-- envenom
-- faerie fire
-- flash freeze
-- fog cloud
-- grease
-- longstrider
-- sleep
-- thunderwave
+=== 2 Aether 
+- #safe-link("bane", [_bane_])
+- #safe-link("burning-hands", [_burning hands_])
+- #safe-link("disguise-self", [_disguise self_])
+- #safe-link("entangle", [_entangle_])
+- #safe-link("envenom", [_envenom_])
+- #safe-link("faerie-fire", [_faerie fire_])
+- #safe-link("flash-freeze", [_flash freeze_])
+- #safe-link("fog-cloud", [_fog cloud_])
+- #safe-link("grease", [_grease_])
+- #safe-link("longstrider", [_longstrider_])
+- #safe-link("sleep", [_sleep_])
+- #safe-link("thunderwave", [_thunderwave_])
 	
-=== 3 Aether
-- alter self
-- barkskin
-- blindness deafness
-- darkvision
-- detect thoughts
-- find traps
-- flame blade
-- invisibility
-- pass without trace
-- see invisibility
-- silence
-- spike growth
-- web
+=== 3 Aether 
+- #safe-link("alter-self", [_alter self_])
+- #safe-link("barkskin", [_barkskin_])
+- #safe-link("blindness-deafness", [_blindness deafness_])
+- #safe-link("darkvision", [_darkvision_])
+- #safe-link("detect-thoughts", [_detect thoughts_])
+- #safe-link("find-traps", [_find traps_])
+- #safe-link("flame-blade", [_flame blade_])
+- #safe-link("invisibility", [_invisibility_])
+- #safe-link("pass-without-trace", [_pass without trace_])
+- #safe-link("see-invisibility", [_see invisibility_])
+- #safe-link("silence", [_silence_])
+- #safe-link("spike-growth", [_spike growth_])
+- #safe-link("web", [_web_])
 
 
-=== 4 Aether
-- arcane binding
+=== 4 Aether 
+- #safe-link("arcane-binding", [_arcane binding_])
 
-=== 5 Aether
-- bestow curse
-- clairvoyance
-- conjure animals
-- plant growth
-- wind wall
+=== 5 Aether 
+- #safe-link("bestow-curse", [_bestow curse_])
+- #safe-link("clairvoyance", [_clairvoyance_])
+- #safe-link("conjure-animals", [_conjure animals_])
+- #safe-link("plant-growth", [_plant growth_])
+- #safe-link("wind-wall", [_wind wall_])
 
-=== 6 Aether
-- blight
-- call lightning
+=== 6 Aether 
+- #safe-link("blight", [_blight_])
+- #safe-link("call-lightning", [_call lightning_])
 	
-=== 7 Aether
-- wall of thorns
+=== 7 Aether 
+- #safe-link("wall-of-thorns", [_wall of thorns_])
 
-=== 8 Aether
-- conjure woodland beings
-- dominate beast
-- faithful hound
-- freedom of movement
-- giant insect
-- greater invisibility
+=== 8 Aether 
+- #safe-link("conjure-woodland-beings", [_conjure woodland beings_])
+- #safe-link("dominate-unthinking", [_dominate unthinking_])
+- #safe-link("faithful-hound", [_faithful hound_])
+- #safe-link("freedom-of-movement", [_freedom of movement_])
+- #safe-link("giant-insect", [_giant insect_])
+- #safe-link("greater-invisibility", [_greater invisibility_])
 	
-=== 12 Aether
-- contagion
+=== 12 Aether 
+- #safe-link("contagion", [_contagion_])
 	
-=== 13 Aether
-- chain lightning
+=== 13 Aether 
+- #safe-link("chain-lightning", [_chain lightning_])
 ]
 
 
-= Spellblade
+= Spellblade <spellblade>
 
 The spellblade is half-rogue, half-arcanist. They weave distraction, illusion, and weapon-play to confuse their foes, warping reality around them to hamper their ability to strike others. Unique among the classes, they have the ability to mix weapons and spells directly, gaining the ability to cast a spell on their weapon and have it take effect when they strike an enemy.
 
@@ -2836,7 +2812,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - (*a*) a lute or (*b*) any other musical instrument or (*c*) any tool
 - (*a*) leather armor or ((*b*) chain shirt
 - a dagger
-== Spellcasting
+== Spellcasting <spellblade-spellcasting>
 
 You have learned to untangle and reshape the fabric of reality in harmony with your wishes.
 
@@ -2870,7 +2846,6 @@ You can use a weapon as a spellcasting focus for your spellblade spells.
 
 You can cast your spellblade spells while wearing light or medium armor.
 
-
 #dndtab("The Spellblade", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells", "Cantrips", "Skill Tricks", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Spellcasting, Arcane Manipulation (d6)", "1", "2", "---", "1", "2", "2",
@@ -2895,267 +2870,267 @@ You can cast your spellblade spells while wearing light or medium armor.
 "20th", "+6", "Superior Inspiration", "10", "6", "6", "20", "40", "14",
 )
 
-== Arcane Manipulation
+== Arcane Manipulation <arcane-manipulation>
 
 You can magically distort the minds of your foes. To do so, you use a bonus action on your turn and expend 1 AET to choose one creature other than yourself within 60 feet of you who can hear you and mark them for ill-luck. Once within the next minute when the creature makes an attack roll, saving throw, or ability check, you can invoke the mark without using an action. If you do so, the creature must roll a d6 (hereafter an Arcane Manipulation die) and subtract it from the die result before applying modifiers. This can convert a critical hit into a regular hit or miss. Any creature can only be marked with one manipulation die at a time. You can invoke the mark after you see the die result but before the success or failure is resolved.
 
 Your Arcane Manipulation die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
 
-== Expertise
+== Expertise <spellblade-expertise>
 
 At 2nd level, choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.
 
 At 10th level, you can choose another skill proficiency to gain this benefit.
 
-== Skill Tricks
+== Skill Tricks <spellblade-skill-tricks>
 
 Starting at 2nd level, you've learned additional ways to employ your abilities. You learn one basic skill trick of your choice, even if you don't have proficiency in that skill. See Skill Tricks (in the Equipment document) for more details and the rules governing skill tricks.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
 
-== Spellblade Focus
+== Spellblade Focus <spellblade-focus>
 
 At 3rd level, you delve into the advanced techniques of a spellblade focus of your choice and choose to focus either on Inspiration, Society, or War, each detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level.
 
-== Nimble Strike
+== Nimble Strike <spellblade-nimble-strike>
 
 Starting at 3rd level, you can use your Ranged Attack Modifier instead of your Melee Attack Modifier when making attacks with weapons with which you are proficient. When you do so, you add your Dexterity modifier to the damage dealt instead of your Strength.
 
-== Ability Score Improvement
+== Ability Score Improvement <spellblade-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick (included in the skill tricks column of the spellblade table) but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list.
 
 
-== Channeling
+== Channeling <channeling>
 Starting at 6th level, you have learned to weave your spells into your weapon use. When you take the Attack action on your turn, you can also cast a cantrip of your choice that targets another creature and infuse your weapon strike with it. If you hit with the attack, the target suffers the effect of both the regular weapon damage and the cantrip. If the cantrip targets two or more creatures, the additional creatures must be within 5 feet of the target of the weapon attack.
 
 Starting at 11th level, you can infuse any spell that costs 3 AET or less by paying the requisite cost. It does not require a separate action. The spell must target a creature or a point in space. If it targets a single creature, the target of your weapon attack is the target of the spell and must make any requisite saving throws, although they do so at disadvantage. If it targets a point in space, the target is centered on the creature struck. The limit on spell cost increases at 13th level (to 5 AET) and 17th level (to 8 AET).
 
 If you miss with an infused attack, the spell fizzles and has no effect.
 
-== Counter-weave
+== Counter-weave <counter-weave>
 
 Starting at 9th level, you gain the ability to use musical notes or words of power to disrupt magical effects. As a reaction when someone within 60 ft of begins casting a spell or magical effect, you can spend 2 AET to attempt to counter it. The target must make a Charisma saving throw against your Spellcasting DC. They gain a +1 bonus for every 2 CR above 9 they are. On a failed save, the spell or magical effect is cancelled and has no effect. You can spend additional AET up to your limit; for every additional AET, the DC increases by 1.
 
-Additionally, you learn _unbind_ if you do not already know it and can cast it using 2 AET instead of its normal cost. It does not count against your spells known.
+Additionally, you learn #safe-link("unbind", [_unbind_]) if you do not already know it and can cast it using 2 AET instead of its normal cost. It does not count against your spells known.
 
-== Superior Manipulation
+== Superior Manipulation <superior-manipulation>
 
 At 20th level, targets marked by your Arcane Manipulation must subtract the die from every attack roll or ability check they make for one minute. Only one saving throw of your choice is affected, regardless.
 
-= Spellblade Focuses
+= Spellblade Focuses <spellblade-focuses>
 Every spellblade can do most of the same things, but each one also specializes, focusing their efforts on one area of life. These Focuses grant the spellblade additional features when they use their class features or might grant additional abilities.
 
-== Focus: Inspiration
+== Focus: Inspiration <focus-inspiration>
 Inspiration-focused spellblades have learned to buoy the spirits and aid the abilities of their allies with their aetheric abilities in addition to hampering their foes.
 
-=== Focus Spells
+=== Focus Spells <inspiration-focus-spells>
 Your focus provides you with the following spells, which are spellblade spells for you. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("Inspiration Spells",
 "Spellblade Level", "Focus Spells",
-"3rd         ", [_healing word, heroism_],
-"5th         ", [_arcane binding, aid_],
-"7th         ", [_protection from energy, beacon of hope_],
-"9th         ", [_arcane eye, greater invisibility_],
+"3rd         ", [#safe-link("healing-word", [_healing word_]), #safe-link("heroism", [_heroism_])],
+"5th         ", [#safe-link("arcane-binding", [_arcane binding_]), #safe-link("aid", [_aid_])],
+"7th         ", [#safe-link("protection-from-energy", [_protection from energy_]), #safe-link("beacon-of-hope", [_beacon of hope_])],
+"9th         ", [#safe-link("arcane-eye", [_arcane eye_]), #safe-link("greater-invisibility", [_greater invisibility_])],
 )
 
-=== Inspiring Manipulation
+=== Inspiring Manipulation <inspiring-manipulation>
 Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to benefit allies as well. When you target a willing creature with your Arcane Manipulation, the target instead _adds_ the die to one ability check or damage roll they make within the next minute. The target can use the die after they see the result of the check. If they add it to a damage roll, it is multiplied by critical hits and deals the same damage as the underlying source (the weapon or the spell or ability) deals.
 
-=== Beneficial Channel
+=== Beneficial Channel <beneficial-channel>
 Starting at 7th level, when you take the Attack action and choose _not_ to apply your Channeling ability, you can instead grant temporary hit points equal to your proficiency bonus + your CHA modifier to creature other than yourself you can see within 30 feet.
 
-=== Shielding Counter-weave
+=== Shielding Counter-weave <shielding-counter-weave>
 Starting at 14th level, when you use your Counter-weave ability against a magical effect that causes damage and the target succeeds on the saving throw, you can choose a number of willing targets equal to your proficiency bonus. Those targets have resistance to the damage dealt by the magical effect.
 
-=== Legendary Effect: Heroes' Feast
-At 14th level, you learn the legendary effect _heroes feast_ and can use it once per day.
+=== Legendary Effect: Heroes' Feast <legendary-effect-heroes-feast>
+At 14th level, you learn the legendary effect #safe-link("heroes--feast", [_heroes' feast_]) and can use it once per day.
 
-=== Improved Inspiring Manipulation
+=== Improved Inspiring Manipulation <improved-inspiring-manipulation>
 Starting at 18th level, when you use your Inspiring Manipulation ability, the friendly target can add the die to an attack roll or saving throw as well as an ability check or damage roll.
 
-=== Legendary Effect: Abjure Aether Manipulation
-Starting at 18th level, you learn the legendary effect abjure _aether manipulation_ and can use it once per day.
+=== Legendary Effect: Abjure Aether Manipulation <legendary-effect-aam>
+Starting at 18th level, you learn the legendary effect abjure #safe-link("abjure-aether-manipulation", [_abjure aether manipulation_]) and can use it once per day.
 
 
 == Focus: Society
 Society-focused spellblades include hired duelist as well as others whose weapons aren't always made of steel. While adventuring spellblades are all capable of violence, society focused spellblades are equally capable of cutting someone to ribbons verbally as well as with a blade. They tend to focus more on the skilled side of things rather than the magical, however.
 
-=== Focus Spells
+=== Focus Spells <society-focus-spells>
 Your focus provides you with the following spells, which are spellblade spells for you. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("Society Spells", 
 "Spellblade Level", "Focus Spells",
-"3rd         ", [_command, inflict wounds_],
-"5th         ", [_calm emotions, invisibility_],
-"7th         ", [_bestow curse, remove curse_],
-"9th         ", [_greater invisibility, phantasmal killer_],
+"3rd         ", [#safe-link("command", [_command_]), #safe-link("inflict-wounds", [_inflict wounds_])],
+"5th         ", [#safe-link("calm-emotions", [_calm emotions_]), #safe-link("invisibility", [_invisibility_])],
+"7th         ", [#safe-link("bestow-curse", [_bestow curse_]), #safe-link("remove-curse", [_remove curse_])],
+"9th         ", [#safe-link("greater-invisibility", [_greater invisibility_]), #safe-link("phantasmal-killer", [_phantasmal killer_])],
 )
 
 
-=== Focused Charm
+=== Focused Charm <focused-charm>
 At 3rd level when you pick this focus, you gain your choice of the Diplomat or Frighten skill tricks.
 
-=== Social Manipulation
+=== Social Manipulation <social-manipulation>
 Starting at 3rd level, you can use your Arcane Manipulation feature when you make a Charisma check using Deception, Intimidation, or Persuasion and do not like the result to reroll the check. You must use the second result, and you must use this feature before any of the effects of that check are applied.
 
-=== Social Adept
+=== Social Adept <social-adept>
 Starting at 7th level, you learn your choice of the fascinate or people-whisperer skill tricks. You also learn the find weakness skill trick even if you don't otherwise qualify.
 
-=== Mass Manipulation
+=== Mass Manipulation <mass-manipulation>
 Starting at 14th level, when you use your Arcane Manipulation ability, you can spend extra AET to target an additional creature per 2 AET spent beyond the first.
 
-=== Legendary Effects
-At 18th level, you learn the legendary effect _domination_ and the legendary effect _modify memory_.
+=== Legendary Effects <society-legendary-effects>
+At 18th level, you learn the legendary effect #safe-link("domination", [_domination_]) and the legendary effect #safe-link("modify-memory", [_modify memory_]).
 
-== Focus: War
+== Focus: War <focus-war>
 War-focused spellblades, as the name suggests, have gone all-in on the death of their enemies while also preventing themselves from dying to their enemies' attacks.
-=== Focus Spells
+=== Focus Spells <war-focus-spells>
 Your focus provides you with the following spells, which are spellblade spells for you. You always have them prepared and they do not count against your spell limit.
 
 #dndtab("War Spells",
 "Spellblade Level", "Focus Spells",
-"3rd         ", [_guiding bolt, magic missile_],
-"5th         ", [_shatter, scorching ray_],
-"7th         ", [_protection from energy, lightning bolt_],
-"9th         ", [_fire shield, wall of fire_],
+"3rd         ", [#safe-link("guiding-bolt", [_guiding bolt_]), #safe-link("magic-missile", [_magic missile_])],
+"5th         ", [#safe-link("shatter", [_shatter_]), #safe-link("scorching-ray", [_scorching ray_])],
+"7th         ", [#safe-link("protection-from-energy", [_protection from energy_]), #safe-link("lightning-bolt", [_lightning bolt_])],
+"9th         ", [#safe-link("fire-shield", [_fire shield_]), #safe-link("wall-of-fire", [_wall of fire_])],
 )
 
-=== Piercing Manipulation
+=== Piercing Manipulation <piercing-manipulation>
 Starting at 3rd level when you pick this focus, you can use your Arcane Manipulation to pierce the defenses of a foe you attack. When you make an attack roll, you can expend one use of Arcane Manipulation to add the die result to your attack roll. Alternatively, when you cast a spell or use an ability (other than Arcane Manipulation) that requires a saving throw from an enemy, you can expend one use of Arcane Manipulation to subtract the die result from the target's saving throw. This can only affect a single target even if the spell or ability targets multiple creatures.
 
-=== Steady Channeling
+=== Steady Channeling <steady-channeling>
 Starting at 7th level, when you deal damage with your Channeling ability and roll below half the maximum damage on the spell's damage, you can expend 1 STA to instead deal half of the spell's maximum damage.
 
-=== Rebounding Counterweave
+=== Rebounding Counterweave <rebounding-counterweave>
 Starting at 14th level, when you use your Counter-weave ability against a magical effect that causes damage and the target fails the saving throw, the target takes psychic damage equal to your level in addition to the regular effects of a failed save.
 
-=== Legendary Effect: Globe of Invulnerability
-At 14th level, you learn the legendary effect _globe of invulnerability_ and can use it once per day.
+=== Legendary Effect: Globe of Invulnerability <legendary-effect-globe-of-invulnerability>
+At 14th level, you learn the legendary effect #safe-link("globe-of-invulnerability",[_globe of invulnerability_]) and can use it once per day.
 
-=== Improved Piercing Manipulation
+=== Improved Piercing Manipulation <improved-piercing-manipulation>
 Starting at 18th level, when you use Piercing Manipulation, the target of the attack or ability it modified takes additional psychic damage equal to your level, regardless of whether the triggering attack hits or the triggering ability takes effect.
 
 === Legendary Effect: Power Word Kill
-At 18th level, you learn the legendary effect _power word kill_ and can use it once per day.
+At 18th level, you learn the legendary effect #safe-link("power-word-kill",[_power word kill_]) and can use it once per day.
 
 
-== Spellblade Spell List
+== Spellblade Spell List <spellblade-spell-list>
 The Spellblade Spell List table contains a short summary of the spells available to all spellblades, ordered by aether cost.
 
 #flush-block[
-=== 0 Aether
-- acid burst
-- dancing lights
-- grave touch
-- light
-- mage hand
-- prestidigitation
-- produce flame
-- ray of frost
-- resistance
-- shocking grasp
+=== 0 Aether 
+- #safe-link("acid-burst", [_acid burst_])
+- #safe-link("dancing-lights", [_dancing lights_])
+- #safe-link("grave-touch", [_grave touch_])
+- #safe-link("light", [_light_])
+- #safe-link("mage-hand", [_mage hand_])
+- #safe-link("prestidigitation", [_prestidigitation_])
+- #safe-link("produce-flame", [_produce flame_])
+- #safe-link("ray-of-frost", [_ray of frost_])
+- #safe-link("resistance", [_resistance_])
+- #safe-link("shocking-grasp", [_shocking grasp_])
 
-=== 1 Aether
-- true strike
-- yoink
+=== 1 Aether 
+- #safe-link("true-strike", [_true strike_])
+- #safe-link("yoink", [_yoink_])
 
-=== 2 Aether
-- bane
-- burning hands
-- color spray
-- disguise self
-- expeditious retreat
-- faerie fire
-- false life
-- flash freeze
-- fog cloud
-- guiding bolt
-- hideous laughter
-- inflict wounds
-- shield
-- sleep
-- thunderwave
+=== 2 Aether 
+- #safe-link("bane", [_bane_])
+- #safe-link("burning-hands", [_burning hands_])
+- #safe-link("color-spray", [_color spray_])
+- #safe-link("disguise-self", [_disguise self_])
+- #safe-link("expeditious-retreat", [_expeditious retreat_])
+- #safe-link("faerie-fire", [_faerie fire_])
+- #safe-link("false-life", [_false life_])
+- #safe-link("flash-freeze", [_flash freeze_])
+- #safe-link("fog-cloud", [_fog cloud_])
+- #safe-link("guiding-bolt", [_guiding bolt_])
+- #safe-link("hideous-laughter", [_hideous laughter_])
+- #safe-link("inflict-wounds", [_inflict wounds_])
+- #safe-link("shield", [_shield_])
+- #safe-link("sleep", [_sleep_])
+- #safe-link("thunderwave", [_thunderwave_])
 
-=== 3 Aether
-- acid arrow
-- blur
-- darkness
-- enhance ability
-- enlarge reduce
-- flaming sphere
-- heat metal
-- invisibility
-- levitate
-- misty step
-- ray of enfeeblement
-- scorching ray
-- shatter
+=== 3 Aether 
+- #safe-link("acid-arrow", [_acid arrow_])
+- #safe-link("blur", [_blur_])
+- #safe-link("darkness", [_darkness_])
+- #safe-link("enhance-ability", [_enhance ability_])
+- #safe-link("enlarge-reduce", [_enlarge reduce_])
+- #safe-link("flaming-sphere", [_flaming sphere_])
+- #safe-link("heat-metal", [_heat metal_])
+- #safe-link("invisibility", [_invisibility_])
+- #safe-link("levitate", [_levitate_])
+- #safe-link("misty-step", [_misty step_])
+- #safe-link("ray-of-enfeeblement", [_ray of enfeeblement_])
+- #safe-link("scorching-ray", [_scorching ray_])
+- #safe-link("shatter", [_shatter_])
 
-=== 4 Aether
-- arcane binding
-- vampiric touch
+=== 4 Aether 
+- #safe-link("arcane-binding", [_arcane binding_])
+- #safe-link("vampiric-touch", [_vampiric touch_])
 
-=== 5 Aether
-- bestow curse
-- blindness deafness
-- blink
-- fear
-- fireball
-- hypnotic pattern
-- slow
-- stinking cloud
+=== 5 Aether 
+- #safe-link("bestow-curse", [_bestow curse_])
+- #safe-link("blindness-deafness", [_blindness deafness_])
+- #safe-link("blink", [_blink_])
+- #safe-link("fear", [_fear_])
+- #safe-link("fireball", [_fireball_])
+- #safe-link("hypnotic-pattern", [_hypnotic pattern_])
+- #safe-link("slow", [_slow_])
+- #safe-link("stinking-cloud", [_stinking cloud_])
 
-=== 6 Aether
-- blight
+=== 6 Aether 
+- #safe-link("blight", [_blight_])
 
-=== 8 Aether
-- arcane eye
-- banishment
-- black tentacles
-- confusion
-- dimension door
-- dominate beast
-- phantasmal killer
+=== 8 Aether 
+- #safe-link("arcane-eye", [_arcane eye_])
+- #safe-link("banishment", [_banishment_])
+- #safe-link("black-tentacles", [_black tentacles_])
+- #safe-link("confusion", [_confusion_])
+- #safe-link("dimension-door", [_dimension door_])
+- #safe-link("dominate-unthinking", [_dominate unthinking_])
+- #safe-link("phantasmal-killer", [_phantasmal killer_])
 
-=== 10 Aether
-- antilife shell
-- cone of cold
+=== 10 Aether 
+- #safe-link("antilife-shell", [_antilife shell_])
+- #safe-link("cone-of-cold", [_cone of cold_])
 
-=== 12 Aether
-- contagion
-- mislead
-- telekinesis
+=== 12 Aether 
+- #safe-link("contagion", [_contagion_])
+- #safe-link("mislead", [_mislead_])
+- #safe-link("telekinesis", [_telekinesis_])
 ]
 
-= NIH Classes: Spellcasters
+= NIH Classes: Spellcasters <spellcasting-classes>
 
 The full spell-casters (often abbreviated as casters) are those classes whose primary interactions with the game are spells and other magical effects. They tend to be much less capable with weapons and wear much lighter armor if they wear armor at all, as their magic is their primary defense. They have much less stamina than even the hybrid classes, but much more aether and much higher aether limits. Compared to martials, they are better at support and imposing conditions and dealing with large numbers of creatures, but tend to be more frail and not as good against single big targets.
 
-== Summary of Spellcasting Classes
+== Summary of Spellcasting Classes <summary-of-spellcasting-classes>
 The three main spell-casters are the arcanist, master of arcane magic (and the best damage dealers of the three), the priest, blessed by the Ascendants to heal and harm, and the shaman, the servant of nature and the elements. The warlock is in this group as well, despite not being a conventional spell-caster because it relies heavily on its aether and can learn many spells.
 
-=== The Arcanist
+=== The Arcanist <the-arcanist>
 Wizard, sorcerer, mage, witch. Many names for the same thing. The masters of arcane magic, the arcanist. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They rarely wear armor; the slight movement restrictions it imposes interfere with their highly practiced motions.
 
 Arcanists learn and cast spells via complex memory palaces, practices, meditation, and other intellectual processes. Because of this, they can modify their spells in ways most cannot. Some arcanists have more intuitive grasp of their magics than those who must learn everything from books or teachers, but they in turn struggle to control the often wild power which causes stress on their bodies.
 
 Arcanists tend to be frailer than most, and not very good at protecting or supporting their allies. Instead, they're quite good at both dealing damage (especially to groups of enemies) and hampering the abilities of foes to do the party harm. Most of their strength is in their spells, so choosing the right spells to cast is how an arcanist excels.
 
-=== The Priest
+=== The Priest <the-priest>
 Priests draw their power from the Ascendants: the gods, powerful angels, elemental lords, and mortals who have transcended mortality through the worship of their fellows. The priest's power is not their own; they are the channels for a superior power. Priests who channel the power of the true gods are often called clerics, even if they belong to no particular religion.
 
 Priests rarely are the best at destroying enemies directly or even weakening them. Instead, they are the paragons at supporting allies, healing their wounds and bolstering their efforts. Slightly tougher than the arcanist (by default), they tend to sit in the middle: close enough to the front-line to affect them but far enough to not draw the majority of the attention. They do better against the undead and fiends, which react badly to the priest channeling divine power.
 
-=== The Shaman
+=== The Shaman <the-shaman>
 The shaman is the pure devotee of the primal powers, the spirits of nature and the elements. They call on elemental forces to create Manifest Zones to blast their foes and hamper them while aiding allies.
 
 Not particularly suited to front-line assault or direct blasting, they specialize in controlling and hampering enemies and secondarily in supporting allies through healing and other means. Not as capable against fiends and the undead as priests, but well suited to most wilderness adventures.
 
-=== The Warlock
+=== The Warlock <the-warlock>
 Warlocks gain power by cheating. Unlike the arcanist who studies and meditates or the priest who must have faith, the warlock has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the warlock's soul, shoving in unearned power. Each warlock is different, but they all learn the ability to shape raw aether into blasts.
 
 Warlocks are a bit of an odd duck as classes go. They are the most flexible at build time, with options ranging from going all-in on spells (chosen from any list) to being a magical archer to being a sneaky wielder of darkness. Of all the classes, they are the only ones who can summon familiars. However, once built, they tend to focus on those few capabilities. Difficult to build, but easy to play (especially compared to an arcanist, for whom selecting the right spell at the right time is the difference between success and failure).
@@ -3168,7 +3143,7 @@ Warlocks are a bit of an odd duck as classes go. They are the most flexible at b
 "Warlock ", "CHA", "flexible"
 )
 
-= Arcanist
+= Arcanist <arcanist>
 
 Wizard, sorcerer, mage, witch. Many names for the same thing. The masters of arcane magic, the arcanist. Mastering this unmediated magical ability is a long and arduous process that leaves little time for other practices and leaves the user more frail than those who spend their time training their bodies. This does not mean that arcanists are weak, but their strength is in their magic rather than their arms. They rarely wear armor, as the slight restrictions interfere with their highly practiced motions.
 
@@ -3220,7 +3195,7 @@ Whenever an ability from this class forces someone to make a saving throw agains
 
 #align(center)[DC = 8 + your Intelligence modifier + your proficiency bonus]
 
-== Spellcasting
+== Spellcasting <spellcasting>
 
 You have acquired a talent for arcane magic. The art of weaving patterns in aether that change the world around you.
 
@@ -3277,74 +3252,74 @@ You can use an arcane focus as a spellcasting focus for your arcanist spells.
 
 You learn a common incantation (see Incantations for the list) of your choice. When you reach 5th level, you learn an uncommon incantation of your choice, and at 11th level you learn a rare incantation of your choice. You can cast any incantation you learned from this feature without needing a Ritual Scroll in hand.
 
-== Arcane Approach
+== Arcane Approach <arcane-approach>
 
 Choose a arcane Approach, which describes the source of your magical training. Three such Approaches, Awakened Mage, Book Mage, and Chosen Mage, are detailed at the end of the class description.
 
 Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
-== Font of Magic
+== Font of Magic <font-of-magic>
 
 At 2nd level, you tap into a deep wellspring of magic within yourself. When you finish a short rest, you can recover aether equal to your arcanist level, rounded up. Once you use this feature, you can't use it again until you finish a long rest.
 
-== Metamagic
+== Metamagic <metamagic>
 
 At 3rd level, you gain the ability to twist your spells to suit your needs. You learn two of the metamagic below, learning an additional one at each of levels 6, 9, 12, 15, and 19. Each time you learn a new metamagic, you can also trade out one you know for a different one from the list.
 
 You can use only one Metamagic option on a spell when you cast it, unless otherwise noted. Once you start learning Legendary Effects, you can apply metamagic effects to those as well, but the cost is doubled.
 
-=== Careful Spell
+=== Careful Spell <careful-spell>
 
 When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 AET and choose a number of those creatures up to your Intelligence modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell. If the spell forces multiple saving throws (such as remaining in an affected area), this protection only applies to the first saving throw. If the spell deals half damage on a successful saving throw, the chosen creature takes no damage.
 
-=== Distant Spell
+=== Distant Spell <distant-spell>
 
 When you cast a spell that has a range of 5 feet or greater, you can spend 1 AET to double the range of the spell.
 
 When you cast a spell that has a range of touch, you can spend 1 AET to make the range of the spell 30 feet.
 
-=== Empowered Spell
+=== Empowered Spell <empowered-spell>
 
 When you roll damage for a spell, you can spend 1 AET replace the result with the average value.
 
 You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
 
-=== Extended Spell
+=== Extended Spell <extended-spell>
 
 When you cast a spell that has a duration of 1 minute or longer, you can spend 1 AET to double its duration, to a maximum duration of 24 hours.
 
-=== Heightened Spell
+=== Heightened Spell <heightened-spell>
 
 When you cast a spell that forces a creature to make a saving throw to resist or remove its effects, you can spend 3 AETs to give one target of the spell disadvantage on its saving throws made against the spell.
 
-=== Quickened Spell
+=== Quickened Spell <quickened-spell>
 
 When you cast a spell that has a casting time of 1 action, you can spend 2 AET to change the casting time to 1 bonus action for this casting. Remember that you can only spend aether on a single action each turn.
 
-=== Reshape Spell
+=== Reshape Spell <reshape-spell>
 When you cast a spell that affects an area, you can spend 1 or more AET to change the shape of the spell. Choose one of the following.
 
 - Increase the area of the spell. Increasing the radius of a spherical or circular effect (including a cylinder) costs 2 AET per 5 ft increase. Increasing the length of a line effect or a cone costs 1 AET per 5 ft increase.
 - Exclude one or more 5 ft cubes from the area of effect. This costs 1 AET per 2 cubes excluded and the area affected by the spell must remain contiguous. You cannot, for example, cut a line effect into multiple separate segments using this metamagic.
 - Concentrate the effect. This reduces the primary dimension (radius or length) of the spell to 1/2 of its original value (a 20 ft radius becomes a 10 ft radius, etc), but targets have disadvantage on the saving throw. This only affects spells that affect all creatures or objects in an area. This costs 4 AET.
 
-=== Subtle Spell
+=== Subtle Spell <subtle-spell>
 
 When you cast a spell, you can spend 1 AET to cast it without any somatic or verbal components. Spells affected by this metamagic cannot be detected during casting unless they have a material component.
 
-=== Twinned Spell
+=== Twinned Spell <twinned-spell>
 
 When you cast a spell that targets only one creature and doesn't have a range of self, you can spend an amount of AET equal to 1/2 the spell's cost to target a second creature in range with the same spell (1 AET if the spell is a cantrip).
 
 To be eligible, a spell must be incapable of targeting or directly affecting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost and produce flame are. Secondary effects, such as being hit by the bonus attack granted by haste do not count as directly affecting.
 
-== Ability Score Improvement
+== Ability Score Improvement <arcanist-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you cannot increase an ability score beyond +5 with this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Practiced Aether Manipulation
+== Practiced Aether Manipulation <practiced-aether-manipulation>
 At 5th level you learn one of the abilities below.
 #flush-block[
 - *Aetheric Backlash.* When you lose concentration on a spell due to damage from a creature, you can use your reaction and expend 2 AET to cause the creature who dealt that damage to take psychic damage equal to your proficiency bonus times your Intelligence modifier.
@@ -3354,205 +3329,205 @@ At 5th level you learn one of the abilities below.
 ]
 
 
-== Disruption
+== Disruption <disruption>
 
 Starting at 7th level, you've learned to disrupt aether weaving while it is still forming. As a reaction when a creature you can see casts a spell or uses a magical ability within 60 feet of you, you can expend 6 AET to force them to make an Intelligence saving throw against your spell save DC. On a failed save, the ability or spell has no effect but any limited uses and the action are expended.
 
-== Arcane Backlash
+== Arcane Backlash <arcane-backlash>
 
 Starting at 10th level, your Disruption ability now causes psychic damage equal to your level to creatures that fail the saving throw or half as much to those that succeed. This damage forces Concentration saving throws if the creature is concentrating on an effect.
 
-== Dual Metamagic
+== Dual Metamagic <dual-metamagic>
 
 Starting at 11th level, you can use two different metamagic effects on any individual spell as long as their effects are compatible. Legendary effects are still limited to one metamagic.
 
-== Arcane Secrets
+== Arcane Secrets <arcane-secrets>
 Starting at 13th level, you begin learning Legendary Effects. Pick one Legendary Effect that has the tags *Arcane* or *General* as well as *Lesser*. You can pick another with these labels at level 15.
 
-== Supreme Arcane Secrets
+== Supreme Arcane Secrets <supreme-arcane-secrets>
 At 17th level you learn an even greater Legendary Effect. Pick one Legendary Effect that has the tags *Arcane* or *General*. You can pick another with one of these labels at level 19.
 
-== Legendary Metamagic
+== Legendary Metamagic <legendary-metamagic>
 At 20th level, you can apply any single metamagic to a use of a Legendary Effect or spell without expending AET. Once you do this, you cannot do it again until you complete a long or short rest.
 
-= Arcane Approaches
+= Arcane Approaches <arcane-approaches>
 
 Each arcanist approaches things slightly differently, but there are decided similarities in how they gained and further their mastery of arcane power. These are called Arcane Approaches. Two are presented here---that of the Awakened Mage and that of the Book Mage, representing two polar opposites
 
-== Awakened Mage
+== Awakened Mage <awakened-mage>
 Awakened mages come into their power naturally, without substantial official training. Their power flows from within, on its own, but requires self-mastery and will to control. This gives them larger reserves of power, at the cost of bodily stress. Most Awakened do not come from families known for their arcane prowess---it seems to spring up seemingly at random.
 
-=== Extra Training
+=== Extra Training <extra-training>
 Since you didn't have to spend time in your early years mastering your magic, you have picked up other tricks. You gain proficiency with light armor and one martial weapon of your choice. You can cast spells while wearing light armor.
 
-=== Mind over Matter
+=== Mind over Matter <mind-over-matter>
 Starting at 6th level, you've learned to fuel your metamagic with your bodily reserves. You can expend STA instead of AET to pay the cost of adding metamagic to your spells. The total cost must still be within your aether limit.
 
-=== Limit Break
+=== Limit Break <limit-break>
 Starting at 14th level, when you use your Mind over Matter feature, you can add metamagic even if that would increase the total cost above your aether limit. Once you do so once, you cannot use this feature again until you finish a long rest or unless you accept a level of exhaustion after casting the spell.
 
-=== Sorcerous Restoration
+=== Sorcerous Restoration <sorcerous-restoration>
 Starting at 18th level, you no longer suffer exhaustion when using your Limit Break ability.
 
-== Book Mage
+== Book Mage <book-mage>
 Book mages must laboriously learn their power through mental training and meditation. They generally apprentice to other book mages for years before they cast their first spell. In return, they can offload some of their spells into written form, enabling them to prepare a much larger array of spells. While many have native talent, their talent is not what grants them power. In principle, almost anyone could become a Book Mage, but the effort and dedication required is only reachable by a few.
 
-=== Arcane Learning
+=== Arcane Learning <arcane-learning>
 You gain proficiency in Arcana. If you already have proficiency, you gain expertise instead.
 
 
-=== Written Magic
+=== Written Magic <written-magic>
 As part of your training, you have assembled a spellbook that holds records of your spells and invested part of your self into it. This book is immune to all damage while it is on your person and cannot be separated from you if you are conscious. Your book counts as a spell focus for your spells.
 
 While you are preparing spells and have the book open in front of you, you can invest a number of spells equal to your proficiency bonus into the book. These spells no longer count against your prepared spells limit, but you can only cast them with the book in one hand.
 
-=== Focused Metamagic
+=== Focused Metamagic <focused-metamagic>
 Starting at 6th level, you have specialized in one particular metamagic. Choose one metamagic you know. Its cost decreases by 1 AET. If this reduces its cost to 0 AET, you can apply a second metamagic alongside this focused metamagic.
 
-=== Extended Legendary Magic
+=== Extended Legendary Magic <extended-legendary-magic>
 Starting at 14th level, you learn an additional Legendary effect of a level you could learn at this level using your Arcane Secrets ability.
 
-=== Repeated Legendary Magic
+=== Repeated Legendary Magic <repeated-legendary-magic>
 Starting at 18th level, you can use any of your regular Legendary Effects twice per long rest instead of once. Once you cast the same Legendary Effect twice, you cannot cast any others twice until you finish a long rest.
 
 #breakoutbox("Spellbooks and You")[
 The basic assumption is that the spellbook is special. The form it takes is up to you and has no mechanical effect, but the default is that it is a book. To lose it, you have to have it out of your possession. Generally, this shouldn't happen under normal conditions. If you're captured/imprisoned, then your spellbook may be taken.
 ]
 
-== Chosen Mage
+== Chosen Mage <chosen-mage>
 The Chosen are those whose talent stems from an external source. Unlike a warlock, they didn't consciously make a pact with this power; it may be from familial exposure to/connection to some source of power (such as an ancient dragon or an artifact or an ascendant), or it may be from a bargain made by someone else (such as a parent who pledged their firstborn to an ascendant). Despite the spark being internal, even the chosen need to study and practice; only through diligence is their native power refined. Compared to an Awoken mage, the Chosen are more genetically gifted, while the Awoken are the sports. Most Chosen grew up in a family of mages or among those for whom arcane power is normal. Compared to the Book mages, the Chosen are more intuitive in their approach, leading to less innate theoretical knowledge but often equal or better proficiency at magic itself.
 
-=== Academic Talent
+=== Academic Talent <academic-talent>
 Your innate gift for magic gave you time to branch out academically. You gain proficiency in your choice of Arcana, History, Nature, Religion, or an additional language.
 
-=== Arcane Talent
+=== Arcane Talent <arcane-talent>
 Your innate gift for magic lets you understand spells from outside your own tradition, even if you can't explain all the details. When you pick this approach and again when you gain a subclass feature from it after first level, pick a spell from the spellblade, shaman, or priest list. The chosen spell must have a base cost that is less than or equal to your aether limit when you choose it. It becomes an arcanist spell for you and you can prepare it and cast it normally, using Intelligence as your spellcasting modifier.
 
-=== Extra Training
+=== Extra Training <arcanist-extra-training>
 Starting at 6th level, your talent has given you additional time to practice other skills. You learn a skill trick that you otherwise qualify for.
 
-=== Reliable Magic
+=== Reliable Magic <reliable-magic>
 Starting at 14th level, your non-spell abilities are more reliable. When you make a saving throw with your Flicker ability, you do so at advantage. Additionally, when another creature makes a saving throw against your Disruption ability, they do so at disadvantage.
 
-=== Broadened Legendary Magic
+=== Broadened Legendary Magic <broadened-legendary-magic>
 At 18th level, your Arcane Talent extends even to legendary effects. Choose either Primal or Divine. When you learn a new legendary effect, you can choose a legendary effect with your chosen tag instead of only Arcane or General, as long as it is also Lesser.
 
 When you gain this feature, you can replace one legendary effect you know with one chosen from your chosen tag.
 
 
-== Arcanist Spell List
+== Arcanist Spell List <arcanist-spell-list>
 The Arcanist Spell List table contains a list of the spells available to all arcanists, ordered by aether cost.
 #flush-block[
-=== 0 Aether
-- acid burst
-- dancing lights
-- grave touch
-- mage hand
-- message
-- minor illusion
-- prestidigitation
-- produce flame
-- ray of frost
-- shocking grasp
+=== 0 Aether 
+- #safe-link("acid-burst", [_acid burst_])
+- #safe-link("dancing-lights", [_dancing lights_])
+- #safe-link("grave-touch", [_grave touch_])
+- #safe-link("mage-hand", [_mage hand_])
+- #safe-link("message", [_message_])
+- #safe-link("minor-illusion", [_minor illusion_])
+- #safe-link("prestidigitation", [_prestidigitation_])
+- #safe-link("produce-flame", [_produce flame_])
+- #safe-link("ray-of-frost", [_ray of frost_])
+- #safe-link("shocking-grasp", [_shocking grasp_])
 	
-=== 1 Aether
-- yoink
+=== 1 Aether 
+- #safe-link("yoink", [_yoink_])
 	
-=== 2 Aether
-- burning hands
-- color spray
-- disguise self
-- expeditious retreat
-- false life
-- feather fall
-- flash freeze
-- fog cloud
-- grease
-- mage armor
-- magic missile
-- shield
-- silent image
-- sleep
-- thunderwave
+=== 2 Aether 
+- #safe-link("burning-hands", [_burning hands_])
+- #safe-link("color-spray", [_color spray_])
+- #safe-link("disguise-self", [_disguise self_])
+- #safe-link("expeditious-retreat", [_expeditious retreat_])
+- #safe-link("false-life", [_false life_])
+- #safe-link("feather-fall", [_feather fall_])
+- #safe-link("flash-freeze", [_flash freeze_])
+- #safe-link("fog-cloud", [_fog cloud_])
+- #safe-link("grease", [_grease_])
+- #safe-link("mage-armor", [_mage armor_])
+- #safe-link("magic-missile", [_magic missile_])
+- #safe-link("shield", [_shield_])
+- #safe-link("silent-image", [_silent image_])
+- #safe-link("sleep", [_sleep_])
+- #safe-link("thunderwave", [_thunderwave_])
 	
-=== 3 Aether
-- acid arrow
-- alter self
-- blindness deafness
-- blur
-- darkness
-- detect thoughts
-- enlarge reduce
-- invisibility
-- levitate
-- mirror image
-- misty step
-- ray of enfeeblement
-- scorching ray
-- shatter
-- web
+=== 3 Aether 
+- #safe-link("acid-arrow", [_acid arrow_])
+- #safe-link("alter-self", [_alter self_])
+- #safe-link("blindness-deafness", [_blindness deafness_])
+- #safe-link("blur", [_blur_])
+- #safe-link("darkness", [_darkness_])
+- #safe-link("detect-thoughts", [_detect thoughts_])
+- #safe-link("enlarge-reduce", [_enlarge reduce_])
+- #safe-link("invisibility", [_invisibility_])
+- #safe-link("levitate", [_levitate_])
+- #safe-link("mirror-image", [_mirror image_])
+- #safe-link("misty-step", [_misty step_])
+- #safe-link("ray-of-enfeeblement", [_ray of enfeeblement_])
+- #safe-link("scorching-ray", [_scorching ray_])
+- #safe-link("shatter", [_shatter_])
+- #safe-link("web", [_web_])
 	
-=== 4 Aether
-- arcane binding
-- vampiric touch
+=== 4 Aether 
+- #safe-link("arcane-binding", [_arcane binding_])
+- #safe-link("vampiric-touch", [_vampiric touch_])
 	
-=== 5 Aether
-- aetheric barrier
-- blink
-- fear
-- fireball
-- hallucinatory terrain
-- haste
-- hypnotic pattern
-- lightning bolt
-- major image
-- protection from energy
-- slow
-- stinking cloud
-- unbind
+=== 5 Aether 
+- #safe-link("aetheric-barrier", [_aetheric barrier_])
+- #safe-link("blink", [_blink_])
+- #safe-link("fear", [_fear_])
+- #safe-link("fireball", [_fireball_])
+- #safe-link("hallucinatory-terrain", [_hallucinatory terrain_])
+- #safe-link("haste", [_haste_])
+- #safe-link("hypnotic-pattern", [_hypnotic pattern_])
+- #safe-link("lightning-bolt", [_lightning bolt_])
+- #safe-link("major-image", [_major image_])
+- #safe-link("protection-from-energy", [_protection from energy_])
+- #safe-link("slow", [_slow_])
+- #safe-link("stinking-cloud", [_stinking cloud_])
+- #safe-link("unbind", [_unbind_])
 	
-=== 6 Aether
-- blight
+=== 6 Aether 
+- #safe-link("blight", [_blight_])
 	
-=== 7 Aether
-- ice storm
+=== 7 Aether 
+- #safe-link("ice-storm", [_ice storm_])
 	
-=== 8 Aether
-- arcane eye
-- black tentacles
-- caustic torrent
-- confusion
-- conjure mephits
-- dimension door
-- faithful hound
-- greater invisibility
-- hallucinatory terrain
-- phantasmal killer
-- wall of fire
+=== 8 Aether 
+- #safe-link("arcane-eye", [_arcane eye_])
+- #safe-link("black-tentacles", [_black tentacles_])
+- #safe-link("caustic-torrent", [_caustic torrent_])
+- #safe-link("confusion", [_confusion_])
+- #safe-link("conjure-mephits", [_conjure mephits_])
+- #safe-link("dimension-door", [_dimension door_])
+- #safe-link("faithful-hound", [_faithful hound_])
+- #safe-link("greater-invisibility", [_greater invisibility_])
+- #safe-link("hallucinatory-terrain", [_hallucinatory terrain_])
+- #safe-link("phantasmal-killer", [_phantasmal killer_])
+- #safe-link("wall-of-fire", [_wall of fire_])
 	
-=== 10 Aether
-- cone of cold
+=== 10 Aether 
+- #safe-link("cone-of-cold", [_cone of cold_])
 	
-=== 12 Aether
-- conjure elemental
-- mislead
-- move earth
-- passwall
-- telekinesis
-- wall of ice
+=== 12 Aether 
+- #safe-link("conjure-elemental", [_conjure elemental_])
+- #safe-link("mislead", [_mislead_])
+- #safe-link("move-earth", [_move earth_])
+- #safe-link("passwall", [_passwall_])
+- #safe-link("telekinesis", [_telekinesis_])
+- #safe-link("wall-of-ice", [_wall of ice_])
 	
-=== 13 Aether
-- chain lightning
+=== 13 Aether 
+- #safe-link("chain-lightning", [_chain lightning_])
 	
-=== 14 Aether
-- cloudkill
+=== 14 Aether 
+- #safe-link("cloudkill", [_cloudkill_])
 	
-=== 15 Aether
-- wall of force
+=== 15 Aether 
+- #safe-link("wall-of-force", [_wall of force_])
 ]
 
 
-= Priest
+= Priest <priest>
 
 Priests draw their power from the Ascendants: the gods, powerful angels, elemental lords, and mortals who have transcended mortality through the worship of their fellows. The priest's power is not their own; they are the channels for a superior power. Priests who channel the power of the true gods are often called clerics, even if they belong to no particular religion.
 
@@ -3603,7 +3578,7 @@ Whenever an ability from this class forces someone to make a saving throw agains
 
 #align(center)[DC = 8 + your Wisdom modifier + your proficiency bonus]
 
-== Spellcasting
+== Spellcasting <priest-spellcasting>
 
 As a conduit for divine power, you can cast priest spells.
 
@@ -3660,11 +3635,11 @@ You can use a holy symbol (see equipment) as a spellcasting focus for your pries
 === Armored Caster
 You can cast your priest spells while wearing light armor and wielding a shield. You can emblazon your holy symbol on your shield; if you do so, you do not need a free hand to manipulate it as long as the symbol is visible.
 
-== Divine Domain
+== Divine Domain <divine-domain>
 
 Choose one domain related to your deity: Battle, Knowledge, or Life. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
 
-== Miracles
+== Miracles <miracles>
 
 At 2nd level, your relationship with your Ascended patron has grown to the point that you can make impromptu pleas for direct assistance and have them answered based on your faith. As an action, you state the nature of the assistance you desire and roll a d20 and add your Wisdom modifier. This is not an ability check and cannot be modified by any other feature. The result determines the outcome:
 
@@ -3679,29 +3654,29 @@ At 2nd level, your relationship with your Ascended patron has grown to the point
 
 Once you use this feature once, you cannot use it again until you complete a long rest. The number of uses per day increases as shown on the Priest table.
 
-== Channel Divine Power
+== Channel Divine Power <channel-divine-power>
 Starting at 3rd level, you can channel divine power more directly, creating magical effects not possible through normal spells. Every priest gains the options to channel healing energy or to channel destructive energy (outlined below). Your Domain may grant additional options for this. Channeling divine power requires expending aether and is limited by your aether limit as if it was a spell, but cannot be countered or dispelled by non-legendary effects.
 
 *Channel Healing Energy:* As an action, you expend at least 2 aether to radiate positive energy. For every two AET spent, all creatures other than demons, undead, or constructs within 10 feet of you regain 1d6 hit points. Constructs are unaffected by this ability; demons and undead must make a Constitution saving throw against your spell save DC, taking 1d6 radiant damage per aether spent on a failed save or half as much on a success.
 
 *Channel Destructive Energy:* As an action, you expend at least 1 aether to radiate destructive energy. For every AET spent, all creatures other than demons or undead within 10 feet of you must make a Constitution saving throw against your spell save DC, taking 1d6 radiant damage per aether spent on a failed save or half as much on a success. Demons and undead are healed for 1d6 hit points per aether spent.
 
-== Ability Score Improvement
+== Ability Score Improvement <ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1.  As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Divine Overflow
+== Divine Overflow <divine-overflow>
 
 Starting at 5th level, the energy you expend on your spells and other magical effects overflows, allowing you to create additional effects. Every priest can use the Castigation overflow effect; your Domain grants you an additional option. Once you use this feature once, you cannot use it again until you finish a short or long rest.
 
 *Castigation:* When you expend AET to heal one or more creatures, you can cause a creature you can see within 60 feet of you to take radiant damage equal to half your level.
 
-== Improved Divine Channel
+== Improved Divine Channel <improved-divine-channel>
 Starting at 7th level, when you use your Divine Channel ability, you add your Wisdom modifier to the damage or healing done.
 
-== Improved Miracles
+== Improved Miracles <improved-miracles>
 Starting at 7th level, the outcomes of your miracle uses have improved. Use the table below instead of the previous one.
 
 #dndtab("Improved Miracles",
@@ -3714,25 +3689,25 @@ Starting at 7th level, the outcomes of your miracle uses have improved. Use the 
 )
 
 
-== Divine Strike
+== Divine Strike <divine-strike>
 
 At 8th level, you gain the ability to infuse your damaging strikes and spells with divine energy. Once on each of your turns when you hit a creature with an attack or spell that deals damage, you can cause the attack or spell to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 
-== Improved Divine Overflow
+== Improved Divine Overflow <improved-divine-overflow>
 
 Starting at 10th level, you can use your Divine Overflow options twice per long or short rest instead of once.
 
-== Legendary Effects
+== Legendary Effects <priest-legendary-effects>
 At 11th, 13th, and 15th levels, you can learn one Legendary effect tagged with Divine or Generic that is also tagged as Lesser.
 
 At 17th and 18th levels, you can learn one Legendary effect tagged with Divine or Generic whether it is tagged Lesser or Greater.
 
 You can use each Legendary effect once per long rest, and your saving throw DC for these effects is your spell save DC. When you learn a new legendary effect, you can also swap out one legendary effect you know for a different one.
 
-== Radiating Overflow
+== Radiating Overflow <radiating-overflow>
 Starting at 14th level, when you use your Divine Overflow ability, you can affect a number of creatures equal to half the aether expended instead of one. All creatures must be within 60 feet of you.
 
-== Supreme Miracles
+== Supreme Miracles <supreme-miracles>
 At level 20, you can perform greater miracles. Use the table below to determine the outcome of your miracles. You can only gain the benefit of rolling a 25 on the check once per day; any other times that result comes up, treat it as a 24.
 
 #dndtab("Supreme Miracles", 
@@ -3745,39 +3720,39 @@ At level 20, you can perform greater miracles. Use the table below to determine 
 "25+ ", "Any spell or legendary effect, chosen by you, takes effect."
 )
 
-= Priest Domains
+= Priest Domains <priest-domains>
 
-== Battle Domain
+== Battle Domain <battle-domain>
 Priests who focus on the domain of Battle are the militants of the religious world. They are most associated with Tor Elan and Roel Kor, but many gods and ascendants have militant orders. Of the gods, only Peor-fala is truly incompatible with the Battle domain. Unlike an Oathbound, battle priests are supporting players rather than front-line warriors.
 
-=== Extra Proficiencies
+=== Extra Proficiencies <extra-proficiencies>
 When you choose this domain at level 1, you gain proficiency with medium armor and shields and can cast priest spells while wearing medium armor and wielding a shield.
 
-=== Miracle: Punish Heretics
+=== Miracle: Punish Heretics <miracle-punish-heretics>
 Starting at 2nd level, when you use your Miracles feature to plead for an effect that deals damage or imposes a condition on an enemy, the result of the Miracle check is increased by one step.
 
-=== Divine Overflow: Bolster Ally
+=== Divine Overflow: Bolster Ally <divine-overflow-bolster-ally>
 Starting at 6th level, you can use your Divine Overflow ability to enhance the attacks of others. When you expend 1 or more aether to cast a spell that targets an enemy, you allow an ally you can see to use their reaction and expend 3 STA to make a weapon attack. If the weapon attack targets the same creature as the spell, the attack is made at advantage.
 
-=== Divine Channel: Expose Weakness
+=== Divine Channel: Expose Weakness <divine-channel-expose-weakness>
 Starting at 9th level, you can use your Channel Divine Power ability to target one or more creatures you can see within 30 feet. Spend 2+ AET and target one creature per 2 expended AET. Targets must make a Wisdom saving throw against your spell save DC. On a failed save, a target gains vulnerability to one damage type of your choice until the beginning of your next turn.
 
-=== Warleader
+=== Warleader <warleader>
 Starting at 17th level, when an ally within 60 feet rolls a damage roll, you can use your reaction to allow them to reroll the damage and take whichever result they choose.
 
-=== Ascendant Wrath
+=== Ascendant Wrath <ascendant-wrath>
 Additionally at 17th level, you learn the greater Legendary Effect holy aura. If you already know this legendary effect, choose another legendary effect with the tags Divine and Greater.
 
-== Knowledge Domain
+== Knowledge Domain <knowledge-domain>
 
 The Knowledge Domain focuses on learning and disseminating information. It is most associated with Lon-Ka and Yogg-Maggus, but Korokonolkom, Kela Loran, and the Hollow King are all suitable patrons. Knowledge priests are generalists, capable of utilizing their knowledge in support of the party and helping other party members overcome obstacles. Less healing focused than life priests and less offensively-driven than battle priests, knowledge priests tend to aid allies and hinder opponents in battle.
 
-=== Extra Proficiencies
+=== Extra Proficiencies <knowledge-extra-proficiencies>
 At 1st level when you pick this domain, you gain proficiency in two skills and one tool of your choice.
 
 When you reach 4th and 12th levels, you can pick an additional skill trick associated with one skill or tool proficiency gained by this feature that you qualify for.
 
-=== Miracle: Reveal the Hidden
+=== Miracle: Reveal the Hidden <miracle-reveal-the-hidden>
 Starting at 2nd level, when you use your Miracles feature, you can plead for knowledge and guidance. If you do so and roll at least a 10 on the Miracle check, choose one of the following benefits:
 
 - You automatically succeed on any Wisdom (Perception) or Intelligence (Investigation) checks made to reveal hidden objects in your environment, including trap or door triggers. This lasts for 10 minutes.
@@ -3785,160 +3760,158 @@ Starting at 2nd level, when you use your Miracles feature, you can plead for kno
 - You understand all languages and do not need to make an Intelligence check to decode coded information. This includes information hidden by illusion spells or effects. This lasts for 10 minutes.
 
 
-=== Divine Overflow: Uncover Weakness
+=== Divine Overflow: Uncover Weakness <divine-overflow-uncover-weakness>
 Starting at 6th level, you can use your Divine Overflow to reveal the weaknesses of enemies to your allies. When you expend 1 or more AET and damage an enemy with a spell or effect, the next attack against the target has advantage. If you damage multiple enemies with the same effect, only one of those targets (of your choice) is affected by this.
 
-=== Channel Divine Power: Bestow Competence
+=== Channel Divine Power: Bestow Competence <channel-divine-power-bestow-competence>
 Starting at 9th level, you can use your aether to assist your allies. As an action, expend 1 or more AET and choose a number of creatures you can see up to the amount expended. All creatures targeted must be within 60 feet of you. Targeted creatures can take the Focus or Exert actions once within the next 10 minutes without expending any resources. If they do so, they make the relevant check or saving throw at advantage.
 
-=== Flexible Legend
+=== Flexible Legend <flexible-legend>
 Starting at 17th level, you can choose your Legendary effects from the entire list. In addition, you can use your action to switch a legendary effect you know but have not expended that day for a new one of your choice. Once you use this portion of the feature, you cannot do so again until you finish a long rest.
 
 When you reach 17th level, you can exchange any number of Legendary effects you know for others you could learn at that level instead of only one.
 
-== Life Domain
+== Life Domain <life-domain>
 
 The Life Domain focuses on bringing health and purity to those around them. Welcomed in all civilized areas, priests of the Life Domain are the core of most religions. The gods most associated with the domain are Aerielara, Sarapha, Melara, Peor-fala, and Sakara, but any of the Congregation except for the Hollow King, Yogg-Maggus, and Selesurala would be appropriate patrons.
 
-=== Medic
-At 1st level you learn the medic skill trick even though you do not meet the requirements.
+=== Medic <life-medic>
+At 1st level you learn the #safe-link("medic-trick", [Medic]) skill trick even though you do not meet the requirements.
 
-=== Disciple of Life
+=== Disciple of Life <disciple-of-life>
 
 Starting at 1st level, your healing abilities are more effective. Whenever you use a spell or Channel Healing Power and expend 1 or more AET to restore hit points to a creature, the creature regains additional hit points equal to 2 + 1/2 the aether expended (rounded up).
 
-=== Miracle: Preserve Life
+=== Miracle: Preserve Life <miracle-preserve-life>
 
 Starting at 2nd level, when you use your Miracles ability to plead for healing for a bloodied creature, the result on the miracle check is increased by one step.
 
-=== Divine Overflow: Shielding Spell
+=== Divine Overflow: Shielding Spell <divine-overflow-shielding-spell>
 
 Beginning at 6th level, you can use your Divine Overflow ability to create a shield around allies. Whenever you cast a spell with total cost of 1 or more AET that targets an ally but does not restore hit points, you can grant the creature temporary hit points equal to 2 + the total aether cost of the spell. These temporary hit points last for one minute.
 
-=== Divine Channel: Panacea
-At 9th level, you can use your Channel Divine Power ability to remove conditions affecting your allies as an action by expending 5 AET. When you do so, a number of creatures up to your proficiency bonus within 30 feet of you are cured of all poisons and if they are under any of the charmed, frightened, stunned, blinded, or deafened conditions, that condition ends for the creature.
+=== Divine Channel: Panacea <divine-channel-panacea>
+At 9th level, you can use your Channel Divine Power ability to remove conditions affecting your allies as an action by expending 5 AET. When you do so, a number of creatures up to your proficiency bonus within 30 feet of you are cured of all poisons and if they are under any of the #safe-link("charmed", "charmed"), #safe-link("frightened", [frightened]), #safe-link("stunned", [stunned]), #safe-link("blinded", [blinded]), or #safe-link("deafened", [deafened]) conditions, that condition ends for the creature.
 
-=== Supreme Healing
+=== Supreme Healing <supreme-healing>
 
 Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
 
-== Priest Spell List
+== Priest Spell List <priest-spell-list>
 The Priest Spell List table contains a short summary of the spells available to all Priest, ordered by aether cost.
 
 #flush-block[
-=== 0 Aether
+=== 0 Aether 
 	
-- grave touch
-- guidance
-- light
-- message
-- resistance
-- searing light
-- shillelagh
-- thaumaturgy
+- #safe-link("grave-touch", [_grave touch_])
+- #safe-link("guidance", [_guidance_])
+- #safe-link("light", [_light_])
+- #safe-link("message", [_message_])
+- #safe-link("resistance", [_resistance_])
+- #safe-link("searing-light", [_searing light_])
+- #safe-link("shillelagh", [_shillelagh_])
+- #safe-link("thaumaturgy", [_thaumaturgy_])
 	
-=== 1 Aether
+=== 1 Aether 
 	
-- cure wounds
+- #safe-link("cure-wounds", [_cure wounds_])
 	
-=== 2 Aether
+=== 2 Aether 
 	
-- bane
-- bless
-- charm person
-- command
-- create or destroy water
-- feather fall
-- guiding bolt
-- healing word
-- heroism
-- inflict wounds
-- longstrider
-- jump
-- protection from otherworldly influence
-- retribution
-- sanctuary
-- shield of faith
+- #safe-link("bane", [_bane_])
+- #safe-link("bless", [_bless_])
+- #safe-link("charm-person", [_charm person_])
+- #safe-link("command", [_command_])
+- #safe-link("create-or-destroy-water", [_create or destroy water_])
+- #safe-link("feather-fall", [_feather fall_])
+- #safe-link("guiding-bolt", [_guiding bolt_])
+- #safe-link("healing-word", [_healing word_])
+- #safe-link("heroism", [_heroism_])
+- #safe-link("inflict-wounds", [_inflict wounds_])
+- #safe-link("longstrider", [_longstrider_])
+- #safe-link("jump", [_jump_])
+- #safe-link("protection-from-otherworldly-influence", [_protection from otherworldly influence_])
+- #safe-link("retribution", [_retribution_])
+- #safe-link("sanctuary", [_sanctuary_])
+- #safe-link("shield-of-faith", [_shield of faith_])
 	
-=== 3 Aether
+=== 3 Aether 
 	
-- aid
-- blindness deafness
-- calm emotions
-- darkvision
-- detect thoughts
-- enlarge reduce
-- find traps
-- invisibility
-- magic weapon
-- prayer of healing
-- protection from poison
-- see invisibility
-- silence
-- spiritual weapon
-- suggestion
-- warding bond
+- #safe-link("aid", [_aid_])
+- #safe-link("blindness-deafness", [_blindness deafness_])
+- #safe-link("calm-emotions", [_calm emotions_])
+- #safe-link("darkvision", [_darkvision_])
+- #safe-link("detect-thoughts", [_detect thoughts_])
+- #safe-link("enlarge-reduce", [_enlarge reduce_])
+- #safe-link("find-traps", [_find traps_])
+- #safe-link("invisibility", [_invisibility_])
+- #safe-link("magic-weapon", [_magic weapon_])
+- #safe-link("prayer-of-healing", [_prayer of healing_])
+- #safe-link("protection-from-poison", [_protection from poison_])
+- #safe-link("see-invisibility", [_see invisibility_])
+- #safe-link("silence", [_silence_])
+- #safe-link("spiritual-weapon", [_spiritual weapon_])
+- #safe-link("suggestion", [_suggestion_])
+- #safe-link("warding-bond", [_warding bond_])
 	
-=== 4 Aether
+=== 4 Aether 
 	
-- arcane binding
+- #safe-link("arcane-binding", [_arcane binding_])
 	
-=== 5 Aether
+=== 5 Aether 
 	
-- aetheric barrier
-- beacon of hope
-- bestow curse
-- clairvoyance
-- daylight
-- fear
-- haste
-- protection from energy
-- remove curse
-- revivify
-- unbind
-- wind wall
+- #safe-link("aetheric-barrier", [_aetheric barrier_])
+- #safe-link("beacon-of-hope", [_beacon of hope_])
+- #safe-link("bestow-curse", [_bestow curse_])
+- #safe-link("clairvoyance", [_clairvoyance_])
+- #safe-link("daylight", [_daylight_])
+- #safe-link("fear", [_fear_])
+- #safe-link("haste", [_haste_])
+- #safe-link("protection-from-energy", [_protection from energy_])
+- #safe-link("remove-curse", [_remove curse_])
+- #safe-link("revivify", [_revivify_])
+- #safe-link("unbind", [_unbind_])
+- #safe-link("wind-wall", [_wind wall_])
 	
-=== 8 Aether
+=== 8 Aether 
 	
-- banishment
-- confusion
-- control water
-- death ward
-- fire shield
-- freedom of movement
-- resilient sphere
-- spirit guardians
-- stone shape
-- stoneskin
-- wall of fire
+- #safe-link("banishment", [_banishment_])
+- #safe-link("confusion", [_confusion_])
+- #safe-link("control-water", [_control water_])
+- #safe-link("death-ward", [_death ward_])
+- #safe-link("fire-shield", [_fire shield_])
+- #safe-link("freedom-of-movement", [_freedom of movement_])
+- #safe-link("resilient-sphere", [_resilient sphere_])
+- #safe-link("spirit-guardians", [_spirit guardians_])
+- #safe-link("stone-shape", [_stone shape_])
+- #safe-link("stoneskin", [_stoneskin_])
+- #safe-link("wall-of-fire", [_wall of fire_])
 	
-=== 9 Aether
+=== 9 Aether 
 	
-- flame strike
-- mass cure wounds
+- #safe-link("flame-strike", [_flame strike_])
+- #safe-link("mass-cure-wounds", [_mass cure wounds_])
 	
-=== 12 Aether
+=== 12 Aether 
 	
-- contagion
-- dispel otherworldly influence
-- divine wrath
-- true seeing
-- wall of stone
+- #safe-link("contagion", [_contagion_])
+- #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])
+- #safe-link("divine-wrath", [_divine wrath_])
+- #safe-link("true-seeing", [_true seeing_])
+- #safe-link("wall-of-stone", [_wall of stone_])
 	
-=== 14 Aether
+=== 14 Aether 
 	
-- sunbeam
+- #safe-link("sunbeam", [_sunbeam_])
 	
-=== 15 Aether
+=== 15 Aether 
 	
-- blade barrier
+- #safe-link("blade-barrier", [_blade barrier_])
 ]
 
-= Shaman
+= Shaman <shaman>
 
-The shaman is the pure devotee of the primal powers, the spirits of nature and the elements. They call on elemental forces to create Manifest Zones to blast their foes and hamper them while aiding allies.
-
-Not particularly suited to front-line assault or direct blasting, they specialize in controlling and hampering enemies and secondarily in supporting allies through healing and other means.
+The shaman is the pure devotee of the ihimen, the spirits of nature and the elements. They call on elemental forces to create Manifest Zones to blast their foes and hamper them while aiding allies. Not particularly suited to front-line assault or direct blasting, they specialize in controlling and hampering enemies and secondarily in supporting allies through healing and other means.
 
 Subclasses:
 - Circle of the Elements is offensively-focused, wielding elements to hamper and damage enemies.
@@ -3978,7 +3951,7 @@ Whenever an ability from this class forces someone to make a saving throw agains
 
 #align(center)[DC = 8 + your Wisdom modifier + your proficiency bonus]
 
-== Spellcasting
+== Spellcasting <shaman-spellcasting>
 
 Drawing on the primal essence of nature itself, you can cast spells to shape that essence to your will.
 
@@ -4037,7 +4010,7 @@ You can cast your shaman spells while wearing light or medium armor. Shields sti
 "20th  ", "+6", "Rebirth", "4", "20", "10", "80", "17",
 )
 
-== Manifest Zones
+== Manifest Zones <manifest-zones>
 Shamans are ties between the planes. Their magic allows them to bring influences of the other planes into the Mortal, creating areas called Manifest Zones. Starting at level 2, you've learned to manifest the energy of one of the planes into your present one. As an action on your turn, you can manifest a zone you know at a point you can see within 60 ft. It persists for one minute or until you manifest another zone and affects an area of 10 ft in radius. Manifesting your zone requires spending 2 STA and 2 AET. Choose one of the following as your first known zone. You learn an additional zone at 5th, 9th and 15th level.
 
 === Manifest Zone: Air
@@ -4051,17 +4024,17 @@ For the duration of the zone, you can use your bonus action to heal one creature
 === Manifest Zone: Water
 For the duration of the zone, enemies that start their turn in the zone or enter it for the first time on a turn must make a Strength saving throw against your Spellcasting DC as they are encased by a watery shell. On a failed save, their speed is reduced to zero until they spend an action to break themselves out. Enemies that succeed can only move at half speed within the zone unless they succeed on a Dexterity saving throw against the same DC. On a failed Dexterity saving throw, they fall prone.
 
-== Shaman Circle
+== Shaman Circle <shaman-circle>
 
 At 3rd level, you choose to identify with a circle of shamans: the Circle of the Elements, the Circle of Fiery Renewal, or the Circle of the Spirit, all of which are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level.
 
-== Ability Score Improvement
+== Ability Score Improvement <shaman-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1, up to a maximum of +5.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Detonate Manifest Zone
+== Detonate Manifest Zone <detonate-manifest-zone>
 Starting at 5th level, you have learned to terminate the influence of a manifest zone in a burst of elemental energy. As a bonus action on your turn, you can end the duration of an existing manifest zone, causing an effect that depends on the type of zone active. Alternatively, if you manifest a new zone (either a different type of zone or change its location), you can cause the initial one to erupt before it disappears as part of that action.
 #flush-block[
 - *Air.* All creatures in the zone must make a Strength saving throw against your spell save DC. On a failed save, targets are pushed 10' in a direction of your choice (including vertically) and are knocked prone. On a success, they are only pushed 5' and not knocked prone.
@@ -4072,10 +4045,10 @@ Starting at 5th level, you have learned to terminate the influence of a manifest
 ]
 
 
-== Dual Zones
+== Dual Zones <dual-zones>
 Starting at 7th level, you can have two zones active at the same time, but the affected areas cannot overlap.
 
-== Internalized Elements
+== Internalized Elements <internalized-elements>
 Starting at 9th level, you can use an action and expend 3 STA to draw elemental energy from one of your known elemental zones into your own body without manifesting a zone. This counts as having a zone active, but affects only you based on which element you choose. You can only have one of these effects active at once and it lasts for 10 minutes.
 #flush-block[
 - *Air.* You gain a flying speed equal to your walking speed and have advantage on Dexterity saving throws against effects you can see.
@@ -4086,7 +4059,7 @@ Starting at 9th level, you can use an action and expend 3 STA to draw elemental 
 ]
 
 
-== Enhanced Zones
+== Enhanced Zones <enhanced-zones>
 Starting at 11th level, your zones have become more powerful. Choose one of the following. Whenever you create a zone, it gains the benefit.
 #flush-block[
 - *Bolstered Effect.* Saving throws required by your zones are made at disadvantage.
@@ -4095,25 +4068,25 @@ Starting at 11th level, your zones have become more powerful. Choose one of the 
 ]
 
 
-== Primal Legend
+== Primal Legend <primal-legend>
 At 13th level, you learn your choice of legendary effects and can use it once per long rest. The chosen effect must have either the *Primal* or the *General* tag as well as the *Lesser* tag. You learn an additional legendary effect of your choice with these same tags at 15th level.
 
-== Greater Primal Legend
+== Greater Primal Legend <greater-primal-legend>
 At 17th level, you learn your choice of legendary effects and can use it once per long rest. The chosen effect must have either the *Primal* or the *General* tag, but can have either the *Lesser* or *Greater* tag. At this time you can also switch one other legendary effect you know for a different one you could learn with this feature.
 
-== Timeless Body
+== Timeless Body <shaman-timeless-body>
 
 Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.
 
-== Rebirth
+== Rebirth <rebirth>
 At 20th level, the primal forces you channel act as a shield against death for you and your allies. When you or an ally you can see within 60 feet of you is reduced to 0 hit points or would be killed outright by damage or any other effect, you can choose to instead heal them to full hit points and any negative condition afflicting them ends. If you do so, you gain 2 levels of exhaustion immediately and cannot use this feature again until you have completed a long rest and no longer have any levels of exhaustion (from this or any other effect).
 
-= Shaman Circles
+= Shaman Circles <shaman-circles>
 
-== Circle of the Elements
+== Circle of the Elements <circle-of-the-elements>
 Shamans who devote themselves to the elements tend to be the least connected to mortal-kind. They serve and channel the most primal parts of nature, which are also often the most destructive.
 
-=== Circle Spells
+=== Circle Spells <elements-circle-spells>
 
 Your mystical connection to the primal nature of the elements infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
 
@@ -4121,10 +4094,10 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 
 #dndtab("Elements Spells", 
 "Shaman Level", "Circle Spells",
-"3rd         ", [_scorching ray, detect thoughts_],
-"5th         ", [_call lightning, protection from energy_],
-"7th         ", [_death ward, greater invisibility_],
-"9th         ", [_reincarnate, dispel otherworldly influence_],
+"3rd         ", [#safe-link("scorching-ray", [_scorching ray_]), #safe-link("detect-thoughts", [_detect thoughts_])],
+"5th         ", [#safe-link("call-lightning", [_call lightning_]), #safe-link("protection-from-energy", [_protection from energy_])],
+"7th         ", [#safe-link("death-ward", [_death ward_]), #safe-link("greater-invisibility", [_greater invisibility_])],
+"9th         ", [#safe-link("reincarnate", [_reincarnate_]), #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])],
 )
 
 
@@ -4136,7 +4109,7 @@ Starting at 6th level, the wind and earth bring you word of things going on else
 ]
 
 
-=== Elemental Resilience
+=== Elemental Resilience <elemental-resilience>
 Starting at 10th level, you can use your reaction to grant yourself a defensive benefit. Choose one of the following:
 #flush-block[
 - *Earth*: When you would take damage, you reduce the damage taken by half your level + your proficiency bonus.
@@ -4148,29 +4121,29 @@ Starting at 10th level, you can use your reaction to grant yourself a defensive 
 
 Once you use this feature, you cannot use it again until you finish a long or short rest.
 
-=== Elemental Summoning
+=== Elemental Summoning <elemental-summoning>
 At 14th level you learn the conjure elemental spell if you do not know it already, and it does not count against the number of spells you know. When you cast the spell, you get two elementals instead of one, both of the same type.
 
-== Circle of Fiery Renewal
+== Circle of Fiery Renewal <circle-of-fiery-renewal>
 The Circle of Fiery Renewal takes as its exemplar the great Phoenix spirit, patron of cleansing and rebirth via fire. Although they rank among the best healers of the shamans, their healing tends to be painful.
 
-=== Bonus Cantrips
-When you choose this circle at 2nd level, you learn the light cantrip and the produce flame cantrip.
+=== Bonus Cantrips <fiery-renewal-bonus-cantrips>
+When you choose this circle at 2nd level, you learn the #safe-link("light",[_light_]) cantrip and the #safe-link("produce-flame",[_produce flame_]) cantrip.
 
-=== Circle Spells
+=== Circle Spells <fiery-renewal-circle-spells>
 Your mystical connection to the phoenix infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
 
 Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the shaman spell list, the spell is nonetheless a shaman spell for you.
 
 #dndtab("Fiery Renewal Spells",
 "Shaman Level", "Circle Spells",
-"3rd         ", [_burning hands, cure wounds_],
-"5th         ", [_flaming sphere, prayer of healing_],
-"7th         ", [_death ward, fireball_],
-"9th         ", [_flame strike, reincarnate_],
+"3rd         ", [#safe-link("burning-hands", [_burning hands_]), #safe-link("cure-wounds", [_cure wounds_])],
+"5th         ", [#safe-link("flaming-sphere", [_flaming sphere_]), #safe-link("prayer-of-healing", [_prayer of healing_])],
+"7th         ", [#safe-link("death-ward", [_death ward_]), #safe-link("fireball", [_fireball_])],
+"9th         ", [#safe-link("flame-strike", [_flame strike_]), #safe-link("reincarnate", [_reincarnate_])],
 )
 
-=== Phoenix Manifestation
+=== Phoenix Manifestation <phoenix-manifestation>
 Starting at 6th level, you have learned an alternate use of your Manifest Zone ability. You can use it to conjure a spirit in the form of a Small, incorporeal phoenix that shares your space or appears in an ally's space you can see within 60 feet of you. For one minute, it takes one of the following actions of your choice on your turn, using your spell save DC and spell attack modifier as necessary. Once you summon the phoenix, you cannot do so again until you finish a long or short rest.
 
 *Spit Fire.* The phoenix casts produce flame at a target within range.
@@ -4179,27 +4152,27 @@ Starting at 6th level, you have learned an alternate use of your Manifest Zone a
 
 If you are reduced to zero hit points while the spirit is active and are within 30 feet of it, it can sacrifice itself to return you to 1 hit point at the start of your next turn after being downed.
 
-=== Enhanced Phoenix
+=== Enhanced Phoenix <enhanced-phoenix>
 Starting at 10th level, the phoenix summoned by your Phoenix Manifestation ability grows stronger. It gains the ability to cast fireball once during its duration and if it sacrifices itself to restore you to health, you regain 5d8 hit points instead of one.
 
-=== Fiery Rebirth
+=== Fiery Rebirth <fiery-rebirth>
 At 14th level, your bond with the phoenix has progressed to the point that it transcends unconsciousness or death. When an ally is killed within 60 feet of you, you can expend 7 AET to cast revivify on them as a reaction, ignoring range and material component requirements.
 
 Additionally, if you are reduced to zero hit points or killed outright, you can choose to transform into a Large phoenix yourself for one minute or until healed/revived. While a phoenix, you can cast any spell you know that deals fire damage or restores hit points, spending aether as normal, and have a flying speed of 60 feet. The phoenix form shares your AC and saving throw modifiers. It is immune to all damage and conditions, but any damage taken forces a concentration check; a failed check causes you to revert to your (damaged/dead) where the phoenix was. Once you use this feature once, you cannot do so again until 7 days have passed.
 
-== Circle of the Spirit
+== Circle of the Spirit <circle-of-the-spirit>
 
 The Circle of the Spirit acts as a bridge between man and the spirits of nature, as well as the spirits of the departed. Most frequently, shamans of the Spirit Circle are found as tribal advisors, priests of nature focused communities, and the like.
 
-=== Bonus Cantrip
+=== Bonus Cantrip <spirits-bonus-cantrip>
 
 When you choose this circle at 2nd level, you learn one additional shaman cantrip of your choice.
 
-=== Natural Recovery
+=== Natural Recovery <natural-recovery>
 
 Starting at 3rd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you can meditate and regain Aether points equal to your shaman level. Once you use this once, you can't do so again until you complete a long rest.
 
-=== Circle Spells
+=== Circle Spells <spirits-circle-spells>
 
 Your mystical connection to the spirits of nature and man infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to extra circle spells.
 
@@ -4207,129 +4180,129 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 
 #dndtab("Spirit Spells", 
 "Shaman Level", "Circle Spells",
-"3rd         ", [_arcane binding, detect thoughts_],
-"5th         ", [_hypnotic pattern, bestow curse_],
-"7th         ", [_death ward, greater invisibility_],
-"9th         ", [_reincarnate, dispel otherworldly influence_],
+"3rd         ", [#safe-link("arcane-binding", [_arcane binding_]), #safe-link("detect-thoughts", [_detect thoughts_])],
+"5th         ", [#safe-link("hypnotic-pattern", [_hypnotic pattern_]), #safe-link("bestow-curse", [_bestow curse_])],
+"7th         ", [#safe-link("death-ward", [_death ward_]), #safe-link("greater-invisibility", [_greater invisibility_])],
+"9th         ", [#safe-link("reincarnate", [_reincarnate_]), #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])],
 )
 
-=== Spirit's Advice
+=== Spirit's Advice <spirits-advice>
 At 6th level, the spirits give you advice when you need it most. When you make an ability check and don't like the result, you can spend 2 STA to roll the dice again and take either result.
 
-=== Nature's Ward
+=== Nature's Ward <natures-ward>
 
 When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.
 
-=== Natural Rebirth
+=== Natural Rebirth <natural-rebirth>
 Starting at 14th level, your connection to the spirits has given you a certain influence over death. This gives you the following benefits:
 
 - You learn the resurrection incantation, and count as a priest of the Life domain when performing it.
 - You can cast reincarnate without expending expensive material components and when you do, you can choose the outcome.
 - When you are brought to zero hit points or killed outright, you can instead choose to be healed to half hit points. This costs half of your total STA and 5 AET.
 
-== Shaman Spell List
+== Shaman Spell List <shaman-spell-list>
 The Shaman Spell List table contains a short summary of the spells available to all Shamans, ordered by aether cost.
 
 #flush-block[
-=== 0 Aether
-- acid burst
-- dancing lights
-- poison spray
-- produce flame
-- shillelagh
+=== 0 Aether 
+- #safe-link("acid-burst", [_acid burst_])
+- #safe-link("dancing-lights", [_dancing lights_])
+- #safe-link("poison-spray", [_poison spray_])
+- #safe-link("produce-flame", [_produce flame_])
+- #safe-link("shillelagh", [_shillelagh_])
 	
-=== 1 Aether
-- cure wounds
+=== 1 Aether 
+- #safe-link("cure-wounds", [_cure wounds_])
 	
-=== 2 Aether
-- bane
-- burning hands
-- create or destroy water
-- envenom
-- entangle
-- faerie fire
-- flash freeze
-- fog cloud
-- grease
-- jump
-- protection from otherworldly influence
-- sleep
-- thunderwave
+=== 2 Aether 
+- #safe-link("bane", [_bane_])
+- #safe-link("burning-hands", [_burning hands_])
+- #safe-link("create-or-destroy-water", [_create or destroy water_])
+- #safe-link("envenom", [_envenom_])
+- #safe-link("entangle", [_entangle_])
+- #safe-link("faerie-fire", [_faerie fire_])
+- #safe-link("flash-freeze", [_flash freeze_])
+- #safe-link("fog-cloud", [_fog cloud_])
+- #safe-link("grease", [_grease_])
+- #safe-link("jump", [_jump_])
+- #safe-link("protection-from-otherworldly-influence", [_protection from otherworldly influence_])
+- #safe-link("sleep", [_sleep_])
+- #safe-link("thunderwave", [_thunderwave_])
 	
-=== 3 Aether
-- acid arrow
-- alter self
-- barkskin
-- blindness deafness
-- blur
-- calm emotions
-- darkvision
-- enlarge reduce
-- flame blade
-- flaming sphere
-- gust of wind
-- heat metal
-- pass without trace
-- protection from poison
-- spike growth
-- web
+=== 3 Aether 
+- #safe-link("acid-arrow", [_acid arrow_])
+- #safe-link("alter-self", [_alter self_])
+- #safe-link("barkskin", [_barkskin_])
+- #safe-link("blindness-deafness", [_blindness deafness_])
+- #safe-link("blur", [_blur_])
+- #safe-link("calm-emotions", [_calm emotions_])
+- #safe-link("darkvision", [_darkvision_])
+- #safe-link("enlarge-reduce", [_enlarge reduce_])
+- #safe-link("flame-blade", [_flame blade_])
+- #safe-link("flaming-sphere", [_flaming sphere_])
+- #safe-link("gust-of-wind", [_gust of wind_])
+- #safe-link("heat-metal", [_heat metal_])
+- #safe-link("pass-without-trace", [_pass without trace_])
+- #safe-link("protection-from-poison", [_protection from poison_])
+- #safe-link("spike-growth", [_spike growth_])
+- #safe-link("web", [_web_])
 	
-=== 4 Aether
-- moonbeam
+=== 4 Aether 
+- #safe-link("moonbeam", [_moonbeam_])
 	
-=== 5 Aether
-- bestow curse
-- conjure animals
-- gaseous form
-- lightning bolt
-- plant growth
-- sleet storm
-- slow
-- stinking cloud
-- unbind
-- wind wall
+=== 5 Aether 
+- #safe-link("bestow-curse", [_bestow curse_])
+- #safe-link("conjure-animals", [_conjure animals_])
+- #safe-link("gaseous-form", [_gaseous form_])
+- #safe-link("lightning-bolt", [_lightning bolt_])
+- #safe-link("plant-growth", [_plant growth_])
+- #safe-link("sleet-storm", [_sleet storm_])
+- #safe-link("slow", [_slow_])
+- #safe-link("stinking-cloud", [_stinking cloud_])
+- #safe-link("unbind", [_unbind_])
+- #safe-link("wind-wall", [_wind wall_])
 	
-=== 6 Aether
-- blight
-- call lightning
+=== 6 Aether 
+- #safe-link("blight", [_blight_])
+- #safe-link("call-lightning", [_call lightning_])
 	
-=== 7 Aether
-- ice storm
-- wall of thorns
+=== 7 Aether 
+- #safe-link("ice-storm", [_ice storm_])
+- #safe-link("wall-of-thorns", [_wall of thorns_])
 	
-=== 8 Aether
-- caustic torrent
-- conjure mephits
-- conjure woodland beings
-- control water
-- dominate beast
-- fire shield
-- giant insect
-- polymorph
-- stone shape
-- stoneskin
-- wall of fire
+=== 8 Aether 
+- #safe-link("caustic-torrent", [_caustic torrent_])
+- #safe-link("conjure-mephits", [_conjure mephits_])
+- #safe-link("conjure-woodland-beings", [_conjure woodland beings_])
+- #safe-link("control-water", [_control water_])
+- #safe-link("dominate-unthinking", [_dominate unthinking_])
+- #safe-link("fire-shield", [_fire shield_])
+- #safe-link("giant-insect", [_giant insect_])
+- #safe-link("polymorph", [_polymorph_])
+- #safe-link("stone-shape", [_stone shape_])
+- #safe-link("stoneskin", [_stoneskin_])
+- #safe-link("wall-of-fire", [_wall of fire_])
 	
-=== 9 Aether
-- cone of cold
+=== 9 Aether 
+- #safe-link("cone-of-cold", [_cone of cold_])
 	
-=== 10 Aether
-- conjure elemental
+=== 10 Aether 
+- #safe-link("conjure-elemental", [_conjure elemental_])
 	
-=== 12 Aether
-- cloudkill
-- dispel otherworldly influence
-- move earth
-- passwall
-- reincarnate
-- wall of ice
-- wall of stone
+=== 12 Aether 
+- #safe-link("cloudkill", [_cloudkill_])
+- #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])
+- #safe-link("move-earth", [_move earth_])
+- #safe-link("passwall", [_passwall_])
+- #safe-link("reincarnate", [_reincarnate_])
+- #safe-link("wall-of-ice", [_wall of ice_])
+- #safe-link("wall-of-stone", [_wall of stone_])
 	
-=== 14 Aether
-- insect plague
+=== 14 Aether 
+- #safe-link("insect-plague", [_insect plague_])
 ]
 
-= Warlock
+= Warlock <warlock>
 
 Warlocks gain power by cheating. Unlike the arcanist who studies and meditates or the priest who must have faith, the warlock has struck a deal with an entity from outside the Mortal plane. An arch-devil, a powerful demon, an elemental lord, or even one of the mysterious and perplexing dwellers in the Dark Beyond. This deal is quid pro quo, a favor for a favor. At minimum, the Patron rips open the warlock's soul, shoving in unearned power. Each warlock is different, but they all learn the ability to shape raw aether into blasts.
 
@@ -4339,7 +4312,7 @@ Subclasses
 - Protection: Defensively/support oriented. Associated with earth elementals, celestials, and everyone who wants to preserve their allies.
 
 === Quick Build
-To build a warlock, put Charisma as your highest ability score, then Dexterity. Pick _shocking grasp_ and one other cantrip of your choice.
+To build a warlock, put Charisma as your highest ability score, then Dexterity. Pick #safe-link("shocking-grasp", [_shocking grasp_]) and one other cantrip of your choice.
 
 === Class Features
 
@@ -4376,11 +4349,11 @@ Whenever an ability from this class forces someone to make a saving throw agains
 
 #align(center)[DC = 8 + your Charisma modifier + your proficiency bonus]
 
-== Otherworldly Patron
+== Otherworldly Patron <otherworldly-patron>
 
 At 1st level, you have struck a bargain with an otherworldly being of your choice, creating a Pact focused on a particular attitude: Destruction, Inquiry, or Protection, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
 
-== Spellcasting
+== Spellcasting <warlock-spellcasting>
 Warlocks are not traditional spellcasters---they do not inherently get access to any spells above cantrips and do not have a spell list of their own. However, they can gain access to spells via incantations and other means, and do learn cantrips.
 
 === Cantrips
@@ -4391,9 +4364,9 @@ You know two cantrips of your choice from any list. You learn additional warlock
 
 Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell or warlock ability refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one or with your Eldritch Blast.
 
-- *Spell save DC* = 8 + your proficiency bonus + your Charisma modifier
+#align(center)[*Spell save DC* = 8 + your proficiency bonus + your Charisma modifier]
 
-- *Spell attack modifier* = your proficiency bonus + your Charisma modifier
+#align(center)[*Spell attack modifier* = your proficiency bonus + your Charisma modifier]
 
 === Armored Caster
 
@@ -4424,19 +4397,19 @@ You can cast any warlock spells you know while wearing light armor.
 "20th", "+6", "Eldritch Master", "4", "5", "5", "11", "8", "80", "17",
 )
 
-== Eldritch Blast
+== Eldritch Blast <eldritch-blast>
 
 The contact with your patron has awoken you to a strange, otherworldly power. Unlike conventional spellcasters, you don't learn or cast regular spells naturally, other than cantrips. Instead, you primarily shape and throw raw aether, molding it into shapes and aspecting it in various ways. This is called an Eldritch Blast.
 
 At its most basic, as an action on your turn you can shoot a bolt of raw kinetic energy at a creature or object within 90 ft. of you. Make a spell attack roll. On a hit, the bolt deals 1d12 + your Charisma modifier bludgeoning damage to the target. This damage increases by 1d12 at levels 5, 11, and 17. This counts as casting a cantrip.
 
-== Blast Effects
+== Blast Effects <blast-effects>
 
 At 2nd level, you have learned to add additional effects to your Eldritch Blast on hit by spending AET. These are called Blast Effects, and are detailed at the end of the class entry. You learn 1 blast effect and can apply it to your Eldritch Blast. You learn additional blast effects as your level increases, as shown in the Blast Effects column of the warlock table. Whenever you learn a new blast effect, you can choose one of the blast effects you know and replace it with another blast effect you could learn at that level. You can only apply a single blast effect to each use of eldritch blast unless the effect says otherwise.
 
 Starting at level 7, you can learn Blast Effects labeled as Greater and the cost of non-greater blast effects is reduced by 1 (to a minimum of 0). Expending AET on Blast Effects increases the effective cost of the eldritch blast for the purpose of overcoming resistances, immunities, and other effects that care about the aether cost of a spell.
 
-== Eldritch Invocations
+== Eldritch Invocations <eldritch-invocations>
 
 In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.
 
@@ -4445,11 +4418,11 @@ At 2nd level, you gain two eldritch invocations of your choice. Your invocation 
 Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.
 
 
-== Pact Boon
+== Pact Boon <pact-boon>
 
 At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.
 
-=== Chainbound familiar
+=== Chainbound familiar <chainbound-familiar>
 
 You make a subsidiary pact with a familiar---an imp, draconewt, or any Miniscule beast. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast or dragon.
 
@@ -4469,7 +4442,7 @@ Finally, when you cast a spell with a range of touch, your familiar can deliver 
 Each time you summon your familiar, you get the same creature, regardless of the form given. You give it orders, but it is still an NPC with thoughts and desires. It won't disobey or betray you, but it may certainly grumble.
 ]
 
-=== Boon-blade
+=== Boon-blade <boon-blade>
 
 You can use your Eldritch Blast to create a magical weapon of solidified aether in your hand. It takes the form and statistics of any melee weapon. You have proficiency with this weapon even if you normally would not. You make spell attacks, not melee attacks with this weapon. You can apply blast effects to it by expending AET as normal. The first time you hit with this weapon on a turn, the damage dealt is equal to your Eldritch Blast damage instead of the normal weapon damage if this would be greater.
 
@@ -4477,7 +4450,7 @@ Your pact weapon disappears if it is more than 5 feet away from you for 1 minute
 
 You can transform a physical weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.
 
-=== Boon of the Grimoire
+=== Boon of the Grimoire <boon-of-the-grimoire>
 
 Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). Choose one spell from any list that costs less than 3 AET. While the book is on your person, you can cast those cantrips at will and cast the spell by expending AET. They don't count against your number of cantrips known. Regardless of what list they came from, Charisma is your spellcasting modifier for these spells. When you gain a level, you can replace the known spell with another that costs less than your AET limit.
 
@@ -4485,19 +4458,19 @@ If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a
 
 #breakoutbox("Your Pact Boon")[Each Pact Boon option produces a special creature or an object that reflects your patron's nature. Its visual appearance is entirely up to you, although you should consult with your GM to ensure you have matching concepts about your Patron's nature.]
 
-== Ability Score Improvement
+== Ability Score Improvement <warlock-ability-score-improvement>
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1.  As normal, you can't increase an ability score above +5 using this feature.
 
 You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See skill-tricks for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
 
-== Blast Shapes
+== Blast Shapes <blast-shapes>
 
 When you reach 5th level, you learn to modify the shape of your Eldritch Blast in various ways. You learn one Blast Shape (detailed below) and can apply it by spending the indicated amount of AET. You must choose the shape when you use your eldritch blast feature and before you know whether it hits or not. You learn additional blast shapes as your level increases, as shown in the Blast Shapes column of the warlock table. Whenever you learn a new blast effect, you can choose one of the blast shapes you know and replace it with another blast shapes you could learn at that level.
 
 Starting at level 9, you can learn Greater Blast Shapes, and the cost of non-greater blast shapes is reduced by 1 (to a minimum of 0). Expending AET on Blast Shapes increases the effective cost of the eldritch blast for the purpose of overcoming resistances, immunities, and other effects that care about the aether cost of a spell.
 
-== Mystic Arcanum
+== Mystic Arcanum <mystic-arcanum>
 
 At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one legendary effect from the legendary list as this arcanum.
 
@@ -4505,33 +4478,33 @@ You can cast your arcanum spell once without expending aether. You must finish a
 
 At higher levels, you gain more warlock spells of your choice that can be cast in this way: one at 13th level, one at 15th level, and one at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest.
 
-== Eldritch Master
+== Eldritch Master <eldritch-master>
 
 At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended aether. You can spend 1 minute entreating your patron for aid to regain all your expended aether. Once you use this feature, you must complete a long rest before using it again.
 
-== Eldritch Invocations
+== Eldritch Invocations <eldritch-invocations>
 
 If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
 
-=== Armor of Shadows
+=== Armor of Shadows <armor-of-shadows>
 
-You can cast _mage armor_ on yourself at will, without expending aether or material components.
+You can cast #safe-link("mage-armor", [_mage armor_]) on yourself at will, without expending aether or material components.
 
-=== Ascendant Step
+=== Ascendant Step <ascendant-step>
 
 _Prerequisite: 9th level_
 
-You can cast _levitate_ on yourself at will, without expending aether or material components or requiring concentration.
+You can cast #safe-link("levitate", [_levitate_]) on yourself at will, without expending aether or material components or requiring concentration.
 
-=== Beast Speech
+=== Beast Speech <beast-speech>
 
 You can cast speak with beasts at will, as if you were under the effects of the Voice the Voiceless (beast) incantation.
 
-=== Beguiling Influence
+=== Beguiling Influence <beguiling-influence>
 
 You gain proficiency in the Deception and Persuasion skills and gain one skill trick of your choice that relies on one of those skills.
 
-=== Book of Ancient Secrets
+=== Book of Ancient Secrets <book-of-ancient-secrets>
 
 _Prerequisite: Pact of the Tome feature_
 
@@ -4539,111 +4512,111 @@ You learn two common incantations (see Incantations for details) of your choice 
 
 *Special:* you can take this invocation more than once, learning a new incantation each time. If you take it when you are 5th level or above, you can learn an uncommon incantation instead. At 9th level or above you can learn a rare incantation.
 
-=== Devil's Sight
+=== Devil's Sight <devils-sight>
 
 You can see normally in darkness, both magical and non-magical, to a distance of 120 feet.
 
-=== Dreadful Word
+=== Dreadful Word <dreadful-word>
 
 _Prerequisite: 7th level_
 
-You can cast _confusion_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("confusion", [_confusion_]) once without using aether. You can't do so again until you finish a long rest.
 
-=== Eldritch Sight
+=== Eldritch Sight <eldritch-sight>
 
-You are continually under the effect of the _sense aura_ incantation as long as you are conscious. You can change which variety you are detecting as an action.
+You are continually under the effect of the #safe-link("sense-aura", [_sense aura_]) incantation as long as you are conscious. You can change which variety you are detecting as an action.
 
-=== Eyes of the Rune Keeper
+=== Eyes of the Rune Keeper <eyes-of-the-rune-keeper>
 
 You can read all non-encoded writing. You have advantage on Intelligence checks made to decipher written codes.
 
-=== Fiendish Vigor
+=== Fiendish Vigor <fiendish-vigor>
 
-You can cast _false life_ on yourself at will, without expending aether or material components. When you do so, you gain the maximum amount of temporary hit points. When you reach 5th level, it acts as if you spent 3 AET on it. At 9th level, you get the benefit of casting it with 5 AET.
+You can cast #safe-link("false-life", [_false life_]) on yourself at will, without expending aether or material components. When you do so, you gain the maximum amount of temporary hit points. When you reach 5th level, it acts as if you spent 3 AET on it. At 9th level, you get the benefit of casting it with 5 AET.
 
-=== Gaze of Two Minds
+=== Gaze of Two Minds <gaze-of-two-minds>
 
 You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
 
-=== Lifedrinker
+=== Lifedrinker <lifedrinker>
 
 _Prerequisite: 12th level, Boon-blade feature_
 
 When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).
 
-=== Mask of Many Faces
+=== Mask of Many Faces <mask-of-many-faces>
 
-You can cast _disguise self_ at will, without expending aether.
+You can cast #safe-link("disguise-self", [_disguise self_]) at will, without expending aether.
 
-=== Master of Myriad Forms
-
-_Prerequisite: 9th level_
-
-You can cast _alter self_ at will, without expending aether.
-
-=== Minions of Chaos
+=== Master of Myriad Forms <master-of-myriad-forms>
 
 _Prerequisite: 9th level_
 
-You can cast _conjure elemental_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("alter-self", [_alter self_]) at will, without expending aether.
 
-=== Mire the Mind
+=== Minions of Chaos <minions-of-chaos>
+
+_Prerequisite: 9th level_
+
+You can cast #safe-link("conjure-elemental", [_conjure elemental_]) once without using aether. You can't do so again until you finish a long rest.
+
+=== Mire the Mind <mire-the-mind>
 
 _Prerequisite: 5th level_
 
-You can cast _slow_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("slow", [_slow_]) once without using aether. You can't do so again until you finish a long rest.
 
-=== Misty Visions
+=== Misty Visions <misty-visions>
 
-You can cast _silent image_ at will, without expending aether or material components.
+You can cast #safe-link("silent-image", [_silent image_]) at will, without expending aether or material components.
 
-=== One with Shadows
+=== One with Shadows <one-with-shadows>
 
 _Prerequisite: 5th level_
 
 When you are in an area of dim light or darkness, you can use your action to become invisible until you take an action or a reaction.
 
-=== Otherworldly Leap
+=== Otherworldly Leap <otherworldly-leap>
 
 _Prerequisite: 3rd level_
 
-You can cast _jump_ on yourself at will, without expending aether or material components.
+You can cast #safe-link("jump", [_jump_]) on yourself at will, without expending aether or material components.
 
-=== Stolen Knowledge
+=== Stolen Knowledge <stolen-knowledge>
 
 You learn one spell from the shaman, priest, or arcanist spell list. You must be able to cast it without exceeding your aether limit. You can cast any spells you know this way using aether as normal; your casting ability is Charisma.
 
 *Special:* you can select this invocation more than once. Each time, pick a different spell. They do not have to share a spell list. Each time you gain an invocation choice, you can also switch one spell you know via this invocation.
 
-=== Sculptor of Flesh
+=== Sculptor of Flesh <sculptor-of-flesh>
 
 _Prerequisite: 7th level_
 
-You can cast _polymorph_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("polymorph", [_polymorph_]) once without using aether. You can't do so again until you finish a long rest.
 
-=== Sign of Ill Omen
+=== Sign of Ill Omen <sign-of-ill-omen>
 
 _Prerequisite: 5th level_
 
-You can cast _bestow curse_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("bestow-curse", [_bestow curse_]) once without using aether. You can't do so again until you finish a long rest.
 
-=== Thief of Five Fates
+=== Thief of Five Fates <thief-of-five-fates>
 
-You can cast _bane_ once without using aether. You can't do so again until you finish a long rest.
+You can cast #safe-link("bane", [_bane_]) once without using aether. You can't do so again until you finish a long rest.
 
-=== Thirsting Blade
+=== Thirsting Blade <thirsting-blade>
 
 _Prerequisite: 5th level, Boon-blade feature_
 
 You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn. Additional hits after the first only deal the weapon's normal damage instead of the eldritch blast damage.
 
-=== Visions of Distant Realms
+=== Visions of Distant Realms <visions-of-distant-realms>
 
 _Prerequisite: 12th level_
 
-You can cast _arcane eye_ at will, without expending aether.
+You can cast #safe-link("arcane-eye", [_arcane eye_]) at will, without expending aether.
 
-=== Uncanny Skill
+=== Uncanny Skill <uncanny-skill>
 _Prerequisite: 4th level_
 
 You learn a skill trick (see Skill Tricks) that you otherwise qualify for. 
@@ -4651,26 +4624,26 @@ You learn a skill trick (see Skill Tricks) that you otherwise qualify for.
 *Special*: You can pick this invocation multiple times, each time learning a new skill trick that you would otherwise qualify for.
 
 
-=== Voice of the Chain Master
+=== Voice of the Chain Master <voice-of-the-chain-master>
 
 _Prerequisite: Chain-bound familiar feature_
 
 You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.
 
 
-=== Whispers of the Grave
+=== Whispers of the Grave <whispers-of-the-grave>
 
 _Prerequisite: 5th level_
 
-You learn the _voice the voiceless_ incantation and can cast it without a Ritual Scroll.
+You learn the #safe-link("voice-the-voiceless", [_voice the voiceless_]) incantation and can cast it without a Ritual Scroll.
 
-=== Witch Sight
+=== Witch Sight <witch-sight>
 
 _Prerequisite: 15th level_
 
 You can see the true form of any shapechanger or creature concealed by illusion or shape-changing magic while the creature is within 30 feet of you and within line of sight.
 
-== Blast Effects
+== Blast Effects <blast-effects>
 
 Each blast effect has a cost listed after the name. Applying that blast effect requires expending the listed aether cost. If the cost is listed with a + sign, you can expend additional aether (up to your limit) to increase the effect.
 
@@ -4698,7 +4671,7 @@ Targets hit by your Eldritch Blast are pushed 5 feet away from you for every aet
 === Clinging Lightning Blast: 5 AET, greater
 Your eldritch blast deals lightning damage and deals additional damage equal to twice your Charisma bonus, and requires a Dexterity saving throw instead of an attack roll. On a failed save, targets take the full damage and are paralyzed until the end of your next turn. On a successful save, targets take half damage and are not paralyzed.
 
-== Blast Shapes
+== Blast Shapes <blast-shapes>
 Blast shapes alter the form of the Eldritch Blast and may alter it from a spell attack to a saving throw.
 
 === Eldritch Arc: 3 AET
@@ -4719,7 +4692,7 @@ When you use your Eldritch Blast, you can instead choose to make it take the sha
 === Split Bolts: 2 AET
 When you use your Eldritch Blast, you can choose to split the attack into a number of separate attacks equal to the number of damage dice. If you do, make separate attack rolls for each one. On a hit, each bolt deals 1d12 damage of the appropriate attacks. The additional damage from your Charisma modifier only applies to one of them. Blast effects affect all targets hit. This cannot be used with blast effects that replace the attack roll by a saving throw.
 
-== Otherworldly Patrons
+== Otherworldly Patrons <otherworldly-patrons>
 
 The beings that serve as patrons for warlocks are mighty inhabitants of other planes of existence. Not gods, but almost godlike in their power. Various patrons give their warlocks access to different powers and invocations, and expect significant favors in return.
 
@@ -4729,61 +4702,61 @@ Some patrons collect warlocks, doling out mystic knowledge relatively freely or 
 
 If a warlock falls out of favor with their patron, GMs may decide that the warlock cannot progress further unless they find a new patron willing to swear the same sort of pact. Alternatively, the warlock can take steps to regain favor. This should not happen lightly or arbitrarily. Any such action should further the narrative and be decided between player and GM and not used as a punishment.]
 
-=== Pact of Destruction
+=== Pact of Destruction <pact-of-destruction>
 
 Patrons who proffer pacts of Destruction do so for many reasons, but all of them desire to see their enemies (which list may include all creation) crushed before them. Some do so out of a desire to see new systems grow in the wake of the consuming fire; others desire power or just want to see the world burn. Their servants are warriors, their goals are to reduce their enemies to ash.
 
-=== Pact Spells
+=== Pact Spells <destruction-pact-spells>
 
 The Pact of Destruction grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Destruction Spells",
 "Warlock Level ", "Spells",
-"1st         ", [_burning hands, thunderwave_],
-"3rd         ", [_flaming sphere, ray of enfeeblement_],
-"5th         ", [_unbind, vampiric touch_],
-"7th         ", [_black tentacles, wall of fire_],
-"9th         ", [_cloudkill, dispel otherworldly influence_],
+"1st         ", [#safe-link("burning-hands", [_burning hands_]), #safe-link("thunderwave", [_thunderwave_])],
+"3rd         ", [#safe-link("flaming-sphere", [_flaming sphere_]), #safe-link("ray-of-enfeeblement", [_ray of enfeeblement_])],
+"5th         ", [#safe-link("unbind", [_unbind_]), #safe-link("vampiric-touch", [_vampiric touch_])],
+"7th         ", [#safe-link("black-tentacles", [_black tentacles_]), #safe-link("wall-of-fire", [_wall of fire_])],
+"9th         ", [#safe-link("cloudkill", [_cloudkill_]), #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_])],
 )
 
-=== Destroyer's Blessing
+=== Destroyer's Blessing <destroyers-blessing>
 
 Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).
 
 Alternatively, when a hostile creature within 60 feet of you is reduced to 0 hit points by someone else, you can spend 2 STA and your reaction to gain the temporary hit points.
 
-=== Eldritch Backlash
+=== Eldritch Backlash <eldritch-backlash>
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known blast effects:
 
 *Eldritch Backlash: 1+ AET.* When you hit a target with your Eldritch Blast, a lingering aura of warped aether surrounds them until the end of your next turn. If they cast a spell or use a magical ability while the field surrounds them, they take 1d10 psychic damage per AET spent.
 
-=== Resilience
+=== Resilience <resilience>
 
 Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature.
 
-=== Retribution
+=== Retribution <warlock-retribution>
 
 Starting at 14th level, when you take damage from an attack or ability, you can force the caster to make a Constitution saving throw. On a failed save, the creature takes damage equal to being hit by two of your Eldritch Blasts. You can apply any single blast effect you know to this damage without expending aether; the creature counts as having failed any required saving throws. On a success, the creature takes half as much damage and is considered to have succeeded on any requisite saving throw (the damage is not halved again).
 
-=== Pact of Inquiry
+=== Pact of Inquiry <pact-of-inquiry>
 Those Patrons who proffer Inquiry Pacts want clients to go out into the world in search of new things. Information, peoples, events, magics; each Patron has different interests, but many are rather universal. The entity most associated with this Pact on Quartus is Leviathan, the one mind in many bodies that rules the depths of the sea and considers itself the keeper of all knowledge in its endless self-directed song. Its creations (now often rebellious) the mkhulu and comiedar both often form these pacts with mortals, seeking agents to go into the world on their behalf. There are devils and others who seek for knowledge; the devils of Leutis are most associated with this. But even some of the gods themselves prefer to form Inquiry Pacts rather than empower priests, Yogg-Magus, Lord of Magic among them. It's important to note that information is a two-edged blade, as gathering information requires deception. Thus, warlocks of Inquiry are often very good at appearing other than they truly are.
 
-=== Pact Spells
+=== Pact Spells <inquiry-pact-spells>
 The Pact of Inquiry grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Inquiry Spells",
 "Warlock Level ", "Spells",
-"1st         ", [_charm person_, _disguise self_],
-"3rd         ", [_detect thoughts, see invisibility_],
-"5th         ", [_clairvoyance, major image_],
-"7th         ", [_arcane eye, greater invisibility_],
-"9th         ", [_mislead, true seeing_],
+"1st         ", [#safe-link("charm-person", [_charm person_]), #safe-link("disguise-self", [_disguise self_])],
+"3rd         ", [#safe-link("detect-thoughts", [_detect thoughts_]), #safe-link("see-invisibility", [_see invisibility_])],
+"5th         ", [#safe-link("clairvoyance", [_clairvoyance_]), #safe-link("major-image", [_major image_])],
+"7th         ", [#safe-link("arcane-eye", [_arcane eye_]), #safe-link("greater-invisibility", [_greater invisibility_])],
+"9th         ", [#safe-link("mislead", [_mislead_]), #safe-link("true-seeing", [_true seeing_])],
 )
 
-=== Deceptive Charm
+=== Deceptive Charm <deceptive-charm>
 When a creature you can see targets you with an attack or an ability that causes damage, you can spend 2 STA and your reaction to force them to make a Charisma saving throw against your Spellcasting DC. On a failed save, they must target someone else if possible (in range, etc). You cannot use this ability if there are no other valid targets. This has no effect on targets immune to charm.
 
-=== Eldritch Interrogation
+=== Eldritch Interrogation <eldritch-interrogation>
 At 6th level you learn an additional Invocation that does not count against your normal limit of Invocations known.
 
 *Eldritch Interrogation*
@@ -4791,78 +4764,78 @@ At 6th level you learn the Whispers of the Grave invocation. It does not count a
 
 If you already know that invocation, you can pick a different invocation to learn instead. The additional effect from this feature still applies.
 
-=== Psychometry
+=== Psychometry <psychometry>
 Starting at 10th level, your pact gives you the power to read the environment and reconstruct the events of the past. As an action, you touch an object and state a query about an event in its history. As an example, you could touch a bloodied dagger and ask "Where did this blood come from".
 
 A ghostly scene unfolds around you, centered on the object. It includes up to 10 minutes before and after the event in question. You can walk around this scene, which is visible to everyone within sight of it. At your discretion (no action required), you can pause the scene, rewind the action, or fast forward it. You can dismiss the scene as an action; if you do not, it fades 30 minutes after it was created, even if paused the whole time.
 
-This counts as divination magic, so creatures under the effect of _mind blank_ and similar magics are invisible. Additionally, the psychometric effect has no special senses---it acts as if you, personally, were present and uses your ability scores, senses, and proficiencies if relevant. The scene is video only, no sound, smell or other sensory information is present.
+This counts as divination magic, so creatures under the effect of #safe-link("mind-blank", [_mind blank_]) and similar magics are invisible. Additionally, the psychometric effect has no special senses---it acts as if you, personally, were present and uses your ability scores, senses, and proficiencies if relevant. The scene is video only, no sound, smell or other sensory information is present.
 
 Once you use this ability you must finish a long rest before you can use it again.
 
 === Legendary Effect: Mind Blank
-At 14th level, you learn the legendary effect _mind blank_ and can use it once per long rest.
+At 14th level, you learn the legendary effect #safe-link("mind-blank", [_mind blank_]) and can use it once per long rest.
 
 
-=== Pact of Protection
+=== Pact of Protection <pact-of-protection>
 Those Patrons who proffer Protection Pacts want agents to act in defense of what the Patron holds to be important. That might be an Ascendant wanting to protect their faithful, high-ranking angels of the Celestial Legions looking for hands to ward against corruption (whether demonic or Beyond), archfey looking to protect the wilds, or even many of the Lucian (aka devil) dons looking to protect their investments. Protection is not _good_, inherently, as even the demon cults have protectors and defenders.
 
-=== Pact Spells
+=== Pact Spells <pact-spells>
 
 The Pact of Protection grants some particular spells to its warlocks at specific points in your career. These spells count as warlock spells you know and you can cast them using aether.
 
 #dndtab("Protection Spells",
 "Warlock Level ", "Spells",
-"1st         ", [_cure wounds, shield_],
-"3rd         ", [_calm emotions, prayer of healing_],
-"5th         ", [_beacon of hope, revivify_],
-"7th         ", [_death ward, mass cure wounds_],
-"9th         ", [_antilife shell, wall of stone_],
+"1st         ", [#safe-link("cure-wounds", [_cure wounds_]), #safe-link("shield", [_shield_])],
+"3rd         ", [#safe-link("calm-emotions", [_calm emotions_]), #safe-link("prayer-of-healing", [_prayer of healing_])],
+"5th         ", [#safe-link("beacon-of-hope", [_beacon of hope_]), #safe-link("revivify", [_revivify_])],
+"7th         ", [#safe-link("death-ward", [_death ward_]), #safe-link("mass-cure-wounds", [_mass cure wounds_])],
+"9th         ", [#safe-link("antilife-shell", [_antilife shell_]), #safe-link("wall-of-stone", [_wall of stone_])],
 )
 
 
-=== Steadfast Protection
+=== Steadfast Protection <steadfast-protection>
 When a creature you can see within 60 ft takes damage, you can use your reaction to grant them resistance to the damage. If you do so, you take the same amount of damage they did. You can still apply any applicable damage resistances or immunities you may have to reduce the transferred damage further. This transferred damage does not cause Concentration saving throws. If you spend 2 STA, you have resistance to the damage as well.
 
-=== Eldritch Shield
+=== Eldritch Shield <eldritch-shield>
 Starting at 6th level, you learn an additional Blast Effect that does not count against your limit of known Blast Effects:
 
 *Eldritch Shield: 1+ AET.* When you hit a target with your Eldritch Blast, you can choose one creature per AET spent within 30 feet of the target. That creature gains temporary hit points equal to your Charisma bonus + your proficiency.
 
-=== Aether Ward
+=== Aether Ward <aether-ward>
 Starting at 10th level, you can call on your patron to shield allies from aetheric abilities. As a reaction when a creature you can see casts a spell or uses a magical ability that requires a saving throw, you can cause all targets of that spell or effect to make the saving throw at advantage and gain resistance to any damage caused by the effect. You can do so after seeing the initial roll but before any of the roll's effects occur.
 
 Once you use this feature, you can't use it again until you finish a short or long rest.
 
 === Legendary Effect: Globe of Invulnerability
-At 14th level, you learn the legendary effect _globe of invulnerability_ and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself.
+At 14th level, you learn the legendary effect #safe-link("globe-of-invulnerability", [_globe of invulnerability_]) and can use it once per day. Unlike the normal effect, you can choose to target any creature you can see within 30 feet of you instead of only yourself.
 
 If you already know this legendary effect via Mystic Arcanum, you may choose an additional legendary effect that you could know at this level.
 
-
-= Appendix A: Core Rules
+#if sys.inputs.at("standalone", default: "false") == "true" [
+= Appendix A: Core Rules <appendix-a-core-rules>
 This section is a reminder of some of the unique rules, taken from the Core Rules and Equipment documents. If there's any doubt or ambiguity, check the full descriptions there first.
 
-== Universal Actions
+== Universal Actions <universal-actions>
 All PCs have access to the Deflect, Exert, and Focus activities, as long as they meet the prerequisites.
 
-=== Deflect
+=== Deflect <deflect>
 _Reaction when targeted by an attack, while wearing armor. Cost: 2 STA._
 
 When you are targeted by an attack while you are wearing armor or are affected by mage armor, you can use your reaction and spend 2 STA to add your proficiency bonus to your AC against that attack. You must use this reaction before you know the outcome of the attack, but if you take this action and the attack misses, you can immediately make either a melee attack against them with a weapon or shield you are wielding or attempt to Shove them as part of the reaction. If you attack them with a shield, it counts as a melee weapon with a 1d4 damage die for that attack. If you do not have a weapon or shield in hand, you cannot make this special attack.
 
-=== Exert
+=== Exert <exert>
 _No action, when you make an ability check or saving throw that uses STR, DEX, or CON. Cost: 1 STA_
 
 By spending 1 STA when you make an ability check or save that uses Strength, Dexterity, or Constitution, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
-=== Focus
+=== Focus <focus>
 _No action, when you make an ability check or saving throw that uses INT, WIS, or CHA. Cost: 1 AET_
 
 By spending 1 AET when you make an ability check or save that uses Intelligence, Wisdom, or Charisma, you can add your proficiency bonus to the check even if you are already adding your proficiency bonus or a multiple of your proficiency bonus to that check or save.
 
-== Weapon Properties
-=== Ammunition 
+== Weapon Properties <weapon-properties>
+=== Ammunition  <ammunition->
 _Light crossbow (bolt), shortbow (arrow), sling (sling bullet), blowgun (dart), hand crossbow (bolt), heavy crossbow (bolt), longbow (arrow)_
 
 You can use a weapon that has the ammunition property to make a ranged
@@ -4876,19 +4849,19 @@ minute to search the battlefield.
 If you use a weapon that has the ammunition property to make a melee
 attack, you treat the weapon as an improvised melee weapon, meaning you do not add your proficiency bonus to the attack roll and on a hit it deals 1d4 + your Strength bonus bludgeoning damage. A sling must be loaded to deal any damage when used in this way.
 
-=== Battering 
+=== Battering  <battering->
 _Greatclub, mace, quarterstaff, sling, maul, morningstar, warhammer_
 
 When you miss on an attack with a Battering weapon and do not roll a 1,
 the target still takes damage equal to your proficiency bonus.
 
-=== Consumed
+=== Consumed <consumed>
 _Acid vial, alchemist's fire flask, holy water flask_
 
 Unlike most thrown weapons, each attack consumes the weapon, as the weapon
 is its own ammunition.
 
-=== Cleaving
+=== Cleaving <cleaving>
 _Sickle, battleaxe, glaive, greataxe, longsword, scimitar_
 
 Once per turn when you hit with a Cleaving weapon, you can attempt to
@@ -4896,14 +4869,14 @@ carry some of the damage onto another target within your reach. If you
 do so, compare the initial attack roll to the new target's AC. If it
 hits, they take the same damage as the initial target.
 
-=== Heavy
+=== Heavy <heavy>
 _Glaive, greataxe, greatsword, halberd, maul, pike_
 
 Small creatures have disadvantage on attack rolls with heavy weapons. A
 heavy weapon's size and bulk make it too large for a Small creature to
 use effectively.
 
-=== Light 
+=== Light  <light->
 _Club, dagger, handaxe, light hammer, sickle, scimitar, shortsword, hand crossbow_
 
 A light weapon is small and easy to handle, making it ideal for use when
@@ -4912,7 +4885,7 @@ and take the Attack action, you can make an extra attack as long as you
 make attacks with each weapon. This extra attack does not add your
 ability modifier to the damage dealt.
 
-=== Loading
+=== Loading <loading>
 _Light crossbow, hand crossbow, heavy crossbow_
 
 Because of the time required to load this weapon, you can fire only one
@@ -4921,14 +4894,14 @@ reaction to fire it, regardless of the number of attacks you can
 normally make.
 
 
-=== Parrying 
+=== Parrying  <parrying->
 _Greatsword, halberd, longsword_
 
 When you take the Deflect action while wielding a parrying weapon, you
 no longer expend your reaction. You can only use the Deflect action once
 during any turn.
 
-=== Precise
+=== Precise <precise>
 _Dagger, pike, rapier, shortsword, war pick, longbow_
 
 These weapons are well adapted to finding the gaps in heavily-armored
@@ -4936,7 +4909,7 @@ foes. When you make an attack with a precise weapon and have advantage,
 you score a critical hit on a 19 or 20.
 
 
-=== Range 
+=== Range  <range->
 
 A weapon that can be used to make a ranged attack has a range in
 parentheses after the ammunition or thrown property. The range lists two
@@ -4945,19 +4918,19 @@ indicates the weapon's long range. When attacking a target beyond normal
 range, you have disadvantage on the attack roll. You can't attack a
 target beyond the weapon's long range.
 
-=== Reach
+=== Reach <reach>
 _Glaive, halberd, lance, pike, whip_
 
 This weapon adds 5 feet to your reach when you attack with it, as well
 as when determining your reach for opportunity attacks with it.
 
-=== Special
+=== Special <special>
 _lance, whip, blowgun, alchemist's fire flask, holy water flask_
 
 A weapon with the special property has unusual rules governing its use,
 explained in the weapon's description (see "Special Weapons" in the Equipment document).
 
-=== Thrown
+=== Thrown <thrown>
 _Dagger, handaxe, javelin, light hammer, dart, acid vial, alchemist's fire flask, holy water flask_
 
 If a weapon has the thrown property, you can throw the weapon to make an
@@ -4971,9 +4944,9 @@ This weapon requires two hands when you attack with it. You can hold it
 in one hand, however. Two-handed melee weapons add twice your Strength
 modifier to the damage dealt, instead of just your Strength modifier.
 
-= Legal
+= Legal <legal>
 
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
 
 The remainder of the text is licensed under the same license by the author, Admiral Benbo. Please attribute as: "NIH Character Creation by Admiral Benbo, licensed under CC BY 4.0 [Link to License]."
-
+]

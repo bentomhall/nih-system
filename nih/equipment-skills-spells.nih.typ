@@ -1,6 +1,8 @@
-#import "@preview/dragonling:0.3.1": *
 
-#show: dndmodule.with(
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
     title: "NIH: Equipment, Skill Tricks, Spells",
     subtitle: "All the extras you need to make a character",
     author: "Admiral Benbo",
@@ -9,30 +11,10 @@
     logo: none,
     fancy-author: true,
     bg: none
-)
+  )
+]
 
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-= Equipment
+= Equipment <equipment>
 
 Common coins come in several different denominations based on the
 relative worth of the metal from which they are made. The three most
@@ -85,13 +67,13 @@ more in the dungeons you explore. Normally, you can sell your treasures
 and trinkets when you return to a town or other settlement, provided
 that you can find buyers and merchants interested in your loot.
 
-=== Arms, Armor, and Other Equipment 
+=== Arms, Armor, and Other Equipment <arms--armor--and-other-equipment>
 
 As a general rule, undamaged weapons, armor, and other equipment fetch
 half their cost when sold in a market. Weapons and armor used by
 monsters are rarely in good enough condition to sell.
 
-=== Magic Items
+=== Magic Items <magic-items>
 
 Selling magic items is problematic. Finding someone to buy a potion or a
 scroll isn't too hard, but other items are out of the realm of most but
@@ -100,21 +82,21 @@ you won't normally come across magic items or spells to purchase. The
 value of magic is far beyond simple gold and should always be treated as
 such.
 
-=== Gems, Jewelry, and Art Objects
+=== Gems, Jewelry, and Art Objects <gems--jewelry--and-art-objects>
 
 These items retain their full value in the marketplace, and you can
 either trade them in for coin or use them as currency for other
 transactions. For exceptionally valuable treasures, the GM might require
 you to find a buyer in a large town or larger community first.
 
-=== Trade Goods
+=== Trade Goods <trade-goods>
 
 Many people conduct transactions through barter.
 Like gems and art objects, trade goods---bars of iron, bags of salt,
 livestock, and so on---retain their full value in the market and can be
 used as currency.
 
-= Armor
+= Armor <armor>
 
 Quartus is a vast tapestry made up of many different cultures, each with
 its own technology level and historical development path. For this
@@ -172,13 +154,13 @@ adventurers since it offers some protection without sacrificing
 mobility. If you wear light armor, you add your Dexterity modifier to
 the base number from your armor type to determine your Armor Class.
 
-=== Leather
+=== Leather <leather>
 
 The breastplate and shoulder protectors of this armor are made of
 leather that has been stiffened by being boiled in oil. The remainder is either supple leather or cloth. It only covers
 the vitals and rarely has a back-plate.
 
-=== Reinforced Leather
+=== Reinforced Leather <reinforced-leather>
 
 Reinforced leather armor is a regular leather suit of armor that has
 been reinforced with metal, wood, or bone plates in a few critical areas. It
@@ -191,21 +173,21 @@ impairs movement more. If you wear medium armor, you add your Dexterity
 modifier, to a maximum of +2, to the base number from your armor type to
 determine your Armor Class.
 
-=== Chain Shirt
+=== Chain Shirt <chain-shirt>
 
 Made of interlocking metal rings, a chain shirt is worn between layers
 of clothing or leather. This armor offers modest protection to the
 wearer's upper body and allows the sound of the rings rubbing against
 one another to be muffled by outer layers.
 
-=== Brigandine
+=== Brigandine <brigandine>
 
 Also called a coat-of-plates, this armor consists of a heavy cloth cover
 with small plates riveted between the layers, much like a heavier
 version of Reinforced Leather. It may cover the upper arms, but is often
 in the form of a vest. It is often worn with protective leg coverings of cloth and leather.
 
-=== Breastplate
+=== Breastplate <breastplate>
 
 This armor consists of a fitted metal chest piece worn with chain
 tassets (covering the hips and upper thighs) and fauds (covering the
@@ -225,27 +207,27 @@ Heavy armor doesn't let you add your Dexterity modifier to your Armor
 Class (unless masterwork), but it also doesn't penalize you if your
 Dexterity modifier is negative.
 
-=== Lamellar armor
+=== Lamellar armor <lamellar-armor>
 
 This armor is made of metal (usually, although bone and wood can also be
 used) strips or plates held together by leather cords. Separate arm,
 leg, foot, and head pieces of the same pattern are commonly worn.
 
-=== Chain Mail
+=== Chain Mail <chain-mail>
 
 Made of interlocking metal rings, chain mail includes a layer of quilted
 fabric worn underneath the mail to prevent chafing and to cushion the
 impact of blows. The suit includes gauntlets, long sleeves, and a chain
 coif (head covering).
 
-=== Half Plate
+=== Half Plate <half-plate>
 
 Half plate consists of shaped metal plates that cover most of the
 wearer's body with a mail skirt and metal tassets and fauds to cover the hips, groin, and shoulders. It does not include leg protection beyond simple greaves
 that are attached with leather straps; similar coverings are used for
 the arms.
 
-=== Plate
+=== Plate <plate>
 
 Plate (also called "plate mail", despite that being a misnomer) consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots or metal
 sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
@@ -274,12 +256,12 @@ sabatons, a visored helmet, and thick layers of padding and underneath the armor
 
 The time it takes to don or doff armor depends on the armor's category.
 
-=== Don 
+=== Don <don>
 
 This is the time it takes to put on armor. You benefit from the armor's
 AC only if you take the full time to don the suit of armor.
 
-=== Doff 
+=== Doff <doff>
 
 This is the time it takes to take off armor. If you have help, reduce
 this time by half.
@@ -318,19 +300,19 @@ max.
 "Mithril","Heavy armor, medium armor","Adventurer",
 )
 
-=== Adamantine
+=== Adamantine <adamantine>
 This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor has a strength requirement of +3.
 
-=== Exotic Chitin and Scales
+=== Exotic Chitin and Scales <exotic-chitin-and-scales>
 When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into lamellar, brigandine, and breastplates. Such armor is non-metallic, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
 
-=== Exotic Leather
+=== Exotic Leather <exotic-leather>
 When skinned carefully and properly tanned, exotic leathers and hides can be made into leather and reinforced leather armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
 
-=== Mythril
+=== Mythril <mythril>
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
 
-= Weapons
+= Weapons <weapons>
 
 Your class grants proficiency in certain weapons, reflecting both the
 class's focus and the tools you are most likely to use. Whether you
@@ -361,7 +343,7 @@ the attack roll for any attack you make with that weapon. If you make an
 attack roll using a weapon with which you lack proficiency, you do not
 add your proficiency bonus to the attack roll.
 
-== Weapon Properties
+== Weapon Properties <weapon-properties>
 
 Many weapons have special properties related to their use, as shown in
 the Weapons table.
@@ -380,7 +362,7 @@ are wielding a shield or are holding anything in one of your hands.
 Unlike 5e, there is no Versatile property.
 ]
 
-=== Ammunition 
+=== Ammunition <ammunition-property>
 
 You can use a weapon that has the ammunition property to make a ranged
 attack only if you have ammunition to fire from the weapon. Each time
@@ -395,30 +377,30 @@ attack, you treat the weapon as an improvised weapon (see "Improvised
 Weapons" later in the section). A sling must be loaded to deal any
 damage when used in this way.
 
-=== Battering 
+=== Battering <battering-property>
 
 When you miss on an attack with a Battering weapon and do not roll a 1,
 the target still takes damage equal to your proficiency bonus.
 
-=== Consumed 
+=== Consumed <consumed-property>
 
 Unlike most thrown weapons, each attack consumes the weapon, as the weapon
 is its own ammunition.
 
-=== Cleaving 
+=== Cleaving <cleaving-property>
 
 Once per turn when you hit with a Cleaving weapon, you can attempt to
 carry some of the damage onto another target within your reach. If you
 do so, compare the initial attack roll to the new target's AC. If it
 hits, they take the same damage as the initial target.
 
-=== Heavy 
+=== Heavy <heavy-property>
 
 Small creatures have disadvantage on attack rolls with heavy weapons. A
 heavy weapon's size and bulk make it too large for a Small creature to
 use effectively.
 
-=== Light
+=== Light <light-property>
 
 A light weapon is small and easy to handle, making it ideal for use when
 fighting with two weapons. When you wield a light weapon in each hand
@@ -426,26 +408,26 @@ and take the Attack action, you can make an extra attack as long as you
 make attacks with each weapon. This extra attack does not add your
 ability modifier to the damage dealt.
 
-=== Loading
+=== Loading <loading-property>
 
 Because of the time required to load this weapon, you can fire only one
 piece of ammunition from it when you use an action, bonus action, or
 reaction to fire it, regardless of the number of attacks you can
 normally make.
 
-=== Parrying
+=== Parrying <parrying-property>
 
 When you take the Deflect action while wielding a parrying weapon, you
 no longer expend your reaction. You can only use the Deflect action once
 during any turn.
 
-=== Precise
+=== Precise <precise-property>
 
 These weapons are well adapted to finding the gaps in heavily-armored
 foes. When you make an attack with a precise weapon and have advantage,
 you score a critical hit on a 19 or 20.
 
-=== Range
+=== Range <range-property>
 
 A weapon that can be used to make a ranged attack has a range in
 parentheses after the ammunition or thrown property. The range lists two
@@ -454,18 +436,18 @@ indicates the weapon's long range. When attacking a target beyond normal
 range, you have disadvantage on the attack roll. You can't attack a
 target beyond the weapon's long range.
 
-=== Reach
+=== Reach <reach-property>
 
 This weapon adds 5 feet to your reach when you attack with it, as well
 as when determining your reach for opportunity attacks with it.
 
-=== Special
+=== Special <special-property>
 
 A weapon with the special property has unusual rules governing its use,
 explained in the weapon's description (see "Special Weapons" later in
 this section).
 
-=== Thrown
+=== Thrown <thrown-property>
 
 If a weapon has the thrown property, you can throw the weapon to make an
 attack at larger range. If the weapon is a melee weapon, you use the
@@ -473,13 +455,13 @@ same ability modifier for that attack roll and damage roll that you
 would use for a melee attack with the weapon. The range is defined the
 same way as it is for a ranged weapon, but this remains a melee attack.
 
-=== Two-Handed
+=== Two-Handed <two-handed-property>
 
 This weapon requires two hands when you attack with it. You can hold it
 in one hand, however. Two-handed weapons add twice your Strength
 modifier to the damage dealt, instead of just your Strength modifier.
 
-=== Improvised Weapons
+=== Improvised Weapons <improvised-weapons>
 
 Sometimes characters don't have their weapons and have to attack with
 whatever is at hand. An improvised weapon includes any object you can
@@ -528,30 +510,30 @@ effect, and application of each material can be found on the table.
 "Necrite","Ammunition, melee weapons","Adventurer",
 )
 
-=== Adamantine
+=== Adamantine <adamantine>
 This dark, dull-black metal is quite dense (about twice the density of iron). It takes an expert to work it into effective weapons. Weapons forged from adamantine deal maximum damage to objects, ignore construct damage resistance, but cannot be effectively wielded by anyone without at least STR +3. 
 
-=== Ignitite
+=== Ignitite <ignitite>
 This red and black stone can be ground up and alloyed with steel to make weapons. Such weapons deal 1d6 additional fire damage on hit. These weapons ignite flammable materials (like a flint and tinder) and must be sheathed in non-flammable cases or sheaths.
 
-=== Mythril
+=== Mythril <mythril>
 Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Greatswords and greataxes lose the Heavy property, and weapons without the Two-Handed property gain the Light property.
 
-=== Necrite
+=== Necrite <necrite>
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.
 
-== Special Weapons
+== Special Weapons <special-weapons>
 
 Weapons with special rules are described here.
 
-=== Alchemist's Fire
+=== Alchemist's Fire <alchemist-s-fire>
 
 This sticky, adhesive fluid ignites when exposed to air. On a hit, the
 target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
 
-=== Blowgun
+=== Blowgun <blowgun>
 
 These needles don't do much damage by themselves but make excellent
 vehicles for poison and are particularly hard to notice. When you make
@@ -560,7 +542,7 @@ you miss. In addition, you can poison up to 20 blowgun darts with a
 single vial of poison and do so as part of the action required to make
 the attack.
 
-=== Holy Water
+=== Holy Water <holy-water>
 
 If the target is a fiend or undead or has a special vulnerability to
 damage from silvered weapons, it takes 2d6 radiant damage and counts as
@@ -568,18 +550,18 @@ having been struck by a silvered weapon. Any devout individual may
 create holy water by performing a special ritual. The ritual takes 1
 hour to perform and consumes 25 gp worth of powdered silver.
 
-=== Lance
+=== Lance <lance>
 
 You have disadvantage when you use a lance to attack a target within 5
 feet of you. Also, a lance requires two hands to wield when you aren't
 mounted.
 
-=== Trident
+=== Trident <trident>
 
 Critical hits made with this weapon grapple the enemy until the end of
 your next turn (escape DC 8 + your attack bonus with the trident).
 
-=== Whip
+=== Whip <whip>
 
 While wielding a whip, you have advantage on ability checks made to push
 someone prone (ie trip them) and when you do so, you can choose to pull
@@ -630,19 +612,19 @@ them 5 ft closer to you as part of that same attack.
 "Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
 )
 
-== Adventuring Gear
+== Adventuring Gear <adventuring-gear>
 
 This section describes items that have special rules or require further
 explanation.
 
-=== Arcane Focus
+=== Arcane Focus <arcane-focus>
 
 An arcane focus is a special item---an orb, a crystal, a rod, a
 specially constructed staff, a wand-like length of wood, or some similar
 item--- designed to channel the power of arcane spells. An arcanist can
 use such an item as a spellcasting focus.
 
-=== Ball Bearings
+=== Ball Bearings <ball-bearings>
 
 As an action, you can spill these tiny metal balls from their pouch to
 cover a level, square area that is 10 feet on a side. A creature moving
@@ -650,20 +632,20 @@ across the covered area must succeed on a DC 10 Dexterity saving throw
 or fall prone. A creature moving through the area at half speed doesn't
 need to make the save.
 
-=== Block and Tackle
+=== Block and Tackle <block-and-tackle>
 
 A set of pulleys with a cable threaded through them and a hook to attach
 to objects, a block and tackle allows you to hoist up to four times the
 weight you can normally lift.
 
-=== Book
+=== Book <book>
 
 A book might contain poetry, historical accounts, information pertaining
 to a particular field of lore, diagrams and notes on gnomish
 contraptions, or just about anything else that can be represented using
 text or pictures.
 
-=== Caltrops
+=== Caltrops <caltrops>
 
 As an action, you can spread a bag of caltrops to cover a square area
 that is 5 feet on a side. Any creature that enters the area must succeed
@@ -672,26 +654,26 @@ piercing damage. Taking this damage reduces the creature's walking speed
 by 10 feet until the creature regains at least 1 hit point. A creature
 moving through the area at half speed doesn't need to make the save.
 
-=== Candle
+=== Candle <candle>
 
 For 1 hour, a candle sheds bright light in a 5-foot radius and dim light
 for an additional 5 feet.
 
-=== Case, Crossbow Bolt
+=== Case, Crossbow Bolt <case--crossbow-bolt>
 
 This wooden case can hold up to twenty crossbow bolts.
 
-=== Case, Map or Scroll
+=== Case, Map or Scroll <case--map-or-scroll>
 
 This cylindrical leather case can hold up to ten rolled-up sheets of
 paper or five rolled-up sheets of parchment.
 
-=== Chain
+=== Chain <chain>
 
 A chain has 10 hit points. It can be burst with a successful DC 20
 Strength check.
 
-=== Climber's Kit
+=== Climber's Kit <climber-s-kit>
 
 A climber's kit includes special pitons, boot tips, gloves, and a
 harness. You can use the climber's kit as an action to anchor yourself;
@@ -699,31 +681,31 @@ when you do, you can't fall more than 25 feet from the point where you
 anchored yourself, and you can't climb more than 25 feet away from that
 point without undoing the anchor.
 
-=== Component Pouch
+=== Component Pouch <component-pouch>
 
 A component pouch is a small, watertight leather belt pouch that has
 compartments to hold all the material components and other special items
 you need to cast your spells, except for those components that have a
 specific cost (as indicated in a spell's description).
 
-=== Crowbar
+=== Crowbar <crowbar>
 
 Using a crowbar grants advantage to Strength checks where the crowbar's
 leverage can be applied.
 
-=== Fishing Tackle
+=== Fishing Tackle <fishing-tackle>
 
 This kit includes a wooden rod, silken line, corkwood bobbers, steel
 hooks, lead sinkers, velvet lures, and narrow netting.
 
-=== Healer's Kit
+=== Healer's Kit <healer-s-kit>
 
 This kit is a leather pouch containing bandages, salves, and splints.
 The kit has ten uses. As an action, you can expend one use of the kit to
 stabilize a creature that has 0 hit points, without needing to make a
 Wisdom (Medicine) check.
 
-=== Holy Symbol
+=== Holy Symbol <holy-symbol>
 
 A holy symbol is a representation of a god or pantheon. It might be an
 amulet depicting a symbol representing a deity, the same symbol
@@ -731,7 +713,7 @@ carefully engraved or inlaid as an emblem on a shield, or a tiny box
 holding a fragment of a sacred relic. To use the symbol as a focus, the
 caster must hold it in hand, wear it visibly, or bear it on a shield.
 
-=== Hunting Trap
+=== Hunting Trap <hunting-trap>
 
 When you use your action to set it, this trap forms a saw-toothed steel
 ring that snaps shut when a creature steps on a pressure plate in the
@@ -745,33 +727,33 @@ Strength check, freeing itself or another creature within its reach on a
 success. Each failed check deals 1 piercing damage to the trapped
 creature.
 
-=== Lamp
+=== Lamp <lamp>
 
 A lamp casts bright light in a 15-foot radius and dim light for an
 additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint)
 of oil.
 
-=== Lantern, Bullseye
+=== Lantern, Bullseye <lantern--bullseye>
 
 A bullseye lantern casts bright light in a 60-foot cone and dim light
 for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1
 pint) of oil.
 
-=== Lantern, Hooded
+=== Lantern, Hooded <lantern--hooded>
 
 A hooded lantern casts bright light in a 30-foot radius and dim light
 for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1
 pint) of oil. As an action, you can lower the hood, reducing the light
 to dim light in a 5-foot radius.
 
-=== Lock
+=== Lock <lock>
 
 A key is provided with the lock. Without the key, a creature proficient
 with thieves' tools can pick this lock with a successful DC 15 Dexterity
 check. Your GM may decide that better locks are available for higher
 prices.
 
-=== Magnifying Glass
+=== Magnifying Glass <magnifying-glass>
 
 This lens allows a closer look at small objects. It is also useful as a
 substitute for flint and steel when starting fires. Lighting a fire with
@@ -780,7 +762,7 @@ to ignite, and about 5 minutes for the fire to ignite. A magnifying
 glass grants advantage on any ability check made to appraise or inspect
 an item that is small or highly detailed.
 
-=== Manacles
+=== Manacles <manacles>
 
 These metal restraints can bind a Small or Medium creature. Escaping the
 manacles requires a successful DC 20 Dexterity check. Breaking them
@@ -789,13 +771,13 @@ with one key. Without the key, a creature proficient with thieves' tools
 can pick the manacles' lock with a successful DC 15 Dexterity check.
 Manacles have 15 hit points.
 
-=== Mess Kit
+=== Mess Kit <mess-kit>
 
 This tin box contains a cup and simple cutlery. The box clamps together,
 and one side can be used as a cooking pan and the other as a plate or
 shallow bowl.
 
-=== Net
+=== Net <net>
 
 As an action, throw the net at a creature within 15 ft. The target must
 make a Dexterity saving throw with a DC of 8 + your Strength modifier
@@ -807,7 +789,7 @@ itself or another creature within its reach on a success. Dealing 5
 slashing damage to the net (AC 10) also frees the creature without
 harming it, ending the effect and destroying the net.
 
-=== Oil
+=== Oil <oil>
 
 Oil usually comes in a clay flask that holds 1 pint. As an action, you
 can splash the oil in this flask onto a creature within 5 feet of you or
@@ -821,7 +803,7 @@ surface is level. If lit, the oil burns for 2 rounds and deals 5 fire
 damage to any creature that enters the area or ends its turn in the
 area. A creature can take this damage only once per turn.
 
-=== Poison, Basic
+=== Poison, Basic <poison--basic>
 
 You can use the poison in this vial to coat one slashing or piercing
 weapon or up to three pieces of ammunition. Applying the poison takes an
@@ -834,41 +816,41 @@ A character who drinks the magical red fluid in this vial regains 2d4 +
 2 hit points. Drinking a potion takes a bonus action; administering it
 to another takes an action.
 
-=== Pouch
+=== Pouch <pouch>
 
 A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun
 needles, among other things. A compartmentalized pouch for holding spell
 components is called a component pouch (described earlier in this
 section).
 
-=== Quiver
+=== Quiver <quiver>
 
 A quiver can hold up to 20 arrows.
 
-=== Ram, Portable
+=== Ram, Portable <ram--portable>
 
 You can use a portable ram to break down doors. When doing so, you gain
 a +4 bonus on the Strength check. One other character can help you use
 the ram, giving you advantage on this check.
 
-=== Rations
+=== Rations <rations>
 
 Rations consist of dry foods suitable for extended travel, including
 jerky, dried fruit, hardtack, and nuts.
 
-=== Rope
+=== Rope <rope>
 
 Rope, whether made of hemp or silk, has 2 hit points and can be burst
 with a DC 17 Strength check.
 
-=== Scale, Merchant's
+=== Scale, Merchant's <scale--merchant-s>
 
 A scale includes a small balance, pans, and a suitable assortment of
 weights up to 2 pounds. With it, you can measure the exact weight of
 small objects, such as raw precious metals or trade goods, to help
 determine their worth.
 
-=== Shamanic Focus
+=== Shamanic Focus <shamanic-focus>
 
 A shamanic focus might be a sprig of mistletoe or holly, a wand or
 scepter made of yew or another special wood, a staff drawn whole out of
@@ -876,11 +858,11 @@ a living tree, or a totem object incorporating feathers, fur, bones, and
 teeth from sacred animals. A shaman can use such an object as a
 spellcasting focus.
 
-=== Spyglass
+=== Spyglass <spyglass>
 
 Objects viewed through a spyglass are magnified to twice their size, making them visible from further away (see Visibility in the core rules).
 
-=== Tent
+=== Tent <tent>
 
 A simple and portable canvas shelter, a tent sleeps two and protects from the elements.
 
@@ -939,14 +921,14 @@ A simple and portable canvas shelter, a tent sleeps two and protects from the el
 "Hourglass","25 gp","1 lb.","","Whetstone","1 cp","1 lb.",
 )
 
-=== Tinderbox
+=== Tinderbox <tinderbox>
 
 This small container holds flint, fire steel, and tinder (usually dry
 cloth soaked in light oil) used to kindle a fire. Using it to light a
 torch---or anything else with abundant, exposed fuel---takes an action.
 Lighting any other fire takes 1 minute.
 
-=== Torch
+=== Torch <torch>
 
 A torch burns for 1 hour, providing bright light in a 20-foot radius and
 dim light for an additional 20 feet. If you make a melee attack with a
@@ -972,7 +954,7 @@ burning torch and hit, it deals 1 fire damage.
 You can also strap items, such as a bedroll or a coil of rope, to the
 outside of a backpack. This does not count against the weight limit.
 
-=== Equipment Packs
+=== Equipment Packs <equipment-packs>
 
 The starting equipment you get from your class includes a collection of
 useful adventuring gear, put together in a pack. The contents of these
@@ -1021,7 +1003,7 @@ waterskin.
 Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10
 sheets of parchment, a little bag of sand, and a small knife.
 
-== Tools
+== Tools <tool-proficiencies>
 
 A tool helps you to do something you couldn't otherwise do, such as
 craft or repair an item, forge a document, or pick a lock. Your lineage,
@@ -1033,7 +1015,7 @@ knowledge of its use. For example, the GM might ask you to make a
 Dexterity check to carve a fine detail with your woodcarver's tools, or
 a Strength check to make something out of particularly hard wood.
 
-=== Artisan's Tools
+=== Artisan's Tools <artisan-s-tools>
 
 These special tools include the items needed to pursue a craft or trade.
 The table shows examples of the most common types of tools, each
@@ -1042,14 +1024,14 @@ artisan's tools lets you add your proficiency bonus to any ability
 checks you make using the tools in your craft. Each type of artisan's
 tools requires a separate proficiency.
 
-=== Disguise Kit
+=== Disguise Kit <disguise-kit>
 
 This pouch of cosmetics, hair dye, and small props lets you create
 disguises that change your physical appearance. Proficiency with this
 kit lets you add your proficiency bonus to any ability checks you make
 to create a visual disguise.
 
-=== Forgery Kit
+=== Forgery Kit <forgery-kit>
 
 This small box contains a variety of papers and parchments, pens and
 inks, seals and sealing wax, gold and silver leaf, and other supplies
@@ -1057,7 +1039,7 @@ necessary to create convincing forgeries of physical documents.
 Proficiency with this kit lets you add your proficiency bonus to any
 ability checks you make to create a physical forgery of a document.
 
-=== Gaming Set
+=== Gaming Set <gaming-set>
 
 This item encompasses a wide range of game pieces, including dice and
 decks of cards (for games such as Three-Dragon Ante). A few common
@@ -1066,7 +1048,7 @@ exist. If you are proficient with a gaming set, you can add your
 proficiency bonus to ability checks you make to play a game with that
 set. Each type of gaming set requires a separate proficiency.
 
-=== Herbalism Kit
+=== Herbalism Kit <herbalism-kit>
 
 This kit contains a variety of instruments such as clippers, mortar and
 pestle, and pouches and vials used by herbalists to create remedies and
@@ -1075,7 +1057,7 @@ to any ability checks you make to identify or apply herbs. Also,
 proficiency with this kit is required to create antitoxin and potions of
 healing.
 
-=== Musical Instrument
+=== Musical Instrument <musical-instrument>
 
 Several of the most common types of musical instruments are shown on the
 table as examples. If you have proficiency with a given musical
@@ -1083,21 +1065,21 @@ instrument, you can add your proficiency bonus to any ability checks you
 make to play music with the instrument. Each type of musical instrument
 requires a separate proficiency.
 
-=== Navigator's Tools
+=== Navigator's Tools <navigator-s-tools>
 
 This set of instruments is used for navigation at sea. Proficiency with
 navigator's tools lets you chart a ship's course and follow navigation
 charts. In addition, these tools allow you to add your proficiency bonus
 to any ability check you make to avoid getting lost at sea.
 
-=== Poisoner's Kit
+=== Poisoner's Kit <poisoner-s-kit>
 
 A poisoner's kit includes the vials, chemicals, and other equipment
 necessary for the creation of poisons. Proficiency with this kit lets
 you add your proficiency bonus to any ability checks you make to craft
 or use poisons.
 
-=== Thieves' Tools
+=== Thieves' Tools <thieves--tools>
 
 This set of tools includes a small file, a set of lock picks, a small
 mirror mounted on a metal handle, a set of narrow-bladed scissors, and a
@@ -1148,7 +1130,7 @@ locks.
 "Vehicles (land or water)","",
 )
 
-== Mounts and Vehicles
+== Mounts and Vehicles <mounts-and-vehicles>
 
 A good mount can help you move more quickly through the wilderness, but
 its primary purpose is to carry the gear that would otherwise slow you
@@ -1168,27 +1150,27 @@ mount often means securing an egg and raising the creature yourself,
 making a bargain with a powerful entity, or negotiating with the mount
 itself.
 
-=== Barding
+=== Barding <barding>
 
 Barding is armor designed to protect an animal's head, neck, chest, and
 body. Any type of armor shown on the Armor table can be purchased as
 barding. The cost is four times the equivalent armor made for humanoids,
 and it weighs twice as much.
 
-=== Saddles
+=== Saddles <saddles>
 
 A military saddle braces the rider, helping you keep your seat on an
 active mount in battle. It gives you advantage on any check you make to
 remain mounted. An exotic saddle is required for riding any aquatic or
 flying mount.
 
-=== Vehicle Proficiency
+=== Vehicle Proficiency <vehicle-proficiency>
 
 If you have proficiency with a certain kind of vehicle (land or water),
 you can add your proficiency bonus to any check you make to control that
 kind of vehicle in difficult circumstances.
 
-=== Rowed Vessels
+=== Rowed Vessels <rowed-vessels>
 
 Keelboats and rowboats are used on lakes and rivers. If going
 downstream, add the speed of the current (typically 3 miles per hour) to
@@ -1236,7 +1218,7 @@ over land.
 "Warship","25,000 gp","2½ mph",
 )
 
-== Trade Goods
+== Trade Goods <trade-goods>
 
 Most wealth is not in coins. It is measured in livestock, grain, land,
 rights to collect taxes, or rights to resources (such as a mine or a
@@ -1267,7 +1249,7 @@ the value of commonly exchanged goods.
 "500 gp","1 lb. of platinum",
 )
 
-== Expenses
+== Expenses <expenses>
 
 When not descending into the depths of the earth, exploring ruins for
 lost treasures, or waging war against the encroaching darkness,
@@ -1276,7 +1258,7 @@ people require basic necessities such as shelter, sustenance, and
 clothing. These things cost money, although some lifestyles cost more
 than others.
 
-=== Lifestyle Expenses
+=== Lifestyle Expenses <lifestyle-expenses>
 
 Lifestyle expenses provide you with a simple way to account for the cost
 of living in a fantasy world. They cover your accommodations, food and
@@ -1363,7 +1345,7 @@ deceit and treachery. The wealthier you are, the greater the chance you
 will be drawn into political intrigue as a pawn or participant.
 ]
 
-=== Self-Sufficiency
+=== Self-Sufficiency <self-sufficiency>
 
 The expenses and lifestyles described here assume that you are spending
 your time between adventures in town, availing yourself of whatever
@@ -1379,7 +1361,7 @@ adventures practicing a profession, you can eke out the equivalent of a
 poor lifestyle. Proficiency in the Survival skill lets you live at the
 equivalent of a comfortable lifestyle.
 
-=== Food, Drink, and Lodging
+=== Food, Drink, and Lodging <food--drink--and-lodging>
 
 The Food, Drink, and Lodging table gives prices for individual food
 items and a single night's lodging. These prices are included in your
@@ -1413,7 +1395,7 @@ total lifestyle expenses.
 "Hard liquor (fifth)","20 gp",
 )
 
-=== Services
+=== Services <services>
 
 Adventurers can pay non-player characters to assist them or act on their
 behalf in a variety of circumstances. Most such hirelings have fairly
@@ -1460,7 +1442,7 @@ dangerous situations
 "Ship's passage","1 sp per mile",
 )
 
-=== Spellcasting Services
+=== Spellcasting Services <spellcasting-services>
 
 People who are able to cast spells don't fall into the category of
 ordinary hirelings. It might be possible to find someone willing to cast
@@ -1469,8 +1451,7 @@ established pay rates exist. As a rule, the higher the power of the
 desired spell, the harder it is to find someone who can cast it and the
 more it costs.
 
-Hiring someone to cast a relatively common spell or incantation, such as
-_cure wounds_ or _identify_, is easy enough in a city or town, and might
+Hiring someone to cast a relatively common spell or incantation, such as #safe-link("cure-wounds",[_cure wounds_]) or #safe-link("identify",[_identify_]), is easy enough in a city or town, and might
 cost 10 to 50 gold pieces (plus the cost of any expensive material
 components). Finding someone able and willing to cast a higher-power
 spell might involve traveling to a large city, perhaps one with a
@@ -1483,7 +1464,7 @@ more coin, but mostly-disposable help is always in demand.
 
 As a general rule (with wide variation), you can find people willing to cast spells for pay based on the size of the settlement: those that require 2 AET or less can be found in most villages, 3 AET or less in most towns, and 5 AET or less in cities. You're highly unlikely to find anyone willing to take coin for spells costing more than 5 AET or incantations above the Adventurer rank.
 
-= Fantastic Equipment
+= Fantastic Equipment <magic-equipment>
 
 NIH system includes magic items. It is expected that adventurers will accumulate some items of various worth over the course of their adventures. However, NIH system does not assume, in its core math, that adventurers will have _specific_ magic items at specific levels, especially those that enhance Armor Class, Attack Bonus, Saving Throw modifiers, or Saving Throw DCs. In fact, these kinds of items do not exist. You will not find a single "+1 longsword" here. Enhancements to damage are completely fine. Enhancements to accuracy (or target numbers) cause significant distortions in bounded accuracy and quickly become the dominant option in all but the rarest of cases.
 
@@ -1495,8 +1476,8 @@ I have chosen not to include cursed items in this list. Too often, I've found th
 But, as always, do as you wish. They don't break anything, they're just not to my personal taste.
 ]
 
-== Tier
-Magic items have a *tier* assigned to them, which indicates approximately at what stage of play (see Stages of Play in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
+== Tier <equipment-tiers>
+Magic items have a *tier* assigned to them, which indicates approximately at what stage of play (see #safe-link("stages-of-play")[Stages of Play] in the Core Rules) they become appropriate to find as well as the tier of component required to create them. A GM can deviate from this. For example, killing a much tougher monster than the party would normally face might reward a higher-rarity item than would otherwise be normal. But do so with caution.
 
 The item tiers are:
 #flush-block[
@@ -1507,7 +1488,7 @@ The item tiers are:
 - *Artifact.* Artifacts are plot items of widely ranging power and may or may not appear in any given game. These are named items with substantial historical significance and, if they can be created at all, their creation is the subject of an entire campaign; they act as key plot items. Generally, once an artifact is used (whether for its intended purpose or not), it disappears and reappears somewhere and somewhen else. Artifacts are frequently actual characters in item form, with a mind and will of their own. *No artifacts are detailed here. They're too individual to a particular campaign.*
 ]
 
-== Crafting Magic Items
+== Crafting Magic Items <crafting-magic-items>
 
 To craft magic items, you need a few things.
 #flush-block[
@@ -1538,17 +1519,17 @@ Magic items are organized alphabetically by category. The categories are:
 - weapons (including magic staffs, which can be used as quarterstaffs)
 - miscellaneous items (often called "wondrous items")
 
-== Armor, Magic
+== Armor, Magic <magic-armor>
 
 This section contains the various magic items that are worn as armor or clothing, as well as shields.
 
-=== Boots, belts, cloaks, gloves, and helmets
+=== Boots, belts, cloaks, gloves, and helmets <boots--belts--cloaks--gloves--and-helmets>
 Even though many types of armor (especially heavy armor) have integrated sabatons (armored boots), belts, gauntlets, and helmets, you can wear magic items listed as boots, belts, cloaks, gloves (or gauntlets), or helmets (or hats) without reducing the protective qualities of the armor. Some magic items (such as the Demon Armor) may impose more specific restrictions. You must wear both of a pair of magic gloves or magic boots to gain any benefit from them. You can only gain the benefits of one pair of boots, one cloak, one pair of gloves or gauntlets, one helmet or hat, and one belt at the same time, even if they do not require attunement.
 
-=== Robes
+=== Robes <robes>
 Robes cannot be worn with any armor, magical or not, except a mithral breastplate or any chain shirt.
 
-=== Adamantine Armor
+=== Adamantine Armor <adamantine-armor>
 
 _Armor (medium or heavy, but not hide), Adventurer_
 
@@ -1556,22 +1537,22 @@ This suit of armor is reinforced with adamantine, one of the hardest substances 
 
 *Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
-=== Aelven Chain
+=== Aelven Chain <aelven-chain>
 _Armor (masterwork chain shirt), Hero_
 
 This also counts as mithril. You are considered proficient with this armor even if you lack proficiency with medium armor, and can cast spells normally while wearing it even if you would not otherwise be able to.
 
-=== Animated Shield
+=== Animated Shield <animated-shield>
 _Armor (shield), Hero (requires attunement)_ 
 
 While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
 
-=== Armor of Invulnerability
+=== Armor of Invulnerability <armor-of-invulnerability>
 _Armor (plate), legendary (requires attunement)_
 
 You have resistance to all damage while you wear this armor. Additionally, you can use an action to make yourself immune to damage from non-legendary effects for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.
 
-=== Armor of Energy Resistance
+=== Armor of Energy Resistance <armor-of-energy-resistance>
 _Armor (any), Hero (requires attunement)_
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.
@@ -1583,17 +1564,17 @@ You have resistance to one type of damage while you wear this armor. The GM choo
 "4","Lightning","","8","Thunder",
 )
 
-=== Armor of Physical Resistance
+=== Armor of Physical Resistance <armor-of-physical-resistance>
 _Armor (any), Hero (requires attunement)_ 
 
 While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The GM chooses the type or determines it randomly.
 
-=== Arrow-Catching Shield
+=== Arrow-Catching Shield <arrow-catching-shield>
 _Armor (shield), Hero (requires attunement)_ 
 
 You gain half cover against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.
 
-=== Belt of Giant Strength
+=== Belt of Giant Strength <belt-of-giant-strength>
 _Belt, varying tier (requires attunement)_
 
 While wearing this belt, your Strength score changes to a score granted by the belt. If your Strength is already equal to or greater than the belt's score, the item has no effect on you.
@@ -1609,22 +1590,22 @@ Six varieties of this belt exist, corresponding with and having rarity according
 "Storm giant","+9","Legendary",
 )
 
-=== Boots of Levitation
+=== Boots of Levitation <boots-of-levitation>
 _Boots, Hero (requires attunement)_
 
-While you wear these boots, you can use an action to cast the _levitate_ spell on yourself at will.
+While you wear these boots, you can use an action to cast the #safe-link("levitate",[_levitate_]) spell on yourself at will.
 
-=== Boots of Speed
+=== Boots of Speed <boots-of-speed>
 _Boots, Hero (requires attunement)_
 
 While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect; otherwise, the effect ends after 1 minute. The boots have three charges; each use expends a charge and all expended charges are restored at dawn.
 
-=== Boots of Striding and Springing
+=== Boots of Striding and Springing <boots-of-striding-and-springing>
 _Boots, Adventurer (requires attunement)_ 
 
 While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and you have advantage on any saving throw or ability check made to avoid being grappled or restrained. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.
 
-=== Boots of the Winterlands
+=== Boots of the Winterlands <boots-of-the-winterlands>
 _Boots, Adventurer (requires attunement)_
 
 These furred boots are snug and feel quite warm. While you wear them, you gain the following benefits:
@@ -1633,17 +1614,17 @@ These furred boots are snug and feel quite warm. While you wear them, you gain t
 - You ignore difficult terrain created by ice or snow.
 - You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit.
 
-=== Cape of the Mountebank
+=== Cape of the Mountebank <cape-of-the-mountebank>
 _Cloak, Hero_
 
-This cape smells faintly of brimstone. While wearing it, you can use it to cast the _dimension door_ spell as an action. This property of the cape can't be used again until the next dawn. When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke.
+This cape smells faintly of brimstone. While wearing it, you can use it to cast the #safe-link("dimension-door",[_dimension door_]) spell as an action. This property of the cape can't be used again until the next dawn. When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke.
 
-=== Circlet of Blasting
+=== Circlet of Blasting <circlet-of-blasting>
 _Hat, Adventurer_
 
-While wearing this circlet, you can use an action to cast the _scorching ray_ spell with it. When you make the spell's attacks, you do so with an attack bonus of +5. The circlet can't be used this way again until the next dawn.
+While wearing this circlet, you can use an action to cast the #safe-link("scorching-ray",[_scorching ray_]) spell with it. When you make the spell's attacks, you do so with an attack bonus of +5. The circlet can't be used this way again until the next dawn.
 
-=== Cloak of Arachnida
+=== Cloak of Arachnida <cloak-of-arachnida>
 _Cloak, Hero (requires attunement)_ 
 
 This fine garment is made of black spider-silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:
@@ -1652,36 +1633,36 @@ This fine garment is made of black spider-silk interwoven with faint silvery thr
 - You have a climbing speed equal to your walking speed.
 - You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.
 - You can't be caught in webs of any sort and can move through webs as if they were difficult terrain.
-- You can use an action to cast the _web_ spell (save DC 13). The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.
+- You can use an action to cast the #safe-link("web",[_web_]) spell (save DC 13). The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.
 
-=== Cloak of Displacement
+=== Cloak of Displacement <cloak-of-displacement>
 _Cloak, Hero (requires attunement)_
 
 While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move, and has no affect on creatures that use tremorsense or blindsight to see.
 
-=== Cloak of Protection
+=== Cloak of Protection <cloak-of-protection>
 _Cloak, Adventurer (requires attunement)_
 
 When you take the Deflect action or the Exert action (the latter on a saving throw), you gain a +1 bonus to the effect.
 
-=== Cloak of the Bat
+=== Cloak of the Bat <cloak-of-the-bat>
 _Cloak, Hero (requires attunement)_
 
 While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.
 
-While wearing the cloak in an area of dim light or darkness, you can use your action to cast _polymorph_ on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.
+While wearing the cloak in an area of dim light or darkness, you can use your action to cast #safe-link("polymorph",[_polymorph_]) on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.
 
-=== Cloak of the Manta Ray
+=== Cloak of the Manta Ray <cloak-of-the-manta-ray>
 _Cloak, Adventurer_
 
 While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action.
 
-=== Demon Armor
+=== Demon Armor <demon-armor>
 _Armor (masterwork plate), Adventurer (requires attunement)_
 
 While wearing this armor, you can understand and speak Abyssal. In addition, the armor's clawed gauntlets are light melee weapons that deal slashing damage with a +2 bonus to damage rolls and a damage die of 1d8. You have proficiency in these weapons. You cannot wear any other gloves while attuned to this armor.
 
-=== Dragon Scale Mail
+=== Dragon Scale Mail <dragon-scale-mail>
 _Armor (masterwork lamellar), Hero (requires attunement)_ 
 
 Dragon scale mail (technically a form of lamellar armor) is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
@@ -1695,96 +1676,96 @@ Dragon scale mail (technically a form of lamellar armor) is made of the scales o
 "Copper","Acid","","White","Cold",
 )
 
-=== Dwarven Plate
+=== Dwarven Plate <dwarven-plate>
 _Armor (masterwork plate), Hero_ 
 
 This armor counts as adamantine. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet. You also have advantage on any check or saving throw made to resist or escape a grapple.
 
-=== Gauntlets of Ogre Power
+=== Gauntlets of Ogre Power <gauntlets-of-ogre-power>
 _Gloves, Adventurer (requires attunement)_
 
 Your Strength score is +4 while you wear these gauntlets. They have no effect on you if your Strength is already +4 or higher.
 
-=== Glamoured reinforced Leather
+=== Glamoured reinforced Leather <glamoured-reinforced-leather>
 _Armor (masterwork reinforced leather), Adventurer_ 
 
-While wearing this armor, you can use a bonus action to cast _disguise self_ at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus.
+While wearing this armor, you can use a bonus action to cast #safe-link("disguise-self",[_disguise self_]) at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus.
 
-=== Gloves of Missile Snaring
+=== Gloves of Missile Snaring <gloves-of-missile-snaring>
 _Gloves, Adventurer (requires attunement)_ 
 
 These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand. The damage reduction provided by these gloves stacks with the Brawler ability Deflect Attacks.
 
-=== Gloves of Swimming and Climbing
+=== Gloves of Swimming and Climbing <gloves-of-swimming-and-climbing>
 _Gloves, Adventurer (requires attunement)_
 
 While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.
 
-=== Hat of Disguise
+=== Hat of Disguise <hat-of-disguise>
 _Hat, Adventurer (requires attunement)_ 
 
-While wearing this hat, you can use an action to cast the _disguise self_ spell from it at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus. The spell ends if the hat is removed.
+While wearing this hat, you can use an action to cast the #safe-link("disguise-self",[_disguise self_]) spell from it at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus. The spell ends if the hat is removed.
 
-=== Headband of Intellect
+=== Headband of Intellect <headband-of-intellect>
 _Hat, Adventurer (requires attunement)_ 
 
 Your Intelligence score is +4 while you wear this headband. It has no effect on you if your Intelligence is already +4 or higher.
 
-=== Helm of Brilliance
+=== Helm of Brilliance <helm-of-brilliance>
 _Hat, Hero (requires attunement)_ 
 
 This dazzling helm is set with 5 diamonds, 10 rubies, 15 fire opals, and 20 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic. You gain the following benefits while wearing it:
 
-- You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: _daylight_ (opal), _fireball_ (fire opal), _true seeing_ (diamond), or _wall of fire_ (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
+- You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: #safe-link("daylight",[_daylight_]) (opal), #safe-link("fireball",[_fireball_]) (fire opal), #safe-link("true-seeing",[_true seeing_]) (diamond), or #safe-link("wall-of-fire",[_wall of fire_]) (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
 - As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.
 - As long as the helm has at least one ruby, you have resistance to fire damage.
 - As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.
 
-=== Helm of Comprehending Languages
+=== Helm of Comprehending Languages <helm-of-comprehending-languages>
 _Hat, Adventurer_
 
 While wearing this helm, you understand all spoken languages and can be understood by anyone who speaks at least one language.
 
-=== Helm of Telepathy
+=== Helm of Telepathy <helm-of-telepathy>
 _Hat, Adventurer (requires attunement)_
 
-While wearing this helm, you can use an action to cast the _detect thoughts_ spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with _detect thoughts_, you can use an action to cast the _suggestion_ spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
+While wearing this helm, you can use an action to cast the #safe-link("detect-thoughts",[_detect thoughts_]) spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply---using a bonus action to do so---while your focus on it continues. While focusing on a creature with #safe-link("detect-thoughts",[_detect thoughts_]), you can use an action to cast the #safe-link("suggestion",[_suggestion_]) spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
 
-=== Helm of Teleportation
+=== Helm of Teleportation <helm-of-teleportation>
 _Hat, Hero (requires attunement)_
 
-This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the _teleport_ incantation from it. The helm regains 1 expended charge at dawn the first day of each week.
+This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the #safe-link("teleport",[_teleport_]) incantation from it. The helm regains 1 expended charge at dawn the first day of each week.
 
-=== Ihmisi Boots
+=== Ihmisi Boots <ihmisi-boots>
 _Boots, Adventurer_ 
 
 While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.
 
-=== Mantle of Spell Resistance
+=== Mantle of Spell Resistance <mantle-of-spell-resistance>
 _Cloak, Hero (requires attunement)_
 
 You have advantage on saving throws against spells while you wear this cloak.
 
-=== Masterwork Armor
+=== Masterwork Armor <masterwork-armor>
 _Armor (any), Adventurer_
 
 This armor has been crafted by an expert to be easy to move in. When you take the Deflect action while wearing this armor, it costs one less Stamina than normal. In addition, medium and heavy masterwork armor allow one additional point of DEX to be added to your AC (ie +3 for medium and +1 for heavy).
 
 *Formula.* Crafting masterwork armor costs twice as much as normal and requires a proficiency bonus one higher than normal.
 
-=== Mithral Armor
+=== Mithral Armor <mithral-armor>
 _Armor (medium or heavy, but not hide), Adventurer_ 
 
 Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
 
 *Formula.* To craft mithral armor, you must procure one-quarter of the weight of the armor in refined mithral metal (three-quarters of the weight in raw mithral ore). The cost of the crafting is twice the base price of the armor or four times if you wish to have masterwork mithral armor. Crafting mithral armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
-=== Plate Armor of Etherealness
+=== Plate Armor of Etherealness <plate-armor-of-etherealness>
 _Armor (plate), legendary (requires attunement)_ 
 
-While you're wearing this armor, you can speak its command word as an action to gain the effect of the _etherealness_ legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
+While you're wearing this armor, you can speak its command word as an action to gain the effect of the #safe-link("etherealness",[_etherealness_]) legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
 
-=== Robe of Eyes
+=== Robe of Eyes <robe-of-eyes>
 _Robe, Hero (requires attunement)_
 
 This robe is adorned with eye like patterns. While you wear the robe, you gain the following benefits:
@@ -1795,17 +1776,17 @@ This robe is adorned with eye like patterns. While you wear the robe, you gain t
 
 A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success.
 
-=== Robe of Scintillating Colors
+=== Robe of Scintillating Colors <robe-of-scintillating-colors>
 _Robe, Hero (requires attunement)_
 
 This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.
 
-=== Robe of Stars
+=== Robe of Stars <robe-of-stars>
 _Robe, Hero (requires attunement)_ 
 
-This black or dark blue robe is embroidered with small white or silver stars. Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast _magic missile_, creating 8 darts. Daily at dusk, 1d6 removed stars reappear on the robe. While you wear the robe, you can use an action to enter the Border Shadow along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.
+This black or dark blue robe is embroidered with small white or silver stars. Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast #safe-link("magic-missile",[_magic missile_]), creating 8 darts. Daily at dusk, 1d6 removed stars reappear on the robe. While you wear the robe, you can use an action to enter the Border Shadow along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.
 
-=== Robe of the Archmagi
+=== Robe of the Archmagi <robe-of-the-archmagi>
 _Robe, legendary (requires attunement by an arcanist)_ 
 
 This elegant garment is made from exquisite cloth of white, gray, or black and adorned with silvery runes. You gain these benefits while wearing the robe:
@@ -1814,7 +1795,7 @@ This elegant garment is made from exquisite cloth of white, gray, or black and a
 - You have advantage on saving throws against spells and other magical effects.
 - Your maximum aether increases by your Intelligence modifier.
 
-=== Robe of Useful Items
+=== Robe of Useful Items <robe-of-useful-items>
 _Robe, Adventurer_ 
 
 This robe has cloth patches of various shapes and colors covering it. While wearing the robe, you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment. The robe has two of each of the following patches:
@@ -1844,83 +1825,83 @@ In addition, the robe has 4d4 other patches. The GM chooses the patches or deter
 "97-00","Portable ram",
 )]
 
-=== Rune-inscribed Belt
+=== Rune-inscribed Belt <rune-inscribed-belt>
 _Belt, Hero (requires attunement)_
 
 While wearing this belt, your Constitution score becomes 19 if it was lower. You also have advantage on Charisma (Persuasion) checks made to interact with dwarves, giants, and jazuu if this belt is worn.
 
-=== Shield of Deflection
+=== Shield of Deflection <shield-of-deflection>
 _Armor (shield), Hero (requires attunement)_ 
 
 While holding this shield, you have resistance to damage from ranged attacks and magical abilities that affect an area and cause half damage on a successful Dexterity saving throw.
 
-=== Slippers of Spider Climbing
+=== Slippers of Spider Climbing <slippers-of-spider-climbing>
 _Boots, Adventurer (requires attunement)_ 
 
 While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.
 
-=== Spellguard Shield
+=== Spellguard Shield <spellguard-shield>
 _Armor (shield), Hero (requires attunement)_
 
 While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.
 
-=== Winged Boots
+=== Winged Boots <winged-boots>
 _Boots, Hero (requires attunement)_ 
 
 These boots have 3 charges. While you wear these boots, you can expend a charge to gain a flying speed equal to your walking speed for 1 hour. If you are still flying when a charge expires, you descend at a rate of 50 ft per round, taking no fall damage. All expended charges are restored at dawn.
 
-=== Wings of Flying
+=== Wings of Flying <wings-of-flying>
 _Cloak, Hero (requires attunement)_ 
 
 While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d4 hours.
 
-=== Woodland Cloak
+=== Woodland Cloak <woodland-cloak>
 _Cloak, Adventurer (requires attunement)_
 
 While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.
 
-== Consumables
+== Consumables <consumable-items>
 The items in this section are all linked by the fact that they are truly consumable. They lose efficacy after being used and have no passive effect. A very few have more than one use, but their charges/doses do not restore themselves and each charge or dose can only be used once. Consumables can be crafted for one-half of the usual cost for an item of their tier. Generally, consumables are "safe" for adventurers to find up to one tier lower than their listed value, although in those cases they should be given in small quantities only. Consumables do not require attunement.
 
 Consuming a potion yourself requires a bonus action, while administering it to another requires an action. By default, only creatures with opposable thumbs can activate consumables. Potions are administered by drinking, while oils and unguents are both applied to an item or creature. Generally oils apply to items or objects and unguents to creatures.
 
-=== Apprentice's Friend
+=== Apprentice's Friend <apprentice-s-friend>
 _Potion, Journeyman_
 
 This oily black liquid has a strong smell. A single dose of this is approximately 16 ounces of liquid. When consumed by spending your action each turn over the course of 1 minute, the drinker gains the benefit of a short rest. Drinking another Apprentice's Friend before finishing a long rest still provides the benefit of a short rest, but you gain 5 levels of exhaustion one minute after finishing the drink.
 
 *Formula.* Crafting this potion requires one quarter-cup of exotic wake-beans and one half-ounce of powdered aether-dense crystal (such as a gemstone). All together, the cost is 75 gp (including the halving for consumables). Brewer's Kit proficiency (+2) is required.
 
-=== Bead of Force
+=== Bead of Force <bead-of-force>
 _Consumable, Hero_
 
 This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together.  You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 bludgeoning damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can. An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside. If dropped or thrown, the creatures inside are not affected by any possible fall damage.
 
-=== Chime of Opening
+=== Chime of Opening <chime-of-opening>
 _Consumable, Adventurer_
 
 This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens. The chime can be used ten times. After the tenth time, it cracks and becomes useless.
 
-=== Dust of Disappearance
+=== Dust of Disappearance <dust-of-disappearance>
 _Consumable, Adventurer_
 
 Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks, casts a spell, causes damage, or imposes a negative condition on another creature, the invisibility ends for that creature.
 
-=== Dust of Dryness
+=== Dust of Dryness <dust-of-dryness>
 _Consumable, Adventurer_
 
 This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible. Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.
 
 An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.
 
-=== Dust of Sneezing and Choking
+=== Dust of Sneezing and Choking <dust-of-sneezing-and-choking>
 _Consumable, Adventurer_
 
 Found in a small container, this powder resembles very fine sand. There is enough of it for one use.
 
 When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration incantation can also end the effect on a creature.
 
-=== Efreeti Bottle
+=== Efreeti Bottle <efreeti-bottle>
 _Consumable, Hero_
 
 This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.
@@ -1933,7 +1914,7 @@ This painted brass bottle weighs 1 pound. When you use an action to remove the s
 
 If the efreeti grants wishes, those wishes must be clearly stated in a few simple sentences. Attempts to cleverly word wishes to evade the restrictions described here result in the GM warning you or refusing that wish (without expending a wish). No wish can reverse a past event (although it might be able to undo its effects, such as by raising a person who was killed), can make someone fall in love with another person, or grant more wishes. Where possible, the GM will answer the wish by replicating the effect of a spell or legendary effect.
 
-=== Elemental Gem
+=== Elemental Gem <elemental-gem>
 _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
@@ -1946,7 +1927,7 @@ This gem contains a mote of elemental energy. When you use an action to break th
 "Emerald","Water elemental",
 )
 
-=== Feather Token
+=== Feather Token <feather-token>
 _Consumable, Hero_
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.
@@ -1967,7 +1948,7 @@ This tiny object looks like a feather. Different types of feather tokens exist, 
 - As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.
 ]
 
-=== Gem of Brightness
+=== Gem of Brightness <gem-of-brightness>
 _Consumable, Adventurer_
 
 This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
@@ -1978,62 +1959,62 @@ This prism has 50 charges. While you are holding it, you can use an action to sp
 
 When all of the gem's charges are expended, the gem becomes a non-magical jewel worth 50 gp.
 
-=== Marvelous Pigments
+=== Marvelous Pigments <marvelous-pigments>
 _Consumable, Hero_ 
 
 Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image. Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features---such as a door, a pit, flowers, trees, cells, rooms, or weapons---that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.  When you complete the painting, the object or terrain feature depicted becomes a real, non-magical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.  Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.  If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything.
 
-=== Necklace of Fireballs
+=== Necklace of Fireballs <necklace-of-fireballs>
 _Consumable, Hero_
 
 This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a fireball spell (5 AET, save DC 15). You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the effective aether cost of the fireball by 2 (increasing the damage dealt by 1d8) for each bead beyond the first.
 
-=== Oil of Etherealness
+=== Oil of Etherealness <oil-of-etherealness>
 _Oil, Hero_
 
 Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.
 
-=== Oil of Sharpness
+=== Oil of Sharpness <oil-of-sharpness>
 _Oil, Hero_
 
 This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is masterwork and has a +6 bonus to damage rolls.
 
-=== Oil of Slipperiness
+=== Oil of Slipperiness <oil-of-slipperiness>
 _Oil, Adventurer_ 
 
-This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a _freedom of movement_ spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.
+This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a #safe-link("freedom-of-movement",[_freedom of movement_]) spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.
 
-=== Potion of Animal Friendship
+=== Potion of Animal Friendship <potion-of-animal-friendship>
 _Potion, Adventurer_
 
 When you drink this potion and for one hour afterward, you can attempt to convince a beast that you mean it no harm. Choose a beast that you can see within 60 feet. It must be able to hear and see you. The beast must succeed on a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus) or be charmed by you for 24 hours. If you or one of your companions harms the target, the effect ends. You do not gain any direct control over the charmed beast, but you may be able to interact with it (e.g. offering it treats) to convince it to do simple tasks. While charmed, you can understand its desires and communicate yours to it, but it decides how it acts.
 
-=== Potion of Clairvoyance
+=== Potion of Clairvoyance <potion-of-clairvoyance>
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the _clairvoyance_ incantation. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.
+When you drink this potion, you gain the effect of the #safe-link("clairvoyance",[_clairvoyance_]) incantation. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.
 
-=== Potion of Climbing
+=== Potion of Climbing <potion-of-climbing>
 _Potion, Journeyman_
 
 When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.
 
-=== Potion of Diminution
+=== Potion of Diminution <potion-of-diminution>
 _Potion, Hero_
 
-When you drink this potion, you gain the “reduce” effect of the _enlarge/reduce_ spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
+When you drink this potion, you gain the “reduce” effect of the #safe-link("enlarge/reduce",[_enlarge/reduce_]) spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
 
-=== Potion of Flying
+=== Potion of Flying <potion-of-flying>
 _Potion, Hero_
 
 When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.
 
-=== Potion of Gaseous Form
+=== Potion of Gaseous Form <potion-of-gaseous-form>
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the _gaseous form_ spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.
+When you drink this potion, you gain the effect of the #safe-link("gaseous-form",[_gaseous form_]) spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.
 
-=== Potion of Giant Strength
+=== Potion of Giant Strength <potion-of-giant-strength>
 _Potion, tier varies_
 
 When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.
@@ -2047,12 +2028,12 @@ When you drink this potion, your Strength score changes for 1 hour. The type of 
 "Storm giant","+9","Legendary",
 )
 
-=== Potion of Growth
+=== Potion of Growth <potion-of-growth>
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain the “enlarge” effect of the enlarge-reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.
 
-=== Potion of Healing
+=== Potion of Healing <potion-of-healing>
 _Potion, tier varies_ 
 
 You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.
@@ -2068,22 +2049,22 @@ You regain hit points when you drink this potion. The number of hit points depen
 
 *Special*: Crafting potions of healing is faster than normal---the time to craft a potion of healing is shown in the Potions of Healing table.
 
-=== Potion of Heroism
+=== Potion of Heroism <potion-of-heroism>
 _Potion, Hero_
 
-For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the _bless_ spell (no concentration required). This blue potion bubbles and steams as if boiling.
+For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the #safe-link("bless",[_bless_]) spell (no concentration required). This blue potion bubbles and steams as if boiling.
 
-=== Potion of Invisibility
+=== Potion of Invisibility <potion-of-invisibility>
 _Potion, Hero_
 
 This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Any object you wear or carry, whether you were carrying it when the effect started or not, is invisible with you. Items you stop wearing or carrying appear abruptly. The effect ends early if you attack, cast a spell, cause damage, or cause a condition on another creature. 
 
-=== Potion of Mind Reading
+=== Potion of Mind Reading <potion-of-mind-reading>
 _Potion, Hero_
 
-When you drink this potion, you gain the effect of the _detect thoughts_ spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
+When you drink this potion, you gain the effect of the #safe-link("detect-thoughts",[_detect thoughts_]) spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
 
-=== Potion of Energy Resistance
+=== Potion of Energy Resistance <potion-of-energy-resistance>
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.
@@ -2095,36 +2076,36 @@ When you drink this potion, you gain resistance to one type of damage for 1 hour
 "4","Lightning","","8","Thunder",
 )
 
-=== Potion of Speed
+=== Potion of Speed <potion-of-speed>
 _Potion, Hero_ 
 
-When you drink this potion, you gain the effect of the _haste_ spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.
+When you drink this potion, you gain the effect of the #safe-link("haste",[_haste_]) spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.
 
-=== Potion of Water Breathing
+=== Potion of Water Breathing <potion-of-water-breathing>
 _Potion, Adventurer_
 
 You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.
 
 *Formula.* Crafting this item requires one ounce of powdered air-aether-rich gemstone, such as a pearl. The cost is 50 gp and requires alchemy or herbalism kit proficiency (+2).
 
-=== Purple Worm Oil
+=== Purple Worm Oil <purple-worm-oil>
 _Oil, Adventurer_
 
 This oily toxin coats weapons or objects, eating away at those who come in contact with it. This oil can be applied to an object or weapon (one melee weapon or up to 20 pieces of ammunition) over the course of 1 minute and lasts until someone touches the object or is hit by the weapon.
 
 A creature that touches the poisoned item or is hit by the poisoned weapon takes 3d6 poison damage, and must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of of their turns while poisoned in this way, the target takes 3d6 poison damage. At the end of each of their turns, they can repeat the saving throw. On a successful save, the poison damage they take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.
 
-=== Restorative Ointment
+=== Restorative Ointment <restorative-ointment>
 _Unguent, Adventurer_
 
 This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.
 
-=== Sovereign Glue
+=== Sovereign Glue <sovereign-glue>
 _Oil, Hero_
 
 This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.  One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent, oil of etherealness, or a DC 30 Strength check.
 
-=== Spell Scroll or Stone
+=== Spell Scroll or Stone <spell-scroll-or-stone>
 _Scroll, varies_ 
 
 A spell scroll (or stone, the only difference being the appropriate tool proficiency for crafting) bears the words of a single spell, written in a mystical cipher. You can read the scroll and cast its spell without providing any material components. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -2145,14 +2126,14 @@ The base aether cost of the spell on the scroll determines the spell's saving th
 
 *Formula.* Crafting a spell scroll or stone requires either fine parchment (for a scroll) or a quartz crystal (for a stone) and aether-infused ink, altogether costing money as shown on the Spell Scroll Cost table. Scrolls require Calligrapher's Tools proficiency and stones require Jeweler's Tools proficiency. The required proficiency bonus is also shown on the table. Only one person can contribute to crafting a spell scroll or stone in any given day. Legendary spell scrolls/stones cannot be crafted by normal means.
 
-=== Universal Solvent
+=== Universal Solvent <universal-solvent>
 _Wondrous item, Adventurer_
 
 This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue.
 
-== Miscellaneous Magic Items
+== Miscellaneous Magic Items <wondrous-items>
 
-=== Bag of Holding
+=== Bag of Holding <bag-of-holding>
 _Wondrous item, Adventurer_
 
 This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
@@ -2161,7 +2142,7 @@ If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and it
 
 If you place a bag of holding inside another item that manipulates space or weight, such as a handy haversack or a portable hole, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
 
-=== Bag of Tricks
+=== Bag of Tricks <bag-of-tricks>
 _Wondrous item, Adventurer_
 
 This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
@@ -2184,26 +2165,26 @@ Once three fuzzy objects have been pulled from the bag, the bag can't be used ag
 "8","Giant elk", "Brown Bear", "Tiger"
 )
 
-=== Bowl of Commanding Water Elementals
+=== Bowl of Commanding Water Elementals <bowl-of-commanding-water-elementals>
 _Wondrous item, Hero_
 
-While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the _conjure elemental_ spell. The bowl can't be used this way again until the next dawn.
+While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the #safe-link("conjure-elemental",[_conjure elemental_]) spell. The bowl can't be used this way again until the next dawn.
 
 The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.
 
-=== Brazier of Commanding Fire Elementals
+=== Brazier of Commanding Fire Elementals <brazier-of-commanding-fire-elementals>
 _Wondrous item, Hero_
 
-While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the _conjure elemental_ spell. The brazier can't be used this way again until the next dawn.
+While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the #safe-link("conjure-elemental",[_conjure elemental_]) spell. The brazier can't be used this way again until the next dawn.
 
 The brazier weighs 5 pounds.
 
-=== Broom of Flying
+=== Broom of Flying <broom-of-flying>
 _Wondrous item, Hero_
 
 This wooden broom, which weighs 3 pounds, functions like a mundane broom until you sit astride it and speak its command word. It then hovers beneath you and can be ridden in the air, but controlling it requires both hands and your action each turn. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land. You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you.
 
-=== Carpet of Flying
+=== Carpet of Flying <carpet-of-flying>
 _Wondrous item, Hero_
 
 You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -2220,27 +2201,27 @@ Four sizes of carpet of flying exist. The GM chooses the size of a given carpet 
 
 A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.
 
-=== Censer of Controlling Air Elementals
+=== Censer of Controlling Air Elementals <censer-of-controlling-air-elementals>
 _Wondrous item, Hero_
 
-While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the _conjure elemental_ spell. The censer can't be used this way again until the next dawn.
+While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the #safe-link("conjure-elemental",[_conjure elemental_]) spell. The censer can't be used this way again until the next dawn.
 
 This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. It weighs 1 pound.
 
-=== Crystal Ball
+=== Crystal Ball <crystal-ball>
 _Wondrous item, Hero or legendary (requires attunement)_
 
-The typical crystal ball, a Hero item, is about 6 inches in diameter. While touching it, you can cast the _scrying_ incantation (save DC 17) with it. Once you use this property, you cannot do so again until the next dawn.
+The typical crystal ball, a Hero item, is about 6 inches in diameter. While touching it, you can cast the #safe-link("scrying",[_scrying_]) incantation (save DC 17) with it. Once you use this property, you cannot do so again until the next dawn.
 
 The following crystal ball variants are legendary items and have additional properties.
 
-*Crystal Ball of Mind Reading.* You can use an action to cast the _detect thoughts_ spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this _detect thoughts_ to maintain it during its duration, but it ends if scrying ends.
+*Crystal Ball of Mind Reading.* You can use an action to cast the #safe-link("detect-thoughts",[_detect thoughts_]) spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this #safe-link("detect-thoughts",[_detect thoughts_]) to maintain it during its duration, but it ends if scrying ends.
 
-*Crystal Ball of Telepathy.* While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the _suggestion_ spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.
+*Crystal Ball of Telepathy.* While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the #safe-link("suggestion",[_suggestion_]) spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.
 
 *Crystal Ball of True Seeing.* While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor.
 
-=== Cube of Force
+=== Cube of Force <cube-of-force>
 _Wondrous item, Hero (requires attunement)_
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.  You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.  If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.
@@ -2255,18 +2236,18 @@ This cube is about an inch across. Each face has a distinct marking on it that c
 "6","0","The barrier deactivates.",
 )
 
-=== Cubic Gate
+=== Cubic Gate <cubic-gate>
 _Wondrous item, legendary_
 
 This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the GM.
 
-You can use an action to press one side of the cube to cast the _gate_ incantation with it, opening a portal to the plane keyed to that side. 
+You can use an action to press one side of the cube to cast the #safe-link("gate",[_gate_]) incantation with it, opening a portal to the plane keyed to that side. 
 
-Alternatively, if you use an action to press one side twice, you can cast the _plane shift_ incantation (save DC 17) with the cube and transport the targets to the plane keyed to that side.
+Alternatively, if you use an action to press one side twice, you can cast the #safe-link("plane-shift",[_plane shift_]) incantation (save DC 17) with the cube and transport the targets to the plane keyed to that side.
 
 The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn.
 
-=== Decanter of Endless Water
+=== Decanter of Endless Water <decanter-of-endless-water>
 _Wondrous item, Adventurer_
 
 This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.  You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:
@@ -2275,19 +2256,19 @@ This stoppered flask sloshes when shaken, as if it contains water. The decanter 
 - “Fountain” produces 5 gallons of water.
 - “Geyser” produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds.The object is either knocked over or pushed up to 15 feet away from you.
 
-=== Efficient Quiver
+=== Efficient Quiver <efficient-quiver>
 _Wondrous item, Adventurer_
 
 Each of the quiver's three compartments connects to an extra-dimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears.  You can draw any item the quiver contains as if doing so from a regular quiver or scabbard.
 
-=== Eversmoking Bottle
+=== Eversmoking Bottle <eversmoking-bottle>
 _Wondrous item, Adventurer_
 
 Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.
 
 The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round.
 
-=== Figurine of Wondrous Power
+=== Figurine of Wondrous Power <figurine-of-wondrous-power>
 _Wondrous item, tier varies_
 
 A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.
@@ -2309,22 +2290,22 @@ The creature is friendly to you and your companions. It understands your languag
 - *Obsidian Steed (Hero).* This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.
 - *Onyx Dog (Hero).* This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.
 - *Serpentine Owl (Hero).* This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.
-- *Silver Raven (Adventurer).* This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the _animal messenger_ incantation on it at will. If you upgrade the effect by paying the additional cost, it lasts for the duration.
+- *Silver Raven (Adventurer).* This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the #safe-link("animal-messenger",[_animal messenger_]) incantation on it at will. If you upgrade the effect by paying the additional cost, it lasts for the duration.
 ]
 
-=== Folding Boat
+=== Folding Boat <folding-boat>
 _Wondrous item, Hero_
 
 This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it. One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.  The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.  When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.  The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.
 
-=== Gem of Seeing
+=== Gem of Seeing <gem-of-seeing>
 _Wondrous item, Hero (requires attunement)_
 
 This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.
 
 The gem regains 1d3 expended charges daily at dawn.
 
-=== Handy Haversack
+=== Handy Haversack <handy-haversack>
 _Wondrous item, Hero_
 
 This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents.
@@ -2335,27 +2316,27 @@ The haversack has a few limitations. If it is overloaded, or if a sharp object p
 
 If you place a handy haversack inside another item that manipulates space or weight, such as a bag of holding or a portable hole, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
 
-=== Horn of Blasting
+=== Horn of Blasting <horn-of-blasting>
 _Wondrous item, Hero_
 
 You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.  Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.
 
-=== Horseshoes of a Zephyr
+=== Horseshoes of a Zephyr <horseshoes-of-a-zephyr>
 _Wondrous item, Hero_
 
 These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above non-solid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.
 
-=== Horseshoes of Speed
+=== Horseshoes of Speed <horseshoes-of-speed>
 _Wondrous item, Hero_
 
 These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet.
 
-=== Immovable Rod
+=== Immovable Rod <immovable-rod>
 _Rod, Adventurer_
 
 This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place relative to the surface of the planet or a vehicle of Huge size or larger that you are riding. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
 
-=== Instant Fortress
+=== Instant Fortress <instant-fortress>
 _Wondrous item, Hero_
 
 You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty.
@@ -2364,22 +2345,22 @@ The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow s
 
 Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.  The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from weapons excluding siege weapons or adamantine weapons, and resistance to all other damage. Damage done to the tower cannot be repaired, and if any piece is destroyed, the fortress immediately returns to its cube form and no longer functions.
 
-=== Iron Bands of Binding
+=== Iron Bands of Binding <iron-bands-of-binding>
 _Wondrous item, Hero_
 
 This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.  Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more.  A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed.  Once the bands are used, they can't be used again until the next dawn.
 
-=== Iron Flask
+=== Iron Flask <iron-flask>
 _Wondrous item, legendary_
 
 This iron bottle has a brass stopper. You can use an action to speak the flask's command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has advantage on the saving throw. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't need to breathe, eat, or drink and doesn't age.  You can use an action to remove the flask's stopper and release the creature the flask contains. The creature is friendly to you and your companions for 1 hour and obeys your commands for that duration. If you give no commands or give it a command that is likely to result in its death, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition. An identify spell reveals that a creature is inside the flask, but the only way to determine the type of creature is to open the flask. A newly discovered bottle might already contain a creature chosen by the GM.
 
-=== Lantern of Revealing
+=== Lantern of Revealing <lantern-of-revealing>
 _Wondrous item, Adventurer_
 
 While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.
 
-=== Manual of Golems
+=== Manual of Golems <manual-of-golems>
 _Wondrous item, Hero_
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be at least 12th level and have an Intelligence modifier of +3 or higher. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -2394,19 +2375,19 @@ This tome contains information and incantations necessary to make a particular t
 
 To create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.  Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.
 
-=== Pipes of Haunting
+=== Pipes of Haunting <pipes-of-haunting>
 _Wondrous item, Adventurer_
 
 You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn.
 
-=== Pipes of the Sewers
+=== Pipes of the Sewers <pipes-of-the-sewers>
 _Wondrous item, Adventurer (requires attunement)_
 
 You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.
 
 The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the GM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn.  Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.
 
-=== Portable Hole
+=== Portable Hole <portable-hole>
 _Wondrous item, Hero_
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.  You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be used to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.  You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.  If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the
@@ -2414,14 +2395,14 @@ portable hole or the creature carrying it. A breathing creature within a closed 
 
 If you place a portable hole inside another item that manipulates space or weight, such as a handy haversack or a bag of holding, it counts towards the space and weight capacity of that other item as if it was a non-magical bag of its total volume and present contents.
 
-=== Rope of Climbing
+=== Rope of Climbing <rope-of-climbing>
 _Wondrous item, Adventurer_
 
 This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.  If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.
 
 The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.
 
-=== Rope of Entanglement
+=== Rope of Entanglement <rope-of-entanglement>
 _Wondrous item, Hero_
 
 This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained.
@@ -2430,7 +2411,7 @@ You can release the creature by using a bonus action to speak a second command w
 
 The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.
 
-=== Scarab of Protection
+=== Scarab of Protection <scarab-of-protection>
 _Wondrous item, legendary (requires attunement)_
 
 If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
@@ -2438,125 +2419,125 @@ If you hold this beetle-shaped medallion in your hand for 1 round, an inscriptio
 - You have advantage on saving throws against spells.
 - The scarab has 12 charges. If you fail a saving throw against a spell that deals necrotic damage or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.
 
-=== Stone of Good Luck (Luckstone)
+=== Stone of Good Luck (Luckstone) <stone-of-good-luck>
 _Wondrous item, Adventurer (requires attunement)_ 
 
 This polished stone has 3 charges. You can expend a charge to take the Exert or Focus actions without expending Stamina or Aether. All expended charges are restored at dawn.
 
-=== Stone of Controlling Earth Elementals
+=== Stone of Controlling Earth Elementals <stone-of-controlling-earth-elementals>
 _Wondrous item, Hero_
 
-If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the _conjure elemental_ spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds.
+If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the #safe-link("conjure-elemental",[_conjure elemental_]) spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds.
 
-=== Well of Many Worlds
+=== Well of Many Worlds <well-of-many-worlds>
 _Wondrous item, legendary_
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter. You can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the GM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once well of many worlds has opened a portal, it can't do so again for 1d8 hours.
 
-=== Wind Fan
+=== Wind Fan <wind-fan>
 _Wondrous item, Adventurer_
 
 While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, non-magical tatters.
 
-== Rings and Amulets
+== Rings and Amulets <rings-amulets>
 
 This section contains items worn as jewelry. Rings, amulets, broaches, earrings, bracers, etc. Almost all of these require attunement, which serves as the limiting factor on how many you can gain benefit from at a time.
 
-=== Amulet of Health
+=== Amulet of Health <amulet-of-health>
 _Wondrous item, Hero (requires attunement)_
 
 Your Constitution score is +4 while you wear this amulet. It has no effect on you if your Constitution is already +4 or higher.
 
-=== Amulet of Nondetection
+=== Amulet of Nondetection <amulet-of-nondetection>
 _Wondrous item, Adventurer (requires attunement)_
 
 While wearing this amulet, you are hidden from divination magic as if under the effects of the nondetection. You can't be targeted by such magic or perceived through magical scrying sensors.
 
-=== Amulet of the Planes
+=== Amulet of the Planes <amulet-of-the-planes>
 _Wondrous item, Hero (requires attunement)_
 
 While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift incantation. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence.
 
-=== Bracers of Archery
+=== Bracers of Archery <bracers-of-archery>
 _Wondrous item, Adventurer (requires attunement)_
 
 While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.
 
-=== Bracers of Defense
+=== Bracers of Defense <bracers-of-defense>
 _Wondrous item, Hero (requires attunement)_
 
-While attuned to these bracers, you gain the benefits of the _mage armor_ spell.
+While attuned to these bracers, you gain the benefits of the #safe-link("mage-armor",[_mage armor_]) spell.
 
-=== Brooch of Shielding
+=== Brooch of Shielding <brooch-of-shielding>
 _Wondrous item, Adventurer (requires attunement)_
 
-While wearing this brooch, you have resistance to bludgeoning damage, and you have immunity to damage from the _magic missile_ spell.
+While wearing this brooch, you have resistance to bludgeoning damage, and you have immunity to damage from the #safe-link("magic-missile",[_magic missile_]) spell.
 
-=== Dimensional Shackles
+=== Dimensional Shackles <dimensional-shackles>
 _Wondrous item, Hero_
 
 You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing through an interdimensional portal. You and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a success, the creature breaks free and destroys the shackles.
 
-=== Eyes of Charming
+=== Eyes of Charming <eyes-of-charming>
 _Wondrous item, Adventurer (requires attunement)_
 
-These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the _charm person_ spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
+These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the #safe-link("charm-person",[_charm person_]) spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
 
-=== Eyes of Minute Seeing
+=== Eyes of Minute Seeing <eyes-of-minute-seeing>
 _Wondrous item, Adventurer_
 
 These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.
 
-=== Eyes of the Eagle
+=== Eyes of the Eagle <eyes-of-the-eagle>
 _Wondrous item, Adventurer (requires attunement)_
 
 These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.
 
-=== Goggles of Night
+=== Goggles of Night <goggles-of-night>
 _Wondrous item, Adventurer_ 
 
 While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.
 
-=== Medallion of Thoughts
+=== Medallion of Thoughts <medallion-of-thoughts>
 _Wondrous item, Adventurer (requires attunement)_
 
-The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the _detect thoughts_ spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
+The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the #safe-link("detect-thoughts",[_detect thoughts_]) spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
 
-=== Necklace of Adaptation
+=== Necklace of Adaptation <necklace-of-adaptation>
 _Wondrous item, Adventurer (requires attunement)_
 
 While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as cloudkill and stinking cloud effects, inhaled poisons, and the breath weapons of some dragons).
 
-=== Pearl of Power
+=== Pearl of Power <pearl-of-power>
 _Wondrous item, Adventurer (requires attunement by a spellcaster)_
 
 While this pearl is on your person, you can use an action to speak its command word, instantly regaining aether (AET) equal to your proficiency bonus up to your maximum. Once you use the pearl, it can't be used again until the next dawn.
 
-=== Periapt of Health
+=== Periapt of Health <periapt-of-health>
 _Wondrous item, Adventurer_
 
 You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed and you count as succeeding on any requisite saving throws you while you wear the pendant.
 
-=== Periapt of Proof against Poison
+=== Periapt of Proof against Poison <periapt-of-proof-against-poison>
 _Wondrous item, Hero_
 
 This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.
 
-=== Periapt of Wound Closure
+=== Periapt of Wound Closure <periapt-of-wound-closure>
 _Wondrous item, Adventurer (requires attunement)_
 
 While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores.
 
-=== Ring of Animal Influence
+=== Ring of Animal Influence <ring-of-animal-influence>
 _Ring, Hero_ 
 
 This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:
 
-- _Animal friendship_ (save DC 13)
-- _Fear_ (save DC 13), targeting only beasts that have an Intelligence of 3 or lower
-- _Voice the voiceless_ (incantation, using only the speak with animals mode)
+- #safe-link("Animal friendship",[_Animal friendship_]) (save DC 13)
+- #safe-link("Fear",[_Fear_]) (save DC 13), targeting only beasts that have an Intelligence of 3 or lower
+- #safe-link("Voice the voiceless",[_Voice the voiceless_]) (incantation, using only the speak with animals mode)
 
-=== Ring of Djinni Summoning
+=== Ring of Djinni Summoning <ring-of-djinni-summoning>
 _Ring, legendary (requires attunement)_
 
 While wearing this ring, you can speak its command word as an action to summon a particular djinni from one of the Elemental Planes of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until it drops to 0 hit points. It then returns to its home plane.
@@ -2565,7 +2546,7 @@ While summoned, the djinni is friendly to you and your companions. It obeys any 
 
 After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies.
 
-=== Ring of Elemental Command
+=== Ring of Elemental Command <ring-of-elemental-command>
 _Ring, legendary (requires attunement)_
 
 This ring is linked to one of the four Prime Elemental Planes. The GM chooses or randomly determines the linked plane.
@@ -2574,73 +2555,73 @@ While wearing this ring, you have advantage on attack rolls against elementals f
 
 The ring has 5 charges. It regains 1d4 +1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17.
 
-*Ring of Air Elemental Command.* You can expend 2 of the ring's charges to cast _domination_ on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
+*Ring of Air Elemental Command.* You can expend 2 of the ring's charges to cast #safe-link("domination",[_domination_]) on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran. If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You have resistance to lightning damage.
 - You have a flying speed equal to your walking speed and can hover.
-- You can cast the following spells from the ring, expending the necessary number of charges: _chain lightning_ (3 charges), _gust of wind_ (2 charges), or _wind wall_ (1 charge).
+- You can cast the following spells from the ring, expending the necessary number of charges: #safe-link("chain-lightning",[_chain lightning_]) (3 charges), #safe-link("gust-of-wind",[_gust of wind_]) (2 charges), or #safe-link("wind-wall",[_wind wall_]) (1 charge).
 
-*Ring of Earth Elemental Command.* You can expend 2 of the ring's charges to cast _domination_ on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.  If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:
+*Ring of Earth Elemental Command.* You can expend 2 of the ring's charges to cast #safe-link("domination",[_domination_]) on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.  If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You have resistance to acid damage.
 - You can move through solid earth or rock as if those areas were difficult terrain. If you end your turn there, you are shunted out to the nearest unoccupied space you last occupied.
-- You can cast the following spells from the ring,expending the necessary number of charges: _stone shape_ (2 charges), _stoneskin_ (3 charges), or _wall of stone_ (3 charges).
+- You can cast the following spells from the ring,expending the necessary number of charges: #safe-link("stone-shape",[_stone shape_]) (2 charges), #safe-link("stoneskin",[_stoneskin_]) (3 charges), or #safe-link("wall-of-stone",[_wall of stone_]) (3 charges).
 
-=== Ring of Fire Elemental Command
-You can expend 2 of the ring's charges to cast _domination_ on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:
+=== Ring of Fire Elemental Command <ring-of-fire-elemental-command>
+You can expend 2 of the ring's charges to cast #safe-link("domination",[_domination_]) on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan. If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You are immune to fire damage.
-- You can cast the following spells from the ring,expending the necessary number of charges: _burning hands_ (1 charge), _fireball_ (2 charges), and _wall of fire_ (3 charges).
+- You can cast the following spells from the ring,expending the necessary number of charges: #safe-link("burning-hands",[_burning hands_]) (1 charge), #safe-link("fireball",[_fireball_]) (2 charges), and #safe-link("wall-of-fire",[_wall of fire_]) (3 charges).
 
-=== Ring of Water Elemental Command
-You can expend 2 of the ring's charges to cast _domination_ on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
+=== Ring of Water Elemental Command <ring-of-water-elemental-command>
+You can expend 2 of the ring's charges to cast #safe-link("domination",[_domination_]) on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.  If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
 
 - You can breathe underwater and have a swimming speed equal to your walking speed.
-- You can cast the following spells from the ring, expending the necessary number of charges: _create or destroy water_ (1 charge), _control water_ (3 charges), _ice storm_ (2 charges), or _wall of ice_ (3 charges).
+- You can cast the following spells from the ring, expending the necessary number of charges: #safe-link("create-or-destroy-water",[_create or destroy water_]) (1 charge), #safe-link("control-water",[_control water_]) (3 charges), #safe-link("ice-storm",[_ice storm_]) (2 charges), or #safe-link("wall-of-ice",[_wall of ice_]) (3 charges).
 
-=== Ring of Evasion
+=== Ring of Evasion <ring-of-evasion>
 _Ring, Hero (requires attunement)_ 
 
 This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead.
 
-=== Ring of Feather Falling
+=== Ring of Feather Falling <ring-of-feather-falling>
 _Ring, Hero (requires attunement)_
 
 When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.
 
-=== Ring of Free Action
+=== Ring of Free Action <ring-of-free-action>
 _Ring, Hero (requires attunement)_
 
 While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.
 
-=== Ring of Invisibility
+=== Ring of Invisibility <ring-of-invisibility>
 _Ring, legendary (requires attunement)_
 
 While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.
 
-=== Ring of Jumping
+=== Ring of Jumping <ring-of-jumping>
 _Ring, Adventurer (requires attunement)_
 
-While wearing this ring, you can cast the _jump_ spell from it as a bonus action at will, but can target only yourself when you do so.
+While wearing this ring, you can cast the #safe-link("jump",[_jump_]) spell from it as a bonus action at will, but can target only yourself when you do so.
 
-=== Ring of Mind Shielding
+=== Ring of Mind Shielding <ring-of-mind-shielding>
 _Ring, Adventurer (requires attunement)_
 
 While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.
 
 You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.
 
-=== Ring of Protection
+=== Ring of Protection <ring-of-protection>
 _Ring, Hero (requires attunement)_
 
 This ring has 3 charges. You can expend a charge to take the Deflect, Exert, or Focus actions without expending stamina or aether. The ring regains all expended charges at dawn.
 
-=== Ring of Regeneration
+=== Ring of Regeneration <ring-of-regeneration>
 _Ring, Hero (requires attunement)_
 
 While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
 
-=== Ring of Energy Resistance
+=== Ring of Energy Resistance <ring-of-energy-resistance>
 _Ring, Hero (requires attunement)_ 
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.
@@ -2657,7 +2638,7 @@ You have resistance to one damage type while wearing this ring. The gem in the r
 "10","Reroll","---",
 )
 
-=== Ring of Shooting Stars
+=== Ring of Shooting Stars <ring-of-shooting-stars>
 _Ring, Hero (requires attunement outdoors at night)_
 
 While wearing this ring in dim light or darkness, you can cast dancing lights and light from the ring at will. Casting either spell from the ring requires an action. The ring has 6 charges for the following other properties. The ring regains 1d6 expended charges daily at dawn.
@@ -2675,7 +2656,7 @@ While wearing this ring in dim light or darkness, you can cast dancing lights an
 "1","4d12",
 )
 
-=== Ring of Spell Storing
+=== Ring of Spell Storing <ring-of-spell-storing>
 _Ring, Hero (requires attunement)_
 
 This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 12 aether worth of spells at a time. When found, it contains 6 aether of stored spells chosen by the GM.
@@ -2684,27 +2665,27 @@ Any creature can cast a spell costing 12 or less aether into the ring by touchin
 
 While wearing this ring, you can cast any spell stored in it. The spell uses the aether cost, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space.
 
-=== Ring of Spell Turning
+=== Ring of Spell Turning <ring-of-spell-turning>
 _Ring, legendary (requires attunement)_
 
 While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
 
-=== Ring of Swimming
+=== Ring of Swimming <ring-of-swimming>
 _Ring, Adventurer_ 
 
 You have a swimming speed of 40 feet while wearing this ring.
 
-=== Ring of Telekinesis
+=== Ring of Telekinesis <ring-of-telekinesis>
 _Ring, Hero (requires attunement)_
 
-While wearing this ring, you can cast the _telekinesis_ spell at will, but you can target only objects that aren't being worn or carried.
+While wearing this ring, you can cast the #safe-link("telekinesis",[_telekinesis_]) spell at will, but you can target only objects that aren't being worn or carried.
 
-=== Ring of the Ram
+=== Ring of the Ram <ring-of-the-ram>
 _Ring, Hero (requires attunement)_
 
 This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to attack one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 bludgeoning damage and is pushed 5 feet away from you.  Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend.
 
-=== Ring of Three Wishes
+=== Ring of Three Wishes <ring-of-three-wishes>
 _Ring, legendary_
 
 While wearing this ring, you can use an action to expend 1 of its 3 charges to make a wish. The ring becomes nonmagical when you use the last charge.
@@ -2715,26 +2696,26 @@ Wishes must be clearly stated in a few simple sentences. Attempts to cleverly wo
 The GM can refuse a wish (refunding the expended charge) at their discretion, but shouldn't twist the wish against the character. This is an out of character conversation about what you want to happen, not an excuse to try to get one up on anyone else, player or GM.
 ]
 
-=== Ring of Warmth
+=== Ring of Warmth <ring-of-warmth>
 _Ring, Adventurer (requires attunement)_
 
 While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit.
 
-=== Ring of Water Walking
+=== Ring of Water Walking <ring-of-water-walking>
 _Ring, Adventurer_
 
 While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground. Hazardous surfaces (such as acid or lava) still have the normal effect, but you do not sink into them unless you choose.
 
-=== Ring of X-ray Vision
+=== Ring of X-ray Vision <ring-of-x-ray-vision>
 _Ring, Hero (requires attunement)_
 
 While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.
 
 Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.
 
-=== Wands and Rods
+=== Wands and Rods <wands-and-rods>
 
-=== Rod of Absorption
+=== Rod of Absorption <rod-of-absorption>
 _Rod, Hero (requires attunement)_
 While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy---not the spell itself---is stored in the rod. The energy stored has the same aether value as the spell did when it was cast. The rod can absorb and store up to 100 aether points during its existence. Once the rod absorbs 100 aether points, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.
 
@@ -2742,18 +2723,18 @@ When you become attuned to the rod, you know how much aether the rod has absorbe
 
 A newly found rod has 2d10 aether points stored in it already. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical.
 
-=== Rod of Alertness
+=== Rod of Alertness <rod-of-alertness>
 _Rod, Hero (requires attunement)_
 
 This rod has a flanged head and the following properties.
 
 #flush-block[
 - *Alertness.* While holding the rod, you have advantage on Wisdom (Perception) checks and on rolls for initiative.
-- *Spells.* While holding the rod, you can use an action to cast one of the following spells and incantations from it: _sense aura_, _detect poison and disease_, or _see invisibility_.
+- *Spells.* While holding the rod, you can use an action to cast one of the following spells and incantations from it: #safe-link("sense-aura",[_sense aura_]), #safe-link("detect-poison-and-disease",[_detect poison and disease_]), or #safe-link("see-invisibility",[_see invisibility_]).
 - *Protective Aura.* As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you can take the Deflect, Exert, or Focus actions (the latter against saving throws) without expending AET or STA and can sense the location of any invisible hostile creature that is also in the bright light.  The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.
 ]
 
-=== Rod of Lordly Might
+=== Rod of Lordly Might <rod-of-lordly-might>
 _Rod, legendary (requires attunement)_
 
 This rod has a flanged head, and it functions as a magic mace that grants a +6 bonus to damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below.
@@ -2777,116 +2758,116 @@ If you press button 6, the rod assumes or remains in its normal form and indicat
 
 *Terrify.* While holding the rod, you can use an action to force each creature you can see within 30 feet of you to make a DC 17 Wisdom saving throw. On a failure, a target is frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property can't be used again until the next dawn.
 
-=== Rod of Rulership
+=== Rod of Rulership <rod-of-rulership>
 _Rod, Hero (requires attunement)_
 
 You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.
 
-=== Rod of Security
+=== Rod of Security <rod-of-security>
 _Rod, Hero_ 
 
 While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space.  For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).  When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed.
 
-=== Wand of Binding
+=== Wand of Binding <wand-of-binding>
 _Wand, Hero (requires attunement by a spellcaster)_ 
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-*Spells.* While holding the wand, you can use an action to expend 2 charges to cast _arcane binding_ (save DC 17).
+*Spells.* While holding the wand, you can use an action to expend 2 charges to cast #safe-link("arcane-binding",[_arcane binding_]) (save DC 17).
 
 *Assisted Escape.* While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.
 
-=== Wand of Enemy Detection
+=== Wand of Enemy Detection <wand-of-enemy-detection>
 _Wand, Hero (requires attunement)_
 
 This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Fear
+=== Wand of Fear <wand-of-fear>
 _Wand, Hero (requires attunement)_
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-*Command.* While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the _command_ spell (save DC 15).
+*Command.* While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the #safe-link("command",[_command_]) spell (save DC 15).
 
 *Cone of Fear.* While holding the wand, you can use an action to expend 2 charges, causing the wand's tip to emit a 60-foot cone of amber light. Each creature in the cone must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.
 
-=== Wand of Fireballs
+=== Wand of Fireballs <wand-of-fireballs>
 _Wand, Hero (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the _fireball_ spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
+This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the #safe-link("fireball",[_fireball_]) spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Lightning Bolts
+=== Wand of Lightning Bolts <wand-of-lightning-bolts>
 _Wand, Hero (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the _lightning bolt_ spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
+This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the #safe-link("lightning-bolt",[_lightning bolt_]) spell (save DC 15) from it. For 1 charge, you cast the 5-AET version of the spell. You can increase the effective AET cost by two for each additional charge you expend.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Magic Detection
+=== Wand of Magic Detection <wand-of-magic-detection>
 _Wand, Adventurer_
 
-This wand has 3 charges. While holding it, you can expend 1 charge as an action to gain the effects of the _sense aura_ incantation (in its detect magic usage) from it. The wand regains 1d3 expended charges daily at dawn.
+This wand has 3 charges. While holding it, you can expend 1 charge as an action to gain the effects of the #safe-link("sense-aura",[_sense aura_]) incantation (in its detect magic usage) from it. The wand regains 1d3 expended charges daily at dawn.
 
-=== Wand of Magic Missiles
+=== Wand of Magic Missiles <wand-of-magic-missiles>
 _Wand, Adventurer_ 
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the _magic missile_ spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
+This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the #safe-link("magic-missile",[_magic missile_]) spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Paralysis
+=== Wand of Paralysis <wand-of-paralysis>
 _Wand, Hero (requires attunement)_ 
 
 This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of you. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. At the end of each of the target's turns, it can repeat the saving throw, ending the effect on itself on a success.  The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Polymorph
+=== Wand of Polymorph <wand-of-polymorph>
 _Wand, Hero (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the _polymorph_ spell (save DC 15) from it.
+This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the #safe-link("polymorph",[_polymorph_]) spell (save DC 15) from it.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-=== Wand of Secrets
+=== Wand of Secrets <wand-of-secrets>
 _Wand, Adventurer_
 
 The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn.
 
-=== Wand of Web
+=== Wand of Web <wand-of-web>
 _Wand, Adventurer (requires attunement)_
 
-This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the _web_ spell (save DC 15) from it.
+This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the #safe-link("web",[_web_]) spell (save DC 15) from it.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
-== Weapons, Magic
+== Weapons, Magic <magic-weapons>
 
-=== Ammunition of Slaying
+=== Ammunition of Slaying <ammunition-of-slaying>
 _Weapon (arrow, bolt, or sling stone), Hero_ 
 
 An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, lineage, or group associated with an arrow of slaying is hit by the arrow, the attack is a critical hit and the creature takes an additional 6d10 piercing damage (not doubled due to the critical hit). In addition, the creature must make a DC 17 Constitution saving throw. On a failed save, the creature is killed outright. If the creature was reduced to zero hit points by the attack's damage (including the extra damage), it automatically fails the saving throw. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
 
-=== Berserker Axe
+=== Berserker Axe <berserker-axe>
 _Weapon (any masterwork axe), Hero (requires attunement)_
 
 This is a masterwork, adamantine axe. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
 
-=== Blade of Sharpness
+=== Blade of Sharpness <blade-of-sharpness>
 _Weapon (any weapon that deals slashing damage), Hero (requires attunement)_
 
 When you attack an object with this sword and hit, maximize your weapon damage dice against the target. When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 4d6 slashing damage. Then roll another d20. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the GM. If the creature has no limb to sever, you lop off a portion of its body instead.
 
 In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.
 
-=== Dagger of Venom
+=== Dagger of Venom <dagger-of-venom>
 _Weapon (masterwork dagger), Adventurer_
 
 This is a masterwork dagger.
 
 You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.
 
-=== Dancing Sword
+=== Dancing Sword <dancing-sword>
 _Weapon (any sword), Hero (requires attunement)_
 
 You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.
@@ -2895,44 +2876,44 @@ While the sword hovers, you can use a bonus action to cause it to fly up to 30 f
 
 After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.
 
-=== Defender
+=== Defender <defender>
 _Weapon (any masterwork, silvered sword), legendary (requires attunement)_
 
 This is a masterwork, silvered sword. While attuned to it, you can take the Deflect action without expending stamina and the effects last until the start of your next turn instead of for one attack only.
 
-=== Dragon Slayer
+=== Dragon Slayer <dragon-slayer>
 _Weapon (any masterwork sword, axe, spear, lance, halberd or glaive), Hero_ 
 
 This is a masterwork weapon. When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.
 
-=== Dwarven Thrower
+=== Dwarven Thrower <dwarven-thrower>
 _Weapon (warhammer), Hero (requires attunement)_
 
 This is a masterwork, adamantine warhammer. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.
 
-=== Energy Bow
+=== Energy Bow <energy-bow>
 _Weapon (any bow or crossbow), Hero (requires attunement)_
 
 This masterwork weapon has no natural string. Instead, a thread of magical force is generated between the tips of the bowstave. Similarly, it requires no ammunition, because it generates its own that count as silver and adamantine. Energy crossbows ignore the Loading property.
 
-=== Flame Tongue
+=== Flame Tongue <flame-tongue>
 _Weapon (any sword), Hero (requires attunement)_ 
 
 You can use a bonus action to speak this sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
 
-=== Frost Brand
+=== Frost Brand <frost-brand>
 _Weapon (any sword), Hero (requires attunement)_ 
 
 When you hit with an attack using this sword, the target takes an extra 2d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
 In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 
-=== Giant Slayer
+=== Giant Slayer <giant-slayer>
 _Weapon (any axe or sword), Hero_ 
 
 This is a masterwork weapon. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.
 
-=== Hammer of Thunderbolts
+=== Hammer of Thunderbolts <hammer-of-thunderbolts>
 _Weapon (maul), legendary_
 
 This is a masterwork weapon that counts as adamantine and silvered.
@@ -2941,95 +2922,95 @@ This is a masterwork weapon that counts as adamantine and silvered.
 
 The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.
 
-=== Holy Avenger
+=== Holy Avenger <holy-avenger>
 _Weapon (any sword), legendary (requires attunement by an oathbound)_
 
 This is a masterwork weapon that counts as silvered. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
 
 While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Oathbound class, the radius of the aura increases to 30 feet.
 
-=== Javelin of Lightning
+=== Javelin of Lightning <javelin-of-lightning>
 _Weapon (javelin), Adventurer_
 
 When you hurl this javelin and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
 
 The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.
 
-=== Luck Blade
+=== Luck Blade <luck-blade>
 _Weapon (any sword), Adventurer (requires attunement)_
 
 This is a masterwork weapon. This sword has 3 charges. If the sword is on your person, you can call on its luck and expend a charge (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. The sword regains 1d3 charges at dawn.
 
-=== Mace of Disruption
+=== Mace of Disruption <mace-of-disruption>
 _Weapon (any bludgeoning), Hero (requires attunement)_ 
 
 When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.  While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
 
-=== Mace of Smiting
+=== Mace of Smiting <mace-of-smiting>
 _Weapon (any bludgeoning), Hero_
 
 This is a masterwork weapon that counts as adamantine. When used against a construct, you have advantage on the attack.  When you roll a 20 on an attack roll made with this weapon, the target takes an extra 2d6 bludgeoning damage, or 4d6 bludgeoning damage if it's a construct. If a construct has 25 hit points or fewer after taking this damage, it is destroyed.
 
-=== Mace of Terror
+=== Mace of Terror <mace-of-terror>
 _Weapon (any bludgeoning), Hero (requires attunement)_ 
 
 This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. The mace regains 1d3 expended charges daily at dawn.
 
-=== Moons-glow Weapon
+=== Moons-glow Weapon <moons-glow-weapon>
 _Weapon (any sword, axe, or polearm), Journeyman_
 
 This magic weapon was forged and blessed by kami. It counts as being silvered, and when unsheathed in the dark, it glows, shedding bright light for 10 feet and dim light for 10 feet beyond that. The color of the glow changes as the moons wax and wane, ranging from white when Quella is new to pure red when Quella is full.
 
 *Formula.* To craft a moons-glow weapon, you must provide one lb of refined silver metal. At least one day during the crafting period must be spent in a place sacred to a kami, and you must perform rituals appropriate to that kami while crafting. The required proficiency is Smith's tools (+2, +3 if masterwork). Crafting a moons-glow weapon costs 75 gold (150 if you wish to make a masterwork weapon) above the base price of the weapon.
 
-=== Nine Lives Stealer
+=== Nine Lives Stealer <nine-lives-stealer>
 _Weapon (any melee), Hero (requires attunement)_
 
 This is a masterwork weapon. The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.
 
-=== Oathbow
+=== Oathbow <oathbow>
 _Weapon (longbow), Hero (requires attunement)_
 
 When you nock an arrow on this masterwork bow, it whispers in Metsae, “Swift defeat to my enemies.” When you use this weapon to make a ranged attack, you can, as a command phrase, say, “Swift death to you who have wronged me.” The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
 
 When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.
 
-=== Scimitar of Speed
+=== Scimitar of Speed <scimitar-of-speed>
 _Weapon (scimitar), Hero (requires attunement)_
 
 This is a masterwork weapon. In addition, you can make one attack with it as a bonus action on each of your turns.
 
-=== Staff of Charming
+=== Staff of Charming <staff-of-charming>
 _Staff, Hero (requires attunement)_ 
 
-While holding this staff, you can use an action to expend 1 of its 10 charges to cast _charm person_ or _command_ from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
+While holding this staff, you can use an action to expend 1 of its 10 charges to cast #safe-link("charm-person",[_charm person_]) or #safe-link("command",[_command_]) from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
 
-=== Staff of Fire
+=== Staff of Fire <staff-of-fire>
 _Staff, Hero (requires attunement)_
 
 You have resistance to fire damage while you hold this staff.
 
-The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: _burning hands_ (1 charge), _fireball_ (3 charges), or _wall of fire_ (4 charges).
+The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: #safe-link("burning-hands",[_burning hands_]) (1 charge), #safe-link("fireball",[_fireball_]) (3 charges), or #safe-link("wall-of-fire",[_wall of fire_]) (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff blackens, crumbles into cinders, and is destroyed.
 
-=== Staff of Frost
+=== Staff of Frost <staff-of-frost>
 _Staff, Hero (requires attunement)_
 
 You have resistance to cold damage while you hold this staff.
 
-The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: _cone of cold_ (5 charges), _fog cloud_ (1 charge), _ice storm_ (4 charges), or _wall of ice_ (4 charges).
+The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spellcasting DC: #safe-link("cone-of-cold",[_cone of cold_]) (5 charges), #safe-link("fog-cloud",[_fog cloud_]) (1 charge), #safe-link("ice-storm",[_ice storm_]) (4 charges), or #safe-link("wall-of-ice",[_wall of ice_]) (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns to water and is destroyed.
 
-=== Staff of Healing
+=== Staff of Healing <staff-of-healing>
 _Staff, Hero (requires attunement)_
 
-This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using Wisdom as the spellcasting ability modifier: _cure wounds_ (1 charge per two aether, up to 8 AET), _restoration_ (lesser variant, 2 charges), or _mass cure wounds_ (5 charges).
+This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using Wisdom as the spellcasting ability modifier: #safe-link("cure-wounds",[_cure wounds_]) (1 charge per two aether, up to 8 AET), #safe-link("restoration",[_restoration_]) (lesser variant, 2 charges), or #safe-link("mass-cure-wounds",[_mass cure wounds_]) (5 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.
 
-=== Staff of Power
+=== Staff of Power <staff-of-power>
 _Staff, Hero (requires attunement)_
 
 This staff can be wielded as a masterwork quarterstaff.
@@ -3038,7 +3019,7 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 
 *Power Strike.* When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 bludgeoning damage to the target.
 
-*Spells.*. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus (or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spell save DC): _cone of cold_ (5 charges), _fireball_ (cast with 12 AET, 5 charges), _globe of invulnerability_ (6 charges), _hold monster_ (5 charges), _levitate_ (2 charges), _lightning bolt_ (cast with 12 AET, 5 charges), _magic missile_ (1 charge), _ray of enfeeblement_ (1 charge), or _wall of force_ (6 charges).
+*Spells.*. While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus (or 8 + your Intelligence modifier + your proficiency bonus if you do not have a spell save DC): #safe-link("cone-of-cold",[_cone of cold_]) (5 charges), #safe-link("fireball",[_fireball_]) (cast with 12 AET, 5 charges), #safe-link("globe-of-invulnerability",[_globe of invulnerability_]) (6 charges), #safe-link("hold-monster",[_hold monster_]) (5 charges), #safe-link("levitate",[_levitate_]) (2 charges), #safe-link("lightning-bolt",[_lightning bolt_]) (cast with 12 AET, 5 charges), #safe-link("magic-missile",[_magic missile_]) (1 charge), #safe-link("ray-of-enfeeblement",[_ray of enfeeblement_]) (1 charge), or #safe-link("wall-of-force",[_wall of force_]) (6 charges).
 
 *Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 #sym.times the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
 
@@ -3049,39 +3030,39 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 "21 to 30 ft. away",[4 #sym.times the number of charges in the staff],
 )
 
-=== Staff of Striking
+=== Staff of Striking <staff-of-striking>
 _Staff, Hero (requires attunement)_
 
 This staff can be wielded as a masterwork quarterstaff.  The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
 
-=== Staff of Swarming Insects
+=== Staff of Swarming Insects <staff-of-swarming-insects>
 _Staff, Hero (requires attunement)_
 
 This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.
 
-*Spells.* While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Wisdom modifier + your proficiency bonus if you do not have a spell save DC: _giant insect_ (4 charges) or _insect plague_ (5 charges).
+*Spells.* While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC or 8 + your Wisdom modifier + your proficiency bonus if you do not have a spell save DC: #safe-link("giant-insect",[_giant insect_]) (4 charges) or #safe-link("insect-plague",[_insect plague_]) (5 charges).
 
 *Insect Cloud.* While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.
 
-=== Staff of the Python
+=== Staff of the Python <staff-of-the-python>
 _Staff, Adventurer (requires attunement)_
 
 You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.  On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.  If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.
 
-=== Staff of the Woodlands
+=== Staff of the Woodlands <staff-of-the-woodlands>
 _Staff, Hero (requires attunement)_
 
 This staff can be wielded as a masterwork quarterstaff.
 
 The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.
 
-*Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: _barkskin_ (2 charges), or _wall of thorns_ (6 charges).
+*Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: #safe-link("barkskin",[_barkskin_]) (2 charges), or #safe-link("wall-of-thorns",[_wall of thorns_]) (6 charges).
 
 In addition, you can use the Voice the Voiceless (1 charge, Animals and Plants only), and Awaken Beast or Plant (5 charges) incantations.
 
-*Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by _sense aura_. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
+*Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by #safe-link("sense-aura",[_sense aura_]). While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
 
-=== Staff of Thunder and Lightning
+=== Staff of Thunder and Lightning <staff-of-thunder-and-lightning>
 _Staff, Hero (requires attunement)_
 
 This staff can be wielded as a masterwork quarterstaff. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.
@@ -3096,12 +3077,12 @@ This staff can be wielded as a masterwork quarterstaff. It also has the followin
 
 *Thunder and Lightning.* You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.
 
-=== Staff of Withering
+=== Staff of Withering <staff-of-withering>
 _Staff, Hero (requires attunement)_ 
 
 This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
 
-=== Sun Blade
+=== Sun Blade <sun-blade>
 _Weapon (longsword), Hero (requires attunement)_
 
 This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword grants the wielder the Nimble Strike feature, allowing them to use their Ranged Attack Modifier instead of their Melee Attack Modifier. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
@@ -3110,32 +3091,32 @@ This is a masterwork weapon which counts as silvered and which deals radiant dam
 
 The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.
 
-=== Sword of Life Stealing
+=== Sword of Life Stealing <sword-of-life-stealing>
 _Weapon (any sword), Hero (requires attunement)_
 
 When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt.
 
-=== Trident of Fish Command
+=== Trident of Fish Command <trident-of-fish-command>
 _Weapon (trident), Adventurer (requires attunement)_
 
-This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast _domination_ (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.
+This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast #safe-link("domination",[_domination_]) (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.
 
-=== Vicious Weapon
+=== Vicious Weapon <vicious-weapon>
 _Weapon (any), Hero_
 
 When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.
 
-=== Vorpal Sword
+=== Vorpal Sword <vorpal-sword>
 _Weapon (any sword that deals slashing damage), legendary (requires attunement)_
 
 This is a masterwork weapon that counts as silvered and adamantine. In addition, the weapon ignores resistance to slashing damage.  When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.
 
-=== Weapon of Wounding
+=== Weapon of Wounding <weapon-of-wounding>
 _Weapon (any), Hero (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.
 
-= Skill Tricks
+= Skill Tricks <skill-tricks>
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
 Each skill trick detailed below shares some common characteristics:
@@ -3146,100 +3127,100 @@ Each skill trick detailed below shares some common characteristics:
 - *A target or targets*. Many skill tricks target either an object or one or more creatures. A few target a particular area.
 - *An effect*. The text of the skill trick describes the effect, as well as any saving throws required.
 
-=== Skill Trick DCs
+=== Skill Trick DCs <skill-trick-dcs>
 The DC for any saving throws required by skill tricks is given by
 
 #align(center)[*8 + the relevant ability score + your proficiency bonus*]
 
 regardless of whether the trick involves a proficiency or not. If you have expertise in the relevant skill or tool, targets have disadvantage on the saving throw.
 
-=== Acquiring Skill Tricks
+=== Acquiring Skill Tricks <acquiring-skill-tricks>
 
 Some classes get native access to Skill Tricks as a class feature. If they grant access to more advanced skill tricks beyond the basic ones at particular levels, that access overrides any prerequisites in the skill trick. Everyone else can choose a skill trick that they qualify for whenever they acquire an Ability Score Improvement from their class. At the same time, they can trade out one skill trick they've learned for a different one they qualify for.
 
-=== Basic Skill Tricks
+=== Basic Skill Tricks <basic-tricks>
 
 Basic skill tricks only require a +2 proficiency bonus.
 
-=== Alert
+=== Alert <alert-trick>
 
 _Wisdom (Perception OR Insight) Basic Skill Trick_
 
 You have advantage on Wisdom (Perception) checks against being surprised as well as passive Wisdom (Insight).
 
-=== Arcane Initiate
+=== Arcane Initiate <arcane-initiate-trick>
 
 _Intelligence (Arcana) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 2 AET from that same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Charge
+=== Charge <charge-trick>
 
 _Strength (Martial Weapon) Basic Skill Trick_
 
 When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
 
-=== Coordinated Strike
+=== Coordinated Strike <coordinated-strike-trick>
 
 _Charisma (Martial Weapon) Basic Skill Trick_
 
 As a bonus action you take when you take the Attack action and attack a target, expend 2 STA. Another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus.
 
-=== Craft Apprentice
+=== Craft Apprentice <craft-apprentice-trick>
 
 _Crafting Tool (any) Basic Skill Trick_
 
 You can make full progress with your chosen crafting skill while on the road. You learn the schema for one Journeyman magic item that requires that proficiency of your choice.
 
-=== Diplomat
+=== Diplomat <diplomat-trick>
 
 _Charisma (Persuasion) Basic Skill Trick_
 
 When you attempt to persuade someone to bypass procedures or to stop hostilities, you always interact as if the opponent is at worst indifferent to you.
 
-=== Disarm
+=== Disarm <disarm-trick>
 
 _Strength (Martial Weapon) Basic Skill Trick_
 
 When you hit with a melee weapon attack, you can spend 1 STA to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. 
 
-=== Divine Initiate
+=== Divine Initiate <divine-initiate-trick>
 
 _Wisdom (Religion) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 2 AET from that same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Evasive Footwork
+=== Evasive Footwork <evasive-footwork-trick>
 
 _Dexterity (General) Basic Skill Trick_
 
 When you use the Deflect action against opportunity attacks provoked by moving, the cost is reduced by 1 STA. This is cumulative with the benefit from masterwork armor.
 
-=== Feint
+=== Feint <feint-trick>
 
 _Charisma (Deception) Basic Skill Trick_
 
 You fake an attack as a bonus action, trying to misdirect the enemy. Expend 1 STA. The opponent must make a Wisdom saving throw. On a failed save, you have advantage on your next attack roll against them.
 
-=== Frighten
+=== Frighten <frighten-trick>
 
 _Charisma (Intimidation) Basic Skill Trick_
 
 As an action, you can expend 1 STA to threaten one enemy that can hear you. The target must make a Charisma saving throw. On a failed save, they are frightened of you until the end of your next turn.
 
-=== Haggler
+=== Haggler <haggler-trick>
 
 _Charisma (Persuasion OR Deception) Basic Skill Trick_
 
 You are particularly good at haggling. Any time you sell goods, you get 125% of the normal price, and you buy for 90% of the listed price.
 
-=== Jump
+=== Jump <jump-trick>
 
 _Strength (Athletics) Basic Skill Trick_
 
 You always count as having a running start when jumping. Additionally, you can fall an additional 10 ft. before taking fall damage. Start counting fall damage from 20 ft = 1d6 instead of 10 ft = 1d6.
 
-=== Linguist
+=== Linguist <linguist-trick>
 
 _Intelligence (General) Basic Skill Trick_
 
@@ -3247,59 +3228,59 @@ When you listen to conversation in a language you don't speak for at least 10 mi
 
 Additionally, you can make out the basic sense of any text written in a script for which you are fluent in at least one language. This does not help you decipher intentionally obfuscated or encoded messages.
 
-=== Lung Capacity
+=== Lung Capacity <lung-capacity-trick>
 
 _Constitution (General) Basic Skill Trick_
 
 You can hold your breath for twice as long. In addition, you can spend 1 STA when you are exposed to a source of poison gas (such as cloudkill or a dretch's Stench ability) that requires a Constitution saving throw to gain advantage on the Constitution saving throw. 
 
-=== Medic
+=== Medic <medic-trick>
 
 _Wisdom (Medicine) Basic Skill Trick_
 
 When you make a Wisdom (Medicine) check to stabilize someone at 0 HP and succeed or expend a charge from a Healer's Kit, the target regains 1 hit point and is conscious instead of being stable.
 
-=== Misdirect
+=== Misdirect <misdirect-trick>
 
 _Dexterity (Stealth) Basic Skill Trick_
 
 When you are hidden, you can use your bonus action and spend 1 STA to force a number of creatures equal to your proficiency bonus to make a Wisdom saving throw. On a failure, they do not notice you even if you move out of heavy obscurement, as long as you end your turn behind heavy obscurement.
 
-=== Piercing Wound
+=== Piercing Wound <piercing-wound-trick>
 
 _Dexterity (Martial Weapon) Basic Skill Trick_
 
 When you hit with an attack from a ranged weapon, you can spend 1 STA to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. If you have the Nimble Strike feature, you can use this with any weapon attack that uses Dexterity.
 
-=== Primal Initiate
+=== Primal Initiate <primal-initiate-trick>
 
 _Wisdom (Nature) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Resourceful Combatant
+=== Resourceful Combatant <resourceful-combatant-trick>
 _Strength (Martial Weapon) Basic Skill Trick_
 
 You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
 
-=== Scholar: History
+=== Scholar: History <scholar-history-trick>
 _Intelligence (History) Basic Skill Trick_
 
 You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so at advantage.
 
-=== Scholar: Nature
+=== Scholar: Nature <scholar-nature-trick>
 
 _Intelligence (Nature) Basic Skill Trick_
 
 You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so at advantage.
 
-=== Scholar: Religion
+=== Scholar: Religion <scholar-religion-trick>
 
 _Intelligence (Religion) Basic Skill Trick_
 
 You automatically recognize holy symbols of currently-active ascendants and know at least the basic tenants of that religion. Additionally, when you make an Intelligence (Religion) check to know information about dead or obscure religions or their worshippers, you have advantage on the check.
 
-=== Sense Baleful Magic
+=== Sense Baleful Magic <sense-baleful-magic-trick>
 
 _Wisdom (Arcana) Basic Skill Trick_
 
@@ -3307,40 +3288,40 @@ You are sensitive to the presence of hostile magics in your proximity. When you 
 
 Additionally, you have advantage on checks made to determine the spell being cast.
 
-=== Shield Bash
+=== Shield Bash <shield-bash-trick>
 
 _Strength (Shield) Basic Skill Trick_
 
 You lash out with your shield. Expend 1 STA and make an attack with your Melee Attack Modifier. On a hit, the opponent takes 1d4 bludgeoning damage and is staggered until the end of their next turn. If you score a critical hit, the target is staggered until the end of your next turn. This can replace an attack when you take the Attack action.
 
-=== Soothe Domesticated Animal
+=== Soothe Domesticated Animal <soothe-domesticated-animal-trick>
 
 _Wisdom (Animal Handling) Basic Skill Trick_
 
 You can make a Wisdom (Animal Handling) check against a DC of 10 to alter the disposition of a domesticated animal to friendly toward you or prevent a domesticated animal from panicking. Trained guard animals have a DC of 15 if they were hostile toward you. This effect lasts for one hour unless you or your allies attack the animals or their friends.
 
-=== Trap Finder
+=== Trap Finder <trap-finder-trick>
 
 _Intelligence (Investigation) Basic Skill Trick_
 
 You have advantage on Intelligence (Investigation) checks made to find trap triggers or figure out how to disable them. In addition, you can spend 1 STA to gain advantage on any Dexterity saving throws to avoid their effects.
 
-=== Tumble
+=== Tumble <tumble-trick>
 
 _Dexterity (Acrobatics) Basic Skill Trick_
 
 You can move through opponents' spaces if they are one size larger than you by expending 1 STA. They count as difficult terrain and you cannot willingly end your movement in their space.
 
-=== Advanced Skill Tricks
+=== Advanced Skill Tricks <advanced-tricks>
 Advanced skill tricks require a +4 proficiency.
 
-=== Arcane Journeyman
+=== Arcane Journeyman <arcane-journeyman-trick>
 
 _Intelligence (Arcana) Advanced Skill Trick_
 
 You learn one cantrip of your choice from the Arcanist list, as well as one spell costing no more than 3 AET from the same list. Intelligence is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Athlete
+=== Athlete <athlete-trick>
 
 _Strength (Athletics) Advanced Skill Trick_
 
@@ -3350,46 +3331,46 @@ Additionally, you gain a swimming speed equal to your normal speed and no longer
 
 Additionally, the distance you can jump doubles and the height at which you start taking fall damage increases to 30 ft (taking 1d6 for the first 30 ft you fall and 1d6 for every 10 ft above that).
 
-=== Bait and Switch
+=== Bait and Switch <bait-and-switch-trick>
 
 _Charisma (Deception) Advanced Skill Trick_
 
 As a bonus action, you expend 2 STA to swap places with one willing creature within 5 feet of you. This movement does not provoke opportunity attacks.
 
-=== Befriend Wild Animal
+=== Befriend Wild Animal <befriend-wild-animal-trick>
 
 _Wisdom (Animal Handling) Advanced Skill Trick_
 
 As an action, you can attempt to soothe an angry creature that does not speak any language or befriend a wary one. The creature must make a Charisma saving throw, at advantage if it is actively hostile to you. On a failure, the creature becomes friendly. Originally non-hostile creatures may follow you and protect you as long as you feed them and do not harm them, although they are still wild animals and they are not under your control.
 
-=== Bond Breaker
+=== Bond Breaker <bond-breaker-trick>
 _Strength (General) Advanced Skill Trick_
 
 You can spend 2 STA to break any non-magical shackles or bonds without a check. If the shackles are magical, you gain +10 on the Strength check to break free.
 
-=== Delay Unconsciousness
+=== Delay Unconsciousness <delay-unconsciousness-trick>
 _Constitution (General) Advanced Skill Trick_
 
 As a reaction when you are brought to zero hit points, you can expend 3 STA and gain a level of exhaustion. If you do, you do not gain the unconscious condition and can act normally. You still make death saving throws as normal, including when you take damage. If you are still at 0 HP at the end of your next turn, you go unconscious at that point.
 
-=== Demoralize
+=== Demoralize <demoralize-trick>
 _Charisma (Intimidation) Advanced Skill Trick_
 
 As an action, you expend 3 STA. You can either threaten a single enemy that can hear and see you or a group. If you threaten a single enemy, they must make a Wisdom saving throw. On a failed save, they suffer the consequences of failing a morale check and are broken until the end of your next turn. If you threaten a group of creature, they all are affected as if you used the Frighten skill trick on them.
 
-=== Divine Journeyman
+=== Divine Journeyman <divine-journeyman-trick>
 
 _Wisdom (Religion) Basic Skill Trick_
 
 You learn one cantrip of your choice from the Priest list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Fascinate
+=== Fascinate <fascinate-trick>
 
 _Charisma (Performance) Advanced Skill Trick_
 
 As an action, you begin a distracting performance. Expend 1 STA. Any number of creatures of your choice within 60 ft of you that can hear and see you must make a Wisdom saving throw. On a failure, they can't focus on anything but you and are effectively blinded and deafened to all other occurrences. Taking any damage breaks the effect, as does being shaken awake by someone else as an action. This effect lasts until you stop performing (using your action each round to maintain the distraction).
 
-=== Find Weakness
+=== Find Weakness <find-weakness-trick>
 
 _Intelligence (Investigation) Advanced Skill Trick_
 
@@ -3402,46 +3383,46 @@ As a bonus action, you can search for flaws in your opponent. Expend 2 STA and m
 
 Alternatively on a success, you can temporarily remove any one damage resistance you know about by informing your allies how to bypass it. This lasts for one minute.
 
-=== Like a Solid Snake
+=== Like a Solid Snake <solid-snake-trick>
 _Dexterity (Stealth) Advanced Skill Trick_
 
 You can attempt to hide even if only lightly obscured. Additionally, missing with an attack does not remove the hidden or invisible status.
 
-=== Mental Toughness
+=== Mental Toughness <mental-toughness-trick>
 _Charisma (General) Advanced Skill Trick_
 
-When you are afflicted by the charmed, frightened, or incapacitated conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
+When you are afflicted by the #safe-link("charmed", [charmed]), #safe-link("frightened", [frightened]), or #safe-link("incapacitated", [incapacitated]) conditions at the beginning of your turn due to an effect that caused a Wisdom saving throw, you can spend 2 STA to ignore the effects of those conditions until the end of your turn.
 
-=== People Whisperer
+=== People Whisperer <people-whisperer-trick>
 _Wisdom (Insight) Advanced Skill Trick_
 
 When you make a Wisdom (Insight) check and the result is above a 10, you gain one extra pertinent, specific detail about the target's mental or emotional state for every 5 higher you rolled (ie 1 at 15, 2 at 20, etc.).
 
-=== Primal Journeyman
+=== Primal Journeyman <primal-journeyman-trick>
 
 _Wisdom (Religion) Advanced Skill Trick_
 
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 3 AET from the same list. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
-=== Pocket Sand
+=== Pocket Sand <pocket-sand-trick>
 
 _Dexterity (Sleight of Hand) Advanced Skill Trick_
 
 As a bonus action, you can expend 1 STA and attempt to throw sand or dust into an opponent's eyes. The target must make a Dexterity saving throw. On a failed save, they are blinded until the end of your next turn. This does not work on targets that don't use eyes to see.
 
-=== Resuscitation
+=== Resuscitation <resuscitation-trick>
 
 _Wisdom (Medicine) Advanced Skill Trick_
 
 As an action, you can attempt to resuscitate someone who died within the last minute. Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 HP and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion. 
 
-=== Snow Job
+=== Snow Job <snow-job-trick>
 
 _Charisma (Deception) Advanced Skill Trick_
 
 When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so at advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
 
-=== Sunder
+=== Sunder <sunder-trick>
 
 _Strength (Carpentry, Mason's, or Blacksmith's Tools) Advanced Skill Trick_
 
@@ -3454,7 +3435,7 @@ Alternatively, you can target attended objects as follows, expending 2 STA:
 - *Wielded spell foci or other objects in hand*: Make an attack at disadvantage against the target's AC. On a hit, the focus is knocked from their grasp and lands 1d6 #sym.times 5 ft away in a random direction.
 ]
 
-=== Wrestler
+=== Wrestler <wrestler-trick>
 
 _Strength (Athletics) Advanced Skill Trick_
 
@@ -3462,23 +3443,23 @@ You can grapple and shove creatures two sizes larger than yourself. If you expen
 
 Additionally, when you start your turn with a creature grappled, you can expend 1 STA and attempt a second grapple check. If you succeed, the target is restrained until the grapple ends.
 
-=== Expert Skill Tricks
+=== Expert Skill Tricks <expert-tricks>
 
 Expert skill tricks require a +5 proficiency bonus.
 
-=== Blindfighter
+=== Blindfighter <blindfighter-trick>
 
 _Wisdom (Perception) Expert Skill Trick_
 
 Invisible or unseen enemies no longer have advantage to hit you. In addition, you do not have disadvantage to hit invisible or unseen enemies and gain blindsight out to 10 ft. If you already have blindsight or gain it later, this stacks.
 
-=== Break Will
+=== Break Will <break-will-trick>
 
 _Charisma (Intimidation) Expert Skill Trick_
 
-This skill trick acts like Demoralize except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The broken state lasts until the end of your next turn and broken creatures become frightened of you as if they had succeeded once the broken status ends; The frightened state lasts for 1 minute in either case.
+This skill trick acts like #safe-link("demoralize-trick", [Demoralize]) except that you can force any number of creatures that can see and hear you to make a Wisdom saving throw, becoming broken on a failure and frightened of you on a success. The broken state lasts until the end of your next turn and broken creatures become frightened of you as if they had succeeded once the broken status ends; The frightened state lasts for 1 minute in either case.
 
-=== Comprehend Dweomer
+=== Comprehend Dweomer <comprehend-dweomer-trick>
 
 _Intelligence (Arcana) Expert Skill Trick_
 
@@ -3488,13 +3469,13 @@ You gain the following benefits:
 - You can detect spellcasting within 60 ft. of you even if there are no components.
 - You can expend 3 AET as a reaction to attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence.
 
-=== Dungeoncrasher
+=== Dungeoncrasher <dungeoncrasher-trick>
 
 _Strength (Athletics) Expert Skill Trick_
 
 When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. for every STA you expend when making the check. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
 
-=== Find Portal
+=== Find Portal <find-portal-trick>
 
 _Wisdom (Survival) Expert Skill Trick_
 
@@ -3508,34 +3489,34 @@ You search for signs of an accessible planar portal within 1 mile of you. Make a
 "20+","You find a portal to a plane of your choosing. You can choose the approximate location that it leads to.",
 )
 
-=== Like a Ghost
+=== Like a Ghost <like-a-ghost-trick>
 
 _Dexterity (Stealth) Expert Skill Trick_
 
 When you are hidden, you no longer need to be concealed to remain hidden, but you must expend 1 STA for every turn you spend hidden without concealment. Missing with an attack no longer breaks stealth, although casting a spell with verbal components or hitting with an attack does reveal your position.
 
-=== Slippery
+=== Slippery <slippery-trick>
 
 _Dexterity (Acrobatics) Expert Skill Trick_
 
 You can no longer be grappled or restrained by non-legendary effects as long as you spend 1 STA when the effect is applied.
 
-=== Master Skill Tricks
+=== Master Skill Tricks <master-tricks>
 
 Master skill tricks require a +6 proficiency.
-=== Balance on Thin Air
+=== Balance on Thin Air <balance-on-thin-air-trick>
 
 _Dexterity (Acrobatics) Master Skill Trick_
 
 You can expend 1 AET per turn to walk on air as if it was solid ground.
 
-=== Dragon's Fear
+=== Dragon's Fear <dragons-fear-trick>
 
 _Charisma (Intimidation) Master Skill Trick_
 
-This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
+This skill trick works as #safe-link("break-will-trick", [Break Will]), but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw.
 
-=== Friend to All
+=== Friend to All <friend-to-all-trick>
 
 _Charisma (Persuasion) Master Skill Trick_
 
@@ -3543,13 +3524,13 @@ As an action, you can magically call for a truce even during combat, expending 3
 
 Alternatively, if you are not actively fighting someone, you can force them to make a Wisdom saving throw. On a failure, their disposition to you increases by one step for 10 minutes or until you take hostile action against them. Once the effect ends, they will still follow through on any bargains struck during that time, but their disposition toward you may change.
 
-=== Force Portal
+=== Force Portal <force-portal-trick>
 
 _Wisdom (Survival) Master Skill Trick_
 
 As an action and expending 4 AET, you force a micro-fissure in the fabric of the planes to form a full-fledged portal that lasts for 6 seconds. You can choose what plane it exits to, but only a rough description of the location on that plane.
 
-=== Healing Hands
+=== Healing Hands <healing-hands-trick>
 
 _Wisdom (Medicine) Master Skill Trick_
 
@@ -3561,7 +3542,7 @@ As an action you can expend 4 AET to magically do one of the following to a crea
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
 
-= Spellcasting
+= Spellcasting <spellcasting>
 Magic permeates fantasy gaming worlds and often appears in the form of a spell.
 
 This chapter provides the rules for casting spells. Different character classes have distinctive ways of learning and preparing their spells, and monsters use spells in unique ways. Regardless of its source, a spell follows the rules here.
@@ -3574,61 +3555,61 @@ Spells can be versatile tools, weapons, or protective wards. They can deal damag
 
 Uncounted thousands of spells have been created over the course of history, and many of them are long forgotten. Some might yet lie recorded in crumbling spell-books hidden in ancient ruins or trapped in the minds of dead gods. Or they might someday be reinvented by a character who has amassed enough power and wisdom to do so.
 
-=== Aether
+=== Aether <aether>
 Every character has a pool of Aether which they draw on to produce magical effects. Spellcasting also draws on this pool, and spell-casters tend to have much larger Aether pools than non-spell-casters.
 
 Some items have their own pools of aether that can be used to cast spells from them. These are separate from the character's aether.
 
-=== Aether Limit
+=== Aether Limit <aether-limit>
 Each class has a limit on how much aether they can channel into any one spell or effect. This is denoted on their class table, and increases with level.
 
-=== Aether Recovery
+=== Aether Recovery <aether-recovery>
 Aether pools are completely recovered on completing a Long Rest. In addition, some classes have features that let them recover a limited portion more quickly, and some items grant reserves that can be used to restore some aether to a pool.
 
-=== Known Spells
+=== Known Spells <known-spells>
 
 Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or must have access to the spell in a magic item. This process varies for different classes, as detailed in their descriptions. In general, no spellcaster can learn a spell whose base aether cost is higher than his Aether Limit, which grows with their class level. 
 
 In every case, the number of spells a caster can have fixed in mind at any given time depends on the character's level.
 
-=== Casting Spells
+=== Casting Spells <casting-spells>
 Casting a spell requires expending a certain amount of Aether from your personal reserves, as indicated in the spell. You cannot cast a spell that requires expending more aether than your Aether Limit or that requires more Aether than you have remaining. 
 
-=== Overcasting a spell
+=== Overcasting a spell <overcasting-a-spell>
 
 When a spellcaster casts a spell using more aether than the base costs, the spell has a heightened effect and can bypass defenses that block or counter lower-powered spells. For example, if a creature is immune to spells that cost less than 5 aether and Torvald casts magic missile (which requires 2 aether) and expends 5 aether, the creature's defenses do not block that spell. This is called overcasting the spell.
 
-Some spells, such as _magic missile_ and _cure wounds_, have more powerful effects when overcast, as detailed in a spell's description.
+Some spells, such as #safe-link("magic-missile",[_magic missile_]) and #safe-link("cure-wounds",[_cure wounds_]), have more powerful effects when overcast, as detailed in a spell's description.
 
-=== Casting in Armor
+=== Casting in Armor <casting-in-armor>
 Because of the mental focus and precise gestures required for spellcasting, armor inhibits spellcasting. You cannot cast spells with material or somatic components while wearing any physical armor (not including mage armor). Some classes have features that negate this restriction for certain armor types and there are some magic armors that act as exceptions (such as aelvar chain).
 
-=== Cantrips
+=== Cantrips <cantrips>
 
 A cantrip is a spell that can be cast at will, without spending aether and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip costs 0 aether and cannot be overcast. Some cantrips gain more power as the caster becomes stronger; this is detailed in the entry itself.
 
-== Casting a Spell
+== Casting a Spell <casting-a-spell>
 
 When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.
 
 Each spell description begins with a block of information, including the spell's name, aether cost, casting time, range, components, and duration. The rest of a spell entry describes the spell's effect.
 
-=== Casting Time
+=== Casting Time <casting-time>
 
 Most spells require a single action to cast, but some spells require a bonus action, a reaction, or much more time to cast. You can't spend aether to cast a spell more than once per turn regardless of action costs.
 
-=== Reactions
+=== Reactions <reactions>
 
 Some spells can be cast as reactions. These spells take a fraction of a second to bring about and are cast in response to some event. If a spell can be cast as a reaction, the spell description tells you exactly when you can do so and whether it interrupts the trigger or happens afterward.
 
-=== Longer Casting Times
+=== Longer Casting Times <longer-casting-times>
 
 Certain spells require more time to cast: minutes or even hours. When you cast a spell with a casting time longer than a single action or reaction, you must spend your action each turn casting the spell, and you must maintain your concentration while you do so (see “Concentration” below). If your concentration is broken, the spell fails, but you don't expend aether. If you want to try casting the spell again, you must start over.
 
-=== Spell Range
+=== Spell Range <spell-range>
 See Range in the core rules.
 
-=== Components
+=== Components <components>
 
 A spell's components are the physical requirements you must meet in order to cast it. Each spell's description indicates whether it requires verbal (V), somatic (S), or material (M) components. If you can't provide one or more of a spell's components, you are unable to cast the spell.
 
@@ -3640,38 +3621,38 @@ These mystic words are not in a recognizable language and can be immediately rec
 
 These gestures cannot be performed in stealth. Anyone who can see the caster can see the gestures and may recognize them as components of spellcasting. Particularly ignorant people and animals may not recognize them as such.
 
-*Material (M).* Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in “equipment") in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
+*Material (M).* Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a *component pouch* or a *spellcasting focus* (found in #safe-link("equipment", [Equipment]) in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.
 
 If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.
 
 A spellcaster must have a hand free to access a spell's material components—--or to hold a spellcasting focus—--but it can be the same hand that he or she uses to perform somatic components.
 
-=== Duration
+=== Duration <duration>
 
 A spell's duration is the length of time the spell persists. A duration can be expressed in rounds, minutes, hours, or even years. Some spells specify that their effects last until the spells are dispelled or destroyed.
 
-=== Instantaneous
+=== Instantaneous <instantaneous>
 
 Many spells are instantaneous. The spell harms, heals, creates, or alters a creature or an object in a way that can't be dispelled, because its magic exists only for an instant.
 
-=== Concentration
+=== Concentration <concentration>
 
 Many spells require concentration. See Concentration for details.
 
-=== Spell Saving Throws
+=== Spell Saving Throws <spell-saving-throws>
 
 Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. The GM may decide to tell you which creatures failed or succeeded on the saving throw, but this is not mandatory.
 
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
-=== Targets
-See Targets for the general rules that apply to all abilities, including spells and legendary effects.
+=== Targets <reminder-targets>
+See #safe-link("targets", [Targets]) for the general rules that apply to all abilities, including spells and legendary effects.
 
-=== Spell Attack Rolls
+=== Spell Attack Rolls <spell-attack-rolls>
 
 Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.
 
-=== Combining Magical Effects
+=== Combining Magical Effects <combining-magical-effects>
 See stacking for the general rules.
 
 The effects of different spells add together while the durations of those spells overlap. The effects of the same spell cast multiple times don't combine, however. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap.
@@ -3679,7 +3660,7 @@ The effects of different spells add together while the durations of those spells
 For example, if two priests cast bless on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.
 
 == Legendary Effects
-See Legendary Effects below for the full details. 
+See #safe-link("legendary-effects", [Legendary Effects]) below for the full details. 
 
 Legendary effects are those whose power is too great to learn or cast as a normal spell. These can only be accessed via class features, feats, and special boons. They do not consume aether and effects that interact with spells do not interact with legendary effects unless they explicitly say they do.
 
@@ -3695,7 +3676,7 @@ These are starting points. Unlike fixed spell levels, spells can have any intege
 "6+","legendary",
 )
 
-=== Starting values for total aether and aether limit
+=== Starting values for total aether and aether limit <starting-values-for-total-aether-and-aether-limit>
 Starting points. Note that everyone gets aether. "Martial" is those who don't explicitly have a Spellcasting trait.
 
 #dndtab("", columns: 1fr, 
@@ -3750,9 +3731,9 @@ Generally, monsters have the lowest Dexterity and Intelligence saving throw modi
   )
 ]
 
-= Spell Lists
+= Spell Lists <spell-lists>
 
-== By Cost
+== By Cost <spells-by-cost>
 Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists and spellblades, etc.). (C) indicates a concentration spell. ATK means "requires a spell attack". "Save for half" means that on a successful save the target takes half damage and no other effect. "Save ends" means that the target can re-attempt the saving throw at the end of each of their turns, ending the effect on a success.
 
 === 0 (Cantrips)
@@ -3950,7 +3931,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *wall of stone* (priest, shaman): Special (C, 10 min), 120 ft. Thick stone wall/surface. Must be anchored to solid stone.
 ]
 
-=== Legendary.
+=== Legendary <legendary>
 #flush-block[
 - *abjure aether manipulation* (Concentration, Generic, Greater)
 - *animal shapes* (Concentration, Primal, Greater)
@@ -3995,9 +3976,9 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *word of recall* (Divine, Lesser)
 ]
 
-== Spells A-Z
+== Spells A-Z <alpha-spells>
 
-=== Acid Arrow
+=== Acid Arrow <acid-arrow>
 #flush-block[
 - _3 AET, Damage_
 - _Cast Time_: 1 action
@@ -4011,7 +3992,7 @@ A shimmering green arrow streaks toward a target within range and bursts in a sp
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage (both initial and subsequent) increases by 1d6 for every 2 AET you spend above 3.
 
-=== Acid Burst
+=== Acid Burst <acid-burst>
 #flush-block[
 - _Cantrip, Damage_
 - _Cast Time_: 1 action
@@ -4025,7 +4006,7 @@ Acidic liquid envelops a target you can see within range. The target must make a
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Aetheric Barrier
+=== Aetheric Barrier <aetheric-barrier>
 #flush-block[
 - _5 AET, Defense_
 - _Cast Time_: 1 action
@@ -4037,7 +4018,7 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 You envelop yourself and all creatures of your choice within 10 feet of you in protective aether. When you cast this spell and one additional time as a bonus action while the spell is active, all targets gain 2d10 + your spellcasting modifier temporary hit points that last for the duration. While they have these temporary hit points, they have advantage on concentration saves caused by taking damage.
 
-=== Aid
+=== Aid <aid>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4051,7 +4032,7 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 
 *Overcast.* When you cast this spell using 4 or more AET, a target's hit points increase by an additional 5 for each 2 AET above 3.
 
-=== Alter Self
+=== Alter Self <alter-self>
 #flush-block[
 - _3 AET, Shape-changing_
 - _Cast Time_: 1 action
@@ -4071,7 +4052,7 @@ You assume a different form. When you cast the spell, choose one of the followin
 
 *Overcast.* For every 3 AET above the base cost, the duration extends by 1 hour. If you spend at least 12 AET, it no longer requires concentration.
 
-=== Antilife Shell
+=== Antilife Shell <antilife-shell>
 #flush-block[
 - _12 AET, Defensive_
 - _Cast Time_: 1 action
@@ -4087,7 +4068,7 @@ The barrier prevents an affected creature from passing or reaching through. An a
 
 If you move so that an affected creature is forced to pass through the barrier, the spell ends.
 
-=== Arcane Binding
+=== Arcane Binding <arcane-binding>
 #flush-block[
 - _4 AET, Control_
 - _Cast Time_: 1 action
@@ -4101,7 +4082,7 @@ Choose a creature that you can see within range. The target must succeed on a St
 
 *Overcast.* When you cast this spell using 6 or more AET, you can target a second creature within range. When you cast this spell using 8 or more AET, the targets are paralyzed (with the same exception) if they fail the saving throw at all, rather than by 5 or more.
 
-=== Arcane Eye
+=== Arcane Eye <arcane-eye>
 #flush-block[
 - _8 AET, scouting_
 - _Cast Time_: 1 action
@@ -4117,7 +4098,7 @@ You mentally receive visual information from the eye, which has normal vision an
 
 As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.
 
-=== Bane
+=== Bane <bane>
 #flush-block[
 - _2 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4131,7 +4112,7 @@ Up to three creatures of your choice that you can see within range must make Cha
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET you spend.
 
-=== Banishment
+=== Banishment <banishment>
 #flush-block[
 - _8 AET, Control_
 - _Cast Time_: 1 action
@@ -4149,7 +4130,7 @@ If the target is native to a different plane of existence than the one you're on
 
 *Overcast.* When you cast this spell using more than 8 AET, you can target one additional creature for every 3 additional AET you spend. Creatures save or not individually, but ending concentration affects all banished creatures.
 
-=== Barkskin
+=== Barkskin <barkskin>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4165,7 +4146,7 @@ In addition, the target gains temporary hit points equal to your spellcasting mo
 
 *Overcast.* When you cast this spell using more than 3 AET, the target's minimum AC increases by 1 for ever 3 AET you spend, up to a maximum AC of 20.
 
-=== Beacon of Hope
+=== Beacon of Hope <beacon-of-hope>
 #flush-block[
 - _5 AET, Buff_
 - _Cast Time_: 1 action
@@ -4177,7 +4158,7 @@ In addition, the target gains temporary hit points equal to your spellcasting mo
 
 This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.
 
-=== Bestow Curse
+=== Bestow Curse <bestow-curse>
 #flush-block[
 - _5 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4194,11 +4175,11 @@ You touch a creature, and that creature must succeed on a Wisdom saving throw or
 - While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.
 - While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.
 
-A _remove curse_ spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
+A #safe-link("remove-curse", [_remove curse_]) spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.
 
 *Overcast.* If you cast this spell using 8 AET, the duration is concentration, up to 10 minutes. If you use 12 AET,the duration is 8 hours. If you use 16 AET, the duration is 24 hours. Using 12 or more AET grants a duration that doesn't require concentration and lasts at least 8 hours (more at 16 AET).
 
-=== Black Tentacles
+=== Black Tentacles <black-tentacles>
 #flush-block[
 - _8 AET, zone, DEX, movement + damage_
 - _Cast Time_: 1 action
@@ -4215,7 +4196,7 @@ When a creature enters the affected area for the first time on a turn or starts 
 A creature restrained by the tentacles can use its action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself.
 *Overcast.* When you use more than 8 AET to cast this spell, the damage dealt increases by 1d6 for every two AET you spend up to 12 (dealing 5d6).
 
-=== Blade Barrier
+=== Blade Barrier <blade-barrier>
 #flush-block[
 - _15 AET, Wall_
 - _Cast Time_: 1 action
@@ -4229,7 +4210,7 @@ You create a vertical wall of whirling, razor-sharp blades made of magical energ
 
 When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.
 
-=== Bless
+=== Bless <bless>
 #flush-block[
 - _2 AET, Buff_
 - _Cast Time_: 1 action
@@ -4243,7 +4224,7 @@ You bless up to three creatures of your choice within range. Whenever a target m
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 AET you spend.
 
-=== Blight
+=== Blight <blight>
 #flush-block[
 - _6 AET, Damage_
 - _Cast Time_: 1 action
@@ -4261,7 +4242,7 @@ If you target a non-magical plant that isn't a creature, such as a tree or shrub
 
 *Overcast.* When you cast this spell using more than 8 AET, the damage increases by 1d8 for every AET you spend up to a maximum of 12 AET (12d8).
 
-=== Blindness/Deafness
+=== Blindness/Deafness <blindness-deafness>
 #flush-block[
 - _3 AET, Debuff_
 - _Cast Time_: 1 action
@@ -4275,7 +4256,7 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every two additional AET spent.
 
-=== Blink
+=== Blink <blink>
 #flush-block[
 - _5 AET, Defense_
 - _Cast Time_: 1 action
@@ -4289,7 +4270,7 @@ Roll a d20 at the end of each of your turns for the duration of the spell. On a 
 
 While on the Border Shadow, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Border Shadow. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.
 
-=== Blur
+=== Blur <blur>
 #flush-block[
 - _3 AET, Defense_
 - _Cast Time_: 1 action
@@ -4301,7 +4282,7 @@ While on the Border Shadow, you can see and hear the plane you originated from, 
 
 Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.
 
-=== Burning Hands
+=== Burning Hands <burning-hands>
 #flush-block[
 - _2 AET, Damage_
 - _Cast Time_: 1 action
@@ -4317,7 +4298,7 @@ The fire ignites any flammable objects in the area that aren't being worn or car
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
-=== Call Lightning
+=== Call Lightning <call-lightning>
 #flush-block[
 - _6 AET, Damage_
 - _Cast Time_: 1 action
@@ -4335,7 +4316,7 @@ If you are outdoors in stormy conditions when you cast this spell, the spell giv
 
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d10 for every 3 additional AET spent.
 
-=== Calm Emotions
+=== Calm Emotions <calm-emotions>
 #flush-block[
 - _3 AET, Buff/Debuff_
 - _Cast Time_: 1 action
@@ -4351,7 +4332,7 @@ You can suppress any effect causing a target to be charmed or frightened. When t
 
 Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the GM rules otherwise.
 
-=== Caustic Torrent
+=== Caustic Torrent <caustic-torrent>
 #flush-block[
 - _8 AET, Damage_
 - _Cast time_: 1 action
@@ -4363,7 +4344,7 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 When you cast this spell, you project a 30-foot cone of caustic, vile-smelling liquid. Creatures in the area must make a Dexterity saving throw. On a failed save, they are poisoned for the duration and take 6d6 acid damage and 3d6 acid damage at the beginning of each of their turns while poisoned. On a success, they take half as much damage initially and no ongoing effects. Poisoned creatures can make a CON save against the same DC at the end of each of their turns, ending the effect on a success. Unattended objects in the area take 8d6 acid damage and no ongoing effects. 
 
-=== Chain Lightning
+=== Chain Lightning <chain-lightning>
 #flush-block[
 - _13 AET, Damage_
 - _Cast Time_: 1 action
@@ -4379,7 +4360,7 @@ A target must make a Dexterity saving throw. The target takes 10d8 lightning dam
 
 *Overcast.* When you cast this spell using more than 13 AET, one additional bolt leaps from the first target to another target for every 3 additional AET spent.
 
-=== Charm Person
+=== Charm Person <charm-person>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4393,7 +4374,7 @@ You attempt to charm a humanoid you can see within range. It must make a Charism
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-=== Clairvoyance
+=== Clairvoyance <clairvoyance>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 10 minutes
@@ -4407,7 +4388,7 @@ You create an invisible sensor within range in a location familiar to you (a pla
 
 When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
 
-=== Cloudkill
+=== Cloudkill <cloudkill>
 #flush-block[
 - _14 AET_
 - _Cast Time_: 1 action
@@ -4425,7 +4406,7 @@ When you cast this spell, choose either *creeping fog* or *rolling fog*. If you 
 
 *Overcast.* When you cast this spell using more than 14 AET , the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Color Spray
+=== Color Spray <color-spray>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4439,7 +4420,7 @@ A dazzling array of flashing, colored light springs from your hand. All creature
 
 *Overcast.* When you cast this spell using more than 2 AET, the duration increases by one round for every 2 additional AET spent.
 
-=== Command
+=== Command <command>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4461,7 +4442,7 @@ You speak a one-word command from the list below to a creature you can see withi
 
 *Overcast.* When you cast this spell using more than 2 AET, you can affect one additional creature for every 2 additional AET spent. The creatures must be within 30 feet of each other when you target them.
 
-=== Cone of Cold
+=== Cone of Cold <cone-of-cold>
 #flush-block[
 - _10 AET_
 - _Cast Time_: 1 action
@@ -4477,7 +4458,7 @@ A creature killed by this spell becomes a frozen statue until it thaws.
 
 *Overcast.* When you cast this spell using more than 10 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Confusion
+=== Confusion <confusion>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4503,7 +4484,7 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 
 *Overcast.* When you cast this spell using more than 8 AET, the radius of the sphere increases by 5 feet for every 3 additional AET spent.
 
-=== Conjure Animals
+=== Conjure Animals <conjure-animals>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -4527,17 +4508,17 @@ The GM has the creatures' statistics.
 - 8 AET spent: 1 giant scorpion or killer whale or 2 of the base solo options.
 - 11 AET spent: 1 elephant or 2 giant scorpions or killer whales.
 
-=== Conjure Elemental
+=== Conjure Elemental <conjure-elemental>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 minute
 - _Range_: 90 feet
-- _Components_: V, S, M (burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water)
+- _Components_: V, S, M (burning incense for air or lightning, soft clay for earth or mud, sulfur and phosphorus for fire or lava, or water and sand for water or ice)
 - _Duration_: Concentration, up to 1 hour
 - _Classes_: Arcanist, Shaman
 ]
 
-You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
+You call forth an elemental servant in an unoccupied 10x10 area within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in that space. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
 
 The elemental is friendly to you and your companions for the duration. The elemental takes its turn immediately after your turn ends. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.
 
@@ -4547,7 +4528,7 @@ The GM has the elemental's statistics.
 
 *Overcast.* When you cast this spell using more than 12 AET, the hit points of the summoned elemental increase by 5 for each additional AET spent and it gains an additional attack for every 3 additional AET spent.
 
-=== Conjure Mephits
+=== Conjure Mephits <conjure-mephits>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 minute
@@ -4566,7 +4547,7 @@ The summoned creatures are friendly to you and your companions. They take their 
 
 The GM has the creatures' statistics.
 
-=== Conjure Woodland Beings
+=== Conjure Woodland Beings <conjure-woodland-beings>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4587,7 +4568,7 @@ The summoned creatures are friendly to you and your companions. They take their 
 
 The GM has the creatures' statistics.
 
-=== Contagion
+=== Contagion <contagion>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4611,7 +4592,7 @@ Since this spell induces a natural disease in its target, any effect that remove
 - *Slimy Doom.* The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is staggered until the end of its next turn.
 ]
 
-=== Control Water
+=== Control Water <control-water>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4639,7 +4620,7 @@ When a creature enters the vortex for the first time on a turn or starts its tur
 
 The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.
 
-=== Create or Destroy Water
+=== Create or Destroy Water <create-or-destroy-water>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4657,7 +4638,7 @@ You either create or destroy water. Living beings do not count as open container
 
 *Overcast.* When you cast this spell using more than 2 AET, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for every 2 additional AET spent.
 
-=== Cure Wounds
+=== Cure Wounds <cure-wounds>
 #flush-block[
 - _1 AET_
 - _Cast Time_: 1 action
@@ -4671,7 +4652,7 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 
 *Overcast.* When you cast this spell using more than 1 AET, the healing increases by 1d8 for every additional AET spent, up to a maximum of 12d8 + your spellcasting ability modifier.
 
-=== Dancing Lights
+=== Dancing Lights <dancing-lights>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -4685,7 +4666,7 @@ You create up to four torch-sized lights within range, making them appear as tor
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
-=== Darkness
+=== Darkness <darkness>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4701,7 +4682,7 @@ If the point you choose is on an object you are holding or one that isn't being 
 
 If any of this spell's area overlaps with an area of light created by a spell of costing 3 AET or less, the spell that created the light is dispelled.
 
-=== Darkvision
+=== Darkvision <darkvision>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4713,7 +4694,7 @@ If any of this spell's area overlaps with an area of light created by a spell of
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. If it already had darkvision, it can see color in the dark.
 
-=== Daylight
+=== Daylight <daylight>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -4729,7 +4710,7 @@ If you chose a point on an object you are holding or one that isn't being worn o
 
 If any of this spell's area overlaps with an area of darkness created by a spell costing 3 or less AET, the spell that created the darkness is dispelled.
 
-=== Death Ward
+=== Death Ward <death-ward>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4743,7 +4724,7 @@ You touch a creature and grant it a measure of protection from death. The first 
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.
 
-=== Detect Thoughts
+=== Detect Thoughts <detect-thoughts>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4763,7 +4744,7 @@ You can also use this spell to detect the presence of thinking creatures you can
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
 
-=== Dimension Door
+=== Dimension Door <dimension-door>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4779,7 +4760,7 @@ You can bring along objects as long as their weight doesn't exceed what you can 
 
 If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 bludgeoning damage, and the spell fails to teleport you.
 
-=== Disguise Self
+=== Disguise Self <disguise-self>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4795,7 +4776,7 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC. Creatures that physically interact with the disguise in a way that would reveal its falsity as part of a different action can immediate make the check without spending another action.
 
-=== Dispel Otherworldly Influence
+=== Dispel Otherworldly Influence <dispel-otherworldly-influence>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4813,7 +4794,7 @@ You can end the spell early by using either of the following special functions.
 
 *Dismissal.* As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, demons are sent to the Abyss, devils are sent to the Astral, and fey are sent to Shadow.
 
-=== Divine Favor
+=== Divine Favor <divine-favor>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4825,7 +4806,7 @@ You can end the spell early by using either of the following special functions.
 
 Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
-=== Divine Wrath
+=== Divine Wrath <divine-wrath>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -4837,7 +4818,7 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 
 You call upon holy power and radiate destruction. When you cast this spell and at the start of each of your turns for the duration, a wave of radiant energy pulses out from you in a 15 foot sphere. All creatures in the area must make a Charisma saving throw, taking 5d8 radiant damage on a failed save or half as much on a success. Fiends, undead, and creatures summoned by magic make this saving throw at disadvantage. When you cast the spell, you can choose a number of targets up to your proficiency bonus. Designated targets are immune to the effect.
 
-=== Dominate Unthinking
+=== Dominate Unthinking <dominate-unthinking>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4857,7 +4838,7 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 *Overcast.* When you cast this spell and spend at least 11 AET, the duration is concentration, up to 10 minutes. When you use at least 14 AET, the duration is concentration, up to 1 hour.
 
-=== Enhance Ability
+=== Enhance Ability <enhance-ability>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4879,7 +4860,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
-=== Enlarge/Reduce
+=== Enlarge/Reduce <enlarge-reduce>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -4897,7 +4878,7 @@ If the target is a creature, everything it is wearing and carrying changes size 
 
 *Reduce.* The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category---from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
 
-=== Entangle
+=== Entangle <entangle>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4913,7 +4894,7 @@ A creature in the area when you cast the spell must succeed on a Strength saving
 
 When the spell ends, the conjured plants wilt away.
 
-=== Enthrall
+=== Enthrall <enthrall>
 #flush-block[
 - _4 AET_
 - _Cast Time_: 1 action
@@ -4927,7 +4908,7 @@ You weave a distracting string of words, causing creatures of your choice that y
 
 *Overcast.* When you cast this spell and spend at least 6 AET, the duration increases to 10 minutes. If you spend at least 8 AET, it no longer requires concentration and lasts for 10 minutes.
 
-=== Envenom
+=== Envenom <envenom>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4941,7 +4922,7 @@ You touch a weapon or container of ammunition and enchant it with venom. For the
 
 *Overcast.* When you cast this spell and spend more than 2 AET, you can target an additional weapon or container of ammunition for every 2 AET spent above 2.
 
-=== Expeditious Retreat
+=== Expeditious Retreat <expeditious-retreat>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -4953,7 +4934,7 @@ You touch a weapon or container of ammunition and enchant it with venom. For the
 
 This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.
 
-=== Faerie Fire
+=== Faerie Fire <faerie-fire>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4967,7 +4948,7 @@ Each object in a 20-foot cube within range is outlined in blue, green, or violet
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.
 
-=== Faithful Hound
+=== Faithful Hound <faithful-hound>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -4983,7 +4964,7 @@ The hound is invisible to all creatures except you and can't be harmed. When a S
 
 At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.
 
-=== False Life
+=== False Life <false-life>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -4997,7 +4978,7 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + your sp
 
 *Overcast.* When you cast this spell using more than 2 AET, you gain 5 additional temporary hit points for every 2 additional AET spent.
 
-=== Fear
+=== Fear <fear>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5011,7 +4992,7 @@ You project a phantasmal image of a creature's worst fears. Each creature in a 3
 
 While frightened by this spell, a creature that can see you must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move, in which case they take the Guard action. Frightened creatures can make the saving throw again at the end of any turn if they cannot see you at that point.
 
-=== Feather Fall
+=== Feather Fall <feather-fall>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 reaction, which you take when you or a creature within 60 feet of you falls
@@ -5023,7 +5004,7 @@ While frightened by this spell, a creature that can see you must take the Dash a
 
 Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.
 
-=== Find Traps
+=== Find Traps <find-traps>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5033,11 +5014,11 @@ Choose up to five falling creatures within range. A falling creature's rate of d
 - _Classes_: Priest, Ranger
 ]
 
-You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable. Creatures never count as traps. Thus, the spell would sense an area affected by the _alarm_ or _spell trap_ incantation, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole, but would not detect a hidden ambush force.
+You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable. Creatures never count as traps. Thus, the spell would sense an area affected by the #safe-link("alarm",[_alarm_]) or #safe-link("spell-trap",[_spell trap_]) incantation, or a mechanical pit trap as well as a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole, but would not detect a hidden ambush force.
 
 You learn the location and the general nature of the danger posed by each trap.
 
-=== Fireball
+=== Fireball <fireball>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5053,7 +5034,7 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 
 *Overcast.* When you cast this spell using more than 5 AET, the initial damage increases by 1d6 for every 2 additional AET spent.
 
-=== Fire Shield
+=== Fire Shield <fire-shield>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5069,7 +5050,7 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.
 
-=== Flame Blade
+=== Flame Blade <flame-blade>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 bonus action
@@ -5089,7 +5070,7 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage increases by 1d6 for every 4 additional AET spent. When used as a normal weapon, the damage dice increase by 1d6 for every 4 additional AET.
 
-=== Flame Strike
+=== Flame Strike <flame-strike>
 #flush-block[
 - _9 AET_
 - _Cast Time_: 1 action
@@ -5103,7 +5084,7 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 *Overcast.* When you cast this spell using more than 9 AET, the fire damage and the radiant damage each increase by 1d6 for every 3 additional AET spent.
 
-=== Flaming Sphere
+=== Flaming Sphere <flaming-sphere>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5121,7 +5102,7 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
-=== Flash Freeze
+=== Flash Freeze <flash-freeze>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5135,7 +5116,7 @@ The air around a creature you can see within range takes on the aspect of ice. T
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
-=== Fog Cloud
+=== Fog Cloud <fog-cloud>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5149,7 +5130,7 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 
 *Overcast.* When you cast this spell using more than 2 AET, the radius of the fog increases by 10 feet for every 3 additional AET spent.
 
-=== Freedom of Movement
+=== Freedom of Movement <freedom-of-movement>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5163,7 +5144,7 @@ You touch a willing creature. For the duration, the target's movement is unaffec
 
 The target can also spend 5 feet of movement to automatically escape from non-magical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.
 
-=== Gaseous Form
+=== Gaseous Form <gaseous-form>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5179,7 +5160,7 @@ While in this form, the target's only method of movement is a flying speed of 10
 
 While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.
 
-=== Giant Insect
+=== Giant Insect <giant-insect>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5197,7 +5178,7 @@ A creature remains in its giant size for the duration, until it drops to 0 hit p
 
 The GM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.
 
-=== Grave Touch
+=== Grave Touch <grave-touch>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5213,7 +5194,7 @@ If you hit an undead target, it also has disadvantage on attack rolls against yo
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Grease
+=== Grease <grease>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5229,7 +5210,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 
 This grease is flammable, acting like a flask of oil. Any ignition source ignites the entire area. This fire lasts until the next round, ending on the initiative count of the creature or effect that ignited it. A given grease spell can only be ignited once.
 
-=== Greater Invisibility
+=== Greater Invisibility <greater-invisibility>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5241,7 +5222,7 @@ This grease is flammable, acting like a flask of oil. Any ignition source ignite
 
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.
 
-=== Guidance
+=== Guidance <guidance>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5253,7 +5234,7 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.
 
-=== Guiding Bolt
+=== Guiding Bolt <guiding-bolt>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5267,7 +5248,7 @@ A flash of light streaks toward a creature of your choice within range. Make a r
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d6 for every 2 additional AET spent.
 
-=== Gust of Wind
+=== Gust of Wind <gust-of-wind>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5285,7 +5266,7 @@ The gust disperses gas or vapor, and it extinguishes candles, torches, and simil
 
 As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.
 
-=== Hallucinatory Terrain
+=== Hallucinatory Terrain <hallucinatory-terrain>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 10 minutes
@@ -5299,7 +5280,7 @@ You make natural terrain in a 150-foot cube in range look, sound, and smell like
 
 The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.
 
-=== Haste
+=== Haste <haste>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5313,7 +5294,7 @@ Choose a willing creature that you can see within range. Until the spell ends, t
 
 *Overcast.* When you cast this spell using 7 AET, the target can also take the Attack action (making only a single weapon attack). Alternatively, you can affect one additional target with the base effect for every 3 additional AET spent.
 
-=== Healing Word
+=== Healing Word <healing-word>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5326,7 +5307,7 @@ Choose a willing creature that you can see within range. Until the spell ends, t
 A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 *Overcast.* When you cast this spell using more than 1 AET, the healing increases by 1d4 for every 2 additional AET spent.
 
-=== Heat Metal
+=== Heat Metal <heat-metal>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5342,7 +5323,7 @@ If a creature is holding or wearing the object and takes the damage from it, the
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Heroism
+=== Heroism <heroism>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5356,7 +5337,7 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 3 additional AET spent.
 
-=== Hideous Laughter
+=== Hideous Laughter <hideous-laughter>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5370,7 +5351,7 @@ A creature of your choice that you can see within range perceives everything as 
 
 At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends.
 
-=== Hypnotic Pattern
+=== Hypnotic Pattern <hypnotic-pattern>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5382,7 +5363,7 @@ At the end of each of its turns, and each time it takes damage, the target can m
 
 You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Charisma saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature has a speed of 0 and must make a Charisma saving throw against your spell save DC if they try to act, losing their action on a failure. Affected creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. The spell also ends for an affected creature if it takes any damage.
 
-=== Ice Storm
+=== Ice Storm <ice-storm>
 #flush-block[
 - _7 AET_
 - _Cast Time_: 1 action
@@ -5398,7 +5379,7 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 
 *Overcast.* When you cast this spell using more than 7 AET, the cold and bludgeoning damage each increase by 1d6 for every 3 additional AET spent.
 
-=== Inflict Wounds
+=== Inflict Wounds <inflict-wounds>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5412,7 +5393,7 @@ Make a melee spell attack against a creature you can reach. On a hit, the target
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
-=== Insect Plague
+=== Insect Plague <insect-plague>
 #flush-block[
 - _14 AET_
 - _Cast Time_: 1 action
@@ -5428,7 +5409,7 @@ When the area appears, each creature in it must make a Constitution saving throw
 
 *Overcast.* When you cast this spell using more than 14 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
-=== Invisibility
+=== Invisibility <invisibility>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5442,7 +5423,7 @@ A creature you touch becomes invisible until the spell ends. Anything the target
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional creature for every 3 additional AET spent.
 
-=== Jump
+=== Jump <jump>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5454,7 +5435,7 @@ A creature you touch becomes invisible until the spell ends. Anything the target
 
 You touch a creature. The creature's jump distance is tripled until the spell ends.
 
-=== Levitate
+=== Levitate <levitate>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5470,7 +5451,7 @@ The target can move only by pushing or pulling against a fixed object or surface
 
 When the spell ends, the target floats gently to the ground if it is still aloft.
 
-=== Light
+=== Light <light>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5484,7 +5465,7 @@ You touch one object that is no larger than 10 feet in any dimension. Until the 
 
 If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.
 
-=== Lightning Bolt
+=== Lightning Bolt <lightning-bolt>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5500,7 +5481,7 @@ The lightning ignites flammable objects in the area that aren't being worn or ca
 
 *Overcast.*When you cast this spell using more than 5 AET, the damage increases by 1d6 for every 2 additional aether spent.
 
-=== Longstrider
+=== Longstrider <longstrider>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5514,7 +5495,7 @@ You touch a creature. The target's speed increases by 10 feet until the spell en
 
 *Overcast.* When you cast this spell using more than 2 AET, you can target one additional creature for every 3 additional AET spent.
 
-=== Mage Armor
+=== Mage Armor <mage-armor>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5526,7 +5507,7 @@ You touch a creature. The target's speed increases by 10 feet until the spell en
 
 You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 12 + its Dexterity modifier and the target can take the Deflect action. The spell ends if the target dons armor or if you dismiss the spell as an action.
 
-=== Mage Hand
+=== Mage Hand <mage-hand>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5542,7 +5523,7 @@ You can use your action to control the hand. You can use the hand to manipulate 
 
 The hand can't attack, activate magic items, or carry more than 10 pounds.
 
-=== Magic Missile
+=== Magic Missile <magic-missile>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5556,7 +5537,7 @@ You create three glowing darts of magical force. Each dart hits a creature of yo
 
 *Overcast.* When you cast this spell using more than 2 AET, the spell creates one more dart for every 2 additional AET spent.
 
-=== Magic Weapon
+=== Magic Weapon <magic-weapon>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 bonus action
@@ -5570,7 +5551,7 @@ You touch a non-masterwork weapon. Until the spell ends, that weapon becomes mas
 
 *Overcast.* When you cast this spell using more than 3 AET, you can target one additional weapon for every 3 AET you spend.
 
-=== Major Image
+=== Major Image <major-image>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5588,7 +5569,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 *Overcast.* When you cast this spell using 15 AET, the spell lasts until dispelled, without requiring your concentration.
 
-=== Mass Cure Wounds
+=== Mass Cure Wounds <mass-cure-wounds>
 #flush-block[
 - _9 AET_
 - _Cast Time_: 1 action
@@ -5602,7 +5583,7 @@ A wave of healing energy washes out from a point of your choice within range. Ch
 
 *Overcast.* When you cast this spell using more than 9 AET, the healing increases by 1d8 for every 2 additional AET spent.
 
-=== Meld into Stone
+=== Meld into Stone <meld-into-stone>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5618,7 +5599,7 @@ While merged with the stone, you can't see what occurs outside it, and any Wisdo
 
 Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.
 
-=== Message
+=== Message <message>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5632,7 +5613,7 @@ You point your finger toward a creature within range and whisper a message. The 
 
 You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.
 
-=== Minor Illusion
+=== Minor Illusion <minor-illusion>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5650,7 +5631,7 @@ If you create an image of an object---such as a chair, muddy footprints, or a sm
 
 If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.
 
-=== Mirror Image
+=== Mirror Image <mirror-image>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5666,7 +5647,7 @@ Each time a creature targets you with an attack during the spell's duration, you
 
 A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.
 
-=== Mislead
+=== Mislead <mislead>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -5682,7 +5663,7 @@ You can use your action to move your illusory double up to twice your speed and 
 
 You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
 
-=== Misty Step
+=== Misty Step <misty-step>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 bonus action
@@ -5694,7 +5675,7 @@ You can see through its eyes and hear through its ears as if you were located wh
 
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see. There must be a clear path between you and the target location (ie you can't teleport through transparent total cover such as a window).
 
-=== Moonbeam
+=== Moonbeam <moonbeam>
 #flush-block[
 - _4 AET_
 - _Cast Time_: 1 action
@@ -5714,7 +5695,7 @@ On each of your turns after you cast this spell, you can use an action to move t
 
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
-=== Move Earth
+=== Move Earth <move-earth>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -5734,7 +5715,7 @@ This effect can't manipulate natural stone or stone construction. Rocks and stru
 
 Similarly, this effect doesn't directly affect plant growth. The moved earth carries any plants along with it.
 
-=== Noxious Stench
+=== Noxious Stench <noxious-stench>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5748,7 +5729,7 @@ A burst of noxious fumes billows from you. All creatures other than yourself tha
 
 The scent lingers for 10 minutes or until dispersed by a brisk wind, but does not cause saving throws after the initial instantaneous effect. Creatures that have passed through the cloud retain some of the stench for 8 hours or until they thoroughly clean themselves and their gear. This makes most other creatures dislike them, but also foils any attempt to track them via non-magical scent for that period.
 
-=== Pass without Trace
+=== Pass without Trace <pass-without-trace>
 #flush-block[
 - _4 AET_
 - _Cast Time_: 1 action
@@ -5760,7 +5741,7 @@ The scent lingers for 10 minutes or until dispersed by a brisk wind, but does no
 
 A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) treats a d20 result of less than 10 as a 10 on Dexterity (Stealth) checks and any attempt to track them via sight or sound is at disadvantage. Scent is unaffected.
 
-=== Passwall
+=== Passwall <passwall>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -5774,7 +5755,7 @@ A passage appears at a point of your choice that you can see on a wooden, plaste
 
 When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell.
 
-=== Phantasmal Killer
+=== Phantasmal Killer <phantasmal-killer>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5788,7 +5769,7 @@ You tap into the nightmares of a creature you can see within range and create an
 
 *Overcast.* When you cast this spell using more than 8 AET, the damage increases by 1d10 for every 2 additional AET spent.
 
-=== Plant Growth
+=== Plant Growth <plant-growth>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5804,7 +5785,7 @@ If you cast this spell using 1 action, choose a point within range. All normal p
 
 You can exclude one or more areas of any size within the spell's area from being affected.
 
-=== Poison Spray
+=== Poison Spray <poison-spray>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5816,7 +5797,7 @@ You can exclude one or more areas of any size within the spell's area from being
 
 You spray poison in a cone. All creatures in that cone must make a Constitution saving throw, taking 1d6 poison damage on a failure. The damage from this spell increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.
 
-=== Polymorph
+=== Polymorph <polymorph>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -5836,7 +5817,7 @@ The creature is limited in the actions it can perform by the nature of its new f
 
 The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.
 
-=== Prayer of Healing
+=== Prayer of Healing <prayer-of-healing>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 10 minutes
@@ -5850,7 +5831,7 @@ Up to six creatures of your choice that you can see within range each regain hit
 
 *Overcast.* When you cast this spell and spend more than 3 AET, the healing increases by 1d8 for every AET above 3, up to a maximum of 13d8 + your spellcasting ability modifier.
 
-=== Prestidigitation
+=== Prestidigitation <prestidigitation>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5871,7 +5852,7 @@ This spell is a minor magical trick that novice spell-casters use for practice. 
 
 If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action. None of its effects can impose any conditions or deal any damage to a creature or object (although lighting a fire can subsequently damage objects because it is real fire).
 
-=== Produce Flame
+=== Produce Flame <produce-flame>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5887,7 +5868,7 @@ You can also attack with the flame, although doing so ends the spell. When you c
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Protection from Energy
+=== Protection from Energy <protection-from-energy>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5899,7 +5880,7 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.
 
-=== Protection from Otherworldly Influence
+=== Protection from Otherworldly Influence <protection-from-otherworldly-influence>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -5913,7 +5894,7 @@ Until the spell ends, one willing creature you touch is protected against certai
 
 The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.
 
-=== Protection from Poison
+=== Protection from Poison <protection-from-poison>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5927,7 +5908,7 @@ You touch a creature. If it is poisoned, you neutralize the poison. If more than
 
 For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.
 
-=== Ray of Enfeeblement
+=== Ray of Enfeeblement <ray-of-enfeeblement>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -5941,7 +5922,7 @@ A black beam of enervating energy springs from your finger toward a creature wit
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional aether spent.
 
-=== Ray of Frost
+=== Ray of Frost <ray-of-frost>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -5955,7 +5936,7 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Reincarnate
+=== Reincarnate <reincarnate>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 hour
@@ -5983,7 +5964,7 @@ The magic fashions a new body for the creature to inhabit, which likely causes t
 
 The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original lineage for the new one and changes its lineage traits accordingly. Its culture does not change.
 
-=== Remove Curse
+=== Remove Curse <remove-curse>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -5995,7 +5976,7 @@ The reincarnated creature recalls its former life and experiences. It retains th
 
 At your touch, all non-legendary curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.
 
-=== Resilient Sphere
+=== Resilient Sphere <resilient-sphere>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -6011,7 +5992,7 @@ Nothing---not physical objects, energy, or other spell effects---can pass throug
 
 The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures. While enclosed, creatures take no damage from falling.
 
-=== Resistance
+=== Resistance <resistance>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -6023,7 +6004,7 @@ The sphere is weightless and just large enough to contain the creature or object
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends. Remember that no more than one bonus die can be used on any d20 roll.
 
-=== Retribution
+=== Retribution <retribution>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -6041,7 +6022,7 @@ In either case, temporary hit points do not count as health (maximum or otherwis
 
 *Overcast.* When you cast this spell and spend more than 2 AET, the maximum damage dealt increases by 10 for every 2 AET you spend.
 
-=== Revivify
+=== Revivify <revivify>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6053,7 +6034,7 @@ In either case, temporary hit points do not count as health (maximum or otherwis
 
 You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.
 
-=== Searing Light
+=== Searing Light <searing-light>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -6067,7 +6048,7 @@ Flame-like radiance descends on a creature that you can see within range. The ta
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Sanctuary
+=== Sanctuary <sanctuary>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -6081,7 +6062,7 @@ You ward a creature within range against attack. Until the spell ends, any creat
 
 If the warded creature makes an attack, deals damage, or casts a spell that affects an enemy creature, this spell ends.
 
-=== Scorching Ray
+=== Scorching Ray <scorching-ray>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6097,7 +6078,7 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 *Overcast.* When you cast this spell using more than 3 AET, you create one additional ray for every 3 additional AET you spend.
 
-=== See Invisibility
+=== See Invisibility <see-invisibility>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6109,7 +6090,7 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Border Shadow. Ethereal creatures and objects appear ghostly and translucent. You ignore the invisible condition.
 
-=== Shatter
+=== Shatter <shatter>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6125,7 +6106,7 @@ A non-magical object that isn't being worn or carried also takes the damage if i
 
 *Overcast.* When you cast this spell using more than 3 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Shield
+=== Shield <shield>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -6137,11 +6118,11 @@ A non-magical object that isn't being worn or carried also takes the damage if i
 
 An invisible barrier of magical force appears and protects you. This barrier has 10 hit points. Whenever you would take damage and the barrier is active, the barrier takes the damage instead, reducing its hit points. If the barrier absorbs all the damage, you do not need to make Concentration saves if you are concentrating on a spell or ability. You take any damage in excess of the barrier's hit points, which provokes Concentration saves as normal. When the barrier is reduced to zero hit points, the spell ends. Because this barrier takes damage instead of you, it does not benefit from any resistances or immunities you may have. Any overflow damage is, however, affected.
 
-In addition, you are immune to the _magic missile_ spell as long as the barrier is active.
+In addition, you are immune to the #safe-link("magic-missile",[_magic missile_]) spell as long as the barrier is active.
 
 *Overcast.* When you cast this spell using more than 2 AET, the barrier's hit points increase by 5 for every additional AET spent.
 
-=== Shield of Faith
+=== Shield of Faith <shield-of-faith>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 bonus action
@@ -6153,7 +6134,7 @@ In addition, you are immune to the _magic missile_ spell as long as the barrier 
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it the ability to use the Deflect action without expending STA.
 
-=== Shillelagh
+=== Shillelagh <shillelagh>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 bonus action
@@ -6165,7 +6146,7 @@ A shimmering field appears and surrounds a creature of your choice within range,
 
 The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes masterwork, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.
 
-=== Shocking Grasp
+=== Shocking Grasp <shocking-grasp>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -6179,7 +6160,7 @@ Lightning springs from your hand to deliver a shock to a creature you try to tou
 
 The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-=== Silence
+=== Silence <silence>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6191,7 +6172,7 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
 
-=== Silent Image
+=== Silent Image <silent-image>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -6207,7 +6188,7 @@ You can use your action to cause the image to move to any spot within range. As 
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.
 
-=== Sleep
+=== Sleep <sleep>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -6223,7 +6204,7 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 
 *Overcast.* When you cast this spell and expend more than 2 AET, the number of affected creatures increases by one for every 3 additional AET spent.
 
-=== Sleet Storm
+=== Sleet Storm <sleet-storm>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6239,7 +6220,7 @@ The ground in the area is covered with slick ice, making it difficult terrain. W
 
 If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.
 
-=== Slow
+=== Slow <slow>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6257,7 +6238,7 @@ If the creature attempts to cast a spell with a casting time of 1 action, roll a
 
 A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.
 
-=== Spike Growth
+=== Spike Growth <spike-growth>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6271,7 +6252,7 @@ The ground in a 20-foot radius centered on a point within range twists and sprou
 
 The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.
 
-=== Spirit Guardians
+=== Spirit Guardians <spirit-guardians>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -6287,7 +6268,7 @@ When you cast this spell, you can designate any number of creatures you can see 
 
 *Overcast.* When you cast this spell using more than 5 AET, the damage increases by 1d8 for every 2 additional AET spent.
 
-=== Spiritual Weapon
+=== Spiritual Weapon <spiritual-weapon>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 bonus action
@@ -6305,7 +6286,7 @@ The weapon can take whatever form you choose. The damage type should be appropri
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d10 for every two additional AET.
 
-=== Stinking Cloud
+=== Stinking Cloud <stinking-cloud>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6321,7 +6302,7 @@ Each creature that is completely within the cloud at the start of its turn must 
 
 A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.
 
-=== Stone Shape
+=== Stone Shape <stone-shape>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -6333,7 +6314,7 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 
 You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.
 
-=== Stoneskin
+=== Stoneskin <stoneskin>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -6345,7 +6326,7 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 
 This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to bludgeoning, piercing, and slashing damage, but their speed is reduced by 10 ft and they have disadvantage on Dexterity ability checks.
 
-=== Suggestion
+=== Suggestion <suggestion>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6363,7 +6344,7 @@ You can also specify conditions that will trigger a specific course of action du
 
 If you or any of your companions damage the target or any of its allies that it can see, the spell ends.
 
-=== Sunbeam
+=== Sunbeam <sunbeam>
 #flush-block[
 - _14 AET_
 - _Cast Time_: 1 action
@@ -6380,7 +6361,7 @@ You can create a new line of radiance as your action on any turn until the spell
 
 For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.
 
-=== Telekinesis
+=== Telekinesis <telekinesis>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -6402,7 +6383,7 @@ If the object is worn or carried by a creature, you must make an ability check w
 
 You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.
 
-=== Thaumaturgy
+=== Thaumaturgy <thaumaturgy>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -6421,7 +6402,7 @@ You manifest a minor wonder, a sign of supernatural power, within range. You cre
 - You instantaneously cause an unlocked door or window to fly open or slam shut.
 - You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.
 
-=== Thunderwave
+=== Thunderwave <thunderwave>
 #flush-block[
 - _2 AET_
 - _Cast Time_: 1 action
@@ -6437,7 +6418,7 @@ In addition, unsecured objects that are completely within the area of effect are
 
 *Overcast.* When you cast this spell using more than 2 AET, the damage increases by 1d8 for every additional AET, up to a maximum of 8d8 (8 AET).
 
-=== True Seeing
+=== True Seeing <true-seeing>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -6449,7 +6430,7 @@ In addition, unsecured objects that are completely within the area of effect are
 
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Border Shadow, all out to a range of 120 feet.
 
-=== True Strike
+=== True Strike <true-strike>
 #flush-block[
 - _1 AET_
 - _Cast Time_: 1 bonus action
@@ -6461,7 +6442,7 @@ This spell gives the willing creature you touch the ability to see things as the
 
 You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. Your next attack against the creature until the end of your next turn has advantage and scores a critical hit on a 19 or 20. If you already have an extended critical hit range (such as from the Piercing property), your critical hit range increases by 1.
 
-=== Unbind
+=== Unbind <unbind>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6477,7 +6458,7 @@ This spell can affect non-spell magical effects as well. The effective aether co
 
 *Overcast.* When you cast this spell using more than 5 AET, you gain +1 on the check for every 3 additional AET spent.
 
-=== Vampiric Touch
+=== Vampiric Touch <vampiric-touch>
 #flush-block[
 - _4 AET_
 - _Cast Time_: 1 action
@@ -6491,7 +6472,7 @@ The touch of your shadow-wreathed hand can siphon life force from others to heal
 
 *Overcast.* When you cast this spell using more than 4 AET, the damage increases by 1d6 for every two additional AET spent.
 
-=== Vicious Mockery
+=== Vicious Mockery <vicious-mockery>
 #flush-block[
 - _0 AET_
 - _Cast Time_: 1 action
@@ -6505,7 +6486,7 @@ You unleash a string of insults laced with subtle enchantments at a creature you
 
 This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
 
-=== Wall of Fire
+=== Wall of Fire <wall-of-fire>
 #flush-block[
 - _8 AET_
 - _Cast Time_: 1 action
@@ -6523,7 +6504,7 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 fire d
 
 *Overcast.* When you cast this spell using more than 8 AET, the damage increases by 1d8 for every 3 additional AET.
 
-=== Wall of Force
+=== Wall of Force <wall-of-force>
 #flush-block[
 - _15 AET_
 - _Cast Time_: 1 action
@@ -6539,7 +6520,7 @@ Nothing can physically pass through the wall. It provides total cover but does n
 
 *Overcast.* When you cast this spell using more than 15 AET, its HP increases by 3 for every additional AET spent.
 
-=== Wall of Ice
+=== Wall of Ice <wall-of-ice>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -6557,7 +6538,7 @@ The wall is an object that can be damaged and thus breached. It has AC equal to 
 
 *Overcast.* When you cast this spell using a more than 12 AET, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for every 3 additional AET.
 
-=== Wall of Stone
+=== Wall of Stone <wall-of-stone>
 #flush-block[
 - _12 AET_
 - _Cast Time_: 1 action
@@ -6579,7 +6560,7 @@ The wall is an object made of stone that can be damaged and thus breached. Each 
 
 The wall disappears when the spell ends.
 
-=== Wall of Thorns
+=== Wall of Thorns <wall-of-thorns>
 #flush-block[
 - _7 AET_
 - _Cast Time_: 1 action
@@ -6597,7 +6578,7 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 
 *Overcast.* When you cast this spell using more than 9 AET, both types of damage increase by 1d8 for every 2 additional AET spent.
 
-=== Warding Bond
+=== Warding Bond <warding-bond>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6611,7 +6592,7 @@ This spell wards a willing creature you touch and creates a mystic connection be
 
 The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.
 
-=== Web
+=== Web <web>
 #flush-block[
 - _3 AET_
 - _Cast Time_: 1 action
@@ -6631,7 +6612,7 @@ A creature restrained by the webs can use its action to make a Strength check ag
 
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
 
-=== Wind Wall
+=== Wind Wall <wind-wall>
 #flush-block[
 - _5 AET_
 - _Cast Time_: 1 action
@@ -6647,7 +6628,7 @@ When the wall appears, each creature within its area must make a Strength saving
 
 The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.
 
-=== Yoink
+=== Yoink <yoink>
 #flush-block[
 - _1 AET_
 - _Cast Time_: 1 bonus action
@@ -6661,7 +6642,7 @@ You extend a tether of sticky force and try to pull a creature or unattended obj
 
 Alternatively, you can use this spell to grapple to a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
 
-= Legendary Effects
+= Legendary Effects <legendary-effects>
 
 Legendary effects are magical abilities of great power. In some respects they are similar to spells, but one cannot learn and cast them normally using your personal aether. Instead, you must gain access via a class feature. Some creatures and magic items have the ability to create specific legendary effects. In general, each legendary effect can only be cast (brought into effect) once per day. The class feature will also define what saving throw DC is used if the effect calls for a saving throw.
 
@@ -6679,9 +6660,9 @@ This list is not the entire list of possible legendary effects. Creatures may ha
 The intent of this list is to create "high level" magical effects that can be added to classes without making them spells. As such, these effects are balanced against each other and against the abilities present on PC classes of levels 11+. Using one of these effects should be a major thing, a serious spotlight moment, but shouldn't independently upend the spotlight balance of the game.
 ]
 
-== Legendary Effects A-Z
+== Legendary Effects A-Z <legendary-effects-a-z>
 
-=== Abjure Aether Manipulation
+=== Abjure Aether Manipulation <abjure-aether-manipulation>
 
 #flush-block[
 - _Tags._ Concentration, Generic, Greater
@@ -6692,9 +6673,9 @@ A 10-foot-radius invisible sphere of counter-magic surrounds you. Within the sph
 
 Spells and other magical effects (including anything that requires the expenditure of aether), except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. Aether expended to cast a suppressed spell or effect is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.
 
-*Targeted Effects.* Spells and other magical effects, such as _magic missile_ and _charm person_, that target a creature or an object in the sphere have no effect on that target.
+*Targeted Effects.* Spells and other magical effects, such as #safe-link("magic-missile",[_magic missile_]) and #safe-link("charm-person",[_charm person_]), that target a creature or an object in the sphere have no effect on that target.
 
-*Areas of Magic.* The area of another spell or magical effect, such as _fireball_, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a _wall of fire_ are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.
+*Areas of Magic.* The area of another spell or magical effect, such as #safe-link("fireball",[_fireball_]), can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a #safe-link("wall-of-fire",[_wall of fire_]) are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.
 
 *Spells.* Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.
 
@@ -6706,9 +6687,9 @@ A magic weapon's properties and powers are suppressed if it is used against a ta
 
 *Creatures and Objects.* A creature or object temporarily summoned or created by non-instantaneous magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere. Creatures controlled but not summoned by magic have the control suppressed while in the sphere.
 
-*Dispel Magic.* Spells and magical effects such as _unbind_ have no effect on the sphere. Likewise, the spheres created by different _abjure aether manipulation_ effect don't nullify each other.
+*Dispel Magic.* Spells and magical effects such as #safe-link("unbind",[_unbind_]) have no effect on the sphere. Likewise, the spheres created by different #safe-link("abjure-aether-manipulation",[_abjure aether manipulation_]) effect don't nullify each other.
 
-=== Animal Shapes
+=== Animal Shapes <animal-shapes>
 
 #flush-block[
 - _Tags._ Concentration, Primal, Greater
@@ -6721,7 +6702,7 @@ The transformation lasts for up to 24 hours for each target, or until the target
 
 The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment.
 
-=== Anyspell
+=== Anyspell <anyspell>
 #flush-block[
 - _Tags._ Generic, Greater
 - _Cast Time._ 1 action
@@ -6729,7 +6710,7 @@ The target's gear melds into the new form. The target can't activate, wield, or 
 
 This effect duplicates any spell or incantation. You don't need to meet any requirements in that spell, including costly components. The spell or incantation simply takes effect. Spells created by this effect count as legendary effects for the purpose of bypassing spells or effects that care. This cannot replicate Legendary Effects.
 
-=== Arcane Hand
+=== Arcane Hand <arcane-hand>
 #flush-block[
 - _Tags._ Arcane, Lesser, Concentration
 - _Cast Time._ 1 minute.
@@ -6751,7 +6732,7 @@ Make a check with the hand's Strength contested by the Strength (Athletics) chec
 
 *Interposing Hand.* The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.
 
-=== Arcane Sword
+=== Arcane Sword <arcane-sword>
 
 #flush-block[
 - _Tags._ Arcane, Lesser
@@ -6760,11 +6741,11 @@ Make a check with the hand's Strength contested by the Strength (Athletics) chec
 
 As an action, you create a sword-shaped plane of force that hovers in your space. It lasts for the one minute.
 
-When the sword appears, you make a melee spell attack against a target of your choice within 60 ft. On a hit, the target takes 4d10 slashing damage as the sword streaks out at the target. If the target struck is a creature not native to your current plane, it must make a Charisma saving throw. On a failed save, it is banished back to its home plane. If you hit a construct of magical force such as that produced by _wall of force_, the target is instantly destroyed. Until the spell ends, you can use a bonus action on each of your turns to repeat this attack against the same target or a different one as long as they are within 60 ft of you. 
+When the sword appears, you make a melee spell attack against a target of your choice within 60 ft. On a hit, the target takes 4d10 slashing damage as the sword streaks out at the target. If the target struck is a creature not native to your current plane, it must make a Charisma saving throw. On a failed save, it is banished back to its home plane. If you hit a construct of magical force such as that produced by #safe-link("wall-of-force",[_wall of force_]), the target is instantly destroyed. Until the spell ends, you can use a bonus action on each of your turns to repeat this attack against the same target or a different one as long as they are within 60 ft of you. 
 
 Alternatively, you can command it to defend you, in which case it will try to parry incoming attacks, granting you the effect of the Deflect action once on each turn until you use it to attack.
 
-=== Circle of Death
+=== Circle of Death <circle-of-death>
 #flush-block[
 - _Tags._ Arcane or Divine, Greater, Concentration
 - _Cast Time._ 1 action
@@ -6772,7 +6753,7 @@ Alternatively, you can command it to defend you, in which case it will try to pa
 
 A portal to the Abyss appears and necrotic energy washes out in a 20-foot-radius, 60' tall cylinder centered at a point within 150 feet. Each creature in that area when it opens must make a Constitution saving throw. A target takes 8d6 + your level necrotic damage on a failed save, or half as much damage on a successful one. Creatures entering the zone for the first time on a turn or starting their turn in the zone must make the same Constitution saving throw, taking the same damage on a failure. The zone lasts until you lose concentration or 1 minute has passed.
 
-=== Call Divine Servant
+=== Call Divine Servant <call-divine-servant>
 #flush-block[
 - _Tags._ Divine, Lesser
 - _Cast Time._ 1 minute
@@ -6785,7 +6766,7 @@ The being is friendly to you and your companions for the duration. Roll initiati
 
 The GM has the being's statistics.
 
-=== Call Fey Ally
+=== Call Fey Ally <call-fey-ally>
 #flush-block[
 - _Tags._ Primal, Lesser
 - _Cast Time._ 1 minute
@@ -6797,7 +6778,7 @@ The fey creature is friendly to you and your companions for the duration. Roll i
 
 The GM has the fey creature's statistics.
 
-=== Contingency
+=== Contingency <contingency>
 
 #flush-block[
 - _Tags._ Arcane, Greater
@@ -6805,13 +6786,13 @@ The GM has the fey creature's statistics.
 - _Other Requirements._ A jeweled statuette of yourself costing 1500 gp.
 ]
 
-Choose a spell costing 15 or less AET that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell---called the contingent spell---as part of creating the _contingency_ effect and must expend the aether to cast it, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you create the effect. For example, a _contingency_ cast with _water breathing_ might stipulate that _water breathing_ comes into effect when you are engulfed in water or a similar liquid.
+Choose a spell costing 15 or less AET that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell---called the contingent spell---as part of creating the #safe-link("contingency",[_contingency_])effect and must expend the aether to cast it, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you create the effect. For example, a #safe-link("contingency",[_contingency_]) cast with #safe-link("water-breathing",[_water breathing_]) might stipulate that #safe-link("water-breathing",[_water breathing_]) comes into effect when you are engulfed in water or a similar liquid.
 
-The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then _contingency_ ends.
+The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then #safe-link("contingency",[_contingency_]) ends.
 
-The contingent spell takes effect only on you, even if it can normally target others. You can use only one _contingency_ spell at a time. If you cast this spell again, the effect of another _contingency_ spell on you ends. Also, _contingency_ ends on you if its material component is ever not on your person.
+The contingent spell takes effect only on you, even if it can normally target others. You can use only one #safe-link("contingency",[_contingency_]) spell at a time. If you cast this spell again, the effect of another #safe-link("contingency",[_contingency_]) spell on you ends. Also, #safe-link("contingency",[_contingency_]) ends on you if its material component is ever not on your person.
 
-=== Control Weather
+=== Control Weather <control-weather>
 #flush-block[
 - _Tags._ Primal, Greater
 - _Cast Time._ 10 minutes
@@ -6850,19 +6831,19 @@ When you change the weather conditions, find a current condition on the followin
 "5","Storm",
 )
 
-=== Disintegrate
+=== Disintegrate <disintegrate>
 #flush-block[
 - _Tags._ Arcane, Lesser
 - _Cast Time._ 1 action
 ]
 
-A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object not being worn or carried by a creature, or a creation of magical force, such as the wall created by _wall of force_.
+A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object not being worn or carried by a creature, or a creation of magical force, such as the wall created by #safe-link("wall-of-force",[_wall of force_]).
 
-A creature targeted by this effect must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 4x your level necrotic damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a _true resurrection_ effect.
+A creature targeted by this effect must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 4x your level necrotic damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a #safe-link("true-resurrection",[_true resurrection_]) effect.
 
 This effect automatically disintegrates a Large or smaller non-magical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. Unattended Large or smaller magic items struck by this effect are disintegrated unless they are legendary or artifacts. Magic items worn or carried by a creature cannot be individually targeted.
 
-=== Divine Word
+=== Divine Word <divine-word>
 #flush-block[
 - _Tags._ Divine, Lesser
 - _Cast Time._ 1 action
@@ -6877,7 +6858,7 @@ You utter a divine word, imbued with the power that shaped the world at the dawn
 
 Regardless of its current hit points, a celestial, elemental, or fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means other than the Gate or Irresistible Summons incantations.
 
-=== Domination
+=== Domination <domination>
 #flush-block[
 - _Tags._ Generic, Greater
 - _Cast Time._ 1 action
@@ -6891,7 +6872,7 @@ You can use your action to take total and precise control of the target. Until t
 
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 
-=== Earthquake
+=== Earthquake <earthquake>
 #flush-block[
 - _Tags._ Primal, Lesser (special)
 - _Cast Time._ 1 Action.
@@ -6903,7 +6884,7 @@ All creatures within that area when a tremor occurs must make a DC 13 + your pro
 
 Fissures radiate through the area. For a cone, there is one 5' wide, 10' deep fissure that affects a contiguous line of your choice; for the circular one there are 4, each starting at right angles to the others. Fissures can pass through each other, but cannot occupy the same space for more than one space. If a Medium or smaller, non-hovering creature is in one of these lines when it appears, it makes the initial Dexterity saving throw at disadvantage and takes an additional 3d10 bludgeoning damage. Wall segments in such fissures may entirely collapse (at the GM's discretion). The fissures are difficult terrain.
 
-=== Etherealness
+=== Etherealness <etherealness>
 #flush-block[
 - _Tags._ Arcane, Lesser
 - _Cast Time._ 1 action
@@ -6919,7 +6900,7 @@ When the effect ends, you immediately return to the plane you originated from in
 
 This effect cannot be cast while you are on the Border Shadow.
 
-=== Flesh to Stone
+=== Flesh to Stone <flesh-to-stone>
 #flush-block[
 - _Tags._ Primal, Lesser, Concentration
 - _Cast Time._ 1 action
@@ -6931,7 +6912,7 @@ A creature restrained by this spell must make another Constitution saving throw 
 
 If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.
 
-=== Glibness
+=== Glibness <glibness>
 #flush-block[
 - _Tags._ Generic, Greater
 - _Cast Time._ 1 action
@@ -6939,7 +6920,7 @@ If the creature is physically broken while petrified, it suffers from similar de
 
 When you make a Charisma check for the next hour, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful and magic that would compel you to tell the truth is ignored without notifying the caster of that interference.
 
-=== Globe of Invulnerability
+=== Globe of Invulnerability <globe-of-invulnerability>
 #flush-block[
 - _Tags._ Arcane, Lesser, Concentration
 - _Cast Time._ 1 action
@@ -6949,7 +6930,7 @@ An immobile, faintly shimmering barrier springs into existence in a 10-foot radi
 
 Any spell cast from outside the barrier can't affect creatures or objects within it. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells. Legendary effects are not affected.
 
-=== Harm
+=== Harm <harm>
 #flush-block[
 - _Tags._ Arcane or Divine, Lesser
 - _Cast Time._ 1 action
@@ -6957,7 +6938,7 @@ Any spell cast from outside the barrier can't affect creatures or objects within
 
 You unleash a virulent curse on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it is cursed and takes 14d6 + 2x your level necrotic damage, or half as much damage on a successful save. Cursed creatures cannot regain hit points by any means until they complete two consecutive long rests, after which time the curse fades.
 
-=== Heal
+=== Heal <heal>
 #flush-block[
 - _Tags._ Divine, Lesser
 - _Cast Time._ 1 action
@@ -6965,7 +6946,7 @@ You unleash a virulent curse on a creature that you can see within range. The ta
 
 Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points or half their total hit points, whichever is greater. This spell also ends blindness, deafness, and any diseases affecting the target, as well as the curse caused by *harm*. This spell has no effect on constructs or undead.
 
-=== Heroes' Feast
+=== Heroes' Feast <heroes--feast>
 #flush-block[
 - _Tags._ Divine, Lesser
 - _Cast Time._ 10 minutes
@@ -6976,7 +6957,7 @@ You bring forth a great feast, including magnificent food and drink. The feast t
 
 A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.
 
-=== Holy Aura
+=== Holy Aura <holy-aura>
 #flush-block[
 - _Tags._ Divine, Lesser, Concentration
 - _Cast Time._ 1 action
@@ -6984,7 +6965,7 @@ A creature that partakes of the feast gains several benefits. The creature is cu
 
 Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you for one minute. Creatures of your choice in that radius when you cast this effect shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.
 
-=== Irresistible Dance
+=== Irresistible Dance <irresistible-dance>
 
 #flush-block[
 - _Tags._ Arcane, Lesser, Concentration
@@ -6995,7 +6976,7 @@ Choose one creature that you can see within 30 feet. The target begins a comic d
 
 A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this effect, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the effect ends.
 
-=== Mass Heal
+=== Mass Heal <mass-heal>
 #flush-block[
 - _Tags._ Divine, Greater
 - _Cast Time._ 1 action
@@ -7003,7 +6984,7 @@ A dancing creature must use all its movement to dance without leaving its space 
 
 A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within 60 feet. Creatures healed by this spell are also cured of all poisons, diseases, any effect making them blinded or deafened, as well as any curse. This spell has no effect on undead or constructs.
 
-=== Maze
+=== Maze <maze>
 #flush-block[
 - _Tags._ Arcane, Greater, Concentration
 - _Cast Time._ 1 action
@@ -7015,7 +6996,7 @@ The target can use its action to attempt to escape. When it does so, it makes an
 
 When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.
 
-=== Meteor Swarm
+=== Meteor Swarm <meteor-swarm>
 #flush-block[
 - _Tags._ Arcane or Primal, Greater
 - _Cast Time._ 1 action
@@ -7025,7 +7006,7 @@ Blazing orbs of fire plummet to the ground at four different points you can see 
 
 The spell destroys Large or smaller objects and ignites flammable objects in the area that aren't being worn or carried.
 
-=== Mind Blank
+=== Mind Blank <mind-blank>
 #flush-block[
 - _Tags._ Arcane or Divine, Greater
 - _Cast Time._ 1 action
@@ -7033,7 +7014,7 @@ The spell destroys Large or smaller objects and ignites flammable objects in the
 
 One willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read or influence its thoughts or actions, divination spells, and the charmed condition for 24 hours. The spell even foils legendary effects used to affect the target's mind or to gain information about the target.
 
-=== Mirage Arcane
+=== Mirage Arcane <mirage-arcane>
 #flush-block[
 - _Tags._ Arcane, Lesser, Concentration
 - _Cast Time._ 1 minute
@@ -7047,7 +7028,7 @@ The illusion includes audible, visual, tactile, and olfactory elements, so it ca
 
 Creatures with truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.
 
-=== Modify Memory
+=== Modify Memory <modify-memory>
 #flush-block[
 - _Tags._ Arcane, Lesser
 - _Cast Time._ 1 action
@@ -7061,11 +7042,11 @@ You must speak to the target to describe how its memories are affected, and it m
 
 A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The GM might deem a modified memory too nonsensical to affect a creature in a significant manner.
 
-A _remove curse_ spell or _greater restoration_ incantation cast on the target restores the creature's true memory.
+A #safe-link("remove-curse",[_remove curse_]) spell or #safe-link("greater-restoration",[_greater restoration_]) incantation cast on the target restores the creature's true memory.
 
 If you are at least level 15 when you cast this effect, you can modify memories of an even that took place up to 8 days ago. At level 17 you can modify memories up to one month ago. At level 20, you can modify memories up to 1 year ago.
 
-=== Power Word Kill
+=== Power Word Kill <power-word-kill>
 #flush-block[
 - _Tags._ Arcane or Divine, Greater
 - _Cast Time._ 1 action
@@ -7073,7 +7054,7 @@ If you are at least level 15 when you cast this effect, you can modify memories 
 
 You utter a word of power that can compel one weaker creature you can see within 60 feet to die instantly and weakens those too strong to die outright. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the creature takes damage equal to 3x your level. This damage cannot be reduced, absorbed, transferred, or eliminated in any way.
 
-=== Power Word Stun
+=== Power Word Stun <power-word-stun>
 #flush-block[
 - _Tags._ Divine, Greater
 - _Cast Time._ 1 action
@@ -7083,7 +7064,7 @@ You speak a word of power that can overwhelm the mind of one creature you can se
 
 The stunned or staggered target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning or staggering effect ends.
 
-=== Regenerate
+=== Regenerate <regenerate>
 #flush-block[
 - _Tags._ Primal, Lesser
 - _Cast Time._ 1 minute
@@ -7093,7 +7074,7 @@ You touch a creature and stimulate its natural healing ability. The target regai
 
 The target's severed body members (fingers, legs, tails, and so on), if any, as well as any lingering or internal injuries, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.
 
-=== Reverse Gravity
+=== Reverse Gravity <reverse-gravity>
 #flush-block[
 - _Tags._ Arcane or Primal, Lesser, Concentration
 - _Cast Time._ 1 action
@@ -7105,7 +7086,7 @@ If some solid object (such as a ceiling) is encountered in this fall, falling ob
 
 At the end of the duration, affected objects and creatures fall back down.
 
-=== Rip Soul
+=== Rip Soul <rip-soul>
 #flush-block[
 - _Tags._ Arcane, Lesser
 - _Cast Time._ 1 action
@@ -7115,7 +7096,7 @@ You send negative energy coursing through a creature that you can see within ran
 
 Living creatures who fail the saving throw against this effect gain 5 levels of exhaustion.
 
-=== Shapechange
+=== Shapechange <shapechange>
 #flush-block[
 - _Tags._ Primal, Greater, Concentration
 - _Cast Time._ 1 action
@@ -7131,7 +7112,7 @@ When you transform, you choose whether your equipment falls to the ground, merge
 
 During this effect's duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with two exceptions: first, if your new form has more hit points than your current one, your hit points remain at their current value. Second, any effect granted by your previous form or its abilities ends once you transform. 
 
-=== Sunburst
+=== Sunburst <sunburst>
 #flush-block[
 - _Tags._ Divine, Greater
 - _Cast Time._ 1 action
@@ -7143,7 +7124,7 @@ A creature blinded by this spell makes another Constitution saving throw at the 
 
 This spell dispels any darkness in its area that was created by a spell or magical effect.
 
-=== Symbol
+=== Symbol <symbol>
 #flush-block[
 - _Tags._ Generic, Lesser
 - _Cast Time._ 1 minute
@@ -7176,7 +7157,7 @@ When you inscribe the glyph, choose one of the options below for its effect. Onc
 
 *Stunning.* Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.
 
-=== Time Stop
+=== Time Stop <time-stop>
 #flush-block[
 - _Tags._ Generic, Greater
 - _Cast Time._ 1 action
@@ -7186,7 +7167,7 @@ You briefly stop the flow of time for everyone but yourself. No time passes for 
 
 This effect ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the effect ends if you move to a place more than 1,000 feet from the location where you cast it.
 
-=== Weird
+=== Weird <weird>
 #flush-block[
 - _Tags._ Arcane, Greater, Concentration
 - _Cast Time._ 1 action
@@ -7194,7 +7175,7 @@ This effect ends if one of the actions you use during this period, or any effect
 
 Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. The illusion calls on the creature's deepest fears, manifesting its worst nightmares as an implacable threat. Each creature that starts their turn or enters a 30-foot-radius sphere centered on a point of your choice within 150 feet for the first time on a turn must make a Wisdom saving throw. On a failed save, a creature is incapacitated until the start of their next turn and takes 8d10 psychic damage. On a successful save, the creature is frightened until the end of their next turn and takes half of the psychic damage but is not incapacitated. The sphere lasts for one minute or until your concentration ends.
 
-=== Wind Walk
+=== Wind Walk <wind-walk>
 #flush-block[
 - _Tags._ Primal, Lesser
 - _Cast Time._ 1 minute
@@ -7204,7 +7185,7 @@ You and up to ten willing creatures you can see within 30 feet assume a gaseous 
 
 If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.
 
-=== Word of Recall
+=== Word of Recall <word-of-recall>
 #flush-block[
 - _Tags._ Divine, Lesser
 - _Cast Time._ 1 action
@@ -7212,7 +7193,7 @@ If a creature is in cloud form and flying when the effect ends, the creature des
 
 You and up to five willing creatures within 10 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this effect without first preparing a sanctuary, the effect does nothing.
 
-You must designate a sanctuary by casting this effect within a location dedicated to or strongly linked to your deity or Ascended patron, such a temple or space consecrated (e.g. by the _hallow_ incantation). If you attempt to designate an area that isn't dedicated to your deity, the effect fizzles.
+You must designate a sanctuary by casting this effect within a location dedicated to or strongly linked to your deity or Ascended patron, such a temple or space consecrated (e.g. by the #safe-link("hallow",[_hallow_]) incantation). If you attempt to designate an area that isn't dedicated to your deity, the effect fizzles.
 
 This effect ignores all non-legendary effects that preclude or inhibit teleportation.
 

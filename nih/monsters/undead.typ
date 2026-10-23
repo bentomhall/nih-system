@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Undead <undead>
 
@@ -59,8 +60,7 @@ Ghouls are one of the outcomes when jotnar infest people on the verge of death, 
 	),
 	actions: (
 		("Multiattack", [The ghoul makes one bite and one claw attack.]),
-		("Bite", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 2 piercing
-		extra={. If the target is a living being, it must make a DC 10 Constitution saving throw. On a failed save, it becomes infected with ghoul plague. Its maximum health decreases by 5 immediately and they cannot regain hit points. At the end of each hour while diseased, the target must make another Constitution saving throw. On a success, the disease pauses and no further damage is incurred. On a failure, their maximum health decreases by 5. The disease can be cured by any magic that removes disease, thee successful saving throws (they do not need to be consecutive), or certain potions. If the creature's maximum hit points reach zero, it dies and cannot be revived.} damage.]),
+		("Bite", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 2 piercing damage. If the target is a living being, it must make a DC 10 Constitution saving throw. On a failed save, it becomes infected with ghoul plague. Its maximum health decreases by 5 immediately and they cannot regain hit points. At the end of each hour while diseased, the target must make another Constitution saving throw. On a success, the disease pauses and no further damage is incurred. On a failure, their maximum health decreases by 5. The disease can be cured by any magic that removes disease, thee successful saving throws (they do not need to be consecutive), or certain potions. If the creature's maximum hit points reach zero, it dies and cannot be revived.} damage.]),
 		("Claws", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 2d4 + 2 slashing damage.]),
 	),
 	variants: (
@@ -89,12 +89,12 @@ The mummy is a rare undead intentionally created to serve as an eternal guardian
 		Challenge: [3:3],
 	),
 	traits: (
-		("Rebirth", [1d4 days after being destroyed, the mummy returns to life in its warded area. Mummies can only be completely destroyed by one of the following: \ Casting _remove curse_ on them while they are at 0 hit points. \ Finding and destroying the phylactery that binds them to life (usually in the form of a small gem) and reducing the mummy to 0 hit points. \ Destroying the undead on hallowed ground.]),
+		("Rebirth", [1d4 days after being destroyed, the mummy returns to life in its warded area. Mummies can only be completely destroyed by one of the following: \ Casting #safe-link("remove curse")[_remove curse_] on them while they are at 0 hit points. \ Finding and destroying the phylactery that binds them to life (usually in the form of a small gem) and reducing the mummy to 0 hit points. \ Destroying the undead on hallowed ground.]),
 		("Vengeful Undead", [If the mummy is guarding a location, stealing from the location or damaging it causes it to chase the thief/vandal. It can track the offender while it is on the same plane of existence and continues to do so until destroyed.]),
 	),
 	actions: (
 		("Multiattack", [The mummy can use its Dreadful Glare and makes one attack with its rotting fist.]),
-		("Rotting Fist", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the _remove curse_ spell or other magic.]),
+		("Rotting Fist", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the #safe-link("remove-curse")[_remove curse_] spell or other magic.]),
 		("Dreadful Glare", [The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies for the next 24 hours.]),
 	),
 ))
@@ -127,7 +127,7 @@ The mummy is a rare undead intentionally created to serve as an eternal guardian
 ))
 
 === Skeletons
-Animated out of bones, usually from the corpses of those that fell in battle or who were stronger of soul, skeletons are more tied to the creature-that-was than are zombies, retaining some semblance of mannerisms. Regardless, they are undead and desire nothing except to kill, at least when created by jotnar. The magic that animates them also creates a memory of weapons. Skeletons are found wielding the weapons they bore in life, and they are not capable of wearing other armor or wielding other weapons. They can be commanded by dark magic to guard an area, including discerning friend from foe, however they will take every possible opportunity to bend their orders to cause havoc---successful necromancers learn early to keep them under very tight constraints. Those that don't generally are killed by their own creations.
+Animated out of bones, usually from the corpses of those that fell in battle or who were stronger of soul, skeletons are more tied to the creature-that-was than are zombies, retaining some semblance of mannerisms. Regardless, they are undead and desire nothing except to kill, at least when created by jotnar. The magic that animates them also creates a physical memory of weapons. Skeletons are found wielding the weapons they bore in life, and they are not capable of wearing other armor or wielding other weapons. They can be commanded by dark magic to guard an area, including discerning friend from foe, however they will take every possible opportunity to bend their orders to cause havoc---successful necromancers learn early to keep them under very tight constraints. Those that don't generally are killed by their own creations.
 
 #statbox((name: "Skeleton",
 	description: [Medium undead, fearless],
@@ -153,6 +153,9 @@ Animated out of bones, usually from the corpses of those that fell in battle or 
 		("Shortbow", [Ranged Attack: +4 to hit, range 80/320 ft., one target. _Hit:_ 1d6 + 2 piercing damage.]),
 	),
 ))
+
+=== Specters
+Specters are incorporeal, faded, echoes of a person's aetheric spirit, with a mindless jotnar at the helm. They drift until they detect living things, at which point they swarm and consume their lives.
 
 #statbox((name: "Specter",
 	description: [Medium undead, single-minded, fearless],
@@ -181,7 +184,7 @@ Animated out of bones, usually from the corpses of those that fell in battle or 
 ))
 
 === Vampires and Vampire Spawn
-As greater undead, vampires were infected by jotnar while still alive and, through ritual and blood have reached a balance with the anti-life spirit. As they age, they gain more power...and their hunger deepens and their humanity recedes under the endless thirst. All vampires need death to maintain themselves---if deprived of life's blood for more than 1 month, they fall unconscious and remain in a torpor until revived by blood. More powerful vampires may become fully demonic when they die.
+As greater undead, vampires were infected by jotnar while still alive and, through ritual and blood have reached a balance with the anti-life spirit. As they age, they gain more power and their hunger deepens and their humanity recedes under the endless thirst. All vampires need death to maintain themselves---if deprived of life's blood for more than 1 month, they fall unconscious and remain in a torpor until revived by blood. More powerful vampires may become fully demonic when they die.
 
 Vampires slowly lose the ability to feel emotions other than the strongest---one of their biggest threats is simple boredom causing them to do stupid things for a thrill. They often delight in perversions, including tortures, sadistic sexual games, and simply toying with "cattle".
 
@@ -205,7 +208,7 @@ Contrary to myth, vampires don't create other vampires simply by feeding. They m
 		Challenge: [9:11],
 	),
 	traits: (
-		("Shapechanger", [If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. \ While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies. \ While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.]),
+		("Shapechanger", [If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. \ While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies. \ While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all damage except the damage it takes from sunlight.]),
 		("Legendary Resistance (3/Day)", [If the vampire fails a saving throw, it can choose to succeed instead.]),
 		("Misty Escape", [When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed. \ While it has 0 hit points in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.]),
 		("Regeneration", [The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.]),

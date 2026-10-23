@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Plants <plants>
 Most plants are not a threat and thus do not have stat blocks; things like toxic molds, poison thistles, etc are hazards, not creatures. But in a fantasy world, there are certainly animate plants. They are detailed here.

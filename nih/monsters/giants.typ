@@ -1,11 +1,12 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Giants <giants>
 Giants in all their forms descend from the ancient titans. Contrary to the name, titans were of reasonably normal stature. But they possessed the power of True Words in the form of runes, often inscribed on their bodies. These runes gave them control over matter, allowing them to transform into hulking figures many tens of feet (some even a hundred) feet tall and with strength to move mountains.
 
-After the Titan-Wyrm wars and the treachery of Isskap with the Orb of All Might, the titans' runic power was broken, leaving them incapable of voluntarily transforming; the result were the ancestors of today's jazuu and dwarves (the latter being those whose power was stripped to create the Orb in the first place). Instead, the last remnants of their power went into the creation of the Titanwalls, runic constructs that could rewrite a jazuu, transforming them permanently into a true giant...if they survived and were able to control the process. Those who failed to control the transformation or who bailed out early became the giant-kin. In a cruel twist of fate, true giants are sterile, but giant-kin breed true. Thus, true giants are rare, but giant-kin have spread throughout all the continents of Quartus.
+After the Titan-Wyrm wars and the treachery of Isskap with the Orb of All Might, the titans' runic power was broken, leaving them incapable of voluntarily transforming; the result were the ancestors of today's jazuu and dwarves (the latter being those whose power was stripped to create the Orb in the first place). Instead, the last remnants of their power went into the creation of the Titanwalls, runic constructs that could rewrite a jazuu, transforming them permanently into a true giant if they survived and were able to control the process. Those who failed to control the transformation or who bailed out early became the giant-kin. In a cruel twist of fate, true giants are sterile, but giant-kin breed true. Thus, true giants are rare, but giant-kin have spread throughout all the continents of Quartus.
 == True Giants
-The transformation at a Titanwall can be likened to a reprogramming--one translation goes as follows.
+The transformation at a Titanwall can be likened to a reprogramming. One translation goes as follows.
 
 ```
 **START PHYSICAL BLOCK**
@@ -51,7 +52,7 @@ BECOME
 	),
 	traits: (
 		("Keen Smell", [The giant has advantage on Wisdom (Perception) checks that rely on smell.]),
-		("Innate Spellcasting", [The giant's innate spellcasting ability is Charisma (DC 15). It can innately cast the following spells, requiring no material components: \ *Concentration* _fog cloud_ (at will), _control-weather_ (Legendary, 1/day), _telekinesis_ (3/day) \ *Movement* _misty step_ (3/day), _feather fall_ (3/day), _gaseous form_ \ *Incantations* _fly_ (incantation)]),
+		("Innate Spellcasting", [The giant's innate spellcasting ability is Charisma (DC 15). It can innately cast the following spells, requiring no material components: \ *Concentration* #safe-link("fog-cloud",[_fog cloud_]) (at will), #safe-link("control-weather",[_control weather_]) (Legendary, 1/day), #safe-link("telekinesis",[_telekinesis_]) (3/day) \ *Movement* #safe-link("misty-step",[_misty step_]) (3/day), #safe-link("feather-fall",[_feather fall_]) (3/day), #safe-link("gaseous-form",[_gaseous form_]) \ *Incantations* #safe-link("fly",[_fly_]) (incantation)]),
 	),
 	actions: (
 		("Multiattack", [The giant makes two morningstar attacks.]),
@@ -190,7 +191,7 @@ BECOME
 	),
 	traits: (
 		("Amphibious", [The giant can breathe air and water.]),
-		("Innate Spellcasting", [The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: \ *Concentration* _levitate_ (at will), _control weather_ (Legendary, 3x) \ *Other* _feather fall_ (at will), _sense aura_ (incantation)]),
+		("Innate Spellcasting", [The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: \ *Concentration* #safe-link("levitate",[_levitate_]) (at will), #safe-link("control-weather",[_control weather_]) (Legendary, 3x) \ *Other* #safe-link("feather-fall",[_feather fall_]) (at will), #safe-link("sense-aura",[_sense aura_]) (incantation)]),
 	),
 	actions: (
 		("Multiattack", [The giant makes two greatsword attacks.]),
@@ -252,7 +253,7 @@ The fey ogre (often mistakenly called a "ogre mages" or "oni") is an ogre who ha
 		Challenge: [7:6],
 	),
 	traits: (
-		("Innate Spellcasting", [The fey ogre's innate spellcasting ability is Charisma (spell save DC 13). The fey ogre can innately cast the following spells, requiring no material components: \ *Concentration* _darkness_ (at will), _invisibility_ (at will), _charm-person_ (1x), _sleep_ (1x) \ *Damage* _cone-of-cold_ (1x) \ *Other* _gaseous-form_ (1x)]),
+		("Innate Spellcasting", [The fey ogre's innate spellcasting ability is Charisma (spell save DC 13). The fey ogre can innately cast the following spells, requiring no material components: \ *Concentration* #safe-link("darkness",[_darkness_]) (at will), #safe-link("invisibility",[_invisibility_]) (at will), #safe-link("charm-person",[_charm person_]) (1x), #safe-link("sleep",[_sleep_]) (1x) \ *Damage* #safe-link("cone-of-cold",[_cone of cold_]) (1x) \ *Other* #safe-link("gaseous-form",[_gaseous form_]) (1x)]),
 		("Regeneration", [The fey ogre regains 10 hit points at the start of its turn if it has at least 1 hit point.]),
 	),
 	actions: (

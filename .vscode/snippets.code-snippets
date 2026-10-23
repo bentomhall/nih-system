@@ -22,5 +22,17 @@
 			"(\"$1\", [Melee Attack: $2 to hit, reach $3 ft, one target. _Hit:_ $4 $5 damage $6]),",
 			"$0"
 		]
-	}
+	},
+    "SafeSpellLink": {
+        "scope": "typst",
+        "prefix": "safe-spell",
+        "body": [
+            "#safe-link(\"$1\",[_$2_])$0"
+        ]
+    },
+    "SafeLink": {
+        "scope": "typst",
+        "prefix": "safe-link",
+        "body": "#safe-link(\"$1\", [$1])$0"
+    }
 }

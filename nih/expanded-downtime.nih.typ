@@ -1,36 +1,21 @@
-#import "@preview/dragonling:0.3.1": *
 
-#show: dndmodule.with(
-    title: "NIH: Equipment, Skill Tricks, Spells",
-    subtitle: "All the extras you need to make a character",
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Variant Downtime Rules",
+    subtitle: "Enhancing NIH Downtime",
     author: "Admiral Benbo",
-    cover: none,
     paper: "us-letter",
     logo: none,
+    cover: none,
     fancy-author: true,
     bg: none
-)
+  )
 
-#let wide(body) = place(
-  top + center,
-  scope: "parent",
-  float: true,
-  body,
-)
-#let flush-block(body) = {
-  set list(marker:none, indent:0pt, body-indent: 0pt)
-  body
-}
+  #set page(margin: 15mm)
+]
 
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
 = Variant Downtime Rules
 <variant-downtime-rules>
 This document contains optional rules a GM can use to enhance downtime; that is, time spent not adventuring. Many campaigns will not have significant downtime, and so these rules won't apply. Others may have substantial amounts (months or more), and so a way to spend time and treasure to further character development or aid their next adventure is welcome. And some players love crafting items. The base rules already include rules for crafting and training, but they're very threadbare. These are intended to add a bit more choice and meat to those processes, while also including ways that characters not interested in training or crafting can contribute to the group.

@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Humanoids <humanoids>
 Humanoids don't generally have default attitudes, as the stat blocks are too generic for that. In general, humanoids can be reasoned with and aren't fearless. Individualistic vs group mentality depends entirely on the individual. Humanoids are never single-minded or domestic.
@@ -23,7 +24,7 @@ The stat blocks presented here are starting points for further customization mor
 		Challenge: [1/4:1/8],
 	),
 	traits: (
-		("Spellcasting", [The acolyte's spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The acolyte has following spells prepared: \ *Concentration*: _bless_ (x1), _sanctuary_ (x1) \ *Healing*: _cure-wounds_ (x2)]),
+		("Spellcasting", [The acolyte's spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The acolyte has following spells prepared: \ *Concentration*: #safe-link("bless",[_bless_]) (x1), #safe-link("sanctuary",[_sanctuary_]) (x1) \ *Healing*: #safe-link("cure-wounds",[_cure wounds_]) (x2)]),
 	),
 	actions: (
 		("Club", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d4 bludgeoning damage.]),
@@ -53,7 +54,7 @@ The stat blocks presented here are starting points for further customization mor
 		Challenge: [1:1/2],
 	),
 	traits: (
-		("Spellcasting", [The acolyte's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has the following spells prepared: \ *Concentration* _arcane binding_ (x2), _shield of faith_ (x1) \ *Other* _inflict wounds_ (x1), _command_ (x2)]),
+		("Spellcasting", [The acolyte's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has the following spells prepared: \ *Concentration* #safe-link("arcane-binding",[_arcane binding_]) (x2), #safe-link("shield-of-faith",[_shield of faith_]) (x1) \ *Other* #safe-link("inflict-wounds",[_inflict wounds_]) (x1), #safe-link("command",[_command_]) (x2)]),
 	),
 	actions: (
 		("Multiattack", [The acolyte makes two dagger attacks or casts Judgement Strike twice.]),
@@ -71,7 +72,7 @@ The stat blocks presented here are starting points for further customization mor
 
 #statbox((name: "Archmage",
 	description: [Medium humanoid (any lineage)],
-	ac: [15 (_mage armor_)],
+	ac: [15 (#safe-link("mage-armor",[_mage armor_]))],
 	hp: [156 (24d8 + 48)],
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+2], INT: [+5], WIS: [+2], CHA: [+3]),
@@ -89,7 +90,7 @@ The stat blocks presented here are starting points for further customization mor
 	traits: (
 		("", [\begin{multicols}{2}]),
 		("Magic Resistance", [The archmage has advantage on saving throws against spells and other magical effects.]),
-		("Spellcasting", [The archmage's spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast the following spells in combat: \ *Concentration* _faerie fire_ (at will), _black tentacles_ (x2), _wall of force_ (x2) \ *Damage* _disintegrate_ (Legendary, x2, 10d6+60), _fireball_ (x3, 6d6) \ *Defensive* _misty step_ (at will), _stoneskin_ (x3), _time stop_ (Legendary, x1)]),
+		("Spellcasting", [The archmage's spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast the following spells in combat: \ *Concentration* #safe-link("faerie-fire",[_faerie fire_]) (at will), #safe-link("black-tentacles",[_black tentacles_]) (x2), #safe-link("wall-of-force",[_wall of force_]) (x2) \ *Damage* #safe-link("disintegrate",[_disintegrate_]) (Legendary, x2, 10d6+60), #safe-link("fireball",[_fireball_]) (x3, 6d6) \ *Defensive* #safe-link("misty-step",[_misty step_]) (at will), #safe-link("stoneskin",[_stoneskin_]) (x3), #safe-link("time-stop",[_time stop_]) (Legendary, x1)]),
 	),
 	actions: (
 		("Multicast (recharge 5-6)", [The archmage can use one of its spell attacks as a bonus action if it casts a spell using its Spellcasting feature.]),
@@ -99,7 +100,7 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	equipment: (
 		("Common", [An arcane focus. A component pouch including 300 gp in diamond dust. 1d4 spell stones (cost 1-12 AET).]),
-		("Rare", [A heroic-tier or two adventurer-tier magic items, usually being wielded. \end{multicols}]),
+		("Rare", [A heroic-tier or two adventurer-tier magic items, usually being wielded.]),
 	),
 ))
 
@@ -289,7 +290,7 @@ The stat blocks presented here are starting points for further customization mor
 
 #statbox((name: "Mage",
 	description: [Medium humanoid (any lineage)],
-	ac: [14 (_mage armor_)],
+	ac: [14 (#safe-link("mage-armor",[_mage armor_]))],
 	hp: [40 (9d8)],
 	speed: [30 ft.],
 	stats: (STR: [-1], DEX: [+2], CON: [+0], INT: [+3], WIS: [+1], CHA: [+0]),
@@ -305,7 +306,7 @@ The stat blocks presented here are starting points for further customization mor
 		Challenge: [6:3],
 	),
 	traits: (
-		("Spellcasting", [The mage's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage can cast the following spells: \ *Concentration* _greater invisibility_ (x1), _suggestion_ (x2), _fire shield_ (x1) \ *Defensive* _misty step_ (x3), _mage armor_ (x1) \ *AoE* _cone of cold_ (x1), _ice storm_ (x2), _magic missile_ (x3)]),
+		("Spellcasting", [The mage's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage can cast the following spells: \ *Concentration* #safe-link("greater-invisibility",[_greater invisibility_]) (x1), #safe-link("suggestion",[_suggestion_]) (x2), #safe-link("fire-shield",[_fire shield_]) (x1) \ *Defensive* #safe-link("misty-step",[_misty step_]) (x3), #safe-link("mage-armor",[_mage armor_]) (x1) \ *AoE* #safe-link("cone-of-cold",[_cone of cold_]) (x1), #safe-link("ice-storm",[_ice storm_]) (x2), #safe-link("magic-missile",[_magic missile_]) (x3)]),
 	),
 	actions: (
 		("Dagger", [Melee or Ranged Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 1 piercing damage.]),
@@ -364,7 +365,7 @@ The stat blocks presented here are starting points for further customization mor
 		Challenge: [3:2],
 	),
 	traits: (
-		("Spellcasting", [The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest can cast the following spells: \ *Concentration* _bless_, _sanctuary_ (x2) \ *Damage* _spiritual weapon_ (x1), _guiding bolt_ (x2) \ *Utility/Healing* _cure wounds_ (x2), _unbind_ (x2)]),
+		("Spellcasting", [The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest can cast the following spells: \ *Concentration* #safe-link("bless",[_bless_]), #safe-link("sanctuary",[_sanctuary_]) (x2) \ *Damage* #safe-link("spiritual-weapon",[_spiritual weapon_]) (x1), #safe-link("guiding-bolt",[_guiding bolt_]) (x2) \ *Utility/Healing* #safe-link("cure-wounds",[_cure wounds_]) (x2), #safe-link("unbind",[_unbind_]) (x2)]),
 	),
 	actions: (
 		("Multiattack.", [The priest casts Judgement Strike, attacks with its mace, or casts a spell. If it has Spiritual Weapon active, it makes an attack with that and move the weapon up to 20 ft.]),
@@ -428,7 +429,7 @@ The stat blocks presented here are starting points for further customization mor
 		Challenge: [1:1],
 	),
 	traits: (
-		("Spellcasting", [The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells: \ *Concentration* _entangle_ (x2), _call lightning_ (x1) \ *Defensive* _longstrider_ (x1) \ *Utility* _cure wounds_ (x2)]),
+		("Spellcasting", [The shaman's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can cast the following spells: \ *Concentration* #safe-link("entangle",[_entangle_]) (x2), #safe-link("call-lightning",[_call lightning_]) (x1) \ *Defensive* #safe-link("longstrider",[_longstrider_]) (x1) \ *Utility* #safe-link("cure-wounds",[_cure wounds_]) (x2)]),
 	),
 	actions: (
 		("Quarterstaff", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d6 bludgeoning damage.]),
@@ -495,7 +496,7 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	actions: (
 		("Multiattack", [The thug makes two melee attacks.]),
-		("Warhammer", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 2 bludgeoning damage. _Miss_ The target still takes 2 bludgeoning damage.]),
+		("Warhammer", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 2 bludgeoning damage. Miss The target still takes 2 bludgeoning damage.]),
 		("Heavy Crossbow", [Ranged Attack: +2 to hit, range 100/400 ft., one target. _Hit:_ 1d10 piercing damage.]),
 	),
 	equipment: (
@@ -564,7 +565,7 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	equipment: (
 		("Common", [A medium pouch of gold (5-20 gp), a healing potion, and a gambling set.]),
-		("Rare", [A hero-tier magic item, often weapon or armor that is being wielded.]),
+		("Rare", [An adventurer-tier magic item, often weapon or armor that is being wielded.]),
 	),
 ))
 

@@ -1,4 +1,5 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
 
 = Oozes <oozes>
 It's not clear where the first oozes came from. Ooze-like creatures can be found on the earth-aspected elemental planes (especially where it overlaps with the planes of water), but those are much more refined and less mindless than your regular ooze. Some believe that oozes were created during the early ages to act as living cleaning agents or to dissolve waste. Most feared among the oozes are the nefarious boing-boings---oozes that _bounce_ with a distinctive sound rather than protoplasmically slither across the ground. Boing-boings also have markings that look like grinning faces. Thankfully, those types are quite rare.
@@ -80,11 +81,11 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	),
 	traits: (
 		("Amorphous", [The ooze can move through a space as narrow as 1 inch wide without squeezing.]),
-		("Corrode Metal", [Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, attacks with that weapon have disadvantage until repaired as part of a long rest. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage. Repair requires proficiency with and access to smith's tools. \ The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.]),
+		("Corrode Metal", [Any non masterwork weapon made of metal that hits the ooze corrodes. After dealing damage, attacks with that weapon have disadvantage until repaired as part of a long rest. Ammunition made of metal that hits the ooze is destroyed after dealing damage. Repair requires proficiency with and access to smith's tools. \ The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.]),
 		("False Appearance", [While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.]),
 	),
 	actions: (
-		("Pseudopod", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 1 bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with and access to smith's tools.]),
+		("Pseudopod", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 1 bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing non masterwork metal armor, attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with and access to smith's tools.]),
 	),
 ))
 
@@ -107,11 +108,11 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	),
 	traits: (
 		("Amorphous", [The pudding can move through a space as narrow as 1 inch wide without squeezing.]),
-		("Corrosive Form", [A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, attacks with the weapon have disadvantage until repaired during a long rest. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. \ The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.]),
+		("Corrosive Form", [A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any non-masterwork weapon made of metal or wood that hits the pudding corrodes. After dealing damage, attacks with the weapon have disadvantage until repaired during a long rest. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool. Ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. \ The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.]),
 		("Spider Climb", [The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.]),
 	),
 	actions: (
-		("Pseudopod", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 3 bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved; attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool.]),
+		("Pseudopod", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 3 bludgeoning damage plus 18 (4d8) acid damage. In addition, non-masterwork armor worn by the target is partly dissolved; attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with woodcarvers or smith's tools and access to the appropriate tool.]),
 		("Split", [When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.]),
 	),
 ))

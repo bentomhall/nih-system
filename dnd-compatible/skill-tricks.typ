@@ -1,35 +1,17 @@
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
-  title: "Skill Tricks",
-  subtitle: "A Parallel Progression System",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  logo: none,
-  cover: none,
-  fancy-author: true,
-  bg: none
-)
-
-#set page(margin: 15mm)
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-#let flush-caption(title, subtitle) = {
-  set par(first-line-indent: 0em,spacing: 1em)
-  strong(title)
-  linebreak()
-  subtitle
-}
-
-#import "functions.typ": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Skill Tricks",
+    subtitle: "A Parallel Progression System",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+]
 
 = Skill Tricks
 
@@ -170,7 +152,7 @@ Additionally, you have advantage on checks made to determine the spell being cas
 
 #flush-caption("Shield Bash", [_Strength (Shield) Basic Skill Trick_])
 
-You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is #link(<staggered>)[staggered] until the end of their next turn. If you score a critical hit, the target is #link(<staggered>)[staggered] until the end of your next turn. This can replace an attack when you take the Attack action.
+You lash out with your shield. As an action, make a melee weapon attack with proficiency. On a hit, the opponent takes 1d4 + your Strength modifier bludgeoning damage and is #safe-link("staggered")[staggered] until the end of their next turn. If you score a critical hit, the target is #safe-link("staggered")[staggered] until the end of your next turn. This can replace an attack when you take the Attack action.
 
 #flush-caption("Soothe Domesticated Animal", [_Wisdom (Animal Handling) Basic Skill Trick_])
 
@@ -378,25 +360,5 @@ As an action you can magically do one of the following to a creature you touch. 
 - Dispel one spell affecting the creature, even if the spell effect is normally not subject to _dispel magic_.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
 
-= Appendix: New Conditions
-
-Two new conditions are used throughout this work and are described here. They are lesser effects of various other effects found throughout the base system, systematized here for ease of reference.
-
-== Staggered <staggered>
-Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action.
-
-== Shaken <shaken>
-Shaken creatures cannot take reactions and make attacks at disadvantage.
-
-#pagebreak()
-= Legal Legalities
-
-This section contains legal stuff.
-
-#sym.copyright 2026 Admiral Benbo
-
-This work is openly licensed via (https://creativecommons.org/licenses/by/4.0/).
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work.
+#include "../shared/5e-conditions.typ"
+#include "../shared/legal.typ"

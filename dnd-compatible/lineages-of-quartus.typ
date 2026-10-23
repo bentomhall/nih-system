@@ -1,25 +1,18 @@
-#import "@preview/dragonling:0.3.1": *
-#import "functions.typ": *
-#show: dndmodule.with(
-  title: "Lineages of Quartus",
-  subtitle: "A guide to the cultures and lineages, playable and not, of Western Noefra",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  cover: none,
-  logo: none,
-  fancy-author: true,
-  bg: none
-)
 
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Lineages of Quartus",
+    subtitle: "A guide to the cultures and lineages, playable and not, of Western Noefra",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+]
 
 = Introduction
 
@@ -605,10 +598,4 @@ The Ship Folk culture has reacted to their ancestral enslavement by turning the 
 
 Ship Folk culture is, as the name suggests, oriented towards ships. Those who spend their lives at sea (or at least on a ship) are higher status than the landlubbers, and the highest status in society is that of a free ship captain. The admirals of the Fleets that organize their society have more power, but often regret giving up their independent commands. Raiders and slavers, they mostly extort resources from the islands in the sea and the northern shore of Soefra. The First Fleet has made a treaty with the Serpent Dominion, allowing them to dock at Tarad'am and control much of the shipping around Sentinel Island (now belonging entirely to the Fleet) but preventing them from raiding the mainland or protected islands. This is enforced by a powerful retired adventurer who has threatened to burn the Fleet to the waterline and murder every single sena'ka of the Fleet if they take slaves from the mainland again. #aside[that's my girl, Dilligas Husty! --ed] And since she's mated to one of the oldest dragons on the planet, they believe her #aside[she absolutely would do it. And then make a hit song about it. --IB]
 
-= Legal Notices
-
-#sym.copyright 2026, Admiral Benbo. This work is openly licensed via #link("https://creativecommons.org/licenses/by/4.0/legalcode")["CC-BY-4.0"].
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at #link("https://dnd.wizards.com/resources/systems-reference-document"). The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at #link("https://creativecommons.org/licenses/by/4.0/legalcode").
-
-No generative AI was used in the production of this work.
+#include "../shared/legal.typ"

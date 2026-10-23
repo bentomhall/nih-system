@@ -1,3 +1,7 @@
+#let darkred = rgb("#540808")
+#let darkyellow = rgb("#fcba03")
+
+
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
   auto,
@@ -9,6 +13,33 @@
   set list(marker:none, indent:0pt, body-indent: 0pt, spacing: 0.7em)
   show list.item: set block(above: 0.5em, below: 0em)
   body
+}
+
+#let flush-caption(title, subtitle) = {
+  set par(first-line-indent: 0em,spacing: 1em)
+  strong(title)
+  linebreak()
+  subtitle
+}
+
+#show table.cell: it => {
+  if it.y == 0 {
+    set text(size: 9pt, weight: "bold")
+    it
+  } else {
+    set text(size: 10pt)
+    it
+  }
+}
+
+#let safe-link(lbl, body) = context {
+  let target = label(lbl)
+  let matches = query(target)
+  if matches.len() > 0 {
+    link(target, body)
+  } else {
+    body
+  }
 }
 
 #let stats-table(stats) = {
@@ -42,9 +73,9 @@
 
     #line(stroke: 2pt + darkred, length: 100%)
     #context [
-      #text(fill: darkred)[*#language.get().stats.ac*] #stats.ac\
-      #text(fill: darkred)[*#language.get().stats.hp*] #stats.hp\
-      #text(fill: darkred)[*#language.get().stats.speed*] #stats.speed\
+      #text(fill: darkred)[*Armor Class*] #stats.ac\
+      #text(fill: darkred)[*Hit Points*] #stats.hp\
+      #text(fill: darkred)[*Speed*] #stats.speed\
     ]
     
     #line(stroke: 2pt + darkred, length: 100%)
@@ -61,11 +92,13 @@
     
     #context {
       let sections = (
-        language.get().sections.actions,
-        language.get().sections.reactions,
-        language.get().sections.limited_usage,
-        language.get().sections.equip,
-        language.get().sections.legendary_act,
+        "Actions",
+        "Reactions",
+        "Limited Usage",
+        "Equipment",
+        "Legendary Actions",
+        "Variants",
+        "Scaling"
       )
       for section in sections {
         if section in stats.keys() {

@@ -1,0 +1,48 @@
+name: Build release PDFs
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+env:
+  TYPST_IMAGE: ghcr.io/typst/typst:0.15.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile top-level Typst files
+        run: |
+          mkdir -p output
+          shopt -s nullglob
+          files=(*.typ)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No top-level .typ files found" >&2
+            exit 1
+          fi
+          for f in "${files[@]}"; do
+            echo "Compiling $f"
+            docker run --rm \
+              -u "$(id -u):$(id -g)" \
+              -e XDG_CACHE_HOME=/work/.cache \
+              -v "$PWD:/work" -w /work \
+              "$TYPST_IMAGE" compile "$f" "output/${f%.typ}.pdf"
+          done
+
+      - name: Zip PDFs
+        run: |
+          cd output
+          zip "../nih-system-${{ github.event.release.tag_name }}.zip" *.pdf
+
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" \
+            "nih-system-${{ github.event.release.tag_name }}.zip" \
+            --repo "${{ github.repository }}" --clobber

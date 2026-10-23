@@ -1,35 +1,17 @@
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
-  title: "Dawn of Hope: Martial Classes",
-  subtitle: "New classes, variant versions of old classes, and new subclasses",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  logo: none,
-  cover: none,
-  fancy-author: true,
-  bg: none
-)
-
-#set page(margin: 15mm)
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-#let flush-caption(title, subtitle) = {
-  set par(first-line-indent: 0em,spacing: 1em)
-  strong(title)
-  linebreak()
-  subtitle
-}
-
-#import "functions.typ": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Dawn of Hope: Martial Classes",
+    subtitle: "New classes, variant versions of old classes, and new subclasses",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+]
 
 = Introduction
 
@@ -253,9 +235,9 @@ Starting at 10th level, you are nearly impossible to fluster or make angry. You 
 Additionally, you can touch one creature who is frightened, charmed, or possessed and expend 2 STA as an action, removing the effect or expelling the possessor.
 
 === Lightning Step
-Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus #sym.times your Intelligence modifier and are #link(<shaken>)[shaken] until the beginning of your next turn. On a success, targets take half damage and are not shaken. Shaken creatures cannot take reactions and make attacks at disadvantage.
+Starting at 15th level, when you use your Flash Step ability, all creatures within 5 feet of your destination must make a Constitution saving throw against a DC of 8 + your Intelligence modifier + your proficiency bonus. On a failed save, targets take lightning damage equal to your proficiency bonus #sym.times your Intelligence modifier and are #safe-link("shaken")[shaken] until the beginning of your next turn. On a success, targets take half damage and are not shaken. Shaken creatures cannot take reactions and make attacks at disadvantage.
 
-When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of #link(<shaken>)[shaken] and targets that succeed are #link(<shaken>)[shaken] until the start of your next turn.
+When you do this, you can expend 5 STA. If you do so, creatures that fail their saving throw are stunned instead of #safe-link("shaken")[shaken] and targets that succeed are #safe-link("shaken")[shaken] until the start of your next turn.
 
 === Cascading Deathblow
 Starting at 18th level, when you use your Deathblow ability, you can expend 1+ STA in addition to the STA spent (if any) to activate the ability. If you do so, all creatures of your choice within your reach if wielding a melee weapon or all creatures of your choice within 10 feet of the original target if wielding a ranged weapon take damage of the weapon's type equal to one roll of the weapon's base die for every stamina spent in this way.
@@ -1058,7 +1040,7 @@ At 3rd level when you pick this Path, choose one of the elements below. You gain
 ]
 
 === Elemental Blow
-At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Furious Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is #link(<staggered>)[staggered] until the end of your next turn. If they were already #link(<staggered>)[staggered], they become stunned instead.
+At 6th level, your elemental attunement flows out over your weapons. When you hit with an attack and use Furious Blow, you can choose to change the damage type to one of cold, fire, lightning, or thunder. If you do so, the target must make a Constitution saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is #safe-link("staggered")[staggered] until the end of your next turn. If they were already #safe-link("staggered")[staggered], they become stunned instead.
 
 === Flickering Rush
 Starting at 10th level, you can spend 5 STA on your turn to teleport up to twice your speed. If you do so, you cannot move any further that turn.
@@ -1119,25 +1101,5 @@ Starting at 14th level, your speed has increased enough so that it appears you c
 
 Additionally, you no longer need to end your turns in contact with a solid surface while using Raging Leaps, as you can balance on the air itself.
 
-= Appendix: New Conditions
-
-Two new conditions are used throughout this work and are described here. They are lesser effects of various other effects found throughout the base system, systematized here for ease of reference.
-
-== Staggered <staggered>
-Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action.
-
-== Shaken <shaken>
-Shaken creatures cannot take reactions and make attacks at disadvantage.
-
-#pagebreak()
-= Legal Legalities
-
-This section contains legal stuff.
-
-#sym.copyright 2026 Admiral Benbo
-
-This work is openly licensed via (https://creativecommons.org/licenses/by/4.0/).
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work.
+#include "../shared/5e-conditions.typ"
+#include "../shared/legal.typ"

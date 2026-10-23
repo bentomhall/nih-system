@@ -1,4 +1,8 @@
-#import "functions.typ": *
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
+
+= Assorted Legendary Creatures <legendary-creatures>
+These creatures aren't ready for show.
 
 #statbox((name: "Kraken",
 	description: [Gargantuan monstrosity (titan)],

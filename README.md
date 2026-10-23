@@ -3,6 +3,8 @@
 ## License
 See `LICENSE`. But generally CC-BY-4.0 where possible, with a small portion of the dnd compatible work published under OGL 1.0a.
 
+All images original.
+
 ## Attribution
 Attribute this work to Admiral Benbo and link to this github repository.
 
@@ -19,6 +21,9 @@ Each release will have a zip file with each of the top-level PDFs attached. If y
 
 ## Contributions
 Contributions are welcome, but all must be licensed CC-BY 4.0 or MIT. They wil be included at my sole discretion. No protected intellectual property will be included---if you notice something that I missed, please open an issue and let me know.
+
+## AI Usage
+Generative AI was only used in creating tooling to do text transformations and doing bulk edits (adding labels to things, fixing formatting). All the content is mine and mine alone; I bear full responsibility if it is bad.
 
 
 

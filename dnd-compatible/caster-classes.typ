@@ -1,35 +1,17 @@
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
-  title: "Dawn of Hope: Spellcasting Classes",
-  subtitle: "New classes, variant versions of old classes, and new subclasses",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  logo: none,
-  cover: none,
-  fancy-author: true,
-  bg: none
-)
-
-#set page(margin: 15mm)
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-#let flush-caption(title, subtitle) = {
-  set par(first-line-indent: 0em,spacing: 1em)
-  strong(title)
-  linebreak()
-  subtitle
-}
-
-#import "functions.typ": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Dawn of Hope: Spellcasting Classes",
+    subtitle: "New classes, variant versions of old classes, and new subclasses",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+]
 
 = Introduction
 
@@ -840,7 +822,7 @@ As a bonus action on your turn, you can move the spirit up to 30 feet in any dir
 #flush-block[
 - *Blazing Summer Spirit.* This spirit arises from the scorching heat of the summer sun. When summoned, all creatures within 10 feet of its location must make a Dexterity saving throw against your spell save DC, taking fire damage equal to your level on a failed saving throw or half as much on a success. Creatures that fail their saving throw are frightened of you for one minute and can make a Wisdom saving throw against your spell save DC at the end of each of their turns, ending the fear on a success.
 - _Bonus Action:_ All creatures within 10 feet of the spirit must make a Dexterity saving throw against your spell save DC, taking 1d8 + your Wisdom modifier fire damage on a failure or half as much on a success. This damage increases by 1d8 at each of 6th, 10th, and 14th levels.
-- *Bleak Winter Spirit.* This spirit arises from the cold dark of winter. When summoned, all creatures within 10 feet of its location must make a Constitution saving throw against your spell save DC. On a failed save, targets take cold damage equal to your level and are #link(<staggered>)[staggered] for one minute; on a success, their speed is reduced by half until the end of their next turn. #link(<staggered>)[Staggered] creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action. #link(<staggered>)[Staggered] creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. 
+- *Bleak Winter Spirit.* This spirit arises from the cold dark of winter. When summoned, all creatures within 10 feet of its location must make a Constitution saving throw against your spell save DC. On a failed save, targets take cold damage equal to your level and are #safe-link("staggered")[staggered] for one minute; on a success, their speed is reduced by half until the end of their next turn. #safe-link("staggered")[Staggered] creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action. #safe-link("staggered")[Staggered] creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success. 
 - _Bonus Action:_ One creature of your choice within 10 feet of the spirit must make a Constitution saving throw, taking 1d8 + your Wisdom modifier cold damage on a failure or half as much on a success. Creatures that fail their saving throw have their speed reduced by 10 feet until the start of your next turn. This damage increases by 1d8 at each of 6th, 10th, and 14th levels.
 - *Entangling Spring Spirit.* This spirit arises from the uncontrolled spring growth. When summoned, all creatures within 10 feet of its location must make a Strength saving throw against your spell save DC. On a failed save, they take magical bludgeoning damage equal to your level and become restrained by rapidly growing plants for one minutes On a success, they take half as much damage and are not restrained. Restrained creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success. The area remains difficult terrain for 10 minutes, after which the plants wither.
 - _Bonus Action:_ Make a melee spell attack using your spell attack modifier against one creature of your choice within 30 feet of the spirit. On a hit, the creature takes 1d8 + your Wisdom modifier magical bludgeoning damage and you can pull it 10 feet closer to the spirit. The damage increases by 1d8 at each of 6th, 10th, and 14th level.
@@ -1241,7 +1223,7 @@ Once you gain access to a oath spell, you always have it prepared, and it doesn'
 === Channel Divinity
 When you take this oath at 3rd level, you gain the following two Channel Divinity options. Once you use either one, you cannot use this feature again until you finish a short or long rest.
 #flush-block[
-- *Unveil.* As an action, you unveil the weight of your accumulated sins, which causes those who witness it to cower and quail. All creatures of your choice within 30 ft that can see and hear you must make a Charisma saving throw against your spell save DC. On a failed save, they are frightened of you for one minutes While frightened, their speed is reduced to zero. Frightened creatures can repeat the saving throw at the end of each of their turns, ending the effect on a success. Creatures who succeed on the initial saving throw are instead #link(<shaken>)[shaken] until the end of your next turn. This has no effect on demons, the undead, or constructs.
+- *Unveil.* As an action, you unveil the weight of your accumulated sins, which causes those who witness it to cower and quail. All creatures of your choice within 30 ft that can see and hear you must make a Charisma saving throw against your spell save DC. On a failed save, they are frightened of you for one minutes While frightened, their speed is reduced to zero. Frightened creatures can repeat the saving throw at the end of each of their turns, ending the effect on a success. Creatures who succeed on the initial saving throw are instead #safe-link("shaken")[shaken] until the end of your next turn. This has no effect on demons, the undead, or constructs.
 
 - *Drive Home the Blade.* When you hit with a weapon attack but do not score a critical hit, you can expend your Channel Divinity to convert the hit into a critical hit. Alternatively, you can use it when you miss to turn the miss into a hit.
 ]
@@ -1249,7 +1231,7 @@ When you take this oath at 3rd level, you gain the following two Channel Divinit
 Starting at 3rd level, you can expend 10 hit points of your Lay on Hands pool as a bonus action to remove the charmed, frightened, or stunned conditions from a creature you touch. Alternatively, you can expend 5 points to remove the condition in question, but become afflicted with it instead, using the remaining duration, saving throw, and any other effects.
 
 === Aura of Weight
-Starting at 7th level, you can expend a spell slot of 1st level or higher as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw against your spell save DC. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minutes On a success, they are #link(<shaken>)[shaken] until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
+Starting at 7th level, you can expend a spell slot of 1st level or higher as a bonus action to impose burdens on enemies within the area of your Aura of Protection. Enemies in the area must make a Charisma saving throw against your spell save DC. On a failed save, their speed is reduced to half and they deal half damage with attacks for one minutes On a success, they are #safe-link("shaken")[shaken] until the end of your next turn. Enemies that fail their saving throw can attempt the saving throw again at the end of each of their turns that they are not inside your Aura of Protection (including the effects of total cover), ending the effect on themselves on a success.
 
 === Penance Stare
 Starting at 15th level, you can use your action and expend a spell slot of 3nd level or higher to target one creature you can see within 60 ft and magically force it to relive its mistakes and sins. The target must make a Wisdom saving throw against your spell save DC. On a failed save, the target takes 8d6 psychic damage and is incapacitated for one minutes On a success, the target takes half as much damage and is frightened of you until the end of your next turn. Incapacitated targets can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
@@ -2545,66 +2527,6 @@ Changes:
 - Can be used as a regular scimitar dealing only fire damage, dealing an extra (spell level / 2) fire damage per hit.
 - Can be given to another creature (as a scimitar). It disappears and returns to the caster if dropped or thrown.
 
-#pagebreak()
-= Appendix: New Conditions
 
-Two new conditions are used throughout this work and are described here. They are lesser effects of various other effects found throughout the base system, systematized here for ease of reference.
-
-== Staggered <staggered>
-Staggered creatures have their speed reduced to half and can take either an action or a bonus action and cannot take reactions. If they make an attack with their action, they can only make a single attack regardless of how many they normally could with that action.
-
-== Shaken <shaken>
-Shaken creatures cannot take reactions and make attacks at disadvantage.
-
-#pagebreak()
-= Legal Legalities
-
-This section contains legal stuff.
-
-#sym.copyright 2026 Admiral Benbo
-
-This work is openly licensed via (https://creativecommons.org/licenses/by/4.0/) except as noted in a specific item. Noted material is licensed derivative work under the Open Gaming License 1.0a, presented below.
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work.
-
-== OPEN GAME LICENSE Version 1.0a
-
-The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
-
-Definitions: (a)"Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b)"Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)"Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.
-
-The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
-
-Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
-
-Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non- exclusive license with the exact terms of this License to Use, the Open Game Content.
-
-Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
-
-Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
-
-Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
-
-Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
-
-Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
-
-Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.
-
-Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
-
-Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
-
-Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
-
-Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
-
-COPYRIGHT NOTICE.
-
-Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
-
-System Reference Document 5.0 Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
-
-END OF LICENSE 
+#include "../shared/5e-conditions.typ"
+#include "../shared/legal.typ"

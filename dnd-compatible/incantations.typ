@@ -1,35 +1,17 @@
 #import "@preview/dragonling:0.3.1": *
-
-#show: dndmodule.with(
-  title: "Incantations",
-  subtitle: "4e Ritual Magic in 5e, Bringing Utility Magic to the Masses",
-  author: "Admiral Benbo",
-  paper: "us-letter",
-  logo: none,
-  cover: none,
-  fancy-author: true,
-  bg: none
-)
-
-#set page(margin: 15mm)
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
-}
-
-#let flush-caption(title, subtitle) = {
-  set par(first-line-indent: 0em,spacing: 1em)
-  strong(title)
-  linebreak()
-  subtitle
-}
-
-#import "functions.typ": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "Incantations",
+    subtitle: "4e Ritual Magic in 5e, Bringing Utility Magic to the Masses",
+    author: "Admiral Benbo",
+    paper: "us-letter",
+    logo: none,
+    cover: none,
+    fancy-author: true,
+    bg: none
+  )
+]
 
 = Incantations
 
@@ -1280,15 +1262,5 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 - *Creature into Object.* If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 ]
 
-#pagebreak()
-= Legal Legalities
-
-This section contains legal stuff.
-
-#sym.copyright 2026 Admiral Benbo
-
-This work is openly licensed via (https://creativecommons.org/licenses/by/4.0/).
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work.
+#include "../shared/5e-conditions.typ"
+#include "../shared/legal.typ"

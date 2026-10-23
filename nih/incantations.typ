@@ -154,7 +154,7 @@ Some incantations have effects that naturally expire. Those will have a Duration
 === Journeyman Incantations
 Journeyman incantations are suitable to be found by Tier 1 adventurers, ie in levels 1-4, although many have effects that are still valuable much later.
 
-#flush-caption("Alarm","")
+#flush-caption("Alarm","") <alarm>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -166,7 +166,7 @@ You set an alarm against unwanted intrusion. Choose a door, a window, or an area
 
 A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.
 
-#flush-caption("Animal Messenger","")
+#flush-caption("Animal Messenger","") <animal-messenger>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -180,7 +180,7 @@ When the messenger arrives, it delivers your message to the creature that you de
 
 *Special:* By burning a sachet of costly herbs worth at least 10 gp while performing this incantation, you can extend the duration by 24 hours for the first 10 gp worth of herbs and 24 hours for every 50 gp of herbs after that.
 
-#flush-caption("Arcane Lock","")
+#flush-caption("Arcane Lock","") <arcane-lock>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -192,7 +192,7 @@ You touch a closed door, window, gate, chest, or other entryway, and it becomes 
 
 While affected by this incantation, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.
 
-#flush-caption("Augury","")
+#flush-caption("Augury","") <augury>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -211,7 +211,7 @@ The incantation doesn't take into account any possible circumstances that might 
 
 *Special:* If you perform the incantation two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.
 
-#flush-caption("Continual Flame","")
+#flush-caption("Continual Flame","") <continual-flame>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -221,7 +221,7 @@ The incantation doesn't take into account any possible circumstances that might 
 
 A flame, equivalent in brightness to a torch, springs forth from an Tiny object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched.
 
-#flush-caption("Extradimensional Refuge, Minor","")
+#flush-caption("Extradimensional Refuge, Minor","") <extradimensional-refuge--minor>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -233,7 +233,7 @@ You touch a length of rope that is up to 60 feet long. One end of the rope then 
 
 Anything inside the extradimensional space drops out when the incantation ends. This extradimensional space does not interact with Bags of Holding or other similar objects.
 
-#flush-caption("Floating Disk","")
+#flush-caption("Floating Disk","") <floating-disk>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -245,7 +245,7 @@ This incantation creates a circular, horizontal plane of force, 3 feet in diamet
 
 The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the effect ends.
 #pagebreak()
-#flush-caption("Gentle Repose","")
+#flush-caption("Gentle Repose","") <gentle-repose>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: Full round
@@ -255,7 +255,7 @@ The disk is immobile while you are within 20 feet of it. If you move more than 2
 
 This incantation prevents the decay of corpses for the duration, prolonging the time over which the Resurrection incantation can be performed while still counting as an Adventurer effect. This also increases the time that the Revivify spell will work. While in effect, it also prevents the raising of the target as undead.
 
-#flush-caption("Gift of Tongues, Lesser","")
+#flush-caption("Gift of Tongues, Lesser","") <gift-of-tongues--lesser>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: Full round
@@ -267,7 +267,7 @@ For the duration, you understand the literal meaning of any spoken language that
 
 This incantation doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.
 
-#flush-caption("Identify","")
+#flush-caption("Identify","") <identify>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -277,7 +277,7 @@ This incantation doesn't decode secret messages in a text or a glyph, such as an
 
 You choose one object that you must touch throughout the casting of the incantation. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. If you instead touch a creature throughout the casting, you learn what spells or magical effects, if any, are currently affecting it. Some effects (such as _magic aura_) may deceive this incantation and many more powerful effects simply cannot be detected this way.
 
-#flush-caption("Illusory Script","")
+#flush-caption("Illusory Script","") <illusory-script>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -287,7 +287,7 @@ You choose one object that you must touch throughout the casting of the incantat
 
 You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration. To you and any creatures you designate when you cast the incantation, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know. Should the incantation be dispelled, the original script and the illusion both disappeare A creature with truesight can read the hidden message.
 
-#flush-caption("Lock-breaker's Boon","")
+#flush-caption("Lock-breaker's Boon","") <lock-breaker-s-boon>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -297,7 +297,7 @@ You write on parchment, paper, or some other suitable writing material and imbue
 
 One creature touched gains proficiency with Thieves' Tools for the duration. If the target already has proficiency, they gain expertise instead. The incantation also creates a set of thieves' tools made of solid force. When these tools are used on a door that was locked via Arcane Lock, the magical lock is suppressed for the duration of the attempt.
 #pagebreak()
-#flush-caption("Magic Aura","")
+#flush-caption("Magic Aura","") <magic-aura>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -313,7 +313,7 @@ When you cast the incantation, choose one or both of the following effects. The 
 - *Mask.* You change the way the target appears to spells and magical effects that detect creature types, such as a oathbound's Divine Sense or the trigger of a Spell Trap incantation. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment. This allows a masked creature, for example, to bypass such things as glyphs of warding keyed to creature type.
 ]
 
-#flush-caption("Magic Mouth","")
+#flush-caption("Magic Mouth","") <magic-mouth>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -327,7 +327,7 @@ When that circumstance occurs, a magical mouth appears on the object and recites
 
 The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the GM.
 
-#flush-caption("Mending","")
+#flush-caption("Mending","") <mending>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -337,7 +337,7 @@ The triggering circumstance can be as general or as detailed as you like, though
 
 This incantation repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This incantation can physically repair a magic item or construct, but the incantation can't restore magic to such an object.
 #pagebreak()
-#flush-caption("Purify Food and Drink","")
+#flush-caption("Purify Food and Drink","") <purify-food-and-drink>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -347,7 +347,7 @@ This incantation repairs a single break or tear in an object you touch, such as 
 
 All non-magical food and drink within a 5-foot-radius sphere centered on a point of your choice within 10 ft is purified and rendered free of poison and disease. This does not affect creatures, even if you identify as an anthropophage.
 
-#flush-caption("Restoration","")
+#flush-caption("Restoration","") <restoration>
 #flush-block[
 - _Rarity_: Journeyman (see text)
 - _Cast Time_: See text
@@ -366,7 +366,7 @@ This incantation removes afflictions. The power depends on the time spent and th
 - Any reduction in one of the target's ability scores
 - One effect reducing the target's hit point maximum
 
-#flush-caption("Sense Aura","")
+#flush-caption("Sense Aura","") <sense-aura>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 1 minute
@@ -380,7 +380,7 @@ This incantation opens your senses to more clearly sense the auras around creatu
 - *Sense Aether Manipulation.* You sense the auras associated with active aetheric abilities. For the duration, you can sense any magical effect or item within 60 ft of you and have an idea as to its strength. The GM will tell you the equivalent rarity of the effect. You also gain a sense of the type of magic involved and whether it is protective, baleful, or beneficial to the one that it is affecting or that would trigger it. For example, a magical trap that causes a burst of fire would be baleful, while a wall of force would be protective.
 ]
 
-#flush-caption("Unseen Servant","")
+#flush-caption("Unseen Servant","") <unseen-servant>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -394,7 +394,7 @@ Once on each of your turns as a bonus action, you can mentally command the serva
 
 If you command the servant to perform a task that would move it more than 60 feet away from you, the effect ends.
 
-#flush-caption("Voice the Voiceless","")
+#flush-caption("Voice the Voiceless","") <voice-the-voiceless>
 #flush-block[
 - _Rarity_: Journeyman (see text)
 - _Cast Time_: 10 minutes
@@ -412,7 +412,7 @@ You can also turn difficult terrain caused by plant growth (such as thickets and
 - Until the incantation ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This incantation doesn't return the creature's soul to its body; it only animates the corpse and accesses the latent memories still present. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.
 ]
 
-#flush-caption("Water Breathing","")
+#flush-caption("Water Breathing","") <water-breathing>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -422,7 +422,7 @@ You can also turn difficult terrain caused by plant growth (such as thickets and
 
 This incantation grants up to ten willing creatures you can see within 30 ft the ability to breathe underwater until the incantation ends. Affected creatures also retain their normal mode of respiration.
 
-#flush-caption("Water Walk","")
+#flush-caption("Water Walk","") <water-walk>
 #flush-block[
 - _Rarity_: Journeyman
 - _Cast Time_: 10 minutes
@@ -434,7 +434,7 @@ This incantation grants the ability to move across any liquid surface---such as 
 
 === Adventurer Incantations
 Adventurer incantations are suitable to be first found during first half of Tier 2, ie levels 5-7.
-#flush-caption("Abjure Espionage","")
+#flush-caption("Abjure Espionage","") <abjure-espionage>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 minute
@@ -446,7 +446,7 @@ You ward a 30 feet sphere around you against spying magics for 1 hour. Any spell
 
 *Special:* if you expend a pearl worth at least 100 gp while performing this incantation, you can instead cause any foiled scrying attempt to see or hear a scene that you designate when you cast the incantation. This scene can last up to 10 minutes, after which it loops to the beginning.
 
-#flush-caption("Augment Fertility","")
+#flush-caption("Augment Fertility","") <augment-fertility>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 8 hours
@@ -456,7 +456,7 @@ You ward a 30 feet sphere around you against spying magics for 1 hour. Any spell
 
 You enrich the land. All plants in a half-mile radius centered on your location become enriched for 1 yeare The plants yield twice the normal amount of food when harvested. This has no effect on non-food plants or animals; nor does it cause the plants to be ready for harvest earlier.
 
-#flush-caption("Clairvoyance","")
+#flush-caption("Clairvoyance","") <clairvoyance-incantation>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -470,7 +470,7 @@ When you cast the incantation, you choose seeing or hearing. You can use the cho
 
 A creature that can see the sensor (such as a creature benefiting from _see invisibility_ or who has truesight) sees a luminous, intangible orb about the size of your fist and can attack it. It counts as an object with AC 10, 1 hit point, and is immune to all damage except from weapon attacks. If it is reduced to zero hit points or successfully dispelled via _unbind_ or similar effects, the effect immediately ends.
 
-#flush-caption("Create Food and Water","")
+#flush-caption("Create Food and Water","") <create-food-and-water>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 minute
@@ -480,7 +480,7 @@ A creature that can see the sensor (such as a creature benefiting from _see invi
 
 You create 45 pounds of food and 30 gallons of water on the ground or in containers within 10 feet, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.
 
-#flush-caption("Divination","")
+#flush-caption("Divination","") <divination>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -492,7 +492,7 @@ Your magic and an offering put you in contact with a god or a god's servants wit
 
 The incantation doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
 
-#flush-caption("Dream Messenger","")
+#flush-caption("Dream Messenger","") <dream-messenger>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -506,7 +506,7 @@ If the target is asleep, the messenger appears in the target's dreams and can co
 
 The target is aware of the identity of the messenger and can choose to reject the message. If they do so, the incantation immediately ends.
 
-#flush-caption("Find the Path","")
+#flush-caption("Find the Path","") <find-the-path>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -518,7 +518,7 @@ This incantation allows you to find the shortest, most direct physical route to 
 
 For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.
 
-#flush-caption("Gift of Tongues, Greater","")
+#flush-caption("Gift of Tongues, Greater","") <gift-of-tongues--greater>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -528,7 +528,7 @@ For the duration, as long as you are on the same plane of existence as the desti
 
 This incantation grants the creature you touch the ability to understand any spoken language it hears for one hour. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
 
-#flush-caption("Instant Summons","")
+#flush-caption("Instant Summons","") <instant-summons>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -540,7 +540,7 @@ You touch an object weighing 10 pounds or less whose longest dimension is 6 feet
 
 If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment. _unbind_ or a similar effect successfully applied to the sapphire ends this incantation's effect.
 
-#flush-caption("Legend Lore","")
+#flush-caption("Legend Lore","") <legend-lore>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 hour
@@ -552,7 +552,7 @@ Name or describe a person, place, or object. The incantation brings to your mind
 
 The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the incantation might yield this information: “Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of the Lord of the Anvil, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.”
 
-#flush-caption("Nondetection","")
+#flush-caption("Nondetection","") <nondetection>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -562,7 +562,7 @@ The information you learn is accurate but might be couched in figurative languag
 
 For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic (including the Identify or Sense Aura incantations) or perceived through magical scrying sensors.
 
-#flush-caption("Private Sanctum","")
+#flush-caption("Private Sanctum","") <private-sanctum>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 hour
@@ -581,7 +581,7 @@ You make an area within 30 feet magically secure. The area is a cube that can be
 
 Performing the incantation on the same spot every day for a year makes this effect permanent.
 
-#flush-caption("Rapid Fortifications","")
+#flush-caption("Rapid Fortifications","") <rapid-fortifications>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -597,7 +597,7 @@ If you create a span greater than 20 feet in length, you must halve the size of 
 
 The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.
 
-#flush-caption("Resurrection","")
+#flush-caption("Resurrection","") <resurrection>
 #flush-block[
 - _Rarity_: Adventurer (see text)
 - _Cast Time_: Varies (see text)
@@ -613,7 +613,7 @@ If the target has been dead 10 or more days but less than 100 years, this incant
 
 If the target has been dead for more than 100 years or the body is destroyed, this incantation has a minimum casting level of 17. Enacting this incantation requires a Group (4), 24 hours, and 15,000 gold pieces worth of diamonds. Unless one of the participants is a cleric of the Life domain or the incantation is performed in a sanctified location (via the _hallow_ incantation or other means), the target cannot regain hit points or any rest-based resource for 8 days and all participants and the target gain 2 levels of exhaustion.
 
-#flush-caption("Sending","")
+#flush-caption("Sending","") <sending>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: Full round
@@ -627,7 +627,7 @@ You can talk across any distance and even to other planes of existence, but if t
 
 *Special* If both you and the target are willing, you can prolong the conversation by adding Debilitating (N), where N is 1 for every additional minute spent. This does not impose penalties on this conversation, but does on any subsequent performances before you finish a long rest. The hearer also suffers this penalty if they attempt the incantation again before finishing a long rest.
 
-#flush-caption("Sense Location","")
+#flush-caption("Sense Location","") <sense-location>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: Full round
@@ -644,7 +644,7 @@ Choose either a type of animal or plant, a specific creature familiar to you, or
 - The incantation can locate a specific object known to you, as long as you have seen it up close---within 30 feet---at least once. Alternatively, the incantation can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon. This incantation can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.
 ]
 
-#flush-caption("Secret Chest","")
+#flush-caption("Secret Chest","") <secret-chest>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 minute
@@ -658,7 +658,7 @@ While the chest remains in the Border Shadow and protected by this magic, you ca
 
 This effect ends if you cast this incantation again, if the smaller replica chest is destroyed, or if you choose to end the effect as an action. If the effect ends and the larger chest is in the Border Shadow, it is untethered and unprotected by the magic and may be discovered by other creatures traveling through that place.
 
-#flush-caption("Secure Shelter","")
+#flush-caption("Secure Shelter","") <secure-shelter>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -673,7 +673,7 @@ Nine creatures of Medium size or smaller can fit inside the dome with you. The i
 Until the effect ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.
 The dome of force is an object with an AC of 10 and a damage threshold of 10. Any attack or effect dealing more damage to the dome than this forces the performer of the incantation to make a Constitution saving throw as if he were concentrating on a spell and had taken that amount of damage. On a failed save, the dome vanishes.
 
-#flush-caption("Spell Trap","")
+#flush-caption("Spell Trap","") <spell-trap>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 hour
@@ -695,7 +695,7 @@ When you inscribe the glyph, choose explosive runes or a spell glyph.
 - *Spell Glyph.* You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area must either deal damage to its target(s), impose a negative condition on them, or conjure a creature hostile to the one who triggers it. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.
 ]
 
-#flush-caption("Telepathic Bond","")
+#flush-caption("Telepathic Bond","") <telepathic-bond>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 10 minutes
@@ -705,7 +705,7 @@ When you inscribe the glyph, choose explosive runes or a spell glyph.
 
 You forge a telepathic link among up the participants, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this effect. Until the effect ends, the targets can communicate telepathically through the bond whether or not they have a Journeyman language. The communication ends for a participant if they move more than 1 mile away from the nearest other participant or if they move to another plane of existence.
 
-#flush-caption("Teleport Trap","")
+#flush-caption("Teleport Trap","") <teleport-trap>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 minute
@@ -719,7 +719,7 @@ You ward an area up to 1000 sq ft by 20 feet tall against teleportation for 24 h
 - *Misdirect.* When a creature attempts to teleport into the warded area, they must make a DC 15 Charisma saving throw. On a failed save, they instead are shunted to a false destination (see the _teleport_ description). On a success, the teleport succeeds normally but you are aware that it happened and the creature does not appear until 1 minute after it should have normally appeared.
 ]
 
-#flush-caption("Zone of Truth","")
+#flush-caption("Zone of Truth","") <zone-of-truth>
 #flush-block[
 - _Rarity_: Adventurer
 - _Cast Time_: 1 minute
@@ -734,7 +734,7 @@ An affected creature is aware of the effect and can thus avoid answering questio
 === Hero Incantations
 Hero incantations are suitable to be found during for the latter half of Tier 2 play or later, ie levels 8-10 or higher.
 
-#flush-caption("Awaken Beast or Plant","")
+#flush-caption("Awaken Beast or Plant","") <awaken-beast-or-plant>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 8 hours
@@ -746,7 +746,7 @@ After spending the casting time tracing magical pathways within a precious gemst
 
 The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.
 
-#flush-caption("Binding Circle","")
+#flush-caption("Binding Circle","") <binding-circle>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 hour
@@ -764,7 +764,7 @@ Note: The specificity of the task is a conversation between you and the GM. The 
 
 *Special:* By increasing the sacrifice, you can increase the duration of the binding. If you sacrifice a gem (or gems) worth 10,000 gp, it lasts for 10 days, 50,000 gp buys you 30 days, 200,000 gp buys you 180 days, and a sacrifice of gems worth 500,000 gp buys you a year and a day.
 
-#flush-caption("Commune","")
+#flush-caption("Commune","") <commune>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -791,7 +791,7 @@ You commune with a deity, primal spirits, or an non-deific otherworldly entity.
 - On a successful save, you can ask the entity up to five questions. You must ask your questions within 1 minute of finishing the incantation. The GM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question). Each time you perform this incantation again before finishing a long rest increases the DC of the saving throw by 5. The answers will generally be honest, but may be misleading depending on the entity's outlook and knowledge. If a one-word answer would be unintentionally misleading, the GM may answer as a short phrase instead.
 ]
 
-#flush-caption("Extradimensional Refuge","")
+#flush-caption("Extradimensional Refuge","") <extradimensional-refuge>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -803,7 +803,7 @@ You conjure an extradimensional dwelling in range that lasts for the duration. Y
 
 Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this incantation dissipate into smoke if removed from the mansion. When the effect ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.
 
-#flush-caption("Fabricate","")
+#flush-caption("Fabricate","") <fabricate>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 hour
@@ -819,7 +819,7 @@ Creatures or magic items can't be created or transmuted by this incantation. You
 
 *Special:* The costly component required is an additional 50% of the amount of material used in the final product. Thus, casting this incantation requires the necessary raw materials for the item itself as well as an additional 50% of those same materials that is consumed by the incantation.
 
-#flush-caption("Fly","")
+#flush-caption("Fly","") <fly>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 minute
@@ -831,7 +831,7 @@ Up to four willing creatures within 10 ft gain a flying speed of 60 feet for the
 
 *Special:* If you take 10 minutes and expend a golden feather worth 100 gp, it can affect up to 8 creatures.
 
-#flush-caption("Forbiddance","")
+#flush-caption("Forbiddance","") <forbiddance>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 hour
@@ -847,7 +847,7 @@ When you cast this incantation, you can designate a password. A creature that sp
 
 If you cast this incantation where it would overlap the area of a different forbiddence effect (from you or anyone else), the original effect supersedes this one in the overlapping area. If you cast forbiddance every day for 30 days in the same location, the incantation lasts until it is dispelled.
 
-#flush-caption("Geas","")
+#flush-caption("Geas","") <geas>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 minute
@@ -865,7 +865,7 @@ After suffering the penalty, the geas ends and you become aware that the creatur
 
 *Special:* You can choose to make this Debilitating (Major, 2) to increase the duration to a year and a day.
 
-#flush-caption("Guards and Wards","")
+#flush-caption("Guards and Wards","") <guards-and-wards>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 hour
@@ -891,7 +891,7 @@ This incantation creates the following effects within the warded area.
  .
 The whole warded area radiates magic. A _unbind_ cast on a specific effect, if successful, removes only that effect. You can create a permanently guarded and warded structure by casting this incantation there every day for one yeare
 
-#flush-caption("Hallow","")
+#flush-caption("Hallow","") <hallow>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 24 hours
@@ -918,7 +918,7 @@ Second, you can bind an extra effect to the area. Choose the effect from the fol
 
 *Special:* Clerics and paladins in good standing ignore the immediate debilitating effect, treating it as Debilitating (2) instead.
 
-#flush-caption("Modify Memory","")
+#flush-caption("Modify Memory","") <modify-memory-incantation>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: Full round
@@ -936,7 +936,7 @@ A modified memory doesn't necessarily affect how a creature behaves, particularl
 
 A _remove curse_ spell or _restoration_ (using the greater mode) incantation cast on the target restores the creature's true memory. 
 
-#flush-caption("Phantom Steed","")
+#flush-caption("Phantom Steed","") <phantom-steed>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -948,7 +948,7 @@ A Large quasi-real, horselike creature appears on the ground in an unoccupied sp
 
 For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the duration expires, the steed gradually fades, giving the rider 1 minute to dismount. The effect ends immediately without fading if you use an action to dismiss it or if the steed takes any damage.
 
-#flush-caption("Planar Ally","")
+#flush-caption("Planar Ally","") <planar-ally>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 hour
@@ -968,7 +968,7 @@ As a rule of thumb, a task that can be measured in minutes requires a payment wo
 
 After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane.
 
-#flush-caption("Plane Shift","")
+#flush-caption("Plane Shift","") <plane-shift>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 minute
@@ -982,7 +982,7 @@ Alternatively, if you know the sigil sequence of a teleportation circle on anoth
 
 The focus component counts as a magic item of varying rarity---forks attuned to the Material plane are Journeyman while those attuned elsewhere range from Adventurer (Beastholm, Mirrorhaven) to Hero (other planes).
 
-#flush-caption("Programmed Illusion","")
+#flush-caption("Programmed Illusion","") <programmed-illusion>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 minute
@@ -1000,7 +1000,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 *Special:* You can have a number of these illusions equal to your proficiency bonus active at any given time. Performing the incantation again when you have the maximum number makes the oldest effect end immediately.
 
-#flush-caption("Seeming","")
+#flush-caption("Seeming","") <seeming>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -1016,7 +1016,7 @@ The changes wrought by this incantation fail to hold up to physical inspection. 
 
 A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 17. If it succeeds, it becomes aware that the target is disguised.
 
-#flush-caption("Shadow Creation","")
+#flush-caption("Shadow Creation","") <shadow-creation>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -1041,7 +1041,7 @@ Using any material created by this incantation as another spell's material compo
 
 *Special:* The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
 
-#flush-caption("Teleportation Circle","")
+#flush-caption("Teleportation Circle","") <teleportation-circle>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 10 minutes
@@ -1061,7 +1061,7 @@ If the incantation succeeds, a shimmering portal opens within the circle you dre
 
 Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence, which is a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this incantation, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minutes
 
-#flush-caption("Transport via Plants","")
+#flush-caption("Transport via Plants","") <transport-via-plants>
 #flush-block[
 - _Rarity_: Hero
 - _Cast Time_: 1 minute
@@ -1074,7 +1074,7 @@ This incantation creates a magical link between a Large or larger inanimate plan
 === Epic Hero Incantations
 Epic Hero incantations are suitable to be first found in Tier 3, ie levels 11-16.
 
-#flush-caption("Antipathy/Sympathy","")
+#flush-caption("Antipathy/Sympathy","") <antipathy-sympathy>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 1 hour
@@ -1090,7 +1090,7 @@ This incantation attracts or repels creatures of your choice. You target somethi
 
 *Ending the Effect.* If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a DC 17 Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the incantation is allowed another Wisdom saving throw every 24 hours while the effect persists. A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again.
 
-#flush-caption("Create Demiplane","")
+#flush-caption("Create Demiplane","") <create-demiplane>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 1 minute
@@ -1104,7 +1104,7 @@ Each time you cast this incantation, you can create a new demiplane by speaking 
 
 Additionally, if you know the identifier of a demiplane created by a casting of this incantation by another creature, you can have the shadowy door connect to its demiplane instead.
 
-#flush-caption("Mind Blank","")
+#flush-caption("Mind Blank","") <mind-blank-incantation>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 1 minute
@@ -1114,7 +1114,7 @@ Additionally, if you know the identifier of a demiplane created by a casting of 
 
 Until the effect ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells and incantations, and the charmed condition.
 
-#flush-caption("Project Image","")
+#flush-caption("Project Image","") <project-image>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 1 hour
@@ -1130,7 +1130,7 @@ You can see through its eyes and hear through its ears as if you were in its spa
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful DC 18 Intelligence (Investigation) check. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
-#flush-caption("Scrying","")
+#flush-caption("Scrying","") <scrying>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 10 minutes
@@ -1163,7 +1163,7 @@ On a failed save, the incantation creates an invisible sensor within 10 feet of 
 
 Instead of targeting a creature, you can choose a location as the target of this incantation. When you do, the sensor appears at that location and doesn't move. The GM makes a DC 15 d20 check using the Knowledge table's modifiers as the check's modifier. On a failure, the incantation fails and no sensor is created.
 
-#flush-caption("Teleport","")
+#flush-caption("Teleport","") <teleport>
 #flush-block[
 - _Rarity_: Epic Hero
 - _Cast Time_: 1 minute
@@ -1205,7 +1205,7 @@ The destination you choose must be known to you, and it must be on the same plan
 === Legendary Incantations
 Legendary incantations are best suited for Tier 4 play, levels 17+.
 
-#flush-caption("Astral Projection","")
+#flush-caption("Astral Projection","") <astral-projection>
 #flush-block[
 - _Rarity_: Legendary
 - _Cast Time_: 8 hours
@@ -1223,7 +1223,7 @@ The effect ends for a participant when they use their action to end it. When the
 
 The effect might also end early for you or one of your companions. A successful _unbind_ spell used against an astral or physical body ends the effect for that creature. If a creature's original body or its astral form drops to 0 hit points, the effect ends for that creature. If the incantation ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.
 
-#flush-caption("Gate","")
+#flush-caption("Gate","") <gate>
 #flush-block[
 - _Rarity_: Legendary
 - _Cast Time_: 1 hour
@@ -1237,7 +1237,7 @@ The portal has a front and a back on each plane where it appears. Travel through
 
 Deities and other planar rulers can prevent portals created by this incantation from opening in their presence or anywhere within their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
 
-#flush-caption("Irresistible Summons","")
+#flush-caption("Irresistible Summons","") <irresistible-summons>
 #flush-block[
 - _Rarity_: Legendary
 - _Cast Time_: 1 hour
@@ -1249,7 +1249,7 @@ When you perform this incantation, you speak the name of a specific creature (a 
 
 Deities and other planar rulers can prevent this incantation from working on any creature in their presence or anywhere in their domains, picking and choosing which ones they allow and which they disallow on an individual basis.
 
-#flush-caption("Total Transformation","")
+#flush-caption("Total Transformation","") <total-transformation>
 #flush-block[
 - _Rarity_: Legendary
 - _Cast Time_: 24 hours

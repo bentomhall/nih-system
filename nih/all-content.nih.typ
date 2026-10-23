@@ -11,10 +11,10 @@
   bg: none
 )
 
-#import "core.nih.typ" as core
-#import "character-creation.nih.typ" as characters
-#import "equipment-skills-spells.nih.typ" as equipment
+#include "core.nih.typ"
+#include "character-creation.nih.typ"
+#include "equipment-skills-spells.nih.typ"
 #import "incantations.typ"
-#import "expanded-downtime.nih.typ" as downtime
-#import "monsters/monsters.typ"
-#import "../world/places-of-quartus.typ"
+#include "expanded-downtime.nih.typ"
+#include "monsters/monsters.typ"
+#include "../world/places-of-quartus.typ"

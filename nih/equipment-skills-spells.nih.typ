@@ -810,7 +810,7 @@ weapon or up to three pieces of ammunition. Applying the poison takes an
 action. A creature hit by the poisoned weapon or ammunition takes an additional 1d4 poison damage. Once applied,
 the poison retains potency for 1 minute before drying.
 
-=== Potion of Healing <potion-of-healing>
+=== Potion of Healing
 
 A character who drinks the magical red fluid in this vial regains 2d4 +
 2 hit points. Drinking a potion takes a bonus action; administering it
@@ -3645,7 +3645,7 @@ Many spells specify that a target can make a saving throw to avoid some or all o
 
 The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.
 
-=== Targets <targets>
+=== Targets <reminder-targets>
 See #safe-link("targets", [Targets]) for the general rules that apply to all abilities, including spells and legendary effects.
 
 === Spell Attack Rolls <spell-attack-rolls>

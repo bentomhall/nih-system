@@ -75,8 +75,9 @@ Some of these languages are actually families of languages with many dialects. F
 
 Proficiency in a language includes the basic ability to speak, understand, read, and write (if that language has a written form). You can learn more languages after character creation via a variety of means, including training during downtime (the time between active on-screen adventures). See training for details.
 
+#wide[
 #dndtab("Common Languages", columns: (1fr, 1fr, 1fr, 1fr),
-"Language* ", "Common Name", "Typical Speakers", "*Script",
+"Language ", "Common Name", "Typical Speakers", "Script",
 "Common ", "--", "Most folks", "Reformed Imperial",
 "Tumni ", "Dwarven", "Dwarves", "Modern Runic",
 "Yonwach ", "High Elven", "Gwerin", "Aelven",
@@ -86,9 +87,8 @@ Proficiency in a language includes the basic ability to speak, understand, read,
 "Ngyon toi ", "Goblin", "Goblins", "None, tr. Imperial"
 )
 
-{{wide
 #dndtab("Exotic Languages", columns:(1fr, 1fr, 1fr, 1fr),
-"Language* ", "Common Name", "Typical Speakers", "*Script",
+"Language", "Common Name", "Typical Speakers", "Script",
 "Abyssal ", "Demonic", "Demons, cultists", "Lucian",
 "Celestial ", "--", "Lucians acting on divine business", "Lucian",
 "Draconic ", "--", "Dragons, dragonborn", "tr. mixed Aelven/Runic",
@@ -100,7 +100,7 @@ Proficiency in a language includes the basic ability to speak, understand, read,
 "Sarthak ", "Ship Speech", "Ship folk and pirates of the Moon Sea", "Modified Aelven",
 "Tiboran ", "Old Imperial", "Scholars", " Imperial
 ")
-
+]
 
 === Ability Scores <ability-scores>
 To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.
@@ -525,7 +525,7 @@ A few specifics:
 - The dwarves of Fuar Uulan are very strictly heterosexual and monogamous. All regular adults are married and stay married to one person. They react badly to adultery or divorce, and look at unmarried/non-traditional dwarves with confusion and pity.
 - The high-ranking gwerin tend to do arranged marriages; adults only gain stature in the community if they've provided at least one child as part of a contract marriage. Some of the higher-society houses are still quite male-dominated, but the lower ranks and the more progressive houses are egalitarian. In either case, no one cares who (if anyone) you are attracted to as long as you provide your requisite children to the house.
 - The ihmisi, especially the more tribal folks, have very relaxed gender roles. Anyone can fulfil any societal role. Similarly, goblins have virtually no concept of gender and very little grasp of individuality within the tribes.
-- The orcs of Wyrmhold tend to hold their women in regard;women tend to be the glue that holds the clans and tribes together. They don't care who you are attracted to, although refusing to provide children is considered weird.
+- The orcs of Wyrmhold tend to hold their women in regard; women tend to be the glue that holds the clans and tribes together. They don't care who you are attracted to, although refusing to provide children is considered weird.
 - Halflings are generally deeply matriarchal, treating men as some combination of decorative, protected, and/or weak. Almost obnoxiously so. Female sexuality is unconstrained, but men are expected to be tied to their wives. Most male halfling adventurers break this expectation, often fleeing from forced marraiges.
 - The the Tuura Adam tend to place women in the gate-keeping role for relationships. Men are expected to prove themselves worthy. Non-binary or non-traditional gender roles are fully accepted, as long as you're good at whatever you do. Incompetence is the only thing not respected.
 
@@ -937,12 +937,14 @@ A shadow in the night, the rogue is a stealthy character. They don't make many a
 
 === The Warden
 The warden is a brute, drawing primal power from their emotions (most often sheer anger). Their rage gives them armor, hardening their skin and strengthening their blows. Most often they wield two-handed weapons, but some archetypes dual-wield or use a shield and a one-handed weapon. They excel at surviving against massive damage and fighting those that depend on magic (spell or otherwise); at high levels they gain the ability to stop any aether-using ability cold. They struggle most with targets they can't reach. Their primary ability score is Strength.
-
+#wide[
 #dndtab("Melee Class Summary", columns: (1fr, 1fr, auto),
 "Armsman", "STR", "Ranged or melee, heavy armor",
 "Brawler", "DEX/WIS", "Melee skirmisher",
 "Rogue", "DEX", "Ranged or melee skirmisher with dirty tricks",
 "Warden", "STR", "Durable heavy melee")
+]
+
 #pagebreak()
 = Armsman <armsman>
 

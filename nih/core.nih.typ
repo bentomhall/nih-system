@@ -318,6 +318,18 @@ A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or 
 
 *Stealth.* Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard.
 
+The GM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
+
+You can't hide from a creature unless you have *total concealment* from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
+
+An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
+
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight, but the exact details are up to the GM and the situation.
+
+*Passive Perception.* When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
+
+*What Can You See?.* One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be *lightly* or *heavily obscured*, as explained in vision.
+
 *Other Dexterity Checks.* The GM might call for a Dexterity check when you try to accomplish tasks like the following:
 
 - Control a heavily laden cart on a steep descent
@@ -342,19 +354,6 @@ Depending on the armor you wear, you might add some or all of your Dexterity mod
 
 At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.
 
-#breakoutbox("Hiding")[
-The GM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
-
-You can't hide from a creature unless you have *total concealment* from that creature, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.
-
-An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.
-
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen. Once a creature has been seen, most creatures (other than near-mindless ones such as oozes) will remember that they exist even if the creature successfully hides again. Thus, once you've been seen or the alarm has been raised, alert guards will not be surprised by you even if you successfully hide. This alarm can fade if you spend enough time out of sight, but the exact details are up to the GM and the situation.
-
-*Passive Perception.* When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of +2 modifier and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
-
-*What Can You See?.* One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be *lightly* or *heavily obscured*, as explained in vision.
-]
 == Constitution
 
 Constitution measures health, stamina, and vital force.
@@ -541,12 +540,14 @@ Characters in wagons, carriages, or other land vehicles choose a pace as normal.
 
 Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a Carpet of Flying, allow you to travel more swiftly.
 
+#wide[
 #dndtab("Travel Pace", columns: (1fr, 2fr, 1fr, 1fr, 2fr),
 [*Pace*], [*Distance per: Minute*], [*Hour*], [*Day*], [*Effect*],
 [Fast], [400 feet], [4 miles], [32 miles], [-5 penalty to passive Wisdom (Perception) checks],
 [Normal], [300 feet], [3 miles], [24 miles], [---],
 [Slow], [200 feet], [2 miles], [16 miles], [Able to benefit from stealth]
 )
+]
 
 ==== Difficult Terrain
 
@@ -732,7 +733,7 @@ At the end of a long rest, a character regains all lost hit points, stamina and 
 
 A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits. Creatures cannot progress personal projects during long rests.
 
-#breakoutbox("Short Rests are Important")[
+=== Short Rests are Important
 NIH system assumes that most "adventuring days" (the time between two long rests, whether 1 in-game day or many) that contain any significant amount of challenge will have time for at least one, and often two short rests. Some days may not---some days may have more. But on average, the system expects you to find time for at least one break sometime during the day, between challenges. That means that days consisting of a single big encounter are only ok when they're rare---use them as a spice, not a steady diet.
 
 If you consistently find your pace too rushed (in universe) to take an hour off or if you frequently only have a single fight per in-game day, consider one of the variants listed below.
@@ -742,7 +743,7 @@ If you consistently find your pace too rushed (in universe) to take an hour off 
 *Individual, limited short rests:* This variant allows a short-rest dependent class to adventure alongside a party of long-rest dependent classes without compromise, at the cost of some in-universe verisimilitude. In this variant, short rests only take 1 minute, but are limited to two per character per long rest. This way, any individual can choose to take a short rest at almost any time between combats, but can't endlessly spam them.
 
 *Safe resting only:* Unlike the previous two variants which focused on making short rests easier, this one focuses on making long rests harder. This is most suited for parties who frequently have only one (or even fewer) major fight/challenge per in-game day so short rests become meaningless. In this variant, you can only take a long rest when in a safe spot: an inn in a safe town, a fortified camp, etc. Somewhere you don't have to set watches or worry about attack or random visitors interrupting you. Any other overnight rest becomes a short rest; short rests now take 8 hours of rest. This variant is hardest on pure casters (shamans, priests, and arcanists) if you try to use it while keeping a regular cadence of fights.
-]
+
 #pagebreak
 = Between Adventures <downtime>
 
@@ -1366,21 +1367,17 @@ A creature that has died can't regain hit points until magic such as the #safe-l
 
 When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.
 
-*Instant Death*
-
-Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
+*Instant Death.* Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
 
 For example, a priest with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the priest dies.
 
-*Falling Unconscious*
-
-If damage reduces you to 0 hit points and fails to kill you, you fall unconscious. This unconsciousness ends if you regain any hit points.
+*Falling Unconscious.* If damage reduces you to 0 hit points and fails to kill you, you fall unconscious. This unconsciousness ends if you regain any hit points.
 
 #breakoutbox("Variant: Heroic Resilience")[
 In particularly heroic games, the GM might allow PCs that are reduced to 0 hit points and are not killed outright to expend 1 Stamina per turn to become incapacitated and prone instead of unconscious. This allows them to move (although slower) and speak, but not take actions, reactions, or bonus actions. Using this variant rule, you still make death saves as normal.
 ]
 
-*Death Saving Throws* Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn't tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
+*Death Saving Throws.* Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn't tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
 
 Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don't need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.
 
@@ -1580,7 +1577,7 @@ An incapacitated creature can't take actions or reactions. They can still move a
 
 An invisible creature is impossible to see without the aid of magic or a special sense. If they are unseen as a result, see the #safe-link("unseen-attackers", [Unseen Attackers]) rules.
 
-== Paralyzed <paralyzed>
+=== Paralyzed <paralyzed>
 
 - A paralyzed creature is incapacitated and can't move or speak.
 - The creature automatically fails Strength and Dexterity saving throws and opposed ability checks involving Strength or Dexterity.

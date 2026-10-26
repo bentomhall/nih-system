@@ -1,7 +1,6 @@
 #let darkred = rgb("#540808")
 #let darkyellow = rgb("#fcba03")
 
-
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
   auto,
@@ -20,16 +19,6 @@
   strong(title)
   linebreak()
   subtitle
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
 }
 
 #let safe-link(lbl, body) = context {
@@ -114,3 +103,29 @@
     }
   ]
 ]
+
+#let dndtab(name, columns: (1fr, 4fr), breakable: false, ..contents) = [
+  #block(breakable: breakable)[
+    #show table.cell: it => {
+      if it.y == 0 {
+        set text(size: 9pt, weight: "bold")
+        it
+      } else {
+        set text(size: 10pt)
+        it
+      }
+    }
+  *#smallcaps(text(size: 1.3em)[#name])*
+  #v(-1em)
+  #table(
+  columns: columns,
+  align: (col, row) =>
+   if col == 0 { center }
+    else { left },
+  fill: (col, row) => if calc.odd(row+1) { rgb("#aaaaaa00") } else { rgb("#aaffaa33") },
+  inset: 10pt,
+  stroke: none,
+  // align: horizon,
+  ..contents
+  )
+]]

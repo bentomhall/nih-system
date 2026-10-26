@@ -1,5 +1,5 @@
 #pagebreak()
-= Appendix: Summary of Changes from 5e SRD <changes-from-5e>
+= Summary of Changes from 5e SRD <changes-from-5e>
 NIH (hopefully not the final name) is proudly a 5e D&D fork. That's because I find that 5e does _most_ of what I want in a system, at least at the core level. So why clone it and change stuff? To explore "what might have been."
 
 == Why the code-name NIH?

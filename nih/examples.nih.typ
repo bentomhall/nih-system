@@ -1,5 +1,20 @@
-#pagebreak()
-= Appendix: Worked Examples
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "NIH: Worked Examples",
+    subtitle: "Basic examples of how to play",
+    author: "Admiral Benbo",
+    cover: none,
+    paper: "us-letter",
+    logo: none,
+    fancy-author: true,
+    bg: none
+  )
+] else [
+  #pagebreak()
+]
+= Worked Examples
 <ch:examples>∂
 This chapter contains examples of how certain parts of play are intended to work. They should be taken as (hopefully) illuminating examples only, not definitive statements of how play must go or in any way restrictive.
 

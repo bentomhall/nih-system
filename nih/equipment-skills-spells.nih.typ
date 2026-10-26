@@ -12,6 +12,8 @@
     fancy-author: true,
     bg: none
   )
+] else [
+  #pagebreak()
 ]
 
 = Equipment <equipment>
@@ -95,7 +97,7 @@ Many people conduct transactions through barter.
 Like gems and art objects, trade goods---bars of iron, bags of salt,
 livestock, and so on---retain their full value in the market and can be
 used as currency.
-
+#pagebreak()
 = Armor <armor>
 
 Quartus is a vast tapestry made up of many different cultures, each with
@@ -311,7 +313,7 @@ When skinned carefully and properly tanned, exotic leathers and hides can be mad
 
 === Mythril <mythril>
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
-
+#pagebreak()
 = Weapons <weapons>
 
 Your class grants proficiency in certain weapons, reflecting both the
@@ -1463,7 +1465,7 @@ important to a distant settlement. Powerful spell-casters rarely need
 more coin, but mostly-disposable help is always in demand.
 
 As a general rule (with wide variation), you can find people willing to cast spells for pay based on the size of the settlement: those that require 2 AET or less can be found in most villages, 3 AET or less in most towns, and 5 AET or less in cities. You're highly unlikely to find anyone willing to take coin for spells costing more than 5 AET or incantations above the Adventurer rank.
-
+#pagebreak()
 = Fantastic Equipment <magic-equipment>
 
 NIH system includes magic items. It is expected that adventurers will accumulate some items of various worth over the course of their adventures. However, NIH system does not assume, in its core math, that adventurers will have _specific_ magic items at specific levels, especially those that enhance Armor Class, Attack Bonus, Saving Throw modifiers, or Saving Throw DCs. In fact, these kinds of items do not exist. You will not find a single "+1 longsword" here. Enhancements to damage are completely fine. Enhancements to accuracy (or target numbers) cause significant distortions in bounded accuracy and quickly become the dominant option in all but the rarest of cases.
@@ -3115,7 +3117,7 @@ This is a masterwork weapon that counts as silvered and adamantine. In addition,
 _Weapon (any), Hero (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.
-
+#pagebreak()
 = Skill Tricks <skill-tricks>
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
@@ -3541,7 +3543,7 @@ As an action you can expend 4 AET to magically do one of the following to a crea
 - Cure any disease and remove any poison or curse affecting the creature.
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
-
+#pagebreak()
 = Spellcasting <spellcasting>
 Magic permeates fantasy gaming worlds and often appears in the form of a spell.
 
@@ -3730,7 +3732,7 @@ Generally, monsters have the lowest Dexterity and Intelligence saving throw modi
 "CON","","---","poisoned","exhaustion",  
   )
 ]
-
+#pagebreak()
 = Spell Lists <spell-lists>
 
 == By Cost <spells-by-cost>
@@ -6641,7 +6643,7 @@ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flyin
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so at advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.
 
 Alternatively, you can use this spell to grapple to a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
-
+#pagebreak()
 = Legendary Effects <legendary-effects>
 
 Legendary effects are magical abilities of great power. In some respects they are similar to spells, but one cannot learn and cast them normally using your personal aether. Instead, you must gain access via a class feature. Some creatures and magic items have the ability to create specific legendary effects. In general, each legendary effect can only be cast (brought into effect) once per day. The class feature will also define what saving throw DC is used if the effect calls for a saving throw.
@@ -7197,9 +7199,4 @@ You must designate a sanctuary by casting this effect within a location dedicate
 
 This effect ignores all non-legendary effects that preclude or inhibit teleportation.
 
-
-= Legal Stuff
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
-
-The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License].",
+#include "../shared/legal.typ"

@@ -11,6 +11,8 @@
     fancy-author: true,
     bg: none
   )
+] else [
+  #pagebreak()
 ]
 
 = Monsters <monsters>
@@ -511,21 +513,33 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 "19", "130" ,
 "20", "130"
 )
-
+#pagebreak()
 = Monsters by Type <monsters-by-type>
 
 #include "aberrations.typ"
+#pagebreak()
 #include "beasts.typ"
+#pagebreak()
 #include "celestials.typ"
+#pagebreak()
 #include "dragons.typ"
+#pagebreak()
 #include "elementals.typ"
+#pagebreak()
 #include "fey.typ"
+#pagebreak()
 #include "fiends.typ"
+#pagebreak()
 #include "giants.typ"
+#pagebreak()
 #include "humanoids.typ"
+#pagebreak()
 #include "monstrosities.typ"
+#pagebreak()
 #include "oozes.typ"
+#pagebreak()
 #include "plants.typ"
+#pagebreak()
 #include "undead.typ"
-
+#pagebreak()
 #include "non-combat.typ"

@@ -12,8 +12,8 @@
     fancy-author: true,
     bg: none
   )
-
-  #set page(margin: 15mm)
+] else [
+  #pagebreak()
 ]
 
 = Incantations

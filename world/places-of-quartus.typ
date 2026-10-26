@@ -10,6 +10,8 @@
     logo: none,
     fancy-author: true
 )
+] else [
+  #pagebreak()
 ]
 
 = Introduction

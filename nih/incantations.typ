@@ -29,13 +29,11 @@ Spells eligible to be converted to incantations include those used for informati
 #breakoutbox("A More Extreme Variant")[
 You can take this one step further and _remove_ the spells being emulated here from spell lists entirely, making it so the only real way to produce those effects is through the Incantation system. But that's not a necessary part of the subsystem. They work just fine being a bonus.
 
-==== Doesn't This Provide Early Access to Several Spell Effects?
+*Doesn't This Provide Early Access to Several Spell Effects?*
 Yup. That's because they're gated behind GM action in making the Ritual Scrolls available (for the most part). And the early-access spells aren't exactly the most powerful effects.
 ]
 
-== General Rules for Incantations
-
-=== Finding and Learning Incantations
+== Finding and Learning Incantations
 The knowledge to perform an incantation is encoded into Incantation Scrolls. These are similar to spell scrolls of the same rarity, with the difference that they are not consumed on use but that performing the incantation requires reading from the enchanted scroll. Characters can prepare a Incantation Scroll following the same rules as crafting a spell scroll; the rarity of the incantation matches the rarity of the “spell scroll” created. 
 
 Successfully performing an incantation requires a certain strength of will above all. Mechanically, this translates into level requirements. Incantations come in similar rarities to magic items, with corresponding level requirements to perform.
@@ -49,7 +47,7 @@ While incantations are not spells, they can be affected by _unbind_ and _abjure 
 - *Legendary* incantations require someone of level 17 to perform. They correspond to 9th-level spells. For the purposes of _unbind_ or effects that check the effect's cost, they act as if they cost 20 AET.
 ]
 
-=== Incantation Tags and Costs
+== Incantation Tags and Costs
 Each incantation has one or more tags that summarize the costs associated with performing the incantation. The exact details are explained in the text of the incantation entry. The tags are listed below:
 #flush-block[
 - *Cooldown (X):* This incantation can only be performed once every X amount of time. This cooldown is per participant.
@@ -66,13 +64,13 @@ Each incantation has one or more tags that summarize the costs associated with p
 
 Each incantation also requires a certain amount of time to perform (generally more than one action). Since these are not spells, that does not trigger the need for concentration. Incantations that are not Group (2) or larger can be performed by multiple celebrants simultaneously. Having one or more extra participants reduces the time required by 1 step (see below) with a minimum of a full-round action. Each participant shares in the restrictions and penalties and must know the incantation to participate.
 
-==== Time Steps
+=== Time Steps
 Full Round (takes effect at the beginning of the performer's next turn, requires action, bonus action, and reaction and is interrupted by any damage) #sym.arrow 1 minute #sym.arrow 10 minutes #sym.arrow 1 hour #sym.arrow 4 hours #sym.arrow 8 hours #sym.arrow 24 hours.
 
-==== Duration
+=== Duration
 Some incantations have effects that naturally expire. Those will have a Duration tag in their summary line. This duration starts once the incantation's effects begin (so a 1 hr performance time and a 1 hour duration mean that the effect will end 2 hours after the incantation began).
 #pagebreak()
-== Alphabetical
+= Alphabetical Incantations
 #flush-block[
 - Abjure Espionage (Adventurer)
 - Alarm (Journeyman)
@@ -244,7 +242,7 @@ Anything inside the extradimensional space drops out when the incantation ends. 
 This incantation creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within 10 feet. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the incantation ends, and everything on the disk falls to the ground.
 
 The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the effect ends.
-#pagebreak()
+
 #flush-caption("Gentle Repose","") <gentle-repose>
 #flush-block[
 - _Rarity_: Journeyman
@@ -296,7 +294,7 @@ You write on parchment, paper, or some other suitable writing material and imbue
 ]
 
 One creature touched gains proficiency with Thieves' Tools for the duration. If the target already has proficiency, they gain expertise instead. The incantation also creates a set of thieves' tools made of solid force. When these tools are used on a door that was locked via Arcane Lock, the magical lock is suppressed for the duration of the attempt.
-#pagebreak()
+
 #flush-caption("Magic Aura","") <magic-aura>
 #flush-block[
 - _Rarity_: Journeyman
@@ -336,7 +334,7 @@ The triggering circumstance can be as general or as detailed as you like, though
 ]
 
 This incantation repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This incantation can physically repair a magic item or construct, but the incantation can't restore magic to such an object.
-#pagebreak()
+
 #flush-caption("Purify Food and Drink","") <purify-food-and-drink>
 #flush-block[
 - _Rarity_: Journeyman
@@ -1028,7 +1026,7 @@ You pull wisps of shadow material from the Shadowfell to create a nonliving obje
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
-#dndtab("Shadow Creation Cost", columns: (1fr, 1fr),
+#dndtab("Shadow Creation Cost", columns: (1.5fr, 1fr, 1fr), align: left,
   "Material", "Duration", "Cost",
   "Vegetable Matter", "1 day", "0 gp",
   "Stone, Crystal, or Regular Metals", "12 hours", "10 gp",
@@ -1264,16 +1262,7 @@ Choose one creature. It must remain in the circle for the duration of the caster
 The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.
 - *Creature into Object.* If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the effect ends and it returns to its normal form. Damaging the object in any way (including any alteration to its form) ends the incantation immediately.
 ]
-
-#pagebreak()
-= Legal Legalities
-
-This section contains legal stuff.
-
-#sym.copyright 2026 Admiral Benbo
-
-This work is openly licensed via (https://creativeJourneymans.org/licenses/by/4.0/).
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Journeymans Attribution 4.0 International License available at https://creativeJourneymans.org/licenses/by/4.0/legalcode.
-
-No generative AI was used in the production of this work.
+#if sys.inputs.at("standalone", default: "false") == "true" [
+#import "../shared/legal.typ" : core-legal
+#core-legal()
+]

@@ -12,8 +12,11 @@
     bg: none
   )
 ] else [
+  
   #pagebreak()
 ]
+
+#set page(margin: (top: 15mm))
 
 = Monsters <monsters>
 A monster's statistics, sometimes referred to as its *stat block*, provide the essential information that you need to run the monster.
@@ -286,17 +289,11 @@ When a monster takes its action, it can choose from the options in the Actions s
 
 The most common actions that a monster will take in combat are melee and ranged attacks. These can be spell attacks or weapon attacks, where the "weapon" might be a manufactured item or a natural weapon, such as a claw or tail spike. For more information on different kinds of attacks, see the Core Rules.
 
-*Creature vs. Target.*
+*Creature vs. Target.* The target of a melee or ranged attack is usually either one creature or one target, the difference being that a "target" can be a creature or an object.
 
-The target of a melee or ranged attack is usually either one creature or one target, the difference being that a "target" can be a creature or an object.
+*Hit.* Any damage dealt or other effects that occur as a result of an attack hitting a target are described after the "_Hit_;" notation. You have the option of taking average damage or rolling the damage; for this reason, both the average damage and the die expression are presented. Any effect listed in this portion takes place only if the attack hits. Only damage that doesn't require an additional saving throw to take effect after a hit is doubled on a critical hit.
 
-*Hit.*
-
-Any damage dealt or other effects that occur as a result of an attack hitting a target are described after the "_Hit_;" notation. You have the option of taking average damage or rolling the damage; for this reason, both the average damage and the die expression are presented. Any effect listed in this portion takes place only if the attack hits. Only damage that doesn't require an additional saving throw to take effect after a hit is doubled on a critical hit.
-
-*Miss.*
-
-If an attack has an effect that occurs on a miss, that information is presented after the "_Miss:_" notation.
+*Miss.* If an attack has an effect that occurs on a miss, that information is presented after the "_Miss:_" notation.
 
 ==== Spell Attacks
 
@@ -373,11 +370,8 @@ There are many easy ways to customize the NPCs presented here for your home camp
 Non-damaging spells and abilities and challenge ratings Damaging spells and abilities are fairly straightforward to apply to challenge rating. If they do more damage than the monster's other damaging actions, include them in the best-3-rounds model. Done. Non-damaging ones are more difficult. Some suggestions include:
 
 - If a spell or ability does not deal damage, imposes no conditions on an enemy, and does not serve a defensive purpose (by healing, reducing damage, buffing the creature or its allies, etc.), then it likely has no effect on either challenge rating. For example, giving a monster access to the cantrip doesn't significantly change the combat difficulty.
-
 - If a spell imposes negative conditions on an enemy, find a similar-targeted damaging spell with the same cost (or a monster ability from a similar-threat monster) and include it in the damage calculations. Conditions that dominate or completely disable an opponent (such as a banshee's wail) are particularly strong and will generally increase offensive rating significantly.
-
 - If a spell or ability serves a defensive purpose, and especially if it does not require a full action, increase the monster's Defensive Rating by one. More may be warranted for particularly strong effects or those that cannot be overcome except by higher-level foes.
-
 - It a spell has a long duration (ie \> 10 minutes) and does not require concentration, assume that it has pre-cast that spell unless the monster is surprised. Include such things as directly in the stat block as a baseline.
 
 *Armor and Weapon Swaps.* You can upgrade or downgrade an NPC's armor, or add or switch weapons. Adjustments to Armor Class and damage can change an NPC's challenge rating.
@@ -398,15 +392,16 @@ Offensive Rating is determined by the following process:
 
 The following table summarizes the relationship between Offensive Rating and damage output.
 
+#wide[
 #dndtab("Offensive Rating", columns: (1fr, 1fr, 1fr, 1fr, 1fr),
 "OR", "Max Bonus", "Damage Range", "Attack", "DC" ,
 "0", "2", "0-1", "+2", "10" ,
 "1/8", "2", "2-3", "+2", "10" ,
-"1/4", "2& 4-5", "+3", "11" ,
-"1/2", "2& 6-7", "+3", "11" ,
-"1", "2& 8-13", "+4", "12" ,
-"2", "2& 14-19", "+4", "12" ,
-"3", "2& 20-25", "+5", "12" ,
+"1/4", "2", "4-5", "+3", "11" ,
+"1/2", "2", "6-7", "+3", "11" ,
+"1", "2", "8-13", "+4", "12" ,
+"2", "2", "14-19", "+4", "12" ,
+"3", "2", "20-25", "+5", "12" ,
 "4", "2", "26-31", "+5", "12" ,
 "5", "3", "32-37", "+6", "13" ,
 "6", "3", "38-43", "+6", "13" ,
@@ -415,16 +410,18 @@ The following table summarizes the relationship between Offensive Rating and dam
 "9", "4", "56-61", "+7", "14" ,
 "10", "4", "62-67", "+7", "14" ,
 "11", "4", "68-73", "+7", "14" ,
-"12", "4& 74-79", "+7", "14" ,
-"13", "5& 80-85", "+8", "15" ,
-"14", "5& 86-91", "+8", "15" ,
-"15", "5& 92-97", "+8", "15" ,
-"16", "5& 98-103", "+8", "15" ,
-"17", "6& 104-109", "+9", "16" ,
-"18", "6& 110-115", "+9", "16" ,
-"19", "6& 116-121", "+9", "16" ,
-"20", "6& 122-127", "+9", "16" ,
+"12", "4", "74-79", "+7", "14" ,
+"13", "5", "80-85", "+8", "15" ,
+"14", "5", "86-91", "+8", "15" ,
+"15", "5", "92-97", "+8", "15" ,
+"16", "5", "98-103", "+8", "15" ,
+"17", "6", "104-109", "+9", "16" ,
+"18", "6", "110-115", "+9", "16" ,
+"19", "6", "116-121", "+9", "16" ,
+"20", "6", "122-127", "+9", "16" ,
 )
+]
+
 
 *Commentary.* Those who have played Dungeons and Dragons in its more recent incarnations may notice that the numbers on the rating tables are different: higher damage output at a given rating, but lower accuracy. This is intentional, as it is much harder to get flat bonuses to AC without spending resources. The target accuracy is 65% against a normal foe (neither defense focused nor glass cannon). That corresponds to a normal AC at level 20 of 16, which is where a mage-armored arcanist with maximum Dexterity would end up (at the weaker end), or below a plate-armored armsman (without a shield). It's totally normal for a character to have ACs ranging from 15-20 at least before they use resources. However, baseline D&D had soft monsters, especially as defensive measures ramped up in later play. Which meant it required higher CRs to threaten people. Which caused undesirable results. The intent here is that combat should pose a threat even if the OR < level, as long as there are multiple monsters in play. Being forced to use your active defensive tools to absorb, avoid, or redirect incoming damage is totally normal and expected. You should not passively be able to ignore enemies whose OR is greater than half your level. And even ones below that can pose a threat in sufficient numbers.
 

@@ -81,13 +81,13 @@
     
     #context {
       let sections = (
-        "Actions",
-        "Reactions",
-        "Limited Usage",
-        "Equipment",
-        "Legendary Actions",
-        "Variants",
-        "Scaling"
+        "actions",
+        "reactions",
+        "limited usage",
+        "equipment",
+        "legendary actions",
+        "variants",
+        "scaling"
       )
       for section in sections {
         if section in stats.keys() {

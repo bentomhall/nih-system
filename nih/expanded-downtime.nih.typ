@@ -71,13 +71,10 @@ Crafting requires a few things:
 - #strong[Appropriate materials] For magic items with specific formulae, you need the listed special materials to begin crafting; they are consumed when you finish.
 - #strong[Formula] For magic items, you need a formula. Some are known and listed in the item entry, others need to be discovered.
 
-#figure(
-  align(center)[#table(
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (center,center,center,),
-    table.header([#strong[Proficiency];], [#strong[Ability];], [#strong[Example Items];],),
-    table.hline(),
-    [Alchemist's supplies], [INT], [Alchemist fire, potions, oils],
+#wide[
+  #dndtab("Crafting Proficiencies", columns: (1fr, 0.5fr, 3fr), align: left,
+  "Proficiency", "Ability", "Example Items",
+   [Alchemist's supplies], [INT], [Alchemist fire, potions, oils],
     [Arcana], [INT], [Miscellaneous magical items, scrolls, spell stones.],
     [Brewer's supplies], [WIS], [Alchemist fire, alcohol, tisanes | infusions],
     [Calligrapher's supplies], [DEX], [Books, documents, scrolls],
@@ -94,10 +91,9 @@ Crafting requires a few things:
     [Smith's tools], [STR], [Metalwork of iron, steel, etc. Weapons, armor.],
     [Tinker's tools], [DEX], [Gears, springs, mechanisms.],
     [Weaver's tools], [STR], [Textiles. Includes sewing.],
-    [Woodcarver's tools], [DEX], [Staffs, wands, rods, arrows, bolts. Decorative carving of wood.],
-  )]
-  , kind: table
+    [Woodcarver's tools], [DEX], [Staffs, wands, rods, arrows, bolts. Decorative carving of wood.]
   )
+]
 
 Each time you gain Progress, you should check to see if you've accumulated enough to complete your goal, as shown on the tables below. If you have, you can expend any necessary money or special materials (for crafting) and then your goal is accomplished---you've crafted the item or gained the noted proficiency. Consumables (such as potions or scrolls) cost half the listed progress and money, but cannot be made Masterwork. Very Rare and Legendary items cannot generally be crafted under normal conditions. Individual items specify their crafting cost---for mundane items it is half the listed sale price. For otherwise mundane items made from special materials, the special material specifies an additional cost above the regular cost to make the mundane item, and you must specifically provide the requisite amount of special material. If a mundane item costs less than 100 gp, you can make as many as would be paid for by 100 gp (rounded down) per Progress gained, up to a maximum of 8. Ammunition is priced per bundle (20 for most, 50 for blowgun needles).
 
@@ -107,19 +103,13 @@ Two or more characters with relevant tool proficiencies can combine their effort
 
 The crafting downtime activity is designed to be used for larger things, rather than trinkets or extremely low-value items without direct adventuring use. For those, it's often best to allow them to be crafted as part of regular activity. That is, simply say "Ok, you make those things".]
 
-#figure(
-  align(center)[#table(
-    columns: 3,
-    align: (left,center,center,),
-    table.header([#strong[Tier];], [#strong[Progress];], [#strong[Masterwork];],),
-    table.hline(),
-    [Mundane], [1 per 100 gp], [1 per 25 gp],
+#dndtab("Crafting Costs", columns: (1fr, 1fr, 1fr), align: (left, center, center),
+"Tier", "Progress", "Masterwork",
+[Mundane], [1 per 100 gp], [1 per 25 gp],
     [Journeyman], [2], [8],
     [Adventurer], [20], [40],
     [Hero], [100], [400],
-  )]
-  , kind: table
-  )
+)
 
 === Research 
 #strong[Produced Currency.] Discoveries.
@@ -179,22 +169,16 @@ Trading requires proficiency in one of the following:
 
 You can only train in a single thing at a time. Training can increase your proficiency in a specified area. For skills and tools, you can gain expertise (double proficiency) if you are already proficient by paying the Advanced cost. If you train for an armor proficiency, it must be of the lightest type you aren't already proficient with. For example, an Arcanist can only train for a form of light armor. You gain the Armored Caster feature for that one specific type of armor or shield (as well as any you already have it for). For languages, common languages use the Regular cost and rare languages (such as abyssal) use the Advanced cost. For weapons, gaining proficiency in a Simple weapon uses the regular cost and a Martial weapon uses the Advanced cost. For Skill tricks, it must be one you qualify for. Basic tricks use the regular cost, all others use the advanced cost.
 
-#figure(
-  align(center)[#table(
-    columns: 3,
-    align: (center,center,center,),
-    table.header([#strong[Proficiency];], [#strong[Regular];], [#strong[Advanced];],),
-    table.hline(),
-    [Armor (specific type)], [8], [---],
-    [Language], [5], [10],
-    [Shields], [5], [---],
-    [Skill], [10], [40],
-    [Skill Trick], [15], [60],
-    [Tool], [5], [20],
-    [Weapon], [3], [6],
-  )]
-  , kind: table
-  )
+#dndtab("Training Costs", columns: (1fr, 1fr, 1fr),
+"Proficiency", "Regular", "Advanced",
+[Armor (specific type)], [8], [---],
+[Language], [5], [10],
+[Shields], [5], [---],
+[Skill], [10], [40],
+[Skill Trick], [15], [60],
+[Tool], [5], [20],
+[Weapon], [3], [6],
+)
 
 Consult the list below to determine what ability score is relevant:
 

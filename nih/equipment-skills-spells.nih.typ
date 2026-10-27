@@ -1066,49 +1066,6 @@ pair of pliers. Proficiency with these tools lets you add your
 proficiency bonus to any ability checks you make to disarm traps or open
 locks.
 
-#dndtab("Tools", columns: (3fr, 1fr, 1fr),
-"=== Item*","Cost","*Weigh",
-[*Artisan's tools*],"",
-"---Alchemist's supplies","50 gp","8 lb.",
-"---Brewer's supplies","20 gp","9 lb.",
-"---Calligrapher's supplies","10 gp","5 lb.",
-"---Carpenter's tools","8 gp","6 lb.",
-"---Cartographer's tools","15 gp","6 lb.",
-"---Cobbler's tools","5 gp","5 lb.",
-"---Cook's utensils","1 gp","8 lb.",
-"---Glassblower's tools","30 gp","5 lb.",
-"---Jeweler's tools","25 gp","2 lb.",
-"---Leatherworker's tools","5 gp","5 lb.",
-"---Mason's tools","10 gp","8 lb.",
-"---Painter's supplies","10 gp","5 lb.",
-"---Potter's tools","10 gp","3 lb.",
-"---Smith's tools","20 gp","8 lb.",
-"---Tinker's tools","50 gp","10 lb.",
-"---Weaver's tools","1 gp","5 lb.",
-"---Woodcarver's tools","1 gp","5 lb.",
-"Disguise kit","25 gp","3 lb.",
-"Forgery kit","15 gp","5 lb.",
-[*Gaming sets*],"",
-"---Dice set","1 sp","—",
-"---Playing card set","5 sp","—",
-"Herbalism kit","5 gp","3 lb.",
-[*Musical instruments*],"",
-"---Bagpipes","30 gp","6 lb.",
-"---Drum","6 gp","3 lb.",
-"---Dulcimer","25 gp","10 lb.",
-"---Flute","2 gp","1 lb.",
-"---Lute","35 gp","2 lb.",
-"---Lyre","30 gp","2 lb.",
-"---Horn","3 gp","2 lb.",
-"---Pan flute","12 gp","2 lb.",
-"---Shawm","2 gp","1 lb.",
-"---Viol","30 gp","1 lb.",
-"Navigator's tools","25 gp","2 lb.",
-"Poisoner's kit","50 gp","2 lb.",
-"Thieves' tools","25 gp","1 lb.",
-"Vehicles (land or water)","",
-)
-
 == Mounts and Vehicles <mounts-and-vehicles>
 
 A good mount can help you move more quickly through the wilderness, but
@@ -1269,15 +1226,15 @@ connections.
 "Wealthy","4 gp","64 gp",
 "Aristocratic","10 gp minimum","80 gp minimum",
 )
-#flush-block[
-- *Wretched.* You live in inhumane conditions. With no place to call home, you shelter
+*Wretched.* You live in inhumane conditions. With no place to call home, you shelter
 wherever you can, sneaking into barns, huddling in old crates, and
 relying on the good graces of people better off than you. A wretched
 lifestyle presents abundant dangers. Violence, disease, and hunger
 follow you wherever you go. Other wretched people covet your armor,
 weapons, and adventuring gear, which represent a fortune by their
 standards. You are beneath the notice of most people.
-- *Squalid.* You live in a leaky stable, a mud-floored hut just outside town, or a
+
+*Squalid.* You live in a leaky stable, a mud-floored hut just outside town, or a
 vermin-infested boarding house in the worst part of town. You have
 shelter from the elements, but you live in a desperate and often violent
 environment, in places rife with disease, hunger, and misfortune. You
@@ -1285,7 +1242,8 @@ are beneath the notice of most people, and you have few legal
 protections. Most people at this lifestyle level have suffered some
 terrible setback. They might be disturbed, marked as exiles, or suffer
 from disease.
-- *Poor.* A poor lifestyle means going without the comforts available in a stable
+
+*Poor.* A poor lifestyle means going without the comforts available in a stable
 community. Simple food and lodgings, threadbare clothing, and
 unpredictable conditions result in a sufficient, though probably
 unpleasant, experience. Your accommodations might be a room in a
@@ -1294,25 +1252,29 @@ legal protections, but you still have to contend with violence, crime,
 and disease. People at this lifestyle level tend to be unskilled
 laborers, costermongers, peddlers, thieves, mercenaries, and other
 disreputable types.
-- *Modest.* A modest lifestyle keeps you out of the slums and ensures that you can
+
+*Modest.* A modest lifestyle keeps you out of the slums and ensures that you can
 maintain your equipment. You live in an older part of town, renting a
 room in a boarding house, inn, or temple. You don't go hungry or
 thirsty, and your living conditions are clean, if simple. Ordinary
 people living modest lifestyles include soldiers with families,
 laborers, students, priests, hedge wizards, and the like.
-- *Comfortable.* Choosing a comfortable lifestyle means that you can afford nicer
+
+*Comfortable.* Choosing a comfortable lifestyle means that you can afford nicer
 clothing and can easily maintain your equipment. You live in a small
 cottage in a middle-class neighborhood or in a private room at a fine
 inn. You associate with merchants, skilled tradespeople, and military
 officers.
-- *Wealthy.* Choosing a wealthy lifestyle means living a life of luxury, though you
+
+*Wealthy.* Choosing a wealthy lifestyle means living a life of luxury, though you
 might not have achieved the social status associated with the old money
 of nobility or royalty. You live a lifestyle comparable to that of a
 highly successful merchant, a favored servant of the royalty, or the
 owner of a few small businesses. You have respectable lodgings, usually
 a spacious home in a good part of town or a comfortable suite at a fine
 inn. You likely have a small staff of servants.
-- *Aristocratic.* You live a life of plenty and comfort. You move in circles populated by
+
+*Aristocratic.* You live a life of plenty and comfort. You move in circles populated by
 the most powerful people in the community. You have excellent lodgings,
 perhaps a townhouse in the nicest part of town or rooms in the finest
 inn. You dine at the best restaurants, retain the most skilled and
@@ -1322,7 +1284,6 @@ and spend evenings in the company of politicians, guild leaders, high
 priests, and nobility. You must also contend with the highest levels of
 deceit and treachery. The wealthier you are, the greater the chance you
 will be drawn into political intrigue as a pawn or participant.
-]
 
 === Self-Sufficiency <self-sufficiency>
 
@@ -1346,7 +1307,7 @@ The Food, Drink, and Lodging table gives prices for individual food
 items and a single night's lodging. These prices are included in your
 total lifestyle expenses.
 
-#dndtab("Food, Drink, and Lodging", columns: (4fr, 1fr),
+#dndtab("Food, Drink, and Lodging", columns: (4fr, 1fr), align: left,
 "Item","Cost",
 "Ale, Gallon","2 sp",
 "Ale, Mug","4 cp",
@@ -1407,7 +1368,7 @@ particular skill and can include laborers, porters, maids, and similar
 workers. They generally will not accompany a party into especially
 dangerous situations
 
-#dndtab("Services", columns: (2fr, 3fr),
+#dndtab("Services", columns: (2fr, 3fr), align: left,
 "Service","Pay",
 [*Coach cab*], "",
 "---Between towns","3 cp per mile",
@@ -1478,7 +1439,7 @@ To craft magic items, you need a few things.
 - Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
 ]
 
-#dndtab("Crafting Costs", columns: (2fr, 1fr, 1fr),
+#dndtab("Crafting Costs", columns: (2fr, 1fr, 1fr), align:left,
 "Tier","Proficiency","Cost Range (gp)",
 "Journeyman","+2","50-150",
 "Adventurer","+3","300-2000",
@@ -1535,7 +1496,7 @@ You have resistance to all damage while you wear this armor. Additionally, you c
 _Armor (any), Hero (requires attunement)_
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.
-#dndtab("Energy Type", columns: (1fr, 2fr, 1fr, 1fr, 2fr),
+#dndtab("Energy Type", columns: (1fr, 2fr, 1fr, 1fr, 2fr), align: left,
 "d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
@@ -1560,7 +1521,7 @@ While wearing this belt, your Strength score changes to a score granted by the b
 
 Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect.
 
-#dndtab("", columns: (2fr, 1fr, 2fr),
+#dndtab("", columns: (2fr, 1fr, 2fr), align: left,
 "Type","Strength","Tier",
 "Hill giant","+5","Hero",
 "Stone/frost giant","+6","Hero",
@@ -1884,7 +1845,7 @@ When you use an action to throw a handful of the dust into the air, you and each
 _Consumable, Hero_
 
 This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.
-#dndtab("", columns: (1fr, 5fr),
+#dndtab("", columns: (2fr, 5fr),
 "d100", "Effect", 
 "01 - 10", "The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.", 
 "11 - 90", "The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.",
@@ -1898,7 +1859,7 @@ _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-#dndtab("", columns: (1fr, 1fr),
+#dndtab("", columns: (1fr, 1fr), align: left,
 "Gem","Summoned Elemental",
 "Blue sapphire","Air elemental",
 "Yellow diamond","Earth elemental",
@@ -1910,7 +1871,7 @@ This gem contains a mote of elemental energy. When you use an action to break th
 _Consumable, Hero_
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.
-#dndtab("", columns: (1fr, 2fr, 0.5fr, 1fr, 2fr),
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
 "d100","Feather Token","","d100","Feather Token",
 "01 - 20","Anchor","","51 - 65","Swan boat",
 "21 - 35","Bird","","66 - 90","Tree",
@@ -1998,7 +1959,7 @@ _Potion, tier varies_
 
 When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.
 
-#dndtab("", columns: (2fr, 1fr, 2fr),
+#dndtab("", columns: (2fr, 1fr, 2fr), align: left,
 "Type","Strength","Tier",
 "Hill giant","+5","Adventurer",
 "Stone/frost giant","+6","Hero",
@@ -2016,7 +1977,7 @@ When you drink this potion, you gain the “enlarge” effect of the enlarge-red
 _Potion, tier varies_ 
 
 You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.
-#dndtab("", columns: (2fr, 2fr, 2fr, 1fr, 1fr),
+#dndtab("", columns: (2fr, 2fr, 2fr, 1fr, 1fr), align: left,
 "Potion of …","Tier","HP Regained","Cost (gp)","Crafting Time",
 "Healing","Journeyman","2d4 + 2","25","4 hrs",
 "Greater healing","Adventurer","4d4 + 4","125","2 days",
@@ -2047,7 +2008,7 @@ When you drink this potion, you gain the effect of the #safe-link("detect-though
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.
-#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr), align: left,
 "d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
@@ -2092,14 +2053,12 @@ A spell scroll (or stone, the only difference being the appropriate tool profici
 If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.
 
 The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.
-#wide[#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+#wide[#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Aether Cost","Tier","Save DC","Attack Bonus","Cost","Proficiency",
-"0","Journeyman","13","+5","50","+2",
-"2","Journeyman","13","+5","50","+2",
-"3","Adventurer","13","+5","150","+3",
-"5","Adventurer","15","+7","300","+3",
-"8","Hero","15","+7","1500","+5",
-"12","Hero","17","+9","3000","+5",
+"0-2","Journeyman","13","+5","50","+2",
+"3-7","Adventurer","13","+5","150","+3",
+"8-11","Hero","15","+7","1500","+5",
+"12-16","Hero","17","+9","3000","+5",
 "Legendary","Legendary","18","+10","---","---",
 )]
 
@@ -3002,8 +2961,8 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 
 *Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 #sym.times the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
 
-#dndtab("", 
-"Distance from Origin","Damage",
+#dndtab("Retributive Strike", 
+"Distance from Origin","Damage", columns: (1fr, 3fr), align: left,
 "10 ft. away or closer",[8 #sym.times the number of charges in the staff],
 "11 to 20 ft. away",[6 #sym.times the  number of charges in the staff],
 "21 to 30 ft. away",[4 #sym.times the number of charges in the staff],
@@ -3645,7 +3604,7 @@ Legendary effects are those whose power is too great to learn or cast as a norma
 
 === Conversion from 5e spells
 These are starting points. Unlike fixed spell levels, spells can have any integer base aether cost. And some spells will end up moving up or down a category.
-#dndtab("", columns: 1fr,
+#dndtab("", columns: (1fr, 1fr),
 "Spell level (5e)","Starting Aether Cost",
 "1","2",
 "2","3",
@@ -3658,7 +3617,7 @@ These are starting points. Unlike fixed spell levels, spells can have any intege
 === Starting values for total aether and aether limit <starting-values-for-total-aether-and-aether-limit>
 Starting points. Note that everyone gets aether. "Martial" is those who don't explicitly have a Spellcasting trait.
 
-#dndtab("", columns: 1fr, 
+#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1.5fr), 
 "Level","Full","Half","Martial","Limit (F/H/M)",
 "1","4","2","1","2/1/1",
 "2","8","4","1","3/2/1",
@@ -3702,11 +3661,11 @@ Generally, monsters have the lowest Dexterity and Intelligence saving throw modi
   #dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 4fr),
 "Save","Weak","Regular","Strong","Notes",
 "WIS","shaken","frightened","broken","Broken should rarely apply to PCs.",
-"STR","grappled","restrained","petrified","Petrified should require multiple failed saves. Prone can work as a weak version where appropriate.",
-"CON","staggered","stunned","paralyzed","Be very careful with paralyzed.",
-"CHA","","---","charmed","Dominated","Dominated isn't a condition, but...",
-"CON/WIS","","---","incapacitated","unconscious",
-"CON","","---","poisoned","exhaustion",  
+"STR","grappled/prone","restrained","petrified","Petrified should require multiple failed saves.",
+"CON","staggered","stunned","paralyzed","Be very careful with paralyzed. The extra crits are nasty.",
+"CHA","---","charmed","Dominated","Dominated isn't a condition, but...",
+"CON/WIS","---","incapacitated","unconscious", "Usually caused by some other condition",
+"CON","---","poisoned","exhaustion", ""
   )
 ]
 #pagebreak()
@@ -4451,8 +4410,8 @@ This spell assaults and twists creatures' minds, spawning delusions and provokin
 
 An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
 
-#dndtab("Confusion",
-"d10","*Behavior",
+#dndtab("",
+"d10","Behavior",
 "1","The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.",
 "2-6","The creature doesn't move or take actions this turn.",
 "7-8","The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.",

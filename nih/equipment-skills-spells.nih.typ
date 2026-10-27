@@ -15,6 +15,7 @@
 ] else [
   #pagebreak()
 ]
+#set page(margin: (top: 15mm))
 
 = Equipment <equipment>
 
@@ -97,7 +98,7 @@ Many people conduct transactions through barter.
 Like gems and art objects, trade goods---bars of iron, bags of salt,
 livestock, and so on---retain their full value in the market and can be
 used as currency.
-#pagebreak()
+
 = Armor <armor>
 
 Quartus is a vast tapestry made up of many different cultures, each with
@@ -235,7 +236,7 @@ Plate (also called "plate mail", despite that being a misnomer) consists of shap
 sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
 
 #wide[
-  #dndtab("Armor", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  #dndtab("Armor", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr), align: left,
   "Armor","Cost","Armor Class (AC)","Strength","Stealth","Weight",
   [*Light Armor*],"","","","","",
   "Leather","10 gp","11 + DEX","---","---","10 lb.",
@@ -313,7 +314,7 @@ When skinned carefully and properly tanned, exotic leathers and hides can be mad
 
 === Mythril <mythril>
 Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
-#pagebreak()
+
 = Weapons <weapons>
 
 Your class grants proficiency in certain weapons, reflecting both the
@@ -535,6 +536,59 @@ target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
 
+#wide[
+#dndtab("Weapons", columns: (1.5fr, 1fr, 1.5fr, 0.75fr, 3fr), breakable: true, align: left,
+"Name","Cost","Damage","Weight","Properties",
+table.cell(colspan: 5)[*Simple Melee Weapons*],
+"Club","1 sp","1d4 bludgeoning","2 lb.","Light",
+"Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
+"Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
+"Handaxe","5 gp","1d6 slashing","2 lb.","Light, thrown (range 20/60)",
+"Javelin","5 sp","1d6 piercing","2 lb.","Thrown (range 30/120)",
+"Light hammer","2 gp","1d4 bludgeoning","2 lb.","Light, thrown (range 20/60)",
+"Mace","5 gp","1d6 bludgeoning","2 lb.","Battering",
+"Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
+"Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
+"Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
+table.cell(colspan: 5)[*Simple Ranged Weapons*],
+"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
+"Alchemist's Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
+"Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
+"Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
+"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
+"Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
+"Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
+)
+]
+#pagebreak()
+#wide[
+#dndtab("Weapons (cont)", columns: (1.5fr, 1fr, 1.5fr, 0.75fr, 3fr), align: left,
+"Name","Cost","Damage","Weight","Properties",
+table.cell(colspan: 5)[*Martial Melee Weapons*],
+"Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
+"Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
+"Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
+"Greatsword","50 gp","1d12 slashing","6 lb.","Heavy, parrying, two-handed",
+"Halberd","20 gp","1d10 slashing","6 lb.","Heavy, parrying, reach, two-handed",
+"Lance","10 gp","1d12 piercing","6 lb.","Reach, special",
+"Longsword","15 gp","1d8 slashing or piercing","3 lb.","Cleaving, Parrying",
+"Maul","10 gp","1d12 bludgeoning","10 lb.","Battering, heavy, two-handed",
+"Morningstar","15 gp","1d10 piercing","4 lb.","Battering",
+"Pike","5 gp","1d10","18 lb.","Heavy, precise, reach, two-handed",
+"Rapier","25 gp","1d8 piercing","2 lb.","Precise",
+"Scimitar","15 gp","1d6 slashing","3 lb.","Cleaving, light",
+"Shortsword","10 gp","1d6 piercing","2 lb.","Light, precise",
+"War pick","5 gp","1d10 piercing","2 lb.","Precise",
+"Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
+"Whip","2gp","1d4 slashing","3 lb.","Reach, special",
+table.cell(colspan: 5)[*Martial Ranged Weapons*],
+"Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
+"Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
+"Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
+"Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
+)
+]
+
 === Blowgun <blowgun>
 
 These needles don't do much damage by themselves but make excellent
@@ -569,57 +623,13 @@ While wielding a whip, you have advantage on ability checks made to push
 someone prone (ie trip them) and when you do so, you can choose to pull
 them 5 ft closer to you as part of that same attack.
 
-#dndtab("Weapons", columns: (1.5fr, 1fr, 2fr, 1fr, 3fr), 
-"Name","Cost","Damage","Weight","Properties",
-[*Simple Melee Weapons*],"","","",
-"Club","1 sp","1d4 bludgeoning","2 lb.","Light",
-"Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
-"Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
-"Handaxe","5 gp","1d6 slashing","2 lb.","Light, thrown (range 20/60)",
-"Javelin","5 sp","1d6 piercing","2 lb.","Thrown (range 30/120)",
-"Light hammer","2 gp","1d4 bludgeoning","2 lb.","Light, thrown (range 20/60)",
-"Mace","5 gp","1d6 bludgeoning","2 lb.","Battering",
-"Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
-"Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
-"Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
-[*Simple Ranged Weapons*],"","","",
-"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
-"Alchemist's Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
-"Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
-"Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
-"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
-"Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
-"Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
-[*Martial Melee Weapons*],"","","",
-"Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
-"Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
-"Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
-"Greatsword","50 gp","1d12 slashing","6 lb.","Heavy, parrying, two-handed",
-"Halberd","20 gp","1d10 slashing","6 lb.","Heavy, parrying, reach, two-handed",
-"Lance","10 gp","1d12 piercing","6 lb.","Reach, special",
-"Longsword","15 gp","1d8 slashing or piercing","3 lb.","Cleaving, Parrying",
-"Maul","10 gp","1d12 bludgeoning","10 lb.","Battering, heavy, two-handed",
-"Morningstar","15 gp","1d10 piercing","4 lb.","Battering",
-"Pike","5 gp","1d10","18 lb.","Heavy, precise, reach, two-handed",
-"Rapier","25 gp","1d8 piercing","2 lb.","Precise",
-"Scimitar","15 gp","1d6 slashing","3 lb.","Cleaving, light",
-"Shortsword","10 gp","1d6 piercing","2 lb.","Light, precise",
-"War pick","5 gp","1d10 piercing","2 lb.","Precise",
-"Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
-"Whip","2gp","1d4 slashing","3 lb.","Reach, special",
-[*Martial Ranged Weapons*],"","","",
-"Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
-"Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
-"Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
-"Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
-)
-
 == Adventuring Gear <adventuring-gear>
 
 This section describes items that have special rules or require further
-explanation.
+explanation. Each item has a cost associated with it---either a specific price (rarely) or a relative price (cheap, moderate, or expensive). Under most circumstances, cheap items are readily available in most places and cost less than a gold piece, while moderate cost items are generally only available in large towns and cities and cost tens of gold. Expensive items are only available in specialized shops, usually in large cities only, and cost hundreds of gold pieces.
 
 === Arcane Focus <arcane-focus>
+_Cost: Moderate_
 
 An arcane focus is a special item---an orb, a crystal, a rod, a
 specially constructed staff, a wand-like length of wood, or some similar
@@ -627,20 +637,28 @@ item--- designed to channel the power of arcane spells. An arcanist can
 use such an item as a spellcasting focus.
 
 === Ball Bearings <ball-bearings>
+_Cost: Moderate_
 
 As an action, you can spill these tiny metal balls from their pouch to
-cover a level, square area that is 10 feet on a side. A creature moving
+cover a level, square area that is 10 feet on a side. A Medium or smaller creature moving
 across the covered area must succeed on a DC 10 Dexterity saving throw
-or fall prone. A creature moving through the area at half speed doesn't
-need to make the save.
+or fall prone. A creature who treats the affected area as difficult terrain (consuming 10 feet of movement to cross the 5 foot space) doesn't
+need to make the save; neither does a Large or larger creature.
+
+=== Bedroll
+_Cost: Cheap_
+
+A bedroll consists of blankets and other padding, plus the ties and covers to keep them secure on the road. You cannot regain hit dice during a long rest unless you are sleeping on a bedroll or the equivalent.
 
 === Block and Tackle <block-and-tackle>
+_Cost: Moderate_
 
 A set of pulleys with a cable threaded through them and a hook to attach
 to objects, a block and tackle allows you to hoist up to four times the
 weight you can normally lift.
 
 === Book <book>
+_Cost: Expensive_
 
 A book might contain poetry, historical accounts, information pertaining
 to a particular field of lore, diagrams and notes on gnomish
@@ -648,34 +666,35 @@ contraptions, or just about anything else that can be represented using
 text or pictures.
 
 === Caltrops <caltrops>
+_Cost: Expensive_
 
 As an action, you can spread a bag of caltrops to cover a square area
 that is 5 feet on a side. Any creature that enters the area must succeed
 on a DC 15 Dexterity saving throw or stop moving this turn and take 1
 piercing damage. Taking this damage reduces the creature's walking speed
-by 10 feet until the creature regains at least 1 hit point. A creature
-moving through the area at half speed doesn't need to make the save.
+by 10 feet until the creature regains at least 1 hit point. A Medium or smaller creature
+who treats the affected area as difficult terrain (consuming 10 feet of movement to cross the 5 foot space) doesn't need to make the save. 
 
 === Candle <candle>
+_Cost: Cheap_
 
 For 1 hour, a candle sheds bright light in a 5-foot radius and dim light
 for an additional 5 feet.
 
-=== Case, Crossbow Bolt <case--crossbow-bolt>
-
-This wooden case can hold up to twenty crossbow bolts.
-
 === Case, Map or Scroll <case--map-or-scroll>
+_Cost: Cheap_
 
 This cylindrical leather case can hold up to ten rolled-up sheets of
-paper or five rolled-up sheets of parchment.
+paper or five rolled-up sheets of parchment. Without such a case, documents are at risk of being damaged by weather, immersion, or other accidents.
 
 === Chain <chain>
+_Cost: Expensive_
 
 A chain has 10 hit points. It can be burst with a successful DC 20
-Strength check.
+Strength check. It can be used to restrain a Large or smaller creature; tying someone up imposes the #safe-link("restrained", "restrained") condition and requires an action. If the target isn't incapacitated, they can resist and make a Strength (Athletics) check opposed by your Dexterity (Sleight of Hand) check, negating the attempt on a success.
 
 === Climber's Kit <climber-s-kit>
+_Cost: Expensive_
 
 A climber's kit includes special pitons, boot tips, gloves, and a
 harness. You can use the climber's kit as an action to anchor yourself;
@@ -683,7 +702,10 @@ when you do, you can't fall more than 25 feet from the point where you
 anchored yourself, and you can't climb more than 25 feet away from that
 point without undoing the anchor.
 
+Alternatively, you can use it and expend your rope as an action to leave anchors and rope for other climbers. Anyone climbing by means of a rope left in such a manner makes any necessary checks at advantage and twice as fast as normal.
+
 === Component Pouch <component-pouch>
+_Cost: 50 gp_
 
 A component pouch is a small, watertight leather belt pouch that has
 compartments to hold all the material components and other special items
@@ -691,16 +713,19 @@ you need to cast your spells, except for those components that have a
 specific cost (as indicated in a spell's description).
 
 === Crowbar <crowbar>
+_Cost: Cheap_
 
 Using a crowbar grants advantage to Strength checks where the crowbar's
 leverage can be applied.
 
 === Fishing Tackle <fishing-tackle>
+_Cost: Moderate_
 
 This kit includes a wooden rod, silken line, corkwood bobbers, steel
-hooks, lead sinkers, velvet lures, and narrow netting.
+hooks, lead sinkers, velvet lures, and narrow netting. With one of these and access to fish-bearing waters, a person can catch enough fish to feed themselves for a day with a DC 13 Dexterity (Perception) check. Otherwise, the difficulty of the task is entirely up to the GM.
 
 === Healer's Kit <healer-s-kit>
+_Cost: Moderate_
 
 This kit is a leather pouch containing bandages, salves, and splints.
 The kit has ten uses. As an action, you can expend one use of the kit to
@@ -708,6 +733,7 @@ stabilize a creature that has 0 hit points, without needing to make a
 Wisdom (Medicine) check.
 
 === Holy Symbol <holy-symbol>
+_Cost: Cheap_
 
 A holy symbol is a representation of a god or pantheon. It might be an
 amulet depicting a symbol representing a deity, the same symbol
@@ -716,6 +742,7 @@ holding a fragment of a sacred relic. To use the symbol as a focus, the
 caster must hold it in hand, wear it visibly, or bear it on a shield.
 
 === Hunting Trap <hunting-trap>
+_Cost: Moderate_
 
 When you use your action to set it, this trap forms a saw-toothed steel
 ring that snaps shut when a creature steps on a pressure plate in the
@@ -730,18 +757,21 @@ success. Each failed check deals 1 piercing damage to the trapped
 creature.
 
 === Lamp <lamp>
+_Cost: Cheap_
 
 A lamp casts bright light in a 15-foot radius and dim light for an
 additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint)
 of oil.
 
 === Lantern, Bullseye <lantern--bullseye>
+_Cost: Moderate_
 
 A bullseye lantern casts bright light in a 60-foot cone and dim light
 for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1
 pint) of oil.
 
 === Lantern, Hooded <lantern--hooded>
+_Cost: Moderate_
 
 A hooded lantern casts bright light in a 30-foot radius and dim light
 for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1
@@ -749,6 +779,7 @@ pint) of oil. As an action, you can lower the hood, reducing the light
 to dim light in a 5-foot radius.
 
 === Lock <lock>
+_Cost: Varies by quality_
 
 A key is provided with the lock. Without the key, a creature proficient
 with thieves' tools can pick this lock with a successful DC 15 Dexterity
@@ -756,6 +787,7 @@ check. Your GM may decide that better locks are available for higher
 prices.
 
 === Magnifying Glass <magnifying-glass>
+_Cost: Expensive_
 
 This lens allows a closer look at small objects. It is also useful as a
 substitute for flint and steel when starting fires. Lighting a fire with
@@ -765,21 +797,17 @@ glass grants advantage on any ability check made to appraise or inspect
 an item that is small or highly detailed.
 
 === Manacles <manacles>
+_Cost: Moderate_
 
 These metal restraints can bind a Small or Medium creature. Escaping the
 manacles requires a successful DC 20 Dexterity check. Breaking them
 requires a successful DC 20 Strength check. Each set of manacles comes
 with one key. Without the key, a creature proficient with thieves' tools
-can pick the manacles' lock with a successful DC 15 Dexterity check.
+can use them to pick the manacles' lock with a successful DC 15 Dexterity check.
 Manacles have 15 hit points.
 
-=== Mess Kit <mess-kit>
-
-This tin box contains a cup and simple cutlery. The box clamps together,
-and one side can be used as a cooking pan and the other as a plate or
-shallow bowl.
-
 === Net <net>
+_Cost: Moderate_
 
 As an action, throw the net at a creature within 15 ft. The target must
 make a Dexterity saving throw with a DC of 8 + your Strength modifier
@@ -792,6 +820,7 @@ slashing damage to the net (AC 10) also frees the creature without
 harming it, ending the effect and destroying the net.
 
 === Oil <oil>
+_Cost: Cheap_
 
 Oil usually comes in a clay flask that holds 1 pint. As an action, you
 can splash the oil in this flask onto a creature within 5 feet of you or
@@ -806,6 +835,7 @@ damage to any creature that enters the area or ends its turn in the
 area. A creature can take this damage only once per turn.
 
 === Poison, Basic <poison--basic>
+_Cost: Moderate_
 
 You can use the poison in this vial to coat one slashing or piercing
 weapon or up to three pieces of ammunition. Applying the poison takes an
@@ -813,39 +843,33 @@ action. A creature hit by the poisoned weapon or ammunition takes an additional 
 the poison retains potency for 1 minute before drying.
 
 === Potion of Healing
+_Cost: 50 gp_
 
-A character who drinks the magical red fluid in this vial regains 2d4 +
-2 hit points. Drinking a potion takes a bonus action; administering it
-to another takes an action.
+A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking a potion takes a bonus action; administering it to another takes an action.
 
-=== Pouch <pouch>
+=== Quiver, Ammunition Pouch, Crossbow Bolt Case <quiver>
+_Cost: Cheap_
 
-A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun
-needles, among other things. A compartmentalized pouch for holding spell
-components is called a component pouch (described earlier in this
-section).
-
-=== Quiver <quiver>
-
-A quiver can hold up to 20 arrows.
+A quiver can hold up to 20 arrows, an ammunition pouch can hold 20 sling bullets or 50 blowgun darts, and a bolt case can hold up to 20 bolts. Without a quiver or other ammunition case, it takes a bonus action to reload a weapon with the Ammunition property from loose ammunition.
 
 === Ram, Portable <ram--portable>
+_Cost: Expensive_
 
-You can use a portable ram to break down doors. When doing so, you gain
-a +4 bonus on the Strength check. One other character can help you use
-the ram, giving you advantage on this check.
+You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.
 
 === Rations <rations>
+_Cost: Cheap:_
 
-Rations consist of dry foods suitable for extended travel, including
-jerky, dried fruit, hardtack, and nuts.
+Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts. Under normal conditions, a Medium creature must eat 1 lb of rations or other food and 1 gallon of water over the course of a day to benefit from a long rest. On the third, 6th, and every subsequent third day without sufficient food, you gain a level of exhaustion. These ranks can only be removed when you complete a long rest after eating enough food.
 
 === Rope <rope>
+_Cost: Moderate_
 
 Rope, whether made of hemp or silk, has 2 hit points and can be burst
-with a DC 17 Strength check.
+with a DC 17 Strength check. Tying someone up imposes the #safe-link("restrained", "restrained") condition and requires an action. If the target isn't incapacitated, they can resist and make a Strength (Athletics) check opposed by your Dexterity (Sleight of Hand) check, negating the attempt on a success. 
 
-=== Scale, Merchant's <scale--merchant-s>
+=== Scale, Merchant's <scale-merchant>
+_Cost: Expensive_
 
 A scale includes a small balance, pans, and a suitable assortment of
 weights up to 2 pounds. With it, you can measure the exact weight of
@@ -853,6 +877,7 @@ small objects, such as raw precious metals or trade goods, to help
 determine their worth.
 
 === Shamanic Focus <shamanic-focus>
+_Cost: Cheap_
 
 A shamanic focus might be a sprig of mistletoe or holly, a wand or
 scepter made of yew or another special wood, a staff drawn whole out of
@@ -861,69 +886,21 @@ teeth from sacred animals. A shaman can use such an object as a
 spellcasting focus.
 
 === Spyglass <spyglass>
+_Cost: Expensive_
 
-Objects viewed through a spyglass are magnified to twice their size, making them visible from further away (see Visibility in the core rules).
+Objects viewed through a spyglass are magnified to twice their size, making them visible from one step further away (see #safe-link("visibility", "Visibility") in the core rules).
 
 === Tent <tent>
+_Cost: Cheap_
 
-A simple and portable canvas shelter, a tent sleeps two and protects from the elements.
+A simple and portable canvas shelter, a tent sleeps two and protects from the elements. Without one, sleeping outside in inclement weather requires a DC 10 Constitution saving throw; on a failure, you do not gain the benefit of a long rest.
 
-#dndtab("Adventuring Items", breakable: true, columns: (2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 1fr),
-"Item","Cost","Weight","","Item","Cost","Weight",
-"Abacus","2 gp","2 lb.","","Hunting trap","5 gp","25 lb.",
-[*Ammunition*],"","","","Ink (1 ounce bottle)","10 gp","—",
-"---Arrows (20)","1 gp","1lb.","","Ink pen","2 cp","—",
-"---Blowgun needles (50)","1 gp","1 lb.","","Jug or pitcher","2 cp","4 lb.",
-"---Crossbow bolts (20)","1 gp","1½ lb.","","Ladder (10-foot)","1 sp","25 lb.",
-"---Sling bullets (20)","4 cp","1½ lb.","","Lamp","5 sp","1 lb.",
-"Antitoxin (vial)","50 gp","---","","Lantern, bullseye","10 gp","2 lb.",
-[*Arcane focus*],"","","","Lantern, hooded","5 gp","2 lb.",
-"---Crystal","10 gp","1 lb.","","Lock","10 gp","1 lb.",
-"---Orb","20 gp","3 lb.","","Magnifying glass","100 gp","—",
-"---Rod","10 gp","2 lb.","","Manacles","2 gp","6 lb.",
-"---Staff","5 gp","5 lb.","","Mess kit","2 sp","1 lb.",
-"---Wand","10 gp","1 lb.","","Mirror, steel","5 gp","1/2 lb.",
-"Backpack","2 gp","5 lb.","","Net","1gp","3 lb.",
-"Ball bearings (bag of 1,000)","1 gp","2 lb.","","Oil (flask)","1 sp","1 lb.",
-"Barrel","2 gp","70 lb.","","Paper (one sheet)","2 sp","—",
-"Basket","4 sp","2 lb.","","Parchment (one sheet)","1 sp","—",
-"Bedroll","1 gp","7 lb.","","Perfume (vial)","5 gp","—",
-"Bell","1 gp","---","","Pick, miner's","2 gp","10 lb.",
-"Blanket","5 sp","3 lb.","","Piton","5 cp","1/4 lb.",
-"Block and tackle","1 gp","5 lb.","","Poison, basic (vial)","100 gp","—",
-"Book","25 gp","5 lb.","","Pole (10-foot)","5 cp","7 lb.",
-"Bottle, glass","2 gp","2 lb.","","Pot, iron","2 gp","10 lb.",
-"Bucket","5 cp","2 lb.","","Potion of healing","50 gp","1/2 lb.",
-"Caltrops (bag of 20)","1 gp","2 lb.","","Pouch","5 sp","1 lb.",
-"Candle","1 cp","---","","Quiver","1 gp","1 lb.",
-"Case, crossbow bolt","1 gp","1 lb.","","Ram, portable","4 gp","35 lb.",
-"Case, map or scroll","1 gp","1 lb.","","Rations (1 day)","5 sp","2 lb.",
-"Chain (10 feet)","5 gp","10 lb.","","Robes","1 gp","4 lb.",
-"Chalk (1 piece)","1 cp","---","","Rope, hempen (50 feet)","1 gp","10 lb.",
-"Chest","5 gp","25 lb.","","Rope, silk (50 feet)","10 gp","5 lb.",
-"Climber's kit","25 gp","12 lb.","","Sack","1 cp","1/2 lb.",
-"Clothes, common","5 sp","3 lb.","","Scale, merchant's","5 gp","3 lb.",
-"Clothes, costume","5 gp","4 lb.","","Sealing wax","5 sp","—",
-"Clothes, fine","15 gp","6 lb.","",[*Shamanic focus*],"",
-"Clothes, traveler's","2 gp","4 lb.","","---Sprig of mistletoe","1 gp","—",
-"Clothes, winter","15 gp","6 lb.","","---Totem","1 gp","—",
-"Component pouch","25 gp","2 lb.","","---Wooden staff","5 gp","4 lb.",
-"Crowbar","2 gp","5 lb.","","---Yew wand","10 gp","1 lb.",
-"Fishing tackle","1 gp","4 lb.","","Shovel","2 gp","5 lb.",
-"Flask or tankard","2 cp","1 lb.","","Signal whistle","5 cp","—",
-"Grappling hook","2 gp","4 lb.","","Signet ring","5 gp","—",
-"Hammer","1 gp","3 lb.","","Soap","2 cp","—",
-"Hammer, sledge","2 gp","10 lb.","","Spikes, iron (10)","1 gp","5 lb.",
-"Healer's kit","5 gp","3 lb.","","Spyglass","1,000 gp","1 lb.",
-[*Holy symbol*],"","","","Tent, two-person","2 gp","20 lb.",
-"---Amulet","5 gp","1 lb.","","Tinderbox","5 sp","1 lb.",
-"---Emblem","5 gp","---","","Torch","1 cp","1 lb.",
-"---Reliquary","5 gp","2 lb.","","Vial","1 gp","—",
-"Holy water (flask)","25 gp","1 lb.","","Waterskin","2 sp","5 lb. (full)",
-"Hourglass","25 gp","1 lb.","","Whetstone","1 cp","1 lb.",
-)
+#breakoutbox("Where's the Adventuring Items Table")[
+  I removed it. I've found it to be both restrictive (making it seem that only things on the table exist) and under-inclusive (not including normal things). It also forces a particular economy (fixed prices). Individual items with rules in the list have relative prices listed (high, medium or low). Remember that 1 GP is a substantial amount of money for most non-adventuring people.
+]
 
 === Tinderbox <tinderbox>
+_Cost: Cheap_
 
 This small container holds flint, fire steel, and tinder (usually dry
 cloth soaked in light oil) used to kindle a fire. Using it to light a
@@ -931,6 +908,7 @@ torch---or anything else with abundant, exposed fuel---takes an action.
 Lighting any other fire takes 1 minute.
 
 === Torch <torch>
+_Cost: Cheap_
 
 A torch burns for 1 hour, providing bright light in a 20-foot radius and
 dim light for an additional 20 feet. If you make a melee attack with a

@@ -810,8 +810,7 @@ Manacles have 15 hit points.
 _Cost: Moderate_
 
 As an action, throw the net at a creature within 15 ft. The target must
-make a Dexterity saving throw with a DC of 8 + your Strength modifier
-+ your proficiency bonus if you have proficiency in martial weapons. A creature
+make a Dexterity saving throw with a DC of 8 + your Strength modifier + your proficiency bonus if you have proficiency in martial weapons. A creature
 that fails the save is restrained until it is freed. A net has no effect
 on creatures that are formless, or creatures that are Huge or larger. A
 creature can use its action to make a DC 10 Strength check, freeing

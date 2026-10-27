@@ -101,19 +101,42 @@ used as currency.
 
 = Armor <armor>
 
-Quartus is a vast tapestry made up of many different cultures, each with
-its own technology level and historical development path. For this
-reason, adventurers have access to a variety of armor types, ranging
-from leather armor to chain mail to costly plate armor, with several
-other kinds of armor in between. The Armor table collects the most
-commonly available types of armor found in the game and separates them
-into three categories: light armor, medium armor, and heavy armor. Many
-warriors supplement their armor with a shield. Remember that you cannot
-cast spells while wearing armor unless you have a feature that
-specifically allows doing so.
+Quartus is a vast tapestry made up of many different cultures, each with its own technology level and historical development path. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. Remember that you cannot cast spells while wearing armor unless you have a feature that specifically allows doing so. Most forms of armor are commonly worn with a helmet of some kind, ranging from a simple boiled-leather cap to a full on bascinet, and this protection is included in the armor's rating, as are normal gloves and boots. Magical helms, boots, and gloves can replace those normally worn; they do not change the AC of the armor unless they specifically say they do.
 
-The Armor table shows the cost, weight, and other properties of the
-common types of armor worn by adventurers. Those types worn mostly by NPCs, such as various cloth armors and primitive hides, are omitted. Most forms of armor are commonly worn with a helmet of some kind, ranging from a simple boiled-leather cap to a full on bascinet, and this protection is included in the armor's rating, as are normal gloves and boots. Magical helms, boots, and gloves can replace those normally worn; they do not change the AC of the armor unless they specifically say they do.
+NIH takes a slightly abstracted view of the mechanics of armor; it does not have a list of specific armor types. Instead, it provides three categories and a set of properties within those categories. Each category (heavy, medium, and light), sets the base AC formula for armors of that type (including whether to add a contribution from your Dexterity modifier). Properties modify this number with tradeoffs such as imposing disadvantage on Dexterity (Stealth) or adding Strength requirements. Some properties mostly interact with other rules, such as the Metallic property, which allows certain modifications and disallows others, while changing how some spells (such as #safe-link("shocking-grasp", [_shocking grasp_])) affect the wearer.
+
+== Armor categories
+=== Heavy Armor
+Heavy armor is generally metallic in nature and covers the critical areas of the body with layered protection. It trades mobility for protection. Of all the armor types, it has the highest potential AC, but doesn't benefit by default from Dexterity. Wearers of heavy armor don't dodge blows as much as let them glance off the curved plates and surfaces of their armor. Heavy armor almost always includes an underlaying layer of padding (a gambeson), a helmet, heavy gloves or gauntlets, and leg protection in the form of greaves or heavy reinforced leather pants and boots or sabatons. These extras are sometimes integrated with the core protection, presenting a particularly hard-to-harm target. Without any modifications, heavy armor jingles and clanks, making stealth more difficult.
+
+Examples of heavy armor might include:
+- A full suit of chain, including a coif and chain gloves and boots.
+- A full suit of plate armor.
+- A suit of lamellar armor, such as what was worn by late-era samurai.
+
+*Base Armor Class (Heavy Armor).* Your AC while wearing heavy armor equals 14. You do not add any Dexterity modifier to your AC unless your armor is Masterwork.
+
+*Default Properties (Heavy Armor).* Heavy armor defaults to Metallic, Cumbersome (+2), and Loud.
+
+=== Light Armor
+Light armor isn't so much about deflecting blows as keeping incidental contact from opening your skin. It is made of heavy cloth, leather, and other reinforcements and rarely metal. Wearers rely on their evasion more than on their armor to avoid the worst of enemy attacks. It prioritizes freedom of movement over protection. As a result, the total armor class for wearers of light armor is lower than for heavy or medium armor and more investment into Dexterity is required. Light armor generally pairs with a leather helmet, light gloves, and boots.
+
+Examples of light armor might include:
+- A buff coat (heavy leather coat worn in the ____ era)
+- A padded cloth gambeson, worn alone.
+- Fantasy "leather" armor.
+
+*Base Armor Class (Light Armor).* Your AC while wearing light armor equals 11 + your Dexterity modifier (even if negative).
+
+*Default Properties (Light Armor).* Light armor has no default properties.
+
+=== Medium Armor
+Medium armor is a compromise between heavy and light armor. More protective than light armor with a smaller Dexterity investment for maximum results, but less so than heavy. Usually made of metal, it covers less than heavy armor (often just the torso, shoulders, and hips) and sometimes only covers the front of the body. Helmet, boots, gloves, etc. are present and heavier than light armor, but not integrated into the core and usually just reinforced leather or cloth.
+
+== Armor Properties
+The following is a complete list of the properties armor can have.
+=== 
+
 
 == Armor Proficiency
 
@@ -129,13 +152,7 @@ that involves Strength or Dexterity.
 Armor protects its wearer from attacks. The armor (and shield) you wear
 determines your base Armor Class.
 
-== Heavy Armor
 
-Heavier armor interferes with the wearer's ability to move quickly,
-stealthily, and freely. If the Armor table shows "Str +2" or "Str +3" in
-the Strength column for an armor type, the armor imposes disadvantage on
-attack rolls and Dexterity saving throws unless the wearer has a
-Strength score equal to or higher than the listed score.
 
 == Stealth
 

@@ -14,6 +14,7 @@
 ] else [
   #pagebreak()
 ]
+#set page(margin: (top: 15mm))
 
 = Character Creation <character-creation>
 
@@ -1286,8 +1287,8 @@ You can spend 1 STA to take the Guard action as a bonus action on your turn.
 == Step of the Wind <step-of-the-wind>
 
 You can spend 1 STA to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.
-
-#dndtab("The Brawler", columns: (1fr, 1fr, 1fr, 1fr, 3fr, 1fr, 1fr, 1fr),
+#wide[
+#dndtab("The Brawler", columns: (0.75fr, 0.75fr, 0.5fr, 0.75fr, 2fr, 1.5fr, 0.75fr, 1fr),
  "Level ", "Proficiency", "Die", "Movement", "Features", "Stamina", "Aether", "Aether Limit",
 "1st   ", "+2", "1d6", "-", "Unarmored Defense, Martial Arts", "1 + CON", "1", "1",
 "2nd   ", "+2", "1d6", "+10 ft.", "Conditioning, Unarmored Movement", "2 + CON + WIS", "1", "1",
@@ -1310,6 +1311,8 @@ You can spend 1 STA to take the Disengage or Dash action as a bonus action on yo
 "19th  ", "+6", "1d12", "+30 ft.", "Ability Score Improvement", "19 + CON + WIS", "10", "4",
 "20th  ", "+6", "1d12", "+30 ft.", "Perfect Self", "20 + CON + WIS", "10", "4"
 )
+]
+
 
 
 == Conditioning <conditioning>
@@ -1382,7 +1385,7 @@ Beginning at 18th level, you can use your action to spend 4 STA to become invisi
 == Perfect Self <perfect-self>
 
 At 20th level, if you are reduced to zero hit points, you can spend 8 STA as a reaction to instead heal to full health.
-#pagebreak()
+
 = Martial Traditions <brawler-martial-traditions>
 
 There are many traditions for those that fight with spirit and fists. All these traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a brawler need choose a tradition only upon reaching 3rd level.
@@ -1534,8 +1537,8 @@ Starting at 2nd level, you've learned additional ways to employ your abilities. 
 You gain additional Skill Tricks as shown in the Skill Tricks column of the Rogue table. When you reach 7th level, you can learn advanced skill tricks; at 11th level expert skill tricks; and 17th level master skill tricks. When you learn advanced, expert, or master skill tricks in this way, you do not have to meet any prerequisites.
 
 When you gain access to a new Skill Trick, you can also swap any Skill Trick you know for a new one you could otherwise learn at that point.
-
-#dndtab("The Rogue", columns: (1fr, 1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr),
+#wide[
+#dndtab("The Rogue", columns: (1fr, 1fr, 0.75fr, 3fr, 0.75fr, 1.5fr, 1fr, 1fr),
 "Level", "Proficiency", "Sneak Attack", "Features", "Skill Tricks", "Stamina", "Aether", "Aether Limit",
 "1st ", "+2", "1d6", "Expertise, Sneak Attack", "--", "1 + CON", "1", "1",
 "2nd ", "+2", "1d6", "Cunning Action, Skill Tricks", "1", "2 + CON", "1", "1",
@@ -1558,6 +1561,8 @@ When you gain access to a new Skill Trick, you can also swap any Skill Trick you
 "19th ", "+6", "10d6", "Ability Score Improvement", "9", "19 + CON", "10", "4",
 "20th ", "+6", "11d6", "Stroke of Luck", "9", "20 + CON", "10", "4",
 )
+]
+
 
 == Roguish Archetype <roguish-archetype>
 
@@ -1636,7 +1641,7 @@ At 13th level, you have become attuned to the stirrings of aether around you. Yo
 === Lethal Shot <lethal-shot>
 At 17th level, you have developed the ability to strike at the cords that bind a creature to life. By spending 8 STA and 5 AET, you can make a special Called Shot. If you hit with this attack, you score a critical hit and can apply Sneak Attack even if you normally would not qualify. Once you use this ability, you cannot do so again until you finish a long rest.
 
-In addition, if the target is bloodied, it must make a Constitution saving throw against a DC of 8 + your Dexterity modifier + your proficiency bonus. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or #safe-link("death-ward", [_death ward_])).
+In addition, if the target is bloodied, it must make a Constitution saving throw. On a failed save, it takes damage equal to the maximum damage roll (including any bonus damage such as Sneak Attack) instead of normal damage from this hit. Creatures reduced to zero hit points by this are instantly slain even if they had a feature that would prevent their death (such as Relentless Endurance or #safe-link("death-ward", [_death ward_])).
 
 == Shadowdancer <shadowdancer>
 
@@ -1690,7 +1695,7 @@ Starting at 6th level, you've become even better at providing distractions for o
 === Trick Attack <trick-attack>
 At 9th level, you learn to impose conditions on those that you hit with your Sneak Attacks. Each condition has a cost in either AET or STA, a saving throw necessary to apply the condition (or --- for those that are applied automatically by spending the resource), and a duration. Notation of Save Ends indicates that the target can re-attempt the saving throw at the end of their turns, ending the effect on a success. The DC for all of these saving throws is 8 + your proficiency bonus + your Dexterity modifier. If you have expertise in Sleight of Hand, the DC increases by half your proficiency bonus. You can only apply one condition each time you apply Sneak Attack.
 
-#dndtab("Trick Attack", columns: (2fr, 1fr, 1fr, 2fr),
+#dndtab("Trick Attack", columns: (1fr, 2fr, 1fr, 2fr),
 "Condition", "Cost", "Save", "Duration",
 "blinded ", "4 STA", "CON", "1 round",
 "broken ", "2 AET + 3 STA", "WIS", "Save Ends",
@@ -1698,7 +1703,7 @@ At 9th level, you learn to impose conditions on those that you hit with your Sne
 "deafened ", "2 STA", "CON", "1 round",
 "frightened ", "2 AET + 1 STA", "WIS", "1 round",
 "prone ", "2 STA", "STR", "---",
-"shaken ", "1 STA", "---", "1 round",
+"shaken ", "1 STA", "WIS", "1 round",
 "staggered ", "3 STA", "CON", "Save Ends",
 "stunned ", "2 AET + 2 STA", "CON", "1 round",
 "unconscious ", "2 AET + 8 STA", "CON", "Save Ends", 
@@ -1715,7 +1720,7 @@ Starting at 13th level, you've learned to mold your aether to mimic that of othe
 === Deceive the Universe <deceive-the-universe>
 Starting at 17, you can attempt to cast any spell or use any incantation (without needing the Ritual Scroll). Spend any combination of AET and STA equal to the base cost of the spell and make a Charisma (Deception) check against the DC listed in the table below. This attempt takes the same time as the regular casting time and any material components. On a success, the spell or incantation takes effect, using Charisma as the requisite spellcasting modifier where appropriate. Once you use this feature once, you incur 2 levels of exhaustion every time you use it again until you finish a long rest. You cannot apply your Stroke of Luck or Reliable Talent features to this roll.
 
-#dndtab("Deceive the Universe", columns: (3fr, 1fr), 
+#dndtab("Deceive the Universe", columns: (1fr, 1fr), align: left, 
 "Type", "DC",
 "Spell ", "12 + base cost",
 "Incantations ", "---",
@@ -1793,7 +1798,7 @@ While raging, you gain the following benefits if you aren't wearing heavy armor:
 
 Your rage lasts until the end of your next turn. If you take damage or make an attack while raging, your rage is extended for another turn. Additionally, you can sustain your rage for another turn with a bonus action on your turn.
 
-
+#wide[
 #dndtab("The Warden", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr), 
 "Level", "Proficiency", "Features", "Stamina", "Aether", "Aether Limit",
 "1st    ", "+2", "Exceptional Stamina, Furious Blow, Rage, Unarmored Defense", "1 + CON", "1", "1",
@@ -1817,7 +1822,7 @@ Your rage lasts until the end of your next turn. If you take damage or make an a
 "19th   ", "+6", "Ability Score Improvement", "19 + CON", "10", "4",
 "20th   ", "+6", "Primal Champion", "20 + CON", "10", "4",
 )
-
+]
 
 == Unarmored Defense <unarmored-defense>
 
@@ -1841,7 +1846,7 @@ At 3rd level, you choose a path that shapes the nature of your rage. Choose the 
 
 == Weapon Specialization <warden-weapon-specialization>
 
-Starting at 3rd level, you have trained particularly with a particular weapon property. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect. If an effect calls for a saving throw, the DC = 8 + your Strength modifier + your proficiency bonus.
+Starting at 3rd level, you have trained particularly with a particular weapon property. Choose one of the properties below; you gain the effect listed in addition to the property's normal effect.
 #flush-block[
 - *Battering.* Once per turn when you hit with a battering weapon, you can force the target to make a Strength saving throw. On a failed save, the target is knocked prone.
 - *Cleaving.* You can attempt to cleave even if you miss. If you do so, roll a new attack with the same modifiers and compare it to the new target's AC.
@@ -1901,7 +1906,7 @@ Beginning at 18th level, if an enemy within your reach attempts to cast a spell 
 == Primal Champion <primal-champion>
 
 At 20th level, you embody the power of the wilds. Your Strength and Constitution scores each increase by +2. Your maximum for those scores is now +7.
-#pagebreak()
+
 = Warden Paths <warden-paths>
 
 Different wardens interpret their calling and talents differently. These interpretations tend to coalesce around some similarities, often called Paths.
@@ -2057,7 +2062,7 @@ When a non-magical ability from this class requires a saving throw, the DC is gi
 The presence of strong astral and abyssal influence readily apparent to you. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you. Total cover does not block this, but you cannot sense a creature who is behind more than two feet of stone or earth or a thin sheet of lead. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow incantation.
 
 You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.
-
+#wide[
 #dndtab("The Oathbound", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr),
 "Level ", "Proficiency", "Features", "Spells Known", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Divine Sense, Lay on Hands", "---", "1", "2", "1",
@@ -2081,6 +2086,7 @@ You can use this feature a number of times equal to 1 + your Charisma modifier. 
 "19th", "+6", "Ability Score Improvement", "9", "19", "38", "13",
 "20th", "+6", "Sacred Oath feature", "10", "20", "40", "14",
 )
+]
 
 == Lay on Hands <lay-on-hands>
 
@@ -2367,7 +2373,7 @@ Beginning at 15th level, you are immune to being charmed. If you are bloodied, y
 === Executioner <executioner>
 
 At 20th level, as an action, you can attempt to execute an enemy. Choose a bloodied target you can see and expend 5 STA and 11 AET. If they are your Designated Target, you can teleport next to them as part of this action. Otherwise, the target must be within your reach. Make a melee weapon attack against them with a weapon you are wielding. If you hit, you deal radiant damage to them equal to the maximum critical damage roll with the weapon plus a maximized critical damage roll for your Divine Smite (as if you'd spent your aether limit on additional damage). If this is enough to reduce them to zero hit points, they die regardless of any regeneration, death saving throws, or other effects (such as Relentless Endurance or #safe-link("death-ward", [_death ward_]) effects). If you are bloodied, you regain hit points equal to one quarter of your maximum hit points.
-
+#pagebreak()
 == Oathbound Spell List <oathbound-spell-list>
 The Oathbound Spell List table contains a list of the spells available to all Oathbound, ordered by aether cost.
 
@@ -2493,7 +2499,7 @@ While traveling in your favored terrain, you gain the following benefits:
 Additionally, when you are in your favored terrain, creatures have disadvantage on attempts to hide from you and you have advantage on Wisdom (Perception) checks made to spot hidden creatures and objects.
 
 You choose additional favored terrain types at 6th and 10th level.
-
+#wide[
 #dndtab("The Ranger", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells Known", "Focused Foe Die", "Stamina", "Aether", "Aether Limit",
 "1st   ", "+2", "Focused Foe, Natural Explorer", "-", "d4", "1", "2", "1",
@@ -2517,6 +2523,8 @@ You choose additional favored terrain types at 6th and 10th level.
 "19th  ", "+6", "Ability Score Improvement", "11", "d8", "15", "38", "13",
 "20th  ", "+6", "Foe Slayer", "11", "d8", "15", "40", "14",
 )
+]
+
 
 == Nimble Strike <ranger-nimble-strike>
 
@@ -2846,7 +2854,7 @@ You can use a weapon as a spellcasting focus for your spellblade spells.
 === Armored Caster
 
 You can cast your spellblade spells while wearing light or medium armor.
-
+#wide[
 #dndtab("The Spellblade", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Spells", "Cantrips", "Skill Tricks", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Spellcasting, Arcane Manipulation (d6)", "1", "2", "---", "1", "2", "2",
@@ -2870,6 +2878,8 @@ You can cast your spellblade spells while wearing light or medium armor.
 "19th", "+6", "Ability Score Improvement", "10", "6", "6", "19", "38", "13",
 "20th", "+6", "Superior Inspiration", "10", "6", "6", "20", "40", "14",
 )
+]
+
 
 == Arcane Manipulation <arcane-manipulation>
 
@@ -3136,7 +3146,7 @@ Warlocks gain power by cheating. Unlike the arcanist who studies and meditates o
 
 Warlocks are a bit of an odd duck as classes go. They are the most flexible at build time, with options ranging from going all-in on spells (chosen from any list) to being a magical archer to being a sneaky wielder of darkness. Of all the classes, they are the only ones who can summon familiars. However, once built, they tend to focus on those few capabilities. Difficult to build, but easy to play (especially compared to an arcanist, for whom selecting the right spell at the right time is the difference between success and failure).
 
-#dndtab("Caster Summary", 
+#dndtab("Caster Summary", columns: (1fr, 1fr, 2fr),
  "Class", "Primary Ability Score", "Playstyle",
 "Arcanist ", "INT", "ranged control/damage",
 "Priest ", "WIS", "mid-range support",
@@ -3194,7 +3204,7 @@ You start with the following equipment, in addition to the equipment granted by 
 === Class DC
 Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
 
-#align(center)[DC = 8 + your Intelligence modifier + your proficiency bonus]
+#align(center)[*DC* = 8 + your Intelligence modifier + your proficiency bonus]
 
 == Spellcasting <arcanist-spellcasting>
 
@@ -3210,9 +3220,9 @@ The Arcanist table shows how much aether (AET) you have to cast your spells and 
 
 You have a certain number of arcanist spells fixed in mind (prepared for casting), choosing from the arcanist spell list. You can trade out any number of prepared spells for any other spells you can learn from that list when you finish a long rest. When you do so, the total number of spells prepared must be less than the number of arcanist spells shown on the Arcanist table for your level. To prepare a spell you must be able to cast it without exceeding your Aether Limit.
 
-
+#wide[
 #dndtab("The Arcanist", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-"Level", "Proficiency", "Features", "Cantrips", "Spells Known", "Stamina", "Aether", "*Aether Limit",
+"Level", "Proficiency", "Features", "Cantrips", "Spells Known", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Spellcasting, Arcane Approach", "4", "2", "1", "4", "2",
 "2nd", "+2", "Font of Magic", "4", "3", "1", "8", "3",
 "3rd", "+2", "Metamagic", "4", "4", "2", "12", "4",
@@ -3234,6 +3244,7 @@ You have a certain number of arcanist spells fixed in mind (prepared for casting
 "19th", "+6", "Ability Score Improvement, Extra Metamagic", "6", "15", "10", "76", "16",
 "20th", "+6", "Sorcerous Restoration", "6", "15", "10", "80", "17"
 )
+]
 
 === Spellcasting Ability
 
@@ -3604,7 +3615,7 @@ Wisdom is your spellcasting ability for your priest spells. The power of your sp
 === Ritual Casting
 
 You learn a Journeyman incantation (see #safe-link("incantations", "Incantations")) of your choice. When you reach 5th level, you learn an Adventurer incantation of your choice, and at 11th level you learn a Hero incantation of your choice. You can cast any incantation you learned from this feature without needing a Ritual Scroll in hand.
-
+#wide[
 #dndtab("The Priest", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Spells", "Miracles", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Spellcasting, Divine Domain", "3", "2", "-", "1", "4", "2",
@@ -3628,6 +3639,8 @@ You learn a Journeyman incantation (see #safe-link("incantations", "Incantations
 "19th", "+6", "Ability Score Improvement", "5", "15", "3", "10", "76", "16",
 "20th", "+6", "Supreme Miracles", "5", "15", "3", "10", "80", "17",
 )
+]
+
 
 === Spellcasting Focus
 
@@ -3984,7 +3997,7 @@ You can use a shamanic focus as a spellcasting focus for your shaman spells.
 === Armored Caster
 
 You can cast your shaman spells while wearing light or medium armor. Shields still inhibit your spellcasting.
-
+#wide[
 #dndtab("The Shaman", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Spells", "Stamina", "Aether", "Aether Limit",
 "1st   ", "+2", "Spellcasting", "2", "2", "1", "4", "2",
@@ -4008,6 +4021,8 @@ You can cast your shaman spells while wearing light or medium armor. Shields sti
 "19th  ", "+6", "Ability Score Improvement", "4", "20", "10", "76", "16",
 "20th  ", "+6", "Rebirth", "4", "20", "10", "80", "17",
 )
+]
+
 
 == Manifest Zones <manifest-zones>
 Shamans are ties between the planes. Their magic allows them to bring influences of the other planes into the Mortal, creating areas called Manifest Zones. Starting at level 2, you've learned to manifest the energy of one of the planes into your present one. As an action on your turn, you can manifest a zone you know at a point you can see within 60 ft. It persists for one minute or until you manifest another zone and affects an area of 10 ft in radius. Manifesting your zone requires spending 2 STA and 2 AET. Choose one of the following as your first known zone. You learn an additional zone at 5th, 9th and 15th level.
@@ -4346,7 +4361,7 @@ You start with the following equipment, in addition to the equipment granted by 
 === Class DC
 Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
 
-#align(center)[DC = 8 + your Charisma modifier + your proficiency bonus]
+#align(center)[*DC* = 8 + your Charisma modifier + your proficiency bonus]
 
 == Otherworldly Patron <otherworldly-patron>
 
@@ -4363,7 +4378,7 @@ You know two cantrips of your choice from any list. You learn additional warlock
 
 Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell or warlock ability refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one or with your Eldritch Blast.
 
-#align(center)[*Spell save DC* = 8 + your proficiency bonus + your Charisma modifier]
+#align(center)[*Spell save DC* = your class DC]
 
 #align(center)[*Spell attack modifier* = your proficiency bonus + your Charisma modifier]
 
@@ -4371,8 +4386,8 @@ Charisma is your spellcasting ability for your warlock spells, so you use your C
 
 You can cast any warlock spells you know while wearing light armor.
 
-
-#dndtab("The Warlock", columns: (1fr, 1fr, 3fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+#wide[
+#dndtab("The Warlock", columns: (0.75fr, 1fr, 3fr, 0.75fr, 0.75fr, 0.75fr, 1fr, 1fr, 0.75fr, 1fr),
 "Level", "Proficiency", "Features", "Cantrips", "Shapes", "Effects", "Invocations", "Stamina", "Aether", "Aether Limit",
 "1st", "+2", "Otherworldly Patron, Eldritch Blast", "2", "---", "---", "---", "1", "4", "2",
 "2nd", "+2", "Eldritch Invocations, Blast Effects", "2", "---", "1", "2", "1", "8", "3",
@@ -4395,6 +4410,8 @@ You can cast any warlock spells you know while wearing light armor.
 "19th", "+6", "Ability Score Improvement", "4", "5", "5", "11", "8", "76", "16",
 "20th", "+6", "Eldritch Master", "4", "5", "5", "11", "8", "80", "17",
 )
+]
+
 
 == Eldritch Blast <eldritch-blast>
 

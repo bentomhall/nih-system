@@ -114,17 +114,17 @@ Examples of heavy armor might include:
 - A full suit of plate armor.
 - A suit of lamellar armor, such as what was worn by late-era samurai.
 
-*Base Armor Class (Heavy Armor).* Your AC while wearing heavy armor equals 14. You do not add any Dexterity modifier to your AC unless your armor is Masterwork.
+*Base Armor Class (Heavy Armor).* Your AC while wearing heavy armor equals 16. You do not add any Dexterity modifier to your AC unless your armor is Masterwork.
 
-*Default Properties (Heavy Armor).* Heavy armor defaults to Metallic, Cumbersome (+2), and Loud.
+*Default Properties (Heavy Armor).* Heavy armor defaults to Metallic, Cumbersome (+1), and Loud.
 
 === Light Armor
 Light armor isn't so much about deflecting blows as keeping incidental contact from opening your skin. It is made of heavy cloth, leather, and other reinforcements and rarely metal. Wearers rely on their evasion more than on their armor to avoid the worst of enemy attacks. It prioritizes freedom of movement over protection. As a result, the total armor class for wearers of light armor is lower than for heavy or medium armor and more investment into Dexterity is required. Light armor generally pairs with a leather helmet, light gloves, and boots.
 
 Examples of light armor might include:
-- A buff coat (heavy leather coat worn in the ____ era)
+- A buff coat (heavy leather coat worn originally as an underlay for heavier armor but then alone once heavy armor declined)
 - A padded cloth gambeson, worn alone.
-- Fantasy "leather" armor.
+- Fantasy leather armor.
 
 *Base Armor Class (Light Armor).* Your AC while wearing light armor equals 11 + your Dexterity modifier (even if negative).
 
@@ -133,31 +133,43 @@ Examples of light armor might include:
 === Medium Armor
 Medium armor is a compromise between heavy and light armor. More protective than light armor with a smaller Dexterity investment for maximum results, but less so than heavy. Usually made of metal, it covers less than heavy armor (often just the torso, shoulders, and hips) and sometimes only covers the front of the body. Helmet, boots, gloves, etc. are present and heavier than light armor, but not integrated into the core and usually just reinforced leather or cloth.
 
+Examples of medium armor might include:
+- A Spanish conquistador's breastplate
+- A brigandine (small plates of metal sandwiched between and riveted to a cloth and leather coat)
+- A chain shirt, covering only the torso, shoulders, and hips. 
+
+*Base Armor Class (Medium Armor).* Your AC while wearing medium armor equals 14 + your Dexterity modifier (max +2).
+
+*Default Properties (Medium Armor).* Medium armor defaults to Metallic.
+
 == Armor Properties
-The following is a complete list of the properties armor can have.
-=== 
+The following is a complete list of the properties armor can have. Additional armor class provided by different properties does not stack.
+=== Cumbersome (+X)
+Cumbersome armor requires physical strength and training to maneuver in and especially fight and move in for long periods. If you wear Cumbersome armor and your Strength modifier is not at least equal to the value in parentheses, you make attack rolls and Dexterity saving throws and checks at disadvantage.
+
+If a type of armor does not have Cumbersome by default, adding Cumbersome with X = 1 or more increases the base armor class by 1. If it does have Cumbersome (+1) by default (ie heavy armor), increasing it to +2 or higher increases the base armor class by 1 per additional point of Strength required, with a maximum bonus of +2 for Cumbersome (+3). 
+
+=== Loud
+Loud armor jingles, rattles, or otherwise is hard to move stealthily in. You have disadvantage on Dexterity (Stealth) checks while wearing Loud armor.
+
+If a type of armor does not have Loud by default, adding Loud increases the base armor class by 1.
+=== Metallic
+Metallic armor is primarily made of plates or sheets of metal. This property has no intrinsic effects, but some spells (such as #safe-link("shocking-grasp", [_shocking grasp_]) or #safe-link("heat-metal", [_heat metal_])), monster features, and exotic materials treat Metallic armor differently than non-metallic armor.
 
 
 == Armor Proficiency
 
-Anyone can put on a suit of armor or strap a shield to an arm. Only
-those proficient in the armor's use know how to wear it effectively,
-however. Your class gives you proficiency with certain types of armor.
-If you wear armor or wield a shield that you lack proficiency with, you
-have disadvantage on any ability check, saving throw, or attack roll
-that involves Strength or Dexterity.
+Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor or wield a shield that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity.
 
 == Armor Class (AC)
 
 Armor protects its wearer from attacks. The armor (and shield) you wear
-determines your base Armor Class.
+determines your base Armor Class calculation. If you have a feature (such as Unarmored Defense) that provides an alternate calculation, you must pick and choose which one you use.
 
+== Price
+The more protective armors are more expensive. Armors made of exotic materials or masterwork armors are even more expensive and hard to acquire. Generally, light armor is Cheap (a few gold and available in most settlements), medium armor is Moderately Expensive (low hundreds of gold pieces and available only large towns and above), and heavy armor is Extremely Expensive (high hundreds to low thousands of gold pieces, available only in major cities).
 
-
-== Stealth
-
-If the Armor table shows "Disadvantage" in the Stealth column, the
-wearer has disadvantage on Dexterity (Stealth) checks.
+Masterwork armor costs at least twice as much as the base armor and generally requires a specialized crafter. Exotic materials require providing the materials, finding a specialized crafter, and increase the cost by a variable amount depending on the material.
 
 == Shields
 
@@ -167,108 +179,25 @@ shield at a time. You can grasp an item in the same hand, but you cannot
 effectively wield a weapon or cast a spell with the hand that is
 occupied.
 
-== Light Armor
-
-Made from supple and thin materials, light armor favors agile
-adventurers since it offers some protection without sacrificing
-mobility. If you wear light armor, you add your Dexterity modifier to
-the base number from your armor type to determine your Armor Class.
-
-=== Leather <leather>
-
-The breastplate and shoulder protectors of this armor are made of
-leather that has been stiffened by being boiled in oil. The remainder is either supple leather or cloth. It only covers
-the vitals and rarely has a back-plate.
-
-=== Reinforced Leather <reinforced-leather>
-
-Reinforced leather armor is a regular leather suit of armor that has
-been reinforced with metal, wood, or bone plates in a few critical areas. It
-still only covers the upper body and shoulders, and is much less reinforced than a brigandine, while simultaneously restricting movement less.
-
-== Medium Armor
-
-Medium armor offers more protection than light armor, but it also
-impairs movement more. If you wear medium armor, you add your Dexterity
-modifier, to a maximum of +2, to the base number from your armor type to
-determine your Armor Class.
-
-=== Chain Shirt <chain-shirt>
-
-Made of interlocking metal rings, a chain shirt is worn between layers
-of clothing or leather. This armor offers modest protection to the
-wearer's upper body and allows the sound of the rings rubbing against
-one another to be muffled by outer layers.
-
-=== Brigandine <brigandine>
-
-Also called a coat-of-plates, this armor consists of a heavy cloth cover
-with small plates riveted between the layers, much like a heavier
-version of Reinforced Leather. It may cover the upper arms, but is often
-in the form of a vest. It is often worn with protective leg coverings of cloth and leather.
-
-=== Breastplate <breastplate>
-
-This armor consists of a fitted metal chest piece worn with chain
-tassets (covering the hips and upper thighs) and fauds (covering the
-shoulders). Although it leaves the legs and arms relatively unprotected (other than any separate leggings, greaves, or gloves worn),
-this armor provides good protection for the wearer's vital organs while
-leaving the wearer relatively unencumbered.
-
-== Heavy Armor
-
-Of all the armor categories, heavy armor offers the best protection.
-These suits of armor cover the torso and include at least tassets and fauds and
-often include integrated arm, hand, leg, head, and foot protection and
-are designed to stop a wide range of attacks. Only proficient warriors
-can manage their weight and bulk.
-
-Heavy armor doesn't let you add your Dexterity modifier to your Armor
-Class (unless masterwork), but it also doesn't penalize you if your
-Dexterity modifier is negative.
-
-=== Lamellar armor <lamellar-armor>
-
-This armor is made of metal (usually, although bone and wood can also be
-used) strips or plates held together by leather cords. Separate arm,
-leg, foot, and head pieces of the same pattern are commonly worn.
-
-=== Chain Mail <chain-mail>
-
-Made of interlocking metal rings, chain mail includes a layer of quilted
-fabric worn underneath the mail to prevent chafing and to cushion the
-impact of blows. The suit includes gauntlets, long sleeves, and a chain
-coif (head covering).
-
-=== Half Plate <half-plate>
-
-Half plate consists of shaped metal plates that cover most of the
-wearer's body with a mail skirt and metal tassets and fauds to cover the hips, groin, and shoulders. It does not include leg protection beyond simple greaves
-that are attached with leather straps; similar coverings are used for
-the arms.
-
-=== Plate <plate>
-
-Plate (also called "plate mail", despite that being a misnomer) consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots or metal
-sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
+Shields are Cheap.
 
 #wide[
-  #dndtab("Armor", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr), align: left,
-  "Armor","Cost","Armor Class (AC)","Strength","Stealth","Weight",
+  #dndtab("Example Armors", columns: (2fr, 1fr, 1fr, 1fr), align: left,
+  "Armor","Cost","Armor Class (AC)","Properties",
   [*Light Armor*],"","","","","",
-  "Leather","10 gp","11 + DEX","---","---","10 lb.",
-  "Reinforced leather","45 gp","12 + DEX","---","---","13 lb.",
+  "Leather Coat","Cheap","11 + DEX","---",
+  "Reinforced Gambeson", "Cheap", "12 + DEX", "Cumbersome (+2)",
   [*Medium Armor*],"","","","","",
-  "Chain shirt","50 gp","13 + DEX (max 2)","---","---","15 lb.",
-  "Brigandine","400 gp","14 + DEX (max 2)","+2","---","15 lb.",
-  "Breastplate","750 gp","15 + DEX (max 2)","+2","D","20 lb.",
+  "Chain shirt","Moderate","14 + DEX (max 2)","Metallic",
+  "Brigandine","Expensive","15 + DEX (max 2)","Cumbersome (+2), Metallic",
+  "Breastplate","Expensive","15 + DEX (max 2)","Loud, Metallic",
   [*Heavy Armor*],"","","","","",
-  "Lamellar armor","30 gp","15","---","D","20 lb.",
-  "Chain mail","75 gp","16","+1","D","25 lb.",
-  "Half plate","750 gp","17","+2","D","25 lb.",
-  "Plate","1,500 gp","18","+2","D","30 lb.",
+  "Lamellar armor","Expensive","16","Cumbersome (+1), Loud, Metallic",
+  "Chain mail","Extremely Expensive","17","Cumbersome (+2), Loud, Metallic",
+  "Half plate","Extremely Expensive","17", "Cumbersome (+2), Loud, Metallic",
+  "Plate","Extremely Expensive","18","Cumbersome (+3), Loud, Metallic",
   [*Shield*],"","","","","",
-  "Shield","10 gp","+2","---","---","6 lb.",
+  "Shield","Cheap","+2","---",
   )
 ]
 
@@ -301,13 +230,10 @@ normal materials used for armor, and what makes up the entries above.
 Adventures take place in fantastic worlds, and those worlds have many
 different exotic materials. The table below shows a few of these exotic
 materials. Each one applies to a particular type of armor (either a
-category such as heavy armor or a specific type of armor such as
-padded), has a rarity roughly corresponding to the tier in which you can
+category such as heavy armor or property), has a rarity roughly corresponding to the tier in which you can
 expect to find them, and an effect or effects.
 
-Additionally, Masterwork armor can be crafted by particularly skilled
-craftsmen. It costs twice the normal price, but reduces the cost of the
-action by 1 STA. Masterwork heavy and medium armor also allows you to
+Additionally, Masterwork armor can be crafted by particularly skilled craftsmen. It costs twice the normal price, but reduces the cost of the #safe-link("deflect", "Deflect")  action by 1 STA. Masterwork heavy and medium armor also allows you to
 add an additional point of your Dexterity bonus (if positive) to your
 AC. This raises the contribution from Dexterity for heavy armor to +1
 max.
@@ -315,58 +241,68 @@ max.
 #dndtab("Exotic Armor Materials", columns: (1fr, 2fr, 1fr),
 "Material","Applies To","Tier",
 "Adamantine","Heavy armor","Adventurer",
-"Exotic chitin and scales","Lamellar, brigandine, breastplate","Adventurer",
-"Exotic leather","Leather, reinforced leather","Journeyman",
-"Mithril","Heavy armor, medium armor","Adventurer",
+"Exotic chitin and scales","Metallic armor","Adventurer",
+"Exotic leather","Light armor","Journeyman",
+"Mithril","Metallic Cumbersome or Loud armor","Adventurer",
 )
 
 === Adamantine <adamantine>
-This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor has a strength requirement of +3.
+This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor gains Cumbersome (+3) with the attendant change in base AC if it doesn't already have it.
 
 === Exotic Chitin and Scales <exotic-chitin-and-scales>
-When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into lamellar, brigandine, and breastplates. Such armor is non-metallic, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
+When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into Metallic armor that has a maximum Cumbersome rating of +1. Such armor loses the Metallic property, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
 
 === Exotic Leather <exotic-leather>
-When skinned carefully and properly tanned, exotic leathers and hides can be made into leather and reinforced leather armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
+When skinned carefully and properly tanned, exotic leathers and hides can be made into light armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
 
 === Mythril <mythril>
-Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
+Silvery and light, mythril is one of the more well-known special materials. When used to make Metallic armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had Cumbersome, its rating decreases by 1 without changing the base armor class. Additionally, the armor loses the Loud property if it had it, also without changing the base armor class.
 
 = Weapons <weapons>
 
-Your class grants proficiency in certain weapons, reflecting both the
-class's focus and the tools you are most likely to use. Whether you
-favor a longsword or a longbow, your weapon and your ability to wield it
-effectively can mean the difference between life and death while
-adventuring.
+Your class grants proficiency in one or more categories of weapons. When you make an attack with a weapon, you use either your Melee Attack Modifier or your Ranged Attack modifier depending on the type of weapon, regardless of whether you have proficiency or not. If you do not have proficiency in that type of weapon, you make your attack at disadvantage and cannot use any of the beneficial weapon properties of the weapon. Your class also either grants Martial weapon skill or Simple weapon skill. This determines the base damage done by your weapon, before modifiers from the properties.
 
-The Weapons table shows the most common weapons used in the fantasy
-gaming worlds, their price and weight, the damage they deal when they
-hit, and any special properties they possess. Every weapon is classified
-as either melee or ranged. A melee weapon is usually used to attack a
-target within 5 feet of you, whereas a ranged weapon is used to attack a
-target at a distance.
+== Weapon Skill
+Simple weapon skill means that your melee and ranged weapons deal 1d6 + the appropriate ability modifier (Strength for melee, Dexterity for ranged) damage of the type set by the category. This can be modified by weapon properties.
 
-== Weapon Proficiency
+Martial weapon skill means that your melee weapons deal 1d10 + your Strength modifier damage and your ranged weapons deal 1d8 + your Dexterity modifier damage, both of the type set by the category. This can be modified by weapon properties.
 
-Your lineage, culture, and class can grant you proficiency with certain
-weapons or categories of weapons. The two categories are *simple* and
-*martial*. Most people can use simple weapons with proficiency. These
-weapons include clubs, maces, and other weapons often found in the hands
-of commoners. Martial weapons, including swords, axes, and polearms,
-require more specialized training to use effectively. Most warriors use
-martial weapons because these weapons put their fighting style and
-training to best use.
+If you have the Nimble Strike or the Weapon Versatility feature, you can use Dexterity instead of Strength (Nimble Strike) for melee weapons and Strength instead of Dexterity (Weapon Versatility) for ranged weapons. Note that the damage done does not depend on the type of attack, but on the type of weapon. Throwing a dagger (a light blade with the Thrown property) uses your Melee Attack Modifier and Strength by default.
 
-Proficiency with a weapon allows you to add your proficiency bonus to
-the attack roll for any attack you make with that weapon. If you make an
-attack roll using a weapon with which you lack proficiency, you do not
-add your proficiency bonus to the attack roll.
+== Weapon Categories
+
+The categories are:
+- Bashing
+- Exotic
+- Hafted
+- Heavy Blades
+- Light Blades
+- Ranged
+
+=== Bashing Weapons
+Bashing melee weapons are things like clubs, knuckle-dusters, maces, war hammers, quarterstaffs, etc. They all deal bludgeoning damage by default and have the Battering property and up to two other properties of your choice from Two Handed, Light, Reach, and Thrown. 
+
+=== Exotic Weapons
+Exotic weapons are those that don't fit neatly into other categories. They are most often characterized by being their own ammunition. Kunai, throwing stars, vials of acid or alchemist's fire, as well as whips fall into this category. They all have the Special property which defines their damage type and other properties. Most of them have the Concealable and Thrown properties as well.
+
+=== Hafted Weapons
+Hafted melee weapons are things like axes (hand or battle), flails, halberds, spears, and most other polearms. They are distinguished by having a separate head and haft; the latter often of wood while the head is usually metal. They can deal your choice of slashing, bludgeoning, or piercing damage. They have one of Battering or Cleaving and up to two other properties of your choice from Light, Reach, Thrown, or Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+=== Heavy Blades
+Heavy blades are things like scimitars, long swords (more formally arming swords), greatswords, katanas, nanginatas, etc. They can either stab or slash (and many can do both) but are hard to conceal on your person. They deal your choice of slashing and piercing damage and have either the Cleaving or Parrying property. They also have up to two other properties of your choice from Reach, Two Handed, Parrying, Precise, or Cleaving. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+=== Light Blades
+Light blades are things like daggers, shortswords, kukri, wakizashi, and sickles or kama. They are easy to conceal on your person and often used as an off-hand or thrown weapon. They deal your choice of piercing or slashing damage and have the Concealable property and up to two other properties of your choice from Light, Thrown, Parrying, or Precise. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+=== Ranged Weapons
+Ranged weapons are the entire gamut of normal bows, crossbows, and slings. They always have the Ammunition property and deal your choice of piercing or bludgeoning damage. They also can have up to two properties from Loading, Reinforced, and Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
 
 == Weapon Properties <weapon-properties>
 
 Many weapons have special properties related to their use, as shown in
-the Weapons table.
+the Weapons table. These properties may modify the damage rolled for the weapon. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+The damage dies step as follows: 1d4 $arrow.l.r$ 1d6 $arrow.l.r$ 1d8 $arrow.l.r$ 1d10 $arrow.l.r$ 1d12.
 
 #breakoutbox("Hands and Weapons")[
 Your character does not have a "main hand" and "off hand". If you are
@@ -383,6 +319,7 @@ Unlike 5e, there is no Versatile property.
 ]
 
 === Ammunition <ammunition-property>
+_Damage Die Change:_ N/A
 
 You can use a weapon that has the ammunition property to make a ranged
 attack only if you have ammunition to fire from the weapon. Each time
@@ -392,35 +329,29 @@ attack (you need a free hand to load a one-handed weapon). At the end of
 the battle, you can recover half your expended ammunition by taking a
 minute to search the battlefield.
 
-If you use a weapon that has the ammunition property to make a melee
+If you use a weapon that has the Ammunition property but not the Reinforced property to make a melee
 attack, you treat the weapon as an improvised weapon (see "Improvised
 Weapons" later in the section). A sling must be loaded to deal any
 damage when used in this way.
 
 === Battering <battering-property>
+_Damage Die Change:_ N/A
 
-When you miss on an attack with a Battering weapon and do not roll a 1,
-the target still takes damage equal to your proficiency bonus.
-
-=== Consumed <consumed-property>
-
-Unlike most thrown weapons, each attack consumes the weapon, as the weapon
-is its own ammunition.
+When you miss on an attack with a Battering weapon and do not roll a 1, the target still takes damage equal to your proficiency bonus.
 
 === Cleaving <cleaving-property>
+_Damage Die Change:_ N/A
 
-Once per turn when you hit with a Cleaving weapon, you can attempt to
-carry some of the damage onto another target within your reach. If you
-do so, compare the initial attack roll to the new target's AC. If it
+Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it
 hits, they take the same damage as the initial target.
 
-=== Heavy <heavy-property>
+=== Concealable <concealable-property>
+_Damage Die Change:_ N/A
 
-Small creatures have disadvantage on attack rolls with heavy weapons. A
-heavy weapon's size and bulk make it too large for a Small creature to
-use effectively.
+Concealable weapons can be hidden in clothing with a successful Dexterity (Sleight of Hand) check.
 
 === Light <light-property>
+_Damage Die Change:_ -1 step
 
 A light weapon is small and easy to handle, making it ideal for use when
 fighting with two weapons. When you wield a light weapon in each hand
@@ -429,44 +360,31 @@ make attacks with each weapon. This extra attack does not add your
 ability modifier to the damage dealt.
 
 === Loading <loading-property>
+_Damage Die Change:_ +1 step
 
-Because of the time required to load this weapon, you can fire only one
-piece of ammunition from it when you use an action, bonus action, or
-reaction to fire it, regardless of the number of attacks you can
-normally make.
+Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
 
 === Parrying <parrying-property>
+_Damage Die Change:_ N/A
 
-When you take the Deflect action while wielding a parrying weapon, you
-no longer expend your reaction. You can only use the Deflect action once until the start of your next turn.
+When you take the Deflect action while wielding a parrying weapon, you no longer expend your reaction. Once you use this property, you cannot do so again until the start of your next turn. As a result, if you take the Deflect action twice, you must expend your reaction the second time.
 
 === Precise <precise-property>
+_Damage Die Change:_ N/A
 
-These weapons are well adapted to finding the gaps in heavily-armored
-foes. When you make an attack with a precise weapon and have advantage,
-you score a critical hit on a 19 or 20.
-
-=== Range <range-property>
-
-A weapon that can be used to make a ranged attack has a range in
-parentheses after the ammunition or thrown property. The range lists two
-numbers. The first is the weapon's normal range in feet, and the second
-indicates the weapon's long range. When attacking a target beyond normal
-range, you have disadvantage on the attack roll. You can't attack a
-target beyond the weapon's long range.
+These weapons are well adapted to finding the gaps in heavily-armored foes. When you make an attack with a precise weapon and have advantage, you score a critical hit on a 19 or 20.
 
 === Reach <reach-property>
+_Damage Die Change:_ N/A
 
-This weapon adds 5 feet to your reach when you attack with it, as well
-as when determining your reach for opportunity attacks with it.
+This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it. Note that the default reach is 5 feet. Except for the whip Exotic weapon, all Reach weapons must also be Two Handed.
 
 === Special <special-property>
 
-A weapon with the special property has unusual rules governing its use,
-explained in the weapon's description (see "Special Weapons" later in
-this section).
+A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see "Special Weapons" later in this section).
 
 === Thrown <thrown-property>
+_Damage Die Change:_ N/A
 
 If a weapon has the thrown property, you can throw the weapon to make an
 attack at larger range. If the weapon is a melee weapon, you use the
@@ -475,10 +393,9 @@ would use for a melee attack with the weapon. The range is defined the
 same way as it is for a ranged weapon, but this remains a melee attack.
 
 === Two-Handed <two-handed-property>
+_Damage Die Change:_ +1 step
 
-This weapon requires two hands when you attack with it. You can hold it
-in one hand, however. Two-handed weapons add twice your Strength
-modifier to the damage dealt, instead of just your Strength modifier.
+This weapon requires two hands when you attack with it. You can hold it in one hand, however. Two-handed weapons cannot be concealed barring invisibility. 
 
 === Improvised Weapons <improvised-weapons>
 
@@ -490,13 +407,21 @@ pan, a wagon wheel, or a dead goblin.
 Often, an improvised weapon is similar to an actual weapon and can be
 treated as such. For example, a table leg is akin to a club. At the GM's
 option, a character proficient with a weapon can use a similar object as
-if it were that weapon and use his or her proficiency bonus.
+if it were that weapon and gain the benefits of proficiency, although the weapon still lacks any other properties.
 
 An object that bears no resemblance to a weapon deals 1d4 damage (the GM
 assigns a damage type appropriate to the object). If a character uses a
 ranged weapon to make a melee attack, or throws a melee weapon that does
 not have the thrown property, it also deals 1d4 damage. An improvised
-thrown weapon has a normal range of 20 feet and a long range of 60 feet.
+thrown weapon has a normal range of 20 feet and a long range of 60 feet. Such attacks are always made at disadvantage due to lacking proficiency.
+
+== Weapon Range <range-property>
+
+Ranged and thrown weapons have listed ranges. The ranges lists two
+numbers. The first is the weapon's normal range in feet, and the second
+indicates the weapon's long range. When attacking a target beyond normal
+range, you have disadvantage on the attack roll. You can't attack a
+target beyond the weapon's long range. Ranged weapons have a range of 80/320, while Thrown weapons have a range of 30/90.
 
 == Silvered Weapons
 
@@ -524,7 +449,7 @@ effect, and application of each material can be found on the table.
 #dndtab("Fantastic Weapons Materials", columns: (1fr, 2fr, 1fr),
 "Material","Applies To","Tier",
 "Adamantine","Metal weapons","Adventurer",
-"Mithril","Metal weapons","Adventurer",
+"Mithril","Metal weapons","Journeyman",
 "Ignitite","Ammunition, melee weapons","Adventurer",
 "Necrite","Ammunition, melee weapons","Adventurer",
 )
@@ -536,7 +461,7 @@ This dark, dull-black metal is quite dense (about twice the density of iron). It
 This red and black stone can be ground up and alloyed with steel to make weapons. Such weapons deal 1d6 additional fire damage on hit. These weapons ignite flammable materials (like a flint and tinder) and must be sheathed in non-flammable cases or sheaths.
 
 === Mythril <mythril>
-Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Greatswords and greataxes lose the Heavy property, and weapons without the Two-Handed property gain the Light property.
+Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Weapons without the Two-Handed property gain the Light property, and Thrown mythril weapons have a normal range equal to their long range.
 
 === Necrite <necrite>
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.

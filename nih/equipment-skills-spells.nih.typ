@@ -438,8 +438,7 @@ normally make.
 === Parrying <parrying-property>
 
 When you take the Deflect action while wielding a parrying weapon, you
-no longer expend your reaction. You can only use the Deflect action once
-during any turn.
+no longer expend your reaction. You can only use the Deflect action once until the start of your next turn.
 
 === Precise <precise-property>
 

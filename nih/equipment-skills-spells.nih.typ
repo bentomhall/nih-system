@@ -249,6 +249,8 @@ max.
 === Adamantine <adamantine>
 This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor gains Cumbersome (+3) with the attendant change in base AC if it doesn't already have it.
 
+*Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
+
 === Exotic Chitin and Scales <exotic-chitin-and-scales>
 When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into Metallic armor that has a maximum Cumbersome rating of +1. Such armor loses the Metallic property, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
 
@@ -258,14 +260,16 @@ When skinned carefully and properly tanned, exotic leathers and hides can be mad
 === Mythril <mythril>
 Silvery and light, mythril is one of the more well-known special materials. When used to make Metallic armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had Cumbersome, its rating decreases by 1 without changing the base armor class. Additionally, the armor loses the Loud property if it had it, also without changing the base armor class.
 
+*Formula.* To craft mithral armor, you must procure one-quarter of the weight of the armor in refined mithral metal (three-quarters of the weight in raw mithral ore). The cost of the crafting is twice the base price of the armor or four times if you wish to have masterwork mithral armor. Crafting mithral armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
+
 = Weapons <weapons>
 
-Your class grants proficiency in one or more categories of weapons. When you make an attack with a weapon, you use either your Melee Attack Modifier or your Ranged Attack modifier depending on the type of weapon, regardless of whether you have proficiency or not. If you do not have proficiency in that type of weapon, you make your attack at disadvantage and cannot use any of the beneficial weapon properties of the weapon. Your class also either grants Martial weapon skill or Simple weapon skill. This determines the base damage done by your weapon, before modifiers from the properties.
+Your class grants proficiency in one or more categories of weapons. When you make an attack with a weapon, you use either your Melee Attack Modifier or your Ranged Attack modifier depending on the type of weapon, regardless of whether you have proficiency or not. If you do not have proficiency in that type of weapon, you make your attack at disadvantage and cannot use any of the beneficial weapon properties of the weapon. Your class also either grants Advanced weapon skill or Basic weapon skill. This determines the base damage done by your weapon, before modifiers from the properties.
 
 == Weapon Skill
-Simple weapon skill means that your melee and ranged weapons deal 1d6 + the appropriate ability modifier (Strength for melee, Dexterity for ranged) damage of the type set by the category. This can be modified by weapon properties.
+Basic weapon skill means that your melee and ranged weapons deal 1d6 + the appropriate ability modifier (Strength for melee, Dexterity for ranged) damage of the type set by the category. This can be modified by weapon properties.
 
-Martial weapon skill means that your melee weapons deal 1d10 + your Strength modifier damage and your ranged weapons deal 1d8 + your Dexterity modifier damage, both of the type set by the category. This can be modified by weapon properties.
+Advanced weapon skill means that your melee weapons deal 1d10 + your Strength modifier damage and your ranged weapons deal 1d8 + your Dexterity modifier damage, both of the type set by the category. This can be modified by weapon properties.
 
 If you have the Nimble Strike or the Weapon Versatility feature, you can use Dexterity instead of Strength (Nimble Strike) for melee weapons and Strength instead of Dexterity (Weapon Versatility) for ranged weapons. Note that the damage done does not depend on the type of attack, but on the type of weapon. Throwing a dagger (a light blade with the Thrown property) uses your Melee Attack Modifier and Strength by default.
 
@@ -280,22 +284,34 @@ The categories are:
 - Ranged
 
 === Bashing Weapons
-Bashing melee weapons are things like clubs, knuckle-dusters, maces, war hammers, quarterstaffs, etc. They all deal bludgeoning damage by default and have the Battering property and up to two other properties of your choice from Two Handed, Light, Reach, and Thrown. 
+Bashing melee weapons are things like clubs, knuckle-dusters, maces, war hammers, quarterstaffs, etc. They all deal bludgeoning damage and have two properties of your choice from Battering, Light, Reach, Parrying, and Two-handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Bashing weapons tend to be very Cheap, at least at their most primitive. A cane or walking stick makes a decent club, after all.
 
 === Exotic Weapons
-Exotic weapons are those that don't fit neatly into other categories. They are most often characterized by being their own ammunition. Kunai, throwing stars, vials of acid or alchemist's fire, as well as whips fall into this category. They all have the Special property which defines their damage type and other properties. Most of them have the Concealable and Thrown properties as well.
+Exotic weapons are those that don't fit neatly into other categories. They are most often characterized by being their own ammunition. Kunai, throwing stars, vials of acid or alchemist's fire, as well as whips fall into this category. They all have the Special property which defines their damage, damage type and other restrictions and behaviors. Most of them have the Concealable and Thrown properties as well.
+
+Exotic weapons tend to be quite Expensive, although some classes have ways of producing them fairly cheaply. Whips are the exception, being Cheap.
 
 === Hafted Weapons
-Hafted melee weapons are things like axes (hand or battle), flails, halberds, spears, and most other polearms. They are distinguished by having a separate head and haft; the latter often of wood while the head is usually metal. They can deal your choice of slashing, bludgeoning, or piercing damage. They have one of Battering or Cleaving and up to two other properties of your choice from Light, Reach, Thrown, or Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+Hafted melee weapons are things like axes (hand or battle), flails, halberds, spears, and most other polearms. They are distinguished by having a separate head and haft; the latter often of wood while the head is usually metal. They can deal your choice of slashing, bludgeoning, or piercing damage. They have two properties of your choice from Battering, Cleaving, Light, Reach, Thrown, or Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Hafted weapons tend to be Cheap (for the simple ones) and Moderate (for the more expensive ones). The amount of metal involved is small, and spears can be made quite effortlessly.
 
 === Heavy Blades
 Heavy blades are things like scimitars, long swords (more formally arming swords), greatswords, katanas, nanginatas, etc. They can either stab or slash (and many can do both) but are hard to conceal on your person. They deal your choice of slashing and piercing damage and have either the Cleaving or Parrying property. They also have up to two other properties of your choice from Reach, Two Handed, Parrying, Precise, or Cleaving. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
 
+Heavy blades tend to be the most expensive non-Exotic weapons, with the largest of them being Expensive. They require specialized techniques to forge and substantial amounts of good metal.
+
 === Light Blades
-Light blades are things like daggers, shortswords, kukri, wakizashi, and sickles or kama. They are easy to conceal on your person and often used as an off-hand or thrown weapon. They deal your choice of piercing or slashing damage and have the Concealable property and up to two other properties of your choice from Light, Thrown, Parrying, or Precise. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+Light blades are things like daggers, shortswords, kukri, wakizashi, and sickles or kama. They are easy to conceal on your person and often used as an off-hand or thrown weapon. They deal your choice of piercing or slashing damage and have the Concealable property and up to two other properties of your choice from Light, Parrying, Precise, or Thrown. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Light blades are Moderate in cost; most smiths can turn out a knife or dagger, but not as cheap as most hafted weapons.
 
 === Ranged Weapons
-Ranged weapons are the entire gamut of normal bows, crossbows, and slings. They always have the Ammunition property and deal your choice of piercing or bludgeoning damage. They also can have up to two properties from Loading, Reinforced, and Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+Ranged weapons are the entire gamut of normal bows, crossbows, and slings. They always have the Ammunition property and deal your choice of piercing or bludgeoning damage. They also can have two of your choice properties from Loading, Precise, Reinforced, and Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Ranged weapons range from very Expensive (crossbows) to quite cheap (slings). Wyrmhold has crossbows as fairly standard equipment, being a highly industrial society, while Kotimaa relies on the bow, lovingly crafted by artisans.
 
 == Weapon Properties <weapon-properties>
 
@@ -380,6 +396,7 @@ _Damage Die Change:_ N/A
 This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it. Note that the default reach is 5 feet. Except for the whip Exotic weapon, all Reach weapons must also be Two Handed.
 
 === Special <special-property>
+_Damage Die Change:_ Special (damage as listed)
 
 A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see "Special Weapons" later in this section).
 
@@ -477,58 +494,45 @@ target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
 
-#wide[
-#dndtab("Weapons", columns: (1.5fr, 1fr, 1.5fr, 0.75fr, 3fr), breakable: true, align: left,
-"Name","Cost","Damage","Weight","Properties",
-table.cell(colspan: 5)[*Simple Melee Weapons*],
-"Club","1 sp","1d4 bludgeoning","2 lb.","Light",
-"Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
-"Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
-"Handaxe","5 gp","1d6 slashing","2 lb.","Light, thrown (range 20/60)",
-"Javelin","5 sp","1d6 piercing","2 lb.","Thrown (range 30/120)",
-"Light hammer","2 gp","1d4 bludgeoning","2 lb.","Light, thrown (range 20/60)",
-"Mace","5 gp","1d6 bludgeoning","2 lb.","Battering",
-"Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
-"Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
-"Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
-table.cell(colspan: 5)[*Simple Ranged Weapons*],
-"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
-"Alchemist's Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
-"Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
-"Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
-"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
-"Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
-"Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
+#dndtab("Weapon Examples", columns: (1fr, 1fr, 1fr, 2fr), breakable: true, align: left,
+"Name", "Basic", "Damage", "Properties",
+table.cell(colspan: 4)[*Bashing Weapons*],
+"Club/Singlestick", "1d4 bludgeoning", "1d8 bludgoning", "Light, Parrying",
+"Mace/Warhammer", "1d6 bludgeoning", "1d10 bludgeoning", "Battering",
+"Maul", "1d8 bludgeoning", "1d12 bludgeoning", "Battering, Two-handed",
+"Quarterstaff", "1d8 bludgeoning", "1d12 bludgeoning", "Parrying, Two-handed",
+table.cell(colspan: 4)[*Exotic Weapons*],
+"Acid, Vial", "2d4 acid", "2d4 acid", "Concealable, Special, Thrown",
+"Alchemist Fire, Vial", "2d4 fire", "2d4 fire", "Concealable, Special, Thrown",
+"Holy Water, Flask", "2d6 radiant", "2d6 radiant", "Concealable, Special, Thrown",
+"Whip", "1d6 slashing", "1d8 slashing", "Reach, Special",
+table.cell(colspan: 4)[*Hafted Weapons*],
+"Battle-axe", "1d6 slashing", "1d10 slashing", "Battering, Cleaving",
+"Flail", "1d6 bludgeoning", "1d10 bludgeoning", "Battering, Precise",
+"Hand-axe", "1d4 slashing", "1d8 slashing", "Light, Thrown",
+"Javelin", "1d6 piercing", "1d10 piercing", "Precise, Thrown",
+"Glaive/Halberd", "1d8 slashing", "1d12 slashing", "Reach, Two-handed",
+"Greatspear", "1d8 piercing", "1d12 piercing", "Reach, Two-handed",
+"Spear", "1d6 piercing", "1d10 piercing", "Parrying, Precise",
+"Trident", "1d8 piercing", "1d12 piercing", "Special, Two-handed",
+table.cell(colspan: 4)[*Heavy Blades*],
+"Arming Sword/Katana", "1d6 slashing", "1d10 slashing", "Parrying, Cleaving",
+"Scimitar", "1d4 slashing", "1d8 slashing", "Light, Parrying",
+"Hand-and-half Sword", "1d8 slashing", "1d12 slashing", "Parrying, Two-handed",
+"Greatsword/Claymore", "1d8 slashing", "1d12 slashing", "Cleaving, Two-handed",
+"Rapier", "1d8 piercing", "1d12 piercing", "Parrying, Precise",
+table.cell(colspan: 4)[*Light Blades*],
+"Dagger, Parrying", "1d4 piercing", "1d8 piercing", "Concealable, Light, Parrying",
+"Dagger, Stilletto", "1d4 piercing", "1d8 piercing", "Concealable, Light, Precise",
+"Dagger, Throwing", "1d4 piercing", "1d8 piercing", "Concealable, Light, Thrown",
+"Short sword", "1d4 piercing or slashing", "1d8 piercing or slashing", "Concealable, Light, Precise",
+table.cell(colspan: 4)[*Ranged Weapons*],
+"Blowgun", "1d4 piercing", "1d4 piercing", "Ammunition (dart), Special",
+"Bow", "1d8 piercing", "1d12 piercing", "Ammunition (arrow), Precise, Two-handed",
+"Crossbow", "1d8 piercing", "1d12 piercing", "Ammunition (bolt), Loading, Reinforced, Two-handed",
+"Hand Crossbow", "1d6 piercing", "1d8 piercing", "Ammunition (bolt), Light, Loading",
+"Sling", "1d6 bludgeoning", "1d8 bludgeoning", "Ammunition (sling bullet)"
 )
-]
-#pagebreak()
-#wide[
-#dndtab("Weapons (cont)", columns: (1.5fr, 1fr, 1.5fr, 0.75fr, 3fr), align: left,
-"Name","Cost","Damage","Weight","Properties",
-table.cell(colspan: 5)[*Martial Melee Weapons*],
-"Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
-"Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
-"Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
-"Greatsword","50 gp","1d12 slashing","6 lb.","Heavy, parrying, two-handed",
-"Halberd","20 gp","1d10 slashing","6 lb.","Heavy, parrying, reach, two-handed",
-"Lance","10 gp","1d12 piercing","6 lb.","Reach, special",
-"Longsword","15 gp","1d8 slashing or piercing","3 lb.","Cleaving, Parrying",
-"Maul","10 gp","1d12 bludgeoning","10 lb.","Battering, heavy, two-handed",
-"Morningstar","15 gp","1d10 piercing","4 lb.","Battering",
-"Pike","5 gp","1d10","18 lb.","Heavy, precise, reach, two-handed",
-"Rapier","25 gp","1d8 piercing","2 lb.","Precise",
-"Scimitar","15 gp","1d6 slashing","3 lb.","Cleaving, light",
-"Shortsword","10 gp","1d6 piercing","2 lb.","Light, precise",
-"War pick","5 gp","1d10 piercing","2 lb.","Precise",
-"Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
-"Whip","2gp","1d4 slashing","3 lb.","Reach, special",
-table.cell(colspan: 5)[*Martial Ranged Weapons*],
-"Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
-"Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
-"Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
-"Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
-)
-]
 
 === Blowgun <blowgun>
 
@@ -546,12 +550,6 @@ damage from silvered weapons, it takes 2d6 radiant damage and counts as
 having been struck by a silvered weapon. Any devout individual may
 create holy water by performing a special ritual. The ritual takes 1
 hour to perform and consumes 25 gp worth of powdered silver.
-
-=== Lance <lance>
-
-You have disadvantage when you use a lance to attack a target within 5
-feet of you. Also, a lance requires two hands to wield when you aren't
-mounted.
 
 === Trident <trident>
 
@@ -1410,14 +1408,6 @@ Even though many types of armor (especially heavy armor) have integrated sabaton
 === Robes <robes>
 Robes cannot be worn with any armor, magical or not, except a mithral breastplate or any chain shirt.
 
-=== Adamantine Armor <adamantine-armor>
-
-_Armor (medium or heavy, but not hide), Adventurer_
-
-This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.
-
-*Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
-
 === Aelven Chain <aelven-chain>
 _Armor (masterwork chain shirt), Hero_
 
@@ -1567,8 +1557,8 @@ _Gloves, Adventurer (requires attunement)_
 
 Your Strength score is +4 while you wear these gauntlets. They have no effect on you if your Strength is already +4 or higher.
 
-=== Glamoured reinforced Leather <glamoured-reinforced-leather>
-_Armor (masterwork reinforced leather), Adventurer_ 
+=== Glamoured Leathers <glamoured-leather>
+_Armor (masterwork light armor), Adventurer_ 
 
 While wearing this armor, you can use a bonus action to cast #safe-link("disguise-self",[_disguise self_]) at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus.
 
@@ -1633,13 +1623,6 @@ _Armor (any), Adventurer_
 This armor has been crafted by an expert to be easy to move in. When you take the Deflect action while wearing this armor, it costs one less Stamina than normal. In addition, medium and heavy masterwork armor allow one additional point of DEX to be added to your AC (ie +3 for medium and +1 for heavy).
 
 *Formula.* Crafting masterwork armor costs twice as much as normal and requires a proficiency bonus one higher than normal.
-
-=== Mithral Armor <mithral-armor>
-_Armor (medium or heavy, but not hide), Adventurer_ 
-
-Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
-
-*Formula.* To craft mithral armor, you must procure one-quarter of the weight of the armor in refined mithral metal (three-quarters of the weight in raw mithral ore). The cost of the crafting is twice the base price of the armor or four times if you wish to have masterwork mithral armor. Crafting mithral armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
 === Plate Armor of Etherealness <plate-armor-of-etherealness>
 _Armor (plate), legendary (requires attunement)_ 

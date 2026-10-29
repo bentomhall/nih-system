@@ -973,6 +973,7 @@ As a armsman, you gain the following class features.
 #flush-block[
 - *Armor.* All armor, shields
 - *Weapons.* All weapons
+- *Weapon Skill.* Advanced
 - *Tools.* None
 - *Saving Throws.* Strength, Constitution
 - *Skills.* Choose two from Acrobatics, Animal, Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
@@ -982,9 +983,9 @@ As a armsman, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) chain mail or (*b*) leather armor, longbow, and 20 arrows
-- (*a*) a martial weapon and a shield or (*b*) two martial weapons
-- (*a*) a light crossbow and 20 bolts or (*b*) two handaxes
+- (*a*) heavy armor 
+- (*a*) a non-two-handed weapon and a shield or (*b*) two non-two-handed weapons or (*c*) a two-handed weapon
+- (*a*) a ranged weapon and 20 pieces of ammunition or (*b*) two thrown weapons
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 
 === Class DC
@@ -1241,7 +1242,8 @@ As a brawler, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor:* None
-- *Weapons.* Simple weapons, shortswords
+- *Weapons.* Battering, Hafted, Ranged.
+- *Weapon Skill.* Basic
 - *Tools.* Choose one type of artisan's tools or one musical instrument
 - *Saving Throws.* Strength, Dexterity
 - *Skills.* Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth
@@ -1251,9 +1253,9 @@ As a brawler, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a shortsword or (*b*) any simple weapon
+- (*a*) a light blade or (*b*) a battering weapon
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
-- 10 darts
+- 2 thrown weapons
 
 === Class DC
 When an ability of this class requires an enemy to make a saving throw, the DC is given by 
@@ -1487,7 +1489,8 @@ As a rogue, you have the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor
-- *Weapons.* Simple weapons, hand crossbows, longswords, rapiers, shortswords, acid vials, flasks of alchemist fire
+- *Weapons.* Battering, Exotic, Light Blades, Ranged
+- *Weapon Skill.* Advanced
 - *Tools.* Thieves' tools
 - *Saving Throws.* Dexterity, Intelligence
 - *Skills.* Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth
@@ -1498,10 +1501,10 @@ As a rogue, you have the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a rapier or (*b*) a shortsword
-- (*a*) a shortbow and quiver of 20 arrows or (*b*) a shortsword
+- (*a*) a light blade or (*b*) a battering weapon
+- (*a*) a ranged weapon and case of 20 pieces of ammunition or (*b*) a Light weapon
 - (*a*) a burglar's pack, (*b*) a dungeoneer's pack, or (*c*) an explorer's pack
-- (*a*) Leather armor, two daggers, and thieves' tools
+- (*a*) Light armor and thieves' tools
 
 === Class DC
 When an ability of this class requires an enemy to make a saving throw, the DC is given by
@@ -1756,7 +1759,8 @@ As a warden, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor, medium armor, shields
-- *Weapons.* Simple weapons, martial weapons
+- *Weapons.* Battering, Hafted, Heavy Blades, Light Blades
+- *Weapon Skill.* Advanced
 - *Tools.* None
 - *Saving Throws.* Strength, Constitution
 - *Skills.* Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival
@@ -1766,9 +1770,9 @@ As a warden, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
--  (*a*) a greataxe or (*b*) any martial melee weapon
--  (*a*) two handaxes or (*b*) any simple weapon
--  An explorer's pack and four javelins
+-  (*a*) a two-handed weapon or (*b*) any melee weapon
+-  (*a*) two thrown weapons or (*b*) any Light weapon
+-  An explorer's pack and four thrown weapons
 
 === Class DC
 When an ability of this class requires an enemy to make a saving throw, the DC is given by
@@ -2035,7 +2039,8 @@ As an oathbound, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* All armor, shields
-- *Weapons.* Simple weapons, martial weapons
+- *Weapons.* Battering, Hafted, Heavy Blades, Light Blades
+- *Weapon Skill.* Advanced
 - *Tools.* None
 - *Saving Throws.* Wisdom, Charisma
 - *Skills.* Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion
@@ -2044,10 +2049,10 @@ As an oathbound, you gain the following class features.
 === Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background
-- (*a*) a martial weapon and a shield or (*b*) two martial weapons
-- (*a*) five javelins or (*b*) any simple melee weapon
+- (*a*) a non-two-handed weapon and a shield or (*b*) a two-handed weapon
+- (*a*) five thrown weapons or (*b*) any melee weapon
 - (*a*) a priest's pack or (*b*) an explorer's pack
-- Chain armor
+- Heavy armor
 
 === Class DC
 When a magical ability (one that expends aether) from this class requires a saving throw, the DC is given by
@@ -2442,31 +2447,26 @@ As a ranger, you gain the following class features.
 === Hit Points
 
 - *Hit Dice.* 1d10 per ranger level
-
 - *Hit Points at 1st Level.* 10 + your Constitution modifier
-
 - *Hit Points at Higher Levels.* 1d10 (or 6) + your Constitution modifier per ranger level after 1st
 
 === Proficiencies
 
 - *Armor.* Light armor, medium armor, shields
-
-- *Weapons.* Simple weapons, martial weapons
-
+- *Weapons.* All weapons
+- *Weapon Skill.* Advanced
 - *Tools.* None
-
 - *Saving Throws.* Strength, Dexterity
-
 - *Skills.* Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
 
 === Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) chain shirt or (*b*) leather armor
-- (*a*) two shortswords or (*b*) two simple melee weapons
+- (*a*) medium armor or (*b*) light armor
+- (*a*) two Light weapons or (*b*) one non-two-handed weapon and a shield
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
-- A longbow and a quiver of 20 arrows
+- A ranged weapon and a case of 20 pieces of ammunition
 
 === Class DC
 Whenever a magical ability from this class forces someone to make a saving throw against a DC, that DC is given by
@@ -2800,7 +2800,8 @@ As a spellblade, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor, medium armor
-- *Weapons.* Simple weapons, hand crossbows, longswords, rapiers, shortswords
+- *Weapons.* Exotic, Heavy Blades, Light Blades, Ranged. No Two-Handed weapons.
+- *Weapon Skill.* Basic
 - *Tools.* Three musical instruments of your choice
 - *Saving Throws.* Dexterity, Charisma
 - *Skills.* Choose any three
@@ -2810,11 +2811,11 @@ As a spellblade, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a rapier, (*b*) a longsword, or (*c*) any simple weapon
+- (*a*) a proficient melee weapon or (*b*) any ranged weapon and a case of 20 pieces of ammunition
 - (*a*) a diplomat's pack or (*b*) an entertainer's pack or (*c*) an explorer's pack
-- (*a*) a lute or (*b*) any other musical instrument or (*c*) any tool
-- (*a*) leather armor or ((*b*) chain shirt
-- a dagger
+- (*a*) any tool
+- (*a*) light armor or (*b*) medium armor
+- a Light light blade
 
 === Class DC
 When an ability of this class requires a target to make a saving throw, the DC for that saving throw is given by
@@ -3186,7 +3187,8 @@ As a arcanist, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* None
-- *Weapons.* Daggers, darts, slings, quarterstaffs, light crossbows
+- *Weapons.* Battering, Light Blades
+- *Weapon Skill.* Basic
 - *Tools.* None
 - *Saving Throws.* Constitution, Intelligence
 - *Skills.* Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion
@@ -3196,10 +3198,9 @@ As a arcanist, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
+- (*a*) one proficient weapon
 - (*a*) a component pouch or (*b*) an arcane focus
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack or (*c*) a scholar's pack
-- Two daggers
 
 === Class DC
 Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
@@ -3568,7 +3569,8 @@ As a priest, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor, shields
-- *Weapons.* Simple weapons
+- *Weapons.* Battering, Hafted.
+- *Weapon Skill.* Basic
 - *Tools.* None
 - *Saving Throws.* Wisdom, Charisma
 - *Skills.* Choose two from History, Insight, Medicine, Persuasion, and Religion
@@ -3579,9 +3581,8 @@ As a priest, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a mace or (*b*) a warhammer (if proficient)
-- (*a*) leather armor, or (*b*) a chain shirt (if proficient)
-- (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
+- (*a*) a proficient weapon
+- (*a*) light armor, or (*b*) medium armor (if proficient)
 - (*a*) a priest's pack or (*b*) an explorer's pack
 - A shield and a holy symbol
 
@@ -3945,7 +3946,8 @@ As a shaman, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor, medium armor, shields
-- *Weapons.* Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears
+- *Weapons.* Battering, Hafted
+- *Weapon Skills.* Basic
 - *Tools.* Herbalism kit
 - *Saving Throws.* Intelligence, Wisdom
 - *Skills.* Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival
@@ -3955,9 +3957,9 @@ As a shaman, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a wooden shield or (*b*) any simple weapon
-- (*a*) a scimitar or (*b*) any simple melee weapon
-- Leather armor, an explorer's pack, and a shamanic focus
+- (*a*) a wooden shield or (*b*) any proficient weapon
+- (*a*) any proficient weapon
+- Light armor, an explorer's pack, and a shamanic focus
 
 === Class DC
 Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by
@@ -4343,7 +4345,8 @@ As a warlock, you gain the following class features.
 === Proficiencies
 #flush-block[
 - *Armor.* Light armor
-- *Weapons.* Simple weapons
+- *Weapons.* Battering, light blades, ranged
+- *Weapon Skill.* Basic
 - *Tools.* None
 - *Saving Throws.* Wisdom, Charisma
 - *Skills.* Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion
@@ -4353,10 +4356,10 @@ As a warlock, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
+- (*a*) a ranged weapon and 20 pieces of ammunition or (*b*) any proficient melee weapon
 - (*a*) a component pouch or (*b*) an arcane focus
 - (*a*) a scholar's pack or (*b*) a dungeoneer's pack
-- Leather armor, any simple weapon, and two daggers
+- Light armor
 
 === Class DC
 Whenever an ability from this class forces someone to make a saving throw against a DC, that DC is given by

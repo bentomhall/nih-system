@@ -197,19 +197,18 @@ Shields are Cheap.
 #wide[
   #dndtab("Example Armors", columns: (2fr, 1fr, 1fr, 1fr), align: left,
   "Armor","Cost","Armor Class (AC)","Properties",
-  [*Light Armor*],"","","","","",
+  table.cell(colspan:4)[*Light Armor*],
   "Leather Coat","Cheap","11 + DEX","---",
   "Reinforced Gambeson", "Cheap", "12 + DEX", "Cumbersome (+2)",
-  [*Medium Armor*],"","","","","",
+  table.cell(colspan:4)[*Medium Armor*],
   "Chain shirt","Moderate","14 + DEX (max 2)","Metallic",
   "Brigandine","Expensive","15 + DEX (max 2)","Cumbersome (+2), Metallic",
   "Breastplate","Expensive","15 + DEX (max 2)","Loud, Metallic",
-  [*Heavy Armor*],"","","","","",
+  table.cell(colspan:4)[*Heavy Armor*],
   "Lamellar armor","Expensive","16","Cumbersome (+1), Loud, Metallic",
-  "Chain mail","Extremely Expensive","17","Cumbersome (+2), Loud, Metallic",
-  "Half plate","Extremely Expensive","17", "Cumbersome (+2), Loud, Metallic",
+  "Chain/Half plate","Extremely Expensive","17", "Cumbersome (+2), Loud, Metallic",
   "Plate","Extremely Expensive","18","Cumbersome (+3), Loud, Metallic",
-  [*Shield*],"","","","","",
+  table.cell(colspan:4)[*Shield*],
   "Shield","Cheap","+2","---",
   )
 ]
@@ -506,7 +505,8 @@ This sticky, adhesive fluid ignites when exposed to air. On a hit, the
 target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
-
+#pagebreak()
+#wide[
 #dndtab("Example Weapons", columns: (1fr, 1fr, 1fr, 2fr), breakable: true, align: left,
 "Name", "Basic", "Damage", "Properties",
 table.cell(colspan: 4)[*Bashing Weapons*],
@@ -528,6 +528,12 @@ table.cell(colspan: 4)[*Hafted Weapons*],
 "Greatspear", "1d8 piercing", "1d12 piercing", "Reach, Two-handed",
 "Spear", "1d6 piercing", "1d10 piercing", "Parrying, Precise",
 "Trident", "1d8 piercing", "1d12 piercing", "Special, Two-handed",
+)
+]
+#pagebreak()
+#wide[
+#dndtab("Example Weapons (cont.)", columns: (1fr, 1fr, 1fr, 2fr), align: left,
+"Name", "Basic", "Damage", "Properties",
 table.cell(colspan: 4)[*Heavy Blades*],
 "Arming Sword/Katana", "1d6 slashing", "1d10 slashing", "Parrying, Cleaving",
 "Scimitar", "1d4 slashing", "1d8 slashing", "Light, Parrying",
@@ -546,6 +552,8 @@ table.cell(colspan: 4)[*Ranged Weapons*],
 "Hand Crossbow", "1d6 piercing", "1d8 piercing", "Ammunition (bolt), Light, Loading",
 "Sling", "1d6 bludgeoning", "1d8 bludgeoning", "Ammunition (sling bullet)"
 )
+]
+#pagebreak()
 
 === Blowgun <blowgun>
 
@@ -1391,7 +1399,7 @@ To craft magic items, you need a few things.
 - Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
 ]
 
-#dndtab("Crafting Costs", columns: (2fr, 1fr, 1fr), align:left,
+#dndtab("Crafting Costs", columns: (1fr, 1fr, 1fr), align:left,
 "Tier","Proficiency","Cost Range (gp)",
 "Journeyman","+2","50-150",
 "Adventurer","+3","300-2000",
@@ -1782,7 +1790,7 @@ When you use an action to throw a handful of the dust into the air, you and each
 _Consumable, Hero_
 
 This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.
-#dndtab("", columns: (2fr, 5fr),
+#dndtab("Efreeti Bottle", columns: (2fr, 5fr),
 "d100", "Effect", 
 "01 - 10", "The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.", 
 "11 - 90", "The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.",
@@ -1796,7 +1804,7 @@ _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-#dndtab("", columns: (1fr, 1fr), align: left,
+#dndtab("Elemental Gem", columns: (1fr, 1fr), align: left,
 "Gem","Summoned Elemental",
 "Blue sapphire","Air elemental",
 "Yellow diamond","Earth elemental",
@@ -1990,7 +1998,7 @@ A spell scroll (or stone, the only difference being the appropriate tool profici
 If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.
 
 The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.
-#wide[#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+#wide[#dndtab("Spell Scroll/Stone", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Aether Cost","Tier","Save DC","Attack Bonus","Cost","Proficiency",
 "0-2","Journeyman","13","+5","50","+2",
 "3-7","Adventurer","13","+5","150","+3",
@@ -2028,7 +2036,7 @@ The creature is friendly to you and your companions, and it acts on your turn. Y
 
 Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.
 
-#dndtab("", columns: (1fr, 1.5fr, 1.5fr, 1.5fr),
+#dndtab("Bag of Tricks", columns: (1fr, 1.5fr, 1.5fr, 1.5fr),
 "d8","Creature (Grey Bag)", "Creature (Rust Bag)", "Creature (Tan Bag)",
 "1","Weasel", "Rat", "Jackal",
 "2","Giant rat", "Owl", "Ape",
@@ -2065,7 +2073,7 @@ _Wondrous item, Hero_
 You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
 
 Four sizes of carpet of flying exist. The GM chooses the size of a given carpet or determines it randomly.
-#dndtab("", columns: (1fr, 2fr, 1fr, 1fr),
+#dndtab("Flying Carpets", columns: (1fr, 1fr, 1fr, 1fr),
 "d100","Size","Capacity","Flying Speed",
 "01-20",[3 ft. #sym.times 5 ft.],"200 lb.","80  feet",
 "21-55",[4 ft. #sym.times 6 ft.],"400 lb.","60 feet",
@@ -2101,7 +2109,7 @@ _Wondrous item, Hero (requires attunement)_
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.  You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.  If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.
 
-#dndtab("", columns: (1fr, 1fr, 4fr),
+#dndtab("Cube of Force", columns: (1fr, 1fr, 4fr),
 "Face","Charges","Effect",
 "1","1","Gases, wind, and  fog can't pass through the barrier.",
 "2","2","Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
@@ -2240,7 +2248,7 @@ _Wondrous item, Hero_
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be at least 12th level and have an Intelligence modifier of +3 or higher. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
 
-#dndtab("", columns: (1fr, 1fr, 1fr, 1.5fr),
+#dndtab("Manual of Golems", columns: (1fr, 1fr, 1fr, 1.5fr),
 "d20","Golem","Time","Cost",
 "1 - 5","Clay","30 days","65,000 gp",
 "6 - 17","Flesh","60 days","50,000 gp",
@@ -2500,7 +2508,7 @@ While wearing this ring, you regain 1d6 hit points every 10 minutes, provided th
 _Ring, Hero (requires attunement)_ 
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.
-#dndtab("", columns: (1fr, 2fr, 2fr), 
+#dndtab("Ring of Energy Resistance", columns: (1fr, 2fr, 2fr), 
 "d10","Damage Type","Gem",
 "1","Acid","Pearl",
 "2","Cold","Tourmaline",
@@ -2801,7 +2809,7 @@ When you hit a fiend or an undead with this weapon, that creature takes an extra
 While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Oathbound class, the radius of the aura increases to 30 feet.
 
 === Javelin of Lightning <javelin-of-lightning>
-_Weapon (Hafted (piercing), Light, Precise, Thrown), Adventurer_
+_Weapon (Hafted (piercing), Precise, Thrown), Adventurer_
 
 When you hurl this javelin and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
 
@@ -2893,7 +2901,7 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 *Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 #sym.times the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
 
 #dndtab("Retributive Strike", 
-"Distance from Origin","Damage", columns: (1fr, 3fr), align: left,
+"Distance from Origin","Damage", columns: (1fr, 2fr), align: left,
 "10 ft. away or closer",[8 #sym.times the number of charges in the staff],
 "11 to 20 ft. away",[6 #sym.times the  number of charges in the staff],
 "21 to 30 ft. away",[4 #sym.times the number of charges in the staff],

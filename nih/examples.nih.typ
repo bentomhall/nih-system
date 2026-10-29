@@ -15,7 +15,7 @@
   #pagebreak()
 ]
 = Worked Examples
-<ch:examples>∂
+<ch:examples>
 This chapter contains examples of how certain parts of play are intended to work. They should be taken as (hopefully) illuminating examples only, not definitive statements of how play must go or in any way restrictive.
 
 Throughout this chapter, Gary is always the GM, and players are

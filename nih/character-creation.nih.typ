@@ -102,7 +102,7 @@ Proficiency in a language includes the basic ability to speak, understand, read,
 "Tiboran ", "Old Imperial", "Scholars", " Imperial
 ")
 ]
-
+#pagebreak()
 === Ability Scores <ability-scores>
 To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.
 
@@ -983,7 +983,7 @@ As a armsman, you gain the following class features.
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (*a*) heavy armor 
+- heavy armor with Cumbersome value of no more than +1 
 - (*a*) a non-two-handed weapon and a shield or (*b*) two non-two-handed weapons or (*c*) a two-handed weapon
 - (*a*) a ranged weapon and 20 pieces of ammunition or (*b*) two thrown weapons
 - (*a*) a dungeoneer's pack or (*b*) an explorer's pack
@@ -1156,7 +1156,7 @@ Starting at 3rd level, sword saints cultivate their aether thoroughly than most 
 
 === Weapon Flexibility <weapon-flexibility>
 
-Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list until the start of your next turn: Battering, Cleaving, Parrying, Precise, or Thrown. If you chose to make a weapon Thrown, its range is 30/120.
+Beginning at 3rd level, you can use your weapons in unexpected ways. At the beginning of your turn you can exchange any one of the following weapon properties possessed by a weapon you are wielding for any of the others in the list until the start of your next turn: Battering, Cleaving, Parrying, Precise, or Thrown.
 
 === Blazing Flash <blazing-flash>
 

@@ -63,6 +63,19 @@ pound.
 "Astral Credit (ac)","10,000","1000","100","10","1",
 )
 
+=== Abstract Costs
+Prices and availability vary throughout known lands and even more beyond those lands. Some areas are lacking metals, so heavy armor is more difficult to acquire. Others are highly industrial, so complex items like spyglasses and clocks are relatively cheap. Some _relative_ pricing, however, tends to hold. All of these are priced relative to adventurer wealth, rather than the common folk.
+
+*Very Cheap* items are generally not worth worrying about cost for, at least for adventurers. They may cost a few copper pieces. Examples include a loaf of cheap bread or a mug of cheap beer. Anyone can pull a branch from a tree and make a functional club.
+
+*Cheap* items are those that are widely available once you get above the smallest of hamlets; any village with a local blacksmith can supply arrow heads or spear heads, for example. At most, these items cost a few (less than ten) gold pieces.
+
+*Moderately Expensive* items are harder to come by; you need specialists found only in the larger towns and cities. They may cost anywhere from 10 gp up to about 100 gp. Most weapons and armor fall into this category, as do more specialized mundane items.
+
+*Expensive* items require true specialists, found only in the largest of cities. These tend to require personal fitting or limited access, meaning you can't simply walk into a shop and buy one off the rack. Examples include a suit of fitted plate armor, barding for non-traditional mounts, adamantine or mithril items, masterwork items, and, in most areas, mechanical items such as clocks, polished glass lenses, etc. Prices for these start in the hundreds of gold pieces and go up from there.
+
+*Very Expensive* items require one-of-a-kind services. Most magic items are of this kind (especially those without a listed formula). Generally, these cannot be bought or sold; in the rare occasions where you can (such as at limited-access auctions), the prices are in the tens of thousands of gold pieces.
+
 == Selling Treasure
 
 Opportunities abound to find treasure, equipment, weapons, armor, and
@@ -74,7 +87,7 @@ that you can find buyers and merchants interested in your loot.
 
 As a general rule, undamaged weapons, armor, and other equipment fetch
 half their cost when sold in a market. Weapons and armor used by
-monsters are rarely in good enough condition to sell.
+monsters are rarely in good enough condition to sell or use.
 
 === Magic Items <magic-items>
 
@@ -494,7 +507,7 @@ target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
 
-#dndtab("Weapon Examples", columns: (1fr, 1fr, 1fr, 2fr), breakable: true, align: left,
+#dndtab("Example Weapons", columns: (1fr, 1fr, 1fr, 2fr), breakable: true, align: left,
 "Name", "Basic", "Damage", "Properties",
 table.cell(colspan: 4)[*Bashing Weapons*],
 "Club/Singlestick", "1d4 bludgeoning", "1d8 bludgoning", "Light, Parrying",
@@ -1419,7 +1432,7 @@ _Armor (shield), Hero (requires attunement)_
 While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
 
 === Armor of Invulnerability <armor-of-invulnerability>
-_Armor (plate), legendary (requires attunement)_
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), legendary (requires attunement)_
 
 You have resistance to all damage while you wear this armor. Additionally, you can use an action to make yourself immune to damage from non-legendary effects for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.
 
@@ -1534,9 +1547,9 @@ _Armor (masterwork plate), Adventurer (requires attunement)_
 While wearing this armor, you can understand and speak Abyssal. In addition, the armor's clawed gauntlets are light melee weapons that deal slashing damage with a +2 bonus to damage rolls and a damage die of 1d8. You have proficiency in these weapons. You cannot wear any other gloves while attuned to this armor.
 
 === Dragon Scale Mail <dragon-scale-mail>
-_Armor (masterwork lamellar), Hero (requires attunement)_ 
+_Armor (Medium, Cumbersome (+1), Loud, Masterwork), Hero (requires attunement)_ 
 
-Dragon scale mail (technically a form of lamellar armor) is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
+Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
 
 #dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
 "Dragon","Resistance","","Dragon","Resistance",
@@ -1548,7 +1561,7 @@ Dragon scale mail (technically a form of lamellar armor) is made of the scales o
 )
 
 === Dwarven Plate <dwarven-plate>
-_Armor (masterwork plate), Hero_ 
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), Hero_ 
 
 This armor counts as adamantine. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet. You also have advantage on any check or saving throw made to resist or escape a grapple.
 
@@ -1558,7 +1571,7 @@ _Gloves, Adventurer (requires attunement)_
 Your Strength score is +4 while you wear these gauntlets. They have no effect on you if your Strength is already +4 or higher.
 
 === Glamoured Leathers <glamoured-leather>
-_Armor (masterwork light armor), Adventurer_ 
+_Armor (Light, Masterwork), Adventurer_ 
 
 While wearing this armor, you can use a bonus action to cast #safe-link("disguise-self",[_disguise self_]) at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus.
 
@@ -1625,7 +1638,7 @@ This armor has been crafted by an expert to be easy to move in. When you take th
 *Formula.* Crafting masterwork armor costs twice as much as normal and requires a proficiency bonus one higher than normal.
 
 === Plate Armor of Etherealness <plate-armor-of-etherealness>
-_Armor (plate), legendary (requires attunement)_ 
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), legendary (requires attunement)_ 
 
 While you're wearing this armor, you can speak its command word as an action to gain the effect of the #safe-link("etherealness",[_etherealness_]) legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
 
@@ -2602,11 +2615,11 @@ _Rod, legendary (requires attunement)_
 This rod has a flanged head, and it functions as a magic mace that grants a +6 bonus to damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below.
 Six Buttons. You can press one of the rod's six buttons as a bonus action. A button's effect lasts until you push a different button or until you push the same button again, which causes the rod to revert to its normal form.  
 
-If you press button 1, the rod becomes a flame tongue, as a fiery blade sprouts from the end opposite the rod's flanged head.  
+If you press button 1, the rod becomes a Flame Tongue longsword that is a Heavy Blade (slashing) with Cleaving, Masterwork, and Parrying, as a fiery blade sprouts from the end opposite the rod's flanged head.  
 
-If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that grants a +3 bonus to attack and damage rolls made with it.  
+If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that is Hafted (slashing), Battering, Cleaving, and Masterwork.  
 
-If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that grants a +3 bonus to attack and damage rolls made with it.
+If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that is Hafted (piercing), with Parrying, Precise, and Masterwork.
 
 If you press button 4, the rod transforms into a climbing pole up to 50 feet long, as you specify. In surfaces as hard as granite, a spike at the bottom and three hooks at the top anchor the pole. Horizontal bars 3 inches long fold out from the sides, 1 foot apart, forming a ladder. The pole can bear up to 4,000 pounds. More weight or lack of solid anchoring causes the rod to revert to its normal form.
 
@@ -2711,9 +2724,9 @@ _Weapon (arrow, bolt, or sling stone), Hero_
 An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, lineage, or group associated with an arrow of slaying is hit by the arrow, the attack is a critical hit and the creature takes an additional 6d10 piercing damage (not doubled due to the critical hit). In addition, the creature must make a DC 17 Constitution saving throw. On a failed save, the creature is killed outright. If the creature was reduced to zero hit points by the attack's damage (including the extra damage), it automatically fails the saving throw. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
 
 === Berserker Axe <berserker-axe>
-_Weapon (any masterwork axe), Hero (requires attunement)_
+_Weapon (Hafted (slashing), Cleaving, Battering or Two-Handed, Masterwork), Hero (requires attunement)_
 
-This is a masterwork, adamantine axe. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
+In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
 
 === Blade of Sharpness <blade-of-sharpness>
 _Weapon (any weapon that deals slashing damage), Hero (requires attunement)_
@@ -2723,14 +2736,12 @@ When you attack an object with this sword and hit, maximize your weapon damage d
 In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.
 
 === Dagger of Venom <dagger-of-venom>
-_Weapon (masterwork dagger), Adventurer_
-
-This is a masterwork dagger.
+_Weapon (Light Blade (piercing), Masterwork, Precise, Thrown), Adventurer_
 
 You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.
 
 === Dancing Sword <dancing-sword>
-_Weapon (any sword), Hero (requires attunement)_
+_Weapon (any Heavy Blade), Hero (requires attunement)_
 
 You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.
 
@@ -2739,69 +2750,67 @@ While the sword hovers, you can use a bonus action to cause it to fly up to 30 f
 After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.
 
 === Defender <defender>
-_Weapon (any masterwork, silvered sword), legendary (requires attunement)_
+_Weapon (Heavy Blade, Cleaving or Two-Handed, Masterwork, Parrying, Silvered), legendary (requires attunement)_
 
-This is a masterwork, silvered sword. While attuned to it, you can take the Deflect action without expending stamina and the effects last until the start of your next turn instead of for one attack only.
+While attuned to it, you can take the Deflect action without expending stamina and the effects last until the start of your next turn instead of for one attack only.
 
 === Dragon Slayer <dragon-slayer>
-_Weapon (any masterwork sword, axe, spear, lance, halberd or glaive), Hero_ 
+_Weapon (Heavy Blade or Hafted, Cleaving or Reach, Masterwork, Two-Handed), Hero_ 
 
-This is a masterwork weapon. When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.
+When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.
 
 === Dwarven Thrower <dwarven-thrower>
-_Weapon (warhammer), Hero (requires attunement)_
+_Weapon (Bashing, Adamantine, Battering, Masterwork, Thrown), Hero (requires attunement)_
 
-This is a masterwork, adamantine warhammer. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.
+When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.
 
 === Energy Bow <energy-bow>
-_Weapon (any bow or crossbow), Hero (requires attunement)_
+_Weapon (any Ranged (piercing)), Hero (requires attunement)_
 
 This masterwork weapon has no natural string. Instead, a thread of magical force is generated between the tips of the bowstave. Similarly, it requires no ammunition, because it generates its own that count as silver and adamantine. Energy crossbows ignore the Loading property.
 
 === Flame Tongue <flame-tongue>
-_Weapon (any sword), Hero (requires attunement)_ 
+_Weapon (any Heavy Blade), Hero (requires attunement)_ 
 
 You can use a bonus action to speak this sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
 
 === Frost Brand <frost-brand>
-_Weapon (any sword), Hero (requires attunement)_ 
+_Weapon (any Heavy Blade), Hero (requires attunement)_ 
 
 When you hit with an attack using this sword, the target takes an extra 2d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
 In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 
 === Giant Slayer <giant-slayer>
-_Weapon (any axe or sword), Hero_ 
+_Weapon (any slashing weapon), Hero_ 
 
 This is a masterwork weapon. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.
 
 === Hammer of Thunderbolts <hammer-of-thunderbolts>
-_Weapon (maul), legendary_
-
-This is a masterwork weapon that counts as adamantine and silvered.
+_Weapon (Bashing, Adamantine, Battering, Masterwork, Silvered Two-Handed), legendary_
 
 *Giant's Bane (Requires Attunement).* You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 2 and can exceed +5, but not +10.
 
 The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.
 
 === Holy Avenger <holy-avenger>
-_Weapon (any sword), legendary (requires attunement by an oathbound)_
+_Weapon (any Heavy Blade, Masterwork, Silvered), legendary (requires attunement by an oathbound)_
 
-This is a masterwork weapon that counts as silvered. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
+When you hit a fiend or an undead with this weapon, that creature takes an extra 2d10 radiant damage.
 
 While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Oathbound class, the radius of the aura increases to 30 feet.
 
 === Javelin of Lightning <javelin-of-lightning>
-_Weapon (javelin), Adventurer_
+_Weapon (Hafted (piercing), Light, Precise, Thrown), Adventurer_
 
 When you hurl this javelin and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
 
 The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.
 
 === Luck Blade <luck-blade>
-_Weapon (any sword), Adventurer (requires attunement)_
+_Weapon (any slashing weapon, Masterwork), Adventurer (requires attunement)_
 
-This is a masterwork weapon. This sword has 3 charges. If the sword is on your person, you can call on its luck and expend a charge (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. The sword regains 1d3 charges at dawn.
+This weapon has 3 charges. If the sword is on your person, you can call on its luck and expend a charge (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. The sword regains 1d3 charges at dawn.
 
 === Mace of Disruption <mace-of-disruption>
 _Weapon (any bludgeoning), Hero (requires attunement)_ 
@@ -2819,7 +2828,7 @@ _Weapon (any bludgeoning), Hero (requires attunement)_
 This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. The mace regains 1d3 expended charges daily at dawn.
 
 === Moons-glow Weapon <moons-glow-weapon>
-_Weapon (any sword, axe, or polearm), Journeyman_
+_Weapon (any Heavy or Light Blade or Hafted), Journeyman_
 
 This magic weapon was forged and blessed by kami. It counts as being silvered, and when unsheathed in the dark, it glows, shedding bright light for 10 feet and dim light for 10 feet beyond that. The color of the glow changes as the moons wax and wane, ranging from white when Quella is new to pure red when Quella is full.
 
@@ -2831,19 +2840,19 @@ _Weapon (any melee), Hero (requires attunement)_
 This is a masterwork weapon. The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.
 
 === Oathbow <oathbow>
-_Weapon (longbow), Hero (requires attunement)_
+_Weapon (Ranged (piercing), Ammunition (arrow), Masterwork, Precise, Two-Handed), Hero (requires attunement)_
 
 When you nock an arrow on this masterwork bow, it whispers in Metsae, “Swift defeat to my enemies.” When you use this weapon to make a ranged attack, you can, as a command phrase, say, “Swift death to you who have wronged me.” The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
 
 When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.
 
 === Scimitar of Speed <scimitar-of-speed>
-_Weapon (scimitar), Hero (requires attunement)_
+_Weapon (Heavy Blade, Cleaving, Light, Masterwork), Hero (requires attunement)_
 
-This is a masterwork weapon. In addition, you can make one attack with it as a bonus action on each of your turns.
+You can make one attack with it as a bonus action on each of your turns.
 
 === Staff of Charming <staff-of-charming>
-_Staff, Hero (requires attunement)_ 
+_Staff (Bashing, Battering, Parrying), Hero (requires attunement)_ 
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast #safe-link("charm-person",[_charm person_]) or #safe-link("command",[_command_]) from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
 
@@ -2873,9 +2882,7 @@ This staff has 10 charges. While holding it, you can use an action to expend 1 o
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.
 
 === Staff of Power <staff-of-power>
-_Staff, Hero (requires attunement)_
-
-This staff can be wielded as a masterwork quarterstaff.
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
 The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn as long as it has at least one charge remaining. If you expend the last charge, roll a d20. On a 20, the staff regains 1d8 + 2 charges.
 
@@ -2893,9 +2900,9 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 )
 
 === Staff of Striking <staff-of-striking>
-_Staff, Hero (requires attunement)_
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
-This staff can be wielded as a masterwork quarterstaff.  The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
+The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
 
 === Staff of Swarming Insects <staff-of-swarming-insects>
 _Staff, Hero (requires attunement)_
@@ -2907,27 +2914,25 @@ This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If
 *Insect Cloud.* While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.
 
 === Staff of the Python <staff-of-the-python>
-_Staff, Adventurer (requires attunement)_
+_Staff (Bashing, Battering, Parrying), Adventurer (requires attunement)_
 
 You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.  On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.  If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.
 
 === Staff of the Woodlands <staff-of-the-woodlands>
-_Staff, Hero (requires attunement)_
-
-This staff can be wielded as a masterwork quarterstaff.
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
 The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.
 
 *Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: #safe-link("barkskin",[_barkskin_]) (2 charges), or #safe-link("wall-of-thorns",[_wall of thorns_]) (6 charges).
 
-In addition, you can use the Voice the Voiceless (1 charge, Animals and Plants only), and Awaken Beast or Plant (5 charges) incantations.
+In addition, you can use the #safe-link("voice-the-voiceless", "Voice the Voiceless") (1 charge, Animals and Plants only), and #safe-link("awaken-beast-or-plant", "Awaken Beast or Plant") (5 charges) incantations.
 
 *Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by #safe-link("sense-aura",[_sense aura_]). While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
 
 === Staff of Thunder and Lightning <staff-of-thunder-and-lightning>
-_Staff, Hero (requires attunement)_
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
-This staff can be wielded as a masterwork quarterstaff. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.
+This staff has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.
 
 *Lightning.* When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage.
 
@@ -2940,21 +2945,21 @@ This staff can be wielded as a masterwork quarterstaff. It also has the followin
 *Thunder and Lightning.* You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.
 
 === Staff of Withering <staff-of-withering>
-_Staff, Hero (requires attunement)_ 
+_Staff (Bashing, Battering, Parrying), Hero (requires attunement)_ 
 
-This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
+This staff has 3 charges and regains 1d3 expended charges daily at dawn. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
 
 === Sun Blade <sun-blade>
-_Weapon (longsword), Hero (requires attunement)_
+_Weapon (Heavy Blade, Light, Masterwork, Silvered, Parrying, Precise), Hero (requires attunement)_
 
-This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword grants the wielder the Nimble Strike feature, allowing them to use their Ranged Attack Modifier instead of their Melee Attack Modifier. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
+This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword grants the wielder the Nimble Strike feature, allowing them to use their Ranged Attack Modifier instead of their Melee Attack Modifier.
 
-This is a masterwork weapon which counts as silvered and which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.
+This weapon deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.
 
 The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.
 
 === Sword of Life Stealing <sword-of-life-stealing>
-_Weapon (any sword), Hero (requires attunement)_
+_Weapon (any Heavy or Light Blade), Hero (requires attunement)_
 
 When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt.
 
@@ -2969,9 +2974,9 @@ _Weapon (any), Hero_
 When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.
 
 === Vorpal Sword <vorpal-sword>
-_Weapon (any sword that deals slashing damage), legendary (requires attunement)_
+_Weapon (any Heavy Blade that deals slashing damage. Has Adamantine, Masterwork, Silvered), legendary (requires attunement)_
 
-This is a masterwork weapon that counts as silvered and adamantine. In addition, the weapon ignores resistance to slashing damage.  When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.
+This weapon ignores resistance to slashing damage.  When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.
 
 === Weapon of Wounding <weapon-of-wounding>
 _Weapon (any), Hero (requires attunement)_
@@ -3018,13 +3023,13 @@ You learn one cantrip of your choice from the Arcanist list, as well as one spel
 
 === Charge <charge-trick>
 
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
 
 === Coordinated Strike <coordinated-strike-trick>
 
-_Charisma (Martial Weapon) Basic Skill Trick_
+_Charisma (Advanced Weapon Skill) Basic Skill Trick_
 
 As a bonus action you take when you take the Attack action and attack a target, expend 2 STA. Another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus.
 
@@ -3042,7 +3047,7 @@ When you attempt to persuade someone to bypass procedures or to stop hostilities
 
 === Disarm <disarm-trick>
 
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 When you hit with a melee weapon attack, you can spend 1 STA to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. 
 
@@ -3110,7 +3115,7 @@ When you are hidden, you can use your bonus action and spend 1 STA to force a nu
 
 === Piercing Wound <piercing-wound-trick>
 
-_Dexterity (Martial Weapon) Basic Skill Trick_
+_Dexterity (Advanced Weapon Skill) Basic Skill Trick_
 
 When you hit with an attack from a ranged weapon, you can spend 1 STA to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. If you have the Nimble Strike feature, you can use this with any weapon attack that uses Dexterity.
 
@@ -3121,7 +3126,7 @@ _Wisdom (Nature) Basic Skill Trick_
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 === Resourceful Combatant <resourceful-combatant-trick>
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
 

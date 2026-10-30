@@ -1,0 +1,191 @@
+#import "@preview/dragonling:0.3.1": *
+#import "../../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "NIH Character Creation",
+    subtitle: "Classes, lineages, cultures, and backgrounds for NIH",
+    author: "Admiral Benbo",
+    cover: none,
+    paper: "us-letter",
+    logo: none,
+    fancy-author: true,
+    bg: none
+  )
+] else [
+  #pagebreak()
+]
+#set page(margin: (top: 15mm))
+
+= Character Creation <character-creation>
+
+Creating a character follows a specific process. The order of the first four doesn't really matter, but generally your class matters most for what you're doing during the session and the others act in supporting roles. It's up to you to decide whether you want a character that plays the archetype straight, such as a gwerin book-mage arcanist who was a scholar (doubling down on the stereotype that gwerin are masters of the arcane) or plays against type, like a jazuu rogue with a background as an acolyte (the very straight-laced jazuu not generally being known for their nimble stealth or gods-fearing ways, alongside having an average height well over 6 ft 6 inches).
+
+- Pick a class.
+- Pick a lineage.
+- Pick a culture.
+- Pick or design a background. This includes deciding your motivations for adventuring.
+- Assign ability scores.
+- Pick starting gear from class.
+- Calculate dependent values. This is HP, AC, attack bonuses, saving throw modifiers, saving throw DCs, Stamina, Aether, etc.
+
+If a class, lineage, culture or background gives you a proficiency you already have from another source, pick a different one instead.
+
+=== Class <class>
+Each character has a *class*, which represents how they go about adventuring. It is a combination of archetype, fictional role, approach to matters, as well as many of the mechanical abilities you will use during play. Classes are not necessarily formal parts of the fictional world. If you are an arcanist, for example, you may meet many people who have similar abilities, but this does not mean that all wielders of arcane power are arcanists and have all those abilities.
+
+The classes available for play are described in classes.
+
+=== Lineage and Culture <lineage-and-culture>
+Your character's lineage describes their biological heritage. Are they one of the tall, long-lived gwerin? Or a human? Or a draconic-souled dragonborn? Or one of many other lineages. Each lineage grants a few features, including giving a +1 to one ability score. It also describes the common heights, weights, appearance, etc. of members of that lineage.
+
+The lineages available for play are described in lineages.
+
+A character's culture describes where in the world they come from and what kind of culture they grew up with. Some cultures are more generic and others more narrow; pick what fits your character best after consultation with the GM. Each culture gives a set of features, including a +1 to one ability score. You can't pick the same ability score for this +1 as you did from your lineage. If they would overlap, pick a different one of your choice. After including both changes, no ability score can be greater than +5.
+
+The lineages available for play are described in cultures.
+
+=== Ability Scores <ability-scores>
+A character's basic approach to adventuring is summed up in 6 numbers, called *Ability Scores* (or sometimes *ability modifiers*). They range between -5 (nearly incapable, usually only used for things like unthinking oozes or undead) and +5 (about the peak of normal earth humanity in that area). Some class abilities, magic, and monsters break that upper limit, but no ability score in the game can be above +10. A score of +0 is perfectly average for that area. Ability scores are added, by default, to all d20 rolls, whether ability checks, saving throws, or attack rolls, as well as damage rolls with weapon-based attacks (not spells). The game is not so tightly balanced that maximizing your scores is critical; there is value in being widely capable as well as specialized. However, it will go best if your highest ability scores (read on for the details on how to generate them) go in your chosen class's primary requirements (such as Intelligence for an arcanist or Strength for a warden).
+
+The six abilities are, with abbreviations in parentheses:
+#flush-block[
+- *Strength (STR):* Someone with high STR is good at wielding big melee weapons, wearing heavy armor, lifting and carrying heavy weights, climbing, jumping, swimming, grappling, and generally performing tasks of brute strength. Such characters are often described as ripped or buff. Armsmen and wardens are particularly dependent on having high STR; oathbound as well tend to lean towards STR as a primary score. Melee weapons use STR as their modifier.
+- *Dexterity (DEX):* Someone with high DEX is good at tasks requiring a delicate, precise approach. Ranged weapons, stealth, feats of acrobatics, pick-pocketing, and acting first in combat are all governed by Dexterity. Such characters are often described as quick or nimble. Rangers and rogues are particularly likely to have high DEX, as well as brawlers. Ranged weapons use DEX as their modifier. Most big explosion spells and effects require DEX saves to reduce or eliminate the effect. Light armor relies on having a high DEX to dodge, rather than outright block, incoming attacks.
+- *Constitution (CON):* Someone with high CON is good at enduring damage, dealing with toxins and diseases, and harsh environments. Such characters are often described as tough or hardy. While CON is not a primary ability score for any class, it's rarely disregarded. Keeping it above zero is a good baseline approach. Your character's maximum hit points increases with your CON score, as does the amount you heal over a short rest. Poison, acid, and cold-based abilities often require CON saving throws.
+- *Intelligence (INT):* Someone with high INT is good at recalling lore, finding the connections between facts, dealing with languages, and generally handling arcane magic. They are often described as smart. INT is a primary score for arcanists and spellblades. Low INT does not mean you are stupid: it also reflects a life or aptitude for intellectual pursuits for their own sake. So a person with street smarts may not have high INT, but wouldn't be stupid. INT also helps against illusions and other tricks that try to make you perceive a false reality. Several other subclasses depend on INT as a secondary score.
+- *Wisdom (WIS):* Someone with high WIS is perceptive, in tune with the world around them. They can see what others cannot and understand how animals and people are feeling. They are often in tune with nature, being able to find tracks and food in the wilderness. They are often described as wise or clear-eyed. WIS is a primary ability score for saving throws against magic or abilities that affects the mind. It is the primary ability score for priests and shamans, and a secondary ability score for brawlers and rangers. Both primal and divine magic rely on WIS as the spellcasting modifier.
+- *Charisma (CHA):* Someone with high CHA has a powerful force of personality. They are naturally good with people, as CHA governs social interactions by default. They are often described as having magnetic personalities. It also represents force of will and sense of self: magics that try to alter your shape or banish you to other planes are defended against with CHA saves. It is the primary ability score of the warlock and a secondary ability score for the oathbound, both of whose magics come from sheer stubbornness and will.
+]
+
+Ability scores aren't as much physical measurements as they are _archetypes_---you can have normal (ie +0) STR and still be physically fit. Using _any_ weapon requires both physical power and coordination, but heavier melee weapons are associated with the Strong Guy, while ranged weapons and sneaky daggers are both associated with the Sneak or the Archer, neither of whom is traditionally buff (despite archers being very strong in reality). Your high ability scores are best thought of as how your character prefers to approach problems---brute force (STR), precise maneuvering or stealth (DEX), toughing them out (CON), out-thinking the problem (INT), intuiting the solution (WIS), or just bluffing your way through on sheer personality and charm (CHA).
+
+Also of note is that your character's decision-making skills are _NOT_ governed by any ability score. Those are entirely up to you. You don't have to do stupid, reckless things because you have low WIS or INT. Such a character might have bad information (faulty perception) or not know the facts (lack of knowledge), but if an action wouldn't be fun for the rest of the party (insulting the king to his face knowing it will get you thrown into jail, touching the obviously-marked End of the World button), don't feel like your ability scores are compelling you to do it anyway.
+
+=== Alignment <alignment>
+
+Alignment is not in effect, except descriptively. Instead, come up with two adjectives that describe your character's default reaction to things. For example, a habitual straight-man, always serious and mission-focused, might be Focused and Serious, while the flirty minx who loves to stir up trouble might be Sexy Chaotic. This is best done in discussion with the rest of the table, as it sets a tone for the party as a whole. Some groups are ok with tonal dissonance, while it causes issues for others. Best to figure this out _before_ you start playing.
+
+
+=== Languages <languages>
+
+Your culture indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet. Every player character, by default, has proficiency in Common.
+
+Choose your languages from the Common Languages table, or choose one that is common in your campaign. With your GM's permission, you can instead choose a language from the Exotic Languages table.
+
+Some of these languages are actually families of languages with many dialects. For example, the Primordial language includes the Auran, Aquan, Ignan, and Terran dialects, one for each of the four elemental planes. Creatures that speak different dialects of the same language can communicate with one another. A notation of 'tr. [language]' means that the language is written transliterated into the other language's script, while it has no native written form.
+
+Proficiency in a language includes the basic ability to speak, understand, read, and write (if that language has a written form). You can learn more languages after character creation via a variety of means, including training during downtime (the time between active on-screen adventures). See training for details.
+
+#wide[
+#dndtab("Common Languages", columns: (1fr, 1fr, 1fr, 1fr),
+"Language ", "Common Name", "Typical Speakers", "Script",
+"Common ", "--", "Most folks", "Reformed Imperial",
+"Tumni ", "Dwarven", "Dwarves", "Modern Runic",
+"Yonwach ", "High Elven", "Gwerin", "Aelven",
+"Metsae ", "Wood Elven", "Ihmisi", "Aelven",
+"Too-til ", "Giantish", "Giants, jazuu", "Modern Runic",
+"Ard-teang ", "Orcish", "Orcs", "Mixed Imperial/Aelven",
+"Ngyon toi ", "Goblin", "Goblins", "None, tr. Imperial"
+)
+
+#dndtab("Exotic Languages", columns:(1fr, 1fr, 1fr, 1fr),
+"Language", "Common Name", "Typical Speakers", "Script",
+"Abyssal ", "Demonic", "Demons, cultists", "Lucian",
+"Celestial ", "--", "Lucians acting on divine business", "Lucian",
+"Draconic ", "--", "Dragons, dragonborn", "tr. mixed Aelven/Runic",
+"Iath Neidr ", "Snakefolk", "Ophidians", "Modified Aelven",
+"Jinzi ", "Eastern Imperial", "Eastern Noefrans", "Jinzi",
+"Kamigami ", "Druidic, Sylvan", "Druids, fey", "tr. Aelven",
+"Lucian ", "Infernal", "Astral residents", "Lucian",
+"Primordial ", "Elemental", "Elementals", "Archaic Runic",
+"Sarthak ", "Ship Speech", "Ship folk and pirates of the Moon Sea", "Modified Aelven",
+"Tiboran ", "Old Imperial", "Scholars", " Imperial
+")
+]
+#pagebreak()
+=== Ability Scores <ability-scores>
+To generate ability scores, choose from the following methods after discussion with your GM. Either way, you shouldn't end up with any ability scores above +4 or below -4. Your lineage and culture will adjust these later, each adding +1 to one score.
+
+#breakoutbox("Commentary on Expected Values")[
+The average for a normal, non-adventuring person is +0 in each score. Ability scores represent as much _archetypes_ or _approaches_ as they do physical parameters. Someone with high Dexterity and low Strength may be strong; wielding a bow (which requires Dexterity) also requires substantial physical strength. But the way they approach matters is more nimble, dextrous, and subtle. In appearance, they'd likely be less muscle-bound and more lean---more of a runner's build than a bodybuilder's build.
+
+Generally, you'll want your highest ability score to be in your class's primary score. That is:
+	
+- Strength: Armsman, oathbound\*, warden
+- Dexterity: Brawler\*, ranger, rogue
+- Constitution: None (but everyone wants non-zero Constitution)
+- Intelligence: Arcanist, spellblade
+- Wisdom: Priest, shamans, brawler\*
+- Charisma: Oathbound\*, warlock
+	
+
+\*: Choose one of these scores. Generally oathbound who focus on weapons should choose STR over CHA, while brawlers who want to emphasize punching things should focus on DEX over WIS
+
+Many classes (especially brawlers, oathbound, rangers, and spellblades) want your second highest score in one other score (called a secondary ability score). Some subclasses, chosen at level 3 generally, also key off of certain ability scores.
+]
+
+*Standard Array.* The standard array provides a fixed, consistent set of values for play. It trades the ability to get unusually high ability scores for the surety of not getting unusually low ability scores.
+
+To use the Standard Array, distribute the following values among your ability scores in whatever order you choose: +2, +2, +1, +1, 0, -1.
+
+*Rolled Scores.* Rolling provides a bit of risk in return for possible reward. It can produce widely varying attributes between party members, and so should be done with care.
+
+To roll ability scores, follow the following process:
+
+- Roll 4d6 and sum the highest 3 (effectively discarding the lowest).
+- Subtract 10 from the resulting score.
+- Divide the result by 2, rounding toward negative numbers (ie -5 divided by 2 becomes -3).
+- Repeat the above steps until you have 6 numbers, then assign them to your ability scores in whatever order you choose.
+
+=== Advancement Beyond 1st Level <advancement-beyond-1st-level>
+
+As your character goes on adventures and overcomes challenges, he or she gains experience, represented by experience points. A character who reaches a specified experience point total advances in capability. This advancement is called *gaining a level*.
+
+When your character gains a level, his or her class often grants additional features, as detailed in the class description. Some of these features allow you to increase one of your ability scores (usually by 1). You can't increase an ability score above +5 unless the feature explicitly says so. In addition, every character's proficiency bonus increases at certain levels.
+
+Each time you gain a level, you gain 1 additional Hit Die. This increases your maximum hit points by the average result of the die roll (rounded up) or half the maximum value of the die, plus 1 (which is the same result). Your maximum hit points also increase by your Constitution modifier. For example, a warden gains 7 (12 / 2 + 1) hit points from each additional hit die plus the value of his Constitution modifier.
+
+When your Constitution modifier increases by 1, your hit point maximum increases by 1 for each level you have attained. For example, if your 7th-level armsman has a Constitution score of +3, when he reaches 8th level and chooses to increase his Constitution score to +4, his hit point maximum then increases by 8.
+
+The Character Advancement table summarizes the XP you need to advance in levels from level 1 through level 20, and the proficiency bonus for a character of that level. Consult the information in your character's class description to see what other improvements you gain at each level.
+
+#breakoutbox("XP and Advancement")[
+The expectation is that 1 XP #sym.approx 1 session of serious play, regardless of what's accomplished, fought, or done during the session. GMs can provide extra XP for good play or not award XP if the party just sits around and dithers, but should do so sparingly. Two paths are presented: slow and fast. Slow expects it to take a number of sessions (XP) equal to your current level until level 6, at which point it stabilizes as 6/level. Fast caps at 4. A Fast-path advancement will take a party 1-20 in just over a year of weekly play (71 sessions, about 14 months), while a slow advancement path will take just shy of two years (100 sessions). The goal here is to keep Tier 1 quite fast, and then slow down to a fixed pace.
+]
+
+#dndtab("Experience Points Per Level", columns: (2fr, 2fr, 1fr, 2fr),
+"Experience Points (Fast)", "Experience Points (Slow)", "Level", "Proficiency Bonus",
+"0 ", "0", "1", "+2",
+"1 ", "1", "2", "+2",
+"3 ", "3", "3", "+2",
+"7 ", "7", "4", "+2",
+"11 ", "11", "5", "+3",
+"15 ", "16", "6", "+3",
+"19 ", "22", "7", "+3",
+"23 ", "28", "8", "+3",
+"27 ", "34", "9", "+4",
+"31 ", "40", "10", "+4",
+"35 ", "46", "11", "+4",
+"39 ", "52", "12", "+4",
+"43 ", "58", "13", "+5",
+"47 ", "64", "14", "+5",
+"51 ", "70", "15", "+5",
+"55 ", "76", "16", "+5",
+"59 ", "82", "17", "+6",
+"63 ", "88", "18", "+6",
+"67 ", "94", "19", "+6",
+"71 ", "100", "20", "+6"
+)
+
+#pagebreak()
+#include "lineages/lineages.nih.typ"
+#pagebreak()
+#include "cultures.nih.typ"
+#pagebreak()
+#include "backgrounds.nih.typ"
+#pagebreak()
+#include "classes/martial.nih.typ"
+#pagebreak()
+#include "classes/hybrid.nih.typ"
+#pagebreak()
+#include "classes/caster.nih.typ"

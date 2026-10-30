@@ -19,12 +19,7 @@ The dryad is a place-bound fey, usually bound to a grove of trees. They act as t
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+1], INT: [+2], WIS: [+2], CHA: [+4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft, passive perception 14],
 		Languages: [Common, Sylvan],
 		Challenge: [1:1],
@@ -40,7 +35,7 @@ The dryad is a place-bound fey, usually bound to a grove of trees. They act as t
 		("Club", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 4 bludgeoning damage.]),
 		("Fey Charm", [The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 12 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can. \ Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If the target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours. \ The dryad can have no more than one humanoid and up to three beasts charmed at a time.]),
 	),
-))
+), wide: true)
 
 == Emotion-bound fey <emotion-bound-fey>
 Some minor fey are obsessed with various emotions or states of being, to the point of being nearly one-dimensional. For example, the kipuliin are obsessed with _pain_, taking sadomasochism to the extremes. Satyrs are obsessive about _intoxication_.
@@ -52,12 +47,7 @@ Some minor fey are obsessed with various emotions or states of being, to the poi
 	speed: [30 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+4 (+6)], INT: [-1], WIS: [-1], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [—],
-		"Damage Immunities": [—],
 		"Damage Resistances": [all damage when bloodied],
-		"Damage Vulnerabilities": [—],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft, passive perception 9],
 		Languages: [Common, Sylvan],
 		Challenge: [2:3],
@@ -79,11 +69,7 @@ Some minor fey are obsessed with various emotions or states of being, to the poi
 	speed: [40 ft.],
 	stats: (STR: [+1], DEX: [+3], CON: [+0], INT: [+1], WIS: [+0], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2, Performance +6, Stealth +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [poisoned],
 		Senses: [passive Perception 12],
 		Languages: [Common, Elvish, Sylvan],
@@ -110,12 +96,7 @@ Some animals are exemplars of their type, with mystical properties as a result.
 	speed: [60 ft.],
 	stats: (STR: [+4], DEX: [+3], CON: [+3], INT: [-2], WIS: [+2], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [Sylvan],
 		Challenge: [3:3],
@@ -142,11 +123,8 @@ Not all hags are women, but many are. The Tree favors them as its hosts for an u
 	speed: [30 ft.],
 	stats: (STR: [-1], DEX: [+3], CON: [+3], INT: [+1], WIS: [+0], CHA: [+5]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2, Deception +8, Insight +3],
-		"Damage Immunities": [],
 		"Damage Resistances": [psychic],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened],
 		Senses: [passive Perception 12],
 		Languages: [Common, one other],
@@ -162,7 +140,7 @@ Not all hags are women, but many are. The Tree favors them as its hosts for an u
 		("Beguiling Transformation", [As a bonus action, the hag changes shape between its natural form and a beautiful medium humanoid of its choice. All its statistics and abilities remain the same. Creatures that witness the transformation must make a DC 13 Wisdom saving throw or be #safe-link("charmed", [charmed]) by the hag for one minute. While charmed, they are incapacitated. Charmed creatures can attempt the saving throw at the end of each of their turns, ending the effect on a success.]),
 		("Claws", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 3 piercing damage.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Rage Hag",
 	description: [Medium fey (shapeshifter), individualistic],
@@ -171,11 +149,8 @@ Not all hags are women, but many are. The Tree favors them as its hosts for an u
 	speed: [30 ft.],
 	stats: (STR: [+4], DEX: [+1], CON: [+3], INT: [-1], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2, Deception +2, Insight +2],
-		"Damage Immunities": [],
 		"Damage Resistances": [poison],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [frightened],
 		Senses: [darkvision 60ft, passive Perception 12],
 		Languages: [Common, one other],

@@ -36,20 +36,16 @@ The wyrmling stage generally lasts a few years. Wyrmlings are notoriously curiou
 	speed: [30 ft., fly 60 ft.],
 	stats: (STR: [+2], DEX: [+0 (+2)], CON: [+1 (+3)], INT: [+0], WIS: [+0 (+2)], CHA: [+1 (+3)]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +4],
 		"Damage Immunities": [Variable based on color],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., darkvision 60 ft., passive Perception 14],
 		Languages: [Draconic],
 		Challenge: [3:2],
 	),
 	traits: (
-		("Special Traits", [Pick one of the following based on color: \ Amphibious: The dragon can breath both air and water. \ Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.]),
+		("Special Traits", [Pick one of the following based on color: \ - _Amphibious._ The dragon can breath both air and water. \ - _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.]),
 		("Damage Type", [The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color. See the dragon color table.]),
-		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ Ball: 10 ft radius sphere centered on a point within 60 ft \ Cone: 15 ft cone \ Line: 15 ft line that is 5 ft wide]),
+		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ - _Ball._ 10 ft radius sphere centered on a point within 60 ft \ - _Cone._ 15 ft cone \ - _Line._ 15 ft line that is 5 ft wide]),
 	),
 	actions: (
 		("Bite", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d10 + 2 piercing damage plus 2 (1d4) damage of the dragon's damage type.]),
@@ -73,17 +69,14 @@ Young dragons have discovered what their hoard will be, but haven't quite acquir
 		"Saving Throws": [Dex +4, Con +7, Wis +4, Cha +6],
 		Skills: [Perception +6, +one],
 		"Damage Immunities": [Variable by color],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., darkvision 120 ft., passive Perception 16],
 		Languages: [Common, Draconic],
 		Challenge: [9:9],
 	),
 	traits: (
-		("Special Traits", [Pick one of the following based on color: \ _Amphibious_: The dragon can breath both air and water. \ _Ice Walk_. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ Shapechange. The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ _Spellcasting_. The dragon can cast spells. These generally should be defensive, control, or utility spells as the dragon has enough raw firepower. Its spellcasting DC is 15. \ Pick 3 spells that cost 2 AET. It can cast these 3x/day each. \ Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each. \ Pick 1 spell that costs 5 AET. It can cast this once/day.]),
+		("Special Traits", [Pick one of the following based on color: \ - _Amphibious._ The dragon can breath both air and water. \ - _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ - _Shapechange._ The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ - _Spellcasting_. The dragon can cast spells. These generally should be defensive, control, or utility spells as the dragon has enough raw firepower. Its spellcasting DC is 15. \ Pick 3 spells that cost 2 AET. It can cast these 3x/day each. \ Pick 2 spells that cost 3-4 AET. It can cast these 2x/day each. \ Pick 1 spell that costs 5 AET. It can cast this once/day.]),
 		("Damage Type", [The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color. See the dragon color table.]),
-		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ Ball: 15 ft radius sphere centered on a point within 60 ft \ Cone: 30 ft cone \ Line: 30 ft line that is 5 ft wide]),
+		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ - _Ball._ 15 ft radius sphere centered on a point within 60 ft \ - _Cone._ 30 ft cone \ - _Line._ 30 ft line that is 5 ft wide]),
 	),
 	actions: (
 		("Multiattack", [The dragon makes three attacks: one with its bite and two with its claws.]),
@@ -94,7 +87,7 @@ Young dragons have discovered what their hoard will be, but haven't quite acquir
 	scaling: (
 		("", [To increase the dragon's ratings to 10:10, increase its hit points by 15 (no extra hit dice but +1 CON), increase its STR, CON, and CHA by 1 each (+6/+2/+4/+1/+2/+4, increasing its attack modifier by 1 and physical damage modifiers by +1), its breath weapon by 9 (+2d8), and its save DC (spellcasting and breath weapon) by 1 (to 16).]),
 	),
-))
+), wide: true)
 
 === Adult dragons
 Adult dragons are the terminal form for most dragons, as not all dragons undergo the final molt to the ancient form. Adults have a steady hoard and can finally stop to think about something other than getting more. Their power grows and their hunger for normal food has waned as their hoard channels elemental aether to them. Adult dragons will still eat food for taste and out of habit, but don't need to for survival. Those that haven't settled down with mates usually do so at this point. Adult dragons have become legendary as their presence influences the land around them. Those goblin and other humanoid tribes, especially humans, that serve them are changed by this service over the generations, becoming the so-called kobolds and ryuu-kin (false dragonborn).
@@ -109,17 +102,14 @@ Adult dragons are the terminal form for most dragons, as not all dragons undergo
 		"Saving Throws": [Dex +6, Con +10, Wis +6, Cha +8],
 		Skills: [Perception +11, Stealth +7],
 		"Damage Immunities": [Variable based on color],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 60 ft., darkvision 120 ft., passive Perception 21],
 		Languages: [Common, Draconic],
 		Challenge: [16:14],
 	),
 	traits: (
-		("Special Traits", [Pick one of the following based on color: \ _Amphibious._ The dragon can breath both air and water. \ _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ _Shapechange._ The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ _Spellcasting._ The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16. \ Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. \ Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each. \ Pick 1 spell that costs 8 AET. It can cast this once/day.]),
+		("Special Traits", [Pick one of the following based on color: \ - _Amphibious._ The dragon can breath both air and water. \ - _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ - _Shapechange._ The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ - _Spellcasting._ The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 16. \ Pick 3 spells that cost 4 AET or less. It can cast these 3x/day each. \ Pick 2 spells that cost 7 AET or less. It can cast these 2x/day each. \ Pick 1 spell that costs 8 AET. It can cast this once/day.]),
 		("Damage Type", [The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color. See the dragon color table.]),
-		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ Ball: 20 ft radius sphere centered on a point within 90 ft\ \ Cone: 60 ft cone\ \ Line: 60 ft line that is 10 ft wide]),
+		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ - _Ball._ 20 ft radius sphere centered on a point within 90 ft\ - _Cone._ 60 ft cone\ - _Line._ 60 ft line that is 10 ft wide]),
 		("Legendary Resistance (3/Day)", [If the dragon fails a saving throw, it can choose to succeed instead.]),
 	),
 	actions: (
@@ -136,7 +126,7 @@ Adult dragons are the terminal form for most dragons, as not all dragons undergo
 		("Tail Attack", [The dragon makes a tail attack.]),
 		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
 	),
-))
+), wide: true)
 
 === Ancient dragons
 Only those dragons whose mindsets bend to leading or dominating others of their kind, to becoming leaders of flights and rulers of territory, undergo the final molt and become ancients, the most powerful of their kind. Generally, only dragons who have lived more than 500 years reach this stage, but each ancient is individual. They have enormous, magically-charged hordes. Supremely arrogant and for good measure, ancient dragons are among the most powerful beings who live on the Mortal plane, on par with a devil don or a ranking subordinate of a demon prince.
@@ -151,17 +141,14 @@ Only those dragons whose mindsets bend to leading or dominating others of their 
 		"Saving Throws": [Dex +8, Con +14, Wis +9, Cha +11],
 		Skills: [Perception +16, Stealth +9],
 		"Damage Immunities": [Variable based on color],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 60 ft., darkvision 120 ft., passive Perception 26],
 		Languages: [Common, Draconic],
 		Challenge: [22:20+],
 	),
 	traits: (
-		("Special Traits", [Pick one of the following based on color: \ _Amphibious._ The dragon can breath both air and water. \ _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ _Shapechange._ The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ _Spellcasting._ The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 17. \ Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. \ Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each. \ Pick 1 spell that costs 14 AET or less. It can cast this once/day.]),
+		("Special Traits", [Pick one of the following based on color: \ - _Amphibious._ The dragon can breath both air and water. \ - _Ice Walk._ The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment. \ - _Shapechange._ The dragon can use its action to transform into a humanoid shape of Medium or smaller size. Its features other than its size do not change. \ - _Spellcasting._ The dragon can cast spells. These generally should be defensive, control, or utility spells, as the dragon has enough raw firepower. Its spellcasting DC is 17. \ Pick 3 spells that cost 5 AET or less. It can cast these 3x/day each. \ Pick 2 spells that cost 8 AET or less. It can cast these 2x/day each. \ Pick 1 spell that costs 14 AET or less. It can cast this once/day.]),
 		("Damage Type", [The dragon's bite attacks and breath weapon deal damage based on its color. The saving throw also depends on the color. See the dragon color table.]),
-		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ Ball: 40 ft radius sphere centered on a point within 120 ft \ Cone: 90 ft cone \ Line: 90 ft line that is 10 ft wide]),
+		("Blast Shape", [The dragon's breath weapon targets an area chosen from the list below: \ - _Ball._ 40 ft radius sphere centered on a point within 120 ft \ - _Cone._ 90 ft cone \ - _Line._ 90 ft line that is 10 ft wide]),
 		("Legendary Resistance (3/Day)", [If the dragon fails a saving throw, it can choose to succeed instead.]),
 	),
 	actions: (
@@ -178,7 +165,7 @@ Only those dragons whose mindsets bend to leading or dominating others of their 
 		("Tail Attack", [The dragon makes a tail attack.]),
 		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
 	),
-))
+), wide: true)
 
 == Dragons, False
 

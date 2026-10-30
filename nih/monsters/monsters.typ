@@ -519,6 +519,8 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 #pagebreak()
 #include "celestials.typ"
 #pagebreak()
+#include "constructs.typ"
+#pagebreak()
 #include "dragons.typ"
 #pagebreak()
 #include "elementals.typ"

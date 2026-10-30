@@ -95,7 +95,11 @@
       block[
         #set par(spacing: 1em)
         #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
-        #for action in stats.at(key) {
+        // A one-entry section written without a trailing comma, e.g.
+        // `variants: (("Name", [...]))`, arrives as a bare pair; re-wrap it.
+        #let entries = stats.at(key)
+        #if type(entries.at(0)) == str { entries = (entries,) }
+        #for action in entries {
           // An unnamed entry (e.g. the legendary actions preamble) is plain text.
           if action.at(0) == "" {
             [#action.at(1) \ ]

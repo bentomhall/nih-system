@@ -10,9 +10,11 @@
     logo: none,
     fancy-author: true
 )
+] else [
+  #pagebreak()
 ]
 
-= Introduction
+= Dawn of Hope
 
 This initial tome is aimed at those wishing to run games set in Dawn of Hope, those wishing to build characters for the setting, as well as those who simply want to know more. Most of the player-facing mechanical information is found in the other tomes (Lineages of Dawn of Hope and Player Options of Dawn of Hope).
 
@@ -255,11 +257,12 @@ All of this also means that bodies, nimbuses, and souls can be transformed into 
 == The Congregation
 The 16 True Gods, the only ones who can empower clerics, are called the Congregation. Congregation members are unkillable while enthroned, and have near-limitless power...as long as they obey the strictures. One of them, the former God of Harvest and Autumn, was dethroned for meddling too hard (and crashing the wrong mortal wedding) in 250 AC and, reduced to the stature of an Ascendant, ended up dying at mortal hands. Which served as a warning to the others not to get *too* involved in their schemes, resulting in the Congregation retreating from meddling in mortal affairs.
 #breakoutbox("Souls and PCs")[
+#set text(size: 10pt)
 #aside[What's a PC? --IB]
 
-The triparte soul is actually a core link to standard D&D mechanics. Stored in the nimbus of every individual (PC or not) is a certain amount of aether, a healing reserve if you will. Because everything is aether, the soul can expend that energy to repair body functions and even gear that it considers part of itself. Magical healing replenishes this reserve. But for most people, this pool is very small; a single good blow will exhaust it. Stronger creatures (including PCs) have stronger souls with correspondingly deeper reserves. And generally larger creatures have bigger reserves than smaller ones. Given a good night's rest, this reserve will entirely refill as the body processes food and ambient aether. In a word, this is your Hit Points.
+The triparte soul is actually a core link to the game mechanics. Stored in the nimbus of every individual (PC or not) is a certain amount of aether, a healing reserve if you will. Because everything is aether, the soul can expend that energy to repair body functions and even gear that it considers part of itself. Magical healing replenishes this reserve. But for most people, this pool is very small; a single good blow will exhaust it. Stronger creatures (including PCs) have stronger souls with correspondingly deeper reserves. And generally larger creatures have bigger reserves than smaller ones. Given a good night's rest, this reserve will entirely refill as the body processes food and ambient aether. This is your Hit Points.
 
-When your ready reserves are half depleted, most souls start being more wary about repairing injuries, focusing on repairing internal injuries that might impair functionality. Cosmetic tears, bruises, and cuts remain. At this point, you're *bloodied.* When completely expended or if the reserve is insufficient to repair damage, emergency measures kick in. Normal functions shut down and the triparte soul goes to heroic lengths, even cannibalizing itself to get enough energy to function. Mechanically, these are Death Saves. Magical healing at this point *locks in* whatever damage was done; functionality is restored, but if your arm was broken and not set, it will heal out of place.
+When your ready reserves are half depleted, most souls start being more wary about repairing injuries, focusing on repairing internal injuries that might impair functionality. Cosmetic tears, bruises, and cuts remain. At this point, you're *bloodied.* When completely expended or if the reserve is insufficient to repair damage, emergency measures kick in. Normal functions shut down and the triparte soul goes to heroic lengths, even cannibalizing itself to get enough energy to function. Mechanically, these are Death Saves. Magical healing at this point _locks in_ whatever damage was done; functionality is restored, but if your arm was broken and not set, it will heal out of place.
 
 For NPCs, being brought to 0 HP and then magically healed means they have a permanent injury. PCs don't conventionally use permanent injuries for entirely gameplay reasons. I don't like permanent injuries and neither do my players, but this is a great place to include them if you do like such things.
 ]
@@ -396,9 +399,10 @@ Orolaen is the ur-lich, an aelf who originally discovered the lich transformatio
 
 === Seleleana, called Jester
 The Jester is a wild card #aside[like you! --ed] #aside[That's not fair --IB]. Not much is known about this insane entity, other than that it is ancient (possibly a shard of the Nameless left behind, too insane to rejoin creation) and utterly devoid of reason. It plots and schemes and acts out of incomprehensible motives. Many of its plots and those of its followers are mutually incompatible with themselves. It seems to enjoy that. Some suspect it of having deeper motives, because nothing can be *truly* that random. Its followers are generally lone actors, but many of them are powerful, including the entities known as rasksha, the cat demons.
-#wide[
+
 ===== Mapping lineages to D&D races
-Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species" (since the lineages can interbreed #aside[something Bard found out the hard way a few times --ed] #aside[it was quite enjoyable, really, other than the parental support --IB] #aside[which you mostly ran away from! --ed]). They're covered in detail in the Peoples of Dawn of Hope document; this is a cheat-sheet to map their Quartan names to more common names. 
+Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species" (since the lineages can interbreed #aside[something Bard found out the hard way a few times --ed] #aside[it was quite enjoyable, really, other than the parental support --IB] #aside[which you mostly ran away from! --ed]). They're covered in detail in the rules documents; this is a cheat-sheet to map their Quartan names to more common names. 
+#wide[
 
 #dndtab(columns: (1fr, 1fr), "", align: left,
   [*Dawn of Hope*], [*Standard D&D*],
@@ -755,7 +759,7 @@ The language of demons. Written in the Lucian script but debased, it grates on t
 
 === Celestial
 The language of those who serve the Mechanism. Technically a dialect of Lucian, but when spoken by a divine messenger or member of the angelic host, it has an additional property. Words spoken with divine authority cannot be (unknowingly) misunderstood, and it is impossible to say something you don't believe. When spoken by mortals, it's merely a less-ambiguous Lucian with almost no slang and very rigid grammar.
-#pagebreak()
+
 === Draconic
 The remains of the True Language spoken by Wyrm in the First Age, draconic is a verbose, ponderous language with no native written form. Nouns are more like descriptions, and saying anything meaningful takes a long time. Non-dragon mortals (and dragons speaking to mortals) tend to abbreviate things. Much of the content of the language is in body posture; to true dragons, mortals speaking draconic are speaking the baby version and missing the whole point. #aside[And most dragons refuse to talk in anything else just to lord it over those lesser mortals --IB] #aside[That's so not true...mostly...ok, you may have a point. Sigh --ed]. Transliterations are mostly in a mix of aelven and modern runic #aside[which is exactly as messed up as it sounds --IB].
 
@@ -773,8 +777,11 @@ The four dialects of Primordial are spoken throughout the Elemental Plane. They 
 
 === Sarthak
 The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon and Serpent Seas. Written in a heavily modified, much simplified Aelven script with all the meaning stripped and only the syllabic sound values left behind, it is a pragmatic, business-first language. #aside[Although the language forms for status and hierarchy, as well as surrender, are extremely strongly developed --IB ]
-
+#colbreak()
 === Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
 
-#include "../shared/legal.typ"
+#if sys.inputs.at("standalone", default: "false") == "true" [
+#import "../shared/legal.typ" : core-legal
+#core-legal()
+]

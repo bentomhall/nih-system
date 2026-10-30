@@ -1,7 +1,6 @@
 #let darkred = rgb("#540808")
 #let darkyellow = rgb("#fcba03")
 
-
 #let aside(body) = [\[#emph(body)\]]
 #let wide(body) = place(
   auto,
@@ -20,16 +19,6 @@
   strong(title)
   linebreak()
   subtitle
-}
-
-#show table.cell: it => {
-  if it.y == 0 {
-    set text(size: 9pt, weight: "bold")
-    it
-  } else {
-    set text(size: 10pt)
-    it
-  }
 }
 
 #let safe-link(lbl, body) = context {
@@ -63,54 +52,112 @@
   ]
 ]
 
-#let statbox(stats) = [
-  #box(inset: 12pt, fill: white, stroke: 1pt, width: 100%)[
-    #set par(spacing: .6em)
-    #set text(size: 10pt) 
-    #heading(outlined: false, level: 3, stats.name)
-    
-    _ #stats.description _
+#let statbox(stats, wide: false) = {
+  let rule = line(stroke: 2pt + darkred, length: 100%)
 
-    #line(stroke: 2pt + darkred, length: 100%)
-    #context [
-      #text(fill: darkred)[*Armor Class*] #stats.ac\
-      #text(fill: darkred)[*Hit Points*] #stats.hp\
-      #text(fill: darkred)[*Speed*] #stats.speed\
-    ]
-    
-    #line(stroke: 2pt + darkred, length: 100%)
+  let header = [
+    #heading(outlined: false, level: 3, stats.name)
+
+    _ #stats.description _
+  ]
+
+  let core = [
+    #rule
+    #text(fill: darkred)[*Armor Class*] #stats.ac\
+    #text(fill: darkred)[*Hit Points*] #stats.hp\
+    #text(fill: darkred)[*Speed*] #stats.speed\
+
+    #rule
     #stats-table(stats.stats)
-    #line(stroke: 2pt + darkred, length: 100%)
+    #rule
 
     #for skill in stats.skillblock {
       [#text(fill: darkred)[*#skill.at(0)*] #skill.at(1)\ ]
     }
-    #line(stroke: 2pt + darkred, length: 100%)
+    #rule
     #for trait in stats.traits {
-      [ _*#trait.at(0).*_ #trait.at(1)]
-    }
-    
-    #context {
-      let sections = (
-        "Actions",
-        "Reactions",
-        "Limited Usage",
-        "Equipment",
-        "Legendary Actions",
-        "Variants",
-        "Scaling"
-      )
-      for section in sections {
-        if section in stats.keys() {
-          block[
-            #set par(spacing: 1em)
-            #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(section)]]
-            #for action in stats.at(section) {
-              [_*#action.at(0).*_ #action.at(1) \ ]
-            }
-          ]
-        }
-      }
+      [ _*#trait.at(0).*_ #trait.at(1)#linebreak()]
     }
   ]
-]
+
+  // (key in stats, displayed section title)
+  let sections = (
+    ("actions", "actions"),
+    ("reactions", "reactions"),
+    ("limited usage", "limited usage"),
+    ("equipment", "equipment"),
+    ("legendary", "legendary actions"),
+    ("variants", "variants"),
+    ("scaling", "scaling")
+  )
+  let actions = for (key, title) in sections {
+    if key in stats.keys() {
+      block[
+        #set par(spacing: 1em)
+        #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
+        // A one-entry section written without a trailing comma, e.g.
+        // `variants: (("Name", [...]))`, arrives as a bare pair; re-wrap it.
+        #let entries = stats.at(key)
+        #if type(entries.at(0)) == str { entries = (entries,) }
+        #for action in entries {
+          // An unnamed entry (e.g. the legendary actions preamble) is plain text.
+          if action.at(0) == "" {
+            [#action.at(1) \ ]
+          } else {
+            [_*#action.at(0).*_ #action.at(1) \ ]
+          }
+        }
+      ]
+    }
+  }
+
+  // Wide statboxes span both page columns and lay out internally as two
+  // columns: core stats and traits on the left, actions on the right.
+  let body = if wide {
+    [
+      #header
+      #grid(columns: (1fr, 1fr), column-gutter: 16pt, core, actions)
+    ]
+  } else {
+    [
+      #header
+      #core
+      #actions
+    ]
+  }
+
+  let statblock = box(inset: 12pt, fill: white, stroke: 1pt, width: 100%)[
+    #set align(left)
+    #set par(spacing: .6em)
+    #set text(size: 10pt)
+    #body
+  ]
+
+  if wide { place(auto, scope: "parent", float: true, statblock) } else { statblock }
+}
+
+#let dndtab(name, columns: (1fr, 4fr), breakable: false, ..contents) = [
+  #block(breakable: breakable)[
+    #show table.cell: it => {
+      if it.y == 0 {
+        set text(size: 9pt, weight: "bold")
+        it
+      } else {
+        set text(size: 10pt)
+        it
+      }
+    }
+  *#smallcaps(text(size: 1.3em)[#name])*
+  #v(-1em)
+  #table(
+  columns: columns,
+  align: (col, row) =>
+   if col == 0 { center }
+    else { left },
+  fill: (col, row) => if calc.odd(row+1) { rgb("#aaaaaa00") } else { rgb("#aaffaa33") },
+  inset: 10pt,
+  stroke: none,
+  // align: horizon,
+  ..contents
+  )
+]]

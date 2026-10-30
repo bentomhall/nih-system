@@ -12,7 +12,10 @@
     fancy-author: true,
     bg: none
   )
+] else [
+  #pagebreak()
 ]
+#set page(margin: (top: 15mm))
 
 = Equipment <equipment>
 
@@ -60,6 +63,19 @@ pound.
 "Astral Credit (ac)","10,000","1000","100","10","1",
 )
 
+=== Abstract Costs
+Prices and availability vary throughout known lands and even more beyond those lands. Some areas are lacking metals, so heavy armor is more difficult to acquire. Others are highly industrial, so complex items like spyglasses and clocks are relatively cheap. Some _relative_ pricing, however, tends to hold. All of these are priced relative to adventurer wealth, rather than the common folk.
+
+*Very Cheap* items are generally not worth worrying about cost for, at least for adventurers. They may cost a few copper pieces. Examples include a loaf of cheap bread or a mug of cheap beer. Anyone can pull a branch from a tree and make a functional club.
+
+*Cheap* items are those that are widely available once you get above the smallest of hamlets; any village with a local blacksmith can supply arrow heads or spear heads, for example. At most, these items cost a few (less than ten) gold pieces.
+
+*Moderately Expensive* items are harder to come by; you need specialists found only in the larger towns and cities. They may cost anywhere from 10 gp up to about 100 gp. Most weapons and armor fall into this category, as do more specialized mundane items.
+
+*Expensive* items require true specialists, found only in the largest of cities. These tend to require personal fitting or limited access, meaning you can't simply walk into a shop and buy one off the rack. Examples include a suit of fitted plate armor, barding for non-traditional mounts, adamantine or mithril items, masterwork items, and, in most areas, mechanical items such as clocks, polished glass lenses, etc. Prices for these start in the hundreds of gold pieces and go up from there.
+
+*Very Expensive* items require one-of-a-kind services. Most magic items are of this kind (especially those without a listed formula). Generally, these cannot be bought or sold; in the rare occasions where you can (such as at limited-access auctions), the prices are in the tens of thousands of gold pieces.
+
 == Selling Treasure
 
 Opportunities abound to find treasure, equipment, weapons, armor, and
@@ -71,7 +87,7 @@ that you can find buyers and merchants interested in your loot.
 
 As a general rule, undamaged weapons, armor, and other equipment fetch
 half their cost when sold in a market. Weapons and armor used by
-monsters are rarely in good enough condition to sell.
+monsters are rarely in good enough condition to sell or use.
 
 === Magic Items <magic-items>
 
@@ -98,46 +114,75 @@ used as currency.
 
 = Armor <armor>
 
-Quartus is a vast tapestry made up of many different cultures, each with
-its own technology level and historical development path. For this
-reason, adventurers have access to a variety of armor types, ranging
-from leather armor to chain mail to costly plate armor, with several
-other kinds of armor in between. The Armor table collects the most
-commonly available types of armor found in the game and separates them
-into three categories: light armor, medium armor, and heavy armor. Many
-warriors supplement their armor with a shield. Remember that you cannot
-cast spells while wearing armor unless you have a feature that
-specifically allows doing so.
+Quartus is a vast tapestry made up of many different cultures, each with its own technology level and historical development path. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. Remember that you cannot cast spells while wearing armor unless you have a feature that specifically allows doing so. Most forms of armor are commonly worn with a helmet of some kind, ranging from a simple boiled-leather cap to a full on bascinet, and this protection is included in the armor's rating, as are normal gloves and boots. Magical helms, boots, and gloves can replace those normally worn; they do not change the AC of the armor unless they specifically say they do.
 
-The Armor table shows the cost, weight, and other properties of the
-common types of armor worn by adventurers. Those types worn mostly by NPCs, such as various cloth armors and primitive hides, are omitted. Most forms of armor are commonly worn with a helmet of some kind, ranging from a simple boiled-leather cap to a full on bascinet, and this protection is included in the armor's rating, as are normal gloves and boots. Magical helms, boots, and gloves can replace those normally worn; they do not change the AC of the armor unless they specifically say they do.
+NIH takes a slightly abstracted view of the mechanics of armor; it does not have a list of specific armor types. Instead, it provides three categories and a set of properties within those categories. Each category (heavy, medium, and light), sets the base AC formula for armors of that type (including whether to add a contribution from your Dexterity modifier). Properties modify this number with tradeoffs such as imposing disadvantage on Dexterity (Stealth) or adding Strength requirements. Some properties mostly interact with other rules, such as the Metallic property, which allows certain modifications and disallows others, while changing how some spells (such as #safe-link("shocking-grasp", [_shocking grasp_])) affect the wearer.
+
+== Armor categories
+=== Heavy Armor
+Heavy armor is generally metallic in nature and covers the critical areas of the body with layered protection. It trades mobility for protection. Of all the armor types, it has the highest potential AC, but doesn't benefit by default from Dexterity. Wearers of heavy armor don't dodge blows as much as let them glance off the curved plates and surfaces of their armor. Heavy armor almost always includes an underlaying layer of padding (a gambeson), a helmet, heavy gloves or gauntlets, and leg protection in the form of greaves or heavy reinforced leather pants and boots or sabatons. These extras are sometimes integrated with the core protection, presenting a particularly hard-to-harm target. Without any modifications, heavy armor jingles and clanks, making stealth more difficult.
+
+Examples of heavy armor might include:
+- A full suit of chain, including a coif and chain gloves and boots.
+- A full suit of plate armor.
+- A suit of lamellar armor, such as what was worn by late-era samurai.
+
+*Base Armor Class (Heavy Armor).* Your AC while wearing heavy armor equals 16. You do not add any Dexterity modifier to your AC unless your armor is Masterwork.
+
+*Default Properties (Heavy Armor).* Heavy armor defaults to Metallic, Cumbersome (+1), and Loud.
+
+=== Light Armor
+Light armor isn't so much about deflecting blows as keeping incidental contact from opening your skin. It is made of heavy cloth, leather, and other reinforcements and rarely metal. Wearers rely on their evasion more than on their armor to avoid the worst of enemy attacks. It prioritizes freedom of movement over protection. As a result, the total armor class for wearers of light armor is lower than for heavy or medium armor and more investment into Dexterity is required. Light armor generally pairs with a leather helmet, light gloves, and boots.
+
+Examples of light armor might include:
+- A buff coat (heavy leather coat worn originally as an underlay for heavier armor but then alone once heavy armor declined)
+- A padded cloth gambeson, worn alone.
+- Fantasy leather armor.
+
+*Base Armor Class (Light Armor).* Your AC while wearing light armor equals 11 + your Dexterity modifier (even if negative).
+
+*Default Properties (Light Armor).* Light armor has no default properties.
+
+=== Medium Armor
+Medium armor is a compromise between heavy and light armor. More protective than light armor with a smaller Dexterity investment for maximum results, but less so than heavy. Usually made of metal, it covers less than heavy armor (often just the torso, shoulders, and hips) and sometimes only covers the front of the body. Helmet, boots, gloves, etc. are present and heavier than light armor, but not integrated into the core and usually just reinforced leather or cloth.
+
+Examples of medium armor might include:
+- A Spanish conquistador's breastplate
+- A brigandine (small plates of metal sandwiched between and riveted to a cloth and leather coat)
+- A chain shirt, covering only the torso, shoulders, and hips. 
+
+*Base Armor Class (Medium Armor).* Your AC while wearing medium armor equals 14 + your Dexterity modifier (max +2).
+
+*Default Properties (Medium Armor).* Medium armor defaults to Metallic.
+
+== Armor Properties
+The following is a complete list of the properties armor can have. Additional armor class provided by different properties does not stack.
+=== Cumbersome (+X)
+Cumbersome armor requires physical strength and training to maneuver in and especially fight and move in for long periods. If you wear Cumbersome armor and your Strength modifier is not at least equal to the value in parentheses, you make attack rolls and Dexterity saving throws and checks at disadvantage.
+
+If a type of armor does not have Cumbersome by default, adding Cumbersome with X = 1 or more increases the base armor class by 1. If it does have Cumbersome (+1) by default (ie heavy armor), increasing it to +2 or higher increases the base armor class by 1 per additional point of Strength required, with a maximum bonus of +2 for Cumbersome (+3). 
+
+=== Loud
+Loud armor jingles, rattles, or otherwise is hard to move stealthily in. You have disadvantage on Dexterity (Stealth) checks while wearing Loud armor.
+
+If a type of armor does not have Loud by default, adding Loud increases the base armor class by 1.
+=== Metallic
+Metallic armor is primarily made of plates or sheets of metal. This property has no intrinsic effects, but some spells (such as #safe-link("shocking-grasp", [_shocking grasp_]) or #safe-link("heat-metal", [_heat metal_])), monster features, and exotic materials treat Metallic armor differently than non-metallic armor.
+
 
 == Armor Proficiency
 
-Anyone can put on a suit of armor or strap a shield to an arm. Only
-those proficient in the armor's use know how to wear it effectively,
-however. Your class gives you proficiency with certain types of armor.
-If you wear armor or wield a shield that you lack proficiency with, you
-have disadvantage on any ability check, saving throw, or attack roll
-that involves Strength or Dexterity.
+Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor or wield a shield that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity.
 
 == Armor Class (AC)
 
 Armor protects its wearer from attacks. The armor (and shield) you wear
-determines your base Armor Class.
+determines your base Armor Class calculation. If you have a feature (such as Unarmored Defense) that provides an alternate calculation, you must pick and choose which one you use.
 
-== Heavy Armor
+== Price
+The more protective armors are more expensive. Armors made of exotic materials or masterwork armors are even more expensive and hard to acquire. Generally, light armor is Cheap (a few gold and available in most settlements), medium armor is Moderately Expensive (low hundreds of gold pieces and available only large towns and above), and heavy armor is Extremely Expensive (high hundreds to low thousands of gold pieces, available only in major cities).
 
-Heavier armor interferes with the wearer's ability to move quickly,
-stealthily, and freely. If the Armor table shows "Str +2" or "Str +3" in
-the Strength column for an armor type, the armor imposes disadvantage on
-attack rolls and Dexterity saving throws unless the wearer has a
-Strength score equal to or higher than the listed score.
-
-== Stealth
-
-If the Armor table shows "Disadvantage" in the Stealth column, the
-wearer has disadvantage on Dexterity (Stealth) checks.
+Masterwork armor costs at least twice as much as the base armor and generally requires a specialized crafter. Exotic materials require providing the materials, finding a specialized crafter, and increase the cost by a variable amount depending on the material.
 
 == Shields
 
@@ -147,108 +192,24 @@ shield at a time. You can grasp an item in the same hand, but you cannot
 effectively wield a weapon or cast a spell with the hand that is
 occupied.
 
-== Light Armor
-
-Made from supple and thin materials, light armor favors agile
-adventurers since it offers some protection without sacrificing
-mobility. If you wear light armor, you add your Dexterity modifier to
-the base number from your armor type to determine your Armor Class.
-
-=== Leather <leather>
-
-The breastplate and shoulder protectors of this armor are made of
-leather that has been stiffened by being boiled in oil. The remainder is either supple leather or cloth. It only covers
-the vitals and rarely has a back-plate.
-
-=== Reinforced Leather <reinforced-leather>
-
-Reinforced leather armor is a regular leather suit of armor that has
-been reinforced with metal, wood, or bone plates in a few critical areas. It
-still only covers the upper body and shoulders, and is much less reinforced than a brigandine, while simultaneously restricting movement less.
-
-== Medium Armor
-
-Medium armor offers more protection than light armor, but it also
-impairs movement more. If you wear medium armor, you add your Dexterity
-modifier, to a maximum of +2, to the base number from your armor type to
-determine your Armor Class.
-
-=== Chain Shirt <chain-shirt>
-
-Made of interlocking metal rings, a chain shirt is worn between layers
-of clothing or leather. This armor offers modest protection to the
-wearer's upper body and allows the sound of the rings rubbing against
-one another to be muffled by outer layers.
-
-=== Brigandine <brigandine>
-
-Also called a coat-of-plates, this armor consists of a heavy cloth cover
-with small plates riveted between the layers, much like a heavier
-version of Reinforced Leather. It may cover the upper arms, but is often
-in the form of a vest. It is often worn with protective leg coverings of cloth and leather.
-
-=== Breastplate <breastplate>
-
-This armor consists of a fitted metal chest piece worn with chain
-tassets (covering the hips and upper thighs) and fauds (covering the
-shoulders). Although it leaves the legs and arms relatively unprotected (other than any separate leggings, greaves, or gloves worn),
-this armor provides good protection for the wearer's vital organs while
-leaving the wearer relatively unencumbered.
-
-== Heavy Armor
-
-Of all the armor categories, heavy armor offers the best protection.
-These suits of armor cover the torso and include at least tassets and fauds and
-often include integrated arm, hand, leg, head, and foot protection and
-are designed to stop a wide range of attacks. Only proficient warriors
-can manage their weight and bulk.
-
-Heavy armor doesn't let you add your Dexterity modifier to your Armor
-Class (unless masterwork), but it also doesn't penalize you if your
-Dexterity modifier is negative.
-
-=== Lamellar armor <lamellar-armor>
-
-This armor is made of metal (usually, although bone and wood can also be
-used) strips or plates held together by leather cords. Separate arm,
-leg, foot, and head pieces of the same pattern are commonly worn.
-
-=== Chain Mail <chain-mail>
-
-Made of interlocking metal rings, chain mail includes a layer of quilted
-fabric worn underneath the mail to prevent chafing and to cushion the
-impact of blows. The suit includes gauntlets, long sleeves, and a chain
-coif (head covering).
-
-=== Half Plate <half-plate>
-
-Half plate consists of shaped metal plates that cover most of the
-wearer's body with a mail skirt and metal tassets and fauds to cover the hips, groin, and shoulders. It does not include leg protection beyond simple greaves
-that are attached with leather straps; similar coverings are used for
-the arms.
-
-=== Plate <plate>
-
-Plate (also called "plate mail", despite that being a misnomer) consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots or metal
-sabatons, a visored helmet, and thick layers of padding and underneath the armor, with mail protecting the vulnerable-but-hard-to-protect areas like the inner thighs. Buckles and straps distribute the weight over the body.
+Shields are Cheap.
 
 #wide[
-  #dndtab("Armor", columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-  "Armor","Cost","Armor Class (AC)","Strength","Stealth","Weight",
-  [*Light Armor*],"","","","","",
-  "Leather","10 gp","11 + DEX","---","---","10 lb.",
-  "Reinforced leather","45 gp","12 + DEX","---","---","13 lb.",
-  [*Medium Armor*],"","","","","",
-  "Chain shirt","50 gp","13 + DEX (max 2)","---","---","15 lb.",
-  "Brigandine","400 gp","14 + DEX (max 2)","+2","---","15 lb.",
-  "Breastplate","750 gp","15 + DEX (max 2)","+2","D","20 lb.",
-  [*Heavy Armor*],"","","","","",
-  "Lamellar armor","30 gp","15","---","D","20 lb.",
-  "Chain mail","75 gp","16","+1","D","25 lb.",
-  "Half plate","750 gp","17","+2","D","25 lb.",
-  "Plate","1,500 gp","18","+2","D","30 lb.",
-  [*Shield*],"","","","","",
-  "Shield","10 gp","+2","---","---","6 lb.",
+  #dndtab("Example Armors", columns: (2fr, 1fr, 1fr, 1fr), align: left,
+  "Armor","Cost","Armor Class (AC)","Properties",
+  table.cell(colspan:4)[*Light Armor*],
+  "Leather Coat","Cheap","11 + DEX","---",
+  "Reinforced Gambeson", "Cheap", "12 + DEX", "Cumbersome (+2)",
+  table.cell(colspan:4)[*Medium Armor*],
+  "Chain shirt","Moderate","14 + DEX (max 2)","Metallic",
+  "Brigandine","Expensive","15 + DEX (max 2)","Cumbersome (+2), Metallic",
+  "Breastplate","Expensive","15 + DEX (max 2)","Loud, Metallic",
+  table.cell(colspan:4)[*Heavy Armor*],
+  "Lamellar armor","Expensive","16","Cumbersome (+1), Loud, Metallic",
+  "Chain/Half plate","Extremely Expensive","17", "Cumbersome (+2), Loud, Metallic",
+  "Plate","Extremely Expensive","18","Cumbersome (+3), Loud, Metallic",
+  table.cell(colspan:4)[*Shield*],
+  "Shield","Cheap","+2","---",
   )
 ]
 
@@ -281,13 +242,10 @@ normal materials used for armor, and what makes up the entries above.
 Adventures take place in fantastic worlds, and those worlds have many
 different exotic materials. The table below shows a few of these exotic
 materials. Each one applies to a particular type of armor (either a
-category such as heavy armor or a specific type of armor such as
-padded), has a rarity roughly corresponding to the tier in which you can
+category such as heavy armor or property), has a rarity roughly corresponding to the tier in which you can
 expect to find them, and an effect or effects.
 
-Additionally, Masterwork armor can be crafted by particularly skilled
-craftsmen. It costs twice the normal price, but reduces the cost of the
-action by 1 STA. Masterwork heavy and medium armor also allows you to
+Additionally, Masterwork armor can be crafted by particularly skilled craftsmen. It costs twice the normal price, but reduces the cost of the #safe-link("deflect", "Deflect")  action by 1 STA. Masterwork heavy and medium armor also allows you to
 add an additional point of your Dexterity bonus (if positive) to your
 AC. This raises the contribution from Dexterity for heavy armor to +1
 max.
@@ -295,58 +253,84 @@ max.
 #dndtab("Exotic Armor Materials", columns: (1fr, 2fr, 1fr),
 "Material","Applies To","Tier",
 "Adamantine","Heavy armor","Adventurer",
-"Exotic chitin and scales","Lamellar, brigandine, breastplate","Adventurer",
-"Exotic leather","Leather, reinforced leather","Journeyman",
-"Mithril","Heavy armor, medium armor","Adventurer",
+"Exotic chitin and scales","Metallic armor","Adventurer",
+"Exotic leather","Light armor","Journeyman",
+"Mithril","Metallic Cumbersome or Loud armor","Adventurer",
 )
 
 === Adamantine <adamantine>
-This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor has a strength requirement of +3.
+This dark, dull-black metal is quite dense (about twice the density of iron). When used in heavy armor, it doubles the weight but makes critical hits act like normal hits (not dealing any additional damage or other effects). Such armor gains Cumbersome (+3) with the attendant change in base AC if it doesn't already have it.
+
+*Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
 === Exotic Chitin and Scales <exotic-chitin-and-scales>
-When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into lamellar, brigandine, and breastplates. Such armor is non-metallic, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
+When skinned carefully, exotic chitin (such as from an ankheg or land shark) or scales (such as from a dragon) can be worked into Metallic armor that has a maximum Cumbersome rating of +1. Such armor loses the Metallic property, and if the creature had immunity to a particular damage type (like a blue dragon's immunity to lightning damage), the wearer gains resistance to that type.
 
 === Exotic Leather <exotic-leather>
-When skinned carefully and properly tanned, exotic leathers and hides can be made into leather and reinforced leather armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
+When skinned carefully and properly tanned, exotic leathers and hides can be made into light armor. Such armor has its base armor class increased by 1 over similar armor made with normal materials.
 
 === Mythril <mythril>
-Silvery and light, mythril is one of the more well-known special materials. When used to make metal armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had a strength requirement, it is removed. Similarly, mythril armor does not cause disadvantage on stealth checks.
+Silvery and light, mythril is one of the more well-known special materials. When used to make Metallic armor, it decreases the weight to half of its normal value and the armor is immune to corrosion (including from corrosive creatures). If the armor had Cumbersome, its rating decreases by 1 without changing the base armor class. Additionally, the armor loses the Loud property if it had it, also without changing the base armor class.
+
+*Formula.* To craft mithral armor, you must procure one-quarter of the weight of the armor in refined mithral metal (three-quarters of the weight in raw mithral ore). The cost of the crafting is twice the base price of the armor or four times if you wish to have masterwork mithral armor. Crafting mithral armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
 
 = Weapons <weapons>
 
-Your class grants proficiency in certain weapons, reflecting both the
-class's focus and the tools you are most likely to use. Whether you
-favor a longsword or a longbow, your weapon and your ability to wield it
-effectively can mean the difference between life and death while
-adventuring.
+Your class grants proficiency in one or more categories of weapons. When you make an attack with a weapon, you use either your Melee Attack Modifier or your Ranged Attack modifier depending on the type of weapon, regardless of whether you have proficiency or not. If you do not have proficiency in that type of weapon, you make your attack at disadvantage and cannot use any of the beneficial weapon properties of the weapon. Your class also either grants Advanced weapon skill or Basic weapon skill. This determines the base damage done by your weapon, before modifiers from the properties.
 
-The Weapons table shows the most common weapons used in the fantasy
-gaming worlds, their price and weight, the damage they deal when they
-hit, and any special properties they possess. Every weapon is classified
-as either melee or ranged. A melee weapon is usually used to attack a
-target within 5 feet of you, whereas a ranged weapon is used to attack a
-target at a distance.
+== Weapon Skill
+Basic weapon skill means that your melee and ranged weapons deal 1d6 + the appropriate ability modifier (Strength for melee, Dexterity for ranged) damage of the type set by the category. This can be modified by weapon properties.
 
-== Weapon Proficiency
+Advanced weapon skill means that your melee weapons deal 1d10 + your Strength modifier damage and your ranged weapons deal 1d8 + your Dexterity modifier damage, both of the type set by the category. This can be modified by weapon properties.
 
-Your lineage, culture, and class can grant you proficiency with certain
-weapons or categories of weapons. The two categories are *simple* and
-*martial*. Most people can use simple weapons with proficiency. These
-weapons include clubs, maces, and other weapons often found in the hands
-of commoners. Martial weapons, including swords, axes, and polearms,
-require more specialized training to use effectively. Most warriors use
-martial weapons because these weapons put their fighting style and
-training to best use.
+If you have the Nimble Strike or the Weapon Versatility feature, you can use Dexterity instead of Strength (Nimble Strike) for melee weapons and Strength instead of Dexterity (Weapon Versatility) for ranged weapons. Note that the damage done does not depend on the type of attack, but on the type of weapon. Throwing a dagger (a light blade with the Thrown property) uses your Melee Attack Modifier and Strength by default.
 
-Proficiency with a weapon allows you to add your proficiency bonus to
-the attack roll for any attack you make with that weapon. If you make an
-attack roll using a weapon with which you lack proficiency, you do not
-add your proficiency bonus to the attack roll.
+== Weapon Categories
+
+The categories are:
+- Bashing
+- Exotic
+- Hafted
+- Heavy Blades
+- Light Blades
+- Ranged
+
+=== Bashing Weapons
+Bashing melee weapons are things like clubs, knuckle-dusters, maces, war hammers, quarterstaffs, etc. They all deal bludgeoning damage and have two properties of your choice from Battering, Light, Reach, Parrying, and Two-handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Bashing weapons tend to be very Cheap, at least at their most primitive. A cane or walking stick makes a decent club, after all.
+
+=== Exotic Weapons
+Exotic weapons are those that don't fit neatly into other categories. They are most often characterized by being their own ammunition. Kunai, throwing stars, vials of acid or alchemist's fire, as well as whips fall into this category. They all have the Special property which defines their damage, damage type and other restrictions and behaviors. Most of them have the Concealable and Thrown properties as well.
+
+Exotic weapons tend to be quite Expensive, although some classes have ways of producing them fairly cheaply. Whips are the exception, being Cheap.
+
+=== Hafted Weapons
+Hafted melee weapons are things like axes (hand or battle), flails, halberds, spears, and most other polearms. They are distinguished by having a separate head and haft; the latter often of wood while the head is usually metal. They can deal your choice of slashing, bludgeoning, or piercing damage. They have two properties of your choice from Battering, Cleaving, Light, Reach, Thrown, or Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Hafted weapons tend to be Cheap (for the simple ones) and Moderate (for the more expensive ones). The amount of metal involved is small, and spears can be made quite effortlessly.
+
+=== Heavy Blades
+Heavy blades are things like scimitars, long swords (more formally arming swords), greatswords, katanas, nanginatas, etc. They can either stab or slash (and many can do both) but are hard to conceal on your person. They deal your choice of slashing and piercing damage and have either the Cleaving or Parrying property. They also have up to two other properties of your choice from Reach, Two Handed, Parrying, Precise, or Cleaving. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Heavy blades tend to be the most expensive non-Exotic weapons, with the largest of them being Expensive. They require specialized techniques to forge and substantial amounts of good metal.
+
+=== Light Blades
+Light blades are things like daggers, shortswords, kukri, wakizashi, and sickles or kama. They are easy to conceal on your person and often used as an off-hand or thrown weapon. They deal your choice of piercing or slashing damage and have the Concealable property and up to two other properties of your choice from Light, Parrying, Precise, or Thrown. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Light blades are Moderate in cost; most smiths can turn out a knife or dagger, but not as cheap as most hafted weapons.
+
+=== Ranged Weapons
+Ranged weapons are the entire gamut of normal bows, crossbows, and slings. They always have the Ammunition property and deal your choice of piercing or bludgeoning damage. They also can have two of your choice properties from Loading, Precise, Reinforced, and Two Handed. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+Ranged weapons range from very Expensive (crossbows) to quite cheap (slings). Wyrmhold has crossbows as fairly standard equipment, being a highly industrial society, while Kotimaa relies on the bow, lovingly crafted by artisans.
 
 == Weapon Properties <weapon-properties>
 
 Many weapons have special properties related to their use, as shown in
-the Weapons table.
+the Weapons table. These properties may modify the damage rolled for the weapon. As usual, no adjustment to damage can increase the damage beyond 1d12 or decrease it below 1d4.
+
+The damage dies step as follows: 1d4 $arrow.l.r$ 1d6 $arrow.l.r$ 1d8 $arrow.l.r$ 1d10 $arrow.l.r$ 1d12.
 
 #breakoutbox("Hands and Weapons")[
 Your character does not have a "main hand" and "off hand". If you are
@@ -363,6 +347,7 @@ Unlike 5e, there is no Versatile property.
 ]
 
 === Ammunition <ammunition-property>
+_Damage Die Change:_ N/A
 
 You can use a weapon that has the ammunition property to make a ranged
 attack only if you have ammunition to fire from the weapon. Each time
@@ -372,35 +357,29 @@ attack (you need a free hand to load a one-handed weapon). At the end of
 the battle, you can recover half your expended ammunition by taking a
 minute to search the battlefield.
 
-If you use a weapon that has the ammunition property to make a melee
+If you use a weapon that has the Ammunition property but not the Reinforced property to make a melee
 attack, you treat the weapon as an improvised weapon (see "Improvised
 Weapons" later in the section). A sling must be loaded to deal any
 damage when used in this way.
 
 === Battering <battering-property>
+_Damage Die Change:_ N/A
 
-When you miss on an attack with a Battering weapon and do not roll a 1,
-the target still takes damage equal to your proficiency bonus.
-
-=== Consumed <consumed-property>
-
-Unlike most thrown weapons, each attack consumes the weapon, as the weapon
-is its own ammunition.
+When you miss on an attack with a Battering weapon and do not roll a 1, the target still takes damage equal to your proficiency bonus.
 
 === Cleaving <cleaving-property>
+_Damage Die Change:_ N/A
 
-Once per turn when you hit with a Cleaving weapon, you can attempt to
-carry some of the damage onto another target within your reach. If you
-do so, compare the initial attack roll to the new target's AC. If it
+Once per turn when you hit with a Cleaving weapon, you can attempt to carry some of the damage onto another target within your reach. If you do so, compare the initial attack roll to the new target's AC. If it
 hits, they take the same damage as the initial target.
 
-=== Heavy <heavy-property>
+=== Concealable <concealable-property>
+_Damage Die Change:_ N/A
 
-Small creatures have disadvantage on attack rolls with heavy weapons. A
-heavy weapon's size and bulk make it too large for a Small creature to
-use effectively.
+Concealable weapons can be hidden in clothing with a successful Dexterity (Sleight of Hand) check.
 
 === Light <light-property>
+_Damage Die Change:_ -1 step
 
 A light weapon is small and easy to handle, making it ideal for use when
 fighting with two weapons. When you wield a light weapon in each hand
@@ -409,45 +388,32 @@ make attacks with each weapon. This extra attack does not add your
 ability modifier to the damage dealt.
 
 === Loading <loading-property>
+_Damage Die Change:_ +1 step
 
-Because of the time required to load this weapon, you can fire only one
-piece of ammunition from it when you use an action, bonus action, or
-reaction to fire it, regardless of the number of attacks you can
-normally make.
+Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
 
 === Parrying <parrying-property>
+_Damage Die Change:_ N/A
 
-When you take the Deflect action while wielding a parrying weapon, you
-no longer expend your reaction. You can only use the Deflect action once
-during any turn.
+When you take the Deflect action while wielding a parrying weapon, you no longer expend your reaction. Once you use this property, you cannot do so again until the start of your next turn. As a result, if you take the Deflect action twice, you must expend your reaction the second time.
 
 === Precise <precise-property>
+_Damage Die Change:_ N/A
 
-These weapons are well adapted to finding the gaps in heavily-armored
-foes. When you make an attack with a precise weapon and have advantage,
-you score a critical hit on a 19 or 20.
-
-=== Range <range-property>
-
-A weapon that can be used to make a ranged attack has a range in
-parentheses after the ammunition or thrown property. The range lists two
-numbers. The first is the weapon's normal range in feet, and the second
-indicates the weapon's long range. When attacking a target beyond normal
-range, you have disadvantage on the attack roll. You can't attack a
-target beyond the weapon's long range.
+These weapons are well adapted to finding the gaps in heavily-armored foes. When you make an attack with a precise weapon and have advantage, you score a critical hit on a 19 or 20.
 
 === Reach <reach-property>
+_Damage Die Change:_ N/A
 
-This weapon adds 5 feet to your reach when you attack with it, as well
-as when determining your reach for opportunity attacks with it.
+This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it. Note that the default reach is 5 feet. Except for the whip Exotic weapon, all Reach weapons must also be Two Handed.
 
 === Special <special-property>
+_Damage Die Change:_ Special (damage as listed)
 
-A weapon with the special property has unusual rules governing its use,
-explained in the weapon's description (see "Special Weapons" later in
-this section).
+A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see "Special Weapons" later in this section).
 
 === Thrown <thrown-property>
+_Damage Die Change:_ N/A
 
 If a weapon has the thrown property, you can throw the weapon to make an
 attack at larger range. If the weapon is a melee weapon, you use the
@@ -456,10 +422,9 @@ would use for a melee attack with the weapon. The range is defined the
 same way as it is for a ranged weapon, but this remains a melee attack.
 
 === Two-Handed <two-handed-property>
+_Damage Die Change:_ +1 step
 
-This weapon requires two hands when you attack with it. You can hold it
-in one hand, however. Two-handed weapons add twice your Strength
-modifier to the damage dealt, instead of just your Strength modifier.
+This weapon requires two hands when you attack with it. You can hold it in one hand, however. Two-handed weapons cannot be concealed barring invisibility. 
 
 === Improvised Weapons <improvised-weapons>
 
@@ -471,13 +436,21 @@ pan, a wagon wheel, or a dead goblin.
 Often, an improvised weapon is similar to an actual weapon and can be
 treated as such. For example, a table leg is akin to a club. At the GM's
 option, a character proficient with a weapon can use a similar object as
-if it were that weapon and use his or her proficiency bonus.
+if it were that weapon and gain the benefits of proficiency, although the weapon still lacks any other properties.
 
 An object that bears no resemblance to a weapon deals 1d4 damage (the GM
 assigns a damage type appropriate to the object). If a character uses a
 ranged weapon to make a melee attack, or throws a melee weapon that does
 not have the thrown property, it also deals 1d4 damage. An improvised
-thrown weapon has a normal range of 20 feet and a long range of 60 feet.
+thrown weapon has a normal range of 20 feet and a long range of 60 feet. Such attacks are always made at disadvantage due to lacking proficiency.
+
+== Weapon Range <range-property>
+
+Ranged and thrown weapons have listed ranges. The ranges lists two
+numbers. The first is the weapon's normal range in feet, and the second
+indicates the weapon's long range. When attacking a target beyond normal
+range, you have disadvantage on the attack roll. You can't attack a
+target beyond the weapon's long range. Ranged weapons have a range of 80/320, while Thrown weapons have a range of 30/90.
 
 == Silvered Weapons
 
@@ -505,7 +478,7 @@ effect, and application of each material can be found on the table.
 #dndtab("Fantastic Weapons Materials", columns: (1fr, 2fr, 1fr),
 "Material","Applies To","Tier",
 "Adamantine","Metal weapons","Adventurer",
-"Mithril","Metal weapons","Adventurer",
+"Mithril","Metal weapons","Journeyman",
 "Ignitite","Ammunition, melee weapons","Adventurer",
 "Necrite","Ammunition, melee weapons","Adventurer",
 )
@@ -517,7 +490,7 @@ This dark, dull-black metal is quite dense (about twice the density of iron). It
 This red and black stone can be ground up and alloyed with steel to make weapons. Such weapons deal 1d6 additional fire damage on hit. These weapons ignite flammable materials (like a flint and tinder) and must be sheathed in non-flammable cases or sheaths.
 
 === Mythril <mythril>
-Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Greatswords and greataxes lose the Heavy property, and weapons without the Two-Handed property gain the Light property.
+Silvery and light, mythril is one of the more well-known special materials. When used to craft weapons, their weight is halved and they become immune to rusting (including from corrosive monsters). They also count as silvered. Weapons without the Two-Handed property gain the Light property, and Thrown mythril weapons have a normal range equal to their long range.
 
 === Necrite <necrite>
 An oily jet-black stone formed when obsidian is exposed to substantial abyssal influence, it can be powdered  and alloyed with steel to form weapons that trap spirits. Such weapons deal 1d6 additional necrotic damage on hit. Killing blows from necrite weapons trap incorporeal creatures, allowing them to be forced to answer one question when asked by the holder of the weapon within 1 minute of their destruction. This acts as the Voice the Voiceless incantation.
@@ -532,6 +505,55 @@ This sticky, adhesive fluid ignites when exposed to air. On a hit, the
 target takes 2d4 fire damage immediately and 1d4 fire damage at the
 start of each of its turns. A creature can end this damage by using its
 action to make a DC 10 Dexterity check to extinguish the flames.
+#pagebreak()
+#wide[
+#dndtab("Example Weapons", columns: (1fr, 1fr, 1fr, 2fr), breakable: true, align: left,
+"Name", "Basic", "Damage", "Properties",
+table.cell(colspan: 4)[*Bashing Weapons*],
+"Club/Singlestick", "1d4 bludgeoning", "1d8 bludgoning", "Light, Parrying",
+"Mace/Warhammer", "1d6 bludgeoning", "1d10 bludgeoning", "Battering",
+"Maul", "1d8 bludgeoning", "1d12 bludgeoning", "Battering, Two-handed",
+"Quarterstaff", "1d8 bludgeoning", "1d12 bludgeoning", "Parrying, Two-handed",
+table.cell(colspan: 4)[*Exotic Weapons*],
+"Acid, Vial", "2d4 acid", "2d4 acid", "Concealable, Special, Thrown",
+"Alchemist Fire, Vial", "2d4 fire", "2d4 fire", "Concealable, Special, Thrown",
+"Holy Water, Flask", "2d6 radiant", "2d6 radiant", "Concealable, Special, Thrown",
+"Whip", "1d6 slashing", "1d8 slashing", "Reach, Special",
+table.cell(colspan: 4)[*Hafted Weapons*],
+"Battle-axe", "1d6 slashing", "1d10 slashing", "Battering, Cleaving",
+"Flail", "1d6 bludgeoning", "1d10 bludgeoning", "Battering, Precise",
+"Hand-axe", "1d4 slashing", "1d8 slashing", "Light, Thrown",
+"Javelin", "1d6 piercing", "1d10 piercing", "Precise, Thrown",
+"Glaive/Halberd", "1d8 slashing", "1d12 slashing", "Reach, Two-handed",
+"Greatspear", "1d8 piercing", "1d12 piercing", "Reach, Two-handed",
+"Spear", "1d6 piercing", "1d10 piercing", "Parrying, Precise",
+"Trident", "1d8 piercing", "1d12 piercing", "Special, Two-handed",
+)
+]
+#pagebreak()
+#wide[
+#dndtab("Example Weapons (cont.)", columns: (1fr, 1fr, 1fr, 2fr), align: left,
+"Name", "Basic", "Damage", "Properties",
+table.cell(colspan: 4)[*Heavy Blades*],
+"Arming Sword/Katana", "1d6 slashing", "1d10 slashing", "Parrying, Cleaving",
+"Scimitar", "1d4 slashing", "1d8 slashing", "Light, Parrying",
+"Hand-and-half Sword", "1d8 slashing", "1d12 slashing", "Parrying, Two-handed",
+"Greatsword/Claymore", "1d8 slashing", "1d12 slashing", "Cleaving, Two-handed",
+"Rapier", "1d8 piercing", "1d12 piercing", "Parrying, Precise",
+table.cell(colspan: 4)[*Light Blades*],
+"Dagger, Parrying", "1d4 piercing", "1d8 piercing", "Concealable, Light, Parrying",
+"Dagger, Stilletto", "1d4 piercing", "1d8 piercing", "Concealable, Light, Precise",
+"Dagger, Throwing", "1d4 piercing", "1d8 piercing", "Concealable, Light, Thrown",
+"Short sword", "1d4 piercing or slashing", "1d8 piercing or slashing", "Concealable, Light, Precise",
+table.cell(colspan: 4)[*Ranged Weapons*],
+"Blowgun", "1d4 piercing", "1d4 piercing", "Ammunition (dart), Special",
+"Bow", "1d8 piercing", "1d12 piercing", "Ammunition (arrow), Precise, Two-handed",
+"Crossbow", "1d8 piercing", "1d12 piercing", "Ammunition (bolt), Loading, Reinforced, Two-handed",
+"Hand Crossbow", "1d6 piercing", "1d8 piercing", "Ammunition (bolt), Light, Loading",
+"Sling", "1d6 bludgeoning", "1d8 bludgeoning", "Ammunition (sling bullet)"
+)
+]
+#pagebreak()
 
 === Blowgun <blowgun>
 
@@ -550,12 +572,6 @@ having been struck by a silvered weapon. Any devout individual may
 create holy water by performing a special ritual. The ritual takes 1
 hour to perform and consumes 25 gp worth of powdered silver.
 
-=== Lance <lance>
-
-You have disadvantage when you use a lance to attack a target within 5
-feet of you. Also, a lance requires two hands to wield when you aren't
-mounted.
-
 === Trident <trident>
 
 Critical hits made with this weapon grapple the enemy until the end of
@@ -567,57 +583,13 @@ While wielding a whip, you have advantage on ability checks made to push
 someone prone (ie trip them) and when you do so, you can choose to pull
 them 5 ft closer to you as part of that same attack.
 
-#dndtab("Weapons", columns: (1.5fr, 1fr, 2fr, 1fr, 3fr), 
-"Name","Cost","Damage","Weight","Properties",
-[*Simple Melee Weapons*],"","","",
-"Club","1 sp","1d4 bludgeoning","2 lb.","Light",
-"Dagger","2 gp","1d4 piercing","1 lb.","Light, precise, thrown (range 20/60)",
-"Greatclub","2 sp","1d8 bludgeoning","10 lb.","Battering, two-handed",
-"Handaxe","5 gp","1d6 slashing","2 lb.","Light, thrown (range 20/60)",
-"Javelin","5 sp","1d6 piercing","2 lb.","Thrown (range 30/120)",
-"Light hammer","2 gp","1d4 bludgeoning","2 lb.","Light, thrown (range 20/60)",
-"Mace","5 gp","1d6 bludgeoning","2 lb.","Battering",
-"Quarterstaff","2 sp","1d6 bludgeoning","3 lb.","Battering",
-"Sickle","1 gp","1d4 slashing","1 lb","Cleaving, light",
-"Spear","1 gp","1d8 piercing","3 lb.","Thrown (range 20/60)",
-[*Simple Ranged Weapons*],"","","",
-"Acid, Vial of","25 gp","2d6 acid","1 lb.","Consumed, thrown (range 20)",
-"Alchemist's Fire, Flask of","50 gp","2d4 fire","1 lb.","Consumed, special, thrown (range 20)",
-"Crossbow, light","25 gp","1d8 piercing","5 lb.","Ammunition (range 80/320), loading, two-handed",
-"Dart","5 cp","1d4 piercing","1/4 lb.","Thrown (range 20/60)",
-"Holy water, Flask of","25 gp","2d6 radiant (special)","1 lb.","Consumed, special, thrown (range 20)",
-"Shortbow","15 gp","1d6 piercing","2 lb.","Ammunition (range 80/320), two-handed",
-"Sling","1 sp","1d6 bludgeoning","","Ammunition (range 30/120), battering",
-[*Martial Melee Weapons*],"","","",
-"Battleaxe","10 gp","1d10 slashing","4 lb.","Cleaving",
-"Glaive","20 gp","1d10 slashing","6 lb.","Cleaving, heavy, reach, two-handed",
-"Greataxe","15 gp","1d12 slashing","7 lb.","Cleaving, heavy, two-handed",
-"Greatsword","50 gp","1d12 slashing","6 lb.","Heavy, parrying, two-handed",
-"Halberd","20 gp","1d10 slashing","6 lb.","Heavy, parrying, reach, two-handed",
-"Lance","10 gp","1d12 piercing","6 lb.","Reach, special",
-"Longsword","15 gp","1d8 slashing or piercing","3 lb.","Cleaving, Parrying",
-"Maul","10 gp","1d12 bludgeoning","10 lb.","Battering, heavy, two-handed",
-"Morningstar","15 gp","1d10 piercing","4 lb.","Battering",
-"Pike","5 gp","1d10","18 lb.","Heavy, precise, reach, two-handed",
-"Rapier","25 gp","1d8 piercing","2 lb.","Precise",
-"Scimitar","15 gp","1d6 slashing","3 lb.","Cleaving, light",
-"Shortsword","10 gp","1d6 piercing","2 lb.","Light, precise",
-"War pick","5 gp","1d10 piercing","2 lb.","Precise",
-"Warhammer","15 gp","1d10 bludgeoning","3 lb.","Battering",
-"Whip","2gp","1d4 slashing","3 lb.","Reach, special",
-[*Martial Ranged Weapons*],"","","",
-"Blowgun","10 gp","1 piercing","1 lb.","Ammunition (range 25/100), loading, special",
-"Crossbow, hand","75 gp","1d4 piercing","3 lb.","Ammunition (range 30/120), light, loading",
-"Crossbow, heavy","75 gp","1d10 piercing","18 lb.","Ammunition (range 100/400), heavy, loading, two-handed",
-"Longbow","50 gp","1d8 piercing","2 lb.","Ammunition (range 150/600), heavy, precise, two-handed",
-)
-
 == Adventuring Gear <adventuring-gear>
 
 This section describes items that have special rules or require further
-explanation.
+explanation. Each item has a cost associated with it---either a specific price (rarely) or a relative price (cheap, moderate, or expensive). Under most circumstances, cheap items are readily available in most places and cost less than a gold piece, while moderate cost items are generally only available in large towns and cities and cost tens of gold. Expensive items are only available in specialized shops, usually in large cities only, and cost hundreds of gold pieces.
 
 === Arcane Focus <arcane-focus>
+_Cost: Moderate_
 
 An arcane focus is a special item---an orb, a crystal, a rod, a
 specially constructed staff, a wand-like length of wood, or some similar
@@ -625,20 +597,28 @@ item--- designed to channel the power of arcane spells. An arcanist can
 use such an item as a spellcasting focus.
 
 === Ball Bearings <ball-bearings>
+_Cost: Moderate_
 
 As an action, you can spill these tiny metal balls from their pouch to
-cover a level, square area that is 10 feet on a side. A creature moving
+cover a level, square area that is 10 feet on a side. A Medium or smaller creature moving
 across the covered area must succeed on a DC 10 Dexterity saving throw
-or fall prone. A creature moving through the area at half speed doesn't
-need to make the save.
+or fall prone. A creature who treats the affected area as difficult terrain (consuming 10 feet of movement to cross the 5 foot space) doesn't
+need to make the save; neither does a Large or larger creature.
+
+=== Bedroll
+_Cost: Cheap_
+
+A bedroll consists of blankets and other padding, plus the ties and covers to keep them secure on the road. You cannot regain hit dice during a long rest unless you are sleeping on a bedroll or the equivalent.
 
 === Block and Tackle <block-and-tackle>
+_Cost: Moderate_
 
 A set of pulleys with a cable threaded through them and a hook to attach
 to objects, a block and tackle allows you to hoist up to four times the
 weight you can normally lift.
 
 === Book <book>
+_Cost: Expensive_
 
 A book might contain poetry, historical accounts, information pertaining
 to a particular field of lore, diagrams and notes on gnomish
@@ -646,34 +626,35 @@ contraptions, or just about anything else that can be represented using
 text or pictures.
 
 === Caltrops <caltrops>
+_Cost: Expensive_
 
 As an action, you can spread a bag of caltrops to cover a square area
 that is 5 feet on a side. Any creature that enters the area must succeed
 on a DC 15 Dexterity saving throw or stop moving this turn and take 1
 piercing damage. Taking this damage reduces the creature's walking speed
-by 10 feet until the creature regains at least 1 hit point. A creature
-moving through the area at half speed doesn't need to make the save.
+by 10 feet until the creature regains at least 1 hit point. A Medium or smaller creature
+who treats the affected area as difficult terrain (consuming 10 feet of movement to cross the 5 foot space) doesn't need to make the save. 
 
 === Candle <candle>
+_Cost: Cheap_
 
 For 1 hour, a candle sheds bright light in a 5-foot radius and dim light
 for an additional 5 feet.
 
-=== Case, Crossbow Bolt <case--crossbow-bolt>
-
-This wooden case can hold up to twenty crossbow bolts.
-
 === Case, Map or Scroll <case--map-or-scroll>
+_Cost: Cheap_
 
 This cylindrical leather case can hold up to ten rolled-up sheets of
-paper or five rolled-up sheets of parchment.
+paper or five rolled-up sheets of parchment. Without such a case, documents are at risk of being damaged by weather, immersion, or other accidents.
 
 === Chain <chain>
+_Cost: Expensive_
 
 A chain has 10 hit points. It can be burst with a successful DC 20
-Strength check.
+Strength check. It can be used to restrain a Large or smaller creature; tying someone up imposes the #safe-link("restrained", "restrained") condition and requires an action. If the target isn't incapacitated, they can resist and make a Strength (Athletics) check opposed by your Dexterity (Sleight of Hand) check, negating the attempt on a success.
 
 === Climber's Kit <climber-s-kit>
+_Cost: Expensive_
 
 A climber's kit includes special pitons, boot tips, gloves, and a
 harness. You can use the climber's kit as an action to anchor yourself;
@@ -681,7 +662,10 @@ when you do, you can't fall more than 25 feet from the point where you
 anchored yourself, and you can't climb more than 25 feet away from that
 point without undoing the anchor.
 
+Alternatively, you can use it and expend your rope as an action to leave anchors and rope for other climbers. Anyone climbing by means of a rope left in such a manner makes any necessary checks at advantage and twice as fast as normal.
+
 === Component Pouch <component-pouch>
+_Cost: 50 gp_
 
 A component pouch is a small, watertight leather belt pouch that has
 compartments to hold all the material components and other special items
@@ -689,16 +673,19 @@ you need to cast your spells, except for those components that have a
 specific cost (as indicated in a spell's description).
 
 === Crowbar <crowbar>
+_Cost: Cheap_
 
 Using a crowbar grants advantage to Strength checks where the crowbar's
 leverage can be applied.
 
 === Fishing Tackle <fishing-tackle>
+_Cost: Moderate_
 
 This kit includes a wooden rod, silken line, corkwood bobbers, steel
-hooks, lead sinkers, velvet lures, and narrow netting.
+hooks, lead sinkers, velvet lures, and narrow netting. With one of these and access to fish-bearing waters, a person can catch enough fish to feed themselves for a day with a DC 13 Dexterity (Perception) check. Otherwise, the difficulty of the task is entirely up to the GM.
 
 === Healer's Kit <healer-s-kit>
+_Cost: Moderate_
 
 This kit is a leather pouch containing bandages, salves, and splints.
 The kit has ten uses. As an action, you can expend one use of the kit to
@@ -706,6 +693,7 @@ stabilize a creature that has 0 hit points, without needing to make a
 Wisdom (Medicine) check.
 
 === Holy Symbol <holy-symbol>
+_Cost: Cheap_
 
 A holy symbol is a representation of a god or pantheon. It might be an
 amulet depicting a symbol representing a deity, the same symbol
@@ -714,6 +702,7 @@ holding a fragment of a sacred relic. To use the symbol as a focus, the
 caster must hold it in hand, wear it visibly, or bear it on a shield.
 
 === Hunting Trap <hunting-trap>
+_Cost: Moderate_
 
 When you use your action to set it, this trap forms a saw-toothed steel
 ring that snaps shut when a creature steps on a pressure plate in the
@@ -728,18 +717,21 @@ success. Each failed check deals 1 piercing damage to the trapped
 creature.
 
 === Lamp <lamp>
+_Cost: Cheap_
 
 A lamp casts bright light in a 15-foot radius and dim light for an
 additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint)
 of oil.
 
 === Lantern, Bullseye <lantern--bullseye>
+_Cost: Moderate_
 
 A bullseye lantern casts bright light in a 60-foot cone and dim light
 for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1
 pint) of oil.
 
 === Lantern, Hooded <lantern--hooded>
+_Cost: Moderate_
 
 A hooded lantern casts bright light in a 30-foot radius and dim light
 for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1
@@ -747,6 +739,7 @@ pint) of oil. As an action, you can lower the hood, reducing the light
 to dim light in a 5-foot radius.
 
 === Lock <lock>
+_Cost: Varies by quality_
 
 A key is provided with the lock. Without the key, a creature proficient
 with thieves' tools can pick this lock with a successful DC 15 Dexterity
@@ -754,6 +747,7 @@ check. Your GM may decide that better locks are available for higher
 prices.
 
 === Magnifying Glass <magnifying-glass>
+_Cost: Expensive_
 
 This lens allows a closer look at small objects. It is also useful as a
 substitute for flint and steel when starting fires. Lighting a fire with
@@ -763,25 +757,20 @@ glass grants advantage on any ability check made to appraise or inspect
 an item that is small or highly detailed.
 
 === Manacles <manacles>
+_Cost: Moderate_
 
 These metal restraints can bind a Small or Medium creature. Escaping the
 manacles requires a successful DC 20 Dexterity check. Breaking them
 requires a successful DC 20 Strength check. Each set of manacles comes
 with one key. Without the key, a creature proficient with thieves' tools
-can pick the manacles' lock with a successful DC 15 Dexterity check.
+can use them to pick the manacles' lock with a successful DC 15 Dexterity check.
 Manacles have 15 hit points.
 
-=== Mess Kit <mess-kit>
-
-This tin box contains a cup and simple cutlery. The box clamps together,
-and one side can be used as a cooking pan and the other as a plate or
-shallow bowl.
-
 === Net <net>
+_Cost: Moderate_
 
 As an action, throw the net at a creature within 15 ft. The target must
-make a Dexterity saving throw with a DC of 8 + your Strength modifier
-+ your proficiency bonus if you have proficiency in martial weapons. A creature
+make a Dexterity saving throw with a DC of 8 + your Strength modifier + your proficiency bonus if you have proficiency in martial weapons. A creature
 that fails the save is restrained until it is freed. A net has no effect
 on creatures that are formless, or creatures that are Huge or larger. A
 creature can use its action to make a DC 10 Strength check, freeing
@@ -790,6 +779,7 @@ slashing damage to the net (AC 10) also frees the creature without
 harming it, ending the effect and destroying the net.
 
 === Oil <oil>
+_Cost: Cheap_
 
 Oil usually comes in a clay flask that holds 1 pint. As an action, you
 can splash the oil in this flask onto a creature within 5 feet of you or
@@ -804,6 +794,7 @@ damage to any creature that enters the area or ends its turn in the
 area. A creature can take this damage only once per turn.
 
 === Poison, Basic <poison--basic>
+_Cost: Moderate_
 
 You can use the poison in this vial to coat one slashing or piercing
 weapon or up to three pieces of ammunition. Applying the poison takes an
@@ -811,39 +802,33 @@ action. A creature hit by the poisoned weapon or ammunition takes an additional 
 the poison retains potency for 1 minute before drying.
 
 === Potion of Healing
+_Cost: 50 gp_
 
-A character who drinks the magical red fluid in this vial regains 2d4 +
-2 hit points. Drinking a potion takes a bonus action; administering it
-to another takes an action.
+A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking a potion takes a bonus action; administering it to another takes an action.
 
-=== Pouch <pouch>
+=== Quiver, Ammunition Pouch, Crossbow Bolt Case <quiver>
+_Cost: Cheap_
 
-A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun
-needles, among other things. A compartmentalized pouch for holding spell
-components is called a component pouch (described earlier in this
-section).
-
-=== Quiver <quiver>
-
-A quiver can hold up to 20 arrows.
+A quiver can hold up to 20 arrows, an ammunition pouch can hold 20 sling bullets or 50 blowgun darts, and a bolt case can hold up to 20 bolts. Without a quiver or other ammunition case, it takes a bonus action to reload a weapon with the Ammunition property from loose ammunition.
 
 === Ram, Portable <ram--portable>
+_Cost: Expensive_
 
-You can use a portable ram to break down doors. When doing so, you gain
-a +4 bonus on the Strength check. One other character can help you use
-the ram, giving you advantage on this check.
+You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.
 
 === Rations <rations>
+_Cost: Cheap:_
 
-Rations consist of dry foods suitable for extended travel, including
-jerky, dried fruit, hardtack, and nuts.
+Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts. Under normal conditions, a Medium creature must eat 1 lb of rations or other food and 1 gallon of water over the course of a day to benefit from a long rest. On the third, 6th, and every subsequent third day without sufficient food, you gain a level of exhaustion. These ranks can only be removed when you complete a long rest after eating enough food.
 
 === Rope <rope>
+_Cost: Moderate_
 
 Rope, whether made of hemp or silk, has 2 hit points and can be burst
-with a DC 17 Strength check.
+with a DC 17 Strength check. Tying someone up imposes the #safe-link("restrained", "restrained") condition and requires an action. If the target isn't incapacitated, they can resist and make a Strength (Athletics) check opposed by your Dexterity (Sleight of Hand) check, negating the attempt on a success. 
 
-=== Scale, Merchant's <scale--merchant-s>
+=== Scale, Merchant's <scale-merchant>
+_Cost: Expensive_
 
 A scale includes a small balance, pans, and a suitable assortment of
 weights up to 2 pounds. With it, you can measure the exact weight of
@@ -851,6 +836,7 @@ small objects, such as raw precious metals or trade goods, to help
 determine their worth.
 
 === Shamanic Focus <shamanic-focus>
+_Cost: Cheap_
 
 A shamanic focus might be a sprig of mistletoe or holly, a wand or
 scepter made of yew or another special wood, a staff drawn whole out of
@@ -859,69 +845,21 @@ teeth from sacred animals. A shaman can use such an object as a
 spellcasting focus.
 
 === Spyglass <spyglass>
+_Cost: Expensive_
 
-Objects viewed through a spyglass are magnified to twice their size, making them visible from further away (see Visibility in the core rules).
+Objects viewed through a spyglass are magnified to twice their size, making them visible from one step further away (see #safe-link("visibility", "Visibility") in the core rules).
 
 === Tent <tent>
+_Cost: Cheap_
 
-A simple and portable canvas shelter, a tent sleeps two and protects from the elements.
+A simple and portable canvas shelter, a tent sleeps two and protects from the elements. Without one, sleeping outside in inclement weather requires a DC 10 Constitution saving throw; on a failure, you do not gain the benefit of a long rest.
 
-#dndtab("Adventuring Items", breakable: true, columns: (2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 1fr),
-"Item","Cost","Weight","","Item","Cost","Weight",
-"Abacus","2 gp","2 lb.","","Hunting trap","5 gp","25 lb.",
-[*Ammunition*],"","","","Ink (1 ounce bottle)","10 gp","—",
-"---Arrows (20)","1 gp","1lb.","","Ink pen","2 cp","—",
-"---Blowgun needles (50)","1 gp","1 lb.","","Jug or pitcher","2 cp","4 lb.",
-"---Crossbow bolts (20)","1 gp","1½ lb.","","Ladder (10-foot)","1 sp","25 lb.",
-"---Sling bullets (20)","4 cp","1½ lb.","","Lamp","5 sp","1 lb.",
-"Antitoxin (vial)","50 gp","---","","Lantern, bullseye","10 gp","2 lb.",
-[*Arcane focus*],"","","","Lantern, hooded","5 gp","2 lb.",
-"---Crystal","10 gp","1 lb.","","Lock","10 gp","1 lb.",
-"---Orb","20 gp","3 lb.","","Magnifying glass","100 gp","—",
-"---Rod","10 gp","2 lb.","","Manacles","2 gp","6 lb.",
-"---Staff","5 gp","5 lb.","","Mess kit","2 sp","1 lb.",
-"---Wand","10 gp","1 lb.","","Mirror, steel","5 gp","1/2 lb.",
-"Backpack","2 gp","5 lb.","","Net","1gp","3 lb.",
-"Ball bearings (bag of 1,000)","1 gp","2 lb.","","Oil (flask)","1 sp","1 lb.",
-"Barrel","2 gp","70 lb.","","Paper (one sheet)","2 sp","—",
-"Basket","4 sp","2 lb.","","Parchment (one sheet)","1 sp","—",
-"Bedroll","1 gp","7 lb.","","Perfume (vial)","5 gp","—",
-"Bell","1 gp","---","","Pick, miner's","2 gp","10 lb.",
-"Blanket","5 sp","3 lb.","","Piton","5 cp","1/4 lb.",
-"Block and tackle","1 gp","5 lb.","","Poison, basic (vial)","100 gp","—",
-"Book","25 gp","5 lb.","","Pole (10-foot)","5 cp","7 lb.",
-"Bottle, glass","2 gp","2 lb.","","Pot, iron","2 gp","10 lb.",
-"Bucket","5 cp","2 lb.","","Potion of healing","50 gp","1/2 lb.",
-"Caltrops (bag of 20)","1 gp","2 lb.","","Pouch","5 sp","1 lb.",
-"Candle","1 cp","---","","Quiver","1 gp","1 lb.",
-"Case, crossbow bolt","1 gp","1 lb.","","Ram, portable","4 gp","35 lb.",
-"Case, map or scroll","1 gp","1 lb.","","Rations (1 day)","5 sp","2 lb.",
-"Chain (10 feet)","5 gp","10 lb.","","Robes","1 gp","4 lb.",
-"Chalk (1 piece)","1 cp","---","","Rope, hempen (50 feet)","1 gp","10 lb.",
-"Chest","5 gp","25 lb.","","Rope, silk (50 feet)","10 gp","5 lb.",
-"Climber's kit","25 gp","12 lb.","","Sack","1 cp","1/2 lb.",
-"Clothes, common","5 sp","3 lb.","","Scale, merchant's","5 gp","3 lb.",
-"Clothes, costume","5 gp","4 lb.","","Sealing wax","5 sp","—",
-"Clothes, fine","15 gp","6 lb.","",[*Shamanic focus*],"",
-"Clothes, traveler's","2 gp","4 lb.","","---Sprig of mistletoe","1 gp","—",
-"Clothes, winter","15 gp","6 lb.","","---Totem","1 gp","—",
-"Component pouch","25 gp","2 lb.","","---Wooden staff","5 gp","4 lb.",
-"Crowbar","2 gp","5 lb.","","---Yew wand","10 gp","1 lb.",
-"Fishing tackle","1 gp","4 lb.","","Shovel","2 gp","5 lb.",
-"Flask or tankard","2 cp","1 lb.","","Signal whistle","5 cp","—",
-"Grappling hook","2 gp","4 lb.","","Signet ring","5 gp","—",
-"Hammer","1 gp","3 lb.","","Soap","2 cp","—",
-"Hammer, sledge","2 gp","10 lb.","","Spikes, iron (10)","1 gp","5 lb.",
-"Healer's kit","5 gp","3 lb.","","Spyglass","1,000 gp","1 lb.",
-[*Holy symbol*],"","","","Tent, two-person","2 gp","20 lb.",
-"---Amulet","5 gp","1 lb.","","Tinderbox","5 sp","1 lb.",
-"---Emblem","5 gp","---","","Torch","1 cp","1 lb.",
-"---Reliquary","5 gp","2 lb.","","Vial","1 gp","—",
-"Holy water (flask)","25 gp","1 lb.","","Waterskin","2 sp","5 lb. (full)",
-"Hourglass","25 gp","1 lb.","","Whetstone","1 cp","1 lb.",
-)
+#breakoutbox("Where's the Adventuring Items Table")[
+  I removed it. I've found it to be both restrictive (making it seem that only things on the table exist) and under-inclusive (not including normal things). It also forces a particular economy (fixed prices). Individual items with rules in the list have relative prices listed (high, medium or low). Remember that 1 GP is a substantial amount of money for most non-adventuring people.
+]
 
 === Tinderbox <tinderbox>
+_Cost: Cheap_
 
 This small container holds flint, fire steel, and tinder (usually dry
 cloth soaked in light oil) used to kindle a fire. Using it to light a
@@ -929,6 +867,7 @@ torch---or anything else with abundant, exposed fuel---takes an action.
 Lighting any other fire takes 1 minute.
 
 === Torch <torch>
+_Cost: Cheap_
 
 A torch burns for 1 hour, providing bright light in a 20-foot radius and
 dim light for an additional 20 feet. If you make a melee attack with a
@@ -1086,49 +1025,6 @@ mirror mounted on a metal handle, a set of narrow-bladed scissors, and a
 pair of pliers. Proficiency with these tools lets you add your
 proficiency bonus to any ability checks you make to disarm traps or open
 locks.
-
-#dndtab("Tools", columns: (3fr, 1fr, 1fr),
-"=== Item*","Cost","*Weigh",
-[*Artisan's tools*],"",
-"---Alchemist's supplies","50 gp","8 lb.",
-"---Brewer's supplies","20 gp","9 lb.",
-"---Calligrapher's supplies","10 gp","5 lb.",
-"---Carpenter's tools","8 gp","6 lb.",
-"---Cartographer's tools","15 gp","6 lb.",
-"---Cobbler's tools","5 gp","5 lb.",
-"---Cook's utensils","1 gp","8 lb.",
-"---Glassblower's tools","30 gp","5 lb.",
-"---Jeweler's tools","25 gp","2 lb.",
-"---Leatherworker's tools","5 gp","5 lb.",
-"---Mason's tools","10 gp","8 lb.",
-"---Painter's supplies","10 gp","5 lb.",
-"---Potter's tools","10 gp","3 lb.",
-"---Smith's tools","20 gp","8 lb.",
-"---Tinker's tools","50 gp","10 lb.",
-"---Weaver's tools","1 gp","5 lb.",
-"---Woodcarver's tools","1 gp","5 lb.",
-"Disguise kit","25 gp","3 lb.",
-"Forgery kit","15 gp","5 lb.",
-[*Gaming sets*],"",
-"---Dice set","1 sp","—",
-"---Playing card set","5 sp","—",
-"Herbalism kit","5 gp","3 lb.",
-[*Musical instruments*],"",
-"---Bagpipes","30 gp","6 lb.",
-"---Drum","6 gp","3 lb.",
-"---Dulcimer","25 gp","10 lb.",
-"---Flute","2 gp","1 lb.",
-"---Lute","35 gp","2 lb.",
-"---Lyre","30 gp","2 lb.",
-"---Horn","3 gp","2 lb.",
-"---Pan flute","12 gp","2 lb.",
-"---Shawm","2 gp","1 lb.",
-"---Viol","30 gp","1 lb.",
-"Navigator's tools","25 gp","2 lb.",
-"Poisoner's kit","50 gp","2 lb.",
-"Thieves' tools","25 gp","1 lb.",
-"Vehicles (land or water)","",
-)
 
 == Mounts and Vehicles <mounts-and-vehicles>
 
@@ -1290,15 +1186,15 @@ connections.
 "Wealthy","4 gp","64 gp",
 "Aristocratic","10 gp minimum","80 gp minimum",
 )
-#flush-block[
-- *Wretched.* You live in inhumane conditions. With no place to call home, you shelter
+*Wretched.* You live in inhumane conditions. With no place to call home, you shelter
 wherever you can, sneaking into barns, huddling in old crates, and
 relying on the good graces of people better off than you. A wretched
 lifestyle presents abundant dangers. Violence, disease, and hunger
 follow you wherever you go. Other wretched people covet your armor,
 weapons, and adventuring gear, which represent a fortune by their
 standards. You are beneath the notice of most people.
-- *Squalid.* You live in a leaky stable, a mud-floored hut just outside town, or a
+
+*Squalid.* You live in a leaky stable, a mud-floored hut just outside town, or a
 vermin-infested boarding house in the worst part of town. You have
 shelter from the elements, but you live in a desperate and often violent
 environment, in places rife with disease, hunger, and misfortune. You
@@ -1306,7 +1202,8 @@ are beneath the notice of most people, and you have few legal
 protections. Most people at this lifestyle level have suffered some
 terrible setback. They might be disturbed, marked as exiles, or suffer
 from disease.
-- *Poor.* A poor lifestyle means going without the comforts available in a stable
+
+*Poor.* A poor lifestyle means going without the comforts available in a stable
 community. Simple food and lodgings, threadbare clothing, and
 unpredictable conditions result in a sufficient, though probably
 unpleasant, experience. Your accommodations might be a room in a
@@ -1315,25 +1212,29 @@ legal protections, but you still have to contend with violence, crime,
 and disease. People at this lifestyle level tend to be unskilled
 laborers, costermongers, peddlers, thieves, mercenaries, and other
 disreputable types.
-- *Modest.* A modest lifestyle keeps you out of the slums and ensures that you can
+
+*Modest.* A modest lifestyle keeps you out of the slums and ensures that you can
 maintain your equipment. You live in an older part of town, renting a
 room in a boarding house, inn, or temple. You don't go hungry or
 thirsty, and your living conditions are clean, if simple. Ordinary
 people living modest lifestyles include soldiers with families,
 laborers, students, priests, hedge wizards, and the like.
-- *Comfortable.* Choosing a comfortable lifestyle means that you can afford nicer
+
+*Comfortable.* Choosing a comfortable lifestyle means that you can afford nicer
 clothing and can easily maintain your equipment. You live in a small
 cottage in a middle-class neighborhood or in a private room at a fine
 inn. You associate with merchants, skilled tradespeople, and military
 officers.
-- *Wealthy.* Choosing a wealthy lifestyle means living a life of luxury, though you
+
+*Wealthy.* Choosing a wealthy lifestyle means living a life of luxury, though you
 might not have achieved the social status associated with the old money
 of nobility or royalty. You live a lifestyle comparable to that of a
 highly successful merchant, a favored servant of the royalty, or the
 owner of a few small businesses. You have respectable lodgings, usually
 a spacious home in a good part of town or a comfortable suite at a fine
 inn. You likely have a small staff of servants.
-- *Aristocratic.* You live a life of plenty and comfort. You move in circles populated by
+
+*Aristocratic.* You live a life of plenty and comfort. You move in circles populated by
 the most powerful people in the community. You have excellent lodgings,
 perhaps a townhouse in the nicest part of town or rooms in the finest
 inn. You dine at the best restaurants, retain the most skilled and
@@ -1343,7 +1244,6 @@ and spend evenings in the company of politicians, guild leaders, high
 priests, and nobility. You must also contend with the highest levels of
 deceit and treachery. The wealthier you are, the greater the chance you
 will be drawn into political intrigue as a pawn or participant.
-]
 
 === Self-Sufficiency <self-sufficiency>
 
@@ -1367,7 +1267,7 @@ The Food, Drink, and Lodging table gives prices for individual food
 items and a single night's lodging. These prices are included in your
 total lifestyle expenses.
 
-#dndtab("Food, Drink, and Lodging", columns: (4fr, 1fr),
+#dndtab("Food, Drink, and Lodging", columns: (4fr, 1fr), align: left,
 "Item","Cost",
 "Ale, Gallon","2 sp",
 "Ale, Mug","4 cp",
@@ -1428,7 +1328,7 @@ particular skill and can include laborers, porters, maids, and similar
 workers. They generally will not accompany a party into especially
 dangerous situations
 
-#dndtab("Services", columns: (2fr, 3fr),
+#dndtab("Services", columns: (2fr, 3fr), align: left,
 "Service","Pay",
 [*Coach cab*], "",
 "---Between towns","3 cp per mile",
@@ -1463,7 +1363,7 @@ important to a distant settlement. Powerful spell-casters rarely need
 more coin, but mostly-disposable help is always in demand.
 
 As a general rule (with wide variation), you can find people willing to cast spells for pay based on the size of the settlement: those that require 2 AET or less can be found in most villages, 3 AET or less in most towns, and 5 AET or less in cities. You're highly unlikely to find anyone willing to take coin for spells costing more than 5 AET or incantations above the Adventurer rank.
-
+#pagebreak()
 = Fantastic Equipment <magic-equipment>
 
 NIH system includes magic items. It is expected that adventurers will accumulate some items of various worth over the course of their adventures. However, NIH system does not assume, in its core math, that adventurers will have _specific_ magic items at specific levels, especially those that enhance Armor Class, Attack Bonus, Saving Throw modifiers, or Saving Throw DCs. In fact, these kinds of items do not exist. You will not find a single "+1 longsword" here. Enhancements to damage are completely fine. Enhancements to accuracy (or target numbers) cause significant distortions in bounded accuracy and quickly become the dominant option in all but the rarest of cases.
@@ -1499,7 +1399,7 @@ To craft magic items, you need a few things.
 - Small items such as potions or scrolls can only rarely benefit from additional workers, while large items such as plate armor may benefit from many workers. The GM makes the decision on how many workers can provide progress; this should be based in part on the working conditions. A travel forge isn't workable by more than 2 people generally, while a professional forge may fit as many as 8 active contributors.
 ]
 
-#dndtab("Crafting Costs", columns: (2fr, 1fr, 1fr),
+#dndtab("Crafting Costs", columns: (1fr, 1fr, 1fr), align:left,
 "Tier","Proficiency","Cost Range (gp)",
 "Journeyman","+2","50-150",
 "Adventurer","+3","300-2000",
@@ -1529,14 +1429,6 @@ Even though many types of armor (especially heavy armor) have integrated sabaton
 === Robes <robes>
 Robes cannot be worn with any armor, magical or not, except a mithral breastplate or any chain shirt.
 
-=== Adamantine Armor <adamantine-armor>
-
-_Armor (medium or heavy, but not hide), Adventurer_
-
-This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.
-
-*Formula.* To craft Adamantine Armor, you must procure one-quarter of the weight of the armor in refined adamantine metal (three-quarters of the weight in raw adamantine ore). The cost of the crafting is twice the base price of the armor, four times if you wish to have masterwork adamantine armor. Crafting adamantine armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
-
 === Aelven Chain <aelven-chain>
 _Armor (masterwork chain shirt), Hero_
 
@@ -1548,7 +1440,7 @@ _Armor (shield), Hero (requires attunement)_
 While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
 
 === Armor of Invulnerability <armor-of-invulnerability>
-_Armor (plate), legendary (requires attunement)_
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), legendary (requires attunement)_
 
 You have resistance to all damage while you wear this armor. Additionally, you can use an action to make yourself immune to damage from non-legendary effects for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.
 
@@ -1556,7 +1448,7 @@ You have resistance to all damage while you wear this armor. Additionally, you c
 _Armor (any), Hero (requires attunement)_
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.
-#dndtab("Energy Type", columns: (1fr, 2fr, 1fr, 1fr, 2fr),
+#dndtab("Energy Type", columns: (1fr, 2fr, 1fr, 1fr, 2fr), align: left,
 "d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
@@ -1581,7 +1473,7 @@ While wearing this belt, your Strength score changes to a score granted by the b
 
 Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect.
 
-#dndtab("", columns: (2fr, 1fr, 2fr),
+#dndtab("", columns: (2fr, 1fr, 2fr), align: left,
 "Type","Strength","Tier",
 "Hill giant","+5","Hero",
 "Stone/frost giant","+6","Hero",
@@ -1663,9 +1555,9 @@ _Armor (masterwork plate), Adventurer (requires attunement)_
 While wearing this armor, you can understand and speak Abyssal. In addition, the armor's clawed gauntlets are light melee weapons that deal slashing damage with a +2 bonus to damage rolls and a damage die of 1d8. You have proficiency in these weapons. You cannot wear any other gloves while attuned to this armor.
 
 === Dragon Scale Mail <dragon-scale-mail>
-_Armor (masterwork lamellar), Hero (requires attunement)_ 
+_Armor (Medium, Cumbersome (+1), Loud, Masterwork), Hero (requires attunement)_ 
 
-Dragon scale mail (technically a form of lamellar armor) is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
+Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.  While wearing this armor, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales (see the table).  Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.
 
 #dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
 "Dragon","Resistance","","Dragon","Resistance",
@@ -1677,7 +1569,7 @@ Dragon scale mail (technically a form of lamellar armor) is made of the scales o
 )
 
 === Dwarven Plate <dwarven-plate>
-_Armor (masterwork plate), Hero_ 
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), Hero_ 
 
 This armor counts as adamantine. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet. You also have advantage on any check or saving throw made to resist or escape a grapple.
 
@@ -1686,8 +1578,8 @@ _Gloves, Adventurer (requires attunement)_
 
 Your Strength score is +4 while you wear these gauntlets. They have no effect on you if your Strength is already +4 or higher.
 
-=== Glamoured reinforced Leather <glamoured-reinforced-leather>
-_Armor (masterwork reinforced leather), Adventurer_ 
+=== Glamoured Leathers <glamoured-leather>
+_Armor (Light, Masterwork), Adventurer_ 
 
 While wearing this armor, you can use a bonus action to cast #safe-link("disguise-self",[_disguise self_]) at will. Your spell save DC for this is 8 + your Intelligence modifier + your proficiency bonus.
 
@@ -1753,15 +1645,8 @@ This armor has been crafted by an expert to be easy to move in. When you take th
 
 *Formula.* Crafting masterwork armor costs twice as much as normal and requires a proficiency bonus one higher than normal.
 
-=== Mithral Armor <mithral-armor>
-_Armor (medium or heavy, but not hide), Adventurer_ 
-
-Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
-
-*Formula.* To craft mithral armor, you must procure one-quarter of the weight of the armor in refined mithral metal (three-quarters of the weight in raw mithral ore). The cost of the crafting is twice the base price of the armor or four times if you wish to have masterwork mithral armor. Crafting mithral armor requires a +3 proficiency bonus (+4 if you are crafting masterwork) and proficiency in smith's tools.
-
 === Plate Armor of Etherealness <plate-armor-of-etherealness>
-_Armor (plate), legendary (requires attunement)_ 
+_Armor (Heavy, Cumbersome (+3), Loud, Masterwork, Metallic), legendary (requires attunement)_ 
 
 While you're wearing this armor, you can speak its command word as an action to gain the effect of the #safe-link("etherealness",[_etherealness_]) legendary effect, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
 
@@ -1905,7 +1790,7 @@ When you use an action to throw a handful of the dust into the air, you and each
 _Consumable, Hero_
 
 This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you. The first time the bottle is opened, the GM rolls to determine what happens.
-#dndtab("", columns: (1fr, 5fr),
+#dndtab("Efreeti Bottle", columns: (2fr, 5fr),
 "d100", "Effect", 
 "01 - 10", "The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.", 
 "11 - 90", "The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its  magic.",
@@ -1919,7 +1804,7 @@ _Consumable, Adventurer_
 
 This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure-elemental spell, except no concentration is required, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-#dndtab("", columns: (1fr, 1fr),
+#dndtab("Elemental Gem", columns: (1fr, 1fr), align: left,
 "Gem","Summoned Elemental",
 "Blue sapphire","Air elemental",
 "Yellow diamond","Earth elemental",
@@ -1931,7 +1816,7 @@ This gem contains a mote of elemental energy. When you use an action to break th
 _Consumable, Hero_
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.
-#dndtab("", columns: (1fr, 2fr, 0.5fr, 1fr, 2fr),
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
 "d100","Feather Token","","d100","Feather Token",
 "01 - 20","Anchor","","51 - 65","Swan boat",
 "21 - 35","Bird","","66 - 90","Tree",
@@ -2019,7 +1904,7 @@ _Potion, tier varies_
 
 When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.  This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.
 
-#dndtab("", columns: (2fr, 1fr, 2fr),
+#dndtab("", columns: (2fr, 1fr, 2fr), align: left,
 "Type","Strength","Tier",
 "Hill giant","+5","Adventurer",
 "Stone/frost giant","+6","Hero",
@@ -2037,7 +1922,7 @@ When you drink this potion, you gain the “enlarge” effect of the enlarge-red
 _Potion, tier varies_ 
 
 You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.
-#dndtab("", columns: (2fr, 2fr, 2fr, 1fr, 1fr),
+#dndtab("", columns: (2fr, 2fr, 2fr, 1fr, 1fr), align: left,
 "Potion of …","Tier","HP Regained","Cost (gp)","Crafting Time",
 "Healing","Journeyman","2d4 + 2","25","4 hrs",
 "Greater healing","Adventurer","4d4 + 4","125","2 days",
@@ -2068,7 +1953,7 @@ When you drink this potion, you gain the effect of the #safe-link("detect-though
 _Potion, Adventurer_ 
 
 When you drink this potion, you gain resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly from the options below.
-#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr),
+#dndtab("", columns: (1fr, 1fr, 0.5fr, 1fr, 1fr), align: left,
 "d8","Damage Type","","d8","Damage Type",
 "1","Acid","","5","Necrotic",
 "2","Cold","","6","Psychic",
@@ -2113,14 +1998,12 @@ A spell scroll (or stone, the only difference being the appropriate tool profici
 If the spell has a base cost higher than your aether limit, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. If you do not have a spellcasting ability, use Intelligence. The DC equals 10 + half the aether cost. On a failed check, the spell disappears from the scroll with no other effect. Legendary effects count as having an aether cost of 18.
 
 The base aether cost of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's tier, as shown in the Spell Scroll table.
-#wide[#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+#wide[#dndtab("Spell Scroll/Stone", columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
 "Aether Cost","Tier","Save DC","Attack Bonus","Cost","Proficiency",
-"0","Journeyman","13","+5","50","+2",
-"2","Journeyman","13","+5","50","+2",
-"3","Adventurer","13","+5","150","+3",
-"5","Adventurer","15","+7","300","+3",
-"8","Hero","15","+7","1500","+5",
-"12","Hero","17","+9","3000","+5",
+"0-2","Journeyman","13","+5","50","+2",
+"3-7","Adventurer","13","+5","150","+3",
+"8-11","Hero","15","+7","1500","+5",
+"12-16","Hero","17","+9","3000","+5",
 "Legendary","Legendary","18","+10","---","---",
 )]
 
@@ -2153,7 +2036,7 @@ The creature is friendly to you and your companions, and it acts on your turn. Y
 
 Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.
 
-#dndtab("", columns: (1fr, 1.5fr, 1.5fr, 1.5fr),
+#dndtab("Bag of Tricks", columns: (1fr, 1.5fr, 1.5fr, 1.5fr),
 "d8","Creature (Grey Bag)", "Creature (Rust Bag)", "Creature (Tan Bag)",
 "1","Weasel", "Rat", "Jackal",
 "2","Giant rat", "Owl", "Ape",
@@ -2190,7 +2073,7 @@ _Wondrous item, Hero_
 You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
 
 Four sizes of carpet of flying exist. The GM chooses the size of a given carpet or determines it randomly.
-#dndtab("", columns: (1fr, 2fr, 1fr, 1fr),
+#dndtab("Flying Carpets", columns: (1fr, 1fr, 1fr, 1fr),
 "d100","Size","Capacity","Flying Speed",
 "01-20",[3 ft. #sym.times 5 ft.],"200 lb.","80  feet",
 "21-55",[4 ft. #sym.times 6 ft.],"400 lb.","60 feet",
@@ -2226,7 +2109,7 @@ _Wondrous item, Hero (requires attunement)_
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.  You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.  If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.
 
-#dndtab("", columns: (1fr, 1fr, 4fr),
+#dndtab("Cube of Force", columns: (1fr, 1fr, 4fr),
 "Face","Charges","Effect",
 "1","1","Gases, wind, and  fog can't pass through the barrier.",
 "2","2","Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
@@ -2365,7 +2248,7 @@ _Wondrous item, Hero_
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be at least 12th level and have an Intelligence modifier of +3 or higher. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
 
-#dndtab("", columns: (1fr, 1fr, 1fr, 1.5fr),
+#dndtab("Manual of Golems", columns: (1fr, 1fr, 1fr, 1.5fr),
 "d20","Golem","Time","Cost",
 "1 - 5","Clay","30 days","65,000 gp",
 "6 - 17","Flesh","60 days","50,000 gp",
@@ -2625,7 +2508,7 @@ While wearing this ring, you regain 1d6 hit points every 10 minutes, provided th
 _Ring, Hero (requires attunement)_ 
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.
-#dndtab("", columns: (1fr, 2fr, 2fr), 
+#dndtab("Ring of Energy Resistance", columns: (1fr, 2fr, 2fr), 
 "d10","Damage Type","Gem",
 "1","Acid","Pearl",
 "2","Cold","Tourmaline",
@@ -2740,11 +2623,11 @@ _Rod, legendary (requires attunement)_
 This rod has a flanged head, and it functions as a magic mace that grants a +6 bonus to damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below.
 Six Buttons. You can press one of the rod's six buttons as a bonus action. A button's effect lasts until you push a different button or until you push the same button again, which causes the rod to revert to its normal form.  
 
-If you press button 1, the rod becomes a flame tongue, as a fiery blade sprouts from the end opposite the rod's flanged head.  
+If you press button 1, the rod becomes a Flame Tongue longsword that is a Heavy Blade (slashing) with Cleaving, Masterwork, and Parrying, as a fiery blade sprouts from the end opposite the rod's flanged head.  
 
-If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that grants a +3 bonus to attack and damage rolls made with it.  
+If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that is Hafted (slashing), Battering, Cleaving, and Masterwork.  
 
-If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that grants a +3 bonus to attack and damage rolls made with it.
+If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that is Hafted (piercing), with Parrying, Precise, and Masterwork.
 
 If you press button 4, the rod transforms into a climbing pole up to 50 feet long, as you specify. In surfaces as hard as granite, a spike at the bottom and three hooks at the top anchor the pole. Horizontal bars 3 inches long fold out from the sides, 1 foot apart, forming a ladder. The pole can bear up to 4,000 pounds. More weight or lack of solid anchoring causes the rod to revert to its normal form.
 
@@ -2849,9 +2732,9 @@ _Weapon (arrow, bolt, or sling stone), Hero_
 An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, lineage, or group associated with an arrow of slaying is hit by the arrow, the attack is a critical hit and the creature takes an additional 6d10 piercing damage (not doubled due to the critical hit). In addition, the creature must make a DC 17 Constitution saving throw. On a failed save, the creature is killed outright. If the creature was reduced to zero hit points by the attack's damage (including the extra damage), it automatically fails the saving throw. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
 
 === Berserker Axe <berserker-axe>
-_Weapon (any masterwork axe), Hero (requires attunement)_
+_Weapon (Hafted (slashing), Cleaving, Battering or Two-Handed, Masterwork), Hero (requires attunement)_
 
-This is a masterwork, adamantine axe. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
+In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
 
 === Blade of Sharpness <blade-of-sharpness>
 _Weapon (any weapon that deals slashing damage), Hero (requires attunement)_
@@ -2861,14 +2744,12 @@ When you attack an object with this sword and hit, maximize your weapon damage d
 In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.
 
 === Dagger of Venom <dagger-of-venom>
-_Weapon (masterwork dagger), Adventurer_
-
-This is a masterwork dagger.
+_Weapon (Light Blade (piercing), Masterwork, Precise, Thrown), Adventurer_
 
 You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.
 
 === Dancing Sword <dancing-sword>
-_Weapon (any sword), Hero (requires attunement)_
+_Weapon (any Heavy Blade), Hero (requires attunement)_
 
 You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.
 
@@ -2877,69 +2758,67 @@ While the sword hovers, you can use a bonus action to cause it to fly up to 30 f
 After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.
 
 === Defender <defender>
-_Weapon (any masterwork, silvered sword), legendary (requires attunement)_
+_Weapon (Heavy Blade, Cleaving or Two-Handed, Masterwork, Parrying, Silvered), legendary (requires attunement)_
 
-This is a masterwork, silvered sword. While attuned to it, you can take the Deflect action without expending stamina and the effects last until the start of your next turn instead of for one attack only.
+While attuned to it, you can take the Deflect action without expending stamina and the effects last until the start of your next turn instead of for one attack only.
 
 === Dragon Slayer <dragon-slayer>
-_Weapon (any masterwork sword, axe, spear, lance, halberd or glaive), Hero_ 
+_Weapon (Heavy Blade or Hafted, Cleaving or Reach, Masterwork, Two-Handed), Hero_ 
 
-This is a masterwork weapon. When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.
+When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.
 
 === Dwarven Thrower <dwarven-thrower>
-_Weapon (warhammer), Hero (requires attunement)_
+_Weapon (Bashing, Adamantine, Battering, Masterwork, Thrown), Hero (requires attunement)_
 
-This is a masterwork, adamantine warhammer. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.
+When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.
 
 === Energy Bow <energy-bow>
-_Weapon (any bow or crossbow), Hero (requires attunement)_
+_Weapon (any Ranged (piercing)), Hero (requires attunement)_
 
 This masterwork weapon has no natural string. Instead, a thread of magical force is generated between the tips of the bowstave. Similarly, it requires no ammunition, because it generates its own that count as silver and adamantine. Energy crossbows ignore the Loading property.
 
 === Flame Tongue <flame-tongue>
-_Weapon (any sword), Hero (requires attunement)_ 
+_Weapon (any Heavy Blade), Hero (requires attunement)_ 
 
 You can use a bonus action to speak this sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
 
 === Frost Brand <frost-brand>
-_Weapon (any sword), Hero (requires attunement)_ 
+_Weapon (any Heavy Blade), Hero (requires attunement)_ 
 
 When you hit with an attack using this sword, the target takes an extra 2d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
 In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 
 === Giant Slayer <giant-slayer>
-_Weapon (any axe or sword), Hero_ 
+_Weapon (any slashing weapon), Hero_ 
 
 This is a masterwork weapon. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.
 
 === Hammer of Thunderbolts <hammer-of-thunderbolts>
-_Weapon (maul), legendary_
-
-This is a masterwork weapon that counts as adamantine and silvered.
+_Weapon (Bashing, Adamantine, Battering, Masterwork, Silvered Two-Handed), legendary_
 
 *Giant's Bane (Requires Attunement).* You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 2 and can exceed +5, but not +10.
 
 The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.
 
 === Holy Avenger <holy-avenger>
-_Weapon (any sword), legendary (requires attunement by an oathbound)_
+_Weapon (any Heavy Blade, Masterwork, Silvered), legendary (requires attunement by an oathbound)_
 
-This is a masterwork weapon that counts as silvered. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
+When you hit a fiend or an undead with this weapon, that creature takes an extra 2d10 radiant damage.
 
 While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Oathbound class, the radius of the aura increases to 30 feet.
 
 === Javelin of Lightning <javelin-of-lightning>
-_Weapon (javelin), Adventurer_
+_Weapon (Hafted (piercing), Precise, Thrown), Adventurer_
 
 When you hurl this javelin and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
 
 The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.
 
 === Luck Blade <luck-blade>
-_Weapon (any sword), Adventurer (requires attunement)_
+_Weapon (any slashing weapon, Masterwork), Adventurer (requires attunement)_
 
-This is a masterwork weapon. This sword has 3 charges. If the sword is on your person, you can call on its luck and expend a charge (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. The sword regains 1d3 charges at dawn.
+This weapon has 3 charges. If the sword is on your person, you can call on its luck and expend a charge (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. The sword regains 1d3 charges at dawn.
 
 === Mace of Disruption <mace-of-disruption>
 _Weapon (any bludgeoning), Hero (requires attunement)_ 
@@ -2957,7 +2836,7 @@ _Weapon (any bludgeoning), Hero (requires attunement)_
 This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Guard action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. The mace regains 1d3 expended charges daily at dawn.
 
 === Moons-glow Weapon <moons-glow-weapon>
-_Weapon (any sword, axe, or polearm), Journeyman_
+_Weapon (any Heavy or Light Blade or Hafted), Journeyman_
 
 This magic weapon was forged and blessed by kami. It counts as being silvered, and when unsheathed in the dark, it glows, shedding bright light for 10 feet and dim light for 10 feet beyond that. The color of the glow changes as the moons wax and wane, ranging from white when Quella is new to pure red when Quella is full.
 
@@ -2969,19 +2848,19 @@ _Weapon (any melee), Hero (requires attunement)_
 This is a masterwork weapon. The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.
 
 === Oathbow <oathbow>
-_Weapon (longbow), Hero (requires attunement)_
+_Weapon (Ranged (piercing), Ammunition (arrow), Masterwork, Precise, Two-Handed), Hero (requires attunement)_
 
 When you nock an arrow on this masterwork bow, it whispers in Metsae, “Swift defeat to my enemies.” When you use this weapon to make a ranged attack, you can, as a command phrase, say, “Swift death to you who have wronged me.” The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
 
 When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.
 
 === Scimitar of Speed <scimitar-of-speed>
-_Weapon (scimitar), Hero (requires attunement)_
+_Weapon (Heavy Blade, Cleaving, Light, Masterwork), Hero (requires attunement)_
 
-This is a masterwork weapon. In addition, you can make one attack with it as a bonus action on each of your turns.
+You can make one attack with it as a bonus action on each of your turns.
 
 === Staff of Charming <staff-of-charming>
-_Staff, Hero (requires attunement)_ 
+_Staff (Bashing, Battering, Parrying), Hero (requires attunement)_ 
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast #safe-link("charm-person",[_charm person_]) or #safe-link("command",[_command_]) from it using your spell save DC or 8 + your Charisma modifier + your proficiency bonus if you do not have a spellcasting DC. The staff can also be used as a magic quarterstaff. If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.  The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a non-magical quarterstaff.
 
@@ -3011,9 +2890,7 @@ This staff has 10 charges. While holding it, you can use an action to expend 1 o
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever.
 
 === Staff of Power <staff-of-power>
-_Staff, Hero (requires attunement)_
-
-This staff can be wielded as a masterwork quarterstaff.
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
 The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn as long as it has at least one charge remaining. If you expend the last charge, roll a d20. On a 20, the staff regains 1d8 + 2 charges.
 
@@ -3023,17 +2900,17 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 
 *Retributive Strike.* You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.  You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take bludgeoning damage equal to 16 #sym.times the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.
 
-#dndtab("", 
-"Distance from Origin","Damage",
+#dndtab("Retributive Strike", 
+"Distance from Origin","Damage", columns: (1fr, 2fr), align: left,
 "10 ft. away or closer",[8 #sym.times the number of charges in the staff],
 "11 to 20 ft. away",[6 #sym.times the  number of charges in the staff],
 "21 to 30 ft. away",[4 #sym.times the number of charges in the staff],
 )
 
 === Staff of Striking <staff-of-striking>
-_Staff, Hero (requires attunement)_
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
-This staff can be wielded as a masterwork quarterstaff.  The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
+The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 bludgeoning damage. The staff regains 1d6 + 4 expended charges daily at dawn as long as it has at least one charge remaining.
 
 === Staff of Swarming Insects <staff-of-swarming-insects>
 _Staff, Hero (requires attunement)_
@@ -3045,27 +2922,25 @@ This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If
 *Insect Cloud.* While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.
 
 === Staff of the Python <staff-of-the-python>
-_Staff, Adventurer (requires attunement)_
+_Staff (Bashing, Battering, Parrying), Adventurer (requires attunement)_
 
 You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.  On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.  If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.
 
 === Staff of the Woodlands <staff-of-the-woodlands>
-_Staff, Hero (requires attunement)_
-
-This staff can be wielded as a masterwork quarterstaff.
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
 The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.
 
 *Spells.* You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: #safe-link("barkskin",[_barkskin_]) (2 charges), or #safe-link("wall-of-thorns",[_wall of thorns_]) (6 charges).
 
-In addition, you can use the Voice the Voiceless (1 charge, Animals and Plants only), and Awaken Beast or Plant (5 charges) incantations.
+In addition, you can use the #safe-link("voice-the-voiceless", "Voice the Voiceless") (1 charge, Animals and Plants only), and #safe-link("awaken-beast-or-plant", "Awaken Beast or Plant") (5 charges) incantations.
 
 *Tree Form.* You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by #safe-link("sense-aura",[_sense aura_]). While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
 
 === Staff of Thunder and Lightning <staff-of-thunder-and-lightning>
-_Staff, Hero (requires attunement)_
+_Staff (Bashing, Battering, Masterwork, Parrying), Hero (requires attunement)_
 
-This staff can be wielded as a masterwork quarterstaff. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.
+This staff has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.
 
 *Lightning.* When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage.
 
@@ -3078,21 +2953,21 @@ This staff can be wielded as a masterwork quarterstaff. It also has the followin
 *Thunder and Lightning.* You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.
 
 === Staff of Withering <staff-of-withering>
-_Staff, Hero (requires attunement)_ 
+_Staff (Bashing, Battering, Parrying), Hero (requires attunement)_ 
 
-This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
+This staff has 3 charges and regains 1d3 expended charges daily at dawn. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
 
 === Sun Blade <sun-blade>
-_Weapon (longsword), Hero (requires attunement)_
+_Weapon (Heavy Blade, Light, Masterwork, Silvered, Parrying, Precise), Hero (requires attunement)_
 
-This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword grants the wielder the Nimble Strike feature, allowing them to use their Ranged Attack Modifier instead of their Melee Attack Modifier. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
+This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword grants the wielder the Nimble Strike feature, allowing them to use their Ranged Attack Modifier instead of their Melee Attack Modifier.
 
-This is a masterwork weapon which counts as silvered and which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.
+This weapon deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.
 
 The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.
 
 === Sword of Life Stealing <sword-of-life-stealing>
-_Weapon (any sword), Hero (requires attunement)_
+_Weapon (any Heavy or Light Blade), Hero (requires attunement)_
 
 When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt.
 
@@ -3107,15 +2982,15 @@ _Weapon (any), Hero_
 When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.
 
 === Vorpal Sword <vorpal-sword>
-_Weapon (any sword that deals slashing damage), legendary (requires attunement)_
+_Weapon (any Heavy Blade that deals slashing damage. Has Adamantine, Masterwork, Silvered), legendary (requires attunement)_
 
-This is a masterwork weapon that counts as silvered and adamantine. In addition, the weapon ignores resistance to slashing damage.  When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.
+This weapon ignores resistance to slashing damage.  When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.
 
 === Weapon of Wounding <weapon-of-wounding>
 _Weapon (any), Hero (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.
-
+#pagebreak()
 = Skill Tricks <skill-tricks>
 Those who are particularly adept at certain aspects of adventuring often learn ways to use their talents to perform tricks that seem supernatural or magical to outside observers. While they are not magical in the same sense as spells or invocations, per se, they do produce effects not normally possible.
 
@@ -3156,13 +3031,13 @@ You learn one cantrip of your choice from the Arcanist list, as well as one spel
 
 === Charge <charge-trick>
 
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 When you move at least 15 feet toward an enemy and hit them with a melee weapon attack, you can choose between making a shove attack against them as part of that attack or dealing one extra die of damage against them.
 
 === Coordinated Strike <coordinated-strike-trick>
 
-_Charisma (Martial Weapon) Basic Skill Trick_
+_Charisma (Advanced Weapon Skill) Basic Skill Trick_
 
 As a bonus action you take when you take the Attack action and attack a target, expend 2 STA. Another creature of your choice that can hear you can use their reaction to make a weapon attack against that same target. If they hit, they deal additional damage equal to your proficiency bonus.
 
@@ -3180,7 +3055,7 @@ When you attempt to persuade someone to bypass procedures or to stop hostilities
 
 === Disarm <disarm-trick>
 
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 When you hit with a melee weapon attack, you can spend 1 STA to attempt to disarm the opponent. The target must make a Strength saving throw. On a failed save, their wielded weapon falls at their feet. If they are at least two sizes larger than you, they make the save at advantage. If they are one size or more smaller than you, they do so at disadvantage. 
 
@@ -3248,7 +3123,7 @@ When you are hidden, you can use your bonus action and spend 1 STA to force a nu
 
 === Piercing Wound <piercing-wound-trick>
 
-_Dexterity (Martial Weapon) Basic Skill Trick_
+_Dexterity (Advanced Weapon Skill) Basic Skill Trick_
 
 When you hit with an attack from a ranged weapon, you can spend 1 STA to try to hamper the offense of the opponent. The target must make a Constitution saving throw. On a failed save, their next weapon attack is at disadvantage. If you have the Nimble Strike feature, you can use this with any weapon attack that uses Dexterity.
 
@@ -3259,7 +3134,7 @@ _Wisdom (Nature) Basic Skill Trick_
 You learn one cantrip of your choice from the Shaman list, as well as one spell costing no more than 2 AET. Wisdom is your casting ability for these spells. You can pick this skill trick more than once. Each time you do, pick a different cantrip and spell.
 
 === Resourceful Combatant <resourceful-combatant-trick>
-_Strength (Martial Weapon) Basic Skill Trick_
+_Strength (Advanced Weapon Skill) Basic Skill Trick_
 
 You gain proficiency in fighting with improvised weapons and brawling. Improvised weapons wielded in one hand have a 1d6 damage die and count as Light; wielded in two hands have a 1d10 damage die and count as Two Handed. Additionally, you have advantage on attempts to grapple or shove, as well as checks made to escape a grapple or restraint.
 
@@ -3541,7 +3416,7 @@ As an action you can expend 4 AET to magically do one of the following to a crea
 - Cure any disease and remove any poison or curse affecting the creature.
 - Break one spell affecting the creature.
 - Restore a dead body to life as long as it has been dead less than 1 hour. Using this option causes both you and the target 3 levels of exhaustion.
-
+#pagebreak()
 = Spellcasting <spellcasting>
 Magic permeates fantasy gaming worlds and often appears in the form of a spell.
 
@@ -3666,7 +3541,7 @@ Legendary effects are those whose power is too great to learn or cast as a norma
 
 === Conversion from 5e spells
 These are starting points. Unlike fixed spell levels, spells can have any integer base aether cost. And some spells will end up moving up or down a category.
-#dndtab("", columns: 1fr,
+#dndtab("", columns: (1fr, 1fr),
 "Spell level (5e)","Starting Aether Cost",
 "1","2",
 "2","3",
@@ -3679,7 +3554,7 @@ These are starting points. Unlike fixed spell levels, spells can have any intege
 === Starting values for total aether and aether limit <starting-values-for-total-aether-and-aether-limit>
 Starting points. Note that everyone gets aether. "Martial" is those who don't explicitly have a Spellcasting trait.
 
-#dndtab("", columns: 1fr, 
+#dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 1.5fr), 
 "Level","Full","Half","Martial","Limit (F/H/M)",
 "1","4","2","1","2/1/1",
 "2","8","4","1","3/2/1",
@@ -3723,14 +3598,14 @@ Generally, monsters have the lowest Dexterity and Intelligence saving throw modi
   #dndtab("", columns: (1fr, 1fr, 1fr, 1fr, 4fr),
 "Save","Weak","Regular","Strong","Notes",
 "WIS","shaken","frightened","broken","Broken should rarely apply to PCs.",
-"STR","grappled","restrained","petrified","Petrified should require multiple failed saves. Prone can work as a weak version where appropriate.",
-"CON","staggered","stunned","paralyzed","Be very careful with paralyzed.",
-"CHA","","---","charmed","Dominated","Dominated isn't a condition, but...",
-"CON/WIS","","---","incapacitated","unconscious",
-"CON","","---","poisoned","exhaustion",  
+"STR","grappled/prone","restrained","petrified","Petrified should require multiple failed saves.",
+"CON","staggered","stunned","paralyzed","Be very careful with paralyzed. The extra crits are nasty.",
+"CHA","---","charmed","Dominated","Dominated isn't a condition, but...",
+"CON/WIS","---","incapacitated","unconscious", "Usually caused by some other condition",
+"CON","---","poisoned","exhaustion", ""
   )
 ]
-
+#pagebreak()
 = Spell Lists <spell-lists>
 
 == By Cost <spells-by-cost>
@@ -4472,8 +4347,8 @@ This spell assaults and twists creatures' minds, spawning delusions and provokin
 
 An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
 
-#dndtab("Confusion",
-"d10","*Behavior",
+#dndtab("",
+"d10","Behavior",
 "1","The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.",
 "2-6","The creature doesn't move or take actions this turn.",
 "7-8","The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.",
@@ -6641,7 +6516,7 @@ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flyin
 You extend a tether of sticky force and try to pull a creature or unattended object within range. Unwilling creatures must make a Strength saving throw; creatures more than one size larger than you do so at advantage. Willing creatures, objects, and those that fail their saving throw are pulled up to 15 feet closer to you. You can angle this as long as their final position is closer to you than their initial position. If you target an object, it must be no more than one size larger than you, otherwise the spell fails.
 
 Alternatively, you can use this spell to grapple to a fixed object that can support your weight or a creature you can see of at least two sizes larger than yourself within range. If you do so, you are pulled 15 feet closer to that creature or object.
-
+#pagebreak()
 = Legendary Effects <legendary-effects>
 
 Legendary effects are magical abilities of great power. In some respects they are similar to spells, but one cannot learn and cast them normally using your personal aether. Instead, you must gain access via a class feature. Some creatures and magic items have the ability to create specific legendary effects. In general, each legendary effect can only be cast (brought into effect) once per day. The class feature will also define what saving throw DC is used if the effect calls for a saving throw.
@@ -7197,9 +7072,4 @@ You must designate a sanctuary by casting this effect within a location dedicate
 
 This effect ignores all non-legendary effects that preclude or inhibit teleportation.
 
-
-= Legal Stuff
-
-This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at dnd.wizards.com. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at creativecommons.org.
-
-The remainder of the text is licensed under the same license by the author, Ben Hall. Please attribute as: "NIH Character Creation by Ben Hall, licensed under CC BY 4.0 [Link to License].",
+#include "../shared/legal.typ"

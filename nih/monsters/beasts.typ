@@ -14,12 +14,7 @@ Most normal gorillas, chimpanzees, and other larger apes are best represented by
 	speed: [30 ft., climb 30 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Athletics +5, Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1/4],
@@ -33,6 +28,7 @@ actions: (
 ))
 
 The baboon can represent any smaller ape or monkey large enough to pose a threat to a normal person.
+#pagebreak()
 #statbox((name: "Baboon",
 	description: [Small beast, pack mentality, craven],
 	ac: [12],
@@ -40,12 +36,6 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	speed: [30 ft., climb 30 ft.],
 	stats: (STR: [-1], DEX: [+2], CON: [+0], INT: [-3], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [---],
 		Challenge: [1/4:0],
@@ -57,7 +47,6 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 		("Bite", [Melee Attack: +3 to hit, reach 5 ft, one target. _Hit:_ 1d4 + 2 piercing damage.]),
 	)
 ))
-
 #statbox((name: "Black Bear",
 	description: [Medium beast, individualistic, craven],
 	ac: [11 (natural armor)],
@@ -65,12 +54,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	speed: [40 ft., climb 30 ft.],
 	stats: (STR: [+2], DEX: [+0], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1/4],
@@ -92,12 +76,7 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	speed: [10 ft., fly 60 ft.],
 	stats: (STR: [-2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+2], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [---],
 		Challenge: [1/4:1/8],
@@ -117,12 +96,6 @@ The baboon can represent any smaller ape or monkey large enough to pose a threat
 	speed: [40 ft.],
 	stats: (STR: [+1], DEX: [+0], CON: [+1], INT: [-4], WIS: [-1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 9],
 		Languages: [---],
 		Challenge: [1/4:1/4]
@@ -144,12 +117,7 @@ traits: (
 	speed: [40 ft., climb 30 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [2:1/2],
@@ -171,12 +139,6 @@ traits: (
 	speed: [50 ft.],
 	stats: (STR: [+3], DEX: [0], CON: [+2], INT: [-4], WIS: [-1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 9],
 		Languages: [---],
 		Challenge: [1/8:1/8],
@@ -193,12 +155,6 @@ traits: (
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [+2], DEX: [+2], CON: [+1], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [1/2:1/8],
@@ -216,12 +172,7 @@ traits: (
 	speed: [20 ft., swim 30 ft.],
 	stats: (STR: [+2], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1/2:1/4]
@@ -241,12 +192,7 @@ traits: (
 	speed: [50 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1]
@@ -268,12 +214,6 @@ traits: (
 	speed: [40 ft.],
 	stats: (STR: [+4], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1:0],
@@ -290,12 +230,6 @@ traits: (
 	speed: [40 ft.],
 	stats: (STR: [+6], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [4:4]
@@ -316,12 +250,6 @@ traits: (
 	speed: [50 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1/2:1/4]
@@ -342,12 +270,6 @@ traits: (
 	speed: [30 ft., fly 60 ft., swim 30 ft],
 	stats: (STR: [-3], DEX: [+3], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., passive Perception 11],
 		Languages: [---],
 		Challenge: [1:1/8]
@@ -367,12 +289,7 @@ traits: (
 	speed: [40 ft., climb 40 ft.],
 	stats: (STR: [+6], DEX: [+2], CON: [+4], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Athletics +9, Perception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [---],
 		Challenge: [7:7],
@@ -391,12 +308,6 @@ traits: (
 	speed: [30 ft., burrow 10 ft.],
 	stats: (STR: [+1], DEX: [+1], CON: [+2], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 30 ft., passive Perception 11],
 		Languages: [---],
 		Challenge: [1/4:1/8]
@@ -418,12 +329,6 @@ traits: (
 	speed: [10 ft., fly 60 ft.],
 	stats: (STR: [+2], DEX: [+3], CON: [+0], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 60 ft., passive Perception 11],
 		Languages: [---],
 		Challenge: [1/4:1/2]
@@ -445,12 +350,6 @@ traits: (
 	speed: [40 ft.],
 	stats: (STR: [+3], DEX: [+0], CON: [+3], INT: [-4], WIS: [-2], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 8],
 		Languages: [---],
 		Challenge: [1:1]
@@ -472,12 +371,6 @@ traits: (
 	speed: [30 ft., climb 30 ft.],
 	stats: (STR: [-3], DEX: [+2], CON: [+1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., passive Perception 8],
 		Languages: [---],
 		Challenge: [1:1/4],
@@ -494,12 +387,7 @@ traits: (
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [+4], DEX: [+2], CON: [+1], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., passive Perception 12],
 		Languages: [---],
 		Challenge: [2:2],
@@ -517,12 +405,7 @@ traits: (
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [+2], DEX: [+2], CON: [+0], INT: [-5], WIS: [-1], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., passive Perception 9],
 		Languages: [---],
 		Challenge: [1/4:1/2]
@@ -542,12 +425,6 @@ traits: (
 	speed: [30 ft., swim 50 ft.],
 	stats: (STR: [+4], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [5:4]
@@ -569,12 +446,7 @@ traits: (
 	speed: [10 ft., fly 80 ft.],
 	stats: (STR: [+3], DEX: [+3], CON: [+1], INT: [-1], WIS: [+2], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [---],
 		Challenge: [2:2]
@@ -596,12 +468,6 @@ traits: (
 	speed: [30 ft.],
 	stats: (STR: [-1], DEX: [+0], CON: [+1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., passive Perception 8],
 		Languages: [---],
 		Challenge: [1/8:1/8]
@@ -621,12 +487,7 @@ traits: (
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [+1], DEX: [+1], CON: [+0], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2, Stealth +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 30 ft., passive Perception 12],
 		Languages: [---],
 		Challenge: [1/4:1/4]
@@ -652,12 +513,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [40 ft.],
 	stats: (STR: [+3], DEX: [+0], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [---],
 		Challenge: [1:1/4]
@@ -679,12 +534,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [50 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1]
@@ -704,12 +554,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [30 ft., climb 30 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 30 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [1/2:1/4],
@@ -726,12 +570,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [10 ft., swim 60 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+1], INT: [-3], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 14],
 		Languages: [---],
 		Challenge: [1:1]
@@ -756,12 +595,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [5 ft., fly 60 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-1], WIS: [+1], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +5, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 120 ft., passive Perception 15],
 		Languages: [understands Sylvan but can't speak it],
 		Challenge: [1:1/4]
@@ -783,12 +617,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [+0], DEX: [+3], CON: [+1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., passive Perception 12],
 		Languages: [---],
 		Challenge: [2:1/2],
@@ -805,12 +634,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [30 ft.],
 	stats: (STR: [-2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [1/4:1/8]
@@ -832,12 +655,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [40 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+2], INT: [-5], WIS: [-1], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 60 ft., passive Perception 9],
 		Languages: [---],
 		Challenge: [4:3],
@@ -856,12 +673,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [0 ft., swim 40 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [---],
 		Challenge: [1/2:1/4]
@@ -883,12 +694,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [0 ft., swim 50 ft.],
 	stats: (STR: [+4], DEX: [+0], CON: [+5], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 60 ft., passive Perception 13],
 		Languages: [---],
 		Challenge: [6:6]
@@ -913,12 +719,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [30 ft., climb 30 ft.],
 	stats: (STR: [+2], DEX: [+3], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +7],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., darkvision 60 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [2:1]
@@ -943,12 +744,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [20 ft., swim 40 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 30 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [2:1]
@@ -972,12 +767,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [10 ft., fly 60 ft.],
 	stats: (STR: [+2], DEX: [+2], CON: [+2], INT: [-2], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [--],
 		Challenge: [2:1]
@@ -1001,12 +791,6 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [10 ft., fly 50 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1:1/4],
@@ -1023,12 +807,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [40 ft.],
 	stats: (STR: [+0], DEX: [+3], CON: [+0], INT: [-3], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 13],
 		Languages: [---],
 		Challenge: [1/2:1/8]
@@ -1048,12 +827,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 	speed: [40 ft., climb 40 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., darkvision 60 ft., passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1/4]
@@ -1078,12 +852,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [50 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-4], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1:1/2],
@@ -1103,12 +871,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [0 ft., swim 40 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+2], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., passive Perception 12],
 		Languages: [---],
 		Challenge: [1:1]
@@ -1130,12 +893,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [0 ft., swim 60 ft.],
 	stats: (STR: [+4], DEX: [+0], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 120 ft., passive Perception 13],
 		Languages: [---],
 		Challenge: [3:3]
@@ -1159,12 +917,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [50 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1/2]
@@ -1191,12 +944,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+7], DEX: [-1], CON: [+5], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [6:6]
@@ -1217,12 +964,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1/4:0]
@@ -1242,12 +984,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [50 ft., climb 40 ft.],
 	stats: (STR: [+2], DEX: [+2], CON: [+0], INT: [-4], WIS: [+2], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [---],
 		Challenge: [1/2:1/8]
@@ -1271,12 +1008,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [-4], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 10 ft., passive Perception 10],
 		Languages: [---],
 		Challenge: [1/4:1/8],
@@ -1293,12 +1024,8 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft., swim 30 ft.],
 	stats: (STR: [+5], DEX: [+0], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3],
-		"Damage Immunities": [],
 		"Damage Resistances": [cold],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [3:2]
@@ -1308,14 +1035,14 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 
 ),
 	actions: (
-("Multiattack", [The bear makes two attacks: one with its bite and one with its claws.]),
-("Bite", [Melee Attack: +7 to hit, reach 5, one target. _Hit:_ 1d8 + 5 piercing.]),
-("Claws", [Melee Attack: +7 to hit, reach 5, one target. _Hit:_ 2d6 + 5 slashing.]),
-)))
-
-*Variants:*
-- Cave Bear: Cave bears lose the cold damage resistance and gain 60 ft of darkvision.
-
+		("Multiattack", [The bear makes two attacks: one with its bite and one with its claws.]),
+		("Bite", [Melee Attack: +7 to hit, reach 5, one target. _Hit:_ 1d8 + 5 piercing.]),
+		("Claws", [Melee Attack: +7 to hit, reach 5, one target. _Hit:_ 2d6 + 5 slashing.]),
+	),
+	variants: (
+		("Cave Bear", [Cave bears lose the cold damage resistance and gain 60 ft of darkvision.])
+	)
+))
 #statbox((name: "Pony",
 	description: [Medium beast, domestic, herd mentality],
 	ac: [10],
@@ -1323,12 +1050,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+2], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1/4:0]
@@ -1348,12 +1069,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [0 ft., swim 40 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-5], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [blindsight 30 ft., passive Perception 12],
 		Languages: [---],
 		Challenge: [1/2:1/2]
@@ -1376,12 +1092,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+5], DEX: [-1], CON: [+3], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [---],
 		Challenge: [2:2]
@@ -1401,12 +1111,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [60 ft.],
 	stats: (STR: [+1], DEX: [+0], CON: [+1], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [---],
 		Challenge: [1/2:0]
@@ -1426,12 +1130,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [3:2]
@@ -1456,11 +1155,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [0 ft., fly 30 ft.],
 	stats: (STR: [-3], DEX: [+2], CON: [+0], INT: [-4], WIS: [+1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [bludgeoning, piercing, slashing],
-		"Damage Vulnerabilities": [],
+		"Damage Resistances": [damage from any single-target effect],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [blindsight 60 ft., passive Perception 11],
 		Languages: [---],
@@ -1485,11 +1180,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [20 ft., climb 20 ft.],
 	stats: (STR: [-4], DEX: [+1], CON: [+0], INT: [-5], WIS: [-2], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from any single-target effect],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [blindsight 10 ft., passive Perception 8],
 		Languages: [---],
@@ -1510,11 +1201,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [30 ft., swim 30 ft.],
 	stats: (STR: [-1], DEX: [+2], CON: [+0], INT: [-5], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from any single-target effect],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [blindsight 10 ft., passive Perception 10],
 		Languages: [---],
@@ -1535,11 +1222,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [0 ft., swim 40 ft.],
 	stats: (STR: [+1], DEX: [+3], CON: [-1], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from any single-target effect],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [darkvision 60 ft., passive Perception 8],
 		Languages: [---],
@@ -1564,11 +1247,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [30 ft.],
 	stats: (STR: [-1], DEX: [+1], CON: [-1], INT: [-4], WIS: [+0], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from any single-target effect],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [darkvision 30 ft., passive Perception 10],
 		Languages: [---],
@@ -1591,11 +1270,8 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [10 ft., fly 50 ft.],
 	stats: (STR: [-2], DEX: [+2], CON: [-1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +5],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from any single target effect],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned],
 		Senses: [passive Perception 15],
 		Languages: [---],
@@ -1616,12 +1292,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+2], INT: [-4], WIS: [+1], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 13],
 		Languages: [---],
 		Challenge: [1:1]
@@ -1644,12 +1315,6 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [60 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [---],
 		Challenge: [1:1/4]
@@ -1670,12 +1335,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	speed: [40 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+1], INT: [-4], WIS: [+1], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [---],
 		Challenge: [1/2:1/8]
@@ -1689,4 +1349,3 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	actions: (
 ("Bite", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 2d4 + 2 piercing. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.]),
 )))
-\end{multicols}

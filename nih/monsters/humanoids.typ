@@ -13,12 +13,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+0], CON: [+0], INT: [+0], WIS: [+2], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Medicine +4, Religion +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [any one language (usually Common)],
 		Challenge: [1/4:1/8],
@@ -27,7 +22,7 @@ The stat blocks presented here are starting points for further customization mor
 		("Spellcasting", [The acolyte's spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The acolyte has following spells prepared: \ *Concentration*: #safe-link("bless",[_bless_]) (x1), #safe-link("sanctuary",[_sanctuary_]) (x1) \ *Healing*: #safe-link("cure-wounds",[_cure wounds_]) (x2)]),
 	),
 	actions: (
-		("Club", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d4 bludgeoning damage.]),
+		("Club", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d6 bludgeoning damage.]),
 		("Judgement Strike", [Ranged Spell Attack: +3 to hit, range 60 ft., one target. _Hit:_ 1d8 radiant or necrotic damage. This counts as a cantrip.]),
 	),
 	equipment: (
@@ -43,12 +38,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+1], INT: [+0], WIS: [+2], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Deception +4, Persuasion +4, Religion +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [any one language (usually Common)],
 		Challenge: [1:1/2],
@@ -58,7 +48,7 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	actions: (
 		("Multiattack", [The acolyte makes two dagger attacks or casts Judgement Strike twice.]),
-		("Dagger", [Melee or Ranged Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 2 piercing damage.]),
+		("Dagger", [Melee or Ranged Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 2 piercing damage.]),
 		("Judgement Strike", [Ranged Spell Attack: +4 to hit, range 60 ft., one target. _Hit:_ 1d8 + 2 radiant or necrotic damage. This counts as a cantrip.]),
 	),
 	equipment: (
@@ -79,22 +69,18 @@ The stat blocks presented here are starting points for further customization mor
 	skillblock: (
 		"Saving Throws": [Int +9, Wis +6],
 		Skills: [Arcana +13, History +13],
-		"Damage Immunities": [],
 		"Damage Resistances": [damage from spells; bludgeoning, piercing, and slashing],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [any six languages],
 		Challenge: [13:10],
 	),
 	traits: (
-		("", [\begin{multicols}{2}]),
 		("Magic Resistance", [The archmage has advantage on saving throws against spells and other magical effects.]),
 		("Spellcasting", [The archmage's spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast the following spells in combat: \ *Concentration* #safe-link("faerie-fire",[_faerie fire_]) (at will), #safe-link("black-tentacles",[_black tentacles_]) (x2), #safe-link("wall-of-force",[_wall of force_]) (x2) \ *Damage* #safe-link("disintegrate",[_disintegrate_]) (Legendary, x2, 10d6+60), #safe-link("fireball",[_fireball_]) (x3, 6d6) \ *Defensive* #safe-link("misty-step",[_misty step_]) (at will), #safe-link("stoneskin",[_stoneskin_]) (x3), #safe-link("time-stop",[_time stop_]) (Legendary, x1)]),
 	),
 	actions: (
 		("Multicast (recharge 5-6)", [The archmage can use one of its spell attacks as a bonus action if it casts a spell using its Spellcasting feature.]),
-		("Dagger", [Melee or Ranged Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 2 piercing damage.]),
+		("Dagger", [Melee or Ranged Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 2 piercing damage.]),
 		("Fire blast", [Ranged Spell Attack: +9 to hit, range 120ft., one target. _Hit:_ 4d10 + 5 fire damage. This ability counts as a cantrip.]),
 		("Lightning Fist", [Melee Spell Attack: +9 to hit, reach 5ft., one target. _Hit:_ 4d8 + 5 lightning damage, and the target cannot take reactions until the start of their next turn. This ability counts as a cantrip.]),
 	),
@@ -109,14 +95,11 @@ The stat blocks presented here are starting points for further customization mor
 	ac: [15 (reinforced leather)],
 	hp: [78 (12d8 + 24)],
 	speed: [30 ft.],
-	stats: (STR: [+0], DEX: [+3 (+6)], CON: [+2], INT: [+1], WIS: [+0 (+4)], CHA: [+0]),
+	stats: (STR: [+0], DEX: [+3], CON: [+2], INT: [+1], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [DEX +6, WIS +4],
 		Skills: [Acrobatics +6, Deception +3, Perception +3, Stealth +9],
-		"Damage Immunities": [],
 		"Damage Resistances": [poison],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [Thieves' cant plus any two languages],
 		Challenge: [8:5],
@@ -129,13 +112,13 @@ The stat blocks presented here are starting points for further customization mor
 	actions: (
 		("Multiattack", [The assassin makes two shortsword attacks.]),
 		("Shortsword", [Melee Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 3 piercing damage, and the target must make a DC 14 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.]),
-		("Light Crossbow", [Ranged Attack: +6 to hit, range 80/320 ft., one target. _Hit:_ 1d8 + 3 piercing damage, and the target must make a DC 14 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.]),
+		("Light Crossbow", [Ranged Attack: +6 to hit, range 80/320 ft., one target. _Hit:_ 1d10 + 3 piercing damage, and the target must make a DC 14 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.]),
 	),
 	equipment: (
 		("Common", [One vial of poison (4d6 poison damage, DC 14), a poisoner's kit, a pouch of 200-300 gp, a smoke bomb (object interaction to create a 5-ft radius cloud of heavy obscurement for one round), 20 crossbow bolts]),
 		("Rare", [A more exotic poison, written orders from his employer (which may be falsified), an adventurer-tier or journeyman-tier magic item, usually stealth related.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Bandit",
 	description: [Medium humanoid (any lineage)],
@@ -144,12 +127,6 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+1], CON: [+1], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [any one language (usually Common)],
 		Challenge: [1/4:1/8],
@@ -177,10 +154,6 @@ The stat blocks presented here are starting points for further customization mor
 	skillblock: (
 		"Saving Throws": [Str +4, Dex +5, Wis +2],
 		Skills: [Athletics +4, Deception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [any two languages],
 		Challenge: [2:3],
@@ -190,7 +163,7 @@ The stat blocks presented here are starting points for further customization mor
 	actions: (
 		("Multiattack", [The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.]),
 		("Scimitar", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 3 slashing damage.]),
-		("Dagger", [Melee or Ranged Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 3 piercing damage.]),
+		("Dagger", [Melee or Ranged Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 3 piercing damage.]),
 		("Parry", [As a reaction, the captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.]),
 	),
 	equipment: (
@@ -206,12 +179,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+3], DEX: [+2], CON: [+3], INT: [-1], WIS: [+0], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
+		Skills: [Athletics +5],
 		Senses: [passive Perception 10],
 		Languages: [any one language (usually Common)],
 		Challenge: [2:2],
@@ -235,12 +203,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+1], DEX: [+1], CON: [+1], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [any one language (usually Common)],
 		Challenge: [1/4:1/2],
@@ -248,10 +211,10 @@ The stat blocks presented here are starting points for further customization mor
 	traits: (
 	),
 	actions: (
-		("Spear", [Melee or Ranged Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 1 piercing damage.]),
+		("Spear", [Melee or Ranged Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 1 piercing damage.]),
 	),
 	equipment: (
-		("Common", [5-15 silver coins.]),
+		("Common", [5-15 silver coins, a lantern or two torches if encountered at night]),
 	),
 ))
 
@@ -260,16 +223,12 @@ The stat blocks presented here are starting points for further customization mor
 	ac: [18 (plate)],
 	hp: [52 (8d8 + 16)],
 	speed: [30 ft.],
-	stats: (STR: [+3], DEX: [+0], CON: [+2 (+4)], INT: [+0], WIS: [+0 (+2)], CHA: [+2]),
+	stats: (STR: [+3], DEX: [+0], CON: [+2], INT: [+0], WIS: [+0], CHA: [+2]),
 	skillblock: (
 		"Saving Throws": [Con +4, Wis +2],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
-		Senses: [passive Perception 10],
-		Languages: [any one language (usually Common)],
+		Skills: [Athletics +5, Perception +2, Persuasion +4],
+		Senses: [passive Perception 12],
+		Languages: [Common, one other language],
 		Challenge: [3:4],
 	),
 	traits: (
@@ -297,10 +256,6 @@ The stat blocks presented here are starting points for further customization mor
 	skillblock: (
 		"Saving Throws": [Int +6, Wis +4],
 		Skills: [Arcana +6, History +6],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [any four languages],
 		Challenge: [6:3],
@@ -326,12 +281,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+1], CON: [+0], INT: [+1], WIS: [+2], CHA: [+3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Deception +5, Insight +4, Persuasion +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [any two languages],
 		Challenge: [1/4:1/4],
@@ -354,12 +304,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+0], CON: [+1], INT: [+1], WIS: [+3], CHA: [+1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Medicine +7, Persuasion +3, Religion +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [any two languages],
 		Challenge: [3:2],
@@ -387,12 +332,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+1], INT: [+0], WIS: [+1], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Nature +4, Perception +5, Stealth +6, Survival +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 15],
 		Languages: [any one language (usually Common)],
 		Challenge: [1:1/2],
@@ -402,8 +342,8 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	actions: (
 		("Multiattack", [The scout makes two melee attacks or two ranged attacks.]),
-		("Shortsword", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 2 piercing damage.]),
-		("Longbow", [Ranged Attack: +4 to hit, range 150/600 ft., one target. _Hit:_ 1d8 + 2 piercing damage.]),
+		("Shortsword", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 2 piercing damage.]),
+		("Longbow", [Ranged Attack: +4 to hit, range 120/300 ft., one target. _Hit:_ 1d12 + 2 piercing damage.]),
 	),
 	equipment: (
 		("Common", [A healer's kit, rations, 20 extra arrows]),
@@ -418,12 +358,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+1], CON: [+1], INT: [+1], WIS: [+2], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Medicine +4, Nature +3, Perception +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [Common plus any two languages, usually sylvan],
 		Challenge: [1:1],
@@ -449,12 +384,8 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+0], INT: [+1], WIS: [+2], CHA: [+3]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [WIS +4],
 		Skills: [Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of Hand +4, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 16],
 		Languages: [any two languages],
 		Challenge: [2:1],
@@ -481,12 +412,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+2], DEX: [+0], CON: [+2], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Intimidation +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [any one language (usually Common)],
 		Challenge: [1:1],
@@ -496,8 +422,8 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	actions: (
 		("Multiattack", [The thug makes two melee attacks.]),
-		("Warhammer", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 2 bludgeoning damage. Miss The target still takes 2 bludgeoning damage.]),
-		("Heavy Crossbow", [Ranged Attack: +2 to hit, range 100/400 ft., one target. _Hit:_ 1d10 piercing damage.]),
+		("Warhammer", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d10 + 2 bludgeoning damage. Miss The target still takes 2 bludgeoning damage.]),
+		("Heavy Crossbow", [Ranged Attack: +2 to hit, range 100/400 ft., one target. _Hit:_ 1d12 piercing damage.]),
 	),
 	equipment: (
 		("Common", [Dice or other gambling equipment. A substantial amount of coin (2-10 gp, often in silver and copper).]),
@@ -512,12 +438,7 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+2], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Athletics +5, Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [any one language (usually Common)],
 		Challenge: [3:3],
@@ -541,14 +462,10 @@ The stat blocks presented here are starting points for further customization mor
 	ac: [16 (reinforced leather, shield)],
 	hp: [112 (15d8 + 45)],
 	speed: [30 ft.],
-	stats: (STR: [+4 (+7)], DEX: [+2 (+5)], CON: [+3 (+6)], INT: [+0], WIS: [+1], CHA: [+2]),
+	stats: (STR: [+4], DEX: [+2], CON: [+3], INT: [+0], WIS: [+1], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [STR +7, DEX +5, CON +6],
 		Skills: [Athletics +10, Intimidation +5],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 11],
 		Languages: [any one language (usually Common)],
 		Challenge: [5:6],
@@ -559,7 +476,7 @@ The stat blocks presented here are starting points for further customization mor
 	),
 	actions: (
 		("Multiattack", [The warrior makes three melee attacks or two ranged attacks.]),
-		("Spear", [Melee or Ranged Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 2d6 + 4 piercing damage.]),
+		("Javelin", [Melee or Ranged Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 2d6 + 4 piercing damage.]),
 		("Shield Bash", [Melee Attack: +7 to hit, reach 5 ft., one target. _Hit:_ 2d4 + 4 bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.]),
 		("Parry", [As a reaction, the warrior adds 3 to its AC against one melee attack that would hit it. To do so, the warrior must see the attacker and be wielding a melee weapon.]),
 	),
@@ -576,12 +493,6 @@ The stat blocks presented here are starting points for further customization mor
 	speed: [30 ft.],
 	stats: (STR: [+1], DEX: [+0], CON: [+1], INT: [-1], WIS: [+0], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [any one language],
 		Challenge: [1/2:1/8],
@@ -590,7 +501,8 @@ The stat blocks presented here are starting points for further customization mor
 		("Pack Tactics", [The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated.]),
 	),
 	actions: (
-		("Spear", [Melee or Ranged Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 1 piercing damage.]),
+		("Spear", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 1 piercing damage.]),
+		("Sling", [Ranged Attack: +2 to hit, range 120/300 ft, one target. _Hit:_ 1d8 bludgeoning damage.])
 	),
 	equipment: (
 		("Common", [A small carved trinket (art object worth 1 gp).]),
@@ -613,12 +525,7 @@ Almost all were creatures are individualistic.
 	speed: [30 ft. (40 ft., climb 30 ft. in bear or hybrid form)],
 	stats: (STR: [+4], DEX: [+0], CON: [+3], INT: [+0], WIS: [+1], CHA: [+1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +7],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 17],
 		Languages: [Common (can't speak in bear form)],
 		Challenge: [6:8],
@@ -644,12 +551,7 @@ Almost all were creatures are individualistic.
 	speed: [30 ft. (40 ft. in boar form)],
 	stats: (STR: [+3], DEX: [+0], CON: [+2], INT: [+0], WIS: [+0], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 12],
 		Languages: [Common (can't speak in boar form)],
 		Challenge: [5:4],
@@ -661,12 +563,12 @@ Almost all were creatures are individualistic.
 		("Relentless (Recharges after a Short or Long Rest)", [If the wereboar takes damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead as long as its maximum hit points are not zero.]),
 	),
 	actions: (
-		("", [The wereboar makes three attacks, only one of which can be with its tusks.]),
+		("Multiattack", [The wereboar makes three attacks, only one of which can be with its tusks.]),
 		("Maul (Humanoid or Hybrid Form Only)", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 bludgeoning damage.]),
 		("Tusks (Boar or Hybrid Form Only)", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.]),
 		("Shapechanger", [The wereboar can use its bonus action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Wererat",
 	description: [Medium humanoid (human, shapechanger)],
@@ -675,12 +577,7 @@ Almost all were creatures are individualistic.
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+1], INT: [+0], WIS: [+0], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +2, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 12],
 		Languages: [Common (can't speak in rat form)],
 		Challenge: [2:2],
@@ -706,12 +603,7 @@ Almost all were creatures are individualistic.
 	speed: [30 ft. (40 ft. in tiger form)],
 	stats: (STR: [+3], DEX: [+2], CON: [+3], INT: [+0], WIS: [+1], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +5, Stealth +4],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 15],
 		Languages: [Common (can't speak in tiger form)],
 		Challenge: [5:6],
@@ -730,7 +622,7 @@ Almost all were creatures are individualistic.
 		("Longbow (Humanoid or Hybrid Form Only)", [Ranged Attack: +4 to hit, range 150/600 ft., one target. _Hit:_ 1d8 + 2 piercing damage.]),
 		("Shapechanger", [The weretiger can use its bonus action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Werewolf",
 	description: [Medium humanoid (human, shapechanger)],
@@ -739,12 +631,7 @@ Almost all were creatures are individualistic.
 	speed: [30 ft. (40 ft. in wolf form)],
 	stats: (STR: [+2], DEX: [+1], CON: [+2], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +4, Stealth +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 14],
 		Languages: [Common (can't speak in wolf form)],
 		Challenge: [3:2],

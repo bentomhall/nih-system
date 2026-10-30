@@ -22,11 +22,7 @@ Due to their nature, animated objects do not have the Construct Resilience trait
 	speed: [25 ft.],
 	stats: (STR: [+2], DEX: [+0], CON: [+1], INT: [-5], WIS: [-4], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 6],
 		Languages: [—],
@@ -49,11 +45,7 @@ Due to their nature, animated objects do not have the Construct Resilience trait
 	speed: [25 ft.],
 	stats: (STR: [+3], DEX: [-1], CON: [+1], INT: [-5], WIS: [-4], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 6],
 		Languages: [—],
@@ -78,11 +70,8 @@ Unlike golems (animated by elemental forces) or animated objects (animated direc
 	speed: [30 ft.],
 	stats: (STR: [+5], DEX: [-1], CON: [+2], INT: [-3], WIS: [-1], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [athletics +8, perception +5],
 		"Damage Immunities": [poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [blindsight 30 ft, darkvision 60 ft., passive Perception 14],
 		Languages: [—],
@@ -107,11 +96,7 @@ Unlike golems (animated by elemental forces) or animated objects (animated direc
 	speed: [30 ft.],
 	stats: (STR: [+2], DEX: [+1], CON: [+1], INT: [-2], WIS: [-2], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 12],
 		Languages: [—],
@@ -151,11 +136,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	speed: [20 ft.],
 	stats: (STR: [+5], DEX: [-1], CON: [+4], INT: [-4], WIS: [-1], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [acid, poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 9],
 		Languages: [understands the languages of its creator but can't speak],
@@ -173,7 +154,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 		("Slam", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d10 + 5 bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the #safe-link("restoration",[_restoration_]) incantation (in its greater form) or other magic of similar power.]),
 		("Haste (Recharge 5-6)", [Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action. On the next turn after that, its movement speed is reduced to half as the clay has solidified.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Golem, Flesh",
 	description: [Medium construct, single-minded],
@@ -182,11 +163,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	speed: [30 ft.],
 	stats: (STR: [+4], DEX: [-1], CON: [+4], INT: [-2], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [lightning, poison],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [understands the languages of its creator but can't speak],
@@ -204,7 +181,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 		("Multiattack", [The golem makes two slam attacks.]),
 		("Slam", [Melee Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 2d8 + 4 bludgeoning damage.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Golem, Iron",
 	description: [Large construct, single-minded],
@@ -213,11 +190,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	speed: [30 ft.],
 	stats: (STR: [+6], DEX: [-1], CON: [+5], INT: [-4], WIS: [+0], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [fire, poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [darkvision 120 ft., passive Perception 10],
 		Languages: [understands the languages of its creator but can't speak],
@@ -235,7 +208,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 		("Sword", [Melee Attack: +6 to hit, reach 10 ft., one target. _Hit:_ 3d10 + 6 slashing damage.]),
 		("Poison Breath (Recharge 6)", [The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one. Targets that fail their saving throw are poisoned for one minute, and can repeat the saving throw at the end of each of their turns, ending the effect on a success.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Golem, Stone",
 	description: [Large construct, single-minded],
@@ -244,11 +217,7 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 	speed: [30 ft.],
 	stats: (STR: [+6], DEX: [-1], CON: [+5], INT: [-4], WIS: [+0], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison, psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, petrified, poisoned],
 		Senses: [darkvision 120 ft., passive Perception 10],
 		Languages: [understands the languages of its creator but can't speak],
@@ -264,4 +233,4 @@ Golems have two traits that strongly affect defensive rating. Construct Resilien
 		("Slam", [Melee Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 4d8 + 6 bludgeoning damage.]),
 		("Slow (Recharge 5-6)", [The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic, becoming affected on a failed save. An affected target is #safe-link("shaken", "shaken") and #safe-link("staggered", "staggered"). It also takes a -2 penalty to AC. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. \ If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. \ This counts as being the spell #safe-link("slow")[_slow_] but does not have any components.]),
 	),
-))
+), wide: true)

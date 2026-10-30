@@ -16,11 +16,6 @@ The gibbering mouther is one of the more common variants of flesh amalgams. A bl
 	speed: [10 ft., swim 10 ft.],
 	stats: (STR: [+0], DEX: [-1], CON: [+3], INT: [-4], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [prone],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [—],
@@ -48,11 +43,7 @@ The voracious maw is a less-common flesh amalgam. Unlike the gibbering mouther, 
 	speed: [40 ft., climb 40 ft.],
 	stats: (STR: [+4], DEX: [+3], CON: [+3], INT: [-3], WIS: [+2], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [stealth +7],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [prone],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [—],
@@ -85,12 +76,6 @@ The jellyface is a particularly horrific creation---a humanoid head with transpa
 	speed: [5 ft, swim 25 ft],
 	stats: (STR: [-4], DEX: [+3], CON: [+2], INT: [-4], WIS: [-1], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [passive Perception 9],
 		Languages: [—],
 		Challenge: [1/4:1/8],
@@ -118,10 +103,7 @@ Created by mkhulu and comeidai from ogres, these creatures have squid-like featu
 	stats: (STR: [+5], DEX: [-1], CON: [+5], INT: [-3], WIS: [0], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [WIS +3],
-		Skills: [],
 		"Damage Immunities": [psychic],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [broken, charmed, frightened, shaken],
 		Senses: [blindsight 60ft, passive Perception 10],
 		Languages: [one language, usually common or giantish],
@@ -145,11 +127,11 @@ Created by mkhulu and comeidai from ogres, these creatures have squid-like featu
 The comiedai (singular comiedar, pronounced 'COH-mee-eh-dar', meaning 'memory keepers') are sea creatures with mental powers that exceed those of humans. They were originally created by Leviathan to act as mobile memory stores for information brought back by the mkhulu from explorations on land. But the Twisted (who was instrumental in encouraging their creation) had other plans. He altered most of them to desire domination for the purpose of improving the land-based mortals. Ever since, most comiedai have sought to make deals with land-dwellers in distress, promising them power (or usually vengeance) in exchange for service. They give power by converting them into mkhulu. By and large, they uphold their deals, but always in a way that creates expanding nests of mkhulu and their thralls. This they do to bring order to the chaotic lives of mortals, breaking them into shape according to the philosophies of the particular comiedar. They prefer to remain aloof, manipulating the land folk and implanting mkhulu larvae into their skulls. Twisted comiedai do not generally socialize with each other---each one considers itself the rightful master of all it perceives.
 
 Physically, a comiedar is a bulbous, tentacled monstrosity that usually communicates telepathically. The twisted kinds are surrounded by a mutagenic mucous that they use to control and alter their victims.
-#wide[
+
 #statbox((name: "Comiedar, Twisted",
 	description: [Large aberration, individualistic],
 	ac: [17 (natural armor)],
-	hp: [\DndDice{25d10 + 50}],
+	hp: [25d10 + 50],
 	speed: [10 ft., swim 40 ft.],
 	stats: (STR: [+5], DEX: [-1], CON: [+2 (+6)], INT: [+4 (+8)], WIS: [+2 (+6)], CHA: [+5]),
 	skillblock: (
@@ -167,7 +149,7 @@ Physically, a comiedar is a bulbous, tentacled monstrosity that usually communic
 		("Multiattack", [The comiedar makes three tentacle attacks. ]),
 		("Tentacle", [Melee Attack: +9 to hit, reach 10 ft, one target. _Hit:_ 2d6 + 5 bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any ability that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by _heal_ or another disease-curing legendary effect. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.]),
 		("Tail", [Melee Attack: +9 to hit, reach 10 ft, one target. _Hit:_ 3d6 + 5 bludgeoning damage.]),
-		("Enslave (3/Day)", [The comiedar targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the comiedar until the comiedar dies or until it is on a different plane of existence from the target. The charmed target is under the comiedar's control and can't take reactions, and the comiedar and the target can communicate telepathically with each other over any distance.\n\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the comiedar.])
+		("Enslave (3/Day)", [The comiedar targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the comiedar until the comiedar dies or until it is on a different plane of existence from the target. The charmed target is under the comiedar's control and can't take reactions, and the comiedar and the target can communicate telepathically with each other over any distance.\ Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the comiedar.])
 	),
 	legendary: (
 		("", [The comiedar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The comiedar regains spent legendary actions at the start of its turn.]),
@@ -175,8 +157,7 @@ Physically, a comiedar is a bulbous, tentacled monstrosity that usually communic
 		("Tail Swipe", [The comiedar makes one tail attack.]),
 		("Psychic Drain (Costs 2 Actions)", [One creature charmed by the comiedar takes 3d6 psychic damage, and the comiedar regains hit points equal to the damage the creature takes.])
 	)
-	))
-]
+	), wide: true)
 
 === Mkhulu <mkhulu>
 Technically, mkhulu [m'KHOO'loo] is the name of the worm-like parasite that was created to live symbiotically with mortals, acting as a source of powers in exchange for letting the symbiont observe life and relay it back to the comiedai and thus to Leviathan. Due to The Twisted's influence and that of his servants in the twisted comeidai, these symbonts became altered---instead of symbionts living quietly alongside the mortal soul, they now override the host's personality and essence entirely. Some dispute whether the original host _dies_ or simply is suppressed, living as a prisoner in their own head. The existence of partial fusions points to the latter, while the enormous change in personality points to the former.
@@ -188,10 +169,12 @@ Mkhulu, contrary to popular belief, do not need to eat brains to survive. To spa
 Mkhulu have some mental powers inherent to them, but most of them have trained either their bodies or their minds as warriors or mages. It's very rare that a mkhulu becomes a priest or primalist---their natural arrogance gets in the way.
 
 Presented here is a template that can be applied to any humanoid stat block. Challenge ratings will need to be recalculated. The defensive rating will be at least 5; the offensive rating will be at least 5 (if the only offensive action is its mind blast ability) but will likely be much higher, especially if it has another way of creating the stunned or staggered effect. *Warning:* Using multiple mkhulu together or a mkhulu in combination with another creature that can stagger or stun makes it _much_ more dangerous.
+#wide[
 #box(inset: 12pt, fill: white, stroke: 1pt, width: 100%)[
 	#set par(spacing: .6em)
 	#set text(size: 10pt)
-	#heading(outlined: false, level: 3, "Mkhulu (Template)")
+	#align(left)[
+    #heading(outlined: false, level: 3, "Mkhulu (Template)")
 	*Changes:*
 	#flush-block[
 		- *Type.* The type of the creature changes to aberration. The size remains unchanged. It gains the Individualistic trait.
@@ -210,4 +193,7 @@ Presented here is a template that can be applied to any humanoid stat block. Cha
 		- #h(1em)*Enslave* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Wisdom saving throw. On a failed save, the creature is under the mental control of the mkhulu as if it was affected by the legendary effect _dominate_. This does not require concentration from the mkhulu.
 		- #h(1em)*Consume Brain* One creature grappled and restrained by the Latch On effect of this mkhulu must make a DC 15 Constitution saving throw. On a failure it takes 5d8 piercing damage. On a success it takes half as much damage and the Latch On effect ends. If the creature fails the saving throw and this damage reduces the creature to 0, it dies as its brain is consumed by the mkhulu. Only the True Resurrection effect can return it to life.
 	]
+  ]
+]
+
 ]

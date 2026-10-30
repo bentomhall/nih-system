@@ -15,6 +15,7 @@
 #include "nih/character-creation.nih.typ"
 #include "nih/equipment-skills-spells.nih.typ"
 #include "nih/incantations.typ"
+#include "nih/conditions.typ"
 #include "nih/examples.nih.typ"
 #include "nih/expanded-downtime.nih.typ"
 #include "nih/monsters/monsters.typ"

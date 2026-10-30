@@ -1,5 +1,5 @@
 #pagebreak()
-= Appendix: Summary of Changes from 5e SRD <changes-from-5e>
+= Summary of Changes from 5e SRD <changes-from-5e>
 NIH (hopefully not the final name) is proudly a 5e D&D fork. That's because I find that 5e does _most_ of what I want in a system, at least at the core level. So why clone it and change stuff? To explore "what might have been."
 
 == Why the code-name NIH?
@@ -13,7 +13,7 @@ Absolutely 100%. It uses the CC-BY 4.0 SRD 5.1 as a base and everything new is l
 Attribution should be to "NIH System, Benjamin Hall, #link("https://wiki.admiralbenbo.com")
 
 == Where can I get an updated version?
-The latest "fit for others to see" version is always found at #link("https://github.com/bentomhall/nih-system/blob/main/main.pdf")[my github page]. Click on the little down-arrow button under the word "history" to download the full PDF. This will always be kept up to date as I merge in side projects and rebuild it.
+The latest "fit for others to see" version is always found at #link("https://github.com/bentomhall/nih-system/")[my github page]. Look for the Releases on the side; each one will have a zip file with a bunch of pdfs. Each one has a different view (player options, everything in one document, etc).
 
 == What changed from 5e?
 Ok, this is a big list. And I'm not going to point out everything that changed, just the highlights. And I'll try to break it up by chapter.
@@ -51,14 +51,13 @@ Ok, this is a big list. And I'm not going to point out everything that changed, 
 === Equipment Changes
 - Ditched electrum. Instituted "astral credits" (at 10x platinum).
 - To cast spells in armor, you need to have proficiency in the armor and a feature in your class that grants that ability.
-- Reworked the armor types. Renamed some, moved some around, adjusted AC and especially weight (both generally downward)
+- Reworked the armor types. Armor is now more abstract and tag based, with examples.
 - Added some "exotic materials" for armor, with defined (non-magical) effects.
 - Also added masterwork armor, which reduces the cost of Deflect and (for heavy/medium armor) increases the amount of DEX you can apply by 1. Costs 2x and requires special craftsmen.
 - Added several new weapon properties that do special things (like cleaving).
 - TWF is now a property of light weapons, and no longer takes your bonus action.
 - Added special weapon materials. More of a role for silvered and adamantine weapons (see monsters for details), as well as masterwork weapons that cost 10x as much, require special craftsmen, but allow you to add your proficiency to damage.
-- Tridents now have the Special property that critical hits restrain the enemy until end of your next turn. Not much, but...
-- Hand crossbows only deal 1d4.
+- Reworked weapons to be more abstract/build-your-own. Damage die is primarily based on class, but with modifiers for things like two-handed weapons dealing more than Light ones.
 - Nets are now equipment, not weapons, and require saves, not attacks.
 - Added "exotic ranged weapons", which subsumes all the thrown, attack-based consumables. Reworked their effects.
 

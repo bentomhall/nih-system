@@ -1,6 +1,21 @@
-#pagebreak()
-= Appendix: Worked Examples
-<ch:examples>∂
+#import "@preview/dragonling:0.3.1": *
+#import "../shared/functions.typ": *
+#if sys.inputs.at("standalone", default: "false") == "true" [
+  #show: dndmodule.with(
+    title: "NIH: Worked Examples",
+    subtitle: "Basic examples of how to play",
+    author: "Admiral Benbo",
+    cover: none,
+    paper: "us-letter",
+    logo: none,
+    fancy-author: true,
+    bg: none
+  )
+] else [
+  #pagebreak()
+]
+= Worked Examples
+<ch:examples>
 This chapter contains examples of how certain parts of play are intended to work. They should be taken as (hopefully) illuminating examples only, not definitive statements of how play must go or in any way restrictive.
 
 Throughout this chapter, Gary is always the GM, and players are
@@ -31,9 +46,9 @@ Throughout this chapter, Gary is always the GM, and players are
 
 #strong[Alice:] As for proficiencies: She gets Insight, Religion, and Persuasion from culture + background. She'll pick History and Medicine from being a priest. Tools: She's got wood-carvers tools from her background, and she'll take the hand drum and dice set from the culture. Languages---Common, of course. Everyone gets that. But then Yonwach (from culture) and Lucian from her background. Yeah, she doesn't know dwarven. She wasn't raised among dwarves.
 
-#strong[Alice:] For equipment, I'll take the leather armor and a mace, with a priest's pack and a light crossbow. My holy symbol is a snowflake emblem around my neck.
+#strong[Alice:] For equipment, I'll take the light armor (basic leather, so Light with no other properties) and a mace (Bashing, 1d6 bludgeoning damage, Battering with no other property), with a priest's pack and a light crossbow. My holy symbol is a snowflake emblem around my neck.
 
-#strong[Alice:] With a +2 Constitution, that gives me 10 HP. Leather with a +2 Dexterity gives me an AC of 13. +3 Wisdom and +2 proficiency means my spellcasting DC is 8 + 3 + 2 = 13. My spell attack modifier is 3 + 2 = 5. I've got only one hit die, so 1d8. I've got 1 Stamina, 4 Aether, and an aether limit of 2. With weapons...Strength is not my strong suit (pun intended). Melee attack modifier is -1 + 2 = 1 and damage is 1d6 - 1. For the crossbow, that uses Dexterity since it's ranged. Ranged attack modifier is +2 + 2 = +4 and damage is 1d8 + 2. #emph[She writes these down on the character sheet.] Ok, I think that's enough for me to start play.
+#strong[Alice:] With a +2 Constitution, that gives me 10 HP. Leather with a +2 Dexterity gives me an AC of 13. +3 Wisdom and +2 proficiency means my class DC is 8 + 3 + 2 = 13. My Spell Attack Modifier is 3 + 2 = 5. I've got only one hit die, so 1d8. I've got 1 Stamina, 4 Aether, and an aether limit of 2. With weapons...Strength is not my strong suit (pun intended). Melee attack modifier is -1 + 2 = 1 and damage is 1d6 - 1. #emph[She writes these down on the character sheet.] Ok, I think that's enough for me to start play.
 
 #emph[The rest of the party makes their characters.]
 

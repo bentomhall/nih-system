@@ -13,12 +13,8 @@ Most plants are single-minded, although treants and other more intelligent ones 
 	speed: [20 ft.],
 	stats: (STR: [-4], DEX: [-1], CON: [+0], INT: [+0], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [piercing],
 		"Damage Vulnerabilities": [fire],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [one language known by its creator],
 		Challenge: [1/8:1/8],
@@ -30,7 +26,6 @@ Most plants are single-minded, although treants and other more intelligent ones 
 		("Rake", [Melee Attack: +1 to hit, reach 5 ft., one target. _Hit:_ 1d4 - 1 slashing damage.]),
 	),
 ))
-
 #statbox((name: "Awakened Tree",
 	description: [Huge plant, guardian],
 	ac: [13 (natural armor)],
@@ -38,12 +33,8 @@ Most plants are single-minded, although treants and other more intelligent ones 
 	speed: [20 ft.],
 	stats: (STR: [+4], DEX: [-2], CON: [+2], INT: [+0], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [bludgeoning, piercing],
 		"Damage Vulnerabilities": [fire],
-		"Condition Immunities": [],
 		Senses: [passive Perception 10],
 		Languages: [one language known by its creator],
 		Challenge: [2:2],
@@ -55,7 +46,6 @@ Most plants are single-minded, although treants and other more intelligent ones 
 		("Slam", [Melee Attack: +4 to hit, reach 10 ft., one target. _Hit:_ 3d6 + 4 bludgeoning damage.]),
 	),
 ))
-
 #statbox((name: "Fungus, Violet",
 	description: [Medium plant, single-minded, fearless],
 	ac: [5],
@@ -63,11 +53,6 @@ Most plants are single-minded, although treants and other more intelligent ones 
 	speed: [5 ft.],
 	stats: (STR: [-4], DEX: [-5], CON: [+0], INT: [-5], WIS: [-4], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, deafened, frightened],
 		Senses: [blindsight 30 ft. (blind beyond this radius), passive Perception 6],
 		Languages: [—],
@@ -89,11 +74,9 @@ Most plants are single-minded, although treants and other more intelligent ones 
 	speed: [20 ft., swim 20 ft.],
 	stats: (STR: [+4], DEX: [-1], CON: [+3], INT: [-3], WIS: [+0], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +2],
 		"Damage Immunities": [lightning],
 		"Damage Resistances": [cold, fire],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, deafened, exhaustion],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 10],
 		Languages: [—],
@@ -108,7 +91,6 @@ Most plants are single-minded, although treants and other more intelligent ones 
 		("Engulf", [The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 13 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.]),
 	),
 ))
-
 #statbox((name: "Treant",
 	description: [Huge plant, honorable, guardian],
 	ac: [16 (natural armor)],
@@ -116,12 +98,7 @@ Most plants are single-minded, although treants and other more intelligent ones 
 	speed: [30 ft.],
 	stats: (STR: [+6], DEX: [-1], CON: [+5], INT: [+1], WIS: [+3], CHA: [+1]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
 		"Damage Vulnerabilities": [fire],
-		"Condition Immunities": [],
 		Senses: [passive Perception 13],
 		Languages: [Common, Metsae, Sylvan],
 		Challenge: [8:8],

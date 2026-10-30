@@ -26,9 +26,12 @@ Lightly-armored and wielding a bow or a blade, the spellblade uniquely merges sp
 "Spellblade ", "DEX/INT ", "Ranged or melee magical support/control"
 )
 
-#pagebreak()
-#include "oathbound.nih.typ"
-#pagebreak()
-#include "ranger.nih.typ"
-#pagebreak()
-#include "spellblade.nih.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "oathbound.nih.typ"
+  #pagebreak()
+  #include "ranger.nih.typ"
+  #pagebreak()
+  #include "spellblade.nih.typ"
+]

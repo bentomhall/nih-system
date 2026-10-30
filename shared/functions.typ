@@ -1,18 +1,40 @@
+#import "@preview/dragonling:0.3.1": breakoutbox as print-breakoutbox
+
 #let darkred = rgb("#540808")
 #let darkyellow = rgb("#fcba03")
 
+// Set by the website build (site/build.sh): aggregate files skip including
+// their sub-files (each becomes its own page) and page setup is skipped.
+#let website-build = sys.inputs.at("website", default: "false") == "true"
+
+// Picks the HTML or the print (PDF) form of a block based on export target.
+// `html-body` is a function so that the `html` module, which only exists
+// when compiling with `--features html`, is never touched in PDF builds.
+#let html-or(html-body, print-body) = context {
+  if target() == "html" { html-body() } else { print-body }
+}
+
 #let aside(body) = [\[#emph(body)\]]
-#let wide(body) = place(
+#let wide(body) = html-or(() => body, place(
   auto,
   scope: "parent",
   float: true,
   body,
-)
+))
 #let flush-block(body) = {
   set list(marker:none, indent:0pt, body-indent: 0pt, spacing: 0.7em)
   show list.item: set block(above: 0.5em, below: 0em)
-  body
+  html-or(() => html.div(class: "flush-block", body), body)
 }
+
+// Shadows dragonling's breakoutbox, which is a floated box in print.
+#let breakoutbox(title, contents) = html-or(
+  () => html.aside(class: "breakoutbox", {
+    if title.len() > 0 { html.p(class: "breakoutbox-title", strong(title)) }
+    contents
+  }),
+  print-breakoutbox(title, contents),
+)
 
 #let flush-caption(title, subtitle) = {
   set par(first-line-indent: 0em,spacing: 1em)
@@ -42,18 +64,24 @@
   table(stroke: none, columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr), inset: 0pt, row-gutter: 5pt, align: center, ..content)
 }
 
-#let boxed-text(header, contents) = [
-  #box(inset: 10pt, fill: rgb("#fefff9"), stroke: (right: 1pt + darkyellow, left: 1pt + darkyellow), width: 100%)[
+#let boxed-text(header, contents) = html-or(
+  () => html.div(class: "boxed-text")[
+    #heading(outlined: false, level: 3, header)
+    #contents
+  ],
+  [#box(inset: 10pt, fill: rgb("#fefff9"), stroke: (right: 1pt + darkyellow, left: 1pt + darkyellow), width: 100%)[
     #set par(spacing: .6em, first-line-indent: 1.5em)
     #set text(size: 10pt) 
     #heading(outlined: false, level: 3, header)
     #v(0.5em)
     #contents
-  ]
-]
+  ]],
+)
 
-#let statbox(stats, wide: false) = {
-  let rule = line(stroke: 2pt + darkred, length: 100%)
+#let statbox(stats, wide: false) = context {
+  let for-html = target() == "html"
+  // In HTML each rule ends a paragraph; the stylesheet draws the line.
+  let rule = if for-html { parbreak() } else { line(stroke: 2pt + darkred, length: 100%) }
 
   let header = [
     #heading(outlined: false, level: 3, stats.name)
@@ -92,9 +120,14 @@
   )
   let actions = for (key, title) in sections {
     if key in stats.keys() {
+      let section-title = if for-html {
+        html.p(class: "statbox-section", title)
+      } else {
+        text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
+      }
       block[
         #set par(spacing: 1em)
-        #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
+        #section-title
         // A one-entry section written without a trailing comma, e.g.
         // `variants: (("Name", [...]))`, arrives as a bare pair; re-wrap it.
         #let entries = stats.at(key)
@@ -113,6 +146,14 @@
 
   // Wide statboxes span both page columns and lay out internally as two
   // columns: core stats and traits on the left, actions on the right.
+  if for-html {
+    return html.div(class: if wide { "statbox wide" } else { "statbox" }, [
+      #header
+      #core
+      #actions
+    ])
+  }
+
   let body = if wide {
     [
       #header
@@ -136,8 +177,18 @@
   if wide { place(auto, scope: "parent", float: true, statblock) } else { statblock }
 }
 
-#let dndtab(name, columns: (1fr, 4fr), breakable: false, ..contents) = [
-  #block(breakable: breakable)[
+#let dndtab(name, columns: (1fr, 4fr), breakable: false, ..contents) = html-or(
+  () => {
+    // The first row of cells becomes a real header row in HTML.
+    let n = if type(columns) == array { columns.len() } else { columns }
+    let cells = contents.pos()
+    let n = calc.min(n, cells.len())
+    html.div(class: "dndtab", {
+      html.p(class: "dndtab-title", name)
+      table(columns: columns, ..contents.named(), table.header(..cells.slice(0, n)), ..cells.slice(n))
+    })
+  },
+  [#block(breakable: breakable)[
     #show table.cell: it => {
       if it.y == 0 {
         set text(size: 9pt, weight: "bold")
@@ -160,4 +211,5 @@
   // align: horizon,
   ..contents
   )
-]]
+]],
+)

@@ -58,15 +58,18 @@ The Warden is a variant of the core Barbarian, where rage is split into two diff
 - *Juggernaut Path:* Focused around implacability and being really hard to stop. Gets some features to protect others.
 - *Whirlwind Path:* Focused around fast movement. Gains a fly speed at time. 
 
-#pagebreak()
-#include "armsman.5e.typ"
-#pagebreak()
-#include "barbarian.5e.typ"
-#pagebreak()
-#include "inventor.5e.typ"
-#pagebreak()
-#include "monk.5e.typ"
-#pagebreak()
-#include "rogue.5e.typ"
-#pagebreak()
-#include "warden.5e.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "armsman.5e.typ"
+  #pagebreak()
+  #include "barbarian.5e.typ"
+  #pagebreak()
+  #include "inventor.5e.typ"
+  #pagebreak()
+  #include "monk.5e.typ"
+  #pagebreak()
+  #include "rogue.5e.typ"
+  #pagebreak()
+  #include "warden.5e.typ"
+]

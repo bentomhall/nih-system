@@ -26,11 +26,14 @@ The warden is a brute, drawing primal power from their emotions (most often shee
 "Rogue", "DEX", "Ranged or melee skirmisher with dirty tricks",
 "Warden", "STR", "Durable heavy melee")
 
-#pagebreak()
-#include "armsman.nih.typ"
-#pagebreak()
-#include "brawler.nih.typ"
-#pagebreak()
-#include "rogue.nih.typ"
-#pagebreak()
-#include "warden.nih.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "armsman.nih.typ"
+  #pagebreak()
+  #include "brawler.nih.typ"
+  #pagebreak()
+  #include "rogue.nih.typ"
+  #pagebreak()
+  #include "warden.nih.typ"
+]

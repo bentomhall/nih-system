@@ -32,29 +32,32 @@ The following lineages are presented, each with traits and features. Additionall
 - Element-touched (new, Touched). A take on the genasi.
 - Several example hybrid lineages (replacing the half-elf, half-orc, etc.)
 
-#pagebreak()
-#include "dragonborn.5e.typ"
-#pagebreak()
-#include "dwarf.5e.typ"
-#pagebreak()
-#include "gwerin.5e.typ"
-#pagebreak()
-#include "halfling.5e.typ"
-#pagebreak()
-#include "human.5e.typ"
-#pagebreak()
-#include "ihmisi.5e.typ"
-#pagebreak()
-#include "jazuu.5e.typ"
-#pagebreak()
-#include "ophidian.5e.typ"
-#pagebreak()
-#include "orc.5e.typ"
-#pagebreak()
-#include "soulforged.5e.typ"
-#pagebreak()
-#include "touched.5e.typ"
-#pagebreak()
-#include "hybrid-lineage.5e.typ"
-#pagebreak()
-#include "non-playable.5e.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "dragonborn.5e.typ"
+  #pagebreak()
+  #include "dwarf.5e.typ"
+  #pagebreak()
+  #include "gwerin.5e.typ"
+  #pagebreak()
+  #include "halfling.5e.typ"
+  #pagebreak()
+  #include "human.5e.typ"
+  #pagebreak()
+  #include "ihmisi.5e.typ"
+  #pagebreak()
+  #include "jazuu.5e.typ"
+  #pagebreak()
+  #include "ophidian.5e.typ"
+  #pagebreak()
+  #include "orc.5e.typ"
+  #pagebreak()
+  #include "soulforged.5e.typ"
+  #pagebreak()
+  #include "touched.5e.typ"
+  #pagebreak()
+  #include "hybrid-lineage.5e.typ"
+  #pagebreak()
+  #include "non-playable.5e.typ"
+]

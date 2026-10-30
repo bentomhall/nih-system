@@ -1,7 +1,7 @@
 #import "@preview/dragonling:0.3.1": *
 #import "../../shared/functions.typ": *
 
-#set page(margin: (top: 15mm))
+#set page(margin: (top: 15mm)) if not website-build
 
 = Equipment <equipment>
 

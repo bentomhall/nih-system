@@ -68,20 +68,23 @@ The Warmage is an experiment with alternate casting progressions and making an e
 - *Artillery Squad* is an AoE powerhouse. They gain the ability to increase the size of AoE spells they cast.
 - *Heavy Assault Squad* is a medium-armor/shield defensive caster who can drain others and heal limited amounts. Basically a lifedrain tank.
 
-#pagebreak()
-#include "beholden.5e.typ"
-#pagebreak()
-#include "bounty-hunter.5e.typ"
-#pagebreak()
-#include "druid.5e.typ"
-#pagebreak()
-#include "mechanist.5e.typ"
-#pagebreak()
-#include "paladin.5e.typ"
-#pagebreak()
-#include "planar-warrior.5e.typ"
-#pagebreak()
-#include "spellblade.5e.typ"
-#pagebreak()
-#include "warmage.5e.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "beholden.5e.typ"
+  #pagebreak()
+  #include "bounty-hunter.5e.typ"
+  #pagebreak()
+  #include "druid.5e.typ"
+  #pagebreak()
+  #include "mechanist.5e.typ"
+  #pagebreak()
+  #include "paladin.5e.typ"
+  #pagebreak()
+  #include "planar-warrior.5e.typ"
+  #pagebreak()
+  #include "spellblade.5e.typ"
+  #pagebreak()
+  #include "warmage.5e.typ"
+]
 

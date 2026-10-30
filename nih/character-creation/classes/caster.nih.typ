@@ -38,11 +38,14 @@ Warlocks are a bit of an odd duck as classes go. They are the most flexible at b
 "Warlock ", "CHA", "flexible"
 )
 
-#pagebreak()
-#include "arcanist.nih.typ"
-#pagebreak()
-#include "priest.nih.typ"
-#pagebreak()
-#include "shaman.nih.typ"
-#pagebreak()
-#include "warlock.nih.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "arcanist.nih.typ"
+  #pagebreak()
+  #include "priest.nih.typ"
+  #pagebreak()
+  #include "shaman.nih.typ"
+  #pagebreak()
+  #include "warlock.nih.typ"
+]

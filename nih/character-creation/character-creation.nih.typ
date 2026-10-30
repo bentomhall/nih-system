@@ -14,7 +14,7 @@
 ] else [
   #pagebreak()
 ]
-#set page(margin: (top: 15mm))
+#set page(margin: (top: 15mm)) if not website-build
 
 = Character Creation <character-creation>
 
@@ -177,15 +177,18 @@ The expectation is that 1 XP #sym.approx 1 session of serious play, regardless o
 "71 ", "100", "20", "+6"
 )
 
-#pagebreak()
-#include "lineages/lineages.nih.typ"
-#pagebreak()
-#include "cultures.nih.typ"
-#pagebreak()
-#include "backgrounds.nih.typ"
-#pagebreak()
-#include "classes/martial.nih.typ"
-#pagebreak()
-#include "classes/hybrid.nih.typ"
-#pagebreak()
-#include "classes/caster.nih.typ"
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  #include "lineages/lineages.nih.typ"
+  #pagebreak()
+  #include "cultures.nih.typ"
+  #pagebreak()
+  #include "backgrounds.nih.typ"
+  #pagebreak()
+  #include "classes/martial.nih.typ"
+  #pagebreak()
+  #include "classes/hybrid.nih.typ"
+  #pagebreak()
+  #include "classes/caster.nih.typ"
+]

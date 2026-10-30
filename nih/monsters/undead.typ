@@ -14,11 +14,8 @@ Some undead, such as ghosts, are closer to echoes of souls caught up in strong m
 	speed: [0 ft., fly 40 ft. (hover)],
 	stats: (STR: [-2], DEX: [+3], CON: [+0], INT: [+0], WIS: [+1], CHA: [+3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [cold, necrotic, poison],
 		"Damage Resistances": [acid, fire, lightning, thunder],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained],
 		Senses: [darkvision 60 ft., passive Perception 11],
 		Languages: [any languages it knew in life],
@@ -31,10 +28,10 @@ Some undead, such as ghosts, are closer to echoes of souls caught up in strong m
 	actions: (
 		("Withering Touch", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 4d6 + 3 necrotic damage.]),
 		("Etherealness", [The ghost enters the Border Shadow from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.]),
-		("Horrifying Visage", [Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 \texttimes 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a _greater restoration_ incantation, but only within 24 hours of it occurring.]),
-		("Possession", [One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. \ The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like _dispel otherworldly influence_. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.]),
+		("Horrifying Visage", [Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 #sym.times 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a _greater restoration_ incantation, but only within 24 hours of it occurring.]),
+		("Possession", [One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. \ The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like #safe-link("dispel-otherworldly-influence", [_dispel otherworldly influence_]). When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.]),
 	),
-))
+), wide: true)
 
 === Ghouls and ghasts
 Ghouls are one of the outcomes when jotnar infest people on the verge of death, consuming their souls while they still live. These creatures retain a semblance of the former person's personality, dominated by an unnatural hunger for flesh.
@@ -46,11 +43,7 @@ Ghouls are one of the outcomes when jotnar infest people on the verge of death, 
 	speed: [30 ft.],
 	stats: (STR: [+1], DEX: [+2], CON: [+0], INT: [-2], WIS: [+0], CHA: [-2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [Common],
@@ -79,9 +72,7 @@ The mummy is a rare undead intentionally created to serve as an eternal guardian
 	stats: (STR: [+3], DEX: [-1], CON: [+2], INT: [-2], WIS: [+0], CHA: [+1]),
 	skillblock: (
 		"Saving Throws": [Wis +2],
-		Skills: [],
 		"Damage Immunities": [necrotic, poison],
-		"Damage Resistances": [],
 		"Damage Vulnerabilities": [fire],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 10],
@@ -97,7 +88,7 @@ The mummy is a rare undead intentionally created to serve as an eternal guardian
 		("Rotting Fist", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the #safe-link("remove-curse")[_remove curse_] spell or other magic.]),
 		("Dreadful Glare", [The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies for the next 24 hours.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Shadow",
 	description: [Medium undead, single-minded, fearless],
@@ -106,7 +97,6 @@ The mummy is a rare undead intentionally created to serve as an eternal guardian
 	speed: [40 ft.],
 	stats: (STR: [-2], DEX: [+2], CON: [+1], INT: [-2], WIS: [+0], CHA: [-1]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +4 (+6 in dim light or darkness)],
 		"Damage Immunities": [necrotic, poison],
 		"Damage Resistances": [acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing],
@@ -136,10 +126,7 @@ Animated out of bones, usually from the corpses of those that fell in battle or 
 	speed: [30 ft.],
 	stats: (STR: [+0], DEX: [+2], CON: [+2], INT: [-2], WIS: [-1], CHA: [-3]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [poison],
-		"Damage Resistances": [],
 		"Damage Vulnerabilities": [bludgeoning],
 		"Condition Immunities": [exhaustion, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 9],
@@ -164,11 +151,8 @@ Specters are incorporeal, faded, echoes of a person's aetheric spirit, with a mi
 	speed: [0 ft., fly 50 ft. (hover)],
 	stats: (STR: [-5], DEX: [+2], CON: [+0], INT: [+0], WIS: [+0], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [necrotic, poison],
 		"Damage Resistances": [acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious],
 		Senses: [darkvision 60 ft., passive Perception 10],
 		Languages: [understands all languages it knew in life but can't speak],
@@ -190,37 +174,45 @@ Vampires slowly lose the ability to feel emotions other than the strongest---one
 
 Contrary to myth, vampires don't create other vampires simply by feeding. They may create thralls or spawn, but those will never become free-willed. Instead, vampires can only be created via a ritual, one that usually involves torturing the victim until they "willingly" accept the jotnar.
 
+*Vampire Weaknesses.* All vampires have one or more of the following flaws (chosen by the GM, spawn have all of them): 
+- _Forbiddance._ The vampire can't enter a residence without an invitation from one of the occupants. 
+- _Harmed by Running Water._ The vampire takes 20 acid damage if it ends its turn in running water. 
+- _Stake to the Heart._ If a piercing weapon made of wood is driven into the vampire's heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed. 
+- _Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
+
+*Shapechanger.* All true vampires (not their spawn) can transform: If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. 
+
+While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.
+
+While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all damage except the damage it takes from sunlight.
+
+*Lair Action.* While near its lair, vampires are attended by animals. The vampire can magically calls 2d4 swarms of bats or rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action. It cannot have more than the indicated number, but can summon more each turn to replenish their ranks.
+
 #statbox((name: "Vampire",
 	description: [Medium undead (shapechanger), individualistic],
 	ac: [16 (natural armor)],
 	hp: [170 (20d8 + 80)],
 	speed: [30 ft.],
-	stats: (STR: [+4], DEX: [+4 (+9)], CON: [+4], INT: [+3], WIS: [+2 (+7)], CHA: [+4 (+9)]),
+	stats: (STR: [+4], DEX: [+4], CON: [+4], INT: [+3], WIS: [+2], CHA: [+4]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [DEX +9, WIS +7, CHA +9],
 		Skills: [Perception +7, Stealth +9],
-		"Damage Immunities": [],
 		"Damage Resistances": [necrotic],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 120 ft., passive Perception 17],
 		Languages: [the languages it knew in life],
 		Challenge: [9:11],
 	),
 	traits: (
-		("Shapechanger", [If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. \ While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies. \ While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all damage except the damage it takes from sunlight.]),
 		("Legendary Resistance (3/Day)", [If the vampire fails a saving throw, it can choose to succeed instead.]),
 		("Misty Escape", [When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed. \ While it has 0 hit points in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.]),
 		("Regeneration", [The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.]),
 		("Spider Climb", [The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.]),
-		("Vampire Weaknesses", [The vampire has one of the following flaws (chosen by the GM): \ _Forbiddance._ The vampire can't enter a residence without an invitation from one of the occupants. _Harmed by Running Water._ The vampire takes 20 acid damage if it ends its turn in running water. \ _Stake to the Heart._ If a piercing weapon made of wood is driven into the vampire's heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed. \ _Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.]),
 	),
 	actions: (
 		("Multiattack", [The vampire makes three attacks, only one of which can be a bite attack.]),
 		("Unarmed Strike (Vampire Form Only)", [Melee Attack: +9 to hit, reach 5 ft., one target. _Hit:_ 1d8 + 4 bludgeoning damage and the vampire can grapple the target (escape DC 16). It can only grapple two targets at a time.]),
 		("Bite (Bat or Vampire Form Only)", [Melee Attack: +9 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 4 piercing damage plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control. This automatically hits willing targets and has advantage against targets the vampire is grappling.]),
 		("Charm", [The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Charisma saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack. \ Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.]),
-		("Call Vermin", [The vampire magically calls 2d4 swarms of bats or rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.]),
 	),
 	legendary: (
 		("", [The Vampire can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Vampire regains spent legendary actions at the start of its turn.]),
@@ -228,21 +220,18 @@ Contrary to myth, vampires don't create other vampires simply by feeding. They m
 		("Unarmed Strike", [The vampire makes one unarmed strike.]),
 		("Bite (Costs 2 Actions)", [The vampire makes one bite attack.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Vampire Spawn",
 	description: [Medium undead, fearless, individualistic],
 	ac: [15 (natural armor)],
 	hp: [97 (13d8 + 39)],
 	speed: [30 ft.],
-	stats: (STR: [+3], DEX: [+3 (+6)], CON: [+3], INT: [+0], WIS: [+0 (+3)], CHA: [+1]),
+	stats: (STR: [+3], DEX: [+3], CON: [+3], INT: [+0], WIS: [+0], CHA: [+1]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [DEX +6, WIS +3],
 		Skills: [Perception +3, Stealth +6],
-		"Damage Immunities": [],
 		"Damage Resistances": [necrotic],
-		"Damage Vulnerabilities": [],
-		"Condition Immunities": [],
 		Senses: [darkvision 60 ft., passive Perception 13],
 		Languages: [the languages it knew in life],
 		Challenge: [4:6],
@@ -250,7 +239,6 @@ Contrary to myth, vampires don't create other vampires simply by feeding. They m
 	traits: (
 		("Regeneration", [The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.]),
 		("Spider Climb", [The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.]),
-		("Vampire Weaknesses", [The vampire has the following flaws: \ _Forbiddance._ The vampire can't enter a residence without an invitation from one of the occupants. \ _Harmed by Running Water._ The vampire takes 20 acid damage when it ends its turn in running water. \ _Stake to the Heart._ The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is incapacitated in its resting place. \ _Sunlight Hypersensitivity._ The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.]),
 	),
 	actions: (
 		("Multiattack", [The vampire makes three attacks, only one of which can be a bite attack.]),
@@ -269,11 +257,9 @@ Wights are the greatest of the lesser undead, retaining a cold simulacrum of the
 	speed: [30 ft.],
 	stats: (STR: [+2], DEX: [+2], CON: [+3], INT: [+0], WIS: [+1], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Perception +3, Stealth +4],
 		"Damage Immunities": [poison],
 		"Damage Resistances": [necrotic],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [exhaustion, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 13],
 		Languages: [the languages it knew in life],
@@ -286,7 +272,7 @@ Wights are the greatest of the lesser undead, retaining a cold simulacrum of the
 		("Multiattack", [The wight makes two longsword attacks or two longbow attacks and uses its Life Drain attack.]),
 		("Life Drain", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 2 necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. The wight regains hit points equal to the damage done. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.]),
 		("Longsword", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 1d10 + 2 slashing damage.]),
-		("Longbow", [Ranged Attack: +4 to hit, range 150/600 ft., one target. _Hit:_ 1d8 + 2 piercing damage.]),
+		("Longbow", [Ranged Attack: +4 to hit, range 120/300 ft., one target. _Hit:_ 1d12 + 2 piercing damage.]),
 	),
 ))
 
@@ -300,11 +286,8 @@ As a spectral undead, the will-o'-wisp dances between the Mortal and Shadow plan
 	speed: [0 ft., fly 50 ft. (hover)],
 	stats: (STR: [-5], DEX: [+4], CON: [+0], INT: [+1], WIS: [+2], CHA: [+0]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [lightning, poison],
 		"Damage Resistances": [acid, cold, fire, necrotic, thunder; bludgeoning, piercing, and slashing],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious],
 		Senses: [darkvision 120 ft., passive Perception 12],
 		Languages: [the languages it knew in life],
@@ -329,11 +312,8 @@ As a spectral undead, the will-o'-wisp dances between the Mortal and Shadow plan
 	speed: [0 ft., fly 60 ft. (hover)],
 	stats: (STR: [-2], DEX: [+3], CON: [+3], INT: [+1], WIS: [+2], CHA: [+2]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [necrotic, poison],
 		"Damage Resistances": [acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained],
 		Senses: [darkvision 60 ft., passive Perception 12],
 		Languages: [the languages it knew in life],
@@ -360,10 +340,7 @@ Zombies are the result of jotnar possessing decaying corpses without even a trac
 	stats: (STR: [+4], DEX: [-2], CON: [+4], INT: [-4], WIS: [-2], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [Wis +0],
-		Skills: [],
 		"Damage Immunities": [poison],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [poisoned],
 		Senses: [darkvision 60 ft., passive Perception 8],
 		Languages: [understands Common and Giant but can't speak],
@@ -385,10 +362,7 @@ Zombies are the result of jotnar possessing decaying corpses without even a trac
 	stats: (STR: [+1], DEX: [-2], CON: [+3], INT: [-4], WIS: [-2], CHA: [-3]),
 	skillblock: (
 		"Saving Throws": [Wis +0],
-		Skills: [],
 		"Damage Immunities": [poison],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [poisoned],
 		Senses: [darkvision 60 ft., passive Perception 8],
 		Languages: [understands the languages it knew in life but can't speak],

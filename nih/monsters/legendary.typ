@@ -9,13 +9,10 @@ These creatures aren't ready for show.
 	ac: [19 (natural armor)],
 	hp: [472 (27d20 + 189)],
 	speed: [20 ft., swim 60 ft.],
-	stats: (STR: [+10 (+17)], DEX: [+0 (+7)], CON: [+7 (+14)], INT: [+6 (+13)], WIS: [+4 (+11)], CHA: [+5]),
+	stats: (STR: [+10], DEX: [+0], CON: [+7], INT: [+6], WIS: [+4], CHA: [+5]),
 	skillblock: (
 		"Saving Throws": [Str +17, Dex +7, Con +14, Int +13, Wis +11],
-		Skills: [],
 		"Damage Immunities": [lightning],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [frightened, paralyzed],
 		Senses: [truesight 120 ft., passive Perception 14],
 		Languages: [understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 120 ft.],
@@ -39,20 +36,19 @@ These creatures aren't ready for show.
 		("Lightning Storm (Costs 2 Actions)", [The kraken uses Lightning Storm.]),
 		("Ink Cloud (Costs 3 Actions)", [While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.]),
 	),
-))
+), wide: true)
 
 #statbox((name: "Lich",
 	description: [Medium undead],
 	ac: [17 (natural armor)],
 	hp: [202 (27d8 + 81)],
 	speed: [30 ft.],
-	stats: (STR: [+0], DEX: [+3], CON: [+3 (+10)], INT: [+5 (+12)], WIS: [+2 (+9)], CHA: [+3]),
+	stats: (STR: [+0], DEX: [+3], CON: [+3], INT: [+5], WIS: [+2], CHA: [+3]),
 	skillblock: (
-		"Saving Throws": [],
+		"Saving Throws": [CON +10, INT +12, WIS +9],
 		Skills: [Arcana +18, History +12, Insight +9, Perception +9],
 		"Damage Immunities": [poison],
 		"Damage Resistances": [cold, lightning, necrotic],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, poisoned],
 		Senses: [truesight 120 ft., passive Perception 19],
 		Languages: [Common plus up to five other languages],
@@ -75,7 +71,7 @@ These creatures aren't ready for show.
 		("Frightening Gaze (Costs 2 Actions)", [The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.]),
 		("Disrupt Life (Costs 3 Actions)", [Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.]),
 	),
-))
+), wide: true)
 
 == Mummy Lord
 
@@ -84,12 +80,11 @@ These creatures aren't ready for show.
 	ac: [17 (natural armor)],
 	hp: [187 (25d8 + 75)],
 	speed: [20 ft.],
-	stats: (STR: [+4], DEX: [+0], CON: [+3 (+8)], INT: [+0 (+5)], WIS: [+4 (+9)], CHA: [+3 (+8)]),
+	stats: (STR: [+4], DEX: [+0], CON: [+3], INT: [+0], WIS: [+4], CHA: [+3]),
 	skillblock: (
 		"Saving Throws": [Con +8, Int +5, Wis +9, Cha +8],
 		Skills: [History +5, Religion +5],
 		"Damage Immunities": [necrotic, poison],
-		"Damage Resistances": [],
 		"Damage Vulnerabilities": [fire],
 		"Condition Immunities": [charmed, exhaustion, frightened, paralyzed, poisoned],
 		Senses: [darkvision 60 ft., passive Perception 14],
@@ -115,4 +110,4 @@ These creatures aren't ready for show.
 		("Channel Negative Energy (Costs 2 Actions)", [The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.]),
 		("Whirlwind of Sand (Costs 2 Actions)", [The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.]),
 	),
-))
+), wide: true)

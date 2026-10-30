@@ -15,11 +15,7 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	speed: [15 ft.],
 	stats: (STR: [+2], DEX: [-4], CON: [+5], INT: [-5], WIS: [-2], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [acid],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -33,8 +29,7 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 		("Pseudopod", [Melee Attack: +4 to hit, reach 5 ft., one target. _Hit:_ 3d6 acid damage.]),
 		("Engulf", [The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it. \ An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.]),
 	),
-))
-
+), wide: true)
 #statbox((name: "Ochre Jelly",
 	description: [Large ooze, single-minded],
 	ac: [8],
@@ -42,11 +37,8 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	speed: [10 ft., climb 10 ft.],
 	stats: (STR: [+2], DEX: [-2], CON: [+2], INT: [-4], WIS: [-2], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [lightning, slashing],
 		"Damage Resistances": [acid],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -61,7 +53,6 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 		("Split", [When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.]),
 	),
 ))
-
 #statbox((name: "Gray Ooze",
 	description: [Medium ooze, single-minded],
 	ac: [9 (natural armor)],
@@ -69,11 +60,8 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	speed: [10 ft., climb 10 ft.],
 	stats: (STR: [+1], DEX: [-2], CON: [+3], INT: [-5], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [Stealth +2],
-		"Damage Immunities": [],
 		"Damage Resistances": [acid, cold, fire],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -88,7 +76,6 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 		("Pseudopod", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d6 + 1 bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing non masterwork metal armor, attacks against the creature have advantage until it finishes a long rest and repairs its armor. Repair requires proficiency with and access to smith's tools.]),
 	),
 ))
-
 #statbox((name: "Black Pudding",
 	description: [Large ooze, single-minded],
 	ac: [9 (natural armor)],
@@ -96,11 +83,7 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	speed: [20 ft., climb 20 ft.],
 	stats: (STR: [+3], DEX: [-3], CON: [+3], INT: [-5], WIS: [-2], CHA: [-5]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
 		"Damage Immunities": [acid, cold, lightning, slashing],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -118,6 +101,11 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 ))
 
 == Boing-Boings
+No one knows where the boing-boings first came from. #aside[But everyone wishes they'd go back there --IB]. They arise, it seems, from corrupted or disturbed elemental ley lines of earth and water, and swarm. If left alone, they grow larger, with rumored "king slimes" acting as a brood host. They are more common on Soefra than Noefra, but have been seen in both places.
+
+Visually, they're teardrop-shaped jelly encased in a tough, rubbery membrane. For some horrific reason, they all have markings like a smiling, wide-eyed, friendly face. The name comes from the sound that characterizes them---a hollow, elastic "boing" sound, as they vibrate and bounce. Unlike most oozes, boing-boings are neither slow nor necessarily easy to hit.
+
+Bludger slimes simply ram themselves into the enemy, using themselves as living bludgeons.
 
 #statbox((name: "Bludger Slime",
 	description: [Small ooze, single-minded],
@@ -126,11 +114,7 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	speed: [30 ft.],
 	stats: (STR: [+1], DEX: [+1], CON: [+1], INT: [-4], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [bludgeoning],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -145,7 +129,6 @@ As a rule, oozes are single-minded. Rare exceptions exist, but most oozes have o
 	),
 ))
 
-=== Heal Slimes
 Heal slimes are a tragic creature, one that only exists to heal others at the cost of its own life. The goo left behind when they die can be used to create potions of healing that always heal the maximum possible for that grade. Creating a maximized regular potion of healing requires the goo from a single heal slime; each step up requires an additional heal slime's worth of goo.
 
 #statbox((name: "Heal Slime",
@@ -155,10 +138,7 @@ Heal slimes are a tragic creature, one that only exists to heal others at the co
 	speed: [0ft., fly 20 ft (hover).],
 	stats: (STR: [-1], DEX: [+1], CON: [+1], INT: [-5], WIS: [-3], CHA: [0]),
 	skillblock: (
-		"Saving Throws": [],
 		Skills: [stealth +3],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
 		"Damage Vulnerabilities": [piercing],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
@@ -174,6 +154,7 @@ Heal slimes are a tragic creature, one that only exists to heal others at the co
 	),
 ))
 
+Spitter slimes are disliked almost most of all. They store a large number of rocks in their pseudo-mouths and expel them at extreme velocity at the nearest target. And they are skittery, running away when anyone gets close. But if you can corner one, it's basically helpless.
 #statbox((name: "Spitter Slime",
 	description: [Small ooze, single-minded],
 	ac: [14 (natural armor)],
@@ -181,11 +162,7 @@ Heal slimes are a tragic creature, one that only exists to heal others at the co
 	speed: [30 ft.],
 	stats: (STR: [-1], DEX: [+2], CON: [+1], INT: [-4], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
 		"Damage Resistances": [bludgeoning],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],
@@ -204,7 +181,7 @@ Heal slimes are a tragic creature, one that only exists to heal others at the co
 		("Reflexive Evasion", [As a reaction when a creature ends its movement within 5 feet of the spitter, the spitter moves up to its speed without provoking opportunity attacks.]),
 	),
 ))
-
+Steel slimes are named so because they are a steel-grey color, unlike the bright orange and blue of the other slimes. Also, they can harden themselves, drastically reducing their speed and the damage they take. Their natural skin is tougher and these slimes are quite a bit larger than their smaller kin.
 #statbox((name: "Steel Slime",
 	description: [Medium ooze, single-minded, guardian],
 	ac: [16 (natural armor)],
@@ -212,11 +189,6 @@ Heal slimes are a tragic creature, one that only exists to heal others at the co
 	speed: [30 ft.],
 	stats: (STR: [+3], DEX: [+1], CON: [+4], INT: [-4], WIS: [-2], CHA: [-4]),
 	skillblock: (
-		"Saving Throws": [],
-		Skills: [],
-		"Damage Immunities": [],
-		"Damage Resistances": [],
-		"Damage Vulnerabilities": [],
 		"Condition Immunities": [blinded, charmed, deafened, exhaustion, frightened, prone],
 		Senses: [blindsight 60 ft. (blind beyond this radius), passive Perception 8],
 		Languages: [—],

@@ -90,22 +90,20 @@
     ("variants", "variants"),
     ("scaling", "scaling")
   )
-  let actions = {
-    for (key, title) in sections {
-      if key in stats.keys() {
-        block[
-          #set par(spacing: 1em)
-          #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
-          #for action in stats.at(key) {
-            // An unnamed entry (e.g. the legendary actions preamble) is plain text.
-            if action.at(0) == "" {
-              [#action.at(1) \ ]
-            } else {
-              [_*#action.at(0).*_ #action.at(1) \ ]
-            }
+  let actions = for (key, title) in sections {
+    if key in stats.keys() {
+      block[
+        #set par(spacing: 1em)
+        #text(size: 1.3em, fill: darkred)[#box(width:100%, inset: (bottom: 3pt), stroke: (bottom: 1pt+darkyellow))[#smallcaps(title)]]
+        #for action in stats.at(key) {
+          // An unnamed entry (e.g. the legendary actions preamble) is plain text.
+          if action.at(0) == "" {
+            [#action.at(1) \ ]
+          } else {
+            [_*#action.at(0).*_ #action.at(1) \ ]
           }
-        ]
-      }
+        }
+      ]
     }
   }
 

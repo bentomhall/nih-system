@@ -26,8 +26,7 @@ Spells eligible to be converted to incantations include those used for informati
 #breakoutbox("A More Extreme Variant")[
 You can take this one step further and _remove_ the spells being emulated here from spell lists entirely, making it so the only real way to produce those effects is through the Incantation system. But that's not a necessary part of the subsystem. They work just fine being a bonus.
 
-==== Doesn't This Provide Early Access to Several Spell Effects?
-Yup. That's because they're gated behind GM action in making the Ritual Scrolls available (for the most part). And the early-access spells aren't exactly the most powerful effects.
+*Doesn't This Provide Early Access to Several Spell Effects?* Yup. That's because they're gated behind GM action in making the Ritual Scrolls available (for the most part). And the early-access spells aren't exactly the most powerful effects.
 ]
 
 == General Rules for Incantations
@@ -68,7 +67,7 @@ Full Round (takes effect at the beginning of the performer's next turn, requires
 
 ==== Duration
 Some incantations have effects that naturally expire. Those will have a Duration tag in their summary line. This duration starts once the incantation's effects begin (so a 1 hr performance time and a 1 hour duration mean that the effect will end 2 hours after the incantation began).
-#pagebreak()
+
 == Alphabetical
 #flush-block[
 - Abjure Espionage (Uncommon)
@@ -323,7 +322,7 @@ You implant a message within an object you touch, a message that is uttered when
 When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this incantation, you can have the incantation end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.
 
 The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions (the mouth has passive perception of 10 and no special senses such as darkvision) that occur within 30 feet of the object and cannot be triggered by another magic mouth effect. Triggering circumstances that involve significant logic may be rejected by the GM.
-
+#pagebreak()
 #flush-caption("Mending","")
 #flush-block[
 - _Rarity_: Common
@@ -333,7 +332,7 @@ The triggering circumstance can be as general or as detailed as you like, though
 ]
 
 This incantation repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This incantation can physically repair a magic item or construct, but the incantation can't restore magic to such an object.
-#pagebreak()
+
 #flush-caption("Purify Food and Drink","")
 #flush-block[
 - _Rarity_: Common
@@ -376,7 +375,7 @@ This incantation opens your senses to more clearly sense the auras around creatu
 - *Sense Otherworldly Nature.* You sense the aura associated with creatures with True Names. For the duration, you can determine whether a creature you see is an undead, fiend, celestial, fey, or elemental. You know the type and the general nature (such as zombie, vampire, demon, etc.) of the creature, but you don't know their personal identity (e.g. the Arch-zombie Bob). You can also sense the presence of areas that are affected by the _hallow_ incantation, similar effects, or are heavily associated with Astral or Abyssal energies.
 - *Sense Aether Manipulation.* You sense the auras associated with active aetheric abilities. For the duration, you can sense any magical effect or item within 60 ft of you and have an idea as to its strength. The GM will tell you the equivalent rarity of the effect. You also gain a sense of the type of magic involved and whether it is protective, baleful, or beneficial to the one that it is affecting or that would trigger it. For example, a magical trap that causes a burst of fire would be baleful, while a wall of force would be protective.
 ]
-
+#pagebreak()
 #flush-caption("Unseen Servant","")
 #flush-block[
 - _Rarity_: Common
@@ -944,7 +943,7 @@ A _remove curse_ spell or _restoration_ (using the greater mode) incantation cas
 A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within 10 feet. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the incantation vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
 
 For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the duration expires, the steed gradually fades, giving the rider 1 minute to dismount. The effect ends immediately without fading if you use an action to dismiss it or if the steed takes any damage.
-
+#pagebreak()
 #flush-caption("Planar Ally","")
 #flush-block[
 - _Rarity_: Rare
@@ -1012,7 +1011,7 @@ The incantation disguises physical appearance as well as clothing, armor, weapon
 The changes wrought by this incantation fail to hold up to physical inspection. For example, if you use this incantation to add a hat to a creature's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature's head and hair. If you use this incantation to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 
 A creature can use its action to inspect a target and make an Intelligence (Investigation) check against a DC of 17. If it succeeds, it becomes aware that the target is disguised.
-
+#pagebreak()
 #flush-caption("Shadow Creation","")
 #flush-block[
 - _Rarity_: Rare
@@ -1025,7 +1024,7 @@ You pull wisps of shadow material from the Shadowfell to create a nonliving obje
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
-#dndtab("Shadow Creation Cost", columns: (1fr, 1fr),
+#dndtab("Shadow Creation Cost", columns: (1fr, 1fr, 1fr), align:left,
   "Material", "Duration", "Cost",
   "Vegetable Matter", "1 day", "0 gp",
   "Stone, Crystal, or Regular Metals", "12 hours", "10 gp",
@@ -1037,7 +1036,7 @@ The duration depends on the object's material. If the object is composed of mult
 Using any material created by this incantation as another spell's material component causes that spell to fail.
 
 *Special:* The focus is a small piece of the material being used. The cost of the component necessary depends on what is being made and can be any item with the indicated value (including currency or gems). If the object is made of multiple materials, use the most expensive.
-
+#colbreak()
 #flush-caption("Teleportation Circle","")
 #flush-block[
 - _Rarity_: Rare
@@ -1139,14 +1138,14 @@ You can see and hear a particular creature you choose that is on the same plane 
 
 *Note:* With the beginning of the Time of Troubles, long-range spells are more difficult and more likely to fail. As such, the rarity and the difficulty of the spell have been adjusted. Without at least a picture, you're going to find it very difficult to succeed.
 
-#dndtab("Scrying Knowledge Modifiers", columns: (4fr, 1fr),
+#dndtab("Scrying Knowledge Modifiers", columns: (4fr, 1fr), align:left,
   "Knowledge", "Save Modifier",
   "Secondhand (you have heard of the target)", "+10",
   "Firsthand (you have met the target or seen it via magic)", "+5",
   "Familiar (you know the target well or have seen it in person)", "+0"
 )
 
-#dndtab("Scrying Connection Modifiers", columns: (4fr, 1fr),
+#dndtab("Scrying Connection Modifiers", columns: (2fr, 1fr), align: left,
   "Connection", "Save Modifier",
   "None", "+10",
   "Likeness or picture", "-1",
@@ -1174,7 +1173,7 @@ The destination you choose must be known to you, and it must be on the same plan
 
 *Note:*  With the beginning of the Time of Troubles, teleportation is both more difficult and more risky. Even permanent circles provide no guarantee of safety.
 
-#dndtab("Teleport Outcomes", columns: (2fr, 1fr, 1fr, 1fr, 1fr),
+#dndtab("Teleport Outcomes", columns: (2fr, 1fr, 1fr, 1fr, 1fr), align:left,
   "Familiarity", "Mishap", "Similar Area", "Off Target", "On Target",
   "Permanent circle", "01-05", "06-20", "21-40", "41-100",
   "Associated object", "01-15", "16-40", "41-50", "51-100",

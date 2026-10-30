@@ -10,8 +10,6 @@
     logo: none,
     fancy-author: true
 )
-] else [
-  #pagebreak()
 ]
 
 = Dawn of Hope
@@ -66,7 +64,7 @@ Dawn of Hope does not pretend that the underlying physical laws are those of Ear
 
 However, the surface observables of this world are similar to those of Earth. Bulk phenomena such as observed gravitational behavior (at small scales), fire burning only flammable substances, water flowing in predictable patterns, etc. are all present in their expected fashions, but the underlying reasons for those phenomena are very different. Players should not expect that any scientific knowledge beyond that of about middle school or early high school will transfer. It's best to imagine a mid-Medieval alchemist's perspective. Those things he would be able to test and reason about will work. If it takes modern (Scientific Revolution and onward) science to explain, it probably works differently.]
 
-#wide[= A Short History of Western Noefra]
+= A Short History of Western Noefra
 #aside[Finally, we get to talk about me --IB] #aside[Do we have to? --ed]
 == Prehistory: The Dawn War
 It's said that the Dreamer called the world into existence an uncountable time before time began. He created the Eight and One, the Primordial Princes to embody the principles of existence. The Eight were Light and Darkness, Life and Death, and the Four Elements. The One, called Nameless for many millenia, was Change (or Chaos). They in turn had servants; Light was granted the Lightborn, blazing sentinels and keepers of law; Darkness was granted Leviathan, a single eternal mind inhabiting the song that the denizens of the benthic abyss sing back and forth endlessly, keeper of memory. Life supervised the Titans, rune-wielding shapers and molders of matter. Death supervised Wyrm, ancestors of dragons, wielding the True Names of all matter to break down the unneeded or failed creations. The Elemental Primordials chose to be content with less willful creations, now known as the elementals. And the last, the Nameless, was given the Proteans, an endlessly mutable race well suited to mediate between the creations of the Primordials and adapt them to the needs of the universe.
@@ -135,8 +133,8 @@ This peace was not to last, with the Kaelthian government falling into civil unr
 253 AC saw the Red Plague, an engineered fungal weapon used by anti-civilization druids to try to wipe out the major cities and cause chaos, and in early 254 AC, the now theocratic dictatorship of Kaelthia was riven by the explosion of their High Temple, which sent massive quantities of faith-enhanced aether into the atmosphere and nearly tore the veil into Shadow. This dire fate was averted, but the weakness of the veil caused the new gods, called by the Great Mechanism to field the prayers of mortals, to withdraw from more direct, active involvement with mortals. Soon after, both the former God of Autumn (since deposed for too-aggressive meddling) and the Red Fang (he who was Gar'osh of the War of Blood) were both destroyed by the Oblivion Gate, which temporarily manifested in the heart of the Dustlands. The result of both of these was a warping of long-range magics and an increase in demonic activity. The portal network no longer functions; nations are reduced to regular overland travel and look at each other with suspicion. Monsters lurk in increased numbers, both the two-legged monsters of the spoken races and the more fantastical kinds.
 
 The date is now 260 AC, and now is the Time of Troubles. Adventurers have never been more needed.
-#pagebreak()
-#wide[= Planar Geography]
+
+= Planar Geography
 
 Dawn of Hope has three primary planes and two secondary planes. The primary planes are the Mortal, the Astral, and the Elemental (subdivided into 12 regions, often called planes themselves). The main secondary plane is Shadow, the liminal transition between planes. The Abyss rounds out the tale of the planes; a pocket-plane prison and weeping abscess around a hole in reality, home of the demons.
 
@@ -227,7 +225,7 @@ Other mortals (and immortals) have tried to use the jotnar as tools, trapping th
 
 The Abyss itself is approximately the size of Quartus, but devoid of natural solid matter. Everything that exists there was built by demons out of the souls and aether of those they absorbed elsewhere. While the inhabitants of the Abyss are a disorganized lot, each pursuing its own designs, they roughly fall into 5 camps, each headed by a Demon Prince, an extremely powerful entity who is powerful enough to carve out a stable domain.
 #pagebreak()
-#wide[= Gods and Worship]
+= Gods and Worship
 
 The gods are, as mentioned in the section on history, latecomers to Quartus and Dawn of Hope. Before the beginning of the 3rd age (roughly 3500 years ago), there were Powers (fiends, angels, demons, and elemental lords), but worshiping them brought no power other than that of a warlock's Pact. The relationship between mortals and Powers was entirely transactional, and these entities could not draw on the Great Mechanism and did not have Domains.
 
@@ -402,7 +400,7 @@ The Jester is a wild card #aside[like you! --ed] #aside[That's not fair --IB]. N
 
 ===== Mapping lineages to D&D races
 Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species" (since the lineages can interbreed #aside[something Bard found out the hard way a few times --ed] #aside[it was quite enjoyable, really, other than the parental support --IB] #aside[which you mostly ran away from! --ed]). They're covered in detail in the rules documents; this is a cheat-sheet to map their Quartan names to more common names. 
-#wide[
+#colbreak()
 
 #dndtab(columns: (1fr, 1fr), "", align: left,
   [*Dawn of Hope*], [*Standard D&D*],
@@ -425,8 +423,12 @@ Dawn of Hope uses the word "lineage" instead of "race" (too archaic) or "species
   [ika-ika], [fish folk],
   [kalasaa], [triton],
 )
+#block[
+  #set text(size: 10pt)
 #sym.dagger The goblin lineage is a complex one, with a shared memory/thinking space. This shared memory is not a hive mind; it acts more like one person bleeding into another within the tribe. This makes them _genetically_ ADHD, as well as literally smarter together than apart. They naturally pour some of their shared energy into a few individuals, transforming them into larger "hobgoblins" that are less prone to the tide-like enthusiasms because they have more distance from the shared memory space.
 ]
+
+
 
 
 #pagebreak()
@@ -777,7 +779,7 @@ The four dialects of Primordial are spoken throughout the Elemental Plane. They 
 
 === Sarthak
 The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon and Serpent Seas. Written in a heavily modified, much simplified Aelven script with all the meaning stripped and only the syllabic sound values left behind, it is a pragmatic, business-first language. #aside[Although the language forms for status and hierarchy, as well as surrender, are extremely strongly developed --IB ]
-#colbreak()
+
 === Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
 

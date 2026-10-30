@@ -13,10 +13,7 @@ This work includes material taken from the System Reference Document 5.1 (“SRD
 No generative AI was used in the production of this work.
 ]
 
-#if sys.inputs.at("standalone", default: "false") == "true" [
-
-#core-legal()
-
+#let ogl() = [
 == OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
@@ -56,4 +53,10 @@ Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 System Reference Document 5.0 Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
 
 END OF LICENSE 
+]
+
+#if sys.inputs.at("standalone", default: "false") == "true" [
+#pagebreak()
+#core-legal()
+#ogl()
 ]

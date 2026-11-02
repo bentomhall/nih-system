@@ -17,7 +17,7 @@ class QuickLookLink extends HTMLAnchorElement {
   async fetchPreview() {
     const href = this.getAttribute('href')
     const previewContainer = this.shadowRoot.querySelector('.preview-box')
-    if (!href) { return; }
+    if (!href || href.startsWith('https://')) { return; }
     try {
       const response = await fetch(href);
       if (!response.ok) {

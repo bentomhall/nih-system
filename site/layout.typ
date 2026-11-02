@@ -8,11 +8,7 @@
 #let rel(from, to) = "../" * (from.split("/").len() - 1) + to
 
 #let a(href, body, ..attrs) = {
-  if href.starts-with("https://") {
-    html.elem("a", attrs: (href: href, ..attrs.named()), body)
-  } else {
-    html.elem("a", attrs: (href: href, is: "link-preview", ..attrs.named()), body)
-  }
+  html.elem("a", attrs: (href: href, ..attrs.named()), body)
 }
 
 

@@ -146,7 +146,7 @@ class QuickLookLink extends HTMLElement {
           display: inline-block;
         }
         a {
-          color: #0066cc;
+          color: var(--link, #0066cc);
           text-decoration: underline;
           cursor: pointer;
         }

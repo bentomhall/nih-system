@@ -12,7 +12,8 @@ for version in shared 5e nih; do
   typst compile --root . --features html,bundle --format bundle --pretty \
     --input version="$version" --input website=true \
     site/site.typ "$out"
-  find site/out -type f -name "*.html" -print0 | while IFS= read -r -d '' file; do
-    sed -i '' -e 's/<a href/<link-preview href/g' -e 's/a>/link-preview>/g' "$file"
-  done
 done
+
+# perl rather than sed -i, whose syntax differs between macOS and Linux.
+find "$out" -type f -name "*.html" \
+  -exec perl -pi -e 's/<a href/<link-preview href/g; s|</a>|</link-preview>|g' {} +

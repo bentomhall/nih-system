@@ -2,7 +2,7 @@ name: Build release PDFs
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 permissions:
   contents: write
@@ -34,20 +34,70 @@ jobs:
             --repo "${{ github.repository }}" --clobber
   deploy-web:
     runs-on: ubuntu-latest
-    
+    concurrency: deploy-web
+    env:
+      TYPST_VERSION: 0.15.1
+      TAG: ${{ github.event.release.tag_name }}
+      # Placeholders: set these as repository variables (Settings > Secrets and variables > Actions > Variables).
+      DEPLOY_BUCKET: ${{ vars.DEPLOY_BUCKET }}
+      DEPLOY_INSTANCE_ID: ${{ vars.DEPLOY_INSTANCE_ID }}
+      DEPLOY_DIR: /var/www/html/homebrew
+
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Typst
+        run: |
+          curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" \
+            | sudo tar -xJ --strip-components=1 -C /usr/local/bin typst-x86_64-unknown-linux-musl/typst
+          typst --version
+
       - name: Convert to html
         run: ./site/build.sh
-      
+
       - name: Zip dist
         run: |
           cd site/out
-          zip -r "../nih-system-web-${{ github.event.release.tag_name }}.zip" *
+          zip -r "../nih-system-web-${TAG}.zip" .
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::197626722975:role/Github-Actions-SSM
           aws-region: us-east-2
 
-        
+      - name: Upload to S3
+        run: aws s3 cp "site/nih-system-web-${TAG}.zip" "s3://${DEPLOY_BUCKET}/releases/nih-system-web-${TAG}.zip"
+
+      - name: Deploy via SSM
+        run: |
+          url=$(aws s3 presign "s3://${DEPLOY_BUCKET}/releases/nih-system-web-${TAG}.zip" --expires-in 600)
+
+          # Runs as root under /bin/sh on the instance.
+          script=$(cat <<EOF
+          set -eu
+          zip=/home/ubuntu/nih-system-web.zip
+          curl -fsSL -o "\$zip" '${url}'
+          chown ubuntu:ubuntu "\$zip"
+          staging=\$(mktemp -d)
+          trap 'rm -rf "\$staging"' EXIT
+          unzip -oq "\$zip" -d "\$staging"
+          chmod -R u=rwX,go=rX "\$staging"
+          rsync -rlpt --delete "\$staging"/ '${DEPLOY_DIR}'/
+          echo "Deployed ${TAG} to ${DEPLOY_DIR}"
+          EOF
+          )
+
+          cmd=$(aws ssm send-command \
+            --instance-ids "$DEPLOY_INSTANCE_ID" \
+            --document-name AWS-RunShellScript \
+            --comment "Deploy nih-system ${TAG}" \
+            --parameters "$(jq -n --arg s "$script" '{commands: ($s | split("\n"))}')" \
+            --query Command.CommandId --output text)
+          echo "SSM command: $cmd"
+
+          status=0
+          aws ssm wait command-executed --command-id "$cmd" --instance-id "$DEPLOY_INSTANCE_ID" || status=$?
+          aws ssm get-command-invocation --command-id "$cmd" --instance-id "$DEPLOY_INSTANCE_ID" \
+            --query '[Status, StandardOutputContent, StandardErrorContent]' --output text
+          exit "$status"

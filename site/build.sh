@@ -12,8 +12,7 @@ for version in shared 5e nih; do
   typst compile --root . --features html,bundle --format bundle --pretty \
     --input version="$version" --input website=true \
     site/site.typ "$out"
-  for file in $out/*; do
-    if [ -d "$file" ]; then continue; fi
-    sed -i 's/<a href/<a is="link-preview" href/g' $file
+  find site/out -type f -name "*.html" -print0 | while IFS= read -r -d '' file; do
+    sed -i '' -e 's/<a href/<link-preview href/g' -e 's/a>/link-preview>/g' "$file"
   done
 done

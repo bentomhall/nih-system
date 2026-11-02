@@ -64,7 +64,7 @@
         html.elem("main", attrs: (class: "content"), body)
       })
       footer(current)
-      html.elem("script", attrs: (type: "module", "src":"quick-look-link.js"))
+      html.elem("script", attrs: (type: "module", "src":rel(current, "quick-look-link.js")))
     })
   })
 }

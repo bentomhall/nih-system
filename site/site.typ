@@ -11,6 +11,7 @@
 
 #if build == "shared" {
   asset("style.css", read("style.css"))
+  asset("quick-look-link.js", read("quick-look-link.js"))
 
   document("index.html", title: site-title, shell("index.html", site-title)[
     = NIH System

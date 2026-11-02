@@ -453,7 +453,7 @@ A shimmering green arrow streaks toward a target within range and bursts in a sp
 
 === Acid Burst <acid-burst>
 #flush-block[
-- _Cantrip, Damage_
+- _0 AET, Damage_
 - _Cast Time_: 1 action
 - _Range_: 60 feet
 - _Components_: V, S

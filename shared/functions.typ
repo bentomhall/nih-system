@@ -78,6 +78,8 @@
   ]],
 )
 
+#let hspace(size) = html-or(() => none, h(size))
+
 #let statbox(stats, wide: false) = context {
   let for-html = target() == "html"
   // In HTML each rule ends a paragraph; the stylesheet draws the line.

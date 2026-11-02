@@ -84,7 +84,7 @@ The party is exploring a ruined temple of ancient sun worshipers. Undead guardia
 
 #emph[The adventure continues...]
 
-#heading(level: 6, numbering: none)[Discussion]
+==== Discussion
 
 In this example, note that communication was open and explicit. Players stated what they wanted to do, not what mechanics they were engaging. Gary noted that Delenor is in his element here, so doing a degrees of success check (usually \"one piece of information for every 5 points of total result\") was appropriate, while not giving any information on a failure/all the information on a success wouldn't really fit.
 
@@ -134,7 +134,7 @@ The party is trying to convince Baron Bloated, the fat and cowardly Baron of Bad
 
 #emph[And play continues...]
 
-#heading(level: 6, numbering: none)[Discussion]
+==== Discussion
 Note that most of the action #emph[wasn't] in Charisma checks. They could have gone straight to the point, but that would have been a much harder row to hoe, breaking through Harold's influence without exposing him. They didn't have to give exact speeches, and the exact words they said didn't really matter as much as their explanations of what they were doing, how they were doing it, and what they wanted. Take, for instance, that first exchange from Beth and Dave. Beth (a) showed her evidence (in the form of the ears and badges), (b) gave enough detail to know that they weren't threatening but were explaining (hence Persuasion, not Intimidation...not yet), and (c) explained what she wanted to have happen. Since Gary wasn't entirely sure, he asked a clarifying question based on his impression of her desire and let her make the call on which it was. Dave's Help action wasn't just \"I Help Barkor\", but it was fiction-first--showing some bit of knowledge (pretended or otherwise) and how it fit, then explaining what his intent was in doing so. Not to supplant Barkor's efforts, but to assist.
 
 Later, Alice and Charlie both used their non-Charisma skills to assist--one in figuring out that Harold was particularly sketchy (and note the request to combine proficiencies to get specific information, a good example of such a request) and then Charlie picking his pocket. All of this together made a done deal and removed the need for further rolls. If he'd come up empty on the pick-pocketing, they still could have intimidated him but it wouldn't have been an easy roll and they certainly wouldn't have gotten the full story. The whole scenario could have gone very differently in many ways--that was just one way the party could have navigated the scenario.

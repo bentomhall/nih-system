@@ -7,7 +7,15 @@
 // works from any base path (e.g. a GitHub Pages project subdirectory).
 #let rel(from, to) = "../" * (from.split("/").len() - 1) + to
 
-#let a(href, body, ..attrs) = html.elem("a", attrs: (href: href, ..attrs.named()), body)
+#let a(href, body, ..attrs) = {
+  if href.starts-with("https://") {
+    html.elem("a", attrs: (href: href, ..attrs.named()), body)
+  } else {
+    html.elem("a", attrs: (href: href, is: "link-preview", ..attrs.named()), body)
+  }
+}
+
+
 
 #let contains(group, current) = group.pages.any(p => p.path == current)
 
@@ -60,6 +68,7 @@
         html.elem("main", attrs: (class: "content"), body)
       })
       footer(current)
+      html.elem("script", attrs: (type: "module", "src":"quick-look-link.js"))
     })
   })
 }

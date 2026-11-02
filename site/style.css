@@ -107,7 +107,7 @@ a { color: var(--link); }
 /* Content */
 .content {
   width: 100%;
-  max-width: 50rem;
+  max-width: 75%;
   padding: 2rem 2.5rem 4rem;
 }
 .content h2, .content h3, .content h4, .content h5 {

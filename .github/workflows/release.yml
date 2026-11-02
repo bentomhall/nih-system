@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 env:
   TYPST_IMAGE: ghcr.io/typst/typst:0.15.1
@@ -31,3 +32,22 @@ jobs:
           gh release upload "${{ github.event.release.tag_name }}" \
             "nih-system-${{ github.event.release.tag_name }}.zip" \
             --repo "${{ github.repository }}" --clobber
+  deploy-web:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Convert to html
+        run: ./site/build.sh
+      
+      - name: Zip dist
+        run: |
+          cd site/out
+          zip -r "../nih-system-web-${{ github.event.release.tag_name }}.zip" *
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::197626722975:role/Github-Actions-SSM
+          aws-region: us-east-2
+
+        

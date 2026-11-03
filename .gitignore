@@ -11,3 +11,4 @@ assets/*.svg
 tools/output
 output/*
 .DS_Store
+site/out

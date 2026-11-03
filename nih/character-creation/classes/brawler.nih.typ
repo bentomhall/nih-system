@@ -1,0 +1,251 @@
+#import "@preview/dragonling:0.3.1": *
+#import "../../../shared/functions.typ": *
+
+= Brawler <brawler>
+
+Not all warriors use weapons and armor; some use their body as both weapon and armor. They have substantial reserves of stamina and prefer many lighter hits over slow massive hits. Darting in and out of combat, they dodge attacks and strike to the weak points. They excel at separating and locking down the most dangerous foes. Their raw damage isn't the best, but it's respectable. They can be vulnerable if caught alone and without any way out, and aren't the best at actively healing and supporting their allies' efforts. Ranged damage is their particular weakness.
+
+=== Quick Build
+
+To quickly make a brawler, make Dexterity your highest ability score and Wisdom and Constitution your other best score. Wisdom powers your saving throw DCs and other features, while Dexterity gives both offense and defense.
+
+== Class Features
+
+As a brawler, you gain the following class features.
+
+=== Hit Points
+#flush-block[
+- *Hit Dice:* 1d8 per brawler level
+- *Hit Points at 1st Level:* 8 + your Constitution modifier
+- *Hit Points at Higher Levels:* 1d8 (or 5) + your Constitution modifier per brawler level after 1st
+]
+
+
+=== Proficiencies
+#flush-block[
+- *Armor:* None
+- *Weapons.* Battering, Hafted, Ranged.
+- *Weapon Skill.* Basic
+- *Tools.* Choose one type of artisan's tools or one musical instrument
+- *Saving Throws.* Strength, Dexterity
+- *Skills.* Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth
+]
+
+=== Equipment
+
+You start with the following equipment, in addition to the equipment granted by your background:
+
+- (*a*) a light blade or (*b*) a battering weapon
+- (*a*) a dungeoneer's pack or (*b*) an explorer's pack
+- 2 thrown weapons
+
+=== Class DC
+When an ability of this class requires an enemy to make a saving throw, the DC is given by 
+
+#align(center)[*DC* = 8 + your Wisdom modifier + your proficiency bonus]
+
+== Unarmored Defense <unarmored-defense>
+
+Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier or your Strength modifier (whichever is higher) + your Wisdom modifier. Additionally, you can take the deflect action as if you were armored.
+
+== Martial Arts <martial-arts>
+
+At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and brawler weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
+
+You gain the following benefits while you are unarmed or wielding only brawler weapons and you aren't wearing armor or wielding a shield:
+
+- You can use your Ranged Attack Modifier for all weapon attacks with proficient weapons and unarmed strikes. When you do so, you add your Dexterity modifier to the damage dealt instead of your Strength modifier.
+- You can use Dexterity (Acrobatics) instead of Strength (Athletics) when making a shove or grapple attempt.
+- You can roll a d6 in place of the normal damage of your unarmed strike or brawler weapon. This die changes as you gain brawler levels, as shown in the Martial Arts column of the Brawler table.
+- When you use the Attack action with an unarmed strike or a brawler weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
+- You count as being armed when you take the deflect action.
+
+== Flurry of Blows <flurry-of-blows>
+
+When you take the Attack action on your turn, you can spend 1 STA to make two unarmed strikes as a bonus action. This replaces the Martial Arts bonus action attack when you do.
+
+== Patient Defense <patient-defense>
+
+You can spend 1 STA to take the Guard action as a bonus action on your turn.
+
+== Step of the Wind <step-of-the-wind>
+
+You can spend 1 STA to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.
+#wide[
+#dndtab("The Brawler", columns: (0.75fr, 0.75fr, 0.5fr, 0.75fr, 2fr, 1.5fr, 0.75fr, 1fr),
+ "Level ", "Proficiency", "Die", "Movement", "Features", "Stamina", "Aether", "Aether Limit",
+"1st   ", "+2", "1d6", "-", "Unarmored Defense, Martial Arts", "1 + CON", "1", "1",
+"2nd   ", "+2", "1d6", "+10 ft.", "Conditioning, Unarmored Movement", "2 + CON + WIS", "1", "1",
+"3rd   ", "+2", "1d6", "+10 ft.", "Martial Tradition, Deflect Missiles", "3 + CON + WIS", "2", "1",
+"4th   ", "+2", "1d6", "+10 ft.", "Ability Score Improvement, Slow Fall", "4 + CON + WIS", "2", "1",
+"5th   ", "+3", "1d8", "+10 ft.", "Extra Attack, Stunning Strike", "5 + CON + WIS", "3", "2",
+"6th   ", "+3", "1d8", "+15 ft.", "Empowered Strikes, Martial Tradition Feature", "6 + CON + WIS", "3", "2",
+"7th   ", "+3", "1d8", "+15 ft.", "Evasion, Stillness of Mind", "7 + CON + WIS", "4", "2",
+"8th   ", "+3", "1d8", "+15 ft.", "Ability Score Improvement", "8 + CON + WIS", "4", "2",
+"9th   ", "+4", "1d8", "+15 ft.", "Unarmored Movement improvement", "9 + CON + WIS", "5", "2",
+"10th  ", "+4", "1d8", "+20 ft.", "Purity of Body", "10 + CON + WIS", "5", "3",
+"11th  ", "+4", "1d10", "+20 ft.", "Martial Tradition Feature", "11 + CON + WIS", "6", "3",
+"12th  ", "+4", "1d10", "+20 ft.", "Ability Score Improvement", "12 + CON + WIS", "6", "3",
+"13th  ", "+5", "1d10", "+20 ft.", "---", "13 + CON + WIS", "7", "3",
+"14th  ", "+5", "1d10", "+25 ft.", "Diamond Soul", "14 + CON + WIS", "7", "3",
+"15th  ", "+5", "1d10", "+25 ft.", "Timeless Body", "15 + CON + WIS", "8", "3",
+"16th  ", "+5", "1d10", "+25 ft.", "Ability Score Improvement", "16 + CON + WIS", "8", "3",
+"17th  ", "+6", "1d12", "+25 ft.", "Martial Tradition Feature", "17 + CON + WIS", "9", "4",
+"18th  ", "+6", "1d12", "+30 ft.", "Empty Body", "18 + CON + WIS", "9", "4",
+"19th  ", "+6", "1d12", "+30 ft.", "Ability Score Improvement", "19 + CON + WIS", "10", "4",
+"20th  ", "+6", "1d12", "+30 ft.", "Perfect Self", "20 + CON + WIS", "10", "4"
+)
+]
+
+
+
+== Conditioning <conditioning>
+Beginning at 2nd level, your understanding of the world around you and yourself has made you more efficient. In effect, your Stamina pool is larger than most. You add your Wisdom modifier (if positive) to your Stamina pool. This is included in the Stamina column of the Brawler table.
+
+== Unarmored Movement <unarmored-movement>
+
+Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain brawler levels, as shown in the Brawler table.
+
+At 9th level, you gain the ability to move along vertical surfaces, upside down, and across liquids without falling and without expending extra movement.
+
+== Martial Tradition <brawler-martial-tradition>
+
+When you reach 3rd level, you commit yourself to a martial tradition. Three such traditions are detailed at the end of the class description: the defensively-oriented Way of the Guarded Soul, the offensively-oriented Way of Closed Fist, and the poison-aspected Way of the Serpent Dance. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
+
+== Deflect Attacks <deflect-attacks>
+
+Starting at 3rd level, you can use your reaction to deflect an attack or catch the missile when you are hit by an attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity + your brawler level.
+
+If you reduce the damage from a projectile-based attack (such as a thrown rock or arrow) to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 STA to make a ranged attack with the projectile you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a brawler weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet. You can expend extra STA to increase the damage dealt by 2 for every extra STA expended.
+
+== Ability Score Improvement <brawler-ability-score-improvement>
+
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 1. As normal, you can't increase an ability score above +5 using this feature.
+
+You can also pick a Skill Trick but you must meet the prerequisites for skill tricks learned in this way. See #safe-link("skill-tricks", "Skill Tricks") for that list. You can swap out a known skill trick for another you can learn when you gain another skill trick.
+
+== Slow Fall <slow-fall>
+
+Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your brawler level.
+
+== Extra Attack <brawler-extra-attack>
+
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+
+== Stunning Strike <stunning-strike>
+
+Starting at 5th level, you can interfere with the flow of energy in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 2 STA to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn. This does not stack with itself---you cannot use stunning strike on a creature already stunned using stunning strike.
+
+== Empowered Strikes <empowered-strikes>
+
+Starting at 6th level, your unarmed strikes count as silvered. In addition, once per turn when you hit with an attack you can expend 1 AET to increase the damage dealt by your Martial Arts by 1 die (dealing 2d8 bludgeoning damage on an unarmed strike, increasing as your Martial Arts die increases).
+
+At 9th level, your unarmed strikes count as adamantine and silver.
+
+== Evasion <brawler-evasion>
+
+At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
+
+== Stillness of Mind <stillness-of-mind>
+
+Starting at 7th level, you can use a bonus action to end one effect on yourself that is causing you to be charmed or frightened, even if you could not normally take actions.
+
+Additionally, on your turn you can end an effect on yourself that causes you to be incapacitated by spending 3 STA without taking an action as long as you have at least 1 hit point.
+
+== Purity of Body <purity-of-body>
+
+At 10th level, your mastery of the energy flowing through you makes you immune to disease and poison (including both poison damage and the poisoned condition).
+
+== Diamond Soul <diamond-soul>
+
+Beginning at 14th level, your self-mastery grants you proficiency in all saving throws.
+
+Additionally, whenever you make a saving throw and fail, you can spend 3 STA to reroll it and take the second result.
+
+== Empty Body <empty-body>
+
+Beginning at 18th level, you can use your action to spend 4 STA to become invisible for 1 minute. During that time, you also have resistance to all damage. This invisibility does not end when you make an attack roll, but it does end early if you are incapacitated at the start of your turn.
+
+== Perfect Self <perfect-self>
+
+At 20th level, if you are reduced to zero hit points, you can spend 8 STA as a reaction to instead heal to full health.
+
+= Martial Traditions <brawler-martial-traditions>
+
+There are many traditions for those that fight with spirit and fists. All these traditions rely on the same basic techniques, diverging as the student grows more adept. Thus, a brawler need choose a tradition only upon reaching 3rd level.
+
+Some traditions are balanced, training body and soul as one, balancing martial and mystical powers. Others are more focused on direct physical action; yet others are focused primarily on the soul, emphasizing mystic powers.
+
+== Way of the Guarded Soul <way-of-the-guarded-soul>
+
+Brawlers of the Way of the Guarded Soul are the ultimate masters of defensive martial arts combat. They learn techniques to push and trip their opponents, manipulate aether to heal damage to their bodies, and practice advanced techniques that can protect them from harm.
+
+=== Guarded Technique <guarded-technique>
+
+Starting when you choose this tradition at 3rd level, you can manipulate your enemy when strike them. Whenever you hit a creature with an unarmed strike, you can impose one of the following effects on that target. Your saving throw DC for these abilities is 8 + your Wisdom modifier + your proficiency bonus.
+
+- It must succeed on a Dexterity saving throw or be knocked prone.
+- It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
+- It can't take reactions until the end of your next turn.
+
+=== Wholeness of Body <wholeness-of-body>
+
+At 6th level, you gain the ability to heal yourself. As an action, you can spend 2 AET to regain hit points equal to three times your brawler level. By expending extra AET, you increase the amount healed by your brawler level per extra AET spent.
+
+=== Poise <poise>
+At 11th level, your physical and mental balance are nearly total. You are immune to being charmed or frightened, and the cost of ending the incapacitated status on you using Stillness of Mind is reduced to 2 STA.
+
+=== Legendary Effect: Contingency <legendary-effect-contingency>
+At 17th level, you are prepared for almost anything. You learn the legendary effect contingency and can use it once per day without requiring the expensive component or needing to cast a spell. You can only use the following spells:
+
+- #safe-link("blur", [_blur_])
+- #safe-link("cure-wounds", [_cure wounds_]) (targeting only yourself, cast as if you spent 12 aether, and your spellcasting ability is Wisdom)
+- #safe-link("greater-invisibility", [_greater invisibility_]) (targeting yourself)
+- #safe-link("remove-curse", [_remove curse_])
+- #safe-link("revivify", [_revivify_]) (targeting yourself, no component needed)
+- #safe-link("unbind", [_unbind_]) (targeting yourself)
+
+== Way of the Closed Fist <way-of-the-closed-fist>
+Brawlers of the Closed Fist are the masters of offensive unarmed martial arts combat. They train their bodies as weapons, focusing on delivering telling blows to their opponents.
+
+=== Closed Fist Techniques <closed-fist-techniques>
+Starting when you pick this subclass at level 3, you gain the following benefits.
+
+- When you hit a target that is incapacitated with an unarmed attack, you deal maximum damage to them.
+- When you score a critical hit with an unarmed strike, the damage dealt by the additional damage die is maximized.
+
+=== Knock Off Balance <knock-off-balance>
+Starting at 6th level, when you attack a creature with an unarmed strike and hit, the creature cannot make Opportunity Attacks against you until the beginning of your next turn.
+
+=== Tornado Kick <tornado-kick>
+Starting at 11th level, you can spend 1 AET and 2 STA and a bonus action to make a spinning attack. All creatures within 5 feet of you must make a Dexterity saving throw. On a failed save they take 5d10 bludgeoning damage and are knocked back 10 feet. On a success, they take half as much damage and are not knocked back.
+
+=== Empty Mind <empty-mind>
+At 17th level, you learn the legendary effect #safe-link("mind-blank", [_mind blank_]) and can use it on yourself once per day.
+
+=== Quivering Palm <quivering-palm>
+
+At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 AET to start these imperceptible vibrations, which last for a number of days equal to your brawler level. The vibrations are harmless unless you use your bonus action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage. You can substitute this special action for one attack you can make during your turn or as an Opportunity Attack.
+
+You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
+
+== Way of the Serpent Dance <way-of-the-serpent-dance>
+Brawlers of the Serpent Dance chose to emphasize subtlety and grace in both combat and social situations, concealing within the paralyzing toxicity of their namesake. The name is from the Jungle of Fangs, where this style took root in modern times.
+
+=== Serpent's Grace <serpents-grace>
+Starting when you pick this subclass at level 3, you have learned to move through the world with nary a ripple. When you make a Dexterity (Stealth) check, you can add your Wisdom modifier to the result. In addition, when you take the Step of the Wind action, the first attack against you on any turn has disadvantage until the start of your next turn.
+
+=== Serpent's Charm <serpents-charm>
+When you pick this subclass at level 3, you gain proficiency in Deception. If you already had proficiency, you gain expertise instead. In addition, you learn the feint skill trick. If you spend STA on a different bonus action granted by this class, you can use Feint as part of the same bonus action, expending stamina as usual.
+
+=== Serpent's Venom <serpents-venom>
+At 6th level, you've learned to infuse your personal aether with toxic aspects, coating your unarmed strikes with necrotic venom. Once per turn when you hit a creature with an unarmed strike, you can change the damage type to poison. If you do, you deal extra damage equal to your Wisdom modifier. You can expend 1 or more AET to force the creature to make a Constitution saving throw against your stunning strike DC. On a failed save, the creature takes 1d10 poison damage per AET spent and is poisoned for one minute. On a success, they take half as much damage and are not poisoned. Poisoned creatures can attempt the saving throw again at the end of each of their turns, ending the effect on a success.
+
+=== Scale Dance <scale-dance>
+At 11th level, you embody the bewitching aspect of a cobra as you dance. As an action, you can spend 2 AET and 4 STA and begin to dance, forcing all creatures of your choice that can see you within 30 feet to make a Wisdom saving throw. On a failed save, they become charmed by you. While charmed, they must use their movement to sway in time with you and cannot cast spells; if they attack, they do so at disadvantage. This effect ends at the start of your next turn unless you use your action again to continue the effect. If you do so, you do not need to pay the cost an additional time, but targets get to re-attempt their saving throw.
+
+=== Necrotic Venom <necrotic-venom>
+Starting at 11th level, the poison damage dealt by your Serpent's Venom ability becomes necrotic in addition to poison. Remember, this means that a creature must be resistant or immune to both necrotic and poison to be immune to the damage. In addition, creatures immune to the poisoned condition become staggered instead.
+
+=== Legendary Transformation <legendary-transformation>
+At 17th level, you learn the legendary effect #safe-link("animal-shapes", [_animal shapes_]) and can use it once per long rest. You can only choose serpentine forms, but affected creatures gain temporary hit points equal to your Wisdom modifier + your proficiency bonus.

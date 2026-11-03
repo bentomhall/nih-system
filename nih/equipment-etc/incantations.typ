@@ -1,6 +1,6 @@
 
 #import "@preview/dragonling:0.3.1": *
-#import "../shared/functions.typ": *
+#import "../../shared/functions.typ": *
 #if sys.inputs.at("standalone", default: "false") == "true" [
   #show: dndmodule.with(
     title: "Incantations",

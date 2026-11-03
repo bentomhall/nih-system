@@ -11,13 +11,30 @@
   bg: none
 )
 
-#include "nih/core.nih.typ"
-#include "nih/character-creation.nih.typ"
-#include "nih/equipment-skills-spells.nih.typ"
-#include "nih/incantations.typ"
+#include "nih/core/introduction.nih.typ"
+#pagebreak()
+#include "nih/core/ability-scores.nih.typ"
+#pagebreak()
+#include "nih/core/adventuring.nih.typ"
+#pagebreak()
+#include "nih/core/combat.nih.typ"
+#pagebreak()
+#include "nih/core/downtime.nih.typ"
+#include "nih/character-creation/character-creation.nih.typ"
+#pagebreak()
+#include "nih/equipment-etc/equipment.nih.typ"
+#pagebreak()
+#include "nih/equipment-etc/skill-tricks.nih.typ"
+#pagebreak()
+#include "nih/equipment-etc/incantations.typ"
+#pagebreak()
+#include "nih/equipment-etc/spells.nih.typ"
+
 #include "nih/conditions.typ"
 #include "nih/examples.nih.typ"
 #include "nih/expanded-downtime.nih.typ"
+#pagebreak()
+#include "nih/equipment-etc/magic-items.nih.typ"
 #include "nih/monsters/monsters.typ"
 #include "world/places-of-quartus.typ"
 #include "nih/changelog.nih.typ"

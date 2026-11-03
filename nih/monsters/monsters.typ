@@ -16,7 +16,7 @@
   #pagebreak()
 ]
 
-#set page(margin: (top: 15mm))
+#set page(margin: (top: 15mm)) if not website-build
 
 = Monsters <monsters>
 A monster's statistics, sometimes referred to as its *stat block*, provide the essential information that you need to run the monster.
@@ -510,35 +510,38 @@ Saving throw bonuses generally does not play into Defensive Rating much unless i
 "19", "130" ,
 "20", "130"
 )
-#pagebreak()
-= Monsters by Type <monsters-by-type>
+// The website renders each sub-file as its own page.
+#if not website-build [
+  #pagebreak()
+  = Monsters by Type <monsters-by-type>
 
-#include "aberrations.typ"
-#pagebreak()
-#include "beasts.typ"
-#pagebreak()
-#include "celestials.typ"
-#pagebreak()
-#include "constructs.typ"
-#pagebreak()
-#include "dragons.typ"
-#pagebreak()
-#include "elementals.typ"
-#pagebreak()
-#include "fey.typ"
-#pagebreak()
-#include "fiends.typ"
-#pagebreak()
-#include "giants.typ"
-#pagebreak()
-#include "humanoids.typ"
-#pagebreak()
-#include "monstrosities.typ"
-#pagebreak()
-#include "oozes.typ"
-#pagebreak()
-#include "plants.typ"
-#pagebreak()
-#include "undead.typ"
-#pagebreak()
-#include "non-combat.typ"
+  #include "aberrations.typ"
+  #pagebreak()
+  #include "beasts.typ"
+  #pagebreak()
+  #include "celestials.typ"
+  #pagebreak()
+  #include "constructs.typ"
+  #pagebreak()
+  #include "dragons.typ"
+  #pagebreak()
+  #include "elementals.typ"
+  #pagebreak()
+  #include "fey.typ"
+  #pagebreak()
+  #include "fiends.typ"
+  #pagebreak()
+  #include "giants.typ"
+  #pagebreak()
+  #include "humanoids.typ"
+  #pagebreak()
+  #include "monstrosities.typ"
+  #pagebreak()
+  #include "oozes.typ"
+  #pagebreak()
+  #include "plants.typ"
+  #pagebreak()
+  #include "undead.typ"
+  #pagebreak()
+  #include "non-combat.typ"
+]

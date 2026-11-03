@@ -135,7 +135,7 @@ You gain proficiency in fighting with improvised weapons and brawling. Improvise
 #flush-caption("Scholar: History", [_Intelligence (History) Basic Skill Trick_])
 
 You can automatically identify significant family lines, crests, and recent events across the local setting (boundaries subject to GM discretion). Additionally, when you make an Intelligence (History) check to know information about more obscure facts, you do so with advantage.
-#pagebreak()
+
 #flush-caption("Scholar: Nature", [_Intelligence (Nature) Basic Skill Trick_])
 
 You automatically tell the creature type of beings you interact with for at least 10 seconds, as long as it is not masked by magic. In addition, when you make an Intelligence (Nature) check to recall information about habitats, patterns of life, or behaviors of natural or semi-natural creatures, you do so with advantage.
@@ -165,7 +165,7 @@ You have advantage on Intelligence (Investigation) checks made to find trap trig
 #flush-caption("Tumble", [_Dexterity (Acrobatics) Basic Skill Trick_])
 
 You can move through opponents' spaces if they are one size larger than you. They count as difficult terrain and you cannot willingly end your movement in their space.
-
+#pagebreak()
 === Advanced Skill Tricks
 
 Advanced skill tricks require level 8 characters.
@@ -252,7 +252,7 @@ You can cast the spell gained this way once using this feature without expending
 #flush-caption("Resuscitation", [_Wisdom (Medicine) Advanced Skill Trick_])
 
 As an action, you can attempt to resuscitate someone who died within the last minutes Make a Wisdom (Medicine) check against a DC of 15 + the number of rounds since they died. On a success, the creature is restored to 1 hit point and any mortal wounds are closed, but gains a permanent injury. Both you and the target gain one level of exhaustion. 
-#pagebreak()
+
 #flush-caption("Snow Job", [_Charisma (Deception) Advanced Skill Trick_])
 
 When you make a Charisma (Deception) check to convince someone you know something you don't or are someone you are not, you do so with advantage. In addition, if you succeed by more than 5, the target willingly tells you the missing information.
@@ -292,7 +292,7 @@ You gain the following benefits:
 - You can determine the nature of any arcane phenomena you encounter, including spell glyphs, illusions, etc. without a check.
 - You can detect spellcasting within 60 ft. of you even if there are no components.
 - As a reaction you can attempt to disrupt spellcasting by a creature you can see within 60 ft. of you. Make an Intelligence (Arcana) check against a DC of 10 + the spell level. On a success, the spell fails. If you have the Spellcasting feature, you can substitute your spellcasting ability for Intelligence. Once you successfully disrupt a spell this way, you cannot do so again until you finish a short or long rest.
-#pagebreak()
+
 #flush-caption("Dungeoncrasher", [_Strength (Athletics) Expert Skill Trick_])
 
 When you move at least 10 feet before attempting to shove a creature, you can shove any size of creature. In addition, the distance you can shove creatures increases by 5 ft. If the creature is stopped short of the full distance by a hard surface, they must make a Constitution saving throw. On a failure, they are stunned until the end of their next turn. If they are stopped by running into a creature of their size or smaller, the other creature is knocked prone unless they succeed on a Strength saving throw.
@@ -325,7 +325,7 @@ Damage you deal against objects and structures counts as a critical hit and deal
 #flush-caption("Balance on Thin Air", [_Dexterity (Acrobatics) Master Skill Trick_])
 
 You can spend your bonus action to walk on air as if it were solid ground. If you do not spend your bonus action on each of your turns while suspended, you fall.
-#pagebreak()
+
 #flush-caption("Clean Slice", [_Strength (any slashing weapon) Master Skill Trick_])
 
 You make a melee weapon attack with a slashing weapon against a target within reach, using both your action and bonus action. On a hit, if the object is an object of Huge size or smaller, it is cut along an axis you choose. If it was a creature, it makes a Constitution saving throw. On a failed save, it takes damage equal to the maximum weapon damage you could deal with an Attack action if all your attacks hit. On a success, it takes half as much damage.
@@ -337,7 +337,7 @@ Once you use this skill trick a number of times equal to your Strength modifier 
 #flush-caption("Dragon's Fear", [_Charisma (Intimidation) Master Skill Trick_])
 
 This skill trick works as Break Will, but with the addition that creatures whose CR is less than half your level automatically fail the saving throw and creatures higher than that have disadvantage on the saving throw. Creatures that are immune to Break Will are also immune to this skill trick.
-
+#pagebreak()
 #flush-caption("Friend to All", [_Charisma (Persuasion) Master Skill Trick_])
 
 As an action, you can magically call for a truce even during combat. All creatures that can understand your language must make a Wisdom saving throw. On a failure, they become non-hostile until someone takes a hostile action. This ability does not work on mindless creatures, including zombies and skeletons. 

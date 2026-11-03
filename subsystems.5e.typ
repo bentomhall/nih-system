@@ -11,8 +11,8 @@
   bg: none
 )
 
-#include "dnd-compatible/incantations.typ"
+#include "dnd-compatible/incantations.5e.typ"
 #include "dnd-compatible/skill-tricks.typ"
-#include "shared/5e-conditions.typ"
+#include "dnd-compatible/conditions.5e.typ"
 #import "shared/legal.typ": core-legal
 #core-legal()

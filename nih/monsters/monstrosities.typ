@@ -38,7 +38,7 @@ The ankheg, commonly called a tunnel worm, is a large centipede-like creature wi
 		Challenge: [2:2],
 	),
 	traits: (
-		("Petrifying Gaze", [If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the #safe-link("restoration",[_restoration_]) incantation (greater only) or other magic. \ A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \ If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.]),
+		("Petrifying Gaze", [If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is paralyzed for one minute. If it fails the second save by more than 5, the creature is petrified until freed by the #safe-link("restoration",[_restoration_]) incantation (greater only) or other magic. \ A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \ If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.]),
 	),
 	actions: (
 		("Bite", [Melee Attack: +5 to hit, range , one target. _Hit:_ 2d6 + 3 piercing damage plus 2d6 poison damage.]),
@@ -184,7 +184,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 	traits: (
 	),
 	actions: (
-		("Bite", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 1 piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.]),
+		("Bite", [Melee Attack: +3 to hit, reach 5 ft., one target. _Hit:_ 1d4 + 1 piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is paralyzed for 1 hour. If the second save result was 6 or lower, the creature is petrified for 24 hours]),
 	),
 ))
 
@@ -392,7 +392,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 	),
 	variants: (
 		("Cryohydra", [Cryohydras gain immunity to cold and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of cold 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 cold damage per head on a failure or half as much on a success. This increases the OR by 3.]),
-		("Pyrohydra", [Pyrohydras gain immunity to fire and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.]),
+		("Pyrohydra", [Pyrohydras gain immunity to fire and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of fire 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Dexterity saving throw, taking 3d6 fire damage per head on a failure or half as much on a success. This increases the OR by 3. Their regeneration is stopped by cold, not fire.]),
 		("Venom Hydra", [Venom Hydras gain immunity to poison and a breath weapon (recharge 6 unless they have more than 5 heads, in which case recharge 4-6)--as an action, they breathe a line of poison 40ft long and 10 ft wide from all their heads. Targets in the area must make a DC 15 Constitution saving throw, taking 3d6 poison damage per head on a failure or half as much on a success. This increases the OR by 3.]),
 	),
 ), wide: true)
@@ -453,7 +453,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		Challenge: [5:6],
 	),
 	traits: (
-		("Petrifying Gaze", [When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the #safe-link("restoration",[_restoration (greater)_]) incantation. \ Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. \ If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.]),
+		("Petrifying Gaze", [When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 12 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by more than 5, the creature begins to turn to stone and is paralyzed. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained or paralyzed creature must repeat the saving throw at the end of its next turn, becoming paralyzed (if restrained) or petrified (if paralyzed) on a failure or ending the effect on a success. Failure on the second saving throw by more than 5 results in petrification even if the creature was only restrained. The petrification lasts until the creature is freed by the #safe-link("restoration",[_restoration (greater)_]) incantation. \ Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. \ If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.]),
 	),
 	actions: (
 		("Multiattack", [The medusa makes either three melee attacks—one with its snake hair and two with its shortsword—or two ranged attacks with its longbow.]),
@@ -505,10 +505,10 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		Challenge: [8:8],
 	),
 	traits: (
-		("Spellcasting", [The naga's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* #safe-link("banishment",[_banishment_]) (2x), #safe-link("shield-of-faith",[_shield of faith_]) (1x), #safe-link("bestow-curse",[_bestow curse_]) (1x), #safe-link("arcane-binding",[_arcane binding_]) (2x) \ *Healing* #safe-link("cure-wounds",[_cure wounds_]) \ *Damage* #safe-link("flame-strike",[_flame strike_])]),
+		("Spellcasting", [The naga's spellcasting ability is Wisdom (spell save DC 14, +7 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* #safe-link("banishment",[_banishment_]) (2x), #safe-link("shield-of-faith",[_shield of faith_]) (1x), #safe-link("bestow-curse",[_bestow curse_]) (1x), #safe-link("arcane-binding",[_arcane binding_]) (2x) \ *Healing* #safe-link("cure-wounds",[_cure wounds_]) \ *Damage* #safe-link("flame-strike",[_flame strike_])]),
 	),
 	actions: (
-		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d8 + 4 piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.]),
+		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d8 + 4 piercing damage, and the target must make a DC 14 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.]),
 		("Spit Poison", [Ranged Attack: +7 to hit, range 15/30 ft., one target. _Hit:_ 10d8 poison damage.]),
 		("Holy Lance", [Ranged Spell Attack: +7 to hit, range 60 ft., one target. _Hit:_ 3d8 + 4 radiant damage.]),
 	),
@@ -531,7 +531,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		("Spellcasting", [The naga's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It can cast the following spells: \ *Concentration* #safe-link("domination",[_domination_]) (Legendary, 1x), #safe-link("arcane-binding",[_arcane binding_]) (3x) \ *Damage* #safe-link("blight",[_blight_]) (2x), #safe-link("lightning-bolt",[_lightning bolt_]) (2x) \ *Other* #safe-link("dimension-door",[_dimension door_]) (1x)]),
 	),
 	actions: (
-		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d6 + 4 piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.]),
+		("Bite", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 1d6 + 4 piercing damage, and the target must make a DC 14 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.]),
 		("Frost Blast", [Ranged Spell Attack: +6 to hit, range 90 ft., one target. _Hit:_ 2d8+3 cold damage and the target's speed is reduced by 10 feet until the end of their next turn.]),
 	),
 ))
@@ -555,7 +555,7 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		("Multiattack", [The otyugh makes three attacks: one with its bite and two with its tentacles.]),
 		("Bite", [Melee Attack: +6 to hit, reach 5 ft., one target. _Hit:_ 2d8 + 3 piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.]),
 		("Tentacle", [Melee Attack: +6 to hit, reach 10 ft., one target. _Hit:_ 1d8 + 3 bludgeoning damage plus 4 (1d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.]),
-		("Slam", [The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 13 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.]),
+		("Slam", [The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 13 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be staggered until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't staggered.]),
 	),
 ))
 
@@ -734,6 +734,6 @@ The salamander-like behir lives in the waste places and deserts. While it is bes
 		("Keen Hearing and Smell", [The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.]),
 	),
 	actions: (
-		("Bite", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.]),
+		("Bite", [Melee Attack: +5 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 3 piercing damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.]),
 	),
 ))

@@ -182,8 +182,8 @@ BECOME
 		("Multiattack", [The giant makes two greatsword attacks.]),
 		("Greatsword", [Melee Attack: +10 to hit, reach 10 ft., one target. _Hit:_ 6d6 + 9 slashing damage plus 2d6 lightning damage.]),
 		("Rock", [Ranged Attack: +10 to hit, range 60/240 ft., one target. _Hit:_ 4d12 + 9 bludgeoning damage.]),
-		("Lightning Strike (Recharge 5-6)", [The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 18 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.]),
-		("Sweeping Attack (Recharge 4-6)", [The giant sweeps his greatsword parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 18 Dexterity saving throw. On a failed save, targets take 6d6 + 9 slashing damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.]),
+		("Lightning Strike (Recharge 5-6)", [The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 16 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.]),
+		("Sweeping Attack (Recharge 4-6)", [The giant sweeps his greatsword parallel to the ground. All creatures within 10 feet in a semicircle must make a DC 16 Dexterity saving throw. On a failed save, targets take 6d6 + 9 slashing damage and are knocked 10 feet back and prone. On a success, targets take half damage and are shoved 5 feet away but not knocked prone.]),
 	),
 ), wide: true)
 

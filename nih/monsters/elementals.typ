@@ -239,7 +239,7 @@ Mephits are the elemental version of minor fey, a hybrid of nature spirits and e
 		Challenge: [1/2:1/2],
 	),
 	traits: (
-		("Death Burst", [When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (1d8) fire damage.]),
+		("Death Burst", [When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 11 Dexterity saving throw or take 4 (1d8) fire damage.]),
 		("Innate Spellcasting (1/Day)", [The mephit can innately cast #safe-link("blur", [_blur_]), requiring no material components.]),
 	),
 	actions: (

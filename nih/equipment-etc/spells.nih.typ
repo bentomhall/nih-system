@@ -265,7 +265,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *acid arrow* (arcanist, shaman, spellblade): 90 ft. Attack. 4d6 acid + 2d6 acid next turn. Half of 4d6 on miss.
 - *aid* (oathbound, priest): 3 creatures, 30 ft. 8 hrs. Current and max HP increases by 5.
 - *alter self* (arcanist, ranger, shaman): Self (C, 1 hr). Actual physical changes to body.
-- *arcane binding* (arcanist, priest, ranger, spellblade): 60 ft (C, 1 min). Humanoid target, WIS or paralyzed (save ends).
+- *arcane binding* (arcanist, priest, ranger, spellblade): 60 ft (C, 1 min). Humanoid target, STR or restrained $arrow$ paralyzed (save ends).
 - *barkskin* (ranger, shaman): Touch, 1 hr. AC is minimum 16 and MOD THP at the start of each of their turns.
 - *blindness/deafness* (arcanist, priest, ranger, shaman, spellblade): 30 ft, 1 minute. CON or blinded/deafened (your choice). Save ends.
 - *blur* (arcanist, shaman, spellblade): Self (C, 1 min). All attacks against you have disadvantage unless target can see through illusions or doesn't need sight.
@@ -281,7 +281,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *gust of wind* (shaman): 60x10 line (C, 1 min), self. Line of strong wind, STR or pushed 15 feet. Re-aimable.
 - *heat metal* (shaman, spellblade): 60 ft (C, 1 min). Targets metal object. Action to cause 2d8 fire damage, no save.
 - *invisibility* (arcanist, priest, ranger, spellblade): Touch (C, 1 hr). Target becomes invisible until they attack, cast spell, or deal damage.
-- *levitate* (arcanist, spellblade): 60 ft (C, 10 min). Object or creature. Moves vertically, can't move normally. Can be moved as action.
+- *levitate* (arcanist, spellblade): 60 ft (C, 10 min). Object or creature. STR. Moves vertically, can't move normally. Can be moved as action.
 - *magic weapon* (oathbound, priest): Touch (C, 1 hr). Bonus action. One non magical weapon becomes masterwork.
 - *mirror image* (arcanist): Self. 1 min. Potentially absorbs up to 3 attacks.
 - *misty step* (arcanist, spellblade): Self. Bonus action. Teleport up to 30 ft.
@@ -318,7 +318,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *fear* (arcanist, priest, spellblade): 30 ft cone (C, 1 min), self. WIS or frightened, drop objects, must dash away (safely).
 - *fireball* (arcanist, spellblade): 20 ft sphere, 150 ft. 6d6 fire (DEX for half). Ignites unattended objects.
 - *gaseous form* (shaman): Touch (C, 1 hr). Willing target. Becomes slowly flying gas.
-- *haste* (arcanist, priest): 30 ft (C, 1 min). Willing creature moves faster, gains AC, advantage on DEX saves, and can Dash, Disengate, Hide, or Use an Object as an extra action.
+- *haste* (arcanist, priest): 30 ft (C, 1 min). Willing creature moves faster, gains AC, advantage on DEX saves, and can Dash, Disengage, Hide, or Use an Object as an extra action.
 - *hypnotic pattern* (arcanist, spellblade): 30 ft cube (C, 1 min), 120 ft. WIS or charmed and incapacitated, speed zero. WIS ends, as does damage or anyone's action.
 - *ice storm* (shaman): 20x40 cylinder, 300 ft. 2d8 bludgeoning and 4d6 cold, DEX for half. Area is difficult terrain 1 rnd.
 - *lightning bolt* (arcanist, shaman): 100x5 line. 6d6 lightning, DEX for half. Ignites unattended objects.
@@ -332,7 +332,7 @@ Abbreviations and notes: MOD is your spellcasting modifier (ie INT for arcanists
 - *slow* (arcanist, shaman, spellblade): 6 creatures in 40 ft cube (C, 1 min), 120 ft. WIS or slowed. Speed halved, lower AC/DEX saves, 1 attack max. Casting penalties.
 - *stinking cloud* (arcanist, shaman, spellblade): 20 ft sphere (C, 1 min), 90 ft. CON or waste action. Heavy obscuration.
 - *unbind* (arcanist, priest, shaman): 120 ft. Attempt to end one spell. If base cost 5 or lower, automatic success.
-- *wall of thorns* (ranger, shaman): Special, 120 ft (C, 10 min). Shapeable wall. Extra dfficult terrain + damage to move through. Provides total cover.
+- *wall of thorns* (ranger, shaman): Special, 120 ft (C, 10 min). Shapeable wall. Extra difficult terrain + damage to move through. Provides total cover.
 - *wind wall* (priest, shaman): Special (C, 1 min), 120 ft. 3d8 bludgeoning for creatures in area (STR for half). Blocks small or smaller flying creatures and projectiles.
 ]
 

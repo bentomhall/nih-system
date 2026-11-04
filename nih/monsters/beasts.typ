@@ -255,7 +255,7 @@ traits: (
 		Challenge: [1/2:1/4]
 ),
 	traits: (
-	("Charge", [If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.]),
+	("Charge", [If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.]),
 
 ),
 	actions: (
@@ -355,7 +355,7 @@ traits: (
 		Challenge: [1:1]
 ),
 	traits: (
-	("Charge", [If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.]),
+	("Charge", [If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.]),
 
 ("Relentless (Recharges after a Short or Long Rest)", [If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.]),
 
@@ -436,7 +436,7 @@ traits: (
 	actions: (
 ("Multiattack", [The crocodile makes two attacks: one with its bite and one with its tail.]),
 ("Bite", [Melee Attack: +7 to hit, reach 5, one target. _Hit:_ 3d10 + 4 piercing and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.]),
-("Tail", [Melee Attack: +7 to hit, reach 10, one target. _Hit:_ 2d8 + 4 bludgeoning. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.]),
+("Tail", [Melee Attack: +7 to hit, reach 10, one target. _Hit:_ 2d8 + 4 bludgeoning. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.]),
 )))
 
 #statbox((name: "Giant Eagle",
@@ -518,7 +518,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Challenge: [1:1/4]
 ),
 	traits: (
-	("Charge", [If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.]),
+	("Charge", [If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.]),
 
 ("Sure-Footed", [The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.]),
 
@@ -678,7 +678,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 		Challenge: [1/2:1/4]
 ),
 	traits: (
-	("Charge", [If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. It the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.]),
+	("Charge", [If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. It the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.]),
 
 ("Water Breathing", [The sea horse can breathe only underwater.]),
 
@@ -734,7 +734,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 ),
 	actions: (
 ("Bite", [Melee Attack: +5 to hit, reach 5, one target. _Hit:_ 1d8 + 3 piercing and the target must make a DC 13 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.]),
-("web", [Ranged Attack: +5 to hit, range 30/60, one target. _Hit:_ 1d8 bludgeoningThe target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).]),
+("web", [Ranged Attack: +5 to hit, range 30/60, one target. _Hit:_ 1d8 bludgeoning and the target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).]),
 )))
 
 #statbox((name: "Giant Toad",
@@ -860,7 +860,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	actions: (
 ("Multiattack", [The horsebird makes a kick attack. If it knocks the target prone, it makes an additional beak attack against that target. If the target was already prone, it uses its beak once.]),
 ("Beak", [Melee Attack: +2 to hit, reach 5, one target. _Hit:_ 2d8 + 2 piercing.]),
-("Kick", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d8 + 2 slashing and the target must make a DC 11 Strength saving throw or be knocked prone.]),
+("Kick", [Melee Attack: +4 to hit, reach 5, one target. _Hit:_ 1d8 + 2 slashing and the target must make a DC 12 Strength saving throw or be knocked prone.]),
 
 )))
 
@@ -927,7 +927,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 
 ("Pack Tactics", [The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally isn't incapacitated.]),
 
-("Pounce", [If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.]),
+("Pounce", [If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.]),
 
 ("Running Leap", [With a 10-foot running start, the lion can long jump up to 25 feet.]),
 
@@ -949,7 +949,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 		Challenge: [6:6]
 ),
 	traits: (
-	("Trampling Charge", [If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action.]),
+	("Trampling Charge", [If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action.]),
 
 ),
 	actions: (
@@ -992,7 +992,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	traits: (
 	("Keen Smell", [The panther has advantage on Wisdom (Perception) checks that rely on smell.]),
 
-("Pounce", [If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.]),
+("Pounce", [If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 11 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.]),
 
 ),
 	actions: (
@@ -1138,7 +1138,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	traits: (
 	("Keen Smell", [The tiger has advantage on Wisdom (Perception) checks that rely on smell.]),
 
-("Pounce", [If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.]),
+("Pounce", [If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.]),
 
 ),
 	actions: (
@@ -1300,7 +1300,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 	traits: (
 	("Keen Smell", [The tiger has advantage on Wisdom (Perception) checks that rely on smell.]),
 
-("Pounce", [If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 11 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.]),
+("Pounce", [If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.]),
 
 ),
 	actions: (
@@ -1321,7 +1321,7 @@ The fiercely-territorial wild horsebird moves in packs of 5-10 across plains and
 ),
 	traits: (
 	("Battle Trained Mount", [While being used as a mount, the warhorse has advantage on Wisdom saves against being frightened and gains its rider's proficiency bonus to all saves if the rider is proficient in Animal Handling. ]),
-("Trampling Charge", [If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.]),
+("Trampling Charge", [If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.]),
 
 ),
 	actions: (

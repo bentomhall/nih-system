@@ -26,7 +26,7 @@ The dryad is a place-bound fey, usually bound to a grove of trees. They act as t
 	),
 	traits: (
 		("Barkskin", [The dryad is continually under the effects of the #safe-link("barkskin", [_barkskin_]) spell, increasing their armor class to 16 and gains 2 temporary hit points at the beginning of each of their turns.]),
-		("Innate Spellcasting", [The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components: \ *Concentration:* #safe-link("entangle", [_entangle_]) (3x), #safe-link("pass-without-trace", [_pass without trace_]) (1x), #safe-link("spike-growth", [_spike growth_]) (1x))]),
+		("Innate Spellcasting", [The dryad's innate spellcasting ability is Charisma (spell save DC 13). The dryad can innately cast the following spells, requiring no material components: \ *Concentration:* #safe-link("entangle", [_entangle_]) (3x), #safe-link("pass-without-trace", [_pass without trace_]) (1x), #safe-link("spike-growth", [_spike growth_]) (1x))]),
 		("Magic Resistance", [The dryad has advantage on saving throws against spells and other magical effects.]),
 		("Speak with Beasts and Plants", [The dryad can communicate with beasts and plants as if they shared a language.]),
 		("Tree Stride", [Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.]),

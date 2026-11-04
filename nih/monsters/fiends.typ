@@ -42,7 +42,7 @@ The hierarchy of regularly summoned forms goes (from weakest to strongest)
 		("Multiattack", [The stench fiend makes two attacks: one with its bite and one with its claws.]),
 		("Bite", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d6 piercing damage.]),
 		("Claws", [Melee Attack: +2 to hit, reach 5 ft., one target. _Hit:_ 1d4 slashing damage.]),
-		("Fetid Cloud (1/Day)", [A 10-foot radius of disgusting green gas extends out from the stench fiend. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.]),
+		("Fetid Cloud (1/Day)", [A 10-foot radius of disgusting green gas extends out from the stench fiend. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target is also #safe-link("staggered", "staggered").]),
 	),
 ))
 

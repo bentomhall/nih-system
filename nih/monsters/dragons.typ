@@ -118,13 +118,13 @@ Adult dragons are the terminal form for most dragons, as not all dragons undergo
 		("Claw", [Melee Attack: +11 to hit, reach 5 ft., one target. _Hit:_ 2d6 + 6 slashing damage.]),
 		("Tail", [Melee Attack: +11 to hit, reach 15 ft., one target. _Hit:_ 2d8 + 6 bludgeoning damage.]),
 		("Frightful Presence", [Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.]),
-		("Breath Weapon (recharge 5-6)", [The dragon exhales energy in a burst (see Blast Shape). Each creature in that area must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.]),
+		("Breath Weapon (recharge 5-6)", [The dragon exhales energy in a burst (see Blast Shape). Each creature in that area must make a DC 16 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.]),
 	),
 	legendary: (
 		("", [The Dragon, Adult can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Dragon, Adult regains spent legendary actions at the start of its turn.]),
 		("Detect", [The dragon makes a Wisdom (Perception) check.]),
 		("Tail Attack", [The dragon makes a tail attack.]),
-		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
+		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 16 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
 	),
 ), wide: true)
 
@@ -157,13 +157,13 @@ Only those dragons whose mindsets bend to leading or dominating others of their 
 		("Claw", [Melee Attack: +13 to hit, reach 10 ft., one target. _Hit:_ 2d6 + 8 slashing damage.]),
 		("Tail", [Melee Attack: +13 to hit, reach 20 ft., one target. _Hit:_ 2d8 + 8 bludgeoning damage.]),
 		("Frightful Presence", [Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.]),
-		("Breath Weapon (recharge 5-6)", [The dragon exhales energy in an area (see Blast Shape). Each creature in that area must make a DC 20 saving throw of the type indicated for the dragon's color, taking 71 (13d10) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.]),
+		("Breath Weapon (recharge 5-6)", [The dragon exhales energy in an area (see Blast Shape). Each creature in that area must make a DC 17 saving throw of the type indicated for the dragon's color, taking 71 (13d10) damage of the dragon's Damage Type on a failed save, or half as much damage on a successful one.]),
 	),
 	legendary: (
 		("", [An ancient dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.]),
 		("Detect", [The dragon makes a Wisdom (Perception) check.]),
 		("Tail Attack", [The dragon makes a tail attack.]),
-		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
+		("Wing Attack (Costs 2 Actions)", [The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 17 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.]),
 	),
 ), wide: true)
 
@@ -288,7 +288,7 @@ The dragon turtle is the largest variety of dragon, true or otherwise. Some of t
 		("Multiattack", [The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks. If its steam breath is available, it can use that as well.]),
 		("Bite", [Melee Attack: +7 to hit, reach 15 ft., one target. _Hit:_ 4d12 + 7 piercing damage.]),
 		("Claw", [Melee Attack: +7 to hit, reach 10 ft., one target. _Hit:_ 3d8 + 7 slashing damage.]),
-		("Tail", [Melee Attack: +7 to hit, reach 15 ft., one target. _Hit:_ 4d12 + 7 bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.]),
-		("Steam Breath (Recharge 5-6)", [The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.]),
+		("Tail", [Melee Attack: +7 to hit, reach 15 ft., one target. _Hit:_ 4d12 + 7 bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.]),
+		("Steam Breath (Recharge 5-6)", [The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 16 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.]),
 	),
 ))

@@ -84,7 +84,7 @@ Seraphs are the support units of the angelic legion, normally lingering behind t
 	),
 	traits: (
 		("Distant Aid", [The angel can cast any spell that only targets allies out to a range of 60 ft, even if the range is smaller. This also extends the radius of aura-type spells.]),
-		("Spellcasting", [The seraph casts as a priest. Its spell attack modifier is +7 and its spell save DC is 15. It can cast the following spells: _Concentration:_ _arcane binding_ (2x), _bless_ (1x) \ _Healing:_ _mass cure wounds_ (1x), _cure wounds_ (at will) \ _Other:_ _death ward_ (1x, has it active on self)]),
+		("Spellcasting", [The seraph casts as a priest. Its spell attack modifier is +6 and its spell save DC is 14. It can cast the following spells: _Concentration:_ _arcane binding_ (2x), _bless_ (1x) \ _Healing:_ _mass cure wounds_ (1x), _cure wounds_ (at will) \ _Other:_ _death ward_ (1x, has it active on self)]),
 		("Death Ward", [The first time per day the seraph falls to zero hit points or is hit by an effect that would instantly kill it, it is reduced to 1 hp instead.]),
 	),
 	actions: (
@@ -159,7 +159,7 @@ Some creatures aren't themselves of astral nature, but are touched heavily by th
 	),
 	traits: (
 		("Charmed Presence", [The unicorn's armor class includes its Charisma modifier.]),
-		("Charge", [If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.]),
+		("Charge", [If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.]),
 		("Innate Spellcasting", [The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components: \ At will: _sense aura_ (Incantation), _pass without trace_ \ 1/day each: _calm emotions_, _dispel otherworldly influence_, _entangle_]),
 		("Magic Resistance", [The unicorn has advantage on saving throws against spells and other magical effects.]),
 		("Innate Purity", [The unicorn's weapon attacks count as being silvered.]),

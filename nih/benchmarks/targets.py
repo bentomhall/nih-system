@@ -3,6 +3,9 @@ class StatLine:
         self.dr = dr
         self.hp = (hp_min + hp_max)/2
         self.ac = ac
+
+    def rounds_to_live(self, dpr: float) -> float:
+        return self.hp / dpr
     
 class Attack:
     def __init__(self, atk: int, roll_type: int,  hit_damage: float, crit_damage: float, miss_damage: float, crit=0.05,):

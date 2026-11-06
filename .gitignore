@@ -12,3 +12,4 @@ tools/output
 output/*
 .DS_Store
 site/out
+**/*.pyc

@@ -1,8 +1,8 @@
-from base import Base
+from base import CharacterBase
 import targets
 
-class Arcanist(Base):
-  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float): 
+class Arcanist(CharacterBase):
+  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float, **kwargs): 
     super().__init__(level, weapon, advantage_chance, disadvantage_chance)
     self.attack_count = 1
 

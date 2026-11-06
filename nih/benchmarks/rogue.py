@@ -1,11 +1,11 @@
-from base import Base
+from base import CharacterBase
 import targets
 import math
 
-class Rogue(Base):
-  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float, sneak_attack_chance: float): 
+class Rogue(CharacterBase):
+  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float, **kwargs): 
     super().__init__(level, weapon, advantage_chance, disadvantage_chance)
-    self.sneak_attack_chance = sneak_attack_chance
+    self.sneak_attack_chance = kwargs.get("sneak_attack_chance", 0.0)
     self.attack_count = 1
 
   def sneak_attack(self):

@@ -4,9 +4,9 @@ from typing import Callable
 import targets
 import math
 
-from base import Base
-class DefenderArmsman(Base):
-  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float, use_surge=False):
+from base import CharacterBase
+class DefenderArmsman(CharacterBase):
+  def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float, **kwargs):
     super().__init__(level, weapon, advantage_chance, disadvantage_chance)
     self.action_surge_used = False
     if (level >= 17):
@@ -15,7 +15,7 @@ class DefenderArmsman(Base):
       self.attack_count += 2
     elif level >= 5:
       self.attack_count += 1
-    self.use_surge = use_surge
+    self.use_surge = kwargs.get("use_surge", False)
 
   def stamina_formula(self, level):
     return level + 2

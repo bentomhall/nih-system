@@ -1,7 +1,7 @@
 import targets
 from collections.abc import Callable
 import math
-class Base:
+class CharacterBase:
   def __init__(self, level: int, weapon: targets.Weapon, advantage_chance: float, disadvantage_chance: float):
     self.level = level
     self.weapon = weapon

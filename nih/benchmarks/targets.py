@@ -1,3 +1,4 @@
+import math
 class StatLine:
     def __init__(self, dr: float, hp_min: int, hp_max: int, ac: int):
         self.dr = dr
@@ -48,17 +49,19 @@ class Attack:
         self.miss_damage = miss_damage
 
     def _hit_chance(self, ac: int) -> tuple[float, float]:
-        p = 0.05*(21-ac+self.atk)
-        if (self.roll_type == 0):
-            return (p, self.crit)
+        """Return (total hit chance, crit chance); total hit chance includes crits."""
+        p = min(1.0, max(0.0, 0.05*(21-ac+self.atk)))  # d20 + atk > ac
+        p = max(p, self.crit)  # crits always hit
+        c = self.crit
         if (self.roll_type < 0):
-            return (pow(p, 2), pow(self.crit, 2))
-        else:
-            return (1-pow(1-p, 2), 1-pow(1-self.crit, 2))
+            return (pow(p, 2), pow(c, 2))
+        if (self.roll_type > 0):
+            return (1-pow(1-p, 2), 1-pow(1-c, 2))
+        return (p, c)
 
     def expected_damage(self, on_target: StatLine, random: float) -> AttackResult:
         (p, c) = self._hit_chance(on_target.ac)
-        damage = p*self.hit_damage + c*self.crit_damage + max(0, (1 - p - c)*self.miss_damage)
+        damage = (p - c)*self.hit_damage + c*self.crit_damage + (1 - p)*self.miss_damage
         was_crit = random <= c
         was_hit = was_crit or random <= p
         return AttackResult(damage, 1.0 if was_hit else 0, 1.0 if was_crit else 0)

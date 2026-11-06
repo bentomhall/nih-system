@@ -1,5 +1,6 @@
-from defender_armsman import DefenderArmsman
+from armsman import DefenderArmsman
 from arcanist import Arcanist
+from rogue import Rogue
 from targets import Weapon, DiceResult, stats_by_dr, tier
 from base import Base
 from collections.abc import Callable
@@ -26,8 +27,10 @@ cantrips = {
 people: dict[str, Callable[[int, float, float],Base]] = {
    "defender": lambda l, a, d : DefenderArmsman(l, weapons["adv_longsword"], a, d),
    "defender_dw": lambda l, a, d: DefenderArmsman(l, weapons["adv_dagger"], a, d),
+   "defender_ls_surge": lambda l,a,d: DefenderArmsman(l, weapons["adv_longsword"], a, d, True),
    "arcanist_cantrip": lambda l, a, d: Arcanist(l, cantrips["d8"](l), a, d),
-   "arcanist_dagger": lambda l, a, d: Arcanist(l, weapons["bas_dagger"], a, d)
+   "arcanist_dagger": lambda l, a, d: Arcanist(l, weapons["bas_dagger"], a, d),
+   "rogue_dagger_100": lambda l, a, d: Rogue(l, weapons["adv_dagger"], a, d, 1)
 }
   
 if __name__ == "__main__":
@@ -41,6 +44,6 @@ if __name__ == "__main__":
     
     damage = []
     for (dr, target) in stats_by_dr.items():
-      (d, hit, crit) = person.attack_spread(target, 1, random.random).summarize()
+      (d, hit, crit) = person.attack_spread(target, 10, random.random).summarize()
       damage.append(round(d, 2))
     print(f"{level}, {', '.join(map(str, damage))}")

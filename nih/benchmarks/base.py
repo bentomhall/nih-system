@@ -30,15 +30,19 @@ class Base:
       self.prof = 2
   
   def attack(self, target: targets.StatLine, r: float, flat=0) -> targets.AttackResult:
+    roll_type = self.choose_roll_type(r)
+    mod = self.mod + self.prof
+    attack = self.weapon.make_attack(mod, roll_type, flat, None, 0)
+    return attack.expected_damage(target, r)
+
+  def choose_roll_type(self, r: float) -> int:
     roll_type = 0
     if r < self.advantage_chance:
       roll_type += 1
     if r < self.disadvantage_chance:
       roll_type -= 1
-    mod = self.mod + self.prof
-    attack = self.weapon.make_attack(mod, roll_type, flat, None, 0)
-    return attack.expected_damage(target, r)
-
+    return roll_type
+  
   def attack_spread(self, target: targets.StatLine, turns: int, random_source: Callable[[], float]) -> targets.AttackRoutineResult:
     result = targets.AttackRoutineResult()
     for i in range(0, turns):

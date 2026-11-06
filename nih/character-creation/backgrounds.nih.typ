@@ -127,7 +127,7 @@ Most of the Federated Nations works on a guild apprenticeship basis, with indivi
 #flush-block[
 - *Proficiencies.* Intimidation OR Deception, Stealth, Thieves tools
 - *Languages.* One common language of your choice
-- *Equipment.* Thieves tools, a set of dark clothing, and a pouch containing 15 gp
+- *Equipment.* Thieves' tools, a set of dark clothing, and a pouch containing 15 gp
 - *Skill Trick.* #safe-link("misdirect-trick", "Misdirect") OR #safe-link("feint-trick", "Feint")
 ]
 
@@ -193,7 +193,7 @@ Merchants run the gamut from the great merchant princes of Rauviz or Asai'ka to 
 #flush-block[
 - *Proficiencies.* Perception, Survival, water vehicles and cartographer's tools
 - *Languages.* One common language of your choice or Primordial
-- *Equipment.* A compass, a dagger, a pouch containing 10gp
+- *Equipment.* A compass, a light blade, a pouch containing 10gp
 - *Skill Trick.* #safe-link("alert-trick", "Alert") OR #safe-link("lung-capacity-trick", "Lung Capacity")
 ]
 
@@ -244,7 +244,7 @@ Shrine-keeper, priest, cleric, wise one, witch. Those that tend to the shrines o
 #flush-block[
 - *Proficiencies.* Athletics, Intimidation OR Medicine, one game set, smiths' tools
 - *Languages.* One common language of your choice
-- *Equipment.* One weapon you are proficient in, a rank insignia, and a pouch containing 10 gp
+- *Equipment.* One weapon, a rank insignia, and a pouch containing 10 gp
 - *Skill Trick.* #safe-link("frighten-trick", "Frighten") OR #safe-link("medic-trick", "Medic")
 ]
 

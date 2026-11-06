@@ -19,6 +19,7 @@ Languages (combined): Common, Ard-teang, Ngyon-toi
 Other Proficiencies: Smith's Tools, Dice
 Equipment:
 - Lamellar AC 16 (Heavy, Cumbersome 1, Loud, Metallic)
+- Maul (Bashing, Battering, Two-handed)
 - Katana (Heavy Blade, slashing, Cleaving + Parrying) + shield
 - handaxe (Hafted, Light, Thrown) x2
 - explorer's pack

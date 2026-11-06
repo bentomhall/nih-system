@@ -30,7 +30,7 @@ As a armsman, you gain the following class features.
 - *Weapon Skill.* Advanced
 - *Tools.* None
 - *Saving Throws.* Strength, Constitution
-- *Skills.* Choose two from Acrobatics, Animal, Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
+- *Skills.* Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
 ]
 
 === Equipment

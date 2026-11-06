@@ -6,6 +6,37 @@ class StatLine:
 
     def rounds_to_live(self, dpr: float) -> float:
         return self.hp / dpr
+
+class AttackResult:
+    def __init__(self, damage: float, was_hit: float, was_crit: float):
+        self.damage = damage
+        self.hit = was_hit
+        self.crit = was_crit
+
+class AttackRoutineResult:
+    def __init__(self):
+        self.damage = 0
+        self.hits = 0
+        self.crits = 0
+        self.total = 0
+        pass
+
+    def addAttack(self, atk: AttackResult):
+        self.damage += atk.damage
+        if atk.hit:
+            self.hits += 1
+        if atk.crit:
+            self.crits +=1
+        self.total += 1
+
+    def summarize(self) -> tuple[float, float, float]:
+        damage = self.damage / self.total
+        hit_percent = self.hits/ self.total
+        crit_percent = self.crits / self.total
+        return (damage, hit_percent, crit_percent)
+
+    def to_attack_result(self) -> AttackResult:
+        return AttackResult(self.damage, self.hits/self.total, self.crits/self.total)
     
 class Attack:
     def __init__(self, atk: int, roll_type: int,  hit_damage: float, crit_damage: float, miss_damage: float, crit=0.05,):
@@ -30,21 +61,22 @@ class Attack:
         damage = p*self.hit_damage + c*self.crit_damage + max(0, (1 - p - c)*self.miss_damage)
         was_crit = random <= c
         was_hit = was_crit or random <= p
-        return AttackResult(damage, was_hit, was_crit)
+        return AttackResult(damage, 1.0 if was_hit else 0, 1.0 if was_crit else 0)
 
 class DiceResult:
     def __init__(self, count: int, size: int):
         self.count = count
         self.size = size
-        self.avg = (1 + size)/2
+        self.avg = count*(1 + size)/2
 
     def make_crit(self):
         return DiceResult(self.count*2, self.size)
 
 class Weapon:
-    def __init__(self, die: DiceResult, properties: list[str]):
+    def __init__(self, die: DiceResult, properties: list[str], type="weapon"):
         self.die = die
         self.properties = properties
+        self.use_static = type == "weapon"
 
     def make_attack(self, atk: int, roll_type: int, static_bonus: float, extra_dice: DiceResult | None, miss_damage: float, crit=0.05) -> Attack:
         total_rolled_normal = self.die.avg + static_bonus
@@ -59,12 +91,15 @@ class Weapon:
             total_miss = miss_damage
         return Attack(atk, roll_type, total_rolled_normal, total_rolled_crit, total_miss, crit)
 
-class AttackResult:
-    def __init__(self, damage: float, was_hit: bool, was_crit: bool):
-        self.damage = damage
-        self.hit = was_hit
-        self.crit = was_crit
-
+def tier(level: int) -> int:
+    if level >= 17:
+        return 4
+    elif level >= 11:
+        return 3
+    elif level >= 5:
+        return 2
+    else:
+        return 1
 
 stats_by_dr = {
     "0": StatLine(0, 1, 6, 11),

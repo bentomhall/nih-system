@@ -25,15 +25,46 @@ class Attack:
         else:
             return (1-pow(1-p, 2), 1-pow(1-self.crit, 2))
 
-    def expected_damage(self, on_target: StatLine) -> float:
+    def expected_damage(self, on_target: StatLine, random: float) -> AttackResult:
         (p, c) = self._hit_chance(on_target.ac)
-        return p*self.hit_damage + c*self.crit_damage + max(0, (1 - p - c)*self.miss_damage)
+        damage = p*self.hit_damage + c*self.crit_damage + max(0, (1 - p - c)*self.miss_damage)
+        was_crit = random <= c
+        was_hit = was_crit or random <= p
+        return AttackResult(damage, was_hit, was_crit)
 
 class DiceResult:
     def __init__(self, count: int, size: int):
         self.count = count
         self.size = size
         self.avg = (1 + size)/2
+
+    def make_crit(self):
+        return DiceResult(self.count*2, self.size)
+
+class Weapon:
+    def __init__(self, die: DiceResult, properties: list[str]):
+        self.die = die
+        self.properties = properties
+
+    def make_attack(self, atk: int, roll_type: int, static_bonus: float, extra_dice: DiceResult | None, miss_damage: float, crit=0.05) -> Attack:
+        total_rolled_normal = self.die.avg + static_bonus
+        total_rolled_crit = self.die.make_crit().avg + static_bonus
+        if extra_dice is not None:
+            total_rolled_normal += extra_dice.avg
+            total_rolled_crit += extra_dice.make_crit().avg
+        
+        if 'battering' in self.properties:
+            total_miss = miss_damage + static_bonus
+        else:
+            total_miss = miss_damage
+        return Attack(atk, roll_type, total_rolled_normal, total_rolled_crit, total_miss, crit)
+
+class AttackResult:
+    def __init__(self, damage: float, was_hit: bool, was_crit: bool):
+        self.damage = damage
+        self.hit = was_hit
+        self.crit = was_crit
+
 
 stats_by_dr = {
     "0": StatLine(0, 1, 6, 11),

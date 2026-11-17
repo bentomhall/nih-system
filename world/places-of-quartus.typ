@@ -481,6 +481,7 @@ Byssia is decentralized politically, with towns and villages holding most of the
 - *Economics:* Trade is the major thing. Extraction near Honel, farming throughout. Rule of law is very strong. Acts most like a modern semi-democracy.
 - *Magics:* An even mix. Druid grove at Lady's Grove, arcane school in the capital, as well as major temples throughout.
 - *Religion:* Pluralistic. Worship who, where, and what you want, as long as it's not demons.
+- *Detail:* See #safe-link("crisial-kingdom", "Crisial Kingdom").
 ]
 
 Crisial is the "shining light" nation (or so they like to portray themselves). Founded by the Catalysts (the otherworldly Vassarian, the calculating and political Paresten, the quiet anchor Kalesin, and the tree-friend Safrir) in the early 200s, it is currently ruled by the time-lost aelvar wizard Raanee, first of her name. It is the home to the majority of the gwerin of western Noefra, but also counts many humans, dwarves, halflings, and others. Magically powerful, it is also a dominant trading nation, occupying as it does the crossroads between the eastern nations and the western powerhouses. There are functioning independent courts, and rule of law is observed. Even the Queen does not have the independent power of high justice except in matters of emergency.
@@ -782,6 +783,8 @@ The so-called Ship Speech is used by the Ship Folk and the sailors on the Moon a
 
 === Tiborean (Old Imperial)
 The ancestral language for Common, much like how real-world Latin is the precursor to the Romance languages. Used throughout the Third Age by the empire that dominated the west, Tibor Imperia, it is still a primary (if now dead) language of scholarship. Most records found throughout western Noefra are written in Tiborean, and the script it uses is only slightly modified to form the modern Reformed Imperial script.
+
+#include "nations/crisial-kingdom.typ"
 
 #if sys.inputs.at("standalone", default: "false") == "true" [
 #import "../shared/legal.typ" : core-legal

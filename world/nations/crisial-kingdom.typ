@@ -1,6 +1,6 @@
 #import "../../shared/functions.typ" : *
 
-= Crisial Kingdom
+= Crisial Kingdom <crisial-kingdom>
 
 #flush-block[
 - *Population:* Roughly 200,000 humans, gwerin, halflings, and dwarves.
@@ -78,3 +78,28 @@ The actual Southshore region is a narrow, fertile strip of plains stretching abo
 - The Crystal Spire, an ancient tower that stretches into the heavens and contains monsters, almost as if it were designed to test would-be heroes. Built in the First Age and holding too many floors to count, each party that ventures inside finds something different. Overseen by House Tuathail of the gwerin, who remain abjectly neutral politically.
 - The Towers of Sun, Earth, Moon, and Stars (usually called the Four Towers), a pre-Cataclysm gwerin research facility and library. Home of the Sages Guild, it is one of the premier schools of magic and history, especially since the destruction of the Academy at Kaelthia. Maintained by House Hawal of the gwerin High Houses, who also remain quite neutral politically.
 
+=== Sundown Hills
+The region south and east of Southshore Proper is the Sundown Hills. This area contains little in the way of large settlements, and the villages and hamlets that hide in the rolling terrain are happy to keep it that way. They only grudgingly accept the authority of the Kingdom, preferring the occasional visit of an Oathbound assigned to the High Court, who acts as a neutral arbiter for the few disputes they show to outsiders.
+
+=== Bor's Sacrifice
+Nestled in the southern hills at the source of the Bor's Head river due south of Crisial City is the region known as Bor's Sacrifice, after an early adventurer who gave his life to clear out a nest of demon-tainted goblins. This is where most of the nation's dwarves live, as well as where almost all of the operational mines lie. The inhabitants here are hardy and independant. Their Duke has little to do with actually ruling and spends her time trying to herd proverbial cats #aside[I think that gives cats a bad name --ed] and trying to keep the various villages from feuding.
+
+*Settlements:*
+- Honel (#sym.approx 7,500). Regional capital and only real city. Half-buried in the hills.
+- Adair (#sym.approx 1,500). Only other significant town.
+
+=== Goblinward
+West of Bor's Sacrifice, stretching from the southern edge of Southshore to the hills that mark the unofficial border with the (now isolationist) goblin tribes of the Windwalk and from the Bor's Head west to the Wyrmhold border (roughly marked by the Drina River for most of the way) lies the vast, mostly unsettled Goblinward. The only settlements here are along the Valford road at the far western edge; the settlements that lay along the old South Road (heading to what was Fort Hope) have mostly been abandoned in the Time of Troubles.
+
+This area is almost entirely lawless. Only Valford maintains any significant Crown presence, and that is barely more than a platoon of Rangers and a few judges.
+
+*Settlements:*
+- Valford (#sym.approx 1,000). Trade town on the Valford road from the Tri-nation Border region. Carries most of the Byssian trade.
+
+=== Lupaus
+Along the shors of the Khol and to its north stretch the broad, grassy Lupaus Plain. Once inhabited by the mysterious and xenophobic Seraaja Vetelnaya, the area is now (somewhat) open to outsiders. The Hevonen, formerly called the Horse Clans, still range the plains raising the best horses in Western Noefra, and prefer to avoid outlanders, but they no longer attack on sight.
+
+This area, anchored by Vaeltaa, is only weakly bound to the rest of the nation. Were it not for the close personal relationships between the Duke of Vaeltaa and the Queen, Vaeltaa and the Plain would have broken off to become independent. Of course, most there realize that doing so would have resulted in Wyrmhold absorbing them; it has tried before and would desperately love to control the entire Lupaus Plain and have an outlet to Lake Coy'in.
+
+*Settlements:*
+- Vaeltaa (#sym.approx 5,000). Trade town and gateway to Wyrmhold.

@@ -20,7 +20,7 @@ One key strength is the Four Towers, a pre-Cataclysm library and research facili
 == Borders and Extent
 Crisial Kingdom is bordered by the Sundown Range to the east and south, the goblin lands (formerly the Windwalker Confederacy) to the south and west, and Wyrmhold to the west. It at least notionally controls most of the southern Lupaus Plain (other than the section to the north controlled by the isolationist Seraaja) and Southshore regions. Lake Coy'in forms a natural border to the north. Of all the nations of western Noefra, Crisial is the largest in land area. Much of that area is only sparsely populated, if at all, and the existing population is spread along a narrow strip that runs the entire width.
 
-Two-thirds of the population lives between Crisial City and Rauviz along the shores of Lake Coy'in, with another sixth down the Bor's Head river to Honel, and the remainder split between settlements along the western Dragon Road and the south-western Goblin Road. Most of the out-country is inhabited only by independant hamlets and villages, many of whom pre-date the re-settlement from Kaelthia and who only grudgingly (if at all) accept guidance from the Crown. Those of the former Horse Clans who were willing to cooperate with society concentrate along the (insert here) river from Vaeltaa up to the (holy) city on the shore of the lake, although their pastoral ways mean their habitations are not fixed in place but wander with the seasons. The total land area of the kingdom is 215,000 sq. mi., but 90% of its population lies within an area of 64,000 sq. mi., 53,000 of that lying within a 90 miles of the lake-shore.
+Two-thirds of the population lives between Crisial City and Rauviz along the shores of Lake Coy'in, with another sixth down the Bor's Head river to Honel, and the remainder split between settlements along the western Dragon Road and the south-western Goblin Road. Most of the out-country is inhabited only by independant hamlets and villages, many of whom pre-date the re-settlement from Kaelthia and who only grudgingly (if at all) accept guidance from the Crown. Those of the former Horse Clans who were willing to cooperate with society concentrate along the Khol river from Vaeltaa up to Pyhin on the shore of the lake, although their pastoral ways mean their habitations are not fixed in place but wander with the seasons. The total land area of the kingdom is 215,000 sq. mi., but 90% of its population lies within an area of 64,000 sq. mi., 53,000 of that lying within a 90 miles of the lake-shore.
 
 == Demographics
 
@@ -59,3 +59,22 @@ Prosecution is done by the victim, if possible, and cases are short. The emphasi
 
 === The Free Hold
 Crisial Kingdom has an established system to encourage its citizens to strike out and break new ground (literally). It maintains a property register in each region, and actively surveys the surroundings of each settlement. Any person who registers a claim on unclaimed land and lives on it, developing it to specific levels, can claim Free Hold on that ground. Unlike many of the other feudal areas, free-holders own their land outright, rather than leasing it from nobles. The catch is that free-holders must actively maintain their land and roads and provide people for militias, and are held to a higher standard of legal dealing. Similarly, those who are inclined to invention or mercantile efforts can apply for Crown Charters, acting somewhat like a cross between a company charter and a patent. Those who Charter an invention must allow others to use it under fair and reasonable license terms. Free-holders are the backbone of Crisial; their independence and cooperation is key in keeping the oversized nation together.
+
+== Regions and Settlements
+Scholars usually split Southshore and the Lupaus Plains, which are the geographic regions of the Crisial Kingdom, into smaller sub-regions.
+=== Southshore Proper
+The actual Southshore region is a narrow, fertile strip of plains stretching about 60 miles away from the south end of Lake Coy'in from Kaela river around to the Khol on the west side of the lake. About 80% of the population of Crisial Kingdom lives in this region, most of them east of the Bor's Head river mouth, where Crisial City itself lies. The east is mostly human, halfling, and gwerin, while the west becomes progressively more human and goblin.
+
+*Settlements:*
+- Crisial City (#sym.approx 30,000). Capital and closest point to the Four Towers.
+- Beiand (#sym.approx 15,000). Gateway to the east. Widely seen as the breadbasket of the kingdom.
+- Inegand (#sym.approx 10,000). Trade city and original gateway to the west. Now reduced in prestige.
+- Pyhin (#sym.approx 6,000, including 2,000 or so gnomes). Holy city of the Seraaja and home of the Puuha, secretive gnome-folk.
+- Egoriden (#sym.approx 4,000). Notable for being located outside of the Crystal Spire.
+- Siltford (#sym.approx 3,000). An up-and-coming town located where the Dragon Road crosses the Drina river and the Valford Road, which had paralleled that river, joins the Dragon Road. With the closing of the South Road, much of the trade from Byssia and Byarmarsh comes up that path.
+- Westerwich (#sym.approx 2,000). Mostly founded to supply a lighthouse due to rocky coasts.
+
+*Other Points of Interest* include
+- The Crystal Spire, an ancient tower that stretches into the heavens and contains monsters, almost as if it were designed to test would-be heroes. Built in the First Age and holding too many floors to count, each party that ventures inside finds something different. Overseen by House Tuathail of the gwerin, who remain abjectly neutral politically.
+- The Towers of Sun, Earth, Moon, and Stars (usually called the Four Towers), a pre-Cataclysm gwerin research facility and library. Home of the Sages Guild, it is one of the premier schools of magic and history, especially since the destruction of the Academy at Kaelthia. Maintained by House Hawal of the gwerin High Houses, who also remain quite neutral politically.
+
